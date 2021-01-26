@@ -1,0 +1,2196 @@
+<!doctype html>
+<html class="no-js" lang="cs-CZ" ng-app="socrApp">
+  <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true"/>
+
+	<link rel="canonical" href="http://www.socr.cz/">
+
+	<base href="http://www.socr.cz/"/>
+
+	<!-- CSS-->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href="http://www.socr.cz/css/external/bootstrap/bootstrap.css" rel="stylesheet">
+	<link href="http://www.socr.cz/css/external/fullCalendar/fullcalendar.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://www.socr.cz/css/style.css" rel="stylesheet" media="screen">
+	<!--[if lt IE 9]><script src="http://www.socr.cz/js/external/html5shiv/html5shiv.js"></script><![endif]-->
+
+	<title>TZ SOCR ČR, AHR ČR, AMSP ČR: DEN OKÉNEK pomohl řadě restaurací. Bude mít pokračování.  | SOCR.cz</title>
+  </head>
+
+
+<style>
+body {}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 305px;
+    height: 512px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+</head>
+
+
+<!-- body onload="loadBox()" -->
+<body>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><a href="http://socr-cr.eventito.com/meeting/QKrlJ/"><img src="http://www.socr.cz/admin/file/4600/banner_socr-DLK-popup-2018-v2.png"></a></p>
+  </div>
+
+</div>
+
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function loadBox() {
+
+    var visited2 = localStorage.getItem('visited2');
+    if (visited2 == 2) {
+		}
+	else 
+	    {
+	    localStorage.setItem('visited2', '2');
+	    modal.style.display = "block";
+	    }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+	<header class="container-fluid bg-header">
+		<div class="container">
+			<div class="row">
+				<div class="nav-mobile">
+					<div class="container">
+						<h1 class="logo"><a href="http://www.socr.cz/">Socr.cz</a></h1>
+						<ul class="nav-top">
+							<li class="clen"><a href="/admin/file/6178/Katalog-sluzeb-072020.pdf"><span>KATALOG SLUŽEB</span></a></li>
+							<li class="clen"><a href="/jak-proc-se-stat-clenem/"><span>STÁT SE ČLENEM</span></a></li>
+							<li><a href="/clanek/clenska-zona-prihlaseni/"><span> PRO ČLENY</span></a></li -->
+							<li class="search">
+									<form action="http://www.socr.cz/vyhledavani/?q=" method="get">
+										<input type="text" name="q" placeholder="Hledat..." value="">
+										<button type="submit"><i class="fa fa-search"></i></button>
+									</form>
+							</li>
+							<li><a href="/kontakty/"><span> KONTAKTY</span></a></li>
+							<li class="mobile-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+							<li class="lang"><a href="english-info"><img src="/content/images_cms/flag-en.png" alt="EN"></a></li>
+						</ul>
+					</div>
+				</div>
+				<nav class="">
+					<ul>
+					
+						
+						<li class="item-1 bg-color-1 ">
+							<a href="o-socr-cr" title="O SOCR ČR">
+								<span>
+									O SOCR ČR
+									
+								</span>
+							</a>
+							<!-- submenu -->
+								
+									<ul>
+								
+									
+										
+									
+										
+											<li class="">
+												<a href="jak-proc-se-stat-clenem" title="Jak/proč se stát členem">
+													Jak/proč se stát členem
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="dulezite-dokumenty" title="Důležité dokumenty">
+													Důležité dokumenty
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="organizacni-struktura" title="Organizační struktura">
+													Organizační struktura
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="sekretariat-socr-cr" title="Sekretariát SOCR ČR">
+													Sekretariát SOCR ČR
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="hodnotici-konference" title="Představenstvo a VH">
+													Představenstvo a VH
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="http://www.socr.cz/clenska-zakladna/" title="Členská základna">
+													Členská základna
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									</ul>
+								
+							<!-- submenu -->
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li class="item-2 bg-color-2 active">
+							<a href="zpravodajstvi" title="Zpravodajství">
+								<span>
+									Zpravodajství
+									
+								</span>
+							</a>
+							<!-- submenu -->
+								
+									<ul>
+								
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="active">
+												<a href="tiskove-zpravy-stanoviska" title="Tiskové zprávy a stanoviska">
+													Tiskové zprávy a stanoviska
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="statisticko-ekonomicky-servis" title="Statisticko-ekonomický servis">
+													Statisticko-ekonomický servis
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="EU-zahranici" title="EU a zahraničí">
+													EU a zahraničí
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="whats-new" title="Whats new">
+													Whats new
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									</ul>
+								
+							<!-- submenu -->
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li class="item-3 bg-color-3 ">
+							<a href="vzdelavani-a-poradenstvi" title="Dotace a vzdělávání">
+								<span>
+									Dotace a vzdělávání
+									
+								</span>
+							</a>
+							<!-- submenu -->
+								
+									<ul>
+								
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="dotace-eu" title="Dotace EU">
+													Dotace EU
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="projekty" title="Projekty Svazu">
+													Projekty Svazu
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="seminare" title="Konference a semináře">
+													Konference a semináře
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="poradenstvi" title="Poradenství">
+													Poradenství
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="vzdelani" title="Vzdělávání">
+													Vzdělávání
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									</ul>
+								
+							<!-- submenu -->
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li class="item-4 bg-color-4 ">
+							<a href="odborne" title="Odborná témata">
+								<span>
+									Odborná témata
+									
+								</span>
+							</a>
+							<!-- submenu -->
+								
+									<ul>
+								
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="podnikatelske-prostredi" title="Podnikatelské prostředí">
+													Podnikatelské prostředí
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="cestovni-ruch" title="Cestovní ruch">
+													Cestovní ruch
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="obchod-potraviny" title="Obchod - potraviny">
+													Obchod - potraviny
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="obchod-spotrebni-zbozi" title="Obchod  - spotřební zboží">
+													Obchod  - spotřební zboží
+													
+												</a>
+											</li>
+										
+									
+										
+											<li class="">
+												<a href="legis" title="Legislativa">
+													Legislativa
+													
+												</a>
+											</li>
+										
+									
+										
+									
+								
+									</ul>
+								
+							<!-- submenu -->
+						</li>
+						
+					
+						
+					
+						
+						<li class="item-5 bg-color-5 ">
+							<a href="tripartita" title="Sociální dialog a tripartita">
+								<span>
+									Sociální dialog a tripartita
+									
+								</span>
+							</a>
+							<!-- submenu -->
+								
+									<ul>
+								
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									</ul>
+								
+							<!-- submenu -->
+						</li>
+						
+					
+						
+						<li class="item-6 bg-color-6 ">
+							<a href="https://www.jsmesoucasticeska.cz" title="Komora obchodních řetězců">
+								<span>
+									Komora obchodních řetězců
+									
+								</span>
+							</a>
+							<!-- submenu -->
+								
+									<ul>
+								
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									</ul>
+								
+							<!-- submenu -->
+						</li>
+						
+					
+						
+						<li class="item-7 bg-color-7 ">
+							<a href="http://www.socr.cz/gdpr-ochrana-osobnich-udaju" title="Ochrana osobních údajů (GDPR)">
+								<span>
+									Ochrana osobních údajů (GDPR)
+									
+								</span>
+							</a>
+							<!-- submenu -->
+								
+									<ul>
+								
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="http://www.socr.cz/co-je-obecne-narizeni-gdpr" title="Co je obecné nařízení GDPR">
+													Co je obecné nařízení GDPR
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="http://www.socr.cz/smlouva-o-zpracovani-osobnich-udaju/" title="Smlouva o zpracování os. údajů">
+													Smlouva o zpracování os. údajů
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="http://www.socr.cz/gdpr-nejdulezitejsi-pojmy/" title="Nejdůležitější pojmy">
+													Nejdůležitější pojmy
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="http://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules_cs" title="On-line nástroj">
+													On-line nástroj
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+											<li class="">
+												<a href="http://www.socr.cz/gdpr-dokumenty-a-uzitecne-odkazy/" title="Dokumenty a užitečné odkazy">
+													Dokumenty a užitečné odkazy
+													
+												</a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+									</ul>
+								
+							<!-- submenu -->
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- div class="marquee ">
+			<a href="http://www.socr.cz/clanek/diamantova-liga-kvality-2-rocnik/" title="DIAMANTOVÁ LIGA KVALITY – 2. ROČNÍK – PŘIHLAŠOVÁNÍ SPUŠTĚNO">
+				<p>
+					<span><img src="http://www.socr.cz/content/images/jewelry.png" alt="">DIAMANTOVÁ LIGA KVALITY – 2. ROČNÍK – PŘIHLAŠOVÁNÍ SPUŠTĚNO</span>
+					<span><img src="http://www.socr.cz/content/images/jewelry.png" alt="">DIAMANTOVÁ LIGA KVALITY – 2. ROČNÍK – PŘIHLAŠOVÁNÍ SPUŠTĚNO</span>
+					<span><img src="http://www.socr.cz/content/images/jewelry.png" alt="">DIAMANTOVÁ LIGA KVALITY – 2. ROČNÍK – PŘIHLAŠOVÁNÍ SPUŠTĚNO</span>
+					<span><img src="http://www.socr.cz/content/images/jewelry.png" alt="">DIAMANTOVÁ LIGA KVALITY – 2. ROČNÍK – PŘIHLAŠOVÁNÍ SPUŠTĚNO</span>
+					<span><img src="http://www.socr.cz/content/images/jewelry.png" alt="">DIAMANTOVÁ LIGA KVALITY – 2. ROČNÍK – PŘIHLAŠOVÁNÍ SPUŠTĚNO</span>
+				</p>
+			</a>
+		</div -->
+	</header>
+
+	<!-- container -->
+	<div class="container padding-vertical-medium">
+
+<div class="row">
+
+
+	<!-- navigation -->
+	<ul id="breadcrumb" class="breadcrumb">
+		<li><a href="http://www.socr.cz//" title="Titulní strana">Titulní strana</a></li>
+		
+		<li >
+			<a href="zpravodajstvi">
+				Zpravodajství
+				
+			</a>
+		</li>
+		
+		<li >
+			<a href="tiskove-zpravy-stanoviska">
+				Tiskové zprávy a stanoviska
+				
+			</a>
+		</li>
+		
+		<li >
+			<a href="http://www.socr.cz/clanek/tz-socr-cr-ahr-cr-amsp-cr-den-okenek-pomohl-rade-restauraci-bude-mit-pokracovani/">
+				TZ SOCR ČR, AHR ČR, AMSP ČR: DEN OKÉNEK pomohl řadě restaurací. Bude mít pokračování. 
+				
+			</a>
+		</li>
+		
+	</ul>
+	<!-- /navigation -->
+
+
+	<div class="share-wrap pull-right">
+		<a class="share-btn"
+			href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.socr.cz%2Fclanek%2Ftz-socr-cr-ahr-cr-amsp-cr-den-okenek-pomohl-rade-restauraci-bude-mit-pokracovani%2F&amp;t=TZ+SOCR+%C4%8CR%2C+AHR+%C4%8CR%2C+AMSP+%C4%8CR%3A+DEN+OK%C3%89NEK+pomohl+%C5%99ad%C4%9B+restaurac%C3%AD.+Bude+m%C3%ADt+pokra%C4%8Dov%C3%A1n%C3%AD.++%7C+SOCR.cz"
+			onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			target="_blank"
+			title="Sdílet na Facebook"><i class="fa fa-facebook"></i></a>
+		<a class="share-btn"
+			href="https://twitter.com/share?url=http%3A%2F%2Fwww.socr.cz%2Fclanek%2Ftz-socr-cr-ahr-cr-amsp-cr-den-okenek-pomohl-rade-restauraci-bude-mit-pokracovani%2F&amp;via=SOCR_CR&amp;text=TZ+SOCR+%C4%8CR%2C+AHR+%C4%8CR%2C+AMSP+%C4%8CR%3A+DEN+OK%C3%89NEK+pomohl+%C5%99ad%C4%9B+restaurac%C3%AD.+Bude+m%C3%ADt+pokra%C4%8Dov%C3%A1n%C3%AD.++%7C+SOCR.cz"
+			onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+			target="_blank"
+			title="Sdílet na Twitter"><i class="fa fa-twitter"></i></a>
+		<a class="share-btn"
+			href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.socr.cz%2Fclanek%2Ftz-socr-cr-ahr-cr-amsp-cr-den-okenek-pomohl-rade-restauraci-bude-mit-pokracovani%2F&amp;title=TZ+SOCR+%C4%8CR%2C+AHR+%C4%8CR%2C+AMSP+%C4%8CR%3A+DEN+OK%C3%89NEK+pomohl+%C5%99ad%C4%9B+restaurac%C3%AD.+Bude+m%C3%ADt+pokra%C4%8Dov%C3%A1n%C3%AD.++%7C+SOCR.cz"
+			onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=515,width=600');return false;"
+			target="_blank"
+			title="Sdílet na Linkedin"><i class="fa fa-linkedin"></i></a>
+	</div>
+
+	<div class="content col-lg-9 col-md-8 col-sm-7 left-col">
+
+
+<h2 class="noMB">TZ SOCR ČR, AHR ČR, AMSP ČR: DEN OKÉNEK pomohl řadě restaurací. Bude mít pokračování. </h2>
+
+
+<p class="fontSizeSmall muted">
+	<em>Publikováno: 10. 11. 2020</em>
+</p>
+
+
+
+
+<div class="perex wys">
+	<ul>
+<li style="text-align: justify;">Akce „DEN OKÉNEK“ byla úspěšná, potvrdila řada hospod a restaurací</li>
+<li style="text-align: justify;">Přímý odběr jídel z restaurací je mnohem efektivnější a šetří náklady</li>
+<li style="text-align: justify;">Krachem je aktuálně ohroženo až 50 % restauračních zařízení</li>
+</ul>
+<p class="mcntmsonormal" style="text-align: justify;"><strong>Praha 10. listopadu 2020 </strong>– Do akce DEN OKÉNEK, která proběhla v sobotu 7. listopadu, se zapojily tisíce restaurací po celé České republice. Jejím smyslem bylo motivovat lidi, aby si objednávali jídlo přímo ve výdejních okénkách restaurací a dali tak restauracím šanci neplatit až 30 procent tržby donáškovým společnostem. Organizátoři akce, Svaz obchodu a cestovního ruchu ČR, Asociace hotelů a restaurací ČR a Asociace malých a středních podniků a živnostníků ČR, se proto rozhodli akci opakovat i v dalším období.</p>
+</div>
+
+
+
+
+
+	<div class="text wys">
+		<p class="mcntmsonormal" style="text-align: justify;"><em>„DNEM OKÉNEK jsme chtěli lidem otevřít oči i aktivně pomoci těžce postiženým restauracím a hospodám, které bojují o život a každá koruna je pro ně důležitá. Vládní omezení provozu znamenají, že již dnes je existenčně ohrožena polovina restaurací a hospod v Česku i jejich zaměstnanců,“</em> uvedl Tomáš Prouza, prezident a Svazu obchodu a cestovního ruchu ČR a viceprezident Hospodářské komory ČR. <em>„Chtěli bychom touto cestou poděkovat všem zákazníků, organizacím i jednotlivcům, kteří ani v této těžké době nezapomněli na svou oblíbenou restauraci a rozhodli se ji podpořit. Speciální poděkování patří i médiím, která nám pomohla DEN OKÉNEK zpravodajsky pokrýt,“ </em>dodal <strong>Tomáš Prouza</strong>.</p>
+<p class="mcntmsonormal" style="text-align: justify;">Přestože počasí mnohde k podzimním procházkám příliš nepřálo, zaznamenala řada restaurací v porovnání s předchozí sobotou nárůst počtu zákazníků. <em>„Určitě je to dobrý nápad. Proti předchozímu týdnu jsme v sobotou prodali více jídel přímo než přes donáškové společnosti. Taková akce by ale měla být určitě častěji, aby se to dostalo více do povědomí veřejnosti,“ </em>uvedl  <strong>Zdeněk Babulík</strong>, majitel restaurace Legenda Steak House ze Zlína.</p>
+<p class="mcntmsonormal" style="text-align: justify;">Pozitivní ohlasy ze všech regionů ČR motivují organizátory akci zopakovat. Budeme bojovat za to, aby podpora zákazníků šla skutečně jejich oblíbeným restauracím a abychom zvýšili šanci na jejich přežití.</p>
+<p class="mcntmsonormal" style="text-align: justify;"><em>„Během období, kdy restaurace bojují o holé přežití, a třetina z nich už musela zavřít, by se měl stát dnem okének každý den. Bez podpory, ze strany svých zákazníků, restaurace nepřežijí. </em><em>S kampaní chceme pokračovat tak dlouho, dokud nebude toto dramatické období za námi,</em><em>“</em> zdůraznil <strong>Luboš Kastner</strong>, garant projektu Moje restaurace Asociace malých a středních podniků a živnostníků ČR (AMSP ČR).</p>
+<p class="mcntmsonormal" style="text-align: justify;"><strong>Václav Stárek</strong>, prezident Asociace hotelů a restaurací ČR k tomu dodává: <em>„Našim záměrem je pomoci  gastro sektoru, který zaměstnává statisíce lidí a nemalou mírou přispívá do státního rozpočtu. A jedním z těchto způsobů je také plná transparentnost, aby zákazníci věděli, kolik platí za jídlo a kolik za jeho případné doručení rozvážkovou službou. Tento projekt není pouze jednorázová kampaň na podporu přímého prodeje, ale předpokládáme, že bude trvalým programem pro zájemce z řad restaurací, zvláště, pokud nabídnou za přímý prodej zákazníkovi něco navíc. Kampaň se setkala s velmi pozitivní reakcí z řad našich členských restaurací a je zájmem ji dále rozvíjet. “ </em></p>
+	</div>
+
+	
+
+	
+		<div class="pull-right marginTop15">
+			<strong>Zdroj:</strong> SOCR ČR, AHR ČR, AMSP ČR
+		</div>
+	
+	<div class="clearfix"></div>
+
+
+<!-- FB -->
+<!-- <div id="fb-root"></div> -->
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/cs_CZ/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- /FB -->
+
+<!-- twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!-- /twitter -->
+
+<!-- <div class="marginTop15 h20 clearfix">
+	<div class="pull-right">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="cs">Tweet</a>
+		<div class="fb-like"  data-href="" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+	</div>
+</div> -->
+
+
+	
+
+	
+		<h2 >Ke stažení</h2>
+		<table class="table table-whiteBackground files">
+			<tbody>
+				
+					<tr>
+						<td class="filename">
+							
+							<a target="_blank" href="/file/6399/TZ SOCR ČR Den okének - vyhodnocení.pdf" class="
+								
+								pdf
+								
+								
+								
+								
+								
+								
+								
+							">
+								TZ SOCR ČR Den okének - vyhodnocení.pdf
+							</a>
+						</td>
+						<td class="mimetype">PDF</td>
+						<td class="hide">05.01.2021</td>
+						<td class="size">196.55 KB</td>
+					</tr>
+				
+			</tbody>
+		</table>
+	
+
+
+</div>
+
+
+
+<!-- RIGHT COLUMN -->
+
+<div class="col-lg-3 col-md-4 col-sm-5 article-right-col">
+	<h3>ODKAZY A ZPRÁVY</h3>
+
+	<!-- CAROUSEL -->
+		<div id="carousel-example-generic" class="carousel slide" data-interval="false">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="img-links">
+				
+				
+				
+							<a href="http://www.socr.cz/clanek/koronavirus-uzitecne-informace/"  title="Koronavirus - užitečné informace">
+								<img src="/file/5940/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>Koronavirus - užitečné informace</span>
+							</a>
+				
+				
+				
+							<a href="http://www.socr.cz/clanek/deklarace/" target="_blank" title="Energetika">
+								<img src="/file/5228/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>Energetika</span>
+							</a>
+				
+				
+				
+							<a href="http://www.socr.cz/clanek/cesky-system-kvality-sluzeb/"  title="Český systém kvality služeb">
+								<img src="/file/4765/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>Český systém kvality služeb</span>
+							</a>
+				
+				
+				</div>
+					</div>
+					<div class="item">
+						<div class="img-links">
+				
+				
+							<a href="http://www.socr.cz/clanek/predstavte-svou-nabidku-na-nejoblibenejsim-turistickem-portalu-ceskych-vyletniku-kudy-z-nudy/"  title="Kudy z nudy">
+								<img src="/file/6430/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>Kudy z nudy</span>
+							</a>
+				
+				
+				
+							<a href="http://www.socr.cz/clanek/sledovatelnost-tabakovych-vyrobku-track-trace/" target="_blank" title="Sledovatelnost tabákových výrobků (Track&Trace)">
+								<img src="/file/5247/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>Sledovatelnost tabákových výrobků (Track&Trace)</span>
+							</a>
+				
+				
+				
+							<a href="http://www.socr.cz/clanek/pravni-elektronicky-system-pes/"  title="Právní elektronický systém - PES">
+								<img src="/file/4989/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>Právní elektronický systém - PES</span>
+							</a>
+				
+				
+				</div>
+					</div>
+					<div class="item">
+						<div class="img-links">
+				
+				
+							<a href="http://www.socr.cz/clanek/26-10-2018-socr-cr-spolu-se-svymi-hosty-oslavil-100-vyroci-zalozeni-ceskoslovenska/"  title="100 let obchodu a cestovního ruchu">
+								<img src="/file/4734/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>100 let obchodu a cestovního ruchu</span>
+							</a>
+				
+				
+				
+							<a href="http://www.socr.cz/clanek/ochrana-osobnich-udaju/"  title="Ochrana osobních údajů">
+								<img src="/file/4518/img" alt="" />
+								<i class="fa fa-plus"></i>
+								<span>Ochrana osobních údajů</span>
+							</a>
+				
+					</div>
+				</div>
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					
+						
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						
+					
+						
+					
+						
+					
+						
+						<li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+						
+					
+						
+					
+						
+					
+						
+						<li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+						
+					
+						
+					
+				</ol>
+			</div>
+		</div>
+
+
+	<h3>STRATEGIČTÍ PARTNEŘI</h3>
+
+	<ul class="logo-list side">
+		<li class="col-md-12"><a href="http://www.prazdroj.cz/"><img src="/content/images_cms/partner-plzen.png" alt="PP"></a></li>
+		<li class="col-md-12"><a href="http://www.kmv.cz/cs/stranky/o-spolecnosti"><img src="/content/images_cms/partner-kmv.png" alt="KMV"></a></li>
+		<!-- li class="col-md-12"><a href="https://www.mastercard.cz/"><img src="/content/images_cms/partner-mastercard.png" alt="Mastercard"></a></li -->
+
+	</ul>
+</div>
+
+</div>
+
+
+	</div>
+	<!-- /container -->
+
+<!-- FOOTER -->
+	<footer class="container-fluid bg-footer">
+		<div class="container padding-vertical-small">
+			<div class="row">
+				<div class="mobile-menu-wrapper">
+					<div class="wrap">
+						<div class="extras">
+							<form action="http://www.socr.cz/vyhledavani/?q=" method="get">
+								<div class="s">
+									<input type="text" name="q" placeholder="Hledat..." value="">
+									<button type="submit"><i class="fa fa-search"></i></button>
+								</div>
+							</form>
+						</div>
+					
+						
+						<div class="pull-left">
+							<h4 class="">
+								<a href="o-socr-cr" title="O SOCR ČR">
+									O SOCR ČR
+									
+								</a>
+							</h4>
+							<!-- submenu -->
+							
+								<ul>
+							
+								
+									
+								
+									
+										<li class="">
+											<a href="jak-proc-se-stat-clenem" title="Jak/proč se stát členem">
+												Jak/proč se stát členem
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="dulezite-dokumenty" title="Důležité dokumenty">
+												Důležité dokumenty
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="organizacni-struktura" title="Organizační struktura">
+												Organizační struktura
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="sekretariat-socr-cr" title="Sekretariát SOCR ČR">
+												Sekretariát SOCR ČR
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="hodnotici-konference" title="Představenstvo a VH">
+												Představenstvo a VH
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="http://www.socr.cz/clenska-zakladna/" title="Členská základna">
+												Členská základna
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								</ul>
+							
+							<!-- submenu -->
+						</div>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<div class="pull-left">
+							<h4 class="active-title">
+								<a href="zpravodajstvi" title="Zpravodajství">
+									Zpravodajství
+									
+								</a>
+							</h4>
+							<!-- submenu -->
+							
+								<ul>
+							
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="active">
+											<a href="tiskove-zpravy-stanoviska" title="Tiskové zprávy a stanoviska">
+												Tiskové zprávy a stanoviska
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="statisticko-ekonomicky-servis" title="Statisticko-ekonomický servis">
+												Statisticko-ekonomický servis
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="EU-zahranici" title="EU a zahraničí">
+												EU a zahraničí
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="whats-new" title="Whats new">
+												Whats new
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								</ul>
+							
+							<!-- submenu -->
+						</div>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<div class="pull-left">
+							<h4 class="">
+								<a href="vzdelavani-a-poradenstvi" title="Dotace a vzdělávání">
+									Dotace a vzdělávání
+									
+								</a>
+							</h4>
+							<!-- submenu -->
+							
+								<ul>
+							
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="dotace-eu" title="Dotace EU">
+												Dotace EU
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="projekty" title="Projekty Svazu">
+												Projekty Svazu
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="seminare" title="Konference a semináře">
+												Konference a semináře
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="poradenstvi" title="Poradenství">
+												Poradenství
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="vzdelani" title="Vzdělávání">
+												Vzdělávání
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								</ul>
+							
+							<!-- submenu -->
+						</div>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<div class="pull-left">
+							<h4 class="">
+								<a href="odborne" title="Odborná témata">
+									Odborná témata
+									
+								</a>
+							</h4>
+							<!-- submenu -->
+							
+								<ul>
+							
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="podnikatelske-prostredi" title="Podnikatelské prostředí">
+												Podnikatelské prostředí
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="cestovni-ruch" title="Cestovní ruch">
+												Cestovní ruch
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="obchod-potraviny" title="Obchod - potraviny">
+												Obchod - potraviny
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="obchod-spotrebni-zbozi" title="Obchod  - spotřební zboží">
+												Obchod  - spotřební zboží
+												
+											</a>
+										</li>
+									
+								
+									
+										<li class="">
+											<a href="legis" title="Legislativa">
+												Legislativa
+												
+											</a>
+										</li>
+									
+								
+									
+								
+							
+								</ul>
+							
+							<!-- submenu -->
+						</div>
+						
+					
+						
+					
+						
+						<div class="pull-left">
+							<h4 class="">
+								<a href="tripartita" title="Sociální dialog a tripartita">
+									Sociální dialog a tripartita
+									
+								</a>
+							</h4>
+							<!-- submenu -->
+							
+								<ul>
+							
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								</ul>
+							
+							<!-- submenu -->
+						</div>
+						
+					
+						
+						<div class="pull-left">
+							<h4 class="">
+								<a href="https://www.jsmesoucasticeska.cz" title="Komora obchodních řetězců">
+									Komora obchodních řetězců
+									
+								</a>
+							</h4>
+							<!-- submenu -->
+							
+								<ul>
+							
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								</ul>
+							
+							<!-- submenu -->
+						</div>
+						
+					
+						
+						<div class="pull-left">
+							<h4 class="">
+								<a href="http://www.socr.cz/gdpr-ochrana-osobnich-udaju" title="Ochrana osobních údajů (GDPR)">
+									Ochrana osobních údajů (GDPR)
+									
+								</a>
+							</h4>
+							<!-- submenu -->
+							
+								<ul>
+							
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="http://www.socr.cz/co-je-obecne-narizeni-gdpr" title="Co je obecné nařízení GDPR">
+												Co je obecné nařízení GDPR
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="http://www.socr.cz/smlouva-o-zpracovani-osobnich-udaju/" title="Smlouva o zpracování os. údajů">
+												Smlouva o zpracování os. údajů
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="http://www.socr.cz/gdpr-nejdulezitejsi-pojmy/" title="Nejdůležitější pojmy">
+												Nejdůležitější pojmy
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="http://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules_cs" title="On-line nástroj">
+												On-line nástroj
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+										<li class="">
+											<a href="http://www.socr.cz/gdpr-dokumenty-a-uzitecne-odkazy/" title="Dokumenty a užitečné odkazy">
+												Dokumenty a užitečné odkazy
+												
+											</a>
+										</li>
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								</ul>
+							
+							<!-- submenu -->
+						</div>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						<div class="extras">
+							<a class="lang" href="english-info">ENGLISH</a>
+							<a class="clen" href="/jak-proc-se-stat-clenem/">STÁT SE ČLENEM</a>
+						</div>
+					</div>
+				</div>
+					
+				<div class="clearfix"></div>
+				<br>
+				<div class="copyright pull-left">
+					<a href="http://www.socr.cz/rss/" title="RSS" target="_blank"><i class="fa fa-rss"></i> RSS</a><a href="http://www.socr.cz/site-map/" title="Mapa webu">Mapa webu</a> Copyright SOCR ČR 2015 Všechna práva vyhrazena.
+				</div>
+				<div class="author pull-right">Výroba internetových stránek: <a href="https://www.neternity.cz/">NETERNITY.CZ</a>, Publikační systém: <a href="https://www.neternity.cz/">ATRIUM CMS</a></div>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60773576-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script type="text/javascript" src="http://www.socr.cz/js/init.js"></script>
+	<script src="http://www.socr.cz/js/external/bootstrap/bootstrap.min.js"></script>
+	<script src="http://www.socr.cz/js/script.js"></script>
+</body>
+</html>

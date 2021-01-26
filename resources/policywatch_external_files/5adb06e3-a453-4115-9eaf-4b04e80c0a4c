@@ -1,0 +1,482 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=970,initial-scale=1">
+  	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+        <title>Sistemska napaka</title>
+        <meta name="description" content="Pravno informacijski sistem Republike Slovenije">
+    
+    
+    
+      <meta property="svz:environment" content="production" />
+      <meta property="svz:appversion" content="1.0.0.70" />
+      <link media="all" rel="stylesheet" type="text/css" href="/css/all_1.0.0.1070.css" >
+      <style>
+          @font-face {
+                font-family: 'slick';
+                font-weight: normal;
+                font-style: normal;
+                src: url('/font/slick.eot');
+                src: url('/font/slick.eot?#iefix') format('embedded-opentype'), url('/font/slick.woff') format('woff'), url('/font/slick.ttf') format('truetype'), url('/font/slick.svg#slick') format('svg');
+            }
+      </style>
+    
+    
+    <link rel="shortcut icon" href="/Pis.web/images/favicon.ico" type="image/x-icon" >
+    <style>
+    .ui-autocomplete-loading { background: white url('http://pisrs.si/images/ui-anim_basic_16x16.gif') right center no-repeat; }
+    #predpis { width: 25em; }
+    </style>
+
+    <script type="text/javascript">
+        var PisWebApp = {'search':'', 'solrLocation':''};
+        if (!window.pis) window.pis = {}; // default namespace for plugins and widgets
+    </script>
+
+    
+    
+      <script src="/js/all_1.0.0.1070.js" type="text/javascript"></script>
+      <script src="/js/graph_001.compressed.js" type="text/javascript"></script>
+    
+    
+
+    
+    <script type="text/javascript">
+        var _gaq=_gaq||[];
+        _gaq.push(['_setDomainName','www.pisrs.si']);
+        _gaq.push(['_setAccount','UA-47256096-1']);
+        _gaq.push(['_setSiteSpeedSampleRate', 5]);
+        _gaq.push(['_trackPageview']);
+        (function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(ga);})();
+    </script>
+    
+    
+  </head>
+  <body>
+
+  
+	<div id="cc-notification" class="cc-monochrome cc-push" style="display: block;">
+	<div id="cc-notification-wrapper">
+	    <h2 class="cc">
+	        <span>Spletno mesto Pravno-informacijski sistem uporablja piškotke GoogleAnalytics, potrebne za izboljšanje uporabniške izkušnje</span>
+	        - <a href="#" id="cc-notification-moreinfo">spremeni nastavitve</a>
+	        - <a id="aMore">več o piškotkih</a>
+	    </h2>
+	    <div id="cc-notification-permissions" style="display: none">
+	        <div class="row">
+	        	<div class="left">
+	        		<input type="checkbox" checked="checked" id="cc-checkbox-analytics">
+	        	</div>
+	        	<div class="right">
+	                <strong>Spletna analitika - GoogleAnalytics</strong>
+	                <label id="cc-label-analytics" for="cc-checkbox-analytics">Spletno mesto Pravno informacijski sistem zbira statistične podatke o vašem obisku.</label>
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="cc-notification-buttons">
+	        <a href="#" id="cc-approve-button-thissite">Skrij obvestilo</a>
+	    </div>
+	</div>
+	</div>
+    
+ 
+    <div id="bodyCss">
+      <div id="popup" class="popup" style="display: none;">
+		<div style="text-align: center; height: 15ex;">
+			<p style="text-align: right; padding: 0em; padding-right: 1em; height: 2ex;"><a href="#" onclick="closePopup();">Zapri</a></p>
+			<hr/>
+			<p>
+				Ta funkcionalnost je še v fazi izdelave.<br/>
+				This functionality is still being developed.
+			</p>
+			<p>&nbsp;</p>
+		</div>			
+	  </div>
+      <div id="headerCss">
+      	<div id="mask" class="mask" style="display: none;"></div>
+	    
+
+
+      
+
+
+
+
+
+
+<!-- Fixed banner -->
+<div id="bannerCss">
+  <div id="logo-wrap" style="float: left;">
+    <img style="padding: 30px 0 0 34px;" src="http://pisrs.si/images/grb.png" alt="Grb Slovenije"/>
+  </div>
+  <div id="utilsCss">
+    <div style="padding-left:30px; margin-bottom:0px; line-height: 15px; padding-top: 25px;" >
+        <a href="./" style="color:white; font-size:48px;">
+        	<b>PIS</b>
+        </a> <br/>
+       	<a href="./" style="color:white; font-size:10px; padding-left: 0.29em;">
+        	Pravno-informacijski sistem
+        </a>
+    </div>
+  </div>
+  <div id="languages" style="float: right">
+  	<div id="google_translate_element"></div>
+  		<script type="text/javascript">
+			function googleTranslateElementInit() {
+			  new google.translate.TranslateElement({pageLanguage: 'sl', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, gaTrack: true, gaId: 'UA-47256096-1'}, 'google_translate_element');
+			}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+</div>
+<!-- Dynamic navigation -->
+<div id="navCss">
+  <ul class="navCss-top">
+    <li class="navfirst first">
+     <a href="./" class="nav-item">Domov</a>
+    </li>
+    <!--  Top level menu. -->
+    
+      
+        <li class="nav">
+      
+      
+      
+      
+        <a href="/Pis.web/pravniRedRS" class="nav-item" target="">PRAVNI RED RS</a>
+        
+      </li>
+    
+      
+        <li class="nav">
+      
+      
+      
+      
+        <a href="/Pis.web/sodnaPraksaRS" class="nav-item" target="">SODNA PRAKSA RS</a>
+        
+      </li>
+    
+      
+        <li class="nav">
+      
+      
+      
+      
+        <a href="/Pis.web/pravniRedEU" class="nav-item" target="">PRAVNI RED EU</a>
+        
+      </li>
+    
+      
+        <li class="nav">
+      
+      
+      
+      
+        <a href="/Pis.web/sodnaPraksaEU" class="nav-item" target="">SODNA PRAKSA EU/SE</a>
+        
+      </li>
+    
+      
+        <li class="nav">
+      
+      
+      
+      
+        <a href="/Pis.web/aktualno" class="nav-item" target="">AKTUALNO (COVID-19)</a>
+        
+      </li>
+    
+      
+        <li class="nav">
+      
+      
+      
+      
+        <a href="/Pis.web/normativniStevec" class="nav-item" target="">ZAKONODAJA V ŠTEVILKAH</a>
+        
+      </li>
+    
+      
+      
+        <li class="nav last">
+      
+      
+      
+        <a href="zakonodajaRSanglescina" class="nav-item" target="">Zakonodaja RS v angleščini</a>
+        
+      </li>
+    
+  </ul>
+</div>
+<!-- Dynamic breadcrumb -->
+
+
+
+
+
+
+<div id="breadcrumbCss" style="">
+  <div class="bullet"></div>
+  <ul id="breadcrumb" >
+    <li class="breadcrumb-item">www.pisrs.si </li>
+  </ul>
+</div>
+
+
+	    
+	    <noscript>
+	    	<div style="height: 100ex;">
+	    		&nbsp;<br/>
+	    		&nbsp;<br/>
+	    		&nbsp;<br/>
+				<p style="color: red;">
+					Javascript je onemogočen, omogočite Javascript in osvežite stran.
+				</p>
+			</div>
+		</noscript>
+      </div>
+      <div id="mainPartCss"  style="display: none;">
+		  
+      	<br/>&nbsp;<br/>&nbsp;<br/>
+      	
+      	
+      	<div class="bodyBCss">
+	    	
+
+
+<div class="napakaCss" style="padding-left: 180px">
+<h2>Prišlo je do napake, poizkusite kasneje</h2>
+
+</div>
+	    	
+	    	
+		    	<div id="opisZavihkaOkvir" class="opisZavihkaOkvir">
+		    		<div id="opisZavihka" class="opisZavihka">
+		    			
+		    			
+		    			
+							
+						
+					</div>
+		    	</div>
+	    	
+	    </div>
+      </div>
+      <div id="footerwrapCss">
+	    
+
+
+      
+<div>
+	<div>&nbsp;<br/>&nbsp;<br/></div>
+	<div id="footerCss">
+<div class="footerCss-logo">&nbsp;</div>
+<div id="footerCss-col1">
+<div class="footerCss-title1">
+<h5 style="font-size: 12px; line-height: 14px; font-weight: bold; font-family: Arial,Helvetica,sans-serif; color: #626060; font-style: normal;">Kontakt</h5>
+</div>
+<div id="footerCss-col1-content"><a id="c4071" name="c4071"></a>
+<div id="c4071" class="csc-default">
+<p style="color: #626060; font-size: 12px; font-family: Arial, Helvetica, sans-serif; margin: 0px; text-align: left;"><a href="http://www.svz.gov.si/" target="_blank">Služba Vlade RS za zakonodajo</a></p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;">Mestni trg 4</p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;">1000 Ljubljana</p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;">pisrs.svz[@]gov.si</p>
+</div>
+</div>
+</div>
+<div id="footerCss-col2">
+<div class="footerCss-title2">
+<h5 style="font-size: 12px; line-height: 14px; font-weight: bold; font-family: Arial,Helvetica,sans-serif; color: #626060; font-style: normal;">Izpostavljene vsebine</h5>
+</div>
+<div id="footerCss-col2-content"><a id="c3956" name="c3956"></a>
+<div id="c3956" class="csc-default">
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.vlada.si/delo_vlade/gradiva_v_obravnavi/">Vladna gradiva v obravnavi</a></p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.vlada.si/medijsko_sredisce/sporocila_za_javnost/">Sporočila za javnost</a></p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.dz-rs.si/wps/portal/Home/deloDZ/Porocevalec/GradivaDZ" target="_blank">Poročevalec Državnega zbora</a></p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.sodisce.si/sodna_uprava/sodnikov_informator/" target="_blank">Sodnikov informator</a></p>
+</div>
+</div>
+<!--###footerCss-col2### end --></div>
+<div id="footerCss-col3"><!--###footerCss-col3### begin -->
+<div class="footerCss-title3">
+<h5 style="font-size: 12px; line-height: 14px; font-weight: bold; font-family: Arial,Helvetica,sans-serif; color: #626060; font-style: normal;">Povezave</h5>
+</div>
+<div id="footerCss-col3-content"><a id="c3958" name="c3958"></a>
+<div id="c3958" class="csc-default">
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://predlagam.vladi.si/" target="_blank">Predlagam.vladi.si</a></p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://e-uprava.gov.si/e-uprava/" target="_blank">E-uprava</a></p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="https://nasodiscu.si/" target="_blank">Nasodiscu.si</a></p>
+</div>
+</div>
+</div>
+<div id="footerCss-col4">
+<div class="footerCss-title4">
+<h5 style="font-size: 12px; line-height: 14px; font-weight: bold; font-family: Arial,Helvetica,sans-serif; color: #626060; font-style: normal;">Državne ustanove</h5>
+</div>
+<div id="footerCss-col4-content"><a id="c3955" name="c3955"></a>
+<div id="c3955" class="csc-default">
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.up-rs.si/" target="_blank">Predsednik republike</a>&nbsp;</p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.dz-rs.si/" target="_blank">Državni zbor</a>&nbsp;/ <a href="http://www.ds-rs.si/" target="_blank">Državni svet</a>&nbsp;</p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a class="-" href="http://www.vlada.si/" target="_blank">Vlada</a> /&nbsp;<a href="http://www.vlada.si/si/o_vladi/seznami_in_povezave/spletna_mesta_ministrstev_in_organov_v_sestavi/">Ministrstva</a>&nbsp;/ <a href="http://www.vlada.si/si/o_vladi/seznami_in_povezave/spletna_mesta_vladnih_sluzb/">Vladne službe</a></p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.kpv.gov.si/" target="_blank">Predsednik vlade</a>&nbsp;</p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.us-rs.si/" target="_blank">Ustavno sodi&scaron;če</a>&nbsp;/ <a href="http://www.sodisce.si/" target="_blank">Vrhovno sodi&scaron;če</a>&nbsp;</p>
+<p style="color: #626060; font-size: 12px; font-family: Arial,Helvetica,sans-serif; margin: 0; padding: 0;"><a href="http://www.rs-rs.si/" target="_blank">Računsko sodi&scaron;če</a>&nbsp;</p>
+</div>
+</div>
+</div>
+<div id="footer-line">
+<div id="footer-legal">&copy; 2017 Služba Vlade Republike Slovenije za zakonodajo. Vse pravice pridržane!</div>
+<div id="footer-menu">
+<ul class="foot-menu-wrap">
+<li class="foot-menu-item"><a href="cm?idStrani=kolofon">Kolofon</a></li>
+<li class="foot-menu-item last"><a href="cm?idStrani=kontakt">Kontakt</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+	    <div style="margin: auto; text-align: right; width: 960px; background: #CFD8DF; font-size: 11px; line-height: 13px;" id="rev">$Rev: 1020 $</div>
+      </div>
+
+      <div id="legendaCollapsed">
+            <div>
+                <span class="title">Legenda</span>
+            </div>
+      </div>
+
+      <div id="legendaOpened">
+            <div>
+                <span class="title">Veljavnost predpisa</span>
+                <ul>
+                    <li>
+
+                <span class="img"><img title="Veljaven predpis"
+                                       src="http://pisrs.si/images/c-green.png"
+                                       alt="Veljaven predpis"></span>
+
+                        <span class="txt">Veljaven predpis</span>
+                    </li>
+                    <li>
+
+                <span class="img"><img title="Veljaven, vendar se še ne uporablja"
+                                       src="http://pisrs.si/images/c-orange.png"
+                                       alt="Veljaven, vendar se še ne uporablja"></span>
+
+                        <span class="txt">Veljaven predpis, vendar se še ne uporablja</span></li>
+                    <li>
+                <span class="img"><img title="Objavljen predpis, ki še ne velja"
+                                       src="http://pisrs.si/images/c-blue.png"
+                                       alt="Objavljen predpis, ki še ne velja"></span>
+                        <span class="txt">Objavljen predpis, ki še ne velja</span>
+                    </li>
+                    <li>
+                        <span class="img"><img title="Neveljaven predpis" src="http://pisrs.si/images/c-red.png" alt="Neveljaven predpis"></span>
+                        <span class="txt">Neveljaven predpis</span>
+                    </li>
+                    <li>
+                        <span class="img"><img title="Neveljaven predpis, ki se še uporablja" src="http://pisrs.si/images/c-red-green.png" alt="Neveljaven predpis, ki se še uporablja"></span>
+                        <span class="txt">Neveljaven predpis, ki se še uporablja</span>
+                    </li>
+                    <li>
+                        <span class="img"><img title="Predpis v pripravi" src="http://pisrs.si/images/c-yellow.png" alt="Predpis v pripravi"></span>
+                        <span class="txt">Predpis v pripravi</span>
+                    </li>
+                    <li>
+                        <span class="img"><img title="Konec postopka, predpis ni nikoli veljal" src="http://pisrs.si/images/c-violet.png" alt="Konec postopka, predpis ni nikoli veljal"></span>
+                        <span class="txt">Konec postopka, predpis ni nikoli veljal</span>
+                    </li>
+                    <li>
+                        <span class="img"><img title="Konzumiran ali obsoleten predpis" src="http://pisrs.si/images/c-black.png" alt="Konzumiran ali obsoleten predpis"></span>
+                        <span class="txt">Konzumiran ali obsoleten predpis</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#mainPartCss").show();
+        // remove $
+        $("#rev").text(
+                $("#rev").text().replace(/\$/g, " ")
+        );
+        // replace Rev
+        $("#rev").text(
+                $("#rev").text().replace("Rev:", "ver")
+        );
+    });
+
+    function showPopup() {
+        // on key down Esc, close popup
+        $(document).keydown(function(event) {
+            if (event.keyCode == '27') {
+                closePopup(true);
+            }
+        });
+
+        $('#popup').fadeIn('fast');
+        $('#mask').fadeIn('fast');
+    }
+
+    function closePopup() {
+        $('#popup').fadeOut(0);
+        $('#mask').fadeOut(0);
+    }
+</script>
+
+    
+    <script type="text/javascript">
+        $(document).ready( function() {
+            var jqChange = $('#cc-notification-moreinfo'),
+                    jqMore = $('#aMore'),
+                    jqSave = $('#cc-approve-button-thissite'),
+                    jqEtcPanel = $('#cc-notification-permissions'),
+                    jqGaeChk = $('#cc-checkbox-analytics'),
+                    isOpened = false,
+                    clearCookies = function(){
+                        var duration = 365, c = new Date();
+                        c.setDate(c.getDate() + duration);
+                        document.cookie = "ccGae=no;expires=" + c.toUTCString() + ";path=/Pis.web;";
+                        window.location.href = window.location.href.split('#')[0] +  (window.location.href.indexOf("?") > -1 ? '' : '?') + '&' + Math.random();
+                    },
+                    setCookies = function(){
+                        var duration = 365, c = new Date();
+                        c.setDate(c.getDate() + duration);
+                        document.cookie="ccGae=yes;expires=" + c.toUTCString() + ";path=/Pis.web;";
+                        $('div#cc-notification').remove();
+                    };
+            jqSave.click(function(){
+                jqGaeChk.is(':checked') ? setCookies() : clearCookies();
+                jqEtcPanel.toggle();
+            });
+            jqMore.click(function(){
+                window.location.href = '/Pis.web/cm?idStrani=piskotki';
+            });
+            jqChange.click(function(){
+                jqEtcPanel.toggle();
+                isOpened = !isOpened;
+                isOpened ? $(this).text('skrij nastavitve') : $(this).text('spremeni nastavitve');
+                isOpened ? jqSave.text('Shrani nastavitve') : jqSave.text('Skrij obvestilo');
+            });
+        });
+    </script>
+    
+
+  </body>
+</html>

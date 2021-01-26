@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
+	
+	
+	<head>
+		<title>Central Bank of Cyprus - Συγκεντρωτικά στοιχεία για τον Κυπριακό τραπεζικό τομέα και τις εταιρείες εξαγοράς πιστώσεων (στοιχεία για την αναστολή δόσεων χορηγήσεων) που καταρτίζονται ανά δύο εβδομάδες</title>
+
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="DW Dynamic Works Ltd">
+		<meta name="keywords" content=""> 
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="app" data-lang="el" />
+
+		
+		<meta property="og:title" content="Central Bank of Cyprus - Συγκεντρωτικά στοιχεία για τον Κυπριακό τραπεζικό τομέα και τις εταιρείες εξαγοράς πιστώσεων (στοιχεία για την αναστολή δόσεων χορηγήσεων) που καταρτίζονται ανά δύο εβδομάδες">
+		<meta property="og:description" content="">
+		<meta property="og:site_name" content="www.centralbank.cy"/>
+		<meta property="og:image" contnt="www.centralbank.cy/assets/image/imageoriginal/">
+		
+		<meta property="og:url" content="https://www.centralbank.cy/el/announcements/aggregate-cyprus-banking-sector-and-credit-acquiring-companies’-data-suspended-credit-facilities-data-which-are-compiled-every-two-weeks-30-06-2020">
+		<meta property="og:type" content=""/>
+
+		
+		<script type="text/javascript" src="/lib/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="/lib/jquery-base64/jquery.base64.js"></script>
+
+		
+		<link rel="stylesheet" type="text/css" href="/lib/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script type="text/javascript" src="/lib/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos" >
+		<link rel="stylesheet" type="text/css" href="/lib/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/lib/simple-line-icons/2.3.2/css/simple-line-icons.css">
+
+		
+		<script type="text/javascript" src="/js/data.appvars.min.js"></script>
+		<script type="text/javascript" src="/js/data.dictionary.min.js"></script>
+
+		
+		<script type="text/javascript" src="/system.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
+		<script type="text/javascript" src="/js/localization.js"></script>
+		<script type="text/javascript" src="/js/number.js"></script>
+		<script type="text/javascript" src="/js/string.js"></script>
+		<script type="text/javascript" src="/js/global.js"></script>
+		<script type="text/javascript" src="/js/controller.js"></script>
+		<link href="/plugins/bootstrap-datepicker/1.7.0/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+<script src="/plugins/bootstrap-datepicker/1.7.0/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="/plugins/bootstrap-datepicker/1.7.0/dist/locales/bootstrap-datepicker.el.min.js" charset="UTF-8"></script>
+
+
+		<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5952254251d264eb"></script> 
+
+		
+		
+
+			<!-- dynamically including section styles, only in developer mode --->
+			
+					<link rel="stylesheet" type="text/css" href="/include/sections/breadcrumbs/css/style.css">
+				
+					<link rel="stylesheet" type="text/css" href="/include/sections/announcement/css/style.css">
+				
+
+			<!-- dynamically including section scripts, only in developer mode --->
+			
+					<script type="text/javascript" src="/include/sections/breadcrumbs/js/script.js"></script>
+				
+					<script type="text/javascript" src="/include/sections/announcement/js/script.js"></script>
+				
+			
+			<!-- dynamically including section plugins, only in developer mode --->
+			
+
+				
+		<link rel="stylesheet" type="text/css" href="/css/dwf.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="/css/custom.css">
+		
+
+
+
+
+		
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		
+		
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-103148572-1', 'auto');
+				ga('send', 'pageview');
+			</script>
+			
+		
+	</head>
+
+	<body>
+		
+	
+		
+
+		
+
+	<header>
+		<div class="container-fluid">
+			<div class="language-switch">					 						 
+              	<a class="nav-top-items" href="/el/the-bank">Η Τράπεζα</a>  
+              	<a class="nav-top-items" href="/el/contact-us"><i class="fa fa-envelope" aria-hidden="true"></i></a> 
+              	<a class="nav-top-items searchBtn search_icon" href=".toggle-search"> <span class="[ glyphicon glyphicon-search ]"></span></a>
+              	<a href="javascript:void(0);" class="contrast-toggle" onclick="visuallyImpaired()"></a>
+				<a href="javascript:void(0);" onclick="location.href='/en/announcements/aggregate-cyprus-banking-sector-and-credit-acquiring-companies’-data-suspended-credit-facilities-data-which-are-compiled-every-two-weeks-30-06-2020'">EN</a> <span>|</span> <a href="javascript:void(0);" onclick="location.href='/el/announcements/aggregate-cyprus-banking-sector-and-credit-acquiring-companies’-data-suspended-credit-facilities-data-which-are-compiled-every-two-weeks-30-06-2020'">&Epsilon;&Lambda;</a>
+			</div>
+		</div> 
+		 
+
+		<nav class="navbar navbar-default navbar-bootsnipp" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand navbrand-custom normal-brand" href="/el/home" title=" Central Bank of Cyprus"><img src="/images/central-bank-of-cyprus-el.png" /></a>
+					<a class="navbar-brand navbrand-custom visually-impaired-brand" href="/el/home" title=" Central Bank of Cyprus"><h3>Central Bank of Cyprus</h3></a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right navbar-custom-media">
+						
+								<li><a href="/el/monetary-policy" title="Νομισματική Πολιτική">Νομισματική Πολιτική</a></li>
+							
+								<li><a href="/el/licensing-supervision" title="Αδειοδότηση & Εποπτεία">Αδειοδότηση & Εποπτεία</a></li>
+							
+								<li><a href="/el/resolution" title="Εξυγίανση">Εξυγίανση</a></li>
+							
+								<li><a href="/el/financial-stability" title="Χρηματοοικονομική Σταθερότητα">Χρηματοοικονομική Σταθερότητα</a></li>
+							
+								<li><a href="/el/deposit-guarantee-investors-compensation-schemes" title="Εγγύηση Καταθέσεων & Αποζημίωση Επενδυτών">Εγγύηση Καταθέσεων & Αποζημίωση Επενδυτών</a></li>
+							
+								<li><a href="/el/financial-market-infrastructures-payments" title="Υποδομές Χρηματοοικονομικών Αγορών & Πληρωμών">Υποδομές Χρηματοοικονομικών Αγορών & Πληρωμών</a></li>
+							
+								<li><a href="/el/banknotes-and-coins" title="Τραπεζογραμμάτια & Κέρματα">Τραπεζογραμμάτια & Κέρματα</a></li>
+							
+					</ul>
+				</div>
+			</div>
+			
+			<form action="/google-search" method="POST" role="search">
+				<div class="search_drop">
+					<div class="search_in">
+						<div class="container_inn">
+							<input type="text" name="q" placeholder="Αναζήτηση" onBlur="if (this.placeholder=='') this.placeholder='Αναζήτηση';" onFocus="if (this.placeholder=='Αναζήτηση') this.placeholder='';">
+							<button type="submit" class="btn-default btn-theme-custom btn1">Αναζήτηση <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</nav>
+	</header>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.search_drop').hide();
+			// Search
+			$('.searchBtn').on('click', function(event) {
+				event.preventDefault();
+				$('.search_drop').slideToggle(); 
+			});
+			
+			$('.searchBtn').on('click', function(event) {
+				event.preventDefault();
+				$('.search_icon input').toggle('fast');
+			});
+		});
+
+
+		function createCookie(name,value,days) {
+			var expires = "";
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime() + (days*24*60*60*1000));
+				expires = "; expires=" + date.toUTCString();
+			}
+			document.cookie = name + "=" + value + expires + "; path=/";
+		}
+
+		function readCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}
+
+		function visuallyImpaired(){
+			$('header').toggleClass('visually-impaired');
+			// $('footer').toggleClass('visually-impaired')
+			// $('nav').toggleClass('visually-impaired')
+			// $('section').toggleClass('visually-impaired-sections')
+			// $('ul').toggleClass('visually-impaired')
+			// $('li').toggleClass('visually-impaired')
+			// $('div').toggleClass('visually-impaired')
+			// $('article').toggleClass('visually-impaired')
+			// $('a').toggleClass('visually-impaired')
+			// $('p').toggleClass('visually-impaired')
+			// $('input').toggleClass('visually-impaired')
+			// $('select').toggleClass('visually-impaired')
+			// $('h1').toggleClass('visually-impaired')
+			// $('h2').toggleClass('visually-impaired')
+			// $('h3').toggleClass('visually-impaired')
+			// $('h4').toggleClass('visually-impaired')
+			// $('h5').toggleClass('visually-impaired')
+			// $('address').toggleClass('visually-impaired')
+			// $('figcaption').toggleClass('visually-impaired')
+			// $('span').toggleClass('visually-impaired')
+			// $('a').toggleClass('visually-impaired-links-buttons')
+			// $('button').toggleClass('visually-impaired-links-buttons')
+			// $('figcaption').toggleClass('visually-impaired-links-buttons')
+			$('a.navbar-brand').toggleClass('visually-impaired-dont-display');
+			// $('.btn-theme-custom').toggleClass('visually-impaired')
+			if (readCookie('VIcookie')=='V-I-off'){
+				createCookie('VIcookie','V-I-on',7);
+			}
+			else
+			{
+				createCookie('VIcookie','V-I-off',7);
+			};
+			location.reload(true);
+		};
+
+
+				
+			if (readCookie('VIcookie') == null) {
+				$('.visually-impaired-brand').hide();
+				$('.normal-brand').show();
+				$('.contrast-toggle').html('Ψηλή Αντίθεση');	
+				document.write('<link href="/themes/default/main.css" rel="stylesheet">')
+			}
+			else{
+				if (readCookie('VIcookie')=='V-I-on'){
+						$('.visually-impaired-brand').show();
+						$('.normal-brand').hide();
+						$('.contrast-toggle').html('Κανονική Αντίθεση');
+						document.write('<link href="/themes/high_contrast/main.css" rel="stylesheet">')
+					}
+				else
+				{
+						$('.visually-impaired-brand').hide();
+						$('.normal-brand').show();
+						$('.contrast-toggle').html('Ψηλή Αντίθεση');	
+						document.write('<link href="/themes/default/main.css" rel="stylesheet">')	
+				}
+			}
+
+	</script>
+
+
+	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+
+		<section id="breadcrumbs">
+			<div class="container">
+				<ul>
+					
+							<li><a class="active" href="/el/home">Οικοσελίδα</a> / </li>					
+						
+							<li><a class="active" href="/el/announcements">Ανακοινώσεις</a> / </li>					
+						
+							<li>Συγκεντρωτικά στοιχεία για τον Κυπριακό τραπεζικό τομέα και τις εταιρείες εξαγοράς πιστώσεων (στοιχεία για την αναστολή δόσεων χορηγήσεων) που καταρτίζονται ανά δύο εβδομάδες</li>
+						
+				</ul>
+			
+			</div>
+			<div class="clearfix"></div>
+		</section>
+	
+
+	<style type="text/css">
+		#generic_article .article-image img {
+			    width: auto !important;
+			}
+	</style>
+	<section id="generic_article">
+		<div class="container">
+			<div class="print" onclick="window.print()"><span class="fa fa-print">&nbsp;Εκτύπωση</span></div>
+
+			<div class="generic_page-intro">
+				<h1 class="text-center">Συγκεντρωτικά στοιχεία για τον Κυπριακό τραπεζικό τομέα και τις εταιρείες εξαγοράς πιστώσεων (στοιχεία για την αναστολή δόσεων χορηγήσεων) που καταρτίζονται ανά δύο εβδομάδες</h1>
+				
+				
+
+				<div class="text-center">
+				Τρίτη, 30  Ιουνίου 2020
+					<br />
+				</div>
+				<br />   
+			</div>
+
+			<div class="row">
+		  		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		  			<div class="pull-left-img article-image">
+						<p style="text-align: justify;"><span style="font-size: 18px;">Η Κεντρική Τράπεζα της Κύπρου δημοσιεύει σήμερα επικαιροποιημένα συγκεντρωτικά στοιχεία για τον Κυπριακό τραπεζικό τομέα και τις εταιρείες εξαγοράς πιστώσεων (στοιχεία για την αναστολή δόσεων χορηγήσεων) με ημερομηνία αναφοράς 5 Ιουνίου 2020.</span></p>
+
+<p style="text-align: justify;"><span style="font-size: 18px;">Πατήστε <a href="/el/licensing-supervision/banks/aggregate-cyprus-banking-sector-data" target="_blank">εδώ</a>.</span></p> 
+					</div>
+				</div>
+		 	</div>
+ 
+		 	
+			
+		</div>	
+	</section>
+
+
+			<!-- footer -->
+			<footer>
+				<br clear="all"/>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12 footer-stamp">
+							<a href="/" title="Central Bank of Cyprus"><img src="/images/central-bank-of-cyprus-el.png" title="Central Bank of Cyprus" alt="Central Bank of Cyprus"/></a>
+
+							
+							
+								
+								
+							<p>
+								Η Κεντρική Τράπεζα της Κύπρου (ΚΤΚ) ιδρύθηκε το 1963, σε σύντομο χρονικό διάστημα μετά την ανακήρυξη της ανεξαρτησίας της Κύπρου, σύμφωνα με τον περί Κεντρικής Τράπεζας της Κύπρου Νόμο του 1963 και τα σχετικά άρθρα του Συντάγματος της Κυπριακής Δημοκρατίας. Σήμερα η ΚΤΚ διέπεται από τους περί της Κεντρικής Τράπεζας της Κύπρου Νόμους του 2002, όπως εκάστοτε έχουν τροποποιηθεί (από τώρα και στο εξής «περί ΚΤΚ Νόμος»). 
+							</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							
+								<div class="footer-links">
+									<h2>Γρήγοροι Συνδέσμοι</h2>
+									<nav>
+										<ul>
+											
+			
+												<li><a href="/el/home" title="Οικοσελίδα" target="_self">Οικοσελίδα</a></li>
+											
+			
+												<li><a href="/el/the-bank" title="Η Τράπεζα" target="_self">Η Τράπεζα</a></li>
+											
+			
+												<li><a href="/el/the-governor" title="Διοικητής" target="_self">Διοικητής</a></li>
+											
+			
+												<li><a href="/el/calendar-of-central-bank-of-cyprus-officials" title="Ημερολόγιο Αξιωματούχων της ΚΤΚ" target="_self">Ημερολόγιο Αξιωματούχων της ΚΤΚ</a></li>
+											
+			
+												<li><a href="/el/monetary-policy" title="Νομισματική Πολιτική" target="_self">Νομισματική Πολιτική</a></li>
+											
+			
+												<li><a href="/el/licensing-supervision" title="Αδειοδότηση & Εποπτεία" target="_self">Αδειοδότηση & Εποπτεία</a></li>
+											
+			
+												<li><a href="/el/financial-stability" title="Χρηματοοικονομική Σταθερότητα" target="_self">Χρηματοοικονομική Σταθερότητα</a></li>
+											
+			
+												<li><a href="/el/financial-market-infrastructures-payments" title="Υποδομές Χρηματοοικονομικών Αγορών & Πληρωμών" target="_self">Υποδομές Χρηματοοικονομικών Αγορών & Πληρωμών</a></li>
+											
+			
+												<li><a href="/el/statistics" title="Στατιστική" target="_self">Στατιστική</a></li>
+											
+			
+												<li><a href="/el/banknotes-and-coins" title="Τραπεζογραμμάτια & Κέρματα" target="_self">Τραπεζογραμμάτια & Κέρματα</a></li>
+											
+			
+												<li><a href="/el/reference-interest-rates" title="Επιτόκια Αναφοράς" target="_self">Επιτόκια Αναφοράς</a></li>
+											
+			
+												<li><a href="/el/independent-commission-on-the-future-of-the-cyprus-banking-sector" title="Ανεξάρτητη Επιτροπή για το Μέλλον του Κυπριακού Τραπεζικού Τομέα" target="_self">Ανεξάρτητη Επιτροπή για το Μέλλον του Κυπριακού Τραπεζικού Τομέα</a></li>
+											
+										</ul>
+									</nav>
+								</div>
+							
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="footer-contact">
+								<h1>Επικοινωνία</h1>
+								<address>
+									ΤΗΛΕΦΩΝΟ: +357 22 71 41 00<br />
+ΤΑΧΥΔΡΟΜΙΚΗ ΔΙΕΥΘΥΝΣΗ: ΛΕΩΦΟΡΟΣ ΤΖΩΝ ΚΕΝΝΕΝΤΥ 80, 1076 ΛΕΥΚΩΣΙΑ<br />
+ή Τ.Θ. 25529, 1395 ΛΕΥΚΩΣΙΑ
+								</address>
+								<br /><br />
+								<a href="/el/contact-us" class="btn btn-md btn-default">Επικοινωνήστε</a>
+							</div>
+						</div>
+					</div>
+					<div class="row copyright">
+						<div class="col-sm-7">
+							<span class="text-uppercase">Πνευματικά δικαιώματα &copy; 2021 ΚΕΝΤΡΙΚΗ ΤΡΑΠΕΖΑ ΤΗΣ ΚΥΠΡΟΥ</span> <span class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="footer-link"><a href="/el/terms-of-use" target="_blank">Όροι Χρήσης</a>
+								
+									|&nbsp;&nbsp;<a href="/el/data-protection" target="_blank">Προσωπικά Δεδομένα</a>
+								
+							</span>
+						</div>
+						<div class="col-sm-5 text-right developed-by">
+							Δημιούργημα της: <a href="http://www.dynamicworks.eu" target="_blank" title="DW Dynamic Works Ltd">DW Dynamic Works Ltd</a><span class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Με την ισχύ του: <a href="http://www.dynamicworks.eu" target="_blank" title="DWCMS">DWCMS</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+				<!-- /.footer -->
+			<br clear="all">
+		</body>
+	</html> 

@@ -1,0 +1,2210 @@
+<!doctype html>
+<html lang="pl">
+    
+    
+    
+    <head>
+        <script>
+ var dataLayer = [{"pubDate":"2020-05-11","dot_datePublished":"2020-05-11 06:50:49+0200","dot_author1":{"name":"JUW","uuid":"679c78ba-dc70-5cec-bd6f-abae97d3a6eb"},"_contentType":"articleGallery","dot_uuid":"eb7a06b5-9d5f-5aee-8fb6-34a978f87a66","Keywords":"\"koronawirus\",\"dodatkowy zasiłek opiekuńczy\",\"zasiłek na dziecko\",\"ZUS\",\"zasiłek z ZUS\",\"razemzbiznesem\"","playerPossible":true,"numberOfPlayers":0,"dv":"RASP_FAKT/PIENIADZE/FINANSE","social_embeds":0,"photo_number":3,"license":"Fakt online","adult_flag":0}];
+</script>
+        <!-- {"layout":"detail","theme":"faktnext","variant":"fakt_2_0_14","version":"2.0.14"} -->
+        <meta charset="UTF-8"><script>/* <![CDATA[ */ ringDataLayer = {"content":{"object":{"type":"story","kind":"article","id":"eb7a06b5-9d5f-5aee-8fb6-34a978f87a66"},"part":1,"publication":{"point":{"id":"cwh7746"}},"source":{"system":"ring_content_space","id":"a30bd446-9e79-4839-a7f8-7540bb4f5df4"}},"context":{"publication_structure":{"root":"WWW_FAKT_PL","path":"PIENIADZE/FINANSE/ARTICLE"}}}; /* ]]> */</script><script>/* <![CDATA[ */ accConf = {"das":{"network":"1746213"},"gtm":{"id":["GTM-K6TXN4J"],"pageType":"HTML"},"rum":{"tid":"EA-1746213","boot":"disable","cookieInfo":0,"pageType":"HTML","data":{"RTYPE":"{\"type\":\"story\"}"}},"events":{"endpointPaths":["/a8f4d8cd95e164917035b64b867a45dd"]}}; /* ]]> */</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6TXN4J');</script>
+<!-- End Google Tag Manager -->
+
+        <script type="text/javascript">
+        !function(){var r="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,e="function"==typeof Object.defineProperties?Object.defineProperty:function(t,e,n){t!=Array.prototype&&t!=Object.prototype&&(t[e]=n.value)};function n(){n=function(){},r.Symbol||(r.Symbol=t)}var i=0;function t(t){return"jscomp_symbol_"+(t||"")+i++}function o(){n();var t=r.Symbol.iterator;t||(t=r.Symbol.iterator=r.Symbol("iterator")),"function"!=typeof Array.prototype[t]&&e(Array.prototype,t,{configurable:!0,writable:!0,value:function(){return a(this)}}),o=function(){}}function a(t){var e,n=0;return e=function(){return n<t.length?{done:!1,value:t[n++]}:{done:!0}},o(),(e={next:e})[r.Symbol.iterator]=function(){return this},e}function l(t){o();var e=t[Symbol.iterator];return e?e.call(t):a(t)}function p(t){if(!(t instanceof Array)){t=l(t);for(var e,n=[];!(e=t.next()).done;)n.push(e.value);t=n}return t}var h=0;var m="img script iframe link audio video source".split(" ");function v(t,e){for(var n=(t=l(t)).next();!n.done;n=t.next())if(n=n.value,e.includes(n.nodeName.toLowerCase())||v(n.children,e))return!0;return!1}function w(t,e){if(2<t.length)return performance.now();for(var n=[],r=(e=l(e)).next();!r.done;r=e.next())r=r.value,n.push({timestamp:r.start,type:"requestStart"}),n.push({timestamp:r.end,type:"requestEnd"});for(r=(e=l(t)).next();!r.done;r=e.next())n.push({timestamp:r.value,type:"requestStart"});for(n.sort(function(t,e){return t.timestamp-e.timestamp}),t=t.length,e=n.length-1;0<=e;e--)switch(r=n[e],r.type){case"requestStart":t--;break;case"requestEnd":if(2<++t)return r.timestamp;break;default:throw Error("Internal Error: This should never happen")}return 0}function s(t){t=t||{},this.w=!!t.useMutationObserver,this.u=t.minValue||null,t=window.__tti&&window.__tti.e;var i,o,a,s,u,c,f,r,n,e,d=window.__tti&&window.__tti.o;this.a=t?t.map(function(t){return{start:t.startTime,end:t.startTime+t.duration}}):[],d&&d.disconnect(),this.b=[],this.f=new Map,this.j=null,this.v=-1/0,this.i=!1,this.h=this.c=this.s=null,i=this.m.bind(this),o=this.l.bind(this),a=XMLHttpRequest.prototype.send,s=h++,XMLHttpRequest.prototype.send=function(t){for(var e=[],n=0;n<arguments.length;++n)e[n-0]=arguments[n];var r=this;return i(s),this.addEventListener("readystatechange",function(){4===r.readyState&&o(s)}),a.apply(this,e)},u=this.m.bind(this),c=this.l.bind(this),f=fetch,fetch=function(t){for(var i=[],e=0;e<arguments.length;++e)i[e-0]=arguments[e];return new Promise(function(e,n){var r=h++;u(r),f.apply(null,[].concat(p(i))).then(function(t){c(r),e(t)},function(t){c(t),n(t)})})},(r=this).c=new PerformanceObserver(function(t){for(var e=(t=l(t.getEntries())).next();!e.done;e=t.next())if("resource"===(e=e.value).entryType&&(r.b.push({start:e.fetchStart,end:e.responseEnd}),y(r,w(r.g,r.b)+5e3)),"longtask"===e.entryType){var n=e.startTime+e.duration;r.a.push({start:e.startTime,end:n}),y(r,n+5e3)}}),r.c.observe({entryTypes:["longtask","resource"]}),this.w&&(this.h=(n=this.B.bind(this),(e=new MutationObserver(function(t){for(var e=(t=l(t)).next();!e.done;e=t.next())"childList"==(e=e.value).type&&v(e.addedNodes,m)?n(e):"attributes"==e.type&&m.includes(e.target.tagName.toLowerCase())&&n(e)})).observe(document,{attributes:!0,childList:!0,subtree:!0,attributeFilter:["href","src"]}),e))}function u(t){t.i=!0;var e=0<t.a.length?t.a[t.a.length-1].end:0,n=w(t.g,t.b);y(t,Math.max(n+5e3,e))}function y(o,t){!o.i||o.v>t||(clearTimeout(o.j),o.j=setTimeout(function(){var t=performance.timing.navigationStart,e=w(o.g,o.b);t=(window.a&&window.a.A?1e3*window.a.A().C-t:0)||performance.timing.domContentLoadedEventEnd-t;if(o.u)var n=o.u;else n=performance.timing.domContentLoadedEventEnd?(n=performance.timing).domContentLoadedEventEnd-n.navigationStart:null;var r=performance.now();null===n&&y(o,Math.max(e+5e3,r+1e3));var i=o.a;(e=r-e<5e3?null:r-(e=i.length?i[i.length-1].end:t)<5e3?null:Math.max(e,n))&&(o.s(e),clearTimeout(o.j),o.i=!1,o.c&&o.c.disconnect(),o.h&&o.h.disconnect()),y(o,performance.now()+1e3)},t-performance.now()),o.v=t)}s.prototype.getFirstConsistentlyInteractive=function(){var e=this;return new Promise(function(t){e.s=t,"complete"==document.readyState?u(e):window.addEventListener("load",function(){u(e)})})},s.prototype.m=function(t){this.f.set(t,performance.now())},s.prototype.l=function(t){this.f.delete(t)},s.prototype.B=function(){y(this,performance.now()+5e3)},r.Object.defineProperties(s.prototype,{g:{configurable:!0,enumerable:!0,get:function(){return[].concat(p(this.f.values()))}}});try{if(window.dlRumData=[],"PerformanceLongTaskTiming"in window&&new s({}).getFirstConsistentlyInteractive().then(function(t){t&&window.dlRumData.push({metricName:"TTI",eventValue:t})}),"PerformanceObserver"in window)new PerformanceObserver(function(t){for(var e=t.getEntries(),n=0,r=e.length;n<r;n++){var i=e[n],o="",a=Math.round(i.startTime+i.duration);if("first-contentful-paint"===i.name)o="FCP";else{if("first-paint"!==i.name)continue;o="FP"}window.dlRumData.push({metricName:o,eventValue:a})}}).observe({entryTypes:["paint"]})}catch(t){}}();
+        </script>
+        <script type="text/javascript">
+        if(accConf&&accConf.rum&&accConf.rum.data)for(var key in window.dlRumData||(window.dlRumData=[]),accConf.rum.data)window.dlRumData.push({metricName:key,eventValue:accConf.rum.data[key]});
+        </script>
+        
+        <title>Dodatkowy zasiłek opiekuńczy. Rząd wstrzyma wypłaty?</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Policzyliśmy! Niemal 8 miliardów złotych – tyle ZUS wypłaci rodzicom korzystającym z dodatkowych zasiłków opiekuńczych wypłacanych przede wszystkim na dzieci do 8 roku życia. Koszty pomocy są gigantyczne. Dlatego w rządzie trwają rozmowy, by jak najszybciej przywrócić opiekę nad dziećmi w szkołach i to w jak najszerszym zakresie. Wtedy rodzice będą mogli wrócić do pracy i zasiłki nie będą aż tak potrzebne.">
+        
+            <link rel="preconnect" href="https://ocdn.eu">
+        
+            <link rel="preconnect" href="https://csr.onet.pl">
+        
+            <link rel="preconnect" href="https://sgqcvfjvr.onet.pl">
+        
+        <link rel="canonical" href="https://www.fakt.pl/pieniadze/finanse/dodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty/cwh7746">
+        <meta name="DC.Identifier" content="eb7a06b5-9d5f-5aee-8fb6-34a978f87a66">
+        
+            <link rel="amphtml" href="https://www.fakt.pl/pieniadze/finanse/dodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty/cwh7746.amp">
+        
+        
+    <script>/* <![CDATA[ */
+     var pp_gemius_identifier = '1vBLAK_PUFWdbCpo7a3nFaR.7zduKKciRKhJgm8Cw3T..7';
+     var pp_gemius_hit_identifier = '1vBLAK_PUFWdbCpo7a3nFaR.7zduKKciRKhJgm8Cw3T..7';
+
+     function gemius_pending(i) {window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+     gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+     (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':'');
+         gt.setAttribute('async','async'); gt.setAttribute('defer','defer'); gt.src=l+'://onet.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+    /* ]]> */</script>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  adsNoBanner = false;
+
+
+  dlApi={
+    'async': 1,
+    'lazy': 1,
+    
+    'lazyPercentage': 100,
+    'sgn_cookie': 1,
+    'cookieInfo': 0,
+    'autoslot': 1,
+    'keywords': ["koronawirus","dodatkowy-zasilek-opiekunczy","zasilek-na-dziecko","ZUS","zasilek-z-ZUS","razemzbiznesem","pieniadze","finanse"],
+    'target': 'RASP_FAKT/PIENIADZE',
+    'DV': 'RASP_FAKT/PIENIADZE/FINANSE',
+    'no_gemius': 1,
+    'kropka' : {"DX":"P,puls,cwh7746,2,1611670278890.","PU":"eb7a06b5-9d5f-5aee-8fb6-34a978f87a66"},
+    'keyvalues': {
+        'ci':'eb7a06b5-9d5f-5aee-8fb6-34a978f87a66',
+        'structure': 'detal',
+        'layout': 'newfoto'
+    },
+    cmd : [],
+  };
+
+  
+
+  
+
+  
+
+  
+    window.fbAppId = '708610235946140';
+  
+
+  
+    dlApi.cmd.push(function(dlApi) {
+        dlApi.registerTemplate({
+            tplCode: '1746213/Teaser-Standard',
+            renderAd: function(Ad, dlApi, window) {
+                if (Ad.div.indexOf('flat-nin') === -1) {
+                    return;
+                }
+
+                var el = document.getElementById(Ad.div);
+                var title = el.querySelector('[data-teaser-title]'),
+                    link = el.querySelector('[data-teaser-url]'),
+                    img = el.querySelector('[data-teaser-image]');
+
+                link.href = Ad.meta.adclick + Ad.fields.url;
+                title.innerText = Ad.fields.title;
+
+                img.src = Ad.fields.image;
+                img.alt = Ad.fields.title;
+                img.title = Ad.fields.title;
+
+                if (Ad.fields.adInfo) {
+                    var partner = document.createElement('span');
+                    partner.className = 'partner-label';
+                    if (Ad.fields.partner_logo) {
+                        var partnerLogo = document.createElement('img');
+                        partnerLogo.className = 'partner-label-img';
+                        partnerLogo.src = Ad.fields.partner_logo;
+                        partner.append(partnerLogo);
+                    }
+                    var partnerLabel = document.createElement('span');
+                    partnerLabel.className = 'partner-label-text';
+                    partnerLabel.innerText = Ad.fields.adInfo;
+                    partner.append(partnerLabel);
+                    title.append(partner);
+                }
+            }
+        });
+    });
+  
+</script>
+<script>
+//Paywall script
+dataLayer.push({closed:0});
+window.addEventListener('DOMContentLoaded', function(){
+  (function() {
+    var env = 'prod';
+    var tags = ["koronawirus","dodatkowy-zasilek-opiekunczy","zasilek-na-dziecko","ZUS","zasilek-z-ZUS","razemzbiznesem","pieniadze","finanse"];
+    
+      window.paywall = window.paywall || {};
+      paywall.config = {
+        env: env,
+        tenant: 'www.fakt',
+        aid: 'TWvpHsWcpu',
+        clientId: 'www.fakt.pl.okonto.front.onetapi.pl',
+        tags: tags,
+        isMobile: false,
+        author: 'JUW',
+        contentId: 'eb7a06b5-9d5f-5aee-8fb6-34a978f87a66',
+        contentCreated: '2020-05-11 06:50:00+0200',
+        contentSection: 'Fakt / Pieniądze / Finanse',
+        schemaOrg: 'Fakt.pl',
+        gaAnalytics: true,
+        kontoDomain: 'konto.onet.pl'
+      };
+      var s = document.createElement('script');
+      s.src = env === 'sandbox'
+          ? 'https://ocdn.eu/paywall-cdn/sandbox/paywall.js'
+          : 'https://ocdn.eu/paywall-cdn/paywall.min.js';
+      document.body.appendChild(s);
+  })();
+});
+</script>
+        <script id="adsinit" data-original="//sgqcvfjvr.onet.pl/YnVpbGQvezlza2x0ZTY1fWRsQXBpL2RsLmxpYntOTWFzX0E2NX0ubWluLmpz">/* <![CDATA[ */
+!function(e){var t={};function n(o){if(t[o])return t[o].exports;var i=t[o]={i:o,l:!1,exports:{}};return e[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(o,i,function(t){return e[t]}.bind(null,i));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=15)}([function(e,t){e.exports=function(e,t){var n=(t=t||document).createElement("style");return n.type="text/css",n.styleSheet?n.styleSheet.cssText=e:n.innerHTML=e,t.getElementsByTagName("head")[0].appendChild(n),n}},function(e,t){var n={},o=["onet_ad_network"],i=function(e,t){return t?e:decodeURIComponent(e||"")||null};e.exports={get:function(e,t){if(t=t||!1,function(e){return-1!==o.indexOf(e)&&void 0!==n[e]}(e))return i(n[e],t);for(var r=e+"=",a=document.cookie.split(";"),s=0;s<a.length;s++){for(var c=a[s];" "===c.charAt(0);)c=c.substring(1);if(0===c.indexOf(r)){var d=c.substring(r.length,c.length);return d=i(d,t),n[e]=d,d}}return n[e]=null,null}}},function(e,t){var n="//sgqcvfjvr.onet.pl/",o=/^(?:\w+:)?\/\//;n="https://"+(o.test(n)?n.replace(o,""):"lib.onet.pl/s.csr/"),e.exports={proto:"https://",base:n}},function(e,t,n){var o=n(4),i=n(5),r=n(0),a=n(9),s="whitelistPremium",c="Reklamy nie są takie złe... To dzięki nim masz darmowy dostęp do naszych najlepszych treści. Prosimy, odblokuj wyświetlanie reklam w naszym serwisie.".split(/\s+/);c.index=0;var d=function(e,t){if(!t.document.referrer||t.document.referrer!=t.location.href&&/^\w+:\/\//i.test(t.document.referrer)){var n=e.baseUrl.replace(/^((?:\w+:)?\/\/[^\/?&#]+).*/,"$1"),o=t.document.createElement("iframe");g(t,"message",(function(o){(o.origin||o.originalEvent.origin)==n&&"noadp"==o.data&&(v(e,"Adblock_whitelist","refresh"),t.location=t.location.href)})),o.width=0,o.height=0,o.frameborder=0,t.document.body.appendChild(o),o.src=[e.baseUrl,"MDI2NjA0MS9idWlsZC9kbEFwaS9kbC53aGwubWlu",".","html","?","v=",parseInt(Date.now()/1e7)].join("")}else p()},l=function(e){r("."+s+",."+s+" *{text-decoration:none !important}");!function t(){for(var n=(o=document.querySelectorAll("."+s+":not([data-"+s+"])")).length-1;n>=0;--n)f(e,o[n]).setAttribute("data-"+s,1);n=0;for(var o=document.querySelectorAll(".whitelistContent");n<o.length;++n)u(e,o[n]);setTimeout(t,5e3)}()},u=function(e,t){t.parentNode&&t.parentNode.removeChild(t)},f=function e(t,n){if(n.hasAttribute("data-"+s))return n;var o=n.nodeName.toLowerCase(),r=n.getAttribute("data-run-module");if(["img","canvas","svg","math","iframe","video","object","embed","audio"].indexOf(o)>=0||"embeddedapp/main.onettvplayer"==r||"local/main.player"==r||"pulsembed/pulsembed.init"==r&&n.innerHTML.indexOf("//onet.tv/")>=0||"embeddedapp/main.app"==r&&(""+n.getAttribute("data-params")).indexOf("//onet.tv/")>=0||/^mvp:/.test(n.id)){for(var a=t.document.createElement("div"),d=i(n),l=0;l<d.length;++l){var u=d[l];a.style[u]=d[u]}if(a.style.display="inline-block",["img","canvas","svg","math"].indexOf(o)>=0)a.style.background="#e2e3e7 url(//mastt.ocdn.eu/MDA_/74f6b5ce7ae8d0bdfce96970fc71bd47.jpg) no-repeat center",a.style.backgroundSize="contain";else{a.style.background="#e2e3e7 url(//mastt.ocdn.eu/MDA_/42f492f4c603c2817813a90dc951904c.jpg) no-repeat center";var f=n.getAttribute("data-height-hint");f&&(a.style.paddingBottom=f)}return n.parentNode.replaceChild(a,n),a}if((a=n.cloneNode(!0)).href){a.removeAttribute("href"),a.onclick=function(){};l=0;for(var m=["addEventListener","attachEvent"];l<m.length;++l){var p=m[l];a[p]&&(a[p]=function(){})}}if(a.attributes){l=0;for(var h=a.attributes;l<h.length;++l)/^data-/i.test(h[l].name)&&a.removeAttribute(h[l].name)}n.parentNode.replaceChild(a,n);for(var g=(n=a).firstChild;g;){switch(g.nodeType){case 1:g=e(t,g);break;case 3:if(/^\s*$/.test(g.nodeValue))break;var v="",b=0,w=i(g.parentNode).color||"#000";do{var y=c[c.index];v+='<span style="display:inline;background:'+w+";color:"+w+'">'+y+"</span> ",b+=y.length+1,c.index=++c.index%c.length}while(b<g.nodeValue.length);(a=t.document.createElement("span")).style.display="inline",a.style.opacity=.3,a.innerHTML=v,g.parentNode.replaceChild(a,g),g=a}g=g.nextSibling}return n},m=function(){return document.querySelectorAll('[href^="abp:"]:not(.whitelistLink)')},p=function(){for(var e=0,t=m();e<t.length;++e){var n=t[e];n.href="http://pomoc.onet.pl/46,4214,faq_serwis.html",n.target="_blank"}},h=function(e,t){e.time.TWHL=t||"default",v(e,"Adblock_info","show")},g=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)},v=function(e,t,n){b(e,(function(e){e.isAdblockDetected((function(){var o={event:"ga.send",ga:{hitType:"event",eventCategory:t,eventAction:n,eventLabel:e.time.TWHL,eventValue:void 0,nonInteraction:!0,dimension1:"1",dimension2:"1",dimension99:"0",segRand:e.seg_rand,segAb:a(e),adp:"1",whitelist:"1",whl:"0"}};if(window.EventsApi){var i=window.EventsApi.getTukanID();i&&(o.ga.userId=i)}(window.dataLayer=window.dataLayer||[]).push(o)})),e.on("gaReady",(function(e,o){o.set("dimension1","1"),o.set("dimension2","1"),o.set("dimension99","0"),o.send("event",t,n,this.time.TWHL,{nonInteraction:!0})}))}))},b=function(e,t){(e.cmd=(window.onetAds||window.dlApi).cmd||[]).push(t)};e.exports={onWhitelist:function(e,t,n,o){b(e,(function(e){e.fire("whitelist")})),h(e,n),l(t),e.adsNoBanner=!0,o||d(e,t)},transformContent:l,transformWhitelistLinks:function(e){var t=e.navigator.userAgent.toLowerCase();if(t.indexOf("msie")>=0||t.indexOf("trident")>=0)p();else for(var n,o=m(),i=document.querySelectorAll(".whitelistLink"),r=0,a=Math.min(o.length,i.length);r<a;++r){var s=o[r],c=i[r];for(c.removeAttribute("class"),n=0;n<s.attributes.length;++n){var d=s.attributes[n];c.setAttribute(d.name,d.value)}for(n=0;n<s.childNodes.length;++n)c.appendChild(s.childNodes[n]);s.parentNode.replaceChild(c,s)}},getWhitelistLink:function(e){var t=o(),n="abp:subscribe?location=http%3A%2F%2Flib.onet.pl%2Fs.csr%2Fwhitelist%2F"+encodeURIComponent(t)+".txt";return e&&(n+="%3Ftitle%3D"+encodeURIComponent(e)),n+="&title="+encodeURIComponent(e||t)},isDetectionDisabled:function(e){return e.inframe||1!=e.checkAdBlock},callAsync:b,appendWhitelistChecker:d,reportAdblock:h}},function(e,t){var n={pl:["com","net","org","aid","agro","atm","auto","biz","edu","gmina","gsm","info","mail","miasta","media","mil","nieruchomosci","nom","pc","powiat","priv","realestate","rel","shop","sklep","sos","szkola","targi","tm","tourism","travel","turystyka"],hu:["co","info","org","priv","sport","tm","2000","agrar","bolt","city","film","forum","games","hotel","ingatlan","jogasz","konyvelo","lakas","media","news","reklam","shop","suli","tozsde","utazas","video"],rs:["ac","co","edu","in","org"],gh:["com","edu","org"],ug:["co","or","ac","sc","go","ne","com","org"],ng:["com","edu","i","mobi","name","net","org","sch"]};e.exports=function(e){var t=(e=arguments.length?e.toLowerCase():window.location.hostname).split(".");if(t.length<3)return e;if(4==t.length){for(var o=0,i=!0;o<t.length;++o){var r=parseInt(t[o],10);if(isNaN(r)||""+r!=t[o]||r<0||r>255){i=!1;break}}if(i)return e}var a=t[t.length-1];return a in n&&n[a].indexOf(t[t.length-2])>=0?t.slice(-3).join("."):t.slice(-2).join(".")}},function(e,t){if(window.getComputedStyle)var n=function(e){return window.getComputedStyle(e)};else if(window.document.documentElement.currentStyle)n=function(e){return e.currentStyle};else n=function(){return{length:0}};e.exports=n},function(e,t){e.exports={get:function(){return window.onetAds||window.dlApi}}},function(e,t,n){var o=n(0),i=n(1),r=n(2),a=n(8),s=n(3),c=n(5),d=n(10),l=n(4),u=n(11),f=n(14),m=n(6),p=function(e,t,n){if(!t.targeting){var o,i=e.location.search+e.location.hash,r=/[?&#](?:test_(site|area|kwrd))=([^?&#]+)/g;for(t.targeting={};o=r.exec(i);)t.targeting[o[1]]=o[2]}var a=m.get(),s=(a.target||"").split("/"),c=(a.keywords||[]).join("+");t.targeting.site&&(s[0]=t.targeting.site),t.targeting.area&&(s[1]=t.targeting.area),a.whitelist&&(c+=(c?"+":"")+"whitelist"),t.targeting.kwrd&&(c+=(c?"+":"")+t.targeting.kwrd);try{return new RegExp(n,"i").test(s.join("/")+"/kwrd="+c)}catch(e){return!1}},h=function(e,t,n){if(!t.whitelisted&&(t.whitelisted=!0,!(d(e).width<550||k(e,t)))){var i=m.get(),r=_(e,t);s.onWhitelist(i,e,function(e){var t=m.get();e=e||{};var n=document.createElement("link");n.href="//ocdn.eu/files/mastt/ZmE7MDA_/462db16f872216014458184a85bd38e3.css",n.type="text/css",n.rel="stylesheet",n.onload=function(){setTimeout((function(){var e=c(document.querySelector(".contentInfo .ok")).width;void 0!==e&&(e=parseFloat(e)/2+6,o(".contentInfo .ok.itt{margin-left:-"+e+"px;visibility:visible}.contentInfo .ok.itt a{visibility: visible !important}.contentInfo .ok.itt:hover{margin-left:-"+(e+10)+"px}"))}),700)},document.getElementsByTagName("head")[0].appendChild(n);var i='<div class="headerBar"'+(e.bgColor?' style="background-color:'+e.bgColor+'"':"")+'></div><div class="statementBox"><div class="item"><p class="headline">'+(e.title||"Reklamy<br /> nie są takie złe...")+'</p><p class="text">'+(e.text||"To dzięki nim masz <strong>darmowy</strong> dostęp<br /> do&nbsp;naszych <strong>najlepszych treści</strong>.<br /> Prosimy, <strong>odblokuj wyświetlanie reklam</strong><br /> w&nbsp;naszym serwisie.")+'</p><div class="ok itt"><a class="ok-click" href="'+s.getWhitelistLink()+'">'+(e.clickText||"<strong>OK!</strong>")+'</a></div><div class="info">Kliknij <a href="'+s.getWhitelistLink()+'" class="button">'+(e.clickText||"<strong>OK!</strong>")+'</a> a później odśwież stronę.</div><p class="instructions">Nie działa? Skorzystaj z <a target="_blank" href="'+(e.clickInstruction||"http://pomoc.onet.pl/46,4214,faq_serwis.html")+'">instrukcji</a>.</p></div></div>',r=document.createElement("div");r.className="contentInfo",r.innerHTML=i;var a=document.body;t.whitelistId&&(o(".contentInfo{position:static}.contentInfo .statementBox{background:transparent}.contentInfo .item{margin-top:0}"),(a=document.getElementById(t.whitelistId)).innerHTML=""),a.appendChild(r)}(r.fields),n);e.navigator.userAgent.toLowerCase();s.transformWhitelistLinks(e),s.callAsync(i,(function(e){e.fire("flat-whitelist"," ","",[],{},{})}))}},g=function(e,t,n){if(!t.onDetectedFired&&(t.onDetectedFired=!0,!O())){u.sendBlockedToFrames();var o=_(e,t);if(o){var i=m.get();if(!o.src)return s.callAsync(i,(function(o){o.on("fetchAdsError",(function(o,i,r){r<1e3&&(!this.adp||"adp"==i)&&h(e,t,n)})),o.on("fetchTplError",(function(o,i,r,a){a&&"flat-whitelist"==a.slot&&h(e,t,n)})),o.on("fetchOnReady",(function(){this.slot2slot["flat-whitelist"]||h(e,t,n)}))})),void(i.isError&&i.isError((function(o){o&&h(e,t,n)})));var r=function(){var i=m.get();s.callAsync(i,(function(e){e.unblockSlots=o.slots||["top","left"],e.on("beforeAdsFetch",(function(){for(var e=[],t=0;t<this.toFetch.length;++t){var n=this.toFetch[t];this.unblockSlots.indexOf(n.slot)<0&&e.push(n)}this.toFetch=e}))})),document.getElementsByTagName("head")[0].appendChild(C(document.createElement("script"),i.baseUrl+o.src,(function(o){o&&h(e,t,n)})))};i.isError?i.isError((function(o){o?h(e,t,n):r()})):r()}}},v=function(e,t){if(!e||!e.length)return!1;if(-1!=t.indexOf(e))return!0;for(var n in t)if(t.hasOwnProperty(n)){var o="."+t[n],i=e.lastIndexOf(o);if(i>=0&&i==e.length-o.length)return!0}return!1},b=function(){var e=i.get("onet_ad_whl");return e&&(e=parseInt(e,10),!isNaN(e))?e:0},w=function(e){var t=e.document.referrer;return!(!t||!t.length)&&f(t).hostname},y=function(e){var t=e.location.search;return/[?&]utm_source=(fb|onetsg_fb_viasg)([&#]|$)/.test(t)},k=function(e,t){var n=t.noWhitelistConfig;return!(!n||!n.referrers)&&(function(e,t){var n=w(e);return v(n,t)||y(e)}(e,n.referrers)&&function(e,t){if(y(e)&&v(w(e),["facebook.com"]))return!0;var n=b(),o="onet_ad_whl="+(n+1)+"; path=/",i=l(),r=t[i]||t.default||3,a=new Date;return a.setTime(a.getTime()+2592e6),o+="; expires="+a.toUTCString(),i&&(o+="; domain=."+i),!(n>=r)&&(e.document.cookie=o,!0)}(e,n.capping))},x=function(e,t){L(),a.detect(e,(function(n){if(n)g(e,t);else if(t.postdetected)g(e,t,!0);else if(A(e)){t.notDetected=!0;var o=document.createElement("script");o.src="//onet.hit.gemius.pl/xgemius.js",document.getElementsByTagName("head")[0].appendChild(o)}s.callAsync(m.get(),(function(e){e.fire("detectAdblock",n)}))}))},A=function(e){try{if("WebSocket"!==e.WebSocket.name||e.Object.getOwnPropertyDescriptor(e.Element.prototype,"shadowRoot").get.toString().indexOf("[native code]")<0||0===e.RTCPeerConnection.name.indexOf("bound")||0===e.webkitRTCPeerConnection.name.indexOf("bound"))return!0}catch(e){}return!1},E=function(e,t,n){return function(o){if(o){if(void 0===t.blockedResources)t.blockedResources=[n];else{if(!(t.blockedResources.indexOf(n)<0))return;t.blockedResources.push(n)}2==t.blockedResources.length&&(t.postdetected=!0,t.notDetected&&g(e,t,!0),s.callAsync(m.get(),(function(e){e.fire("adblockPostdetected")})))}}},C=function(e,t,n){arguments.length<3&&(n=arguments[arguments.length-1]);var o=!1,i=function(e){o||(o=!0,n(e))},r=function(){i(!1)},a=function(){i(!0)};return e.addEventListener?(e.addEventListener("load",r,!1),e.addEventListener("error",a,!1)):e.attachEvent&&(e.attachEvent("onload",r),e.attachEvent("onerror",a)),setTimeout(r,500),arguments.length>2&&(e.src=t),e},O=function(){var e=m.get();return e.adsNoBanner||!e.injected},_=function(e,t){if(!t.hasOwnProperty("currentConfig")){t.currentConfig=null;var n=t.whitelistConfig;if(n)for(var o=0;o<n.length;++o){var i=n[o];if(p(e,t,i.target)){t.currentConfig=i;break}}}return t.currentConfig},L=function(){for(var e=0,t=s.getWhitelistLink();e<2;++e){var n=document.createElement("a");n.className="whitelistLink",n.href=t,document.body.appendChild(n)}};e.exports=function(e,t,n){var o={whitelistConfig:t,noWhitelistConfig:n};u.init();var i=m.get();i.baseUrl=r.base,void 0===i.checkAdBlock&&(i.checkAdBlock=1),i.time||(i.time={}),document.addEventListener?document.addEventListener("DOMContentLoaded",(function(){document.removeEventListener("DOMContentLoaded",arguments.callee,!1),x(e,o)}),!1):document.attachEvent&&document.attachEvent("onreadystatechange",(function(){"complete"===document.readyState&&(document.detachEvent("onreadystatechange",arguments.callee),x(e,o))})),function(e,t){var n=m.get();if(!s.isDetectionDisabled(n)&&A(e)){var o=document.createElement,i=function(n,o){/(^|\.)hit\.gemius\.pl$/i.test(f(o).hostname)&&C(n,E(e,t,"gemius"))};document.createElement=function(e){var t=o.apply(this,arguments);if("script"==(""+e).toLowerCase()){var n=t.setAttribute;try{Object.defineProperty(t,"src",{configurable:!0,enumerable:!0,get:function(){var e=document.createElement("a");return e.href=t.getAttribute("src"),e.href},set:function(e){i(t,e),n.call(t,"src",e)}})}catch(e){return t}t.setAttribute=function(e,o){return"src"==(""+e).toLowerCase()&&i(t,o),n.apply(t,arguments)}}return t},s.callAsync(n,(function(n){n.on("fetchAdsError",(function(n,o,i){i<1e3&&E(e,t,"csr")(!0)}))})),n.isError&&n.isError((function(n,o){n&&o<500&&E(e,t,"init")(!0)}))}}(e,o)}},function(e,t){var n=function(e){var t=e.getAttribute;e.getAttribute=function(e){return"data-autoslot"===(e+"").toLowerCase()?"0":t.apply(this,arguments)}},o=function(){for(var e=["admain","onet-ad-top","b028","onet-ad-flat-test","sponsUrl","ks_breaking_news","nitro-block","c11865","softonet","googleAdsCont","advertisments","widget-shop","adnp","pixad-box"],t=[],o=0;o<e.length;++o){var i=decodeURIComponent(e[o]);if(!document.getElementById(i)){var r=document.createElement("div");r.id=i,r.setAttribute("style","width:100px !important;height:100px !important;position:absolute !important;left:-10000px !important;top:-1000px !important;display:block;visibility:visible"),r.setAttribute("class","pub_300x250 adsbygoogle pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links onet-ad adsense autopromoapp infoCloud addthis_toolbox miniSlot lazyContent header-adblock onnetwork-video ads sliderads ppa-slot ad linkSponsorowany adform-slot widget-ads-content cg-template reklama ad-"),n(r),document.body.appendChild(r),t.push(r)}}return t};e.exports={createAdblockElements:o,detect:function(e,t){var n=!1,i=5;setTimeout((function r(){var a=o();setTimeout((function(){for(var o=!1,s=0;s<a.length;s++){var c=a[s];if(null!==e.document.body.getAttribute("abp")||null===c.offsetParent||0==c.offsetHeight||0==c.offsetLeft||0==c.offsetTop||0==c.offsetWidth||0==c.clientHeight||0==c.clientWidth)o=!0;else if(void 0!==e.getComputedStyle){var d=e.getComputedStyle(c,null);"none"!=d.getPropertyValue("display")&&"hidden"!=d.getPropertyValue("visibility")||(o=!0)}c.parentNode&&c.parentNode.removeChild(c)}--i,o&&i?setTimeout(r,45):n||(n=!0,t(o))}),5)}),50)}}},function(e,t,n){var o=n(1);e.exports=function(e){var t=parseInt(o.get("adp_test_seg_ab"),10);return isNaN(t)?e.seg_ab:(e.seg_ab=t,t)}},function(e,t){e.exports=function(e){var t=e||window,n=t.document,o=0,i=0;return"number"==typeof t.innerWidth?(o=t.innerWidth,i=t.innerHeight):n.body&&(n.body.clientWidth||n.body.clientHeight)?(o=n.body.clientWidth,i=n.body.clientHeight):n.documentElement&&(n.documentElement.clientWidth||n.documentElement.clientHeight)&&(o=n.documentElement.clientWidth,i=n.documentElement.clientHeight),{width:o||t.screen.width,height:i||t.screen.height}}},function(e,t,n){var o=n(12),i=n(13),r=n(2),a=n(6),s=n(3),c=!1,d=o(),l="https:"===window.location.protocol?"https:":"http:",u=[l+"//onet.tv",l+"//"+window.location.host,l+"//pulsembed.eu"],f=!1,m=function(){var e=g();d.setTargetWindows(e)},p=function(e){u=e,d.setAllowedOrigins(u)},h=function(e,t){return!(!e||!e.src)&&e.src.indexOf(t)>-1},g=function(){var e,t=[],n=null,o=[],i=document.getElementsByTagName("iframe");if(i)for(var r in i)n=i[r],e="mvp-embed",((" "+n.className+" ").indexOf(" "+e+" ")>-1||h(n,"pulsembed.eu")||h(n,"onet.tv"))&&n&&n.contentWindow&&t.push(n.contentWindow);return t.length<=0&&(o=document.querySelectorAll(".mvp"))&&o.length&&t.push(window),t};e.exports={init:function(){p(u),d.setTargetOrigin("*"),d.bind("adblock",(function(e){if(!i.check()){var t=a.get();if(m(),"detect"==e&&c)d.post("adblockApi",JSON.stringify({detected:c}));else if(0===e.indexOf("adblockInfo"))if(0==f){f=!0;var n=document.createElement("script");window.document.getElementsByTagName("head")[0].appendChild(n),n.src=[r.base,"build","/","whl","/","video",".","js"].join("")}else try{t.displayWhitelistVideoBoard()}catch(e){}else if(0===e.indexOf("adblockVideoStart")){var o=e.substr(18,e.length);o&&(s.reportAdblock(t,o),13!=t.time.TADP&&s.appendWhitelistChecker(t,window))}}}))},setAllowedOrigins:p,sendBlockedToFrames:function(){i.check()||(c=!0,m(),d.post("adblockApi",JSON.stringify({detected:!0})))}}},function(e,t){e.exports=function(){var e=[],t="",n=[],o=[],i=function(t){var n=!1,i="",r="";for(var a in e){if("*"==e[a]){n=!0;break}if(t&&t.origin&&t.origin==e[a]){n=!0;break}}return!!n&&(!!t.data&&(void 0!==(i=t.data.toString().split("."))[0]&&(r=i[0]),i=i.splice(1).join("."),void("function"==typeof o[r]&&o[r](i))))};return window.addEventListener?window.addEventListener&&window.addEventListener("message",i):window.attachEvent&&window.attachEvent("onmessage",i),{setAllowedOrigins:function(t){e=t},setTargetOrigin:function(e){t=e},setTargetWindows:function(e){n=e},post:function(e,o){for(var i=0;i<n.length;++i)n[i]&&n[i].postMessage&&n[i].postMessage(e+"."+o,t)},bind:function(e,t){o[e]=t},unbind:function(e){o[e]=!1}}}},function(e,t){e.exports={check:function(){try{return window.self!==window.top}catch(e){return!0}}}},function(e,t){e.exports=function(e){var t=document.createElement("a");return t.href=e,t}},function(e,t,n){"use strict";n.r(t);var o=function(e){if(void 0!==e)if(void 0===e.AL){e.AL=1,e.adbCsrSubdomain="k266d5zsl",e.cmd=e.cmd||[],e.fncs=["addSlot","show","on","$remove","addKeyword","addCss","addCallback"];for(var t=function(t){e[e.fncs[t]]=function(){var n=arguments;e.cmd.push((function(e){e[e.fncs[t]].apply(e,n)}))}},n=0;n<e.fncs.length;n++)t(n);var o,i=document.getElementById("adsinit");i&&(o=i.getAttribute("data-original"));var r=document.createElement("script");r.async=!0,function(e){var t,n=[],o=function(e){var o;if(!t)for(t=[e,Date.now()-i];o=n.shift();)o.apply(null,t)},i=Date.now();e.isError=function(e){t?e.apply(null,t):n.push(e)},e.onload=function(){o(!1)},e.onerror=function(){o(!0)}}(e),r.onload=e.onload,r.onerror=e.onerror,r.src=o||"//sgqcvfjvr.onet.pl/YnVpbGQvezlza2x0ZTY1fWRsQXBpL2RsLmxpYntOTWFzX0E2NX0ubWluLmpz",document.getElementsByTagName("head")[0].appendChild(r)}else console.error("dl.boot.min.js is already loaded!");else console.error("dlApi is undefined, Aborted!")},i=n(7);!function(e){if(e)try{"undefined"!=typeof $onet||e.injected||(e.injected=1,e.injectedVersion="20210125_1339",o(e),function(){try{var e=JSON.parse("[{\"target\":\"^BIZNES/\",\"fields\":{\"bgColor\":\"#f9b700\"},\"segment\":[0,10]},{\"target\":\"^RASP_FAKT/\",\"fields\":{\"bgColor\":\"#f01616\"},\"segment\":[0,90]},{\"target\":\"^(WIADOMOSCI|SPORT|MOTO|FILM|MUZYKA|FACET|KOBIETA|URODA|MODA|ZDROWIE|SLUB|DZIECKO|DOM)/\",\"fields\":{\"bgColor\":\"#f9b700\"},\"segment\":[0,90]},{\"target\":\"^RASP_(AUTOSWIAT|KOMPUTERSWIAT)/\",\"fields\":{\"bgColor\":\"#ef1b22\"},\"segment\":[0,90]},{\"target\":\"^PLEJADA/\",\"fields\":{\"bgColor\":\"#ff035c\"},\"segment\":[0,90]},{\"target\":\"^VOD/(?!(exclusive:)?PREMIUM).+?/kwrd=(?!(.+?\\\\+)?WHLNOTEST(\\\\+|$))(DETAL|.*\\\\+DETAL)(\\\\+|$)\",\"fields\":{\"bgColor\":\"#2fd6ff\"},\"segment\":[0,90]},{\"target\":\"^NOIZZ/\",\"fields\":{\"bgColor\":\"#00f3a3\"},\"segment\":[0,90]},{\"target\":\"/kwrd=(WHLTEST|.*\\\\+WHLTEST)(\\\\+|$)\"}]")}catch(e){}try{var t=JSON.parse("{\"referrers\":[\"facebook.com\",\"google.com\",\"google.pl\"],\"capping\":{\"default\":3}}")}catch(e){}i(window,e,t)}(),function(e){e.eventHandler||window.addEventListener("message",(function e(t){try{var n=window.onetAds||window.dlApi;if(n.eventHandler)return void window.removeEventListener("message",e,!1);var o=t&&t.data;"string"==typeof o&&(o=JSON.parse(o)),o&&"__dlApiCall"===o.kind&&(n.cmd=n.cmd||[],n.cmd.push((function(e){e.eventHandler(t)})))}catch(e){}}),!1)}(e))}catch(e){throw e}else console.error("dlApi is undefined, "+location)}(window.onetAds||window.dlApi)}]);
+/* ]]> */</script>
+        
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@FAKT24PL">
+    
+    <meta name="twitter:title" content="Dodatkowy zasiłek opiekuńczy. Wiemy, ile ZUS wypłaci rodzicom „koronawirusowego”">
+    <meta name="twitter:description" content="Policzyliśmy! Niemal 8 miliardów złotych – tyle ZUS wypłaci rodzicom korzystającym z dodatkowych zasiłków opiekuńczych wypłacanych...">
+    
+        <meta name="twitter:image" content="https://ocdn.eu/pulscms-transforms/1/g9pk9kuTURBXy84ODZjZmNlZi1iZDIzLTQ1NWUtYTk0Yy1mN2UzYTQyOTAxZTQuanBlZ5KVAwEAzQgSzQSKkwXNBLDNAqOBoTAF">
+    
+
+        
+
+    <link href="//ocdn.eu/ucs/static/faktnext/bcbc26ccc62c9c561378ab3b9eefe0b7/build/css/main-desktop.css" type="text/css" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Exo+2:700,900&display=swap" rel="stylesheet">
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "author": "JUW",
+            
+                "name": "Dodatkowy zasiłek opiekuńczy. Wiemy, ile ZUS wypłaci rodzicom „koronawirusowego”",
+                "headline": "Dodatkowy zasiłek opiekuńczy. Wiemy, ile ZUS wypłaci rodzicom „koronawirusowego”",
+            
+            
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://ocdn.eu/images/pulscms/YTQ7MDA_/886cfcef-bd23-455e-a94c-f7e3a42901e4.jpeg",
+                    "height": "1162",
+                    "width": "2067"
+                },
+            
+            
+                "dateModified": "2020-05-11 06:50:49+0200",
+            
+            "datePublished": "2020-05-11 06:50:49+0200",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Fakt24.pl",
+                "logo":
+                { "@type": "ImageObject", "url": "https://ocdn.eu/faktucs/static/images/logo.png" }
+            },
+            "mainEntityOfPage": "https://www.fakt.pl/pieniadze/finanse/dodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty/cwh7746",
+            
+                "isAccessibleForFree": "true"
+            
+        }
+    </script>
+
+        
+
+    <script type="application/ld+json">
+     {
+         "@context": "https://schema.org",
+         "@type": "BreadcrumbList",
+         "itemListElement": [
+             
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Fakt24",
+                    "item": "https://www.fakt.pl/"
+                },
+             
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Pieniądze",
+                    "item": "https://www.fakt.pl/pieniadze"
+                },
+             
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Finanse",
+                    "item": "https://www.fakt.pl/pieniadze/finanse"
+                }
+             
+         ]
+     }
+    </script>
+
+        
+    <meta name="news_keywords" content="koronawirus,dodatkowy zasiłek opiekuńczy,zasiłek na dziecko,ZUS,zasiłek z ZUS,razemzbiznesem">
+
+        
+
+    <meta property="og:title" content="Dodatkowy zasiłek opiekuńczy. Wiemy, ile ZUS wypłaci rodzicom „koronawirusowego”">
+
+    <meta property="og:description" content="Policzyliśmy! Niemal 8 miliardów złotych – tyle ZUS wypłaci rodzicom korzystającym z dodatkowych zasiłków opiekuńczych wypłacanych przede wszystkim na dzieci do 8 roku życia. Koszty pomocy są gigan...">
+
+    <meta property="og:image" content="https://ocdn.eu/pulscms-transforms/1/uxBk9kuTURBXy84ODZjZmNlZi1iZDIzLTQ1NWUtYTk0Yy1mN2UzYTQyOTAxZTQuanBlZ5KVAwEAzQgSzQSKkwXNBLDNAnaBoTAB">
+
+    <meta property="og:image:type" content="image/jpeg">
+
+    <meta property="og:image:width" content="1200">
+
+    <meta property="og:image:height" content="630">
+
+    <meta property="og:url" content="https://www.fakt.pl/pieniadze/finanse/dodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty/cwh7746">
+
+    <meta property="og:type" content="article">
+
+    <meta property="og:site_name" content="Fakt24.pl">
+
+    <meta property="og:locale" content="pl_PL">
+
+    <meta property="article:published_time" content="2020-05-11 06:50:49+0200">
+
+        
+
+<script data-static-amd-map="{&quot;uststd&quot;:&quot;https://ocdn.eu/paas-static/template-engine/f066ddd0af5c65555c5ff1273876e4f9/build&quot;,&quot;onettv&quot;:&quot;https://ocdn.eu/paas-static/template-engine/9a45bcb3878bfe2ee5a4f671b8239389/build&quot;,&quot;quizapp&quot;:&quot;https://ocdn.eu/paas-static/template-engine/4bf940d37e48f3548c375c519c69e1da/build&quot;,&quot;newslivestream&quot;:&quot;https://ocdn.eu/paas-static/template-engine/c521d70663e169ce4f8f4960a2bf333e/build&quot;,&quot;vendor&quot;:&quot;https://ocdn.eu/paas-static/template-engine/e664b902675175d7b4ea37dc48134f31/build&quot;,&quot;embeddedapp&quot;:&quot;https://ocdn.eu/paas-static/template-engine/90f2c8adc05ed0952349aade8960bfc9/build&quot;,&quot;layerglass&quot;:&quot;https://ocdn.eu/paas-static/template-engine/05afb91f43a4cacccad6959d895ac7ed/build&quot;,&quot;tabele&quot;:&quot;https://ocdn.eu/paas-static/template-engine/08725d11c5641c65d7f9985ecb7b86c0/build&quot;,&quot;dailyneeds&quot;:&quot;https://ocdn.eu/paas-static/template-engine/305a3e930539ff2e72e94acb885c4cb2/build&quot;,&quot;pulsembed&quot;:&quot;https://ocdn.eu/paas-static/template-engine/1972b6c75d43a95e148faf3e9d1a8c79/build&quot;,&quot;adsinit&quot;:&quot;//ty0lm9uz.onet.pl/e1BrazhrNDV9/build&quot;,&quot;uss&quot;:&quot;https://ocdn.eu/paas-static/template-engine/4103f0ba4ad9fabb230202e95534e54e/build&quot;,&quot;ustnavigation&quot;:&quot;https://ocdn.eu/paas-static/template-engine/4103f0ba4ad9fabb230202e95534e54e/build&quot;,&quot;local&quot;:&quot;//ocdn.eu/ucs/static/faktnext/bcbc26ccc62c9c561378ab3b9eefe0b7/build/js&quot;}">
+
+
+(function(){function x(m,l,q,n){Object.defineProperty(m,l,{get:function(){return q},set:function(){},configurable:n})}function w(m,l){A.A(m,l)}function E(m,l,q){if(1===arguments.length)A.define([],m);else if(2===arguments.length)"string"===typeof m&&"function"===typeof l?A.define([],l):A.define(m,l);else if(3===arguments.length)A.define(l,q);else throw Error("Malformed define",arguments);}function H(m){var l=!1,q=!1,n=null,e=null,p=F(!1);return{c:function(d,t){!0!==q&&!1===l&&(l=!0,n=d,setTimeout(function(){A.B(m,
+d,function(){var b=Array.prototype.slice.call(arguments,0);try{e=t.apply(null,b)}catch(a){return}p.exec([e])})},0))},l:function(){return!0===l?n:[]},get:function(d){p.add(d)},i:function(){q=!0;!1===l&&(l=!0,p.exec([void 0]))}}}function I(m){function l(e,p){if(!(0<e.length&&"."===e[0])){if("https://"===e.substr(0,8)||"http://"===e.substr(0,7)||"//"===e.substr(0,2))return e;for(var d in m)if(0===e.indexOf(d+"/")){d=e.replace(d,m[d]);if(e!==d)return y(p)?d+"."+p:d;break}}}function q(e,p){function d(){!0!==
+t&&(t=!0,p(b))}var t=!1,b=document.createElement("script");b.type="text/javascript";b.src=e;b.onload=d;b.async=!0;b.defer=!0;b.onreadystatechange=function(){"loaded"!==b.readyState&&"complete"!==b.readyState||d()};return b}var n={};return{load:function(e,p){if(y(e)){if(!(e in n)){var d=q(e,function(){n[e].query.exec([])});n[e]={C:d,query:F(!0)};document.getElementsByTagName("head")[0].appendChild(d)}n[e].query.add(p)}},j:function(){for(var e in n)if("interactive"===n[e].C.readyState)return e;return null},
+g:l,o:function(e){e=l(e,"js");return y(e)&&e in n?n[e].query.m():!1},F:function(e){e=l(e,"js");return y(e)&&e in n?!0:!1}}}function y(m){return"string"===typeof m&&""!==m}function F(m){function l(){if(!0===n)for(;0<e.length;)!0===m?e.shift().apply(null,p):q(e.shift())}function q(d){setTimeout(function(){d.apply(null,p)},0)}var n=!1,e=[],p=null;return{exec:function(d){Array.isArray(d)&&!1===n&&(n=!0,p=d,l())},add:function(d){"function"===typeof d&&(e.push(d),l())},m:function(){return n}}}function G(){return document.currentScript&&
+"function"===typeof document.currentScript.getAttribute?document.currentScript:null}var A=function(){function m(b,a){b=b.split("/");2>b.length||(b.pop(),a(b.join("/")))}function l(b,a){var c=b.split("/"),f=a.split("/");if(0<f.length)if("."===f[0]){var g=[];c.forEach(function(k){g.push(k)});f.forEach(function(k){"."!==k&&g.push(k)});a=g.join("/");if(0===a.indexOf(b))return a}else return a}function q(b,a){function c(){if(!1===f){for(var k=[],h=0;h<b.length;h++){var r=b[h];if(!0===g[r].a)k.push(g[r].value);
+else return}f=!0;"function"===typeof a&&a.apply(null,k)}}var f=!1,g={};b.forEach(function(k){k in g||(g[k]={a:!1,value:null},n(k,function(h){var r=g[k];!1===r.a&&(r.a=!0,r.value=h,c())}))});c()}function n(b,a){p=!0;var c=z.g(b,"js");c in d||(d[c]=H(b),z.load(c,function(){if(c in d){for(;0<t.length;){var f=t.pop();if(e(c,f.f))throw Error("circular dependency");d[c].c(f.f,f.define)}d[c].i()}}));d[c].get(a)}function e(b,a){function c(h,r){r.forEach(function(u){h.push(u)})}function f(){var h=k.shift();
+h in g||(g[h]=!0,h in d&&c(k,d[h].l()))}var g={},k=[];for(c(k,a);0<k.length;)f();return b in g}var p=!1,d={},t=[];return{B:function(b,a,c){m(b,function(f){for(var g=[],k=0;k<a.length;k++){var h=l(f,a[k]);"string"===typeof h&&""!==h&&g.push(h)}q(g,c)})},A:q,G:n,define:function(b,a){var c=G();if(!0===p){if(null!==c&&(c=c.getAttribute("src"),c in d)){d[c].c(b,a);return}c=z.j();y(c)?c in d&&d[c].c(b,a):t.push({f:b,define:a})}}}}(),z=null;x(window,"require",w,!1);x(window,"define",E,!1);x(w,"runnerBox",
+function(m){function l(a){t in a||(a[t]=n());return a[t]}function q(){function a(){if(!0===c)for(;0<f.length;)setTimeout(f.shift(),0)}var c=!1,f=[];return{s:function(g){f.push(g);a()},exec:function(){!1===c&&(c=!0);a()}}}function n(){var a=!1,c=null,f=q();return{u:function(g){f.s(function(){g(c)})},D:function(){!1===a&&(a=!0)},h:function(g){!0===a&&(c=g,f.exec())},b:function(){return a}}}function e(a,c){function f(h){setTimeout(function(){c(h)},0)}for(var g=[],k=0;k<a.length;k++)g.push(a[k]);for(a=
+0;a<g.length;a++)f(g[a])}function p(a){function c(){var h=a;h.querySelectorAll?(h===document&&(h=document.documentElement),h=Array.prototype.slice.call(h.querySelectorAll("*[data-run-module]"),0)):h=[];for(var r=[],u,v=0;v<h.length;v++)u=h[v],!0===k(u,g)&&r.push(u);return r}function f(h){if(d(h))return!0===l(h).b()?!0:!1;if("HTML"===h.tagName)return!0}function g(h){if(h===a)return!0;if(d(h))return!1}function k(h,r){function u(B){C++;if(200<C)return v(),!1;var D=r(B);return!0===D||!1===D?D:B.parentNode?
+u(B.parentNode):!1}function v(){var B=Error("Too much recursion");setTimeout(function(){throw B;},0)}var C=0;return u(h.parentNode)}return a===document||!0===k(a,f)?("function"!==typeof a.getAttribute?0:y(a.getAttribute("data-run-module")))?!0===l(a).b()?c():[a]:c():[]}function d(a){a=a.getAttribute("data-run-module");return"string"===typeof a&&""!==a}var t="runnerBoxElementProp"+(new Date).getTime(),b=function(){return"function"===typeof window.requestAnimationFrame?window.requestAnimationFrame:
+function(a){a()}}();return{runElement:function(a){function c(f){f=f.getAttribute("data-run-module");return"string"===typeof f&&""!==f?f:null}a=p(a);e(a,function(f){var g=c(f),k=g.split(".");if(2!==k.length)throw Error("irregulari contents of the attribute data-run-module: "+g);var h=k[0],r=k[1];m([h],function(u){b(function(){if(d(f)&&!1===l(f).b())if(l(f).D(),u&&"function"===typeof u[r]){f.setAttribute("data-run-module-isrun","1");var v=u[r](f,function(C){l(f).h(C)});"undefined"!==typeof v&&l(f).h(v)}else throw v=
+"No function '"+r+"' in module : "+h,f.setAttribute("data-run-module-isrun",v),Error(v);})})})},whenRun:function(a,c){d(a)&&l(a).u(c)}}}(w),!1);x(w.runnerBox,"runElement",w.runnerBox.runElement,!1);x(w.runnerBox,"whenRun",w.runnerBox.whenRun,!1);x(w,"defined",function(m){return null===z?!1:z.o(m)},!1);x(w,"toUrl",function(m){if(y(m))return z.g(m,"",!0)},!0);x(E,"amd",{},!0);(function(m,l){function q(b){function a(){var g=b.getAttribute("data-amd-preload");return y(g)?g.split(","):[]}function c(){var g=
+b.getAttribute("data-timeout-start");return 0<g?g:2E3}var f=e(b);return null!==f?(n(m,f,a(),c()),!0):!1}function n(b,a,c,f){function g(){setTimeout(function(){k()},f)}function k(){setTimeout(function(){0<c.length&&l(c,function(){});window.require.runnerBox.runElement(document)},0)}b({v:a});p(window,"load",function(){k();setTimeout(function(){k()},1E4)});"complete"===document.readyState&&k();"loaded"===document.readyState&&g();p(document,"DOMContentLoaded",function(){g();p(document.getElementsByTagName("body")[0],
+"pageshow",function(){k()})});p(document,"readystatechange",function(){"complete"!==document.readyState&&"loaded"!==document.readyState||g()})}function e(b){b=b.getAttribute("data-static-amd-map");if("string"===typeof b){if(""===b)return{}}else return null;return JSON.parse(b)}function p(b,a,c){b.addEventListener(a,c,!1)}var d=G();if(null===d||!0!==q(d)){d=document.getElementsByTagName("script");for(var t=0;t<d.length&&!0!==q(d[t]);t++);}})(function(m){null===z&&(z=I(m.v))},w)})();
+</script>
+        <script>
+ var pulse2EmbedConfig = {
+     pulsevideo: {
+         player: 'flowplayer'
+     },
+     settings:{}
+ };
+ 
+</script>
+        
+    <script>
+  dlApi.keywords.push('new_fakt'); // temporary keyword for native slots styling 
+</script></head>
+    <body class="detail " data-fakt-exp-variant="" data-run-module="local/main.desktop">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6TXN4J" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        <svg class="svg-icons" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="ico-facebook" width="28" height="28" viewBox="-10 -5 28 28">
+            <path d="M262.555,703.352h-.115l-.058.058-.115.058-.058.057-.115.115-.058.058-.058.172-.058.058v.115l-.058.115v1.785h2.65v.577l-.058.173v.345l-.058.173v.346l-.058.288v.345l-.058.173v.288l-.058.345h-2.3l-.058,8.641h-3.571L258.234,709l-1.727-.057c-.188-.158-.058-1.187-.058-1.5a6.1,6.1,0,0,1,.058-1.439l1.728-.061.058-2.243v-.346l.058-.115v-.173l.058-.115v-.115l.058-.115V702.6l.058-.057v-.115l.058-.058v-.057l.058-.058.173-.4.058-.058.058-.115.058-.058.058-.115.058-.058.058-.058.058-.058.058-.057.058-.058.058-.058.058-.058.058-.057.115-.058.058-.058.115-.058.058-.058.288-.115.058-.058h.058l.057-.058h.115l.057-.057h.115l.057-.058h.173l.058-.058h.23l.4-.058h3.053v2.937h-1.843Z" transform="translate(-256.405 -700.357)"/>
+        </symbol>
+
+        <symbol id="ico-twitter" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="-6 -7 28 28">
+            <path d="M408.669,712.935h.345l-.058.115a15.346,15.346,0,0,1-1.71.94,6.86,6.86,0,0,1-2.15.5h-1.21a10.039,10.039,0,0,0,3.4,1.383h.115c.2,0,.385.1.691.114l1.152.058.347.016.751-.052.86-.137a9.406,9.406,0,0,0,3.226-1.209,10.245,10.245,0,0,0,2.4-2.031,10.468,10.468,0,0,0,2.492-6.38v-.691c0-.118.794-.765.936-.907a6.822,6.822,0,0,0,.849-1.051,7.651,7.651,0,0,1-1.843.518l-.171.065.114-.123a3.294,3.294,0,0,0,1.382-1.843,6.754,6.754,0,0,1-2.189.806,3.811,3.811,0,0,0-2.592-1.095,3.568,3.568,0,0,0-3.519,2.822l-.052.577v.576a3.693,3.693,0,0,0,.057.411l-.633-.066a10.276,10.276,0,0,1-3.895-1.288,14.717,14.717,0,0,1-1.507-1.085c-.28-.219-1.152-1.206-1.337-1.255-.132.566-.4.684-.4,1.555v.4a3.593,3.593,0,0,0,.483,1.649c.325.53.806.8,1.015,1.116a3.811,3.811,0,0,1-1.571-.459l.073.574a3.29,3.29,0,0,0,.907,1.915,3.432,3.432,0,0,0,1.8,1.022v.058c-.238,0-.362.115-.691.115l-.29.012-.516-.071a3.533,3.533,0,0,0,2.938,2.42" transform="translate(-403.888 -701.933)"/>
+        </symbol>
+
+        <symbol id="ico-yt" width="28" height="28" viewBox="0 0 28 28">
+            <g transform="translate(-567.279 -504.708)">
+               <g transform="translate(574.183 513.705)">
+                    <path d="M586.91,515.125a3.154,3.154,0,0,0-3.153-3.154h-8.179a3.153,3.153,0,0,0-3.153,3.154v3.833a3.153,3.153,0,0,0,3.153,3.153h8.179a3.153,3.153,0,0,0,3.153-3.153Zm-5.16,2.109-3.262,1.789c-.142.077-.269-.026-.269-.187v-3.672c0-.163.131-.266.273-.185l3.284,1.883A.214.214,0,0,1,581.75,517.234Z" transform="translate(-572.425 -511.971)"/>
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="ico-instagram" width="28" height="28" viewBox="-70 -70 500 500">
+            <g transform="translate(-77.12909,-99.75057)">
+            <path d="m 257.12909,129.76098 c -40.73362,0 -45.84008,0.25899 -61.83741,0.91733 -15.96445,0.7292 -26.846,3.22727 -36.38561,6.93669 -9.8635,3.83171 -18.26206,8.98306 -26.60017,17.32165 -8.33835,8.33859 -13.44169,16.69125 -17.27412,26.55409 -3.70877,9.54051 -6.25479,20.46653 -6.98302,36.43098 -0.73154,15.99732 -0.91968,21.10396 -0.91968,61.83716 0,40.73554 0.18808,45.83984 0.91968,61.83717 0.72919,15.96445 3.27425,26.84576 6.98302,36.38633 3.83243,9.86278 8.93577,18.21549 17.27412,26.55403 8.33811,8.33859 16.73667,13.48525 26.60017,17.3193 9.53961,3.70708 20.42116,6.25455 36.38561,6.98374 15.99733,0.7292 21.10379,0.87029 61.83741,0.87029 40.73362,0 45.83984,-0.23496 61.8374,-0.87029 15.96422,-0.72919 26.89185,-3.27666 36.43147,-6.98374 9.8635,-3.83405 18.21621,-8.98071 26.55432,-17.3193 8.33835,-8.33854 13.44145,-16.69125 17.27388,-26.55403 3.70876,-9.54057 6.25503,-20.42188 6.98326,-36.38633 0.73154,-15.99733 0.91968,-21.10163 0.91968,-61.83717 0,-40.7332 -0.18808,-45.83984 -0.91968,-61.83716 -0.7292,-15.96445 -3.2745,-26.89047 -6.98326,-36.43098 -3.83243,-9.86284 -8.93553,-18.2155 -17.27388,-26.55409 -8.33811,-8.33859 -16.69082,-13.48994 -26.55432,-17.32165 -9.53962,-3.70942 -20.46725,-6.20749 -36.43147,-6.93669 -15.99732,-0.72919 -21.10378,-0.91733 -61.8374,-0.91733 z m 0,27.01275 c 40.04775,0 44.78087,0.23495 60.59684,0.87028 14.623,0.65865 22.60141,3.13785 27.88658,5.19137 7.00117,2.72149 11.98006,5.96281 17.22809,11.21061 5.24894,5.24779 8.48978,10.2274 11.20964,17.22754 2.05353,5.28542 4.52401,13.26413 5.19155,27.88544 0.71982,15.81622 0.87269,20.5512 0.87269,60.59757 0,40.04865 -0.16464,44.78369 -0.87269,60.59756 -0.66802,14.62366 -3.13802,22.55533 -5.19155,27.84074 -2.71986,7.00014 -5.9607,12.02211 -11.20964,17.27225 -5.24803,5.2478 -10.22692,8.48912 -17.22809,11.2106 -5.28517,2.04643 -13.26358,4.48099 -27.88658,5.14667 -15.81363,0.72913 -20.54555,0.87028 -60.59684,0.87028 -40.0513,0 -44.78322,-0.23495 -60.59684,-0.87028 -14.62301,-0.65865 -22.55557,-3.09321 -27.84074,-5.14667 -7.0011,-2.72148 -12.0259,-5.9628 -17.27394,-11.2106 -5.24773,-5.25014 -8.48863,-10.27211 -11.20964,-17.27225 -2.05352,-5.28541 -4.47792,-13.21708 -5.14546,-27.84074 -0.71982,-15.81387 -0.87269,-20.54891 -0.87269,-60.59756 0,-40.04637 0.16465,-44.78135 0.87269,-60.59757 0.66803,-14.62131 3.09194,-22.60002 5.14546,-27.88544 2.72101,-7.00014 5.96191,-11.97975 11.20964,-17.22754 5.24804,-5.2478 10.27284,-8.48912 17.27394,-11.21061 5.28517,-2.04643 13.21773,-4.52334 27.84074,-5.19137 15.81597,-0.72913 20.54909,-0.87028 60.59684,-0.87028 z m 80.07621,24.90046 c -9.93951,0 -18.0092,8.06807 -18.0092,18.00848 0,9.94042 8.06969,18.00854 18.0092,18.00854 9.94066,0 18.00896,-8.06812 18.00896,-18.00854 0,-9.94041 -8.0683,-18.00848 -18.00896,-18.00848 z m -80.07621,21.04051 c -42.53614,0 -76.99809,34.50924 -76.99809,77.04418 0,42.53735 34.46195,76.99713 76.99809,76.99713 42.53614,0 77.04394,-34.45978 77.04394,-76.99713 0,-42.53494 -34.5078,-77.04418 -77.04394,-77.04418 z m 0,27.0598 c 27.61161,0 49.98438,22.37415 49.98438,49.98438 0,27.61257 -22.37277,49.98438 -49.98438,49.98438 -27.61161,0 -49.98444,-22.37181 -49.98444,-49.98438 0,-27.61023 22.37283,-49.98438 49.98444,-49.98438 z"/>
+            </g>
+        </symbol>
+
+        <symbol id="ico-mail" width="28" height="28" viewBox="-5 -6 28 28">
+            <path d="M18.2,4H3.8A1.8,1.8,0,0,0,2.009,5.8L2,16.6a1.805,1.805,0,0,0,1.8,1.8H18.2A1.805,1.805,0,0,0,20,16.6V5.8A1.805,1.805,0,0,0,18.2,4Zm0,3.6L11,12.1,3.8,7.6V5.8L11,10.3l7.2-4.5Z" transform="translate(-2 -4)"/>
+        </symbol>
+
+
+        <symbol id="ico-link" width="28" height="28" viewBox="-3 -3 28 28">
+            <path class="a" d="M3.9,12A3.1,3.1,0,0,1,7,8.9h4V7H7A5,5,0,0,0,7,17h4V15.1H7A3.1,3.1,0,0,1,3.9,12ZM8,13h8V11H8Zm9-6H13V8.9h4a3.1,3.1,0,1,1,0,6.2H13V17h4A5,5,0,0,0,17,7Z" transform="translate(-6.364 10.607) rotate(-45)"/>
+        </symbol>
+
+        <symbol id="ico-msg" width="24" height="24" viewBox="-6 -5 28 28">
+            <path d="M706.5,708.758a9,9,0,0,0,3.726,7.211V719.5l3.405-1.868a10.75,10.75,0,0,0,2.868.388c5.523,0,10-4.146,10-9.259s-4.477-9.261-10-9.261-10,4.146-10,9.259Zm8.945-2.593,2.608,2.716,4.906-2.716-5.467,5.8-2.546-2.714-4.969,2.715Z" transform="translate(-706.5 -699.499)"/>
+        </symbol>
+
+        <symbol id="ico-whatsapp" width="24" height="24" viewBox="-6 -5 28 28">
+            <path d="M222.5,611a10.415,10.415,0,0,1-5.776-1.734l-4.036,1.29,1.308-3.9A10.493,10.493,0,0,1,222.5,590H222.5A10.5,10.5,0,0,1,222.5,611Zm6.288-7.628a1.477,1.477,0,0,0-.586-0.359c-0.308-.154-1.808-0.895-2.092-0.993a0.584,0.584,0,0,0-.753.228,13.052,13.052,0,0,1-.82,1.086,0.664,0.664,0,0,1-.741.117,7.717,7.717,0,0,1-2.462-1.518,9.312,9.312,0,0,1-1.7-2.117,0.494,0.494,0,0,1,.123-0.655c0.154-.191.3-0.327,0.457-0.506a1.849,1.849,0,0,0,.339-0.481,0.626,0.626,0,0,0-.043-0.568c-0.074-.155-0.691-1.661-0.944-2.272h0a0.609,0.609,0,0,0-.667-0.518c-0.117-.008-0.234-0.012-0.352-0.012a1.521,1.521,0,0,0-1.073.375,3.353,3.353,0,0,0-1.074,2.556,6,6,0,0,0,1.246,3.167,13.149,13.149,0,0,0,5.227,4.617c2.413,1,3.129.908,3.678,0.79a2.959,2.959,0,0,0,2.061-1.481A2.587,2.587,0,0,0,228.791,603.369Z" transform="translate(-212 -590)"/>
+        </symbol>
+
+        <symbol id="ico-trolley" width="20" height="20" viewBox="0 0 20 20">
+            <path d="M1307.88,9.479l-3.58,6.49a1.99,1.99,0,0,1-1.75,1.03h-7.45l-.9,1.631-.03.12a.247.247,0,0,0,.25.25H1306v2h-12a2.006,2.006,0,0,1-2-2,1.934,1.934,0,0,1,.25-.96l1.35-2.45L1290,8h-2V6h3.27l.94,2H1307a1,1,0,0,1,1,1A.978.978,0,0,1,1307.88,9.479Zm-14.4.472,2.048,5h7.238l2.381-5ZM1294,22a2,2,0,1,1-1.99,2A2.005,2.005,0,0,1,1294,22Zm10,0a2,2,0,1,1-1.99,2A2.006,2.006,0,0,1,1304,22Z" transform="translate(-1288 -5.999)"/>
+        </symbol>
+
+        <symbol id="ico-gratka" width="20" height="20" viewBox="0 0 20 20">
+            <g transform="translate(-1186.000000, -135.000000)">
+                <path d="M1208,135 C1208.55228,135 1209,135.447715 1209,136 L1209,148 L1207,148 L1207,147 L1206,147 L1206,148 L1204,148 L1204,146 L1203,146 L1203,153 L1198,153 L1198,146 L1197,146 L1197,153 L1192,153 L1192,146 L1191,146 L1191,153 L1186,153 L1186,136 C1186,135.447715 1186.44772,135 1187,135 L1208,135 Z M1201,147 L1200,147 L1200,152 L1201,152 L1201,147 Z M1195,147 L1194,147 L1194,152 L1195,152 L1195,147 Z M1189,147 L1188,147 L1188,152 L1189,152 L1189,147 Z M1204,143 L1196,143 L1196,144 L1204,144 L1204,143 Z M1194,137 L1188,137 L1188,144 L1194,144 L1194,137 Z M1207,140 L1196,140 L1196,141 L1207,141 L1207,140 Z M1207,137 L1196,137 L1196,138 L1207,138 L1207,137 Z" id="Combined-Shape"></path>
+            </g>
+        </symbol>
+
+        <symbol id="ico-phone" width="20" height="20" viewBox="-5 0 20 20">
+            <path d="M1341.6,6.1h-7.2a2.251,2.251,0,0,0-2.25,2.251v15.3a2.251,2.251,0,0,0,2.25,2.25h7.2a2.251,2.251,0,0,0,2.25-2.25V8.35A2.251,2.251,0,0,0,1341.6,6.1ZM1338,25a1.35,1.35,0,1,1,1.35-1.349A1.348,1.348,0,0,1,1338,25Zm4.05-3.079h-8.1V7.967h8.1Z" transform="translate(-1332.15 -6.099)"/>
+        </symbol>
+
+        <symbol id="ico-search" width="20" height="20" viewBox="0 0 20 20">
+            <path d="M1419.965,18.38h-.834l-.3-.285a6.874,6.874,0,1,0-.739.739l.285.3v.834l5.28,5.269,1.573-1.573Zm-6.336,0a4.752,4.752,0,1,1,4.752-4.752A4.746,4.746,0,0,1,1413.629,18.38Z" transform="translate(-1406.765 -6.764)"/>
+        </symbol>
+
+        <symbol id="ico-arrow-right" width="18" height="30" viewBox="0 0 18 30">
+            <path d="M12.115,6,8.59,9.525,20.04,21,8.59,32.475,12.115,36l15-15Z" transform="translate(-8.59 -6)"/>
+        </symbol>
+
+        <symbol id="ico-share" width="14" height="14" viewBox="0 0 724.18 806.76">
+            <g transform="translate(1193.5 499.59)">
+                <g transform="matrix(0 -17.254 17.254 0 10443 -2252.9)">
+                    <path d="m-134.38 309.5c0 4.1683-3.3791 7.5474-7.5474 7.5474s-7.5474-3.3791-7.5474-7.5474 3.3791-7.5474 7.5474-7.5474 7.5474 3.3791 7.5474 7.5474z" transform="translate(1.1045 -949.48)" />
+                    <path d="m-134.38 309.5c0 4.1683-3.3791 7.5474-7.5474 7.5474s-7.5474-3.3791-7.5474-7.5474 3.3791-7.5474 7.5474-7.5474 7.5474 3.3791 7.5474 7.5474z" transform="translate(32.767 -949.48)" />
+                    <path d="m-134.38 309.5c0 4.1683-3.3791 7.5474-7.5474 7.5474s-7.5474-3.3791-7.5474-7.5474 3.3791-7.5474 7.5474-7.5474 7.5474 3.3791 7.5474 7.5474z" transform="translate(16.936 -976.35)" />
+                    <rect transform="rotate(-60.001)" height="3" width="27.692" y="-443.73" x="488.22" />
+                    <rect transform="matrix(-.5 -.86603 -.86603 .5 0 0)" height="3" width="27.692" y="-226.9" x="613.16" />
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="ico-gallery" width="14" height="14" viewBox="0 0 100 77">
+            <path d="m50 32c-7.168 0-13 5.832-13 13s5.832 13 13 13 13-5.832 13-13c0-7.168-5.832-13-13-13z" />
+            <path d="m87 13h-15c0-7.18-5.82-13-13-13h-18c-7.18 0-13 5.82-13 13h-15c-7.18 0-13 5.82-13 13v38c0 7.18 5.82 13 13 13h74c7.18 0 13-5.82 13-13v-38c0-7.18-5.82-13-13-13zm-37 55c-12.683 0-23-10.318-23-23s10.317-23 23-23 23 10.318 23 23c0 12.682-10.317 23-23 23z" />
+        </symbol>
+
+        <symbol id="ico-video" width="14" height="14" viewBox="0 0 460.5 531.74">
+            <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "/>
+        </symbol>
+
+        <symbol id="ico-plus" viewBox="0 0 14.5 14.5">
+            <g transform="translate(63.501 17.039)">
+                <g transform="translate(-63.501 -17.039)">
+                    <rect class="a" width="14.5" height="14.5" rx="2" transform="translate(14.5 0) rotate(90)" fill="#e51513"/>
+                    <path class="b" d="M46.695,40.3H43.686V37.29a.926.926,0,1,0-1.851,0V40.3H38.827a.926.926,0,1,0,0,1.851h3.008v3.008a.926.926,0,1,0,1.851,0V42.149h3.008a.926.926,0,1,0,0-1.851Z" transform="translate(-35.511 -33.974)"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="ico-weather" viewBox="0 0 187 187">
+            <path transform="translate(97.474 38.423)" d="m53.225 34.864a31.435 31.435 0 1 1-62.87 0 31.435 31.435 0 1 1 62.87 0z" fill="#FF0" stroke="#888" stroke-width="7"/>
+            <path d="m118.91 7.5585-0.53125 29.125 0.53125-29.125zm-32.781 8.25s14.406 26.031 14.406 26.031-14.406-26.031-14.406-26.031zm65.344 1-14.656 24.344 14.656-24.344zm-89.624 22.563 25.781 15.5-25.781-15.5zm113.16 1.6875-24.281 13.438 24.281-13.438zm-122.42 30.844s30.062 0.5625 30.062 0.5625-30.062-0.5625-30.062-0.5625zm103.28 1.6562s27.406 0.3125 27.406 0.3125-27.406-0.3125-27.406-0.3125zm-69.094 16.625-25.906 14.531 25.906-14.531zm63.719 2.25 23.531 13.969-23.531-13.969zm-51.25 11.531-14.844 25.031 14.844-25.031zm36.906 1.8125 13.594 24.188-13.594-24.188zm-18.875 4.0625-0.3125 28.375 0.3125-28.375z" stroke="#888" stroke-linejoin="round" stroke-width="7"/>
+            <path d="m31.652 78.031c-9.933-0.141-19.172 5.078-24.179 13.657-5.0074 8.5794-5.0074 19.19 0 27.77 5.0074 8.5794 14.246 13.798 24.179 13.658h72.368c9.9328 0.14047 19.172-5.0782 24.179-13.658 5.0074-8.5794 5.0074-19.19 0-27.77-5.0074-8.5794-14.246-13.798-24.179-13.658h-72.368z" fill="#FFF" stroke="#888" stroke-width="7"/>
+            <path d="m91.406 80.702c-0.428-16.134-13.638-29.094-29.875-29.094-16.507 0-29.875 13.368-29.875 29.875 1e-6 7.23 2.537 13.89 6.8125 19.062" fill="#FFF" stroke="#888" stroke-linecap="round" stroke-width="7"/>
+        </symbol>
+    </defs>
+</svg>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div data-configuration='{ "slotName": "flat-belkagorna", "slotId": "onet-ad-flat-belkagorna" }' data-run-module="local/main.simpleAd"></div>
+        <div class="paywall-bar">
+    <div class="paywall-bar-wrapper">
+      <div id="loggedInUserLoader" class="paywall-bar-loader-container">
+        <div class="paywall-bar-loader"></div>
+        <div class="paywall-bar-loader"></div>
+        <div class="paywall-bar-loader"></div>
+      </div>
+      <div id="paywall_bar_logged">
+          <a class="paywall-bar-link" href="https://www.fakt.pl/subskrypcja">
+            Kup Subskrypcje
+          </a>
+        <div class="paywall-bar-login ">
+          <span id="is-logged"></span>
+          <span class="paywall-bar-link" onclick="paywall.user.login();" id="log-in-out" href="#"></span>
+        </div>
+      </div>
+      <ul id="submenuPaywal" class="paywall-submenu hidden">
+        <li class="paywall-submenu-item"><a class="paywall-submenu-link" href="https://konto.onet.pl/data/personal" title="Twoje konto">Twoje konto</a></li>
+        <li class="paywall-submenu-item"><a class="paywall-submenu-link" href="https://www.fakt.pl/lista-wydan" title="Półka wydań PDF">Półka wydań PDF</a></li>
+        <li class="paywall-submenu-item"><a class="paywall-submenu-link" href="https://www.fakt.pl/moja-subskrypcja" title="Ustawienia subskrypcji">Ustawienia subskrypcji</a></li>
+        <li class="paywall-submenu-item"><a class="paywall-submenu-link" onclick="paywall.user.logout();">Wyloguj się</a></li>
+      </ul>
+  </div>
+</div>
+<script>
+  var subopen = document.getElementById('is-logged'),
+      submenu = document.getElementById('submenuPaywal');
+
+  if (subopen) {
+    subopen.addEventListener('click', function() {
+      if (submenu.classList.contains('hidden') === true) {
+        submenu.classList.remove('hidden');
+        submenu.classList.add('visible');
+      } else {
+        submenu.classList.add('hidden');
+      };
+    });
+  }
+  document.addEventListener('paywall.auth.completed', function() {
+    if (paywall.user.id) {
+      document.getElementById('log-in-out').innerText = "";
+      document.getElementById('is-logged').innerHTML =
+        '<svg class="paywall-bar-icon" viewBox="-42 0 512 512.001" xmlns="http://www.w3.org/2000/svg"><path d="m210.351562 246.632812c33.882813 0 63.21875-12.152343 87.195313-36.128906 23.96875-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.128906 87.195312 23.980469 23.96875 53.316406 36.125 87.191406 36.125zm-65.972656-189.292968c18.394532-18.394532 39.972656-27.335938 65.972656-27.335938 25.996094 0 47.578126 8.941406 65.976563 27.335938 18.394531 18.398437 27.339844 39.980468 27.339844 65.972656 0 26-8.945313 47.578125-27.339844 65.976562-18.398437 18.398438-39.980469 27.339844-65.976563 27.339844-25.992187 0-47.570312-8.945312-65.972656-27.339844-18.398437-18.394531-27.34375-39.976562-27.34375-65.976562 0-25.992188 8.945313-47.574219 27.34375-65.972656zm0 0"/><path d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.3125-10.339844-7.808594-20.550781-13.375-30.335938-5.769532-10.15625-12.550782-19-20.160157-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.042969 5.339844-10.96875 0-22.085937-1.796876-33.042968-5.339844-11.210938-3.621094-20.300782-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.753906-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.609375 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.0625 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.777344-1.023438 19.953125-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.4375 23.730469 65.066406 23.730469h246.53125c26.621094 0 48.511719-7.984375 65.0625-23.730469 16.757813-15.945312 25.253906-37.589843 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm-44.90625 72.828125c-10.933594 10.40625-25.449218 15.464844-44.378906 15.464844h-246.527344c-18.933594 0-33.449218-5.058594-44.378906-15.460938-10.722656-10.207031-15.933594-24.140625-15.933594-42.585937 0-9.59375.316406-19.066407.949219-28.160157.617187-8.921874 1.878906-18.722656 3.75-29.136718 1.847656-10.285156 4.199219-19.9375 6.996094-28.675782 2.683593-8.378906 6.34375-16.675781 10.882812-24.667968 4.332031-7.617188 9.316407-14.152344 14.816407-19.417969 5.144531-4.925781 11.628906-8.957031 19.269531-11.980469 7.066406-2.796875 15.007812-4.328125 23.628906-4.558594 1.050781.558594 2.921875 1.625 5.953125 3.601563 6.167969 4.019531 13.277344 8.605469 21.136719 13.625 8.859375 5.648437 20.273437 10.75 33.910156 15.152344 13.941406 4.507812 28.160156 6.796875 42.273437 6.796875 14.113282 0 28.335938-2.289063 42.269532-6.792969 13.648437-4.410156 25.058594-9.507813 33.929687-15.164063 8.042969-5.140624 14.953125-9.59375 21.121094-13.617187 3.03125-1.972656 4.902344-3.042969 5.953125-3.601563 8.625.230469 16.566406 1.761719 23.636719 4.558594 7.636719 3.023438 14.121093 7.058594 19.265625 11.980469 5.5 5.261719 10.484375 11.796875 14.816406 19.421875 4.542969 7.988281 8.207031 16.289062 10.886719 24.660156 2.800781 8.75 5.15625 18.398438 7 28.675782 1.867187 10.433593 3.132812 20.238281 3.75 29.144531v.007812c.636719 9.058594.957031 18.527344.960937 28.148438-.003906 18.449219-5.214844 32.378906-15.9375 42.582031zm0 0"/></svg>';
+    } else {
+      document.getElementById('is-logged').innerText = "";
+      document.getElementById('log-in-out').innerText = "Zaloguj się";
+    }
+    var loader = document.getElementById('loggedInUserLoader');
+    loader.parentNode.removeChild(loader);
+  });
+</script>
+        
+
+<header class="header">
+    <div class="header-wrapper">
+        
+            <div class="header-logo">
+                <a href="/" class="header-logo-link">
+                    <picture>
+                        
+                        <img class="header-logo-img" src="https://ocdn.eu/faktucs/fakt_pl/fakt_logo.svg" alt="Fakt.pl">
+                    </picture>
+                </a>
+            </div>
+        
+        <div class="header-right">
+            <div class="header-first-line">
+                
+                <div class="header-first-line-item date">
+                    Wtorek, 26 stycznia 2021r.
+                </div>
+                <div class="header-first-line-item weather">
+                    <a class="header-weather-link" href="https://pogoda.onet.pl/?utm_source=fakt&utm_medium=menu" target="blank">
+                        <svg width="20" height="20" class="header-weather-icon">
+                            <use xlink:href="#ico-weather"></use>
+                        </svg>
+                        więcej &raquo;
+                    </a>
+                </div>
+                <div class="header-first-line-item social">
+                    ZNAJDŹ NAS:
+                    
+                        <a class="facebook ico-social" href="https://www.facebook.com/fakt24pl/" target="_blank" aria-label="icon Facebook">
+                            <svg class="share-element" viewBox="0 0 28 28">
+                                <use xlink:href="#ico-facebook"></use>
+                            </svg>
+                        </a>
+                    
+                        <a class="twitter ico-social" href="https://twitter.com/FAKT24PL" target="_blank" aria-label="icon Twitter">
+                            <svg class="share-element" viewBox="0 0 28 28">
+                                <use xlink:href="#ico-twitter"></use>
+                            </svg>
+                        </a>
+                    
+                        <a class="youtube ico-social" href="https://www.youtube.com/user/eFaktPL" target="_blank" aria-label="icon Youtube">
+                            <svg class="share-element" viewBox="0 0 28 28">
+                                <use xlink:href="#ico-yt"></use>
+                            </svg>
+                        </a>
+                    
+                        <a class="instagram ico-social" href="https://www.instagram.com/fakt24.pl/" target="_blank" aria-label="icon Instagram">
+                            <svg class="share-element" viewBox="0 0 28 28">
+                                <use xlink:href="#ico-instagram"></use>
+                            </svg>
+                        </a>
+                    
+                </div>
+            </div>
+            <nav class="menu-top topMenu" data-section="navigation-menu">
+                <ul class="mainlevel menu-list">
+                    
+                    
+                    <li class="menu-first-level-item cat-premium">
+                        <a class="menu-first-level-link" href="/premium">
+                            Premium
+                            
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-wydarzenia">
+                        <a class="menu-first-level-link" href="/wydarzenia">
+                            Wydarzenia
+                            
+                                <span class="menu-first-level-arrow"></span>
+                            
+                        </a>
+                        
+                            <div class="menu-second-level-container">
+                                <ul class="menu-second-level">
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska">Polska</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/swiat">Świat</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/bialystok">Białystok</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/krakow">Kraków</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/lublin">Lublin</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/lodz">Łódź</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/poznan">Poznań</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/rzeszow">Rzeszów</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/trojmiasto">Trójmiasto</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/slask">Śląsk</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/szczecin">Szczecin</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/wroclaw">Wrocław</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/wydarzenia/polska/warszawa">Warszawa</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-wydarzenia">
+                        <a class="menu-first-level-link" href="/wydarzenia/polityka">
+                            Polityka
+                            
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-kobieta">
+                        <a class="menu-first-level-link" href="/kobieta/plotki">
+                            Plotki
+                            
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-pieniadze active">
+                        <a class="menu-first-level-link" href="/pieniadze">
+                            Pieniądze
+                            
+                                <span class="menu-first-level-arrow"></span>
+                            
+                        </a>
+                        
+                            <div class="menu-second-level-container">
+                                <ul class="menu-second-level">
+                                    
+                                    
+                                    <li class="menu-second-level-elem active">
+                                        <a class="menu-second-level-link" href="/pieniadze/finanse">Finanse osobiste</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/pieniadze/nieruchomosci">Nieruchomości</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/pieniadze/prawo">Masz prawo</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/pieniadze/zakupy">Zakupy</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-hobby">
+                        <a class="menu-first-level-link" href="/hobby">
+                            Hobby
+                            
+                                <span class="menu-first-level-arrow"></span>
+                            
+                        </a>
+                        
+                            <div class="menu-second-level-container">
+                                <ul class="menu-second-level">
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/facet">Facet</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kobieta">Kobieta</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/podkategorie/dom-i-ogrod">Dom i Ogród</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/hobby/filmy">Filmy</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/hobby/gry">Gry</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/hobby/historia">Historia</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/hobby/ksiazki">Książki</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/pieniadze/motoryzacja">Motoryzacja</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/hobby/muzyka">Muzyka</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/hobby/turystyka">Turystyka</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-sport">
+                        <a class="menu-first-level-link" href="/sport">
+                            Sport
+                            
+                                <span class="menu-first-level-arrow"></span>
+                            
+                        </a>
+                        
+                            <div class="menu-second-level-container">
+                                <ul class="menu-second-level">
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/sport/lekkoatletyka">Lekkoatletyka</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/sport/pilka-nozna">Piłka nożna</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/sport/skoki-narciarskie">Skoki narciarskie</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/sport/siatkowka">Siatkówka</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/sport/sporty-walki">Sporty walki</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/sport/inne-sporty">Inne sporty</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-hobby">
+                        <a class="menu-first-level-link" href="/hobby/seriale">
+                            Seriale
+                            
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-zdrowie">
+                        <a class="menu-first-level-link" href="/zdrowie">
+                            Zdrowie
+                            
+                                <span class="menu-first-level-arrow"></span>
+                            
+                        </a>
+                        
+                            <div class="menu-second-level-container">
+                                <ul class="menu-second-level">
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/zdrowie/choroby">Choroby</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/zdrowie/ciaza-i-dziecko">Ciąża i dziecko</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/zdrowie/emocje">Emocje</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kobieta/zdrowie-i-fitness">Fitness</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/zdrowie/dieta">Dieta</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-kobieta">
+                        <a class="menu-first-level-link" href="/kobieta/seks-i-emocje">
+                            Seks
+                            
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-pieniadze active">
+                        <a class="menu-first-level-link" href="/pieniadze/biznes">
+                            Biznes
+                            
+                                <span class="menu-first-level-arrow"></span>
+                            
+                        </a>
+                        
+                            <div class="menu-second-level-container">
+                                <ul class="menu-second-level">
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/pieniadze/za-miastem">Za miastem</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                    
+                    <li class="menu-first-level-item cat-kodyrabatowe">
+                        <a class="menu-first-level-link" href="/kodyrabatowe">
+                            Rabaty
+                            
+                                <span class="menu-first-level-arrow"></span>
+                            
+                        </a>
+                        
+                            <div class="menu-second-level-container">
+                                <ul class="menu-second-level">
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/black-red-white?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=brw">Black Red White</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/eobuwie?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=eobuwie">E-obuwie</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/guess?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=guess">GUESS</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/leroy-merlin?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=leroymerlin">Leroy Merlin</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/lidl?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=lidl">Lidl</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/link4?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=link4">Link4</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/modivo?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=modivo">Modivo</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-second-level-elem ">
+                                        <a class="menu-second-level-link" href="/kodyrabatowe/obi?utm_source=fakt&amp;utm_medium=navi&amp;utm_campaign=obi">OBI</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                    </li>
+                    
+                </ul>
+
+                <div class="header-links">
+                    
+                        <a class="header-links-item header-link-gratka" href="https://gratka.pl/?utm_source=rasp&amp;utm_medium=fakt-header-icon&amp;utm_campaign=fakt-icon" aria-label="icon Gratka">
+                            <svg viewBox="0 0 20 20">
+                                <use xlink:href="#ico-gratka"></use>
+                            </svg>
+                        </a>
+                    
+                        <a class="header-links-item header-link-shop" href="https://literia.pl/literia-poleca/biblioteka-faktu/" aria-label="icon Shop">
+                            <svg viewBox="0 0 20 20">
+                                <use xlink:href="#ico-trolley"></use>
+                            </svg>
+                        </a>
+                    
+                        <a class="header-links-item header-link-phone" href="https://www.faktmobile.pl/" aria-label="icon Phone">
+                            <svg viewBox="0 0 20 20">
+                                <use xlink:href="#ico-phone"></use>
+                            </svg>
+                        </a>
+                    
+                        <a class="header-links-item header-link-search" href="/szukaj" aria-label="icon Search">
+                            <svg viewBox="0 0 20 20">
+                                <use xlink:href="#ico-search"></use>
+                            </svg>
+                        </a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="header-search">
+    <form action="/szukaj" method="get" class="header-search-form">
+        <input type="text" id="inpsearch" class="header-search-input" placeholder="Szukaj w serwisie..." name="q">
+        <button type="submit" class="header-search-submit">Szukaj</button>
+    </form>
+</div>
+</header>
+        
+          
+
+
+    
+    <div class="wrapper" data-section="urgent-bar">
+        <a class="urgent-bar" href="https://www.fakt.pl/wydarzenia/polska/imgw-intensywne-opady-sniegu-na-wschodzie-polski-czekaja-nas-kolejne-ataki-zimy/r0xy65g">
+            <div class="urgent-bar-title">
+                <span>
+                    PILNE!
+                    <svg class="urgent-bar-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="15px" height="100px" viewBox="0 0 300 2000" >
+                        <path d="M100 1955 c0 -25 5 -45 10 -45 6 0 10 -11 10 -25 0 -14 -4 -25 -10 -25 -6 0 -10 -35 -10 -85 0 -50 -4 -85 -10 -85 -5 0 -10 -13 -10 -30 0 -16 5 -30 10 -30 6 0 10 -26 10 -59 0 -38 5 -61 13 -65 10 -5 10 -7 0 -12 -15 -7 -17 -34 -3 -34 6 0 10 -7 10 -15 0 -8 5 -15 10 -15 6 0 10 -13 10 -30 0 -16 5 -30 10 -30 6 0 10 -13 10 -30 0 -16 -4 -30 -10 -30 -5 0 -10 -25 -10 -55 0 -30 -4 -55 -10 -55 -5 0 -10 -20 -10 -45 0 -25 5 -45 10 -45 6 0 10 -40 10 -100 0 -60 -4 -100 -10 -100 -5 0 -10 -11 -10 -25 0 -14 -4 -25 -10 -25 -6 0 -10 -55 -10 -145 0 -90 -4 -145 -10 -145 -5 0 -10 -13 -10 -30 0 -16 -4 -30 -10 -30 -5 0 -10 -25 -10 -55 0 -30 -4 -55 -10 -55 -6 0 -10 -50 -10 -130 l0 -130 -20 0 -20 0 0 -70 0 -70 90 0 c73 0 90 3 90 15 0 8 -4 15 -10 15 -6 0 -10 35 -10 85 0 50 4 85 10 85 6 0 10 30 10 70 0 40 4 70 10 70 6 0 10 14 10 30 0 17 -4 30 -10 30 -5 0 -10 20 -10 45 0 25 5 45 10 45 6 0 10 30 10 70 0 40 4 70 10 70 6 0 10 18 10 40 0 22 5 40 10 40 6 0 10 27 10 60 0 33 4 60 10 60 6 0 10 30 10 70 0 40 4 70 10 70 6 0 10 35 10 85 0 50 4 85 10 85 6 0 10 14 10 30 0 17 -4 30 -10 30 -6 0 -10 30 -10 70 0 40 4 70 10 70 6 0 10 14 10 30 0 17 -4 30 -10 30 -5 0 -10 7 -10 15 0 8 5 15 10 15 6 0 10 18 10 40 0 22 -4 40 -10 40 -5 0 -10 7 -10 15 0 8 -4 15 -10 15 -5 0 -10 14 -10 30 0 17 -4 30 -10 30 -5 0 -10 7 -10 15 0 8 5 15 10 15 6 0 10 50 10 130 l0 130 20 0 20 0 0 55 0 55 -100 0 -100 0 0 -45z"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="urgent-bar-content">
+                Ekstremalna pogoda na wschodzie Polski! Ale to nie koniec zimy... Co jeszcze nas czeka?
+            </div>
+            <div class="urgent-bar-arrow">
+                    <svg viewBox="0 0 18 30" width="18" height="30">
+                        <use xlink:href="#ico-arrow-right"></use>
+                    </svg>
+            </div>
+        </a>
+    </div>
+
+        
+        <section class="wrapper">
+            
+
+    
+
+<ul class="breadcrumbs">
+    
+        <li class="breadcrumbs-elem">
+            <a class="breadcrumbs-link" href="https://www.fakt.pl/">Fakt24</a>
+        </li>
+    
+        <li class="breadcrumbs-elem">
+            <a class="breadcrumbs-link" href="https://www.fakt.pl/pieniadze">Pieniądze</a>
+        </li>
+    
+        <li class="breadcrumbs-elem">
+            <a class="breadcrumbs-link" href="https://www.fakt.pl/pieniadze/finanse">Finanse</a>
+        </li>
+    
+    
+        <li class="breadcrumbs-elem">
+            Dodatkowy zasiłek opiekuńczy. Wiemy, ile ZUS wypłaci rodzicom „koronawirusowego”
+        </li>
+    
+</ul>
+        </section>
+        
+        <article class="grid-container five-columns">
+            
+                
+                    
+<aside  class="col-start-2" data-configuration="{&quot;name&quot;:&quot;left-sky 1&quot;,&quot;module&quot;:&quot;floatingAd&quot;,&quot;slotTemplate&quot;:&quot;adDefault&quot;,&quot;slotName&quot;:&quot;left-sky&quot;,&quot;slotId&quot;:&quot;&quot;,&quot;position&quot;:&quot;1&quot;,&quot;floatingHeight&quot;:&quot;&quot;,&quot;slotsNumber&quot;:&quot;1&quot;,&quot;containerHeight&quot;:&quot;MAX&quot;,&quot;containerHeightToElement&quot;:&quot;&quot;,&quot;customCssClass&quot;:&quot;col-start-2&quot;,&quot;mobileVisibility&quot;:false,&quot;desktopVisibility&quot;:true,&quot;extraData&quot;:{&quot;containerStyles&quot;:&quot;grid-row-start:1&quot;},&quot;language&quot;:&quot;pl&quot;,&quot;noBanner&quot;:false}" data-run-module="local/main.floatingAd"
+      style="grid-row-start:1"
+></aside>
+
+                
+                    
+<aside  class="col-start-2 row-start-3 row-end-6" data-configuration="{&quot;name&quot;:&quot;left-sky 2&quot;,&quot;module&quot;:&quot;floatingAd&quot;,&quot;slotTemplate&quot;:&quot;adDefault&quot;,&quot;slotName&quot;:&quot;left-sky&quot;,&quot;slotId&quot;:&quot;&quot;,&quot;position&quot;:&quot;2&quot;,&quot;floatingHeight&quot;:&quot;1500&quot;,&quot;slotsNumber&quot;:&quot;&quot;,&quot;containerHeight&quot;:&quot;MAX&quot;,&quot;containerHeightToElement&quot;:&quot;&quot;,&quot;customCssClass&quot;:&quot;col-start-2 row-start-3 row-end-6&quot;,&quot;mobileVisibility&quot;:false,&quot;desktopVisibility&quot;:true,&quot;extraData&quot;:{&quot;lazy&quot;:&quot;1&quot;},&quot;language&quot;:&quot;pl&quot;,&quot;noBanner&quot;:false}" data-run-module="local/main.floatingAd"
+     
+></aside>
+
+                
+            
+            
+                <div data-configuration='{"slotName":"right","slotsNumber":"1","containerHeight":"MAX" }' class="col-start-4 row-start-1" data-run-module="local/main.floatingAd"></div>
+                <div class="column-container row-start-3 row-end-6 col-start-4">
+                    
+                        
+<aside  data-configuration="{&quot;name&quot;:&quot;right2&quot;,&quot;module&quot;:&quot;floatingAd&quot;,&quot;slotTemplate&quot;:&quot;adDefault&quot;,&quot;slotName&quot;:&quot;right2&quot;,&quot;slotId&quot;:&quot;&quot;,&quot;position&quot;:&quot;1&quot;,&quot;floatingHeight&quot;:&quot;1500&quot;,&quot;slotsNumber&quot;:&quot;&quot;,&quot;containerHeight&quot;:&quot;MAX&quot;,&quot;containerHeightToElement&quot;:&quot;&quot;,&quot;customCssClass&quot;:&quot;&quot;,&quot;mobileVisibility&quot;:false,&quot;desktopVisibility&quot;:true,&quot;extraData&quot;:{&quot;containerStyles&quot;:&quot;grid-row-start: 4; grid-row-end: 6;grid-column: 4;flex-flow: column;display: flex&quot;,&quot;lazy&quot;:&quot;1&quot;},&quot;language&quot;:&quot;pl&quot;,&quot;noBanner&quot;:false}" data-run-module="local/main.floatingAd"
+      style="grid-row-start: 4; grid-row-end: 6;grid-column: 4;flex-flow: column;display: flex"
+></aside>
+
+                    
+                </div>
+            
+            <section class="main">
+                
+                <div class="article-header ">
+                    <h1 class="article-title">Dodatkowy zasiłek opiekuńczy. Wiemy, ile ZUS wypłaci rodzicom „koronawirusowego”</h1>
+                    
+                        
+                    
+                    
+                    
+
+
+
+<div class="article-date">
+    
+        Data utworzenia:
+        <time datetime="2020-05-11T04:50:00.000Z">
+            11 maja 2020, 6:50.
+        </time>
+    
+    
+</div>
+
+                    
+                      
+<div class="article-share">
+    <button class="article-share-button article-share-button-fb" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&quote=Dodatkowy%20zasi%C5%82ek%20opieku%C5%84czy.%20Wiemy%2C%20ile%20ZUS%20wyp%C5%82aci%20rodzicom%20%E2%80%9Ekoronawirusowego%E2%80%9D')">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-facebook"></use>
+        </svg>
+        <span class="article-share-button-name">Facebook</span>
+    </button>
+    <button class="article-share-button article-share-button-tw" type="button" onclick="window.open('https://twitter.com/intent/tweet?source=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&text=Dodatkowy%20zasi%C5%82ek%20opieku%C5%84czy.%20Wiemy%2C%20ile%20ZUS%20wyp%C5%82aci%20rodzicom%20%E2%80%9Ekoronawirusowego%E2%80%9D%3A%20https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746')">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-twitter"></use>
+        </svg>
+        <span class="article-share-button-name">Twitter</span>
+    </button>
+
+    <button class="article-share-button article-share-button-msg" type="button" onclick="window.open('https://www.facebook.com/dialog/send?app_id=' + window.fbAppId + '&amp;link=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&amp;redirect_uri=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746')">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-msg"></use>
+        </svg>
+        <span class="article-share-button-name">Messenger</span>
+    </button>
+
+    
+        <button class="article-share-button article-share-button-mail" type="button" onclick="javascript:window.location='mailto:?body=' + window.location;">
+            <svg class="article-share-button-svg" viewBox="0 0 28 28">
+                <use xlink:href="#ico-mail"></use>
+            </svg>
+            <span class="article-share-button-name">Wyślij</span>
+        </button>
+    
+
+    <button class="article-share-button article-share-button-link" type="button" data-run-module="local/shareButtons.copyLink" data-link="https://www.fakt.pl/pieniadze/finanse/dodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty/cwh7746">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-link"></use>
+        </svg>
+        <span class="article-share-button-name">Link</span>
+    </button>
+</div>
+                    
+                    <div class="article-lead">
+                        
+                            
+                            
+                            
+
+    
+    <p class="article-p">Policzyliśmy! Niemal 8 miliardów złotych – tyle ZUS wypłaci rodzicom korzystającym z dodatkowych zasiłków opiekuńczych wypłacanych przede wszystkim na dzieci do 8 roku życia. Koszty pomocy są gigantyczne. Dlatego w rządzie trwają rozmowy, by jak najszybciej przywrócić opiekę nad dziećmi w szkołach i to w jak najszerszym zakresie. Wtedy rodzice będą mogli wrócić do pracy i zasiłki nie będą aż tak potrzebne.</p>
+
+
+                        
+                    </div>
+
+                    
+                        <figure class="article-image">
+                            <div class="teaser-image-container">
+                                <picture>
+                                    <source srcset="https://ocdn.eu/pulscms-transforms/1/kjFk9kuTURBXy84ODZjZmNlZi1iZDIzLTQ1NWUtYTk0Yy1mN2UzYTQyOTAxZTQuanBlZ5KVAwEAzQgSzQSKkwXNA0jNAfqCoTAFoTEB" type="image/webp">
+                                    <img loading="lazy" class="article-image-img" alt="Dodatkowy zasiłek opiekuńczy" src="https://ocdn.eu/pulscms-transforms/1/hpQk9kuTURBXy84ODZjZmNlZi1iZDIzLTQ1NWUtYTk0Yy1mN2UzYTQyOTAxZTQuanBlZ5KVAwEAzQgSzQSKkwXNA0jNAfqCoTABoTEB">
+                                </picture>
+                                
+                                <a href="#slide-1">
+                                    <div class="gallery-teaser">
+                                        <div class="gallery-ico">
+                                            <svg viewBox="0 0 14 14">
+                                                <use xlink:href="#ico-gallery"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="gallery-length">2</span>
+                                        <span class="gallery-see">Zobacz zdjęcia</span>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <figcaption class="article-image-caption">
+                                Dodatkowy zasiłek opiekuńczy
+                                
+                                
+                                    <span class="article-image-source">
+                                        Foto: 
+                                        123RF
+                                    </span>
+                                
+                            </figcaption>
+                        </figure>
+                    
+                </div>
+            </section>
+            <section class="five-columns-wide">
+                <div data-configuration='{"slotName":"top"}' data-run-module="local/main.simpleAd"></div>
+            </section>
+            <section class="main article whitelistPremium "
+                     >
+                
+                
+                
+                
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p">Jak wynika z rządowych wyliczeń tylko w I etapie – do 9 kwietnia koszt dodatkowego zasiłku na dzieci to 2,1 mld zł. W kolejnym etapie od 9 do 26 kwietnia pomoc miała kosztować już 2,5 mld zł. Od 26 kwietnia do 24 maja szacuje się, że wydatki na ten cel przekroczą 3,2 mld zł. Kiedy to wszystko zsumować, okazuje się, że koszt wypłaty dodatkowego zasiłku wyniosą jak na razie aż 7,8 mld zł!</p>
+
+
+                 
+                    
+                        <div id="content-premium-offer" class="contentPremiumOffer"></div>
+                        <div class="contentPremium"> 
+                    
+                    
+                        
+  
+    
+      <aside class="intext" data-configuration='{"slotName":"left","position":"0", "lazy": "1"}' data-run-module="local/main.intextAd"></aside>
+    
+  
+
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p"><strong>Zasiłek opiekuńczy. Cząstkowe dane ZUS</strong><br></br><br></br>Fakt dotarł do danych ZUS. Okazuje się, że tylko w kwietniu do ZUS wpłynęło niemal 600 tys. wniosków o wypłatę zasiłku opiekuńczego. A to nie wszystko, bo do zakładu wnioski składają tylko osoby prowadzące działalność gospodarczą. Pracujący na umowę o pracę lub umowę zlecenie składają wnioski o takie wsparcie do pracodawcy (lub zleceniodawcy). To on wypłaca zasiłek, ale następnie występuje do ZUS o refundację. Zakład nie ma jeszcze danych o liczbie zasiłków wypłacony przez pracodawców. <br></br>Wróćmy do danych ZUS. Okazuje się, że najwięcej wniosków o zasiłek wpłynęło w oddziałach ZUS w Warszawie, w Gdańsku i Poznaniu. Rodzice lawinowo wystąpili o to wsparcie 6 kwietnia – w ten jeden dzień kwietnia wpłynęło niemal 30 tys. wniosków!</p>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    
+    
+    
+
+
+    <figure  class="article-image-inner" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        
+            <div class="article-image-pic">
+                <picture>
+                    <source srcset="https://ocdn.eu/pulscms-transforms/1/KB2k9kuTURBXy9kOWRiMTRjNy1hYTk1LTRiYTgtOGFiNi1kZmJhZTJiODU5YjQuanBlZ5GTAs0DSACCoTAFoTEB" type="image/webp">
+                    <img loading="lazy" class="article-image-img" itemprop="contentUrl" id="image_12c48c98-3fe8-5a24-b7d5-0f8d9d79816d" alt="" src="https://ocdn.eu/pulscms-transforms/1/D6sk9kuTURBXy9kOWRiMTRjNy1hYTk1LTRiYTgtOGFiNi1kZmJhZTJiODU5YjQuanBlZ5GTAs0DSACCoTABoTEB">
+                </picture>
+                
+                
+                    <span class="article-image-copyright" itemprop="copyrightHolder">Fakt.pl</span>
+                
+            </div>
+        
+        <figcaption itemprop="caption">
+            
+        </figcaption>
+    </figure>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p"><strong>Zasiłek opiekuńczy. Czy będzie wydłużony?</strong></p>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p">Wiele rodziców zadaje sobie pytanie, czy wypłata zasiłku zostanie wydłużona i czy pomoc będzie wypłacana także po 24 maja. Rząd ma ogłosić w tym tygodniu, czy dzieci wrócą do szkół przed wakacjami, a jeśli tak – w jakim zakresie.  Jak już informowaliśmy w Fakcie, w rządzie trwają dyskusje nad tym, by większej liczbie dzieci umożliwić powrót do szkół. Chodziłoby nie tylko o dzieci z klas I-III szkoły podstawowej, ale także o starszych uczniów. Kryterium ma tu być liczba zachorowań. Z rządowych danych wynika, że są powiaty, w których nie doszło do ani jednego zarażenia i tam szkoły – w ograniczonym zakresie – mogłyby zostać wkrótce otwarte. <br></br>Dlaczego rządzącym tak na otwarciu szkół zależy? Chodzi m.in. o to, by rodzice nie musieli korzystać z dodatkowego zasiłku opiekuńczego i mogli wrócić do pracy.  <br></br>Jest niemal pewne, że zasiłek nie będzie wypłacany w wakacje. Przepisy mówią bowiem jasno: wsparcie przysługuje tylko w czasie zamknięcia żłobków, przedszkoli i szkół z powodu epidemii COVID-19. Rodzice, którzy nie będą mieli z kim zostawić dziecka, będą musieli wziąć urlop wypoczynkowy. </p>
+
+
+                 
+                    
+                    
+                    
+                        
+
+
+    <div class="related-articles" data-section="related-articles">
+        <h2 class="related-articles-header">
+            Zobacz także
+        </h2>
+        
+            
+            <div class="list-item s cat-pieniadze">
+                <a class="item-link" href="https://www.fakt.pl/pieniadze/finanse/koronawirus-w-polsce-jak-uzyskac-zasilek-opiekunczy-na-dziecko-z-zus/32h3z7z">
+                    
+                        <div class="teaser-image-container">
+                            <picture>
+                                <source srcset="https://ocdn.eu/pulscms-transforms/1/ITrk9kuTURBXy8wNGYyMjEyNi03NzQ2LTRjNDEtYTZjZi01NjdjZmFjOWZjNjAuanBlZ5KVAwAAzRZ6zQylkwVcPIKhMAWhMQE" type="image/webp">
+                                <img class="teaserImage" loading="lazy" alt="Rodzicu, chcesz pieniądze z ZUS? Po świętach koniecznie złóż wniosek. Ale uważaj na haczyki" src="https://ocdn.eu/pulscms-transforms/1/pcok9kuTURBXy8wNGYyMjEyNi03NzQ2LTRjNDEtYTZjZi01NjdjZmFjOWZjNjAuanBlZ5KVAwAAzRZ6zQylkwVcPIKhMAGhMQE">
+                            </picture>
+                            
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                        </div>
+                    
+                    <h3 class="item-title">
+                        
+
+                        Rodzicu, chcesz pieniądze z ZUS? Po świętach koniecznie złóż wniosek. Ale uważaj na haczyki
+                    </h3>
+                </a>
+            </div>
+        
+            
+            <div class="list-item s cat-pieniadze">
+                <a class="item-link" href="https://www.fakt.pl/pieniadze/finanse/zus-rodzice-nadal-beda-mogli-korzystac-z-dodatkowego-zasilku-opiekunczego/rp986ge">
+                    
+                        <div class="teaser-image-container">
+                            <picture>
+                                <source srcset="https://ocdn.eu/pulscms-transforms/1/0z7k9kuTURBXy8zYjMwMmIxYi05N2Y4LTRhOWItOTVkOC0wNGU2YTQyMTRmYzguanBlZ5KVAwAAzRZUzQyPkwVcPIKhMAWhMQE" type="image/webp">
+                                <img class="teaserImage" loading="lazy" alt="ZUS: Rodzice nadal będą mogli korzystać z dodatkowego zasiłku opiekuńczego" src="https://ocdn.eu/pulscms-transforms/1/NJok9kuTURBXy8zYjMwMmIxYi05N2Y4LTRhOWItOTVkOC0wNGU2YTQyMTRmYzguanBlZ5KVAwAAzRZUzQyPkwVcPIKhMAGhMQE">
+                            </picture>
+                            
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                        </div>
+                    
+                    <h3 class="item-title">
+                        
+
+                        ZUS: Rodzice nadal będą mogli korzystać z dodatkowego zasiłku opiekuńczego
+                    </h3>
+                </a>
+            </div>
+        
+            
+            <div class="list-item s cat-wydarzenia">
+                <a class="item-link" href="https://www.fakt.pl/wydarzenia/polska/trojmiasto/ekspert-z-zus-o-zasilku-opiekunczym-podczas-epidemii-koronawirusa/6pw526y">
+                    
+                        <div class="teaser-image-container">
+                            <picture>
+                                <source srcset="https://ocdn.eu/pulscms-transforms/1/p8Hk9kuTURBXy82MzlkNjkyOC0zM2NlLTRmNDYtOTEyNi1hZTFjOGVmMTkzNzYuanBlZ5KVAwAAzQ9RzQiekwVcPIKhMAWhMQE" type="image/webp">
+                                <img class="teaserImage" loading="lazy" alt="Przez koronawirusa zostałeś z dzieckiem w domu? Tak dostaniesz zasiłek!" src="https://ocdn.eu/pulscms-transforms/1/laHk9kuTURBXy82MzlkNjkyOC0zM2NlLTRmNDYtOTEyNi1hZTFjOGVmMTkzNzYuanBlZ5KVAwAAzQ9RzQiekwVcPIKhMAGhMQE">
+                            </picture>
+                            
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                        </div>
+                    
+                    <h3 class="item-title">
+                        
+
+                        Przez koronawirusa zostałeś z dzieckiem w domu? Tak dostaniesz zasiłek!
+                    </h3>
+                </a>
+            </div>
+        
+    </div>
+
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p"><strong>Zasiłek opiekuńczy. Ile można dostać?</strong></p>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p">Rodzice mogą skorzystać z dodatkowego zasiłku opiekuńczego od marca. Jednak największy boom na tę pomoc zaczął się wraz z zamknięciem szkół. Rodzice, którzy nie mają jak zapewnić opieki dziecku do 8 roku życia, mogą przejść na dodatkowy zasiłek opiekuńczy, w czasie którego dostają 80 proc. wynagrodzenia. Z rządowych danych wynika, że dzienna wypłata zasiłku wynosi przeciętnie 97,45 zł na rodzica (kwota zasiłku nie zależy od liczby dzieci). </p>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p"><a rel="nofollow" href="https://www.fakt.pl/pieniadze/finanse/koronawirus-w-polsce-rzad-zniesie-obostrzenia-szkoly-sady-i-gastronomia/6zbwchg" id="824f86ed-02bc-50e4-91f6-5dfd1e649467">Uczniowie pójdą do szkół przed wakacjami?</a></p>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p"><a rel="nofollow" href="https://www.fakt.pl/pieniadze/finanse/dodatkowy-zasilek-opiekunczy-po-6-maja-pytania-i-odpowiedzi/zxvqlrq" id="6f32200e-389f-5106-85a3-6f669fd6fdb2">Jest dodatkowy zasiłek. Odpowiadamy na pytania</a></p>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    <p class="article-p"><a rel="nofollow" href="https://www.fakt.pl/wydarzenia/polska/koronawirus-w-polsce-tarcza-antykryzysowa-30/dfbfklh" id="727ff00e-ddc9-5672-9c8d-45437b73f04d">Tarcza antykryzysowa 3.0. Bez badań dla lekarzy</a></p>
+
+
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+
+    
+    
+    <script>
+        if("pulsevideo" === "OnettvVideo" || "pulsevideo" === "pulsevideo") {
+            var hasVideoPlayer = true
+        }
+    </script>
+    
+    
+        <div class="embeddedapp ">
+            <div class="pulsembed_embed" data-run-module="pulsembed/pulsembed.init" data-src="//pulsembed.eu/p2em/9AqrZEioN/" data-height-hint="56.25%" data-sandbox="standard" data-author-name="" data-embed-id="9AqrZEioN" data-provider-name="pulsevideo" data-extra-embed-params="%7B%22mvpId%22%3A%222172495.146560232%22%2C%22imageUrl%22%3A%22https%3A%2F%2Focdn.eu%2Fpulscms%2FMDA_%2F266abaeadd378c1822aa2716b510e06a.jpg%22%7D" data-embed-img=""><a href="https://rasp-fakt24.pulsevideo.eu/2172495.146560232" target="_blank">KRF Węcek home office nie chroni przed zwolnieniem</a></div>
+
+        </div>
+    
+    
+
+
+                
+
+                
+                </div>
+                
+            </section>
+            <section class="main article whitelistPremium ">
+            
+            </section>
+            
+            <section class="main gallery contentPremium ">
+              
+                  
+
+
+    <h3 class="article-gallery-heading">
+        <span class="article-gallery-counter">/2</span>
+        Zasiłki opiekuńcze w kwietniu
+    </h3>
+    <figure class="article-image" itemprop="image" id="slide-1" itemscope itemtype="http://schema.org/ImageObject">
+        
+            <div class="article-image-pic with-placeholder"
+            style="padding-top: 125%">
+                <picture>
+                    <source srcset="https://ocdn.eu/pulscms-transforms/1/KB2k9kuTURBXy9kOWRiMTRjNy1hYTk1LTRiYTgtOGFiNi1kZmJhZTJiODU5YjQuanBlZ5GTAs0DSACCoTAFoTEB" type="image/webp">
+                    <img class="article-image-img" loading="lazy" itemprop="contentUrl" alt="Zasiłki opiekuńcze w kwietniu" src="https://ocdn.eu/pulscms-transforms/1/D6sk9kuTURBXy9kOWRiMTRjNy1hYTk1LTRiYTgtOGFiNi1kZmJhZTJiODU5YjQuanBlZ5GTAs0DSACCoTABoTEB">
+                </picture>
+              
+                  <span class="article-image-copyright" itemprop="copyrightHolder">Fakt.pl</span>
+              
+            </div>
+        
+        
+    </figure>
+    <p class="article-gallery-p">
+        Zasiłki opiekuńcze w kwietniu
+    </p>
+
+              
+                  
+
+
+    <h3 class="article-gallery-heading">
+        <span class="article-gallery-counter">/2</span>
+        Zasiłek to finansowe wsparcie dla rodziców, którzy nie pracują, by zając się dzieckiem
+    </h3>
+    <figure class="article-image" itemprop="image" id="slide-2" itemscope itemtype="http://schema.org/ImageObject">
+        
+            <div class="article-image-pic with-placeholder"
+            style="padding-top: 73.92857142857143%">
+                <picture>
+                    <source srcset="https://ocdn.eu/pulscms-transforms/1/H6Jk9kuTURBXy9lZDQ2ODMxOC00MjVmLTQyZWItOTQ1Zi1iNzczYTUxMjliMzcuanBlZ5GTAs0DSACCoTAFoTEB" type="image/webp">
+                    <img class="article-image-img" loading="lazy" itemprop="contentUrl" alt="Zasiłek to finansowe wsparcie dla rodziców, którzy nie pracują, by zając się dzieckiem" src="https://ocdn.eu/pulscms-transforms/1/rq3k9kuTURBXy9lZDQ2ODMxOC00MjVmLTQyZWItOTQ1Zi1iNzczYTUxMjliMzcuanBlZ5GTAs0DSACCoTABoTEB">
+                </picture>
+              
+                  <span class="article-image-copyright" itemprop="copyrightHolder">123RF</span>
+              
+            </div>
+        
+        
+    </figure>
+    <p class="article-gallery-p">
+        Zasiłek to finansowe wsparcie dla rodziców, którzy nie pracują, by zając się dzieckiem
+    </p>
+
+              
+            </section>
+            <section class="five-columns-wide gallery contentPremium ">
+                <div class="grid-container five-columns">
+                
+                
+                
+                </div>
+            </section>
+            
+            <section class="main">
+                
+                
+<div class="article-share">
+    <button class="article-share-button article-share-button-fb" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&quote=Dodatkowy%20zasi%C5%82ek%20opieku%C5%84czy.%20Wiemy%2C%20ile%20ZUS%20wyp%C5%82aci%20rodzicom%20%E2%80%9Ekoronawirusowego%E2%80%9D')">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-facebook"></use>
+        </svg>
+        <span class="article-share-button-name">Facebook</span>
+    </button>
+    <button class="article-share-button article-share-button-tw" type="button" onclick="window.open('https://twitter.com/intent/tweet?source=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&text=Dodatkowy%20zasi%C5%82ek%20opieku%C5%84czy.%20Wiemy%2C%20ile%20ZUS%20wyp%C5%82aci%20rodzicom%20%E2%80%9Ekoronawirusowego%E2%80%9D%3A%20https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746')">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-twitter"></use>
+        </svg>
+        <span class="article-share-button-name">Twitter</span>
+    </button>
+
+    <button class="article-share-button article-share-button-msg" type="button" onclick="window.open('https://www.facebook.com/dialog/send?app_id=' + window.fbAppId + '&amp;link=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&amp;redirect_uri=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746')">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-msg"></use>
+        </svg>
+        <span class="article-share-button-name">Messenger</span>
+    </button>
+
+    
+        <button class="article-share-button article-share-button-mail" type="button" onclick="javascript:window.location='mailto:?body=' + window.location;">
+            <svg class="article-share-button-svg" viewBox="0 0 28 28">
+                <use xlink:href="#ico-mail"></use>
+            </svg>
+            <span class="article-share-button-name">Wyślij</span>
+        </button>
+    
+
+    <button class="article-share-button article-share-button-link" type="button" data-run-module="local/shareButtons.copyLink" data-link="https://www.fakt.pl/pieniadze/finanse/dodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty/cwh7746">
+        <svg class="article-share-button-svg" viewBox="0 0 28 28">
+            <use xlink:href="#ico-link"></use>
+        </svg>
+        <span class="article-share-button-name">Link</span>
+    </button>
+</div>
+                
+                
+
+    <div class="article-tags">
+        Tematy:
+        
+            <a class="article-tags-link" href="/koronawirus">koronawirus</a>
+        
+            <a class="article-tags-link" href="/dodatkowy-zasilek-opiekunczy">dodatkowy zasiłek opiekuńczy</a>
+        
+            <a class="article-tags-link" href="/zasilek-na-dziecko">zasiłek na dziecko</a>
+        
+            <a class="article-tags-link" href="/zus">ZUS</a>
+        
+            <a class="article-tags-link" href="/zasilek-z-zus">zasiłek z ZUS</a>
+        
+            <a class="article-tags-link" href="/razemzbiznesem">razemzbiznesem</a>
+        
+    </div>
+
+            </section>
+            <section class="five-columns-wide">
+                <div class="grid-container five-columns">
+                    
+                      <div data-configuration='{ "slotName":"left-sky","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="row-span-2 col-start-2" data-run-module="local/main.floatingAd"></div>
+                    
+                    <section class="main">
+                        
+
+<div class="article-contact ">
+
+    <h3 class="article-contact-header">Masz ciekawy temat? Napisz do nas list!</h3>
+    <p class="article-contact-text">
+        Chcesz, żebyśmy opisali Twoją historię albo zajęli się jakimś problemem? Masz ciekawy temat? Napisz do nas! Listy od czytelników już wielokrotnie nas zainspirowały, a na ich podstawie powstały liczne teksty. Wiele listów publikujemy w całości. Wszystkie historie
+        <a class="article-contact-link" href="https://www.fakt.pl/czytelnicy-faktu"> znajdziecie tutaj.</a>
+
+        <span class="article-contact-footer">
+            <span class="article-contact-first">
+                Napisz list do redakcji:
+                <button class="article-contact-button article-contact-button-mail" type="button" onclick="window.open('https://www.fakt.pl/informacyjne/kontakt/ghzdbwk')">
+                    List do redakcji
+                </button>
+            </span>
+            Podziel się tym artykułem:
+                <span class="article-contact-footer-button">
+                    <button class="article-contact-button article-contact-button-fb" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&quote=Dodatkowy%20zasi%C5%82ek%20opieku%C5%84czy.%20Wiemy%2C%20ile%20ZUS%20wyp%C5%82aci%20rodzicom%20%E2%80%9Ekoronawirusowego%E2%80%9D')">
+                        Facebook
+                    </button>
+
+                    <button class="article-contact-button article-contact-button-tw" type="button" onclick="window.open('https://twitter.com/intent/tweet?source=https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746&text=Dodatkowy%20zasi%C5%82ek%20opieku%C5%84czy.%20Wiemy%2C%20ile%20ZUS%20wyp%C5%82aci%20rodzicom%20%E2%80%9Ekoronawirusowego%E2%80%9D%3A%20https%3A%2F%2Fwww.fakt.pl%2Fpieniadze%2Ffinanse%2Fdodatkowy-zasilek-opiekunczy-rzad-wstrzyma-wyplaty%2Fcwh7746')">
+                        Twitter
+                    </button>
+                </span>
+        </span>
+    </p>
+</div>
+                        <div class="rectangles-container">
+                            <div class="rectangle" data-configuration='{ "slotName":"rectangle1"}' data-run-module="local/main.simpleAd"></div>
+                            <div class="rectangle" data-configuration='{ "slotName":"rectangle3"}' data-run-module="local/main.simpleAd"></div>
+                        </div>
+                        
+                        
+<div  data-configuration="{&quot;name&quot;:&quot;flat-nin&quot;,&quot;module&quot;:&quot;simpleAd&quot;,&quot;slotTemplate&quot;:&quot;adWithDataSection&quot;,&quot;slotName&quot;:&quot;flat-nin&quot;,&quot;slotId&quot;:&quot;&quot;,&quot;position&quot;:&quot;&quot;,&quot;customCssClass&quot;:&quot;&quot;,&quot;mobileVisibility&quot;:true,&quot;desktopVisibility&quot;:true,&quot;extraData&quot;:&quot;&quot;,&quot;language&quot;:&quot;pl&quot;,&quot;noBanner&quot;:false}" data-run-module="local/main.simpleAd"
+      data-section="flat-nin"
+></div>
+
+                        
+                        
+<div  data-configuration="{&quot;name&quot;:&quot;flat-plista&quot;,&quot;module&quot;:&quot;simpleAd&quot;,&quot;slotTemplate&quot;:&quot;adWithDataSection&quot;,&quot;slotName&quot;:&quot;flat-plista&quot;,&quot;slotId&quot;:&quot;&quot;,&quot;position&quot;:&quot;&quot;,&quot;customCssClass&quot;:&quot;&quot;,&quot;mobileVisibility&quot;:true,&quot;desktopVisibility&quot;:true,&quot;extraData&quot;:&quot;&quot;,&quot;language&quot;:&quot;pl&quot;,&quot;noBanner&quot;:false}" data-run-module="local/main.simpleAd"
+      data-section="flat-plista"
+></div>
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </section>
+                    
+                        <div class="column-container col-start-4">
+                          
+                            <div data-configuration='{ "slotName":"rectangle2"}' data-run-module="local/main.simpleAd"></div>
+                            <div data-configuration='{ "slotName":"right2","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' data-run-module="local/main.floatingAd"></div>
+                          
+                        </div>
+                    
+                </div>
+            </section>
+            
+
+<section class="five-columns-wide see-also-popular" data-section="see-also-popular">
+    <div class="grid-container five-columns">
+    
+        
+            
+            
+              
+                <div data-configuration='{"slotName":"left-sky","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-2 row-span-4" data-run-module="local/main.floatingAd"></div>
+              
+              <div data-configuration='{"slotName":"right2","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-4 row-span-4" data-run-module="local/main.floatingAd"></div>
+            
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/pieniadze/finanse/waloryzacja-emerytur-to-juz-pewne-wiadomo-o-ile-od-marca-wzrosna-emerytury-i-renty/3xlbcc3" class="see-also-popular-link cat-pieniadze">
+            <h2 class="see-also-popular-title">Waloryzacja emerytur - to już pewne! Wiadomo, o ile od marca wzrosną emerytury i renty</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/LdLk9kuTURBXy9hODlmYTc2Ni1jN2VkLTRmNmQtODZkOS1lMTQxNzY4Y2NkZTIuanBlZ5KVAwEAzQnHzQWAkwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Waloryzacja emerytur - to już pewne! Wiadomo, o ile od marca wzrosną emerytury i renty" src="https://ocdn.eu/pulscms-transforms/1/UsWk9kuTURBXy9hODlmYTc2Ni1jN2VkLTRmNmQtODZkOS1lMTQxNzY4Y2NkZTIuanBlZ5KVAwEAzQnHzQWAkwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Sejm uchwalił w czwartek (21.01) nowelizację ustawy w sprawie waloryzacji rent i emerytur. Zgodnie z nią od marca emerytury i renty wzrosną o co najmniej 50 zł brutto. Najniższe wyniosą 1250 zł.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/pieniadze/biznes/kursy-walut-26-stycznia-2021-r-ile-kosztuje-euro-dolar-funt-frank-szwajcarski-i/bwp8g66" class="see-also-popular-link cat-pieniadze">
+            <h2 class="see-also-popular-title">Co się dzieje ze złotym? Sprawdź dzisiejsze kursy walut</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/qb6k9kuTURBXy83YzQ2ZTBkZC03ZDMyLTRiN2ItOWMwNy03YzRhMTI4YzUwMWQuanBlZ5KVAwAAzSAIzRH-kwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Co się dzieje ze złotym? Sprawdź dzisiejsze kursy walut" src="https://ocdn.eu/pulscms-transforms/1/KP0k9kuTURBXy83YzQ2ZTBkZC03ZDMyLTRiN2ItOWMwNy03YzRhMTI4YzUwMWQuanBlZ5KVAwAAzSAIzRH-kwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Pandemia koronawirusa wpływa na nastroje inwestorów na całym świecie. Pod wpływem informacji o postępach lub regresach w walce z epidemią oraz informacji płynących z otoczenia ekonomicznego, zmieniają się kursy spółek i walut. Fakt sprawdza, jak ma się polski złoty (PLN) na walutowym rynku FOREX – względem dolara amerykańskiego (USD), euro (EUR), franka szwajcarskiego (CHF), funta brytyjskiego (GBP) i węgierskiego forinta (HUF).</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/wydarzenia/czy-mozna-leczyc-covid-19-i-zakazenie-koronawirusem-amantadyna/brmtq6h" class="see-also-popular-link cat-wydarzenia">
+            <h2 class="see-also-popular-title">Czy można leczyć COVID amantadyną?</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/Aitk9kuTURBXy9lODZlNzdiMi1jYTM3LTQ4MWYtODhkNy0zZWQzMTQwYjI1YzguanBlZ5KVAwAAzRhazQ2tkwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Czy można leczyć COVID amantadyną?" src="https://ocdn.eu/pulscms-transforms/1/xvCk9kuTURBXy9lODZlNzdiMi1jYTM3LTQ4MWYtODhkNy0zZWQzMTQwYjI1YzguanBlZ5KVAwAAzRhazQ2tkwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+    <div class="paywall-icon">
+        <svg viewBox="0 0 14 14">
+            <use xlink:href="#ico-plus"></use>
+        </svg>
+    </div>
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Czy amantadyna, którą nielegalnie leczą się politycy może być skuteczna w leczeniu COVID? Na to pytanie odpowiada Faktowi neurolog prof. Konrad Rejdak.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+            
+                <section class="five-columns-wide">
+                  
+                    <div data-configuration='{"slotName":"top3","position":"AUTO" }' data-run-module="local/main.simpleAd"></div>
+                  
+                </section>
+            
+            
+              
+                <div data-configuration='{"slotName":"left-sky","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-2 row-span-4" data-run-module="local/main.floatingAd"></div>
+              
+              <div data-configuration='{"slotName":"right2","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-4 row-span-4" data-run-module="local/main.floatingAd"></div>
+            
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/pieniadze/fotowoltaika-posiadacze-paneli-beda-mieli-klopoty/bxpwxdw" class="see-also-popular-link cat-pieniadze">
+            <h2 class="see-also-popular-title">Posiadacze paneli fotowoltaicznych będą mieli kłopoty? To może niepokoić</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/TR9k9kuTURBXy81MDZjODZlYy01M2ExLTQ4ODUtOWU3MS05YmZjMDIzYjYyNWQuanBlZ5KVAwAAzQ75zQhpkwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Posiadacze paneli fotowoltaicznych będą mieli kłopoty? To może niepokoić" src="https://ocdn.eu/pulscms-transforms/1/UMLk9kuTURBXy81MDZjODZlYy01M2ExLTQ4ODUtOWU3MS05YmZjMDIzYjYyNWQuanBlZ5KVAwAAzQ75zQhpkwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+        <div class="teaser-icon video">
+            <svg viewBox="0 0 14 14">
+                <use xlink:href="#ico-video"></use>
+            </svg>
+        </div>
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">300 tys. gospodarstw domowych ma na swoich dachach małą instalację fotowoltaiczną, jednak ci prosumenci są kłopotem dla polskiego systemu energetycznego. - Dla operatorów systemu dystrybucyjnego prosumenci są problemem ze względu na kłopoty związane z utrzymaniem bezpieczeństwa sieci, ze względu na magazynowanie nadwyżek energii elektrycznej - mówi w rozmowie z MarketNews24 Barbara Adamska, prezes Polskiego Stowarzyszenia Magazynowania Energii.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/horoskop/horoskop-dzienny-znak-zodiaku-skorpion-26-stycznia-2021/ln4qym7" class="see-also-popular-link cat-horoskop">
+            <h2 class="see-also-popular-title">Horoskop dzienny Skorpion</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/4wHk9kuTURBXy80YWY4NDdiOS0xM2YxLTQzOTktOTE0MS0yYjkzMGRhYmMzOGYuanBlZ5KVAwAAzQUzzQLskwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Horoskop dzienny Skorpion" src="https://ocdn.eu/pulscms-transforms/1/klsk9kuTURBXy80YWY4NDdiOS0xM2YxLTQzOTktOTE0MS0yYjkzMGRhYmMzOGYuanBlZ5KVAwAAzQUzzQLskwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Skorpion to ósmy z kolei astrologiczny znak zodiaku. Obejmuje osoby urodzone między 23 października a 21 listopada. Osoby spod tego znaku zodiaku mają wyjątkowo silny charakter i bywają trudni jako partnerzy życiowi. Ze względu na swoją pewność siebie i upartość w dążeniu do celu często odbierani są przez otoczenie jako ludzie wyniośli i narcystyczni.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/wydarzenia/horoskop-dzienny-znak-zodiaku-ryby-26-stycznia-2021/0p1d3wn" class="see-also-popular-link cat-wydarzenia">
+            <h2 class="see-also-popular-title">Horoskop dzienny Ryby</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/wQmk9kuTURBXy8xNmYxNDljZi05YTJlLTQzNjUtYTk4Ni1iZDE5YjU0MTk2Y2MuanBlZ5KVAwAAzQU0zQLukwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Horoskop dzienny Ryby" src="https://ocdn.eu/pulscms-transforms/1/XXGk9kuTURBXy8xNmYxNDljZi05YTJlLTQzNjUtYTk4Ni1iZDE5YjU0MTk2Y2MuanBlZ5KVAwAAzQU0zQLukwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Ryby to dwunasty, ostatni astrologiczny znak zodiaku. Obejmuje osoby urodzone między 19 lutego do 20 marca. Osoby spod znaku Ryb cechuje: komunikatywność, otwartość, empatia, bezinteresowność, opiekuńczość, naiwność oraz spryt. To osoby, które bronią swoich ideałów, wykazują się wielką chęcią niesienia pomocy biednym i schorowanym. Są gotowe pomagać innym, nawet własnym kosztem.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+            
+                <section class="five-columns-wide">
+                  
+                    <div data-configuration='{"slotName":"top3","position":"AUTO" }' data-run-module="local/main.simpleAd"></div>
+                  
+                </section>
+            
+            
+              
+                <div data-configuration='{"slotName":"left-sky","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-2 row-span-4" data-run-module="local/main.floatingAd"></div>
+              
+              <div data-configuration='{"slotName":"right2","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-4 row-span-4" data-run-module="local/main.floatingAd"></div>
+            
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/horoskop/horoskop-dzienny-znak-zodiaku-baran-26-stycznia-2021/38l8htq" class="see-also-popular-link cat-horoskop">
+            <h2 class="see-also-popular-title">Horoskop dzienny Baran</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/X2Bk9kuTURBXy80NDcwZGNjOS1lNTMyLTRlYTctYjFmNi05MmJlNjcyNDY2NGIuanBlZ5KVAwAAzQU3zQLwkwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Horoskop dzienny Baran" src="https://ocdn.eu/pulscms-transforms/1/iVFk9kuTURBXy80NDcwZGNjOS1lNTMyLTRlYTctYjFmNi05MmJlNjcyNDY2NGIuanBlZ5KVAwAAzQU3zQLwkwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Baran to pierwszy astrologiczny znak zodiaku. Obejmuje osoby urodzone między 20/21 marca a 19/20 kwietnia. Dokładne ramy czasowe zależą od rocznika. Ten znak symbolizuje wynurzenie się Słońca z zimowego mroku. Osobom urodzonym pod znakiem Barana przypisuje się silną wolę i wytrwałe dążenie do celu. Można na nich polegać i są lojalne w związkach.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/pieniadze/pit-2020-zus-wysyla-deklaracje-co-trzeba-z-nia-zrobic/dl0eg9b" class="see-also-popular-link cat-pieniadze">
+            <h2 class="see-also-popular-title">Emerycie, nie przegap! ZUS wysyła ważne pismo</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/69yk9kuTURBXy85MzdkODhiZC00M2Q1LTRjZjEtOGFjYi0xNGNlMmJlYjE3MWUuanBlZ5KVAwAAzQ44zQgckwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Emerycie, nie przegap! ZUS wysyła ważne pismo" src="https://ocdn.eu/pulscms-transforms/1/XLlk9kuTURBXy85MzdkODhiZC00M2Q1LTRjZjEtOGFjYi0xNGNlMmJlYjE3MWUuanBlZ5KVAwAAzQ44zQgckwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Już niedługo Zakład Ubezpieczeń Społecznych (ZUS) zacznie rozsyłać deklaracje podatkowe do wszystkich osób, które w 2020 r. chociaż raz pobrały świadczenie z ZUS. Na przełomie stycznia i lutego do emerytów i rencistów trafi jeden z następujących formularzy: PIT-40A, PIT-11 oraz PIT 11A. Do czego one służą i co należy z nimi zrobić?</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/wydarzenia/horoskop-dzienny-znak-zodiaku-koziorozec-26-stycznia-2021/pt1m1qy" class="see-also-popular-link cat-wydarzenia">
+            <h2 class="see-also-popular-title">Horoskop dzienny Koziorożec</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/whJk9kuTURBXy9mNTZmNzIzYy1hODYxLTQ4MDctYWVlYi0zNmRmYmQ5YmNmYTguanBlZ5KVAwAAzQUzzQLrkwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Horoskop dzienny Koziorożec" src="https://ocdn.eu/pulscms-transforms/1/8xbk9kuTURBXy9mNTZmNzIzYy1hODYxLTQ4MDctYWVlYi0zNmRmYmQ5YmNmYTguanBlZ5KVAwAAzQUzzQLrkwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Koziorożec to dziesiąty z kolei astrologiczny znak zodiaku. Obejmuje osoby urodzone między 22 grudnia a 19 stycznia. Zodiakalne Koziorożce to osoby skrupulatne, zdecydowane i niezależne. Cechuje je cierpliwość i spokój. Wytrwale dążą do wyznaczonych celów. Są przy tym taktowne.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+        
+            
+                <section class="five-columns-wide">
+                  
+                    <div data-configuration='{"slotName":"top3","position":"AUTO" }' data-run-module="local/main.simpleAd"></div>
+                  
+                </section>
+            
+            
+              
+                <div data-configuration='{"slotName":"left-sky","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-2 row-span-4" data-run-module="local/main.floatingAd"></div>
+              
+              <div data-configuration='{"slotName":"right2","position": "AUTO","slotsNumber":"1","containerHeight":"MAX", "extraData":{"lazy": "1"}}' class="col-start-4 row-span-4" data-run-module="local/main.floatingAd"></div>
+            
+        
+        
+        
+        
+        <a href="https://www.fakt.pl/wydarzenia/polska/warszawa/zabki-zabojstwo-wlasciciela-warzywniaka-jstwo-w-zabkach-podejrzany-w-rekach-policji/qzh7ldr" class="see-also-popular-link cat-wydarzenia">
+            <h2 class="see-also-popular-title">Zabójstwo w Ząbkach. Podejrzany w rękach policji</h2>
+            
+                <div class="teaser-image-container">
+                    <picture>
+                        <source srcset="https://ocdn.eu/pulscms-transforms/1/6IYk9kuTURBXy8xZGYzNmFmYy1lZGYyLTQzNzktOThiNC03MzFhMGUwZjVlZDYuanBlZ5KVAwAAzRS-zQuwkwXNA1TNAZCCoTAFoTEB" type="image/webp">
+                        <img class="see-also-popular-img teaserImage" loading="lazy" alt="Zabójstwo w Ząbkach. Podejrzany w rękach policji" src="https://ocdn.eu/pulscms-transforms/1/m2yk9kuTURBXy8xZGYzNmFmYy1lZGYyLTQzNzktOThiNC03MzFhMGUwZjVlZDYuanBlZ5KVAwAAzRS-zQuwkwXNA1TNAZCCoTABoTEB">
+                    </picture>
+                    
+<div class="teaser-icons-top-left">
+    
+
+</div>
+<div class="teaser-icons-bottom-right">
+    
+    
+</div>
+                </div>
+            
+            <p class="see-also-popular-lead">Zabójstwo pana Stasia († 67 l.), właściciela warzywniaka z Ząbek (woj. mazowieckie) wstrząsnęło mieszkańcami podwarszawskiej miejscowości. Sprawca zakatował go w jego własnym sklepiku. Przez dłuższy czas napastnik ukrywał się przed policją. W końcu funkcjonariusze z Wydziału Terroru Kryminalnego i Zabójstw KSP zatrzymali mężczyznę podejrzanego o zabójstwo 67-latka. Zatrzymany był już wcześniej karany.</p>
+            <div class="see-also-popular-more">
+                Czytaj więcej
+            </div>
+        </a>
+    
+    </div>
+</section>
+        </article>
+        
+    <script type="text/javascript">
+        (function () {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw-push.js?senderId=333552960587', {scope: '/'});
+            }
+        })();
+    </script>
+
+
+<div class="pushPlatform"
+    data-browserNotificationsEnabled="true"
+    data-messageSenderId="333552960587"
+    data-host="fakt.pl"
+    data-run-module="local/pushModule.renderPushPlatform">
+    <script async src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <svg class="pushPlatformIconPack" version="1.1" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <defs>
+        <symbol version="1.1" id="notificationBell" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 210" style="enable-background:new 0 0 210 210; width: 160px; height: 160px; margin: 30px auto 0px" xml:space="preserve">
+            <path class="pushBellElem" d="M111.9,206.1c11.2,0,20.4-9.2,20.4-20.4H91.4C91.4,196.9,100.5,206.1,111.9,206.1z M174.9,145.6V93.2
+            c0-32.1-17.2-59.1-47.1-66.2v-5.9c0-6.3-3.5-12.2-9.3-14.7c-12.1-5.2-23.7,3.5-23.7,15v5.6c-30,7.1-47.1,33.9-47.1,66.2v52.3
+            L28.9,166v10.2h164.9V166L174.9,145.6z"/>
+            <path d="M104.5,208.2c-13.2,0-24-10.7-24-24v-3.7h47.9v3.7C128.5,197.5,117.8,208.2,104.5,208.2z M88.5,188
+            c1.7,7.3,8.3,12.8,16.1,12.8c7.8,0,14.4-5.5,16.1-12.8H88.5z M189.4,178.7H18.6v-15.3l18.7-20.2V92.8c0-33.8,18.2-60.3,46.7-68.4
+            v-2.6c0-6.8,3.4-13,9-16.7c5.8-3.8,13-4.4,19.7-1.5c6.9,3,11.4,10,11.4,17.9v2.9c28.4,8.2,46.7,34.7,46.7,68.4v50.4l18.7,20.2V178.7
+            z M26.1,171.2h155.8v-4.9L163.3,146V92.8c0-31.3-17.2-55.6-43.8-61.9l-2.9-0.7v-8.7c0-4.9-2.8-9.3-6.9-11.1c-4.4-1.9-9-1.6-12.6,0.9
+            c-3.5,2.3-5.7,6.3-5.7,10.5v8.5l-2.9,0.7c-27,6.4-43.8,30.1-43.8,61.9V146l-18.7,20.2V171.2z"/>
+        </symbol>
+
+        <symbol version="1.1" id="pushGrantedCloseMark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+            <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#111516;" d="M15,29.6C6.9,29.6,0.4,23.1,0.4,15C0.4,6.9,6.9,0.4,15,0.4
+            S29.6,6.9,29.6,15C29.6,23.1,23.1,29.6,15,29.6z M21.3,9.3l-1-1l-5.4,5.4L9.5,8.3l-1,1l5.4,5.4l-5.4,5.4l1,1l5.4-5.4l5.4,5.4l1-1
+            l-5.4-5.4L21.3,9.3z"/>
+        </symbol>
+
+        <symbol version="1.1" id="pushGrantedMark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;" xml:space="preserve">
+            <circle style="fill-rule:evenodd;clip-rule:evenodd;" cx="20.7" cy="19.9" r="16.4"/>
+            <polygon style="fill:#FFFFFF;" points="18.5,24.1 13.6,19.3 15,17.9 18.5,21.4 25.8,14.1 27.1,15.4 "/>
+            <path d="M19.5,1.8C10,1.8,2.3,9.5,2.3,19c0,9.5,7.7,17.3,17.3,17.3S36.8,28.6,36.8,19C36.8,9.5,29.1,1.8,19.5,1.8z M19.5,35.2
+        C10.6,35.2,3.3,28,3.3,19S10.6,2.8,19.5,2.8S35.7,10.1,35.7,19S28.5,35.2,19.5,35.2z"/>
+        </symbol>
+    </defs>
+</svg>
+	
+    
+</div>
+        <footer>
+    <div class="footer-wrapper">
+        <ul class="footer-list" data-section="footer">
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="/archiwum/2021">Archiwum</a>
+            </li>
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="https://www.fakt.pl/informacyjne/kontakt/ghzdbwk">Kontakt</a>
+            </li>
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="/informacyjne/regulamin-korzystania-z-serwisu-fakt24pl/kfntqnx">Regulamin serwisu</a>
+            </li>
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="https://polityka-prywatnosci.onet.pl/">Polityka prywatności</a>
+            </li>
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="http://mediaimpact.pl/kontakt">Reklama w Fakt.pl</a>
+            </li>
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="https://programtv.onet.pl/">Program TV</a>
+            </li>
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="/kodyrabatowe">Kupony rabatowe</a>
+            </li>
+            
+            <li class="footer-elem">
+                <a class="footer-link" href="https://literia.pl/literia-poleca/biblioteka-faktu/">Sklep Fakt</a>
+            </li>
+            
+        </ul>
+        <p class="footer-paragraph">
+            &copy; 2021 Ringier Axel Springer Polska sp. z o.o. - Powered by <a href="https://ringpublishing.com/">Ring Publishing</a> | Developed by <a href="https://tech.ringieraxelspringer.com/">RAS Tech</a>
+        </p>
+    </div>
+</footer>
+        
+            <script>
+    (function(d, t, s, e, n) {
+        (e = d.createElement(t)), (n = d.getElementsByTagName(t)[0]);
+        e.async = 1;
+        e.src = s;
+        n.parentNode.insertBefore(e, n);
+    })(document, 'script', 'https://ocdn.eu/faktucs/fakt_pl/floating-player3-0-0.js');
+    window.addEventListener('load', function() {
+        if (typeof FloatingVideoPlayer === 'function') {
+            var floatingPlayer = FloatingVideoPlayer({
+                backgroundImage : "https://ocdn.eu/faktucs/fakt_pl/faktvideo.png",
+            });
+        }
+    });
+</script>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,1222 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+
+
+
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="Description" content="Bundesministerium für Inneres" /><meta name="Keywords" content="BMI, Innenministerium, Innenministerium Österreich" /><meta name="referrer" content="no-referrer" />
+
+    
+   
+     
+    
+
+        
+		 
+
+
+
+    <title>
+	Sicher zu Hause
+</title>
+
+    
+	
+	
+	<script src="../Scripts/js/jquery-2.2.4.min.js"></script>
+	
+    
+    <script src="../Scripts/bxslider/jquery.bxslider.min.js"></script>
+   
+
+    <!-- slider -->
+    <script src="../Lightbox2/src/js/lightbox.js"></script>
+    <!-- bootstrap -->
+    <script src="../Scripts/js/bootstrap.min.js"></script>
+    
+
+
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css" /><link href="../Lightbox2/src/css/lightbox.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css" media="all" /><link href="../scripts/bxslider/jquery.bxslider.css" rel="stylesheet" /><link href="../css/layout.css" rel="stylesheet" />
+
+
+    
+
+
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+   
+   
+
+
+
+
+    <!-- ASP.NET Script für IncludeFiles +  Searchprovider -->
+    
+		<base href="https://bmi.gv.at/" />
+	
+	</head>
+
+<body>
+
+    
+		<form method="post" action="./start.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTA2OTMxMzkyD2QWAmYPZBYCZg9kFgICAw9kFgICBw9kFgQCAw9kFgICBQ8PFgIeB1Zpc2libGVoZGQCBQ8PFgIfAGhkZGSY8+bwtQ7UuqBfHZqRibNg+9hoh+d5PfElz1kLuuw8zw==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BB96B4F7" />
+        <button type="submit" style="width:0px;height:0px;visibility:hidden;">Neu laden</button>
+	
+	
+	
+        
+		
+		
+		
+        <div class="container">
+            <div class="row hidden-print">
+
+                <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                    
+
+                    
+                    <ul class="soc_oben">
+
+  <li class="soc">
+    <a href="https://www.facebook.com/innenministerium/" title="zu Facebook des BMI" target="_blank" aria-label="zu Facebook des BMI">
+      <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/polizei_im_bild/" target="_blank" aria-label="zu Instagram">
+      <i class="fa fa-instagram fa-2x" aria-hidden="true" title="öffnet Instagram"></i>
+    </a>
+  </li>
+  <!--<li>
+    <a href="https://www.snapchat.com/add/polizei_oe" target="_blank" aria-label="zu Snapchat">
+      <i class="fa fa-snapchat-square fa-2x" aria-hidden="true" title="öffnet Snapchat"></i>
+    </a>
+  </li>-->
+  <li>
+    <a href="https://twitter.com/@bmi_oe" target="_blank" title="öffnet Twitter" aria-label="zu Twitter">
+      <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/channel/UCiKH5XPrw9FUDW0J2DVRFuQ" target="_blank" title="öffnet YouTube"  aria-label="zu YouTube">
+      <i class="fa fa-youtube-play fa-2x" aria-hidden="true" title="öffnet YouTube"></i>
+    </a>
+  </li>
+</ul>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+
+                    
+                    <ul class="soc_mitte">
+<li>
+  <a href="javascript:window.print()" title="Seite Drucken" aria-label="Seite drucken">
+    <i class="fa fa-print fa-2x" aria-hidden="true" >
+    </i>
+  </a>
+</li>
+<!--<li>
+  <a href="styles.html">
+    <i class="fa fa-low-vision fa-2x" aria-hidden="true"></i>
+  </a>
+</li>--> 
+</ul>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+                      
+                    <!--<ul class="soc_mitte">
+                        <li class="aktiv">DE</li>
+                        <li>| <a href="#">EN</a></li>
+                    </ul> -->
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-3 hidden-xs soc_rechts">
+                    <div class="navbar-form navbar-left" role="search">
+                        
+                        
+                        
+                        <div class="navbar-form navbar-left form-inline" style="display:none;">
+   <div class="form-group">
+
+  
+    <a class="btn btn-default" href="../suche.aspx" title="Suche">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
+
+                    </div>
+                </div>
+                <!--close row-->
+            </div>
+        </div>
+
+
+        <div class="container-fluid hintergrund clearfix">
+            <div class="row">
+                <div class="header container">
+                    <div class="col-lg-8">
+
+                        <a href="../" title="Home">
+
+                            <img class="toplogo img-responsive" src="../grafiken_all/BMI.png" alt="Logo BMI" />
+                            <h1 class="nicht">Bundesministerium für Inneres</h1>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-5 hidden-print">
+
+                        
+                        
+
+<ul class="nav_oben">
+<li>
+<a href="https://www.oesterreich.gv.at/ " target="_blank" title="Corona-Virus" style="color:#a22c1c;"><strong>Corona-Virus</strong></a> |
+
+      </li>  
+
+<li>
+<a href="Notrufnummern/start.aspx" title="Notrufnummern">Notruf</a> |
+
+      </li>
+  <li>
+    
+<a href="Kontakt/start.aspx" title="Kontakt">Kontakt</a> |
+
+  </li>
+  <li>
+    <a href="Presse/start.aspx">Presse</a> |
+  </li>
+  <li>
+    <a href="Downloads/start.aspx">Downloads</a> |
+  </li>
+  <li>
+    <a href="Links/start.aspx">Links</a>
+  </li>
+ <!-- <li class="mob">
+    <a href="../searchres.aspx"> | Suchen</a>
+  </li> -->
+</ul>
+
+
+                    </div>
+                </div>
+                <!-- close Header-->
+            </div>
+            <!--close row-->
+        </div>
+
+
+
+
+
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst
+                        
+                         -->
+                        <div class="navbar-header noindex">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="sr-only">Navigation ein-/ausblenden</span>
+    <span class="icon-bar">
+    </span>
+    <span class="icon-bar">
+    </span>
+    <span class="icon-bar">
+    </span>
+  </button>
+</div>
+<div class="collapse navbar-collapse nav-justified noindex" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav">
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle erster" href="#" id="dropdownMenuDivider1" title="Homepage des BMI">Minister und<br/>Ministerium</a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider1">
+        <li>
+          <a href="101/start.aspx" title="Bundesminister - Vita - Fotos">Bundesminister</a>
+        </li>
+        <li>
+          <a href="102/start.aspx">Bundesministerium</a>
+        </li>
+        <li>
+          <a href="103/start.aspx">Geschäftseinteilung</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="104/start.aspx" title="Aus- und Fortbildung im BMI">Aus- und Fortbildung im BMI</a>
+        </li>
+        <li>
+          <a href="107/start.aspx">Förderungen</a>
+        </li>
+        <li>
+          <a href="105/start.aspx" title="Jobs und Karriere">Jobs und Karriere</a>
+        </li>
+        <li>
+          <a href="https://bmi.vergabeportal.at" target="_blank" title="Sachausschreibungen">Sachausschreibungen</a>
+        </li>
+        <li>
+          <a href="110/start.aspx" title="Verlautbarungen">Verlautbarungen</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" href="#" id="dropdownMenuDivider2">Polizei und<br/>Sicherheit</a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider2">
+        <li>
+          <a href="201/start.aspx">Gemeinsam.Sicher</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="202/start.aspx" title="Bundespolizei">Bundespolizei</a>
+        </li>
+        <li>
+          <a href="../fahndung" title="Fahndungen des Bundeskriminalamtes">Fahndungen</a>
+        </li>
+        <li>
+          <a href="204/start.aspx" title="Krisen- und Katastrophenmanagement">Krisen- und Katastrophenmanagement</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="205/start.aspx" title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">Bundesamt für Verfassungsschutz und Terrorismusbekämpfung</a>
+        </li>
+        <li>
+          <a href="206/start.aspx" title="Bundeskriminalamt">Bundeskriminalamt</a>
+        </li>
+        <li>
+          <a href="207/start.aspx" title="Einsatzkommando Cobra/">Einsatzkommando Cobra/<br/>Direktion für Spezialeinheiten</a>
+        </li>
+        <li>
+          <a href="208/start.aspx" title="Landespolizeidirektionen">Landespolizeidirektionen</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="209/start.aspx" title="eCall Austria">eCall Austria</a>
+        </li>
+        <li>
+          <a href="210/start.aspx" title="EXIT Europe">EXIT Europe</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" href="#" id="dropdownMenuDivider3">Asyl und<br/>Migration</a>
+      <ul class="dropdown-menu asyl" aria-labelledby="dropdownMenuDivider3">
+        <li>
+          <a href="301/start.aspx" title="Asylwesen">Asylwesen</a>
+        </li>
+        <li>
+          <a href="312/start.aspx" title="Niederlassung und Aufenthaltsrecht">Niederlassung und Aufenthaltsrecht</a>
+        </li>
+        <li>
+          <a href="303/start.aspx" title="Grundversorgung">Grundversorgung</a>
+        </li>
+        <li>
+          <a href="305/start.aspx" title="Migrationsstrategie und Gesellschaft">Migrationsstrategie und Gesellschaft</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="304/start.aspx" title="Bundesamt für Fremdenwesen und Asyl">Bundesamt für Fremdenwesen und Asyl</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="107/EU_Foerderungen/Finanzrahmen_2014_2020/AMIF/start.aspx" title="Asyl-, Migrations- und Integrationsfonds (AMIF)">Asyl-, Migrations- und Integrationsfonds (AMIF)</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" href="#" id="dropdownMenuDivider4">Gesellschaft<br/>und Recht</a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider4">
+        <li>
+          <a href="401/start.aspx" title="Begutachtungen">Begutachtungen</a>
+        </li>
+        <li>
+          <a href="402/start.aspx" title="Datenschutz">Datenschutz</a>
+        </li>
+        <li>
+          <a href="417/start.aspx" title="Europäische Bürgerinitiative">Europäische Bürgerinitiative</a>
+        </li>
+        <li>
+          <a href="403/start.aspx" title="Gedenkstätten und Kriegsgräberfürsorge">Gedenkstätten und Kriegsgräberfürsorge</a>
+        </li>
+        <li>
+          <a href="404/start.aspx" title="Mauthausen Memorial">Mauthausen Memorial</a>
+        </li>
+        <li>
+          <a href="405/start.aspx" title="Politische Parteien">Politische Parteien</a>
+        </li>
+        <li>
+          <a href="406/start.aspx" title="Staatsbürgerschaft">Staatsbürgerschaft</a>
+        </li>
+        <li>
+          <a href="407/start.aspx" title="Rechtsschutzbeauftragter">Rechtsschutzbeauftragter</a>
+        </li>
+        <li>
+          <a href="408/start.aspx" title="Rechtsstaat und Menschenrechte">Rechtsstaat und Menschenrechte</a>
+        </li>
+        <li>
+          <a href="409/start.aspx" title="Stiftungs- und Fondsregister">Stiftungs- und Fondsregister</a>
+        </li>
+        <li>
+          <a href="410/start.aspx" title="Volksabstimmungen">Volksabstimmungen</a>
+        </li>
+        <li>
+          <a href="416/start.aspx" title="Volksbefragungen">Volksbefragungen</a>
+        </li>
+        <li>
+          <a href="411/start.aspx" title="Volksbegehren">Volksbegehren</a>
+        </li>
+        <li>
+          <a href="412/start.aspx" title="Wahlen">Wahlen</a>
+        </li>
+        <li>
+          <a href="413/start.aspx" title="Zentrales Melderegister">Zentrales Melderegister</a>
+        </li>
+        <li>
+          <a href="414/start.aspx" title="Zentrales Personenstandsregister">Zentrales Personenstandsregister</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="415/start.aspx" title="Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung">Bundesamt zur Korruptionsprävention<br/>und Korruptionsbekämpfung</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" href="#" id="dropdownMenuDivider5">Sicherheitspolitik<br/>und Strategie</a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider5">
+        <li>
+          <a href="501/start.aspx" title="BMI Strategien">BMI Strategien</a>
+        </li>
+        <li>
+          <a href="502/start.aspx" title="Österreichische Strategien">Österreichische Strategien</a>
+        </li>
+        <li>
+          <a href="503/start.aspx" title="Europäische Strategien">Europäische Strategien</a>
+        </li>
+        <li>
+          <a href="510/start.aspx" title="Nationale Anti-Korruptionsstrategie">Nationale <br/>Anti-Korruptionsstrategie</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="509/start.aspx" title="EU-Engagement des BMI">EU-Engagement des BMI</a>
+        </li>
+        <li>
+          <a href="504/start.aspx" title="Digitale Sicherheit">Digitale Sicherheit</a>
+        </li>
+        <li>
+          <a href="505/start.aspx" title="Schutz kritischer Infrastruktur">Schutz kritischer Infrastruktur</a>
+        </li>
+        <li>
+          <a href="506/start.aspx" title="Zivil - militärische Zusammenarbeit">Zivil - militärische Zusammenarbeit</a>
+        </li>
+        <li role="separator" class="divider">
+        </li>
+        <li>
+          <a href="508/start.aspx" title="Sicherheitsbericht">Sicherheitsbericht</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle service" href="#" id="dropdownMenuDivider6">Bürger-<br/>service</a>
+      <ul class="dropdown-menu buerger" aria-labelledby="dropdownMenuDivider6">
+        <li>
+          <a href="611/start.aspx" title="Barrierefreiheit">Barrierefreiheit</a>
+        </li>
+        <li>
+          <a href="612/start.aspx" title="BMI-Sicherheits-App">BMI-Sicherheits-App</a>
+        </li>
+        <li>
+          <a href="601/start.aspx" title="Bürgertelefon">Bürgertelefon</a>
+        </li>
+        <li>
+          <a href="602/start.aspx" title="Callcenter">Callcenter</a>
+        </li>
+        <li>
+          <a href="613" title="Demenz.Aktivgemeinde">Demenz.Aktivgemeinde</a>
+        </li>
+        <li>
+          <a href="603/start.aspx" title="Kriminalprävention">Kriminalprävention</a>
+        </li>
+        <li>
+          <a href="604/start.aspx" title="Meldeangelegenheiten">Meldeangelegenheiten</a>
+        </li>
+        <li>
+          <a href="605/start.aspx" title="Meldestellen">Meldestellen</a>
+        </li>
+        <li>
+          <a href="magazin/magazin.aspx" title="DAS Magazin">Magazin "Öffentliche Sicherheit"</a>
+        </li>
+        <li>
+          <a href="https://citizen.bmi.gv.at/at.gv.bmi.fnsbazweb-p/baz/public/BuergeranzeigeInfo" target="_blank" title="Externer Link zur Online Diebstahlsanzeige">Online Diebstahlsanzeige</a>
+        </li>
+        <li>
+          <a href="104/Wissenschaft_und_Forschung/SIAK-Journal/start.aspx" title="zum SIAK-Journal">SIAK-Journal</a>
+        </li>
+        <li>
+          <a href="607/start.aspx" title="Sicherheit bei Reisen, Reisepass">Sicherheit bei Reisen<br/>(Reisepass)</a>
+        </li>
+        <li>
+          <a href="614/start.aspx" title="Sicher zu Hause">Sicher zu Hause</a>
+        </li>
+        <li>
+          <a href="termin.aspx" title="Termine">Termine</a>
+        </li>
+        <li>
+          <a href="609/start.aspx" title="Vereine">Vereine</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+                    </div>
+
+
+                    <!-- close row-->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+		
+	
+
+    <div class="container">
+        <article>
+
+            <div class="text col-lg-8 clearfix">
+                
+  
+     <h1>Sicher zu Hause <a class="btn btn-primary btn-sm leichter" href="https://www.bmi.gv.at/614/Sicher_zu_hause_Leichter_Lesen.aspx">LeichterLesen</a></h1>
+<h2>Leben in der Krise ohne Aggression und Gewalt</h2>
+<figure class="image bild_right" contenteditable="false"><a title="#sicherzuhause" href="614/images/sicherzuhause_V2.jpg" data-lightbox="#sicherzuhause" data-title="#sicherzuhause"><img class="klein_right" title="#sicherzuhause" src="614/images/sicherzuhause_300_V2.jpg" alt="#sicherzuhause" /></a>
+<figcaption>&copy; BMI</figcaption>
+</figure>
+<p>Wir leben in einer Situation, die f&uuml;r alle v&ouml;llig neu ist: Schulen, Kinderg&auml;rten, Gesch&auml;fte, Lokale und viele andere Betriebe sind geschlossen. Viele Familien und Paare verbringen den Tag gemeinsam zu Hause, sollen zum Teil im Homeoffice arbeiten und mit ihren Kindern lernen &ndash; und das in manchmal sehr beengten r&auml;umlichen Verh&auml;ltnissen. Die M&ouml;glichkeiten, die Wohnung oder das Haus zu verlassen, sind sehr eingeschr&auml;nkt. Freunde und Verwandte soll man nicht treffen. Kinder und Jugendliche f&uuml;hlen sich manchmal eingesperrt oder sind zumindest von der ungewohnten Situation verunsichert. Dazu kommen oft existenzielle Sorgen, die Angst vor einer Erkrankung und die allgemeine Ungewissheit, wie es weitergeht.</p>
+<p>Emotionale Spannungen sind unter diesen Umst&auml;nden durchaus wahrscheinlicher und risikobehafteter. Aus &Auml;rger darf allerdings nicht Aggressivit&auml;t werden, aus einem Streit keine t&auml;tliche Auseinandersetzung. Gewalt ist niemals eine L&ouml;sung und darf im gemeinschaftlichen Zusammenleben nicht sein.</p>
+<p>Es gibt viele Alternativen, eine emotionale Entlastung und innere Ausgewogenheit zu erreichen, wenn es nur eine schnelle Runde um den H&auml;userblock ist, oder ein Telefonat mit einer Vertrauensperson. Wenn Sie oder auch andere jedoch an Ihrem Verhalten merken, dass Sie dennoch &uuml;berfordert sind, z&ouml;gern Sie nicht, auch professionelle Beratung in Anspruch zu nehmen. Wenn Sie mit Gewalt konfrontiert sind, suchen Sie so schnell wie m&ouml;glich Hilfe.</p>
+<p>Ratschl&auml;ge, wie Sie mit der au&szlig;ergew&ouml;hnlichen Situation umgehen k&ouml;nnen, wo und wie Sie im Bedarfsfall f&uuml;r sich oder Ihnen Nahestehende rasche und professionelle Unterst&uuml;tzung bekommen sowie die rechtlichen M&ouml;glichkeiten und Rahmenbedingungen erfahren Sie auf dieser Webseite. Gewalt ist keine Privatsache.</p>
+<p>&nbsp;</p>
+<ul>
+<li><a title="FAQ" href="/614/start.aspx#a1">FAQ</a></li>
+<li><a title="Tipps f&uuml;r den besonderen Alltag" href="/614/start.aspx#a2">Tipps f&uuml;r den besonderen Alltag</a></li>
+<li><a title="Psychologische Hilfe" href="/614/start.aspx#a3">Psychologische Hilfe</a></li>
+<li><a title="Was tut die Polizei?" href="/614/start.aspx#a4">Was tut die Polizei?</a></li>
+<li><a title="Verhaltenstipps f&uuml;r Opfer" href="/614/start.aspx#a5">Verhaltenstipps f&uuml;r Opfer</a></li>
+<li><a title="Zivilcourage" href="/614/start.aspx#a6">Zivilcourage</a></li>
+<li><a title="Wichtige Kontakte" href="/614/start.aspx#a7">Wichtige Kontakte</a></li>
+</ul>
+<hr />
+<h3><a id="a1"></a>FAQ</h3>
+<h4>Gibt es Vorzeichen f&uuml;r eine Gewalteskalation, auf die ich achten k&ouml;nnte?</h4>
+<p>Sie kennen Ihren Partner/Ihre Partnerin am besten und k&ouml;nnen das Verhalten besser als jede andere Person einsch&auml;tzen. Wenn Sie merken, dass sich der Gem&uuml;tszustand Ihres Partners/Ihrer Partnerin ins Negative ver&auml;ndert und Sie nicht beruhigend einwirken k&ouml;nnen, kontaktieren Sie eine Helpline (Frauenhelpline <a class="tel" href="tel: +43800222555">0800 222 555</a> oder M&auml;nnerinfo (<a class="tel" href="tel: +43720 70 44 00">0720 70 44 00</a>). Sollte es zu Gewalt kommen, oder wenn Sie eine Gewaltaus&uuml;bung bef&uuml;rchten, verst&auml;ndigen Sie unverz&uuml;glich die Polizei &uuml;ber den <strong>Polizeinotruf <a class="tel" href="tel: 133">133</a></strong> (SMS: 0800 | 133 133) oder <strong>Euronotruf <a class="tel" href="tel: 112">112</a></strong>. Bedenken Sie, dass der Gef&auml;hrder/die Gef&auml;hrderin Ihren Anruf eventuell bemerken bzw. h&ouml;ren k&ouml;nnte, begeben Sie sich an einen sicheren Ort (z.B. versperrbarer Raum oder die Wohnung verlassen).</p>
+<p>Die meisten Gewalttaten beginnen mit Konflikten, die das allt&auml;gliche Leben betreffen. H&auml;ufige Ausl&ouml;ser stellen Besitzanspr&uuml;che, Eifersucht, Uneinigkeit und Erwartungen bez&uuml;glich der Hausarbeit und Ressourcen sowie das Kontroll- oder Machtbed&uuml;rfnis des Partners oder der Partnerin dar. Warnzeichen f&uuml;r eine Gewalteskalation k&ouml;nnten zum Beispiel folgende sein: Isolation durch den Partner/die Partnerin (z.B. Telefonate oder die Nutzung des Internets unterbinden), Beschimpfungen, Abwertungen, Demonstrationen von Macht, Drohungen, Erzwingen trivialer Handlungen, sexuelles unter Druck setzen.</p>
+<hr />
+<h4>Mein Partner/meine Partnerin wird zunehmend w&uuml;tender, aggressiver und beginnt, Gegenst&auml;nde in der Wohnung zu zerschlagen.</h4>
+<p>Z&ouml;gern Sie nicht, begeben Sie sich an einen sicheren Ort (z.B. versperrbarer Raum oder die Wohnung verlassen) und verst&auml;ndigen Sie den <strong>Polizeinotruf <a class="tel" href="tel: 133">133</a></strong> oder <strong>Euronotruf <a class="tel" href="tel: 112">112</a></strong>. Beim Anruf sollten Sie zuerst die Adresse oder den Aufenthaltsort mitteilen, dann kurz den Vorfall schildern und erst am Ende Ihre pers&ouml;nlichen Daten bekanntgeben. Die Polizei wird so rasch wie m&ouml;glich zu Ihnen kommen und die erforderlichen Ma&szlig;nahmen treffen.</p>
+<hr />
+<h4>Nach mehreren Ank&uuml;ndigungen wird mein Partner/meine Partnerin handgreiflich, wen kann ich verst&auml;ndigen?</h4>
+<p>Z&ouml;gern Sie nicht, begeben Sie sich an einen sicheren Ort (z.B. versperrbarer Raum oder die Wohnung verlassen) und verst&auml;ndigen Sie den <strong>Polizeinotruf <a class="tel" href="tel: 133">133</a> </strong>oder <strong>Euronotruf <a class="tel" href="tel: 112">112</a></strong>.</p>
+<hr />
+<h4>Kann mein Partner/meine Partnerin weggewiesen werden? Wenn ja, wie l&auml;uft das ab, was muss ich beachten?</h4>
+<p>Stellt die Polizei beim Einschreiten fest, dass bereits ein gef&auml;hrlicher Angriff auf Leben, Gesundheit oder Freiheit stattgefunden hat, oder aufgrund bestimmter Tatsachen ein solcher stattfinden wird, so werden die einschreitenden Polizeibediensteten ein Betretungsverbot gegen die Person, von der Gefahr ausgeht, aussprechen. Mit dem Betretungsverbot ist das Ann&auml;herungsverbot an die Gef&auml;hrdete/den Gef&auml;hrdeten im Umkreis von 100 Metern verbunden. Das bedeutet, dass sich die Person, von der Gefahr ausgeht, der gef&auml;hrdeten Person nicht n&auml;her als 100 Meter ann&auml;hern darf. Von der Polizei wird auch das &ouml;rtlich zust&auml;ndige Gewaltschutzzentrum oder die Interventionsstelle verst&auml;ndigt. Sollten sich Kinder im gemeinsamen Haushalt befinden, wird auch die &ouml;rtlich zust&auml;ndige Kinder- und Jugendhilfe &uuml;ber die Amtshandlung in Kenntnis gesetzt.</p>
+<hr />
+<h4>Mein Partner/meine Partnerin hat von der Polizei ein Betretungs- und Ann&auml;herungsverbot ausgesprochen bekommen. Wie lange darf er oder sie nicht nachhause?</h4>
+<p>Das polizeiliche Betretungs- oder Ann&auml;herungsverbot gilt f&uuml;r die Dauer von 14 Tagen f&uuml;r die Wohnr&auml;umlichkeit, wo eine Person, von der Gefahr ausgeht, wohnhaft ist, und in einem Umkreis von 100 Metern. Das Ann&auml;herungsverbot bezieht sich auf die gef&auml;hrdete oder die gef&auml;hrdeten Personen und ebenfalls auf einen Umkreis von 100 Metern. Bei Nichteinhaltung des Betretungs- und Ann&auml;herungsverbots drohen Verwaltungsstrafen.</p>
+<hr />
+<h4>Wenn ein Betretungs- und Ann&auml;herungsverbot gegen meinen Partner/meine Partnerin ausgesprochen wurde und wir uns wieder vers&ouml;hnt haben, darf er oder sie dann wieder zu mir in die Wohnung?</h4>
+<p><strong>Nein</strong>. Ein ausgesprochenes Betretungs- und Ann&auml;herungsverbot dauert 14 Tage und kann weder durch die gef&auml;hrdete Person noch von der Person, von der die Gefahr ausgeht, aufgehoben werden.</p>
+<hr />
+<h4>Wenn mein Partner/meine Partnerin trotz aufrechtem Betretungs- und Ann&auml;herungsverbot vor meiner Wohnungst&uuml;re steht, was mache ich dann?</h4>
+<p>&Ouml;ffnen Sie unter keinen Umst&auml;nden dem oder der Weggewiesenen die Wohnungst&uuml;re. Lassen Sie sich nicht &uuml;berreden und vermeiden Sie sonstige M&ouml;glichkeiten des Wohnungseintritts (auch ein ge&ouml;ffnetes Fenster k&ouml;nnte eventuell zum Einstieg in die Wohnr&auml;umlichkeit benutzt werden). Verst&auml;ndigen Sie den <strong>Polizeinotruf <a class="tel" href="tel: 133">133</a></strong> oder <strong>Euronotruf <a class="tel" href="tel: 112">112</a></strong>. Geben Sie beim Notruf zuerst die Adresse bekannt, dann schildern Sie kurz den Vorfall und geben Ihre pers&ouml;nlichen Daten bekannt. Die Polizei wird so rasch wie m&ouml;glich bei Ihnen sein und die erforderlichen Ma&szlig;nahmen treffen.</p>
+<hr />
+<h4>Kann man ein Betretungs- und Ann&auml;herungsverbot verl&auml;ngern lassen oder f&uuml;r einen l&auml;ngeren Zeitraum beantragen?</h4>
+<p>Das Betretungs- und Ann&auml;herungsverbot gilt f&uuml;r 14 Tage. Man kann aber innerhalb dieser Frist beim &ouml;rtlich zust&auml;ndigen Bezirksgericht einen Antrag auf einstweilige Verf&uuml;gung stellen. Durch diesen Umstand verl&auml;ngert sich das Betretungs- und Ann&auml;herungsverbot f&uuml;r l&auml;ngstens weitere 14 Tage bzw. bis das &ouml;rtlich zust&auml;ndige Gericht eine Entscheidung &uuml;ber den Antrag trifft. Derzeit sind die Zug&auml;nge zu den Gerichtsgeb&auml;uden eingeschr&auml;nkt, nehmen Sie daher vorab telefonisch Kontakt auf.</p>
+<hr />
+<h4>Wenn mein Partner/meine Partnerin ein Betretungs- und Ann&auml;herungsverbot von der Polizei ausgesprochen bekommen hat, darf er oder sie dann zum Besuch der gemeinsamen Kinder in meine Wohnung kommen?</h4>
+<p><strong>Nein</strong>. Die Person, gegen die ein Betretungs- und Ann&auml;herungsverbot ausgesprochen wurde, darf nur in Begleitung der Polizei zum Abholen von pers&ouml;nlichen Gegenst&auml;nden in die Wohnr&auml;umlichkeit kommen.</p>
+<hr />
+<h4>Darf ich mich mit meinem Partner/meiner Partnerin au&szlig;erhalb der Wohnr&auml;umlichkeit trotz eines aufrechten Betretungs- und Ann&auml;herungsverbotes treffen?</h4>
+<p><strong>Nein</strong>. Das Betretungs- und Ann&auml;herungsverbot bezieht sich auf die Wohnung der gef&auml;hrdeten Person und einem Umkreis von 100 Metern und auch auf die gef&auml;hrdete Person selbst in einen Umkreis von 100 Metern.</p>
+<hr />
+<h4>Wenn von der Polizei ein Betretungs- und Ann&auml;herungsverbot ausgesprochen wird, wird dann auch eine Hilfsorganisation, die mich bei diversen Angelegenheiten unterst&uuml;tzen kann, verst&auml;ndigt?</h4>
+<p>Bei Ausspruch eines Betretungs- und Ann&auml;herungsverbots durch die Polizei wird automatisch das &ouml;rtlich zust&auml;ndige Gewaltschutzzentrum oder die Interventionsstelle verst&auml;ndigt. Sollten im gemeinsamen Haushalt Kinder wohnen, wird auch der zust&auml;ndige Kinder- und Jugendhilfetr&auml;ger von der Amtshandlung in Kenntnis gesetzt. Sie werden dann so rasch wie m&ouml;glich vom &ouml;rtlich zust&auml;ndigen Gewaltschutzzentrum oder der Interventionsstelle bzw., wenn Kinder im gemeinsamen Haushalt wohnhaft sind, auch vom Kinder- und Jugendhilfetr&auml;ger kontaktiert.</p>
+<hr />
+<h4>Ich bef&uuml;rchte trotz Betretungs- und Ann&auml;herungsverbots einen neuerlichen Angriff. Gibt es die M&ouml;glichkeit einer gesicherten Unterkunft?</h4>
+<p>Wenn Sie Bef&uuml;rchtungen haben, dass Sie weiter von Ihrem Partner/Ihrer Partnerin angegriffen werden, dann besteht die M&ouml;glichkeit, in einer Notunterkunft (z.B. Frauenhaus) Zuflucht zu nehmen. Die Polizei, das zust&auml;ndige Gewaltschutzzentrum, die Interventionsstelle oder die Frauenhelpline (<a class="tel" href="tel: +43800222555">0800 222 555</a>) bzw. M&auml;nnerinfo (<a class="tel" href="tel: +43720 70 44 00">0720 70 44 00</a>) werden Ihnen den Kontakt vermitteln. Der Person, von der die Gefahr ausgeht, darf unter keinen Umst&auml;nden die Adresse der Notunterkunft bekanntgegeben werden.</p>
+<hr />
+<h4>Wenn mein Partner/meine Partnerin von der Polizei wegen h&auml;uslicher Gewalt festgenommen wurde, wird dann trotzdem ein Betretungs- und Ann&auml;herungsverbot ausgesprochen?</h4>
+<p>Eine vorl&auml;ufige Festnahme durch die Polizei schlie&szlig;t den Ausspruch eines Betretungs- und Ann&auml;herungsverbotes durch die Polizei nicht aus.</p>
+<hr />
+<h4>Stimmt es, dass die Polizei ein ausgesprochenes Betretungs- und Ann&auml;herungsverbot nur einmal &uuml;berpr&uuml;ft?</h4>
+<p>Die Polizei ist zur Kontrolle der Einhaltung des Betretungs- und Ann&auml;herungsverbotes zumindest einmal innerhalb der ersten drei Tage verpflichtet.</p>
+<hr />
+<h4>Welche Kosten entstehen f&uuml;r die gef&auml;hrdete Person bei einem Betretungs- und Ann&auml;herungsverbot?</h4>
+<p>F&uuml;r die gef&auml;hrdete Person entstehen bei einem polizeilichen Ausspruch eines Betretungs- und Ann&auml;herungsverbot keine Kosten.</p>
+<hr />
+<h4>Die Polizei ist intensiv mit der &Uuml;berwachung der Corona-Ma&szlig;nahmen besch&auml;ftigt. Schreiten Sie derzeit bei h&auml;uslicher Gewalt &uuml;berhaupt ein?</h4>
+<p>Die Polizei schreitet nach wie vor vollumf&auml;nglich bei h&auml;uslicher Gewalt sowie auch bei allen anderen Straftatbest&auml;nden ein.</p>
+<hr />
+<h4>Werden die Gerichte und die Staatsanwaltschaft &uuml;berhaupt t&auml;tig?</h4>
+<p>Jede strafrechtliche Anzeige wird unbeschadet der Ma&szlig;nahmen wegen des Corona-Virus&lsquo; an die zust&auml;ndige Staatsanwaltschaft weitergeleitet. Die Staatsanwaltschaft entscheidet &uuml;ber die weiteren Ma&szlig;nahmen. Die Entscheidung der Staatsanwaltschaft beeinflusst aber nicht den polizeilichen Ausspruch eines Betretungs- und Ann&auml;herungsverbotes.</p>
+<hr />
+<h4>Wenn es zu h&auml;uslicher Gewalt kommt, ich aber keine Anzeige machen m&ouml;chte, kann ich mich dann vertrauensvoll an eine Hilfsorganisation wenden?</h4>
+<p>Sie k&ouml;nnen sich jederzeit direkt an ein <a title="externer Link zu den Gewaltschutzzentren" href="https://www.gewaltschutzzentrum.at/" target="_blank">Gewaltschutzzentrum</a> <i class="fa fa-external-link" aria-hidden="true">&nbsp;</i>, eine Interventionsstelle oder an eine Helpline (Frauenhelpline <a class="tel" href="tel: +43800222555">0800 222 555</a>, M&auml;nnerinfo <a class="tel" href="tel: +43720 70 44 00">0720 70 44 00</a>, Kindernotruf <a class="tel" href="tel: 147">147</a>) wenden. Bedenken Sie aber, dass durch das polizeiliche Einschreiten gegen die Person, von der Gefahr ausgeht, ein Verhaltensstopp gesetzt wird.</p>
+<hr />
+<h4>Welche Opferberatungseinrichtungen gibt es?</h4>
+<p>Gesetzlich anerkannte Opferschutzeinrichtungen finden sie unter <a title="externer Link zu den Gewaltschutzzentren" href="https://www.gewaltschutzzentrum.at/" target="_blank">www.gewaltschutzzentrum.at</a> <i class="fa fa-external-link" aria-hidden="true">&nbsp;</i>.</p>
+<p class="zurueck"><a href="/614/start.aspx#uebersicht">zur&uuml;ck zur &Uuml;bersicht</a> <i class="fa fa-arrow-up" aria-hidden="true">&nbsp;</i></p>
+<hr />
+<h3><a id="a2"></a>Tipps f&uuml;r den besonderen Alltag</h3>
+<figure class="image bild_right" contenteditable="false"><a title="#sicherzuhause - Keine Zeit f&uuml;r Gewalt" href="614/images/SicherZuhause_keine_Zeit_fuer_Gewalt.jpg" data-lightbox="#sicherzuhause - Keine Zeit f&uuml;r Gewalt" data-title="#sicherzuhause - Keine Zeit f&uuml;r Gewalt"><img class="klein_right" title="#sicherzuhause - Keine Zeit f&uuml;r Gewalt" src="614/images/SicherZuhause_keine_Zeit_fuer_Gewalt_300.jpg" alt="#sicherzuhause - Keine Zeit f&uuml;r Gewalt" /></a>
+<figcaption>&copy; BMI</figcaption>
+</figure>
+<ul>
+<li><strong>Bleiben Sie aktiv &ndash; strukturieren Sie Ihren Tag</strong>.
+<ul>
+<li>Stehen Sie zu festen Zeiten auf.</li>
+<li>F&uuml;hren Sie Essenszeiten ein.</li>
+<li>Planen Sie auch Zeiten f&uuml;r Erholung und soziale Aktivit&auml;ten in der Familie ein.</li>
+<li>Behalten Sie die &uuml;blichen Schlafenszeiten und zu-Bett-geh-Rituale bei (vor allem f&uuml;r Kinder).</li>
+<li>Strukturieren Sie auch r&auml;umlich Ihren Wohnbereich, z.B. Homeoffice-Bereich, Lernbereich f&uuml;r die Kinder, Gemeinschaftsbereich f&uuml;r famili&auml;re Aktivit&auml;ten.</li>
+</ul>
+</li>
+<li>Teilen Sie Hausarbeit auf alle Familienmitglieder auf.</li>
+<li>Planen Sie Zeiten
+<ul>
+<li>f&uuml;r sich selbst: besinnen Sie sich auf Ihre St&auml;rken und g&ouml;nnen Sie sich eine Belohnung.</li>
+<li>f&uuml;r Ihre Partnerin/Ihren Partner: wertsch&auml;tzender Umgang.</li>
+<li>f&uuml;r Ihre Kinder: nehmen Sie sich Zeit f&uuml;r Gespr&auml;che, erkl&auml;ren Sie altersgerecht die momentane Situation.</li>
+<li>f&uuml;r Ihre Familie: planen Sie gemeinsam zuk&uuml;nftige Projekte wie Urlaube, Ausfl&uuml;ge oder schauen Sie sich gemeinsam Fotos an usw.</li>
+</ul>
+</li>
+<li>Reden Sie miteinander und nehmen Sie die Sorgen, Bed&uuml;rfnisse und &Auml;ngste der Familienmitglieder sowie Ihre eigenen ernst. Sprechen Sie Konflikte fr&uuml;hzeitig an, um diese nicht eskalieren zu lassen.</li>
+<li>Bleiben Sie in Kontakt. Nutzen Sie das Internet oder Telefon, um mit Ihren Liebsten in Kontakt zu bleiben.</li>
+<li>Nachbarschaftshilfe ist notwendiger denn je. Soziales Engagement kann Ihr Leben bereichern.</li>
+<li>Sonne heitert das Gem&uuml;t auf. Nutzen Sie Garten, Terrasse oder Balkon.</li>
+<li>Ein Spaziergang an der frischen Luft tut allen gut &ndash; dabei stets darauf achten, gen&uuml;gend Abstand zu anderen Personen zu halten.</li>
+<li>Erledigen Sie unbedingt notwendige Eink&auml;ufe zu Fu&szlig; &ndash; immer mit Abstand.</li>
+<li>Betreiben Sie Sport. Das f&ouml;rdert nicht nur die Gesundheit, sondern hilft, Stress und Aggressionen abzubauen. Sportliche Bet&auml;tigung ist selbst in geringer Intensit&auml;t auch zu Hause durchf&uuml;hrbar und f&ouml;rdert nachweislich Ihr Wohlbefinden (<a title="Externer Link zu gesundheit.gv.at" href="https://www.gesundheit.gv.at/leben/bewegung/gesunde-bewegung/tipps" target="_blank">Tipps</a>&nbsp;<i class="fa fa-external-link" aria-hidden="true">&nbsp;</i> finden Sie auf dem &ouml;ffentlichen Gesundheitsportal &Ouml;sterreichs).</li>
+</ul>
+<p class="zurueck"><a href="/614/start.aspx#uebersicht">zur&uuml;ck zur &Uuml;bersicht</a> <i class="fa fa-arrow-up" aria-hidden="true">&nbsp;</i></p>
+<hr />
+<h3><a id="a3"></a>Psychologische Hilfe</h3>
+<figure class="image bild_right" contenteditable="false"><a title="#sicherzuhause - Gewalt ist keine Privatsache" href="614/images/SicherZuhause_Gewalt_ist_keine_Privatsache.jpg" data-lightbox="#sicherzuhause - Gewalt ist keine Privatsache" data-title="#sicherzuhause - Gewalt ist keine Privatsache"><img class="klein_right" title="#sicherzuhause - Gewalt ist keine Privatsache" src="614/images/SicherZuhause_Gewalt_ist_keine_Privatsache_300.jpg" alt="#sicherzuhause - Gewalt ist keine Privatsache" /></a>
+<figcaption>&copy; BMI</figcaption>
+</figure>
+<ul>
+<li>Wenn Sie das Gef&uuml;hl haben, dass Sie &uuml;berfordert sind oder einen Rat brauchen, wenden Sie sich an Expertinnen und Experten. Schon ein Gespr&auml;ch kann helfen.</li>
+<li>Hier finden Sie Hilfe: Hotline der <strong>Kriseninterventionsteams, &bdquo;Rat auf Draht&ldquo; <a class="tel" href="tel: 147">147</a>, Telefonseelsorge <a class="tel" href="tel: 142">142</a></strong> (0-24h), <strong>Helpline &Ouml;sterreichischer PsychologInnen <a class="tel" href="tel: +431504 80 00">01/504 80 00</a></strong>, in einigen Bundesl&auml;ndern gibt es auch eigene <strong>Hotlines</strong>. N&auml;here Informationen und Empfehlungen unter <a title="Externer Link zu www.gesundheit.gv.at" href="https://www.gesundheit.gv.at" target="_blank">https://www.gesundheit.gv.at</a> <i class="fa fa-external-link" aria-hidden="true">&nbsp;</i>.</li>
+<li>Psychotherapie, klinisch psychologische sowie gesundheitspsychologische Beratung und Behandlung sowie andere Betreuungsangebote sind auch &uuml;ber Online-Video-Applikationen oder Apps wie Videotelefonie, Videokonferenz oder telefonisch m&ouml;glich.</li>
+<li>Versuchen Sie, das Positive in der neuen Situation bewusst zu suchen und sich vor Augen zu f&uuml;hren (z.B. anstehende Hausarbeiten endlich erledigen k&ouml;nnen; den Bed&uuml;rfnissen der Familienmitgliedern wieder mehr Zeit widmen k&ouml;nnen, bewusst den kleinen Freuden im Alltag Aufmerksamkeit schenken, Hobbies aktivieren, etc.). Machen Sie sich bewusst, dass die Situation vor&uuml;ber geht.</li>
+<li>Beziehen Sie Ihre Informationen nur von offiziellen Seiten und lassen Sie sich nicht von &uuml;bertriebenen Meldungen und Fake News vor allem im Social-Media-Bereich verunsichern. Beschr&auml;nken Sie bewusst Ihren Medienkonsum auf gewisse Zeitr&auml;ume. Immer wieder mit schlechten Nachrichten konfrontiert zu werden, kann belastend wirken.</li>
+<li>Reduzieren Sie Ihren Alkoholkonsum. Alkohol oder Drogen sind weder in Normal- noch in Ausnahmesituationen eine geeignete Bew&auml;ltigungsstrategie. Versuchen Sie, durch Bewegung oder Ablenkung eine beruhigende Wirkung zu erzielen. Alkohol senkt emotionale Hemmschwellen und kann so auch Aggressionen f&ouml;rdern. Bedenken Sie, dass Sie in einer Notsituation ohne Beeintr&auml;chtigung durch Alkohol oder sonstige Drogen Ihre Handlungsf&auml;higkeit leichter erhalten k&ouml;nnen.</li>
+<li>Starke negative Emotionen k&ouml;nnen zu Gewalt f&uuml;hren. Beobachten Sie sich selbst, stoppen Sie sich selbst. Sagen Sie zum Beispiel zu sich selbst (laut oder in Gedanken) &bdquo;STOPP!&ldquo; und atmen Sie mehrmals tief ein und aus, um sich kurzfristig etwas zu beruhigen, dann versuchen Sie m&ouml;glichst die Situation zu verlassen und sich abzulenken (z.B. einen Spaziergang machen; den Raum wechseln; ein Glas kaltes Wasser trinken; das Gesicht mit kaltem Wasser waschen; Energie z.B. durch Sport ableiten; einen Freund oder Freundin anrufen etc.).</li>
+</ul>
+<p class="zurueck"><a href="/614/start.aspx#uebersicht">zur&uuml;ck zur &Uuml;bersicht</a> <i class="fa fa-arrow-up" aria-hidden="true">&nbsp;</i></p>
+<hr />
+<h3><a id="a4"></a>Was tut die Polizei?</h3>
+<ul>
+<li>In &Ouml;sterreich ist jegliche Form von Gewalt verboten und unter Strafe gestellt.</li>
+<li>Jedes strafrechtliche Delikt wird von der Polizei zur Anzeige gebracht.</li>
+<li>Jede Strafrechtsanzeige wird der Staatsanwaltschaft &uuml;bermittelt.</li>
+<li>Manche straf- und/oder verwaltungsrechtliche Delikte f&uuml;hren zur sofortigen Festnahme durch die Polizei.</li>
+<li>Sobald von der Polizei festgestellt wird, dass ein gef&auml;hrlicher, gewaltt&auml;tiger Angriff in der Privatsph&auml;re zu erwarten ist, wird ein Betretungs- und Ann&auml;herungsverbot ausgesprochen.
+<ul>
+<li>Dies bedeutet, dass eine Person, f&uuml;r die das Betretungsverbot ausgesprochen wurde, einen bestimmten Ort, einschlie&szlig;lich eines Umkreises von 100 Metern, nicht betreten und</li>
+<li>sich der gef&auml;hrdeten Person in einem Umkreis von 100 Meter nicht n&auml;hern darf (Ann&auml;herungsverbot).</li>
+</ul>
+</li>
+</ul>
+<p class="zurueck"><a href="/614/start.aspx#uebersicht">zur&uuml;ck zur &Uuml;bersicht</a> <i class="fa fa-arrow-up" aria-hidden="true">&nbsp;</i></p>
+<hr />
+<h3><a id="a5"></a>Verhaltenstipps f&uuml;r Opfer</h3>
+<p>Gewalt in der Privatsph&auml;re hat viele unterschiedliche Erscheinungsformen und kommt in allen Altersklassen sowie Bildungs- und Gesellschaftsschichten vor. Sie ist auch unabh&auml;ngig von Nationalit&auml;t, Religion oder Kultur.</p>
+<p>Gerade wenn viele Menschen auf engem Raum &uuml;ber mehrere Tage zusammen sind, kann dies Aggressionen hervorrufen oder steigern. Die Polizei wird wie bisher jeder Verst&auml;ndigung von Gewalt in der Privatsph&auml;re sofort nachgehen und die entsprechenden Ma&szlig;nahmen zum Schutz der Opfer treffen. Sollten Sie Opfer von Gewalt in der Privatsph&auml;re werden, beachten Sie folgendes:</p>
+<ul>
+<li>Nehmen Sie Ihr Mobiltelefon.</li>
+<li>Suchen Sie einen sicheren Ort auf (versperrbarer Raum oder die Wohnung verlassen).</li>
+<li><strong>W&auml;hlen Sie unverz&uuml;glich den Polizeinotruf <a class="tel" href="tel: 133">133</a> oder Euronotruf <a class="tel" href="tel: 112">112</a>:</strong>
+<ul>
+<li><strong>Geben Sie zuerst Ihre genaue Adresse (Aufenthaltsort) an.</strong></li>
+<li><strong>Machen Sie kurze Angaben &uuml;ber den Vorfall.</strong></li>
+<li><strong>Gibt es verletzte Personen, wenn ja wie viele?</strong></li>
+<li><strong>Geben Sie Ihre Daten an.</strong></li>
+</ul>
+</li>
+<li><strong>Es gibt keine Rechtfertigung f&uuml;r Gewalt &ndash; die Verantwortung f&uuml;r Gewalt liegt immer beim T&auml;ter oder der T&auml;terin</strong>.</li>
+</ul>
+<p>Die Polizei wird Ihnen so rasch wie m&ouml;glich helfen!</p>
+<p class="zurueck"><a href="/614/start.aspx#uebersicht">zur&uuml;ck zur &Uuml;bersicht</a> <i class="fa fa-arrow-up" aria-hidden="true">&nbsp;</i></p>
+<hr />
+<h3><a id="a6"></a>Zivilcourage</h3>
+<p><strong>Schauen Sie <em>nicht</em> weg &ndash; zeigen Sie Zivilcourage! Melden Sie Hinweise auf Gewalttaten</strong>.</p>
+<p>Viele Straftaten werden von Zeugen bzw. Zeuginnen wahrgenommen. Auch wenn Sie nicht sicher sind, was passiert ist, oder glauben, dass Sie nichts Wichtiges gesehen haben: <br />Jeder Hinweis, jede Beobachtung kann helfen und retten. Durch Ihre Informationen k&ouml;nnen Taten verhindert oder aufgekl&auml;rt werden.</p>
+<p><strong>Bedenken Sie, dass auch Sie einmal Opfer einer Straftat werden k&ouml;nnten und dankbar f&uuml;r Informationen von Zeugen w&auml;ren</strong>.</p>
+<p class="zurueck"><a href="/614/start.aspx#uebersicht">zur&uuml;ck zur &Uuml;bersicht</a> <i class="fa fa-arrow-up" aria-hidden="true">&nbsp;</i></p>
+<hr />
+<h3><a id="a7"></a>Wichtige Kontakte</h3>
+<ul>
+<li><strong>Im Notfall</strong>: Polizeinotruf <a class="tel" href="tel: 133">133</a> oder Euronotruf <a class="tel" href="tel: 112">112</a>.</li>
+<li>Die <a title="Externer Link zu den Gewaltschutzzentren" href="https://www.gewaltschutzzentrum.at/" target="_blank">Gewaltschutzzentren/Interventionsstellen</a>&nbsp;<i class="fa fa-external-link" aria-hidden="true">&nbsp;</i> sind bundesweit auch in diesen Zeiten telefonisch erreichbar.</li>
+<li><a title="externer Link zur Frauenhelpline" href="http://www.frauenhelpline.at/" target="_blank">Frauenhelpline</a>&nbsp;<i class="fa fa-external-link" aria-hidden="true">&nbsp;</i> (<a class="tel" href="tel: +43800 222 555">0800 222 555</a>) sowie <a title="externer Link zur M&auml;nnerinfo" href="https://www.maennerinfo.at/" target="_blank">M&auml;nnerinfo</a> (<a class="tel" href="tel: +43720 70 44 00">0720 70 44 00</a><a title="externer Link zur M&auml;nnerberatung" href="https://www.maennerinfo.at/" target="_blank">).</a></li>
+<li>Ansprechstelle f&uuml;r Kinder und Jugendliche: <a class="tel" href="tel: 147">147</a> Kindernotruf "<a title="externer Link zur Homepage von &quot;Rat auf Draht&quot;" href="https://www.rataufdraht.at/" target="_blank">Rat auf Draht</a>" <i class="fa fa-external-link" aria-hidden="true">&nbsp;</i>.</li>
+<li><a title="externer Link zu 'die m&ouml;we'" href="http://www.die-moewe.at/" target="_blank">die m&ouml;we - Kinderschutzzentren</a>&nbsp;<i class="fa fa-external-link" aria-hidden="true">&nbsp;</i></li>
+<li>Die seitens des Innenministeriums gef&ouml;rderten OTA-Einrichtungen (Opferschutzorientierte T&auml;terarbeit) sind auch jetzt telefonisch erreichbar.</li>
+<li><a title="Bundeskanzleramt-Frauen-Helpline" href="https://www.bundeskanzleramt.gv.at/agenda/gewalt-gegen-frauen.html" target="_blank">Bundeskanzleramt-Frauen-Helpline</a></li>
+</ul>
+<p class="zurueck"><a href="/614/start.aspx#uebersicht">zur&uuml;ck zur &Uuml;bersicht</a> <i class="fa fa-arrow-up" aria-hidden="true">&nbsp;</i></p>
+
+
+            </div>
+            <div class="col-lg-4">
+                
+	<div class="sidenav hidden-print">
+  <h3 style="text-transform: uppercase !important;">Wichtige Kontakte</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="https://www.gewaltschutzzentrum.at/" target="_blank" title="Gewaltschutzzentren">Gewaltschutzzentren</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="http://www.frauenhelpline.at/" target="_blank" title="Frauenhelpline">Frauenhelpline</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="https://www.maennerinfo.at/" target="_blank" title="Männerinfo">Männerinfo</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="https://www.rataufdraht.at/" target="_blank" title="Rat auf Draht">Rat auf Draht</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="http://www.die-moewe.at/" target="_blank" title="die möwe - Kinderschutzzentren">die möwe - Kinderschutzzentren</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+  </ul>
+</div>
+
+
+<div class="sidenav hidden-print">
+  <h3 style="text-transform: uppercase !important;">Navigation</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="614/start.aspx#a1" title="FAQ">FAQ</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="614/start.aspx#a2" title="Tipps für den besonderen Alltag">Tipps für den besonderen Alltag</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="614/start.aspx#a3" title="Psychologische Hilfe">Psychologische Hilfe</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="614/start.aspx#a4" title="Was tut die Polizei?">Was tut die Polizei?</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="614/start.aspx#a5" title="Verhaltenstipps für Opfer">Verhaltenstipps für Opfer</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="614/start.aspx#a6" title="Zivilcourage">Zivilcourage</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>
+      <a href="614/start.aspx#a7" title="Wichtige Kontakte">Wichtige Kontakte</a>
+      <i class="fa fa-long-arrow-right" aria-hidden="true">
+      </i>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+            </div>
+
+
+
+
+        </article>
+        <div class="trenner_artikel"></div>
+    </div>
+
+    <div class="container">
+      
+        
+    </div>
+
+    
+
+				
+
+
+
+
+        
+
+	
+	
+        
+        <div class="container-fluid hintergrund clearfix platz hidden-print">
+            <div class="container">
+                <div class="row fivecolumns logoslider">
+                    <div id="logos">
+
+                        <div class="col-md-2 col-xs-5 slide">
+  <a href="https://www.bmi.gv.at/news.aspx?id=55626952486D4D4C5758413D&amp;cat=Verhalten bei Amok und Terror" title="Verhalten bei Amok und Terror">
+    <img src="../masterimages/logoslider/Amok_Terror_Slider20180913.jpg" alt="Verhalten bei Amok und Terror">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="http://www.polizei.gv.at/" target="_blank" title="zu den Landespolizeidirektionen">
+    <img src="../masterimages/logoslider/sb_lpds.jpg" alt="zu den Landespolizeidirektionen">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="http://www.bundeskriminalamt.at" target="_blank" title="zur Homepage des Bundeskriminalamtes">
+    <img src="../masterimages/logoslider/sb_bk.jpg" alt="zur Homepage des Bundeskriminalamtes">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="http://www.bfa.gv.at/start.aspx" target="_blank" title="zum Bundesamt für Fremdenwesen und Asyl">
+    <img src="../masterimages/logoslider/sb_bfa.jpg" alt="zum Bundesamt für Fremdenwesen und Asyl">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="http://www.bak.gv.at/" target="_blank" title="zum Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung">
+    <img src="../masterimages/logoslider/sb_bak.jpg" alt="zum Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="http://www.bvt.gv.at" target="_blank" title="Homepage Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">
+    <img src="../masterimages/logoslider/sb_bvt.jpg" alt="Homepage Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="https://kuratorium-sicheres-oesterreich.at/" target="_blank" title="Kuratorium Sicheres Österreich">
+    <img src="../masterimages/logoslider/sb_ksoe.jpg" alt="Kuratorium Sicheres Österreich">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="https://www.bmi.gv.at/magazin/magazin.aspx?id=131" title="Magazin Öffentliche Sicherheit (Alle Ausgaben seit 2010)">
+    <img src="../masterimages/logoslider/sb_oesi_012021.jpg" alt="Magazin Öffentliche Sicherheit (Alle Ausgaben seit 2010)">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="http://www.gemeinsamsicher.at/" target="_blank" title="GEMEINSAM.SICHER">
+    <img src="../masterimages/logoslider/sb_gsioe.jpg" alt="GEMEINSAM.SICHER">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="http://www.polizeikarriere.gv.at" target="_blank" title="Öffnet die Polizeikarriere-Homepage">
+    <img src="../masterimages/logoslider/polizeikarriere_slider_20190425_web.jpg" alt="Öffnet die Polizeikarriere-Homepage">
+  </a>
+</div>
+<div class="col-md-2 col-xs-5 slide">
+  <a href="613" title="Demenz.Aktivgemeinde">
+    <img src="../masterimages/logoslider/sb_demenz_V20191105.jpg" alt="Demenz.Aktivgemeinde">
+  </a>
+</div>
+
+                    </div>
+                    <!-- close logos -->
+                </div>
+                <!-- close row fivecolumns -->
+            </div>
+            <!-- close container -->
+        </div>
+        <!-- container-fluid hintergrund clearfix platz -->
+        
+        
+        <div class="container hidden-xs">
+            <div class="row sitemap">
+                <h2>SITEMAP</h2>
+                
+                
+
+                <div class="col-md-2 col-sm-6">
+  <h3 style="text-transform: uppercase !important;">Minister und<br/>Ministerium</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="101" title="zum Bundesminister">Bundesminister</a>
+    </li>
+    <li>
+      <a href="102" title="zum Bundesministerium">Bundesministerium</a>
+    </li>
+    <li>
+      <a href="103" title="zur Geschäftseinteilung">Geschäftseinteilung</a>
+    </li>
+    <li>
+      <a href="104/start.aspx" title="zur Aus- und Fortbildung im BMI">Aus- und Fortbildung im BMI</a>
+    </li>
+    <li>
+      <a href="107/" title="Förderungen">Förderungen</a>
+    </li>
+    <li>
+      <a href="105/" title="zu den Sach- und Jobausschreibungen">Jobs und Karriere</a>
+    </li>
+    <li>
+      <a href="https://bmi.vergabeportal.at" target="_blank" title="Sachausschreibungen">Sachausschreibungen</a>
+    </li>
+    <li>
+      <a href="110/start.aspx" title="Verlautbarungen">Verlautbarungen</a>
+    </li>
+  </ul>
+</div>
+<div class="col-md-2 col-sm-6">
+  <h3 style="text-transform: uppercase !important;">Polizei und<br/>Sicherheit</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="201/start.aspx" title="Gemeinsam.Sicher">Gemeinsam.Sicher</a>
+    </li>
+    <li>
+      <a href="202/start.aspx" title="zur Bundespolizei">Bundespolizei</a>
+    </li>
+    <li>
+      <a href="fahndung/start.aspx" title="Fahndungen">Fahndungen</a>
+    </li>
+    <li>
+      <a href="204/start.aspx" title="zum Krisen- und Katastrophenmanagement">Krisen- und Katastrophenmanagement</a>
+    </li>
+    <li>
+      <a href="205/start.aspx" title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">Bundesamt für Verfassungsschutz und Terrorismusbekämpfung</a>
+    </li>
+    <li>
+      <a href="206/start.aspx" title="Bundeskriminalamt">Bundeskriminalamt</a>
+    </li>
+    <li>
+      <a href="207/start.aspx" title="Einsatzkommando Cobra/Direktion für Spezialeinheiten">Einsatzkommando Cobra/<br/>Direktion für Spezialeinheiten</a>
+    </li>
+    <li>
+      <a href="208/start.aspx" title="Landespolizeidirektionen">Landespolizeidirektionen</a>
+    </li>
+    <li>
+      <a href="209/start.aspx" title="eCall Austria">eCall Austria</a>
+    </li>
+  </ul>
+</div>
+<div class="col-md-2 col-sm-6">
+  <h3 style="text-transform: uppercase !important;">Asyl und<br/>Migration</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="301/start.aspx" title="Asylwesen">Asylwesen</a>
+    </li>
+    <li>
+      <a href="312/start.aspx" title="Niederlassung und Aufenthaltsrecht">Niederlassung und Aufenthaltsrecht</a>
+    </li>
+    <li>
+      <a href="303/start.aspx" title="Grundversorgung">Grundversorgung</a>
+    </li>
+    <li>
+      <a href="305/start.aspx" title="Migrationsstrategie und Gesellschaft">Migrationsstrategie und Gesellschaft</a>
+    </li>
+    <li>
+      <a href="304/start.aspx" title="Bundesamt für Fremdenwesen und Asyl">Bundesamt für Fremdenwesen und Asyl</a>
+    </li>
+    <li>
+      <a href="107/EU_Foerderungen/Finanzrahmen_2014_2020/AMIF/start.aspx" title="Asyl-, Migrations- und Integrationsfonds (AMIF)">Asyl-, Migrations- und Integrationsfonds (AMIF)</a>
+    </li>
+  </ul>
+</div>
+<div class="col-md-2 col-sm-6">
+  <h3 style="text-transform: uppercase !important;">Gesellschaft<br/>und Recht</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="401/start.aspx" title="Begutachtungen">Begutachtungen</a>
+    </li>
+    <li>
+      <a href="402/start.aspx" title="Datenschutz">Datenschutz</a>
+    </li>
+    <li>
+      <a href="417/start.aspx" title="Europäische Bürgerinitiative">Europäische Bürgerinitiative</a>
+    </li>
+    <li>
+      <a href="403/start.aspx" title="Gedenkstätten und Kriegsgräberfürsorge">Gedenkstätten und Kriegsgräberfürsorge</a>
+    </li>
+    <li>
+      <a href="404/start.aspx" title="Mauthausen Memorial">Mauthausen Memorial</a>
+    </li>
+    <li>
+      <a href="405/start.aspx" title="Politische Parteien">Politische Parteien</a>
+    </li>
+    <li>
+      <a href="406/start.aspx" title="Staatsbürgerschaft">Staatsbürgerschaft</a>
+    </li>
+    <li>
+      <a href="407/start.aspx" title="Rechtsschutzbeauftragter">Rechtsschutzbeauftragter</a>
+    </li>
+    <li>
+      <a href="408/start.aspx" title="Rechtsstaat und Menschenrechte">Rechtsstaat und Menschenrechte</a>
+    </li>
+    <li>
+      <a href="409/start.aspx" title="Stiftungs- und Fondsregister">Stiftungs- und Fondsregister</a>
+    </li>
+    <li>
+      <a href="410" title="Volksabstimmung">Volksabstimmung</a>
+    </li>
+    <li>
+      <a href="416" title="Volksbefragung">Volksbefragung</a>
+    </li>
+    <li>
+      <a href="411/start.aspx" title="Volksbegehren">Volksbegehren</a>
+    </li>
+    <li>
+      <a href="412/start.aspx" title="Wahlen">Wahlen</a>
+    </li>
+    <li>
+      <a href="413/start.aspx" title="Zentrales Melderegister">Zentrales Melderegister</a>
+    </li>
+    <li>
+      <a href="414/start.aspx" title="Zentrales Personenstandsregister">Zentrales Personenstandsregister</a>
+    </li>
+    <li>
+      <a href="415/start.aspx" title="Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung">Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung</a>
+    </li>
+  </ul>
+</div>
+<div class="col-md-2 col-sm-6">
+  <h3 style="text-transform: uppercase !important;">Sicherheits&shy;politik und Strategie</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="501/start.aspx" title="BMI Strategien">BMI Strategien</a>
+    </li>
+    <li>
+      <a href="502/start.aspx" title="Österreichische Strategien">Österreichische Strategien</a>
+    </li>
+    <li>
+      <a href="503/start.aspx" title="Europäische Strategien">Europäische Strategien</a>
+    </li>
+    <li>
+      <a href="509/start.aspx" title="EU-Engagement des BMI">EU-Engagement des BMI</a>
+    </li>
+    <li>
+      <a href="510/start.aspx" title="Nationale Anti-Korruptionsstrategie">Nationale <br/>Anti-Korruptionsstrategie</a>
+    </li>
+    <li>
+      <a href="504/start.aspx" title="Digitale Sicherheit">Digitale Sicherheit</a>
+    </li>
+    <li>
+      <a href="505/start.aspx" title="Schutz kritischer Infrastruktur">Schutz kritischer Infrastruktur</a>
+    </li>
+    <li>
+      <a href="506/start.aspx" title="Zivil - militärische Zusammenarbeit">Zivil - militärische Zusammenarbeit</a>
+    </li>
+    <li>
+      <a href="508/start.aspx" title="Sicherheitsbericht">Sicherheitsbericht</a>
+    </li>
+  </ul>
+</div>
+<div class="col-md-2 col-sm-6">
+  <h3 style="text-transform: uppercase !important;">Bürger&shy;service</h3>
+  <ul class="menue_rechts">
+    <li>
+      <a href="611/start.aspx" title="Barrierefreiheit">Barrierefreiheit</a>
+    </li>
+    <li>
+      <a href="612/start.aspx" title="BMI-Sicherheits-App">BMI-Sicherheits-App</a>
+    </li>
+    <li>
+      <a href="601/start.aspx" title="Bürgertelefon">Bürgertelefon</a>
+    </li>
+    <li>
+      <a href="602/start.aspx" title="Callcenter">Callcenter</a>
+    </li>
+    <li>
+      <a href="613" title="Demenz.Aktivgemeinde">Demenz.Aktivgemeinde</a>
+    </li>
+    <li>
+      <a href="603/start.aspx" title="Kriminalprävention des BK">Kriminalprävention</a>
+    </li>
+    <li>
+      <a href="604/start.aspx" title="Meldeangelegenheiten">Meldeangelegenheiten</a>
+    </li>
+    <li>
+      <a href="605/start.aspx" title="Meldestellen">Meldestellen</a>
+    </li>
+    <li>
+      <a href="magazin/magazin1.aspx" title="DAS Magazin für die öffentliche Sicherheit">Magazin "Öffentliche Sicherheit"</a>
+    </li>
+    <li>
+      <a href="https://citizen.bmi.gv.at/at.gv.bmi.fnsbazweb-p/baz/public/BuergeranzeigeInfo" target="_blank" title="externer Link zur Online Diebstahlsanzeige">Online Diebstahlsanzeige</a>
+    </li>
+    <li>
+      <a href="607/start.aspx" title="Sicherheit bei Reisen">Sicherheit bei Reisen</a>
+    </li>
+    <li>
+      <a href="614/start.aspx" title="Sicher zu Hause">Sicher zu Hause</a>
+    </li>
+    <li>
+      <a href="termin.aspx" title="Termine">Termine</a>
+    </li>
+    <li>
+      <a href="609/start.aspx" title="Vereine">Vereine</a>
+    </li>
+  </ul>
+</div>
+
+
+
+            </div>
+        </div>
+
+
+
+        <div class="clearfix"></div>
+        <footer class="hidden-print">
+            <div class="container-fluid hintergrund_rot">
+                <div class="container impressum">
+
+                    
+                    <div class="col-lg-4" style="padding-top:5px !important;">
+                    <p>&copy; BUNDESMINISTERIUM FÜR INNERES</p>
+                </div>
+                <div class="col-lg-8"  style="padding-top:5px !important;">
+                    <ul class="aussen">
+			<li><a href="rss_feed/start.aspx">RSS</a> |</li> 
+                        <li><a href="Kontakt/start.aspx">Kontakt</a> |</li>
+                        <li><a href="Impressum/start.aspx">IMPRESSUM</a> |</li>
+			<li><a href="402/start.aspx">Datenschutz</a> |</li>
+			<li><a href="611/erklaerung/start.aspx">Barrierefreiheitserklärung</a></li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </footer>
+	
+
+            
+	
+    </form>
+    <!-- Nach oben Button -->
+    <form class="move-up hidden-xs" action="#up">
+        <button><i class="fa fa-chevron-circle-up"></i></button>
+    </form>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#News').bxSlider({
+                mode: 'fade',
+                captions: true,
+                auto: true,
+                adaptiveHeight: false,
+                responsive: true
+            });
+        });
+         $(document).ready(function () {
+            $('#Standalone').bxSlider({
+                mode: 'fade',
+                captions: true,
+                auto: false,
+                adaptiveHeight: false,
+                responsive: true,
+                pager:false
+            });
+        });
+    </script>
+    <!-- logoslider -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#logos').bxSlider({
+                slideWidth: 220,
+                minSlides: 5,
+                maxSlides: 5,
+                moveSlides: 1,
+                slideMargin: 0,
+                controls: true,
+                responsive: true,
+                auto: true,
+                speed: 1500,
+                captions: false,
+            });
+        });
+    </script>
+    <!-- Nach oben Button -->
+    <script>
+        jQuery(document).ready(function ($) {
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.move-up').fadeIn();
+                    } else {
+                        $('.move-up').fadeOut();
+                    }
+                });
+                $('.move-up button').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+        });
+    </script>
+
+	
+     
+     <script>
+
+
+         $(document).ready(function () {
+
+             var img;
+             img = $("#lightbox img.lb-image");
+
+             if (img) {
+                 img.attr('alt', 'Open Lightbox');
+             }
+
+         });
+
+
+
+    </script>
+
+</body>
+</html>

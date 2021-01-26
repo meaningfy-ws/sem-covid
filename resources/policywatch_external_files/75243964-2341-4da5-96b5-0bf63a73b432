@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk">
+	<head>
+<title>ÚPSVaR</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="sk" />
+<meta name="Generator" content="BUXUS" />
+<meta name="keywords" content="Stránka neexistuje" />
+<meta name="robots" content="index, follow" />
+<meta name="google-site-verification" content="eon8FzGDBqwvTrOW8xZKKBnI-FKIDEjdyVocssN1WoI" />
+<link href="https://www.upsvr.gov.sk/buxus/docs/design/style.css?t=36?1606915519" media="screen" rel="stylesheet" type="text/css" />
+<!--[if lte IE 7]> <link href="https://www.upsvr.gov.sk/buxus/docs/design/ie7.css?t=36" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 6]> <link href="https://www.upsvr.gov.sk/buxus/docs/design/ie.css?t=36" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="https://www.upsvr.gov.sk/buxus/docs/design/jquery-ui/smoothness/jquery-ui-1.10.3.custom.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/buxus/images/design/favicon.ico" rel="favicon" type="image/x-icon" />
+<link href="/buxus/images/design/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="/buxus/images/design/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="https://www.upsvr.gov.sk/buxus/docs/jscripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="https://www.upsvr.gov.sk/buxus/docs/jscripts/cookie.bar/jquery.cookiebar.css?t=36" media="screen" rel="stylesheet" type="text/css" />
+<link href="/buxus/generate_page.php?page_id=189" rel="alternate" type="application/rss+xml" title="RSS - nové články" />
+
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/jquery-ui/minified/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/scripts.js?1384440922"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/search.js?1444116015"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/eurocalc.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/jquery-ui/minified/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/jquery-ui/minified/jquery.ui.datepicker.min.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/jquery-ui/minified/i18n/jquery.ui.datepicker-sk.min.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/jquery-ui/minified/jquery.ui.autocomplete.min.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/swfupload.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/swfupload.queue.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/fileprogress.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/jquery.tools.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="https://www.upsvr.gov.sk/buxus/docs/jscripts/cookie.bar/jquery.cookiebar.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // Creating custom :external selector
+                $.expr[':'].external = function(obj){
+                    var ret = !obj.href.match(/^mailto\:/)
+                        && !obj.href.match(/^javascript\:/)
+                        && ((obj.hostname != location.hostname) || obj.href.match(/target=_blank/))
+                        && !obj.href.match(/urad=/)
+                        && obj.hostname != 'www.upsvar.sk'
+                        && obj.hostname != 'www.upsvr.gov.sk'
+                        && obj.href;
+                    if($(obj).hasClass('target-blank')) return(true);
+                    if($(obj).hasClass('target-this')) return(false);
+                    return (ret);
+                };
+
+                $('a:external').addClass('external');
+                // ||
+                $('a.external').attr('target', '_blank');
+                $('a.external').attr('href', function () {  return ($(this).attr('href').replace('&target=_blank', '')); });
+
+                $('a.external').each(function() {
+                    var a = $(this);
+                    if(a.attr('title') && a.attr('title').length) {
+                        a.attr('title', a.attr('title') + ' - Externý odkaz na ' + a.attr('href').replace('?target=_blank', ''));
+                    }
+                    else {
+                        a.attr('title', 'Externý odkaz na ' + a.attr('href').replace('?target=_blank', ''));
+                    }
+                });
+
+                $(".show-tooltip").tooltip({ position: "top center", predelay:200, effect: 'slide'});
+            });
+        </script>
+
+ </head>
+ <body>
+ <div id="frame">
+		<div id="top_navi">
+    	<ul class="float_right">
+						<li><a href="/kontakt.html?page_id=233" title="Kontakt">Kontakt</a></li>
+								<li><a href="/mapa-stranok.html?page_id=241" title="Mapa stránok">Mapa stránok</a></li>
+								<li><a href="/buxus/generate_page.php?page_id=189" title="RSS">RSS</a></li>
+						
+		<li><a href="/stranka-neexistuje.html?page_id=13208&lang=en" title="Language version">English version</a></li>		
+		
+		</ul>
+ 	</div>				
+
+  <div class="invisible"><a href="#content_start" >Preskočiť navigáciu</a></div> 	
+ 	<div id="logo">
+ 	  <div id="logo_inner">
+      <a href="/" title="Hlavná stránka"><img src="/buxus/images/design/main_logo.gif" class="float_left" alt="Ústredie práce, sociálnych vecí a rodiny" /></a>
+      	<script type="text/javascript">
+	$(function() {
+		$(".phone-line[title]").tooltip({ position: "bottom center", predelay:200, effect: 'slide'});
+	});
+	</script>
+		<div class="phone-line" title="">
+			<a href="/socialne-veci-a-rodina/socialno-pravna-ochrana-deti/opatrenia-na-zabezpecenie-ochrany-zivota-zdravia-a-vyvinu-dietata/bezplatna-telefonicka-linka-pre-nahlasenie-zneuzivania-socialneho-systemu-a-zanedbavania-starostlivosti-o-deti..html?page_id=157191" title="Bezplatná telefonická linka pre nahlásenie zneužívania sociálneho systému a zanedbávania starostlivosti o deti." style="color: #3F5876;">Bezplatná telefonická linka pre nahlásenie zneužívania sociálneho systému a zanedbávania starostlivosti o deti.</a><br/>
+			<img src="/buxus/images/design/tel-linka.png" alt="Bezplatná telefonická linka pre nahlásenie zneužívania sociálneho systému a zanedbávania starostlivosti o deti." />
+		</div>
+		<div style="clear: both;"></div>
+        <div style="clear: both;"></div>
+		<form method="get" id="form" class="search-form ustredie" action="/vysledky-vyhladavania.html?page_id=242" id="search-form">
+	   		<div id="search_box" class="float_right">
+	          	<div class="float_right">
+					<input type="text" class="search_width float_left" name="search" id="q" autocomplete="off" value="sem napíšte hľadaný výraz" onblur="return changeColorBack(this);" onfocus="return changeColor(this);"/>
+	            	<input type="image" style="float: left;" src="/buxus/images/design/search_button.gif" value="Hľadaj" alt="Hľadaj" title="Hľadaj" class="submit_image" />
+				</div>
+	        	<div class="float_right" style="padding: 3px;">
+	            	<label for="q">Vyhľadávanie</label>
+	        	</div>
+			</div>   		
+			<div style="clear: both;"></div>
+			<div id="search-suggest">
+				<div id="search-suggest-top"></div>
+				<div id="search-suggest-content">
+					<hr />
+					<a class="suggest-footer-link" href="#" onclick="$('#form').submit();return(false);">Všetky výsledky <strong>výrazu "fil"</strong> v počte <strong>0</strong></a>
+				</div>
+				<div id="search-suggest-bottom"></div>
+			</div>
+		</form>
+
+
+		
+   	</div>
+ 	</div>
+  <br class="new_float_line" /> 
+  	
+  <div id="contentheader">
+  		<div id="header_bottom">
+		<ul class="float_left">
+							<li class="main_menu_li_1" title="menu_1"><a style="background: url('/buxus/images/design/banners/image_235_82_v1.jpeg') no-repeat top right;" href="/obcan.html?page_id=235"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/family_deco.jpg" alt="Občan" /><br />Občan</a></li>
+								<li class="main_menu_li_2" title="menu_2"><a style="background: url('/buxus/images/design/banners/image_236_82_v1.jpeg') no-repeat top right;" href="/obcan-so-zdravotnym-postihnutim.html?page_id=236"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/disabled_deco.jpg" alt="Občan so zdravotným postihnutím" /><br />Občan so zdravotným postihnutím</a></li>
+								<li class="main_menu_li_3" title="menu_3"><a style="background: url('/buxus/images/design/banners/image_237_82_v1.jpeg') no-repeat top right;" href="/socialne-veci-a-rodina-2.html?page_id=237"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/social_deco.jpg" alt="Sociálne veci a rodina" /><br />Sociálne veci a rodina</a></li>
+								<li class="main_menu_li_4" title="menu_4"><a style="background: url('/buxus/images/design/banners/image_238_82_v1.jpeg') no-repeat top right;" href="/zamestnavatel.html?page_id=238"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/employer_deco.jpg" alt="Zamestnávateľ" /><br />Zamestnávateľ</a></li>
+								<li class="main_menu_li_5" title="menu_5"><a style="background: url('/buxus/images/design/banners/image_239_82_v1.jpeg') no-repeat top right;" href="/media.html?page_id=239"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/media_deco.jpg" alt="Médiá" /><br />Médiá</a></li>
+							</ul>
+    </div>
+    
+    					<div class="main_div" id="menu_1" style="z-index:100; background: url('/buxus/images/design/banners/image_235_86_v1.gif') no-repeat top right;">
+    		<a href="/obcan.html?page_id=235"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/family_deco.jpg" alt="Občan" /><br /><b>Občan</b><br /><span>Evidencia na úrade (ako, kde a kedy sa zaevidovať), aké informácie poskytuje úrad uchádzačovi o zamestnanie. 
+</span></a>
+    	</div>
+							<div class="main_div" id="menu_2" style="z-index:100; background: url('/buxus/images/design/banners/image_236_86_v1.gif') no-repeat top right;">
+    		<a href="/obcan-so-zdravotnym-postihnutim.html?page_id=236"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/disabled_deco.jpg" alt="Občan so zdravotným postihnutím" /><br /><b>Občan so zdravotným postihnutím</b><br /><span>Parkovacie preukazy, preukazy ZŤP, peňažné príspevky na kompenzáciu, poradenské informačné centrá.</span></a>
+    	</div>
+							<div class="main_div" id="menu_3" style="z-index:100; background: url('/buxus/images/design/banners/image_237_86_v1.gif') no-repeat top right;">
+    		<a href="/socialne-veci-a-rodina-2.html?page_id=237"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/social_deco.jpg" alt="Sociálne veci a rodina" /><br /><b>Sociálne veci a rodina</b><br /><span><p>Finančné príspevky, problémy v rodine, neúplná rodina, profesionálna rodina.</p></span></a>
+    	</div>
+							<div class="main_div" id="menu_4" style="z-index:100; background: url('/buxus/images/design/banners/image_238_86_v1.gif') no-repeat top right;">
+    		<a href="/zamestnavatel.html?page_id=238"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/employer_deco.jpg" alt="Zamestnávateľ" /><br /><b>Zamestnávateľ</b><br /><span>Nahlasovanie voľných pracovných miest,&nbsp;zamestnávanie občanov so ZP, hromadné prepúšťanie.&nbsp; 
+</span></a>
+    	</div>
+							<div class="main_div" id="menu_5" style="z-index:100; background: url('/buxus/images/design/banners/image_239_86_v1.gif') no-repeat top right;">
+    		<a href="/media.html?page_id=239"><img src="https://www.upsvr.gov.sk/buxus/docs/design/banners/media_deco.jpg" alt="Médiá" /><br /><b>Médiá</b><br /><span><p>Informačný servis pre médiá, najčastejšie témy, otázky, odpovede, fotografie a materiály na stiahnutie.</p></span></a>
+    	</div>
+			    
+    				
+                  </div> 
+  
+  <div id="contentleft">
+    <div id="content_left_inner">
+      <div class="top_space">&nbsp;</div>
+        										
+                    <div class="sidebox">
+    <div class="boxhead"><div>&nbsp;</div></div>
+    <div class="boxbody">
+    <div>
+	<ul id="main_menu_list">
+						<li>
+				<a href="/ustredie-psvr.html?page_id=211" >Ústredie PSVR</a>
+			</li>
+							<li>
+				<a href="/urady-psvr.html?page_id=215" >Úrady PSVR</a>
+			</li>
+							<li>
+				<a href="/zariadenia-socialnopravnej-ochrany-deti-a-socialnej-kurately.html?page_id=123887" >Zariadenia sociálnoprávnej ochrany detí a sociálnej kurately </a>
+			</li>
+							<li>
+				<a href="/socialne-veci-a-rodina.html?page_id=212" >Sociálne veci a rodina</a>
+			</li>
+							<li>
+				<a href="/sluzby-zamestnanosti.html?page_id=213" >Služby zamestnanosti</a>
+			</li>
+							<li>
+				<a href="/zaruky-pre-mladych.html?page_id=482966" >Záruky pre mladých</a>
+			</li>
+							<li>
+				<a href="/europsky-socialny-fond.html?page_id=214" >Európsky sociálny fond</a>
+			</li>
+							<li>
+				<a href="/buxus/generate_page.php?page_id=530818" >Operačný program potravinovej a základnej materiálnej pomoci  2014 – 2020</a>
+			</li>
+							<li>
+				<a href="/buxus/generate_page.php?page_id=831509" >Integrovaný regionálny operačný program 2014 - 2020</a>
+			</li>
+							<li>
+				<a href="/operacny-program-kvalita-zivotneho-prostredia.html?page_id=831747" >Operačný program Kvalita životného prostredia</a>
+			</li>
+							<li>
+				<a href="/nastroje-na-prepojenie-europy-cef-system-eessi.html?page_id=844550" >Nástroje na prepojenie Európy (CEF)/Systém EESSI</a>
+			</li>
+							<li>
+				<a href="/statistiky.html?page_id=1247" >Štatistiky</a>
+			</li>
+							<li>
+				<a href="/volne-pracovne-miesta.html?page_id=12925" >Voľné pracovné miesta</a>
+			</li>
+							<li>
+				<a href="/eures.html?page_id=13140" >EURES</a>
+			</li>
+							<li>
+				<a href="/zverejnovanie-zmluv-faktur-aobjednavok.html?page_id=29549" >Zverejňovanie zmlúv, faktúr a objednávok</a>
+			</li>
+							<li>
+				<a href="/profil-verejneho-obstaravatela.html?page_id=143436" >Profil verejného obstarávateľa</a>
+			</li>
+							<li>
+				<a href="/narodne-projekty-oznamenia-o-moznosti-predkladania-ziadosti-o-poskytnutie-financneho-prispevku.html?page_id=525142" >Národné projekty - Oznámenia o možnosti predkladania žiadostí o poskytnutie finančného príspevku </a>
+			</li>
+							<li>
+				<a href="/sprava-majetku.html?page_id=297043" >Správa majetku</a>
+			</li>
+			</ul>
+	</div>
+    </div>
+    </div>
+	
+        
+      <br class="new_float_line" />
+                	                        																						
+			            																						
+										<div class="sidebox2">
+				<div class="boxhead2"><h2>Užitočné dokumenty</h2></div>
+        		<div class="boxbody2">
+				<ul class="second_menu_list">
+				<li><a href="/vzory-ziadosti.html?page_id=282" title="Vzory žiadostí">Vzory žiadostí</a></li><li><a href="/pravne-predpisy.html?page_id=283" title="Právne predpisy">Právne predpisy</a></li>			
+				</ul>
+				</div>
+				</div>
+			        
+
+      <br class="new_float_line" />       
+                                          											
+			            											
+			            											
+			 
+							<div class="sidebox2">
+				<div class="boxhead2"><h2>Užívateľský servis</h2></div>
+        		<div class="boxbody2">
+          		<ul class="second_menu_list">
+				<li><a href="/slobodny-pristup-k-informaciam.html?page_id=243" title="Slobodný prístup k informáciám">Slobodný prístup k informáciám</a></li><li><a href="http://www.upsvar.sk/ustredie-psvr/generalny-riaditel-ustredia-prace-socialnych-veci-a-rodiny/ochrana-osobnych-udajov.html?page_id=186015" title="Ochrana osobných údajov">Ochrana osobných údajov</a></li><li><a href="/oznamovanie-protispolocenskej-cinnosti.html?page_id=1056100" title="Oznamovanie protispoločenskej činnosti">Oznamovanie protispoločenskej činnosti</a></li>			
+				</ul>
+				</div>
+				</div>
+			           
+
+      <br class="new_float_line" />       
+                	                        											
+			            											
+			            											
+			            											
+			            											
+										<div class="sidebox2">
+				<div class="boxhead2"><h2>Naše registre</h2></div>
+        		<div class="boxbody2">
+          		<ul class="second_menu_list">
+				<li><a href="/sluzby-zamestnanosti/nestatne-sluzby-zamestnanosti/sprostredkovanie-zamestnania-za-uhradu.html?page_id=13025" title="Sprostredkovatelia zamestnania za úhradu">Sprostredkovatelia zamestnania za úhradu</a></li><li><a href="/sluzby-zamestnanosti/nestatne-sluzby-zamestnanosti/agentury-podporovaneho-zamestnavania.html?page_id=13042" title="Agentúry podporovaného zamestnávania">Agentúry podporovaného zamestnávania</a></li><li><a href="/sluzby-zamestnanosti/nestatne-sluzby-zamestnanosti/agentury-docasneho-zamestnavania.html?page_id=13034" title="Agentúry dočasného zamestnávania">Agentúry dočasného zamestnávania</a></li><li><a href="/buxus/generate_page.php?page_id=12977" title="Sociálne podniky">Sociálne podniky</a></li><li><a href="/sluzby-zamestnanosti/nastroje-aktivnych-opatreni-trhu-prace/podpora-zamestnavania-obcanov-so-zdravotnym-postihnutim/55-chranena-dielna-a-chranene-pracovisko.html?page_id=13312" title="Chránené dielne a chránené pracoviská">Chránené dielne a chránené pracoviská</a></li>			
+				</ul>
+				</div>
+				</div>
+			            
+
+      <br class="new_float_line" /> 
+      <br class="new_float_line" />
+       
+	      			<p class="align_center">
+			<a href="https://www.istp.sk" title="Internetový sprievodca trhom práce"><img class="banners" src="/buxus/images/banners/nove_ISPT_168X44.gif" alt="Internetový sprievodca trhom práce" /></a>
+		</p>	
+			<p class="align_center">
+			<a href="http://www.eures.sk" title="EURES"><img class="banners" src="/buxus/images/banners/banner_EURESupraveny1.jpg" alt="EURES" /></a>
+		</p>	
+			<p class="align_center">
+			<a href="https://kariera.zoznam.sk" title="Kariéra - logo"><img class="banners" src="/buxus/images/banners/kariera_-_logo-2.jpg" alt="Kariéra - logo" /></a>
+		</p>	
+			<p class="align_center">
+			<a href="http://www.dobrovolnictvo.com" title="DOBROVOĽNÍCTVO.COM"><img class="banners" src="/buxus/images/banners/banner_dobrovolnictvo_upsvr.jpg" alt="DOBROVOĽNÍCTVO.COM" /></a>
+		</p>	
+	    </div>
+  </div>
+  <div class="invisible"><a name="content_start">Obsah</a></div>  
+  
+  <div id="contentcenter">
+      <div class="top_space">&nbsp;</div>
+                		<div id="navi">
+													<a href="/" title="Hlavná stránka">Hlavná stránka</a>
+																						&gt; <a href="/stranka-neexistuje.html?page_id=13208" title="Stránka neexistuje">Stránka neexistuje</a>
+						
+							
+            
+		</div>
+					      
+	  		  <div class="homepage_sub">	  		  <div class="homepage_side_inner">
+		  	<!--PRINT_THIS_BEGIN-->	      	<h1 class="title">Stránka neexistuje</h1>
+
+
+<p>Daná stránka neexistuje!</p>
+			
+              	      	<!--PRINT_THIS_END-->	      			  		<p class="subpage_print"><strong><a href="Javascript:document.print_form.submit();" title="Tlačiť">Tlačiť</a></strong></p>
+		  			  </div>
+	  </div>
+  </div>  
+  
+    <div id="contentright">
+	<div class="top_space">&nbsp;</div>
+    
+
+            <div class="sidebox3 no-background" style="text-align: center; margin-bottom:8px;">
+                                            <a href="http://www.upsvr.gov.sk/socialne-veci-a-rodina/poskytovanie-pomoci-v-hmotnej-nudzi-nahradneho-vyzivneho-a-statnych-socialnych-davok-v-case-covid-19.html?page_id=1001410" class="" title=""  target="_blank">
+                    <img src="/buxus/images/cache/right_box_ustredie_image/banners/rodicak_stvorec.png" alt="" />
+                </a>
+                    </div>
+                <div class="sidebox3 no-background" style="text-align: center; margin-bottom:8px;">
+                                            <a href="http://www.pomahameludom.sk" class="" title=""  target="_blank">
+                    <img src="/buxus/images/cache/right_box_ustredie_image/banners/pomoc___stvorec.png" alt="" />
+                </a>
+                    </div>
+                <div class="sidebox3 no-background" style="text-align: center; margin-bottom:8px;">
+                                            <a href="http://www.upsvr.gov.sk/socialne-veci-a-rodina/sos-dotacia.html?page_id=1037747" class="target-this" title="SOS Dotácia" >
+                    <img src="/buxus/images/cache/right_box_ustredie_image/banners/maly_banner_2.png" alt="SOS Dotácia" />
+                </a>
+                    </div>
+              					<div class="sidebox3">
+        <div class="boxhead3"><div><h2>Zaujímavé linky</h2></div></div>
+        <div class="boxbody3" id="interesting_links">
+            																				
+																	
+																	
+																	
+																	
+																	
+																	
+									<ul class="interesting_links">
+			<li><a title="Ochrana detí pred násilím" href="https://www.detstvobeznasilia.gov.sk/?target=_blank" >Ochrana detí pred násilím</a></li><li><a title="Národné podnikateľské centrum" href="http://www.npc.sk?target=_blank" >Národné podnikateľské centrum</a></li><li><a title="Pre budúcich podnikateľov - SBA" href="http://www.sbagency.sk?target=_blank" >Pre budúcich podnikateľov - SBA</a></li><li><a title="Ministerstvo práce, sociálnych vecí a rodiny Slovenskej republiky" href="http://www.employment.gov.sk/?target=_blank" >Ministerstvo práce, sociálnych vecí a rodiny Slovenskej republiky</a></li><li><a title="Európsky sociálny fond" href="http://www.esf.gov.sk/?target=_blank" >Európsky sociálny fond</a></li><li><a title="Sociálna poisťovňa" href="http://www.socpoist.sk/?target=_blank" >Sociálna poisťovňa</a></li><li><a title="Elektronické podania na ústredie a úrady práce, sociálnych vecí a rodiny" href="http://www.upsvar.sk/ustredie-psvr/elektronicke-podania-na-ustredie-a-urady-prace-socialnych-veci-a-rodiny.html?page_id=563237&target=_blank" >Elektronické podania na ústredie a úrady práce, sociálnych vecí a rodiny</a></li>			
+			</ul>
+						          <p style="text-align:right"><a href="/buxus/generate_page.php?page_id=1370"><img src="/buxus/images/design/more_button.gif" alt="viac" /></a></p>
+        </div>
+      </div>
+      <br class="new_float_line" />  
+      <br class="new_float_line" />  
+          			
+          								  <div class="sidebox3">
+				        <div class="boxhead3"><div><h2>Skúsenosti a postrehy</h2></div></div>
+				        <div class="boxbody3">
+				          Zasielajte nám vaše námety, skúsenosti a podnety na zlepšenie našej práce
+
+				          <p style="text-align:right"><a href="/skusenosti-a-postrehy.html?page_id=1587"><img src="/buxus/images/design/more_button.gif" alt="viac" /></a></p>
+				        </div>
+				      </div> 
+				      <br class="new_float_line" />  
+				      <br class="new_float_line" />
+          			          			
+          			
+          			
+  </div>
+  
+  <br class="new_float_line" /><!-- without this little <br /> NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+</div>
+
+<div id="footer_out">
+	<div id="footer" >
+	    <div id="footer_menu">
+	      <div class="copyinfo float_left">
+	        Copyright &copy; <strong>Ústredie práce, sociálnych vecí a rodiny</strong><br />
+	      </div>
+	      	      	      								<a href="/vyhlasenie-o-pristupnosti.html?page_id=1641" title="Vyhlásenie o prístupnosti">Vyhlásenie o prístupnosti</a>&nbsp; | &nbsp;									      								<a href="/spravca-obsahu.html?page_id=1642" title="Správca obsahu">Správca obsahu</a>&nbsp; | &nbsp;									      								<a href="/technicky-prevadzkovatel.html?page_id=1643" title="Technický prevádzkovateľ">Technický prevádzkovateľ</a>&nbsp; | &nbsp;									      								<a href="/kontakt.html?page_id=233" title="Kontakt">Kontakt</a>									
+	    </div>
+	    <div class="footer_buxus">
+	        Generuje <a href="http://www.ui42.sk/cms-buxus.html?page_id=63">redakčný systém BUXUS CMS</a> spoločnosti <a href="http://www.ui42.sk/">ui42</a>.
+	    </div>
+	    <div id="footer_foot">
+	      &nbsp;
+	    </div>
+  </div>
+</div>
+
+	<!-- Print page:BEGIN //--> 
+	<!-- print_page_footer_start <sys_print_footer>	<div style="color: #666666;">
+		Generuje <a href="http://www.ui42.sk/cms-buxus.html?page_id=63">redakčný systém BUXUS CMS</a> spoločnosti <a href="http://www.ui42.sk/">ui42</a>.
+	</div>
+	</sys_print_footer> print_page_footer_end -->	<!-- print_page_header_start <sys_print_header>	ÚPSVaR
+	<div style="color: #999999;">https://https://www.upsvr.gov.sk/buxus/generate_page.php?page_id=103774</div>
+	<hr />
+	</sys_print_header> print_page_header_end -->	<form target="_blank" name="print_form" action="/buxus/lib/print_page/print_page.php" method="post" style="height: 0px;">
+	<input type="hidden" name="CONTAINER" value="PRINT_THIS" />
+	<input type="hidden" name="HEAD" value="0" /> 
+	<input type="hidden" name="AUTO_BACK" value="0" /> 
+	<input type="hidden" name="COLORS" value="1" /> 
+	<input type="hidden" name="FOOTERS" value="1" /> 
+	<input type="hidden" name="TITLE_FILE_NAME" value="1" /> 
+	<input type="hidden" name="CHARSET" value="1" /> 
+	<input type="hidden" name="CSS" value="https://www.upsvr.gov.sk/buxus/docs/styles/print_style.css" /> 
+	<input type="hidden" name="FILE" value="https://www.upsvr.gov.sk/buxus/generate_page.php?page_id=103774" />
+	<input type="hidden" name="PRINT_KEY" value="51c7fcb4530f0c2030f13d1bdccf2b0c017109ef" />
+</form>	<!-- Print page:END //-->
+	
+		
+		<!-- Google Analytics:BEGIN //-->
+	
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	_gaq.push(['_setAccount', 'UA-12606461-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+	<!-- Google Analytics:END //-->
+    
+
+ <script type="text/javascript">
+     $(function() {
+         $.cookieBar({
+             'message': 'Táto stránka používa <a href="/cookies-viac-informacii.html?page_id=839618" style="text-decoration: underline;" target="_blank">súbory cookies</a> za účelom poskytnutia čo najvyššej úrovne služieb pre našich návštevníkov. Kliknutím na tlačidlo „Súhlasím“ súhlasíte s ich použitím.',
+             'acceptText': 'Súhlasím',
+             'bottom': true,
+             'fixed': true
+         });
+     });
+ </script>
+
+
+ </body>
+</html>

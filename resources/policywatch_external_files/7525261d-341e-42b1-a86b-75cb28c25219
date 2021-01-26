@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="SHORTCUT ICON" href="/assets/images/favicon.ico">
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<title>Uradni list - Vsebina Uradnega lista</title>
+		<meta name="keywords" content="seminarji, izobraževanja, javna naročila, javno naročanje, javno naročilo, knjiga, knjigarna uradni list, založba uradni list, najem dvorane v ljubljani, obligacijski zakonik, oddaja dvorane, organizacija seminarjev, pravilnik, pravna literatura, pravna založba, pravne knjige, knjiga, pravni učbeniki, predpis, preklici, sodne takse, spletna knjigarna, zakonodaja, stanovanjski zakon, stvarnopravni zakonik, učbeniki za pravo, ul rs, UL, uradni list online, uradni list rs, ustava rs, zakon o delovnih razmerjih, zakon o gospodarskih družbah, zakon o javnem naročanju, zakon o kazenskem postopku, kazenski zakonik, zakon o nepravdnem postopku, zakon o pacientovih pravicah, zakon o prekrških, zakon o prevzemih, zakon o socialno varstvenih prejemkih, zakon o urejanju trga dela, zakon o varstvu potrošnikov, zakon o dedovanju, zakon, zakoni v knjigi, založba uradnega lista, zbirka predpisov, uvod v pravoznanstvo, kako študirati pravo, upravno-procesne dileme, zakon s komentarjem, uvod v pravno zgodovino, rimsko pravo, nujni dediči, gradbeno dovoljenje, državne pomoči, urejanje prostora, materialno kazensko pravo, oporoka, ulfinotok, e-knjiga, e-knjige, družinsko pravo">
+		<meta name="description" content="Uradni list Republike Slovenije">
+		<link href="/assets/stylesheets/main.css" rel="stylesheet" type='text/css'>
+		<link href="/content/multiple-select.css" rel="stylesheet" type='text/css'>
+		<link href="/assets/stylesheets/featherlight.css" rel="stylesheet" type='text/css'>
+		<!--[if lt IE 9]>
+		<link href="/assets/stylesheets/ie8.css" rel="stylesheet" type="text/css"/>
+		<![endif]-->
+		<!--[if lt IE 10]>
+		<link href="/assets/stylesheets/ie9.css" rel="stylesheet" type="text/css"/>
+		<![endif]-->
+		<link href="/assets/stylesheets/tritim.css?v=1.1" rel="stylesheet" type='text/css'>
+		<link href="/assets/stylesheets/ul_segments.css" rel="stylesheet" type='text/css'>
+		<!-- dFlip za PDF -->
+		<link href="/assets/dFlip/css/dflip.min.css" rel="stylesheet" type='text/css'>
+		<link href="/assets/dFlip/css/themify-icons.min.css" rel="stylesheet" type='text/css'>
+		<!--[if lt IE 9]>
+		<script src="/assets/javascripts/vendor/html5shiv.js"></script>
+		<script src="/assets/javascripts/vendor/respond.js"></script>
+		<![endif]-->
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+		<script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+		<script src="/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+		
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	
+	<body class="natural-person-div">
+
+<!-- Header with navigation-->
+<header class="hidden-print">
+
+    <nav class="navbar  navbar-default">
+      <div class="container  inner">
+        <div class="navbar-header">
+          <a href="/" class="navbar-left  logo">
+            <img src="/assets/images/logo_brand.svg" alt="Uradni list" title="Uradni list" class="logo__img" />
+          </a>
+        </div>
+
+        <ul class="nav  navbar-nav  navbar-right  primary-nav">
+          <li class="nav_hide" id="toggle_search">
+            <a href="#" class="primary-nav__link">
+              <span class="hidden-xs">Išči</span><img src="/assets/images/icon_search.svg" alt="" class="icon  icon--default  icon--menu-search" />
+            </a>
+        	</li>
+         	
+			<li class="nav_hide" id="toggle_login">
+				<a href="#" class="primary-nav__link">
+					<span class="hidden-xs">Prijava</span><img src="/assets/images/icon_user.svg" alt="" class="icon  icon--default  icon--menu-user" />
+				</a>
+			</li>
+			
+          <li class="nav_hide">
+            <img src="/assets/images/icon_vertical_divider.svg" alt="" class="icon  icon--vertical  hidden-xs" />
+          </li>
+          <li id="toggle_menu">
+            <a href="#" class="primary-nav__link">
+              <span class="hidden-xs  nav_hide">Meni</span>
+              <span class="img-menu-close"></span>
+            </a>
+          </li>
+        </ul>
+		<div class="clearfix"></div>
+        
+<div>
+	<ul class="nav  navbar-nav  navbar-right  primary-nav  js-nav-all">
+		
+		<li class="hidden ">
+			<a title="Domov" alt="Domov" href="/domov" target="" class="primary-nav__link">Domov</a>
+		</li>
+		
+		<li class="hidden active">
+			<a title="Glasilo Uradni list RS" alt="Glasilo Uradni list RS" href="/glasilo-uradni-list-rs" target="" class="primary-nav__link">Glasilo Uradni list RS</a>
+		</li>
+		
+		<li class="hidden ">
+			<a title="Izobraževanja" alt="Izobraževanja" href="/izobrazevanja" target="" class="primary-nav__link">Izobraževanja</a>
+		</li>
+		
+		<li class="hidden ">
+			<a title="Knjigarna" alt="Knjigarna" href="/knjigarna" target="" class="primary-nav__link">Knjigarna</a>
+		</li>
+		
+		<li class="hidden ">
+			<a title="UL info tok" alt="UL info tok" href="/ul-info-tok" target="_blank" class="primary-nav__link">UL info tok</a>
+		</li>
+		
+		<li class="hidden ">
+			<a title="Novice" alt="Novice" href="/novice" target="" class="primary-nav__link">Novice</a>
+		</li>
+		
+		<li class="hidden ">
+			<a title="Kontakt" alt="Kontakt" href="/kontakt" target="" class="primary-nav__link">Kontakt</a>
+		</li>
+		
+	</ul>
+</div>
+
+
+<div class="menu-cart" style="text-align:center;">
+	<center>Vaša košarica je prazna.</center>
+</div>
+
+<div id="divLogin">
+	<form class="form-inline  js-nav-login" id="frmLogin" action="/data/login" onsubmit="return false;">
+		
+		<div class="hidden  nav-login__item">
+			<input class="form-control  input--inverted  " data-val="true" data-val-required=" " id="UserName" name="UserName" placeholder="E-naslov" tabindex="1" type="text" value="" />
+			<input id="cn" name="cn" type="hidden" value="MENI-PRIJAVA" />
+			<a href="/knjigarna/registracija-uporabnika" class="understated">Registriraj se</a>
+		</div>
+		<div class="hidden  nav-login__item">
+			<input class="form-control  input--inverted" data-val="true" data-val-required=" " id="Password" name="Password" placeholder="Geslo" tabindex="2" type="password" value="" />
+			<a href="/knjigarna/racun/pozabljeno-geslo" class="understated">Pozabil sem geslo</a>
+		</div>
+		<button type="submit" class="btn  btn--brand-primary  btn--xs  hidden  nav-login__item" onclick="site.custom.login(); return false;" tabindex="3">Prijava</button>
+	</form>
+</div>
+
+<div>
+	<form id="frmQueryContent" class="form-inline  js-nav-search">
+		<div class="hidden  nav-search__item  input-group">
+			<input type="text" class="form-control  input--inverted" id="QueryContent" placeholder="Išči" aria-describedby="search_addon"/>
+			<span class="input-group-btn">
+				<button class="btn  btn--brand-primary  btn--search" type="submit">
+					<img src="/assets/images/icon_search_white.svg" alt="" class="icon  icon--search" />
+				</button>
+			</span>
+		</div>
+	</form>
+</div>
+
+
+<div class="menu-cart" style="text-align:center;">
+	<center>Vaša košarica je prazna.</center>
+</div>
+
+      </div>
+    </nav>
+	
+  <!-- Fixed social bar -->
+  <div class="social  hidden-xs">
+    <a href="/podjetje/kontakt" class="social-item">
+      <div class="social-item__mail"></div>
+    </a>
+    <a href="https://www.facebook.com/pages/Uradni-list-Republike-Slovenije-doo/151838598171829" target="blank" class="social-item">
+      <div class="social-item__fb"></div>
+    </a>
+	<a href="https://www.instagram.com/uradnilist/" target="blank" class="social-item">
+		<div class="social-item__ig"></div>
+	</a>
+    <a href="https://www.linkedin.com/company/uradni-list-republike-slovenije-d-o-o-" target="blank" class="social-item">
+      <div class="social-item__linkedin"></div>
+    </a>
+    <a href="https://twitter.com/Uradni_list_RS" target="blank" class="social-item">
+      <div class="social-item__twitter"></div>
+    </a>
+	<a href="https://www.youtube.com/channel/UCuDqbE1-LE-HuE-IIlXVvfA" target="blank" class="social-item">
+		<div class="social-item__youtube"></div>
+	</a>
+  </div>
+
+<!-- ID: 2: Meni > Podmeni -->
+<nav id="menu" class="navbar  navbar--secondary">
+	<div class="container">
+		<div id="sticky_logo_wrap" class="navbar-header" hidden>
+    		<a href="/" class="navbar-left  logo  logo--sticky">
+        		<img src="/assets/images/logo_brand.svg" alt="Uradni list" title="Uradni list" class="logo__img" />
+			</a>
+		</div>
+		<div class="navbar-header navbar-header--secondary">
+			<a href="#" class="navbar-left">
+				
+				<a href="/glasilo-uradni-list-rs" class="navbar-left">
+					<h1 class="nav-title drop-cap"><span class="drop-cap">GLASILO URADNI LIST RS</span></h1>
+				</a>
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right secondary-nav">
+			
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false" >
+						Glasilo Uradni list RS
+						<span class="nav-icon  nav-icon--arrow-down"></span>
+					</a>
+					<ul class="dropdown-menu">
+						
+								<li class=""><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/kako-objaviti">Kako objaviti</a></li>
+							
+								<li class=""><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/cenik-objav">Cenik objav</a></li>
+							
+								<li class=""><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/naroci-tiskano-izdajo">Naroči tiskano izdajo</a></li>
+							
+								<li class=""><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/o-glasilu">O glasilu</a></li>
+							
+					</ul>
+				</li>
+				
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false" >
+						Preklic dokumentov
+						<span class="nav-icon  nav-icon--arrow-down"></span>
+					</a>
+					<ul class="dropdown-menu">
+						
+								<li class=""><a href="/glasilo-uradni-list-rs/preklic-dokumentov/obrazci-za-preklic">Obrazci za preklic</a></li>
+							
+								<li class=""><a href="/glasilo-uradni-list-rs/preklic-dokumentov/kako-preklicati-dokument">Kako preklicati dokument</a></li>
+							
+					</ul>
+				</li>
+				
+		</ul>
+	</div>
+</nav>
+
+</header>
+
+<div class="masthead  masthead--ul-issue hidden-print">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>
+					<img src="/assets/images/img_uradni_list_sm.svg" alt="Uradni list" title="Uradni list" class="masthead__img  masthead__img--ul-issue" />
+				</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="slider-nav">
+				</div>
+				<div class="slider  slider--ul-issue  slider_ul_issue">
+					<div class="slider-item--ul-issue">
+						<div class="slider-item--ul-issue__header">Številka 25</div>
+					</div>
+				</div>
+				<div class="slider  slider--ul-issue-text  slider_ul_issue_text">
+					<div class="slider-item--ul-issue-text">
+						<div class="slider-item--ul-issue-text__content">Uradni list RS, št. 25/2020 z dne 15. 3. 2020</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="js-scroll-anchor"></div>
+<div class="container hidden-print">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="ul-issue-parts">
+				
+				<a href="/_pdf/2020/Ur/u2020025.pdf" class="ul-issue-part" target="blank">
+					<div class="icon--uredbeni"></div>
+				</a>
+				
+					<div class="ul-issue-part icon--razglasni disabled"></div>
+				
+					<div class="ul-issue-part icon--mednarodni  disabled"></div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div class="carousel-inner" id="myCarouselItem">
+		
+	</div>
+</div>
+
+<input type="hidden" id="Sop" value="2020-01-0569" />
+<input type="hidden" id="Type" value="S" />
+<div data-event="init" data-event-param="ulvsebina" class="hidden-print"></div>
+<div class="block  block--ul-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<img src="/assets/images/logo_brand.svg" alt="Uradni list" title="Uradni list" class="logo-img-print  visible-print-block">
+				<h2 class="h5 ul-content-title visible-print-block">Uradni list RS, št. 25/2020 z dne 15. 3. 2020</h2>
+				<div class="ul-content-container">
+					<div class="row hidden-print">
+						<div class="col-sm-12  clearfix">
+							<!--<a href="javascript:history.back()" class="btn  btn--brand-primary  btn--sm  pull-left">Nazaj</a>-->
+							
+								<a href="/glasilo-uradni-list-rs/celotno-kazalo/202025" class="btn  btn--brand-primary  btn--xs  pull-left" alt="Nazaj na kazalo" title="Nazaj na kazalo"><span class="glyphicon glyphicon-menu-left smaller"></span> Kazalo</a>
+							
+							<button alt="Natisni" title="Natisni" type="button" name="button" class="btn  btn--brand-primary  btn--sm  btn--print  pull-right">
+								<span class="glyphicon glyphicon-print"></span>
+							</button>			
+							<button alt="Kopiraj povezavo" title="Kopiraj povezavo" type="button" name="button" class="btn  btn--brand-primary--inverted  btn--xs  pull-right  hidden-print hidden-xs" id="copyBtn">
+								Kopiraj povezavo
+							</button>
+							
+								<input type="hidden" value="142269" id="segmentID" />
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<hr>
+							
+							<h2 class="h5 ul-content-title pull-left">569. Odlok o razporejanju zdravnikov brez licence, stran 1748.</h2>
+							
+						</div>
+					</div>
+					<div class="row" id="divSection">
+						<div class="col-sm-12">
+							<div class="content-segments">
+								<a name="content-top"></a>
+								
+								<div class="esegment_px">			
+									<table class="ttable"><tr><td> </td><td> </td></tr></table>
+								</div>
+								
+								<div class="esegment_px">			
+									Na podlagi 2. člena in osmega odstavka 20. člena Zakona o Vladi Republike Slovenije (Uradni list RS, št. 24/05 – uradno prečiščeno besedilo, 109/08, 38/10 – ZUKN, 8/12, 21/13, 47/13 – ZDU-1G, 65/14 in 55/17) ter v zvezi s 1. in 3. točko prvega odstavka 37. člena Zakona o nalezljivih boleznih (Uradni list RS, št. 33/06 – uradno prečiščeno besedilo) Vlada Republike Slovenije izdaja
+								</div>
+								
+								<div class="esegment_tx">			
+									<div style="text-align: center;">O D L O K </div>
+								</div>
+								
+								<div class="esegment_tx">			
+									<div style="text-align: center;">o razporejanju zdravnikov brez licence </div>
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">1. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									S tem odlokom se določi način vključitve zdravnikov sekundarijev in specializantov (v nadaljnjem besedilu: zdravniki brez licence) v izvajanje ukrepov za preprečevanje, obvladovanje in odstranjevanje posledic epidemije nalezljive bolezni COVID-19.
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">2. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									(1) Vsem zdravnikom specializantom se neposredno na podlagi tega odloka specializacija prekine in se za čas trajanja ukrepov iz tega odloka zadržijo vse obveznosti specializantov iz specializacije (kroženje, opravljanje specialističnih izpitov in podobno).
+								</div>
+								
+								<div class="esegment_px">			
+									(2) Za čas trajanja ukrepov iz tega odloka se prekinejo vsi postopki razpisovanja novih specializacij.
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">3. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									(1) Zdravnike specializante lahko za potrebe izvajanja ukrepov iz 1. člena tega odloka pozovejo na delo njihovi delodajalci.
+								</div>
+								
+								<div class="esegment_px">			
+									(2) Če zdravnikov specializantov ne pozovejo na delo njihovi delodajalci, jih lahko pozovejo na delo zdravstveni zavodi, pri katerih so zdravniki specializanti na kroženju.
+								</div>
+								
+								<div class="esegment_px">			
+									(3) Če zdravnika specializanta ne pozove na delo niti njegov delodajalec niti zdravstveni zavod iz prejšnjega odstavka, ga njegov delodajalec razporedi na delovno mesto, kjer je zaradi izvajanja ukrepov iz 1. člena tega odloka potreben.
+								</div>
+								
+								<div class="esegment_px">			
+									(4) Za potrebe tega odloka je delodajalec tisti zdravstveni zavod, s katerim ima zdravnik specializant sklenjeno pogodbo o zaposlitvi.
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">4. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									(1) Neposredno na podlagi tega odloka se za čas trajanja ukrepov iz tega odloka podaljšata obvezni in izbirni del sekundariata iz 14. člena Zakona o zdravniški službi<span style="font-weight: bold; "></span>(Uradni list RS, št. 72/06 – uradno prečiščeno besedilo, 15/08 – ZPacP, 58/08, 107/10 – ZPPKZ, 40/12 – ZUJF, 88/16 – ZdZPZD, 40/17, 64/17 – ZZDej-K, 49/18 in 66/19).
+								</div>
+								
+								<div class="esegment_px">			
+									(2) Vsem zdravnikom sekundarijem se za čas veljave ukrepov iz tega odloka zadržijo vse obveznosti iz sekundariata in se jih pozove na delo glede na potrebe izvajanja ukrepov iz 1. člena tega odloka.
+								</div>
+								
+								<div class="esegment_px">			
+									(3) Zdravnike sekundarije v skladu s prejšnjim odstavkom pozovejo na delo pooblaščeni izvajalci iz 22. člena Zakona o zdravniški službi, pri katerih opravljajo sekundariat.
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">5. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									Zdravniki brez licence opravljajo delo na podlagi tega odloka pod nadzorom in odgovornostjo neposrednega mentorja, ki jim ga določi delodajalec oziroma pooblaščeni izvajalec iz 3. oziroma 4. člena tega odloka, pri katerem opravljajo delo.
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">6. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									(1) Vse pogodbe o zaposlitvi zdravnikov brez licence, veljavne ob uveljavitvi tega odloka, ostanejo v veljavi za čas trajanja ukrepov iz tega odloka.
+								</div>
+								
+								<div class="esegment_px">			
+									(2) Glede plačila dela zdravnikov brez licence in financiranja njihovega dela se uporabijo pogodbe o zaposlitvi iz prejšnjega odstavka.
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">7. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									Omejitve iz tega odloka veljajo do prenehanja razlogov zanje, kar ugotovi Vlada Republike Slovenije s sklepom, ki ga objavi v Uradnem listu Republike Slovenije.
+								</div>
+								
+									<div class="esegment_h4x">
+										<div style="text-align: center;">8. člen </div>
+									</div>
+								
+								<div class="esegment_px">			
+									Ta odlok začne veljati 15. marca ob 19.00 uri.
+								</div>
+								
+								<div class="esegment_c1x">			
+									Št. 00725-7/2020
+								</div>
+								
+								<div class="esegment_c1x">			
+									Ljubljana, dne 15. marca 2020
+								</div>
+								
+								<div class="esegment_c1x">			
+									EVA 2020-2711-0025
+								</div>
+								
+								<div class="esegment_p1x">			
+									<div style="text-align: center;">Vlada Republike Slovenije </div>
+								</div>
+								
+								<div class="esegment_p1x">			
+									<div style="text-align: center;font-weight: bold; ">Janez Janša </div>
+								</div>
+								
+								<div class="esegment_p1x">			
+									<div style="text-align: center;">predsednik </div>
+								</div>
+								
+							</div>
+							<hr>
+						</div>
+					</div>
+					<div class="row hidden-print">
+						<div class="col-sm-12  clearfix">
+							
+								<a href="/glasilo-uradni-list-rs/celotno-kazalo/202025" class="btn  btn--brand-primary  btn--xs  pull-left"><span class="glyphicon glyphicon-menu-left smaller"></span> Kazalo</a>
+							
+							<a class="btn  btn--brand-primary  btn--brand-primary--inverted  btn--sm  btn--up  pull-right" href="#top">Na vrh</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer with subscribe form and site links -->
+<footer class="hidden-print">
+
+<!-- ID: 8; Novice > Prijavna forma na e-novice > Noga e-novice - prijava -->
+<div class="block--narrow  block--subscribe">
+	<a name="prijava-na-e-novice"></a>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12  text-center">
+				<div class="subscribe-text">
+					<span class="semi-bold">Bodite obveščeni</span> o vseh naših novostih, akcijah in dogodkih.
+				</div>
+			</div>
+		</div>
+		<div class="row" id="divRegistrationSuccess">
+			<div class="col-sm-12 text-center">
+				<form class="form-inline  subscribe" id="frmSubscribeEmail" method="post">
+					<input type="hidden" name="GroupCode" value="NOVICE" />
+					<input type="email" class="form-control input-lg subscribe__email" id="subscribeEmail" name="Email" placeholder="E-poštni naslov" tabindex="10">
+					<button type="button" id="buttonSubscribe" name="button" class="btn  btn--accent  subscribe__button" onclick="javascript:site.custom.subscribeEmailTo('/e-bilten/prijava-na-enovice');return false;" tabindex="11" disabled>PRIJAVA</button>
+					<br />
+					<br /> 
+					<label class="control-label">
+						<input type="checkbox" id="Agree" value="Subscribe" onclick="Subscribe()">
+						<span class="checkbox-sec"><a href="/podjetje/pravna-obvestila" target="blank">Strinjam se s splošnimi pogoji.</a> *</span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ID: 163; Pasice > Zlata odličnost - mobile -->
+<div class="row block--narrow block--background text-center hidden-lg">
+	<div class="">
+		<img src="/assets/images/aaa-zlata-odlicnost.svg" border="0" alt="AAA Zlata odličnost" title="AAA Zlata odličnost" />
+	</div>
+</div>
+
+<div class="footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6  col-sm-2">
+				<div class="footer-links-header">Glasilo <br>Uradni list RS
+				</div>
+				<ul class="footer-links-list">
+					<li  ><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/o-glasilu">O glasilu</a></li>
+					<li  ><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/kako-objaviti">Kako objaviti v glasilu</a></li>
+					<li  ><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/cenik-objav">Cenik objav</a></li>
+					<li><a href="/glasilo-uradni-list-rs/preklic-dokumentov/kako-preklicati-dokument">Preklici dokumentov</a></li>
+					<li><a href="/glasilo-uradni-list-rs/glasilo-uradni-list-rs/naroci-tiskano-izdajo">Naroči tiskano izdajo</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6  col-sm-2">
+				<div class="footer-links-header">Izobraževanja</div>
+				<ul class="footer-links-list">
+					<li><a href="/izobrazevanja">Aktualna izobraževanja</a></li>
+					<li><a href="/izobrazevanja/izobrazevanja-po-meri">Izobraževanja po meri</a></li>
+					<li><a href="/izobrazevanja/moznost-najema-dvorane/o-dvorani">Najem dvorane</a></li>
+				</ul>
+			</div>
+			<div class="clearfix visible-xs-block"></div>
+
+			<div class="col-xs-6  col-sm-2">
+				<div class="footer-links-header">Knjigarna</div>
+				<ul class="footer-links-list">
+					<li><a href="/knjigarna/novo">Novo v ponudbi</a></li>
+					<li><a href="/knjigarna/e-knjige">E-knjige</a></li>
+					<li><a href="/knjigarna/kako-nakupovati-v-knjigarni">Kako nakupovati v spletni knjigarni</a></li>
+					<li><a href="/knjigarna/knjizni-katalog" target="blank">Knjižni katalog</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6  col-sm-2">
+				<div class="footer-links-header">UL info tok</div>
+				<ul class="footer-links-list">
+					<li><a href="http://www.ulinfotok.si/index.php/o-storitvi" target="blank">O storitvi</a></li>
+					<li><a href="http://www.ulinfotok.si/index.php/registracija" target="blank">Preizkusi brezplačno</a></li>
+				</ul>
+			</div>
+			<div class="clearfix visible-xs-block"></div>
+			<!--
+			<div class="col-xs-6  col-sm-2">
+				<div class="footer-links-header">e-bilten</div>
+				<ul class="footer-links-list">
+					<li><a href="/e-bilten/najbolj-brano">Aktualni članki</a></li>
+					<li><a href="/e-bilten/naroci-se-na-ebilten">Naroči se na e-bilten</a></li>
+				</ul>
+			</div>
+			-->
+			<div class="col-xs-6  col-sm-2">
+				<div class="footer-links-header">Novice</div>
+				<ul class="footer-links-list">
+					<li><a href="/novice">Aktualni članki</a></li>
+					<li><a href="/#prijava-na-e-novice">Naroči se na novice</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6  col-sm-2">
+				<div class="footer-links-header">Podjetje</div>
+				<ul class="footer-links-list">
+					<li><a href="/podjetje/uradni-list-rs">O podjetju</a> | <a href="/podjetje/about-uradni-list">About <img src="/assets/images/icon_en.png" class="icon--lang-en" /></a></li>
+					<li><a href="/podjetje/kontakt">Kontakt</a></li>
+					<li><a href="/podjetje/informacije-javnega-znacaja" target="blank">Informacije javnega značaja</a></li>
+					<!--<li><a href="/data/File/informacije javnega znacaja/IJZ april 2017.pdf" target="blank">Informacije javnega značaja</a></li>-->
+					<li><a href="/podjetje/oglasevanje">Oglaševanje</a></li>
+					<li><a href="http://www.rpls.si/"target="blank">Register lokalnih predpisov</a></li>
+                    <li><a href="http://www.enarocanje.si/" target="blank">Portal javnih naročil</a></li>
+                    <li><a href="/izobrazevanja/aktualna-izobrazevanja/splosni-pogoji">Splošni pogoji</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer-disclaimer"  >
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="hr"></div>
+			</div>
+		</div>
+
+		<!-- Social bar mobile -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="social--mobile  visible-xs">
+					<div class="">
+						<a href="#" class="social-item  social-item--mobile">
+							<div class="social-item__mail"></div>
+						</a>
+						<a href="#" class="social-item  social-item--mobile">
+							<div class="social-item__fb"></div>
+						</a>
+						<a href="#" class="social-item  social-item--mobile">
+							<div class="social-item__google"></div>
+						</a>
+						<a href="#" class="social-item  social-item--mobile">
+							<div class="social-item__linkedin"></div>
+						</a>
+						<a href="#" class="social-item  social-item--mobile">
+							<div class="social-item__twitter"></div>
+						</a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row"  >
+			<div class="col-sm-6  footer-disclaimer__note">
+				<span>Uradni list d.o.o. Vse pravice pridržane.</span>
+			</div>
+			<div class="col-sm-6  footer-disclaimer__links">
+				<a href="/podjetje/pravna-obvestila">Pravna obvestila</a>  / 
+				<a href="/podjetje/piskotki">Piškotki</a>  / 
+				Avtorji: <a href="http://www.tritim.si" target="blank">TriTim spletna agencija</a> v sodelovanju z 2Mobile
+			</div>
+		</div>
+	</div>
+</div>
+
+</footer>
+
+	<div id="outdated"></div>
+	
+<!-- ID: 162; Pasice > Zlata odličnost -->
+<div class="sticky-badge visible-lg visible-xl"><img src="/assets/images/aaa-zlata-odlicnost.svg" border="0" alt="AAA Zlata odličnost" title="AAA Zlata odličnost" /></div>
+
+
+	<div class="cookies-container" id="cookie-panel" style="display:none;">
+		<div class="cookies-text">
+			Za izboljšanje uporabniške izkušnje ta spletna stran uporablja piškotke. Poleg piškotkov,
+			ki zagotavljajo funkcionalnost spletne strani, uporabljamo tudi piškotke
+			za potrebe spletne analitike in integracijo socialnih omrežij.
+		</div>
+		<a id="AllowCookiesYes" href="javascript:AllowCookies();" class="btn  btn--xs  btn--white-secondary">V REDU</a>
+		<div class="cookies-carret">
+
+		</div>
+	</div>
+
+	<!-- Plugins -->
+	<script src="/assets/javascripts/vendor/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/vendor/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/vendor/slick.min.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/vendor/svgeezy.min.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/vendor/jquery.waypoints.min.js"></script>
+	<script src="/assets/javascripts/vendor/jquery.counterup.min.js"></script>
+	<script src="/scripts/multipleSelect/multiple-select.js"></script>
+	<script src="/assets/javascripts/vendor/bootstrap-rating.min.js"></script>
+	<script src="/assets/javascripts/vendor/featherlight.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/vendor/jquery.placeholder.min.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/vendor/readmore.min.js" type="text/javascript"></script>
+
+	<!--[if lt IE 9]>
+	<script src="/assets/javascripts/vendor/outdatedbrowser/outdatedbrowser.js"></script>
+
+	<script type="text/javascript">
+	$( document ).ready(function() {
+		outdatedBrowser({
+			bgColor: '#faa61a',
+			color: '#ffffff',
+			lowerThan: 'IE9',
+			languagePath: '/assets/javascripts/vendor/outdatedbrowser/lang/sl.html'
+		})
+	})
+	</script>
+	<![endif]-->
+
+	<!--[if gte IE 9]><!-->
+	<script src="/assets/javascripts/vendor/salvattore.min.js"></script>
+	<!--<![endif]-->
+
+	<!-- Page related -->
+	<script src="/assets/javascripts/global.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/sticky.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/ul.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/home.js" type="text/javascript"></script>
+    <script src="/assets/javascripts/cart.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/counter.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/archive.js" type="text/javascript"></script>
+	<script src="/assets/javascripts/bookstore.js" type="text/javascript"></script>
+	
+  	  <script src="/assets/javascripts/cookie.js" type="text/javascript"></script>
+    
+    <script src="/Scripts/site/main.js" type="text/javascript"></script>
+	<script src="/scripts/clipboard/clipboard.min.js"></script>
+	<!-- dFlip za PDF -->
+	<script src="/assets/dFlip/js/dflip.js" type="text/javascript"></script>
+</body>
+</html>

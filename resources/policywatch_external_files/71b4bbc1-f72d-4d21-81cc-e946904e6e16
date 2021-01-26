@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html >
+<html lang="en" dir="ltr" class="ms-isBot">
+    <head><meta http-equiv="X-UA-Compatible" content="ie=edge" /><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" /><title>
+	
+	NPP_COVID_mjere
+
+</title>
+        <link id="CssLink-8b8d2b50a3754db792ddd8b047ef8ab3" rel="stylesheet" type="text/css" href="/Style%20Library/hr-HR/Core%20Styles/page-layouts-21.css"/>
+<link id="CssLink-56d1aa59794449508aa7f1b6f1e0a0ae" rel="stylesheet" type="text/css" href="/Style%20Library/hr-HR/Core%20Styles/rca.css"/>
+<link id="CssLink-dd46fae44ae646d6bc58a01ccb7804e9" rel="stylesheet" type="text/css" href="/_layouts/15/1050/styles/Themable/corev15.css?rev=ExdtPY2hK%2Be4tn3Me7%2BKLg%3D%3DTAG0"/>
+<style id="SPThemeHideForms" type="text/css">body {opacity:0 !important}</style>
+        <script type="text/javascript">// <![CDATA[ 
+
+var g_SPOffSwitches={};
+// ]]>
+</script>
+<script type="text/javascript" src="/_layouts/15/1050/initstrings.js?rev=KfYaPUB56JkAgBw1wQ86eg%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/init.js?rev=mRtsHqz13SZj8niMKz3maw%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/theming.js?rev=SuLUbbwTXcxFWOWLFUsOkw%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/in2.vuk.sp.grouplistview/scripts/tools.js"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=N8Rto0qjhCaFQqeRHUy3dTSu3UHEbWi2uXgY2n3ukcEsDqJoW_k8KYegLAVVUwc4HWNBO0hU5HSYQu9k4e680e7UVeuyNDLRvkJx3JzSJ6SLnsiqe2xS8GB-io0ywCiKyGqkAsjk_Pfsjz2UN7qJP6T6Tki8IbiIcVu5n7qpXCjWsFROT4QxEFc-T4o83TFk0&amp;t=ffffffffcd368728"></script>
+<script type="text/javascript" src="/_layouts/15/blank.js?rev=RsBr7DKjw8TmwdHsbfMTsA%3D%3DTAG0"></script>
+<script type="text/javascript">RegisterSod("require.js", "\u002f_layouts\u002f15\u002frequire.js?rev=bv3fWJhk0uFGpVwBxnZKNQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("strings.js", "\u002f_layouts\u002f15\u002f1050\u002fstrings.js?rev=qwXr1RCUI9mBTZzt44UkmA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002f15\u002f1050\u002fsp.res.js?rev=KWXTmwFtU2iqyvvm\u00252B8w0Kw\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002f15\u002fsp.runtime.js?rev=KDqnNax0Gvj9LaSUA8bKCw\u00253D\u00253DTAG0");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002f15\u002fsp.js?rev=sLWVixyRuRv08OBrvbajSg\u00253D\u00253DTAG0");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "\u002f_layouts\u002f15\u002fsp.init.js?rev=NC0FsaTsGxvI\u00252BILHpWoehQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002f15\u002fsp.ui.dialog.js?rev=eWjkPNP8kwPwCeMnoBvKeQ\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f15\u002fcore.js?rev=kLZ7Mql2ynDXaJA5nGSKgA\u00253D\u00253DTAG0");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "\u002f_layouts\u002f15\u002fmenu.js?rev=LOWEx\u00252FFTBGW2THaKdEc1zA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "\u002f_layouts\u002f15\u002fmquery.js?rev=C6JyhR2CdoQSjtM8wbEYfA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("callout.js", "\u002f_layouts\u002f15\u002fcallout.js?rev=baA5VfAy8jUNFXZm35E9kQ\u00253D\u00253DTAG0");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002f15\u002fsp.core.js?rev=nTb4aS7R9NVtLkYoMTrJOQ\u00253D\u00253DTAG0");RegisterSodDep("sp.core.js", "strings.js");RegisterSodDep("sp.core.js", "sp.init.js");RegisterSodDep("sp.core.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.strings.js", "\u002f_layouts\u002f15\u002f1050\u002fsharedhovercard.strings.js?rev=n\u00252FFj53YySSrxiKA\u00252BVoxzMQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.js", "\u002f_layouts\u002f15\u002fsharedhovercard.js?rev=uB89up9szoXj8bAMKPkPSg\u00253D\u00253DTAG0");RegisterSodDep("sharedhovercard.js", "sharedhovercard.strings.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "\u002f_layouts\u002f15\u002fclienttemplates.js?rev=\u00252BCEqgEUB\u00252Fmi4Ww1SWy76Fg\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "\u002f_layouts\u002f15\u002fsharing.js?rev=b3O7p\u00252F\u00252BJvJEztBhmyEUxDQ\u00253D\u00253DTAG0");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "\u002f_layouts\u002f15\u002fsuitelinks.js?rev=EyM1KS\u00252Bs8c\u00252F4QbuUffZaCw\u00253D\u00253DTAG0");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clientrenderer.js", "\u002f_layouts\u002f15\u002fclientrenderer.js?rev=Pd1Ymr7IGNWfd88Z\u00252FFD9hg\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("srch.resources.resx", "\u002f_layouts\u002f15\u002f1050\u002fsrch.resources.js?rev=Ld89DdT5G7v0N7sfg3JDIA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("search.clientcontrols.js", "\u002f_layouts\u002f15\u002fsearch.clientcontrols.js?rev=\u00252F89tMtdSpr3\u00252F9F\u00252Fs18XDew\u00253D\u00253DTAG0");RegisterSodDep("search.clientcontrols.js", "sp.init.js");RegisterSodDep("search.clientcontrols.js", "clientrenderer.js");RegisterSodDep("search.clientcontrols.js", "srch.resources.resx");</script>
+<script type="text/javascript">RegisterSod("userprofile", "\u002f_layouts\u002f15\u002fsp.userprofiles.js?rev=J0M1pzLkfDXcJflabMvTYA\u00253D\u00253DTAG0");RegisterSodDep("userprofile", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("followingcommon.js", "\u002f_layouts\u002f15\u002ffollowingcommon.js?rev=zBMGKc4Gy\u00252FYM\u00252FmjE\u00252BM67wQ\u00253D\u00253DTAG0");RegisterSodDep("followingcommon.js", "strings.js");RegisterSodDep("followingcommon.js", "sp.js");RegisterSodDep("followingcommon.js", "userprofile");RegisterSodDep("followingcommon.js", "core.js");RegisterSodDep("followingcommon.js", "mQuery.js");</script>
+<script type="text/javascript">RegisterSod("profilebrowserscriptres.resx", "\u002f_layouts\u002f15\u002f1050\u002fprofilebrowserscriptres.js?rev=6MkBeS\u00252BIbxwhRgrFoIdKvA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitecommon.js", "\u002f_layouts\u002f15\u002fsp.ui.mysitecommon.js?rev=wZNFXexnidiRwi\u00252FlgMXmNw\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.mysitecommon.js", "sp.init.js");RegisterSodDep("sp.ui.mysitecommon.js", "sp.runtime.js");RegisterSodDep("sp.ui.mysitecommon.js", "userprofile");RegisterSodDep("sp.ui.mysitecommon.js", "profilebrowserscriptres.resx");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f15\u002fnon_ie.js?rev=EHdHmJG4BBUGmCH1tXHmIQ\u00253D\u00253DTAG0");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002f15\u002finplview.js?rev=OM9\u00252FcPJVXjpJ\u00252BrMaoBi2Aw\u00253D\u00253DTAG0");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "clienttemplates.js");RegisterSodDep("inplview", "sp.js");</script>
+<link type="text/xml" rel="alternate" href="/_vti_bin/spsdisco.aspx" />
+            
+	
+	
+			
+			
+		
+	
+	
+
+            <!-- _lcid="1033" _version="16.0.10350" _dal="1" -->
+<!-- _LocalBinding -->
+
+<link rel="canonical" href="https://porezna-uprava.hr:443/Stranice/NPP_COVID_mjere.aspx" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+            
+            
+        <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+         <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/jquery.min.js?v=1">//<![CDATA[
+                //]]></script>                
+                <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/bootstrap.min.js?v=1">//<![CDATA[
+                //]]></script>
+                <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/popper.min.js?v=1">//<![CDATA[
+                //]]></script>
+                <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/flickity.pkgd.min.js?v=1">//<![CDATA[                
+                //]]></script>
+        <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/jquery.tools.min.js?v=1">//<![CDATA[                
+                //]]></script>
+        <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/jquery.SPServices-0.7.2.min.js?v=1">//<![CDATA[                
+                //]]></script>
+         <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/jquery-ui-1.8.23.custom.min.js?v=1">//<![CDATA[                
+                //]]></script>
+        
+
+        
+        <link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/fonts.css" /><link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/bootstrap.css?v=1" /><link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/default-font.css?v=2" /><link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/styles.css?v=30" /><link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/spStyles.css?v=12" /><link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/custom.css?v=1" /><link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/flickity.min.css?v=1" /><link rel="stylesheet" href="/_layouts/15/In2.Vuk2019.Sp.Master/css/jquery-ui-1.8.23.custom.css?v=1" /><link rel="shortcut icon" href="/_layouts/15/In2.Vuk2019.Sp.Master/assets/icons/favicon.ico" type="image/vnd.microsoft.icon" />
+
+        <!--Google analytics-->
+    <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-67495727-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    </head>
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><div id="imgPrefetch" style="display:none">
+<img src="/_layouts/15/images/spcommon.png?rev=43" />
+</div>
+<form method="post" action="./NPP_COVID_mjere.aspx" id="aspnetForm">
+<input type="hidden" name="_wpcmWpid" id="_wpcmWpid" value="" />
+<input type="hidden" name="wpcmVal" id="wpcmVal" value="" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="noDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIBD2QWBgIBD2QWBAIGD2QWAmYPZBYCAgEPFgIeE1ByZXZpb3VzQ29udHJvbE1vZGULKYgBTWljcm9zb2Z0LlNoYXJlUG9pbnQuV2ViQ29udHJvbHMuU1BDb250cm9sTW9kZSwgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTYuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YwFkAhIPZBYEAgEPZBYCAgcPFgIfAAsrBAFkAgMPZBYCAgEPZBYCZg88KwAGAGQCBQ9kFgQCBg9kFgICAg9kFgICAQ9kFgICAw8WAh4HVmlzaWJsZWgWAmYPZBYEAgMPZBYGAgEPFgIfAWhkAgMPFgIfAWhkAgUPFgIfAWhkAgQPDxYCHglBY2Nlc3NLZXkFAS9kZAIQD2QWAgICD2QWAgIDD2QWAgIDDxYCHwALKwQBZAIUD2QWAgIDD2QWAgIBDxYCHwALKwQBZGSeJpR8W+h1kUyjqH4llkeFoMGAUP6VEhGSCUx3SRqzCQ==" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+
+var g_correlationId = '1c12a59f-cc8e-3072-c9cd-b2eb0c292fb3';
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaRUMEnabled = false;
+var g_wsaLCID = 1050;
+var g_wsaListTemplateId = 850;
+var g_wsaSiteTemplateId = 'BLANKINTERNET#0';
+var _spPageContextInfo={"webServerRelativeUrl":"/","webAbsoluteUrl":"https://www.porezna-uprava.hr","viewId":"","listId":"{263915b6-1cda-4107-b2e3-c5e5a22ff8e1}","listPermsMask":{"High":16,"Low":200769},"listUrl":"/Stranice","listTitle":"Stranice","listBaseTemplate":850,"viewOnlyExperienceEnabled":false,"blockDownloadsExperienceEnabled":false,"idleSessionSignOutEnabled":false,"cdnPrefix":"","siteAbsoluteUrl":"https://www.porezna-uprava.hr","siteId":"{5e295e52-50f6-4727-bb2e-11579d77277e}","showNGSCDialogForSyncOnTS":false,"supportPoundStorePath":true,"supportPercentStorePath":true,"siteSubscriptionId":null,"AllowCustomMarkupInCalculatedField":false,"isSPO":false,"farmLabel":null,"serverRequestPath":"/Stranice/NPP_COVID_mjere.aspx","layoutsUrl":"_layouts/15","webId":"{c6189f9f-f216-41ea-a0e6-0e6fafde7f10}","webTitle":"Porezna uprava","webTemplate":"53","webTemplateConfiguration":"BLANKINTERNET#0","webDescription":"Početna stranica","tenantAppVersion":"0","isAppWeb":false,"webLogoUrl":"/Style%20Library/Images/logo-porezna-uprava.png","webLanguage":1050,"currentLanguage":1050,"currentUICultureName":"hr-HR","currentCultureName":"hr-HR","currentCultureLCID":1050,"env":null,"nid":0,"fid":0,"serverTime":"2021-01-26T13:49:35.8834987Z","siteClientTag":"195$$16.0.10350.20000","crossDomainPhotosEnabled":false,"openInClient":true,"Has2019Era":false,"webUIVersion":15,"webPermMasks":{"High":16,"Low":200769},"pageListId":"{263915b6-1cda-4107-b2e3-c5e5a22ff8e1}","pageItemId":91,"pagePermsMask":{"High":16,"Low":200769},"pagePersonalizationScope":1,"userEmail":"","userId":0,"userLoginName":null,"userDisplayName":null,"isAnonymousGuestUser":false,"isEmailAuthenticationGuestUser":false,"isExternalGuestUser":false,"systemUserKey":null,"alertsEnabled":false,"siteServerRelativeUrl":"/","allowSilverlightPrompt":"True","themeCacheToken":"/::2:","themedCssFolderUrl":null,"themedImageFileNames":null,"modernThemingEnabled":true,"isSiteAdmin":false,"ExpFeatures":[480216468,1884350801,1158731092,62197791,538521105,335811329,4194306,34614301,268500996,-1946025984,28445328,-2147475455,134291456,65536,288,950272,1282,808326148,134217873,0,0,-1073217536,545285252,18350656,-467402752,6291457,-2147483644,1074794496,-1728053184,1845537108,622628,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"killSwitches":{},"CorrelationId":"1c12a59f-cc8e-3072-c9cd-b2eb0c292fb3","hasManageWebPermissions":false,"isNoScriptEnabled":false,"groupId":null,"groupHasHomepage":true,"groupHasQuickLaunchConversationsLink":false,"departmentId":null,"hubSiteId":null,"hasPendingWebTemplateExtension":false,"isHubSite":false,"isWebWelcomePage":false,"siteClassification":"","hideSyncButtonOnODB":false,"showNGSCDialogForSyncOnODB":false,"sitePagesEnabled":false,"sitePagesFeatureVersion":0,"DesignPackageId":"00000000-0000-0000-0000-000000000000","groupType":null,"groupColor":"#8151fd","siteColor":"#8151fd","headerEmphasis":0,"navigationInfo":null,"guestsEnabled":false,"MenuData":null,"RecycleBinItemCount":-1,"PublishingFeatureOn":true,"PreviewFeaturesEnabled":false,"disableAppViews":false,"disableFlows":false,"serverRedirectedUrl":null,"formDigestValue":"0xD7D3060E6A09DDB989BAACFB09743FC736818EFC81C20FE59C29BEF08C8660C853F0EC03260DCB862E9732244507174BBDAE05094C2C9C66D410901066C251AA,26 Jan 2021 13:49:35 -0000","maximumFileSize":10240,"formDigestTimeoutSeconds":1800,"canUserCreateMicrosoftForm":false,"canUserCreateVisioDrawing":true,"readOnlyState":null,"isTenantDevSite":false,"preferUserTimeZone":false,"userTimeZoneData":null,"userTime24":false,"userFirstDayOfWeek":null,"webTimeZoneData":null,"webTime24":false,"webFirstDayOfWeek":null,"isSelfServiceSiteCreationEnabled":null,"alternateWebAppHost":"","aadTenantId":"","aadUserId":"","aadInstanceUrl":"","msGraphEndpointUrl":"https://","allowInfectedDownload":true};_spPageContextInfo.updateFormDigestPageLoaded=new Date();_spPageContextInfo.clientServerTimeDelta=new Date(_spPageContextInfo.serverTime)-new Date();if(typeof(define)=='function'){define('SPPageContextInfo',[],function(){return _spPageContextInfo;});}document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};Flighting.ExpFeatures = [480216468,1884350801,1158731092,62197791,538521105,335811329,4194306,34614301,268500996,-1946025984,28445328,-2147475455,134291456,65536,288,950272,1282,808326148,134217873,0,0,-1073217536,545285252,18350656,-467402752,6291457,-2147483644,1074794496,-1728053184,1845537108,622628,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; (function()
+{
+    if(typeof(window.SP) == "undefined") window.SP = {};
+    if(typeof(window.SP.YammerSwitch) == "undefined") window.SP.YammerSwitch = {};
+
+    var ysObj = window.SP.YammerSwitch;
+    ysObj.IsEnabled = false;
+    ysObj.TargetYammerHostName = "www.yammer.com";
+} )(); //]]>
+</script>
+
+<script src="/_layouts/15/blank.js?rev=RsBr7DKjw8TmwdHsbfMTsA%3D%3DTAG0" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.SPThemeUtils && SPThemeUtils.RegisterCssReferences([{"Url":"\u002fStyle Library\u002fhr-HR\u002fCore Styles\u002fpage-layouts-21.css","OriginalUrl":"\u002fStyle Library\u002fhr-HR\u002fCore Styles\u002fpage-layouts-21.css","Id":"CssLink-8b8d2b50a3754db792ddd8b047ef8ab3","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002fStyle Library\u002fhr-HR\u002fCore Styles\u002frca.css","OriginalUrl":"\u002fStyle Library\u002fhr-HR\u002fCore Styles\u002frca.css","Id":"CssLink-56d1aa59794449508aa7f1b6f1e0a0ae","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002f_layouts\u002f15\u002f1050\u002fstyles\u002fThemable\u002fcorev15.css?rev=ExdtPY2hK\u00252Be4tn3Me7\u00252BKLg\u00253D\u00253DTAG0","OriginalUrl":"\u002f_layouts\u002f15\u002f1050\u002fstyles\u002fThemable\u002fcorev15.css?rev=ExdtPY2hK\u00252Be4tn3Me7\u00252BKLg\u00253D\u00253DTAG0","Id":"CssLink-dd46fae44ae646d6bc58a01ccb7804e9","ConditionalExpression":"","After":"","RevealToNonIE":"false"}]);
+(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingCallout', function() { FollowingCallout(); });
+        });
+    })();(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingDocument', function() { FollowingDocument(); });
+        });
+    })();if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
+
+        
+            
+        <span id="DeltaSPWebPartManager">
+            
+        </span>
+        
+        
+        <div id="ms-designer-ribbon">
+            <div>
+	
+	<div id="s4-ribbonrow" style="visibility:hidden;display:none"></div>
+
+</div>
+
+
+            
+        </div>
+        
+        
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+                <!--Komponenta za navigaciju START-->
+                <section class="position-sticky sticky-top bg-white box-shadow-gray">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-xl px-0">
+                            <button class="navbar-toggler collapsed px-0" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                </span>
+                                <span class="navbar-toggler-icon">
+                                </span>
+                                <span class="navbar-toggler-icon">
+                                </span>
+                            </button>
+                            <a class="navbar-brand order-2 order-xl-1 mr-3 ml-auto ml-xl-0" href="/">
+                                <img class="img-fluid porezna-logo" src="/_layouts/15/In2.Vuk2019.Sp.Master/assets/porezna.svg" loading="lazy" alt="Poveznica na početnu stranicu. Slika prikazuje logotip Porezne uprave." />
+                            </a>
+                            <ul class="col-12 col-xl-4 navbar-nav d-flex order-last order-xl-2 mt-3 mb-2 my-xl-0 px-0">
+                                
+                                <li class="">
+                                    
+                                    <div data-name="searchbox">		
+	                                    <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+	<div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style="" ><div componentid="ctl00_ctl58_csr" id="ctl00_ctl58_csr"><div id="SearchBox" name="Control"><div class="ms-srch-sb ms-srch-sb-border" id="ctl00_ctl58_csr_sboxdiv"><input type="text" value="Pretraga" maxlength="2048" title="Pretraga" id="ctl00_ctl58_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_ctl58_csr').search($get('ctl00_ctl58_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_ctl58_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_ctl58_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_ctl58_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText"/><a title="Pretraživanje" role="button" class="ms-srch-sb-searchLink" id="ctl00_ctl58_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_ctl58_csr').search($get('ctl00_ctl58_csr_sbox').value);})" href="javascript: {}" ><img src="/_layouts/15/images/searchresultui.png?rev=43#ThemeKey=searchresultui" class="ms-srch-sb-searchImg" id="searchImg" alt="Pretraživanje" /></a></div></div></div><noscript><div id="ctl00_ctl58_noscript">Čini se da u vašem pregledniku nije omogućen JavaScript. Molimo da uključite JavaScript i pokušate ponovno.</div></noscript><div id="ctl00_ctl58" align="left">
+		
+	                                    
+	</div><div class="ms-clear"></div></div>
+</div>	                
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="order-4 nav ml-xl-auto" href="">
+                                <img class="img-fluid ml-xl-auto rh-logo" src="/_layouts/15/In2.Vuk2019.Sp.Master/assets/Republika-Hrvatska-logo.png" loading="lazy" alt="Poveznica na početnu stranicu. Slika prikazuje logotip Porezne uprave." />
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="container mobile-nav px-0">
+                        <nav class="navbar navbar-expand-xl p-0">
+                            <div class="collapse navbar-collapse" id="navbarToggler">
+                                 <div id="ctl00_webPartHeader">
+	<ul class="navbar-nav mr-auto px-3 no-last-list-border primary-border-bottom bg-underline-color-lg-down"><li class="nav-item dropdown pr-xl-3"><a class="nav-link dropdown-toggle pl-xl-0 pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="PoreziDropdown">Porezi</a><div class="dropdown-menu py-0" aria-labelledby="PoreziDropdown"><a href="https://www.porezna-uprava.hr/PdviEu/Stranice/PDViEU.aspx" class="dropdown-item">PDV</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_na_dohodak.aspx" class="dropdown-item">Porez na dohodak</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_na_dobit.aspx" class="dropdown-item">Porez na dobit</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_automati_igre_zabava.aspx" class="dropdown-item">Porez na automate za zabavne igre</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_nasljedstva_darovi.aspx" class="dropdown-item">Porez na nasljedstva i darove</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_cestovna_motorna_vozila.aspx" class="dropdown-item">​Porez na cestovna motorna vozila</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_plovila.aspx" class="dropdown-item">Porez na plovila</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_promet_nekretnine.aspx" class="dropdown-item">Porez na promet nekretnina</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/prirez_porezu_na_dohodak.aspx" class="dropdown-item">Prirez porezu na dohodak</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_potrosnja.aspx" class="dropdown-item">Porez na potrošnju</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_kuce_za_odmor.aspx" class="dropdown-item">Porez na kuće za odmor</a><a href="https://www.porezna-uprava.hr/HR_porezni_sustav/Stranice/porez_kortistenje_javnih_povrsine.aspx" class="dropdown-item">Porez na korištenje javnih površina</a><a href="https://www.porezna-uprava.hr/Stranice/IgreNaSrecuNagradneIgre.aspx" class="dropdown-item">Igre na sreću i nagradne igre</a></div></li><li class="nav-item dropdown pr-xl-3"><a class="nav-link dropdown-toggle pl-xl-0 pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="RegulativaDropdown">Regulativa</a><div class="dropdown-menu py-0" aria-labelledby="RegulativaDropdown"><a href="https://www.porezna-uprava.hr/hr_propisi/_layouts/in2.vuk2019.sp.propisi.intranet/propisi.aspx" class="dropdown-item">Propisi</a><a href="https://www.porezna-uprava.hr/HR_publikacije/Stranice/lista-misljenja.aspx" class="dropdown-item">Mišljenja SU</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Dvostruko-oporezivanje.aspx" class="dropdown-item">Dvostruko oporezivanje</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Vodic-za-po.aspx" class="dropdown-item">Vodič za porezne obveznike</a><a href="https://www.porezna-uprava.hr/Stranice/PoreznaReforma2019.aspx" class="dropdown-item">Porezna reforma</a></div></li><li class="nav-item dropdown pr-xl-3"><a class="nav-link dropdown-toggle pl-xl-0 pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ObrasciDropdown">Obrasci</a><div class="dropdown-menu py-0" aria-labelledby="ObrasciDropdown"><a href="https://www.porezna-uprava.hr/HR_obrasci/Stranice/default.aspx" class="dropdown-item">Propisani obrasci za preuzimanje u PDFu</a><a href="https://www.porezna-uprava.hr/obrazac_joppd/Stranice/default.aspx" class="dropdown-item">JOPPD</a><a href="https://www.porezna-uprava.hr/HR_obrasci/Stranice/PrijavaDOH.aspx" class="dropdown-item">Godišnji obračun poreza na dohodak</a><a href="https://www.porezna-uprava.hr/HR_obrasci/Stranice/PrijavaDobit.aspx" class="dropdown-item">Prijava poreza na dobit - PD</a><a href="https://www.porezna-uprava.hr/HR_obrasci/Stranice/Prijava-prometa-nekretnina-u-2017.aspx" class="dropdown-item">Prijava prometa nekretnina</a><a href="https://www.porezna-uprava.hr/HR_obrasci/Stranice/Ino_doh.aspx" class="dropdown-item">Inozemni dohodak - INO-DOH</a></div></li><li class="nav-item dropdown pr-xl-3"><a class="nav-link dropdown-toggle pl-xl-0 pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="UslugeDropdown">Usluge</a><div class="dropdown-menu py-0" aria-labelledby="UslugeDropdown"><a href="https://e-porezna.porezna-uprava.hr/" class="dropdown-item">ePorezna/JPPU</a><a href="https://www.porezna-uprava.hr/bi/Stranice/ElektronickeUsluge.aspx" class="dropdown-item">Elektroničke usluge</a><a href="https://gov.hr/moja-uprava/financije-i-porezi/porezi-i-prijava-poreza/418" class="dropdown-item">Središnji državni portal</a><a href="https://www.porezna-uprava.hr/Gradani/Stranice/eGradjani.aspx" class="dropdown-item">eGrađani</a><a href="https://www.porezna-uprava.hr/HR_OIB/Stranice/default.aspx" class="dropdown-item">OIB</a><a href="https://kalkulator.porezna-uprava.hr/#/app/home" class="dropdown-item">Informativni kalkulator obračuna poreza i prireza na dohodak</a><a href="https://www.porezna-uprava.hr/HR_Fiskalizacija/Stranice/Provjeri-fiskalni-račun.aspx" class="dropdown-item">Provjeri fiskalni račun</a><a href="https://oib.oib.hr/RpoProvjeriObveznikaPdvWeb/home" class="dropdown-item">Provjera obveznika PDV-a</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Obvezujuća-mišljenja.aspx" class="dropdown-item">Obvezujuća mišljenja</a></div></li><li class="nav-item dropdown pr-xl-3"><a class="nav-link dropdown-toggle pl-xl-0 pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="KorisniciDropdown">Korisnici</a><div class="dropdown-menu py-0" aria-labelledby="KorisniciDropdown"><a href="https://www.porezna-uprava.hr/Gradani/Stranice/GradjaniPocetna.aspx" class="dropdown-item">Građani</a><a href="https://www.porezna-uprava.hr/nerezdineti/Stranice/default.aspx" class="dropdown-item">Nerezidenti</a><a href="https://www.porezna-uprava.hr/trgovacka_drustva/Stranice/default.aspx" class="dropdown-item">Trgovačka društva</a><a href="https://www.porezna-uprava.hr/obrtnici/Stranice/Obrtnici3.aspx" class="dropdown-item">Obrtnici</a><a href="https://www.porezna-uprava.hr/obrtnici/Stranice/Slobodna-zanimanja.aspx" class="dropdown-item">Slobodna zanimanja</a><a href="https://www.porezna-uprava.hr/obrtnici/Stranice/Poljoprivrednici.aspx" class="dropdown-item">Poljoprivrednici</a><a href="https://www.porezna-uprava.hr/udruge/Stranice/default.aspx" class="dropdown-item">Udruge</a></div></li><li class="nav-item dropdown pr-xl-3"><a class="nav-link dropdown-toggle pl-xl-0 pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Aktivnosti PUDropdown">Aktivnosti PU</a><div class="dropdown-menu py-0" aria-labelledby="Aktivnosti PUDropdown"><a href="https://www.porezna-uprava.hr/HR_Fiskalizacija/Stranice/FiskalizacijaNovo.aspx" class="dropdown-item">Fiskalizacija</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Upravni-ugovor.aspx" class="dropdown-item">Upravni ugovor</a><a href="https://www.porezna-uprava.hr/Lists/Vijesti/Vijest.aspx?ID=654" class="dropdown-item">Reprogram duga za poduzetnike</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Javna-prodaja-pokretnina.aspx" class="dropdown-item">Javna prodaja</a><a href="http://duznici.porezna-uprava.hr/" class="dropdown-item">Lista dužnika</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Neisplatiteljiplaca.aspx" class="dropdown-item">Neisplatitelji plaća</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Nedozvoljeno-obavljanje-gospodarske-djelatnosti-putem-interneta.aspx" class="dropdown-item">Nedozvoljeno obavljanje gospodarske aktivnosti putem Interneta</a><a href="https://www.porezna-uprava.hr/bi/Stranice/PrekrsajneSankcijeSPNFT.aspx" class="dropdown-item">Prekršajne sankcije iz područja SPNFT</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Financijske-istrage.aspx" class="dropdown-item">Financijske istrage</a><a href="https://www.porezna-uprava.hr/PdviEu/Stranice/PDV-prijevare,-upozorenja-poreznim-obveznicima.aspx" class="dropdown-item">PDV prijevare</a><a href="https://www.porezna-uprava.hr/bi/Stranice/registri_bazepodataka.aspx" class="dropdown-item">Registri i baze podataka</a><a href="https://www.porezna-uprava.hr/bi/Stranice/DostavaStandardaE-Oblik.aspx" class="dropdown-item">Standardi za dostavu podataka u e-obliku</a></div></li><li class="nav-item dropdown pr-xl-3"><a class="nav-link dropdown-toggle pl-xl-0 pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Europski i vanjski posloviDropdown">Europski i vanjski poslovi</a><div class="dropdown-menu py-0" aria-labelledby="Europski i vanjski posloviDropdown"><a href="https://www.porezna-uprava.hr/bi/Stranice/Brexit.aspx" class="dropdown-item">BREXIT</a><a href="https://www.porezna-uprava.hr/EU_Vanjski_poslovi/Stranice/Fiscalis2013.aspx" class="dropdown-item">FISCALIS</a><a href="https://www.porezna-uprava.hr/AutomatskarazmjenaInformacija/Stranice/default.aspx" class="dropdown-item">Automatska razmjena informacija</a><a href="https://www.porezna-uprava.hr/bi/Stranice/Dvostruko-oporezivanje.aspx" class="dropdown-item">Dvostruko oporezivanje</a><a href="https://www.porezna-uprava.hr/Gradani/Stranice/UtvrdivanjeRezidentnosti.aspx" class="dropdown-item">Utvrđivanje rezidentnosti u porezne svrhe</a><a href="https://www.porezna-uprava.hr/PdviEu/Stranice/Provjera-valjanosti-stranih-PDV-ID-brojeva.aspx" class="dropdown-item">Provjera valjanosti PDV ID brojeva</a><a href="https://www.porezna-uprava.hr/PdviEu/Stranice/Povrat-pdv-a-EU.aspx" class="dropdown-item">Sustav povrata PDV-a</a><a href="https://www.porezna-uprava.hr/PdviEu/Stranice/IznajmljivaciNerezidenti.aspx" class="dropdown-item">Iznajmljivači nekretnina - nerezidenti</a><a href="https://www.porezna-uprava.hr/PdviEu/Stranice/Strani-autobusni-prijevoznici.aspx" class="dropdown-item">Strani autobusni prijevoznici</a><a href="https://www.porezna-uprava.hr/nerezdineti/Stranice/default.aspx" class="dropdown-item">Nerezidenti</a></div></li></ul><ul class="navbar-nav ml-auto bg-white px-3 no-last-list-border underline-border-color"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle right pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="O namaDropdown">O nama</a><div class="dropdown-menu py-0" aria-labelledby="O namaDropdown"><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/zadatak.aspx" class="dropdown-item">Djelokrug rada PU</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/O-stranici.aspx" class="dropdown-item">O stranici</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/ORGANIZACIJA-POREZNE-UPRAVE---2017.-GODINA.aspx" class="dropdown-item">Organizacija</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/organizacija.aspx" class="dropdown-item">Organizacijske sheme</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Documents/Kontakti%20rukovoditelja.pdf?csf=1&e=E93fjD" class="dropdown-item">Kontakti rukovoditelja</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/strategije.aspx" class="dropdown-item">Strategije</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/FinancijskaIzvjescaPU.aspx" class="dropdown-item">Financijska izvješća</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/FinancijskiPlanoviPU.aspx" class="dropdown-item">Financijski planovi</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/Povjerenik-eticki-kodeks.aspx" class="dropdown-item">Etički kodeks</a><a href="https://www.porezna-uprava.hr/HR_o_nama/Stranice/Prora%C4%8Dun-Porezne-uprave.aspx" class="dropdown-item">Proračun Porezne uprave</a></div></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle right pr-xl-3" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="KontaktDropdown">Kontakt</a><div class="dropdown-menu py-0" aria-labelledby="KontaktDropdown"><a href="https://www.porezna-uprava.hr/Adresar" class="dropdown-item">Adresar</a><a href="https://pisitenam.porezna-uprava.hr/" class="dropdown-item">Pišite nam</a><a href="https://www.porezna-uprava.hr/pozivni_centar/Stranice/default.aspx" class="dropdown-item">Pozivni centar</a><a href="https://www.porezna-uprava.hr/bi/Stranice/PravoNaPristupInformacijama.aspx" class="dropdown-item">Pravo na pristup informacijama</a><a href="https://www.porezna-uprava.hr/HR_press" class="dropdown-item">Mediji</a></div></li><li class="nav-item"><a href="https://www.porezna-uprava.hr/en" class="nav-link">EN</a></li></ul>
+</div>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+                <!--Komponenta za navigaciju END-->
+
+                <!-- yellow page status bar -->
+                <div id="DeltaPageStatusBar">
+	
+                    <div id="pageStatusBar"></div>
+                
+</div>
+
+                <!--Sadrzaj koji ce se dinamicno dohvacati START-->
+                <main style="min-height: calc(100vh - 308px - 109px);">
+                    <section class="container">
+                        <div data-name="ContentPlaceHolderMain" id="contentPlaceHolderM" class="free-text">
+                            
+                            
+                            <span id="DeltaPlaceHolderMain">
+                                
+	
+	
+			<div class="article article-body">
+				
+				<div class="article-content">
+					<div id="ctl00_PlaceHolderMain_ctl01_ctl01_label" style='display:none'>Sadržaj stranice</div><div id="ctl00_PlaceHolderMain_ctl01_ctl01__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl01_ctl01_label"><h1>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​NAJČEŠĆE POSTAVLJENA PITANJA VEZANA UZ PAKET MJERA DO​NESENIH U PROLJETNOM VALU EPIDEMIJE IZAZVANE&#160;ŠIRENJEM VIRUSA COVID-19</h1><h3></h3><h3></h3><p>​​​<br></p><h4>KAKO OSTVARITI OBROČNU OTPLATU ODGOĐENIH POREZNIH OBVEZA​<br></h4><ul><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid40">Za koje obveze se može odobriti obročna otplata?​</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid41">Na koji način se podnosi zahtjev za obročnu otplatu?</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid42">U kojem roku se može podnijeti zahtjev za obročnu otplatu?</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid43">Što ako propustim rok za podnošenje zahtjeva za obročnu otplatu?</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid44">Na koji rok se može odobriti obročna otplata?</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid45">Kolika je kamatna stopa za vrijeme trajanja obročne otplate?</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid46">Koji su modeli obročne otplate?</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid47">Kako ću znati je li mi odobrena obročna otplata?</a></p></li><li><p><a href="/Stranice/NPP_COVID_mjere.aspx#covid48">Što će se dogoditi u slučaju nepoštivanja rokova plaćanja obveza za koje je odobrena obročna otplata?​​</a></p></li></ul><p></p><p><br></p><h4>KAKO OSTVARITI ODGODU PLAĆANJA DOSPJELE OBVEZE PDV-a<br></h4><ul style="color&#58;#666666;"><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid12">Tko može ostvariti pravo na odgodu plaćanja PDV-a?</a><br></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid13">Za koje razdoblje se može ostvariti odgoda plaćanja obveze PDV-a?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid14">Za koji iznos dospjele obveze PDV-a se može ostvariti odgoda plaćanja?</a><br></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid15">Kako postupa porezni obveznik kojem je odobren zahtjev za odgodu plaćanja PDV-a?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid16">Obračunava li se kamata na odgođenu&#160;poreznu obvezu PDV-a?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid17">Što ako porezni obveznik nije u mogućnosti platiti odgođenu poreznu obvezu po&#160;njezinom dospijeću?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid18">Može li porezni obveznik zatražiti oslobođenje odnosno otpis odgođene obveze PDV-a?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid19">Gdje pročitati više o ostvarivanju odgode plaćanja dospjele obveze PDV-a?&#160;​​</a>​<br></p></li></ul><h4>IZNAJMLJIVAČI<br></h4><div><ul><li><p>
+            <a href="/Stranice/NPP_COVID_mjere.aspx#covid20">Koje su obveze iznajmljivača i koji su rokovi za plaćanje paušalnog poreza na dohodak?</a></p></li><li><p>​<a href="/Stranice/NPP_COVID_mjere.aspx#covid21">Mogu li iznajmljivači ostvariti odgodu plaćanja paušalnog poreza?</a></p></li><li><p>​<a href="/Stranice/NPP_COVID_mjere.aspx#covid22">Mogu li iznajmljivači biti oslobođeni plaćanja paušalnog poreza?</a></p></li></ul><h4>​ROK ZA PODNOŠENJE PRIJAVE POREZA NA DOBIT</h4><div><ul><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid23">Koji je rok za podnošenje prijave i ​plaćanje obveze poreza na dobit za 2019. godinu?&#160;​</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid24">Koji su rokovi za predaju ostalih obrazaca i izvješća za koje je propisana obveza predaje uz&#160; Prijavu poreza na dobit za 2019. godinu?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid25">Na koje porezne obveznike se ne primjenjuju odredbe o odgodi rokova za podnošenje prijave i plaćanje obveze poreza na dobit za 2019. godinu?&#160;</a><br></p></li></ul><h4>PRAVO NA OSLOBOĐENJE OD OBVEZE DOPRINOSA ZA SUFINANCIRANE NETO PLAĆE</h4></div><div><ul><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid26">Može li porezni obveznik korisnik potpore za očuvanje radnih mjesta koju isplaćuje Hrvatski zavod za zapošljavanje biti oslobođen od obveze plaćanja doprinosa?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid27">Mora li i kada porezni obveznik korisnik potpore za očuvanje radnih mjesta koju isplaćuje Hrvatski zavod za zapošljavanje podnijeti Obrazac JOPPD?​</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid28">Ima li poduzetnik koji je ostvario potporu za očuvanje svog radnog mjesta pravo na oslobođenje od obveze doprinosa?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid29">Kako će se utvrđivati iznos obveze doprinosa za koji se može ostvariti oslobođenje na temelju mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće ?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid30">Na koji način porezni obveznik će ostvariti pravo na oslobađanje od plaćanja doprinosa na temelju mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid31">Mora li porezni obveznik platiti doprinose kojih će biti oslobođen na temelju mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće u trenutku isplate plaće odnosno podnošenja Obrasca JOPPD?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid32">Mora li porezni obveznik platiti iznos razlike doprinosa za koji nije ostvario oslobođenje od plaćanja doprinosa za iznos sufinancirane neto plaće?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid33">Hoće li se izgubiti prava koja proizlaze iz iznosa oslobođenih doprinosa u slučaju ostvarenja mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće i/ili mjere Oslobođenje od podmirivanja poreznih obveza?&#160;</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid34">Što da učini porezni obveznik koji se javlja na natječaj, a na porezno-knjigovodstvenoj kartici mu nije otpisan iznos oslobođene obveze doprinosa?</a></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid35">Što ako se naknadno utvrde drugačiji podaci ili se podaci promjene?</a></p></li></ul><h4>​POREZNI DUG I&#160;OVRŠNI POSTUPAK<br></h4><ul><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid36">Kako regulirati porezn​i dug tijekom posebnih okolnosti?​</a>&#160;<br></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid37">Ovršni postupak za vrijeme trajanja posebnih okolnosti​</a><br></p></li><li><p>
+               <a href="/Stranice/NPP_COVID_mjere.aspx#covid38">Kako mogu ostvariti pravo na oslobođenje prema mjeri Oslobođenje od podmirivanja poreznih obveza?&#160;​</a></p></li></ul><h4>DONACIJE I UVOZ<br></h4></div><div><ul><li><p>​<a href="/Stranice/NPP_COVID_mjere.aspx#covid39">Koje su novosti u obračunu poreza na dodanu vrijednost kod donacija i uvoza?​</a></p></li></ul><p>
+         <br>
+      </p><p>​<br></p></div></div><h4>PITANJA VEZANA UZ PRVI PAKET MJERA DO​NESENIH&#160;U OŽUJKU 2020.<br></h4><ul><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid1">Hoće li Porezna uprava u posebnim okolnostima proglašene epidemije Covid-19 obustaviti sve postupke ovrhe prema svim poreznim obveznicima?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid2">Ima li poduzetnik pravo na otpis poreznih obveza u posebnim okolnostima proglašene epidemije Covid-19?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid3">Tko može biti podnositelj zahtjeva za korištenje mjere plaćanja poreza?​</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid4">Može li porezni obveznik koji ima reprogramirane porezne obveze podnijeti zahtjev za odgodu dospjelih poreznih obveza u posebnim okolnostima proglašene epidemije Covid-19?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid5">Može li se sklopiti upravni ugovor za obveze koje nisu predmet korištenja mjera plaćanja poreza?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid6">Može li obveza PDV-a za 2.mjesec 2020, koja dospijeva 31.03.2020. biti predmet korištenja mjera plaćanja poreza?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid7">Može li se odobriti odgoda plaćanja poreza za dospjelu obvezu za PDV za 3. I 4 mjesec obrtnika?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid8">Ako sam korisnik potpore za samozapošljavanje mogu li koristiti mjere za plaćanje poreza odnosno dobiti odgodu dospijeća poreznih obveza?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid9">Zašto ste ograničili mjeru na dug od 200,00 kn, a ne na 10.000,00 kn?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid10">Smatra li se porezni obveznik koji je obveznik plaćanja poreza na dohodak od imovine i imovinskih prava (najam i zakup), poduzetnikom iz članka 44. stavka 1. OPZ-a?</a></p></li><li><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#covid11">Smatra li se porezni obveznik iznajmljivač koji obavlja&#160;djelatnost iznajmljivanja i organiziranja smještaja u turizmu, poduzetnikom iz članka 44. stavka 1. OPZ-a?​</a>​​</p></li></ul><p>​</p><p>
+   </p><h4>KAKO OSTVARITI OBROČNU OTPLATU ODGOĐENIH POREZNIH OBVEZA</h4><p><br></p><p><a href="#" name="covid40" id="covid40">Za koje obveze se može odobriti obročna otplata?</a><br></p><p>Obročna otplata se može odobriti za porezne obveze čije plaćanje je odgođeno radi nastupa posebnih okolnosti, a koje neće biti otpisane po osnovi mjere oslobađanja od plaćanja poreznih obveza.<br></p><p><br></p><p><a href="#" name="covid41" id="covid41">Na koji način se podnosi zahtjev za obročnu otplatu?</a><br></p><p><a href="/HR_obrasci/Documents/POREZNI%20POSTUPAK/Zahtjev%20za%20obro%c4%8dnu%20otplatu%20odgo%c4%91enih%20poreznih%20obveza.pdf?csf=1&amp;e=JqpreO" target="_blank">Zahtjev za obročnu otplatu odgođenih poreznih obveza​</a> se podnosi putem sustava <a href="https&#58;//e-porezna.porezna-uprava.hr/Prijava.aspx?ReturnUrl=/" target="_blank">e-Porezna​</a>, počevši od 24. lipnja 2020. godine. Iznimno, porezni obveznici koji nisu korisnici sustava e-Porezna, zahtjev mogu podnijeti putem mrežne stranice Porezne uprave, <a href="https&#58;//pisitenam.porezna-uprava.hr/" target="_blank">servisa „Pišite nam“​</a>&#160;(odabir teme&#58; ePorezna - JPPU, odabir podteme&#58; Zahtjev za obročnu otplatu)​​, počevši također od 24. lipnja 2020. godine.<br></p><p><br></p><p><a href="#" name="covid42" id="covid42">U kojem roku se može podnijeti zahtjev za obročnu otplatu?</a></p><p>Zahtjev za obročnu otplatu se može podnijeti u roku od 5 dana od dospijeća odgođene porezne obveze koju porezni obveznik nije u mogućnosti platiti.<br></p><p><br></p><p><a href="#" name="covid43" id="covid43">Što ako propustim rok za podnošenje zahtjeva za obročnu otplatu?</a></p><p>Po proteku roka od 5 dana od dospijeća odgođene porezne obveze, obročna otplata se više ne može odobriti za tu obvezu. Ta obveza se mora podmiriti, a zahtjev se može podnijeti za preostale odgođene porezne obveze, za koje nije protekao rok od 5 dana od njihova odgođena dospijeća.<br></p><p><br></p><p><a href="#" name="covid44" id="covid44">Na koji rok se može odobriti obročna otplata?</a></p><p>Obročna otplata odgođenih poreznih obveza se može odobriti u mjesečnim obrocima, na najviše 24 mjeseca. Prilikom podnošenja zahtjeva za obročnu otplatu je potrebno upisati na koje razdoblje porezni obveznik predlaže da mu se odobri obročna otplata.<br></p><p><br></p><p><a href="#" name="covid45" id="covid45">Kolika je kamatna stopa za vrijeme trajanja obročne otplate?</a></p><p>Za vrijeme trajanja obročne otplate se ne obračunava kamata na porezne obveze za koje je odobrena obročna otplata.<br></p><p><br></p><p><a href="#" name="covid46" id="covid46">Koji su modeli obročne otplate?</a></p><p>U zahtjevu za obročnu otplatu porezni obveznik odabire model obročne otplate koji mu više odgovara, pri čemu je moguć odabir jednog od sljedećih modela&#58;</p><blockquote style="margin&#58;0px 0px 0px 40px;border&#58;none;padding&#58;0px;"><p>A.	obročna otplata samo za dospjelu odgođenu obvezu, pri čemu odobrenje zahtjeva isključuje mogućnost odobravanja obročne otplate za odgođene porezne obveze koje dospijevaju kasnije, ili</p><p>B.	obročna otplata za sve odgođene porezne obveze, dospjele i nedospjele u trenutku podnošenja zahtjeva, u kojem slučaju nedospjele odgođene porezne obveze dospijevaju i odobrava se obročna otplata za njihovo plaćanje, umjesto daljnje odgode.&#160;<br></p><p><br></p></blockquote><p><a href="#" name="covid47" id="covid47">Kako ću znati je li mi odobrena obročna otplata?</a><br></p><p>Nadležna ispostava će poreznim obveznicima odmah po rješavanju zahtjeva dostaviti obavijest o tome je li obročna otplata odobrena ili nije, na isti način na koji su porezni obveznici obaviješteni o odobrenoj odgodi plaćanja, u pravilu elektroničkim putem.<br></p><p><br></p><p><a href="#" name="covid48" id="covid48">Što će se dogoditi u slučaju nepoštivanja rokova plaćanja obveza za koje je odobrena obročna otplata?</a></p><p>U slučaju nepoštivanja rokova plaćanja poreznih obveza za koje je odobrena obročna otplata, obročna otplata će se ukinuti.<br></p><p><br><br></p><div><h4>KAKO OSTVARITI ODGODU PLAĆANJA DOSPJELE OBVEZE PDV-a​<br></h4><p>
+      <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid12">Tko može ostvari​ti pravo na odgodu plaćanja PDV-a?</a><br></p><p>Pravo na odgodu plaćanja dospjele obveze PDV-a može ostvariti porezni obveznik koji obračunava PDV prema obavljenim isporukama, a koji podnosi zahtjev ili ga je već podnio i ispunjava sljedeće uvjete&#58;&#160;</p><ul style="width&#58;1090px;"><li><p>učini vjerojatnim da nije u mogućnosti platiti dospjele porezne obveze, tj.&#160;</p></li><ul style="width&#58;1039px;"><li><p>ako ima pad prihoda/primitaka u mjesecu koji prethodi mjesecu podnošenja zahtjeva najmanje 20% u odnosu na isti mjesec prethodne godine ili</p></li><li><p>ako učini vjerojatnim da će mu prihodi/primitci u narednom razdoblju od tri mjeseca od mjeseca podnošenja zahtjeva pasti najmanje 20% u odnosu na isto razdoblje prethodne godine, te</p></li><li><p>za dospjelu obvezu PDV-a dokaže da proizlazi iz izdanih računa koji nisu naplaćeni i ulaznih računa koji nisu plaćeni.</p></li></ul><li><p>na dan podnošenja zahtjeva nema dospjelog neplaćenog poreznog duga ili na knjigovodstvenoj kartici ima evidentirani porezni dug manji od 200,00 kuna</p></li></ul></div><div><p style="color&#58;#666666;">Porezni obveznik koji je već podnio zahtjev za odgodom plaćanja dospjele porezne obveze te mu je isti odobren, ne podnosi posebni zahtjev za odgodom plaćanja dospjele obveze PDV-a, već pravo na odgodu dokazuje popunjavanjem točke VIII.2. Obrasca PDV u kojoj iznimno iskazuje razliku između iznosa iskazanog pod točkom IV. Obrasca PDV i iznosa kojeg bi iskazao pod točkom IV. Obrasca PDV da primjenjuje postupak oporezivanja prema naplaćenim naknadama.<br></p><p style="color&#58;#666666;">
+      <br>
+   </p><div><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid13" style="padding-top&#58;130px;">Za koje razdoblje se može ostvariti odgoda plaćanja obveze PDV-a?</a></p><p>Odgoda plaćanja obveze PDV-a može se ostvariti za obvezu PDV-a koja se iskazuje</p><ul style="width&#58;1090px;"><li><p>u Obrascu PDV za ožujak 2020. i prvo tromjesečje 2020., a koja dospijeva 30. travnja 2020.</p></li><li><p>u Obrascu PDV za travanj 2020, a koja dospijeva 31. svibnja 2020.</p></li></ul><p>Ako posebne okolnosti potraju duže rok za odgodu se može produžiti za tri mjeseca pa će se odgodom obuhvatiti i dospjela obveza PDV-a iskazana u Obrascima PDV-a za svibanj, lipanj i srpanj te drugo tromjesečje 2020.&#160;</p><p>
+         <br>
+      </p><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid14" style="padding-top&#58;130px;">Za koji iznos dospjele obveze PDV-a se može ostvariti odgoda plaćanja?</a></p><p>Odgoda plaćanja PDV-a ostvaruje se za iznos dospjele obveze PDV-a koja je veća od iznosa za koji bi porezni obveznik bio zadužen da obračunava PDV prema naplaćenim naknadama.&#160;</p><p>
+         <br>
+      </p><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid15" style="padding-top&#58;130px;">Kako postupa porezni obveznik kojem je odobren zahtjev za odgodu plaćanja PDV-a?</a><br></p><p>Porezni obveznik kojem je odobren zahtjev za odgodu plaćanja PDV-a</p><ul style="width&#58;1090px;"><li><p>podnosi Obrazac PDV za ožujak 2020., ili prvo tromjesečje 2020. u kojem na redovan način iskazuje sve obavljene i sve primljene isporuke u svojim evidencijama osigurava podatke o obračunu PDV-a da za isto razdoblje primjenjuje postupak oporezivanja prema naplaćenim naknadama i utvrđuje razliku između dva načina obračuna</p></li><li><p>iznimno pod točkom VIII.2. Obrasca PDV iskazuje razliku između iznosa iskazanog pod točkom IV. Obrasca PDV i iznosa kojeg bi iskazao pod točkom IV. Obrasca PDV da primjenjuje postupak oporezivanja prema naplaćenim naknadama</p></li><li><p>do 30. travnja 2020. obvezan je platiti samo iznos PDV-a kojeg bi iskazao pod točkom IV. Obrasca PDV da primjenjuje postupak oporezivanja prema naplaćenim naknadama</p></li><li><p>iznos iskazan pod točkom VIII.2 Obrasca PDV– Porezna uprava će za ožujak 2020 i prvo tromjesečje 2020 odgoditi do 31.srpnja 2020.</p></li><li><p>ako ostvari vrijednost koja se uobičajeno iskazuje na Obrascu PDV pod točkom&#160; VIII.2., isto će iskazati u prvom Obrascu PDV koji će se podnositi istekom posebnih okolnosti.&#160;</p></li></ul><p>​Porezni obveznik na isti način postupa i prilikom podnošenja Obrasca PDV za travanj 2020.. Iskazanu obvezu u Obrascu PDV za travanj pod točkom VIII.2 Porezna uprava će odgoditi do 31. kolovoza 2020.&#160;<br></p><p>
+         <br>
+      </p><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid16" style="padding-top&#58;130px;">Obračunava li se kamata na odgođenu poreznu obvezu PDV-a?</a></p><p>Za dospjele porezne obveze za koje je odobrena odgoda plaćanja neće se obračunavati kamate.</p><p>
+         <br>
+      </p><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid17" style="padding-top&#58;130px;">Što ako porezni obveznik nije u mogućnosti platiti odgođenu poreznu obvezu po njezinom dospijeću?</a></p><p>Ako porezni obveznik nije u mogućnosti platiti odgođenu poreznu obvezu po njezinom odgođenom dospijeću može podnijeti zahtjev za obročnom otplatom, bez obračuna kamata.&#160;&#160;</p><p>
+         <br>
+      </p><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid18" style="padding-top&#58;130px;">Može li porezni obveznik zatražiti oslobođenje odnosno otpis odgođene obveze PDV-a?</a></p><p>Porezni obveznik ne može zatražiti oslobođenje od podmirivanja odgođene obveze PDV-a, obzirom da se mogućnost za oslobođenje ne odnosi na PDV. Poreznim obveznicima kojima je odobren zahtjev za odgodom plaćanja obveze PDV-a omogućeno je da obvezu PDV-a koju trebaju platiti utvrde na način kao da primjenjuju postupak oporezivanja prema naplaćenim naknadama te je omogućeno i podnošenje zahtjeva za obročnom otplatom, bez obračuna kamata.&#160;</p><p>
+         <br>
+      </p><p>
+         <a href="/Stranice/NPP_COVID_mjere.aspx#" name="covid19" style="padding-top&#58;130px;">Gdje pročitati više o ostvarivanju odgode plaćanja dospjele obveze PDV-a?&#160;</a></p><p>Više možete pročitati u&#160;<a href="https&#58;//narodne-novine.nn.hr/clanci/sluzbeni/2020_04_43_896.html" target="_blank">Pravilniku o izmjenama i dopunama Pravilnika o provedbi Općeg poreznog zakona</a>&#160;(<a href="/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro2629" target="_blank">Redakcijski pročišćeni tekst​</a>).<br></p><p>
+         <br>
+      </p><h4>IZNAJMLJIVAČI<br></h4><p>
+         <a href="#" name="covid20" id="covid20" target="_blank" style="padding-top&#58;130px;">Koje su obveze iznajmljivača i koji su rokovi za plaćanje paušalnog poreza na dohodak?</a></p><p>Svim iznajmljivačima - poreznim obveznicima koji ostvaruju dohodak po osnovi iznajmljivanja stanova, soba i postelja putnicima i turistima i organiziranja kampova utvrđuje se poreznim rješenjem godišnji paušalni dohodak, godišnji paušalni porez na dohodak i prirez porezu na dohodak. Godišnji paušalni porez na dohodak i prirez porezu na dohodak plaća se tromjesečno odnosno do kraja svakog tromjesečja u visini ¼ godišnjeg paušalnog poreza na dohodak i prireza porezu na dohodak.</p><div>
+         <br>
+      </div><p>
+         <a href="#" name="covid21" id="covid21" style="padding-top&#58;130px;">Mogu li iznajmljivači ostvariti odgodu plaćanja paušalnog poreza?</a></p><p>Iznajmljivači koji su podnijeli zahtjev za odgodom plaćanja poreza do 30.3.2020., za obvezu koja je dospjela 31.3.2020. ostvarili su pravo na odgodu plaćanja te obveze do 30.6.2020., te se ista neće otpisati.</p><p>
+         <br>
+      </p><p>
+         <a href="#" name="covid22" id="covid22" style="padding-top&#58;130px;">Mogu li iznajmljivači biti oslobođeni plaćanja paušalnog poreza?</a></p><p>Svim iznajmljivačima Porezna uprava, bez obveze podnošenja posebnog zahtjeva, otpisuje obvezu poreza koja se odnosi na drugo tromjesečje odnosno koju bi bili dužni platiti do kraja drugog tromjesečja tj. do 30.6.2020. godine.&#160;</p><div>
+         <br>
+         <h4>ROK ZA PODNOŠENJE PRIJAVE POREZA NA DOBIT​<br></h4><p>
+            <a href="#" name="covid23" id="covid23" style="padding-top&#58;130px;">Koji je rok za podnošenje prijave i plaćanje obveze poreza na dobit za 2019. godinu?</a></p><p>Iznimno od posebnog propisa o oporezivanju dobiti rok za podnošenje prijave poreza na dobit i rok dospijeća porezne obveze, za 2019. godinu je promijenjen&#58;&#160;</p><ul><li><p>rok za podnošenje prijave poreza produžen je do 30. lipnja 2020.&#160;</p></li><li><p>​rok dospijeća utvrđene obveze poreza na dobit je 31. srpnja 2020.&#160;</p></li></ul><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid24" id="covid24" style="padding-top&#58;130px;">Koji su rokovi za predaju ostalih obrazaca i izvješća za koje je propisana obveza predaje uz&#160; Prijavu poreza na dobit za 2019. godinu?</a></p><p>Promijenjeni rokovi podnošenja i plaćanja javnih davanja odnose se i na sve druge obrasce i izvješća koja se u skladu posebnim propisima o oporezivanju dobiti i drugim posebnim propisima podnose uz Prijavu poreza na dobit ili za iste obveza podnošenja Poreznoj upravi dospijeva s krajnjim rokom propisanim za podnošenje Prijave poreza na dobit, kao što je obračun spomeničke rente i turističke članarine, statističko izvješće o dospjelim, a nenaplaćenim računima, izvješće o obvezi doprinosa po osnovi obavljanja druge djelatnosti, izvješća koja dostavljaju korisnici poreznih olakšica kao i druga propisana izvješća, obrasci ili obrazloženja.<br></p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid25" id="covid25" style="padding-top&#58;130px;">Na koje porezne obveznike se ne primjenjuju odredbe o odgodi rokova za podnošenje prijave i plaćanje obveze poreza na dobit za 2019. godinu?&#160;</a></p><p>Promijenjeni rokovi se ne odnose na porezne obveznike čije obveze ne dospijevaju četiri mjeseca nakon isteka poreznog razdoblja već osam ili trideset dana nakon isteka poreznog razdoblja, a to su porezni obveznici koji su dužni podnijeti Prijavu poreza na dobit&#58; uslijed statusnih promjena (spajanje, pripajanje, podjela), radi otvaranja stečajnog postupka, radi okončanja postupka likvidacije i radi okončanja poslovanja sukladno posebnim propisima (npr. prestanak društva bez postupka likvidacije).&#160;&#160;</p><p>&#160;<br></p><h4>​​PRAVO NA OSLOBOĐENJE OD OBVEZE DOPRINOSA ZA SUFINANCIRANE NETO PLAĆE​<br></h4><p>
+            <a href="#" name="covid26" id="covid26">Može li porezni obveznik korisnik potpore za očuvanje radnih mjesta koju isplaćuje Hrvatski zavod za zapošljavanje biti oslobođen od obveze plaćanja doprinosa?</a></p><p>Porezni obveznik koji je ostvario mjeru potpore za očuvanje radnih mjesta koju isplaćuje Hrvatski zavod za zapošljavanje bit će oslobođen obveze plaćanja doprinosa za iznos isplaćene sufinancirane neto plaće po osnovi potpore. Navedeno se ostvaruje na temelju mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće.<br></p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid27" id="covid27">Mora li i kada porezni obveznik korisnik potpore za očuvanje radnih mjesta koju isplaćuje Hrvatski zavod za zapošljavanje podnijeti Obrazac JOPPD?</a></p><p>Porezni obveznik dužan je obračunati plaću i sva javna davanja i prikazati isplatu plaće u Obrascu JOPPD na dan isplate plaće na isti način (korištenjem istih šifri) kao i kod svake druge isplate plaće.</p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid28" id="covid28">Ima li poduzetnik koji je ostvario potporu za očuvanje svog radnog mjesta pravo na oslobođenje od obveze doprinosa?</a></p><p>Porezni obveznik koji temeljem samostalne djelatnosti (obrtnik, slobodna zanimanja i ostali) ostvaruje potporu za očuvanje svog radnog mjesta, a koji je obveznik&#160; obračuna i iskazivanja obveze doprinosa za obvezna osiguranja prema propisanoj osnovici u Obrascu JOPPD ili je obveznik&#160; mjesečne obveze doprinosa utvrđene rješenjem Porezne uprave ima pravo na oslobođenje od obveze doprinosa najviše do iznosa isplaćene potpore. Navedeno pravo proizlazi iz mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće.<br></p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid29" id="covid29">Kako će se utvrđivati iznos obveze doprinosa za koji se može ostvariti oslobođenje na temelju mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće ?</a></p><p>U slučaju isplate potpore za ožujak u iznosu 3.250,00 kn najviši iznos oslobođenja obveznih doprinosa obračunava se na osnovicu za obračun doprinosa u iznosu 4.062,51 kn – iznosi 1.482,81, a u slučaju isplate potpore za travanj i svibanj u iznosu 4.000,00 kn najviši iznos oslobođenja obveznih doprinosa obračunava se na osnovicu za obračun doprinosa u iznosu 5.000,00 kn – iznosi 1.825,00, ovisno o isplaćenoj visini sufinancirane neto plaće. U slučaju isplate sufinancirane neto plaće niže odnosno potpore niže od iznosa 3.250,00 tj. 4.000,00 kn oslobođenje doprinosa utvrđuje se za iznos isplaćene sufinancirane neto plaće.</p><ul><li><p>Za radnika za kojeg poslodavac već koristi oslobođenje od obveze doprinosa NA plaću (prvo zapošljavanje, mlade osobe), oslobođenje od obveze doprinosa za sufinancirane neto plaće utvrdit će se za obveze doprinose IZ plaće.&#160;</p></li><li><p>Za radnika za kojega poslodavac već koristi djelomično oslobođenje od obveze doprinosa NA plaću (umanjenje osnovice za 25% minimalne plaće), oslobođenje od obveze doprinosa za sufinancirane neto plaće utvrdit će se za obveze doprinose IZ plaće i za 75% doprinosa NA plaću obračunanog na svotu minimalne plaće.</p></li><li><p>Za osiguranika po osnovi obavljanja samostalne djelatnosti koji od te djelatnosti utvrđuje dohodak u paušalnom iznosu i kojemu je mjesečna osnovica za obračun doprinosa niža od iznosa sufinancirane neto plaće, oslobođenje od obveze doprinosa utvrdit će se u visini obveze doprinosa utvrđene rješenjem Porezne uprave.&#160;</p></li><li><p>Za osiguranika po osnovi obavljanja samostalne djelatnosti koji od te djelatnosti utvrđuje dohodak ili dobit i kojemu je mjesečna osnovica za obračun doprinosa viša od iznosa sufinancirane neto plaće oslobođenje od obveze doprinosa utvrdit će se u visini doprinosa utvrđenih prema iznosu sufinancirane neto plaće. Isto se primjenjuje i za radnika kojemu poslodavac isplati veću plaću od iznosa sufinancirane potpore.</p></li></ul><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid30" id="covid30">Na koji način porezni obveznik će ostvariti pravo na oslobađanje od plaćanja doprinosa na temelju mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće?</a></p><p>Porezna uprava će po službenoj dužnosti na temelju podataka razmijenjenih s Hrvatskim zavodom za zapošljavanje utvrditi oslobođenje - umanjenjem obveze na porezno-knjigovodstvenoj kartici poreznog obveznika. Ističemo da za navedeno oslobođenje porezni obveznik nije dužan podnijeti nikakav zahtjev.</p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid31" id="covid31">Mora li porezni obveznik platiti doprinose kojih će biti oslobođen na temelju mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće u trenutku isplate plaće odnosno podnošenja Obrasca JOPPD?</a></p><p>Porezni obveznik primatelj potpore za očuvanje radnih mjesta, bit će prema mjeri Oslobođenje od obveze doprinosa za sufinancirane neto plaće oslobođen od plaćanja doprinosa na iznos isplaćene sufinancirane plaće. Stoga navedeni porezni obveznik&#160; nije dužan platiti&#160; iznose doprinosa za obvezno mirovinsko osiguranje na temelju generacijske solidarnosti (I stup), obvezno mirovinsko osiguranje na temelju individualne kapitalizirane štednje (II stup), dodatni doprinos za mirovinsko osiguranje za staž osiguranja s povećanim trajanjem i obvezno zdravstveno osiguranje do iznosa isplaćene sufinancirane plaće odnosno do&#160; iznosa isplaćene potpore.&#160;</p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid32" id="covid32">Mora li porezni obveznik platiti iznos razlike doprinosa za koji nije ostvario oslobođenje od plaćanja doprinosa za iznos sufinancirane neto plaće?</a></p><p>Ako porezni obveznik isplati višu plaću i/ili se zaduži za doprinose više od iznosa isplaćene sufinancirane neto plaće po osnovi potpore za očuvanje radnih mjesta dužan je platiti iznos razlike doprinosa za koji nije ostvario oslobođenje. Međutim napominjemo da osim mjere za očuvanje radnih mjesta te time i mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće, porezni obveznik može ostvariti i mjeru Odgode i/ili obročne otplate dospjele porezne obveze i mjeru Oslobođenje od podmirivanja poreznih obveza.&#160;&#160;</p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid33" id="covid33">Hoće li se izgubiti prava koja proizlaze iz iznosa oslobođenih doprinosa u slučaju ostvarenja mjere Oslobođenje od obveze doprinosa za sufinancirane neto plaće i/ili mjere Oslobođenje od podmirivanja poreznih obveza?&#160;</a></p><p>Budući da se temeljem obveznih doprinosa ostvaruju prava (zdravstvena skrb, mirovina…) te provode ostali porezni postupci, oslobođene obveze doprinosa za potrebe tih ostalih poreznih postupaka smatrat će se plaćenima, jer ,u pravilu,&#160; Državni proračun preuzima obveze tih doprinosa.&#160;</p><p>
+            <br>
+         </p><p>
+            <a href="#" name="covid34" id="covid34"><span style="color&#58;unset;">Što da učini</span><span style="color&#58;unset;"> porezni obveznik koji se javlja na natječaj, a na porezno-knjigovodstvenoj kartici mu nije otpisan iznos oslobođene obveze doprinosa?</span></a></p><p>Poreznom obvezniku, koji namjerava predati zahtjev za izdavanjem Potvrde o stanju duga, predlažemo da prije slanja zahtjeva provjeri stanje na porezno-knjigovodstvenoj kartici (putem sustava ePorezna ili putem e-maila/telefona).&#160;</p><p>Ako provjerom utvrdi da stanje na porezno-knjigovodstvenoj kartici nije ispravno potrebno se obratiti nadležnoj ispostavi putem e-maila, telefona ili drugim preporučenim načinima. Porezna uprava će u najkraćem roku provesti umanjenje obveze na porezno-knjigovodstvenoj kartici za iznos oslobođenih doprinosa.<br></p><p>​</p><p>
+            <a href="#" name="covid35" id="covid35">Što ako se naknadno utvrde drugačiji podaci ili se podaci promjene?</a><br></p><p>Ako se temeljem naknadne razmjene podataka s Hrvatskim zavodom za zapošljavanje o stjecateljima potpore za očuvanje radnih mjesta utvrdi drugačije stanje, odobreno oslobođenje od obveze plaćanja doprinosa će se poništiti u visini neosnovano stečenog oslobođenja.&#160;<br></p><p>
+            <br>
+         </p><h4>OVRŠNI POSTUPAK<br></h4><p></p><p>
+            <a href="#" name="covid36" id="covid36">Kako regulirat​i porezni dug tijekom posebnih okolnosti?&#160;</a></p><div><p>Radi namirenja poreznog duga porezni obveznik i porezno tijelo mogu sklopiti upravni ugovor u posebnim okolnostima za dospjele porezne obveze od 20. ožujka do 20. lipnja 2020., a koje nisu obuhvaćene mjerom Odgoda i/ili obročna otplata dospjele porezne obveze i mjerom Oslobođenje od obveze podmirivanja poreznih obveza .<br></p><p>Upravni ugovor u posebnim okolnostima može se sklopiti i za porezni dug koji je prepreka odobravanju mjera plaćanja poreznih obveza ako je veći od 200,00 kuna.<br></p><p>Upravni ugovor u posebnim okolnostima mogu sklopiti i oni porezni obveznici koji ne ispunjavaju uvjete za korištenje mjera plaćanja, a imaju dospjelog poreznog duga.<br></p><p>Za Upravni ugovor u posebnim okolnostima primjenjuju se sljedeće odredbe&#58;​<br></p><div>​<br></div><div><ul><li><p>porezna obveza iskazana na porezno knjigovodstvenoj kartici smatra se usklađenom s poreznim obveznikom, bez potrebe ovjere potvrde o stanju duga izdane od nadležnog poreznog tijela,</p></li><li><p>izraz slobodne volje za sklapanjem upravnog ugovora porezni obveznik će iskazati podnošenjem zahtjeva, a&#160; Porezna uprava potpisom Upravnog ugovora čelnika tijela ili osobe koju čelnik tijela za to ovlasti,</p></li><li><p>upravni ugovor sklapa se na razdoblje do najviše 24 mjeseca uz obračun zakonske zatezne kamate za razdoblje otplate umanjene za 3 postotna boda - trenutno 3,11 %,</p></li><li><p>upravni ugovor može se sklopiti i bez sredstava osiguranja naplate poreznog duga,</p></li><li><p>upravni ugovor može se sklopiti i u slučaju da porezni obveznik na snazi već ima predstečajnu nagodbu, predstečajni sporazum ili upravni ugovor za obveze dospjele prije 9. travnja 2020, uz uvjet da su do dana podnošenja zahtjeva za sklapanje upravnog ugovora podmirene sve dospjele obveze sukladno anuitetnom planu za otplatu predstečajne nagodbe, predstečajnog sporazuma ili anuitetnog plana koji je sastavni dio ranijeg upravnog ugovora.</p></li></ul></div><p>​Zahtjev za sklapanje upravnog ugovora se podnosi nadležnoj ispostavi Porezne uprave putem sustava ePorezna. Porezni obveznici koji nisu korisnici sustava ePorezna, zahtjev mogu poslati poštom.<br></p><p><br></p><p>
+               ​<a href="#" name="covid37" id="covid37">Ovršni p​ostupak za vrijeme trajanja posebnih okolnosti?</a><br></p></div></div><p>Porezna uprava će za vrijeme trajanja posebnih okolnosti primjenjivati posebna pravila u provedbi ovršnog postupka. Posebna pravila primjenjivat će se od 9. travnja 2020. do 20. lipnja 2020.<br></p><p>​Posebna pravila odnose se na pokretanje ovršnog postupka na novčanim sredstvima dužnika radi naplate poreznog duga do 20. lipnja 2020. bez obzira na to za koji bi se dug ovršni postupak trebao pokrenuti i kada je isti dospio.&#160; Dakle, za vrijeme trajanja posebnih okolnosti Porezna uprava će se suzdržati od donošenja rješenja o ovrsi na novčanim sredstvima prema svim poreznim obveznicima kao i od provedbe javne prodaje u započetim postupcima ovrhe na pokretninama. Porezna uprava neće inicirati niti postupke ovrhe na nekretnini za vrijeme trajanja posebnih okolnosti. Međutim, Porezna uprava nastavit će s izdavanjem opomene, ali isključivo s ciljem obavještavanja dužnika o postojanju poreznog duga, kako bi porezni obveznik mogao koristiti ostale mjere koje su predviđene kao pomoć u posebnim okolnostima. Također, Porezna uprava će i dalje provoditi mjere osiguranja naplate poreznog duga donošenjem rješenja o ovrsi pljenidbom pokretnina kao i zasnivanjem založnog prava na nekretninama dužnika&#160;<br></p><p>Napominjemo, kako se rješenja o ovrsi pljenidbom novčanih sredstava koja su zaprimljena na izvršenje kod Financijske agencije prije 9. travnja 2020. neće obustavljati, osim u slučajevima kada su ispunjeni uvjeti za obustavu ovršnog postupka propisani člankom 147. OPZ-a i u slučaju sklapanja upravnog ugovora.</p><p>​</p><p>
+            <a href="#" name="covid38" id="covid38">Kako mogu ostvariti pravo na oslobođenje prema mjeri Oslobođenje od podmirivanja poreznih obveza?&#160;</a></p><p>Porezni obveznici – poduzetnici - koji su podnijeli ili će podnijeti zahtjev za odgodom plaćanja poreznih obveza na temelju mjere Odgoda i/ili obročna otplata dospjele porezne obveze i čiji zahtjev je ili će biti odobren, dokazali su da već imaju poremećaj u poslovanju odnosno da već imaju pad prihoda/primitaka veći od 20%.<br></p><p>Kod te skupine poreznih obveznika, poremećaj u poslovanju može se odraziti i padom prihoda/primitaka većim od 50%. Stoga će kod ovih poreznih obveznika Porezna uprava iz svih dostupnih podataka pratiti ostvarenje prihoda/primitaka u razdoblju od travnja do lipnja 2020. U trenutku kada tim poreznim obveznicima dospijevaju odgođene porezne obveze, na temelju podataka kojima raspolaže Porezna uprava ili po potrebi u komunikaciji s poreznim obveznikom utvrdit će se jesu li ispunjeni uvjeti za oslobođenje od plaćanja poreznih obveza prema mjeri Oslobođenje od podmirivanja poreznih obveza.&#160;</p><p>Prema mjeri Oslobođenje od podmirivanja poreznih obveza oslobođenje se može ostvariti za porezne obveze koje dospijevaju počevši od 1. travnja 2020. do 20. lipnja 2020., pri čemu se ne primjenjuje&#160; za&#58;</p><ul><li><p>porez na dodanu vrijednost&#160;</p></li><li><p>carine i trošarine&#160;</p></li><li><p>doprinos za obvezno mirovinsko osiguranje na temelju individualne kapitalizirane štednje</p></li><li><p>porez i prirez utvrđen na konačne dohotke (dohodak od kapitala, dohodak od imovine i imovinskih prava, dohodak od samostalne djelatnosti koji se plaća u paušalnom iznosu)</p></li><li><p>naknade i davanja na igre na sreću</p></li><li><p>obveze po ranije sklopljenim upravnim ugovorima i</p></li><li><p>reprogramirane obveze iz predstečajnih i stečajnih postupaka.</p></li></ul><p>Poduzetnici kojima je vrijednost godišnjih isporuka u prethodnoj godini iznosila do 7,5 mil kn, u cijelosti se oslobađaju od podmirivanja navedenih poreznih obveza, a poduzetnici kojima je vrijednost godišnjih isporuka u prethodnoj godini iznosila više od 7,5 mil kn oslobađaju se podmirivanja&#160; dospjelih poreznih obveza&#160; razmjerno padu prihoda/primitaka.<br></p><p>Poduzetnici kojima je odobrena ili će biti odobrena mjera Odgoda i/ili obročna otplata dospjele porezne obvezene ne podnose posebni zahtjev za ostvarivanjem mjere Oslobađanje od podmirivanja poreznih obveza.</p><p>Za porezne obveznike koji ostvare pravo na korištenje mjere Oslobođenje od podmirivanja poreznih obveza, oslobođenje će se iskazivati umanjenjem poreznih obveza na porezno-knjigovodstvenoj kartici.</p><p>Prema navedenom, kod poduzetnika koji imaju ili će imati odobrene zahtjeve za odgodom plaćanja porezne obveze, u trenutku dospijeća odgođenih obveza utvrđuje se jesu li ispunjeni uvjeti za oslobođenje od podmirivanja poreznih obveza i u kojim iznosu. Za preostale odgođene obveze&#160; po odgođenom dospijeću poduzetnik mora podmiriti ili zatražiti obročnu otplatu najkasnije 5 dana od dospijeća.<br></p><h4>
+            <br>
+         </h4><h4>DONACIJE I UVOZ<br></h4><p>
+            <a href="#" name="covid39" id="covid39">Koje su novosti u obračunu poreza na dodanu vrijednost kod donacija i uvoza?</a></p><p>DONACIJE</p><p>Porezni obveznici upisani u registar obveznika PDV-a koji doniraju dobra i usluge potrebne za borbu protiv učinaka pandemije bolesti COVID-19 oslobođeni su plaćanja PDV-a na te donacije.</p><p>Na koje donacije se primjenjuje oslobođenje od plaćanja PDV-a?</p><p>Oslobođenje od plaćanja PDV-a primjenjuje se na isporuke dobara i usluga potrebnih za borbu protiv učinaka pandemije bolesti COVID-19 koje su obavljene&#58;</p><ul><li>bez naknade ili protučinidbe</li><li>za isporuke obavljene u ožujku 2020. čija obveza dospijeva do 30. travnja 2020. te isporuke obavljene do 20. lipnja 2020.&#160;</li></ul><p>Imaju li porezni obveznici koji koji doniraju dobra i usluge potrebne za borbu protiv učinaka pandemije bolesti COVID-19 pravo odbiti pretporez za donirana dobra, odnosno obavljene usluge bez naknade?</p><p>Porezni obveznici koji primjenjuju navedeno oslobođenje imaju pravo odbiti pretporez za donirana dobra, odnosno obavljene usluge bez naknade ili protučinidbe.</p><p>
+            <br>
+         </p><p>PDV PRI UVOZU</p><p>Oslobođenje od plaćanja PDV-a pri uvozu</p><p>Europska komisija donijela je 
+            <a href="https&#58;//eur-lex.europa.eu/legal-content/HR/TXT/?uri=OJ&#58;L&#58;2020&#58;103I&#58;TOC" target="_blank">Odluku (EU) 2020/491 оd 3. travnja 2020.​</a> o oslobađanju od carina i PDV-a pri uvozu robe potrebne za borbu protiv učinaka pandemije bolesti COVID-19 tijekom 2020.</p><p>Tko može ostvariti oslobođenje od plaćanja PDV-a pri uvozu na temelju Odluke Europske komisije?</p><p>Korisnici oslobođenja od plaćanja PDV-a pri uvozu su državne organizacije, uključujući državna tijela, javna tijela i ostala javnopravna tijela, ili organizacije koje su odobrila nadležna tijela u Republici Hrvatskoj ili druga osoba koja dobra uvozi u njihovo ime.</p><p>Do kada se primjenjuje oslobođenje od plaćanja PDV-a pri uvozu na temelju Odluke Europske komisije?</p><p>Oslobođenje od plaćanja PDV-a pri uvozu na temelju Odluke Europske komisije primjenjuje se na dobra koja se uvoze do 31. srpnja 2020.</p><p>2. Plaćanje PDV-a pri uvozu</p><p>Za vrijeme trajanja posebnih okolnosti PDV pri uvozu ne plaća se u roku za plaćanje uvoznih davanja, već se smatra da je plaćen, ako ga porezni obveznik iskaže kao obvezu u prijavi PDV-a.</p><p>Tko može iskazati obvezu PDV-a pri uvozu u prijavi PDV-a?</p><p>Obvezu PDV-a pri uvozu u prijavi PDV-a može iskazati svaki porezni obveznik upisan u registar obveznika PDV-a.</p><p>Od kada je moguće iskazati obvezu PDV-a pri uvozu u prijavi PDV-a?</p><p>Obvezu PDV-a pri uvozu u prijavi PDV-a moguće je iskazati za uvoz dobara obavljen od 9. travnja 2020. do 20. lipnja 2020.</p><div>
+            <br>​<br></div><p>
+            <br>
+         </p><p>​<br><br></p>​<br></div></div><p style="color&#58;#666666;">
+      <br>
+   </p><p style="color&#58;#666666;">
+      <br>
+   </p><p style="color&#58;#666666;">
+      <br>
+   </p><p>
+   <a href="#" name="covid1" id="covid1" style="padding-top&#58;130px;">H</a><a href="#" name="covid1" id="covid1" style="background-color&#58;#ffffff;padding-top&#58;130px;">oće li Porezna uprava u posebnim okolnostima proglašene epidemije Covid-19 obustaviti sve postupke ovrhe prema svim poreznim obveznicima?</a></p><div><p>​Mjere Vlade Republike Hrvatske donesene povodom nastupa posebnih okolnosti, propisane su dopunama Općeg poreznog zakona i dopunama Pravilnika o provedbi Općeg poreznog zakona te omogućavaju odgodu plaćanja poreza, doprinosa i drugih javnih davanja na rok od tri mjeseca uz mogućnost dodatna tri mjeseca ako se takve okolnosti nastave. Dakle, riječ je o odgodi plaćanja, za vrijeme koje se neće obračunavati kamate. Nakon proteka roka odgode plaćanja, predviđena je mogućnost obročnog plaćanja tih odgođenih obveza na rok od 24 mjeseca bez obračuna kamata.<br></p><p>Navedenim mjerama za nastup posebnih okolnosti nije propisan postupak obustave ovrhe, odnosno izvršenja svih mjera prisilne naplate prema svim dužnicima.&#160;<br></p><p>Međutim napominjemo da i nadalje vrijede ostale odredbe Općeg poreznog zakona (dalje u tekstu&#58; OPZ). Naime, obustava ovrhe se provodi pod uvjetima i na način propisan člankom 147. OPZ-a. Isto tako, ovrha će se obustaviti i ako je za dug koji je predmet ovrhe sklopljen upravni ugovor pod uvjetima i na način propisan člancima 101. do 103. OPZ-a. Sklapanje upravnog ugovora u skladu s propisanim uvjetima je redovan postupak koji će Porezna uprava provoditi i u vrijeme trajanja posebnih okolnosti, neovisno o mjerama donesenim radi nastupa posebnih okolnosti.&#160;&#160;<br></p><p>
+      <br>
+   </p></div><p>
+   <a href="#" name="covid2" id="covid2" style="padding-top&#58;130px;">Ima li poduzetnik pravo na otpis poreznih obveza u posebnim okolnostima proglašene epidemije Covid-19?</a></p><p>Otpis poreznog duga zbog teškog materijalnog stanja za fizičke osobe, otpis duga zbog nastupa zastare prava na naplatu i u drugim slučajevima otpisa predviđenih OPZ-om i dalje će se provoditi prema već postojećim odredbama, neovisno o donesenim mjerama zbog nastupa posebnih okolnosti.&#160;<br></p><p> 
+   <br> 
+</p><p>
+   <a href="#" name="covid3" id="covid3" style="padding-top&#58;130px;">Tko može biti podnositelj zahtjeva za korištenje mjere plaćanja poreza?</a></p><div><p>Zahtjev za korištenje mjera plaćanja poreza može podnijeti poduzetnik iz članka 44. stavka 1. OPZ-a. To znači svaki poduzetnik, pravna osoba ili fizička osoba. Pod fizičkom osobom podrazumijevamo obrtnike (bez obzira utvrđuje li dohodak na temelju poslovnih knjiga ili je obrtnik paušalista), fizička osoba koja se bavi slobodnim zanimanjem, poljoprivrednik, iznajmljivač – paušalista i ostali poduzetnici koji učine vjerojatnim da nisu u mogućnosti platiti dospjele porezne obveze.<br></p><p> Podnositelj zahtjeva, na dan podnošenja zahtjeva ne smije mati dospjelog neplaćenog poreznog duga, odnosno smatrat će se da nema dospjelog neplaćenog poreznog duga ako je na dan podnošenja zahtjeva iznos dospjelog neplaćenog poreznog duga manji od 200,00 kuna, koliko iznosi najmanji trošak ovršnog postupka sukladno članku 170. stavku 3. OPZ-a.&#160;</p><p>
+      <br>
+   </p></div><p>
+   <a href="#" name="covid4" id="covid4" style="padding-top&#58;130px;">Može li porezni obveznik koji ima reprogramirane porezne obveze podnijeti zahtjev za odgodu dospjelih poreznih obveza u posebnim okolnostima proglašene epidemije Covid-19?</a></p><div><p>Postojanje ranije sklopljenog upravnog ugovora, predstečaja i slično, nije zapreka za odgodu plaćanja pod uvjetom da su već dospjele obveze po anuitetnom planu podmirene i da na poreznoj knjigovodstvenoj kartici nema dospjelog poreznog duga većeg od 200,00 kuna, u trenutku podnošenja zahtjeva.<br></p><p>Sve obveze po anuitetnim planovima koje po ranijim upravnim ugovorima dospijevaju nakon podnošenja zahtjeva za odgodu (ako se odgoda odobri), također će biti odgođene na rok od 3 mjeseca. Za obveze PDV-a to vrijedi samo ako su ispunjeni uvjeti iz članka 71.c stavka 2. Pravilnika.<br></p>
+   <br>
+</div><p>
+   <a href="#" name="covid5" id="covid5" style="padding-top&#58;130px;">Može li se sklopiti upravni ugovor za obveze koje nisu predmet korištenja mjera plaćanja poreza?</a></p><div><p>Upravni ugovor može se sklopiti za obveze koje nisu predmet korištenja mjera plaćanja poreza. Ugovor se sklapa pod uvjetima i na način propisan člancima 101. do 103. OPZ-a.<br></p><p>Ukoliko porezni obveznik ima dug koji još nije obuhvaćen postupcima naplate prije podnošenja zahtjeva može prići sklapanju upravnog ugovora te na taj način osigurati ispunjenje uvjeta za mjere plaćanja poreza odnosno za odgodu dospjelih poreznih obveza.​<br></p></div><p> 
+   <br> 
+</p><p>
+   <a href="#" name="covid6" id="covid6" style="padding-top&#58;130px;">Može li obveza PDV-a za 2.mjesec 2020, koja dospijeva 31.03.2020. biti predmet korištenja mjera plaćanja poreza?</a></p><div> 
+   <span class="ms-rteFontSize-3"></span><span style="color&#58;unset;font-size&#58;16px;">Ne. Porezni obveznik može podnijeti zahtjev za korištenje mjere plaćanja poreza u posebnim okolnostima, ako ispunjava uvjete za ovu mjeru. Naime, kao što je i navedeno u Pravilniku o provedbi OPZ-a, porezni obveznik na dan podnošenja zahtjeva ne smije imati dospjelog neplaćenog duga, dakle sve obveze koje su dospjele do podnošenja zahtjeva moraju biti plaćene ili njihovo dospijeće mora biti odgođeno na neki drugi način, primjerice kroz institut upravnog ugovora.</span>
+   <p>Obveza PDV-a za drugi mjesec dospijeva 31.3.2020. što može biti prije ili nakon podnošenja zahtjeva. Podnositelju zahtjeva ako udovoljava drugim kriterijima iz Pravilnika, odobrit će se odgoda plaćanja, a obveza PDV-a za drugi mjesec treba biti plaćena. Ako porezni obveznik ne može ovu obvezu podmiriti odmah po dospijeću, može za nju zatražiti obročnu otplatu putem upravnog ugovora.<br></p><p>Ne bude li obveznik poštivao odobreno obročno plaćanje obveze PDV-a za veljaču 2020., nema zakonske osnove da se za isti dug ne pokrenu mjere naplate.<br></p><p>
+      <br>
+   </p></div><p>
+   <a href="#" name="covid7" id="covid7" style="padding-top&#58;130px;">Može li se odobriti odgoda plaćanja poreza za dospjelu obvezu za PDV za 3. I 4 mjesec obrtnika?​</a></p><p>U pravilu ne. Obrtnici koji su obveznici poreza na dohodak i porez na dodanu vrijednost utvrđuju prema naplaćenim naknadama ne mogu ostvariti mjere plaćanja poreza odnosno odgodu porezne obveze poreza na dodanu vrijednost.<br></p><p> 
+   <br> 
+</p><p>
+   <a href="#" name="covid8" id="covid8" style="padding-top&#58;130px;">Ako sam korisnik potpore za samozapošljavanje mogu li koristiti mjere za plaćanje poreza odnosno dobiti odgodu dospijeća poreznih obveza?</a></p><p>Da. Poticaji samozapošljavanja ne utječu na mogućnost ostvarivanja mjera plaćanja poreza.<br></p><p> 
+   <br> 
+</p><p>
+   <a href="#" name="covid9" id="covid9" style="padding-top&#58;130px;">Zašto ste ograničili mjeru na dug od 200,00 kn, a ne na 10.000,00&#160;kn?</a></p><div><p>Ukoliko porezni obveznik ima dug koji još nije obuhvaćen postupcima naplate prije podnošenja zahtjeva može prići sklapanju upravnog ugovora te na taj način osigurati ispunjenje uvjeta za mjere plaćanja poreza odnosno za odgodu dospjelih poreznih obveza. Dakle i ovi porezni obveznici mogu ostvariti mjere, ali prethodno moraju regulirati već postojeća dugovanja, što bi bili u obvezi i da nisu donijete mjere za plaćanje poreza.<br></p><p>Iznos duga od 200,00 kn predstavlja najmanji trošak ovršnog postupka.<br></p><p>
+      <br>
+   </p><div><p>
+         <a href="#" name="covid10" id="covid10" style="padding-top&#58;130px;">Smatra li se porezni obveznik koji je obveznik plaćanja poreza na dohodak od imovine i imovinskih prava (najam i zakup), poduzetnikom iz članka 44. stavka 1. OPZ-a?</a></p><p>Fizičke osobe koje ostvaruju dohodak od imovine na temelju najma ili zakupa pokretnina i nekretnina ne smatraju se poduzetnicima. Isti ne mogu ostvariti pravo na odgodu plaćanja poreznih obveza po toj osnovi, bez obzira na koji način utvrđuju porez na dohodak temeljem rješenja ili poslovnih knjiga.<br></p><p>
+         <br>
+      </p><p>
+         <a href="#" name="covid11" id="covid11" style="padding-top&#58;130px;">Smatra li se pore​zni obveznik iznajmljivač koji obavlja&#160;djelatnost iznajmljivanja i organiziranja smještaja u turizmu, poduzetnikom iz članka 44. stavka 1. OPZ-a?​</a></p><p>​​Iznajmljivači koji obavljaju djelatnost iznajmljivanja i organiziranja smještaja u turizmu te porez na dohodak plaćaju u paušalnom iznosu smatraju se poduzetnicima sukladno odredbama Općeg poreznog zakona te mogu&#160; podnijeti Zahtjev za odgodu plaćanja uslijed posebnih okolnosti i/ili obročnu otplatu dospjelih obveza.​<br></p><p>
+         <br>
+         <br>
+      </p></div></div></div>
+				</div>
+				
+			</div>
+		
+<div style='display:none' id='hidZone'><menu class="ms-hide">
+	<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute(&#39;helpLink&#39;), MenuWebPart.getAttribute(&#39;helpMode&#39;))" text="Pomoć" type="option" style="display:none">
+
+	</ie:menuitem>
+</menu></div>
+                            </span>
+                            
+                        </div>
+                        <div id="v5-sidebar-content">
+                            <!---->
+                        </div>
+                    </section>
+                </main>
+                <!--Sadrzaj koji ce se dinamicno dohvacati END-->
+                <!--Komponenta za footer START-->
+                
+            </div>
+
+            <footer class="container-fluid px-0">
+                <div class='bg-footer links'>
+<div class='container px-0'>
+<div class='d-flex flex-wrap'>
+<div class='col-lg-3 flex-column pseudo-border-bottom pb-2 py-lg-0'>
+<a href='https://www.porezna-uprava.hr/HR_javna_nabava' target='_self'>Javna nabava</a>
+<a href='https://www.porezna-uprava.hr/HR_zaposlenja' target='_self'>Zaposlenja</a>
+<a href='https://www.porezna-uprava.hr/HR_projekti/Stranice/Projekti.aspx' target='_self'>Projekti</a>
+<a href='https://www.porezna-uprava.hr/Stranice/DrzavniBiljezi.aspx' target='_self'>Državni biljezi</a>
+</div>
+<div class='col-lg-3 flex-column pseudo-border-bottom pb-2 py-lg-0'>
+<a href='https://www.porezna-uprava.hr/bi/Stranice/GDPR.aspx' target='_self'>GDPR - zaštita osobnih podataka</a>
+<a href='https://www.porezna-uprava.hr/bi/Stranice/InformacijskaSigurnost.aspx' target='_self'>Informacijska sigurnost</a>
+<a href='https://www.porezna-uprava.hr/bi/Stranice/PravoNaPristupInformacijama.aspx' target='_self'>Pravo na pristup informacijama</a>
+<a href='https://savjetovanja.gov.hr/' target='_blank'>Savjetovanje s javnošću</a>
+</div>
+<div class='col-lg-3 flex-column pseudo-border-bottom pb-2 py-lg-0'>
+<a href='https://www.porezna-uprava.hr/HR_linkovi/Stranice/Linkovi-početna.aspx' target='_self'>Linkovi</a>
+<a href='https://www.porezna-uprava.hr/HR_mapa_weba' target='_self'>Mapa weba</a>
+<a href='https://www.porezna-uprava.hr/bi/Stranice/Uvjeti_koristenja.aspx' target='_self'>Uvjeti korištenja</a>
+<a href='https://www.porezna-uprava.hr/Stranice/vodici.aspx' target='_self'>Vodiči za ispunjavanje por. obveza</a>
+</div>
+<div class='col-lg-3 flex-column pseudo-border-bottom pb-2 py-lg-0'>
+<a href='https://www.porezna-uprava.hr/Adresar/Stranice/default.aspx' target='_blank'>Kontakt</a>
+<a href='https://www.porezna-uprava.hr/HR_press' target='_self'>Mediji</a>
+<a href='https://www.porezna-uprava.hr/Stranice/TraziRacuneUloviKune.aspx' target='_blank'>Nagradna igra</a>
+<a href='https://www.porezna-uprava.hr/Stranice/Izjava_o_pristupacnosti.aspx' target='_self'>Izjava o pristupačnosti</a>
+</div>
+</div>
+</div>
+</div>
+<div class='modal-IE col p-3'><div class='isIE'></div></div>
+<div class='modal-cookie col p-3'><div class='cookie'></div></div>
+<div class='bg-footer copy'><div class='container'>
+<p class='text-white mb-2'>Sva prava pridržana © 2020 Republika Hrvatska, Ministarstvo financija, Porezna uprava. Sva prava pridržana.</p>
+<p class='text-white mb-2'>Sadržaji s ovih stranica se mogu prenositi bez posebne dozvole uz navođenje izvora</p>
+</div></div>
+
+            </footer>
+                <!--Komponenta za footer END-->
+
+            
+               
+            <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/spHelper.js?v=28">//<![CDATA[                
+                //]]></script>
+            <script src="/_layouts/15/In2.Vuk2019.Sp.Master/js/puCommon.js?v=12">//<![CDATA[                
+                //]]></script>
+
+        </div>
+    <div id="DeltaFormDigest">
+<script type="text/javascript">//<![CDATA[
+        var formDigestElement = document.getElementsByName('__REQUESTDIGEST')[0];
+        if (!((formDigestElement == null) || (formDigestElement.tagName.toLowerCase() != 'input') || (formDigestElement.type.toLowerCase() != 'hidden') ||
+            (formDigestElement.value == null) || (formDigestElement.value.length <= 0)))
+        {
+            formDigestElement.value = '0xF72AA361D3CD1D36C55D0D640BA95B54370D7F9FC8950F2C4345D94C8D5F46A5AE2705DF33FFED1E9F72642D2CC2CC8F0ECAC8399D7151280A39F2E7DDBCE6A3,26 Jan 2021 13:49:36 -0000';_spPageContextInfo.updateFormDigestPageLoaded = new Date();
+        }
+        //]]>
+        </script>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.SPThemeUtils && SPThemeUtils.ApplyCurrentTheme(true); IsSPSocialSwitchEnabled = function() { return true; };var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{263915b6-1cda-4107-b2e3-c5e5a22ff8e1}",itemId: 91,recycleBinEnabled: true,enableMinorVersioning: false,enableModeration: true,forceCheckout: false,rootFolderUrl: "\u002fStranice",itemPermissions:{High:16,Low:200769}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+};
+function __RegisterWebPartPageCUI() {
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js");}
+_spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';g_spPreFetchKeys.push('sp.core.js');
+            ExecuteOrDelayUntilScriptLoaded(
+                function() 
+                {                    
+                    Srch.ScriptApplicationManager.get_current().states = {"webUILanguageName":"hr-HR","webDefaultLanguageName":"hr-HR","QueryDateTimeCulture":1050,"timeZoneOffsetInHours":1,"contextUrl":"https://www.porezna-uprava.hr","contextTitle":"Porezna uprava","supportedLanguages":[{"id":1025,"label":"Arapski"},{"id":1093,"label":"Bengalski"},{"id":1026,"label":"Bugarski"},{"id":1027,"label":"Katalonski"},{"id":2052,"label":"Kineski (pojednostavljeni)"},{"id":1028,"label":"Kineski (tradicionalni)"},{"id":1050,"label":"Hrvatski"},{"id":1029,"label":"Češki"},{"id":1030,"label":"Danski"},{"id":1043,"label":"Nizozemski"},{"id":1033,"label":"Engleski"},{"id":1035,"label":"Finski"},{"id":1036,"label":"Francuski"},{"id":1031,"label":"Njemački"},{"id":1032,"label":"Grčki"},{"id":1095,"label":"Gudžarati"},{"id":1037,"label":"Hebrejski"},{"id":1081,"label":"Hindski"},{"id":1038,"label":"Mađarski"},{"id":1039,"label":"Islandski"},{"id":1057,"label":"Indonezijski"},{"id":1040,"label":"Talijanski"},{"id":1041,"label":"Japanski"},{"id":1099,"label":"Kannada"},{"id":1042,"label":"Korejski"},{"id":1062,"label":"Latvijski"},{"id":1063,"label":"Litavski"},{"id":1086,"label":"Malajski"},{"id":1100,"label":"Malajalamski"},{"id":1102,"label":"Marathi"},{"id":1044,"label":"Norveški"},{"id":1045,"label":"Poljski"},{"id":1046,"label":"Portugalski (Brazil)"},{"id":2070,"label":"Portugalski (Portugal)"},{"id":1094,"label":"Pandžapski"},{"id":1048,"label":"Rumunjski"},{"id":1049,"label":"Ruski"},{"id":3098,"label":"Srpski (ćirilica)"},{"id":2074,"label":"Srpski (latinica)"},{"id":1051,"label":"Slovački"},{"id":1060,"label":"Slovenski"},{"id":3082,"label":"Španjolski (Španjolska)"},{"id":2058,"label":"Španjolski (Meksiko)"},{"id":1053,"label":"Švedski"},{"id":1097,"label":"Tamilski"},{"id":1098,"label":"Telugu"},{"id":1054,"label":"Tajski"},{"id":1055,"label":"Turski"},{"id":1058,"label":"Ukrajinski"},{"id":1056,"label":"Urdski"},{"id":1066,"label":"Vijetnamski"}],"navigationNodes":[{"id":1001,"name":"Sve","url":"{searchcenterurl}/results.aspx","promptString":"Pretraži sve"},{"id":1002,"name":"Osobe","url":"{searchcenterurl}/peopleresults.aspx","promptString":"Pretraži osobe"},{"id":1003,"name":"Razgovori","url":"{searchcenterurl}/conversationresults.aspx","promptString":"Pretraži razgovori"},{"id":0,"name":"Ovo web-mjesto","url":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","promptString":"Pretraži ovo web-mjesto"}],"webUILanguageDirectory":"hr-HR","showAdminDetails":false,"defaultPagesListName":"Stranice","isSPFSKU":false,"defaultQueryProperties":{"culture":1050,"uiLanguage":1050,"summaryLength":180,"desiredSnippetLength":90,"enableStemming":true,"enablePhonetic":false,"enableNicknames":false,"trimDuplicates":true,"bypassResultTypes":false,"enableInterleaving":true,"enableQueryRules":true,"processBestBets":true,"enableOrderingHitHighlightedProperty":false,"hitHighlightedMultivaluePropertyLimit":-1,"processPersonalFavorites":true}};
+                    Srch.U.trace(null, 'SerializeToClient', 'ScriptApplicationManager state initialized.');
+                }, 'Search.ClientControls.js');var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+var g_clientIdDeltaPlaceHolderUtilityContent = "DeltaPlaceHolderUtilityContent";
+
+                    ExecuteOrDelayUntilScriptLoaded(
+                        function() 
+                        {
+                            if ($isNull($find('ctl00_ctl58_csr')))
+                            {
+                                var sb = $create(Srch.SearchBox, {"delayLoadTemplateScripts":true,"initialPrompt":"Pretraga","messages":[],"queryGroupNames":["Default"],"renderTemplateId":"~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchBox.js","resultsPageAddress":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","serverInitialRender":true,"showDataErrors":true,"showQuerySuggestions":false,"states":{},"tryInplaceQuery":false}, null, null, $get("ctl00_ctl58_csr"));
+                                sb.activate('Pretraga', 'ctl00_ctl58_csr_sbox', 'ctl00_ctl58_csr_sboxdiv', 'ctl00_ctl58_csr_NavButton', 'ctl00_ctl58_csr_AutoCompList', 'ctl00_ctl58_csr_NavDropdownList', 'ctl00_ctl58_csr_SearchLink', 'ms-srch-sbprogress', 'ms-srch-sb-prompt ms-helperText');
+                            }
+                        }, 'Search.ClientControls.js');//]]>
+</script>
+</form><span id="DeltaPlaceHolderUtilityContent"></span>
+<script>
+(function(d){var s = d.createElement("script");s.setAttribute("data-account", "sfKH9pd4lK");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)
+
+</script>
+    </body>
+</html>

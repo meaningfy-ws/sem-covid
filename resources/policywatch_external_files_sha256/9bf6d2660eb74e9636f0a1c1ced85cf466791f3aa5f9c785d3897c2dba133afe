@@ -1,0 +1,797 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 9 ]><html class="no-js ie-legacy" lang="sv"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="sv" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PHH7R6N');
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>FAQ Corona</title>
+    <script>
+        (function () {
+            document.documentElement.className =
+                document.documentElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') + (' js ');
+        })();
+    </script>
+    <noscript>Webbplatsen kommer inte fungerar helt korrekt om er webbläsares JavaScript funktion är inaktiverad.</noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <!-- //TODO Get OG meta data -->
+
+                        <meta name="description" content="Vad inneb&amp;auml;r Bryggl&amp;aring;net?
+F&amp;ouml;r Bryggl&amp;aring;net g&amp;auml;ller f&amp;ouml;ljande villkor:
+&amp;nbsp;
+Tillsammans har vi en dialog kring hur stort l&amp;aring;nebeloppet kan t&amp;auml;nkas bli givet dina individuella behov och de int&amp;auml;ktsbortfall som orsakats av coronavirusets spridning.
+&amp;nbsp;
+
+Indiv..." />
+
+                <meta property="og:title" content="FAQ Corona" />
+        <meta name="twitter:title" content="FAQ Corona">
+<meta property="og:url" content="https://www.almi.se/information-med-anledning-av-coronaviruset/faq-corona/" />
+<link href="https://www.almi.se/information-med-anledning-av-coronaviruset/faq-corona/" rel="canonical" />        <meta property="og:image" content=" " />
+        <meta property="og:locale" content="sv_SE" />
+            <meta property="og:site_name" content="Almi Företagspartner" />
+    
+
+    <meta property="og:image" content="https://www.almi.se/contentassets/b32ade6fb1fa4a7b9e4498f01f9384f1/brygglan-1400-v4.jpg " />
+    <meta name="twitter:card" content="https://www.almi.se/contentassets/b32ade6fb1fa4a7b9e4498f01f9384f1/brygglan-1400-v4.jpg">
+    
+    <meta property="og:description" content="Vad inneb&amp;auml;r Bryggl&amp;aring;net?
+F&amp;ouml;r Bryggl&amp;aring;net g&amp;auml;ller f&amp;ouml;ljande villkor:
+&amp;nbsp;
+Tillsammans har vi en dialog kring hur stort l&amp;aring;nebeloppet kan t&amp;auml;nkas bli givet dina individuella behov och de int&amp;auml;ktsbortfall som orsakats av coronavirusets spridning.
+&amp;nbsp;
+
+Indiv..." />
+    <meta name="twitter:description" content="Vad inneb&amp;auml;r Bryggl&amp;aring;net?
+F&amp;ouml;r Bryggl&amp;aring;net g&amp;auml;ller f&amp;ouml;ljande villkor:
+&amp;nbsp;
+Tillsammans har vi en dialog kring hur stort l&amp;aring;nebeloppet kan t&amp;auml;nkas bli givet dina individuella behov och de int&amp;auml;ktsbortfall som orsakats av coronavirusets spridning.
+&amp;nbsp;
+
+Indiv..." />
+
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2020-03-20T14:20:00" />
+    <meta property="article:modified_time" content="2020-03-20T14:20:00" />
+    <!-- //TODO Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <!-- //TODO Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/jok0ubq.css">
+    <link href="/static/app.css?v=1.1.20.940" rel="stylesheet" />
+    
+        <script src="https://www.google.com/recaptcha/api.js?hl=sv" async defer></script>
+<script type="text/javascript">var appInsights=window.appInsights||function(config){function t(config){i[config]=function(){var t=arguments;i.queue.push(function(){i[config].apply(i,t)})}}var i={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",r,f;setTimeout(function(){var t=u.createElement(o);t.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(t)});try{i.cookie=u.cookie}catch(y){}for(i.queue=[],r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)t("track"+r.pop());return t("set"+s),t("clear"+s),t(h+a),t(c+a),t(h+v),t(c+v),t("flush"),config.disableExceptionTracking||(r="onerror",t("_"+r),f=e[r],e[r]=function(config,t,u,e,o){var s=f&&f(config,t,u,e,o);return s!==!0&&i["_"+r](config,t,u,e,o),s}),i}({instrumentationKey:"2a4ae162-c2df-417f-91d5-7e6cc1497eb4",sdkExtension:"a"});window.appInsights=appInsights;appInsights.queue&&appInsights.queue.length===0&&appInsights.trackPageView();</script></head>
+<body class="information  almi " data-controller="ExternalLinks">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHH7R6N"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page" role="application">
+    <header class="header">
+    <a href="#mainContent" class="skip">Hoppa till innehåll</a>
+    <div class="header__wrapper wrap">
+        <div class="header__logotype">
+                <a href="/">
+                    <img class="header__logotype__image" src="/Images/almi_black.svg" alt="Startsida - Almi Företagspartner" />
+                </a>
+        </div>
+
+            <div class="header-region" data-controller="RegionPopup">
+                <span class="header-region__label">Visa innehåll för Almi i din region:</span>
+                <span class="header-region__label--small">Välj län:</span>
+                <span class="header-region__selector">
+
+                    <div 
+    class="region-select  "
+    data-controller-path=""
+    data-current-page-id="0"
+    data-result-container-class=""
+    data-loading-class=""
+    data-callback-function-name=""
+    aria-haspopup="true"
+>
+    <button type="button" class="region-select__selector" aria-haspopup="true">
+                    V&#228;lj l&#228;n
+                </button>
+    <div class="region-select__regions">
+        <div class="region-select__region-wrapper" ss-container>
+                <a class="region-select__region js-region-select" data-region-id="22" href="?region=22">Blekinge</a>
+                <a class="region-select__region js-region-select" data-region-id="3" href="?region=3">Dalarna</a>
+                <a class="region-select__region js-region-select" data-region-id="61" href="?region=61">Gotland</a>
+                <a class="region-select__region js-region-select" data-region-id="53" href="?region=53">G&#228;vleborg</a>
+                <a class="region-select__region js-region-select" data-region-id="23" href="?region=23">Halland</a>
+                <a class="region-select__region js-region-select" data-region-id="67" href="?region=67">J&#228;mtland</a>
+                <a class="region-select__region js-region-select" data-region-id="56" href="?region=56">J&#246;nk&#246;ping</a>
+                <a class="region-select__region js-region-select" data-region-id="4" href="?region=4">Kalmar</a>
+                <a class="region-select__region js-region-select" data-region-id="54" href="?region=54">Kronoberg</a>
+                <a class="region-select__region js-region-select" data-region-id="60" href="?region=60">Norrbotten</a>
+                <a class="region-select__region js-region-select" data-region-id="57" href="?region=57">Sk&#229;ne</a>
+                <a class="region-select__region js-region-select" data-region-id="6" href="?region=6">Stockholm</a>
+                <a class="region-select__region js-region-select" data-region-id="62" href="?region=62">S&#246;rmland</a>
+                <a class="region-select__region js-region-select" data-region-id="24" href="?region=24">Uppsala</a>
+                <a class="region-select__region js-region-select" data-region-id="58" href="?region=58">V&#228;rmland</a>
+                <a class="region-select__region js-region-select" data-region-id="66" href="?region=66">V&#228;sterbotten</a>
+                <a class="region-select__region js-region-select" data-region-id="55" href="?region=55">V&#228;sternorrland</a>
+                <a class="region-select__region js-region-select" data-region-id="65" href="?region=65">V&#228;stmanland</a>
+                <a class="region-select__region js-region-select" data-region-id="59" href="?region=59">V&#228;stra G&#246;taland</a>
+                <a class="region-select__region js-region-select" data-region-id="64" href="?region=64">&#214;rebro</a>
+                <a class="region-select__region js-region-select" data-region-id="63" href="?region=63">&#214;sterg&#246;tland</a>
+            <a class="region-select__region js-region-select" data-region-id="0" href="">Ingen anpassning</a>
+        </div>
+    </div>
+</div>
+
+                </span>
+            </div>
+
+        <div class="header__sub-navigations">
+                <search aria-haspopup="true" aria-label="Öppna sökfältet" class="header__sub-navigation header__sub-navigation--search">
+                    <a href="" class="js-toggle-search-bar">
+                        S&#246;k
+                        <span class="header__sub-navigation--search__icon"><span class="icon ">
+                                <svg aria-label="openSearchButtonIcon" focusable="false" class="icon__svg icon__search-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#search"></use>
+                                </svg>
+                              </span></span>
+                        <span class="header__sub-navigation--search__icon header__sub-navigation--search__icon--hidden"><span class="icon ">
+                                <svg aria-label="closeSearchButtonIcon" focusable="false" class="icon__svg icon__cross-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#cross"></use>
+                                </svg>
+                              </span></span>
+                    </a>
+                </search>
+
+<div role="search" class="search-bar" tabindex="-1">
+    <div class="wrap">
+        <form action="/sok/">
+            <fieldset class="search-bar__wrapper">
+                <legend class="search-bar__legend" aria-hidden="true">S&#246;k</legend>
+                <label for="main-search" class="search-bar__label">S&#246;k</label>
+                <input aria-label="Starta sökning med Enter" tabindex="-1" type="text" id="main-search" name="query" placeholder="S&#246;k" class="search-bar__search-field" />
+                <input type="hidden" name="searchRegion" value="0"/>
+                <button aria-label="Starta sökning" tabindex="-1" type="submit" class="search-bar__submit">S&#246;k<span class="icon focusSearch">
+                                <svg aria-label="searchButtonIcon" focusable="false" class="icon__svg icon__search-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#search"></use>
+                                </svg>
+                              </span></button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+            <div class="header__sub-navigation header__sub-navigation--link header__sub-navigation--hidden-mobile">
+                <a href="/almi-invest/">
+                    Almi Invest
+                </a>
+            </div>
+            <div class="header__sub-navigation header__sub-navigation--translate header__sub-navigation--hidden-mobile">
+                    <a href="/en/in-english/" lang="en">In English <span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__globe-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#globe"></use>
+                                </svg>
+                              </span></a>
+            </div>
+                <div class="header__sub-navigation header__sub-navigation--login header__sub-navigation--hidden-mobile">
+                    <a class="login-button" href="https://etjanster.almi.se/loggain?redirect=%2Fminasidor">Logga in <span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__lock-alt-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#lock-alt"></use>
+                                </svg>
+                              </span></a>
+                </div>
+            <div class="header__sub-navigation header__sub-navigation--hamburger header__sub-navigation--hidden-desktop">
+                <button class="hamburger-button" aria-controls="hamburger-button" data-module="Navigation">
+                    Meny <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main aria-labelledby="maincontent__heading" name="mainContent">
+        <div class="desktop-navigation--wrapper">
+<div class="wrap">
+    <nav aria-label="Huvudmeny" class="desktop-navigation">
+        <ul class="nav nav--top-menu"><li class="nav__li"><a aria-haspopup="true" aria-selected="false" class="nav__anchor" data-href="#" data-id="40" data-level="0" href="#">Våra tjänster</a><div class="nav-sub-top-menu"><ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Vill du växa?" aria-selected="false" class="nav__anchor" data-href="/vara-tjanster/vill-du-vaxa/" data-id="3260" data-level="0" href="/vara-tjanster/vill-du-vaxa/">Vill du växa?</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Det här gör Almi" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/vill-du-vaxa/Det-har-gor-Almi/" data-id="3261" data-level="0" href="/vara-tjanster/vill-du-vaxa/Det-har-gor-Almi/">Det här gör Almi</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Guide och vägledning" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/vill-du-vaxa/guide-och-vagledning/" data-id="12967" data-level="0" href="/vara-tjanster/vill-du-vaxa/guide-och-vagledning/">Guide och vägledning</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Kontakta Almi" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/vill-du-vaxa/kontakta-almi/" data-id="13448" data-level="0" href="/vara-tjanster/vill-du-vaxa/kontakta-almi/">Kontakta Almi</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Innovation" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/vill-du-vaxa/innovation/" data-id="29129" data-level="0" href="/vara-tjanster/vill-du-vaxa/innovation/">Innovation</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Digitalisering 2020" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/vill-du-vaxa/digitalisering-2020/" data-id="32740" data-level="0" href="/vara-tjanster/vill-du-vaxa/digitalisering-2020/">Digitalisering 2020</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Tjänster" aria-selected="false" class="nav__anchor" data-href="/vara-tjanster/tjanster/" data-id="3264" data-level="0" href="/vara-tjanster/tjanster/">Tjänster</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Affärsutveckling" aria-selected="false" class="nav__anchor" data-href="/vara-tjanster/tjanster/affarsutveckling/" data-id="32150" data-level="0" href="/vara-tjanster/tjanster/affarsutveckling/">Affärsutveckling</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Lån &amp; övrig finansiering" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/tjanster/lan-och-ovrig-finansiering/" data-id="3268" data-level="0" href="/vara-tjanster/tjanster/lan-och-ovrig-finansiering/">Lån & övrig finansiering</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Riskkapital" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/tjanster/riskkapital/" data-id="8006" data-level="0" href="/vara-tjanster/tjanster/riskkapital/">Riskkapital</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Seminarier" aria-selected="false" class="nav__anchor" data-href="/vara-tjanster/seminarier/" data-id="3811" data-level="0" href="/vara-tjanster/seminarier/">Seminarier</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Startseminarier" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/seminarier/startseminarier/" data-id="3296" data-level="0" href="/vara-tjanster/seminarier/startseminarier/">Startseminarier</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Immateriella tillgångar" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/seminarier/immateriella-tillgangar/" data-id="23814" data-level="0" href="/vara-tjanster/seminarier/immateriella-tillgangar/">Immateriella tillgångar</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Seminarier online" aria-selected="false" class="nav__anchor" data-href="/vara-tjanster/seminarier-online/" data-id="27898" data-level="0" href="/vara-tjanster/seminarier-online/">Seminarier online</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Startseminarier online" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/seminarier-online/startseminarier-online/" data-id="28023" data-level="0" href="/vara-tjanster/seminarier-online/startseminarier-online/">Startseminarier online</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Digitalakademin online" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/vara-tjanster/seminarier-online/digitalakademin/" data-id="3812" data-level="0" href="/vara-tjanster/seminarier-online/digitalakademin/">Digitalakademin online</a></li></ul>
+<ul class="nav nav--sub-top-menu nav--sub-top-menu--shortcuts"><li class="">Gå direkt till:</li>
+<li class=""><a class="nav__anchor" href="https://etjanster.almi.se/oversikt/overview/345" target="_blank" title="">Låneansökan</a></li>
+<li class=""><a class="nav__anchor" href="https://almi.se/mina-sidor" target="_blank" title="">E-tjänster & Mina sidor</a></li>
+<li class=""><a class="nav__anchor" href="/kalendarium/" target="" title="">Kalendarium</a></li>
+<li class=""><a class="nav__anchor" href="/kunskapochinpiration/?s=17" target="" title="">Guider</a></li>
+<li class=""><a class="nav__anchor" href="/kunskapsbanken/mallar/?s=96" target="" title="">Mallar</a></li>
+<li class=""><a class="nav__anchor" href="/vara-tjanster/vill-du-vaxa/guide-och-vagledning/starta-foretag/" target="" title="">Starta företag</a></li></ul></div></li>
+<li class="nav__li"><a aria-haspopup="true" aria-selected="false" class="nav__anchor" data-href="#" data-id="21627" data-level="0" href="#">Kunskap & inspiration</a><div class="nav-sub-top-menu"><ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Inspiration" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/kunskapsbanken/inspiration/" data-id="21629" data-level="0" href="/kunskapsbanken/inspiration/">Inspiration</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Tips och råd" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/kunskapsbanken/tips-och-rad/" data-id="21628" data-level="0" href="/kunskapsbanken/tips-och-rad/">Tips och råd</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Mallar" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/kunskapsbanken/mallar/" data-id="21631" data-level="0" href="/kunskapsbanken/mallar/">Mallar</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Guider" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/kunskapsbanken/guider/" data-id="21630" data-level="0" href="/kunskapsbanken/guider/">Guider</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Undersökningar" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/kunskapsbanken/undersokningar/" data-id="21632" data-level="0" href="/kunskapsbanken/undersokningar/">Undersökningar</a></li></ul></div></li>
+<li class="nav__li"><a aria-haspopup="true" aria-selected="false" class="nav__anchor" data-href="#" data-id="63" data-level="0" href="#">Om Almi</a><div class="nav-sub-top-menu"><ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Fakta om Almi" aria-selected="false" class="nav__anchor" data-href="/om-almi/Fakta-om-oss/" data-id="14605" data-level="0" href="/om-almi/Fakta-om-oss/">Fakta om Almi</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Organisation och ledning" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/Fakta-om-oss/organisation-och-ledning/" data-id="3671" data-level="0" href="/om-almi/Fakta-om-oss/organisation-och-ledning/">Organisation och ledning</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Finansiell information" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/Fakta-om-oss/finansiell-information/" data-id="1369" data-level="0" href="/om-almi/Fakta-om-oss/finansiell-information/">Finansiell information</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Bolagsstyrning" aria-selected="false" class="nav__anchor" data-href="/om-almi/Fakta-om-oss/bolagsstyrning/" data-id="235" data-level="0" href="/om-almi/Fakta-om-oss/bolagsstyrning/">Bolagsstyrning</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Historik" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/Fakta-om-oss/historik/" data-id="284" data-level="0" href="/om-almi/Fakta-om-oss/historik/">Historik</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Informationssäkerhet" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/Fakta-om-oss/informationssakerhet/" data-id="35751" data-level="0" href="/om-almi/Fakta-om-oss/informationssakerhet/">Informationssäkerhet</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Uppföljning" aria-selected="false" class="nav__anchor" data-href="/om-almi/Fakta-om-oss/uppfoljning/" data-id="35675" data-level="0" href="/om-almi/Fakta-om-oss/uppfoljning/">Uppföljning</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Om webbplatsen" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/Fakta-om-oss/om-webbplatsen/" data-id="85854" data-level="0" href="/om-almi/Fakta-om-oss/om-webbplatsen/">Om webbplatsen</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Karriär" aria-selected="false" class="nav__anchor" data-href="/om-almi/karriar/" data-id="64" data-level="0" href="/om-almi/karriar/">Karriär</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Lediga jobb" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/karriar/lediga-jobb/" data-id="98" data-level="0" href="/om-almi/karriar/lediga-jobb/">Lediga jobb</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Jobba hos oss" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/karriar/jobba-hos-oss/" data-id="124" data-level="0" href="/om-almi/karriar/jobba-hos-oss/">Jobba hos oss</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Mångfald" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/karriar/mangfald/" data-id="71" data-level="0" href="/om-almi/karriar/mangfald/">Mångfald</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Möt medarbetare" aria-selected="false" class="nav__anchor" data-href="/om-almi/karriar/Mot-medarbetare/" data-id="134" data-level="0" href="/om-almi/karriar/Mot-medarbetare/">Möt medarbetare</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Hållbarhet" aria-selected="false" class="nav__anchor" data-href="/om-almi/hallbarhet/" data-id="14635" data-level="0" href="/om-almi/hallbarhet/">Hållbarhet</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Hållbarhet hos Almi" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/hallbarhet/hallbarhet-hos-almi/" data-id="2360" data-level="0" href="/om-almi/hallbarhet/hallbarhet-hos-almi/">Hållbarhet hos Almi</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Hållbar tillväxt" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/hallbarhet/hallbar-tillvaxt/" data-id="2380" data-level="0" href="/om-almi/hallbarhet/hallbar-tillvaxt/">Hållbar tillväxt</a></li>
+<li class="nav__li"><a aria-label="Besök sidan God affärsetik" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/hallbarhet/god-affarsetik/" data-id="2394" data-level="0" href="/om-almi/hallbarhet/god-affarsetik/">God affärsetik</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Attraktiv arbetsgivare" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/hallbarhet/attraktiv-arbetsgivare/" data-id="2397" data-level="0" href="/om-almi/hallbarhet/attraktiv-arbetsgivare/">Attraktiv arbetsgivare</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Press &amp; publikationer" aria-selected="false" class="nav__anchor" data-href="/om-almi/press/" data-id="3673" data-level="0" href="/om-almi/press/">Press & publikationer</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Pressrum, öppnas i nytt fönster" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="https://press.almi.se/" data-id="20498" data-level="0" href="https://press.almi.se/">Pressrum <img class="external-link-icon" src="/Images/external_link.svg" alt="Länken öppnas i nytt fönster" /></a></li>
+<li class="nav__li"><a aria-label="Besök sidan Logotyper" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/press/logotyper/" data-id="15775" data-level="0" href="/om-almi/press/logotyper/">Logotyper</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Undersökningar" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/press/undersokningar/" data-id="1339" data-level="0" href="/om-almi/press/undersokningar/">Undersökningar</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Remissvar" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/press/remissvar/" data-id="139" data-level="0" href="/om-almi/press/remissvar/">Remissvar</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Upphandlingar" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/press/upphandlingar/" data-id="197" data-level="0" href="/om-almi/press/upphandlingar/">Upphandlingar</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Nyhetsbrev" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/press/nyhetsbrev/" data-id="18056" data-level="0" href="/om-almi/press/nyhetsbrev/">Nyhetsbrev</a></li></ul>
+<ul class="nav nav--sub-top-menu"><li class="nav__li"><a aria-label="Besök sidan Kontakt" aria-selected="false" class="nav__anchor" data-href="/om-almi/kontakt/" data-id="14650" data-level="0" href="/om-almi/kontakt/">Kontakt</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Kontakta oss" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/kontakt/kontakta-oss/" data-id="8010" data-level="0" href="/om-almi/kontakt/kontakta-oss/">Kontakta oss</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Våra rådgivare" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/kontakt/vara-radgivare/" data-id="13254" data-level="0" href="/om-almi/kontakt/vara-radgivare/">Våra rådgivare</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Kontaktuppgifter till kontor" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/kontakt/kontaktlista/" data-id="4331" data-level="0" href="/om-almi/kontakt/kontaktlista/">Kontaktuppgifter till kontor</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Almi Invest" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/kontakt/team-almi-invest/" data-id="14906" data-level="0" href="/om-almi/kontakt/team-almi-invest/">Almi Invest</a></li>
+<li class="nav__li"><a aria-label="Besök sidan Leverantörsinformation" aria-selected="false" class="nav__anchor nav__anchor--no-sub" data-href="/om-almi/kontakt/leverantorsinformation/" data-id="25807" data-level="0" href="/om-almi/kontakt/leverantorsinformation/">Leverantörsinformation</a></li></ul></div></li></ul>
+
+    </nav>
+</div>
+</div>
+
+        <div><div>
+
+<div class="js-hero-296932417">
+    
+    <style type="text/css">
+        .hero-36134 {
+            background-image: url(/contentassets/b32ade6fb1fa4a7b9e4498f01f9384f1/brygglan-1400-v4.jpg);
+        }
+    </style>
+    <style type="text/css">
+        @media screen and (max-width: 500px) {
+            .hero-36134 {
+                background-image: url(/contentassets/b32ade6fb1fa4a7b9e4498f01f9384f1/brygglan-500-v4.jpg);
+            }
+        }
+    </style>
+    <style type="text/css">
+        @media screen and (min-width: 1400px) {
+            .hero-36134 {
+                background-image: url(/contentassets/b32ade6fb1fa4a7b9e4498f01f9384f1/brygglan-3000-v4.jpg);
+            }
+        }
+    </style>
+
+    <div class="hero hero-36134  hero--top">
+            <div class="hero__overlay"></div>
+                <div class="hero__gradient ">
+            <div class="hero__wrap wrap">
+                <div class="hero__content  hero__content--bottom ">
+                    <div class="hero__content__wrapper">
+                        <div class="hero__content__heading">
+Almis Bryggl&#229;n -  Fr&#229;n kris till h&#229;llbar framtid                         </div>
+                                                    <a class="hero__content__button button" href="/vara-tjanster/tjanster/lan-och-ovrig-finansiering/brygglan/" ontouchstart="">L&#228;s mer om Bryggl&#229;net</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div></div>
+
+<div class="breadcrumbs" aria-label="">
+    <div class="wrap">
+        <!--eri-desc-->
+        <a class="breadcrumb__anchor" href="/">Hem</a> / <a class="breadcrumb__anchor" href="/information-med-anledning-av-coronaviruset/">Samlad information med anledning av coronaviruset</a> / FAQ Corona
+        <!--/eri-desc-->
+    </div>
+</div>
+
+<div class="goToContent" id="mainContent"></div>
+
+
+<div class="wrapper wrap " data-controller="">
+    <div class="wrap--narrow">
+        <h1 id="maincontent__heading" class="main-heading">Vanligaste fr&#229;gorna om Almis Bryggl&#229;n</h1>
+
+        <div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Vad inneb&auml;r Bryggl&aring;net?</h2>
+<p><strong>F&ouml;r Bryggl&aring;net g&auml;ller f&ouml;ljande villkor:</strong></p>
+<p>&nbsp;</p>
+<p>Tillsammans har vi en dialog kring hur stort l&aring;nebeloppet kan t&auml;nkas bli givet dina individuella behov och de int&auml;ktsbortfall som orsakats av coronavirusets spridning.</p>
+<p>&nbsp;</p>
+<ul>
+<li>Individuell r&auml;ntes&auml;ttning, som h&ouml;gst 4,71&nbsp;%.</li>
+<li>M&ouml;jlighet finns att ans&ouml;ka om r&auml;nte- och amorteringsuppskov upp till 12 m&aring;nader.&nbsp;</li>
+<li>L&ouml;ptiden &auml;r 12 m&aring;nader. Efter 12 m&aring;nader finns, efter dialog med r&aring;dgivare, m&ouml;jlighet att l&auml;gga om l&aring;net till nytt l&aring;n med d&aring; g&auml;llande ordinarie villkor.</li>
+<li>Startups har m&ouml;jlighet att l&aring;na upp till 500 000 kr.&nbsp;</li>
+<li>Ingen uppl&auml;ggningsavgift.</li>
+<li>En r&aring;dgivare fr&aring;n Almi kommer att g&ouml;ra en individuell kreditpr&ouml;vning. Den innefattar bland annat en genomg&aring;ng av nuvarande s&auml;kerheter f&ouml;r dig som redan har l&aring;n hos Almi, och vilka s&auml;kerheter som &auml;r aktuella f&ouml;r dig som blir ny l&aring;nekund hos Almi. I normala fall handlar det om att ta ut f&ouml;retagsinteckningar och &auml;garborgen som normalt ligger p&aring; 10-20%.</li>
+</ul>
+<p>Almi arbetar f&ouml;r en ansvarsfull och sund kreditgivning. Det inneb&auml;r att Almi i sin r&aring;dgivning tar ansvar f&ouml;r att s&auml;kerst&auml;lla att krediten matchar ditt behov och &aring;terbetalningsf&ouml;rm&aring;ga. Almi &auml;r ett statligt bolag utan egna vinstintressen med fokus p&aring; de sm&aring; och medelstora f&ouml;retagen.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Vem kan ansöka om Brygglånet?</h2>
+<p>Almis Brygglån är riktat till <strong>startups och etablerade små och medelstora företag</strong> där finansieringsbehov har uppstått som en följd av coronavirusets spridning.</p>
+<p>&nbsp;</p>
+<p><strong>Brygglån för startups</strong></p>
+<p>För de startups som bedöms ha stor tillväxtpotential och bärkraftighet efter krisen, samt bedöms ha en balansräkning som klarar räntebärande lån kan Brygglånet vara aktuellt. Brygglån kan sökas upp till 500 000 kr. I de fall startup-/tillväxtbolag behöver tillföras ägarkapital rekommenderas en kontakt med <a href="/almi-invest/" target="_blank">Almi Invest</a>, koncernens riskkapitalbolag. <em>För samtliga Brygglån gäller att kapitalbehovet ska ha uppstått utifrån påverkan av coronakrisen.</em></p>
+<p>&nbsp;</p>
+<p><strong>Brygglån för dig som redan har lån hos Almi</strong>&nbsp;</p>
+<p>Även du som redan har ett befintligt lån hos Almi kan ansöka om det nya Brygglånet. Har du nyligen sökt ett nytt Almi-lån men är intresserad av Brygglån behöver du inte ansöka på nytt. Tag istället upp detta när Almis rådgivare kontaktar dig för att gå igenom din ansökan.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Hur ansöker jag om Brygglånet?&nbsp;</h2>
+<p>Du ansöker via vår <a href="https://etjanster.almi.se/brygglan" target="_blank">digitala e-tjänst Brygglån</a>. Du loggar in med mobilt bankID och fyller därefter i ditt företags uppgifter. En rådgivare kommer att kontakta dig för ett digitalt möte där ni tillsammans ser över ditt behov.&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="/vara-tjanster/tjanster/lan-och-ovrig-finansiering/brygglan/att-tanka-pa-nar-du-ansoker-om-brygglanet/">Här hittar du vad du kan förbereda inför att du ansöker om Brygglån.&nbsp;</a></p>
+<p>&nbsp;</p>
+<p class="link-button"><a href="https://etjanster.almi.se/brygglan" target="_blank">Till ansökan för Brygglån</a></p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Jag bor i en storstadsregion, tar min ansökan längre tid än om jag hade mitt företag i en annan region?</h2>
+<p>Alla ansökningar hanteras i den ordning de kommer in. Villkoren för lånen är samma oavsett var du bor, och alla våra rådgivare arbetar efter samma riktlinjer och processer.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Hur mycket får jag låna?</h2>
+<p>Startups kan låna upp till 500 000 kr och etablerade företag kan låna mer. Det är ovanligt att vi lånar ut belopp över 5 miljoner kr.&nbsp;<span>Tillsammans har vi en dialog kring hur stort lånebeloppet kan tänkas bli givet dina individuella behov och de intäktsbortfall som orsakats av coronavirusets spridning.</span></p>
+<p>&nbsp;</p>
+<p>Almi har nära relation till andra aktörer och kan guida dig till att hitta rätt för just ditt företags behov. Vi är ett statligt bolag utan egna vinstintressen så du kan vara säker på att vi alltid har ditt företags bästa som högsta prioritet.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Almi har flera olika lån som skulle kunna vara något för mig, måste jag skicka in en ansökan till alla?</h2>
+<p>Nej. Du behöver bara skicka in en ansökan. Tillsammans med en rådgivare från Almi kommer ni gå igenom ditt företags behov. Utifrån det individuella behovet kan flera olika låneprodukter bli aktuella.&nbsp;</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Vad händer om jag får avslag på min ansökan?</h2>
+<p>Har du fått avslag på din ansökan innebär det att Almi inte kan bevilja dig lån. Det betyder att du inte kan ansöka om en annan lånetyp hos Almi och bli beviljad den istället. Almi arbetar för en ansvarsfull och sund kreditgivning. Det innebär att vi i vår rådgivning tar ansvar för att säkerställa att krediten matchar ditt behov och återbetalningsförmåga.</p>
+<p>&nbsp;</p>
+<p>Almis beslut om avslag kan inte överklagas.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Kan jag få amorteringsuppskov p.g.a. corona?</h2>
+<p>På grund av rådande situation ger Almi dig möjlighet att ansöka om uppskov på dina lån. Almi ger en fast uppskovsperiod om 6 månader på amortering av Almi-lån som följd av covid-19.</p>
+<p>&nbsp;</p>
+<p>Du loggar in i e-tjänsten med mobilt BankID och väljer sedan de lån du önskar få uppskov på.</p>
+<p>&nbsp;</p>
+<p>Du som har beviljats uppskov och där autogirodragning precis har gjorts kommer att få återbetalning av amorteringsbeloppet.&nbsp;<span>Det är ett högt tryck på inkomna uppskovsansökningar, v</span>ilket kan innebära att återbetalning av amorteringsbeloppet kan komma att dröja. Samtliga inkomna ärenden hanteras i turordning och vi jobbar så snabbt vi kan.&nbsp;</p>
+<p>&nbsp;</p>
+<p class="link-button"><a href="https://etjanster.almi.se/oversikt/overview/425" target="_blank">Till e-tjänsten</a></p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Hur fungerar Almis kreditbedömning?</h2>
+<p>Utgångspunkten är din återbetalningsförmåga. Efter en genomgång av ditt företags nuläge och situation måste det finnas en sannolikhet att lånet återbetalas. Vi tar ansvar för vår kreditgivning, lånet ska matcha både ditt behov och din återbetalningsförmåga.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Krävs medfinansiering?</h2>
+<p>Almi strävar alltid efter medfinansiering. Det kan vara medfinansiering från bank eller i form av ägarkapital. Medfinansiering är ett krav på belopp över 3 miljoner kr.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>När ska räntan betalas?</h2>
+<p>Hur lånet läggs upp är individuellt men möjlighet finns att få ränte- och amorteringsuppskov på 12 månader från start. Räntan betalas då efter 12 månader eller tidigare om du så önskar. Alternativt läggs hela lånet plus ränta om i ett nytt lån efter 12 månader.</p>
+</div>
+</div><div><div class="text-block   " data-controller="Text" style="">
+    <h2>Vad är försumbart stöd?</h2>
+<p>Brygglånet faller under EU Kommissionens förordning om stöd av mindre betydelse även kallat försumbart stöd*. Almi är ett statligt bolag och det finns regler om hur vi kan och får ge ekonomiskt stöd till företag för att inte snedvrida konkurrenskraften. </p>
+<p>&nbsp;</p>
+<p>Med försumbart stöd menas subventioner eller bidrag från stat, landsting eller kommun till små eller medelstora företag.</p>
+<p><br />Har du fått stöd från staten, landstingen och/eller kommunen får detta stöd sammanlagt inte överstiga 200 000 euro under en treårsperiod – innevarande år samt två föregående beskattningsår. Takbeloppet avser bruttobeloppet, det vill säga före avdrag, skatter eller andra avgifter.</p>
+<p><br />Ingår ditt företag i en koncern gäller maxtaket för hela koncernen.</p>
+<p><br />Vissa branscher, som vägtransportsektorn, fiske- och vattenbrukssektorn och jordbrukssektorn har särskilda restriktioner.</p>
+<p><br />Företag som har betalningskrav eller satt under företagsrekonstruktion kan inte få denna form av stöd.</p>
+<h3>För Brygglånet räknas endast räntesubventionen som försumbart stöd</h3>
+<p>En blankett där du ska fylla i vilka försumbara stöd du har mottagit de tre senaste åren skickas ut av Almi i samband med besked om att Brygglånet är beviljat. På blanketten har Almi fyllt i värdet av det försumbara stöd som räntesubventionen medför**. Beviljningen är villkorad med att du inte har nått takbeloppet.</p>
+<p>&nbsp;</p>
+<p>*KOMMISSIONENS FÖRORDNING (EU) nr 1407/2013 av den 18 december 2013 om tillämpningen av artiklarna 107 och 108 i fördraget om Europeiska unionens funktionssätt på stöd av mindre betydelse</p>
+<p>&nbsp;</p>
+<p>**För att beräkna marknadsränta och det stöd som räntesubventionen ger upphov till används den metod som anges i Europeiska kommissionens meddelande om en översyn av metoden för att bestämma referens- och diskonteringsräntor.</p>
+</div>
+</div></div>
+    </div>
+    <div class="aside">
+        <div><div><div class="linklist-block">
+    <h2 class="linklist-block__heading">
+        Till e-tj&#228;nsterna
+    </h2>
+    
+
+    <ul class="linklist-block__links">
+                <li class="linklist-block__link">
+                    <a aria-label="Ans&#246;k om Bryggl&#229;net - öppnas i en ny flik" href="https://etjanster.almi.se/brygglan" target="_blank">
+                        Ans&#246;k om Bryggl&#229;net
+                    </a>
+                </li>
+                <li class="linklist-block__link">
+                    <a aria-label="Amorteringsuppskov - öppnas i en ny flik" href="https://etjanster.almi.se/oversikt/overview/425" target="_blank">
+                        Amorteringsuppskov
+                    </a>
+                </li>
+                <li class="linklist-block__link">
+                    <a aria-label="Att t&#228;nka p&#229; n&#228;r du ans&#246;ker om Bryggl&#229;net - öppnas i en ny flik" href="/vara-tjanster/tjanster/lan-och-ovrig-finansiering/brygglan/att-tanka-pa-nar-du-ansoker-om-brygglanet/" target="_blank">
+                        Att t&#228;nka p&#229; n&#228;r du ans&#246;ker om Bryggl&#229;net
+                    </a>
+                </li>
+    </ul>
+
+</div>
+
+</div><div><div class="text-block  text-block--facts " data-controller="Text" style="background-color:#00bf5e;">
+    <h3>När kan jag förvänta mig att få besked om jag beviljas lån?</h3>
+<p>Vi arbetar intensivt för att hantera alla låneansökningar som kommer in i turordning. För att underlätta och påskynda handläggningen var noga att bifoga det som efterfrågas i <a href="https://etjanster.almi.se/brygglan" target="_blank">e-tjänsten Ansökan Brygglån</a>.</p>
+<p>&nbsp;</p>
+<p><span><a href="/vara-tjanster/tjanster/lan-och-ovrig-finansiering/brygglan/att-tanka-pa-nar-du-ansoker-om-brygglanet/">Att tänka på när du fyller i ansökan om Brygglån</a></span></p>
+<p>&nbsp;</p>
+<p>Du får en kvittens via mejl när vi har tagit emot din ansökan. Vi kontaktar dig så snart vi har möjlighet.</p>
+</div>
+</div><div><div class="linklist-block">
+    <h2 class="linklist-block__heading">
+        Samlad information g&#228;llande Coronaviruset
+    </h2>
+    
+
+    <ul class="linklist-block__links">
+                <li class="linklist-block__link">
+                        <a href="/information-med-anledning-av-coronaviruset/">
+                            Information med anledning av coronaviruset
+                        </a>
+                </li>
+    </ul>
+
+</div>
+
+</div><div><div class="linklist-block">
+    <h2 class="linklist-block__heading">
+        
+    </h2>
+    
+
+    <ul class="linklist-block__links">
+                <li class="linklist-block__link">
+                    <a aria-label="P&#229; verksamt.se hittar du samlad information fr&#229;n myndigheter som &#228;r viktig f&#246;r dig som f&#246;retagare att k&#228;nna till - öppnas i en ny flik" href="https://www.verksamt.se/om-verksamt/nyhetsarkiv/-/journal_content/56_INSTANCE_0LpMHH7zZQ6q/10183/NYHET_CORONA_2" target="_blank">
+                        P&#229; verksamt.se hittar du samlad information fr&#229;n myndigheter som &#228;r viktig f&#246;r dig som f&#246;retagare att k&#228;nna till
+                    </a>
+                </li>
+    </ul>
+
+</div>
+
+</div><div><div class="linklist-block">
+    <h2 class="linklist-block__heading">
+        
+    </h2>
+    
+
+    <ul class="linklist-block__links">
+                <li class="linklist-block__link">
+                        <a href="/kunskapsbanken/tips-och-rad/corona---tre-tips-till-dig-som-foretagare/">
+                            Corona - Tre r&#229;d till dig som f&#246;retagare
+                        </a>
+                </li>
+    </ul>
+
+</div>
+
+</div></div>
+    </div>
+</div>
+
+
+
+
+    <div class="article-share wrap">
+        <ul class="article-share__list">
+            <li class="share__title">
+                <span>Dela:</span>
+            </li>
+            <li class="shareicon-first icon twitter">
+                <a title="Dela på Twitter, öppnas i nytt fönster" aria-label="Dela på Twitter, öppnas i nytt fönster" class="icon--with-fill" href="https://twitter.com/intent/tweet?text=https://www.almi.se/information-med-anledning-av-coronaviruset/faq-corona/" target="_blank"><span class="glyphicon glyphicon-new-window share__label">Dela på Twitter</span><span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__twitter-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#twitter"></use>
+                                </svg>
+                              </span></a>
+            </li>
+            <li class="shareicon icon facebook">
+                <a title="Dela på Facebook, öppnas i nytt fönster" aria-label="Dela på Facebook, öppnas i nytt fönster" class="icon--with-fill" href="http://www.facebook.com/sharer/sharer.php?s=100&u=https://www.almi.se/information-med-anledning-av-coronaviruset/faq-corona/" target="_blank"><span class="glyphicon glyphicon-new-window share__label">Dela på Facebook</span><span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__facebook-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#facebook"></use>
+                                </svg>
+                              </span></a>
+            </li>
+            <li class="shareicon icon linkedin">
+                <a title="Dela på LinkedIn, öppnas i nytt fönster" aria-label="Dela på LinkedIn, öppnas i nytt fönster" class="icon--with-fill" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.almi.se/information-med-anledning-av-coronaviruset/faq-corona/" target="_blank"><span class="glyphicon glyphicon-new-window share__label">Dela på Linkedin</span><span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__linkedin-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#linkedin"></use>
+                                </svg>
+                              </span></a>
+            </li>
+            <li class="shareicon icon mail">
+                <a title="Dela på mail, skapar ett nytt epostmeddelande" class="icon" href="mailto:?body=https://www.almi.se/information-med-anledning-av-coronaviruset/faq-corona/"><span class="share__label">Dela på mail</span><span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__mail-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#mail"></use>
+                                </svg>
+                              </span></a>
+            </li>
+
+        </ul>
+    </div>
+
+            </main>
+    <footer class="footer__container">
+<div 
+    class="region-select  region-select--enlarged"
+    data-controller-path="/Footer/GetFooterInfo"
+    data-current-page-id="35937"
+    data-result-container-class=".js-footer-1599013057"
+    data-loading-class=""
+    data-callback-function-name=""
+    aria-haspopup="true"
+>
+    <button type="button" class="region-select__selector" aria-haspopup="true">
+                    V&#228;lj l&#228;n
+                </button>
+    <div class="region-select__regions">
+        <div class="region-select__region-wrapper" ss-container>
+                <a class="region-select__region js-region-select" data-region-id="22" href="?region=22">Blekinge</a>
+                <a class="region-select__region js-region-select" data-region-id="3" href="?region=3">Dalarna</a>
+                <a class="region-select__region js-region-select" data-region-id="61" href="?region=61">Gotland</a>
+                <a class="region-select__region js-region-select" data-region-id="53" href="?region=53">G&#228;vleborg</a>
+                <a class="region-select__region js-region-select" data-region-id="23" href="?region=23">Halland</a>
+                <a class="region-select__region js-region-select" data-region-id="67" href="?region=67">J&#228;mtland</a>
+                <a class="region-select__region js-region-select" data-region-id="56" href="?region=56">J&#246;nk&#246;ping</a>
+                <a class="region-select__region js-region-select" data-region-id="4" href="?region=4">Kalmar</a>
+                <a class="region-select__region js-region-select" data-region-id="54" href="?region=54">Kronoberg</a>
+                <a class="region-select__region js-region-select" data-region-id="60" href="?region=60">Norrbotten</a>
+                <a class="region-select__region js-region-select" data-region-id="57" href="?region=57">Sk&#229;ne</a>
+                <a class="region-select__region js-region-select" data-region-id="6" href="?region=6">Stockholm</a>
+                <a class="region-select__region js-region-select" data-region-id="62" href="?region=62">S&#246;rmland</a>
+                <a class="region-select__region js-region-select" data-region-id="24" href="?region=24">Uppsala</a>
+                <a class="region-select__region js-region-select" data-region-id="58" href="?region=58">V&#228;rmland</a>
+                <a class="region-select__region js-region-select" data-region-id="66" href="?region=66">V&#228;sterbotten</a>
+                <a class="region-select__region js-region-select" data-region-id="55" href="?region=55">V&#228;sternorrland</a>
+                <a class="region-select__region js-region-select" data-region-id="65" href="?region=65">V&#228;stmanland</a>
+                <a class="region-select__region js-region-select" data-region-id="59" href="?region=59">V&#228;stra G&#246;taland</a>
+                <a class="region-select__region js-region-select" data-region-id="64" href="?region=64">&#214;rebro</a>
+                <a class="region-select__region js-region-select" data-region-id="63" href="?region=63">&#214;sterg&#246;tland</a>
+            <a class="region-select__region js-region-select" data-region-id="0" href="">Almi.se</a>
+        </div>
+    </div>
+</div>
+
+        <div class="js-footer-1599013057">
+            
+<div class="footer">
+        <div class="wrap">
+            <div class="footer__wrapper">
+                <div class="footer__column">
+                    <h2 class="footer__column__heading">V&#229;ra tj&#228;nster</h2>
+                    
+
+    <ul class="footer__column__links">
+                <li class="footer__column__link">
+                        <a href="/vara-tjanster/tjanster/affarsutveckling/">
+                            Aff&#228;rsutveckling
+                        </a>
+                </li>
+                <li class="footer__column__link">
+                        <a href="/vara-tjanster/tjanster/lan-och-ovrig-finansiering/">
+                            L&#229;n
+                        </a>
+                </li>
+                <li class="footer__column__link">
+                        <a href="/almi-invest/om-almi-invest/">
+                            Riskkapital
+                        </a>
+                </li>
+    </ul>
+
+                </div>
+                <div class="footer__column">
+                    <h2 class="footer__column__heading">Kort om Almi</h2>
+                    
+
+    <ul class="footer__column__links">
+                <li class="footer__column__link">
+                        <a href="/om-almi/karriar/">
+                            Karri&#228;r
+                        </a>
+                </li>
+                <li class="footer__column__link">
+                        <a href="https://press.almi.se/">
+                            Press
+                        </a>
+                </li>
+                <li class="footer__column__link">
+                        <a href="/om-almi/hallbarhet/hallbarhet-hos-almi/">
+                            H&#229;llbarhet
+                        </a>
+                </li>
+    </ul>
+
+                </div>
+                <div class="footer__column">
+                    <h2 class="footer__column__heading">Kontakt</h2>
+                    <p><a href="/om-almi/kontakt/">Kontakta oss</a></p>
+<p><a href="/om-almi/kontakt/vara-radgivare/">Våra rådgivare</a></p>
+<p><a href="/almi-invest/team/">Almi Invest</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__social-links">
+                <a title="Besök oss på Facebook, öppnas i nytt fönster" aria-label="Besök oss på Facebook, öppnas i nytt fönster" href="https://www.facebook.com/almiforetagspartner/" class="footer__social-link">
+                    <span class="glyphicon glyphicon-new-window footer__social-link__text">Bes&#246;k oss p&#229; Facebook</span>
+                    <span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__facebook-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#facebook"></use>
+                                </svg>
+                              </span>
+                </a>
+                            <a title="Besök oss på LinkedIn, öppnas i nytt fönster" aria-label="Besök oss på LinkedIn, öppnas i nytt fönster" href="http://www.linkedin.com/company/almi-f-retagspartner" class="footer__social-link">
+                    <span class="glyphicon glyphicon-new-window footer__social-link__text">Bes&#246;k oss p&#229; LinkedIn</span>
+                    <span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__linkedin-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#linkedin"></use>
+                                </svg>
+                              </span>
+                </a>
+                            <a title="Besök oss på YouTube, öppnas i nytt fönster" aria-label="Besök oss på YouTube, öppnas i nytt fönster" href="http://www.youtube.com/user/almiforetagspartner1" class="footer__social-link">
+                    <span class="glyphicon glyphicon-new-window footer__social-link__text">Bes&#246;k oss p&#229; YouTube</span>
+                    <span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__youtube-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#youtube"></use>
+                                </svg>
+                              </span>
+                </a>
+            
+        </div>
+
+</div>
+
+
+        </div>
+    </footer>
+</div>
+<nav class="mobile-menu" role="navigation" id="hamburger-button">
+    <ul>
+        <li>
+            <ul class="nav-tree nav-tree--level-0"><li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="#">Våra tjänster</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/vara-tjanster/" data-id="40" data-level="1"><span class="visually-hidden">Expandera meny</span></button></div><ul class="nav-tree nav-tree--level-1 hidden"><li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/vara-tjanster/vill-du-vaxa/">Vill du växa?</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/vara-tjanster/vill-du-vaxa/" data-id="3260" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/vara-tjanster/tjanster/">Tjänster</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/vara-tjanster/tjanster/" data-id="3264" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/vara-tjanster/seminarier/">Seminarier</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/vara-tjanster/seminarier/" data-id="3811" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/vara-tjanster/seminarier-online/">Seminarier online</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/vara-tjanster/seminarier-online/" data-id="27898" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><button class="nav-tree__anchor nav-tree__anchor--shortcuts-button">Gå direkt till:</button>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/vara-tjanster/" data-id="40" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div>
+<ul class="nav-tree nav-tree--level-2 hidden"><li class=""><div class="nav-tree__item"><a class="nav-tree__anchor" href="https://etjanster.almi.se/oversikt/overview/345" target="_blank" title="">Låneansökan</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor" href="https://almi.se/mina-sidor" target="_blank" title="">E-tjänster & Mina sidor</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor" href="/kalendarium/" target="" title="">Kalendarium</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor" href="/kunskapochinpiration/?s=17" target="" title="">Guider</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor" href="/kunskapsbanken/mallar/?s=96" target="" title="">Mallar</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor" href="/vara-tjanster/vill-du-vaxa/guide-och-vagledning/starta-foretag/" target="" title="">Starta företag</a></div></li></ul>
+<ul class="hidden"></ul></li></ul></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="#">Kunskap & inspiration</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/kunskapsbanken/" data-id="21627" data-level="1"><span class="visually-hidden">Expandera meny</span></button></div><ul class="nav-tree nav-tree--level-1 hidden"><li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--no-children" href="/kunskapsbanken/inspiration/">Inspiration</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--no-children" href="/kunskapsbanken/tips-och-rad/">Tips och råd</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--no-children" href="/kunskapsbanken/mallar/">Mallar</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--no-children" href="/kunskapsbanken/guider/">Guider</a></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--no-children" href="/kunskapsbanken/undersokningar/">Undersökningar</a></div></li></ul></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="#">Om Almi</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/om-almi/" data-id="63" data-level="1"><span class="visually-hidden">Expandera meny</span></button></div><ul class="nav-tree nav-tree--level-1 hidden"><li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/om-almi/Fakta-om-oss/">Fakta om Almi</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/om-almi/Fakta-om-oss/" data-id="14605" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/om-almi/karriar/">Karriär</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/om-almi/karriar/" data-id="64" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/om-almi/hallbarhet/">Hållbarhet</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/om-almi/hallbarhet/" data-id="14635" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/om-almi/press/">Press & publikationer</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/om-almi/press/" data-id="3673" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li>
+<li class=""><div class="nav-tree__item"><a class="nav-tree__anchor nav-tree__anchor--has-children" href="/om-almi/kontakt/">Kontakt</a>
+<button aria-expanded="false" aria-haspopup="true" class="nav-tree__expander" data-href="/om-almi/kontakt/" data-id="14650" data-level="2"><span class="visually-hidden">Expandera meny</span></button></div></li></ul></li></ul>
+
+        </li>
+        <li class="almi-invest">
+            <a href="/almi-invest/">
+                Almi Invest
+            </a>
+        </li>
+                <li class="mobile-menu__tool-link">
+            <a href="/en/in-english/"><span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__globe-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#globe"></use>
+                                </svg>
+                              </span> In English</a>
+        </li>
+                    <li class="mobile-menu__tool-link">
+                <a href="https://etjanster.almi.se/loggain?redirect=%2Fminasidor"><span class="icon ">
+                                <svg aria-hidden="true" class="icon__svg icon__lock-alt-dims">
+                                    <use xlink:href="/static/icons.svg?v=1.1.20.940#lock-alt"></use>
+                                </svg>
+                              </span> Logga in</a>
+            </li>
+    </ul>
+</nav>
+
+
+
+<script src="/static/app.js?v=1.1.20.940"></script>
+<script type="application/json" id="region-slugs-json">
+        [{"Slug":"/","Title":"Företagslån, riskkapital och affärsutveckling för växande företag","Id":0},{"Slug":"gavleborg","Title":"Gävleborg","Id":53},{"Slug":"gotland","Title":"Gotland","Id":61},{"Slug":"jamtland","Title":"Jämtland","Id":67},{"Slug":"vastmanland","Title":"Västmanland","Id":65},{"Slug":"blekinge","Title":"Blekinge","Id":22},{"Slug":"sormland","Title":"Sörmland","Id":62},{"Slug":"vast","Title":"Väst","Id":59},{"Slug":"norrbotten","Title":"Norrbotten","Id":60},{"Slug":"skane","Title":"Skåne","Id":57},{"Slug":"varmland","Title":"Värmland","Id":58},{"Slug":"dalarna","Title":"Dalarna","Id":3},{"Slug":"kalmar","Title":"Kalmar","Id":4},{"Slug":"orebro","Title":"Örebro","Id":64},{"Slug":"halland","Title":"Halland","Id":23},{"Slug":"jonkoping","Title":"Jönköping","Id":56},{"Slug":"kronoberg","Title":"Kronoberg","Id":54},{"Slug":"stockholm","Title":"Stockholm","Id":6},{"Slug":"uppsala","Title":"Uppsala","Id":24},{"Slug":"vasterbotten","Title":"Västerbotten","Id":66},{"Slug":"ostergotland","Title":"Östergötland","Id":63},{"Slug":"vasternorrland","Title":"Västernorrland","Id":55}]
+    </script>
+
+    <div class="cookie-warning" data-controller="CookieInformation">
+        <div class="cookie-warning__inner">
+            <div class="cookie-warning__text">
+            <p>Almis webbplats använder cookies för att ditt besök ska fungera bättre. Läs mer om cookies och hur vi använder dem här <a href="/om-almi/Fakta-om-oss/informationssakerhet/om-cookies/">information om cookies</a></p>
+            </div>
+            <button class="cookie-warning__button" id="CookieApproveButton">Jag förstår</button>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    var _sid = '334';
+    (function() {
+        var se = document.createElement('script');
+        se.type = 'text/javascript';
+        se.async = true;
+        se.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'files.imbox.io/app/dist/initWidget.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(se, s);
+    })();
+
+    var _imbox = _imbox || [];
+    _imbox.push(['changeName', '@Html.Raw(userName)']);
+    _imbox.push(['addWidget', '1173']);
+</script>
+
+<script type="text/javascript" src="https://dl.episerver.net/13.3.0/epi-util/find.js"></script>
+<script type="text/javascript">
+if(FindApi){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}
+</script>
+
+
+</body>
+</html>

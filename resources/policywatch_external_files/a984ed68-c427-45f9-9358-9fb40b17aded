@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+  <html class="no-js ie8" lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+  <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="msapplication-square310x310logo" content="/info/sites/info/themes/europa/images/png/favicon/mstile-310x310.png" />
+<meta name="msapplication-wide310x150logo" content="/info/sites/info/themes/europa/images/png/favicon/mstile-310x150.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/info/sites/info/themes/europa/images/png/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/info/sites/info/themes/europa/images/png/favicon/favicon-96x96.png" />
+<link rel="alternate" hreflang="no" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_no" />
+<!--[if IE 9]><script src="sites/info/themes/europa/js/ie9.js" />
+</script><![endif]--><script type="application/ld+json">
+{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/ec.europa.eu\/info","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/ec.europa.eu\/info\/publications","name":"Publications"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/ec.europa.eu\/info\/publications\/sure-commission-proposals-council-support-member-states","name":"Publications"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/ec.europa.eu\/info\/publications\/sure-commission-proposals-council-support-member-states_en","name":"Publications"}}]}
+</script>
+<link rel="manifest" href="/info/sites/info/themes/europa/images/png/favicon/site.webmanifest" />
+<link rel="icon" type="image/png" sizes="16x16" href="/info/sites/info/themes/europa/images/png/favicon/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-120x120.png" />
+<meta name="theme-color" content="#034ea1" />
+<meta name="msapplication-square70x70logo" content="/info/sites/info/themes/europa/images/png/favicon/mstile-70x70.png" />
+<meta name="msapplication-TileImage" content="/info/sites/info/themes/europa/images/png/favicon/mstile-144x144.png" />
+<meta name="msapplication-TileColor" content="#034ea1" />
+<link rel="shortcut icon" href="https://ec.europa.eu/info/sites/info/themes/information/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="msapplication-square150x150logo" content="/info/sites/info/themes/europa/images/png/favicon/mstile-150x150.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/info/sites/info/themes/europa/images/png/favicon/apple-touch-icon-60x60.png" />
+<link rel="alternate" hreflang="sv" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_sv" />
+<link rel="alternate" hreflang="is" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_is" />
+<link rel="alternate" hreflang="el" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_el" />
+<link rel="alternate" hreflang="et" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_et" />
+<link rel="alternate" hreflang="en" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_en" />
+<link rel="alternate" hreflang="fr" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_fr" />
+<link rel="alternate" hreflang="hr" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_hr" />
+<link rel="alternate" hreflang="ga" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_ga" />
+<link rel="alternate" hreflang="de" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_de" />
+<link rel="alternate" hreflang="da" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_da" />
+<meta name="twitter:image" content="https://ec.europa.eu/info/sites/info/modules/custom/dt_shared_functions/images/ec_logo.png" />
+<link rel="alternate" hreflang="bg" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_bg" />
+<link rel="alternate" hreflang="es" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_es" />
+<link rel="alternate" hreflang="cs" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_cs" />
+<link rel="alternate" hreflang="it" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_it" />
+<link rel="alternate" hreflang="lv" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_lv" />
+<link rel="alternate" hreflang="fi" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_fi" />
+<link rel="alternate" hreflang="ro" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_ro" />
+<link rel="alternate" hreflang="sk" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_sk" />
+<link rel="alternate" hreflang="sl" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_sl" />
+<link rel="alternate" hreflang="pl" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_pl" />
+<link rel="alternate" hreflang="pt" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_pt" />
+<link rel="alternate" hreflang="nl" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_nl" />
+<link rel="alternate" hreflang="hu" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_hu" />
+<link rel="alternate" hreflang="lt" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_lt" />
+<link rel="alternate" hreflang="mt" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_mt" />
+<meta name="description" content="Publications from the European Commission." />
+<meta name="robots" content="follow, index" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_en" />
+<link rel="shortlink" href="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_en" />
+<meta property="fb:admins" content="107898832590939" />
+<meta name="revisit-after" content="15 days" />
+<meta property="og:site_name" content="European Commission - European Commission" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_en" />
+<meta property="og:title" content="Publications" />
+<meta property="og:description" content="Publications from the European Commission." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@EU_Commission" />
+<meta name="twitter:title" content="Publications" />
+<meta name="dcterms.title" content="Publications" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://ec.europa.eu/info/publications/sure-commission-proposals-council-support-member-states_en" />
+<meta name="creator" content="COMM/DG/UNIT" />
+<meta name="reference" content="European Commission" />
+<meta name="X-UA-Compatible" content="IE=edge" />
+<meta name="date" content="25/01/2021 - 15:46" />
+<meta name="classification" content="16000" />
+  <title>Publications | European Commission</title>
+  <link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/files/css/css_w8xk9_LdffDX1osjOMil0_i1x1J9F-pK5pzIjdhIFdc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/files/css/css_V4vG4_dYo0rxv6Zuh_uGwtvaHbXJZCTL0fmujzy8rro.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/files/css/css_fBvsuaoeut8H0jFqAfOHQyVxX5Bvei16M9nGeqZ1blo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/files/css/css_Eaz5G6dE4EjugarfL2eQ9OK_s14Bvbj7nJ9ZFl7gAhc.css" media="all" />
+
+<!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/files/css/css_WvlpNWqaoAxyghHgGd01HdAofQyyNfnsGS-yHu4pCAs.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/files/css/css_E72Y9rXJRZzgjZ3c0D6TjEwO12cMEv5zUBmp3RCQdBg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/themes/europa/css/style-sass-base.css?qnhsrr" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ec.europa.eu/info/sites/info/files/css/css_0z_axUBRvtE9EMADwX9QpUGUlXEXJ-MOA2Qr5KB_JCU.css" media="all" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lte IE 9]>
+    <script src="/info/sites/info/themes/europa/js/libraries/matchMedia/matchMedia.js"></script>
+    <script src="/info/sites/info/themes/europa/js/libraries/matchMedia/matchMedia.addListener.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="/info/sites/info/themes/europa/js/libraries/html5shiv.min.js"></script>
+    <script src="/info/sites/info/themes/europa/js/libraries/respond.min.js"></script>
+  <![endif]-->
+  <script src="//ec.europa.eu/wel/cookie-consent/consent.js"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="https://ec.europa.eu/info/misc/jquery-extend-3.4.0.js?v=1.10.2"></script>
+<script src="https://ec.europa.eu/info/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.10.2"></script>
+<script src="https://ec.europa.eu/info/misc/jquery.once.js?v=1.2"></script>
+<script src="https://ec.europa.eu/info/misc/drupal.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/jquery_update/replace/misc/jquery.form.min.js?v=2.69"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/libraries/chosen/chosen.jquery.min.js?v=1.1.0"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/libraries/history.js/scripts/bundled/html4%2Bhtml5/jquery.history.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/misc/ajax.js?v=7.75"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script>document.createElement( "picture" );</script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/video/js/video.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/field_group/field_group.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/views/js/base.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/bootstrap/js/misc/_progress.js?v=7.75"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/views/js/ajax_view.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/ctools/js/auto-submit.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/maxlength/js/maxlength.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/modules/custom/nexteuropa_feedback/js/nexteuropa_feedback.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/modules/custom/ec-europa-theme-tools/nexteuropa_language_selector_site_popup/js/nexteuropa_language_selector_site_popup.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/components/lang-select-site.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/components/breadcrumb.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/components/filters.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/custom/language_selector_page/js/language_selector_page.js?qnhsrr"></script>
+<script src="//ec.europa.eu/wel/surveys/wr_survey01/wr_survey.js"></script>
+<script defer="defer" src="//europa.eu/webtools/load.js?globan=1110"></script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/views_ajax_history/views_ajax_history.js?qnhsrr"></script>
+<script>delete Drupal.behaviors.viewsAjaxHistory;</script>
+<script src="https://ec.europa.eu/info/profiles/multisite_drupal_standard/modules/contrib/chosen/chosen.js?v=1.1.0"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/affix.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/alert.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/collapse.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/dropdown.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/tooltip.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/popover.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/scrollspy.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/tab.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/bootstrap-sass/js/bootstrap/transition.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/libraries/modernizr/modernizr.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/libraries/enquire.min.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/libraries/jquery.equalheight.min.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/misc/ajax.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/europa.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/europa_tabs.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/components/file.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/components/table-responsive.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/components/spinner.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/libraries/superclamp.min.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/europa/js/libraries/jquery.tablesorter.min.js?qnhsrr"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/bootstrap/js/modules/views/js/ajax_view.js?qnhsrr"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/info\/","pathPrefix":"","ajaxPageState":{"theme":"information","theme_token":"km0XIceQtAAoAZkvoQ7UQGLue3s3yroHUmDhL3NetY4","jquery_version":"1.10","js":{"sites\/info\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/info\/modules\/contrib\/picture\/picture.min.js":1,"sites\/info\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/ec.europa.eu\/wel\/cookie-consent\/consent.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"profiles\/multisite_drupal_standard\/libraries\/chosen\/chosen.jquery.min.js":1,"profiles\/multisite_drupal_standard\/libraries\/history.js\/scripts\/bundled\/html4+html5\/jquery.history.js":1,"misc\/ajax.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"0":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/video\/js\/video.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/field_group\/field_group.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/views\/js\/base.js":1,"sites\/info\/themes\/bootstrap\/js\/misc\/_progress.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/views\/js\/ajax_view.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/ctools\/js\/auto-submit.js":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/maxlength\/js\/maxlength.js":1,"sites\/info\/modules\/custom\/nexteuropa_feedback\/js\/nexteuropa_feedback.js":1,"sites\/info\/modules\/custom\/ec-europa-theme-tools\/nexteuropa_language_selector_site_popup\/js\/nexteuropa_language_selector_site_popup.js":1,"sites\/info\/themes\/europa\/js\/components\/lang-select-site.js":1,"sites\/info\/themes\/europa\/js\/components\/breadcrumb.js":1,"sites\/info\/themes\/europa\/js\/components\/filters.js":1,"profiles\/multisite_drupal_standard\/modules\/custom\/language_selector_page\/js\/language_selector_page.js":1,"\/\/ec.europa.eu\/wel\/surveys\/wr_survey01\/wr_survey.js":1,"\/\/europa.eu\/webtools\/load.js?globan=1110":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/views_ajax_history\/views_ajax_history.js":1,"1":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/chosen\/chosen.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/affix.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/alert.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/collapse.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/dropdown.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/tooltip.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/popover.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/scrollspy.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/tab.js":1,"sites\/info\/themes\/europa\/bootstrap-sass\/js\/bootstrap\/transition.js":1,"sites\/info\/themes\/europa\/js\/libraries\/modernizr\/modernizr.js":1,"sites\/info\/themes\/europa\/js\/libraries\/enquire.min.js":1,"sites\/info\/themes\/europa\/js\/libraries\/jquery.equalheight.min.js":1,"sites\/info\/themes\/europa\/js\/misc\/ajax.js":1,"sites\/info\/themes\/europa\/js\/europa.js":1,"sites\/info\/themes\/europa\/js\/europa_tabs.js":1,"sites\/info\/themes\/europa\/js\/components\/file.js":1,"sites\/info\/themes\/europa\/js\/components\/table-responsive.js":1,"sites\/info\/themes\/europa\/js\/components\/spinner.js":1,"sites\/info\/themes\/europa\/js\/libraries\/superclamp.min.js":1,"sites\/info\/themes\/europa\/js\/libraries\/jquery.tablesorter.min.js":1,"sites\/info\/themes\/bootstrap\/js\/modules\/views\/js\/ajax_view.js":1},"css":{"modules\/system\/system.base.css":1,"profiles\/multisite_drupal_standard\/libraries\/chosen\/chosen.css":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/chosen\/css\/chosen-drupal.css":1,"profiles\/multisite_drupal_standard\/modules\/features\/cce_basic_config\/cce_basic_config.css":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/ckeditor_lite\/css\/ckeditor_lite.all.css":1,"profiles\/multisite_drupal_standard\/modules\/custom\/ecas\/ecas_import_users\/css\/ecas_import_users.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/info\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/views\/css\/views.css":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/rate\/rate.css":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/tagclouds\/tagclouds.css":1,"profiles\/multisite_drupal_standard\/modules\/contrib\/video\/css\/video.css":1,"sites\/info\/modules\/features\/dt_social_network_links\/css\/dt_social_network_links.css":1,"profiles\/multisite_drupal_standard\/modules\/custom\/multisite_drupal_toolbox\/icons\/style.css":1,"sites\/info\/themes\/europa\/css\/ie9.css":1,"public:\/\/social_network_icons\/social_network_icons.css":1,"sites\/info\/themes\/europa\/css\/style-sass-base.css":1,"sites\/info\/themes\/europa\/css\/style-sass-components.css":1,"sites\/info\/themes\/information\/css\/style.css":1}},"chosen":{"selector":"select[multiple=\u0022multiple\u0022]","minimum_single":0,"minimum_multiple":0,"minimum_width":250,"options":{"allow_single_deselect":false,"disable_search":false,"disable_search_threshold":0,"search_contains":true,"placeholder_text_multiple":"- Any -","placeholder_text_single":"Choose an option","no_results_text":"No results match","inherit_select_classes":true}},"urlIsAjaxTrusted":{"\/info\/publications\/sure-commission-proposals-council-support-member-states_en":true,"\/info\/views\/ajax_en":true,"https:\/\/ec.europa.eu\/search\/?":true},"viewsAjaxHistory":{"onloadPageItem":0},"field_group":{"meta_wrapper":"teaser"},"views":{"ajax_path":"\/info\/views\/ajax_en","ajaxViews":{"views_dom_id:7f34f4e66e5cff1c83c9f5e1639ea9cf":{"view_name":"publication_list","view_display_id":"page_2","view_args":"sure-commission-proposals-council-support-member-states","view_path":"publications\/sure-commission-proposals-council-support-member-states","view_base_path":"publications","view_dom_id":"7f34f4e66e5cff1c83c9f5e1639ea9cf","pager_element":0}}},"better_exposed_filters":{"views":{"publication_list":{"displays":{"page_2":{"filters":{"combine":{"required":false},"field_publication_type_tid_i18n":{"required":false},"field_core_nal_countries_tid_i18n":{"required":false},"field_core_departments_target_id_entityreference_filter":{"required":false},"field_core_flex_publication_date":{"required":false},"field_core_flex_publication_date_1":{"required":false}}}}}}},"nexteuropa_feedback":{"useful_form_url":"https:\/\/ec.europa.eu\/info\/nexteuropa-useful-form\/load_en","feedback_form_url":"https:\/\/ec.europa.eu\/info\/nexteuropa-feedback-form\/load_en"},"europa":{"exposedBlockId":"block-views-exp-publication-list-page-2"},"password":{"strengthTitle":"Password compliance:"},"type":"setting","bootstrap":{"anchorsFix":0,"anchorsSmoothScrolling":0,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-publications page-publications-sure-commission-proposals-council-support-member-states i18n-en language-en" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+
+<header class="site-header" role="banner">
+  <div class="container-fluid">
+
+      <a href="/info/index_en" class="logo site-header__logo logo--logotype" title="Home - European Commission">
+      <img class="logo__image img-responsive" typeof="foaf:Image" src="https://ec.europa.eu/info/sites/info/themes/europa/images/svg/logo/logo--en.svg" alt="" />      <span class="sr-only">Home - European Commission</span>
+    </a>
+  
+  
+      <section class="top-bar" aria-label="Site tools">
+            <div class="region region-header">
+    <section class="block block-language-selector-site lang-select-site lang-select-site clearfix">
+ 
+  <a href="/info/splash_en?destination=publications/sure-commission-proposals-council-support-member-states" class="lang-select-site__link">
+    <span class="lang-select-site__code">
+      <span class="icon icon--language lang-select-site__icon"></span>
+      <span class="lang-select-site__code-text">en</span>
+    </span>
+    <span class="lang-select-site__label">English</span>
+  </a>
+  <div class="splash-page splash-page--overlay"></div>
+</section>
+<section id="block-nexteuropa-europa-search-nexteuropa-europa-search-form" class="block block-nexteuropa-europa-search clearfix">
+
+      
+    <div class="search-form__wrapper">
+    <a class="search-form__toggle" href="https://ec.europa.eu/search/?">
+      <span class="icon icon--search search-form__toggle-icon"></span>
+      <span class="search-form__toggle-label">Search</span>
+    </a>
+    <form class="search-form" action="https://ec.europa.eu/search/?" method="get" id="nexteuropa-europa-search-search-form" accept-charset="UTF-8"><div><div class="input-group input-group-search"><div class="search-form__textfield-wrapper"><div class="form-type-textfield form-item-QueryText form-item europa-textfield">
+  <label class="control-label element-invisible" for="edit-querytext">Search this website</label>
+ <input class="search-form__textfield form-control form-text" title="Search" type="search" id="edit-querytext" name="QueryText" value="" size="60" maxlength="128" />
+</div>
+</div><div class="input-group-btn search-form__btn-wrapper"><button class="btn-search search-form__btn btn form-submit" type="submit" id="edit-europa-search-submit" name="op" value="Search">Search</button>
+</div></div><input type="hidden" name="swlang" value="en" />
+<input type="hidden" name="form_build_id" value="form-yEyBA7RrfI0ctUEdJNbZowW2Z23SvcctRjLrQ5601Sw" />
+<input type="hidden" name="form_id" value="nexteuropa_europa_search_search_form" />
+</div></form>  </div>
+  
+</section>
+  </div>
+    </section>
+  
+  </div>
+</header>
+
+
+<section class="main-content" role="main">
+  <!-- Page Header -->
+  <div class="page-header ">
+      <nav class="page-navigation" role="navigation">
+      <div class="container-fluid">
+          <div class="region region-header-bottom">
+    <section id="block-easy-breadcrumb-easy-breadcrumb" class="block block-easy-breadcrumb clearfix">
+
+      
+    <div class="block__content">
+    <nav id="breadcrumb" class="breadcrumb" role="navigation" aria-label="breadcrumbs"><span class="element-invisible">You are here:</span><ol class="breadcrumb__segments-wrapper"><li class="breadcrumb__segment breadcrumb__segment--first"><a href="/info/index_en" class="breadcrumb__link" rel="home"><span class="breadcrumb__text">Home</span></a></li><li class="breadcrumb__segment breadcrumb__segment--penultimate"><a href="/info/publications_en" class="breadcrumb__link"><span class="breadcrumb__text">Publications</span></a></li><li class="breadcrumb__segment breadcrumb__segment--last"><span class="breadcrumb__text">Publications</span></li></ol></nav>  </div>
+  
+</section>
+  </div>
+      </div>
+    </nav>
+  
+  
+      <div class="container-fluid page-header__hero-title">
+      <div class="row padding-reset">
+        <div class="col-lg-9">
+                                <h1>Publications</h1>
+                    
+                      <p>Search for European Commission planning and strategy documents, factsheets, studies, tender opportunities and other official notices. Find EU laws, statistics and public opinion documents.</p>
+                  </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- Generic sections -->
+  
+  <div class="page-content">
+    <a id="main-content" tabindex="-1"></a>
+      <div class="container-fluid">
+        
+          <div class="row">
+                  <aside class="col-md-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section id="block-views-exp-publication-list-page-2" class="block block-views filters clearfix">
+
+        <h3 class="block__title filters__title">Filter by</h3>
+    
+    <div class="block__content">
+    <form class="exp-dom-id-7f34f4e66e5cff1c83c9f5e1639ea9cf ctools-auto-submit-full-form" action="/info/publications/sure-commission-proposals-council-support-member-states_en" method="get" id="views-exposed-form-publication-list-page-2" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-combine-wrapper" class="filters__filter views-exposed-widget views-widget-filter-combine">
+                  <label for="edit-combine">Keywords</label>
+                        <div class="views-widget">
+          <div class="form-type-textfield form-item-combine form-item europa-textfield">
+ <input class="form-control form-text" type="text" id="edit-combine" name="combine" value="" size="30" maxlength="128" />
+</div>
+        </div>
+              </div>
+          <div id="edit-field-publication-type-tid-i18n-wrapper" class="filters__filter views-exposed-widget views-widget-filter-field_publication_type_tid_i18n">
+                  <label for="edit-field-publication-type-tid-i18n">Publication type</label>
+                        <div class="views-widget">
+          <div class="form-type-select form-item-field-publication-type-tid-i18n form-item form-select europa-select">
+ <select class="form-control form-select" id="edit-field-publication-type-tid-i18n" name="field_publication_type_tid_i18n"><option value="All" selected="selected">- Any -</option><option value="137">Brochure</option><option value="128">Communication</option><option value="133">Consultation</option><option value="26327">eBook</option><option value="22743">Factsheet</option><option value="131">Impact assessment</option><option value="21947">Invitation to tender</option><option value="136">Law</option><option value="22740">Magazine</option><option value="22803">National parliament opinion</option><option value="146">National plan</option><option value="135">National report</option><option value="23118">Notice to stakeholders</option><option value="134">Official document</option><option value="127">Planning and management documents</option><option value="191">Poster</option><option value="147">Progress report</option><option value="23172">Proposal</option><option value="129">Report</option><option value="189">Study</option><option value="130">White paper</option><option value="132">Working document</option></select>
+</div>
+        </div>
+              </div>
+          <div id="edit-field-core-nal-countries-tid-i18n-wrapper" class="filters__filter views-exposed-widget views-widget-filter-field_core_nal_countries_tid_i18n">
+                  <label for="edit-field-core-nal-countries-tid-i18n">Country</label>
+                        <div class="views-widget">
+          <div class="form-type-select form-item-field-core-nal-countries-tid-i18n form-item form-select europa-select">
+ <select class="form-control form-select" id="edit-field-core-nal-countries-tid-i18n" name="field_core_nal_countries_tid_i18n"><option value="All" selected="selected">- Any -</option><option value="22559">Afghanistan</option><option value="21998">Albania</option><option value="22130">Algeria</option><option value="21995">Andorra</option><option value="22133">Angola</option><option value="22136">Antigua and Barbuda</option><option value="22139">Argentina</option><option value="22142">Armenia</option><option value="22145">Australia</option><option value="22001">Austria</option><option value="22148">Azerbaijan</option><option value="22151">Bahamas</option><option value="22154">Bahrain</option><option value="22157">Bangladesh</option><option value="22160">Barbados</option><option value="22010">Belarus</option><option value="22007">Belgium</option><option value="22163">Belize</option><option value="22166">Benin</option><option value="22169">Bhutan</option><option value="22172">Bolivia</option><option value="22004">Bosnia and Herzegovina</option><option value="22175">Botswana</option><option value="22178">Brazil</option><option value="22181">Brunei</option><option value="22124">Bulgaria</option><option value="22184">Burkina Faso</option><option value="22187">Burundi</option><option value="22199">Cabo Verde</option><option value="22190">Cambodia</option><option value="22193">Cameroon</option><option value="22196">Canada</option><option value="22202">Central African Republic</option><option value="22205">Chad</option><option value="22208">Chile</option><option value="22211">China</option><option value="22214">Colombia</option><option value="22217">Comoros</option><option value="22220">Congo</option><option value="22223">Costa Rica</option><option value="22226">Côte d’Ivoire</option><option value="22040">Croatia</option><option value="22229">Cuba</option><option value="22016">Cyprus</option><option value="26307">Czechia</option><option value="22232">Democratic Republic of the Congo</option><option value="22022">Denmark</option><option value="22235">Djibouti</option><option value="22238">Dominica</option><option value="22241">Dominican Republic</option><option value="22247">Ecuador</option><option value="22250">Egypt</option><option value="22253">El Salvador</option><option value="22256">Equatorial Guinea</option><option value="22259">Eritrea</option><option value="22025">Estonia</option><option value="26310">Eswatini</option><option value="22262">Ethiopia</option><option value="22265">Fiji</option><option value="22034">Finland</option><option value="22037">France</option><option value="22268">Gabon</option><option value="22274">Georgia</option><option value="22127">Germany</option><option value="22277">Ghana</option><option value="22028">Greece</option><option value="22280">Grenada</option><option value="22283">Guatemala</option><option value="22286">Guinea</option><option value="22289">Guinea-Bissau</option><option value="22292">Guyana</option><option value="22295">Haiti</option><option value="22298">Honduras</option><option value="22568">Hungary</option><option value="22046">Iceland</option><option value="22301">India</option><option value="22304">Indonesia</option><option value="22307">Iran</option><option value="22310">Iraq</option><option value="22043">Ireland</option><option value="22313">Israel</option><option value="22049">Italy</option><option value="22316">Jamaica</option><option value="22319">Japan</option><option value="22322">Jordan</option><option value="22325">Kazakhstan</option><option value="22328">Kenya</option><option value="22331">Kiribati</option><option value="22334">Kuwait</option><option value="22337">Kyrgyzstan</option><option value="22340">Laos</option><option value="22061">Latvia</option><option value="22343">Lebanon</option><option value="22346">Lesotho</option><option value="22349">Liberia</option><option value="22565">Libya</option><option value="22052">Liechtenstein</option><option value="22055">Lithuania</option><option value="22058">Luxembourg</option><option value="22352">Madagascar</option><option value="22355">Malawi</option><option value="22358">Malaysia</option><option value="22361">Maldives</option><option value="22364">Mali</option><option value="22076">Malta</option><option value="22367">Marshall Islands</option><option value="22370">Mauritania</option><option value="22373">Mauritius</option><option value="22376">Mexico</option><option value="22379">Micronesia</option><option value="22067">Moldova</option><option value="22064">Monaco</option><option value="22382">Mongolia</option><option value="22070">Montenegro</option><option value="22385">Morocco</option><option value="22388">Mozambique</option><option value="22574">Myanmar/Burma</option><option value="22391">Namibia</option><option value="22394">Nauru</option><option value="22562">Nepal</option><option value="22079">Netherlands</option><option value="22397">New Zealand</option><option value="22400">Nicaragua</option><option value="22403">Niger</option><option value="22406">Nigeria</option><option value="22409">North Korea</option><option value="26313">North Macedonia</option><option value="22082">Norway</option><option value="22412">Oman</option><option value="22415">Pakistan</option><option value="22418">Palau</option><option value="22421">Palestine</option><option value="22424">Panama</option><option value="22427">Papua New Guinea</option><option value="22430">Paraguay</option><option value="22433">Peru</option><option value="22436">Philippines</option><option value="22085">Poland</option><option value="22088">Portugal</option><option value="22439">Qatar</option><option value="22091">Romania</option><option value="22097">Russia</option><option value="22442">Rwanda</option><option value="22445">Saint Kitts and Nevis</option><option value="22448">Saint Lucia</option><option value="22451">Saint Vincent and the Grenadines</option><option value="22454">Samoa</option><option value="22109">San Marino</option><option value="22457">São Tomé and Príncipe</option><option value="22460">Saudi Arabia</option><option value="22463">Senegal</option><option value="22094">Serbia</option><option value="22466">Seychelles</option><option value="22469">Sierra Leone</option><option value="22472">Singapore</option><option value="22106">Slovakia</option><option value="22103">Slovenia</option><option value="22475">Solomon Islands</option><option value="22577">Somalia</option><option value="22478">South Africa</option><option value="22481">South Korea</option><option value="22571">South Sudan</option><option value="22031">Spain</option><option value="22484">Sri Lanka</option><option value="22487">Sudan</option><option value="22490">Suriname</option><option value="22100">Sweden</option><option value="22013">Switzerland</option><option value="22496">Syria</option><option value="22499">Tajikistan</option><option value="22502">Tanzania</option><option value="22505">Thailand</option><option value="22271">The Gambia</option><option value="22244">Timor-Leste</option><option value="22508">Togo</option><option value="22511">Tonga</option><option value="22514">Trinidad and Tobago</option><option value="22517">Tunisia</option><option value="22112">Turkey</option><option value="22520">Turkmenistan</option><option value="22523">Tuvalu</option><option value="22526">Uganda</option><option value="22115">Ukraine</option><option value="22529">United Arab Emirates</option><option value="22118">United Kingdom</option><option value="22532">United States</option><option value="22535">Uruguay</option><option value="22538">Uzbekistan</option><option value="22541">Vanuatu</option><option value="22121">Vatican City State</option><option value="22544">Venezuela</option><option value="22547">Vietnam</option><option value="22550">Yemen</option><option value="22553">Zambia</option><option value="22556">Zimbabwe</option></select>
+</div>
+        </div>
+              </div>
+          <div id="edit-field-core-departments-target-id-entityreference-filter-wrapper" class="filters__filter views-exposed-widget views-widget-filter-field_core_departments_target_id_entityreference_filter">
+                  <label for="edit-field-core-departments-target-id-entityreference-filter">Department</label>
+                        <div class="views-widget">
+          <div class="form-type-select form-item-field-core-departments-target-id-entityreference-filter form-item form-select europa-select">
+ <select class="form-control form-select" id="edit-field-core-departments-target-id-entityreference-filter" name="field_core_departments_target_id_entityreference_filter"><option value="All" selected="selected">- Any -</option><option value="190">Administration and Payment of Individual Entitlements</option><option value="887">Agriculture and Rural Development</option><option value="898">Budget</option><option value="882">Climate Action</option><option value="863">Communication</option><option value="884">Communications Networks, Content and Technology</option><option value="900">Competition</option><option value="195">Consumers, Health, Agriculture and Food Executive Agency</option><option value="183">Data Protection Officer</option><option value="124350">Defence Industry and Space</option><option value="879">Economic and Financial Affairs</option><option value="192">Education, Audiovisual and Culture Executive Agency</option><option value="888">Education, Youth, Sport and Culture</option><option value="890">Employment, Social Affairs and Inclusion</option><option value="880">Energy</option><option value="891">Environment</option><option value="182">European Anti-Fraud Office</option><option value="889">European Civil Protection and Humanitarian Aid Operations</option><option value="914">European External Action Service (EEAS)</option><option value="911">European Neighbourhood and Enlargement Negotiations</option><option value="1998">European Personnel Selection Office</option><option value="184">European Political Strategy Centre</option><option value="194">European Research Council Executive Agency</option><option value="131978">European School of Administration</option><option value="732">Eurostat - European statistics</option><option value="193">Executive Agency for Small and Medium-sized Enterprises</option><option value="881">Financial Stability, Financial Services and Capital Markets Union</option><option value="927">Foreign Policy Instruments</option><option value="136242">Foundation for Economic and Industrial Research (IOBE)</option><option value="912">Health and Food Safety</option><option value="185">Historical Archives Service</option><option value="745">Human Resources and Security</option><option value="744">Informatics</option><option value="186">Infrastructure and Logistics in Brussels</option><option value="188">Infrastructure and Logistics in Luxembourg</option><option value="198">Innovation and Networks Executive Agency</option><option value="124347">Inspire, Debate, Engage and Accelerate Action</option><option value="189">Internal Audit Service</option><option value="886">Internal Market, Industry, Entrepreneurship and SMEs</option><option value="904">International Partnerships</option><option value="746">Interpretation</option><option value="937">Joint Research Centre</option><option value="892">Justice and Consumers</option><option value="866">Legal Service</option><option value="181">Library and e-Resources Centre</option><option value="897">Maritime Affairs and Fisheries</option><option value="895">Migration and Home Affairs</option><option value="885">Mobility and Transport</option><option value="191">Publications Office</option><option value="139917">Recovery and Resilience Task Force</option><option value="893">Regional and Urban Policy</option><option value="894">Research and Innovation</option><option value="197">Research Executive Agency</option><option value="867">Secretariat-General</option><option value="2063">Structural Reform Support</option><option value="9594">Task Force for Relations with the United Kingdom</option><option value="913">Taxation and Customs Union</option><option value="903">Trade</option><option value="932">Translation</option></select>
+</div>
+        </div>
+              </div>
+          <div id="date_views_exposed_filter-19c0dbb35ebe0d6acc420f9f2b8adb65-wrapper" class="filters__filter views-exposed-widget views-widget-filter-field_core_flex_publication_date">
+                  <label for="date_views_exposed_filter-19c0dbb35ebe0d6acc420f9f2b8adb65">Published after</label>
+                        <div class="views-widget">
+          <div id="date_views_exposed_filter-19c0dbb35ebe0d6acc420f9f2b8adb65" class="form-wrapper form-group"><div id="edit-field-core-flex-publication-date-value-wrapper"><div id="edit-field-core-flex-publication-date-value-inside-wrapper"><div  class="container-inline-date"><div class="form-type-date-select form-item-field-core-flex-publication-date-value form-item form-group">
+  <div id="edit-field-core-flex-publication-date-value"  class="date-padding clearfix"><div class="form-type-select form-item-field-core-flex-publication-date-value-year form-item form-select europa-select">
+  <label class="control-label element-invisible" for="edit-field-core-flex-publication-date-value-year">Year</label>
+ <div class="date-year"><select class="date-year form-control form-select" id="edit-field-core-flex-publication-date-value-year" name="field_core_flex_publication_date[value][year]"><option value="" selected="selected">- Any -</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option></select></div>
+</div>
+</div>
+</div>
+</div></div></div></div>        </div>
+              </div>
+          <div id="date_views_exposed_filter-f0f2dd1d8327c5437914f6c39ed546e9-wrapper" class="filters__filter views-exposed-widget views-widget-filter-field_core_flex_publication_date_1">
+                  <label for="date_views_exposed_filter-f0f2dd1d8327c5437914f6c39ed546e9">Published before</label>
+                        <div class="views-widget">
+          <div id="date_views_exposed_filter-f0f2dd1d8327c5437914f6c39ed546e9" class="form-wrapper form-group"><div id="edit-field-core-flex-publication-date-value-wrapper"><div id="edit-field-core-flex-publication-date-value-inside-wrapper"><div  class="container-inline-date"><div class="form-type-date-select form-item-field-core-flex-publication-date-1-value form-item form-group">
+  <div id="edit-field-core-flex-publication-date-1-value"  class="date-padding clearfix"><div class="form-type-select form-item-field-core-flex-publication-date-1-value-year form-item form-select europa-select">
+  <label class="control-label element-invisible" for="edit-field-core-flex-publication-date-1-value-year">Year</label>
+ <div class="date-year"><select class="date-year form-control form-select" id="edit-field-core-flex-publication-date-1-value-year" name="field_core_flex_publication_date_1[value][year]"><option value="" selected="selected">- Any -</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option></select></div>
+</div>
+</div>
+</div>
+</div></div></div></div>        </div>
+              </div>
+                    <button class="ctools-use-ajax ctools-auto-submit-click js-hide btn-primary filters__btn-submit btn form-submit" type="submit" id="edit-submit-publication-list" name="" value="Apply">Apply</button>
+          <button class="js-hide js-showonsubmit btn-default filters__btn-reset btn form-submit" type="submit" id="edit-reset" name="op" value="Clear filters">Clear filters</button>
+      </div>
+</div>
+</div></form>  </div>
+  
+</section>
+<section id="block-dt-list-view-content-views-related-links" class="block block-dt-list-view-content link-block clearfix">
+
+        <h3 class="link-block__title block__title">If you don't find what you're looking for here, try the following places</h3>
+    
+    <div class="block__content">
+    <ul class="link-block__links"><li class="0 first"><a href="https://bookshop.europa.eu/en/home/">EU Publications</a></li>
+<li class="1"><a href="https://ec.europa.eu/eurostat/publications/all-publications">Eurostat publications</a></li>
+<li class="2"><a href="http://ec.europa.eu/COMMFrontOffice/PublicOpinion/index.cfm/General/index">Eurobarometer survey results</a></li>
+<li class="3"><a href="http://eur-lex.europa.eu/homepage.html">EU law - EUR-Lex</a></li>
+<li class="4"><a href="/info/strategy-documents_en">Strategy documents</a></li>
+<li class="5"><a href="/info/business-economy-euro/economy-finance-and-euro-publications_en">Economy, finance and the euro publications</a></li>
+<li class="6 last"><a href="https://ec.europa.eu/transparency/regdoc/index.cfm?fuseaction=search">Register of Commission documents</a></li>
+</ul>  </div>
+  
+</section>
+  </div>
+          </aside> <!-- /#sidebar-first -->
+        
+        <section class="section col-md-9">
+          
+            <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+    <div class="block__content">
+    <div class="view view-publication-list view-id-publication_list view-display-id-page_2 view-dom-id-7f34f4e66e5cff1c83c9f5e1639ea9cf">
+      
+  
+  
+      <div class="filters__result-count">
+                    <span class="filters__items-number">Publications (4074)</span>
+          </div>
+        <div>
+      <div class="filters__result-range">Showing results 1 to 10</div>
+    </div>
+  
+  
+        
+  
+      <div class="view-content">
+      <div class="listing__wrapper listing__wrapper--default">
+      <ul class="listing listing--teaser">
+          <li class="listing__item">
+        <div  about="/info/publications/draft-amending-budget-no-1-2021_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">22 January 2021</span></div><h3 class="listing__title"><a href="/info/publications/draft-amending-budget-no-1-2021_en" title="Draft amending budget No 1/2021">Draft amending budget No 1/2021</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">Draft Amending Budget No 1 of the European Union for the financial year 2021.</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/eu-candidate-countries-potential-candidates-economic-quarterly-cceq-4th-quarter-2020-0_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">22 January 2021</span><span class="meta__item meta__item--type">Economic and Financial Affairs</span></div><h3 class="listing__title"><a href="/info/publications/eu-candidate-countries-potential-candidates-economic-quarterly-cceq-4th-quarter-2020-0_en" title="EU Candidate Countries’ &amp; Potential Candidates’ Economic Quarterly (CCEQ) – 4th Quarter 2020">EU Candidate Countries’ &amp; Potential Candidates’ Economic Quarterly (CCEQ) – 4th Quarter 2020</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">An overview of economic developments in candidate and pre-candidate countries.</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/what-types-firms-become-illiquid-result-covid-19-firm-level-perspective-using-french-data_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">22 January 2021</span><span class="meta__item meta__item--type">William Connell Garcia</span><span class="meta__item meta__item--type">Victor Ho</span><span class="meta__item meta__item--type">Economic and Financial Affairs</span></div><h3 class="listing__title"><a href="/info/publications/what-types-firms-become-illiquid-result-covid-19-firm-level-perspective-using-french-data_en" title="What Types of Firms Become Illiquid as a Result of COVID-19? A Firm-Level Perspective Using French Data">What Types of Firms Become Illiquid as a Result of COVID-19? A Firm-Level Perspective Using French Data</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">This paper looks at the capacity of French firms to weather the COVID-19 crisis by considering characteristics such as cash reserves...</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/speech-michel-barnier-european-movement-ireland-european-year-award-2020_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">21 January 2021</span></div><h3 class="listing__title"><a href="/info/publications/speech-michel-barnier-european-movement-ireland-european-year-award-2020_en" title="Speech by Michel Barnier to the European Movement Ireland – European of the Year Award 2020">Speech by Michel Barnier to the European Movement Ireland – European of the Year Award 2020</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">European of the Year Award 2020</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/210119-economic-financial-system-communication_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">19 January 2021</span><span class="meta__item meta__item--type">Financial Stability, Financial Services and Capital Markets Union</span></div><h3 class="listing__title"><a href="/info/publications/210119-economic-financial-system-communication_en" title="Communication: The European economic and financial system: fostering openness, strength and resilience">Communication: The European economic and financial system: fostering openness, strength and resilience</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">Strategy to stimulate the openness, strength and resilience of the EU’s economic and financial system for the years to come.</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/finance-consultations-2021-european-single-access-point_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">Consultation</span><span class="meta__item meta__item--type">19 January 2021</span><span class="meta__item meta__item--type">Financial Stability, Financial Services and Capital Markets Union</span></div><h3 class="listing__title"><a href="/info/consultations/finance-2021-european-single-access-point_en" title="Targeted consultation on the establishment of a European single access point (ESAP) for financial and non-financial information publicly disclosed by companies">Targeted consultation on the establishment of a European single access point (ESAP) for financial and non-financial information publicly disclosed by companies</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">Targeted consultation on the establishment of a European single access point (ESAP) for financial and non-financial information</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/european-business-cycle-indicators-4th-quarter-2020_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">18 January 2021</span><span class="meta__item meta__item--type">Economic and Financial Affairs</span></div><h3 class="listing__title"><a href="/info/publications/european-business-cycle-indicators-4th-quarter-2020_en" title="European Business Cycle Indicators – 4th Quarter 2020">European Business Cycle Indicators – 4th Quarter 2020</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">This edition of the EBCI takes a closer look at the results of the autumn 2020 EU investment survey in the manufacturing sector.</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/unilateral-declarations-eu-and-uk-application-unions-state-aid-rules-under-article-10-ie-ni-protocol_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">08 January 2021</span></div><h3 class="listing__title"><a href="/info/publications/unilateral-declarations-eu-and-uk-application-unions-state-aid-rules-under-article-10-ie-ni-protocol_en" title="Unilateral Declarations of the EU and the UK (on the application of the Union’s State Aid rules under Article 10 of the IE/NI Protocol)">Unilateral Declarations of the EU and the UK (on the application of the Union’s State Aid rules under Article 10 of the IE/NI Protocol)</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">Unilateral Declarations of the EU and the UK (State Aid)</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/unilateral-declarations-eu-and-uk-application-union-law-related-medicinal-products-respect-northern-ireland-after-end-transition-period_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">08 January 2021</span></div><h3 class="listing__title"><a href="/info/publications/unilateral-declarations-eu-and-uk-application-union-law-related-medicinal-products-respect-northern-ireland-after-end-transition-period_en" title="Unilateral Declarations of the EU and the UK on the APPLICATION OF UNION LAW RELATED TO MEDICINAL PRODUCTS IN RESPECT OF NORTHERN IRELAND AFTER THE END OF THE TRANSITION PERIOD">Unilateral Declarations of the EU and the UK on the APPLICATION OF UNION LAW RELATED TO MEDICINAL PRODUCTS IN RESPECT OF NORTHERN IRELAND AFTER THE END OF THE TRANSITION PERIOD</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">Unilateral Declarations of the EU and the UK (MEDICINAL PRODUCTS)</div></div>  </div>
+
+</div>
+
+      </li>
+          <li class="listing__item">
+        <div  about="/info/publications/unilateral-declarations-uk-and-eu-certification-required-import-food-products-northern-ireland_en" typeof="sioc:Item foaf:Document" class="listing__item__wrapper node node-publication node-teaser view-mode-teaser">
+
+
+
+  <div class="listing__column-main ">
+    <div class="meta"><span class="meta__item meta__item--type">08 January 2021</span></div><h3 class="listing__title"><a href="/info/publications/unilateral-declarations-uk-and-eu-certification-required-import-food-products-northern-ireland_en" title="Unilateral Declarations of the UK and the EU (on certification required for the import of food products into Northern Ireland)">Unilateral Declarations of the UK and the EU (on certification required for the import of food products into Northern Ireland)</a></h3><div  class="field field-name-field-core-description field--field-core-description"><div class="field__items">Unilateral Declarations of the UK and the EU (food products)</div></div>  </div>
+
+</div>
+
+      </li>
+        </ul>
+  </div>
+    </div>
+        <div class="pager__wrapper"><h2 class="sr-only">Pages</h2><ul class="pager"><li class="pager__item pager__item--current"><span class="pager__item__text">Page </span>1</li>
+<li class="pager__item"><a title="Go to page 2" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=1">2</a></li>
+<li class="pager__item"><a title="Go to page 3" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=2">3</a></li>
+<li class="pager__item"><a title="Go to page 4" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=3">4</a></li>
+<li class="pager__item"><a title="Go to page 5" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=4">5</a></li>
+<li class="pager__item"><a title="Go to page 6" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=5">6</a></li>
+<li class="pager__item"><a title="Go to page 7" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=6">7</a></li>
+<li class="pager__item pager__item--ellipsis">…</li>
+<li class="pager__item pager__item--last"><a title="Go to page 408" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=407">408</a></li>
+<li class="pager__item pager__item--next"><a title="Go to next page" href="/info/publications/sure-commission-proposals-council-support-member-states_en?page=1">Next ›</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+  
+</section>
+  </div>
+
+                  </section>
+
+              </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+    <section class="footer__feedback">
+      <div class="region region-footer-feedback">
+    <section id="block-nexteuropa-feedback-nexteuropa-feedback" class="block block-nexteuropa-feedback feedback-form__wrapper clearfix">
+
+      
+    <div class="block__content">
+    <div class="feedback-form">
+  <div class="feedback-form__top">
+    <div class="container-fluid">
+      <div class="feedback-form__top-content">
+        <div class="feedback-form__useful">
+          <span>Was this page useful?</span>
+          <div class="btn-group">
+            <button type="button" id="btn-useful-yes" class="btn btn-primary" data-target="#feedback-form__content" value="Yes">Yes</button>
+            <button type="button" id="btn-useful-no" class="btn btn-primary" data-target="#feedback-form__content" data-hash="6r8dzJiiHT7_XIf-x5JFxTm5gF3yd1iz7G-1FndvuMM" value="No">No</button>
+          </div>
+        </div>
+        <a href="#feedback-form__content" class="feedback-form__trigger collapsed" data-toggle="collapse" data-target="#feedback-form__content" aria-expanded="false">Is there an issue with this page?<i class="icon icon--down icon--spacing-2-xs"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <span class="feedback-form__arrow"></span>
+    <div id="feedback-form__content" class="collapse" aria-expanded="false" style="height: 0;"></div>
+  </div>
+</div>
+  </div>
+  
+</section>
+  </div>
+  </section>
+        
+<div class="ec-footer">
+  <div class="container-fluid">
+    <div class="ec-footer__top">
+      <div class="row">
+        <div class="col-md-4 ec-footer__identity">
+          <h4 class="ec-footer-heading"><a href="https://ec.europa.eu/info/index_en">European Commission website</a></h4>
+          <span>This site is managed by the Directorate-General for Communication</span>
+        </div>
+        <div class="col-md-4 ec-footer__menu">
+          <ul class="links"><li class="menu-39394 first"><a href="https://ec.europa.eu/info/strategy_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Strategy</a></li>
+<li class="menu-39370"><a href="https://ec.europa.eu/info/about-european-commission_en" data-display-title="1" data-hide-children="0" data-remove-class="0">About the European Commission</a></li>
+<li class="menu-39385"><a href="https://ec.europa.eu/info/business-economy-euro_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Business, Economy, Euro</a></li>
+<li class="menu-39397"><a href="https://ec.europa.eu/info/live-work-travel-eu_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Live, work, travel in the EU</a></li>
+<li class="menu-39400"><a href="https://ec.europa.eu/info/law_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Law</a></li>
+<li class="menu-39406"><a href="https://ec.europa.eu/info/funding-tenders_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Funding, Tenders</a></li>
+<li class="menu-39391"><a href="https://ec.europa.eu/info/research-and-innovation_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Research and innovation</a></li>
+<li class="menu-39403"><a href="https://ec.europa.eu/info/energy-climate-change-environment_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Energy, Climate change, Environment</a></li>
+<li class="menu-39388 last"><a href="https://ec.europa.eu/info/education_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Education</a></li>
+</ul>        </div>
+        <div class="col-md-4 ec-footer__menu">
+          <ul class="links"><li class="menu-39361 first"><a href="https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Aid, Development cooperation, Fundamental rights</a></li>
+<li class="menu-39355"><a href="https://ec.europa.eu/info/food-farming-fisheries_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Food, Farming, Fisheries</a></li>
+<li class="menu-39358"><a href="https://ec.europa.eu/info/eu-regional-and-urban-development_en" data-display-title="1" data-hide-children="0" data-remove-class="0">EU regional and urban development</a></li>
+<li class="menu-39349"><a href="https://ec.europa.eu/info/jobs-european-commission_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Jobs at the European Commission</a></li>
+<li class="menu-39343"><a href="https://ec.europa.eu/info/statistics_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Statistics</a></li>
+<li class="menu-39346"><a href="https://ec.europa.eu/commission/presscorner/home/en" data-display-title="1" data-hide-children="0" data-remove-class="0">News</a></li>
+<li class="menu-39352"><a href="https://ec.europa.eu/info/events_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Events</a></li>
+<li class="menu-39340 last"><a href="https://ec.europa.eu/info/publications_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Publications</a></li>
+</ul>        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+          <div class="ec-footer__divider"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ec-footer__bottom">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 ec-footer__menu">
+          <ul class="links"><li class="menu-39409 first"><a href="https://ec.europa.eu/info/about-european-commission/contact_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Contact the European Commission</a></li>
+<li class="menu-39379"><a href="https://europa.eu/european-union/contact/social-networks_en#n:+i:4+e:1+t:+s" data-display-title="1" data-hide-children="0" data-remove-class="0">Follow the European Commission on social media</a></li>
+<li class="menu-39382"><a href="https://ec.europa.eu/info/resources-partners_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Resources for partners</a></li>
+<li class="menu-41529 last"><a href="/info/node/1108_en" data-display-title="1" data-hide-children="0" data-remove-class="0">About the European Commission&#039;s web presence</a></li>
+</ul>        </div>
+        <div class="col-md-4 ec-footer__menu">
+          <ul class="links"><li class="menu-39373 first"><a href="https://ec.europa.eu/info/language-policy_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Language policy</a></li>
+<li class="menu-39376"><a href="https://ec.europa.eu/info/cookies_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Cookies</a></li>
+<li class="menu-39367"><a href="https://ec.europa.eu/info/privacy-policy_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Privacy policy</a></li>
+<li class="menu-39364 last"><a href="https://ec.europa.eu/info/legal-notice_en" data-display-title="1" data-hide-children="0" data-remove-class="0">Legal notice</a></li>
+</ul>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </footer>
+  <script src="https://ec.europa.eu/info/sites/info/modules/contrib/picture/picturefill2/picturefill.min.js?v=2.3.1"></script>
+<script src="https://ec.europa.eu/info/sites/info/modules/contrib/picture/picture.min.js?v=7.75"></script>
+<script src="https://ec.europa.eu/info/sites/info/themes/bootstrap/js/bootstrap.js?qnhsrr"></script>
+<script type="application/json">{"utility":"piwik","siteID":"237","sitePath":["ec.europa.eu"],"is404":false,"is403":false,"instance":"ec.europa.eu","siteSection":"info publications"}</script>
+</body>
+</html>

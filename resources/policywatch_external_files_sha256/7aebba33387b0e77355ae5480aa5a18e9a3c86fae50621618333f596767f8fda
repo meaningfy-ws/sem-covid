@@ -1,0 +1,720 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="bg_html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk">
+   <head>
+   		
+<!-- META TAGY-->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="content-language" content="sk" />
+
+
+
+<title>SOS dotácie - MPSVR SR</title>
+
+
+<!-- META TAGY-->
+<meta http-equiv="Content-language" content="sk" />
+
+<meta name="title" content="SOS dotácie" />
+<meta name="keywords" content="SOS dotácie" />
+<meta name="author" content="MPSVR SR" />
+<meta name="generator" content="Redakčný systém WebJET - www.webjet.sk" />
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+<!-- JQUERY -->
+<script type="text/javascript" src="/components/_common/javascript/jquery.min.js" ></script><script type="text/javascript" src="/components/_common/javascript/page_functions.js.jsp?language=sk" ></script><link rel="stylesheet" type="text/css" media="screen" href="/components/form/check_form.css" /> 
+
+<!-- SCRIPT -->
+<script type="text/javascript" src="/jscripts/common.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.ezmark.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="/jscripts/bootstrap-filestyle.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript" src="/jscripts/sorttable.js"></script>
+<script type="text/javascript" src="/jscripts/jquery-scripts.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/css/page.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/print.css" type="text/css" media="print" />
+<link type="text/css" rel="stylesheet" href="/css/page-medium.css" media="screen and (max-height: 720px)" />
+
+<!--[if lte IE 7]>
+<script type="text/javascript" src="/jscripts/ie-adapt.js"></script>
+<script type="text/javascript" src="/jscripts/adapt.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/jscripts/ie-adapt.js"></script>
+<script type="text/javascript" src="/jscripts/adapt.min.js"></script>
+<![endif]-->
+
+
+
+   </head>
+   <body id="bg_body">
+
+	<div class="page">
+        <div id="header">
+        	<ul id="header_links">
+    <li class="hl_home"><a href="/" title="Úvodná stránka">Domov</a></li>
+    <li class="hl_blind"><a href="/showdoc.do?docid=25353&amp;forceBrowserDetector=blind" title="Textová verzia">Textová verzia</a></li>
+    <li class="hl_site_map"><a href="/sk/mapa-stranky.html" title="Mapa stránky">Mapa stránky</a></li>
+    <li class="hl_rss"><a onclick="return openTargetBlank(this, event)" href="/rss.xml" title="RSS">RSS</a></li>
+<li class="hl_lang_en"><a title="Anglická verzia web sídla" href="/en/">English</a></li>
+</ul>
+<div class="logo"> <a title="Ministerstvo práce, sociálnych vecí a&nbsp;rodiny Slovenskej republiky" href="/">Ministerstvo práce, sociálnych vecí a&nbsp;rodiny Slovenskej republiky <span>&nbsp;</span></a> </div>
+<div class="search_top"> 
+
+
+
+
+
+
+
+
+
+	
+	
+<form class="smallSearchForm" action="/sk/vysledky-vyhladavania.html" method="get">
+		<p>
+			
+			<input class="smallSearchInput" type="text" name="words" size="25" 
+				value="Vyhľadajte" id="searchWordsTop" />
+			<input class="smallSearchSubmit" type="submit" value="Hľadať" title="Hľadať" />
+		</p>
+	</form>
+
+	
+
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function(){
+		var searchText = 'Vyhľadajte'
+		var defaultText = 'Vyhľadajte'
+	
+    	$("#searchWordsTop").focus(function () {
+        	var text = $(this).val();
+        	if(text == defaultText){
+            	$(this).val("");
+        	}else{
+            	$(this).val(text);
+        	}
+    	});
+    	$("#searchWordsTop").blur(function () {
+        	var text = $(this).val();
+        	if(text == ""){
+            	$(this).val('Vyhľadajte');
+        	}else{
+            	$(this).val(text);
+        	}
+    	});
+	});
+	//]]>
+	</script>
+
+
+ </div>
+<ul id="header_links2">
+    <li class="hl_contacts"><a title="Kontaktujte nás" href="/sk/kontakt.html">Kontaktujte nás</a></li>
+</ul>
+
+            <hr />
+        </div>
+
+        <div class="top_menu_box cf">
+            <h3 id="b_top_menu" class="blind_nadpis">Hlavné menu</h3>
+
+
+
+
+<ul id="top_menu"><li class="mi_1" >
+<a href="/sk/praca-zamestnanost/"  class="mi_1"  ><span></span>
+Práca a zamestnanosť
+</a>
+
+<ul>
+<li>
+<a href="/sk/praca-zamestnanost/podpora-zamestnanosti/" ><span></span>
+Podpora zamestnanosti</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/" ><span></span>
+Zamestnanec a zamestnávateľ</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/inspekcia-prace/" ><span></span>
+Inšpekcia práce</a>
+</li>
+<li>
+<a href="" ><span></span>
+Pomoc pri hľadaní práce</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/zakonnik-prace/" ><span></span>
+Zákonník práce</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/inspekcia-prace/podnety/" ><span></span>
+Podať podnet na inšpekciu práce</a>
+</li>
+<li>
+<a href="/sk/organizacie-ministerstva/ustredie-prace-socialnych-veci-rodiny/" ><span></span>
+Ústredie práce sociálnych vecí a rodiny SR</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/bezpecnost-ochrana-zdravia-pri-praci/" ><span></span>
+Bezpečnosť a ochrana zdravia pri práci</a>
+</li>
+<li>
+<a href="https://www.employment.gov.sk/sk/praca-zamestnanost/socialna-ekonomika/" ><span></span>
+Sociálna ekonomika, sociálne podniky</a>
+</li>
+</ul>
+</li>
+<li class="mi_2" >
+<a href="/sk/rodina-socialna-pomoc/"  class="mi_2"  ><span></span>
+Rodina a sociálna pomoc
+</a>
+
+<ul>
+<li>
+<a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/" ><span></span>
+Podpora rodinám s deťmi</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/hmotna-nudza/" ><span></span>
+Pomoc v hmotnej núdzi</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/" ><span></span>
+Ťažké zdravotné postihnutie</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/penazna-pomoc/rodicovsky-prispevok/" ><span></span>
+Rodičovský príspevok</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/" ><span></span>
+Životné minimum</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/socialne-sluzby/" ><span></span>
+Sociálne služby</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/penazna-pomoc/pridavok-dieta/" ><span></span>
+Prídavok na dieťa</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/" ><span></span>
+Sociálnoprávna ochrana detí a sociálna kuratela</a>
+</li>
+</ul>
+</li>
+<li class="mi_3" >
+<a href="/sk/socialne-poistenie-dochodkovy-system/"  class="mi_3"  ><span></span>
+Sociálne poistenie a dôchodkový systém
+</a>
+
+<ul>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/i-pilier-dochodkove-poistenie/" ><span></span>
+Povinné dôchodkové poistenie (I.pilier)</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/nemocenske-poistenie/" ><span></span>
+Nemocenské poistenie</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/poistenie-nezamestnanosti/" ><span></span>
+Poistenie v nezamestnanosti</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/ii-pilier-starobne-dochodkove-sporenie/" ><span></span>
+Starobné dôchodkové sporenie (II.pilier)</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/urazove-poistenie/" ><span></span>
+Úrazové poistenie</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie/vianocny-prispevok/" ><span></span>
+Vianočný príspevok</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/iii-pilier-doplnkove-dochodkove-sporenie/" ><span></span>
+Doplnkové dôchodkové sporenie (III.pilier)</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/garancne-poistenie/" ><span></span>
+Garančné poistenie</a>
+</li>
+</ul>
+</li>
+<li class="mi_4" >
+<a href="/sk/ministerstvo/"  class="mi_4"  ><span></span>
+Ministerstvo
+</a>
+
+<ul>
+<li>
+<a href="/sk/ministerstvo/minister/" ><span></span>
+Minister</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/analyticke-centrum" ><span></span>
+Inštitút sociálnej politiky</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/poskytovanie-dotacii/" ><span></span>
+Poskytovanie dotácií</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/statni-tajomnici/" ><span></span>
+Štátni tajomníci</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/volne-pracovne-miesta/" ><span></span>
+Voľné pracovné miesta</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/zmluvy-objednavky-faktury/" ><span></span>
+Zmluvy, objednávky, faktúry</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/generalny-tajomnik-sluzobneho-uradu/" ><span></span>
+Generálny tajomník služobného úradu</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/rozpocet-ministerstva/rozpocet-ministerstva-rok-2019.html" ><span></span>
+Rozpočet ministerstva</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/europska-unia-a-medzinarodne-vztahy/" ><span></span>
+Európska únia a medzinárodné vzťahy</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/organizacna-struktura/" ><span></span>
+Organizačná štruktúra</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/verejne-obstaravanie/" ><span></span>
+Verejné obstarávanie</a>
+</li>
+</ul>
+</li>
+</ul>
+
+ 
+
+
+
+
+
+
+<div class="menu_info">
+
+
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/praca-zamestnanost/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/rodina-socialna-pomoc/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/socialne-poistenie-dochodkove-sporenie/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/ministerstvo/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+	
+	
+
+
+
+
+
+</div>
+
+        </div>
+
+        <div class="navbar cf">
+            <a href='/sk/'>Úvod</a> <span class="nb_separator">></span> <a href='/sk/ministerstvo/'>Ministerstvo</a> <span class="nb_separator">></span> <a href='/sk/ministerstvo/poskytovanie-dotacii/'>Poskytovanie dotácií</a> <span class="nb_separator">></span> <a href='/sk/ministerstvo/poskytovanie-dotacii/archiv/archiv.html'>Archív</a> <span class="nb_separator">></span> <a href='/sk/ministerstvo/poskytovanie-dotacii/archiv/2020/'>2020</a> <span class="nb_separator">></span> <a href='/sk/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-dotacie.html'>SOS dotácie</a>
+            <hr />
+        </div>
+
+        <div class="content_box cf">
+        	<div id="content" class="cf c_sp">
+                <h1>SOS dotácie</h1>
+                
+
+                
+                <h2> Zmena prijímateľa SOS dotácie </h2>
+
+<p> Upozorňujeme, že  <strong> žiadosti </strong>  o SOS dotáciu  <strong> prijímajú  </strong> od novembra  <strong> príslušné úrady práce </strong>  (podľa trvalého bydliska žiadateľa). Vyplnenú a podpísanú žiadosť pošlite poštou alebo elektronicky. </p>
+
+<p> Ministerstvo zvyšuje dotáciu na 300 eur mesačne pre jedného žiadateľa. </p>
+
+<p> SOS dotácia je určená pre ľudí, ktorí z dôvodu krízovej situácie prestali pracovať, ocitli sa bez príjmu a nemajú nárok na žiadny iný príspevok z projektu &bdquo;Prvá pomoc plus&ldquo;. </p>
+
+<p>  <a href="https://www.upsvr.gov.sk/socialne-veci-a-rodina/sos-dotacia.html?page_id=1037747" onclick="return openTargetBlank(this, event)"> Viac informácií </a>  </p>
+
+<h2> Prehľad žiadateľov </h2>
+
+<p>  <em> Prehľad žiadateľov, ktorým bola schválená dotácia na podporu humanitárnej pomoci v zmysle &sect; 9 ods. 1 zákona č. 544/2010 Z. z. o dotáciách v pôsobnosti MPSVR SR v znení neskorších predpisov a &sect;3 nariadenia vlády SR č. 103/2020 Z. z. </em>  </p>
+
+<ul>
+	 <li>  <a href="https://www.employment.gov.sk/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc_na-zverejnenie.pdf" title="Súbor PDF, veľkosť 503,92 kB (Odkaz sa otvorí v novom okne)"> Prehľad žiadateľov - zverejnené 15.5.2020  </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-2.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 619,57 kB"> Prehľad žiadateľov - zverejnené 22.5.2020 </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-3.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 581,35 kB"> Prehľad žiadateľov - zverejnené 29.5.2020 </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-4.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 837,95 kB"> Prehľad žiadateľov - zverejnené 4.6.2020 </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-5.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 648,56 kB"> Prehľad žiadateľov - zverejnené 13.6.2020  </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-6.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 495,45 kB"> Prehľad žiadateľov - zverejnené 19.6.2020 </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-7.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 268,34 kB"> Prehľad žiadateľov - zverejnené 30.6.2020 (za marec, apríl) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-8.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 1,36 MB"> Prehľad žiadateľov - zverejnené 30.6.2020 (za máj, jún) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-9.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 453,74 kB"> Prehľad žiadateľov - zverejnené 8.7.2020 (za marec až jún) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-10.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 456,7 kB"> Prehľad žiadateľov - zverejnené 13.7.2020 (za marec až jún) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-humanitarna-pomoc-11.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 224,67 kB"> Prehľad žiadateľov - uhradené 20.7.2020 </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-jul-novi.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 455,67 kB"> Prehľad žiadateľov - zverejnené 4.8.2020 (za jún, júl) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-jul-povodni.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 1,21 MB"> Prehľad žiadateľov - zverejnené 4.8.2020 (za júl) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-jul-vratenie-doplatkov.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 412,8 kB"> Prehľad žiadateľov - zverejnené 4.8.2020 (za marec až júl) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-jun-jul.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 238,97 kB"> Prehľad žiadateľov - zverejnené 26.8.2020 (za jún/júl, doručené v júli </a> ) </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-jun-august-novi.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 419,55 kB"> Prehľad žiadateľov - zverejnené 14.9.2020 (za jún až august) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-august-povodni.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 1,45 MB"> Prehľad žiadateľov - zverejnené 14.9.2020 (za august) </a>  </li>
+	 <li>  <a href="/files/slovensky/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-august-2.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 418,93 kB"> Prehľad žiadateľov - uhradené 23.9.2020 (za august) </a>  </li>
+</ul>
+
+<p>   </p>
+            </div>
+            
+            <div id="menu" class="sp_menu">
+            	<h3 class="blind_nadpis" id="b_side_menu">Menu</h3>
+
+   <ul id="left_menu" class="">
+      <li><a href="/sk/ministerstvo/minister/"  class="show">Minister</a></li>
+      <li><a href="/sk/ministerstvo/statni-tajomnici/"  class="show">Štátni tajomníci</a></li>
+      <li><a href="/sk/ministerstvo/generalny-tajomnik-sluzobneho-uradu/">Generálny tajomník služobného úradu</a></li>
+      <li><a href="/sk/ministerstvo/organizacna-struktura/"  class="show">Organizačná štruktúra</a></li>
+      <li><a href="/sk/ministerstvo/hospodarska-socialna-rada-sr/">Hospodárska a sociálna rada SR</a></li>
+      <li><a href="/sk/ministerstvo/rada-vlady-sr-prava-seniorov/">Rada vlády Slovenskej republiky pre práva seniorov a prispôsobovanie verejných politík procesu starnutia populácie</a></li>
+      <li><a href="/spolocny-sekretariat-vyborov/">Spoločný sekretariát výborov</a></li>
+      <li><a href="/sk/ministerstvo/NKSpreRPNnD/">NKS pre riešenie problematiky násilia na deťoch</a></li>
+      <li><a href="/isp/">Inštitút sociálnej politiky</a></li>
+      <li><a href="/sk/ministerstvo/volne-pracovne-miesta/"  class="show">Voľné pracovné miesta</a></li>
+      <li><a href="/sk/ministerstvo/rozpocet-ministerstva/rozpocet-ministerstva-rok-2020.html"  class="show">Rozpočet ministerstva</a></li>
+      <li><a href="/sk/ministerstvo/vyrocne-spravy-uctovne-uzavierky-ministerstva/">Výročné správy a účtovné závierky ministerstva</a></li>
+      <li><a href="/sk/ministerstvo/verejne-obstaravanie/"  class="show">Verejné obstarávanie</a></li>
+      <li class="open"><a href="/sk/ministerstvo/poskytovanie-dotacii/"  class="show">Poskytovanie dotácií</a>
+      <ul>
+         <li><a href="/sk/ministerstvo/poskytovanie-dotacii/poziadat-dotaciu/">Všeobecné informácie</a></li>
+         <li><a href="/sk/ministerstvo/poskytovanie-dotacii/schvalene-ziadosti/"  class="hide">Schválené žiadosti</a></li>
+         <li><a href="/sk/ministerstvo/poskytovanie-dotacii/neschvalene-ziadosti/neschvalene-ziadosti-2.html"  class="hide">Neschválené žiadosti</a></li>
+         <li class="open"><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/archiv.html"  class="hide">Archív</a>
+         <ul>
+            <li class="open"><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2020/">2020</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2019/">2019</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2018/poskytovanie-dotacii-roku-2018.html">2018</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2017/poskytovanie-dotacii-roku-2017.html">2017</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2015/poskytovanie-dotacii-roku-2016.html">2016</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2015/">2015</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2014/poskytovanie-dotacii-roku-2014.html">2014</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/prioritne-oblasti-podpory-rozvoja-socialnych-sluzieb-rok-2013.html">2013</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2012/">2012</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2011/">2011</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2009-2010/">2009 - 2010</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2008/">2008</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2006-2007/">2006 - 2007</a></li>
+            <li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2006/">2005- 2001</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="/sk/ministerstvo/poskytovanie-informacii-podla-z-c-211/2000-z-z/poskytovanie-informacii-podla-z-c-211-2000-z-z.html">Poskytovanie informácií podľa z. č. 211&#47;2000 Z. z.</a></li>
+      <li><a href="/sk/ministerstvo/zmluvy-objednavky-faktury/"  class="show">Zmluvy, objednávky, faktúry</a></li>
+      <li><a href="/sk/ministerstvo/sprava-majetku/"  class="show">Správa majetku</a></li>
+      <li><a href="/sk/ministerstvo/akreditacie/">Akreditácie pre SPOD a SK a sociálne služby</a></li>
+      <li><a href="/sk/ministerstvo/akreditacie-vzdelavanie/">Akreditácie pre oblasť vzdelávania podľa zákona 219&#47;2014 Z. z. o sociálnej práci</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/supervizia/"  class="hide">Supervízia</a></li>
+      <li><a href="/sk/ministerstvo/europska-unia-a-medzinarodne-vztahy/">EÚ a medzinárodné vzťahy</a></li>
+      <li><a href="/sk/ministerstvo/spolocenska-zodpovednost/"  class="show">Spoločenská zodpovednosť</a></li>
+      <li><a href="/sk/ministerstvo/projekty/projekty-ministerstva.html">Projekty</a></li>
+   </ul>
+
+
+
+<h3>Neprehliadnite</h3>
+
+<ul id="side_links">
+	<li><strong style="color: rgb(255, 0, 0);"><a href="/sk/koronavirus-pracovna-socialna-oblast/"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(153, 51, 102);">Koronavírus - pracovná a&nbsp;sociálna oblasť - dôležité informácie </span></span></a></strong></li>
+	<li><a href="/sk/ministerstvo/poskytovanie-dotacii/archiv/2020/sos-dotacie.html"><span style="color: rgb(255, 0, 0);"><strong>SOS </strong></span><span style="color: rgb(255, 0, 0);"><strong>dotácie</strong></span></a></li>
+	<li><a href="/sk/ministerstvo/medzinarodna-spolupraca/brexit/"><strong>BREXIT &ndash;&nbsp; Všeobecné&nbsp;informácie pre&nbsp;občanov po vystúpení UK z&nbsp;EÚ</strong></a></li>
+	<li><a href="/en/brexit/"><strong>Brexit - Information on application of the agreement on the withdrawal of Great Britain from the EU</strong></a></li>
+	<li><a href="/files/slovensky/socialne-poistenie-dochodkovy-system/informacia-priprave-npas-ii.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 198,6 kB"><strong>Národný program aktívneho starnutia na&nbsp;roky 2021-2030 &ndash; informácia o&nbsp;príprave</strong></a></li>
+	<li><a href="/sk/informacie-media/aktuality/oznam-k-zasielaniu-rozhodnuti-do-elektronickych-schranok.html" onclick="return openTargetBlank(this, event)">Oznam k&nbsp;zasielaniu rozhodnutí do&nbsp;elektronických schránok</a></li>
+	<li><a href="/files/slovensky/ministerstvo/14b-pkp-mpsvr-sr-k-31.8.2019-bez-podpisu.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 3,49 MB"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(162, 0, 70);"><span style="color: rgb(0, 0, 0);">Protikorupčný program MPSVR SR</span></span></span></a></li>
+	<li><a href="/sk/ministerstvo/ostatne/">0800 212&nbsp;212&nbsp;- Bezplatná nonstop linka pre&nbsp;ženy zažívajúce násilie</a></li>
+	<li><a href="/sk/informacie-cudzincov/information-uk-nationals-their-family-members-slovakia-on-uk-departure-from-eu/">BREXIT - Information for UK Nationals and their Family in Slovakia </a></li>
+	<li><a href="http://www.mzv.sk/europske-zalezitosti/brexit" onclick="return openTargetBlank(this, event)"><span style="color: rgb(255, 23, 82);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(162, 0, 59);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(0, 0, 0);">BREXIT - informácie pre&nbsp;občanov a&nbsp;podniky</span></span></span></span></span></a></li>
+	<li><a href="/files/slovensky/informacie-slovakov-pracujucich-zahranici.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 771,07 kB"><span style="color: rgb(255, 23, 82);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(162, 0, 59);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(0, 0, 0);">Informácie pre&nbsp;návrat Slovákov pracujúcich v&nbsp;zahraničí</span></span></span></span></span></a></li>
+	<li><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/prispevky-k-davke-hmotnej-nudzi/dotacia-podporu-vychovy-k-stravovacim-navykom-dietata/">DOTÁCIE NA&nbsp;STRAVU - materské a&nbsp;základné školy</a></li>
+	<li><a href="/sk/ministerstvo/vyskum-oblasti-prace-socialnych-veci-institut-socialnej-politiky/mapa-socialnych-sluzieb-3.html">MAPA SOCIÁLNYCH SLUŽIEB</a></li>
+	<li><a href="/sk/ministerstvo/vyskum-oblasti-prace-socialnych-veci-institut-socialnej-politiky/kalkulacka-prispevku-opatrovanie-6.html">KALKULAČKA príspevku na&nbsp;opatrovanie</a></li>
+	<li><a href="/files/slovensky/ministerstvo/rada-vlady-sr-prava-seniorov/definicia-vekoveho-manazmentu-vytvorenie-zasad.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 933,99 kB">Zásady vekového manažmentu pre&nbsp;zamestnávateľov </a></li>
+	<li><a href="/sk/ministerstvo/akreditacie/ostatne/">Akreditácie na&nbsp;kurz opatrovania detí</a></li>
+	<li><a href="/sk/rodina-socialna-pomoc/socialne-sluzby/zariadenia-starostlivosti-deti-do-troch-rokov/">Zariadenia starostlivosti o&nbsp;deti do&nbsp;troch rokov</a></li>
+	<li><a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/kolektivne-pracovnopravne-vztahy/oznam/oznamenie-ministerstva-prace-socialnych-veci-rodiny-slovenskej-republiky-26.html">Oznámenie o&nbsp;reprezentatívnej KZVS - doprava</a></li>
+	<li><a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/kolektivne-pracovnopravne-vztahy/oznam/oznamenie-ministerstva-prace-socialnych-veci-rodiny-slovenskej-republiky-27.html">Oznámenie o&nbsp;reprezentatívnych KZVS - stavebníctvo , elektrotechnika&nbsp; a&nbsp;ťažobný priemysel&nbsp;</a></li>
+	<li><a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/kolektivne-pracovnopravne-vztahy/oznam/oznamenie-ministerstva-prace-socialnych-veci-rodiny-slovenskej-republiky-24.html">Oznámenie o&nbsp;reprezentatívnej KZVS v&nbsp;znení Dodatku č. 1&nbsp;- sklárstvo</a></li>
+	<li><a href="/sk/legislativa/konzultacie-podnikatelskymi-subjektmi/">Konzultácie s&nbsp;podnikateľskými subjektmi</a></li>
+	<li><a href="/sk/rodina-socialna-pomoc/operacny-program-potravinovej-zakladnej-materialnej-pomoci/">Operačný program potravinovej a&nbsp;základnej materiálnej pomoci 2014-2020</a></li>
+	<li><a href="http://www.komisarpredeti.sk/" onclick="return openTargetBlank(this, event)">Komisár pre&nbsp;deti</a></li>
+	<li><a href="http://www.komisarprezdravotnepostihnutych.sk/" onclick="return openTargetBlank(this, event)">Komisár pre&nbsp;osoby so&nbsp;zdravotným postihnutím</a></li>
+	<li><a href="http://socialnapraca.sk/" onclick="return openTargetBlank(this, event)">Slovenská komora sociálnych pracovníkov a&nbsp;asistentov sociálnej práce</a></li>
+	<li><a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/kontaktne-miesto-prava-osob-so-zdravotnym-postihnutim/">Hlavné kontaktné miesto pre&nbsp;práva osôb so&nbsp;zdravotným postihnutím</a></li>
+	<li><a href="/spolocny-sekretariat-vyborov/">Spoločný sekretariát výborov</a></li>
+	<li><a href="http://www.minv.sk/?tlacove-spravy&amp;sprava=tohtorocna-europska-cena-za-prevenciu-kriminality-sa-zameriava-na-seniorov" onclick="return openTargetBlank(this, event)">Prevencia kriminality páchanej na&nbsp;senioroch</a></li>
+	<li><a href="/sk/organizacie-ministerstva/zoznam-odporucanych-stranok/">Zoznam odporúčaných stránok</a></li>
+</ul>
+
+<div id="__hggasdgjhsagd_once" style="display: none;"></div>
+
+<div id="__if72ru4sdfsdfruh7fewui_once" style="display: none;"></div>
+
+<div id="__zsc_once"></div>
+
+<p>&nbsp;</p>
+            </div>
+            
+            <div class="clearer">&nbsp;</div>
+            <div class="content_nav cf">
+                    
+
+
+
+
+
+     
+
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/sk_SK/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="social_btn">
+  <div class="fb-like" data-width="124" data-layout="button_count" data-action="recommend" data-show-faces="false" data-send="false"></div>
+</div>
+
+
+
+
+<ul id="c_nav">
+	<li class="ico_up"><a href="#" title="Presunúť na začiatok stránky">Hore</a></li>
+	<li class="ico_print_pdf">
+	
+
+
+
+
+
+
+
+
+
+	
+	<a onclick="return openTargetBlank(this, event)" href="/topdf/sos-dotacie.pdf?docid=25353&amp;insets=20" title='Vytlačiť do pdf'>Vytlačiť do pdf</a>
+	
+
+	</li>
+	<li class="ico_print"><a href="javascript:print();" title="Vytlačiť stránku">Vytlačiť stránku</a></li>
+</ul>
+                </div>
+            <div class="cb_bottom cf">&nbsp;</div>
+
+        </div>
+        
+        <div id="partners">
+            <h3 class="blind_nadpis" id="b_partners">Partners</h3>
+
+<table style="width: 100%;">
+	<tbody>
+		<tr>
+			<td><a href="http://www.esf.gov.sk/" onclick="return openTargetBlank(this, event)"><img alt="ESF" height="35" src="/images/slovensky/uvod/esf-logo.jpg" style="border: 0px none;" title="ESF logo" width="115" /></a></td>
+			<td><a href="http://www.istp.sk" onclick="return openTargetBlank(this, event)" title="ISTP - Internetový sprievodca trhom práce"><img alt="ISTP - Internetový sprievodca trhom práce" src="/images/logos/istp-logo.jpg?v=1599650338" style="width: 119px; height: 55px;" title="ISTP - Internetový sprievodca trhom práce" /></a></td>
+			<td><a href="http://www.gender.gov.sk/" onclick="return openTargetBlank(this, event)" title="Stránky rodovej rovnosti, rovnosti príležitosti a postavenie žien"><img alt="Stránky rodovej rovnosti, rovnosti príležitosti a postavenie žien" height="33" src="/images/logos/srr.png" width="105" /></a></td>
+			<td><a href="http://www.opis.gov.sk/" onclick="return openTargetBlank(this, event)" title="opis – Operačný program informatizácia spoločnosti"><img alt="opis – Operačný program informatizácia spoločnosti" height="37" src="/images/logos/opis.png" width="120" /></a></td>
+			<td><a href="https://www.eures.sk/" onclick="return openTargetBlank(this, event)"><img alt="EURES" src="/images/logo-eures.png" style="border: 0px none; width: 116px; height: 33px;" title="logo eures | WebJET CMS" /></a></td>
+			<td><a href="http://detstvobeznasilia.gov.sk/" onclick="return openTargetBlank(this, event)"><img alt="odkaz na www.detstvobeznasilia.gov.sk" src="/images/mpsvar-logo-stextom.png" style="border: 0px none; width: 110px; height: 110px;" /></a></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<div id="" style="left: 607.733px; top: 12.6667px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 55px; top: -3px;"></i><i class="tr" style="display: block; left: 112px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 14px;"></i><i class="rm" style="display: block; left: 112px; top: 14px;"></i><i class="bl" style="display: block; left: -3px; top: 29px;"></i><i class="bm" style="display: block; left: 55px; top: 29px;"></i><i class="br" style="display: block; left: 112px; top: 29px;"></i></div>
+
+<div id="" style="left: 607.733px; top: 12.6667px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 55px; top: -3px;"></i><i class="tr" style="display: block; left: 112px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 14px;"></i><i class="rm" style="display: block; left: 112px; top: 14px;"></i><i class="bl" style="display: block; left: -3px; top: 29px;"></i><i class="bm" style="display: block; left: 55px; top: 29px;"></i><i class="br" style="display: block; left: 112px; top: 29px;"></i></div>
+            <div class="partners_bottom">&nbsp;</div>
+        </div>
+    </div>
+
+    <div id="footer_box">
+        <div id="footer_links">
+            <h3 class="blind_nadpis" id="b_footer_links">Pätičkové odkazy</h3>
+<div class="fb_links">
+<h3><a href="/sk/praca-zamestnanost/">Práca 	<br />
+a&nbsp;zamestnanosť</a></h3>
+   <ul id="" class="">
+      <li><a href="/sk/praca-zamestnanost/podpora-zamestnanosti/">Podpora zamestnanosti</a></li>
+      <li><a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/">Zamestnanec a zamestnávateľ</a></li>
+      <li><a href="/sk/praca-zamestnanost/bezpecnost-ochrana-zdravia-pri-praci/">Bezpečnosť a ochrana zdravia pri práci</a></li>
+      <li><a href="/sk/praca-zamestnanost/inspekcia-prace/">Inšpekcia práce</a></li>
+      <li><a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/nelegalna-praca-nelegalne-zamestnavanie/"  class="hide">Nelegálna práca a nelegálne zamestnávanie</a></li>
+      <li><a href="/sk/praca-zamestnanost/socialna-ekonomika/">Sociálna ekonomika, sociálne podniky</a></li>
+   </ul>
+
+ </div>
+<div class="fb_links">
+<h3><a href="/sk/rodina-socialna-pomoc/">Sociálna 	<br />
+a&nbsp;rodinná politika</a></h3>
+   <ul id="" class="">
+      <li><a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/">Podpora rodín s deťmi</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/">Sociálnoprávna ochrana detí a sociálna kuratela</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/prispevok-pohreb/"  class="hide">Príspevok na pohreb</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/kompenzacny-prispevok-banikom/">Kompenzačný príspevok baníkom</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/">Pomoc v hmotnej núdzi</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/">Ťažké zdravotné postihnutie</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialne-sluzby/">Sociálne služby</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/boj-proti-chudobe/">Boj proti chudobe</a></li>
+   </ul>
+
+ </div>
+<div class="fb_links">
+<h3><a href="/sk/socialne-poistenie-dochodkove-sporenie/">Sociálne poistenie 	<br />
+a&nbsp;dôchodkové sporenie</a></h3>
+   <ul id="" class="">
+      <li><a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/">Sociálne poistenie</a></li>
+      <li><a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/">Dôchodkový systém</a></li>
+      <li><a href="/sk/socialne-poistenie-dochodkovy-system/nahrada-prijmu-pri-pracovnej-neschopnosti/">Náhrada príjmu pri pracovnej neschopnosti</a></li>
+   </ul>
+
+ </div>
+<div class="fb_links">
+<h3><a href="/sk/ministerstvo/">Ministerstvo</a></h3>
+   <ul id="" class="">
+      <li><a href="/sk/ministerstvo/minister/"  class="show">Minister</a></li>
+      <li><a href="/sk/ministerstvo/statni-tajomnici/"  class="show">Štátni tajomníci</a></li>
+      <li><a href="/sk/ministerstvo/generalny-tajomnik-sluzobneho-uradu/">Generálny tajomník služobného úradu</a></li>
+      <li><a href="/sk/ministerstvo/organizacna-struktura/"  class="show">Organizačná štruktúra</a></li>
+      <li><a href="/sk/ministerstvo/hospodarska-socialna-rada-sr/">Hospodárska a sociálna rada SR</a></li>
+      <li><a href="/sk/ministerstvo/rada-vlady-sr-prava-seniorov/">Rada vlády Slovenskej republiky pre práva seniorov a prispôsobovanie verejných politík procesu starnutia populácie</a></li>
+      <li><a href="/spolocny-sekretariat-vyborov/">Spoločný sekretariát výborov</a></li>
+      <li><a href="/sk/ministerstvo/NKSpreRPNnD/">NKS pre riešenie problematiky násilia na deťoch</a></li>
+      <li><a href="/isp/">Inštitút sociálnej politiky</a></li>
+      <li><a href="/sk/ministerstvo/volne-pracovne-miesta/"  class="show">Voľné pracovné miesta</a></li>
+      <li><a href="/sk/ministerstvo/rozpocet-ministerstva/rozpocet-ministerstva-rok-2020.html"  class="show">Rozpočet ministerstva</a></li>
+      <li><a href="/sk/ministerstvo/vyrocne-spravy-uctovne-uzavierky-ministerstva/">Výročné správy a účtovné závierky ministerstva</a></li>
+      <li><a href="/sk/ministerstvo/verejne-obstaravanie/"  class="show">Verejné obstarávanie</a></li>
+      <li class="open"><a href="/sk/ministerstvo/poskytovanie-dotacii/"  class="show">Poskytovanie dotácií</a></li>
+      <li><a href="/sk/ministerstvo/poskytovanie-informacii-podla-z-c-211/2000-z-z/poskytovanie-informacii-podla-z-c-211-2000-z-z.html">Poskytovanie informácií podľa z. č. 211&#47;2000 Z. z.</a></li>
+      <li><a href="/sk/ministerstvo/zmluvy-objednavky-faktury/"  class="show">Zmluvy, objednávky, faktúry</a></li>
+      <li><a href="/sk/ministerstvo/sprava-majetku/"  class="show">Správa majetku</a></li>
+      <li><a href="/sk/ministerstvo/akreditacie/">Akreditácie pre SPOD a SK a sociálne služby</a></li>
+      <li><a href="/sk/ministerstvo/akreditacie-vzdelavanie/">Akreditácie pre oblasť vzdelávania podľa zákona 219&#47;2014 Z. z. o sociálnej práci</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/supervizia/"  class="hide">Supervízia</a></li>
+      <li><a href="/sk/ministerstvo/europska-unia-a-medzinarodne-vztahy/">EÚ a medzinárodné vzťahy</a></li>
+      <li><a href="/sk/ministerstvo/spolocenska-zodpovednost/"  class="show">Spoločenská zodpovednosť</a></li>
+      <li><a href="/sk/ministerstvo/projekty/projekty-ministerstva.html">Projekty</a></li>
+   </ul>
+
+ </div>
+            <div class="clearer">&nbsp;</div>
+        </div>
+
+        <div id="footer">
+        	<hr />
+        	<p>Správca obsahu a&nbsp;technický prevádzkovateľ web sídla: Ministerstvo práce, sociálnych vecí a&nbsp;rodiny Slovenskej republiky</p>
+<p>Špitálska 4,6,8 Bratislava 816 43  <span class="f_separator">|</span>  Tel.:+421 2 2046 0000  <span class="f_separator">|</span> <a href="mailto:web@employment.gov.sk">web@employment.gov.sk</a> <span class="f_separator">|</span> <a href="/sk/informacie-web-sidle.html">Informácie o&nbsp;web sídle</a></p>
+            <div class="clearer">&nbsp;</div>
+        </div>
+        <div class="clearer">&nbsp;</div>
+    </div>
+
+    
+    
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43760029-1', 'gov.sk');
+  ga('send', 'pageview');
+</script>
+
+
+
+</body>
+</html>

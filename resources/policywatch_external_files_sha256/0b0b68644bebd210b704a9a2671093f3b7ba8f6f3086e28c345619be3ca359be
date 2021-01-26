@@ -1,0 +1,751 @@
+<!--
+                              .';:cooddxxddooc:;'.
+                        .';codxkkkkkkkkkkkkkkkkkkxdoc;'.
+                   .':lxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxl:'.
+                ':dkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkd:'
+             .cxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxc.
+           ,oxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxo,
+         :xkkkkkkkkkkkl........................,xkkkkkkkkkkkkkkkkkkkkx:
+       ,dkkkkkkkkkkkkk:                        .xkkkkkkkkkkkkkkkkkkkkkkd,
+     .okkkkkkkkkkkkkkk:                        .xkkkkkkkkkkkkkkkkkkkkkkkko.
+    ,xkkkkkkkkkkkkkkkk:                        .xkxc;'..';lxkkkkkkkkkkkkkkx,
+   'xkkkkkkkkkkkkkkkkk:             ;;;;;;;;;;;:x:         .lkkkkkkkkkkkkkkx'
+  ,xkkkkkkkkkkkkkkkkkk:            .kkkkkkkkkkkkl            okkkkkkkkkkkkkkx,
+ .xkkkkkkkkkkkkkkkkkkk:            .kkkkkkkkkkkkl            okkkkkkkkkkkkkkkx.
+ okkkkkkkkkkkkkkkkkkkk:             ..........lkkc.        .lkkkkkkkkkkkkkkkkko
+,kkkkkkkkkkkkkkkkkkkkk:                       ckkkxl:,'',:oxkkkkkkkkkkkkkkkkkkk,
+lkkkkkkkkkkkkkkkkkkkkk:                       ckkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkl
+dkkkkkkkkkkkkkkkkkkkkk:                       ;oooollcc:;',xkkkkkkkkkkkkkkkkkkkd
+dkkkkkkkkkkkkkkkkkkkkk:            .lllllllll.            lkkkkkkkkkkkkkkkkkkkkd
+okkkkkkkkkkkkkkkkkkkkk:            .kkkkkkkkc            'kkkkkkkkkkkkkkkkkkkkkd
+ckkkkkkkkkkkkkkkkkkkkk:            .kkkkkkkd.            okkkkkkkkkkkkkkkkkkkkkc
+'kkkkkkkkkkkkkkkkkkkkk:            .kkkkkkx'            ;kkkkkkkkkkkkkkkkkkkkkk'
+ lkkkkkkkkkkkkkkkkkkkk:            .kkkkkkc            .xkkkkkkkkkkkkkkkkkkkkkl
+ .xkkkkkkkkkkkkkkkkkkk:            .kkkkkd.            okkkkkkkkkkkkkkkkkkkkkx.
+  .xkkkkkkkkkkkkkkkkkkc            'kkkkx.            :kkkkkkkkkkkkkkkkkkkkkx.
+   .dkkkkkkkkkkkkkkkkkkkkkkkkkkxkkxkkkkk:            .xkkkkkkkkkkkkkkkkkkkkx.
+    .xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkd             okkkkkkkkkkkkkkkkkkkkx.
+     .lxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk;            :kkkkxkkkkkkkkkkkkkkxl.
+       'okkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.           'kkkd,'xkkkkkkkkkkkko'
+         ,okkkkkkkkkkkkkkkkkkkkkkkkkkkk'           :xo;.,dkkkkkkkkkkko,
+           .cxkkkkkkkkkkkkkkkkkkkkkkkkkd'           .':dkkkkkkkkkkxc.
+             .;okkkkkkkkkkkkkkkkkkkkkkkkkxl:;,,,,:coxkkkkkkkkkkko;.
+                .;lxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxl;.
+                    .,cdxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdc,.
+                         .';codxkkkkkkkkkkkkkkkkxdoc;'.
+                               .';:loddxxddol:;'.
+
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+  <head>
+    <title>Η σελίδα που ζητήσατε δεν βρέθηκε | Forin.gr</title>
+    <meta http-equiv="Content-Type" content="text&#x2F;html&#x3B;&#x20;charset&#x3D;UTF-8">
+<meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1">
+<meta name="medium" content="medium_type">
+<meta name="fb&#x3A;admins" content="619843512">
+<meta property="fb&#x3A;pages" content="152449548132827">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="&#x2F;assets&#x2F;js&#x2F;exit&#x2F;exit.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;assets&#x2F;js&#x2F;cookieconsent&#x2F;cookieconsent.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;assets&#x2F;css&#x2F;jquery-ui&#x2F;jquery-ui.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;assets&#x2F;css&#x2F;main.css&#x3F;v&#x3D;2.7" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;favicon.ico" rel="shortcut&#x20;icon" type="image&#x2F;vnd.microsoft.icon">
+<link href="&#x2F;search_provider.xml" rel="search" type="application&#x2F;opensearchdescription&#x2B;xml" title="Forin.gr&#x20;Search">
+<link href="https&#x3A;&#x2F;&#x2F;www.forin.gr&#x2F;assets&#x2F;images&#x2F;fi_logo.png" rel="image_src">
+<link href="&#x2F;manifest.json" rel="manifest">
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="/assets/js/html5.js"></script>
+      <script type="text/javascript" src="/assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript" src="/assets/js/respond.min.js"></script>
+      <script type="text/javascript" src="/assets/js/rem.min.js"></script>
+    <![endif]-->
+
+          <script type="text/javascript">
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+          appId: "6b5f7257-7409-4e79-b2a9-bbf2618808f7",
+          allowLocalhostAsSecureOrigin: true,
+          autoRegister: false,
+          welcomeNotification: {
+            "title": "Forin.gr",
+            "message": "Ενεργοποιήσατε επιτυχώς τις ειδοποιήσεις από το Forin.gr"
+          },
+          promptOptions: {
+            enabled: true,
+            actionMessage: "Θέλετε να λαμβάνετε ειδοποιήσεις από το Forin.gr για τις σημαντικότερες εξελίξεις;",
+            acceptButtonText: "Ναι",
+            cancelButtonText: "Όχι"
+          },
+          httpPermissionRequest: {
+            modalTitle: 'Forin.gr',
+            modalMessage: "Ενεργοποιήσατε επιτυχώς τις ειδοποιήσεις από το Forin.gr",
+            modalButtonText: 'Κλείσιμο'
+          },
+          notifyButton: {
+            enable: false
+          },
+          safari_web_id: 'web.gr.forin.push'
+        }]);
+
+        
+              </script>
+      <script type="text/javascript" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+
+      <script type='text/javascript' src='//adman.forin.gr/www/delivery/spcjs.php?id=1&amp;target=_blank'></script>
+    
+      </head>
+  <body>
+          <div id="g_id_onload"
+           data-client_id="943158987706-58tav1q5p1qdfefk4aopobel93lrp2li.apps.googleusercontent.com"
+           data-login_uri="https://www.forin.gr/user/providers/one-tap"
+           data-redirect="%2Flaws%2Flaw%2F3873%2Fn-4690-2020https%3A%2F%2Fwww.forin.gr%2Flaws%2Flaw%2F3873%2Fn-4690-2020">
+      </div>
+        <div id="loader" class="loader"></div>
+    <div id="fb-root"></div>
+
+                <script type="text/plain" data-cookiecategory="social">
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=122736471130453";
+          fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+      </script>
+    
+    <div id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 leftmenu">
+        <ul style="padding-left: 0px; margin-left: 10px">
+          <li><a href="/contact" title="Επικοινωνήστε μαζί μας">Επικοινωνία</a></li>
+          <li><a href="/help" title="Βρείτε απαντήσεις σε πιο συχνά θέματα">Βοήθεια</a></li>
+        </ul>
+        <a id="logo" href="/" title="Forin.gr - Το πιο αξιόπιστο φορολογικό - οικονομικό portal">
+          <div id="loadingPulse"></div>
+          <img src="/assets/images/logo-inverted.png" id="imgLogoNormal"/>
+          <img src="/assets/images/fi-logo-inverted.png" id="imgLogoSmall"/>
+        </a>
+      </div>
+      <div class="col-md-9 usermenu">
+        <div class="row">
+          <div class="col-md-12">
+              <ul class="loggedOutOptions">
+    <li class="register">
+      <a href="/user/register" title="Εγγραφείτε στο Forin.gr δωρεάν και αποκτήστε πρόσβαση σε όλο το δωρεάν περιεχόμενο του">
+        <i class="fa fa-user"></i>
+        <span style="color: #fff200;">Δωρεάν</span> Εγγραφή
+      </a>
+    </li>
+    <li style="position: relative">
+      <a id="loginBtnTop" href="/user/login" title="Είσοδος στο Forin.gr">
+        <i class="fa fa-sign-in"></i> Είσοδος
+      </a>
+      
+      <div id="loginModalWindow" class="row" style="display: none;">
+        <a href="#" class="dismiss"><i class="fa fa-times"></i></a>
+                        <div class="col-xs-12">
+          <h4>Είσοδος μέλους</h4>
+          <p>Παρακαλώ συμπληρώστε τα στοιχεία σας παρακάτω και πατήστε το πλήκτρο Είσοδος</p>
+
+          <form method="post" name="login_form" action="&#x2F;user&#x2F;login" id="login_form">            <div class="form-group">
+              <label for="email">Email</label>              <input type="email" name="email" class="required&#x20;email&#x20;form-control" value="">            </div>
+            <div class="form-group">
+              <label for="password">Κωδικός</label>
+              <input type="password" name="password" class="required&#x20;password&#x20;form-control" value="">            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-default btn-sm" name="login" value="ΕΙΣΟΔΟΣ"/>
+              <a href="/user/reset" class="reset" title="Ξέχασα τον κωδικό μου">Ξέχασα τον κωδικό μου</a>
+            </div>
+            <p>ή συνδεθείτε με κάποιον από τους παρακάτω τρόπους</p>
+
+            <div class="login-providers">
+              <a href="/user/login?provider=facebook"><i class="fa fa-facebook"></i></a>
+              <a href="/user/login?provider=google"><i class="fa fa-google"></i></a>
+              <a href="/user/login?provider=linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="/user/login?provider=twitter"><i class="fa fa-twitter"></i></a>
+              <a href="/user/login?provider=live"><i class="fa fa-windows"></i></a>
+              <a href="/user/login?provider=yahoo"><i class="fa fa-yahoo"></i></a>
+            </div>
+
+            <input type="hidden" name="redirect" value="https://www.forin.gr/laws/law/3873/n-4690-2020https://www.forin.gr/laws/law/3873/n-4690-2020" />
+          </form>        </div>
+      </div>
+    </li>
+    <li class="search-sm hidden-md-up">
+      <a id="searchSmBtm" href="#">
+        <i class="fa fa-search"></i>
+      </a>
+    </li>
+  </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div id="search" class="col-md-12">
+            <form method="GET" action="/search">
+              <div class="input-group">
+                <input type="text" id="quicksearch" name="q" class="form-control" placeholder="Αναζήτηση...">
+                <span class="input-group-btn">
+                  <button type="submit" value="" name="s" class="btn">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="print-logo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="/assets/images/logo-website-small.png" />
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="navigation">
+      <div class="container">
+        <div class="col-md-12" id="navCntr">
+          <ul class="navigation clearfix">
+      
+    <li data-menu="000000006c0dc1700000000009a61c5e" class="navigation-option-container more">
+      <a href="#" class="navigation-option" id="navMoreBtn">
+                <i class="fa fa-bars"></i>
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc1770000000009a61c5e" class="navigation-option-container ">
+      <a href="/news" class="navigation-option" >
+                Ειδήσεις
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc1760000000009a61c5e" class="navigation-option-container ">
+      <a href="/laws" class="navigation-option" >
+                Νομοθεσία
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc1750000000009a61c5e" class="navigation-option-container container-has-children">
+      <a href="#" class="has-children navigation-option" >
+                Αποφάσεις
+                  <i class="children fa fa-plus"></i>
+              </a>
+
+      
+              <ul data-submenu="000000006c0dc1750000000009a61c5e">
+                  <li>
+                          <a href='/forologia'>
+            
+            Φορολογικά - Λογιστικά
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/ergatika/apofaseis'>
+            
+            Εργατικά - Ασφαλιστικά
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/anaptyksiaka/apofaseis'>
+            
+            Αναπτυξιακά
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/nomologia'>
+            
+            Νομολογία
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/vouli'>
+            
+            Βουλή των Ελλήνων
+                          </a>
+                      </li>
+                </ul>
+          </li>
+      
+    <li data-menu="000000006c0dc17f0000000009a61c5e" class="navigation-option-container ">
+      <a href="/arthrografia" class="navigation-option" >
+                Αρθρογραφία
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc17e0000000009a61c5e" class="navigation-option-container ">
+      <a href="/units" class="navigation-option" >
+                Ηλεκτρονικά Βιβλία
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc17d0000000009a61c5e" class="navigation-option-container container-has-children">
+      <a href="/tools" class="has-children navigation-option" >
+                Εφαρμογές
+                  <i class="children fa fa-plus"></i>
+              </a>
+
+      
+              <ul data-submenu="000000006c0dc17d0000000009a61c5e">
+                  <li>
+                          <a href='/tools'>
+            
+            Όλες οι εφαρμογές
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/downloads/category/1/entupa'>
+            
+            Φορολογικά έντυπα
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/calendar'>
+            
+            Ημερολόγιο
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/books'>
+            
+            Συνοδευτικό υλικό βιβλίων
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/tools/tekmhria'>
+            
+            Υπολογισμός τεκμηρίων
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/tools/validate/afm'>
+            
+            Επιβεβαίωση Α.Φ.Μ
+                          </a>
+                      </li>
+                  <li>
+                          <a href='/tools/aposyrsh-tameiakwn-mhxanwn'>
+            
+            Απόσυρση ταμειακών
+                          </a>
+                      </li>
+                </ul>
+          </li>
+      
+    <li data-menu="000000006c0dc1650000000009a61c5e" class="navigation-option-container ">
+      <a href="/assistant" class="navigation-option" >
+                Φορολογικές Δηλώσεις
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc1640000000009a61c5e" class="navigation-option-container ">
+      <a href="/questions" class="navigation-option" >
+                Ερωτήσεις
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc16b0000000009a61c5e" class="navigation-option-container ">
+      <a href="/seminars" class="navigation-option" >
+                Σεμινάρια
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc16a0000000009a61c5e" class="navigation-option-container ">
+      <a href="/search/advanced" class="navigation-option" >
+                Αναζήτηση
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc1690000000009a61c5e" class="navigation-option-container promo">
+      <a href="/analysis" class="navigation-option" >
+                Συνδρομητικές υπηρεσίες
+              </a>
+
+      
+          </li>
+      
+    <li data-menu="000000006c0dc1680000000009a61c5e" class="navigation-option-container eshop">
+      <a href="/eshop" class="navigation-option" >
+                e-shop
+              </a>
+
+      
+          </li>
+  </ul>
+        </div>
+      </div>
+    </div>
+    <div id="subNavigation">
+      <div class="container">
+        <div class="col-md-12" id="subNavCntr"></div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="container">
+        
+        <div class="col-xl-12" style="padding-top: 60px">   
+    <span style="font-size:70px; font-weight: bold; display: inline;">404</span>
+  <h1 style="color: #43403b; display: inline; padding-left: 10px; font-size: 31px;">Η σελίδα δεν βρέθηκε</h1>
+  <span style="color: #d62e3f; display: block">Η σελίδα που ζητήσατε δεν υπάρχει ή δεν είναι πλέον διαθέσιμη</span>
+  
+  <p style="padding-top:50px">
+    Να σας βοηθήσουμε;
+  </p>
+  <p>
+    Μπορείτε να επιστρέψετε στην <a href="/" title="Forin.gr">κεντρική μας σελίδα</a> ή να επικοινωνήσετε
+    μαζί μας πατώντας <a href="/contact" title="Επικοινωνία">εδώ</a>. Σύντομα ένας εκπρόσωπος μας θα έρθει σε επαφή μαζί σας
+  </p>
+  <p style="padding-top:30px" >
+    Εναλλακτικά μπορείτε να χρησιμοποιήσετε την μηχανή αναζήτησης μας για να βρείτε αυτό που ψάχνετε
+  </p>
+  <form method="get" class="" action="/search">
+    <div class="form-group">
+      <div class="input-group input-group-lg">
+        <input type="text" name="q" value="" class="form-control" placeholder="Αναζήτηση..." />
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-smal btn-secondary" style="-webkit-border: 0 4px 4px 0; -mox-border-radius: 0 4px 4px 0; border-radius: 0 4px 4px 0;">Αναζήτηση</button>
+        </span>
+      </div>
+    </div>
+  </form>
+
+  </div>      </div>
+    </div>
+    <div id="bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <a href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 0); return false;">
+          <i class="fa fa-chevron-circle-up"></i> Μεταφορά στην αρχή
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h1><a href="/analysis" title="Τράπεζα φορολογικής πληροφόρησης - Forin.gr Analysis">Συνδρομητικές υπηρεσίες</a></h1>
+        <ul class="links">
+          <li>
+            <a href="/laws" title="Κωδικοποιημένη Φορολογική Νομοθεσία">Φορολογική Νομοθεσία</a>
+          </li>
+          <li>
+            <a href="/arthrografia" title="Φορολογικά θέματα - Εβδομαδίαια ανασκόπηση">Φορολογικά θέματα - Εβδ. ανασκόπηση</a>
+          </li>
+          <li>
+            <a href="/units" title="Ηλεκτρονικά Βιβλία - Δαπάνες επιχειρήσεων, Έλεγχος Επιχειρήσεων, Ευθύνη διοικούντων κ.α.">Ηλεκτρονικά Βιβλία</a>
+          </li>
+          <li>
+            <a href="/assistant" title="Φορολογικές δηλώσεις. Δείτε πληροφορορίες ανά κωδικό στα συνηθέστερα έντυπα των φορολογικών δηλώσεων">Φορολογικές δηλώσεις</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h1>Ενότητες</h1>
+        <ul class="links">
+          <li>
+            <a href="/news" title="Οικονομικές Ειδήσεις από την Ελλάδα και το εξωτερικό">Οικονομικές Ειδήσεις</a>
+          </li>
+          <li>
+            <a href="/questions" title="Φορολογικές ερωτήσεις - απαντήσεις">Φορολογικές Ερωτήσεις</a>
+          </li>
+          <li>
+            <a href="/downloads/category/1/entupa" title="Φορολογικά Έντυπα">Φορολογικά Έντυπα</a>
+          </li>
+          <li>
+            <a href="/calendar" title="Φορολογικό Ημερολόγιο - Υποχρεώσεις του μήνα">Φορολογικό Ημερολόγιο - Υποχρεώσεις του μήνα</a>
+          </li>
+          <li>
+            <a href="/specials/forologikes-dhlwseis" title="Φορολογικές δηλώσεις">Φορολογικές δηλώσεις</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h1>
+          <a href="/forologia" title="ΠΟΛ - Α.Υ.Ο - Αποφάσεις για όλη τη φορολογική νομοθεσία">Αποφάσεις - Εγκύκλιοι - ΠΟΛ</a>
+        </h1>
+        <ul class="links">
+          <li>
+            <a href="/forologia/apofaseis/forologia-eisodhmatos" title="Αποφάσεις - Εγκύκλιοι - ΠΟΛ Φορολογίας Εισοδήματος">Εγκύκλιοι Φορολογίας Εισοδήματος</a>
+          </li>
+          <li>
+            <a href="/forologia/apofaseis/elp" title="Αποφάσεις - Εγκύκλιοι - ΠΟΛ ΚΦΑΣ Ελληνικά Λογιστικά Πρότυπα (ΕΛΠ)">Εγκύκλιοι Ελληνικών Λογιστικών Προτύπων (ΕΛΠ)</a>
+          </li>
+          <li>
+            <a href="/forologia/apofaseis/kfd" title="Αποφάσεις - Εγκύκλιοι - ΠΟΛ Κώδικας Φορολογικών Διαδικασιών (ΚΦΔ)">Εγκύκλιοι Κώδικα Φορολογικών Διαδικασιών (ΚΦΔ)</a>
+          </li>
+          <li>
+            <a href="/forologia/apofaseis/fpa" title="Αποφάσεις - Εγκύκλιοι - ΠΟΛ Φ.Π.Α">Εγκύκλιοι ΦΠΑ</a>
+          </li>
+          <li>
+            <a href="/forologia/apofaseis/kefalaio" title="Αποφάσεις - Εγκύκλιοι - ΠΟΛ - Φορολογία Κεφαλαίου">Φορολογία Κεφαλαίου</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h1>
+          <a href="/tools" title="Φορολογικές εφαργμογές">Εφαρμογές</a>
+        </h1>
+        <ul class="links">
+          <li>
+            <a href="/tools/tekmhria" title="Υπολογίστε γρήγορα και εύκολα τα τεκμήρια δαπανών διαβίωσης με βάση το άρθρο 16 ν. 2238/1994 και τη σχετ. εγκ. ΠΟΛ. 1135/4-10-2010">Υπολογισμός τεκμηρίων δαπανών διαβίωσης</a>
+          </li>
+          <li>
+            <a href="/tools/validate/afm" title="Επιβεβαίωση Α.Φ.Μ / VAT VIES Validation">Επιβεβαίωση Α.Φ.Μ / VAT VIES Validation</a>
+          </li>
+          <li>
+            <a href="/tools/kad" title="Αναζήτηση Κωδικου Αριθμού Δραστηριότητας">Αναζήτηση ΚΑΔ</a>
+          </li>
+          <li>
+            <a href="/tools/taric" title="Taric - Δασμολόγιο">Taric - Δασμολόγιο</a>
+          </li>
+          <li>
+            <a href="/widgets" title="Προσθέστε το Forin.gr στην ιστοσελίδα σας">Προσθέστε το Forin.gr στην ιστοσελίδα σας</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="footer-connect">
+      <div class="col-sm-4" id="footer-social">
+        <h1>Εργαλεία δικτύωσης</h1>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/foringr" target="_blank"><i class="fa fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/foringr" target="_blank"><i class="fa fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/forin-gr" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4" id="footer-newsletter">
+        <h1>Εγγραφή στο newsletter μας</h1>
+        <form action="//madmimi.com/signups/subscribe/17106" method="post" name="newsletterForm" id="footerNewsletterForm">
+          <input id="list_5585531" name="lists[]" value="5585531" type="hidden"/>
+          <input id="list_5585538" name="lists[]" value="5585538" type="hidden"/>
+          <div class="field input-group input-group-sm">
+            <input type="text" class="form-control" placeholder="email" name="signup[email]" />
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">Εγγραφή</button>
+            </span>
+          </div>
+          <div class="field form-check">
+            <label class="form-check-label" style="font-size: 0.75rem; margin-top: 5px;">
+              <input class="form-check-input terms" type="checkbox" name="accept" value="">
+              Έχω διαβάσει και αποδέχομαι τους <a target="_blank" style="text-decoration: underline" href="https://www.forin.gr/terms">όρους χρήσης</a>
+              και την <a target="_blank" style="text-decoration: underline" href="https://www.forin.gr/privacy-policy">πολιτική προστασίας</a>
+            </label>
+          </div>
+        </form>
+        <p>Γραφτείτε στο newsletter μας ώστε να λαμβάνετε ειδήσεις, νέες εγκυκλίους καθώς και νέες εφαρμογές από το Forin.gr</p>
+      </div>
+      <div class="col-sm-4" id="footer-logo" style="text-align: right">
+        <h1>Εφαρμογές για κινητά</h1>
+        <a href="/mobile" style="text-decoration: none!important;" title="Το Forin.gr σε συσκευές iPhone και iPad">
+          <i class="fa fa-apple" style="font-size: 2rem"></i>
+          <i class="fa fa-android" style="font-size: 2rem; padding-left: 10px"></i>
+        </a>
+        <!--
+        <ul>
+          <li>
+            <img src="/assets/images/logo-publications.png" />
+          </li>
+          <li>
+            <img src="/assets/images/logo-consulting.png" />
+          </li>
+          <li>
+            <img src="/assets/images/logo-education.png" />
+          </li>
+        </ul>
+        -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12" id="copyright">
+        <p class="copyright">
+          Πνευματικά δικαιώματα © 2002 - 2021 Forin Σταματόπουλος<br>
+          <a href="/terms">Όροι χρήσης</a> | <a href="/eshop">Προϊόντα</a> | <a href="/user/login">Είσοδος</a> |
+          <a href="/about">Ποιοι είμαστε</a> | <a href="/contact">Επικοινωνία</a> |
+          <a href="/help" title="Οδηγίες χρήσης για το Forin.gr">Βοήθεια</a> |
+          <a href="/privacy-policy">Προσωπικά δεδομένα</a> |
+          <a href="/cookie-policy">Πολιτική Cookies</a> | <a href="/company/careers">Θέσεις εργασίας</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+  #footerNewsletterForm .form-control-feedback {
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: table-footer-group;
+  }
+</style>
+    <script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;jquery.min.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;tether.min.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;bootstrap.min.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;jquery-ui.min.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;jquery-migrate-1.2.1.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;vendor.js&#x3F;v&#x3D;1"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;jquery.noty.packaged.min.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;forin.js&#x3F;v&#x3D;1.7"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;share&#x2F;js&#x2F;share.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;assets&#x2F;js&#x2F;jquery.lazy.min.js"></script>
+<script type="text&#x2F;javascript">
+    //<!--
+      $(document).ready(function() {
+    $("#footerNewsletterForm").validate({
+      'errorElement': "span",
+      'errorClass': "form-control-feedback",
+      rules: {
+        'signup[email]': {
+          required: true,
+          email: true
+        },
+        accept: "required"
+      },
+      messages: {
+        'signup[email]': "Παρακαλώ συμπληρώστε ένα σωστό email",
+        accept: "Πρέπει να αποδεχθείτε τους όρους χρήσης και την πολιτική προστασίας",
+      },
+      errorPlacement: function (error, element) {
+        element.closest('.field').append(error);
+      },
+      highlight: function (element) {
+        $(element).closest('.field').addClass('has-danger');
+      },
+      unhighlight: function (element) {
+        $(element).closest('.field').removeClass('has-danger');
+      }
+    });
+  });
+
+    //-->
+</script>
+    
+    <script type="text/javascript">
+      window._CookieConsent = window._CookieConsent || [];
+      window.CookieConsent = window._CookieConsent;
+    </script>
+
+    <script type="text/javascript" src="/assets/js/cookieconsent/cookieconsent.min.js?v=2.3" async></script>
+                <script type="text/javascript">(function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K5FXWQ');</script>
+
+      <script type="text/plain" data-cookiecategory="marketing">
+        (function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+          }
+          _fbq.push(['addPixelId', '1483881898528781']);
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', 'PixelInitialized', {}]);
+      </script>
+    
+          <script type="text/plain" data-cookiecategory="thirdparty">
+        $(document).ready(function() {
+          OneSignal.push(function() {
+            OneSignal.showHttpPrompt();
+
+            OneSignal.getUserId().then(function(userId) {
+              $.ajax({ url: '/user/onesignal/register', type: 'POST', data: { userId: 1, playerId: userId }, beforeSend: function() {}, error: function() {} });
+            });
+          });
+        });
+      </script>
+      <script type="text/javascript">
+        var _niq = _niq || [];
+        _niq.push(['setPropertyId', '56deda8a65103f5f119388c5']);
+        _niq.push(['setRemoteServer', 'https://live.forin.gr']);
+
+        _niq.push(['events.on', 'notification', function(data) {
+          _frnNotifications.show(data);
+        }]);
+
+        
+        _niq.push(['trackIdle']);
+      </script>
+      <script type="text/javascript" async src="//live.forin.gr/client/nive.min.js?v=1.6"></script>
+        <script type="text/plain" data-cookiecategory="analytics">
+      _niq.push(['trackPageView']);
+    </script>
+
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      _paq.push(['requireConsent']);
+            _paq.push(['setConversionAttributionFirstReferrer', true]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.forin.gr/";
+        _paq.push(['setTrackerUrl', u+'collect']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window._CookieConsent = window._CookieConsent || [];
+      window._CookieConsent.push(['getAcceptedCategories', function(accepted) {
+        $.ajax({
+          url: '/privacy/cookie-consent/current',
+          type: 'POST', data: { accepted: JSON.stringify(accepted) }, beforeSend: function() {}, error: function() {}
+        });
+      }]);
+
+      window._CookieConsent.push(['isCategoryAccepted', 'analytics', function(accepted) {
+        if(accepted) {
+          _paq.push(['setConsentGiven']);
+        }
+      }]);
+    </script>
+              <script src="https://accounts.google.com/gsi/client" async defer></script>
+      </body>
+</html>

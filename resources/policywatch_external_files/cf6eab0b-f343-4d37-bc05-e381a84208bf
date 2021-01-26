@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <base href="/datei/"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="nofollow,noindex"/>
+
+    <title>Seite nicht gefunden</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <header class="row navbar ba-header" role="banner">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ba-main-navigation" data-fbz="Header_Burger_Menu" aria-expanded="false" aria-controls="ba-main-navigation">
+                <span class="sr-only">Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand ba-header-logo" href="https://www.arbeitsagentur.de" data-fbz="Header_BA_Icon" title="Zur Startseite der Bundesagentur für Arbeit">
+                <span class="sr-only">Bundesagentur für Arbeit</span>
+            </a>
+            <a class="ba-mobile-search" href="https://www.arbeitsagentur.de/suche" data-fbz="Header_Suche_Link" title="Öffnet das Suchfeld"><span class="ba-icon ba-icon-search-after" data-fbz="Header_Suche_Icon" title="Öffnet das Suchfeld"></span>
+            </a>
+        </div>
+        <div id="ba-main-navigation" class="navbar-collapse collapse ba-main-navigation">
+            <button type="button" class="ba-menu-close hidden-md hidden-lg ba-icon ba-icon-close-before" data-toggle="collapse" data-target="#ba-main-navigation" aria-expanded="false"></button>
+            <ul class="nav navbar-nav navbar-right ba-nav-top">
+                <li class="ba-slidemenu ba-lebenslagen hidden-md hidden-lg">
+                    <a href="javascript:;" data-fbz="Header_Lebenslagen_Link" class="ba-header-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                        <span class="ba-icon ba-icon-career-track-before" data-fbz="Header_Lebenslagen_Icon" title="Lebenslagen"></span>
+                        Lebenslagen
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">
+                <span>
+
+                <span class="ba-icon ba-icon ba-icon-career-track-before"></span>
+                Lebenslagen
+
+                <span class="ba-icon ba-icon-chevron-down-after"></span>
+
+                </span>
+                        </li>
+                        <li>
+
+                            <a data-fbz="Header_Lebenslagen_1" href="https://www.arbeitsagentur.de/arbeitslos-arbeit-finden">
+                                <span class="ba-icon ba-icon-work-before"></span>
+                                Arbeitslos und Arbeit finden
+
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a data-fbz="Header_Lebenslagen_2" href="https://www.arbeitsagentur.de/schule-ausbildung-studium">
+                                <span class="ba-icon ba-icon-writing-before"></span>
+                                Schule, Ausbildung und Studium
+
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a data-fbz="Header_Lebenslagen_3" href="https://www.arbeitsagentur.de/familie-kinder">
+                                <span class="ba-icon ba-icon-people-before"></span>
+                                Familie und Kinder
+
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a data-fbz="Header_Lebenslagen_4" href="https://www.arbeitsagentur.de/menschen-mit-behinderungen">
+                                <span class="ba-icon ba-icon-comeback-before"></span>
+                                Menschen mit Behinderungen
+
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a data-fbz="Header_Lebenslagen_5" href="https://www.arbeitsagentur.de/weiterbildung-karriere">
+                                <span class="ba-icon ba-icon-career-track-before"></span>
+                                Karriere und Weiterbildung
+
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a data-fbz="Header_Lebenslagen_6" href="https://www.arbeitsagentur.de/fuer-menschen-aus-dem-ausland">
+                                <span class="ba-icon ba-icon-work-in-germany-before"></span>
+                                Für Menschen aus dem Ausland
+
+
+                            </a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://www.arbeitsagentur.de/leichte-sprache" data-fbz="Header_Leichte_Sprache_Link" class="">
+                        <span class="ba-icon ba-icon-simple-language-before" data-fbz="Header_Leichte_Sprache_Icon"></span>
+                        Leichte Sprache
+                    </a>
+
+
+                </li>
+                <li>
+                    <a href="https://www.arbeitsagentur.de/gebaerdensprache" data-fbz="Header_Gebaerdensprache_Link" class="">
+                        <span class="ba-icon ba-icon-sign-language-before" data-fbz="Header_Gebaerdensprache_Icon"></span>
+                        Gebärdensprache
+                    </a>
+
+
+                </li>
+                <li class="ba-slidemenu dropdown invisible">
+                    <a href="javascript:;" data-fbz="Header_Sprache_Dropdown" class="ba-header-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="ba-icon ba-icon-global-before" data-fbz="Header_Sprache_Icon" title="Sprachauswahl"></span>
+                        Sprache
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">
+                <span>
+
+                <span class="ba-icon ba-icon-global-before"></span>
+                Sprache
+
+                <span class="ba-icon ba-icon-chevron-down-after"></span>
+
+                </span>
+                        </li>
+                        <li>
+
+                            <a data-fbz="" href="https://www.arbeitsagentur.de/">
+
+                                Deutsch
+                                <span class="sr-only">(aktuelle Auswahl)</span>
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a data-fbz="" href="https://www.arbeitsagentur.de/en">
+
+                                English
+
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a data-fbz="" href="https://www.arbeitsagentur.de/en">
+
+                                Français
+
+
+                            </a>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right ba-nav-service">
+                <li>
+                    <a href="https://www.arbeitsagentur.de/meine-eservices" data-fbz="Header_Login_Link" class="ba-main-navigation-primary-a">
+                        <span>Meine eServices</span>
+                        <span class="ba-icon ba-icon-profile-after ba-main-navigation-primary-i" data-fbz="Header_Login_Icon"></span>
+                    </a>
+                </li>
+                <li class="ba-desktop-search">
+                    <a href="https://www.arbeitsagentur.de/suche" data-fbz="Header_Suche_Link" class="">
+                        <span>Suche</span>
+                        <span class="ba-icon ba-icon-search-after"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>    
+    <main class="error-404">
+        <header class="ba-content-header">
+            <h1>
+                Die angeforderte Webseite ist leider nicht vorhanden.
+            </h1>
+        </header>
+        <div class="ba-content-article ba-bg-semibright">
+            <img class="img404" src="images/404/error404.svg" alt="Seite nicht gefunden. Fehler 404."
+                 title="Fehler 404">
+            <section class="ba-copytext text-center">
+                <h2>
+                    Mögliche Gründe:
+                </h2>
+                <p>
+                    Die Adresse (URL) der angeforderten Seite hat sich geändert.
+                </p>
+                <p>
+                    Die angeforderte Seite wurde gelöscht.
+                </p>
+                <a href="https://www.arbeitsagentur.de/" class="ba-btn ba-btn-primary">Startseite</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="ba-footer" role="contentinfo">
+        <div class="row">
+            <div class="ba-footer-feedbackbuttonbackground"></div>
+        </div>
+        <div class="row ba-footer-firstrow">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h1 class="sr-only">Fusszeile mit Links</h1>
+                <h2 class="text-uppercase">Themen</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/arbeitslos-arbeit-finden" data-fbz="Footer_Lebenslage_Link_1">Arbeitslos und Arbeit finden</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/schule-ausbildung-studium" data-fbz="Footer_Lebenslage_Link_2">Schule, Ausbildung und Studium</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/familie-kinder" data-fbz="Footer_Lebenslage_Link_3">Familie und Kinder</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/menschen-mit-behinderungen" data-fbz="Footer_Lebenslage_Link_4">Menschen mit Behinderungen</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/weiterbildung-karriere" data-fbz="Footer_Lebenslage_Link_5">Karriere und Weiterbildung</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/fuer-menschen-aus-dem-ausland" data-fbz="Footer_Lebenslage_Link_6">Für Menschen aus dem Ausland</a>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h2 class="text-uppercase" data-fbz="Footer_Presse_Info_Ueberschrift">Über die Bundesagentur</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/ueber-uns/ansprechpartner" data-fbz="Footer_Presse_Info_Link_1">Kontakt</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/download-center" data-fbz="Footer_Presse_Info_Link_2">Merkblätter und Formulare</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/presse" data-fbz="Footer_Presse_Info_Link_3">Presse</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/karriere" data-fbz="Footer_Presse_Info_Link_4">Karriere</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/ueber-uns" data-fbz="Footer_Presse_Info_Link_5">Über uns</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/web/content/DE/Veroeffentlichungen/Ausschreibungen/Detail/index.htm?dfContentId=L6019022DSTBAI485655" data-fbz="Footer_Presse_Info_Link_6">Ausschreibungen</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/technischen-fehler-melden" data-fbz="Footer_Fehler_melden">Technischen Fehler melden</a>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ba-footer-nexttolastrow">
+                <h2 class="text-uppercase" data-fbz="Footer_Portal_Ueberschrift">Weitere Internetauftritte</h2>
+                <ul>
+                    <li>
+                        <a href="http://www.abi.de/index.htm?zg=schueler" target="_blank" data-fbz="Footer_Portal_Link_1">abi.de</a>
+                    <li>
+                        <a href="https://arbeitsmarktmonitor.arbeitsagentur.de/" target="_blank" data-fbz="Footer_Portal_Link_2">Arbeitsmarktmonitor</a>
+                    <li>
+                        <a href="http://www.berufenet.arbeitsagentur.de/" target="_blank" data-fbz="Footer_Portal_Link_3">Berufsinformationen BERUFENET</a>
+                    <li>
+                        <a href="http://www.berufe.tv/BA/" target="_blank" data-fbz="Footer_Portal_Link_4">Berufevideos BERUFE.TV</a>
+                    <li>
+                        <a href="http://jobboerse.arbeitsagentur.de/" target="_blank" data-fbz="Footer_Portal_Link_5">Bewerber- und Stellenbörse JOBBÖRSE</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/meine-eservices" target="_blank" data-fbz="Footer_Portal_Link_6">eServices im Überblick</a>
+                    <li>
+                        <a href="https://ideenwerkstatt.arbeitsagentur.de" target="_blank" data-fbz="Footer_Portal_Link_7">Ideenwerkstatt</a>
+                    <li>
+                        <a href="http://kursnet-finden.arbeitsagentur.de/kurs/index.jsp" target="_blank" data-fbz="Footer_Portal_Link_8">Berufliche Aus- und Weiterbildung KURSNET</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/lernboerse" target="_blank" data-fbz="Footer_Portal_Link_9">E-Learning-Angebote LERNBÖRSE</a>
+                    <li>
+                        <a href="http://planet-beruf.de" target="_blank" data-fbz="Footer_Portal_Link_10">planet-beruf.de</a>
+                    <li>
+                        <a href="http://statistik.arbeitsagentur.de/" target="_blank" data-fbz="Footer_Portal_Link_11">Statistik</a>
+                    <li>
+                        <a href="http://www.studienwahl.de" target="_blank" data-fbz="Footer_Portal_Link_12">studienwahl.de</a>
+                    <li>
+                        <a href="http://vdb.arbeitsagentur.de" target="_blank" data-fbz="Footer_Portal_Link_13">Veranstaltungsdatenbank</a>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ba-footer-lastrow">
+                <h2 class="sr-only" data-fbz="Footer_Zielgruppen_Ueberschrift">Zielgruppen von Arbeitsagentur.de</h2>
+                <ul class="clearfix">
+                    <li class="text-uppercase">
+                        <a href="https://www.arbeitsagentur.de/privatpersonen" data-fbz="Footer_Privatperson_Link">Privatpersonen</a>
+                    <li class="text-uppercase">
+                        <a href="https://www.arbeitsagentur.de/unternehmen" data-fbz="Footer_Unternehmen_Link">Unternehmen</a>
+                    <li class="text-uppercase">
+                        <a href="https://www.arbeitsagentur.de/institutionen" data-fbz="Footer_Institution_Link">Institutionen</a>
+                </ul>
+                <form action="https://www.arbeitsagentur.de/apps/faces/home/pvo" method="get" ngNoForm>
+                    <div class="clearfix">
+                        <label class="ba-footer-authority" for="dvo-plz-und-ort">Dienststellen vor Ort</label>
+                        <input type="text" name="q" placeholder="PLZ oder Ort" class="ba-footer-input-authority" id="dvo-plz-und-ort" />
+                        <button
+                                class="ba-btn ba-btn-contrast-light ba-btn-icon ba-icon-chevron-right-after text-uppercase ba-footer-btn-authority"
+                                title="Zu Ort oder Postleitzahl die passende Dienststelle finden" data-fbz="Footer_Dienststellen_Button">Dienststelle finden</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="ba-footer-lastline">
+                    <li>
+                        <span class="text-uppercase" data-fbz="Footer_Text_Copyright">© Bundesagentur für Arbeit</span>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/impressum" title="Zur Information über den Herausgeber dieses Internetangebots" class="text-uppercase" data-fbz="Footer_Link_Impressum">Impressum</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/hilfe" title="Zur Hilfe-Seite dieses Internetangebots" class="text-uppercase" data-fbz="Footer_Link_Information_Hilfe">Information & Hilfe</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/datenschutz" class="text-uppercase" data-fbz="Footer_Datenschutz_Link">Datenschutz</a>
+                    <li>
+                        <a href="https://www.arbeitsagentur.de/rechtliche-hinweise" class="text-uppercase" data-fbz="Footer_Rechtliche_Hinweise_Link">Rechtliche Hinweise</a>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- v1.10 -->
+    <a class="ba-scroll-to-top hidden-print" title="Nach oben" aria-hidden="true" href="#"></a>
+
+</div>
+</body>
+</html>

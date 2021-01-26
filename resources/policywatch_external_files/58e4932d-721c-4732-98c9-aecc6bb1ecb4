@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135123549-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135123549-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>industriAll Europe | NEWS | Shaping digital transformation in partnership and with a human-centred approach</title>
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="/Content/css/dist/main.css?v=" />
+    <link rel="stylesheet" type="text/css" href="/Content/external/slick-carousel/1.6.0/slick.css" />
+
+    <script src="/Content/external/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/Content/external/twitter-bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Content/external/modernizr/2.6.2/modernizr.min.js" type="text/javascript"></script>
+    <script src="/Content/external/respond.js/1.2.0/respond.min.js" type="text/javascript"></script>
+    <script src="/bundles/app?v=3nqhKqLmdZWXtRuXbsefbUX8u2pJ1YkqpG1KbuZWAXQ1"></script>
+
+    <script src="/Content/external/slick-carousel/1.6.0/slick.min.js" type="text/javascript"></script>
+    
+</head>
+<body style="background-image: url('/content/images/upload/2019/12/637110699834397142_white-1.png?quality=60&format=jpg&s.alpha=0.5&s.brightness=0.3'); background-size: cover; background-position: center;">
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="header" style="background-image: url('/content/images/upload/2020/5/637255186376104842_637233372913632756_header-flags-1[1].png?h=350&format=jpg&quality=80'); background-size: cover; background-position: center;">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<nav class="navigation container sticky">
+    <div class="nav navbar-nav nav-main-fullwidth">
+    </div>
+    <ul class="nav navbar-nav nav-main">
+        <li class="nav-logo">
+            <a class="nav-logo-a" href="/">
+                <img class="logo-dark" src="/content/images/upload/2017/3/636252061116974464_logo_blue.png" />
+            </a>
+        </li>
+        <li class="nav-prio">
+            PRIORITIES >>
+        </li>
+                    <li class="dropdown">
+        <div class="">
+            <a class="mainmenuitem" href="/p/industrial-policy" target="">
+                Industrial Policy
+            </a>
+            <a class="openmenuarrow" style="padding-left: 10px;"
+                href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="border-radius: 0px; border: none; margin: 0;">
+                    <li>
+        <a href="/Tag/16" target="">News</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/manufacturingourfuture" target="">Manufacturing Our Future</a>
+
+                    </li>
+                    <li>
+        <a href="/p/industrial-policy-contacts" target="">Contacts</a>
+
+                    </li>
+                    <li>
+        <a href="https://agenda.industriall-europe.eu/topic-agenda/2" target="">Meetings</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/documents" target="">Documents</a>
+
+                    </li>
+            </ul>
+        </div>
+
+                    </li>
+                    <li class="dropdown">
+        <div class="">
+            <a class="mainmenuitem" href="/p/collective-bargaining-and-social-policy" target="">
+                Collective Bargaining
+            </a>
+            <a class="openmenuarrow" style="padding-left: 10px;"
+                href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="border-radius: 0px; border: none; margin: 0;">
+                    <li>
+        <a href="https://news.industriall-europe.eu/Tags/291,277,20" target="">News</a>
+
+                    </li>
+                    <li>
+        <a href="/p/cbnews" target="">CB Newsletter</a>
+
+                    </li>
+                    <li>
+        <a href="/p/collective-bargaining-contacts" target="">Contacts</a>
+
+                    </li>
+                    <li>
+        <a href="https://agenda.industriall-europe.eu/topic-agenda/3" target="">Meetings</a>
+
+                    </li>
+                    <li>
+        <a href="https://togetheratwork.eu/" target="_blank">Together at work</a>
+
+                    </li>
+                    <li>
+        <a href="/p/eucoban" target="">Eucob@n</a>
+
+                    </li>
+                    <li>
+        <a href="/p/cbdocuments" target="">CB Documents</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/solidarity-pact" target="">Solidarity Pact</a>
+
+                    </li>
+                    <li>
+        <a href="/p/transnational-agreements" target="">European Framework Agreement</a>
+
+                    </li>
+            </ul>
+        </div>
+
+                    </li>
+                    <li class="dropdown">
+        <div class="">
+            <a class="mainmenuitem" href="/p/company-policy" target="">
+                Company Policy
+            </a>
+            <a class="openmenuarrow" style="padding-left: 10px;"
+                href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="border-radius: 0px; border: none; margin: 0;">
+                    <li>
+        <a href="/Tag/1" target="">News</a>
+
+                    </li>
+                    <li>
+        <a href="/p/company-policy-contacts" target="">Contacts</a>
+
+                    </li>
+                    <li>
+        <a href="https://agenda.industriall-europe.eu/topic-agenda/4" target="">Meetings</a>
+
+                    </li>
+                    <li>
+        <a href="/p/company-policy-general" target="">Documents CP</a>
+
+                    </li>
+                    <li>
+        <a href="/p/company-policy-tools" target="">Tools / resources</a>
+
+                    </li>
+                    <li>
+        <a href="https://agenda.industriall-europe.eu/ewc-landing-page" target="">CP Database</a>
+
+                    </li>
+            </ul>
+        </div>
+
+                    </li>
+                    <li class="dropdown">
+        <div class="">
+            <a class="mainmenuitem" href="/p/building-trade-union-power" target="">
+                Building TU Power
+            </a>
+            <a class="openmenuarrow" style="padding-left: 10px;"
+                href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="border-radius: 0px; border: none; margin: 0;">
+                    <li>
+        <a href="/Tags/5,78" target="">News</a>
+
+                    </li>
+                    <li>
+        <a href="/p/btup-best-practices" target="">Best Practices</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/btup-expert-blog" target="">BTUP Expert Blog</a>
+
+                    </li>
+                    <li>
+        <a href="/p/btup-documents" target="">Documents</a>
+
+                    </li>
+                    <li>
+        <a href="/p/btup-contacts" target="">Contacts</a>
+
+                    </li>
+                    <li>
+        <a href="https://agenda.industriall-europe.eu/topic-agenda/65" target="">Meetings &amp; members</a>
+
+                    </li>
+            </ul>
+        </div>
+
+                    </li>
+                    <li class="nav-last dropdown">
+        <div class="last-item-div">
+            <a class="mainmenuitem" href="/p/sectors" target="">
+                SECTORS
+            </a>
+            <a class="openmenuarrow" style="padding-left: 10px;"
+                href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="border-radius: 0px; border: none; margin: 0;">
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/aerospace" target="">Aerospace</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/automotive" target="">Automotive</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/basic-metals" target="">Basic Metals</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/chemicals--basic-materials-sector" target="">Chemicals &amp; basic materials</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/defence" target="">Defence</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/energy" target="">Energy</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/ict" target="">ICT</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/mechanical-engineering" target="">Mechanical Engineering</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/pharmaceuticals" target="">Pharmaceuticals</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/shipbuilding" target="">Shipbuilding</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/tclf" target="">TCLF</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/equal-opportunities" target="">*** Equal Opportunities</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/social-dialogues" target="">** Social Dialogues</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/regions1" target="">** Regions</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/euprojects" target="">** EU Projects</a>
+
+                    </li>
+                    <li>
+        <a href="https://agenda.industriall-europe.eu/topic-agenda/40" target="">** Communications Working Group</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/youth1" target="">Youth network</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/white-collar" target="">White Collar</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/health-and-safety" target="">Health &amp; Safety</a>
+
+                    </li>
+            </ul>
+        </div>
+
+                    </li>
+
+    </ul>
+    <div class="nav navbar-nav nav-secondary-fullwidth">
+    </div>
+    <ul class="nav navbar-nav nav-secondary">
+                <li class="">
+        <a href="https://news.industriall-europe.eu/p/covid-19" target="">COVID-19 TRADE UNION MONITOR</a>
+
+                </li>
+                <li class="">
+        <a href="/news" target="">NEWS</a>
+
+                </li>
+                <li class="">
+        <a href="https://agenda.industriall-europe.eu/calendar" target="">CALENDAR</a>
+
+                </li>
+                <li class="">
+        <a href="https://agenda.industriall-europe.eu/login" target="">LOGIN</a>
+
+                </li>
+
+        <li class="mainSearchBox">
+            <div class="form-group">
+                <input id="MainSearch" type="text" class="form-control searchBox" placeholder="Search">
+            </div>
+        </li>
+
+                <li class="dropdown">
+        <div class="">
+            <a class="mainmenuitem" href="https://news.industriall-europe.eu/p/contact" target="">
+                contact
+            </a>
+            <a class="openmenuarrow" style="padding-left: 10px;"
+                href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="border-radius: 0px; border: none; margin: 0;">
+                    <li>
+        <a href="/p/secretariat" target="">Secretariat</a>
+
+                    </li>
+            </ul>
+        </div>
+
+                </li>
+                <li class="dropdown">
+        <div class="">
+            <a class="mainmenuitem" href="https://news.industriall-europe.eu/p/about-us" target="">
+                About us
+            </a>
+            <a class="openmenuarrow" style="padding-left: 10px;"
+                href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="border-radius: 0px; border: none; margin: 0;">
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/mission" target="">Mission</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/elected-officials" target="">Elected Officials</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/affiliates" target="">Affiliates</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/congress-doco" target="">Congress Documents</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/jobs" target="">Jobs Vacancies</a>
+
+                    </li>
+                    <li>
+        <a href="https://news.industriall-europe.eu/p/calls-for-tender" target="">Calls for tender</a>
+
+                    </li>
+            </ul>
+        </div>
+
+                </li>
+
+
+        
+    </ul>
+</nav>
+
+
+
+                    <div class="main-logo dark">
+                        <a href="https://news.industriall-europe.eu/">
+                            <img class="logo-dark" src="/content/images/upload/2017/3/636252061116974464_logo_blue.png" />
+                            <img class="logo-light" src="/content/images/upload/2017/3/636252061188618283_logo_white.png" />
+                        </a>
+                    </div>
+
+                        <div class="quote-carousel">
+                            <div class="carousel-quotes">
+                            </div>
+                        </div>
+
+                    <script>
+                        $('.carousel-quotes').slick({
+                            arrows: false,
+                            pauseOnHover: true,
+                            swipeToSlide: true,
+                            dots: false,
+                            infinite: true,
+                            speed: 1000,
+                            slidesToShow: 1,
+                            autoplay: true,
+                            autoplaySpeed: 5000,
+                            adaptiveHeight: true
+                        });
+                    </script>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+
+    <div class="container main" id="MainContentBody">
+        <div class="row">
+            <div class="container" style="padding-left: 30px; padding-right: 30px; padding-top: 10px;">
+                <div class="row">
+                            <div id="CenterColumn" class="col-lg-12">
+                                
+
+
+<div class="article-detail">
+    <h3>Shaping digital transformation in partnership and with a human-centred approach</h3>
+    <span class="date">Friday 27 November 2020</span>
+
+        <div class="img-container">
+            <img src="/content/images/upload/2020/11/637420198717657302_digitalisation abstract tech background.jpg?w=1200&amp;h=630&amp;mode=max&amp;scale=both" class="img-responsive" />
+                <div class="image-metadata">
+                                                        </div>
+        </div>
+
+    <p class="intro">IndustriAll Europe and Ceemet have issued a joint statement on digitalisation and the following press release.</p>
+    <div class="article-body"><h4>Shaping digital transformation in partnership and with a human-centred approach<br/></h4><h5><i>An industriAll Europe &amp; Ceemet joint statement</i><br/><br/></h5><p style="text-align: justify; ">The COVID-19 pandemic accelerates the technology dissemination and the digital transformation of metal, engineering and tech-based industries and workplaces.  It has increased the urgency and need for social partners to find joint approaches to manage a swift and sustainable digital transformation. Ceemet and industriAll Europe have therefore renewed their shared vision of the challenges and opportunities of digitalisation for workers and employers.</p><p style="text-align: justify; ">In the joint statement ‘Impact of digitalisation on the world of work’ the social partners identify four areas in which social dialogue can shape the ongoing technological change to the benefit of both, employers and workers: </p><ul><li>work organisation</li></ul><ul><li>skills</li></ul><ul><li>occupational health &amp; safety</li></ul><ul><li>data protection.</li></ul><p style="text-align: justify; ">Social partners have reached a growing number of collective agreements to the benefit of employees and employers. Whether the outcome is about facilitating, for instance, the access to remote work or investments in broadening the digital skills set of workers at all levels, the outcome is a win-win for both. The current COVID-19 pandemic translates into an accelerated digital transformation in the metal, engineering and tech-based industries and brought social partners closer together, showing once more that challenges can be better tackled together.</p><p style="text-align: justify; "><b>A strong social dialogue as cement for societies and companies</b><br/>With digital transformation happening at a different speed across regions and companies and in a context of rapidly changing technological parameters, industriAll Europe and Ceemet express their firm believe that finding tailor-made solutions will become increasingly important.</p><p style="text-align: justify; ">This requires strong, mandated and representative social partners that have room for manoeuvre to deal with the new challenges and bargain around emerging new issues. For the latter, Member States need to make sure that social partners can manage and shape the digital transformation of industry. This includes adapting collective bargaining to a changing world of work. The EU, on the other hand, should allocate more and easily accessible EU funds to support capacity building of social partners for an effective and well-functioning social dialogue across Europe.</p><p style="text-align: justify; ">industriAll General Secretary <b>Luc Triangle</b> states that: “Sector agreements create a level playing field for all companies and workers to ensure equal treatment and standards across an otherwise fragmented landscape.”</p><p style="text-align: justify; ">Ceemet Director General <b>Delphine Rudelli</b> comments: “Examples show the key role social partners play in supporting a swift and sustainable digital transformation of industry, whose relevance doubled in times of COVID-19.”</p><hr/><p style="text-align: justify; "><a href="https://news.industriall-europe.eu/content/documents/upload/2020/11/637420146927694746_iAll Ceemet press statement.pdf" target="">Press statement</a></p><p style="text-align: justify; ">Joint statement 'Impact of digitalisation on the world of work': <a href="/content/documents/upload/2020/11/637420120175934557_iAll - Ceemet_Digitalisation statement_09.11.2020_ENG.pdf" target="">EN</a>, <a href="/content/documents/upload/2020/11/637420683818939204_2020 10 Digitalisation statement DE.pdf" target="">DE</a>, <a href="/content/documents/upload/2020/11/637420684270446870_2020 10 Digitalisation statement FR.pdf" target="">FR</a><a href="https://news.industriall-europe.eu/content/documents/upload/2020/11/637420120175934557_iAll - Ceemet_Digitalisation statement_09.11.2020_ENG.pdf" target="_blank"><br/></a></p><p style="text-align: justify; ">Contact: <a href="mailto:andrea.husen-bradley@industriall-europe.eu" target="">Andrea Husen-Bradley</a> (press and communication)<br/><br/></p></div>
+
+            <br />
+            <div>
+<a class="tag-item" href="https://news.industriall-europe.eu/Tag/47">
+    <span id="47">DIGITALISATION</span>
+</a><a class="tag-item" href="https://news.industriall-europe.eu/Tag/59">
+    <span id="59">SD MET</span>
+</a><a class="tag-item" href="https://news.industriall-europe.eu/Tag/105">
+    <span id="105">SOCIAL DIALOGUE</span>
+</a><a class="tag-item" href="https://news.industriall-europe.eu/Tag/189">
+    <span id="189">CEEMET</span>
+</a><a class="tag-item" href="https://news.industriall-europe.eu/Tag/320">
+    <span id="320">COVID-19</span>
+</a>            </div>
+
+
+</div>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="footer">
+    <div class="container">
+        <div class="col-lg-3">
+            <h4>Contact</h4>
+            <ul>
+                        <li>
+        <a href="/p/contact-information" target="">Contact Us</a>
+
+                        </li>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/about-us" target="">About us</a>
+
+                        </li>
+
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h4>Register</h4>
+            <ul>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/termsconditions" target="">Terms &amp; Conditions</a>
+
+                        </li>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/privacypolicy" target="">Privacy Policy</a>
+
+                        </li>
+                        <li>
+        <a href="https://agenda.industriall-europe.eu/account/my-account" target="">Sign up for the Newsletter</a>
+
+                        </li>
+                        <li>
+        <a href="https://news.industriall-europe.eu/SentNewsletters" target="">Previous Newsletters</a>
+
+                        </li>
+
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h4>Constitution</h4>
+            <ul>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/executive-committee" target="">Executive Committee</a>
+
+                        </li>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/congress-2021" target="">Congress III - 2021</a>
+
+                        </li>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/congress-doco" target="">Statutes</a>
+
+                        </li>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/congress-doco" target="">Congress II - Madrid 2016</a>
+
+                        </li>
+                        <li>
+        <a href="https://news.industriall-europe.eu/p/congress-doco" target="">Congress i - Brussels 2012</a>
+
+                        </li>
+
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h4>Archive</h4>
+            <ul>
+                        <li>
+        <a href="/login" target="_blank">Admin Login</a>
+
+                        </li>
+                        <li>
+        <a href="http://www.industriall-europe.eu/indexx.asp#bb" target="_blank">Secretariat (legacy)</a>
+
+                        </li>
+
+            </ul>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="social-media-buttons">
+
+            </div>
+            <div class="copyright pull-right">
+                Copyright © 2021 IndustriAll - design & development by CrunchLab
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57058112774fd353"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        $(document).ready(function () {
+            $("#MainSearch").keyup(function (event) {
+                if (event.keyCode === 13) {
+                    window.location = "/Search/" + $("#MainSearch").val();
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

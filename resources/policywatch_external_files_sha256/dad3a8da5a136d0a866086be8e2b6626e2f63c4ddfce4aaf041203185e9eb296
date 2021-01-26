@@ -1,0 +1,958 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    
+
+    <title>Jobsplus</title>
+    <link rel="shortcut icon" href="/content/images/favicon.ico" />
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#4c4c4c",
+                        "text": "#ffffff"
+                    },
+                    "button": {
+                        "background": "#2c9dd5",
+                        "text": "#ffffff"
+                    }
+                },
+                "showLink": false,
+                "theme": "classic"
+            })
+        });
+    </script>
+
+    <!--IE8 compatibility-->
+    <script type="text/javascript" src="/Scripts/modernizr.js"></script>
+    <script type="text/javascript" src="/Scripts/placeholders.js"></script>
+
+    <link href="/Content/css/default?v=GIsyIl6p2ODjzsic1XhltZpxzLFYzb1SroegSwGEJCk1" rel="stylesheet"/>
+
+    <link href="/Content/css/homepage?v=_UUpFMtNlW0nujlpqRYz0Vgr8QUYGlhPttk9ixdBMFs1" rel="stylesheet"/>
+
+    <link href="/Content/css/bootstrap-select?v=hMymsThl_rrQxapovTKvZNbaLjVdq9dUuKvHcmxfS1Y1" rel="stylesheet"/>
+
+    <link href="/Content/css/bootstrap-datepicker?v=eAkF92v6auIU0T83JTUtv-kOkiTKb3Muubdbz3H8c7w1" rel="stylesheet"/>
+
+
+    <link href='https://jobsplus.gov.mt/css/IconGeneratedStyleSheet.css' rel='stylesheet'/>
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="/Icon.Web.EBFrontend/Content/css/ie.css" />
+    <![endif]-->
+    <!-- Hotjar Tracking Code for https://jobsplus.gov.mt/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 243715, hjsv: 5 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-84039600-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <div id="cover"></div>
+    <header>
+        
+        <div class="wrapper" id="headerWrapper">
+            <div id="headerLeft">
+                <div id="headerLogo">
+<a href="/" title="Jobsplus"><img src="https://jobsplus.gov.mt/fileprovider.aspx?fileId=1007" alt="Jobsplus" /></a>                </div>
+                
+            </div>
+            <div id="headerRight">
+                <div id="headerRightBot">
+                    <div class="loginMessage">
+                        <p>Please log in using your registered account or e-ID: </p>
+                    </div>
+                    
+
+        <form action="https://jobsplus.gov.mt/account/Login?returnUrl=https://jobsplus.gov.mt/schemes-jobseekers/a2e-scheme" id="loginForm" method="post">
+            <input name="__RequestVerificationToken" type="hidden" value="74w1Zb67DhA9PbYCIFJE7b-dj6F9LLZiWR_Nd9g690b82VjjiusaxERqPtklauzlKcNr1Pi1FFBcox8WP8vWekfrTnQFVnReJ77OLOrG7241" />
+            <div class="loginFieldsContainer">
+                <label class="loginLabel" for="Login_Email">Email address or e-ID</label>
+                <input class="loginText" data-val="true" data-val-required="Email address or e-ID is required." id="Login_Email" name="Login.Email" placeholder="joe.smith@emails.com" type="text" value="" />
+                <label class="loginLabel" for="Login_Password">Password</label>
+                <input class="loginText" data-val="true" data-val-required="Password is required." id="Login_Password" name="Login.Password" placeholder="••••••••" type="password" />
+                <input type="submit" class="loginButton" value="Login" title="Login" />
+            </div>
+
+            <div class="loginOptionsContainer">
+
+                <div class="rememberMe">
+                    <input data-val="true" data-val-required="The Keep me signed in field is required." id="Login_KeepMeSignedIn" name="Login.KeepMeSignedIn" type="checkbox" value="true" /><input name="Login.KeepMeSignedIn" type="hidden" value="false" />
+                    <label for="Login_KeepMeSignedIn">Keep me signed in</label>
+
+                    <span id="forgotPassContainer">                        
+                        <a href="https://jobsplus.gov.mt/account/forgotpassword">Forgot your Password?</a>
+                    </span>
+                        <div class="language">
+                            <div class="language-current">
+                                <i class="language-image gb" title="Language">
+
+                                </i>
+                                <label>English</label>
+                            </div>
+                            <ul>
+                                    <li>
+                                        <a href="https://jobsplus.gov.mt/schemes-jobseekers/a2e-scheme">
+                                            <div class="language-image language-available gb"></div>
+                                            <label>English</label>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+                <div id="register">
+                    <p>
+                        <p>Need an account?</p>
+                    </p>                    
+                    <a href="https://jobsplus.gov.mt/register">Sign Up Now!</a>
+                </div>
+            </div>            
+        </form>
+
+                    <div id="closeLogin">
+                        <a href="#" title="Close"><img src="/Content/images/homepage/ico-close.png" /></a>
+                    </div>
+                </div>
+
+                <div id="responsiveBtns">
+                        <a href="#" id="loginButton" title="Login">
+                            <img src="/Content/images/homepage/ico-account.png" alt="Login" />
+                        </a>
+
+                    <a href="#sidr-main" id="responsive-menu" title="Menu">
+                        <img src="/Content/images/homepage/ico-menu.png" alt="Menu" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div id="closeMenu"><a href="#" title="Close"><img src="/Content/images/homepage/ico-close.png" /></a></div>
+        <div id="bannerTop">
+            <div class="wrapper">
+                <div id="navigation">
+                    <nav>
+                        <ul>
+                                    <li>
+                                        <a href="/" title="Home" class="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about" title="About" class="">About</a>
+                                            <div class="navigation-sub">
+                                                <div class="navigation-sub-wrapper">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/about/history" title="History" style="">History</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/about/team" title="The Team" style="">The Team</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <a href="/resources" title="Resources" class="">Resources</a>
+                                            <div class="navigation-sub">
+                                                <div class="navigation-sub-wrapper">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/resources/publication-statistics-mt-mt-en-gb" title="Publications &amp; Statistics" style="">Publications &amp; Statistics</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="http://www.justiceservices.gov.mt/DownloadDocument.aspx?app=lom&amp;itemid=12929&amp;l=1" title="Legislative Framework" style="">Legislative Framework</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="fileprovider.aspx?fileId=1656" title="Jobsplus Strategic Plan" style="">Jobsplus Strategic Plan</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/resources/publication-statistics-mt-mt-en-gb/publications" title="Publications" style="">Publications</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/resources/publication-statistics-mt-mt-en-gb/labour-market-information" title="Labour Market Information" style="">Labour Market Information</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/resources/publication-statistics-mt-mt-en-gb/policies" title="Employment Policies and Strategies" style="">Employment Policies and Strategies</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/resources/publication-statistics-mt-mt-en-gb/jobsplus-research-policies" title="Jobsplus Research Policies" style="">Jobsplus Research Policies</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/resources/publication-statistics-mt-mt-en-gb/public-consultation" title="Public Consultation" style="">Public Consultation</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/resources/forms" title="Forms" style="">Forms</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/resources/tenders-quotations-mt-mt-en-gb" title="Tenders &amp; Quotations" style="">Tenders &amp; Quotations</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/resources/tenders-quotations-mt-mt-en-gb/closed-tender-quotations" title="Closed Calls for Tenders &amp; Quotations" style="">Closed Calls for Tenders &amp; Quotations</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/webs-user-guidesite" title="User Guides &amp; Manuals" style="">User Guides &amp; Manuals</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/webs-user-guidesite/using-the-job-matching-system" title="User Web Guide" style="">User Web Guide</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/webs-user-guidesite/online-services-guidelines" title="Defining Online Services" style="">Defining Online Services</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/privacy-policy" title="Privacy Policy" style="">Privacy Policy</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/privacy-policy/complaints-procedure" title="Complaints Procedure" style="">Complaints Procedure</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/disclaimer" title="Disclaimer" style="">Disclaimer</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/terms-of-use" title="Terms of Use" style="">Terms of Use</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/resources/health-precaution-measures-coronavirus" title="Health Precaution Measures: Coronavirus" style="">Health Precaution Measures: Coronavirus</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/resources/participation-in-service-design" title="Participation in Service Design" style="">Participation in Service Design</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <a href="/job-seekers-mt-MT-en-GB" title="Jobseekers" class="activeNav">Jobseekers</a>
+                                            <div class="navigation-sub">
+                                                <div class="navigation-sub-wrapper">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/job-seekers-mt-MT-en-GB/guidance-services" title="Guidance Services" style="">Guidance Services</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/guidance-services/first-time-registrants" title="First-Time Registrants" style="">First-Time Registrants</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/job-search-advice" title="Job Search Advice" style="">Job Search Advice</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/guidance-services/inclusive-employment-services" title="Inclusive Employment Services" style="">Inclusive Employment Services</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/guidance-services/working-in-europe" title="Working in Europe" style="">Working in Europe</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/guidance-services/foreign-seeking-employment-malta" title="EU Nationals Seeking Employment" style="">EU Nationals Seeking Employment</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/guidance-services/tcns-seeking-employment" title="TCNs Seeking Employment" style="">TCNs Seeking Employment</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/guidance-services/occupational-handbook-2018" title="Occupational Handbook 2018" style="">Occupational Handbook 2018</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/schemes-jobseekers" title="Schemes" style="opacity: 0.5;">Schemes</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/average-wage-earners-scheme" title="Average Wage Earners" style="">Average Wage Earners</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/bridge-gap-scheme" title="Bridging the Gap" style="">Bridging the Gap</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/childcare-subsidy-scheme" title="Childcare Subsidy" style="">Childcare Subsidy</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/traineeships" title="Traineeships" style="">Traineeships</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/training-pays-scheme" title="Training Pays Scheme" style="">Training Pays Scheme</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/vaste" title="VASTE Programme" style="">VASTE Programme</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/work-schemes" title="Work Exposure" style="">Work Exposure</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/work-programme-initiative" title="Work Programme Initiative" style="">Work Programme Initiative</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/work-placement-scheme" title="Work Placement" style="">Work Placement</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/youth-guarantee-scheme" title="Youth Guarantee Scheme" style="">Youth Guarantee Scheme</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/training-opportunities" title="Training Opportunities" style="">Training Opportunities</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/courses" title="Courses at Jobsplus" style="">Courses at Jobsplus</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/job-bridge-training-centre" title="Job Bridge Training Centre" style="">Job Bridge Training Centre</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/training-opportunities/shelter-training" title="Sheltered Employment Training" style="">Sheltered Employment Training</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/training-opportunities/trade-testing-system" title="Trade Testing System" style="">Trade Testing System</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://ebiznify.com/" title="eBiznify eCommerce Training Programme" style="">eBiznify eCommerce Training Programme</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/job-seekers-mt-MT-en-GB/vacancies" title="Search Vacancies" style="">Search Vacancies</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/job-seekers-mt-MT-en-GB/vacancies/careers-at-jobsplus" title="Job Opportunities at Jobsplus" style="">Job Opportunities at Jobsplus</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <a href="/employers-mt-MT-en-GB" title="Employers" class="">Employers</a>
+                                            <div class="navigation-sub">
+                                                <div class="navigation-sub-wrapper">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/employers-mt-MT-en-GB/legal-and-procedural-requirements" title="Procedural Requirements" style="">Procedural Requirements</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/hriu-faqs" title="FAQs for Filling of Employment Forms" style="">FAQs for Filling of Employment Forms</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/employers-mt-MT-en-GB/employing-persons" title="Employing Persons who are:" style="">Employing Persons who are:</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/employing-persons/employing-maltese-nationals" title="Maltese Nationals" style="">Maltese Nationals</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/employing-persons/employing-eu-nationals" title="EU Nationals" style="">EU Nationals</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/employing-persons/third-country-nationals" title="Third Country Nationals" style="">Third Country Nationals</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/employing-persons/employing-persons-disability" title="With Disability" style="">With Disability</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/employing-persons/persons-disadvantaged" title="In a Disadvantaged Situation" style="">In a Disadvantaged Situation</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/schemes-jobseekers" title="Schemes" style="">Schemes</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/a2e" title="Access to Employment" style="">Access to Employment</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/bridge-gap-scheme" title="Bridging the Gap" style="">Bridging the Gap</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/iis" title="Investing in Skills" style="">Investing in Skills</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/mature-workers-scheme" title="Mature Workers" style="">Mature Workers</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/tax-incentive-scheme" title="Tax Incentive" style="">Tax Incentive</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/traineeships" title="Traineeships" style="">Traineeships</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/work-schemes" title="Work Exposure Schemes " style="">Work Exposure Schemes </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/schemes-jobseekers/youth-guarantee-employers" title="Youth Guarantee Employers" style="">Youth Guarantee Employers</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/training-opportunities" title="Training Opportunities" style="">Training Opportunities</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/courses" title="Courses at Jobsplus" style="">Courses at Jobsplus</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/training-opportunities/shelter-training" title="Sheltered Employment Training" style="">Sheltered Employment Training</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/training-opportunities/trade-testing-system" title="Trade Testing System" style="">Trade Testing System</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/employers-mt-MT-en-GB/em-other-services" title="Other Services" style="">Other Services</a>
+
+                                                                <ul>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/em-other-services/the-employer-relations-unit" title="The Employer Relations Unit" style="">The Employer Relations Unit</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/employers-mt-MT-en-GB/em-other-services/notification-of-internships" title="Notification of Internships" style="">Notification of Internships</a>
+                                                                            </li>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/employers-mt-MT-en-GB/employment-laws" title="Employment Laws" style="">Employment Laws</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <a href="/forms" title="Report Abuse" class="">Report Abuse</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact" title="Contact" class="">Contact</a>
+                                            <div class="navigation-sub">
+                                                <div class="navigation-sub-wrapper">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/contact" title="Contact Form" style="">Contact Form</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/contact/office-locations" title="Office Locations" style="">Office Locations</a>
+
+                                                                <ul>
+
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                    </li>
+
+
+                            <li>
+                                <a href="https://jobsplus.gov.mt/announcement-coronavirus" title="COVID-19 Measures" id="covidBtn" class="">COVID-19</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="search">
+                        <form method="get" action="https://jobsplus.gov.mt/SearchResults">
+                            <input type="text" id="txtSearch" placeholder="Search content..." title="Search for content in pages." name="text" />
+                            <button id="buttonSearch" class="livicon" data-s="23" data-c="#676767" data-hc="#4d4c4c" data-name="search" type="submit" disabled></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="#" id="__AjaxAntiForgeryForm" method="post">
+        <input name="__RequestVerificationToken" type="hidden" value="7tIDM1b6DEGuYvYfMcEHqYIWUZKfuABPIiBkMyuRAkHW5JEsYz-LiWUl_vKeqZiaoNy4OstdS9JumafRajrDixtOnwsHwPh4JofV4mtPr701" />
+    </form>
+
+    
+
+
+<link href="/Content/css/contentpage?v=S1HLXPnv81fe4MnJ95C6gah3VLnuNorSh1PqbnrGPYk1" rel="stylesheet"/>
+
+<link href="/Content/css/icheck/icheck?v=ezLzmDEFMxEx5dTRL5ABvd-jVAl5vFC8WbMRu1Th2Ck1" rel="stylesheet"/>
+
+
+<div id="banner" class="page-description">
+    <div class="wrapper">
+        <h2>Access to Employment Scheme</h2>
+        <p></p>
+    </div>
+</div>
+<div id="content">
+    <div class="wrapper">
+        <article>
+            <div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/U7j4h9fOVds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>&nbsp;</div>
+<br />
+<p style="text-align: center;"><img alt="" style="width: 100%; min-width: 300px; max-width: 759px;" src="fileprovider.aspx?fileId=2595" /></p>
+<img alt="" style="margin: 0px 0px 20px 20px; float: right;" src="fileprovider.aspx?fileId=2594" />
+<h2>Access to Employment Scheme</h2>
+<p>&nbsp;</p>
+<p><span>Access to Employment (A2E) Scheme provides employment aid to enterprises in Malta and Gozo to promote the recruitment of the more challenged amongst jobseekers and inactive persons. Through this scheme, the integration into the labour market is facilitated by:</span></p>
+<ul style="list-style-type: disc;">
+    <li><span>Enhancing opportunities to access the labour market and providing work experience to those furthest away from gainful employment;</span></li>
+    <li><span>Bridging the gap between labour market supply and demand;</span></li>
+    <li><span>Increasing social cohesion.&nbsp;</span></li>
+</ul>
+<p> </p>
+<p><span>The Scheme is demand driven and grants will be awarded on a first-come first-served basis, subject to the annual ceilings and total budget. The total available budget for the A2E is &euro;12 million. &nbsp;</span></p>
+<p><strong> </strong></p>
+<strong>
+<h2>1st Call &ndash; From June 2015 until December 2019</h2>
+</strong>
+<p><span>Employers applying for the A2E Scheme from June 2015 until December 2019 will be eligible to receive a subsidy of <strong>&euro;85</strong> per week per new recruit engaged, for a period of 26 weeks, 52 weeks or 104 weeks, depending on the target group. In the case of registered disabled persons, a subsidy of <strong>&euro;125</strong> per week for a maximum of 156 weeks is provided.</span></p>
+<p><strong> </strong></p>
+<strong>
+<h2>2nd Call &ndash; From January 2020 until September 2020</h2>
+</strong>
+<p><span></span></p>
+While Employers applying for the A2E Scheme from January 2020 onwards will be eligible to receive a subsidy of <strong>&euro;104</strong> per week per new recruit engaged, for a period of 26 weeks, 52 weeks or 104 weeks, depending on the target group. In the case of registered disabled persons, a subsidy of <strong>&euro;155</strong> per week for a maximum of 156 weeks is provided.
+<div>
+<h2>3rd Call &ndash; From October 2020 until December 2020</h2>
+<p><span></span></p>
+While Employers applying for the A2E Scheme from October 2020 onwards will be eligible to receive a subsidy of <strong>&euro;104*</strong> per week per new recruit engaged, for a period of&nbsp; 52 weeks or 104 weeks, depending on the target group. In the case of registered disabled persons, a subsidy of <strong>&euro;155*</strong> per week for a maximum of 156 weeks is provided.</div>
+<div>
+<p><span style="font-size: 13px;">*Each year the subsidy will increase depending on the C.O.L.A.&nbsp;&nbsp;</span></p>
+<h2>Call 3.1 &ndash; From January 2021 onwards</h2>
+<p><span></span></p>
+While Employers applying for the A2E Scheme from January 2021 onwards will be eligible to receive a subsidy of <strong>&euro;104.50*</strong> per week per new recruit engaged, for a period of&nbsp; 52 weeks or 104<sup>1</sup> weeks, depending on the target group. In the case of registered disabled persons, a subsidy of <strong>&euro;156.50*</strong> per week for a maximum of 156<sup>2</sup> weeks is provided.</div>
+<div>
+<p><span style="font-size: 13px;">*Each year the subsidy will increase depending on the C.O.L.A.&nbsp;&nbsp;</span></p>
+<p><span style="font-size: 13px;"><sup>1</sup> For 104 weeks grant agreements the last full agreement will be signed in October 2021.  As from October 2021 the subsidy period may be reduced (the retention period will also be reduced pro rata) considering that the scheme will have to come to an end by September 2023.  </span></p>
+<p><span style="font-size: 13px;"><sup>2</sup> For 156 weeks grant agreements the last full subsidy period will be signed in October 2020. As from October 2020 the subsidy period may be reduced (the retention period will also be reduced pro rata) considering that the scheme will have to come to an end by September 2023.</span></p>
+<div>The A2E Scheme is co-financed by the European Social Fund, the Maltese Government and employers.
+<p><span></span></p>
+<p><strong> </strong></p>
+<strong>
+<h2><span>Eligibility criteria</span></h2>
+</strong>
+<p><strong> </strong></p>
+<p><strong><span>Target Groups</span></strong></p>
+<ol style="list-style-type: decimal;" start="1">
+    <li><span>Any person of age 24 and over who has been unemployed/inactive for the previous 6 months;</span></li>
+    <li><span>Any unemployed person of age between 15 to 24 who previously participated and completed the Youth Guarantee / Work Exposure / Traineeship Scheme and is recruited for the first-time following completion of such initiatives;</span></li>
+    <li><span>Any person who is living as a single adult who has one or more dependants and is not in full-time employment; &nbsp;&nbsp;</span></li>
+    <li><span>Any person of age 24 and over who has not attained an upper secondary educational or vocational qualification (ISCED 3) and who does not have a job;</span>
+    </li>
+    <li><span>Any person older than 50 years who does not have a job;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+    <li><span>Any person who has been unemployed/inactive for the previous 12 months during which he/she has not benefited from a traineeship with the applicant undertaking and who belongs to either category (3) to (5);</span></li>
+    <li><span>Any person of age 24 and over who has been unemployed/inactive for the previous 24 months during which he/she has not benefited from a traineeship with the applicant undertaking;</span></li>
+    <li><span>Any person who is a registered disabled person under national law.</span></li>
+</ol>
+<p><strong> </strong></p>
+<p><strong><span>Employers</span></strong></p>
+<ol style="list-style-type: lower-alpha;" start="1">
+    <li><span>Complete documentation:&nbsp; the Employer must present a duly filled application form together with all the requested supporting documentation.</span></li>
+    <li><span>All Employers: the applicant must meet all the eligibility criteria to benefit from this scheme.&nbsp; Eligible applicants cover all employers having an economic activity irrespective of their legal form.&nbsp; These include partnership, company, family businesses, association, individual self-employed or other body of persons, NGOs and social partners, when recruiting new employees subject to criterion (c) below. Such definition implies that there must be at least one person in the Employer&rsquo;s organization who is engaging a different person through the A2E Scheme.<br />
+    </span>NGOs and Social Partners not having an economic activity are also eligible to benefit from the scheme.</li>
+    <li><span>In the case of private enterprises, where the recruitment does not represent a net increase, compared with the average over<strong>&nbsp;</strong>the previous twelve months in the number of employees in the undertaking concerned, the post/s shall have fallen vacant following voluntary departure, disability, retirement on grounds of age, voluntary reduction of working time or lawful dismissal for misconduct and not as a result of redundancy.&nbsp;</span></li>
+    <li>Incentive effect: as long as the Employer has submitted a written application prior to the engagement of the participant or within one month from the date of the acknowledgment of receipt date, aid shall be considered to have an incentive effect</li>
+    <li><span>Project implemented within/for the direct benefit of the eligible territory<strong>:</strong>&nbsp;The eligible territory for this scheme is the whole legal territory of the Maltese Islands.&nbsp;</span></li>
+    <li><span>Jobsplus will be checking that every applicant Undertaking is financially sound; any one of the following circumstances would render it &lsquo;an undertaking in difficulty&rsquo;(as more fully described in the &lsquo;Definition Terms&rsquo; section) ineligible for funding:&nbsp;&nbsp;&nbsp;&nbsp; </span></li>
+    <ol style="list-style-type: lower-alpha;" start="1">
+        <ol style="list-style-type: lower-roman;" start="1">
+            <li><span>In the case of limited liability companies (with a few exceptions relating to SMEs), if more than half of the subscribed share capital has been absorbed by losses.</span></li>
+            <li><span>In the case of companies with partners&rsquo; partial limited liability, as in (a) above.</span></li>
+            <li><span>Involvement in any collective insolvency proceedings.</span></li>
+            <li><span>Where any rescue aid has not been repaid.</span></li>
+            <li><span>Where non-SMEs have had for the last two years a book debt to equity ratio greater than 7.5 or an EBITDA coverage ratio of below 1.0.</span></li>
+        </ol>
+    </ol>
+</ol>
+<p><strong>Procedure for the&nbsp;receipt of applications and claims for reimbursement during the ongoing&nbsp;COVID-19&nbsp;outbreak:</strong></p>
+<p> </p>
+<p><span> </span></p>
+<p> </p>
+<p><span>Prospective applicants and beneficiaries claiming for funds are to note that given the evolving nature of the COVID-19 outbreak,&nbsp;<span style="color: #cc0000;">only soft copies sent via email to&nbsp;<a href="mailto:a2e.jobsplus@gov.mt"><strong>a2e.jobsplus@gov.mt</strong></a>&nbsp;will be accepted</span>; no&nbsp;hard copy of applications or claims for reimbursement, whether submitted by mail, by hand or any other means,&nbsp;will be accepted until further notice. </span></p>
+<p> </p>
+<p><span> </span></p>
+<p> </p>
+<p><span>Likewise, no pen-drives, cd&rsquo;s etc will be accepted. This applies to submissions at both the A2E Unit at Hal Far and other Jobsplus Offices in Malta and Gozo.</span></p>
+<p> </p>
+<p><span> </span></p>
+<p> </p>
+<p><span style="color: #cc0000;">Only applications and claims for reimbursement that successfully reach the working mailbox&nbsp;<a href="mailto:a2e.jobsplus@gov.mt"><strong>a2e.jobsplus@gov.mt</strong></a>&nbsp;by the close of deadline, will be considered. It remains the responsibility of the applicant to ensure that the application and claim for reimbursement was successfully delivered.</span></p>
+<p> </p>
+<p><span> </span></p>
+<p> </p>
+<p><span>Prospective applicants and beneficiaries are strongly advised to avoid submitting applications or claims for reimbursement on the last days of the batch, in order to ensure that technical hitches of any sort do not hinder the successful receipt of applications or claims for reimbursement. Applicants/Beneficiaries are to ensure that applications/claims for reimbursement are sent in one compressed zipped folder, where applicable, with each document clearly labelled.&nbsp;</span></p>
+<p> </p>
+<p><span> </span></p>
+<p> </p>
+<p><span>Jobsplus will continue to monitor this evolving situation and will keep all informed, as necessary, in future updates. If you have any additional questions, please contact the A2E Unit on </span><a href="mailto:a2e.jobsplus@gov.mt"><span><strong><span>a2e.jobsplus@gov.mt</span></strong></span><span> </span></a><span>.</span></p>
+<h2>Circulars</h2>
+<ul style="list-style-type: disc;">
+    <li>A2E Circular 01/2020 <em><a href="fileprovider.aspx?fileId=4943" target="_blank">Access to Employment Aid Scheme (A2E) Scheme Payment Timeframes</a></em> &ndash; dated 20th April 2020.</li>
+</ul>
+<h2><a href="fileprovider.aspx?fileId=20515" target="_blank">FAQs - A2E Scheme Covid-19</a></h2>
+<h2 style="font-weight: bold;">Forms</h2>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=19086" target="_blank">Change Request Form</a></li>
+    <li><a href="fileprovider.aspx?fileId=18073" target="_blank">Projections and Estimates Template</a></li>
+</ul>
+<h3 style="font-size: 20px; font-weight: bold;">Call 3.1 - From January 2021 onwards</h3>
+<h4><strong>
+A2E Application Stage Documentation</strong>&nbsp;</h4>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22293" target="_blank">A2E Guidance Notes</a></li>
+    <li><a href="fileprovider.aspx?fileId=22283" target="_blank">A2E Checklist for Entities</a></li>
+    <li><a href="fileprovider.aspx?fileId=22290" target="_blank">A2E Application Form</a>&nbsp;- EN</li>
+    <li><a href="fileprovider.aspx?fileId=22286" target="_blank">A2E Request for Verification Form</a>&nbsp;- EN</li>
+    <li><a href="fileprovider.aspx?fileId=4230" target="_blank">Group 4 or 6(4) Template Form</a></li>
+</ul>
+<h4>A2E Grant Stage Documentation</h4>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22287" target="_blank">A2E Delegation of Authority</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=22291" target="_blank">A2E Change in Project Leader Form (template)</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=22285" target="_blank">A2E Grant Agreement</a> - EN</li>
+</ul>
+<h4><strong>A2E <strong><span>Reimbursement&nbsp;</span></strong>Stage Documentation</strong></h4>
+<p>
+</p>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22284" target="_blank">Claim for Reimbursement</a>&nbsp;- EN</li>
+    <li><a href="fileprovider.aspx?fileId=22471" target="_blank">Claim for Reimbursement - Final Payment</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=22289" target="_blank">Payment Check Form</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=9002" target="_blank">Financial Identification Form</a></li>
+    <li><a href="fileprovider.aspx?fileId=22288" target="_blank">Common Immediate Result Indicator of Participant Form</a></li>
+</ul>
+<h3 style="font-size: 20px; font-weight: bold;">3<sup>rd</sup> Call - From October 2020 until December 2020</h3>
+<h4><strong>
+A2E Application Stage Documentation</strong>&nbsp;</h4>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=19758" target="_blank">A2E Scheme Leaflet</a></li>
+    <li><a href="fileprovider.aspx?fileId=19805" target="_blank">A2E Guidance Notes</a></li>
+</ul>
+<h4>A2E Grant Stage Documentation</h4>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22287" target="_blank">A2E Delegation of Authority</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=22291" target="_blank">A2E Change in Project Leader Form (template)</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=22292" target="_blank">A2E Grant Agreement</a> - EN</li>
+</ul>
+<h4><strong>A2E <strong><span>Reimbursement&nbsp;</span></strong>Stage Documentation</strong></h4>
+<p>
+</p>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22284" target="_blank">Claim for Reimbursement</a>&nbsp;- EN</li>
+    <li><a href="fileprovider.aspx?fileId=22289" target="_blank">Payment Check Form</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=9002" target="_blank">Financial Identification Form</a></li>
+    <li><a href="fileprovider.aspx?fileId=17572" target="_blank">Common Immediate Result Indicator of Participant Form</a></li>
+</ul>
+<h3 style="font-size: 20px; font-weight: bold;">2<sup>nd</sup> Call - January 2020 until September 2020</h3>
+<h4><strong>
+A2E Application Stage Documentation</strong>&nbsp;</h4>
+<p>
+</p>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=4209" target="_blank">A2E Scheme Advert</a> &ndash; 2nd Call From January 2020 until September 2020&nbsp;</li>
+    <li><a href="fileprovider.aspx?fileId=9096" target="_blank">A2E Guidance Notes</a></li>
+</ul>
+<strong>
+<h4>A2E Grant Stage Documentation</h4>
+</strong>
+<p>
+</p>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=4232" target="_blank">A2E Data on Participant</a></li>
+    <li><a href="fileprovider.aspx?fileId=4372" target="_blank">A2E Grant Agreement (template)</a></li>
+    <li><a href="https://eforms.gov.mt/pdfforms.aspx?fid=wes075e" target="_blank">A2E Justification Forms</a> - EN</li>
+    <li><a href="https://eforms.gov.mt/pdfforms.aspx?fid=wes075m" target="_blank">A2E Justification Forms</a> - MT</li>
+    <li><a href="fileprovider.aspx?fileId=22287" target="_blank">A2E Delegation of Authority</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=22291" target="_blank">A2E Change in Project Leader Form (template)</a> - EN</li>
+</ul>
+<h4><strong>A2E <strong><span>Reimbursement&nbsp;</span></strong>Stage Documentation</strong></h4>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22284" target="_blank">Claim for Reimbursement</a>&nbsp;- EN</li>
+    <li><a href="fileprovider.aspx?fileId=9002" target="_blank">Financial Identification Form</a></li>
+    <li><a href="fileprovider.aspx?fileId=4371" target="_blank">Common Immediate Result Indicator of Participant Form</a></li>
+    <li><a href="https://eforms.gov.mt/pdfforms.aspx?fid=wes077e" target="_blank">Retention Period Declaration</a>&nbsp;- EN - Till 30th September 2020</li>
+    <li><a href="https://eforms.gov.mt/pdfforms.aspx?fid=wes077m" target="_blank">Retention Period Declaration</a> - MT&nbsp;- Till 30th September 2020</li>
+</ul>
+<h3 style="font-size: 20px;">1<sup>st</sup> Call - From June 2015 until December 2019</h3>
+<h4><strong>
+A2E Application Stage Documentation</strong>&nbsp;</h4>
+<p>
+</p>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=4200" target="_blank">A2E Scheme Advert</a> &ndash; 1st Call From June 2015 until December 2019</li>
+    <li><a href="fileprovider.aspx?fileId=4023" target="_blank">A2E Guidance Notes</a>&nbsp;&ndash; 1st Call From June 2015 until December 2019</li>
+</ul>
+<strong>
+<h4>A2E Grant Stage Documentation</h4>
+</strong>
+<p>
+</p>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=4550" target="_blank">A2E Data on Participant</a></li>
+    <li><a href="fileprovider.aspx?fileId=4554" target="_blank">A2E Grant Agreement (template)</a></li>
+    <li><a href="fileprovider.aspx?fileId=4551" target="_blank">A2E Justification Forms</a>&nbsp;- EN&nbsp;- Till 30th September 2020</li>
+    <li><a href="fileprovider.aspx?fileId=4598" target="_blank">A2E Justification Forms</a> - MT&nbsp;- Till 30th September 2020</li>
+    <li><a href="fileprovider.aspx?fileId=22287" target="_blank">A2E Delegation of Authority</a> - EN</li>
+    <li><a href="fileprovider.aspx?fileId=22291" target="_blank">A2E Change in Project Leader Form (template)</a> - EN</li>
+</ul>
+<p><strong>
+</strong></p>
+<h4><strong>A2E <strong><span>Reimbursement&nbsp;</span></strong>Stage Documentation</strong></h4>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22284" target="_blank">Claim for Reimbursement</a>&nbsp;- EN</li>
+    <li><a href="fileprovider.aspx?fileId=9002" target="_blank">Financial Identification Form</a></li>
+    <li><a href="fileprovider.aspx?fileId=5438" target="_blank">Common Immediate Result Indicator of Participant Form</a>&nbsp;&ndash; (to be used for last reimbursement claims/premature terminations ending till 1st September 2019).</li>
+    <li><a href="fileprovider.aspx?fileId=5437" target="_blank">Common Immediate Result Indicator of Participant Form</a>&nbsp;&ndash; (to be used for last reimbursement claims/premature terminations ending 2nd September 2019 onward).</li>
+    <li><a href="fileprovider.aspx?fileId=4560" target="_blank">Retention Period Declaration</a>&nbsp;- EN&nbsp;- Till 30th September 2020</li>
+    <li><a href="fileprovider.aspx?fileId=4559" target="_blank">Retention Period Declaration</a> - MT&nbsp;- Till 30th September 2020</li>
+</ul>
+<p><span><strong>A2E List of Beneficiaries</strong></span></p>
+<ul style="list-style-type: disc;">
+    <li><a href="fileprovider.aspx?fileId=22372" target="_blank">List of Beneficiaries</a></li>
+</ul>
+<p><span>Applications (including all documentation) are to be submitted by post or by hand to: </span></p>
+<p> </p>
+<p><span>Jobsplus<br />
+EU Funded Schemes Division<br />
+A2E Scheme<br />
+Hal Far Road<br />
+Hal Far BBG 3000</span></p>
+<p> </p>
+<strong>
+<h2>More Information</h2>
+</strong>
+<div>
+<p><span>You can contact</span><span> us by using our <a href="https://jobsplus.gov.mt/contact?categoryId=15" target="_self">contact form</a></span><span>&nbsp;or call</span><span> us on</span><span> 22201399 or email us on <a href="mailto:a2e.jobsplus@gov.mt">a2e.jobsplus@gov.mt</a>.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<br />
+</div>
+</div>                      
+        </article>
+    </div>
+</div>
+
+
+
+    <footer>
+        <div class="wrapper">
+            <div id="leftFooter">
+                <div class="footer-images">
+<!--<div class="leftFooterImg"><a href="https://mygov.mt/portal/webforms/home.aspx?ReturnUrl=%2fportal%2fwebforms%2fwelcome.aspx" target="_blank"><img alt="mygov.mt" src="fileprovider.aspx?fileId=9" /></a></div>-->
+<div class="leftFooterImg"><a href="http://gov.mt/en/Pages/gov.mt%20homepage.aspx" target="_blank"><img alt="gov.mt" src="fileprovider.aspx?fileId=11283" style="margin-top: 10px;" /></a></div>
+<div class="leftFooterImg" style="vertical-align: middle; margin-top: 0px !important;"><a href="http://servizz.gov.mt/en/Pages/default.aspx " target="_blank" style="vertical-align: middle;"><img src="fileprovider.aspx?fileId=4146" alt="Servizz.gov.mt" title="Servizz.gov.mt" style="vertical-align: middle;" /></a></div>
+<div id="your_europe_logo" class="leftFooterImg" style="display: none;"><img src="fileprovider.aspx?fileId=21474" alt="Your Europe Logo" height="95px" /></div>
+<div class="leftFooterImg"><a href="http://ebusinessawards.mca.org.mt/" target="_blank"><img src="fileprovider.aspx?fileId=2345" alt="The MCA eBusiness Awards winner" height="95px" /></a></div>
+<div class="leftFooterImg"><a href="/announcement-coronavirus" target="_self" title="Announcement in relation to Coronavirus"><img alt="" src="fileprovider.aspx?fileId=4356" height="95px" /></a></div>
+</div>
+<style>
+    .footer-images{
+    width:650px;
+    }
+    @media (max-width:850px){
+    .footer-images{
+    width:320px;
+    }
+</style>
+            </div>
+            <div id="rightFooter">
+                <p style="font-size: 14px;">Copyright 2020. Jobsplus</p>
+<p style="font-size: 14px;"><a href="/disclaimer" target="_self" title="Disclaimer" style="font-size: 14px;">Disclaimer</a> | <a href="/terms-of-use" target="_self" title="Terms of Use" style="font-size: 14px;">Terms of Use</a>&nbsp;| <a href="/privacy-policy" target="_self" title="Privacy Policy">Privacy Notice</a>&nbsp;<a id="logo" href="http://www.icon.com.mt" title="ICON Studios" target="_blank"><img src="fileprovider.aspx?fileId=11293" alt="ICON Logo" style="width:70px;height:70px;"></a></p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var snapPrimaryUrl = 'https://jobsplus.gov.mt';
+    </script>
+
+    <script src="/bundles/scripts/jquery?v=gpT36XBvFppC2tIny57b9lOf_v-oCgtnsN_8FKH659s1"></script>
+
+    <script src="/bundles/scripts/generic?v=evODPa68qHorCtX-L54fI8_AXCk1_shzNcj96JhxIG41"></script>
+
+    <script src="/bundles/scripts/bootstrap?v=wMFBIIZ6OsUCe1qOSlRNS_6hGBJgfCE05Vh1GzCppYo1"></script>
+
+    <script src="/bundles/scripts/bootstrap-select?v=xaDd1vp53tMR-PfMZU2IQOqNxSzdgjv93AwLu0jRyr41"></script>
+
+    <script src="/bundles/scripts/common?v=HfacsHymQER_ShAvck3N1DCZI4nKOYUgXHtf3zC7Chk1"></script>
+
+
+    
+    <script>var snapPrimaryUrl = 'https://jobsplus.gov.mt';var devModeEnabled = false;</script>
+    <script>var snapFullPrimaryUrl = "https://jobsplus.gov.mt/schemes-jobseekers/a2e-scheme/"</script>
+    
+    <script src="/bundles/scripts/homepage?v=Mp6zXAD7F0jgikqPRLBlNLXDyjC7X_Z8pu23RoKCgbw1"></script>
+
+    <script src="/bundles/scripts/contentpage?v=5Vd6vbXkCQMHOYQGSqkfGsjSaLX_vUmJaAZl2sIs0AM1"></script>
+
+    <script src="/bundles/scripts/icheck?v=_LbUAG40C8NxISnnc2Jjce2q4yxf46o_KAJR0x_OfPs1"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#txtSearch').on('input', function (e) {
+                if ($("#txtSearch").val().length < 1) {
+                    $("#buttonSearch").prop('disabled', true);
+                }
+                else {
+                    $("#buttonSearch").prop('disabled', false);
+                }
+            });
+
+            $(".validation-summary-errors").append("<span class='closemessage' title='Close'>x</span>")
+
+            $(".closemessage").on("click", function () {
+                $(this).parent().fadeOut(500);
+            });
+        });
+
+        $(".language-current").on("click", function () {
+            var languageList = $(".language ul").get();
+            if ($(languageList).is(":visible")) {
+                $(languageList).hide();
+            }
+            else {
+                $(languageList).show();
+            }
+        });
+
+        $(document).ajaxError(function (event, jqxhr, settings, thrownError) {
+            try {
+                var jsonResult = $.parseJSON(jqxhr.responseText);
+                if (jsonResult.errorMessage == "expired") {
+                    alert("Kindly note that your session has expired. Please login again to continue using Jobsplus' personalised services.");
+                    window.location = snapPrimaryUrl;
+                }
+            }
+            catch (e) {
+                alert("An error occured, please try again.");
+            }
+        });
+    </script>
+    <script type="text/javascript" src="/Scripts/your-europe-logo.js?v=1.0"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176855930-43"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176855930-43');
+    </script>
+</body>
+</html>

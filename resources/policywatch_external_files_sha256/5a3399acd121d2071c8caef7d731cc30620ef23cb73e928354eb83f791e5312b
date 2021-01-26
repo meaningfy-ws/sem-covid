@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://www.tootukassa.ee/sites/all/themes/tk_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.tootukassa.ee/tkauth/login" />
+<link rel="shortlink" href="https://www.tootukassa.ee/tkauth/login" />
+  <title>Logi sisse | Töötukassa</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link rel="shortcut icon" type="image/ico" href="/sites/all/themes/tk_theme/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/tk_theme/img/styles.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/tk_theme/img/styles.frame.notsupported.css" media="screen and (max-width: 239px)" />
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/tk_theme/img/styles.frame.mobile.css" media="screen and (min-width: 240px) and (max-width: 759px)" />
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/tk_theme/img/styles.frame.desktop.css" media="screen and (min-width: 760px)" />
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/tk_theme/img/styles.frame.desktop.tablet.css" media="screen and (min-width: 760px) and (max-width: 999px)" />
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/tk_theme/img/styles.frame.desktop.wide.css" media="screen and (min-width: 1000px)" />
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/tk_theme/img/styles.print.css" media="print" />
+  <link rel="apple-touch-icon" href="/sites/all/themes/tk_theme/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/sites/all/themes/tk_theme/apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/tk_theme/apple-touch-icon-114x114-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/tk_theme/apple-touch-icon-144x144-precomposed.png" />
+  <script>
+    //<![CDATA[
+    var locales = {
+      simpleloader: 'Laen andmeid...',
+      opencalendar: 'Ava kalender',
+      notfound: 'Soovitud sisu ei leitud',
+      tbclose: 'Sulge',
+      more: '...'
+    };
+    //]]>
+  </script>
+
+  <style type="text/css" media="all">
+@import url("https://www.tootukassa.ee/modules/system/system.base.css?qnhbyp");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.tootukassa.ee/sites/all/modules/eu_cookie_compliance/css/eu_cookie_compliance.css?qnhbyp");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:#2e7591;}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important;}.eu-cookie-withdraw-tab{border-color:#fff;}.eu-cookie-compliance-more-button{color:#fff !important;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://www.tootukassa.ee/sites/all/themes/tk_theme/img/style_custom.css?qnhbyp");
+@import url("https://www.tootukassa.ee/sites/all/themes/tk_theme/font-awesome/css/font-awesome.min.css?qnhbyp");
+</style>
+  <script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/misc/drupal.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/spamspan/spamspan.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/tootukassa.ee/files/languages/et_sy0-PEC6KS7Q6NLWGUqoTJM_WparvGW8xqTEarF_s9M.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/misc/ajax.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/misc/states.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/contrib/jquery_update/replace/misc/jquery.form.min.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/tkUiXhrDialog.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/tkUi.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/tklogin/scripts/MoreInfoAboutTk.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/tklogin/scripts/tklogin.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/tklogin/tkloginpassword/scripts/tkloginpassword.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/tkhelpdesk/scripts/Helpdesk.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/google_analytics/googleanalytics.js?qnhbyp"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-67689823-2", {"cookieDomain":"auto","allowLinker":true});ga("require", "linker");ga("linker:autoLink", ["www.tootukassa.ee","id.tootukassa.ee","m.tootukassa.ee"]);ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/dotdotdot/jquery.dotdotdot.min.js?qnhbyp"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+    jQuery(document).ready(function() {
+	    jQuery(".truncate").dotdotdot({
+		    watch: "window"
+		});
+	});
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/jquery.cookie.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/autosize/autosize.min.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/character-counter.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/require.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/scripts.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/jquery.loader.min.js?qnhbyp"></script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/themes/tk_theme/js/TkAutosize.js?qnhbyp"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"tk_theme","theme_token":"Xy-nsaJf15w5bgqIPGVZVoZRo2nmrP0dZ1jysFgVknM","js":{"0":1,"1":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"sites\/all\/modules\/spamspan\/spamspan.js":1,"public:\/\/languages\/et_sy0-PEC6KS7Q6NLWGUqoTJM_WparvGW8xqTEarF_s9M.js":1,"misc\/ajax.js":1,"misc\/states.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"sites\/all\/themes\/tk_theme\/js\/tkUiXhrDialog.js":1,"sites\/all\/themes\/tk_theme\/js\/tkUi.js":1,"sites\/all\/modules\/tklogin\/scripts\/MoreInfoAboutTk.js":1,"sites\/all\/modules\/tklogin\/scripts\/tklogin.js":1,"sites\/all\/modules\/tklogin\/tkloginpassword\/scripts\/tkloginpassword.js":1,"sites\/all\/modules\/tkhelpdesk\/scripts\/Helpdesk.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/themes\/tk_theme\/js\/dotdotdot\/jquery.dotdotdot.min.js":1,"3":1,"sites\/all\/themes\/tk_theme\/js\/jquery.cookie.js":1,"sites\/all\/themes\/tk_theme\/js\/autosize\/autosize.min.js":1,"sites\/all\/themes\/tk_theme\/js\/character-counter.js":1,"sites\/all\/themes\/tk_theme\/js\/require.js":1,"sites\/all\/themes\/tk_theme\/js\/scripts.js":1,"sites\/all\/themes\/tk_theme\/js\/jquery.loader.min.js":1,"sites\/all\/themes\/tk_theme\/js\/TkAutosize.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"0":1,"sites\/all\/themes\/tk_theme\/img\/style_custom.css":1,"sites\/all\/themes\/tk_theme\/font-awesome\/css\/font-awesome.min.css":1}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":0,"popup_scrolling_confirmation":0,"popup_html_info":"\u003Cdiv\u003E\n\t\u003Cdiv class =\u0022popup-content info\u0022\u003E\n\t\t\u003Cdiv id=\u0022popup-text\u0022\u003ET\u00f6\u00f6tukassa veebilehel kasutatakse k\u00fcpsiseid. K\u00fcpsistest saate loobuda igal ajal, muutes kasutatava seadme veebilehitseja seadistusi ja kustutades salvestatud k\u00fcpsised. K\u00fcpsistest loobumine v\u00f5ib piirata veebilehe kasutusv\u00f5imalusi.\u003C\/div\u003E\n\t\t\u003Cdiv id=\u0022popup-buttons\u0022\u003E\n\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003ESain aru\u003C\/button\u003E\n\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-default-button\u0022\u003ERohkem infot\u003C\/button\u003E\n\t\t\u003C\/div\u003E\n  \t\u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n\t\u003Cdiv class =\u0022popup-content info\u0022\u003E\n\t\t\u003Cdiv id=\u0022popup-text\u0022\u003ET\u00f6\u00f6tukassa veebilehel kasutatakse k\u00fcpsiseid. K\u00fcpsistest saate loobuda igal ajal, muutes kasutatava seadme veebilehitseja seadistusi ja kustutades salvestatud k\u00fcpsised. K\u00fcpsistest loobumine v\u00f5ib piirata veebilehe kasutusv\u00f5imalusi.\u003C\/div\u003E\n\t\t\u003Cdiv id=\u0022popup-buttons\u0022\u003E\n\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003ESain aru\u003C\/button\u003E\n\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-default-button\u0022\u003ERohkem infot\u003C\/button\u003E\n\t\t\u003C\/div\u003E\n  \t\u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\n\n\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EPeida\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":90,"popup_width":"100%","popup_delay":1000,"popup_link":"https:\/\/www.tootukassa.ee\/content\/tootukassast\/millistel-juhtudel-tootleme-teie-isikuandmeid","popup_link_new_window":1,"popup_position":null,"popup_language":"et","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"100","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\n\n\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":"2","trackCrossDomains":["www.tootukassa.ee","id.tootukassa.ee","m.tootukassa.ee"]},"tklocale":{"language":"et"},"asyncActions":null});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-tkauth page-tkauth-login i18n-et"  >
+<div id="box00">
+    <p class="visuallyhidden">
+        <a href="#content" tabindex="1">Liigu sisu juurde</a>
+        <a href="#mainmenu" tabindex="1">Liigu peamenüü juurde</a>
+        <a href="#accessibilityblock01" tabindex="1">Liigu vaegnägijate bloki juurde</a>
+    </p>
+    <div id="maincontent">
+        <div id="header01">
+            <div class="box01">
+                <p class="menubutton01" style="display: none;"><a href="#" class="menulink"><span>Menüü</span></a></p>
+                    <div id="block-locale-language" class="block block-locale">
+
+        <ul class="language-switcher-locale-url  langselect01"><li class="eng first"><a href="/eng/tkauth/login?return=bm9kZS8zNzc2" class="language-link" xml:lang="en" tabindex="3"><span class="a" style="display: none;">ENG</span><span class="b">In English</span></a></li>
+<li class="ru last"><a href="/ru/tkauth/login?return=bm9kZS8zNzc2" class="language-link" xml:lang="ru" tabindex="3"><span class="a" style="display: none;">РУС</span><span class="b">На русском</span></a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <div class="box01 box02">
+            <div id="header02">
+                <p class="logo">
+                    <a href="/">
+                        <img src="/sites/all/themes/tk_theme/img/logo.png" alt="Eesti Töötukassa logo" />
+                    </a>
+                </p>
+                  <div class="region region-auth-region userinfo01">
+    
+
+<div id="block-tklogin-tklogin-login" class="block block-tklogin">
+        <div class="userTable">
+    <div class="logo-eures">
+        <a href="https://ec.europa.eu/eures/public/et/homepage" target="_blank" class="notExternal"><img src="/sites/all/themes/tk_theme/img/logo_eures02.png" alt=""/></a>
+    </div>
+    <div class="logo2">
+        <img src="/sites/all/themes/tk_theme/img/logo_sotsiaalfond01.jpg" alt=""/>
+    </div>
+	<ul role="group" class="actions01">
+		<li><a role="button" href="https://www.tootukassa.ee/tkauth/login" class="main">Sisene</a></li>
+	</ul>
+</div>
+</div>  </div>
+            </div>
+            <div id="mobilemenu01">
+                <form action="#" id="accessibilityblock01" class="accessibilityblock01 clear hidden">
+  <div class="box01">
+    <div class="col1 infotext">
+      <p class="bold">Ligipääsetavusest.</p>
+      <p>Lehe loomisel on peetud silmas, et siin avaldatav info oleks kättesaadav ja kasutatav võimalikult paljudele inimestele..</p>
+      <p><a href="https://www.mkm.ee/et/wcag-20-rakendusjuhised" tabindex="3">» Loe lisaks</a></p>
+    </div>
+    <div class="col2">
+      <p class="bold">Teksti suurus:</p>
+      <div class="clear">
+        <label class="font3"><input type="radio" name="fontsize" tabindex="3" value="3" /> Ülisuur</label>
+        <label class="font2"><input type="radio" name="fontsize" tabindex="3" value="2" /> Suur</label>
+        <label class="font1"><input type="radio" name="fontsize" tabindex="3" value="default" /> Tavaline</label>
+      </div>
+      <p class="bold">Reavahe suurus:</p>
+      <div class="clear">
+        <label class="font3"><input type="radio" name="lineheight" tabindex="3" value="3" /> Ülisuur</label>
+        <label class="font2"><input type="radio" name="lineheight" tabindex="3" value="2" /> Suur</label>
+        <label class="font1"><input type="radio" name="lineheight" tabindex="3" value="default" /> Tavaline</label>
+      </div>
+    </div>
+    <div class="col3">
+      <p class="bold">Lehe välimus:</p>
+      <div class="clear">
+        <label><input type="radio" name="layout" tabindex="3" value="default" /> Tavaline</label>
+        <label class="highContrast"><input type="radio" name="layout" tabindex="3" value="skin2" /> Kollane tekst mustal taustal</label>
+        <label><input type="radio" name="layout" tabindex="3" value="skin3" /> Valge tekst sinisel taustal</label>
+        <label><input type="radio" name="layout" tabindex="3" value="nocolors" /> Keela taustad ja värvid</label>
+        <label><input type="radio" name="layout" tabindex="3" value="nostyles" /> Keela kõik stiilid</label>
+        <label><input type="checkbox" name="responsive" value="enabled" /> Automaatne lehe suurus</label>
+      </div>
+    </div>
+    <div class="col4">
+      <ul role="group" class="actions01 clear">
+        <li><input type="submit" value="Rakenda valikud" onclick="return setAccessibility('update');" tabindex="3" class="green" /></li>
+        <li><input type="button" value="Tühista" onclick="return setAccessibility('cancel');" tabindex="3" class="red" /></li>
+        <li><input type="button" value="Vaikimisi seaded" onclick="return setAccessibility('reset');" tabindex="3" /></li>
+      </ul>
+    </div>
+  </div>
+</form>                <div class="contentholder">
+                    <form action="/sisuotsing" method="get" class="search01">
+                        <p>
+                                                        <input title="Sisesta märksõna" tabindex="6" type="text" name="key" class="string"
+                                   placeholder="Märksõna või isik" />
+                            <input tabindex="6" type="submit" class="submit" value="Otsi" />
+                        </p>
+                    </form>
+                    <nav class="menu01 clear" id="mainmenu">
+                        <div class="a">
+                            
+
+
+<div id="block-tkmenu-main-menu" class="block block-tkmenu">
+        <ul><li><a href="/" class="first leaf"><span>Avaleht</span></a></li><li><a href="/content/otsin-tood" class="collapsed"><span>Otsin</span><span> </span><span>tööd</span></a></li><li><a href="/content/toota-ja-opi" class="collapsed"><span>Tööta ja õpi</span></a></li><li><a href="/toovoimereform" class="collapsed"><span>Vähenenud</span><span> </span><span>töövõime</span></a></li><li><a href="/content/teenused" class="collapsed"><span>Teenused</span></a></li><li><a href="/content/toetused-ja-huvitised" class="collapsed"><span>Toetused ja</span><span> </span><span>hüvitised</span></a></li><li><a href="/content/ettevotjale-ja-koostoopartnerile" class="collapsed"><span>Tööandjale ja</span><span> </span><span>partnerile</span></a></li><li><a href="/content/tootukassast" class="collapsed"><span>Töötukassast</span></a></li><li><a href="/iseteenindus" class="last collapsed"><span>e-töötukassa</span></a></li></ul></div>                        </div>
+                    </nav>
+                    <nav class="sitetools01">
+                            
+
+<div id="block-menu-block-2" class="block block-menu-block">
+        <div class="menu-block-wrapper menu-block-2 menu-name-menu-top-menu parent-mlid-0 menu-level-1">
+  <ul class=""><li class="first leaf menu-mlid-546"><a href="/" title="Vaegnägijatele" class="ico01" tabindex="2">Vaegnägijatele</a></li>
+<li class="leaf has-children menu-mlid-547"><a href="/content/viipekeel/viipekeelne-toootsija-meelespea" title="Viipekeel" class="ico02" tabindex="2">Viipekeel</a></li>
+<li class="leaf menu-mlid-868"><a href="/content/korduma-kippuvad-kusimused" title="Korduma kippuvad küsimused" class="ico04" tabindex="2">KKK</a></li>
+<li class="leaf menu-mlid-804"><a href="/sitemap" title="Sisukaart" class="ico05" tabindex="2">Sisukaart</a></li>
+<li class="leaf menu-mlid-805"><a href="/" id="disableResponsive" class="ico06 desktop-hide responsive-forced-hide" tabindex="2" onclick="disableResponsive();">Lai versioon</a></li>
+<li class="last leaf menu-mlid-806"><a href="/" title="Kohalduv" id="enableResponsive" class="ico07 responsive-hide responsive-forced-hide" tabindex="2" onclick="enableResponsive();">Kohalduv</a></li>
+</ul></div>
+</div>                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="box04">
+            <!-- content start -->
+            <div id="box05" class="box01">
+                <p class="breadcrumb"><a href="/">Avaleht</a> / Logi sisse</p>
+
+                <!-- Region for wide top content -->
+                
+                                                
+<div id="block-system-main" class="block block-system">
+      
+  
+<ul class="msg01" id="login-error-container" style="display: none;">
+    <li class="msg-error">
+        <p id="login-error-text"></p>
+    </li>
+</ul>
+
+<h1>Vali sisselogimise viis e-töötukassasse</h1>
+
+<ul class="msg01">
+    <li class="msg-info"><p><p>Kui Teil ei õnnestu e-töötukassasse siseneda, siis enamlevinud probleemid ja nende lahendused on kirjeldatud siin: <a href="https://www.tootukassa.ee/kkk/e-tootukassa">e-töötukassa - korduma kippuvad küsimused</a>.</p>
+</p></li>
+</ul>
+
+<div class="front02">
+    <div id="LoginMethodsWrapper">
+        <div id="LoginMethodRow">
+            <a href="/login/oidc/TARA_ID_CARD" class="login-method" rel="nofollow">
+                <span class="id-card"></span>
+                <span>ID-kaart</span>
+            </a>
+            <a href="/login/oidc/TARA_MOBILE_ID" class="login-method" rel="nofollow">
+                <span class="mobile-id"></span>
+                <span>Mobiil-ID</span>
+            </a>
+            <a href="/login/oidc/TARA_SMART_ID" class="login-method" rel="nofollow">
+                <span class="smart-id"></span>
+                <span>Smart-ID</span>
+            </a>
+            <a href="/login/oidc/TARA_EIDAS" class="login-method" id="TkAuthEuCitizenLogin" rel="nofollow">
+                <span class="eidas"></span>
+                <span>EU citizen</span>
+            </a>
+            <a href="/login/password" class="login-method" id="TkLoginPasswordLogin" rel="nofollow">
+                <span class="password"></span>
+                <span>Parool</span>
+            </a>
+        </div>
+
+        <a id="MoreInfoId" href="https://www.id.ee/index.php?id=35803" target="_blank">
+            Abi id.ee-st        </a>
+        <div class="clear"></div>
+    </div>
+
+    <div class="more-info inline" id="MoreAboutTK">
+        
+<h2>Mis on e-töötukassa?</h2>
+
+<p>Eesti Töötukassa veebilehel on nii tööotsijatele kui tööandjatele loodud võimalused suhelda töötukassaga mugavalt ja paberivabalt.<br />
+<br />
+Iseteeninduse kasutamiseks ei pea olema töötukassas arvele võetud töötu või tööotsijana.<br />
+<br />
+E-teenuste kasutamiseks on vajalik Teie tuvastamine kasutajana – see tähendab, et Teil tuleb ID-kaardi, Smart-ID, mobiil-ID või parooliga&nbsp;e-teenindusse&nbsp;sisse logida. Parool on mõeldud kasutamiseks ainult eraisikuna&nbsp;ja selle&nbsp;loomiseks peate esmalt sisenema e-töötukassasse Mobiil-ID, Smart-ID või ID-kaardiga või paluma töötukassa töötajal (nt oma nõustajal) saata endale parooli loomise link.&nbsp;<br />
+<br />
+Iseteenindusse sisselogimata saab töötukassa veebilehel:</p>
+
+<ul>
+	<li>otsida tööpakkumisi: <a href="https://tootukassa.ee/toopakkumised" target="_blank">tööpakkumised</a></li>
+	<li>leitud tööpakkumisi endale või sõbrale e-postiga edasi saata</li>
+	<li>otsida Töötukassa koolituskaardi partnereid ja nende koolitusi: <a href="https://tootukassa.ee/koolitused" target="_blank">koolitused</a></li>
+</ul>
+
+<ul role="group" class="actions01">
+    <li>
+        <a role="button" href="/iseteenindus/eraisikule" class="blue open-dialog">
+            Teenused eraisikule        </a>
+    </li>
+    <li>
+        <a role="button" href="/iseteenindus/ettevottele" class="blue open-dialog">
+            Teenused ettevõttele        </a>
+    </li>
+</ul>
+    </div>
+</div>
+</div>                            </div>
+        </div>
+        <!-- content end -->
+                      <div class="region region-ad-region ad01">
+    <div id="block-block-3" class="block block-block box01">
+
+    
+  <div class="content">
+    <p> </p>
+
+<table><tbody><tr><td><a class="notExternal" href="https://www.tripod.ee/invite/1af7da82f995b679cab580fd69e525e7" target="_blank"><img alt="Bännerile klikates jõuate Tripodi kutsetesti tegemise lehele" src="/sites/tootukassa.ee/files/tripod_banner_est_1.png" /></a></td>
+			<td><a class="notExternal" href="/content/toota-ja-opi"><img alt="Bännerile klõpsates jõuate tööta ja õpi veebilehele" src="/sites/tootukassa.ee/files/tootajaopi_sinine_3_png.png" /></a></td>
+			<td><a class="notExternal" href="http://www.minukarjaar.ee" target="_blank"><img alt="Bännerile klõpsates jõuate Minukarjäär veebilehele" src="/sites/tootukassa.ee/files/uus_valge_logo.png" /></a></td>
+			<td><a class="notExternal" href="/content/k%C3%BCsi-karj%C3%A4%C3%A4rin%C3%B5ustajalt"><img alt="Bänner viib veebivormile, kus saate esitada küsimuse töötukassa karjäärispetsialistile" src="/sites/tootukassa.ee/files/kusige-karjaarispetsialistilt.png" style="width:180px;height:60px;" /></a></td>
+			<td> </td>
+		</tr></tbody></table>
+
+<p> </p>
+  </div>
+</div>
+  </div>
+                            <div class="footer01">
+                <div class="box01 clear">
+                    <div class="footer01a">
+                        <div class="col">
+
+
+<div id="block-block-10" class="block block-block">
+        <h2>Üldist</h2>
+      <ul><li><a href="/content/eesti-tootukassa-kodulehe-kasutustingimused">Kasutustingimused</a></li>
+	<li><a href="/content/tootukassast/eesti-tootukassa-andmekaitsetingimused">Andmekaitsetingimused</a></li>
+</ul></div></div>
+                        <div class="col">
+
+
+<div id="block-block-11" class="block block-block">
+        <h2>Partneritele</h2>
+      <ul><li><a href="/content/ettevotjale-ja-koostoopartnerile/koostoovoimalused">Koostöövõimalused</a></li>
+	<li><a href="/content/tootukassast/statistika-ja-uuringud">Statistika ja uuringud</a></li>
+	<li><a href="/content/tootukassast/teabenoue-0">Teabenõue</a></li>
+</ul></div></div>
+                        <div class="col">
+
+
+<div id="block-block-12" class="block block-block">
+        <h2>Kontaktid</h2>
+      <p><a href="/kontaktid">Töötukassa bürood</a></p>
+
+<address>E-post: <span class="spamspan"><span class="u">info</span> [ä] <span class="d">tootukassa<span class="t"> [dot] </span>ee</span></span><br /><em>Töötukassa e-posti aadressidele saab saata maksimaalselt 10 MB mahuga e-kirju.</em></address>
+
+<p>Skype: <a href="skype:tootukassa">tootukassa</a></p>
+
+<p>Infotelefon: <strong>15501; </strong>669 6513<br />
+(E-N 8.30-16.45; R 8.30-15.30, kuu viimasel reedel 8.30-12.30)</p>
+</div></div>
+                    </div>
+                    <div class="col footer01b"></div>
+                </div>
+            </div>
+            </div>
+</div>
+
+<div id="dialogContainer" style="display: none;"></div>
+
+
+
+
+<div id="block-tkhelpdesk-helpdesk" class="block block-tkhelpdesk">
+        
+	<script language="JavaScript" src="https://teenused.elion.ee/js/chatloader.js"></script>
+	<ul role="group" class="actions01 hidden-in-printing">
+		<li>
+            <a class="chat-bubble main" id="helpdesk" onclick="openChat('9D50F804-2EDB-40DD-B5E2-57AD71E37611')">
+                Küsi siit            </a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function euCookieComplianceLoadScripts() {}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "eu-cookie-compliance-tootukassa";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.tootukassa.ee/sites/all/modules/eu_cookie_compliance/js/eu_cookie_compliance.js?qnhbyp"></script>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    (function() {
+        var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+        sz.src = '//siteimproveanalytics.com/js/siteanalyze_6168205.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+    })();
+    /*]]>*/
+</script>
+
+</body>
+</html>

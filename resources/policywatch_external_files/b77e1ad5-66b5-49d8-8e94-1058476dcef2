@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>
+	CASSACOLF - NUOVE PRESTAZIONI CASSACOLF COVID-19
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><link href="../../css/generale.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Social -->    
+    <script type="text/javascript" src="/script/addthis_widget.js"></script>
+    
+	<!-- JQuery Lightbox -->
+	<script src="/script/jquery.lightbox-0.5.js" type="text/javascript"></script>
+	<script src="/script/lightbox-elemento.js" type="text/javascript"></script>
+
+    <!-- KendoUI -->
+    <link rel="stylesheet" type="text/css" href="/css/kendo.common.min.css" /><link rel="stylesheet" type="text/css" href="/css/kendo.silver.min.css" />
+    <script type="text/javascript" src="/script/kendo.web.min.js"></script>
+    <script type="text/javascript" src="/script/generico.js"></script>
+    
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:200,400,700" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+	  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css" />
+	<![endif]--> 
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-31476421-1', 'auto');
+		  ga('set', 'anonymizeIp', true);
+		  ga('send', 'pageview');
+		  
+	</script>
+
+	<!-- cookiesDirective -->
+	<script type="text/javascript" src="/script/jquery.cookiesdirective.js"></script>
+	<script type="text/javascript">
+	// Using $(document).ready never hurts
+	jQuery(document).ready(function(){
+		// Cookie setting script wrapper
+		var cookieScripts = function () {
+			// Loading external javascript file
+			jQuery.cookiesDirective.loadScript({
+				uri:'/script/analytics.js',
+				appendTo: 'head'
+			});
+            
+		}		
+		jQuery.cookiesDirective({
+		    explicitConsent: false,
+			privacyPolicyUri: '/11/11/informativa-cookie',
+			scriptWrapper: cookieScripts
+		});
+	});
+	</script>
+	<style type="text/css">			
+		.button-cookies
+		{
+			color: #fff !important;
+			background: #c31d20;
+			position: absolute; bottom: 10px; right: 0;
+			padding: 5px 10px !important;
+			font-size: 12px !important;
+			margin: 0;
+			border: 0;
+			width: auto;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+	</style>
+    
+    
+<link href="../../css/responsive.css" rel="stylesheet" type="text/css" /><meta name="title" content="CASSACOLF - NUOVE PRESTAZIONI CASSACOLF COVID-19" /><meta name="description" content="NUOVE PRESTAZIONI CASSACOLF COVID-19" /><meta name="keywords" content="keywords" /></head>
+<body>
+<div id="pagina">
+	
+	<div id="testata">
+		<a href="/"><img src="/images/cassacolf-logo.png" alt="cassacolf logo" class="logo" width="115" height="120" /></a>
+		<div id="payoff">
+			Informazioni e servizi<br />
+per <b>datori di lavoro</b><br />
+e <b>lavoratori</b><br />
+del <b>settore domestico</b>
+		</div>
+		
+		<div id="loghi">
+			
+            <a id="ctl00_ucBannerAssociazioni_rptBanner_ctl00_hlBanner" href="http://www.filcams.cgil.it/" target="_blank"><img src="http://www.cassacolf.it/userfiles/image/associazioni/cgil.png" alt="CGIL-Filcams" width="25" height="38" /></a>
+        
+            <a id="ctl00_ucBannerAssociazioni_rptBanner_ctl01_hlBanner" href="http://www.fisascat.it/" target="_blank"><img src="http://www.cassacolf.it/userfiles/image/associazioni/cisl.png" alt="CISL-Fisascat" width="80" height="35" /></a>
+        
+            <a id="ctl00_ucBannerAssociazioni_rptBanner_ctl02_hlBanner" href="http://www.uiltucs.it/" target="_blank"><img src="http://www.cassacolf.it/userfiles/image/associazioni/uil.png" alt="UIL-TuCS" width="66" height="38" /></a>
+        
+            <a id="ctl00_ucBannerAssociazioni_rptBanner_ctl03_hlBanner" href="http://www.federcolf.it/" target="_blank"><img src="http://www.cassacolf.it/userfiles/image/associazioni/federcolf.png" alt="Federcolf" width="48" height="38" /></a>
+        
+            <a id="ctl00_ucBannerAssociazioni_rptBanner_ctl04_hlBanner" href="http://www.colfdomina.it/" target="_blank"><img src="http://www.cassacolf.it/userfiles/image/associazioni/domina-20.png" alt="" width="109" height="38" /></a>
+        
+            <a id="ctl00_ucBannerAssociazioni_rptBanner_ctl05_hlBanner" href="/12/12/fidaldo"><img src="http://www.cassacolf.it/userfiles/image/associazioni/fidaldo.png" alt="Fidaldo" /></a>
+        	
+
+
+		</div><!-- /loghi -->
+	    <!-- Addthis -->
+    	<div id="addthis">
+			<p>Condividi:</p>
+			<a class="aaddthis_button_facebook" title="Pubblica su Facebook"><img src="/images/social/facebook.png" alt="facebook" width="16" height="16" /></a>
+			<a class="aaddthis_button_twitter" title="Pubblica su Twitter"><img src="/images/social/twitter.png" alt="twitter" width="16" height="16" /></a>
+			<a class="aaddthis_button_linkedin" title="Segnala su Linkedin"><img src="/images/social/linkedin.png" alt="linkedin" width="16" height="16" /></a>
+			<a class="addthis_button_google_plusone_share" title="Pubblica su Google+"><img src="/images/social/google.png" alt="google" width="16" height="16" /></a>
+			<a class="aaddthis_button_email" title="Segnala ad un amico"><img src="/images/social/email.png" alt="email" width="16" height="16" /></a>
+    	</div><!-- /addthis -->
+	
+			<!--
+			<li><a href='/7/30/prestazioni/sei-un-datore-di-lavoro'>Sei datore di lavoro</a></li>
+			<li><a href='/7/29/prestazioni/sei-una-dipendente'>Sei dipendente</a></li>
+			-->
+	
+	</div><!-- /testata -->
+	
+	<div id="top"></div>
+	<div id="menu">
+		<ul>
+    		<li class="menu-respons">
+    			<a href="#" class="apri-menu"><img src="/images/icona-menu-responsive.png" alt="icona-menu-responsive" width="34" height="34" /></a>
+				<p><img src="/images/icona-menu-responsive-chiudi.png" alt="icona-menu-responsive" width="34" height="34" /></p>
+    		</li>
+			<li><a href='/'>Home</a></li>
+            
+    <li>
+        <a id="ctl00_ucMenuSezioni_rptMenuSezione_ctl00_hlLinkSez1" title="Link alla sezione Chi siamo" class="" href="/1/1/chi-siamo">Chi siamo</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioni_rptMenuSezione_ctl01_hlLinkSez1" title="Link alla sezione Regolamento" class="" href="/4/4/regolamento">Regolamento</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioni_rptMenuSezione_ctl02_hlLinkSez1" title="Link alla sezione CCNL" class="" href="/13/13/ccnl">CCNL</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioni_rptMenuSezione_ctl03_hlLinkSez1" title="Link alla sezione Prestazioni" class="" href="/6/6/prestazioni">Prestazioni</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioni_rptMenuSezione_ctl04_hlLinkSez1" title="Link alla sezione Versamenti" class="" href="/7/7/versamenti">Versamenti</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioni_rptMenuSezione_ctl05_hlLinkSez1" title="Link alla sezione Contatti" class="" href="/8/8/contatti">Contatti</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioni_rptMenuSezione_ctl06_hlLinkSez1" title="Link alla sezione FAQ" class="" href="/9/9/faq">FAQ</a>
+    </li>
+    	
+
+            <li class="accedi"><a href='https://riservata.cassacolf.it/'><b>Accedi</b>/Registrati</a></li>
+            <li class="scuro"><a href='/5/5/tutta-la-modulistica-di-cassacolf'>Modulistica</a></li>
+            <!--
+					<form method="get" action="/cerca-nel-sito">
+					<input type="text" name="Terms" id="fdse_Terms" class="input-search" value="Cerca..." onfocus="this.value='';" onblur  = "if(this.value == '') this.value = 'Cerca...' "/>
+						<input type="submit" name="submit" value="" class="button-search" />
+						<script type="text/javascript">   	
+						   	$('#fdse_Terms').focus(function() {  
+						        $(this).animate({"width": 345}, "slow");  
+							});   	
+						   	$('#fdse_Terms').blur(function() {  
+						        $(this).animate({"width": 100}, "slow");  
+							});
+						</script>
+						<script type="text/javascript">   	
+						   	$('#fdse_Terms').focus(function() {  
+						        $('#menu ul li a').animate({"padding-left": 8, "padding-right": 8}, "slow"); 
+							});  	
+						   	$('#fdse_Terms').blur(function() {  
+						        $('#menu ul li a').animate({"padding-left": 15, "padding-right": 15}, "slow"); 
+							});
+						</script>
+					</form>
+			-->
+		</ul>
+	</div><!-- /menu-top -->
+    <ul class="menu-resp">
+		
+    <li>
+        <a id="ctl00_ucMenuSezioniResp_rptMenuSezione_ctl00_hlLinkSez1" title="Link alla sezione Chi siamo" class="" href="/1/1/chi-siamo">Chi siamo</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniResp_rptMenuSezione_ctl01_hlLinkSez1" title="Link alla sezione Regolamento" class="" href="/4/4/regolamento">Regolamento</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniResp_rptMenuSezione_ctl02_hlLinkSez1" title="Link alla sezione CCNL" class="" href="/13/13/ccnl">CCNL</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniResp_rptMenuSezione_ctl03_hlLinkSez1" title="Link alla sezione Prestazioni" class="" href="/6/6/prestazioni">Prestazioni</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniResp_rptMenuSezione_ctl04_hlLinkSez1" title="Link alla sezione Versamenti" class="" href="/7/7/versamenti">Versamenti</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniResp_rptMenuSezione_ctl05_hlLinkSez1" title="Link alla sezione Contatti" class="" href="/8/8/contatti">Contatti</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniResp_rptMenuSezione_ctl06_hlLinkSez1" title="Link alla sezione FAQ" class="" href="/9/9/faq">FAQ</a>
+    </li>
+    	
+
+		<li><a href="/5/5/tutta-la-modulistica-di-cassacolf">Modulistica</a></li>
+		<li><a href="https://riservata.cassacolf.it/">Accedi/Registrati</a></li>
+    </ul>
+    <script src="/script/menu_responsive_impostazioni.js" type="text/javascript"></script>
+    
+    
+                                    
+    <form name="aspnetForm" method="post" action="./nuove-prestazioni-cassacolf-covid19" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU5MDkzNzM3Ng9kFgJmD2QWGAIDD2QWAmYPFgIeBFRleHQFeEluZm9ybWF6aW9uaSBlIHNlcnZpemk8YnIgLz4NCnBlciA8Yj5kYXRvcmkgZGkgbGF2b3JvPC9iPjxiciAvPg0KZSA8Yj5sYXZvcmF0b3JpPC9iPjxiciAvPg0KZGVsIDxiPnNldHRvcmUgZG9tZXN0aWNvPC9iPmQCBQ9kFgJmD2QWAmYPFgIeC18hSXRlbUNvdW50AgYWDGYPZBYCAgEPDxYEHgtOYXZpZ2F0ZVVybAUbaHR0cDovL3d3dy5maWxjYW1zLmNnaWwuaXQvHgZUYXJnZXQFBl9ibGFua2QWBmYPFgIfAAUMQ2dpbC1GaWxjYW1zZAIBDxYCHwAFdTxpbWcgc3JjPSJodHRwOi8vd3d3LmNhc3NhY29sZi5pdC91c2VyZmlsZXMvaW1hZ2UvYXNzb2NpYXppb25pL2NnaWwucG5nIiBhbHQ9IkNHSUwtRmlsY2FtcyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjM4IiAvPmQCAg8WAh8AZWQCAQ9kFgICAQ8PFgQfAgUXaHR0cDovL3d3dy5maXNhc2NhdC5pdC8fAwUGX2JsYW5rZBYGZg8WAh8ABQRDaXNsZAIBDxYCHwAFdjxpbWcgc3JjPSJodHRwOi8vd3d3LmNhc3NhY29sZi5pdC91c2VyZmlsZXMvaW1hZ2UvYXNzb2NpYXppb25pL2Npc2wucG5nIiBhbHQ9IkNJU0wtRmlzYXNjYXQiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzNSIgLz5kAgIPFgIfAGVkAgIPZBYCAgEPDxYEHwIFFmh0dHA6Ly93d3cudWlsdHVjcy5pdC8fAwUGX2JsYW5rZBYGZg8WAh8ABQNVaWxkAgEPFgIfAAVwPGltZyBzcmM9Imh0dHA6Ly93d3cuY2Fzc2Fjb2xmLml0L3VzZXJmaWxlcy9pbWFnZS9hc3NvY2lhemlvbmkvdWlsLnBuZyIgYWx0PSJVSUwtVHVDUyIgd2lkdGg9IjY2IiBoZWlnaHQ9IjM4IiAvPmQCAg8WAh8AZWQCAw9kFgICAQ8PFgQfAgUYaHR0cDovL3d3dy5mZWRlcmNvbGYuaXQvHwMFBl9ibGFua2QWBmYPFgIfAAUJRmVkZXJjb2xmZAIBDxYCHwAFdzxpbWcgc3JjPSJodHRwOi8vd3d3LmNhc3NhY29sZi5pdC91c2VyZmlsZXMvaW1hZ2UvYXNzb2NpYXppb25pL2ZlZGVyY29sZi5wbmciIGFsdD0iRmVkZXJjb2xmIiB3aWR0aD0iNDgiIGhlaWdodD0iMzgiIC8+ZAICDxYCHwBlZAIED2QWAgIBDw8WBB8CBRlodHRwOi8vd3d3LmNvbGZkb21pbmEuaXQvHwMFBl9ibGFua2QWBmYPFgIfAAUGRG9taW5hZAIBDxYCHwAFbzxpbWcgc3JjPSJodHRwOi8vd3d3LmNhc3NhY29sZi5pdC91c2VyZmlsZXMvaW1hZ2UvYXNzb2NpYXppb25pL2RvbWluYS0yMC5wbmciIGFsdD0iIiB3aWR0aD0iMTA5IiBoZWlnaHQ9IjM4IiAvPmQCAg8WAh8AZWQCBQ9kFgICAQ8PFgQfAgUOLzEyLzEyL2ZpZGFsZG8fA2VkFgZmDxYCHwAFB0ZpZGFsZG9kAgEPFgIfAAVcPGltZyBzcmM9Imh0dHA6Ly93d3cuY2Fzc2Fjb2xmLml0L3VzZXJmaWxlcy9pbWFnZS9hc3NvY2lhemlvbmkvZmlkYWxkby5wbmciIGFsdD0iRmlkYWxkbyIgLz5kAgIPFgIfAGVkAgcPFgIfAAVMPGEgaHJlZj0nLzcvMzAvcHJlc3Rhemlvbmkvc2VpLXVuLWRhdG9yZS1kaS1sYXZvcm8nPlNlaSBkYXRvcmUgZGkgbGF2b3JvPC9hPmQCCQ8WAh8ABUE8YSBocmVmPScvNy8yOS9wcmVzdGF6aW9uaS9zZWktdW5hLWRpcGVuZGVudGUnPlNlaSBkaXBlbmRlbnRlPC9hPmQCCw8WAh8ABRQ8YSBocmVmPScvJz5Ib21lPC9hPmQCDQ9kFgJmDxYCHwECBxYOZg9kFgICAQ8PFgQfAgUOLzEvMS9jaGktc2lhbW8eB1Rvb2xUaXAFG0xpbmsgYWxsYSBzZXppb25lIENoaSBzaWFtbxYCHgVjbGFzc2UWBGYPFgIfAAUJQ2hpIHNpYW1vZAIBDxYCHwAFEjxiciAvPjxiciAvPjxiciAvPmQCAQ9kFgICAQ8PFgQfAgUQLzQvNC9yZWdvbGFtZW50bx8EBR1MaW5rIGFsbGEgc2V6aW9uZSBSZWdvbGFtZW50bxYCHwVlFgRmDxYCHwAFC1JlZ29sYW1lbnRvZAIBDxYCHwAFEjxiciAvPjxiciAvPjxiciAvPmQCAg9kFgICAQ8PFgQfAgULLzEzLzEzL2NjbmwfBAUWTGluayBhbGxhIHNlemlvbmUgQ0NOTBYCHwVlFgRmDxYCHwAFBENDTkxkAgEPFgIfAGVkAgMPZBYCAgEPDxYEHwIFEC82LzYvcHJlc3RhemlvbmkfBAUdTGluayBhbGxhIHNlemlvbmUgUHJlc3RhemlvbmkWAh8FZRYEZg8WAh8ABQtQcmVzdGF6aW9uaWQCAQ8WAh8AZWQCBA9kFgICAQ8PFgQfAgUPLzcvNy92ZXJzYW1lbnRpHwQFHExpbmsgYWxsYSBzZXppb25lIFZlcnNhbWVudGkWAh8FZRYEZg8WAh8ABQpWZXJzYW1lbnRpZAIBDxYCHwBlZAIFD2QWAgIBDw8WBB8CBQ0vOC84L2NvbnRhdHRpHwQFGkxpbmsgYWxsYSBzZXppb25lIENvbnRhdHRpFgIfBWUWBGYPFgIfAAUIQ29udGF0dGlkAgEPFgIfAGVkAgYPZBYCAgEPDxYEHwIFCC85LzkvZmFxHwQFFUxpbmsgYWxsYSBzZXppb25lIEZBURYCHwVlFgRmDxYCHwAFA0ZBUWQCAQ8WAh8AZWQCDw8WAh8ABUY8YSBocmVmPSdodHRwczovL3Jpc2VydmF0YS5jYXNzYWNvbGYuaXQvJz48Yj5BY2NlZGk8L2I+L1JlZ2lzdHJhdGk8L2E+ZAIRDxYCHwAFQDxhIGhyZWY9Jy81LzUvdHV0dGEtbGEtbW9kdWxpc3RpY2EtZGktY2Fzc2Fjb2xmJz5Nb2R1bGlzdGljYTwvYT5kAhMPZBYCZg8WAh8BAgcWDmYPZBYCAgEPDxYEHwIFDi8xLzEvY2hpLXNpYW1vHwQFG0xpbmsgYWxsYSBzZXppb25lIENoaSBzaWFtbxYCHwVlFgRmDxYCHwAFCUNoaSBzaWFtb2QCAQ8WAh8ABRI8YnIgLz48YnIgLz48YnIgLz5kAgEPZBYCAgEPDxYEHwIFEC80LzQvcmVnb2xhbWVudG8fBAUdTGluayBhbGxhIHNlemlvbmUgUmVnb2xhbWVudG8WAh8FZRYEZg8WAh8ABQtSZWdvbGFtZW50b2QCAQ8WAh8ABRI8YnIgLz48YnIgLz48YnIgLz5kAgIPZBYCAgEPDxYEHwIFCy8xMy8xMy9jY25sHwQFFkxpbmsgYWxsYSBzZXppb25lIENDTkwWAh8FZRYEZg8WAh8ABQRDQ05MZAIBDxYCHwBlZAIDD2QWAgIBDw8WBB8CBRAvNi82L3ByZXN0YXppb25pHwQFHUxpbmsgYWxsYSBzZXppb25lIFByZXN0YXppb25pFgIfBWUWBGYPFgIfAAULUHJlc3RhemlvbmlkAgEPFgIfAGVkAgQPZBYCAgEPDxYEHwIFDy83LzcvdmVyc2FtZW50aR8EBRxMaW5rIGFsbGEgc2V6aW9uZSBWZXJzYW1lbnRpFgIfBWUWBGYPFgIfAAUKVmVyc2FtZW50aWQCAQ8WAh8AZWQCBQ9kFgICAQ8PFgQfAgUNLzgvOC9jb250YXR0aR8EBRpMaW5rIGFsbGEgc2V6aW9uZSBDb250YXR0aRYCHwVlFgRmDxYCHwAFCENvbnRhdHRpZAIBDxYCHwBlZAIGD2QWAgIBDw8WBB8CBQgvOS85L2ZhcR8EBRVMaW5rIGFsbGEgc2V6aW9uZSBGQVEWAh8FZRYEZg8WAh8ABQNGQVFkAgEPFgIfAGVkAhcPZBYGAgEPZBYEAgMPDxYEHwIFCC9ub3RpemllHwAFEEFyY2hpdmlvIE5vdGl6aWVkZAIFDxYCHwAFFE5VT1ZFIFBSRVNUQVpJT05JLi4uZAIDD2QWDgIBDxYCHwAFJE5VT1ZFIFBSRVNUQVpJT05JIENBU1NBQ09MRiBDT1ZJRC0xOWQCAw8WAh8ABQ0zMCBtYXJ6byAyMDIwZAIEDxYCHwAFDkluZm8gQ2Fzc2Fjb2xmZAIGDw8WAh4HVmlzaWJsZWhkFgICAQ8WAh8AZWQCCA8WAh8ABaxaQSBjYXVzYSBkZWxsYSBzaXR1YXppb25lIHNvY2lvLXNhbml0YXJpYSBkZWwgbm9zdHJvIHBhZXNlLCBsYSBDQVMuU0EuQ09MRiwgPGJyIC8+ZGkgY29tdW5lIGFjY29yZG8gdHJhIFBhcnRpIFNvY2lhbGksIGhhIHJlZGF0dG8gaWwgcHJlc2VudGUgZG9jdW1lbnRvIGFsIGZpbmUgZGkgYWl1dGFyZSBpIHN1b2kgaXNjcml0dGkgYSBmcm9udGVnZ2lhcmUgbCdlbWVyZ2VuemEgc2FuaXRhcmlhIENPVklELTE5LjxiciAvPiA8YnIgLz48c3Ryb25nPkFydC4gMSAoUFJFU1RBWklPTkkgUEVSIEkgUE9TSVRJVkkgQUwgQ09WSUQtMTkpPC9zdHJvbmc+PGJyIC8+TGEgQ0FTLlNBLkNPTEYgcHJvdnZlZGUgYSBjb3JyaXNwb25kZXJlIGFpIGRpcGVuZGVudGkgaXNjcml0dGk6PGJyIC8+LSBJbmRlbm5pdCZhZ3JhdmU7IEdpb3JuYWxpZXJhIGluIGNhc28gZGkgUmljb3Zlcm87PGJyIC8+LSBJbmRlbm5pdCZhZ3JhdmU7IEdpb3JuYWxpZXJhIGluIGNhc28gZGkgQ29udmFsZXNjZW56YTs8YnIgLz4tIEluZGVubml0JmFncmF2ZTsgcGVyIGZpZ2xpIGEgY2FyaWNvOzxiciAvPi0gUmltYm9yc28gcGVyIG1hdGVyaWFsZSBzYW5pdGFyaW8gcmlhYmlsaXRhdGl2bzs8YnIgLz4tIFJpbWJvcnNvIHBlciB2aXNpdGUgZG9taWNpbGlhcmkuIDxiciAvPklsIHR1dHRvIGNvbWUgcXVpIGRpIHNlZ3VpdG8gc3BlY2lmaWNhdG86PGJyIC8+PGVtPjEuMS48L2VtPiBMYSBDQVMuU0EuQ09MRiwgaW4gY29sbGFib3JhemlvbmUgY29uIFVuaVNhbHV0ZSwgaW4gY2FzbyBkaSByaWNvdmVybyBjb24gcGVybm90dGFtZW50byBpbiBzdHJ1dHR1cmUgb3NwZWRhbGllcmUsIHJpY29ub3NjZSBhbCBsYXZvcmF0b3JlIGlzY3JpdHRvIGxhIGNvcnJlc3BvbnNpb25lIGRpIHVuJ2luZGVubml0JmFncmF2ZTsgZGkgJmV1cm87IDQwLDAwIHBlciBvZ25pIG5vdHRlIGRpIHJpY292ZXJvIHBlciB1biBwZXJpb2RvIG5vbiBzdXBlcmlvcmUgYSA1MCBnaW9ybmkgYW5udWkuIDxiciAvPjxlbT4xLjIuPC9lbT4gTGEgQ0FTLlNBLkNPTEYsIGluIGNvbGxhYm9yYXppb25lIGNvbiBVbmlTYWx1dGUsIHNlY29uZG8gbGUgcHJlc2NyaXppb25pIGRlaSBzYW5pdGFyaSBlIGNvbiBhdHR1YXppb25lIGRlbGxlIGRpc3Bvc2l6aW9uaSBpbiBlc3NvIGNvbnRlbnV0ZSwgcXVhbG9yYSBzaSByZW5kYSBuZWNlc3NhcmlvIHVuIHBlcmlvZG8gZGkgaXNvbGFtZW50byBkb21pY2lsaWFyZSwgZXJvZ2EgYWwgbGF2b3JhdG9yZSB1bidpbmRlbm5pdCZhZ3JhdmU7IGRpICZldXJvOyA0MCwwMCBhbCBnaW9ybm8gcGVyIHVuIHBlcmlvZG8gbm9uIHN1cGVyaW9yZSBhIDE0IGdpb3JuaSBhbm51aS4gPGJyIC8+TGEgZGlhcmlhIGdpb3JuYWxpZXJhIHBlciBpc29sYW1lbnRvIGRvbWljaWxpYXJlIHZlcnImYWdyYXZlOyBjb3JyaXNwb3N0YSBhbmNoZSBxdWFsb3JhIGwnaXNjcml0dG8gbm9uIGFiYmlhIHN1Yml0byB1biByaWNvdmVyby48YnIgLz48ZW0+MS4zLjwvZW0+IExhIENBUy5TQS5DT0xGLCBpbiBhZ2dpdW50YSBhbCBwdW50byAxLjEuIGUgYWwgcHVudG8gMS4yLiwgcmljb25vc2NlIHVuYSBkaWFyaWEgZ2lvcm5hbGllcmEgZGkgJmV1cm87IDQwIHBlciB1biBwZXJpb2RvIG5vbiBzdXBlcmlvcmUgYSAxNCBnaW9ybmkgYW5udWksIHBlciBpIGxhdm9yYXRvcmkgY2hlIGFiYmlhbm8gYWxtZW5vIHVuIGZpZ2xpbyBtaW5vcmVubmUgYW5hZ3JhZmljYW1lbnRlIGNvbnZpdmVudGUgcmlzdWx0YW50ZSBkYWxsbyBzdGF0byBkaSBmYW1pZ2xpYS48YnIgLz48ZW0+MS40LjwvZW0+IExhIENBUy5TQS5DT0xGLCByaW1ib3JzYSB0dXR0aSBpIG1hdGVyaWFsaSBzYW5pdGFyaSB1dGlsaXp6YXRpIHBlciBpbCBwZXJpb2RvIGRpIGN1cmEgZG9taWNpbGlhcmUgKGZhcm1hY2ksIGJvbWJvbGUgZGkgb3NzaWdlbm8gZSBzYXR1cmltZXRybyksIGEgc2VndWl0byBkaSBwcmVzZW50YXppb25lIGRpIGFwcG9zaXRhIGRvY3VtZW50YXppb25lIGNvbXByb3ZhbnRlIGwnYWNxdWlzdG8gZGVsIG1hdGVyaWFsZSBlIGxhIHByZXNjcml6aW9uZSBkZWwgbWVkaWNvIGN1cmFudGUuPGJyIC8+TGEgZGlzcG9uaWJpbGl0JmFncmF2ZTsgdW5hIHRhbnR1bSBwZXIgbGEgcHJlc2VudGUgZ2FyYW56aWEgJmVncmF2ZTsgZGkgJmV1cm87IDIwMCwwMCBwZXIgaXNjcml0dG8uPGJyIC8+PGVtPjEuNS48L2VtPiBJbiBjYXNvIGRpIHZpc2l0ZSBkb21pY2lsaWFyaSBvIGV4dHJhZG9taWNpbGlhcmkgZGEgcGFydGUgZGkgcGVyc29uYWxlIG1lZGljbyBvIGluZmVybWllcmlzdGljbyBwZXIgaW50ZXJ2ZW50aSByZXNpIG5lY2Vzc2FyaSBwZXIgY29udHJhc3RhcmUgbCdlcGlkZW1pYSwgbGEgQ0FTLlNBLkNPTEYgcmljb25vc2NlIGFsIGxhdm9yYXRvcmUsIGluIGFnZ2l1bnRhIGFsbGEgcHJlc3RhemlvbmUgZGVsbGUgdmlzaXRlIHNwZWNpYWxpc3RpY2hlIGRpIGN1aSBhbGwnYXJ0LiA3LjQuLCB1biByaW1ib3JzbyBlbnRybyBpbCBsaW1pdGUgY29tcGxlc3Npdm8gZGkgMTAwLDAwIGV1cm8gYW5udWkgc2lhIGVyb2dhdGUgZGFsIHNlcnZpemlvIHNhbml0YXJpbyBuYXppb25hbGUgY2hlIGRhIHByaXZhdGkuPGJyIC8+PGJyIC8+RE9DVU1FTlRJIE1FRElDSSBORUNFU1NBUkkgUEVSIExBIFJJQ0hJRVNUQSBERUxMJ0FSVC4xOjxiciAvPlBlciBsJ2F0dGl2YXppb25lIGRlbGxlIGdhcmFuemllICZlZ3JhdmU7IG5lY2Vzc2FyaW8gaWwgcmVmZXJ0byBkZWwgdGFtcG9uZSBjaGUgYXR0ZXN0aSBsYSBwb3NpdGl2aXQmYWdyYXZlOyBhbCB2aXJ1cyBDT1ZJRC0xOSwgcmlsYXNjaWF0byBkYWxsZSBBdXRvcml0JmFncmF2ZTsgY29tcGV0ZW50aSBzdSBjb25mZXJtYSBkZWwgTWluaXN0ZXJvIGRlbGxhIFNhbHV0ZSBlL28gZGVsbCdJc3RpdHV0byBTdXBlcmlvcmUgZGkgU2FuaXQmYWdyYXZlOyBlIGxhIGRpY2hpYXJhemlvbmUgc29zdGl0dXRpdmEgZGVsbG8gc3RhdG8gZGkgZmFtaWdsaWEgYWxsZWdhdGEgYWwgcHJlc2VudGUgdmVyYmFsZSAoQWxsZWdhdG8gQSkgc29sbyBwZXIgbGEgcHJlc3RhemlvbmUgQXJ0LjEuMy4gZSBpbCBtb2R1bG8gcmljaGllc3RhIHByZXN0YXppb25pIGNvdmlkLTE5IChBbGxlZ2F0byBCKSBjb21waWxhdG8gbmVpIGNhbXBpIHBlciBpIHF1YWxpIHNpIGludGVuZGUgcmljaGllZGVyZSBsYSBwcmVzdGF6aW9uZS48YnIgLz48YnIgLz48c3Ryb25nPkFydC4gMiAoUFJFU1RBWklPTkkgREkgUFJFVkVOWklPTkUgUEVSIFNPU1BFVFRPIENPVklELTE5KTwvc3Ryb25nPjxiciAvPjxlbT4yLjEuPC9lbT4gTGEgQ0FTLlNBLkNPTEYsIHF1YWxvcmEgYWwgbGF2b3JhdG9yZSB2ZW5nYSBhc3NlZ25hdG8gdW4gcHJvdnZlZGltZW50byAoY2VydGlmaWNhdG8gbWVkaWNvKSBwZXIgdW4gcGVyaW9kbyBkaSBxdWFyYW50ZW5hIGNvbiBzb3J2ZWdsaWFuemEgYXR0aXZhIG8gaW4gcGVybWFuZW56YSBkb21pY2lsaWFyZSwgdmllbmUgcmljb25vc2NpdXRhIHVuYSBkaWFyaWEgZGkgJmV1cm87IDQwIGFsIGdpb3JubyBmaW5vIGFkIHVuIG1hc3NpbW8gZGkgMTQgZ2lvcm5pIGFubnVpLiA8YnIgLz48YnIgLz5ET0NVTUVOVEkgTUVESUNJIE5FQ0VTU0FSSSBQRVIgTEEgUklDSElFU1RBIERFTEwnQVJULjI6PGJyIC8+UGVyIGF2ZXJlIGRpcml0dG8gYWxsYSBwcmVzdGF6aW9uZSwgaWwgbGF2b3JhdG9yZSBkb3ZyJmFncmF2ZTsgaW52aWFyZSBhIENBU1NBQ09MRiBpbCBjZXJ0aWZpY2F0byBjb24gZ2xpIGVzdHJlbWkgZGVsIHByb3Z2ZWRpbWVudG8gZSBpbCBtb2R1bG8gcmljaGllc3RhIHByZXN0YXppb25pIGNvdmlkLTE5IChBbGxlZ2F0byBCKSBjb21waWxhdG8gbmVpIGNhbXBpIHBlciBpIHF1YWxpIHNpIGludGVuZGUgcmljaGllZGVyZSBsYSBwcmVzdGF6aW9uZS4gPGJyIC8+PGJyIC8+PGJyIC8+PHN0cm9uZz5BcnQuMyAoUFJFU1RBWklPTkUgREkgR0VOSVRPUklBTElUJkFncmF2ZTspPC9zdHJvbmc+PGJyIC8+UFJFU1RBWklPTkkgUkVTRSBBIExBVk9SQVRSSUNJIEUgTEFWT1JBVE9SSSBDT04gRklHTEkgSU4gU0lUVUFaSU9OSSBESSBESVNBR0lPIFBFUiBFTUVSR0VOWkEgQ09WSUQtMTk8YnIgLz5MYSBDQVMuU0EuQ09MRiwgcmltYm9yc2EgZmlubyBhICZldXJvOyAyMDAsMDAgdW5hIHRhbnR1bTo8YnIgLz48ZW0+My4xLjwvZW0+IExlIHNwZXNlIHNvc3RlbnV0ZSBwZXIgZmluYWxpdCZhZ3JhdmU7IGRpIGlzdHJ1emlvbmUsIHNjb2xhc3RpY2EgbyBwZXIgc2Vydml6aSBkaSBiYWJ5IHNpdHRpbmcsIHBlciBmaWdsaSBhIGNhcmljbyBvIGNvbnZpdmVudGksIGZpbm8gYWwgY29tcGltZW50byBkZWwgcXVpbnRvIGFubm8gZGkgZXQmYWdyYXZlOywgaXNjcml0dGkgYWxsJ2FzaWxvIG8gYWxsYSBzY3VvbGEgZGVsbCdpbmZhbnppYSwgbyBvc3BpdGF0aSBkYSBjZW50cmkgZGl1cm5pIGEgY2FyYXR0ZXJlIGFzc2lzdGVuemlhbGU7PGJyIC8+PGVtPjMuMi48L2VtPsKgTGUgc3Blc2Ugc29zdGVudXRlIHBlciBsJ2Fzc2lzdGVuemEgZG9taWNpbGlhcmUgYWkgZmlnbGkgYSBjYXJpY28gbyBjb252aXZlbnRpLCBjaGUgc2lhbm8gaW4gY29uZGl6aW9uZSBkaSBub24gYXV0b3N1ZmZpY2llbnphLCBmaW5vIGFsIGNvbXBpbWVudG8gZGVsIGRpY2lvdHRlc2ltbyBhbm5vIGRpIGV0JmFncmF2ZTs7IDxiciAvPjxlbT4zLjMuPC9lbT7CoFBlciBib251cyBzcGVzYSwgZSBjaW8mZWdyYXZlOywgZm9ybml0dXJhIGRpIHByb2RvdHRpIGFsaW1lbnRhcmkgb3Z2ZXJvIHJpbWJvcnNvIGRlbGxlIHNwZXNlIHNvc3RlbnV0ZSBwZXIgbGUgbmVjZXNzaXQmYWdyYXZlOyBkaSBhbGltZW50YXJlIGkgZmlnbGkgZmlubyBhbCBjb21waW1lbnRvIGRlbCBkaWNpb3R0ZXNpbW8gYW5ubyBkaSBldCZhZ3JhdmU7IGEgY2FyaWNvIG8gY29udml2ZW50aS48YnIgLz48YnIgLz5MZSBwcmVzdGF6aW9uaSBkaSBjdWkgYWkgcHVudGkgMy4xLiwgMy4yLiBlIDMuMy4gc29ubyBjdW11bGFiaWxpIGZpbm8gYWxsYSBjb25jb3JyZW56YSBkZWwgbWFzc2ltYWxlIGRpICZldXJvOyAyMDAsMDAgY29tcGxlc3NpdmkuPGJyIC8+PGJyIC8+RE9DVU1FTlRJIE1FRElDSSBORUNFU1NBUkkgUEVSIExBIFJJQ0hJRVNUQSBERUxMJ0FSVC4zOjxiciAvPlBlciBhdmVyZSBkaXJpdHRvIGFsbGUgcHJlc3RhemlvbmksIGlsIGxhdm9yYXRvcmUgZG92ciZhZ3JhdmU7IGludmlhcmUgYSBDQVNTQUNPTEYgbGEgZGljaGlhcmF6aW9uZSBzb3N0aXR1dGl2YSBkZWxsbyBzdGF0byBkaSBmYW1pZ2xpYSBhbGxlZ2F0YSBhbCBwcmVzZW50ZSB2ZXJiYWxlIChBbGxlZ2F0byBBKSBlIGlsIG1vZHVsbyByaWNoaWVzdGEgcHJlc3RhemlvbmkgY292aWQtMTkgKEFsbGVnYXRvIEIpIGNvbXBpbGF0byBuZWkgY2FtcGkgcGVyIGkgcXVhbGkgc2kgaW50ZW5kZSByaWNoaWVkZXJlIGxhIHByZXN0YXppb25lLiA8YnIgLz48YnIgLz48c3Ryb25nPkFydC40IChQUkVTVEFaSU9OSSBQU0lDT0xPR0lDSEUgRSBQU0lDT1RFUkFQRVVUSUNIRSk8L3N0cm9uZz48YnIgLz5MYSBDQVMuU0EuQ09MRiwgcmltYm9yc2VyJmFncmF2ZTsgdW4gbWFzc2ltbyBkaSAmZXVybzsgNDAwLDAwIHBlciBwZXJzb25hIGUgcGVyIGFubm8sIGEgc2VndWl0byBkaSBwcmVzZW50YXppb25lIGRpIGRvY3VtZW50YXppb25lIGNvbXByb3ZhbnRlIGxhIGZyZXF1ZW50YXppb25lIGRpIHNlZHV0ZSBwcmVzc28gdW5vIHBzaWNvbG9nbyBvIHByZXNzbyB1bm8gcHNpY290ZXJhcGV1dGEgcmVnb2xhcm1lbnRlIGlzY3JpdHRpIGFsbCdhbGJvLjxiciAvPjxiciAvPkRPQ1VNRU5USSBNRURJQ0kgTkVDRVNTQVJJIFBFUiBMQSBSSUNISUVTVEEgREVMTCdBUlQuNDo8YnIgLz5QZXIgYXZlcmUgZGlyaXR0byBhbGxhIHByZXN0YXppb25lLCBpbCBsYXZvcmF0b3JlIGRvdnImYWdyYXZlOyBpbnZpYXJlIGEgQ0FTU0FDT0xGIGxlIGZhdHR1cmUgY29tcHJvdmFudGkgbGUgc2VkdXRlIGRpIHRlcmFwaWEgZWZmZXR0dWF0ZSwgaWwgbW9kdWxvIHJpY2hpZXN0YSBwcmVzdGF6aW9uaSBjb3ZpZC0xOSAoQWxsZWdhdG8gQikgY29tcGlsYXRvIG5laSBjYW1waSBwZXIgaSBxdWFsaSBzaSBpbnRlbmRlIHJpY2hpZWRlcmUgbGEgcHJlc3RhemlvbmUgZSBhIGxhIGRpY2hpYXJhemlvbmUgYXR0ZXN0YW50ZSBpbCByYXBwb3J0byBkaSBsYXZvcm8gaW4gcmVnaW1lIGRpIGNvbnZpdmVuemEgKEFsbGVnYXRvIEMpLjxiciAvPjxiciAvPjxzdHJvbmc+QXJ0LiA1IChQQVJFUkkgTUVESUNJIEUgQ09OU1VMVEkgSU4gVklERU8gQ09ORkVSRU5aQSk8L3N0cm9uZz48YnIgLz48ZW0+NS4xLjwvZW0+IFNFUlZJWklPIERJIFZJREVPIENPTlNVTFRPIE1FRElDTyBQRVIgRElBTE9HQVJFIEEgRElTVEFOWkEgQ09OIExPIFNQRUNJQUxJU1RBPGJyIC8+Q29uc2lkZXJhdGEgbGEgc29zcGVuc2lvbmUgZGkgZ3JhbiBwYXJ0ZSBkZWxsZSB2aXNpdGUgc3BlY2lhbGlzdGljaGUgcHJlc3NvIGxlIHVuaXQmYWdyYXZlOyBzYW5pdGFyaWUgbG9jYWxpIGUgbGEgY2hpdXN1cmEgZGkgbW9sdGkgcG9saWFtYnVsYXRvcmkgc3VsIHRlcnJpdG9yaW8sIFVuaVNhbHV0ZSBoYSBsYW5jaWF0byBpbCBudW92byBzZXJ2aXppbyBkaSB2aWRlbyBjb25zdWx0byBzcGVjaWFsaXN0aWNvIG5lbGxlIHZhcmllIGRpc2NpcGxpbmUgbWVkaWNoZS48YnIgLz5JbCB2aWRlbyBjb25zdWx0byBnYXJhbnRpc2NlIHVuIGNvbmZyb250byBkaXJldHRvIGNvbiBsbyBzcGVjaWFsaXN0YSBpbiB0dXR0aSBpIGNhc2kgaW4gY3VpIG5vbiBzaWEgbmVjZXNzYXJpbyB1biBjb250YXR0byBmaXNpY28sIGFkIGVzZW1waW8gcGVyIGNvbmRpdmlkZXJlIGkgcmlzdWx0YXRpIGRpIGVzYW1pIG8gcmVmZXJ0aSwgYXZlcmUgcmlzcG9zdGUgYSBkdWJiaSBlIGRvbWFuZGUgc3VsbGUgdGVyYXBpZSwgZGlhbG9nYXJlIGNvbiBpbCBtZWRpY28gcGVyIGV2ZW50dWFsaSBhcHByb2ZvbmRpbWVudGksIHNjYW1iaWFyc2kgZG9jdW1lbnRpLjxiciAvPkNvbWUgYWNjZWRlcmUgYWwgc2Vydml6aW88YnIgLz7igKIgQ29udGF0dGFyZSBsYSBDZW50cmFsZSBPcGVyYXRpdmEgVW5pU2FsdXRlIGFsIG51bWVybyB2ZXJkZSA4MDAgMDAgOTYgMzggcmljaGllZGVuZG8gbGEgcHJlbm90YXppb25lIGRpIHVuYSB2aXNpdGEgc3BlY2lhbGlzdGljYTs8YnIgLz7igKIgUmljZXZlcmUgdmlhIG1haWwgZGlyZXR0YW1lbnRlIGRhbGxhIHN0cnV0dHVyYSBzYW5pdGFyaWEgdW4gbGluayBkZWRpY2F0byBwZXIgaWwgY29udGF0dG8gdmlkZW8gY29uIHVuIG1lZGljbyBzcGVjaWFsaXN0YTs8YnIgLz7igKIgQ29sbGVnYXJzaSBhbCB2aWRlbyBjb25zdWx0byB0cmFtaXRlIGlsIGNvbXB1dGVyIG8gdHJhbWl0ZSBkZXZpY2UgbW9iaWxlLCBzbWFydHBob25lIGUgdGFibGV0ICgmZWdyYXZlOyBpbXBvcnRhbnRlIHV0aWxpenphcmUgaSBicm93c2VyIEdvb2dsZSBDaHJvbWUgbyBNb3ppbGxhIEZpcmVmb3gpLjxiciAvPkR1cmFudGUgbGEgdmlkZW8gY2hpYW1hdGEgcHVvaSBmYXJlIGFuY2hlIGwndXBsb2FkIGRpIHJlZmVydGkgZSBkb2N1bWVudGksIHRpZW5pbGkgYSBwb3J0YXRhIGRpIG1hbm8gaW4gZm9ybWF0byBkaWdpdGFsZSBwcmltYSBkZWwgY29sbGVnYW1lbnRvLjxiciAvPkFsbGEgZmluZSBkZWwgY29uc3VsdG8gbG8gc3BlY2lhbGlzdGEgcG90ciZhZ3JhdmU7IHJpbGFzY2lhcnRpIGFuY2hlIGxhIGNlcnRpZmljYXppb25lIG5lY2Vzc2FyaWEgcGVyIGwnYWNxdWlzdG8gZGVpIGZhcm1hY2kuPGJyIC8+SWwgc2Vydml6aW8gJmVncmF2ZTsgY29tcGxldGFtZW50ZSBncmF0dWl0byBlZCAmZWdyYXZlOyByaXZvbHRvIGVzY2x1c2l2YW1lbnRlIGFnbGkgSXNjcml0dGkgYSBDQVMuU0EuQ09MRi48YnIgLz48ZW0+NS4yLjwvZW0+IFNFUlZJWklPIERJIFRFTEVDT05TVUxUTyBNRURJQ08gQ09WSUQtMTkgSDI0PGJyIC8+SW4gY2FzbyBkaSBzaW50b21pIHNvc3BldHRpIChlcy4gZmViYnJlLCB0b3NzZSwgcHJvYmxlbWkgcmVzcGlyYXRvcmksIGVjYy4pLCBjaGlhbWFuZG8gaWwgbnVtZXJvIHZlcmRlIDgwMC0yMTI0NzcsIHB1b2kgcmljZXZlcmUgaW5mb3JtYXppb25pIGRhIHVuIHRlYW0gZGkgbWVkaWNpIGNoZSByaXNwb25kb25vIGgyNCBlIDcgZ2lvcm5pIHN1IDcgYWxsZSBjaGlhbWF0ZSBkaSBhc3Npc3RlbnphLiA8YnIgLz5JIG1lZGljaSwgZG9wbyB1bmEgYnJldmUgaW5kYWdpbmUgdGVsZWZvbmljYSBwZXIgY2FwaXJlIGlsIGxpdmVsbG8gZGkgZGlmZmljb2x0JmFncmF2ZTsgZSBkaSB1cmdlbnphLCBmb3JuaXJhbm5vIGFsIGNoaWFtYW50ZSBsZSBkb3Z1dGUgaW5mb3JtYXppb25pIGRlbCBjYXNvLjxiciAvPjxiciAvPjxzdHJvbmc+QXJ0LiA2IChDT05UUklCVVRJIFBFUiBBQ0NFU1NPIEFMTEUgUFJFU1RBWklPTkkpPC9zdHJvbmc+PGJyIC8+TGEgQ0FTLlNBLkNPTEYsIGFsIGZpbmUgZGkgZmF2b3JpcmUgbCdhY2Nlc3NvIGFsbGUgcHJlc3RhemlvbmksIGluIGRlcm9nYSBhbCByZWdvbGFtZW50byBhZCBvZ2dpIGluIGVzc2VyZSwgcmljaGllZGUgbGEgcHJlc2VudGF6aW9uZSBkaSBhbG1lbm8gMiB0cmltZXN0cmkgZGkgY29udHJpYnV6aW9uZSwgbGEgY3VpIHNvbW1hIG5vbiBkZXZlIGVzc2VyZSBpbmZlcmlvcmUgYWQgJmV1cm87IDguIDxiciAvPlNpIHByZWNpc2EgY2hlLCBlc3NlbmRvIHN0YXRvIHNvc3Blc28gaWwgcGFnYW1lbnRvIGRlaSBjb250cmlidXRpIGRpIGFzc2lzdGVuemEgY29udHJhdHR1YWxlLCB2ZXJyYW5ubyBhY2NldHRhdGkgaSB0cmltZXN0cmkgcHJlY2VkZW50aTsgbmVsbGEgZmF0dGlzcGVjaWUsIHZlcnJhbm5vIHByZXNpIGEgcmlmZXJpbWVudG8gc29sbyBkdWUgdHJpbWVzdHJpIGFkIGVzZW1waW8gaWwgM8KwIGVkIGlsIDTCsCB0cmltZXN0cmUgMjAxOSBtZWRpYW50ZSB2ZXJpZmljYSBkZWkgTUFWLjxiciAvPlBlciB0dXR0aSBnbGkgYWx0cmkgY3JpdGVyaSBpbmVyZW50aSBsYSByZWdvbGFyaXQmYWdyYXZlOyBjb250cmlidXRpdmEsIHZlcnJhbm5vIGFkb3R0YXRlIGxlIG5vcm1lIHZpZ2VudGkgZGVsIHJlZ29sYW1lbnRvIG9yZGluYXJpby7CoDxiciAvPjxiciAvPjxzdHJvbmc+QXJ0LiA3IChNT0RVTElTVElDQSk8L3N0cm9uZz4gPGJyIC8+UGVyIGxhIHJpY2hpZXN0YSBzaSBkZXZlIHV0aWxpenphcmUgbCdhcHBvc2l0byBzdGFtcGF0byAoTW9kdWxvIHBlciBwcmVzdGF6aW9uaSBDT1ZJRC0xOSkgaWwgY3VpIG1vZGVsbG8gJmVncmF2ZTsgYWxsZWdhdG8gYWwgcHJlc2VudGUgcmVnb2xhbWVudG8sIGNoZSBkZXZlIGVzc2VyZSBkZWJpdGFtZW50ZSBjb21waWxhdG8gaW4gb2duaSBzdWEgcGFydGUgZSBzb3R0b3Njcml0dG8gZGFsIGxhdm9yYXRvcmUuPGJyIC8+QSB0YWxlIHN0YW1wYXRvIGRldmUgZXNzZXJlIGFsbGVnYXRhIGxhIGRvY3VtZW50YXppb25lIHJpY2hpZXN0YSBzb3R0byBvZ25pIHByZXN0YXppb25lLjxiciAvPkxhIENBUy5TQS5DT0xGIGhhIGlsIGRpcml0dG8gZGkgcmljaGllZGVyZSBsYSBjYXJ0ZWxsYSBjbGluaWNhLCBub25jaCZlYWN1dGU7IGdsaSBvcmlnaW5hbGkgbyBsZSBjb3BpZSBhdXRlbnRpY2hlIGRlaSBkb2N1bWVudGkgcmljaGllc3RpLjxiciAvPjxiciAvPjxzdHJvbmc+QXJ0LiA4IChSSUNISUVTVEEgREVMTEUgUFJFU1RBWklPTkkpPC9zdHJvbmc+PGJyIC8+SSBsYXZvcmF0b3JpIGlzY3JpdHRpIGFsbGEgQ0FTLlNBLkNPTEYsIHBlciByaWNoaWVkZXJlIGxlIHByZXN0YXppb25pLCBkb3ZyYW5ubyBlZmZldHR1YXJlIGxlIGNvbXVuaWNhemlvbmkgYWxsYSBzdGVzc2Egc29sbyB0cmFtaXRlIGUtbWFpbCBhbGwnaW5kaXJpenpvIHByYXRpY2hlY292aWRAY2Fzc2Fjb2xmLml0IHBlciBpbmZvcm1hemlvbmkgY29udGF0dGFyZSBpbCBudW1lcm8gdmVyZGUgODAwIDEwMDAgMjYuPGJyIC8+PGJyIC8+PHN0cm9uZz5BcnQuIDkgKERFQ0FERU5aQSk8L3N0cm9uZz48YnIgLz5MYSByaWNoaWVzdGEsIGNvcnJlZGF0YSBkYWxsYSBkb2N1bWVudGF6aW9uZSBwcmV2aXN0YSwgZGV2ZSBlc3NlcmUgaW52aWF0YSBkYWwgTGF2b3JhdG9yZSBpc2NyaXR0byBhaSBzZW5zaSBkZWkgcHJlY2VkZW50aSBBcnRpY29saSBlbnRybyAxMiBtZXNpIGRhbGxhIGNvbmNsdXNpb25lIGRlbGwnZXZlbnRvIGEgcGVuYSBkaSBkZWNhZGVuemEuPGJyIC8+PGJyIC8+PHN0cm9uZz5BcnQuIDEwIChDT1JSRVNQT05TSU9ORSBERUxMQSBQUkVTVEFaSU9ORSk8L3N0cm9uZz48YnIgLz5JbCBwYWdhbWVudG8gZGVsbGUgcHJlc3RhemlvbmkgYXZ2ZXJyJmFncmF2ZTsgc29sbyBlZCBlc2NsdXNpdmFtZW50ZSBtZWRpYW50ZSBhY2NyZWRpdG8gKGJvbmlmaWNvKSBzdSBjL2MgYmFuY2FyaW8sIHBvc3RhbGUgbyBjYXJ0YSByaWNhcmljYWJpbGUgaW50ZXN0YXRvIGFsIHJpY2hpZWRlbnRlLjxiciAvPjxiciAvPjxzdHJvbmc+QXJ0LiAxMSAoTU9ESUZJQ0hFIEFMIFJFR09MQU1FTlRPKTwvc3Ryb25nPjxiciAvPkxhIHZhbGlkaXQmYWdyYXZlOyBkZWxsZSBkaXNwb3NpemlvbmkgY29udGVudXRlIG5lbGxhIHByZXNlbnRlIGludGVncmF6aW9uZSBhbCByZWdvbGFtZW50byB2ZXJyJmFncmF2ZTsgdmFsdXRhdGEgc3VsbGEgYmFzZSBkZWwgcXVhZHJvIHNhbml0YXJpbyBkZWwgbm9zdHJvIFBhZXNlIGUgcGVydGFudG8gc29ubyBkYSBpbnRlbmRlcnNpIHByb3Z2aXNvcmllIGUgbGVnYXRlIGFsIHBlcmlvZG8gZW1lcmdlbnppYWxlLiA8YnIgLz5GZXJtbyByZXN0YW5kbyBpbCBjb250aW51byBtb25pdG9yYWdnaW8gZGVpIGZsdXNzaSwgYSBnYXJhbnppYSBlIHR1dGVsYSBkaSB0dXR0aSBnbGkgSXNjcml0dGkgYWxsYSBDQVMuU0EuQ09MRiwgbGUgcHJlc3Rhemlvbmkgc2FyYW5ubyBhdHRpdmUgZmlubyBhbGxhIGRhdGEgZGVsIDMwIGdpdWdubyAyMDIxIGNvbiBldmVudHVhbGkgZSB1bHRlcmlvcmkgcHJvcm9naGUgaW4gcmVsYXppb25lIGFnbGkgYW5kYW1lbnRpIHRlY25pY2kgZSBhbGxlIHJpc29yc2UgZGlzcG9uaWJpbGkuPGJyIC8+PGJyIC8+PHN0cm9uZz5BcnQuIDEyIChSSVNPUlNFKTwvc3Ryb25nPjxiciAvPkxhIENBUy5TQS5DT0xGLCBlcm9nYSBsZSBwcmVzdGF6aW9uaSBwcmV2aXN0ZSBuZWxsYSBwcmVzZW50ZSBhcHBlbmRpY2UgYWwgcmVnb2xhbWVudG8gbmVsIGxpbWl0ZSBkZWxsZSByaXNvcnNlIGFsbG9jYXRlIHBhcmkgYWQgJmV1cm87IDYuMDAwLjAwMCwwMC48YnIgLz48YnIgLz48c3Ryb25nPkFydC4gMTMgKFBSSVZBQ1kpPC9zdHJvbmc+PGJyIC8+SWwgdHJhdHRhbWVudG8gZGVpIGRhdGkgcGVyc29uYWxpIGluZXJlbnRpIGkgc2Vydml6aSBkaSBjdWkgYWxsJ2FydC4gNSBzYXImYWdyYXZlOyBhIGN1cmEgZSBzb3R0byBsYSByZXNwb25zYWJpbGl0JmFncmF2ZTsgZGVsIHNvZ2dldHRvIGVyb2dhdG9yZSBkZWxsZSBjb3JyaXNwb25kZW50aSBwcmVzdGF6aW9uaSwgYWxsZSBjdWkgcG9saWN5IGluIG1hdGVyaWEgZGkgcHJpdmFjeSBzaWV0ZSBwZXJ0YW50byBwcmVnYXRpIGRpIGZhcmUgcmlmZXJpbWVudG8uPGJyIC8+PGJyIC8+PHN0cm9uZz5BcnQuIDE0IChFTlRSQVRBIElOIFZJR09SRSk8L3N0cm9uZz48YnIgLz5MYSBwcmVzZW50ZSBhcHBlbmRpY2UgYWwgcmVnb2xhbWVudG8gaGEgdmlnZW56YSBkYWwgMSBHZW5uYWlvIDIwMjAuPGJyIC8+PGJyIC8+PGJyIC8+Um9tYSwgMjIgQXByaWxlIDIwMjBkAgwPZBYCZg8WAh8GaBYCAgEPFgIfAWZkAg4PFgIfBmgWAmYPFgIfAWZkAgUPZBYCAgEPFgIfBmgWBAIBDxYCHwZoFgICAQ8QZA8WDWYCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwWDRAFDjxUdXR0aSBpIG1lc2k+BQEwZxAFB0dlbm5haW8FATFnEAUIRmViYnJhaW8FATJnEAUFTWFyem8FATNnEAUGQXByaWxlBQE0ZxAFBk1hZ2dpbwUBNWcQBQZHaXVnbm8FATZnEAUGTHVnbGlvBQE3ZxAFBkFnb3N0bwUBOGcQBQlTZXR0ZW1icmUFATlnEAUHT3R0b2JyZQUCMTBnEAUITm92ZW1icmUFAjExZxAFCERpY2VtYnJlBQIxMmcWAWZkAgMPEA8WBh4NRGF0YVRleHRGaWVsZAUEQW5ubx4ORGF0YVZhbHVlRmllbGQFBklEQW5ubx4LXyFEYXRhQm91bmRnZBAVCQQyMDExBDIwMTIEMjAxMwQyMDE0BDIwMTUEMjAxNgQyMDE3BDIwMTgEMjAxORUJATUBNgE3ATgBOQIxMAIxMQIxMgIxMxQrAwlnZ2dnZ2dnZ2cWAQIIZAIZD2QWAmYPFgIfAQIJFhJmD2QWAgIBDw8WBB8CBQ4vMS8xL2NoaS1zaWFtbx8EBRtMaW5rIGFsbGEgc2V6aW9uZSBDaGkgc2lhbW8WAh8FZRYEZg8WAh8ABQlDaGkgc2lhbW9kAgEPFgIfAAUSPGJyIC8+PGJyIC8+PGJyIC8+ZAIBD2QWAgIBDw8WBB8CBRAvNC80L3JlZ29sYW1lbnRvHwQFHUxpbmsgYWxsYSBzZXppb25lIFJlZ29sYW1lbnRvFgIfBWUWBGYPFgIfAAULUmVnb2xhbWVudG9kAgEPFgIfAAUSPGJyIC8+PGJyIC8+PGJyIC8+ZAICD2QWAgIBDw8WBB8CBQsvMTMvMTMvY2NubB8EBRZMaW5rIGFsbGEgc2V6aW9uZSBDQ05MFgIfBWUWBGYPFgIfAAUEQ0NOTGQCAQ8WAh8AZWQCAw9kFgICAQ8PFgQfAgUQLzYvNi9wcmVzdGF6aW9uaR8EBR1MaW5rIGFsbGEgc2V6aW9uZSBQcmVzdGF6aW9uaRYCHwVlFgRmDxYCHwAFC1ByZXN0YXppb25pZAIBDxYCHwBlZAIED2QWAgIBDw8WBB8CBRAvNS81L21vZHVsaXN0aWNhHwQFHUxpbmsgYWxsYSBzZXppb25lIE1vZHVsaXN0aWNhFgIfBWUWBGYPFgIfAAULTW9kdWxpc3RpY2FkAgEPFgIfAGVkAgUPZBYCAgEPDxYEHwIFDy83LzcvdmVyc2FtZW50aR8EBRxMaW5rIGFsbGEgc2V6aW9uZSBWZXJzYW1lbnRpFgIfBWUWBGYPFgIfAAUKVmVyc2FtZW50aWQCAQ8WAh8AZWQCBg9kFgICAQ8PFgQfAgUNLzgvOC9jb250YXR0aR8EBRpMaW5rIGFsbGEgc2V6aW9uZSBDb250YXR0aRYCHwVlFgRmDxYCHwAFCENvbnRhdHRpZAIBDxYCHwBlZAIHD2QWAgIBDw8WBB8CBQgvOS85L2ZhcR8EBRVMaW5rIGFsbGEgc2V6aW9uZSBGQVEWAh8FZRYEZg8WAh8ABQNGQVFkAgEPFgIfAGVkAggPZBYCAgEPDxYEHwIFEi8xMC8xMC9zdGF0aXN0aWNoZR8EBR1MaW5rIGFsbGEgc2V6aW9uZSBTdGF0aXN0aWNoZRYCHwVlFgRmDxYCHwAFC1N0YXRpc3RpY2hlZAIBDxYCHwBlZAIbD2QWAmYPFgIfAAXvAjxiPkNBUy5TQS5DT0xGPC9iPjxiciAvPgpWaWEgVGFnbGlhbWVudG8sIDI5IC0gMDAxOTggUk9NQTxiciAvPgpDLiBGLjogOTcyODc3NzA1ODY8YnIgLz4KVGVsOiAwNi04NTM1ODAzNCBvcHB1cmUgMDYtODUzNTgwNDg8YnIgLz4KRmF4OiAwNi04NTQ2NjQ3PGJyIC8+CjxhIGhyZWY9Im1haWx0bzppbmZvQGNhc3NhY29sZi5pdCI+aW5mb0BjYXNzYWNvbGYuaXQ8L2E+PGJyIC8+CjxhIGhyZWY9Im1haWx0bzpjYXNzYWNvbGZAbWVzc2FnZ2lwZWMuaXQiPmNhc3NhY29sZkBtZXNzYWdnaXBlYy5pdDwvYT48YnIgLz4KPGEgaHJlZj0ibWFpbHRvOnVmZmljaW9zdGFtcGFAY2Fzc2Fjb2xmLml0Ij51ZmZpY2lvc3RhbXBhQGNhc3NhY29sZi5pdDwvYT5kZPcAphPtoghinSagX+SoCFHqA0gAtcnkWD4DskbNae+Q" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5EBB6921" />
+    	<div id="corpo">
+                
+    		
+<div id="percorso">
+    <b><a id="ctl00_PercorsoContent_hlHomePage" href="../../">Home page</a></b> | <b><a id="ctl00_PercorsoContent_hlSecLiv" href="/notizie">Archivio Notizie</a></b> | Pagina corrente: <b>NUOVE PRESTAZIONI...</b>
+</div>
+
+            <div id="cl-sx">
+            	
+    <div id="tit-pg">
+	    <!-- Inizio Titolo e Descrizione Pagina --> 
+	    <h1>
+	        NUOVE PRESTAZIONI CASSACOLF COVID-19
+	    </h1>  
+    </div>
+
+    
+ 				
+    <div class="h4">
+
+	    
+	          
+	    A causa della situazione socio-sanitaria del nostro paese, la CAS.SA.COLF, <br />di comune accordo tra Parti Sociali, ha redatto il presente documento al fine di aiutare i suoi iscritti a fronteggiare l'emergenza sanitaria COVID-19.<br /> <br /><strong>Art. 1 (PRESTAZIONI PER I POSITIVI AL COVID-19)</strong><br />La CAS.SA.COLF provvede a corrispondere ai dipendenti iscritti:<br />- Indennit&agrave; Giornaliera in caso di Ricovero;<br />- Indennit&agrave; Giornaliera in caso di Convalescenza;<br />- Indennit&agrave; per figli a carico;<br />- Rimborso per materiale sanitario riabilitativo;<br />- Rimborso per visite domiciliari. <br />Il tutto come qui di seguito specificato:<br /><em>1.1.</em> La CAS.SA.COLF, in collaborazione con UniSalute, in caso di ricovero con pernottamento in strutture ospedaliere, riconosce al lavoratore iscritto la corresponsione di un'indennit&agrave; di &euro; 40,00 per ogni notte di ricovero per un periodo non superiore a 50 giorni annui. <br /><em>1.2.</em> La CAS.SA.COLF, in collaborazione con UniSalute, secondo le prescrizioni dei sanitari e con attuazione delle disposizioni in esso contenute, qualora si renda necessario un periodo di isolamento domiciliare, eroga al lavoratore un'indennit&agrave; di &euro; 40,00 al giorno per un periodo non superiore a 14 giorni annui. <br />La diaria giornaliera per isolamento domiciliare verr&agrave; corrisposta anche qualora l'iscritto non abbia subito un ricovero.<br /><em>1.3.</em> La CAS.SA.COLF, in aggiunta al punto 1.1. e al punto 1.2., riconosce una diaria giornaliera di &euro; 40 per un periodo non superiore a 14 giorni annui, per i lavoratori che abbiano almeno un figlio minorenne anagraficamente convivente risultante dallo stato di famiglia.<br /><em>1.4.</em> La CAS.SA.COLF, rimborsa tutti i materiali sanitari utilizzati per il periodo di cura domiciliare (farmaci, bombole di ossigeno e saturimetro), a seguito di presentazione di apposita documentazione comprovante l'acquisto del materiale e la prescrizione del medico curante.<br />La disponibilit&agrave; una tantum per la presente garanzia &egrave; di &euro; 200,00 per iscritto.<br /><em>1.5.</em> In caso di visite domiciliari o extradomiciliari da parte di personale medico o infermieristico per interventi resi necessari per contrastare l'epidemia, la CAS.SA.COLF riconosce al lavoratore, in aggiunta alla prestazione delle visite specialistiche di cui all'art. 7.4., un rimborso entro il limite complessivo di 100,00 euro annui sia erogate dal servizio sanitario nazionale che da privati.<br /><br />DOCUMENTI MEDICI NECESSARI PER LA RICHIESTA DELL'ART.1:<br />Per l'attivazione delle garanzie &egrave; necessario il referto del tampone che attesti la positivit&agrave; al virus COVID-19, rilasciato dalle Autorit&agrave; competenti su conferma del Ministero della Salute e/o dell'Istituto Superiore di Sanit&agrave; e la dichiarazione sostitutiva dello stato di famiglia allegata al presente verbale (Allegato A) solo per la prestazione Art.1.3. e il modulo richiesta prestazioni covid-19 (Allegato B) compilato nei campi per i quali si intende richiedere la prestazione.<br /><br /><strong>Art. 2 (PRESTAZIONI DI PREVENZIONE PER SOSPETTO COVID-19)</strong><br /><em>2.1.</em> La CAS.SA.COLF, qualora al lavoratore venga assegnato un provvedimento (certificato medico) per un periodo di quarantena con sorveglianza attiva o in permanenza domiciliare, viene riconosciuta una diaria di &euro; 40 al giorno fino ad un massimo di 14 giorni annui. <br /><br />DOCUMENTI MEDICI NECESSARI PER LA RICHIESTA DELL'ART.2:<br />Per avere diritto alla prestazione, il lavoratore dovr&agrave; inviare a CASSACOLF il certificato con gli estremi del provvedimento e il modulo richiesta prestazioni covid-19 (Allegato B) compilato nei campi per i quali si intende richiedere la prestazione. <br /><br /><br /><strong>Art.3 (PRESTAZIONE DI GENITORIALIT&Agrave;)</strong><br />PRESTAZIONI RESE A LAVORATRICI E LAVORATORI CON FIGLI IN SITUAZIONI DI DISAGIO PER EMERGENZA COVID-19<br />La CAS.SA.COLF, rimborsa fino a &euro; 200,00 una tantum:<br /><em>3.1.</em> Le spese sostenute per finalit&agrave; di istruzione, scolastica o per servizi di baby sitting, per figli a carico o conviventi, fino al compimento del quinto anno di et&agrave;, iscritti all'asilo o alla scuola dell'infanzia, o ospitati da centri diurni a carattere assistenziale;<br /><em>3.2.</em> Le spese sostenute per l'assistenza domiciliare ai figli a carico o conviventi, che siano in condizione di non autosufficienza, fino al compimento del diciottesimo anno di et&agrave;; <br /><em>3.3.</em> Per bonus spesa, e cio&egrave;, fornitura di prodotti alimentari ovvero rimborso delle spese sostenute per le necessit&agrave; di alimentare i figli fino al compimento del diciottesimo anno di et&agrave; a carico o conviventi.<br /><br />Le prestazioni di cui ai punti 3.1., 3.2. e 3.3. sono cumulabili fino alla concorrenza del massimale di &euro; 200,00 complessivi.<br /><br />DOCUMENTI MEDICI NECESSARI PER LA RICHIESTA DELL'ART.3:<br />Per avere diritto alle prestazioni, il lavoratore dovr&agrave; inviare a CASSACOLF la dichiarazione sostitutiva dello stato di famiglia allegata al presente verbale (Allegato A) e il modulo richiesta prestazioni covid-19 (Allegato B) compilato nei campi per i quali si intende richiedere la prestazione. <br /><br /><strong>Art.4 (PRESTAZIONI PSICOLOGICHE E PSICOTERAPEUTICHE)</strong><br />La CAS.SA.COLF, rimborser&agrave; un massimo di &euro; 400,00 per persona e per anno, a seguito di presentazione di documentazione comprovante la frequentazione di sedute presso uno psicologo o presso uno psicoterapeuta regolarmente iscritti all'albo.<br /><br />DOCUMENTI MEDICI NECESSARI PER LA RICHIESTA DELL'ART.4:<br />Per avere diritto alla prestazione, il lavoratore dovr&agrave; inviare a CASSACOLF le fatture comprovanti le sedute di terapia effettuate, il modulo richiesta prestazioni covid-19 (Allegato B) compilato nei campi per i quali si intende richiedere la prestazione e a la dichiarazione attestante il rapporto di lavoro in regime di convivenza (Allegato C).<br /><br /><strong>Art. 5 (PARERI MEDICI E CONSULTI IN VIDEO CONFERENZA)</strong><br /><em>5.1.</em> SERVIZIO DI VIDEO CONSULTO MEDICO PER DIALOGARE A DISTANZA CON LO SPECIALISTA<br />Considerata la sospensione di gran parte delle visite specialistiche presso le unit&agrave; sanitarie locali e la chiusura di molti poliambulatori sul territorio, UniSalute ha lanciato il nuovo servizio di video consulto specialistico nelle varie discipline mediche.<br />Il video consulto garantisce un confronto diretto con lo specialista in tutti i casi in cui non sia necessario un contatto fisico, ad esempio per condividere i risultati di esami o referti, avere risposte a dubbi e domande sulle terapie, dialogare con il medico per eventuali approfondimenti, scambiarsi documenti.<br />Come accedere al servizio<br />• Contattare la Centrale Operativa UniSalute al numero verde 800 00 96 38 richiedendo la prenotazione di una visita specialistica;<br />• Ricevere via mail direttamente dalla struttura sanitaria un link dedicato per il contatto video con un medico specialista;<br />• Collegarsi al video consulto tramite il computer o tramite device mobile, smartphone e tablet (&egrave; importante utilizzare i browser Google Chrome o Mozilla Firefox).<br />Durante la video chiamata puoi fare anche l'upload di referti e documenti, tienili a portata di mano in formato digitale prima del collegamento.<br />Alla fine del consulto lo specialista potr&agrave; rilasciarti anche la certificazione necessaria per l'acquisto dei farmaci.<br />Il servizio &egrave; completamente gratuito ed &egrave; rivolto esclusivamente agli Iscritti a CAS.SA.COLF.<br /><em>5.2.</em> SERVIZIO DI TELECONSULTO MEDICO COVID-19 H24<br />In caso di sintomi sospetti (es. febbre, tosse, problemi respiratori, ecc.), chiamando il numero verde 800-212477, puoi ricevere informazioni da un team di medici che rispondono h24 e 7 giorni su 7 alle chiamate di assistenza. <br />I medici, dopo una breve indagine telefonica per capire il livello di difficolt&agrave; e di urgenza, forniranno al chiamante le dovute informazioni del caso.<br /><br /><strong>Art. 6 (CONTRIBUTI PER ACCESSO ALLE PRESTAZIONI)</strong><br />La CAS.SA.COLF, al fine di favorire l'accesso alle prestazioni, in deroga al regolamento ad oggi in essere, richiede la presentazione di almeno 2 trimestri di contribuzione, la cui somma non deve essere inferiore ad &euro; 8. <br />Si precisa che, essendo stato sospeso il pagamento dei contributi di assistenza contrattuale, verranno accettati i trimestri precedenti; nella fattispecie, verranno presi a riferimento solo due trimestri ad esempio il 3° ed il 4° trimestre 2019 mediante verifica dei MAV.<br />Per tutti gli altri criteri inerenti la regolarit&agrave; contributiva, verranno adottate le norme vigenti del regolamento ordinario. <br /><br /><strong>Art. 7 (MODULISTICA)</strong> <br />Per la richiesta si deve utilizzare l'apposito stampato (Modulo per prestazioni COVID-19) il cui modello &egrave; allegato al presente regolamento, che deve essere debitamente compilato in ogni sua parte e sottoscritto dal lavoratore.<br />A tale stampato deve essere allegata la documentazione richiesta sotto ogni prestazione.<br />La CAS.SA.COLF ha il diritto di richiedere la cartella clinica, nonch&eacute; gli originali o le copie autentiche dei documenti richiesti.<br /><br /><strong>Art. 8 (RICHIESTA DELLE PRESTAZIONI)</strong><br />I lavoratori iscritti alla CAS.SA.COLF, per richiedere le prestazioni, dovranno effettuare le comunicazioni alla stessa solo tramite e-mail all'indirizzo pratichecovid@cassacolf.it per informazioni contattare il numero verde 800 1000 26.<br /><br /><strong>Art. 9 (DECADENZA)</strong><br />La richiesta, corredata dalla documentazione prevista, deve essere inviata dal Lavoratore iscritto ai sensi dei precedenti Articoli entro 12 mesi dalla conclusione dell'evento a pena di decadenza.<br /><br /><strong>Art. 10 (CORRESPONSIONE DELLA PRESTAZIONE)</strong><br />Il pagamento delle prestazioni avverr&agrave; solo ed esclusivamente mediante accredito (bonifico) su c/c bancario, postale o carta ricaricabile intestato al richiedente.<br /><br /><strong>Art. 11 (MODIFICHE AL REGOLAMENTO)</strong><br />La validit&agrave; delle disposizioni contenute nella presente integrazione al regolamento verr&agrave; valutata sulla base del quadro sanitario del nostro Paese e pertanto sono da intendersi provvisorie e legate al periodo emergenziale. <br />Fermo restando il continuo monitoraggio dei flussi, a garanzia e tutela di tutti gli Iscritti alla CAS.SA.COLF, le prestazioni saranno attive fino alla data del 30 giugno 2021 con eventuali e ulteriori proroghe in relazione agli andamenti tecnici e alle risorse disponibili.<br /><br /><strong>Art. 12 (RISORSE)</strong><br />La CAS.SA.COLF, eroga le prestazioni previste nella presente appendice al regolamento nel limite delle risorse allocate pari ad &euro; 6.000.000,00.<br /><br /><strong>Art. 13 (PRIVACY)</strong><br />Il trattamento dei dati personali inerenti i servizi di cui all'art. 5 sar&agrave; a cura e sotto la responsabilit&agrave; del soggetto erogatore delle corrispondenti prestazioni, alle cui policy in materia di privacy siete pertanto pregati di fare riferimento.<br /><br /><strong>Art. 14 (ENTRATA IN VIGORE)</strong><br />La presente appendice al regolamento ha vigenza dal 1 Gennaio 2020.<br /><br /><br />Roma, 22 Aprile 2020
+	
+	    
+	    
+    </div>
+    
+    
+    
+
+
+            </div>
+            <div id="cl-dx">    
+            	
+<div id="menu-sez">
+	<div class="h4">
+		<a href="/notizie"><b>Altre notizie</b> »</a>
+	</div>
+        
+</div>
+
+            </div>
+    	</div><!-- /corpo -->
+    </form>
+    
+    <div id="piede">
+    	<ul>
+    		<li>
+    			<h1>Navigazione</h1>
+    			<ul>
+    				
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl00_hlLinkSez1" title="Link alla sezione Chi siamo" class="" href="/1/1/chi-siamo">Chi siamo</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl01_hlLinkSez1" title="Link alla sezione Regolamento" class="" href="/4/4/regolamento">Regolamento</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl02_hlLinkSez1" title="Link alla sezione CCNL" class="" href="/13/13/ccnl">CCNL</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl03_hlLinkSez1" title="Link alla sezione Prestazioni" class="" href="/6/6/prestazioni">Prestazioni</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl04_hlLinkSez1" title="Link alla sezione Modulistica" class="" href="/5/5/modulistica">Modulistica</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl05_hlLinkSez1" title="Link alla sezione Versamenti" class="" href="/7/7/versamenti">Versamenti</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl06_hlLinkSez1" title="Link alla sezione Contatti" class="" href="/8/8/contatti">Contatti</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl07_hlLinkSez1" title="Link alla sezione FAQ" class="" href="/9/9/faq">FAQ</a>
+    </li>
+    
+    <li>
+        <a id="ctl00_ucMenuSezioniPiede_rptMenuSezione_ctl08_hlLinkSez1" title="Link alla sezione Statistiche" class="" href="/10/10/statistiche">Statistiche</a>
+    </li>
+    	
+
+    			</ul>
+    		</li>
+    		<li>
+    			<h1>Anagrafica</h1>
+    			<b>CAS.SA.COLF</b><br />
+Via Tagliamento, 29 - 00198 ROMA<br />
+C. F.: 97287770586<br />
+Tel: 06-85358034 oppure 06-85358048<br />
+Fax: 06-8546647<br />
+<a href="mailto:info@cassacolf.it">info@cassacolf.it</a><br />
+<a href="mailto:cassacolf@messaggipec.it">cassacolf@messaggipec.it</a><br />
+<a href="mailto:ufficiostampa@cassacolf.it">ufficiostampa@cassacolf.it</a>
+				
+			</li>
+    		<li>
+    			<h1>Privacy</h1>
+				<a href="/files/allegati/Informativa_iscritti_cassacolf.pdf" target="_blank">Privacy Policy</a><br />
+				<a href="/11/11/informativa-cookie">Informativa Cookie</a><br />
+				<a href="/8/8/contatti">Contatti</a>
+			</li>
+    		<li>
+    			<h1>Accessibilità</h1>
+    			Questo sito è accessibile a tutti gli utenti indipendentemente dalla piattaforma usata. Il codice che lo sostiene è compatibile con le direttive del consorzio internazionale W3C che definisce gli standard di sviluppo per il web: XHTML1.0; CSS3;
+    		</li>
+    		<li class="ultimo">
+    			<h1>Crediti</h1>
+    			La redazione di questo portale è a cura di Cassacolf. Per inviare segnalazioni: <a href="mailto:info@cassacolf.it">info@cassacolf.it</a><br />
+				Prima pubblicazione gennaio 2012<br />
+				Web design <a href="http://www.pablo.it/" target="_Blank"><b>Pablo Comunicazione</b></a><br />
+				Realizzazione sito <a href="http://www.puntotriplo.it/" target="_Blank"><b>Punto Triplo</b></a>
+    		</li>
+    	</ul>
+    </div><!-- /piede -->
+	
+</div><!-- id pagina -->
+    
+    <!-- scroll up -->	
+	<a href="#" class="scrollup">Inizio pagina</a>
+    <script type="text/javascript" src="/script/scrollup-pagina.js"></script>
+    
+</body>
+</html>

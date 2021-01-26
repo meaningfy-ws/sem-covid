@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7" ng-app="app" ng-controller="pageController" lang="no"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8" ng-app="app" ng-controller="pageController" lang="no"> <![endif]-->
+<!--[if IE 8]>         <!DOCTYPE html class="lt-ie9" ng-app="app" ng-controller="pageController" lang="no"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="no" ng-app="app" ng-controller="pageController" ng-class="{'show-menu': showMenu}">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garantiordningen &#229;pnes for st&#248;rre bedrifter</title>
+            <meta property="og:title" content="Garantiordningen &#229;pnes for st&#248;rre bedrifter" />
+    <meta property="og:url" content="https://www.revisorforeningen.no:443/fag/nyheter/garantiordningen-apnes-for-storre-bedrifter/" />
+    <meta property="og:site_name" content="Den norske Revisorforeningen" />
+            <meta property="og:description" content="Garantiordningen for l&#229;n inneb&#230;rer at staten garanterer for 90 % av hvert bankl&#229;n. N&#229; &#229;pnes ordningen ogs&#229; for st&#248;rre bedrifter." />
+
+    <meta property="og:type" content="ArticlePage" />
+    <meta property="og:locale" content="nb_NO" />
+    <link href="/fag/nyheter/garantiordningen-apnes-for-storre-bedrifter/" rel="canonical" />
+
+    <link rel="icon" href="/revisor.ico" />
+    <!--[if lt IE 9]>
+        <script src="/Static/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]><link href="/bundles/screen-ie?v=oHQ1zxpc5dZLIKOyeA6MI_9-dfBboMGBoAcat6NuW0Q1" rel="stylesheet"/>
+<![endif]-->
+    <!--[if IE 9 ]><link href="/bundles/screen?v=vvZcrbZBMqiHkb0oVxb4H8MmrMUIOlyjqF7iyO67Isg1" rel="stylesheet"/>
+<![endif]-->
+    <!--[if IE 10 ]><link href="/bundles/screen?v=vvZcrbZBMqiHkb0oVxb4H8MmrMUIOlyjqF7iyO67Isg1" rel="stylesheet"/>
+<![endif]-->
+    <!--[if !IE ]><!-->
+    <link href="/bundles/screen?v=vvZcrbZBMqiHkb0oVxb4H8MmrMUIOlyjqF7iyO67Isg1" rel="stylesheet"/>
+
+    <!--<![endif]-->
+    <script src="/bundles/jquery?v=GYf_M09gXsAq7rVcdMVql6hhVPDEa6QINzXSViPkqOU1"></script>
+
+    <script type="text/javascript" src="/WebResource.axd?d=Sw10Rll8C75kDalPx7cwxPqbeCB4nF1hTK2fucUWuqsRkhEc844JAWzsXo4GFozEG1pkCFMzewGSyb2sEfl5I4_7NjaDFpNnO2qY2iNOGYd9gO_sUs-eNr9wxxtkI3mIbwxrVjD1dx8th212Y34_tg69nBuGMsvDrWCUAkQ2mwtV1SO8eeYPx2xYL1y5JM60DH0Z-5jkuuofDmH1wMcfrA2&t=635804230820000000"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-3091746-1']);_gaq.push(['_trackPageview']);(function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();if(window.epiGat)epiGat({"downloads":true,"extensions":"7z|aac|arc|arj|asf|avi|bin|csv|docx?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|png|pptx?|qtm?|ra(m|r)?|tar|tgz|txt|wav|wma|wmv|wpd|xlsx?|xml|z|zip","external":true,"mailto":true,"trackingOption":"Classic"});
+</script>
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WWMJ2LX');</script>
+<!-- End Google Tag Manager -->
+
+
+    <!-- Hotjar Tracking Code for http://www.revisorforeningen.no -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 387306, hjsv: 5 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWMJ2LX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <a href="#top" id="toTop"></a>
+
+    
+    
+
+    <div class="container l-site">
+        
+
+
+
+
+<header role="banner" class="page-header" ng-controller="headerController" ng-class="{'page-header--show-menu': showMenu}">
+    <div class="page-header__top">
+        <div id="skiptocontent">
+            <a href="#maincontent">Hopp til innholdet</a>
+        </div>
+        <div class="page-header__branding">
+            <a href="/">
+                <img src="/Static/img/logo.svg" alt="Revisorforeningen" class="is-visible--md" onerror="this.onerror = null; this.src = '~/Static/img/logo.png';" />
+                <img src="/Static/img/logo--line-break.svg" alt="Revisorforeningen" class="is-hidden--md" onerror="this.onerror = null; this.src = '~/Static/img/logo--line-break.png';" />
+            </a>
+        </div>
+    </div>
+
+    <nav role="navigation" class="main-menu" role="navigation">
+        <a href="#mainmenu" class="main-menu__toggle" aria-controls="mainmenu" ng-click="toggleMenu($event)" ng-class="{'main-menu__toggle--show-menu': showMenu}">
+            Meny <i class="icon-hamburger"></i>
+        </a>
+        <div class="main-menu__content" ng-class="{'main-menu__content--show-menu': showMenu}">
+            <ul class="main-menu__list">
+
+                <li class="main-menu__item">
+<a class="main-menu__link page__active" href="/fag/">Fag</a>
+                    </li><li class="main-menu__item">
+<a class="main-menu__link " href="/kurs/">Kurs</a>
+                    </li><li class="main-menu__item">
+<a class="main-menu__link " href="/tidsskrifter/">Tidsskrifter</a>
+                    </li><li class="main-menu__item">
+<a class="main-menu__link " href="/medlem/">Bli medlem</a>
+                    </li><li class="main-menu__item">
+<a class="main-menu__link " href="/om-revisjon1/">Bli revisor</a>
+                    </li><li class="main-menu__item">
+<a class="main-menu__link " href="/om-revisjon/">Om revisjon</a>
+                    </li><li class="main-menu__item">
+<a class="main-menu__link " href="/om-oss/">Om oss</a>
+                    </li>
+
+                    <li class="main-menu__item main-menu__userAdm">
+                        <a href="/systemsider/login/?ReturnUrl=/fag/nyheter/garantiordningen-apnes-for-storre-bedrifter/" class="main-menu__link main-menu__logIn" title="Logg inn">Logg inn</a>
+                    </li>
+
+                
+
+                    <li class="main-menu__login-search">
+                        <div class="main-menu__search" style="margin-right: 0">
+
+<form action="/sok/" method="get">                                <label>
+                                    <span class="only-screenreaders">S&#248;k</span>
+                                    <input type="search" placeholder="S&#248;k" name="q" id="SearchKeywords" />
+                                </label>
+                                <button type="submit" class="button  button--primary-dark  main-menu__search__button" aria-label="Søk" title="Søk">
+                                    <i class="icon-search"></i>
+                                </button>
+</form>                        </div>
+
+
+                    </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header__print">
+        <img src="/Static/img/logo--print.svg" width="200" alt="" />
+    </div>
+</header>
+        
+        <main role="main" class="articlepage page-wrapper" id="maincontent" tabindex="-1">
+            
+            
+
+<!-- Body // -->
+<div class="grid">
+    <div class="col-8--lg">
+        <article class="page-content">
+
+
+    <nav class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/fag/">Fag</a>
+            </li>
+
+        </ul>
+    </nav> 
+
+            <header>
+                <h1>Garantiordningen &#229;pnes for st&#248;rre bedrifter</h1>
+                <p class="ingress">Garantiordningen for l&#229;n inneb&#230;rer at staten garanterer for 90 % av hvert bankl&#229;n. N&#229; &#229;pnes ordningen ogs&#229; for st&#248;rre bedrifter.</p>
+                <div class="meta">
+Publisert:                        <time pubdate="pubdate">02.04.2020</time>
+                </div>
+                <div class="meta">
+                        <a href="/fag/tags/?id=Korona" class="tag tag--neutral">Korona</a>
+                        <a href="/fag/tags/?id=Selskapsrett" class="tag tag--neutral">Selskapsrett</a>
+                </div>
+            </header>
+                <div class="main-body">
+                    <p style="text-align: left;"><span>Garantiordningen for lån til små og mellomstore bedrifter innebærer at staten garanterer for 90 prosent av hvert banklån, og ble åpnet for bruk 27. mars. Finansdepartementet har 2. april fastsatt en forskrift som åpner ordningen også for større bedrifter, herunder bedrifter med mer enn 250 ansatte.</span></p>
+<p><span><span>Forskriften gir bl.a. nærmere regler om hvilke bedrifter som kan motta garanterte lån, hvilke lån som kvalifiserer for garanti og hvordan den samlede garantirammen på 50 milliarder kroner skal fordeles mellom bankene. </span></span></p>
+<p><span><span>Ordningen er basert på at det i hovedsak er bankene som skal administrere den, blant annet gjennom å kontrollere at vilkårene i loven og forskriften er oppfylt før de innvilger garanterte lån.</span></span></p>
+                </div>
+<footer class="col-8--lg pad-right--md article-footer">
+    <div class="article-footer__share-wrapper">
+        <h2 class="article-footer__share-title">Del på</h2>
+
+
+        
+
+        <a target="_blank" href="https://twitter.com/share?url=https%3a%2f%2fwww.revisorforeningen.no%3a443%2ffag%2fnyheter%2fgarantiordningen-apnes-for-storre-bedrifter%2f"
+           data-url="https%3a%2f%2fwww.revisorforeningen.no%3a443%2ffag%2fnyheter%2fgarantiordningen-apnes-for-storre-bedrifter%2f"
+           data-via="Revisorforeningen.no"
+           class="article-footer__share-link article-footer__share-link--twitter" title="Del siden på Twitter">Twitter</a>
+
+        
+            <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwww.revisorforeningen.no%3a443%2ffag%2fnyheter%2fgarantiordningen-apnes-for-storre-bedrifter%2f&title=Garantiordningen+%c3%a5pnes+for+st%c3%b8rre+bedrifter&summary=Garantiordningen+for+l%c3%a5n+inneb%c3%a6rer+at+staten+garanterer+for+90+%25+av+hvert+bankl%c3%a5n.+N%c3%a5+%c3%a5pnes+ordningen+ogs%c3%a5+for+st%c3%b8rre+bedrifter.&source=%2ffag%2fnyheter%2fgarantiordningen-apnes-for-storre-bedrifter%2f" class="article-footer__share-link article-footer__share-link--linkedin" c title="Del siden på LinkedIn" style="">LinkedIn </a>
+        <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.revisorforeningen.no%3a443%2ffag%2fnyheter%2fgarantiordningen-apnes-for-storre-bedrifter%2f" class="article-footer__share-link article-footer__share-link--facebook" title="Del siden på Facebook">Facebook</a>
+    </div>
+    <button type="button" class="article-footer__print-button" onclick="window.print()"><i class="icon-print"></i> Skriv ut</button>
+</footer>
+
+        </article>
+    </div>
+    <div class="col-4--lg">
+        <aside role="complementary" class="page-aside page-aside--article" aside-height>
+                        <section class="related">
+                            <h2 class="h4 related__title">Se ogs&#229;:</h2>
+                            <ul>
+                                    <li>
+                                        <a target="_blank" href="https://www.regjeringen.no/no/aktuelt/garantiordningen-apnes-for-storre-bedrifter/id2696177/" class="attachments__link attachments__link--related-link">
+                                            <span class="attachments__link__text">Finansdepartementets pressemelding</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/fag/nyheter/lanegarantiordningen-for-sma-og-mellomstore-bedrifter/" class="attachments__link attachments__link--related-link">
+                                            <span class="attachments__link__text">Garanti og l&#229;neordningen for sm&#229; og mellomstore bedrifter</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </section>
+<div><div class="block buttonblock  "><a class="button button--secondary button--arrow" style="width: 100%" target="_blank" title="Koronakrisen: Samleside for informasjon, veiledning og oversikt over tiltak" href="/fag/tiltak-fra-myndighetene-for-a-handtere-koronakrisens-konsekvenser-for-bedrifter-og-ansatte/" >
+
+    Koronakrisen: Samleside for informasjon, veiledning og oversikt over tiltak
+</a>
+
+</div></div>        </aside>
+    </div>
+</div>
+<!-- // Body -->
+<script type="text/javascript">
+    $("a[href^='http://www.revisorforeningen.no/?did=']")
+   .each(function () {
+       console.log("hit");
+       this.href = this.href.replace("http://www.revisorforeningen.no/?did=", "http://www.revisorforeningen.no/");
+   });
+    $("a[href^='default.aspx?did=']")
+    .each(function () {
+        var id = getURLParameter(this.href, "did");
+        console.log(id);
+        this.href = "http://www.revisorforeningen.no/" + id;
+    });
+
+    function getURLParameter(url, name) {
+        return (RegExp(name + '=' + '(.+?)(&|$)').exec(url) || [, null])[1];
+    }
+</script>
+            
+        </main>
+        
+<footer id="footer" class="page-footer footer">
+    <div class="grid">
+        <h2 class="only-screenreaders">Navigasjon</h2>
+        <nav role="navigation" class="page-footer__wrapper">
+            <div class="page-footer__col"> <!-- //-->
+                    <a href="/fag/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">Fag</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="/fag/standarder-og-veiledninger/" target="_self"
+                                       class="page-footer__menu-link ">Standarder og veiledninger</a>
+                                </li>                                <li class="">
+                                    <a href="/fag/faglig-nyhetsbrev/" target="_self"
+                                       class="page-footer__menu-link ">Nyhetsbrev</a>
+                                </li>                                <li class="">
+                                    <a href="/fag/sporretjenesten/" target="_self"
+                                       class="page-footer__menu-link ">Sp&#248;rretjenesten</a>
+                                </li>                    </ul>
+                </div><div class="page-footer__col"> <!-- //-->
+                    <a href="/kurs/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">Kurs</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="/kurs/rekomp--kompetanseutvikling-enkelt-og-kostnadseffektivt/" target="_self"
+                                       class="page-footer__menu-link ">ReKomp – kompetanseutvikling enkelt og kostnadseffektivt</a>
+                                </li>                                <li class="">
+                                    <a href="/kurs/kundeservice/" target="_self"
+                                       class="page-footer__menu-link ">Kontakt kurs</a>
+                                </li>                    </ul>
+                </div><div class="page-footer__col"> <!-- //-->
+                    <a href="/tidsskrifter/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">Tidsskrifter</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="https://www.revisorforeningen.no/api/winorguser/CheckCmsAuthentication?returnurl=http://www.revregn.no" target="_blank"
+                                       class="page-footer__menu-link ">Revisjon og Regnskap p&#229; nett</a>
+                                </li>                                <li class="">
+                                    <a href="/tidsskrifter/annonsering/" target="_self"
+                                       class="page-footer__menu-link ">Annonsering tidsskrifter</a>
+                                </li>                                <li class="">
+                                    <a href="/tidsskrifter/kundeservice/" target="_self"
+                                       class="page-footer__menu-link ">Kontakt forlag</a>
+                                </li>                    </ul>
+                </div><div class="page-footer__col"> <!-- //-->
+                    <a href="/medlem/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">Bli medlem</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="/medlem/gratis-studentmedlemskap/" target="_self"
+                                       class="page-footer__menu-link ">Gratis studentmedlemskap</a>
+                                </li>                                <li class="">
+                                    <a href="/medlem/medlemsfordeler/" target="_self"
+                                       class="page-footer__menu-link ">Medlemsfordeler</a>
+                                </li>                                <li class="">
+                                    <a href="/medlem/medlemskontingent/" target="_self"
+                                       class="page-footer__menu-link ">Medlemskontingent</a>
+                                </li>                    </ul>
+                </div><div class="page-footer__col"> <!-- //-->
+                    <a href="/om-revisjon1/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">Bli revisor</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="/om-revisjon1/hvordan-bli-revisor/" target="_self"
+                                       class="page-footer__menu-link ">Hvordan bli revisor?</a>
+                                </li>                                <li class="">
+                                    <a href="/om-revisjon1/studiesteder-i-norge/" target="_self"
+                                       class="page-footer__menu-link ">Studiesteder i Norge</a>
+                                </li>                    </ul>
+                </div><div class="page-footer__col"> <!-- //-->
+                    <a href="/om-revisjon/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">Om revisjon</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="/om-revisjon/Revisjon-gir-tillit/" target="_self"
+                                       class="page-footer__menu-link ">Revisjon = tillit</a>
+                                </li>                                <li class="">
+                                    <a href="/om-revisjon/Hvordan-bruke-revisor/" target="_self"
+                                       class="page-footer__menu-link ">Slik bruker du revisor</a>
+                                </li>                                <li class="">
+                                    <a href="/om-revisjon/finn-en-revisor1/" target="_self"
+                                       class="page-footer__menu-link ">Finn en revisor</a>
+                                </li>                    </ul>
+                </div><div class="page-footer__col"> <!-- //-->
+                    <a href="/om-oss/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">Om oss</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="/om-oss/" target="_top"
+                                       class="page-footer__menu-link ">Revisorforeningen mener</a>
+                                </li>                                <li class="">
+                                    <a href="/om-oss/kontakt-oss/" target="_self"
+                                       class="page-footer__menu-link ">Kontakt oss</a>
+                                </li>                                <li class="">
+                                    <a href="/om-oss/presse/" target="_self"
+                                       class="page-footer__menu-link ">Presse</a>
+                                </li>                    </ul>
+                </div><div class="page-footer__col"> <!-- //-->
+                    <a href="/oversikt-over-rss--atom-feeds/" class="page-footer__menu-title-link"><h3 class="page-footer__menu-title">RSS og Atom feeder</h3></a>
+                    <ul class="page-footer__menu">
+                                <li class="">
+                                    <a href="/oversikt-over-rss--atom-feeds/nyheter-atom/" target="_self"
+                                       class="page-footer__menu-link ">Nyheter (ATOM)</a>
+                                </li>                                <li class="">
+                                    <a href="/oversikt-over-rss--atom-feeds/nyheter-rss/" target="_self"
+                                       class="page-footer__menu-link ">Nyheter (RSS)</a>
+                                </li>                    </ul>
+                </div>
+
+            <div role="contentinfo" class="page-footer__col">
+                <h2><a href="" class="page-footer__footer-logo"><img src="/Static/img/logo.svg" alt="Revisorforeningen"></a></h2>
+                <div class="page-footer__search">
+<form action="/sok/" method="get">                        <label>
+                            <span class="only-screenreaders">S&#248;k</span>
+                            <input type="search" placeholder="S&#248;k" name="q" id="SearchKeywords" />
+                        </label>
+                        <button type="submit" class="button  button--primary-dark page-footer__search__button" aria-label="Søk" title="Søk">
+                            <i class="icon-search"></i>
+                        </button>
+</form>                </div>
+                <ul class="page-footer__global">
+                        <li class="page-footer__global-item"><a href="/english/the-norwegian-institute-of-public-accountants/" target="_top" title="Engelsk omr&#229;de" class="page-footer__global-link">English</a></li>
+                        <li class="page-footer__global-item"><a href="/personvern/" class="page-footer__global-link">Personvern</a></li>
+
+                        <li class="page-footer__global-item">
+                            <a href="/systemsider/login/?ReturnUrl=/fag/nyheter/garantiordningen-apnes-for-storre-bedrifter/" class="page-footer__global-link" title="Logg inn">Logg inn</a>
+                        </li>
+                </ul>
+            </div>
+
+            <div role="contentinfo" class="page-footer__col">
+                <h3 class="page-footer__follow-title">F&#248;lg oss</h3>
+                <p>
+                    <a href="https://www.linkedin.com/company/revisorforeningen/" target="_blank" class="article-footer__share-link article-footer__share-link--linkedin-primary" title="F&#248;lg oss p&#229; LinkedIn">LinkedIn</a>
+                    <a href="https://www.facebook.com/revisorforening/" target="_blank" class="article-footer__share-link article-footer__share-link--facebook-primary" title="F&#248;lg oss p&#229; Facebook">Facebook</a>
+                    <a href="https://twitter.com/Revisorforening" target="_blank" class="article-footer__share-link article-footer__share-link--twitter-primary" title="F&#248;lg oss p&#229; Twitter">Twitter</a>
+                    <a href="https://www.youtube.com/channel/UCqDkBBTVf6ZSpowsUxPzbyQ" target="_blank" class="article-footer__share-link youTubeLogo" title="F&#248;lg oss p&#229; YouTube"></a>
+                    <a href="https://www.instagram.com/revisorforeningen/" target="_blank" class="article-footer__share-link instagramLogo" title="F&#248;lg oss p&#229; Instagram"></a>
+
+                </p>
+                <ul class="page-footer__global">
+                    <li class="page-footer__global-item">
+                        <a href="tel:(+47) 23 36 52 00" class="page-footer__global-link no-line-break">(+47) 23 36 52 00</a>
+                    </li>
+                    <li class="page-footer__global-item">
+                        <a href="mailto:post@revisorforeningen.no" class="page-footer__global-link">post@revisorforeningen.no</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="footerIllustration">
+        <img src="/../../Static/img/footer-illustration.svg" />
+    </div>
+</footer>
+    </div>
+
+    <script src="/Static/bower_components/modernizr/modernizr.js"></script>
+    <script src="/Static/bower_components/angular/angular.min.js"></script>
+    <script src="/Static/js/dnrapp-min.js"></script>
+
+    
+<noscript>
+	<img src="/util/LiveMonitor/Tracking/Index?contentId=19642&amp;languageId=no" alt="" style="display:none" />
+</noscript>
+
+<script type="text/javascript">
+void(function(){var tUrl = "/util/LiveMonitor/Tracking/Index?contentId=19642&languageId=no";tUrl += (tUrl.indexOf("?") > 0 ? "&" : "?");var tUrl1 = tUrl + "r=" + Math.random() + "&referrer=" + escape(document.referrer);document.write("<img id='LiveMonTransparentImage' src='" + tUrl1 + "' alt='' width='1' height='1'/>");window.onpageshow = function (ev) {if (ev && ev.persisted){document.getElementById("LiveMonTransparentImage").src = tUrl + "r=" + Math.random() + "&referrer=" + escape(document.referrer);}}}());
+</script>
+
+
+    <!-- Validation utils -->
+    <script src="/Static/js/nobundle/jquery_validation/jquery.validate.min.js"></script>
+    <script src="/Static/js/nobundle/jquery_validation/localization/messages.no.js"></script>
+    <script src="/Static/js/nobundle/jquery_validation/init.js"></script>
+
+    <!-- Custom utils -->
+    <script src="/Static/js/nobundle/jPaginate.js"></script>
+    <script src="/Static/js/nobundle/winorgutils.js"></script>
+    <script src="/Static/js/nobundle/employer.utils.js"></script>
+    <script src="/Static/js/nobundle/tabs.js"></script>
+    <script src="/bundles/customjs?v=s-jj6FgraWkbzAl2Bfhcz14xm2C64nwpiUYEKtydpFI1"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#toTop").scrollToTop();
+        });
+    </script>
+
+    
+
+</body>
+</html>

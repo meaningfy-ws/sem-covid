@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="de" dir="ltr" version="HTML+RDFa 1.1"
+      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="description" content="Seite nicht gefunden | hessen.de">
+    <meta name="keywords" content="HZD,Wiesbaden,hessen.de">
+    <meta name="author" content="Marcel Pschorn - Hessische Zentrale für Datenverarbeitung (HZD) Wiesbaden">
+    <meta name="generator" content="Drupal 7 (http://drupal.org)" />
+    <link rel="shortcut icon" href="/404/images/hessenmarke.ico" type="image/vnd.microsoft.icon" />
+    <title>Seite nicht gefunden | hessen.de</title>
+    <link type="text/css" rel="stylesheet" href="/404/css/styles.css" media="all" />
+</head>
+
+<body id="bodyid" class="html page-node node-type-page i18n-de">
+    <div class="site-wrapper site-wrapper-container">
+        <div class="page clearfix" id="page">
+            <header id="section-header" class="section section-header">
+                <div id="zone-header-wrapper" class="zone-wrapper zone-header-wrapper clearfix">
+                    <div id="zone-header" class="zone zone-header clearfix">
+                        <div id="region-header-first-wrapper" class="region-header-first-wrapper">
+                            <div class="region region-branding" id="region-branding">
+                                <div class="region-inner region-branding-inner">
+                                    <div class="branding-data clearfix">
+                                        <div class="logo-img">
+                                            <img id="logo" alt="Logo: Hessen" title="Logo: Hessen " src="/404/images/logo.png">
+                                        </div>
+                                        <div class="site-name-slogan">
+                                            <h2 class="site-slogan">Seite nicht gefunden</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="section-content" class="section section-content">
+                <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">
+                    <div id="zone-content" class="zone zone-content clearfix he-one-column">
+                        <div id="block-system-main" class="block block-system block-main block-system-main">
+                            <div class="field field-name-field-spitzmarke">
+                                <div class="field-items">
+                                    <div class="field-item">404</div>
+                                </div>
+                            </div>
+                            <div class="he-content-title">
+                                <div class="pane-inner clearfix">
+                                    <div class="field-items">
+                                        <div class="field-item">
+                                            <h1>Seite nicht gefunden</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Sehr geehrte Besucherin, sehr geehrter Besucher,</p>
+                                <p>leider konnte die angeforderte Seite nicht gefunden werden. Das kann verschiedene Gründe haben:</p>
+								<ul>
+									<li>Der Link ist veraltet und die gewünschte Seite wurde inzwischen im Auftritt entfernt oder umbenannt.</li>
+									<li>Ihnen ist bei der Eingabe der Adresse im Webbrowser ein Tippfehler unterlaufen.</li>
+									<li>Sie haben einen Link in einer E-Mail angeklickt, der in Ihrem E-Mail-Programm mit einem Umbruch oder Leerzeichen abgeschnitten wurde.</li>
+								</ul>
+								<p></p>
+                                <p class="bold">Hier geht es weiter: <a href="/" class="link" title="Zur Startseite">Zur Startseite</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer id="section-footer" class="section section-footer">
+                <div class="footer-menu"></div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

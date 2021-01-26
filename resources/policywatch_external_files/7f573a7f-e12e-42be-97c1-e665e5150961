@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="eli: http://data.europa.eu/eli/ontology# gu: http://www.gazzettaufficiale.it/eli/">
+
+<head>
+<title>Gazzetta Ufficiale</title>
+
+
+<link rel="stylesheet" href="/resources/css/themes/pascal/pascal.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/resources/css/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/resources/css/themes/orman/orman.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/resources/css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/resources/css/reset.css" type="text/css" />
+<link rel="stylesheet" href="/resources/css/text.css" type="text/css" />
+<link rel="stylesheet" href="/resources/css/style.css" type="text/css" />
+<link rel="stylesheet" href="/resources/css/960.css" type="text/css" />
+<link rel="stylesheet" href="/resources/css/ricerca.css" type="text/css" />
+<link rel="stylesheet" href="/resources/css/scrollNews.css" type="text/css" />
+<link rel="stylesheet" href="/resources/css/gu.css" type="text/css" />
+<script type="text/javascript" src="/resources/js/jquery.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="/resources/js/newsSlider.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+<link rel="stylesheet" href="/resources/css/dettaglio.css" type="text/css" />
+<script type="text/javascript">
+ function resizeFrame() {
+
+	f = document.getElementById('mainFrame');
+	l = document.getElementById('leftFrame');
+	t = document.getElementById('testa_atto');
+	cl = document.getElementById('clear');
+	
+ 	f.style.height = (getHeight(0) - t.scrollHeight-cl.scrollHeight)+"px" ;
+	l.style.height = (getHeight(0) - t.scrollHeight-cl.scrollHeight)+"px" ; 
+} 
+
+ window.onresize = function(event) {	
+    delay(function(){
+      resizeFrame();
+    }, 200);
+}; 
+
+ var delay = (function(){
+  var timer = 0;
+  return function(callback, ms){
+    clearTimeout (timer);
+    timer = setTimeout(callback, ms);
+  };
+})(); 
+
+ function getHeight(flag) {
+  var myWidth = 0, myHeight = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+  if(flag == 0)
+  	return myHeight;
+  else
+	return myWidth;
+} 
+
+/* $(function() {
+	var $window = $(window);
+	var $sidebar = $("#wrap_albero");
+	var bodyHeight = $("body").height();
+	var sidebarHeight = $sidebar.height();
+	var startOffset = $sidebar.offset();
+	var topPadding = 15;
+
+	$window.scroll(function() {
+		var marginTopHelper = 0;
+		var scrollTop = $window.scrollTop();
+		var posibleOffset = scrollTop - startOffset.top + topPadding;
+
+		if ((sidebarHeight + posibleOffset) < bodyHeight && scrollTop > startOffset.top) {
+			marginTopHelper = posibleOffset;
+		}
+
+		$sidebar.stop().animate({
+			marginTop: marginTopHelper
+		});
+	});
+});  */
+
+</script>
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ELI legal resource -->
+<meta about="gu:id/2020/08/14/20G00122/sg" typeof="eli:LegalResource" />
+<!-- ELI legal expression -->
+<meta about="gu:id/2020/08/14/20G00122/sg/ita" typeof="eli:LegalExpression" />
+<!-- ELI is_realized_by legalrsc to legalexpr -->
+<meta about="gu:id/2020/08/14/20G00122/sg" property="eli:is_realized_by" resource="gu:id/2020/08/14/20G00122/sg/ita" />
+<!-- ELI legal version -->
+<meta about="gu:id/2020/08/14/20G00122/sg" property="eli:version" resource="gu:tables/versions#ORIGINAL"/> 
+<!-- ELI format -->
+<meta about="gu:id/2020/08/14/20G00122/sg/ita/html" typeof="eli:Format" />
+<!-- ELI is_embodied_by legalexpr to format  -->
+<meta about="gu:id/2020/08/14/20G00122/sg/ita" property="eli:is_embodied_by" resource="gu:id/2020/08/14/20G00122/sg/ita/html" />
+<!-- ELI:id_local -->
+<meta about="gu:id/2020/08/14/20G00122/sg" property="eli:id_local" content="20G00122" />
+<!-- ELI uri_schema -->
+<meta about="gu:id/2020/08/14/20G00122/sg" property="eli:uri_schema" content="gu:id/{yyyy}/{mm}/{dd}/{codiceRedazionale}/sg"/> 
+<!-- ELI type_document -->
+<meta about="gu:id/2020/08/14/20G00122/sg" property="eli:type_document" resource="gu:tables/resource-type#DECRETO-LEGGE"/>
+
+
+
+
+
+<!-- ELI date_document -->
+<meta about="gu:id/2020/08/14/20G00122/sg" property="eli:date_document" content="2020-08-14" datatype="xsd:date" />
+
+<!-- ELI date_publication -->
+<meta about="gu:id/2020/08/14/20G00122/sg" property="eli:date_publication" content="2020-08-14" datatype="xsd:date" />
+
+<meta about="gu:id/2020/08/14/20G00122/sg/ita" property="eli:language" resource="http://publications.europa.eu/resource/authority/language/ITA" />
+<meta about="gu:id/2020/08/14/20G00122/sg/ita" property="eli:publisher" resource="http://www.ipzs.it" />
+<meta about="gu:id/2020/08/14/20G00122/sg/ita/html" property="eli:format" resource="http://www.iana.org/assignments/media-types/text/html" />
+
+
+</head>
+<body>
+
+
+
+<!-- Costanti EL -->
+
+
+
+
+
+
+
+
+
+<!-- Fine costanti EL -->
+
+
+
+
+
+
+
+<div class="head">
+	<div class="flag">
+		<div class="logo">
+			<img src="/resources/img/logo.png" alt="logo gazzetta ufficiale"/>
+	    </div>
+	    
+        
+		
+		<div class="welcome">
+			
+				
+			
+			
+			
+				
+			 
+		</div>
+		     
+	
+		
+	</div>
+</div>
+
+
+
+<div class="main_menu">
+  
+
+
+
+
+
+
+
+<div class="toolbar_wrapper_dettaglio">
+	<div id="comandi_atto">
+		<div id="pulsanti_atto">
+			
+			
+				
+				
+				
+				
+
+			
+			<a href="/atto/vediMenuHTML?atto.dataPubblicazioneGazzetta=2020-08-14&atto.codiceRedazionale=20G00122&tipoSerie=serie_generale&tipoVigenza=originario" target="_blank" class="stampabile"><span>Atto<br/>Completo</span> </a>
+			
+				
+					
+
+					
+						
+						
+						
+						
+						
+						
+					
+
+					<a href="/do/atto/vediListaRettifica?dataPubblicazione=2020-08-14&codiceRedazionale=20G00122&tipoSerie=serie_generale&tipovigenza=originario&tiporettifica=rettificato" target="_blank" class="preparatori"><span>Avviso di rettifica<br/>Errata corrige</span> </a>
+
+				
+				
+			
+			
+			
+
+
+
+
+
+			
+				
+					
+					
+						<!-- <li><img border="0" src="/resources/img/ico_go_preparatori_off.png" title="LAVORI PREPARATORI" alt="LAVORI PREPARATORI" /></li>   -->
+
+						<div class="ghost"><span>Lavori<br/>Preparatori</span></div>
+
+					
+				
+				
+				
+					
+					
+					 
+					
+					
+						<div class="ghost"><span>Direttive UE<br/>recepite</span></div>
+					
+				 
+			
+			
+
+				
+
+			
+		</div>
+	</div>
+
+
+
+
+
+
+	
+	<div class="nobordo" id="comandi">
+		
+			
+
+			
+			
+			
+			
+				
+					
+					
+						
+							
+							
+							
+
+
+							
+
+
+
+							
+
+
+							
+
+
+
+							
+							
+							
+							
+							
+							
+						
+
+
+					
+				
+			
+
+
+		
+		
+		
+		
+		
+			<a href="#" onclick="window.close()" class="chiudi">
+					<span>Chiudi </span>
+
+			</a>
+		
+		
+			 
+				
+					
+					
+					
+					
+				
+			
+		
+		
+		<a href="/atto/vediPermalink?atto.dataPubblicazioneGazzetta=2020-08-14&atto.codiceRedazionale=20G00122&tipoSerie=serie_generale&tipoVigenza=originario&tipoProvvedimento=*" class="backtosearch" target="_blank"  title="Collegamento Permanente"><span>Permalink</span> </a>
+ 	
+		
+
+	
+	</div>
+</div>
+</div>
+
+<div class="main_content">
+		<div id="corpaccio_atto">
+				<div id="titolo_atto">
+	    			<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+
+
+
+
+
+<div id="testa_atto">
+	
+
+	<h2 class="consultazione">
+		DECRETO-LEGGE <span>  
+			
+			
+				
+			 
+				
+
+			 
+				
+			 
+				
+			 14 agosto 2020, n. 104&nbsp; 
+			
+			 </span>
+	</h2>
+
+	<h3 class="consultazione" style="border: none;">
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<span about="gu:id/2020/08/14/20G00122/sg/ita" property="eli:title">Misure  urgenti  per  il  sostegno  e  il   rilancio   dell'economia.
+(20G00122) 
+</span>
+		
+		<span class="riferimento">
+		
+		
+		
+			
+	
+			
+				 
+				
+				
+					
+					 
+				
+				<span class="link_gazzetta">
+				
+					
+					
+					
+						
+					
+					
+						
+					
+					
+					<a target="_blank" style="color:#4a970b; text-decoration:none;" href="http://www.gazzettaufficiale.it/eli/gu/2020/08/14/203/so/30/sg/pdf">(GU Serie Generale n.203 del 14-08-2020 - Suppl. Ordinario n. 30)</a>
+				</span>
+			
+			
+		
+	</span>
+		
+		
+		
+	</h3>
+
+
+	<h4 class="note">
+		
+			<span>note:</span>
+		
+
+		<span class="rosso"> Entrata in vigore del provvedimento: 15/08/2020<br>Decreto-Legge convertito con modificazioni dalla L. 13 ottobre 2020, n. 126 (in S.O. n. 37, relativo alla G.U. 13/10/2020, n. 253). </span>
+	</h4>
+
+	<h5></h5>
+</div>
+	         	</div>
+				
+				<div id="colonna" class="nopadding">
+	                   <div id="wrap_albero">
+						<iframe
+							src="/atto/serie_generale/caricaAlberoArticoli/originario?atto.dataPubblicazioneGazzetta=2020-08-14&atto.codiceRedazionale=20G00122#art" 
+							name="leftFrame" scrolling="auto" id="leftFrame" title="leftFrame" height="100%"  frameborder="0">
+						</iframe>
+					</div>
+				</div>
+				
+				<div id="testo_atto">
+					<iframe 
+					 	src="/atto/serie_generale/caricaArticoloDefault/originario?atto.dataPubblicazioneGazzetta=2020-08-14&atto.codiceRedazionale=20G00122&atto.tipoProvvedimento=DECRETO-LEGGE" 
+					  	name="mainFrame" id="mainFrame" title="mainFrame" height="100%" style="width: 100%;" scrolling="auto" frameborder="0">
+					</iframe>
+				</div>
+				<div class="clear" id="clear"></div> 		
+	</div>
+    </div>
+    
+  
+    
+	<div class="crediti">
+			<put-attribute name="content" value="/WEB-INF/views/page/statiche/gucertificata.jspf"/>
+
+<div class="loghi_crediti">
+	<img src="/resources/img/logo_mef.png" alt="mef" />
+	<img src="/resources/img/logo_ipzs.png"  alt="Istituto Poligrafico e Zecca dello Stato"/>
+</div>
+<div class="clear"></div>
+<div style="color:#edebeb; margin:0 auto; padding: 10px; width:960px; text-align:center; display: inline-block;">Realizzazione Istituto Poligrafico e Zecca dello Stato S.p.A.</div>
+	</div>
+</body>
+</html>

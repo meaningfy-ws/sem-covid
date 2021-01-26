@@ -1,0 +1,1090 @@
+
+
+<!doctype html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lipanj 2020. - statistika korisnika potpore Očuvanje radnih mjesta | Hrvatski zavod za zapošljavanje</title>
+    <meta name="description" content="Statistika Lipanj 2020. - korisnici potpore Očuvanje radnih mjesta">
+    <meta property="og:title" content="Lipanj 2020. - statistika korisnika potpore Očuvanje radnih mjesta">
+    <meta name="og:description" content="Statistika Lipanj 2020. - korisnici potpore Očuvanje radnih mjesta">
+    <meta property="og:image" content="https://mjera-orm.hzz.hr/media/vsukp1ub/hzz-struktura-korisnika-lipanj-fbshare.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:site" content="Očuvanje radnih mjesta - HZZ">
+    <meta property="twitter:title" content="Lipanj 2020. - statistika korisnika potpore Očuvanje radnih mjesta">
+    <meta name="twitter:description" content="Statistika lipanj 2020. - korisnici potpore Očuvanje radnih mjesta">
+    <meta name="twitter:image" content="https://mjera-orm.hzz.hr/media/vsukp1ub/hzz-struktura-korisnika-lipanj-fbshare.png">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="application-name" content="HZZ">
+    <link rel="apple-touch-icon" href="">
+    <meta name="apple-mobile-web-app-title" content="HZZ">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="icon" sizes="192x192" href="">
+    <link rel="apple-touch-icon" href="">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5JMWVTX');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link href="//cdn.kadei.cloud/mjera-orm.hzz.hr/css/hotfixes.css?v=4" rel="stylesheet">
+    <link href="//cdn.kadei.cloud/mjera-orm.hzz.hr/css/app.min.css?v=09062" rel="stylesheet">
+    <link href="/css/ormtooltips.css?v=11092" rel="stylesheet">
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="b70a6668-e843-418e-8baf-45851cf57b77" type="text/javascript" async></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart'],
+            'language': 'hr'
+        });
+
+        google.charts.setOnLoadCallback(chartSRVBrojKorisnika);
+        google.charts.setOnLoadCallback(chartSRVStrukturaKorisnika);
+        google.charts.setOnLoadCallback(chartSRVIsplacenaSredstva);
+        google.charts.setOnLoadCallback(chartSRVUdioPoslodavacaVelicina);
+        google.charts.setOnLoadCallback(chartSRVBrojRadnikaVelicinaPoslodavca);
+
+        google.charts.setOnLoadCallback(chartORMBrojKorisnika);
+        google.charts.setOnLoadCallback(chartORMStrukturaKorisnika);
+        google.charts.setOnLoadCallback(chartORMIsplacenaSredstva);
+        google.charts.setOnLoadCallback(chartORMUdioPoslodavacaVelicina);
+        google.charts.setOnLoadCallback(chartORMBrojRadnikaVelicinaPoslodavca);
+
+
+
+
+
+        function chartSRVBrojKorisnika() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Br. poslodavaca", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 24, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 76, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 35, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 8, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: "Broj korisnika potpore",
+                width: 900,
+                height: 700,
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                haxis: {
+                    textStyle: {
+                        color: '#4f4f4f',
+                        fontSize: 10,
+                        fontName: 'Arial',
+                    }
+                }
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("srv_broj_korisnika"));
+            chart.draw(view, options);
+        }
+
+        function chartSRVStrukturaKorisnika() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Veličina poduzetnika');
+            data.addColumn('number', 'broj');
+            data.addRows([
+                ['Mikropoduzetnici do 10 radnika', 135],
+                ['Mali poduzetnici - od 11 do 50 radnika', 1672],
+                ['Srednji poduzetnici - 51 do 250 radnika', 3682],
+                ['Veliki poduzetnici - više od 251 radnika', 3203]
+
+            ]);
+
+
+            var options = {
+                title: 'Struktura korisnika po broju radnika u potpori',
+                width: 900,
+                height: 680,
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                slices: {
+                    0: {
+                        color: '#2794bf'
+                    },
+                    1: {
+                        color: '#f2b425'
+                    },
+                    2: {
+                        color: '#4f4f4f'
+                    },
+                    3: {
+                        color: '#d12026'
+                    }
+                },
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('srv_struktura_korisnika'));
+            chart.draw(data, options);
+        }
+
+        function chartSRVIsplacenaSredstva() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Iznos (HRK)", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 409649, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 3533169, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 6764677, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 3503687, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: 'Isplaćena sredstva (u HRK)',
+                chart: {
+                    title: 'Isplaćena sredstva',
+                    subtitle: '(u HRK)'
+                },
+                width: 900,
+                height: 700,
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                vAxis: {
+                    format: "currency"
+                },
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
+
+
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("srv_isplacena_sredstva"));
+            chart.draw(view, options);
+        }
+
+        function chartSRVUdioPoslodavacaVelicina() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Udio poslodavaca (%)", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 24, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 76, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 35, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 8, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: 'Udio poslodavaca po veličini',
+                chart: {
+                    title: 'Udio poslodavaca po veličini',
+                    subtitle: '(u %)'
+                },
+                width: 900,
+                height: 680,
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                slices: {
+                    0: {
+                        color: '#2794bf'
+                    },
+                    1: {
+                        color: '#f2b425'
+                    },
+                    2: {
+                        color: '#4f4f4f'
+                    },
+                    3: {
+                        color: '#d12026'
+                    }
+                },
+
+            };
+            var chart = new google.visualization.PieChart(document.getElementById("srv_udio_poslodavac_velicina"));
+            chart.draw(view, options);
+        }
+
+        function chartSRVBrojRadnikaVelicinaPoslodavca() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Broj radnika", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 135, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 1672, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 3682, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 3203, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: 'Broj radnika u potpori po veličini poslodavca',
+                chart: {
+                    title: 'Broj radnika u potpori po veličini poslodavca',
+
+                },
+                width: 900,
+                height: 600,
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
+
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("orm_broj_radnika_po_velicini_poslodavca"));
+            chart.draw(view, options);
+        }
+
+
+
+        function chartORMBrojKorisnika() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Br. poslodavaca", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 17603, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 772, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 128, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 20, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: "Broj korisnika potpore",
+                width: 900,
+                height: 700,
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                haxis: {
+                    textStyle: {
+                        color: '#4f4f4f',
+                        fontSize: 10,
+                        fontName: 'Arial',
+                    }
+                }
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("orm_broj_korisnika"));
+            chart.draw(view, options);
+        }
+
+        function chartORMStrukturaKorisnika() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Veličina poduzetnika');
+            data.addColumn('number', 'broj');
+            data.addRows([
+                ['Mikropoduzetnici do 10 radnika', 39165],
+                ['Mali poduzetnici - od 11 do 50 radnika', 15181],
+                ['Srednji poduzetnici - 51 do 250 radnika', 13827],
+                ['Veliki poduzetnici - više od 251 radnika', 16606]
+
+            ]);
+
+
+            var options = {
+                title: 'Struktura korisnika po broju radnika u potpori',
+                width: 900,
+                height: 680,
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                slices: {
+                    0: {
+                        color: '#2794bf'
+                    },
+                    1: {
+                        color: '#f2b425'
+                    },
+                    2: {
+                        color: '#4f4f4f'
+                    },
+                    3: {
+                        color: '#d12026'
+                    }
+                },
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('orm_struktura_korisnika'));
+            chart.draw(data, options);
+        }
+
+        function chartORMIsplacenaSredstva() {
+            var data = google.visualization.arrayToDataTable([
+                ["Veličina poslodavca", "Iznos (HRK)", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 150501537, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 59054439, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 54604995, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 65376105, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: 'Isplaćena sredstva (u HRK)',
+                chart: {
+                    title: 'Isplaćena sredstva',
+                    subtitle: '(u HRK)'
+                },
+                width: 900,
+                height: 680,
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                vAxis: {
+                    format: "currency"
+                },
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
+
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("orm_isplacena_sredstva"));
+            chart.draw(view, options);
+        }
+
+        function chartORMUdioPoslodavacaVelicina() {
+            var data = google.visualization.arrayToDataTable([
+                ["Veličina poslodavca", "Udio poslodavaca (%)", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 17603, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 772, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 128, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 20, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: 'Udio poslodavaca po veličini',
+                chart: {
+                    title: 'Udio poslodavaca po veličini',
+                    subtitle: '(u %)'
+                },
+                width: 900,
+                height: 680,
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+                slices: {
+                    0: {
+                        color: '#2794bf'
+                    },
+                    1: {
+                        color: '#f2b425'
+                    },
+                    2: {
+                        color: '#4f4f4f'
+                    },
+                    3: {
+                        color: '#d12026'
+                    }
+                },
+
+            };
+            var chart = new google.visualization.PieChart(document.getElementById("orm_udio_poslodavac_velicina"));
+            chart.draw(view, options);
+        }
+
+        function chartORMBrojRadnikaVelicinaPoslodavca() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Broj radnika", {
+                    role: "style"
+                }],
+                ["Mikropoduzetnici do 10 radnika", 39165, "#2794bf"],
+                ["Mali poduzetnici - od 11 do 50 radnika", 15181, "#2794bf"],
+                ["Srednji poduzetnici - 51 do 250 radnika", 13827, "#2794bf"],
+                ["Veliki poduzetnici - više od 251 radnika", 16606, "color: #2794bf"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: 'Broj radnika u potpori po veličini poslodavca',
+                chart: {
+                    title: 'Broj radnika u potpori po veličini poslodavca',
+
+                },
+                width: 900,
+                height: 600,
+
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                },
+
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
+
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("orm_broj_radnika_po_velicini_poslodavca"));
+            chart.draw(view, options);
+        }
+    </script>
+
+</head>
+
+<body class="measure-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JMWVTX"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav id="main-menu" class="navbar navbar-expand-sm">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="/media/mk1jznga/logo-header.svg" width="85" height="65" alt="HZZ">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenuContent">
+                <span class="fal fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenuContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Početna</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" style="color: #f2b425;" href="#" data-toggle="dropdown">
+					          		Očuvanje radnih mjesta
+					        	</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/potpora-za-ocuvanje-radnih-mjesta-sijecanj-veljaca/">[NOVO] Mjera za siječanj-veljaču 2021.</a>
+                            <a class="dropdown-item" href="/skracivanje-radnog-vremena-2021/">[NOVO] Skraćivanje radnog vremena za 2021.</a>
+                            <a class="dropdown-item" href="/potpora-za-zaposljavanje-osoba-s-invaliditetom-2021/">[NOVO] Mjera za osobe s invaliditetom - siječanj-lipanj 2021.</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/potpora-za-ocuvanje-radnih-mjesta-listopad-prosinac/">[IZMJENA] Mjera za listopad-prosinac</a>
+                            <a class="dropdown-item" href="/potpora-za-zaposljavanje-osoba-s-invaliditetom/">Mjera za osobe s invaliditetom - srpanj-prosinac</a>
+                            <a class="dropdown-item" href="/potpora-za-ocuvanje-radnih-mjesta-listopad-prosinac-10-12/">Mjera za listopad-prosinac</a>
+                            <a class="dropdown-item" href="/skracivanje-radnog-vremena/">Skraćivanje radnog vremena</a>
+                            <a class="dropdown-item" href="/potpora-za-ocuvanje-radnih-mjesta-rujan-prosinac-za-djelatnosti/">Mjera za rujan-prosinac za djelatnosti</a>
+                            <a class="dropdown-item" href="/potpora-ocuvanje-radnih-mjesta-mikropoduzetnici-rujan-prosinac/">Mjera za rujan-prosinac za mikropoduzetnike</a>
+                            <a class="dropdown-item" href="/potpora-za-ocuvanje-radnih-mjesta-za-srpanj-kolovoz/">Mjera za srpanj i kolovoz za djelatnosti u NKD razredima H, I, J, M, N, R i S</a>
+                            <a class="dropdown-item" href="/potpora-ocuvanje-radnih-mjesta-mikropoduzetnici-kolovoz/">Mjera za kolovoz za mikropoduzetnike</a>
+                            <a class="dropdown-item" href="/potpora-ocuvanje-radnih-mjesta-mikropoduzetnici/">Mjera za srpanj za mikropoduzetnike</a>
+                            <a class="dropdown-item" href="/potpora-ocuvanje-radnih-mjesta/">Mjera za lipanj</a>
+                            <a class="dropdown-item" href="/potpora-ocuvanje-radnih-mjesta-ozujak-svibanj/">Mjera za ožujak-svibanj (COVID-19)</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" target=_blank href="https://mjere.hr">Sve Mjere (www.mjere.hr)</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item active" style="color: #f2b425;" href="/korisnici-potpore/">Korisnici potpore (pregled po mjesecima)</a>
+                        </div>
+                        <!-- .dropdown-menu -->
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/moji-zahtjevi/">Predaja zahtjeva i dopuna</a>
+                    </li>
+                    <li class="nav-item nav-account dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+				          Pomoć i upiti
+				        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/korisnicka-pitanja/">Korisnički centar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/opca-pitanja-i-odgovori/">Opća pitanja i odgovori</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/sijecanj-veljaca-2021-mikropoduzetnici-i-djelatnosti-upute-i-smjernice/">[NOVO] Mjera za siječanj-veljaču 2021.</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/skracivanje-radnog-vremena-2021/">[NOVO] Skraćivanje radnog vremena za 2021.</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/mjera-za-osobe-s-invaliditetom-sijecanj-lipanj-2021/">[NOVO] Mjera za osobe s invaliditetom siječanj-lipanj 2021.</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/predaja-dokaza-o-isplati-placa/">Predaja dokaza o isplati plaća</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/raskidi-ugovora-i-odustajanje-od-zahtjeva/">Raskidi ugovora i odustajanje od zahtjeva</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/standardni-razlozi-odbijanja-zahtjeva-za-potporom-i-slanje-prigovora/">Razlozi odbijanja zahtjeva i kako poslati prigovor</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/neisplata-potpore-u-roku-i-moguci-razlozi/">Neisplata potpore u roku i neotpisani doprinosi na PK</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/sezonske-djelatnosti/">Obrti, sezonske djelatnosti i zahtjevi predani e-mailom</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/knjigovodstveni-servisi/">Knjigovodstveni servisi</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/studeni-prosinac-mikropoduzetnici-i-djelatnosti-upute-i-smjernice/">[IZMJENA] Mjera za listopad-prosinac</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/listopad-prosinac-mikropoduzetnici-i-djelatnosti-upute-i-smjernice/">Mjera za listopad-prosinac</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/mjera-za-osobe-s-invaliditetom-srpanj-prosinac/">Mjera za osobe s invaliditetom</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/srv-skracivanje-radnog-vremena/">Predaja zahtjeva za mjeru Skraćivanje radnog vremena</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/mjera-za-mikropoduzetnike-rujan-prosinac/">Mjera za mikropoduzetnike rujan-prosinac</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/mjera-za-djelatnosti-rujan-prosinac/">Mjera za djelatnosti rujan-prosinac</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/mjera-za-srpanj-kolovoz-upute-i-smjernice-za-predaju-zahtjeva-i-dokaza/">Predaja zahtjeva za srpanj-kolovoz za djelatnosti u NKD razredima H, I, J, M, N, R i S</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/mjera-za-mikropoduzetnike-za-srpanj/">Predaja zahtjeva za mjeru za mikropoduzetnike</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/nova-mjera-ocuvanje-radnih-mjesta-lipanj-2020-pitanja-i-smjernice/">Predaja zahtjeva za lipanj</a>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/izmjena-ocuvanje-radnih-mjesta-ozujak-svibanj/">Kriteriji za svibanj - korisnici potpore za 50+ zaposlenika</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/korisnicka-pitanja/upiti-korisnika/">Obrazac za upite</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://hzz-helpdesk.kadei.cloud/070972-Potpora-za-o%C4%8Duvanje-radnih-mjesta-COVID-19">Tehnička pitanja i odgovori</a>
+                            <a class="dropdown-item" href="/korisnici-potpore/otvoreni-podaci-i-api-endpoint-za-programski-pristup/">Otvoreni podaci (JSON i API endpoint)</a>
+                        </div>
+                        <!-- .dropdown-menu -->
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.hzz.hr/">www.hzz.hr</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- .collapse -->
+        </div>
+        <!-- .container -->
+    </nav>
+    <!-- #main-menu -->
+
+    <div class="container" id="faq">
+        <div class="row">
+            <div class="col-md-11" style="max-width: 100%; flex: 0 0 100%;">
+                <div class="page-section" style="padding-left: 50px;">
+                    <div class="section-header" style="margin-top: 120px; margin-bottom: 50px">
+                        <h3>Statistika korisnika potpore za očuvanje radnih mjesta - lipanj 2020.</h3>
+                    </div>
+                    <!-- .section-header -->
+
+                    <div class="section-header" style="margin-bottom: 50px;">
+                        <p>
+                            <a href="/korisnici-potpore/">
+                                < Povratak na uvodni tekst</a>
+                        </p>
+                    </div>
+                    <!-- .section-header -->
+
+                    <div class="col-md-11 leftfix" style="max-width: 100%">
+                        <p style="font-size: 10px;">Osvježeno: 15. siječanj 2021.</p>
+                        <ul class="nav nav-tabs" id="recordTabs">
+                            <li class="nav-item">
+                                <a class="nav-link active zebra_tooltips" title="Korisnici potpore u lipnju - očuvanje radnih mjesta" data-toggle="tab" href="#tab-1">ORM 6</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link zebra_tooltips" title="Korisnici potpore u lipnju - skraćivanje radnog vremena" data-toggle="tab" href="#tab-2">SRV</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content" id="recordTabsContent">
+
+
+                            <div class="tab-pane fade show active" id="tab-1">
+                                <!-- orm -->
+
+                                <div class="accordion" id="recordList-1" style="padding-left: 50px;">
+                                    <p class="txtdescr-plain">Broj poslodavaca za koji je isplaćena potpora: <strong>18.523</strong><br> Broj radnika za koje je isplaćena potpora: <strong>84.779</strong><br> Ukupno isplaćeno: <strong>329.537.076 kn</strong>
+                                    </p>
+
+                                    <p class="tabledescr-plain" style="margin-top: 50px;">
+                                        <div style="overflow-x:scroll;">
+                                            <table border="1" class="tabledescr-plain" width="92%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="329"> </td>
+                                                        <td width="165">Broj korisnika potpore</td>
+                                                        <td width="112">Broj radnika</td>
+                                                        <td width="167">Isplaćena sredstva</td>
+                                                        <td width="141">Udio poslodavaca</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mikro poduzetnici - do 10 radnika</td>
+                                                        <td>17.603</td>
+                                                        <td>39.165</td>
+                                                        <td>150.501.537 kn</td>
+                                                        <td>95,03 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mali poduzetnici - od 11 do 50 radnika </td>
+                                                        <td>772</td>
+                                                        <td>15.181</td>
+                                                        <td>59.054.439 kn</td>
+                                                        <td>4,17 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Srednji poduzetnici - 51 do 250 radnika</td>
+                                                        <td>128</td>
+                                                        <td>13.827</td>
+                                                        <td>54.604.995 kn</td>
+                                                        <td>0,69 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Veliki poduzetnici - više od 251 radnika</td>
+                                                        <td>20</td>
+                                                        <td>16.606</td>
+                                                        <td>65.376.105 kn</td>
+                                                        <td>0,11 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Ukupno</strong></td>
+                                                        <td><strong>18.523</strong></td>
+                                                        <td><strong>84.779</strong></td>
+                                                        <td><strong>329.537.076 kn</strong></td>
+                                                        <td><strong>100 %</strong></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </p>
+                                    <div id="orm_broj_korisnika" style="max-width: 900px; overflow-x:scroll;"></div>
+                                    <div id="orm_struktura_korisnika" style="max-width: 900px; height: 700px; overflow-x:scroll;"></div>
+                                    <div id="orm_isplacena_sredstva" style="max-width: 900px; overflow-x:scroll;"></div>
+                                    <div id="orm_udio_poslodavac_velicina" style="max-width: 900px; height: 700px;overflow-x:scroll;"></div>
+                                    <div id="orm_broj_radnika_po_velicini_poslodavca" style="max-width: 900px; overflow-x:scroll;"></div>
+
+                                </div>
+                                <!-- accordion-->
+                            </div>
+                            <!-- tab pane-->
+
+                            <div class="tab-pane fade show" id="tab-2">
+                                <!-- SRV -->
+                                <div class="accordion" id="recordList-2" style="padding-left: 50px;">
+                                    <p class="txtdescr-plain">Broj poslodavaca za koji je isplaćena potpora: <strong>24</strong><br> Broj radnika za koje je isplaćena potpora: <strong>8.692</strong><br> Ukupno isplaćeno: <strong>14.211.182 kn</strong>
+                                    </p>
+
+                                    <p class="tabledescr-plain" style="margin-top: 50px;">
+                                        <div style="overflow-x:scroll;">
+                                            <table border="1" class="tabledescr-plain" width="92%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="329"> </td>
+                                                        <td width="165">Broj korisnika potpore</td>
+                                                        <td width="112">Broj radnika</td>
+                                                        <td width="167">Isplaćena sredstva</td>
+                                                        <td width="141">Udio poslodavaca</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mikro poduzetnici - do 10 radnika</td>
+                                                        <td>24</td>
+                                                        <td>135</td>
+                                                        <td>409.649 kn</td>
+                                                        <td>16,78 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mali poduzetnici - od 11 do 50 radnika </td>
+                                                        <td>76</td>
+                                                        <td>1.672</td>
+                                                        <td>3.533.169 kn</td>
+                                                        <td>53.15 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Srednji poduzetnici - 51 do 250 radnika</td>
+                                                        <td>35</td>
+                                                        <td>3.682</td>
+                                                        <td>6.764.677 kn</td>
+                                                        <td>24,48 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Veliki poduzetnici - više od 251 radnika</td>
+                                                        <td>8</td>
+                                                        <td>3.203</td>
+                                                        <td>3.503.687 kn</td>
+                                                        <td>6,72 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Ukupno</strong></td>
+                                                        <td><strong>143</strong></td>
+                                                        <td><strong>8.692</strong></td>
+                                                        <td><strong>14.211.182 kn</strong></td>
+                                                        <td><strong>100 %</strong></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </p>
+
+                                    <div id="srv_broj_korisnika" style="max-width: 900px; overflow-x:scroll;"></div>
+                                    <div id="srv_struktura_korisnika" style="max-width: 900px; height: 700px;overflow-x:scroll;"></div>
+                                    <div id="srv_isplacena_sredstva" style="max-width: 900px; overflow-x:scroll;"></div>
+                                    <div id="srv_udio_poslodavac_velicina" style="max-width: 900px; height: 700px;overflow-x:scroll;"></div>
+                                    <div id="srv_broj_radnika_po_velicini_poslodavca" style="max-width: 900px; overflow-x:scroll;"></div>
+
+                                </div>
+                                <!-- accordion-->
+                            </div>
+                            <!-- tab pane-->
+
+
+                        </div>
+                        <!-- tab-content  -->
+
+                    </div>
+                    <!-- .col-md11 leftfix -->
+                </div>
+                <!-- .page-section -->
+            </div>
+            <!-- col-md-11 -->
+        </div>
+        <!-- row -->
+    </div>
+    <!-- .containier .faq end -->
+
+
+    <footer>
+        <div class="container">
+            <div id="top-nav">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class="footer-brand">
+                            hrvatski zavod za zapošljavanje
+                        </h4>
+                    </div>
+                    <!-- .col-md-3 -->
+                    <div class="col-md-9">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/usluge-poslodavci-posloprimci/">usluge</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://burzarada.hzz.hr">burza rada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/razvoj-karijere/">razvoj karijere</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/statistika/">statistika</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/novosti-priopcenja/">novosti</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .col-md-9 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- #top-nav -->
+
+            <div id="service-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/usluge-poslodavci-posloprimci/">Usluge za posloprimce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/usluge-poslodavci-posloprimci/#tab-poslodavci">Usluge za poslodavce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/usluge-poslodavci-posloprimci/#tab-eu-projekti">EU fondovi i suradnje</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://hzz-helpdesk.kadei.cloud">Korisnička podrška</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- .col-md-12 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- #service-nav -->
+
+            <div id="link-nav">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/o-hzz/natjecaji/">Natječaji za zapošljavanje</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/o-hzz/javna-nabava/">Javna nadmetanja</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://hzz-helpdesk.kadei.cloud">Česta pitanja i odgovori</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/usluge-poslodavci-posloprimci/obrasci/">Obrasci</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <!-- .col-md-4 -->
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.facebook.com/HrvatskiZavodZaZaposljavanje">Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://twitter.com/hzz_hr">Twitter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.youtube.com/channel/UCzpi28kLfsfYljcV324LHog">YouTube kanal HZZ-a</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/company/hrvatski-zavod-za-zapo-ljavanje-hzz---croatian-employment-service-ces-/?trk=tabs_biz_home">LinkedIn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/adrese-i-kontakt/">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .col-md-4 -->
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/usluge-poslodavci-posloprimci/publikacije-hzz/">Publikacije HZZ-a </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.hzz.hr/birajposaoutrgovini/">Biraj posao u trgovini 2020.</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <!-- .col-md-4 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- #link-nav -->
+
+            <div id="tag-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Linkovi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" taget=_blank href="http://mrms.hr">Ministarstvo rada i mirovinskoga sustava</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://mjere.hr">Aktivna politika zapošljavanja</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://zaposlise.hzz.hr">Zaposli se u Hrvatskoj</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" taget=_blank href="http://ec.europa.eu/eures/page/homepage?lang=hr">EURES - portal za radnu mobilnost u EU</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .col-md-12 -->
+                </div>
+                <!-- .row -->
+
+                <div>
+                    <!-- row end -->
+                    <p style="color: white; margin-top: 25px; font-size: 12px;">Copyright © 2020. Hrvatski zavod za zapošljavanje. Sadržaji se mogu prenositi uz navođenje izvora. | <a style="color: white;" href="http://www.hzz.hr/uvjeti-koristenja/
+                               ">Uvjeti korištenja i politika privatnosti</a> | <a style="color: white;" href="javascript:CookieConsent.renew();CookieDeclaration.SetUserStatusLabel();">Promijeni privole</a></p>
+                </div>
+            </div>
+            <!-- #tag-nav -->
+        </div>
+        <!-- .container -->
+
+        <div class="background">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src=" /media/fhvjfdun/bg-footer.svg" alt="HZZ footer" class="lazyload img-fluid">
+        </div>
+        <!-- .background -->
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.kadei.cloud/mjera-orm.hzz.hr/scripts/app.min.js?v=13062"></script>
+    <script src="/scripts/tooltips.js"></script>
+
+    <script type="text/javascript">
+        (function(d, src, c) {
+            var t = d.scripts[d.scripts.length - 1],
+                s = d.createElement('script');
+            s.id = 'la_x2s6df8d';
+            s.async = true;
+            s.src = src;
+            s.onload = s.onreadystatechange = function() {
+                var rs = this.readyState;
+                if (rs && (rs != 'complete') && (rs != 'loaded')) {
+                    return;
+                }
+                c(this);
+            };
+            t.parentElement.insertBefore(s, t.nextSibling);
+        })(document,
+            'https://hzz-helpdesk.kadei.cloud/scripts/track.js',
+            function(e) {
+                LiveAgent.createButton('4ahg6hqy', e);
+            });
+    </script>
+
+    <!-- PushAlert -->
+    <script type="text/javascript">
+        (function(d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.src = "https://cdn.pushalert.co/integrate_8ecfac499690b4f6610ca27757e405c7.js";
+            s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+    </script>
+    <!-- End PushAlert -->
+
+    <!-- Mautic Script -->
+    <script>
+        (function(w, d, t, u, n, a, m) {
+            w['MauticTrackingObject'] = n;
+            w[n] = w[n] || function() {
+                    (w[n].q = w[n].q || []).push(arguments)
+                }, a = d.createElement(t),
+                m = d.getElementsByTagName(t)[0];
+            a.async = 1;
+            a.src = u;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://hzz-newsletter.kadei.cloud/mtc.js', 'mt');
+
+        mt('send', 'pageview');
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            new $.Zebra_Tooltips($('.zebra_tooltips'));
+        });
+    </script>
+
+</body>
+
+</html>

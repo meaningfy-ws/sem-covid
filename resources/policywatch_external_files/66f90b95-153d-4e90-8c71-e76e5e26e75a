@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Error 404: Page Not Found">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error 404 - Page Not Found</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MSFTZKK');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300italic,400,400italic,500" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.agoria.be/404.css" tSype="text/css">
+    <link rel="stylesheet" href="https://www.acdn.be/_lib/bootstrap/agoriabootstrap_4.3.1/css/bootstrap.min.css" integrity="sha384-Ly2Bg/tgKeO6mK4rBkayaR8JkXojczLjXdTrLreT7rgywL1zzyyw28IhCwDjnxmJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSFTZKK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="customContainer">
+        <nav class="navbar navbar-small navbar-expand-lg mb-4">
+            <div class="container-fluid">
+                <div class="navbar-logo navbar-logo-left">
+                    <a href="https://www.agoria.be/">
+                        <img src="https://acdn.be/agoria.be/img/logo-agoria.svg" alt="Agoria" width="120">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="myCustom404" align="center">
+            <div class="notFound">
+                <span class="error">ERROR</span>
+                <div class="notFound-404">
+                    <h1 class='text--glitch'>404</h1>
+                </div>
+                <p class="pageNotFound textScramble">PAGE NOT FOUND</p>
+                <p class="customText">The link you followed has expired, or the page may have been removed.</p>
+
+                <a href="mailto:teamdigital@agoria.be?subject=Problem found on Agoria.be&body=Please report any technical difficulties you experienced with our website." class="btn btn-primary active buttonError" id="Report" role="button" aria-pressed="true">Report this problem</a>
+
+            </div>
+
+            <div class="help" align="center">
+                <p>Let us help you find your way back</p>
+                <a class="customButton buttonError" id="Home" href="https://www.agoria.be/">Home</a>
+                <a class="customButton buttonError" id="Agenda" href="https://www.agoria.be/WWW.WSC/rep/prg/ApplContent?SessionLID=3&TopicID=17&vWebSessionID=14061&vUserID=999999&ApplMenuID=4437" rel="nofollow noopener">Agenda</a>
+                <a class="customButton buttonError" id="Services" href="https://www.agoria.be/nl/Service-Portfolio" rel="nofollow noopener">Services</a>
+                <a class="customButton buttonError" id="Jobs" href="https://www.agoria.be/nl/Jobs" rel="nofollow noopener">Jobs</a>
+            </div>
+            <!-- <p>https://www.intel.com/content/www/us/en/404.html</p> -->
+
+        </div>
+
+        <footer class="footer" align="center">
+            <a href="https://www.facebook.com/agoria.be" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/agorianl" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://be.linkedin.com/company/agoria" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/user/AgoriaTechIndustry" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/agoria.be" target="_blank"><i class="fab fa-instagram"></i></a>
+        </footer>
+    </div>
+
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft&#43;2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://www.acdn.be/_lib/bootstrap/agoriabootstrap_4.3.1/js/bootstrap.min.js" integrity="sha384-XcYaA/msKMmA4Cs247uZF/Ur7ub741X95W02fljwW3m343adF/uheF/LW&#43;jA7Cbd" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="https://www.agoria.be/error-js/particles.js"></script>
+    <script type="text/javascript" src="https://www.agoria.be/error-js/app.js"></script>
+    <script type="text/javascript" src="https://www.agoria.be/error-js/textScramble.js"></script>
+
+
+</body>
+
+</html>

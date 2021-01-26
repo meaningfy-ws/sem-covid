@@ -1,6 +1,8 @@
 import hashlib
 import json
 import pathlib
+import uuid
+from datetime import datetime
 from functools import partial
 from multiprocessing import Pool, cpu_count
 
@@ -9,11 +11,12 @@ import requests
 
 def download_source(source):
     download_location = pathlib.Path('resources/policywatch_external_files')
-    # local_file_name = uuid.uuid4()
-    local_file_name = hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest()
+    # local_file_name = hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest()
+    local_file_name = uuid.uuid4()
     try:
         with open(pathlib.Path(download_location) / str(local_file_name), 'wb') as output_file:
-            request = requests.get(source['sources::url'], allow_redirects=True)
+            url = source['sources::url'] if source['sources::url'].startswith('http') else ('http://' + source['sources::url'])
+            request = requests.get(url, allow_redirects=True)
             output_file.write(request.content)
             source['downloaded_to'] = str(local_file_name)
     except Exception as ex:
@@ -43,4 +46,6 @@ def load_policy_watch():
 
 
 if __name__ == "__main__":
+    print(str(datetime.now()) + " - starting downloading the EU’s PolicyWatch DB for Covid19 (JSON)...")
     load_policy_watch()
+    print(str(datetime.now()) + " - done.")

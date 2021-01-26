@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Hanza Media</title>
+<meta http-equiv="refresh" content="5; url=/" />
+<meta name="viewport" content="width=device-width, initial-scale=3" />
+<style>
+        .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+        }
+        </style>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5GCRM7');</script>
+
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-37299110-3', 'auto');
+        ga('create', 'UA-37299110-1', 'auto', {'name': 'newTracker'});
+        ga('require', 'displayfeatures');
+        ga('set', 'anonymizeIp', true);
+        ga('send', {
+            'hitType': 'pageview',
+            'page': window.location.href + '/404/',
+        });
+        ga('newTracker.send', 'pageview');
+        </script>
+
+<script type="text/javascript">
+            (function() {
+              var d=document,
+              h=d.getElementsByTagName('head')[0],
+              s=d.createElement('script');
+              s.type='text/javascript';
+              s.async=true;
+              s.src=document.location.protocol + '//script.dotmetrics.net/door.js?id=2441';
+              h.appendChild(s);
+            }());
+            /* ]]> */
+        </script>
+
+<script>
+        <!--//--><![CDATA[//><!--
+        var pp_gemius_identifier = 'Aorg7a_6d7zAbDHeKzu_Sbb.LU88fM9uhfC1VluGzWP.a7';
+        // lines below shouldn't be edited
+        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+        gt.setAttribute('defer','defer'); gt.src=l+'://hr.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+        //--><!]]>
+        </script>
+
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="centered">Hanza Media</div>
+<div></div>
+<div></div>
+<div></div>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GCRM7"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'617a5ffd894fc2f4',m:'aca2594fdbdfa6e292c8e0ad7e3ce4f03f381deb-1611665587-1800-ATA2a6rBTx2jURS9LTKNnOjZ50C4Bbpk0aVPmF1G+YYoZ9bzz0aS1r/2O9yvmtHpy+t/vaCII9k1m1+g5TLfKIhXH7JlS3G+pabUtG8LEaA9WBkrvXm4meGzVIzElBM4B5TI1ytXcuszSqZy88Adwt1VM+cKD4dfdk6XmnXbqePI8KHDhMP1biGLiUOL0wsydpZ2jIzPK6yWCZsfkqQxOBIuegUAz2RNs5Pm5F1uPRZ7ulbJ0n1yz9HdgDo2LWEvmg==',s:[0x61013831b4,0x044877120d],}})();</script></body>
+</html>

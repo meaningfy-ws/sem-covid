@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<title>KfW-Sonderprogramm wird verlängert und erweitert – KfW-Schnellkredit nun auch für Kleinstunternehmen</title>
+<link rel="stylesheet" href="/assets/bundle.css" />
+<link rel="stylesheet" href="/assets/print.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no" />
+<meta name="meta_template_set" content="html" />
+<meta name="company_appendix" content="" />
+<meta name="pagetype" content="contentpage_with_stage" />
+<meta name="description" content="" />
+<meta name="language" content="de" />
+<meta name="page_id" content="1266915#616256" />
+<meta name="meta_subject" content="Newsroom" />
+<meta name="meta_communication_channel" content="KfW-Konzern" />
+<meta name="meta_publish_date" content="2020/11/06 03:32:46" />
+<meta name="meta_business_division" content="KfW" />
+<meta name="meta_business_division_additional" content="Inlandsförderung" />
+<meta name="meta_content_type" content="press" />
+<meta name="leaflet_title" content="KfW-Sonderprogramm wird verlängert und erweitert – KfW-Schnellkredit nun auch für Kleinstunternehmen" />
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="KfW-Sonderprogramm wird verlängert und erweitert – KfW-Schnellkredit nun auch für Kleinstunternehmen" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://www.kfw.de/Techn-Medien/Logos/Social-Media/kfw_logo_1200-600.png" />
+<meta name="twitter:image:alt" content="" />
+<!-- Open Graph data -->
+<meta property="og:title" content="KfW-Sonderprogramm wird verlängert und erweitert – KfW-Schnellkredit nun auch für Kleinstunternehmen" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kfw.de/KfW-Konzern/Newsroom/Aktuelles/Pressemitteilungen-Details_616256.html" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://www.kfw.de/Techn-Medien/Logos/Social-Media/kfw_logo_1200-630.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="" />
+<meta property="og:image" content="https://www.kfw.de/Techn-Medien/Logos/Social-Media/KfW_Logo_180x180px.png" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="180" />
+<meta property="og:image:alt" content="" />
+<!-- Optional Open Graph data -->
+<meta property="og:locale" content="DE" />
+<link rel="apple-touch-icon" href="https://www.kfw.de/Techn-Medien/favicons/KfW_Logo_180x180px.png">
+<link rel="icon" type="image/png" href="https://www.kfw.de/Techn-Medien/favicons/KfW_Favicon_Pfeil_16x16px.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://www.kfw.de/Techn-Medien/favicons/KfW_Favicon_Pfeil_32x32px.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.kfw.de/Techn-Medien/favicons/KfW_Favicon_Pfeil_96x96px.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.kfw.de/Techn-Medien/favicons/KfW_Logo_192x192px.png" sizes="192x192">
+<script>
+document.documentElement.classList.remove("no-js"), "ontouchstart" in window ? document.documentElement.classList.add("touch") : document.documentElement.classList.add("no-touch");
+</script>
+<script>
+function convert_char (rot_algo, range_start, range_end, input_char) {
+return String.fromCharCode(range_start + (((input_char.charCodeAt(0) - range_start) + rot_algo) % (rot_algo * 2)));
+}
+function convert_text (input, node_id) {
+var output = '';
+for (var i = 0; i < input.length; i++ ) {
+if (input.charCodeAt(i) >= 65 && input.charCodeAt(i) <= 90) {
+output = output + convert_char(13, 65, 90, input.charAt(i));
+} else {
+if (input.charCodeAt(i) >= 97 && input.charCodeAt(i) <= 122) {
+output = output + convert_char(13, 97, 122, input.charAt(i));
+} else {
+output = output + input.charAt(i);
+}
+}
+}
+setTimeout(function() {
+document.getElementById(node_id).innerHTML = output;
+}, 50);
+}
+</script>
+<script src="/assets/legacy/legacy.min.js" type="text/javascript"></script>
+<script src="https://www.kfw.de/Technische-Medien/templatemedia/Responsive/js/config.js" type="text/javascript"></script>
+<script src="https://www.kfw.de/Techn-Medien/templatemedia/js/tiLoader.min.js" type="text/javascript"></script>
+<!-- t_version: 3.0.0-1 (responsive) -->
+</head>
+<body data-module="ajax-overlay,ban-overlay" >
+<script>
+var variant = "${param.variant}";
+if (variant != null) {
+if (typeof pluginRegistry != 'undefined' && pluginRegistry.addTrackingCode && typeof pluginRegistry.addTrackingCode === 'function') {
+pluginRegistry.addTrackingCode(variant);
+}
+}
+// variant error handling
+if(localStorage != null && localStorage["abtest_error"] != null) {
+console.error(localStorage["abtest_error"]);
+localStorage.removeItem("abtest_error");
+}
+</script>
+<div id="top" class="l-container l-container-full-width">
+<div class="header-container l-fullwidth" role="banner" data-module="sticky-header">
+
+<div class="l-container">
+<a class="header__skip-to-content" href="#main-anchor" data-module="skip-navigation">Navigation überspringen</a>
+</div>
+<header id="header" class="header content-padding-default">
+<button class="header__menu-button" id="nav-mobile-button" aria-expanded="false" aria-label="Menü" aria-controls="nav-mobile" data-module="mobile-navigation-button">
+<span class="ic-menu" aria-hidden="true"></span>
+</button>
+<div class="header__logo">
+<a href="https://www.kfw.de/kfw.de.html"
+data-section="header">
+<picture class="header__logo">
+<source media="(min-width: 960px)" srcset="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_1280-2x.svg" type="image/svg+xml">
+<source srcset="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_320-2x.svg" type="image/svg+xml">
+<img src="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_1280-2x.png" alt="Zur KfW-Startseite">
+</picture>
+</a>
+</div>
+<div class="header__search">
+<form id="search" data-module="search" class="haupia-form" action="https://www.kfw.de/Suchergebnisse.jsp" method="get">
+<div class="search js-search">
+<input name="query" id="search-field" maxlength="100" type="search" placeholder="Suchbegriff eingeben" aria-label="Suchbegriff eingeben" class="search__input js-search-input" autocomplete="off" />
+<input name="facet.filter.category_subject" id="filterChild" type="hidden" value="5_13387/13406" readonly />
+<button type="reset" name="reset" title="Suchbegriff löschen" aria-label="Suchbegriff löschen" class="search__reset js-reset-button u-invisible">
+<span class="ic-close search__icon-reset" aria-hidden="true"></span>
+</button>
+<button type="submit" title="Suche starten" aria-label="Suche starten" class="search__submit" id="search-bar-button-header">
+<span class="ic-search search__icon-submit" aria-hidden="true"></span>
+</button>
+</div>
+</form>
+<div class="auto-suggestion auto-suggestion--header"></div>
+</div>
+<ul class="header__meta switch-box">
+<li class="header__meta-link">
+<a href="#" data-overlay-target="overlay-login-overview" data-overlay-size="small" role="button" aria-label="Anmelden" >Anmelden</a>
+</li>
+<li class="header__meta-link"><a data-lang="en"aria-label="Switch to English" title="Switch to English" href="#" data-overlay-url="/Technische-Seiten/Overlays/Language/" onclick="wt.sendinfo({linkId:'1266915-changetoenglish'});">English</a></li>
+</ul>
+<div class="fixed-search" data-module="fixed-search">
+<button class="fixed-search__button js-search-overlay-toggle" id="search-bar-button-fixed" type="button" aria-controls="search-overlay-0">
+<span class="ic-search fixed-search__button-icon" aria-hidden="true"></span><span class="u-offscreen">"Suche starten"</span>
+</button>
+<div class="js-search-overlay-container fixed-search__overlay-container u-hidden" id="search-overlay-0" aria-expanded="false">
+<div class="fixed-search__arrow js-search-overlay-arrow"></div>
+<div class="fixed-search__container">
+<form id="searchform_head" action="https://www.kfw.de/Suchergebnisse.jsp" method="get">
+<div class="search js-search">
+<input name="query" id="searchfield_head" maxlength="100" type="search" placeholder="Suchbegriff eingeben" aria-label="Suchbegriff eingeben" autocomplete="off" class="search__input js-search-input js-search-autocomplete" />
+<input name="facet.filter.category_subject" id="filterParent" type="hidden" value="5_13387/" readonly />
+<input name="facet.filter.category_subject" id="filterChild" type="hidden" value="5_13387/13406" readonly />
+<button type="reset" name="reset" title="Suchbegriff löschen" aria-label="Suchbegriff löschen" class="search__reset js-reset-button u-invisible">
+<span class="ic-close search__icon-reset" aria-hidden="true"></span>
+</button>
+<button type="submit" title="Suche starten" aria-label="Suche starten" class="search__submit" id="search-bar-button-header-mobile">
+<span class="ic-search search__icon-submit" aria-hidden="true"></span>
+</button>
+</div>
+</form>
+<div class="auto-suggestion"></div>
+</div>
+</div>
+</div>
+</header>
+<div data-module="nav-primary" class="nav-primary__wrapper js-nav-primary-wrapper">
+<nav class="nav-primary l-container" role="navigation" aria-label="Menü">
+<ul>
+<li>
+<a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/" class="nav-primary__link js-nav-primary-link "
+data-section="main-navi_main"
+data-action="toggle-nav-primary-panel" data-id="953337">Privatpersonen</a>
+</li>
+<li>
+<a href="https://www.kfw.de/inlandsfoerderung/Unternehmen/" class="nav-primary__link js-nav-primary-link "
+data-section="main-navi_main"
+data-action="toggle-nav-primary-panel" data-id="953338">Unternehmen</a>
+</li>
+<li>
+<a href="https://www.kfw.de/inlandsfoerderung/Öffentliche-Einrichtungen/" class="nav-primary__link js-nav-primary-link "
+data-section="main-navi_main"
+data-action="toggle-nav-primary-panel" data-id="953339">Öffentliche Einrichtungen</a>
+</li>
+<li>
+<a href="https://www.kfw.de/Internationale-Finanzierung/" class="nav-primary__link js-nav-primary-link "
+data-section="main-navi_main"
+data-action="toggle-nav-primary-panel" data-id="1228631">Internationale Finanzierung</a>
+</li>
+<li>
+<a href="https://www.kfw.de/KfW-Konzern/" class="nav-primary__link js-nav-primary-link active"
+data-section="main-navi_main"
+data-action="toggle-nav-primary-panel" data-id="1023039">Konzern</a>
+</li>
+<li>
+<a href="https://www.kfw.de/stories" class="nav-primary__link js-nav-primary-link "
+data-section="main-navi_main"
+data-action="toggle-nav-primary-panel" data-id="11085809">KfW Stories</a>
+</li>
+<li>
+<a href="https://www.kfw.de/partner/KfW-Partnerportal/index.jsp" class="nav-primary__link js-nav-primary-link "
+data-section="main-navi_main"
+data-action="toggle-nav-primary-panel" data-id="4637894">KfW-Partnerportal</a>
+</li>
+</ul>
+<div class="fixed-search" data-module="fixed-search">
+<button class="fixed-search__button js-search-overlay-toggle" id="search-bar-button-fixed" type="button" aria-controls="search-overlay-1">
+<span class="ic-search fixed-search__button-icon" aria-hidden="true"></span><span class="u-offscreen">"Suche starten"</span>
+</button>
+<div class="js-search-overlay-container fixed-search__overlay-container u-hidden" id="search-overlay-1" aria-expanded="false">
+<div class="fixed-search__arrow js-search-overlay-arrow"></div>
+<div class="fixed-search__container">
+<form id="searchform_nav" action="https://www.kfw.de/Suchergebnisse.jsp" method="get">
+<div class="search js-search">
+<input name="query" id="searchfield_nav" maxlength="100" type="search" placeholder="Suchbegriff eingeben" aria-label="Suchbegriff eingeben" autocomplete="off" class="search__input js-search-input " />
+<input name="facet.filter.category_subject" id="filterParent" type="hidden" value="5_13387/" readonly />
+<input name="facet.filter.category_subject" id="filterChild" type="hidden" value="5_13387/13406" readonly />
+<button type="reset" name="reset" title="Suchbegriff löschen" aria-label="Suchbegriff löschen" class="search__reset js-reset-button u-invisible">
+<span class="ic-close search__icon-reset" aria-hidden="true"></span>
+</button>
+<button type="submit" title="Suche starten" aria-label="Suche starten" class="search__submit" id="search-bar-button-scroll">
+<span class="ic-search search__icon-submit" aria-hidden="true"></span>
+</button>
+</div>
+</form>
+<div class="auto-suggestion"></div>
+</div>
+</div>
+</div>
+</nav>
+<div class="nav-primary-panel" id="js-nav-primary-panel">
+<div class="nav-primary-panel__inner">
+<div class="l-container">
+<nav role="navigation" class="nav" data-module="flyout-navigation" data-current-page-id="1025353" data-module-flyout-navigation="'url':'https://www.kfw.de/Technische-Seiten/Navigation/NavigationLivePublic.json'">
+<div class="nav__toprow">
+<a
+data-section="main-navi_zurueck_desktop" href="https://www.kfw.de/kfw.de.html" class="link nav__back-link" title="Eine Ebene nach oben" aria-label="Eine Ebene nach oben">
+<span class="ic-arrowLeft" aria-hidden="true"></span>
+</a>
+<span class="nav_back__main-nav--separator" aria-hidden="true">|</span>
+<a href="https://www.kfw.de/kfw.de.html" class="link nav__home-link"
+data-section="main-navi_home_desktop"
+>Startseite</a>
+<span class="ic-arrowRight main-navi__breadcump-separator" aria-hidden="true"></span>
+<ul class="breadcrumb" data-module="flyout-breadcrumb,flyout-breadcrumb-shortener">
+<li class="breadcrumb__item js-breadcrumb-item" ><a href="/KfW-Konzern/" class="breadcrumb__link js-breadcrumb-link"
+data-section="breadcrumb">KfW-Konzern</a></li><li class="breadcrumb__item js-breadcrumb-item" ><a href="/KfW-Konzern/Newsroom/" class="breadcrumb__link js-breadcrumb-link"
+data-section="breadcrumb">Newsroom</a></li><li class="breadcrumb__item js-breadcrumb-item active"><a href="#" class="breadcrumb__link js-breadcrumb-link"
+data-section="breadcrumb">Aktuelles</a></li>
+</ul>
+<a
+data-section="main-navi_close_desktop" href="" class="js-flyout-close nav__close"><span class="ic-close" aria-hidden="true" title="Schließen" aria-label="Schließen"></span></a>
+</div>
+<div class="nav__wrapper js-nav-wrapper u-clearfix">
+<div class="nav__flex js-nav-flex">
+<div class="nav__items js-nav-list">
+<ul class="nav__list">
+
+</ul>
+</div>
+<div class="nav__teaser js-nav-teaser">
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<nav aria-label="breadcrumb" role="navigation" class="breadcrumb-container l-container">
+<ul class="breadcrumb" data-module="breadcrumb-shortener">
+<li class="breadcrumb__item js-breadcrumb-item"><a href="https://www.kfw.de/kfw.de.html " class="breadcrumb__link js-breadcrumb-link"
+data-section="breadcrumb">Startseite</a></li>
+<li class="breadcrumb__item js-breadcrumb-item" ><a href="/KfW-Konzern/" class="breadcrumb__link js-breadcrumb-link"
+data-section="breadcrumb">KfW-Konzern</a></li><li class="breadcrumb__item js-breadcrumb-item" ><a href="/KfW-Konzern/Newsroom/" class="breadcrumb__link js-breadcrumb-link"
+data-section="breadcrumb">Newsroom</a></li><li class="breadcrumb__item js-breadcrumb-item active"><a href="#" class="breadcrumb__link js-breadcrumb-link"
+data-section="breadcrumb">Aktuelles</a></li>
+</ul>
+</nav>
+</div>
+<div id="nav-mobile" class="nav-mobile out u-hidden" data-module="mobile-navigation,mobile-login-overview" aria-hidden="true" aria-labelledby="nav-mobile-button" data-current-page-id="1025353">
+<div class="nav-mobile__inner js-nav-mobile-inner">
+<div class="nav-mobile__nav">
+<div class="nav-mobile__breadcrumb l-container" data-module="mobile-breadcrumb">
+<a
+data-section="main-navi_zurueck_mobile" class="link nav-mobile__back-link js-nav-mobile-backlink u-hidden" tabindex="0" title="Eine Ebene nach oben" aria-label="Eine Ebene nach oben">
+<span class="ic-arrowLeft" aria-hidden="true"></span>
+</a>
+<a
+data-section="main-navi_zurueck_mobile" class="link nav-mobile__back-link js-nav-mobile-currentlink u-hidden" tabindex="0">
+<span class="link__name js-nav-mobile-current">Eine Ebene nach oben</span>
+</a>
+<a
+data-section="main-navi_home_mobile" class="link nav-mobile__home-link js-nav-mobile-homelink" href="https://www.kfw.de/kfw.de.html" title="Startseite" aria-label="Startseite" tabindex="0">
+<span class="ic-home" aria-hidden="true"></span>
+<span class="link__name">Startseite</span>
+</a>
+<a
+data-section="main-navi_back_mobile" class="link nav-mobile__home-link u-hidden u-visible-no-js" href="
+/KfW-Konzern/Newsroom/
+" tabindex="0">
+<span class="ic-arrowLeft" aria-hidden="true"></span>
+<span class="link__name">Eine Ebene nach oben</span>
+</a>
+</div>
+<div class="nav-mobile__scroll">
+<div class="nav-mobile__login-outer">
+<div class="nav-mobile__login-wrapper js-login-wrapper">
+<nav class="nav-mobile__holder" role="navigation">
+<div class="nav-mobile__nav-inner js-nav-mobile-list">
+<ul class="nav-mobile__list">
+</ul>
+</div>
+</nav>
+<nav class="js-nav-mobile-meta nav-mobile__meta" role="navigation">
+<ul class="nav-mobile__list">
+<li class="nav-mobile__item nav-mobile__item--children">
+<a
+data-section="main-navi_login_mobile" class="link js-nav-mobile-link nav-mobile__link">Anmelden</a>
+</li>
+</ul>
+</nav>
+<p class="nav-mobile__item nav-mobile__item--language"><a class="link js-nav-mobile-meta-link nav-mobile__meta-link js-nav-mobile-close""aria-label="Switch to English" title="Switch to English" href="#" data-overlay-url="/Technische-Seiten/Overlays/Language/" onclick="wt.sendinfo({linkId:'1266915-changetoenglish'});">English</a></p>
+</div>
+</div>
+</div>
+</div>
+<button onclick='wt.sendinfo({linkId : "burger.anmeldung_close"});' class="button nav-mobile__close js-nav-mobile-close" title="Schließen" aria-label="Schließen">
+<span class="ic-close" aria-hidden="true"></span>
+</button>
+</div>
+</div>
+<div class="l-container__overlay login__overlay u-hidden js-content-overlay" data-module="container-overlay" data-sticky-container data-overlay-id="overlay-login-overview" data-module-container-overlay="'webtrekk_open': 'header.anmeldung_open'">
+<div class="l-container overlay">
+<div class="overlay__header" data-module="sticky">
+<div class="overlay__header-wrapper">
+<header class="overlay__width">
+<div class="overlay__header-inner">
+<div class="login-menu__breadcrumb-wrapper">
+<div class="login-menu__breadcrumb" data-module="login-breadcrumb">
+<button class="login-menu__back-link js-nav-mobile-backlink u-hidden" tabindex="-1" title="Eine Ebene nach oben" aria-label="Eine Ebene nach oben"><span class="ic-arrowLeft" aria-hidden="true"></span></button>
+<h2 class="login-menu__current-link js-nav-mobile-current hl-4">
+Anmelden
+</h2>
+<button onclick='wt.sendinfo({linkId : "header.anmeldung_close"});' class="overlay__close-btn" tabindex="0" title="Schließen" aria-label="Schließen"><span class="ic-close" aria-hidden="true"></span></button>
+</div>
+<hr class="ln_7">
+</div>
+</div>
+</header>
+</div>
+</div>
+<div class="overlay__width">
+<section class="overlay__content">
+<div class="login-menu__wrapper" data-module="login-overview" data-module-login-overview="'data':{ 'root': [{ 'id':'161161601829350603', 'headline': 'Anmelden', 'children': [ { 'id': '161161601829326865', 'headline': 'Online-Kreditportal', 'subline': 'Studieren & Qualifizieren: Zugang zu Ihren Vertragsdaten und wichtige Informationen', 'href': 'https://www.kfw.de/inlandsfoerderung/Privatpersonen/Studieren-Qualifizieren/Online-Kreditportal/?llb=1', 'children': [ ] }, { 'id': '161161601829354697', 'headline': 'KfW-Zuschussportal', 'subline': 'Bauen & Umbauen: Antrag stellen, Vertragsdaten und wichtige Infos zu Ihrem Zuschuss', 'children': [ { 'id': '16116160182939330', 'headline': 'Aktuelles, Hinweise und Anmeldung', 'href': 'https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilie/Zuschussportal/?llb=1', 'children': [ ] }, { 'id': '161161601829481219', 'headline': 'Direkt zur Anwendung / zum Portal', 'href': 'https://public.kfw.de/zuschussportal-web/', 'external': true, 'children': [ ] } ] }, { 'id': '16116160182947473', 'headline': 'KfW-Partnerportal', 'subline': 'Informationen, Tools und Dokumente für Partner der KfW', 'children': [ { 'id': '161161601829415556', 'headline': 'Finanzierungspartner', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Finanzierungspartner/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829414193', 'headline': 'Landesförderbanken', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Landesförderbanken/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829567510', 'headline': 'Architekten, Bauingenieure & Energieberater', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Architekten-Bauingenieure-Energieberater/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829578738', 'headline': 'Steuer- und Unternehmensberater', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Steuer-und-Unternehmensberater/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829535858', 'headline': 'Handwerksbetriebe', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Handwerksbetriebe/index.jsp?llb=1', 'children': [ ] }, { 'id': '16116160182967301', 'headline': 'Immobilienverwalter', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Immobilienverwalter/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829662529', 'headline': 'Finanzvermittler', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Finanzvermittler/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829689174', 'headline': 'Partner Bildungsfinanzierung', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Partner-Bildungsfinanzierung/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829730061', 'headline': 'Kommunen, kommunale & soziale Unternehmen', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Kommunale-und-soziale-Unternehmen/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829781763', 'headline': 'Kammern und Verbände', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Kammern-und-Verbände/index.jsp?llb=1', 'children': [ ] } ] }, { 'id': '161161601829769519', 'headline': 'KfW-Förderportal', 'subline': 'Bankdurchleitung Online für Finanzierungspartner der KfW', 'href': 'https://www.kfw.de/foerderportal', 'external': true, 'children': [ ] }, { 'id': '161161601829795669', 'headline': 'Online-Bestätigung', 'subline': 'Formulare für Energieeffizienz-Experten', 'children': [ { 'id': '161161601829860151', 'headline': 'Hinweise und Anmeldung', 'href': 'https://www.kfw.de/partner/KfW-Partnerportal/Architekten-Bauingenieure-Energieberater/Online-Bestätigung/index.jsp?llb=1', 'children': [ ] }, { 'id': '161161601829836889', 'headline': 'Direkt zur Anwendung BzA', 'href': 'https://experten.kfw.de/bza-ebs-v-5.0/', 'external': true, 'children': [ ] }, { 'id': '161161601829812998', 'headline': 'Direkt zur Anwendung BnD', 'href': 'https://experten.kfw.de/bnd-ebs/login/login.xhtml', 'external': true, 'children': [ ] } ] } ] }] }, 'rootId': '161161601829350603'">
+<div class="login-menu__nav-inner js-login-menu"></div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div data-module="lock-height">
+<main class="l-container u-relative">
+<a id="main-anchor" tabindex="-1"></a>
+<div class="l-container__overlay u-hidden js-content-overlay" data-module="container-overlay"></div>
+<div class="row is-marginal">
+<div class="l-main-column">
+<div class="header__logo" style="display:none;">
+<a href="#"
+data-section="header">
+<picture class="header__logo">
+<source media="(min-width: 960px)" srcset="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_1280-2x.svg" type="image/svg+xml">
+<source srcset="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_320-2x.svg" type="image/svg+xml">
+<img src="https://www.kfw.de/Technische-Medien/Logos/kfw_logo_1280-2x.png" alt="">
+</picture>
+</a>
+</div>
+<h4 class="hl-4 u-visible-no-js">Tipp: Aktivieren Sie Javascript, damit Sie alle Funktionen unserer Website nutzen können.</h4>
+<div class="u-margin-3 u-head-headline-margin">
+</div>
+<section class="row section">
+<div class="grid col-9">
+<div class="inner-content no-horizontal-padding">
+<div>
+<h1 ><span class="ic-arrowsRight" aria-hidden="true"></span>KfW-Sonderprogramm wird verlängert und erweitert – KfW-Schnellkredit nun auch für Kleinstunternehmen</h1>
+<h4 >Pressemitteilung vom 06.11.2020 / KfW, Inlandsförderung</h4>
+</div>
+<div class="copytext clearfix">
+<div class="text-image-container ">
+<div class="text-image" >
+<p >Angesichts des dynamischen Infektionsgeschehens und der weiterhin angespannten wirtschaftlichen Lage im Zuge der Corona-Pandemie verlängert die Bundesregierung das KfW-Sonderprogramm, einschließlich des KfW-Schnellkredits, bis zum 30.06.2021, um Unternehmen weiterhin verlässlich mit Liquidität zu versorgen. Sobald die Europäische Kommission die Verlängerung der bisherigen beihilferechtlichen Grundlagen genehmigt hat, können die entsprechenden Hilfen auch im Jahr 2021 gewährt werden.</p><p >Ab kommenden Montag, dem 9. November 2020, steht der KfW-Schnellkredit zudem auch für Soloselbständige und Unternehmen mit bis zu 10 Beschäftigten zur Verfügung. Über die Hausbanken können die Unternehmen diese KfW-Kredite mit einer Höhe von bis zu 300.000 Euro beantragen, abhängig von dem im Jahre 2019 erzielten Umsatz. Der Bund übernimmt dafür das vollständige Risiko und stellt die Hausbanken von der Haftung frei.</p><p >Verbessert wurden auch die Regelungen zur Tilgung der KfW-Schnellkredite. Möglich ist ab dem 16.11.2020 nun auch die vorzeitige anteilige Tilgung ohne Vorfälligkeitsentschädigung. Dies erleichtert die Kombination mit anderen Corona-Hilfsprogrammen.</p><p >Bundeswirtschaftsminister Peter Altmaier: „Die Auswirkungen der Corona-Pandemie sind größer und länger, als wir dies Mitte des Jahres noch erwartet und erhofft hatten. Wir lassen in dieser ernsten Lage unsere Unternehmen und ihre Beschäftigten nicht allein, sondern erweitern und verlängern das KfW-Sonderprogramm. Mit der Öffnung des KfW-Schnellkredits für Kleinstunternehmen und Soloselbstständige können nun alle Unternehmen schnell und unbürokratisch Liquidität erhalten. Gleichzeitig haben wir alle Varianten des KfW-Sonderprogramms bis 30.06.2021 verlängert, um Planungssicherheit zu schaffen.“</p><p >Bundesfinanzminister Olaf Scholz: „Der Schutzschirm bleibt weit geöffnet, wir stemmen uns mit voller Kraft gegen die Krise. In der akuten Pandemie-Lage schaffen wir Planungssicherheit und verlängern das KfW-Sonderprogramm bis einschließlich Juni 2021. Außerdem öffnen wir den Schnellkredit mit seinen großzügigen Konditionen nun auch für Soloselbstständige und kleine Unternehmen – eine wichtige weitere Hilfe, gerade jetzt im November. Die KfW übernimmt eine zentrale Rolle in der Abwehr der Krisenfolgen für Unternehmen und Beschäftigte. Damit haben wir international Standards gesetzt und sind auf diese Weise vergleichsweise gut durch die Krise gekommen.&#34;</p><p >KfW-Vorstandsvorsitzender Dr. Günther Bräunig: „Die KfW-Corona-Kredite haben sich als ein wirksames Instrument in der aktuellen Krise erwiesen. Die hohen Förderzahlen spiegeln auch den enormen Kraftakt wider, den wir gemeinsam mit der Politik und der deutschen Kreditwirtschaft bisher geleistet haben. Die Verlängerung des Sonderprogramms und die Öffnung des KfW-Schnellkredits für alle Unternehmen sind ein wichtiges Signal zur Unterstützung der deutschen Wirtschaft.“</p><p >Der KfW-Schnellkredit als Teil des KfW-Sonderprogramms hat sich als wichtige Stütze für den deutschen Mittelstand in der Corona-Krise bewährt. Bislang wurden in diesem Programm über 5 Mrd. Euro zugesagt. Der KfW-Schnellkredit steht ab Montag mit folgenden Eckpunkten zur Verfügung:</p><ul class="list list--bullets"> <li class="list__item"> Der KfW-Schnellkredit steht kleinen und mittelständischen Unternehmen sowie Soloselbständigen zur Verfügung, die mindestens seit dem 1. Januar 2019 am Markt aktiv gewesen sind. </li><li class="list__item"> Des Weiteren muss das Unternehmen in der Summe der Jahre 2017-2019 oder im Jahr 2019 einen Gewinn erzielt haben. Sofern das Unternehmen bislang nur für einen kürzeren Zeitraum am Markt ist, wird dieser Zeitraum herangezogen. </li><li class="list__item"> Das Kreditvolumen pro Unternehmensgruppe beträgt bis zu 25 % des Jahresumsatzes 2019, maximal 800.000 Euro für Unternehmen mit einer Beschäftigtenzahl über 50 Mitarbeitern, maximal 500.000 Euro für Unternehmen mit einer Beschäftigtenzahl von bis zu 50 und maximal 300.000 Euro für Unternehmen mit einer Beschäftigtenzahl von bis zu 10. </li><li class="list__item"> Das Unternehmen darf zum 31. Dezember 2019 nicht in Schwierigkeiten gewesen sein und muss zu diesem Zeitpunkt geordnete wirtschaftliche Verhältnisse aufweisen. </li><li class="list__item"> Der Zinssatz beträgt aktuell 3% mit einer Laufzeit von 10 Jahren. </li><li class="list__item"> Die Bank erhält eine Haftungsfreistellung in Höhe von 100% durch die KfW, abgesichert durch eine Garantie des Bundes. </li><li class="list__item"> Die Kreditbewilligung erfolgt ohne weitere Kreditrisikoprüfung durch die Bank oder die KfW. Hierdurch kann der Kredit schnell bewilligt werden. Es sind keine Sicherheiten zu stellen. </li> </ul><p >Insgesamt sind mittlerweile mehr als 95.000 Anträge auf KfW-Corona-Hilfen bei der KfW eingegangen. 99 % der Anträge davon sind bereits abschließend bearbeitet worden. Die Zusagen haben insgesamt ein Volumen von knapp 46 Mrd. EUR erreicht. Rund 97 % der Anträge kamen von kleinen und mittleren Unternehmen, 99 % davon waren Kredite mit einem Volumen bis 3 Mio. EUR. Damit ist klar, dass diese Hilfen vor allem dem deutschen Mittelstand, dem Rückgrat der deutschen Wirtschaft, zugutekommen.</p>
+</div>
+</div>
+<div class="content-section content-section--structure content-section--1 content-section--background content-section--background-blue " >
+<h3 class="hl-3">Weiterführende Informationen</h3>
+<div class="content-section-slider-container">
+<div data-module="auto-height" data-module-auto-height="'omitOnXs': true">
+<div class="content-section__item">
+<!-- start t: teaserelement_datenbank id: -->
+<!-- start -->
+<div class="teaser teaser--standard ">
+<div class="teaser__item ">
+<div class="teaser__item-media">
+<a class="link " href="https://www.kfw.de/KfW-Konzern/Newsroom/Aktuelles/KfW-Corona-Hilfe-2.html" title="Mehr erfahren" data-section="contentcolumn" >
+<picture>
+<source media="(min-width: 1280px)"
+srcset="https://www.kfw.de/Bilder/Bilder-KfW-Konzern/Geschäftsbericht-2018/Bericht-des-Verwaltungsrats/Bericht_Verwaltungsrat_Teaser_1080x608px_696x392.jpg"
+>
+<source media="(min-width: 960px)"
+srcset="https://www.kfw.de/Bilder/Bilder-KfW-Konzern/Geschäftsbericht-2018/Bericht-des-Verwaltungsrats/Bericht_Verwaltungsrat_Teaser_1080x608px_696x392.jpg"
+>
+<source media="(min-width: 840px)"
+srcset="https://www.kfw.de/Bilder/Bilder-KfW-Konzern/Geschäftsbericht-2018/Bericht-des-Verwaltungsrats/Bericht_Verwaltungsrat_Teaser_1080x608px_696x392.jpg"
+>
+<source media="(min-width: 600px)"
+srcset="https://www.kfw.de/Bilder/Bilder-KfW-Konzern/Geschäftsbericht-2018/Bericht-des-Verwaltungsrats/Bericht_Verwaltungsrat_Teaser_1080x608px_696x392.jpg"
+>
+<source media="(min-width: 100px)"
+srcset="https://www.kfw.de/Bilder/Bilder-KfW-Konzern/Geschäftsbericht-2018/Bericht-des-Verwaltungsrats/Bericht_Verwaltungsrat_Teaser_1080x608px_696x392.jpg"
+>
+<img src="https://www.kfw.de/Bilder/Bilder-KfW-Konzern/Geschäftsbericht-2018/Bericht-des-Verwaltungsrats/Bericht_Verwaltungsrat_Teaser_1080x608px_696x392.jpg" srcset="https://www.kfw.de/Bilder/Bilder-KfW-Konzern/Geschäftsbericht-2018/Bericht-des-Verwaltungsrats/Bericht_Verwaltungsrat_Teaser_1080x608px_696x392.jpg" alt="KfW-Schriftzug und Gebäude" data-image-author="Rüdiger Nehmzow" data-image-author-show="true" data-image-resource="KfW Bankengruppe" data-image-resource-show="true" data-image-filename="Bericht_Verwaltungsrat_Teaser_1080x608px" data-image-id="15709676" />
+</picture>
+</a>
+</div>
+<div class="teaser__text">
+<h5 class="teaser__headline">Informationen für Medienvertreter und Multiplikatoren</h5>
+<p >Die KfW und ihre Finanzierungspartner bündeln vor dem Hintergrund der Corona-Krise ihre Kräfte: Die Förderkredite, die die KfW im Auftrag der Bundesregierung den Unternehmen zur Verfügung stellt, leiten die deutschen Kreditinstitute an ihre Kunden weiter.</p>
+<p><a class="link link--multiline" href="https://www.kfw.de/KfW-Konzern/Newsroom/Aktuelles/KfW-Corona-Hilfe-2.html" title="Mehr erfahren" data-section="contentcolumn" ><span class="ic-arrowRight" aria-hidden="true"></span><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Mehr erfahren</span></span></span></a></p>
+</div>
+</div>
+</div>
+<!-- end -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="l-marginal-column" data-module="auto-height" data-module-auto-height="'omitOnXs': true">
+
+<!-- start t: contentpage_with_stage id:  -->
+		<div class="teaser teaser--tool teaser--padded  ">
+			<div class="teaser__item">
+				<p class="smk_1">Kontakt</p>
+				<div class="teaser__text">
+					  <div class="contact-teaser">
+							<p class="contact-teaser__name">
+								<strong class="txt_1">
+									 KfW-Pressestelle
+								</strong>
+							</p>
+									<p class="txt_2 contact-teaser__title">Telefon</p>
+									<p class="contact-teaser__phone">
+										<strong class="txt_1">+49 (0) 69 74 31 44 00</strong>
+									</p>
+									<p class="txt_2 contact-teaser__title">Fax</p>
+									<p class="contact-teaser__fax">
+										<strong class="txt_1">+49 (0) 69 74 31 32 66</strong>
+									</p>
+									<p class="txt_2 contact-teaser__title">E-Mail</p>
+									<a class="link link--bold" href="mailto:presse@kfw.de" 
+>
+										<span class="link_name">presse@kfw.de</span>
+									</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- start t: teaserelement_datenbank id: -->
+<!-- start -->
+<div class="teaser teaser--standard teaser--background-blue ">
+<div class="teaser__item ">
+<div class="teaser__item-media">
+<picture>
+<source media="(min-width: 1280px)"
+srcset="https://www.kfw-ipex-bank.de/contentmedia/marginal/dummy_198_107-1_696x392.jpg"
+>
+<source media="(min-width: 960px)"
+srcset="https://www.kfw-ipex-bank.de/contentmedia/marginal/dummy_198_107-1_696x392.jpg"
+>
+<source media="(min-width: 840px)"
+srcset="https://www.kfw-ipex-bank.de/contentmedia/marginal/dummy_198_107-1_696x392.jpg"
+>
+<source media="(min-width: 600px)"
+srcset="https://www.kfw-ipex-bank.de/contentmedia/marginal/dummy_198_107-1_696x392.jpg"
+>
+<source media="(min-width: 100px)"
+srcset="https://www.kfw-ipex-bank.de/contentmedia/marginal/dummy_198_107-1_696x392.jpg"
+>
+<img src="https://www.kfw-ipex-bank.de/contentmedia/marginal/dummy_198_107-1_696x392.jpg" srcset="https://www.kfw-ipex-bank.de/contentmedia/marginal/dummy_198_107-1_696x392.jpg" alt="Mitarbeiterin im Infocenter" data-image-author="iceteaimages" data-image-author-show="true" data-image-resource="Fotolia.com" data-image-resource-show="true" data-image-filename="dummy_198_107-1" data-image-id="959093" />
+</picture>
+</div>
+<div class="teaser__text">
+<h5 class="teaser__headline">Haben Sie Fragen zum KfW-Schnellkredit?</h5>
+<p >Die Experten der KfW helfen Ihnen gern</p><p ></p><p ><strong>069 7431 9057</strong></p><p >Für Unternehmen mit maximal 10 Beschäftigten</p><p ></p><p ><strong>0800 539 9000</strong></p><p >(kostenfreie Servicenummer)</p><p >Für alle anderen Unternehmen</p><p ></p><p >Montag bis Freitag: 8:00 bis 18:00 Uhr</p>
+</div>
+</div>
+</div>
+<!-- end -->
+<!-- start t: teaserelement_datenbank id: -->
+<!-- start -->
+<div class="teaser teaser--standard ">
+<div class="teaser__item ">
+<div class="teaser__item-media">
+<picture>
+<source media="(min-width: 1280px)"
+srcset="/Presse-Newsroom/Pressematerial/BMWi_696x392.jpg"
+>
+<source media="(min-width: 960px)"
+srcset="/Presse-Newsroom/Pressematerial/BMWi_696x392.jpg"
+>
+<source media="(min-width: 840px)"
+srcset="/Presse-Newsroom/Pressematerial/BMWi_696x392.jpg"
+>
+<source media="(min-width: 600px)"
+srcset="/Presse-Newsroom/Pressematerial/BMWi_696x392.jpg"
+>
+<source media="(min-width: 100px)"
+srcset="/Presse-Newsroom/Pressematerial/BMWi_696x392.jpg"
+>
+<img src="/Presse-Newsroom/Pressematerial/BMWi_696x392.jpg" srcset="/Presse-Newsroom/Pressematerial/BMWi_696x392.jpg" alt="" data-image-author="-" data-image-author-show="true" data-image-resource="BMWi" data-image-resource-show="true" data-image-filename="BMWi_Office_Farbe_de" data-image-id="10786851" />
+</picture>
+</div>
+<div class="teaser__text">
+</div>
+</div>
+</div>
+<!-- end -->
+<!-- start t: teaserelement_datenbank id: -->
+<!-- start -->
+<div class="teaser teaser--standard ">
+<div class="teaser__item ">
+<div class="teaser__item-media">
+<picture>
+<source media="(min-width: 1280px)"
+srcset="/Presse-Newsroom/Pressematerial/Logos/BMF_Logo.svg_696x392.png"
+>
+<source media="(min-width: 960px)"
+srcset="/Presse-Newsroom/Pressematerial/Logos/BMF_Logo.svg_696x392.png"
+>
+<source media="(min-width: 840px)"
+srcset="/Presse-Newsroom/Pressematerial/Logos/BMF_Logo.svg_696x392.png"
+>
+<source media="(min-width: 600px)"
+srcset="/Presse-Newsroom/Pressematerial/Logos/BMF_Logo.svg_696x392.png"
+>
+<source media="(min-width: 100px)"
+srcset="/Presse-Newsroom/Pressematerial/Logos/BMF_Logo.svg_696x392.png"
+>
+<img src="/Presse-Newsroom/Pressematerial/Logos/BMF_Logo.svg_696x392.png" srcset="/Presse-Newsroom/Pressematerial/Logos/BMF_Logo.svg_696x392.png" alt="" data-image-author="BMF" data-image-author-show="true" data-image-resource="BMF" data-image-resource-show="true" data-image-filename="BMF_Logo.svg" data-image-id="15654351" />
+</picture>
+</div>
+<div class="teaser__text">
+</div>
+</div>
+</div>
+<!-- end -->
+
+</div>
+</div>
+</main>
+</div>
+<div id="foot" class="l-container">
+<footer class="footer-container" data-module="footer" role="contentinfo" aria-label="Hinweise">
+<div class="footer__banner l-fullwidth">
+<form class="footer__rating content-padding-default"
+data-struktur_id="1266915"
+data-struktur_uid="p41663/p41718/p50714/s3___contentseite_mit_buehne_3"
+data-struktur_label="KfW-Konzern/Newsroom/Aktuelles/Pressemitteilungen+Details"
+data-template_id="957533"
+data-template_uid="contentpage_with_stage"
+data-template_label="S3+-+Contentseite+mit+B%C3%BChne"
+data-inhalt_id="1266865"
+data-inhalt_uid="s3___contentseite_mit_buehne_3"
+data-inhalt_label="Pressemitteilungen+Details"
+data-feedbacktext=""
+data-inhalt_question="Wie gefällt Ihnen diese Seite?"
+data-url="/KfW-Konzern/Newsroom/Aktuelles/Pressemitteilungen-Details_628608.html"
+data-request-url="/kfw-wcms-feedbackmanager-restservice/sendFeedback">
+<fieldset class="link--toggle js-toggle">
+<legend>Wie gefällt Ihnen diese Seite?</legend>
+<div class="rating">
+<input type="radio" id="star1" name="rating" value="1" />
+<label for="star1" onclick="wt.sendinfo({linkId:'footer-rate.1'});"><span class="u-offscreen">1 Stern</span></label>
+<input type="radio" id="star2" name="rating" value="2" />
+<label for="star2" onclick="wt.sendinfo({linkId:'footer-rate.2'});"><span class="u-offscreen">2 Sterne</span></label>
+<input type="radio" id="star3" name="rating" value="3" />
+<label for="star3" onclick="wt.sendinfo({linkId:'footer-rate.3'});"><span class="u-offscreen">3 Sterne</span></label>
+<input type="radio" id="star4" name="rating" value="4" />
+<label for="star4" onclick="wt.sendinfo({linkId:'footer-rate.4'});"><span class="u-offscreen">4 Sterne</span></label>
+<input type="radio" id="star5" name="rating" value="5" />
+<label for="star5" onclick="wt.sendinfo({linkId:'footer-rate.5'});"><span class="u-offscreen">5 Sterne</span></label> <span class="tab-border"></span> </div>
+</fieldset>
+<div id="toggleContainer-footer" class="toggleContainer u-expand" data-toggle-class="active" data-module="toggle-target">
+<div class="toggleContainer__content">
+<label class="small" for="textarea-footer">Vielen Dank! Was können wir verbessern?</label>
+<div class="form__element form__element--textarea ">
+<textarea id="textarea-footer" name="textarea" placeholder="Ihre Anmerkungen..."></textarea>
+<p class="error-message">Text area error</p>
+</div>
+<button title="" class="button button--secondary button--submit" onclick="wt.sendinfo({linkId:'footer-rate.send'});" type="submit">Senden</button>
+<button class="button rating__close-btn" onclick="wt.sendinfo({linkId:'footer-rate.close'});">Schließen<span class="ic-close" aria-hidden="true"></span></button>
+</div>
+</div>
+<div class="small footer__rating__success-message"><p >Vielen Dank!</p><p >Ihre Meinung hilft uns, unser Online-Angebot weiter zu verbessern.</p></div>
+</form>
+<div class="footer__function-links content-padding-default">
+<ul class="linklist">
+<li class="linklist__item">
+<a href="#" class="link link--print"
+data-section="footer-print">
+<span class="ic-print" aria-hidden="true"></span><span>Drucken</span>
+</a>
+</li>
+<li class="linklist__item">
+<a href="#" class="link" data-overlay-target="social-media-sharing" data-overlay-size="large">
+<span class="ic-share" aria-hidden="true"></span><span>Teilen</span>
+</a>
+</li>
+<li class="linklist__item">
+Kurz-URL:
+<a href="https://www.kfw.de/s/dekE1Tj.CWdA" class="link"
+data-section="footer-link" title="permanenter Link zu dieser Seite">
+<span>kfw.de/s/dekE1Tj.CWdA</span>
+</a>
+</li>
+</ul>
+<div class="l-container__overlay u-hidden js-content-overlay" data-module="container-overlay" data-sticky-container data-overlay-id="social-media-sharing" data-module-container-overlay="&#x27;webtrekk_open&#x27;: &#x27;social-media-sharing_open&#x27;">
+<div class="l-container overlay" role="dialog" aria-modal="true" aria-live="polite" id="social-media-sharing">
+<div class="overlay__header" data-module="sticky">
+<div class="overlay__header-wrapper">
+<div class="overlay__width">
+<div class="overlay__header-inner">
+<button class="overlay__close-btn" tabindex="0" aria-label="Schließen">
+<span class="ic-close" aria-hidden="true"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay__width">
+<section class="overlay__content u-clearfix">
+<div class="social-media-sharing__content" data-module="social-media-sharing-content">
+<h3 class="social-media-sharing__content__headline">
+Datenschutzgrundsätze
+</h3>
+<p class="social-media-sharing__content__description">
+Wenn Sie auf eines der Icons der hier aufgeführten klicken, werden Ihre persönlichen Daten an das ausgewählte Netzwerk übertragen.
+</p>
+<a class="link link--multiline" href="https://www.kfw.de/KfW-Konzern/Datenschutz.html" title="Datenschutzhinweise" data-section="footer-link" ><span class="ic-arrowRight" aria-hidden="true"></span><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Datenschutzhinweise</span></span></span></a>
+<div class="social-media-sharing__content__buttons" data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;linkedin&quot;,&quot;xing&quot;,&quot;mail&quot;]"
+data-mail-url="mailto:"
+data-mail-body="Schauen Sie sich diese Seite mal an:
+https://www.kfw.de/KfW-Konzern/Newsroom/Aktuelles/Pressemitteilungen-Details_628608.html">
+</div>
+<button title="" class="button overlay__close-btn cancel-button" type="submit">
+Schließen
+</button>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__content-info">
+<div class="footer__contact-links">
+<h5 class="hl-5 color--grey" data-module="toggle-link" data-toggle-target="service1" data-toggle-breakpoint="xs">
+<span class="ic-plus" aria-hidden="true"></span>
+<span class="ic-minus" aria-hidden="true"></span>
+KfW-Konzern
+</h5>
+<div id="service1" class="u-expand" data-toggle-class="active" data-module="toggle-target">
+<ul class="linklist">
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Newsroom/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Newsroom</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Investor-Relations/Investor-Relations-Responsive-Startseite.html" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Investor Relations</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/KfW-Research/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">KfW Research</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Karriere/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Karriere</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/nachhaltigkeit/KfW-Konzern/Nachhaltigkeit/Nachhaltige-Unternehmensprozesse/Beschaffung/" title="Beschaffung" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Beschaffung</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/nachhaltigkeit/KfW-Konzern/Nachhaltigkeit/" title="Nachhaltigkeit" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Nachhaltigkeit</span></span></span></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer__contact-links">
+<h5 class="hl-5 color--grey" data-module="toggle-link" data-toggle-target="service2" data-toggle-breakpoint="xs">
+<span class="ic-plus" aria-hidden="true"></span>
+<span class="ic-minus" aria-hidden="true"></span>
+KfW Services
+</h5>
+<div id="service2" class="u-expand" data-toggle-class="active" data-module="toggle-target">
+<ul class="linklist">
+<li class="linklist__item"><a href="https://www.kfw-formularsammlung.de/KonditionenanzeigerINet/KonditionenAnzeiger" target="_blank" title="Aktuelle Zinskonditionen" data-section="footer" class="link "><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Aktuelle Zinskonditionen</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Newsroom/Pressematerial/Themen-kompakt/Online-Beratungsanfrage/" title="Beratung bei Finanzierungspartnern" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Beratung bei Finanzierungspartnern</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Service/Download-Center/Förderprogramme-(Inlandsf.)-(D-EN)/index.jsp" title="Merkblätter und Formulare" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Merkblätter und Formulare</span></span></span></a>
+</li>
+<li class="linklist__item"><a href="https://onlinekreditportal.kfw.de/BK_KNPlattform/" target="_blank" title="Kreditportal für Studium und Beruf" data-section="footer" class="link "><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Online-Kreditportal</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Service/Download-Center/index.jsp" title="Download Center" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Download Center</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Service/KfW-Newsdienste/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">KfW-Newsdienste</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Service/Rechner-und-Tools/#accordion-item-1030894-tilgungsrechnerberechnensieratenundtilgungsplanfurihrenkredit-2-target" title="Tilgungsrechner" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Tilgungsrechner</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Service/Service.html" title="Service" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Service</span></span></span></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer__contact-links">
+<h5 class="hl-5 color--grey" data-module="toggle-link" data-toggle-target="service3" data-toggle-breakpoint="xs">
+<span class="ic-plus" aria-hidden="true"></span>
+<span class="ic-minus" aria-hidden="true"></span>
+KfW im Dialog
+</h5>
+<div id="service3" class="u-expand" data-toggle-class="active" data-module="toggle-target">
+<ul class="linklist">
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Kontakt/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Kontakt</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Kontakt/Grundsätze-der-Beschwerdebearbeitung/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Beschwerden</span></span></span></a>
+</li>
+<li class="linklist__item"><a class="link " href="https://www.kfw.de/KfW-Konzern/Newsroom/Kontakt-Pressestelle/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Pressestelle</span></span></span></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer__contact-links">
+<h5 class="hl-5 color--grey">Folgen Sie uns auf:</h5>
+<ul class="linklist">
+<li class="linklist__item">
+<a href="http://www.twitter.com/KfW" class="link" target="_blank" aria-hidden="true"
+data-section="footer-social">
+<span class="icon ic-twitter"></span>
+<span>Twitter</span>
+</a>
+</li>
+<li class="linklist__item">
+<a href="http://www.youtube.com/kfw" class="link" target="_blank" aria-hidden="true"
+data-section="footer-social">
+<span class="icon ic-video"></span>
+<span>Youtube</span>
+</a>
+</li>
+<li class="linklist__item">
+<a href="https://www.xing.com/company/kfw" class="link" target="_blank" aria-hidden="true"
+data-section="footer-social">
+<span class="icon ic-xing"></span>
+<span>XING</span>
+</a>
+</li>
+<li class="linklist__item">
+<a href="https://de.linkedin.com/company/kfw" class="link" target="_blank" aria-hidden="true"
+data-section="footer-social">
+<span class="icon ic-linkedIn"></span>
+<span>LinkedIn</span>
+</a>
+</li>
+<li class="linklist__item">
+<a href="https://www.instagram.com/kfw.stories/" class="link" target="_blank" aria-hidden="true"
+data-section="footer-social">
+<span class="icon ic-instagramm"></span>
+<span>Instagram</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer__links" role="contentinfo" aria-label="Hinweise">
+<span class="footer__copyright">
+2021 KfW, Frankfurt am Main
+</span>
+<ul class="footer__link-item-wrapper">
+<li class="footer__link-item">
+<a class="link " href="https://www.kfw.de/KfW-Konzern/Inhaltsverzeichnis-KfW-Konzern.html" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Sitemap</span></span></span></a>
+</li>
+<li class="footer__link-item">
+<a class="link " href="https://www.kfw.de/KfW-Konzern/Barrierefreiheit.html" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Barrierefreiheit</span></span></span></a>
+</li>
+<li class="footer__link-item">
+<a class="link " href="https://www.kfw.de/KfW-Konzern/Formulare/Barriere-melden/" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Barriere melden</span></span></span></a>
+</li>
+<li class="footer__link-item">
+<a class="link " href="https://www.kfw.de/KfW-Konzern/Datenschutz.html" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Datenschutz</span></span></span></a>
+</li>
+<li class="footer__link-item">
+<a class="link " href="https://www.kfw.de/inlandsfoerderung/Steuerdisclaimer.html" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Rechtliche Hinweise</span></span></span></a>
+</li>
+<li class="footer__link-item">
+<a class="link " href="https://www.kfw.de/KfW-Konzern/Impressum.html" title="" data-section="footer" ><span class="link__name"><span class="link__name-inner"><span class="link__name-text">Impressum</span></span></span></a>
+</li>
+<li class="footer__link-item">
+<a href="#" class="link" data-overlay-url="/Bildrechte.html" overlay-size="medium" data-overlay-class="overlay-image-rights--no-text"
+data-section="footer.www.kfw.de.Bildrechte.html">
+Bildrechte
+</a>
+</li>
+</ul>
+<a title="" class="button button--secondary button--icon-left " data-scroll-to="top" data-module="scroll-to" href="#top" data-section="button_top_page"><span class="ic-arrowUp" aria-hidden="true"></span>Zum Seitenanfang</a>
+</div>
+</footer>
+</div>
+<script src="//e.video-cdn.net/v2/embed.js"></script>
+<script src="/assets/bundle.min.js" type="text/javascript"></script>
+<script>
+var search_button_img = '<img src="/templatemedia/img/btn-search-meta.png" alt="Find">';
+</script>
+<script src="/assets/haupia.min.js" type="text/javascript"></script>
+<script src="/assets/KFW_UI_JS_Search_remastered.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="all" href="https://www.kfw.de/Techn-Medien/templatemedia/infographics/Animiertes-Haus/CSS/webforms_css_2.css" />
+<script src="/assets/legacy/webforms_bundle.js" type="text/javascript"></script>
+<script src="/assets/legacy/webforms_custom.js" type="text/javascript"></script>
+<script type='text/javascript'>
+var wt;
+kfwjQuery(document).ready(function($) {
+setTimeout(function(){
+if (window.location.search.indexOf('nowebtrekk=1') === -1) {
+$.getScript('https://www.kfw.de/Technische-Medien/templatemedia/js/vendor/webtrekk_scrollposition.min.js');
+$.getScript('https://www.kfw.de/Techn-Medien/templatemedia/js/vendor/webtrekk_v4.min.js', function(){
+function getViewport() {
+if (!Boolean(document.body)) {
+return;
+}
+return "Viewport " + window.getComputedStyle(document.body, ':after').content.replace(/["']/g, '');
+}
+var webtrekkConfig = {
+trackDomain: "image.kfw.de",
+trackId: "431121349990569,783963359809773",
+domain: "www.kfw.de",
+baseContentId: "KONZERN|DE|KfW-Konzern|Newsroom|Aktuelles|Pressemitteilungen-Details_616256.html",
+contentId: "KONZERN|DE|KfW-Konzern|Newsroom|Aktuelles|Pressemitteilungen-Details_616256.html",
+linkTrack: "link",
+form: "1",
+executePluginFunction : "wt_scrollposition",
+safetag: {},
+internalSearch: ""
+,
+linkTrackAttribute: "data-section"
+,
+optoutName: "webtrekkOptOutGDPR"
+,
+cookie: "1"
+,
+linkTrack: "link"
+,
+linkTrackParams: "null"
+,
+heatmap: "1"
+};
+var searchText = $('h1.search-result').text();
+if(searchText != "" && searchText.length >2){
+searchText = searchText.substr(1, searchText.length-2);
+webtrekkConfig.internalSearch = searchText;
+}
+wt = new webtrekkV3(webtrekkConfig);
+// custom e-commerce parameter
+wt.customEcommerceParameter = {
+};
+wt.customParameter = {
+5: getViewport()
+};
+wt.sendinfo();
+window.addEventListener("orientationchange", function() {
+wt.sendinfo({
+linkId: "turn",
+customParameter: {
+5: getViewport()
+}
+});
+});
+});
+} else {
+function wt_sendinfo() {}
+webtrekkV3 = function() {var ret={}; ret.sendinfo = function(){}; return ret;}
+}
+function initWebtrekConf() {
+};
+}, 500);
+});
+</script>
+<noscript>
+<div><img src="https://image.kfw.de/431121349990569,783963359809773/wt?p=441,KONZERN%7CDE%7CKfW-Konzern%7CNewsroom%7CAktuelles%7CPressemitteilungen-Details_616256.html,0,0,0,0,0,0,0,0" height="1" width="1" alt="" /></div>
+</noscript>
+<script type="text/javascript">
+var wtoptout = kfwjQuery.cookie('webtrekkOptOut');
+if(parseInt(wtoptout,10) <= 0){
+var domain = (function() {
+var windowHostname = window.location.hostname;
+var ip = /^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$/;
+var domainParts = windowHostname.split('.').reverse();
+if (!ip.test(windowHostname) && domainParts.length >= 2) {
+return '.' + domainParts[1] + '.' + domainParts[0];
+}
+})();
+kfwjQuery.cookie("webtrekkOptOut", null, {path: '/', domain: domain, expires: new Date()});
+}
+</script>
+</body>
+</html>

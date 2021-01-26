@@ -1,0 +1,1171 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+<head>
+    <title>Arbejdsfordeling som alternativ til afskedigelse</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="I din virksomhed kan I aftale, at arbejdstiden neds&#230;ttes i en midlertidig periode for at undg&#229; afskedigelser.">
+
+
+
+
+
+            <meta name="content-tags" content="Indholdsside">
+
+
+        <meta name="section" content="Til virksomheder">
+
+        <meta name="subsection" content="Arbejdsfordeling som alternativ til afskedigelse">
+
+    <meta name="publish-date" content="2020-04-14">
+
+
+        <link href="/static/css/vendor/boostrap.css" rel="stylesheet">
+        <link href="/static/css/vendor/boostrap-datepicker.css" rel="stylesheet">
+        <link href="/static/css/main.css" rel="stylesheet">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/static/scrips/vendor/jquery.min.js" data-cookieconsent="ignore"></script>
+        <script src="/static/scrips/vendor/bootstrap-datepicker.js" data-cookieconsent="ignore"></script>
+    
+            <style type="text/css">
+            .mega-menu { color: inherit; background-color: inherit; }
+            </style>
+
+
+
+<link rel="icon" type="image/png" href="https://star.dk/media/9653/krone_favicon.png">
+
+<meta name="google-site-verification" content="Sht6R_fqPRP4SOq9V8ovAIGT1qC-TP702urZSU-BlsA" />
+<meta name="msvalidate.01" content="CB0A757A7E370DE504A6E34DAE667EDA" />
+
+<script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js"
+    data-culture="DA" type="text/javascript"></script>
+
+<style>
+.call-to-action-module H2 {
+    font-size: 1.3333333333em;
+    line-height: 1.4666666667em;
+    margin: 0 0 24px 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+}
+.contact-module HEADER H2 {
+    font-size: 1.8666666667em;
+    line-height: 1.8666666667em;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.promotion-module__details H2 {
+    font-size: 1.8666666667em;
+    line-height: 2.5333333333em;
+    line-height: normal;
+    margin-top: 24px;
+    word-wrap: break-word;
+}
+.search-module__list-module HEADER H2 {
+    font-size: 1.3333333333em;
+    line-height: 1.8666666667em;
+    margin: 0;
+    color: inherit;
+}
+  .header__service-menu {
+    font-size: 0.8666666667rem;
+    line-height: 1.2rem;
+    opacity: 1;
+    transition: opacity 0.1s ease-out; }
+</style>
+            <style type="text/css">
+            .rss-module--jobs UL {
+margin-left: 30px;
+}
+            </style>
+
+
+        <meta property="og:image" content="http://bm.dk/media/2625/beskaeftigelsesministeriet_rgb.png" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+</head>
+<body>
+
+
+<a href="" class="wcag-skip-block wcag-visually-removed" data-skip-block-config='{"skipMainNav":"true"}'>Spring over hovedmenu</a>
+<header role="banner">
+    <section class="mobile-navigation">
+        <button class="mobile-navigation__hamburger btn-none" id="mobile-navigation-control">
+            <svg version="1.1" class="burger-menu-icon icon-closed" id="burger-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 39" xml:space="preserve">
+                <rect x="0" width="50" height="9" />
+
+                <rect x="0" y="15" width="50" height="9" />
+
+                <rect x="0" y="30" width="50" height="9" />
+            </svg>
+            <span class="icon-open glyphicon glyphicon-remove"></span>
+        </button>
+        <div class="mobile-navigation__presentation">
+            <a id="siteTopMobileLogoLink" href="/" class="mobile__image mobile__image-link">
+                <img src="/media/1456/star_logo_web.png" alt="Link til forsiden" />
+            </a>
+        </div>
+        <!-- search icon to display -->
+        <div class="mobile-service-menu">
+        </div>
+        <!-- /search icon to display -->
+    </section>
+    <section class="desktop-navigation">
+        <!-- search field to display -->
+            <div class="search-field-direct">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <form method="get" action="/soeg/" role="search">
+                    <label class="sr-only" for="siteTopSearch">Søg efter indhold på siden</label>
+                    <input id="siteTopSearch" type="text" name="q" class="form-control" placeholder="S&#248;g" tabindex="-1">
+                    <button type="submit" id="siteTopSearchSubmit" class="btn btn-default" tabindex="-1">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <span class="btn-text">Start s&#248;gning</span>
+                    </button>
+                </form>
+                <button type="button" class="btn btn-default btn-cancel search-field-direct-toggle" tabindex="-1">Luk</button>
+            </div>
+        <!-- search field to display -->
+        <div class="header__presentation">
+                <a href="/" class="header__image">
+                    <img src="/media/1456/star_logo_web.png" alt="Link til forsiden" />
+                </a>
+        </div>
+        <nav role="navigation" class="header__service-menu">
+                <ul class="nav nav-pills">
+                        <li><a href="/om-styrelsen/">Om styrelsen</a></li>
+                        <li><a href="/om-styrelsen/kontakt/presse/">Presse</a></li>
+                                    </ul>
+
+                <ul class="nav nav-pills language-chooser">
+                        <li>
+                            <a href="/">
+                                <span class="wcag-visually-removed">
+                                    Danish
+                                </span>
+                                <span class="flag flag-da"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.star.dk/en/">
+                                <span class="wcag-visually-removed">
+                                    English
+                                </span>
+                                <span class="flag flag-en"></span>
+                            </a>
+                        </li>
+                </ul>
+        </nav>
+        <nav role="navigation" class="header__subject-menu">
+            <ul class="nav nav-pills">
+
+
+
+        <li class="dropdown" data-original-state="closed">
+            <a href="#" class="dropdown-toggle">Indsatser &amp; ordninger</a>
+            <ul class="dropdown-menu" id="menu-7b7e606f-8a4c-4a5c-95b5-6ef2e023f49b" aria-hidden="true">
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/">Indsatser og ordninger</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/jobrettet-voksen-og-efteruddannelse-veu/">Jobrettet voksen- og efteruddannelse</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/virksomhedsrettede-redskaber/">Virksomhedsrettede redskaber</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/indsatser-ved-sygdom-nedslidning-mv/">Indsatser ved sygdom, nedslidning mv.</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/virksomhedsservice-og-rekruttering/">Virksomhedsservice og rekruttering</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/kontaktforloeb/">Kontaktforl&#248;b</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/mentorordningen/">Mentorordningen</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/indsatser-til-unge/">Indsatser til unge</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/indsatser-og-ordninger/handicapomraadet/">Handicapomr&#229;det</a>
+                            </div>
+                        </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="dropdown" data-original-state="closed">
+            <a href="#" class="dropdown-toggle">Ydelser</a>
+            <ul class="dropdown-menu" id="menu-b7c7a5b0-95e8-4efd-b1e8-2bfbe4bcc7a1" aria-hidden="true">
+                        <li>
+                            <div>
+                                <a href="/ydelser/">Ydelser</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/ledighed/">Ledighed</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/sygdom-og-barsel/">Sygdom og barsel</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/pension-og-efterloen/">Pension og efterl&#248;n</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/nedsat-arbejdsevne/">Nedsat arbejdsevne</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/boligstoette-boernetilskud-og-hjaelp-i-saerlige-tilfaelde/">Boligst&#248;tte, b&#248;rnetilskud og hj&#230;lp i s&#230;rlige tilf&#230;lde</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/satser-og-udbetaling/">Satser og udbetaling</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/budget-og-konteringsvejledning/">Budget og konteringsvejledning</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/ydelser/refusion/">Refusion</a>
+                            </div>
+                        </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="dropdown" data-original-state="closed">
+            <a href="#" class="dropdown-toggle">Viden &amp; tal</a>
+            <ul class="dropdown-menu" id="menu-8f896076-b43e-4662-94aa-58b21095c79e" aria-hidden="true">
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/">Viden og tal</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/hvad-virker-i-beskaeftigelsesindsatsen/">Hvad virker i besk&#230;ftigelsesindsatsen?</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/udvikling-paa-arbejdsmarkedet/">Udvikling p&#229; arbejdsmarkedet</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/analyser/">Analyser</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/noegletal-om-reformer-paa-beskaeftigelsesomraadet/">N&#248;gletal om reformer</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/statistik/">Statistik</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/investeringer-i-beskaeftigelsesindsatsen/">Investeringer i besk&#230;ftigelsesindsatsen</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/praksisundersoegelser-af-reformer-paa-beskaeftigelsesomraadet/">Praksisunders&#248;gelser</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/viden-og-tal/landsdaekkende-kampagner/">Landsd&#230;kkende kampagner</a>
+                            </div>
+                        </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="dropdown" data-original-state="closed">
+            <a href="#" class="dropdown-toggle">Puljer</a>
+            <ul class="dropdown-menu" id="menu-f4e45651-1a05-4abf-ac80-8a4608c46e89" aria-hidden="true">
+                        <li>
+                            <div>
+                                <a href="/puljer/">Puljer</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/puljer/aktuelle-ansoegningspuljer/">Aktuelle ans&#248;gningspuljer</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/puljer/vejledninger-retningslinjer-og-skabeloner/">Vejledninger, retningslinjer og skabeloner</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/puljer/puljer-med-udloebet-ansoegningsfrist/">Puljer med udl&#248;bet ans&#248;gningsfrist</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/puljer/tilsagn-om-tilskud-fra-ansoegningspuljer/">Tilsagn om tilskud</a>
+                            </div>
+                        </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="dropdown" data-original-state="closed">
+            <a href="#" class="dropdown-toggle">IT</a>
+            <ul class="dropdown-menu" id="menu-45706b3f-183d-41e5-959b-34d671fac620" aria-hidden="true">
+                        <li>
+                            <div>
+                                <a href="/it/">IT</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/it/aktuelt-it/">Aktuelt</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/it/borger-it/">Borger-IT</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/it/virksomheds-it/">Virksomheds-IT</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/it/it-administration-i-jobcentre-og-a-kasser/">IT-administration i jobcentre og a-kasser</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/it/saadan-arbejder-vi-med-it-i-styrelsen/">S&#229;dan arbejder vi med IT i styrelsen</a>
+                            </div>
+                        </li>
+            </ul>
+        </li>
+
+
+
+
+        <li class="dropdown" data-original-state="closed">
+            <a href="#" class="dropdown-toggle">Tilsyn</a>
+            <ul class="dropdown-menu" id="menu-85d845ea-c750-4860-9e2b-5965eec3edb3" aria-hidden="true">
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/">Tilsyn</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/tilsyn-og-kontrol-med-a-kasser/">Tilsyn og kontrol med a-kasser</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/klager-om-arbejdsloeshedsforsikring-og-efterloen/">Klager om a-kasse-afg&#248;relser</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/tilsyn-med-kommuner/">Tilsyn med kommuner</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/tilsynsstrategi/">Tilsynsstrategi</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/feriefonde/">Tilsyn med feriefonde</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/tilsyn-og-kontrol-med-udbetaling-danmark/">Tilsyn med Udbetaling Danmark</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/tilsynsraadet/">Tilsynsr&#229;det</a>
+                            </div>
+                        </li>
+            </ul>
+        </li>
+
+                                    <li id="searchToggleLink">
+                            <a href="#" class="search-field-direct-toggle"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>S&#248;g</a>
+                    </li>
+            </ul>
+        </nav>
+        <!--
+            Mega-menu structure
+            Must be placed before end of HEADER tag.
+            The ID must be unique.
+        -->
+
+    </section>
+</header>
+
+
+
+    <section class="page-top-controls">
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+
+                        <li><a href="/">Forside</a></li>
+                        <li><a href="/til-virksomheder/">Til virksomheder</a></li>
+                        <li>Arbejdsfordeling som alternativ til afskedigelse</li>
+        </ol>
+    </nav>
+
+
+<div class="social-media-sharing">
+    <ul>
+            <li>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.star.dk" class="social-media-sharing__link social-media-sharing--linkedin">
+                    <span class="sr-only">Del p&#229; LinkedIn</span>
+                </a>
+            </li>
+                    </ul>
+</div>
+
+
+
+    </section>
+
+    <section class="page-content">
+    <div id="announcement-box">
+
+        <div class="announcement-box__content">
+            <div class="announcement-box__icon">
+                <img src="/static/icons/alert_icon.svg" alt="" />
+            </div>
+
+            <p>Pga. coronavirus (COVID-19) skal hjemmesidens indhold p.t. læses i sammenhæng med de coronarelaterede temaer og nyheder:</p>
+<p><a data-udi="umb://document/3dd9c8133ec147a3b96127818667b87b" href="/" title="Styrelsen for Arbejdsmarked og Rekruttering">Forsiden af star.dk</a></p>
+
+        </div>
+
+
+    </div>
+
+    </section>
+
+    
+
+
+<main class="page-content container">
+    
+
+
+
+
+    
+
+
+    <div class="umb-grid">
+                <div class="grid-section">
+    <div >
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+                <div >
+                            
+    
+        
+               
+
+<a href="" class="wcag-skip-block wcag-visually-removed" data-skip-block-config='{"skipToNextColumn":"true"}'>Spring over venstremenu</a>              
+
+<button type="button" class="left-menu__mobile-open btn btn-default btn-xs" data-toggle="modal" data-target="#left-menu-modal">
+    Mere <span class="glyphicon glyphicon-plus-sign"></span>
+</button>
+
+<!-- Modal -->
+
+<!-- left menu -->
+<nav class="left-menu" role="navigation">
+        <ul>
+    <li>
+            <a href="/indsatser-og-ordninger/" >Indsatser og ordninger</a>
+
+    </li>
+    <li>
+            <a href="/ydelser/" >Ydelser</a>
+
+    </li>
+    <li>
+            <a href="/viden-og-tal/" >Viden og tal</a>
+
+    </li>
+    <li>
+            <a href="/puljer/" >Puljer</a>
+
+    </li>
+    <li>
+            <a href="/it/" >IT</a>
+
+    </li>
+    <li>
+            <a href="/tilsyn-kontrol-og-klager-over-a-kassernes-afgoerelser/" >Tilsyn, kontrol og klager</a>
+
+    </li>
+    <li>
+            <a href="/om-styrelsen/" >Om styrelsen</a>
+
+    </li>
+    <li>
+            <a href="/reformer/" >Reformer</a>
+
+    </li>
+    <li>
+            <a href="/til-borgere/" >Til borgere</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/" class="left-menu__active" >Til virksomheder</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/brug-dit-lokale-jobcenter/" >Brug dit lokale jobcenter</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/brug-dit-lokale-jobcenter/film-om-at-bruge-jobnet-for-arbejdsgivere/" tabindex=-1>Film om at bruge Jobnet for Arbejdsgivere</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/brug-dit-lokale-jobcenter/film-om-virksomhedernes-erfaringer-med-jobnet-for-arbejdsgivere/" tabindex=-1>Film om virksomhedernes erfaringer med Jobnet for Arbejdsgivere</a>
+
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/" >F&#229; landsd&#230;kkende virksomhedsservice</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/jobserviceaftale/" tabindex=-1>Jobserviceaftale</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/cases-jobserviceaftale/" tabindex=-1>Cases - jobserviceaftale</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/hjaelp-til-at-rekruttere/" tabindex=-1>Hj&#230;lp til at rekruttere</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/hjaelp-til-at-opkvalificere/" tabindex=-1>Hj&#230;lp til at opkvalificere</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/hjaelp-til-at-integrere/" tabindex=-1>Hj&#230;lp til at integrere</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/hjaelp-til-at-integrere/igu/" tabindex=-1>IGU</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/faa-landsdaekkende-virksomhedsservice/hjaelp-til-at-integrere/deltagere-i-sammen-om-integration/" tabindex=-1>Deltagere i Sammen om integration </a>
+
+    </li>
+            </ul>
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/" >Ordninger til at rekruttere, opkvalificere og fastholde</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/mangler-i-et-kursus-til-jeres-medarbejdere/" tabindex=-1>Mangler I et kursus?</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/maal-din-virksomheds-sociale-ansvar/" tabindex=-1>M&#229;l din virksomheds sociale ansvar</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/seniormedarbejdere/" tabindex=-1>Seniormedarbejdere</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/seniormedarbejdere/afklaring-af-behov/" tabindex=-1>Afklaring af behov</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/seniormedarbejdere/samarbejde-og-dialog/" tabindex=-1>Samarbejde og dialog</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/seniormedarbejdere/seniorsamtaler/" tabindex=-1>Seniorsamtaler</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/seniormedarbejdere/seniorkurser/" tabindex=-1>Seniorkurser</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/seniormedarbejdere/senioraftaler/" tabindex=-1>Senioraftaler</a>
+
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/ansoeg-om-optagelse-i-eures-netvaerket/" tabindex=-1>Optagelse i EURES-netv&#230;rket</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/ansoeg-om-optagelse-i-eures-netvaerket/hvad-er-eures/" tabindex=-1>Hvad er EURES</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/ansoeg-om-optagelse-i-eures-netvaerket/fordele-og-muligheder-i-eures-netvaerket/" tabindex=-1>Muligheder i EURES-netv&#230;rket</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/ansoeg-om-optagelse-i-eures-netvaerket/hvad-skal-der-til-for-at-blive-optaget-i-eures-netvaerket/" tabindex=-1>Krav og kriterier for optagelse</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/ansoeg-om-optagelse-i-eures-netvaerket/soeg-om-optagelse-i-eures-netvaerket-adgang-til-ansoegningsskema-og-vejledning/" tabindex=-1>Ans&#248;gningsskema- og vejledning</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/ansoeg-om-optagelse-i-eures-netvaerket/medlemmer-og-partnere-af-eures-netvaerket-i-andre-lande/" tabindex=-1>Medlemmer og partnere i andre lande</a>
+
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/workindenmark/" tabindex=-1>Workindenmark</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/international-citizen-service/" tabindex=-1>International Citizen Service</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/ordninger-til-at-rekruttere-opkvalificere-og-fastholde/eu-stoette-ved-ansaettelse-af-medarbejdere-fra-eu-norge-og-island/" tabindex=-1>EU-st&#248;tte ved ans&#230;ttelse af medarbejdere fra EU, Norge og Island</a>
+
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/medarbejdere-med-handicap/" >Medarbejdere med handicap</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/medarbejdere-med-handicap/kompenserende-ordninger-til-ansatte-med-handicap/" tabindex=-1>Kompenserende ordninger</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/medarbejdere-med-handicap/ansaettelse-af-medarbejder-med-handicap/" tabindex=-1>Ans&#230;ttelse af medarbejder med handicap</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/medarbejdere-med-handicap/fastholdelse-af-medarbejder-med-handicap/" tabindex=-1>Fastholdelse af medarbejder med handicap </a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/medarbejdere-med-handicap/afskedigelse-af-medarbejder-med-handicap/" tabindex=-1>Afskedigelse af medarbejder med handicap </a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/medarbejdere-med-handicap/rimelig-tilpasning-af-arbejdspladsen/" tabindex=-1>Rimelig tilpasning af arbejdspladsen</a>
+
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/sygdom-og-barsel/" >Sygdom og barsel</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/sygdom-og-barsel/min-medarbejder-er-laengerevarende-syg/" tabindex=-1>Min medarbejder er l&#230;ngerevarende syg</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/sygdom-og-barsel/refusion-ved-sygdom-og-barsel/" tabindex=-1>Refusion ved sygdom og barsel</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/sygdom-og-barsel/forsikringsordninger-for-sygedagpenge/" tabindex=-1>Forsikringsordninger for sygedagpenge</a>
+
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/dagpengegodtgoerelse-g-dage-naar-din-medarbejder-stopper/" >Dagpengegodtg&#248;relse (G-dage), n&#229;r din medarbejder stopper</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/varsling-af-stoerre-afskedigelser/" >Varsling af st&#248;rre afskedigelser</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/" aria-current="page" class="left-menu__active" >Arbejdsfordeling som alternativ til afskedigelse</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/kollektiv-overenskomst-eller-aftale/" >Kollektiv overenskomst eller aftale</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/begrebet-virksomhed/" >Begrebet &quot;virksomhed&quot;</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/nedsat-arbejdstid/" >Nedsat arbejdstid</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/anmeldelse-eller-godkendelse/" >Anmeldelse eller godkendelse</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/afskedigelse-og-opsigelse/" >Afskedigelse og opsigelse</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/merarbejde/" >Merarbejde</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/kurser-uddannelse-og-ferie/" >Kurser, uddannelse og ferie</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/dagpengegodtgoerelse-for-foerste-og-anden-ledighedsdag-g-dage/" >Dagpengegodtg&#248;relse (G-dage)</a>
+
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-virksomheder/ydelser-i-eoes-land-eller-schweiz/" >Ydelser i E&#216;S-land eller Schweiz</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/den-dansk-tyske-ferieaftale/" >Den dansk-tyske ferieaftale</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/" >Corona-virus (COVID-19)</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/" tabindex=-1>Sp&#248;rgsm&#229;l og svar</a>
+
+            <ul>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/den-nye-midlertidige-arbejdsfordelingsordning-coronavirus/" tabindex=-1>Den nye midlertidige arbejdsfordelingsordning</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/arbejdsfordeling-coronavirus/" tabindex=-1>Arbejdsfordeling</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/g-dage-coronavirus/" tabindex=-1>G-dage</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/ferieloven-coronavirus/" tabindex=-1>Ferieloven</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/loenkompensation-coronavirus/" tabindex=-1>L&#248;nkompensation</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/sygedagpenge-coronavirus/" tabindex=-1>Sygedagpenge/sygedagpengerefusion</a>
+
+    </li>
+    <li>
+            <a href="/til-virksomheder/info-virksomheder-midlertidige-aendringer-beskaeftigelsesomraadet-foelge-af-coronavirus/til-virksomheder-spoergsmaal-og-svar-midlertidige-aendringer-coronavirus/virksomhedspraktik-loentilskud-vejledning-opkvalificering-coronavirus/" tabindex=-1>Virksomhedspraktik, l&#248;ntilskud, &#248;vrig vejledning og opkvalificering</a>
+
+    </li>
+            </ul>
+    </li>
+            </ul>
+    </li>
+            </ul>
+    </li>
+    <li>
+            <a href="/til-sagsbehandlere-og-medarbejdere/" >Til sagsbehandlere og medarbejdere</a>
+
+    </li>
+    <li>
+            <a href="/til-ledere-analytikere-og-a-kasse-chefer/" >Til ledere, analytikere og a-kasse-chefer</a>
+
+    </li>
+        </ul>
+</nav>
+
+
+
+        
+
+
+
+                </div>
+            </div>            <div class="col-md-8 column">
+                <div >
+                            
+    
+    
+        <h1 class="article-header">Arbejdsfordeling som alternativ til afskedigelse</h1>
+    
+
+
+                            
+    
+    
+        <p class="article-lead">I din virksomhed kan I aftale, at arbejdstiden nedsættes i en midlertidig periode for at undgå afskedigelser.</p>
+    
+
+
+                            
+    
+        
+               
+
+
+
+<article>
+        <figure class="article-image" role="group" >
+            
+
+
+
+    <img src="/media/3332/colourbox27946055_arbejdsfordeling.jpg?anchor=center&amp;mode=crop&amp;width=955&amp;height=537&amp;rnd=132417189700000000"  alt="" />
+
+        </figure>
+</article>
+
+
+        
+
+
+
+                            
+    
+        
+               
+
+
+
+<div class="article-rte">
+    <h2 class="article-subheader">Kollektiv overenskomst eller aftale</h2>
+<p>I en række overenskomster er der adgang til at etablere arbejdsfordeling. På områder, hvor der ikke er overenskomst, eller hvor overenskomsten ikke indeholder regler om arbejdsfordeling, kan der indgås en kollektiv aftale mellem dig som arbejdsgiver og dine ansatte.  </p>
+<p><a data-udi="umb://document/c03210dcec8a4ba2814954c6ef3679a9" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/kollektiv-overenskomst-eller-aftale/" title="Kollektiv-overenskomst-eller-aftale">Arbejdsfordeling i henhold til kollektiv overenskomst eller aftale</a></p>
+<h2 class="article-subheader">Definition af begrebet "en virksomhed"</h2>
+<p>Det er en betingelse for etablering af en arbejdsfordeling, at den omfatter alle medarbejdere i enten hele virksomheden, en virksomhedsafdeling eller en bestemt produktionsenhed.</p>
+<p><a data-udi="umb://document/4f0a49d51efc416b981a787d72152409" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/begrebet-virksomhed/" title="Begrebet-virksomhed">Definition af "virksomhed" ved arbejdsfordeling</a></p>
+<h2 class="article-subheader">Nedsættelse af arbejdstiden </h2>
+<p>Der gælder særlige regler for, hvordan arbejdstiden skal nedsættes. </p>
+<p><a data-udi="umb://document/5823c43add614e8d9782c8740c9a4e2e" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/nedsat-arbejdstid/" title="Nedsat-arbejdstid">Nedsættelse af arbejdstiden ved arbejdsfordeling</a></p>
+<h2 class="article-subheader">Anmeldelse eller godkendelse af en arbejdsfordeling</h2>
+<p>Arbejdsfordelingen skal anmeldes til jobcenteret, hvis arbejdsfordelingen er på højst 13 uger. Er arbejdsfordelingen på mere end 13 uger, skal arbejdsfordelingen godkendes af Det Regionale Arbejdsmarkedsråd (RAR).</p>
+<p><a data-udi="umb://document/9d2ce1a74f80405e8a72a5c30bb48583" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/anmeldelse-eller-godkendelse/" title="Anmeldelse-eller-godkendelse">Anmeldelse eller godkendelse af en arbejdsfordeling</a></p>
+<h2 class="article-subheader">Afskedigelse og opsigelse under en arbejdsfordeling</h2>
+<p>Under arbejdsfordelingen må du som arbejdsgiver ikke afskedige medarbejdere, som er omfattet af arbejdsfordelingen.  </p>
+<p><a data-udi="umb://document/aca62b39d97943a988c56d7abaaefa7f" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/afskedigelse-og-opsigelse/" title="Afskedigelse-og-opsigelse">Afskedigelse og opsigelse under en arbejdsfordeling</a></p>
+<h2 class="article-subheader">Merarbejde under en arbejdsfordeling</h2>
+<p>Perioder med kortvarigt behov for mere arbejdskraft medregnes som udgangspunkt i arbejdsfordelingsperioden. </p>
+<p><a data-udi="umb://document/18abcc8b3cfd43f0976c47a5722880b9" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/merarbejde/" title="Merarbejde">Merarbejde under en arbejdsfordeling</a></p>
+<h2 class="article-subheader">Kurser og ferie under en arbejdsfordeling</h2>
+<p class="article-subheader">Arbejdsfordeling kan godt etableres, selvom medarbejdere skal på kurser eller uddannelse i arbejdsfordelingsperioden. Det er også muligt at holde kollektiv ferielukning under en arbejdsfordeling.</p>
+<p class="article-subheader"><a data-udi="umb://document/1ff017ca94004464a06bfd2de4994b6e" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/kurser-uddannelse-og-ferie/" title="Kurser-uddannelse-og-ferie">Kurser, uddannelse og ferie under en arbejdsfordeling</a></p>
+<h2 class="article-subheader">G-dage for 1. og 2. ledighedsdag</h2>
+<p class="article-subheader">Du skal som arbejdsgiver betale G-dage for de første 2 dage, hvor der ikke arbejdes under arbejdsfordelingen.</p>
+<p class="article-subheader"><a data-udi="umb://document/b8969faa8d4e43ffa980783d4e40b44a" href="/til-virksomheder/arbejdsfordeling-som-alternativ-til-afskedigelse/dagpengegodtgoerelse-for-foerste-og-anden-ledighedsdag-g-dage/" title="Dagpengegodtgoerelse-for-foerste-og-anden-ledighedsdag-g-dage">Dagpengegodtgørelse for 1. og 2. ledighedsdag (G-dage)</a></p>
+<p> </p>
+<p> </p>
+ 
+</div>
+
+
+        
+
+
+
+                </div>
+            </div>        </div>
+    </div>
+                </div>
+    </div>
+
+
+
+
+        <span class="page-content__published-date">Sidst opdateret: 14-04-2020</span>
+</main>
+
+
+<!-- Footer start -->
+
+<footer class="container">
+            <!-- Mainsite footer -->
+            <nav class="footer-menu footer-menu--mainsite-menu row">
+                <div class="footer-menu__container clearfix">
+                    <!-- column -->
+                    <section class="footer-menu--column col-sm-4">
+    <ul>
+                    <li>
+                            <h2><a href="/om-styrelsen/kontakt/" target="_parent">Kontakt</a></h2>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/kontakt/presse/" target="_parent">Presse</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/kontakt/digital-post/" target="_parent">Digital Post</a>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/om-styrelsen/" target="_parent">Om styrelsen</a></h2>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/organisation-og-strategi/" target="_parent">Organisation og strategi</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/ansvar-for-beskaeftigelsesindsatsen/" target="_parent">Ansvar for besk&#230;ftigelsesindsatsen</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/de-regionale-arbejdsmarkedsraad/" target="_parent">De Regionale Arbejdsmarkedsr&#229;d</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/beskaeftigelsesraadet/" target="_parent">Besk&#230;ftigelsesr&#229;det</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/udbud/" target="_parent">Udbud</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/love-og-regler/" target="_parent">Love og regler</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/privatlivspolitik/" target="_parent">Privatlivspolitik</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/om-stardk/" target="_parent">Om star.dk</a>
+                    </li>
+                    <li>
+                            <a href="https://www.was.digst.dk/star-dk" target="_blank">Tilg&#230;ngelighedserkl&#230;ring</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/om-stardk/styrelsens-forskellige-hjemmesider/" target="_parent">Styrelsens forskellige hjemmesider</a>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/om-styrelsen/nyt/ledige-stillinger/" target="_parent">Ledige stillinger</a></h2>
+                    </li>
+    </ul>
+                    </section>
+                    <!-- column -->
+                    <section class="footer-menu--column col-sm-4">
+    <ul>
+                    <li>
+                            <h2><a href="/om-styrelsen/nyt/" target="_parent">Nyheder</a></h2>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/nyheder/" target="_parent">Forsidenyheder</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/nyt-om-reformer/" target="_parent">Nyt om reformer</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/nyt-om-it/" target="_parent">Nyt om IT</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/nyt-fra-regnskabstilsynet/" target="_parent">Nyt fra Regnskabstilsynet</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/nyt-fra-specialfunktionen-job-og-handicap/" target="_parent">Nyt fra Specialfunktionen Job og Handicap</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/aktivitetskalender/" target="_parent">Aktivitetskalender</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/abonner/" target="_parent">Abonn&#233;r</a>
+                    </li>
+                    <li>
+                            <a href="/om-styrelsen/nyt/rss-feeds/" target="_parent">RSS-feeds</a>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/om-styrelsen/publikationer/" target="_parent">Publikationer</a></h2>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/om-styrelsen/blanketter/" target="_parent">Blanketter</a></h2>
+                    </li>
+    </ul>
+                    </section>
+                    <!-- column -->
+                    <section class="footer-menu--column col-sm-4">
+    <ul>
+                    <li>
+                            <h2><a href="/til-borgere/" target="_parent">Til borgere</a></h2>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/til-virksomheder/" target="_parent">Til virksomheder</a></h2>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/til-sagsbehandlere-og-medarbejdere/" target="_parent">Til sagsbehandlere og medarbejdere</a></h2>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/til-ledere-analytikere-og-a-kasse-chefer/" target="_parent">Til ledere, analytikere og a-kassechefer</a></h2>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="https://www.star.dk/en/" target="_parent">English</a></h2>
+                    </li>
+    </ul>
+                    </section>
+                </div>
+            </nav>
+
+        <section class="footer__permanent">
+            <address>
+                <span>Styrelsen for Arbejdsmarked og Rekruttering</span><span>Vermundsgade 38</span><span>2100 København Ø</span><span>Telefon: 72 21 74 00</span><a href='mailto:star@star.dk' target='_blank'><span style="text-decoration: underline;">Email: star@star.dk</span></a><span>CVR: 55 56 85 10</span><a href='http://www.linkedin.com/company/162495/' target=_blank><span style="text-decoration: underline;">Følg os på LinkedIn</span></a>
+                <a href="#" id="print-button">
+                    <span class="wcag-visually-removed">
+                        print side
+                    </span>
+                    <span class="glyphicon glyphicon-print"></span>
+                </a>
+            </address>
+        </section>
+
+</footer>
+
+    <div class="scroll-to-top" id="scroll-to-top" aria-hidden="true">
+        <span class="glyphicon glyphicon-menu-up"></span>
+    </div>
+
+
+
+
+
+
+
+        <script src="/static/scrips/vendor/bootstrap.js" data-cookieconsent="ignore"></script>
+        <script src="/static/scrips/main.js "></script>
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.jobnet.dk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+            <script type="text/javascript">
+        (function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_5333188.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+            </script>
+
+
+
+
+
+
+    
+
+    <!-- Vue vendor js-file -->
+    <script src="/static/vue/vendor.js" data-cookieconsent="ignore"></script>
+
+</body>
+</html>

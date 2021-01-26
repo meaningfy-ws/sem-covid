@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="sk-SK">
+
+<head>
+    <!-- Document Meta
+    ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--IE Compatibility Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Prvá pomoc zamestnancom, podnikateľom a živnostníkom">
+    <link href="assets/images/favicon/favicon.ico" rel="icon">
+
+    <meta property="og:title" content="Pomáhame ľuďom - Prvá pomoc PLUS">
+    <meta property="og:image" content="assets/images/fb/fb_share.jpg">
+
+    <!-- Fonts
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="assets/css/external.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/autocomplete.css">
+
+    <style>
+        .autocomplete__hint,
+        .autocomplete__option {
+            font-family: "GDS Transport", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .autocomplete__hint,
+        .autocomplete__input {
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 400;
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 1.25;
+            height: auto;
+
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #fff;
+            /*box-shadow: 0 0 15px rgba(0,0,0,.1) ;*/
+            margin-top: 5px;
+        }
+
+        .autocomplete__input--focused {
+            outline: none;
+            outline-offset: 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+        }
+
+        @media (min-width: 40.0625em) {
+
+            .autocomplete__hint,
+            .autocomplete__input {
+                font-size: 18px;
+                font-size: 1.125rem;
+                line-height: 1.33333;
+            }
+        }
+    </style>
+    <link href="assets/css/mpsvr_4.css?v=3.0" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162756287-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162756287-1');
+    </script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MK8TBGM');</script>
+    <!-- End Google Tag Manager -->
+    
+    
+    <!-- Document Title
+        ============================================= -->
+    <title>Pomáhame ľuďom - Prvá pomoc PLUS</title>
+    </head>
+    
+    <body class="body-scroll">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK8TBGM" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="wrapper clearfix">
+        <!-- Header
+============================================= -->
+        <header id="navbar-spy" class="header header-1 header-transparent header-fixed">
+            <nav id="primary-menu" class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img class="logo logo-dark" src="assets/images/MPSVR/MPSVR-SR-logo.svg"
+                            alt="Ministerstvo práce, sociálnych vecí a rodiny Slovenskej republiky">
+                    </a>
+
+                    <div class="infolinka clearfix">
+                        <img class="phone_icon" src="assets/images/MPSVR/icon_phone.svg" alt="Ikonka telefónu">
+                        <p><span>Infolinka:</span> &nbsp; <em><a href="kontakty">Telefónny zoznam</a></em><br>
+                            <span>Pracovné dni:</span> &nbsp; <em>8:00 – 15:00</em><br>
+                            <span>Email:</span> &nbsp; <em><a
+                                    href="mailto:covid19@praca.gov.sk">covid19@praca.gov.sk</a></em></p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Slider #1
+============================================= -->
+        <section id="hero" class="section hero">
+            <div id="prva_pomoc_plus">
+                <div class="container">
+                    <div class="row row-content">
+                        <div id="prva_pomoc_plus_single_header" class="col-12 col-md-12 col-lg-5">
+                            <div class="hero-headline">
+                                <img src="assets/images/logos/Prva_pomoc_PLUS.svg" alt="Prvá pomoc PLUS">
+                                <h2>
+                                    zamestnávateľom, <br>zamestnancom <br>a živnostníkom
+                                </h2>
+                            </div>
+                            <div class="hero-bio">
+                                
+                                Žiadosti a výkazy za mesiac <em>OKTÓBER</em><br> a <em>NOVEMBER</em> môžete zasielať <br><em>do 31. januára 2021</em>. <br><br>
+                                Žiadosti a výkazy za mesiac <em>DECEMBER</em> môžete zasielať <em>do 28. februára 2021</em>. <br><br>
+                                <em>Elektronický formulár</em> na zber dát o účastníkoch projektu <em>za mesiace marec až jún 2020</em> vyplňte <em>do 31. marca 2021.</em>
+                            </div>
+                            <div class="hero-action">
+                                <a href="#pomoc" class="btn btn--gradient" data-scroll="scrollTo"
+                                    title="Viac informácií">Viac informácií</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 offset-lg-1">
+                            <div class="hero-img">
+                                <img class="img-fluid" src="assets/images/MPSVR/illustration-08.svg"
+                                    alt="kreslený hrdina podnikateľ ovplyvnený dopadom vírusu ">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                    <div class="row download">
+                        <!-- <div class="col-12">
+                            <div class="alerts plus_alert">
+                                <div class="alert alert-info" role="alert">                              
+                                    <em>Existujúcim žiadateľom</em> bude úrad práce <em>od 2.novembra 2020</em> posielať <em>dodatky k dohodám</em>.
+                                    <br><em>Noví žiadatelia</em>, ktorí nemajú s úradom práce podpísanú dohodu, môžu požiadať o pomoc 
+                                    <em>v týždni od 9. novembra 2020 do 31.januára 2021</em>.
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <ul class="new_points">
+                                <li class="important">Vyššia finančná pomoc pre širší okruh žiadateľov</li>
+                                <li>O pomoc môžu žiadať zamestnávatelia a SZČO <em>so začiatkom podnikania najneskôr k
+                                        2. 9. 2020.</em>. Zamestnávatelia môžu žiadať o príspevok aj na zamestnancov,
+                                    ktorí nastúpili do zamestnania najneskôr 2. 9. 2020.</li>
+                                <li><em>Pomoc pre ľudí</em>, ktorí <em>majú súbeh zárobkovej činnosti a pracovného
+                                        pomeru</em>: iný príjem sa odpočíta od výšky príspevku (opatrenia 2, 4A, 4B)
+                                </li>
+                                <li>Súbežná podpora z iných ministerstiev je dovolená (ministerstvo hospodárstva,
+                                    ministerstvo kultúry, ministerstvo dopravy)</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div id="vyssia_pomoc" class="row">
+                        <div class="col-12">
+                            <div class="heading heading-1 text--center">
+                                <h2 class="heading-title">
+                                    <span class="underline"><span class="text"><span class="red">Vyššia
+                                                pomoc</span></span></span><br> v rámci jednotlivých opatrení:
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-5">
+                            <h3>Opatrenia č. 1 a č. 3A</h3>
+                            <p>Zvyšujeme pomoc z 80% hrubej mzdy na 80% celkovej ceny práce. To znamená, že štát
+                                preplatí zamestnávateľovi aj časť odvodov hradených zamestnávateľom za zamestnanca. V
+                                opatrení č. 3A sa maximálna výška pomoci zvýšila z 880 € na 1100 €.</p>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-7 image-column">
+                            <img src="assets/images/prva_pomoc_plus/80_percent.svg"
+                                alt="80% hrubej mzdy -> 80% celkovej ceny práce">
+                            <img src="assets/images/prva_pomoc_plus/maximum.svg" alt="max. 880€ -> max. 1100€">
+                        </div>
+
+
+
+                        <div class="col-12">
+                            <hr>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-5">
+                            <h3>Opatrenia č. 2 a č. 3B</h3>
+                            <p>Pomoc v závislosti od poklesu tržieb. O 50% viac ako v predošlej „Prvej pomoci“.</p>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-7 image-column">
+                            <img src="assets/images/prva_pomoc_plus/plus_50_percent.svg" alt="+50 % €">
+                        </div>
+
+                        <div class="col-12">
+                            <hr>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-5">
+                            <h3>Opatrenie č. 4</h3>
+                            <p>Zvyšujeme paušálny príspevok z 210 € na 315 €.</p>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-7 image-column">
+                            <img class="big" src="assets/images/prva_pomoc_plus/zvyseny_pausalny_prispevok.svg"
+                                alt="210€ -> 315€">
+                        </div>
+
+                        <div class="col-12">
+                            <hr>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-5">
+                            <h3>Opatrenie č. 5</h3>
+                            <p>Zvyšujeme paušálny príspevok z 210 € na 300 €.</p>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-7 image-column">
+                            <img class="big" src="assets/images/prva_pomoc_plus/zvyseny_pausalny_prispevok_sos.svg"
+                                alt="210€ -> 300€">
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alerts top">
+                                <div class="alert alert-info" role="alert">
+                                    <div id="accordion">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                                    aria-controls="collapseOne">
+                                                    <em>POSTUP PRI PODÁVANÍ ŽIADOSTÍ ZA OKTÓBER</em>
+                                                </a>
+                                                
+                                            </div>
+                                    
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <ol type="1">
+                                                        <li>
+                                                            <em>Zamestnávatelia a SZČO, ktorí</em> už majú uzatvorenú dohodu s úradom
+                                                            práce, sociálnych vecí a rodiny a <em>žiadajú opakovane</em> o pomoc v rámci
+                                                            toho istého opatrenia:
+                                                    
+                                                            <ul>
+                                                                <li>
+                                                                    úrad práce, sociálnych vecí a rodiny zašle žiadateľovi <em>dodatok k
+                                                                        dohode</em>, ktorého predmetom bude upravená (vyššia) suma
+                                                                    pomoci (ak žiadateľ spĺňa podmienky aktuálne zverejneného oznámenia)
+                                                                    <ul>
+                                                                        <li>žiadateľ dodatok podpíše a pošle na úrad práce, sociálnych
+                                                                            vecí a rodiny</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                    
+                                                            <ul>
+                                                                <li>žiadateľ pošle príslušnému úradu práce, sociálnych vecí a rodiny
+                                                                    <em>vyplnený výkaz za október</em></li>
+                                                                <ul>
+                                                                    <li>do výkazu je potrebné uviesť číslo dohody s úradom práce,
+                                                                        sociálnych vecí a rodiny</li>
+                                                                </ul>
+                                                            </ul>
+                                                    
+                                                    
+                                                        </li>
+                                                        <li>
+                                                            <em>Zamestnávatelia a SZČO, ktorí</em> si vyberajú iné opatrenie ako za
+                                                            predchádzajúce mesiace, alebo <em>žiadajú</em> o pomoc <em>prvýkrát</em>:
+                                                            <ul>
+                                                                <li>
+                                                                    žiadateľ pošle príslušnému úradu práce, sociálnych vecí a rodiny
+                                                                    <em>žiadosť a vyplnený výkaz za október</em>
+                                                                    <ul>
+                                                                        <li>pri podávaní žiadosti postupuje podľa inštrukcií uvedených
+                                                                            vo zverejnených dokumentoch pri každom opatrení</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                    
+                                                    Pozor! <em>Zamestnávateľ</em> podáva žiadosť a výkazy <em>výlučne elektronicky</em>
+                                                    prostredníctvom portálu <a target="_blank" href="https://www.slovensko.sk">www.slovensko.sk</a>.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        <em>POSTUP PRI PODÁVANÍ ŽIADOSTÍ ZA NOVEMBER ALEBO DECEMBER</em>
+                                                    </a>
+                                                
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <ol type="1">
+                                                        <li>
+                                                            <em>Zamestnávatelia, ktorí žiadajú opakovane o pomoc v rámci toho istého opatrenia:</em>
+                                                    
+                                                            <ul>
+                                                                <li>
+                                                                    zašlite príslušnému úradu práce už <em>iba vyplnený výkaz</em> za november/december
+                                                                </li>
+                                                                <li>
+                                                                    do výkazu je potrebné <em>uviesť číslo dohody</em>, ktorú ste podpísali s Úradom práce, sociálnych vecí
+                                                                    a rodiny
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li style="margin-bottom: 0;">
+                                                            <em>Zamestnávatelia, ktorí si vyberajú iné opatrenie</em> ako za predchádzajúce mesiace, <em>alebo žiadajú o
+                                                                pomoc prvýkrát:</em>
+                                                            <ul style="margin-bottom: 0;">
+                                                                <li>
+                                                                    zašlite príslušnému úradu práce <em>žiadosť a vyplnený výkaz</em> za november/december
+                                                                </li>
+                                                                <li>
+                                                                    pri podávaní žiadosti postupujte podľa inštrukcií uvedených vo zverejnených dokumentoch
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- #slider end -->
+
+
+
+        <!-- Feature #1
+============================================= -->
+        <section id="pomoc" class="section feature feature-center bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6 offset-lg-3">
+                        <div class="heading heading-1 text--center mb-80">
+                            <h2 class="heading-title">
+                                <span class="underline"><span class="text"><span class="red">Pomoc</span> je
+                                        určená:</span></span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row features first-line">
+                    <!-- Panel #1 -->
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="feature-panel">
+                            <div class="feature-img bg-red">
+                                <img id="closed" src="assets/images/MPSVR/icon_closed.svg" alt="tabuľka Zatvorené">
+                            </div>
+                            <div class="feature-content">
+                                <h3>1) zamestnávateľom (vrátane SZČO, ktoré sú zamestnávateľmi), <em>ktorí museli svoje
+                                        prevádzky zatvoriť alebo obmedziť svoju činnosť</em> na základe rozhodnutia
+                                    <br><a class="link" target="_blank"
+                                        href="http://www.uvzsr.sk/index.php?option=com_content&view=category&layout=blog&id=250&Itemid=153">Úradu
+                                        verejného zdravotníctva SR.</a> </h3>
+                                <p>Ak patríte do tejto skupiny, môžete požiadať o <em>príspevok na náhradu mzdy
+                                        zamestnanca</em>.</p>
+                                <br><br><br>
+                            </div>
+                            <div class="feature-button move">
+                                <a id="mam_zatvorene_prelink" href="#mam_zatvorene" class="btn btn--gradient" data-scroll="scrollTo"
+                                    title="Podať žiadosť v prípade zatvorenia prevádzok">Podať žiadosť</a>
+                            </div>
+                        </div>
+                        <!-- .feature-panel end -->
+                    </div>
+                    <!-- .col-md-6 end -->
+
+
+                    <!-- Panel #2 -->
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="feature-panel">
+                            <div class="feature-img bg-red">
+                                <img id="crisis_closed" src="assets/images/MPSVR/icon_crisis_closed.svg"
+                                    alt="ilustračný graf">
+                            </div>
+                            <div class="feature-content">
+                                <h3>2) SZČO, <em>ktoré museli svoje prevádzky zatvoriť</em> na základe rozhodnutia <a
+                                        class="link" target="_blank"
+                                        href="http://www.uvzsr.sk/index.php?option=com_content&view=category&layout=blog&id=250&Itemid=153">Úradu
+                                        verejného zdravotníctva SR</a> alebo im <em>poklesli tržby o najmenej 20 %.</em>
+                                </h3>
+                                <p>Ak patríte do tejto skupiny, môžete požiadať o <em>paušálny príspevok na náhradu
+                                        straty príjmu zo samostatnej zárobkovej činnosti.</em> </p>
+                                <br><br>
+                                <div class="feature-button move">
+                                    <a id="klesli_trzby_prelink" href="#klesli_trzby" class="btn btn--gradient" data-scroll="scrollTo"
+                                        title="Podať žiadosť v prípade poklesu tržieb">Podať žiadosť</a>
+                                    <!-- <p>
+                                        Táto časť bude pre žiadateľov sprístupnená 8. apríla 2020 o 12:00.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .feature-panel end -->
+                    </div>
+                    <!-- .col-md-6 end -->
+
+                    <!-- Panel #1 -->
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="feature-panel">
+                            <div class="feature-img bg-red">
+                                <img id="employees" src="assets/images/MPSVR/icon_employees.svg"
+                                    alt="tabuľka Zatvorené">
+                            </div>
+                            <div class="feature-content">
+                                <h3>3) zamestnávateľom (vrátane SZČO, ktoré sú zamestnávateľmi), <em>ktorí udržia
+                                        pracovné miesta </em> aj v prípade prerušenia alebo obmedzenia svojej činnosti
+                                    počas vyhlásenej mimoriadnej situácie.</h3>
+                                <p>Ak patríte do tejto skupiny, môžete požiadať o <em>príspevok na mzdu
+                                        zamestnanca</em>.</p>
+                                <br><br><br>
+                            </div>
+                            <div class="feature-button move">
+                                <a id="udrzia_miesta_prelink" href="#udrzia_miesta" class="btn btn--gradient" data-scroll="scrollTo"
+                                    title="Podať žiadosť v prípade udržania pracovných miest aj napriek obmedzeniu činnosti">Podať
+                                    žiadosť</a>
+                            </div>
+                        </div>
+                        <!-- .feature-panel end -->
+                    </div>
+                    <!-- .col-md-6 end -->
+                </div>
+                <div class="row features third-line">
+
+                    <!-- Panel #2 -->
+                    <div class="col-12 col-md-12 col-lg-4 offset-lg-2">
+                        <div class="feature-panel">
+                            <div class="feature-img bg-red">
+                                <img id="crisis" src="assets/images/MPSVR/icon_crisis_total.svg" alt="ilustračný graf">
+                            </div>
+                            <div class="feature-content">
+                                <h3>4) SZČO a jednoosobovým s.r.o., <em>ktoré nemajú príjem z podnikania.</em> </h3>
+                                <p>Ak patríte do tejto skupiny, môžete požiadať o <em>príspevok na náhradu straty príjmu
+                                        zo zárobkovej činnosti.</em> </p>
+                                <br><br>
+                                <div class="feature-button move">
+                                    <a id="bez_prijmu_prelink" href="#bez_prijmu" class="btn btn--gradient" data-scroll="scrollTo"
+                                        title="Podať žiadosť v prípade poklesu tržieb">Podať
+                                        žiadosť</a>
+                                    <!-- <p>
+                                        Pomoc pre túto skupinu žiadateľov sprístupníme po 20. apríli 2020. 
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .feature-panel end -->
+                    </div>
+                    <!-- .col-md-6 end -->
+
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="feature-panel">
+                            <div class="feature-img bg-red">
+                                <img id="help" src="assets/images/MPSVR/icon_help.svg" alt="tabuľka Zatvorené">
+                            </div>
+                            <div class="feature-content">
+                                <h3>5) občanom, ktorí sa počas pandémie koronavírusu ocitli v krízovej situácii bez
+                                    príjmu.</h3>
+                                <p>Ak patríte do tejto skupiny, môžete požiadať o dotáciu <em>príslušný Úrad práce,
+                                        sociálnych vecí a rodiny SR.</em></p>
+                                <br><br><br>
+                            </div>
+                            <div class="feature-button move">
+                                <a id="obcania_v_krize_prelink" href="#obcania_v_krize" class="btn btn--gradient" data-scroll="scrollTo"
+                                    title="Podať žiadosť v prípade ocitnutia sa v krízovej situácii">Podať žiadosť</a>
+                            </div>
+                        </div>
+                        <!-- .feature-panel end -->
+                    </div>
+                    <!-- .col-md-6 end -->
+
+                </div>
+                <!-- .row end -->
+
+                <!--  <div class="row features third-line">
+                    Panel #1
+                                    
+                </div> -->
+                <!-- .row end -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="alerts">
+                            <div class="alert alert-info" role="alert">
+                                Aby sme žiadateľom vyplatili príspevky čo najskôr, celý proces schvaľovania sme
+                                zjednodušili. Aj preto na splnenie niektorých podmienok stačí podať <em>žiadosť a výkaz
+                                    pre priznanie príspevku za príslušný mesiac.</em>
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <em>POZOR:</em> Ak bude pri následnej kontrole zistená <em>nepravdivosť údajov uvedených
+                                    v žiadosti,</em> môže byť táto skutočnosť <em>klasifikovaná</em> ako podvod alebo
+                                subvenčný podvod – teda <em>ako trestný čin</em> s trestnoprávnymi dôsledkami. Žiadateľ
+                                by bol v takomto prípade zároveň povinný vrátiť poskytnutý finančný príspevok.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- #feature1 end -->
+        <!-- Feature #2
+============================================= -->
+        <section id="mam_zatvorene" class="section feature feature-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="heading heading-1  mb-80">
+                            <h2 class="heading-title">
+                                <span class="underline"><span class="text"></span>1) Zamestnávatelia,</span></span><br>
+                                ktorí museli svoje prevádzky <span class="red">zatvoriť</span>
+                            </h2>
+                            <p>alebo obmedziť svoju činnosť rozhodnutím
+                                <a class="link"
+                                    href="http://www.uvzsr.sk/index.php?option=com_content&view=category&layout=blog&id=250&Itemid=153"
+                                    target="_blank">Úradu verejného zdravotníctva SR</a>.</p>
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="illustration">
+                            <img class="img-fluid pull-right" src="assets/images/MPSVR/illustration-02.svg"
+                                alt="podnikateľ, ktorý musel svoju prevádzku zatvoriť">
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+
+                </div>
+                <!-- .row end -->
+                <div class="row definitions">
+                    <div class="col-12 col-md-12 col-lg-6 left">
+                        <div class="definition ziadatel">
+                            <h3>Oprávnený žiadateľ:</h3>
+                            <ul>
+                                <li>
+                                    <p><em>zamestnávateľ, vrátane SZČO, ktorá je zamestnávateľom </em> (okrem subjektov
+                                        verejnej správy), ktorý udrží pracovné miesta po dobu jedného mesiaca v čase
+                                        vyhlásenej mimoriadnej situácie, núdzového alebo výnimočného stavu a dva mesiace
+                                        po jeho ukončení. A to aj v prípade prerušenia alebo obmedzenia svojej
+                                        prevádzkovej činnosti na základe rozhodnutia Úradu verejného zdravotníctva SR.
+                                    </p>
+                                </li>
+                                <li>
+                                    Žiadateľom o príspevok môže byť len zamestnávateľ, ktorý začal prevádzkovať svoju
+                                    činnosť najneskôr k 2. 9. 2020.
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="definition cielovka">
+                            <h3>Cieľová skupina: </h3>
+                            <ul>
+                                <li>
+                                    <p><em>zamestnanec,</em> ktorému zamestnávateľ alebo SZČO, ktorá je zamestnávateľom,
+                                        nemôže prideľovať prácu z dôvodu prekážky na strane zamestnávateľa (§ 142
+                                        Zákonníka práce). </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 right">
+                        <div class="definition prispevok">
+                            <h3>Výška príspevku: </h3>
+                            <p>Úhrada náhrady mzdy zamestnanca vo výške <br><em>80 % celkovej ceny práce</em>,
+                                <em>najviac</em> vo výške <em>1100 €</em>.</p>
+                        </div>
+                        <div class="definition obdobie">
+                            <h3>Oprávnené obdobie:</h3>
+                            <p>Od 13. marca 2020 – teda od dňa rozhodnutia Úradu verejného zdravotníctva SR o uzatvorení
+                                niektorých prevádzok do konca kalendárneho mesiaca, v ktorom bude rozhodnutie Úradu
+                                verejného zdravotníctva SR zrušené.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <hr>
+                <!-- .row end -->
+                <div class="row download">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row search definitions">
+                            <div class="col-12 col-lg-12 col-xl-11 ">
+                                <div class="definition mail">
+                                    <h3 class="govuk-heading-l">
+                                        Výhradne elektronické zasielanie:
+                                    </h3>
+
+                                    <p><em>Zamestnávateľ podáva žiadosť a výkazy výlučne elektronicky prostredníctvom
+                                            Ústredného portálu verejnej správy</em> <a target="_blank"
+                                            href="https://www.slovensko.sk">www.slovensko.sk</a>.</p>
+
+                                    <ul style="padding-left: 20px;">
+                                        <li>
+                                            Podávanie Žiadosti o poskytnutie finančného príspevku pre zamestnávateľov v
+                                            rámci projektu PRVÁ POMOC <br><br>
+                                            <a id="opatrenie_1_ziadost"
+                                                href="https://www.slovensko.sk/sk/detail-sluzby?externalCode=ks_339580"
+                                                class="btn btn--gradient outlink" data-scroll="scrollTo" target="_blank"
+                                                download="" title="Podať žiadosť">Podať <br>žiadosť</a>
+                                            <br><br>
+                                        </li>
+                                        <li>
+                                            Podávanie Výkazu k Žiadosti o finančný príspevok pre zamestnávateľov v rámci
+                                            projektu PRVÁ POMOC pre opatrenie 1 <br><br>
+                                            <a id="opatrenie_1_vykaz"
+                                                href="https://www.slovensko.sk/sk/detail-sluzby?externalCode=ks_339576"
+                                                class="btn btn--gradient outlink" data-scroll="scrollTo" target="_blank"
+                                                download="" title="Podať výkaz">Podať <br>výkaz</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row">
+                            <!-- <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/Ziadost_opatrenie_1_2020_04_22.xlsx" class="btn btn--gradient xlsx" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť na stiahnutie">Žiadosť <br>(33 KB)</a>
+                                <a href="pp_plus_docs/Ziadost_opatrenie_1_2020_04_22.ods" class="doc extra" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť na stiahnutie vo formáte ODS">Žiadosť vo formáte ODS (27 KB)</a>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/september/Vykaz_opatrenie_1_sept.xlsx" class="btn btn--gradient xlsx extra-line" data-scroll="scrollTo" target="_blank" download="" title="Výkaz na stiahnutie">Výkaz <br><span class="month">(September)</span><br>(178 KB)</a>
+                                <a href="pp_plus_docs/september/Vykaz_opatrenie_1_sept.ods" class="doc extra" data-scroll="scrollTo" target="_blank" download="" title="Výkaz na stiahnutie vo formáte ODS">Výkaz za September <br>vo formáte ODS (174 KB)</a>
+                            </div> -->
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <a href="pp_plus_docs/januar/Oznamenie_platnost_od_04012021.pdf" class="podmienky"
+                                    target="_blank" download>Oznámenie o možnosti predkladania žiadostí o poskytnutie
+                                    finančného príspevku (Platné pre oprávnené obdobie od 1. 10. 2020) (1,2 MB)</a><br>
+
+                                <a href="pp_plus_docs/Oznamenie_o_zmene_zdroja_financovania.pdf" class="podmienky"
+                                    target="_blank" download><strong style="text-transform: uppercase;">Oznámenie o
+                                        zmene zdroja financovania projektu "Prvá pomoc" (498 KB)</strong></a><br>
+
+                                <!-- <a href="pp_plus_docs/OPATRENIE-c1-podmienky_2020_04_23.pdf" class="podmienky" target="_blank" download>Podmienky pre získanie príspevku – opatrenie 1 (240 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/november/Manual_vykaz_1.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu žiadosti pre priznanie príspevku (549 KB)</a><br>
+
+                                <a href="pp_plus_docs/november/Manual_Ziadost_1_3A_3B.pdf" class="podmienky"
+                                    target="_blank" download>Manuál k vypĺňaniu výkazu pre priznanie príspevku (461
+                                    KB)</a><br>
+
+                                <a href="pp_plus_docs/StatistickaKlasifikaciaEkonomickychCinnosti.pdf" class="podmienky"
+                                    target="_blank" download>Štatistická klasifikácia ekonomických činností SK NACE
+                                    Rev. 2 (1 869 KB)</a><br>
+
+                                <a href="pp_plus_docs/priloha-1-nariadenie-EK-o-velkosti-podniku.pdf" class="podmienky"
+                                    target="_blank" download>Nariadenie Európskej komisie o veľkosti podniku (162
+                                    KB)</a><br>
+
+                                <!-- <a href="pp_plus_docs/Zasielanie_formularov_na_podanie_ziadosti_na_Urady_PSVR.PDF" class="podmienky" target="_blank" download>Zasielanie žiadostí a výkazov do elektronickej schránky úradov práce, sociálnych vecí a rodiny (738 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/Ako_prebrat_a_odoslat_naspat_dohodu.pdf" class="podmienky"
+                                    target="_blank" download>Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke (868 KB)</a><br>
+
+                                <a href="https://www.youtube.com/watch?v=NvGJKLRoqUA" class="podmienky video"
+                                    target="_blank">Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke</a><br>
+                                <!-- 
+                                <a href="pp_plus_docs/definicia_podnik_v_tazkostiach_web_oplz.pdf" class="podmienky" target="_blank" download>Definícia podniku v ťažkostiach (267 KB)</a><br> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- .row end -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="alerts">
+                            <div class="alert alert-danger" role="alert">
+                                <em>Zber štatistických údajov</em> <br><br>
+                                
+                                POZOR! V zmysle nariadenia EÚ, žiadame, aby <em>zamestnávatelia</em> (vrátane <em>SZČO</em>, ktoré sú zamestnávateľmi)
+                                <em>
+                                    poskytli do 31. marca 2021 štatistické údaje o všetkých zamestnancoch, ktorých uviedli
+                                    v žiadostiach</em> o poskytnutie finančného príspevku na udržanie pracovných miest <em> za mesiace marec
+                                    až jún 2020</em>. Platí to aj pre <em> SZČO, ktoré nemajú uzatvorený pracovný pomer so žiadnou
+                                    fyzickou osobou, uvádzajú</em> tak štatistické <em>údaje o sebe</em>. <br><br>
+
+                                <a href="https://www.employment.gov.sk/sk/informacie-media/aktuality/zber-statistickych-udajov-osobach-podporenych-ramci-projektu-prva-pomoc.html" target="_blank">
+                                    Viac informácií a manuál k vypĺňaniu >
+                                </a><br><br>
+                                
+                                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=2AMcLxk8qEie8A17LG54sFuDF1ljbqRIq5-JSMBopMtUOFhGV0dMNTUzVUZQQldPSzhUMUhCR1RUVy4u" target="_blank" >
+                                    Elektronický formulár >
+                                </a>
+                                
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <em>POZOR:</em> Od 25. apríla 2020 <em>môžete o príspevok požiadať aj vtedy, ak máte
+                                    povolený splátkový kalendár</em> pre zaplatenie dlžných súm dane, poistných odvodov
+                                do Sociálnej poisťovne alebo zdravotnej poisťovne alebo finančných záväzkov voči úradu
+                                práce alebo <em>nemáte za mesiac február 2020</em> splnené daňové povinnosti, povinnosti
+                                odvodu na poistné na verejné zdravotné poistenie alebo na sociálne poistenie alebo
+                                uhradené splatné finančné záväzky voči úradu práce. <em>Podrobnosti sú uvedené v <a
+                                        href="pp_plus_docs/november/Manual_Ziadost_1_3A_3B.pdf" target="_blank"
+                                        download>manuáli k vypĺňaniu žiadosti pre priznanie príspevku</a>.</em>
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <em>Ak spĺňate podmienky pre získanie príspevku,</em> pošlite vyplnenú žiadosť a výkaz
+                                na príslušný úrad práce, sociálnych vecí a rodiny, v ktorého územnom obvode udržíte
+                                pracovné miesto. Ak máte viac ako jednu prevádzku a žiadate príspevok na zamestnancov
+                                týchto prevádzok, pošlite žiadosť na úrad práce sociálnych vecí a rodiny, v ktorého
+                                územnom obvode máte sídlo.
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <em>Partnerom verejného sektora</em> je ten, komu má byť <em>jednorazovo</em> poskytnuté
+                                plnenie zo zmluvy <em>prevyšujúce hodnotu 100 000 eur</em> alebo opakujúce sa plnenia
+                                <em>úhrnne prevyšujúce hodnotu 250 000 eur</em>. Podľa zákona č. 315/2016 Z. z. o
+                                registri partnerov verejného sektora a o zmene a doplnení niektorých predpisov im vzniká
+                                <em>povinnosť zapísať sa do registra partnerov verejného sektora.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- #feature2 end -->
+
+
+        <!-- reviews
+============================================= -->
+        <section id="klesli_trzby" class="section feature feature-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="heading heading-1  mb-80">
+                            <h2 class="heading-title">
+                                <span class="underline"><span class="text">2) SZČO, ktorým </span></span><span
+                                    class="red">poklesli tržby</span><br> alebo museli svoje prevádzky <span
+                                    class="red">zatvoriť </span>
+                            </h2>
+                            <p>na základe rozhodnutia <a class="link"
+                                    href="http://www.uvzsr.sk/index.php?option=com_content&view=category&layout=blog&id=250&Itemid=153"
+                                    target="_blank">Úradu verejného zdravotníctva SR</a></p>
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="illustration">
+                            <img class="img-fluid pull-right" src="assets/images/MPSVR/illustration-03.svg"
+                                alt="podnikateľ, ktorý stále bojuje s vírusom">
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+
+                </div>
+                <!-- .row end -->
+                <div class="row definitions">
+                    <div class="col-12 col-md-12 col-lg-6 left">
+                        <div class="definition ziadatel">
+                            <h3>Oprávnený žiadateľ:</h3>
+                            <ul>
+                                <li>
+                                    <p><em>SZČO, </em> ktorá v čase vyhlásenej mimoriadnej situácie, núdzového alebo
+                                        výnimočného stavu prerušila vykonávanie alebo prevádzkovanie samostatnej
+                                        zárobkovej činnosti na základe rozhodnutia Úradu verejného zdravotníctva SR,
+                                        alebo jej poklesli tržby o najmenej 20 %</p>
+                                </li>
+                                <li>
+                                    Žiadateľom o príspevok môže byť len SZČO, ktorá začala podnikať najneskôr k 2. 9.
+                                    2020.
+                                </li>
+                            </ul>
+
+                            <div class="alerts alerts--small">
+                                <div class="alert alert--small alert-danger">
+                                    <h4 class="alert__headline--red">UPOZORNENIE:</h4><br>
+                                    <em>SZČO, ktorí podávali daňové priznanie až ku koncu októbra a od 1.2.2021 nebudú mať povinnosť platiť odvody</em> na sociálne poistenie, <em>nebudú mať nárok na príspevok z opatrenia 2</em>. Pokiaľ chcú naďalej čerpať príspevok z tohto opatrenia, odporúčame, aby sa dobrovoľne poistili, pričom musia byť poistení minimálne polovicu mesiaca za ktorý o pomoc žiadajú a poistenie musí trvať. Ak sa nechcú dobrovoľne poistiť, <em>môžu požiadať o príspevok z opatrenia 4</em>.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="definition cielovka">
+                            <h3>Cieľová skupina:</h3>
+                            <ul>
+                                <li>
+                                    <p><em>SZČO</em>, ktorá bola nemocensky a dôchodkovo poistená v období do 30. 6.
+                                        2020 a poistenie jej trvá aj po tomto dni, alebo čerpá tzv. odvodové prázdniny.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><em>Nárok na príspevok majú aj SZČO, ktoré majú súbežne uzatvorený pracovný
+                                            pomer.</em> Suma čistého príjmu z tohto pracovného pomeru sa odpočíta od
+                                        výšky príspevku.</p>
+                                </li>
+                                <li>
+                                    <p><em>Nárok</em> na príspevok <em>nemá SZČO, ktorá má zrušenú alebo pozastavenú
+                                            živnosť.</em></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="definition obdobie">
+                            <h3>Oprávnené obdobie:</h3>
+                            <p>Od 13. marca 2020 – teda od dňa rozhodnutia Úradu verejného zdravotníctva SR o uzatvorení
+                                alebo obmedzení niektorých prevádzok do konca kalendárneho mesiaca, v ktorom bude
+                                rozhodnutie Úradu verejného zdravotníctva SR zrušené.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 right">
+                        <div class="definition prispevok">
+                            <h3>Výška príspevku:</h3>
+                            <p>Príspevok na náhradu straty príjmu zo zárobkovej činnosti sa poskytne nadväzne na pokles
+                                tržieb.</p>
+
+                            <table class="blueTable">
+                                <thead>
+                                    <tr>
+                                        <th>Pokles tržieb (kategórie)</th>
+                                        <th>Príspevok</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>od 20,00 - 39,99 %</td>
+                                        <td>270 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td>od 40,00 - 59,99 %</td>
+                                        <td>450 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td>od 60,00 - 79,99 %</td>
+                                        <td>630 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td>od 80 % a viac</td>
+                                        <td>810 €</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                Pokles tržieb žiadateľ preukazuje jedným zo spôsobov:
+                            <ol>
+                                <li>Porovnáva sa <em>tržba za vykazovaný mesiac s tržbou za rovnaký mesiac
+                                        predchádzajúceho roka</em> (napr. pre vykazované obdobie 10 / 2020 -
+                                    predchádzajúce je 10/2019)</li>
+                                <li>Porovnáva sa <em>priemer tržby v roku 2019</em> (t.j. 1/12 tržieb za rok 2019) <em>s
+                                        tržbou za vykazovaný mesiac</em> - oprávnení sú iba tí, ktorí vykonávali
+                                    zárobkovú činnosť celý rok 2019</li>
+                                <li>Porovnáva sa <em>tržba za február 2020 s tržbou za vykazovaný mesiac</em> -
+                                    oprávnení sú iba tí, ktorí vykonávali zárobkovú činnosť len časť roka 2019 alebo len
+                                    časť roka 2020, najneskôr k 1. 2. 2020.</li>
+                                <li>Porovnáva sa <em>tržba za september 2020 s tržbou za vykazovaný mesiac</em> –
+                                    oprávnení sú iba tí, ktorí vykonávali zárobkovú činnosť len časť roka 2019 alebo len
+                                    časť roka 2020, najneskôr k 2. 9. 2020.</li>
+                            </ol>
+                            </p>
+                            <p>Je <em>možná zmena spôsobu výpočtu</em> poklesu tržieb v rámci jednotlivých mesiacov.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <hr>
+                <div class="row download">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row search definitions">
+                            <div class="col-12 col-lg-12 col-xl-11 ">
+                                <div class="definition mail">
+                                    <h3 class="govuk-heading-l">
+                                        Výhradne e-mailové zasielanie:
+                                    </h3>
+
+                                    <p>
+                                        <em>Žiadosť si stiahnite, vyplňte elektronicky a uložte. Netlačte ju,
+                                            nepodpisujte a neskenujte.</em>
+                                    </p>
+                                    <p>
+                                        Žiadosť a výkaz, resp. len výkaz, zasielajte na špeciálnu emailovú adresu za
+                                        každého zamestnávateľa alebo SZČO osobitným emailom.
+                                    </p>
+                                    <p>
+                                        Pomocou tohto vyhľadávača identifikujte špeciálnu emailovú adresu, na ktorú je
+                                        potrebné odoslať vyplnenú žiadosť a výkaz.
+                                    </p>
+                                    <div class="search-field">
+                                        <label class="govuk-label" for="municipality-inner-section2">
+                                            <strong>Zadajte vašu obec:</strong>
+                                        </label>
+                                        <div id="municipality-field-section2"></div>
+                                    </div>
+                                    <div id="municipality-email-holder-section2" style="display: none;">
+                                        <br>
+                                        <div class="alert alert-success" role="alert">
+                                            Email pošlite na adresu: <br><span id="municipality-email-section2"></span>
+                                            <br><br>
+                                            <p class="govuk-body">
+                                                Do predmetu emailu uveďte: <br>Opatrenie č. 2 – názov žiadateľa – IČO
+                                                žiadateľa.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <span class="govuk-error-message govuk-!-margin-top-2"
+                                        id="municipality-error-section2" style="display: none;">
+                                        Vyberte obec zo zoznamu.
+                                    </span>
+
+
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <a href="pp_plus_docs/november/Ziadost_opatrenie_2.xlsx"
+                                    class="btn btn--gradient xlsx" data-scroll="scrollTo" target="_blank"
+                                    download="" title="Žiadosť na stiahnutie">Žiadosť <br>(22 KB)</a>
+                                <a href="pp_plus_docs/november/Ziadost_opatrenie_2.ods" class="doc extra"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Žiadosť na stiahnutie vo formáte ODS">Žiadosť vo formáte ODS (18 KB)</a>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_2_ver02-oktober.xlsx"
+                                    class="btn btn--gradient xlsx extra-line" data-scroll="scrollTo" target="_blank"
+                                    download="" title="Výkaz na stiahnutie">Výkaz <br><span
+                                        class="month">(Október)</span><br>(38 KB)</a>
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_2_ver02-oktober.ods" class="doc extra"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Výkaz na stiahnutie vo formáte ODS">Výkaz vo formáte ODS (18 KB)</a>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_2_ver02-november.xlsx" class="btn btn--gradient xlsx extra-line"
+                                    data-scroll="scrollTo" target="_blank" download="" title="Výkaz na stiahnutie">Výkaz <br><span
+                                        class="month">(November)</span><br>(38 KB)</a>
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_2_ver02-november.ods" class="doc extra" data-scroll="scrollTo"
+                                    target="_blank" download="" title="Výkaz na stiahnutie vo formáte ODS">Výkaz vo formáte ODS (18 KB)</a>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <a href="pp_plus_docs/januar/Vykaz_opatrenie_2_ver02-december.xlsx" class="btn btn--gradient xlsx extra-line"
+                                    data-scroll="scrollTo" target="_blank" download="" title="Výkaz na stiahnutie">Výkaz <br><span
+                                        class="month">(December)</span><br>(38 KB)</a>
+                                <a href="pp_plus_docs/januar/Vykaz_opatrenie_2_ver02-december.ods" class="doc extra" data-scroll="scrollTo"
+                                    target="_blank" download="" title="Výkaz na stiahnutie vo formáte ODS">Výkaz vo formáte ODS (18 KB)</a>
+                            </div>
+
+
+
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <a href="pp_plus_docs/januar/Oznamenie_platnost_od_04012021.pdf" class="podmienky" 
+                                    target="_blank" download>Oznámenie o možnosti predkladania žiadostí o poskytnutie 
+                                    finančného príspevku (Platné pre oprávnené obdobie od 1. 10. 2020) (1,2 MB)</a><br>
+
+                                <a href="pp_plus_docs/Oznamenie_o_zmene_zdroja_financovania.pdf" class="podmienky"
+                                    target="_blank" download><strong style="text-transform: uppercase;">Oznámenie o
+                                        zmene zdroja financovania projektu "Prvá pomoc" (498 KB)</strong></a><br>
+
+                                <!-- <a href="pp_plus_docs/OPATRENIE-c2-podmienky_2020_04_23.pdf" class="podmienky" target="_blank" download>Podmienky pre získanie príspevku – opatrenie 2 (275 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/november/Manual_Ziadost_2.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu žiadosti pre priznanie príspevku (859 KB)</a><br>
+
+                                <a href="pp_plus_docs/november/Manual_vykaz_2.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu výkazu pre priznanie príspevku (558 KB)</a><br>
+
+                                <a href="pp_plus_docs/Manual_posudenie_trzieb.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k posúdeniu výpočtu tržieb (153 KB)</a><br>
+
+                                <a href="pp_plus_docs/StatistickaKlasifikaciaEkonomickychCinnosti.pdf" class="podmienky"
+                                    target="_blank" download>Štatistická klasifikácia ekonomických činností SK NACE
+                                    Rev. 2 (1 869 KB)</a><br>
+
+                                <!-- <a href="pp_plus_docs/priloha-1-nariadenie-EK-o-velkosti-podniku.pdf" class="podmienky" target="_blank" download>Nariadenie Európskej komisie o veľkosti podniku (158 KB)</a><br> -->
+
+                                <!-- <a href="pp_plus_docs/Zasielanie_formularov_na_podanie_ziadosti_na_Urady_PSVR.PDF" class="podmienky" target="_blank" download>Zasielanie žiadostí a výkazov do elektronickej schránky úradov práce, sociálnych vecí a rodiny (738 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/Ako_prebrat_a_odoslat_naspat_dohodu.pdf" class="podmienky"
+                                    target="_blank" download>Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke (868 KB)</a><br>
+
+                                <a href="https://www.youtube.com/watch?v=NvGJKLRoqUA" class="podmienky video"
+                                    target="_blank">Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke</a><br>
+                                <!-- 
+                                <a href="pp_plus_docs/definicia_podnik_v_tazkostiach_web_oplz.pdf" class="podmienky" target="_blank" download>Definícia podniku v ťažkostiach (267 KB)</a><br> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="alerts">
+                            <div class="alert alert-danger" role="alert">
+                                <em>Zber štatistických údajov</em> <br><br>
+                            
+                                POZOR! V zmysle nariadenia EÚ, žiadame, aby <em>zamestnávatelia</em> (vrátane <em>SZČO</em>, ktoré sú zamestnávateľmi)
+                                <em>
+                                    poskytli do 31. marca 2021 štatistické údaje o všetkých zamestnancoch, ktorých uviedli
+                                    v žiadostiach</em> o poskytnutie finančného príspevku na udržanie pracovných miest <em> za mesiace marec
+                                    až jún 2020</em>. Platí to aj pre <em> SZČO, ktoré nemajú uzatvorený pracovný pomer so žiadnou
+                                    fyzickou osobou, uvádzajú</em> tak štatistické <em>údaje o sebe</em>. <br><br>
+                            
+                                <a href="https://www.employment.gov.sk/sk/informacie-media/aktuality/zber-statistickych-udajov-osobach-podporenych-ramci-projektu-prva-pomoc.html"
+                                    target="_blank">
+                                    Viac informácií a manuál k vypĺňaniu >
+                                </a><br><br>
+                            
+                                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=2AMcLxk8qEie8A17LG54sFuDF1ljbqRIq5-JSMBopMtUOFhGV0dMNTUzVUZQQldPSzhUMUhCR1RUVy4u"
+                                    target="_blank">
+                                    Elektronický formulár >
+                                </a>
+                            
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <em>POZOR:</em> Od 25. apríla 2020 <em>môžete o príspevok požiadať aj vtedy, ak máte
+                                    povolený splátkový kalendár</em> pre zaplatenie dlžných súm dane, poistných odvodov
+                                do Sociálnej poisťovne alebo zdravotnej poisťovne alebo finančných záväzkov voči úradu
+                                práce alebo <em>nemáte za mesiac február 2020</em> splnené daňové povinnosti, povinnosti
+                                odvodu na poistné na verejné zdravotné poistenie alebo na sociálne poistenie alebo
+                                uhradené splatné finančné záväzky voči úradu práce. <em>Podrobnosti sú uvedené v <a
+                                        href="pp_plus_docs/november/Manual_Ziadost_2.pdf" target="_blank"
+                                        download>manuáli k vypĺňaniu žiadosti pre priznanie príspevku</a>.</em>
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <em>Ak spĺňate podmienky pre získanie príspevku,</em> pošlite vyplnenú žiadosť a výkaz
+                                na príslušný úrad práce, sociálnych vecí a rodiny, v ktorého územnom obvode udržíte
+                                pracovné miesto. Ak máte viac ako jednu prevádzku a žiadate príspevok na zamestnancov
+                                týchto prevádzok, pošlite žiadosť na úrad práce sociálnych vecí a rodiny, v ktorého
+                                územnom obvode máte sídlo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- #feature2 end -->
+
+
+        <!-- reviews
+============================================= -->
+        <section id="udrzia_miesta" class="section feature feature-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="heading heading-1  mb-80">
+                            <h2 class="heading-title">
+                                <span class="underline"><span class="text">3) Zamestnávatelia </span></span><span
+                                    class="small">(vrátane SZČO, ktoré sú zamestnávateľmi),</span> ktorí <span
+                                    class="red">udržia <br>pracovné miesta </span>
+                            </h2>
+                            <p>aj v prípade prerušenia alebo obmedzenia svojej činnosti počas vyhlásenej mimoriadnej
+                                situácie.</p>
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="illustration">
+                            <img class="img-fluid pull-right" src="assets/images/MPSVR/illustration-04.svg"
+                                alt="podnikateľ, ktorý stále bojuje s vírusom">
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+
+                </div>
+                <!-- .row end -->
+                <div class="row definitions">
+                    <div class="col-12 col-md-12 col-lg-6 left">
+                        <div class="definition ziadatel">
+                            <h3>Oprávnený žiadateľ:</h3>
+                            <ul>
+                                <li>
+                                    <p><em>zamestnávateľ, vrátane SZČO, ktorá je zamestnávateľom</em> (okrem subjektov
+                                        verejnej správy), ktorý udrží pracovné miesta po dobu jedného mesiaca v čase
+                                        vyhlásenej mimoriadnej situácie, núdzového alebo výnimočného stavu a dva mesiace
+                                        po jeho ukončení. A to aj v prípade prerušenia alebo obmedzenia svojej
+                                        prevádzkovej činnosti.</p>
+                                </li>
+                                <li>
+                                    <p>Žiadateľom o príspevok môže byť len zamestnávateľ, ktorý začal prevádzkovať svoju
+                                        činnosť najneskôr k 2. 9. 2020.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="definition cielovka">
+                            <h3>Cieľová skupina:</h3>
+                            <ul>
+                                <li>
+                                    <p><em>zamestnanec</em> v pracovnom pomere.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="definition obdobie">
+                            <h3>Oprávnené obdobie:</h3>
+                            <p>Od 13. marca 2020 – teda od dňa rozhodnutia Úradu verejného zdravotníctva SR o uzatvorení
+                                niektorých prevádzok do konca kalendárneho mesiaca, v ktorom bude rozhodnutie Úradu
+                                verejného zdravotníctva SR zrušené.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 right">
+                        <div class="definition prispevok">
+                            <h3>Výška príspevku:</h3>
+                            <ol type="A">
+                                <li>
+                                    <p><em>úhrada náhrady mzdy zamestnanca najviac vo výške 80 %</em> jeho celkovej ceny
+                                        práce, <em>najviac</em> vo výške <em>1100,- eur</em>.</p>
+                                </li>
+                                <li>
+                                    <p><em>paušálny príspevok na úhradu časti mzdových nákladov na každého
+                                            zamestnanca</em> v závislosti od poklesu tržieb. </p>
+
+                                    <table class="blueTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Pokles tržieb (kategórie)</th>
+                                                <th>Príspevok</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>od 20,00 - 39,99 %</td>
+                                                <td>270 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>od 40,00 - 59,99 %</td>
+                                                <td>450 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>od 60,00 - 79,99 %</td>
+                                                <td>630 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>od 80 % a viac</td>
+                                                <td>810 €</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ol>
+
+
+
+                            <br>
+                            <p>
+                                Pokles tržieb žiadateľ preukazuje jedným zo spôsobov:
+                            <ol>
+                                <li>Porovnáva sa <em>tržba za vykazovaný mesiac s tržbou za rovnaký mesiac
+                                        predchádzajúceho roka</em> (napr. pre vykazované obdobie 10 / 2020 -
+                                    predchádzajúce je 10/2019)</li>
+                                <li>Porovnáva sa <em>priemer tržby v roku 2019</em> (t.j. 1/12 tržieb za rok 2019) <em>s
+                                        tržbou za vykazovaný mesiac</em> - oprávnení sú iba tí, ktorí vykonávali
+                                    zárobkovú činnosť celý rok 2019</li>
+                                <li>Porovnáva sa <em>tržba za február 2020 s tržbou za vykazovaný mesiac</em> -
+                                    oprávnení sú iba tí, ktorí vykonávali zárobkovú činnosť len časť roka 2019 alebo len
+                                    časť roka 2020, najneskôr k 1. 2. 2020.</li>
+                                <li>Porovnáva sa <em>tržba za september 2020 s tržbou za vykazovaný mesiac</em> –
+                                    oprávnení sú iba tí, ktorí vykonávali zárobkovú činnosť len časť roka 2019 alebo len
+                                    časť roka 2020, najneskôr k 2. 9. 2020.</li>
+                            </ol>
+                            </p>
+                            <p>Je <em>možná zmena spôsobu výpočtu</em> poklesu tržieb v rámci jednotlivých mesiacov.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <hr>
+                <div class="row download">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row search definitions">
+                            <div class="col-12 col-lg-12 col-xl-11 ">
+                                <div class="definition mail">
+                                    <h3 class="govuk-heading-l">
+                                        Výhradne elektronické zasielanie:
+                                    </h3>
+
+                                    <p><em>Zamestnávateľ podáva žiadosť a výkazy výlučne elektronicky prostredníctvom
+                                            Ústredného portálu verejnej správy</em> <a target="_blank"
+                                            href="https://www.slovensko.sk">www.slovensko.sk</a>.</p>
+
+                                    <ul style="padding-left: 20px;">
+                                        <li>
+                                            Podávanie Žiadosti o poskytnutie finančného príspevku pre zamestnávateľov v
+                                            rámci projektu PRVÁ POMOC <br><br>
+                                            <a id="opatrenie_3_ziadost"
+                                                href="https://www.slovensko.sk/sk/detail-sluzby?externalCode=ks_339580"
+                                                class="btn btn--gradient outlink" data-scroll="scrollTo" target="_blank"
+                                                download="" title="Podať žiadosť">Podať <br>žiadosť</a>
+                                            <br><br>
+                                        </li>
+                                        <li>
+                                            Podávanie Výkazu k Žiadosti o finančný príspevok pre zamestnávateľov v rámci
+                                            projektu PRVÁ POMOC pre opatrenie 3A <br><br>
+                                            <a id="opatrenie_3_vykaz_A"
+                                                href="https://www.slovensko.sk/sk/detail-sluzby?externalCode=ks_339589"
+                                                class="btn btn--gradient outlink" data-scroll="scrollTo" target="_blank"
+                                                download="" title="Podať výkaz - 3A">Podať <br>výkaz - 3A</a>
+                                            <br><br>
+                                        </li>
+                                        <li>
+                                            Podávanie Výkazu k Žiadosti o finančný príspevok pre zamestnávateľov v rámci
+                                            projektu PRVÁ POMOC pre opatrenie 3B <br> <br>
+                                            <a id="opatrenie_3_vykaz_B"
+                                                href="https://www.slovensko.sk/sk/detail-sluzby?externalCode=ks_339590"
+                                                class="btn btn--gradient outlink" data-scroll="scrollTo" target="_blank"
+                                                download="" title="Podať výkaz - 3B">Podať <br>výkaz - 3B</a>
+                                            <br><br>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row">
+                            <!-- <div class="col-12 col-md-12 col-lg-6">
+		                        <a href="pp_plus_docs/Ziadost_opatrenie_3A_2020_04_22.xlsx" class="btn btn--gradient xlsx" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť A na stiahnutie">Žiadosť A<br>(32 KB)</a>
+		                        <a href="pp_plus_docs/Ziadost_opatrenie_3A_2020_04_22.ods" class="doc extra" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť A na stiahnutie vo formáte ODS">Žiadosť A vo formáte ODS (24 KB)</a>
+		                    </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/Ziadost_opatrenie_3B_2020-05-16.xlsx" class="btn btn--gradient xlsx" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť B na stiahnutie">Žiadosť B<br>(40 KB)</a>
+                                <a href="pp_plus_docs/Ziadost_opatrenie_3B_2020-05-16.ods" class="doc extra" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť B na stiahnutie vo formáte ODS">Žiadosť B vo formáte ODS (25 KB)</a>
+                            </div>
+
+
+                            <div class="col-12 col-md-12 col-lg-6">
+		                        <a href="pp_plus_docs/september/Vykaz_opatrenie_3A_sept.xlsx" class="btn btn--gradient xlsx extra-line" data-scroll="scrollTo" target="_blank" download="" title="Výkaz A na stiahnutie">Výkaz A <br><span class="month">(September)</span><br>(163 KB)</a>
+		                        <a href="pp_plus_docs/september/Vykaz_opatrenie_3A_sept.ods" class="doc extra" data-scroll="scrollTo" target="_blank" download="" title="Výkaz A na stiahnutie vo formáte ODS">Výkaz A za September <br>vo formáte ODS (131 KB)</a>
+		                    </div>
+                            
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/september/Vykaz_opatrenie_3B_sept.xlsx" class="btn btn--gradient xlsx extra-line" data-scroll="scrollTo" target="_blank" download="" title="Výkaz B na stiahnutie">Výkaz B <br><span class="month">(September)</span><br>(140 KB)</a>
+                                <a href="pp_plus_docs/september/Vykaz_opatrenie_3B_sept.ods" class="doc extra" data-scroll="scrollTo" target="_blank" download="" title="Výkaz B na stiahnutie vo formáte ODS">Výkaz B za September <br>vo formáte ODS (73 KB)</a>
+                            </div> -->
+
+
+
+
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <a href="pp_plus_docs/januar/Oznamenie_platnost_od_04012021.pdf" class="podmienky" 
+                                    target="_blank" download>Oznámenie o možnosti predkladania žiadostí o poskytnutie
+                                    finančného príspevku (Platné pre oprávnené obdobie od 1. 10. 2020) (1,2 MB)</a><br>
+
+                                <a href="pp_plus_docs/Oznamenie_o_zmene_zdroja_financovania.pdf" class="podmienky"
+                                    target="_blank" download><strong style="text-transform: uppercase;">Oznámenie o
+                                        zmene zdroja financovania projektu "Prvá pomoc" (498 KB)</strong></a><br>
+
+                                <!-- <a href="pp_plus_docs/OPATRENIE-c3-podmienky_2020_04_23.pdf" class="podmienky" target="_blank" download>Podmienky pre získanie príspevku – opatrenie 3 (228 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/november/Manual_Ziadost_1_3A_3B.pdf" class="podmienky"
+                                    target="_blank" download>Manuál k vypĺňaniu žiadosti A a B pre priznanie príspevku
+                                    (798 KB)</a><br>
+
+                                <a href="pp_plus_docs/november/Manual_vykaz_3A.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu výkazu A pre priznanie príspevku (549 KB)</a><br>
+
+                                <a href="pp_plus_docs/november/Manual_vykaz_3B.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu výkazu B pre priznanie príspevku (776 KB)</a><br>
+
+                                <a href="pp_plus_docs/Manual_posudenie_trzieb.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k posúdeniu výpočtu tržieb (153 KB)</a><br>
+
+                                <a href="pp_plus_docs/StatistickaKlasifikaciaEkonomickychCinnosti.pdf" class="podmienky"
+                                    target="_blank" download>Štatistická klasifikácia ekonomických činností SK NACE
+                                    Rev. 2 (1 869 KB)</a><br>
+
+                                <a href="pp_plus_docs/priloha-1-nariadenie-EK-o-velkosti-podniku.pdf" class="podmienky"
+                                    target="_blank" download>Nariadenie Európskej komisie o veľkosti podniku (158
+                                    KB)</a><br>
+
+                                <!-- <a href="pp_plus_docs/Zasielanie_formularov_na_podanie_ziadosti_na_Urady_PSVR.PDF" class="podmienky" target="_blank" download>Zasielanie žiadostí a výkazov do elektronickej schránky úradov práce, sociálnych vecí a rodiny (738 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/Ako_prebrat_a_odoslat_naspat_dohodu.pdf" class="podmienky"
+                                    target="_blank" download>Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke (868 KB)</a><br>
+
+                                <a href="https://www.youtube.com/watch?v=NvGJKLRoqUA" class="podmienky video"
+                                    target="_blank">Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke</a><br>
+
+                                <!-- <a href="pp_plus_docs/definicia_podnik_v_tazkostiach_web_oplz.pdf" class="podmienky" target="_blank" download>Definícia podniku v ťažkostiach (267 KB)</a><br> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="alerts">
+                            <div class="alert alert-danger" role="alert">
+                                <em>Zber štatistických údajov</em> <br><br>
+                            
+                                POZOR! V zmysle nariadenia EÚ, žiadame, aby <em>zamestnávatelia</em> (vrátane <em>SZČO</em>, ktoré sú zamestnávateľmi) <em>
+                                    poskytli do 31. marca 2021 štatistické údaje o všetkých zamestnancoch, ktorých uviedli
+                                    v žiadostiach</em> o poskytnutie finančného príspevku na udržanie pracovných miest <em> za mesiace marec
+                                    až jún 2020</em>. Platí to aj pre <em> SZČO, ktoré nemajú uzatvorený pracovný pomer so žiadnou
+                                    fyzickou osobou, uvádzajú</em> tak štatistické <em>údaje o sebe</em>. <br><br>
+                            
+                                <a href="https://www.employment.gov.sk/sk/informacie-media/aktuality/zber-statistickych-udajov-osobach-podporenych-ramci-projektu-prva-pomoc.html"
+                                    target="_blank">
+                                    Viac informácií a manuál k vypĺňaniu >
+                                </a><br><br>
+                            
+                                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=2AMcLxk8qEie8A17LG54sFuDF1ljbqRIq5-JSMBopMtUOFhGV0dMNTUzVUZQQldPSzhUMUhCR1RUVy4u"
+                                    target="_blank">
+                                    Elektronický formulár >
+                                </a>
+                            
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <em>POZOR:</em> Od 25. apríla 2020 <em>môžete o príspevok požiadať aj vtedy, ak máte
+                                    povolený splátkový kalendár</em> pre zaplatenie dlžných súm dane, poistných odvodov
+                                do Sociálnej poisťovne alebo zdravotnej poisťovne alebo finančných záväzkov voči úradu
+                                práce alebo <em>nemáte za mesiac február 2020</em> splnené daňové povinnosti, povinnosti
+                                odvodu na poistné na verejné zdravotné poistenie alebo na sociálne poistenie alebo
+                                uhradené splatné finančné záväzky voči úradu práce. <em>Podrobnosti sú uvedené v <a
+                                        href="pp_plus_docs/november/Manual_Ziadost_1_3A_3B.pdf" target="_blank"
+                                        download>manuáli k vypĺňaniu žiadosti pre priznanie príspevku</a>.</em>
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <em>Ak spĺňate podmienky pre získanie príspevku,</em> pošlite vyplnenú žiadosť a výkaz
+                                na príslušný úrad práce, sociálnych vecí a rodiny, v ktorého územnom obvode udržíte
+                                pracovné miesto. Ak máte viac ako jednu prevádzku a žiadate príspevok na zamestnancov
+                                týchto prevádzok, pošlite žiadosť na úrad práce sociálnych vecí a rodiny, v ktorého
+                                územnom obvode máte sídlo.
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <em>Partnerom verejného sektora</em> je ten, komu má byť <em>jednorazovo</em> poskytnuté
+                                plnenie zo zmluvy <em>prevyšujúce hodnotu 100 000 eur</em> alebo opakujúce sa plnenia
+                                <em>úhrnne prevyšujúce hodnotu 250 000 eur</em>. Podľa zákona č. 315/2016 Z. z. o
+                                registri partnerov verejného sektora a o zmene a doplnení niektorých predpisov im vzniká
+                                <em>povinnosť zapísať sa do registra partnerov verejného sektora.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- #feature2 end -->
+
+
+        <!-- reviews
+============================================= -->
+        <section id="bez_prijmu" class="section feature feature-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="heading heading-1  mb-80">
+                            <h2 class="heading-title">
+                                <span class="underline"><span class="text">4) SZČO</span></span> <br>a jednoosobové
+                                s.r.o.,
+                                ktoré <span class="red">nemajú <br>príjem z podnikania</span><br>
+                            </h2>
+                            <!-- <p>na základe rozhodnutia <a class="link" href="http://www.uvzsr.sk/index.php?option=com_content&view=category&layout=blog&id=250&Itemid=153" target="_blank">Úradu verejného zdravotníctva SR</a></p> -->
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="illustration">
+                            <img class="img-fluid pull-right" src="assets/images/MPSVR/illustration-05-pp_plus.svg"
+                                alt="podnikateľ, ktorý stále bojuje s vírusom">
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+
+                </div>
+                <!-- .row end -->
+                <div class="row definitions">
+                    <div class="col-12 col-md-12 col-lg-6 left">
+                        <div class="definition ziadatel">
+                            <h3>Oprávnený žiadateľ:</h3>
+                            <ol type="A">
+                                <li>
+                                    <p><em>SZČO, </em> ktorá prerušila alebo obmedzila vykonávanie alebo prevádzkovanie
+                                        svojej činnosti a ktorej nevznikla povinnosť nemocenského a dôchodkového
+                                        poistenia alebo nečerpá tzv. odvodové prázdniny.</p>
+                                </li>
+                                <li>
+                                    <p><em>fyzická osoba, </em> ktorá je jediným spoločníkom s.r.o., zároveň je jej
+                                        konateľom a nie je jej zamestnancom (tzv. jednoosobová s.r.o.).</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 right">
+                        <div class="definition prispevok">
+                            <h3>Výška príspevku:</h3>
+                            <p><em>Paušálny príspevok</em> na náhradu straty príjmu zo zárobkovej činnosti <em>vo výške
+                                    315 €</em>.</p>
+                        </div>
+                        <div class="definition obdobie">
+                            <h3>Oprávnené obdobie:</h3>
+                            <p>Od 13. marca 2020 – teda od dňa rozhodnutia Úradu verejného zdravotníctva SR o uzatvorení
+                                niektorých prevádzok do konca kalendárneho mesiaca, v ktorom bude rozhodnutie Úradu
+                                verejného zdravotníctva SR zrušené.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alerts" style="padding: 0 0 40px;">
+                            <div class="alert alert-info" role="alert">
+                                Podmienkou je, aby tieto osoby nemali od 1. 10. 2020 žiaden iný príjem z
+                                    podnikateľskej, nepodnikateľskej a závislej činnosti. <em>Výnimkou sú príjmy z
+                                    pracovného pomeru, dohôd vykonávaných mimo pracovného pomeru a invalidného dôchodku
+                                    s poklesom schopnosti vykonávať zárobkovú činnosť do 70 %.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <hr>
+                <div class="row download">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row search definitions">
+                            <div class="col-12 col-lg-12 col-xl-11 ">
+                                <div class="definition mail">
+                                    <h3 class="govuk-heading-l">
+                                        Výhradne e-mailové zasielanie:
+                                    </h3>
+
+                                    <p>
+                                        <em>Žiadosť si stiahnite, vyplňte elektronicky a uložte. Netlačte ju,
+                                            nepodpisujte a neskenujte.</em>
+                                    </p>
+                                    <p>
+                                        Žiadosť a výkaz, resp. len výkaz, zasielajte na špeciálnu emailovú adresu za
+                                        každého zamestnávateľa alebo SZČO osobitným emailom.
+                                    </p>
+                                    <p>
+                                        Pomocou tohto vyhľadávača identifikujte špeciálnu emailovú adresu, na ktorú je
+                                        potrebné odoslať vyplnenú žiadosť a výkaz.
+                                    </p>
+                                    <div class="search-field">
+                                        <label class="govuk-label" for="municipality-inner-section4">
+                                            <strong>Zadajte vašu obec:</strong>
+                                        </label>
+                                        <div id="municipality-field-section4"></div>
+                                    </div>
+                                    <div id="municipality-email-holder-section4" style="display: none;">
+                                        <br>
+                                        <div class="alert alert-success" role="alert">
+                                            Email pošlite na adresu: <br><span id="municipality-email-section4"></span>
+                                            <br><br>
+                                            <p class="govuk-body">
+                                                Do predmetu emailu uveďte: <br>Opatrenie č. 4 – názov žiadateľa – IČO
+                                                žiadateľa.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <span class="govuk-error-message govuk-!-margin-top-2"
+                                        id="municipality-error-section4" style="display: none;">
+                                        Vyberte obec zo zoznamu.
+                                    </span>
+
+
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/november/Ziadost_opatrenie_4A.xlsx"
+                                    class="btn btn--gradient xlsx" data-scroll="scrollTo" target="_blank"
+                                    download="" title="Žiadosť A na stiahnutie">Žiadosť A <br>(22 KB)</a>
+                                <a href="pp_plus_docs/november/Ziadost_opatrenie_4A.ods" class="doc extra"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Žiadosť A na stiahnutie vo formáte ODS">Žiadosť A vo formáte ODS (18 KB)</a>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/november/Ziadost_opatrenie_4B.xlsx"
+                                    class="btn btn--gradient xlsx" data-scroll="scrollTo" target="_blank"
+                                    download="" title="Žiadosť B na stiahnutie">Žiadosť B <br>(21 KB)</a>
+                                <a href="pp_plus_docs/november/Ziadost_opatrenie_4B.ods" class="doc extra"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Žiadosť B na stiahnutie vo formáte ODS">Žiadosť B vo formáte ODS (18 KB)</a>
+                            </div>
+
+
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/november/Vykaz_opatrenie_4A-oktober.xlsx" class="btn btn--gradient xlsx extra-line"
+                                    data-scroll="scrollTo" target="_blank" download="" title="Výkaz A na stiahnutie">Výkaz A <br><span
+                                        class="month">(Október)</span><br>(14 KB)</a>
+                                <a href="pp_plus_docs/november/Vykaz_opatrenie_4A-oktober.ods" class="doc extra" data-scroll="scrollTo"
+                                    target="_blank" download="" title="Výkaz A na stiahnutie vo formáte ODS">Výkaz A za Október <br>vo formáte ODS
+                                    (15 KB)</a>
+                            </div>
+                            
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/november/Vykaz_opatrenie_4B-oktober.xlsx" class="btn btn--gradient xlsx extra-line"
+                                    data-scroll="scrollTo" target="_blank" download="" title="Výkaz B na stiahnutie">Výkaz B <br><span
+                                        class="month">(Október)</span><br>(14 KB)</a>
+                                <a href="pp_plus_docs/november/Vykaz_opatrenie_4B-oktober.ods" class="doc extra" data-scroll="scrollTo"
+                                    target="_blank" download="" title="Výkaz B na stiahnutie vo formáte ODS">Výkaz B za Október <br>vo formáte ODS
+                                    (15 KB)</a>
+                            </div>
+
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_4A-november.xlsx"
+                                    class="btn btn--gradient xlsx extra-line" data-scroll="scrollTo" target="_blank"
+                                    download="" title="Výkaz A na stiahnutie">Výkaz A <br><span
+                                        class="month">(November)</span><br>(14 KB)</a>
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_4A-november.ods" class="doc extra"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Výkaz A na stiahnutie vo formáte ODS">Výkaz A za November <br>vo formáte ODS
+                                    (15 KB)</a>
+                            </div>
+
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_4B-november.xlsx"
+                                    class="btn btn--gradient xlsx extra-line" data-scroll="scrollTo" target="_blank"
+                                    download="" title="Výkaz B na stiahnutie">Výkaz B <br><span
+                                        class="month">(November)</span><br>(14 KB)</a>
+                                <a href="pp_plus_docs/december/Vykaz_opatrenie_4B-november.ods" class="doc extra"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Výkaz B na stiahnutie vo formáte ODS">Výkaz B za November <br>vo formáte ODS
+                                    (15 KB)</a>
+                            </div>
+
+
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/januar/Vykaz_opatrenie_4A-december.xlsx" class="btn btn--gradient xlsx extra-line"
+                                    data-scroll="scrollTo" target="_blank" download="" title="Výkaz A na stiahnutie">Výkaz A <br><span
+                                        class="month">(December)</span><br>(14 KB)</a>
+                                <a href="pp_plus_docs/januar/Vykaz_opatrenie_4A-december.ods" class="doc extra" data-scroll="scrollTo"
+                                    target="_blank" download="" title="Výkaz A na stiahnutie vo formáte ODS">Výkaz A za December <br>vo formáte ODS
+                                    (15 KB)</a>
+                            </div>
+                            
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/januar/Vykaz_opatrenie_4B-december.xlsx" class="btn btn--gradient xlsx extra-line"
+                                    data-scroll="scrollTo" target="_blank" download="" title="Výkaz B na stiahnutie">Výkaz B <br><span
+                                        class="month">(December)</span><br>(14 KB)</a>
+                                <a href="pp_plus_docs/januar/Vykaz_opatrenie_4B-december.ods" class="doc extra" data-scroll="scrollTo"
+                                    target="_blank" download="" title="Výkaz B na stiahnutie vo formáte ODS">Výkaz B za December <br>vo formáte ODS
+                                    (15 KB)</a>
+                            </div>
+
+
+
+
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <a href="pp_plus_docs/januar/Oznamenie_platnost_od_04012021.pdf" class="podmienky"
+                                    target="_blank" download>Oznámenie o možnosti predkladania žiadostí o poskytnutie
+                                    finančného príspevku (Platné pre oprávnené obdobie od 1. 10. 2020) (1,2 MB)</a><br>
+
+                                <a href="pp_plus_docs/Oznamenie_o_zmene_zdroja_financovania.pdf" class="podmienky"
+                                    target="_blank" download><strong style="text-transform: uppercase;">Oznámenie o
+                                        zmene zdroja financovania projektu "Prvá pomoc" (498 KB)</strong></a><br>
+
+                                <!-- <a href="pp_plus_docs/OPATRENIE-c4-podmienky-2020_04_23.pdf" class="podmienky" target="_blank" download>Podmienky pre získanie príspevku – opatrenie 4 (304 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/november/Manual_Ziadost_4A.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu žiadosti A pre priznanie príspevku (857 KB)</a><br>
+
+                                <a href="pp_plus_docs/november/Manual_Ziadost_4B.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu žiadosti B pre priznanie príspevku (729 KB)</a><br>
+
+                                <a href="pp_plus_docs/november/Manual_vykaz_4A_4B.pdf" class="podmienky" target="_blank"
+                                    download>Manuál k vypĺňaniu výkazu A a B pre priznanie príspevku (533 KB)</a><br>
+
+                                <!-- <a href="#" class="podmienky" target="_blank" download>Pomôcka k vypĺňaniu výkazu pre priznanie príspevku (0 KB)</a><br>  -->
+
+                                <a href="pp_plus_docs/StatistickaKlasifikaciaEkonomickychCinnosti.pdf" class="podmienky"
+                                    target="_blank" download>Štatistická klasifikácia ekonomických činností SK NACE
+                                    Rev. 2 (1 869 KB)</a><br>
+
+                                <!-- <a href="pp_plus_docs/priloha-1-nariadenie-EK-o-velkosti-podniku.pdf" class="podmienky" target="_blank" download>Nariadenie Európskej komisie o veľkosti podniku (158 KB)</a><br> -->
+
+                                <!-- <a href="pp_plus_docs/Zasielanie_formularov_na_podanie_ziadosti_na_Urady_PSVR.PDF" class="podmienky" target="_blank" download>Zasielanie žiadostí a výkazov do elektronickej schránky úradov práce, sociálnych vecí a rodiny (738 KB)</a><br> -->
+
+                                <a href="pp_plus_docs/Ako_prebrat_a_odoslat_naspat_dohodu.pdf" class="podmienky"
+                                    target="_blank" download>Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke (868 KB)</a><br>
+
+                                <a href="https://www.youtube.com/watch?v=NvGJKLRoqUA" class="podmienky video"
+                                    target="_blank">Návod - ako prebrať a podpísať dohodu v elektronickej
+                                    schránke</a><br>
+                                <!-- 
+                                <a href="pp_plus_docs/definicia_podnik_v_tazkostiach_web_oplz.pdf" class="podmienky" target="_blank" download>Definícia podniku v ťažkostiach (267 KB)</a><br> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="alerts">
+                            <div class="alert alert-danger" role="alert">
+                                <em>Zber štatistických údajov</em> <br><br>
+                            
+                                POZOR! V zmysle nariadenia EÚ, žiadame, aby <em>zamestnávatelia</em> (vrátane <em>SZČO</em>, ktoré sú zamestnávateľmi)
+                                <em>poskytli do 31. marca 2021 štatistické údaje o všetkých zamestnancoch, ktorých uviedli
+                                    v žiadostiach</em> o poskytnutie finančného príspevku na udržanie pracovných miest <em> za mesiace marec
+                                    až jún 2020</em>. Platí to aj pre <em> SZČO, ktoré nemajú uzatvorený pracovný pomer so žiadnou
+                                    fyzickou osobou, uvádzajú</em> tak štatistické <em>údaje o sebe</em>. <br><br>
+                            
+                                <a href="https://www.employment.gov.sk/sk/informacie-media/aktuality/zber-statistickych-udajov-osobach-podporenych-ramci-projektu-prva-pomoc.html"
+                                    target="_blank">
+                                    Viac informácií a manuál k vypĺňaniu >
+                                </a><br><br>
+                            
+                                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=2AMcLxk8qEie8A17LG54sFuDF1ljbqRIq5-JSMBopMtUOFhGV0dMNTUzVUZQQldPSzhUMUhCR1RUVy4u"
+                                    target="_blank">
+                                    Elektronický formulár >
+                                </a>
+                            
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <em>POZOR:</em> Od 25. apríla 2020 <em>môžete o príspevok požiadať aj vtedy, ak máte
+                                    povolený splátkový kalendár</em> pre zaplatenie dlžných súm dane, poistných odvodov
+                                do Sociálnej poisťovne alebo zdravotnej poisťovne alebo finančných záväzkov voči úradu
+                                práce alebo <em>nemáte za mesiac február 2020</em> splnené daňové povinnosti, povinnosti
+                                odvodu na poistné na verejné zdravotné poistenie alebo na sociálne poistenie alebo
+                                uhradené splatné finančné záväzky voči úradu práce. <em>Podrobnosti sú uvedené v <a
+                                        href="pp_plus_docs/november/Manual_Ziadost_4A.pdf" target="_blank"
+                                        download>manuáli k vypĺňaniu žiadosti A pre priznanie príspevku</a> a v <a
+                                        href="pp_plus_docs/november/Manual_Ziadost_4B.pdf" target="_blank"
+                                        download>manuáli k vypĺňaniu žiadosti B pre priznanie príspevku.</a></em>
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <em>Ak spĺňate podmienky pre získanie príspevku,</em> pošlite vyplnenú žiadosť a výkaz
+                                na príslušný úrad práce, sociálnych vecí a rodiny, v ktorého územnom obvode udržíte
+                                pracovné miesto. Ak máte viac ako jednu prevádzku a žiadate príspevok na zamestnancov
+                                týchto prevádzok, pošlite žiadosť na úrad práce sociálnych vecí a rodiny, v ktorého
+                                územnom obvode máte sídlo.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- #feature2 end -->
+
+
+
+
+
+        <!-- reviews
+============================================= -->
+        <section id="obcania_v_krize" class="section feature feature-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="heading heading-1  mb-80">
+                            <h2 class="heading-title">
+                                <span class="underline"><span class="text">5) Občania, </span></span> <br><span
+                                    class="small">ktorí sa počas pandémie koronavírusu ocitli</span> v krízovej situácii
+                                <br><span class="red">bez príjmu</span><br>
+                            </h2>
+                            <h3 class="sos-dotacia">SOS dotácia</h3>
+                            <!-- <p>na základe rozhodnutia <a class="link" href="http://www.uvzsr.sk/index.php?option=com_content&view=category&layout=blog&id=250&Itemid=153" target="_blank">Úradu verejného zdravotníctva SR</a></p> -->
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="illustration">
+                            <img class="img-fluid pull-right" src="assets/images/MPSVR/illustration-06.svg"
+                                alt="podnikateľ, ktorý stále bojuje s vírusom">
+                        </div>
+                    </div>
+                    <!-- .col-md-6 end -->
+
+                </div>
+                <!-- .row end -->
+                <div class="row definitions">
+                    <div class="col-12 col-md-12 col-lg-6 left">
+                        <div class="definition ziadatel">
+                            <h3>Oprávnený žiadateľ:</h3>
+                            <ul>
+                                <li>
+                                    <p><em>osoba, </em> ktorá z dôvodu krízovej situácie nevykonáva činnosť, z ktorej má
+                                        príjem, avšak túto činnosť vykonávala pred dňom vyhlásenia krízovej situácie.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="definition prispevok">
+                            <h3>Výška dotácie:</h3>
+                            <p>Za mesiac október a nasledujúce mesiace sa dotácia poskytuje v sume <em>300 eur</em>
+                                mesačne pre jedného žiadateľa. </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 right">
+                        <div class="definition obdobie">
+                            <h3>Oprávnené obdobie:</h3>
+                            <p>Počas mimoriadnej situácie, núdzového stavu alebo výnimočného stavu vyhláseného v
+                                súvislosti s ochorením COVID-19 a bezprostredne po skončení krízovej situácie.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="alerts" style="padding-top: 10px; padding-bottom: 60px;">
+                            <div class="alert alert-danger" role="alert">
+                                <em>POZOR:</em>
+                                Prijímateľ dotácie je povinný bezodkladne, najneskôr do konca kalendárneho mesiaca, v
+                                ktorom nastala zmena skutočnosti, oznámiť úradu práce akékoľvek nové skutočnosti, ktoré
+                                súvisia s jeho žiadosťou a majú vplyv na vyplácanie dotácie.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+                <hr>
+                <div class="row download">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row search definitions">
+                            <div class="col-12 col-lg-12 col-xl-11 ">
+                                <div class="definition mail">
+                                    <h3 class="govuk-heading-l">
+                                        Ako požiadať o dotáciu?
+                                    </h3>
+
+                                    <p>
+                                        POZOR!
+                                        <em>Žiadosti</em> o SOS dotáciu <em>prijímajú</em> príslušné <em>úrady
+                                            práce</em> (podľa miesta pobytu žiadateľa). Vyplnenú a podpísanú žiadosť
+                                        pošlite poštou alebo elektronicky.
+                                    </p>
+                                    <p><a
+                                            href="https://www.upsvr.gov.sk/socialne-veci-a-rodina/sos-dotacia.html?page_id=1037747">https://www.upsvr.gov.sk/socialne-veci-a-rodina/sos-dotacia.html?page_id=1037747</a>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <a href="pp_plus_docs/januar/ZIADOST_o_dotaciu_SOS_1.docx" class="btn btn--gradient doc"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Žiadosť na stiahnutie">Žiadosť <br>(25 KB)</a>
+                                <a href="pp_plus_docs/januar/ZIADOST_o_dotaciu_SOS_1.pdf" class="pdf extra"
+                                    data-scroll="scrollTo" target="_blank" download=""
+                                    title="Žiadosť na stiahnutie vo formáte PDF">Žiadosť vo formáte PDF (244 KB)</a>
+                            </div>
+
+                            <!-- <div class="col-12 col-md-12 col-lg-6">
+                                <a href="pp_plus_docs/5_dotacia/Oznamenie_k_ukonceniu_poberania_SOS_dotacie.docx" class="btn btn--gradient doc ozn" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť na stiahnutie">Ukončenie <br>SOS dotácie <br>(15 KB)</a>
+                                <a href="pp_plus_docs/5_dotacia/Oznamenie_k_ukonceniu_poberania_SOS_dotacie.odt" class="doc extra" data-scroll="scrollTo" target="_blank" download="" title="Žiadosť na stiahnutie vo formáte ODS">Ukončenie SOS dotácie <br>vo formáte ODT (5KB)</a>
+                            </div> -->
+
+
+
+
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <br>
+                                <!-- <a href="pp_plus_docs/5_dotacia/Poskytovanie_dotacie_podmienky_29_5_2020.pdf" class="podmienky" target="_blank" download>Podmienky pre získanie dotácie (224 KB)</a><br>
+                                
+                                <a href="pp_plus_docs/5_dotacia/Manual_Ziadost_SOS_dotacia_aktualizacia_2020_07_03.pdf" class="podmienky" target="_blank" download>Pomôcka k vypĺňaniu žiadosti pre priznanie dotácie (298 KB)</a><br> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- #feature2 end -->
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer
+============================================= -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                        <div class="logos">
+                            <div class="first line">
+                                <div class="mpsvr">
+                                    <img src="assets/images/logos/MPSVR_white_horizontal_logo.svg"
+                                        alt="Ministerstvo práce, sociálnych vecí a rodiny">
+                                </div>
+                            </div>
+                            <div class="second line">
+                                <div class="oplz">
+                                    <img src="assets/images/logos/OPLZ_logo.svg" alt="Operačný program Ľudské zdroje">
+                                </div>
+                                <div class="eu">
+                                    <img src="assets/images/logos/EU_ESF_EFRR_logo.svg"
+                                        alt="Európska únia - Európsky sociálny fond, Európsky fond regionálneho rozvoja">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                        <div class="contact">
+                            <p>
+                                <span class="tel">Infolinka: <a href="kontakty">Telefónny zoznam</a></span> <span
+                                    class="divider">&nbsp;|&nbsp;</span> Pracovné dni: 8:00 – 15:00<br>
+                                <span class="address">Špitálska 4,6,8, Bratislava 816 43</span> <span
+                                    class="divider">&nbsp;|&nbsp;</span>
+                                <!-- <span class="mail"> Email: <a href="mailto:covid19@praca.gov.sk">covid19@praca.gov.sk</a><br></span> -->
+                                <span class="web"><a href="https://www.employment.gov.sk/sk/"
+                                        target="_blank">https://www.employment.gov.sk</a></span><br>
+                                <br>
+                                Tento projekt sa realizuje vďaka podpore z Európskeho sociálneho fondu a Európskeho
+                                fondu regionálneho rozvoja v rámci Operačného programu Ľudské zdroje.
+                                <br><a target="_blank"
+                                    href="https://www.ludskezdroje.gov.sk/">https://www.ludskezdroje.gov.sk/</a>
+                                <br><br>
+
+                                <a href="vyhlasenie">Vyhlásenie o prístupnosti</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row end -->
+            </div>
+            <!-- .container end -->
+        </footer>
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/autocomplete.js"></script>
+    <script src="assets/js/mail_search_plus.js?v=5.0.0"></script>
+
+
+</body>
+
+</html>
