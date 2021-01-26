@@ -129,3 +129,10 @@ dmypy.json
 .pyre/
 
 documents/
+
+
+# project related
+cucumber_report.json
+junit_report.xml
+*.ldb
+.idea/
