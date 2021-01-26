@@ -32,7 +32,7 @@ def load_policy_watch():
     for field_data in covid19json:
         current_item += 1
         print('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['fieldData']['title'])
-        with Pool(processes=cpu_count() + 2) as pool:
+        with Pool(processes=cpu_count()) as pool:
             field_data['portalData']['sources'] = pool.map(partial(download_source),
                                                            field_data['portalData']['sources'])
             pool.close()
