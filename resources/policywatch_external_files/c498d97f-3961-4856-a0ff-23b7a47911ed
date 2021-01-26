@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+        <html lang="el">
+            <!-- D -->
+            <head>
+
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta name="viewport" content="width=device-width, minimum-scale=.5">
+
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1.23.4568">
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1.23.4568">
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1.23.4568">
+
+                <link rel="manifest" href="/site.webmanifest">
+                <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2.23.4567" >
+                <meta name="apple-mobile-web-app-title" content="News 24/7">
+                <meta name="application-name" content="News 24/7">
+                <meta name="msapplication-TileColor" content="#ffffff">
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png?v=1.23.4568">
+                <meta name="theme-color" content="#ffffff">
+
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CRoboto+Slab:300,400,700&amp;subset=greek&display=swap" rel="stylesheet">
+
+                <script>
+    window.targettingValues = {};
+    window.targettingValues['path'] = "https://www.news247.gr/oikonomia/";
+    window.targettingValues['article'] = "";
+    window.targettingValues['keywords'] = [""];
+    window.targettingValues['category'] = ["ece_frontpage", "oikonomia"];
+    window.targettingValues['type'] = "sec";
+    window.targettingValues['isApp'] = "";
+    window.targettingValues['isAmp'] = "false";
+    window.targettingValues['isMobile'] = "false";
+</script>
+<!-- temp Google TCF fix -->
+<script type="text/javascript">
+  (function(){
+    var reconsent = window.localStorage.getItem('tcf_24m_reconsent');
+  
+    if (!reconsent) {
+      document.cookie = 'euconsent-v2=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.' + window.location.hostname;
+      document.cookie = 'euconsent=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.' + window.location.hostname;
+      
+      window.localStorage.setItem('tcf_24m_reconsent', 'enforced');
+    }
+  })();
+</script>
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var milliseconds = new Date().getTime();
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'ELvyd96EHn3ND', '/', host, '/choice.js')
+    .concat('?timestamp=', milliseconds);
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  if (typeof module !== 'undefined') {
+    module.exports = makeStub;
+  } else {
+    makeStub();
+  }
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) --><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXGWMN');</script>
+<!-- End Google Tag Manager --><title>Οικονομία | News 24/7</title>
+
+<meta name="description" content="Ειδήσεις και νέα από τον χώρο της Οικονομίας.">
+<link rel="canonical" href="https://www.news247.gr/oikonomia/" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": "https://www.news247.gr/oikonomia/#section",
+            "name": "Οικονομία | News 24/7",
+            "description": "Ειδήσεις και νέα από τον χώρο της Οικονομίας.",
+            "url": "https://www.news247.gr/oikonomia/",
+            "image": "https://www.news247.gr/img/5058/9069244/811000/w620/620/news247_facebook_og_image.png",
+            "thumbnailUrl": "https://www.news247.gr/img/5058/9069244/811000/w620/620/news247_facebook_og_image.png",
+            "keywords": [],
+            "publisher": {
+                "@type": "Organization",
+                "@id": "https://www.news247.gr/#organization",
+                "url": "https://www.news247.gr/",
+                "name": "News 24/7",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.news247.gr/resources/512eef8/images/metadata-logo.png"
+                }
+            },
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://www.news247.gr/#site"
+            }
+        }
+        </script>
+    <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.news247.gr/oikonomia/">
+        <meta property="og:title" content="Οικονομία | News 24/7">
+        <meta property="og:description" content="Ειδήσεις και νέα από τον χώρο της Οικονομίας.">
+        <meta property="og:image" content="https://www.news247.gr/img/7643/9069244/811000/o/1200/1200/news247_facebook_og_image.png">
+    <!-- section -->
+    <meta name="parsely-section" content="Οικονομία" />
+<meta property="fb:app_id" content="767480436596774" />
+<meta property="fb:pages" content="91157111480" />
+<meta name="google-site-verification" content="iswD1C1LlZMb7qqV7njz-KZrimCEVl3Br94RPWwWgG8" />
+<!-- meta max-image-preview:large - Google : This applies to all forms of search results (such as Google web search, Google Images, Discover, Assistant) -->
+<meta name="robots" content="max-image-preview:large">
+<!-- Orange Click Media || ocm.js script for desktop -->
+<script src="//cdn.orangeclickmedia.com/tech/news247.gr/ocm.js" async="async"></script><script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" ></script>
+<script>
+ /* Helper isViewable function
+    checks if the element is in the viewport
+    & returns boolean value.
+*/
+window.isViewable = function (elem) {
+    let viewportWidth = window.innerWidth,
+        viewportHeight = window.innerHeight,
+        box = elem.getBoundingClientRect();
+
+    //clip box properties within viewport
+    let boxTop = box.top > 0 ? ( box.top < viewportHeight ? box.top : viewportHeight ) : 0,
+        boxBottom = box.bottom > 0 ? ( box.bottom < viewportHeight ? box.bottom : viewportHeight ) : 0,
+        boxLeft = box.left > 0 ? ( box.left < viewportWidth ? box.left : viewportWidth ) : 0,
+        boxRight = box.right > 0 ? ( box.right < viewportWidth ? box.right : viewportWidth ) : 0;
+
+    let viewableArea = (boxRight - boxLeft) * (boxBottom - boxTop);
+    let totalArea = box.width * box.height;
+    
+    //force refresh if ad is hidden
+    let forceRefresh = totalArea == 0;
+    
+    //check if tab is active
+    let isTabActive = !document.hidden;
+    
+    return isTabActive && forceRefresh || isTabActive && viewableArea / totalArea >= 0.5;
+}; // end of isViewable function
+</script><!-- D - ros -->
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function () {
+
+console.info('\n\n\n googletag.cmd.push \n\n\n');
+
+    /*** HOMEPAGE ***/
+    if (window.targettingValues.type === 'homepage' && !targettingValues.category.includes('radiofono247')) {
+      //console.log('news247 hp');
+      googletag.defineSlot('/4834629/news247.gr/hp_prestitial', [1, 1], 'hp-prestitial').addService(googletag
+        .pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_skin', [1, 1], 'hp-skin').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_300x250a', [
+        [300, 250]
+      ], 'hp-300x250a').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_300x250b', [
+        [300, 250]
+      ], 'hp-300x250b').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_300x250c', [
+        [300, 250],
+        [300, 600]
+      ], 'hp-300x250c').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_300x250d', [
+        [300, 250],
+        [300, 600]
+      ], 'hp-300x250d').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_300x250e', [
+        [300, 250],
+        [300, 600]
+      ], 'hp-300x250e').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_300x250g', [
+        [300, 250],
+        [336, 280]
+      ], 'hp-300x250g').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_300x250h', [
+        [300, 250],
+        [336, 280]
+      ], 'hp-300x250h').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_970x250a', [
+        [970, 250],
+        [728, 90],
+        [970, 200],
+        [970, 90],
+        [940, 250]
+      ], 'hp-970x250a').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/hp_970x250b', [
+        [970, 250],
+        [728, 90],
+        [970, 200],
+        [970, 90],
+        [940, 250]
+      ], 'hp-970x250b').addService(googletag.pubads());
+    }
+
+    /*** SECTION / TAG ***/
+    if ((window.targettingValues.type === 'sec' || window.targettingValues.type === 'tag') && !targettingValues
+      .category.includes('radiofono247')) {
+      if (targettingValues.category.includes('xartis-apotelesmata-ekloges2019')) {
+        googletag.defineSlot('/4834629/news247.gr/ros_970x250a', [
+          [970, 250],
+          [728, 90],
+          [970, 200],
+          [970, 90],
+          [940, 250],
+          [1, 1]
+        ], 'ros-970x250a').addService(googletag.pubads());
+      } else if (targettingValues.category.includes('stoiximan-a-brain-gain-initiative')) {
+        googletag.defineSlot('/4834629/news247.gr/ros_skin', [1, 1], 'ros-skin').addService(googletag.pubads());
+        googletag.defineSlot('/4834629/news247.gr/ros_970x250a', [
+          [970, 250],
+          [728, 90],
+          [970, 200],
+          [970, 90],
+          [940, 250],
+          [1, 1]
+        ], 'ros-970x250a').addService(googletag.pubads());
+      } else {
+        //console.log('news247 ros section/tag');
+        /* exclude ros_prestitial from 20-20 and good-news section */
+        if (targettingValues.path !== "https://www.news247.gr/good-news/") {
+          googletag.defineSlot('/4834629/news247.gr/ros_prestitial', [1, 1], 'ros-prestitial').addService(googletag
+            .pubads());
+        }
+
+        /* exclude ros-skin from 20-20 and good-news section */
+        if (targettingValues.path !== "https://www.news247.gr/20-20/" && targettingValues.path !==
+          "https://www.news247.gr/good-news/") {
+          console.log("no good news");
+          googletag.defineSlot('/4834629/news247.gr/ros_skin', [1, 1], 'ros-skin').addService(googletag.pubads());
+        }
+
+
+        /*2020 start */
+        if (window.location.pathname.indexOf("/20-20/") > -1) {
+          console.info(000000);
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250a', [
+            [300, 250]
+          ], 'ros-300x250a').addService(googletag.pubads());
+        } else {
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250a', [
+            [300, 250],
+            [300, 600],
+            [300, 200],
+            [300, 500]
+          ], 'ros-300x250a').addService(googletag.pubads());
+        }
+        /*2020 end */
+
+        if (targettingValues.path !== "https://www.news247.gr/good-news/" && targettingValues.path !== "https://www.news247.gr/sustainability/") {
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250b', [
+            [300, 250],
+            [300, 600],
+            [300, 200],
+            [300, 500]
+          ], 'ros-300x250b').addService(googletag.pubads());
+        }
+
+        if (targettingValues.path === "https://www.news247.gr/good-news/" || targettingValues.path === "https://www.news247.gr/sustainability/") {
+console.info("300x250");
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250b', [
+            [300, 250]
+          ], 'ros-300x250b').addService(googletag.pubads());
+        }
+
+        /* exclude ros_300x250c & ros_300x250d from 20-20 section */
+        if (targettingValues.path !== "https://www.news247.gr/20-20/") {
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250c', [
+            [300, 250],
+            [300, 600]
+          ], 'ros-300x250c').addService(googletag.pubads());
+
+          /* exclude ros_300x250d from good-news section */
+          if (targettingValues.path !== "https://www.news247.gr/good-news/") {
+            googletag.defineSlot('/4834629/news247.gr/ros_300x250d', [
+              [300, 250],
+              [300, 600]
+            ], 'ros-300x250d').addService(googletag.pubads());
+          } // end of exclude ros_300x250d from good-news section
+
+
+        }
+console.info('\n\n\n /4834629/news247.gr/ros_970x250a \n\n\n');
+        googletag.defineSlot('/4834629/news247.gr/ros_970x250a', [
+          [970, 250],
+          [728, 90],
+          [970, 200],
+          [970, 90],
+          [940, 250],
+          [1, 1]
+        ], 'ros-970x250a').addService(googletag.pubads());
+
+        googletag.defineSlot('/4834629/news247.gr/ros_970x250b', [
+            [970, 250],
+            [728, 90],
+            [970, 90]
+          ], 'ros-970x250b').addService(googletag.pubads());
+
+
+        /* exclude ros_970x250b from 20-20 and good-news section 
+        if (targettingValues.path !== "https://www.news247.gr/20-20/" && targettingValues.path !==
+          "https://www.news247.gr/good-news/") {
+          googletag.defineSlot('/4834629/news247.gr/ros_970x250b', [
+            [970, 250],
+            [728, 90],
+            [970, 90]
+          ], 'ros-970x250b').addService(googletag.pubads());
+        }
+ */
+
+      }
+    }
+
+    /*** ARTICLE ***/
+    if (window.targettingValues.type === 'art' && !targettingValues.category.includes('radiofono247')) {
+      console.log('news247 ros article');
+
+      // exclude prestitial from live-blog
+      if (!targettingValues.category.includes("live-blog")) {
+        googletag.defineSlot('/4834629/news247.gr/ros_prestitial', [1, 1], 'ros-prestitial').addService(googletag
+          .pubads());
+      }
+
+      googletag.defineSlot('/4834629/news247.gr/ros_article_end', [
+        [300, 250]
+      ], 'ros-article-end').addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/ros_660x100b', [660, 100], 'div-gpt-ad-1554390161408-0').addService(
+        googletag.pubads());
+
+      // handle liveblog exceptions [PROD-999][PROD-1000]
+      if (window.location.pathname.match(/^\/live-blog\//) === null) {
+
+        /* exclude ros_skin, ros-970x250a from 20-20 articles */
+        if (targettingValues.category.indexOf("20-20") === -1) {
+
+          // exclude skin from live-blog
+          if (!targettingValues.category.includes("live-blog")) {
+            googletag.defineSlot('/4834629/news247.gr/ros_skin', [1, 1], 'ros-skin').addService(googletag.pubads());
+          }
+        }
+        /* exclude ros_skin, ros-970x250a from 20-20 articles */
+
+          googletag.defineSlot('/4834629/news247.gr/ros_970x250a', [
+            [970, 250],
+            [728, 90],
+            [970, 200],
+            [970, 90],
+            [940, 250],
+            [1, 1]
+          ], 'ros-970x250a').addService(googletag.pubads());
+
+        googletag.defineSlot('/4834629/news247.gr/ros_660x100a', [660, 100], 'ros-660x100a').addService(googletag
+          .pubads());
+        googletag.defineSlot('/4834629/news247.gr/ros_inline_A', [
+          [300, 250]
+        ], 'ros-inlineA').addService(googletag.pubads());
+
+        /* exclude ros_300x250a, ros_300x250b & ros_300x250c from 20-20 articles */
+        if (targettingValues.category.indexOf("20-20") === -1) {
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250a', [
+            [300, 250],
+            [300, 600],
+            [300, 200],
+            [300, 500]
+          ], 'ros-300x250a').addService(googletag.pubads());
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250b', [
+            [300, 250],
+            [300, 600],
+            [300, 200],
+            [300, 500]
+          ], 'ros-300x250b').addService(googletag.pubads());
+          googletag.defineSlot('/4834629/news247.gr/ros_300x250c', [
+            [300, 250],
+            [300, 600]
+          ], 'ros-300x250c').addService(googletag.pubads());
+        }
+
+      } else {
+        var liveMapping = googletag.sizeMapping()
+          .addSize([1300, 0], [
+            [300, 250],
+            [300, 600],
+            [300, 200],
+            [300, 500]
+          ])
+          .addSize([0, 0], [])
+          .build();
+        googletag.defineSlot('/4834629/news247.gr/ros_300x250a', [
+          [300, 250],
+          [300, 600],
+          [300, 200],
+          [300, 500]
+        ], 'ros-300x250a').defineSizeMapping(liveMapping).addService(googletag.pubads());
+      }
+    }
+
+    /*** RADIOFONO HP ***/
+    if (targettingValues.category.includes('ece_frontpage') && targettingValues.category.includes('radiofono247') &&
+      window.targettingValues.type === 'sec') {
+      //console.log('news247 radio hp');
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_300x250a', [300, 250], 'div-gpt-ad-1554367806488-0')
+        .addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_300x600a', [300, 600], 'div-gpt-ad-1554367904741-0')
+        .addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_970x250', [
+        [728, 90],
+        [940, 250],
+        [970, 250]
+      ], 'div-gpt-ad-1554367947195-0').addService(googletag.pubads());
+
+    }
+
+    /*** RADIOFONO PLAYER ***/
+    if (targettingValues.category.includes('player') && targettingValues.category.includes('radiofono247') && window
+      .targettingValues.type === 'sec') {
+      //console.log('news247 radio ros player');
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_300x250a', [300, 250], 'div-gpt-ad-1554367806488-0')
+        .addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_300x600a', [300, 600], 'div-gpt-ad-1554367904741-0')
+        .addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_970x250', [
+        [728, 90],
+        [970, 250],
+        [940, 250]
+      ], 'div-gpt-ad-1554367947195-0').addService(googletag.pubads());
+    }
+
+    /*** RADIOFONO SECTION ***/
+    if (!targettingValues.category.includes('ece_frontpage') && !targettingValues.category.includes('player') &&
+      targettingValues.category.includes('radiofono247') && window.targettingValues.type === 'sec') {
+      //console.log('news247 radio ros section');
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_300x250a', [300, 250], 'div-gpt-ad-1554367806488-0')
+        .addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_300x600a', [300, 600], 'div-gpt-ad-1554367904741-0')
+        .addService(googletag.pubads());
+      googletag.defineSlot('/4834629/news247.gr/ros_radio_970x250', [
+        [728, 90],
+        [940, 250],
+        [970, 250]
+      ], 'div-gpt-ad-1554367947195-0').addService(googletag.pubads());
+
+    }
+
+    /*if(!targettingValues.category.includes('ece_frontpage') && !targettingValues.category.includes('player') && targettingValues.category.includes('radiofono247') && window.targettingValues.type === 'art'){
+      console.log('news247 radio ros article');
+    }*/
+
+    googletag.pubads().setTargeting("path", window.targettingValues.path)
+      .setTargeting("article", window.targettingValues.article)
+      .setTargeting("keywords", window.targettingValues.keywords)
+      .setTargeting("category", window.targettingValues.category)
+      .setTargeting("type", window.targettingValues.type)
+      .setTargeting("isAmp", window.targettingValues.isAmp)
+      .setTargeting("isMobile", window.targettingValues.isMobile);
+    googletag.pubads().setCentering(true);
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().disableInitialLoad(); /* Creative Display is handle by ocm */
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+
+    googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+      var _slotHolder = event.slot.getSlotElementId();
+      var _slotHolderDiv = document.getElementById(_slotHolder);
+      var _slotWrapper = _slotHolderDiv ? _slotHolderDiv.parentElement.parentElement.querySelector(
+        '.ros_title') : null;
+
+      if (event.isEmpty && _slotWrapper !== null) {
+        _slotWrapper.style.display = 'none';
+      }
+
+
+/*premium ROS start */
+if (event.isEmpty == false && _slotHolder == 'ros-970x250a') {
+
+     console.info("\n\nros-970x250a\n\n");
+    setTimeout(function () {
+
+/* fix 20/01/2021 */
+document.querySelector("body>.container").style.marginTop = "0px"; 
+if(document.querySelector("body.good-news.section") || document.querySelector("body.sec_20-20.section") || document.querySelector("body.art_20-20.news") ) {
+document.querySelector("body").style.marginTop = "0px";
+}
+
+        console.info("_slotHolder -> " + _slotHolder + " is premium isEmpty  " + event.isEmpty);
+
+        window._isPremium = _slotHolderDiv.querySelector('iframe[src*="files.24media.gr"]') ? true : false;
+
+        var premium_placeholder = document.querySelector(".premium_banner");
+        premium_placeholder.parentElement.parentElement.style.position = "initial";
+        premium_placeholder.parentElement.parentElement.style.width = "100%";
+        document.body.querySelector(".wrapper-sticky").classList.remove("wrapper-sticky--enabled");
+
+        if (_isPremium === false) {
+            console.info(" _isPremium: " + _isPremium);
+            premium_placeholder.parentElement.parentElement.style.height = (premium_placeholder.getBoundingClientRect().height + 40) + "px";
+            premium_placeholder.parentElement.style.height = (premium_placeholder.getBoundingClientRect().height + 40) + "px";
+            _slotHolderDiv.style.margin = "20px auto";
+        }
+        if (_isPremium === true) {
+            console.info(" _isPremium: " + _isPremium);
+            premium_placeholder.parentElement.parentElement.classList.add("isPremium");
+            premium_placeholder.parentElement.style.height = (premium_placeholder.getBoundingClientRect().height) + "px";
+            console.info("class list: ", premium_placeholder.parentElement.parentElement.classList);
+
+        }
+        premium_placeholder.parentElement.style.top = "0";
+
+    }, 400);
+}
+
+if (event.isEmpty === true && _slotHolder == 'ros-970x250a') {
+    _slotHolderDiv.style.height = "0px";
+
+if(document.querySelector("body.good-news.section")) {
+document.querySelector("body.good-news.section").style.marginTop = "85px";
+}
+
+if(document.querySelector("body.art_20-20.news")) {
+document.querySelector("body").style.marginTop = "85px";
+}
+
+}
+
+if (_slotHolder == 'ros-970x250a') {
+    setTimeout(function () {
+        //console.info("head-dfp");
+        initStuckAndAnimation();
+    }, 600);
+}
+/*premium ROS end */
+
+      /*good-news start */
+      if (window.location.pathname.indexOf("/good-news/") > -1) {
+        //console.info(" _slotHolder: " +  _slotHolder);
+        if (event.isEmpty && _slotHolder == 'ros-970x250b' && _slotHolderDiv) {
+          _slotHolderDiv.style.display = 'none';
+          _slotHolderDiv.parentElement.parentElement.style.display = 'none';
+          _slotHolderDiv.parentElement.parentElement.style.margin = '0';
+          _slotHolderDiv.parentElement.parentElement.style.padding = '0';
+          console.info("hide _slotHolderDiv: " + _slotHolderDiv.parentElement);
+        }
+      }
+      /*good-news end */
+
+      /*sustainability start */
+      if (window.location.pathname.indexOf("/sustainability/") > -1) {
+        //console.info(" _slotHolder: " +  _slotHolder);
+        if (event.isEmpty && _slotHolder == 'ros-970x250b' && _slotHolderDiv) {
+          _slotHolderDiv.style.display = 'none';
+          _slotHolderDiv.parentElement.parentElement.style.display = 'none';
+          _slotHolderDiv.parentElement.parentElement.style.margin = '0';
+          _slotHolderDiv.parentElement.parentElement.style.padding = '0';
+          console.info("hide _slotHolderDiv: " + _slotHolderDiv.parentElement);
+        }
+      }
+      /*sustainability end */
+
+      /*2020 start */
+      if (window.location.pathname.indexOf("/20-20/") > -1) {
+        //console.info(" _slotHolder: " +  _slotHolder);
+        if (event.isEmpty && _slotHolder == 'ros-970x250a' && _slotHolderDiv) {
+          _slotHolderDiv.style.display = 'none';
+          _slotHolderDiv.parentElement.style.margin = '0';
+          _slotHolderDiv.parentElement.style.padding = '0';
+          console.info("hide _slotHolderDiv: " + _slotHolderDiv.parentElement);
+        }
+        if (!event.isEmpty && _slotHolder == 'ros-970x250b' && _slotHolderDiv) {
+          document.querySelector(".row.topmain.feature_area").setAttribute("style",
+            "margin-bottom:0px!important;");
+          _slotHolderDiv.parentElement.classList.add("showStyles");
+          console.info("show _slotHolderDiv: " + _slotHolderDiv.parentElement);
+        }
+      }
+      /*2020 - end */
+
+      if (event.isEmpty && _slotHolder == 'ros-inlineA' && _slotHolderDiv) {
+        if (document.querySelector('.ros-inlineA_title'))
+          document.querySelector('.ros-inlineA_title').style.display = 'none';
+        _slotHolderDiv.style.display = 'none';
+        _slotHolderDiv.parentElement.style.margin = '0';
+      }
+      if (!event.isEmpty && _slotHolder == 'ros-inlineA' && document.querySelector('.ros-inlineA_title')) {
+        document.querySelector('.ros-inlineA_title').style.display = 'block';
+        document.querySelector('.ros-inlineA_title').style.display = 'block';
+      }
+
+      if (!event.isEmpty && _slotHolder == 'ros-article-end' && document.querySelector(
+          '.ros-article-end_title')) {
+        document.querySelector('.ros-article-end_title').style.display = 'block';
+      }
+
+      if (event.isEmpty && window.location.pathname.match(/^\/20-20\//) == null && window.location.pathname
+        .match(/^\/good-news\//) == null && _slotHolder == "ros-300x250b") {
+        _slotHolderDiv.parentElement.style.display = 'none';
+      }
+
+      /* start - PROD-985 - section inline ads */
+      if (event.isEmpty && _slotHolderDiv) {
+        if (_slotHolder.indexOf("div-gpt-ad-slot") > -1) {
+          _slotHolderDiv.parentElement.style.display = "none";
+          _slotHolderDiv.parentElement.style.padding = "unset";
+          _slotHolderDiv.parentElement.style.margin = "unset";
+        }
+
+      /* 20/01/2021 */
+
+      } else if (!event.isEmpty && _slotHolder.indexOf("div-gpt-ad-slot") > -1 ) {
+       document.getElementById(_slotHolder).parentElement.style.padding = "10px 0 40px";
+      }
+
+/* old code
+      } else if (!event.isEmpty && document.querySelector(".with-sidebar #" + _slotHolder)) {
+        document.querySelector(".with-sidebar #" + _slotHolder).parentElement.style.padding = "10px 0 40px";
+      }
+*/
+
+      /* end - PROD-985 - section inline ads */
+
+      /* AUTO-REFRESH: only for live-blog sidebar ROS_300x250_A [PROD-999] */
+      var _current_slot = event.slot;
+      if (window.location.pathname.match(/^\/live-blog\//) !== null && _slotHolder === 'ros-300x250a') {
+        clearInterval(window._rosA_refresh);
+        window._rosA_refresh = setInterval(function () {
+          googletag.pubads().refresh([_current_slot]);
+        }, 30000);
+      } else if (window.location.pathname.match(/^\/20-20\//) == null && window.location.pathname.match(
+          /^\/good-news\//) == null && !window.location.pathname.endsWith('.html') && _slotHolder ===
+        'ros-300x250a') {
+        clearInterval(window._rosA_refresh);
+        window._rosA_refresh = setInterval(function () {
+
+          if (isViewable(document.getElementById(_slotHolder))) {
+            googletag.pubads().refresh([_current_slot]);
+          }
+        }, 30000);
+      }
+    });
+
+  });
+</script><style>
+.ros_title.noAdTiltle:before{
+display:none!important;
+}
+.ros_title.noAdTiltle .widget__header.ad_label{
+display:none!important;
+}
+.ad-widget_300x250{
+display:block!important;
+}
+#ros-300x250b{
+height:auto!important;
+}
+</style><script src="https://www.news247.gr/resources/512eef8/scripts/vendor.js"></script>
+        <link rel="stylesheet" href="https://www.news247.gr/resources/512eef8/styles/vendor.css">
+        <link rel="stylesheet" href="https://www.news247.gr/resources/512eef8/styles/main_2020.css?redesign=1.02">
+        <script async src="//agorahtag.tech/c/news247.gr.js"></script><script>
+(function(){
+  document.addEventListener('DOMContentLoaded', function(){
+    __tcfapi('addEventListener', 2, function(tcData, success){
+      if (!success || !['tcloaded','useractioncomplete'].includes(tcData.eventStatus)) 
+        return;
+
+      var tcfScripts = document.querySelectorAll('script[data-tcf-script], script[data-tcf-src]');
+
+      tcfScripts.forEach(function (el) { 
+        if (!hasConsent(el, tcData))
+          return;
+        
+        injectScript(el);
+      });
+
+    });
+  });
+
+  //check if we have consent
+  function hasConsent(el, tcData) {
+    if (!tcData.gdprApplies)
+      return true;
+
+    if (!el.dataset.tcfPurposes && !el.dataset.tcfVendors)
+      return true;
+    
+    var purposeConsent = false;
+    var vendorConsent = false;
+
+    if (el.dataset.tcfPurposes) {
+      var purposes = el.dataset.tcfPurposes.split(/[\s,]/);
+      purposeConsent = purposes.every(function(p){
+        return tcData.purpose.consents[p] || tcData.purpose.legitimateInterests[p];
+      });
+    } else {
+      purposeConsent = true;
+    }
+
+    if (el.dataset.tcfVendors) {
+      var vendors = el.dataset.tcfVendors.split(/[\s,]/);
+      vendorConsent = vendors.every(function(v){
+        return tcData.vendor.consents[v] || tcData.vendor.legitimateInterests[v];
+      });
+    } else {
+      vendorConsent = true;
+    }
+    
+    return purposeConsent && vendorConsent;
+  }
+
+  //inject script
+  function injectScript(el){
+
+    var scr = document.createElement('script');
+    var attrs = Array.prototype.slice.call(el.attributes);
+    var attr; 
+
+    while (attr = attrs.pop()) { 
+      switch (attr.nodeName) {
+        case 'data-tcf-src':
+          scr.setAttribute('src', attr.nodeValue);
+          break;
+        case 'data-tcf-script':
+          scr.setAttribute('type', 'text/javascript');
+          attrs.splice('type', 1);
+          scr.text = el.text;
+          break;
+        case 'data-tcf-purposes':
+        case 'data-tcf-vendors':
+          break;
+        default:
+          scr.setAttribute(attr.nodeName, attr.nodeValue); 
+      }
+    } 
+
+    el.parentNode.insertBefore(scr, el); 
+    el.remove();
+  }
+})();
+</script><!-- new nugg.ad script - task [PROD-771] -->
+<script type="application/javascript" async src="https://apps-cdn.relevant-digital.com/static/tags/1138559335280180553.js"></script><!-- Hotjar Tracking Code for https://www.news247.gr -->
+<script>
+(function(h,o,t,j,a,r){
+h.hj=h.hj||function()
+
+{(h.hj.q=h.hj.q||[]).push(arguments)}
+;
+h._hjSettings=
+
+{hjid:536781,hjsv:6}
+;
+a=o.getElementsByTagName('head')[0];
+r=o.createElement('script');r.async=1;
+r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><!-- live-blog Version -->
+<script>
+    const liveBlogVersion = '1.47';
+</script>
+
+<!-- live-blog main video width fix desktop/mobile -->
+<style>
+.article-body__article-head-box + iframe[src *= 'youtube'] {
+    width: 100%;
+}
+</style>
+<style>
+    .special-issue {
+        margin-bottom: 20px;
+    }
+    .col-md-4 .sidebar .top-stories__article {
+        max-width: 300px;
+    }
+    .ekloges2019-map-hp {
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+    .ekloges2019-map-hp .widget-header {
+        background: #fff;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+    .ekloges2019-map-hp > iframe {
+        margin-top: -63px;
+        border: none;
+    }
+    body.mobile .ekloges2019-map-hp {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    body.mobile .ekloges2019-map-hp > iframe {
+        width: 100%;
+        max-height: 750px;
+        border: none;
+    }
+    body.mobile .afieromatiko {
+        margin-bottom: 20px;
+    }
+    @media (min-width: 360px) {
+        body.mobile .ekloges2019-map-hp {
+            padding: 0 20px;
+        }
+    }
+</style><script>
+/* TEMPORARY FIX for firefox instagram bug 
+ * task: TECH-99
+*/
+
+setTimeout(function(){
+
+let reg = /((\bnews\b)|(\bstandardTemplate\b))/g;
+let body_classList = document.body.classList.value;
+
+if( body_classList.match(reg)){
+     //console.log("found:", body_classList.match(reg));
+
+     var browser = navigator.userAgent;
+     var iframe = document.querySelectorAll('.instagram-media')[0];
+    if ( browser.indexOf('Firefox') > -1 || browser.indexOf("Mobile") > -1) {
+       iframe.setAttribute('height', '100vh');
+       iframe.parentElement.style.display = 'flex';
+       iframe.style.minHeight = '1px';
+       iframe.style.display = 'flex';
+     }
+
+}// end of if
+
+}, 800); // end of setTimeout
+
+</script>
+<!-- new oneman logo temp fix -->
+<style>
+.rss-widget__logo_oneman:hover {
+    background-position: 224px -106px!important;
+}
+</style><style>
+/* TEMP FIX */
+.more-news-bestof::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.more-news-bestof {
+  float: none;
+}
+</style><style>
+/* TEMP FONT FIX FOR CORONAVIRUS WIDGET */
+table#coronavirus-body-block td {
+  font-weight: 800;
+}
+table#coronavirus-body-block td a {
+  font-weight: 700;
+}
+.article-body .teaser.coronavirus-widget .widget-header__title {
+  padding-top: 0!important;
+}
+</style><style>
+/* TEMP CSS FOR LIVE UPDATES [PROD-976] */
+.teaser_liveupdates .carousel-dots {
+bottom: 7px;
+}
+.teaser_liveupdates .carousel-dots button {
+width: 14px;
+height: 14px;
+}
+</style><!-- temp fix for task: [MARK-520] -->
+<script> 
+setTimeout( function(){ 
+    if(document.getElementById("stayHome") !== null){
+        document.getElementById("stayHome").innerHTML = "#ΜένουμεΣπίτι";
+    }
+}, 400); 
+</script><style>
+/* TEMP STYLES [PROD-996] */
+@keyframes live-pulse {
+    0% {
+        opacity: 1
+    }
+    10% {
+        opacity: .25
+    }
+    40% {
+        opacity: 1
+    }
+    100% {
+        opacity: 1
+    }
+}
+span.live-tag::before {
+    content:'';
+    display: inline-block;
+    width: 0.73em;
+    height: 0.73em;
+    background: #e20004;
+    border-radius: 0.5em;
+    margin-right: 0.2ch;
+    animation: live-pulse 1s infinite;
+}
+.teaser_liveupdates .widget-header a,
+.teaser_liveupdates .widget-header a:hover {
+color: #fff;
+}
+</style><style>
+/* PROD-1002 */
+.ece_frontpage .d-flex-row,
+.art_20-20 .d-flex-row, 
+.good-news  .d-flex-row{
+   display: block;
+}
+.ad-widget_300x250 {
+   padding: 0!important;
+}
+.teaser .article__title a,
+.top-stories .article__title a,
+.news .sidebar .mh_ta_xasete .article__title a {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 800;
+  line-height: 18px;
+}
+.csr_stories  .article__title a {
+  line-height: 1.090909 !important;
+}
+.news .sidebar .mh_ta_xasete .article__title {
+  margin: 6px 0;
+  overflow-y: hidden;
+}
+.teaser_kairos .article .article__title a {
+   line-height: 24px;
+}
+.news .sidebar .teaser:last-of-type:after {
+ border-top: 0;
+}
+.article__supertitle,
+.article__section:hover,
+.teaser .article__supertitle,
+.top-stories .article__supertitle,
+.news-stream__item__tag:focus, 
+.news-stream__item__tag:hover {
+  background-color: #1955a5;
+}
+.article__section,
+.teaser.teaser_paixnidia-eksousias_wide .teaser__content .article__supertitle,
+.news-stream__item__tag {
+  color: #1955a5;
+}
+body.ece_frontpage .teaser__big-story .article__title {
+  font-size: 5.2rem;
+  letter-spacing: -.02em;
+  line-height: 1.077;
+}
+.article__section {
+  line-height: 1.5;
+}
+.article__summary {
+  line-height: 1.2858;
+}
+body.ece_frontpage .teaser_topstory-editorial .article .article__title,
+body.ece_frontpage .top-stories__article .article__title {
+  line-height: 1.08333;
+  letter-spacing: -0.02em;
+}
+body.ece_frontpage .teaser_topstory-main .article__title {
+  line-height: 1.07143;
+  letter-spacing: -0.02em;
+}
+.teaser.teaser_paixnidia-eksousias_wide .teaser__content .article__title {
+  line-height: 1.22222;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.coronavirus-widget::before {
+  background-color: #FDD831;
+}
+.coronavirus-widget .widget-header__title:after,
+.coronavirus-widget .teaser__article .article__supertitle {
+  color: #FDD831;
+}
+.coronavirus-widget .col-md-4 .teaser__article .article__title {
+  line-height: 1.3077;
+}
+.coronavirus-widget .col-md-3 .teaser__article .article__title {
+  font-size: 1.7rem;
+  line-height: 1.17647;
+  max-height: 3.4em;
+  margin: 6px 0!important;
+}
+.widget-header {
+  border-color: #000;
+}
+.teaser.teaser_paixnidia-eksousias_wide .teaser__content .article__title a:hover:before {
+  border-color: #1955a5;
+  background-color: #1955a5;
+}
+body.ece_frontpage .article_top .article__title {
+  line-height: 1.0938;
+}
+.article_binary .article__title.boldest, 
+.article_nopicture .article__title.boldest, 
+.article_top .article__title.boldest {
+  font-size: 3.2rem;
+}
+.article__title {
+  letter-spacing: -0.02em;
+}
+.rss-widget_homemid .rss-widget__article .article__title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.17647;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+.news-stream__item__link {
+  font-family: 'Roboto Slab', sans-serif;
+  line-height: 1.3077;
+}
+.teaser_sidebar .teaser__article .article__title {
+  line-height: 1.090909;
+  letter-spacing: -0.02em;
+}
+body.ece_frontpage .huffpost-widget__article .article__title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 800;
+  line-height: 1.2857;
+  letter-spacing: 0;
+}
+
+/* section */
+.section .teaser_section-page .teaser__article .article__title { margin: 10px 0 8px; }
+.section .teaser_section-page .teaser__article .article__title a { line-height: 22px; }
+.teaser .section_description h2 { letter-spacing: 0px; }
+
+/* Article */
+.art_20-20 #article-ifo, .good-news #article-ifo {float: none; margin: 0 auto; position: unset;}
+.art_20-20 #article-ifo + aside, .good-news #article-ifo + aside { float: none; display: none!important; }
+.d-flex-row .content.start {flex: 1 0 0;}
+#article-ifo .article-head .article-head__article-head-section-name { color: #1955A5;  font-family: 'Roboto Slab', sans-serif; font-size: 16px;}
+
+#article-ifo .article-head .article-head__article-head-section-name:hover { color: #fff; background-color: #1955A5;}
+
+#article-ifo .article-body__tags  a { color: #1955A5!important; font: 700 16px/24px Roboto Slab;text-transform: uppercase;}
+.news .article-body__relcontent { font: 700 16px/24px Roboto Slab; }
+
+#article-ifo .article-body .article-body__article-headline { font-family: 'Roboto Slab', sans-serif; font-weight: 800; color: #000000;font-size: 40px;line-height: 44px; letter-spacing:  -0.8px;}
+
+.news .article-body__body h2 { font: 800 22px/26px Roboto Slab; color: #000000;  letter-spacing: -0.44px;}
+
+table#coronavirus-body-block h2 { letter-spacing: 0; }
+table#coronavirus-body-block { border-bottom: 5px solid #000000!important; width: 100% }
+table#coronavirus-body-block tbody { font: 800 16px/23px Roboto Slab; }
+.more-news-bestof article a { font: 800 16px/18px Roboto Slab; }
+.bestof-widget__title { font: 400 20px/28px Roboto Slab;  text-transform: uppercase;}
+.more-news-bestof article.rss-widget__article.article h2 a { max-height: 56px; }
+.newsletter-form__title { font: 800 28px/28px Roboto Slab; }
+.newsletter-form__button { font: 700 14px/24px Roboto Slab;
+letter-spacing: 0; }
+
+/* Footer  */
+.read-more-widget__title { font: 400 20px/28px Roboto Slab; }
+.rss-widget_simple .rss-widget__article .article__title { font: 800 13px/17px Roboto Slab; }
+.read-more-widget__title:after, .read-more-widget__title:before { width: calc(50% - 110px); top: 15px;}
+</style><style>
+/* TEMP COLOR CHANGES FOR GOOD NEWS WIDGET [PROD-1054] */
+.teaser_tripleCarousel.teaser_good-news-widget {
+  border-color: #00ddaa;
+  padding-bottom: 20px;
+}
+.teaser_tripleCarousel.teaser_good-news-widget .teaser__logo {
+  top: 0;
+  padding: 0 20px;
+  max-width: unset;
+}
+</style><style>
+   .main-menu__menubar a.navmenu__link.internal[title="20-20"] {font-size: 0;}
+   .side-menu__navmenu a.navmenu__link.internal[title="20-20"] { border-bottom: none; font-size: 0;}
+    .main-menu__menubar a.navmenu__link.internal[title="20-20"].navmenu__link_active { border-bottom: none; font-size: 0;}
+   .side-menu__navmenu a.navmenu__link.internal[title="20-20"].navmenu__link_active { border-bottom: none; font-size: 0;}
+</style><script>
+/*
+    // Make sure that the properties exist on the window.
+    window.googlefc = window.googlefc || {};
+    window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+    // To guarantee functionality, this must go before the FC tag on the page.
+    googlefc.controlledMessagingFunction = (message) => {
+       message.proceed(false);
+    };
+*/
+</script>
+<script>(function(){/*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+'use strict';var g=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},l=this||self,m=/^[\w+/_-]+[=]{0,2}$/,p=null,q=function(){},r=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";
+if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},u=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a};var v=function(a,b){Object.defineProperty(l,a,{configurable:!1,get:function(){return b},set:q})};var y=function(a,b){this.b=a===w&&b||"";this.a=x},x={},w={};var aa=function(a,b){a.src=b instanceof y&&b.constructor===y&&b.a===x?b.b:"type_error:TrustedResourceUrl";if(null===p)b:{b=l.document;if((b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&m.test(b)){p=b;break b}p=""}b=p;b&&a.setAttribute("nonce",b)};var z=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^+new Date).toString(36)};var A=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},B=function(a){this.a=a||l.document||document};B.prototype.appendChild=function(a,b){a.appendChild(b)};var C=function(a,b,c,d,e,f){try{var k=a.a,h=A(a.a,"SCRIPT");h.async=!0;aa(h,b);k.head.appendChild(h);h.addEventListener("load",function(){e();d&&k.head.removeChild(h)});h.addEventListener("error",function(){0<c?C(a,b,c-1,d,e,f):(d&&k.head.removeChild(h),f())})}catch(n){f()}};var ba=l.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ca=l.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),da=l.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),ea=function(a,b,c){this.b=a;this.f=new B(this.b);this.a=null;this.c=[];this.g=!1;this.i=b;this.h=c},F=function(a){if(a.b.body&&!a.g){var b=
+function(){D(a);l.setTimeout(function(){return E(a,3)},50)};C(a.f,a.i,2,!0,function(){l[a.h]||b()},b);a.g=!0}},D=function(a){for(var b=G(1,5),c=0;c<b;c++){var d=H(a);a.b.body.appendChild(d);a.c.push(d)}b=H(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=G(100,110).toString()+"%";b.style.zIndex=G(2147483544,2147483644).toString();b.style["background-color"]=I(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=I(0,10,0,10,0,10);b.style.display=
+"flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=H(a);c.style.width=G(80,85).toString()+"%";c.style.maxWidth=G(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=A(a.f.a,"IMG");d.className=z();d.src=ba;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=H(a),f=H(a);f.style["font-weight"]="bold";f.textContent=ca;var k=H(a);k.textContent=da;J(a,
+e,f);J(a,e,k);J(a,c,d);J(a,c,e);J(a,b,c);a.a=b;a.b.body.appendChild(a.a);b=G(1,5);for(c=0;c<b;c++)d=H(a),a.b.body.appendChild(d),a.c.push(d)},J=function(a,b,c){for(var d=G(1,5),e=0;e<d;e++){var f=H(a);b.appendChild(f)}b.appendChild(c);c=G(1,5);for(d=0;d<c;d++)e=H(a),b.appendChild(e)},G=function(a,b){return Math.floor(a+Math.random()*(b-a))},I=function(a,b,c,d,e,f){return"rgb("+G(Math.max(a,0),Math.min(b,255)).toString()+","+G(Math.max(c,0),Math.min(d,255)).toString()+","+G(Math.max(e,0),Math.min(f,
+255)).toString()+")"},H=function(a){a=A(a.f.a,"DIV");a.className=z();return a},E=function(a,b){0>=b||null!=a.a&&0!=a.a.offsetHeight&&0!=a.a.offsetWidth||(fa(a),D(a),l.setTimeout(function(){return E(a,b-1)},50))},fa=function(a){var b=a.c;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:g(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.c=[];(b=a.a)&&b.parentNode&&b.parentNode.removeChild(b);a.a=null};var ia=function(a,b,c,d,e){var f=ha(c),k=function(n){n.appendChild(f);l.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},h=function(n){document.body?k(document.body):0<n?l.setTimeout(function(){h(n-1)},e):b()};h(3)},ha=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var K={},L=null;var M=function(){},N="function"==typeof Uint8Array,O=function(a,b){a.b=null;b||(b=[]);a.j=void 0;a.f=-1;a.a=b;a:{if(b=a.a.length){--b;var c=a.a[b];if(!(null===c||"object"!=typeof c||Array.isArray(c)||N&&c instanceof Uint8Array)){a.g=b-a.f;a.c=c;break a}}a.g=Number.MAX_VALUE}a.i={}},P=[],Q=function(a,b){if(b<a.g){b+=a.f;var c=a.a[b];return c===P?a.a[b]=[]:c}if(a.c)return c=a.c[b],c===P?a.c[b]=[]:c},R=function(a,b,c){a.b||(a.b={});if(!a.b[c]){var d=Q(a,c);d&&(a.b[c]=new b(d))}return a.b[c]};
+M.prototype.h=N?function(){var a=Uint8Array.prototype.toJSON;Uint8Array.prototype.toJSON=function(){var b;void 0===b&&(b=0);if(!L){L={};for(var c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),d=["+/=","+/","-_=","-_.","-_"],e=0;5>e;e++){var f=c.concat(d[e].split(""));K[e]=f;for(var k=0;k<f.length;k++){var h=f[k];void 0===L[h]&&(L[h]=k)}}}b=K[b];c=[];for(d=0;d<this.length;d+=3){var n=this[d],t=(e=d+1<this.length)?this[d+1]:0;h=(f=d+2<this.length)?this[d+2]:0;k=n>>2;n=(n&
+3)<<4|t>>4;t=(t&15)<<2|h>>6;h&=63;f||(h=64,e||(t=64));c.push(b[k],b[n],b[t]||"",b[h]||"")}return c.join("")};try{return JSON.stringify(this.a&&this.a,S)}finally{Uint8Array.prototype.toJSON=a}}:function(){return JSON.stringify(this.a&&this.a,S)};var S=function(a,b){return"number"!==typeof b||!isNaN(b)&&Infinity!==b&&-Infinity!==b?b:String(b)};M.prototype.toString=function(){return this.a.toString()};var T=function(a){O(this,a)};u(T,M);var U=function(a){O(this,a)};u(U,M);var ja=function(a,b){this.c=new B(a);var c=R(b,T,5);c=new y(w,Q(c,4)||"");this.b=new ea(a,c,Q(b,4));this.a=b},ka=function(a,b,c,d){b=new T(b?JSON.parse(b):null);b=new y(w,Q(b,4)||"");C(a.c,b,3,!1,c,function(){ia(function(){F(a.b);d(!1)},function(){d(!0)},Q(a.a,2),Q(a.a,3),Q(a.a,1))})};var la=function(a,b){V(a,"internal_api_load_with_sb",function(c,d,e){ka(b,c,d,e)});V(a,"internal_api_sb",function(){F(b.b)})},V=function(a,b,c){a=l.btoa(a+b);v(a,c)},W=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];e=l.btoa(a+b);e=l[e];if("function"==r(e))e.apply(null,d);else throw Error("API not exported.");};var X=function(a){O(this,a)};u(X,M);var Y=function(a){this.h=window;this.a=a;this.b=Q(this.a,1);this.f=R(this.a,T,2);this.g=R(this.a,U,3);this.c=!1};Y.prototype.start=function(){ma();var a=new ja(this.h.document,this.g);la(this.b,a);na(this)};
+var ma=function(){var a=function(){if(!l.frames.googlefcPresent)if(document.body){var b=document.createElement("iframe");b.style.display="none";b.style.width="0px";b.style.height="0px";b.style.border="none";b.style.zIndex="-1000";b.style.left="-1000px";b.style.top="-1000px";b.name="googlefcPresent";document.body.appendChild(b)}else l.setTimeout(a,5)};a()},na=function(a){var b=Date.now();W(a.b,"internal_api_load_with_sb",a.f.h(),function(){var c;var d=a.b,e=l[l.btoa(d+"loader_js")];if(e){e=l.atob(e);
+e=parseInt(e,10);d=l.btoa(d+"loader_js").split(".");var f=l;d[0]in f||"undefined"==typeof f.execScript||f.execScript("var "+d[0]);for(;d.length&&(c=d.shift());)d.length?f[c]&&f[c]!==Object.prototype[c]?f=f[c]:f=f[c]={}:f[c]=null;c=Math.abs(b-e);c=1728E5>c?0:c}else c=-1;0!=c&&(W(a.b,"internal_api_sb"),Z(a,Q(a.a,6)))},function(c){Z(a,c?Q(a.a,4):Q(a.a,5))})},Z=function(a,b){a.c||(a.c=!0,a=new l.XMLHttpRequest,a.open("GET",b,!0),a.send())};(function(a,b){l[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];l[a]=q;b.apply(null,d)}})("__d3lUW8vwsKlB__",function(a){"function"==typeof window.atob&&(a=window.atob(a),a=new X(a?JSON.parse(a):null),(new Y(a)).start())});}).call(this);
+
+window.__d3lUW8vwsKlB__("WyIxYjhlNTkxZmViZWE5Y2E3IixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4WHVyX3Rydk5nNVlGSUtWYjdIbUhKbXo0cHU0M2hrb1dDdEhxZGRRREVGSkxQWWhxT21tcWh4UlMyVGFUdlBYWXh3V2xQQk9lTWxGLXhWbndZNVlld1x1MDAzZCJdCixbMjAsImRpdi1ncHQtYWQiLDEwMCwiTVdJNFpUVTVNV1psWW1WaE9XTmhOd1x1MDAzZFx1MDAzZCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL3d3dy5nc3RhdGljLmNvbS8wZW1uL2YvcC8xYjhlNTkxZmViZWE5Y2E3LmpzP3VzcXBcdTAwM2RDQTgiXQpdCiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hYeHJtaFdHZW1RQXRVWHV5MWJjWFBoc2c3ZEZTWHY5ZDBDUGo2Y0RGSWtwbDc4M2t1LU5EbkJJNWxQakw5YnRDSndqOWJ4NTMzcmxuX2x1bkxhP2FiXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2wvQUdTS1d4Vi1VU0ZScGdsTzJZR0dDZW9lWVUwbEFEUUdseXJMeGJoYi1Qa3hDaTZjd3hnVkx0TjZBMmpacUdOQ1lOZDdYYnVWVlprODcxZFJkYm9jWW5Fbz9hYlx1MDAzZDJcdTAwMjZzYmZcdTAwM2QxIiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hWS1Itdm9ZV2ZlSER6cGZOU0MtQ2haN1A2bDlLRFBlNmhzMnYtODRvNExoUnhkRDdPdVFfVndnZkVZaC1ZNkZ1cEpUQlZ4UWJzYUR6MHM0bzU3P3NiZlx1MDAzZDIiXQo=");</script><style>
+   /* fixing Main Menu mini brands styles */
+   .navmenu_horizontal { float: none; }
+   .navmenu_horizontal .navmenu__item:last-child {padding-right: 0;}
+   .search-field__input {top: 9px;}
+   .main-menu__menubar a.navmenu__link.internal[title="Good News"].navmenu__link_active, 
+   .main-menu__menubar a.navmenu__link.internal[title="20-20"].navmenu__link_active,
+    .main-menu__menubar a.navmenu__link.internal[title="Δελτίο Καιρού"].navmenu__link_active
+   {
+        border-bottom: none!important;
+   }
+
+   .side-menu__navmenu a.navmenu__link.internal[title="20-20"].navmenu__link_active,
+   .side-menu__navmenu a.navmenu__link.internal[title="Good News"].navmenu__link_active,
+   .side-menu__navmenu a.navmenu__link.internal[title="Δελτίο Καιρού"].navmenu__link_active {
+      border-bottom: none!important;
+   }
+</style><style>
+.standardTemplateWithoutSidebar:not(.good-news):not(.art_20-20) #article-ifo {
+    float: none;
+    margin: 0 auto;
+}
+</style><!-- tablet bug fix header width 13/11/2020  --> 
+<style>
+body > #header {
+    min-width: 1000px;
+}
+</style><style>
+/* release fixes */
+.live-blog.news.standardTemplate > .container{
+margin-top: 85px;
+}
+
+.sec_20-20.section,
+.art_20-20.news.standardTemplate,
+.good-news.section,
+.good-news.news.standardTemplate{
+/*margin-top: 85px;*/
+}
+
+.search-field__input {
+    top: -6px;
+}
+
+body.live-blog.news > .container > aside #live-blog-key-events-container,
+body.live-blog.news.standardTemplate > .container > aside #stuck-ads-container .ads-container,
+body.section:not(.good-news) .grid_ad_good-news{
+top:90px;
+}
+
+body.section:not(.ece_frontpage) .wrapper-sticky--enabled+.teaser_liveupdates {
+    margin-bottom: 0px;
+}
+.navmenu__link_external:after{
+    right: -15px;
+}
+</style><style>
+/* redesign 2020 fix 5ada col-4 */
+.top-stories-5articles .sidebar .top-stories__article {
+  width: 314px!important;
+  max-width: 314px;
+}
+</style><style>
+/* redesign 2020 fix header search */
+.search-field:hover .search-field__button {
+    background: url(/resources/79a99fs/images/menu-spritemap.png) no-repeat -236px 0;
+}
+</style><!-- HEAD SCRIPT NEUSTAR | P&G GREECE PROGRAMMATIC UPGRADE - DATA SHARING PARTNER -->    
+
+<script type="text/html" data-tcf-script data-tcf-vendors="468,577" data-tcf-purposes="1,2,3,4,5,6,7,8,9">
+    function setUpAgknTag(tag) {
+
+        tag.setBpId("24mediagreece");
+
+        __tcfapi('getTCData',2,function(tcData, success){
+            if (!success || !['tcloaded','useractioncomplete'].includes(tcData.eventStatus)) 
+                return;
+
+            if (!tcData.gdprApplies) {
+                tag.setGdpr(0);
+                return;
+            }
+
+            tag.setGdpr(1);
+            tag.setGdprConsent(tcData.tcString);
+        });
+    }
+</script>
+<script async data-tcf-src="//js.agkn.com/prod/v0/tag.js" data-tcf-vendors="468,577" data-tcf-purposes="1,2,3,4,5,6,7,8,9"></script><!-- dmp pixel code -->
+<script type="text/html" data-tcf-script data-tcf-vendors="84" data-tcf-purposes="1,3,9,10">
+//<![CDATA[
+try {__tcfapi('getTCData',2,function(tcData, success){ if (!success || !['tcloaded','useractioncomplete'].includes(tcData.eventStatus)) return; var smoGDPRFlag = tcData.gdprApplies ? 1 : 0;var smoGDPRConsentString = tcData.gdprApplies ? tcData.tcString : ''; var smoRand = Math.random()*100000000000000000; smoTrSeq = (typeof(smoTrSeq) != "undefined") ? smoTrSeq + 1 : 0;var smoPrtKey='omdgr/1';var smoPUrl = escape(window != parent ? document.referrer : document.location.href);var smoIframe = window != parent ? '&nIframe=1' : '';var smoParams ='&sType=view&nCampaignId=1';var smoProto = (document.location.protocol == 'https:') ? "https:" : "http:";var smoTrUrl = smoProto + '//uip.semasio.net/' + smoPrtKey + '/info?gdpr=' + smoGDPRFlag + '&gdpr_consent=' + smoGDPRConsentString +'&_referrer=' + smoPUrl + smoParams + '&nJs=1&_ignore=' + smoRand + smoIframe;var smoTrImg = new Image(); smoTrImg.src = smoTrUrl; }); } catch (err) { }
+//]]>
+</script><!-- GroupM mPlatform script -->
+<script type='text/html' data-tcf-script data-tcf-vendors='98' data-tcf-purposes='1,2,3,4,5,6,7,8,9,10'>!function(n,t,a,i){n.mpfContainr||(n.mpfContainr=function(){a.push(arguments)},mpfContainr.q=a,(i=t.createElement('script')).type='application/javascript',i.async=!0,i.src='//cdn.mookie1.com/containr.js',t.head.appendChild(i))}(window,document,[]);
+mpfContainr('V2_748050',{'host': 'gr-gmtdmp.mookie1.com', 'tagType': 'learn','src.rand': Date.now()});
+</script><script>
+  !function(C,o,n,t,P,a,s){C['CPObject']=n;C[n]||(C[n]=function(){
+  (C[n].q=C[n].q||[]).push(arguments)});C[n].l=+new Date;a=o.createElement(t);
+  s=o.getElementsByTagName(t)[0];a.src=P;s.parentNode.insertBefore(a,s)}
+  (window,document,'cp','script','https://get.contentpass.net/now.js');
+  cp('create', '6eadea1a');
+  cp('detect');
+</script><!-- [ADOPS-6] fix article stuck slots desktop -->
+<style>
+body.news #ros-300x250b,
+body.news .grid_ad_good-news_container-c{
+    top:90px;
+}
+</style><!-- 
+PROD-1722?focusedCommentId=34299
+-->
+<style>
+.teaser_liveupdates .carousel-dots button{
+background-color: #fff;
+}
+.teaser_liveupdates .carousel-dots button.active{
+background-color: #e10005;
+}
+</style><!-- TECH-207 -->
+<style>
+.huffpost-widget__article .article__title{
+    letter-spacing: -.42px!important;
+}
+
+/* Good new Article  fix center Facebook embed */
+.good-news.news #article-ifo .article-body__storyContent .article-body__body__inline.article-body__body__inline--intrinsic{
+text-align:center;
+}
+</style>
+<style>
+    header.header section.teaser_liveupdates {
+        margin: 0 0 10px;
+    }
+
+</style>
+<!--  TECH-195 -->
+<script>
+document.addEventListener("click", function(e){
+    //console.info('e.target: ',e.target);
+    var elem = e.target;
+    var elem_classList = elem.classList;
+
+    switch(true){
+        case elem_classList.contains('main-menu__toggle'):
+        window.dataLayer.push({'event': 'Burger Menu Clicked Side Menu is Open'});
+        //console.info("Burger Menu Clicked Side Menu is Open");
+        break;
+        case elem_classList.contains('side-menu__close'):
+        case elem_classList.contains('side-menu__backdrop'):
+        window.dataLayer.push({'event': 'Close Button Clicked Side Menu is Closed'});
+        //console.info("Close Button Clicked Side Menu is Closed");
+        break;
+        case elem_classList.contains('navmenu__link'):
+        if(elem.parentElement.parentElement.classList.contains("navmenu_vertical"))
+            window.dataLayer.push({'event': 'Sidebar Menu Clicked Side Menu is Closed'});
+            //console.info("Sidebar Menu Clicked Side Menu is Closed");
+        break;
+        default:
+        //console.info("do nothing");
+    }
+
+}, false);
+
+// track escape
+document.addEventListener("keydown", function(evt) {
+    evt = evt || window.event;
+    var isEscape = false;
+    var _sideMenuDisplay = document.querySelector("#side-menu__backdrop").style.display;
+    if ("key" in evt) {
+        isEscape = (evt.key === "Escape" || evt.key === "Esc");
+    } else {
+        isEscape = (evt.keyCode === 27);
+    }
+    if (isEscape && _sideMenuDisplay == "block") {
+        //console.info("Escape");
+        window.dataLayer.push({'event': 'Close Button Clicked Side Menu is Closed'});
+    }
+});
+
+/* remove when [TECH-205] released */
+window.addEventListener('DOMContentLoaded', (event) => {
+
+document.querySelectorAll(".social-links__icon_fb")[0].setAttribute('data-gtm', 'social links header facebook');
+document.querySelectorAll(".social-links__icon_fb")[1].setAttribute('data-gtm', 'social links side menu facebook');
+
+document.querySelectorAll(".social-links__icon_tw")[0].setAttribute('data-gtm', 'social links header twitter');
+document.querySelectorAll(".social-links__icon_tw")[1].setAttribute('data-gtm', 'social links side menu twitter');
+
+document.querySelectorAll(".social-links__icon_insta")[0].setAttribute('data-gtm', 'social links header instagram');
+document.querySelectorAll(".social-links__icon_insta")[1].setAttribute('data-gtm', 'social links side menu instagram');
+
+});
+
+</script></head>
+            <body id="ece_frontpage" class="oikonomia section" >
+                        <!-- Google Tag Manager (noscript) -->
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXGWMN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                <!-- End Google Tag Manager (noscript) -->
+
+                <!-- HEADER -->
+                <header class="header" id="header">
+                            <div  class="code-widget ">
+    <!-- /4834629/news247.gr/'ros-970x250a -->
+<div class="premium_banner_wrapper parent" >
+<div id='ros-970x250a'  class="premium_banner child" >
+
+<script>
+googletag.cmd.push(function() { googletag.display('ros-970x250a'); });
+</script>
+
+</div>
+</div>
+
+<style>
+/*google_ads_iframe_/4834629/news247.gr/ros_970x250a_0__container__*/
+.isPremium [id="google_ads_iframe_/4834629/news247.gr/hp_970x250a_0__container__"],
+.isPremium [id="google_ads_iframe_/4834629/news247.gr/ros_970x250a_0__container__"]{
+    position: absolute;
+}
+body.tablet, html.tablet{
+width:100vw;
+}
+body.tablet .premium_banner_wrapper.parent{
+display: contents;
+}
+</style></div>
+
+<div class="content start wrapper-sticky" >
+            <div  class="code-widget ">
+    <script>
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var _preview = url.searchParams.get("preview") ? true : false;
+    var _preview = true;
+
+    var _premium_isOpen = false;
+    var _premiun_parent;
+    var _premiun_parent_height;
+    var _wrapper_sticky_elem;
+    var _trigger_point = 200;
+
+    var _isHome = document.body.classList.contains("ece_frontpage") || document.body.classList.value.indexOf("ece_frontpage") > -1;
+
+    var _hasAdblock = (typeof googletag.pubads !== "function") ? true : false;
+
+
+    function initStuckAndAnimation() {
+
+        _premiun_parent = document.querySelector(".premium_banner_wrapper");
+
+        //_premiun_parent_height = _isHome ? _premiun_parent.getBoundingClientRect().height : 0;
+        _premiun_parent_height = _premiun_parent.getBoundingClientRect().height ;// new
+
+        _premium_isOpen = _premiun_parent_height > 1 ? true : false;
+
+        last_known_scroll_position = window.scrollY;
+        _trigger_point = _premiun_parent_height + _trigger_point;
+        _wrapper_sticky_elem = document.querySelector(".wrapper-sticky");
+
+        if (last_known_scroll_position > _premiun_parent_height ) {
+            _wrapper_sticky_elem.classList.add("wrapper-sticky--enabled");
+        }
+
+        //if (last_known_scroll_position >= _trigger_point && _isHome) {
+        if (last_known_scroll_position >= _trigger_point ) { //new
+            document.querySelector(".main-menu__container-top").classList.add("header--small");
+            document.querySelector(".main-menu__container-top").classList.remove("header--big");
+        }
+
+        window.addEventListener('scroll', function(e) {
+            last_known_scroll_position = window.scrollY;
+
+            //console.info("last_known_scroll_position : ", last_known_scroll_position);
+            //console.info("_premiun_parent_height : ", _premiun_parent_height);
+            //console.info("_premium_isOpen : " , _premium_isOpen);
+            //console.info("_preview : " , _preview);
+            //console.info("_wrapper_sticky_elem : " , _wrapper_sticky_elem);
+
+            var _canScaleUp = document.querySelector(".main-menu__container-top").classList.contains("header--big") ? true : false;
+            var _canScaleDown = document.querySelector(".main-menu__container-top").classList.contains("header--small") ? true : false;
+
+            if (last_known_scroll_position >= _premiun_parent_height ) {
+
+//console.info("last_known_scroll_position", last_known_scroll_position);
+//console.info("_premiun_parent_height", _premiun_parent_height);
+
+                _wrapper_sticky_elem.classList.add("wrapper-sticky--enabled");
+
+                if (document.body.classList.value.indexOf("good-news news") > -1) {
+console.info("good-news news");
+                    document.querySelector(".good-news.news.standardTemplate .container").classList.add("marginTop95");
+                }
+
+                if (document.body.classList.value.indexOf("good-news section") > -1) {
+console.info("good-news section");
+                    document.querySelector(".good-news.section .container").classList.add("marginTop95");
+                }
+
+                if (document.body.classList.value.indexOf("art_20-20 news") > -1) {
+console.info("art_20-20 news");
+                    document.querySelector(".art_20-20.news .container").classList.add("marginTop95");
+                }
+
+                if (document.body.classList.value.indexOf("sec_20-20 section") > -1) {
+console.info("sec_20-20 section");
+                    document.querySelector(".sec_20-20.section .container").classList.add("marginTop95");
+                }
+
+                if (document.body.classList.value.indexOf("sustainability section") > -1) {
+console.info("sustainability section");
+                    document.querySelector(".sustainability.section .container").classList.add("marginTop95");
+                }
+
+                if (document.body.classList.value.indexOf("sustainability news") > -1) {
+console.info("sustainability news");
+                    document.querySelector(".sustainability.news .container").classList.add("marginTop95");
+                }
+
+                if (document.body.classList.value.indexOf("ekthesi-pissaridi tag") > -1) {
+console.info("ekthesi-pissaridi tag");
+                    document.querySelector(".ekthesi-pissaridi.tag .container").classList.add("marginTop95");
+                }
+
+            } else {
+                document.querySelector(".container").classList.remove("marginTop95");
+                _wrapper_sticky_elem.classList.remove("wrapper-sticky--enabled");
+            }
+
+            if (last_known_scroll_position > _trigger_point && _isHome) {
+                document.querySelector(".main-menu__container-top").classList.add("header--small");
+                document.querySelector(".main-menu__container-top").classList.remove("header--big");
+            } else if (last_known_scroll_position < _trigger_point && _canScaleDown) {
+                document.querySelector(".main-menu__container-top").classList.add("header--big");
+                document.querySelector(".main-menu__container-top").classList.remove("header--small");
+            }
+
+        }); // end of event scroll
+
+    } //end of function initStuckAndAnimation();
+
+    // Section & Article stuck 
+    window.addEventListener('DOMContentLoaded', (event) => {
+        if (!_isHome) {
+            initStuckAndAnimation();
+        } else if (_isHome && _hasAdblock) {
+            initStuckAndAnimation();
+        }
+
+
+    });
+
+</script>
+
+<style>
+
+body.author>.container, body.section:not(.ece_frontpage)>.container, body.tag>.container {
+    padding-top: 10px;
+}
+    /* fix for section liveupdates */
+
+    body:not(.ece_frontpage) .container.marginTop95,
+    body:not(.ece_frontpage) .wrapper-sticky--enabled+.teaser_liveupdates {
+margin-top: 85px!important;
+    }
+
+
+    body.ece_frontpage .wrapper-sticky--enabled+.teaser_liveupdates {
+        margin-top: 110px;
+margin-top: 130px;
+    }
+
+    /*    
+    new top value for sticky banners
+    for 20-20 & good-news sections 
+    */
+
+    .section.good-news .grid_ad_good-news,
+    .section.good-news .grid_ad_good-news_container,
+    .section.sec_20-20 .grid_ad_in_sticky_container-b {
+        top: 95px;
+    }
+
+
+    .search-field:hover .search-field__button {
+        background-position: -236px 0;
+    }
+
+</style>
+
+<style>
+
+    body:not(.ece_frontpage) .container.marginTop95,
+    body:not(.ece_frontpage) .wrapper-sticky--enabled+.teaser_liveupdates {
+        margin-top: 75px!important;
+    }
+
+    .sec_20-20.section .container,
+    .good-news.section .container,
+    .good-news.news.standardTemplate .container,
+    .art_20-20.news.standardTemplate .container,
+    .sustainability.news.standardTemplate .container{
+        padding-top: 0px!important;
+    }
+
+</style></div>
+
+<div class="main-menu main-menu-2020">
+    <div class="main-menu__container">
+
+        <!-- Menu top -->
+        <div class="main-menu__container-top ">
+            <div class="main-menu__container-top--left">
+                <i class="main-menu__toggle" onclick="openNav();" role="button" aria-hidden="true"></i>
+                <div class="main-menu__logo logo ">
+                    <a href="https://www.news247.gr/" class="logo__link" title="News 24/7">
+                        <img class="logo__image logo__horizontal" src="https://www.news247.gr/resources/512eef8/images/news247_logo_horizontal@2x.png" alt="News 24/7" title="News 24/7" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-menu__container-top--middle">
+                <div class="main-menu__logo logo ">
+                    <a href="https://www.news247.gr/" class="logo__link" title="News 24/7">
+                        <img class="logo__image logo__vertical" src="https://www.news247.gr/resources/512eef8/images/news247_logo_vertical@2x.png" alt="News 24/7" title="News 24/7" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-menu__container-top--right">
+                <div class="main-menu__search search-field">
+                    <form action="https://www.news247.gr/search/" method="GET" id="searchForm" class="search-field__form">
+                        <input type="text" class="search-field__input" name="q" placeholder="Αναζήτηση">
+                        <a href="javascript:document.forms['searchForm'].submit();" class="search-field__button" title="Αναζήτηση">&nbsp;</a>
+                    </form>
+                </div>
+                <div class="main-menu__social social-links">
+                    <a class="social-links__icon social-links__icon_fb" data-gtm="header facebook button" rel="noopener nofollow external" target="_blank" href="https://www.facebook.com/news247" title="Ακολουθήστε το News 24/7 στο Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="social-links__icon social-links__icon_tw" data-gtm="header twitter button" rel="noopener nofollow external" target="_blank" href="https://twitter.com/News247gr" title="Ακολουθήστε το News 24/7 στο Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class="social-links__icon social-links__icon_insta" data-gtm="header instagram button" rel="noopener nofollow external" target="_blank" href="https://www.instagram.com/news247gr/" title="Ακολουθήστε το News 24/7 στο Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Bottom -->
+        <div class="main-menu__container-bottom">
+            <nav class="main-menu__menus">
+                <ul class="main-menu__menubar navmenu navmenu_horizontal main-nav">
+                    <li class="navmenu__item">
+                                <a href="https://www.news247.gr/politiki/"
+                                   title="ΠΟΛΙΤΙΚΗ"
+                                   target="_self"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    ΠΟΛΙΤΙΚΗ</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://www.news247.gr/koinonia/"
+                                   title="ΚΟΙΝΩΝΙΑ"
+                                   target="_self"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    ΚΟΙΝΩΝΙΑ</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://www.news247.gr/oikonomia/"
+                                   title="ΟΙΚΟΝΟΜΙΑ"
+                                   target="_self"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    ΟΙΚΟΝΟΜΙΑ</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://www.news247.gr/kosmos/"
+                                   title="ΚΟΣΜΟΣ"
+                                   target="_self"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    ΚΟΣΜΟΣ</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://www.news247.gr/good-news/"
+                                   title="GOOD NEWS"
+                                   target="_self"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    GOOD NEWS</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://www.news247.gr/20-20/"
+                                   title="20/20"
+                                   target="_self"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    20/20</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://newspapers.news247.gr/"
+                                   title="ΠΡΩΤΟΣΕΛΙΔΑ"
+                                   target="_blank"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    ΠΡΩΤΟΣΕΛΙΔΑ</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://www.news247.gr/latest/"
+                                   title="ΕΙΔΗΣΕΙΣ"
+                                   target="_self"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    ΕΙΔΗΣΕΙΣ</a>
+                            </li>
+                            <li class="navmenu__item">
+                                <a href="https://www.deltiokairou.gr/"
+                                   title="ΚΑΙΡΟΣ"
+                                   target="_blank"
+                                   class="navmenu__link internal"
+                                   rel="opener "
+                                   >
+                                    ΚΑΙΡΟΣ</a>
+                            </li>
+                            </ul>
+
+            </nav>
+
+        </div>
+
+        <div class="main-menu__side-menu side-menu" id="side-menu">
+                <div class="side-menu__scrollable">
+                    <a href="javascript:void(0)" onclick="closeNav();" class="side-menu__close" id="side-menu__close" title="close">×</a>
+                    <ul class="side-menu__navmenu navmenu navmenu_vertical">
+                        <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/politiki/"
+                                           title="ΠΟΛΙΤIΚΗ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΠΟΛΙΤIΚΗ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/koinonia/"
+                                           title="ΚΟΙΝΩΝΙΑ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΚΟΙΝΩΝΙΑ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/kosmos/"
+                                           title="ΚΟΣΜΟΣ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΚΟΣΜΟΣ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/oikonomia/"
+                                           title="ΟΙΚΟΝΟΜΙΑ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΟΙΚΟΝΟΜΙΑ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/epixeiriseis/"
+                                           title="ΕΠΙΧΕΙΡΗΣΕΙΣ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΕΠΙΧΕΙΡΗΣΕΙΣ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/politismos/"
+                                           title="ΠΟΛΙΤΙΣΜΟΣ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΠΟΛΙΤΙΣΜΟΣ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/media/"
+                                           title="MEDIA"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                MEDIA</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/psixagogia/"
+                                           title="ΨΥΧΑΓΩΓΙΑ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΨΥΧΑΓΩΓΙΑ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/celebrities/"
+                                           title="CELEBRITIES"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                CELEBRITIES</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/amyna/"
+                                           title="ΑΜΥΝΑ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΑΜΥΝΑ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/ygeia/"
+                                           title="ΥΓΕΙΑ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΥΓΕΙΑ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/technologia/"
+                                           title="ΤΕΧΝΟΛΟΓΙΑ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΤΕΧΝΟΛΟΓΙΑ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/epistimi/"
+                                           title="ΕΠΙΣΤΗΜΗ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΕΠΙΣΤΗΜΗ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/gnomes/"
+                                           title="ΓΝΩΜΕΣ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΓΝΩΜΕΣ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/synentefxeis/"
+                                           title="ΣΥΝΕΝΤΕΥΞΕΙΣ"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                ΣΥΝΕΝΤΕΥΞΕΙΣ</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/20-20/"
+                                           title="20-20"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                20-20</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.news247.gr/good-news/"
+                                           title="Good News"
+                                           target="_self"
+                                           class="navmenu__link internal"
+                                           rel="opener "
+                                        >
+                                                Good News</a>
+                                    </li>
+                                <li class="navmenu__item">
+                                        <a href="https://www.deltiokairou.gr/"
+                                           title="ΔΕΛΤΙΟ ΚΑΙΡΟΥ"
+                                           target="_blank"
+                                           class="navmenu__link navmenu__link_external"
+                                           rel="opener "
+                                        >
+                                                ΔΕΛΤΙΟ ΚΑΙΡΟΥ</a>
+                                    </li>
+                                <!-- <li class="navmenu__line"><hr /></li> -->
+                    </ul>
+                    <div class="side-menu__useful-links useful-links useful-links_list">
+                        <a class="useful-links__item useful-links__item_newspapers" href="//newspapers.news247.gr/" title="Πρωτοσέλιδα">Πρωτοσέλιδα</a>
+                        <a class="useful-links__item useful-links__item_latest-news" href="https://www.news247.gr/latest/" title="Ροή Ειδήσεων">Ειδήσεις</a>
+                        <!-- <a class="useful-links__item useful-links__item_weather" href="https://www.news247.gr/kairos/" title="Δελτίο Καιρού">Καιρός</a> -->
+                        <a class="useful-links__item useful-links__item_newsletter" href="//eepurl.com/bZri51" target="_blank" title="Εγγραφείτε στο Newsletter του News 24/7" rel="noopener nofollow external">Newsletter</a>
+                    </div>
+                </div>
+                <div class="side-menu__social social-links">
+                    <a class="social-links__icon social-links__icon_fb" data-gtm="sidebar facebook button" rel="noopener nofollow external" target="_blank" href="https://www.facebook.com/news247" title="Ακολουθήστε το News 24/7 στο Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="social-links__icon social-links__icon_tw" data-gtm="sidebar twitter button" rel="noopener nofollow external" target="_blank" href="//twitter.com/News247gr" title="Ακολουθήστε το News 24/7 στο Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class="social-links__icon social-links__icon_insta" data-gtm="sidebar instagram button" rel="noopener nofollow external" target="_blank" href="https://www.instagram.com/news247gr/" title="Ακολουθήστε το News 24/7 στο Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div onclick="closeNav();" class="side-menu__backdrop" id="side-menu__backdrop"></div>
+        </div>
+</div>
+<div  class="code-widget ">
+    <!-- Gray Menu transition -->
+<style>
+/*  Gray Menu transition styles - start  */
+    .main-menu {
+        background: #e10005;
+    }
+
+    .main-menu__container {
+        width: 100%;
+    }
+
+    .main-menu__container-bottom .main-menu__menus,
+    .main-menu__container-top {
+        width: 980px;
+        align-self: center;
+    }
+
+    .main-menu__container-bottom {
+        transition: opacity 0.2s ease-out, height 0.3s ease-out, padding 0.2s ease-out;
+        justify-content: center;
+        background: #2d2d2e;
+    }
+
+    .wrapper-sticky.horizontal-menu--hide .main-menu__container-bottom {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+    }
+/*  Gray Menu transition styles - end  */
+</style>
+
+<script>
+    /*  Gray Menu transition script - start  */
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+
+    $(window).scroll(function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 50);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+        if (st > lastScrollTop && st >= _trigger_point) {
+            // Scroll Down
+            document.querySelector(".wrapper-sticky").classList.add("horizontal-menu--hide");
+
+        } else {
+            // Scroll Up
+            if (st + $(window).height() < $(document).height()) {
+                document.querySelector(".wrapper-sticky").classList.remove("horizontal-menu--hide");
+            }
+        }
+
+        lastScrollTop = st;
+    }
+    /*  Gray Menu transition script - end  */
+
+    /*  temp fix side menu - start  
+    var horizontalMenu_container = document.querySelector(".main-menu__container");
+    var sideMenu_bg = document.querySelector("#side-menu__backdrop");
+    var sideMenu_container = document.querySelector("#side-menu");
+    horizontalMenu_container.appendChild(sideMenu_bg);
+    horizontalMenu_container.appendChild(sideMenu_container);
+    temp fix side menu - end  */
+
+</script></div>
+
+</div>
+    <section class="teaser teaser_liveupdates "  data-gtm="Live Updates ID9069328">
+    
+    <div class="container">
+        <header class="teaser__header widget-header">
+                <h2 class="widget-header__title">
+                ΜΕ ΜΙΑ ΜΑΤΙΑ</h2>
+            </header>
+        <div class="teaser__content owl-carousel">
+        <article class="teaser__article article " data-position="2"> 
+
+                    <h2 class="article__title">
+
+                        <a href="https://www.news247.gr/koinonia/sifis-valyrakis-ti-edeixe-to-porisma-toy-iatrodikasti.9123355.html" title="Σήφης Βαλυράκης: Τι έδειξε το πόρισμα του ιατροδικαστή" >
+                            Σήφης Βαλυράκης: Τι έδειξε το πόρισμα του ιατροδικαστή</a>
+                    </h2>
+
+                    </article>
+                    
+            <article class="teaser__article article " data-position="3"> 
+
+                    <h2 class="article__title">
+
+                        <a href="https://www.news247.gr/koinonia/apagoreysi-synathroiseon-koyvari-i-epitropi-empeirognomonon.9123255.html" title="Απαγόρευση συναθροίσεων: Κουβάρι η Επιτροπή Εμπειρογνωμόνων " >
+                            Απαγόρευση συναθροίσεων: Κουβάρι η Επιτροπή Εμπειρογνωμόνων </a>
+                    </h2>
+
+                    </article>
+                    
+            <article class="teaser__article article " data-position="4"> 
+
+                    <h2 class="article__title">
+
+                        <a href="https://www.news247.gr/koinonia/patra-katelixe-o-27chronos-poy-pyrovolithike-sto-kefali.9123193.html" title="Πάτρα: Κατέληξε ο 27χρονος που πυροβολήθηκε στο κεφάλι " >
+                            Πάτρα: Κατέληξε ο 27χρονος που πυροβολήθηκε στο κεφάλι </a>
+                    </h2>
+
+                    </article>
+                    
+            </div>
+
+        <div class="carousel-dots"></div>
+        </div>
+    
+    <script>
+    (function(gallery){
+        gallery.owlCarousel({
+            items:1,
+            margin: 5,
+            loop:true,
+            rewind: false,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 8000,
+            mouseDrag:false,
+            touchDrag:false,
+            lazyLoad:true,
+            nav: false,
+            dots: true,
+            
+                dotsContainer:'.teaser_liveupdates[data-gtm*="ID9069328"] .carousel-dots',
+            
+            checkVisibility:true
+        });
+    })($(document.currentScript.parentElement).find('.teaser__content'));
+    </script>
+</section>
+    
+</header>
+                        <!-- CONTENT -->
+                <div class="container d-flex-row">
+                            <figure  class="error404-image">
+            <img src="https://www.news247.gr/img/9778/6570414/270000/o/0/0/notfound.png" title="" alt="" />
+            </figure>
+        <div  class="code-widget error404">
+    <span class="code">404</span>
+<h1 class="title">ΣΦΑΛΜΑ</h1>
+<h2 class="subtitle">Η σελίδα δεν υπάρχει</h2>
+<p class="message">
+    Το πρόβλημα ίσως να προκύπτει από λάθος εισαγωγής της διεύθυνσης (URL) ή σε κάποιο προσωρινό τεχνικό πρόβλημα του News247.gr ή σε κάποιο άλλο ανεξήγητο λόγο.
+</p>
+
+<ol class="options">
+    <li>
+        Επιστρέψτε στην αρχική σελίδα του <a href="http://news247.gr">News247.gr</a>
+    </li>
+    <li>
+        <a href="javascript:void(0);" class="footerLinks" id="contactAnchor-1721310">Επικοινωνήστε</a> μαζί μας για να μας ενημερώσετε για το πρόβλημα
+    </li>
+    <li>
+        Επισκεφθείτε μια από τις κατηγορίες του News247.gr που είναι διαθέσιμες από πάνω ή κάτω
+    </li>
+    <li>
+        Υπάρχουν και άλλα site στο διαδίκτυο, επισκεφτείτε τα και ελάτε σε μας αργότερα... δεν χάλασε και ο κόσμος.
+    </li>
+</ol></div>
+
+</div>
+
+                    <!-- FOOTER -->
+                <footer class="footer" id="footer">
+                            <section class="read-more-widget " >
+			<h2 class="read-more-widget__title">24MEDIA NETWORK</h2>
+			<div class="container">
+				<section class="rss-widget rss-widget_simple"  data-gtm="sport24 footer-6125151">
+    <a href="https://www.sport24.gr/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget" class="rss-widget__logo rss-widget__logo_sport24" target="_blank" rel="nofollow"></a>
+    <div class="rss-widget__content" >
+        <div class="rss-widget__article article" data-position="1">
+                <a title="ΠΑΟΚ: Στη Θεσσαλονίκη ο Καγκάβα" href="https://www.sport24.gr/football/kagkava-paok-thessaloniki.9123422.html?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos1" class="article__title" target="_blank" rel="noopener nofollow external">ΠΑΟΚ: Στη Θεσσαλονίκη ο Καγκάβα</a>
+            </div>
+        <div class="rss-widget__article article" data-position="2">
+                <a title="LIVE Streaming: Ηρακλής - Κόρμεντ" href="https://www.sport24.gr/basket/live-streaming-iraklis-korment.9123269.html?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos2" class="article__title" target="_blank" rel="noopener nofollow external">LIVE Streaming: Ηρακλής - Κόρμεντ</a>
+            </div>
+        <div class="rss-widget__article article" data-position="3">
+                <a title="Παπασταθόπουλος: &#034;Θέλω τίτλους με τον Ολυμπιακό και το παραπάνω βήμα στην Ευρώπη&#034;" href="https://www.sport24.gr/football/papastathopoylos-thelo-titloys-me-ton-olympiako-kai-to-parapano-vima-stin-eyropi.9123430.html?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos3" class="article__title" target="_blank" rel="noopener nofollow external">Παπασταθόπουλος: "Θέλω τίτλους με τον Ολυμπιακό και το παραπάνω βήμα στην Ευρώπη"</a>
+            </div>
+        </div>
+</section>
+<section class="rss-widget rss-widget_simple"  data-gtm="oneman footer-6125149">
+    <a href="https://www.oneman.gr/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget" class="rss-widget__logo rss-widget__logo_oneman" target="_blank" rel="nofollow"></a>
+    <div class="rss-widget__content" >
+        <div class="rss-widget__article article" data-position="1">
+                <a title="Τα βιβλία που θα δούμε σε μικρή και μεγάλη οθόνη το 2021" href="https://www.oneman.gr/entertainment/ta-vivlia-pou-tha-doume-se-mikri-kai-megali-othoni-to-2021/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos1" class="article__title" target="_blank" rel="noopener nofollow external">Τα βιβλία που θα δούμε σε μικρή και μεγάλη οθόνη το 2021</a>
+            </div>
+        <div class="rss-widget__article article" data-position="2">
+                <a title="Jose Mourinho: Μια ζωή μέσα στους πάγκους και στις γκρίνιες" href="https://www.oneman.gr/athlitika/jose-mourinho-mia-zoi-mesa-stous-pagkous-kai-stis-gkrinies/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos2" class="article__title" target="_blank" rel="noopener nofollow external">Jose Mourinho: Μια ζωή μέσα στους πάγκους και στις γκρίνιες</a>
+            </div>
+        <div class="rss-widget__article article" data-position="3">
+                <a title="O David Hasselhoff αποχωρίστηκε τον θρυλικό KITT" href="https://www.oneman.gr/life/o-david-hasselhoff-apoxoristike-ton-thriliko-kitt/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos3" class="article__title" target="_blank" rel="noopener nofollow external">O David Hasselhoff αποχωρίστηκε τον θρυλικό KITT</a>
+            </div>
+        </div>
+</section>
+<section class="rss-widget rss-widget_simple"  data-gtm="ladylike footer-6125148">
+    <a href="https://www.ladylike.gr/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget" class="rss-widget__logo rss-widget__logo_ladylike" target="_blank" rel="nofollow"></a>
+    <div class="rss-widget__content" >
+        <div class="rss-widget__article article" data-position="1">
+                <a title="Χάρης Σώζος: Στο νοσοκομείο μετά από τροχαίο ο ηθοποιός" href="https://www.ladylike.gr/epikairothta/xaris-sozos-sto-nosokomeio-meta-apo-troxaio-o-ithopoios/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos1" class="article__title" target="_blank" rel="noopener nofollow external">Χάρης Σώζος: Στο νοσοκομείο μετά από τροχαίο ο ηθοποιός</a>
+            </div>
+        <div class="rss-widget__article article" data-position="2">
+                <a title="Ο Χάρης Χριστόπουλος ανέβασε το πιο απολαυστικό βίντεο με τον γιο του να κάνουν ποδήλατο" href="https://www.ladylike.gr/celebrities/xaris-xristopoulos-anevase-to-pio-apolafstiko-vinteo-me-ton-gio-tou-na-kanoun-podilato/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos2" class="article__title" target="_blank" rel="noopener nofollow external">Ο Χάρης Χριστόπουλος ανέβασε το πιο απολαυστικό βίντεο με τον γιο του να κάνουν ποδήλατο</a>
+            </div>
+        <div class="rss-widget__article article" data-position="3">
+                <a title="To χειμωνιάτικο jacket που φοράνε όλες οι fashionistas στο Instagram, είναι πολύχρωμο και fun και το θέλουμε εδώ και τώρα" href="https://www.ladylike.gr/style/xeimoniatiko-jacket-pou-forane-oles-oi-fashionistas-sto-instagram-einai-polixromo-kai-fun-kai-to-theloume-edo-kai-tora/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos3" class="article__title" target="_blank" rel="noopener nofollow external">To χειμωνιάτικο jacket που φοράνε όλες οι fashionistas στο Instagram, είναι πολύχρωμο και fun και το θέλουμε εδώ και τώρα</a>
+            </div>
+        </div>
+</section>
+<section class="rss-widget rss-widget_simple"  data-gtm="contra footer-6125150">
+    <a href="https://www.contra.gr/?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget" class="rss-widget__logo rss-widget__logo_contra" target="_blank" rel="nofollow"></a>
+    <div class="rss-widget__content" >
+        <div class="rss-widget__article article" data-position="1">
+                <a title="Ο κόουτς Δικαιουλάκος στο ΟΠΑΠ GAME TIME ΜΠΑΣΚΕΤ" href="https://www.contra.gr/basket/o-kooyts-dikaioylakos-sto-opap-game-time-mpasket.9123315.html?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos1" class="article__title" target="_blank" rel="noopener nofollow external">Ο κόουτς Δικαιουλάκος στο ΟΠΑΠ GAME TIME ΜΠΑΣΚΕΤ</a>
+            </div>
+        <div class="rss-widget__article article" data-position="2">
+                <a title="Ο &#039;υποβιβασμός&#039; του Καπίνο ορίζει, ολότελα, το μέλλον του" href="https://www.contra.gr/podosfairo/o-ypovivasmos-toy-kapino-orizei-olotela-to-mellon-toy.9118653.html?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos2" class="article__title" target="_blank" rel="noopener nofollow external">Ο 'υποβιβασμός' του Καπίνο ορίζει, ολότελα, το μέλλον του</a>
+            </div>
+        <div class="rss-widget__article article" data-position="3">
+                <a title="Η Super League και η Premier League συνεχίζονται με ντέρμπι" href="https://www.contra.gr/podosfairo/i-super-league-kai-i-premier-league-synechizontai-me-ntermpi.9123148.html?utm_source=News247&utm_medium=footer&utm_campaign=24MediaWidget&utm_term=Pos3" class="article__title" target="_blank" rel="noopener nofollow external">Η Super League και η Premier League συνεχίζονται με ντέρμπι</a>
+            </div>
+        </div>
+</section>
+</div>
+        </section>
+    <div class="clearfix"></div>
+    <div class="footer-menu">
+        
+        <div class="footer-menu__container"> 
+            <a title="ΕΠΙΚΟΙΝΩΝΙΑ" id="link0" href="javascript:void(0);" onclick="openBottomContactNormal();">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                <a title="ΟΡΟΙ ΧΡΗΣΗΣ" id="link1" href="https://www.news247.gr/incoming/oroi-chrisis.6510852.html" target="_self">ΟΡΟΙ ΧΡΗΣΗΣ</a>
+                 <a title="ΠΟΛΙΤΙΚΗ ΑΠΟΡΡΗΤΟΥ" id="link2" href="https://www.news247.gr/incoming/politiki-aporritoy.6510851.html" target="_self">ΠΟΛΙΤΙΚΗ ΑΠΟΡΡΗΤΟΥ</a>
+                 <a title="24 MEDIA SITES" id="link3" class="toggleelement" href="javascript:void(0);" onclick="showSites();" target="_self">24 MEDIA SITES<span></span></a>
+                </div>
+        
+        <div class="footer-menu__sites">
+			<p>OFFICIAL PARTNERS</p>
+			<div class="footer-menu__submenu">
+				<a title="SPORT24" href="//www.sport24.gr/" rel="noopener nofollow external" target="_blank">SPORT24</a>
+				<a title="CONTRA" href="//www.contra.gr/" rel="noopener nofollow external" target="_blank">CONTRA</a>
+			</div>
+			<div class="footer-menu__submenu">
+				<a title="NEWS247" href="https://www.news247.gr/" rel="noopener nofollow external" target="_blank">NEWS247</a>
+				<a title="DELTIOKAIROU" href="//www.deltiokairou.gr/" rel="noopener nofollow external" target="_blank">DELTIOKAIROU</a>
+			</div> 
+			<div class="footer-menu__submenu">
+				<a title="ONEMAN" href="//www.oneman.gr/" rel="noopener nofollow external" target="_blank">ONEMAN</a>
+				<a title="LADYLIKE" href="//www.ladylike.gr/" rel="noopener nofollow external" target="_blank">LADYLIKE</a>
+			</div>
+			<div class="footer-menu__submenu">
+				<a title="TECHGEAR" href="//www.techgear.gr/" rel="noopener nofollow external" target="_blank">TECHGEAR</a>
+				<a title="IPHONEHELLAS" href="//www.iphonehellas.gr/" rel="noopener nofollow external" target="_blank">IPHONEHELLAS</a>
+				<a title="MACUSER" href="http://www.macuser.gr/" rel="noopener nofollow external" target="_blank">MACUSER</a>
+				<a title="DPGR" href="//www.dpgr.gr/" rel="noopener nofollow external" target="_blank">DPGR</a>
+			</div>
+			<div class="footer-menu__submenu">
+				<a title="THE HUFFINGTON POST" href="//www.huffingtonpost.gr/" rel="noopener nofollow external" target="_blank">THE HUFFINGTON POST</a>
+			</div>
+		</div>
+			
+		<div class="footer-menu__copyright">
+			<div class="footer-menu__logo-footer">
+				<a href="https://www.24media.gr/#about" target="_top">
+					<img src="https://www.news247.gr/resources/512eef8/images/logo-24media.png" alt="24Media" title="24Media"/>
+				</a>
+			</div>
+			<p>SITE ΤΟΥ ΟΜΙΛΟΥ 24MEDIA</p>
+            <span>COPYRIGHT © Tue Jan 26 16:09:03 EET 2021 NEWS 24/7. ALL RIGHTS RESERVED. </span>
+
+			<div class="footer-menu__under_ened"></div>
+		</div>
+			
+	</div>
+ <div id="contactFormContainer" class="contactFormContainer modal fade in" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="generic_header contact_header" >Επικοινωνία</h2>
+                <button type="button" class="close" onclick="closeContact();"  data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="contact-form" name="contact-form-4681831" class="contactForm" action="#" method="POST" novalidate="novalidate">
+
+                    <div class="form-group col-md-6">
+                        <label for="subj">Προς *</label>
+                        <select name="subj" class="form-control" id="subj">
+
+                            <option value="epikoinwnia" selected>ΕΠΙΚΟΙΝΩΝΙΑ</option>
+                                    <option value="diafhmistiko-tmhma">ΔIAΦΗΜΙΣΗ</option>
+                                </select>
+                        <!--input type="hidden" name="subj" value="epikoinwnia" class="text ui-widget-content ui-corner-all"
+                        <input type="hidden" name="address" class="text ui-widget-content ui-corner-all">
+                        <input type="hidden" name="tel" class="text ui-widget-content ui-corner-all">-->
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-md-6 form_name">
+                        <label for="name">Όνομα *</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                        <div class="errorForm"></div>
+                    </div>
+                    <div class="form-group col-md-6 mail_form">
+                        <label for="mailFrom">Email *</label>
+                        <input type="text" class="form-control" name="mailFrom" id="mailFrom">
+                        <div class="errorForm"></div>
+                    </div>
+                    <div class="form-group col-md-6 adr_form">
+                            <label for="adrFrom">ΔΙΕΥΘΥΝΣΗ *</label>
+                            <input type="text" class="form-control" name="adrFrom" id="adrFrom">
+                            <div class="errorForm"></div>
+                        </div>
+                        <div class="form-group col-md-6 tel_form">
+                            <label for="telFrom">ΤΗΛΕΦΩΝΟ</label>
+                            <input type="text" class="form-control" name="telFrom" id="telFrom">
+                            <div class="errorForm"></div>
+                        </div>
+                    <div class="form-group col-md-12 message_form">
+                        <label for="plainContent">Μήνυμα *</label>
+                        <textarea class="form-control" name="plainContent" id="plainContent"></textarea>
+                        <div class="errorForm"></div>
+                    </div>
+                    <div class="col-md-6 placehold">
+                        <div class="contactFormMessage viablePlaceholder"></div>
+                    </div>
+                    <div class="form-group col-md-6" style="float:right;">
+                        <button id="btn" class="btn btn-primary" type="button">ΑΠΟΣΤΟΛΗ</button>
+                    </div>
+                    
+                    <div class="form-group col-md-12">
+                        <label>* Υποχρεωτικά Πεδία</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    function openContact() {
+        $(".modal-backdrop").show();
+        $("body").prepend("<div class='modal-backdrop'></div>");
+        $("body").addClass(" openModal");
+        $(".modal").css('display', 'block');
+        $("div#contactFormContainer .modal-content").slideDown();
+    }
+    function closeContact() {
+        $(".modal-backdrop").remove();
+        $("body").removeClass(" openModal");
+        $("body").removeClass(" stayBottom");
+        $("div#contactFormContainer .modal-content").slideToggle();
+        $(".modal").delay(6000).hide();
+    }
+
+    function openContactMobile() {
+        //$("nav.radiofono-menu__wraper").addClass("hidden");
+        $(".modal-backdrop").show();
+        $("body").prepend("<div class='modal-backdrop'></div>");
+        $("body").addClass(" openModal");
+        $(".modal").css('display', 'block');
+        $("div#contactFormContainer .modal-content").slideDown();
+        var height = $(window).height();
+        $('.modal-content').css('height', height - 100);
+    }
+    function openBottomContactNormal() {
+        $(".modal-backdrop").show();
+        $("body").prepend("<div class='modal-backdrop'></div>");
+        $("body").addClass(" openModal");
+        $("body").addClass(" stayBottom");
+        $(".modal").css('display', 'block');
+        $("div#contactFormContainer .modal-content").slideDown();
+    }
+    function openBottomContact() {
+        $(".modal-backdrop").show();
+        $("body#radiofono247").prepend("<div class='modal-backdrop'></div>");
+        $("body#radiofono247").addClass(" openModal");
+        $("body#radiofono247").addClass(" stayBottom");
+        $("body.radiofono247").prepend("<div class='modal-backdrop'></div>");
+        $("body.radiofono247").addClass(" openModal");
+        $("body.radiofono247").addClass(" stayBottom");
+        $(".modal").css('display', 'block');
+        $("div#contactFormContainer .modal-content").slideDown();
+    }
+    $(document).ready(function () {
+        //name?mailFrom?adrFrom?telFrom?plainContent
+        $("#btn").click(function () {
+            $(".contactFormMessage").html(''); 
+            var name = $("input#name").val();
+            var mailFrom = $("input#mailFrom").val();
+            var adrFrom = $("#adrFrom").val();
+            var telFrom = $("#telFrom").val();
+            var subjFrom = $("#subj option:selected").text();
+            var plainContent = $("#plainContent").val();
+            var dataString = 'name=' + name + '&mailFrom=' + mailFrom + '&plainContent=' + plainContent + '&adrFrom=' + adrFrom + '&telFrom=' + telFrom + '&subj=' + subjFrom;
+            if (name == '' && mailFrom == '' && plainContent == '' && adrFrom == '') {
+                $(".form_name .errorForm").html('Παρακαλώ συμπληρώστε το όνομα σας');
+                $("input#name").css('border-color', 'red');
+                $(".mail_form .errorForm").html('Παρακαλώ συμπληρώστε το email σας');
+                $("input#mailFrom").css('border-color', 'red');
+                $(".message_form .errorForm").html('Παρακαλώ συμπληρώστε το μήνυμα σας');
+                $("#plainContent").css('border-color', 'red');
+                //$(".tel_form .errorForm").html('Παρακαλώ συμπληρώστε το τηλέφωνο σας');
+                //$("#telFrom").css('border-color', 'red');
+                $(".adr_form .errorForm").html('Παρακαλώ συμπληρώστε τη διεύθυνση σας');
+                $("#adrFrom").css('border-color', 'red');
+            } else if (name == '') {
+                $(".form_name .errorForm").html('Παρακαλώ συμπληρώστε το όνομα σας');
+                $("input#name").css('border-color', 'red');
+            } else if (mailFrom == '') {
+                $(".mail_form .errorForm").html('Παρακαλώ συμπληρώστε το email σας');
+                $("input#mailFrom").css('border-color', 'red');
+            } else if (adrFrom == '') {
+                $(".adr_form .errorForm").html('Παρακαλώ συμπληρώστε τη διεύθυνση σας');
+                $("#adrFrom").css('border-color', 'red');
+            //} else if (telFrom == '') {
+                //$(".tel_form .errorForm").html('Παρακαλώ συμπληρώστε το τηλέφωνο σας');
+                //$("#telFrom").css('border-color', 'red');
+            } else if (plainContent == '') {
+                $(".message_form .errorForm").html('Παρακαλώ συμπληρώστε το μήνυμα σας');
+                $("input#plainContent").css('border-color', 'red');
+            } else if (name != '' && mailFrom != '' && plainContent != '' && adrFrom != '') {
+                $(".contactFormMessage.viablePlaceholder").addClass('loading-form');
+                $("button#btn").addClass('disable_button');
+                $(".placehold").addClass('disable_cursor');
+                $.ajax({
+                    type: "POST",
+                    url: "https://www.news247.gr/widget/id6125158?view=ajax",
+                    data: dataString,
+                    success: function (data) {
+                        console.log(data);
+                        $("button#btn").removeClass('disable_button');
+                        $(".contactFormMessage.viablePlaceholder").removeClass('loading-form');
+                        $(".placehold").removeClass('disable_cursor');
+                        $(".contactFormMessage").html('Στάλθηκε επιτυχώς');
+                        $("input:text").val("");
+                        $("textarea").val("");
+                    }
+                });
+            } else {
+                $(".contactFormMessage").html('Παρακαλώ συμπληρώστε τα πεδία');
+            }
+            $("#contactFormContainer form :input").each(function () {
+                var input = $(this).not('#telFrom').val();
+                if (input !== '') {
+                    $(this).css('border-color', '#cccccc');
+                } else {
+                    $(this).css('border-color', 'red');
+                }
+            });
+        });
+    });
+
+
+</script>
+<style>
+.loading-form {
+    width: 35px;
+    height: 35px;
+    background-size: cover;   
+    background-image: url(https://www.news247.gr/resources/512eef8/images/loading-2.gif);
+}
+.disable_button {
+    background: #bfbfbf!important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.placehold.disable_cursor{
+    cursor: not-allowed;
+}
+</style></footer>
+                    <script src="https://www.news247.gr/resources/512eef8/scripts/main-desktop.js"></script>
+        <script>
+    $('#csr_stories').find('a').attr('target','_blank');
+    $('#csr_stories').find('a').css('display', 'block');
+</script><!-- Exit Bee -->
+<script>
+// exclude exitbee from live-blog
+if(targettingValues.category.includes("live-blog") && targettingValues.article !== ""){
+
+console.log("exclude exitbee from live-blog");
+
+} else{
+
+(function(doc) {
+var xtb = document.createElement("script");
+xtb.type = "text/javascript";
+xtb.async = true;
+xtb.src = "https://app.exitbee.com/c/2172/exitbee.js";
+document.getElementsByTagName("head")[0].appendChild(xtb);
+}());
+
+}
+
+</script><!-- phaistos html code
+<script data-ws="23325" data-h="phaistos-ssp.adman.gr" data-s="1x1"  src="//static.adman.gr/adman.js"></script>
+-->
+<script>
+
+// exclude phaistos from live-blog
+if(targettingValues.category.includes("live-blog") && targettingValues.article !== ""){
+
+console.info("exclude phaistos 23325 from live-blog");
+
+} else{
+
+var phaistosSspAdmanGr = document.createElement("script");
+phaistosSspAdmanGr.dataset.ws = "23325";
+phaistosSspAdmanGr.dataset.h = "phaistos-ssp.adman.gr";
+phaistosSspAdmanGr.dataset.s = "1x1";
+phaistosSspAdmanGr.src = "//static.adman.gr/adman.js";
+document.body.appendChild(phaistosSspAdmanGr);
+
+}
+
+</script>
+
+<!-- Sticky Banners (adman)
+<script data-ws="23799" data-h="phaistos-ssp.adman.gr" data-s="0x0" src="https://static.adman.gr/adman.js"></script>
+ -->
+
+<script>
+
+// exclude phaistos from live-blog
+if(targettingValues.category.includes("live-blog") && targettingValues.article !== ""){
+
+console.info("exclude phaistos 23799 from live-blog");
+
+} else{
+
+var phaistosSspAdmanGr = document.createElement("script");
+phaistosSspAdmanGr.dataset.ws = "23799";
+phaistosSspAdmanGr.dataset.h = "phaistos-ssp.adman.gr";
+phaistosSspAdmanGr.dataset.s = "0x0";
+phaistosSspAdmanGr.src = "//static.adman.gr/adman.js";
+document.body.appendChild(phaistosSspAdmanGr);
+
+}
+
+</script>
+<script>
+                    </script>
+                <!-- Analytics Begin Here-->
+                    <!-- START Parse.ly Include: Standard -->
+                    <div id="parsely-root" style="display: none">
+                        <div id="parsely-cfg" data-parsely-site="news247.gr"></div>
+                    </div>
+                    <script>
+                        window.PARSELY = window.PARSELY || {
+                            onload: function () {
+                                PARSELY.setConfigOptions({
+                                    track_ip_addresses: false,
+                                    track_third_party_cookies: false
+                                });
+                            }
+                        };
+
+                        (function (s, p, d) {
+                            var h = d.location.protocol, i = p + "-" + s,
+                                    e = d.getElementById(i), r = d.getElementById(p + "-root"),
+                                    u = h === "https:" ? "d1z2jf7jlzjs58.cloudfront.net"
+                                    : "static." + p + ".com";
+                            if (e)
+                                return;
+                            e = d.createElement(s);
+                            e.id = i;
+                            e.async = true;
+                            e.src = h + "//" + u + "/p.js";
+                            r.appendChild(e);
+                        })("script", "parsely", document);
+                    </script>
+                    <!-- END Parse.ly Include: Standard -->
+                    <!-- Analytics End-->
+                </body>
+        </html>
+    

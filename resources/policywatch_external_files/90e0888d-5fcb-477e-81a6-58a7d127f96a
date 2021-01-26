@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+  <head><meta name="ris_stylesheet_version" content="1.9.3" /><meta name="Encoding" content="UTF-8" /><meta name="uniqueDocIndex" content="0" /><meta name="generateCSS" content="0" /><meta name="contentType" content="all" /><meta name="root" content="/Dokumente/BgblAuth/BGBLA_2020_I_24/" /><meta name="queryString" content="" /><meta name="maxImageWidth" content="" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><title>RIS Dokument</title><style type="text/css">
+        .W2 { min-width:2px; width:2px}
+        .W15 { min-width:15px; width:15px}
+        .W20 { min-width:20px; width:20px}
+        .W22 { min-width:22px; width:22px}
+        .W42 { min-width:42px; width:42px}
+        .W90 { min-width:90px; width:90px}
+        .wi100 { width:100%; }
+        .TextWidth{ width:268.93px; }
+        .TextWidthQ{ width:597.73px; }
+        .invisible{ height: 0pt }
+        .nextpage { page-break-before:always; }
+        .margins {margin-top:85.05pt;margin-right:85.05pt;margin-bottom:85.05pt;margin-left:85.05pt;}
+        @page  { margin-top:85.05pt; margin-right: 17.0pt; margin-bottom:85.05pt; margin-left: 17.0pt; }
+        @media screen { .paperw {width:425.2pt;margin-top:85.05pt;margin-right:85.05pt;margin-bottom:85.05pt;margin-left:85.05pt;}}
+        @media print { .paperw {width:425.2pt;margin-top: 0.0pt;margin-right:85.05pt;margin-bottom: 0.0pt;margin-left:68.05pt;size:portrait;}
+                        body {height:0.0;}}
+        @media screen { .paperw100 {width:595.3pt;margin-top:0.0pt;margin-right:0.0pt;margin-bottom:0.0pt;margin-left:0.0pt;}}
+        @media print { .paperw100 {width:595.3pt;margin-top:0.0pt;margin-right:0.0pt;margin-bottom:0.0pt;margin-left:0.0pt;size:portrait;}
+                        div[class~=paperw100] img {height:740pt;}}
+        @media screen { .paperh {width:671.8pt;margin-right:85.05pt;margin-bottom:85.05pt;margin-left:85.05pt;margin-top:85.05pt;}}
+        @media print { .paperh {width:671.8pt;margin-right:85.05pt;margin-bottom: 0.0pt;margin-left:68.05pt;margin-top: 0.0pt;size:landscape}
+                        body {height:0.0;}}
+        @media screen { .paperh100 {width:841.9pt;margin-top:0.0pt;margin-right:0.0pt;margin-bottom:0.0pt;margin-left:0.0pt;}}
+        @media print { .paperh100 {width:841.9pt;margin-top:0.0pt;margin-right:0.0pt;margin-bottom:0.0pt;margin-left:0.0pt;size:landscape}
+                        div[class~=paperh100] img {height:530pt;}}
+/*Allgemeine Angaben zum Anzeigen von Linien in Tabellen*/
+table.top {border-top-style: solid;border-top-width: thin;border-color: black;}
+table.top12 {border-top-style: solid;border-top-width: thin;border-color: black;margin-top:12pt;}
+table.bottom {border-bottom-style: solid;border-bottom-width: thin;border-color: black;}
+td.top {border-top-style:solid;border-top-width:1pt;}
+td.right {border-right-style:solid;border-right-width:1pt;}
+td.bottom {border-bottom-style:solid;border-bottom-width:1pt;}
+td.left {border-left-style:solid;border-left-width:1pt;}
+/*Aufzählungen werden als Tabelle gerendert.
+FF reserviert auch für unsichtbare Borders ein Pixel für die Spaltenränder. Dadurch wird dies verhindert.*/
+.noTableBorder {border-collapse:collapse;}
+/*Text innerhalb einer Tabellenzelle fuer "absatz" und "ueberschrift"*/
+.AlignLeft {text-align:left;}
+.AlignRight {text-align:right;}
+.AlignCenter {text-align:center;}
+.AlignJustify {text-align:justify;}
+.VAlignTop {vertical-align:top;}
+.VAlignBottom {vertical-align:bottom;}
+/*Diese CSS-Tabellenausrichtung funktioniert im IE 6-8 nur, wenn DOCTYP-Decl. vorhanden ist.*/
+.tableAlignCenter {margin-left:auto;margin-right:auto}
+.tableAlignRight {margin-left:auto;margin-right:0}
+/*Tabellenausrichtung (zentriert, rechts): Cross-Browser kompatibel*/
+div.center { text-align: center; }
+div.center table { margin: 0 auto; }
+div.right { text-align: right; }
+div.right table { margin-left: auto; margin-right: 0; }
+/*Css-Klassen Inhaltsverzeichnisse*/
+.tableOfContent {width:566px;border-spacing:0;padding:0;border-collapse:collapse}
+.tableOfContentEintrag {width:424.2pt;vertical-align:top;padding:0 5.4pt 0 5.4pt}
+.tableOfContentEintrag1 {width:57.0pt;vertical-align:top;padding:0 5.4pt 0 5.4pt} /* 57.0pt entspricht 2cm */
+.tableOfContentEintrag2 {width:367.5pt;vertical-align:top;padding:0 5.4pt 0 5.4pt}
+.tableOfContentSpalte {width:424.2pt;vertical-align:top;padding:0 5.4pt 0 5.4pt}
+/* ------------------------------------------------------------- */
+/* Legistik-Standard-Formatvorlage*/
+/* Formatvorlage: 00_LegStandard*/
+/*  ------------------------------------------------------------- */
+.LegStandard {text-align:justify;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;}
+/* ------------------------------------------------------------- */
+/* Formatvorlagen fuer Absaetze*/
+/* ------------------------------------------------------------- */
+/* Formatvorlage: 01_Undefiniert */
+p.Undefiniert {margin-top:1.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color: red;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 02_BDGesBlatt */
+p.BDGesBlatt, h1.BDGesBlatt, h2.BDGesBlatt, h3.BDGesBlatt, h4.BDGesBlatt, h5.BDGesBlatt, h6.BDGesBlatt {margin-top:14.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:35.0pt;font-size:35.0pt;font-family:"Times New Roman", serif;color:black;text-transform:uppercase;letter-spacing:1.3pt;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 03_RepOesterr */
+p.RepOesterr, span.RepOesterr {margin-top:5.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:20.0pt;border:none;padding:0;font-size:20.0pt;font-family:"Times New Roman", serif;color:black;text-transform:uppercase;letter-spacing:1.0pt;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 04_AusgabeDaten */
+p.AusgabeDaten {margin-top:0;margin-right:0;margin-bottom:8.0pt;margin-left:0;line-height:14.0pt;padding:0;font-size:12.0pt;font-family:"Times New Roman", serif;color: black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 05_Kurztitel
+Kurztitel in einer Spalte (wenn kein TAB vorhanden ist) */
+p.Kurztitel1 {margin-top:2.0pt;margin-right: 0;margin-bottom:0;margin-left: 3.6cm;text-indent: -3.6cm;border:none;padding:0;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Kurztitel in zwei Spalten (wenn ein TAB vorhanden ist) */
+p.Kurztitel2 {margin-top:2.0pt;margin-right: 0;margin-bottom:0;margin-left: 0;border:none;padding:0;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+span.Kurztitelbreite {width: 3.4cm;}
+/* Formatvorlage: 06_UrheberZitat*/
+p.UrheberZitat {margin-top:6.0pt;margin-right:0;margin-bottom:6.0pt;margin-left:0;line-height:9.0pt;font-size:8.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 09_Abstand */
+p.Abstand {margin:0;padding:0;line-height:10.0pt;height:10.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 10_Entwurf */
+p.Entwurf, h1.Entwurf, h2.Entwurf, h3.Entwurf, h4.Entwurf, h5.Entwurf, h6.Entwurf {margin-top:80.0pt;margin-right:0;margin-bottom:78.5pt;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;letter-spacing:1.3pt;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 11_Titel */
+p.Titel, h1.Titel, h2.Titel, h3.Titel, h4.Titel, h5.Titel, h6.Titel {margin-top:24.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 12_PromKl_EinlSatz */
+p.PromKlEinlSatz {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-indent:19.85pt;line-height:11.0pt;page-break-after:avoid;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 18_Abbildung_oder_Objekt */
+p.AbbildungoderObjekt {margin-top:6.0pt;margin-right:0;margin-bottom:6.0pt;margin-left:0;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 19_Beschriftung */
+p.Beschriftung {margin-top:0;margin-right:0;margin-bottom:6.0pt;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 21_NovAo1 */
+p.NovAo1 {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:italic;layout-grid-mode:line;}
+/* Formatvorlage: 22_NovAo2 */
+p.NovAo2 {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:italic;layout-grid-mode:line;}
+/* Formatvorlage: 23_Satz_(nach_Novao) */
+p.SatznachNovao {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 30_InhaltUeberschrift */
+p.InhaltUeberschrift {margin-top:16.0pt;margin-right:0;margin-bottom:8.0pt;margin-left:0;text-align:center;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;width:566px;}
+p.InhaltUeberschriftWithinTable {margin-top:16.0pt;margin-right:0;margin-bottom:8.0pt;margin-left:0;text-align:center;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 31_InhaltSpalte */
+p.InhaltSpalte {margin-top:4.0pt;margin-right:0;margin-bottom:4.0pt;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 32_InhaltEintrag */
+p.InhaltEintrag {margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 41_UeberschrG1 */
+p.UeberschrG1, h1.UeberschrG1, h2.UeberschrG1, h3.UeberschrG1, h4.UeberschrG1, h5.UeberschrG1, h6.UeberschrG1 {margin-top:16.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;padding-bottom:2px;layout-grid-mode:line;}
+/* Formatvorlage: 42_UeberschrG1- */
+p.UeberschrG1-, h1.UeberschrG1-, h2.UeberschrG1-, h3.UeberschrG1-, h4.UeberschrG1-, h5.UeberschrG1-, h6.UeberschrG1- {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;padding-bottom:2px;layout-grid-mode:line;}
+p.UeberschrG1-AfterG2, h1.UeberschrG1-AfterG2, h2.UeberschrG1-AfterG2, h3.UeberschrG1-AfterG2, h4.UeberschrG1-AfterG2, h5.UeberschrG1-AfterG2, h6.UeberschrG1-AfterG2 {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;padding-bottom:2px;layout-grid-mode:line;}
+/* Formatvorlage: 43_UeberschrG2 */
+p.UeberschrG2 {margin-top:4.0pt;margin-right:0;margin-bottom:8.0pt;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;padding-bottom:2px;layout-grid-mode:line;}
+span.UeberschrG2 {margin-top:5.0pt;margin-right:0;margin-bottom:3.0pt;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;padding-bottom:2px;layout-grid-mode:line;}
+/* Formatvorlage: 44_UeberschrArt */
+p.UeberschrArt, h1.UeberschrArt, h2.UeberschrArt, h3.UeberschrArt, h4.UeberschrArt, h5.UeberschrArt, h6.UeberschrArt {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 45_UeberschrPara */
+p.UeberschrPara, h1.UeberschrPara, h2.UeberschrPara, h3.UeberschrPara, h4.UeberschrPara, h5.UeberschrPara, h6.UeberschrPara {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 51_Abs */
+p.Abs {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-indent:19.85pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 52_Ziffer_e1 - e3 (SozDok+AVI: e4, e5)*/
+p.ZifferE1, p.ZifferE2, p.ZifferE3, p.ZifferE4, p.ZifferE5 {margin: 2pt 0 0 0;width:100%;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 52_Ziffer_mit_Betrag */
+p.ZifferMitBetrag {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 52aT_Ziffer_mit_Betrag_TGUE */
+p.ZifferMitBetragTGUE {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 53_Litera_e1 - e3 (SozDok+AVI: e4, e5) */
+p.LiteraE1, p.LiteraE2, p.LiteraE3, p.LiteraE4, p.LiteraE5 {margin: 2pt 0 0 0;width:100%;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 53_Litera_mit_Betrag */
+p.LiteraMitBetrag {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 53aT_Litera_mit_Betrag_TGUE */
+p.LiteraMitBetragTGUE {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 54_Sublitera_e1 - e3 (SozDok+AVI: e4, e5)*/
+p.SubliteraE1, p.SubliteraE2, p.SubliteraE3, p.SubliteraE4, p.SubliteraE5 {margin: 2pt 0 0 0;width:100%;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 54_Sublitera_mit_Betrag */
+p.SubliteraMitBetrag {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 54aT_Sublitera_mit_Betrag_TGUE */
+p.SubliteraMitBetragTGUE {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 54a_Strich_e1 - e7 */
+p.StrichE1, p.StrichE2, p.StrichE3, p.StrichE4, p.StrichE5, p.StrichE6, p.StrichE7 {margin: 2pt 0 0 0;width:100%;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* A.H., 18. Sept. 2017: Die folg. CSS-Klassen entsprechen den neuen ERecht-Formatvorlagen 52_Aufzaehl_e1 bis 52_Aufzaehl_e7. */
+p.AufzaehlungE1, p.AufzaehlungE2, p.AufzaehlungE3, p.AufzaehlungE4, p.AufzaehlungE5, p.AufzaehlungE6, p.AufzaehlungE7 {margin: 2pt 0 0 0;width:100%;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* A.H., 18. Sept. 2017: Die folg. CSS-Klassen entsprechen den neuen ERecht-Formatvorlagen 52_Aufzaehl_e1_mit_Betrag bis 52_Aufzaehl_e7_mit_Betrag. */
+p.AufzaehlungMitBetragE1, p.AufzaehlungMitBetragE2, p.AufzaehlungMitBetragE3, p.AufzaehlungMitBetragE4, p.AufzaehlungMitBetragE5, p.AufzaehlungMitBetragE6, p.AufzaehlungMitBetragE7 {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* A.H., 18. Sept. 2017: Die folg. CSS-Klassen entsprechen den neuen ERecht-Formatvorlagen 52_Aufzaehl_e1_mit_Betrag_TGUE bis 52_Aufzaehl_e7_mit_Betrag_TGUE. */
+p.AufzaehlungMitBetragTgueE1, p.AufzaehlungMitBetragTgueE2, p.AufzaehlungMitBetragTgueE3, p.AufzaehlungMitBetragTgueE4, p.AufzaehlungMitBetragTgueE5, p.AufzaehlungMitBetragTgueE6, p.AufzaehlungMitBetragTgueE7 {margin: 2pt 0 0 0;line-height:11.0pt;punctuation-wrap:simple;text-autospace:none;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 55_SchlussteilAbs, 56_SchlussteilZiff, 57_SchlussteilLit (RISJudikatur: e1, e4, e5) */
+p.SchlussteilAbs, p.SchlussteilE1, p.SchlussteilZiff, p.SchlussteilLit, p.SchlussteilE4, p.SchlussteilE5 {margin: 2pt 0 0 0; line-height:11.0pt; font-size:10.0pt; font-weight:normal;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* A.H., 18. Sept. 2017: Die folg. CSS-Klassen entsprechen den neuen ERecht-Formatvorlagen 58_Schlussteil_e0 bis 58_Schlussteil_e7. */
+p.SchlussteilE0, p.SchlussteilE0_5, p.SchlussteilE1, p.SchlussteilE2, p.SchlussteilE3, p.SchlussteilE4, p.SchlussteilE5, p.SchlussteilE6, p.SchlussteilE7 {margin: 2pt 0 0 0; line-height:11.0pt; font-size:10.0pt; font-weight:normal;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* A.H., 18. Sept. 2017: Die folg. CSS-Klassen entsprechen den neuen ERecht-Formatvorlagen 58_Schlussteil_e0_mit_Betrag bis 58_Schlussteil_e7_mit_Betrag. */
+p.SchlussteilMitBetragE0, p.SchlussteilMitBetragE0_5, p.SchlussteilMitBetragE1, p.SchlussteilMitBetragE2, p.SchlussteilMitBetragE3, p.SchlussteilMitBetragE4, p.SchlussteilMitBetragE5, p.SchlussteilMitBetragE6, p.SchlussteilMitBetragE7 {margin: 2pt 0 0 0; line-height:11.0pt; font-size:10.0pt; font-weight:normal;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* A.H., 18. Sept. 2017: Die folg. CSS-Klassen entsprechen den neuen ERecht-Formatvorlagen 58_Schlussteil_e0_mit_Betrag_TGUE bis 58_Schlussteil_e7_mit_Betrag_TGUE. */
+p.SchlussteilMitBetragTgueE0, p.SchlussteilMitBetragTgueE0_5, p.SchlussteilMitBetragTgueE1, p.SchlussteilMitBetragTgueE2, p.SchlussteilMitBetragTgueE3, p.SchlussteilMitBetragTgueE4, p.SchlussteilMitBetragTgueE5, p.SchlussteilMitBetragTgueE6, p.SchlussteilMitBetragTgueE7 {margin: 2pt 0 0 0; line-height:11.0pt; font-size:10.0pt; font-weight:normal;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 61_TabText */
+p.TabText {margin:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 61a_TabTextRechtsb */
+p.TabTextRechtsb {margin:0;text-align:right;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 61b_TabTextZentriert */
+p.TabTextZentriert {margin:0;text-align:center;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 61c_TabTextBlock */
+p.TabTextBlock {margin:0;text-align:justify;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 62_Kopfzeile */
+p.Kopfzeile {margin:4.0pt 0 0 0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color: #C0C0C0;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 63_Fuszzeile */
+p.Fusszeile {margin:0;line-height:11.0pt;font-size:9.0pt;font-family:"Times New Roman", serif;color: #C0C0C0;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 64_FN_Linie */
+p.FNLinie {width:5cm;margin:22pt 0 1pt 0;line-height:11.0pt;padding:0;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;border-bottom-style: solid;border-bottom-color: Black;border-bottom-width:1px;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 65_FN_Text */
+p.FNText {margin:0;text-align:justify;line-height:11.0pt;font-size:9.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 66_FN_Zeichen */
+span.FNZeichen {line-height: 60%; font-size: 60%; vertical-align:super;layout-grid-mode:line;}
+/* Formatvorlage: 68_UnterschrL */
+p.UnterschrL {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:left;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 69_UnterschrM */
+p.UnterschrM {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 71_Anlagenbez */
+p.Anlagenbez, h1.Anlagenbez, h2.Anlagenbez, h3.Anlagenbez, h4.Anlagenbez, h5.Anlagenbez, h6.Anlagenbez, span.Anlagenbez {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 81_ErlUeberschrZ */
+p.ErlUeberschrZ, h1.ErlUeberschrZ, h2.ErlUeberschrZ, h3.ErlUeberschrZ, h4.ErlUeberschrZ, h5.ErlUeberschrZ, h6.ErlUeberschrZ, span.ErlUeberschrZ {margin-top:16.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:11.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 82_ErlUeberschrL */
+p.ErlUeberschrL, h1.ErlUeberschrL, h2.ErlUeberschrL, h3.ErlUeberschrL, h4.ErlUeberschrL, h5.ErlUeberschrL, h6.ErlUeberschrL, span.ErlUeberschrL {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 83_ErlText */
+p.ErlText {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 85_ErlAufzaehlg - noch nicht fertig */
+p.ErlAufzaehlg {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:normal;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 89_TGUE_UeberschrSpalte*/
+p.TGUEUeberschrSpalte, h1.TGUEUeberschrSpalte, h2.TGUEUeberschrSpalte, h3.TGUEUeberschrSpalte, h4.TGUEUeberschrSpalte, h5.TGUEUeberschrSpalte, h6.TGUEUeberschrSpalte {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;page-break-after:avoid;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 99_PreformattedText */
+p.PreformattedText {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Courier New";color:black;layout-grid-mode:line;}
+/* ------------------------------------------------------------- */
+/* Formatvorlagen fuer Zeichenformatierung*/
+/* ------------------------------------------------------------- */
+/* Formatvorlage: 990_Fehler */
+span.Fehler {color: red;}
+/* Formatvorlage: 991_GldSymbol */
+span.GldSymbol, h1.GldSymbol, h2.GldSymbol, h3.GldSymbol, h4.GldSymbol, h5.GldSymbol, h6.GldSymbol {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-indent:19.85pt;font-size:10.0pt;font-family:"Times New Roman", serif;color:black;font-weight:bold;font-style:normal;layout-grid-mode:line;}
+/* Formatvorlage: 992_Normal */
+span.Normal {font-style: normal;font-weight:normal;}
+/* Formatvorlage: 993_Fett */
+span.Fett {font-weight:bold;}
+/* Formatvorlage: 994_Kursiv */
+span.Kursiv {font-style:italic;}
+/* Formatvorlage: 995_Unterstrichen */
+span.Unterstrichen {text-decoration:underline;}
+/* Formatvorlage: 996_Gesperrt */
+span.Gesperrt {letter-spacing:1.3pt;}
+/* Formatvorlage: 997_Hoch */
+span.Hoch {line-height: 60%; font-size: 60%; vertical-align:super;}
+/* Formatvorlage: 998_Tief */
+span.Tief {line-height: 60%; font-size: 60%; vertical-align:sub;}
+/* Formatvorlage: 999_Fett_und_Kursiv */
+span.FettundKursiv {font-weight:bold; font-style:italic;}
+/* Standardtabschrittweite aus Word */
+span.Standardtabulator {width:35.45pt;}
+/* ------------------------------------------------------------- */
+/* Formatvorlagen der Parlamentsdirektion*/
+/* ------------------------------------------------------------- */
+p.PDAllonge, li.PDAllonge, div.PDAllonge {margin-top:14.0pt;margin-right:0;margin-bottom:10.0pt;margin-left:0;text-align:center;font-size:14.0pt;font-family:"Times New Roman", serif;}
+p.PDAllongeB, li.PDAllongeB, div.PDAllongeB {margin-top:14.0pt;margin-right:0;margin-bottom:10.0pt;margin-left:0;text-align:justify;font-size:14.0pt;font-family:"Times New Roman", serif;}
+p.PDAllongeL, li.PDAllongeL, div.PDAllongeL {margin-top:14.0pt;margin-right:0;margin-bottom:10.0pt;margin-left:0;font-size:14.0pt;font-family:"Times New Roman", serif;}
+p.PDAntragsformel, li.PDAntragsformel, div.PDAntragsformel {margin-top:14.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;}
+p.PDBrief, li.PDBrief, div.PDBrief {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;font-size:11.0pt;font-family:"Times New Roman", serif;}
+p.PDDatum, li.PDDatum, div.PDDatum {margin-top:14.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;}
+p.PDEntschliessung, li.PDEntschliessung, div.PDEntschliessung {margin-top:8.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:11.0pt;font-family:"Times New Roman", serif;font-weight:bold;}
+p.PDK1, li.PDK1, div.PDK1 {margin:0;text-align:center;border:none;padding:0;font-size:12.0pt;font-family:"Times New Roman", serif;letter-spacing:-.4pt;font-weight:bold;}
+p.PDK1Anlage, li.PDK1Anlage, div.PDK1Anlage {margin:0;text-align:right;font-size:12.0pt;font-family:"Times New Roman", serif;letter-spacing:-.4pt;font-weight:bold;}
+p.PDK1Ausg, li.PDK1Ausg, div.PDK1Ausg {margin-top:64.25pt;margin-right:0;margin-bottom:27.0pt;margin-left:0;font-size:11.0pt;font-family:"Times New Roman", serif;font-weight:bold;}
+p.PDK2, li.PDK2, div.PDK2 {margin-top:0;margin-right:0;margin-bottom:11.35pt;margin-left:0;font-size:22.0pt;font-family:"Times New Roman", serif;font-weight:bold;}
+p.PDK3, li.PDK3, div.PDK3 {margin-top:0;margin-right:0;margin-bottom:20.0pt;margin-left:0;font-size:18.0pt;font-family:"Times New Roman", serif;font-weight:bold;}
+p.PDK4, li.PDK4, div.PDK4 {margin-top:0;margin-right:0;margin-bottom:6.0pt;margin-left:0;font-size:13.0pt;font-family:"Times New Roman", serif;font-weight:bold;}
+p.PDKopfzeile, li.PDKopfzeile, div.PDKopfzeile {margin-top:4.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;}
+p.PDU1, li.PDU1, div.PDU1 {margin-top:22.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:10.0pt;font-family:"Times New Roman", serif;font-weight:bold;}
+p.PDU2, li.PDU2, div.PDU2 {margin-top:5.0pt;margin-right:0;margin-bottom:0;margin-left:0;line-height:11.0pt;font-size:9.0pt;font-family:"Times New Roman", serif;}
+p.PDU3, li.PDU3, div.PDU3 {margin-top:5.0pt;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;line-height:11.0pt;font-size:9.0pt;font-family:"Times New Roman", serif;}
+p.PDVorlage, li.PDVorlage, div.PDVorlage {margin-top:0;margin-right:0;margin-bottom:18.0pt;margin-left:0;text-align:justify;line-height:11.0pt;font-size:11.0pt;font-family:"Times New Roman", serif;font-weight:bold;}
+p {word-wrap:break-word;}
+div.Hidden {display:none}
+/* ------------------------------------------------------------------ */
+/* CSS-Styles für DOT-Leaders bei Betragslisten */
+/* ------------------------------------------------------------------ */
+table.leaders {
+    overflow: hidden}         /* overflow-x wird vom Mozilla manchmal nicht unterstützt, overflow aber schon. */
+/* A.H., 18. Sept. 2017: Ich habe in der folg. CSS-Klasse after statt before gesetzt, damit die Führungslinien bei mehrzeiligen Texten unten dargestellt werden. */
+table.leaders tr.betragliste td:nth-child(2) p:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  }
+/* Damit am Beginn und Ende der beiden Betragsspalten keine Punkte aufscheinen, wird in der 3. und 4. Spalte padding-left und padding-right gleich 0 gesetzt. */
+/* A.H., 28. Sept. 2017: Bei background muss in den folg. Definitionen eine konkrete Hintergrundfarbe angegeben werden, da die Angabe von inherit die Punkte der Führungslinie durchschimmern lassen würde. */
+/* Da dieses Stylesheet für Darstellung von RIS-Dokumenten auf der Icon-Ansicht verwendet wird, wird hier background: white angegeben. */
+/* Für die Darstellung auf der Metadatenseite wird als Hintergrund ein helles grau (#f9f9f9) verwendet. daher muss in den entsprechenden Klassen in eRechtXML2XHTML11.css die Farbe #f9f9f9 statt white verwendet werden. */
+table.leaders tr.betragliste td:nth-child(3) {
+    padding-left: 0;
+    padding-right: 0;
+    background: white}
+table.leaders tr.betragliste td:nth-child(4) {
+    padding-left: 0;
+    padding-right: 0;
+    background: white}
+table.leaders tr.betragliste td p {
+    display:inline;
+    background: white}
+/* A.H., 20. Sept. 2017: Damit bei Schlussteilen mit Beträgen auf Ebene 0 auch Führungslinien in der 1. Zelle angezeigt werden, gibt es folgende spezielle CSS-Klasse betragliste0. */
+table.leaders tr.betragliste0 td:nth-child(1) p:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  }
+/* Damit am Beginn und Ende der beiden Betragsspalten keine Punkte aufscheinen, wird in der 2. und 3. Spalte padding-left und padding-right gleich 0 gesetzt. */
+table.leaders tr.betragliste0 td:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+    background: white}
+table.leaders tr.betragliste0 td:nth-child(3) {
+    padding-left: 0;
+    padding-right: 0;
+    background: white}
+table.leaders tr.betragliste0 td p {
+    display:inline;
+    background: white}
+
+.GldSymbol
+{
+  display: inline;
+  padding-left: 19.85pt;
+}
+.GldSymbol + p.Abs
+{
+  display: inline;
+}
+.MarginTop4
+{
+  margin-top:4pt;
+}
+</style></head>
+  <body bgcolor="#FFFFFF"><div class="paperw">
+      
+      
+      
+      
+      <h1 class="BDGesBlatt AlignCenter">BUNDESGESETZBLATT<br /><span class="RepOesterr AlignCenter" style="display:block">FÜR DIE REPUBLIK ÖSTERREICH</span></h1>
+      
+      <table class="top12 bottom wi100" role="none"><tr role="none">
+        <td role="none"><p class="AusgabeDaten AlignLeft" role="none">Jahrgang 2020</p></td>
+        <td role="none"><p class="AusgabeDaten AlignCenter" role="none">Ausgegeben am 4. April 2020</p></td>
+        <td role="none"><p class="AusgabeDaten AlignRight" role="none">Teil I</p></td>
+      </tr></table>
+      <table class="bottom wi100" role="none"><tr role="none"><td class="VAlignTop" role="none"><p class="Kurztitel2 AlignLeft" role="none"><span class="Kurztitelbreite">24. Bundesgesetz:</span></p></td><td role="none"><p class="Kurztitel2 AlignLeft" role="none">4. COVID-19-Gesetz</p></td></tr><tr role="none"><td class="VAlignTop" role="none"><p class="Kurztitel2 AlignLeft" role="none"><span class="Kurztitelbreite" /></p></td><td role="none"><p class="Kurztitel2 AlignLeft" role="none">(NR: GP XXVII IA 403/A AB 116 S. 22. BR: AB 10292 S. 905.)</p></td></tr></table>
+      
+      <div class="contentBlock"><h1 class="Titel AlignJustify">24. Bundesgesetz, mit dem das Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 im Verwaltungsverfahren, im Verfahren der Verwaltungsgerichte sowie im Verfahren des Verwaltungsgerichtshofes und des Verfassungsgerichtshofes, das Verwaltungsgerichtshofgesetz 1985, das Verfassungsgerichtshofgesetz 1953, das Bundes-gesetzblattgesetz, das Bundes-Verfassungsgesetz – B-VG, das Parteiengesetz 2012, das KommAustria-Gesetz, das Presseförderungsgesetz 2004, das Publizistikförderungs-gesetz 1984, das ORF-Gesetz, das Volksbegehrengesetz 2018, das Staatsbürgerschafts-gesetz 1985, das Niederlassungs- und Aufenthaltsgesetz, das Fremdenpolizeigesetz 2005, das Beamten-Dienstrechtsgesetz 1979, das Gehaltsgesetz 1956, das Vertragsbediensteten-gesetz 1948, das Landeslehrer-Dienstrechtsgesetz, das Land- und forstwirtschaftliche Landeslehrer-Dienstrechtsgesetz, das Landesvertragslehrpersonengesetz 1966, das Bundes-Gleichbehandlungsgesetz, das Kraftfahrgesetz 1967, das Führerscheingesetz, die Straßenverkehrsordnung 1960, das Schifffahrtsgesetz, das Seilbahngesetz 2003, das Abfallwirtschaftsgesetz 2002, das Gelegenheitsverkehrs-Gesetz 1996, das Ökostrom-gesetz 2012, das KWK-Gesetz, das Künstler-Sozialversicherungsfondsgesetz, das Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 in der Justiz, die Insolvenzordnung, die Notariatsordnung, das Gesellschaftsrechtliche COVID-19-Gesetz und die Strafprozeßordnung 1975 geändert werden sowie ein 2. Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 in der Justiz (2. COVID-19-Justiz-Begleitgesetz - 2. COVID-19-JuBG), ein Bundesverfassungsgesetz betreffend Begleitmaßnahmen zu COVID-19 in Angelegenheiten des öffentlichen Auftragswesens (COVID-19 Begleitgesetz Vergabe) und ein Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 im Bereich des gewerblichen Rechtsschutzes beschlossen werden (4. COVID-19-Gesetz)</h1>
+      <p class="PromKlEinlSatz AlignJustify">Der Nationalrat hat beschlossen:</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 1<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Bundesgesetzes betreffend Begleitmaßnahmen zu COVID-19 im Verwaltungsverfahren, im Verfahren der Verwaltungsgerichte sowie im Verfahren des Verwaltungsgerichtshofes und des Verfassungsgerichtshofes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 im Verwaltungsverfahren, im Verfahren der Verwaltungsgerichte sowie im Verfahren des Verwaltungsgerichtshofes und des Verfassungsgerichtshofes, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Dem Titel wird folgender Klammerausdruck angefügt:</p>
+      <p class="SatznachNovao AlignJustify">„(Verwaltungsrechtliches COVID-19-Begleitgesetz – COVID-19-VwBG)“</p>
+      <p class="NovAo1 AlignJustify">2. § 1 Abs. 1 zweiter und letzter Satz wird durch folgende Sätze ersetzt:</p>
+      <p class="SatznachNovao AlignJustify">„Sie beginnen neu zu laufen. Bei der Berechnung einer Frist nach § 32 Abs. 1 AVG gilt der 1. Mai 2020 als Tag, in den der Zeitpunkt oder das Ereignis fällt, wonach sich der Anfang der Frist richten soll. Bei der Berechnung einer Frist nach § 32 Abs. 2 AVG gilt der 1. Mai 2020 als Tag, an dem die Frist begonnen hat. Die vorstehenden Sätze gelten nicht für Fristen in Verfahren nach dem Epidemiegesetz 1950, BGBl. Nr. 186/1950.“</p>
+      <p class="NovAo1 AlignJustify">3. In § 1 wird nach Abs. 1 folgender Abs. 1a eingefügt:</p>
+      <p class="Abs AlignJustify">„(1a) Keine Fristen im Sinne des Abs. 1 sind die Fristen gemäß</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">1.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">§ 80 Abs. 6 des Fremdenpolizeigesetzes 2005 – FPG, BGBl. I Nr. 100/2005 und</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">2.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">§ 22a Abs. 2 und 4 des BFA-Verfahrensgesetzes – BFA&#45;VG, BGBl. I Nr. 87/2012.“</p></td></tr>
+        
+      </table>
+      <p class="NovAo1 AlignJustify">4. § 2 samt Überschrift lautet:</p>
+      <h2 class="UeberschrPara AlignCenter">„Sonderregelungen für bestimmte Fristen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 2.</h3><p class="Abs AlignJustify"> (1) Die Zeit vom 22. März 2020 bis zum Ablauf des 30. April 2020 wird nicht eingerechnet:</p></div>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">1.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">in die Zeit, in der ein verfahrenseinleitender Antrag (§ 13 Abs. 8 AVG) zu stellen ist,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">2.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">in Entscheidungsfristen mit Ausnahme von verfassungsgesetzlich festgelegten Höchstfristen und</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">3.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">in Verjährungsfristen.</p></td></tr>
+        
+        <tr role="none"><td class="AlignJustify VAlignTop" colspan="11" role="none"><p class="SchlussteilE0" role="none">Im Anwendungsbereich der Z 2 verlängert sich die jeweilige Entscheidungsfrist um sechs Wochen, wenn sie jedoch weniger als sechs Wochen beträgt, nur im Ausmaß der Entscheidungsfrist selbst.</p></td></tr>
+      </table>
+      <p class="Abs AlignJustify">(2) Die Frist für die Zahlung des Strafbetrages beträgt</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">1.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">bei in der Zeit vom 22. März bis zum Ablauf des 30. April 2020 ausgefertigten Anonymverfügungen, abweichend von § 49a Abs. 6 VStG, sechs Wochen und</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">2.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">bei Organstrafverfügungen, wenn ein Beleg gemäß § 50 Abs. 2 VStG verwendet und dieser in der Zeit vom 22. März bis zum Ablauf des 30. April 2020 am Tatort hinterlassen oder dem Beanstandeten übergeben wird, abweichend von § 50 Abs. 6 VStG, vier Wochen.</p></td></tr>
+        
+        <tr role="none"><td class="AlignJustify VAlignTop" colspan="11" role="none"><p class="SchlussteilE0" role="none">Im Anwendungsbereich des ersten Satzes beziehen sich Verweisungen auf die in den §§ 49a Abs. 6 und § 50 Abs. 6 VStG bezeichneten Fristen auf die im ersten Satz bezeichneten Fristen.“</p></td></tr>
+      </table>
+      <p class="NovAo1 AlignJustify">5. Dem § 9 wird folgender Abs. 3 angefügt:</p>
+      <p class="Abs AlignJustify">„(3) Der Titel, § 1 Abs. 1 zweiter bis letzter Satz und Abs. 1a und § 2 samt Überschrift in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit 22. März 2020 in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 2<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Verwaltungsgerichtshofgesetzes 1985</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Verwaltungsgerichtshofgesetz 1985, BGBl. Nr. 10/1985, zuletzt geändert durch das 2. COVID-19-Gesetz, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Nach § 2 wird folgender § 2a eingefügt:</p>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify"><span style="font-weight:normal;">„</span>§ 2a.</h3><p class="Abs AlignJustify"> Wenn ein Zusammentritt der Vollversammlung nicht möglich oder nicht zweckmäßig ist, insbesondere um die Verbreitung von COVID-19 zu verhindern, hat die in § 2 vorgesehene Angelobung der Mitglieder des Verwaltungsgerichtshofes – mit Ausnahme der Angelobung des Präsidenten/der Präsidentin und der des Vizepräsidenten/der Vizepräsidentin – vor dem Präsidenten/vor der Präsidentin des Verwaltungsgerichtshofes zu erfolgen.“</p></div>
+      <p class="NovAo1 AlignJustify">2. Dem § 79 wird folgender Abs. 21 angefügt:</p>
+      <p class="Abs AlignJustify">„(21) § 2a in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020, tritt mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 3<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Verfassungsgerichtshofgesetzes 1953</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Verfassungsgerichtshofgesetz 1953 – VfGG, BGBl. Nr. 85/1953, zuletzt geändert durch das 2. COVID-19-Gesetz, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. § 60 lautet:</p>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify"><span style="font-weight:normal;">„</span>§ 60.</h3><p class="Abs AlignJustify"> Im Fall außergewöhnlicher Verhältnisse kann der Verfassungsgerichtshof auf Antrag der zuständigen obersten Verwaltungsbehörde des Bundes oder des Landes die in einem aufhebenden Erkenntnis für das Außerkrafttreten bestimmte Frist gemäß Art. 139 Abs. 5 B&#45;VG erstrecken, wenn die erforderlichen rechtlichen Vorkehrungen aus rechtlichen oder tatsächlichen Gründen nicht innerhalb dieser Frist getroffen werden können. Die Höchstdauer der Fristen gemäß Art. 139 Abs. 5 B&#45;VG darf dadurch nicht überschritten werden. Der Verfassungsgerichtshof entscheidet in nichtöffentlicher Sitzung durch Beschluss. Ein Beschluss des Verfassungsgerichtshofes, mit dem die im aufhebenden Erkenntnis bestimmte Frist gemäß Art. 139 Abs. 5 B&#45;VG erstreckt wird, verpflichtet die zuständige oberste Behörde des Bundes oder des Landes zur unverzüglichen Kundmachung dieses Ausspruches.“</p></div>
+      <p class="NovAo1 AlignJustify">2. § 64a lautet:</p>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify"><span style="font-weight:normal;">„</span>§ 64a.</h3><p class="Abs AlignJustify"> Im Fall außergewöhnlicher Verhältnisse kann der Verfassungsgerichtshof auf Antrag der Bundesregierung oder der Landesregierung die in einem aufhebenden Erkenntnis für das Außerkrafttreten bestimmte Frist gemäß Art. 140 Abs. 5 B&#45;VG erstrecken, wenn die erforderlichen gesetzlichen Vorkehrungen aus rechtlichen oder tatsächlichen Gründen nicht innerhalb dieser Frist getroffen werden können. Die Höchstdauer der Frist gemäß Art. 140 Abs. 5 B&#45;VG darf dadurch nicht überschritten werden. Der Verfassungsgerichtshof entscheidet in nichtöffentlicher Sitzung durch Beschluss. Ein Beschluss des Verfassungsgerichtshofes, mit dem die im aufhebenden Erkenntnis für das Außerkrafttreten bestimmte Frist gemäß Art. 140 Abs. 5 B&#45;VG erstreckt wird, verpflichtet den Bundeskanzler oder den zuständigen Landeshauptmann zur unverzüglichen Kundmachung dieses Ausspruches.“</p></div>
+      <p class="NovAo1 AlignJustify">3. Dem § 94 wird folgender Abs. 36 angefügt:</p>
+      <p class="Abs AlignJustify">„(36) Die §§ 60 und 64a in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 4<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Bundesgesetzblattgesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetzblattgesetz, BGBl. I Nr. 100/2003, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 14/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. § 3 Z 3 und 4 lautet:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">„3.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">der Kundmachungen des Bundeskanzlers über die Aufhebung eines Bundesgesetzes durch den Verfassungsgerichtshof und über den Ausspruch des Verfassungsgerichtshofes, dass ein Bundesgesetz verfassungswidrig war, einschließlich der sonstigen Aussprüche im Erkenntnis des Verfassungsgerichtshofes sowie des Ausspruches in einem Beschluss des Verfassungsgerichtshofes, mit dem die im aufhebenden Erkenntnis für das Außerkrafttreten bestimmte Frist erstreckt wird (Art. 140 Abs. 5 bis 7 B-VG; §§ 64 Abs. 2, 64a und 65 VfGG);</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">4.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">der gemeinsamen Kundmachungen des Bundeskanzlers und der zuständigen Bundesminister über die Aufhebung einer Kundmachung über die Wiederverlautbarung eines Bundesgesetzes durch den Verfassungsgerichtshof und über den Ausspruch des Verfassungsgerichtshofes, dass eine solche Kundmachung gesetzwidrig war, einschließlich der sonstigen Aussprüche im Erkenntnis des Verfassungsgerichtshofes sowie des Ausspruches in einem Beschluss des Verfassungsgerichtshofes, mit dem die im aufhebenden Erkenntnis für das Außerkrafttreten bestimmte Frist erstreckt wird (Art. 139a B-VG; § 61b VfGG);“</p></td></tr>
+        
+      </table>
+      <p class="NovAo1 AlignJustify">2. § 4 Abs. 1 Z 4 lautet:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">„4.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">der Kundmachungen der Bundesregierung oder der zuständigen Bundesminister über die Aufhebung einer Verordnung durch den Verfassungsgerichtshof und über den Ausspruch des Verfassungsgerichtshofes, dass eine Verordnung gesetzwidrig war, einschließlich der sonstigen Aussprüche im Erkenntnis des Verfassungsgerichtshofes sowie des Ausspruches in einem Beschluss des Verfassungsgerichtshofes, mit dem die im aufhebenden Erkenntnis für das Außerkrafttreten bestimmte Frist erstreckt wird (Art. 139 Abs. 5 und 6 B-VG; §§ 59 Abs. 2, 60 und 61 VfGG);“</p></td></tr>
+        
+      </table>
+      <p class="NovAo1 AlignJustify">3. § 5 Abs. 1 Z 3 lautet:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">„3.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">der Kundmachungen der Bundesregierung oder der zuständigen Bundesminister über die Feststellung der Gesetzwidrigkeit und der Kundmachungen des Bundeskanzlers über die Feststellung der Verfassungswidrigkeit eines Staatsvertrages durch den Verfassungsgerichtshof einschließlich der sonstigen Aussprüche im Erkenntnis des Verfassungsgerichtshofes sowie des Ausspruches in einem Beschluss des Verfassungsgerichtshofes, mit dem die im feststellenden Erkenntnis bestimmte Frist, innerhalb der der Staatsvertrag weiterhin anzuwenden ist, erstreckt wird (Art. 140a Abs. 1 B-VG; § 66 VfGG);“</p></td></tr>
+        
+      </table>
+      <p class="NovAo1 AlignJustify">4. In § 14 erhält der durch das Bundesgesetz BGBl. I Nr. 14/2019 angefügte Abs. 6 die Absatzbezeichnung <span class="Normal">„(7)“</span> und wird nach diesem folgender Abs. 8 angefügt:</p>
+      <p class="Abs AlignJustify">„(8) § 3 Z 3 und 4, § 4 Abs. 1 Z 4 und § 5 Abs. 1 Z 3 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 5<br /><span class="UeberschrG2 AlignCenter" style="display:block">(Verfassungsbestimmung)</span></h2>
+      
+      <h2 class="UeberschrG1-AfterG2 AlignCenter">Änderung des Bundes-Verfassungsgesetzes</h2>
+      <p class="PromKlEinlSatz AlignJustify">Das Bundes-Verfassungsgesetz – B-VG, BGBl. Nr. 1/1930, zuletzt geändert durch das 2. COVID-19-Gesetz, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Art. 117 Abs. 3 lautet:</p>
+      <p class="Abs AlignJustify">„(3) Zu einem Beschluss des Gemeinderates ist die einfache Mehrheit der in beschlussfähiger Anzahl anwesenden Mitglieder desselben erforderlich; es können jedoch für bestimmte Angelegenheiten andere Beschlusserfordernisse vorgesehen werden. Im Fall außergewöhnlicher Verhältnisse ist eine Beschlussfassung im Umlaufweg oder in einer Videokonferenz zulässig; zu einem solchen Beschluss ist die einfache Mehrheit der Mitglieder des Gemeinderates erforderlich, wenn jedoch für die betreffende Angelegenheit strengere Mehrheitserfordernisse vorgesehen sind, deren Einhaltung.“</p>
+      <p class="NovAo1 AlignJustify">2. Art. 117 Abs. 3 lautet:</p>
+      <p class="Abs AlignJustify">„(3) Zu einem Beschluss des Gemeinderates ist die einfache Mehrheit der in beschlussfähiger Anzahl anwesenden Mitglieder desselben erforderlich; es können jedoch für bestimmte Angelegenheiten andere Beschlusserfordernisse vorgesehen werden.“</p>
+      <p class="NovAo2 AlignJustify">3. In Art. 151 Abs. 64 wird das Wort <span class="Normal">„Juni“</span> durch das Wort <span class="Normal">„September“</span> und das Wort <span class="Normal">„Juli“</span> durch das Wort <span class="Normal">„Oktober“</span> ersetzt.</p>
+      <p class="NovAo2 AlignJustify">4. In Art. 151 Abs. 65 wird vor den Ausdrücken <span class="Normal">„Z 1“</span> und <span class="Normal">„Z 2“</span> jeweils der Ausdruck <span class="Normal">„Art. 19“</span> eingefügt.</p>
+      <p class="NovAo1 AlignJustify">5. Dem Art. 151 wird folgender Abs. 66 angefügt:</p>
+      <p class="Abs AlignJustify">„(66) Art. 117 Abs. 3 in der Fassung des Art. 5 Z 1 des Bundesgesetzes BGBl. I Nr. 24/2020 tritt mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft. Art. 117 Abs. 3 in der Fassung des Art. 5 Z 2 des genannten Bundesgesetzes tritt mit 1. Jänner 2021 in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 6<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Parteiengesetzes 2012</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz über die Finanzierung politischer Parteien (Parteiengesetz 2012 – PartG), BGBl. I Nr. 56/2012, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 55/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. In § 11 wird nach Abs. 8 folgender Abs. 8a eingefügt:</p>
+      <p class="Abs AlignJustify">„(8a) Eine Beschlussfassung im Umlaufweg ist zulässig.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 16 wird folgender Abs. 8 angefügt:</p>
+      <p class="Abs AlignJustify">„(8) § 11 Abs. 8a in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 tritt mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 7<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des KommAustria-Gesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz über die Einrichtung einer Kommunikationsbehörde Austria (KommAustria-Gesetz – KOG), BGBl. I Nr. 32/2001, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 47/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. In § 9 wird nach Abs. 1 folgender Abs. 1a eingefügt:</p>
+      <p class="Abs AlignJustify">„(1a) Eine Beschlussfassung im Umlaufweg ist zulässig.“</p>
+      <p class="NovAo1 AlignJustify">2. In § 10, § 28 und § 32 wird jeweils folgender Abs. 5a eingefügt:</p>
+      <p class="Abs AlignJustify">„(5a) Eine Beschlussfassung im Umlaufweg ist zulässig.“</p>
+      <p class="NovAo1 AlignJustify">3. Dem § 44 wird folgender Abs.23 angefügt:</p>
+      <p class="Abs AlignJustify">„(23) § 9 Abs. 1a und § 10 Abs. 5a, § 28 Abs. 5a und § 32 Abs. 5a in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <p class="NovAo1 AlignJustify">4. Dem § 45 wird folgender Abs. 15 und 16 angefügt:</p>
+      <p class="Abs AlignJustify">„(15) Abweichend von § 29 Abs. 1 in der Fassung des Bundesgesetzes BGBl. I Nr. 47/2019 sind der RTR-GmbH im Jahr 2020 zusätzliche zwei Millionen Euro von den Einnahmen aus den Gebühren gemäß § 3 Abs. 1 RGG zu überweisen, wobei jeweils die Hälfte dieses zusätzlichen Betrags per 30. Juni und per 30. September zu überweisen ist.“</p>
+      <p class="Abs AlignJustify">„(16) Abweichend von § 30 Abs. 1 in der Fassung des Bundesgesetzes BGBl. I Nr. 47/2019 sind der RTR-GmbH im Jahr 2020 zusätzlich weitere 15 Millionen Euro von den Einnahmen aus den Gebühren gemäß § 3 Abs. 1 RGG zu überweisen, wobei jeweils die Hälfte dieses zusätzlichen Betrags per 30. Juni und per 30. September zu überweisen ist.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 8<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Presseförderungsgesetzes 2004</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz über die Förderung der Presse (Presseförderungsgesetz 2004 – PresseFG 2004), BGBl. I Nr. 136/2003, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 32/2018, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. In § 4 Abs. 3 wird nach der Z 4 folgende Z 4a eingefügt:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">„4a.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">Eine Beschlussfassung im Umlaufweg ist zulässig.“</p></td></tr>
+        
+      </table>
+      <p class="NovAo1 AlignJustify">2. Nach Abschnitt IV wird folgender Abschnitt IVa samt Abschnittsüberschrift eingefügt:</p>
+      <h2 class="UeberschrG1 AlignCenter">„Abschnitt IVa<br /><span class="UeberschrG2 AlignCenter" style="display:block">Außerordentliche Fördermaßnahme</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Druckkostenbeitrag</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 12b.</h3><p class="Abs AlignJustify"> (1) Zur Abfederung der wirtschaftlichen Auswirkungen der COVID-19 Krisensituation auf die Einnahmensituation im Bereich der Printmedien werden im Jahr 2020 Medieninhaber von Tageszeitungen mit einem einmaligen Betrag von 3,25 Euro pro Exemplar der anhand des Jahres 2019 ermittelten durchschnittlichen Druckauflage finanziell unterstützt.</p></div>
+      <p class="Abs AlignJustify">(2) Ansuchen sind innerhalb von 4 Wochen ab Ablauf des Tages der Kundmachung des Bundesgesetzes BGBl. I Nr. 24/2020 bei der KommAustria einzubringen und haben geeignete Nachweise über die Höhe der Druckauflage zu enthalten.“</p>
+      <p class="NovAo1 AlignJustify">2a. Dem § 17 wird folgender Abs. 8a angefügt:</p>
+      <p class="Abs AlignJustify">„(8a) Die für die auf das Jahr 2019 bezogenen Ansuchen (§ 3 und § 14) vom Bund für die Vertriebsförderung von Tageszeitungen (§ 6) bereitzustellenden Mittel betragen insgesamt 5 244 750 Euro und die für die auf das Jahr 2019 bezogenen Ansuchen für Vertriebsförderung von Wochenzeitungen (§ 7) bereitzustellenden Mittel betragen insgesamt 4 467 750 Euro.“</p>
+      <p class="NovAo1 AlignJustify">3. Dem § 17 wird folgender Abs. 9 angefügt:</p>
+      <p class="Abs AlignJustify">„(9) § 4 Abs. 3 Z 4a und Abschnitt IVa in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 9<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Publizistikförderungsgesetzes 1984</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz über die Förderung politischer Bildungsarbeit und Publizistik 1984 (Publizistikförderungsgesetz 1984 – PubFG), BGBl. Nr. 538/1984, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 61/2018, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. In § 9 wird nach Abs. 6 folgender Abs. 6a eingefügt:</p>
+      <p class="Abs AlignJustify">„(6a) Eine Beschlussfassung im Umlaufweg ist zulässig.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 12 wird folgender Abs. 13 angefügt:</p>
+      <p class="Abs AlignJustify">„(13) § 9 Abs. 6a in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 tritt mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 10<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des ORF-Gesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz über den Österreichischen Rundfunk (ORF-Gesetz, ORF-G), BGBl. Nr. 379/1984, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 61/2018, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. In § 20 wird nach Abs. 6 folgender Abs. 6a eingefügt:</p>
+      <p class="Abs AlignJustify">„(6a) Sofern der Stiftungsrat oder einer seiner Ausschüsse (Abs. 7) im Fall außergewöhnlicher Verhältnisse nicht in angemessener Frist zusammentreten kann, ist eine Beschlussfassung im Umlaufweg oder in einer Videokonferenz zulässig. “</p>
+      <p class="NovAo1 AlignJustify">2. In § 29 wird nach Abs. 4 folgender Abs. 4a eingefügt:</p>
+      <p class="Abs AlignJustify">„(4a) Sofern der Publikumsrat oder einer seiner Ausschüsse (vgl. § 4a Abs. 2) im Fall außergewöhnlicher Verhältnisse nicht in angemessener Frist zusammentreten kann, ist eine Beschlussfassung im Umlaufweg oder in einer Videokonferenz zulässig.“</p>
+      <p class="NovAo1 AlignJustify">3. Dem § 49 wird folgender Abs. 19 angefügt:</p>
+      <p class="Abs AlignJustify">„(19) § 20 Abs. 6a und § 29 Abs. 4a in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit Ablauf des Tages der Kundmachung des genannten Bundesgesetzes in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 11<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Volksbegehrengesetzes 2018</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Volksbegehrensgesetz 2018, BGBl. I Nr. 106/2016, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 32/2018 wird geändert wie folgt:</p>
+      <p class="NovAo1 AlignJustify">1. § 24 samt Überschrift hat zu lauten:</p>
+      <h2 class="UeberschrPara AlignCenter">„Sonderbestimmungen in Zusammenhang mit COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 24.</h3><p class="Abs AlignJustify"> (1) Werden durch Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, die Bewegungsfreiheit oder der zwischenmenschliche Kontakt eingeschränkt, so werden die in § 4 Abs. 1 und § 6 Abs. 1 festgelegten Fristen für diesen Zeitraum gehemmt. In einem solchen Fall werden auch die Fristen für die spätestmögliche Abgabe von Unterstützungserklärungen sowie für die Einbringung von Einleitungsanträgen entsprechend gehemmt. Weiters kann in einem solchen Fall der Mindestzeitraum zwischen dem Tag der Verlautbarung und dem ersten Tag des Eintragungszeitraums eines Volksbegehrens verkürzt werden, wenn bereits für ein anderes Volksbegehren ein Eintragungszeitraum festgelegt worden ist.</p></div>
+      <p class="Abs AlignJustify">(2) Für die Dauer der Maßnahmen (Abs. 1) ist ein gemäß § 6 Abs. 2 bereits festgelegter Eintragungszeitraum abzuberaumen und nach Wegfall der Maßnahmen neu festzusetzen. Die diesbezügliche Entscheidung hat auch einen neuen Stichtag zu enthalten. Zwischen dem Tag der Verlautbarung und dem ersten Tag des Eintragungszeitraums muss ein Zeitraum von mindestens acht Wochen liegen. Beide Entscheidungen sind auf der Amtstafel des Bundesministeriums für Inneres sowie im Internet zu verlautbaren.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 26 wird folgender Abs. 3 angefügt:</p>
+      <p class="Abs AlignJustify">„(3) § 24 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 tritt mit Ablauf des Tages der Kundmachung in Kraft und mit Ablauf des 30. September 2022 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 12<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Staatsbürgerschaftsgesetzes 1985</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Staatsbürgerschaftsgesetz 1985 (StbG), BGBl. Nr. 311/1985, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 96/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. In § 22 Abs. 1 wird folgender Satz angefügt:</p>
+      <p class="SatznachNovao AlignJustify">„Solange aufgrund von Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, die Bewegungsfreiheit oder der zwischenmenschliche Kontakt eingeschränkt ist, hat der Fremde das Gelöbnis nach Aufforderung durch die nach § 39 zuständige Behörde schriftlich an diese zu übermitteln.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 64a wird folgender Abs. 31 angefügt:</p>
+      <p class="Abs AlignJustify">„(31) § 22 Abs. 1 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 tritt mit Ablauf des Tages der Kundmachung in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 13<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Niederlassungs- und Aufenthaltsgesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Niederlassungs- und Aufenthaltsgesetz (NAG), BGBl. I Nr. 100/2005, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 104/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Nach § 19 Abs. 1 wird folgender Abs. 1a eingefügt:</p>
+      <p class="Abs AlignJustify">„(1a) Solange aufgrund von Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, die Bewegungsfreiheit oder der zwischenmenschliche Kontakt eingeschränkt ist, sind Verlängerungsanträge und Zweckänderungsanträge abweichend von Abs. 1 nicht persönlich, sondern postalisch oder auf elektronischem Wege bei der Behörde einzubringen.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 82 wird folgender Abs. 31 angefügt:</p>
+      <p class="Abs AlignJustify">„(31) § 19 Abs. 1a in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 tritt mit Ablauf des Tages der Kundmachung in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 14<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Fremdenpolizeigesetzes 2005</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Fremdenpolizeigesetz 2005 (FPG), BGBl. I Nr. 100/2005, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 110/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. In § 20 Abs. 2 werden nach dem ersten Satz folgende Sätze eingefügt:</p>
+      <p class="SatznachNovao AlignJustify">„Solange aufgrund von Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, die Bewegungsfreiheit oder der zwischenmenschliche Kontakt eingeschränkt oder die Beantragung eines Visums bei der zuständigen Vertretungsbehörde im Ausland aus faktischen, nicht vom Fremden zu vertretenden Gründen nicht möglich oder nicht zumutbar ist, ist die Ausübung einer unselbständigen Erwerbstätigkeit überdies als Inhaber eines Visums gemäß § 22a Z 2 oder 3 zulässig, sofern diesem die dafür erforderliche Berechtigung oder sonstige Bestätigung nach dem AuslBG erteilt wurde. § 21 Abs. 2 Z 10 steht der Erteilung eines Visums gemäß § 22a Z 2 oder 3 diesfalls nicht entgegen.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 20 wird folgender Abs. 7 angefügt:</p>
+      <p class="Abs AlignJustify">„(7) Solange aufgrund von Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, die Bewegungsfreiheit oder der zwischenmenschliche Kontakt eingeschränkt ist, gelten abweichend von Abs. 2 Z 1 und 2 Visa nach Abs. 1 Z 8 und 9 über ihre ursprüngliche Gültigkeitsdauer hinaus, solange eine gemäß § 5 AuslBG iVm § 32c Abs. 1 AuslBG erteilte Beschäftigungsbewilligung gültig ist.<span class="Kursiv">“</span></p>
+      <p class="NovAo1 AlignJustify">3. Dem § 125 wird folgender Abs. 35 angefügt:</p>
+      <p class="Abs AlignJustify">„(35) Visa gemäß § 20 Abs. 1 Z 8 und 9, die vor Ablauf des 31. Dezember 2020 gemäß § 20 Abs. 7 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 weitergelten, behalten ihre Gültigkeit bis zu dem Ablauf der Gültigkeitsdauer, dem Widerruf oder dem Erlöschen der zugrundeliegenden Beschäftigungsbewilligung gemäß § 5 AuslBG.“</p>
+      <p class="NovAo1 AlignJustify">4. Dem § 126 wird folgender Abs. 24 angefügt:</p>
+      <p class="Abs AlignJustify">„(24) § 20 Abs. 2 und 7 sowie § 125 Abs. 35 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit Ablauf des Tages der Kundmachung in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 15<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Beamten-Dienstrechtsgesetzes 1979</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Beamten-Dienstrechtsgesetz 1979 – BDG 1979, BGBl. Nr. 333/1979, zuletzt geändert durch das 2. COVID-19-Gesetz, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Dem § 248d wird folgender Abs. 6 angefügt:</p>
+      <p class="Abs AlignJustify">„(6) Kann die Verpflichtung zur Absolvierung des Schulmanagementkurses – Berufsbegleitender Weiterbildungslehrgang gemäß § 207h Abs. 2 aufgrund von Maßnahmen zu COVID-19 nicht rechtzeitig erfüllt werden, hat die Zentralstelle auf Antrag der Inhaberin oder des Inhabers der Leitungsfunktion die für die Absolvierung vorgesehene Frist um ein Jahr zu erstrecken. Diese Erstreckung bewirkt eine Verlängerung der Funktionsdauer im Sinne des § 207h Abs. 1 um ein Jahr.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 284 wird folgender Abs. 106 angefügt:</p>
+      <p class="Abs AlignJustify">„(106) § 248d Abs. 6 in der Fassung des 3. COVID-19-Gesetzes, BGBl. I Nr. 24/2020, tritt mit dem der Kundmachung folgenden Tag in Kraft und mit Ablauf des 30. Juni 2021 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 16<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Gehaltsgesetzes 1956</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Gehaltsgesetz 1956 – GehG, BGBl. Nr. 54/1956, zuletzt geändert durch die 3. Dienstrechts-Novelle 2019, BGBl. I Nr. 112/2019, und die Bundesministeriengesetz-Novelle 2020, BGBl. I Nr. 8/2020, wird wie folgt geändert:</p>
+      <p class="NovAo2 AlignJustify">1. In § 61 Abs. 6 wird nach der Wortfolge <span class="Normal">„Landespatrons und“</span> die Wortfolge <span class="Normal">„am Dienstag nach Pfingsten sowie“</span> eingefügt.</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 175 wird folgender Abs. 100 angefügt:</p>
+      <p class="Abs AlignJustify">„(100) § 61 Abs. 6 in der Fassung des 3. COVID-19-Gesetzes, BGBl. I Nr. 24/2020, tritt hinsichtlich der Wortfolge „am Dienstag nach Pfingsten sowie“ mit 28. Dezember 2019 in Kraft und mit Ablauf des 31. August 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 17<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Vertragsbedienstetengesetzes 1948</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Vertragsbedienstetengesetz 1948 – VBG, BGBl. Nr. 86/1948, zuletzt geändert durch das 2. COVID-19-Gesetz, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Im Inhaltsverzeichnis wird nach dem den § 35 betreffenden Eintrag folgender Eintrag eingefügt:</p>
+      <table class="tableOfContent"><tr><td class="tableOfContentEintrag1 VAlignTop"><p class="InhaltEintrag AlignRight">„§ 35a.</p></td><td class="tableOfContentEintrag2 VAlignTop"><p class="InhaltEintrag AlignLeft">Begleitmaßnahmen zu COVID-19“</p></td></tr></table>
+      <p class="NovAo1 AlignJustify">2. Nach § 35 wird folgender § 35a samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Begleitmaßnahmen zu COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 35a.</h3><p class="Abs AlignJustify"> § 18b Abs. 2 erster Satz des Arbeitsvertragsrechts-Anpassungsgesetzes – AVRAG, BGBl. Nr. 459/1993, in der Fassung des 2. COVID-19-Gesetzes, BGBl. I Nr. 16/2020, ist auf Dienstverhältnisse nach diesem Bundesgesetz anwendbar.“</p></div>
+      <p class="NovAo1 AlignJustify">3. Dem § 90a wird folgender Abs. 6 angefügt:</p>
+      <p class="Abs AlignJustify">„(6) Kann die Verpflichtung zur Absolvierung des Schulmanagementkurses – Berufsbegleitender Weiterbildungslehrgang gemäß Abs. 1 in Verbindung mit § 207h Abs. 2 BDG 1979 aufgrund von Maßnahmen zu COVID-19 nicht rechtzeitig erfüllt werden, hat die Zentralstelle auf Antrag der Inhaberin oder des Inhabers der Leitungsfunktion die für die Absolvierung vorgesehene Frist um ein Jahr zu erstrecken. Diese Erstreckung bewirkt eine Verlängerung der Funktionsdauer im Sinne des § 207h Abs. 1 BDG 1979 um ein Jahr.“</p>
+      <p class="NovAo1 AlignJustify">4. Dem § 100 wird folgender Abs. 92 angefügt:</p>
+      <p class="Abs AlignJustify">„(92) In der Fassung des 3. COVID-19-Gesetzes, BGBl. I Nr. 24/2020, treten in Kraft:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">1.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">der den § 35a betreffende Eintrag im Inhaltsverzeichnis und § 35a samt Überschrift mit dem der Kundmachung folgenden Tag. Sie treten mit Ablauf des 31. Dezember 2020 außer Kraft. Dauert die COVID-19 Krisensituation über den 30. April 2020 hinaus an, so hat die Bundesministerin oder der Bundesminister für Kunst, Kultur, öffentlichen Dienst und Sport durch Verordnung den in § 35a festgesetzten Endtermin 30. April 2020 zu verlängern, nicht jedoch über den 31. Dezember 2020 hinaus.</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">2.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">§ 90a Abs. 6 mit dem der Kundmachung folgenden Tag. § 90a Abs. 6 tritt mit Ablauf des 30. Juni 2021 außer Kraft.“</p></td></tr>
+        
+      </table>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 18<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Landeslehrer-Dienstrechtsgesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Landeslehrer-Dienstrechtsgesetz – LDG 1984, BGBl. Nr. 302/1984, zuletzt geändert durch die 3. Dienstrechts-Novelle 2019, BGBl. I Nr. 112/2019, und die Bundesministeriengesetz-Novelle 2020, BGBl. I Nr. 8/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Dem § 115i wird folgender Abs. 6 angefügt:</p>
+      <p class="Abs AlignJustify">„(6) Kann die Verpflichtung zur Absolvierung des Schulmanagementkurses – Berufsbegleitender Weiterbildungslehrgang gemäß § 26b Abs. 2 aufgrund von Maßnahmen zu COVID-19 nicht rechtzeitig erfüllt werden, hat die landesgesetzlich zuständige Behörde auf Antrag der Inhaberin oder des Inhabers der Leitungsfunktion die für die Absolvierung vorgesehene Frist um ein Jahr zu erstrecken. Diese Erstreckung bewirkt eine Verlängerung der Funktionsdauer im Sinne des § 26b Abs. 1 um ein Jahr.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 123 wird folgender Abs. 90 angefügt:</p>
+      <p class="Abs AlignJustify">„(90) § 115i Abs. 6 in der Fassung des 3. COVID-19-Gesetzes, BGBl. I Nr. 24/2020, tritt mit dem der Kundmachung folgenden Tag in Kraft und mit Ablauf des 30. Juni 2021 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 19<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Land- und forstwirtschaftlichen Landeslehrer-Dienstrechtsgesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Land- und forstwirtschaftliche Landeslehrer-Dienstrechtsgesetz – LLDG 1985, BGBl. Nr. 296/1985, zuletzt geändert durch die 3. Dienstrechts-Novelle 2019, BGBl. I Nr. 112/2019, und die Bundesministeriengesetz-Novelle 2020, BGBl. I Nr. 8/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Dem § 26a wird folgender Abs. 7 angefügt:</p>
+      <p class="Abs AlignJustify">„(7) Kann die Verpflichtung zur Absolvierung des Schulmanagementkurses – Berufsbegleitender Weiterbildungslehrgang gemäß Abs. 3 aufgrund von Maßnahmen zu COVID-19 nicht rechtzeitig erfüllt werden, hat die landesgesetzlich zuständige Behörde auf Antrag der Inhaberin oder des Inhabers der Leitungsfunktion die für die Absolvierung vorgesehene Frist um ein Jahr zu erstrecken. Diese Erstreckung bewirkt eine Verlängerung der Funktionsdauer im Sinne des Abs. 2 um ein Jahr.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 127 wird folgender Abs. 71 angefügt:</p>
+      <p class="Abs AlignJustify">„(71) § 26a Abs. 7 in der Fassung des 3. COVID-19-Gesetzes, BGBl. I Nr. 24/2020, tritt mit dem der Kundmachung folgenden Tag in Kraft und mit Ablauf des 30. Juni 2021 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 20<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Landesvertragslehrpersonengesetzes 1966</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Landesvertragslehrpersonengesetz 1966 – LVG, BGBl. Nr. 172/1966, zuletzt geändert durch die 3. Dienstrechts-Novelle 2019, BGBl. I Nr. 112/2019, und die Bundesministeriengesetz-Novelle 2020, BGBl. I Nr. 8/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Dem § 15 wird folgender Abs. 6 angefügt:</p>
+      <p class="Abs AlignJustify">„(6) Kann die Verpflichtung zur Absolvierung des Hochschullehrgangs „Schulen professionell führen“ gemäß § 15 Abs. 3 zweiter Satz aufgrund von Maßnahmen zu COVID-19 nicht rechtzeitig erfüllt werden, hat die landesgesetzlich zuständige Personalstelle auf Antrag der Inhaberin oder des Inhabers der Leitungsfunktion die für die Absolvierung vorgesehene Frist um ein Jahr zu erstrecken. Diese Erstreckung bewirkt eine Verlängerung der Funktionsdauer gemäß § 15 Abs. 3 erster Satz um ein Jahr.“</p>
+      <p class="NovAo1 AlignJustify">2. Dem § 32 wird folgender Abs. 30 angefügt:</p>
+      <p class="Abs AlignJustify">„(30) § 15 Abs. 6 in der Fassung des 3. COVID-19-Gesetzes, BGBl. I Nr. 24/2020, tritt mit dem der Kundmachung folgenden Tag in Kraft und mit Ablauf des 30. Juni 2021 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 21<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Bundes-Gleichbehandlungsgesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundes-Gleichbehandlungsgesetz – B-GlBG, BGBl. Nr. 100/1993, zuletzt geändert durch die 2. Dienstrechts-Novelle 2019, BGBl. I Nr. 58/2019, und die Bundesministeriengesetz-Novelle 2020, BGBl. I Nr. 8/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Im Inhaltsverzeichnis wird nach dem den § 46 betreffenden Eintrag folgender Eintrag eingefügt:</p>
+      <table class="tableOfContent"><tr><td class="tableOfContentEintrag1 VAlignTop"><p class="InhaltEintrag AlignRight">„§ 46a.</p></td><td class="tableOfContentEintrag2 VAlignTop"><p class="InhaltEintrag AlignLeft">Bestimmungen in Zusammenhang mit COVID-19“.</p></td></tr></table>
+      <p class="NovAo1 AlignJustify">2. Nach § 46 wird folgender § 46a samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Bestimmungen in Zusammenhang mit COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 46a.</h3><p class="Abs AlignJustify"><span class="Fett"> </span>Der Fortlauf einer am 16. März 2020 laufenden oder nach diesem Tag zu laufen beginnenden 14-tägigen Frist nach § 20 Abs. 1 oder 4 wird bis 30. April 2020 gehemmt.“</p></div>
+      <p class="NovAo1 AlignJustify">3. Dem § 47 wird folgender Abs. 28 angefügt:</p>
+      <p class="Abs AlignJustify">„(28) Der den § 46a betreffende Eintrag im Inhaltsverzeichnis und § 46a samt Überschrift in der Fassung des 3. COVID-19-Gesetzes, BGBl. I Nr. 24/2020, treten mit 16. März 2020 in Kraft. Dauert die COVID-19 Krisensituation über den 30. April 2020 hinaus an, so hat die Bundesministerin oder der Bundesminister für Kunst, Kultur, öffentlichen Dienst und Sport durch Verordnung den im § 46a festgesetzten Endtermin 30. April 2020 zu verlängern, nicht jedoch über den 31. Dezember 2020 hinaus.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 22<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Kraftfahrgesetzes 1967</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Kraftfahrgesetz 1967, BGBl. Nr. 267/1967, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 104/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Nach § 132 wird folgender § 132a samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Bestimmungen in Zusammenhang mit COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 132a.</h3><p class="Abs AlignJustify"> (1) Die in diesem Bundesgesetz und in den aufgrund dieses Bundesgesetzes erlassenen Verordnungen geregelte Dokumente, Urkunden, Nachweise und dergleichen mit zeitlich begrenzter Gültigkeit, die nach dem 13. März 2020 enden würde und die aufgrund der zur Verhinderung der Verbreitung von COVID-19 erlassenen beschränkenden Maßnahmen nicht verlängert werden kann, behalten bis längstens 31. Mai 2020 im Bundesgebiet ihre Gültigkeit. Materiellrechtliche Fristen nach diesem Bundesgesetz und den aufgrund dieses Bundesgesetzes erlassenen Verordnungen, die nach dem 13. März 2020 ablaufen würden und die aufgrund der zur Verhinderung der Verbreitung von COVID-19 erlassenen beschränkenden Maßnahmen nicht verlängert werden können, werden bis zum Ablauf des 31. Mai 2020 gehemmt.</p></div>
+      <p class="Abs AlignJustify">(2) Die Bundesministerin für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie wird ermächtigt, durch Verordnung den in Abs. 1 genannten Zeitpunkt bis längstens 31. Dezember 2020 zu verlängern, soweit dies aufgrund von Maßnahmen zur Verhinderung der Verbreitung von COVID-19 erforderlich ist. Sie kann dabei auch Ausnahmen von der Verlängerung bzw. Fristenhemmung für bestimmte Fälle vorsehen, soweit dies im Hinblick auf die Verkehrssicherheit oder Umwelt erforderlich ist.“</p>
+      <p class="NovAo1 AlignJustify">2. In § 135 wird folgender Abs. 37a angefügt:</p>
+      <p class="Abs AlignJustify">„(37a) § 132a samt Überschrift in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020, tritt rückwirkend am 14. März 2020 in Kraft und mit 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 23<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Führerscheingesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Führerscheingesetz, BGBl. Nr. 120/1997, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 76/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Nach § 41a wird folgender § 41b samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Bestimmungen in Zusammenhang mit COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 41b.</h3><p class="Abs AlignJustify"> (1) Die in diesem Bundesgesetz und in den aufgrund dieses Bundesgesetzes erlassenen Verordnungen geregelte Dokumente, Urkunden, Nachweise und dergleichen mit zeitlich begrenzter Gültigkeit, die nach dem 13. März 2020 enden würde und die aufgrund der zur Verhinderung der Verbreitung von COVID-19 erlassenen beschränkenden Maßnahmen nicht verlängert werden kann, behalten bis längstens 31. Mai 2020 im Bundesgebiet ihre Gültigkeit. Materiellrechtliche Fristen nach diesem Bundesgesetz und den aufgrund dieses Bundesgesetzes erlassenen Verordnungen, die nach dem 13. März 2020 ablaufen würden und die aufgrund der zur Verhinderung der Verbreitung von COVID-19 erlassenen beschränkenden Maßnahmen nicht verlängert werden können, werden bis zum Ablauf des 31. Mai 2020 gehemmt.</p></div>
+      <p class="Abs AlignJustify">(2) Die Bundesministerin bzw. der Bundesminister für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie wird ermächtigt, durch Verordnung den in Abs. 1 genannten Zeitpunkt bis längstens 31. Dezember 2020 zu verlängern, soweit dies aufgrund von Maßnahmen zur Verhinderung der Verbreitung von COVID-19 erforderlich ist. Es können dabei auch Ausnahmen von der Verlängerung bzw. Fristenhemmung für bestimmte Fälle vorgesehen werden, soweit dies im Hinblick auf die Verkehrssicherheit erforderlich ist.“</p>
+      <p class="NovAo1 AlignJustify">2. In § 43 wird folgender Abs. 28 angefügt:</p>
+      <p class="Abs AlignJustify">„(28) § 41b samt Überschrift in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020, tritt rückwirkend am 14. März 2020 in Kraft und mit 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 24<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung der Straßenverkehrsordnung 1960</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Die Straßenverkehrsordnung 1960, BGBl. Nr. 159/1960, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 77/2019 und BGBl. I Nr. 113/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. An § 42 werden folgende Abs. 11 und 12 angefügt:</p>
+      <p class="Abs AlignJustify">„(11) Wenn es aufgrund von Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, erforderlich ist und eine Gesetzesänderung nicht in angemessener Zeit möglich ist, darf die Bundesministerin bzw. der Bundesminister für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie durch Verordnung anordnen, dass die Fahrverbote gemäß Abs. 1 und 2 vorübergehend auf allen oder bestimmten Straßen des Bundesgebietes nicht gelten. Eine solche Verordnung darf für höchstens drei Monate gelten; eine einmalige Verlängerung der Gültigkeit um höchstens weitere drei Monate ist zulässig.</p>
+      <p class="Abs AlignJustify">(12) Eine Verordnung nach Abs. 11 ist unverzüglich aufzuheben, wenn sie nicht mehr erforderlich ist. Endet die Gültigkeit einer Verordnung nach Abs. 11 oder wird die Verordnung aufgehoben, treten die Bestimmungen der Abs. 1 und 2 wieder in Kraft.“</p>
+      <p class="NovAo1 AlignJustify">2. An § 76 wird folgender Abs. 11 angefügt:</p>
+      <p class="Abs AlignJustify">„(11) Wenn es aufgrund von Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, erforderlich ist und keine erheblichen Interessen am unbehinderten Fahrzeugverkehr entgegenstehen, kann die Behörde durch Verordnung auf einzelnen Straßen oder Straßenabschnitten entweder dauernd oder für bestimmte Zeiten Fußgängern die Benützung der gesamten Fahrbahn erlauben. Auf den in der Verordnung bezeichneten Straßen oder Straßenteilen ist der Fahrzeugverkehr verboten; ausgenommen davon sind der Fahrradverkehr, das Befahren mit Fahrzeugen des Straßendienstes, der Müllabfuhr, des öffentlichen Sicherheitsdienstes und der Feuerwehr in Ausübung des Dienstes sowie das Befahren zum Zwecke des Zu- und Abfahrens. Fußgänger dürfen den Fahrzeugverkehr nicht mutwillig behindern, die Lenker von Fahrzeugen dürfen Fußgänger nicht behindern oder gefährden. Soweit die Behörde das Halten und Parken in den in der Verordnung genannten Straßen oder Straßenabschnitten nicht verbietet, darf gehalten und geparkt werden. Eine solche Verordnung ist durch Anschlag an der Amtstafel kundzumachen; zusätzlich ist der Inhalt solcher Verordnungen durch Hinweistafeln am Beginn der von der Verordnung betroffenen Straßenstrecke zu verlautbaren.“</p>
+      <p class="NovAo1 AlignJustify">3. An § 103 wird folgender Abs. 23 angefügt:</p>
+      <p class="Abs AlignJustify">„(23) § 42 Abs. 11 und 12 und § 76 Abs. 11 in der Fassung dieses Bundesgesetzes, BGBl. I Nr. 24/2020, treten mit Ablauf des Tages der Kundmachung in Kraft und mit 31. Dezember 2020 außer Kraft; aufgrund § 76 Abs. 11 erlassene Verordnungen treten spätestens mit 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 25<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Schifffahrtsgesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz über die Binnenschifffahrt (Schifffahrtsgesetz – SchFG), BGBl. I Nr. 62/1997, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 100/2018, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. An § 149 wird folgender Abs. 15 angefügt:</p>
+      <p class="Abs AlignJustify">„(15) § 152b. samt Überschrift in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 tritt rückwirkend am 14. März 2020 in Kraft.“</p>
+      <p class="NovAo1 AlignJustify">2. An § 150 wird folgender Abs. 3 angefügt:</p>
+      <p class="Abs AlignJustify">„(3) § 152b. samt Überschrift in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 tritt mit 31. Dezember 2020 außer Kraft.“</p>
+      <p class="NovAo1 AlignJustify">3. Nach § 152a. wird folgender § 152b. samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Bestimmungen in Zusammenhang mit COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 152b.</h3><p class="Abs AlignJustify"> (1) Die in diesem Bundesgesetz und in den aufgrund dieses Bundesgesetzes erlassenen Verordnungen geregelten Dokumente, Urkunden, Nachweise und dergleichen mit zeitlich begrenzter Gültigkeit, die nach dem 13. März 2020 enden würde und die aufgrund der zur Verhinderung der Verbreitung von COVID-19 erlassenen beschränkenden Maßnahmen nicht verlängert werden kann, behalten bis längstens 31. Mai 2020 im Bundesgebiet ihre Gültigkeit. Materiellrechtliche Fristen nach diesem Bundesgesetz und den aufgrund dieses Bundesgesetzes erlassenen Verordnungen, die nach dem 13. März 2020 ablaufen würden und die aufgrund der Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 erlassen wurden, nicht verlängert werden können, werden bis zum Ablauf des 31. Mai 2020 gehemmt.</p></div>
+      <p class="Abs AlignJustify">(2) Die Bundesministerin bzw. der Bundesminister für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie wird ermächtigt, durch Verordnung den in Abs. 1 genannten Zeitpunkt bis längstens 31. Dezember 2020 zu verlängern, soweit dies aufgrund von Maßnahmen zur Verhinderung der Verbreitung von COVID-19 erforderlich ist.Es können dabei auch Ausnahmen von der Verlängerung bzw. Fristenhemmung für bestimmte Fälle vorgesehen werden, soweit dies aus einem der in § 16 Abs.1 genannten Gründe erforderlich ist.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 26<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Seilbahngesetzes 2003</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Seilbahngesetz 2003 (SeilbG 2003), BGBl. I Nr. 103/2003, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 79/2018, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Nach § 120 wird folgender § 121 samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Bestimmungen in Zusammenhang mit der COVID-19-Krise</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 121.</h3><p class="Abs AlignJustify"> (1) Der Ablauf der in den §§ 26 Z 2, 27 Z 2, 28 Abs. 1 und 3, 43 Abs. 2, 49 Abs. 1 und 51 Abs. 1 sowie in der Seilbahnüberprüfungs-Verordnung 2013, BGBl. II Nr. 375/2013, geregelten Fristen, welche nach dem 13. März 2020 ablaufen würden, wird bis zum 30. April 2020 gehemmt.</p></div>
+      <p class="Abs AlignJustify">(2) Der Ablauf von Fristen zur Erfüllung von Nebenbestimmungen bzw. Vorschreibungen, welche mit Bescheiden gemäß der §§ 48 Abs. 1, 99 oder 105 festgesetzt worden sind und nach dem 13. März 2020 ablaufen würden, wird bis zum 30. April 2020 gehemmt.</p>
+      <p class="Abs AlignJustify">(3) Die Bundesministerin bzw. der Bundesminister für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie wird ermächtigt, durch Verordnung den in Abs. 1 und 2 genannten Zeitpunkt bis längstens 31. Dezember 2020 zu verlängern, soweit dies aufgrund von Maßnahmen zur Verhinderung der Verbreitung von COVID-19 erforderlich ist. Es können dabei auch Ausnahmen von der Fristenhemmung für bestimmte Fälle vorgesehen werden, soweit dies im Hinblick auf die Sicherheit und Ordnung des Seilbahnbetriebes erforderlich ist.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 27<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Abfallwirtschaftsgesetzes 2002</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Abfallwirtschaftsgesetz 2002 (AWG 2002), BGBl. I Nr. 102/2002, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 104/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Im § 37 wird nach dem Abs. 4 folgender Abs. 4a eingefügt:</p>
+      <p class="Abs AlignJustify">„(4a) Änderungen betreffend die bis 30.09.2020 befristete Ausweitung der genehmigten Kapazität von Lagern in Zusammenhang mit dem Coronavirus (COVID-19) sind der Behörde anzuzeigen.“</p>
+      <p class="NovAo2 AlignJustify">2. Im § 51 Abs. 2 wird im ersten Satz die Wortfolge <span class="Normal">„und 9“</span> durch die Wortfolge <span class="Normal">„ , 9 und Abs. 4a“</span> und im letzten Satz die Wortfolge <span class="Normal">„oder 8“</span> durch die Wortfolge <span class="Normal">„ , 8 oder Abs. 4a“</span> ersetzt.</p>
+      <p class="NovAo1 AlignJustify">3. Dem § 91 wird folgender Abs. 41 angefügt:</p>
+      <p class="Abs AlignJustify">„(41) § 37 Abs. 4a und § 51 Abs. 2 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit dem der Kundmachung folgenden Tag in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 28<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Gelegenheitsverkehrs-Gesetzes 1996</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Gelegenheitsverkehrs-Gesetz 1996 (GelverkG), BGBl. I Nr. 112/1996, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 83/2019 wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. § 19 Abs. 9 Z 1 dieses Bundesgesetzes, in der Fassung BGBl. I Nr. 83/2019, lautet:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">„1.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">für Konzessionen, die 2015 oder in Abständen von jeweils 5 Jahren davor erteilt wurden, bis spätestens 30.4.2021;“</p></td></tr>
+        
+      </table>
+      <p class="NovAo2 AlignJustify">2. In § 21 Abs. 8 wird die Wortfolge <span class="Normal">„1. September 2020“</span> durch die Wortfolge <span class="Normal">„1. Jänner 2021“</span> ersetzt.</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 29<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Ökostromgesetzes 2012</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz über die Förderung der Elektrizitätserzeugung aus erneuerbaren Energieträgern (Ökostromgesetz 2012 – ÖSG 2012), BGBl. I Nr. 75/2011, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 97/2019, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1<span class="Fett">.</span> Im Inhaltsverzeichnis wird nach dem Eintrag zu § 56 folgender Eintrag eingefügt:</p>
+      <table class="tableOfContent"><tr><td class="tableOfContentEintrag1 VAlignTop"><p class="InhaltEintrag AlignRight"><span class="Fett">„</span>§ 56a</p></td><td class="tableOfContentEintrag2 VAlignTop"><p class="InhaltEintrag AlignLeft">Sonderregelung im Zusammenhang mit COVID-19“.</p></td></tr></table>
+      <p class="NovAo1 AlignJustify">2. Im Inhaltsverzeichnis wird nach dem Eintrag zu § 57c folgender Eintrag eingefügt:</p>
+      <table class="tableOfContent"><tr><td class="tableOfContentEintrag1 VAlignTop"><p class="InhaltEintrag AlignRight"><span class="Fett">„</span>§ 57d</p></td><td class="tableOfContentEintrag2 VAlignTop"><p class="InhaltEintrag AlignLeft">Inkrafttretensbestimmung der ÖSG-Novelle BGBl. I Nr. 24/2020“.</p></td></tr></table>
+      <p class="NovAo1 AlignJustify">3. <span class="Fett">(Verfassungsbestimmung)</span> § 1 samt Überschrift lautet:</p>
+      <h2 class="UeberschrPara AlignCenter">„Kompetenzgrundlage und Vollziehung</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 1.</h3><p class="Abs AlignJustify"><span class="Fett">(Verfassungsbestimmung)</span> Die Erlassung, Aufhebung und Vollziehung von Vorschriften, wie sie in diesem Bundesgesetz enthalten sind, sind auch in den Belangen Bundessache, hinsichtlich derer das B-VG etwas anderes bestimmt. Die in diesen Vorschriften geregelten Angelegenheiten können unmittelbar von den in diesem Bundesgesetz vorgesehenen Einrichtungen versehen werden.“</p></div>
+      <p class="NovAo1 AlignJustify">4. Nach § 56 wird folgender § 56a samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Sonderregelung im Zusammenhang mit COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 56a.</h3><p class="Abs AlignJustify"> Eine am 16. März 2020 laufende Frist für die Inbetriebnahme nach §§ 15 Abs. 6, 26 Abs. 5, 27 Abs. 5 und 27a Abs. 6, die in weniger als einem Jahr endet, wird um 6 Monate verlängert. Eine in dem Zeitraum vom 16. März 2020 bis 30. Juni 2020 zu laufen beginnende Frist für die Inbetriebnahme von Photovoltaikanlagen wird um 6 Monate verlängert.“</p></div>
+      <p class="NovAo1 AlignJustify">5. Nach § 57c wird folgender § 57d samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Inkrafttretensbestimmung der ÖSG 2012-Novelle BGBI. I Nr. 24/2020</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 57d.</h3><p class="Abs AlignJustify"> (1) <span class="Fett">(Verfassungsbestimmung) </span>§ 1 samt Überschrift tritt mit dem der Kundmachung folgenden Tag in Kraft.</p></div>
+      <p class="Abs AlignJustify">(2) Das Inhaltsverzeichnis und § 56a samt Überschrift treten mit dem der Kundmachung folgenden Tag in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 30<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des KWK-Gesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz, mit dem Bestimmungen auf dem Gebiet der Kraft-Wärme-Kopplung neu erlassen werden (KWK-Gesetz), BGBl. I Nr. 111/2008, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 72/2014, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. <span class="Fett">(Verfassungsbestimmung)</span> § 1 samt Überschrift lautet:</p>
+      <h2 class="UeberschrPara AlignCenter">„Verfassungsbestimmung</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 1.</h3><p class="Abs AlignJustify"><span class="Fett">(Verfassungsbestimmung)</span> Die Erlassung, Aufhebung und Vollziehung von Vorschriften, wie sie in diesem Bundesgesetz enthalten sind, sind auch in den Belangen Bundessache, hinsichtlich derer das B-VG etwas anderes bestimmt. Die in diesen Vorschriften geregelten Angelegenheiten können in unmittelbarer Bundesverwaltung besorgt werden.“</p></div>
+      <p class="NovAo1 AlignJustify">2. Nach § 12 wird folgender § 12a samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Sonderregelung im Zusammenhang mit COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 12a.</h3><p class="Abs AlignJustify"> (1) Eine am 16. März 2020 laufende Frist nach § 7 Abs. 6, die in weniger als einem Jahr endet, wird um 6 Monate verlängert.“</p></div>
+      <p class="NovAo1 AlignJustify">3. <span class="Fett">(Verfassungsbestimmung)</span> In § 13 Abs. 4 wird folgender Satz angefügt:</p>
+      <p class="SatznachNovao AlignJustify">„§ 7 ist auf Förderungen, die bis zum 31. Dezember 2020 gewährt werden, weiterhin anwendbar.“</p>
+      <p class="NovAo1 AlignJustify">4. <span class="Fett">(Verfassungsbestimmung)</span> § 13 wird folgender Abs. 5 angefügt:</p>
+      <p class="Abs AlignJustify">„(5) Das Inhaltsverzeichnis, § 1 samt Überschrift und § 13 Abs. 4 zweiter Satz in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020, treten mit dem der Kundmachung folgenden Tag in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 31<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Künstler-Sozialversicherungsfondsgesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Künstler-Sozialversicherungsfondsgesetz – K-SVFG, BGBl. I Nr. 131/2000, zuletzt geändert durch BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. § 13 Abs. 1 Z 4 lautet:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">„4.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">die Daten über die Einkünfte, Einnahmen und das Einkommen,“</p></td></tr>
+        
+      </table>
+      <p class="NovAo1 AlignJustify">2. Nach § 13 Abs. 1 Z 8 wird folgende Z 9 eingefügt:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">„9.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">Die Bankkontodaten“</p></td></tr>
+        
+      </table>
+      <p class="NovAo2 AlignJustify">3. In § 13 Abs. 3 und Abs. 4 wird nach dem Wort <span class="Normal">„Zuschuss“</span> die Wortfolge <span class="Normal">„und auf Beihilfe“</span> eingefügt.</p>
+      <p class="NovAo1 AlignJustify">4. Nach § 30 Abs. 9 wird folgender Abs. 10 eingefügt:</p>
+      <p class="Abs AlignJustify">„(10) § 13 Abs. 1 Z 4 und 9, Abs. 3 und Abs. 4 in der Fassung BGBl. I Nr. 24/2020 treten mit Ablauf der Kundmachung in Kraft. § 13 Abs. 1 Z 4 und Z 9, Abs. 3 und Abs. 4 in der Fassung BGBl. I Nr. 24/2020 treten mit 31.12.2021 außer Kraft, mit der Maßgabe, dass die zuvor in Kraft stehenden Bestimmungen wieder an ihre Stelle treten.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 32<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Bundesgesetzes betreffend Begleitmaßnahmen zu COVID-19 in der Justiz</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 in der Justiz, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Dem Titel wird folgender Klammerausdruck angefügt:</p>
+      <p class="SatznachNovao AlignJustify">„(1. COVID-19-Justiz-Begleitgesetz – 1. COVID-19-JuBG)“.</p>
+      <p class="NovAo1 AlignJustify">2. § 1 Abs. 1 zweiter Satz wird durch folgende Sätze ersetzt:</p>
+      <p class="SatznachNovao AlignJustify">„Sie beginnen neu zu laufen. Bei der Berechnung einer Frist nach § 125 Abs. 1 ZPO gilt der 1. Mai 2020 als Tag, in den der Zeitpunkt oder das Ereignis fällt, wonach sich der Anfang der Frist richten soll. Bei der Berechnung einer Frist nach § 125 Abs. 2 ZPO gilt der 1. Mai 2020 als Tag, an dem die Frist begonnen hat.“</p>
+      <p class="NovAo2 AlignJustify">3. In § 3 entfallen in der Überschrift die Worte <span class="Normal">„und Zustellungen“</span> sowie im Text der vorletzte und letzte Satz.</p>
+      <p class="NovAo2 AlignJustify">4. In § 8 Abs. 2 wird vor dem Punkt die Wortfolge <span class="Normal">„sowie Anordnungen für Zustellungen durch die Gerichte zu treffen“</span> eingefügt.</p>
+      <p class="NovAo2 AlignJustify">5. In § 9 Z 2 wird die Wendung <span class="Normal">„nach § 83 Abs. 1 bis 4“</span> durch die Wendung <span class="Normal">„nach § 83 Abs. 3 erster Satz“</span> ersetzt.</p>
+      <p class="NovAo1 AlignJustify">6. § 9 Z 3 lautet:</p>
+      <p class="SatznachNovao AlignJustify">„die Fristen nach § 88 Abs. 1, § 92 Abs. 1, § 106 Abs. 3 und Abs. 5 letzter Satz, § 194 Abs. 2, § 195 Abs. 2, § 213 Abs. 2, § 276a, § 284 Abs. 1, § 285 Abs. 1 und Abs. 4, § 294 Abs. 1 und 2, § 357 Abs. 2, § 408 Abs. 1, § 409 Abs. 1, § 427 Abs. 3, § 430 Abs. 5, § 466 Abs. 1 und 2, § 467 Abs. 1 und Abs. 5, § 478 Abs. 1 und § 491 Abs. 6 StPO sowie sonstige von der Staatsanwaltschaft oder dem Gericht gesetzte Fristen bis zum Ablauf des 30. April 2020 unterbrochen werden und mit 1. Mai 2020 neu zu laufen beginnen, wobei diese Unterbrechung mit Ausnahme der in § 276a zweiter Satz StPO bezeichneten Frist nicht für Fristen in Verfahren gilt, in denen der Beschuldigte in Haft angehalten wird;“</p>
+      <p class="NovAo2 AlignJustify">7. In § 9 Z 4 wird vor dem Strichpunkt folgender Halbsatz eingefügt: <span class="Normal">„ , soweit im Einzelfall eine Durchführung der Haftverhandlung unter Verwendung technischer Einrichtungen zur Wort- und Bildübertragung nicht möglich ist“</span></p>
+      <p class="NovAo2 AlignJustify">8. In § 9 Z 6 wird nach der Wendung <span class="Normal">„§ 200 Abs. 2 letzter Satz“</span> und in § 9 Z 7 nach der Wendung <span class="Normal">„§ 201 Abs. 1“</span> jeweils die Wendung <span class="Normal">„und Abs. 3“</span> eingefügt.</p>
+      <p class="NovAo1 AlignJustify">9. Der Inhalt des § 12 erhält die Absatzbezeichnung <span class="Normal">„(1)“</span>, folgender Abs. 2 wird angefügt:</p>
+      <p class="Abs AlignJustify">„(2) Der Titel sowie § 1 Abs. 1, § 3 samt Überschrift, § 8 Abs. 2, § 9 Z 2, 3, 4, 6 und 7 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit Ablauf des Tages der Kundmachung in Kraft. In Verfahren, in denen der Beschuldigte in Haft angehalten wird, beginnen Fristen, die auf Grund einer gemäß § 9 Z 3 oder § 10 erlassenen Verordnung unterbrochen waren, mit 14. April 2020 neu zu laufen.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 33<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung der Insolvenzordnung</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Die Insolvenzordnung, RGBl. Nr. 337/1914, zuletzt geändert durch das 2. COVID-19-Gesetz, BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo2 AlignJustify">1. In § 78 Abs. 2 entfällt die Wendung <span class="Normal">„die Flugplätze, Bahnhöfe und Schiffsstationen,“</span>.</p>
+      <p class="NovAo2 AlignJustify">2. § 78 Abs. 4 und 5 entfallen.</p>
+      <p class="NovAo1 AlignJustify">3. § 80 Abs. 4 lautet:</p>
+      <p class="Abs AlignJustify">„(4) Dem Insolvenzverwalter ist auf dessen Antrag eine Bestellungsurkunde auszufertigen.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 34<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung der Notariatsordnung</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Die Notariatsordnung, RGBl. Nr. 75/1871, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 19/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. Nach § 90 wird folgender § 90a samt Überschrift eingefügt:</p>
+      <h2 class="UeberschrPara AlignCenter">„Besondere Maßnahmen aufgrund von COVID-19</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 90a.</h3><p class="Abs AlignJustify"> Bedarf ein Rechtsgeschäft, eine Erklärung oder eine rechtserhebliche Tatsache zur Wirksamkeit der Form eines Notariatsakts oder einer sonstigen öffentlichen oder öffentlich beglaubigten Urkunde, so können zur Verhinderung der Verbreitung von COVID-19 die für die Errichtung der Urkunde erforderlichen notariellen Amtshandlungen unter sinngemäßer Anwendung von § 69b Abs. 2 und 3 sowie § 79 Abs. 9 auch unter Nutzung einer elektronischen Kommunikationsmöglichkeit (§ 69b) vorgenommen werden.“</p></div>
+      <p class="NovAo1 AlignJustify">2. Nach § 125a wird folgender § 125b eingefügt:</p>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify"><span style="font-weight:normal;">„</span>§ 125b.</h3><p class="Abs AlignJustify"> (1) Beschlussfassungen der Notariatskollegien in dringlichen Angelegenheiten nach § 125 Abs. 4 Z 1 bis 4 und 7 sowie § 125a NO können über Anordnung des Präsidenten der Notariatskammer auch durch schriftliche Abstimmung erfolgen. Zu einem in schriftlicher Abstimmung herbeigeführten Beschluss ist die Beteiligung zumindest der Hälfte aller Stimmberechtigten und die einfache Mehrheit aller gültigen Stimmen erforderlich.</p></div>
+      <p class="Abs AlignJustify">(2) Kann auch durch ein Vorgehen nach Abs. 1 eine Beschlussfassung der Notariatskollegien in angemessener Zeit nicht bewerkstelligt werden, so kann der Präsident der Notariatskammer eine Beschlussfassung durch die Notariatskammer anordnen. Die Mitglieder des Notariatskollegiums sind davon und dem Ergebnis der Beschlussfassung umgehend zu informieren.“</p>
+      <p class="NovAo1 AlignJustify">3. § 135 wird folgender Abs. 5 angefügt:</p>
+      <p class="Abs AlignJustify">„(5) Beschlussfassungen der Notariatskammer können über Anordnung des Präsidenten der Notariatskammer auch durch schriftliche Abstimmung erfolgen. Zu einem in schriftlicher Abstimmung herbeigeführten Beschluss bedarf es der einfachen Mehrheit der Kammermitglieder.“</p>
+      <p class="NovAo1 AlignJustify">4. § 189 wird folgender Abs. 13 angefügt:</p>
+      <p class="Abs AlignJustify">„(13) §§ 90a, 125b und 135 Abs. 5 treten mit Ablauf des Tages der Kundmachung des Bundesgesetzes BGBl. I Nr. 24/2020 in Kraft. § 90a tritt mit Ablauf des 31. Dezember 2020 außer Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 35<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung des Gesellschaftsrechtlichen COVID-19-Gesetzes</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Das Bundesgesetz betreffend besondere Maßnahmen im Gesellschaftsrecht aufgrund von COVID-19 (Gesellschaftsrechtliches COVID-19-Gesetz – COVID-19-GesG), BGBl. I Nr. 16/2020, wird wie folgt geändert:</p>
+      <p class="NovAo1 AlignJustify">1. § 1 lautet:</p>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify"><span style="font-weight:normal;">„</span>§ 1.</h3><p class="Abs AlignJustify"> (1) Zur Verhinderung der Verbreitung von COVID-19 können Versammlungen von Gesellschaftern und Organmitgliedern einer Kapitalgesellschaft, einer Personengesellschaft, einer Genossenschaft, einer Privatstiftung, eines Vereins, eines Versicherungsvereins auf Gegenseitigkeit, eines kleinen Versicherungsvereins oder einer Sparkasse nach Maßgabe der Verordnung gemäß Abs. 2 auch ohne physische Anwesenheit der Teilnehmer durchgeführt und Beschlüsse auch auf andere Weise gefasst werden.</p></div>
+      <p class="Abs AlignJustify">(2) Die Bundesministerin für Justiz wird ermächtigt, durch Verordnung nähere Regelungen betreffend die Durchführung der in Abs. 1 genannten Versammlungen und Beschlussfassungen zu treffen, die im Rahmen der jeweils eingesetzten Kommunikationswege eine möglichst hohe Qualität der Rechtssicherheit bei der Willensbildung gewährleisten.“</p>
+      <p class="NovAo1 AlignJustify">2. In § 2 erhält der bisherige Text die Absatzbezeichnung <span class="Normal">„(1)“</span>; folgende Abs. 2 bis 5 werden angefügt:</p>
+      <p class="Abs AlignJustify">„(2) Abweichend von § 27a GenG muss die Generalversammlung einer Genossenschaft zur Beschlussfassung über die dort genannten Gegenstände innerhalb der ersten zwölf Monate des Geschäftsjahrs der betreffenden Genossenschaft stattfinden.</p>
+      <p class="Abs AlignJustify">(3) Abweichend von § 35 Abs. 1 Z 1 GmbHG muss in einer Gesellschaft mit beschränkter Haftung die Beschlussfassung über die dort genannten Gegenstände innerhalb der ersten zwölf Monate des Geschäftsjahrs der betreffenden Gesellschaft stattfinden.</p>
+      <p class="Abs AlignJustify">(4) Soweit in Gesellschaftsverträgen (Satzungen, Statuten, Stiftungsurkunden) der in § 1 Abs. 1 genannten Rechtsformen Fristen oder Termine für bestimmte Versammlungen festgelegt sind, können diese auch zu einem späteren Zeitpunkt im Jahr 2020 stattfinden.</p>
+      <p class="Abs AlignJustify">(5) Wenn aufgrund von COVID-19 die Durchführung von Aufsichtsratssitzungen bis zum 30. April 2020 nicht möglich ist, stellt dies keine Verletzung von § 94 Abs. 3 AktG, § 30i Abs. 3 GmbHG oder § 24d Abs. 3 GenG dar.“</p>
+      <p class="NovAo1 AlignJustify">3. Nach § 3 wird folgender § 3a eingefügt<span class="Fett">:</span></p>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify"><span style="font-weight:normal;">„</span>§ 3a.</h3><p class="Abs AlignJustify"> (1) Wenn es den gesetzlichen Vertretern einer Kapitalgesellschaft, dem Vorstand einer Genossenschaft oder dem Leitungsorgan eines Vereins infolge der COVID-19-Pandemie nicht möglich ist, die in § 222 Abs. 1 UGB, § 22 Abs. 2 GenG, § 21 Abs. 1 VerG oder § 22 Abs. 1 oder Abs. 2 VerG genannten Unterlagen in den ersten fünf Monaten des Geschäftsjahrs aufzustellen und den Mitgliedern des Aufsichtsrats vorzulegen, so kann diese Frist um höchstens vier Monate überschritten werden. Dasselbe gilt für andere Unterlagen der Rechnungslegung, die innerhalb der für die Vorlage des Jahresabschlusses geltenden Fristen vorzulegen sind.</p></div>
+      <p class="Abs AlignJustify">(2) Abweichend von § 277 Abs. 1 UGB sind die dort genannten sowie sämtliche gleichzeitig offenzulegenden Unterlagen spätestens zwölf Monate nach dem Bilanzstichtag einzureichen. Abweichend von § 277 Abs. 2 UGB hat die Veröffentlichung spätestens zwölf Monate nach dem Bilanzstichtag zu erfolgen.“</p>
+      <p class="NovAo1 AlignJustify">4. In § 4 erhält der bisherige Text die Absatzbezeichnung <span class="Normal">„(1)“</span>; folgende Abs. 2 und 3 werden angefügt:</p>
+      <p class="Abs AlignJustify">„(2) § 1 und § 2 in der Fassung des Bundesgesetzes BGBl. I Nr. 24/2020 treten mit 22. März 2020 in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.</p>
+      <p class="Abs AlignJustify">(3) § 3a tritt mit Ablauf des Tages der Kundmachung des Bundesgesetzes BGBl. I Nr. 24/2020 in Kraft und ist auf Unterlagen der Rechnungslegung anzuwenden, bei denen die Frist für die Aufstellung nach § 222 Abs. 1 UGB am 16. März 2020 noch nicht abgelaufen ist. Die Bestimmung tritt mit Ablauf des 31. Dezember 2020 außer Kraft und ist auf Unterlagen der Rechnungslegung für Bilanzstichtage letztmalig anzuwenden, die vor dem 1. August 2020 liegen.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 36<br /><span class="UeberschrG2 AlignCenter" style="display:block">Änderung der Strafprozeßordnung 1975</span></h2>
+      
+      <p class="PromKlEinlSatz AlignJustify">Die Strafprozeßordnung 1975, BGBl. Nr. 631/1975, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 20/2020 wird wie folgt geändert:</p>
+      <p class="NovAo2 AlignJustify">1. In § 294 Abs. 5 und in § 296 Abs. 3 wird nach dem Wort <span class="Normal">„verzichtet“</span> jeweils die Wendung <span class="Normal">„oder es liegt ein Fall des § 286 Abs. 1a vor“</span> eingefügt.</p>
+      <p class="NovAo1 AlignJustify">2. § 514 wird folgender Abs. 45 angefügt:</p>
+      <p class="Abs AlignJustify">„(45) § 294 Abs. 5 und § 296 Abs. 3 in der Fassung BGBl. I Nr. 24/2020 treten mit dem der Kundmachung folgenden Tag in Kraft.“</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 37<br /><span class="UeberschrG2 AlignCenter" style="display:block">2. Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 in der Justiz (2. COVID-19-Justiz-Begleitgesetz - 2. COVID-19-JuBG)</span></h2>
+      
+      <h2 class="UeberschrG1 AlignCenter">I. Hauptstück<br /><span class="UeberschrG2 AlignCenter" style="display:block">Bürgerliche Rechtssachen</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Beschränkung der Rechtsfolgen von Mietzinsrückständen bei Wohnungsmietverträgen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 1.</h3><p class="Abs AlignJustify"> Wenn der Mieter einer Wohnung eine Mietzinszahlung, die im Zeitraum vom 1. April 2020 bis zum 30. Juni 2020 fällig wird, nicht oder nicht vollständig entrichtet, weil er als Folge der COVID-19-Pandemie in seiner wirtschaftlichen Leistungsfähigkeit erheblich beeinträchtigt ist, kann der Vermieter allein wegen dieses Zahlungsrückstands den Mietvertrag weder kündigen noch dessen Aufhebung nach § 1118 ABGB fordern. Der Vermieter kann den Zahlungsrückstand bis zum Ablauf des 31. Dezember 2020 nicht gerichtlich einfordern oder aus einer vom Mieter übergebenen Kaution abdecken.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Verschiebung der Fälligkeit von Zahlungen bei Kreditverträgen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 2.</h3><p class="Abs AlignJustify"> (1) Für Verbraucherkreditverträge, die vor dem 15. März 2020 abgeschlossen wurden, gilt, dass Ansprüche des Kreditgebers auf Rückzahlung, Zins- oder Tilgungsleistungen, die zwischen 1. April 2020 und 30. Juni 2020 fällig werden, mit Eintritt der Fälligkeit für die Dauer von drei Monaten gestundet werden, wenn der Verbraucher aufgrund der durch die Ausbreitung der COVID-19-Pandemie hervorgerufenen außergewöhnlichen Verhältnisse Einkommensausfälle hat, die dazu führen, dass ihm die Erbringung der geschuldeten Leistung nicht zumutbar ist. Nicht zumutbar ist dem Kreditnehmer die Erbringung der Leistung insbesondere dann, wenn sein angemessener Lebensunterhalt oder der angemessene Lebensunterhalt seiner Unterhaltsberechtigten gefährdet ist. Für die Dauer der Stundung befindet sich der Kreditnehmer mit der Zahlung dieser Leistungen nicht in Verzug; während dieser Zeit fallen daher keine Verzugszinsen an. Eine Frist, nach deren Ablauf für die gestundete Forderung bestellte Sicherheiten nicht mehr in Anspruch genommen werden können, wird durch die Stundung so verlängert, dass dem Kreditgeber für die Inanspruchnahme der Sicherheit nach der letzten Fälligkeit einer besicherten Forderung dieselbe Zeit zur Verfügung steht wie nach den Vereinbarungen, die vor der Stundung gegolten haben.</p></div>
+      <p class="Abs AlignJustify">(2) Der Kreditnehmer hat das Recht, in dem in Abs. 1 genannten Zeitraum seine vertraglichen Zahlungen zu den ursprünglich vereinbarten Leistungsterminen weiter zu erbringen. Soweit der Kreditnehmer die Zahlungen vertragsgemäß weiter leistet, gilt die Stundung gemäß Abs. 1 als nicht erfolgt.</p>
+      <p class="Abs AlignJustify">(3) Die Vertragsparteien können von den Regelungen des Abs. 1 abweichende Vereinbarungen treffen, insbesondere über mögliche Teilleistungen, Zins- und Tilgungsanpassungen oder Umschuldungen.</p>
+      <p class="Abs AlignJustify">(4) Kündigungen des Kreditgebers wegen Zahlungsverzugs oder wesentlicher Verschlechterung der Vermögensverhältnisse des Verbrauchers sind im Fall des Abs. 1 bis zum Ablauf der Stundung ausgeschlossen. Davon darf nicht zu Lasten des Verbrauchers abgewichen werden.</p>
+      <p class="Abs AlignJustify">(5) Der Kreditgeber soll dem Verbraucher ein Gespräch über die Möglichkeit einer einvernehmlichen Regelung und über mögliche Unterstützungsmaßnahmen anbieten. Für dieses können auch Fernkommunikationsmittel genutzt werden.</p>
+      <p class="Abs AlignJustify">(6) Kommt eine einvernehmliche Regelung für den Zeitraum nach dem 30. Juni 2020 nicht zustande, so verlängert sich die Vertragslaufzeit um drei Monate. Die jeweilige Fälligkeit der vertraglichen Leistungen wird um diese Frist hinausgeschoben. Der Kreditgeber hat dem Verbraucher eine Ausfertigung des Vertrags zur Verfügung zu stellen, in der die vereinbarten Vertragsänderungen oder die sich aus dem ersten Satz sowie aus Abs. 1 erster Satz ergebenden Vertragsänderungen berücksichtigt sind.</p>
+      <p class="Abs AlignJustify">(7) Die vorstehenden Absätze gelten auch für Kleinstunternehmen im Sinn von Art. 2 Abs. 3 des Anhangs der Empfehlung 2003/361/EG der Kommission vom 6. Mai 2003 betreffend die Definition der Kleinstunternehmen sowie der kleinen und mittleren Unternehmen, ABl. L 124 vom 20.5.2003, S. 36, als Kreditnehmer, sofern der Kreditvertrag vor dem 15. März 2020 geschlossen wurde und das Unternehmen infolge von Umständen, die auf die COVID-19-Pandemie zurückzuführen sind, die Leistungen nicht erbringen kann oder dem Unternehmen die Erbringung der Leistungen ohne Gefährdung der wirtschaftlichen Grundlagen seines Erwerbsbetriebs nicht möglich wäre.</p>
+      <h2 class="UeberschrPara AlignCenter">Beschränkung von Verzugszinsen und Ausschluss von Inkassokosten</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 3.</h3><p class="Abs AlignJustify"> Wenn bei einem vor dem 1. April 2020 eingegangenen Vertragsverhältnis der Schuldner eine Zahlung, die im Zeitraum vom 1. April 2020 bis zum 30. Juni 2020 fällig wird, nicht oder nicht vollständig entrichtet, weil er als Folge der COVID-19-Pandemie in seiner wirtschaftlichen Leistungsfähigkeit erheblich beeinträchtigt ist, muss er für den Zahlungsrückstand ungeachtet abweichender vertraglicher Vereinbarungen höchstens die gesetzlichen Zinsen (§ 1000 Abs. 1 ABGB) zahlen und ist nicht verpflichtet, die Kosten von außergerichtlichen Betreibungs- oder Einbringungsmaßnahmen zu ersetzen.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Ausschluss von Konventionalstrafen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 4.</h3><p class="Abs AlignJustify"> Soweit bei einem vor dem 1. April 2020 eingegangenen Vertragsverhältnis der Schuldner in Verzug gerät, weil er als Folge der COVID-19-Pandemie entweder in seiner wirtschaftlichen Leistungsfähigkeit erheblich beeinträchtigt ist oder die Leistung wegen der Beschränkungen des Erwerbslebens nicht erbringen kann, ist er nicht verpflichtet, eine vereinbarte Konventionalstrafe im Sinn des § 1336 ABGB zu zahlen. Das gilt auch, wenn vereinbart wurde, dass die Konventionalstrafe unabhängig von einem Verschulden des Schuldners am Verzug zu entrichten ist.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Verlängerung von befristeten Wohnungsmietverträgen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 5.</h3><p class="Abs AlignJustify"> Ein dem Mietrechtsgesetz unterliegender, befristeter Wohnungsmietvertrag, der nach dem 30. März 2020 und vor dem 1. Juli 2020 abläuft, kann abweichend von § 29 MRG schriftlich bis zum Ablauf des 31. Dezember 2020 oder für einen kürzeren Zeitraum verlängert werden. Wird der Mietvertrag nach Ablauf dieses Verlängerungszeitraums weder vertraglich verlängert noch aufgelöst, so gilt § 29 Abs. 3 lit. b MRG.</p></div>
+      <h2 class="UeberschrG1 AlignCenter">II. Hauptstück<br /><span class="UeberschrG2 AlignCenter" style="display:block">Räumungsexekution</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Aufschiebung der Räumungsexekution</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 6.</h3><p class="Abs AlignJustify"> (1) Eine Räumungsexekution nach § 349 EO ist auf Antrag des Verpflichteten ohne Auferlegung einer Sicherheitsleistung aufzuschieben, wenn die Wohnung zur Befriedigung des dringenden Wohnbedürfnisses des Verpflichteten und der mit ihm im gemeinsamen Haushalt lebenden Personen unentbehrlich ist, es sei denn, die Räumung ist zur Abwendung schwerer persönlicher oder wirtschaftlicher Nachteile des betreibenden Gläubigers unerlässlich. Vor der Entscheidung über die Aufschiebung ist dem betreibenden Gläubiger Gelegenheit zur schriftlichen Äußerung zu geben; die Äußerungsfrist wird nicht nach § 1 1. COVID-19-JuBG, BGBl. I Nr. 16/2020, unterbrochen.</p></div>
+      <p class="Abs AlignJustify">(2) Das Verfahren ist auf Antrag des Gläubigers fortzusetzen, sobald die zur Verhinderung der Verbreitung von COVID-19 getroffenen Maßnahmen, aufgrund derer die Bewegungsfreiheit oder der zwischenmenschliche Kontakt eingeschränkt ist, aufgehoben wurden, oder spätestens sechs Monate nach Bewilligung der Aufschiebung. Das Verfahren ist innerhalb von drei Monaten nach Bewilligung der Aufschiebung nur fortzusetzen, wenn die Voraussetzungen des Abs. 1 nicht mehr gegeben sind.</p>
+      <p class="Abs AlignJustify">(3) Es gibt keinen Kostenersatz zwischen den Parteien.</p>
+      <h2 class="UeberschrG1 AlignCenter">III. Hauptstück<br /><span class="UeberschrG2 AlignCenter" style="display:block">Insolvenzverfahren</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Fristen im Insolvenzverfahren</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 7.</h3><p class="Abs AlignJustify"> (1) In Insolvenzverfahren ist § 1 1. COVID-19-JuBG, BGBl. I Nr. 16/2020 nicht anzuwenden. Durch diese Bestimmung bereits unterbrochene Fristen beginnen neu zu laufen; bei Berechnung einer Frist nach § 125 Abs. 1 ZPO wird der Tag nicht mitgerechnet, an dem das Bundesgesetzblatt, das die Verlautbarung dieses Bundesgesetzes enthält, herausgegeben und versendet wird.</p></div>
+      <p class="Abs AlignJustify">(2) Das Gericht kann verfahrensrechtliche Fristen in Insolvenzverfahren, deren fristauslösendes Ereignis in die Zeit nach Inkrafttreten dieses Bundesgesetzes fällt, von Amts wegen oder auf Antrag eines Beteiligten oder des Insolvenzverwalters mit Beschluss angemessen, höchstens um 90 Tage, verlängern.</p>
+      <p class="Abs AlignJustify">(3) Die Fristen des § 11 Abs. 2 und der §§ 25a und 26a IO können nach Abs. 2 nur dann verlängert werden, wenn die Verlängerung geeignet ist, aufgrund einer in Aussicht stehenden Verbesserung der wirtschaftlichen Situation den Abschluss eines Sanierungsplans zu erreichen, dessen Erfüllung voraussichtlich möglich ist und der dem gemeinsamen Interesse der Insolvenzgläubiger entspricht. Die Verlängerung der Frist des § 11 Abs. 2 IO setzt überdies voraus, dass die Voraussetzungen des § 11 Abs. 2 IO erfüllt sind.</p>
+      <p class="Abs AlignJustify">(4) Die Frist des § 170 Abs. 1 Z 3 IO beträgt 120 Tage.</p>
+      <p class="Abs AlignJustify">(5) Vor der Entscheidung nach Abs. 3 ist der Absonderungsgläubiger, Aussonderungsberechtigte oder Vertragspartner einzuvernehmen.</p>
+      <p class="Abs AlignJustify">(6) Ein Beschluss über die Verlängerung einer Frist ist in der Insolvenzdatei bekanntzumachen; er kann nicht angefochten werden.</p>
+      <h2 class="UeberschrPara AlignCenter">Zustellungen in Insolvenzverfahren</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 8.</h3><p class="Abs AlignJustify"> Solange die Fristen gemäß § 1 Abs. 1 1. COVID-19-JuBG, BGBl. I Nr. 16/2020, unterbrochen sind, kann eine besondere Zustellung an Gläubiger unterbleiben; der wesentliche Inhalt des zuzustellenden Schriftstücks ist in der Insolvenzdatei bekanntzumachen; doch ist auch in diesem Fall, wenn es sich um Entscheidungen handelt, den Gläubigern, die es verlangen, eine Ausfertigung zuzustellen. § 75 Abs. 1 Z 1 IO ist nicht anzuwenden.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Aussetzung der Insolvenzantragspflicht bei Überschuldung</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 9.</h3><p class="Abs AlignJustify"> (1) Eine Verpflichtung des Schuldners, bei Überschuldung einen Antrag auf Eröffnung des Insolvenzverfahrens zu stellen, besteht nicht bei einer im Zeitraum von 1. März 2020 bis 30. Juni 2020 eingetretenen Überschuldung.</p></div>
+      <p class="Abs AlignJustify">(2) Während des in Abs. 1 genannten Zeitraums ist ein Insolvenzverfahren auf Antrag eines Gläubigers nicht zu eröffnen, wenn der Schuldner überschuldet, aber nicht zahlungsunfähig ist.</p>
+      <p class="Abs AlignJustify">(3) Ist der Schuldner bei Ablauf des 30. Juni 2020 überschuldet, so hat er die Eröffnung des Insolvenzverfahrens ohne schuldhaftes Zögern, spätestens aber innerhalb von 60 Tagen nach Ablauf des 30. Juni 2020 oder 120 Tage nach Eintritt der Überschuldung, je nachdem welcher Zeitraum später endet, zu beantragen. Unberührt bleibt die Verpflichtung des Schuldners, bei Eintritt der Zahlungsunfähigkeit die Eröffnung des Insolvenzverfahrens zu beantragen.</p>
+      <p class="Abs AlignJustify">(4) Während des in Abs. 1 genannten Zeitraums entfällt die an die Überschuldung anknüpfende Haftung gemäß § 84 Abs. 3 Z 6 AktG.</p>
+      <h2 class="UeberschrPara AlignCenter">Überbrückungskredite</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 10.</h3><p class="Abs AlignJustify"> Die Gewährung eines Überbrückungskredits in der Höhe einer vom Kreditnehmer beantragten COVID-19-Kurzarbeitsbeihilfe gemäß § 37b AMSG während des Zeitraums, in dem die Verpflichtung des Schuldners, bei Überschuldung einen Antrag auf Eröffnung des Insolvenzverfahrens zu stellen, nach § 9 dieses Bundesgesetzes ausgesetzt ist, und dessen sofort nach Erhalt der Kurzarbeitsbeihilfe erfolgte Rückzahlung an den Kreditgeber unterliegen nicht der Anfechtung nach § 31 IO, wenn für den Kredit weder ein Pfand noch eine vergleichbare Sicherheit aus dem Vermögen des Kreditnehmers bestellt wurde und dem Kreditgeber bei Kreditgewährung die Zahlungsunfähigkeit des Kreditnehmers nicht bekannt war.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Stundung der Zahlungsplanraten</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 11.</h3><p class="Abs AlignJustify"> (1) Ändert sich die Einkommens- und Vermögenslage des Schuldners aufgrund von Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, sodass er fällige Verbindlichkeiten des Zahlungsplans nicht erfüllen kann, so kann er vor Erhalt einer Mahnung oder binnen 14 Tagen nach Mahnung die Stundung der Verbindlichkeiten um eine Frist, die neun Monate nicht übersteigen darf, begehren.</p></div>
+      <p class="Abs AlignJustify">(2) Das Gericht hat den wesentlichen Inhalt des Antrags in der Insolvenzdatei zu veröffentlichen und die Gläubiger zur Äußerung binnen 14 Tagen aufzufordern. Im Fall der Nichtäußerung ist Zustimmung anzunehmen. Die Aufforderung hat einen Hinweis auf diese Rechtsfolge zu enthalten.</p>
+      <p class="Abs AlignJustify">(3) Die Stundung ist zu bewilligen, wenn die Mehrheit der stimmberechtigten Insolvenzgläubiger nach § 147 IO dem Antrag zustimmt oder wenn die Stundung nicht mit schweren persönlichen oder wirtschaftlichen Nachteilen eines der Stundung widersprechenden Gläubigers verbunden ist.</p>
+      <p class="Abs AlignJustify">(4) Wenn der Antrag spätestens binnen 14 Tagen nach Mahnung durch den Gläubiger gestellt wird, lebt die Forderung erst mit Eintritt der Rechtskraft des die Stundung abweisenden Beschlusses wieder auf.</p>
+      <p class="Abs AlignJustify">(5) Die Entscheidung über den Antrag ist in der Insolvenzdatei bekanntzumachen.</p>
+      <h2 class="UeberschrG1 AlignCenter">IV. Hauptstück<br /><span class="UeberschrG2 AlignCenter" style="display:block">Grundbücherliche Rangordnung</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Verlängerung der Frist für die Ausnützung einer im Grundbuch angemerkten Rangordnung</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 12.</h3><p class="Abs AlignJustify"> §§ 2 und 8 1. COVID-19-JuBG, BGBl. I Nr. 16/2020, gelten auch für die Frist für ein Gesuch um Eintragung eines Rechtes oder einer Löschung, für die eine Rangordnung angemerkt worden ist (§§ 55 und 56 Abs. 1 GBG).</p></div>
+      <h2 class="UeberschrG1 AlignCenter">V. Hauptstück<br /><span class="UeberschrG2 AlignCenter" style="display:block">Eigenkapitalersatzrecht</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Kredite nach dem Eigenkapitalersatz-Gesetz</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 13.</h3><p class="Abs AlignJustify"> Ein Kredit im Sinne des § 1 EKEG liegt nicht vor, wenn ein Geldkredit nach Inkrafttreten dieses Bundesgesetzes bis zum Ablauf des 30. Juni 2020 für nicht mehr als 120 Tage gewährt und zugezählt wird und für den die Gesellschaft weder ein Pfand noch eine vergleichbare Sicherheit aus ihrem Vermögen bestellt hat.</p></div>
+      <h2 class="UeberschrG1 AlignCenter">VI. Hauptstück<br /><span class="UeberschrG2 AlignCenter" style="display:block">Gebührenrecht</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Aussetzung von Gebührenerhöhungen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 14.</h3><p class="Abs AlignJustify"> Eine Erhöhung der in § 31a Gerichtsgebührengesetz (GGG), BGBl. Nr. 501/1984, genannten Gebühren und Beträge ist bis zum Ablauf des 31. Dezember 2020 auszusetzen. Erst wenn die von der Bundesanstalt Statistik Österreich veröffentlichte endgültige Indexzahl für den Monat Dezember 2020 oder für einen späteren Monat um mehr als 5 vH über der für März 2017 veröffentlichten Indexzahl liegt, hat eine Neufestsetzung um das Ausmaß der Steigerung stattzufinden, wobei die neuen Beträge ab dem der Veröffentlichung der endgültigen Indexzahl drittfolgenden Monatsersten gelten.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Gebührenfreiheit für bestimmte Unterhaltsvorschussentscheidungen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 15.</h3><p class="Abs AlignJustify"> Abweichend von § 24 Unterhaltsvorschussgesetz 1985 (UVG), BGBl. Nr. 451/1985, ist für Entscheidungen über die Gewährung von Vorschüssen nach § 7 1. COVID-19-JuBG, BGBl. I Nr. 16/2020, keine Pauschalgebühr zu entrichten. Soweit vor dem Inkrafttreten dieses Bundesgesetzes in einem Beschluss über die Bewilligung solcher Vorschüsse nach § 13 Abs. 1 Z 6 UVG bereits die Zahlungspflicht für eine Pauschalgebühr ausgesprochen wurde, tritt diese von Gesetzes wegen außer Kraft; bereits bezahlte Beträge sind insoweit zurückzuzahlen.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Gebührenfreiheit für bestimmte Pfandrechtseintragungen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 16.</h3><p class="Abs AlignJustify"> (1) Pfandrechtseintragungen zur Besicherung von Darlehen, die ausschließlich zur Erhaltung der Zahlungsfähigkeit und Überbrückung von Liquiditätsschwierigkeiten von Unternehmen im Zusammenhang mit der COVID-19-Pandemie und den dadurch verursachten wirtschaftlichen Auswirkungen aufgenommen werden, sind von den Gerichtsgebühren befreit, sofern der Antrag, mit dem die Eintragung begehrt wird, noch vor dem 1. Juli 2020 bei Gericht eingelangt ist. Der Zusammenhang mit der COVID-19-Pandemie ist durch die Vorlage einer Besicherung der Austria Wirtschaftsservice GmbH (AWS) oder der Österreichischen Hotel- und Tourismusbank GmbH (ÖHT) oder auf sonst geeignete Weise zu bescheinigen.</p></div>
+      <p class="Abs AlignJustify">(2) Abs. 1 gilt auch für Pfandrechtseintragungen, die vor dem Inkrafttreten dieser Bestimmung beantragt wurden.</p>
+      <h2 class="UeberschrG1 AlignCenter">VII. Hauptstück<br /><span class="UeberschrG2 AlignCenter" style="display:block">Inkrafttreten und Außerkrafttreten</span></h2>
+      
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 17.</h3><p class="Abs AlignJustify"> (1) Dieses Bundesgesetz tritt, sofern in den folgenden Absätzen nicht anderes angeordnet ist, mit Ablauf des Tages der Kundmachung in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.</p></div>
+      <p class="Abs AlignJustify">(2) Die §§ 1 bis 5 treten mit 1. April 2020 in Kraft. Die §§ 1, 3 und 4 treten mit Ablauf des 30. Juni 2022 außer Kraft. § 5 tritt mit Ablauf des 31. Dezember 2020 außer Kraft. Für § 2 gilt die Regelung des Abs. 1 über das Außerkrafttreten nicht.</p>
+      <p class="Abs AlignJustify">(3) Ungeachtet des Abs. 1 über das Außerkrafttreten ist § 11 anzuwenden, wenn der Antrag auf Stundung vor dem Außerkrafttreten bei Gericht eingelangt ist.</p>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 38<br /><span class="UeberschrG2 AlignCenter" style="display:block">Bundesverfassungsgesetz betreffend Begleitmaßnahmen zu COVID-19 in Angelegenheiten des öffentlichen Auftragswesens (COVID-19 Begleitgesetz Vergabe)</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Subsidiäre Anwendbarkeit der Begleitmaßnahmen zu COVID-19 in den Verfahren der Verwaltungsgerichtsbarkeit und der Verfassungsgerichtsbarkeit</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 1.</h3><p class="Abs AlignJustify"> Soweit im Folgenden nicht anderes bestimmt ist, gelten in den Angelegenheiten des öffentlichen Auftragswesens die Bestimmungen des Verwaltungsrechtlichen COVID-19-Begleitgesetzes – COVID&#45;19&#45;VwBG, BGBl. I Nr. 16/2020.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Unterbrechung der Fristen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 2.</h3><p class="Abs AlignJustify"> In allen bei einem Verwaltungsgericht anhängigen Nachprüfungsverfahren und Verfahren zur Erlassung einer einstweiligen Verfügung in den Angelegenheiten der Nachprüfung im Rahmen der Vergabe von Aufträgen endet die Unterbrechung aller Fristen gemäß § 1 in Verbindung mit § 6 Abs. 1 COVID&#45;19&#45;VwBG am 6. April 2020. Die Fristen beginnen mit 7. April 2020 neu zu laufen. Bei der Berechnung von Fristen, die nach Tagen bestimmt sind, gilt der 7. April 2020 als Tag, in den der Zeitpunkt oder das Ereignis fällt, wonach sich der Anfang der Frist richten soll. Bei der Berechnung von nach Wochen, Monaten oder Jahren bestimmten Fristen gilt der 7. April 2020 als Tag, an dem die Frist begonnen hat.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Verlängerung von Fristen für die Stellung eines verfahrenseinleitenden Antrages</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 3.</h3><p class="Abs AlignJustify"> Die gemäß § 2 Abs. 1 Z 1 und 2 in Verbindung mit § 6 Abs. 1 COVID&#45;19&#45;VwBG vorgesehene Verlängerung der Fristen endet für bei einem Verwaltungsgericht einzubringende verfahrenseinleitende Anträge und für Entscheidungsfristen mit Ausnahme von verfassungsgesetzlich festgelegten Höchstfristen in den Angelegenheiten der Nachprüfung im Rahmen der Vergabe von Aufträgen mit Inkrafttreten dieses Bundesverfassungsgesetzes.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Verfahrensrechtliche Sonderbestimmungen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 4.</h3><p class="Abs AlignJustify"> In den Angelegenheiten der Nachprüfung im Rahmen der Vergabe von Aufträgen kann in Verfahren vor den Verwaltungsgerichten die Entscheidung in Senaten unter Verwendung geeigneter technischer Kommunikationsmittel oder im Wege eines Umlaufbeschlusses erfolgen. In diesen Verfahren kann die Gewährung von Akteneinsicht unter Verwendung geeigneter technischer Kommunikationsmittel erfolgen.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Aussetzen der Wirkung von Antragstellungen in Verfahren vor den Verwaltungsgerichten</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 5.</h3><p class="Abs AlignJustify"> Ist aufgrund der Angaben im Antrag auf Erlassung einer einstweiligen Verfügung in Angelegenheiten der Nachprüfung im Rahmen der Vergabe von Aufträgen gemäß dem Bundesvergabegesetz 2018 – BVergG 2018, BGBl. I Nr. 65/2018, oder dem Bundesvergabegesetz Verteidigung und Sicherheit 2012 – BVergGVS 2012, BGBl. I Nr. 10/2012, erkennbar oder wendet der Auftraggeber glaubhaft ein, dass ein Vergabeverfahren gemäß §§ 35 Abs. 1 Z 4, 36 Abs. 1 Z 4, 37 Abs. 1 Z 4 oder 206 Abs. 1 Z 5 BVergG 2018 oder gemäß § 25 Z 4 BVergGVS 2012 der dringenden Verhütung und Bekämpfung der Verbreitung von COVID-19 oder der Aufrechterhaltung der öffentlichen Ordnung im Zusammenhang mit der Verhütung und Bekämpfung der Verbreitung von COVID-19 dient, so kommt dem Antrag auf Erlassung einer einstweiligen Verfügung zur Untersagung der Angebotsöffnung, des Abschlusses einer Rahmenvereinbarung oder der Erteilung des Zuschlages keine aufschiebende Wirkung zu. Der Auftraggeber darf diesfalls vor der Entscheidung über den Antrag den Zuschlag erteilen, die Rahmenvereinbarung abschließen bzw. die Angebote öffnen.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Verordnungsermächtigung</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 6.</h3><p class="Abs AlignJustify"><span class="Fett"> </span>Die Bundesministerin für Justiz wird ermächtigt, durch Verordnung die in § 2 angeordnete Unterbrechung von Fristen zu verlängern, zu verkürzen oder weitere allgemeine Ausnahmen von der Unterbrechung im Zusammenhang mit Verfahren in den Angelegenheiten der Nachprüfung im Rahmen der Vergabe von Aufträgen vorzusehen, soweit dies zur Verhütung und Bekämpfung der Verbreitung von COVID-19 erforderlich ist. Sie kann insbesondere die Unterbrechung, die Hemmung, die Verlängerung oder die Verkürzung von Fristen anordnen, Säumnisfolgen bei Nichteinhaltung von Terminen ausschließen sowie bestimmen, ob und auf welche Weise verfahrensrechtliche Rechtsnachteile, die durch die Versäumung von Fristen oder Terminen eintreten können, hintangehalten und bereits eingetretene wieder beseitigt werden. Dabei sind die Interessen an der Fortsetzung dieser Verfahren, insbesondere der Schutz vor Gefahren für Leib und Leben, Sicherheit und Freiheit der Verfahrensparteien oder die Abwehr eines erheblichen und unwiederbringlichen Schadens von diesen, einerseits und das Interesse der Allgemeinheit an der Verhütung und Bekämpfung der Verbreitung von COVID-19 sowie am Schutz der Aufrechterhaltung eines geordneten Verwaltungsbetriebes andererseits gegeneinander abzuwägen.</p></div>
+      <h2 class="UeberschrPara AlignCenter">In&#45; und Außerkrafttreten</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 7.</h3><p class="Abs AlignJustify"><span class="Fett"> </span>Dieses Bundesverfassungsgesetz tritt mit Ablauf des Tages der Kundmachung in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Vollziehung</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 8.</h3><p class="Abs AlignJustify"><span class="Fett"> </span>Mit der Vollziehung dieses Bundesverfassungsgesetzes ist die Bundesministerin für Justiz betraut.</p></div>
+      <h2 class="UeberschrG1 AlignCenter">Artikel 39<br /><span class="UeberschrG2 AlignCenter" style="display:block">Bundesgesetz betreffend Begleitmaßnahmen zu COVID-19 im Bereich des gewerblichen Rechtsschutzes</span></h2>
+      
+      <h2 class="UeberschrPara AlignCenter">Verlängerung von Fristen</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 1.</h3><p class="Abs AlignJustify"> (1) Die Zeit vom 16. März 2020 bis zum Ablauf des 30. April 2020 wird in die Zeit, in der</p></div>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">1.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">aufgrund des Patentgesetzes 1970, BGBl. Nr. 259, zuletzt geändert, durch das Bundesgesetz BGBl. I Nr. 37/2018,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">2.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">aufgrund des Schutzzertifikatsgesetzes 1996, BGBl. I Nr. 11/1997, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 126/2013,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">3.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">aufgrund des Gebrauchsmustergesetzes, BGBl. Nr. 211/1994, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 37/2018,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">4.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">aufgrund des Halbleiterschutzgesetzes, BGBl. Nr. 372/1988, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 37/2018,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">5.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">aufgrund des Patentverträge-Einführungsgesetzes BGBl. Nr. 52/1979, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 126/2013,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">6.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">aufgrund des Markenschutzgesetzes 1970 BGBl. Nr. 260, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 91/2018,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">7.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">aufgrund des Musterschutzgesetzes 1990, BGBl. Nr. 497, zuletzt geändert durch das Bundesgesetz BGBl. I Nr. 37/2018,</p></td></tr>
+        
+        <tr role="none"><td class="AlignJustify VAlignTop" colspan="11" role="none"><p class="SchlussteilE0" role="none">ein Antrag zu erheben, eine Erklärung abzugeben oder eine Handlung zu setzen ist, vorbehaltlich Abs. 2, nicht eingerechnet.</p></td></tr>
+      </table>
+      <p class="Abs AlignJustify">(2) Die Verlängerung von Fristen umfasst nicht:</p>
+      <table class="wi100 noTableBorder leaders" role="list"><tr class="invisible" aria-hidden="true"><td class="W22" /><td class="W15" /><td class="W15" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td class="W22" /><td /><td class="W90" /><td class="W90" /></tr>
+        
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">1.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">Fristen, die aufgrund von EU-Recht normiert sind,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">2.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">Fristen betreffend Rechtsmittel an das Oberlandesgericht Wien und an den Obersten Gerichtshof,</p></td></tr>
+          <tr role="listitem"><td class="AlignRight VAlignTop" colspan="2" role="none"><p class="AufzaehlungE1" role="none">3.</p></td><td class="AlignJustify VAlignTop" colspan="9" role="none"><p class="AufzaehlungE1" role="none">behördliche Fristen.</p></td></tr>
+        
+      </table>
+      <h2 class="UeberschrPara AlignCenter">Verordnungsermächtigung</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 2.</h3><p class="Abs AlignJustify"> Die Bundesministerin für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie wird ermächtigt, durch Verordnung die in § 1 angeordnete Verlängerung von Fristen zu verlängern, soweit dies zur Verhütung und Bekämpfung der Verbreitung von COVID-19 erforderlich ist. Sie ist auch ermächtigt, soweit dies für den Schutz vor Gefahren für Leib und Leben, Sicherheit und Freiheit der Parteien oder für die Abwehr eines erheblichen und unwiederbringlichen Schadens für diese erforderlich ist, weitere Ausnahmen vorzusehen. Sie kann weitere Bestimmungen vorsehen, die den Einfluss der Maßnahmen, die zur Verhinderung der Verbreitung von COVID-19 getroffen werden, auf den Lauf von Fristen und die Einhaltung von Terminen für anhängige oder noch anhängig zu machende Verfahren regeln. Sie kann insbesondere die Unterbrechung, die Hemmung oder die Verlängerung von Fristen anordnen, Säumnisfolgen bei Nichteinhaltung von Terminen ausschließen sowie bestimmen, ob und auf welche Weise verfahrensrechtliche Rechtsnachteile, die durch die Versäumung von Fristen oder Terminen eintreten können, hintangehalten und bereits eingetretene wieder beseitigt werden. Dabei sind die Interessen an der Fortsetzung dieser Verfahren, insbesondere der Schutz vor Gefahren für Leib und Leben, Sicherheit und Freiheit der Parteien oder die Abwehr eines erheblichen und unwiederbringlichen Schadens von diesen, einerseits und das Interesse der Allgemeinheit an der Verhütung und Bekämpfung der Verbreitung von COVID-19 sowie am Schutz der Aufrechterhaltung eines geordneten Geschäftsgangs andererseits gegeneinander abzuwägen.</p></div>
+      <h2 class="UeberschrPara AlignCenter">Inkrafttreten und Außerkrafttreten</h2>
+      <div class="MarginTop4 AlignJustify"><h3 class="GldSymbol AlignJustify">§ 3.</h3><p class="Abs AlignJustify"> Dieses Bundesgesetz tritt mit 16. März 2020 in Kraft und mit Ablauf des 31. Dezember 2020 außer Kraft.</p></div>
+      <p class="UnterschrL">Van der Bellen</p>
+      <p class="UnterschrL">Kurz</p>
+    </div></div></body>
+  
+</html>

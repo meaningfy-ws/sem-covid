@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RRiF</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;subset=latin-ext">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="/assets/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Off-Canvas-Sidebar-Drawer-Navbar.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/rrif-sve.css?ha=0.93579600 1611665613">
+        
+    <!-- autocomplete -->
+	<script language="javascript" type="text/javascript" src="/actb/common.js"></script>
+	<script language="javascript" type="text/javascript" src="/actb/actb.js"></script>    
+</head>
+
+<body class="">
+    
+	<header class="shadow" id="header">
+        <div class="container">
+            <div class="row header-top no-gutter">
+                <div class="col d-flex align-items-center justify-content-xl-end align-items-xl-center">
+                    <div class="slogan">
+                        <h3>Hrvatski #1 za računovodstvo, poreze i financije</h3>
+                    </div>
+                    <div id='prijava' class='prijava'><span><i class='fas fa-user'></i><em>Prijava</em></span></div>                    <div class="newsletter"><a href="https://rrif.us13.list-manage.com/subscribe?u=5904cf12ec1fac00faf094268&amp;id=837ff0505c" target="_blank"><span><i class="fas fa-file-alt"></i><em>RRiF-ov newsletter</em></span></a></div>
+                    <div id="pretraga" class="search"><i class="fas fa-search"></i></div>
+                    <div id="cart-icon" class="cart-icon"><i class="fas fa-shopping-cart" id="shopping-cart"></i><span id="cart-badge" class="cart-badge">0</span>
+		                <section id='minicart'>
+												</section>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row header-separator">
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+            <div class="row header-bottom no-gutter">
+                <div class="col">
+                    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+                        <div class="container"><a class="navbar-brand" href="/"><img src="/assets/img/rrif-logo.png"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                            <div
+                                class="collapse navbar-collapse" id="navcol-1">
+                                <ul class="nav navbar-nav ml-auto">
+<li class='nav-item' role='presentation'><a class='nav-link ' href='/' ><i class="fa fa-home mr-2 fa-lg"></i></a></li><li class='nav-item dropdown'><a class='dropdown-toggle nav-link' data-toggle='dropdown' aria-expanded='false' href='#'>Pretplata</a>
+					<div class='dropdown-menu' role='menu'>
+				<a class='dropdown-item' role='presentation' href='/rrif-profil/' >Računovodstvo, revizija i financije</a><a class='dropdown-item' role='presentation' href='/pip-profil/' >Pravo i porezi</a><a class='dropdown-item' role='presentation' href='/popr-profil/' >Porezni priručnik</a></div>
+				<li class='nav-item dropdown'><a class='dropdown-toggle nav-link' data-toggle='dropdown' aria-expanded='false' href='#'>Seminari</a>
+					<div class='dropdown-menu' role='menu'>
+				<a class='dropdown-item' role='presentation' href='/seminari/' >Seminari</a><a class='dropdown-item' role='presentation' href='/webinari/' >Webinari</a></div>
+				<li class='nav-item dropdown'><a class='dropdown-toggle nav-link' data-toggle='dropdown' aria-expanded='false' href='/trgovina/'>Trgovina</a>
+					<div class='dropdown-menu' role='menu'>
+				<a class='dropdown-item' role='presentation' href='/pretplata/' >Pretplata</a><a class='dropdown-item' role='presentation' href='/knjizara/' >Knjige</a><a class='dropdown-item' role='presentation' href='/casopisi/' >Časopisi pojedinacno</a></div>
+				<li class='nav-item' role='presentation'><a class='nav-link ' href='/pretrazivac/' >Baza znanja</a></li><li class='nav-item' role='presentation'><a class='nav-link ' href='/kalkulator_placa/' >Kalkulatori</a></li><li class='nav-item' role='presentation'><a class='nav-link ' href='/plus/' >Kontakt</a></li>
+                                </ul>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+    
+    <section id="bellow-header">
+        <div class="container">
+            <div class="row no-gutter">
+                <div class="col d-xl-flex justify-content-between align-items-xl-center">
+                    <div class="breadcrumbs"><span>Nalazite se ovdje:&nbsp;</span><span><a href="/">Naslovnica</a></span><span class="active-item">Privremeno ukidanje obveze plaćanja članarine HGK i HOK</span></div>
+                    <div class="icons"><a class="facebook" href="https://www.facebook.com/RRiF-Ra%C4%8Dunovodstvo-revizija-i-financije-662601470477389/" target="_blank"><i class="fa fa-facebook" target='_blank'></i></a><a class="phone" href="/plus/"><i class="fa fa-phone"></i></a><a class="email" href="mailto:rrif@rrif.hr"><i class="fa fa-envelope"></i></a><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" data-toggle="tooltip" data-bs-tooltip="" id="theme-toggle" title="Promijeni temu (dark/light)">
+                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor"></path>
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+        <div class="billboard-banner banner-home">
+        	<!-- <a href="#"><img src="/assets/img/banner-billboard.png"></a> -->
+        	<a href='/wct_index.php?run=ban&wct=230&bid=248&lang=1' target='_blank'><img src='/dok/banner/248.png' border='0' alt='' title='' width='970' height='250'></a>        </div>
+    </section>
+    
+
+    <section id="page-content">
+        <div class="container page-content-separator">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="container page-content">
+            <div class="row">
+            
+                <div class="col-md-12 col-lg-9 main-content">
+                    <h1>Privremeno ukidanje obveze plaćanja članarine HGK i HOK</h1>
+                               
+                                        <p><strong>&nbsp; &nbsp; &nbsp;&nbsp;Određene članice HGK</strong> u skladu s <em>Odlukom o privremenom ukidanju obveze plaćanja članarine </em>koja je objavljena u Nar. nov., br. 36/20., <strong>nemaju obvezu platiti članarinu HGK u razdoblju od 1. ožujka do 31. svibnja 2020. godine. </strong>S obzirom na to da se članarina HGK plaća do posljednjeg dana u mjesecu za tekući mjesec, to znači da članice HGK na koje se odnosi ova odluka&nbsp; ne trebaju platiti članarinu za ožujak, travanj i svibanj 2020. godine.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;Ova Odluka odnosi se i na članice HGK fizičke osobe koje su postale članice komore preko svojih udruženja odnosno saveza te dragovoljni članovi (organizacije koje obavljaju dru&scaron;tvenu djelatnost, profesionalna i stručna dru&scaron;tva i udruženja te druge organizacije koje svojom djelatno&scaron;ću unapređuju rad i poslovanje gospodarskih subjekata) ako obavljaju djelatnost djelatnosti iz popisa.</p>
+
+<p style="text-align:center"><strong>POPIS DJELATNOSTI NA KOJE SE ODNOSI ODLUKA</strong></p>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width:710px">
+	<tbody>
+		<tr>
+			<td style="width:91px">
+			<p>G4725</p>
+			</td>
+			<td style="width:620px">
+			<p>Trgovina na malo pićima u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4741</p>
+			</td>
+			<td>
+			<p>Trgovina na malo računalima, perifernim jedinicama i softverom u specijaliziranim prodav.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4742</p>
+			</td>
+			<td>
+			<p>Trgovina na malo telekomunikacijskom opremom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4743</p>
+			</td>
+			<td>
+			<p>Trgovina na malo audio i videoopremom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4751</p>
+			</td>
+			<td>
+			<p>Trgovina na malo tekstilom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4753</p>
+			</td>
+			<td>
+			<p>Trgovina na malo sagovima i prostiračima za pod, zidnim i podnim oblogama u spec. prod.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4754</p>
+			</td>
+			<td>
+			<p>Trgovina na malo električnim aparatima za kućanstvo u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4759</p>
+			</td>
+			<td>
+			<p>Trgovina na malo namje&scaron;tajem, opremom za rasvjetu i ost. pr. za kućanstvo u spec. prodav.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4761</p>
+			</td>
+			<td>
+			<p>Trgovina na malo knjigama u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4762</p>
+			</td>
+			<td>
+			<p>Trgovina na malo novinama, papirnatom robom i pisaćim priborom u specijaliziranim<br />
+			prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4763</p>
+			</td>
+			<td>
+			<p>Trgovina na malo glazbenim i videozapisima u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4764</p>
+			</td>
+			<td>
+			<p>Trgovina na malo sportskom opremom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4765</p>
+			</td>
+			<td>
+			<p>Trgovina na malo igrama i igračkama u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4771</p>
+			</td>
+			<td>
+			<p>Trgovina na malo odjećom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4772</p>
+			</td>
+			<td>
+			<p>Trgovina na malo obućom i proizvodima od kože</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4777</p>
+			</td>
+			<td>
+			<p>Trgovina na malo satovima i nakitom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4778</p>
+			</td>
+			<td>
+			<p>Ostala trgovina na malo novom robom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4779</p>
+			</td>
+			<td>
+			<p>Trgovina na malo rabljenom robom u specijaliziranim prodavaonicama</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>G4799</p>
+			</td>
+			<td>
+			<p>Ostala trgovina na malo izvan prodavaonica, &scaron;tandova i tržnica</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>I5610</p>
+			</td>
+			<td>
+			<p>Djelatnosti restorana i ostalih objekata za pripremu i usluživanje hrane</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>I5629</p>
+			</td>
+			<td>
+			<p>Ostale djelatnosti pripreme i usluživanja hrane</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>I5630</p>
+			</td>
+			<td>
+			<p>Djelatnosti pripreme i usluživanja pića</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>J5914</p>
+			</td>
+			<td>
+			<p>Djelatnosti prikazivanja filmova</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>N8230</p>
+			</td>
+			<td>
+			<p>Organizacija sastanaka i poslovnih sajmova</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>P8551</p>
+			</td>
+			<td>
+			<p>Obrazovanje i poučavanje u području sporta i rekreacije</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>P8552</p>
+			</td>
+			<td>
+			<p>Obrazovanje i poučavanje u području kulture</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>P8553</p>
+			</td>
+			<td>
+			<p>Djelatnosti vozačkih &scaron;kola</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>P8559</p>
+			</td>
+			<td>
+			<p>Ostalo obrazovanje i poučavanje, d. n.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Q8610</p>
+			</td>
+			<td>
+			<p>Djelatnosti bolnica</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9001</p>
+			</td>
+			<td>
+			<p>Izvođačka umjetnost</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9002</p>
+			</td>
+			<td>
+			<p>Pomoćne djelatnosti u izvođačkoj umjetnosti</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9003</p>
+			</td>
+			<td>
+			<p>Umjetničko stvarala&scaron;tvo</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9004</p>
+			</td>
+			<td>
+			<p>Rad umjetničkih objekata</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9102</p>
+			</td>
+			<td>
+			<p>Djelatnosti muzeja</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9311</p>
+			</td>
+			<td>
+			<p>Rad sportskih objekata</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9312</p>
+			</td>
+			<td>
+			<p>Djelatnosti sportskih klubova</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9313</p>
+			</td>
+			<td>
+			<p>Fitnes centri</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9319</p>
+			</td>
+			<td>
+			<p>Ostale sportske djelatnosti</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9321</p>
+			</td>
+			<td>
+			<p>Djelatnosti zabavnih i tematskih parkova</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>R9329</p>
+			</td>
+			<td>
+			<p>Ostale zabavne i rekreacijske djelatnosti</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>S9602</p>
+			</td>
+			<td>
+			<p>Frizerski saloni i saloni za uljep&scaron;avanje</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>S9604</p>
+			</td>
+			<td>
+			<p>Djelatnosti za njegu i održavanje tijela</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>S9609</p>
+			</td>
+			<td>
+			<p>Ostale osobne uslužne djelatnosti, d. n.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp; Za sve članove HOK-a</strong>, u skladu s <em>Odlukom o dopuni odluke o obveznom komorskom doprinosu za jedinstveni sustav organiziranosti obrta</em> (Nar. nov., br. 36/20.), <strong>otpisuje se zaduženje obveznog komorskog doprinosa za razdoblje travnja &ndash; lipanj 2020. (II. tromjesečje 2020.).</strong> Predviđeno je dono&scaron;enje nove odluke o otpisu zaduženja u slučaju trajanja pandemije koronavirusa dulje od 3 mjeseca od dana stupanja na snagu ove Odluke.</p>
+                                        
+                    <p><a href='/vijesti/'>Povratak na vijesti</a></p>                </div>
+                
+                <div class="col-md-12 col-lg-3 right-column">
+                
+                	                	
+                    <div class="module">
+                        <div class="heading-wrapper">
+                            <h3>Pregled časopisa</h3>
+                        </div>
+                        <div class="content-wrapper">
+                            <ul>
+                                <li><a href='/rrif/'>Računovodstvo, revizija i financije</a></li>
+<li><a href='/pip/'>Pravo i porezi</a></li>
+<li><a href='/prgo/'>Prilog godišnji obračun</a></li>
+<li><a href='/obrt/'>Prilog obrtnici</a></li>
+<li><a href='/obav/'>Prilog stručne obavijesti</a></li>
+<li><a href='/prpi/'>Prilog godišnji popis (inventura)</a></li>
+<li><a href='/pror/'>Prilog proračun i proračunski korisnici</a></li>
+<li><a href='/nepr/'>Prilog neprofitne organizacije</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                	                	
+                    <div class="module">
+                        <div class="heading-wrapper">
+                            <h3>Pregled knjiga</h3>
+                        </div>
+                        <div class="content-wrapper">
+                                
+				<p>
+					<a href='/porezni_i_socijalni_polozaj_izaslanih_radnika_na_r-266-knjiga/'><img src='/dok/knjiga/naslov-266.jpg' style='max-width: 80%; height: auto;'/></a>
+				</p>
+			
+				<p>
+					<a href='/evidencije_radnog_vremena_obracuni_placa_i_skraciv-265-knjiga/'><img src='/dok/knjiga/naslov-265.jpg' style='max-width: 80%; height: auto;'/></a>
+				</p>
+			
+				<p>
+					<a href='/hrvatski_racunovodstveni_sustav_hsfi_mrs_msfi_i_tu-264-knjiga/'><img src='/dok/knjiga/naslov-264.jpg' style='max-width: 80%; height: auto;'/></a>
+				</p>
+			                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-prijava">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Prijava pretplatnika</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <form action="/pretplatnik-login/" method="post">
+                <div class="modal-body">
+                        <div class="form-group"><input class="form-control" type="text" name="username" placeholder="Korisničko ime"></div>
+                        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Lozinka"></div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" type="submit">Prijava</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-pretraga">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="/pretrazivac/" method="POST">
+					<input type='hidden' name='pretrazivac' id='pretrazivac' value='1'>
+					<input type='hidden' name='pre_sto' id='pre_sto' value='0'>
+					<input type='hidden' name='submit_pretrazivac' id='submit_pretrazivac' value='1'>
+					<input type='hidden' name='rijeci' id='rijeci' value='all'>
+					<input type='hidden' name='srt' id='srt' value='2'>
+					<input type='hidden' name='podrucje' id='podrucje' value=''>
+					<input type='hidden' name='godina1' id='godina1' value='2007'>
+					<input type='hidden' name='godina2' id='godina2' value='2021'>
+					<input type='hidden' name='autor' id='autor' value=''>
+                        <div class="input-group input-group-lg"><input class="form-control" type="text" name="trazeni_pojam" id="trazeni_pojam" >
+                            <div class="input-group-append"><button class="btn btn-primary" type="submit">Pretraži</button></div>
+                        </div>
+                    </form>
+                    <p class="napredno-pretrazivanje">Za detaljnije pretraživanje i odabir filtera, koristite&nbsp;<a href="/pretrazivac/">RRiF-ovo napredno pretraživanje</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            
+
+    <footer>
+        <div class="container">
+            <div class="row share-wrapper">
+                <div class="col"><div class="addthis_inline_share_toolbox"></div></div>
+            </div>
+            <div class="row footer-links">
+                <div class="col">
+                    <ul>
+                        <li><a href="https://www.rrif.hr/sadrzaj/"/>Sadržaj</a></li>
+                        <li><a href="https://www.rrif.hr/uvjeti_koristenja/">Uvjeti korištenja</a></li>
+                        <li><a href="https://www.rrif.hr/o_nama/">O nama</a></li>
+                        <li><a href="https://www.rrif.hr/pravilnik_o_zastiti_osobnih_podataka/">Pravilnik o zaštiti osobnih podataka</a></li>
+                        <li><a href="https://www.rrif.hr/izjava_o_privatnosti/">Izjava o privatnosti</a></li>
+                        <li><a href="https://www.rrif.hr/povlacenje_privole/">Povlačenje privole za obradu osobnih podataka</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-separator">
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+            <div class="row footer-copyright">
+                <div class="col text-center"><span>Svi sadržaji Copyright © RRiF-plus d.o.o. 2020.&nbsp;|&nbsp;Izrada web stranica:&nbsp;<a href="#" target="_blank">iWeb</a></span></div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <div class="wallpaper-banners">
+        <div class="wallpaper-left"></div>
+        <div class="wallpaper-right"></div>
+    </div>
+    
+
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f01b030b060aad8"></script>
+    <script src="/assets/js/Off-Canvas-Sidebar-Drawer-Navbar.js"></script>
+    <script src="/assets/js/custom.js?ha=0.98397000 1611665613"></script>
+    <script src="/assets/js/Off-Canvas-Sidebar-Drawer-Navbar-1.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    
+    <script>
+    	$( "#theme-toggle" ).click(function() {
+    		 if ($("body").hasClass("dark")) {
+				setCookie("dark_theme","dark",1);
+			 } else {
+				setCookie("dark_theme","",1);
+			 }
+		});
+		
+		function setCookie(cname, cvalue, exdays) {
+		  var d = new Date();
+		  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		  var expires = "expires="+ d.toUTCString();
+		  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}	
+		
+		$( document ).ready(function() {
+    		$(".slider").show();
+		});	
+    </script>
+    
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15360738-1");
+pageTracker._trackPageview();
+} catch(err) {}</script></body>
+
+</html>

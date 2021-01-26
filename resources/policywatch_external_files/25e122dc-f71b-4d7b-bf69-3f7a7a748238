@@ -1,0 +1,944 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en" xml:lang="en"> 
+<!-- Powered by EasyConsole CMS, Copyright DW Dynamic Works LTD 2003 - 2021 - http://www.easyconsole.com -->
+
+
+	
+<script>
+
+window.status='Powered by EasyConsole CMS';
+</script> 
+	<head>
+		<title>Αρχή Ανάπτυξης Ανθρώπινου Δυναμικού Kύπρου</title>
+			
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="Description" CONTENT=""> 
+		<meta name="Keywords" CONTENT="">
+		<link rel="stylesheet" type="text/css" href="/easyconsole.css" />
+		<link rel="STYLESHEET" type="text/css" href="/sitemap.css">
+		<link rel="stylesheet" type="text/css" href="/divs.css" />
+		<link rel="STYLESHEET" type="text/css" href="/calendar.css">
+		<link rel="STYLESHEET" type="text/css" href="/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="/style.css" />
+		<link rel="STYLESHEET" type="text/css" href="/jquery.treeview.css">
+		<link rel="stylesheet" type="text/css" href="/js_lightview//lightview.css" />
+        <link rel="stylesheet" type="text/css" href="/dragndrop.css" />
+		
+			<link rel="stylesheet" media="print" type="text/css" href="/print.css" />
+		
+		<link rel="STYLESHEET" type="text/css" href="/skin.css">
+		<link rel="STYLESHEET" type="text/css" href="/forms.css">
+		<link rel="STYLESHEET" type="text/css" href="/prettyPhoto.css">
+		<script type="text/javascript" src="/jquery-1.9.1.js"></script>
+		<script>jQuery.noConflict();</script>
+		<script type="text/javascript" src="/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/jquery.treeview.js"></script>	
+		<script type="text/javascript" src="/jquery-ui.js"></script>
+		<script src="/fadeslideshow.js" type="text/javascript"></script>
+		<script src="/jquery.slimscroll.js" type="text/javascript"></script>
+		<script src="/jquery-numeric.js" type="text/javascript"></script>
+		<script src="/jquery.alphanumeric.js" type="text/javascript"></script>
+	
+		<script type="text/javascript" src="/animatedcollapse.js"></script>
+		<script type="text/javascript" src="/easysconsole.js"></script>
+		
+		<script src="/easyajax.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/jquery.jcarousel.min.js"></script>
+		<script src="/anad.js" type="text/javascript"></script>
+		<script src="/forms.js" type="text/javascript"></script>
+		<script src="/jquery.prettyPhoto.js" type="text/javascript"></script>
+        
+		
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-24412627-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		<script>
+			
+(function( $ ) {
+
+		  // Browser supports HTML5 multiple file?
+		  var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
+		      isIE = /msie/i.test( navigator.userAgent );
+
+		  $.fn.customFile = function() {
+
+		    return this.each(function() {
+
+		      var $file = $(this).addClass('customfile'), // the original file input
+		          $wrap = $('<div class="customfile-wrap">'),
+		          $input = $('<input type="text" autocomplete="off" class="customfile-filename" id="'+ $file[0].id +'_custom" />'),
+		          // Button that will be used in non-IE browsers
+		          $button = $('<button type="button" class="customfile-upload">Επισύναψη</button>'),
+		          // Hack for IE
+		          $label = $('<label class="customfile-upload" for="'+ $file[0].id +'">Επισύναψη</label>');
+
+		      // Hide by shifting to the left so we
+		      // can still trigger events
+		      $file.css({
+		        position: 'absolute',
+		        left: '-9999px'
+		      });
+
+		      $wrap.insertAfter( $file )
+		        .append( $file, $input, ( isIE ? $label : $button ) );
+
+		      // Prevent focus
+		      $file.attr('tabIndex', -1);
+		      $button.attr('tabIndex', -1);
+
+		      $button.click(function () {
+		        $file.focus().click(); // Open dialog
+		      });
+
+		      $file.change(function() {
+
+		        var files = [], fileArr, filename;
+
+		        // If multiple is supported then extract
+		        // all filenames from the file array
+		        if ( multipleSupport ) {
+		          fileArr = $file[0].files;
+		          for ( var i = 0, len = fileArr.length; i < len; i++ ) {
+		            files.push( fileArr[i].name );
+		          }
+		          filename = files.join(', ');
+
+		        // If not supported then just take the value
+		        // and remove the path to just show the filename
+		        } else {
+		          filename = $file.val().split('\\').pop();
+		        }
+
+		        $input.val( filename ) // Set the value
+		          .attr('title', filename) // Show filename in title tootlip
+		          .focus(); // Regain focus
+				  
+				  $("div.valueDefault"+$file[0].id).hide();
+				
+				  if (filename=='') { 
+				   	$('input#'+$file[0].id+'_caption').val('');
+				  }
+				  else {
+				 	 $('input#'+$file[0].id+'_caption').val('1');					 
+					  $('input#'+$file[0].id+'_custom').css('border', '1px solid #C9C9C9');
+				
+				  }
+				
+		      });
+
+		      $input.on({
+		        blur: function() { $file.trigger('blur'); },
+		        keydown: function( e ) {
+		          if ( e.which === 13 ) { // Enter
+		            if ( !isIE ) { $file.trigger('click'); }
+		          } else if ( e.which === 8 || e.which === 46 ) { // Backspace & Del
+		            // On some browsers the value is read-only
+		            // with this trick we remove the old input and add
+		            // a clean clone with all the original events attached
+		            $file.replaceWith( $file = $file.clone( true ) );
+		            $file.trigger('change');
+		            $input.val('');
+					$('input#'+$file[0].id+'_caption').val('');
+		          } else if ( e.which === 9 ){ // TAB
+		            return;
+		          } else { // All other keys
+		            return false;
+		          }
+		        }
+		      });
+
+		    });
+
+		  };
+
+		  // Old browser fallback
+		
+
+		}( jQuery ));
+		
+		
+		function checkFile(field) {
+			
+			var ext = document.getElementById(field).value;
+			var ext4 = document.getElementById(field).value;
+			ext = ext.substring(ext.length-3,ext.length);
+			ext = ext.toLowerCase();
+			ext4 = ext4.substring(ext4.length-4,ext4.length);
+			ext4 = ext4.toLowerCase();
+			
+			if(ext != 'doc' && ext != 'pdf' && ext != 'tif' && ext != 'zip' && ext != 'rar' && ext4 != 'docx' && ext4 != 'tiff' && ext4 != 'jpeg' && ext != 'jpg' && ext != 'png') {
+				document.getElementById(field).value='';
+				
+				if (ext!='') {
+				alert("Παρακαλώ επιλέξτε σωστό τύπο αρχείου(.jpg, .doc, .docx, .pdf)");
+				}
+				document.getElementById(field).value='';
+			return false; 
+			} else {
+				
+						//document.getElementById('fileCaption').value=document.getElementById("file_ocr").value;
+			return true;
+			}
+		}
+		
+		function validatesixten(field,sIDCard) {
+			
+			var activity_id = jQuery('#activity_id').val();	
+			
+			var telLength = jQuery('#'+field).val().length;				
+			if (telLength < 6 || telLength>10) {					
+				jQuery('#'+field).css('border', '1px solid #FF6464');
+				
+				jQuery('#'+field).val('');
+				if (sIDCard=='0') {
+					
+					jQuery('#koinAsfTR').html('Επιτρέπεται η καταχώρηση από 6 έως και 10 χαρακτήρων');
+					jQuery('#koin_asf').css('border', '1px solid #FF6464');
+				} 
+				if (sIDCard!='0') {
+				if (field=='ind_sosial_ins') { 
+					jQuery('#wrongSocialCard').html('Επιτρέπεται η καταχώρηση από 6 έως και 10 χαρακτήρων');
+					
+				}
+				else {
+					jQuery('#wrongIDCard').html('Επιτρέπεται η καταχώρηση από 6 έως και 10 χαρακτήρων');
+				}
+				}
+						
+				}
+				else {
+					jQuery('#wrongIDCard').html('');
+					
+					if (sIDCard==1) {
+						var sIDCardEm = jQuery('#ind_identity').val();
+						checkIDCardValidEmployer(sIDCardEm);
+					}
+					else if (sIDCard==11) {
+						var sIDCardEm = jQuery('#ind_sosial_ins').val();
+						if (activity_id==2) { 
+							checkSocialValidEmployerStap(sIDCardEm);
+						}
+						else {
+							checkSocialValidEmployer(sIDCardEm);
+						}
+					}
+					
+					else if (sIDCard!='0') {
+						//console.log(field);
+						var citiz = jQuery('#citizenship_id').val();
+						var type = jQuery('#type_id').val();
+						var country = jQuery('#ic_country_id').val();
+						var countrypass = jQuery('#passport_issued_country').val();
+						
+						var cou="";
+						if (citiz==1) {
+							cou='CYP';
+						}
+						else if (citiz==2) {
+							if (type==1) {
+								cou=country;
+							}
+							else {
+								cou=countrypass;
+							}
+						}
+						
+						else {
+							if (type==2) { 
+								cou=countrypass;
+							}
+							else {
+								cou='CYP';
+							}
+						}
+						//console.log(cou);
+							if (activity_id==2) {
+								checkIDCardValidStap(sIDCard,field,cou);
+							}
+							else {
+								checkIDCardValid(sIDCard,field,cou);
+							}
+							
+						}
+					}
+			}
+			
+		function logoutUser() { 
+			var r=confirm("Είστε σίγουροι ότι θέλετε να αποσυνδεθείτε;");
+			if (r==true) {
+				location.href='/easyconsole.cfm/page/myaccount/logout/true';
+			}
+		}	
+		</script>
+</head>
+
+	
+	
+	<body > 
+
+		
+		
+		
+		<div class="bgHeaderBackground">
+	
+		<div id="globalBox">
+		
+			
+			<div id="headerBox">
+				<div id="logoBox"><a href="/"><img src="/images/logo-anad.png" width="146" height="67" alt="Αρχή Ανάπτυξης Ανθρώπινου Δυναμικού Kύπρου" title="Αρχή Ανάπτυξης Ανθρώπινου Δυναμικού Kύπρου" /></a></div>
+				
+				<div id="headerLinkBox">
+					<div class="headMenu">
+						<ul class="headerMenu">
+							
+								<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/1" class="headerMenuStyle" title="Αρχική">Αρχική</a></li>
+								<li>|</li>
+							
+								<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/103" class="headerMenuStyle" title="Χάρτης Πλοήγησης">Χάρτης Πλοήγησης</a></li>
+								<li>|</li>
+							
+								<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/8" class="headerMenuStyle" title="Επικοινωνία">Επικοινωνία</a></li>
+								<li>|</li>
+							
+								<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/129" class="headerMenuStyle" title="Ημερολoγιο">Ημερολoγιο</a></li>
+								<li>|</li>
+							
+								<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/238" class="headerMenuStyle" title="Videos">Videos</a></li>
+								<li>|</li>
+							
+							<li><a target="_blank" href="http://www.hrdauth.org.cy/rss/latest_news.xml" class="headerMenuStyle">RSS Feeds</a></li>						
+						</ul>
+					</div>
+					<div class="searchBox">
+						<form name="searchForm" id="searchForm" action="http://www.hrdauth.org.cy/easyconsole.cfm/page/search" method="post">
+							<table cellpadding="1" cellspacing="0" align="right">
+								<tr>
+									<td class="tdGeneral"><strong></strong></td>
+									<td><input type="Text" class="inputSearch" name="hsearch" id="hsearch" /></td>
+									<td><a href="javascript:void(0)" onClick="document.forms['searchForm'].submit();"><img src="/images/ic-search.jpg" width="20" height="20" alt="" /></a></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td ><a href="http://www.hrdauth.org.cy/easyconsole.cfm/page/search" class="adv_search">Εξειδικευμένη αναζήτηση</a></td>
+								</tr>
+							</table>
+							<input type="Hidden" name="type" id="type" value="0" />
+						</form>
+					</div>
+				</div>
+			</div> 
+			
+			
+		<div id="topMenuBox">
+			<table cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					
+						<td align="center"><img src="/images/ic-topmenu-divider.jpg" width="2" height="24" alt="Η ΑνΑΔ " title="Η ΑνΑΔ " /></td>
+						<td align="center"><a class="topMenuStyle" href="http://www.hrdauth.org.cy/easyconsole.cfm/id/101">Η ΑνΑΔ </a></td>
+					
+						<td align="center"><img src="/images/ic-topmenu-divider.jpg" width="2" height="24" alt="Έρευνες και Μελέτες" title="Έρευνες και Μελέτες" /></td>
+						<td align="center"><a class="topMenuStyle" href="http://www.hrdauth.org.cy/easyconsole.cfm/id/105">Έρευνες και Μελέτες</a></td>
+					
+						<td align="center"><img src="/images/ic-topmenu-divider.jpg" width="2" height="24" alt="Κατάρτιση" title="Κατάρτιση" /></td>
+						<td align="center"><a class="topMenuStyle" href="http://www.hrdauth.org.cy/easyconsole.cfm/id/17130">Κατάρτιση</a></td>
+					
+						<td align="center"><img src="/images/ic-topmenu-divider.jpg" width="2" height="24" alt="Πιστοποίηση" title="Πιστοποίηση" /></td>
+						<td align="center"><a class="topMenuStyle" href="http://www.hrdauth.org.cy/easyconsole.cfm/id/17154">Πιστοποίηση</a></td>
+					
+						<td align="center"><img src="/images/ic-topmenu-divider.jpg" width="2" height="24" alt="Νέα & Ανακοινώσεις " title="Νέα & Ανακοινώσεις " /></td>
+						<td align="center"><a class="topMenuStyle" href="http://www.hrdauth.org.cy/easyconsole.cfm/id/48">Νέα & Ανακοινώσεις </a></td>
+					
+				</tr>
+			</table>
+		</div>
+	
+	<div id="splashBox">
+		
+			<img style="float:left;" src="/images/media/imagesplash/ESEKA-ANAD-20202021.jpg" alt="" title="" />
+		
+		
+	</div>
+
+	
+		
+		<div id="mainBox">
+			
+	
+			
+			<div id="mainColumnLeftForm">
+				
+				<h1 class="blueStyle" style="text-align:center;width:666px;">ΕΙΔΙΚΟ ΣΧΕΔΙΟ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ ΑΝΕΡΓΩΝ ΣΕ ΟΡΓΑΝΙΣΜΟΥΣ ΤΟΥ ΔΗΜΟΣΙΟΥ ΚΑΙ ΕΥΡΥΤΕΡΟΥ ΔΗΜΟΣΙΟΥ ΤΟΜΕΑ, ΑΡΧΕΣ ΤΟΠΙΚΗΣ ΑΥΤΟΔΙΟΙΚΗΣΗΣ, ΜΗ ΚΥΒΕΡΝΗΤΙΚΟΥΣ ΟΡΓΑΝΙΣΜΟΥΣ ΚΑΙ ΙΔΡΥΜΑΤΑ ΜΗ ΚΕΡΔΟΣΚΟΠΙΚΟΥ ΧΑΡΑΚΤΗΡΑ</h1>
+				
+				<div class="generalContentBoxBorder">
+					
+					<p>
+						<p>Το Υπουργείο Εργασίας, Πρόνοιας και Κοινωνικών Ασφαλίσεων (ΥΕΠΚΑ), μέσω της Αρχής Ανάπτυξης Ανθρώπινου Δυναμικού Κύπρου (ΑνΑΔ), ανακοινώνει δεύτερη πρόσκληση για υποβολή αιτήσεων από υπηρεσίες/οργανισμούς στο πλαίσιο του &laquo;Ειδικού Σχεδίου Επαγγελματικής Κατάρτισης Ανέργων σε Οργανισμούς του Δημόσιου και Ευρύτερου Δημόσιου Τομέα, Αρχές Τοπικής Αυτοδιοίκησης, Μη Κυβερνητικούς Οργανισμούς και Ιδρύματα Μη Κερδοσκοπικού Χαρακτήρα&raquo; (στο εξής &laquo;Σχέδιο&raquo;).</p>
+
+<p>&nbsp;</p>
+
+<p>Το Σχέδιο στοχεύει στην απόκτηση επαγγελματικής κατάρτισης και εργασιακής πείρας των ανέργων με την παράλληλη παροχή δυνατότητας σε Υπηρεσίες/Οργανισμούς του Δημόσιου και ευρύτερου Δημόσιου τομέα, στις Αρχές Τοπικής Αυτοδιοίκησης (ΑΤΑ), στις Mη Κυβερνητικές Οργανώσεις (ΜΚΟ), καθώς και στα Ιδρύματα Μη Κερδοσκοπικού Χαρακτήρα να αξιοποιήσουν κατάλληλο ανθρώπινο δυναμικό με την εφαρμογή προγραμμάτων επαγγελματικής κατάρτισης και απόκτησης εργασιακής πείρας, διάρκειας τεσσάρων μηνών (16 εβδομάδων).</p>
+
+<p>&nbsp;</p>
+
+<p>Η τοποθέτηση του ανέργου δεν αποτελεί εργοδότηση του και δεν καταβάλλεται οποιαδήποτε αμοιβή από την υπηρεσία/οργανισμό, με εξαίρεση τα οδοιπορικά έξοδα του ανέργου σε περίπτωση που απαιτείται μετακίνηση ή μετάβασή του σε άλλους χώρους από την υπηρεσία/ οργανισμό τοποθέτησής του για επαγγελματικούς λόγους.</p>
+
+<p>&nbsp;</p>
+
+<p>Επισημαίνεται ότι οι υπηρεσίες/οργανισμοί που υπέβαλαν αίτηση στην πρώτη πρόσκληση, μπορούν να υποβάλουν νέα αίτηση προσφέροντας συμπληρωματικές ευκαιρίες κατάρτισης σε ανέργους, με την προϋπόθεση να μην ξεπεράσουν τον μέγιστο αριθμό προσφερόμενων ευκαιριών κατάρτισης.</p>
+
+<p>&nbsp;</p>
+
+<p>Για τη συμμετοχή των υπηρεσιών/οργανισμών στο Σχέδιο ισχύουν προϋποθέσεις όπως ορίζονται στον Οδηγό Πολιτικής και Διαδικασιών του Σχεδίου.&nbsp; Περισσότερες πληροφορίες οι ενδιαφερόμενοι μπορούν να λαμβάνουν από την ιστοσελίδα της ΑνΑΔ <a href="http://eseka.anad.org.cy/">http://eseka.anad.org.cy</a> ή να απευθύνονται στον Λειτουργό Εξυπηρέτησης Κοινού στο τηλέφωνο 22390300.</p>
+
+<p>&nbsp;</p>
+
+<p>Οι αιτήσεις γίνονται δεκτές από τις <strong>23 Νοεμβρίου 2020 και ώρα 08:00</strong> μέχρι τις <strong>14 Δεκεμβρίου 2020 και ώρα 14:00</strong> μόνο σε ηλεκτρονική μορφή μέσω της ιστοσελίδας της ΑνΑΔ στη διεύθυνση <a href="http://eseka.anad.org.cy/">http://eseka.anad.org.cy</a>.</p>
+
+					
+					</p>
+
+					 
+						
+						
+					 
+					
+					
+				</div>
+				
+			</div>
+
+			
+				
+		
+		<div class="rightColumnForm">
+			
+				
+					
+				
+					<div class="buttonObjectForm" onclick="location.href='/easyconsole.cfm/page/member_login_form/'">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%;"><img src="/images/ic-login.png" alt=""></td>
+								<td class="blueObject">Σύνδεση στο Σύστημα</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="buttonObjectForm" onclick="location.href='/easyconsole.cfm/page/registereseka/'">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%;"><img src="/images/ic-open-account.png" width="32" height="33" alt="" /></td>
+								<td class="blueObject">Δημιουργία Λογαριασμού</td>
+							</tr>
+						</table>
+					</div>
+				
+				<div class="buttonObjectForm" onclick="location.href='/easyconsole.cfm/page/faqeske/'">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td width="15%;"><img src="/images/ic-download.png" width="32" height="33" alt=""></td>
+							<td class="blueObject">Video</td>
+						</tr>
+					</table>
+				</div>
+			 
+			
+		</div>
+
+
+			
+			
+			<br clear="all" />
+			
+			
+	<!--Make sure page contains valid doctype at the very top!-->
+	
+		<link rel="STYLESHEET" type="text/css" href="/stepcarousel.css">	
+		<script type="text/javascript" src="/stepcarousel.js"></script>
+		
+		
+		<script type="text/javascript">
+			stepcarousel.setup({
+				galleryid: 'gallery_id', //id of carousel DIV
+				beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+				panelclass: 'panel', //class of panel DIVs each holding content
+				autostep: {enable:true, moveby:1, pause:3000},
+				panelbehavior: {speed:500, wraparound:true, persist:false},
+				defaultbuttons: {enable: false, moveby: 1, leftnav: ['http://i34.tinypic.com/317e0s5.gif', -5, 80], rightnav: ['http://i38.tinypic.com/33o7di8.gif', -20, 80]},
+				statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+				contenttype: ['inline'] //content setting ['inline'] or ['ajax', 'path_to_external_file']
+			})
+		</script>
+		
+		<div class="galleryAssetContainer" id="gallery4379">
+			<p align="center"> <h3 align="center">
+			ΕΓΓΡΑΦΑ ΚΑΙ ΕΝΤΥΠΑ ΣΧΕΤΙΚΑ ΜΕ ΤΗ ΛΕΙΤΟΥΡΓΙΑ ΤΟΥ ΣΧΕΔΙΟΥ 
+								
+			
+			</h3></p>
+			<div class="galleryAssetBorder"></div>
+			<div class="leftArrowBox"> 
+				<a href="javascript:stepcarousel.stepBy('gallery_id', -1)"><img src="/images/ic-gallery-left.jpg" alt="" /></a>
+			</div>
+			<div id="gallery_id" class="stepcarousel">	
+				<div class="belt">	
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020 10 20 Περιγραφή ΕΣΕΚΑ .pdf" title="Περιγραφή Σχεδίου (ΕΣΕΚΑ)">	
+													
+														<img src="/images/ic-pdf.jpg" width="78" height="80" alt="Περιγραφή Σχεδίου (ΕΣΕΚΑ)" title="Περιγραφή Σχεδίου (ΕΣΕΚΑ)" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Περιγραφή Σχεδίου (ΕΣΕΚΑ)" href="/images/media/assetfile/2020 10 20 Περιγραφή ΕΣΕΚΑ .pdf">Περιγραφή Σχεδίου (ΕΣΕΚΑ)</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020 10 20 ΟΠΔ ΕΣΕΚΑ0001.pdf" title="Οδηγός Πολιτικής και Διαδικασιών (ΕΣΕΚΑ)
+">	
+													
+														<img src="/images/ic-pdf.jpg" width="78" height="80" alt="Οδηγός Πολιτικής και Διαδικασιών (ΕΣΕΚΑ)
+" title="Οδηγός Πολιτικής και Διαδικασιών (ΕΣΕΚΑ)
+" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Οδηγός Πολιτικής και Διαδικασιών (ΕΣΕΚΑ)
+" href="/images/media/assetfile/2020 10 20 ΟΠΔ ΕΣΕΚΑ0001.pdf">Οδηγός Πολιτικής και Διαδικασιών (ΕΣΕΚΑ)
+</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020 11 02 ΠΡΟΣΚΛΗΣΗ ΕΣΕΚΑ0001.pdf" title="Πρόσκληση">	
+													
+														<img src="/images/ic-pdf.jpg" width="78" height="80" alt="Πρόσκληση" title="Πρόσκληση" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Πρόσκληση" href="/images/media/assetfile/2020 11 02 ΠΡΟΣΚΛΗΣΗ ΕΣΕΚΑ0001.pdf">Πρόσκληση</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 3 ΕΣΕΚΑ.docx" title="Έντυπο 3 (ΕΣΕΚΑ): Υποχρεώσεις της ΑνΑΔ, της Υπηρεσίας/Οργανισμού και του Ανέργου">	
+													
+														<img src="/images/ic-word.jpg" width="78" height="80" alt="Έντυπο 3 (ΕΣΕΚΑ): Υποχρεώσεις της ΑνΑΔ, της Υπηρεσίας/Οργανισμού και του Ανέργου" title="Έντυπο 3 (ΕΣΕΚΑ): Υποχρεώσεις της ΑνΑΔ, της Υπηρεσίας/Οργανισμού και του Ανέργου" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Έντυπο 3 (ΕΣΕΚΑ): Υποχρεώσεις της ΑνΑΔ, της Υπηρεσίας/Οργανισμού και του Ανέργου" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 3 ΕΣΕΚΑ.docx">Έντυπο 3 (ΕΣΕΚΑ): Υποχρεώσεις της ΑνΑΔ, της Υπηρεσίας/Οργανισμού και του Ανέργου</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 4 ΕΣΕΚΑ.docx" title="Έντυπο 4 (ΕΣΕΚΑ): Στοιχεία Τοποθέτησης και Υπεύθυνες Δηλώσεις">	
+													
+														<img src="/images/ic-word.jpg" width="78" height="80" alt="Έντυπο 4 (ΕΣΕΚΑ): Στοιχεία Τοποθέτησης και Υπεύθυνες Δηλώσεις" title="Έντυπο 4 (ΕΣΕΚΑ): Στοιχεία Τοποθέτησης και Υπεύθυνες Δηλώσεις" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Έντυπο 4 (ΕΣΕΚΑ): Στοιχεία Τοποθέτησης και Υπεύθυνες Δηλώσεις" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 4 ΕΣΕΚΑ.docx">Έντυπο 4 (ΕΣΕΚΑ): Στοιχεία Τοποθέτησης και Υπεύθυνες Δηλώσεις</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 5 ΕΣΕΚΑ.docx" title="Έντυπο 5 (ΕΣΕΚΑ): Καταγραφή Επαγγελματικής Κατάρτισης και Εργασιών">	
+													
+														<img src="/images/ic-word.jpg" width="78" height="80" alt="Έντυπο 5 (ΕΣΕΚΑ): Καταγραφή Επαγγελματικής Κατάρτισης και Εργασιών" title="Έντυπο 5 (ΕΣΕΚΑ): Καταγραφή Επαγγελματικής Κατάρτισης και Εργασιών" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Έντυπο 5 (ΕΣΕΚΑ): Καταγραφή Επαγγελματικής Κατάρτισης και Εργασιών" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 5 ΕΣΕΚΑ.docx">Έντυπο 5 (ΕΣΕΚΑ): Καταγραφή Επαγγελματικής Κατάρτισης και Εργασιών</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 6 ΕΣΕΚΑ.docx" title="Έντυπο 6 (ΕΣΕΚΑ): Αξιολόγηση Τοποθέτησης από τον Άνεργο">	
+													
+														<img src="/images/ic-word.jpg" width="78" height="80" alt="Έντυπο 6 (ΕΣΕΚΑ): Αξιολόγηση Τοποθέτησης από τον Άνεργο" title="Έντυπο 6 (ΕΣΕΚΑ): Αξιολόγηση Τοποθέτησης από τον Άνεργο" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Έντυπο 6 (ΕΣΕΚΑ): Αξιολόγηση Τοποθέτησης από τον Άνεργο" href="/images/media/assetfile/2020 10 20 ΕΝΤΥΠΟ 6 ΕΣΕΚΑ.docx">Έντυπο 6 (ΕΣΕΚΑ): Αξιολόγηση Τοποθέτησης από τον Άνεργο</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/2020-10-20 Έντυπο 7 ΕΣΕΚΑ.doc" title="Έντυπο 7 (ΕΣΕΚΑ): Έλεγχος Εφαρμογής Προγράμματος ">	
+													
+														<img src="/images/ic-word.jpg" width="78" height="80" alt="Έντυπο 7 (ΕΣΕΚΑ): Έλεγχος Εφαρμογής Προγράμματος " title="Έντυπο 7 (ΕΣΕΚΑ): Έλεγχος Εφαρμογής Προγράμματος " />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Έντυπο 7 (ΕΣΕΚΑ): Έλεγχος Εφαρμογής Προγράμματος " href="/images/media/assetfile/2020-10-20 Έντυπο 7 ΕΣΕΚΑ.doc">Έντυπο 7 (ΕΣΕΚΑ): Έλεγχος Εφαρμογής Προγράμματος </a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="panel">
+						<table cellpadding="0" cellspacing="0" align="center" height="150px">
+							<tr>
+								<td valign="top" style="vertical-align:center;position:relative;" height="150px;">
+									<table >
+										<tr>
+											<td >
+												<a target="_blank" href="/images/media/assetfile/e-payment-authorisation-epidomata_9Z46-2 (003).docx" title="Έντυπο ΑνΑΔ 9Ζ46/2: Εξουσιοδότηση για Καταβολή Επιδομάτων Κατάρτισης με Τραπεζικό Έμβασμα">	
+													
+														<img src="/images/ic-word.jpg" width="78" height="80" alt="Έντυπο ΑνΑΔ 9Ζ46/2: Εξουσιοδότηση για Καταβολή Επιδομάτων Κατάρτισης με Τραπεζικό Έμβασμα" title="Έντυπο ΑνΑΔ 9Ζ46/2: Εξουσιοδότηση για Καταβολή Επιδομάτων Κατάρτισης με Τραπεζικό Έμβασμα" />
+													
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td><a target="_blank" title="Έντυπο ΑνΑΔ 9Ζ46/2: Εξουσιοδότηση για Καταβολή Επιδομάτων Κατάρτισης με Τραπεζικό Έμβασμα" href="/images/media/assetfile/e-payment-authorisation-epidomata_9Z46-2 (003).docx">Έντυπο ΑνΑΔ 9Ζ46/2: Εξουσιοδότηση για Καταβολή Επιδομάτων Κατάρτισης με Τραπεζικό Έμβασμα</a></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+				</div>
+			</div>
+			<div class="rightArrowBox"> 
+				
+					<a href="javascript:stepcarousel.stepBy('gallery_id', 1)"><img src="/images/ic-gallery-right.jpg" alt="" /></a>
+				
+			</div>
+			<div class="galleryAssetBorder"></div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails1" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails2" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails3" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails4" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails5" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails6" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails7" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails8" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="fullBox">
+					<div class="moreSpeckModal" id="moreDetails9" style="margin:-70px 0px 0px 200px;display:none;">
+						
+						<div class="moreDetailsContent">
+							
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		
+				
+		</div>
+					
+	
+
+		</div>	
+			
+			 <div class="footerContainerBox">
+				<div id="footerBox">
+					<div class="fullBox">
+						
+							<div class="footerContent">
+								<h4>Η ΑνΑΔ </h4>
+								
+								<ul class="footerList">
+									
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/119" title="Η ΑνΑΔ και η Αποστολή της" class="footerStyle">Η ΑνΑΔ και η Αποστολή της</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/120" title="Διοίκηση ΑνΑΔ" class="footerStyle">Διοίκηση ΑνΑΔ</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/121" title="Νομοθεσία" class="footerStyle">Νομοθεσία</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/122" title="Διάρθρωση και Προσωπικό ΑνΑΔ" class="footerStyle">Διάρθρωση και Προσωπικό ΑνΑΔ</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/19225" title="Ανακοινώσεις σχετικά με τον Κορωνοϊό COVID-19" class="footerStyle">Ανακοινώσεις σχετικά με τον Κορωνοϊό COVID-19</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/19239" title="Σχέδιο Δημοσίευσης δυνάμει των περί του Δικαιώματος Πρόσβασης σε Πληροφορίες του Δημοσίου Τομέα Νόμων του 2017 και 2018" class="footerStyle">Σχέδιο Δημοσίευσης δυνάμει των περί του Δικαιώματος Πρόσβασης σε Πληροφορίες του Δημοσίου Τομέα Νόμων του 2017 και 2018</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/123" title="Δημόσιες και Διεθνείς Σχέσεις ΑνΑΔ" class="footerStyle">Δημόσιες και Διεθνείς Σχέσεις ΑνΑΔ</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/124" title="Προγραμματικά έγγραφα και Θεματολόγια ΑνΑΔ" class="footerStyle">Προγραμματικά έγγραφα και Θεματολόγια ΑνΑΔ</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/19192" title="Πολιτική Προστασίας Προσωπικών Δεδομένων" class="footerStyle">Πολιτική Προστασίας Προσωπικών Δεδομένων</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/372" title="Ετήσιες Εκθέσεις" class="footerStyle">Ετήσιες Εκθέσεις</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/4389" title="Αποφάσεις Διοικητικού Συμβουλίου" class="footerStyle">Αποφάσεις Διοικητικού Συμβουλίου</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/19168" title="Πολιτική για τα cookies" class="footerStyle">Πολιτική για τα cookies</a></li>
+										
+									
+								</ul>
+							</div>
+						
+							<div class="footerContent">
+								<h4>Έρευνες και Μελέτες</h4>
+								
+								<ul class="footerList">
+									
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/187" title="Προβλέψεις Αναγκών Απασχόλησης" class="footerStyle">Προβλέψεις Αναγκών Απασχόλησης</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/199" title="Μελέτες" class="footerStyle">Μελέτες</a></li>
+										
+									
+								</ul>
+							</div>
+						
+							<div class="footerContent">
+								<h4>Πιστοποίηση</h4>
+								
+								<ul class="footerList">
+									
+											<li><a target="_blank" href="http://www.hrda.org.cy/easyconsole.cfm/page/project/p_id/23/pc_id/17154" title="Προγράμματα Κατάρτισης για Εργοδοτούμενους Επιχειρήσεων/Οργανισμών" class="footerStyle">Αξιολόγηση και Πιστοποίηση Συντελεστών Παροχής Κατάρτισης (ΑξιοΠιστοΣυν)</a></li>
+<li><a target="_blank" href="http://www.hrda.org.cy/easyconsole.cfm/page/project/p_id/82/pc_id/17154" title="Προγράμματα Κατάρτισης για Εργοδοτούμενους Επιχειρήσεων/Οργανισμών" class="footerStyle">Σύστημα Επαγγελματικών Προσόντων (ΣΕΠ)</a></li>
+
+									
+									
+								</ul>
+							</div>
+						
+							<div class="footerContent">
+								<h4>Κατάρτιση</h4>
+								
+								<ul class="footerList">
+									
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/17139" title="Προγράμματα Κατάρτισης για Εργοδοτούμενους Επιχειρήσεων/Οργανισμών" class="footerStyle">Προγράμματα Κατάρτισης για Εργοδοτούμενους Επιχειρήσεων/Οργανισμών</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/17178" title="Προγράμματα Κατάρτισης για Ανέργους και Νεοεισερχόμενους στην Αγορά Εργασίας" class="footerStyle">Προγράμματα Κατάρτισης για Ανέργους και Νεοεισερχόμενους στην Αγορά Εργασίας</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/4235" title="ΟΛΑ ΤΑ ΣΧΕΔΙΑ" class="footerStyle">ΟΛΑ ΤΑ ΣΧΕΔΙΑ</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/17153" title="Μηχανισμός Υποβολής Ενστάσεων" class="footerStyle">Μηχανισμός Υποβολής Ενστάσεων</a></li>
+										
+											<li><a href="http://www.hrdauth.org.cy/easyconsole.cfm/id/17253" title="Πλαίσιο Πολιτικής και Διαδικασιών για Χειρισμό των Αποτελεσμάτων των Ελέγχων Εφαρμογής Προγραμμάτων Κατάρτισης" class="footerStyle">Πλαίσιο Πολιτικής και Διαδικασιών για Χειρισμό των Αποτελεσμάτων των Ελέγχων Εφαρμογής Προγραμμάτων Κατάρτισης</a></li>
+										
+									
+								</ul>
+							</div>
+						
+						<div class="footerContent" style="padding:0px;width:100%;">
+							<h4>Επικοινωνία</h4>
+							<p class="white" style="padding:0px;">Αρχή Ανάπτυξης Ανθρώπινου Δυναμικού<br/>
+Αναβύσσου 2,  2025 Στρόβολος<br/>
+Τ. Θ. 25431, 1392 Λευκωσία, Κύπρος  <br/>
+Τηλέφωνο: 22515000<br/>
+Τηλέφωνο Λειτουργού <br/> Εξυπηρέτησης: 22390300<br/>
+
+Τηλεομοιότυπο: 22496949
+<br/>Ηλ. Διεύθυνση:  hrda@hrdauth.org.cy </p>
+							
+							
+						</div>
+						
+					</div>
+					<div class="footerDivider"></div>
+					<div class="fullBox">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td><p class="white">ΑνΑΔ - Αρχή Ανάπτυξης Ανθρώπινου Δυναμικού © Πνευματικά δικαιώματα 2011 2021</p></td>
+								<td align="right">
+									<p style="color:#C0D0D9;padding:5px 0px 0px 0px;">
+										<strong>Developed By: </strong><a style="color:#C0D0D9;" href="http://www.dynamicworks.eu" target="_blank" title="Dynamic Works">Dynamic Works</a> |
+										<strong>Powered By: </strong><a style="color:#C0D0D9;" href="http://www.easyconsole.com" target="_blank" title="EasyConsole">EasyConsole CMS</a>
+									</p>	
+								</td>
+							</tr>
+						</table>
+					</div>	
+				</div>
+			
+			</div> 
+			<br clear="all" />
+		
+		
+		</div>
+		 <script type="text/javascript" charset="utf-8">
+			jQuery(document).ready(function(){
+				jQuery("a[rel^='prettyPhoto']").prettyPhoto();
+				
+			});
+			</script> 
+			
+	</body>
+	</html>
+.. 

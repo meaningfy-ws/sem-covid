@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="sk-SK">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Detail uznesenia | Portal OV</title>
+    <base href="https://rokovania.gov.sk/" />
+    <meta charset="utf-8" />
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" href="https://rokovania.gov.sk/rss?id=rpo_material"> 
+
+<link href="/Content/styles/bootstrap.css" rel="stylesheet"/>
+<link href="/Content/styles/jquery.smartmenus.bootstrap.css" rel="stylesheet"/>
+<link href="/Content/styles/site.css" rel="stylesheet"/>
+<link href="/Content/themes/base/accordion.css" rel="stylesheet"/>
+<link href="/Content/themes/base/button.css" rel="stylesheet"/>
+<link href="/Content/themes/base/core.css" rel="stylesheet"/>
+<link href="/Content/themes/base/datepicker.css" rel="stylesheet"/>
+<link href="/Content/themes/base/dialog.css" rel="stylesheet"/>
+<link href="/Content/themes/base/draggable.css" rel="stylesheet"/>
+<link href="/Content/themes/base/menu.css" rel="stylesheet"/>
+<link href="/Content/themes/base/progressbar.css" rel="stylesheet"/>
+<link href="/Content/themes/base/resizable.css" rel="stylesheet"/>
+<link href="/Content/themes/base/selectable.css" rel="stylesheet"/>
+<link href="/Content/themes/base/selectmenu.css" rel="stylesheet"/>
+<link href="/Content/themes/base/slider.css" rel="stylesheet"/>
+<link href="/Content/themes/base/sortable.css" rel="stylesheet"/>
+<link href="/Content/themes/base/spinner.css" rel="stylesheet"/>
+<link href="/Content/themes/base/tabs.css" rel="stylesheet"/>
+<link href="/Content/themes/base/theme.css" rel="stylesheet"/>
+<link href="/Content/themes/base/tooltip.css" rel="stylesheet"/>
+
+    <script src="/Content/scripts/jquery-1.11.2.js"></script>
+<script src="/Content/scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="/Content/scripts/bootstrap.js"></script>
+<script src="/Content/scripts/jquery.smartmenus.js"></script>
+<script src="/Content/scripts/jquery.smartmenus.bootstrap.js"></script>
+<script src="/Content/scripts/lomtec.jquery.extensions.js"></script>
+<script src="/Content/scripts/jquery.tts.js"></script>
+<script src="/Content/scripts/lomtec.startup.js"></script>
+
+<script src="/Content/scripts/jquery-ui-1.11.2.js"></script>
+<script src="/Content/scripts/i18n/jquery.ui.datepicker-sk.js"></script>
+<script src="/Content/scripts/jquery.ui.catcomplete.js"></script>
+<script src="/Content/scripts/jquery.ui.jsrender.js"></script>
+<script src="/Content/scripts/jquery.ui.popup.js"></script>
+<script src="/Content/scripts/lomtec.startup.ui.js"></script>
+
+<script type="text/javascript">
+    $.datepicker.setDefaults($.datepicker.regional['sk']);
+</script>
+
+    <script src="/Scripts/cldr.js"></script>
+<script src="/Scripts/cldr/event.js"></script>
+<script src="/Scripts/cldr/supplemental.js"></script>
+<script src="/Scripts/globalize.js"></script>
+<script src="/Scripts/globalize/number.js"></script>
+<script src="/Scripts/globalize/date.js"></script>
+<script src="/Content/scripts/jquery.validate.js"></script>
+<script src="/Content/scripts/jquery.validate.unobtrusive.js"></script>
+<script src="/Content/scripts/lomtec.startup.validator.js"></script>
+
+    
+    
+
+    <script type="text/javascript">
+        $(function () {
+            $('#main-menu').smartmenus({
+                subMenusSubOffsetX: 1,
+                subMenusSubOffsetY: -8
+            });
+        });
+    </script>
+
+    <style type="text/css">
+	    #main-menu {
+		    position:relative;
+		    z-index:9999;
+		    width:auto;
+	    }
+	    #main-menu ul {
+		    width:12em; /* fixed width only please - you can use the "subMenusMinWidth"/"subMenusMaxWidth" script options to override this if you like */
+	    }
+</style>
+    
+</head>
+<body>
+    
+    
+    
+<div class="txt-display">
+    
+    <h1>
+	&Uacute;rad vl&aacute;dy SR - Port&aacute;l Otvorenej vl&aacute;dy</h1>
+<p>
+	<a href="TextVersion?forceBrowserDetector=normal">Prepn&uacute;ť na grafick&uacute; verziu str&aacute;nky.</a></p>
+   
+      
+</div>
+
+<div class="hidden-links">
+    
+    <p>
+	<a accesskey="n" href="/document/news">Novinky a aktuality</a> <a accesskey="e" href="/info">Elektronick&eacute; služby</a> <a accesskey="i" href="/infohome">Informačn&yacute; port&aacute;l</a> <a accesskey="a" href="/SubscriberPortal/NotificationList">Abonentsk&yacute; port&aacute;l</a></p>
+   
+  
+</div>
+      
+      
+
+<header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 no-gutter-xs">
+                    <div class="header">
+                        <div class="navbar-header">
+                            <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                                <span class="sr-only">menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand hidden-xs" href="/">
+                                <img src="/content/images/logo.png" alt="Detail uznesenia" /></a>
+
+                            <a class="navbar-brand visible-xs" href="/">
+                                <img src="/content/images/mov_mobile.png"  /></a>
+                            
+                             <div class="header-right hidden-xs">
+                             <ul>                                 
+                               
+                                        <li><a accesskey="t" href="/TextVersion?forceBrowserDetector=blind"><img src="/content/images/txtversion.png" alt="Textová verzia" title="Textová verzia" /></a></li>
+                                
+                                <li><a href="https://rokovania.gov.sk/rss"><img src="/content/images/rss.png" alt="RSS" title="RSS" /></a></li>
+                                <li><a href="SiteMap" accesskey="m"><img src="/content/images/sitemap.png" alt="Mapa stránky" title="Mapa stránky" /></a></li>
+                                <li><a href="javascript:void(0)" data-tts="/text-to-speech" data-tts-src="content" ><img src="/content/images/tts.png" alt="Audio verzia" title="Audio verzia" /></a></li>
+                                <li><a href="javascript:window.print()"><img src="/content/images/print.png" alt="Vytlačiť" title="Vytlačiť" /></a></li>
+                                <li class="text-control ">
+                                    <a href="#" class="ts" data-size="12">A</a>
+                                    <a href="#" class="tm active" data-size="13">A</a>
+                                    <a href="#" class="tl" data-size="14">A</a>
+                                </li> 
+                             </ul>
+
+                            <ul class="header-login">
+                                    <li class="login"><a href="/client/sign-in">Prihlásenie</a></li>
+                             </ul>
+                            </div>
+
+                        </div>
+                        <nav role="navigation" class="navbar-collapse collapse bs-navbar-collapse">
+                                <ul class="nav navbar-nav sm">
+        <li class="hidden-xs"><a href="/" class="home-icon"><img src="/content/images/home.png" alt="uvod" /></a></li>  
+    <li class="uvod "><a href="Document/News">Novinky a aktuality</a></li>
+    <li class="elektronickesluzby "><a href="info">Elektronick&#233; služby</a></li>
+    <li class="active"><a href="infohome" class="dropdown-toggle" data-toggle="dropdown">Informačn&#253; port&#225;l</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    <li class="active"><a href="-" class="dropdown-toggle" data-toggle="dropdown">Rokovania vl&#225;dy</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    <li class="rvl_search "><a href="RVL/Searching">Vyhľad&#225;vanie z&#225;znamov</a></li>
+    <li class="materialy "><a href="RVL/Material">Predložen&#233; materi&#225;ly</a></li>
+    <li class="rokovania "><a href="RVL/Negotiation">Rokovania vl&#225;dy</a></li>
+    <li class="uznesenia active"><a href="RVL/Resolution">Uznesenia vl&#225;dy</a></li>
+        </ul>
+    </li>
+    <li class=""><a href="-" class="dropdown-toggle" data-toggle="dropdown">Rokovania poradn&#253;ch org&#225;nov</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    <li class="materialy "><a href="RPO/Material">Predložen&#233; materi&#225;ly</a></li>
+    <li class="rokovania "><a href="RPO/Negotiation">Rokovania poradn&#253;ch org&#225;nov</a></li>
+    <li class="uznesenia "><a href="/RPO/MaterialDocument/">Uznesenia/Stanovisk&#225;</a></li>
+        </ul>
+    </li>
+    <li class=""><a href="-" class="dropdown-toggle" data-toggle="dropdown">Kontroly</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    <li class="plan-kontrolnej-cinnosti "><a href="KON/InspectionPlan">Pl&#225;ny kontrolnej činnosti</a></li>
+    <li class="informovanie-sa-o-subjekte "><a href="KON/Company">Kontrolovan&#233; subjekty</a></li>
+    <li class="hodnotenie-kontrolnej-cinnosti "><a href="KON/Assessment">Hodnotenia kontrolnej činnosti</a></li>
+        </ul>
+    </li>
+    <li class=""><a href="-" class="dropdown-toggle" data-toggle="dropdown">Plnenie &#250;loh</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    <li class="plnenie-uloh "><a href="PUL/Task">&#218;lohy z uznesen&#237; vl&#225;dy SR</a></li>
+    <li class="informacie-o-plneni-uloh "><a href="PUL/EvaluationPeriod">Inform&#225;cie o plnen&#237; &#250;loh</a></li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="informacny-servis "><a href="SubscriberPortal/NotificationList">Abonentsk&#253; port&#225;l</a></li>
+    </ul>
+
+                        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+<hr>
+    <div class="breacrumb-wrap">
+        <div class="container">
+            <div class="btn-group btn-breadcrumb visible-xs-inline-block">
+                <a href="https://rokovania.gov.sk/" class="btn btn-default"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                
+                        <a href="infohome" class="btn btn-default">
+                            <div>Informačn&#253; port&#225;l</div>
+                        </a>                    
+                        <a href="RVL/Resolution" class="btn btn-default">
+                            <div>Uznesenia vl&#225;dy</div>
+                        </a>                    
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+        
+        
+
+        
+
+        <section class="main-content"  id="content" >
+            
+
+
+<div class="row content-section">
+        <ul class="breadcrumb">
+        <li><a href="https://rokovania.gov.sk/">&#218;vod</a></li>
+               <li><a href="infohome">Informačn&#253; port&#225;l</a></li>
+               <li><span>Rokovania vl&#225;dy</span></li>
+               <li><a href="RVL/Resolution">Uznesenia vl&#225;dy</a></li>
+    </ul>
+
+    <div class="filter">
+        <div class="col-sm-12">
+            <h1>Detail uznesenia</h1>
+
+<fieldset>
+    <legend>
+        <strong>Informačný blok</strong>
+    </legend>
+
+
+    <div class="row form-row">
+        <div class="col-sm-2">
+            <label>Názov uznesenia:</label>
+        </div>
+
+        <div class="col-sm-4 label-align">
+            k n&#225;vrhu na skončenie n&#250;dzov&#233;ho stavu, zrušenie uloženia pracovnej povinnosti na zabezpečenie v&#253;konu zdravotnej starostlivosti, zrušenie z&#225;kazu uplatňovania pr&#225;va na štrajk niektor&#253;m pracovn&#237;kom a zrušenie z&#225;kazu uplatňovania pr&#225;va pokojne sa zhromažďovať vyhl&#225;sen&#233;ho uznesen&#237;m vl&#225;dy Slovenskej republiky č. 114 z 15. marca 2020 a rozš&#237;ren&#233;ho uznesen&#237;m vl&#225;dy Slovenskej republiky č. 115 z 18. marca 2020, uznesen&#237;m vl&#225;dy Slovenskej republiky č. 169 z 27. marca 2020, uznesen&#237;m vl&#225;dy Slovenskej republiky č. 207 zo 6. apr&#237;la 2020 a uznesen&#237;m vl&#225;dy Slovenskej republiky č. 233 zo 16. apr&#237;la 2020
+        </div>
+
+        <div class="col-sm-2">
+            <label>Číslo materiálu:</label>
+        </div>
+
+        <div class="col-sm-4 label-align">
+            <a href="/RVL/Material/24954/1">UV-12317/2020</a>
+        </div>
+    </div>
+
+    <div class="row form-row">
+        <div class="col-sm-2">
+            <label>Predkladateľ:</label>
+        </div>
+
+        <div class="col-sm-10 label-align">
+             minister vn&#250;tra a predseda &#250;stredn&#233;ho kr&#237;zov&#233;ho št&#225;bu
+        </div>
+    </div>
+    <div class="row form-row">
+        <div class="col-sm-2">
+            <label>Dátum uznesenia:</label>
+        </div>
+
+        <div class="col-sm-4 label-align">
+            10.06.2020
+        </div>
+        <div class="col-sm-2">
+            <label>Číslo uznesenia:</label>
+        </div>
+
+        <div class="col-sm-4 label-align">
+            366/2020
+        </div>
+    </div>
+    <div class="row form-row">
+        <div class="col-sm-2">
+            <label>Typ uznesenia:</label>
+        </div>
+
+        <div class="col-sm-10">
+            Uznesenie
+        </div>
+    </div>
+    
+    <div class="row form-row"> 
+        <div class="col-sm-2">
+            <label>Číslo rokovania:</label>
+        </div>
+
+        <div class="col-sm-10">
+            <a href="/RVL/Negotiation/1063">
+                24
+            </a>
+        </div>
+    </div>
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+<fieldset>
+    <legend>
+        <strong><label for="RVL_ResolutionDetail_ResolutionDocumentList_Title">Pr&#237;lohy uznesenia</label></strong>
+    </legend>
+<div class="table-responsive">                        
+    <table class="table">
+        <colgroup>
+            <col />
+            <col width="35%" />        
+            <col width="35%" />
+            <col width="20%" />
+            <col width="10%" />
+        </colgroup>
+        <tr>
+            <th></th>
+            <th>Názov</th>
+            <th>Dátum pridania</th>
+            <th>Typ súboru</th>
+            <th>Veľkosť</th>
+            <th></th>
+        </tr>
+
+            <tr class="even first last">
+                <td><img src="/content/images/pdf.gif" alt="pdf"></td>
+                <td>366/2020</td>
+                <td>14.06.2020</td>
+                 <td>pdf</td>
+                <td>186,95 kB</td>
+                <td>
+                    <a href="download.dat?id=A528E62262674FE082BE88040D4D0284-D28935DD786A48E1D0BB33210CD9EAF4">
+                        <span class="glyphicon glyphicon-download-alt" aria-hidden="true" title='stiahnutie súboru'></span>
+                    </a>
+                </td>
+            
+            </tr>
+    </table>
+</div>
+</fieldset>
+<br />
+
+
+
+
+
+<fieldset>
+    <legend>
+        <strong>História:</strong>
+    </legend>
+
+    <div class="row form-row">
+        <div class="col-sm-4 col-md-3">
+            <label>Dátum zverejnenia:</label>
+        </div>
+
+        <div class="col-sm-8 col-md-9 label-align">
+            14.06.2020 09:25
+        </div>
+    </div>
+
+    <div class="row form-row">
+        <div class="col-sm-4 col-md-3">
+            <label>Dátum aktualizácie:</label>
+        </div>
+
+        <div class="col-sm-8 col-md-9 label-align">
+            14.06.2020 09:25
+        </div>
+    </div>
+    
+</fieldset>
+
+<div class="col-sm-12">            
+    <div class="col-sm-2">
+        <a class="btn btn-default btn-back">
+            Späť
+        </a>
+    </div>
+
+</div>
+
+
+
+        </div>
+    </div>
+</div>
+        </section>
+        
+    </div>
+
+<hr>
+    
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 ta-left">
+                    Copyright © 2021   Úrad vlády Slovenskej republiky<br />
+Informácie zverejnené na Portáli Otvorenej vlády majú informatívny charakter.
+                    <br />
+                </div>
+                <div class="col-sm-6 ta-right hidden-xs">
+                    Správcom portálu a jeho obsahu je <a href="http://www.vlada.gov.sk/zakladne-kontakty/ ">Úrad vlády Slovenskej republiky.</a><br />
+                    Prevádzku stránky a správu jej obsahu zabezpečuje<br />
+                    <a href="https://www.nases.gov.sk/">Národná agentúra pre sieťové a elektronické služby.</a>
+                </div>
+
+            </div>
+            <br />
+            <div class="col-sm-12">
+                <div class="flex">
+                    <a href="http://www.opis.gov.sk/" target="_blank" class="flex-item">
+                        <img src="/content/images/footer_opis.png" alt="Operačný program informatizácia spoločnosti" title="Operačný program informatizácia spoločnosti" /></a>
+                    <a href="http://www.vlada.gov.sk/" target="_blank" class="flex-item">
+                        <img src="/content/images/footer_uvsr.png" alt="Úrad vlády Slovenskej republiky - Riadiaci orgán OPIS" title="Úrad vlády Slovenskej republiky - Riadiaci orgán OPIS" /></a>
+                    <a href="http://www.finance.gov.sk/" target="_blank" class="flex-item">
+                        <img src="/content/images/footer_mfsr.png" alt="Ministerstvo financií Slovenskej republiky - Sprostredkovateľský orgán OPIS" title="Ministerstvo financií Slovenskej republiky - Sprostredkovateľský orgán OPIS" /></a>
+                    <a href="http://europa.eu/index_sk.htm" target="_blank" class="flex-item">
+                        <img src="/content/images/footer_eu.png" alt="Európska únia" title="Európska únia" /></a>
+                    <a href="https://rokovania.gov.sk/sys" class="flex-item">
+                        <img src="/content/images/opendata.png" alt="Otvorené dáta" title="Otvorené dáta" /></a><br />
+                </div>
+            </div>
+
+            <br />
+            <p>Projekt je spolufinancovaný z Európskeho fondu regionálneho rozvoja</p>
+
+
+            
+
+            <p>
+	<a href="stranka/vyhlasenie-o-pristupnosti">Vyhl&aacute;senie o pr&iacute;stupnosti</a> | <a href="stranka/pouzivanie-cookies">Použ&iacute;vanie cookies</a></p>
+
+            MOV v1.0.0.0,  AO v5.1.21.5078
+        </div>
+    </div>
+    <script type="text/javascript" id="cookiebanner" src="/content/scripts/cookies.js" data-cookie="CookieInfoScript" data-text-align="left"></script>
+</footer>
+
+
+
+
+    
+</body>
+</html>

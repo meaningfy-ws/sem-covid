@@ -1,0 +1,1176 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>ORD DE URGENTA       150 27/08/2020 - Portal Legislativ</title>
+    <link href="/Content/css?v=iKXncnEnzeZrcZDXQ4gyEFYtrgIhK9GqKaiZ1xjeUOQ1" rel="stylesheet"/>
+
+    <link href="/Content/themes/base/css?v=7T_tuS9RP8sQe2HxerJdL6STYU-qCHtjrExyjsSiYcQ1" rel="stylesheet"/>
+
+    <meta name="keywords" content="ORD DE URGENTA       150 27/08/2020 - Portal Legislativ">
+    <meta name="description" content="ORD DE URGENTA       150 27/08/2020 - Portal Legislativ">
+    <meta name="title" content="ORD DE URGENTA       150 27/08/2020 - Portal Legislativ">
+    <link href="/Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/Content/Images/Site/temanoua/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/Content/public.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="/bundles/modernizr?v=qVODBytEBVVePTNtSFXgRX0NCEjh9U_Oj8ePaSiRcGg1"></script>
+
+    <script src="/bundles/jquery?v=UgyEMAYOuSB9Bb6HcOEVHpd6fIIp54yF086SRNVcdIY1"></script>
+
+    <script src="/bundles/jqueryui?v=O4Awnx3xYnFLmC1TAsxXigS8kLERW18heIHqD0bRSTE1"></script>
+
+    <script src="/bundles/bootstrap?v=WyYa2dIFje-38fhrXc_sQiaOB-lu9j8r45bVIBgtqrw1"></script>
+
+    <script type="text/javascript" language="JavaScript">
+        var backColor = '#f0ffff';
+        var actColor = 'white';
+        var brdColor = 'black';
+        function marcheaza(id_ttl, id) {
+            /*id.style.backgroundColor=backColor;
+            id_ttl.style.cursor='pointer';
+            id.style.borderColor=brdColor;
+            id.style.borderStyle='dashed';*/
+        }
+        function demarcheaza(id_ttl, id) {
+            /*id.style.backgroundColor='transparent';
+            id_ttl.style.cursor='default';
+            id.style.borderColor=actColor;
+            id.style.borderStyle='dotted';*/
+        }
+        function plusMinus(id1, id2) {
+            if (id1.style.display == 'none') {
+                id1.style.display = 'inline';
+                id2.style.display = 'none';
+            }
+            else {
+                id1.style.display = 'none';
+                id2.style.display = 'inline';
+            }
+        }
+        function setCursor(id, tipCursor) {
+            id.style.cursor = tipCursor;
+        }
+    </script>
+    <script>
+        function pozitioneaza(id) {
+            var id_nou = id.substring(0, id.length - 4);
+           //document.getElementById('toTop').click();
+            $("#toTop").trigger("click");
+ 
+        }
+ 
+
+    </script>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix-nav" data-twttr-rendered="true">
+    <a name="top"></a>
+
+
+    <div id="toTop" class="toggle-menu menu-left"><a class="toggle-menu menu-left"><img src="/Content/Images/Site/temanoua/butonmeniu.png" alt="logo" /></a> </div>
+    <div id="masterwrapper page-content">
+        <div id="header_wrapper" class="navbar navbar-default">
+            <!--navbar-fixed-top-->
+            <header>
+                <div id="header">
+                    <div class="header_top">
+                        <div class="banner">
+                            <div class="row">
+                                <img class="img-responsive center-block pozawidth" id="logoportal" src="/Content/Images/Site/header_logo.png" style="width:85%;" alt="logo" />
+                            </div>
+                        </div>
+                        <div class="row margin0" id="textlogo">
+                            <center>
+                                <h4 class="reducerespatiu logo">Portal Legislativ</h4>
+
+                            </center>
+                            <!-- <div style="float:right; position:relative; right:0; margin-top:-23px;">
+                                <a data-toggle="modal" data-target="#mesajBetaModal" style="cursor:pointer;">
+                                    <img width="50" src="/Content/Images/Site/versiunebeta.png" alt="Versiune Beta 2.0" />
+                                </a>
+                            </div>-->
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="menu_wrapper navbar navbar-inverse" role="navigation" id="slide-nav">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a id="btnNavbar" class="navbar-toggle">
+                                    <span class="sr-only">Meniu</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </a>
+
+                            </div>
+                            <div id="slidemenu" style="cursor:pointer;">
+                                <div id="menu" onclick="pozitioneaza('')">
+                                    <a style=" cursor:pointer;" onclick="pozitioneaza('')">
+                                        <h3>Meniu</h3>
+                                    </a>
+                                    <ul></ul>
+                                    <ul class="mainmenu">
+ 
+        <li>
+            <a href="/Public/Acasa" class="main_link">
+
+                Acasă
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/NLEX" class="main_link">
+
+                Despre Proiect
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/Functionalitati" class="main_link">
+
+                Facilități Oferite 
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/LegaturiUtile" class="main_link">
+
+                Legături Utile
+
+            </a>
+        </li>
+
+
+             
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </header>
+            <div class="meniunu">
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+                    <h3 style="padding-left:65px; margin-top:-5px;">Meniu</h3>
+                    <div id="meniutitlu"></div>
+                    <div id="meniupaginastart">
+ 
+        <li>
+            <a href="/Public/Acasa" class="main_link">
+
+                Acasă
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/NLEX" class="main_link">
+
+                Despre Proiect
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/Functionalitati" class="main_link">
+
+                Facilități Oferite 
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/LegaturiUtile" class="main_link">
+
+                Legături Utile
+
+            </a>
+        </li>
+
+
+              <br />
+                        Prin portalul N-Lex se acorda acces gratuit la legislatiile nationale ale statelor membre, portalul fiind
+                        conceput pe baza unei tehnologii de comunicare interne, ce permite accesarea directa a bazelor de date legislative nationale,
+                        rezultatele cautarilor venind direct de la sursa.
+                    </div>
+                    <script>
+                        if (window.location.href.indexOf('DetaliiDocument') != -1) {
+                            $('#meniupaginastart').hide();
+                        }
+                        else {
+                            $('#meniupaginastart').show();
+                        }
+                    </script>
+                </nav>
+            </div>
+        </div>
+ 
+        <div id="page_content" style="margin-top:-15px;">
+            <div id="page_wrapper">
+                <div class="articole_wrapper">
+                    
+
+
+<style>
+    #masterwrapper, #page_content, #page_wrapper {
+        background-color: white;
+        background: white;
+    }
+
+    #document_info {
+        font-size: 15px;
+    }
+
+    #fisaact {
+        font-size: 14px;
+    }
+
+    .seincarca {
+        position: fixed;
+        z-index: 1100;
+        left: 45%;
+        /*	margin-top: -500px;*/
+        top: 45%;
+        height: 100px;
+        background-color: #ffffff;
+        -moz-box-shadow: 5px 5px 5px #400;
+        -webkit-box-shadow: 5px 5px 5px #400;
+        box-shadow: 5px 5px 5px #400;
+        border: 1px solid #dadada;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -khtml-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+    .cbsloader {
+        background-image: url(~/../../../Content/Images/Site/bar-circle.gif);
+        background-repeat: no-repeat;
+    }
+
+    #modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('~/../../../Content/Images/Site/tint20.png') 0 0 repeat;
+        background: rgba(0,0,0,0.2);
+    }
+    #sidebar  {
+        &.affix;
+
+    {
+        top: 10px;
+        bottom: auto;
+    }
+
+    &.affix-top {
+        position: absolute;
+        top: 20px;
+    }
+
+    &.affix-bottom {
+        position: relative;
+        top: auto;
+        bottom: auto;
+    }
+
+    }
+
+</style>
+ <script>
+
+     function imgSIZE() {
+         $("#infoactinfoact img").one("load", function() {
+             try {
+                 var theImage = new Image();
+                 theImage.src = $(this).attr("src");
+                 var imgW = theImage.width;
+                 var imgH = theImage.height;
+                 // console.log($(this).attr("src") + "   - " + imgW + ", " + imgH);
+
+                 
+                 $(this).css("max-width", "100%");
+                 $(this).css("width", imgW+"px");
+                 
+             }
+             catch(e) {
+                 // console.log("horror> "+e);
+             }
+         });
+     }
+
+ </script>
+
+<div class="container bs-docs-container"  data-target="#sidebar">
+
+    <div class="row" id="textdocumentleg">
+        <div class="col-md-3" id="meniu">
+            <div class="bs-docs-sidebar affix-top meniuaffix" id="sidebar">
+                <div class="articole_wrapper">
+                    <div class="h1_articole">
+                        <h1>Cuprins</h1>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+                <div id="loaderDiv" class="seincarca" style="display: none; text-align: center; width: auto !important; height: auto !important; padding: 40px;">
+                    <div id="modal"></div>
+                    <progress max="100">
+                        <div class="cbsloader">
+                            <div style="color:#333; margin-top:-40px; margin-left:130px;">
+                            </div>
+                            <br>
+                            <div style="color:#333; margin-left:49px; margin-top:-5px;">
+                                <b>Se încarcă, vă rugăm asteptati.</b><br><br>
+                            </div>
+                        </div>
+                    </progress>
+                </div>
+                <div class="details_navigation">
+
+                    <input type="hidden" id="id_act" name="id_act" value="229711" />
+                    <div class="nav_header expanded" data-target="FormeAct" style="margin-left:-10px; font-weight: bold !important;">
+                    </div>
+                    <div class="nav_content expanded" data-target="FormeAct" style="margin-left: -10px;">
+                            <div class="forme_act">
+                                <!--
+                                -->
+                            </div>
+                            <div class="forme_act">
+                                <!--
+                                -->
+                            </div>
+                            <div class="forme_act">
+                                <!--
+                                -->
+                            </div>
+                    </div>
+
+                    <div id="label_fisaact" class="nav_header" onclick="toggle_fisaact()" style="margin-left:-10px !important; margin-top:10px;">
+                        <span id="label_fisaact_plus_minus" style="cursor:pointer">+</span>
+                        <span style="cursor: pointer; font-weight: bold; color: #3c3636; ">Fișă act</span>
+                    </div>
+
+                    <div id="content_fisaact" class="nav_content" style="display: none;">
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="1" id="Actiunisuferite" name="Actiunisuferite" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Actiunisuferite" type="hidden" value="false" />
+                                <label for="Actiunisuferite">Actiuni suferite</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="2" id="ActiuniInduse" name="ActiuniInduse" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="ActiuniInduse" type="hidden" value="false" />
+                                <label for="ActiuniInduse">Actiuni Induse</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="3" id="Referape" name="Referape" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Referape" type="hidden" value="false" />
+                                <label for="Referape">Refera pe</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="4" id="Referitde" name="Referitde" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Referitde" type="hidden" value="false" />
+                                <label for="Referitde">Referit de</label>
+                            </div>
+                    </div>
+
+                </div>
+                <p style="padding-top: 10px; font-variant: small-caps; border-bottom: 3px solid #BB3A3A; color: #112F5D; font-size: 18px; font-family: EB Garamond !important; ">Cuprinsul Actului</p>
+                <ul class="nav bs-docs-sidenav" style=" margin-top:5px;">
+
+                    privind aprobarea Schemei de ajutor de stat pentru susținerea activității crescătorilor  din sectorul suin în contextul crizei economice generate de pandemia de COVID-19<li><a href="#id_artA44_ttl" onclick="&#xA;        pozitioneaza('id_artA44_ttl')&#xA;      ">Articolul 1</a></li><li><a href="#id_artA50_ttl" onclick="&#xA;        pozitioneaza('id_artA50_ttl')&#xA;      ">Articolul 2</a></li><li><a href="#id_artA54_ttl" onclick="&#xA;        pozitioneaza('id_artA54_ttl')&#xA;      ">Articolul 3</a></li><li><a href="#id_artA57_ttl" onclick="&#xA;        pozitioneaza('id_artA57_ttl')&#xA;      ">Articolul 4</a></li><li><a href="#id_artA63_ttl" onclick="&#xA;        pozitioneaza('id_artA63_ttl')&#xA;      ">Articolul 5</a></li><li><a href="#id_artA70_ttl" onclick="&#xA;        pozitioneaza('id_artA70_ttl')&#xA;      ">Articolul 6</a></li><li><a href="#id_artA81_ttl" onclick="&#xA;        pozitioneaza('id_artA81_ttl')&#xA;      ">Articolul 7</a></li><li><a href="#id_artA84_ttl" onclick="&#xA;        pozitioneaza('id_artA84_ttl')&#xA;      ">Articolul 8</a></li><li><a href="#id_artA88_ttl" onclick="&#xA;        pozitioneaza('id_artA88_ttl')&#xA;      ">Articolul 9</a></li><li><a href="#id_artA90_ttl" onclick="&#xA;        pozitioneaza('id_artA90_ttl')&#xA;      ">Articolul 10</a></li><li><a href="#id_artA94_ttl" onclick="&#xA;        pozitioneaza('id_artA94_ttl')&#xA;      ">Articolul 11</a></li><li><a href="#id_artA97_ttl" onclick="&#xA;        pozitioneaza('id_artA97_ttl')&#xA;      ">Articolul 12</a></li><li><a href="#id_artA99_ttl" onclick="&#xA;        pozitioneaza('id_artA99_ttl')&#xA;      ">Articolul 13</a></li><li><a href="#id_artA109_ttl" onclick="&#xA;        pozitioneaza('id_artA109_ttl')&#xA;      ">Articolul 14</a></li><li><a href="#id_artA111_ttl" onclick="&#xA;        pozitioneaza('id_artA111_ttl')&#xA;      ">Articolul 15</a></li><li><a href="#id_artA113_ttl" onclick="&#xA;        pozitioneaza('id_artA113_ttl')&#xA;      ">Articolul 16</a></li><li><a href="#id_artA115_ttl" onclick="&#xA;        pozitioneaza('id_artA115_ttl')&#xA;      ">Articolul 17</a></li>PRIM-MINISTRULUDOVIC ORBANContrasemnează:p. Ministrul agriculturii și dezvoltării rurale,George Scarlat,secretar de statMinistrul finanțelor publice,Vasile-Florin Cîțup. Ministrul afacerilor externe,Iulia Raluca Matei,secretar de stat<li><a href="#id_anxA130_ttl" onclick="&#xA;        pozitioneaza('id_anxA130_ttl')&#xA;      ">Anexa nr. 1*</a></li><li><a href="#id_anxA138_ttl" onclick="&#xA;        pozitioneaza('id_anxA138_ttl')&#xA;      ">Anexa nr. 2</a></li><li><a href="#id_anxA273_ttl" onclick="&#xA;        pozitioneaza('id_anxA273_ttl')&#xA;      ">Anexa nr. 3</a></li><li><a href="#id_anxA341_ttl" onclick="&#xA;        pozitioneaza('id_anxA341_ttl')&#xA;      ">Anexa nr. 4</a></li>
+
+                </ul>
+                <a class="back-to-top" onclick="pozitioneaza('')" href="#top">
+                    Reveniti in topul paginii
+                </a>
+                <div style="text-align:center;">
+                    
+
+                    <a target="_blank" class="btn btn-primary btn-xs" href=/Public/FormaPrintabila/00000G2TL1SNGSKABAV0Q4N4YXPV2SPP>
+                        <span class="glyphicon glyphicon-print"></span> Forma printabilă
+                    </a>
+                </div>
+                <div class="articole_wrapper">
+                    <div class="h1_articole">
+
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+
+
+
+        <div class="col-md-8" role="main" id="infoactinfoact">
+            <div class="bs-docs-section">
+                <div class="main_details">
+                    
+                    <div class="document_info" id="document_info">
+                        <div id="forme_act_container" data-id="FormeAct" data-state="loaded">
+                                    <div id="div_Formaconsolidata" class="content_forma_act" data-state="loaded">
+                                        
+                                        <span class="S_DEN">ORDONANȚĂ DE URGENȚĂ nr. 150 din 27 august 2020</span><span class="S_HDR">privind aprobarea Schemei de ajutor de stat pentru susținerea activității crescătorilor  din sectorul suin în contextul crizei economice generate de pandemia de COVID-19</span><table cellspacing="0px" cellpadding="0px" class="S_EMT"><tr valign="baseline"><td width="75px"><span class="S_EMT_TTL">EMITENT</span></td><td><span class="S_EMT_BDY"><li>GUVERNUL ROMÂNIEI</li></span></td></tr></table><span class="S_PUB"><span class="S_PUB_TTL">Publicat în 
+			</span><span class="S_PUB_BDY">MONITORUL OFICIAL nr. 809 din 2 septembrie 2020</span></span><span id="fisaact"><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='actiuni_suferite'></span><br/><span style='display:none;border:1px solid;height:180px;overflow:auto' id='actiuni_induse'></span><br/><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='refera_pe'></span><br/><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='referit_de'></span><br/><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA31">În contextul actual, răspândirea virusului COVID-19 este o urgență severă de sănătate publică pentru cetățeni și entitățile economice și un șoc major atât pentru economiile globale, cât și pentru economia națională, motive pentru care statele membre ale Uniunii Europene ar trebui să adopte măsuri de natură economică pentru a atenua aceste repercusiuni negative asupra economiei.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA32">Prin circumstanțele excepționale create de pandemia de COVID-19, întreprinderile de toate tipurile se confruntă cu o lipsă severă de lichiditate. De asemenea, întreprinderile solvabile sau mai puțin solvabile se pot confrunta cu o lipsă bruscă sau chiar indisponibilitate de lichiditate. Acest lucru este valabil atât pe termen scurt și mediu și poate afecta grav situația economică a multor întreprinderi sănătoase și situația angajaților acestora, cu posibile consecințe chiar și pe termen lung, periclitând supraviețuirea acestora.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA33">Luând în considerare cele menționate anterior, se impune o acțiune decisivă cu un impact ridicat pentru asigurarea lichidității întreprinderilor pe perioada în care se manifestă efectele COVID-19, astfel încât acestea să se redreseze odată ce situația actuală este depășită.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA34">Prin Comunicarea Comisiei Europene privind Cadrul temporar în materie de ajutor de stat în contextul pandemiei de COVID-19 sunt menționate principalele măsuri pe care statele membre le pot adopta în vederea susținerii activității economice.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA35">Sectorul de creștere a animalelor a întâmpinat dificultăți prin imposibilitatea de a comercializa produsele de origine animală obținute și înregistrând astfel pierderi economice însemnate.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA36">În această perioadă excepțională, piața cărnii de porc, pe lângă efectele pestei porcine africane, se confruntă cu mari probleme, respectiv scăderea prețului cărnii de porc, imposibilitatea livrării animalelor către sacrificare și procesare, creșterea prețului de achiziție a purceilor și furajelor, scăderea cantităților de carne comercializată prin vânzare directă pe piață și HoReCa.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA37">De asemenea, din cauza restricțiilor de mișcare impuse de situația creată de COVID-19, sectorul suin din România a suferit pierderi substanțiale care au condus la diminuarea numărului de animale de reproducție și a efectivelor pentru abatorizare, precum și la perturbarea lanțurilor de aprovizionare.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA38">Ținând cont de dificultățile din sectorul creșterii animalelor, sunt necesare susținerea activității de creștere a suinelor prin măsuri economice adecvate, în vederea asigurării hranei, a materiilor prime pentru industria alimentară, și menținerea locurilor de muncă.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA39">În lipsa acordării măsurilor prevăzute de schema de ajutor de stat, crescătorii din sectorul suin sunt în imposibilitatea de a-și asigura continuarea activității.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA40">Consecințele neadoptării acestor măsuri vor fi eliminarea de pe piață a unui număr semnificativ de întreprinderi din sectorul de creștere a suinelor din România și apariția unor efecte sociale deosebit de importante.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA41">Întrucât statul este obligat să ia măsuri pentru asigurarea continuării activității economice și întrucât elementele mai sus prezentate vizează interesul general public și constituie situații de urgență și extraordinare, a căror reglementare nu poate fi amânată,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA42">în temeiul <A href="~/../../../Public/DetaliiDocumentAfis/47355">art. 115 alin. (4) din Constituția României, republicată,</A><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA43">Guvernul României adoptă prezenta ordonanță de urgență.<!----></span><span class="S_ART" style="display: block; color:black;" id="id_artA44" name="id_artA44"><span class="TAG_COLLAPSED" id="id_cllpsdA44" onMouseOver="marcheaza(id_cllpsdA44,id_artA44)" onMouseOut="demarcheaza(id_cllpsdA44,id_artA44)" onMouseDown="plusMinus(id_artA44_bdy,id_cllpsdA44)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA44_ttl" onMouseOver="marcheaza(id_artA44_ttl,id_artA44)" onMouseOut="demarcheaza(id_artA44_ttl,id_artA44)" onMouseDown="plusMinus(id_artA44_bdy,id_cllpsdA44)">Articolul 1</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA44_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA45"><span class="S_ALN_TTL" id="id_litA45_ttl" onMouseOver="marcheaza(id_litA45_ttl,id_litA45)" onMouseOut="demarcheaza(id_litA45_ttl,id_litA45)" onMouseDown="plusMinus(id_litA45_short,id_litA45_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA45_bdy"> Prezenta ordonanță de urgență instituie schema de ajutor de stat cu caracter temporar pentru susținerea activității crescătorilor din sectorul suin în contextul crizei economice generate de pandemia de COVID-19, valabilă până la data de 31 decembrie 2020, denumită în continuare schemă, în scopul compensării pierderilor cauzate de pandemie, în perioada 1 martie - 1 iulie 2020.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA46"><span class="S_ALN_TTL" id="id_litA46_ttl" onMouseOver="marcheaza(id_litA46_ttl,id_litA46)" onMouseOut="demarcheaza(id_litA46_ttl,id_litA46)" onMouseDown="plusMinus(id_litA46_short,id_litA46_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA46_bdy"> Ajutoarele de stat acordate în baza schemei sunt compatibile cu piața comună în conformitate cu prevederile pct. 3.1 din Comunicarea Comisiei Europene (CE) - Cadrul temporar pentru măsuri de ajutor de stat de sprijinire a economiei în contextul actualei epidemii de COVID-19 (2020/C91I/01), publicată în Jurnalul Oficial al Uniunii Europene din 20 martie 2020, cu modificările și completările ulterioare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA47"><span class="S_ALN_TTL" id="id_litA47_ttl" onMouseOver="marcheaza(id_litA47_ttl,id_litA47)" onMouseOut="demarcheaza(id_litA47_ttl,id_litA47)" onMouseDown="plusMinus(id_litA47_short,id_litA47_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA47_bdy"> Schema de ajutor de stat se notifică la Comisia Europeană în temeiul <A href="~/../../../Public/DetaliiDocumentAfis/144990">art. 108 alin. (3) din Tratatul privind funcționarea Uniunii Europene.</A></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA48"><span class="S_ALN_TTL" id="id_litA48_ttl" onMouseOver="marcheaza(id_litA48_ttl,id_litA48)" onMouseOut="demarcheaza(id_litA48_ttl,id_litA48)" onMouseDown="plusMinus(id_litA48_short,id_litA48_bdy)">(4)<!----></span> <span class="S_ALN_BDY" id="id_litA48_bdy"> Schema se aplică pe întreg teritoriul României.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA49"><span class="S_ALN_TTL" id="id_litA49_ttl" onMouseOver="marcheaza(id_litA49_ttl,id_litA49)" onMouseOut="demarcheaza(id_litA49_ttl,id_litA49)" onMouseDown="plusMinus(id_litA49_short,id_litA49_bdy)">(5)<!----></span> <span class="S_ALN_BDY" id="id_litA49_bdy"> Schema nu se cumulează cu alte ajutoare de stat sau ajutoare de minimis cu aceleași costuri eligibile identificabile.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA50" name="id_artA50"><span class="TAG_COLLAPSED" id="id_cllpsdA50" onMouseOver="marcheaza(id_cllpsdA50,id_artA50)" onMouseOut="demarcheaza(id_cllpsdA50,id_artA50)" onMouseDown="plusMinus(id_artA50_bdy,id_cllpsdA50)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA50_ttl" onMouseOver="marcheaza(id_artA50_ttl,id_artA50)" onMouseOut="demarcheaza(id_artA50_ttl,id_artA50)" onMouseDown="plusMinus(id_artA50_bdy,id_cllpsdA50)">Articolul 2</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA50_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA51">În sensul prezentei ordonanțe de urgență, termenii și expresiile de mai jos se definesc după cum urmează:<span class="S_LIT" style="display: block; color:black;" id="id_litA52"><span class="S_LIT_TTL" id="id_litA52_ttl" onMouseOver="marcheaza(id_litA52_ttl,id_litA52)" onMouseOut="demarcheaza(id_litA52_ttl,id_litA52)" onMouseDown="plusMinus(id_litA52_short,id_litA52_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA52_bdy">schemă de ajutoare - orice act pe baza căruia, fără să mai fie nevoie de măsuri de punere în aplicare suplimentare, pot fi acordate ajutoare individuale întreprinderilor, precum și orice act pe baza căruia pot fi acordate ajutoare care nu sunt legate de un proiect specific uneia sau mai multor întreprinderi;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA52_short" onMouseOver="marcheaza(id_litA52_short,id_litA52)" onMouseOut="demarcheaza(id_litA52_short,id_litA52)" onMouseDown="plusMinus(id_litA52_short,id_litA52_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA53"><span class="S_LIT_TTL" id="id_litA53_ttl" onMouseOver="marcheaza(id_litA53_ttl,id_litA53)" onMouseOut="demarcheaza(id_litA53_ttl,id_litA53)" onMouseDown="plusMinus(id_litA53_short,id_litA53_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA53_bdy">întreprindere - orice entitate care desfășoară o activitate economică, indiferent de forma sa juridică, în baza art. 1 din anexa nr. I la Regulamentul (UE) nr. 702/2014 al Comisiei din 25 iunie 2014 de declarare a anumitor categorii de ajutoare în sectoarele agricol și forestier și în zonele rurale ca fiind compatibile cu piața internă, în aplicarea <A href="~/../../../Public/DetaliiDocumentAfis/144990">articolelor 107</A> și <A href="~/../../../Public/DetaliiDocumentAfis/144990">108 din Tratatul privind funcționarea Uniunii Europene</A>, cu modificările și completările ulterioare.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA53_short" onMouseOver="marcheaza(id_litA53_short,id_litA53)" onMouseOut="demarcheaza(id_litA53_short,id_litA53)" onMouseDown="plusMinus(id_litA53_short,id_litA53_bdy)"> ... </span></span><!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA54" name="id_artA54"><span class="TAG_COLLAPSED" id="id_cllpsdA54" onMouseOver="marcheaza(id_cllpsdA54,id_artA54)" onMouseOut="demarcheaza(id_cllpsdA54,id_artA54)" onMouseDown="plusMinus(id_artA54_bdy,id_cllpsdA54)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA54_ttl" onMouseOver="marcheaza(id_artA54_ttl,id_artA54)" onMouseOut="demarcheaza(id_artA54_ttl,id_artA54)" onMouseDown="plusMinus(id_artA54_bdy,id_cllpsdA54)">Articolul 3</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA54_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA55">Ajutorul de stat prevăzut la <span class="S_LGI">art. 1 alin. (2)</span> se acordă crescătorilor care dețin animale din specia suine, respectiv întreprinderilor individuale și familiale, persoanelor fizice autorizate, după caz, precum și persoanelor juridice care  desfășoară activitate de îngrășare și/sau reproducție a suinelor, denumite în continuare beneficiari.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA57" name="id_artA57"><span class="TAG_COLLAPSED" id="id_cllpsdA57" onMouseOver="marcheaza(id_cllpsdA57,id_artA57)" onMouseOut="demarcheaza(id_cllpsdA57,id_artA57)" onMouseDown="plusMinus(id_artA57_bdy,id_cllpsdA57)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA57_ttl" onMouseOver="marcheaza(id_artA57_ttl,id_artA57)" onMouseOut="demarcheaza(id_artA57_ttl,id_artA57)" onMouseDown="plusMinus(id_artA57_bdy,id_cllpsdA57)">Articolul 4</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA57_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA58">Pentru a fi eligibili la acordarea ajutorului de stat prevăzut la <span class="S_LGI">art. 1 alin. (1)</span> beneficiarii trebuie să îndeplinească cumulativ următoarele criterii de eligibilitate:<span class="S_LIT" style="display: block; color:black;" id="id_litA59"><span class="S_LIT_TTL" id="id_litA59_ttl" onMouseOver="marcheaza(id_litA59_ttl,id_litA59)" onMouseOut="demarcheaza(id_litA59_ttl,id_litA59)" onMouseDown="plusMinus(id_litA59_short,id_litA59_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA59_bdy">să dețină exploatație cu cod ANSVSA înregistrată/ autorizată sanitar-veterinar;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA59_short" onMouseOver="marcheaza(id_litA59_short,id_litA59)" onMouseOut="demarcheaza(id_litA59_short,id_litA59)" onMouseDown="plusMinus(id_litA59_short,id_litA59_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA60"><span class="S_LIT_TTL" id="id_litA60_ttl" onMouseOver="marcheaza(id_litA60_ttl,id_litA60)" onMouseOut="demarcheaza(id_litA60_ttl,id_litA60)" onMouseDown="plusMinus(id_litA60_short,id_litA60_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA60_bdy">să desfășoare activitate de îngrășare și/sau reproducție a suinelor în semestrul I al anului 2020, cu excepția celor care dețin exploatații aflate în imposibilitate de populare din cauza măsurilor de restricție sanitare veterinare generate de evoluția pestei porcine africane;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA60_short" onMouseOver="marcheaza(id_litA60_short,id_litA60)" onMouseOut="demarcheaza(id_litA60_short,id_litA60)" onMouseDown="plusMinus(id_litA60_short,id_litA60_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA61"><span class="S_LIT_TTL" id="id_litA61_ttl" onMouseOver="marcheaza(id_litA61_ttl,id_litA61)" onMouseOut="demarcheaza(id_litA61_ttl,id_litA61)" onMouseDown="plusMinus(id_litA61_short,id_litA61_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA61_bdy">să nu fi solicitat alte tipuri de ajutor de stat pentru aceleași costuri eligibile în baza Comunicării CE - Cadrul temporar pentru măsuri de ajutor de stat de sprijinire a economiei în contextul actualei epidemii de COVID-19 (2020/C91I/01);</span><span style="display: none" class="S_LIT_SHORT" id="id_litA61_short" onMouseOver="marcheaza(id_litA61_short,id_litA61)" onMouseOut="demarcheaza(id_litA61_short,id_litA61)" onMouseDown="plusMinus(id_litA61_short,id_litA61_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA62"><span class="S_LIT_TTL" id="id_litA62_ttl" onMouseOver="marcheaza(id_litA62_ttl,id_litA62)" onMouseOut="demarcheaza(id_litA62_ttl,id_litA62)" onMouseDown="plusMinus(id_litA62_short,id_litA62_bdy)">d)<!----></span> <span class="S_LIT_BDY" id="id_litA62_bdy">să nu se afle în reorganizare, faliment sau lichidare în evidențele Oficiului Național al Registrului Comerțului la data de 31 decembrie 2019.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA62_short" onMouseOver="marcheaza(id_litA62_short,id_litA62)" onMouseOut="demarcheaza(id_litA62_short,id_litA62)" onMouseDown="plusMinus(id_litA62_short,id_litA62_bdy)"> ... </span></span><!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA63" name="id_artA63"><span class="TAG_COLLAPSED" id="id_cllpsdA63" onMouseOver="marcheaza(id_cllpsdA63,id_artA63)" onMouseOut="demarcheaza(id_cllpsdA63,id_artA63)" onMouseDown="plusMinus(id_artA63_bdy,id_cllpsdA63)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA63_ttl" onMouseOver="marcheaza(id_artA63_ttl,id_artA63)" onMouseOut="demarcheaza(id_artA63_ttl,id_artA63)" onMouseDown="plusMinus(id_artA63_bdy,id_cllpsdA63)">Articolul 5</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA63_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA64"><span class="S_ALN_TTL" id="id_litA64_ttl" onMouseOver="marcheaza(id_litA64_ttl,id_litA64)" onMouseOut="demarcheaza(id_litA64_ttl,id_litA64)" onMouseDown="plusMinus(id_litA64_short,id_litA64_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA64_bdy"> Ajutorul de stat prevăzut la <span class="S_LGI">art. 1 alin. (1)</span> se acordă pe capacitatea de producție deținută de beneficiar, echivalent UVM, în funcție de categoriile de suine, respectiv suine la îngrășat și animale de reproducție.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA65"><span class="S_ALN_TTL" id="id_litA65_ttl" onMouseOver="marcheaza(id_litA65_ttl,id_litA65)" onMouseOut="demarcheaza(id_litA65_ttl,id_litA65)" onMouseDown="plusMinus(id_litA65_short,id_litA65_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA65_bdy"> Valoarea totală ce poate fi acordată pentru fiecare întreprindere așa cum este definită la <span class="S_LGI">art. 2 lit. b)</span> care își desfășoară activitatea în domeniul producției primare de produse agricole nu depășește echivalentul în lei a 100.000 euro.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA66"><span class="S_ALN_TTL" id="id_litA66_ttl" onMouseOver="marcheaza(id_litA66_ttl,id_litA66)" onMouseOut="demarcheaza(id_litA66_ttl,id_litA66)" onMouseDown="plusMinus(id_litA66_short,id_litA66_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA66_bdy"> Cuantumul ajutorului de stat este de 100 euro/UVM, echivalent în lei, ratele de conversie fiind 0,3 UVM pentru porc gras, 0,5 UVM pentru animale de reproducție (scroafe și scrofițe).</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA67"><span class="S_ALN_TTL" id="id_litA67_ttl" onMouseOver="marcheaza(id_litA67_ttl,id_litA67)" onMouseOut="demarcheaza(id_litA67_ttl,id_litA67)" onMouseDown="plusMinus(id_litA67_short,id_litA67_bdy)">(4)<!----></span> <span class="S_ALN_BDY" id="id_litA67_bdy"> Valoarea totală maximă a schemei de ajutor de stat este de 119.560 mii lei și se asigură de la bugetul de stat, în limita prevederilor bugetare aprobate Ministerului Agriculturii și Dezvoltării Rurale pentru anul 2020.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA68"><span class="S_ALN_TTL" id="id_litA68_ttl" onMouseOver="marcheaza(id_litA68_ttl,id_litA68)" onMouseOut="demarcheaza(id_litA68_ttl,id_litA68)" onMouseDown="plusMinus(id_litA68_short,id_litA68_bdy)">(5)<!----></span> <span class="S_ALN_BDY" id="id_litA68_bdy"> Cursul de schimb euro/leu pentru calcularea valorii totale maxime/cuantumului este cel al Băncii Naționale a României valabil la data intrării în vigoare a prezentei ordonanțe de urgență.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA69"><span class="S_ALN_TTL" id="id_litA69_ttl" onMouseOver="marcheaza(id_litA69_ttl,id_litA69)" onMouseOut="demarcheaza(id_litA69_ttl,id_litA69)" onMouseDown="plusMinus(id_litA69_short,id_litA69_bdy)">(6)<!----></span> <span class="S_ALN_BDY" id="id_litA69_bdy"> Ajutorul de stat prevăzut la <span class="S_LGI">alin. (1)</span> poate fi cumulat cu alte forme de sprijin acordate în conformitate cu Comunicarea CE - Cadrul temporar pentru măsuri de ajutor de stat de sprijinire a economiei în contextul actualei epidemii de COVID-19 (2020/C91I/01), fără a depăși echivalentul în lei a 100.000 euro pentru același beneficiar.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA70" name="id_artA70"><span class="TAG_COLLAPSED" id="id_cllpsdA70" onMouseOver="marcheaza(id_cllpsdA70,id_artA70)" onMouseOut="demarcheaza(id_cllpsdA70,id_artA70)" onMouseDown="plusMinus(id_artA70_bdy,id_cllpsdA70)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA70_ttl" onMouseOver="marcheaza(id_artA70_ttl,id_artA70)" onMouseOut="demarcheaza(id_artA70_ttl,id_artA70)" onMouseDown="plusMinus(id_artA70_bdy,id_cllpsdA70)">Articolul 6</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA70_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA71"><span class="S_ALN_TTL" id="id_litA71_ttl" onMouseOver="marcheaza(id_litA71_ttl,id_litA71)" onMouseOut="demarcheaza(id_litA71_ttl,id_litA71)" onMouseDown="plusMinus(id_litA71_short,id_litA71_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA71_bdy">Beneficiarii depun cererea de solicitare a ajutorului de stat la centrele județene ale Agenției de Plăți și Intervenție pentru Agricultură, denumită în continuare APIA, respectiv al municipiului București, pe raza cărora își au sediul social, sau la centrul județean al APIA, unde au depus cererea de solicitare pentru Măsura 14 - Bunăstarea animalelor - pachetul a) - Plăți în favoarea bunăstării porcinelor din cadrul PNDR 2014-2020, al cărei model este prevăzut în <span class="S_LGI">anexa nr. 1</span>, însoțită de următoarele documente:<span class="S_LIT" style="display: block; color:black;" id="id_litA72"><span class="S_LIT_TTL" id="id_litA72_ttl" onMouseOver="marcheaza(id_litA72_ttl,id_litA72)" onMouseOut="demarcheaza(id_litA72_ttl,id_litA72)" onMouseDown="plusMinus(id_litA72_short,id_litA72_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA72_bdy">copie de pe certificatul de înregistrare la Oficiul Național al Registrului Comerțului al beneficiarului, împuternicire și o copie a B.I./C.I. al/a reprezentantului legal/împuternicitului;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA72_short" onMouseOver="marcheaza(id_litA72_short,id_litA72)" onMouseOut="demarcheaza(id_litA72_short,id_litA72)" onMouseDown="plusMinus(id_litA72_short,id_litA72_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA73"><span class="S_LIT_TTL" id="id_litA73_ttl" onMouseOver="marcheaza(id_litA73_ttl,id_litA73)" onMouseOut="demarcheaza(id_litA73_ttl,id_litA73)" onMouseDown="plusMinus(id_litA73_short,id_litA73_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA73_bdy">copie de pe documentul de înregistrare sanitar-veterinară/autorizația sanitar-veterinară, după caz;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA73_short" onMouseOver="marcheaza(id_litA73_short,id_litA73)" onMouseOut="demarcheaza(id_litA73_short,id_litA73)" onMouseDown="plusMinus(id_litA73_short,id_litA73_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA74"><span class="S_LIT_TTL" id="id_litA74_ttl" onMouseOver="marcheaza(id_litA74_ttl,id_litA74)" onMouseOut="demarcheaza(id_litA74_ttl,id_litA74)" onMouseDown="plusMinus(id_litA74_short,id_litA74_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA74_bdy">mișcarea animalelor pe o lună din semestrul I al anului 2020, din care să rezulte că a desfășurat activitate de creștere a suinelor, însușită de conducătorul unității sau documente justificative care atestă că în semestrul I al anului 2020 exploatația se afla în zonă supusă restricțiilor de mișcare a suinelor conform Deciziei 2014/709/UE a Comisiei privind măsurile zoosanitare de combatere a pestei porcine africane în anumite state membre și de abrogare a Deciziei de punere în aplicare 2014/178/UE;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA74_short" onMouseOver="marcheaza(id_litA74_short,id_litA74)" onMouseOut="demarcheaza(id_litA74_short,id_litA74)" onMouseDown="plusMinus(id_litA74_short,id_litA74_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA75"><span class="S_LIT_TTL" id="id_litA75_ttl" onMouseOver="marcheaza(id_litA75_ttl,id_litA75)" onMouseOut="demarcheaza(id_litA75_ttl,id_litA75)" onMouseDown="plusMinus(id_litA75_short,id_litA75_bdy)">d)<!----></span> <span class="S_LIT_BDY" id="id_litA75_bdy">copia schiței grajdului/halei pentru fiecare exploatație cu cod atribuit de Autoritatea Națională Sanitară Veterinară și pentru Siguranța Alimentelor, denumită în continuare ANSVSA, asumată de beneficiar prin semnătură, din care să reiasă adresa, suprafața utilă a spațiilor de creștere pentru beneficiarii care au accesat Măsura 14;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA75_short" onMouseOver="marcheaza(id_litA75_short,id_litA75)" onMouseOut="demarcheaza(id_litA75_short,id_litA75)" onMouseDown="plusMinus(id_litA75_short,id_litA75_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA76"><span class="S_LIT_TTL" id="id_litA76_ttl" onMouseOver="marcheaza(id_litA76_ttl,id_litA76)" onMouseOut="demarcheaza(id_litA76_ttl,id_litA76)" onMouseDown="plusMinus(id_litA76_short,id_litA76_bdy)">e)<!----></span> <span class="S_LIT_BDY" id="id_litA76_bdy">copia schiței validată de beneficiar aferentă locurilor de cazare, calculate conform prevederilor Ordinului președintelui Autorității Naționale Sanitare Veterinare și pentru Siguranța Alimentelor nr. 202/2006 pentru aprobarea Normei sanitare veterinare care stabilește standarde minime pentru protecția porcinelor, cu modificările și completările ulterioare, pentru spațiile de cazare care nu se află în Măsura 14;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA76_short" onMouseOver="marcheaza(id_litA76_short,id_litA76)" onMouseOut="demarcheaza(id_litA76_short,id_litA76)" onMouseDown="plusMinus(id_litA76_short,id_litA76_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA77"><span class="S_LIT_TTL" id="id_litA77_ttl" onMouseOver="marcheaza(id_litA77_ttl,id_litA77)" onMouseOut="demarcheaza(id_litA77_ttl,id_litA77)" onMouseDown="plusMinus(id_litA77_short,id_litA77_bdy)">f)<!----></span> <span class="S_LIT_BDY" id="id_litA77_bdy">coordonate bancare/trezorerie;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA77_short" onMouseOver="marcheaza(id_litA77_short,id_litA77)" onMouseOut="demarcheaza(id_litA77_short,id_litA77)" onMouseDown="plusMinus(id_litA77_short,id_litA77_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA78"><span class="S_LIT_TTL" id="id_litA78_ttl" onMouseOver="marcheaza(id_litA78_ttl,id_litA78)" onMouseOut="demarcheaza(id_litA78_ttl,id_litA78)" onMouseDown="plusMinus(id_litA78_short,id_litA78_bdy)">g)<!----></span> <span class="S_LIT_BDY" id="id_litA78_bdy">pentru beneficiarii care au accesat Măsura 14 - Bunăstarea animalelor - pachetul a) - Plăți în favoarea bunăstării porcinelor, din cadrul Programului Național de Dezvoltare Rurală - PNDR 2014-2020, copiile documentelor prevăzute la <span class="S_LGI">lit. a)-d)</span> și <span class="S_LGI">f)</span> depuse împreună cu cererea de plată/deconturile justificative rămân valabile și pentru această schemă. APIA va prelua datele operate și verificate din aplicația electronică de gestionare a Măsurii 14 - Bunăstarea animalelor - pachetul a) - Plăți în favoarea bunăstării porcinelor, din cadrul PNDR 2014-2020, referitoare la documentele beneficiarilor pentru exploatațiile cu cod ANSVSA.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA78_short" onMouseOver="marcheaza(id_litA78_short,id_litA78)" onMouseOut="demarcheaza(id_litA78_short,id_litA78)" onMouseDown="plusMinus(id_litA78_short,id_litA78_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA79"><span class="S_ALN_TTL" id="id_litA79_ttl" onMouseOver="marcheaza(id_litA79_ttl,id_litA79)" onMouseOut="demarcheaza(id_litA79_ttl,id_litA79)" onMouseDown="plusMinus(id_litA79_short,id_litA79_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA79_bdy"> Cererea de solicitare a ajutorului de stat și documentele justificative prevăzute la <span class="S_LGI">alin. (1)</span> pot fi transmise la centrele județene ale APIA, respectiv al municipiului București și prin fax, poștă sau în format electronic ca document scanat, prin e-mail, cu condiția asumării prin semnătură de către reprezentantul legal al beneficiarului pe fiecare pagină a documentului transmis.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA80"><span class="S_ALN_TTL" id="id_litA80_ttl" onMouseOver="marcheaza(id_litA80_ttl,id_litA80)" onMouseOut="demarcheaza(id_litA80_ttl,id_litA80)" onMouseDown="plusMinus(id_litA80_short,id_litA80_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA80_bdy"> În situația în care beneficiarii prevăzuți la <span class="S_LGI">art. 3</span> dețin mai multe exploatații de creștere a suinelor cu coduri ANSVSA situate pe raza mai multor unități administrativ-teritoriale din județe diferite, aceștia depun o singură cerere la centrul județean al APIA pe raza căruia își are sediul social sau la centrul județean al APIA unde a depus cererea de solicitare pentru Măsura 14 - Bunăstarea animalelor - pachetul a) - Plăți în favoarea bunăstării porcinelor, din cadrul PNDR 2014-2020.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA81" name="id_artA81"><span class="TAG_COLLAPSED" id="id_cllpsdA81" onMouseOver="marcheaza(id_cllpsdA81,id_artA81)" onMouseOut="demarcheaza(id_cllpsdA81,id_artA81)" onMouseDown="plusMinus(id_artA81_bdy,id_cllpsdA81)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA81_ttl" onMouseOver="marcheaza(id_artA81_ttl,id_artA81)" onMouseOut="demarcheaza(id_artA81_ttl,id_artA81)" onMouseDown="plusMinus(id_artA81_bdy,id_cllpsdA81)">Articolul 7</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA81_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA82"><span class="S_ALN_TTL" id="id_litA82_ttl" onMouseOver="marcheaza(id_litA82_ttl,id_litA82)" onMouseOut="demarcheaza(id_litA82_ttl,id_litA82)" onMouseDown="plusMinus(id_litA82_short,id_litA82_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA82_bdy"> Perioada de depunere a cererilor și a documentelor justificative prevăzute la <span class="S_LGI">art. 6 alin. (1)</span> este de 20 de zile lucrătoare de la data intrării în vigoare a prezentei ordonanțe de urgență.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA83"><span class="S_ALN_TTL" id="id_litA83_ttl" onMouseOver="marcheaza(id_litA83_ttl,id_litA83)" onMouseOut="demarcheaza(id_litA83_ttl,id_litA83)" onMouseDown="plusMinus(id_litA83_short,id_litA83_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA83_bdy"> Plata ajutorului de stat se efectuează până la data de 31 decembrie 2020. Nu se acordă plăți ulterior datei de 31 decembrie 2020, dacă se constată acestea nu au putut fi efectuate din cauze imputabile beneficiarului, respectiv nedeclararea unui cont valid la APIA.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA84" name="id_artA84"><span class="TAG_COLLAPSED" id="id_cllpsdA84" onMouseOver="marcheaza(id_cllpsdA84,id_artA84)" onMouseOut="demarcheaza(id_cllpsdA84,id_artA84)" onMouseDown="plusMinus(id_artA84_bdy,id_cllpsdA84)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA84_ttl" onMouseOver="marcheaza(id_artA84_ttl,id_artA84)" onMouseOut="demarcheaza(id_artA84_ttl,id_artA84)" onMouseDown="plusMinus(id_artA84_bdy,id_cllpsdA84)">Articolul 8</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA84_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA85"><span class="S_ALN_TTL" id="id_litA85_ttl" onMouseOver="marcheaza(id_litA85_ttl,id_litA85)" onMouseOut="demarcheaza(id_litA85_ttl,id_litA85)" onMouseDown="plusMinus(id_litA85_short,id_litA85_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA85_bdy">După expirarea termenului de depunere a cererilor de solicitare a ajutorului de stat, centrele județene ale APIA, respectiv al municipiului București verifică, aprobă sumele și centralizează cererile și transmit la structura centrală a APIA situațiile centralizatoare cu beneficiarii și sumele cuvenite, al căror model este prevăzut în <span class="S_LGI">anexa nr. 2</span>.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA86"><span class="S_ALN_TTL" id="id_litA86_ttl" onMouseOver="marcheaza(id_litA86_ttl,id_litA86)" onMouseOut="demarcheaza(id_litA86_ttl,id_litA86)" onMouseDown="plusMinus(id_litA86_short,id_litA86_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA86_bdy">Structura centrală a APIA întocmește și transmite Ministerului Agriculturii și Dezvoltării Rurale centralizatorul cu beneficiarii și sumele cuvenite, conform modelului prevăzut în <span class="S_LGI">anexa nr. 3</span>.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA87"><span class="S_ALN_TTL" id="id_litA87_ttl" onMouseOver="marcheaza(id_litA87_ttl,id_litA87)" onMouseOut="demarcheaza(id_litA87_ttl,id_litA87)" onMouseDown="plusMinus(id_litA87_short,id_litA87_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA87_bdy"> În situația în care sumele depășesc prevederile bugetare aprobate cu această destinație, valoarea ajutorului de stat se reduce proporțional pentru toți beneficiarii.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA88" name="id_artA88"><span class="TAG_COLLAPSED" id="id_cllpsdA88" onMouseOver="marcheaza(id_cllpsdA88,id_artA88)" onMouseOut="demarcheaza(id_cllpsdA88,id_artA88)" onMouseDown="plusMinus(id_artA88_bdy,id_cllpsdA88)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA88_ttl" onMouseOver="marcheaza(id_artA88_ttl,id_artA88)" onMouseOut="demarcheaza(id_artA88_ttl,id_artA88)" onMouseDown="plusMinus(id_artA88_bdy,id_cllpsdA88)">Articolul 9</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA88_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA89">În baza centralizatorului cu beneficiarii și sumele cuvenite, transmisă de structura centrală a APIA, Ministerul Agriculturii și Dezvoltării Rurale transmite Ministerului Finanțelor Publice cererea de deschidere a creditelor bugetare, însoțită de situația centralizatoare cu sumele solicitate pentru ajutorul de stat, conform modelului prevăzut în <span class="S_LGI">anexa nr. 4</span>.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA90" name="id_artA90"><span class="TAG_COLLAPSED" id="id_cllpsdA90" onMouseOver="marcheaza(id_cllpsdA90,id_artA90)" onMouseOut="demarcheaza(id_cllpsdA90,id_artA90)" onMouseDown="plusMinus(id_artA90_bdy,id_cllpsdA90)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA90_ttl" onMouseOver="marcheaza(id_artA90_ttl,id_artA90)" onMouseOut="demarcheaza(id_artA90_ttl,id_artA90)" onMouseDown="plusMinus(id_artA90_bdy,id_cllpsdA90)">Articolul 10</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA90_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA91"><span class="S_ALN_TTL" id="id_litA91_ttl" onMouseOver="marcheaza(id_litA91_ttl,id_litA91)" onMouseOut="demarcheaza(id_litA91_ttl,id_litA91)" onMouseDown="plusMinus(id_litA91_short,id_litA91_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA91_bdy"> După aprobarea de către Ministerul Finanțelor Publice a deschiderii creditelor bugetare, Ministerul Agriculturii și Dezvoltării Rurale deschide și repartizează credite bugetare APIA, care la rândul său repartizează credite bugetare centrelor județene ale APIA, respectiv al municipiului București cu sumele cuvenite.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA92"><span class="S_ALN_TTL" id="id_litA92_ttl" onMouseOver="marcheaza(id_litA92_ttl,id_litA92)" onMouseOut="demarcheaza(id_litA92_ttl,id_litA92)" onMouseDown="plusMinus(id_litA92_short,id_litA92_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA92_bdy"> Centrele județene ale APIA, respectiv al municipiului București virează sumele cuvenite în conturile beneficiarilor, conform legislației în vigoare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA93"><span class="S_ALN_TTL" id="id_litA93_ttl" onMouseOver="marcheaza(id_litA93_ttl,id_litA93)" onMouseOut="demarcheaza(id_litA93_ttl,id_litA93)" onMouseDown="plusMinus(id_litA93_short,id_litA93_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA93_bdy"> Structura centrală a APIA publică informațiile relevante cuprinse în anexa nr. III la Regulamentul (UE) nr. 702/2014, cu modificările și completările ulterioare. </span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA94" name="id_artA94"><span class="TAG_COLLAPSED" id="id_cllpsdA94" onMouseOver="marcheaza(id_cllpsdA94,id_artA94)" onMouseOut="demarcheaza(id_cllpsdA94,id_artA94)" onMouseDown="plusMinus(id_artA94_bdy,id_cllpsdA94)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA94_ttl" onMouseOver="marcheaza(id_artA94_ttl,id_artA94)" onMouseOut="demarcheaza(id_artA94_ttl,id_artA94)" onMouseDown="plusMinus(id_artA94_bdy,id_cllpsdA94)">Articolul 11</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA94_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA95"><span class="S_ALN_TTL" id="id_litA95_ttl" onMouseOver="marcheaza(id_litA95_ttl,id_litA95)" onMouseOut="demarcheaza(id_litA95_ttl,id_litA95)" onMouseDown="plusMinus(id_litA95_short,id_litA95_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA95_bdy"> Toate documentele depuse în vederea solicitării ajutoarelor de stat acordate potrivit prezentei ordonanțe de urgență se păstrează la centrele județene ale APIA, respectiv al municipiului București, pe o perioadă de 10 ani fiscali de la data la care a fost acordat ajutorul.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA96"><span class="S_ALN_TTL" id="id_litA96_ttl" onMouseOver="marcheaza(id_litA96_ttl,id_litA96)" onMouseOut="demarcheaza(id_litA96_ttl,id_litA96)" onMouseDown="plusMinus(id_litA96_short,id_litA96_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA96_bdy"> Toate documentele care atestă ajutorul cuvenit se păstrează de către beneficiarii ajutorului de stat pe o perioadă de 10 ani fiscali de la data încasării sumei cuvenite.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA97" name="id_artA97"><span class="TAG_COLLAPSED" id="id_cllpsdA97" onMouseOver="marcheaza(id_cllpsdA97,id_artA97)" onMouseOut="demarcheaza(id_cllpsdA97,id_artA97)" onMouseDown="plusMinus(id_artA97_bdy,id_cllpsdA97)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA97_ttl" onMouseOver="marcheaza(id_artA97_ttl,id_artA97)" onMouseOut="demarcheaza(id_artA97_ttl,id_artA97)" onMouseDown="plusMinus(id_artA97_bdy,id_cllpsdA97)">Articolul 12</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA97_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA98">Beneficiarul are obligația să anunțe orice modificare privind datele din cerere la centrul județean al APIA, respectiv al municipiului București, unde a depus cererea de solicitare, în termen de 5 zile lucrătoare de la respectiva modificare.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA99" name="id_artA99"><span class="TAG_COLLAPSED" id="id_cllpsdA99" onMouseOver="marcheaza(id_cllpsdA99,id_artA99)" onMouseOut="demarcheaza(id_cllpsdA99,id_artA99)" onMouseDown="plusMinus(id_artA99_bdy,id_cllpsdA99)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA99_ttl" onMouseOver="marcheaza(id_artA99_ttl,id_artA99)" onMouseOut="demarcheaza(id_artA99_ttl,id_artA99)" onMouseDown="plusMinus(id_artA99_bdy,id_cllpsdA99)">Articolul 13</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA99_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA100"><span class="S_ALN_TTL" id="id_litA100_ttl" onMouseOver="marcheaza(id_litA100_ttl,id_litA100)" onMouseOut="demarcheaza(id_litA100_ttl,id_litA100)" onMouseDown="plusMinus(id_litA100_short,id_litA100_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA100_bdy"> În cazul nerespectării de către beneficiari a condițiilor prevăzute la <span class="S_LGI">art. 4</span>, aceștia sunt obligați la restituirea contravalorii sprijinului financiar, la care se adaugă dobânzi și penalități de întârziere de la data încasării acestuia, conform prevederilor <A href="~/../../../Public/DetaliiDocumentAfis/227328">Legii nr. 207/2015 privind Codul de procedură fiscală</A>, cu modificările și completările ulterioare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA101"><span class="S_ALN_TTL" id="id_litA101_ttl" onMouseOver="marcheaza(id_litA101_ttl,id_litA101)" onMouseOut="demarcheaza(id_litA101_ttl,id_litA101)" onMouseDown="plusMinus(id_litA101_short,id_litA101_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA101_bdy"> Sumele reprezentând ajutor de stat necuvenit, prevăzut la <span class="S_LGI">alin. (1)</span>, reprezintă creanțe bugetare, pentru recuperarea acestora aplicându-se în mod corespunzător dispozițiile <A href="~/../../../Public/DetaliiDocumentAfis/227328">Legii nr. 207/2015</A>, cu modificările și completările ulterioare. Procesele-verbale de constatare a neregulilor și de stabilire a creanțelor bugetare întocmite de către centrele județene ale APIA, respectiv al municipiului București, prin care se individualizează sumele de recuperat exprimate în moneda națională, constituie titluri de creanță și cuprind elementele actului administrativ-fiscal prevăzut de <A href="~/../../../Public/DetaliiDocumentAfis/227328">Legea nr. 207/2015,</A> cu modificările și completările ulterioare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA102"><span class="S_ALN_TTL" id="id_litA102_ttl" onMouseOver="marcheaza(id_litA102_ttl,id_litA102)" onMouseOut="demarcheaza(id_litA102_ttl,id_litA102)" onMouseDown="plusMinus(id_litA102_short,id_litA102_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA102_bdy"> Titlul de creanță constituie titlu executoriu la data împlinirii termenului de scadență prevăzut în acesta.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA103"><span class="S_ALN_TTL" id="id_litA103_ttl" onMouseOver="marcheaza(id_litA103_ttl,id_litA103)" onMouseOut="demarcheaza(id_litA103_ttl,id_litA103)" onMouseDown="plusMinus(id_litA103_short,id_litA103_bdy)">(4)<!----></span> <span class="S_ALN_BDY" id="id_litA103_bdy"> Persoana care se consideră vătămată într-un drept al său sau într-un interes legitim se poate adresa instanței de contencios administrativ, în condițiile și termenele prevăzute de <A href="~/../../../Public/DetaliiDocumentAfis/224247">Legea contenciosului administrativ nr. 554/2004</A>, cu modificările și completările ulterioare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA104"><span class="S_ALN_TTL" id="id_litA104_ttl" onMouseOver="marcheaza(id_litA104_ttl,id_litA104)" onMouseOut="demarcheaza(id_litA104_ttl,id_litA104)" onMouseDown="plusMinus(id_litA104_short,id_litA104_bdy)">(5)<!----></span> <span class="S_ALN_BDY" id="id_litA104_bdy"> Titlurile executorii împreună cu dovada comunicării acestora către debitor se transmit organelor fiscale competente subordonate Agenției Naționale de Administrare Fiscală, în vederea recuperării debitului, conform prevederilor <A href="~/../../../Public/DetaliiDocumentAfis/227328">Legii nr. 207/2015</A>, cu modificările și completările ulterioare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA105"><span class="S_ALN_TTL" id="id_litA105_ttl" onMouseOver="marcheaza(id_litA105_ttl,id_litA105)" onMouseOut="demarcheaza(id_litA105_ttl,id_litA105)" onMouseDown="plusMinus(id_litA105_short,id_litA105_bdy)">(6)<!----></span> <span class="S_ALN_BDY" id="id_litA105_bdy"> Cuantumul obligațiilor fiscale accesorii se calculează de către structura centrală a APIA de la data scadenței și până la data transmiterii către organele fiscale competente subordonate Agenției Naționale de Administrare Fiscală, potrivit <span class="S_LGI">alin. (5)</span>, iar organele fiscale competente subordonate Agenției Naționale de Administrare Fiscală vor calcula obligații fiscale accesorii de la data transmiterii titlurilor executorii și până la data stingerii sumelor prevăzute în acestea.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA106"><span class="S_ALN_TTL" id="id_litA106_ttl" onMouseOver="marcheaza(id_litA106_ttl,id_litA106)" onMouseOut="demarcheaza(id_litA106_ttl,id_litA106)" onMouseDown="plusMinus(id_litA106_short,id_litA106_bdy)">(7)<!----></span> <span class="S_ALN_BDY" id="id_litA106_bdy"> Obligațiile fiscale accesorii calculate de către structura centrală a APIA vor fi individualizate într-un titlu de creanță, prevederile <span class="S_LGI">alin. (2)-(5)</span> aplicându-se în mod corespunzător.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA107"><span class="S_ALN_TTL" id="id_litA107_ttl" onMouseOver="marcheaza(id_litA107_ttl,id_litA107)" onMouseOut="demarcheaza(id_litA107_ttl,id_litA107)" onMouseDown="plusMinus(id_litA107_short,id_litA107_bdy)">(8)<!----></span> <span class="S_ALN_BDY" id="id_litA107_bdy"> În procedura insolvenței, înscrierea creanței bugetare la masa credală se face la solicitarea structurii centrale a APIA.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA108"><span class="S_ALN_TTL" id="id_litA108_ttl" onMouseOver="marcheaza(id_litA108_ttl,id_litA108)" onMouseOut="demarcheaza(id_litA108_ttl,id_litA108)" onMouseDown="plusMinus(id_litA108_short,id_litA108_bdy)">(9)<!----></span> <span class="S_ALN_BDY" id="id_litA108_bdy"> Sumele încasate potrivit prevederilor <span class="S_LGI">alin. (2)</span> se constituie venit la bugetul de stat și se virează într-un cont de venituri distinct.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA109" name="id_artA109"><span class="TAG_COLLAPSED" id="id_cllpsdA109" onMouseOver="marcheaza(id_cllpsdA109,id_artA109)" onMouseOut="demarcheaza(id_cllpsdA109,id_artA109)" onMouseDown="plusMinus(id_artA109_bdy,id_cllpsdA109)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA109_ttl" onMouseOver="marcheaza(id_artA109_ttl,id_artA109)" onMouseOut="demarcheaza(id_artA109_ttl,id_artA109)" onMouseDown="plusMinus(id_artA109_bdy,id_cllpsdA109)">Articolul 14</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA109_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA110">Începând cu data primirii deciziei Comisiei Europene privind aprobarea acordării ajutorului de stat se stabilește eligibilitatea beneficiarului și se poate constitui obligația de plată a acestui ajutor de stat.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA111" name="id_artA111"><span class="TAG_COLLAPSED" id="id_cllpsdA111" onMouseOver="marcheaza(id_cllpsdA111,id_artA111)" onMouseOut="demarcheaza(id_cllpsdA111,id_artA111)" onMouseDown="plusMinus(id_artA111_bdy,id_cllpsdA111)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA111_ttl" onMouseOver="marcheaza(id_artA111_ttl,id_artA111)" onMouseOut="demarcheaza(id_artA111_ttl,id_artA111)" onMouseDown="plusMinus(id_artA111_bdy,id_cllpsdA111)">Articolul 15</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA111_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA112">În situația în care, anterior emiterii deciziei Comisiei Europene, Comisia Europeană solicită modificări privind prezenta schemă de ajutor de stat, prevederile prezentei ordonanțe de urgență se modifică în mod corespunzător.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA113" name="id_artA113"><span class="TAG_COLLAPSED" id="id_cllpsdA113" onMouseOver="marcheaza(id_cllpsdA113,id_artA113)" onMouseOut="demarcheaza(id_cllpsdA113,id_artA113)" onMouseDown="plusMinus(id_artA113_bdy,id_cllpsdA113)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA113_ttl" onMouseOver="marcheaza(id_artA113_ttl,id_artA113)" onMouseOut="demarcheaza(id_artA113_ttl,id_artA113)" onMouseDown="plusMinus(id_artA113_bdy,id_cllpsdA113)">Articolul 16</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA113_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA114">Textul prezentei scheme se publică integral pe site-ul Ministerului Agriculturii și Dezvoltării Rurale, pe adresa www.madr.ro. <!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA115" name="id_artA115"><span class="TAG_COLLAPSED" id="id_cllpsdA115" onMouseOver="marcheaza(id_cllpsdA115,id_artA115)" onMouseOut="demarcheaza(id_cllpsdA115,id_artA115)" onMouseDown="plusMinus(id_artA115_bdy,id_cllpsdA115)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA115_ttl" onMouseOver="marcheaza(id_artA115_ttl,id_artA115)" onMouseOut="demarcheaza(id_artA115_ttl,id_artA115)" onMouseDown="plusMinus(id_artA115_bdy,id_cllpsdA115)">Articolul 17</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA115_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA116"><span class="S_LGI">Anexele nr. 1-4</span> fac parte integrantă din prezenta ordonanță de urgență.<!----></span></span></span><span class="S_SMN"><br /><span class="S_SMN_PAR">PRIM-MINISTRU<!----></span><br /><span class="S_SMN_PAR">LUDOVIC ORBAN<!----></span><br /><span class="S_SMN_PAR">Contrasemnează:<!----></span><br /><span class="S_SMN_PAR">p. Ministrul agriculturii și dezvoltării rurale,<!----></span><br /><span class="S_SMN_PAR">George Scarlat,<!----></span><br /><span class="S_SMN_PAR">secretar de stat<!----></span><br /><span class="S_SMN_PAR">Ministrul finanțelor publice,<!----></span><br /><span class="S_SMN_PAR">Vasile-Florin Cîțu<!----></span><br /><span class="S_SMN_PAR">p. Ministrul afacerilor externe,<!----></span><br /><span class="S_SMN_PAR">Iulia Raluca Matei,<!----></span><br /><span class="S_SMN_PAR">secretar de stat<!----></span></span><span class="S_PAR" style="display: block; color:black;" id="id_parA128">București, 27 august 2020.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA129">Nr. 150.<!----></span><span class="S_ANX" style="display: block; color:black;" id="id_anxA130" name="id_anxA130"><span class="TAG_COLLAPSED" id="id_cllpsdA130" onMouseOver="marcheaza(id_cllpsdA130,id_anxA130)" onMouseOut="demarcheaza(id_cllpsdA130,id_anxA130)" onMouseDown="plusMinus(id_anxA130_bdy,id_cllpsdA130)">
+				 + 
+			</span><span class="S_ANX_TTL" id="id_anxA130_ttl" onMouseOver="marcheaza(id_anxA130_ttl,id_anxA130)" onMouseOut="demarcheaza(id_anxA130_ttl,id_anxA130)" onMouseDown="plusMinus(id_anxA130_bdy,id_cllpsdA130)">Anexa nr. 1*<!----></span><span class="S_ANX_DEN"><!----></span><span class="S_ANX_BDY" id="id_anxA130_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA132">* Anexa nr. 1 este reprodusă în facsimil.<!----></span><IMG src="../../../ImaginiDinActe/229711_A131.jpg"/><IMG src="../../../ImaginiDinActe/229711_A133.jpg"/><IMG src="../../../ImaginiDinActe/229711_A134.jpg"/><IMG src="../../../ImaginiDinActe/229711_A135.jpg"/><IMG src="../../../ImaginiDinActe/229711_A136.jpg"/><IMG src="../../../ImaginiDinActe/229711_A137.jpg"/><!----></span><!----></span><span class="S_ANX" style="display: block; color:black;" id="id_anxA138" name="id_anxA138"><span class="TAG_COLLAPSED" id="id_cllpsdA138" onMouseOver="marcheaza(id_cllpsdA138,id_anxA138)" onMouseOut="demarcheaza(id_cllpsdA138,id_anxA138)" onMouseDown="plusMinus(id_anxA138_bdy,id_cllpsdA138)">
+				 + 
+			</span><span class="S_ANX_TTL" id="id_anxA138_ttl" onMouseOver="marcheaza(id_anxA138_ttl,id_anxA138)" onMouseOut="demarcheaza(id_anxA138_ttl,id_anxA138)" onMouseDown="plusMinus(id_anxA138_bdy,id_cllpsdA138)">Anexa nr. 2<!----></span><span class="S_ANX_DEN"><!----></span><span class="S_ANX_BDY" id="id_anxA138_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA139">APIA<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA140">CJ.................<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA141">Operator date cu caracter personal: 9596<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA142">Bun de plată<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA143">................. euro<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA144">lei<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA145">Director executiv CJ,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA146">...................................<!----></span><span class="A_ELEMENT_CENTER"><br /><span class="A_PAR">SITUAȚIA CENTRALIZATOARE<!----></span><br /><span class="A_PAR">cu beneficiarii și sumele cuvenite ajutorului de stat pentru susținerea crescătorilor <!----></span><br /><span class="A_PAR">din sectorul suin în contextul crizei economice generate de pandemia de COVID-19<!----></span><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA149"><table style="display: block; color:black;"><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Nr. crt.</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Denumirea beneficiarului</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Nr. și data cererii</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">ID fermier</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">CUI</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Codul exploatației</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Categoria</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Capacitatea de producție </td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Echivalent UVM</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Cuantum 100 euro/ UVM</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Valoarea ajutorului de stat</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Valoarea maximă euro per beneficiar</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA423">Valoarea ajutorului de stat <!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA424">- lei -<!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA426">Valoarea ajutorului de stat <!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA427">- (euro) -<!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">0</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">1</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">2</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">3</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">4</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">5</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">6</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">7</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">8</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">9</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">10</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">11</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">12</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">13</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA445"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA447"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA449"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA451"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA453"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA455"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Porc gras</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA458"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA460"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA462"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA464"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA466"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA468"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA470"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA473"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA475"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA477"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA479"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA481"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA483"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Animale de reproducție</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA486"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA488"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA490"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA492"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA494"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA496"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA498"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA501"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA503"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA505"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA507"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA509"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA511"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA513"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA515"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA517"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA519"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA521"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA523"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA525"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA527"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA530"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Total general</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA533"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA535"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA537"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA539"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA541"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA543"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA545"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA547"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA549"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA551"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA553"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA555"><!----></span></td></tr></table><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA268">Certificat din punctul de vedere al realității, regularității și legalității datelor<!----></span><span class="A_ELEMENT_CENTER"><br /><span class="A_PAR">Verificat<!----></span><br /><span class="A_PAR">................................<!----></span><br /><span class="A_PAR">Întocmit<!----></span><br /><span class="A_PAR">...............................<!----></span><!----></span><!----></span><!----></span><span class="S_ANX" style="display: block; color:black;" id="id_anxA273" name="id_anxA273"><span class="TAG_COLLAPSED" id="id_cllpsdA273" onMouseOver="marcheaza(id_cllpsdA273,id_anxA273)" onMouseOut="demarcheaza(id_cllpsdA273,id_anxA273)" onMouseDown="plusMinus(id_anxA273_bdy,id_cllpsdA273)">
+				 + 
+			</span><span class="S_ANX_TTL" id="id_anxA273_ttl" onMouseOver="marcheaza(id_anxA273_ttl,id_anxA273)" onMouseOut="demarcheaza(id_anxA273_ttl,id_anxA273)" onMouseDown="plusMinus(id_anxA273_bdy,id_cllpsdA273)">Anexa nr. 3<!----></span><span class="S_ANX_DEN"><!----></span><span class="S_ANX_BDY" id="id_anxA273_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA274">APIA<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA275">Operator date cu caracter personal: 9596<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA276">Bun de plată<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA277">................. euro<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA278">Director,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA279">.........................<!----></span><span class="A_ELEMENT_CENTER"><br /><span class="A_PAR">CENTRALIZATORUL<!----></span><br /><span class="A_PAR">cu beneficiarii și sumele cuvenite ajutorului de stat pentru susținerea crescătorilor <!----></span><br /><span class="A_PAR">din sectorul suin în contextul crizei economice generate de pandemia de COVID-19<!----></span><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA282"><table style="display: block; color:black;"><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Nr. crt.</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Județul</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Nr. de beneficiari</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Categoria </td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Capacitatea (echivalent UVM)</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA566">Ajutorul de stat <!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA567">(lei)<!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA569">Ajutorul de stat <!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA570">(euro)<!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA573"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA575"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA577"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Porc gras</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA580"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA582"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA584"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA587"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA589"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA591"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Animale de reproducție</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA594"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA596"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA598"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="2"><span class="S_PAR" style="display: block; color:black;" id="id_parA601"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="2">Total</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA604"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Porc gras</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA607"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA609"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA611"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA614"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Animale de reproducție</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA617"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA619"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA621"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA624"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Total general</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA627"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA629"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA631"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA633"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA635"><!----></span></td></tr></table><!----></span><span class="A_ELEMENT_CENTER"><br /><span class="A_PAR">Director general,<!----></span><br /><span class="A_PAR">.................................<!----></span><!----></span><!----></span><!----></span><span class="S_ANX" style="display: block; color:black;" id="id_anxA341" name="id_anxA341"><span class="TAG_COLLAPSED" id="id_cllpsdA341" onMouseOver="marcheaza(id_cllpsdA341,id_anxA341)" onMouseOut="demarcheaza(id_cllpsdA341,id_anxA341)" onMouseDown="plusMinus(id_anxA341_bdy,id_cllpsdA341)">
+				 + 
+			</span><span class="S_ANX_TTL" id="id_anxA341_ttl" onMouseOver="marcheaza(id_anxA341_ttl,id_anxA341)" onMouseOut="demarcheaza(id_anxA341_ttl,id_anxA341)" onMouseDown="plusMinus(id_anxA341_bdy,id_cllpsdA341)">Anexa nr. 4<!----></span><span class="S_ANX_DEN"><!----></span><span class="S_ANX_BDY" id="id_anxA341_bdy"><span class="A_ELEMENT_CENTER"><br /><span class="A_PAR">SITUAȚIA CENTRALIZATOARE<!----></span><br /><span class="A_PAR">a ajutorului de stat pentru susținerea activității crescătorilor din sectorul suin <!----></span><br /><span class="A_PAR">în contextul crizei economice generate de pandemia de COVID-19<!----></span><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA344">Ministerul Agriculturii și Dezvoltării Rurale<!----></span><span class="A_ELEMENT_RIGHT"><br /><span class="A_PAR">Se aprobă.<!----></span><br /><span class="A_PAR">Ordonator principal de credite,<!----></span><br /><span class="A_PAR">...................................................<!----></span><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA348"><table style="display: block; color:black;"><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Nr. crt.</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Județul</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Suma solicitată (lei)</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">(0)</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">(1)</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">(2)</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">1.</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA651"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA653"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">2.</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA657"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA659"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">3.</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA663"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA665"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">.....</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA669"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA671"><!----></span></td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">TOTAL:</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA675"><!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:black;" id="id_parA677"><!----></span></td></tr></table><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA382">Direcția generală buget-finanțe și fonduri europene<!----></span><span class="A_ELEMENT_CENTER"><br /><span class="A_PAR">Director general,<!----></span><br /><span class="A_PAR">...................................................<!----></span><br /><span class="A_PAR">(semnătura și ștampila)<!----></span><!----></span><!----></span><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA679">-----<!----></span>
+                                    </div>
+                                    <div id="div_Formerepublicate" class="content_forma_act" style="display: none" data-state="empty"></div>
+                                    <div id="div_Formadebaza" class="content_forma_act" style="display: none" data-state="empty"></div>
+
+
+                        </div>
+
+                        <div id="fisa_act_container" style="display: none" data-id="FisaAct" data-state="empty">
+                                <div id="div_Actiunisuferite" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_ActiuniInduse" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_Referape" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_Referitde" class="content_fisa_act" data-state="empty">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+ 
+<script type="text/javascript">
+    if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+        $("#meniu").css("float", "left");
+        $("#meniu").css("width", "20%");
+        $(".affix-top").css("position", "fixed");
+        $(".affix-top").css("top", "20px");
+        $(".affix-bottom").css("top", "20px");
+        $("#infoactinfoact").css("float", "right");
+        $("#infoactinfoact").css("width", "79%");
+        //var naturalWidth = img.naturalWidth;
+        //var imagini = document.getElementsByTagName("img");
+        //for (i=0;i<imagini.length;i++)
+        //{
+         //   alert(imagini[i].naturalWidth);
+         //   imagini[i].setAttribute("style","max-width:"+imagini[i].naturalWidth+"px");
+       // }
+       //////$("#infoactinfoact img").css("max-width", +"px");
+        /////alert($("#infoactinfoact img").width);
+        $("#infoactinfoact img").css("width", "auto");
+         
+        
+ 
+    }
+    var sbarHeight = null;
+
+    $(function () {
+
+        if (document.getElementsByClassName("alert")[0])
+            document.getElementsByClassName("alert")[0].style.visibility = 'hidden';
+
+        document.getElementById("Actiunisuferite").checked = false;
+        document.getElementById("ActiuniInduse").checked = false;
+        document.getElementById("Referape").checked = false;
+        document.getElementById("Referitde").checked = false;
+
+        //alert(document.getElementById("header_wrapper").offsetHeight);
+        //alert(screen.height);
+
+        var inaltime_meniu_stanga = screen.height - document.getElementById("header_wrapper").offsetHeight;
+        //alert(inaltime_meniu_stanga);
+        //  document.getElementById("meniu_stanga").style.maxHeight = inaltime_meniu_stanga + "px";
+
+        if (window.location.href.indexOf("forma_de_baza") != -1) {
+            document.getElementById("Formadebaza").style.disabled = true;
+            document.getElementById("Formadebaza").nextSibling.style.disabled = true;
+        }
+
+        if (window.location.href.indexOf("isFormaDeBaza") != -1) {
+            if (document.getElementById('istoric_fa'))
+                document.getElementById('istoric_fa').style.display = 'none'
+            document.getElementById("Formadebaza").checked = true;
+        }
+
+        if (window.location.href.indexOf("#A") != -1) {
+            var id_elem = window.location.href.split("#")[1];
+            window.scrollTo(id_elem.offsetHeight, 0);
+        }
+        else
+            window.scrollTo(0, 0);
+
+        //alert(document.getElementById('menu'));
+
+        //afisare/ascundere radio buttons (forme consolidate, forme republicate, forma de baza)
+
+        if (window.innerWidth < 1010) {
+            document.getElementById('sidebar').id = 'sidebar1';
+            document.getElementById('meniutitlu').appendChild(document.getElementById('sidebar1'));
+            document.getElementById('sidebar1').style.display = 'block';
+        }
+
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        && location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - 0 //offsets for fixed header
+                    }, 50);
+                    return false;
+                }
+            }
+        });
+        //Executed on page load with URL containing an anchor tag.
+        if ($(location.href.split("#")[1])) {
+            var target = $('#' + location.href.split("#")[1]);
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 0 //offset height of header here too.
+                }, 50);
+                return false;
+            }
+        }
+        /*
+        $("#sidebar").affix({
+            offset: {
+                top: $("header").outerHeight(true),
+                bottom: $("footer").outerHeight(true)+10
+            }
+        });
+        */
+        //alert(inaltimediv);
+        //document.getElementsByClassName('meniuaffix')[0].style.maxHeight = inaltimediv + "px";
+      $(window).resize(function () {
+            doResizeMenu();
+        });
+        
+        // scroll pe meniu la incarcare pagina (onload jQuery)
+      doResizeMenu();
+      imgSIZE(); // redim poze
+
+      // inaltime initiala sidebar
+      if ($("#sidebar").html())
+          sbarHeight = $("#sidebar").height();
+      else
+          sbarHeight = $("#sidebar1").height();
+        
+      $(window).scroll(function () {
+          if (isScrolledIntoView($(".footer_logo"))) {
+              $("#sidebar").height(sbarHeight - 200);
+          }
+          else {
+              $("#sidebar").height(sbarHeight);
+          }
+      });
+
+      var _tipact = 1;
+        //alert(_tipact);
+        if ((_tipact == 3 || _tipact == 2) && window.location.href.indexOf('isFormaDeBaza') == -1)
+        {
+            if (document.getElementById('Formaconsolidata'))
+            {
+                document.getElementById('Formaconsolidata').checked = true;
+            }
+        }        
+        else
+        {
+            //republicare
+            if (_tipact == 4)
+            {
+                if (document.getElementById('Formerepublicate'))
+                {
+                    document.getElementById('Formerepublicate').checked = true;
+                }
+                else if (document.getElementById('Formadebaza'))
+                {
+                    document.getElementById('Formadebaza').checked = true;
+                }
+            }
+            else
+                if (document.getElementById('Formadebaza'))
+                {
+                    document.getElementById('Formadebaza').checked = true;
+                }
+        }
+        //republicata (fortez forma de baza)
+        if (_tipact == 5)
+        {
+            if (document.getElementById('Formaconsolidata'))
+            {
+                document.getElementById('Formaconsolidata').checked = true;
+            }
+        }
+
+    }); // onload jQuery END
+
+    function doResizeMenu() {
+        var proc = 65;
+        var wh = window.innerHeight;
+        var dy = Math.floor(proc*wh/100);
+        var inaltimediv = window.innerHeight;
+        //var inaltimediv = window.innerHeight - $('#header_footer').height() - 400; // $("#footer_wrapper").height();
+        var inaltimediv1 = window.innerHeight - $('#header_wrapper').height();
+        
+        $("#sidebar").height(dy);
+        $("#sidebar1").height(inaltimediv1);
+    }
+
+    function AfiseazaTextModificat(e) {
+        // console.log($(e).prop("checked"));
+    }
+    function toggle_cuprins() {
+        if (document.getElementById('tree_cuprins_act').style.display != 'none')
+            document.getElementById('tree_cuprins_act').style.display = 'none'
+        else
+            document.getElementById('tree_cuprins_act').style.display = 'block';
+    }
+
+    function toggle_fisaact() {
+        if (document.getElementById('content_fisaact').style.display != 'none') {
+            document.getElementById('label_fisaact_plus_minus').innerHTML = '+';
+            document.getElementById('content_fisaact').style.display = 'none'
+        }
+        else {
+            document.getElementById('label_fisaact_plus_minus').innerHTML = '&#8212;&#160;';
+            document.getElementById('content_fisaact').style.display = 'block';
+        }
+    }
+
+    function toggle_istoric_forme_actz() {
+        if (document.getElementById('istoric_fa').style.display != 'none') {
+            document.getElementById('istoric_fa').style.display = 'none';
+            document.getElementById('label_forme_actz').innerHTML = "&nbsp;&nbsp;&nbsp;+&nbsp;istoric consolidari";
+        }
+        else {
+            document.getElementById('istoric_fa').style.display = 'block';
+            document.getElementById('label_forme_actz').innerHTML = "&nbsp;&nbsp;&nbsp;&#8212;&nbsp;istoric consolidari";
+        }
+    }
+    function scroll_to_fa() {
+        if (document.getElementById('fa_selectata'))
+            document.getElementById('meniu_stanga').scrollTop = document.getElementById('fa_selectata').offsetTop;
+    }
+    function ArataFisaAct(elem) {
+        //alert(elem.id);
+        if (elem.id == 'Actiunisuferite')
+        {
+            if (document.getElementById('actiuni_suferite').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/actiuniSuferite", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('actiuni_suferite').style.height = '30px';
+                    document.getElementById('actiuni_suferite').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('actiuni_suferite').style.display == 'none')
+                document.getElementById('actiuni_suferite').style.display = 'block';            
+            else
+                document.getElementById('actiuni_suferite').style.display = 'none';
+            
+        }
+
+        if (elem.id == 'ActiuniInduse')
+        {
+            if (document.getElementById('actiuni_induse').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/actiuniInduse", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('actiuni_induse').style.height = '30px';
+                    document.getElementById('actiuni_induse').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('actiuni_induse').style.display == 'none')
+                document.getElementById('actiuni_induse').style.display = 'block';
+            else
+                document.getElementById('actiuni_induse').style.display = 'none';
+        }
+
+        if (elem.id == 'Referape')
+        {
+            if (document.getElementById('refera_pe').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/referaPe", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('refera_pe').style.height = '30px';
+                    document.getElementById('refera_pe').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('refera_pe').style.display == 'none')
+                document.getElementById('refera_pe').style.display = 'block';
+            else
+                document.getElementById('refera_pe').style.display = 'none';
+        }
+
+        if (elem.id == 'Referitde')
+        {
+            if (document.getElementById('referit_de').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/referitDe", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('referit_de').style.height = '30px';
+                    document.getElementById('referit_de').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('referit_de').style.display == 'none')
+                document.getElementById('referit_de').style.display = 'block';
+            else
+                document.getElementById('referit_de').style.display = 'none';
+        }
+        window.scrollTo(0, 0);
+
+    }
+    function alege_articol(tip, select) {
+        var element_selectat = select.options[select.selectedIndex].text;
+        var id_elem = '';
+
+        if (tip == 1)
+            id = "actiuni_suferite";
+        else if (tip == 2)
+            id = "actiuni_induse";
+        else if (tip == 3)
+            id = "refera_pe";
+        else
+            id = "referit_de";
+
+        var linii_tabel = document.getElementById(id).childNodes[4].childNodes[0].childNodes;
+
+        if (element_selectat == 'Toate sectiunile')
+            for (i = 0; i < linii_tabel.length; i++) {
+                linii_tabel[i].style.display = 'table-row';
+            }
+        else {
+            linii_tabel[0].style.display = 'table-row';
+            for (i = 1; i < linii_tabel.length; i++) {
+                var element_gasit = linii_tabel[i].childNodes[0].innerHTML;
+                if (element_selectat != element_gasit)
+                    linii_tabel[i].style.display = 'none';
+                else
+                    linii_tabel[i].style.display = 'table-row';
+            }
+        }
+    }
+
+    function alege_articol_ref(select) {
+        var element_selectat = select.options[select.selectedIndex].text;
+
+        $("#loaderDiv").show();
+        $.post("/Public/getReferitDe", { contor: document.getElementById('id_act').value, element: element_selectat }, function (result) {
+            if (result.acte.indexOf('Nu exist') != -1)
+                document.getElementById('referit_de').style.height = '30px';
+            document.getElementById('referit_de').innerHTML = result.acte;
+            $("#loaderDiv").hide();
+        });
+
+    }
+
+    function incarcaFormaDeBaza(contor) {
+        $.post("/Public/DetaliiDocument/229711", { isFormaDeBaza: true }, function (result) {
+            window.location.href = result.Url;
+        });
+    }
+    function myFunction() {
+        var latime = window.innerWidth;
+        if (latime < 1010) {
+            if (document.getElementById('sidebar')) {
+                document.getElementById('meniutitlu').appendChild(document.getElementById('sidebar'));
+                document.getElementById('sidebar').style.display = 'block';
+                // $("#sidebar").hide(); // display : none
+                // $("#sidebar").show(); // display : default
+                document.getElementById('sidebar').id = 'sidebar1';
+            }
+        }
+        else {
+            if (document.getElementById('sidebar1')) {
+                document.getElementById('meniu').insertBefore(document.getElementById('sidebar1'), document.getElementById('infoact'));
+                document.getElementById('sidebar1').style.display = 'block';
+                document.getElementById('sidebar1').id = 'sidebar';
+                setTimeout(function () { $("#sidebar").height(sbarHeight); }, 1000);
+                
+            }
+            else {
+                document.getElementById('meniu').insertBefore(document.getElementById('sidebar'), document.getElementById('infoact'));
+                document.getElementById('sidebar').style.display = 'block';
+                //document.getElementById('sidebar').id = 'sidebar';
+            }
+        }
+    }
+    //document.getElementById('menu').appendChild(document.getElementById('sidebar'));
+    //document.getElementById('sidebar').style.display = 'inline';
+    //document.getElementById('sidebar').style.zIndex = '999';
+    window.onresize = myFunction;
+
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    $(document).ready(function () {
+        doResizeMenu();
+    });
+    $(window).resize(function () {
+        doResizeMenu();
+    });
+</script>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+            <div class="clear"></div>
+ 
+        </div>
+        <footer>
+            <div id="footer_wrapper">
+                <div class="footer_wrapper_inner bs-docs-footer">
+                    <div class="footer_inner">
+                        <div class="footer_logo"></div>
+                        <ul class="top_menu">
+                            <li class="floatnone" style="margin-left: -70px;">
+                                <center>
+                                    <div style="max-width:1024px;">
+                                        <br /><img src="/Content/Images/Site/justitie_logo.png" style="max-width:90px; position:relative; z-index:9999; width:100%; margin-top:-35px;" align="left" alt="logo" />
+                                        <p style="text-transform:none;">Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României.</p>
+                                        <br />
+                                        <center><p style="text-transform:none;">Pentru informații detaliate despre celelalte programe cofinanțate de Uniunea Europeană, vă invităm să vizitați <a onmouseover="this.style.color = '#386897'" onmouseout="    this.style.color = '#ffffff'" style="color: #ffffff; font-weight:bold;" href="http://www.fonduri-ue.ro">www.fonduri-ue.ro</a>.</p></center>
+                                    </div>
+                                </center>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_inner">
+                        <div class="copyright left">
+                            Copyright &copy; 2021 - Ministerul Justiției. Toate drepturile rezervate. - <a href="/Public/Termeni">Termeni și Condiții</a>
+                            <div id="meniufooter">
+
+                            </div>
+                        </div>
+                        <div class="copyright right">        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/Acasa">
+
+    &nbsp;&#124;&nbsp;Acasă
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/NLEX">
+
+    &nbsp;&#124;&nbsp;Despre Proiect
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/Functionalitati">
+
+    &nbsp;&#124;&nbsp;Facilități Oferite 
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/LegaturiUtile">
+
+    &nbsp;&#124;&nbsp;Legături Utile
+
+</a>
+        </li>
+
+
+</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.toggle-menu').jPushMenu();
+
+                $('ul.mainmenu li.dropdown').hover(function () {
+                    $(this).find('a.main_link').addClass('active');
+                    $(this).find('.level2_menu').show();
+                    $('li.dropdown_2').hover(function () {
+                        $(this).find('a.second_link').addClass('second_active');
+                        $(this).find('.level3_menu').show();
+
+                    }, function () {
+                        $(this).find('a.second_link').removeClass('second_active');
+                        $('.level3_menu').hide();
+                    });
+
+                }, function () {
+                    $(this).find('a.main_link').removeClass('active');
+                    $('.level2_menu').hide();
+                });
+    
+                if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+
+                    $('#mesajIe8Modal').modal('show');
+
+                }
+            });
+            //
+
+
+
+            $(document).ready(function () {
+
+
+                //stick in the fixed 100% height behind the navbar but don't wrap it
+                $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
+
+                $('#slide-nav.navbar-default').after($('<div id="navbar-height-col"></div>'));
+
+                // Enter your ids or classes
+                var toggler = '.navbar-toggle';
+                var pagewrapper = '#page-content';
+                var navigationwrapper = '.navbar-header';
+                var menuwidth = '100%'; // the menu inside the slide menu itself
+                var slidewidth = '60%';
+                var menuneg = '-100%';
+                var slideneg = '-60%';
+
+
+                $("#slide-nav").on("click", toggler, function (e) {
+
+                    var selected = $(this).hasClass('slide-active');
+
+                    $('#slidemenu').stop().animate({
+                        left: selected ? menuneg : '0px'
+                    });
+
+                    $('#navbar-height-col').stop().animate({
+                        left: selected ? slideneg : '0px'
+                    });
+
+                    $(pagewrapper).stop().animate({
+                        left: selected ? '0px' : slidewidth
+                    });
+
+                    $(navigationwrapper).stop().animate({
+                        left: selected ? '0px' : slidewidth
+                    });
+
+
+                    $(this).toggleClass('slide-active', !selected);
+                    $('#slidemenu').toggleClass('slide-active');
+
+
+                    $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+
+
+                });
+
+
+                var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+
+
+                $(window).on("resize", function () {
+
+                    if ($(window).width() > 1010 && $('.navbar-toggle').is(':hidden')) {
+                        $(selected).removeClass('slide-active');
+                    }
+
+
+                });
+
+
+            });
+        </script>
+        
+    </div>
+    <script>
+
+        function replaceScript() {
+            var toReplace = '<a href="javascript:;">Proiect</a>';
+            var replaceWith = '';
+            document.body.innerHTML = document.body.innerHTML.replace(toReplace, replaceWith);
+        }
+        replaceScript();
+
+        if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+            $("#toTop").hide();
+            $(".meniunu").hide();
+            $(".icon-bar").hide();
+            $("#btnNavbar").hide();
+            $(".navbar-header").hide();
+            $("body").css("min-width", "600px");
+
+        }
+
+       /* if (navigator.appName.indexOf("Netscape") != -1) {
+            $("#page_wrapper").css("transform", "scale(0.8)");
+            alert(0);
+            $("#page_wrapper").css("transform-origin", "50% 0% ");
+        }*/
+    </script>
+    
+    <!-- BETA Mesaj -->
+    <div class="modal fade" id="mesajBetaModal" tabindex="-1" role="dialog" aria-labelledby="mesajBetaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 700px; margin: 5% auto; ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Inchide</span></button>
+                    <br /><div class="alert alert-danger" role="alert"> <center>Versiune Beta</center></div>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        A fost lansata versiunea Beta a Portalului Legislativ<br /><br /><br />
+                    Fiind o versiune Beta, este posibil ca unele facilitati sa nu functioneze in mod corect.</center>  
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Inchide mesajul de atentionare</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- IE8 Mesaj -->
+    <div class="modal fade" id="mesajIe8Modal" tabindex="-1" role="dialog" aria-labelledby="mesajIe8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 700px; margin: 5% auto; ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Inchide</span></button>
+                    <br /><div class="alert alert-danger" role="alert"> <center>Datorita faptului ca folositi o versiune de Internet Explorer (Internet Explorer 8) foarte veche este posibil ca unele functionalitati sa fie dezactivate sau sa nu functioneze corect!</center></div>
+                </div>
+                <div class="modal-body">
+                    <div style="width:100%;">
+                        <div style="width:50%; float:left; text-transform:uppercase;">
+                            <span style="font-size:18px; font-weight:bold; text-transform:none;">Ce browser sa aleg?</span>
+                            <br /><br /><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/chrome.jpg" align="left" width="69" style="padding-right:10px;" /><b>Google Chrome</b><br />
+                                <br /><a href="http://www.google.com/chrome" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/firefox.jpg" align="left" width="69" style="padding-right:10px;" /><b>Mozilla Firefox</b><br />
+                                <br /><a href="https://www.mozilla.org/en-US/firefox/all/?q=romania" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/ie.jpg" align="left" width="69" style="padding-right:10px;" /><b>Internet Explorer</b><br />
+                                <br />
+                                <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/safari.jpg" align="left" width="69" style="padding-right:10px;" /><b>Apple Safari</b><br />
+                                <br /><a href="http://www.apple.com/safari/" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div>
+                        </div>
+                        <div style="width:50%; float:left;">
+                            <span style="font-size:18px; font-weight:bold;">De ce sa actualizez browserul?</span>
+                            <br /><br /><br />
+                            Browserele invechite, cum ar fi Internet Explorer 8 (lansat în 2001) nu respecta standardele web, nu ofera unele facilitati noi browser-ului, cum ar fi de navigatie sau descarcare, managerul de tab-uri, si au probleme de securitate.
+                            <br /><br />
+                            Aceasta afecteaza, de asemenea, calitatea de redare site-uri web.
+                            <br /><br /><br />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Inchide mesajul de atentionare</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

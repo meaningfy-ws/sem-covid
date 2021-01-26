@@ -1,0 +1,1288 @@
+﻿<!DOCTYPE html>
+<!-- Sorry no IE7 support! -->
+<!-- @see http://foundation.zurb.com/docs/index.html#basicHTMLMarkup -->
+
+<!--[if IE 8]><html class="ef-important no-js lt-ie9" lang="sv" id="ef-important"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="ef-important no-js" lang="sv" id="ef-important"> <!--<![endif]-->
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5VB5C9D');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e498714830",applicationID:"188779736"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta http-equiv="ImageToolbar" content="false" />
+<meta name="viewport" content="width=device-width, maximum-scale = 1.0" />
+<link rel="shortcut icon" href="https://www.eurofound.europa.eu/sites/all/themes/effoundationtheme/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta property="og:image" content="https://www.eurofound.europa.eu/sites/all/themes/effoundationtheme/logo_facebook.jpg" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.eurofound.europa.eu/sv/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<link rel="shortlink" href="https://www.eurofound.europa.eu/sv/node/82574" />
+<meta property="og:site_name" content="Eurofound" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.eurofound.europa.eu/sv/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<meta property="og:title" content="Temporary layoff" />
+  <title>Temporary layoff | Eurofound</title>
+  <link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__APo1ikpTUJq1MJ12wrgVWYZJCYAmkDkCbwqpbZ2ljl8__pe9CwtwJ1c98VqnahUWRtXYWJzCM9tcfAF3pSlj_3bs__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+body.logged-in .annotation{background-color:yellow;cursor:help;}
+td a.cke_disabled{color:#A0A0A0;}
+
+/*]]>*/-->
+</style>
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__CmJuV6jD45Lz1EWdjePcuDHkFQShuiaEig26pLRd8kM__FVSbuy6gPXwaImB5voPGvbI7Wo7PBQG1y8u58BjFC2I__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+fieldset.group-ef-quality-assessment{display:none;}div.qrr-info img{width:20px;border:none;margin:0 !important;}div.qrr-info{width:auto;float:right;}
+
+/*]]>*/-->
+</style>
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__O5l280ziMx0WA2cP_CRU-p8mXhM23SOf4UQ2iu2e57U__RT1pXJYm8IFzmEt_B1unAnBh2AaVPfcdVJfL9KSM22Y__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+.zipcode-textfield{display:none !important;}
+
+/*]]>*/-->
+</style>
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__m-8I6DlQGQfSJVY-tOfpB4fzNdH0OtO6BGji_yRUISs__a4vSbMPLzqFhMc5Io4sA3cqc0IbgsgiB-QOtyr4Mpe8__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__PdsFGuqcxixOmbZ66_vn3t3WAI_VTLbnBilvqZooy8s__t1T0nUjab5md0OQ1GkB4c9CFtzsFwc4F1EoEc52B66c__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__2cNdZWb61RWvgBvOQL2vQMDjqXejn7IMd1kIod1_vlM__nj04n1HaXW5Tihuj4YzsdK6zPmf8XCebsiJ01jlsFaE__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__qFMGl8_odVIUyW1rJpYkKczUNL-IZIRaFYWyfl1S0ho__GoE2MITXhOe3fL24ZY_fL0fDvyuP4c9lALS7h5dVB8c__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__vIPYAtwZ1HXMBoWjsyMrFFvUJn_BIVaA2DRrxIrlRhA__82V0fVgEZlc1Myg9Zdj5boxBtdh6_L_3pmmzuxjeHEE__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="print" />
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="https://www.eurofound.europa.eu/sites/default/files/advagg_css/css__yN_xkIN6IlZOGnoW-LKVHiqkJjQxiwDvju9RFYv6T-M__EYx1nh0xxqL7feA1xzfVzl2FeQzBddJhnM2U4AanqR4__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.css" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="https://www.eurofound.europa.eu/sites/default/files/advagg_js/js__4FZFBqfrxaOe-NfLVoJFPlULfKXhtMaoeGTpTLBISTE__7Y_nq3SmHmPRUaxUWtKKoaCdOZVFn4po6KBWF4wrURs__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.js"></script>
+<script type="text/javascript" defer="defer" src="//europa.eu/webtools/load.js"></script>
+<script type="text/javascript" src="https://www.eurofound.europa.eu/sites/default/files/advagg_js/js__PJiZkqGdhzGz8wxYVhkNvafntL-uUv1mAMbwV-eXJ64__ER5F10eEkgznwM1U6rWQ4D0AZJjGPADjlB7eV1EH0Xc__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.js"></script>
+<script type="text/javascript" src="https://www.eurofound.europa.eu/sites/default/files/advagg_js/js__Bxg5VG_k6r48FJqoQ_Vl_2qtjim_KgCcBm8TMvtlnho__AHtaa5zywWNPo4li4P_46-nwwRzO5xzb1F0chQl0e00__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.js"></script>
+<script type="text/javascript" src="https://www.eurofound.europa.eu/sites/default/files/advagg_js/js__ZNhtW1Z_Nd67s5BUDYlVGcqrrTOpHNidxpnZJTyqfb4__Cgc6tBzwh83er8jAb2AFjFkWUffDGjq6gXuqCjT87vs__g6KrnAngTXiryd02amFF2owCH5w66qoBjGsB23rAB1I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {
+    "basePath": "\/",
+    "pathPrefix": "sv\/",
+    "ajaxPageState": {
+        "theme": "effoundationtheme",
+        "theme_token": "uSUJYICVq0XeUubC6WYRQOQzzUeEbpwgu6ueSmFsTJI",
+        "jquery_version": "1.7",
+        "css": {
+            "modules\/system\/system.base.css": 1,
+            "modules\/system\/system.messages.css": 1,
+            "modules\/system\/system.theme.css": 1,
+            "sites\/all\/libraries\/chosen\/chosen.css": 1,
+            "sites\/all\/modules\/contrib\/chosen\/css\/chosen-drupal.css": 1,
+            "misc\/ui\/jquery.ui.core.css": 1,
+            "misc\/ui\/jquery.ui.theme.css": 1,
+            "misc\/ui\/jquery.ui.resizable.css": 1,
+            "misc\/ui\/jquery.ui.button.css": 1,
+            "misc\/ui\/jquery.ui.dialog.css": 1,
+            "sites\/all\/modules\/contrib\/media\/css\/media.css": 1,
+            "sites\/all\/modules\/contrib\/simplenews\/simplenews.css": 1,
+            "sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css": 1,
+            "sites\/all\/modules\/contrib\/cfr\/cfrapi\/css\/cfrapi.css": 1,
+            "sites\/all\/modules\/contrib\/colorbox_node\/colorbox_node.css": 1,
+            "modules\/comment\/comment.css": 1,
+            "sites\/all\/modules\/contrib\/date\/date_api\/date.css": 1,
+            "sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css": 1,
+            "sites\/all\/modules\/custom\/ef_components\/css\/ef_components.common.css": 1,
+            "sites\/all\/modules\/custom\/ef_components\/css\/ef_components.field.css": 1,
+            "sites\/all\/modules\/custom\/ef_components\/css\/ef_components.fonts.css": 1,
+            "sites\/all\/modules\/custom\/ef_components\/css\/ef_components.list_of_key_findings.css": 1,
+            "sites\/all\/modules\/custom\/ef_components\/css\/ef_components.pdf_button.css": 1,
+            "sites\/all\/modules\/custom\/ef_components\/css\/ef_components.pub_full_report_box.css": 1,
+            "sites\/all\/modules\/custom\/ef_components\/css\/ef_components.pub_full_report_buttons.css": 1,
+            "sites\/all\/modules\/features\/ef_ft_ct_efexecutivesummary\/css\/ef_ft_ct_efexecutivesummary.css": 1,
+            "sites\/all\/modules\/features\/ef_ft_ct_efworkingpaper\/css\/ef_ft_ct_efworkingpaper.css": 1,
+            "sites\/all\/modules\/features\/ef_ft_textformats\/css\/ef_ft_textformats.css": 1,
+            "sites\/all\/modules\/contrib\/entdispfieldui\/css\/entdispfieldui.admin.css": 1,
+            "modules\/field\/theme\/field.css": 1,
+            "modules\/node\/node.css": 1,
+            "modules\/search\/search.css": 1,
+            "modules\/user\/user.css": 1,
+            "sites\/all\/modules\/contrib\/views\/css\/views.css": 1,
+            "sites\/all\/libraries\/qtip\/jquery.qtip.min.css": 1,
+            "0": 1,
+            "1": 1,
+            "sites\/all\/modules\/custom\/ckannotation\/css\/ckannotation.css": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css": 1,
+            "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1,
+            "sites\/all\/modules\/contrib\/lightbox2\/css\/lightbox.css": 1,
+            "sites\/all\/modules\/contrib\/panels\/css\/panels.css": 1,
+            "sites\/all\/modules\/contrib\/popup\/popup.css": 1,
+            "2": 1,
+            "sites\/all\/modules\/custom\/ef_d3_dataexplorer\/css\/ejmcss.css": 1,
+            "sites\/all\/modules\/contrib\/print\/print_ui\/css\/print_ui.theme.css": 1,
+            "sites\/all\/modules\/contrib\/menu_minipanels\/css\/menu_minipanels.css": 1,
+            "public:\/\/ctools\/css\/b468c366187032e8f8f73486884f45ca.css": 1,
+            "public:\/\/ctools\/css\/c6c53cd3704c0903f639a915421c364e.css": 1,
+            "public:\/\/ctools\/css\/fa52514d31ec98af31c4e8c678c4820b.css": 1,
+            "sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css": 1,
+            "public:\/\/ctools\/css\/67fc51e0488e8425806131f81610b5fe.css": 1,
+            "sites\/all\/modules\/contrib\/lang_dropdown\/lang_dropdown.css": 1,
+            "modules\/filter\/filter.css": 1,
+            "3": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/fonts.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/effoundationtheme.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/ef.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/fonts\/font-awesome\/css\/font-awesome.min.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/templates-style.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/view_styles\/erm_regulation_view.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/view_styles\/case_studies_view.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/publications_search.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/responsive.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/geolocation-custom.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/overrides.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/print-browser.css": 1,
+            "sites\/all\/themes\/effoundationtheme\/css\/ie8-grid-foundation-4.css": 1
+        },
+        "js": {
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js": 1,
+            "misc\/jquery-extend-3.4.0.js": 1,
+            "misc\/jquery.once.js": 1,
+            "misc\/drupal.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js": 1,
+            "sites\/all\/modules\/contrib\/media\/js\/media.core.js": 1,
+            "sites\/all\/libraries\/chosen\/chosen.jquery.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js": 1,
+            "sites\/all\/modules\/contrib\/media\/js\/util\/json2.js": 1,
+            "sites\/all\/modules\/contrib\/media\/js\/util\/ba-debug.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1,
+            "misc\/form.js": 1,
+            "misc\/ajax.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js": 1,
+            "sites\/all\/modules\/contrib\/admin_menu\/admin_devel\/admin_devel.js": 1,
+            "public:\/\/languages\/sv_7bf8kSsYs2Jocbo2A-m6ghftPFkBovwRzRPw0ophlC0.js": 1,
+            "sites\/all\/libraries\/qtip\/jquery.qtip.min.js": 1,
+            "sites\/all\/modules\/custom\/ckannotation\/js\/ckannotationview.js": 1,
+            "sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js": 1,
+            "sites\/all\/modules\/contrib\/lightbox2\/js\/lightbox.js": 1,
+            "sites\/all\/modules\/contrib\/popup\/popup.js": 1,
+            "sites\/all\/modules\/custom\/ef_qrr\/js\/ef_qrr.js": 1,
+            "sites\/all\/modules\/custom\/ef_contents2word\/ef_contents2word.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/GA\/base64.js": 1,
+            "sites\/all\/modules\/contrib\/lang_dropdown\/lang_dropdown.js": 1,
+            "misc\/textarea.js": 1,
+            "sites\/all\/modules\/contrib\/media\/js\/media.popups.js": 1,
+            "modules\/filter\/filter.js": 1,
+            "sites\/all\/modules\/contrib\/media\/modules\/media_wysiwyg\/js\/media_wysiwyg.filter.js": 1,
+            "misc\/progress.js": 1,
+            "\/\/europa.eu\/webtools\/load.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox_node\/colorbox_node.js": 1,
+            "sites\/all\/modules\/contrib\/chosen\/chosen.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/vendor\/custom.modernizr.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/foundation.min.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/jquery.ddslick.min.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/jquery.socialshareprivacy.min.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/effoundationtheme.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/ef_car_acordion.js": 1,
+            "sites\/all\/themes\/effoundationtheme\/js\/highlight_search_terms.js": 1
+        }
+    },
+    "colorbox": {
+        "opacity": "0.85",
+        "current": "{current} av {total}",
+        "previous": "\u00ab F\u00f6reg\u00e5ende",
+        "next": "N\u00e4sta \u00bb",
+        "close": "St\u00e4ng",
+        "maxWidth": "98%",
+        "maxHeight": "98%",
+        "fixed": true,
+        "mobiledetect": true,
+        "mobiledevicewidth": "480px"
+    },
+    "lightbox2": {
+        "rtl": "0",
+        "file_path": "\/(\\w\\w\/)public:\/",
+        "default_image": "\/sites\/all\/modules\/contrib\/lightbox2\/images\/brokenimage.jpg",
+        "border_size": 10,
+        "font_color": "000",
+        "box_color": "fff",
+        "top_position": "",
+        "overlay_opacity": "0.8",
+        "overlay_color": "000",
+        "disable_close_click": true,
+        "resize_sequence": 0,
+        "resize_speed": 400,
+        "fade_in_speed": 400,
+        "slide_down_speed": 600,
+        "use_alt_layout": false,
+        "disable_resize": false,
+        "disable_zoom": false,
+        "force_show_nav": false,
+        "show_caption": true,
+        "loop_items": false,
+        "node_link_text": "View Image Details",
+        "node_link_target": false,
+        "image_count": "Image !current of !total",
+        "video_count": "Video !current of !total",
+        "page_count": "Page !current of !total",
+        "lite_press_x_close": "press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close",
+        "download_link_text": "",
+        "enable_login": false,
+        "enable_contact": false,
+        "keys_close": "c x 27",
+        "keys_previous": "p 37",
+        "keys_next": "n 39",
+        "keys_zoom": "z",
+        "keys_play_pause": "32",
+        "display_image_size": "original",
+        "image_node_sizes": "()",
+        "trigger_lightbox_classes": "",
+        "trigger_lightbox_group_classes": "",
+        "trigger_slideshow_classes": "",
+        "trigger_lightframe_classes": "",
+        "trigger_lightframe_group_classes": "",
+        "custom_class_handler": 0,
+        "custom_trigger_classes": "",
+        "disable_for_gallery_lists": true,
+        "disable_for_acidfree_gallery_lists": true,
+        "enable_acidfree_videos": true,
+        "slideshow_interval": 5000,
+        "slideshow_automatic_start": true,
+        "slideshow_automatic_exit": true,
+        "show_play_pause": true,
+        "pause_on_next_click": false,
+        "pause_on_previous_click": true,
+        "loop_slides": false,
+        "iframe_width": 600,
+        "iframe_height": 400,
+        "iframe_border": 1,
+        "enable_video": false
+    },
+    "popup": {
+        "effects": {
+            "show": {
+                "default": "this.body.show();",
+                "fade": "\n        if (this.opacity){\n          this.body.fadeTo(\u0027medium\u0027,this.opacity);\n        }else{\n          this.body.fadeIn(\u0027medium\u0027);\n        }",
+                "slide-down": "this.body.slideDown(\u0027medium\u0027)",
+                "slide-down-fade": "\n        this.body.animate(\n          {\n            height:\u0027show\u0027,\n            opacity:(this.opacity ? this.opacity : \u0027show\u0027)\n          }, \u0027medium\u0027\n        );"
+            },
+            "hide": {
+                "default": "this.body.hide();",
+                "fade": "this.body.fadeOut(\u0027medium\u0027);",
+                "slide-down": "this.body.slideUp(\u0027medium\u0027);",
+                "slide-down-fade": "\n        this.body.animate(\n          {\n            height:\u0027hide\u0027,\n            opacity:\u0027hide\u0027\n          }, \u0027medium\u0027\n        );"
+            }
+        },
+        "linger": 250,
+        "delay": 0
+    },
+    "ef_qrr": {
+        "qrrTooltip": "\u003Cdiv\u003E\u003Cb\u003E5* - Fully compliant:\u003C\/b\u003E meets requirements of the criterion completely.\u003C\/div\u003E\n\u003Cdiv\u003E\u003Cb\u003E4* - Almost fully compliant:\u003C\/b\u003E meets requirements almost completely but there are some points for improvement.\u003C\/div\u003E\n\u003Cdiv\u003E\u003Cb\u003E3* - Satisfactory:\u003C\/b\u003E meets the minimum requirements but has many points that can be improved.\u003C\/div\u003E\n\u003Cdiv\u003E\u003Cb\u003E2* - Weak:\u003C\/b\u003E most requirements are not met, requiring additional work and effort by the quality manager to bring it to an acceptable level.\u003C\/div\u003E\n\u003Cdiv\u003E\u003Cb\u003E1* - Unacceptable:\u003C\/b\u003E fails to comply with the requirements of the criterion completely \u2013 should be redone.\u003C\/div\u003E"
+    },
+    "chosen": {
+        "selector": ".view-filters select, .views-exposed-form select, .view-ef-themes-jump-block select, .view-ef-countries-jump-block select, .car-nc-creation, .form-item-menu-parent select",
+        "minimum_single": 0,
+        "minimum_multiple": 0,
+        "minimum_width": 400,
+        "options": {
+            "allow_single_deselect": false,
+            "disable_search": false,
+            "disable_search_threshold": 0,
+            "search_contains": false,
+            "placeholder_text_multiple": "Choose some options",
+            "placeholder_text_single": "Choose an option",
+            "no_results_text": "No results match",
+            "inherit_select_classes": true
+        }
+    },
+    "urlIsAjaxTrusted": {
+        "\/sv\/observatories\/emcc\/erm\/support-instrument\/temporary-layoff": true,
+        "\/sv\/search": true,
+        "\/sv\/comment\/reply\/82574": true
+    },
+    "media": {
+        "browserUrl": "\/sv\/media\/browser?render=media-popup",
+        "styleSelectorUrl": "\/sv\/media\/-media_id-\/format-form?render=media-popup",
+        "dialogOptions": {
+            "dialogclass": "media-wrapper",
+            "modal": true,
+            "draggable": false,
+            "resizable": false,
+            "minwidth": 500,
+            "width": 670,
+            "height": 280,
+            "position": "center",
+            "overlay": {
+                "backgroundcolor": "#000000",
+                "opacity": 0.4
+            },
+            "zindex": 10000
+        },
+        "wysiwyg_allowed_attributes": [
+            "alt",
+            "title",
+            "height",
+            "width",
+            "hspace",
+            "vspace",
+            "border",
+            "align",
+            "style",
+            "class",
+            "id",
+            "usemap",
+            "data-picture-group",
+            "data-picture-align",
+            "data-picture-mapping",
+            "data-delta"
+        ],
+        "img_alt_field": "field_file_image_alt_text",
+        "img_title_field": "field_file_image_title_text"
+    },
+    "mediaDoLinkText": true,
+    "wysiwyg": {
+        "triggers": {
+            "edit-comment-body-und-0-value": {
+                "field": "edit-comment-body-und-0-value",
+                "resizable": 1,
+                "activeFormat": "plain_text"
+            }
+        }
+    },
+    "colorbox_node": {
+        "width": "600px",
+        "height": "600px"
+    }
+});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]>
+		<script src="/sites/all/themes/effoundationtheme/js/html5shiv.js"></script>
+	<![endif]-->
+  
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-82574 node-type-erm-support-instrument i18n-sv lang-sv section-observatories" >
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VB5C9D"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Hoppa till huvudinnehåll</a>
+  </div>
+    <!--.page -->
+
+<script type="text/javascript">
+  (function ($) {
+    $(document).ready(function() {
+      if ($('.node .ds-node-languages ul.links li a.language-link').length || $('.node-type-dvs-survey ul.links li a.language-link').length ) {
+        var translations_title ='This item is available in other languages';
+        var translations_title1 ='This item is available in other languages';
+        $('.node .ds-node-languages ul.links').after("<span class='translations-title'>" + translations_title1 + ":</span><ul class='translations'></ul>");
+        $('.node-type-dvs-survey ul.links').last().after("<span class='translations-title'>" + translations_title + ":</span><ul class='translations'></ul>");
+
+        $ul_translations = $('.node ul.translations');
+
+        $('.node-type-dvs-survey ul.links li a.language-link').each(function () {
+            $ul_translations.append($(this).parent());
+        });
+
+        $('.node .ds-node-languages ul.links li a.language-link').each(function () {
+            $ul_translations.append($(this).parent());
+        });
+
+        $('ul.translations li a').each(function() {
+            $(this).html($(this).attr('xml:lang').toUpperCase());
+        });
+
+        var index = $('body').attr('class').indexOf('lang-');
+        var current_language = $('body').attr('class').substring(index + 5, index + 8);
+        $('ul.translations').prepend('<li class="' + current_language + ' current"><a lang="' + current_language + '" class="language-link">' + current_language.toUpperCase() + '</a></li>');
+       }
+    });
+  })(jQuery);
+</script>
+
+
+<div role="document" class="page">
+
+  <!--.l-header region -->
+  <header role="banner" class="l-header">
+
+
+
+    <!-- Title, slogan and menu -->
+        <div class="">
+
+      <section class="ef-top row">
+        <div class="ef-logo-title large-8 columns">
+                    <div class="large-5 columns">
+            <a href="/sv" title="Hem" class="ef-logo-img" rel="home" id="logo">
+              <img src="https://www.eurofound.europa.eu/sites/all/themes/effoundationtheme/logo.png" alt="Europeiska fonden för förbättring av levnads- och arbetsvillkor" width="150" height="86" />
+            </a>
+            <p class="ef-tagline-logo">Europeiska fonden för förbättring av levnads- och arbetsvillkor</p>
+          </div>
+          
+             <section class="block block-block ef-logo-legend large-3 block-block-25">
+
+      
+      <p>Eurofound är ett trepartsorgan inom EU som förmedlar kunskap för att stödja utvecklingen av en bättre social-, sysselsättnings- och arbetsmarknadspolitik</p>
+  
+</section>
+
+                                    <div id="site-name" class="element-invisible">
+                <strong>
+                  <a href="/sv" title="Hem" rel="home"><span>Eurofound</span></a>
+                </strong>
+              </div>
+                      
+                  </div>
+
+        <div class="ef-top-links large-4 columns">
+                      <!--.top-links-region -->
+                   <section class="block block-menu block-menu-menu-ef-user-login-links-menu">
+
+      
+      <ul class="menu"><li class="first last leaf"><a href="/sv/user/login?current=node/82574">Logga in</a></li>
+</ul>  
+</section>   <section class="block block-lang-dropdown block-lang-dropdown-language">
+
+      
+      <form class="lang_dropdown_form language" id="lang_dropdown_form_language" action="/sv/observatories/emcc/erm/support-instrument/temporary-layoff" method="post" accept-charset="UTF-8"><div><div class="form-item form-type-select form-item-lang-dropdown-select">
+ <select id="lang-dropdown-select-language" style="width:165px" name="lang_dropdown_select" class="form-select"><option value="nb">Bokmål (nb)</option><option value="bg">български (bg)</option><option value="es">español (es)</option><option value="cs">čeština (cs)</option><option value="sr">cрпски (sr)</option><option value="da">dansk (da)</option><option value="de">Deutsch (de)</option><option value="et">eesti (et)</option><option value="el">ελληνικά (el)</option><option value="en">English (en)</option><option value="fr">français (fr)</option><option value="ga">Gaeilge (ga)</option><option value="hr">hrvatski (hr)</option><option value="is">íslenska (is)</option><option value="it">italiano (it)</option><option value="lv">latviešu valoda (lv)</option><option value="lt">lietuvių kalba (lt)</option><option value="hu">magyar (hu)</option><option value="mk">македонски (mk)</option><option value="mt">Malti (mt)</option><option value="nl">Nederlands (nl)</option><option value="pl">polski (pl)</option><option value="pt">português (pt)</option><option value="ro">română (ro)</option><option value="sk">slovenčina (sk)</option><option value="sl">slovenščina (sl)</option><option value="fi">suomi (fi)</option><option value="sv" selected="selected">svenska (sv)</option><option value="tr">türkçe (tr)</option></select>
+</div>
+<input type="hidden" name="nb" value="/nb/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="bg" value="/bg/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="es" value="/es/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="cs" value="/cs/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="sr" value="/sr/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="da" value="/da/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="de" value="/de/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="et" value="/et/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="el" value="/el/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="en" value="/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="fr" value="/fr/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="ga" value="/ga/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="hr" value="/hr/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="is" value="/is/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="it" value="/it/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="lv" value="/lv/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="lt" value="/lt/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="hu" value="/hu/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="mk" value="/mk/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="mt" value="/mt/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="nl" value="/nl/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="pl" value="/pl/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="pt" value="/pt/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="ro" value="/ro/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="sk" value="/sk/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="sl" value="/sl/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="fi" value="/fi/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="sv" value="/sv/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<input type="hidden" name="tr" value="/tr/observatories/emcc/erm/support-instrument/temporary-layoff" />
+<noscript><div>
+<button id="edit-submit--2" name="op" value="Gå till" type="submit" class="form-submit">Gå till</button>
+
+</div></noscript><input type="hidden" name="form_build_id" value="form-2z4Y_ageynKwjuzEVGrgIYXILvJ5a-zPgJ9BxCosOeY" />
+<input type="hidden" name="form_id" value="lang_dropdown_form" />
+</div></form>  
+</section>   <section class="block block-search block-search-form">
+
+      
+      <form action="/sv/search" method="get" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Sökformulär</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Sök </label>
+ <input title="Ange de termer du vill söka efter." class="small-8 columns form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<button class="primary button form-submit" id="edit-submit--3" name="op" value="Sök" type="submit">Sök</button>
+</div>
+</div></form>  
+</section>                  </div>
+        <div class="large-12 columns masquerade-region">
+                  </div>
+      </section>
+
+
+
+
+
+
+
+      <section class="row row-main-menu">
+                  <nav id="main-menu" class="navigation top-bar" role="navigation">
+            <ul class="title-area">
+              <li class="name">
+                <a href="/sv">Go to Eurofound Home</a>
+              </li>
+               <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Skip to main menu</span></a></li>
+            </ul>
+            <section class="ef-navigation-menus row">
+            <h2 class="element-invisible">Huvudmeny</h2><ul id="main-menu-links" class="links inline-list clearfix"><li class="menu-16445 first"><a href="/sv/about-eurofound" class="icon-ef_about_us icon-ef_about_us menu-minipanel menu-minipanel-16445 menuparent">Om oss</a><ul class="menu-minipanel-panel menu-minipanel-about-eurofound-mini-panel">
+  <li class="first odd last">
+    <div class="panel-flexible panels-flexible-3 clearfix" id="mini-panel-about_eurofound_mini_panel">
+<div class="panel-flexible-inside panels-flexible-3-inside">
+<div class="panels-flexible-region panels-flexible-region-3-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-3-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-menu-tree pane-main-menu"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="menu-block-wrapper menu-block-ctools-main-menu-1 menu-name-main-menu parent-mlid-16445 menu-level-1">
+  <ul class="menu"><li class="first expanded menu-mlid-16453"><a href="/sv/about-eurofound/who-we-are" class="icon-ef_who_we_are icon-ef_who_we_are icon-ef_qui_nous_sommes icon-ef_За_нас icon-ef_quiénes_somos icon-ef_kdo_jsme icon-ef_hvem_er_vi? icon-ef_wer_wir_sind icon-ef_meist icon-ef_Ποιοι_είμαστε icon-ef_više_o_nama icon-ef_chi_siamo icon-ef_kas_mēs_esam icon-ef_kas_mes_esame icon-ef_kik_vagyunk? icon-ef_onze_mensen icon-ef_kim_jesteśmy icon-ef_quem_somos icon-ef_cine_suntem icon-ef_kto_sme icon-ef_kdo_smo icon-ef_ketä_me_olemme icon-ef_vilka_är_vi" title="">Vilka är vi</a><ul class="menu"><li class="first expanded menu-mlid-16462"><a href="/sv/about-eurofound/who-we-are/staff" class="icon-ef_staff icon-ef_staff icon-ef_staff icon-ef_staff icon-ef_staff icon-ef_staff icon-ef_staff icon-ef_staff icon-ef_staff">Personal</a><ul class="menu"><li class="first leaf menu-mlid-16641"><a href="/sv/about-eurofound/who-we-are/staff/research-units" class="icon-ef_research_units icon-ef_research_units icon-ef_research_units icon-ef_research_units icon-ef_research_units icon-ef_research_units icon-ef_research_units icon-ef_research_units icon-ef_research_units icon-ef_research_units">Forskningsenheter</a></li>
+<li class="leaf menu-mlid-16636"><a href="/sv/about-eurofound/who-we-are/staff/information-and-communication" class="icon-ef_information_and_communication icon-ef_information_and_communication icon-ef_information_and_communication icon-ef_information_and_communication icon-ef_information_and_communication icon-ef_information_and_communication icon-ef_information_and_communication icon-ef_information_and_communication">Information och kommunikation</a></li>
+<li class="leaf menu-mlid-16640"><a href="/sv/about-us/who-we-are/staff/information-and-communication-technologies">Informations- och kommunikationsteknik</a></li>
+<li class="leaf menu-mlid-16635"><a href="/sv/about-eurofound/who-we-are/staff/directorate" class="icon-ef_directorate icon-ef_directorate">Ledning</a></li>
+<li class="leaf menu-mlid-16639"><a href="/sv/about-us/who-we-are/staff/organisational-support" class="icon-ef_operational_support icon-ef_organisational_support icon-ef_organisational_support icon-ef_organisational_support icon-ef_organisational_support">Operativa stödtjänster</a></li>
+<li class="last leaf menu-mlid-18365"><a href="/sv/about-us/who-we-are/staff/resources-unit" class="icon-ef_resources icon-ef_resources icon-ef_resources icon-ef_resources icon-ef_resources icon-ef_resources">Resursenhet</a></li>
+</ul></li>
+<li class="expanded menu-mlid-16963"><a href="/sv/about-us/who-we-are/management-board" class="icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board icon-ef_management_board">Styrelse</a><ul class="menu"><li class="first last leaf menu-mlid-18299"><a href="/sv/about-us/who-we-are/management-board/agendas-and-minutes" class="icon-ef_agendas_and_minutes">Agendas and minutes</a></li>
+</ul></li>
+<li class="last collapsed menu-mlid-16464"><a href="/sv/about-eurofound/who-we-are/stakeholders-and-partners" class="icon-ef_stakeholders_and_partners">Intressenter och samarbetspartner</a></li>
+</ul></li>
+<li class="expanded menu-mlid-16452"><a href="/sv/about-eurofound/what-we-do" class="icon-ef_what_we_do icon-ef_what_we_do icon-ef_what_we_do icon-ef_what_we_do icon-ef_what_we_do icon-ef_what_we_do icon-ef_ce_que_nous_faisons icon-ef_ce_que_nous_faisons icon-ef_ce_que_nous_faisons icon-ef_qué_hacemos icon-ef_qué_hacemos icon-ef_was_wir_machen icon-ef_was_wir_machen icon-ef_cosa_facciamo icon-ef_cosa_facciamo icon-ef_onze_werkzaamheden icon-ef_onze_werkzaamheden icon-ef_onze_werkzaamheden icon-ef_Нашата_дейност icon-ef_Нашата_дейност icon-ef_náplň_naší_práce icon-ef_náplň_naší_práce icon-ef_náplň_naší_práce icon-ef_hvad_laver_vi? icon-ef_hvad_laver_vi? icon-ef_meie_tegevus icon-ef_meie_tegevus icon-ef_Τι_κάνουμε icon-ef_Τι_κάνουμε icon-ef_naša_zadaća icon-ef_naša_zadaća icon-ef_ko_mēs_darām icon-ef_ko_mēs_darām icon-ef_mūsų_veikla icon-ef_mūsų_veikla icon-ef_tevékenységünk icon-ef_tevékenységünk icon-ef_czym_się_zajmujemy icon-ef_czym_się_zajmujemy icon-ef_o_que_fazemos icon-ef_o_que_fazemos icon-ef_cu_ce_ne_ocupăm icon-ef_cu_ce_ne_ocupăm icon-ef_náplň_našej_práce icon-ef_náplň_našej_práce icon-ef_kaj_delamo icon-ef_kaj_delamo icon-ef_kaj_delamo icon-ef_vad_gör_vi icon-ef_vad_gör_vi icon-ef_mitä_me_teemme icon-ef_mitä_me_teemme icon-ef_what_we_do icon-ef_ce_que_nous_faisons icon-ef_what_we_do icon-ef_what_we_do icon-ef_what_we_do icon-ef_Нашата_дейност icon-ef_qué_hacemos icon-ef_náplň_naší_práce icon-ef_hvad_laver_vi? icon-ef_was_wir_machen icon-ef_meie_tegevus icon-ef_Τι_κάνουμε icon-ef_ce_que_nous_faisons icon-ef_naša_zadaća icon-ef_cosa_facciamo icon-ef_ko_mēs_darām icon-ef_mūsų_veikla icon-ef_tevékenységünk icon-ef_onze_werkzaamheden icon-ef_czym_się_zajmujemy icon-ef_o_que_fazemos icon-ef_cu_ce_ne_ocupăm icon-ef_náplň_našej_práce icon-ef_kaj_delamo icon-ef_mitä_me_teemme icon-ef_vad_gör_vi icon-ef_what_we_do">Vad gör vi</a><ul class="menu"><li class="first leaf menu-mlid-16779"><a href="/sv/about-eurofound/what-we-do/annual-reports-list" title="">Årsrapporter</a></li>
+<li class="leaf menu-mlid-16768"><a href="/sv/about-eurofound/what-we-do/work-programmes-list" title="">Arbetsprogram</a></li>
+<li class="leaf menu-mlid-18253"><a href="/sv/about-eurofound/what-we-do/financial-information" class="icon-ef_financial_information icon-ef_financial_information icon-ef_financial_information icon-ef_financial_information icon-ef_financial_information icon-ef_financial_information icon-ef_financial_information">Finansiell information</a></li>
+<li class="leaf menu-mlid-20379"><a href="/sv/about-eurofound/what-we-do/eu-priorities" class="icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities icon-ef_eu_priorities">EU priorities</a></li>
+<li class="last leaf menu-mlid-18328"><a href="/sv/about-eurofound/what-we-do/calendar" title="" class="icon-ef_communications_calendar">2020 års kommunikationskalender</a></li>
+</ul></li>
+<li class="expanded menu-mlid-16454"><a href="/sv/about-eurofound/procurement">Offentlig upphandling</a><ul class="menu"><li class="first leaf menu-mlid-17774"><a href="/sv/about-eurofound/procurement/opportunities/open" title="">Upphandlingsmöjligheter</a></li>
+<li class="leaf menu-mlid-17579"><a href="/sv/about-eurofound/procurement/express-your-interest" class="icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest icon-ef_express_your_interest">Express your interest</a></li>
+<li class="last leaf menu-mlid-17897"><a href="/sv/about-eurofound/procurement/call-for-external-experts">Inbjudningar avseende externa experter</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-16455"><a href="/sv/about-eurofound/vacancies" class="icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies icon-ef_vacancies">Lediga tjänster</a><ul class="menu"><li class="first leaf menu-mlid-16716"><a href="/sv/about-eurofound/vacancies/information-on-traineeships" class="icon-ef_information_on_traineeships icon-ef_information_on_traineeships icon-ef_information_on_traineeships icon-ef_information_on_traineeships icon-ef_information_on_traineeships icon-ef_information_on_traineeships icon-ef_information_on_traineeships icon-ef_information_on_traineeships icon-ef_information_on_traineeships">Information om praktikplatser</a></li>
+<li class="last expanded menu-mlid-16478"><a href="/sv/about-eurofound/vacancies/applicants" title="">Information för arbetssökande</a><ul class="menu"><li class="first leaf menu-mlid-17812"><a href="/sv/about-eurofound/vacancies/information-for-job-applicants/grading-and-remuneration">Grading and remuneration</a></li>
+<li class="last leaf menu-mlid-18244"><a href="/sv/about-eurofound/vacancies/information-for-job-applicants/rules-of-reimbursement-for-interviewees">Rules of reimbursement</a></li>
+</ul></li>
+</ul></li>
+</ul></div>
+  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </li>
+</ul>
+</li>
+<li class="menu-16446"><a href="/sv/publications" title="" class="icon-ef_publications icon-ef_publications icon-ef_publications menu-minipanel menu-minipanel-16446 menuparent">Publikationer</a><ul class="menu-minipanel-panel menu-minipanel-publication-mini-panel">
+  <li class="first odd last">
+    
+<div class="row" id="mini-panel-publication_mini_panel">
+  <div class="large-2 columns">
+      </div>
+  <div class="large-2 columns">
+    <div class="panel-pane pane-ef-custom-link"  >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/sv/publications" class="link">Browse all publications</a>  </div>
+
+  
+  </div>
+  </div>
+  <div class="large-10 columns">
+    <div class="panel-pane pane-fieldable-panels-pane pane-uuid-b5c73971-9a20-4e96-8834-ae58d41ccda2 pane-bundle-publication-submenu"  >
+  
+
+<div class="pane-content">
+  <div class="fieldable-panels-pane clearfix">
+    <div class="field field-name-field-ef-related-submenu-items field-type-entityreference field-label-hidden field-wrapper"><div class="fieldable-panels-pane large-6">
+      <div class="field field-name-title-field field-type-text field-label-hidden field-wrapper"><h2>Latest publications</h2>
+</div><div class="field field-name-field-ef-fold-out-publications field-type-entityreference field-label-hidden field-wrapper"><div class="node-wrapper large-6"><div  about="/sv/publications/report/2020/new-forms-of-employment-2020-update" typeof="sioc:Item foaf:Document" class="zf-2col node node-ef-publication view-mode-submenu_item ">
+
+
+<div class="row group-content">
+    <div class="group-left">
+        <div class="field field-name-field-ef-main-image field-type-image field-label-hidden field-wrapper"><a href="/sv/publications/report/2020/new-forms-of-employment-2020-update"><img typeof="foaf:Image" src="https://www.eurofound.europa.eu/sites/default/files/styles/menu_publications/public/ef20027.png?itok=6NgbyTfm" width="133" height="189" /></a></div>    </div>
+
+    <div class="group-right">
+        <div class="field field-name-title-field field-type-text field-label-hidden field-wrapper"><a href="/sv/publications/report/2020/new-forms-of-employment-2020-update">New forms of employment: 2020 update</a></div>    </div>
+</div>
+
+
+</div>
+
+</div><div class="node-wrapper large-6"><div  about="/sv/publications/customised-report/2020/long-term-care-workforce-employment-and-working-conditions" typeof="sioc:Item foaf:Document" class="zf-2col node node-ef-publication view-mode-submenu_item ">
+
+
+<div class="row group-content">
+    <div class="group-left">
+        <div class="field field-name-field-ef-main-image field-type-image field-label-hidden field-wrapper"><a href="/sv/publications/customised-report/2020/long-term-care-workforce-employment-and-working-conditions"><img typeof="foaf:Image" src="https://www.eurofound.europa.eu/sites/default/files/styles/menu_publications/public/ef20028.png?itok=TapNL5Zs" width="133" height="189" /></a></div>    </div>
+
+    <div class="group-right">
+        <div class="field field-name-title-field field-type-text field-label-hidden field-wrapper"><a href="/sv/publications/customised-report/2020/long-term-care-workforce-employment-and-working-conditions">Long-term care workforce: Employment and working conditions</a></div>    </div>
+</div>
+
+
+</div>
+
+</div></div></div>
+<div class="fieldable-panels-pane large-3">
+      <div class="field field-name-title-field field-type-text field-label-hidden field-wrapper"><h2>Forthcoming publication</h2>
+</div><div class="field field-name-field-ef-fold-out-publications field-type-entityreference field-label-hidden field-wrapper"><div class="node-wrapper"><div  about="/sv/publications/report/2021/covid-19-some-implications-for-employment-and-working-life" typeof="sioc:Item foaf:Document" class="zf-2col node node-ef-publication view-mode-submenu_item ">
+
+
+<div class="row group-content">
+    <div class="group-left">
+        <div class="field field-name-field-ef-main-image field-type-image field-label-hidden field-wrapper"><a href="/sv/publications/report/2021/covid-19-some-implications-for-employment-and-working-life"><img typeof="foaf:Image" src="https://www.eurofound.europa.eu/sites/default/files/styles/menu_publications/public/ef20050_-_forthcoming_research_report_covid19.png?itok=iHfamQC1" width="133" height="189" /></a></div>    </div>
+
+    <div class="group-right">
+        <div class="field field-name-title-field field-type-text field-label-hidden field-wrapper"><a href="/sv/publications/report/2021/covid-19-some-implications-for-employment-and-working-life">COVID-19: Some implications for employment and working life </a></div>    </div>
+</div>
+
+
+</div>
+
+</div></div></div>
+<div class="fieldable-panels-pane large-3">
+      <div class="field field-name-title-field field-type-text field-label-hidden field-wrapper"><h2>Series</h2>
+</div><div class="field field-name-field-ef-fold-out-publications field-type-entityreference field-label-hidden field-wrapper"><div class="node-wrapper"><div  about="/sv/publications/series/minimum-wages-in-the-eu" typeof="sioc:Item foaf:Document" class="zf-2col node node-ef-publication-series view-mode-submenu_item ">
+
+
+<div class="row group-content">
+    <div class="group-left">
+        <div class="field field-name-field-ef-main-image field-type-image field-label-hidden field-wrapper"><a href="/sv/publications/series/minimum-wages-in-the-eu"><img typeof="foaf:Image" src="https://www.eurofound.europa.eu/sites/default/files/styles/menu_publications/public/minimumwage-card.jpg?itok=mACKQhlc" width="133" height="189" /></a></div>    </div>
+
+    <div class="group-right">
+        <div class="field field-name-title-field field-type-text field-label-hidden field-wrapper"><a href="/sv/publications/series/minimum-wages-in-the-eu">Minimum wages in the EU</a></div>    </div>
+</div>
+
+
+</div>
+
+</div></div></div>
+</div></div>
+</div>
+
+
+</div>
+  </div>
+</div> <!-- panels row -->
+  </li>
+</ul>
+</li>
+<li class="menu-20625"><a href="/sv/topic" class="icon-ef_topics icon-ef_topics icon-ef_topics icon-ef_topics icon-ef_topics">Topics</a></li>
+<li class="menu-18283"><a href="/sv/data" title="" class="icon-ef_data_and_resources">Data och resurser</a></li>
+<li class="menu-16448"><a href="/sv/surveys" class="icon-ef_surveys icon-ef_surveys icon-ef_surveys icon-ef_surveys menu-minipanel menu-minipanel-16448 menuparent">Undersökningar</a><ul class="menu-minipanel-panel menu-minipanel-surveys-mini-panel">
+  <li class="first odd last">
+    <div class="panel-flexible panels-flexible-7 clearfix" id="mini-panel-surveys_mini_panel">
+<div class="panel-flexible-inside panels-flexible-7-inside">
+<div class="panels-flexible-region panels-flexible-region-7-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-7-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-menu-tree pane-main-menu"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="menu-block-wrapper menu-block-ctools-main-menu-2 menu-name-main-menu parent-mlid-16448 menu-level-1">
+  <ul class="menu"><li class="first expanded menu-mlid-16492"><a href="/sv/surveys/about-eurofound-surveys" title="" class="icon-ef_about_the_eurofound_surveys">Om Eurofounds undersökningar</a><ul class="menu"><li class="first leaf menu-mlid-16509"><a href="/sv/surveys/about-eurofound-surveys/international-collaboration" class="icon-ef_international_collaboration icon-ef_international_collaboration icon-ef_international_collaboration icon-ef_international_collaboration">Internationellt samarbete</a></li>
+<li class="leaf menu-mlid-16510"><a href="/sv/surveys/about-eurofound-surveys/methodology" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology">Metodik</a></li>
+<li class="leaf menu-mlid-16511"><a href="/sv/surveys/about-eurofound-surveys/quality-assurance" class="icon-ef_quality_assurance icon-ef_quality_assurance icon-ef_quality_assurance">Kvalitetssäkring</a></li>
+<li class="last leaf menu-mlid-16512"><a href="/sv/surveys/about-eurofound-surveys/data-availability" class="icon-ef_data_availability icon-ef_data_availability icon-ef_data_availability icon-ef_data_availability icon-ef_data_availability icon-ef_data_availability icon-ef_data_availability icon-ef_disponibilité_des_données" title="">Tillgång till uppgifter</a></li>
+</ul></li>
+<li class="expanded menu-mlid-16488"><a href="/sv/surveys/european-company-surveys" class="icon-ef_european_company_surveys_(ecs) icon-ef_european_company_surveys_(ecs) icon-ef_european_company_surveys_(ecs) icon-ef_european_company_surveys_(ecs) icon-ef_european_company_surveys_(ecs) icon-ef_european_company_surveys_(ecs) icon-ef_european_company_surveys_(ecs) icon-ef_enquête_sur_les_entreprises_en_europe_(ecs) icon-ef_enquête_sur_les_entreprises_en_europe_(ecs)" title="">Europeiska företagsundersökningen (ECS)</a><ul class="menu"><li class="first expanded menu-mlid-18325"><a href="/sv/surveys/2019/european-company-survey-2019" class="icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019 icon-ef_ecs_2019">ECS 2019</a><ul class="menu"><li class="first expanded menu-mlid-21751"><a href="/sv/surveys/2019/european-company-survey-2019/methodology" title="" class="icon-ef_methodology">Methodology</a><ul class="menu"><li class="first leaf menu-mlid-21752"><a href="/sv/surveys/2019/european-company-survey-2019/methodology/sampling-weighting" title="" class="icon-ef_sampling_and_weighting">Sampling and weighting</a></li>
+<li class="leaf menu-mlid-21753"><a href="/sv/surveys/2019/european-company-survey-2019/methodology/coding" class="icon-ef_coding icon-ef_coding icon-ef_coding icon-ef_coding icon-ef_coding icon-ef_coding icon-ef_coding icon-ef_coding">Coding</a></li>
+<li class="last leaf menu-mlid-21754"><a href="/sv/surveys/2019/european-company-survey-2019/methodology/quality-assurance-quality-control" class="icon-ef_quality_assurance_and_quality_control icon-ef_quality_assurance_and_quality_control icon-ef_quality_assurance_and_quality_control icon-ef_quality_assurance_and_quality_control icon-ef_quality_assurance_and_quality_control icon-ef_quality_assurance_and_quality_control">Quality assurance and quality control</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-21755"><a href="/sv/surveys/2019/european-company-survey-2019/questionnaire" title="" class="icon-ef_questionnaire">Questionnaire</a><ul class="menu"><li class="first last leaf menu-mlid-21756"><a href="/sv/surveys/2019/european-company-survey-2019/questionnaire/language-versions" class="icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions icon-ef_language_versions">Language versions</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-16493"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013" class="icon-ef_ecs_2013 icon-ef_ecs_2013 icon-ef_ecs_2013 icon-ef_ecs_2013">ECS 2013</a><ul class="menu"><li class="first leaf menu-mlid-17889"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/sector-sheets" class="icon-ef_sector_sheets icon-ef_sector_sheets icon-ef_sector_sheets">Sector sheets</a></li>
+<li class="expanded menu-mlid-16607"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/ecs-2013-methodology" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology">Metod</a><ul class="menu"><li class="first leaf menu-mlid-17778"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/ecs-2013-methodology/ecs-2013-sampling" class="icon-ef_sampling icon-ef_sampling icon-ef_sampling">Sampling</a></li>
+<li class="leaf menu-mlid-17779"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/ecs-2013-methodology/ecs-2013-weighting" class="icon-ef_weighting icon-ef_weighting">Weighting</a></li>
+<li class="leaf menu-mlid-17780"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/ecs-2013-methodology/ecs-2013-coding" class="icon-ef_coding icon-ef_coding">Coding</a></li>
+<li class="last leaf menu-mlid-17775"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/ecs-2013-methodology/ecs-2013-quality-assurance-and-quality-control" class="icon-ef_quality_assurance_and_quality_control icon-ef_quality_assurance_and_quality_control">Quality assurance and quality control</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-17777"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/ecs-2013-questionnaire" class="icon-ef_questionnaire icon-ef_questionnaire icon-ef_questionnaire">Questionnaire</a><ul class="menu"><li class="first last leaf menu-mlid-16608"><a href="/sv/surveys/european-company-surveys/european-company-survey-2013/ecs-2013-questionnaire/ecs-2013-questionnaire-translation" class="icon-ef_translations icon-ef_translations icon-ef_translations">Frågeformulär</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-16494"><a href="/sv/surveys/european-company-surveys/european-company-survey-2009" class="icon-ef_ecs_2009 icon-ef_ecs_2009 icon-ef_ecs_2009 icon-ef_ecs_2009">ECS 2009</a><ul class="menu"><li class="first leaf menu-mlid-16497"><a href="/sv/surveys/european-company-surveys/european-company-survey-2009/ecs-2009-methodology" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology">Metodik</a></li>
+<li class="last leaf menu-mlid-17871"><a href="/sv/surveys/european-company-surveys/european-company-survey-2009/ecs-2009-questionnaires" class="icon-ef_questionnaires icon-ef_questionnaires icon-ef_questionnaires">Questionnaires</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-16495"><a href="/sv/surveys/european-company-surveys/european-survey-on-working-time-and-work-life-balance-eswt" class="icon-ef_ecs_2004 icon-ef_ecs_2004 icon-ef_ecs_2004 icon-ef_ecs_2004">ECS 2004</a><ul class="menu"><li class="first last leaf menu-mlid-17776"><a href="/sv/surveys/european-survey-on-working-time-and-work-life-balance-eswt-reports" title="Research reports" class="icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports">Research reports</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-16489"><a href="/sv/surveys/european-quality-of-life-surveys" title="" class="icon-ef_european_quality_of_life_surveys_(eqls)">Undersökningen av livskvaliteten i Europa (EQLS)</a><ul class="menu"><li class="first expanded menu-mlid-17811"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2016" class="icon-ef_eqls_2016 icon-ef_eqls_2016 icon-ef_eqls_2016 icon-ef_eqls_2016 icon-ef_eqls_2016">EQLS 2016</a><ul class="menu"><li class="first leaf menu-mlid-20357"><a href="/sv/publications/series/european-quality-of-life-survey-2016" class="icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports">Research reports</a></li>
+<li class="leaf menu-mlid-18300"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2016/eqls-2016-methodology">Methodology</a></li>
+<li class="last expanded menu-mlid-18302"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2016/questionnaire" class="icon-ef_questionnaire icon-ef_questionnaire">Questionnaire</a><ul class="menu"><li class="first last leaf menu-mlid-18305"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2016/eqls-2016-questionnaire/eqls-2016-questionnaire-translation" class="icon-ef_translations icon-ef_translations icon-ef_translations">Translations</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-16609"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012" class="icon-ef_eqls_2012 icon-ef_eqls_2012 icon-ef_eqls_2012 icon-ef_eqls_2012">EQLS 2012</a><ul class="menu"><li class="first leaf menu-mlid-17869"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-reports-and-policy-briefs-tracking-quality-of-life-in-europe" class="icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports">Research reports</a></li>
+<li class="expanded menu-mlid-16501"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-methodology" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology icon-ef_methodology">Metodik</a><ul class="menu"><li class="first leaf menu-mlid-17892"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-methodology/eqls-2012-sampling" class="icon-ef_sampling icon-ef_sampling icon-ef_sampling icon-ef_sampling">Sampling</a></li>
+<li class="leaf menu-mlid-17893"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-methodology/eqls-2012-coding" class="icon-ef_coding icon-ef_coding icon-ef_coding icon-ef_coding">Coding</a></li>
+<li class="leaf menu-mlid-17894"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-methodology/eqls-2012-weighting" class="icon-ef_weighting icon-ef_weighting icon-ef_weighting icon-ef_weighting">Weighting</a></li>
+<li class="last leaf menu-mlid-17895"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-methodology/eqls-2012-quality-assurance" class="icon-ef_quality_assurance icon-ef_quality_assurance icon-ef_quality_assurance icon-ef_quality_assurance">Quality assurance</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-16610"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-questionnaire" class="icon-ef_questionnaire icon-ef_questionnaire icon-ef_questionnaire icon-ef_questionnaire">Frågeformulär</a><ul class="menu"><li class="first last leaf menu-mlid-17781"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2012/eqls-2012-questionnaire/eqls-2012-questionnaire-translation" class="icon-ef_translations icon-ef_translations icon-ef_translations">Translations</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-16499"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2007" class="icon-ef_eqls_2007 icon-ef_eqls_2007 icon-ef_eqls_2007 icon-ef_eqls_2007">EQLS 2007</a><ul class="menu"><li class="first leaf menu-mlid-16502"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2007/eqls-2007-findings" class="icon-ef_findings icon-ef_findings icon-ef_findings">Resultat</a></li>
+<li class="last leaf menu-mlid-16503"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2007/eqls-2007-secondary-analysis" class="icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports">Sekundära analyser</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-16500"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2003" class="icon-ef_eqls_2003 icon-ef_eqls_2003 icon-ef_eqls_2003 icon-ef_eqls_2003">EQLS 2003</a><ul class="menu"><li class="first leaf menu-mlid-16964"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2003/eqls-2003-main-findings" class="icon-ef_findings icon-ef_findings">Resultat </a></li>
+<li class="last leaf menu-mlid-16965"><a href="/sv/surveys/european-quality-of-life-surveys/european-quality-of-life-survey-2003/eqls-2003-analytical-reports" class="icon-ef_analytical_reports icon-ef_analytical_reports icon-ef_analytical_reports">Analytiska rapporter</a></li>
+</ul></li>
+</ul></li>
+<li class="last expanded menu-mlid-16490"><a href="/sv/surveys/european-working-conditions-surveys-ewcs" class="icon-ef_european_working_conditions_surveys_(ewcs) icon-ef_european_working_conditions_surveys_(ewcs)">Europeiska undersökningen om arbetsvillkor (EWCS)</a><ul class="menu"><li class="first leaf menu-mlid-22107"><a href="/sv/surveys/2021/european-working-conditions-survey-2021" class="icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021 icon-ef_ewcs_2021">EWCS 2021</a></li>
+<li class="collapsed menu-mlid-20359"><a href="/sv/surveys/2020/european-working-conditions-survey-2020" class="icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020 icon-ef_ewcs_2020" title="">EWCS 2020</a></li>
+<li class="expanded menu-mlid-17846"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015" class="icon-ef_ewcs_2015 icon-ef_ewcs_2015 icon-ef_ewcs_2015 icon-ef_ewcs_2015">EWCS 2015</a><ul class="menu"><li class="first leaf menu-mlid-20355"><a href="/sv/publications/series/european-working-conditions-survey-2015" class="icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports">Research reports</a></li>
+<li class="expanded menu-mlid-17423"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-methodology" title="" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology icon-ef_methodology">Methodology</a><ul class="menu"><li class="first leaf menu-mlid-17849"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-methodology/ewcs-2015-sampling" class="icon-ef_sampling icon-ef_sampling icon-ef_sampling icon-ef_sampling">Sampling</a></li>
+<li class="leaf menu-mlid-17847"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-methodology/ewcs-2015-coding" class="icon-ef_coding icon-ef_coding icon-ef_coding">Coding</a></li>
+<li class="leaf menu-mlid-17841"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-methodology/ewcs-2015-weighting" class="icon-ef_weighting icon-ef_weighting icon-ef_weighting">Weighting</a></li>
+<li class="last leaf menu-mlid-17848"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-methodology/ewcs-2015-quality-assurance" class="icon-ef_quality_assurance icon-ef_quality_assurance">Quality assurance</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-17424"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-questionnaire" title="" class="icon-ef_questionnaire icon-ef_questionnaire icon-ef_questionnaire">Questionnaire</a><ul class="menu"><li class="first leaf menu-mlid-17810"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-questionnaire/ewcs-2015-questionnaire-development" title="node/85435" class="icon-ef_questionnaire_development">Questionnaire development</a></li>
+<li class="last expanded menu-mlid-17782"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-questionnaire/ewcs-2015-questionnaire-translation" class="icon-ef_translation icon-ef_translation icon-ef_translation">Translation</a><ul class="menu"><li class="first last leaf menu-mlid-17783"><a href="/sv/surveys/european-working-conditions-surveys/sixth-european-working-conditions-survey-2015/ewcs-2015-questionnaire/ewcs-2015-questionnaire-translation/ewcs-2015-questionnaire-translation-language-versions" class="icon-ef_language_versions icon-ef_language_versions">Language versions</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-16504"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010" class="icon-ef_ewcs_2010 icon-ef_ewcs_2010 icon-ef_ewcs_2010 icon-ef_ewcs_2010 icon-ef_ewcs_2010">EWCS 2010</a><ul class="menu"><li class="first leaf menu-mlid-17437"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-mapping-working-conditions-in-europe-all-reports" class="icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports">Forskningsrapporter</a></li>
+<li class="expanded menu-mlid-16506"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-methodology" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology icon-ef_methodology">Metodik</a><ul class="menu"><li class="first leaf menu-mlid-17785"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-methodology/ewcs-2010-sampling" title="node/57153" class="icon-ef_sampling icon-ef_sampling icon-ef_sampling">Sampling</a></li>
+<li class="leaf menu-mlid-17786"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-methodology/ewcs-2010-coding" class="icon-ef_coding icon-ef_coding">Coding</a></li>
+<li class="leaf menu-mlid-17787"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-methodology/ewcs-2010-weighting" class="icon-ef_weighting">Weighting</a></li>
+<li class="last leaf menu-mlid-17788"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-methodology/ewcs-2010-quality-insurance" class="icon-ef_quality_assurance icon-ef_quality_assurance">Quality assurance</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-16613"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-questionnaire" class="icon-ef_questionnaire icon-ef_questionnaire icon-ef_questionnaire icon-ef_questionnaire">Frågeformulär</a><ul class="menu"><li class="first leaf menu-mlid-17790"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-questionnaire/ewcs-2010-questionnaire-development" class="icon-ef_development icon-ef_development icon-ef_development">Development</a></li>
+<li class="leaf menu-mlid-17784"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-questionnaire/ewcs-2010-pre-testing-of-the-questionnaire" class="icon-ef_pre-test icon-ef_pre-test icon-ef_pre-test">Pre-test</a></li>
+<li class="last leaf menu-mlid-17789"><a href="/sv/surveys/european-working-conditions-surveys/fifth-european-working-conditions-survey-2010/ewcs-2010-questionnaire/ewcs-2010-questionnaire-translation" class="icon-ef_translations icon-ef_translations icon-ef_translations icon-ef_translations">Translations</a></li>
+</ul></li>
+</ul></li>
+<li class="last expanded menu-mlid-16505"><a href="/sv/surveys/european-working-conditions-surveys/fourth-european-working-conditions-survey-2005" class="icon-ef_ewcs_2005 icon-ef_ewcs_2005 icon-ef_ewcs_2005 icon-ef_ewcs_2005 icon-ef_ewcs_2005">EWCS 2005</a><ul class="menu"><li class="first leaf menu-mlid-17838"><a href="/sv/surveys/european-working-conditions-surveys/fourth-european-working-conditions-survey-2005/ewcs-2005-research-reports-secondary-analysis" class="icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports icon-ef_research_reports">Research reports</a></li>
+<li class="leaf menu-mlid-16614"><a href="/sv/surveys/european-working-conditions-surveys/fourth-european-working-conditions-survey-2005/ewcs-2005-methodology" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology">Metod</a></li>
+<li class="last expanded menu-mlid-16615"><a href="/sv/surveys/european-working-conditions-surveys/fourth-european-working-conditions-survey-2005/ewcs-2005-questionnaire-development" class="icon-ef_questionnaire icon-ef_questionnaire icon-ef_questionnaire">Frågeformulär</a><ul class="menu"><li class="first last leaf menu-mlid-17839"><a href="/sv/surveys/european-working-conditions-surveys/fourth-european-working-conditions-survey-2005/ewcs-2005-questionnaire-development/ewcs-2005-questionnaire-translated-versions" class="icon-ef_translation icon-ef_translation icon-ef_translation">Translation</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></div>
+  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </li>
+</ul>
+</li>
+<li class="menu-18298"><a href="/sv/country" title="" class="icon-ef_countries icon-ef_countries icon-ef_countries icon-ef_countries menu-minipanel menu-minipanel-0 menuparent">Länder</a><ul class="menu-minipanel-panel menu-minipanel-countries-mini-panel">
+  <li class="first odd last">
+    <div class="panel-flexible panels-flexible-15 clearfix" id="mini-panel-countries_mini_panel">
+<div class="panel-flexible-inside panels-flexible-15-inside">
+<div class="panels-flexible-region panels-flexible-region-15-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-15-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-block-40 pane-block countries-submenu-block"  >
+  
+      
+  
+  <div class="pane-content">
+    <ul><li><a href="//www.eurofound.europa.eu/sv/country">Living and working profiles</a>
+<ul><li><a href="//www.eurofound.europa.eu/sv/country/austria">Austria</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/belgium">Belgium</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/bulgaria">Bulgaria</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/croatia">Croatia</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/cyprus">Cyprus</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/czech-republic">Czechia</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/denmark">Denmark</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/estonia">Estonia</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/finland">Finland</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/france">France</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/germany">Germany</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/greece">Greece</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/hungary">Hungary</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/ireland">Ireland</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/italy">Italy</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/latvia">Latvia</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/lithuania">Lithuania</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/luxembourg">Luxembourg</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/malta">Malta</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/netherlands">Netherlands</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/norway">Norway</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/poland">Poland</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/portugal">Portugal</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/romania">Romania</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/slovakia">Slovakia</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/slovenia">Slovenia</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/spain">Spain</a></li>
+<li><a href="//www.eurofound.europa.eu/sv/country/sweden">Sweden</a></li>
+</ul></li>
+<li><a href="//www.eurofound.europa.eu/sv/country#other-countries">Other countries</a></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </li>
+</ul>
+</li>
+<li class="menu-16449 active-trail"><a href="/sv/observatories" class="icon-ef_observatories icon-ef_observatories icon-ef_observatories icon-ef_observatories active-trail menu-minipanel menu-minipanel-16449 menuparent">Observationsorgan</a><ul class="menu-minipanel-panel menu-minipanel-observations">
+  <li class="first odd last">
+    <div class="panel-flexible panels-flexible-5 clearfix" id="mini-panel-observations">
+<div class="panel-flexible-inside panels-flexible-5-inside">
+<div class="panels-flexible-region panels-flexible-region-5-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-5-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-menu-tree pane-main-menu"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="menu-block-wrapper menu-block-ctools-main-menu-3 menu-name-main-menu parent-mlid-16449 menu-level-1">
+  <ul class="menu"><li class="first expanded menu-mlid-16514"><a href="/sv/observatories/emcc" title="" class="icon-ef_european_monitoring_centre_on_change_-_emcc">Europeiskt centrum för övervakning av förändringar (EMCC)</a><ul class="menu"><li class="first leaf menu-mlid-16625"><a href="/sv/observatories/emcc/about-emcc" title="" class="icon-ef_about_emcc icon-ef_about_emcc icon-ef_about_emcc icon-ef_about_emcc icon-ef_about_emcc">Om EMCC</a></li>
+<li class="expanded menu-mlid-16518"><a href="/sv/observatories/emcc/european-restructuring-monitor" class="icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor">European Restructuring Monitor (ERM)</a><ul class="menu"><li class="first leaf menu-mlid-20064"><a href="/sv/observatories/emcc/erm/about-the-european-restructuring-monitor" class="icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor">About the European Restructuring Monitor</a></li>
+<li class="expanded menu-mlid-16522"><a href="/sv/observatories/emcc/erm/factsheets" title="" class="icon-ef_restructuring_events_database icon-ef_restructuring_events_database icon-ef_restructuring_events_database">Faktablad</a><ul class="menu"><li class="first last leaf menu-mlid-18242"><a href="https://www.eurofound.europa.eu/observatories/emcc/erm/restructuring-statistics" title="" class="icon-ef_restructuring_statistics icon-ef_restructuring_statistics icon-ef_restructuring_statistics">Restructuring statistics</a></li>
+</ul></li>
+<li class="leaf menu-mlid-16523"><a href="/sv/observatories/emcc/erm/support-instrument" title="" class="icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments">Stödinstrument vid omstruktureringar</a></li>
+<li class="leaf menu-mlid-16524"><a href="/sv/observatories/emcc/erm/legislation" title="" class="icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation">Lagstiftning på området omstrukturering</a></li>
+<li class="leaf menu-mlid-17037"><a href="/sv/observatories/emcc/erm/restructuring-case-studies" title="" class="icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies">Fallstudier om omstrukturering
+</a></li>
+<li class="leaf menu-mlid-16525"><a href="/sv/observatories/emcc/erm/restructuring-in-smes-in-europe" class="icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes">Omstrukturering i SMF</a></li>
+<li class="last leaf menu-mlid-22108"><a href="/sv/publications/series/european-restructuring-monitor" class="icon-ef_erm_publications icon-ef_erm_publications icon-ef_erm_publications">ERM publications</a></li>
+</ul></li>
+<li class="expanded menu-mlid-16519"><a href="/sv/observatories/emcc/european-jobs-monitor" class="icon-ef_european_jobs_monitor icon-ef_european_jobs_monitor icon-ef_european_jobs_monitor icon-ef_european_jobs_monitor">European Jobs Monitor</a><ul class="menu"><li class="first last leaf menu-mlid-18304"><a href="/sv/observatories/emcc/european-jobs-monitor/methodology" class="icon-ef_methodology icon-ef_methodology icon-ef_methodology">Methodology</a></li>
+</ul></li>
+<li class="leaf menu-mlid-16520"><a href="/sv/observatories/emcc/labour-market-research" class="icon-ef_labour_market_research icon-ef_labour_market_research icon-ef_labour_market_research icon-ef_labour_market_research icon-ef_labour_market_research">Arbetsmarknadsundersökningar</a></li>
+<li class="leaf menu-mlid-16517"><a href="/sv/observatories/emcc/comparative-information" title="" class="icon-ef_comparative_information icon-ef_comparative_information icon-ef_comparative_information icon-ef_comparative_information">Jämförande information</a></li>
+<li class="expanded menu-mlid-16521"><a href="/sv/observatories/emcc/case-studies" class="icon-ef_case_studies icon-ef_case_studies icon-ef_case_studies icon-ef_case_studies">Fallstudier</a><ul class="menu"><li class="first last leaf menu-mlid-16530"><a href="/sv/observatories/emcc/case-studies/the-greening-of-industries-in-the-eu" title="" class="icon-ef_the_greening_of_industries_in_the_eu icon-ef_the_greening_of_industries_in_the_eu icon-ef_the_greening_of_industries_in_the_eu icon-ef_the_greening_of_industries_in_the_eu">Mot ett grönare näringsliv i EU</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-17891"><a href="/sv/observatories/emcc/fome" class="icon-ef_future_of_manufacturing_in_europe_(fome) icon-ef_future_of_manufacturing_in_europe_(fome) icon-ef_future_of_manufacturing_in_europe_(fome)">Future of Manufacturing in Europe (FOME)</a><ul class="menu"><li class="first leaf menu-mlid-18306"><a href="/sv/observatories/emcc/fome/projects" class="icon-ef_projects icon-ef_projects icon-ef_projects">Projects</a></li>
+<li class="leaf menu-mlid-19630"><a href="/sv/observatories/emcc/fome/publications" title="" class="icon-ef_publications icon-ef_publications icon-ef_publications icon-ef_publications">Publications</a></li>
+<li class="last leaf menu-mlid-18307"><a href="/sv/observatories/emcc/fome/events" class="icon-ef_events icon-ef_events icon-ef_events icon-ef_events">Events</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-17890"><a href="/sv/observatories/eurlife" title="EurLIFE: European Observatory on Quality of Life" class="icon-ef_european_observatory_on_quality_of_life_-_eurlife">Det europeiska centrumet för övervakning av livskvalitet - EurLIFE</a><ul class="menu"><li class="first last leaf menu-mlid-18248"><a href="/sv/observatories/european-observatory-on-quality-of-life-eurlife/about-eurlife" title="" class="icon-ef_about_eurlife icon-ef_about_eurlife icon-ef_about_eurlife">Om EurLIFE</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-16515"><a href="/sv/observatories/eurwork" title="" class="icon-ef_european_observatory_of_working_life_-_eurwork">EurWORK - European Observatory of Working Life</a><ul class="menu"><li class="first leaf menu-mlid-16715"><a href="/sv/observatories/european-observatory-of-working-life-eurwork/about-eurwork" class="icon-ef_about_eurwork icon-ef_about_eurwork icon-ef_about_eurwork icon-ef_about_eurwork icon-ef_about_eurwork icon-ef_about_eurwork">Om EurWORK</a></li>
+<li class="leaf menu-mlid-17703"><a href="/sv/observatories/eurwork/topical-updates" title="" class="icon-ef_topical_updates icon-ef_topical_updates icon-ef_topical_updates icon-ef_topical_updates">Topical updates</a></li>
+<li class="leaf menu-mlid-19825"><a href="/sv/observatories/eurwork/country-updates" title="" class="icon-ef_country_updates icon-ef_country_updates">Country updates</a></li>
+<li class="leaf menu-mlid-16772"><a href="/sv/observatories/eurwork/representativeness-studies" class="icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies icon-ef_representativeness_studies">Representativitetsstudier</a></li>
+<li class="leaf menu-mlid-16535"><a href="/sv/observatories/eurwork/industrial-relations-dictionary" title="" class="icon-ef_european_industrial_relations_dictionary icon-ef_european_industrial_relations_dictionary icon-ef_european_industrial_relations_dictionary">European Industrial Relations Dictionary</a></li>
+<li class="leaf menu-mlid-18296"><a href="/sv/country" class="icon-ef_working_life_country_profiles icon-ef_working_life_country_profiles icon-ef_working_life_country_profiles icon-ef_working_life_country_profiles">Working life country profiles</a></li>
+<li class="expanded menu-mlid-16868"><a href="/sv/observatories/eurwork/case-studies" title="" class="icon-ef_case_studies icon-ef_case_studies icon-ef_case_studies">Fallstudier</a><ul class="menu"><li class="first leaf menu-mlid-16538"><a href="/sv/observatories/eurwork/case-studies/attractive-workplace-for-all" title="" class="icon-ef_attractive_workplace_for_all icon-ef_attractive_workplace_for_all icon-ef_attractive_workplace_for_all icon-ef_attractive_workplace_for_all">Attraktiva arbetsplatser för alla</a></li>
+<li class="leaf menu-mlid-16539"><a href="/sv/observatories/eurwork/case-studies/ageing-workforce" title="" class="icon-ef_ageing_workforce icon-ef_ageing_workforce icon-ef_ageing_workforce icon-ef_ageing_workforce">En åldrande arbetskraft</a></li>
+<li class="last leaf menu-mlid-16540"><a href="/sv/observatories/eurwork/case-studies/workers-with-care-responsibilities" title="" class="icon-ef_workers_with_care_responsibilities icon-ef_workers_with_care_responsibilities icon-ef_workers_with_care_responsibilities icon-ef_workers_with_care_responsibilities">Arbetstagare med vårdansvar</a></li>
+</ul></li>
+<li class="last leaf menu-mlid-17836"><a href="/sv/observatories/european-observatory-of-working-life-eurwork/database-of-wages-working-time-and-collective-disputes" class="icon-ef_database_of_wages,_working_time_and_collective_disputes icon-ef_database_of_wages,_working_time_and_collective_disputes icon-ef_database_of_wages,_working_time_and_collective_disputes">Database of wages, working time and collective disputes</a></li>
+</ul></li>
+</ul></div>
+  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </li>
+</ul>
+</li>
+<li class="menu-16450"><a href="/sv/news/news-articles" title="" class="icon-ef_news icon-ef_news">Nyheter</a></li>
+<li class="menu-16451 last"><a href="/sv/events" title="" class="icon-ef_events">Händelser</a></li>
+</ul>            </section>
+          </nav> <!-- /#main-menu -->
+        
+              </section>
+
+    </div>
+        <!-- End title, slogan and menu -->
+
+    
+  </header>
+  <!--/.l-header -->
+
+      <!--/.featured -->
+    <section class="l-featured row">
+      <div class="large-12 columns">
+             <section class="block block-block ef-logo-legend-responsive block-block-26">
+
+      
+      <p>Eurofound är ett trepartsorgan inom EU som förmedlar kunskap för att stödja utvecklingen av en bättre social-, sysselsättnings- och arbetsmarknadspolitik</p>
+<p>&gt;</p>
+  
+</section>      </div>
+    </section>
+    <!--/.l-featured -->
+  
+  
+  
+       <section class="ef-breadcrumb row">
+      <div class="large-12 columns">
+		<h2 class="element-invisible">Du är här</h2><ul class="breadcrumbs"><li><a href="/sv">Hem</a></li><li><a href="/sv/observatories">Observatorier</a></li><li><a href="/observatories/emcc">EMCC</a></li><li><a href="/observatories/emcc/european-restructuring-monitor">Erm</a></li><li><a href="/observatories/emcc/erm/support-instrument">Restructuring support instruments</a></li><li class="current"><a href="#">Temporary layoff</a></li></ul>      </div>
+    </section>
+  
+
+  <main role="main" class="row l-main">
+    <div class="large-9 push-3 main columns">
+      <div class="ef-main" lang="en">
+
+      <!-- issue 3286  -->
+        
+      <!-- end issue 3286 -->
+        
+        <a id="main-content"></a>
+
+                            
+          
+                                  <h1 id="page-title" class="title parent_emcc">
+              <a href="https://www.eurofound.europa.eu/observatories/emcc">
+                <span class="abbrevation">EMCC</span>
+                European Monitoring Centre on Change              </a>
+            </h1>
+          
+          
+            
+                          <h1 id="page-title" class="title secundary">Temporary layoff</h1>
+            
+          
+                  
+                                    
+        
+      <!-- INIT Issue 3199 -->
+           
+      
+      
+<!-- go back button BACK END -->
+	<div class="back-erm-list-button-div">
+
+		
+					<a href="https://www.eurofound.europa.eu/observatories/emcc/erm/support-instrument">Go to list page</a>	
+		
+	</div>
+
+<!-- ARTICLE -->
+<article id="node-82574" class="node node-erm-support-instrument view-mode-full" about="/sv/observatories/emcc/erm/support-instrument/temporary-layoff" typeof="sioc:Item foaf:Document">
+	<!-- COUNTRY / PHASE / TYPE -->
+	<div class="erm-title-info row">
+		<div class="erm-country small-6 columns">
+			<div class="field field-name-field-country-erm-si">Finland</div>		</div>
+		<div class="erm-phase-type small-6 columns">
+			<div class="erm-phase">
+				<span class="erm-info-label">Phase: </span>
+				Management			</div>
+			<div class="erm-type">
+				<span class="erm-info-label">Typ: </span>
+				<ul class="no-bullet field field-name-field-type-erm-si field-type-taxonomy-term-reference field-label-hidden field-wrapper" ><li class="odd"  class="field-item even">Response to COVID-19</li><li class="even"  class="field-item even odd">Income support for workers</li><li class="odd"  class="field-item even odd even">Working time flexibility</li></ul>			</div>
+		</div>
+	</div>
+
+	<!-- EDIT DATE -->
+		<div class="erm-edit-date">
+		<i class="fa fa-calendar"></i>
+		<span>Senast ändrad: </span>
+				07 July, 2020	</div>
+	
+
+	<!-- TITLES -->
+	<div class="erm-titles">
+
+		<div class="erm-nat-title row">
+			<span class="small-2 columns">Lokalt namn:</span>
+			<h2 class="small-9 columns"><div class="field field-name-field-native-name-erm-si field-type-text-long field-label-hidden field-wrapper">Lomautus</div></h2>
+		</div>		
+		<div class="erm-en-title row">
+			<span class="small-2 columns">Engelskt namn:</span>
+			<h2 class="small-9 columns"><div class="field field-name-field-english-name-erm-si field-type-text-long field-label-hidden field-wrapper">Temporary layoff</div></h2>
+		</div>
+
+	</div>
+	<!-- TITLES NOTES -->
+	
+	<!-- MAIN CONTENT: COVERAGE/ELIGIBILITY -->
+	<div class="erm-content">
+
+	  	  	<div class="erm-si-coverage-eligibility erm-text-field">
+	  		<h3 class="erm-content-title">Coverage/Eligibility</h3>
+	  		<div class="field field-name-field-coverage-elig-erm-si field-type-text-long field-label-hidden field-wrapper"><p>The instrument is available for employers who need to (temporarily) reduce their workforce due to lack of business.</p>
+</div>	  	</div>  	
+	  
+
+	  <!-- MAIN CONTENT: MAIN CHARACTERISTICS -->
+	  	  	<div class="erm-si-characteristics erm-text-field">
+	  		<h3 class="erm-content-title">Main characteristics</h3>
+	  		<div class="field field-name-field-main-characteristic-erm-si field-type-text-long field-label-hidden field-wrapper"><p>A temporary layoff scheme, or an obligatory unpaid holiday, is the Finnish version of flexible protection of employment.</p>
+<p>According to the Employment Contracts Act of 2001, the term 'laying off' means a temporary interruption of work and payment of wages (either for a fixed or indefinite period of time), while the employment contract in other regards remains in force.</p>
+<p>The measure applies to situations where:</p>
+<ol><li>the employer could (as an alternative to the temporary layoff) dismiss the employee because the work to be offered has diminished substantially and permanently due to financial or production-related reasons, or for reasons arising from reorganisation of the employer’s operations; or</li>
+<li>the work or the employer's potential to offer work has diminished temporarily (expected duration maximum 90 days); and</li>
+<li>the employer cannot reasonably provide the employee with other suitable work or training.</li>
+</ol><p>The employer may make the layoff decision unilaterally, or it may be negotiated with the employee(s). Employers are responsible for informing the employees about the lay-offs. The notice period preceding the layoffs is 14 days. Employers with a staff of at least 20 people must commence cooperation negotiations (yhteistoimintamenettely) if the employer is considering layoffs. These negotiations last either <span class="annotation" username="nERIR.jVISKwRBEHQHBIS.RBEHGV.RB" created="7/Jul./2020 15:51" color="orange" annotation="DCENTCK&gt; COHDR 2 CNJRKNIRD, IHCONIP NI URC@RRIx @OH SRTNSRD HI COVC, VIS HI COR UVDND HQ @OVCx">6 weeks or 14 days</span>. The temporary layoff can be either on a full-time basis, or it can involve a reduction in regular working hours. During the layoff period, the employee is allowed to work for other employers and/or is entitled to unemployment benefits. The maximum duration of an indefinite layoff (when work is permanently diminished) is undefined by law.</p>
+<p>A fixed-term employee may only be temporarily laid off if she/he is substituting a permanent employee who could be temporarily laid off. </p>
+<p>When 20 or more employees are affected, the employer must also draw up an action plan together with the employees. </p>
+<p>During the COVID-19 emergency, to facilitate businesses' adaptation to the new market situation, the right to temporary layoff has been temporarily extended to cover fixed-term employment contracts. <span>In addition, the notice period is <span>currently </span>5 days instead of 14 days. Also the duration of cooperation negotiations is temporarily shortened from 6 weeks or 14 days to 5 days. </span></p>
+<p>These temporary provisions are applicable to all employers who need to temporarily lay off personnel during the period for which the temporary provisions are in force. The same conditions apply as in the case of temporary layoff of employees with a permanent contract. Workers may be laid off when the potential of the employer to offer work to its personnel has diminished (either temporarily or permanently) and the employer cannot provide the employee with other suitable work or training. In addition, the notice period and the length of co-operation negotiations were shortened.</p>
+<p>These extensions do not cover the public sector. These provisions are in force for the period 1 April 2020 - 31 December 2020. </p>
+<p>These COVID-19 related temporary provisions to the temporary layoff scheme were part of the joint proposal presented by the peak-level social partners to the government in March 2020. This joint proposal included several policy measures that could be used to support both employees and employers to adapt to the new market situation. A majority of these measures were implemented by the government. In May 2020, the peak-level social partners proposed that these implemented policy measures, including temporary provisions to the layoff scheme, could be extended until the end of the year instead of the planned timeframe, end of June 2020 (<a href="https://ek.fi/ajankohtaista/tiedotteet/2020/05/14/tyomarkkinakeskusjarjestot-sopuun-lomautuksista-ja-tyottomyysturvasta/">Confederation of Finnish Industries, 2020</a>). The extension was accepted by the Parliament in June 2020. </p>
+</div>	  	</div>
+	  
+	</div>
+
+	<!-- FEATURES: INVOLVED ACTORS / FUNDING -->
+	
+		<div class="erm-si-funding erm-content">
+		<h3 class="erm-content-title">Funding</h3>
+		<ul class="no-bullet field field-name-field-funding-erm-si field-type-taxonomy-term-reference field-label-hidden field-wrapper" ><li class="odd"  class="field-item even">National funds</li><li class="even"  class="field-item even odd">Employees</li><li class="odd"  class="field-item even odd even">Companies</li></ul>	</div>
+	<!-- FUNDING NOTES -->
+			
+	
+			
+		<div class="erm-features erm-si-involved-actors erm-content">
+			<h3 class="erm-content-title">Involved actors</h4>
+							<h5>National government</h5>
+				<div class="field field-name-field-national-govermment-erm-si field-type-text-long field-label-hidden field-wrapper">Funding (unemployment benefits)</div>													<h5>Public employment services</h5>
+				<div class="field field-name-field-public-employ-serv-erm-si field-type-text-long field-label-hidden field-wrapper">Temporarily laid off employees are entitled to the same public employment services as those who have been made redundant, such as vocational labour market training, personalised job mediation, and skills development.</div>													<h5>Övriga</h5>
+				<div class="field field-name-field-other-erm-si field-type-text-long field-label-hidden field-wrapper">Temporary layoffs must by law be preceded by information given to employees and by negotiations between the employer and the employees. The exact rules vary according to the size of the company and the number of employees threatened by layoffs.</div>					</div>
+		<!-- INVOLVED ACTORS NOTES -->
+				
+	
+	<!-- EFFECTIVENESS / STRENGHTS / WEAKNESSES -->
+	<div class="erm-content">
+			<div class="erm-si-effective">
+			<h3 class="erm-content-title">
+				<i class="fa fa-rocket"></i>
+				Effectiveness			</h3>
+			<div class="field field-name-field-effectiveness-erm-si field-type-text-long field-label-hidden field-wrapper"><p>Temporary layoffs constituted the principle means by which Finnish enterprises tried to minimise dismissals and to survive the recession following the economic crisis in 2008-2016. The number of employees who have been temporarily laid-off on a full-time basis has decreased steadily between 2015-2019: </p>
+<ul><li>some 30,500 employees were laid-off in February 2015;</li>
+<li>some 23,300 employees were laid-off in February 2016;</li>
+<li>some 17,000 employees were laid off in February 2018;</li>
+<li>some 16,000 employees were laid off in February 2019.</li>
+</ul><p>The majority of layoffs last a fixed period of time, and the average duration was 58 days in 2017.  </p>
+<p><span> COVID-19 measure: </span></p>
+<p><span>The effects of the COVID-19 pandemic have significantly increased the number of employees that have been laid off either on a full-time basis or whose working hours have been shortened. In April 2020, the number of employees who were laid-off on a full-time basis was 164,000. This is 152,000 employees more than in April the year before. The number of employees whose working hours had been temporariy reduced was 20,300 which is 14,500 more than in April the year before (<a href="https://www.temtyollisyyskatsaus.fi/Textbase/Tkat/Pdf/Tkat_fi.pdf">Ministry of Economic Affairs and Employment, 2020</a>). </span></p>
+</div>		</div>
+				<div class="erm-si-effective">
+			<h3 class="erm-content-title">
+				<i class="fa fa-thumbs-o-up"></i>
+				Strengths			</h3>
+			<div class="field field-name-field-strengths-erm-si field-type-text-long field-label-hidden field-wrapper"><p>The system brings benefits both to employers and employees, as temporary lay-offs are usually found preferable over dismissals. The instrument acknowledges the company's need to keep its competent workers, even during periods when they cannot be offered work.</p>
+<p> </p>
+<p> </p>
+</div>		</div>	
+				<div class="erm-si-effective">
+			<h3 class="erm-content-title">
+				<i class="fa fa-thumbs-o-down"></i>
+				Weaknesses			</h3>
+			<div class="field field-name-field-weaknesses-erm-si field-type-text-long field-label-hidden field-wrapper"><p>Although temporary layoffs offer an alternative to redundancies in situations where an economic upswing is anticipated, there is never certainty of when such an upswing might happen.</p>
+<p>The instrument has received a number of critical remarks by trade unions, especially during the years of the Great Recession. At the beginning of the economic downturn, <a href="http://www.kansanuutiset.fi/artikkeli/1756928-mieluummin-lomautus-kuin-irtisanominen">trade unions found that employers took to the instrument too lightly</a>, without considering alternatives such as training their staff. On the other hand, in 2014 the Social Democratic <a href="http://www.kaleva.fi/uutiset/talous/ihalainen-aamulehdelle-lomautuksia-on-liian-vahan/663343/">then-Minister of Labour Lauri Ihalainen argued</a> that companies do not know labour legislation well enough and therefore dismiss employees too easily instead of utilising temporary lay-offs in the form of reduced working hours.</p>
+<p>Trade unions have furthermore <a href="https://demokraatti.fi/ylityot-lisaantyvat-lomautusten-aikana-kaikki-palavat-loppuun/">estimated that employers sometimes simply transfer the workload</a> and make the non-laid-off employees work more without proper compensation.</p>
+</div>		</div>	
+		</div>
+
+		
+	<!-- EXAMPLES -->
+			<div class="erm-si-example erm-content">
+			<h3 class="erm-content-title">
+				Exempel			</h3>
+			<div class="field field-name-field-example-erm-si field-type-text-long field-label-hidden field-wrapper">No information available.</div>		</div>
+		
+	
+
+	<!-- SOURCES -->
+		<div class="erm-sources">
+		<h5>Källor</h5>
+	  	<ul class="no-bullet field field-name-field-sources-erm-si field-type-link-field field-label-hidden field-wrapper" ><li class="odd"  class="field-item even"><a href="https://demokraatti.fi/ylityot-lisaantyvat-lomautusten-aikana-kaikki-palavat-loppuun/" rel="nofollow" target="_blank">Demokraatti.fi (2014), 'Ylityöt lisääntyvät lomautusten aikana' - 'Kaikki palavat loppuun', 5 March.</a></li><li class="even"  class="field-item even odd"><a href="http://www.finlex.fi/en/laki/kaannokset/2001/en20010055" rel="nofollow" target="_blank">Employment Contracts Act (55/2001)</a></li><li class="odd"  class="field-item even odd even"><a href="http://www.eurofound.europa.eu/observatories/emcc/erm/legislation/finland-working-time-flexibility" rel="nofollow" target="_blank">Eurofound, ERM database on restructuring related legislation - Working time flexibility </a></li><li class="even"  class="field-item even odd even odd"><a href="http://www.kaleva.fi/uutiset/talous/ihalainen-aamulehdelle-lomautuksia-on-liian-vahan/663343/" rel="nofollow" target="_blank">Kaleva.fi (2014), 'Ihalainen Aamulehdelle: Lomautuksia on liian vähän', 3 May.</a></li><li class="odd"  class="field-item even odd even odd even"><a href="http://www.kansanuutiset.fi/artikkeli/1756928-mieluummin-lomautus-kuin-irtisanominen" rel="nofollow" target="_blank">Kansan Uutiset (2009), 'Mieluummin lomautus kuin irtisanominen', 16 January.</a></li><li class="even"  class="field-item even odd even odd even odd"><a href="http://julkaisut.valtioneuvosto.fi/bitstream/handle/10024/160700/TKAT_Helmi_2018.pdf" rel="nofollow" target="_blank">Ministry of Economic Affairs and Employment TEM (2018), 'Työllisyyskatsaus Helmikuu 2018'</a></li><li class="odd"  class="field-item even odd even odd even odd even"><a href="http://www.finlex.fi/fi/laki/ajantasa/2001/20010055" rel="nofollow" target="_blank">Työsopimuslaki (55/2001)</a></li><li class="even"  class="field-item even odd even odd even odd even odd">Voss, E., Maack, W. (2009), 'Joint Study on Restructuring in the EU27. Final Phase. Finland - National dossier. Joint European Level Social Partners’ Work-Programme 2009 – 2010', Aritake-Wild.</li><li class="odd"  class="field-item even odd even odd even odd even odd even"><a href="https://julkaisut.valtioneuvosto.fi/bitstream/handle/10024/161476/TKAT_Helmi_2019.pdf?sequence=1&amp;isAllowed=y" rel="nofollow" target="_blank">Ministry of Economic Affairs and Employment TEM (2019), 'Työllisyyskatsaus Helmikuu 2019'</a></li><li class="even"  class="field-item even odd even odd even odd even odd even odd"><a href="https://www.temtyollisyyskatsaus.fi/Textbase/Tkat/Pdf/Tkat_fi.pdf" rel="nofollow" target="_blank">Ministry of Economic Affairs and Employment (2020) 'Työllisyyskatsaus Huhtikuu 2020'</a></li><li class="odd"  class="field-item even odd even odd even odd even odd even odd even"><a href="https://tem.fi/en/article/-/asset_publisher/jatkoa-toimille-joilla-on-tuotu-turvaa-ja-joustoa-tyomarkkinoille-korona-aikana" rel="nofollow" target="_blank">Ministry of Economic Affairs and Employment (2020) Measures that have brought security and flexibility to labour markets during coronavirus epidemic will be extended</a></li><li class="even"  class="field-item even odd even odd even odd even odd even odd even odd"><a href="https://ek.fi/ajankohtaista/tiedotteet/2020/05/14/tyomarkkinakeskusjarjestot-sopuun-lomautuksista-ja-tyottomyysturvasta/" rel="nofollow" target="_blank">Confederation of Finnish Industries (2020) Työmarkkinakeskusjärjestöt sopuun lomautuksista ja työttömyysturvasta</a></li></ul>	</div>	
+	  <!-- SOURCES NOTES -->
+				
+
+	<!-- FREE COMMENTS -->
+			<div class="ds-node-comments">
+          	<div class="ef-comment-toggler toggler">
+            	<span class="show-text">Useful? Interesting? Tell us what you think.</span>
+            	<span class="hide-text">Hide comments</span>
+          	</div>
+          	<div id="comments" class="title comment-wrapper">
+				<h3>Eurofound welcomes feedback and updates on this regulation</h3>
+				<div id="comments" class="comment-wrapper">
+  
+  
+      <h2 class="title comment-form">Lägg till ny kommentar</h2>
+    <form class="comment-form user-info-from-cookie" action="/sv/comment/reply/82574" method="post" id="comment-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Ditt namn <span class="form-required" title="Detta fält är obligatoriskt.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="30" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-textfield form-item-mail">
+  <label for="edit-mail">E-post <span class="form-required" title="Detta fält är obligatoriskt.">*</span></label>
+ <input type="text" id="edit-mail" name="mail" value="" size="30" maxlength="64" class="form-text required" />
+<div class="description"> <span data-tooltip class="has-tip tip-top" title="Innehållet i detta fält är privat och kommer inte att visas offentligt.">More information?</span></div>
+</div>
+<div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">Hemsida </label>
+ <input type="text" id="edit-homepage" name="homepage" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<div class="form-item form-type-textfield form-item-subject">
+  <label for="edit-subject">Ämne </label>
+ <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="64" class="form-text" />
+</div>
+<div class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper" id="edit-comment-body"><div id="comment-body-add-more-wrapper"><div class="text-format-wrapper"><div class="form-item form-type-textarea form-item-comment-body-und-0-value">
+  <label for="edit-comment-body-und-0-value">Comment <span class="form-required" title="Detta fält är obligatoriskt.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="text-full wysiwyg form-textarea required" id="edit-comment-body-und-0-value" name="comment_body[und][0][value]" cols="60" rows="5"></textarea></div>
+</div>
+<fieldset class="filter-wrapper form-wrapper" style="display:none" id="edit-comment-body-und-0-format"><div class="fieldset-wrapper"></div></fieldset>
+</div>
+</div></div><input type="hidden" name="form_build_id" value="form-d-TU2lNmTG3oM6qn6RIuxewwuCblWJtnZ2bV7PK3JUU" />
+<input type="hidden" name="form_id" value="comment_node_erm_support_instrument_form" />
+<input type="hidden" name="honeypot_time" value="1611662529" />
+<button class="primary button form-submit" id="edit-submit" name="op" value="Spara" type="submit">Spara</button>
+<button id="edit-preview" name="op" value="Förhandsgranska" type="submit" class="form-submit">Förhandsgranska</button>
+<div class="zipcode-textfield"><div class="form-item form-type-textfield form-item-zipcode">
+  <label for="edit-zipcode">Leave this field blank </label>
+ <input autocomplete="off" type="text" id="edit-zipcode" name="zipcode" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div></div></form>  </div>
+		    </div>
+		</div>
+	
+	
+	<!-- PDF LINK / STADISTIC LINK / PRINT LINK -->
+	<!--<div class="erm-links">
+			</div>-->
+
+  
+
+</article>
+<!-- END of ARTICLE -->
+
+  
+      <!-- END Issue 3199 -->
+
+      </div>
+    </div>
+    <!--/.main region -->
+
+          <aside role="complementary" class="large-3 pull-9 sidebar-first columns sidebar">
+             <section class="block block-menu-block block-main-menu-sub-menu block-menu-block-1 clearfix">
+
+      
+      <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first expanded active-trail menu-mlid-16514"><a href="/sv/observatories/emcc" title="" class="icon-ef_european_monitoring_centre_on_change_-_emcc active-trail">Europeiskt centrum för övervakning av förändringar (EMCC)</a><ul class="menu"><li class="first leaf menu-mlid-16625"><a href="/sv/observatories/emcc/about-emcc" title="" class="icon-ef_about_emcc icon-ef_about_emcc icon-ef_about_emcc icon-ef_about_emcc icon-ef_about_emcc">Om EMCC</a></li>
+<li class="expanded active-trail menu-mlid-16518"><a href="/sv/observatories/emcc/european-restructuring-monitor" class="icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor icon-ef_european_restructuring_monitor active-trail">European Restructuring Monitor (ERM)</a><ul class="menu"><li class="first leaf menu-mlid-20064"><a href="/sv/observatories/emcc/erm/about-the-european-restructuring-monitor" class="icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor icon-ef_about_the_european_restructuring_monitor">About the European Restructuring Monitor</a></li>
+<li class="collapsed menu-mlid-16522"><a href="/sv/observatories/emcc/erm/factsheets" title="" class="icon-ef_restructuring_events_database icon-ef_restructuring_events_database icon-ef_restructuring_events_database">Faktablad</a></li>
+<li class="leaf active-trail menu-mlid-16523"><a href="/sv/observatories/emcc/erm/support-instrument" title="" class="icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments icon-ef_restructuring_support_instruments active active-trail">Stödinstrument vid omstruktureringar</a></li>
+<li class="leaf menu-mlid-16524"><a href="/sv/observatories/emcc/erm/legislation" title="" class="icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation icon-ef_restructuring_related_legislation">Lagstiftning på området omstrukturering</a></li>
+<li class="leaf menu-mlid-17037"><a href="/sv/observatories/emcc/erm/restructuring-case-studies" title="" class="icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies icon-ef_restructuring_case_studies">Fallstudier om omstrukturering
+</a></li>
+<li class="leaf menu-mlid-16525"><a href="/sv/observatories/emcc/erm/restructuring-in-smes-in-europe" class="icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes icon-ef_restructuring_in_smes">Omstrukturering i SMF</a></li>
+<li class="last leaf menu-mlid-22108"><a href="/sv/publications/series/european-restructuring-monitor" class="icon-ef_erm_publications icon-ef_erm_publications icon-ef_erm_publications">ERM publications</a></li>
+</ul></li>
+<li class="collapsed menu-mlid-16519"><a href="/sv/observatories/emcc/european-jobs-monitor" class="icon-ef_european_jobs_monitor icon-ef_european_jobs_monitor icon-ef_european_jobs_monitor icon-ef_european_jobs_monitor">European Jobs Monitor</a></li>
+<li class="leaf menu-mlid-16520"><a href="/sv/observatories/emcc/labour-market-research" class="icon-ef_labour_market_research icon-ef_labour_market_research icon-ef_labour_market_research icon-ef_labour_market_research icon-ef_labour_market_research">Arbetsmarknadsundersökningar</a></li>
+<li class="leaf menu-mlid-16517"><a href="/sv/observatories/emcc/comparative-information" title="" class="icon-ef_comparative_information icon-ef_comparative_information icon-ef_comparative_information icon-ef_comparative_information">Jämförande information</a></li>
+<li class="collapsed menu-mlid-16521"><a href="/sv/observatories/emcc/case-studies" class="icon-ef_case_studies icon-ef_case_studies icon-ef_case_studies icon-ef_case_studies">Fallstudier</a></li>
+<li class="last collapsed menu-mlid-17891"><a href="/sv/observatories/emcc/fome" class="icon-ef_future_of_manufacturing_in_europe_(fome) icon-ef_future_of_manufacturing_in_europe_(fome) icon-ef_future_of_manufacturing_in_europe_(fome)">Future of Manufacturing in Europe (FOME)</a></li>
+</ul></li>
+<li class="collapsed menu-mlid-17890"><a href="/sv/observatories/eurlife" title="EurLIFE: European Observatory on Quality of Life" class="icon-ef_european_observatory_on_quality_of_life_-_eurlife">Det europeiska centrumet för övervakning av livskvalitet - EurLIFE</a></li>
+<li class="last collapsed menu-mlid-16515"><a href="/sv/observatories/eurwork" title="" class="icon-ef_european_observatory_of_working_life_-_eurwork">EurWORK - European Observatory of Working Life</a></li>
+</ul></div>
+  
+</section>      </aside>
+    
+      </main>
+  <!--/.main-->
+
+  
+  <div class="ef-footer">
+
+          <!--.footer-columns -->
+      <section class="row l-footer-columns">
+                  <div class="footer-first large-3 columns">
+                 <section class="block block-menu block-menu-menu-ef-quick-links">
+
+        <h2 class="block-title">Snabblänkar</h2>
+    
+      <ul class="menu"><li class="first leaf"><a href="/sv/about-eurofound/who-we-are/legal-and-data-protection-notices" title="">Legal and data protection notices</a></li>
+<li class="leaf"><a href="https://www.eurofound.europa.eu/about-eurofound/who-we-are/legal-and-data-protection-notices/website-data-protection-notice#cookies" title="">Cookies</a></li>
+<li class="leaf"><a href="/sv/crm/default">Subscriptions</a></li>
+<li class="leaf"><a href="/sv/multilingualism" title="Eurofound&#039;s language policy">Flerspråkighet </a></li>
+<li class="leaf"><a href="https://www.eurofound.europa.eu/help/templates" title="">Mall för Eurofounds rapporter</a></li>
+<li class="leaf"><a href="/sv/about-eurofound/who-we-are/map-and-transport-information" title="">Karta – Så tar du dig till Eurofound</a></li>
+<li class="leaf"><a href="/sv/about-us/who-we-are/faq" title="">Vanliga frågor (FAQ)</a></li>
+<li class="leaf"><a href="/sv/publications/other/2018/eurofound-style-guide" title="">Redaktionella skrivregler</a></li>
+<li class="last leaf"><a href="/sv/sitemap" title="">Webbkarta</a></li>
+</ul>  
+</section>          </div>
+                          <div class="footer-second large-3 columns">
+                 <section class="block block-ef-components block-ef-components-social-media">
+
+        <h2 class="block-title">Social media</h2>
+    
+      <ul><li><a href="http://www.facebook.com/pages/Dublin-Ireland/Eurofound/66500373395" id="social-facebook">Hitta oss på Facebook</a></li><li><a href="http://twitter.com/eurofound" id="social-twitter">Följ oss på Twitter</a></li><li><a href="http://www.linkedin.com/company/eurofound" id="social-linkedin">Följ oss på Linkedin</a></li><li><a href="http://www.youtube.com/user/eurofound" id="social-youtube">Prenumerera på vår YouTube-kanal</a></li><li><a href="/sv/rss-feeds" id="social-rss-feeds">Prenumerera på vårt RSS-flöde</a></li></ul>  
+</section>          </div>
+                          <div class="footer-third large-3 columns">
+                 <section class="block block-block block-block-1">
+
+        <h2 class="block-title">Kontakta oss</h2>
+    
+      <div>Eurofound, Wyattville Road, Loughlinstown,</div>
+<div>Dublin 18, Ireland</div>
+<div>t: <a href="tel:+ 353 1 2043100">+ 353 1 2043100</a></div>
+<div>e: information@eurofound.europa.eu</div>
+<div> </div>
+<div>Brussels, Belgium</div>
+<div>e: eurofound.brusselsoffice@eurofound.europa.eu</div>
+  
+</section>          </div>
+        		          <div class="footer-fourth large-3 columns">
+                 <section class="block block-block block-block-17">
+
+      
+      <p class="eu-agency first-eu-agency"><a href="https://euagencies.eu/"><img alt="" height="95" src="//www.eurofound.europa.eu/sites/all/themes/effoundationtheme/images/eu-agencies.png" width="95" /> MEMBER OF THE NETWORK OF EU AGENCIES</a></p>
+  
+</section>   <section class="block block-block block-block-7">
+
+      
+      <p class="eu-agency"><img alt="European Union" src="//www.eurofound.europa.eu/sites/all/themes/effoundationtheme/images/eu-logo.png" width="52" height="33" /> Eurofound is an agency of the European Union</p>
+  
+</section>          </div>
+              </section>
+      <!--/.footer-columns-->
+    
+    <!--.l-footer-->
+    <footer class="l-footer panel" role="contentinfo">
+      <section class="row">
+	   <div class="footer-logo large-3 columns"></div>
+                  <div class="footer large-6 columns">
+                 <section class="block block-menu block-menu-menu-ef-footer-links">
+
+      
+      <ul class="menu"><li class="first leaf"><a href="/sv/about-eurofound/who-we-are/access-to-internal-documents" title="">Informationsfrihet</a></li>
+<li class="leaf"><a href="/sv/about-eurofound/what-we-do/financial-information" title="">Ekonomiska dokument</a></li>
+<li class="leaf"><a href="/sv/about-eurofound/who-we-are/archives" title="">Historiskt arkiv</a></li>
+<li class="leaf"><a href="/sv/about-eurofound/who-we-are/information-centre" title="">Informationscentrum</a></li>
+<li class="last leaf"><a href="https://www.eurofound.europa.eu/rss-feeds" title="">RSS feeds</a></li>
+</ul>  
+</section>          </div>
+                          <div class="copyright large-3 columns">
+            &copy; Eurofound 2021          </div>
+              </section>
+	   <section class="row">
+		   <div class="ef-to-top-nav">
+			  <a href="#top">Top</a>
+			</div>
+	   </section>
+    </footer>
+    <!--/.footer-->
+
+  </div>
+
+  </div>
+  <script type="application/json">{"utility":"piwik","siteID":"147","sitePath":["www.eurofound.europa.eu"],"is404":false,"is403":false,"instance":"europa.eu"}</script>
+    <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+  </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e498714830","applicationID":"188779736","transactionName":"ZwYHNhdVCEdRVRVdC15MJAERXQlaH2kTURJZEAwNC10IU29ACFET","queueTime":0,"applicationTime":3954,"atts":"S0EEQF9PG0k=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

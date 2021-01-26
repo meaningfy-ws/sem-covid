@@ -1,0 +1,2647 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+    <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+        <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+            <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+                <head>
+                    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+<meta name="author" content="">
+    <!-- ALL OTHERS SEO -->
+    <title>COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland   Mason Hayes Curran</title>
+<meta name='keywords' content='legal advice ireland, dublin lawyers, lawyers ireland, dublin law firms, lawyers in ireland, law firms dublin, irish law firms, irish law firm, dublin lawyer, lawyer ireland, dublin lawyer, irish lawyer, corporate lawyers' />
+<meta name='description' content='We provide an update on the measures introduced by healthcare regulators in Ireland to increase the number of healthcare workers. We also provide a summary of the relevant provisions from the Emergency Measures in the Public Interest (Covid-19) Act 2020 which deals with restoring relevant healthcare professionals to their respective registers.' />
+<script src="https://use.typekit.net/iex4ibw.js"></script>
+<script>try{Typekit.load({ async: false });}catch(e){}</script>
+<link href="https://www.mhc.ie/assets/stylesheets/bootstrap.css?v=6" rel="stylesheet">
+<link href="https://www.mhc.ie/assets/stylesheets/font-awesome.min.css?v=6" rel="stylesheet">
+<link href="https://www.mhc.ie/assets/css/rvslider.min.css" rel="stylesheet">
+<link href="https://www.mhc.ie/assets/stylesheets/mhc.css?v=6" rel="stylesheet">
+<link href="https://www.mhc.ie/assets/stylesheets/cookiecuttr.css?v=6" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="https://www.mhc.ie/assets/js/html5shiv.js?v=6"></script>
+<![endif]-->
+<link href="https://www.mhc.ie/assets/css/print.css?v=6" rel="stylesheet" media='print'>
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.mhc.ie/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.mhc.ie/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.mhc.ie/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.mhc.ie/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="https://www.mhc.ie/assets/ico/favicon.png">
+<script src="https://www.mhc.ie/assets/js/jquery.js?v=6"></script>
+<script src="https://www.mhc.ie/assets/js/jquery.form.js?v=6"></script>
+<script src="https://www.mhc.ie/assets/js/jquery.cookie.js?v=6"></script>
+<script src="https://www.mhc.ie/assets/js/jquery.widowFix.min.js?v=6"></script>
+<script>
+	$(document).ready(function () {
+		try{$.cookieCuttr();}catch(e)
+  		{
+  			//eat error - doesn't work on all devices, but non-essential
+  		}
+	});
+</script>
+<meta name="msvalidate.01" content="DEADB7C63A6ACA6B1637846017CFB5B5" />
+
+<!--[if lt IE 9]>
+  <script>
+    $(function() {
+      var el;
+      $("select.fix-ie")
+        .each(function() {
+          el = $(this);
+          el.data("origWidth", el.outerWidth()) // IE 8 will take padding on selects
+        })
+        .mouseenter(function(){
+          //$(this).css("width", "auto");
+        })
+        .bind("blur change", function(){
+          el = $(this);
+          el.css("width", el.data("origWidth"));
+        });
+    });
+  </script>
+  <![endif]-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+
+                    
+                </head>
+                <body><div class="js-cookiebar cookiebar position--fixed width--100 block" style="display:none">
+    <div class="container-cookie">
+        <div class="card margin">
+            <!-- <div class="mw--48 flex flex--column justify--center center"> -->
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <span>By clicking "OK", or any link on this page you consent to our use of cookies as described in our <strong><a href="/information/cookies-policy" id="policy-link">Cookie Policy</a></strong> (which also explains how to change your cookie settings).</span>
+                    </div>
+                    <div class="col-sm-2"><a href="" type="button" class="button button--blue flex width--100 justify--center" id="cookiebutton" onclick="document.location.reload(true)">OK</a>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+
+<button class="button button--orange js-change-cookie" style="display:none;">Change Cookie</button>
+<script>
+
+   // Setup GTM dataLayer -- load
+    window.dataLayer = window.dataLayer || [];
+
+    // see if cookie exists, if not show cookiebar -- recommended to do this in head of page
+    if (!getCookie("CookieConsent")) {
+
+        document.getElementsByClassName("js-cookiebar")[0].style.display = "block";
+         window.dataLayer = [{
+              'event': 'NoCookieExist'
+         }];
+    } 
+
+    // get Cookie by name - credits to stackoverflow
+    function getCookie(cname) {
+      var name = cname + "=",
+        decodedCookie = decodeURIComponent(document.cookie),
+        ca = decodedCookie.split(";");
+
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // set cookie on click
+    function onCookieButtonClick() {
+      document.getElementsByClassName("js-cookiebar")[0].style.visibility = "hidden";      
+      date = new Date();
+      date.setTime(date.getTime() + 3650 * 24 * 60 * 60 * 1000);
+      var expires = "expires=" + date.toUTCString();
+
+      // set cookie
+      document.cookie = "CookieConsent=clicked;path=/;" + expires + ";";
+    }
+
+   </script>
+
+                    <div class="container">
+                        
+                        <!-- DESKTOP! -->
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row separated top-row">
+            <!--<div class="hidden-xs hidden-sm visible-md visible-lg col-sm-3 col-sm-offset-9 col-xs-5 col-xs-offset-7">
+<form id="search_form_global" class="form" method="post" action="https://www.mhc.ie/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="XID" value="f6b09ccf245df600e72f7040f172930e271c5658" />
+<input type="hidden" name="ACT" value="31" />
+<input type="hidden" name="results_page" value="search/results" />
+<input type="hidden" name="honey" value="field_5017e9211a70bcd0c38a01dde2c975a3b79b2ae0" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+<div>
+    <ul>
+    <li><input type="text" id="search-keywords-global" name="keywords" size="20" placeholder="Search Site" />
+
+    <input class="search-icon" id="search-icon-global" type="image" name="submit" src="https://www.mhc.ie/assets/img/search-icon-blue.png" alt="Search" />
+    </li>
+    <li><a href="https://www.mhc.ie/contact">Contact</a></li>
+    </ul>
+</div>
+<div style='display:none;'>
+<label>Please do not fill-in this field <input type="text" name="field_5017e9211a70bcd0c38a01dde2c975a3b79b2ae0" value=""  /></label>
+</div>
+</form>
+-->
+            <div class="hidden-xs hidden-sm visible-md visible-lg ">
+                
+<form id="search_form_global" class="form" method="post" action="https://www.mhc.ie/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="XID" value="d2aeb20300a975f33a96d20f8312ea4646bd59fa" />
+<input type="hidden" name="ACT" value="31" />
+<input type="hidden" name="results_page" value="search/results" />
+<input type="hidden" name="honey" value="field_5017e9211a70bcd0c38a01dde2c975a3b79b2ae0" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+<div>
+    <ul>
+    <li><input type="text" id="search-keywords-global" name="keywords" size="20" placeholder="Search Site" />
+
+    <input class="search-icon" id="search-icon-global" type="image" name="submit" src="https://www.mhc.ie/assets/img/search-icon-blue.png" alt="Search" />
+    </li>
+    <li><a href="https://www.mhc.ie/contact">Contact</a></li>
+    </ul>
+</div>
+<div style='display:none;'>
+<label>Please do not fill-in this field <input type="text" name="field_5017e9211a70bcd0c38a01dde2c975a3b79b2ae0" value=""  /></label>
+</div>
+</form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        $("#search-icon-global").click(function() {
+            if ($("#search-keywords-global").val()) return true;
+            return false;
+        });
+    });
+</script>
+
+<div class="row">
+    <!-- <div class="col-sm-12"> -->
+    <div class="header-nav">
+        <div class="col-xs-1 span-logo-container">
+            <div class="logo-container">
+                <a href="https://www.mhc.ie/"
+                    ><img
+                        class="logo img-responsive pull-left"
+                        src="https://www.mhc.ie/assets/img/mason-hayes-curran-logo.png"
+                        alt="Business Law Firm Ireland – Mason Hayes Curran"
+                /></a>
+            </div>
+        </div>
+        <div class="hamburger visible-xs visible-sm hidden-md">
+            <a href="#">
+                <small class="menu-tip sr-only">MENU</small>
+                <div id="nav-icon1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="hidden-xs hidden-sm visible-md visible-lg">
+        <nav class="navigation">
+            <ul class="inline">
+                <li>
+                    <a href="https://www.mhc.ie/expertise">Expertise</a>
+                    <div class="down-list down-list-expertise">
+                         <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/aviation-asset-finance-and-leasing"
+                                    >Aviation, International Asset Finance </a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/banking"
+                                    >Banking</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/brexit-impact"
+                                    >Brexit</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/business-immigration"
+                                    >Business Immigration</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/charities-and-not-for-profit"
+                                    >Charity Law &amp; Not-for-Profit</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/commercial-contracts-and-outsourcing"
+                                    >Commercial Contracts &amp; Sourcing </a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/company-law"
+                                    >Company Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/competition-and-antitrust"
+                                    >Competition &amp; Antitrust</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/construction-and-engineering"
+                                    >Construction, Infrastructure &amp; Utilities</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/corporate-governance"
+                                    >Corporate Governance &amp; Compliance</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/corporate"
+                                    >Corporate Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/corporate-trust-agency"
+                                    >Corporate Trust &amp; Agency</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/data-centres"
+                                    >Data Centres</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/debt-capital-markets"
+                                    >Debt Capital Markets &amp; Listing</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/debt-recovery"
+                                    >Debt Recovery</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/derivatives"
+                                    >Derivatives</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/dispute-resolution"
+                                    >Dispute Resolution</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/education-law"
+                                    >Education Law</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/employee-equity-incentives"
+                                    >Employee Share Incentives</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/employment-law-and-benefits"
+                                    >Employment Law &amp; Benefits Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/energy-utilities-projects"
+                                    >Energy, Utilities &amp; Projects</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/equity-capital-markets"
+                                    >Equity Capital Markets</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/financial-services-regulation"
+                                    >Financial Regulation Law </a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/financial-services"
+                                    >Financial Services</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/fintech"
+                                    >Fintech</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/food-agriculture-beverage"
+                                    >Food, Agriculture &amp; Beverage </a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/gdpr"
+                                    >General Data Protection Regulation</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/health-prosecutions"
+                                    >Health &amp; Prosecutions</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/healthcare"
+                                    >Healthcare and Medical Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/health-reform"
+                                    >Healthcare Providers</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/infrastructure-and-project-finance"
+                                    >Infrastructure and Project Finance</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/insurance-and-professional-risks"
+                                    >Insurance and Risk</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/intellectual-property-1"
+                                    >Intellectual Property Law</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/international-business"
+                                    >International Business</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/investigations-white-collar-crime"
+                                    >Investigations &amp; White Collar Crime</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/investment-funds"
+                                    >Investment Funds</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/life-sciences-1"
+                                    >Life Sciences</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/maritime-shipping"
+                                    >Maritime Law &amp; Shipping Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/media-and-telecoms"
+                                    >Media &amp; Telecoms</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/mergers-acquisitions"
+                                    >Mergers &amp; Acquisitions</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/new-homes"
+                                    >New Homes </a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/pensions"
+                                    >Pensions</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/planning-and-environment-law"
+                                    >Planning and Environment Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/privacy-data-protection"
+                                    >Privacy &amp; Data Security</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/private-client"
+                                    >Private Client</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/product-regulation-and-consumer-law"
+                                    >Product Regulation &amp; Consumer Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/public-procurement"
+                                    >Public Procurement</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/public-administrative-law"
+                                    >Public, Regulatory and Investigations</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/real-estate"
+                                    >Real Estate Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/restructuring-and-insolvency"
+                                    >Restructuring &amp; Insolvency</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/social-housing"
+                                    >Social Housing</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/sport"
+                                    >Sports Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/start-ups"
+                                    >Start-Up Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/structured-finance-and-securitisation"
+                                    >Structured Finance &amp; Securitisation</a
+                                >
+                            </div>
+                            </div> 
+                              <div class="row ">
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/structured-products"
+                                    >Structured Products</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/tax"
+                                    >Tax Law</a
+                                >
+                            </div>
+                             
+                              
+                            <div class="col-md-4">
+                                <a href="https://www.mhc.ie/expertise/technology"
+                                    >Technology Law</a
+                                >
+                            </div>
+                             
+                                                </div>
+                     
+                </li>
+                <li class="people">
+                    <a href="https://www.mhc.ie/people">People</a>
+                    <div class="down-list down-list-people">
+                        
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/mark-adair"
+                                >Mark Adair </a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/jenny-ahern"
+                                >Jenny Ahern</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/catherine-allen"
+                                >Catherine Allen</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/declan-black"
+                                >Declan Black</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/liam-brazil"
+                                >Liam Brazil</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/sonya-bruen"
+                                >Sonya Bruen </a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/susan-bryson"
+                                >Susan Bryson</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/nicola-byrne"
+                                >Nicola Byrne</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/vanessa-byrne"
+                                >Vanessa Byrne</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/niamh-caffrey"
+                                >Niamh Caffrey</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/niamh-callaghan"
+                                >Niamh Callaghan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/neil-campbell"
+                                >Neil Campbell</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/william-carmody"
+                                >William Carmody</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/rachel-carney"
+                                >Rachel Carney</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/eoin-cassidy"
+                                >Eoin Cassidy</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/gemma-coady"
+                                >Gemma Coady</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/tanya-colbert"
+                                >Tanya Colbert</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/niall-collins"
+                                >Niall Collins</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/ger-connolly"
+                                >Ger Connolly</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/keelin-cowhey"
+                                >Keelin Cowhey</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/melanie-crowley"
+                                >Melanie Crowley</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/tom-davy"
+                                >Tom Davy</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/muireann-dennehy"
+                                >Muireann Dennehy</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/robert-dickson"
+                                >Robert Dickson </a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/william-dillon-leetch"
+                                >William Dillon-Leetch</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/shane-dolan"
+                                >Shane Dolan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/michael-doran"
+                                >Michael Doran</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/conor-durkin"
+                                >Conor Durkin</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/paul-egan"
+                                >Paul Egan SC</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/john-farrell"
+                                >John Farrell</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/helen-ferguson"
+                                >Helen Ferguson</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/oliver-fitzgerald"
+                                >Oliver FitzGerald</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/rowena-fitzgerald"
+                                >Rowena Fitzgerald</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/jamie-fitzmaurice"
+                                >Jamie Fitzmaurice</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/frank-flanagan"
+                                >Frank Flanagan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/conor-fottrell"
+                                >Conor Fottrell</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/karol-fox"
+                                >Karol Fox</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/conall-geraghty"
+                                >Conall Geraghty</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/stephen-gillick"
+                                >Stephen Gillick</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/ailbhe-gilvarry"
+                                >Ailbhe Gilvarry</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/edward-gleeson"
+                                >Edward Gleeson</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/micheal-grace"
+                                >Micheál Grace</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/liam-guidera"
+                                >Liam Guidera</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/david-gunn"
+                                >David Gunn</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/jason-harte"
+                                >Jason Harte</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/edel-hartog"
+                                >Edel Hartog</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/wendy-hederman"
+                                >Wendy Hederman</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/michaela-herron"
+                                >Michaela Herron</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/brian-horkan"
+                                >Brian Horkan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/kevin-hoy"
+                                >Kevin Hoy</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/peggy-hughes"
+                                >Peggy Hughes</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/brian-johnston"
+                                >Brian Johnston</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/peter-johnston"
+                                >Peter Johnston</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/lisa-joyce"
+                                >Lisa Joyce</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/rachel-kavanagh"
+                                >Rachel Kavanagh</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/martin-kelleher"
+                                >Martin Kelleher</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/gerard-kelly"
+                                >Gerard Kelly</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/tara-kelly"
+                                >Tara Kelly</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/marcus-kennedy"
+                                >Marcus Kennedy</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/niamh-keogh"
+                                >Niamh Keogh</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/rory-kirrane"
+                                >Rory Kirrane SC</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/claire-lord"
+                                >Claire Lord</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/michael-madden"
+                                >Michael Madden</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/david-mangan"
+                                >David Mangan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/robert-mcdonagh"
+                                >Robert McDonagh</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/brian-mcelligott"
+                                >Brian McElligott</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/justin-mckenna"
+                                >Justin McKenna</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/peter-mclay"
+                                >Peter McLay</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/nicholas-metcalfe"
+                                >Nicholas Metcalfe</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/niall-michel"
+                                >Niall Michel</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/colin-monaghan"
+                                >Colin Monaghan </a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/deirdre-munnelly"
+                                >Deirdre Munnelly </a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/alice-murphy"
+                                >Alice Murphy</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/john-murphy"
+                                >John Murphy</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/deirdre-nagle"
+                                >Deirdre Nagle </a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/jevan-neilan"
+                                >Jevan Neilan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/ronnie-neville"
+                                >Ronnie Neville</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/philip-nolan"
+                                >Philip Nolan</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/david-ormsby"
+                                >David Ormsby </a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/david-o-donnell"
+                                >David O&#8217;Donnell</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/christine-o-donovan"
+                                >Christine O&#8217;Donovan</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/frank-oflynn"
+                                >Frank O&#8217;Flynn</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/ian-o-herlihy"
+                                >Ian O&#8217;Herlihy</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/daragh-o-shea"
+                                >Daragh O&#8217;Shea</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/maurice-phelan"
+                                >Maurice Phelan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/kevin-power"
+                                >Kevin Power</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/sinead-power"
+                                >Sinéad Power</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/elizabeth-quinn"
+                                >Elizabeth Quinn </a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/shane-reynolds"
+                                >Shane Reynolds</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/judith-riordan"
+                                >Judith Riordan</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/liam-riordan"
+                                >Liam Riordan</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/paul-rochford"
+                                >Paul Rochford</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/elizabeth-ryan"
+                                >Elizabeth Ryan</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/oisin-tobin"
+                                >Oisín Tobin</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/barry-walsh"
+                                >Barry Walsh</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/john-byrne"
+                                >John Byrne</a
+                            >
+                        </div>
+                        <!-- </div> -->
+                         
+                        <!-- <div class="row"> -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/una-burke"
+                                >Una Burke</a
+                            >
+                        </div>
+                        <!--  -->
+                         
+                        <!--  -->
+                        <div class="partner-name">
+                            <a href="https://www.mhc.ie/people/sara-oreilly"
+                                >Sara O&#8217;Reilly</a
+                            >
+                        </div>
+                        <!--  -->
+                                            </div>
+                     
+                </li>
+                <li>
+                    <a href="https://www.mhc.ie/latest">Latest</a>
+                    <div class="down-list down-list-latest">
+                        <div class="main-nav-latest">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="https://www.mhc.ie/latest/news">News</a>
+                                    <a href="https://www.mhc.ie/latest/events">Events</a>
+                                    <a href="https://www.mhc.ie/latest/insights"
+                                        >Insights</a
+                                    >
+                                    <!-- <a href="https://www.mhc.ie/latest/recent_deals"
+                                        >Recent Deals</a
+                                    > -->
+                                    <a href="https://www.mhc.ie/latest/blog">Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="https://www.mhc.ie/about">About</a></li>
+                <li><a href="https://www.mhc.ie/careers">Careers</a></li>
+
+                <li><a href="https://www.mhc.ie/graduate-programme/">Graduates</a></li>
+                <!--<li class="uppercase"><a href="https://www.mhc.ie/invest-ireland/">Invest Ireland</a></li>-->
+                <li><a href="https://www.mhc.ie/brexit/">Brexit</a></li>
+            </ul>
+
+            <!-- <div class=" nav col-md-1 ">
+
+                    </div> -->
+        </nav>
+    </div>
+    <!-- row navigation -->
+</div>
+
+<!-- HANDHELD-MENU -->
+<div class="handheld-menu hidden-md hidden-lg">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul>
+                <li><a href="https://www.mhc.ie/expertise">Expertise</a></li>
+                <li><a href="https://www.mhc.ie/people">People</a></li>
+                <li>
+                    <a href="https://www.mhc.ie/latest">Latest</a>
+                    <ul class="nav-latest">
+	<li><a href="https://www.mhc.ie/latest" >Latest</a></li>
+	<li><a href="https://www.mhc.ie/latest/news" >News</a></li>
+	<li><a href="https://www.mhc.ie/latest/events" >Events</a></li>
+	<li><a href="https://www.mhc.ie/latest/insights" class="active" >Insights</a></li>
+	<!-- <li><a href="https://www.mhc.ie/latest/recent_deals" >Recent Deals</a></li> -->
+	<li><a href="https://www.mhc.ie/latest/blog" >Blog</a></li>
+</ul>
+
+
+                </li>
+
+                <li>
+                    <a class="latest-sub" href="https://www.mhc.ie/latest/news">News</a>
+                </li>
+                <li>
+                    <a class="latest-sub" href="https://www.mhc.ie/latest/events"
+                        >Events</a
+                    >
+                </li>
+                <li>
+                    <a class="latest-sub" href="https://www.mhc.ie/latest/insights"
+                        >Insights</a
+                    >
+                </li>
+                <li>
+                    <a class="latest-sub" href="https://www.mhc.ie/latest/recent_deals"
+                        >Recent Deals</a
+                    >
+                </li>
+                <li>
+                    <a class="latest-sub" href="https://www.mhc.ie/latest/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="https://www.mhc.ie/about">About</a>
+                </li>
+                <li><a href="https://www.mhc.ie/careers">Careers</a></li>
+                <!--<li><a href="https://www.mhc.ie/contact">Contact</a></li>-->
+                <li><a href="https://www.mhc.ie/graduate-programme/">Graduates</a></li>
+                <!--<li class="uppercase"><a href="https://www.mhc.ie/invest-ireland/">Invest Ireland</a></li>-->
+                <li class="uppercase">
+                    <a href="https://www.mhc.ie/brexit/">Brexit</a>
+                </li>
+            </ul>
+            <div class="mobile-search">
+                
+<form id="search_form_global" class="form" method="post" action="https://www.mhc.ie/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="XID" value="0cb04eabeb9e2690bc2749cac8ce37a1e4bcd915" />
+<input type="hidden" name="ACT" value="31" />
+<input type="hidden" name="results_page" value="search/results" />
+<input type="hidden" name="honey" value="field_5017e9211a70bcd0c38a01dde2c975a3b79b2ae0" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+<div>
+    <ul>
+    <li><input type="text" id="search-keywords-global" name="keywords" size="20" placeholder="Search Site" />
+
+    <input class="search-icon" id="search-icon-global" type="image" name="submit" src="https://www.mhc.ie/assets/img/search-icon-blue.png" alt="Search" />
+    </li>
+    <li><a href="https://www.mhc.ie/contact">Contact</a></li>
+    </ul>
+</div>
+<div style='display:none;'>
+<label>Please do not fill-in this field <input type="text" name="field_5017e9211a70bcd0c38a01dde2c975a3b79b2ae0" value=""  /></label>
+</div>
+</form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 hidden-sm hidden-xs">
+        <ul class="breadcrumb">
+            <li><a href="https://www.mhc.ie/">Home</a> &raquo;</li>
+            <li><a href="https://www.mhc.ie/latest">Latest</a> &raquo;</li>
+            <li>
+                <a href="https://www.mhc.ie/latest/insights">Insights</a>
+                &raquo;
+            </li>
+            <li>
+                COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland 
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row insights-container">
+    <div class="col-md-12">
+        <div
+            class="masthead masthead-latest"
+            style="background-position: 60% 50%;"
+        >
+        <div class="row">
+            <div class="col-md-2">
+                <h1>Latest</h1>
+            </div>
+            <div class="col-md-6">
+                <h3 class="subheading">
+                    Insights
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <form id="search_form" class="form" method="post" action="https://www.mhc.ie/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="XID" value="3a5fcbf0673754318cfd5f71c7b9623bc7cd8e39" />
+<input type="hidden" name="ACT" value="31" />
+<input type="hidden" name="results_page" value="search/insights" />
+<input type="hidden" name="honey" value="field_66284ef77ff55f110058555535f25427e9352efc" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+                <div class="search">
+                    <input id="search-keywords-latest" type="text" name="keywords" size="20" placeholder="Search Insights" />
+                    <input
+                        id="search-icon-latest"
+                        class="search-icon"
+                        type="image"
+                        name="submit"
+                        src="https://www.mhc.ie/assets/img/search-icon-grey.png"
+                    />
+                </div>
+                <div style='display:none;'>
+<label>Please do not fill-in this field <input type="text" name="field_66284ef77ff55f110058555535f25427e9352efc" value=""  /></label>
+</div>
+</form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+         
+                <div class="col-md-12 hidden-sm hidden-xs">
+            <ul class="nav-latest">
+	<li><a href="https://www.mhc.ie/latest" >Latest</a></li>
+	<li><a href="https://www.mhc.ie/latest/news" >News</a></li>
+	<li><a href="https://www.mhc.ie/latest/events" >Events</a></li>
+	<li><a href="https://www.mhc.ie/latest/insights" class="active" >Insights</a></li>
+	<!-- <li><a href="https://www.mhc.ie/latest/recent_deals" >Recent Deals</a></li> -->
+	<li><a href="https://www.mhc.ie/latest/blog" >Blog</a></li>
+</ul>
+
+
+        </div>
+         
+        
+    </div>
+    <div class="row">
+        
+        <script>
+            var insightModalConfig = {
+                title: "COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland ",
+                modalHeading: "",
+                modalParagraph: "",
+                modalFormAction: "",
+                modalButtonText: "",
+                showModal: function() {
+                    return true;
+                    return (
+                        this.modalHeading.length > 0 &&
+                        this.modalParagraph.length > 0 &&
+                        this.modalFormAction.length > 0 &&
+                        this.modalButtonText.length > 0
+                    );
+                }
+            };
+        </script>
+        <div class="col-md-7 col-md-offset-2 maincontent article-content">
+            
+            <h4>COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland </h4>
+            <h5>22 April 2020</h5>
+                        <div class="article-details">
+                <p><img alt="" src="https://www.mhc.ie/uploads/COVID19_Measures_Introduced_to_Increase_Number_of_Healthcare_Workers_in_Ireland.jpg" style="width: 1200px; height: 619px;" /></p>
+
+<p>A number of steps have been taken in Ireland to increase significantly the number of healthcare workers in light of the COVID-19 pandemic.</p>
+
+<p>The Health Service Executive (HSE) launched the &lsquo;<em>Be on call for Ireland</em>&rsquo; recruitment drive on 17 March 2020. The Chief Executive of the HSE, Mr Paul Reid, announced that the health service is looking for qualified healthcare workers including medical, nursing and therapy personnel as well as healthcare assistants as part of the recruitment campaign. The HSE later announced on 10 April that there will be an increase in the annual intake of medical interns this year, from 734 to approximately 1,100. This number would depend on how many students pass their final exams and accept an internship offer.</p>
+
+<h2><img alt="" src="https://www.mhc.ie/uploads/Health_Icon_2017_MHC_Orange.jpg" style="width: 260px; height: 260px; float: right;" />Steps taken by healthcare regulators in Ireland</h2>
+
+<p>The Nursing and Midwifery Board of Ireland (NMBI) and the Irish Medical Council have also taken steps to make it easier for nurses and doctors to return to the register. The NMBI announced on 16 March 2020 that it is waiving the fees normally charged to nurses in order to return to the Irish Register of Nurses and Midwives. The NMBI also issued a further statement on 1 April to invite European and UK general nurses to support the Irish healthcare system during the emergency on a no fee &lsquo;<em>temporary and occasional</em>&rsquo; basis if they are currently registered with the regulator in their own country.</p>
+
+<p>The Irish Medical Council announced on 18 March 2020 that it had launched a dedicated pathway for doctors to re-join the register and that doctors re-joining the register for this purpose would have their registration fees waived.</p>
+
+<h2>The Emergency Measures in the Public Interest (Covid-19) Act 2020</h2>
+
+<p>The Emergency Measures in the Public Interest (Covid-19) Act 2020, enacted on 27 March, introduced key measures to allow health and social care professionals who want to return to work to have their applications to be registered with their regulatory bodies accelerated. The 2020 Act allows, until 31 July 2020, previously-registered health and social care professionals to include doctors, pharmacists, nurses, dentists and other health and social care professionals to be restored to their respective registers without having to pay a fee. The Minister for Health has the power to extend the 31 July 2020 date if required.</p>
+
+<p>Interestingly, the Act also offers some protection to healthcare professionals, other than doctors, who may practise medicine during the pandemic. Normally, it is prohibited for any person, other than a registered medical practitioner, to practise medicine in contravention of the Medical Practitioners Act 2007. However, the 2020 Act provides that healthcare professionals, including nurses, pharmacists, dentists and other health and social care professionals are not practising medicine in breach of the 2007 Act in circumstances where they are acting:</p>
+
+<ul>
+	<li>
+	<p>Under the direction and control of a registered medical practitioner, or</p>
+	</li>
+	<li>
+	<p>In accordance with directions in writing given by a registered medical practitioner</p>
+	</li>
+</ul>
+
+<p>The 2020 Act provides that this exception applies until 31 July 2020.</p>
+
+<h2>Key Takeaways</h2>
+
+<ul>
+	<li>
+	<p>A number of important steps have been taken to increase the number of healthcare workers in Ireland.</p>
+	</li>
+	<li>
+	<p>These steps include:</p>
+
+	<ul style="list-style-type:circle;">
+		<li>
+		<p>Waiving of registration fees.</p>
+		</li>
+		<li>
+		<p>Legislation to facilitate acceleration of registration.</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p>These measures are likely to increase significantly the number of healthcare professionals on the register in Ireland, at least temporarily. As a result, there will likely be an increased pressure on the regulators of these professions, both in terms of managing the registration and regulation of the profession and supporting the registrants, particularly at a time when the healthcare service is under considerable strain.</p>
+	</li>
+</ul>
+
+<p>For expert guidance on related COVID-19 matters and how they affect your organisation, contact a member of our <a href="https://www.mhc.ie/expertise/public-administrative-law" target="_blank">Public, Regulatory &amp; Investigations</a> team.&nbsp;</p>
+
+<hr />
+<p>The content of this article is provided for information purposes only and does not constitute legal or other advice.&nbsp;</p> 
+                
+            
+            </div>
+
+            
+            <div class="call-to-action">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <h2>Discuss your related queries now with Catherine Allen.</h2>
+                        <br>
+                    </div>
+                
+                    <div class="col-xs-6 col-sm-3 link-container">
+                        
+                        <h2>Catherine Allen</h2>
+                        
+                        <div class="tel">
+                            <span></span>
+                            <!-- what we want to have in section with phone number -->
+                            <a onClick="gtag('event', 'click to call', {'event_category':'telephone', 'event_label':'+353 1 614 5254 - (Catherine Allen);" href="tel:+353 1 614 5254">+353 1 614 5254</a>
+                        </div>
+                        
+                        
+                        <div class="email">
+                            <span></span>
+                            <span class="ga-email-tracking" data-ga-title="callen@mhc.ie"><span data-eeEncEmail_kFKHsEhgvC='1'>.(JavaScript must be enabled to view this email address)</span><script type="text/javascript">/*<![CDATA[*/var out = '',el = document.getElementsByTagName('span'),l = ['>','a','/','<',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 110',' 101',' 108',' 108',' 97',' 99','>','\"',' 58',' 98',' 101',' 119',' 32',' 58',' 102',' 101',' 82',' 61',' 116',' 99',' 101',' 106',' 98',' 117',' 115',' 38',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 98',' 101',' 119',' 61',' 99',' 99',' 63',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 110',' 101',' 108',' 108',' 97',' 99',':','o','t','l','i','a','m','\"','=','f','e','r','h','a ','<'],i = l.length,j = el.length;while (--i >= 0)out += unescape(l[i].replace(/^\s\s*/, '&#'));while (--j >= 0)if (el[j].getAttribute('data-eeEncEmail_kFKHsEhgvC'))el[j].innerHTML = out;/*]]>*/</script></span>
+                        </div>
+                         
+                        
+                    </div>
+                    <div class="col-xs-6 col-sm-3 image-container">
+                         <a href="https://www.mhc.ie/people/catherine-allen"><img src="https://www.mhc.ie/uploads/_180-height-120-width/Catherine_Allen_%28Web_153x230%29.jpg" alt="Catherine_Allen_(Web_153x230).jpg" class="img-responsive"/></a> 
+                    </div>
+                </div>
+            </div>
+                          
+
+            
+                      
+            <div class="covid-insights">
+                
+        
+            
+                <div class="row related-stuff">
+                
+                <div class="related-insights col-md-12 ">
+    
+        <h3>Related Insights</h3>
+        <div class="row">
+        <div class="col-md-12">
+            <h4><a href="https://www.mhc.ie/latest/insights/charitable-healthcare-organisations-required-to-adopt-charities-governance-code">Charitable Healthcare Organisations Required to Adopt Charities Governance Code</a></h4>
+        </div>
+    </div>
+    
+        <div class="row">
+        <div class="col-md-12">
+            <h4><a href="https://www.mhc.ie/latest/insights/hpra-updates-guidance-on-clinical-trials-during-covid-19">HPRA Updates Guidance on Clinical Trials During COVID-19</a></h4>
+        </div>
+    </div>
+    
+        <div class="row">
+        <div class="col-md-12">
+            <h4><a href="https://www.mhc.ie/latest/insights/manufacturing-medical-devices-and-ppe-for-covid-19-5-key-considerations">Manufacturing Medical Devices and PPE for COVID-19 – 5 Key Considerations </a></h4>
+        </div>
+    </div>
+    
+</div>
+
+
+                                               
+                </div>
+
+            
+            </div>
+            
+           </div>
+
+                
+    
+    
+
+        <div class="col-md-3">
+            
+                        <section class="legal-insights-block mhc-brief">
+                <form
+                    class=""
+                    action="/brief"
+                    enctype="application/x-www-form-urlencoded; charset=UTF-8"
+                    method="post"
+                >
+                    <!--<h1>Legal Insights</h1>
+                        <p>Subscribe to our monthly legal updates</p><br/>-->
+                    <img
+                        class="img-responsive center-block"
+                        src="https://www.mhc.ie/assets/img/MHC_Brief_Short_Website_Reverse.svg"
+                        alt="MHC brief"
+                        title="MHC brief"
+                    />
+
+                    <button name="submit" class="btn btn-block btn-brief">
+                        Join Now
+                    </button>
+                </form>
+            </section>
+             
+            
+            <div class="supporting-info latest-supporting-info-container">
+
+
+
+
+<h3>Related Expertise</h3>
+
+
+        <a href="https://www.mhc.ie/expertise/public-administrative-law">Public, Regulatory and Investigations<br/></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+            
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+            
+
+
+	
+
+
+
+
+
+
+
+
+  <small class="small-share text-center">Share this...</small>
+
+<ul class="hj_social_bookmarks hidden-xs"><li style="float: left;"><a href="javascript:window.print()"><img alt="PrintFriendly" src="https://www.mhc.ie/assets/img/social/printfriendly.png" class="hidden-xs"></a></li></ul>
+
+<ul class="hj_social_bookmarks">
+<li class="email first"><a title="E-mail" href="mailto:?subject=COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland &amp;body=https://www.mhc.ie/latest/covid-19-measures-introduced-to-increase-the-number-of-healthcare-workers-in-ireland" rel="nofollow"><img alt="E-mail" src="https://www.mhc.ie/assets/img/social/email.png"></a></li>
+<li class="facebook"><a target="_blank" title="Facebook" href="https://www.facebook.com/sharer.php?u=https://www.mhc.ie/latest/insights/covid-19-measures-introduced-to-increase-the-number-of-healthcare-workers-in-ireland&amp;t=COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland " rel="nofollow"><img alt="Facebook" src="https://www.mhc.ie/assets/img/social/facebook.png"></a></li>
+<li class="twitter"><a onclick="window.open(this.href,'_blank','height=450,width=550');return false;" target="_blank" title="Twitter" href="https://twitter.com/share?url=https://www.mhc.ie/latest/insights/covid-19-measures-introduced-to-increase-the-number-of-healthcare-workers-in-ireland&amp;text=COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland :" rel="nofollow"><img alt="Twitter" src="https://www.mhc.ie/assets/img/social/twitter.png"></a></li>
+<li class="linkedin last"><a onclick="window.open(this.href,'_blank','height=520,width=570');return false;" target="_blank" title="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.mhc.ie/latest/insights/covid-19-measures-introduced-to-increase-the-number-of-healthcare-workers-in-ireland&amp;title=COVID-19 - Measures Introduced to Increase the Number of Healthcare Workers in Ireland &amp;source=Mason%20Hayes%20Curran&amp;summary=" rel="nofollow"><img alt="LinkedIn" src="https://www.mhc.ie/assets/img/social/linkedin.png"></a></li>
+</ul>
+
+
+        </div>
+    </div>
+     
+    <div class="row latest-row">
+
+
+    
+
+        
+        <div class="col-md-2 related-people">
+        <h3>Related People</h3>
+                                <div class="row">
+            <div class="col-xs-4 col-md-6">
+                <div class="related-person related-person-1">
+                    <a href="https://www.mhc.ie/people/catherine-allen"><img src="https://www.mhc.ie/uploads/_180-height-120-width/Catherine_Allen_%28Web_153x230%29.jpg"  alt="Catherine_Allen_(Web_153x230).jpg"/></a>                    <h4><a href="https://www.mhc.ie/people/catherine-allen">Catherine Allen</a></h4>
+                </div>
+            </div>
+                        
+        
+                                
+            <div class="col-xs-4 col-md-6">
+                <div class="related-person related-person-2">
+                    <a href="https://www.mhc.ie/people/niall-michel"><img src="https://www.mhc.ie/uploads/_180-height-120-width/Niall_Michel_%28Web_153x230%29.jpg"  alt="Niall_Michel_(Web_153x230).jpg"/></a>                    <h4><a href="https://www.mhc.ie/people/niall-michel">Niall Michel</a></h4>
+                </div>
+            </div>
+        </div>                
+        
+                                <div class="row">
+            <div class="col-xs-4 col-md-6">
+                <div class="related-person related-person-3">
+                    <a href="https://www.mhc.ie/people/lisa-joyce"><img src="https://www.mhc.ie/uploads/_180-height-120-width/Lisa_Joyce_Preferred_Portrait_May_2018_WEB_153_x_230.jpg"  alt="Lisa_Joyce_Preferred_Portrait_May_2018_WEB_153_x_230.jpg"/></a>                    <h4><a href="https://www.mhc.ie/people/lisa-joyce">Lisa Joyce</a></h4>
+                </div>
+            </div>
+                        
+        
+                                
+            <div class="col-xs-4 col-md-6">
+                <div class="related-person related-person-4">
+                    <a href="https://www.mhc.ie/people/edward-gleeson"><img src="https://www.mhc.ie/uploads/_180-height-120-width/Edward_Gleeson_%28Web_153x230%29.jpg"  alt="Edward_Gleeson_(Web_153x230).jpg"/></a>                    <h4><a href="https://www.mhc.ie/people/edward-gleeson">Edward Gleeson</a></h4>
+                </div>
+            </div>
+                </div>        
+        
+        
+            </div>        
+
+    
+
+
+
+
+    
+                    <div class="col-md-2 related-news">
+            <!-- NOTE: latest-news but taking related news styles-->
+                <h3>Latest News</h3>
+                <div class="item-1">
+                    <h5>26 January 2021</h5>
+                    <div class="thumb-image">
+                                            </div>
+                    <h4><a href="https://www.mhc.ie/latest/news/mason-hayes-curran-sponsors-the-imi-masterclass-series-2021">Mason Hayes &amp; Curran Sponsors the IMI Masterclass Series 2021</a></h4>
+
+                    <div class="">
+
+                        <div class="readmore"><a href="https://www.mhc.ie/latest/news/mason-hayes-curran-sponsors-the-imi-masterclass-series-2021">read more...</a></div>
+                    </div>
+
+                </div>
+                 <!-- end col-md-2 related-new -->
+    
+                    <div class="item">
+                <h5>19 January 2021</h5>
+                <h4><a href="https://www.mhc.ie/latest/news/mason-hayes-curran-llp-sponsors-the-royal-irish-academy-discourse-series-1">Mason Hayes &amp; Curran LLP sponsors the Royal Irish Academy Discourse Series</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/news/mason-hayes-curran-llp-sponsors-the-royal-irish-academy-discourse-series-1">read more...</a></div>
+                </div>
+            </div>
+                 <!-- end col-md-2 related-new -->
+    
+                    <div class="item">
+                <h5>13 January 2021</h5>
+                <h4><a href="https://www.mhc.ie/latest/news/lexology-gtdt-electricity-regulation-2021-ireland-chapter">Lexology GTDT Electricity Regulation 2021 - Ireland Chapter</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/news/lexology-gtdt-electricity-regulation-2021-ireland-chapter">read more...</a></div>
+                </div>
+            </div>
+                </div> <!-- end col-md-2 related-new -->
+    
+
+
+
+    
+        
+    <div class="col-md-2 related-insights">
+           <h3>Latest Insights</h3>
+                <div class="item-1">
+                <h5>25 January 2021</h5>
+                    <div class="thumb-image">
+                                            </div>
+                    <h4><a href="https://www.mhc.ie/latest/insights/material-prejudice-and-the-exercise-of-a-trustees-discretion">Debt Capital Markets Update: Material Prejudice and the Exercise of a Trustee’s Discretion</a></h4>
+                    <div class="">
+
+                        <div class="readmore"><a href="https://www.mhc.ie/latest/insights/material-prejudice-and-the-exercise-of-a-trustees-discretion">read more...</a></div>
+                    </div>
+
+                </div>
+             <!-- end col-md-2 related-new -->
+    
+                    <div class="item">
+                <h5>25 January 2021</h5>
+                <h4><a href="https://www.mhc.ie/latest/insights/up-and-running-for-2021-the-trustee-training-requirement">Up and Running for 2021: The Trustee Training Requirement</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/insights/up-and-running-for-2021-the-trustee-training-requirement">read more...</a></div>
+                </div>
+            </div>
+             <!-- end col-md-2 related-new -->
+    
+                    <div class="item">
+                <h5>20 January 2021</h5>
+                <h4><a href="https://www.mhc.ie/latest/insights/uk-policy-holders-rejoice-english-supreme-court-favours-fca-in-covid-19-business-interruption-judgment">UK Policy Holders Rejoice - English Supreme Court Favours FCA in COVID-19 Business Interruption Judgment</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/insights/uk-policy-holders-rejoice-english-supreme-court-favours-fca-in-covid-19-business-interruption-judgment">read more...</a></div>
+                </div>
+            </div>
+                </div>
+     <!-- end col-md-2 related-new -->
+    
+
+
+    
+           <div class="col-md-2 related-events">
+        <h3>Latest Events</h3>
+                <div class="item-1">
+                    <h5>11 February 2021</h5>
+                    <div class="thumb-image">
+                                            </div>
+                    <h4><a href="https://www.mhc.ie/latest/events/webinar-employment-law-top-tips-living-with-remote-working">Webinar: Employment Law Top Tips - Living with Remote Working</a></h4>
+
+                    <div class="">
+
+                        <div class="readmore"><a href="https://www.mhc.ie/latest/events/webinar-employment-law-top-tips-living-with-remote-working">read more...</a></div>
+                    </div>
+
+                </div>
+                 <!-- end col-md-2 related-new -->
+    
+                   <div class="item">
+                <h5>21 January 2021</h5>
+                <h4><a href="https://www.mhc.ie/latest/events/webinar-nowhere-to-hide-why-data-protection-profoundly-affects-the-way-secondary-schools-operate">Webinar: Nowhere to Hide: Why Data Protection Affects the Way Secondary Schools Operate</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/events/webinar-nowhere-to-hide-why-data-protection-profoundly-affects-the-way-secondary-schools-operate">read more...</a></div>
+                </div>
+            </div>
+                 <!-- end col-md-2 related-new -->
+    
+                   <div class="item">
+                <h5>20 January 2021</h5>
+                <h4><a href="https://www.mhc.ie/latest/events/webinar-nowhere-to-hide-why-data-protection-profoundly-affects-the-way-primary-schools-operate">Webinar: Nowhere to Hide: Why Data Protection Affects the Way Primary Schools Operate</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/events/webinar-nowhere-to-hide-why-data-protection-profoundly-affects-the-way-primary-schools-operate">read more...</a></div>
+                </div>
+            </div>
+                </div> <!-- end col-md-2 related-new -->
+    
+
+
+
+
+
+
+
+
+ 
+            <div class="col-md-2 related-blog">
+        <h3>Latest Blog Posts</h3>
+                <div class="item-1">
+                    <h5>06 January 2021</h5>
+                    <div class="thumb-image">
+                                            </div>
+                    <h4><a href="https://www.mhc.ie/latest/blog/game-on-for-the-regulation-of-loot-boxes-1">Game On for the Regulation of Loot Boxes? </a></h4>
+                    <div class="">
+
+                        <div class="readmore"><a href="https://www.mhc.ie/latest/blog/game-on-for-the-regulation-of-loot-boxes-1">read more...</a></div>
+                    </div>
+
+                </div>
+             <!-- end col-md-2 related-new -->
+    
+                    <div class="item">
+                <h5>18 November 2020</h5>
+                <h4><a href="https://www.mhc.ie/latest/blog/dora-europes-proposed-law-on-digital-risks-in-the-financial-sector">DORA: Europe’s Proposed Law on Digital Risks in the Financial Sector</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/blog/dora-europes-proposed-law-on-digital-risks-in-the-financial-sector">read more...</a></div>
+                </div>
+            </div>
+             <!-- end col-md-2 related-new -->
+    
+                    <div class="item">
+                <h5>22 October 2020</h5>
+                <h4><a href="https://www.mhc.ie/latest/blog/vlog-strategies-for-digital-transformation-projects">Vlog: Strategies for Digital Transformation Projects </a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/blog/vlog-strategies-for-digital-transformation-projects">read more...</a></div>
+                </div>
+            </div>
+                </div>
+     <!-- end col-md-2 related-new -->
+    
+
+
+
+
+    <!-- 
+        
+
+    <div class="col-md-2 related-recent-deals">
+        <h3>Latest Deals</h3>
+                <div class="item-1">
+                    <h5>21 March 2019</h5>
+                    <div class="thumb-image">
+                                            </div>
+                    <h4><a href="https://www.mhc.ie/latest/recent_deals/fane-valley-co-operative-society">Fane Valley Co-operative Society </a></h4>
+
+                    <div class="">
+
+                        <div class="readmore"><a href="https://www.mhc.ie/latest/recent_deals/fane-valley-co-operative-society">read more...</a></div>
+                    </div>
+
+                </div>
+             
+     
+                    <div class="item">
+                <h5>28 November 2018</h5>
+                <h4><a href="https://www.mhc.ie/latest/recent_deals/scisys-group-plc">SCISYS Group PLC</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/recent_deals/scisys-group-plc">read more...</a></div>
+                </div>
+            </div>
+             
+     
+                    <div class="item">
+                <h5>30 March 2017</h5>
+                <h4><a href="https://www.mhc.ie/latest/recent_deals/kneat-solutions-limited">Kneat Solutions Limited</a></h4>
+
+                <div class="">
+                    <div class="readmore"><a href="https://www.mhc.ie/latest/recent_deals/kneat-solutions-limited">read more...</a></div>
+                </div>
+            </div>
+                </div>
+     
+      --> 
+
+
+
+
+
+
+</div><!--End row -->
+ 
+    
+    
+
+    <script src="https://www.mhc.ie/assets/javascripts/insights-modal.js"></script>
+    <script type="text/html" id="insights-modal-template">
+        <div id="insights-modal" class="mhc-modal modal fade in" tabindex="-1" role="dialog" style="display: block; padding-right: 15px;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+                    </div>
+                    <div class="modal-body">
+
+                        <form class="" action="/brief" enctype="application/x-www-form-urlencoded; charset=UTF-8" method="post">
+                        <img class="img-responsive center-block" src="https://www.mhc.ie/assets/img/MHC_Brief_Short_Website_Reverse.svg" alt="MHC brief" title="MHC brief"/>
+
+
+                            <button name="submit" class="btn btn-block btn-brief">Join Now</button>
+
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </script>
+    
+    </div>
+</div>
+
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <footer class="site-footer">
+
+
+    
+
+
+          <div class="row">
+               <div class="col-md-12">
+                   
+                        <div class="row footer-middle-row">
+
+
+
+                                       <img class="img-responsive center-block" src="https://www.mhc.ie/assets/img/MHC_Brief_Short_Website_Reverse.svg" alt="MHC brief" title="MHC brief"/>
+
+
+
+                                   <!-- <div class="col-md-3">
+                                       <h2>Subscribe to our monthly legal updates</h2>
+                                   </div> -->
+
+
+
+                                           <form class="" action="/brief" enctype="application/x-www-form-urlencoded; charset=UTF-8" method="post">
+
+                                                   <!--<h1>Legal Insights</h1>
+                                                   <p>Subscribe to our monthly legal updates</p><br/>-->
+
+
+                                               <button name="submit" class="btn btn-block btn-brief" >Join Now</button>
+
+                                           </form>
+
+
+                       </div>
+
+                   
+                  <div class="row footer-top-row">
+                       
+                       <section class="col-xs-12 col-sm-6 col-md-3  col-lg-3  footer-location footer-matched">
+                           <h1>Dublin</h1>
+                           <!-- <p>Barrow Street<br/>
+Dublin 4<br/>
+D04 TR29
+</p> -->
+                           <div class="row">
+                               <div class="col-xs-12 col-sm-12">
+                                   <p><span></span>
+                                       <a onClick="gtag('event', 'click to call', {'event_category':'telephone', 'event_label':'+353 1 614 5000  - (Dublin)'});" href="tel:+353 1 614 5000 ">+353 1 614 5000 </a>
+                                       <br />
+                                       <span class="ga-email-tracking" data-ga-title="Dublin">
+                                       <span></span><span data-eeEncEmail_bmUaJwtulL='1'>.(JavaScript must be enabled to view this email address)</span><script type="text/javascript">/*<![CDATA[*/var out = '',el = document.getElementsByTagName('span'),l = ['>','a','/','<',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 110',' 105',' 108',' 98',' 117',' 100','>','\"',' 58',' 98',' 101',' 119',' 32',' 58',' 102',' 101',' 82',' 61',' 116',' 99',' 101',' 106',' 98',' 117',' 115',' 38',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 98',' 101',' 119',' 61',' 99',' 99',' 63',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 110',' 105',' 108',' 98',' 117',' 100',':','o','t','l','i','a','m','\"','=','f','e','r','h','a ','<'],i = l.length,j = el.length;while (--i >= 0)out += unescape(l[i].replace(/^\s\s*/, '&#'));while (--j >= 0)if (el[j].getAttribute('data-eeEncEmail_bmUaJwtulL'))el[j].innerHTML = out;/*]]>*/</script></span>
+                                   </p>
+                               </div>
+                               <div class="col-xs-12 col-sm-12">
+                                   <p class="footer-address">Barrow Street<br/>
+Dublin 4<br/>
+D04 TR29
+</p>
+                               </div>
+                           </div>
+                       </section>
+                       
+                       <section class="col-xs-12 col-sm-6 col-md-3  col-lg-3  footer-location footer-matched">
+                           <h1>London</h1>
+                           <!-- <p>1 Cornhill<br/>
+London<br/>
+EC3V 3ND<br/>
+
+</p> -->
+                           <div class="row">
+                               <div class="col-xs-12 col-sm-12">
+                                   <p><span></span>
+                                       <a onClick="gtag('event', 'click to call', {'event_category':'telephone', 'event_label':'+44 20 3178 3366 - (London)'});" href="tel:+44 20 3178 3366">+44 20 3178 3366</a>
+                                       <br />
+                                       <span class="ga-email-tracking" data-ga-title="London">
+                                       <span></span><span data-eeEncEmail_RnRtphJlPB='1'>.(JavaScript must be enabled to view this email address)</span><script type="text/javascript">/*<![CDATA[*/var out = '',el = document.getElementsByTagName('span'),l = ['>','a','/','<',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 110',' 111',' 100',' 110',' 111',' 108','>','\"',' 58',' 98',' 101',' 119',' 32',' 58',' 102',' 101',' 82',' 61',' 116',' 99',' 101',' 106',' 98',' 117',' 115',' 38',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 98',' 101',' 119',' 61',' 99',' 99',' 63',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 110',' 111',' 100',' 110',' 111',' 108',':','o','t','l','i','a','m','\"','=','f','e','r','h','a ','<'],i = l.length,j = el.length;while (--i >= 0)out += unescape(l[i].replace(/^\s\s*/, '&#'));while (--j >= 0)if (el[j].getAttribute('data-eeEncEmail_RnRtphJlPB'))el[j].innerHTML = out;/*]]>*/</script></span>
+                                   </p>
+                               </div>
+                               <div class="col-xs-12 col-sm-12">
+                                   <p class="footer-address">1 Cornhill<br/>
+London<br/>
+EC3V 3ND<br/>
+
+</p>
+                               </div>
+                           </div>
+                       </section>
+                       
+                       <section class="col-xs-12 col-sm-6 col-md-3  col-lg-3  footer-location footer-matched">
+                           <h1>New York</h1>
+                           <!-- <p>1450 Broadway<br/>
+39th Floor, New York<br/>
+NY 10018<br/></p> -->
+                           <div class="row">
+                               <div class="col-xs-12 col-sm-12">
+                                   <p><span></span>
+                                       <a onClick="gtag('event', 'click to call', {'event_category':'telephone', 'event_label':'+1 646 862 2028  - (New York)'});" href="tel:+1 646 862 2028 ">+1 646 862 2028 </a>
+                                       <br />
+                                       <span class="ga-email-tracking" data-ga-title="New York">
+                                       <span></span><span data-eeEncEmail_tAvcCzhQQx='1'>.(JavaScript must be enabled to view this email address)</span><script type="text/javascript">/*<![CDATA[*/var out = '',el = document.getElementsByTagName('span'),l = ['>','a','/','<',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 107',' 114',' 111',' 121',' 119',' 101',' 110','>','\"',' 58',' 98',' 101',' 119',' 32',' 58',' 102',' 101',' 82',' 61',' 116',' 99',' 101',' 106',' 98',' 117',' 115',' 38',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 98',' 101',' 119',' 61',' 99',' 99',' 63',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 107',' 114',' 111',' 121',' 119',' 101',' 110',':','o','t','l','i','a','m','\"','=','f','e','r','h','a ','<'],i = l.length,j = el.length;while (--i >= 0)out += unescape(l[i].replace(/^\s\s*/, '&#'));while (--j >= 0)if (el[j].getAttribute('data-eeEncEmail_tAvcCzhQQx'))el[j].innerHTML = out;/*]]>*/</script></span>
+                                   </p>
+                               </div>
+                               <div class="col-xs-12 col-sm-12">
+                                   <p class="footer-address">1450 Broadway<br/>
+39th Floor, New York<br/>
+NY 10018<br/></p>
+                               </div>
+                           </div>
+                       </section>
+                       
+                       <section class="col-xs-12 col-sm-6 col-md-3  col-lg-3  footer-location footer-matched">
+                           <h1>San Francisco</h1>
+                           <!-- <p>Center 3916<br>
+95 Third Street, 2nd Floor<br>
+San Francisco<br>
+CA 9410</p> -->
+                           <div class="row">
+                               <div class="col-xs-12 col-sm-12">
+                                   <p><span></span>
+                                       <a onClick="gtag('event', 'click to call', {'event_category':'telephone', 'event_label':'+1 415 655 6841 - (San Francisco)'});" href="tel:+1 415 655 6841">+1 415 655 6841</a>
+                                       <br />
+                                       <span class="ga-email-tracking" data-ga-title="San Francisco">
+                                       <span></span><span data-eeEncEmail_GLIySYbrwE='1'>.(JavaScript must be enabled to view this email address)</span><script type="text/javascript">/*<![CDATA[*/var out = '',el = document.getElementsByTagName('span'),l = ['>','a','/','<',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 111',' 99',' 115',' 105',' 99',' 110',' 97',' 114',' 102',' 110',' 97',' 115','>','\"',' 58',' 98',' 101',' 119',' 32',' 58',' 102',' 101',' 82',' 61',' 116',' 99',' 101',' 106',' 98',' 117',' 115',' 38',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 98',' 101',' 119',' 61',' 99',' 99',' 63',' 101',' 105',' 46',' 99',' 104',' 109',' 64',' 111',' 99',' 115',' 105',' 99',' 110',' 97',' 114',' 102',' 110',' 97',' 115',':','o','t','l','i','a','m','\"','=','f','e','r','h','a ','<'],i = l.length,j = el.length;while (--i >= 0)out += unescape(l[i].replace(/^\s\s*/, '&#'));while (--j >= 0)if (el[j].getAttribute('data-eeEncEmail_GLIySYbrwE'))el[j].innerHTML = out;/*]]>*/</script></span>
+                                   </p>
+                               </div>
+                               <div class="col-xs-12 col-sm-12">
+                                   <p class="footer-address">Center 3916<br>
+95 Third Street, 2nd Floor<br>
+San Francisco<br>
+CA 9410</p>
+                               </div>
+                           </div>
+                       </section>
+                       
+
+            </div>
+
+            <div class="row footer-bottom-row">
+
+                <div class="col-sm-4 col-md-3">
+                    &copy; Mason Hayes &amp; Curran LLP 2021
+                </div>
+                <div class="col-sm-8 col-md-5">
+                    <ul class="footer-links">
+                        <li><a href="https://www.mhc.ie/information/sitemap">Sitemap</a></li>
+
+                        <li><a href="https://www.mhc.ie/information/privacy">Privacy</a></li>
+
+                        <li><a href="https://www.mhc.ie//information/cookies-policy">Cookie Policy</a></li>
+
+                        <li><a href="https://www.mhc.ie/information/disclaimer">Disclaimer</a></li>
+
+                        <li><a href="https://www.mhc.ie/information/accessibility">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <ul class="socialmedia">
+
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/MHClawyers" target="_blank"><span>facebook</span></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="https://twitter.com/MHCLawyers" target="_blank"><span>twitter</span></a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="https://www.instagram.com/mhclaw/" target="_blank"><span>instagram</span></a>
+                                </li>
+                                <li>
+                                    <a class="rss" href="https://www.mhc.ie/rss" target="_blank"><span>rss</span></a>
+                                </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /container -->
+                    <script src="https://www.mhc.ie/assets/javascripts/bootstrap.min.js?v=6"></script>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://www.mhc.ie/assets/js/jquery.hoverIntent.js?v=6"></script>
+<script src="https://www.mhc.ie/assets/js/menu-dropdown.js?v=6"></script>
+<script src="https://www.mhc.ie/assets/js/jquery.cluetip.js?v=6"></script>
+<script src="https://www.mhc.ie/assets/js/jquery.html5-placeholder-shim.js?v=6"></script>
+<script src="https://www.mhc.ie/assets/js/jquery.matchHeight-min.js?v=6"></script>
+
+<script src="https://www.mhc.ie/themes/third_party/communicraft_surveymonkey/javascript/main.js"></script>
+<script src="https://www.mhc.ie/themes/third_party/communicraft_blogsignup/javascript/main.js"></script>
+
+<script type="text/html" id="blogsignup-template">
+<div id="myModal" class="mhc-modal modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h1 class="modal-title">Tech Law Blog</h1>
+      </div>
+      <div class="modal-body">
+
+<p>Register to receive our latest Tech Law Blog updates.</p>
+<img class="img-responsive center-block" src="/assets/img/MHC_Brief_Short_Website_Reverse.svg" alt="MHC brief" title="MHC brief">
+<form action="/tech-law-blog" enctype="application/x-www-form-urlencoded; charset=UTF-8" method="post">
+
+
+<button name="submit" class="btn btn-block btn-brief">Register</button>
+</form>
+</div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".viewmore a").click(function(){
+            $(this).parent().next('.more-items').slideToggle(1200);
+            $(this).toggleClass('active');
+            if( $(this).hasClass('active') )
+                $(this).text('View less...');
+            else
+                $(this).text('View more...');
+            return false;
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("input:checkbox").click(function() {
+    $("input:submit").attr("disabled", !this.checked);
+});
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".viewmore-intro a").click(function(){
+            $(this).parent().prev('.more-items').slideToggle(1200);
+            $(this).toggleClass('active');
+            if( $(this).hasClass('active') )
+                $(this).text('View less...');
+            else
+                $(this).text('View more...');
+            return false;
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".viewmore-expand a").click(function(){
+            $(this).parent().prev('.more-items').slideToggle(1200);
+            $(this).toggleClass('active');
+            if( $(this).hasClass('active') )
+                $(this).text('View less...');
+            else
+                $(this).text('View more...');
+            return false;
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".recent-deals-homepage a").tooltip();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+</script>
+
+<script>
+    $(document).ready(function(){$('#myCarousel').carousel();});
+
+</script>
+
+
+<script>
+    function adjustText()
+    {
+        // $(".flexi-box h1").css({"fontSize" : ($(document).width() * 0.030) + "px"});
+        // $(".nav ul.inline li a").css({"fontSize" : ($(document).width() * 0.013) + "px"});
+        // $(".nav ul.inline li div.down-list a").css({"fontSize" : ($(document).width() * 0.009) + "px"});
+        // $(".top-row ul.inline li a").css({"fontSize" : ($(document).width() * 0.009) + "px"});
+        // $(".masthead h1").css({"fontSize" : ($(document).width() * 0.024) + "px"});
+        // $(".masthead-expertise h3").css({"fontSize" : ($(document).width() * 0.018) + "px"});
+        //$(".featured-partner-text h3").css({"fontSize" : ($(document).width() * 0.016) + "px"});
+        // $(".footer-location p").css({"fontSize" : ($(document).width() * 0.011) + "px"});
+        // $(".contact-rhs h3").css({"fontSize" : ($(document).width() * 0.019) + "px"});
+        //  $(".otherfooterlinks").css({"fontSize" : ($(document).width() * 0.0080) + "px"});
+        //  $(" .ezine-link a,  .blog-link a").css({"fontSize" : ($(document).width() * 0.010) + "px"});
+        //  $(" .join h4,  .join h5").css({"fontSize" : ($(document).width() * 0.009) + "px"});
+    }
+    $(window).resize(adjustText);
+    $(adjustText);
+</script>
+<script>
+    $(document).ready(function(){
+        $('iframe').each(function(){
+            var url = $(this).attr("src");
+            var char = "?";
+            if(url.indexOf("?") != -1){ //is there a ? in the URL ?
+                char = "&";
+            }
+            $(this).attr("src",url+char+"wmode=transparent");
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+
+    //GOOGLE MAPS POINTER EVENTS
+
+$('.map-frame').addClass('pointer'); // set the pointer events to none on doc ready
+$('.map').on('click', function() {
+    $('.map-frame').removeClass('pointer'); // set the pointer events true on click
+});
+
+// disable pointer events when the mouse leave the canvas area;
+
+$( ".map" ).mouseleave(function() {
+    $('.map-frame').addClass('pointer'); // set the pointer events to none when mouse leaves the map area
+});
+
+//END GOOGLE MAPS POINTER EVENTS//
+</script>
+
+
+
+<script>
+    $(function() {
+
+        $('.statement-matched').matchHeight({
+            byRow: false,
+        });
+
+        $('.footer-matched').matchHeight({
+            byRow: false,
+        });
+
+        $('.block-matched').matchHeight({
+            byRow: false,
+        });
+
+        $('.article-block').matchHeight({
+            byRow: false,
+        });
+        $('.home-matched').matchHeight({
+            byRow: false,
+        });
+
+        $('.block-matched').matchHeight({
+            byRow: false,
+        });
+
+        $('.grad-landing-row').matchHeight({
+            byRow: false,
+        });
+
+
+        $('.latest-block blockquote').matchHeight({
+            byRow: false,
+        });
+        $('.recent-deals-invest-ireland-matched').matchHeight({
+            byRow: false,
+        });
+
+        $('.ireland-matched').matchHeight({
+            byRow: false,
+        });
+        $('.ireland-landing-row').matchHeight({
+            byRow: false,
+        });
+
+        $('.grad-matched').matchHeight({
+            byRow: false,
+        });
+
+        if( $('.statement-block').length )         // use this if you are using class to check
+        {
+            $('.statement-block h1').widowFix({
+                linkFix: true
+            });
+        }
+    });
+
+</script>
+<!-- Twitter universal website tag code -->
+
+
+<!-- End Facebook Pixel Code -->
+
+
+ <!-- ICAN September 2016 -->
+ <script>
+     $(function()    {
+         /*
+         var ga = function(args)    {console.log(arguments);};*/
+         var url = document.location.href.replace(/\/+$/, "");
+         var lastSegment = url.substr(url.lastIndexOf('/') + 1);
+         if($('.js-ican-debt-recovery-thank-you').length > 0)   {
+             ga('send', 'event', 'Download', 'pageLoad', 'September Burst', 1);
+         }
+         $('.email .ga-email-tracking').click(function()  {
+             if(['debt-recovery', 'financial-sector-debt-recovery', 'commercial-debt-recovery', 'public-sector-debt-recovery', 'international-debt-recovery'].indexOf(lastSegment) !== -1)    {
+                 ga('send', 'event', 'Email', 'click', 'September Burst', 1);
+             }
+         });
+         $('.v-card-download').click(function()  {
+             if(['debt-recovery', 'financial-sector-debt-recovery', 'commercial-debt-recovery', 'public-sector-debt-recovery', 'international-debt-recovery'].indexOf(lastSegment) !== -1)    {
+                 ga('send', 'event', 'VCard', 'click', 'September Burst', 1);
+             }
+         });
+     });
+ </script>
+
+ <!-- End ICAN September 2016 -->
+
+<!-- linked in -->
+
+<script type="text/javascript">
+    if (getCookie("CookieConsent")) {
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+    }
+</script>
+
+
+                    
+
+ 
+
+
+
+                <script type="text/javascript">
+
+if (getCookie("CookieConsent")) {
+_linkedin_partner_id = "647644";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+}
+</script>
+
+</body>
+            </html>

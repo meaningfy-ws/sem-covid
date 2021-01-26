@@ -1,0 +1,569 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+<head>
+    <title>225-timers-krav p&#229; pause indtil september p&#229; grund af corona-udbruddet</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="FID" content="1667051816745153">
+
+
+
+
+            <meta name="content-tags" content="Pressemeddelelse">
+
+
+        <meta name="section" content="Nyheder &amp; Presse">
+
+        <meta name="subsection" content="Pressemeddelelser">
+
+    <meta name="publish-date" content="2020-06-19">
+
+        <meta name="manual-date" content="2020-06-19">
+
+        <link href="/static/css/vendor/boostrap.css" rel="stylesheet">
+        <link href="/static/css/vendor/boostrap-datepicker.css" rel="stylesheet">
+        <link href="/static/css/main.css" rel="stylesheet">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/static/scrips/vendor/jquery.min.js" data-cookieconsent="ignore"></script>
+        <script src="/static/scrips/vendor/bootstrap-datepicker.js" data-cookieconsent="ignore"></script>
+    
+            <style type="text/css">
+            .mega-menu { color: #1e1e1e; background-color: #dddbd8; }
+            </style>
+
+
+
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="22293ac5-bcd5-4466-aebf-c2fd6933fa52" data-blockingmode="auto" type="text/javascript"></script>
+<link rel="icon" type="image/png" href="https://bm.dk/media/9135/krone_favicon.png">
+
+<style>
+.call-to-action-module H2 {
+    font-size: 1.3333333333em;
+    line-height: 1.4666666667em;
+    margin: 0 0 24px 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+}
+.contact-module HEADER H2 {
+    font-size: 1.8666666667em;
+    line-height: 1.8666666667em;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.promotion-module__details H2 {
+    font-size: 1.8666666667em;
+    line-height: 2.5333333333em;
+    line-height: normal;
+    margin-top: 24px;
+    word-wrap: break-word;
+}
+</style>
+            <style type="text/css">
+            .rss-module--jobs UL {
+margin-left: 30px;
+}
+            </style>
+
+
+        <meta property="og:image" content="http://bm.dk/media/2631/krone_rgb.png" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+</head>
+<body>
+
+
+<a href="" class="wcag-skip-block wcag-visually-removed" data-skip-block-config='{"skipMainNav":"true"}'>Spring over hovedmenu</a>
+<header role="banner">
+    <section class="mobile-navigation">
+        <button class="mobile-navigation__hamburger btn-none" id="mobile-navigation-control">
+            <svg version="1.1" class="burger-menu-icon icon-closed" id="burger-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 39" xml:space="preserve">
+                <rect x="0" width="50" height="9" />
+
+                <rect x="0" y="15" width="50" height="9" />
+
+                <rect x="0" y="30" width="50" height="9" />
+            </svg>
+            <span class="icon-open glyphicon glyphicon-remove"></span>
+        </button>
+        <div class="mobile-navigation__presentation">
+            <a id="siteTopMobileLogoLink" href="/" class="mobile__image mobile__image-link">
+                <img src="/media/6666/bm_logo_color.svg" alt="Logo" />
+            </a>
+        </div>
+        <!-- search icon to display -->
+        <div class="mobile-service-menu">
+        </div>
+        <!-- /search icon to display -->
+    </section>
+    <section class="desktop-navigation">
+        <!-- search field to display -->
+            <div class="search-field-direct">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <form method="get" action="/soeg/" role="search">
+                    <label class="sr-only" for="siteTopSearch">Søg efter indhold på siden</label>
+                    <input id="siteTopSearch" type="text" name="q" class="form-control" placeholder="S&#248;g" tabindex="-1">
+                    <button type="submit" id="siteTopSearchSubmit" class="btn btn-default" tabindex="-1">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <span class="btn-text">Start s&#248;gning</span>
+                    </button>
+                </form>
+                <button type="button" class="btn btn-default btn-cancel search-field-direct-toggle" tabindex="-1">Luk</button>
+            </div>
+        <!-- search field to display -->
+        <div class="header__presentation">
+                <a href="/" class="header__image">
+                    <img src="/media/6666/bm_logo_color.svg" alt="Logo" />
+                </a>
+        </div>
+        <nav role="navigation" class="header__service-menu">
+                <ul class="nav nav-pills">
+                    
+                </ul>
+
+        </nav>
+        <nav role="navigation" class="header__subject-menu">
+            <ul class="nav nav-pills">
+
+
+
+            <li><a href="/ministeriet/">Ministeriet</a></li>
+
+
+
+
+        <li class="dropdown" data-original-state="closed">
+            <a href="#" class="dropdown-toggle">Arbejdsomr&#229;der</a>
+            <ul class="dropdown-menu" id="menu-591b990c-6d8d-439a-915c-68559a51a678" aria-hidden="true">
+                        <li>
+                            <div>
+                                <a href="/arbejdsomraader/aktuelle-fokusomraader/">Aktuelle fokusomr&#229;der</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/arbejdsomraader/arbejdsvilkaar/">Arbejdsvilk&#229;r</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/arbejdsomraader/arbejdsmiljoe-arbejdsskader/">Arbejdsmilj&#248; &amp; arbejdsskader</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/arbejdsomraader/beskaeftigelsesindsats/">Besk&#230;ftigelsesindsats</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/arbejdsomraader/kommissioner-ekspertudvalg/">Kommissioner &amp; ekspertudvalg</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/arbejdsomraader/politiske-aftaler-reformer/">Politiske aftaler &amp; reformer</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/arbejdsomraader/analyser-publikationer/">Analyser &amp; publikationer</a>
+                            </div>
+                        </li>
+            </ul>
+        </li>
+
+
+
+
+            <li><a href="/lovgivning/">Lovgivning</a></li>
+
+
+
+
+            <li><a href="/satser/">Satser</a></li>
+
+
+
+
+            <li><a href="/nyheder-presse/">Nyheder &amp; Presse</a></li>
+
+                                    <li id="searchToggleLink">
+                            <a href="#" class="search-field-direct-toggle"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>S&#248;g</a>
+                    </li>
+            </ul>
+        </nav>
+        <!--
+            Mega-menu structure
+            Must be placed before end of HEADER tag.
+            The ID must be unique.
+        -->
+
+    </section>
+</header>
+
+
+
+    <section class="page-top-controls">
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+
+                        <li><a href="/">Besk&#230;ftigelsesministeriet</a></li>
+                        <li><a href="/nyheder-presse/">Nyheder &amp; Presse</a></li>
+                        <li><a href="" aria-current="page">Pressemeddelelser</a></li>
+                        <li>225-timers-krav p&#229; pause indtil september p&#229; grund af corona-udbruddet</li>
+        </ol>
+    </nav>
+
+
+<div class="social-media-sharing">
+    <ul>
+            <li>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.star.dk" class="social-media-sharing__link social-media-sharing--linkedin">
+                    <span class="sr-only">Del p&#229; LinkedIn</span>
+                </a>
+            </li>
+                            <li>
+                <a href="https://twitter.com/intent/tweet" class="social-media-sharing__link social-media-sharing--twitter">
+                    <span class="sr-only">Del p&#229; Twitter</span>
+                </a>
+            </li>
+    </ul>
+</div>
+
+
+
+    </section>
+
+    <section class="page-content">
+
+    </section>
+
+    
+
+
+<main class="page-content container">
+    
+
+
+
+
+    
+
+
+    <div class="umb-grid">
+                <div class="grid-section">
+    <div >
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+                <div >
+                            
+    
+        
+               
+
+<a href="" class="wcag-skip-block wcag-visually-removed" data-skip-block-config='{"skipToNextColumn":"true"}'>Spring over venstremenu</a>              
+
+<button type="button" class="left-menu__mobile-open btn btn-default btn-xs" data-toggle="modal" data-target="#left-menu-modal">
+    Mere <span class="glyphicon glyphicon-plus-sign"></span>
+</button>
+
+<!-- Modal -->
+
+<!-- left menu -->
+<nav class="left-menu" role="navigation">
+        <ul>
+    <li>
+            <a href="/nyheder-presse/presseinformation/" >Presseinformation</a>
+
+    </li>
+    <li>
+            <a href="/nyheder-presse/abonn&#233;r-paa-pressemeddelelser/" >Abonn&#233;r p&#229; pressemeddelelser</a>
+
+    </li>
+        </ul>
+</nav>
+
+
+
+        
+
+
+
+                </div>
+            </div>            <div class="col-md-8 column">
+                <div >
+                            
+    
+        
+               
+
+<article class="dato-module">
+        <div>
+            <p class="date-manual">PRESSEMEDDELELSE /  19-06-2020</p>
+        </div>
+</article>
+
+        
+
+
+
+                            
+    
+    
+        <h1 class="article-header">225-timers-krav på pause indtil september på grund af corona-udbruddet</h1>
+    
+
+
+                            
+    
+    
+        <p class="article-lead">Regeringen og et bredt flertal i Folketinget bestående af Venstre, Det Radikale Venstre, SF, Enhedslisten og Alternativet er enige om at forlænge suspenderingen af 225-timersreglen for kontanthjælpsmodtagere til og med 8. september 2020.</p>
+    
+
+
+                            
+    
+        
+               
+
+
+
+<div class="article-rte">
+    <p>Reglen om, at man skal arbejde 225 timer om året som kontanthjælpsmodtager for at få ret til den fulde ydelse blev sat på standby i april i lyset af corona-krisen.</p>
+<p>Beskæftigelsesminister Peter Hummelgaard siger:</p>
+<p>- Mange har mistet jobbet på grund af coronaen, og det har i en længere periode været sværere at få job. Derfor satte vi kravet om at arbejde ved siden af kontanthjælpen på pause i foråret. Den periode forlænger vi nu på linje med dagpenge, hvor man frem til efteråret ikke bruger af retten til dagpenge.</p>
+<p>- Det ændrer ikke på, at vi har coronaen så meget under kontrol, at store dele af samfundet er åbnet. Det betyder også, at vi skal have gang i økonomien og i beskæftigelsesindsatsen igen. Vi er godt i gang med at udfase hjælpepakkerne og sætte gang i økonomien, ikke mindst med den sommerpakke, Folketinget for nylig har vedtaget. Det skal være med til at sikre, at der kommer mere gang i hjulene og bliver behov for flere medarbejdere.</p>
+ 
+</div>
+
+
+        
+
+
+
+                            
+    
+        
+               
+
+
+
+<div class="row">
+    <div class="col-sm-12">
+
+                    <a class="article-link" href="https://www.ft.dk/samling/20191/lovforslag/l202/index.htm">
+                        <span class="article-link-icon glyphicon glyphicon-chevron-right"></span>
+                        <span class="article-link-text">L&#230;s lovforslaget, der udm&#248;nter aftalen</span>
+                    </a>
+
+    </div>
+</div>
+
+
+        
+
+
+
+                </div>
+            </div>        </div>
+    </div>
+    <div >
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div >
+                            
+    
+        
+               
+
+
+
+<article class="bm-module contact-module container-fluid" >
+    <div class="contact-module__content col-sm-6 col-sm-offset-4">
+        <header>
+        </header>
+        
+        <!-- contact-module__contact-container -->
+        <div class="contact-module__contact-container">
+            <!-- contact-module__contact-info -->
+            <div class="contact-module__contact-info">
+
+
+
+
+    <img src="/media/2631/krone_rgb.png?anchor=center&amp;mode=crop&amp;width=150&amp;height=200&amp;rnd=131678503140000000" class=&#39;contact-module__image&#39; alt="" />
+
+                <div class="contact-module__contact-information">
+                    <p class="contact-module__contact-name">Kontakt</p>
+                    <p class="contact-module__contact-title">Pressevagt</p>
+                    <p class="contact-module__contact-phone">51232830</p>
+                    <p class="contact-module__contact-email"><a href="mailto:"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>
+
+        
+
+
+
+                </div>
+            </div>        </div>
+    </div>
+                </div>
+    </div>
+
+
+
+
+</main>
+
+
+<!-- Footer start -->
+
+<footer class="container">
+            <!-- Mainsite footer -->
+            <nav class="footer-menu footer-menu--mainsite-menu row">
+                <div class="footer-menu__container clearfix">
+                    <!-- column -->
+                    <section class="footer-menu--column col-sm-4">
+    <ul>
+                    <li>
+                            <h2><a href="/ministeriet/kontakt/" target="_parent">Kontakt</a></h2>
+                    </li>
+                    <li>
+                            <a href="/nyheder-presse/presseinformation/" target="_parent">Presseinformation</a>
+                    </li>
+                    <li>
+                            <a href="https://www.linkedin.com/company/164998" target="_parent">F&#248;lg os p&#229; LinkedIn</a>
+                    </li>
+                    <li>
+                            <a href="https://twitter.com/Beskaeft_Min" target="_parent">F&#248;lg os p&#229; Twitter</a>
+                    </li>
+                    <li>
+                            <a href="/ministeriet/karriere-i-ministeriet/ledige-stillinger/" target="_parent">Ledige stillinger</a>
+                    </li>
+                    <li>
+                            <a href="/ministeriet/organisationen/whistleblower/" target="_parent">Whistleblowerordning</a>
+                    </li>
+    </ul>
+                    </section>
+                    <!-- column -->
+                    <section class="footer-menu--column col-sm-4">
+    <ul>
+                    <li>
+                            <h2><a href="/privatlivspolitik/" target="_parent">Privatlivspolitik</a></h2>
+                    </li>
+                    <li>
+                            <a href="/privatlivspolitik/privatlivspolitik-paa-sociale-medier/" target="_parent">Privatlivspolitik p&#229; sociale medier</a>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="https://www.was.digst.dk/bm-dk" target="_parent">Tilg&#230;ngelighedserkl&#230;ring</a></h2>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="/the-ministry-of-employment/" target="_parent">English</a></h2>
+                    </li>
+                    <li>
+                            <a href="/the-ministry-of-employment/privacy-policy/" target="_parent">Privacy policy</a>
+                    </li>
+    </ul>
+                    </section>
+                    <!-- column -->
+                    <section class="footer-menu--column col-sm-4">
+    <ul>
+                    <li>
+                            <h2><a href="/ministeriet/organisationen/" target="_parent">Ministeriets styrelser</a></h2>
+                    </li>
+                    <li>
+                            <a href="https://www.at.dk" target="_parent">Arbejdstilsynet</a>
+                    </li>
+                    <li>
+                            <a href="https://www.star.dk" target="_parent">Styrelsen for Arbejdsmarked og Rekruttering</a>
+                    </li>
+                    <li>
+                            <a href="http://www.arbejdsmiljoforskning.dk" target="_parent">Det Nationale Forskningscenter for Arbejdsmilj&#248;</a>
+                    </li>
+    </ul>
+    <ul>
+                    <li>
+                            <h2><a href="https://www.regeringen.dk" target="_parent">Regeringen.dk</a></h2>
+                    </li>
+    </ul>
+                    </section>
+                </div>
+            </nav>
+
+        <section class="footer__permanent">
+            <address>
+                <span>Beskæftigelsesministeriet</span><span>Holmens Kanal 20</span><span>1060 København K</span><span>Telefon: 72 20 50 00</span><a href='mailto:bm@bm.dk' target='_blank'>Email: bm@bm.dk</a><span>CVR: 10 17 27 48</span>
+                <a href="#" id="print-button">
+                    <span class="wcag-visually-removed">
+                        print side
+                    </span>
+                    <span class="glyphicon glyphicon-print"></span>
+                </a>
+            </address>
+        </section>
+
+</footer>
+
+    <div class="scroll-to-top" id="scroll-to-top" aria-hidden="true">
+        <span class="glyphicon glyphicon-menu-up"></span>
+    </div>
+
+
+
+
+
+
+
+        <script src="/static/scrips/vendor/bootstrap.js" data-cookieconsent="ignore"></script>
+        <script src="/static/scrips/main.js "></script>
+
+
+
+            <script type="text/javascript">
+        (function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_273787.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+            </script>
+
+
+
+
+
+
+    
+
+    <!-- Vue vendor js-file -->
+    <script src="/static/vue/vendor.js" data-cookieconsent="ignore"></script>
+
+</body>
+</html>

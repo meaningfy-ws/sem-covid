@@ -1,0 +1,1053 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk">
+<head>
+<title>Sociálna poisťovňa - Ako požiadať o jednotlivé dávky bez návštevy pobočky počas koronakrízy</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />	
+<!-- <link rel="stylesheet" href="../include/style.css?a" type="text/css" /> -->
+<link rel="stylesheet" href="../include/superTables_compressed.css?c" type="text/css" />
+<link rel="stylesheet" href="../include/style_new.css?30_10_2020_5" type="text/css" />
+<link rel="stylesheet" href="../include/red.css?a" type="text/css" />
+<link rel="stylesheet" href="../include/kalkulacka.css?e" type="text/css" />
+	<!--[if IE 7]>
+<link rel="stylesheet" href="../include/menuie7.css?c" type="text/css" />
+<![endif]-->
+<script src="../include/jquery-1-4-2-min.js" type="text/javascript"></script>
+<script src="../include/jquery-li-croller.js" type="text/javascript"></script>
+<script src="../include/jquery-syntax-min.js" type="text/javascript"></script>
+<script src="../include/jquery-scrollTo-1-4-2-min.js" type="text/javascript"></script>
+<script src="../include/superTables_compressed.js" type="text/javascript"></script>
+<script src="../include/script.js?26_01_2021" type="text/javascript"></script>
+<script src="../include/kalkulacka.js" type="text/javascript"></script><link rel="stylesheet" href="../include/print.css" type="text/css" media="print" />
+<!-- <link rel="stylesheet" href="../include/search.css" type="text/css" /> -->
+<link rel="alternate" type="application/rss+xml" title="Socialna Poistovna - Aktuality" href="/rss/aktuality.rss" />
+
+				
+	<script src="../include/jquery-3-3-1-min.js"></script>
+	<script>
+		var $jQuery331 = jQuery.noConflict();
+//		console.log("Version: "+$jQuery331.fn.jquery);
+//		console.log("Version: "+$.fn.jquery);
+	</script>
+
+	
+	
+
+	<!--  korona kriza - cestne prehlasenie odvadzatelia poistneho -->
+	<!-- test -->
+		<!-- prod -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!------------------------------------ --->
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		fixSize();
+		
+		if(document.location.href.indexOf("#")!=-1) {
+			var url = document.location;				
+			var link;
+			link = url.href.split("#");			
+			
+			if($('#'+link[1])[0]) {
+				$("#"+link[1]).focus();
+				$('.right').scrollTo('#'+link[1],200,{offset:-40});
+				
+			}
+		}
+		var winHeightAktual = $(window).height();	
+		var footerHeight = $("#footer").height();
+		
+		//alert(winHeightAktual);
+		//alert(headerHeight);
+		//alert(footerHeight);
+		$(window).resize(function() {
+			winHeight = $(window).height();			
+			$("#content").css("height",(winHeight-155-50)+"px");
+			$("#left").css("height",(winHeight-155-50)+"px");	
+		});
+		if($('#jou2').length>0) {
+			$('#left').scrollTo('#jou2',200,{offset:-40});		
+		} else {
+			if($('#jou').length>0) {
+				$('#left').scrollTo('#jou',200,{offset:-40});
+			}
+		}
+		
+	});
+		$(window).resize(fixSize);
+	
+	function goToByScroll(id){
+	      $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+	}
+		
+	function fixSize() {
+		var filter_height = najcastejsie_height = back_holder_height = category_pager_top_height = heading_box_height = 0;
+		if ($('#grey-box').length > 0) {
+			filter_height = $('#grey-box').outerHeight(true);
+		}
+		
+		if ($('#najcastejsie').length > 0) {
+			najcastejsie_height = $('#najcastejsie').outerHeight(true);
+		}
+		
+		if ($('#back_holder').length > 0) {
+			back_holder_height = $('#back_holder').outerHeight(true);
+		}
+		if ($('#category_pager_top').length > 0) {
+			category_pager_top_height = $('#category_pager_top').outerHeight(true);
+		}
+		
+		if ($('.heading-box').length > 0) {
+			heading_box_height = $('.heading-box').outerHeight(true);
+		}
+				
+		 
+		var constant = 177+filter_height+back_holder_height+najcastejsie_height + category_pager_top_height + heading_box_height; <!-- 218 203-->	<!-- 211	 -->
+		
+		var constant2 = 245+filter_height+back_holder_height+najcastejsie_height + category_pager_top_height + heading_box_height; <!-- 218 -->
+		<!-- 279 -->
+		var constant3 = 210;
+		var dh = $(document).height();
+		var ch = $(window).height();
+		var th = $('#content').height();
+		
+		if (dh - th > constant) {
+			//alert($('#header').outerHeight(true));
+			$('#content').height(ch - 214);			
+			$('.td-left').css("height","auto"); // aby  v explorer 8 roztiahol td						
+			$('#right').css("height",(ch - constant2)+"px");
+			$('#left').height(ch-constant3);
+		} else if(dh - ch >0) {
+			$('#right').height(ch - constant2);
+			//alert($('#right').height());
+			//$('#left').height(ch - constant);
+			$('#left').height(ch-constant3);
+		} else {
+			$('#right').height(ch - constant2);
+		}
+	}
+
+	function getDocHeight() {
+		var D = document;
+		return Math.max(
+			Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+			Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+			Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+		);
+	}	
+	
+</script>
+<script type="text/javascript">
+	
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35827925-1']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();	
+ 
+</script>
+</head>
+<body>
+
+	<div class="no-css"><a title="Prepnúť na textovú verziu [Klávesová skratka: Alt + t]" onclick="return tv('blind');" href="?set_subframe=blind">Textová verzia</a></div>
+	<div class="wrapper">
+<!--noindex-->
+<!--/noindex-->
+<!-- HTML HEAD END--><!--TOP SLICE BEGINN-->
+  <div class="header" id="header">
+            <!-- HLAVICKA //-->
+            
+		<!--noindex-->
+										<div class="logo"><a class="0" href="/"><img border="0" alt="" src="https://img.socpoist.sk/__design2011/empty.gif" width="276" height="34" /></a> </div>
+													<div class="vyhladavenie"><a style="FLOAT: right" href="/?lang=de"><img style="MARGIN: 0px 1px 0px 2px" border="0" alt="Deutsch" src="https://img.socpoist.sk/__design2011/nemecka-vlajka-s.gif" /></a><a style="FLOAT: right" href="/?lang=en"><img border="0" hspace="2" alt="English" src="https://img.socpoist.sk/__design2011/anglicka-vlajka-s.gif" /></a><!-- <a style="FLOAT: right" href="/?lang=sk"><img border="0" hspace="2" alt="Slovensky" src="https://img.socpoist.sk/__design2011/slovenska-vlajka-s.gif" / / / /></a> --> 
+<div class="clear"></div>
+<form id="search" method="post" action="/vyhladavanie"><input class="vyhladavanie-submit" alt="Vyhľadať" value="Vyhľadať" type="submit" /> <input class="vyhladavanie-input" name="stext" alt="Hľadaný výraz" /> 
+<div class="clear"></div></form></div>
+<div class="clear"></div>
+													<div class="menu-new">
+	<h2 class="no-css">Rýchla navigácia</h2>
+	<div class="menu1-new">
+					<ul class="menu-new-ul" >
+											<li class="menu-item" >
+						<a href="/home-fzh/5s">Home</a>
+													</li>
+											<li class="menu-item" >
+						<a href="/kontakty/48000s">Kontakty</a>
+													</li>
+											<li class="menu-item" >
+						<a href="/o-socialnej-poistovni-yuz/49233s">O Sociálnej poisťovni</a>
+													</li>
+											<li class="menu-item" >
+						<a href="/2150-menu/55451s">Poradňa</a>
+													</li>
+											<li class="menu-item" >
+						<a href="/zoznam-dlznikov-emw/487s">Zoznam dlžníkov</a>
+													</li>
+											<li class="menu-item" >
+						<a href="/2149-menu/55449s">Formuláre</a>
+													</li>
+										<li class="menu-item" >
+													<a title="Mapa stránok do nového okna [Klávesová skratka: Alt + s]" accesskey="s" href="javascript:otvor%28%27%2Findex%2Fsitemap.php%27%2C+300%2C+500%29%3B;">Mapa stránok</a> 
+											</li>		
+					<li class="menu-item" >
+						<div class="blind-friendly-href">							
+							<a title="Prepnúť na textovú verziu [Klávesová skratka: Alt + t]" accesskey="t" onclick="return tv('blind');" href="?set_subframe=blind">Textová verzia</a>													
+						</div>
+					</li>
+					<li class="menu-item" >
+						<a href="/rss/">RSS</a>
+					</li>				
+			</ul>
+			</div>
+
+	
+	<div class="menu2-new" >
+		<ul class="menu-new-ul" >
+							
+									<li class="menu-item  " ><a href="/dochodkove-poistenie-qcg/48006s">Dôchodkové poistenie</a></li>
+											
+									<li class="menu-item active  " ><a href="/nemocenske-poistenie-khe/48005s">Nemocenské poistenie</a></li>
+											
+									<li class="menu-item  " ><a href="/poistenie-v-nezamestnanosti-jzy/48007s">Poistenie v nezamestnanosti</a></li>
+											
+									<li class="menu-item  " ><a href="/garancne-poistenie-qep/48008s">Garančné poistenie</a></li>
+											
+									<li class="menu-item  " ><a href="/urazove-poistenie-dug/48009s">Úrazové poistenie</a></li>
+											
+									<li class="menu-item  last" ><a href="/poistne-vun/48012s">Poistné</a></li>
+									</ul>
+		<!-- <ul>			<li><img alt=""  src="../photos/__design2011/link-socpoistenie.gif" border="0" /></li>
+										<li><a href="/dochodkove-poistenie-qcg/48006s"><img src="../photos/__design2011/link-dochodkove-poistenie.gif" border="0" alt="Dôchodkové poistenie" /></a></li>
+												<li><a href="/nemocenske-poistenie-khe/48005s"><img src="../photos/__design2011/link-nemocenske-poistenie-active.gif" border="0" alt="Nemocenské poistenie" /></a></li>
+												<li><a href="/poistenie-v-nezamestnanosti-jzy/48007s"><img src="../photos/__design2011/link-poistenie-v-nezamestnanosti.gif" border="0" alt="Poistenie v nezamestnanosti" /></a></li>
+												<li><a href="/garancne-poistenie-qep/48008s"><img src="../photos/__design2011/link-garancne-poistenie.gif" border="0" alt="Garančné poistenie" /></a></li>
+												<li><a href="/urazove-poistenie-dug/48009s"><img src="../photos/__design2011/link-urazove-poistenie.gif" border="0" alt="Úrazové poistenie" /></a></li>
+												<li><a href="/poistne-vun/48012s"><img src="../photos/__design2011/link-poistne2-active.gif" border="0" alt="Poistné" /></a></li>
+										</ul> -->
+		<div class="clear"></div>
+	</div>	
+														<div class="menu3-new" >
+		<!--<ul> 				<li><img alt=""  src="../photos/__design2011/link-klienti-a-poistenie2.gif" border="0" /></li>
+			 -->
+			<ul class="menu-new-ul" >
+												<li class="menu-item  " ><a href="/dochodca/55164s">Dôchodca</a></li>
+																<li class="menu-item  " ><a href="/zamestnanec---zamestnavatel/55163s">Zamestnanec - Zamestnávateľ</a></li>
+																<li class="menu-item  " ><a href="/szco-vjr/55165s">SZČO</a></li>
+																<li class="menu-item  " ><a href="/matka---opatrovatel---asistent/55166s">Matka - Opatrovateľ - Asistent</a></li>
+																<li class="menu-item  " ><a href="/student/55167s">Študent</a></li>
+																<li class="menu-item last " ><a href="/dobrovolne-poisteny/55168s">Dobrovoľne poistený</a></li>
+										</ul>
+			<!-- 				<li><a href="/dochodca/55164s"><img src="../photos/" border="0" alt="Dôchodca" /></a></li>
+												<li><a href="/zamestnanec---zamestnavatel/55163s"><img src="../photos/" border="0" alt="Zamestnanec - Zamestnávateľ" /></a></li>
+												<li><a href="/szco-vjr/55165s"><img src="../photos/" border="0" alt="SZČO" /></a></li>
+												<li><a href="/matka---opatrovatel---asistent/55166s"><img src="../photos/" border="0" alt="Matka - Opatrovateľ - Asistent" /></a></li>
+												<li><a href="/student/55167s"><img src="../photos/" border="0" alt="Študent" /></a></li>
+												<li><a href="/dobrovolne-poisteny/55168s"><img src="../photos/" border="0" alt="Dobrovoľne poistený" /></a></li>
+								 
+		</ul>-->
+		<div class="clear"></div>			
+	</div>
+	<div class="menu-shadow" >&nbsp;</div>
+		<div class="clear"></div>			
+</div>
+<!-- <div class="clear"></div>	 -->											<!-- </td> -->
+		<!--/noindex-->
+    </div>
+<!--TOP SLICE END--> <!--      <tr> -->
+        <!-- Quick menu //-->
+      <!--   <td colspan="3" id="quickMenu"> -->
+	<!--noindex-->
+		<div id="quickMenuHolder">
+				</div>
+	<!--/noindex-->
+	<!-- 	</td>
+      </tr> --><!--LEFT MENU BEGINN-->	
+		<div id="content" class="content">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height:100%" >
+					<tr>
+						<td valign="top" class="td-left"> 
+							<div class="left" id="left" >
+							<!--noindex-->
+																															  
+	<div class="menu-level-2" >
+		<ul class="uroven-1">
+		    				<li><a class="active-parent" href="/koronakriza/68432s">KORONAKRÍZA</a>
+									<ul class="uroven-2" >
+													<li class="active2"><a id="jou" class="active" href="/ako-poziadat-o-jednotlive-davky-bez-navstevy-pobocky-pocas-koronakrizy/68337s">Ako požiadať o jednotlivé dávky bez návštevy pobočky počas koronakrízy</a>
+																	<ul class="uroven-3" >
+																																	<li><a href="/ako-poziadat-o-pandemicke-osetrovne/68337s#1">Ako požiadať o pandemické ošetrovné</a></li>
+																																												<li><a href="/ako-zasielat-zoznamy-deti-a-fyzickych-osob-a-zoznamy-dochadzky/68337s#1b">Ako zasielať zoznamy detí a fyzických osôb a zoznamy dochádzky</a></li>
+																																												<li><a href="/rodicia--kedy-mate-narok-na-ocr/68337s#1a">Rodičia: Kedy máte nárok na OČR</a></li>
+																																												<li><a href="/kto-ma-narok-na-pandemicke-nemocenske/68337s#1c">Kto má nárok na pandemické nemocenské</a></li>
+																																												<li><a href="/ako-poziadat-o-pandemicke-nemocenske/68337s#2">Ako požiadať o pandemické nemocenské</a></li>
+																																												<li><a href="/ako-poziadat-o-dochodok-v-pobocke-pri-oranzovom-a-cervenom-rezime/68337s#3">Ako požiadať o dôchodok v pobočke pri oranžovom a červenom režime</a></li>
+																																												<li><a href="/ako-poziadat-o-davku-v-nezamestnanosti/68337s#4">Ako požiadať o dávku v nezamestnanosti</a></li>
+																																												<li><a href="/predlzenie-podporneho-obdobia-do-3182020/68337s#4A">Predĺženie podporného obdobia do 31.8.2020</a></li>
+																																												<li><a href="/ako-poziadat-o-urazovy-priplatok-pre-covid-19/68337s#4C">Ako požiadať o úrazový príplatok pre COVID-19</a></li>
+																																												<li><a href="/ako-poziadat-o-davku-garancneho-poistenia-/68337s#5">Ako požiadať o dávku garančného poistenia </a></li>
+																																												<li><a href="/ako-poziadat-o-potvrdenie-o-vyplatenych-davkach/68337s#6">Ako požiadať o potvrdenie o vyplatených dávkach</a></li>
+																																												<li><a href="/ako-poziadat-o-potvrdenie-o-dochodku/68337s#6b">Ako požiadať o potvrdenie o dôchodku</a></li>
+																																												<li><a href="/ako-poziadat-o-potvrdenie-o-invalidite---o-posudenie-zdravotneho-stavu/68337s#7">Ako požiadať o potvrdenie o invalidite - o posúdenie zdravotného stavu</a></li>
+																																												<li><a href="/ako-zamestnavatel-poziada-o-pristup-k-elektronickym-sluzbam-sp/68337s#8">Ako zamestnávateľ požiada o prístup k elektronickým službám SP</a></li>
+																																												<li><a href="/ako-poziadat-o-uplatnitelnu-legislativu-pd-a1/68337s#9">Ako požiadať o uplatniteľnú legislatívu PD A1</a></li>
+																																												<li><a href="/ako-maju-postupovat-zamestnanci-a-szco--ktori-pocas-koronakrizy-nemohli-vycestovat-do-zahranicia-/68337s#10">Ako majú postupovať zamestnanci a SZČO, ktorí počas koronakrízy nemohli vycestovať do zahraničia?</a></li>
+																																												<li><a href="/kto-a-ako-si-moze-odlozit-zaplatenie-odvodov-za-marec-2020/68337s#10b">Kto a ako si môže odložiť zaplatenie odvodov za marec 2020</a></li>
+																																												<li><a href="/kto-a-ako-moze-poziadat-o-odpustenie-odvodov-za-april-2020/68337s#10a">Kto a ako môže požiadať o odpustenie odvodov za apríl 2020</a></li>
+																																												<li><a href="/kto-a-ako-si-moze-odlozit-zaplatenie-odvodov-za-maj-2020/68337s#10c">Kto a ako si môže odložiť zaplatenie odvodov za máj 2020</a></li>
+																																												<li><a href="/kto-a-ako-si-moze-odlozit-zaplatenie-odvodov-za-jun-2020/68337s#10d">Kto a ako si môže odložiť zaplatenie odvodov za jún 2020</a></li>
+																																												<li><a href="/kto-a-ako-si-moze-odlozit-zaplatenie-odvodov-za-jul-2020/68337s#10e">Kto a ako si môže odložiť zaplatenie odvodov za júl 2020</a></li>
+																																												<li><a href="/kto-a-ako-si-moze-odlozit-zaplatenie-odvodov-za-december-2020/68337s#10f">Kto a ako si môže odložiť zaplatenie odvodov za december 2020</a></li>
+																																												<li><a href="/pandemicke-osetrovne/68337s#11">Pandemické ošetrovné</a></li>
+																																												<li><a href="/pandemicke-nemocenske/68337s#12">Pandemické nemocenské</a></li>
+																														</ul>
+															</li>
+																		</ul>
+								</li>
+											<li><a href="/zakladna-charakteristika/349s">Základná charakteristika</a></li>
+											<li><a href="/nemocenske/1292s">Nemocenské</a></li>
+											<li><a href="/materske/1293s">Materské</a></li>
+											<li><a href="/osetrovne/1294s">Ošetrovné</a></li>
+											<li><a href="/vyrovnavacia-davka/1295s">Vyrovnávacia dávka</a></li>
+											<li><a href="/ako-sa-spravat-pocas-pn/64244s">Ako sa správať počas PN</a></li>
+											<li><a href="/pravidla-uznavania-docasnej-pracovnej-neschopnosti/58432s">Pravidlá uznávania dočasnej pracovnej neschopnosti</a></li>
+											<li><a href="/lekarska-posudkova-cinnost/48017s">Lekárska posudková činnosť</a></li>
+											<li><a href="/formulare/362s">Formuláre</a></li>
+											<li><a href="/statistiky/1612s">Štatistiky</a></li>
+											<li><a href="/31/361s">Poradňa</a></li>
+							        </ul>
+	</div>
+																									<!--/noindex-->
+							</div>
+						</td>
+<!--LEFT MENU END-->	<!-- CONTAINER HEADER BEGINN-->			
+			<!-- OBSAH STRANKY //-->
+            <td valign="top" class="td-right">
+				
+																				<div class="breadcrumb">
+	<strong><a href="/">Úvod</a></strong>
+			&gt; <a href="/nemocenske-poistenie-khe/48005s">Nemocenské poistenie</a>
+					&gt; <a href="/koronakriza/68432s">KORONAKRÍZA</a>
+					&gt; Ako požiadať o jednotlivé dávky bez návštevy pobočky počas koronakrízy
+			</div>																														<div class="heading-box" >
+				                <h1><!-- title -->Ako požiadať o jednotlivé dávky bez návštevy pobočky počas koronakrízy</h1>
+				            </div>																																										
+<!-- CONTAINER HEADER END-->			<!--MAIN CONTAINER BEGINN-->
+					<div class="right" id="right" > <!-- Koniec divu je v content_footer.tpl -->
+				<div class="site-content">
+						<!--   <div class="content-text"> -->
+							  <p>&nbsp;</p>
+<table style="FLOAT: right; TEXT-ALIGN: right" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td><a href="/information-about-coronavirus/68406s">English</a> </td>
+<td>| </td>
+<td><a href="/infos-zum-coronavirus/68405s">Deutsch</a> </td></tr></tbody></table><!-- ContentBlock --><a id="1" name="1"></a>
+<h3>Ako požiadať o pandemické ošetrovné a jeho výplatu</h3>
+<p>(skrátený návod)</p>
+<p>&nbsp;</p>
+<ol>
+<li>
+<p>Poistenec musí prejaviť záujem o <b>priznanie</b> ošetrovného vyplnením<br /><b>a,</b> formulára <strong>Žiadosť o ošetrovné (nárok uplatnený počas krízovej situácie) - </strong><u>pozri formuláre nižšie podľa spôsobu odoslania (najrýchlejšie a najefektívnejšie je použiť elektronický formulár </u><a href="https://ocr.vicepremier.sk/portal"><b><u>TU</u></b></a>)Tento formulár slúži na účely uplatnenia nároku na pandemické ošetrovné a <b>poistenec ho podáva iba raz počas celej krízovej situácie </b>alebo<br /><b>b,</b> prostredníctvom vyhlásenia na origináli <b>Žiadosti o ošetrovné potvrdenej ošetrujúcim lekárom</b> (lekár potvrdzuje žiadosť v prípade ochorenia dieťaťa).</p>
+<li>
+<p>Na to, aby bolo poistencovi ošetrovné aj <b>vyplatené</b>, na konci každého kalendárneho mesiaca, v ktorom poistenec osobne a celodenne ošetroval alebo sa osobne a celodenne staral o dieťa, resp. inú zákonom stanovenú osobu, musí zaslať pobočke vyplnené <b>Čestné vyhlásenie k žiadosti o ošetrovné (</b><u>najrýchlejšie a najefektívnejšie je použiť elektronický formulár </u><a href="https://ocr.vicepremier.sk/portal/vyhlasenie"><b><u>TU</u></b></a>) Poistenec v ňom oznamuje skutočnosti potrebné pre posúdenie nároku na výplatu ošetrovného za príslušný mesiac, prípadne za viac mesiacov spolu. Sociálna poisťovňa potrebuje poznať presné dni, kedy sa ktorý rodič o dieťa staral, či bolo dieťa zapísané v detských jasliach, materskej škole alebo či je žiakom školy a či dieťa detské jasle, materskú školu alebo školu aj navštevovalo a pod.</p>
+<li>
+<p><strong>Žiadosť o ošetrovné (nárok uplatnený počas krízovej situácie) a čestné vyhlásenie k žiadosti o ošetrovné môže poistenec podať a odoslať Sociálnej poisťovni (SP) nasledovnými spôsobmi:<br /></strong></p>
+<ol type="square">
+<li>
+<p><b>Elektronicky, zaslaním elektronického formulára</b> (formulár pre rôzne prípady pozri nižšie, vlastnoručný podpis poistenca sa nevyžaduje)<br />V prípade, ak <b>má poistenec aktivovanú</b> elektronickú schránku na Ústrednom portáli verejnej správy (<b>Slovensko.sk</b>), pre vyplnenie a odoslanie Žiadosti o ošetrovné (nárok uplatnený počas krízovej situácie) kliknite <a href="https://eformulare.socpoist.sk/sluzby/ziadost-o-pandemicke-ocr"><b><u>TU</u></b></a>, pre vyplnenie a odoslanie čestného vyhlásenia k žiadosti o ošetrovné kliknite <a href="https://eformulare.socpoist.sk/sluzby/ziadost-o-pandemicke-ocr"><b><u>TU</u></b></a> a vyberte možnosť „Prihlásenie s eID“. Žiadosť a čestné vyhlásenie budú automaticky po odoslaní doručené do elektronickej schránky Sociálnej poisťovne<br />V prípade, ak poistenec nemá aktivovanú elektronickú schránku na Slovensko.sk ale <b>má mobilný telefón, na ktorý mu môže byť zaslaná sms notifikácia, </b>pre vyplnenie a odoslanie žiadosti o ošetrovné (nárok uplatnený počas krízovej situácie) kliknite <a href="https://ocr.vicepremier.sk/portal"><b><u>TU</u></b></a>, pre vyplnenie a odoslanie čestného vyhlásenia k žiadosti o ošetrovné kliknite <a href="https://ocr.vicepremier.sk/portal/vyhlasenie"><b><u>TU</u></b></a> a vyberte možnosť „Prihlásenie bez eID“. Žiadosť a čestné vyhlásenie budú automaticky po odoslaní doručené do elektronickej podateľne Sociálnej poisťovne<br />Oba spôsoby zaslania elektronického webového formulára sú dostupné aj cez portál elektronických služieb SP <a href="https://eformulare.socpoist.sk/sluzby/ziadost-o-pandemicke-ocr"><b><u>TU</u></b></a><u>.</u></p>
+<li>
+<p>Sociálna poisťovňa (SP) vyzýva poistencov, aby pri žiadosti o pandemické ošetrovné využívali predovšetkým <b>elektronickú formu komunikácie</b>. Táto cesta urýchli spracovanie ich žiadosti v Sociálnej poisťovni, čo je dôležité najmä v čase pandémie, keď sú zamestnanci SP maximálne vyťažení a poistenci očakávajú vyplatenie dávky čo najskôr.</p>
+<li>
+<p>Iné možnosti predloženia dokladov k ošetrovnému:</p>
+<ol type="circle">
+<li>&nbsp;<b>E-mailom, zaslaním žiadosti/čestného vyhlásenia v prílohe </b>(vlastnoručný podpis poistenca sa nevyžaduje)<br />V prípade, ak nemá<b> </b>poistenec aktivovanú elektronickú schránku na Slovensko.sk, alebo <b>nemá mobilné číslo</b>, teda nevie využiť zaslanie cez elektronický formulár, žiadosť a čestné vyhlásenie môže odoslať <b>e-mailom</b> (bez vlastnoručného podpisu) na <a href="/e-mailove-adresy-pobociek-socialnej-poistovne/68395s"><b><u>E-mailovú adresu pobočky SP</u></b></a>, pričom pre vyplnenie Žiadosti o ošetrovné (nárok uplatnený počas krízovej situácie) kliknite <a href="/ext_dok-22052020-np-ziadost-koronavirus/68665c"><b><u>TU</u></b></a> a pre vyplnenie čestného vyhlásenia k žiadosti o ošetrovné kliknite <a href="/ext_dok-22052020-np-cv-koronavirus/68666c"><b><u>TU</u></b></a>. Vyplnené tlačivo ako prílohu mailu postačuje zaslať v textovom formáte 
+</li>
+<li><b>Poštou alebo vhodením do schránky</b> <b>pobočky</b> (originálna Žiadosť o ošetrovné musí byť potvrdená lekárom) <br />Zaslané doklady musia byť vlastnoručne podpísané poistencom bez ohľadu na to, či sa nárok uplatňuje prostredníctvom originálu Žiadosti o ošetrovné potvrdenej lekárom alebo Žiadosti o ošetrovné (nárok uplatnený počas krízovej situácie)<b>.<br />Kontakty</b> <b>na pobočky </b>nájdete tu: <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a><br />&nbsp; </li></ol></li></ol>
+</li>
+<li>
+<p>Žiadosť o ošetrovné a čestné vyhlásenie k žiadosti o ošetrovné je potrebné zaslať na adresu <a href="/kontakty--xly/48023s"><b>miestne príslušnej pobočky </b></a>(zamestnanec podľa sídla zamestnávateľa; SZČO alebo dobrovoľne poistená osoba podľa miesta trvalého bydliska).</p>
+<li>
+<p>Tú istú žiadosť o ošetrovné (nárok uplatnený počas krízovej situácie) a čestné vyhlásenie k žiadosti o ošetrovné za to isté obdobie <b>neposielajte opakovane alebo viacerými spôsobmi. Neoverujte si prijatie podania</b>, o jeho doručení je poistenec informovaný elektronicky v závislosti od zvoleného spôsobu odoslania podania.</p>
+<li>
+<p>Zamestnanec o tom, že bude ošetrovať člena rodiny, musí <b>informovať svojho zamestnávateľa</b> spôsobom určeným zamestnávateľom.</p>
+<li>
+<p>Na základe doručenej prvej žiadosti o pandemické ošetrovné <b>začne Sociálna poisťovňa konanie o nároku na ošetrovné</b>. Rozhodnutie vydá v lehote 60 dní od doručenia žiadosti. Po vydaní rozhodnutia je ošetrovné vyplatené mesačne pozadu v lehotách určených pobočkou.</p></li></ol>
+<p>Upozornenie: Čestné vyhlásenie je možné poslať aj za dva, tri mesiace naraz, dávka však môže byť vyplatená až po doručení tohto vyhlásenia.</p>
+<p>Ak chcete dávku za príslušný mesiac, treba vypĺňať a posielať tlačivo do Sociálnej poisťovne priebežne po mesiacoch.</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<!-- ContentBlock --><a id="1b" name="1b"></a>
+<h3>Ako zasielať zoznamy detí a fyzických osôb a zoznamy dochádzky</h3>
+<p>Novela zákona o sociálnom poistení od 23. septembra 2020 priniesla zmenu pri zasielaní zoznamov škôlkarov a školákov. Príslušný okresný úrad bude po novom poskytovať Sociálnej poisťovni informácie len o tých deťoch, ktoré sa nezúčastňujú na výchovno-vzdelávacom procese (podľa predošlej legislatívy to bolo naopak – úrady nahlasovali Sociálnej poisťovni zoznamy detí, ktoré do školy/škôlky chodili). Prvé zoznamy „neúčasti“ zašlú školy okresným úradom v sídle kraja <strong>do 3. októbra 2020</strong> za mesiac september 2020. <b><a href="/ext_dok-23092020-kor-skolky-skoly---zoznam-nepritomnych/68940c">Vzor zoznamov neprítomných pre školy a škôlky TU</b></a>.</p>
+<p><b>Zoznamy </b><b>detí, ktoré sa nezúčastnili na výchovno-vzdelávacom procese musí mať Sociálna poisťovňa v prípade materských škôl a škôl od okresných úradov za každý mesiac k dispozícii do 10. dňa nasledujúceho mesiaca. </b></p>
+<p><b>Detské jasle a ostatné zariadenia sociálnych služieb</b>, v ktorých sa poskytuje klientom sociálna služba ambulantnou alebo pobytovou formou, <b>sú naďalej povinné zasielať zoznamy klientov a zmeny v týchto zoznamoch <a href="/ext_dok-23092020-kor-zariadenie-soc-sluzieb---klienti/68941c">(vzor zoznamu klientov TU)&nbsp;</a></b> <b>spolu so zoznamami </b><b>prítomných klientov <a href="/ext_dok-23092020-kor-zariadenie-soc-sluzieb---zoznam-pritomnych/68942c">(vzor zoznamu prítomných TU)&nbsp;</a></b><b>a </b><b>doručiť ich do e-schránky Sociálnej poisťovne v termíne </b><b>do 10. dňa nasledujúceho mesiaca</b>. Z uvedeného vyplýva, že pre detské jasle a zariadenia sociálnych služieb sa povinnosti nemenia.</p>
+<p>Načas doručené zoznamy so správnymi údajmi sú potrebné na to, aby Sociálna poisťovňa mohla následne skontrolovať nárok na vyplatenú pandemickú dávku ošetrovné poberateľovi tejto dávky.</p>
+<p>Zariadenia sú povinné požadované údaje zasielať spôsobom a formou určenou Sociálnou poisťovňou.</p>
+<ol type="1">
+<li><b>Materské školy a školy</b> postupujú pri poskytovaní údajov pre Sociálnu poisťovňu v súlade s pokynmi, ktoré boli zverejnené na internetovej stránke Ministerstva školstva, vedy, výskumu a športu SR <a href="https://www.minedu.sk/data/att/17169.pdf"><u>https://www.minedu.sk/data/att/17169.pdf</u></a> ​, t. j. zoznamy neprítomných žiakov poskytujú príslušným Okresným úradom. 
+</li>
+<li><b>Okresné úrady v sídle kraja</b> zašlú Sociálnej poisťovni v termíne <b>do 10. dňa za predchádzajúci vykazovaný mesiac</b> (<b>do skončenia krízovej situácie</b>): 
+<ul type="circle">
+<li>jeden <b>sumarizačný </b>zoznam „neprítomných“ <b>za materské školy</b>, ktorý bude obsahovať údaje za všetky materské školy v ich pôsobnosti a 
+</li>
+<li>jeden <b>sumarizačný</b> zoznam „neprítomných“ <b>za školy</b>, ktorý bude obsahovať údaje za všetky školy v ich pôsobnosti 
+</li>
+<li>zoznamy zašlú vo <a href="/ext_dok-23092020-kor-skolky-skoly---zoznam-nepritomnych/68940c"><a href="/ext_dok-23092020-kor-skolky-skoly---zoznam-nepritomnych/68940c"></a><b><a href="/ext_dok-23092020-kor-skolky-skoly---zoznam-nepritomnych/68940c"><b>formáte uvedenom </b><b>TU</b></a></b></a></a> a jednotlivé súbory <b>pomenujú</b> nasledovne: 
+<ul type="square">
+<li>materské školy „neprMS_nazov kraja_RRRRMM“ a 
+</li>
+<li>školy „neprS_nazov kraja__RRRRMM“ názov zoznamu je bez diakritiky a „RRRRMM“ je rok a mesiac za ktorý je zaslaný zoznam </li></ul>
+</li>
+<li>zoznamy zašlú ako prílohu vo formáte <b>Excel</b> (nie pdf alebo word, príp. iné) 
+</li>
+<li>zoznamy <b>zašlú </b>výlučne elektronicky zabezpečeným spôsobom, t. j. prostredníctvom ÚPVS s <b>predmetom</b> správy označenom ako „zoznam MŠ a Š RRRR/MM“ kde RRRR/MM je rok/mesiac za ktorý je zaslaný zoznam, prípadne zaheslované dohodnutým spôsobom </li></ul></li></ol>
+<p>3. <b>Zariadenia sociálnych služieb</b> (detské jasle a ostatné zariadenia sociálnych služieb, v ktorých sa poskytuje klientom sociálna služba ambulantnou alebo pobytovou formou) pošlú Sociálnej poisťovni <a href="/ext_dok-23092020-kor-zariadenie-soc-sluzieb---klienti/68941c"><b>zoznamy klientov TU&nbsp;</b></a> <b>a <a href="/ext_dok-23092020-kor-zariadenie-soc-sluzieb---zoznam-pritomnych/68942c">zoznamy prítomných TU&nbsp;</a>v termíne do 10. dňa </b>kalendárneho mesiaca za predchádzajúci mesiac (do skončenia krízovej situácie)<b>:</b></p>
+<p>a. v ktorých bude <b>uvedené</b> meno, priezvisko, rodné číslo alebo dátum narodenia a obdobie návštevy zariadenia vo vykázanom mesiaci</p>
+<ol type="1" start="3">
+<ol type="a">
+<ul type="square">
+<li>ak vo vykázanom mesiaci dieťa/fyzická osoba navštevovala zariadenie celý mesiac v kolónke „Navštevoval zariadenie od“ sa uvedie prvý deň kal. mesiaca a kolónke „Navštevoval zariadenie do“ posledný deň kal. mesiaca 
+</li>
+<li>ak sa vo vykázanom mesiaci prevádzka alebo návšteva prerušila, každé obdobie sa vykáže v samostatnom riadku, t. j. jeden klient bude v zozname opakovane, vždy s rôznym obdobím </li></ul></ol></ol>
+<p>b. v určenom <b>formáte </b>(predpísaná tabuľka vo formáte <b>Excel,&nbsp;</b><b>nie v inom formáte</b>)</p>
+<p>c. <b>príloha</b> pomenovaná nasledovným názvom „dochZSS_MESTO_ulica_RRRRMM“, t. j. napr. „dochZSS_bratislava_konvalinkova_RRRRMM“ (bez diakritiky) kde RRRRMM je rok a mesiac za ktorý je zaslaný zoznam</p>
+<p>d. výlučne <b>elektronicky</b> zabezpečeným spôsobom, t. j. prostredníctvom ÚPVS</p>
+<p>e. s <b>predmetnom správy</b> označenom ako „zoznam dochádzky ZSS RRRR/MM“, kde RRRR/MM je rok/mesiac za ktorý je zaslaný zoznam</p>
+<p><b></b>&nbsp;</p>
+<p><b>V prípade, ak zoznamy nebudú v požadovanom formáte (obsahovo, typom a pod.) budú vrátené odosielateľovi na opravu. Zoznamy je možné iba doplniť o požadované údaje, nie meniť ich štruktúru (napr. doplniť riadky do hlavičky a pod.)!!!</b>&nbsp;</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<!-- ContentBlock --><a id="1a" name="1a"></a>
+<h3>
+<h3>Rodičia<b>: Kedy máte nárok na OČR</b> </h3></h3>
+<p>V prípade detí, ktoré sú školopovinné, t. j. sú žiakmi škôl, rodič už nemôže (od septembra 2020) svojvoľne nechať dieťa doma, ak sa obáva pandémie, keďže by tým porušil školský zákon. (Režim prerušenia vyučovania v triedach škôl, t. j. uzatvorenia týchto častí škôl, upravujú rozhodnutia ministra školstva a zriaďovateľov, prípadne riaditeľov zariadení.) Nárok na pandemické OČR preto majú iba tie oprávnené osoby, ktoré sa <b>starajú</b> o deti do 11 rokov (do 18 rokov pri deťoch s dlhodobo nepriaznivým zdravotným stavom), ktorých škola alebo trieda bola uzatvorená rozhodnutím príslušného orgánu (minister, zriaďovateľ, riaditeľ školy, hygienik). Ak však rodič dieťaťa <b>ošetruje </b>choré dieťa do 16 rokov veku, t. j. dieťa, ktorému sa náhle zhoršil jeho zdravotný stav a ošetrujúci lekár mu preto potvrdil potrebu ošetrovania, naďalej má nárok na pandemické OČR.</p>
+<p>Rovnaká situácia pri <b>starostlivosti</b> je aktuálne aj v prípade detí, ktoré navštevujú materskú školu. Podľa novely zákona o sociálnom poistení (účinnej od 23. 9. 2020) má rodič dieťaťa, ktoré navštevuje materskú školu, nárok na pandemické ošetrovné už iba v prípade, ak materskú školu uzatvorili na základe rozhodnutia príslušného orgánu.</p>
+<p>(Na rozdiel od situácie, ktorá krátko platila po 1. septembri 2020, <b>už nie je možné poberať ošetrovné vtedy, ak sa rodič rozhodne nedať dieťa do materskej školy pre obavy z koronavírusu.</b> Toto ustanovenie možno aplikovať iba na prípady, ak dieťa je žiakom materskej školy, t. j. ak je v materskej škole zapísané.)</p>
+<p>U detí, ktoré ešte nie sú žiakmi materskej školy, a u blízkych príbuzných, ktorým je poskytovaná starostlivosť v zariadeniach sociálnych služieb, zostáva situácia nezmenená, t. j nárok na pandemické ošetrovné majú oprávnené osoby naďalej aj v prípade, ak sa rozhodnú nedať dieťa alebo blízkeho príbuzného do zariadenia z obavy pred koronavírusom.</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<!-- ContentBlock --><a id="1c" name="1c"></a>
+<h3>Kto má nárok na pandemické nemocenské</h3>
+<p>Nárok na pandemické nemocenské má poistenec, ktorý je počas krízovej situácie uznaný dočasne práceneschopným z dôvodu nariadeného karanténneho opatrenia alebo izolácie. Keďže krízová, resp. mimoriadna situácia sa neskončila a naďalej trvá, platia podobné pravidlá, ako v uplynulých mesiacoch pandémie.</p><b>
+<p><b>Nárok na pandemicke nemocenské má po splnení zákonom stanovených podmienok každý nemocensky poistený poistenec, čiže zamestnanec, SZČO alebo dobrovoľne poistená osoba, ktorému ošetrujúci lekár potvrdil dočasnú pracovnú neschopnosť z dôvodu karantény alebo izolácie.</b></b></p>
+<p>Ak sa poistenec vracia z rizikových krajín (aktuálny zoznam pozri na <a href="http://www.korona.gov.sk/">www.korona.gov.sk</a>), je povinný absolvovať 10-dňovú domácu izoláciu (<a href="https://korona.gov.sk/povinna-domaca-karantena/">www. korona.gov.sk/povinna-domaca-karantena</a>).&nbsp;</p>
+<p>&nbsp;</p><!-- ContentBlock -->
+<hr align="left" size="1" width="100%" noShade />
+<a id="2" name="2"></a>
+<h3>&nbsp;Ako požiadať o&nbsp;pandemické nemocenské&nbsp;</h3>
+<p>Aby poistenec v karanténe získal dávku od Sociálnej poisťovne, musí postupovať nasledovne: V prípade, ak bol poistenec pozitívne testovaný alebo javí príznaky ochorenia Covid-19, bol v kontakte s nakazenou osobou alebo sa vrátil z rizikovej krajiny, zostáva v karanténe a chce požiadať o dávku zo Sociálnej poisťovne, postupuje nasledovne:</p>
+<ol type="1">
+<li>
+<p><b>Poistenec kontaktuje ošetrujúceho lekára (telefonicky alebo mailom</b>), ktorý mu vystaví potvrdenie o dočasnej PN z dôvodu karanténneho opatrenia alebo izolácie bez fyzického vyšetrenia, tzn. „na diaľku“. Lekár zašle potvrdenie Sociálnej poisťovni (rovnaký postup uplatňujú aj SZČO a dobrovoľne poistené osoby).</p>
+<li>
+<p><b>Poistenec vyplní a odošle elektronický formulár</b>, ktorým si uplatní nárok na výplatu pandemického nemocenského, zverejnený tu:</p>
+<ul>
+<li>
+<p>Ak poistenec <b>využíva</b> <b>občiansky preukaz s aktivovaným čipom</b>, vyplní a odošle elektronický formulár zverejnený na portáli <a href="http://www.slovensko.sk/"><u>www.slovensko.sk</u></a> (Žiadosť o pandemické nemocenské – nárok uplatnený počas krízovej situácie).</p>
+<li>
+<p>Ak poistenec<b> nemá občiansky preukaz s aktivovaným čipom</b>, vyplní a odošle elektronický formulár zverejnený v e-Službách Sociálnej poisťovne tu: <a href="https://eformulare.socpoist.sk/sluzby/ziadost-o-nemocenske-bezeid" target="_blank"><b><u>ŽIADOSŤ O PANDEMICKÉ NEMOCENSKÉ (PN)</u></b></a>. <br /><br />(Pre nevyhnutné prípady zostáva v platnosti aj pdf formulár zverejnený tu: <a href="/ext_dok-30102020-np-pandemicka-ziadost-epn/69050c"><u>Žiadosť o pandemické nemocenské – nárok uplatnený počas krízovej situácie</u></a>. Upozorňujeme, že pdf formulár si treba najprv uložiť do svojho PC, vyplniť, po vyplnení uložiť, skontrolovať uložené údaje a následne zaslať ako prílohu e-mailu – prostredníctvom tzv. „korona“ e-mailovej schránky miestne príslušnej pobočky: <a href="/e-mailove-adresy-pobociek-socialnej-poistovne/68395s">E-mailové adresy pobočiek</a>).<br />&nbsp;</p></li></ul>
+<li>
+<p>Zamestnanec by mal bezodkladne kontaktovať aj zamestnávateľa a informovať ho o tom, že je v karanténe.</p>
+<li>
+<p>Sociálna poisťovňa po podaní žiadosti o pandemické nemocenské spáruje žiadosť poistenca s potvrdením lekára a vydá písomné rozhodnutie o nároku na túto dávku. Ak poistencovi (zamestnancovi, SZČO, dobrovoľne poistenej osobe) nárok na pandemické nemocenské vznikne, Sociálna poisťovňa začne vyplácať túto dávku od prvého dňa dočasnej pracovnej neschopnosti, ktorá vznikla pre karanténu alebo izoláciu.</p></li></ol>
+<p>Viac informácií pozri tu: <a href="/pandemicke-nemocenske/68337s#12"><u>Pandemické nemocenské</u></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<!-- ContentBlock --><a id="3" name="3"></a>
+<h3>Ako požiadať o dôchodok v pobočke pri oranžovom a&nbsp;červenom&nbsp;režime</h3>
+<p>Sociálna poisťovňa (SP) upozorňuje poistencov, ktorí chcú v čase koronakrízy požiadať o niektorú z dôchodkových dávok (dôchodok starobný, predčasný starobný, invalidný, vdovský/vdovecký, sirotský), že v súlade s opatreniami pre fungovanie pobočiek SP podľa <a href="/covid-semafor---pobocky/68964s"><u>Covid semaforu</u></a>, <b>v „oranžových“ a „červených“ pobočkách nie je možné osobne spisovať žiadosť o dôchodok</b>. Preto odporúčame, aby si žiadateľ v takomto prípade preveril aktuálny režim fungovania miestne príslušnej pobočky cez <a href="/covid-semafor---pobocky/68964s"><u>Covid semafor</u></a>, na webovej stránke Sociálnej poisťovne, prípadne kontaktoval priamo pobočku telefonicky alebo e-mailom a dohodol si ďalší postup.</p>
+<p>V <b>„oranžových“ a „červených“ pobočkách </b>(podľa aktuálnej situácie aj v ďalších určených) si poistenec dohodne termín (deň, hodinu), kedy príde osobne do pobočky podpísať vyplnenú žiadosť o dôchodok. Tú pripraví zamestnanec pobočky SP po vzájomnej telefonickej komunikácii a na základe žiadosti o spísanie žiadosti o dôchodok, ktorú poistenec zaslal.</p>
+<p><b>O spísanie žiadosti o dôchodok preto treba požiadať jedným z nasledujúcich spôsobov:</b></p>
+<ol type="1">
+<li>elektronicky cez webovú stránku SP v časti <a href="https://esluzby.socpoist.sk/crse/"><u>Rezervačný systém</u></a>, ktorý žiadateľa krok po kroku celým procesom požiadania o zvolenú dôchodkovú dávku postupne prevedie až po elektronickú rezerváciu spísania žiadosti o dôchodok; alebo 
+</li>
+<li>vyplnením tlačiva na webovej stránke SP tu: <a title="docx, 29 kb" href="/ext_dok-13032020-ziadost_o_spisanie_ziadosti_o_dochodok/68369c"><u>Žiadosť o spísanie žiadosti o dôchodok</u></a><u>,</u> ktoré žiadateľ zašle cez e-schránku, e-mailom alebo poštou na adresu príslušnej pobočky Sociálnej poisťovne (podľa svojho trvalého pobytu): <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a>; alebo 
+</li>
+<li>vyplnením tlačiva <a title="docx, 29 kb" href="/ext_dok-13032020-ziadost_o_spisanie_ziadosti_o_dochodok/68369c"><u>Žiadosť o spísanie žiadosti o dôchodok</u></a><u>,</u> ktoré žiadateľ vhodí do schránky v priestoroch pobočky Sociálnej poisťovne v jej obmedzených úradných hodinách (pozri <a href="/covid-semafor---pobocky/68964s"><u>Covid semafor</u></a>). </li></ol>
+<p>Pobočky žiadosti o spísanie žiadosti o dôchodok a rezervácie spracúvajú postupne, priebežne. Vzhľadom na momentálnu situáciu v súvislosti s pandémiou prosíme o zhovievavosť. Postup pobočky vo vzťahu k žiadateľom o dôchodok je nasledovný:</p>
+<ol type="1">
+<li>Zamestnanec pobočky žiadosť o spísanie žiadosti o dôchodok alebo rezerváciu zaeviduje a&nbsp;žiadateľa o dôchodok individuálne kontaktuje za účelom prípravy žiadosti o dôchodok. 
+</li>
+<li>Po kompletnej príprave žiadosti o dôchodok zamestnanec pobočky žiadateľa o dôchodok opätovne kontaktuje a oznámi mu, že mu zasiela do e-schránky alebo e-mailom alebo poštou tlačivo <i>„Odsúhlasenie údajov“</i>. 
+</li>
+<li>V nasledujúci pracovný deň zamestnanec pobočky žiadateľa opätovne kontaktuje, aby získal jeho vyjadrenie k správnosti údajov v žiadosti, resp. skonzultoval s ním prípadné otázky a dohodol s ním ďalší postup pre skompletizovanie žiadosti. 
+</li>
+<li>Ak žiadateľ o dôchodok nemá zriadenú e-schránku, zamestnanec pobočky s ním dohodne aj dátum a presný čas, kedy si príde do pobočky osobne podpísať žiadosť o dôchodok. 
+</li>
+<li>V určený deň žiadateľ o dôchodok podpíše v pobočke svoju žiadosť. Musí sa pritom preukázať občianskym preukazom, resp. pasom. Žiadateľ dostane žiadosť v obálke, ktorú vlastnoručne podpíše, vloží späť do obálky a zalepenú ju vhodí do určenej schránky v priestoroch pobočky. 
+</li>
+<li>Následne pobočka kompletnú žiadosť o dôchodok zaeviduje a zašle do ústredia Sociálnej poisťovne na ďalšie konanie o priznaní dôchodku. 
+</li>
+<li>Po posúdení všetkých zákonných podmienok na priznanie dávky vydá Sociálna poisťovňa, ústredie, rozhodnutie o dôchodku, ktoré do e-schránky alebo poštou doručí žiadateľovi.&nbsp; </li></ol>
+<p>&nbsp;</p>
+<p>POZOR! Sociálna poisťovňa od 11. 11. 2020 dočasne upravila možnosti využitia Rezervačného systému. <br />Informáciu pozri tu: <a href="/aktuality-cez-rezervacny-system-socialnej-poistovne-mozete-oznamit--ze-si-chcete-vybavit-dochodok/48411s69094c"><u>Cez Rezervačný systém Sociálnej poisťovne môžete oznámiť, že si chcete vybaviť dôchodok</u></a></p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+
+<p>&nbsp;&nbsp;</p><a id="4" name="4"></a>
+<h3><b>Ako požiadať o dávku v nezamestnanosti</b></h3>
+<p>(skrátený návod)</p>
+<ul type="1">
+<li>
+<p>Od 1. júla 2020 si už poistenci môžu <b>uplatniť nárok na dávku v nezamestnanosti spoločne so žiadosťou o zaradenie do evidencie uchádzačov o zamestnanie priamo na úrade práce</b>.</p>
+<li>
+<p>Ak ste zaradená/ý do evidencie uchádzačov o zamestnanie na úrade práce, sociálnych vecí a rodiny a o dávku v nezamestnanosti ste nepožiadali na úrade práce, môžete o ňu požiadať v Sociálnej poisťovni vypísaním formulára <a title="Žiadosť o dávku v nezamestnanosti, pdf, 126 kb" href="/ext_dok-30062020-pvn-ziadost-o-dvn_editovatelna-verzia_spu501/68778c"><u>Žiadosť o dávku v nezamestnanosti</u></a>.&nbsp;</p>
+<li>
+<p>Ak ste v posledných štyroch rokoch pred zaradením do evidencie uchádzačov o zamestnanie vykonávali <b>zárobkovú činnosť na území</b> iného členského štátu <b>Európskej únie</b>, k žiadosti, ktorú vybavujete v Sociálnej poisťovni priložíte aj formulár – <a title="pdf, 57 kb" href="/ext_dok-30062020-pvn-skutocnosti-vo-vztahu-k-vykonu-zamestnania-eu_editovatelna-verzia_503/68782c"><u>Skutočnosti vo vzťahu k výkonu zamestnania alebo SZČO v EÚ</u></a>, <b>formulár PD U1</b> (ak vám ho príslušná inštitúcia Európskej únie vystavila; v opačnom prípade si ho Sociálna poisťovňa vyžiada od príslušnej inštitúcie sama) a <b>doklady preukazujúce výkon práce</b> na <b>území štátu Európskej únie</b> (napr. pracovnú zmluvu, výplatné pásky, atď.).</p>
+<li>
+<p>Všetky uvedené dokumenty doručíte pobočke Sociálnej poisťovne nasledovným spôsobom:<b><br /></b>· e-mailom (aj po naskenovaní),<br />· poštou,<br />· vhodením žiadosti o dávku v nezamestnanosti do schránky pri vstupe do budovy pobočky Sociálnej poisťovne.</p>
+<p>Kontakty na príslušné pobočky nájdete tu: <a href="http://www.socpoist.sk/">www.socpoist.sk</a>, alebo tu: <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a>.</p>
+<li>Po doručení sa začne konanie o dávke a vydá rozhodnutie, ktoré doručí žiadateľovi. </li></ul>
+<p><b>Upozornenie:</b> Zákonné podmienky nároku, všeobecné informácie o dávke v nezamestnanosti a ďalšie formuláre sa nachádzajú na internetovej stránke Sociálnej poisťovne <a href="http://www.socpoist.sk">www.socpoist.sk</a>.</p>
+<p>V prípade nezrovnalostí v doručených dokumentoch Vás bude kontaktovať príslušná pobočka Sociálnej poisťovne telefonicky, resp. e-mailom.&nbsp;</p><a id="4A" name="4A"></a>
+<h4><b>Podporné obdobie v nezamestnanosti sa predĺžilo o mesiac (1. obdobie predĺženia)</b></h4>
+<p>Vzhľadom na aktuálnu situáciu súvisiacu so šírením ochorenia Covid-19 bola schválená novela Zákonníka práce, účinná od 4. apríla 2020, ktorou sa dopĺňa aj zákon o sociálnom poistení. Novelou dochádza k <b>predĺženiu podporného obdobia v nezamestnanosti</b> <b>o jeden mesiac</b>. Predĺženie podporného obdobia sa vzťahuje na tých poistencov, ktorým uplynulo podporné obdobie odo dňa vyhlásenia krízovej situácie, to znamená od 12. marca 2020, a sú vedení v evidencii uchádzačov o zamestnanie. Sociálna poisťovňa týmto poistencom predĺži podporné obdobie automaticky - <b>bez potreby podania žiadosti o predĺženie podporného obdobia</b>.</p>
+<p>Predĺžiť podporné obdobie o jeden mesiac je možné <b>najskôr od 4. apríla 2020</b>. To znamená, že ak poistencovi podporné obdobie uplynulo napr. 16. marca 2020, Sociálna poisťovňa mu prizná predĺženie podporného obdobia od 4. apríla 2020 do 3. mája 2020. V prípade poistencov, ktorým uplynie podporné obdobie od 4. apríla 2020 do skončenia krízovej situácie, Sociálna poisťovňa predĺži podporné obdobie o jeden mesiac odo dňa nasledujúceho po dni uplynutia pôvodného šesť mesačného podporného obdobia. Rozhodnutie o predĺžení podporného obdobia začne Sociálna poisťovňa zasielať poistencom postupne, aj vzhľadom na enormné zaťaženie zamestnancov Sociálnej poisťovne.</p>
+<p>Dávka v nezamestnanosti za predĺžené podporné obdobie bude <b>vyplatená</b> spôsobom uvedeným poistencom v žiadosti o dávku v nezamestnanosti, na základe ktorej mu bol priznaný nárok na dávku v nezamestnanosti, <b>najskôr v mesiaci máj 2020.</b></p>
+<p>Upozorňujeme, že nárok na dávku v nezamestnanosti aj v prípade predĺženia podporného obdobia naďalej zaniká dňom vyradenia poistenca z evidencie uchádzačov o zamestnanie a dňom priznania starobného dôchodku, predčasného starobného dôchodku alebo invalidného dôchodku z dôvodu poklesu schopnosti vykonávať zárobkovú činnosť o viac ako 70 %. To znamená, že ak počas predĺženého podporného obdobia nastane jedna z vyššie uvedených skutočností, nárok na dávku v nezamestnanosti zanikne.</p>
+<p>&nbsp;</p>
+<h4>Podporné obdobie v nezamestnanosti sa predĺžilo o ďalší mesiac (2. obdobie predĺženia)</h4>
+<p>Vláda Slovenskej republiky v súvislosti so šírením ochorenia Covid-19 nariadila, že poistencom, ktorým vznikol nárok na predĺženie podporného obdobia v nezamestnanosti o jeden mesiac (prvé predĺženie), Sociálna poisťovňa predĺži podporné obdobie v nezamestnanosti o ďalší mesiac (druhé predĺženie). Sociálna poisťovňa tak urobí automaticky – <b>bez podania žiadosti o druhé predĺženie podporného obdobia v nezamestnanosti</b>, poberateľ dávky teda nemusí o nič žiadať.</p>
+<p>Nárok na druhé predĺženie podporného obdobia v nezamestnanosti budú mať tí poistenci, ktorým:</p>
+<ol>
+<li>vznikol nárok na prvé predĺženie podporného obdobia v nezamestnanosti a 
+</li>
+<li>sú naďalej vedení v evidencii uchádzačov o zamestnanie na úrade práce, sociálnych vecí a rodiny. </li></ol>
+<p>To znamená, že ak poistencovi vznikol nárok na prvé predĺženie podporného obdobia v nezamestnanosti, napr. od 4. apríla 2020 do 3. mája 2020, Sociálna poisťovňa automaticky predĺži podporné obdobie v nezamestnanosti o ďalší jeden mesiac, tzn. od 4. mája 2020 do 3. júna 2020. Rozhodnutie o druhom predĺžení podporného obdobia v nezamestnanosti začne Sociálna poisťovňa zasielať poistencom postupne, aj vzhľadom na enormné zaťaženie zamestnancov Sociálnej poisťovne.</p>
+<p>Dávka v nezamestnanosti za druhé predĺžené podporné obdobie v nezamestnanosti bude <b>vyplatená</b> spôsobom uvedeným poistencom v žiadosti o dávku v nezamestnanosti, na základe ktorej mu bol priznaný nárok na dávku v nezamestnanosti, <b>najskôr v mesiaci jún 2020.</b></p>
+<p>Druhé predĺžené podporné obdobie v nezamestnanosti uplynie najneskôr mesiac odo dňa skončenie krízovej situácie. </p>
+<p>Upozorňujeme, že nárok na dávku v nezamestnanosti aj v prípade druhého predĺženia podporného obdobia v nezamestnanosti naďalej zaniká dňom vyradenia poistenca z evidencie uchádzačov o zamestnanie a dňom priznania starobného dôchodku, predčasného starobného dôchodku alebo invalidného dôchodku z dôvodu poklesu schopnosti vykonávať zárobkovú činnosť o viac ako 70 %. To znamená, že ak počas druhého predĺženého podporného obdobia v nezamestnanosti nastane jedna z vyššie uvedených skutočností, nárok na dávku v nezamestnanosti zanikne.</p>
+<p>&nbsp;</p>
+<h4>Podporné obdobie v nezamestnanosti sa predĺžilo o ďalší mesiac (3. obdobie predĺženia)</h4>
+<p>Vláda Slovenskej republiky v súvislosti so šírením ochorenia Covid-19 opätovne nariadila, že poistencom, ktorým vznikol nárok na predĺženie podporného obdobia v nezamestnanosti o jeden mesiac podľa nariadenia vlády Slovenskej republiky č. 101/2020 Z. z. (druhé predĺženie), Sociálna poisťovňa predĺži podporné obdobie v nezamestnanosti o ďalší mesiac (tretie predĺženie). Sociálna poisťovňa tak urobí automaticky – <b>bez podania žiadosti o tretie predĺženie podporného obdobia v nezamestnanosti</b>, poberateľ dávky teda nemusí o nič žiadať.</p>
+<p>Nárok na tretie predĺženie podporného obdobia v nezamestnanosti budú mať tí poistenci, ktorým:</p>
+<ol>
+<li>vznikol nárok na druhé predĺženie podporného obdobia v nezamestnanosti, 
+</li>
+<li>druhé predĺžené podporné obdobie v nezamestnanosti uplynulo/uplynie počas krízovej situácie a 
+</li>
+<li>sú naďalej vedení v evidencii uchádzačov o zamestnanie na úrade práce, sociálnych vecí a rodiny. </li></ol>
+<p>To znamená, že ak poistencovi vznikol nárok na druhé predĺženie podporného obdobia v nezamestnanosti, napr. od 4. mája 2020 do 3. júna 2020, Sociálna poisťovňa automaticky predĺži podporné obdobie v nezamestnanosti o ďalší jeden mesiac, tzn. od 4. júna 2020 do 3. júla 2020. Rozhodnutie o tretom predĺžení podporného obdobia v nezamestnanosti začne Sociálna poisťovňa zasielať poistencom postupne, aj vzhľadom na enormné zaťaženie zamestnancov Sociálnej poisťovne.</p>
+<p>Dávka v nezamestnanosti za tretie predĺžené podporné obdobie v nezamestnanosti bude <b>vyplatená</b> spôsobom uvedeným poistencom v žiadosti o dávku v nezamestnanosti, na základe ktorej mu bol priznaný nárok na dávku v nezamestnanosti, <b>najskôr v mesiaci júl 2020.</b></p>
+<p>Upozorňujeme, že nárok na dávku v nezamestnanosti aj v prípade tretieho predĺženia podporného obdobia v nezamestnanosti naďalej zaniká dňom vyradenia poistenca z evidencie uchádzačov o zamestnanie a dňom priznania starobného dôchodku, predčasného starobného dôchodku alebo invalidného dôchodku z dôvodu poklesu schopnosti vykonávať zárobkovú činnosť o viac ako 70 %. To znamená, že ak počas tretieho predĺženého podporného obdobia v nezamestnanosti nastane jedna z vyššie uvedených skutočností, nárok na dávku v nezamestnanosti zanikne.“</p>
+<p>&nbsp;</p>
+<h4>Podporné obdobie v nezamestnanosti sa predĺžilo do 31. 8. 2020 (4. obdobie predĺženia)</h4>
+<p>Vláda Slovenskej republiky v súvislosti so šírením ochorenia Covid-19 rozhodla, že poistencom opäť predĺži podporné obdobie v nezamestnanosti. Ide už o štvrté predĺženie. Sociálna poisťovňa rozhodne o nároku na štvrté predĺženie podporného obdobia v nezamestnanosti automaticky, t. j. <b>bez podania žiadosti o toto predĺženie</b>. To znamená, že poberateľ dávky nemusí o nič žiadať.</p>
+<p>Nárok na štvrté predĺženie podporného obdobia v nezamestnanosti budú mať tí poistenci, ktorým:</p>
+<ol>
+<li>vznikol nárok na tretie predĺženie podporného obdobia v nezamestnanosti, 
+</li>
+<li>tretie predĺžené podporné obdobie v nezamestnanosti uplynulo/uplynie počas krízovej situácie a 
+</li>
+<li>sú naďalej vedení v evidencii uchádzačov o zamestnanie na úrade práce, sociálnych vecí a rodiny. </li></ol>
+<p>To znamená, že ak poistencovi vznikol nárok na tretie predĺženie podporného obdobia v nezamestnanosti, napr. od 4. júna 2020 do 3. júla 2020, Sociálna poisťovňa automaticky predĺži podporné obdobie v nezamestnanosti o ďalší jeden mesiac, tzn. od 4. júla 2020 do 3. augusta 2020. Rozhodnutie o štvrtom predĺžení podporného obdobia v nezamestnanosti začne Sociálna poisťovňa zasielať poistencom postupne.</p>
+<p>Dávka v nezamestnanosti za štvrté predĺžené podporné obdobie v nezamestnanosti bude <b>vyplatená</b> spôsobom uvedeným poistencom v žiadosti o dávku v nezamestnanosti, na základe ktorej mu bol priznaný nárok na dávku v nezamestnanosti, <b>najskôr v mesiaci august 2020.</b></p>
+<p>Naďalej platí, že nárok na dávku v nezamestnanosti aj v prípade štvrtého predĺženia podporného obdobia v nezamestnanosti zaniká dňom vyradenia poistenca z evidencie uchádzačov o zamestnanie a dňom priznania starobného dôchodku, predčasného starobného dôchodku alebo invalidného dôchodku z dôvodu poklesu schopnosti vykonávať zárobkovú činnosť o viac ako 70 %. To znamená, že ak počas štvrtého predĺženého podporného obdobia v nezamestnanosti nastane jedna z vyššie uvedených skutočností, nárok na dávku v nezamestnanosti zanikne.</p>
+<p><b>Upozorňujeme, že prvé, druhé, tretie a aj štvrté predĺžené podporné obdobie v nezamestnanosti uplynie najneskôr 31. augusta 2020</b> bez ohľadu na to, či bude naďalej trvať mimoriadna situácia. To znamená, že ak poistencovi uplynie napr. prvé predĺženie podporného obdobia v nezamestnanosti 15. augusta 2020, nárok na druhé predĺženie podporného obdobia v nezamestnanosti mu vznikne od 16. augusta 2020 do 31. augusta 2020.</p>
+<p><b>Nárok na predĺženie podporného obdobia v nezamestnanosti </b>(prvé, druhé, tretie alebo štvrté) <b>nevznikne</b>, ak základné šesťmesačné podporné obdobie v nezamestnanosti, resp. prvé, druhé alebo tretie predĺžené podporné obdobie v nezamestnanosti, <b>uplynie po 31. auguste 2020</b>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+
+<p><a name="4C"></a></p>
+<h3>Ako požiadať o úrazový príplatok pre COVID-19</h3>
+<p>Postup ako požiadať o úrazový príplatok pre COVID-19 a formuláre pozri tu: <a href="/urazovy-priplatok-pre-covid-19/69113s">https://www.socpoist.sk/urazovy-priplatok-pre-covid-19/69113s</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+
+<p>&nbsp;</p><a id="5" name="5"></a>
+<h3>Ako požiadať o dávku garančného poistenia </h3>
+<p>(skrátený návod)</p>
+<ol>
+<li>Zamestnanec platobne neschopného zamestnávateľa <b>požiada o dávku</b><b> </b><b>garančného poistenia</b> vypísaním formulára <a title="Žiadosť o dávku garančného poistenia, pdf, 477 kb" href="/ext_dok-0701201-gp-ziadost-o-davku-garancneho-poistenia/67076c"><u>Žiadosť o dávku garančného poistenia</u></a><b> </b><b>a jeho zaslaním na adresu pobočky. </b>
+</li>
+<li>Príslušnou je pobočka podľa sídla zamestnávateľa. 
+</li>
+<li>Spôsob doručenia žiadosti o dávku garančného poistenia:<br />· e-mailom,<br />· poštou,<br />· vhodením žiadosti o dávku garančného poistenia do schránky pri vstupe do budovy pobočky Sociálnej poisťovne.<br />Kontakty na príslušné pobočky sa nachádzajú tu: <a href="http://www.socpoist.sk/">www.socpoist.sk</a> alebo tu: <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a>. 
+</li>
+<li>Po doručení začne konanie o dávke a vydá rozhodnutie, ktoré doručí žiadateľovi. </li></ol>
+<p><b>Upozornenie</b>: Zákonné podmienky nároku, všeobecné informácie o dávke garančného poistenia a ďalšie formuláre sa nachádzajú na internetovej stránke Sociálnej poisťovne <a href="/davka-garancneho-poistenia/1359s">www.socpoist.sk</a>.</p>
+<p>V prípade nezrovnalostí v doručených dokumentoch vás bude kontaktovať pobočka Sociálnej poisťovne telefonicky, resp. e-mailom.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+
+<p>&nbsp;</p><a id="6" name="6"></a>
+<h3>Ako požiadať o potvrdenie o vyplatených dávkach</h3>
+<p>(skrátený návod)</p>
+<ol>
+<li><b>Vyplniť</b> <b>tlačivo </b><u><a href="/ext_dok-13032020-upravena-ziadost_potvrdenie-o-davkach_doc/68518c"><u>Žiadosť o vystavenie potvrdenia o vyplatených dávkach</u></a></u>&nbsp;<br /><b>Pozor</b>: Nezabudnite <b>vyznačiť, o aký druh potvrdenia žiadate</b> (potvrdenie o nemocenských dávkach,&nbsp;úrazových dávkach, dávke garančného poistenia, o dávke v nezamestnanosti), pričom je <b>možné vybrať aj viac možností súčasne</b>. 
+</li>
+<li><b>Vyplnené a podpísané tlačivo</b> <b>zaslať poštou alebo e-mailom</b> do príslušnej pobočky Sociálnej poisťovne podľa trvalého pobytu poistenca. Kontakty tu: <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a>. 
+</li>
+<li>Sociálna poisťovňa pošle požadované <b>potvrdenie na adresu žiadateľa p</b>oštou,&nbsp;alebo do e-schránky, podľa toho, akú možnosť si na tlačive vyznačia. </li></ol>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<a id="6b" name="6b"></a>
+<h3>Ako požiadať o potvrdenie o dôchodku</h3>
+<p>(skrátený návod)</p>
+<ol type="1">
+<li><b>Vyplniť</b> <b>tlačivo </b><u><a title="Žiadosť o potvrdenie o dôchodku/dôchodkoch, doc, 50 kb" href="/ext_dok-01042020-dp-ziadost_potvrdenie-o-dochodku_doc/68488c"><u>Žiadosť o potvrdenie o dôchodku</u></a></u> <br /><b>Pozor</b>: Nezabudnite <b>vyznačiť, o aký druh potvrdenia žiadate</b> (potvrdenie o aktuálne vyplácanej sume, o sume dôchodku vyplatenej za určité obdobie, potvrdenie o vyplácanom dôchodku). 
+</li>
+<li><b>Vyplnené a podpísané tlačivo</b> <b>zaslať poštou alebo e-mailom</b> do príslušnej pobočky Sociálnej poisťovne podľa trvalého pobytu poistenca. Kontakty tu: <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a>. 
+</li>
+<li>Sociálna poisťovňa pošle požadované <b>potvrdenie žiadateľovi </b>poštou alebo do e-schránky. </li></ol>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+
+<p></p>
+<p>&nbsp;</p><a id="7" name="7"></a>
+<h3>Ako požiadať o potvrdenie o invalidite</h3>
+<h3>Ako požiadať o posúdenie zdravotného stavu (invalidita)</h3>
+<p>(skrátený návod)</p>
+<ol>
+<li>
+<p>Ak poberateľ invalidného dôchodku potrebuje tlačivo <b>Potvrdenie o invalidite</b> alebo <b>Potvrdenie o invalidite a miere poklesu schopnosti vykonávať zárobkovú činnosť</b> treba <b>zavolať</b> alebo poslať e-<b>mail</b> do pobočky, kontakty tu: <a href="/kontakty--xly/48023s">Kontakty – pobočky</a> - alebo využiť <b>e-schránku</b>.</p>
+<li>
+<p>K žiadosti o invalidný dôchodok a k žiadosti o úrazové dávky netreba <b>predkladať tlačivo Prehliadka zisťovacia</b> (tzv. 400-ku), ktoré vypisuje ošetrujúci lekár. Stačí <b>poštou</b> alebo e-<b>mailom</b> poslať príslušnej pobočke <b>odborné lekárske nálezy</b>, spolu s podkladmi zasielanými útvaru dôchodkového poistenia, prípadne útvaru úrazového poistenia<b> </b>pobočky. Kontakt tu: <a href="/kontakty--xly/48023s">Kontakty – pobočky</a>.</p>
+<li>
+<p>Sociálna poisťovňa následne žiadosť posúdi a vydá rozhodnutie. Posúdenie zdravotného stavu poistenca sa vykonáva v jeho neprítomnosti.</p>
+<li>
+<p>V prípade potreby Sociálna poisťovňa bude poistenca telefonicky kontaktovať. </p></li></ol>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<a id="8" name="8"></a>
+<h3>Ako&nbsp;zamestnávateľ&nbsp;požiada o prístup k elektronickým službám SP</h3>
+<p>(skrátený návod)</p>
+<ol>
+<li>Zaslať <u><a href="https://esluzby.socpoist.sk/www/ext_dok-21022018-dohoda_o_pouzivani_esluzieb_soc_poistovne/65579c"><u>Dohodu o používaní elektronických služieb SP pre odvádzateľov poistného</u></a></u> do ktorejkoľvek pobočky Sociálnej poisťovne buď poštou, cez e-schránku alebo vložiť osobne do schránky v priestoroch pobočky. 
+</li>
+<li>Ak chce zamestnávateľ elektronickou komunikáciou s pobočkou Sociálnej poisťovne poveriť/splnomocniť inú osobu (napr. mzdovú účtovníčku), splnomocnenie je možné poslať aj bez overenia do pobočky buď poštou, e-mailom, cez e-schránku alebo vložiť do schránky v priestoroch pobočky; overené splnomocnenie je ale potrebné predložiť dodatočne. Bezpečnostnú otázku a odpoveď môže zamestnávateľ zaslať e-mailom. 
+</li>
+<li>Sociálna poisťovňa následne zašle zamestnávateľovi GRID kartu, slúžiacu na využívanie elektronických služieb Sociálnej poisťovne, poštou doporučene do vlastných rúk. </li></ol>
+<p>Tento postup slúži predovšetkým na <b>prvotné prihlasovanie</b> zamestnávateľa do Sociálnej poisťovne, ktorý začína zamestnávať svojich prvých zamestnancov a nemá ešte zriadený prístup k elektronickým službám Sociálnej poisťovne. V súčasnej problematickej situácii môže <i>Registračný list zamestnávateľa</i> (RLZ) zaslať do Sociálnej poisťovne buď poštou, cez e-schránku alebo osobne vhodiť do schránky v priestoroch pobočky. Môže dočasne priamo pobočke nahlásiť potrebné identifikačné údaje aj telefonicky (IČO, SK NACE, typ vlastníctva, právna forma, deň splatnosti, štatutárny zástupca, nástup 1. zamestnanca do práce), avšak dodatočne je potrebné doložiť RLZ. Ide o povinné údaje z tlačiva RLZ, na základe ktorých pobočka zamestnávateľa prihlási a pridelí mu variabilný symbol (údaj potrebný pre zriadenie prístupu k elektronickým službám Sociálnej poisťovne). Pobočka zaeviduje zamestnávateľa a potrebné informácie mu zašle do e-schránky zriadenej na ÚPVS, mailom alebo poštovou prepravou.</p>
+<p>V prípade potreby kontaktujte pobočky: <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a>, resp. kontakty na e-mailové adresy pobočiek tu: <a href="/e-mailove-adresy-pobociek-socialnej-poistovne/68395s"><u>E-mailové adresy pobočiek Sociálnej poisťovne</u></a>.&nbsp;</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<a id="9" name="9"></a>
+<h3>Ako požiadať o uplatniteľnú legislatívu PD A1</h3>
+<p>(skrátený návod)</p>
+<ol type="1">
+<li>Vyplňte príslušný formulár tu: <a href="/475-menu/1168s"><u>Vzory tlačív k formuláru PD A1</u></a> a pošlite ho pobočke Sociálnej poisťovne podľa miesta bydliska e-mailom alebo poštou, kontakty tu: <a href="/kontakty--xly/48023s"><u>Kontakty – pobočky</u></a> alebo využite e-schránku. Vyplnenú žiadosť môžete vhodiť aj osobne do schránky pri vstupe do budovy príslušnej pobočky Sociálnej poisťovne. 
+</li>
+<li>Ak vyžadujete potvrdenie o podaní žiadosti, uveďte to a pobočka vám ho zašle e-mailom alebo poštou. 
+</li>
+<li>V prípade potreby vás zamestnanec Sociálnej poisťovne bude kontaktovať na doplnenie údajov v žiadosti.&nbsp;&nbsp; </li></ol>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<a id="10" name="10"></a>
+<h3><b>
+<p><b>Ako majú postupovať zamestnanci a SZČO, ktorí počas koronakrízy nemohli vycestovať do zahraničia?</b></b></p></h3>
+<p>V zahraničí pracujúci zamestnanci, živnostníci a ostatné samostatne zárobkovo činné osoby (SZČO) v súčasnosti často vykonávajú prácu z domu, tzv. „home office“. Skutočnosť, že v dôsledku mimoriadnych opatrení pre pandémiu koronavírusu momentálne vykonávajú prácu z domu, nie je relevantnou skutočnosťou, ktorá by spôsobovala zmenu v uplatniteľných právnych predpisoch, resp. zmenu štátu, v ktorom sú poistení na sociálne zabezpečenie.</p>
+<ul type="disc">
+<li>Ak zamestnanec alebo SZČO (s bydliskom na území Slovenska) začne vykonávať zárobkovú činnosť výlučne z domu, pričom doteraz vykonával zárobkovú činnosť výlučne v inom členskom štáte EÚ, nie je potrebné túto zmenu oznámiť Sociálnej poisťovni. Zamestnanec alebo SZČO ostáva byť poistený na sociálnom zabezpečení v danom členskom štáte.</li></ul>
+<ul type="disc">
+<li>Ak zamestnanec alebo SZČO začne vykonávať zárobkovú činnosť z domu, avšak stále vykonáva činnosť v inom členskom štáte EÚ (napr. pár dni v mesiaci vykonáva činnosť v sídle firmy), pričom doteraz vykonával zárobkovú činnosť výlučne v inom členskom štáte EÚ, nie je potrebné túto zmenu oznámiť Sociálnej poisťovni, resp. žiadať Sociálnu poisťovňu o určenie uplatniteľnej legislatívy. Zamestnanec alebo SZČO ostáva byť poistený na sociálnom zabezpečení v danom členskom štáte EÚ.<b> </b></li></ul>
+<p>Zamestnanec, ktorému vznikne pracovný pomer v inom členskom štáte počas pandémie koronavírusu a v dôsledku mimoriadnych opatrení momentálne vykonáva prácu z domu, pričom podľa pracovnej zmluvy bude vykonávať zárobkovú činnosť výlučne v inom členskom štáte EÚ, je od vzniku pracovného pomeru poistený v danom členskom štáte. </p>
+<p>Sociálna poisťovňa upozorňuje vyslaných zamestnancov alebo SZČO, že ak svoju činnosť v zahraničí, na ktorú mali vystavené formuláre PD A1, prerušujú v dôsledku pandémie koronavírusu, netreba túto skutočnosť oznámiť príslušnej pobočke Sociálnej poisťovne (vystavené formuláre PD A1 ostávajú v platnosti), ak nenastane niektorá z nižšie uvedených skutočností.</p>
+<ul>
+<li>Ak zamestnanec alebo SZČO <b>prerušuje výkon zárobkovej činnosti v inom členskom štáte, pričom už neplánuje dokončiť zákazku realizovanú v inom členskom štáte, tzn. že neplánuje ďalej využívať inštitút vyslania</b>, je potrebné uvedenú skutočnosť oznámiť príslušnej pobočke Sociálnej poisťovne prostredníctvom tlačiva <a title="rtf, 71 kb" href="/ext_dok-04102018-oznamenie-zamestnavatela-a-zamestnanca-o-zmenach--ktore-nastali-pocas-doby-vyslania---04---ms/66624c">Oznámenie zamestnávateľa a zamestnanca o zmenách, ktoré nastali počas vyslania</a> alebo <a title="pdf, 280 kb" href="/ext_dok-14112018-_oznamenie_szco_o_zmenach_ktore_nastali_pocas_doby_vyslania_print/66833c">Oznámenie samostatne zárobkovo činnej osoby o zmenách, ktoré nastali počas vyslania</a>. 
+</li>
+<li>Ak zamestnanec alebo SZČO <b>prerušuje výkon zárobkovej činnosti v inom členskom štáte, pričom plánuje vykonávať zárobkovú činnosť na území Slovenska,</b> je potrebné uvedenú skutočnosť oznámiť príslušnej pobočke Sociálnej poisťovne prostredníctvom tlačiva <a title="rtf, 71 kb" href="/ext_dok-04102018-oznamenie-zamestnavatela-a-zamestnanca-o-zmenach--ktore-nastali-pocas-doby-vyslania---04---ms/66624c">Oznámenie zamestnávateľa a zamestnanca o zmenách, ktoré nastali počas vyslania</a> alebo <a title="pdf, 280 kb" href="/ext_dok-14112018-_oznamenie_szco_o_zmenach_ktore_nastali_pocas_doby_vyslania_print/66833c">Oznámenie samostatne zárobkovo činnej osoby o zmenách, ktoré nastali počas vyslania</a>. </li></ul>
+<p>V čase mimoriadneho režimu je možné vyššie uvedené oznámenia doručiť pobočke Sociálnej poisťovne najlepšie elektronicky (e-mailom: <a href="/e-mailove-adresy-pobociek-socialnej-poistovne/68395s"><b>E-mailové adresy pobočiek SP</b></a> alebo prostredníctvom e-schránky), poštou alebo osobne do schránky pri vstupe do budovy pobočky Sociálnej poisťovne. </p>
+<p>Sociálna poisťovňa upozorňuje zamestnancov alebo SZČO vykonávajúcich zárobkovú činnosť na území dvoch alebo viacerých členských štátov, že ak svoju činnosť v zahraničí, na ktorú mali vystavené formuláre PD A1, prerušujú v dôsledku pandémie koronavírusu, netreba túto skutočnosť oznámiť príslušnej pobočke Sociálnej poisťovne (vystavené formuláre PD A1 ostávajú v platnosti). Zamestnanec alebo SZČO, ktorému v súčasnosti končí platnosť formulára PD A1, pričom momentálne nevykonáva zárobkovú činnosť na území dvoch alebo viacerých členských štátov v dôsledku pandémie koronavírusu, avšak akonáhle skončí pandémia koronavírusu, opätovne začne vykonávať zárobkovú činnosť na území dvoch alebo viacerých členských štátov, môže požiadať o určenie uplatniteľnej legislatívy s uvedením predpokladaného rozsahu výkonu činnosti na území dvoch alebo viacerých členských štátov.</p>
+<p>Zamestnanec, ktorému vznikne pracovný pomer počas pandémie koronavírusu a v kontexte pracovnej zmluvy má vykonávať zárobkovú činnosť na území dvoch alebo viacerých členských štátov, pričom v dôsledku pandémie momentálne nevykonáva zárobkovú činnosť na území dvoch alebo viacerých členských štátov, avšak akonáhle skončí pandémia koronavírusu začne vykonávať zárobkovú činnosť na území dvoch alebo viacerých členských štátov, môže požiadať o určenie uplatniteľnej legislatívy s uvedením predpokladaného rozsahu výkonu činnosti na území dvoch alebo viacerých členských štátov.</p>
+<p><b>Upozorňujeme, že vyššie uvedené situácie sa vzťahujú na prerušenie výkonu zárobkovej činnosti v inom členskom štáte, resp. zmeny miesta/spôsobu výkonu práce v dôsledku</b> <b>mimoriadnych opatrení pre pandémiu koronavírusu, t. j. ak k prerušeniu výkonu zárobkovej činnosti v inom členskom štáte, resp. zmeny miesta/spôsobu výkonu práce dôjde na základe iných skutočností, je potrebné takúto skutočnosť oznámiť Sociálnej poisťovni, resp. postupovať v zmysle platnej európskej a slovenskej legislatívy v danej oblasti. Medzi mimoriadne opatrenia, sa okrem štátom zavádzaných opatrení, zarátavajú aj opatrenia vykonávané zamestnávateľom z dôvodu zabránenia šírenia koronavírusu. Mimoriadne opatrenia sa zohľadňujú osobitne vo vzťahu ku každému štátu a zamestnávateľovi, najdlhšie do 30. 6. 2021.</b><strong> </strong></p>
+<p>&nbsp;</p><!-- BlockContent -->
+<hr align="left" size="1" width="100%" noShade />
+<!-- BlockContent --><a id="10b" name="10b"></a>
+<h3>Kto a ako si môže odložiť zaplatenie odvodov za marec 2020</h3>
+<p>Dňa 6. apríla 2020 nadobudla účinnosť novela zákona o sociálnom poistení <i>(zákon č. 68/2020 Z. z., § 293ew zákona o sociálnom poistení),</i> ktorá umožňuje zamestnávateľom a samostatne zárobkovo činným osobám (SZČO) odklad splatnosti poistného na sociálne poistenie a dňa 22. mája 2020 nadobudlo účinnosť nariadenie vlády Slovenskej republiky č. 131/2020 o splatnosti poistného na sociálne poistenie v čase mimoriadnej situácie, núdzového stavu alebo výnimočného stavu vyhláseného v súvislosti s ochorením COVID-19.</p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Koho sa možnosť odkladu odvodov týka?</b></p>
+<ul>
+<li>zamestnávateľov v časti ich odvodov za zamestnávateľa. Možnosť odkladu odvodov sa teda netýka časti poistného, ktoré odvádza zamestnávateľ zamestnanca, kde naďalej platia pôvodné termíny splatnosti, 
+</li>
+<li>povinne poistených samostatne zárobkovo činných osôb (SZČO). </li></ul>
+<p><b>Podmienky na splnenie nároku na odklad splatnosti:</b></p>
+<p>Odklad splatnosti poistného sa týka zamestnávateľov a SZČO, ktorým v dôsledku mimoriadnej situácie poklesol čistý obrat alebo príjmy z podnikania a inej samostatnej zárobkovej činnosti <b>o 40 % a viac. </b></p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b><strong></strong></b></p>
+<p><b><strong></strong></b>&nbsp;</p>
+<p><b><strong>Spôsob určenia poklesu čistého obratu a príjmov z podnikania:</strong></b></p>
+<p>Upravuje nariadenie vlády Slovenskej republiky č. 76/2020 Z. z. z 9. apríla 2020 o spôsobe určenia poklesu čistého obratu a príjmov z podnikania a z inej samostatnej zárobkovej činnosti v znení nariadenia vlády Slovenskej republiky č. 132/2020 Z. z. zo dňa 20. mája 2020.</p>
+<p>Tržbou je čistý obrat podľa § 2 ods. 15 zákona č. 431/2002 Z. z. o účtovníctve v znení zákona č. 333/2014 Z. z a príjem z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. Za tržbu sa nepovažuje plnenie poskytované v rámci projektov na podporu udržania pracovných miest, na ktorých sa vykonáva alebo prevádzkuje samostatná zárobková činnosť, a na podporu udržania zamestnancov v zamestnaní v súvislosti s vyhlásením mimoriadnej situácie, núdzového stavu alebo výnimočného stavu a odstránením ich následkov, ktoré schvaľuje MPSVaR SR alebo ÚPSVaR SR po schválení podmienok vládou SR a realizuje ÚPSVaR SR alebo úrad práce, sociálnych vecí a rodiny.</p>
+<p>Vláda svojim nariadením ustanovila spôsob, ako sa pre účely odkladu platenia odvodov za marec 2020 určí pokles tržieb:</p>
+<p>Pokles tržieb odvádzateľa sa určí porovnaním výšky tržieb za marec 2020 s výškou tržieb za mesiac:</p>
+<ul>
+<li>marec 2019, alebo ak odvádzateľ vykonával činnosť po celý rok 2019, s mesačným priemerom tržieb za rok 2019 <i>(podiel tržieb odvádzateľa dosiahnutých za rok 2019 a čísla 12)</i>, 
+</li>
+<li>február 2020, ak odvádzateľ nevykonával činnosť v mesiaci predchádzajúceho roka, ktorý sa označením zhoduje s aktuálnym mesiacom. </li></ul>
+<p>Pokles tržieb odvádzateľa sa určuje v percentách zaokrúhlených na celé číslo nahor.</p>
+<p>Spôsob určenia poklesu tržieb je v potrebné vyplniť v listinnej verzii formuláru pre preukázanie poklesu tržieb na účely odkladu odvodov za marec 2020 a obratom listinne odoslať do Sociálnej poisťovne. Tento formulár sa považuje súčasne aj za žiadosť o odklad platenia odvodov.</p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Poistné, na ktoré sa odklad splatnosti vzťahuje:</b></p>
+<p>Predĺžená splatnosť <b>až do 30. júna 2021 </b>platí na poistné <b>za</b> <b>marec 2020</b> (pôvodne splatné v mesiaci apríl 2020).</p>
+<p>Vláda môže svojím nariadením v budúcnosti určiť aj ďalšie obdobia, v ktorých môže odložiť splatnosť poistného za ďalšie obdobia.</p>
+<p>Pre prihlasovanie, oznamovacie a vykazovacie povinnosti zamestnávateľa platia naďalej pôvodné termíny a lehoty.</p>
+<p>Ak zamestnávateľ alebo povinne poistená SZČO zaplatia poistné v novom termíne splatnosti, teda včas a v správnej výške, Sociálna poisťovňa im penále nepredpíše.</p>
+<p>Na účely posúdenia nároku na nemocenskú alebo dôchodkovú dávku sa poistné za mesiac marec 2020 považuje za zaplatené do uplynutia tretieho mesiaca po mesiaci, v ktorom skončí krízová situácia. Ak v tejto lehote poistenec nedoplatí dlžné poistné, bude povinný vrátiť dávku alebo jej časť odo dňa, od ktorého mu nepatrila alebo nepatrila v poskytovanej sume, ak je vyššia ako 5 eur.</p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b><strong></strong></b></p>
+<p><b><strong></strong></b>&nbsp;</p>
+<p><b><strong>Spôsob, akým platiteľ oznámi pokles obratu, resp. príjmu z podnikania:</strong></b></p>
+<ul>
+<li>Zaslaním/doručením listinnej verzie formuláru (ak nemáte prístup k internetu) tu: <a href="/ext_dok-10042020-formular-listinna/68528c">listinná podoba formuláru</a> – príslušnej pobočke Sociálnej poisťovne.. </li></ul>
+<p><b><b>Ako majú postupovať zamestnanci a SZČO, ktorí počas koronakrízy nemohli vycestovať do zahraničia?</b></b></p>
+<p>V súvislosti s koronakrízou väčšina zamestnancov, ktorí inak pracujú v zahraničí (alebo striedavo v zahraničí a na Slovensku) momentálne nemôžu vycestovať a zostali v SR, pričom môžu pracovať z domu. Pre nich platia nasledujúce pravidlá.</p>
+<p><b></b>&nbsp;</p>
+<p><b>V zahraničí pracujúci zamestnanci, živnostníci a ostatné samostatne zárobkovo činné osoby (SZČO)</b> v súčasnosti často vykonávajú prácu z domu, tzv. „home office“. To, že v dôsledku mimoriadnych opatrení kvôli pandémii koronavírusu momentálne vykonávajú prácu z domu, nie je skutočnosťou, ktorá by spôsobovala zmenu v uplatniteľných právnych predpisoch, resp. zmenu štátu, v ktorom sú poistení na sociálne zabezpečenie. Platí pre nich nasledovné:</p>
+<ul type="disc">
+<li>Ak zamestnanec alebo SZČO (s bydliskom na území Slovenska) začne vykonávať zárobkovú činnosť výlučne z domu, pričom doteraz vykonával zárobkovú činnosť výlučne v inom členskom štáte EÚ, <b>nie je potrebné túto zmenu oznámiť Sociálnej poisťovni</b>. Zamestnanec alebo SZČO <b>ostáva poistený na sociálne zabezpečenie v danom členskom štáte.</b> 
+</li>
+<li>Ak zamestnanec alebo SZČO začne vykonávať zárobkovú činnosť z domu, avšak stále vykonáva činnosť v inom členskom štáte EÚ (napr. pár dni v mesiaci vykonáva činnosť v sídle firmy), pričom doteraz vykonával zárobkovú činnosť výlučne v inom členskom štáte EÚ, <b>nie je potrebné túto zmenu oznámiť Sociálnej poisťovni, resp. žiadať Sociálnu poisťovňu o určenie uplatniteľnej legislatívy</b>. Zamestnanec alebo SZČO <b>ostáva poistený na sociálne zabezpečenie v danom členskom štáte EÚ.</b></li></ul>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<!-- BlockContent --><a id="10a" name="10a"></a>
+<h3>Kto a ako môže požiadať o odpustenie odvodov za apríl 2020</h3>
+<p>Zamestnávateľ alebo povinne poistená SZČO, ktorí mali v apríli 2020 uzatvorenú prevádzku na základe rozhodnutia príslušného orgánu najmenej na 15 dní, nie sú povinní zaplatiť poistné na sociálne poistenie za apríl 2020. Vyplýva to z novely zákona o sociálnom poistení, ktorá nadobudla účinnosť dňa 25. apríla 2020.</p>
+<p><b></b>&nbsp;</p>
+<p><b>Koho sa odpustenie odvodov týka?</b></p>
+<ul type="disc">
+<li>zamestnávateľov – v časti ich odvodov za zamestnávateľa, ktorí mali v apríli 2020 uzatvorenú najmenej 15 dní aspoň jednu svoju prevádzku. Možnosť odpustenia odvodov sa teda netýka časti poistného, ktoré odvádza zamestnávateľ za zamestnanca, 
+</li>
+<li>povinne poistených SZČO, ktoré mali v apríli 2020 uzatvorenú najmenej 15 dní aspoň jednu prevádzku. </li></ul>
+<p><b>Ako požiadať o odpustenie?</b></p>
+<p>Uzatvorenie prevádzky, ktorú zamestnávateľ alebo povinne poistená SZČO bola nútená uzatvoriť na základe Opatrenia Úradu verejného zdravotníctva Slovenskej republiky (<a href="http://www.uvzsr.sk/"><u>www.uvzsr.sk</u></a>) pri ohrození verejného zdravia, preukáže <b>čestným vyhlásením</b>, ktoré pošle príslušnej pobočke Sociálnej poisťovne najneskôr <b>do 18. mája 2020</b>. </p>
+<p><strong></strong>&nbsp;</p>
+<p><strong>Formulár je zverejnený tu: </strong></p>
+<p><a title="Čestné vyhlásenie o uzatvorení prevádzky (apríl 2020), doc, 51 kb" href="/ext_dok-06052020-vp-cestne-vyhlasenie-o-uzatvoreni-prevadzky/68627c">Čestné vyhlásenie na odpustenie odvodov</a> (verzia vo worde)</p>
+<p>Formulár možno zaslať príslušnej pobočke Sociálnej poisťovne i poštou (<a href="/kontakty---pobocky---pobocky-su-otvorene-pre-odovzdanie-zasielok-v-stredu-1300---1600-h--v-inych-pracovnych-dnoch-800---1100-h/48023s">Kontakty – pobočky).</a></p>
+<p>Vláda môže svojím nariadením v budúcnosti určiť aj ďalšie obdobia, v ktorých môže odpustiť platenie poistného. Zatiaľ ide o apríl 2020. </p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Nárok na dávky sa nemení</b></p>
+<p>Pri posúdenie nároku na nemocenskú alebo dôchodkovú dávku sa poistné za mesiac apríl 2020, ktoré bolo zamestnávateľovi alebo povinne poistenej SZČO odpustené, považuje za zaplatené. To isté platí aj v prípade dôchodkových dávok – dotknutých poistencov (aj sporiteľov v II. pilieri), ktoré sa pre odpustené odvody neznižujú. </p>
+<p>Ak zamestnávateľ prevádzkuje viac prevádzok a minimálne jednu z nich bol nútený na základe opatrenia zatvoriť, odpustenie platenia poistného za mesiac apríl 2020 si uplatňuje aj na tých zamestnancov, ktorí naďalej vykonávali pracovnú činnosť v ostatných prevádzkach.</p>
+<p><b></b>&nbsp;</p>
+<p><b>Ako zistím, že čestné vyhlásenie na odpustenia odvodov za apríl 2020 prišlo do Sociálnej poisťovne správne</b></p>
+<p>Zamestnávateľ alebo samostatne zárobkovo činná osoba (SZČO), ktorí zasielajú do Sociálnej poisťovne Čestné vyhlásenie na odpustenie odvodov za mesiac apríl 2020 teda nemusia telefonovať ani inak kontaktovať pobočku Sociálnej poisťovne, aby si prijatie svojej žiadosti o odpustenie odvodov za apríl overovali. </p>
+<p>Ak niektoré z identifikačných údajov vo formulári nevyplnili správne, bude ich kontaktovať miestne príslušná pobočka Sociálnej poisťovne so žiadosťou o nápravu a odoslanie správne vyplneného formuláru. O jeho úspešnom spracovaní bude Sociálna poisťovňa žiadateľov navyše informovať aj mailovou formou (nie však okamžite), ak uvedú svoju mailovú adresu.</p>
+<p><b></b>&nbsp;</p>
+<p><b>Povinnosť vykazovať poistné sa ani pri odpustení odvodov za apríl nemení</b></p>
+<p><b><u></u></b></p>
+<p>Sociálna poisťovňa upozorňuje, že zamestnávatelia sú aj v prípade odpustenia odvodov za časť zamestnávateľa za mesiac apríl 2020 povinní poistné na sociálne poistenie vykázať a predložiť mesačný výkaz poistného a príspevkov na starobné dôchodkové sporenie. Sú povinní tak urobiť v zákonom stanovených termínoch, v rovnakej štruktúre a forme. <b>Povinnosť vykazovať poistné na sociálne poistenie za mesiac apríl 2020 sa teda nemení.</b> Zachovaný zostáva aj spôsob vykazovania, tzn. zamestnávateľ vykazuje poistné za zamestnávateľa aj za zamestnanca a napriek tomu, že má odpustené odvody za časť zamestnávateľa, nevykazuje z tohto dôvodu nulové poistné.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<!-- BlockContent --><a id="10c" name="10c"></a>
+<h3>Kto a ako si môže odložiť zaplatenie odvodov za máj 2020</h3>
+<p>Dňa 6. apríla 2020 nadobudla účinnosť novela zákona o sociálnom poistení <i>(zákon č. 68/2020 Z. z., § 293ew zákona o sociálnom poistení),</i> ktorá umožňuje zamestnávateľom a samostatne zárobkovo činným osobám (SZČO) odklad splatnosti poistného na sociálne poistenie a dňa 22. mája 2020 nadobudlo účinnosť nariadenie vlády Slovenskej republiky č. 131/2020 o splatnosti poistného na sociálne poistenie v čase mimoriadnej situácie, núdzového stavu alebo výnimočného stavu vyhláseného v súvislosti s ochorením COVID-19.</p>
+<p><b></b></p>
+<p><b>Koho sa možnosť odkladu odvodov týka?</b></p>
+<ul type="disc">
+<li>zamestnávateľov v časti ich odvodov za zamestnávateľa. Možnosť odkladu odvodov sa teda netýka časti poistného, ktoré odvádza zamestnávateľ zamestnanca, kde naďalej platia pôvodné termíny splatnosti, 
+</li>
+<li>povinne poistených samostatne zárobkovo činných osôb (SZČO). </li></ul>
+<p><b>Podmienky na splnenie nároku na odklad splatnosti:</b></p>
+<p>Odklad splatnosti poistného sa týka zamestnávateľov a SZČO, ktorým v dôsledku mimoriadnej situácie poklesol čistý obrat alebo príjmy z podnikania a inej samostatnej zárobkovej činnosti <b>o 40 % a viac.</b></p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Spôsob určenia poklesu čistého obratu a príjmov z podnikania:</b></p>
+<p>Upravuje nariadenie vlády Slovenskej republiky č. 76/2020 Z. z. z 9. apríla 2020 o spôsobe určenia poklesu čistého obratu a príjmov z podnikania a z inej samostatnej zárobkovej činnosti v znení nariadenia vlády Slovenskej republiky č. 132/2020 Z. z. zo dňa 20. mája 2020.</p>
+<p>Tržbou je čistý obrat podľa § 2 ods. 15 zákona č. 431/2002 Z. z. o účtovníctve v znení zákona č. 333/2014 Z. z a príjem z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. Za tržbu sa nepovažuje plnenie poskytované v rámci projektov na podporu udržania pracovných miest, na ktorých sa vykonáva alebo prevádzkuje samostatná zárobková činnosť, a na podporu udržania zamestnancov v zamestnaní v súvislosti s vyhlásením mimoriadnej situácie, núdzového stavu alebo výnimočného stavu a odstránením ich následkov, ktoré schvaľuje MPSVaR SR alebo ÚPSVaR SR po schválení podmienok vládou SR a realizuje ÚPSVaR SR alebo úrad práce, sociálnych vecí a rodiny.</p>
+<p>Vláda svojim nariadením ustanovila spôsob, ako sa pre účely odkladu platenia odvodov za máj 2020 určí pokles tržieb:</p>
+<p>Pokles tržieb odvádzateľa sa určí porovnaním výšky tržieb za máj 2020 s výškou tržieb za mesiac:</p>
+<ul type="disc">
+<li>máj 2019, alebo ak odvádzateľ vykonával činnosť po celý rok 2019, s mesačným priemerom tržieb za rok 2019 <i>(podiel tržieb odvádzateľa dosiahnutých za rok 2019 a čísla 12)</i>, 
+</li>
+<li>február 2020, ak odvádzateľ nevykonával činnosť v mesiaci predchádzajúceho roka, ktorý sa označením zhoduje s aktuálnym mesiacom. </li></ul>
+<p>Pokles tržieb odvádzateľa sa určuje v percentách zaokrúhlených na celé číslo nahor.</p>
+<p>Spôsob určenia poklesu tržieb je v potrebné vyplniť v listinnej verzii formuláru (<a href="/ext_dok-27052020-vp-cestne-vyhlasenie---odklad-poistneho-za-05-2020/68676c">listinná podoba formuláru</a><u>)</u> pre preukázanie poklesu tržieb na účely odkladu odvodov za máj 2020 a listinne odoslať do Sociálnej poisťovne.</p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Poistné, na ktoré sa odklad splatnosti vzťahuje:</b></p>
+<p>Predĺžená splatnosť <b>až do 30. júna 2021 </b>platí na poistné <b>za</b> <b>máj 2020</b> (pôvodne splatné v mesiaci jún 2020).</p>
+<p>Vláda môže svojím nariadením v budúcnosti určiť aj ďalšie obdobia, v ktorých môže odložiť splatnosť poistného.</p>
+<p>Pre prihlasovanie, oznamovacie a vykazovacie povinnosti zamestnávateľa platia naďalej pôvodné termíny a lehoty.</p>
+<p>Ak zamestnávateľ alebo povinne poistená SZČO zaplatia poistné v novom termíne splatnosti, teda včas a v správnej výške, Sociálna poisťovňa im penále nepredpíše.</p>
+<p><a>Na účely posúdenia nároku na nemocenskú alebo dôchodkovú dávku sa poistné za mesiac máj 2020 považuje za zaplatené do uplynutia tretieho mesiaca po mesiaci, v ktorom skončí krízová situácia. Ak v tejto lehote poistenec nedoplatí dlžné poistné, bude povinný vrátiť dávku alebo jej časť odo dňa, od ktorého mu nepatrila alebo nepatrila v poskytovanej sume, ak je vyššia ako 5 eur</a>.</p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Spôsob, akým platiteľ oznámi pokles obratu, resp. príjmu z podnikania:</b></p>
+<ul type="disc">
+<li>Zaslaním/doručením listinnej verzie formuláru (ak nemáte prístup k internetu) tu: <a href="/ext_dok-27052020-vp-cestne-vyhlasenie---odklad-poistneho-za-05-2020/68676c">listinná podoba formuláru</a> – príslušnej pobočke Sociálnej poisťovne.&nbsp;&nbsp;&nbsp;&nbsp; </li></ul>
+<p>&nbsp;</p>
+<hr align="left" size="1" width="100%" noShade />
+<!-- BlockContent --><a id="10d" name="10d"></a>
+<h3>Kto a ako si môže odložiť zaplatenie odvodov za jún 2020</h3>
+<p>Dňa 24. júna 2020 nadobudlo účinnosť nariadenie vlády Slovenskej republiky č. 172/2020 Z. z., ktorým sa dopĺňa nariadenie vlády Slovenskej republiky č. 131/2020 Z. z. o splatnosti poistného na sociálne poistenie v čase mimoriadnej situácie, núdzového stavu alebo výnimočného stavu vyhláseného v súvislosti s ochorením COVID-19 a ktoré umožňuje zamestnávateľom a samostatne zárobkovo činným osobám (SZČO) odklad splatnosti poistného na sociálne poistenie za mesiac jún 2020.</p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Koho sa možnosť odkladu odvodov týka?</b></p>
+<ul type="disc">
+<li>zamestnávateľov v časti ich odvodov za zamestnávateľa. Možnosť odkladu odvodov sa teda netýka časti poistného, ktoré odvádza zamestnávateľ zamestnanca, kde naďalej platia pôvodné termíny splatnosti, 
+</li>
+<li>povinne poistených samostatne zárobkovo činných osôb (SZČO). </li></ul>
+<p><b>Podmienky na splnenie nároku na odklad splatnosti:</b></p>
+<p>Odklad splatnosti poistného sa týka zamestnávateľov a SZČO, ktorým v dôsledku mimoriadnej situácie poklesol čistý obrat alebo príjmy z podnikania a inej samostatnej zárobkovej činnosti <b>o 40 % a viac.</b></p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Spôsob určenia poklesu čistého obratu a príjmov z podnikania:</b></p>
+<p>Upravuje nariadenie vlády Slovenskej republiky č. 76/2020 Z. z. z 9. apríla 2020 o spôsobe určenia poklesu čistého obratu a príjmov z podnikania a z inej samostatnej zárobkovej činnosti v znení nariadenia vlády Slovenskej republiky č. 132/2020 Z. z. zo dňa 20. mája 2020.</p>
+<p>Tržbou je čistý obrat podľa § 2 ods. 15 zákona č. 431/2002 Z. z. o účtovníctve v znení zákona č. 333/2014 Z. z a príjem z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. Za tržbu sa nepovažuje plnenie poskytované v rámci projektov na podporu udržania pracovných miest, na ktorých sa vykonáva alebo prevádzkuje samostatná zárobková činnosť, a na podporu udržania zamestnancov v zamestnaní v súvislosti s vyhlásením mimoriadnej situácie, núdzového stavu alebo výnimočného stavu a odstránením ich následkov, ktoré schvaľuje MPSVaR SR alebo ÚPSVaR SR po schválení podmienok vládou SR a realizuje ÚPSVaR SR alebo úrad práce, sociálnych vecí a rodiny.</p>
+<p>Vláda svojim nariadením ustanovila spôsob, ako sa pre účely odkladu platenia odvodov za jún 2020 určí pokles tržieb:</p>
+<p>Pokles tržieb odvádzateľa sa určí porovnaním výšky tržieb za jún 2020 s výškou tržieb za mesiac:</p>
+<ul type="disc">
+<li>jún 2019, alebo ak odvádzateľ vykonával činnosť po celý rok 2019, s mesačným priemerom tržieb za rok 2019 <i>(podiel tržieb odvádzateľa dosiahnutých za rok 2019 a čísla 12)</i>, 
+</li>
+<li>február 2020, ak odvádzateľ nevykonával činnosť v mesiaci predchádzajúceho roka, ktorý sa označením zhoduje s aktuálnym mesiacom. </li></ul>
+<p>Pokles tržieb odvádzateľa sa určuje v percentách zaokrúhlených na celé číslo nahor.</p>
+<p>Spôsob určenia poklesu tržieb je v potrebné vyplniť v listinnej verzii formuláru pre preukázanie poklesu tržieb na účely odkladu odvodov za jún 2020 a listinne odoslať do Sociálnej poisťovne.</p>
+<p><b></b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Poistné, na ktoré sa odklad splatnosti vzťahuje:</b></p>
+<p>Predĺžená splatnosť <b>až do 30. júna 2021 </b>platí na poistné <b>za</b> <b>jún 2020</b> (pôvodne splatné v mesiaci júl 2020).</p>
+<p>Vláda môže svojím nariadením v budúcnosti určiť aj ďalšie obdobia, v ktorých môže odložiť splatnosť poistného.</p>
+<p>Pre prihlasovanie, oznamovacie a vykazovacie povinnosti zamestnávateľa platia naďalej pôvodné termíny a lehoty.</p>
+<p>Ak zamestnávateľ alebo povinne poistená SZČO zaplatia poistné v novom termíne splatnosti, teda včas a v správnej výške, Sociálna poisťovňa im penále nepredpíše.</p>
+<p>Na účely posúdenia nároku na nemocenskú alebo dôchodkovú dávku sa poistné za mesiac jún 2020 považuje za zaplatené do uplynutia tretieho mesiaca po mesiaci, v ktorom skončí krízová situácia. Ak v tejto lehote poistenec nedoplatí dlžné poistné, bude povinný vrátiť dávku alebo jej časť odo dňa, od ktorého mu nepatrila alebo nepatrila v poskytovanej sume, ak je vyššia ako 5 eur.</p>
+<p><strong></strong></p>
+<p><b></b>&nbsp;</p>
+<p><b>Spôsob, akým platiteľ oznámi pokles obratu, resp. príjmu z podnikania:</b></p>
+<ul>
+<li>Zaslaním/doručením listinnej verzie formuláru (ak nemáte prístup k internetu) tu: <a title="Preukázanie poklesu čistého obratu alebo poklesu príjmov z podnikania a z inej samostatnej zárobkovej činnosti o 40 % a viac (za jún 2020), doc, 55 kb" href="/ext_dok-24062020-vp-cv-jun/68751c">listinný formulár (jún)</a> – príslušnej pobočke Sociálnej poisťovne.&nbsp;&nbsp; </li></ul>
+<p>&nbsp;</p><!-- BlockContent -->
+<hr align="left" size="1" width="100%" noShade />
+<a id="10e" name="10e"></a>
+<h3 class="red">Kto a ako si môže odložiť zaplatenie odvodov za júl 2020</h3>
+<p>Dňa 21. júla 2020 nadobudlo účinnosť nariadenie vlády Slovenskej republiky č. 196/2020 Z. z., ktorým sa dopĺňa nariadenie vlády Slovenskej republiky č. 131/2020 Z. z. o splatnosti poistného na sociálne poistenie v čase mimoriadnej situácie, núdzového stavu alebo výnimočného stavu vyhláseného v súvislosti s ochorením COVID-19 v znení nariadenia vlády Slovenskej republiky č. 172/2020 Z. z. a ktoré umožňuje zamestnávateľom a samostatne zárobkovo činným osobám (SZČO) odklad splatnosti poistného na sociálne poistenie za mesiac júl 2020.</p>
+<p><b>Koho sa možnosť odkladu odvodov týka?</b></p>
+<ul type="disc">
+<li>zamestnávateľov v časti ich odvodov za zamestnávateľa. Možnosť odkladu odvodov sa teda netýka časti poistného, ktoré odvádza zamestnávateľ za zamestnanca, kde naďalej platia pôvodné termíny splatnosti, 
+</li>
+<li>povinne poistených samostatne zárobkovo činných osôb (SZČO). </li></ul>
+<p><b>Podmienky na splnenie nároku na odklad splatnosti:</b></p>
+<p>Odklad splatnosti poistného sa týka zamestnávateľov a SZČO, ktorým v dôsledku mimoriadnej situácie poklesol čistý obrat alebo príjmy z podnikania a inej samostatnej zárobkovej činnosti <b>o 40 % a viac.</b></p>
+<p>&nbsp;</p>
+<p><b>Spôsob určenia poklesu čistého obratu a príjmov z podnikania:</b></p>
+<p>Upravuje nariadenie vlády Slovenskej republiky č. 76/2020 Z. z. z 9. apríla 2020 o spôsobe určenia poklesu čistého obratu a príjmov z podnikania a z inej samostatnej zárobkovej činnosti a nariadenie vlády Slovenskej republiky č. 132/2020 Z. z. zo dňa 20. mája 2020, ktorým sa dopĺňa nariadenie vlády Slovenskej republiky č. 76/2020 Z. z. o spôsobe určenia poklesu čistého obratu a príjmov z podnikania a z inej samostatnej zárobkovej činnosti.</p>
+<p>Tržbou je čistý obrat podľa § 2 ods. 15 zákona č. 431/2002 Z. z. o účtovníctve v znení zákona č. 333/2014 Z. z a príjem z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. Za tržbu sa nepovažuje plnenie poskytované v rámci projektov na podporu udržania pracovných miest, na ktorých sa vykonáva alebo prevádzkuje samostatná zárobková činnosť, a na podporu udržania zamestnancov v zamestnaní v súvislosti s vyhlásením mimoriadnej situácie, núdzového stavu alebo výnimočného stavu a odstránením ich následkov, ktoré schvaľuje MPSVaR SR alebo ÚPSVaR SR po schválení podmienok vládou SR a realizuje ÚPSVaR SR alebo úrad práce, sociálnych vecí a rodiny.</p>
+<p>Vláda svojim nariadením ustanovila spôsob, ako sa pre účely odkladu platenia odvodov za júl 2020 určí pokles tržieb:</p>
+<p>Pokles tržieb odvádzateľa sa určí porovnaním výšky tržieb za júl 2020 s výškou tržieb za mesiac:</p>
+<ul type="disc">
+<li>júl 2019, alebo ak odvádzateľ vykonával činnosť po celý rok 2019, s mesačným priemerom tržieb za rok 2019 <i>(podiel tržieb odvádzateľa dosiahnutých za rok 2019 a čísla 12)</i>, 
+</li>
+<li>február 2020, ak odvádzateľ nevykonával činnosť v mesiaci predchádzajúceho roka, ktorý sa označením zhoduje s aktuálnym mesiacom. </li></ul>
+<p>Pokles tržieb odvádzateľa sa určuje v percentách zaokrúhlených na celé číslo nahor.</p>
+<p>Spôsob určenia poklesu tržieb je v potrebné vyplniť v elektronickej alebo listinnej verzii formuláru pre preukázanie poklesu tržieb na účely odkladu odvodov za júl 2020 a obratom elektronicky alebo listinne odoslať do Sociálnej poisťovne.</p>
+<p>&nbsp;</p>
+<p><b>Poistné, na ktoré sa odklad splatnosti vzťahuje:</b></p>
+<p>Predĺžená splatnosť <b>až do 31. decembra 2020</b> platí na poistné <b>za</b> <b>júl 2020</b> (pôvodne splatné v mesiaci august 2020).</p>
+<p>Vláda môže svojím nariadením v budúcnosti určiť aj ďalšie obdobia, v ktorých môže odložiť splatnosť poistného.</p>
+<p>Pre prihlasovanie, oznamovacie a vykazovacie povinnosti zamestnávateľa platia naďalej pôvodné termíny a lehoty.</p>
+<p>Ak zamestnávateľ alebo povinne poistená SZČO zaplatia poistné v novom termíne splatnosti, teda včas a v správnej výške, Sociálna poisťovňa im penále nepredpíše.</p>
+<p>Na účely posúdenia nároku na nemocenskú alebo dôchodkovú dávku sa poistné do uplynutia termínu jeho predĺženej splatnosti bude považovať za zaplatené.</p>
+<p>Príjemca dávky, ktorý nezaplatí poistné do uplynutia termínu predĺženej splatnosti, bude povinný vrátiť dávku alebo jej časť odo dňa, od ktorého mu nepatrila alebo nepatrila v poskytovanej sume, ak je vyššia ako 5 eur.</p>
+<p>&nbsp;</p>
+<p><b>Spôsob, akým platiteľ oznámi pokles obratu, resp. príjmu z podnikania:</b></p>
+<ul type="disc">
+<li>Zaslaním/doručením listinnej verzie formulára (ak nemáte prístup k internetu) tu: <u><a href="/ext_dok-23072020-vp-cv-julb/68829c"><u>listinná podoba formulára</u></a></u> – príslušnej pobočke Sociálnej poisťovne. </li></ul>
+<p><a href="/spatvzatie-cestneho-vyhlasenia--marec--april--maj--jun--jul-2020-/68832s"><b>Späťvzatie čestného vyhlásenia (za marec, apríl, máj, jún, júl 2020)</b></a>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><a id="10f" name="10f"></a>
+<h3 class="red">Kto a ako si môže odložiť zaplatenie odvodov za december 2020</h3>
+<p>Dňa 17. decembra 2020 nadobudlo účinnosť nariadenie vlády Slovenskej republiky č. 380/2020 Z. z., ktorým sa dopĺňa nariadenie vlády Slovenskej republiky č. 131/2020 Z. z. o splatnosti poistného na sociálne poistenie v čase mimoriadnej situácie, núdzového stavu alebo výnimočného stavu vyhláseného v súvislosti s ochorením COVID-19 v znení nariadenia vlády Slovenskej republiky č. 172/2020 Z. z. a nariadenia vlády č. 196/2020 Z. z., ktoré umožňuje zamestnávateľom a samostatne zárobkovo činným osobám (SZČO) odklad splatnosti poistného na sociálne poistenie za mesiac december 2020.</p>
+<p><b></b>&nbsp;</p>
+<p><b>Koho sa možnosť odkladu odvodov týka?</b></p>
+<ul type="disc">
+<li>zamestnávateľov v časti ich odvodov za zamestnávateľa. Možnosť odkladu odvodov sa teda netýka časti poistného, ktoré odvádza zamestnávateľ za zamestnanca, kde naďalej platia pôvodné termíny splatnosti, 
+</li>
+<li>povinne poistených samostatne zárobkovo činných osôb (SZČO). </li></ul>
+<p><b>Podmienky na splnenie nároku na odklad splatnosti:</b></p>
+<p>Odklad splatnosti poistného sa týka zamestnávateľov a SZČO, ktorým v dôsledku mimoriadnej situácie poklesol čistý obrat alebo príjmy z podnikania a inej samostatnej zárobkovej činnosti <b>o 40 % a viac.</b></p>
+<p><b></b>&nbsp;</p>
+<p><b>Spôsob určenia poklesu čistého obratu a príjmov z podnikania:</b></p>
+<p>Upravuje nariadenie vlády Slovenskej republiky č. 76/2020 Z. z. z 9. apríla 2020 o spôsobe určenia poklesu čistého obratu a príjmov z podnikania a z inej samostatnej zárobkovej činnosti a nariadenie vlády Slovenskej republiky č. 132/2020 Z. z. zo dňa 20. mája 2020, ktorým sa dopĺňa nariadenie vlády Slovenskej republiky č. 76/2020 Z. z. o spôsobe určenia poklesu čistého obratu a príjmov z podnikania a z inej samostatnej zárobkovej činnosti.</p>
+<p>Tržbou je čistý obrat podľa § 2 ods. 15 zákona č. 431/2002 Z. z. o účtovníctve v znení zákona č. 333/2014 Z. z a príjem z podnikania a z inej samostatnej zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. Za tržbu sa nepovažuje plnenie poskytované v rámci projektov na podporu udržania pracovných miest, na ktorých sa vykonáva alebo prevádzkuje samostatná zárobková činnosť, a na podporu udržania zamestnancov v zamestnaní v súvislosti s vyhlásením mimoriadnej situácie, núdzového stavu alebo výnimočného stavu a odstránením ich následkov, ktoré schvaľuje MPSVaR SR alebo ÚPSVaR SR po schválení podmienok vládou SR a realizuje ÚPSVaR SR alebo úrad práce, sociálnych vecí a rodiny.</p>
+<p>Vláda svojim nariadením ustanovila spôsob, ako sa pre účely odkladu platenia odvodov za december 2020 určí pokles tržieb:</p>
+<p>Pokles tržieb odvádzateľa sa určí porovnaním výšky tržieb za december 2020 s výškou tržieb za mesiac:</p>
+<ul type="disc">
+<li>december 2019, alebo ak odvádzateľ vykonával činnosť po celý rok 2019, s mesačným priemerom tržieb za rok 2019 <i>(podiel tržieb odvádzateľa dosiahnutých za rok 2019 a čísla 12)</i>, 
+</li>
+<li>február 2020, ak odvádzateľ nevykonával činnosť v mesiaci predchádzajúceho roka, ktorý sa označením zhoduje s aktuálnym mesiacom. </li></ul>
+<p>Pokles tržieb odvádzateľa sa určuje v percentách zaokrúhlených na celé číslo nahor.</p>
+<p>Spôsob určenia poklesu tržieb je v potrebné vyplniť v elektronickej alebo listinnej verzii formuláru pre preukázanie poklesu tržieb na účely odkladu odvodov za december 2020 a obratom elektronicky alebo listinne odoslať do Sociálnej poisťovne.</p>
+<p>&nbsp;</p>
+<p><b>Poistné, na ktoré sa odklad splatnosti vzťahuje:</b></p>
+<p>Predĺžená splatnosť <b>až do 30. júna 2021</b> platí na poistné <b>za</b> <b>december 2020</b> (pôvodne splatné v mesiaci január 2021).</p>
+<p>Pre prihlasovanie, oznamovacie a vykazovacie povinnosti zamestnávateľa platia naďalej pôvodné termíny a lehoty.</p>
+<p>Ak zamestnávateľ alebo povinne poistená SZČO zaplatia poistné v novom termíne splatnosti, teda včas a v správnej výške, Sociálna poisťovňa im penále nepredpíše.</p>
+<p>Na účely posúdenia nároku na nemocenskú alebo dôchodkovú dávku sa poistné za mesiac december 2020 považuje za zaplatené do uplynutia tretieho mesiaca po mesiaci, v ktorom skončí krízová situácia. Ak v tejto lehote poistenec nedoplatí dlžné poistné, bude povinný vrátiť dávku alebo jej časť odo dňa, od ktorého mu nepatrila alebo nepatrila v poskytovanej sume, ak je vyššia ako 5 eur.</p>
+<p>&nbsp;</p>
+<p><b>Spôsob, akým platiteľ oznámi pokles obratu, resp. príjmu z podnikania:</b></p>
+<ul type="disc">
+<li>Odoslaním elektronického formulára tu: využiť <a href="/cestne-vyhlasenie-december-2020/69161s"><u>elektronický formulár</u></a>. Zaslanie elektronickej verzie formuláru zabezpečí rýchlu spätnú väzbu o zapracovaní predĺženej splatnosti poistného. 
+</li>
+<li>Zaslaním/doručením listinnej verzie formulára (ak nemáte prístup k internetu) tu: <a href="/ext_dok-17122020-vp-cestne-vyhlasenie-odklad-poistneho-12-2020-v2/69184c">listinnú podobu formulára</a> – príslušnej pobočke Sociálnej poisťovne.&nbsp;&nbsp; </li></ul>
+<p>&nbsp;</p>
+<div style="HEIGHT: 2em; WIDTH: 100%; BACKGROUND-COLOR: #900">&nbsp;</div><a id="11" name="11"></a>
+<h3 class="red">Pandemické ošetrovné</h3>
+<p><strong>(ošetrovné vyplácané v súvislosti s pandémiou koronavírusu)</strong></p>
+<p><b class="red"></b>&nbsp;</p>
+<p><b class="red">Kto má nárok na pandemické ošetrovné (pandemickú OČR)?</b></p>
+<p>Pandemické ošetrovné je ošetrovné poskytované počas krízovej situácie. Na rozdiel od nepandemického ošetrovného sa poskytuje počas celej krízovej situácie, t. j. jeho poskytovanie nie je obmedzené na 10 dní. </p>
+<p>Nárok na pandemické ošetrovné majú <b>nemocensky poistené osoby (rodičia, náhradní rodičia, osvojitelia a vybrané dospelé osoby)</b>, ktoré <b>počas krízovej situácie </b>(od 12. marca 2020 do jej skončenia)<b> súvisiacej so šírením ochorenia COVID-19 </b>ošetrujú choré dieťa alebo sa starajú o zdravé dieťa alebo určenú kategóriu dospelých osôb.</p>
+<p>&nbsp;</p>
+<p class="red"><b>Za aké deti/dospelé osoby je možný nárok na pandemickú OČR?</b></p>
+<p>Nárok vznikne, ak sa poistenec stará o:</p>
+<ol>
+<li>
+<p>Nárok vznikne, ak sa poistenec stará o:</p>
+<ol type="1">
+<li><b>Zdravé dieťa do dovŕšenia 11. rokov veku (10 rokov + 364 dní) </b>– ak boli detské jasle, materská škola alebo škola, ktoré dieťa inak navštevuje uzatvorené rozhodnutím príslušných orgánov (nie zo zákona) alebo v nich bolo nariadené karanténne opatrenie – <b>netreba potvrdenie pediatra </b>
+</li>
+<li><b>Choré dieťa do dovŕšenia 16. rokov veku (15 rokov + 364 dní) </b>– t. j. dieťa, ktorému sa náhle zhoršil zdravotný stav alebo dieťa, ktoré nie je spôsobilé mentálne alebo fyzicky samé sa o seba postarať v období počas uzatvorenia školy v krízovej situácii – <b>potrebné potvrdenie pediatra na origináli Žiadosti o ošetrovné </b>
+</li>
+<li><b>Inak zdravé dieťa od dovŕšeného 11. roku veku do dovŕšenia 18. roku veku (17 rokov + 364 dní) s dlhodobo nepriaznivým zdravotným stavom</b> – ak bola škola, ktorú dieťa inak navštevuje uzavretá rozhodnutím príslušného orgánu (nie zo zákona) – <b>netreba potvrdenie pediatra</b> 
+</li>
+<li><b>Dieťa do začatia povinnej školskej dochádzky (spravidla 0 až 6 ročné),<br /></b><b>a, na ktoré doteraz rodič poberal rodičovský príspevok </b>z úradu práce<b> </b>bez ohľadu na to, či rodič ukončil rodičovskú dovolenku skôr, ako malo dieťa tri roky (alebo 6 rokov – dieťa s dlhodobo nepriaznivým zdravotným stavom) <b>alebo<br /></b><b>b,</b> ktoré nie je zapísané v detských jasliach alebo materskej škole ale <b>sa o toto dieťa starala/mala starať iná osoba, </b>ktorá sa počas krízovej situácie o toto dieťa nemôže starať (starý rodič, pestúnka) –– <b>netreba potvrdenie pediatra</b> 
+</li>
+<li><b>Osobu, ktorá sa inak o dieťa stará, ale počas</b> <b>koronakrízy je v karanténe/izolácii alebo ochorela – potrebné potvrdenie lekára osoby, ktorá je v karanténe/izolácii na origináli Žiadosti o ošetrovné</b> 
+</li>
+<li><b>Osobu, ktorá zabezpečuje starostlivosť o potomka, predka, blízkeho príbuzného (dieťa, vnuk, pravnuk; rodič, starý rodič, prastarý rodič; súrodenec, manžel/ka alebo rodič manžela/ky) </b>– ak bolo rozhodnutím príslušných úradov uzavreté zariadenie sociálnych služieb, v ktorom sa takejto osobe poskytuje sociálna služba ambulantnou alebo pobytovou formou – <b>netreba potvrdenie lekára</b> </li></ol>
+<p>&nbsp;</p></li></ol>
+<p class="red"><strong>Čo je v takomto prípade potrebné nahlásiť zamestnávateľovi?</strong></p>
+<p>V prípade, ak počas krízovej situácie budete ošetrovať blízkeho príbuzného, prekážku v práci a obdobie jej trvania musíte oznámiť zamestnávateľovi ním určeným spôsobom.&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p class="red"><b>Ako dlho sa môže pandemické ošetrovné poberať?</b></p>
+<p>Pandemické ošetrovné sa môže poberať počas celej doby trvania krízovej situácie za predpokladu, že trvá niektorá zo situácií, ktoré podmieňujú nárok na pandemické ošetrovné (napr. zavretie škôl alebo zariadení sociálnych služieb na základe rozhodnutia príslušného orgánu v súvislosti s krízovou situáciou, ochorenie dieťaťa do 16. roku veku, atď...). </p>
+<p>&nbsp;</p>
+<p class="red"><strong>Aká je výška pandemického ošetrovného?</strong></p>
+<p><b>Výška pandemického ošetrovného je približne 70% čistej mzdy (pre poistenca s priemernou mzdou).</b> Za deň je to 55% denného vymeriavacieho základu určeného najviac z dvojnásobku priemernej mzdy spred dvoch rokov. <b>Pozor, podrobnosti o tom, z ktorého obdobia sa výška mzdy určuje, sa dozviete </b><a href="/vyska-davky--vru/1294s#vyska-davky"><u>TU</u></a>.</p>
+<p>&nbsp;</p>
+<p class="red"><b>Má poistenec, ktorý sa stará o viacero detí/príbuzných nárok na viacero pandemických ošetrovných?</b></p>
+<p><b>Nie.</b> Za to isté obdobie ošetrovania aj viacerých osôb patrí iba jedno pandemické ošetrovné.</p>
+<p>&nbsp;</p>
+<p class="red"><b>Môžu sa poistenci pri ošetrovaní/starostlivosti a teda aj poberaní pandemického ošetrovného striedať?</b></p>
+<p><b>Áno. </b>Každý poistenec si však musí podať samostatnú žiadosť a na konci kalendárneho mesiaca musí každý sám za seba podať čestné vyhlásenie k žiadosti o ošetrovné. Ak sa napríklad o dieťa budú striedavo starať obaja nemocensky poistení rodičia, musia si obaja podať žiadosť o ošetrovné a na konci mesiaca obaja zašlú Sociálnej poisťovni čestné vyhlásenie k žiadosti o ošetrovné, počas ktorých dní sa o dieťa starala matka a počas ktorých dní otec. Sociálna poisťovňa následne vyplatí ošetrovné každému z rodičov za tie dni, počas ktorých sa o dieťa staral. Treba pripomenúť, že každý rodič má vlastnú výšku pandemického ošetrovného, ktorá sa odvíja od jeho mzdy a v jednom období sa o dieťa môže starať iba jeden rodič. </p>
+<p>&nbsp;</p>
+<p class="red"><b>Ako sa podáva žiadosť o pandemické ošetrovné?</b></p>
+<p>O pandemické ošetrovné je potrebné požiadať miestne príslušnú pobočku Sociálnej poisťovne telefonicky (linky však môžu byť preťažené), poštou, mailom (<a href="/e-mailove-adresy-pobociek-socialnej-poistovne/68395s"><b>E-mailové adresy pobočiek SP</b></a>) alebo elektronicky podaním elektronického webového formulára. Na celé obdobie poberania pandemického ošetrovného stačí každému poistencovi iba jedna žiadosť. To platí aj v prípade, ak poistenec podal žiadosť o ošetrovné pred 12. 3. 2020, ak nárok na pandemické ošetrovné od tohto dátumu trvá. Žiadosť nie je potrebné podať vopred. Postačí ju poslať aj na konci mesiaca spolu s čestným vyhlásením o tom, ktoré dni poistenec poskytoval starostlivosť/ošetrovanie.</p>
+<p>&nbsp;</p>
+<p class="red"><b>Platenie poistného a prerušenie poistného</b></p>
+<p>Nová právna úprava priniesla to, že ak zamestnanec alebo samostatne zárobkovo činná osoba (SZČO) v období krízovej situácie ošetruje alebo sa stará o osobu, ku ktorej si uplatňuje tzv. pandemické ošetrovné, ich poistenie sa od 11. dňa ošetrovania/starostlivosti neprerušuje, stále trvá. To okrem iného znamená, že aj tieto dni sa poistencovi započítavajú do nároku na dávky sociálneho poistenia (napr. dávky nemocenského poistenia, dôchodku).</p>
+<p>Zamestnanec a povinne poistená SZČO za dni, počas ktorých poskytuje takéto ošetrovanie/starostlivosť, neplatí poistné na sociálne poistenie. Za tieto dni ani zamestnávateľ takéhoto zamestnanca neplatí poistné na sociálne poistenie (okrem poistného na úrazové poistenie) a povinné príspevky na starobné dôchodkové sporenie.</p>
+<p>Táto nová právna úprava oslobodenia od povinnosti platiť poistné a neprerušenie poistenia zamestnanca a SZČO sa použije aj v období pred účinnosťou tejto novely zákona, ak toto ošetrovanie/starostlivosť vznikli pred a trvajú aj po jej účinnosti.</p>
+<p>V prípade, ak vám nevznikne nárok na pandemické ošetrovné, môžete za predpokladu splnenia podmienok čerpať ošetrovné podľa § 39 ods. 1 písm. a) zákona o sociálnom poistení. Informácie o podmienkach nároku nájdete <a href="/osetrovne/1294s">TU</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><a id="12" name="12"></a>
+<h3>Pandemické nemocenské</h3>
+<p><strong><strong>(nemocenské vyplácané v súvislosti s pandémiou koronavírusu)</strong></strong></p>
+<p><strong></strong>&nbsp;</p>
+<p>V porovnaní s bežným nemocenským vyplácaným počas dočasnej pracovnej neschopnosti (PN-ka) sa pandemické nemocenské, na ktoré vznikne nárok počas <b><u>krízovej situácie </u></b><u>(od 12. marca 2020 do jej skončenia)<b> súvisiacej so šírením ochorenia COVID 19</b></u> v prípade nariadenej karantény a izolácie vypláca aj zamestnancom od prvého dňa. To znamená, že ak ste zamestnanec a bola vám potvrdená dočasná pracovná neschopnosť z dôvodu nariadenej karantény alebo izolácie, už nežiadate zamestnávateľa o náhradu príjmu pri dočasnej pracovnej neschopnosti (na tú nemáte v týchto prípadoch nárok).<b> </b></p>
+<p><b>V takomto prípade:</b></p>
+<ol>
+<li><b>kontaktujete ošetrujúceho lekára (telefonicky alebo mailom</b>), ktorý vám na predpísanom tlačive potvrdí dočasnú práceneschopnosť z dôvodu karantény alebo izolácie a zašle ho do Sociálnej poisťovne (rovnaký postup uplatňujú aj SZČO a dobrovoľne poistené osoby), 
+</li>
+<li><b>vyplníte a odošlete elektronický formulár</b> tu: <a href="https://eformulare.socpoist.sk/sluzby/ziadost-o-nemocenske-bezeid" rel="noopener noreferrer" target="_blank"><b>ŽIADOSŤ O PANDEMICKÉ NEMOCENSKÉ (PN)</b></a>, ktorým si uplatníte nárok na výplatu pandemického nemocenského. (Pre nevyhnutné prípady zostáva v platnosti aj pdf formulár zverejnený 30. 10. 2020 tu: <a href="/ext_dok-30102020-np-pandemicka-ziadost-epn/69050c" rel="noopener noreferrer" target="_blank">Žiadosť o pandemické nemocenské – nárok uplatnený počas krízovej situácie</a>). </li></ol>
+<p>Zamestnanec by mal zamestnávateľa bezodkladne informovať o vzniku prekážky v práci.</p>
+<p><b>Od prvého dňa dočasnej pracovnej neschopnosti, v prípadoch kedy bola nariadená karanténa alebo izolácia</b> (zamestnancovi, SZČO, dobrovoľne poistenej osobe), Sociálna poisťovňa <b>bude vyplácať dávku vo výške 55% denného vymeriavacieho základu</b> (cca 70% hrubej mzdy). Pred účinnosťou aktuálnej právnej úpravy počas prvých troch dní dočasnej pracovnej neschopnosti patrila poistencovi v týchto prípadoch dávka (zamestnancovi náhrada príjmu pri dočasnej pracovnej neschopnosti a SZČO a dobrovoľne nemocensky poistenej osobe nemocenské) vo výške 25% denného vymeriavacieho základu.</p>
+<p><b></b>&nbsp;</p>
+<p><b>Pozor! Nárok na pandemické nemocenské vo výške 55% denného vymeriavacieho základu vzniká najskôr odo dňa účinnosti príslušnej novely zákona o sociálnom poistení, t.j. od 27. marca 2020.</b></p>
+<p><b>Príklad č. 1:</b> Dočasná pracovná neschopnosť vznikla zamestnancovi 20. marca 2020. Nárok na náhradu príjmu pri dočasnej pracovnej neschopnosti mu zamestnávateľ vyplatí za dni od. 20. marca 2020 do 26. marca 2020. Od 27. marca 2020 má zamestnanec nárok na nemocenské.</p>
+<p><b>Príklad č. 2:</b> Dočasná pracovná neschopnosť vznikla zamestnancovi 26. marca 2020. Nárok na náhradu príjmu mu zamestnávateľ vyplatí za 26. marca vo výške 25% denného vymeriavacieho základu. Od 27. marca má zamestnanec nárok na nemocenské vo výške 55% denného vymeriavacieho základu.</p>
+<p><b>Príklad č. 3:</b> Dočasná pracovná neschopnosť vznikla SZČO alebo dobrovoľne nemocensky poistenej osobe (resp. zamestnancovi, ktorému vznikol nárok na nemocenské v ochrannej lehote) 26. marca 2020. Za 26. marca 2020 mu patrí nemocenské vo výške 25% denného vymeriavacieho základu. Od 27. marca 2020 mu patrí nemocenské vo výške 55% denného vymeriavacieho základu. </p>
+<p>&nbsp;</p>
+<p><b>Ako je to s uznaním PN pri uzatvorení prevádzok?</b></p>
+<p>Sociálna poisťovňa upozorňuje, že nie je dôvod, aby ošetrujúci lekári uznávali pracovnú neschopnosť pre ochorenie COVID-19 zdravým osobám, ktoré nemôžu pracovať z dôvodu uzatvorenia prevádzky. Aktuálna právna úprava hovorí, že ak zamestnanec nemôže pracovať z dôvodu, že jeho zamestnávateľovi bola zastavená činnosť na základe rozhodnutia príslušného orgánu alebo v dôsledku vyhlásenia mimoriadnej situácie, núdzového stavu alebo výnimočného stavu, <b>ide o prekážku na strane zamestnávateľa. </b>Zamestnávateľ neprítomnosť zamestnanca v práci ospravedlní a vyplatí mu 80% jeho priemerného zárobku, najmenej však v sume minimálnej mzdy. To isté platí aj v prípade, ak zamestnávateľ uzatvoril prevádzku na základe vlastného dobrovoľného rozhodnutia.</p>
+<p>V prípade, ak sa poistenec z vlastného rozhodnutia nezúčastní celoplošného testovania, nemá nariadené karanténne opatrenie alebo izoláciu. Pre takéhoto poistenca platí zákaz vychádzania s výnimkami uvedenými v aktuálnom uznesení vlády SR. Z uvedeného dôvodu takémuto poistencovi nebude potvrdená dočasná pracovná neschopnosť pre karanténne opatrenie alebo izoláciu a v prípade, ak pre zákaz vychádzania nemôže prísť do práce, ide o prekážku na strane zamestnanca, ktorú môžu zamestnávatelia riešiť individuálne.</p>
+<p><b>Dočasnú pracovnú neschopnosť z dôvodu karantény alebo izolácie môže ošetrujúci lekár uznať iba v prípadoch stanovených</b> rozhodnutím Úradu verejného zdravotníctva alebo niektorého z regionálnych úradov verejného zdravotníctva. Nárok na pandemické nemocenské majú iba poistenci, ktorých dočasná pracovná neschopnosť bola uznaná z dôvodu karanténneho opatrenia alebo izolácie.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong></strong>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong></strong></p>
+<p>&nbsp;</p>
+
+
+						  <!-- </div> -->
+				</div>
+			<!-- </div> -->
+			
+	<!--MAIN CONTAINER END-->
+									<!--content_footer BEGINN-->
+				<!--noindex-->
+																							<p class="document-text-footer">								 </p>
+                <div style="height: 10px" class="document-text-footer-bar">
+				<!-- <a href="/index/index.php?ids=68337&amp;addfav=true" title="Odkazy na obľúbené stránky nájdete vpravo hore">Pridať do obľúbených stránok</a> -->
+				<!--<a href="javascript:" onclick="window.print(); return false;">TLAČIŤ</a>-->
+				                <!--<input type="image" src="https://img.socpoist.sk/images/bt_poslat_red.gif" />
+                <input type="image" src="https://img.socpoist.sk/images/bt_stiahnut_red.gif" />-->
+				<div class="reset"></div>
+                </div>
+																																																																							
+					<!-- Koniec divu right -->
+													</div>				
+							
+					<!-- END Koniec divu right -->
+				<!--/noindex-->
+				<!--content_footer END-->	
+												
+			</td>
+          </tr>
+        </table>
+		</div><!-- RIGHT SLICE BEGINN-->
+	  <!-- </td>
+      <td valign="top" id="main_right"> -->
+	<!--noindex-->
+		<div id="white-space"></div>
+										<!-- <a href="/rss/"><img alt="RSS" src="../photos/images/rss_26.gif" /></a> -->
+							<!--/noindex-->
+	 <!--  </td>
+    </tr> -->
+<!-- RIGHT SLICE END-->
+
+<!--FOOTER BEGINN-->
+<!-- 	<tr>
+      <td colspan="2" id="footer"> -->
+	<!--noindex-->
+														<div id="footer" class="footer"><a style="HEIGHT: 32px; WIDTH: 91px; FLOAT: left; MARGIN: 3px 46px; DISPLAY: block" href="http://www.blindfriendly.sk/" target="_blank"><img border="0" alt="" src="../../../../../../../../../../../../../photos/trans.gif" width="91" align="left" height="32" /></a> 
+<div style="MARGIN-TOP: 5px">Copyright © Sociálna poisťovňa, ústredie, Ul. 29. augusta č. 8 a 10, 813 63 Bratislava 1<br />Pre otázky mailom využite <a style="FONT-WEIGHT: bold; COLOR: #ffffff" href="/callcentrum">Formulár pre otázky</a>,&nbsp; Technický prevádzkovateľ: <a style="COLOR: #ffffff" href="/kontakty-/48001s">webmaster@socpoist.sk</a> 
+<div style="CLEAR: left"></div></div></div>
+									<!--/noindex-->
+		<!-- </td>
+    </tr>
+  </table> -->
+  </div>
+</body>
+</html>
+<!--FOOTER END-->	

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="baseUrl" content="/ellawebsite/" />
+    <meta name="language" content="NL" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- generics -->
+    <link rel="icon" href="/ellawebsite/Content/Images/New favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/ellawebsite/Content/Images/New apple-icon-57x57.png" sizes="57x57">
+    <link rel="icon" href="/ellawebsite/Content/Images/New apple-icon-76x76.png" sizes="76x76">
+    <link rel="icon" href="/ellawebsite/Content/Images/New favicon-96x96.png" sizes="96x96">
+    <!-- Android -->
+    <link rel="shortcut icon" href="/ellawebsite/Content/Images/New android-icon-196x196.png" sizes="196x196">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/ellawebsite/Content/Images/New apple-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/ellawebsite/Content/Images/New apple-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/ellawebsite/Content/Images/New apple-icon-180x180.png" sizes="180x180">
+    <!-- windows -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/ellawebsite/Content/Images/New ms-icon-144x144.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="/ellawebsite/bundles/style?v=aD9hT5DZSC75XI0MNE1pzd9zF9wZmHmBvPiH7AMECEw1" rel="stylesheet"/>
+
+    <script src="/ellawebsite/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <title>Ella - Onbekend</title>
+    <script>
+        location.domain = "sdnew.be";
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-364732-62', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+<!-- Hotjar Tracking Code for http://ella.sd.be -->
+
+</head>
+
+<body class="fulllayout article-page legalnews internet" data-feedback-url="/ellawebsite/feedback" data-store-event-url="/ellawebsite/storeevent" >
+    <header>
+        <div id="feedback-button">
+            Feedback
+        </div>
+        <!-- NAVIGATION -->
+        <section class="ella-header clearfix">
+            <span class="ella-header--title">
+                <img src="/ellawebsite/Content/Images/SDWorx_logo_normal.svg" />
+                <a href="/ellawebsite/">ella</a>
+            </span>
+            <nav class="ella-header--navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <ul class="menu">
+                    <li ><a href="/ellawebsite/">Home</a></li>
+                        <li ><a href="/ellawebsite/nl/sector">Mijn sector</a></li>
+                    <li class="submenu "><span>Sociaal recht</span>
+                        <ul style="width:270%">
+                            <li><a href="/ellawebsite/nl/division/sd1114">Arbeidsrecht</a></li>
+                            <li><a href="/ellawebsite/nl/division/sd1115">Sociale zekerheid</a></li>
+                            <li><a href="/ellawebsite/nl/division/dv00349">Sociaal strafrecht</a></li>
+                            <li><a href="/ellawebsite/nl/division/sd1226">Loonfiscaliteit</a></li>
+                            <li><a href="/ellawebsite/nl/division/dv00662">Internationale arbeidsrelatie</a></li>
+                            <li><a href="/ellawebsite/nl/dossier">Meest gestelde vragen</a></li>
+                        </ul>
+                    </li>
+                    <li ><a href="/ellawebsite/nl/about">Over Ella</a></li>
+                </ul>
+                    <div class="autosuggest-wrapper">
+                        <form>
+                            <div class="search-autocomplete" data-suggest-url="/ellawebsite/nl/home/suggest" data-search-url="/ellawebsite/nl/search">
+                                <input type="text" class="form-control search-autocomplete--input" id="search" name="" placeholder="Waar bent u naar op zoek?">
+                                <button class="btn" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                                    <a href="/ellawebsite/nl/home/login?returnurl=%252fellawebsite%252fnl%252flegalnews%252fce85102f-0ba3-409d-80d8-761e77a51b3" class="button login">Aanmelden</a>
+                <ul class="language">
+                    <li>
+                        <a class="active" href="/ellawebsite/nl/legalnews/ce85102f-0ba3-409d-80d8-761e77a51b3">nl</a>
+                        <a class="" href="/ellawebsite/fr/legalnews/ce85102f-0ba3-409d-80d8-761e77a51b3">fr</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+    <section class="article-context breadCrumb module">
+        <ul>
+
+        </ul>
+    </section>
+
+    <section id="wrapper" class="fulllayout clearfix" tabindex="0">
+        
+        <section id="content">
+            
+
+<aside class="print-overview">
+    <h1>Geselecteerde artikels</h1>
+    <ul></ul>
+    <a class="button" onclick="printArticles()">
+        <span>Afdrukken</span>
+        
+    </a>
+    
+</aside>
+
+<aside class="content-tree">
+<div id="no-subscriber-widget" class="ui-widget-content paywall-dialog clearfix" data-action-url="/ellawebsite/nl/about/registertrialsubscription">
+<form action="/ellawebsite/nl/legalnews/ce85102f-0ba3-409d-80d8-761e77a51b3" method="post"><input id="ViewName" name="ViewName" type="hidden" value="NoSubscriberWidget" /><input data-val="true" data-val-required="The HasTrialSubscription field is required." id="HasTrialSubscription" name="HasTrialSubscription" type="hidden" value="False" />        <div class="no-subscriber">
+            <h3>Geen abonnee?</h3>
+            <div class="no-subscriber-content">
+                <p>
+                    Profiteer nu van onze <span class="conditions">scherpe voorwaarden</span> en neem een abonnement.
+                </p>
+                <a href="/ellawebsite/nl/about#pricing" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" type="button">
+                    <span class="ui-button-text">Bekijk onze abonnementen ></span>
+                </a>
+                <p></p>
+<p>Wilt u eerst eens proberen?</p>                    <a href="/ellawebsite/nl/about#try" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only secondary" role="button" type="button">
+                        <span class="ui-button-text">Probeer 3 weken gratis ></span>
+                    </a>
+            </div>
+        </div>
+</form></div>
+
+
+
+</aside>
+
+<div class="article-container" tabindex="-1">
+
+<article class="legalnews" id="ce85102f-0ba3-409d-80d8-761e77a51b3" data-item-pc="" data-item-context="" data-item-type="legalnews" data-previous-item-url=""  data-next-item-url="">
+    <div class="actions">
+
+            <a class="button" alt="email" href="mailto:?subject=Onbekend&body=https://www.sd.be/ellawebsite/nl/legalnews/ce85102f-0ba3-409d-80d8-761e77a51b3">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a class="button" alt="Afdrukken" onclick='printArticle("ce85102f-0ba3-409d-80d8-761e77a51b3")'>
+                <i class="fa fa-print" aria-hidden="true"></i>
+            </a>
+
+</div>
+
+        <div id="sectorFicheTitel">Onbekend</div>
+        <div id="sectorFicheInhoud">Onbekend</div>
+</article>
+</div>
+
+
+
+<div id="action-failed-dialog" data-dialog-error="action-failed">
+    <img class="ella" src="/ellawebsite/Content/Images/ella.png" />
+    <div class="content">
+        <h3>Oeps,</h3>
+        <div class="left">
+            <p>Onze excuses, er is iets fout gelopen.</p>
+            <p>Probeert u het later eens opnieuw.</p>
+        </div>
+    </div>
+</div>
+
+
+        </section>
+        
+        <div id="article-vote-feedback" class="vote-feedback" data-feedback="legalnews:ce85102f-0ba3-409d-80d8-761e77a51b3">
+            <div class="vote-feedback-content">
+                
+                <div class="vote-feedback--no-vote">
+                    <p>Was deze informatie nuttig voor u?</p>
+                    <span>
+                        <a class="button" onclick="StorePositive()">Ja</a>
+                        <a class="button" onclick="StoreNegative()">Nee</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+    <footer>
+        <section class="bottom-footer">
+            <div class="wrapper-footer clearfix" id="footer">
+                <p>powered by © SD Worx 2021</p>
+                <nav>
+	<ul>
+		<li>
+			<a href="https://www.sdworx.be/nl-be/corporate/footer/gebruiksvoorwaarden-ella" target="_blank">
+				Gebruiksvoorwaarden
+			</a>
+		</li>
+		<li>
+			<a href="http://www.sdworx.be/nl-be/corporate/footer/privacy" target="_blank">
+				Privacy
+			</a>
+		</li>
+		<li>
+			<a href="http://www.sdworx.be/nl-be/corporate/footer/cookieverklaring" target="_blank">
+				Cookieverklaring
+			</a>
+		</li>
+	</ul>
+</nav>
+                <ul class="legend">
+                    <li class="legend--item recent">Recent gewijzigd</li>
+                    <li class="legend--item interpretatie">Interpretatie (intern)</li>
+                    <li class="legend--item loontechnisch">Loontechnisch (intern)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- END BOTTOM FOOTER-->
+
+    </footer>
+    <div class="overlay">
+        <div class="background">
+        </div>
+    </div>
+<div class="feedback-dialog" id="feedback-dialog" data-dialog-button-cancel-text="Annuleren" data-dialog-button-ok-text="Versturen" title="Jouw feedback is belangrijk!">
+    <div>
+        <form>
+            <div class="kind">
+                <h3>Welke van de volgende beschrijft jouw feedback het best?</h3>
+                <input id="r1" type="radio" name="type" value="PositiveExperience" checked><label for="r1">Positieve ervaring</label><br>
+                <input id="r2" type="radio" name="type" value="FeatureSuggestion"><label for="r2">Suggestie voor bijkomende mogelijkheden</label><br>
+                <input id="r3" type="radio" name="type" value="DocumentsLoadIncorrectly"><label for="r3">Opladen van pagina verloopt niet correct</label><br>
+                <input id="r4" type="radio" name="type" value="ICantFindSomething"><label for="r4">Ik kan iets niet vinden</label><br>
+                <input id="r5" type="radio" name="type" value="WebsiteWontLoad"><label for="r5">De website laadt niet</label><br>
+                <input id="r6" type="radio" name="type" value="other"><label for="r6">Andere</label>
+            </div>
+            <h3>Jouw feedback</h3>
+            <textarea name="feedback" id="feedback"></textarea>
+        </form>
+    </div>
+</div>
+<div id="alert-old-browser-dialog"
+     title="Opgelet"
+     data-dialog-ok-text="Ok">
+     De versie van de browser die U gebruikt is niet optimaal voor deze website. De meeste functies zullen niet goed werken. De versie die u gebruikt wordt ook niet meer ondersteund door Microsoft en hierdoor loopt u security risico’s. Om de veiligheid en privacy van uw data te kunnen blijven garanderen, raden wij aan om zo snel mogelijk naar Internet Explorer 11 te upgraden of de laatste versie van een andere browser te gebruiken.
+</div>
+<div class="clearfix"></div>
+    <script src="/ellawebsite/bundles/jquery?v=tJNuEpatv5DeUJMMGBGPCYw_x333uSkgpksgQgfFerU1"></script>
+
+    <script src="/ellawebsite/bundles/ella?v=FyW9SNOw4uR2CVa5rEq3Nyvydxn-pk9-U9lQykKJhcY1"></script>
+
+    
+    <script type="text/javascript">
+        function registerTrialSubscription() {
+            postForm('no-subscriber-widget');
+        }
+
+        function postForm(widgetId) {
+            var $dialog = $('#' + widgetId);
+            var url = $dialog.data('action-url');
+            ga('send', 'event', $dialog[0].id, 'click', location.href);
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: 'application/json; charset=utf-8',
+                data: serializeForm($dialog),
+                dataType: "html",
+                success: function(data) {
+                    if ($(data)[0].id === $dialog[0].id) {
+                        $dialog.html($(data).html());
+                    } else {
+                        $dialog.after($(data));
+                        $(data).elladialog(true);
+                    }
+                },
+                error: function() {
+                    $('#action-failed-dialog').elladialog(true);
+                },
+                complete: function() {
+                }
+            });
+
+        }
+
+        function showTrialSubscriptionDialog() {
+            var $dialog = $('#trial-subscription-dialog');
+            if ($dialog.length === 0) {
+                return;
+            }
+            $dialog.elladialog(false);
+        }
+
+        function showTrialSubscriptionSucceededDialog() {
+            var $dialog = $('#trial-subscription-succeeded-dialog');
+            if ($dialog.length === 0) {
+                return;
+            }
+            $dialog.elladialog(false);
+        }
+
+        function showTrialSubscriptionReminderDialog() {
+            var $dialog = $('#trial-subscription-reminder-dialog');
+            if ($dialog.length === 0) {
+                return;
+            }
+            $dialog.elladialog(true);
+        }
+
+        function showPremiumProtectedContentDialog() {
+            var $dialog = $('#premium-protected-content-dialog');
+            if ($dialog.length === 0) {
+                return;
+            }
+            $dialog.elladialog(true);
+        }
+
+        function showTrialSubscriptionExpiredDialog() {
+            var $dialog = $('#trial-subscription-expired-dialog');
+            if ($dialog.length === 0) {
+                return;
+            }
+            $dialog.elladialog(true);
+        }
+
+        function subscribeUser() {
+
+            var $dialog = $('#trial-subscription-dialog');
+
+            $.ajax({
+                type: "POST",
+                url: "subscribeuser",
+                contentType: 'application/json; charset=utf-8',
+                data: serializeForm($dialog),
+                dataType: "html",
+                success: function(data) {
+                    if ($(data)[0].id === $dialog[0].id) {
+                        $dialog.html($(data).html());
+                    } else {
+                        $dialog.dialog("close");
+                        $dialog.after($(data));
+                        $(data).elladialog(true);
+                    }
+                },
+                error: function() {
+                    $('#action-failed-dialog').elladialog(true);
+                },
+                complete: function() {
+                }
+            });
+        }
+
+        function trialSubscriptionSucceededDialogOk() {
+            location.href = location.href;
+        }
+
+        function appendNextArticle(container, onComplete) {
+            var article = container.find("article:last");
+            var url = article.data("next-item-url");
+            var type;
+            var id;
+            if (url.trim() !== "") {
+                $.showOverlay();
+                $.ajax({
+                    url: url,
+                    dataType: "html",
+                    success: function (data) {
+                        var $data = $(data);
+                        var newArticle = findArticle($data);
+                        id = newArticle.attr('id');
+                        type = newArticle.data('item-type');
+                        container.append(data);
+                        initializeTooltips(id);
+                    },
+                    complete: function() {
+                        $.hideOverlay();
+                        StoreEvent("down", "scroll", type + ":" + id);
+                        onComplete();
+                    }
+                });
+            } else {
+                onComplete();
+            }
+        }
+
+        function findArticle($data) {
+            for (var i = 0; i < $data.length; i++) {
+                if ($data[i].tagName === "ARTICLE") {
+                    return $($data[i]);
+                }
+                var article = $($data[i]).find("article");
+                if (article.length !== 0) {
+                    return article;
+                }
+            }
+            return undefined;
+        }
+
+        function prependPreviousArticle(container, onSuccess) {
+            var article = container.find("article:first");
+            var url = article.data("previous-item-url");
+            var id, type;
+
+            if (url.trim() !== "") {
+                $.showOverlay();
+                $.ajax({
+                    url: url,
+                    dataType: "html",
+                    success: function (data) {
+                        var $data = $(data);
+                        var newArticle = findArticle($data);
+                         
+                        id = newArticle.attr('id');
+                        type = newArticle.data('item-type');
+
+                        container.prepend($data);
+                        initializeTooltips(id);
+                        article[0].scrollIntoView();
+                    },
+                    complete: function() {
+                        $.hideOverlay();
+                        StoreEvent("up", "scroll", type + ":" + id);
+                        onSuccess();
+                    }
+                });
+            } else {
+                onSuccess();
+            }
+        }
+
+        function initializePcSwitches(id) {
+            var fiche = $("#" + id);
+            fiche.find(".applicable a").click(
+                function(event) {
+                    event.preventDefault();
+                    location.href = "/ellawebsite/nl/article" +
+                        "/fiche/" +
+                        id +
+                        "?pc=" +
+                        $(this).text();
+                }
+            );
+        }
+
+        function initializeTooltips(articleId) {
+            console.log(articleId);
+            $("#" + articleId).find(".toelichting").tooltip({
+                items: ".toelichting",
+                content: function() {
+                    var id = $(this).data("toelichting");
+                    var html = $("#" + articleId + " #" + id).html();
+                    if (html === "") {
+                        html = "Niet gevonden";
+                    }
+                    return html;
+                },
+                position: { my: "left+15 center", at: "right center" }
+            });
+        }
+
+        function fillContainer() {
+            var container = $(".article-container");
+            var article = container.find("article:last");
+            var nextId = article.data("next-item-url");
+            if (nextId.trim() === "") {
+                article.css({ marginBottom: container.height() + "px" });
+                scrollListener();
+                return;
+            }
+
+            if (container.get(0).scrollHeight <= container.height()) {
+                appendNextArticle(container, fillContainer);
+            } else {
+                scrollListener();
+            }
+        }
+
+        function nop() {}
+
+        function scrollListener() {
+            var container = $('.article-container');
+            var articles = container.find('article');
+            var top = container.position().top + 100;
+
+            articles.each(function() {
+                var articleTop = $(this).position().top;
+                if (top <= articleTop + $(this).height() && articleTop <= top) {
+                    setActiveItemInContentTree(this.id);
+                }
+            });
+            var lastArticle = container.find("article:last");
+            var lastItemUrl = lastArticle.data("next-item-url");
+
+            if (lastItemUrl !== "" && container.height() + container.scrollTop() >= container.get(0).scrollHeight - 50
+            ) {
+                appendNextArticle(container, scrollListener);
+                return;
+            }
+
+            var firstArticle = container.find("article:first");
+            var previousItemUrl = firstArticle.data("previous-item-url").trim();
+
+            if (previousItemUrl !== "" && container.scrollTop() <= 50) {
+                prependPreviousArticle(container, scrollListener);
+                return;
+            }
+
+            setTimeout(scrollListener, 200);
+        };
+
+        function toggleRelatedContent(id) {
+            var article = $("article#" + id);
+            var type = article.data("item-type");
+            var action = article.is(':visible') ? "close" : "open";
+            StoreEvent("open", "relatedcontent", type + ":" + action);
+            article.find(".relatedContent").toggle();
+        }
+
+        function printArticle(id) {
+            //$(".print").removeClass("print");
+            //var element = $("#" + id);
+            var $printOverview = $(".print-overview");
+            var article = $("article#" + id);
+            if (article.hasClass("print")) {
+                article.removeClass("print");
+                var listItem = $printOverview.find("li[data-article-id=" + id + "]");
+                listItem.remove();
+                var listItems = $printOverview.find("li");
+                if (listItems.length === 0) {
+                    $printOverview.hide();
+                    $(".content-tree").show();
+                }
+            } else {
+                article.addClass("print");
+                var title = "unknown";
+                var $title = article.find("#sectorFicheTitel").clone();
+                if ($title.length !== 0) {
+                    $title.find(".applicable").remove();
+                    title = $title.html();
+                } else {
+                    $title = article.find("#questorTitel").clone();
+                    if ($title.length !== 0) {
+                        title = $title.html();
+                    } else {
+                        $title = article.find("#titel").clone();
+                        if ($title.length !== 0) {
+                            $title.find("#herkomst").remove();
+                            title = $title.html();
+                        }
+                    }
+                }
+                //var removeButton = "<i class='fa fa-remove' onclick='removeSelection()'></i>";
+                var li = "<li data-article-id='" +
+                    id +
+                    "'><i class='fa fa-remove' onclick='removeSelection(event)'></i><span class='title'>" +
+                    title +
+                    "</span></li>";
+                $printOverview.find("ul").append(li);
+                $printOverview.show();
+                $(".content-tree").hide();
+            }
+        }
+
+        function printArticles() {
+            //var type = article.data("item-type");
+            //StoreEvent("print", "click", type + ":" + id);
+            window.print();
+            //article[0].scrollIntoView();
+        }
+
+        function clearSelectedArticles() {
+            $(".print").removeClass("print");
+            var $printOverview = $(".print-overview");
+            $printOverview.find("ul").html("");
+            $printOverview.hide();
+            $(".content-tree").show();
+        }
+
+        function removeSelection(event) {
+            var $listItem = $(event.target).parents("li").first();
+            var articleId = $listItem.data("article-id");
+            $("#" + articleId).removeClass("print");
+            $listItem.remove();
+            var $listItems = $(".print-overview li");
+            if ($listItems.length === 0) {
+                $(".print-overview").hide();
+                $(".content-tree").show();
+            }
+        }
+
+
+        function trackCopy() {
+            $(".article-container").on('copy',
+                function(event) {
+                    var selection = window.getSelection();
+                    var text = selection.toString();
+                    var article = $(event.originalEvent.srcElement).parents('article');
+                    var id = article[0].id;
+                    var type = article.data('item-type');
+                    var data = {
+                        id: id,
+                        type: type,
+                        text: text
+                    };
+                    StoreEvent('copy', '', JSON.stringify(data));
+                });
+        }
+
+        function setActiveItemInContentTree(id) {
+            var $currentContext = $("#content > .article-context");
+            var currentId = $currentContext.data("id");
+            if (currentId === id) {
+                return;
+            }
+
+            var currentActive = $('aside.content-tree .active');
+            currentActive.removeClass("active");
+            var $treeItem = $("#tree-" + id);
+            $treeItem.addClass("active");
+            $treeItem.parents(".ella-content-tree-item").addClass("active");
+        }
+
+        function StorePositive() {
+            var articleVoteFeedback = $('#article-vote-feedback');
+            if (articleVoteFeedback.length === 0) {
+                return;
+            }
+
+            localStorage.setItem("feedback." + articleVoteFeedback.data('feedback'), 'positive');
+            StoreEvent('positive', 'feedback', articleVoteFeedback.data('feedback'));
+            articleVoteFeedback.hide();
+        }
+
+        function StoreNegative() {
+            var articleVoteFeedback = $('#article-vote-feedback');
+            if (articleVoteFeedback.length === 0) {
+                return;
+            }
+
+            localStorage.setItem("feedback." + articleVoteFeedback.data('feedback'), 'negative');
+            StoreEvent('negative', 'feedback', articleVoteFeedback.data('feedback'));
+            openFeedbackDialog(true);
+        }
+
+        function initVoteFeedback() {
+            var articleVoteFeedback = $('#article-vote-feedback');
+            if (articleVoteFeedback.length === 0) {
+                return;
+            }
+            if (typeof (Storage) !== "undefined") {
+                var item = localStorage.getItem("feedback." + articleVoteFeedback.data('feedback'));
+                if (item != null) {
+                    return;
+                }
+            }
+
+            articleVoteFeedback.find('.vote-feedback-close').click(function() {
+                StoreEvent('closed', 'feedback', articleVoteFeedback.data('feedback'));
+                articleVoteFeedback.hide();
+            });
+
+            setTimeout(function() {
+                    $('#article-vote-feedback').show();
+                },
+                10000);
+        }
+
+        function initializeCallToAction(id, type) {
+            if (type !== "legalnews") {
+                return;
+            }
+            if (isIntranetVersion()) {
+                return;
+            }
+            $.ajax({
+                //url: "/ellawebsite/nl/legalnews/cta/fd735f28-5bfd-44e7-be92-6cb6ac9e0c56-bad",
+                url: "/ellawebsite/nl/legalnews/cta/ce85102f-0ba3-409d-80d8-761e77a51b3",
+                type: "GET",
+                dataType: "html",
+                success: function (data) {
+                    $("aside").append(data);
+                },
+                error: function (jqXHR, exception) {
+                    //alert("error");
+                }
+            });
+        }
+
+        function isIntranetVersion() {
+            return $("body").hasClass("intranet");
+        }
+        function showLegend() {
+            var $article = $("article");
+            var type = $article.data("item-type");
+            var $legend = $(".bottom-footer .legend");
+            if (type === "internalfiche") {
+                $legend.addClass("applicable");
+                $legend.find(".legend--item").addClass("applicable");
+            }
+            else if (type === "fiche") {
+                $legend.addClass("applicable");
+                $legend.find(".legend--item.recent").addClass("applicable");
+            }
+        }
+        $(function() {
+            trackCopy();
+            var article = $("article");
+
+            if (article.length !== 0) {
+                var id = article[0].id;
+                var type = article.data("item-type");
+                setActiveItemInContentTree(id);
+                showLegend();
+                initializePcSwitches(id);
+                initializeTooltips(id);
+                initializeCallToAction(id, type);
+            }
+
+            fillContainer();
+            initVoteFeedback();
+            showTrialSubscriptionDialog();
+            showTrialSubscriptionReminderDialog();
+            showTrialSubscriptionExpiredDialog();
+            showPremiumProtectedContentDialog();
+
+        });
+
+    </script>
+
+    <!--[if lt IE 11]>
+        <script type="text/javascript">
+            function showAlertOldBrowserDialog() {
+                var $dialog = $('#alert-old-browser-dialog');
+                if ($dialog.length === 0) {
+                    return;
+                }
+                $dialog.elladialog(true);
+            }
+
+            $(function() {
+                showAlertOldBrowserDialog();
+            });
+        </script>
+    <![endif]-->
+</body>
+</html>

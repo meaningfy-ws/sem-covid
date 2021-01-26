@@ -1,0 +1,880 @@
+﻿<!DOCTYPE html><html lang="bg"><head><meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-C_htzbWbeRTS6",
+uid:"__INSERT_EMAIL_HERE__"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-C_htzbWbeRTS6.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var host = 'segabg.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'C_htzbWbeRTS6', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+<title>Независими артисти искат компенсация от държавата | СЕГА</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="apple-touch-icon-precomposed" href="https://www.segabg.com/sites/default/files/_sega/logo-sega-x512_0.png" type="image/png" />
+<link rel="apple-touch-icon" href="https://www.segabg.com/sites/default/files/_sega/logo-sega-x512.png" type="image/png" />
+<link rel="shortcut icon" href="https://www.segabg.com/sites/all/themes/sega/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="nid" content="125689" />
+<meta name="description" content="Държавата да компенсира и независимите артисти и продуценти, които създават културен продукт без да ползват делегирани бюджети, искат те самите в писмо, адресирано до министъра на културата Боил Банов, с копия до Томислав Дончев, Владислав Горанов и Цвета Караянчева. „Във връзка с наложената забрана за провеждане на културни събития, настояваме за изработване на механизъм за" />
+<meta name="generator" content="SEGA.bg (segabg.com)" />
+<link rel="canonical" href="https://www.segabg.com/node/125689" />
+<link rel="shortlink" href="https://www.segabg.com/node/125689" />
+<meta property="og:site_name" content="СЕГА" />
+<meta property="og:url" content="https://www.segabg.com/node/125689" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Независими артисти искат компенсация от държавата" />
+<meta property="og:description" content="Държавата да компенсира и независимите артисти и продуценти, които създават културен продукт без да ползват делегирани бюджети, искат те самите в писмо, адресирано до министъра на културата Боил Банов, с копия до Томислав Дончев, Владислав Горанов и Цвета Караянчева. „Във връзка с наложената забрана за провеждане на културни събития, настояваме за изработване на механизъм за подпомагане и компенсиране на културни организации и творци на свободна практика, които не са обвързани на щат с държавните и общински културни институции." />
+<meta property="og:updated_time" content="2020-03-18T10:14:25+02:00" />
+<meta property="og:image" content="https://www.segabg.com/sites/default/files/_sega/styles/article_sega_bar/public/2020/03/cinema-curtain-theater-film-4609877.jpg?itok=c5Y0tuKF" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.segabg.com/node/125689" />
+<meta name="twitter:title" content="Независими артисти искат компенсация от държавата" />
+<meta name="twitter:description" content="Държавата да компенсира и независимите артисти и продуценти, които създават културен продукт без да ползват делегирани бюджети, искат те самите в писмо, адресирано до министъра на културата Боил" />
+<meta name="twitter:image" content="https://www.segabg.com/sites/default/files/_sega/styles/article_sega_bar/public/2020/03/cinema-curtain-theater-film-4609877.jpg?itok=c5Y0tuKF" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="628" />
+<meta name="twitter:image:alt" content="Независими артисти искат компенсация от държавата" />
+<meta property="article:published_time" content="2020-03-17T18:29:38+02:00" />
+<meta property="article:modified_time" content="2020-03-18T10:14:25+02:00" />
+<meta itemprop="name" content="Независими артисти искат компенсация от държавата" />
+<meta itemprop="description" content="Държавата да компенсира и независимите артисти и продуценти, които създават културен продукт без да ползват делегирани бюджети, искат те самите в писмо, адресирано до министъра на културата Боил Банов, с копия до Томислав Дончев, Владислав Горанов и Цвета Караянчева. „Във връзка с наложената забрана за провеждане на културни събития, настояваме за изработване на механизъм за подпомагане и компенсиране на културни организации и творци на свободна практика, които не са обвързани на щат с държавните и общински културни институции." />
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1155109271322559');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {"content_type":"product","content_ids":"125689"});
+</script>
+<noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=1155109271322559&ev=PageView&noscript=1' /></noscript>
+<!-- End Facebook Pixel Code -->
+<link type="text/css" rel="stylesheet" href="https://www.segabg.com/sites/default/files/_sega/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.segabg.com/sites/default/files/_sega/css/css__DbUjqOt9_JKH0f4bXv4hA85-SKPbx8SGlw3XNmU_Eo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.segabg.com/sites/default/files/_sega/css/css_pjcUxKcwV3JpaGPPe1DLq91ukqX_genGa5S9bOOn2jQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.segabg.com/sites/default/files/_sega/css/css_tXK72r6sgkO33qtHGj4PVbOuySZFCxus0Dd2gjz88Js.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.segabg.com/sites/default/files/_sega/css/css_318DefkXw0eFtQqi3_dbUYFxLQtiyTppRkCZyKeOOWo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.segabg.com/sites/default/files/_sega/css/css_uhK0jDxySU5pMYPsPwQtj801_4DFkEtq24lU40hZjZ4.css" media="all" />
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.segabg.com/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://www.segabg.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.segabg.com/misc/drupal.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_mw/mw_articles/library/prettyphoto/jquery.prettyPhoto.js?v=3.1.4"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_mw/mw_articles/library/prettyphoto/jquery.prettyPhoto.attach.js?v=3.1.4"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/jquery_update/replace/misc/jquery.form.min.js?v=2.69"></script>
+<script type="text/javascript" src="https://www.segabg.com/misc/ajax.js?v=7.69"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/blinky_messages/blinky_messages.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_voting/pollim/modules/choices/js/choices.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_voting/pollim/modules/choices/js/jquery.cookie.min.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/extlink/extlink.js?qn4er9"></script>
+<script type="text/javascript">var w2g = w2g || {};
+w2g.targeting = { 
+topic: ["lifestyle", "culture", "internal"]
+};</script>
+<script type="text/javascript" defer="defer" src="//lib.wtg-ads.com/lib.min.js"></script>
+<script type="text/javascript" src="https://www.segabg.com/misc/progress.js?qn4er9"></script>
+<script type="text/javascript" defer="defer" src="//paslsa.com/c/segabg.com.js"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/default/files/_sega/languages/bg_9Epe7h9c9CI0Vipiv-92tKngXDv77VUuoa1EewftKGY.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_views/quicktabs/js/quicktabs.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_mw/mwservertimeajax/mwservertime.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_mw/mwajaxuser/user-info.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_views/views_show_more/views_show_more.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_mw/mw_articles/front/sega-article.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_views/views/js/base.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/modules/_views/views/js/ajax_view.js?qn4er9"></script>
+<script type="text/javascript">var pp_gemius_identifier = 'd101jw7BHXy.malxwHE5_sUG78dBSs7c2BbUmEbHSQ3._7'; 
+	function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');gt.setAttribute('defer','defer'); gt.src=l+'://gabg.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script'); </script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/themes/sega/js/jquery.cookie.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/themes/sega/js/jquery.header.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/themes/sega/js/prefixfree.min.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/themes/sega/js/header.js?qn4er9"></script>
+<script type="text/javascript" src="https://www.segabg.com/sites/all/themes/sega/js/script.js?qn4er9"></script>
+<script type="text/javascript">jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"sega","theme_token":"SrnH0g9CITH61tQP-CmZU2S6nv2Jz8KA6MhLwfBP7a8","jquery_version":"1.8","js":{"modules\/statistics\/statistics.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/_mw\/mw_articles\/library\/prettyphoto\/jquery.prettyPhoto.js":1,"sites\/all\/modules\/_mw\/mw_articles\/library\/prettyphoto\/jquery.prettyPhoto.attach.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/blinky_messages\/blinky_messages.js":1,"sites\/all\/modules\/_voting\/pollim\/modules\/choices\/js\/choices.js":1,"sites\/all\/modules\/_voting\/pollim\/modules\/choices\/js\/jquery.cookie.min.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"0":1,"\/\/lib.wtg-ads.com\/lib.min.js":1,"misc\/progress.js":1,"\/\/paslsa.com\/c\/segabg.com.js":1,"public:\/\/languages\/bg_9Epe7h9c9CI0Vipiv-92tKngXDv77VUuoa1EewftKGY.js":1,"sites\/all\/modules\/_views\/quicktabs\/js\/quicktabs.js":1,"sites\/all\/modules\/_mw\/mwservertimeajax\/mwservertime.js":1,"sites\/all\/modules\/_mw\/mwajaxuser\/user-info.js":1,"sites\/all\/modules\/_views\/views_show_more\/views_show_more.js":1,"sites\/all\/modules\/_mw\/mw_articles\/front\/sega-article.js":1,"sites\/all\/modules\/_views\/views\/js\/base.js":1,"sites\/all\/modules\/_views\/views\/js\/ajax_view.js":1,"1":1,"sites\/all\/themes\/sega\/js\/jquery.cookie.js":1,"sites\/all\/themes\/sega\/js\/jquery.header.js":1,"sites\/all\/themes\/sega\/js\/prefixfree.min.js":1,"sites\/all\/themes\/sega\/js\/header.js":1,"sites\/all\/themes\/sega\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/_mw\/mw_articles\/library\/prettyphoto\/css\/prettyPhoto.css":1,"sites\/all\/modules\/_voting\/pollim\/modules\/choices\/theme\/choices.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/_dates\/date\/date_api\/date.css":1,"sites\/all\/modules\/_dates\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"sites\/all\/modules\/_dev\/routing_debug\/css\/routing_debug.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/_views\/views\/css\/views.css":1,"sites\/all\/modules\/_editors\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/_media\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/_admin\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/_admin\/panels\/css\/panels.css":1,"sites\/all\/modules\/_views\/quicktabs\/css\/quicktabs.css":1,"sites\/all\/modules\/_mw\/mwajaxuser\/ajaxuser.css":1,"sites\/all\/modules\/_mw\/mw_custblocks\/most-read-sidebar.css":1,"sites\/all\/modules\/_mw\/mw_custblocks\/most-comm-sidebar.css":1,"sites\/all\/modules\/_mw\/mw_custblocks\/most-popular-and-comm-sidebar.css":1,"sites\/all\/modules\/_mw\/mw_custblocks\/columnists-sidebar.css":1,"\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/sega\/css\/normalize.css":1,"sites\/all\/themes\/sega\/css\/fonts\/fonts.css":1,"sites\/all\/themes\/sega\/css\/header.css":1,"sites\/all\/themes\/sega\/css\/style.css":1,"sites\/all\/themes\/sega\/css\/footer.css":1,"sites\/all\/themes\/sega\/css\/sidebar.css":1,"sites\/all\/themes\/sega\/css\/banners.css":1,"sites\/all\/themes\/sega\/css\/style-more.css":1,"sites\/all\/modules\/_mw\/mw_articles\/front\/sega-article.css":1,"sites\/all\/themes\/sega\/css\/comments.css":1}},"sega_time":1611665945000,"sega_zone":"7200","sega_weekdays":["\u043d\u0435\u0434\u0435\u043b\u044f","\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u043d\u0438\u043a","\u0432\u0442\u043e\u0440\u043d\u0438\u043a","\u0441\u0440\u044f\u0434\u0430","\u0447\u0435\u0442\u0432\u044a\u0440\u0442\u044a\u043a","\u043f\u0435\u0442\u044a\u043a","\u0441\u044a\u0431\u043e\u0442\u0430"],"sega_months":["\u044f\u043d\u0443\u0430\u0440\u0438","\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438","\u043c\u0430\u0440\u0442","\u0430\u043f\u0440\u0438\u043b","\u043c\u0430\u0439","\u044e\u043d\u0438","\u044e\u043b\u0438","\u0430\u0432\u0433\u0443\u0441\u0442","\u0441\u0435\u043f\u0442\u0435\u043c\u0432\u0440\u0438","\u043e\u043a\u0442\u043e\u043c\u0432\u0440\u0438","\u043d\u043e\u0435\u043c\u0432\u0440\u0438","\u0434\u0435\u043a\u0435\u043c\u0432\u0440\u0438"],"smart_ip":{"location":{"country":"Romania","country_code":"RO","city":"Bucharest","zip":"052198","region_code":"B","region":"Bucuresti","latitude":44.4354,"longitude":26.1033,"time_zone":"Europe\/Bucharest","is_eu_country":true,"source":"smart_ip","ip_address":"92.81.39.226","timestamp":1611665945,"is_gdpr_country":true}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"urlIsAjaxTrusted":{"\/search-sega":true,"\/views\/ajax":true},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:83ac78407dd883730db832279694b774":{"view_name":"front_page_block_touche","view_display_id":"block","view_args":"","view_path":"node\/169715","view_base_path":"category-touche","view_dom_id":"83ac78407dd883730db832279694b774","pager_element":0}}},"better_exposed_filters":{"views":{"front_page_block_touche":{"displays":{"block":{"filters":[]}}}}},"quicktabs":{"qt_quicktabs_popular_comm":{"name":"quicktabs_popular_comm","tabs":[{"weight":10,"type":"prerendered"},{"weight":12,"type":"prerendered"}],"better_exposed_filters":{"views":{"front_page_block_touche":{"displays":{"block":{"filters":[]}}}}}}},"extlink":{"extTarget":0,"extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extIconPlacement":0,"extSubdomains":0,"extExclude":"","extInclude":"","extCssExclude":".dofollow","extCssExplicit":"","extAlert":"_blank","extAlertText":"\u0421\u0438\u0433\u0443\u0440\u043d\u0438 \u043b\u0438 \u0441\u0442\u0435, \u0447\u0435 \u0438\u0441\u043a\u0430\u0442\u0435 \u0434\u0430 \u043d\u0430\u043f\u0443\u0441\u043d\u0435\u0442\u0435 \u0441\u0430\u0439\u0442\u0430?\r\n\u0422\u043e\u0437\u0438 \u043b\u0438\u043d\u043a \u0432\u043e\u0434\u0438 \u043a\u044a\u043c \u0441\u044a\u0434\u044a\u0440\u0436\u0430\u043d\u0438\u0435 \u0438\u0437\u0432\u044a\u043d Segabg.com.","mailtoClass":"mailto","mailtoLabel":"(link sends e-mail)"},"statistics":{"data":{"nid":"125689"},"url":"\/modules\/statistics\/statistics.php"}});</script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="/sites/all/themes/sega/js/html5shiv.js"></script>
+  <script type="text/javascript" src="/sites/all/themes/sega/js/respond.min.js"></script>
+<![endif]-->
+
+
+
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-125689 node-type-article  _ Desktop videoblock-active i18n-bg from-RO marfeel-1" 
+      ondragstart="return false;" 
+      ondrop="return false;">
+<div id="skip-link">
+	<a class="element-invisible element-focusable" href="#main-content">Премини към основното съдържание</a>
+</div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1287142-3"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "UA-1287142-3");
+		gtag("set", {"user_id": "USER_ID"});
+      </script> <div class="shareAll">
+	<div class="socialIconsfb"><a class="fbIcon" href="https://www.facebook.com/vestniksega/" target="_blank">facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+	<div class="socialIconstw"><a class="twIcon" href="https://www.twitter.com/SegaBG" target="_blank">twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+	</div>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c9c9282471444b7"></script>
+<!--/30678320/SBG_I_PRLX--><div id="div-gpt-ad-1534942692217-0" style="margin:0 auto;text-align:center;"></div><header id="mw-header" class="clearfix">
+	<div class="mw_row">
+		<div id="logo"> <a href="/" title="Начало"><img src="https://www.segabg.com/sites/all/themes/sega/logo.png" alt="Независими артисти искат компенсация от държавата" /></a> </div>
+		<div id="headerDiv" class="clearfix">
+			<div id="top-headers">
+				<div id="mwserverdate">...</div><div id="mwajaxuser"><a href="/user" class="user">Потребител</a></div>
+				<div id="header-search">
+					<form action="/search-sega" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-search-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                  <label for="edit-search">
+            Търси          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-search">
+ <input type="text" id="edit-search" name="search" value="" size="30" maxlength="128" class="form-text required error" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input  type="submit" id="edit-submit-search" name="" value="Търси" class="form-submit btn btn-default" />    </div>
+      </div>
+</div>
+</div></form>				</div>
+
+				<div id="header-top-menu">
+					<ul class="menu"><li class="first leaf"><a href="/forum" title="">Форум</a></li>
+<li class="leaf"><a href="/signal" title="">Сигнал</a></li>
+<li class="last leaf"><a href="/pages/advertise" title="">Реклама</a></li>
+</ul>				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="navbar-header">
+				<div id="logo-small"> <a href="/" title="Начало"><img src="https://www.segabg.com/sites/all/themes/sega/logo.png" alt="Независими артисти искат компенсация от държавата" /></a></div>
+				<div id="header-search-mob">
+					<form action="/search-sega" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-search-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                  <label for="edit-search">
+            Търси          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-search">
+ <input type="text" id="edit-search" name="search" value="" size="30" maxlength="128" class="form-text required error" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input  type="submit" id="edit-submit-search" name="" value="Търси" class="form-submit btn btn-default" />    </div>
+      </div>
+</div>
+</div></form>					<i class="fa fa-search search-mob" aria-hidden="true"></i>
+				</div>
+				<div id="nav-expander" class="navbar-toggle">
+					<!-- <span class="resMenuT">МЕНЮ</span> -->
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+
+				<div class="header-resSocial">
+					<a href="https://www.facebook.com/vestniksega/" class="fbIcon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.twitter.com/SegaBG" class="twIcon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</div>
+			</div>
+
+							<div class="clearfix margin40"></div>
+				
+			<div class="innermenu clearfix">
+				<nav id="mw-menu" class="navbar">
+					<div id="navigationmenu">
+						<div class="menu-center collapse navbar-collapse">
+
+							<div class="user-links">
+								
+								<a href="/user/login" title="вход" class="log"><i class="fa fa-sign-in" aria-hidden="true"></i>вход</a><a href="/signal" title="сигнал" class="signal"><i class="fa fa-bullhorn" aria-hidden="true"></i>сигнал</a><a href="/forum" title="форум" class="forum"><i class="fa fa-comments-o" aria-hidden="true"></i>форум</a>
+							</div>
+
+
+							<ul class="navbar-nav">
+															<li class="resSearch">  </li>
+																<li class=" mw_has-children"><a href="/video" data-toggle="dropdown"> <span class="menuchildicon"></span>Видео</a><ul class="child dropdown-menu" role="menu"><li><a href="/video-cat/here-and-now"><span class="menuchildicon"></span>Тук и сега</a><hr class="separator" /></li><li><a href="/video-cat/dosie"><span class="menuchildicon"></span>Досие</a><hr class="separator" /></li><li><a href="/video-cat/video-of-the-day"><span class="menuchildicon"></span>Видео на деня</a><hr class="separator" /></li><li><a href="/video-cat/curious"><span class="menuchildicon"></span>Любопитно</a></li></ul></li><li class=""><a href="/category-observer">Наблюдател</a></li><li class=""><a href="/category-bulgaria">България</a></li><li class=""><a href="/category-economy">Икономика</a></li><li class=""><a href="/category-covid-19">COVID-19</a></li><li class=""><a href="/category-foreign-country">Чужбина</a></li><li class=" active"><a href="/category-culture">Култура</a></li><li class=" mw_has-children"><a href="/sport" data-toggle="dropdown"> <span class="menuchildicon"></span>Спорт</a><ul class="child dropdown-menu" role="menu"><li><a href="/sport-cat/bg-football"><span class="menuchildicon"></span>Футбол БГ</a><hr class="separator" /></li><li><a href="/sport-cat/world-football"><span class="menuchildicon"></span>Футбол свят</a><hr class="separator" /></li><li><a href="/sport-cat/tenis"><span class="menuchildicon"></span>Тенис</a><hr class="separator" /></li><li><a href="/sport-cat/motor"><span class="menuchildicon"></span>Моторни спортове</a><hr class="separator" /></li><li><a href="/sport-cat/fight"><span class="menuchildicon"></span>Бойни спортове</a><hr class="separator" /></li><li><a href="/sport-cat/other"><span class="menuchildicon"></span>Други спортове</a></li></ul></li><li class=""><a href="/category-education">Просвета</a></li><li class=""><a href="/category-then">После</a></li>								<button id="toggle-add-menu" type="button">
+									<span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+								</button>
+							</ul>
+								<!-- block menu -->
+	<div id="block-menu-menu-main-menu-2"class="mw_verticalmenu block block-menu menu_additions" >
+	
+			<div class="mw_verticalmenu_without_header"></div>
+
+				
+			<div class="mw_verticalmenu_content">
+				<ul class="mw_vmenu_items nav nav-pills nav-stacked">
+					<li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/weekend" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>УИКЕНД</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/category-zdrave" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>ЗДРАВЕ</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/category-cars" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>АВТОМОБИЛИ</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/category-movie-release" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>КИНОПРЕМИЕРА</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/category-consult" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>КОНСУЛТ</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/category-media" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>МЕДИИ</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/category-directory" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>СПРАВОЧНИК</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/category-technologies" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>ТЕХНОЛОГИИ</a></li>				</ul>
+			</div>
+	</div><!--/#menu-main-menu-2-->
+						</div>
+					</div> <!--/#navigationmenu-->
+				</nav>
+			</div> <!--/.innermenu-->
+		</div>
+	</div>
+</header>
+<div id="mw-page" class="withsidebar wallpapper-banner-example">
+			<div id="slot-leader-mega"><div class="region region-singlepagebanner">	<!--other block-->
+	<div class="block block-mw-banners"  >
+		<div id="block-mw-banners-mwban-sbg-h-wp" class="mw_block">
+					<div class="mw_block_without_header"></div>
+					<div class="mw_block_content"  >
+				<!--/30678320/SBG_H_WP--><div id="div-gpt-ad-1555666606946-0"></div>			</div>
+
+		</div> <!--/#mwban_sbg_h_wp-->
+	</div> <!--.mw_block_wrapper-->
+</div></div>
+	
+<div class="page-width white-back">
+	<div class="page-inner">
+		<div id="mw_content">
+			<div id="mw_content_margin" class="mw_row-fluid">
+				
+								
+								<div class="row">
+					<div class="region region-content">	<!--other block-->
+	<div class="block block-system"  >
+		<div id="block-system-main" class="mw_block">
+					<div class="mw_block_without_header"></div>
+					<div class="mw_block_content"  >
+				
+
+
+
+
+<div class="sega-article-single">
+	<h3 class="sega-category"><a href="/category-culture" title="Култура">Култура</a>	</h3>
+
+			<h1 class="sega-title"> Независими артисти искат компенсация от държавата </h1>
+
+					<div class="sega-under-title"> С писмо до културния министър те настояват да бъдат обезщетени за периода на затворени зали и салони </div>
+			
+		<div class="sega-meta-wrap title">
+
+		<div class="sega-article-date"> 18 Март 2020 </div>
+		
+	
+
+			<div class="stats-wrap">
+			<span class="seen" title="Показвания">
+						331			</span>
+		</div>
+		
+	</div> <!--/meta-wrap-->
+	
+
+
+
+	
+	<div class="clearfix"></div>
+
+	
+	
+			<div class="sega-image-group landscape aspect-32-21">
+
+			<div class="sega-image-wrap">
+				<a href="https://www.segabg.com/sites/default/files/_sega/styles/sega-max960-nocrop-watermark-conditional/public/2020/03/cinema-curtain-theater-film-4609877.jpg?itok=Ntf5LZQm" title="Затворените за неограничено време напред сцени със сигурност ще доведат много хора до банкрут." data-source="Pixabay-" rel="sgallery[all]"><img typeof="foaf:Image" src="https://www.segabg.com/sites/default/files/_sega/styles/sega-max600-nocrop-watermark-conditional/public/2020/03/cinema-curtain-theater-film-4609877.jpg?itok=FJblNGF0" width="600" height="393" /></a>			</div>
+
+						<div class="sega-image-source">
+				<i aria-hidden="true" class="fa fa-camera"></i>&nbsp;Pixabay			</div>
+			
+						<div class="sega-image-descr">
+				<span>
+					Затворените за неограничено време напред сцени със сигурност ще доведат много хора до банкрут.				</span>
+			</div>
+					</div>
+		
+		<div class="sega-body">
+		<p>Държавата да компенсира и независимите артисти и продуценти, които създават културен продукт без да ползват делегирани бюджети, искат те самите в писмо, адресирано до министъра на културата Боил Банов, с копия до Томислав Дончев, Владислав Горанов и Цвета Караянчева.</p>
+<p><em>„Във връзка с наложената забрана за провеждане на културни събития, настояваме за изработване на механизъм за подпомагане и компенсиране на културни организации и творци на свободна практика, които не са обвързани на щат с държавните и общински културни институции. Много от нас остават без доходи за неопределено време, което сериозно рефлектира върху личния и социалния статус на нас и нашите семейства. В държавите от Европейския съюз и по света такива механизми се разработват, а Ваши колеги вече излязоха с официални изявления, че няма да изоставят хората, работещи в културните индустрии, без значение дали са от държавни, общински или частни структури. Настояваме за отговорно и солидарно отношение и грижа от страна на Министерство на културата за всички, работещи професионално в сферата на културата”</em>, гласи текстът на писмото.</p>
+<p>Обръщението е подписано от хората зад „София филм фест“, „Дерида денс център“, фондация „ЕДНО за култура изкуства“, организираща „One Dance Week”, “Българска музикална асоциация“, „ACT Асоциация за свободен театър“ и много други по-малки театрални компании, продуценти и независими артисти.</p>
+<p>Всички те искат министерството да определи <em>„месечна безвъзмездна финансова компенсация за независими културни институции и организации, активно работещи към настоящия момент, както и за ощетените от ситуацията творци на свободна практика, считано от 8 март 2020 за периода на забрана за провеждане на културни събития</em>”.</p>
+<p><em>“Смятаме за наложително да се направи анализ на прогнозните загуби на независимия културен сектор в България до края на първото полугодие на 2020 г., за да се обхване размера на претърпените щети от сектора. Културата е част от българския стопански живот. Това, което бъде загубено сега, после трудно ще бъде възстановено”</em>, твърдят творците. Последното е вярно, но едва ли при предстоящия колапс на икономиката някой ще се трогне точно от техните вълнения. </p>	</div>
+
+			<div class="sega-videob">
+		<!--/30678320/SegaBg_Inline_Video--><div id="div-gpt-ad-1560944581481-0"></div>		</div>
+		
+		<div class="clearfix"></div>
+	
+			<div class="sega-paypal--article">
+			<span class="donate-text"> Ако искате да подкрепите независимата и качествена журналистика в “Сега”, <br>можете да направите дарение през PayPal </span>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+				<input type="hidden" name="cmd" value="_s-xclick" />
+				<input type="hidden" name="hosted_button_id" value="9993NSXK98DCC" />
+				<input type="image" src="https://www.segabg.com/sites/default/files/_sega/2019/12/paypal-button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+				<img alt="" border="0" src="https://www.paypal.com/en_BG/i/scr/pixel.gif" width="1" height="1" />
+			</form>
+		</div>
+		
+			<div class="sega-tags">
+		<h3 style="display:inline-block"> Ключови думи: </h3>
+		<span><a href="/tag/tvorci" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">творци</a></span>, <span><a href="/tag/karantina" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">карантина</a></span>, <span><a href="/tag/obezshchetenie" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">обезщетение</a></span>, <span><a href="/tag/pismo" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">писмо</a></span>, <span><a href="/tag/ministerstvo" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Министерство</a></span>		</div>
+		
+
+			<div class="clearfix"></div>
+		<div class="socialIcons" id="share-article">
+			<span class="shareNode"></span>
+			<a href="#" class="fbIcon"><i data-url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.segabg.com%2Fcategory-culture%2Fnezavisimi-artisti-iskat-kompensaciya-durzhavata" class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="gpIcon"><i data-url="https://plus.google.com/share?url=https%3A%2F%2Fwww.segabg.com%2Fcategory-culture%2Fnezavisimi-artisti-iskat-kompensaciya-durzhavata" class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#" class="twIcon"><i data-url="https://twitter.com/intent/tweet?text=Независими артисти искат компенсация от държавата https%3A%2F%2Fwww.segabg.com%2Fcategory-culture%2Fnezavisimi-artisti-iskat-kompensaciya-durzhavata" class="fa fa-twitter" aria-hidden="true"></i></a>
+
+					</div>
+		
+			<div style="text-align: center; margin-bottom: 2em;">
+			<a href="https://bgshkolo.com/гимназия-за-математици-откриватели-и/" rel="noopener">
+				<img style="border:1px solid grey;" src="https://www.segabg.com/sites/default/files/_sega/2021/01/bg_shkolo_300x250_v3a.jpg">
+			</a>
+		</div>
+		
+				<script type="text/javascript">
+			(function (v,i) {
+			var scp = v.createElement("script"),
+			config = {
+			  ChannelID: 'heaql4cg1',
+			  AdUnitType: '2',
+			  PublisherID: '236892026774733',
+			  PlacementID: 'pltWBEhUb6wXeV6qTip',
+			  DivID: '',
+			  IAB_Category: 'IAB12',
+			  Keywords: '',
+			  Language: 'en-us',
+			  BG_Color: '',
+			  Text_Color: '',
+			  Font: '',
+			  FontSize: '',
+			};
+			scp.src='https://s.vi-serve.com/tagLoader.js';
+			scp.type = "text/javascript";
+			scp.async = true;
+			scp.onload = function() {
+			  i[btoa('video intelligence start')].init(config);
+			};
+			(v.getElementsByTagName('head')[0] || v.documentElement.appendChild(v.createElement('head'))).appendChild(scp);
+			})(document, window);
+			</script>
+			
+	
+	
+					<div class="article-comments-main">
+					<a href="#login_3_time" class="smooth">
+						<div class="article-comments">
+							Все още няма коментари
+						</div>
+					</a>
+					<div class="redbubble"></div>
+				</div>
+				
+		        <div class="article-morenews clearfix">
+            <div class="article-morenews-header">
+                <h4>Още</h4>
+            </div>
+                                <div class="article-morenews-content">
+                        <div class="article-morenews-img">
+                            <a href="/hot/category-bulgaria/nezakonno-podslushvan-sledovatel-poluchi-4000-lv-obezshtetenie">
+                                <img typeof="foaf:Image" src="https://www.segabg.com/sites/default/files/_sega/styles/article-morenews_240x160/public/2019/02/boyko_atanasov.jpg?itok=xRP_Jf4E" width="240" height="160" />                            </a>
+                        </div>
+                        <div class="article-morenews-txt">
+                            <div class="article-morenews-title">
+                                <a href="/hot/category-bulgaria/nezakonno-podslushvan-sledovatel-poluchi-4000-lv-obezshtetenie">
+                                    Незаконно подслушван следовател получи 4000 лв. обезщетение                                </a>
+                            </div>
+                            <div class="meta">
+                                <p class="created">18.01.2021</p>
+                                                                <p class="author">  </p>
+                                <div class="stats-wrap">
+                                    <span class="seen" title="Показвания">1713</span>
+                                                                        <span class="comm" title="Коментари">3</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="article-morenews-content">
+                        <div class="article-morenews-img">
+                            <a href="/hot/category-bulgaria/lozan-panov-poiska-dostup-vsichki-proverki-sreshtu-nego">
+                                <img typeof="foaf:Image" src="https://www.segabg.com/sites/default/files/_sega/styles/article-morenews_240x160/public/2020/02/img_20200206_144022.jpg?itok=ogFDFP5z" width="240" height="160" />                            </a>
+                        </div>
+                        <div class="article-morenews-txt">
+                            <div class="article-morenews-title">
+                                <a href="/hot/category-bulgaria/lozan-panov-poiska-dostup-vsichki-proverki-sreshtu-nego">
+                                    Лозан Панов поиска достъп до всички проверки срещу него                                </a>
+                            </div>
+                            <div class="meta">
+                                <p class="created">13.01.2021</p>
+                                                                <p class="author">  </p>
+                                <div class="stats-wrap">
+                                    <span class="seen" title="Показвания">2637</span>
+                                                                        <span class="comm" title="Коментари">57</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="article-morenews-content">
+                        <div class="article-morenews-img">
+                            <a href="/hot/category-foreign-country/tuitur-zakri-okonchatelno-akaunta-na-trump">
+                                <img typeof="foaf:Image" src="https://www.segabg.com/sites/default/files/_sega/styles/article-morenews_240x160/public/2021/01/ttt.jpg?itok=ubq3PMMb" width="240" height="160" />                            </a>
+                        </div>
+                        <div class="article-morenews-txt">
+                            <div class="article-morenews-title">
+                                <a href="/hot/category-foreign-country/tuitur-zakri-okonchatelno-akaunta-na-trump">
+                                    "Туитър" закри окончателно акаунта на Тръмп                                </a>
+                            </div>
+                            <div class="meta">
+                                <p class="created">09.01.2021</p>
+                                <span class="updated">Обновена</span>                                <p class="author">  </p>
+                                <div class="stats-wrap">
+                                    <span class="seen" title="Показвания">7324</span>
+                                                                        <span class="comm" title="Коментари">231</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+        
+		<!--/30678320/SBG_I_IB--><div id="div-gpt-ad-1534943369295-0"style="display: block; margin: 20px auto; width: 100%; height: auto;"></div><h3 id="login_3_time"> <a href="/user/login">Влез</a> или <a href="/user/register">се регистрирай</a> за да коментираш</h3>
+</div>
+
+			</div>
+
+		</div> <!--/#main-->
+	</div> <!--.mw_block_wrapper-->
+</div>				</div>
+			</div>
+		</div> <!--/#mw_content-->  <div id="sidebar-left">
+			<div id="sidebar-left-margin">
+				<div class="region region-sidebar-first">	<!--other block-->
+	<div class="block block-multiblock touche block-views block-views-front_page_block_touche-block-instance"  >
+		<div id="block-multiblock-1" class="mw_block">
+					<div class="mw_block_header">
+				<h3 class="mw_block_heading"> ТУШ</h3>			</div>
+					<div class="mw_block_content"  >
+				<div class="view view-front-page-block-touche view-id-front_page_block_touche view-display-id-block view-dom-id-83ac78407dd883730db832279694b774">
+        
+  
+  
+      <div class="view-content">
+        <div>
+      
+  <div class="views-field views-field-field-comix">        <div class="field-content"><a href="/touche/tush-01-25-2021"><img typeof="foaf:Image" src="https://www.segabg.com/sites/default/files/_sega/styles/touche_homepage_300x202_crop/public/comix/01-25-2021.jpg?itok=GTCZxoGy" width="650" height="438" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/category-touche">
+    Разгледай всички  </a>
+</div>
+  
+  
+  
+</div>			</div>
+
+		</div> <!--/#1-->
+	</div> <!--.mw_block_wrapper-->
+	<!--other block-->
+	<div class="block block-mw-banners"  >
+		<div id="block-mw-banners-mwban-segabg-overgas-300x250" class="mw_block">
+					<div class="mw_block_without_header"></div>
+					<div class="mw_block_content"  >
+				<!--/30678320/SegaBG_Overgas_300x250--><div id="div-gpt-ad-1530635202259-0"></div>			</div>
+
+		</div> <!--/#mwban_segabg_overgas_300x250-->
+	</div> <!--.mw_block_wrapper-->
+	<!--other block-->
+	<div class="block block-mw-custblocks"  >
+		<div id="block-mw-custblocks-mw-custblocks-comm-popular-tabs" class="mw_block">
+					<div class="mw_block_header">
+				<h3 class="mw_block_heading"> Още от Култура:</h3>			</div>
+					<div class="mw_block_content"  >
+				<div  id="quicktabs-quicktabs_popular_comm" class="quicktabs-wrapper quicktabs-style-nostyle"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-nostyle"><li class="active first"><a href="/category-culture/nezavisimi-artisti-iskat-kompensaciya-durzhavata?qt-quicktabs_popular_comm=0#qt-quicktabs_popular_comm" id="quicktabs-tab-quicktabs_popular_comm-0" class="quicktabs-tab quicktabs-tab-prerendered active">НАЙ-ЧЕТЕНИ</a></li>
+<li class="last"><a href="/category-culture/nezavisimi-artisti-iskat-kompensaciya-durzhavata?qt-quicktabs_popular_comm=1#qt-quicktabs_popular_comm" id="quicktabs-tab-quicktabs_popular_comm-1" class="quicktabs-tab quicktabs-tab-prerendered active">НАЙ-КОМЕНТИРАНИ</a></li>
+</ul></div><div id="quicktabs-container-quicktabs_popular_comm" class="quicktabs_main quicktabs-style-nostyle"><div  id="quicktabs-tabpage-quicktabs_popular_comm-0" class="quicktabs-tabpage ">        <div class="most-content-wrap mw-most-read">
+                            <div class="most-wrap" data-nid="169304" data-last="24 Ян. 2021">
+                    <a href="/category-culture/kitayski-triumf-i-tragediya-uhan">
+                        <div class="numberRead"><span>7 571</span></div>
+                        <div class="inner-most-wrap">
+                            <h4 class="most-title">Китайски триумф и трагедия в Ухан </h4>
+                            <span class="createdD">24 Ян. 2021</span>
+                                                    </div>
+                    </a>
+                </div>
+                                <div class="most-wrap" data-nid="169311" data-last="23 Ян. 2021">
+                    <a href="/category-culture/pochina-izvestnata-bulgarska-cigularka-elena-taskova">
+                        <div class="numberRead"><span>2 453</span></div>
+                        <div class="inner-most-wrap">
+                            <h4 class="most-title">Почина известната българска цигуларка Елена Таскова </h4>
+                            <span class="createdD">23 Ян. 2021</span>
+                                                    </div>
+                    </a>
+                </div>
+                                <div class="most-wrap" data-nid="169355" data-last="23 Ян. 2021">
+                    <a href="/hot/category-culture/kinodeyci-na-bunt-zakonovi-popravki-oblagodetelstvat-televiziite">
+                        <div class="numberRead"><span>1 315</span></div>
+                        <div class="inner-most-wrap">
+                            <h4 class="most-title">Кинодейци на бунт: Законови поправки облагодетелстват телевизиите</h4>
+                            <span class="createdD">23 Ян. 2021</span>
+                                                    </div>
+                    </a>
+                </div>
+                                <div class="most-wrap" data-nid="169474" data-last="25 Ян. 2021">
+                    <a href="/category-culture/aziya-ardzhento-obvini-izvesten-rezhisor-iznasilvane">
+                        <div class="numberRead"><span>724</span></div>
+                        <div class="inner-most-wrap">
+                            <h4 class="most-title">Азия Ардженто обвини известен режисьор в изнасилване</h4>
+                            <span class="createdD">25 Ян. 2021</span>
+                                                    </div>
+                    </a>
+                </div>
+                                <div class="most-wrap" data-nid="169257" data-last="23 Ян. 2021">
+                    <a href="/category-culture/sudut-ne-otkri-nerednosti-izbora-na-chashite-za-venecianskoto-bienale">
+                        <div class="numberRead"><span>508</span></div>
+                        <div class="inner-most-wrap">
+                            <h4 class="most-title">Съдът не откри нередности в избора на чашите за Венецианското биенале</h4>
+                            <span class="createdD">23 Ян. 2021</span>
+                                                    </div>
+                    </a>
+                </div>
+                        </div>
+        </div><div  id="quicktabs-tabpage-quicktabs_popular_comm-1" class="quicktabs-tabpage quicktabs-hide">        <div class="most-content-wrap mw-most-comment">
+                            <div class="most-wrap" data-nid="169355" data-last="23 Ян. 2021" data-comm="13">
+                    <a href="/hot/category-culture/kinodeyci-na-bunt-zakonovi-popravki-oblagodetelstvat-televiziite">
+                        <div class="numberComment"><span>13</span></div>
+                        <div class="mw-most-comment">
+                            <h4 class="most-title">Кинодейци на бунт: Законови поправки облагодетелстват телевизиите</h4>
+                            <span class="createdD">23 Ян. 2021</span>
+                        </div>
+                    </a>
+                </div>
+                                <div class="most-wrap" data-nid="168127" data-last="24 Ян. 2021" data-comm="1">
+                    <a href="/category-culture/ivo-dimchev-izkustvoto-banyata-hola-i-kuhnyata">
+                        <div class="numberComment"><span>1</span></div>
+                        <div class="mw-most-comment">
+                            <h4 class="most-title">Иво Димчев - изкуството в банята, хола и кухнята</h4>
+                            <span class="createdD">24 Ян. 2021</span>
+                        </div>
+                    </a>
+                </div>
+                                <div class="most-wrap" data-nid="169566" data-last="25 Ян. 2021" data-comm="1">
+                    <a href="/category-culture/yanuari-pak-e-mesecut-na-radichkov">
+                        <div class="numberComment"><span>1</span></div>
+                        <div class="mw-most-comment">
+                            <h4 class="most-title">Януари пак е месецът на Радичков</h4>
+                            <span class="createdD">25 Ян. 2021</span>
+                        </div>
+                    </a>
+                </div>
+                        </div>
+        </div></div></div>			</div>
+
+		</div> <!--/#mw_custblocks_comm_popular_tabs-->
+	</div> <!--.mw_block_wrapper-->
+	<!--other block-->
+	<div class="block block-mw-banners"  >
+		<div id="block-mw-banners-mwban-sbg-i-rhp-atf" class="mw_block">
+					<div class="mw_block_without_header"></div>
+					<div class="mw_block_content"  >
+				<!--/30678320/SBG_I_RHP_ATF--><div id="div-gpt-ad-1535443693348-0"></div>			</div>
+
+		</div> <!--/#mwban_sbg_i_rhp_atf-->
+	</div> <!--.mw_block_wrapper-->
+	<!--other block-->
+	<div class="block block-mw-custblocks"  >
+		<div id="block-mw-custblocks-mw-custblocks-columnists" class="mw_block">
+					<div class="mw_block_header">
+				<h3 class="mw_block_heading"> КОЛУМНИСТИ</h3>			</div>
+					<div class="mw_block_content"  >
+				        <div class="most-content-wrap mw-columnists">
+                            <div class="kol-wrap" data-uid="87">
+                    <div class="kol-info">
+                        <div class="kol-img">
+                            <a href="/avtor/dimitri-ivanov"> <img src="https://www.segabg.com/sites/default/files/_sega/styles/user_avatar_big/public/2018/06/750046-l.jpg?itok=g-f6_eUj" alt="ДИМИТРИ ИВАНОВ"></a>
+                        </div>
+                    </div>
+                    <div class="kol-article">
+                        <h4 class="kol-name"><a href="/avtor/dimitri-ivanov">ДИМИТРИ ИВАНОВ</a></h4><span>:</span><a href="/category-observer/pravo-i-prostotiya-dupe-i-gashti">Право и простотия (Дупе и гащи)</a><div class="clearfix"></div>
+                    </div>
+                </div>
+                                <div class="kol-wrap" data-uid="109">
+                    <div class="kol-info">
+                        <div class="kol-img">
+                            <a href="/avtor/emil-hrsev"> <img src="https://www.segabg.com/sites/default/files/_sega/styles/user_avatar_big/public/2018/06/20090202-16-faces-8959.jpg?itok=Xqb6qGDe" alt="ЕМИЛ ХЪРСЕВ"></a>
+                        </div>
+                    </div>
+                    <div class="kol-article">
+                        <h4 class="kol-name"><a href="/avtor/emil-hrsev">ЕМИЛ ХЪРСЕВ</a></h4><span>:</span><a href="/category-observer/fatalni-uspehi">Фатални успехи</a><div class="clearfix"></div>
+                    </div>
+                </div>
+                                <div class="kol-wrap" data-uid="139">
+                    <div class="kol-info">
+                        <div class="kol-img">
+                            <a href="/avtor/svetoslav-terziev"> <img src="https://www.segabg.com/sites/default/files/_sega/styles/user_avatar_big/public/2018/07/svetoslav-terziev.jpg?itok=wh1I90Q4" alt="СВЕТОСЛАВ ТЕРЗИЕВ"></a>
+                        </div>
+                    </div>
+                    <div class="kol-article">
+                        <h4 class="kol-name"><a href="/avtor/svetoslav-terziev">СВЕТОСЛАВ ТЕРЗИЕВ</a></h4><span>:</span><a href="/category-observer/borisov-pruv-se-vuzpolzva-pravoto-na-izklyuchvane">Борисов пръв се възползва от правото на изключване</a><div class="clearfix"></div>
+                    </div>
+                </div>
+                                <div class="kol-wrap" data-uid="150">
+                    <div class="kol-info">
+                        <div class="kol-img">
+                            <a href="/avtor/kalin-donkov"> <img src="https://www.segabg.com/sites/default/files/_sega/styles/user_avatar_big/public/2018/06/faces-20050714-14-5509.jpg?itok=K8a0gKuc" alt="КАЛИН ДОНКОВ"></a>
+                        </div>
+                    </div>
+                    <div class="kol-article">
+                        <h4 class="kol-name"><a href="/avtor/kalin-donkov">КАЛИН ДОНКОВ</a></h4><span>:</span><a href="/category-observer/o-charli">О, Чарли!</a><div class="clearfix"></div>
+                    </div>
+                </div>
+                                <div class="kol-wrap" data-uid="207">
+                    <div class="kol-info">
+                        <div class="kol-img">
+                            <a href="/avtor/peto-cekov"> <img src="https://www.segabg.com/sites/default/files/_sega/styles/user_avatar_big/public/authors/unnamed_1.jpg?itok=P4xZiOpN" alt="ПЕТЬО ЦЕКОВ"></a>
+                        </div>
+                    </div>
+                    <div class="kol-article">
+                        <h4 class="kol-name"><a href="/avtor/peto-cekov">ПЕТЬО ЦЕКОВ</a></h4><span>:</span><a href="/category-observer/digitalniyat-monopol-razhda-realen-teror">Дигиталният монопол ражда реален терор</a><div class="clearfix"></div>
+                    </div>
+                </div>
+                        </div>
+        			</div>
+
+		</div> <!--/#mw_custblocks_columnists-->
+	</div> <!--.mw_block_wrapper-->
+	<!--other block-->
+	<div class="block block-mw-banners banner-last"  >
+		<div id="block-mw-banners-mwban-sbg-sticky" class="mw_block">
+					<div class="mw_block_without_header"></div>
+					<div class="mw_block_content"  >
+				<!--/30678320/SBG_Sticky--><div id="div-gpt-ad-1553677698824-0"></div>			</div>
+
+		</div> <!--/#mwban_sbg_sticky-->
+	</div> <!--.mw_block_wrapper-->
+</div>			</div>
+		</div>  <div class="clearfix"></div>
+
+			</div>
+</div><!--/.page-width-->
+</div><!--/#mw-page-->
+
+<div class="stt"></div>
+<footer id="footer" class="clearfix">
+	<div id="news-slider">
+			</div>
+	<div id="footer-message" class="mw_row">
+		<div class="region region-footerbottom">Всички права запазени. Възпроизвеждането на цели или части от текста или изображенията става след изрично писмено разрешение на СЕГА АД</div>	</div>
+	<div id="footer-menu">
+		<div class="region region-footermenu">	<!-- block menu -->
+	<div id="block-menu-menu-footer-menu"class="mw_verticalmenu block block-menu" >
+	
+			<div class="mw_verticalmenu_without_header"></div>
+
+				
+			<div class="mw_verticalmenu_content">
+				<ul class="mw_vmenu_items nav nav-pills nav-stacked">
+					<li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="http://old.segabg.com/" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>Архив на в. СЕГА</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/pages/za-nas" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>За нас</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/pages/abonament" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>Абонамент</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/pages/advertise" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>Реклама</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="https://segabg.com/pages/privacy-and-cookies" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>Условия за ползване</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/pages/kontakti" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>Контакти</a><hr class="horiz_separator" /></li><li class="mw_vmenu_items_parent dropdown" style="float:none"><a href="/izbori2019" class="mw_vmenu_items_parent_link"><span class="menuchildicon"></span>Избори 2019</a></li>				</ul>
+			</div>
+	</div><!--/#menu-footer-menu-->
+</div>	</div>
+	<div id="footer-copyright">
+		<div class="region region-footercopyright"><div class="segaY">
+&copy 1997-2021, СЕГА АД</div></div>	</div>
+	<div id="footer-page-title"></div>
+
+</footer>
+<script type="text/javascript" src="https://www.segabg.com/modules/statistics/statistics.js?qn4er9"></script>
+    
+</body>
+</html>

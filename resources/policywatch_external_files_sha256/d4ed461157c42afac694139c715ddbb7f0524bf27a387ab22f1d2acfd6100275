@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+<html class="no-js theme-didk" lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="preload" href="/dist/css/styles-didk.css?v=637467282220000000" as="style">
+    <link rel="preload" href="/dist/static/fonts/disans_rg-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/dist/static/fonts/disans_dbd-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/dist/static/fonts/disans_he-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/dist/static/fonts/diserif_rg-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/dist/static/fonts/diserif_bd-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/dist/static/fonts/di_sans-book-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/dist/static/fonts/diserif_it-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://policy.app.cookieinformation.com/uc.js" data-culture="da" as="script">
+    <link rel="preload" href="/bundleversion-uPDTtkrwaHouH-kD_Xq2mtFWPz8DDlpXzqjsH_3-yXI1/Scripts/VendorApp.js" as="script">
+    <link rel="dns-prefetch" href="//js-agent.newrelic.com">
+    <link rel="dns-prefetch" href="//bam.nr-data.net">
+    
+    <link rel="stylesheet" href="/dist/css/styles-didk.css?v=637467282220000000">
+    <link rel="stylesheet" href="/bundleversion-VZH_ITURoiUP5_8LCH6wguL7fYGer4nmIdasn25cvUE1/Styles/Print.css" media="print" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
+        <link rel="shortcut icon" href="/siteassets/systemikoner/favicon---32x32.png" type="image/x-icon"/>
+    <link rel="icon" href="/siteassets/systemikoner/favicon---32x32.png" type="image/x-icon"/>
+    <meta property="twitter:site" content="@DanskIndustri" />   
+    <meta name="msapplication-TileColor" content="#424242" />
+    <meta name="msapplication-TileImage" content="https://www.danskindustri.dk/siteassets/systemikoner/di_tile_logo.png" />
+    <link rel="apple-touch-icon" href="https://www.danskindustri.dk/siteassets/systemikoner/appleicon_di.png" />
+
+<title>Der er sket en fejl - DI</title>
+<meta name="description" content="Siden blev ikke fundet!" />
+<link rel="canonical" href="https://www.danskindustri.dk/system/404/" />
+<meta property="og:title" content="Der er sket en fejl - DI" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.danskindustri.dk/system/404/" />
+<meta property="twitter:url" content="https://www.danskindustri.dk/system/404/" />
+<meta property="twitter:creator" content="@DanskIndustri" />
+<meta property="twitter:title" content="Der er sket en fejl" />
+<meta property="twitter:description" content="Siden blev ikke fundet!" />
+    <meta property="twitter:card" content="summary" />
+<meta name="robots" content="noindex, follow" />
+<meta name="application-name" content="Der er sket en fejl - DI">
+<meta name="msapplication-tooltip" content="Siden blev ikke fundet!">    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="da" type="text/javascript"></script>
+    
+    <!-- Google Tag Manager -->
+<script>
+window.addEventListener('load', function () {
+di.cookieConsent.handleMarketing(function () {
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WMZBV88');
+});
+});
+</script>
+<!-- End Google Tag Manager -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise,Event,CustomEvent,Element.prototype.dataset,DOMTokenList.prototype.@@iterator,DOMTokenList,Array.prototype.contains,Element.prototype.classList"></script>
+<script type="text/javascript">var appInsights=window.appInsights||function(config){function t(config){i[config]=function(){var t=arguments;i.queue.push(function(){i[config].apply(i,t)})}}var i={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",r,f;setTimeout(function(){var t=u.createElement(o);t.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(t)});try{i.cookie=u.cookie}catch(y){}for(i.queue=[],r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)t("track"+r.pop());return t("set"+s),t("clear"+s),t(h+a),t(c+a),t(h+v),t(c+v),t("flush"),config.disableExceptionTracking||(r="onerror",t("_"+r),f=e[r],e[r]=function(config,t,u,e,o){var s=f&&f(config,t,u,e,o);return s!==!0&&i["_"+r](config,t,u,e,o),s}),i}({instrumentationKey:"ebe9a0bf-1298-4a54-bcdd-f9e909d19f80",sdkExtension:"a"});window.appInsights=appInsights;appInsights.queue&&appInsights.queue.length===0&&appInsights.trackPageView();</script></head>
+<body data-diinternal="false">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src='' height='0' width='0' style='display:none;visibility:hidden' data-category-consent='cookie_cat_marketing' data-consent-src='https://www.googletagmanager.com/ns.html?id=GTM-WMZBV88'></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    
+
+    <div class="page-wrapper">
+            <div class="js--main-header">
+                
+
+
+
+
+    <div class="overlay js--menu">
+        <span class="overlay__close js--close-overlay"></span>
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                    <li class="main-menu__list__item">
+                        <a href="/vi-radgiver-dig-ny/" title="Vi r&#229;dgiver dig">
+                            <span class="main-menu__list__item__content">
+                                <span class="icon">
+                                                <svg viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="dialogue-negative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M21,49 C19.8954305,49 19,48.1045695 19,47 C19,45.8954305 19.8954305,45 21,45 C22.1045695,45 23,45.8954305 23,47 C23,48.1045695 22.1045695,49 21,49 Z M43,25 C41.8954305,25 41,24.1045695 41,23 C41,21.8954305 41.8954305,21 43,21 C44.1045695,21 45,21.8954305 45,23 C45,24.1045695 44.1045695,25 43,25 Z M37,49 C35.8954305,49 35,48.1045695 35,47 C35,45.8954305 35.8954305,45 37,45 C38.1045695,45 39,45.8954305 39,47 C39,48.1045695 38.1045695,49 37,49 Z M59,25 C57.8954305,25 57,24.1045695 57,23 C57,21.8954305 57.8954305,21 59,21 C60.1045695,21 61,21.8954305 61,23 C61,24.1045695 60.1045695,25 59,25 Z M29,49 C27.8954305,49 27,48.1045695 27,47 C27,45.8954305 27.8954305,45 29,45 C30.1045695,45 31,45.8954305 31,47 C31,48.1045695 30.1045695,49 29,49 Z M51,25 C49.8954305,25 49,24.1045695 49,23 C49,21.8954305 49.8954305,21 51,21 C52.1045695,21 53,21.8954305 53,23 C53,24.1045695 52.1045695,25 51,25 Z" id="100%" fill="#FFFFFF"></path>
+                    <path d="M30,32 L30,8 L72,8 L72,38 L65,38 L65,49 L51.6428571,38 L50,38 L50,62 L27.3076923,62 L15,72 L15,62 L8,62 L8,32 L30,32 Z M33,32 L50,32 L50,35 L69,35 L69,11 L33,11 L33,32 Z M47,35 L11,35 L11,59 L47,59 L47,38 L47,35 Z M18,59 L18,66 L26,59 L18,59 Z M62,35 L54,35 L62,42 L62,35 Z" id="Lines" fill="#FFFFFF"></path>
+                </g>
+            </svg>
+
+                                </span>
+                                <span class="text">Vi r&#229;dgiver dig</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="/brancher-og-foreninger/" title="Brancher og foreninger">
+                            <span class="main-menu__list__item__content">
+                                <span class="icon">
+                                                <svg viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="netvork-negative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M58.8757173,24.3997495 L49.2482219,32.3528979 C50.9670229,34.4292317 52,37.0939835 52,40 C52,41.585914 51.6923522,43.099973 51.1334809,44.4857527 L58.0419038,48.3237654 C59.2753036,46.3290319 61.4824458,45 64,45 C67.8659932,45 71,48.1340068 71,52 C71,55.8659932 67.8659932,59 64,59 C60.1340068,59 57,55.8659932 57,52 C57,51.365933 57.084304,50.7515562 57.2423146,50.167467 L50.2319396,46.2728142 C48.1210697,49.7086379 44.328123,52 40,52 C36.7916447,52 33.8773674,50.7409022 31.7243375,48.689876 L25.5677179,54.8464957 C27.0762412,56.4559121 28,58.6200784 28,61 C28,65.9705627 23.9705627,70 19,70 C14.0294373,70 10,65.9705627 10,61 C10,56.0294373 14.0294373,52 19,52 C20.8682826,52 22.603605,52.5692701 24.0419716,53.5438148 L30.393404,47.1923824 C28.8904093,45.1881038 28,42.698035 28,40 C28,37.0819212 29.0415702,34.4071142 30.7732166,32.3270731 L16,19.5 L17.3135615,17.9918368 L32.1787306,30.8987491 C34.2792001,29.0920311 37.0120713,28 40,28 C42.9988296,28 45.7407372,29.1000137 47.8442335,30.918552 L57.3507436,23.065348 C55.8905391,21.4654776 55,19.3367371 55,17 C55,12.0294373 59.0294373,8 64,8 C68.9705627,8 73,12.0294373 73,17 C73,21.9705627 68.9705627,26 64,26 C62.0959377,26 60.3299771,25.4087168 58.8757173,24.3997495 Z M64,56 C66.209139,56 68,54.209139 68,52 C68,49.790861 66.209139,48 64,48 C61.790861,48 60,49.790861 60,52 C60,54.209139 61.790861,56 64,56 Z M40,49 C44.9705627,49 49,44.9705627 49,40 C49,35.0294373 44.9705627,31 40,31 C35.0294373,31 31,35.0294373 31,40 C31,44.9705627 35.0294373,49 40,49 Z M19,67 C22.3137085,67 25,64.3137085 25,61 C25,57.6862915 22.3137085,55 19,55 C15.6862915,55 13,57.6862915 13,61 C13,64.3137085 15.6862915,67 19,67 Z M64,23 C67.3137085,23 70,20.3137085 70,17 C70,13.6862915 67.3137085,11 64,11 C60.6862915,11 58,13.6862915 58,17 C58,20.3137085 60.6862915,23 64,23 Z" id="Lines" fill="#FFFFFF"></path>
+                    <path d="M14,19 C16.209139,19 18,17.209139 18,15 C18,12.790861 16.209139,11 14,11 C11.790861,11 10,12.790861 10,15 C10,17.209139 11.790861,19 14,19 Z M14,22 C10.1340068,22 7,18.8659932 7,15 C7,11.1340068 10.1340068,8 14,8 C17.8659932,8 21,11.1340068 21,15 C21,18.8659932 17.8659932,22 14,22 Z" id="100%" fill="#FFFFFF"></path>
+                </g>
+            </svg>
+
+                                </span>
+                                <span class="text">Brancher og foreninger</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="/arrangementer/" title="Kurser, webinarer, arrangementer og netv&#230;rk">
+                            <span class="main-menu__list__item__content">
+                                <span class="icon">
+                                                <svg viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="calendar-negative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M69,16 L63,16 L63,17 L63,20 L57,20 L54,20 L54,16 L26,16 L26,17 L26,20 L20,20 L17,20 L17,16 L11,16 L11,26 L69,26 L69,16 Z M72,16 L72,26 L72,72 L8,72 L8,26 L8,16 L8,13 L17,13 L17,8 L17,6 L26,6 L26,9 L26,13 L54,13 L54,8 L54,6 L63,6 L63,9 L63,13 L72,13 L72,16 Z M60,9 L57,9 L57,17 L60,17 L60,9 Z M23,9 L20,9 L20,17 L23,17 L23,9 Z M11,29 L11,69 L69,69 L69,29 L11,29 Z M46,40 L54,40 L54,34 L56,34 L56,40 L64,40 L64,42 L56,42 L56,48 L64,48 L64,50 L56,50 L56,56 L64,56 L64,58 L56,58 L56,64 L54,64 L54,58 L46,58 L46,64 L44,64 L44,58 L36,58 L36,64 L34,64 L34,58 L26,58 L26,64 L24,64 L24,58 L16,58 L16,56 L24,56 L24,50 L16,50 L16,48 L24,48 L24,42 L16,42 L16,40 L24,40 L24,34 L26,34 L26,40 L34,40 L34,34 L36,34 L36,40 L44,40 L44,34 L46,34 L46,40 Z M46,42 L46,48 L54,48 L54,42 L46,42 Z M44,42 L36,42 L36,48 L44,48 L44,42 Z M46,50 L46,56 L54,56 L54,50 L46,50 Z M44,50 L36,50 L36,56 L44,56 L44,50 Z M34,56 L34,50 L26,50 L26,56 L34,56 Z M34,48 L34,42 L26,42 L26,48 L34,48 Z" id="Lines" fill="#FFFFFF"></path>
+                </g>
+            </svg>
+
+                                </span>
+                                <span class="text">Kurser, webinarer, arrangementer og netv&#230;rk</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="/politik-og-analyser/" title="Politik og analyser">
+                            <span class="main-menu__list__item__content">
+                                <span class="icon">
+                                                <svg viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="document-negative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect id="100%" fill="#FFFFFF" x="22" y="17" width="36" height="4"></rect>
+                    <path d="M16,8 L64,8 L64,72 L16,72 L16,8 Z M19,11 L19,69 L61,69 L61,11 L19,11 Z M22,35 L58,35 L58,37 L22,37 L22,35 Z M22,25 L58,25 L58,27 L22,27 L22,25 Z M22,45 L58,45 L58,47 L22,47 L22,45 Z M22,55 L58,55 L58,57 L22,57 L22,55 Z M22,39 L46,39 L46,41 L22,41 L22,39 Z M22,29 L46,29 L46,31 L22,31 L22,29 Z M22,49 L46,49 L46,51 L22,51 L22,49 Z M22,59 L46,59 L46,61 L22,61 L22,59 Z" id="Lines" fill="#FFFFFF"></path>
+                </g>
+            </svg>
+
+                                </span>
+                                <span class="text">Politik og analyser</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="/di-business/" title="DI Business">
+                            <span class="main-menu__list__item__content">
+                                <span class="icon">
+                                                <svg viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="microfone-negative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M36.6984848,34.5771645 L45.1837662,43.0624458 L50.1335137,48.0121933 L60.0330086,38.1126984 L41.6482323,19.7279221 L31.7487373,29.627417 L36.6984848,34.5771645 Z M43.6838427,44.3909495 L20.4350288,64.9827561 L14.7781746,59.3259018 L35.3699812,36.0770879 L28.9203102,29.627417 L41.6482323,16.8994949 L44.7694476,20.0207102 C45.2530612,19.1556398 45.8625719,18.3420096 46.5979797,17.6066017 C50.893747,13.3108345 57.8585617,13.3108345 62.1543289,17.6066017 C66.4500961,21.9023689 66.4500961,28.8671837 62.1543289,33.1629509 C61.4189211,33.8983588 60.6052908,34.5078695 59.7402204,34.9914831 L62.8614357,38.1126984 L50.1335137,50.8406204 L43.6838427,44.3909495 Z M42.3553391,43.0624458 L36.6984848,37.4055916 L17.6066017,59.3259018 L20.4350288,62.1543289 L42.3553391,43.0624458 Z M58.3720894,33.623352 C59.2268205,33.1998483 60.0282579,32.6321677 60.7401154,31.9203102 C64.254834,28.4055916 64.254834,22.7071068 60.7401154,19.1923882 C57.2253967,15.6776695 51.5269119,15.6776695 48.0121933,19.1923882 C47.3003359,19.9042456 46.7326553,20.7056831 46.3091515,21.5604141 L58.3720894,33.623352 Z M43,34 C41.3431458,34 40,32.6568542 40,31 C40,29.3431458 41.3431458,28 43,28 C44.6568542,28 46,29.3431458 46,31 C46,32.6568542 44.6568542,34 43,34 Z" id="Lines" fill="#FFFFFF"></path>
+                    <circle id="100%" fill="#FFFFFF" cx="48" cy="36" r="3"></circle>
+                </g>
+            </svg>
+
+                                </span>
+                                <span class="text">DI Business</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="main-menu__list__item">
+                        <a href="/om-di/" title="Om DI">
+                            <span class="main-menu__list__item__content">
+                                <span class="icon">
+                                                <svg viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="globeinfo-negative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M53.9990212,52.0000029 C53.241847,52.568883 52.5680572,53.2427539 51.9992676,54 C50.7438853,55.6713333 50,57.7487948 50,60 C50,60.7146992 50.074976,61.4118869 50.2174917,62.0841266 C50.4304712,63.0887406 50.7942882,64.0376381 51.2841236,64.9059999 C52.9993949,67.9467685 56.2599185,70 60,70 C65.5228475,70 70,65.5228475 70,60 C70,56.2599182 67.9467682,52.9993945 64.9059993,51.2841232 C64.0376377,50.7942881 63.0887406,50.4304713 62.084127,50.2174918 C61.4118871,50.0749761 60.7146994,50 60,50 C57.7483553,50 55.6705221,50.7441757 53.9990359,51.9999919 Z M48.0050636,60.3519969 C47.2508822,61.7032423 46.427915,62.9040452 45.5479586,63.9308119 C46.5094368,63.6514231 47.4487773,63.3200095 48.3627305,62.9398206 C48.1533298,62.1083086 48.0307098,61.2423031 48.0050636,60.3519969 Z M49.4564572,65.7348386 C46.217683,67.0741604 42.693277,67.8626853 39.0000053,67.9836472 L39,68 L37,68 L37,67.9836473 C21.2263718,67.4670302 8.53296965,54.773628 8.01635281,39.000005 L8,39 L8,37 L8.01635265,37 C8.53296965,21.226372 21.2263718,8.53296979 36.9999947,8.01635282 L37,8 L39,8 L39,8.01635265 C54.7736282,8.53296979 67.4670304,21.226372 67.9836472,36.999995 L68,37 L68,39 L67.9836473,39 C67.8626855,42.6932737 67.0741603,46.2176814 65.734838,49.4564569 C69.4673682,51.4909546 72,55.4497134 72,60 C72,66.627417 66.627417,72 60,72 C55.4497136,72 51.490955,69.4673685 49.4564572,65.7348386 Z M62.9398211,48.3627306 C64.1461391,45.4628089 64.8614083,42.3072993 64.9818244,39.0000062 L52.9918236,39.0000033 C52.9172069,43.5564644 52.3345547,47.8558966 51.3534982,51.6790423 C53.5365683,49.4111053 56.6034935,48 60,48 C61.0142492,48 61.9991093,48.1258299 62.9398211,48.3627306 Z M23.0081765,36.9999914 C23.0848886,32.3155776 23.698571,27.9028262 24.7300943,23.999996 L14.9085877,24 C12.5902965,27.8155763 11.1910709,32.2513291 11.0181756,36.9999938 L23.0081764,36.9999967 Z M24.7731829,36.9999971 L37,37 L37,24 L26.5669995,24 C25.5031765,27.8405059 24.853638,32.2613674 24.7731829,36.9999971 Z M25.3091218,22 C26.5976997,17.9202745 28.3645065,14.5050034 30.4520414,12.0691881 C24.6892677,13.7437494 19.7217686,17.2872497 16.2492306,22 L25.3091218,22 Z M27.175521,22 L37,22 L37,11.0181754 C35.9561627,11.0561807 34.9274452,11.1534417 33.9171112,11.3066946 C31.2093665,13.2426345 28.8293694,17.032337 27.175521,22 Z M51.2699057,23.999996 C52.3014293,27.9028271 52.9151117,32.3155797 52.9918236,36.9999947 L64.9818246,37 C64.8089291,32.2513291 63.4097035,27.8155763 61.0914123,24 L51.2699068,24 Z M49.4330005,24 L39,24 L39,37 L51.2268172,37 C51.1463622,32.2613692 50.4968238,27.8405066 49.4329981,23.9999912 Z M45.5479579,12.0691873 C47.6354931,14.5050026 49.4023001,17.9202741 50.6908782,22 L59.7507694,22 C56.2782307,17.2872488 51.3107303,13.7437481 45.5479579,12.0691873 Z M42.0828879,11.306694 C41.0725562,11.1534415 40.0438412,11.0561809 39.0000066,11.0181756 L39,22 L48.824479,22 C47.1706304,17.0323365 44.790633,13.2426337 42.0828879,11.306694 Z M24.7300943,52.000004 C23.6985707,48.0971729 23.0848883,43.6844203 23.0081764,39.0000053 L11.0181754,39 C11.1910709,43.7486709 12.5902965,48.1844237 14.9085877,52 L24.7300932,52 Z M26.5669995,52 L37,52 L37,39 L24.7731828,39 C24.8536378,43.7386308 25.5031762,48.1594934 26.5670019,52.0000088 Z M30.4520421,63.9308127 C28.3645069,61.4949974 26.5976999,58.0797259 25.3091218,54 L16.2492306,54 C19.7217693,58.7127512 24.6892697,62.2562519 30.4520421,63.9308127 Z M33.9171121,64.693306 C34.9274438,64.8465585 35.9561588,64.9438191 36.9999934,64.9818244 L37,54 L27.175521,54 C28.8293696,58.9676635 31.209367,62.7573663 33.9171121,64.693306 Z M51.2268171,39.0000029 L39,39 L39,52 L49.4330005,52 C50.4968235,48.1594941 51.146362,43.7386326 51.2268171,39.0000029 Z M48.824479,54 L39,54 L39,64.9818246 C40.0438373,64.9438193 41.0725548,64.8465583 42.0828888,64.6933054 C44.7906335,62.7573655 47.1706306,58.967663 48.824479,54 Z" id="Lines" fill="#FFFFFF"></path>
+                    <path d="M60.9384615,58.4205128 L60.9384615,63.3025641 L59.0512821,63.3025641 L59.0512821,58.4205128 L60.9384615,58.4205128 Z M59,56.9948718 C59,56.858119 59.0256408,56.7299151 59.0769231,56.6102564 C59.1282054,56.4905977 59.1999995,56.3846158 59.2923077,56.2923077 C59.3846158,56.1999995 59.4905977,56.1282054 59.6102564,56.0769231 C59.7299151,56.0256408 59.858119,56 59.9948718,56 C60.1316246,56 60.2615378,56.0256408 60.3846154,56.0769231 C60.5076929,56.1282054 60.6153842,56.1999995 60.7076923,56.2923077 C60.8000005,56.3846158 60.8717946,56.4905977 60.9230769,56.6102564 C60.9743592,56.7299151 61,56.858119 61,56.9948718 C61,57.2752151 60.9025651,57.5128195 60.7076923,57.7076923 C60.5128195,57.9025651 60.2752151,58 59.9948718,58 C59.858119,58 59.7299151,57.9743592 59.6102564,57.9230769 C59.4905977,57.8717946 59.3846158,57.8000005 59.2923077,57.7076923 C59.1999995,57.6153842 59.1282054,57.5076929 59.0769231,57.3846154 C59.0256408,57.2615378 59,57.1316246 59,56.9948718 Z" id="100%" fill="#FFFFFF"></path>
+                </g>
+            </svg>
+
+                                </span>
+                                <span class="text">Om DI</span>
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+
+
+            <div class="main-menu__info">
+
+
+
+
+                                    <span class="main-menu__logo">
+                            <svg class="svg-icon svg-icon--logo_white">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#logo_white"></use>
+    </svg>
+
+                    </span>
+                                    <address class="main-menu__address">
+                        <p>H. C. Andersens Boulevard 18<br />1553 København V<br /> Telefon: +45 3377 3377<br />E-mail: <a href="mailto:di@di.dk">di@di.dk</a></p>
+                    </address>
+
+                <ul class="main-menu__social">
+                        <li>
+                            <a href="https://facebook.com/DanskIndustri"  target="_blank" rel="noopener" title="Facebook">
+                                <div class="icon" data-label="share-facebook">
+                                        <svg class="svg-icon svg-icon--share-facebook">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#share-facebook"></use>
+    </svg>
+
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://twitter.com/DanskIndustri"  target="_blank" rel="noopener" title="Twitter">
+                                <div class="icon" data-label="share-twitter">
+                                        <svg class="svg-icon svg-icon--share-twitter">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#share-twitter"></use>
+    </svg>
+
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.linkedin.com/company/163193/"  target="_blank" rel="noopener" title="LinkedIn">
+                                <div class="icon" data-label="share-linkedin">
+                                        <svg class="svg-icon svg-icon--share-linkedin">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#share-linkedin"></use>
+    </svg>
+
+                                </div>
+                            </a>
+                        </li>
+                </ul>
+
+                    <ul class="main-menu__link-list--discrete">
+                            <li class="main-menu__link-list__item">
+                                <a href="/english/">English</a>
+                            </li>
+                            <li class="main-menu__link-list__item">
+                                <a href="/om-di/kontakt-os/presse/">Presse</a>
+                            </li>
+                    </ul>
+
+<a href="/bliv-medlem/" class="button button--primary button--small">
+    <span class="text">Bliv medlem</span>
+</a>                <a href="https://dit.di.dk/" class="button button--primary button--inverted button--small" target="_blank" rel="noopener">
+    <span class="text">Log ind p&#229; Min Side</span>
+</a>            </div>
+        </nav>
+    </div>
+<div class="overlay js--search-menu">
+    <span class="overlay__close js--close-overlay"></span>
+    <div class="search">
+        <div class="search__recent">
+                <h2 class="title-md">Ofte brugte s&#248;gninger</h2>
+                <ul class="search__recent__list">
+                        <li>
+                            <a href="/soeg/?SearchQuery=Overenskomster" class="button button--link has-icon">
+                                <span class="text">Overenskomster</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/soeg/?SearchQuery=Coronavirus" class="button button--link has-icon">
+                                <span class="text">Coronavirus</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/soeg/?SearchQuery=Ans&#230;ttelse" class="button button--link has-icon">
+                                <span class="text">Ans&#230;ttelse</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/soeg/?SearchQuery=Ny ferielov" class="button button--link has-icon">
+                                <span class="text">Ny ferielov</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/soeg/?SearchQuery=Ferie og fridage" class="button button--link has-icon">
+                                <span class="text">Ferie og fridage</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/soeg/?SearchQuery=L&#230;rlinge" class="button button--link has-icon">
+                                <span class="text">L&#230;rlinge</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/soeg/?SearchQuery=Fratr&#230;delse" class="button button--link has-icon">
+                                <span class="text">Fratr&#230;delse</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/soeg/?SearchQuery=Frav&#230;rsstatistik" class="button button--link has-icon">
+                                <span class="text">Frav&#230;rsstatistik</span>
+                                <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                            </a>
+                        </li>
+                </ul>
+        </div>
+        <div class="search__form">
+            <form action="/soeg/" method="get">
+                <div class="form__field form__field--search js--search-menu form__field--text--no-label js--typeahead" data-typeahead-url="/find/rest/autocomplete/get/{{query}}/10" data-typeahead-href="/soeg/?SearchQuery={{result}}">
+                    <span class="form__field--search__input">
+                        <input class="form__item js--autofocus js--typeahead-input" tabindex="0" type="text" placeholder="S&#248;g her" name="SearchQuery" aria-label="S&#248;g her">
+                        <button type="submit" class="form__field--search__input-button" aria-label="S&#248;g">
+                                <svg class="svg-icon svg-icon--search">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#search"></use>
+    </svg>
+
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>                <div class="sticky-menu js--sticky-menu is-home">
+                    <div class="sticky-menu__inner js--sticky-menu-inner">
+    <header class="site-header">
+        <nav class="site-header__inner w--lg">
+            <ul class="site-header__list site-header__list--primary">
+                        <li><a href="/bliv-medlem/"  class="button">Bliv medlem</a></li>
+                        <li><a href="/om-di/kontakt-os/presse/"  class="button">Presse</a></li>
+                        <li><a href="/om-di/"  class="button">Om DI</a></li>
+                        <li><a href="/english/"  class="button">English</a></li>
+            </ul>
+                <ul class="site-header__list site-header__list--secondary">
+                    <li>
+                        <a class="button button--link has-icon" href="https://dit.di.dk/"  target="_blank" rel="noopener">
+                            <span class="text">MIN SIDE</span>
+                            <span class="arrow icon arrow--colored">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+
+<header class="main-header w--lg">
+    <div class="main-header__inner">
+        <a class="button button--logo" href="/" title="Til forsiden">
+<span class="icon di-logo icon--light di-logo--light">
+    <svg viewBox="0 0 59 28" xmlns="http://www.w3.org/2000/svg">
+        <path class="di-logo__d" d="M14 0C6.268 0 0 6.268 0 14c0 7.73 6.268 14 14 14 7.73 0 14-6.27 14-14C28 6.27 21.73 0 14 0zm-.13 20.223h-3.11c-.588 0-1.41-.322-1.41-1.34v-10c0-.822.572-1.377 1.376-1.377h2.964c4.003 0 6.29 2.573 6.29 6.537 0 3.75-2.43 6.18-6.11 6.18zM13.655 9.97H12.03v7.788h1.804c2.303 0 3.358-1.697 3.358-3.838 0-2.287-1.072-3.95-3.536-3.95z" />
+        <path class="di-logo__i" d="M46.278 18.933c0 .894-.57 1.394-1.34 1.394-.77 0-1.34-.5-1.34-1.394V8.79c0-.893.57-1.392 1.34-1.392.77 0 1.34.5 1.34 1.393v10.143zM44.996 0C37.27 0 31 6.267 31 14c0 7.723 6.27 14 13.996 14C52.732 28 59 21.723 59 14c0-7.733-6.268-14-14.004-14z" />
+    </svg>
+</span><span class="icon di-logo icon--dark di-logo--dark">
+    <svg viewBox="0 0 59 28" xmlns="http://www.w3.org/2000/svg">
+        <path class="di-logo__d" d="M14 0C6.268 0 0 6.268 0 14c0 7.73 6.268 14 14 14 7.73 0 14-6.27 14-14C28 6.27 21.73 0 14 0zm-.13 20.223h-3.11c-.588 0-1.41-.322-1.41-1.34v-10c0-.822.572-1.377 1.376-1.377h2.964c4.003 0 6.29 2.573 6.29 6.537 0 3.75-2.43 6.18-6.11 6.18zM13.655 9.97H12.03v7.788h1.804c2.303 0 3.358-1.697 3.358-3.838 0-2.287-1.072-3.95-3.536-3.95z" />
+        <path class="di-logo__i" d="M46.278 18.933c0 .894-.57 1.394-1.34 1.394-.77 0-1.34-.5-1.34-1.394V8.79c0-.893.57-1.392 1.34-1.392.77 0 1.34.5 1.34 1.393v10.143zM44.996 0C37.27 0 31 6.267 31 14c0 7.723 6.27 14 13.996 14C52.732 28 59 21.723 59 14c0-7.733-6.268-14-14.004-14z" />
+    </svg>
+</span>        </a>
+
+        <a class="button button--search js--search" href="javascript:" title="S&#248;g">
+                <svg class="svg-icon svg-icon--search">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#search"></use>
+    </svg>
+
+        </a>
+
+        <a class="button button--burger js--burger" href="javascript:" title="&#197;ben menu">
+            <span></span>
+        </a>
+    </div>
+</header>                                                                                                                    </div>
+                </div>
+            </div>
+        <main>
+            <section class="section">
+    
+
+    <div class="deck deck--brand-light deck--header">
+        <div class="w--md">
+                <h1 class="title-md">
+                    Der er sket en fejl
+                </h1>
+                            <p>Siden blev ikke fundet!</p>
+        </div>
+    </div>
+
+
+</section>
+<div class="ribbon ribbon--ltr"></div>
+<section class="section">
+    <div class="deck">
+        <div class="w--md">
+            <div class="rich-text rich-text--initial article article--no-initial">
+                <p><strong>Herfra kan du <a onclick="history.go(-1); return false;" href="www.danskindustri.dk">gå tilbage til siden, du kom fra</a> eller <a href="/">gå tilbage til forsiden</a></strong></p>
+<p><strong>Fejlen kan skyldes flere ting:</strong></p>
+<ul>
+<li>Siden er slettet og findes ikke længere</li>
+<li>Der har været en fejl i linket, du har klikket på</li>
+<li>Du har tastet adressen forkert ind</li>
+</ul>
+            </div>
+        </div>
+    </div>
+</section><section class="deck">
+    <div class="w--md">
+        <div class="cta-banner">
+            <div class="flex-grid">
+                <div class="flex-grid__col flex-grid__col--12 flex-grid__col--md-6 banner-title">
+                        <h2>S&#248;g</h2>
+                                            <p><span>Du kan ogs&#229; pr&#248;ve at finde indholdet, du leder efter, ved at bruge s&#248;gefunktionen</span></p>
+                </div>
+                <div class="flex-grid__col flex-grid__col--12 flex-grid__col--md-6 cta-banner__action">
+<a href="/soeg/" class="button button--primary button--large">
+    <span class="text">S&#248;g</span>
+</a>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section">
+                
+            </section>
+        </main>
+
+
+<footer class="main-footer">
+    <div class="w--lg">
+        <div class="flex-grid">
+            <div class="main-footer__column flex-grid__col flex-grid__col--12 flex-grid__col--md-4">
+                <div class="main-footer__column__inner">
+                    <h2 class="main-footer__headline">Om DI</h2>
+                        <ul class="links-list">
+
+                                <li>
+                                    <a href="/om-di/hvad-er-di/" class="button button--link button--link--inverted has-icon button--link--full">
+    <span class="text">Hvad er DI</span>
+    <span class="arrow icon arrow--white">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+</a>
+                                </li>
+                                <li>
+                                    <a href="/om-di/kontakt-os/" class="button button--link button--link--inverted has-icon button--link--full">
+    <span class="text">Kontakt os</span>
+    <span class="arrow icon arrow--white">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+</a>
+                                </li>
+                                <li>
+                                    <a href="/om-di/job-i-di/" class="button button--link button--link--inverted has-icon button--link--full">
+    <span class="text">Job i DI</span>
+    <span class="arrow icon arrow--white">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+</a>
+                                </li>
+                                <li>
+                                    <a href="/om-di/brug-industriens-hus/" class="button button--link button--link--inverted has-icon button--link--full">
+    <span class="text">Industriens Hus og Gl. Vindinge</span>
+    <span class="arrow icon arrow--white">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+</a>
+                                </li>
+                                <li>
+                                    <a href="/om-di/privatlivspolitik/" class="button button--link button--link--inverted has-icon button--link--full">
+    <span class="text">Privatlivspolitik</span>
+    <span class="arrow icon arrow--white">
+    <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd">
+            <path class="fill" d="M34 17c0 9.405-7.595 17-17 17-9.366 0-17-7.595-17-17C0 7.595 7.634 0 17 0c9.405 0 17 7.595 17 17zm-8.343 1.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" />
+            <path class="border" d="M34 17c0-9.405-7.595-17-17-17C7.634 0 0 7.595 0 17c0 9.405 7.634 17 17 17 9.405 0 17-7.595 17-17zm-2.715 0c0 7.87-6.375 14.245-14.285 14.245C9.13 31.245 2.794 24.87 2.794 17 2.794 9.13 9.13 2.794 17 2.794c7.91 0 14.285 6.336 14.285 14.206z" />
+            <path d="M25.657 18.023c.315-.315.433-.708.433-1.023 0-.394-.118-.708-.433-1.023l-7.988-7.28c-.12-.158-.473-.354-.827-.354-.71 0-1.338.63-1.338 1.298 0 .277.078.67.393.946l5.746 5.076H9.05c-.668 0-1.298.63-1.298 1.338 0 .708.63 1.26 1.3 1.26h12.592l-5.746 5.154c-.315.236-.393.63-.393.945 0 .668.63 1.297 1.338 1.297.393 0 .747-.236.944-.393l7.87-7.24z" class="arrow-shape" />
+        </g>
+    </svg>
+</span>
+</a>
+                                </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="main-footer__column flex-grid__col flex-grid__col--12 flex-grid__col--md-4">
+                <div class="main-footer__column__inner">
+                    <ul class="links-list">
+                            <li>
+                                <a href="/vi-radgiver-dig-ny/">Vi r&#229;dgiver dig</a>
+                            </li>
+                            <li>
+                                <a href="/brancher-og-foreninger/">Brancher og foreninger</a>
+                            </li>
+                            <li>
+                                <a href="/arrangementer/">Kurser, arrangementer og netv&#230;rk</a>
+                            </li>
+                            <li>
+                                <a href="/politik-og-analyser/">Politik og analyser</a>
+                            </li>
+                            <li>
+                                <a href="/di-business/">DI Business</a>
+                            </li>
+                            <li>
+                                <a href="/vi-radgiver-dig-ny/virksomhedsregler-og-varktojer/handel-og-eksport/dis-certifikatservice/">DI Certifikatservice</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-footer__column main-footer__column--right-bottom flex-grid__col flex-grid__col--12 flex-grid__col--md-4">
+                <div class="main-footer__column__inner">
+                    <span class="main-footer__logo">
+                        <span class="icon icon--light">
+    <svg class="svg-icon svg-icon--logo_white">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#logo_white"></use>
+    </svg>
+                        </span>
+                    </span>
+                        <address>
+                            <p>H. C. Andersens Boulevard 18<br />1553 København V<br /> Telefon: +45 3377 3377<br />E-mail: <a href="mailto:di@di.dk">di@di.dk</a></p>
+                        </address>
+                    <ul class="main-footer__social">
+                            <li>
+                                <a href="https://facebook.com/DanskIndustri" target="_blank" rel="noopener" title="Facebook">
+                                    <div class="icon" data-label="share-facebook">
+                                            <svg class="svg-icon svg-icon--share-facebook">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#share-facebook"></use>
+    </svg>
+
+                                    </div>
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://twitter.com/DanskIndustri" target="_blank" rel="noopener" title="Twitter">
+                                    <div class="icon" data-label="share-twitter">
+                                            <svg class="svg-icon svg-icon--share-twitter">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#share-twitter"></use>
+    </svg>
+
+                                    </div>
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.linkedin.com/company/163193/" target="_blank" rel="noopener" title="LinkedIn">
+                                    <div class="icon" data-label="share-linkedin">
+                                            <svg class="svg-icon svg-icon--share-linkedin">
+        <use xlink:href="/dist/svg/svg-sprite.svg?v=637467282220000000#share-linkedin"></use>
+    </svg>
+
+                                    </div>
+                                </a>
+                            </li>
+                    </ul>
+
+                        <ul class="main-footer__links">
+                                <li>
+                                    <a href="/om-di/omdidk/">Om di.dk</a>
+                                </li>
+                                <li>
+                                    <a href="/om-di/kontakt-os/hvem-er-hvem/">Find person</a>
+                                </li>
+                                <li>
+                                    <a href="/om-di/privatlivspolitik-3/">Privatlivspolitik</a>
+                                </li>
+                        </ul>
+
+<a href="/bliv-medlem/" class="button button--primary button--small">
+    <span class="text">Bliv medlem</span>
+</a>                    <a href="https://dit.di.dk/" class="button button--primary button--inverted button--small" target="_blank" rel="noopener">
+    <span class="text">Log ind p&#229; Min Side</span>
+</a>                </div>
+            </div>
+        </div>
+    </div>
+</footer>    </div>
+    
+    <script src="/bundleversion-uPDTtkrwaHouH-kD_Xq2mtFWPz8DDlpXzqjsH_3-yXI1/Scripts/VendorApp.js" async></script>
+
+    <script type='text/javascript'>
+/*<![CDATA[*/
+window.addEventListener('load', function () {
+di.cookieConsent.handleMarketing(function () {
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_358440.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+});
+});
+/*]]>*/
+</script>
+
+    <script type="text/javascript" src="https://dl.episerver.net/13.3.0/epi-util/find.js"></script>
+<script type="text/javascript">
+if(FindApi){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}
+</script>
+
+  
+</body>
+</html>

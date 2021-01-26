@@ -1,0 +1,527 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head2"><title>
+	Other LEO Supports - Local Enterprise Office
+</title>
+    <!-- OneTrust Cookies Consent Notice start for www.localenterprise.ie -->
+	
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/0caacb55-6e7a-4c68-815f-015704a2f46f/OtAutoBlock.js" ></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/6.5.0/otBannerSdk.js" type="text/javascript" ></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="0caacb55-6e7a-4c68-815f-015704a2f46f" ></script>
+	
+	
+    <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script>
+    
+    <!-- OneTrust Cookies Consent Notice end for www.localenterprise.ie -->
+    <script type="text/javascript">
+        // function to pull cookie value
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+
+        function OptanonWrapper() {
+            console.log("OptanonWrapper called");
+
+            var OABCcookieName = "OptanonAlertBoxClosed";
+            var bannerAcceptBtn = document.getElementById("onetrust-accept-btn-handler");
+            var pcAllowAllBtn = document.getElementById("accept-recommended-btn-handler");
+            var pcSaveBtn = document.getElementsByClassName("save-preference-btn-handler onetrust-close-btn-handler button-theme")[0];
+            var OABCcookie = getCookie(OABCcookieName);
+
+            // IF logic needed here because ot-banner-sdk DIV is not injected on page loads if banner is not exposed
+
+            if (!OABCcookie && bannerAcceptBtn) {
+                bannerAcceptBtn.addEventListener('click', function () {
+                    console.log("Allowed all via Banner");
+                    location.reload();
+                });
+            }
+            if (pcAllowAllBtn)
+                pcAllowAllBtn.addEventListener('click', function () {
+                    console.log("Allowed all via Preference Center");
+                    location.reload();
+                });
+
+            pcSaveBtn.addEventListener('click', function () {
+                console.log("Set custom settings via Preference Center");
+                location.reload();
+            });
+        }
+
+    </script>
+    
+    <!-- OneTrust Cookies Consent Notice end for www.localenterprise.ie -->
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" lang="en" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="Language" content="en" /><meta name="description" content="" /><meta name="keywords" content="local, enterprise, business, online, office, offices, covid-19, through, supports, e-mail, telephone, voucher, available, trading, training, micro" /><meta name="DC.Title" content="Other LEO Supports" /><meta name="DC.Creator" content="" /><meta name="DC.Publisher" content="" /><meta name="DC.Subject" content="local, enterprise, business, online, office, offices, covid-19, through, supports, e-mail, telephone, voucher, available, trading, training, micro" /><meta name="DC.Description" content="" /><meta name="DC.Date.Created" content="2020-03-18" /><meta name="DC.Type" content="Type A" /><meta name="DC.Identifier" content="https://www.localenterprise.ie//Portal/response/Other-LEO-Supports/Other-LEO-Supports.html" /><meta name="DC.Language" content="en" /><meta name="DC.Service" content="" /><meta name="DC.Contributor" content="" /><meta name="DC.Format" content="" /><meta name="DC.Source" content="" /><meta name="DC.Relation" content="" /><meta name="DC.Coverage" content="" /><meta name="DC.Rights" content="" /><meta name="Generator" content="pTools Software" />
+
+<!-- Standard Styles -->
+<link href="/includes/maps/map.css" rel="stylesheet" type="text/css" />
+<link id="MainStyleSheet" rel="stylesheet" type="text/css" media="all" href="/includes/css/core.css?v=0000" />
+<link id="mainStyle" rel="stylesheet" type="text/css" media="all" href="/includes/css/blank.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/includes/css/print.css" /> 
+<link rel="stylesheet" type="text/css" href="/includes/flowplayer/minimalist.css" />
+<link href="/includes/js/jQuery_UI/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css" />
+<link href="/includes/css/SocialShare.min.css" rel="stylesheet" />
+<!-- JQuery Include -->
+<script src="/includes/js/JQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/includes/js/jQuery_UI/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+
+<!-- JQuery Plugins -->
+<script src="/includes/js/CommonScripts.js" type="text/javascript"></script>
+
+<script src="/includes/js/jquery.ScrollToFixed.js" type="text/javascript"></script>
+<script src="/includes/js/JQuery/Addons/jquery.cookie.js" type="text/javascript"></script>
+<script src="/includes/flowplayer/flowplayer.min.js" type="text/javascript"></script>
+
+
+<!-- Share This -->
+<!--<script type="text/javascript">var switchTo5x = true;</script>
+<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({ publisher: "8415b612-0454-4ae1-a888-ebfdb56ce662", doNotHash: false, doNotCopy: true, hashAddressBar: false, onhover: false });</script>-->
+
+<link rel="SHORTCUT ICON" href="/images/favicon.ico" type="image/x-icon" />
+    
+</head>
+<!--[if lt IE 8]><body class="ie7"><![endif]-->
+<!--[if IE 8]><body class="ie8"><![endif]-->
+    <!--[if IE 9]><body class="ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+   
+    <!-- <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-45296237-1', 'localenterprise.ie');
+        ga('send', 'pageview');
+
+    </script>-->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PLXLRN9');
+
+    </script>
+    <!-- End Google Tag Manager -->
+ <body>
+
+      <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLXLRN9"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+          <div id="cookiePanel" style="display:none;">
+         <div class="shell">
+             <div class="cookieContent cl">
+                 <div class="cookie_l">
+
+                     
+                 </div>
+                 <div class="cookie_r">
+                     <input name="ctl00$ctl00$continueBtn" type="button" id="continueBtn" class="grey button" value="Close Notice" onclick="javascript: acceptCookie();" />
+                 </div>
+             </div>
+         </div>
+     </div>
+    <form method="post" action="/Portal/response/Other-LEO-Supports/Other-LEO-Supports.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="KaxONB8xJfJVF/tIx3XHHIj5ItxEy5A1/3/LlTCEf7g1jdZMQewvhW4OgvUdjyFGn1mmr/B3aXMIaUrDhtFYjpyAAgz9nkW95tiMyCMrdjiC0MK9qO4N3h9puD8l6J4IPt0RxPd9xAYSin0oca642PID3Kf4smNfdI9cMl9MQtQ0iOsUFwFTO7qT6AR++culr//zUUkBLTLAp+bvjyWHlLytFKYqUX9saZquXuso+NSbyUhwdY4P0X4bKk0OEwYFVjPnZTJynw4mot3DIPRqknpQQytbT2HhTwWOCMTcxVTLhSkOqYlPzBIlXfFUF1BiMiGw256MwMDZz9EXyqxFjl2YeWczFqw7sZhjgTCKy88qMbgr6XsqkV4TmNsHx4E6WoSmvwFvmTMp8nv1ssl3v+2TBD399IFCDrWwnLcfNx960lA2JWEgtmiP4E7XYlRDRMcIdGCLOz9u2QUImklwsDnUCqIcSiySGUKYokfAeE38jBsrUQoLLP7PVPLF+Xcm684K9/Pn0slnC4PNvQcUjrsgDdTRt5df/YOaEEBvbOE=" />
+</div>
+
+
+<script src="/ScriptResource.axd?d=kBsWOc_eTeb1zMOm4TgWtIciorJgUNVT4WASyMS8kk5bY2hgL6XLFMcIJelVEKDvogrOhmhAx7JY5frp4b8I4HyelhADqSffUfSr8HpIPOspw3z29RzdYr5gF9FxIkReUqNKlL0H0xWCWGDi5wegGkF_KTeUoICEBuGnVlj7nMw1&amp;t=7e14f9a4" type="text/javascript"></script>
+<script src="../../../webservices/MembershipService.asmx/js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div>
+        
+ <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>  
+ 
+
+
+<div id="header_top">
+    <div class="shell cl relative">
+        <div class="nav mobileDisplayNone">
+            <ul class="cl"><li class=""><a href="/">
+            Home
+          </a></li><li class="&#xA;            transition&#xA;            "><a href="/About-Us/">About Us</a><ul><li class="&#xA;            transition&#xA;            "><a href="/About-Us/Services/">Services</a></li><li class="&#xA;            transition&#xA;            "><a href="/About-Us/Mission-Statement/">Mission Statement</a></li><li class="&#xA;            transition&#xA;            "><a href="/About-Us/Startup-Stories/">Startup Stories</a></li></ul></li><li class="&#xA;            transition&#xA;            "><a href="/FAQs/">FAQs</a><ul><li class="&#xA;            transition&#xA;            "><a href="/FAQs/response/">COVID-19 Related FAQs</a></li></ul></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/">Documents and Publications</a><ul><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Credit-Review-Office-Notes-on-Non-Performing-Loans/">Credit Review Office - Notes on Non Performing Loans</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Currency-Risk-Management/">Currency Risk Management</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Customs-Insight-Course/">Customs Insight Course</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Brexit-Preparedness-Checklist/">Brexit Preparedness Checklist</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Simple-steps-to-prepare-protect-your-small-business-for-Brexit/">Simple steps to prepare &amp; protect your small business for Brexit</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/LEAN/">LEAN</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Impact-Reports/">Impact Reports</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Customer-Service-Charter/">Customer Service Charter</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/10-Step-Guide/">10 Step Guide</a></li><li class="&#xA;            transition&#xA;            "><a href="/Documents-and-Publications/Insight-PR-Training-Tool/">Insight PR Training Tool</a></li></ul></li><li class="&#xA;            transition&#xA;            "><a href="/News-and-Events/">News &amp; Events</a></li></ul>
+        </div>
+        <div id="style_switcher" class="mobileDisplayNone">
+            <span id="blank">&#160;</span>
+            <span id="contrast">&#160;</span>
+        </div>
+        <div id="social_banner">
+            <p><a href="http://www.facebook.com/LocalEnterpriseOffices" target="_blank"><img src="/images_upload/Portal/ImageLibrary/LEO-Icons/eu_Icons_30.png" alt="EU logo " title="EU logo " /> <img src="/images_upload/Portal/ImageLibrary/icon-facebook.png" alt="icon-facebook" title="icon-facebook" /></a><a href="https://twitter.com/loc_enterprise" target="_blank"> <img src="/images_upload/Portal/ImageLibrary/icon-twitter.png" alt="icon-twitter" title="icon-twitter" /></a><a href="https://www.youtube.com/channel/UC8kvfnZfaO78rBvYqzfPxew" target="_blank"> <img src="/images_upload/Portal/ImageLibrary/icon-youtube.png" alt="icon-youtube" title="icon-youtube" /></a>   </p>
+        </div>
+    </div>    
+</div>
+<div id="header">
+    <div class="shell border_l_r cl">
+        <div id="mobile_header" class="desktopDisplayNone tabletDisplayNone mobileDisplayBlock cols_2 cl">
+             
+
+          
+
+            <div class="floatRight">
+                <ul class="cl">                    
+                    <li class="m_menu">
+                        <a href="#mobile_menu" onclick="showToggle($('#mobile_menu')); return false;">Menu</a>
+                    </li>
+                    <li class="m_search">
+                        <a href="#ctl00_ctl00_HeaderPanel1_search_box" onclick="showToggle($('.site_search_pnl'), 'right'); return false;">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile_menu" style="display: none;" class="desktopDisplayNone tabletDisplayNone">
+
+            <ul id="mobile_nav"><li class=""><a href="/">
+          Home
+        </a></li><li class=" first"><a href="/About-Us/">About Us</a><ul><li><a href="/About-Us/Services/">Services</a></li><li><a href="/About-Us/Mission-Statement/">Mission Statement</a></li><li><a href="/About-Us/Startup-Stories/">Startup Stories</a></li></ul></li><li class=""><a href="/FAQs/">FAQs</a><ul><li><a href="/FAQs/response/">COVID-19 Related FAQs</a><ul><li><a href="/FAQs/response/What-is-a-Mentor-/">What is a Mentor?</a></li><li><a href="/FAQs/response/How-Can-My-Local-Enterprise-Office-Help-Me/">How Can My Local Enterprise Office Help Me</a></li><li><a href="/FAQs/response/I’ve-contacted-my-Local-Enterprise-Office-when-can-I-expect-a-reply-/">I’ve contacted my Local Enterprise Office, when can I expect a reply?</a></li><li><a href="/FAQs/response/Can-my-LEO-help-with-my-commercial-rates-/">Can my LEO help with my commercial rates?</a></li><li><a href="/FAQs/response/Can-my-LEO-help-with-my-queries-on-VAT-and-Tax-/">Can my LEO help with my queries on VAT and Tax?</a></li><li><a href="/FAQs/response/Trading-Online-Voucher-Scheme/">Trading Online Voucher Scheme</a></li><li><a href="/FAQs/response/What-grants-are-available-from-the-LEO-/">What grants are available from the LEO?</a></li><li><a href="/FAQs/response/Can-I-get-online-training-from-my-LEO-/">Can I get online training from my LEO?</a></li><li><a href="/FAQs/response/What-is-the-Covid-19-Business-Financial-Planning-Grant-/">What is the Covid-19 Business Financial Planning Grant?</a></li><li><a href="/FAQs/response/What-is-the-Sustaining-Enterprise-Fund-for-Small-Enterprises-/">What is the Sustaining Enterprise Fund for Small Enterprises?</a></li></ul></li></ul></li><li class=""><a href="/Documents-and-Publications/">Documents and Publications</a><ul><li><a href="/Documents-and-Publications/Credit-Review-Office-Notes-on-Non-Performing-Loans/">Credit Review Office - Notes on Non Performing Loans</a></li><li><a href="/Documents-and-Publications/Currency-Risk-Management/">Currency Risk Management</a></li><li><a href="/Documents-and-Publications/Customs-Insight-Course/">Customs Insight Course</a></li><li><a href="/Documents-and-Publications/Brexit-Preparedness-Checklist/">Brexit Preparedness Checklist</a></li><li><a href="/Documents-and-Publications/Simple-steps-to-prepare-protect-your-small-business-for-Brexit/">Simple steps to prepare &amp; protect your small business for Brexit</a></li><li><a href="/Documents-and-Publications/LEAN/">LEAN</a><ul><li><a href="/Documents-and-Publications/LEAN/LEAN/">LEAN </a></li></ul></li><li><a href="/Documents-and-Publications/Impact-Reports/">Impact Reports</a><ul><li><a href="/Documents-and-Publications/Impact-Reports/Impact-Report-2018-/">Impact Report (2018)</a></li><li><a href="/Documents-and-Publications/Impact-Reports/Impact-Report-2017-1/">Impact Report (2017)</a></li><li><a href="/Documents-and-Publications/Impact-Reports/Impact-Report-2019-/">Impact Report (2019)</a></li></ul></li><li><a href="/Documents-and-Publications/Customer-Service-Charter/">Customer Service Charter</a></li><li><a href="/Documents-and-Publications/10-Step-Guide/">10 Step Guide</a></li><li><a href="/Documents-and-Publications/Insight-PR-Training-Tool/">Insight PR Training Tool</a></li></ul></li><li class=""><a href="/News-and-Events/">News &amp; Events</a></li><li class=""><a href="/Find-Your-Local-Enterprise-Office/">Find Your Local Enterprise Office</a></li><li class=""><a href="/Discover-Business-Supports/">Discover Business Supports</a><ul><li><a href="/Discover-Business-Supports/Brexit/">Brexit</a><ul><li><a href="/Discover-Business-Supports/Brexit/Access-to-world-wide-support-networks/">Access to world-wide support networks</a></li><li><a href="/Discover-Business-Supports/Brexit/Brexit-Checklist/">Brexit Checklist</a></li><li><a href="/Discover-Business-Supports/Brexit/Case-Studies-and-Brexit-Events/">Case Studies and Brexit Events</a></li><li><a href="/Discover-Business-Supports/Brexit/Financial-Supports/">Financial Supports</a></li><li><a href="/Discover-Business-Supports/Brexit/Customs-Training/">Customs Training</a></li><li><a href="/Discover-Business-Supports/Brexit/Mentoring/">Mentoring</a></li></ul></li><li><a href="/Discover-Business-Supports/Workplace-Innovation-Toolkit/">Workplace Innovation Toolkit</a></li><li><a href="/Discover-Business-Supports/LEAN/">LEAN </a></li><li><a href="/Discover-Business-Supports/Covid-19/">Covid 19</a></li><li><a href="/Discover-Business-Supports/Financial-Supports/">Financial Supports</a><ul><li><a href="/Discover-Business-Supports/Financial-Supports/Technical-Assistance-for-Micro-Exporters/">Technical Assistance for Micro Exporters</a></li><li><a href="/Discover-Business-Supports/Financial-Supports/Eligibility-Criteria/">Eligibility Criteria</a></li><li><a href="/Discover-Business-Supports/Financial-Supports/Feasibility-Grant/">Feasibility Grant</a></li><li><a href="/Discover-Business-Supports/Financial-Supports/Priming-Grant/">Priming Grant</a></li><li><a href="/Discover-Business-Supports/Financial-Supports/Business-Expansion-Grant/">Business Expansion Grant</a></li><li><a href="/Discover-Business-Supports/Financial-Supports/Microfinance-Loans/">Microfinance Loans</a></li></ul></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/">First Stop Shop</a><ul><li><a href="/Discover-Business-Supports/First-Stop-Shop/Skillnets-Ireland/">Skillnets Ireland</a></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/Failte-Ireland/">Failte Ireland</a></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/Credit-Review-Office/">Credit Review Office</a></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/Revenue/">Revenue</a></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/Dept-of-Social-Protection/">Dept of Social Protection</a></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/National-Association-of-Community-Enterprise-Centres-NACEC-/">National Association of Community Enterprise Centres (NACEC)</a></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/Micro-Finance-Ireland/">Micro Finance Ireland</a></li></ul></li><li><a href="/Discover-Business-Supports/Training-Programmes/">Training Programmes</a><ul><li><a href="/Discover-Business-Supports/Training-Programmes/Start-Your-Own-Business-Programme/">Start Your Own Business Programme</a></li><li><a href="/Discover-Business-Supports/Training-Programmes/Accelerate-Management-Development-Programme/">Accelerate Management Development Programme</a></li><li><a href="/Discover-Business-Supports/Training-Programmes/Food-Academy-Programme/">Food Academy Programme</a></li><li><a href="/Discover-Business-Supports/Training-Programmes/Food-Starter-Programme/">Food Starter Programme</a></li></ul></li><li><a href="/Discover-Business-Supports/Mentoring/">Mentoring</a></li><li><a href="/Discover-Business-Supports/Supporting-SMEs-Online-Tool/">Supporting SMEs Online Tool</a><ul><li><a href="/Discover-Business-Supports/Supporting-SMEs-Online-Tool/SME-News/">SME News</a></li></ul></li><li><a href="/Discover-Business-Supports/Trading-Online-Voucher-Scheme-/">Trading Online Voucher Scheme </a></li><li><a href="/Discover-Business-Supports/Enterprise-Europe-Network-/">Enterprise Europe Network  </a></li><li><a href="/Discover-Business-Supports/Steps-to-Success-Roadshow-for-female-entrepreneurs/">Steps to Success Roadshow for female entrepreneurs</a></li><li><a href="/Discover-Business-Supports/PR-Training-Tool-for-SMEs-and-Start-Ups/">PR Training Tool for SMEs and Start-Ups</a></li></ul></li><li class=""><a href="/Enable-Enterprise-Culture/">Enable Enterprise Culture</a><ul><li><a href="/Enable-Enterprise-Culture/Showcase-Ireland/">Showcase Ireland</a></li><li><a href="/Enable-Enterprise-Culture/National-Enterprise-Awards/">National Enterprise Awards</a></li><li><a href="/Enable-Enterprise-Culture/Look-for-Local/">Look for Local</a></li><li><a href="/Enable-Enterprise-Culture/National-Local-Enterprise-Week/">National Local Enterprise Week</a></li><li><a href="/Enable-Enterprise-Culture/NWED/">NWED</a><ul><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/">NWED 2020</a><ul><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Aine-Gleeson/">Aine Gleeson</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Aine-Kerr/">Áine Kerr</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Orla-Martin/">Orla Martin </a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Lisa-Nolan/">Lisa Nolan</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Laura-Lenihan/">Laura Lenihan</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Joanne-Hession/">Joanne Hession</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Tracy-Keogh/">Tracy Keogh</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Caroline-Lane/">Caroline Lane </a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Sonia-Deasy/">Sonia Deasy </a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Siobhan-Kinsella/">Siobhan Kinsella</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Sheelagh-Daly/">Sheelagh Daly </a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Anne-Lanigan/">Anne Lanigan</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Marina-Donohoe/">Marina Donohoe</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Marcella-Rudden/">Marcella Rudden</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Elaine-Moyles/">Elaine Moyles</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Alison-Ritchie/">Alison Ritchie</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Deirdre-Parkinson/">Deirdre Parkinson</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Breda-Fox/">Breda Fox</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Pamela-Laird/">Pamela Laird</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Mailo-Power-/">Mailo Power, </a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Noel-Davidson/">Noel Davidson</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Sarah-Colgan/">Sarah Colgan </a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Derval-O’Rourke/">Derval O’Rourke </a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Larissa-Feeney/">Larissa Feeney</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/NWED-2020-Spotprizes/">NWED 2020 Spotprizes</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Conor-Carmody/">Conor Carmody</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Oisin-Geoghegan/">Oisin Geoghegan</a></li><li><a href="/Enable-Enterprise-Culture/NWED/NWED-2020/Fiona-Leahy/">Fiona Leahy</a></li></ul></li><li><a href="/Enable-Enterprise-Culture/NWED/Meet-Our-Speakers/">Meet Our Speakers</a></li><li><a href="/Enable-Enterprise-Culture/NWED/Resources/">Resources</a></li><li><a href="/Enable-Enterprise-Culture/NWED/Watch-on-Demand/">Watch on Demand</a></li></ul></li><li><a href="/Enable-Enterprise-Culture/Enterprise Education/">Enterprise Education</a><ul><li><a href="/Enable-Enterprise-Culture/Enterprise Education/Student-Enterprise-Awards/">Student Enterprise Awards</a></li></ul></li><li><a href="/Enable-Enterprise-Culture/Ireland-s-Best-Young-Entrepreneur/">Ireland's Best Young Entrepreneur</a></li><li><a href="/Enable-Enterprise-Culture/National-Ploughing-Championships-2019/">National Ploughing Championships 2019</a></li></ul></li><li class=""><a href="/response/">Response</a><ul><li><a href="/response/Look-for-Local/">Look for Local</a></li><li><a href="/response/Lunch-and-Learn-Training-Webinar-Series/">Lunch &amp; Learn</a></li><li><a href="/response/Employers-and-Employees/">For Employers, Employees &amp; Self Employed</a></li><li><a href="/response/General-Business-Supports/">General Business Supports</a></li><li><a href="/response/Other-LEO-Supports/">LEO Supports</a></li><li><a href="/response/Expert-Views-and-Client-Focus/">Expert Views &amp; Client Focus</a></li><li><a href="/response/Online-Business-Resources/">Online Business Resources</a></li><li><a href="/response/Enterprise-Ireland-Supports1/">Enterprise Ireland Supports</a></li><li><a href="/response/response-faqs/">COVID-19 FAQs</a></li></ul></li><li class=""><a href="/Freedom-of-Information/">Freedom of Information</a></li><li class=""><a href="/Legal/">Legal</a><ul><li><a href="/Legal/GDPR/">GDPR</a><ul><li><a href="/Legal/GDPR/Personal-Data-Protection-Notice/">Personal Data Protection Notice</a></li><li><a href="/Legal/GDPR/Grant-Data-Protection-Notice/">Grant Data Protection Notice</a></li><li><a href="/Legal/GDPR/Cookie-Policy/">Cookie Policy</a></li></ul></li><li><a href="/Legal/Appeals-Process/">Appeals Process</a></li><li><a href="/Legal/Terms-Conditions/">Terms &amp; Conditions</a></li></ul></li><li class=""><a href="/Sitemap/">Sitemap</a></li><li class=""><a href="/Accessibility/">Accessibility</a></li><li class=" last"><a href="/Gaeilge/">Gaeilge</a></li></ul>
+
+        </div>
+        
+        <div id="header_left">
+            <div id="logo">
+                <a id="HeaderPanel1_Banner2" href="https://www.localenterprise.ie/" target="_top"><img src="/Portal/ImageLibrary/LEO-Icons/LEO-Making-It-Happen-Header.JPG" alt="ERDF LEO LOGO" /></a>              
+             
+            </div>
+
+        </div>
+        <div id="header_right">
+            <div id="HeaderPanel1_site_search_pnl" class="site_search_pnl">
+	
+                <div id="site_search">
+                    <input type="hidden" name="ctl00$ctl00$HeaderPanel1$cof" id="HeaderPanel1_cof" value="FORID:11" />
+                    <input type="hidden" name="ctl00$ctl00$HeaderPanel1$GoogleCode" id="HeaderPanel1_GoogleCode" value="003952888377092439824:xtewwlcqhj4" />
+                    <input type="hidden" name="ctl00$ctl00$HeaderPanel1$ie" id="HeaderPanel1_ie" value="UTF-8" />
+                    <label for="HeaderPanel1_search_box" id="HeaderPanel1_Label1" class="flexLabel">Search the Website</label>
+                    <input name="ctl00$ctl00$HeaderPanel1$search_box" type="text" value="Search the Website" id="HeaderPanel1_search_box" class="search_box placeholder" />
+                    <input type="submit" name="ctl00$ctl00$HeaderPanel1$search_btn" value="Search" id="HeaderPanel1_search_btn" class="search_btn hide_text" />
+                </div>
+            
+</div>
+
+        </div>
+    </div>
+</div>
+
+<!-- top-nav -->
+<div class="top-nav">
+    <div class="shell border_l_r cl">
+        
+           
+     
+        <ul id="nav" class="mobileDisplayNone"><li class=""><a href="/Find-Your-Local-Enterprise-Office/">Find<span>Your Local Enterprise Office</span></a></li><li class=""><a href="/Discover-Business-Supports/">Discover<span>Business Supports</span></a><ul><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Brexit/">Brexit</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Workplace-Innovation-Toolkit/">Workplace Innovation Toolkit</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/LEAN/">LEAN </a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Covid-19/">Covid 19</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Financial-Supports/">Financial Supports</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/First-Stop-Shop/">First Stop Shop</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Training-Programmes/">Training Programmes</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Mentoring/">Mentoring</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Supporting-SMEs-Online-Tool/">Supporting SMEs Online Tool</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Trading-Online-Voucher-Scheme-/">Trading Online Voucher Scheme </a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Enterprise-Europe-Network-/">Enterprise Europe Network  </a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/Steps-to-Success-Roadshow-for-female-entrepreneurs/">Steps to Success Roadshow for female entrepreneurs</a></li><li class="&#xA;            transition&#xA;            "><a href="/Discover-Business-Supports/PR-Training-Tool-for-SMEs-and-Start-Ups/">PR Training Tool for SMEs and Start-Ups</a></li></ul></li><li class=""><a href="/Enable-Enterprise-Culture/">Enable<span>Enterprise Culture</span></a><ul><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/Showcase-Ireland/">Showcase Ireland</a></li><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/National-Enterprise-Awards/">National Enterprise Awards</a></li><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/Look-for-Local/">Look for Local</a></li><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/National-Local-Enterprise-Week/">National Local Enterprise Week</a></li><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/NWED/">NWED</a></li><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/Enterprise Education/">Enterprise Education</a></li><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/Ireland-s-Best-Young-Entrepreneur/">Ireland's Best Young Entrepreneur</a></li><li class="&#xA;            transition&#xA;            "><a href="/Enable-Enterprise-Culture/National-Ploughing-Championships-2019/">National Ploughing Championships 2019</a></li></ul></li><li class=" last "><a href="/response/">Response</a><ul><li class="&#xA;            transition&#xA;            "><a href="/response/Look-for-Local/">Look for Local</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/Lunch-and-Learn-Training-Webinar-Series/">Lunch &amp; Learn</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/Employers-and-Employees/">For Employers, Employees &amp; Self Employed</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/General-Business-Supports/">General Business Supports</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/Other-LEO-Supports/">LEO Supports</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/Expert-Views-and-Client-Focus/">Expert Views &amp; Client Focus</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/Online-Business-Resources/">Online Business Resources</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/Enterprise-Ireland-Supports1/">Enterprise Ireland Supports</a></li><li class="&#xA;            transition&#xA;            "><a href="/response/response-faqs/">COVID-19 FAQs</a></li></ul></li></ul>
+    </div>
+</div>
+<!-- end of top-nav -->
+
+
+     
+        
+
+        
+    <div class="main_panel ">
+        <div class="shell border_l_r white_bg">
+            
+
+<div id="breadcrumb">
+ 
+    <a class="home" href="/">
+      Home
+    </a><span><span class="separator">&gt;</span><a href="/response/">Response</a><span><span class="separator">&gt;</span><a href="/response/Other-LEO-Supports/">LEO Supports</a></span></span>
+     
+</div>
+
+
+    
+                
+            <div class="one_column cl relative">
+
+
+                <h1>Other LEO Supports</h1>
+                <div id="ContentPlaceHolder_Main_CMS_Content" class="content">
+	
+                    
+                    
+                        <div><h3>Local Enterprise Offices are here to help your business deal with the impact of COVID-19, in very practical ways.</h3><p>To see a guide of the other available supports, click on the links below or go to related files section at the bottom of the page to download the PDF</p><section class="accordion"><section class="accordion-tabs"><button class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">COVID-19 Business Loan</button><button class="accordion-tab" data-actab-group="0" data-actab-id="1">Mentoring</button><button class="accordion-tab" data-actab-group="0" data-actab-id="2">Trading Online Voucher Scheme</button><button class="accordion-tab" data-actab-group="0" data-actab-id="3">Online Training and Webinars</button><button class="accordion-tab" data-actab-group="0" data-actab-id="4">LEAN for Micro</button><button class="accordion-tab" data-actab-group="0" data-actab-id="5">Financial Supports</button></section><section class="accordion-content"><article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0"><h4 class="accordion-item__label">New COVID-19 Business Loan</h4><div class="accordion-item__container"><hr><img title="COVID-19 Business Loan" alt="COVID-19 Business Loan" src="/images_upload/Portal/response/Other-LEO-Supports/V6-2020-COVID-354x114-Bus-Loan.jpg"><p>Lending under the MFI COVID Scheme has supported 2000 jobs across the country. </p><p>Microfinance Ireland’s COVID 19 Business Loan Fund has been highly successful since its inception in March. Over €15.65 million in loans has been approved to 581 Irish micro businesses, and a pipeline of further applications being processed which will require the remainder of the €20 million fund. A further 760 businesses have been supported through restructuring or deferral arrangements for existing customers.</p><h4> <br><br><strong><a href="/Discover-Business-Supports/Financial-Supports/Microfinance-Loans/">MFI COVID19 Business Loans €5,000 - €25,000 Applications now open</a></strong></h4><p><br><br>Up to €25,000 available with Zero repayments and Zero Interest for first 6 months and the equivalent of an additional 6 months interest-free subject to certain terms and conditions*</p><p>Here’s a link to <a href="https://microfinanceireland.ie/wp-content/uploads/2020/03/COVID19-FAQ-v4-.pdf"></a><a href="/response/Other-LEO-Supports/COVID19-Fund-2-FAQ-vf-25-08-20-pdf.pdf">Frequently Asked Questions</a> about the Loan.<br>E-mail or telephone your <a href="/Find-Your-Local-Enterprise-Office">Local Enterprise Office</a> to find out more.</p></div></article><article class="accordion-item" data-actab-group="0" data-actab-id="1"><h4 class="accordion-item__label">Mentoring</h4><div class="accordion-item__container"><hr><img title="V6 2020 COVID 354x114 Mentoring.jpg" alt="V6 2020 COVID 354x114 Mentoring.jpg" src="/images_upload/Portal/response/Other-LEO-Supports/V6-2020-COVID-354x114-Mentoring.jpg"><p>Under the Local Enterprise Office Mentor Programme, clients work with an experienced mentor to identify solutions to areas of exposure within their business.</p><p>With advice and guidance from their mentor, clients develop strategies that are more robust, which address issues and maximise potential opportunities when the COVID-19 crisis comes to an end. <strong>Mentoring services are now free of charge.</strong></p><p>E-mail or telephone your <a href="/Find-Your-Local-Enterprise-Office">Local Enterprise Office</a> to find out more.</p><p class="embed-responsive embed-responsive-16by9" style="position: relative; padding-bottom: 56.25%; background: #000; width: 100%; height: 100% !important;"><iframe width="100%" height="100%" style="top: 0; position: absolute; left: 0;" class="embed-responsive-item" src="https://www.youtube.com/embed/KJIZQUBl0FM?wmode=transparent" wmode="Opaque" frameborder="0"><!-- Youtube Video --></iframe></p></div></article><article class="accordion-item" data-actab-group="0" data-actab-id="2"><h4 class="accordion-item__label">Trading Online Voucher Scheme</h4><div class="accordion-item__container"><hr><img title="V6 2020 COVID 354x114 TOV.jpg" alt="V6 2020 COVID 354x114 TOV.jpg" src="/images_upload/Portal/response/Other-LEO-Supports/V6-2020-COVID-354x114-TOV.jpg"><h3><strong>€2,500 available through the Local Enterprise Offices</strong></h3><p>Under the Government’s National Digital Strategy, the <strong>Trading Online Voucher Scheme</strong> helps small businesses with up to 10 employees to trade more online, boost sales and reach new markets.  There is up to €2,500 available through the Local Enterprise Offices with co-funding of 50% from the business*. </p><p><strong> </strong>Businesses that have already received a Trading Online Voucher <strong>can now apply for a second voucher,</strong> where upgrades are required.  Previous voucher recipients cannot apply for a second voucher before they have submitted their final claim for their first voucher.</p><p>Funding can be used towards adding payment facilities or booking systems to your website or developing new apps for your customers. The voucher can also be used towards <strong>subscriptions to low cost online retail platform solutions,</strong> to help companies quickly establish a retailing presence online.<strong> </strong></p><p>Further eligibility, terms and conditions apply.</p><p>E-mail or telephone your <a href="/Find-Your-Local-Enterprise-Office">Local Enterprise Office</a> to find out more.<br><br></p><p class="embed-responsive embed-responsive-16by9" style="position: relative; padding-bottom: 56.25%; background: #000; width: 100%; height: 100% !important;"><iframe width="100%" height="100%" style="top: 0; position: absolute; left: 0;" class="embed-responsive-item" src="https://www.youtube.com/embed/dYjZh1ENCB0?wmode=transparent" wmode="Opaque" frameborder="0"><!-- Youtube Video --></iframe></p><p></p></div></article><article class="accordion-item" data-actab-group="0" data-actab-id="3"><h4 class="accordion-item__label">Training and Webinars</h4><div class="accordion-item__container"><hr><img title="V6 2020 COVID 354x114 Training &amp; Webinars.jpg" alt="V6 2020 COVID 354x114 Training &amp; Webinars.jpg" src="/images_upload/Portal/response/Other-LEO-Supports/V6-2020-COVID-354x114-Training-and-Webinars.jpg"><h3>Booked online through your Local Enterprise Office</h3><p>Local Enterprise Offices have moved training programmes, workshops and networking meet-ups online, covering areas such as cash management in a crisis, leading your business through COVID-19 and advice for employers impacted by the crisis.</p><p>Most training programmes are free of charge or a nominal fee may apply in some cases. Places can be booked online through your Local Enterprise Office.</p><p>E-mail or telephone your <a href="/Find-Your-Local-Enterprise-Office/">Local Enterprise Office</a> to find out more.</p><p class="embed-responsive embed-responsive-16by9" style="position: relative; padding-bottom: 56.25%; background: #000; width: 100%; height: 100% !important;"><iframe width="100%" height="100%" style="top: 0; position: absolute; left: 0;" class="embed-responsive-item" src="https://www.youtube.com/embed/DRw3bQej81c?wmode=transparent" wmode="Opaque" frameborder="0"><!-- Youtube Video --></iframe></p></div></article><article class="accordion-item" data-actab-group="0" data-actab-id="4"><h4 class="accordion-item__label">LEAN for Micro</h4><div class="accordion-item__container"><hr><img title="V6 2020 COVID 354x114 LEAN (1).jpg" alt="V6 2020 COVID 354x114 LEAN (1).jpg" src="/images_upload/Portal/response/Other-LEO-Supports/V6-2020-COVID-354x114-LEAN-(1).jpg"><p>LEAN for Micro is available to LEO clients to help build resilience within small companies.  Under this programme, clients can avail of consultancy support with a LEAN Expert (a qualified practitioner), who will work with the company to introduce lean principles, undertake a specific cost savings project and assist the company in benchmarking its performance.</p><p>LEAN for Micro can also be used to help implement new remote working and physical distancing guidelines.</p><p>E-mail or telephone your <a href="/Find-Your-Local-Enterprise-Office">Local Enterprise Office</a> to find out more.</p></div></article><article class="accordion-item" data-actab-group="0" data-actab-id="5"><h4 class="accordion-item__label">LEO Financial Supports</h4><div class="accordion-item__container"><hr><img title="V6 2020 COVID 354x114 Financial Supports.jpg" alt="V6 2020 COVID 354x114 Financial Supports.jpg" src="/images_upload/Portal/response/Other-LEO-Supports/V6-2020-COVID-354x114-Financial-Supports.jpg"><p>For existing companies and potential start-ups that meet eligibility criteria (such as employing 10 or fewer people with the potential for growth and job creation).</p><p>Local Enterprise Offices can also offer financial supports to help manage current market challenges:</p><ul><li>Business Priming Grants*</li><li>Business Expansion Grants*</li><li>Feasibility Study Grants*</li><li>Technical Assistance for Micro-Exporters Grant*</li></ul><p><strong>Please note: *</strong>For LEO Financial Supports, further eligibility criteria apply.</p><p>Please check back regularly for important updates and you’ll find e-mail addresses and <br>telephone numbers for every Local Enterprise Office <a href="/Find-Your-Local-Enterprise-Office/">here</a></p><p>To see a list of our supports, click on the links below or download the guide here. </p><p>E-mail or telephone your <a href="/Find-Your-Local-Enterprise-Office">Local Enterprise Office</a> to find out more.</p><p class="embed-responsive embed-responsive-16by9" style="position: relative; padding-bottom: 56.25%; background: #000; width: 100%; height: 100% !important;"><iframe width="100%" height="100%" style="top: 0; position: absolute; left: 0;" class="embed-responsive-item" src="https://www.youtube.com/embed/GG3sCgRygpI?wmode=transparent" wmode="Opaque" frameborder="0"><!-- Youtube Video --></iframe></p></div></article></section></section><p><script>// 
+var cssId = 'myCss'; 
+	if (!document.getElementById(cssId))
+	{
+		var head = document.getElementsByTagName('head')[0];
+		var link = document.createElement('link');
+		link.id = cssId;
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = '/!5CEM81';
+		link.media = 'all';
+		head.appendChild(link);
+	}
+
+const labels = document.querySelectorAll(".accordion-item__label");
+const tabs = document.querySelectorAll(".accordion-tab");
+
+function toggleShow(event) {
+	event.preventDefault();
+	const target = this;
+	const item = target.classList.contains("accordion-tab")
+		? target
+		: target.parentElement;
+	const group = item.dataset.actabGroup;
+	const id = item.dataset.actabId;
+	
+	/*tabs.forEach(function(tab) {*/
+	for (var i = 0; i < tabs.length; i++) {
+		if (tabs[i].dataset.actabGroup === group) {
+			if (tabs[i].dataset.actabId === id) {
+				tabs[i].classList.add("accordion-active");
+			} else {
+				tabs[i].classList.remove("accordion-active");
+			}
+		}
+	}
+
+	/*labels.forEach(function(label) {*/
+	for (var i = 0; i < labels.length; i++) {
+		const tabItem = labels[i].parentElement;
+
+		if (tabItem.dataset.actabGroup === group) {
+			if (tabItem.dataset.actabId === id) {
+				tabItem.classList.add("accordion-active");
+			} else {
+				tabItem.classList.remove("accordion-active");
+			}
+		}
+	}
+}
+
+/*labels.forEach(function(label) {*/
+for (var i = 0; i < labels.length; i++) {
+	labels[i].addEventListener("click", toggleShow);
+}
+
+/*tabs.forEach(function(tab) {*/
+for (var i = 0; i < tabs.length; i++) {
+	tabs[i].addEventListener("click", toggleShow);
+}
+// </script></p></div><script type="text/javascript">
+      var mapOverlayUrl = '';
+      </script>
+
+
+
+
+                        
+                    
+                    &#160;                         
+                            
+                    <div id="map" style="display:none; position: relative; width: 500px; height: 400px"></div><div id="message" style="display:none;"></div>
+                
+</div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+        <input type="hidden" name="ctl00$ctl00$SiteName" id="SiteName" value="Portal" />
+    
+
+<script type="text/javascript">
+//<![CDATA[
+top.statsGuid = '4ae6d940-3934-4781-b30d-6aa14c69f111';
+                function UpdateStatsPageUnload()
+                {
+                    if ((typeof webOutput != 'undefined')
+                        && (typeof webOutput.webservices != 'undefined')
+                        && (typeof webOutput.webservices.CmsContent != 'undefined')
+                    )
+                    {
+                        webOutput.webservices.CmsContent.UpdateStatsPageUnload(top.statsGuid,  SucceededCallbackUpdateStatsPageUnload, FailedCallBackUpdateStatsPageUnload);
+                    }
+                }
+                var updateStatsPageUnloadRef = setInterval(UpdateStatsPageUnload, 20000);
+
+function SucceededCallbackUpdateStatsPageUnload(result)
+{
+    if (result != '1')
+            {
+   clearInterval(updateStatsPageUnloadRef);
+}
+        }
+
+function FailedCallBackUpdateStatsPageUnload()
+{
+   clearInterval(updateStatsPageUnloadRef);
+}
+
+            //]]>
+</script>
+</form>
+     
+        
+<div id="sticky_panel" class="shell relative">
+    <div id="sticky" class="cl">
+        <ul>
+            <li class="mobileDisplayNone"><a class="print" href="javascript:void(0)" onclick="window.print()">Print</a></li>
+            <li><span class="st_email_large" st_processed="yes"><span style="text-decoration: none; color: #000000; display: inline-block; cursor: pointer;" class="stButton"><span class="stLarge"></span></span></span></li>
+            <li class="mobileDisplayNone"><a class="bookmark" href="javascript:bookmark_us(window.location,document.title)">Bookmark</a></li>
+            <li><a class="backtop" href="#" onclick="go_to_top()">Top</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<div id="footer">
+
+    <div id="footer_top">
+        <div class="shell cl relative">
+            <div>
+                <div class="&#xA;        mobileDisplayNone cl footer_t_l &#xA;        &#xA;            cols_4"><div class="&#xA;            col&#xA;            "><p class="bold"><a href="/Find-Your-Local-Enterprise-Office/">Find Your Local Enterprise Office</a></p></div><div class="&#xA;            col&#xA;            "><p class="bold"><a href="/Discover-Business-Supports/">Discover Business Supports</a></p><ul><li><a href="/Discover-Business-Supports/Brexit/">Brexit</a></li><li><a href="/Discover-Business-Supports/Workplace-Innovation-Toolkit/">Workplace Innovation Toolkit</a></li><li><a href="/Discover-Business-Supports/LEAN/">LEAN </a></li><li><a href="/Discover-Business-Supports/Covid-19/">Covid 19</a></li><li><a href="/Discover-Business-Supports/Financial-Supports/">Financial Supports</a></li><li><a href="/Discover-Business-Supports/First-Stop-Shop/">First Stop Shop</a></li><li><a href="/Discover-Business-Supports/Training-Programmes/">Training Programmes</a></li><li><a href="/Discover-Business-Supports/Mentoring/">Mentoring</a></li><li><a href="/Discover-Business-Supports/Supporting-SMEs-Online-Tool/">Supporting SMEs Online Tool</a></li><li><a href="/Discover-Business-Supports/Trading-Online-Voucher-Scheme-/">Trading Online Voucher Scheme </a></li><li><a href="/Discover-Business-Supports/Enterprise-Europe-Network-/">Enterprise Europe Network  </a></li><li><a href="/Discover-Business-Supports/Steps-to-Success-Roadshow-for-female-entrepreneurs/">Steps to Success Roadshow for female entrepreneurs</a></li><li><a href="/Discover-Business-Supports/PR-Training-Tool-for-SMEs-and-Start-Ups/">PR Training Tool for SMEs and Start-Ups</a></li></ul></div><div class="&#xA;            col&#xA;            "><p class="bold"><a href="/Enable-Enterprise-Culture/">Enable Enterprise Culture</a></p><ul><li><a href="/Enable-Enterprise-Culture/Showcase-Ireland/">Showcase Ireland</a></li><li><a href="/Enable-Enterprise-Culture/National-Enterprise-Awards/">National Enterprise Awards</a></li><li><a href="/Enable-Enterprise-Culture/Look-for-Local/">Look for Local</a></li><li><a href="/Enable-Enterprise-Culture/National-Local-Enterprise-Week/">National Local Enterprise Week</a></li><li><a href="/Enable-Enterprise-Culture/NWED/">NWED</a></li><li><a href="/Enable-Enterprise-Culture/Enterprise Education/">Enterprise Education</a></li><li><a href="/Enable-Enterprise-Culture/Ireland-s-Best-Young-Entrepreneur/">Ireland's Best Young Entrepreneur</a></li><li><a href="/Enable-Enterprise-Culture/National-Ploughing-Championships-2019/">National Ploughing Championships 2019</a></li></ul></div><div class="&#xA;            col&#xA;            &#xA;              last&#xA;            "><p class="bold"><a href="/response/">Response</a></p><ul><li><a href="/response/Look-for-Local/">Look for Local</a></li><li><a href="/response/Lunch-and-Learn-Training-Webinar-Series/">Lunch &amp; Learn</a></li><li><a href="/response/Employers-and-Employees/">For Employers, Employees &amp; Self Employed</a></li><li><a href="/response/General-Business-Supports/">General Business Supports</a></li><li><a href="/response/Other-LEO-Supports/">LEO Supports</a></li><li><a href="/response/Expert-Views-and-Client-Focus/">Expert Views &amp; Client Focus</a></li><li><a href="/response/Online-Business-Resources/">Online Business Resources</a></li><li><a href="/response/Enterprise-Ireland-Supports1/">Enterprise Ireland Supports</a></li><li><a href="/response/response-faqs/">COVID-19 FAQs</a></li></ul></div></div>
+
+                <div class="contact_details footer_t_r">
+                    <div class="banner">
+                        <h4>Find your Local Enterprise Office</h4>
+<p></p>
+<h4><img title="ireland-footer" class="right" alt="ireland-footer" src="/images_upload/Portal/ImageLibrary/ireland-footer.png" /></h4>
+<p>There are 31 Local Enterprise offices located in Ireland. Each available to provide support for small businesses.</p>
+<p></p>
+<p><a class="grey button" href="/Find-Your-Local-Enterprise-Office/">Search</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer_btm">
+        <div class="shell">
+            <div class="cols_4f cl">
+                <div class="col_1">
+                    <p>
+                        
+                        
+                    </p>
+                </div>
+                <div class="col_2">
+                    <p>© 2020 LEO</p>
+<p>
+<script>
+var resLi = document.getElementById("nav").getElementsByClassName("last")[0];
+console.log("Menu Link ", resLi);
+resLi.style.backgroundColor= "#faea1e";
+resLi.getElementsByTagName("a")[0].innerHTML ="Response <span>Covid-19 Supports</span>";
+</script>
+</p>
+
+                </div>
+                <div class="col_3 mobileDisplayNone">
+                    <div class="nav">
+                        <ul class="cl"><li><a class="access" href="/Freedom-of-Information/"><span>Freedom of Information</span></a></li><li><a class="access" href="/Legal/"><span>Legal</span></a></li><li><a class="access" href="/Sitemap/"><span>Sitemap</span></a></li><li><a class="access" href="/Accessibility/"><span>Accessibility</span></a></li><li><a class="access" href="/Gaeilge/"><span>Gaeilge</span></a></li></ul>
+                    </div>
+                </div>
+                <div class="col_4">
+                    <p>
+                        <img src="/Portal/ImageLibrary/Partner-Links/EU-Logo.jpg" alt="logo-structuralfund" />
+                    </p>
+                </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <button id="ot-sdk-btn" type="button" class="ot-sdk-show-settings">Cookie Settings</button>
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+    // function to pull cookie value
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+
+    function OptanonWrapper() {
+        console.log("OptanonWrapper called");
+
+        var OABCcookieName = "OptanonAlertBoxClosed";
+        var bannerAcceptBtn = document.getElementById("onetrust-accept-btn-handler");
+        var pcAllowAllBtn = document.getElementById("accept-recommended-btn-handler");
+		 var pcSaveBtn = document.getElementsByClassName("save-preference-btn-handler onetrust-close-btn-handler")[0];
+        var OABCcookie = getCookie(OABCcookieName);
+
+        // IF logic needed here because ot-banner-sdk DIV is not injected on page loads if banner is not exposed
+
+        if (!OABCcookie && bannerAcceptBtn) {
+            bannerAcceptBtn.addEventListener('click', function () {
+                console.log("Allowed all via Banner");
+                location.reload();
+            });
+        }
+        if (pcAllowAllBtn)
+            pcAllowAllBtn.addEventListener('click', function () {
+                console.log("Allowed all via Preference Center");
+                location.reload();
+            });
+
+        pcSaveBtn.addEventListener('click', function () {
+            console.log("Set custom settings via Preference Center");
+            location.reload();
+        });
+    }
+
+</script>
+
+<!-- OneTrust Cookies Consent Notice end for www.localenterprise.ie -->
+
+        <!-- end of footer -->
+         <script src="https://use.fontawesome.com/2185509d95.js"></script>
+        <script src="/includes/js/SocialShare.js"></script>
+
+     
+    
+        
+
+     
+</body>
+</html>

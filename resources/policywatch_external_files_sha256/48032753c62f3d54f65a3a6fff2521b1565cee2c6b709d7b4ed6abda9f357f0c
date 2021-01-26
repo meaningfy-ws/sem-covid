@@ -1,0 +1,679 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!--Canonical url-->
+  <link rel="canonical" href="https://covid19response.gr" />
+
+  <!-- Primary Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="Covid-19,Response,Greece,Covid19">
+  <title>Covid-19 Response Greece</title>
+  <meta name="title" content="Covid-19 Response Greece" />
+  <meta name="description"
+    content="Καλούμε επαγγελματίες της υγείας, ειδικούς επιστήμονες και μηχανικούς όλων των κλάδων να συμβάλλουν στην αντιμετώπιση των προβλημάτων που προκαλεί η πανδημία." />
+  <meta name="image" content="https://www.covid19response.gr/assets/images/Coronavirus-CDC-resized.jpg" />
+  <meta name="google-site-verification" content="googleacf857934a4a212c.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="fb:app_id" content="524752681515341" />
+  <meta property="og:url" content="https://www.covid19response.gr/" />
+  <meta property="og:title" content="Covid-19 Response Greece" />
+  <meta property="og:description"
+    content="Καλούμε επαγγελματίες της υγείας, ειδικούς επιστήμονες και μηχανικούς όλων των κλάδων να συμβάλλουν στην αντιμετώπιση των προβλημάτων που προκαλεί η πανδημία." />
+  <meta property="og:image" content="https://www.covid19response.gr/assets/images/Coronavirus-CDC-resized.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:url" content="https://www.covid19response.gr/" />
+  <meta property="og:title" content="Covid-19 Response Greece" />
+  <meta property="og:description"
+    content="Καλούμε επαγγελματίες της υγείας, ειδικούς επιστήμονες και μηχανικούς όλων των κλάδων να συμβάλλουν στην αντιμετώπιση των προβλημάτων που προκαλεί η πανδημία." />
+  <meta property="og:image" content="https://www.covid19response.gr/assets/images/Coronavirus-CDC-resized.jpg" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
+  <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+  <!-- Slider -->
+  <link rel="stylesheet" href="assets/styles/vendor/slick.css">
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="assets/styles/vendor/animate.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162017852-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162017852-1');
+  </script>
+
+
+  <!-- Definity CSS -->
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/responsive.css">
+
+  <!-- JS -->
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body id="page-top" class="bigLetters" data-spy="scroll" data-target=".navbar">
+
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+  <!-- ========== Preloader ========== -->
+
+  <div class="preloader">
+    <img src="assets/images/loader.svg" alt="Covid-19 Response Greece...">
+  </div>
+
+
+
+  <!-- ========== Navigation ========== -->
+
+  <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
+            alt="Covid-19 Response Greece Supporter"></a>
+      </div><!-- / .navbar-header -->
+
+      <!-- Navbar Links -->
+      <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">HOME<span class="sr-only"></span></a></li>
+          <!--<li><a href="/Blog/Articles.html">Blog<span class="sr-only"></span></a></li>-->
+          <li><a href="#about">ABOUT US<span class="sr-only"></span></a></li>
+          <li><a href="#work">OUR WORK<span class="sr-only"></span></a></li>
+          <li><a href="#support">SUPPORT<span class="sr-only"></span></a></li>
+          <li><a href="#contact">CONTACT US<span class="sr-only"></span></a></li>
+          <li><a href="index.html#home">GR<span class="sr-only"></span></a></li>
+        </ul><!-- / .nav .navbar-nav -->
+      </div>
+      <!--/.navbar-collapse -->
+    </div>
+  </nav><!-- / .navbar -->
+
+
+
+
+  <!-- ========== Hero Cover ========== -->
+
+  <div id="home" class="main-demo-hero">
+    <!-- <img src="assets/images/Coronavirus-CDC-resized.jpg"> -->
+    <div class="bg-overlay">
+
+      <!-- Hero Content -->
+      <div class="hero-content-wrapper">
+
+        <div class="hero-content">
+
+          <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s">
+            VOLUNTARY ACTION <br> ON OVERCOMING THE <br> PANDEMIC</h1>
+          <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">WE TAKE PART &amp;
+            <br> PROVIDE SERVICE</h4>
+          <a href="#about" class="btn wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">MORE</a>
+
+        </div>
+      </div>
+
+      <!-- Scroller -->
+      <a href="#welcome" class="scroller scroller-dark">
+        <span class="scroller-text">Scroll down</span>
+        <span class="linea-basic-magic-mouse"></span>
+      </a>
+
+    </div><!-- / .bg-overlay -->
+  </div><!-- / .main-hero-2 -->
+
+
+
+  <!-- ========== About ========== -->
+
+  <section id="about" class="container ft-centered">
+    <div class="row section">
+
+      <header class="sec-heading">
+        <h2>ABOUT US</h2>
+        <span class="subheading">COVID-19 RESPONSE GREECE IS AN OPEN COMMUNITY OF VOLUNTEERS WITH SCIENTIFIC AND
+          TECHNOLOGICAL BACKGROUNDS, PROVIDING OUR SERVICES THROUGH : </span>
+      </header>
+
+      <!-- Item 1 -->
+      <div class="col-md-offset-1 col-md-3 col-sm-6 mb-sm-50 ft-item ft-basic wow fadeIn" data-wow-duration=".8s"
+        data-wow-delay=".3s">
+        <span class="et-tools-2"></span>
+        <h5>SOLUTIONS</h5>
+        <p>Research and design of practical solutions to overcome crucial challenges posed by the pandemic.</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-4 col-sm-6 mb-sm-50 ft-item ft-basic wow fadeIn" data-wow-duration=".5s" data-wow-delay=".1s">
+        <span class="et-upload"></span>
+        <h5>OPEN</h5>
+        <p>Open designs, open access, alternative design solutions available free of charge. We are not in it to make a
+          profit.
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-basic wow fadeIn" data-wow-duration=".8s" data-wow-delay=".3s">
+        <span class="et-clock"></span>
+        <h5>IMMEDIATELY</h5>
+        <p>Immediate response, rapid mobilisation, concerted effort.</p>
+      </div>
+
+    </div><!-- / .row -->
+  </section>
+
+  <!-- ========== Number Counters - Parallax ========== -->
+
+  <div class="number-counters">
+    <div class="container">
+      <div id="counters" class="row count-wrapper">
+
+        <!-- Item 1 -->
+        <div class="col-md-4 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+          <span id="count-1" class="count-nbr">200</span>
+          <span class="count-text">+ VOLUNTEERS</span>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-md-4 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+          <span id="count-2" class="count-nbr">4</span>
+          <span class="count-text">+ PROJECTS</span>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-md-4 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+          <span id="count-3" class="count-nbr">17</span>
+          <span class="count-text">+ ORGANISATIONS</span>
+        </div>
+
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </div><!-- / .number-counters -->
+
+  <!-- ========== Feature - Cards 2 ========== -->
+
+  <div id="work" class="gray-bg">
+    <section class="container section ft-cards-2">
+
+      <header class="sec-heading">
+        <h2>OVERCOMING CHALLENGES</h2>
+        <span class="subheading">Find out what projects we are currently working on:</span>
+      </header>
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <!-- Item 1 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-duration="1.2s"
+            onclick="location.href = 'project1_en.html';">
+            <img src="assets/images/project1.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>FACE SHIELDS</h5>
+              <p class="card-paragraph-fitting">Protective face shields designed for mass production in Greece.</p>
+              <!--<a href="project1.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+          <!-- Item 2 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-delay=".2s" data-wow-duration="1.2s"
+            onclick="location.href = 'project3_en.html';">
+            <img src="assets/images/project3.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>ONLINE SELF-ASSESSMENT</h5>
+              <p class="card-paragraph-fitting">
+                Online self-assessment & remote monitoring system for people who have potential COVID-19 symptoms.
+              </p>
+              <!--<a href="project3.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+          <!-- Item 5 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-delay=".2s" data-wow-duration="1.2s"
+            onclick="location.href = 'project5_en.html';">
+            <img src="assets/images/project5.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>DATA ANALYTICS</h5>
+              <p class="card-paragraph-fitting">Collection of data on the spread of COVID-19 in Greece and publication
+                via open APIs.</p>
+              <!--<a href="project3.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+          <!-- Item 7 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-delay=".2s" data-wow-duration="1.2s"
+            onclick="location.href = 'project7_en.html';">
+            <img src="assets/images/project7.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>PSYCHOLOGY WEBINARS</h5>
+              <p class="card-paragraph-fitting">
+                Webinars by psychologists, psychiatrists and other mental health and wellness professionals.
+              </p>
+              <!--<a href="project3.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+        </div><!-- / .col-md-6 -->
+
+        <div class="col-md-6">
+
+          <!-- Item 3 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-duration="1.2s"
+            onclick="location.href = 'project2_en.html';">
+            <img src="assets/images/project2.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>VENTILATION DEVICES</h5>
+              <p class="card-paragraph-fitting">
+                Non-invasive mechanical ventilation (NIV) device substitutes for patients.
+              </p>
+              <!--<a href="project2.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+          <!-- Item 4 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-delay=".2s" data-wow-duration="1.2s"
+            onclick="location.href = 'project4_en.html';">
+            <img src="assets/images/project4.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>FACE MASKS & RESPIRATORS</h5>
+              <p class="card-paragraph-fitting">
+                Surgical masks and respirators, made of specialty materials, that afford a high level of respiratory
+                protection.
+              </p>
+              <!--<a href="project4.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+          <!-- Item 6 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-delay=".2s" data-wow-duration="1.2s"
+            onclick="location.href = 'project6_en.html';">
+            <img src="assets/images/project6.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>ONLINE ACTIVITIES FOR KIDS</h5>
+              <p class="card-paragraph-fitting">
+                At-home creative activities and entertainment online platform, for kids aged 5-12.
+              </p>
+              <!--<a href="project4.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+
+
+          <!-- Item 8 -->
+          <div class="ft-card-item wow fadeInUp holeLing" data-wow-delay=".2s" data-wow-duration="1.2s"
+            onclick="location.href = 'project8.html';">
+            <img src="assets/images/project8.png" alt="Covid-19 Response Greece Project Image">
+            <div class="ft-content">
+              <h5>Volunteering Platform</h5>
+              <p class="card-paragraph-fitting">
+                Online platform that connects volunteers with individuals in need of assistance.
+              </p>
+              <!--<a href="project4.html" class="link-btn">Περισσοτερα <span class="linea-arrows-slim-right"></span></a>-->
+            </div>
+          </div><!-- / .ft-card-item -->
+
+
+        </div><!-- / .col-md-6 -->
+
+      </div><!-- / .row -->
+    </section><!-- / .container -->
+  </div><!-- / .gray-bg -->
+
+
+
+  <!-- ========== Feature - Steps Numbers ========== -->
+
+  <section id="support" class="container ft-steps-numbers">
+    <div class="row section">
+
+      <header class="sec-heading ws-s">
+        <h2>WAYS YOU CAN HELP COVID-19 RESPONSE GREECE</h2><br>
+        <span class="subheading"></span>
+        <p>
+        <ul style="text-align:justify;color: darkslategray;">
+          <li class="bulletSpace1">If you are affiliated with the competent authorities or an entity of the health
+            sector,
+            you can help us by providing information & suggestions regarding crucial needs and problems you might be
+            facing,
+            so that we can adjust the focus of our efforts accordingly.</li>
+          <li class="bulletSpace1">If you are a doctor or an expert in public health, a scientist or an engineer, a
+            production specialist or a supply chain manager,
+            you can help us with your expertise, counseling and access to logistics infrastructure.</li>
+          <li class="bulletSpace1">If you are an individual, a business or an entity which does not belong to any of the
+            aforementioned categories, you can contribute to our effort by offering your time,
+            your ideas, and/or financial support to cover the production and distribution costs of our products.</li>
+        </ul>
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3-A7eu7KfDlzAPuDwHb8UOxAbJhZBJWH0vbNozrwMwvl7YA/viewform"
+          target="_blank" class="btn">
+          <div class="row" style="text-align:center;padding:0 25px 0 25px;">
+            <div class="col-sm-12">
+              REGISTRATION
+            </div>
+          </div>
+        </a>
+      </header>
+
+      <!-- Step 1 -->
+      <div class="col-lg-3 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s">
+        <span class="ft-nbr" style="z-index:-5;">01</span>
+        <h4>Registration form</h4>
+        <p>Fill in your contact details and information on this <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc3-A7eu7KfDlzAPuDwHb8UOxAbJhZBJWH0vbNozrwMwvl7YA/viewform"
+            target="_blank">on this form.</a></p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-lg-3 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+        <span class="ft-nbr" style="z-index:-5;">02</span>
+        <h4>Slack</h4>
+        <p>You will receive an email invitation to the team’s workspace on Slack.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-lg-3 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+        <span class="ft-nbr" style="z-index:-5;">03</span>
+        <h4>UPDATES</h4>
+        <p>You can take part in the conversation and join projects of your interests.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-lg-3 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+        <span class="ft-nbr" style="z-index:-5;">04</span>
+        <h4>COLLABORATION</h4>
+        <p>You can participate in our video conferences via Zoom and undertake projects.</p>
+      </div>
+
+      <!-- Step 4 
+              <div class="col-lg-3 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+                <span class="ft-nbr" style="z-index:-5;">04</span>
+                <h4>Συνεργασια</h4>
+                <p>Συμμετέχετε στις τηλεδιασκέψεις μας μέσω Zoom και αναλαμβάνετε έργο.</p>
+              </div>-->
+
+    </div><!-- / .row -->
+
+    <!-- CTA Button -->
+    <!--
+			<div class="row ws-m">
+              <div class="text-center">
+                <a href="#contact" class="btn">Get a free quote</a>
+              </div>
+            </div>
+			-->
+    <!-- / .row -->
+
+  </section><!-- / .container -->
+
+
+
+
+
+
+  <!-- ========== CTA - Contact Link ========== -->
+
+  <div class="cta-link">
+    <div class="bg-overlay">
+
+      <div class="cta-wrapper">
+        <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">CAN YOU HELP IN SOME OTHER WAY?</h3>
+        <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s"
+          data-wow-duration="1s">CONTACT US</a>
+      </div>
+
+    </div>
+  </div><!-- / .dark-bg .cta-link -->
+
+
+
+ <!-- ========== Pricing Tables - 3col ========== -->
+
+ <div id="pricing" class="gray-bg">
+  <section class="container section pricing-tables" style="text-align:center; padding-top: 100px;">
+
+    <header class="sec-heading">
+      <h2>Δωρητες</h2>
+      <span class="subheading">Εταιρειες που εχουν δωρισει υλικο, υπηρεσιες και προσβαση σε τεχνικα μεσα</span>
+    </header>
+
+    <div class="row">
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.vodafone.gr/" target="_blank"><img
+            src="assets/images/Vodafone.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.ratio-law.com/" target="_blank"><img
+            src="assets/images/RatioLegal.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="http://microchinaltd.com/" target="_blank"><img
+            src="assets/images/microChina.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://soulis.gr/el" target="_blank"><img
+            src="assets/images/Soulis.png" alt="Covid-19 Response Greece Supporter"></a></div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.paokfc.gr/paok-action/" target="_blank"><img
+            src="assets/images/PAOK.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://slack.com/" target="_blank"><img
+            src="assets/images/Slack.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://ideasforward.com/" target="_blank"><img
+            src="assets/images/IdeasForward.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.aidplex.com/" target="_blank"><img
+            src="assets/images/AidPlex.png" alt="Covid-19 Response Greece Supporter"></a></div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="" target="_blank"><img src="assets/images/Omega.png"
+            alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://marathon.vc/" target="_blank"><img
+            src="assets/images/Marathon.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://zoom.us/" target="_blank"><img
+            src="assets/images/Zoom.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.rodia-decor.com/" target="_blank"><img
+            src="assets/images/Rodia.png" alt="Covid-19 Response Greece Supporter"></a></div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="" target="_blank"><img src="assets/images/Ioannidou.png"
+            alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://geekbot.com/" target="_blank"><img
+            src="assets/images/Geekbot.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="http://www.worldpharmacists.org/" target="_blank"><img
+            src="assets/images/WorldPharma.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.tahipack.gr/" target="_blank"><img
+            src="assets/images/Tahipack.png" alt="Covid-19 Response Greece Supporter"></a></div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <header class="sec-heading">
+      <h2>Φορεις που στηριζουν τη δραση</h2>
+    </header>
+
+    <div class="row">
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://okthess.gr/" target="_blank"><img
+            src="assets/images/OkThess.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://thessaloniki.gr/" target="_blank"><img
+            src="assets/images/Dimos.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.auth.gr/" target="_blank"><img
+            src="assets/images/Auth@1x.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://pis.gr/" target="_blank"><img
+            src="assets/images/Pis.png" alt="Covid-19 Response Greece Supporter"></a></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="http://www.isth.gr/" target="_blank"><img
+            src="assets/images/Isth@1x.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="https://www.kemel.gr/" target="_blank"><img
+            src="assets/images/Kemel.png" alt="Covid-19 Response Greece Supporter"></a></div>
+      <div class="col-sm-3 col-xs-6 supporter-icon"><a href="http://www.solidaritynet.gr/" target="_blank"><img
+            src="assets/images/diktioAl.png" alt="Covid-19 Response Greece Supporter"></a></div>
+    </div>
+
+  </section><!-- / .container -->
+</div><!-- / .gray-bg -->
+
+    <!-- ========== Featured Projects ========== -->
+
+    <div id="info" class="container-fluid ft-hover-item">
+      <div class="row">
+
+        <!-- Item 1 -->
+        <div class="ft-item ft-1 col-md-6">
+          <div class="bg-overlay">
+
+            <div class="content-wrapper">
+              <h3>I WISH TO TAKE PART</h3>
+              <p>Do you wish to take part in this initiative and support this effort? Please, follow the steps in order
+                to
+                make coordination easier.</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3-A7eu7KfDlzAPuDwHb8UOxAbJhZBJWH0vbNozrwMwvl7YA/viewform"
+                target="_blank" class="btn-ghost btn-ghost-light ">Take Part</a>
+            </div>
+
+          </div><!-- / .bg-overlay -->
+        </div><!-- / .ft-item -->
+
+        <!-- Item 2 -->
+        <div class="ft-item ft-2 col-md-6">
+          <div class="bg-overlay">
+
+            <div class="content-wrapper">
+              <h3>I WISH TO SUPPORT IN OTHER WAYS</h3>
+              <p>Do you wish to support us in some other way (expertise, supplies, equipment, cost coverage, etc.)?
+                Please, contact us & we will respond promptly.</p>
+              <a href="#contact" class="btn-ghost btn-ghost-light ">Contuct us</a>
+            </div>
+
+          </div><!-- / .bg-overlay -->
+        </div><!-- / .ft-item -->
+
+      </div><!-- / .row -->
+    </div><!-- / .container-fluid -->
+
+
+    <!-- ========== Contact ========== -->
+
+    <section id="contact" class="section contact-1">
+      <header class="sec-heading">
+        <h2>CONTACT US</h2>
+        <br>
+        <span class="subheading">VIA EMAIL: </span>
+        <br>
+        <p style="width:100%;font-size:30px;"><u><a
+              href="mailto:contact@covid19response.gr">contact@covid19response.gr</a></u></p>
+        <br />
+        <p style="width:100%;font-size:30px;">
+          <u>
+            <!--<a href="https://www.messenger.com/t/covidresponse" class="btn" style="text-align:center;padding:0 25px 0 25px;">Αμεσο Μηνυμα</a>-->
+            <a href="https://www.messenger.com/t/covidresponse" class="btn-ghost" title="Go to Messenger"> <img
+                src="assets/images/msgico.png" style="margin-right: 0.7em; color: #EEEEEE; width:35px;"
+                class="icon-home icon-4x" />DIRECT MESSAGE</a>
+          </u></p>
+      </header>
+    </section>
+
+
+
+    <!-- ========== Footer Litle ========== -->
+
+    <footer class="footer-litle">
+
+      <!-- Social Links -->
+      <div class="dark-bg">
+        <div class="container footer-social-links">
+          <div class="row">
+
+            <ul>
+              <li><a href="https://www.messenger.com/t/covidresponse">Messenger</a></li>
+              <li><a href="https://www.facebook.com/covidresponse" target="_blank">facebook</a></li>
+              <li><a href="https://twitter.com/19Greece" target="_blank">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/company/covid-19-response-greece/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/covid_19responsegr/" target="_blank">instagram</a></li>
+            </ul>
+
+          </div>
+          <div class="row" style="padding:20px 0 20px 0;">
+
+            <div class="col-md-6">
+              <a class="btn" href="gdprPolicy.html">Terms of Use</a>
+            </div>
+
+            <div class="col-md-6">
+              <a class="btn" href="PrivacyPolicy.html">Privacy Policy</a>
+            </div>
+
+          </div><!-- / .row -->
+        </div><!-- / .container -->
+      </div><!-- / .dark-bg -->
+
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-6" style="color:white;">
+              <small>&copy; 2020 COVID-19 RESPONSE GREECE. </small>
+            </div>
+
+            <div class="col-md-6">
+              <small><a href="#page-top" class="pull-right to-the-top">Go to top<i
+                    class="fa fa-angle-up"></i></a></small>
+            </div>
+
+          </div><!-- / .row -->
+        </div><!-- / .container -->
+      </div><!-- / .copyright -->
+    </footer><!-- / .footer-litle -->
+
+
+
+    <!-- ========== Scripts ========== -->
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/vendor/google-fonts.js"></script>
+    <script src="assets/js/vendor/jquery.easing.js"></script>
+    <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
+    <script src="assets/js/vendor/smoothscroll.js"></script>
+    <script src="assets/js/vendor/jquery.localScroll.min.js"></script>
+    <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/vendor/jquery.stellar.min.js"></script>
+    <script src="assets/js/vendor/jquery.parallax.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/vendor/countup.min.js"></script>
+    <script src="assets/js/vendor/isotope.min.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+
+
+    <!-- Definity JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

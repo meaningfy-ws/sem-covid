@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <title>Vlada Republike Hrvatske - 222. sjednica Vlade Republike Hrvatske</title>
+        <meta name="keywords" content="" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon_vlada.ico" />
+		<a href="https://plus.google.com/u/0/103623098085519322705" rel="publisher"></a>
+		<meta property="og:title" content="222. sjednica Vlade Republike Hrvatske" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="vlada.gov.hr"/>
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@VladaRH" />
+		<meta name="twitter:title" content="222. sjednica Vlade Republike Hrvatske" />
+		
+	    <meta property="og:image" content="https://vlada.gov.hr/img/vlada_logo.png" />	
+	    <meta name="twitter:image" content="https://vlada.gov.hr/img/vlada_logo.png" />
+	    
+		<link href="/css/cssbundle?v=OCrFAKv9CuzcfA5_y1bb6EYV_3AXxuMftgQIdblOPrQ1" rel="stylesheet" type='text/css' />
+		<link href="/fonts/cssbundle?v=nr5H5_hNs8O_eEtIsaO3eDTyo3NenV7rtWhI7AmNOA81" rel="stylesheet" type='text/css' />
+		<link href="/fancybox/cssbundle?v=Puj51LgTXiWuU_OpgRat07aZlAciXa4Q8II19HGOrIs1" rel="stylesheet" type='text/css' />
+		<link href="/player/cssbundle?v=3-PUyVCmT9Iz8ymsnbN0iCuhC7spJYE0ew_O8s4vUbQ1" rel="stylesheet" type='text/css' />
+		
+        
+        <script>
+        var lng="";
+        
+        </script>
+    	
+        
+        
+         
+        
+        
+        <script type="text/javascript" src="/Scripts/js?v=7hlT3ECBxcV52-1U8V1bnCEVlWv88oC5jiSjfd_7rxw1"></script>
+        
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138009196-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-138009196-1');
+			gtag('config', 'UA-52417765-3');
+			</script>
+		
+		
+		
+		
+		
+    </head>
+    <body>
+    	<div id="skiptocontent">
+			<a href="#content" class="element-invisible element-focusable">Preskoči na glavni sadržaj</a>
+		</div>
+		
+    	
+		<header>
+			<div class="head_nav">
+				<div class="center">
+					
+					<a href="https://gov.hr/" class="logoSmall" title="Središnji državni portal" target="_blank"> </a>
+                    <ul class="head_social">
+                        <li><a target="_blank" href="https://www.facebook.com/wwwvladahr" class="fb_icon" title="Facebook Vlade RH"> </a></li>
+                        <li><a target="_blank" href="https://twitter.com/VladaRH" class="tw_icon" title="Twitter Vlade RH"> </a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/user/wwwvladahr" class="yt_icon" title="Youtube kanal Vlade RH"> </a></li>
+                    </ul>
+					
+					
+						<div class="lang_select">
+                        <select id="lang-select" name="lang">
+                            <option value="hr">Hrvatski</option>
+                            <option value="en" >English</option>
+                        </select>
+                    </div>
+                    <ul class="languages">
+                       
+                     		<li><a href="https://pretinac.gov.hr" target="_blank" title="Korisnički pretinac">e-Građani</a></li>
+                     	
+					</ul>
+                    
+                     
+                    	
+                    <ul class="languages">
+                        
+                        	<li><a href="/en">English</a></li>	
+                        
+                    </ul>
+                    	
+                    
+	
+                     <ul class="textSize">
+                    	
+                        <li class="txt_size_1"><a href="?big=0" class="active" title="Najmanja veličina teksta" tabindex="-1000">A</a></li>
+                        <li class="txt_size_3"><a href="?big=1" title="Najveća veličina teksta" tabindex="-1000">A</a></li>
+                        
+                    </ul>
+                    <ul class="impaired">
+                    	
+                    		<li><a href="?impaired=1" title="Prilagodba pristupačnosti" tabindex="-1000">Prilagodba pristupačnosti</a></li>
+                    	
+                       
+                    </ul>
+                    <ul>
+                    	
+                    		<li><a href="/rss/18210">RSS</a></li> 
+                    	
+                    	
+                    </ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="center">
+				<div class="logo_search_content">
+					<a href="/" class="logo" title="Vlada RH - Naslovnica"></a>
+					<div class="topnav_icon"><a href="javascript:;" id="show_menu" title="Izbornik">&nbsp;</a></div> 
+					<div class="search">
+						<form action="/rezultati-pretrazivanja/49" method="GET" role="search">
+						<input type="search" name="pojam" id="pojam" class="search_input" placeholder="Pretražite Vladu RH" aria-label="Unesite pojam za pretraživanje" /><input type="submit" class="search_btn" value=" " id="btnPretrazi" aria-label="Pokreni pretraživanje"/>
+						</form>
+					</div>
+				</div>
+				<nav class="topnav" role="navigation" aria-label="glavna navigacija" id="menu">
+					<div class="close" id="hide_menu"> </div>
+					<ul>
+                        <li><a  href='/vijesti/8'>Vijesti</a></li><li><a class='active' href='/sjednice/9'>Sjednice</a></li><li><a  href='/dokumenti/10'>Dokumenti</a></li><li><a  href='/pristup-informacijama/11859'>Pristup informacijama </a></li><li><a  href='/europski-semestar/19453'>Europski semestar </a></li><li><a  href='/istaknute-teme/11'>Istaknute teme</a></li><li><a  href='/govori-i-intervjui/25293'>Govori i intervjui</a></li><li><a  href='/kontakti/16'>Kontakti</a></li>
+					</ul>
+					<div class="clear"></div>
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</header>
+		
+			
+		<div class="center">
+		
+			<div class="breadcrumbs">
+				<ul>
+				<li><a href="/" class="has_subs">Naslovnica Vlade RH</a>
+					<div class="bc_drop">
+						<ul>
+                            <li><a  href='/vijesti/8'>Vijesti</a></li><li><a class='active' href='/sjednice/9'>Sjednice</a></li><li><a  href='/dokumenti/10'>Dokumenti</a></li><li><a  href='/pristup-informacijama/11859'>Pristup informacijama </a></li><li><a  href='/europski-semestar/19453'>Europski semestar </a></li><li><a  href='/istaknute-teme/11'>Istaknute teme</a></li><li><a  href='/govori-i-intervjui/25293'>Govori i intervjui</a></li><li><a  href='/kontakti/16'>Kontakti</a></li>
+						</ul>
+					</div>
+				</li> 
+				<li><a href='/sjednice/9'>Sjednice</a></li>
+				
+                </ul>
+			</div>
+			
+		</div>
+
+		<div class="center">	
+			
+
+			<div class="content article_content" id="content" tabindex="-1" role="main">
+
+				<div class="article_left">
+				
+					<div class="article_info">
+						<ul>
+                            <li class="time_info">Objavljeno: 02.04.2020.</li> 
+						</ul>
+					</div>
+			
+					<h1>222. sjednica Vlade Republike Hrvatske</h1>
+					
+					<div class="page_content">
+						
+                    	<div class="multimedia_files">
+                        	<ul>
+                            	<li><a href="javascript:;" class="video" id="showHideVideo">Video zapis</a></li><li><a href="javascript:;" class="audio" id="showHideAudio">Audio zapis</a></li><li><a href="/vijesti/priopcenje-sa-zatvorenoga-dijela-222-sjednice-vlade/29143" class="bullet" id="showHidePriopcenje">Priopćenje sa zatvorenog dijela sjednice</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div id="videoContainer">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ou86uJToM0k" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
+                        <div id="audioContainer"><div><audio id="player2" src="/UserDocsImages//2016/Sjednice/2020/Travanj/222 sjednica VRH/VRH 222 - 02.04.2020.mp3" type="audio/mp3" controls="controls"></audio></div><a href="/UserDocsImages//2016/Sjednice/2020/Travanj/222 sjednica VRH/VRH 222 - 02.04.2020.mp3" target="_blank">Preuzmite audio zapis</a></div>
+                        
+						<h3> </h3>
+						<div><strong>Dnevni red otvorenoga dijela sjednice</strong><br>
+&nbsp;</div>
+1. <a data-fileid="52492" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/Novo/222%20-%201.pdf">Informacija o aktualnom stanju i poduzetim aktivnostima vezanim za koronavirus u Republici Hrvatskoj</a>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<br>
+<br>
+2. Informacija o aktivnostima Stožera civilne zaštite Republike Hrvatske<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><br>
+<br>
+3. Travanjski paket mjera za pomoć gospodarstvu za vrijeme trajanja epidemije koronavirusa:<br>
+&nbsp;&nbsp;&nbsp; 3.1. <a data-fileid="52459" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.1.docx">Prijedlog zaključka o drugoj skupini mjera za pomoć gospodarstvu uslijed epidemije koronavirusa</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp; 3.2. <a data-fileid="52460" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.2.docx">Nacrt prijedloga zakona o dopuni Općeg poreznog zakona, s Nacrtom konačnog prijedloga zakona</a><br>
+&nbsp;&nbsp;&nbsp; 3.3. <a data-fileid="52463" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.3.docx">Nacrt prijedloga zakona o izmjeni i dopunama Zakona o računovodstvu, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp; 3.4. <a data-fileid="52461" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.4.docx">Nacrt prijedloga zakona o izmjeni i dopuni Zakona o izvršavanju Državnog proračuna Republike Hrvatske za 2020. godinu, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp; 3.5. <a data-fileid="52462" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.5.docx">Prijedlog zaključka o ograničavanju rashoda proračunskih i izvanproračunskih korisnika državnog proračuna zbog promjene gospodarskih okolnosti uslijed epidemije koronavirusa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp; 3.6. <a data-fileid="52464" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.6.docx">Prijedlog odluke o&nbsp;ograničavanju korištenja sredstava predviđenih Državnim proračunom Republike Hrvatske i financijskim planovima izvanproračunskih korisnika državnog proračuna za 2020. godinu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp; 3.7. <a data-fileid="52465" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.7.docx">Prijedlog odluke o privremenom odgađanju primjene fiskalnih pravila</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp; 3.8. <a data-fileid="52467" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%203.8.docx">Prijedlog zaključka o digitalnoj platformi Financijske agencije za praćenje provedbe mjera pomoći gospodarstvu uslijed epidemije koronavirusa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+4. <a data-fileid="52466" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%204.docx">Nacrt prijedloga zakona o dopunama Zakona o poljoprivredi, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+5. <a data-fileid="52468" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%205.docx">Nacrt prijedloga zakona o dopuni Zakona o putnim ispravama hrvatskih državljana, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+6. <a data-fileid="52469" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%206.docx">Nacrt prijedloga zakona o dopunama Zakona o osobnoj iskaznici, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+7. <a data-fileid="52470" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%207.doc">Nacrt prijedloga zakona o dopuni Zakona o sigurnosti prometa na cestama, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+8. <a data-fileid="52471" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%208.doc">Nacrt prijedloga zakona o dopuni Zakona o nabavi i posjedovanju oružja građana, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+9. <a data-fileid="52498" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/Novo/222%20-%209.docx">Nacrt prijedloga zakona o dopunama Zakona o turističkim zajednicama i promicanju hrvatskog turizma, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<br>
+<br>
+10. <a data-fileid="52499" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/Novo/222%20-%2010.docx">Nacrt prijedloga zakona o dopunama Zakona o turističkoj pristojbi, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<br>
+<br>
+11. <a data-fileid="52500" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/Novo/222%20-%2011.docx">Nacrt prijedloga zakona o izmjenama i dopunama Zakona o pružanju usluga u turizmu, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<br>
+<br>
+12. <a data-fileid="52501" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/Novo/222%20-%2012.docx">Nacrt prijedloga zakona o izmjenama i dopuni Zakona o ugostiteljskoj djelatnosti, s Nacrtom konačnog prijedloga zakona</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<br>
+<br>
+13. <a data-fileid="52476" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2013.docx">Prijedlog uredbe o dopuni Uredbe o postupku, načinu i uvjetima za dobivanje koncesije na turističkom zemljištu u kampovima u suvlasništvu Republike Hrvatske</a>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+14. <a data-fileid="52477" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2014.docx">Prijedlog uredbe o dopuni Uredbe o načinu, postupku i uvjetima procjene vrijednosti i prodaje turističkog zemljišta u vlasništvu jedinice lokalne samouprave te načinu, postupku i uvjetima za dobivanje koncesije na preostalom turističkom zemljištu u vlasništvu jedinice lokalne samouprave</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+15. <a data-fileid="52478" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2015.docx">Prijedlog odluke o usvajanju Izmjena i dopune Programa &bdquo;Mikro i mali zajmovi za ruralni razvoj&ldquo;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+16. <a data-fileid="52486" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2016.docx">Prijedlog odluke o usvajanju Programa &quot;COVID-19 zajam za obrtna sredstva&quot;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+17. <a data-fileid="52449" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/Novo/222%20-%2017.docx">Prijedlog odluke o uvjetima i kriterijima koje pri javnoj nabavi moraju zadovoljiti poljoprivredni i prehrambeni proizvodi</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;<br>
+18. <a data-fileid="52481" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2018.docx">Prijedlog odluke o provedbi privremene izvanredne mjere pomoći malim mljekarama s problemima u poslovanju uzrokovanih epidemijom bolesti COVID-19</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+19. <a href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%2520-%252019.doc.doc">Prijedlog odluke o donošenju Programa potpore primarnim poljoprivrednim proizvođačima u sektoru biljne proizvodnje i sektoru stočarstva u 2020. godini</a> &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+20. <a data-fileid="52484" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2020.doc">Nacrt konačnog prijedloga zakona o izmjenama i dopunama Zakona o Hrvatskoj narodnoj banci </a><strong><a data-fileid="52484" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2020.doc">(EU)</a>&nbsp;&nbsp;&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+21. <a data-fileid="52485" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2021.docx">Nacrt konačnog prijedloga zakona o izmjenama i dopunama Zakona o kreditnim institucijama <strong>(EU)</strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+22. <a data-fileid="52450" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2022.docx">Nacrt konačnog prijedloga zakona o izmjenama i dopunama Zakona o sanaciji kreditnih institucija i investicijskih društava <strong>(EU)</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+23. <a data-fileid="52489" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2023.docx">Nacrt konačnog prijedloga zakona o izmjenama i dopunama Zakona o sigurnosti pri odobalnom istraživanju i eksploataciji ugljikovodika </a><strong><a data-fileid="52489" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2023.docx">(EU)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><br>
+&nbsp;<br>
+24. a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a data-fileid="52490" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2024%20a.doc">Prijedlog odluke o davanju suglasnosti Gradu Karlovcu za zaduženje kod Karlovačke banke d.d., Karlovac</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) &nbsp; &nbsp; &nbsp; &nbsp; <a data-fileid="52487" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2024%20b.doc">Prijedlog odluke o davanju suglasnosti Općini Budinščina za zaduženje kod Zagrebačke banke d.d., Zagreb</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a data-fileid="52488" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2024%20c.doc">Prijedlog odluke o davanju suglasnosti Općini Murter-Kornati za zaduženje kod Hrvatske poštanske banke d.d., Zagreb</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a data-fileid="52451" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2024%20d.doc">Prijedlog odluke o davanju suglasnosti Općini Ližnjan za zaduženje kod Hrvatske poštanske banke d.d., Zagreb</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a data-fileid="52479" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2024%20e.doc">Prijedlog odluke o izmjeni Odluke o davanju suglasnosti Gradu Osijeku za zaduženje kod OTP banke d.d., Zadar</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+25. <a data-fileid="52452" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2025.docx">Prijedlog odluke o rješavanju spora s društvom Arena Hospitality Group d.d. te iskazivanju namjere o prodaji nekretnine k.č.br. 2160/8 ZGR., zk.ul.br. 2327, k.o. Pula</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+26. <a data-fileid="52453" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2026.docx">Prijedlog odluke o odgodi održavanja prvoga hrvatskog međunarodnog vojnog zrakoplovnog mitinga &bdquo;CROIMAS 2020&ldquo;</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+27. Verifikacija odgovora na zastupnička pitanja postavljenja Vladi Republike Hrvatske:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a)&nbsp; <a data-fileid="52454" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2027%20a.docx">Ante Pranića, u vezi s državnim stručnim ispitom vodnih redara</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b)&nbsp; <a data-fileid="52456" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2027%20b.docx">Nade Turina-Đurić, u vezi s izmjenom članka 38. stavka 5. Kolektivnog ugovora za državne službenike i namještenike</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c)&nbsp; <a data-fileid="52455" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2027%20c.docx">Ranka Ostojića, u vezi s prijmom u državnu službu</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d)&nbsp; <a data-fileid="52457" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2027%20d.docx">Ante Pranića, u vezi s naplatom odvoza kanti za prikupljanje otpada</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e)&nbsp; <a data-fileid="52458" href="https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2020/Travanj/222%20sjednica%20VRH/222%20sjednica%20VRH%20final/222%20-%2027%20e.docx">Ranka Ostojića, u vezi sa Sporazumom o razumijevanju i poslovnoj suradnji - dopunsko zastupničko pitanje</a>.
+
+<div>&nbsp;<br>
+<br>
+<br>
+<strong>Dnevni red zatvorenoga dijela sjednice </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br>
+1. Prijedlog odluke o obnavljanju strateških robnih zaliha pšenice (<strong>vrlo tajno</strong>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+2. Prijedlozi za davanje suglasnosti zastupnici Republike Hrvatske pred Europskim sudom za ljudska prava za postizanje prijateljskog rješenja spora <strong>(ograničeno)</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<br>
+3. Mjesečno Izvješće o provedbi aktivnosti iz Akcijskog plana Republike Hrvatske za pridruživanje Europskom tečajnom mehanizmu II (ERM II) i bankovnoj uniji &ndash; usmeno izvješće&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<br>
+&nbsp;<br>
+4. Izvješće o provedbi Nacionalnog programa reformi 2019., za mjesec ožujak 2020. &ndash;usmeno izvješće<strong><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </em></strong><br>
+&nbsp;<br>
+5. Izvješće o stanju iskorištenosti sredstava ESI fondova u Republici Hrvatskoj &ndash; usmeno izvješće&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+6. Pregled zakonskih prijedloga iz Plana zakonodavnih aktivnosti za 2020. godinu &ndash; usmeno izvješće&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+7<em>. </em>Kadrovska pitanja&nbsp;&nbsp;<br>
+&nbsp;<br>
+8.Informacije, pitanja i prijedlozi.<br>
+&nbsp;
+                        
+					</div>
+
+							 
+				</div>
+				
+				<div class="article_right">
+					
+					<div class='more_themes_box'><ul><li><a id='showHideVideo2' href='javascript:;'>Video zapis sjednice</a></li><li><a id='showHideAudio2' href='javascript:;'>Audio zapis sjednice</a></li><li><a id='showHidePriopcenje2' href='/vijesti/priopcenje-sa-zatvorenoga-dijela-222-sjednice-vlade/29143'>Priopćenje sa zatvorenog dijela sjednice</a></li></ul></div><div class='documents_box'>
+<h2>Dokumenti</h2>
+<ul>
+<li class='pdf_icon'><a href='/UserDocsImages//2016/Sjednice/2020/Travanj/222 sjednica VRH/Novo//222 - 27 a.pdf' target='_blank'>222 - 27 a Zastupničko pitanje Ante Pranića, u vezi s državnim stručnim ispitom vodnih redara</a> (144kb)</li><li class='pdf_icon'><a href='/UserDocsImages//2016/Sjednice/2020/Travanj/222 sjednica VRH/Novo//222 - 27 b.pdf' target='_blank'>222 - 27 b Zastupničko pitanje Nade Turina-Đurić, u vezi s izmjenom članka 38. stavka 5. Kolektivnog ugovora za državne službenike i namještenike</a> (181kb)</li><li class='pdf_icon'><a href='/UserDocsImages//2016/Sjednice/2020/Travanj/222 sjednica VRH/Novo//222 - 27 c.pdf' target='_blank'>222 - 27 c Zastupničko pitanje Ranka Ostojića, u vezi s prijmom u državnu službu</a> (168kb)</li><li class='pdf_icon'><a href='/UserDocsImages//2016/Sjednice/2020/Travanj/222 sjednica VRH/Novo//222 - 27 d.pdf' target='_blank'>222 - 27 d Zastupničko pitanje Ante Pranića, u vezi s naplatom odvoza kanti za prikupljanje otpada</a> (148kb)</li><li class='pdf_icon'><a href='/UserDocsImages//2016/Sjednice/2020/Travanj/222 sjednica VRH/Novo//222 - 27 e.pdf' target='_blank'>222 - 27 e Zastupničko pitanje Ranka Ostojića, u vezi sa Sporazumom o razumijevanju i poslovnoj suradnji - dopunsko zastupničko pitanje</a> (208kb)</li>
+</ul>
+</div>
+
+					
+					<div class="social_box">
+						<ul> 
+						<li><a href="/print.aspx?id=29132&amp;url=print"><span class="print_icon"></span>Ispiši stranicu</a></li>
+						<li><a href="http://www.facebook.com/sharer.php?u=https://vlada.gov.hr/sjednice/222-sjednica-vlade-republike-hrvatske-29132/29132"><span class="fb_icon"></span>Podijeli na Facebooku</a></li>
+						<li><a href="http://twitter.com/share?text=222. sjednica Vlade Republike Hrvatske&amp;url=https://vlada.gov.hr/sjednice/222-sjednica-vlade-republike-hrvatske-29132/29132"><span class="tw_icon"></span>Podijeli na Twitteru</a></li>
+						
+						</ul>
+					</div>
+				 
+				</div>
+				
+				<div class="clear"> </div> 
+				
+			</div>	
+			
+		</div>	
+
+		<div class="space_44"> </div>
+
+		
+
+        <footer class="footer">
+
+			<div class="center">
+				<div class='footer_col1'><h2>Središnji državni portal</h2><nav><ul>
+	<li><a href="https://vlada.gov.hr/sredisnji-drzavni-portal/203" target="_blank">O Središnjem državnom portalu</a></li>
+	<li><a href="https://vlada.gov.hr/?id=11545" target="_blank">e-Građani</a></li>
+	<li><a href="https://savjetovanja.gov.hr/" target="_blank">e-Savjetovanja</a></li>
+	<li><a href="http://data.gov.hr/" target="_blank">Portal otvorenih podataka RH</a>&nbsp;</li>
+	<li><a href="https://izvoz.gov.hr/" target="_blank">Izvozni portal</a></li>
+	<li><a href="https://gov.hr/beta-komentari/1540" target="_blank">Prijedlozi i komentar</a>i</li>
+</ul>
+</nav></div><div class='footer_col2'><h2>Adresar</h2><nav><ul>
+	<li><a href="http://www.digured.hr/" target="_blank">Središnji katalog službenih dokumenata RH</a>&nbsp;</li>
+	<li><a href="http://www.digured.hr/Adresari-i-imenici/(active)/tab210" target="_blank">Adresar tijela javne vlasti</a></li>
+	<li><a href="http://www.digured.hr/Politicke-stranke-i-izbori/(active)/tab229" target="_blank">Adresar političkih stranaka u RH</a></li>
+	<li><a href="http://www.digured.hr/Adresari-i-imenici/(active)/tab264" target="_blank">Popis dužnosnika u RH</a></li>
+	<li><a href="https://gov.hr/besplatni-telefoni-javne-uprave/1655" target="_blank">Besplatni telefoni javne uprave</a></li>
+	<li><a href="https://gov.hr/pozivi-za-zurnu-pomoc/1651" target="_blank">Pozivi za žurnu pomoć</a></li>
+</ul>
+</nav></div><div class='footer_col3'><h2>Korisne poveznice</h2><nav><ul>
+	<li><a href="http://www.sabor.hr/Default.aspx" target="_blank">Hrvatski sabor</a></li>
+	<li><a href="https://www.predsjednik.hr/">Ured predsjednika&nbsp;RH</a></li>
+	<li><a href="http://www.ombudsman.hr/index.php/hr/" target="_blank">Pučki pravobranitelj</a></li>
+	<li><a href="http://www.pristupinfo.hr/">Povjerenik za informiranje</a></li>
+	<li><a href="http://www.mfin.hr/hr/drzavni-proracun-2017-godina">Državni proračun</a></li>
+	<li><a href="http://www.digured.hr/Politicke-stranke-i-izbori/(active)/tab253">Političke stranke i izbori</a></li>
+</ul>
+</nav></div>
+			</div>
+
+			<div class="clear"></div>
+
+		</footer>
+
+        <div id="cookie-inner-wrapper">
+            <div class="center">
+    			<div id="cookie-wrapper">
+    				<div id="cookie-info-wrapper">Ove internetske stranice koriste kolačiće (tzv. cookies) za pružanje boljeg korisničkog iskustva i funkcionalnosti. Postavke kolačića možete podesiti u svojem internetskom pregledniku. Više o kolačićima i načinu kako ih koristimo te načinu kako ih onemogućiti pročitajte&nbsp;<a href="https://gov.hr/cookies/1541">ovdje</a>. Klikom na gumb &#39;U redu&#39; pristajete na korištenje kolačića.</div>
+    				<p id="cookie-button">U redu</p>
+
+    			</div>
+            </div>
+		</div>
+
+        <footer class="footer_gov">
+		
+			<div class="center">
+			
+				<div class="footer_vrh">
+					<a href="javascript:;" onClick="$('html, body').animate({ scrollTop: 0 }, 'slow');">Povratak na vrh</a>
+				</div>
+			
+				<div class="footer_cp">
+					Copyright &copy; 2021 Vlada Republike Hrvatske. <a href='/uvjeti-koristenja/11852'>Uvjeti korištenja</a>.&nbsp;<a href="/izjava-o-pristupacnosti/30430">Izjava o pristupačnosti</a>.
+				</div>
+				
+				<div class="footer_col4">
+					<nav>
+						<ul>
+						<li><a target="_blank" href="https://www.facebook.com/wwwvladahr" title="Facebook"><span class="fb_icon"></span></a></li>
+						<li><a target="_blank" href="https://twitter.com/VladaRH" title="Twitter"><span class="tw_icon"></span></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/user/wwwvladahr" title="YouTube"><span class="yt_icon"></span></a></li>						
+						<li><a target="_blank" href="https://www.scribd.com/Vlada_RH" title="Scribd"><span class="sc_icon"></span></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/vlada__rh/?hl=en" title="Instagram"><span class="in_icon"></span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/vlada-republike-hrvatske" title="Linkedin"><span class="li_icon"></span></a></li>
+						</ul> 
+					</nav>
+				</div>
+				
+			</div>
+			
+			<div class="clear"></div>
+			
+		</footer>		
+    </body>
+</html>

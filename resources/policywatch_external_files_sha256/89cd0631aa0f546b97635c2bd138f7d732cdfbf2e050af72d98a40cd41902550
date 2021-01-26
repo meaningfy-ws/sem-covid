@@ -1,0 +1,3087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" href="/wps/contenthandler/public/!ut/p/digest!tc-HhAbo03DB7Gt5h6451g/sp/mashup:ra:collection?soffset=0&amp;eoffset=16&amp;themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fcss&amp;lm=1607596930000&amp;entry=wp_toolbar_common__0.0%3Ahead_css&amp;entry=wp_status_bar__0.0%3Ahead_css&amp;entry=wp_dialog_css__0.0%3Ahead_css&amp;entry=wp_portlet_css__0.0%3Ahead_css&amp;entry=wp_toolbar_projectmenu__0.0%3Ahead_css&amp;entry=wp_toolbar_common_actionbar__0.0%3Ahead_css&amp;entry=wp_toolbar_sitepreview__0.0%3Ahead_css&amp;entry=wp_toolbar_logo__0.0%3Ahead_css&amp;entry=wp_simple_contextmenu_css__0.0%3Ahead_css&amp;entry=wp_toolbar_actionbar__0.0%3Ahead_css&amp;entry=wp_theme_portal_edit_85__0.0%3Ahead_css&amp;entry=wp_ic4_wai_resources__0.0%3Ahead_css&amp;entry=wp_theme_portal_85__0.0%3Ahead_css&amp;entry=wp_toolbar_moremenu__0.0%3Ahead_css&amp;entry=wp_oob_sample_styles__0.0%3Ahead_css" type="text/css"/><link rel="alternate" id="head_css_deferred" href="/wps/contenthandler/public/!ut/p/digest!tc-HhAbo03DB7Gt5h6451g/sp/mashup:ra:collection?soffset=0&amp;eoffset=6&amp;themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fcss&amp;lm=1607596930000&amp;entry=wp_contextmenu_css__0.0%3Ahead_css&amp;entry=wp_federated_documents_picker__0.0%3Ahead_css&amp;entry=wcm_inplaceEdit__0.0%3Ahead_css&amp;entry=wp_dnd_css__0.0%3Ahead_css&amp;entry=wp_content_targeting_cam__0.0%3Ahead_css&amp;deferred=true"/><script type="text/javascript">var djConfig={"baseUrl":"/wps/portal_dojo/v1.9/dojo/","locale":"en","isDebug":false,"debugAtAllCosts":false,"parseOnLoad":false,"afterOnLoad":false,"has":{"dojo-bidi":true},"modulePaths":{"com":"/wps/themeModules/js/com","ibm":"/wps/themeModules/js/ibm","pagebuilder":"/wps/themeModules/modules/pagebuilder/js","portalclient":"/wps/themeModules/modules/portalclient/js","asa":"/wps/themeModules/modules/asa/js","contentmapping":"/wps/themeModules/modules/contentmapping/js","federation":"/wps/themeModules/modules/federation/js"}};djConfig.locale=djConfig.locale.replace(/_/g, "-").replace(/iw/, "he").toLowerCase();(function(){if (typeof(wpModules) == 'undefined') wpModules = {}; if (typeof(wpModules.state) == 'undefined') wpModules.state = {}; if (typeof(wpModules.state.page) == 'undefined') wpModules.state.page = {};wpModules.state.page._initial=[{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"selection","value":["Z6_20FVVF2GARU220AG5VSRI630K1"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"labelMappings","value":["Z6_00000000000000A0BR2B300GO2","Z6_20FVVF2GARU220AG5VSRI630K1","Z6_000000000000000000000000A0","Z6_20FVVF2GARU220AG5VSRI630K1","Z6_20FVVF2GARU220AG5VSRI630K1","Z6_000000000000000000000000A0"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"expansions","value":["Z6_000000000000000000000000A0","Z6_00000000000000A0BR2B300GO2","Z6_D2DVRI4208C920IGQLKC150GS3","Z6_D2DVRI420G7Q402JEJ7USN3G96"]}];wpModules.state.page.selectionPath=['Z6_000000000000000000000000A0','Z6_00000000000000A0BR2B300GO2','Z6_D2DVRI420G7Q402JEJ7USN3G96','Z6_D2DVRI4208C920IGQLKC150GS3','Z6_20FVVF2GARU220AG5VSRI630K1'];wpModules.state.page.supportsEditMode=true;wpModules.state.page.supportsToolbar=true;wpModules.state.page.path='/wps/portal/public';wpModules.state.page.protectedPath='/wps/myportal/public';wpModules.state.page.publicPath='/wps/portal/public';})();</script><script type="text/javascript" src="/wps/contenthandler/public/!ut/p/digest!tc-HhAbo03DB7Gt5h6451g/mashup/ra:collection?themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fjavascript&amp;lm=1607596930000&amp;entry=wp_client_main__0.0%3Ahead_js&amp;entry=wp_client_ext__0.0%3Ahead_js&amp;entry=wp_client_logging__0.0%3Ahead_js&amp;entry=wp_client_tracing__0.0%3Ahead_js&amp;entry=wp_modules__0.0%3Ahead_js&amp;entry=wp_state_page__0.0%3Ahead_js&amp;entry=wp_photon_dom__0.0%3Ahead_js&amp;entry=wp_dialog_util__0.0%3Ahead_js&amp;entry=wp_toolbar_common__0.0%3Ahead_js&amp;entry=wp_analytics_aggregator__0.0%3Ahead_js&amp;entry=wp_a11y__0.0%3Ahead_js&amp;entry=wp_dialog_draggable__0.0%3Ahead_js&amp;entry=wp_dialog_main__0.0%3Ahead_js&amp;entry=wp_theme_utils__0.0%3Ahead_js&amp;entry=getting_started_module__0.0%3Ahead_js&amp;entry=wp_toolbar_viewframe_validator__0.0%3Ahead_js&amp;entry=wp_theme_portal_85__0.0%3Ahead_js"></script><link rel="alternate" id="head_js_deferred" href="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/mashup/ra:collection?themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fjavascript&amp;lm=1569707850000&amp;entry=dojo_19__0.0%3Ahead_js&amp;entry=dojo_app_19__0.0%3Ahead_js&amp;entry=dojo_dom_19__0.0%3Ahead_js&amp;entry=dojo_dnd_basic_19__0.0%3Ahead_js&amp;entry=dojo_fx_19__0.0%3Ahead_js&amp;entry=dojo_data_19__0.0%3Ahead_js&amp;entry=dojo_dnd_ext_19__0.0%3Ahead_js&amp;entry=dojo_selector_lite_19__0.0%3Ahead_js&amp;entry=dijit_19__0.0%3Ahead_js&amp;entry=dijit_layout_basic_19__0.0%3Ahead_js&amp;entry=dojox_layout_basic_19__0.0%3Ahead_js&amp;entry=dijit_menu_19__0.0%3Ahead_js&amp;entry=dojo_fmt_19__0.0%3Ahead_js&amp;entry=dijit_form_19__0.0%3Ahead_js&amp;entry=wp_client_selector__0.0%3Ahead_js&amp;entry=dijit_tree_19__0.0%3Ahead_js&amp;entry=dijit_layout_ext_19__0.0%3Ahead_js&amp;entry=wp_dnd_namespace__0.0%3Ahead_js&amp;entry=wp_dnd_source__0.0%3Ahead_js&amp;entry=wp_dnd_util__0.0%3Ahead_js&amp;entry=wp_contextmenu_js__0.0%3Ahead_js&amp;entry=wcm_inplaceEdit__0.0%3Ahead_js&amp;entry=wp_client_dnd__0.0%3Ahead_js&amp;entry=wp_dnd_target__0.0%3Ahead_js&amp;deferred=true"/><link id="MF-2NkoSwx8" rel="alternate" href="https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires/!ut/p/z1/ldDBDoIwDAbgZ-EJVjoYchwgzcBo2LKBuxhOhETRg_H5NcSDekDtrcn3_2nKPOuYn_rbOPTX8Tz1x8e-9-KAUDpXIkltEUFS7IxWgkMdsnYG8DYSMo0ZB6AdMv9__rXpt_wC8Mv1LfMzKbBwWkUIqzxFUNRs6jyMgQz_BJQ0EWC1rhJrtpxS8QRLP_h2xeVkbQejGmQQ3AFRPgV6/"><script type="text/javascript">(function() {
+	var element = document.getElementById("MF-2NkoSwx8");
+	if (element) {
+		wpModules.theme.WindowUtils.baseURL.resolve(element.href);
+	}
+}());</script><style id="layout-wstate-styles"></style><base href="https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires/!ut/p/z1/ldDBDoIwDAbgZ-EJVjoYchwgzcBo2LKBuxhOhETRg_H5NcSDekDtrcn3_2nKPOuYn_rbOPTX8Tz1x8e-9-KAUDpXIkltEUFS7IxWgkMdsnYG8DYSMo0ZB6AdMv9__rXpt_wC8Mv1LfMzKbBwWkUIqzxFUNRs6jyMgQz_BJQ0EWC1rhJrtpxS8QRLP_h2xeVkbQejGmQQ3AFRPgV6/">
+<title>Chambre des Députés du Grand-Duché de Luxembourg</title>
+
+
+<link id="com.ibm.lotus.NavStateUrl" rel="alternate"
+	href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires/!ut/p/z1/ldDBDoIwDAbgZ-EJVjoYchwgzcBo2LKBuxhOhETRg_H5NcSDekDtrcn3_2nKPOuYn_rbOPTX8Tz1x8e-9-KAUDpXIkltEUFS7IxWgkMdsnYG8DYSMo0ZB6AdMv9__rXpt_wC8Mv1LfMzKbBwWkUIqzxFUNRs6jyMgQz_BJQ0EWC1rhJrtpxS8QRLP_h2xeVkbQejGmQQ3AFRPgV6/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzIwRlZWRjJHQVJVMjIwQUc1VlNSSTYzMEsx/" />
+
+
+<link href="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/war/SitePublicCHDStatic/themes/SitePublicCHD/images/CHD/template/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/war/SitePublicCHDStatic/themes/SitePublicCHD/css/CHD/chambre.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/war/SitePublicCHDStatic/themes/SitePublicCHD/css/CHD/chambre_print.css" media="print" />
+
+<!-- CUSTOM content --><!--  ******************  CSS  ****************** --><!-- pageMetadatatag colorPalette:  --><!-- 
+    <link rel="styleSheet" type="text/css" href='/PortalTheme/themes/html/css/base/core.css' />
+    <link rel="styleSheet" type="text/css" href='/PortalTheme/themes/html/css/defaultTheme/defaultTheme.css' />
+     -->
+    
+    <script type="text/javascript">
+        //<![CDATA[
+        // This var is used for swf title
+        
+        var swfTtlPath="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/war/SitePublicCHDStatic/themes/SitePublicCHD/images/CHD/content/";
+        //]]>
+    </script>
+    
+<base href="https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires/!ut/p/z1/ldDBDoIwDAbgZ-EJVjoYchwgzcBo2LKBuxhOhETRg_H5NcSDekDtrcn3_2nKPOuYn_rbOPTX8Tz1x8e-9-KAUDpXIkltEUFS7IxWgkMdsnYG8DYSMo0ZB6AdMv9__rXpt_wC8Mv1LfMzKbBwWkUIqzxFUNRs6jyMgQz_BJQ0EWC1rhJrtpxS8QRLP_h2xeVkbQejGmQQ3AFRPgV6/"></head>
+<body>
+
+	<!-- Loading spinner div: show/hide using method 'ap_showWaitMessage' defined in "chambre.js" -->
+	<div id="waitDiv" style="z-index: 50; position: absolute; visibility: hidden; top: 40%; left: 42%; text-align: center">
+		<table cellpadding="40" cellspacing="0" style="border: 1px solid black;" bgcolor="#FFFFFF">
+			<tr>
+				<td align="center">Chargement...<br />
+					<img src="images/CHD/content/loading.gif" alt="Veuillez patienter" /><br />
+					Veuillez patienter...
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- IBM Site toolbar --> 
+	<div id="mainBg">
+		<div class="centerContent">
+		
+			<div id="header">
+				<header role="banner" tabindex="-1" aria-label="Main header">
+				
+					
+<div id="logo">
+	<a href="/"> <img src="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/war/SitePublicCHDStatic/themes/SitePublicCHD/images/CHD/template/logo.gif"
+		alt="Chambre des Députés du Grand-Duché de Luxembourg" />
+	</a>
+</div>
+
+
+	
+	<div id="Nav1AndNav2_CHD">
+		<ul id="nav1">
+			
+					<li>
+						<a href="/wps/portal/public/Accueil/LaChambreEtVous/PlanDuSite" > Plan du site
+						</a>
+					</li>
+				
+			<li>
+				<div onclick="javascript:print();return false;" class="print-btn">
+					<img src="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/war/SitePublicCHDStatic/themes/SitePublicCHD/images/CHD/content/print.jpg" style="border:0" alt="print" />
+				</div>
+			</li>
+		</ul>
+		<ul id="nav2">
+			
+					<li>
+						<a href="/wps/portal/public/NavigationTransversale/NavigationTransversale2/ChambreAZ" 
+						onclick="return showNewWindow('/wps/portal/public/NavigationTransversale/NavigationTransversale2/ChambreAZ')"
+						> La Chambre de A...Z
+						</a>
+					</li>
+				
+					<li>
+						<a href="/wps/portal/public/Accueil/LaChambreEtVous/Contacts" > Contacts
+						</a>
+					</li>
+				
+		</ul>
+	</div>
+<!-- renders the top navigation -->
+					
+    <div class="wpthemeNavContainer1">
+        <nav class="wpthemePrimaryNav wpthemeLeft" aria-label="Portal Application" role="navigation" tabindex="-1">
+            <ul  id="mainNav"  class="wpthemeNavList">
+
+                
+                    <li class="wpthemeNavListItem wpthemeLeft">
+
+                        
+                        <a href="/wps/portal/public/Accueil/Actualite" class="wpthemeLeft  ">
+
+                            
+                            <span lang="en" dir="ltr">Actualité</span>
+                        </a>
+
+                        
+
+                    </li>
+
+                
+                    <li class="wpthemeNavListItem wpthemeLeft">
+
+                        
+                        <a href="/wps/portal/public/Accueil/OrganisationEtFonctionnement" class="wpthemeLeft  ">
+
+                            
+                            <span lang="en" dir="ltr">Organisation et fonctionnement</span>
+                        </a>
+
+                        
+
+                    </li>
+
+                
+                    <li class="wpthemeNavListItem wpthemeLeft selected">
+
+                        
+                        <a href="/wps/portal/public/Accueil/TravailALaChambre" class="wpthemeLeft  ">
+
+                            
+                            <span lang="en" dir="ltr">Travail à la Chambre</span>
+                        </a>
+
+                        
+
+                    </li>
+
+                
+                    <li class="wpthemeNavListItem wpthemeLeft">
+
+                        
+                        <a href="/wps/portal/public/Accueil/ChambreEtUE" class="wpthemeLeft  ">
+
+                            
+                            <span lang="en" dir="ltr">La Chambre et l&#039;UE</span>
+                        </a>
+
+                        
+
+                    </li>
+
+                
+                    <li class="wpthemeNavListItem wpthemeLeft">
+
+                        
+                        <a href="/wps/portal/public/Accueil/LaChambreEtVous" class="wpthemeLeft  ">
+
+                            
+                            <span lang="en" dir="ltr">La Chambre et vous</span>
+                        </a>
+
+                        
+
+                    </li>
+
+                
+                    <li class="wpthemeNavListItem wpthemeLeft">
+
+                        
+                        <a href="https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Petitions/DepotPetition" class="wpthemeLeft  ">
+
+                            
+                            <span lang="en" dir="ltr">Pétitions</span>
+                        </a>
+
+                        
+
+                    </li>
+
+                
+
+            </ul>
+        </nav>
+        <div class="wpthemeClear"></div>
+    </div>
+
+</header>
+			</div>
+			
+			<div id="middle">
+			
+				<!-- Shortcuts -->
+				
+	<div id="colRight">
+		<div id="shortcuts" >
+			<div id="title"  class="abonnement">Vos raccourcis à la Chambre</div>
+			<div id="shortcutsClosed">
+				<div class="forms">
+					<div class="form">
+						<ul>
+							<li>Dossiers parlementaires, dossiers européens, pétitions, questions parlementaires</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="shortcutsOpened">
+				
+                    <div class="forms">
+                        
+                        <div class="form">
+                            <span style="font-weight:bold;">Dossiers parlementaires, dossiers européens, pétitions, questions parlementaires</span>
+                            <a href="/wps/portal/public/Accueil/Actualite/Abonnement" class="buttonAction">M'abonner à l'alerte email</a>
+                        </div>
+                        
+                    </div>
+                
+			</div>
+			
+				<script>EMA.resetColRight();</script>
+			
+		</div>
+		<div class="CB"></div>
+	</div>
+<div>
+					<!-- asa markup contributions for pages -->
+					
+
+<div class="asa.page" id="asa.page" style="display:none;">
+	<span class="asa.page.id">Z6_20FVVF2GARU220AG5VSRI630K1</span>
+
+	
+
+</div>
+
+
+			<ul id="breadcrumb">
+				<li>Vous êtes ici:</li>
+				
+							<li><a tabindex="2"
+								href="/wps/portal/public/Accueil/TravailALaChambre"> Travail à la Chambre
+							</a></li>
+							
+							<li>Recherche</li>
+							
+							<li><a tabindex="2"
+								href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires"> Rôle des affaires
+							</a></li>
+							
+			</ul>
+		<!-- <a rel="dynamic-content" href="dyn-cs:id:sitePublicCHD_status"></a>  -->
+				</div>
+
+				<!-- START OF SIDENAV -->
+				<!-- First iteration -->
+		<ul id="navLeft">
+	
+	    <li class="selected">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('1');"
+						class="  ">
+					<span lang="en" dir="ltr">Recherche</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_1">
+			
+	    <li class="selected">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires"
+						class="selected  ">
+					<span lang="en" dir="ltr">Rôle des affaires<span class="wpthemeAccess"> </span></span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives"
+						class="  ">
+					<span lang="en" dir="ltr">Recherche d&#039;archives</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/Videos"
+						class="  ">
+					<span lang="en" dir="ltr">Vidéos</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('2');"
+						class="  ">
+					<span lang="en" dir="ltr">Commissions</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_2">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Commissions/TravauxEnCommission"
+						class="  ">
+					<span lang="en" dir="ltr">Travaux en commission</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Commissions/ListeDesCommissions"
+						class="  ">
+					<span lang="en" dir="ltr">Liste des commissions</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Commissions/CalendrierDesCommissions"
+						class="  ">
+					<span lang="en" dir="ltr">Calendrier des commissions</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Commissions/AgendaHebdomadaireCommissions"
+						class="  ">
+					<span lang="en" dir="ltr">Agenda hebdomadaire des commissions</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('3');"
+						class="  ">
+					<span lang="en" dir="ltr">Séances publiques</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_3">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/SeancesPubliques/CalendrierSeances"
+						class="  ">
+					<span lang="en" dir="ltr">Calendrier des séances</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/SeancesPubliques/SeancesSemaine"
+						class="  ">
+					<span lang="en" dir="ltr">Séances de la semaine</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/SeancesPubliques/ComptesRendusSeances"
+						class="  ">
+					<span lang="en" dir="ltr">Comptes rendus des séances</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/SeancesPubliques/ListePresence"
+						class="  ">
+					<span lang="en" dir="ltr">Listes de présences</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('4');"
+						class="  ">
+					<span lang="en" dir="ltr">Pétitions</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_4">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Petitions/DepotPetition"
+						onclick="openCloseNavMenu('4_1'); return true;"
+						class="  ">
+						<span lang="en" dir="ltr">Dépôt d&#039;une pétition</span>
+						</a>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_4_1">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Petitions/DepotPetition/PetitionOrdinaire"
+						class="  ">
+					<span lang="en" dir="ltr">Pétition ordinaire</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Petitions/DepotPetition/PetitionPublique"
+						class="  ">
+					<span lang="en" dir="ltr">Pétition publique</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Petitions/RoleDesPetitions"
+						class="  ">
+					<span lang="en" dir="ltr">Rôle des Pétitions</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Petitions/SignerPetition"
+						class="  ">
+					<span lang="en" dir="ltr">Signer une pétition</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Petitions/ParticiperForums"
+						class="  ">
+					<span lang="en" dir="ltr">Participer aux forums</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('5');"
+						class="  ">
+					<span lang="en" dir="ltr">Procédure législative</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_5">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/ProcedureLegislative/LirePlus"
+						class="  ">
+					<span lang="en" dir="ltr">Lire plus et voir la procédure législative</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('6');"
+						class="  ">
+					<span lang="en" dir="ltr">Contrôle du Gouvernement</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_6">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/ControleGouvernement/LirePlus"
+						class="  ">
+					<span lang="en" dir="ltr">Lire plus...</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('7');"
+						class="  ">
+					<span lang="en" dir="ltr">Budget de l’Etat</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_7">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/BudgetEtat/LirePlus"
+						class="  ">
+					<span lang="en" dir="ltr">Lire plus...</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('8');"
+						class="  ">
+					<span lang="en" dir="ltr">Nominations</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_8">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/Nominations/LirePlus"
+						class="  ">
+					<span lang="en" dir="ltr">Lire plus...</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+	    <li class="">
+	        <span>
+	        
+	        	
+						<div onclick="return openCloseNavMenu('9');"
+						class="  ">
+					<span lang="en" dir="ltr">Débats en séance publique</span>
+						</div>
+					
+	
+	        </span>
+	
+	        <!-- Sub-level -->
+				<ul id="navLeft_9">
+			
+	    <li class="">
+	        <span>
+	        
+	        	
+						<a href="/wps/portal/public/Accueil/TravailALaChambre/DebatsSeancePublique/LirePlus"
+						class="  ">
+					<span lang="en" dir="ltr">Lire plus...</span>
+						</a>
+					
+	
+	        </span>
+	
+	        
+	            
+	    </li>
+</ul>
+	            
+	    </li>
+</ul><!-- END OF SIDENAV -->
+
+				<div id="contentType1">
+					<!-- START OF CONTENT -->
+					<!-- required - do not remove -->
+					<div style="display:none" id="portletState">{}</div><div id="layoutContainers" class="wpthemeLayoutContainers wpthemeLayoutContainersHidden">
+						
+
+
+
+
+
+
+
+
+
+
+        
+            
+				<div class="contentType1Items">
+					
+
+
+
+
+
+
+
+
+
+<table class="layoutColumn ibmDndColumn component-container id-Z7_20FVVF2GARU220AG5VSRI630K3 layoutNode" cellpadding="0" cellspacing="0" role="presentation">
+	 
+</table>
+				</div>
+			
+
+        
+            
+				<div class="contentType2Items">
+					
+
+
+
+
+
+
+
+
+
+<table class="layoutColumn ibmDndColumn component-container id-Z7_20FVVF2GARU220AG5VSRI630K7 layoutNode" cellpadding="0" cellspacing="0" role="presentation">
+	
+	<tr>
+		<td style="width:100%;" valign="top">
+			<div class='component-control id-Z7_P1M8HC80M8CO00AD56RTIO0001' ><span id="Z7_P1M8HC80M8CO00AD56RTIO0001"></span><section class="ibmPortalControl wpthemeControl wpthemeStandard a11yRegionTarget noBorderPortlet"  role="region">
+	
+	
+
+	<div class="asa.portlet" id="asa.portlet.Z7_P1M8HC80M8CO00AD56RTIO0001" style="display:none;">
+		<span class="asa.portlet.id">Z7_P1M8HC80M8CO00AD56RTIO0001</span>
+
+		
+
+	</div>
+	
+<!-- start header markup -->
+	<header role="banner" aria-label="Skin header">
+		<div>
+			<h2 class="TitleOnly">
+				<!-- lm-dynamic-title node marks location for dynamic title support -->
+				<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel">Rôle des affaires</span>
+			</h2>
+			<div class="SitePublicCHDMenuActions"></div>
+			<a aria-haspopup="true" aria-label="Display content menu" role="button" href="javascript:;" class="wpthemeIcon wpthemeMenuFocus contextMenuInSkinIcon" style="display:none" tabindex="0">
+				<span title="Display content menu"><img aria-label="Display content menu" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></span>
+				<span class="wpthemeAltText">Component Action Menu</span>
+				<!-- start CAM template -->
+				<span class="wpthemeMenu" data-positioning-handler="horizontallyCenteredBelow">
+					<div class="wpthemeMenuBorder">
+						<!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+						<ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+							<li class="${css-class}" role="menuitem" tabindex="-1"><span
+								class="wpthemeMenuText">${title}</span></li>
+						</ul>
+						<div class="verticalMenuPointer pointer"></div>
+					</div> <!-- Template for loading -->
+					<div class="wpthemeMenuLoading wpthemeTemplateLoading">${loading}</div>
+					<!-- Template for submenu -->
+					<div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+						<div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+							<ul id="${submenu-id}" class="wpthemeMenuDropDown"
+								role="menu">
+								<li role="menuitem" tabindex="-1"></li>
+							</ul>
+						</div>
+					</div>
+				</span>
+				<!-- end CAM template -->
+			</a>
+			<a aria-haspopup="true" aria-label="Display portlet menu" role="button" href="javascript:;" class="wpthemeIcon wpthemeActionDisabled wpthemeMenuFocus" tabindex="0"
+                onclick="if (typeof wptheme != 'undefined') wptheme.contextMenu.init({ 'node': this, menuId: 'skinAction', jsonQuery: {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)}, params: {'alignment':'right'}});"
+				onmousemove="javascript:if (typeof i$ != 'undefined' &amp;&amp; typeof wptheme != 'undefined') { i$.removeClass(this,'wpthemeActionDisabled'); this.onmousemove = null; }"
+				onkeydown="javascript:if (typeof i$ != 'undefined' &amp;&amp; typeof wptheme != 'undefined') {if (event.keyCode ==13 || event.keyCode ==32 || event.keyCode==38 || event.keyCode ==40) {wptheme.contextMenu.init(this, 'skinAction', {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)}); return false;}}">
+				<span title="Display portlet menu"><img aria-label="Display portlet menu" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></span>
+				<span class="wpthemeAltText">Actions</span>
+			</a>
+		</div>
+	</header>
+	
+	<div class="wpthemeControlBody wpthemeClear"> <!-- lm:control dynamic spot injects markup of layout control -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+		<div style="position:relative; z-index: 1;">
+			<div class="analytics.overlay"></div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+            
+            
+
+        
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+<div class="wpthemeClear"></div>
+	</div>
+</section> </div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td style="width:100%;" valign="top">
+			<div class='component-control id-Z7_P1M8HC80M0B3A0ATLRHVGJ00G4' ><span id="Z7_P1M8HC80M0B3A0ATLRHVGJ00G4"></span><section class="ibmPortalControl wpthemeControl wpthemeHidden a11yRegionTarget" role="region" style="width:796px">
+	
+	
+
+	<div class="asa.portlet" id="asa.portlet.Z7_P1M8HC80M0B3A0ATLRHVGJ00G4" style="display:none;">
+		<span class="asa.portlet.id">Z7_P1M8HC80M0B3A0ATLRHVGJ00G4</span>
+
+		
+
+	</div>
+	
+<!-- start header markup -->
+	<header class="wpthemeControlHeader H2generic" role="banner" aria-label="Skin header">
+			<div class="wpthemeInner">
+			<h2 class="H2generic">
+				<!-- lm-dynamic-title node marks location for dynamic title support -->
+ 				<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel">Role-texte intro</span>
+			</h2>
+			<div class="SitePublicCHDMenuActions"></div>
+			<a aria-haspopup="true" aria-label="Display content menu" role="button" href="javascript:;" class="wpthemeIcon wpthemeMenuFocus contextMenuInSkinIcon" style="display:none" tabindex="0">
+				<span title="Display content menu"><img aria-label="Display content menu" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></span>
+				<span class="wpthemeAltText">Component Action Menu</span>
+				<!-- start CAM template -->
+				<span class="wpthemeMenu" data-positioning-handler="horizontallyCenteredBelow">
+					<div class="wpthemeMenuBorder">
+						<!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+						<ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+							<li class="${css-class}" role="menuitem" tabindex="-1"><span
+								class="wpthemeMenuText">${title}</span></li>
+						</ul>
+						<div class="verticalMenuPointer pointer"></div>
+					</div> <!-- Template for loading -->
+					<div class="wpthemeMenuLoading wpthemeTemplateLoading">${loading}</div>
+					<!-- Template for submenu -->
+					<div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+						<div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+							<ul id="${submenu-id}" class="wpthemeMenuDropDown"
+								role="menu">
+								<li role="menuitem" tabindex="-1"></li>
+							</ul>
+						</div>
+					</div>
+				</span>
+				<!-- end CAM template -->
+			</a>
+			<a aria-haspopup="true" aria-label="Display portlet menu" role="button" href="javascript:;" class="wpthemeIcon wpthemeActionDisabled wpthemeMenuFocus" tabindex="0"
+                onclick="if (typeof wptheme != 'undefined') wptheme.contextMenu.init({ 'node': this, menuId: 'skinAction', jsonQuery: {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)}, params: {'alignment':'right'}});"
+				onmousemove="javascript:if (typeof i$ != 'undefined' &amp;&amp; typeof wptheme != 'undefined') { i$.removeClass(this,'wpthemeActionDisabled'); this.onmousemove = null; }"
+				onkeydown="javascript:if (typeof i$ != 'undefined' &amp;&amp; typeof wptheme != 'undefined') {if (event.keyCode ==13 || event.keyCode ==32 || event.keyCode==38 || event.keyCode ==40) {wptheme.contextMenu.init(this, 'skinAction', {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)}); return false;}}">
+				<span title="Display portlet menu"><img aria-label="Display portlet menu" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></span>
+				<span class="wpthemeAltText">Actions</span>
+			</a>
+		</div>
+	</header>
+	
+	<div class="wpthemeControlBody wpthemeClear"> <!-- lm:control dynamic spot injects markup of layout control -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+		<div style="position:relative; z-index: 1;">
+			<div class="analytics.overlay" ></div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+            
+            <br><br>
+<div style="display: block;" id="roleTextIntroDossiers"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués depuis 2005.
+<p></p>
+<p class="textZone">Dans la recherche du "Rôle des affaires" les documents sont organisés en fonction de 4 catégories: les "Dossiers parlementaires" (Projets de loi,&nbsp;Propositions de loi,&nbsp;Règlements grand-ducaux, Transpositions de directives, etc); les "Questions&nbsp;parlementaires", les "Motions, Résolutions, Interpellations et Débats", et les "Dossiers européens" (Propositions de directives ou de règlements européens, Directives, Règlements européens, et Autres documents européens).</p>Pour réaliser une recherche vous sélectionnez d'abord la catégorie du document recherché. Les formulaires de recherche sont dynamiques, c-à-d en fonction de la famille documentaire choisie, le&nbsp;formulaire se mettra à jour et il vous présentera éventuellement d''autres possibilités pour&nbsp;affiner vos recherches.
+<p class="textZone">Vous pouvez préciser votre recherche en combinant le choix de la famille documentaire (p.ex.: "Dossiers parlementaires" avec un "Numéro de dossier parlementaire" ou un "Mot clé dans l''intitulé" p.ex.).</p>
+<p class="textZone">
+  <br />
+  <!--   p-->
+</p>
+<p class="textZone">L'ensemble des dossiers du "Rôle des affaires" est accessible via le lien <a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doDocpaList">Accès à l'ensemble des dossiers</a>.
+  <!-- p-->
+</p>
+<p class="textZone">Pour les documents plus vieux que 9 ans, veuillez consulter la rubrique "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>" du site.</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroQuestions"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués depuis 2005.
+<p></p>
+<p class="textZone">Dans la recherche du "Rôle des affaires" les documents sont organisés en fonction de 4 catégories: les "Dossiers parlementaires" (Projets de loi,&nbsp;Propositions de loi,&nbsp;Règlements grand-ducaux, Transpositions de directives, etc); les "Questions&nbsp;parlementaires", les "Motions, Résolutions, Interpellations et Débats", et les "Dossiers européens" (Propositions de directives ou de règlements européens, les Directives, les Règlements européens, et les Autres documents européens).</p>Pour réaliser une recherche vous sélectionnez d'abord la catégorie du document recherché. Les formulaires de recherche sont dynamiques, c-à-d en fonction de la famille documentaire choisie, le&nbsp;formulaire se mettra à jour et il vous présentera éventuellement d''autres possibilités pour&nbsp;affiner vos recherches.
+<p>La catégorie "Questions parlementaires" couvre les différents types de questions (''Questions écrites'', ''Questions urgentes'', ''Questions avec débat'', etc).</p>
+<p>Vous pouvez effectuer une recherche sur plusieurs critères tels qu'un&nbsp;"Mot clé dans l'intitulé" et "Auteur", le ''Destinataire''.</p>
+<p class="textZone">Vous pouvez préciser votre recherche en combinant le choix de la famille documentaire (p.ex. "Numéro de la question'' avec un ''Mot clé dans l''intitulé").</p>
+<p class="textZone">L'ensemble des ''Questions parlementaires''&nbsp;est accessible via le lien <a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doQuestpaList">Accès à l'ensemble des Questions parlementaires</a>.
+  <!--   p-->
+</p>
+<p class="textZone">Pour les ''Questions parlementaires'' de plus de 9 ans, veuillez consulter la rubrique "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>" du site.</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroMRID"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter&nbsp;les documents en cours de procédure ou les documents évacués au cours des dernières 7 années.&nbsp;
+<br />
+<p style="MARGIN: 0px">Dans la recherche du "Rôle des affaires" les documents sont organisés en fonction de 4 catégories: les "Dossiers parlementaires" (Projets de loi,&nbsp;Propositions de loi,&nbsp;Règlements grand-ducaux, Transpositions de directives, etc.); les "Questions&nbsp;parlementaires", les "Motions, Résolutions, Interpellations et Débats", et les "Dossiers européens" (Propositions de directives ou de règlements européens, Directives, Règlements européens, et Autres documents européens).</p>
+<p style="MARGIN: 0px">Pour réaliser une recherche vous sélectionnez d'abord la catégorie du document recherché. Les formulaires de recherche sont dynamiques, c-à-d en fonction de la famille documentaire choisie, le&nbsp;formulaire se mettra à jour et il vous présentera éventuellement d''autres possibilités pour&nbsp;affiner vos recherches.</p>
+<p style="MARGIN: 0px">La catégorie "Motions, Résolutions, Interpellations et Débats" couvre l'ensemble des documents de ce type.</p>
+<p style="MARGIN: 0px">Vous pouvez effectuer une recherche sur deux critères "Mot clé dans l'intitulé" et "Auteur".</p>
+<p class="textZone" style="MARGIN: 0px">L'ensemble des ''Motions, Résolutions, Interpellations et Débats''est accessible via le lien&nbsp; <a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doMotionList">Accès à l'ensemble des Motions, Résolutions, Interpellations et Débats.</a>
+  <br />
+</p>
+<p class="textZone" style="MARGIN: 0px">Pour les documents plus vieux que 7 ans, veuillez consulter la rubrique "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>" du site.</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroProjets"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 9 années.&nbsp; Les documents y sont organisés en fonction de leur type (p.ex.: "Projets de loi", "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", ...)
+<p></p>
+<p class="textZone">Pour consulter les documents d'un type précis, p.ex. les "Projets de loi", vous devez sélectionner "Affichage des: Projets de loi".</p>
+<p class="textZone">Pour chaque type de document il est possible d'appliquer des filtres. Vous pouvez ainsi demander à ne voir que les "Projets de loi - En cours" ou les "Projets de loi - Evacués".&nbsp; Les filtres possibles changent en fonction du type de document de manière à être en cohérence avec la procédure applicable au document sélectionné.</p>
+<p class="textZone">Pour chaque type de document, il est possible d'appliquer un certain nombre de tris.&nbsp; Les "Projets de loi - En cours" peuvent ainsi être triés par ordre croissant ou décroissant du "Numéro du projet de loi" (<img src="/wps/wcm/connect/public/562efcab-0ee6-4c68-b006-1c2e6acdc101/sort_num_ascending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-562efcab-0ee6-4c68-b006-1c2e6acdc101-jboKf5S" width="16" height="16" /><img src="/wps/wcm/connect/public/b4735a21-b509-4f52-bd1f-89e5e84fea00/grayscale_sort_num_descending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-b4735a21-b509-4f52-bd1f-89e5e84fea00-jboJGOy" width="16" height="16" />).&nbsp; Ils peuvent aussi être triés en fonction du "Rapporteur du projet" ou de la "Commission" qui examine le projet.&nbsp; Chaque type de document dispose de ses propres filtres et tris.&nbsp; Les tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p class="textZone">Pour avoir plus d'informations sur un dossier précis, veuillez cliquer sur le numéro du dossier concerné.</p>
+<p class="textZone"=""="">Pour les documents évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>". </p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroPropositions"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 9 années.&nbsp; Les documents y sont organisés en fonction de leur type (p.ex.: "Projets de loi", "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", "Propositions de directives ou de règlements européens", "Directives", "Règlements européens", "Autres documents européens"....)
+<p></p>
+<p class="textZone">Pour consulter les documents d'un type précis, p.ex. les "Projets de loi", vous devez sélectionner "Affichage des: Projets de loi".</p>
+<p class="textZone">Pour chaque type de document il est possible d'appliquer des filtres. Vous pouvez ainsi demander à ne voir que les "Projets de loi - En cours" ou les "Projets de loi - Evacués".&nbsp; Les filtres possibles changent en fonction du type de document de manière à être en cohérence avec la procédure applicable au document sélectionné.</p>
+<p class="textZone">Pour chaque type de document, il est possible d'appliquer un certain nombre de tris.&nbsp; Les "Projets de loi - En cours" peuvent ainsi être triés par ordre croissant ou décroissant du "Numéro du projet de loi" (<img src="/wps/wcm/connect/public/562efcab-0ee6-4c68-b006-1c2e6acdc101/sort_num_ascending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-562efcab-0ee6-4c68-b006-1c2e6acdc101-jboKf5S" width="16" height="16" /><img src="/wps/wcm/connect/public/b4735a21-b509-4f52-bd1f-89e5e84fea00/grayscale_sort_num_descending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-b4735a21-b509-4f52-bd1f-89e5e84fea00-jboJGOy" width="16" height="16" />).&nbsp; Ils peuvent aussi être triés en fonction du "Rapporteur du projet" ou de la "Commission" qui examine le projet.&nbsp; Chaque type de document dispose de ses propres filtres et tris.&nbsp; Les tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p class="textZone">Pour avoir plus d'informations sur un dossier précis, veuillez cliquer sur le numéro du dossier concerné.</p>
+<p class="textZone"=""="">Pour les documents évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>". </p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroProjetsPropositions"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 9 années.&nbsp; Les documents y sont organisés en fonction de leur type (p.ex.: "Projets de loi", "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", "Propositions de directives ou de règlements européens", "Directives", "Règlements européens", "Autres documents européens" ...)
+<p></p>
+<p class="textZone">Pour consulter les documents d'un type précis, p.ex. les "Projets de loi", vous devez sélectionner "Affichage des: Projets de loi".</p>
+<p class="textZone">Pour chaque type de document il est possible d'appliquer des filtres. Vous pouvez ainsi demander à ne voir que les "Projets de loi - En cours" ou les "Projets de loi - Evacués".&nbsp; Les filtres possibles changent en fonction du type de document de manière à être en cohérence avec la procédure applicable au document sélectionné.</p>
+<p class="textZone">Pour chaque type de document, il est possible d'appliquer un certain nombre de tris.&nbsp; Les "Projets de loi - En cours" peuvent ainsi être triés par ordre croissant ou décroissant du "Numéro du projet de loi" (<img src="/wps/wcm/connect/public/562efcab-0ee6-4c68-b006-1c2e6acdc101/sort_num_ascending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-562efcab-0ee6-4c68-b006-1c2e6acdc101-jboKf5S" width="16" height="16" /><img src="/wps/wcm/connect/public/b4735a21-b509-4f52-bd1f-89e5e84fea00/grayscale_sort_num_descending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-b4735a21-b509-4f52-bd1f-89e5e84fea00-jboJGOy" width="16" height="16" />).&nbsp; Ils peuvent aussi être triés en fonction du "Rapporteur du projet" ou de la "Commission" qui examine le projet.&nbsp; Chaque type de document dispose de ses propres filtres et tris.&nbsp; Les tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p class="textZone">Pour avoir plus d'informations sur un dossier précis, veuillez cliquer sur le numéro du dossier concerné.</p>
+<p class="textZone"=""="">Pour les documents évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>". </p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroProjetsReglement"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 9 années.&nbsp; Les documents y sont organisés en fonction de leur type (p.ex.: "Projets de loi", "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", "Propositions de directives ou de règlements européens", "Directives", "Règlements européens", "Autres documents européens" ...)
+<p></p>
+<p class="textZone">Pour consulter les documents d'un type précis, p.ex. les "Projets de loi", vous devez sélectionner "Affichage des: Projets de loi".</p>
+<p class="textZone">Pour chaque type de document il est possible d'appliquer des filtres. Vous pouvez ainsi demander à ne voir que les "Projets de loi - En cours" ou les "Projets de loi - Evacués".&nbsp; Les filtres possibles changent en fonction du type de document de manière à être en cohérence avec la procédure applicable au document sélectionné.</p>
+<p class="textZone">Pour chaque type de document, il est possible d'appliquer un certain nombre de tris.&nbsp; Les "Projets de loi - En cours" peuvent ainsi être triés par ordre croissant ou décroissant du "Numéro du projet de loi" (<img src="/wps/wcm/connect/public/562efcab-0ee6-4c68-b006-1c2e6acdc101/sort_num_ascending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-562efcab-0ee6-4c68-b006-1c2e6acdc101-jboKf5S" width="16" height="16" /><img src="/wps/wcm/connect/public/b4735a21-b509-4f52-bd1f-89e5e84fea00/grayscale_sort_num_descending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-b4735a21-b509-4f52-bd1f-89e5e84fea00-jboJGOy" width="16" height="16" />).&nbsp; Ils peuvent aussi être triés en fonction du "Rapporteur du projet" ou de la "Commission" qui examine le projet.&nbsp; Chaque type de document dispose de ses propres filtres et tris.&nbsp; Les tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p class="textZone">Pour avoir plus d'informations sur un dossier précis, veuillez cliquer sur le numéro du dossier concerné.</p>
+<p class="textZone" &nbsp;="">Pour les documents évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>". </p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroProjetsLoiTrans"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 9 années.&nbsp; Les documents y sont organisés en fonction de leur type (p.ex.: "Projets de loi", "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", "Propositions de directives ou de règlements européens", "Directives", "Règlements européens", "Autres documents européens"...)
+<p></p>
+<p class="textZone">Pour consulter les documents d'un type précis, p.ex. les "Projets de loi", vous devez sélectionner "Affichage des: Projets de loi".</p>
+<p class="textZone">Pour chaque type de document il est possible d'appliquer des filtres. Vous pouvez ainsi demander à ne voir que les "Projets de loi - En cours" ou les "Projets de loi - Evacués".&nbsp; Les filtres possibles changent en fonction du type de document de manière à être en cohérence avec la procédure applicable au document sélectionné.</p>
+<p class="textZone">Pour chaque type de document, il est possible d'appliquer un certain nombre de tris.&nbsp; Les "Projets de loi - En cours" peuvent ainsi être triés par ordre croissant ou décroissant du "Numéro du projet de loi" (<img src="/wps/wcm/connect/public/562efcab-0ee6-4c68-b006-1c2e6acdc101/sort_num_ascending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-562efcab-0ee6-4c68-b006-1c2e6acdc101-jboKf5S" width="16" height="16" /><img src="/wps/wcm/connect/public/b4735a21-b509-4f52-bd1f-89e5e84fea00/grayscale_sort_num_descending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-b4735a21-b509-4f52-bd1f-89e5e84fea00-jboJGOy" width="16" height="16" />).&nbsp; Ils peuvent aussi être triés en fonction du "Rapporteur du projet" ou de la "Commission" qui examine le projet.&nbsp; Chaque type de document dispose de ses propres filtres et tris.&nbsp; Les tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p class="textZone">Pour avoir plus d'informations sur un dossier précis, veuillez cliquer sur le numéro du dossier concerné.</p>
+<p class="textZone" &nbsp;="">Pour les documents évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>". </p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroRegTrans"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 9 années.&nbsp; Les documents y sont organisés en fonction de leur type (p.ex. "Projets de loi", "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", "Propositions de directives ou de règlements européens", "Directives", "Règlements européens", "Autres documents européens"...)
+<p></p>
+<p class="textZone">Pour consulter les documents d'un type précis, p.ex. les "Projets de loi", vous devez sélectionner "Affichage des: Projets de loi".</p>
+<p class="textZone">Pour chaque type de document il est possible d'appliquer des filtres. Vous pouvez ainsi demander à ne voir que les "Projets de loi - En cours" ou les "Projets de loi - Evacués".&nbsp; Les filtres possibles changent en fonction du type de document de manière à être en cohérence avec la procédure applicable au document sélectionné.</p>
+<p class="textZone">Pour chaque type de document, il est possible d'appliquer un certain nombre de tris.&nbsp; Les "Projets de loi - En cours" peuvent ainsi être triés par ordre croissant ou décroissant du "Numéro du projet de loi" (<img src="/wps/wcm/connect/public/562efcab-0ee6-4c68-b006-1c2e6acdc101/sort_num_ascending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-562efcab-0ee6-4c68-b006-1c2e6acdc101-jboKf5S" width="16" height="16" /><img src="/wps/wcm/connect/public/b4735a21-b509-4f52-bd1f-89e5e84fea00/grayscale_sort_num_descending.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-b4735a21-b509-4f52-bd1f-89e5e84fea00-jboJGOy" width="16" height="16" />).&nbsp; Ils peuvent aussi être triés en fonction du "Rapporteur du projet" ou de la "Commission" qui examine le projet.&nbsp; Chaque type de document dispose de ses propres filtres et tris.&nbsp; Les tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p class="textZone">Pour avoir plus d'informations sur un dossier précis, veuillez cliquer sur le numéro du dossier concerné.</p>
+<p class="textZone" &nbsp;="">Pour les documents évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d'archives</a>". </p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroQuestionsFilter"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 7 années. Les documents y sont organisés en fonction de leur type (p.ex. "Projets de loi", ''Propositions de loi'', "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", "Propositions de directives ou de règlements européens", "Directives", "Règlements européens", "Autres documents européens"...).
+<br />
+<p>Pour chaque type de document, il est possible d'appliquer des filtres adaptés. Les "Questions parlementaires" peuvent être filtrés en fonction de leur&nbsp;"Statut" (En cours ou Evacué), de l''Auteur''&nbsp;ou du ''Destinataire'' de la question.</p>
+<p>Il est aussi possible d'affiner chaque liste de questions en y appliquant un certain nombre de tris (par date, par numéro, ...). Ces tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p>Pour avoir plus d'informations sur une question&nbsp;précise, veuillez cliquer sur le numéro de la question concernée.</p>
+<p>Pour les questions évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d''archives</a>".</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroMRIDFilter"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter les documents en cours de procédure ou les documents évacués au cours des dernières 9 années. Les documents y sont organisés en fonction de leur type (p.ex. "Projets de loi", "Motions, Résolutions, Interpellations &amp; Débats", "Questions parlementaires", "Propositions de directives ou de règlements européens", "Directives", "Règlements européens", "Autres documents européens"...).
+<p>Pour chaque type de document, il est possible d'appliquer des filtres adaptés. Les "Motions, Résolutions, Interpellations et Débats" peuvent être filtrés en fonction de leur "Catégorie" (Tous, les Motions/Résolutions, les Interpellations, les Débats); leur éventuelle "Sous-catégorie" et leur "Statut" (En cours ou Evacué).</p>
+<p>Il est aussi possible d'affiner chaque liste de documents affichée en y appliquant un certain nombre de tris (par date, par numéro, ...). Ces tris sont activés par un click dans le 'radio button' (cercle à côté de la mention du filtre) concerné.</p>
+<p>Pour avoir plus d'informations sur un dossier précis, veuillez cliquer sur le numéro du dossier concerné.</p>
+<p>Pour les documents évacués depuis plus de 9 ans, veuillez utiliser la "<a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives">Recherche d''archives</a>".</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroEuro"> <p class="textZone"><br>
+La rubrique "Rôle des affaires" vous permet de consulter&nbsp;les documents en cours de procédure ou les documents évacués depuis juin 2014.&nbsp;
+<br />
+<p style="MARGIN: 0px">Dans la recherche du "Rôle des affaires" les documents sont organisés en fonction de 4 catégories: les "Dossiers parlementaires" (Projets de loi,&nbsp;Propositions de loi,&nbsp;Règlements grand-ducaux, Transpositions de directives, etc.); les "Questions&nbsp;parlementaires", les "Motions, Résolutions, Interpellations et Débats", les "Dossiers européens" (Propositions de directives ou de règlements européens, Directives, Règlements européens, et Autres documents européens).</p>
+<p style="MARGIN: 0px">
+  <br />
+</p>
+<p style="MARGIN: 0px">Vous pouvez effectuer une recherche en combinant la référence du document européen (ex: COM(2014)1) et un mot clé dans l'intitulé.</p>
+<p style="MARGIN: 0px">L'ensemble des Dossiers européens est accessible via le lien&nbsp; <a title="" target="" href="/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doDocpaEuroListPropDir">Accès à l'ensemble des Dossiers européens.</a>
+  <br />
+</p>
+<p class="textZone" style="MARGIN: 0px">
+  <br />
+</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroDetailDossier"> <p class="textZone"><br>
+Cette page vous donne accès à l'ensemble de l'information et aux documents publics relatifs à un dossier parlementaire, une question parlementaire ou une motion, interpellation ou un débat.
+<p>En cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/01ba8849-370e-4ce8-891e-c248fd8ad592/import1.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-01ba8849-370e-4ce8-891e-c248fd8ad592-jboIP4C" width="16" height="16" />Compiler le dossier complet"</span> le site mettra à votre disposition pour affichage ou téléchargement un PDF complet qui comprendra tant la page détail que l'ensemble des documents disponibles. Vous disposerez ainsi d'une copie PDF complète du dossier au moment de votre consultation.</p>
+<p>Vous pouvez aussi imprimer la page de détail sans les documents en cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/3d170330-95bf-4c0b-bf0d-458a5a1079d6/printer.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-3d170330-95bf-4c0b-bf0d-458a5a1079d6-jboJdHP" width="16" height="16" />Imprimer la page de détail"</span>.
+  <br />
+</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroDetailQuestion"> <p class="textZone"><br>
+Cette page vous donne accès à l'ensemble de l'information et aux documents publics relatifs à un dossier parlementaire, une question parlementaire ou une motion, interpellation ou un débat.
+<p>En cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/01ba8849-370e-4ce8-891e-c248fd8ad592/import1.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-01ba8849-370e-4ce8-891e-c248fd8ad592-jboIP4C" width="16" height="16" /></span><span style="FONT-STYLE: italic">Compiler le dossier complet"</span> le site mettra à votre disposition pour affichage ou téléchargement un PDF complet qui comprendra tant la page détail que l'ensemble des documents disponibles. Vous disposerez ainsi d'une copie PDF complète du dossier au moment de votre consultation.</p>
+<p>Vous pouvez aussi imprimer la page de détail sans les documents en cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/3d170330-95bf-4c0b-bf0d-458a5a1079d6/printer.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-3d170330-95bf-4c0b-bf0d-458a5a1079d6-jboJdHP" width="16" height="16" /></span><span style="FONT-STYLE: italic">Imprimer la page de détail"</span>.
+  <br />
+</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroDetailMRID"> <p class="textZone"><br>
+Cette page vous donne accès à l'ensemble de l'information et aux documents publics relatifs à un dossier parlementaire, une question parlementaire ou une motion, interpellation ou un débat.
+<p>En cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/01ba8849-370e-4ce8-891e-c248fd8ad592/import1.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-01ba8849-370e-4ce8-891e-c248fd8ad592-jboIP4C" width="16" height="16" /></span><span style="FONT-STYLE: italic"></span><span style="FONT-STYLE: italic">Compiler le dossier complet"</span> le site mettra à votre disposition pour affichage ou téléchargement un PDF complet qui comprendra tant la page détail que l'ensemble des documents disponibles. Vous disposerez ainsi d'une copie PDF complète du dossier au moment de votre consultation.</p>
+<p>Vous pouvez aussi imprimer la page de détail sans les documents en cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/3d170330-95bf-4c0b-bf0d-458a5a1079d6/printer.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-3d170330-95bf-4c0b-bf0d-458a5a1079d6-jboJdHP" width="16" height="16" /></span><span style="FONT-STYLE: italic">Imprimer la page de détail"</span>.
+  <br />
+</p>
+</p></div>
+
+<div style="display: block;" id="roleTextIntroDetaileuro"> <p class="textZone"><br>
+Cette page vous donne accès à l'ensemble de l'information et aux documents publics relatifs à un dossier parlementaire, une question parlementaire, une motion, interpellation ou un débat ou un dossier européen.
+<p>En cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/01ba8849-370e-4ce8-891e-c248fd8ad592/import1.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-01ba8849-370e-4ce8-891e-c248fd8ad592-jboIP4C" width="16" height="16" /></span><span style="FONT-STYLE: italic"></span><span style="FONT-STYLE: italic">Compiler le dossier complet"</span> le site mettra à votre disposition pour affichage ou téléchargement un PDF complet qui comprendra tant la page détail que l'ensemble des documents disponibles. Vous disposerez ainsi d'une copie PDF complète du dossier au moment de votre consultation.</p>Vous pouvez aussi imprimer la page de détail sans les documents en cliquant sur le lien "<span style="FONT-STYLE: italic"><img src="/wps/wcm/connect/public/3d170330-95bf-4c0b-bf0d-458a5a1079d6/printer.png?MOD=AJPERES&amp;ContentCache=NONE&amp;CACHE=NONE&amp;CACHEID=ROOTWORKSPACE.Z18_KHCC1240NODGE0AJHT6HU41083-3d170330-95bf-4c0b-bf0d-458a5a1079d6-jboJdHP" width="16" height="16" /></span><span style="FONT-STYLE: italic">Imprimer la page de détail"</span>.
+</p></div>
+
+<div style="display: block;" id="roleTextIntroResults"> <p class="textZone"><br>
+
+</p></div>
+
+<br><script type="text/javascript"> function 
+changeTextIntro(){        var listeType = new 
+Array(["roleTextIntroQuestions","7"],["roleTextIntroDossiers","roleTextIntroDossiers"],["roleTextIntroMRID","8"],["roleTextIntroResults","9"],["roleTextIntroProjets","1"],["roleTextIntroPropositions","2"],["roleTextIntroProjetsPropositions","3"],["roleTextIntroProjetsReglement","4"],["roleTextIntroProjetsLoiTrans","5"],["roleTextIntroRegTrans","6"],["roleTextIntroQuestionsFilter","0"],["roleTextIntroMRIDFilter","0"],["roleTextIntroDetailDossier","0"],["roleTextIntroDetailQuestion","0"],["roleTextIntroDetailMRID","0"]);   
+
+
+
+         var i = 0;            var testType = "1";            
+for(i=0;i<listeType.length;i++){                if (testType == 
+listeType[i][1]){                     
+document.getElementById(listeType[i][0]).style.display = "block";       
+         }                else{                    
+document.getElementById(listeType[i][0]).style.display = "none";        
+        }                 }                       }           
+changeTextIntro();</script>
+
+
+        
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+<div class="wpthemeClear"></div>
+	</div>
+</section></div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td style="width:100%;" valign="top">
+			<div class='component-control id-Z7_P1M8HC80MGGID0A3KK7GGL3024' ><span id="Z7_P1M8HC80MGGID0A3KK7GGL3024"></span><section class="ibmPortalControl wpthemeControl wpthemeHidden a11yRegionTarget" role="region" style="width:796px">
+	
+	
+
+	<div class="asa.portlet" id="asa.portlet.Z7_P1M8HC80MGGID0A3KK7GGL3024" style="display:none;">
+		<span class="asa.portlet.id">Z7_P1M8HC80MGGID0A3KK7GGL3024</span>
+
+		
+
+	</div>
+	
+<!-- start header markup -->
+	<header class="wpthemeControlHeader H2generic" role="banner" aria-label="Skin header">
+			<div class="wpthemeInner">
+			<h2 class="H2generic">
+				<!-- lm-dynamic-title node marks location for dynamic title support -->
+ 				<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel"><span lang="en" dir="ltr">Rôle des affaires</span></span>
+			</h2>
+			<div class="SitePublicCHDMenuActions"></div>
+			<a aria-haspopup="true" aria-label="Display content menu" role="button" href="javascript:;" class="wpthemeIcon wpthemeMenuFocus contextMenuInSkinIcon" style="display:none" tabindex="0">
+				<span title="Display content menu"><img aria-label="Display content menu" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></span>
+				<span class="wpthemeAltText">Component Action Menu</span>
+				<!-- start CAM template -->
+				<span class="wpthemeMenu" data-positioning-handler="horizontallyCenteredBelow">
+					<div class="wpthemeMenuBorder">
+						<!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+						<ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+							<li class="${css-class}" role="menuitem" tabindex="-1"><span
+								class="wpthemeMenuText">${title}</span></li>
+						</ul>
+						<div class="verticalMenuPointer pointer"></div>
+					</div> <!-- Template for loading -->
+					<div class="wpthemeMenuLoading wpthemeTemplateLoading">${loading}</div>
+					<!-- Template for submenu -->
+					<div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+						<div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+							<ul id="${submenu-id}" class="wpthemeMenuDropDown"
+								role="menu">
+								<li role="menuitem" tabindex="-1"></li>
+							</ul>
+						</div>
+					</div>
+				</span>
+				<!-- end CAM template -->
+			</a>
+			<a aria-haspopup="true" aria-label="Display portlet menu" role="button" href="javascript:;" class="wpthemeIcon wpthemeActionDisabled wpthemeMenuFocus" tabindex="0"
+                onclick="if (typeof wptheme != 'undefined') wptheme.contextMenu.init({ 'node': this, menuId: 'skinAction', jsonQuery: {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)}, params: {'alignment':'right'}});"
+				onmousemove="javascript:if (typeof i$ != 'undefined' &amp;&amp; typeof wptheme != 'undefined') { i$.removeClass(this,'wpthemeActionDisabled'); this.onmousemove = null; }"
+				onkeydown="javascript:if (typeof i$ != 'undefined' &amp;&amp; typeof wptheme != 'undefined') {if (event.keyCode ==13 || event.keyCode ==32 || event.keyCode==38 || event.keyCode ==40) {wptheme.contextMenu.init(this, 'skinAction', {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)}); return false;}}">
+				<span title="Display portlet menu"><img aria-label="Display portlet menu" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></span>
+				<span class="wpthemeAltText">Actions</span>
+			</a>
+		</div>
+	</header>
+	
+	<div class="wpthemeControlBody wpthemeClear"> <!-- lm:control dynamic spot injects markup of layout control -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+		<div style="position:relative; z-index: 1;">
+			<div class="analytics.overlay" ></div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">	
+	function displayPdfIcon() {
+		document.write('<img align="absmiddle" border="0" src="/wps/PA_RoleDesAffaires/images/acrobat.gif" hspace="3" vspace="3">');
+	};
+	function displayFolderIcon() {
+		document.write('<img align="absmiddle" border="0" src="/wps/PA_RoleDesAffaires/images/folder_into.gif" hspace="3" vspace="3">');
+	};
+	function displayWordIcon() {
+		document.write('<img align="absmiddle" border="0" src="/wps/PA_RoleDesAffaires/images/word.gif" hspace="3" vspace="3">');
+	};
+	function displayVideoIcon() {
+		document.write('<img align="absmiddle" border="0" src="/wps/PA_RoleDesAffaires/images/video_link.gif" hspace="3" vspace="3">');
+	};
+	function downloadResumeFile(resumePath) {
+		window.open("/wps/PA_RoleDesAffaires/FTSServletImpl/?path=" + resumePath); ///export/docpa2/1704_res_0.doc
+	}
+	function displayDocumentFile(docPath) {
+		window.open('/wps/PA_RoleDesAffaires/FTSByteServingServletImpl?path=' + docPath,'download','resizable=1, scrollbars=1, status=1');
+	}
+	function searchInArchives(description) {
+		var indice = description.slice(-2);
+		var displayWindow = window.open("https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Recherche/RechercheArchives?lqs_fmid=&lqs_dpid=7545_" + indice);
+	}
+	function openReportFileByUpdf(docUpdf) {
+		var displayWindow = window.open("/wps/PA_RoleDesAffaires/FTSShowAttachment?id=" + docUpdf);
+	}
+	function viewVideo(fichierRef, sequenceRef) {  
+		var param = "resizable = yes, scrollbars=yes, menubar = no, toolbar = yes, status = no, width = 1065, height = 900px, screenX = 10px, screenY = 10px, top = 10px, left = 10px";
+		crpglPopUp.newPopUp('https://www.chd.lu/ArchivePlayer', fichierRef, sequenceRef);
+	}
+
+	//Function permitting to call the servlet permitting to compile to full dossier
+	function compileCompleteDossier(url, userName, width, height, scroll) {
+		var windowWidth = (screen.width - width) / 2;
+		var windowHeigth = (screen.height - height) / 2;
+		winprops = 'height=' + height + ', width=' + width + ', top=' + windowHeigth + ', left=' + windowWidth + ', scrollbars=' + scroll + ', resizable=yes'
+		win = window.open("/wps/PA_RoleDesAffaires/" + url, userName, winprops)
+		if (parseInt(navigator.appVersion) >= 4) {
+			win.window.focus();
+		}
+	};
+	
+	// Print function
+	function printList(tagid) {
+		 var doc = document.getElementById(tagid).innerHTML;
+		 var pos = 1;
+		 while(pos != 0){
+		  doc = doc.replace('<a','<c');
+		  pos = doc.indexOf('<a', pos) + 1;
+		 }
+
+		var pos = 1;
+		while(pos != 0){
+		 doc = doc.replace('<A','<c');
+		 pos = doc.indexOf('<A', pos) + 1;
+		}
+
+		 var NewWindow = window.open('' ,'MyWindow');
+		 var print = '\<script\> window.print();\</script\>';
+		 var debatDetailsStyle=
+			'table.table td {padding:5px;}'+
+			'.table {width:100%;background-color:black;}'+
+			'.header {background-color:#EFC663;width:100%;padding:5px;margin-top:5px;clear:both;}'+
+			'.summary {background-color:#D9D9D9;width:100%;padding:5px;margin-top:5px;}'+
+			'.property {background-color:#D9D9D9;width:100%;padding:5px;margin-top:5px;}'+
+			'.panel_div {margin-top:5px;}'+
+			'.panel {width:100%;padding:5px;}'+
+			'.footer {width:100%;background-color:#D9D9D9;}'+
+			'.table_column_title {background-color:#EBEBEB;font-weight:bold;padding:5px;}'+
+			'.table_column_content {background-color:#F7F7F7;padding:5px;}'+
+			'.table_debat {width:100%;}'+
+			'.panel_title {text-decoration:underline;font-weight:bold;}'+
+			'.subject_header {font-weight:bold;}'+
+			'.document_link {font-weight:bold;padding-right:5;}'+
+			'.property_name {font-weight:bold;}'+
+			'.button_goback {width:16px;height:16px;}'+
+			'.previous_page {float: left;margin-bottom:5px;}'+
+			'.search_page {float: left;margin-left:10px;}'+
+			'.compile_page {float: left;margin-left:10px;}'+
+			'.print_page {float: left;margin-left:10px;}'+
+			'.header_option {float:right;}';
+		 NewWindow.document.write('\<html\>\<body\>\<style\>');
+		 NewWindow.document.write(debatDetailsStyle);
+		 NewWindow.document.write('\</style\>');
+		 NewWindow.document.write(doc);
+		 NewWindow.document.write('\</body\>\</html\>');
+		 NewWindow.document.write(print);
+		 NewWindow.document.close();
+	}
+	
+	function doDetails(library, id) {
+		if (library == "docpa") {
+			window.location = "/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doDocpaDetails&id=" + id;
+		}
+		if (library == "motion") {
+			window.location = "/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doMotionDetails&id=" + id;
+		}
+		if (library == "questpa") {
+			window.location = "/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doQuestpaDetails&id=" + id;
+		}
+		if (library == "docpaeuro") {
+			window.location = "/wps/portal/public/Accueil/TravailALaChambre/Recherche/RoleDesAffaires?action=doDocpaeuroDetails&id=" + id;
+		}
+	}
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/wps/PA_RoleDesAffaires/js/crpglPopUp.js"></script>
+
+<input type="hidden" id="introTextToDisplay" value="roleTextIntroDetailDossier" />
+
+	
+		<script type="text/javascript" src="/wps/PA_RoleDesAffaires/js/displayIntroductionText.js"></script>
+		<link type="text/css" rel="stylesheet" href="/wps/PA_RoleDesAffaires/css/debatDetailsPublic.css" />
+		<link type="text/css" rel="stylesheet" href="/wps/PA_RoleDesAffaires/css/commonPublic.css" />
+	
+	
+
+
+
+
+
+    
+        
+    
+
+
+
+    
+    
+    
+    
+
+
+<div class="mainDiv">
+	
+		<!-- Navigation -->
+		
+
+
+<div class="history">
+	
+		<img src="/wps/PA_RoleDesAffaires/images/history2.png"/>
+		
+			
+				7545
+			
+			
+			
+		
+	
+</div>
+		<br/>
+	
+	
+	<div class="previous_page">
+		
+        
+            
+                <a href="javascript:history.back()" style="text-decoration: none;">
+                    <img align="absmiddle" width="16" height="16" border="0" src="/wps/PA_RoleDesAffaires/images/undo.png" alt="Retour" />
+                </a>
+                <a href="javascript:history.back()" title="Retour">Retour</a>
+            
+            
+            
+        
+	</div>
+	
+	
+		
+	
+		<div class="header_option">
+			<table class="header_table_option">
+				<tbody>
+					<tr class="tr_table_option">
+	                    <td class="print_td">
+	                        <a href="https://www.facebook.com/dialog/feed?app_id=1465506583740229&name=7545&redirect_uri=https%3A%2F%2Fwww.chd.lu%2Fwps%2Fportal%2Fpublic%2FAccueil%2FTravailALaChambre%2FRecherche%2FRoleDesAffaires%3Faction%3DdoDocpaDetails%26id%3D7545&link=https%3A%2F%2Fwww.chd.lu%2Fwps%2Fportal%2Fpublic%2FAccueil%2FTravailALaChambre%2FRecherche%2FRoleDesAffaires%3Faction%3DdoDocpaDetails%26id%3D7545&description=Projet+de+loi+visant+%C3%A0+mettre+en+place+un+r%C3%A9gime+de+garantie+en+faveur+de+l%27%C3%A9conomie+luxembourgeoise+dans+le+cadre+de+la+pand%C3%A9mie+Covid-19&picture=https%3A%2F%2Fc2.staticflickr.com%2F4%2F3926%2F15216055065_f05a5eb5a3_b.jpg" target="_blank">
+	                            <img src="/wps/PA_RoleDesAffaires/images/facebook.png" title="Partager sur Facebook" height="20" align="absmiddle" border="0" hspace="3" vspace="3" width="20" />
+	                        </a>
+	                    </td>
+						<td class="print_td">
+							<a style="text-decoration:none" href="javascript:printList('DETAIL');">
+								<img align="absmiddle" hspace="3" vspace="3" width="16" height="16" border="0" src="/wps/PA_RoleDesAffaires/images/printer.png"/>
+							</a>
+							<a href="javascript:printList('DETAIL');">Imprimer la page de détail</a>
+						</td>
+						<td class="compile_td">
+							<!-- instruction c:if to prevent displaying on portal while functionnality is disabled -->
+							
+								
+								
+								
+								<a 	style="text-decoration:none" title="Compilation complète en vue d'une impression." href="javascript: return false;" 
+									onclick="javascript:compileCompleteDossier('CompilationServlet?library=1F0BD43752FD50E70B30964D56B5B7F7$DF2E9EE239C89660D9C5DD69B021BB9B&id=FEADD9075DBD61A0FE816B3B64DD6EDE$8E6CA8BCF8FE91D0B561A3A0E085B15D', '',800,600,'yes'); return false;">
+									<img align="absmiddle" hspace="3" vspace="3" width="16" height="16" border="0" src="/wps/PA_RoleDesAffaires/images/import1.png" />
+								</a>
+								<a 	title="Compilation du débat complet en vue d'une impression. <br/>Page de détail, PVs de réunion, documents parlementaires" href="#" 
+									onclick="javascript:compileCompleteDossier('CompilationServlet?library=1F0BD43752FD50E70B30964D56B5B7F7$DF2E9EE239C89660D9C5DD69B021BB9B&id=FEADD9075DBD61A0FE816B3B64DD6EDE$8E6CA8BCF8FE91D0B561A3A0E085B15D', '',800,600,'yes'); return false;">
+									Compiler le dossier complet
+								</a>
+							
+						</td>
+						<td class="search_td">
+							
+	                        <a href="p0/IZ7_P1M8HC80MGGID0A3KK7GGL3024=CZ6_20FVVF2GARU220AG5VSRI630K1=LA0=Elibrary!docpa=javax.portlet.action!lastSearch==/" style="text-decoration:none">
+	                            <img align="absmiddle" width="14" height="14" border="0" src="/wps/PA_RoleDesAffaires/images/find.png" alt="Rechercher" />
+	                        </a>
+	                        <a href="p0/IZ7_P1M8HC80MGGID0A3KK7GGL3024=CZ6_20FVVF2GARU220AG5VSRI630K1=LA0=Elibrary!docpa=javax.portlet.action!lastSearch==/" title="Rechercher">Rechercher</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<!-- Details -->
+		<div id="DETAIL">
+			<div class="header">
+				<div class="global_header">
+					<span class="subject_header">7545</span>
+					&nbsp;
+					-
+					&nbsp;
+					Projet de loi visant à mettre en place un régime de garantie en faveur de l'économie luxembourgeoise dans le cadre de la pandémie Covid-19
+				</div>
+			</div>
+			<!-- Summary file -->
+			
+				<div style="padding:5px; margin-top:5px">
+					
+					
+					<a href="javascript:return false;" onclick="javascript:downloadResumeFile('B5A805B09D40B651277AD7A5789802187347C404C81EF6A3073320C0A973AA18$B9A9E5290ACB031FF5B7BBDCCDBCE077')"><script>displayWordIcon();</script></a>
+					<b><a href="javascript:return false;" onclick="javascript:downloadResumeFile('B5A805B09D40B651277AD7A5789802187347C404C81EF6A3073320C0A973AA18$B9A9E5290ACB031FF5B7BBDCCDBCE077')">Voir le résumé du dossier</a></b>
+				</div>
+			
+			<!-- Properties -->
+			<div class="property">
+				<span class="property_name">Date de dépôt :</span>	
+				27-03-2020
+				<br/>		
+				<span class="property_name">Auteur :</span>
+				Monsieur Franz Fayot, Ministre de l'Économie, Monsieur Pierre Gramegna, Ministre des Finances
+				
+					<br/>
+					
+						
+							<span class="property_name">Date de l'avis du Conseil d'Etat :</span>
+						
+						
+						
+					10-04-2020
+				
+			</div>
+							
+			<!-- Tables -->
+			<div class="panel_div">
+				<!-- Events -->
+				
+					<div class="panel">
+					<br/>
+						<span class="panel_title">Evènement(s) :</span>
+						<br/>
+						<table class="table">
+							<tr class="table_column_title">
+								
+									<td>Date</td>
+								
+									<td>Description</td>
+								
+									<td>Liens</td>
+								
+							</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:12%;">27-03-2020</td>
+									<td style="width:64%;">Déposé</td>
+									<td style="width:24%;">
+										
+											
+												
+													
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+																
+																	<a href="#" onclick="javascript:displayDocumentFile('426265FE690A3A49B2A3B4887A3CB5CFCCAB6E8A233172F23DA4025DD8915A2DF34B2343EE940726F215F615E2DB7EF9$AFA85E61418C53C88874C7977088684E'); return false;" title="">
+																	Document 7545/00
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+										
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:12%;">30-03-2020</td>
+									<td style="width:64%;">Renvoyé en commission(s) : Commission de l'Economie, de la Protection des consommateurs et de l'Espace</td>
+									<td style="width:24%;">
+										
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:12%;">02-04-2020</td>
+									<td style="width:64%;">1) Avis de la Chambre de Commerce (30.3.2020)<br/>2) Avis de la Chambre des Métiers (30.3.2020)</td>
+									<td style="width:24%;">
+										
+											
+												
+													
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+																
+																	<a href="#" onclick="javascript:displayDocumentFile('39F8588CE698455F1E8595B08B17EE98C083BEA5A08EEF702B88BBA558461D77F4979A27E22530FB024B460879F8E157$B9DDD3F4942CF1B682B53FE1E92139BA'); return false;" title="">
+																	Document 7545/01
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+										
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:12%;">10-04-2020</td>
+									<td style="width:64%;">Avis du Conseil d'État (10.4.2020)</td>
+									<td style="width:24%;">
+										
+											
+												
+													
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+																
+																	<a href="#" onclick="javascript:displayDocumentFile('D54CCC3ABF62A2F6FC7B33A27209AB7295CD171DA1A9959F637D2543D6E750FFE67E7712E5DEFF57E2C2939E792C6DAB$F5EAD411C94AADC180BF9E85DCDA91C3'); return false;" title="">
+																	Document 7545/02
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+										
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:12%;">14-04-2020</td>
+									<td style="width:64%;">Nomination de rapporteur(s)<br/><br/>Rapporteur(s) : Monsieur André Bauler</td>
+									<td style="width:24%;">
+										
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:12%;">15-04-2020</td>
+									<td style="width:64%;">Rapport de commission(s) : Commission des Finances et du Budget<br/><br/>Rapporteur(s) : Monsieur André Bauler</td>
+									<td style="width:24%;">
+										
+											
+												
+													
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+																
+																	<a href="#" onclick="javascript:displayDocumentFile('3A56FA55FDAA5DA3403C31A8D2C71DC18E5141ABC6BB6D73833C19BBEB229F7512E7503AB62890A7A14DE605392EAA52$505C1AAC5F73357298FBA31497F600B1'); return false;" title="">
+																	Document 7545/03
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+										
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:12%;">15-04-2020</td>
+									<td style="width:64%;">Renvoyé en commission(s) : Commission des Finances et du Budget</td>
+									<td style="width:24%;">
+										
+									</td>
+								</tr>
+							
+						</table>
+						<br/>
+					</div>
+				
+				
+				<!-- Committee works -->
+				
+					<div class="panel">
+						<span class="panel_title">Travaux en commission :</span>
+						<br/>
+						
+							<br/>
+							<span class="property_name">
+								
+									
+									
+										Commission(s) :
+									
+								
+							</span>
+							Commission des Finances et du Budget
+						
+						
+							<br/>
+							<span class="property_name">Rapporteur :</span>
+							Monsieur André Bauler
+						
+						
+							<br/>
+							<span class="property_name">Date du rapport de commission :</span>
+							15-04-2020
+						
+						
+						<br/>
+						
+							<table class="table">
+								<tr class="table_column_title">
+									
+										<td>Date de réunion</td>
+									
+										<td>Commission</td>
+									
+										<td>PV</td>
+									
+										<td>Travail en commission</td>
+									
+								</tr>
+								
+									<tr class="table_column_content">
+										<td style="width:15%;">14-04-2020</td>
+										<td style="width:35%;">Commission de l'Economie, de la Protection des consommateurs et de l'Espace<br/>Commission des Finances et du Budget</td>
+										<td style="width:10%;">
+											
+												
+													
+														<script language='javascript'>displayPdfIcon();</script>
+															
+															
+															<a href="#" onclick="javascript:displayDocumentFile('8F489C269EAA5F6ED1AA1DB7C035599B7A9FA11A3F5D863190051406366CEB06E21EEA677F51A65600659FBD8B1DDF4C$14D24AEE26F3B69AAE3CE234D643D2F3'); return false;" title="PV de commission">
+															11
+														</a>
+													
+													
+												
+											<br/>
+										    
+												
+													
+														<script language='javascript'>displayPdfIcon();</script>
+															
+															
+															<a href="#" onclick="javascript:displayDocumentFile('558E621B5DF552CF66608211CA1BC05E6B848E88D5B0EFF7082DDE43DF79C5FC6AAD03B792AE9F04D998CD5099393F90$D36383C84DBE23E3CEC1D99B02098E2D'); return false;" title="PV de commission">
+															37
+														</a>
+													
+													
+												
+											<br/>
+										    
+										</td>
+										<td style="width:40%;">Désignation d'un rapporteur<br/>Présentation du projet de loi<br/>Examen de l'avis du Conseil d'Etat</td>
+									</tr>
+								
+									<tr class="table_column_content">
+										<td style="width:15%;">15-04-2020</td>
+										<td style="width:35%;">Commission des Finances et du Budget</td>
+										<td style="width:10%;">
+											
+												
+													
+														<script language='javascript'>displayPdfIcon();</script>
+															
+															
+															<a href="#" onclick="javascript:displayDocumentFile('FE149C56A7E62C269553900F81A91CFC81F620BBDBB6F92F88960C7E409A8ECE1B897C0E4FE9D96038D386E15ADACD57$6EBD7D3B1F4DE6B554B59EF0F4C605F5'); return false;" title="PV de commission">
+															38
+														</a>
+													
+													
+												
+											<br/>
+										    
+										</td>
+										<td style="width:40%;">Présentation et adoption d'un projet de rapport</td>
+									</tr>
+								
+							</table>
+						
+						<br/>
+					</div>
+				
+				
+				<!-- Public session works -->
+				
+					<div class="panel">
+						<span class="panel_title">Travaux en séance(s) publique(s) :</span>
+						<br/>
+						<table class="table">
+							<tr class="table_column_title">
+								
+									<td style="width:25%;">Date de la séance publique</td>
+								
+									<td style="width:25%;">Description</td>
+								
+									<td style="width:25%;">Intervenants</td>
+								
+									<td style="width:25%;">Liens</td>
+								
+							</tr>
+							
+								<tr class="table_column_content">
+									<td rowspan="32">
+										18-04-2020
+										<br/><br/>
+										Séance publique n°
+										31
+										<br/><br/>
+										Point d'ordre du jour n°
+										3
+										<br/><br/>
+										
+											<script>displayVideoIcon();</script>
+											<a href="javascript:viewVideo('2829', '144220');" class="nav-link">
+												Vidéo du point d'ordre du jour complet
+											</a>
+											<br/><br/>
+										
+										
+											
+												<script>displayPdfIcon();</script>
+												
+												
+												<a href="javascript:openReportFileByUpdf('D6AFAE169FCE702A102097AAE3FB7C0B$ACF2A20A5B4CBD762803F5908EE17739');" class="nav-link">
+													Compte-rendu de la séance									
+												</a>
+											
+											
+										
+									</td>
+									
+											
+												
+												<td>
+													7545 - Projet de loi visant à mettre en place un régime de garantie en faveur de l'économie luxembourgeoise dans le cadre de la pandémie Covid-19
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144220');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Rapport
+												</td>
+												<td>
+													Monsieur André Bauler, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144461');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discussion générale
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144462');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discours du groupe politique CSV
+												</td>
+												<td>
+													Monsieur Laurent Mosar, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144463');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Interruption
+												</td>
+												<td>
+													Monsieur Mars Di Bartolomeo, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144486');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Dépôt de l'amendement 1
+												</td>
+												<td>
+													Monsieur Laurent Mosar, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144487');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discours du groupe politique DP
+												</td>
+												<td>
+													Madame Simone Beissel, Députée
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144464');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discours du groupe politique LSAP
+												</td>
+												<td>
+													Monsieur Claude Haagen, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144465');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discours du groupe politique déi gréng
+												</td>
+												<td>
+													Monsieur Charles Margue, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144466');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discours de la sensibilité politique ADR
+												</td>
+												<td>
+													Monsieur Roy Reding, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144467');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discours de la sensibilité politique DÉI LÉNK
+												</td>
+												<td>
+													Monsieur Marc Baum, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144469');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Laurent Mosar, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144490');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Discours de la sensibilité politique Piraten
+												</td>
+												<td>
+													Monsieur Sven Clement, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144468');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Dépôt d'e l'amendement 2
+												</td>
+												<td>
+													Monsieur Sven Clement, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144491');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Claude Haagen, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144492');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Prise de position du Gouvernement
+												</td>
+												<td>
+													Monsieur Franz Fayot, Ministre de l'Économie
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144470');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Marc Baum, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144493');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Franz Fayot, Ministre de l'Économie
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144494');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Sven Clement, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144495');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Laurent Mosar, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144497');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Franz Fayot, Ministre de l'Économie
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144498');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Prise de position du Gouvernement
+												</td>
+												<td>
+													Monsieur Pierre Gramegna, Ministre des Finances
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144500');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Parole après ministre
+												</td>
+												<td>
+													Monsieur Laurent Mosar, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144501');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Pierre Gramegna, Ministre des Finances
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144502');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Vote sur l'amendement 1
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144503');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Vote sur l'amendement 2
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144504');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Vote sur article 6.2
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144505');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Vote sur l'article 6.3
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144506');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Vote sur l'ensemble du projet de loi
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144471');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Dispense du second vote constitutionnel
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144610');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Vote sur la motion
+												</td>
+												<td>
+													
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144507');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+											
+												
+													<tr class="table_column_content">
+												
+												<td>
+													Intervention
+												</td>
+												<td>
+													Monsieur Fernand Kartheiser, Député
+												</td>
+												<td>
+													
+														
+															<script>displayVideoIcon();</script>
+															<a href="javascript:viewVideo('2829', '144508');" class="nav-link">
+																Voir la vidéo
+															</a>
+														
+														
+													
+												</td>
+											</tr>
+										
+									
+								</tr>
+							
+						</table>
+						<br/>
+					</div>
+				
+				
+				<!-- Other available videos -->
+				
+					
+				<!-- Votes and other evacuation modes -->
+							
+					<div class="panel">
+						<span class="panel_title">Vote(s) / Autres modes d'évacuation :</span>
+						<table class="table">
+							<tr class="table_column_title">
+								
+									<td>Date</td>
+								
+									<td>Description de l'évènement</td>
+								
+									<td>Liens</td>
+								
+							</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:10%;">18-04-2020</td>
+									<td style="width:65%;">Premier vote constitutionnel (Vote Positif)<br/><br/>En séance publique n°31<br/><br/>Une demande de dispense du second vote a été introduite</td>
+									<td style="width:25%;">
+										
+											
+												
+													
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('9024D13A053C99F50E88B5568F6E747B8586C67AE861F5B6DBB3507EB82A0B9E0C8CA0DDA48BEE3E8A93DE0105F93F50$5FD5A13BC341A0072C740CF799A78100'); return false;" title="">
+																	Document annexe : Amendement n°1
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+												
+													
+														
+															<br /><br />
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('887645BE6E222415FF5BD72A388458C8CE77A1B7EAF4E05DF19B971DDD4B2AA02EA86CEE6184E150449297A9E6B67DDD$55E96C268A0DB942A30C5741BDB1F5BF'); return false;" title="">
+																	Document annexe : Amendement n°2
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+												
+													
+														
+															<br /><br />
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('1BCE8B6860D9E7D956A92C49E1CDC9E64CF7C8B9EBEFB3024B7E25141E6F3A49DA9B39F852768A6E8A32C5B06DA13CD3$C9B7499EDE2BC2E25619921489333570'); return false;" title="">
+																	Document annexe : Bulletin de vote - Vote sur l'amendement n°1
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+												
+													
+														
+															<br /><br />
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('88EBBE27C61DC1A449F708FDEB8CCEBA5B12A876F5A12915DF99B5B11EC498EA2D0D48C4DAF29E8F722FD9B28D23E5C8$0346663436A4CBE2F1A750E56F91D815'); return false;" title="">
+																	Document annexe : Bulletin de vote - Vote sur l'amendement n°2
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+												
+													
+														
+															<br /><br />
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('5D1E964B9DA6F325CC4700AE7DF1CA360E43C1697E055229A09B9E94F3147A3C65EA0D341A522A0FFF2E063966F6D1B5$08EF4E08CFE9B61D5C5216ED17964A1F'); return false;" title="">
+																	Document annexe : Bulletin de vote - Vote séparé sur l'article 6(2)
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+												
+													
+														
+															<br /><br />
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('A6EB6F7B43C4DB0B433DB8B122B95F5EC27868245F27B463525993A2EF7B8978CDB2BBC6E271D70C199EF82CCF66E6E8$352E3FD07BDD5AD9AE7EC9C84369BC1D'); return false;" title="">
+																	Document annexe : Bulletin de vote - Vote séparé sur l'article 6(3)
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+												
+													
+														
+															<br /><br />
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('951B6EF635A31FE431C4B2F4BF52B571C97DA6F71CA4C04D15D16763303BA7A0EE01D8082B5207341769C41B6B7FA6A2$995BFDA957CC3A08E6EA568FF3B031D1'); return false;" title="">
+																	Document annexe : Bulletin de vote - Vote sur le projet de loi
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+										
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:10%;">18-04-2020</td>
+									<td style="width:65%;">Dispense du second vote consitutionnel par le Conseil d'Etat (18-04-2020)<br/><br/>Evacué par dispense du second vote (18-04-2020)</td>
+									<td style="width:25%;">
+										
+											
+												
+													
+														
+														
+															
+																<script language='javascript'>displayPdfIcon();</script>
+																
+															
+																<a href="#" onclick="javascript:displayDocumentFile('66C1648CAB61F5D37C86B4282C066D666EEC09A921ECAB1F461E15EB1FE74781AFC0329E70CFB9E21E51143264AFBE72$EFA00D8B09F7C06BB07E9542930932FE'); return false;" title="">
+																	Document 7545/04
+																</a>												
+															
+															
+														
+													
+													
+												
+											
+										
+									</td>
+								</tr>
+							
+						</table>
+						<br/>
+					</div>
+				
+							
+				<!-- Generated folders -->
+					
+					<div class="panel">
+						<span class="panel_title">Dossiers engendrés :</span>
+						<table class="table">
+							<tr class="table_column_title">
+								
+									<td style="width:20%;">Intitulé</td>
+								
+									<td style="width:20%;">Auteur</td>
+								
+									<td style="width:20%;">Etat</td>
+								
+									<td style="width:20%;">Document</td>
+								
+									<td style="width:20%;">Dossier</td>
+								
+							</tr>
+							
+								<tr class="table_column_content">
+									<td>Motion : Analyse du nombre d'entreprises tombant sous la définition d'une « entreprise en difficulté » et examen de pistes potentielles permettant à l'État de leur proposer des aides supplémentaires à celles déjà existantes</td>
+									<td>Madame Lydie Polfer, Députée</td>
+									<td>Voté(e) accepté(e)</td>
+									<td>
+										
+										
+										<a href="#" onclick="javascript:displayDocumentFile('2A0B38E3E81018B794E0033BCD8996DDF0A3B2BC8D602710A796A7B5E51E6EBDF4AF09CD75D2BED32F5639F09EC2AB4D$ED2D5AFE3107FB2EE9B0D7D9A2BE7512'); return false;">
+											<script language='javascript'>displayPdfIcon();</script>Document écrit de dépot
+										</a>
+									</td>
+									<td>
+										<a href="javascript:doDetails('motion', '3174');"><script language='javascript'>displayFolderIcon();</script>Analyse du nombre d'entreprises tombant sous la définition d'une « entreprise en difficulté » et examen de pistes potentielles permettant à l'État de leur proposer des aides supplémentaires à celles déjà existantes</a>
+									</td>
+								</tr>
+							
+								<tr class="table_column_content">
+									<td>Motion : Analyse du nombre d'entreprises tombant sous la définition d'une « entreprise en difficulté » et examen de pistes potentielles permettant à l'État de leur proposer des aides supplémentaires à celles déjà existantes</td>
+									<td></td>
+									<td>Voté(e) accepté(e)</td>
+									<td>
+										
+										
+										<a href="#" onclick="javascript:displayDocumentFile(''); return false;">
+											
+										</a>
+									</td>
+									<td>
+										<a href="javascript:doDetails('motion', '3174');"><script language='javascript'>displayFolderIcon();</script>Analyse du nombre d'entreprises tombant sous la définition d'une « entreprise en difficulté » et examen de pistes potentielles permettant à l'État de leur proposer des aides supplémentaires à celles déjà existantes</a>
+									</td>
+								</tr>
+							
+						</table>
+						<br/>				
+					</div>		
+							
+				
+				<!-- Memorial A -->
+				
+					<div class="panel">
+						<span class="panel_title">Publication au Mémorial A :</span>
+						<table class="table">
+							<tr class="table_column_title">
+								
+									<td>Année du Mémorial</td>
+								
+									<td>Description</td>
+								
+									<td>Liens</td>
+								
+							</tr>
+							
+								<tr class="table_column_content">
+									<td style="width:10%;">2020</td>
+									<td style="width:65%;">Publié au Mémorial A n°307 en page 1</td>
+									<td style="width:25%;">
+										
+											
+												
+													
+													
+														
+															<script language='javascript'>displayPdfIcon();</script>
+															
+															
+															<a href="#" onclick="javascript:displayDocumentFile('840ACDF479AA6E07E03BF3AF7E0ADCAC8C39A2586984E68B689655530C7DA4A7791788A9F9999F9E970B3D60B7EBC146$32F20E1DBBADF94E1148AD5B6EFBE920'); return false;" title="">
+																Loi du 18 avril 2020
+															</a>												
+														
+														
+													
+												
+											
+										
+									</td>
+								</tr>
+							
+						</table>			
+					</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="previous_page">
+			
+	        
+	            
+	                <a href="javascript:history.back()" style="text-decoration: none;">
+	                    <img align="absmiddle" width="16" height="16" border="0" src="/wps/PA_RoleDesAffaires/images/undo.png" alt="Retour" />
+	                </a>
+	                <a href="javascript:history.back()" title="Retour">Retour</a>
+	            
+	            
+	            
+	        
+		</div>
+	
+</div><div class="wpthemeClear"></div>
+	</div>
+</section></div>
+		</td>
+	</tr>
+	 
+</table>
+				</div>
+			
+
+        
+            
+				<div class="contentType3Items">
+					
+
+
+
+
+
+
+
+
+
+<table class="layoutColumn ibmDndColumn component-container id-Z7_20FVVF2GARU220AG5VSRI630C4 layoutNode" cellpadding="0" cellspacing="0" role="presentation">
+	 
+</table>
+				</div>
+			
+
+        
+<div class="wpthemeClear"></div>
+					</div>
+					<!-- END OF CONTENT -->
+				</div>
+				<div id="contentType2"></div>
+
+			</div>
+			
+		</div>
+		<!--end main content-->
+		<div class="CB"></div>
+
+		<div id="footer">
+			<div class="centerContent">
+				
+			<ul>
+				
+					<li>
+						<a href="/wps/portal/public/Accueil/Actualite">
+							Actualité
+						</a>
+					</li>
+				
+					<li>
+						<a href="/wps/portal/public/Accueil/OrganisationEtFonctionnement">
+							Organisation et fonctionnement
+						</a>
+					</li>
+				
+					<li>
+						<a href="/wps/portal/public/Accueil/TravailALaChambre">
+							Travail à la Chambre
+						</a>
+					</li>
+				
+					<li>
+						<a href="/wps/portal/public/Accueil/ChambreEtUE">
+							La Chambre et l&#039;UE
+						</a>
+					</li>
+				
+					<li>
+						<a href="/wps/portal/public/Accueil/LaChambreEtVous">
+							La Chambre et vous
+						</a>
+					</li>
+				
+					<li>
+						<a href="https://www.chd.lu/wps/portal/public/Accueil/TravailALaChambre/Petitions/DepotPetition">
+							Pétitions
+						</a>
+					</li>
+				
+			</ul>
+		
+		<ul>
+			
+					<li><a href="/wps/portal/public/Accueil/LaChambreEtVous/PlanDuSite" > Plan du site
+					</a></li>
+				
+					<li><a href="/wps/portal/public/NavigationTransversale/NavigationTransversale2/ChambreAZ" 
+						onclick="return showNewWindow('/wps/portal/public/NavigationTransversale/NavigationTransversale2/ChambreAZ')"
+						> La Chambre de A...Z
+					</a></li>
+				
+					<li><a href="/wps/portal/public/Accueil/LaChambreEtVous/Contacts" > Contacts
+					</a></li>
+				
+		</ul>
+	
+	<ul class="copyright">
+		<li>© 2014 Chambre des Députés</li>
+		
+				<li><span onclick="return showNewWindow('/wps/portal/public/PopUpPages/NoticeLegale')">Notice légale</span></li>
+			
+			<li><span onclick="return showNewWindow('/wps/portal/public/PopUpPages/ProtectionDonnees')">Protection des données</span></li>
+		
+
+	</ul>
+	</div>
+		</div>
+	</div>
+	<!-- end frame -->
+
+	<!-- This is responsible for bootstrapping the configuration for the javascript framework. 
+        This is located here instead of the head section to improve client performance. -->
+	<div class="wpthemeComplementaryContent" id="wpthemeComplementaryContent" role="region"
+		aria-labelledby="wpthemeComplementaryContentText">
+		<span class="wpthemeAltText" id="wpthemeComplementaryContentText">Complementary Content</span> <script type="text/javascript" src="/wps/contenthandler/public/!ut/p/digest!S6MI3lpt2QWXTolp0Pq2Qw/mashup/ra:collection?themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fjavascript&amp;lm=1611561496991&amp;entry=wp_portal__0.0%3Aconfig_config_static&amp;entry=wcm_config__0.0%3Aconfig_config_static&amp;entry=wcm_inplaceEdit__0.0%3Aconfig_config_static"></script><script type="text/javascript">i$.merge({"ibmCfg":{"themeConfig":{"themeUniqueName":"SitePublicCHD","themeRootURI":"/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/war/SitePublicCHDStatic/themes/SitePublicCHD","themeWebAppBaseURI":"/SitePublicCHDDynamic/themes/html/dynamicSpots","themeWebDAVBaseURI":"war:SitePublicCHDStatic/themes/SitePublicCHD/","modulesWebAppBaseURI":"/wps/themeModules","commonResourcesRootURI":"/wps/contenthandler/public/!ut/p/digest!S6MI3lpt2QWXTolp0Pq2Qw/dav/fs-type1/common-resources","isRTL":false,"isPageRenderModeCSA":false,"portletOverridePageTitle":"Plan d&#039;accès","currentContentNodeOID":"Z6_20FVVF2GARU220AG5VSRI630K1","loadingImage":"css/images/loading.gif","dndSourceDefinitions":[{"id":"ibmDndColumn","object":"com.ibm.pb.dnd.layout.LayoutColumnSource","orientation":"vertical"},{"id":"ibmDndRow","object":"com.ibm.pb.dnd.layout.LayoutRowSource","orientation":"horizontal"}],"categorySources":["system/WebContentCategory.json,label:shelf_socialCategory"],"styleSources":[],"layoutSources":[]},"portalConfig":{"locale":"en","portalURI":"/wps/portal","contentHandlerURI":"/wps/contenthandler/public/!ut/p/digest!Tw7i-7txMNhZrkq7J7c7rA/","pocURI":"/wps/portal/public/!ut/p/z0/0wcA1NLTeQ!!/","isVirtualPortal":true,"canImpersonate":false,"themeRootURI":"/SitePublicCHDDynamic/themes/html/dynamicSpots","parentPageID":"Z6_D2DVRI4208C920IGQLKC150GS3","currentPageOID":"Z6_20FVVF2GARU220AG5VSRI630K1","canAnonymousUserViewCurrentPage":true,"bootstrapState":"&lt;?xml version=&#034;1.0&#034; encoding=&#034;UTF-8&#034;?&gt;&lt;root xmlns=&#034;http://www.ibm.com/xmlns/prod/websphere/portal/v6.1/portal-state&#034;&gt;&lt;state type=&#034;navigational&#034;&gt;&lt;selection selection-node=&#034;Z6_20FVVF2GARU220AG5VSRI630K1&#034;&gt;&lt;mapping src=&#034;Z6_00000000000000A0BR2B300GO2&#034; dst=&#034;Z6_20FVVF2GARU220AG5VSRI630K1&#034;/&gt;&lt;mapping src=&#034;Z6_000000000000000000000000A0&#034; dst=&#034;Z6_20FVVF2GARU220AG5VSRI630K1&#034;/&gt;&lt;mapping src=&#034;Z6_20FVVF2GARU220AG5VSRI630K1&#034; dst=&#034;Z6_000000000000000000000000A0&#034;/&gt;&lt;/selection&gt;&lt;expansions&gt;&lt;node id=&#034;Z6_D2DVRI4208C920IGQLKC150GS3&#034;/&gt;&lt;node id=&#034;Z6_D2DVRI420G7Q402JEJ7USN3G96&#034;/&gt;&lt;node id=&#034;Z6_00000000000000A0BR2B300GO2&#034;/&gt;&lt;node id=&#034;Z6_000000000000000000000000A0&#034;/&gt;&lt;/expansions&gt;&lt;/state&gt;&lt;/root&gt;","isUserLoggedIn":false,"currentUser":"anonymous portal user","currentUserOID":"","aggregatedStyle":null,"isCurrentPageEditable":true,"wcmPageMetadata":{"contentRoot":null,"sharingScope":null},"projectUUID":null},"userName":""},"com_ibm_theme_capabilities":{"wp_toolbar_viewframe_validator":"0.0","toolbar":"8.5","highContrast":"1.0","wp_theme_portal_85":"0.0","wp_client_ext":"0.0","wp_oob_sample_styles":"0.0","wp_a11y":"0.0","wp_custom_page_style":"0.0","wp_simple_contextmenu_main":"0.0","wp_toolbar_informationmode":"0.0","SitePublicCHDActions":"0.0","wp_client_tracing":"0.0","wp_toolbar85":"0.0","wp_theme_utils":"0.0","wp_toolbar_common":"0.0","photon.dom":"1.0","wp_dynamicContentSpots_sitePublicCHD":"0.0","wp_toolbar_sitepreview_menuactions":"0.0","wp_dialog_draggable":"0.0","getting_started_module":"0.0","analytics_aggregator":"8.0","wp_theme_skin_region":"0.0","wp_toolbar_common_actionbar":"0.0","wp_simple_contextmenu_css":"0.0","hasBaseURL":"true","wp_client_logging":"0.0","wp_portal":"0.0","wp_analytics_aggregator":"0.0","wp_ic4_wai_resources":"0.0","wp_toolbar_contextmenu":"0.0","wp_toolbar_logo":"0.0","wp_toolbar_menuactions":"0.0","wp_layout_windowstates":"0.0","wp_dialog_css":"0.0","wp_simple_contextmenu_ext":"0.0","wp_high_contrast":"0.0","wp_photon_dom":"0.0","wp_simple_contextmenu_templates":"0.0","wp_state_page_modes":"0.0","wp_toolbar_sitepreview":"0.0","wp_toolbar_projectmenu":"0.0","wp_toolbar_actionbar":"0.0","wp_searchbar":"0.0","wp_toolbar_moremenu":"0.0","wp_dialog_main":"0.0","wp_modules":"0.0","wp_hiddenpages":"0.0","wp_client_main":"0.0","wp_theme_menus":"0.0","wp_status_bar":"0.0","wp_hiddencontent":"0.0","wp_theme_portal_edit_85":"0.0","wp_portlet_css":"0.0","wp_toolbar_utils":"0.0","a11y":"1.0","wp_toolbar_host_view":"0.0","wp_dialog_util":"0.0","wp_state_page":"0.0","simple-contextmenu":"1.1","modules":"0.1","wp_simple_contextmenu_js":"0.0"},"com_ibm_device_class":[]});ibmCfg.portalConfig.bootstrapState=(ibmCfg.portalConfig.bootstrapState||"").replace(/&lt;/gm, '<').replace(/&gt;/gm, '>').replace(/&amp;/gm, '&').replace(/&#039;/gm, "'").replace(/&#034;/gm, '"');i$.merge({"ibmCfg":{"portalConfig":{"asaConfig":{"canViewAsaReports":"false","canViewAsaSitePromotions":"false","canCreateAsaSitePromotions":"false","canDeleteAsaSitePromotions":"false","reportConfig":{"scopes":[]}}}}});i$.merge({"ibmCfg":{"portalConfig":{"isShowHiddenPages":false}}});</script><script type="text/javascript" src="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/mashup/ra:collection?themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fjavascript&amp;lm=1607596930000&amp;entry=wp_toolbar_utils__0.0%3Aconfig_js&amp;entry=wp_toolbar_menuactions__0.0%3Aconfig_js&amp;entry=wp_simple_contextmenu_js__0.0%3Aconfig_js&amp;entry=wp_simple_contextmenu_ext__0.0%3Aconfig_js&amp;entry=wp_toolbar_actionbar__0.0%3Aconfig_js&amp;entry=wp_high_contrast__0.0%3Aconfig_js&amp;entry=wp_state_page_modes__0.0%3Aconfig_js&amp;entry=wp_dialog_main__0.0%3Aconfig_js&amp;entry=wp_status_bar__0.0%3Aconfig_js&amp;entry=wp_ic4_wai_resources__0.0%3Aconfig_js&amp;entry=SitePublicCHDActions__0.0%3Aconfig_js&amp;entry=getting_started_module__0.0%3Aconfig_js&amp;entry=wp_toolbar_projectmenu__0.0%3Aconfig_js&amp;entry=wp_toolbar_sitepreview_menuactions__0.0%3Aconfig_js&amp;entry=wp_toolbar_contextmenu__0.0%3Aconfig_js&amp;entry=wp_toolbar_sitepreview__0.0%3Aconfig_js&amp;entry=wp_theme_skin_region__0.0%3Aconfig_js"></script><a rel="alternate" id="config_js_deferred" href="/wps/contenthandler/public/!ut/p/digest!IRrY8ygKwtX4OyG05o7nuA/mashup/ra:collection?themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fjavascript&amp;lm=1611561497000&amp;entry=wp_portal_ui_utils__0.0%3Aconfig_js&amp;entry=wp_federated_documents_picker__0.0%3Aconfig_js&amp;entry=wp_liveobject_framework_core__0.0%3Aconfig_js&amp;entry=wp_skin_cam__0.0%3Aconfig_js&amp;entry=wp_dnd_main__0.0%3Aconfig_js&amp;entry=wp_contextmenu_config_lof__0.0%3Aconfig_js&amp;entry=wp_contextmenu_js__0.0%3Aconfig_js&amp;entry=wp_content_targeting_cam__0.0%3Aconfig_js&amp;entry=wp_analytics_tags__0.0%3Aconfig_js&amp;entry=wp_movecontrols__0.0%3Aconfig_js&amp;entry=wp_toolbar_controlactions__0.0%3Aconfig_js&amp;deferred=true" style="display:none"></a><span id="simpleMenuTemplate" class="wpthemeMenuLeft">
+    <div class="wpthemeMenuBorder">
+        <div class="wpthemeMenuNotchBorder"></div>
+        <!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+        <ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+            <li class="${css-class}" role="menuitem" tabindex="-1"><span class="wpthemeMenuText">${title}</span>${badge}</li>
+        </ul>
+    </div>
+    <!-- Template for loading -->
+    <div class="wpthemeMenuLoading wpthemeMenuLoadingText wpthemeTemplateLoading">${loading}</div>
+    <!-- Template for submenu -->
+    <div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+        <div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+            <ul id="${submenu-id}" class="wpthemeMenuDropDown" role="menu"><li role="menuitem" tabindex="-1"></li></ul>
+        </div>
+    </div>
+</span><a rel="alternate" id="config_markup_deferred" href="/wps/contenthandler/public/!ut/p/digest!LqLnIPfETdXYPDI9fo-NCg/mashup/ra:collection?themeID=ZJ_D2DVRI420OM0202NH1MVQF20G1&amp;locale=en&amp;mime-type=text%2Fplain&amp;entry=wp_skin_cam__0.0%3Aconfig_markup&amp;entry=wp_dnd_main__0.0%3Aconfig_markup&amp;entry=wp_contextmenu_templates__0.0%3Aconfig_markup&amp;deferred=true" style="display:none"></a></div>
+	
+</body>
+</html>

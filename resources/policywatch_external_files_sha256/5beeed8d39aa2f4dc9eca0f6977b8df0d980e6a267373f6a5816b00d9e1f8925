@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="sl-SI">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="sl-SI">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="sl-SI" class="no-js">
+<!--<![endif]-->
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="profile"  href="https://gmpg.org/xfn/11" />
+  <link rel="pingback" href="http://sindikat-pergam.si/xmlrpc.php" />
+  <!-- scripts for IE8 and less  -->
+  <!--[if lt IE 9]>
+    <script src="http://sindikat-pergam.si/wp-content/themes/customizr/assets/front/js/libs/html5.js"></script>
+  <![endif]-->
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Strani ni mogoče najti</title>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Vir" href="http://sindikat-pergam.si/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Vir komentarjev" href="http://sindikat-pergam.si/comments/feed/" />
+<link rel="alternate" type="text/calendar" title=" &raquo; iCal Feed" href="http://sindikat-pergam.si/events/?ical=1" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/sindikat-pergam.si\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='http://sindikat-pergam.si/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-tooltip-css'  href='http://sindikat-pergam.si/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://sindikat-pergam.si/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='awsm-ead-public-css'  href='http://sindikat-pergam.si/wp-content/plugins/embed-any-document/css/embed-public.min.css?ver=2.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://sindikat-pergam.si/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.4' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='customizr-main-css'  href='http://sindikat-pergam.si/wp-content/themes/customizr/assets/front/css/style.min.css?ver=4.3.1' type='text/css' media='all' />
+<style id='customizr-main-inline-css' type='text/css'>
+::-moz-selection{background-color:#005a87}::selection{background-color:#005a87}a,.btn-skin:active,.btn-skin:focus,.btn-skin:hover,.btn-skin.inverted,.grid-container__classic .post-type__icon,.post-type__icon:hover .icn-format,.grid-container__classic .post-type__icon:hover .icn-format,[class*='grid-container__'] .entry-title a.czr-title:hover,input[type=checkbox]:checked::before{color:#005a87}.czr-css-loader > div ,.btn-skin,.btn-skin:active,.btn-skin:focus,.btn-skin:hover,.btn-skin-h-dark,.btn-skin-h-dark.inverted:active,.btn-skin-h-dark.inverted:focus,.btn-skin-h-dark.inverted:hover{border-color:#005a87}.tc-header.border-top{border-top-color:#005a87}[class*='grid-container__'] .entry-title a:hover::after,.grid-container__classic .post-type__icon,.btn-skin,.btn-skin.inverted:active,.btn-skin.inverted:focus,.btn-skin.inverted:hover,.btn-skin-h-dark,.btn-skin-h-dark.inverted:active,.btn-skin-h-dark.inverted:focus,.btn-skin-h-dark.inverted:hover,.sidebar .widget-title::after,input[type=radio]:checked::before{background-color:#005a87}.btn-skin-light:active,.btn-skin-light:focus,.btn-skin-light:hover,.btn-skin-light.inverted{color:#008dd4}input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']):focus,textarea:focus,.btn-skin-light,.btn-skin-light.inverted,.btn-skin-light:active,.btn-skin-light:focus,.btn-skin-light:hover,.btn-skin-light.inverted:active,.btn-skin-light.inverted:focus,.btn-skin-light.inverted:hover{border-color:#008dd4}.btn-skin-light,.btn-skin-light.inverted:active,.btn-skin-light.inverted:focus,.btn-skin-light.inverted:hover{background-color:#008dd4}.btn-skin-lightest:active,.btn-skin-lightest:focus,.btn-skin-lightest:hover,.btn-skin-lightest.inverted{color:#009eed}.btn-skin-lightest,.btn-skin-lightest.inverted,.btn-skin-lightest:active,.btn-skin-lightest:focus,.btn-skin-lightest:hover,.btn-skin-lightest.inverted:active,.btn-skin-lightest.inverted:focus,.btn-skin-lightest.inverted:hover{border-color:#009eed}.btn-skin-lightest,.btn-skin-lightest.inverted:active,.btn-skin-lightest.inverted:focus,.btn-skin-lightest.inverted:hover{background-color:#009eed}.pagination,a:hover,a:focus,a:active,.btn-skin-dark:active,.btn-skin-dark:focus,.btn-skin-dark:hover,.btn-skin-dark.inverted,.btn-skin-dark-oh:active,.btn-skin-dark-oh:focus,.btn-skin-dark-oh:hover,.post-info a:not(.btn):hover,.grid-container__classic .post-type__icon .icn-format,[class*='grid-container__'] .hover .entry-title a,.widget-area a:not(.btn):hover,a.czr-format-link:hover,.format-link.hover a.czr-format-link,button[type=submit]:hover,button[type=submit]:active,button[type=submit]:focus,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus,.tabs .nav-link:hover,.tabs .nav-link.active,.tabs .nav-link.active:hover,.tabs .nav-link.active:focus{color:#00314a}.grid-container__classic.tc-grid-border .grid__item,.btn-skin-dark,.btn-skin-dark.inverted,button[type=submit],input[type=submit],.btn-skin-dark:active,.btn-skin-dark:focus,.btn-skin-dark:hover,.btn-skin-dark.inverted:active,.btn-skin-dark.inverted:focus,.btn-skin-dark.inverted:hover,.btn-skin-h-dark:active,.btn-skin-h-dark:focus,.btn-skin-h-dark:hover,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-dark-oh:active,.btn-skin-dark-oh:focus,.btn-skin-dark-oh:hover,.btn-skin-dark-oh.inverted:active,.btn-skin-dark-oh.inverted:focus,.btn-skin-dark-oh.inverted:hover,button[type=submit]:hover,button[type=submit]:active,button[type=submit]:focus,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus{border-color:#00314a}.btn-skin-dark,.btn-skin-dark.inverted:active,.btn-skin-dark.inverted:focus,.btn-skin-dark.inverted:hover,.btn-skin-h-dark:active,.btn-skin-h-dark:focus,.btn-skin-h-dark:hover,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-dark-oh.inverted:active,.btn-skin-dark-oh.inverted:focus,.btn-skin-dark-oh.inverted:hover,.grid-container__classic .post-type__icon:hover,button[type=submit],input[type=submit],.czr-link-hover-underline .widgets-list-layout-links a:not(.btn)::before,.czr-link-hover-underline .widget_archive a:not(.btn)::before,.czr-link-hover-underline .widget_nav_menu a:not(.btn)::before,.czr-link-hover-underline .widget_rss ul a:not(.btn)::before,.czr-link-hover-underline .widget_recent_entries a:not(.btn)::before,.czr-link-hover-underline .widget_categories a:not(.btn)::before,.czr-link-hover-underline .widget_meta a:not(.btn)::before,.czr-link-hover-underline .widget_recent_comments a:not(.btn)::before,.czr-link-hover-underline .widget_pages a:not(.btn)::before,.czr-link-hover-underline .widget_calendar a:not(.btn)::before,[class*='grid-container__'] .hover .entry-title a::after,a.czr-format-link::before,.comment-author a::before,.comment-link::before,.tabs .nav-link.active::before{background-color:#00314a}.btn-skin-dark-shaded:active,.btn-skin-dark-shaded:focus,.btn-skin-dark-shaded:hover,.btn-skin-dark-shaded.inverted{background-color:rgba(0,49,74,0.2)}.btn-skin-dark-shaded,.btn-skin-dark-shaded.inverted:active,.btn-skin-dark-shaded.inverted:focus,.btn-skin-dark-shaded.inverted:hover{background-color:rgba(0,49,74,0.8)}.tc-header,#tc-sn .tc-sn-inner,.czr-overlay,.add-menu-button,.tc-header .socials a,.tc-header .socials a:focus,.tc-header .socials a:active,.nav__utils,.nav__utils a,.nav__utils a:focus,.nav__utils a:active,.header-contact__info a,.header-contact__info a:focus,.header-contact__info a:active,.czr-overlay a:hover,.dropdown-menu,.tc-header .navbar-brand-sitename,[class*=nav__menu] .nav__link,[class*=nav__menu] .nav__link-wrapper .caret__dropdown-toggler,[class*=nav__menu] .dropdown-menu .nav__link,[class*=nav__menu] .dropdown-item .nav__link:hover,.tc-header form.czr-form label,.czr-overlay form.czr-form label,.tc-header .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.tc-header .czr-form textarea,.tc-header .czr-form .form-control,.czr-overlay .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.czr-overlay .czr-form textarea,.czr-overlay .czr-form .form-control,.tc-header h1,.tc-header h2,.tc-header h3,.tc-header h4,.tc-header h5,.tc-header h6{color:#ffffff}.tc-header .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.tc-header .czr-form textarea,.tc-header .czr-form .form-control,.czr-overlay .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.czr-overlay .czr-form textarea,.czr-overlay .czr-form .form-control{border-color:#ffffff}.ham__toggler-span-wrapper .line,[class*=nav__menu] .nav__title::before{background-color:#ffffff}.header-tagline,[class*=nav__menu] .nav__link:hover,[class*=nav__menu] .nav__link-wrapper .caret__dropdown-toggler:hover,[class*=nav__menu] .show:not(.dropdown-item) > .nav__link,[class*=nav__menu] .show:not(.dropdown-item) > .nav__link-wrapper .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] li:not(.dropdown-item).current-active > .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] li:not(.dropdown-item).current-active > .nav__link-wrapper .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] .current-menu-item > .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] .current-menu-item > .nav__link-wrapper .nav__link,[class*=nav__menu] .dropdown-item .nav__link,.czr-overlay a,.tc-header .socials a:hover,.nav__utils a:hover,.czr-highlight-contextual-menu-items .nav__utils a.current-active,.header-contact__info a:hover,.tc-header .czr-form .form-group.in-focus label,.czr-overlay .czr-form .form-group.in-focus label{color:rgba(255,255,255,0.7)}.nav__utils .ham-toggler-menu.czr-collapsed:hover .line{background-color:rgba(255,255,255,0.7)}.topbar-navbar__wrapper,.dropdown-item:not(:last-of-type){border-color:rgba(255,255,255,0.09)}.tc-header{border-bottom-color:rgba(255,255,255,0.09)}#tc-sn{outline-color:rgba(255,255,255,0.09)}.mobile-nav__container,.header-search__container,.mobile-nav__nav,.vertical-nav > li:not(:last-of-type){border-color:rgba(255,255,255,0.075)}.tc-header,#tc-sn .tc-sn-inner,.dropdown-menu,.dropdown-item:active,.dropdown-item:focus,.dropdown-item:hover{background-color:#0069a6}.sticky-transparent.is-sticky .mobile-sticky,.sticky-transparent.is-sticky .desktop-sticky,.sticky-transparent.is-sticky .mobile-nav__nav,.header-transparent:not(.is-sticky) .mobile-nav__nav,.header-transparent:not(.is-sticky) .dropdown-menu{background-color:rgba(0,105,166,0.9)}.czr-overlay{background-color:rgba(0,105,166,0.98)}.dropdown-item:before,.vertical-nav .caret__dropdown-toggler{background-color:rgba(255,150,89,0.045)}
+              body {
+                font-size : 0.81rem;
+                line-height : 1.5em;
+              }
+
+.tc-header.border-top { border-top-width: 5px; border-top-style: solid }
+#czr-push-footer { display: none; visibility: hidden; }
+        .czr-sticky-footer #czr-push-footer.sticky-footer-enabled { display: block; }
+        
+</style>
+<link rel='stylesheet' id='customizr-style-css'  href='http://sindikat-pergam.si/wp-content/themes/customizr-child/style.css?ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.4' id='tp-tools-js'></script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.4' id='revmin-js'></script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-content/themes/customizr/assets/front/js/libs/modernizr.min.js?ver=4.3.1' id='modernizr-js'></script>
+<script src='http://sindikat-pergam.si/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js'></script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script src='http://sindikat-pergam.si/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js'></script>
+<script type='text/javascript' id='tc-scripts-js-extra'>
+/* <![CDATA[ */
+var CZRParams = {"assetsPath":"http:\/\/sindikat-pergam.si\/wp-content\/themes\/customizr\/assets\/front\/","mainScriptUrl":"http:\/\/sindikat-pergam.si\/wp-content\/themes\/customizr\/assets\/front\/js\/tc-scripts.min.js?4.3.1","deferFontAwesome":"1","fontAwesomeUrl":"http:\/\/sindikat-pergam.si\/wp-content\/themes\/customizr\/assets\/shared\/fonts\/fa\/css\/fontawesome-all.min.css?4.3.1","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":"http:\/\/sindikat-pergam.si\/wp-admin\/admin-ajax.php","ajaxUrl":"http:\/\/sindikat-pergam.si\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"676372db77"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Permanently dismiss"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}},"preloadGfonts":"1","googleFonts":"Source+Sans+Pro"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-content/themes/customizr/assets/front/js/tc-scripts.min.js?ver=4.3.1' id='tc-scripts-js' defer></script>
+<link rel="https://api.w.org/" href="http://sindikat-pergam.si/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sindikat-pergam.si/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://sindikat-pergam.si/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.3" />
+<script src="https://www.google.com/recaptcha/api.js?hl=sl_SI" async defer></script>
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://sindikat-pergam.si"><link rel="https://theeventscalendar.com/" href="http://sindikat-pergam.si/wp-json/tribe/events/v1/" /><meta name="generator" content="Powered by Slider Revolution 5.4.7.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="http://sindikat-pergam.si/wp-content/uploads/2020/09/cropped-logo-ikona-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://sindikat-pergam.si/wp-content/uploads/2020/09/cropped-logo-ikona-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://sindikat-pergam.si/wp-content/uploads/2020/09/cropped-logo-ikona-1-180x180.png" />
+<meta name="msapplication-TileImage" content="http://sindikat-pergam.si/wp-content/uploads/2020/09/cropped-logo-ikona-1-270x270.png" />
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			.fpnews_content {
+	padding: 25px;
+	padding-top: 0px;
+	min-height: 160px;
+}
+.fpnews_content h2 {
+	font-size: 22px;
+}
+.piclink {
+	width: 100%;
+	height: 15em;
+	display: block;
+	background-size: cover;
+	background-position: center center;
+}
+.fp_icons {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+.czr-credits {
+	display: none;
+}
+.fp_icons img {
+	margin: 15px;
+}
+body .pag-item a {
+	color: #00314A;
+}
+body .pag-item {
+	font-size: 18px;
+}
+.meta-nav {
+	margin-top: 10px;
+}
+.nav-dir a span {
+		color: #00314A !important;
+}
+.home-center {
+	text-align: center;
+	padding-bottom: 20px;
+}
+@media(min-width: 970px) {
+	#main-menu {
+		padding-right: 80px;
+	}
+}		</style>
+		</head>
+
+  <body class="error404 wp-embed-responsive tribe-no-js czr-link-hover-underline header-skin-custom footer-skin-dark tc-center-images czr-full-layout czr-sticky-footer">
+          <a class="screen-reader-text skip-link" href="#content">Skoči na vsebino</a>
+    
+    
+    <div id="tc-page-wrap" class="">
+
+      <header class="tpnav-header__header tc-header sl-logo_left sticky-transparent border-top czr-submenu-fade czr-submenu-move" role="banner" >
+                    <div class="primary-navbar__wrapper d-none d-lg-block has-horizontal-menu desktop-sticky" >
+  <div class="container">
+    <div class="row align-items-center flex-row primary-navbar__row">
+      <div class="branding__container col col-auto" >
+  <div class="branding align-items-center flex-column ">
+    <div class="branding-row d-flex align-self-start flex-row align-items-center">
+      <div class="navbar-brand col-auto " >
+  <a class="navbar-brand-sitelogo" href="http://sindikat-pergam.si/"  aria-label=" | " >
+    <img src="http://sindikat-pergam.si/wp-content/uploads/2018/06/Logo-Pergam-na-modri-vektor.svg" alt="Nazaj Domov" class="" data-no-retina>  </a>
+</div>
+      </div>
+      </div>
+</div>
+      <div class="primary-nav__container justify-content-lg-around col col-lg-auto flex-lg-column" >
+  <div class="primary-nav__wrapper flex-lg-row align-items-center justify-content-end">
+              <nav class="primary-nav__nav col" id="primary-nav">
+          <div class="nav__menu-wrapper primary-nav__menu-wrapper justify-content-start czr-open-on-hover" >
+<ul id="main-menu" class="primary-nav__menu regular-nav nav__menu nav"><li id="menu-item-904" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-904"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">O nas</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-128"><a href="http://sindikat-pergam.si/predstavitev/" class="nav__link"><span class="nav__title">Predstavitev</span></a></li>
+	<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-137"><a href="http://sindikat-pergam.si/statut/" class="nav__link"><span class="nav__title">Statut</span></a></li>
+	<li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-130"><a href="http://sindikat-pergam.si/program-dela/" class="nav__link"><span class="nav__title">Program dela</span></a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-145"><a href="http://sindikat-pergam.si/zastopstvo-v-organih-in-inst/" class="nav__link"><span class="nav__title">Zastopstvo v organih in inštitucijah</span></a></li>
+	<li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-118"><a href="http://sindikat-pergam.si/kontakti-in-zaposleni/" class="nav__link"><span class="nav__title">Kontakti in zaposleni</span></a></li>
+	<li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-140"><a href="http://sindikat-pergam.si/vizitka/" class="nav__link"><span class="nav__title">Vizitka</span></a></li>
+	<li id="menu-item-320" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-320"><a href="http://sindikat-pergam.si/lokacija/" class="nav__link"><span class="nav__title">Lokacija</span></a></li>
+</ul>
+</li>
+<li id="menu-item-905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-905"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">Članstvo</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-129"><a href="http://sindikat-pergam.si/pristopna-izjava/" class="nav__link"><span class="nav__title">Pristopna izjava</span></a></li>
+	<li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-115"><a href="http://sindikat-pergam.si/kako-postati-nas-clan/" class="nav__link"><span class="nav__title">Kako postati naš član</span></a></li>
+	<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-143"><a href="http://sindikat-pergam.si/zakaj-postati-nas-clan/" class="nav__link"><span class="nav__title">Zakaj postati naš član?</span></a></li>
+	<li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-458"><a href="http://sindikat-pergam.si/pergamovi-sindikati/" class="nav__link"><span class="nav__title">Pergamovi sindikati</span></a></li>
+</ul>
+</li>
+<li id="menu-item-906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-906"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">Pravna pomoč</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-126"><a href="http://sindikat-pergam.si/pravna-pomoc-clanom/" class="nav__link"><span class="nav__title">Pravna pomoč članom</span></a></li>
+	<li id="menu-item-2072" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2072"><a href="http://sindikat-pergam.si/pravilnik-o-pravni-pomoci-kss-pergam/" class="nav__link"><span class="nav__title">Pravilnik o pravni pomoči KSS Pergam</span></a></li>
+	<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-142"><a href="http://sindikat-pergam.si/vprasanja/" class="nav__link"><span class="nav__title">Pogosta vprašanja</span></a></li>
+</ul>
+</li>
+<li id="menu-item-907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-907"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">Predpisi</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-144"><a href="http://sindikat-pergam.si/zakoni/" class="nav__link"><span class="nav__title">Zakoni</span></a></li>
+	<li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-116"><a href="http://sindikat-pergam.si/kolektivne-pogodbe/" class="nav__link"><span class="nav__title">Kolektivne pogodbe</span></a></li>
+</ul>
+</li>
+<li id="menu-item-909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-909"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">Mednarodno sodelovanje</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-119"><a href="http://sindikat-pergam.si/mednarodne-sindikalne-organizacije/" class="nav__link"><span class="nav__title">Mednarodne sindikalne organizacije</span></a></li>
+	<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-98"><a href="http://sindikat-pergam.si/institucije-eu/" class="nav__link"><span class="nav__title">Institucije EU</span></a></li>
+</ul>
+</li>
+<li id="menu-item-911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-911"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">Novice</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-2189" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-2189"><a href="http://sindikat-pergam.si/category/2021/" class="nav__link"><span class="nav__title">2021</span></a></li>
+	<li id="menu-item-1638" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-1638"><a href="http://sindikat-pergam.si/category/2020/" class="nav__link"><span class="nav__title">2020</span></a></li>
+	<li id="menu-item-1517" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-1517"><a href="http://sindikat-pergam.si/category/2019/" class="nav__link"><span class="nav__title">2019</span></a></li>
+	<li id="menu-item-373" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-373"><a href="http://sindikat-pergam.si/category/2018/" class="nav__link"><span class="nav__title">2018</span></a></li>
+	<li id="menu-item-372" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-372"><a href="http://sindikat-pergam.si/category/2017/" class="nav__link"><span class="nav__title">2017</span></a></li>
+	<li id="menu-item-371" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-371"><a href="http://sindikat-pergam.si/category/2016/" class="nav__link"><span class="nav__title">2016</span></a></li>
+	<li id="menu-item-370" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-370"><a href="http://sindikat-pergam.si/category/2015/" class="nav__link"><span class="nav__title">2015</span></a></li>
+	<li id="menu-item-369" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-369"><a href="http://sindikat-pergam.si/category/2014/" class="nav__link"><span class="nav__title">2014</span></a></li>
+	<li id="menu-item-368" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-368"><a href="http://sindikat-pergam.si/category/2013/" class="nav__link"><span class="nav__title">2013</span></a></li>
+	<li id="menu-item-367" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-367"><a href="http://sindikat-pergam.si/category/2012/" class="nav__link"><span class="nav__title">2012</span></a></li>
+	<li id="menu-item-366" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-366"><a href="http://sindikat-pergam.si/category/2011/" class="nav__link"><span class="nav__title">2011</span></a></li>
+	<li id="menu-item-365" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-365"><a href="http://sindikat-pergam.si/category/2010/" class="nav__link"><span class="nav__title">2010</span></a></li>
+	<li id="menu-item-364" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-364"><a href="http://sindikat-pergam.si/category/2009/" class="nav__link"><span class="nav__title">2009</span></a></li>
+	<li id="menu-item-363" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-363"><a href="http://sindikat-pergam.si/category/2008/" class="nav__link"><span class="nav__title">2008</span></a></li>
+	<li id="menu-item-362" class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-362"><a href="http://sindikat-pergam.si/category/2007/" class="nav__link"><span class="nav__title">2007</span></a></li>
+</ul>
+</li>
+<li id="menu-item-910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-910"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">Ugodnosti</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-1828" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-1828"><a href="http://sindikat-pergam.si/diners-club/" class="nav__link"><span class="nav__title">Diners Club</span></a></li>
+	<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-97"><a href="http://sindikat-pergam.si/gostinske-storitve/" class="nav__link"><span class="nav__title">Zdravstvene storitve</span></a></li>
+	<li id="menu-item-1929" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-1929"><a href="http://sindikat-pergam.si/kozmeticne-storitve/" class="nav__link"><span class="nav__title">Kozmetične storitve</span></a></li>
+	<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-96"><a href="http://sindikat-pergam.si/bazeni-in-wellness-storitve/" class="nav__link"><span class="nav__title">Bazeni in wellness storitve</span></a></li>
+	<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-95"><a href="http://sindikat-pergam.si/sport-in-rekreacija/" class="nav__link"><span class="nav__title">Šport in rekreacija</span></a></li>
+	<li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-94"><a href="http://sindikat-pergam.si/bancne-storitve/" class="nav__link"><span class="nav__title">Bančne storitve</span></a></li>
+	<li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-93"><a href="http://sindikat-pergam.si/avto-servisne-storitve/" class="nav__link"><span class="nav__title">Avto servisne storitve</span></a></li>
+	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-92"><a href="http://sindikat-pergam.si/veterinarske-storitve/" class="nav__link"><span class="nav__title">Veterinarske storitve</span></a></li>
+	<li id="menu-item-1282" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-1282"><a href="http://sindikat-pergam.si/ostale-ugodnosti/" class="nav__link"><span class="nav__title">Ostale ugodnosti</span></a></li>
+</ul>
+</li>
+<li id="menu-item-908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-908"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="nav__link"><span class="nav__title">Projekti</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-108"><a href="http://sindikat-pergam.si/boljsa-usposobljenost/" class="nav__link"><span class="nav__title">Boljša usposobljenost</span></a></li>
+	<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-117"><a href="http://sindikat-pergam.si/konkurencnost-delavcev/" class="nav__link"><span class="nav__title">Konkurenčnost delavcev</span></a></li>
+	<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-133"><a href="http://sindikat-pergam.si/socialni-dialog/" class="nav__link"><span class="nav__title">Socialni dialog</span></a></li>
+	<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-120"><a href="http://sindikat-pergam.si/mladim-materam-in-druzinam-prijazno-sodelovanje/" class="nav__link"><span class="nav__title">Mladim materam–družinam prijazno zaposlovanje</span></a></li>
+</ul>
+</li>
+<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="http://sindikat-pergam.si/obvescevalec/" class="nav__link"><span class="nav__title">Obveščevalec</span></a></li>
+<li id="menu-item-928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-928"><a href="http://sindikat-pergam.si/events/" class="nav__link"><span class="nav__title">Koledar dogodkov</span></a></li>
+</ul></div>        </nav>
+    <div class="primary-nav__utils nav__utils col-auto" >
+    <ul class="nav utils flex-row flex-nowrap regular-nav">
+      <li class="nav__search " >
+  <a href="#" class="search-toggle_btn icn-search czr-overlay-toggle_btn"  aria-expanded="false"><span class="sr-only">Search</span></a>
+        <div class="czr-search-expand">
+      <div class="czr-search-expand-inner"><div class="search-form__container " >
+  <form action="http://sindikat-pergam.si/" method="get" class="czr-form search-form">
+    <div class="form-group czr-focus">
+            <label for="s-601017987b17a" id="lsearch-601017987b17a">
+        <span class="screen-reader-text">Search</span>
+        <input id="s-601017987b17a" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-601017987b17a" placeholder="Search &hellip;">
+      </label>
+      <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Search &hellip;</span></button>
+    </div>
+  </form>
+</div></div>
+    </div>
+    </li>
+    </ul>
+</div>  </div>
+</div>
+    </div>
+  </div>
+</div>          <div class="mobile-navbar__wrapper d-lg-none mobile-sticky" >
+    <div class="branding__container justify-content-between align-items-center container" >
+  <div class="branding flex-column">
+    <div class="branding-row d-flex align-self-start flex-row align-items-center">
+      <div class="navbar-brand col-auto " >
+  <a class="navbar-brand-sitelogo" href="http://sindikat-pergam.si/"  aria-label=" | " >
+    <img src="http://sindikat-pergam.si/wp-content/uploads/2018/06/Logo-Pergam-na-modri-vektor.svg" alt="Nazaj Domov" class="" data-no-retina>  </a>
+</div>
+    </div>
+      </div>
+  <div class="mobile-utils__wrapper nav__utils regular-nav">
+    <ul class="nav utils row flex-row flex-nowrap">
+      <li class="nav__search " >
+  <a href="#" class="search-toggle_btn icn-search czr-dropdown" data-aria-haspopup="true" aria-expanded="false"><span class="sr-only">Search</span></a>
+        <div class="czr-search-expand">
+      <div class="czr-search-expand-inner"><div class="search-form__container " >
+  <form action="http://sindikat-pergam.si/" method="get" class="czr-form search-form">
+    <div class="form-group czr-focus">
+            <label for="s-601017987c646" id="lsearch-601017987c646">
+        <span class="screen-reader-text">Search</span>
+        <input id="s-601017987c646" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-601017987c646" placeholder="Search &hellip;">
+      </label>
+      <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Search &hellip;</span></button>
+    </div>
+  </form>
+</div></div>
+    </div>
+        <ul class="dropdown-menu czr-dropdown-menu">
+      <li class="header-search__container container">
+  <div class="search-form__container " >
+  <form action="http://sindikat-pergam.si/" method="get" class="czr-form search-form">
+    <div class="form-group czr-focus">
+            <label for="s-601017987cd88" id="lsearch-601017987cd88">
+        <span class="screen-reader-text">Search</span>
+        <input id="s-601017987cd88" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-601017987cd88" placeholder="Search &hellip;">
+      </label>
+      <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Search &hellip;</span></button>
+    </div>
+  </form>
+</div></li>    </ul>
+  </li>
+<li class="hamburger-toggler__container " >
+  <button class="ham-toggler-menu czr-collapsed" data-toggle="czr-collapse" data-target="#mobile-nav"><span class="ham__toggler-span-wrapper"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span><span class="screen-reader-text">Meni</span></button>
+</li>
+    </ul>
+  </div>
+</div>
+<div class="mobile-nav__container " >
+   <nav class="mobile-nav__nav flex-column czr-collapse" id="mobile-nav">
+      <div class="mobile-nav__inner container">
+      <div class="nav__menu-wrapper mobile-nav__menu-wrapper czr-open-on-click" >
+<ul id="mobile-nav-menu" class="mobile-nav__menu vertical-nav nav__menu flex-column nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-904"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">O nas</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-128"><a href="http://sindikat-pergam.si/predstavitev/" class="nav__link"><span class="nav__title">Predstavitev</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-137"><a href="http://sindikat-pergam.si/statut/" class="nav__link"><span class="nav__title">Statut</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-130"><a href="http://sindikat-pergam.si/program-dela/" class="nav__link"><span class="nav__title">Program dela</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-145"><a href="http://sindikat-pergam.si/zastopstvo-v-organih-in-inst/" class="nav__link"><span class="nav__title">Zastopstvo v organih in inštitucijah</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-118"><a href="http://sindikat-pergam.si/kontakti-in-zaposleni/" class="nav__link"><span class="nav__title">Kontakti in zaposleni</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-140"><a href="http://sindikat-pergam.si/vizitka/" class="nav__link"><span class="nav__title">Vizitka</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-320"><a href="http://sindikat-pergam.si/lokacija/" class="nav__link"><span class="nav__title">Lokacija</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-905"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">Članstvo</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-129"><a href="http://sindikat-pergam.si/pristopna-izjava/" class="nav__link"><span class="nav__title">Pristopna izjava</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-115"><a href="http://sindikat-pergam.si/kako-postati-nas-clan/" class="nav__link"><span class="nav__title">Kako postati naš član</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-143"><a href="http://sindikat-pergam.si/zakaj-postati-nas-clan/" class="nav__link"><span class="nav__title">Zakaj postati naš član?</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-458"><a href="http://sindikat-pergam.si/pergamovi-sindikati/" class="nav__link"><span class="nav__title">Pergamovi sindikati</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-906"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">Pravna pomoč</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-126"><a href="http://sindikat-pergam.si/pravna-pomoc-clanom/" class="nav__link"><span class="nav__title">Pravna pomoč članom</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2072"><a href="http://sindikat-pergam.si/pravilnik-o-pravni-pomoci-kss-pergam/" class="nav__link"><span class="nav__title">Pravilnik o pravni pomoči KSS Pergam</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-142"><a href="http://sindikat-pergam.si/vprasanja/" class="nav__link"><span class="nav__title">Pogosta vprašanja</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-907"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">Predpisi</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-144"><a href="http://sindikat-pergam.si/zakoni/" class="nav__link"><span class="nav__title">Zakoni</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-116"><a href="http://sindikat-pergam.si/kolektivne-pogodbe/" class="nav__link"><span class="nav__title">Kolektivne pogodbe</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-909"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">Mednarodno sodelovanje</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-119"><a href="http://sindikat-pergam.si/mednarodne-sindikalne-organizacije/" class="nav__link"><span class="nav__title">Mednarodne sindikalne organizacije</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-98"><a href="http://sindikat-pergam.si/institucije-eu/" class="nav__link"><span class="nav__title">Institucije EU</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-911"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">Novice</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-2189"><a href="http://sindikat-pergam.si/category/2021/" class="nav__link"><span class="nav__title">2021</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-1638"><a href="http://sindikat-pergam.si/category/2020/" class="nav__link"><span class="nav__title">2020</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-1517"><a href="http://sindikat-pergam.si/category/2019/" class="nav__link"><span class="nav__title">2019</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-373"><a href="http://sindikat-pergam.si/category/2018/" class="nav__link"><span class="nav__title">2018</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-372"><a href="http://sindikat-pergam.si/category/2017/" class="nav__link"><span class="nav__title">2017</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-371"><a href="http://sindikat-pergam.si/category/2016/" class="nav__link"><span class="nav__title">2016</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-370"><a href="http://sindikat-pergam.si/category/2015/" class="nav__link"><span class="nav__title">2015</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-369"><a href="http://sindikat-pergam.si/category/2014/" class="nav__link"><span class="nav__title">2014</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-368"><a href="http://sindikat-pergam.si/category/2013/" class="nav__link"><span class="nav__title">2013</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-367"><a href="http://sindikat-pergam.si/category/2012/" class="nav__link"><span class="nav__title">2012</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-366"><a href="http://sindikat-pergam.si/category/2011/" class="nav__link"><span class="nav__title">2011</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-365"><a href="http://sindikat-pergam.si/category/2010/" class="nav__link"><span class="nav__title">2010</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-364"><a href="http://sindikat-pergam.si/category/2009/" class="nav__link"><span class="nav__title">2009</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-363"><a href="http://sindikat-pergam.si/category/2008/" class="nav__link"><span class="nav__title">2008</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category dropdown-item menu-item-362"><a href="http://sindikat-pergam.si/category/2007/" class="nav__link"><span class="nav__title">2007</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-910"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">Ugodnosti</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-1828"><a href="http://sindikat-pergam.si/diners-club/" class="nav__link"><span class="nav__title">Diners Club</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-97"><a href="http://sindikat-pergam.si/gostinske-storitve/" class="nav__link"><span class="nav__title">Zdravstvene storitve</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-1929"><a href="http://sindikat-pergam.si/kozmeticne-storitve/" class="nav__link"><span class="nav__title">Kozmetične storitve</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-96"><a href="http://sindikat-pergam.si/bazeni-in-wellness-storitve/" class="nav__link"><span class="nav__title">Bazeni in wellness storitve</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-95"><a href="http://sindikat-pergam.si/sport-in-rekreacija/" class="nav__link"><span class="nav__title">Šport in rekreacija</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-94"><a href="http://sindikat-pergam.si/bancne-storitve/" class="nav__link"><span class="nav__title">Bančne storitve</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-93"><a href="http://sindikat-pergam.si/avto-servisne-storitve/" class="nav__link"><span class="nav__title">Avto servisne storitve</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-92"><a href="http://sindikat-pergam.si/veterinarske-storitve/" class="nav__link"><span class="nav__title">Veterinarske storitve</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-1282"><a href="http://sindikat-pergam.si/ostale-ugodnosti/" class="nav__link"><span class="nav__title">Ostale ugodnosti</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children czr-dropdown menu-item-908"><span class="display-flex nav__link-wrapper align-items-start"><a class="nav__link"><span class="nav__title">Projekti</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-108"><a href="http://sindikat-pergam.si/boljsa-usposobljenost/" class="nav__link"><span class="nav__title">Boljša usposobljenost</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-117"><a href="http://sindikat-pergam.si/konkurencnost-delavcev/" class="nav__link"><span class="nav__title">Konkurenčnost delavcev</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-133"><a href="http://sindikat-pergam.si/socialni-dialog/" class="nav__link"><span class="nav__title">Socialni dialog</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-120"><a href="http://sindikat-pergam.si/mladim-materam-in-druzinam-prijazno-sodelovanje/" class="nav__link"><span class="nav__title">Mladim materam–družinam prijazno zaposlovanje</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="http://sindikat-pergam.si/obvescevalec/" class="nav__link"><span class="nav__title">Obveščevalec</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-928"><a href="http://sindikat-pergam.si/events/" class="nav__link"><span class="nav__title">Koledar dogodkov</span></a></li>
+</ul></div>      </div>
+  </nav>
+</div></div></header>
+
+
+  
+    <div id="main-wrapper" class="section">
+
+                      
+
+          
+          <div class="container" role="main" >
+          
+          
+            
+            <div class="flex-row row column-content-wrapper">
+
+                
+                <div id="content" class="col-12 col-md-8 offset-md-2 article-container">
+
+                  <header class="entry-header text-center" >
+  <h1 class="entry-title big-text-10 m-t-05">404</h1>
+  <h2>Ooops, stran ni najdena</h2>
+</header>
+<hr class='featurette-divider'>
+<article id="post-0" class="post error404 no-results not-found row text-center">
+  <div class="tc-content col-12">
+    <div class="entry-content">
+      <p>Zahtevane strani ne najdemo, poizkusite jo poiskati s spodnjim iskalnikom.</p>
+      <div class="search-form__container " >
+  <form action="http://sindikat-pergam.si/" method="get" class="czr-form search-form">
+    <div class="form-group czr-focus">
+            <label for="s-601017988b3b6" id="lsearch-601017988b3b6">
+        <span class="screen-reader-text">Search</span>
+        <input id="s-601017988b3b6" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-601017988b3b6" placeholder="Search &hellip;">
+      </label>
+      <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Search &hellip;</span></button>
+    </div>
+  </form>
+</div>    </div>
+  </div>
+</article>                </div>
+
+                
+            </div><!-- .column-content-wrapper -->
+
+            
+
+          </div><!-- .container -->
+
+          <div id="czr-push-footer" ></div>
+    </div><!-- #main-wrapper -->
+
+    
+    
+<footer id="footer" class="footer__wrapper" >
+  <div id="footer-widget-area" class="widget__wrapper" role="complementary" >
+  <div class="container widget__container">
+    <div class="row">
+                      <div id="footer_one" class="col-md-4 col-12">
+            <aside id="text-5" class="widget widget_text"><h5 class="widget-title">Kontakt</h5>			<div class="textwidget"><p>Trg Osvobodilne fronte 14<br />
+1000 Ljubljana<br />
+Tel.: (01) 2302 246<br />
+Faks: (01) 2302 247<br />
+E-pošta: pergam@siol.net</p>
+</div>
+		</aside>          </div>
+                  <div id="footer_two" class="col-md-4 col-12">
+            <aside id="text-4" class="widget widget_text">			<div class="textwidget"><h4>Povezave</h4>
+<ul>
+<li><a href="http://sindikat-pergam.si/sindikati-in-javni-zavodi/">Sindikati in javni zavodi</a></li>
+<li><a href="http://sindikat-pergam.si/drzavne-institucije/">Državne inštitucije</a></li>
+<li><a href="http://sindikat-pergam.si/pomembnejse-institucije/">Pomembnejše inštitucije</a></li>
+<li><a href="http://sindikat-pergam.si/mednarodne-organizacije/">Mednarodne organizacije</a></li>
+<li><a href="http://sindikat-pergam.si/druge-uporabne-povezave/">Druge uporabne povezave</a></li>
+</ul>
+</div>
+		</aside>          </div>
+                  <div id="footer_three" class="col-md-4 col-12">
+            <aside id="tribe-events-list-widget-2" class="widget tribe-events-list-widget"><h5 class="widget-title">Prihajajoči dogodki</h5>	<p>Trenutno ni prihajajočih dogodkov.</p>
+</aside>          </div>
+                  </div>
+  </div>
+</div>
+<div id="colophon" class="colophon " >
+  <div class="container">
+    <div class="colophon__row row flex-row justify-content-between">
+      <div class="col-12 col-sm-auto">
+        <div id="footer__credits" class="footer__credits" >
+  <p class="czr-copyright">
+    <span class="czr-copyright-text">&copy;&nbsp;2021&nbsp;</span><a class="czr-copyright-link" href="http://sindikat-pergam.si" title=""></a><span class="czr-rights-text">&nbsp;&ndash;&nbsp;All rights reserved</span>
+  </p>
+  <p class="czr-credits">
+    <span class="czr-designer">
+      <span class="czr-wp-powered"><span class="czr-wp-powered-text">Narejeno z&nbsp;</span><a class="czr-wp-powered-link fab fa-wordpress" title="Stran poganja WordPress" href="https://wordpress.org/" target="_blank" rel="noopener noreferrer"></a></span><span class="czr-designer-text">&nbsp;&ndash;&nbsp;Designed with the <a class="czr-designer-link" href="https://presscustomizr.com/customizr" title="Customizr theme">Customizr theme</a></span>
+    </span>
+  </p>
+</div>
+      </div>
+          </div>
+  </div>
+</div>
+</footer>
+    </div><!-- end #tc-page-wrap -->
+
+    <button class="btn czr-btt czr-btta right" ><i class="icn-up-small"></i></button>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Naslednji","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["nedelja","ponedeljek","torek","sreda","\u010detrtek","petek","sobota"],"dayNamesShort":["ned","pon","tor","sre","\u010det","pet","sob"],"dayNamesMin":["N","P","T","S","\u010c","P","S"],"monthNames":["januar","februar","marec","april","maj","junij","julij","avgust","september","oktober","november","december"],"monthNamesShort":["januar","februar","marec","april","maj","junij","julij","avgust","september","oktober","november","december"],"monthNamesMin":["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"],"nextText":"Naslednji","prevText":"Prej\u0161nji","currentText":"Danes","closeText":"Opravljeno","today":"Danes","clear":"Po\u010disti"}};/* ]]> */ </script><link rel='stylesheet' id='tribe-events-custom-jquery-styles-css'  href='http://sindikat-pergam.si/wp-content/plugins/the-events-calendar/vendor/jquery/smoothness/jquery-ui-1.8.23.custom.css?ver=5.3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-events-bootstrap-datepicker-css-css'  href='http://sindikat-pergam.si/wp-content/plugins/the-events-calendar/vendor/bootstrap-datepicker/css/bootstrap-datepicker.standalone.min.css?ver=5.3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-events-calendar-style-css'  href='http://sindikat-pergam.si/wp-content/plugins/the-events-calendar/src/resources/css/tribe-events-theme.min.css?ver=5.3.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-content/plugins/embed-any-document/js/pdfobject.min.js?ver=2.6.1' id='awsm-ead-pdf-object-js'></script>
+<script type='text/javascript' id='awsm-ead-public-js-extra'>
+/* <![CDATA[ */
+var eadPublic = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-content/plugins/embed-any-document/js/embed-public.min.js?ver=2.6.1' id='awsm-ead-public-js'></script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='http://sindikat-pergam.si/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+  </body>
+  </html>

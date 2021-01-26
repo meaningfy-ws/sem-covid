@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:description" content="HMT management information about the Coronavirus Business Interruption Loan Scheme (CBILS), Coronavirus Large Business Interruption Loan Scheme (CLBILS), Bounce Back Loan Scheme (BBLS) and Future Fund Scheme. ">
+<meta property="og:title" content="HM Treasury coronavirus (COVID-19) business loan scheme statistics">
+<meta property="og:url" content="https://www.gov.uk/government/collections/hm-treasury-coronavirus-covid-19-business-loan-scheme-statistics">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GOV.UK">
+<meta name="twitter:card" content="summary">
+<meta name="Cookieless-Variant" content="B" data-module="track-variant">
+<meta name="govuk:ab-test" content="CookielessAATest:B" data-analytics-dimension="49" data-allowed-variants="A,B,Z">
+<meta name="description" content="HMT management information about the Coronavirus Business Interruption Loan Scheme (CBILS), Coronavirus Large Business Interruption Loan Scheme (CLBILS), Bounce Back Loan Scheme (BBLS) and Future Fund Scheme. ">
+<meta name="govuk:taxon-slugs" content="business-and-industry,funding-and-support">
+<meta name="govuk:taxon-slug" content="business-and-industry">
+<meta name="govuk:taxon-ids" content="495afdb6-47be-4df1-8b38-91c8adb1eefc,a75f9c24-fdeb-4aaa-ac48-23e1247951b3">
+<meta name="govuk:taxon-id" content="495afdb6-47be-4df1-8b38-91c8adb1eefc">
+<meta name="govuk:themes" content="business-and-industry, coronavirus-taxon">
+<meta name="govuk:analytics:organisations" content="&lt;D15&gt;">
+<meta name="govuk:content-has-history" content="true">
+<meta name="govuk:content-id" content="b1a3bd0c-5da6-4139-b362-9ee40dd50b50">
+<meta name="govuk:schema-name" content="document_collection">
+<meta name="govuk:publishing-application" content="whitehall">
+<meta name="govuk:format" content="document_collection">
+<meta name="csrf-token" content="JQeb7rwFLQ/otYGj9rCBA1o/urJHoaHgtf2uMvMc1O266NNJoFyDgIQoJHkridVi3ntga0VDyZAPrsmxtUkpqw==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title lang="en">
+      HM Treasury coronavirus (COVID-19) business loan scheme statistics - GOV.UK
+  </title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/govuk-template-3e3f4a131aca72f9b2e458dfd318f65420aef6ada35539243aac38ebbbbcc64f.css">
+<!--<![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/govuk-template-ie8-e4fff1a2ce0e93e66e96db6eedae992a3859b1e608aa46bd3e42ac30f61c58ac.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://www.gov.uk/assets/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css">
+
+    <link rel="stylesheet" media="all" href="https://www.gov.uk/assets/static/fonts-c57ab80a95f2b1764162611b3c98a4c098b356f8e30baf1e50cd63edea464c01.css">
+    <!--[if lt IE 9]><script src="https://www.gov.uk/assets/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://www.gov.uk/assets/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://www.gov.uk/assets/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.gov.uk/assets/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://www.gov.uk/assets/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.gov.uk/assets/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://www.gov.uk/assets/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/core-layout-5c9e91c1edfd49978562c26e27d70735f37888ac7de52549466b18d1672c7733.css">
+<!--[if lte IE 8]><link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/core-layout-ie8-773f4cacc5b2d19e924e37800dca2a1e66acd94c661e1cd95a8a165021bdc667.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://www.gov.uk/assets/static/core-layout-print-c5e97d0ed0feb1d1fc703ef0ed5201026330ec091e02c33fb1db277df068ede5.css">
+
+
+
+    <meta property="og:image" content="https://www.gov.uk/assets/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <link rel="stylesheet" media="screen" href="/assets/government-frontend/application-9a5f79d10b2573d0dc805a6de35ce0a05f81b209f6c555bb0fcf36770a6e44ed.css">
+<link rel="stylesheet" media="print" href="/assets/government-frontend/print-c01e429d41f73399d834c2cd00c8ce3304065c2ddea267f84e2e2fc1ce033990.css">
+<link rel="canonical" href="https://www.gov.uk/government/collections/hm-treasury-coronavirus-covid-19-business-loan-scheme-statistics">
+<meta name="govuk:rendering-application" content="government-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
+
+    
+<div id="global-cookie-message" class="gem-c-cookie-banner govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet>
+  <div class="gem-c-cookie-banner__wrapper govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="gem-c-cookie-banner__message">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/help/cookies">cookies to collect information</a> about how you use GOV.UK. We use this information to make the website work as well as possible and improve government services.</p>
+        </div>
+          <div class="gem-c-cookie-banner__buttons">
+            <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-accept govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
+              
+
+
+  <button class="gem-c-button govuk-button gem-c-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept all cookies</button>
+
+
+            </div>
+            <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-settings govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
+              
+
+
+  <a class="gem-c-button govuk-button gem-c-button--inline" role="button" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked" href="/help/cookies">Set cookie preferences</a>
+
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1">
+    <p class="gem-c-cookie-banner__confirmation-message" role="alert">You’ve accepted all cookies. You can <a class="govuk-link" href="/help/cookies" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.</p>
+    <button class="gem-c-cookie-banner__hide-button" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide</button>
+  </div>
+</div>
+
+
+    <header role="banner" id="global-header" class=" with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" class="content govuk-header__link govuk-header__link--homepage" id="logo" data-module="track-click" data-track-category="homeLinkClicked" data-track-action="homeHeader">
+              <span class="govuk-header__logotype">
+                <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 132 97" height="30" width="36">
+                  <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z">
+                  </path>
+                  <image src="https://www.gov.uk/assets/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" xlink:href="" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+                  </image>
+                </svg>
+                <span class="govuk-header__logotype-text">
+                  GOV.UK
+                </span>
+              </span>
+            </a>
+          </div>
+            <button class="search-toggle js-header-toggle" data-search-toggle-for="search">Show or hide search</button>
+  <form id="search" class="site-search govuk-clearfix" action="/search" method="get" role="search" aria-label="Sitewide">
+    <div class="content govuk-clearfix">
+      
+<div class="gem-c-search  govuk-!-margin-bottom-0 gem-c-search--no-border gem-c-search--on-white" data-module="gem-toggle-input-class-on-focus">
+  <label for="site-search-text" class="gem-c-search__label">
+    Search on GOV.UK
+  </label>
+  <div class="gem-c-search__item-wrapper">
+    <input type="search" value="" id="site-search-text" name="q" title="Search" aria-controls="" class="gem-c-search__item gem-c-search__input js-class-toggle">
+    <div class="gem-c-search__item gem-c-search__submit-wrapper">
+      <button type="submit" class="gem-c-search__submit">Search</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </form>
+
+    
+
+
+
+
+        </div>
+        
+      <div class="header-proposition">
+  <div class="content">
+    <button data-search-toggle-for="proposition-links" class="js-header-toggle mobile-menu-toggle">Menu</button>
+  <nav id="proposition-menu" class="no-proposition-name gem-c-government-navigation" aria-label="Departments and policy navigation">
+  <ul id="proposition-links">
+    <li>
+      <a class="" href="/government/organisations">
+        Departments
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/world">
+        Worldwide
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/how-government-works">
+        How government works
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/get-involved">
+        Get involved
+      </a>
+    </li>
+    <li class="clear-child">
+      <a class="" href="/search/policy-papers-and-consultations?content_store_document_type%5B%5D=open_consultations&amp;amp;content_store_document_type%5B%5D=closed_consultations">
+        Consultations
+      </a>
+    </li>
+    <li>
+      <a class="" href="/search/research-and-statistics">
+        Statistics
+      </a>
+    </li>
+    <li>
+      <a class="" href="/news-and-communications">
+        News and communications
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+</div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      
+  <!--[if gt IE 7]><!-->
+  <div id="global-bar" class="global-bar dont-print" data-module="global-bar" data-global-bar-permanent="true" data-nosnippet>
+    <div class="global-bar-message govuk-width-container">
+
+
+        <div class="global-bar-covid-wrapper">
+            <div class="gem-c-action-link gem-c-action-link--light-text gem-c-action-link--simple-light gem-c-action-link--with-subtext govuk-!-margin-bottom-3">
+
+      <span class="gem-c-action-link__contents-wrapper">      <span class="gem-c-action-link__link-wrapper">
+
+          <a class="govuk-link gem-c-action-link__link js-call-to-action" href="/coronavirus">
+                      Coronavirus (COVID-19)
+          
+
+</a>      </span>
+
+        <span class="gem-c-action-link__subtext-wrapper">
+            <span class="gem-c-action-link__subtext">National lockdown: stay at home</span>
+        </span>
+</span>
+  </div>
+
+
+            <div class="gem-c-action-link gem-c-action-link--light-text gem-c-action-link--simple-light gem-c-action-link--with-subtext govuk-!-margin-bottom-0">
+
+      <span class="gem-c-action-link__contents-wrapper">      <span class="gem-c-action-link__link-wrapper">
+
+          <a class="govuk-link gem-c-action-link__link js-call-to-action" href="/transition">
+                      Brexit
+          
+
+</a>      </span>
+
+        <span class="gem-c-action-link__subtext-wrapper">
+            <span class="gem-c-action-link__subtext">Check how the new rules affect you</span>
+        </span>
+</span>
+  </div>
+
+        </div>
+    </div>
+
+  </div>
+  <!--<![endif]-->
+
+
+  <div id="wrapper" class="direction-ltr">
+
+        
+<div class="gem-c-contextual-breadcrumbs">
+    
+
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-module="track-click">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" href="/">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/business-and-industry" data-track-options='{"dimension28":"2","dimension29":"Business and industry"}' class="govuk-breadcrumbs__link" href="/business-and-industry">Business and industry</a>
+        </li>
+  </ol>
+</div>
+
+
+    
+
+  <h2 class="gem-c-step-nav-header govuk-!-margin-bottom-0" data-module="track-click">
+    <span class="gem-c-step-nav-header__part-of">Part of</span>
+      <a href="/coronavirus-taxon/businesses-and-self-employed-people" class="gem-c-step-nav-header__title govuk-link" data-track-category="breadcrumbClicked" data-track-action="superBreadcrumb" data-track-label="/government/collections/hm-treasury-coronavirus-covid-19-business-loan-scheme-statistics">
+        Support for businesses and self-employed people during coronavirus
+      </a>
+  </h2>
+
+</div>
+
+
+    <main role="main" id="content" class="document-collection" lang="en">
+      
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+    <span class="govuk-caption-xl gem-c-title__context">
+      Collection
+    </span>
+  <h1 class="gem-c-title__text gem-c-title__text--long">
+    HM Treasury coronavirus (COVID-19) business loan scheme statistics
+  </h1>
+</div>
+  </div>
+  
+  <div class="govuk-grid-column-two-thirds">
+    
+  <p class="gem-c-lead-paragraph">HMT management information about the Coronavirus Business Interruption Loan Scheme (CBILS), Coronavirus Large Business Interruption Loan Scheme (CLBILS), Bounce Back Loan Scheme (BBLS) and Future Fund Scheme. </p>
+
+    
+    
+    
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="metadata-logo-wrapper">
+    <div class="govuk-grid-column-two-thirds metadata-column">
+        <div class="app-c-publisher-metadata" lang="en">
+    <div class="app-c-published-dates " lang="en">
+    Published 27 May 2020
+    <br>Last updated 17 December 2020
+      — <a href="#history" class="app-c-published-dates__history-link govuk-link">see all updates</a>
+</div>
+
+      <div class="app-c-publisher-metadata__other">
+        <dl data-module="track-click">
+            <dt class="app-c-publisher-metadata__term">
+              From:
+            </dt>
+            <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
+                <span class="app-c-publisher-metadata__definition-sentence">
+                  <a class="govuk-link" href="/government/organisations/hm-treasury">HM Treasury</a>
+                </span>
+            </dd>
+        </dl>
+      </div>
+  </div>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+    </div>
+  </div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+
+      <div id="contents" class="app-c-contents-list-with-body">
+    
+      <div class="responsive-bottom-margin">
+          
+<div class="gem-c-govspeak govuk-govspeak direction-ltr" data-module="govspeak">
+      <div class="govspeak">
+<h2 id="contents">Contents</h2>
+
+<ol>
+  <li><a href="#Publication-plans" class="govuk-link">Publication plans</a></li>
+  <li><a href="#Coronavirus-Business-Interruption-Loan-Scheme" class="govuk-link">Coronavirus Business Interruption Loan Scheme (CBILS)</a></li>
+  <li><a href="#Coronavirus-Large-Business-Interruption-Loan-Scheme" class="govuk-link">Coronavirus Large Business Interruption Loan Scheme (CLBILS)</a></li>
+  <li><a href="#Bounce-Back-Loan-Scheme" class="govuk-link">Bounce Back Loan Scheme (BBLS)</a></li>
+  <li><a href="#Future-Fund" class="govuk-link">Future Fund</a></li>
+</ol>
+
+<h2 id="publication-plans">Publication plans</h2>
+
+<p id="Publication-plans">HMT will publish management information each Tuesday for each of the four schemes (CBILS, CLBILS, BBLS, Future Fund), including:</p>
+
+<ul>
+  <li>the total number of applications</li>
+  <li>the number of approved applications</li>
+  <li>the value of loans approved</li>
+</ul>
+
+<p>This information will now be published monthly with the next release at 9.30am on 28 January.</p>
+
+<p>The applications figure includes:</p>
+
+<ul>
+  <li>approved applications</li>
+  <li>applications that are still to be processed</li>
+  <li>applications that have been declined or turn out not to be eligible</li>
+  <li>withdrawn applications, where borrowers decide not to proceed</li>
+</ul>
+
+<p>For CBILS, this number will also include a number of applications that have subsequently been converted to applications for the BBLS scheme.</p>
+
+<p>For Future Fund, the number of applications includes only those where both a company and their lead investor have submitted information.</p>
+
+<p>The CBILS scheme launched on 23 March 2020. This management information only begins from 10 May. UK Finance published data before this period on lending by UK Finance members. This information is available <a rel="external" href="https://www.ukfinance.org.uk/sites/default/files/uploads/Data%20(XLS%20and%20PDF)/CBILS%20Data%20Table%207%20May%202020.xlsx" class="govuk-link">here.</a></p>
+
+<h2 id="coronavirus-business-interruption-loan-scheme-cbils">Coronavirus Business Interruption Loan Scheme (CBILS)</h2>
+
+<table id="Coronavirus-Business-Interruption-Loan-Scheme">
+  <thead>
+    <tr>
+      <th scope="col">Data up to close of business</th>
+      <th scope="col">Value of Facilities Approved</th>
+      <th scope="col">Number of Facilities Approved</th>
+      <th scope="col">Total Number of Applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10 May</td>
+      <td>£6.09bn</td>
+      <td>35,919</td>
+      <td>64,531</td>
+    </tr>
+    <tr>
+      <td>17 May</td>
+      <td>£7.25bn</td>
+      <td>40,564</td>
+      <td>81,124</td>
+    </tr>
+    <tr>
+      <td>24 May</td>
+      <td>£8.15bn</td>
+      <td>43,045</td>
+      <td>84,607</td>
+    </tr>
+    <tr>
+      <td>31 May</td>
+      <td>£8.92bn</td>
+      <td>45,843</td>
+      <td>89,724</td>
+    </tr>
+    <tr>
+      <td>7 June</td>
+      <td>£9.56bn</td>
+      <td>47,650</td>
+      <td>93,305</td>
+    </tr>
+    <tr>
+      <td>14 June</td>
+      <td>£10.11bn</td>
+      <td>49,247</td>
+      <td>96,492</td>
+    </tr>
+    <tr>
+      <td>21 June</td>
+      <td>£10.53bn</td>
+      <td>50,482</td>
+      <td>98,975</td>
+    </tr>
+    <tr>
+      <td>28 June</td>
+      <td>£11.07bn</td>
+      <td>52,275</td>
+      <td>104,569</td>
+    </tr>
+    <tr>
+      <td>5 July</td>
+      <td>£11.49bn</td>
+      <td>53,536</td>
+      <td>107,309</td>
+    </tr>
+    <tr>
+      <td>12 July</td>
+      <td>£11.85bn</td>
+      <td>54,538</td>
+      <td>109,235</td>
+    </tr>
+    <tr>
+      <td>19 July</td>
+      <td>£12.20bn</td>
+      <td>55,674</td>
+      <td>112,212</td>
+    </tr>
+    <tr>
+      <td>26 July</td>
+      <td>£12.65bn</td>
+      <td>57,234</td>
+      <td>115,941</td>
+    </tr>
+    <tr>
+      <td>2 August</td>
+      <td>£13.08bn</td>
+      <td>58,595</td>
+      <td>119,248</td>
+    </tr>
+    <tr>
+      <td>9 August</td>
+      <td>£13.41bn</td>
+      <td>59,520</td>
+      <td>121,669</td>
+    </tr>
+    <tr>
+      <td>16 August</td>
+      <td>£13.68bn</td>
+      <td>60,409</td>
+      <td>122,885</td>
+    </tr>
+    <tr>
+      <td>20 September</td>
+      <td>£15.45bn</td>
+      <td>66,585</td>
+      <td>142,076</td>
+    </tr>
+    <tr>
+      <td>18 October</td>
+      <td>£17.16bn</td>
+      <td>73,094</td>
+      <td>159,277</td>
+    </tr>
+    <tr>
+      <td>15 November</td>
+      <td>£18.46bn</td>
+      <td>77,909</td>
+      <td>173,556</td>
+    </tr>
+    <tr>
+      <td>13 December</td>
+      <td>£19.64bn</td>
+      <td>82,618</td>
+      <td>186,522</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="coronavirus-large-business-interruption-loan-scheme-clbils">Coronavirus Large Business Interruption Loan Scheme (CLBILS)</h2>
+
+<table id="Coronavirus-Large-Business-Interruption-Loan-Scheme">
+  <thead>
+    <tr>
+      <th scope="col">Data up to close of business</th>
+      <th scope="col">Value of Facilities Approved</th>
+      <th scope="col">Number of Facilities Approved</th>
+      <th scope="col">Total Number of Applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10 May</td>
+      <td>£0.36bn</td>
+      <td>59</td>
+      <td>450</td>
+    </tr>
+    <tr>
+      <td>17 May</td>
+      <td>£0.59bn</td>
+      <td>86</td>
+      <td>496</td>
+    </tr>
+    <tr>
+      <td>24 May</td>
+      <td>£0.82bn</td>
+      <td>154</td>
+      <td>502</td>
+    </tr>
+    <tr>
+      <td>31 May</td>
+      <td>£1.11bn</td>
+      <td>191</td>
+      <td>579</td>
+    </tr>
+    <tr>
+      <td>7 June</td>
+      <td>£1.57bn</td>
+      <td>244</td>
+      <td>615</td>
+    </tr>
+    <tr>
+      <td>14 June</td>
+      <td>£1.77bn</td>
+      <td>279</td>
+      <td>661</td>
+    </tr>
+    <tr>
+      <td>21 June</td>
+      <td>£2.10bn</td>
+      <td>315</td>
+      <td>709</td>
+    </tr>
+    <tr>
+      <td>28 June</td>
+      <td>£2.33bn</td>
+      <td>359</td>
+      <td>745</td>
+    </tr>
+    <tr>
+      <td>5 July</td>
+      <td>£2.58bn</td>
+      <td>394</td>
+      <td>783</td>
+    </tr>
+    <tr>
+      <td>12 July</td>
+      <td>£2.73bn</td>
+      <td>412</td>
+      <td>809</td>
+    </tr>
+    <tr>
+      <td>19 July</td>
+      <td>£2.89bn</td>
+      <td>428</td>
+      <td>831</td>
+    </tr>
+    <tr>
+      <td>26 July</td>
+      <td>£3.10bn</td>
+      <td>457</td>
+      <td>872</td>
+    </tr>
+    <tr>
+      <td>2 August</td>
+      <td>£3.27bn</td>
+      <td>482</td>
+      <td>887</td>
+    </tr>
+    <tr>
+      <td>9 August</td>
+      <td>£3.40bn</td>
+      <td>497</td>
+      <td>896</td>
+    </tr>
+    <tr>
+      <td>16 August</td>
+      <td>£3.50bn</td>
+      <td>516</td>
+      <td>938</td>
+    </tr>
+    <tr>
+      <td>20 September</td>
+      <td>£3.84bn</td>
+      <td>566</td>
+      <td>992</td>
+    </tr>
+    <tr>
+      <td>18 October</td>
+      <td>£4.57bn</td>
+      <td>623</td>
+      <td>1,034</td>
+    </tr>
+    <tr>
+      <td>15 November</td>
+      <td>£4.84bn</td>
+      <td>658</td>
+      <td>1,065</td>
+    </tr>
+    <tr>
+      <td>13 December</td>
+      <td>£4.97bn</td>
+      <td>675</td>
+      <td>1,077</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="bounce-back-loan-scheme-bbls">Bounce Back Loan Scheme (BBLS)</h2>
+
+<table id="Bounce-Back-Loan-Scheme">
+  <thead>
+    <tr>
+      <th scope="col">Data up to close of business</th>
+      <th scope="col">Value of Facilities Approved</th>
+      <th scope="col">Number of Facilities Approved</th>
+      <th scope="col">Total Number of Applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10 May</td>
+      <td>£8.38bn</td>
+      <td>268,173</td>
+      <td>363,646</td>
+    </tr>
+    <tr>
+      <td>17 May</td>
+      <td>£14.18bn</td>
+      <td>464,393</td>
+      <td>581,516</td>
+    </tr>
+    <tr>
+      <td>24 May</td>
+      <td>£18.49bn</td>
+      <td>608,069</td>
+      <td>769,137</td>
+    </tr>
+    <tr>
+      <td>31 May</td>
+      <td>£21.29bn</td>
+      <td>699,354</td>
+      <td>873,192</td>
+    </tr>
+    <tr>
+      <td>7 June</td>
+      <td>£23.78bn</td>
+      <td>782,246</td>
+      <td>964,414</td>
+    </tr>
+    <tr>
+      <td>14 June</td>
+      <td>£26.34bn</td>
+      <td>863,584</td>
+      <td>1,057,130</td>
+    </tr>
+    <tr>
+      <td>21 June</td>
+      <td>£28.09bn</td>
+      <td>921,229</td>
+      <td>1,123,683</td>
+    </tr>
+    <tr>
+      <td>28 June</td>
+      <td>£29.51bn</td>
+      <td>967,321</td>
+      <td>1,186,006</td>
+    </tr>
+    <tr>
+      <td>5 July</td>
+      <td>£30.93bn</td>
+      <td>1,013,410</td>
+      <td>1,240,701</td>
+    </tr>
+    <tr>
+      <td>12 July</td>
+      <td>£31.70bn</td>
+      <td>1,047,611</td>
+      <td>1,282,639</td>
+    </tr>
+    <tr>
+      <td>19 July</td>
+      <td>£32.79bn</td>
+      <td>1,084,153</td>
+      <td>1,316,970</td>
+    </tr>
+    <tr>
+      <td>26 July</td>
+      <td>£33.68bn</td>
+      <td>1,113,312</td>
+      <td>1,349,051</td>
+    </tr>
+    <tr>
+      <td>2 August</td>
+      <td>£34.34bn</td>
+      <td>1,135,575</td>
+      <td>1,377,955</td>
+    </tr>
+    <tr>
+      <td>9 August</td>
+      <td>£34.96bn</td>
+      <td>1,157,296</td>
+      <td>1,404,726</td>
+    </tr>
+    <tr>
+      <td>16 August</td>
+      <td>£35.47bn</td>
+      <td>1,174,854</td>
+      <td>1,430,017</td>
+    </tr>
+    <tr>
+      <td>20 September</td>
+      <td>£38.02bn</td>
+      <td>1,260,940</td>
+      <td>1,552,727</td>
+    </tr>
+    <tr>
+      <td>18 October</td>
+      <td>£40.20bn</td>
+      <td>1,336,320</td>
+      <td>1,660,845</td>
+    </tr>
+    <tr>
+      <td>15 November</td>
+      <td>£42.18bn</td>
+      <td>1,397,475</td>
+      <td>1,766,768</td>
+    </tr>
+    <tr>
+      <td>13 December</td>
+      <td>£43.54bn*</td>
+      <td>1,431,987</td>
+      <td>1,887,967</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>*The value of BBLS facilities approved includes BBLS loans which have been ‘topped-up’ – that is, as announced on 2 November, BBLS borrowers who took out less than their maximum under the scheme rules (the lesser of £50,000 or 25% of their turnover) in their first loan application can top-up their loan up to the maximum. As of 13 December, 62,311 BBLS top-ups had been approved worth £0.56 billion.</p>
+
+<p>One topped up loan will still be reported as one loan to avoid double counting the number of facilities approved. (e.g. if there were previously two facilities worth £40,000 each and subsequently one had been topped up to £50,000, this would now be reported as two facilities worth a total of £90,000).</p>
+
+<h2 id="cbils-and-bbls-data-by-constituency">CBILS and BBLS data by constituency</h2>
+<p><a rel="external" href="https://www.british-business-bank.co.uk/coronavirus-loan-schemes-benefiting-businesses-in-all-corners-of-uk-reveals-new-analysis-from-british-business-bank/" class="govuk-link">Statistics from British Business Bank</a></p>
+
+<h2 id="future-fund">Future Fund</h2>
+
+<table id="Future-Fund">
+  <thead>
+    <tr>
+      <th scope="col">Data up to close of business</th>
+      <th scope="col">Total number of applications</th>
+      <th scope="col">Number of convertible loans approved</th>
+      <th scope="col">Value of convertible loans approved</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>27 May</td>
+      <td>419</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>31 May</td>
+      <td>464</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>7 June</td>
+      <td>533</td>
+      <td>53</td>
+      <td>£55.9m</td>
+    </tr>
+    <tr>
+      <td>14 June</td>
+      <td>577</td>
+      <td>155</td>
+      <td>£146.0m</td>
+    </tr>
+    <tr>
+      <td>21 June</td>
+      <td>623</td>
+      <td>252</td>
+      <td>£236.2m</td>
+    </tr>
+    <tr>
+      <td>28 June</td>
+      <td>674</td>
+      <td>322</td>
+      <td>£320.6m</td>
+    </tr>
+    <tr>
+      <td>5 July</td>
+      <td>722</td>
+      <td>376</td>
+      <td>£379.9m</td>
+    </tr>
+    <tr>
+      <td>12 July</td>
+      <td>750</td>
+      <td>429</td>
+      <td>£419.6m</td>
+    </tr>
+    <tr>
+      <td>19 July</td>
+      <td>781</td>
+      <td>465</td>
+      <td>£468.7m</td>
+    </tr>
+    <tr>
+      <td>26 July</td>
+      <td>816</td>
+      <td>510</td>
+      <td>£512.9m</td>
+    </tr>
+    <tr>
+      <td>2 August</td>
+      <td>839</td>
+      <td>537</td>
+      <td>£534.0m</td>
+    </tr>
+    <tr>
+      <td>9 August</td>
+      <td>868</td>
+      <td>565</td>
+      <td>£562.3m</td>
+    </tr>
+    <tr>
+      <td>16 August</td>
+      <td>902</td>
+      <td>590</td>
+      <td>£588.3m</td>
+    </tr>
+    <tr>
+      <td>20 September</td>
+      <td>1,072</td>
+      <td>711</td>
+      <td>£720.0m</td>
+    </tr>
+    <tr>
+      <td>18 October</td>
+      <td>1,243</td>
+      <td>745</td>
+      <td>£770.8m</td>
+    </tr>
+    <tr>
+      <td>15 November</td>
+      <td>1,325</td>
+      <td>874</td>
+      <td>£875.8m</td>
+    </tr>
+    <tr>
+      <td>13 December</td>
+      <td>1,432</td>
+      <td>971</td>
+      <td>£975.5m</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="notes">Notes</h4>
+
+<ol>
+  <li>The management information for CBILS, CLBILS and BBLS is reported on behalf of accredited lenders. For Future Fund this is reported on behalf of the British Business Bank. HM Treasury accepts no responsibility for the accuracy of these figures.</li>
+  <li>Figures for CBILS, CLBILS and BBLS show cumulative applications and approvals up to close of business on 13 December 2020 by accredited lenders, as reported to HM Treasury by close of business 14 December 2020.</li>
+  <li>A full list of accredited lenders for CBILS, CLBILS and BBLS can be found <a rel="external" href="https://www.british-business-bank.co.uk/ourpartners/coronavirus-business-interruption-loan-scheme-cbils-2/current-accredited-lenders-and-partners/" class="govuk-link">here.</a>
+</li>
+  <li>Management information (MI) are not classified as statistics. The MI in this release reflects timely information and do not suffer from lag effects. However, the trend from weekly figures may show some volatility. Moreover, these are initial figures which have not been rigorously quality assured and do not include data from all accredited lenders.</li>
+  <li>UK Finance have also previously published MI on CBILS, but this only covers accredited lenders which are members of UK Finance. This data is available <a rel="external" href="https://www.ukfinance.org.uk/sites/default/files/uploads/Data%20(XLS%20and%20PDF)/CBILS%20Data%20Table%207%20May%202020.xlsx" class="govuk-link">here.</a>
+</li>
+  <li>Future Fund opened for applications on 20 May 2020. Provided that applicants provide the information required during the application process in a timely manner, it is expected that the process will take a minimum of 21 days from initial application to funding being made available. Convertible loans are reported as approved at the point the Convertible Loan Agreement document is issued by Future Fund for signature. The time to applicants subsequently receiving funds will depend on the speed with which they complete the documentation.</li>
+  <li>The Code of Practice for Statistics (the Code) is built around 3 main concepts, or pillars: trustworthiness, quality, and value. The following explains how we have applied the pillars of the Code in a proportionate way.</li>
+</ol>
+
+<ul>
+  <li>Trustworthiness - the figures are based on management information supplied to HM Treasury by accredited lenders for CBILS, CLBILS and BBLS and by British Business Bank for Future Fund and represent their best estimates of the published totals. To support the management of departmental business, figures have been seen in advance by ministers and officials. This is in line with the Code, where pre-release access does not apply for releases based on routine management information – as covered in paragraph 3.6 of the National Statistician’s guidance.</li>
+  <li>Quality - the information presented is provided by accredited lenders for CBILS, CLBILS and BBLS and by British Business Bank for Future Fund based on their management information. Quality assurance processes are built in the design of the templates and the data production processes in the Treasury.</li>
+  <li>Value - in publishing this data, we aim to support the information needs of society, parliamentarians and stakeholders. Business loan schemes are one part of the unprecedented support for public services, workers and businesses the Government has implemented to protect against the current economic emergency.</li>
+</ul>
+
+<p>See more statistics on coronavirus funding for businesses and self employed people <a href="https://www.gov.uk/government/collections/statistics-on-coronavirus-funding-for-business" class="govuk-link">here.</a></p>
+</div>
+</div>
+
+
+
+      </div>
+      <div class="responsive-bottom-margin">
+        <div class="app-c-published-dates app-c-published-dates--history" id="history" data-module="toggle" lang="en">
+    Published 27 May 2020
+    <br>Last updated 17 December 2020
+      <a href="#full-history" class="app-c-published-dates__toggle govuk-link" data-controls="full-history" data-expanded="false" data-toggled-text="- hide all updates">+ show all updates</a>
+      <div class="app-c-published-dates__change-history js-hidden" id="full-history">
+        <ol>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-12-17T09:30:12.000+00:00">17 December 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with Covid business loan scheme statistics up until 13 December.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-11-19T09:30:07.000+00:00">19 November 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with new data.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-10-22T09:30:05.000+01:00">22 October 2020</time>
+              <p class="app-c-published-dates__change-note">Updated 'HM Treasury coronavirus (COVID-19) business loan scheme statistics'.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-10-14T17:16:28.000+01:00">14 October 2020</time>
+              <p class="app-c-published-dates__change-note">Edited the date of the next release - now at 9.30am on Thursday 22 October.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-09-22T09:34:55.000+01:00">22 September 2020</time>
+              <p class="app-c-published-dates__change-note">Updated 'HM Treasury coronavirus (COVID-19) business loan scheme statistics'.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-08-18T09:30:03.000+01:00">18 August 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with weekly stats.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-08-11T09:30:07.000+01:00">11 August 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with weekly stats.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-08-07T00:15:03.000+01:00">7 August 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with: CBILS and BBLS data by constituency.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-08-04T09:30:03.000+01:00">4 August 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with weekly stats.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-07-28T09:30:05.000+01:00">28 July 2020</time>
+              <p class="app-c-published-dates__change-note">Updated weekly stats.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-07-21T09:30:04.000+01:00">21 July 2020</time>
+              <p class="app-c-published-dates__change-note">Added updated statistics.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-07-14T09:30:20.000+01:00">14 July 2020</time>
+              <p class="app-c-published-dates__change-note">Updated weekly stats from 12 July 2020.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-07-07T09:30:04.000+01:00">7 July 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with new figures for: CBILS, CLBILS, BBLS, Future Fund.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-06-30T09:30:05.000+01:00">30 June 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with new figures for: CBILS, CLBILS, BBLS, Future Fund.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-06-23T09:30:03.000+01:00">23 June 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with new figures for: CBILS, CLBILS, BBLS, Future Fund.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-06-16T09:30:02.000+01:00">16 June 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with new figures for: CBILS, CLBILS, BBLS, Future Fund.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-06-09T09:30:06.000+01:00">9 June 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with new figures for: CBILS, CLBILS, BBLS, Future Fund.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-06-02T09:30:02.000+01:00">2 June 2020</time>
+              <p class="app-c-published-dates__change-note">Updated with new figures for: CBILS, CLBILS, BBLS, Future Fund.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-05-29T10:57:57.000+01:00">29 May 2020</time>
+              <p class="app-c-published-dates__change-note">Added in HMT management information for Future Fund scheme.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-05-27T09:30:00.000+01:00">27 May 2020</time>
+              <p class="app-c-published-dates__change-note">First published.</p>
+            </li>
+        </ol>
+      </div>
+</div>
+
+      </div>
+
+  </div>
+  </div>
+  
+<div class="govuk-grid-column-one-third">
+  
+<div class="gem-c-contextual-sidebar">
+    
+
+<a class="govuk-link gem-c-contextual-sidebar__brexit-cta" data-module="track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="/transition" data-track-dimension="Check how the new Brexit rules affect you" data-track-dimension-index="29" lang="en" href="/transition">
+  <h2 class="gem-c-contextual-sidebar__brexit-heading">Brexit</h2>
+  <p class="gem-c-contextual-sidebar__brexit-text">Check how the new Brexit rules affect you</p>
+</a>
+
+
+    
+  <div class="gem-c-related-navigation">
+
+      <h2 id="related-nav-related_items-e62745fc" class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
+        Related content
+      </h2>
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-e62745fc" data-module="gem-toggle">
+
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.1 Related content" data-track-label="/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority" data-track-options='{"dimension28":"5","dimension29":"Coronavirus business grant funding by parliamentary constituency and local authority"}' href="/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding by parliamentary constituency and local authority</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.2 Related content" data-track-label="/guidance/apply-for-the-covid-19-corporate-financing-facility" data-track-options='{"dimension28":"5","dimension29":"Apply for the COVID-19 Corporate Financing Facility"}' href="/guidance/apply-for-the-covid-19-corporate-financing-facility">Apply for the COVID-19 Corporate Financing Facility</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.3 Related content" data-track-label="/guidance/apply-for-the-coronavirus-large-business-interruption-loan-scheme" data-track-options='{"dimension28":"5","dimension29":"Apply for the Coronavirus Large Business Interruption Loan Scheme"}' href="/guidance/apply-for-the-coronavirus-large-business-interruption-loan-scheme">Apply for the Coronavirus Large Business Interruption Loan Scheme</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.4 Related content" data-track-label="/guidance/coronavirus-support-for-business-from-outside-government" data-track-options='{"dimension28":"5","dimension29":"Coronavirus support for business from outside government"}' href="/guidance/coronavirus-support-for-business-from-outside-government">Coronavirus support for business from outside government</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar gem-c-related-navigation__section-link--inline  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.5 Related content" data-track-label="/government/publications/covid-19-business-rates-reliefs-by-parliamentary-constituency" data-track-options='{"dimension28":"5","dimension29":"COVID-19: business rates reliefs by parliamentary constituency"}' href="/government/publications/covid-19-business-rates-reliefs-by-parliamentary-constituency">COVID-19: business rates reliefs by parliamentary constituency</a></li>
+
+  </ul>
+</nav>
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-collections-e62745fc" data-module="gem-toggle">
+
+    <h3 id="related-nav-collections-e62745fc" class="gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--sidebar" data-track-count="sidebarRelatedItemSection">Collection</h3>
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar" data-track-category="relatedLinkClicked" data-track-action="2.1 Collection" data-track-label="/government/collections/statistics-on-coronavirus-funding-for-business" data-track-options='{"dimension28":"1","dimension29":"Statistics on coronavirus support for business and individuals"}' href="/government/collections/statistics-on-coronavirus-funding-for-business">Statistics on coronavirus support for business and individuals</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        
+  <div class="gem-c-contextual-footer">
+    
+  <div class="gem-c-related-navigation">
+
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-topics-03816322" data-module="gem-toggle">
+
+    <h2 id="related-nav-topics-03816322" class="gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--footer" data-track-count="footerRelatedItemSection">Explore the topic</h2>
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.1 Explore the topic" data-track-label="/business-and-industry" data-track-options='{"dimension28":"2","dimension29":"Business and industry"}' href="/business-and-industry">Business and industry</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.2 Explore the topic" data-track-label="/coronavirus-taxon/funding-and-support" data-track-options='{"dimension28":"2","dimension29":"Funding and support for businesses during coronavirus"}' href="/coronavirus-taxon/funding-and-support">Funding and support for businesses during coronavirus</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+  </div>
+
+
+    </div>
+  </div>
+
+
+    </main>
+    
+<div class="gem-c-feedback" data-module="feedback">
+  
+<div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+  <div class="gem-c-feedback__prompt-questions js-prompt-questions">
+    <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+    <!-- Maybe button exists only to try and capture clicks by bots -->
+    <button data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" style="display: none" hidden="hidden" aria-hidden="true">
+      Maybe
+    </button>
+    
+    <ul class="gem-c-feedback__option-list">
+      <li class="gem-c-feedback__option-list-item">
+        <button class="govuk-button gem-c-feedback__prompt-link js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick">
+          Yes <span class="govuk-visually-hidden">this page is useful</span>
+        </button>
+      </li>
+      <li class="gem-c-feedback__option-list-item">
+        <button class="govuk-button gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false">
+          No <span class="govuk-visually-hidden">this page is not useful</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="gem-c-feedback__prompt-questions gem-c-feedback__prompt-success js-prompt-success js-hidden" role="alert">
+    Thank you for your feedback
+  </div>
+  <div class="gem-c-feedback__prompt-questions gem-c-feedback__prompt-questions--something-is-wrong js-prompt-questions">
+    <button class="govuk-button gem-c-feedback__prompt-link js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV-UK Open Form" aria-controls="something-is-wrong" aria-expanded="false">
+      There is something wrong with this page
+    </button>
+  </div>
+</div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post">
+  <button class="govuk-button govuk-button--secondary gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true">
+    Close
+  </button>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+      <input type="hidden" name="url" value="https://www.gov.uk/government/collections/hm-treasury-coronavirus-covid-19-business-loan-scheme-statistics">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+      
+<div class="govuk-form-group">
+
+            
+  <label for="input-356f5c00" class="gem-c-label govuk-label">What were you doing?</label>
+
+
+
+
+
+
+
+    <input name="what_doing" class="gem-c-input govuk-input" id="input-356f5c00" type="text" aria-describedby="feedback_explanation">
+</div>
+
+      
+<div class="govuk-form-group">
+
+            
+  <label for="input-eb359947" class="gem-c-label govuk-label">What went wrong?</label>
+
+
+
+
+
+
+
+    <input name="what_wrong" class="gem-c-input govuk-input" id="input-eb359947" type="text">
+</div>
+
+      
+
+
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+    </div>
+  </div>
+</form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+  <button class="govuk-button govuk-button--secondary gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true">
+    Close
+  </button>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds" id="survey-wrapper">
+      <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+      <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+      <input name="email_survey_signup[survey_source]" type="hidden" value="/government/collections/hm-treasury-coronavirus-covid-19-business-loan-scheme-statistics">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+      
+<div class="govuk-form-group">
+
+            
+  <label for="input-6ffdb93a" class="gem-c-label govuk-label">Email address</label>
+
+
+
+
+
+
+
+    <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-6ffdb93a" type="email" autocomplete="email" aria-describedby="survey_explanation">
+</div>
+
+       
+
+
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+    </div>
+  </div>
+</form>
+
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+      <div class="govuk-width-container">
+        <div class="footer-container govuk-main-wrapper">
+              <div class="govuk-grid-row footer-categories" data-module="track-click">
+      <div class="govuk-grid-column-two-thirds">
+        <h2>Coronavirus (COVID-19)</h2>
+        <ul>
+          <li>
+            <a data-track-category="footerClicked" data-track-action="coronavirusLinks" data-track-label="Coronavirus (COVID-19): guidance and support" href="/coronavirus" class="govuk-link">
+               Coronavirus (COVID-19): guidance and support
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <h2>Brexit</h2>
+        <ul>
+          <li>
+            <a data-track-category="footerClicked" data-track-action="transitionLinks" data-track-label="Check how the new Brexit rules affect you" href="/transition" class="govuk-link">
+               Check how the new Brexit rules affect you
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-row footer-categories" data-module="track-click">
+      <div class="govuk-grid-column-two-thirds">
+        <h2>Services and information</h2>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <ul>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Benefits" href="/browse/benefits">
+                  Benefits
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Births, deaths, marriages and care" href="/browse/births-deaths-marriages">
+                  Births, deaths, marriages and care
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Business and self-employed" href="/browse/business">
+                  Business and self-employed
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="" href="/browse/childcare-parenting">
+                  Childcare and parenting
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Citizenship and living in the UK" href="/browse/citizenship">
+                  Citizenship and living in the UK
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Crime, justice and the law" href="/browse/justice">
+                  Crime, justice and the law
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Disabled people" href="/browse/disabilities">
+                  Disabled people
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Driving and transport" href="/browse/driving">
+                  Driving and transport
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <ul>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Education and learning" href="/browse/education">
+                  Education and learning
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Employing people" href="/browse/employing-people">
+                  Employing people
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Environment and countryside" href="/browse/environment-countryside">
+                  Environment and countryside
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Housing and local services" href="/browse/housing-local-services">
+                  Housing and local services
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Money and tax" href="/browse/tax">
+                  Money and tax
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Passports, travel and living abroad" href="/browse/abroad">
+                  Passports, travel and living abroad
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Visas and immigration" href="/browse/visas-immigration">
+                  Visas and immigration
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Working, jobs and pensions" href="/browse/working">
+                  Working, jobs and pensions
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="How government works" href="/government/how-government-works">
+              How government works
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Departments" href="/government/organisations">
+              Departments
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Worldwide" href="/world">
+              Worldwide
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Services" href="/search/services">
+              Services
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Guidance and regulation" href="/search/guidance-and-regulation">
+              Guidance and regulation
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="News and communications" href="/search/news-and-communications">
+              News and communications
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Research and statistics" href="/search/research-and-statistics">
+              Research and statistics
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Policy papers and consultations" href="/search/policy-papers-and-consultations">
+              Policy papers and consultations
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Transparency and freedom of information releases" href="/search/transparency-and-freedom-of-information-releases">
+              Transparency and freedom of information releases
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+          <div class="footer-meta">
+            <div class="footer-meta-inner">
+                <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a class="govuk-link" href="/help">Help</a></li>
+  <li><a class="govuk-link" href="/help/privacy-notice">Privacy</a></li>
+  <li><a class="govuk-link" href="/help/cookies">Cookies</a></li>
+  <li><a class="govuk-link" href="/contact">Contact</a></li>
+  <li><a class="govuk-link" href="/help/accessibility-statement">Accessibility statement</a></li>
+  <li><a class="govuk-link" href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a class="govuk-link" href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>
+    Built by the
+    <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-link">
+      Government Digital Service
+    </a>
+  </li>
+</ul>
+
+
+
+              <div class="open-government-licence">
+                <p class="logo">
+                  <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="govuk-link open-government-licence__logo-link">
+                    Open Government Licence
+                  </a>
+                </p>
+                  <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="govuk-link">Open Government Licence v3.0</a>, except where otherwise stated</p>
+              </div>
+            </div>
+
+            <div class="copyright">
+              <a class="govuk-link" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+                 © Crown copyright
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+        <script src="https://www.gov.uk/assets/static/global-bar-init-8937018756a61669aeb0eb79274b88cfdcb3ef4b32093b7a72b00776d61b1135.js"></script>
+    <script>
+      if (GOVUK.globalBarInit) {
+        window.GOVUK.globalBarInit.init()
+      }
+    </script>
+  <script src="https://www.gov.uk/assets/static/libs/jquery/jquery-1.12.4-c731c20e2995c576b0509d3bd776f7ab64a66b95363a3b5fae9864299ee594ed.js"></script>
+<script src="https://www.gov.uk/assets/static/header-footer-only-f3ca9f5744a1346a673f6e1f6e4718387458bf7290b2f8e80be700fd1ef1e786.js"></script>
+<script src="https://www.gov.uk/assets/static/surveys-b5737b46c55d5682514456a1bf0cea2075accf1fb9a09c790d988346bdadba95.js"></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="/assets/government-frontend/application-09c2711b945df4f236974198f4f548b96c1e36db334900caddc2454ee0dd0b0e.js"></script><script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.gov.uk/government/collections/hm-treasury-coronavirus-covid-19-business-loan-scheme-statistics"
+  },
+  "name": "HM Treasury coronavirus (COVID-19) business loan scheme statistics",
+  "datePublished": "2020-05-27T08:30:00.000+00:00",
+  "dateModified": "2020-12-17T09:30:12.000+00:00",
+  "text": "HMT management information about the Coronavirus Business Interruption Loan Scheme (CBILS), Coronavirus Large Business Interruption Loan Scheme (CLBILS), Bounce Back Loan Scheme (BBLS) and Future Fund Scheme. ",
+  "publisher": {
+    "@type": "Organization",
+    "name": "GOV.UK",
+    "url": "https://www.gov.uk",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-logo-e5962881254c9adb48f94d2f627d3bb67f258a6cbccc969e80abb7bbe4622976.png"
+    }
+  },
+  "image": [
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-5ceffac04f7f6d4f421bd1d36dbb723ef48c15426d7f77f90be80a83af3c747e.png",
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-4x3-fcfe16abb1a015848e50d2ea797666a9eaf5158dca38ddfb1e52dc8c0543ab74.png",
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-16x9-fcf616879a7b37970df4d2117de962e08f7d057674ef1af6063dcdd529424eee.png"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "HM Treasury",
+    "url": "https://www.gov.uk/government/organisations/hm-treasury"
+  },
+  "isPartOf": [
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gov.uk/government/collections/statistics-on-coronavirus-funding-for-business"
+    }
+  ],
+  "about": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Thing",
+      "sameAs": "https://www.gov.uk/business-and-industry"
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Thing",
+      "sameAs": "https://www.gov.uk/coronavirus-taxon/funding-and-support"
+    }
+  ],
+  "headLine": "HM Treasury coronavirus (COVID-19) business loan scheme statistics",
+  "description": "HMT management information about the Coronavirus Business Interruption Loan Scheme (CBILS), Coronavirus Large Business Interruption Loan Scheme (CLBILS), Bounce Back Loan Scheme (BBLS) and Future Fund Scheme. ",
+  "articleBody": "\u003cdiv class=\"govspeak\"\u003e\u003ch2 id=\"contents\"\u003eContents\u003c/h2\u003e\n\n\u003col\u003e\n  \u003cli\u003e\u003ca href=\"#Publication-plans\" class=\"govuk-link\"\u003ePublication plans\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"#Coronavirus-Business-Interruption-Loan-Scheme\" class=\"govuk-link\"\u003eCoronavirus Business Interruption Loan Scheme (CBILS)\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"#Coronavirus-Large-Business-Interruption-Loan-Scheme\" class=\"govuk-link\"\u003eCoronavirus Large Business Interruption Loan Scheme (CLBILS)\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"#Bounce-Back-Loan-Scheme\" class=\"govuk-link\"\u003eBounce Back Loan Scheme (BBLS)\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"#Future-Fund\" class=\"govuk-link\"\u003eFuture Fund\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\n\u003ch2 id=\"publication-plans\"\u003ePublication plans\u003c/h2\u003e\n\n\u003cp id=\"Publication-plans\"\u003eHMT will publish management information each Tuesday for each of the four schemes (CBILS, CLBILS, BBLS, Future Fund), including:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003ethe total number of applications\u003c/li\u003e\n  \u003cli\u003ethe number of approved applications\u003c/li\u003e\n  \u003cli\u003ethe value of loans approved\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThis information will now be published monthly with the next release at 9.30am on 28 January.\u003c/p\u003e\n\n\u003cp\u003eThe applications figure includes:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eapproved applications\u003c/li\u003e\n  \u003cli\u003eapplications that are still to be processed\u003c/li\u003e\n  \u003cli\u003eapplications that have been declined or turn out not to be eligible\u003c/li\u003e\n  \u003cli\u003ewithdrawn applications, where borrowers decide not to proceed\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eFor CBILS, this number will also include a number of applications that have subsequently been converted to applications for the BBLS scheme.\u003c/p\u003e\n\n\u003cp\u003eFor Future Fund, the number of applications includes only those where both a company and their lead investor have submitted information.\u003c/p\u003e\n\n\u003cp\u003eThe CBILS scheme launched on 23 March 2020. This management information only begins from 10 May. UK Finance published data before this period on lending by UK Finance members. This information is available \u003ca rel=\"external\" href=\"https://www.ukfinance.org.uk/sites/default/files/uploads/Data%20(XLS%20and%20PDF)/CBILS%20Data%20Table%207%20May%202020.xlsx\" class=\"govuk-link\"\u003ehere.\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2 id=\"coronavirus-business-interruption-loan-scheme-cbils\"\u003eCoronavirus Business Interruption Loan Scheme (CBILS)\u003c/h2\u003e\n\n\u003ctable id=\"Coronavirus-Business-Interruption-Loan-Scheme\"\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth scope=\"col\"\u003eData up to close of business\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eValue of Facilities Approved\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eNumber of Facilities Approved\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eTotal Number of Applications\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e10 May\u003c/td\u003e\n      \u003ctd\u003e£6.09bn\u003c/td\u003e\n      \u003ctd\u003e35,919\u003c/td\u003e\n      \u003ctd\u003e64,531\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e17 May\u003c/td\u003e\n      \u003ctd\u003e£7.25bn\u003c/td\u003e\n      \u003ctd\u003e40,564\u003c/td\u003e\n      \u003ctd\u003e81,124\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e24 May\u003c/td\u003e\n      \u003ctd\u003e£8.15bn\u003c/td\u003e\n      \u003ctd\u003e43,045\u003c/td\u003e\n      \u003ctd\u003e84,607\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e31 May\u003c/td\u003e\n      \u003ctd\u003e£8.92bn\u003c/td\u003e\n      \u003ctd\u003e45,843\u003c/td\u003e\n      \u003ctd\u003e89,724\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e7 June\u003c/td\u003e\n      \u003ctd\u003e£9.56bn\u003c/td\u003e\n      \u003ctd\u003e47,650\u003c/td\u003e\n      \u003ctd\u003e93,305\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e14 June\u003c/td\u003e\n      \u003ctd\u003e£10.11bn\u003c/td\u003e\n      \u003ctd\u003e49,247\u003c/td\u003e\n      \u003ctd\u003e96,492\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e21 June\u003c/td\u003e\n      \u003ctd\u003e£10.53bn\u003c/td\u003e\n      \u003ctd\u003e50,482\u003c/td\u003e\n      \u003ctd\u003e98,975\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e28 June\u003c/td\u003e\n      \u003ctd\u003e£11.07bn\u003c/td\u003e\n      \u003ctd\u003e52,275\u003c/td\u003e\n      \u003ctd\u003e104,569\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e5 July\u003c/td\u003e\n      \u003ctd\u003e£11.49bn\u003c/td\u003e\n      \u003ctd\u003e53,536\u003c/td\u003e\n      \u003ctd\u003e107,309\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e12 July\u003c/td\u003e\n      \u003ctd\u003e£11.85bn\u003c/td\u003e\n      \u003ctd\u003e54,538\u003c/td\u003e\n      \u003ctd\u003e109,235\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e19 July\u003c/td\u003e\n      \u003ctd\u003e£12.20bn\u003c/td\u003e\n      \u003ctd\u003e55,674\u003c/td\u003e\n      \u003ctd\u003e112,212\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e26 July\u003c/td\u003e\n      \u003ctd\u003e£12.65bn\u003c/td\u003e\n      \u003ctd\u003e57,234\u003c/td\u003e\n      \u003ctd\u003e115,941\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e2 August\u003c/td\u003e\n      \u003ctd\u003e£13.08bn\u003c/td\u003e\n      \u003ctd\u003e58,595\u003c/td\u003e\n      \u003ctd\u003e119,248\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e9 August\u003c/td\u003e\n      \u003ctd\u003e£13.41bn\u003c/td\u003e\n      \u003ctd\u003e59,520\u003c/td\u003e\n      \u003ctd\u003e121,669\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e16 August\u003c/td\u003e\n      \u003ctd\u003e£13.68bn\u003c/td\u003e\n      \u003ctd\u003e60,409\u003c/td\u003e\n      \u003ctd\u003e122,885\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e20 September\u003c/td\u003e\n      \u003ctd\u003e£15.45bn\u003c/td\u003e\n      \u003ctd\u003e66,585\u003c/td\u003e\n      \u003ctd\u003e142,076\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e18 October\u003c/td\u003e\n      \u003ctd\u003e£17.16bn\u003c/td\u003e\n      \u003ctd\u003e73,094\u003c/td\u003e\n      \u003ctd\u003e159,277\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e15 November\u003c/td\u003e\n      \u003ctd\u003e£18.46bn\u003c/td\u003e\n      \u003ctd\u003e77,909\u003c/td\u003e\n      \u003ctd\u003e173,556\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e13 December\u003c/td\u003e\n      \u003ctd\u003e£19.64bn\u003c/td\u003e\n      \u003ctd\u003e82,618\u003c/td\u003e\n      \u003ctd\u003e186,522\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2 id=\"coronavirus-large-business-interruption-loan-scheme-clbils\"\u003eCoronavirus Large Business Interruption Loan Scheme (CLBILS)\u003c/h2\u003e\n\n\u003ctable id=\"Coronavirus-Large-Business-Interruption-Loan-Scheme\"\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth scope=\"col\"\u003eData up to close of business\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eValue of Facilities Approved\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eNumber of Facilities Approved\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eTotal Number of Applications\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e10 May\u003c/td\u003e\n      \u003ctd\u003e£0.36bn\u003c/td\u003e\n      \u003ctd\u003e59\u003c/td\u003e\n      \u003ctd\u003e450\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e17 May\u003c/td\u003e\n      \u003ctd\u003e£0.59bn\u003c/td\u003e\n      \u003ctd\u003e86\u003c/td\u003e\n      \u003ctd\u003e496\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e24 May\u003c/td\u003e\n      \u003ctd\u003e£0.82bn\u003c/td\u003e\n      \u003ctd\u003e154\u003c/td\u003e\n      \u003ctd\u003e502\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e31 May\u003c/td\u003e\n      \u003ctd\u003e£1.11bn\u003c/td\u003e\n      \u003ctd\u003e191\u003c/td\u003e\n      \u003ctd\u003e579\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e7 June\u003c/td\u003e\n      \u003ctd\u003e£1.57bn\u003c/td\u003e\n      \u003ctd\u003e244\u003c/td\u003e\n      \u003ctd\u003e615\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e14 June\u003c/td\u003e\n      \u003ctd\u003e£1.77bn\u003c/td\u003e\n      \u003ctd\u003e279\u003c/td\u003e\n      \u003ctd\u003e661\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e21 June\u003c/td\u003e\n      \u003ctd\u003e£2.10bn\u003c/td\u003e\n      \u003ctd\u003e315\u003c/td\u003e\n      \u003ctd\u003e709\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e28 June\u003c/td\u003e\n      \u003ctd\u003e£2.33bn\u003c/td\u003e\n      \u003ctd\u003e359\u003c/td\u003e\n      \u003ctd\u003e745\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e5 July\u003c/td\u003e\n      \u003ctd\u003e£2.58bn\u003c/td\u003e\n      \u003ctd\u003e394\u003c/td\u003e\n      \u003ctd\u003e783\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e12 July\u003c/td\u003e\n      \u003ctd\u003e£2.73bn\u003c/td\u003e\n      \u003ctd\u003e412\u003c/td\u003e\n      \u003ctd\u003e809\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e19 July\u003c/td\u003e\n      \u003ctd\u003e£2.89bn\u003c/td\u003e\n      \u003ctd\u003e428\u003c/td\u003e\n      \u003ctd\u003e831\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e26 July\u003c/td\u003e\n      \u003ctd\u003e£3.10bn\u003c/td\u003e\n      \u003ctd\u003e457\u003c/td\u003e\n      \u003ctd\u003e872\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e2 August\u003c/td\u003e\n      \u003ctd\u003e£3.27bn\u003c/td\u003e\n      \u003ctd\u003e482\u003c/td\u003e\n      \u003ctd\u003e887\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e9 August\u003c/td\u003e\n      \u003ctd\u003e£3.40bn\u003c/td\u003e\n      \u003ctd\u003e497\u003c/td\u003e\n      \u003ctd\u003e896\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e16 August\u003c/td\u003e\n      \u003ctd\u003e£3.50bn\u003c/td\u003e\n      \u003ctd\u003e516\u003c/td\u003e\n      \u003ctd\u003e938\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e20 September\u003c/td\u003e\n      \u003ctd\u003e£3.84bn\u003c/td\u003e\n      \u003ctd\u003e566\u003c/td\u003e\n      \u003ctd\u003e992\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e18 October\u003c/td\u003e\n      \u003ctd\u003e£4.57bn\u003c/td\u003e\n      \u003ctd\u003e623\u003c/td\u003e\n      \u003ctd\u003e1,034\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e15 November\u003c/td\u003e\n      \u003ctd\u003e£4.84bn\u003c/td\u003e\n      \u003ctd\u003e658\u003c/td\u003e\n      \u003ctd\u003e1,065\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e13 December\u003c/td\u003e\n      \u003ctd\u003e£4.97bn\u003c/td\u003e\n      \u003ctd\u003e675\u003c/td\u003e\n      \u003ctd\u003e1,077\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2 id=\"bounce-back-loan-scheme-bbls\"\u003eBounce Back Loan Scheme (BBLS)\u003c/h2\u003e\n\n\u003ctable id=\"Bounce-Back-Loan-Scheme\"\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth scope=\"col\"\u003eData up to close of business\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eValue of Facilities Approved\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eNumber of Facilities Approved\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eTotal Number of Applications\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e10 May\u003c/td\u003e\n      \u003ctd\u003e£8.38bn\u003c/td\u003e\n      \u003ctd\u003e268,173\u003c/td\u003e\n      \u003ctd\u003e363,646\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e17 May\u003c/td\u003e\n      \u003ctd\u003e£14.18bn\u003c/td\u003e\n      \u003ctd\u003e464,393\u003c/td\u003e\n      \u003ctd\u003e581,516\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e24 May\u003c/td\u003e\n      \u003ctd\u003e£18.49bn\u003c/td\u003e\n      \u003ctd\u003e608,069\u003c/td\u003e\n      \u003ctd\u003e769,137\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e31 May\u003c/td\u003e\n      \u003ctd\u003e£21.29bn\u003c/td\u003e\n      \u003ctd\u003e699,354\u003c/td\u003e\n      \u003ctd\u003e873,192\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e7 June\u003c/td\u003e\n      \u003ctd\u003e£23.78bn\u003c/td\u003e\n      \u003ctd\u003e782,246\u003c/td\u003e\n      \u003ctd\u003e964,414\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e14 June\u003c/td\u003e\n      \u003ctd\u003e£26.34bn\u003c/td\u003e\n      \u003ctd\u003e863,584\u003c/td\u003e\n      \u003ctd\u003e1,057,130\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e21 June\u003c/td\u003e\n      \u003ctd\u003e£28.09bn\u003c/td\u003e\n      \u003ctd\u003e921,229\u003c/td\u003e\n      \u003ctd\u003e1,123,683\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e28 June\u003c/td\u003e\n      \u003ctd\u003e£29.51bn\u003c/td\u003e\n      \u003ctd\u003e967,321\u003c/td\u003e\n      \u003ctd\u003e1,186,006\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e5 July\u003c/td\u003e\n      \u003ctd\u003e£30.93bn\u003c/td\u003e\n      \u003ctd\u003e1,013,410\u003c/td\u003e\n      \u003ctd\u003e1,240,701\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e12 July\u003c/td\u003e\n      \u003ctd\u003e£31.70bn\u003c/td\u003e\n      \u003ctd\u003e1,047,611\u003c/td\u003e\n      \u003ctd\u003e1,282,639\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e19 July\u003c/td\u003e\n      \u003ctd\u003e£32.79bn\u003c/td\u003e\n      \u003ctd\u003e1,084,153\u003c/td\u003e\n      \u003ctd\u003e1,316,970\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e26 July\u003c/td\u003e\n      \u003ctd\u003e£33.68bn\u003c/td\u003e\n      \u003ctd\u003e1,113,312\u003c/td\u003e\n      \u003ctd\u003e1,349,051\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e2 August\u003c/td\u003e\n      \u003ctd\u003e£34.34bn\u003c/td\u003e\n      \u003ctd\u003e1,135,575\u003c/td\u003e\n      \u003ctd\u003e1,377,955\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e9 August\u003c/td\u003e\n      \u003ctd\u003e£34.96bn\u003c/td\u003e\n      \u003ctd\u003e1,157,296\u003c/td\u003e\n      \u003ctd\u003e1,404,726\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e16 August\u003c/td\u003e\n      \u003ctd\u003e£35.47bn\u003c/td\u003e\n      \u003ctd\u003e1,174,854\u003c/td\u003e\n      \u003ctd\u003e1,430,017\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e20 September\u003c/td\u003e\n      \u003ctd\u003e£38.02bn\u003c/td\u003e\n      \u003ctd\u003e1,260,940\u003c/td\u003e\n      \u003ctd\u003e1,552,727\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e18 October\u003c/td\u003e\n      \u003ctd\u003e£40.20bn\u003c/td\u003e\n      \u003ctd\u003e1,336,320\u003c/td\u003e\n      \u003ctd\u003e1,660,845\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e15 November\u003c/td\u003e\n      \u003ctd\u003e£42.18bn\u003c/td\u003e\n      \u003ctd\u003e1,397,475\u003c/td\u003e\n      \u003ctd\u003e1,766,768\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e13 December\u003c/td\u003e\n      \u003ctd\u003e£43.54bn*\u003c/td\u003e\n      \u003ctd\u003e1,431,987\u003c/td\u003e\n      \u003ctd\u003e1,887,967\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003cp\u003e*The value of BBLS facilities approved includes BBLS loans which have been ‘topped-up’ – that is, as announced on 2 November, BBLS borrowers who took out less than their maximum under the scheme rules (the lesser of £50,000 or 25% of their turnover) in their first loan application can top-up their loan up to the maximum. As of 13 December, 62,311 BBLS top-ups had been approved worth £0.56 billion.\u003c/p\u003e\n\n\u003cp\u003eOne topped up loan will still be reported as one loan to avoid double counting the number of facilities approved. (e.g. if there were previously two facilities worth £40,000 each and subsequently one had been topped up to £50,000, this would now be reported as two facilities worth a total of £90,000).\u003c/p\u003e\n\n\u003ch2 id=\"cbils-and-bbls-data-by-constituency\"\u003eCBILS and BBLS data by constituency\u003c/h2\u003e\n\u003cp\u003e\u003ca rel=\"external\" href=\"https://www.british-business-bank.co.uk/coronavirus-loan-schemes-benefiting-businesses-in-all-corners-of-uk-reveals-new-analysis-from-british-business-bank/\" class=\"govuk-link\"\u003eStatistics from British Business Bank\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2 id=\"future-fund\"\u003eFuture Fund\u003c/h2\u003e\n\n\u003ctable id=\"Future-Fund\"\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth scope=\"col\"\u003eData up to close of business\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eTotal number of applications\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eNumber of convertible loans approved\u003c/th\u003e\n      \u003cth scope=\"col\"\u003eValue of convertible loans approved\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e27 May\u003c/td\u003e\n      \u003ctd\u003e419\u003c/td\u003e\n      \u003ctd\u003en/a\u003c/td\u003e\n      \u003ctd\u003en/a\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e31 May\u003c/td\u003e\n      \u003ctd\u003e464\u003c/td\u003e\n      \u003ctd\u003en/a\u003c/td\u003e\n      \u003ctd\u003en/a\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e7 June\u003c/td\u003e\n      \u003ctd\u003e533\u003c/td\u003e\n      \u003ctd\u003e53\u003c/td\u003e\n      \u003ctd\u003e£55.9m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e14 June\u003c/td\u003e\n      \u003ctd\u003e577\u003c/td\u003e\n      \u003ctd\u003e155\u003c/td\u003e\n      \u003ctd\u003e£146.0m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e21 June\u003c/td\u003e\n      \u003ctd\u003e623\u003c/td\u003e\n      \u003ctd\u003e252\u003c/td\u003e\n      \u003ctd\u003e£236.2m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e28 June\u003c/td\u003e\n      \u003ctd\u003e674\u003c/td\u003e\n      \u003ctd\u003e322\u003c/td\u003e\n      \u003ctd\u003e£320.6m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e5 July\u003c/td\u003e\n      \u003ctd\u003e722\u003c/td\u003e\n      \u003ctd\u003e376\u003c/td\u003e\n      \u003ctd\u003e£379.9m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e12 July\u003c/td\u003e\n      \u003ctd\u003e750\u003c/td\u003e\n      \u003ctd\u003e429\u003c/td\u003e\n      \u003ctd\u003e£419.6m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e19 July\u003c/td\u003e\n      \u003ctd\u003e781\u003c/td\u003e\n      \u003ctd\u003e465\u003c/td\u003e\n      \u003ctd\u003e£468.7m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e26 July\u003c/td\u003e\n      \u003ctd\u003e816\u003c/td\u003e\n      \u003ctd\u003e510\u003c/td\u003e\n      \u003ctd\u003e£512.9m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e2 August\u003c/td\u003e\n      \u003ctd\u003e839\u003c/td\u003e\n      \u003ctd\u003e537\u003c/td\u003e\n      \u003ctd\u003e£534.0m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e9 August\u003c/td\u003e\n      \u003ctd\u003e868\u003c/td\u003e\n      \u003ctd\u003e565\u003c/td\u003e\n      \u003ctd\u003e£562.3m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e16 August\u003c/td\u003e\n      \u003ctd\u003e902\u003c/td\u003e\n      \u003ctd\u003e590\u003c/td\u003e\n      \u003ctd\u003e£588.3m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e20 September\u003c/td\u003e\n      \u003ctd\u003e1,072\u003c/td\u003e\n      \u003ctd\u003e711\u003c/td\u003e\n      \u003ctd\u003e£720.0m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e18 October\u003c/td\u003e\n      \u003ctd\u003e1,243\u003c/td\u003e\n      \u003ctd\u003e745\u003c/td\u003e\n      \u003ctd\u003e£770.8m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e15 November\u003c/td\u003e\n      \u003ctd\u003e1,325\u003c/td\u003e\n      \u003ctd\u003e874\u003c/td\u003e\n      \u003ctd\u003e£875.8m\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e13 December\u003c/td\u003e\n      \u003ctd\u003e1,432\u003c/td\u003e\n      \u003ctd\u003e971\u003c/td\u003e\n      \u003ctd\u003e£975.5m\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch4 id=\"notes\"\u003eNotes\u003c/h4\u003e\n\n\u003col\u003e\n  \u003cli\u003eThe management information for CBILS, CLBILS and BBLS is reported on behalf of accredited lenders. For Future Fund this is reported on behalf of the British Business Bank. HM Treasury accepts no responsibility for the accuracy of these figures.\u003c/li\u003e\n  \u003cli\u003eFigures for CBILS, CLBILS and BBLS show cumulative applications and approvals up to close of business on 13 December 2020 by accredited lenders, as reported to HM Treasury by close of business 14 December 2020.\u003c/li\u003e\n  \u003cli\u003eA full list of accredited lenders for CBILS, CLBILS and BBLS can be found \u003ca rel=\"external\" href=\"https://www.british-business-bank.co.uk/ourpartners/coronavirus-business-interruption-loan-scheme-cbils-2/current-accredited-lenders-and-partners/\" class=\"govuk-link\"\u003ehere.\u003c/a\u003e\n\u003c/li\u003e\n  \u003cli\u003eManagement information (MI) are not classified as statistics. The MI in this release reflects timely information and do not suffer from lag effects. However, the trend from weekly figures may show some volatility. Moreover, these are initial figures which have not been rigorously quality assured and do not include data from all accredited lenders.\u003c/li\u003e\n  \u003cli\u003eUK Finance have also previously published MI on CBILS, but this only covers accredited lenders which are members of UK Finance. This data is available \u003ca rel=\"external\" href=\"https://www.ukfinance.org.uk/sites/default/files/uploads/Data%20(XLS%20and%20PDF)/CBILS%20Data%20Table%207%20May%202020.xlsx\" class=\"govuk-link\"\u003ehere.\u003c/a\u003e\n\u003c/li\u003e\n  \u003cli\u003eFuture Fund opened for applications on 20 May 2020. Provided that applicants provide the information required during the application process in a timely manner, it is expected that the process will take a minimum of 21 days from initial application to funding being made available. Convertible loans are reported as approved at the point the Convertible Loan Agreement document is issued by Future Fund for signature. The time to applicants subsequently receiving funds will depend on the speed with which they complete the documentation.\u003c/li\u003e\n  \u003cli\u003eThe Code of Practice for Statistics (the Code) is built around 3 main concepts, or pillars: trustworthiness, quality, and value. The following explains how we have applied the pillars of the Code in a proportionate way.\u003c/li\u003e\n\u003c/ol\u003e\n\n\u003cul\u003e\n  \u003cli\u003eTrustworthiness - the figures are based on management information supplied to HM Treasury by accredited lenders for CBILS, CLBILS and BBLS and by British Business Bank for Future Fund and represent their best estimates of the published totals. To support the management of departmental business, figures have been seen in advance by ministers and officials. This is in line with the Code, where pre-release access does not apply for releases based on routine management information – as covered in paragraph 3.6 of the National Statistician’s guidance.\u003c/li\u003e\n  \u003cli\u003eQuality - the information presented is provided by accredited lenders for CBILS, CLBILS and BBLS and by British Business Bank for Future Fund based on their management information. Quality assurance processes are built in the design of the templates and the data production processes in the Treasury.\u003c/li\u003e\n  \u003cli\u003eValue - in publishing this data, we aim to support the information needs of society, parliamentarians and stakeholders. Business loan schemes are one part of the unprecedented support for public services, workers and businesses the Government has implemented to protect against the current economic emergency.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eSee more statistics on coronavirus funding for businesses and self employed people \u003ca href=\"https://www.gov.uk/government/collections/statistics-on-coronavirus-funding-for-business\" class=\"govuk-link\"\u003ehere.\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e"
+}
+</script><script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Home",
+        "@id": "https://www.gov.uk/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Business and industry",
+        "@id": "https://www.gov.uk/business-and-industry"
+      }
+    }
+  ]
+}
+</script><script type="application/ld+json">
+    {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Home",
+        "@id": "https://www.gov.uk/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Support for businesses and self-employed people during coronavirus",
+        "@id": "https://www.gov.uk/coronavirus-taxon/businesses-and-self-employed-people"
+      }
+    }
+  ]
+}
+  </script>
+</body>
+</html>

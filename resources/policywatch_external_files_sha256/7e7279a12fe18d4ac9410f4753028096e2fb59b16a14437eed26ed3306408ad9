@@ -1,0 +1,837 @@
+
+
+
+<!--DOCTYPE html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml"> 
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+
+<script id="MyCookieConsent" type="text/javascript">
+    var myURL = window.location.href;
+
+    if (myURL.indexOf("winpanel") == -1) {
+        !function () { if (!window.hasCookieConsent) { window.hasCookieConsent = !0; var e = "cookieconsent_options", t = "update_cookieconsent_options", n = "cookieconsent_dismissed", i = "//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/"; if (!(document.cookie.indexOf(n) > -1)) { "function" != typeof String.prototype.trim && (String.prototype.trim = function () { return this.replace(/^\s+|\s+$/g, "") }); var o, s = { isArray: function (e) { var t = Object.prototype.toString.call(e); return "[object Array]" == t }, isObject: function (e) { return "[object Object]" == Object.prototype.toString.call(e) }, each: function (e, t, n, i) { if (s.isObject(e) && !i) for (var o in e) e.hasOwnProperty(o) && t.call(n, e[o], o, e); else for (var r = 0, c = e.length; c > r; r++) t.call(n, e[r], r, e) }, merge: function (e, t) { e && s.each(t, function (t, n) { s.isObject(t) && s.isObject(e[n]) ? s.merge(e[n], t) : e[n] = t }) }, bind: function (e, t) { return function () { return e.apply(t, arguments) } }, queryObject: function (e, t) { var n, i = 0, o = e; for (t = t.split("."); (n = t[i++]) && o.hasOwnProperty(n) && (o = o[n]); ) if (i === t.length) return o; return null }, setCookie: function (e, t, n, i, o) { n = n || 365; var s = new Date; s.setDate(s.getDate() + n); var r = [e + "=" + t, "expires=" + s.toUTCString(), "path=" + o || "/"]; i && r.push("domain=" + i), document.cookie = r.join(";") }, addEventListener: function (e, t, n) { e.addEventListener ? e.addEventListener(t, n) : e.attachEvent("on" + t, n) } }, r = function () { var e = "data-cc-event", t = "data-cc-if", n = function (e, t, i) { return s.isArray(t) ? s.each(t, function (t) { n(e, t, i) }) : void (e.addEventListener ? e.addEventListener(t, i) : e.attachEvent("on" + t, i)) }, i = function (e, t) { return e.replace(/\{\{(.*?)\}\}/g, function (e, n) { for (var i, o, r = n.split("||"); o = r.shift(); ) { if (o = o.trim(), '"' === o[0]) return o.slice(1, o.length - 1); if (i = s.queryObject(t, o)) return i } return "" }) }, o = function (e) { var t = document.createElement("div"); return t.innerHTML = e, t.children[0] }, r = function (e, t, n) { var i = e.parentNode.querySelectorAll("[" + t + "]"); s.each(i, function (e) { var i = e.getAttribute(t); n(e, i) }, window, !0) }, c = function (t, i) { r(t, e, function (e, t) { var o = t.split(":"), r = s.queryObject(i, o[1]); n(e, o[0], s.bind(r, i)) }) }, a = function (e, n) { r(e, t, function (e, t) { var i = s.queryObject(n, t); i || e.parentNode.removeChild(e) }) }; return { build: function (e, t) { s.isArray(e) && (e = e.join("")), e = i(e, t); var n = o(e); return c(n, t), a(n, t), n } } } (), c = { options: { message: "This website uses cookies to ensure you get the best experience on our website. ", dismiss: "Got it!", learnMore: "More info", link: null, target: "_self", container: null, theme: "light-floating", domain: null, path: "/", expiryDays: 365, markup: ['<div class="cc_banner-wrapper {{containerClasses}}">', '<div class="cc_banner cc_container cc_container--open">', '<a href="#null" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">{{options.dismiss}}</a>', '<p class="cc_message">{{options.message}} <a data-cc-if="options.link" target="{{ options.target }}" class="cc_more_info" href="{{options.link || "#null"}}">{{options.learnMore}}</a></p>', '<a class="cc_logo" target="_blank" href="http://silktide.com/cookieconsent">Cookie Consent plugin for the EU cookie law</a>', "</div>", "</div>"] }, init: function () { var t = window[e]; t && this.setOptions(t), this.setContainer(), this.options.theme ? this.loadTheme(this.render) : this.render() }, setOptionsOnTheFly: function (e) { this.setOptions(e), this.render() }, setOptions: function (e) { s.merge(this.options, e) }, setContainer: function () { this.options.container ? this.container = document.querySelector(this.options.container) : this.container = document.body, this.containerClasses = "", navigator.appVersion.indexOf("MSIE 8") > -1 && (this.containerClasses += " cc_ie8") }, loadTheme: function (e) { var t = this.options.theme; -1 === t.indexOf(".css") && (t = i + t + ".css"); var n = document.createElement("link"); n.rel = "stylesheet", n.type = "text/css", n.href = t; var o = !1; n.onload = s.bind(function () { !o && e && (e.call(this), o = !0) }, this), document.getElementsByTagName("head")[0].appendChild(n) }, render: function () { this.element && this.element.parentNode && (this.element.parentNode.removeChild(this.element), delete this.element), this.element = r.build(this.options.markup, this), this.container.firstChild ? this.container.insertBefore(this.element, this.container.firstChild) : this.container.appendChild(this.element) }, dismiss: function (e) { e.preventDefault && e.preventDefault(), e.returnValue = !1, this.setDismissedCookie(), this.container.removeChild(this.element) }, setDismissedCookie: function () { s.setCookie(n, "yes", this.options.expiryDays, this.options.domain, this.options.path) } }, a = !1; (o = function () { a || "complete" != document.readyState || (c.init(), a = !0, window[t] = s.bind(c.setOptionsOnTheFly, c)) })(), s.addEventListener(document, "readystatechange", o) } } } ();
+        // window.cookieconsent_options = { "message": "Αυτή η ιστοσελίδα χρησιμοποιεί cookies για βελτίωση της χρηστικότητας της. Χρησιμοποιώντας την ιστοσελίδα μας δίνεται τη συγκαταθεση σας για την εγκατάσταση των cookies στον υπολογιστή σας με βάση την νομοθεσία περί cookies.", "dismiss": "Εντάξει", "learnMore": "περισσότερα...", "link": "http://www.moec.gov.cy", "theme": "dark-top" };
+        window.cookieconsent_options = { "message": "Αυτή η ιστοσελίδα χρησιμοποιεί cookies για βελτίωση της χρηστικότητας της. Χρησιμοποιώντας την ιστοσελίδα μας δίνεται τη συγκαταθεση σας για την εγκατάσταση των cookies στον υπολογιστή σας με βάση την νομοθεσία περί cookies.", "dismiss": "Εντάξει", "theme": "dark-bottom" };
+    }
+</script>
+
+<!--script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+<head id="ctl00_ctl00_Head1"><link rel="stylesheet" type="text/css" href="/DXR.axd?r=0_855,1_67,1_68,1_69,0_859,1_251,0_720-6TtAi" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_250,0_724,0_730,0_735,0_3998,0_4108,0_4002-6TtAi" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=0_4112,0_3990,0_3994-6TtAi" /><meta http-equiv="description" name="description" content=" " /><meta http-equiv="title" name="title" content="Ενημέρωση Υπουργείου Παιδείας και Πολιτισμού" /><meta http-equiv="url" name="url" content="http://enimerosi.moec.gov.cy" /><meta http-equiv="type" name="type" content="website" /><meta property="og:image" content="http://enimerosi.moec.gov.cy/images/enimerosi-banner-facebook.jpg" /><link rel="stylesheet" type="text/css" href="Content/Site.css" /><link rel="stylesheet" type="text/css" href="Content/custom.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,400,600,700&amp;subset=latin,greek-ext,greek" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&amp;subset=latin,greek-ext,greek" rel="stylesheet" /><title>
+	Ενημέρωση Υπουργείου Παιδείας και Πολιτισμού
+</title><meta http-equiv="title" name="title" content="Καταβολή έκτακτης χορηγίας σε επαγγελματίες των τεχνών και του πολιτισμού | ypp10701" /><meta http-equiv="url" name="url" content="http://enimerosi.moec.gov.cy/ypp10701" /></head>
+<body id="ctl00_ctl00_Body">
+    <form method="post" action="./ypp10701" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1NjY2ODEyMjUPZBYCZg9kFgJmD2QWAgIDD2QWAgIBD2QWAgIBDzwrAAcBAA8WAh4OXyFVc2VWaWV3U3RhdGVnZBYCZg9kFgRmD2QWAmYPZBYCZg9kFgICAQ8PFgQeC05hdmlnYXRlVXJsBSVodHRwOi8vZW5pbWVyb3NpLm1vZWMuZ292LmN5L3lwcDEwNzAxHghJbWFnZVVybAUUSW1hZ2VzL2VuaW1lcm9zaS5qcGdkZAIBD2QWAmYPZBYCZg9kFgICAQ9kFgICAQ88KwAHAQAPFgIfAGdkFgJmD2QWAmYPZBYCZg9kFgJmD2QWAgIBD2QWFAIDDzwrAAkBAA8WAh8AZ2RkAgUPPCsACQEADxYCHwBnZGQCBw9kFg4CBQ8WAh4HVmlzaWJsZWcWAgIBDzwrAAQBAzwrAAUBABYCHwIFFUltYWdlcy9lbWFpbC1pY29uLnBuZ2QCCQ8WAh8DZ2QCCw9kFgICAQ88KwAEAQAPFgIeBVZhbHVlBSPOoM+Bzr/Oss6/zrvOriDOlc69zrfOvM6tz4HPic+DzrfPgmRkAg0PFgIfA2hkAg8PFgIfA2hkAhEPFgIfA2hkAhMPZBYKAgEPFgIfA2hkAgMPFgIfA2hkAgUPFgIfA2hkAgcPFgIfA2hkAgkPFgIfA2hkAgkPZBYCAgEPPCsABAEADxYCHwRkZGQCDw88KwAmCAAPFgIeD0RhdGFTb3VyY2VCb3VuZGdkATwrAAwBBBQrAAEWAh4FU3R5bGULKiVTeXN0ZW0uV2ViLlVJLldlYkNvbnRyb2xzLkJvcmRlclN0eWxlBAYPZBAWDWYCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwWDTwrAAwBABYCHgtHbG9iYWxJbmRleGY8KwAMAgAWBB4KQ29sVmlzaWJsZWcfBwIBCzwrAAUBAhQrAAEWBB4RQWxsb3dIZWFkZXJGaWx0ZXILKXtEZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFuLCBEZXZFeHByZXNzLkRhdGEudjE4LjEsIFZlcnNpb249MTguMS4xMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEBHglBbGxvd1NvcnQLKwUBPCsADAEAFgQfCGgfBwICPCsADAEAFgIfBwIDPCsADAIAFgIfBwIECzwrAAUBAhQrAAEWBh8JCysFAR4NQWxsb3dEcmFnRHJvcAsrBQEfCgsrBQE8KwAMAgAWAh8HAgULPCsABQECFCsAARYEHwsLKwUBHwoLKwUBPCsADAIAFgIfBwIGCzwrAAUBAhQrAAEWBh8JCysFAR8LCysFAR8KCysFATwrAAwCABYCHwcCBws8KwAFAQIUKwABFgQfCwsrBQEfCgsrBQE8KwAMAgAWAh8HAggLPCsABQECFCsAARYGHwkLKwUBHwsLKwUBHwoLKwUBPCsADAIAFgIfBwIJCzwrAAUBAhQrAAEWBh8JCysFAR8LCysFAR8KCysFATwrAAwCABYCHwcCCgs8KwAFAQIUKwABFgQfCwsrBQEfCgsrBQE8KwAMAQAWAh8HAgs8KwAMAQAWAh8HAgwPFg0CAQIBAgECAQIBAgICAQIBAgECAQICAgECAxYDBYABRGV2RXhwcmVzcy5XZWIuR3JpZFZpZXdEYXRhVGV4dENvbHVtbiwgRGV2RXhwcmVzcy5XZWIudjE4LjEsIFZlcnNpb249MTguMS4xMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFgAFEZXZFeHByZXNzLldlYi5HcmlkVmlld0RhdGFEYXRlQ29sdW1uLCBEZXZFeHByZXNzLldlYi52MTguMSwgVmVyc2lvbj0xOC4xLjEwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQWFAURldkV4cHJlc3MuV2ViLkdyaWRWaWV3RGF0YUh5cGVyTGlua0NvbHVtbiwgRGV2RXhwcmVzcy5XZWIudjE4LjEsIFZlcnNpb249MTguMS4xMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEIFCsAARYIHg5TaG93R3JvdXBQYW5lbGgeDVNob3dGaWx0ZXJSb3doHhZTaG93SGVhZGVyRmlsdGVyQnV0dG9uaB4VVmVydGljYWxTY3JvbGxCYXJNb2RlCyl3RGV2RXhwcmVzcy5XZWIuU2Nyb2xsQmFyTW9kZSwgRGV2RXhwcmVzcy5XZWIudjE4LjEsIFZlcnNpb249MTguMS4xMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEBCTwrAAgBABYCHwNoERQrAAEWAh4SU2VhcmNoUGFuZWxWaXNpYmxlaBg8KwAHAQUUKwACZGQgFCsAARYCHh1BbGxvd09ubHlPbmVNYXN0ZXJSb3dFeHBhbmRlZGcWAgIBD2QWAmYPZBYCZg9kFgJmD2QWAgUKU2Nyb2xsYWJsZQ9kFgICAQ9kFgJmD2QWBAUKRFhEYXRhUm93MA9kFgQFCXRjY2VsbDBfNA9kFgJmD2QWAmYPZBYCAgEPPCsABAEADxYEHgdUb29sVGlwBRTOkc69zrHOus6/zq/Ovc+Jz4POtx8FZ2RkBQl0Y2NlbGwwXzYPZBYCZg9kFgJmD2QWAgIBDxQrAAQPFgQfBWcfBAUhSW1hZ2VzL3Byb3RlcmFpb3RpdGEta2Fub25pa2kucG5nZGRkPCsABgEAFgIfEgUQzprOsc69zr/Ovc65zrrOrmQFB0RYRFJvdzAPZBYCBQd0Y2R4ZHQwD2QWAmYPZBYCZg9kFgICAQ88KwAIAQAPFgQfBWcfAGdkFgJmD2QWAgIBD2QWAmYPZBYCZg9kFgJmD2QWAgIBDzwrACYDAA8WAh8FZ2QGD2QQFglmAgECAgIDAgQCBQIGAgcCCBYJPCsADAEAFgIfB2Y8KwAMAQAWAh8HAgE8KwAMAQAWAh8HAgI8KwAMAQAWAh8HAgM8KwAMAQAWAh8HAgQ8KwAMAQAWAh8HAgU8KwAMAQAWAh8HAgY8KwAMAQAWAh8HAgc8KwAMAQAWAh8HAggPFgkCAQIBAgECAQIBAgECAQIBAgEWAQWAAURldkV4cHJlc3MuV2ViLkdyaWRWaWV3RGF0YVRleHRDb2x1bW4sIERldkV4cHJlc3MuV2ViLnYxOC4xLCBWZXJzaW9uPTE4LjEuMTAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhGDwrAAcBBRQrAAJkZBYCAgEPZBYCZg9kFgJmD2QWAmYPZBYCBQtEWE1haW5UYWJsZQ9kFgQFCkRYRGF0YVJvdzAPZBYCBQl0Y2NlbGwwXzUPZBYCZg9kFgJmD2QWAgIBDxQrAAQPFgQfBAUTYXJjaGVpYS8xL3lwcDEwNzAxYR8FZ2RkZDwrAAUBABYEHgZUYXJnZXQFBl9ibGFuax8CBRdJbWFnZXMvaWNvbi1hY3JvYmF0LmpwZ2QFCkRYRGF0YVJvdzEPZBYCBQl0Y2NlbGwxXzUPZBYCZg9kFgJmD2QWAgIBDxQrAAQPFgQfBAVGaHR0cHM6Ly9lc2VydmljZXMubW9lYy5nb3YuY3kvUG9saXRpc3Rpa2VzL0Nob3JpZ2lhLVRlY2huZXMtUG9saXRpc21vcx8FZ2RkZDwrAAUBABYEHxMFBl9ibGFuax8CBRJJbWFnZXMvaWNvbi1pZS5qcGdkAhEPPCsABAEADxYCHwNoZGQCEw88KwAEAQAPFgIfA2hkZAIVDzwrAAQBAA8WAh8EZGRkAhcPPCsABAEADxYCHwQFwgEyMDIxIENvcHlyaWdodCDCqSDOpc+AzrfPgc61z4POr86xIM6UzrnOsc60zrnOus+Ez43Ov8+FIM66zrHOuSDOlc+AzrnOus6/zrnOvc+Jzr3Or86xz4IgfCDOpc+Azr/Phc+BzrPOtc6vzr8gzqDOsc65zrTOtc6vzrHPgiwgzqDOv867zrnPhM65z4POvM6/z40sIM6RzpjOu863z4TOuc+DzrzOv8+NIM66zrHOuSDOnc61zr/Ou86xzq/Osc+CIGRkAhsPD2QPEBYBZhYBFgIeDlBhcmFtZXRlclZhbHVlKClZU3lzdGVtLkludDY0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFMjQ0NzgWAQIFZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgwFGWN0bDAwJGN0bDAwJEFTUHhTcGxpdHRlcjEFMWN0bDAwJGN0bDAwJEFTUHhTcGxpdHRlcjEkQ29udGVudCRDb250ZW50U3BsaXR0ZXIFVGN0bDAwJGN0bDAwJEFTUHhTcGxpdHRlcjEkQ29udGVudCRDb250ZW50U3BsaXR0ZXIkTWFpbkNvbnRlbnQkUGFyYWxpcHRlc1BvcHVwQ29udHJvbAVPY3RsMDAkY3RsMDAkQVNQeFNwbGl0dGVyMSRDb250ZW50JENvbnRlbnRTcGxpdHRlciRNYWluQ29udGVudCRwb3B1cENvbnRyb2xFbWFpbAVsY3RsMDAkY3RsMDAkQVNQeFNwbGl0dGVyMSRDb250ZW50JENvbnRlbnRTcGxpdHRlciRNYWluQ29udGVudCRwb3B1cENvbnRyb2xFbWFpbCRlbWFpbEZvcm1MYXlvdXQkU2VuZEVtYWlsQnRuBUtjdGwwMCRjdGwwMCRBU1B4U3BsaXR0ZXIxJENvbnRlbnQkQ29udGVudFNwbGl0dGVyJE1haW5Db250ZW50JEFTUHhHcmlkVmlldzEFX2N0bDAwJGN0bDAwJEFTUHhTcGxpdHRlcjEkQ29udGVudCRDb250ZW50U3BsaXR0ZXIkTWFpbkNvbnRlbnQkQVNQeEdyaWRWaWV3MSRjdGwwMCREWEVkaXRvcjUkREREBWVjdGwwMCRjdGwwMCRBU1B4U3BsaXR0ZXIxJENvbnRlbnQkQ29udGVudFNwbGl0dGVyJE1haW5Db250ZW50JEFTUHhHcmlkVmlldzEkY3RsMDAkRFhFZGl0b3I1JERERCRDJEZOUAVgY3RsMDAkY3RsMDAkQVNQeFNwbGl0dGVyMSRDb250ZW50JENvbnRlbnRTcGxpdHRlciRNYWluQ29udGVudCRBU1B4R3JpZFZpZXcxJGN0bDAwJERYRWRpdG9yMTAkREREBWZjdGwwMCRjdGwwMCRBU1B4U3BsaXR0ZXIxJENvbnRlbnQkQ29udGVudFNwbGl0dGVyJE1haW5Db250ZW50JEFTUHhHcmlkVmlldzEkY3RsMDAkRFhFZGl0b3IxMCREREQkQyRGTlAFXWN0bDAwJGN0bDAwJEFTUHhTcGxpdHRlcjEkQ29udGVudCRDb250ZW50U3BsaXR0ZXIkTWFpbkNvbnRlbnQkQVNQeEdyaWRWaWV3MSRkeGR0MCRwYWdlQ29udHJvbAVrY3RsMDAkY3RsMDAkQVNQeFNwbGl0dGVyMSRDb250ZW50JENvbnRlbnRTcGxpdHRlciRNYWluQ29udGVudCRBU1B4R3JpZFZpZXcxJGR4ZHQwJHBhZ2VDb250cm9sJEFTUHhHcmlkVmlldzKK0yoyE9xnNO/S+b2RHiEmcrOq+BNStt/iNVnrL137LA==" />
+
+
+<script src="/ScriptResource.axd?d=A2QYMHt7aU0PMZaoj_mpYR16LRUo121ajZjav5FMx0pQA8NJSVCuHQ7HgsR7R_lV6F9QUbPCmasea3n7x130_nH0YxtHpIJsz-c-bSAMtm5TbgBoCp0FpAhD6qFJHb_hQdc0HrobbfMZBpqkwfer5IAg1ER-bdU9-QpDUJ43qmpKphuex2n0gy6FfKg0xMB10&amp;t=10c151ff" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+SetSessionFromDate:function(fromDate,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetSessionFromDate',false,{fromDate:fromDate},succeededCallback,failedCallback,userContext); },
+GetSessionFromDate:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetSessionFromDate',false,{},succeededCallback,failedCallback,userContext); },
+SetSessionToDate:function(toDate,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetSessionToDate',false,{toDate:toDate},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("ypp10701");
+PageMethods.SetSessionFromDate= function(fromDate,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetSessionFromDate(fromDate,onSuccess,onFailed,userContext); }
+PageMethods.GetSessionFromDate= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetSessionFromDate(onSuccess,onFailed,userContext); }
+PageMethods.SetSessionToDate= function(toDate,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetSessionToDate(toDate,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+    
+    <input type="hidden"/><script id="dxis_1890203320" src="/DXR.axd?r=1_14,1_15,1_26,1_64,1_16,1_17,1_18,1_52,1_20,1_42,1_61,1_224,1_225,1_223,1_229,1_43,1_22,1_254,1_265,1_266,1_253,1_255,1_263,1_252,1_230,1_276,1_278,1_279,1_267,1_271,1_274,1_280,1_24,1_25,1_141,1_233,1_235,1_27,1_44-VStAi" type="text/javascript"></script><table class="dxsplControl_DevEx" id="ctl00_ctl00_ASPxSplitter1" style="border-collapse:separate;">
+	<tr>
+		<td id="ctl00_ctl00_ASPxSplitter1_0" class="dxsplPane_DevEx" style="vertical-align:top;"><div id="ctl00_ctl00_ASPxSplitter1_0_CC" class="dxsplLCC" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+			
+                        <div class="headerTop">
+                            <div class="templateTitle" >
+                                <a id="ctl00_ctl00_ASPxSplitter1_MOEC_Logo" href="http://enimerosi.moec.gov.cy/ypp10701"><img src="Images/enimerosi.jpg" alt="" /></a>
+                            </div>
+                          </div>
+                        
+                    
+		</div></td>
+	</tr><tr>
+		<td id="ctl00_ctl00_ASPxSplitter1_1" class="dxsplPane_DevEx mainContentPane" bgcolor="White" style="border-top-style:Solid;border-top-width:0px;border-bottom-style:Solid;border-bottom-width:0px;vertical-align:top;"><div id="ctl00_ctl00_ASPxSplitter1_1_CC" class="dxsplLCC" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+			
+                        
+    <table class="dxsplControl_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter" style="border-collapse:separate;">
+				<tr>
+					<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_0" class="dxsplPane_DevEx contentPane" style="vertical-align:top;"><div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_0_CC" class="dxsplLCC" style="padding-left:2%;padding-right:2%;padding-top:0px;padding-bottom:0px;overflow:auto;">
+						
+  
+                        
+ 
+
+ 
+    <script type="text/javascript">
+
+
+   
+        function button1_Click(s, e) {
+            if (ASPxGridView1.IsCustomizationWindowVisible())
+                ASPxGridView1.HideCustomizationWindow();
+            else
+                ASPxGridView1.ShowCustomizationWindow();
+            UpdateButtonText();
+        };
+        function UpdateButtonText() {
+            var text = ASPxGridView1.IsCustomizationWindowVisible() ? "Απόκρυψη" : "Προβολή";
+            text += " Παραθύρου Επιλογής Πεδίων Ενημέρωσης";
+            button1.SetText(text);
+        };
+
+        function ShowMoreInfoLink_Click(s, e) {           
+       if (ASPxGridView1.IsCustomizationWindowVisible())
+           ASPxGridView1.HideCustomizationWindow();
+       else
+           ASPxGridView1.ShowCustomizationWindow();
+           
+   };
+
+   var keyValue;
+
+   //function GoogleAnalytics(enimerosi_text_id, Description, filename, subject) {
+   function GoogleAnalytics(enimerosi_text_id, Description, filename, subject) {
+       var test = HelloWorld();
+
+       var title = enimerosi_text_id + ': ' + subject;
+       var label = filename + ': ' + Description;
+       ga('send', 'event', title, 'download', label);
+   }
+
+    function OnMoreInfoClick(contentUrl, new_height) {
+        ParaliptesPopupControl.SetContentUrl(contentUrl);
+        ParaliptesPopupControl.SetSize("340", new_height);
+        ParaliptesPopupControl.Show();
+  };
+
+
+    var filterString = "";
+    function ApplyFilter(dateFrom, dateTo) {
+        var d1 = dateFrom.GetText();
+        var d2 = dateTo.GetText();
+        if (d1 == "" || d2 == "")
+            return;
+        filterString = d1 + "|" + d2;
+        ASPxGridView1.AutoFilterByColumn("date_katachorisis", d1 + "|" + d2)
+
+        
+   
+    };
+
+
+    function EndCallback(s, e) {
+        AdjustSize();
+        if (filterString != "" && s.cpFilter == "filter") {
+            dde.SetText(filterString);
+        }
+        else {           
+            filterString = "";
+        }
+    };
+     
+    var CustomPager = {
+        gotoBox_Init: function (s, e) {
+            s.SetText(1 + ASPxGridView1.GetPageIndex());
+        },
+        gotoBox_KeyPress: function (s, e) {
+            if (e.htmlEvent.keyCode != 13)
+                return;
+            ASPxClientUtils.PreventEventAndBubble(e.htmlEvent);
+            CustomPager.applyGotoBoxValue(s);
+        },
+        gotoBox_ValueChanged: function (s, e) {
+            CustomPager.applyGotoBoxValue(s);
+        },
+        applyGotoBoxValue: function (textBox) {
+            if (ASPxGridView1.InCallback())
+                return;
+            var pageIndex = parseInt(textBox.GetText()) - 1;
+            if (pageIndex < 0)
+                pageIndex = 0;
+            ASPxGridView1.GotoPage(pageIndex);
+        },
+        combo_SelectedIndexChanged: function (s, e) {
+            ASPxGridView1.PerformCallback(s.GetSelectedItem().text);
+        }
+        
+    };
+     
+
+    function OnShowAtPosButtonClick(s, e) {
+        popupControlEmail.Show();
+    };
+    function OnShowFacebookShare(s, e) {
+        var left = (screen.width / 2) - (626 / 2);
+        var top = (screen.height / 2) - (436 / 2);
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + location.href , 'sharer', 'width=626,height=436,top=' + top + ',left=' + left);
+    };
+    
+ 
+    
+    function OnControlsInitialized(s, e) {
+       
+
+        ASPxClientUtils.AttachEventToElement(window, "resize", function (evt) {
+
+            AdjustSize();
+        });
+    };
+    function AdjustSize() {
+        var height = Math.max(0, document.documentElement.clientHeight) * 0.75;
+        //alert('document.documentElement.clientHeight: ' + document.documentElement.clientHeight);
+        //alert('height: ' + height);
+        ASPxGridView1.SetHeight(height);
+    };
+    function OnInit(s, e) {
+      AdjustSize();
+    };
+
+
+	
+    </script>
+   
+   
+    
+
+   	<div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ParaliptesPopupControl_PW-1" class="dxpcLite_DevEx dxpclW dxpc-ie" style="z-index:10000;display:none;visibility:hidden;">
+							<div class="dxpc-mainDiv dxpc-shadow">
+								<div class="dxpc-header drag dxpc-withBtn" style="user-select:none;-khtml-user-select:none;-ms-user-select:none;">
+									<div class="dxpc-closeBtn">
+										<img class="dxWeb_pcCloseButton_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="[Κλείσιμο]" />
+									</div><div class="dxpc-headerContent">
+										<span class="dxpc-headerText dx-vam">Παραλήπτες Ενημέρωσης</span>
+									</div><b class="dx-clear"></b>
+								</div><div class="dxpc-contentWrapper">
+									<div class="dxpc-content">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div><table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ParaliptesPopupControl_LP" class="dxpcLoadingPanel_DevEx dxlpLoadingPanel_DevEx" style="left:0px;top:0px;z-index:30000;display:none;">
+							<tr>
+								<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_110-VStAi" alt="" style="vertical-align:middle;" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ParaliptesPopupControl_TL">Ανάγνωση&hellip;</span></td>
+							</tr>
+						</table><div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ParaliptesPopupControl_LD" class="dxpcLoadingDiv_DevEx dxlpLoadingDiv_DevEx dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+						</div><script id="dxss_1198972176" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientPopupControl,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ParaliptesPopupControl','ParaliptesPopupControl',{'callBack':function(arg) { WebForm_DoCallback('ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ParaliptesPopupControl',arg,ASPx.Callback,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ParaliptesPopupControl',ASPx.CallbackError,true); },'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ParaliptesPopupControl','popupAnimationType':'slide','closeAction':'CloseButton','isPopupPositionCorrectionOn':false,'allowDragging':true,'left':150,'width':400,'widthFromServer':true,'SSLSecureBlankUrl':'/DXR.axd?r=1_109-VStAi'},{'PopUp':function(s, e) {
+                   ParaliptesPopupControl.ShowAtPos(MouseX.text, MouseY.text);
+                    ParaliptesPopupControl.UpdatePosition();
+                  
+                     }});
+
+//-->
+</script>
+        
+
+    <div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_PW-1" class="dxpcLite_DevEx dxpclW dxpc-ie" style="z-index:10000;display:none;visibility:hidden;">
+							<div class="dxpc-mainDiv dxpc-shadow">
+								<div class="dxpc-header drag dxpc-withBtn" style="user-select:none;-khtml-user-select:none;-ms-user-select:none;">
+									<div class="dxpc-closeBtn">
+										<img class="dxWeb_pcCloseButton_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="[Κλείσιμο]" />
+									</div><div class="dxpc-headerContent">
+										<span class="dxpc-headerText dx-vam">Αποστολή Μηνύματος</span>
+									</div><b class="dx-clear"></b>
+								</div><div class="dxpc-contentWrapper">
+									<div class="dxpc-content">
+											
+                
+                    <table>
+        <tr>
+            <td class="emailFormLayoutContainer">
+                <div class="dxflFormLayout_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout">
+											<table class="dxflGroup_DevEx dxflGroupSys dxflAGSys" style="border-collapse:separate;">
+												<tr>
+													<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0" class="dxflVATSys dxflGroupCell_DevEx"><div class="dxflGroupBox_DevEx dxflGroupBoxSys">
+														<span class="dxflGroupBoxCaption_DevEx">Στοιχεία Μηνύματος</span><table class="dxflGroup_DevEx dxflGroupSys dxflAGSys" style="border-collapse:separate;">
+															<tr>
+																<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0_0" class="dxflGroupCell_DevEx"><table class="dxflCLLSys dxflItemSys dxflTextEditItemSys dxflItem_DevEx" style="border-collapse:separate;">
+																	<tr>
+																		<td class="dxflHALSys dxflVATSys dxflCaptionCell_DevEx dxflCaptionCellSys"><label class="dxflCaption_DevEx" for="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName_I">Όνομα:</label><em class="dxflRequired_DevEx"><span style='color: red'>*</span></em></td><td class="dxflNestedControlCell_DevEx">
+                                            <table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName_ET" class="dxeValidStEditorTable dxeRoot_DevEx">
+																			<tr>
+																				<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName_CC" class="dxeErrorFrame_DevEx dxeErrorFrameSys dxeNoBorderBottom dxeControlsCell_DevEx"><font size="2"><table class="dxeTextBoxSys dxeTextBox_DevEx dxeTextBoxDefaultWidthSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName" width="350" style="border-collapse:separate;">
+																					<tr>
+																						<td class="dxic" width="100%"><font size="2"><input class="dxeEditArea_DevEx dxeEditAreaSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName_I" name="ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxName" onfocus="ASPx.EGotFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName&#39;)" onblur="ASPx.ELostFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName&#39;)" onchange="ASPx.EValueChanged(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName&#39;)" value="Ονοματεπώνυμο Αποστολέα" type="text" /></font></td>
+																					</tr>
+																				</table></font></td>
+																			</tr><tr>
+																				<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName_EC" class="dxeErrorCell_DevEx dxeErrorFrame_DevEx dxeErrorFrameSys dxeErrorCellSys dxeNoBorderTop" style="visibility:hidden;white-space:nowrap;"><font size="2">Μη έγκυρη τιμή</font></td>
+																			</tr>
+																		</table><script id="dxss_1228276503" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientTextBox,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxName','ASPxName',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxName','scStates':6,'scPostfix':'DevEx','stateObject':{'rawValue':''},'customValidationEnabled':true,'isValid':true,'errorText':'Μη έγκυρη τιμή','validationPatterns':[new ASPx.RequiredFieldValidationPattern('Παρακαλώ συμπληρώστε')],'setFocusOnError':true,'isErrorFrameRequired':true,'errorDisplayMode':'t','nullText':'Ονοματεπώνυμο Αποστολέα','errorCellPosition':'Bottom'},null,null,{'decorationStyles':[{'key':'I','className':'dxeInvalid_DevEx','cssText':'background-color:#FEEBEE;'},{'key':'F','className':'dxeFocused_DevEx','cssText':''},{'key':'N','className':'dxeNullText_DevEx','cssText':'font-size:X-Small;'}]});
+
+//-->
+</script>
+                                        </td>
+																	</tr>
+																</table></td>
+															</tr><tr>
+																<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0_1" class="dxflGroupCell_DevEx"><table class="dxflCLLSys dxflItemSys dxflTextEditItemSys dxflItem_DevEx" style="border-collapse:separate;">
+																	<tr>
+																		<td class="dxflHALSys dxflVATSys dxflCaptionCell_DevEx dxflCaptionCellSys"><label class="dxflCaption_DevEx" for="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom_I">Από:</label><em class="dxflRequired_DevEx"><span style='color: red'>*</span></em></td><td class="dxflNestedControlCell_DevEx">
+                                            <table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom_ET" class="dxeValidStEditorTable dxeRoot_DevEx">
+																			<tr>
+																				<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom_CC" class="dxeErrorFrame_DevEx dxeErrorFrameSys dxeNoBorderBottom dxeControlsCell_DevEx"><font size="2"><table class="dxeTextBoxSys dxeTextBox_DevEx dxeTextBoxDefaultWidthSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom" width="350" style="border-collapse:separate;">
+																					<tr>
+																						<td class="dxic" width="100%"><font size="2"><input class="dxeEditArea_DevEx dxeEditAreaSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom_I" name="ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailFrom" onfocus="ASPx.EGotFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom&#39;)" onblur="ASPx.ELostFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom&#39;)" onchange="ASPx.EValueChanged(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom&#39;)" value="Ηλεκτρονική διεύθυνση Αποστολέα" type="text" /></font></td>
+																					</tr>
+																				</table></font></td>
+																			</tr><tr>
+																				<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom_EC" class="dxeErrorCell_DevEx dxeErrorFrame_DevEx dxeErrorFrameSys dxeErrorCellSys dxeNoBorderTop" style="visibility:hidden;white-space:nowrap;"><font size="2">Μη έγκυρη τιμή</font></td>
+																			</tr>
+																		</table><script id="dxss_792582457" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientTextBox,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailFrom','ASPxEmailFrom',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailFrom','scStates':6,'scPostfix':'DevEx','stateObject':{'rawValue':''},'customValidationEnabled':true,'isValid':true,'errorText':'Μη έγκυρη τιμή','validationPatterns':[new ASPx.RequiredFieldValidationPattern('Παρακαλώ συμπληρώστε'),new ASPx.RegularExpressionValidationPattern('Παρακαλώ διορθώστε συντακτικά λάθη', '\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*')],'setFocusOnError':true,'isErrorFrameRequired':true,'errorDisplayMode':'t','nullText':'Ηλεκτρονική διεύθυνση Αποστολέα','errorCellPosition':'Bottom'},null,null,{'decorationStyles':[{'key':'I','className':'dxeInvalid_DevEx','cssText':'background-color:#FEEBEE;'},{'key':'F','className':'dxeFocused_DevEx','cssText':''},{'key':'N','className':'dxeNullText_DevEx','cssText':'font-size:X-Small;'}]});
+
+//-->
+</script>
+                                        </td>
+																	</tr>
+																</table></td>
+															</tr><tr>
+																<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0_2" class="dxflGroupCell_DevEx"><table class="dxflCLLSys dxflItemSys dxflTextEditItemSys dxflItem_DevEx" style="border-collapse:separate;">
+																	<tr>
+																		<td class="dxflHALSys dxflVATSys dxflCaptionCell_DevEx dxflCaptionCellSys"><label class="dxflCaption_DevEx" for="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo_I">Προς:</label><em class="dxflRequired_DevEx"><span style='color: red'>*</span></em></td><td class="dxflNestedControlCell_DevEx">
+                                            <table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo_ET" class="dxeValidStEditorTable dxeRoot_DevEx">
+																			<tr>
+																				<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo_CC" class="dxeErrorFrame_DevEx dxeErrorFrameSys dxeNoBorderBottom dxeControlsCell_DevEx"><font size="2"><table class="dxeTextBoxSys dxeTextBox_DevEx dxeTextBoxDefaultWidthSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo" width="350" style="border-collapse:separate;">
+																					<tr>
+																						<td class="dxic" width="100%"><font size="2"><input class="dxeEditArea_DevEx dxeEditAreaSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo_I" name="ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailTo" onfocus="ASPx.EGotFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo&#39;)" onblur="ASPx.ELostFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo&#39;)" onchange="ASPx.EValueChanged(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo&#39;)" value="Ηλεκτρονική διεύθυνση Παραλήπτη" type="text" /></font></td>
+																					</tr>
+																				</table></font></td>
+																			</tr><tr>
+																				<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo_EC" class="dxeErrorCell_DevEx dxeErrorFrame_DevEx dxeErrorFrameSys dxeErrorCellSys dxeNoBorderTop" style="visibility:hidden;white-space:nowrap;"><font size="2">Μη έγκυρη τιμή</font></td>
+																			</tr>
+																		</table><script id="dxss_1254264634" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientTextBox,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailTo','ASPxEmailTo',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailTo','scStates':6,'scPostfix':'DevEx','stateObject':{'rawValue':''},'customValidationEnabled':true,'isValid':true,'errorText':'Μη έγκυρη τιμή','validationPatterns':[new ASPx.RequiredFieldValidationPattern('Παρακαλώ συμπληρώστε'),new ASPx.RegularExpressionValidationPattern('Παρακαλώ διορθώστε συντακτικά λάθη', '\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*')],'setFocusOnError':true,'isErrorFrameRequired':true,'errorDisplayMode':'t','nullText':'Ηλεκτρονική διεύθυνση Παραλήπτη','errorCellPosition':'Bottom'},null,null,{'decorationStyles':[{'key':'I','className':'dxeInvalid_DevEx','cssText':'background-color:#FEEBEE;'},{'key':'F','className':'dxeFocused_DevEx','cssText':''},{'key':'N','className':'dxeNullText_DevEx','cssText':'font-size:X-Small;'}]});
+
+//-->
+</script>
+                                        </td>
+																	</tr>
+																</table></td>
+															</tr><tr>
+																<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0_3" class="dxflGroupCell_DevEx"><table class="dxflCLLSys dxflItemSys dxflTextEditItemSys dxflItem_DevEx" style="border-collapse:separate;">
+																	<tr>
+																		<td class="dxflHALSys dxflVATSys dxflCaptionCell_DevEx dxflCaptionCellSys"><label class="dxflCaption_DevEx" for="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailSubject_I">Θέμα:</label></td><td class="dxflNestedControlCell_DevEx">
+                                            <table class="dxeTextBoxSys dxeTextBox_DevEx dxeDisabled_DevEx dxeTextBoxDefaultWidthSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailSubject" width="350">
+																			<tr>
+																				<td class="dxic" width="100%"><font color="Gray"><input tabindex="-1" class="dxeEditArea_DevEx dxeDisabled_DevEx dxeEditAreaSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailSubject_I" name="ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailSubject" readonly="readonly" onfocus="ASPx.EGotFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailSubject&#39;)" value="Ενημέρωση Υπουργείου Παιδείας, Πολιτισμού, ΑΘλητισμού και Νεολαίας | ypp10701" type="text" /></font></td>
+																			</tr>
+																		</table><script id="dxss_1051518838" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientTextBox,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailSubject','ASPxEmailSubject',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailSubject','enabled':false},null,null,{'decorationStyles':[]});
+
+//-->
+</script>
+                                        </td>
+																	</tr>
+																</table></td>
+															</tr><tr>
+																<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0_4" class="dxflGroupCell_DevEx"><table class="dxflCLLSys dxflItemSys dxflMemoItemSys dxflItem_DevEx" style="border-collapse:separate;">
+																	<tr>
+																		<td class="dxflHALSys dxflVATSys dxflCaptionCell_DevEx dxflCaptionCellSys"><label class="dxflCaption_DevEx" for="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyFixed_I">Περιγραφή:</label></td><td class="dxflNestedControlCell_DevEx">
+                                            <table class="dxeMemoSys dxeMemo_DevEx dxeDisabled_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyFixed" height="70" width="350" style="border-collapse:separate;">
+																			<tr>
+																				<td width="100%"><font color="Gray"><textarea tabindex="-1" class="dxeMemoEditArea_DevEx dxeDisabled_DevEx dxeMemoEditAreaSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyFixed_I" name="ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailBodyFixed" readonly="readonly" onfocus="ASPx.EGotFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyFixed&#39;)">Καταβολή έκτακτης χορηγίας σε επαγγελματίες των τεχνών και του πολιτισμούhttp://enimerosi.moec.gov.cy/ypp10701</textarea></font></td>
+																			</tr>
+																		</table><script id="dxss_920525506" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientMemo,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyFixed','ASPxEmailBodyFixed',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailBodyFixed','enabled':false},null,null,{'decorationStyles':[]});
+
+//-->
+</script>
+                                        </td>
+																	</tr>
+																</table></td>
+															</tr><tr>
+																<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0_5" class="dxflGroupCell_DevEx"><table class="dxflCLLSys dxflItemSys dxflMemoItemSys dxflItem_DevEx" style="border-collapse:separate;">
+																	<tr>
+																		<td class="dxflHALSys dxflVATSys dxflCaptionCell_DevEx dxflCaptionCellSys"><label class="dxflCaption_DevEx" for="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyEdit_I"></label></td><td class="dxflNestedControlCell_DevEx">
+                                            <table class="dxeMemoSys dxeMemo_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyEdit" height="50" width="350" style="border-collapse:separate;">
+																			<tr>
+																				<td width="100%"><textarea class="dxeMemoEditArea_DevEx dxeMemoEditAreaSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyEdit_I" name="ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailBodyEdit" onfocus="ASPx.EGotFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyEdit&#39;)" onblur="ASPx.ELostFocus(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyEdit&#39;)" onchange="ASPx.EValueChanged(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyEdit&#39;)">Το μήνυμά σας</textarea></td>
+																			</tr>
+																		</table><script id="dxss_1797646343" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientMemo,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_ASPxEmailBodyEdit','ASPxEmailBodyEdit',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$ASPxEmailBodyEdit','scStates':6,'scPostfix':'DevEx','stateObject':{'rawValue':''},'nullText':'Το μήνυμά σας','autoCompleteAttribute':{'name':'autocomplete','value':'off'}},null,null,{'decorationStyles':[{'key':'F','className':'dxeFocused_DevEx','cssText':''},{'key':'N','className':'dxeNullText_DevEx','cssText':'font-size:X-Small;'}]});
+
+//-->
+</script>
+                                        </td>
+																	</tr>
+																</table></td>
+															</tr><tr>
+																<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_0_6" class="dxflHARSys dxflGroupCell_DevEx"><div class="dxflNestedControlCell_DevEx dxflCLLSys dxflItemSys dxflButtonItemSys dxflItem_DevEx">
+																	
+                                            <div class="dxbButton_DevEx dxbButtonSys dxbTSys" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_SendEmailBtn" style="user-select:none;-khtml-user-select:none;-ms-user-select:none;">
+																		<div class="dxb">
+																			<input id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_SendEmailBtn_I" class="dxb-hb" value="Αποστολή" type="submit" name="ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$SendEmailBtn" /><span class="dx-vam">Αποστολή</span>
+																		</div>
+																	</div><script id="dxss_1912233592" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_SendEmailBtn',[[['dxbButtonHover_DevEx'],[''],[''],['','TC']]]);
+ASPx.AddPressedItems('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_SendEmailBtn',[[['dxbButtonPressed_DevEx'],[''],[''],['','TC']]]);
+ASPx.AddDisabledItems('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_SendEmailBtn',[[['dxbDisabled_DevEx'],[''],[''],['','TC']]]);
+ASPx.AddSelectedItems('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_SendEmailBtn',[[['dxbf'],[''],['CD']]]);
+ASPx.createControl(ASPxClientButton,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout_SendEmailBtn','',{'autoPostBack':true,'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout$SendEmailBtn','serverEvents':['Click']});
+
+//-->
+</script>
+                                        
+																</div></td>
+															</tr>
+														</table>
+													</div></td>
+												</tr>
+											</table>
+										</div><script id="dxss_589430477" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientFormLayout,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_emailFormLayout','',{'encodeHtml':false,'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail$emailFormLayout'});
+
+//-->
+</script>
+            </td>
+          
+        </tr>
+    </table>               
+				
+									</div>
+								</div>
+							</div>
+						</div><div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_DXPWMB-1" class="dxpcModalBackLite_DevEx" style="z-index:9999;">
+
+						</div><table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_LP" class="dxpcLoadingPanel_DevEx dxlpLoadingPanel_DevEx" style="left:0px;top:0px;z-index:30000;display:none;">
+							<tr>
+								<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_110-VStAi" alt="" style="vertical-align:middle;" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_TL">Ανάγνωση&hellip;</span></td>
+							</tr>
+						</table><div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail_LD" class="dxpcLoadingDiv_DevEx dxlpLoadingDiv_DevEx dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+						</div><script id="dxss_1786598223" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientPopupControl,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail','popupControlEmail',{'callBack':function(arg) { WebForm_DoCallback('ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail',arg,ASPx.Callback,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_popupControlEmail',ASPx.CallbackError,true); },'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$popupControlEmail','popupAnimationType':'fade','closeAction':'CloseButton','popupHorizontalAlign':'WindowCenter','popupVerticalAlign':'WindowCenter','isPopupPositionCorrectionOn':false,'allowDragging':true,'modal':true,'width':207,'widthFromServer':true,'height':83,'SSLSecureBlankUrl':'/DXR.axd?r=1_109-VStAi'});
+
+//-->
+</script>
+  
+ 
+ 	<div>
+		
+	</div>
+     
+     <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+     
+  
+       <div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_myHeader" class="myHeaderStyle">
+              
+
+                 
+                 
+              <div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_DivΕmail" class="HeaderLinks">
+             <a class="dxeHyperlink_DevEx" onclick="return ASPx.SEClick(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_emailLink&#39;, event)" AutoPostBack="false" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_emailLink" style="cursor:pointer;"><img src="Images/email-icon.png" alt="" /></a><script id="dxss_694073338" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientHyperLink,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_emailLink','',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$emailLink','scStates':4,'scPostfix':'DevEx'},{'Click':OnShowAtPosButtonClick});
+
+//-->
+</script>		
+
+                 </div> 
+               <div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_Div2" class="HeaderLinks">&nbsp;&nbsp;</div>
+               <div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_DivFacebook" class="HeaderLinks">
+                 <a class="dxeHyperlink_DevEx" onclick="return ASPx.SEClick(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_FacebookLink&#39;, event)" AutoPostBack="false" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_FacebookLink" style="cursor:pointer;"><img src="Images/facebook-icon.png" alt="" /></a><script id="dxss_86487134" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientHyperLink,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_FacebookLink','',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$FacebookLink','scStates':4,'scPostfix':'DevEx'},{'Click':OnShowFacebookShare});
+
+//-->
+</script>
+              </div> 
+        <div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_myHeaderTitle" class="myHeaderTitle"> <span class="dxeBase_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_HeaderTitle"><b><font size="3">Προβολή Ενημέρωσης</font></b></span><script id="dxss_522389060" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientLabel,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_HeaderTitle','HeaderTitle',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$HeaderTitle','scStates':4,'scPostfix':'DevEx'});
+
+//-->
+</script>  &nbsp; </div>
+      
+                 
+           
+            
+            
+            <div class="div_Date">
+           
+           
+           
+           
+                 
+           </div> 
+     </div>
+             
+
+           <div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_Div1" class="div4">
+            </div>
+              <script id="dxss_971798018" type="text/javascript">
+<!--
+var dxo = ASPx.GetGlobalEvents();
+dxo.SetEvents({'ControlsInitialized':OnControlsInitialized});
+
+//-->
+</script>
+   
+     
+    <table class="dxgvControl_DevEx dxgv" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1" width="100%" style="border-collapse:separate;border-top-style:Solid;">
+							<tr>
+								<td style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;"><div class="dxgvHSDC">
+									<div style="overflow:hidden;">
+										<table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_DXHeaderTable" class="dxgvTable_DevEx" oncontextmenu="return ASPx.GVContextMenu(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1&#39;,event);" width="100%" style="empty-cells:show;table-layout:fixed;overflow:hidden;">
+											<tr class="dxgvArm">
+												<td class="dxgvDI" width="26"></td><td width="7%"></td><td width="5%"></td><td width="9%"></td><td width="7%"></td><td width="6%"></td><td width="10%"></td><td width="47%"></td><td width="9%"></td>
+											</tr><tr id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_DXHeadersRow0">
+												<td class="dxgvHeader_DevEx" style="border-top-width:0px;border-left-width:0px;cursor:default;"><img class="dxGridView_gvDetailExpandedButton_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="" style="visibility:hidden;" /></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col1" class="dxgvHeader_DevEx" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td> Αριθμός</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col4" class="dxgvHeader_DevEx" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td> Τύπος</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col5" class="dxgvHeader_DevEx dx-wrap" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td class="dx-wrap">Ενημέρωση</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col6" class="dxgvHeader_DevEx" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td>Προτ/τητα</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col7" class="dxgvHeader_DevEx" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td>Φάκελος</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col8" class="dxgvHeader_DevEx" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td>Αποστολέας</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col9" class="dxgvHeader_DevEx dx-wrap" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td class="dx-wrap">Θέμα</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_col10" class="dxgvHeader_DevEx dx-wrap" style="border-top-width:0px;border-left-width:0px;cursor:default;"><table width="100%">
+													<tr>
+														<td class="dx-wrap">Καταχώριση</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td>
+											</tr>
+										</table>
+									</div>
+								</div><div class="dxgvCSD" style="overflow-x:hidden;overflow-y:scroll;">
+									<table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_DXMainTable" class="dxgvTable_DevEx dxgvRBB" oncontextmenu="return ASPx.GVContextMenu(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1&#39;,event);" width="100%" style="empty-cells:show;table-layout:fixed;overflow:hidden;">
+										<tr class="dxgvArm">
+											<td class="dxgvDI" width="26"></td><td width="7%"></td><td width="5%"></td><td width="9%"></td><td width="7%"></td><td width="6%"></td><td width="10%"></td><td width="47%"></td><td width="9%"></td>
+										</tr><tr id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_DXDataRow0" class="dxgvDataRow_DevEx">
+											<td class="dxgvDetailButton_DevEx dxgv" style="border-right-width:0px;overflow:visible;"><img class="dxGridView_gvDetailExpandedButton_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="[Συρίκνωση]" style="visibility:hidden;" /></td><td class="dxgv">ypp10701</td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_tccell0_4" class="dxgv dx-ac">
+                     <a title="Ανακοίνωση" class="dxeHyperlink_DevEx" onclick="return ASPx.SEClick(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_cell0_4_enimerosiTypeLink&#39;, event)" AutoPostBack="false" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_cell0_4_enimerosiTypeLink" href="javascript:void(0);" style="cursor:pointer;"><img title="Ανακοίνωση" src="Images/egkyklioi-icons-a.png" alt="More Info: Enimerosi_Text_id - ypp10701" /></a><script id="dxss_1334787006" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientHyperLink,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_cell0_4_enimerosiTypeLink','',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1$cell0_4$enimerosiTypeLink','scStates':4,'scPostfix':'DevEx'},{'Click':function(s, e) { OnMoreInfoClick('http://enimerosi.moec.gov.cy/paraliptes/ypp10701', '170'); }});
+
+//-->
+</script>	
+                </td><td class="dxgv">07/05/2020</td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_tccell0_6" class="dxgv dx-ac">
+                   <img title="Κανονική" class="dxeImage_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_cell0_6_priorityImageID" src="Images/proteraiotita-kanoniki.png" alt="" />
+                 </td><td class="dxgv">&nbsp;</td><td class="dxgv">Πολιτιστικές Υπηρεσίες</td><td class="dxgv">Καταβολή έκτακτης χορηγίας σε επαγγελματίες των τεχνών και του πολιτισμού</td><td class="dxgv">07/05/2020</td>
+										</tr><tr id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_DXDRow0" class="dxgvDetailRow_DevEx">
+											<td class="dxgvIndentCell dxgv dxgvDIC" style="border-left-width:0px;border-right-width:0px;">&nbsp;</td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_tcdxdt0" class="dxgv dxgvDetailCell_DevEx" colspan="8" style="padding-left:0;">           
+               <div class="detailGrid">
+              
+                    <div class="dxtcLite_DevEx dxtcSys dxtc-init dxtc-top dxtc-pc" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl">
+												<ul class="dxtc-strip dxtc-row dxtc-stripContainer">
+													<li class="dxtc-leftIndent">&nbsp;</li><li class="dxtc-tab dxtc-lead dxtc-last" style="display:none;"><a class="dxtc-link"><span class="dx-vam">Επισυναπτόμενα</span></a></li><li class="dxtc-activeTab dxtc-lead dxtc-last"><a class="dxtc-link"><font color="#1E395B"><span class="dx-vam">Επισυναπτόμενα</span></font></a></li><li class="dxtc-rightIndent">&nbsp;</li>
+												</ul><div class="dxtc-content">
+													<div>
+														<div>
+															
+  
+                <table class="dxgvControl_Office2010Blue dxgv" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2" width="600" style="border-collapse:separate;">
+																<tr>
+																	<td style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;"><table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_DXMainTable" class="dxgvTable_Office2010Blue" oncontextmenu="return ASPx.GVContextMenu(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2&#39;,event);" width="100%" style="empty-cells:show;">
+																		<tr id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_DXHeadersRow0">
+																			<td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_col3" class="dxgvHeader_Office2010Blue" width="400" style="border-top-width:0px;border-left-width:0px;"><table width="100%">
+																				<tr>
+																					<td>Περιγραφή</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+																				</tr>
+																			</table></td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_col5" class="dxgvHeader_Office2010Blue" width="5" style="border-top-width:0px;border-left-width:0px;border-right-width:0px;"><table width="100%">
+																				<tr>
+																					<td>Λήψη</td><td width="1" style="text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+																				</tr>
+																			</table></td>
+																		</tr><tr id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_DXDataRow0" class="dxgvDataRow_Office2010Blue">
+																			<td class="dx-wrap dxgv">Καταβολή έκτακτης χορηγίας σε επαγγελματίες των τεχνών και του πολιτισμού</td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_tccell0_5" class="dxgv dx-ac" style="border-right-width:0px;">
+                           <a class="dxeHyperlink_DevEx" onclick="return ASPx.SEClick(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_cell0_5_myLabel&#39;, event)" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_cell0_5_myLabel" href="archeia/1/ypp10701a" target="_blank" rel="noopener noreferrer"><img src="Images/icon-acrobat.jpg" alt="" /></a><script id="dxss_1346375835" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientHyperLink,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_cell0_5_myLabel','',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1$dxdt0$pageControl$ASPxGridView2$cell0_5$myLabel','scStates':4,'scPostfix':'DevEx'},{'Click':function(s, e) { GoogleAnalytics('ypp10701', 'Καταβολή έκτακτης χορηγίας σε επαγγελματίες των τεχνών και του πολιτισμού', 'ypp10701a','Καταβολή έκτακτης χορηγίας σε επαγγελματίες των τεχνών και του πολιτισμού'); }});
+
+//-->
+</script>		
+ 				        </td>
+																		</tr><tr id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_DXDataRow1" class="dxgvDataRow_Office2010Blue">
+																			<td class="dx-wrap dxgv" style="border-bottom-width:0px;">Ηλεκτρονική Υποβολή Αίτησης (έχει λήξει)</td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_tccell1_5" class="dxgv dx-ac" style="border-right-width:0px;border-bottom-width:0px;">
+                           <a class="dxeHyperlink_DevEx" onclick="return ASPx.SEClick(&#39;ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_cell1_5_myLabel&#39;, event)" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_cell1_5_myLabel" href="https://eservices.moec.gov.cy/Politistikes/Chorigia-Technes-Politismos" target="_blank" rel="noopener noreferrer"><img src="Images/icon-ie.jpg" alt="" /></a><script id="dxss_1915258275" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientHyperLink,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_cell1_5_myLabel','',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1$dxdt0$pageControl$ASPxGridView2$cell1_5$myLabel','scStates':4,'scPostfix':'DevEx'},{'Click':function(s, e) { GoogleAnalytics('ypp10701', 'Ηλεκτρονική Υποβολή Αίτησης (έχει λήξει)', 'ypp10701w','Καταβολή έκτακτης χορηγίας σε επαγγελματίες των τεχνών και του πολιτισμού'); }});
+
+//-->
+</script>		
+ 				        </td>
+																		</tr>
+																	</table><table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_LP" class="dxgvLoadingPanel_Office2010Blue" style="left:0px;top:0px;z-index:30000;display:none;">
+																		<tr>
+																			<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_110-VStAi" alt="" style="margin-right:5px;vertical-align:middle;" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_TL">Ανάγνωση&hellip;</span></td>
+																		</tr>
+																	</table><div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_LD" class="dxgvLoadingDiv_Office2010Blue" style="display:none;z-index:29999;position:absolute;">
+
+																	</div><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_IADD" class="dxGridView_gvDragAndDropArrowDown_Office2010Blue" src="/DXR.axd?r=1_110-VStAi" alt="Βέλος προς τα κάτω" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_IADU" class="dxGridView_gvDragAndDropArrowUp_Office2010Blue" src="/DXR.axd?r=1_110-VStAi" alt="Επάνω βέλος" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_IADL" class="dxGridView_gvDragAndDropArrowLeft_Office2010Blue" src="/DXR.axd?r=1_110-VStAi" alt="Αριστερό βέλος" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_IADR" class="dxGridView_gvDragAndDropArrowRight_Office2010Blue" src="/DXR.axd?r=1_110-VStAi" alt="Δεξί βέλος" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2_IDHF" class="dxGridView_gvDragAndDropHideColumn_Office2010Blue" src="/DXR.axd?r=1_110-VStAi" alt="Μη εμφάνιση" style="position:absolute;visibility:hidden;top:-100px;" /></td>
+																</tr>
+															</table><script id="dxss_1990557327" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientGridView,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2','ASPxGridView2',{'callBack':function(arg) { WebForm_DoCallback('ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1$dxdt0$pageControl$ASPxGridView2',arg,ASPx.Callback,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2',ASPx.CallbackError,true); },'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1$dxdt0$pageControl$ASPxGridView2','stateObject':{'keys':['36415|24478','36419|24478'],'callbackState':'uOcqo0D87GO12KMTziLiA0Ph2884rdYGvLyYtCrMj/GG+TENx5TWnPVlmvyUROXRnAxwfvfbzdzfNyOtuXf5nfxRoXQeKyZm3bUSwIaF3LqbtGhDR+RupqsWJvVZdgIT0uHxeeJdHWSv8FXmJXK4MSG3vtIruvFE3Ge/Yle51v0ZfjVKIHHmWoo1nP4wL05pElvzLaQh09XoxJxgA8EyHcgiUY/A60DQJ0zL4uqrS/wn4Ban7YI5MMFeTvIkPq/MsEvQ7V3TZgLuaxa4u32xcs2moPhP/VbGjWexbVNKvWCTwKGz7fX0PDIf2wuxpTWYvuKTj7T5A122L5ciwjQxv4T6zKGZVpF1SumFIcXsOk9XjIQ2Eml1AaQVo7J1CcY08z0LLt2jJ0sWBSMCsaFNcdztVaZezTUtgCJFQ+pazEGQYQLgNosAs2CX7TSUHYoZneDGz9UNUTgLjAVn5pkiYjd8rL16BHvx3SLwR16bwgTBlYHtxEEuQAtW0HVZqopuKcdgaHlJa0F/U2faQLNeYWxgXXOnPt7+CparHjRtCx9/qtnQLcQWpLGkU6fQ0ySfQI6myQGYZ6k6v9xRvUyKPylJ7d2+ZzvYvTn3TFslG9pg32Yf8Wh6bNObJG1N7Li7/318KOpBBbpp4QIrHKAmvHSaqD3FYpFhY6fs9NZ1/gLyoJ4Q2gMWUx4TzHCZxFWV8VCwU1Xv0JGFQanYJT74caZ8M8psaIFcEWCwYtx1u4EP9mBZOjxd1ADh6V2GDHqoFpZWewdAmQdavE1kbdLVaGwSCr7KLTpnf6U0HauVotgYwDwxFXlGdFdZUHKrVEFhaXpWUfcAmV8iXqo6oUijnxxv2rTXTikqhXRakG2InY1/7TKW3kh8p5Ia68AFwBDC2sbp9eL6ZAk5uuJN/Kyc/j7Ow1iSG/UDQgNnerFyy0x//LV9VzmJ+mZLDglAL83uHUnW5vwU36eb2pvIZFPLuVWUyyx836M8cj5Me6n9F/ptaAigfPIL2zjklzdshsS77vtgT2uRfIEkwTtlaGs0iI3FaRtkG6kA+e8p80Dl/yzqzRMi8qEFL5B1hfAeNOiAzbKjF3IKzB7LxrudyGbimA/YWa2VQAJ+yTnIyi8mBiaCNnKxxhUD/1F3KxFwRRw1+Npl4zFTz7P56Ajsi6Q/GiuiDCrG1I9S46ZGY/Szgg3m0CMJeWVe+P9f+RdUKku0ltVyAMhVnmv+1uObDNjuxF8bd9rA1DfYTkwK5vFQx5DK9FD/Sbr+71N1RqL+UEiTDTWCS5PoQo7xzInGNJCUFo+uWXbFRGshLeV3I63nVUagXL++9twYk9Ufk6X0xc+fmde/1ohDE0ZBfCWXiIE2YigW/JJ2IbibA6Pzf4qrxzKw4Bp1uYCgIO/1L8Ij7U6B','groupLevelState':{},'selection':''},'callBacksEnabled':true,'pageRowCount':2,'pageRowSize':20,'pageIndex':0,'pageCount':1,'selectedWithoutPageRowCount':0,'visibleStartIndex':0,'focusedRowIndex':-1,'allowFocusedRow':false,'allowSelectByItemClick':false,'allowSelectSingleRowOnly':false,'callbackOnFocusedRowChanged':false,'callbackOnSelectionChanged':false,'editState':0,'editItemVisibleIndex':-1,'searchPanelFilter':'','allowDelete':true,'allowEdit':true,'allowInsert':true,'columnProp':[[0,0,,'EnimerosiID',,,,,0,,,,,,,,1],[1,0,,'autoID',,,,,1,,,,,,,,1],[2,0,'enimerosi_text_id','enimerosi_text_id',,,,,2,,,,,,,,1],[3,,,'Description',,,,,3],[4,0,,'typeextension',,,,,4,,,,,,,,1],[5,,,'ImageLink',,,,,5],[6,0,,'Attachment',,,,,6,,,,,,,,1],[7,0,,'Target_name',,,,,,,,,,,,,1],[8,0,,'WebLink',,,,,,,,,,,,,1]],'editMode':2,'indentColumnCount':0,'allowChangeColumnHierarchy':false,'allowMultiColumnAutoFilter':false});
+ASPxClientGridBase.PostponeInitialize('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_ASPxGridView2',({'commandButtonIDs':[],'styleInfo':{'ei':'<tr class="dxgvEditingErrorRow_Office2010Blue">\r\n\t<td class="dxgv" data-colSpan="2" style="border-right-width:0px;"></td>\r\n</tr>','fc':{'css':'dxgvFocusedCell_Office2010Blue'},'bec':{'css':'dxgvBatchEditCell_Office2010Blue dxgv'},'bemc':{'css':'dxgvBatchEditModifiedCell_Office2010Blue dxgv'},'bemergmc':{'css':'dxgvBatchEditModifiedCell_Office2010Blue dxgvBatchEditCell_Office2010Blue dxgv'},'bedi':{'css':'dxgvBatchEditDeletedItem_Office2010Blue dxgv'},'sel':{'css':'dxgvSelectedRow_Office2010Blue'},'fi':{'css':'dxgvFocusedRow_Office2010Blue'},'fgi':{'css':'dxgvFocusedGroupRow_Office2010Blue'}}}));
+
+//-->
+</script>
+ 
+               
+														</div>
+													</div>
+												</div>
+											</div><b class="dx-clear"></b><table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_LP" class="dxtcLoadingPanel_DevEx dxlpLoadingPanel_DevEx" style="left:0px;top:0px;z-index:30000;display:none;">
+												<tr>
+													<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_110-VStAi" alt="" style="vertical-align:middle;" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl_TL">Ανάγνωση&hellip;</span></td>
+												</tr>
+											</table><script id="dxss_2131829395" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl',[[['dxtc-tabHover',''],['',''],['T0'],['','T']],[['dxtc-activeTabHover',''],['',''],['AT0'],['','T']]]);
+ASPx.AddDisabledItems('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl',[[['dxtcLiteDisabled_DevEx',''],['',''],['T0','AT0'],['','T']]]);
+ASPx.createControl(ASPxClientPageControl,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl','',{'callBack':function(arg) { WebForm_DoCallback('ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1$dxdt0$pageControl',arg,ASPx.Callback,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_dxdt0_pageControl',ASPx.CallbackError,true); },'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1$dxdt0$pageControl','emptyHeight':true,'emptyWidth':true,'flexEnabled':false},null,null,{'tabs':[['',,,,,]]});
+
+//-->
+</script> </div> 
+            </td>
+										</tr>
+									</table>
+								</div><table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_DXStatus" class="dxgvStatusBar_DevEx" width="100%">
+									<tr class="dxgv">
+										<td width="100%">&nbsp;</td><td id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_DXLPContainer"></td>
+									</tr>
+								</table><table id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_LP" class="dxgvLoadingPanelStatusBar_DevEx" style="left:0px;top:0px;z-index:30000;display:none;">
+									<tr>
+										<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_110-VStAi" alt="" style="vertical-align:middle;" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_TL">Ανάγνωση&hellip;</span></td>
+									</tr>
+								</table><div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_LD" class="dxgvLoadingDiv_DevEx" style="display:none;z-index:29999;position:absolute;">
+
+								</div><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_IADD" class="dxGridView_gvDragAndDropArrowDown_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="Βέλος προς τα κάτω" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_IADU" class="dxGridView_gvDragAndDropArrowUp_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="Επάνω βέλος" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_IADL" class="dxGridView_gvDragAndDropArrowLeft_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="Αριστερό βέλος" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_IADR" class="dxGridView_gvDragAndDropArrowRight_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="Δεξί βέλος" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1_IDHF" class="dxGridView_gvDragAndDropHideColumn_DevEx" src="/DXR.axd?r=1_110-VStAi" alt="Μη εμφάνιση" style="position:absolute;visibility:hidden;top:-100px;" /></td>
+							</tr>
+						</table><script id="dxss_467463889" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientGridView,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1','ASPxGridView1',{'callBack':function(arg) { WebForm_DoCallback('ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1',arg,ASPx.Callback,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1',ASPx.CallbackError,true); },'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$ASPxGridView1','stateObject':{'keys':['24478'],'groupLevelState':{},'callbackState':'RMG0SCfRvjGnlhJ1xnIPmypoZx+3aRtKLmj8qCbAudqvkF/bfeVGpcUgWjzVQ7CMteNcHc5tlGDRY93zyW+7zYNlT/dz5HnVxFvW6KzeuWAS5jazczHR72KGOv+0NVBqi4YVMwGxl22unGFDhl1tvDuQmWo6PJJ1ssVj4F8bqTOWklOc5anZcLS4OfZFdANdKNI16aixuEEOk5u5SBiV/Z6QJ9SUCk+fpdyN5NUsMstPMfF2db3GomY6rV3im7m79HcOPE6oeVLcV4kce9BKLTsQ9k9OANAICrnEZ2CZqO2ejRVM3OAF3xGU1xuKfSCuu0bKIMret0fq/b5BO+i8joXz/q8r6xxSGVA8Ib4tdp0rkLfyQgtOfvHGVewEREwvX57/bvRun+p5SW9irAlj0RsyS8OkFFjMA+cduYskyyTa1x/qctT9T2W10HpmyA+2j5644jSqD/oIxY3MqEdgTJO5lR5KXSSd6Y2RAKSGkN9ALgikW6BCIO88GTAKklxftkdc5UdjitbWAdPnPjlDziCpwtxI35P3KRrvEpvbsgyQAHmodZEJaLH5hGs7M//dsI9UZapkDP5K+PCQWCP3b2ryQd8+qCG4fTqYvSElfZvF4r2ZJmxPMaQLOIGv51KGYLi5BfMGo22EXq97tI8KFQ==','scrollState':null,'selection':''},'callBacksEnabled':true,'pageRowCount':1,'pageRowSize':30,'pageIndex':0,'pageCount':1,'selectedWithoutPageRowCount':0,'visibleStartIndex':0,'focusedRowIndex':-1,'allowFocusedRow':false,'allowSelectByItemClick':false,'allowSelectSingleRowOnly':false,'vertScroll':1,'callbackOnFocusedRowChanged':false,'callbackOnSelectionChanged':false,'editState':0,'editItemVisibleIndex':-1,'allowSearchFilterTimer':false,'searchPanelFilter':'','allowDelete':true,'allowEdit':true,'allowInsert':true,'columnProp':[[0,0,,'EnimerosiID',,,,,0,,,,,,0,,,,,,,0],[1,,,'enimerosi_text_id',0,,,,1,,,,,,0,,,,,,,0],[2,0,'EnimerosiLink','enimerosi_text_id',,,,,1,,,,,,0,,,,,,,0],[3,0,,'EnimerosiID_index',,,,,2,,,,,,,,,,,,,0],[4,,,'enimerosi_type',0,2,,,3,,,,,,0],[5,,,'date_enimerosis',0,3,,,4,,,,,,0],[6,,,'prioritY',0,2,,,5,,,,,,0],[7,,,'Fakelos',0,,,,6,,,,,,0],[8,,,'sender',0,2,,,7,,,,,,0],[9,,,'Subject',0,,,,8,,,,,,0],[10,,,'date_katachorisis',0,3,,,9,,,,,,0],[11,0,,'detailed_description',,,,,,,,,,,,,,,,,,0],[12,0,,,0,,,,10,,,,,0,,,,,,,,0]],'editMode':2,'indentColumnCount':1,'allowChangeColumnHierarchy':false,'allowMultiColumnAutoFilter':false,'hasDetailRows':true},{'Init':OnInit,'EndCallback':EndCallback});
+ASPxClientGridBase.PostponeInitialize('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxGridView1',({'commandButtonIDs':[],'styleInfo':{'ei':'<tr class="dxgvEditingErrorRow_DevEx">\r\n\t<td class="dxgvIndentCell dxgv dxgvDIC" style="border-left-width:0px;border-right-width:0px;">&nbsp;</td><td class="dxgv" data-colSpan="8"></td>\r\n</tr>','fc':{'css':'dxgvFocusedCell_DevEx'},'bec':{'css':'dxgvBatchEditCell_DevEx dxgv'},'bemc':{'css':'dxgvBatchEditModifiedCell_DevEx dxgv'},'bemergmc':{'css':'dxgvBatchEditModifiedCell_DevEx dxgvBatchEditCell_DevEx dxgv'},'bedi':{'css':'dxgvBatchEditDeletedItem_DevEx dxgv'},'sel':{'css':'dxgvSelectedRow_DevEx'},'fi':{'css':'dxgvFocusedRow_DevEx'},'fgi':{'css':'dxgvFocusedGroupRow_DevEx'}}}));
+
+//-->
+</script>
+    
+    <table width="100%">
+      <tr>
+         <td align="left">
+            
+            
+                     
+            
+        </td>
+        <td align="right"   >
+         <div>
+             <span class="dxeBase_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_ASPxCopyright"><font size="1">2021 Copyright &#169; Υπηρεσία Διαδικτύου και Επικοινωνίας | Υπουργείο Παιδείας, Πολιτισμού, ΑΘλητισμού και Νεολαίας </font></span>
+         </div>
+        </td>
+      </tr>
+    </table>
+     
+
+    
+
+    
+
+ 
+ <span class="dxeBase_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_MouseX"><font color="White">0</font></span><script id="dxss_747896898" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientLabel,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_MouseX','MouseX',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$MouseX','scStates':4,'scPostfix':'DevEx'});
+
+//-->
+</script>
+ <span class="dxeBase_DevEx" id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_MouseY"><font color="White">0</font></span><script id="dxss_1796611265" type="text/javascript">
+<!--
+ASPx.createControl(ASPxClientLabel,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_MainContent_MouseY','MouseY',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter$MainContent$MouseY','scStates':4,'scPostfix':'DevEx'});
+
+//-->
+</script>
+ 
+
+
+  <script type="text/javascript">
+
+
+
+// Detect if the browser is IE or not.
+// If it is not IE, we assume that the browser is NS.
+var IE = document.all?true:false
+
+// If NS -- that is, !IE -- then set up for mouse capture
+if (!IE) document.captureEvents(Event.MOUSEMOVE)
+
+// Set-up to use getMouseXY function onMouseMove
+
+
+//ASPxWinHistory.text = window.history.length;
+document.onmousemove = getMouseXY;
+
+// Temporary variables to hold mouse x-y pos.s
+var tempX = 0
+var tempY = 0
+
+// Main function to retrieve mouse x-y pos.s
+function getMouseXY(e) {
+    
+  if (IE) { // grab the x-y pos.s if browser is IE
+    tempX = event.clientX + document.body.scrollLeft
+    tempY = event.clientY + document.body.scrollTop
+  } else {  // grab the x-y pos.s if browser is NS
+    tempX = e.pageX
+    tempY = e.pageY
+  }  
+  // catch possible negative values in NS4
+  if (tempX < 0){tempX = 0}
+  if (tempY < 0) { tempY = 0 }
+
+  
+  MouseX.text = tempX;
+  MouseY.text = tempY;
+  return true
+}
+
+</script>
+
+  <script  type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+     
+      ga('create', 'UA-12540359-8', 'auto');
+      ga('send', 'pageview');
+
+</script>
+
+                    
+					</div></td>
+				</tr>
+			</table><div id="ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter_RP" class="dxsplResizingPointer_DevEx" style="z-index:29999;display:none;position:absolute;">
+
+			</div><script id="dxss_1488738476" type="text/javascript">
+<!--
+ASPx.AddSelectedItems('ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter',[[['dxsplPaneCollapsed_DevEx'],[''],['0']],[['dxsplVSeparatorCollapsed_DevEx'],[''],['0_S']]]);
+ASPx.createControl(ASPxClientSplitter,'ctl00_ctl00_ASPxSplitter1_Content_ContentSplitter','',{'uniqueID':'ctl00$ctl00$ASPxSplitter1$Content$ContentSplitter','width':'95%','height':'100%','showSeparatorImage':true,'defaultMinSize':40},{'PaneResized':function(s, e) { 
+            if(window.ASPxGridView1 && e.pane.name == 'ContentCenter')
+                ASPxGridView1.SetHeight(e.pane.GetClientHeight());
+            }},null,{'isVertical':true,'panes':[{'n':'ContentCenter','v':1}]});
+
+//-->
+</script>
+    
+
+
+
+      <script  type="text/javascript">
+          (function (i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                  (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date(); a = s.createElement(o),
+ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+          
+          ga('create', 'UA-12540359-8', 'auto');
+          ga('send', 'pageview');
+
+</script>
+
+                    
+		</div></td>
+	</tr>
+</table><div id="ctl00_ctl00_ASPxSplitter1_RP" class="dxsplResizingPointer_DevEx" style="z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1208103248" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ctl00_ASPxSplitter1',[[['dxsplHSeparatorHover_DevEx'],[''],['1_S'],,[[{'spriteCssClass':'dxWeb_splHSeparatorHover_DevEx'}]],['_CS_Img']]]);
+ASPx.AddSelectedItems('ctl00_ctl00_ASPxSplitter1',[[['dxsplPaneCollapsed_DevEx'],[''],['0','1']],[['dxsplHSeparatorCollapsed_DevEx'],[''],['0_S','1_S']]]);
+ASPx.createControl(ASPxClientSplitter,'ctl00_ctl00_ASPxSplitter1','ASPxSplitter1',{'uniqueID':'ctl00$ctl00$ASPxSplitter1','height':'100%','allowResize':false,'showSeparatorImage':true,'defaultMinSize':40,'fullScreen':true},null,null,{'panes':[{'s':9,'smin':90,'v':1,'n':'Header','st':'%'},{'st':'%','s':91,'v':1,'nar':0,'n':'Content','smin':375}]});
+
+//-->
+</script>
+
+
+
+
+      <script  type="text/javascript">
+          (function (i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                  (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date(); a = s.createElement(o),
+ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+          
+          ga('create', 'UA-12540359-8', 'auto');
+          ga('send', 'pageview');
+
+</script>
+    </form>
+</body>
+</html>

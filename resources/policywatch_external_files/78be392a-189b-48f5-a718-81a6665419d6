@@ -1,0 +1,15 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Error Page
+</title></head>
+<body>
+    <div class="content">
+        <p>
+            <span id="ErrorMessage">An error has occurred trying to access this page.</span></p>
+        <p>
+            <a href="javascript:history.back();">Click here to return to the previous page</a>
+            or go to the <a href="http://www.hse.ie">home page</a></p>
+    </div>
+</body>
+</html>

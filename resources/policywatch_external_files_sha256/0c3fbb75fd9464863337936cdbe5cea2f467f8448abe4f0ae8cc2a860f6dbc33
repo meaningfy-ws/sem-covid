@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Edito CMS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex, nofollow" />
+<base href="http://www.dialog.gov.pl/szablony/404/" />
+<style type="text/css">
+	@font-face {
+    font-family: 'LatoLight';
+    src: url('/szablony/mpips/font/Lato-Lig-webfont.eot');
+    src: url('/szablony/mpips/font/Lato-Lig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/szablony/mpips/font/Lato-Lig-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('/szablony/mpips/font/Lato-Reg-webfont.eot');
+    src: url('/szablony/mpips/font/Lato-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/szablony/mpips/font/Lato-Reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	body{
+		font-family: Arial, Tahoma sans-serif;
+		font-size: 12px;
+		background: #eeedec;
+		color: #716f63;
+		padding: 75px 0;
+	}
+	body table td.logo{
+		padding: 0 0 10px 0;	
+	}
+	body table td.error{
+		background: url(404.gif) no-repeat center;
+		padding: 0 0 0 250px; 
+		font-family: Georgia, Tahoma, serif;
+		font-size: 18px;
+		color: #3b3b3b;
+	}
+	body table td.error a {
+		font-family: 'LatoRegular', Arial, Tahoma, sans-serif;
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 16px;	
+		display: block;
+		width: 335px;
+		height: 16px;
+		padding: 5px 25px 5px;
+		background: url(gradient-404.gif) repeat;
+		text-align:center;
+	}
+	body table td.stopka{
+		text-align:center;
+	}
+	.page-info {
+		color:#17434c;
+		font-size:24px;
+		font-family:'LatoLight';
+	}
+</style>
+</head>
+<body>
+	<table width="723" cellpading="0" align="center">
+		<tr>
+			<td class="logo">
+				<a href="http://www.dialog.gov.pl" title="strona główna">
+					<img src="logo.png" alt="Miniesterstwo Pracy i Polityki Społecznej" border="0" />
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td width="100%" height="273" class="error" align="center" valign="middle">
+				<table width="405" cellpading="0" cellspacing="0" border="0" align="left">
+					<tr>
+						<td class="page-info">Strona o podanym adresie nie istnieje</td>
+					</tr>
+					<tr>
+						<td height="16"></td>
+					</tr>
+					<tr>
+						<td><a href="http://www.dialog.gov.pl">PRZEJDŹ DO STRONY GŁÓWNEJ</a></td>
+					</tr>
+				</table>    
+			</td>
+		</tr>
+		<tr>
+			<td class="stopka">
+				<img src="stopka.gif" alt="obraz w stopce" />
+			</td>
+		</tr>
+	</table>
+</body>
+</html>   

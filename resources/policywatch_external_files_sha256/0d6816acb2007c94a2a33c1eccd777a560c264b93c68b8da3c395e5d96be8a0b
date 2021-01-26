@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow"/>
+    <link rel="stylesheet" href="/css/errors.css" type="text/css"/>
+    <script src="/javascript/errors.js" ></script>
+    <title>404 - Page not found</title>
+</head>
+<body class="error-page">
+    <div class="row-fluid login-wrapper">
+        <div class="span4 box error-box">
+            <div class="content-wrap">
+                <h1 class="message-big">404 - Page not found</h1>
+                <p>The file that you requested could not be found on this server.</p>
+                <p id="backLink" style="display:none">
+                    <a class="btn btn-large btn-block" href="javascript:history.back()">
+                        <i class="icon-chevron-left"></i>
+                        &nbsp;Click
+                        &nbsp;here
+                        &nbsp;to go back.
+                    </a>
+                </p>
+                <p>Click here to return to the home page</p>
+                <a class="btn btn-large btn-block btn-primary" href="/">
+                    <i class="icon-home icon-white"></i>
+                    &nbsp;Homepage
+                </a>
+            </div>
+        </div>
+    </div>
+</body>

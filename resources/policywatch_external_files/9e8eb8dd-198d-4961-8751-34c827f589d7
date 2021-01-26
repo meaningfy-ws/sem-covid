@@ -1,0 +1,1015 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://govie-external-resources.s3-eu-west-1.amazonaws.com/cookiesjs/cookiejs.js"></script>
+        
+        <script>
+            var dataLayer = [{'govie_cg_id': 163, 'govie_cg_title': 'Department of Finance', 'govie_i_title': 'Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions', 'govie_i_type': 'press_releases', 'govie_i_id': 95076}];
+        </script>
+        
+        <meta name="google-site-verification" content="O_Juklz6GPKoqtfnU0SrMMBu0F10BJbQ2d67lXd1ZFw" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="/static/_reboot/bootstrap/bootstrap.min.css?build=37973b7" rel="stylesheet" />
+        <link href="/static/_reboot/fontawesome/all.css" rel="stylesheet" />
+        <!-- <link href="/static/_reboot/_reboot_app/css/fonts.css?build=37973b7" rel="stylesheet" /> -->
+        <link href="/static/_reboot/_reboot_app/css/style.css?build=37973b7" rel="stylesheet" />
+        <link href="/static/_reboot/_reboot_app/img/favicon.png?build=37973b7" rel="shortcut icon" />
+        
+        <!-- PAGE META -->
+        <title>gov.ie - Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions</title>
+        
+        
+        <meta name="og:title" property="og:title" content="Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions">
+        
+        <!-- Shims -->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="/static/_reboot/bootstrap/html5shiv.min.js?build=37973b7"></script>
+            <script src="/static/_reboot/bootstrap/respond.min.js?build=37973b7"></script>
+        <![endif]-->
+        <script src="/static/_reboot/jquery/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <script>
+
+            __COOKIEJS_CSS_DEFAULT_FONT = 'Lato';
+            __COOKIEJS_CURRENT_LANGUAGE = 'en';
+
+            function load_analytics(preference_is_set) {
+                if (preference_is_set === true) {
+                    __cookiejs_load_google_analytics('GTM-KWS7Z8Z');
+                } else {
+                    __cookiejs_delete_cookie('_ga');
+                    __cookiejs_delete_cookie('_gid');
+                    __cookiejs_delete_cookie('_gat_(.*)');
+                };
+            };
+
+            function load_iframes(preference_is_set) {
+                if (preference_is_set === true) {
+                    __cookiejs_load_iframes();
+
+                } else {
+                    __cookiejs_hide_iframes([
+                        'youtube.com',
+                        'livestream.com',
+                    ]);
+                };
+            };
+
+            __cookiejs_add_preferences([
+                new __CookieJsPreference(__COOKIEJS_TRANSLATION_PREFERENCE_GOOGLE_ANALYTICS, 'analytics', load_analytics),
+                new __CookieJsPreference(__COOKIEJS_TRANSLATION_PREFERENCE_IFRAMES, 'iframes', load_iframes),
+            ]);
+
+            $(window).load(function(){
+
+                var banner_selector = __COOKIEJS_CLASSNAME_BANNER;
+                var footer_selector = __COOKIEJS_CLASSNAME_FOOTER;
+
+                var banner = $('.' + banner_selector).first();
+                if (banner !== undefined){
+                    banner.removeClass(banner_selector);
+                    banner.addClass('container');
+                };
+
+                var footer = $('.' + footer_selector).first();
+                if (footer !== undefined){
+                    footer.removeClass(footer_selector);
+                    footer.addClass('container');
+
+                    footer_h2 = footer.find('h2').first();
+                    if (footer_h2 !== undefined) {
+                        footer_h2.css('padding-left', '0px');
+                    };
+
+                    footer_ul = footer.find('ul').first();
+                    if (footer_ul !== undefined) {
+                        footer_ul.css('padding-left', '0px');
+                    };
+
+                };
+            });
+
+        </script>
+
+        
+
+
+<a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default" role="navigation" aria-labelledby="RebootSrMainMenuNav" reboot-navbar>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#RebootMainMenu" aria-expanded="false">
+                <span class="sr-only">Toggle main navigation</span>
+                <img src="/static/_reboot/_reboot_app/img/Icon_Hamburger.png" alt="Image: Toggle main navigation" />
+            </button>
+            <a href="/en/" class="navbar-brand">
+                <img src="/static/_reboot/_reboot_app/img/Image_Logo.png" alt="Project logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="RebootMainMenu">
+            <h2 class="sr-only" id="RebootSrMainMenuNav">
+                Main navigation
+            </h2>
+            <ul class="nav navbar-nav navbar-right">
+
+                
+                    <li><a href="/en/help/departments/">Departments</a></li>
+                
+
+                
+                    <li><a href="/en/consultations/">Consultations</a></li>
+                
+                    <li><a href="/en/publications/">Publications</a></li>
+                
+                    <li><a href="/en/policies/">Policies</a></li>
+                
+
+                <li class="separator hidden-sm hidden-xs" role="separator">
+                    <img src="/static/_reboot/_reboot_app/img/Tapered_Vertical_Rule_Green.png" alt="Image: Separator"/>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Languages <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                            <li>
+                                <a href="/en/press-release/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/">
+                                    English
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/ga/preasraitis/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/">
+                                    Gaeilge
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <div class="col-sm-12 col-xs-12 hidden-lg hidden-md margin-bottom-sm"></div>
+                </li>
+                
+                    <li class="hidden-sm hidden-xs" reboot-search-drawer-trigger>
+                        <span class="pointer" role="button" aria-label="Toggle search menu" tabindex="0">
+                            <img src="/static/_reboot/_reboot_app/img/Icon_Search.png" alt="Image: Search button" aria-hidden="true" />
+                        </span>
+                    </li>
+                    <li class="hidden-lg hidden-md">
+                        <div class="col-md-12 col-sm-12 col-xs-12 padding-bottom-sm">
+                            
+
+
+
+
+
+
+
+
+
+
+
+<form action="/en/search/" method="GET" role="search" aria-label="Search gov.ie">
+    <div class="input-group">
+        <input type="text" name="q" value="" class="form-control input-lg no-radius" aria-label="Search input field" placeholder="Search gov.ie">
+        <span class="input-group-btn">
+            <button class="btn btn-default btn-state-gold btn-lg no-radius" alt="Button: Search">
+                <img src="/static/_reboot/_reboot_app/img/Icon_Search.png" alt="Image: Search button" />
+            </button>
+        </span>
+    </div>
+</form>
+
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid" reboot-search-drawer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    
+
+
+
+
+
+
+
+
+
+
+
+<form action="/en/search/" method="GET" role="search" aria-label="Search gov.ie">
+    <div class="input-group">
+        <input type="text" name="q" value="" class="form-control input-lg no-radius" aria-label="Search input field" placeholder="Search gov.ie">
+        <span class="input-group-btn">
+            <button class="btn btn-default btn-state-gold btn-lg no-radius" alt="Button: Search">
+                <img src="/static/_reboot/_reboot_app/img/Icon_Search.png" alt="Image: Search button" />
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+
+    
+
+    
+
+
+
+
+
+
+
+    <div class="container margin-bottom-xlg" id="main" role="main">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                
+
+
+
+
+<div class="row" reboot-header>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <span>
+            
+            Press release
+            
+        </span>
+        <h1>Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions</h1>
+
+        
+
+
+
+
+
+    
+    <p>
+        From
+        
+            <a href="/en/organisation/department-of-finance/">Department of Finance</a>&nbsp;
+        
+        
+    </p>
+
+
+
+        
+        
+        
+
+        
+            
+            
+            <p>Published on <time datetime="2020-11-06">6 November 2020</time></p>
+        
+
+        
+
+        
+
+        
+            
+            
+            <p>Last updated on <time datetime="2020-11-06">6 November 2020</time></p>
+        
+
+        
+
+
+
+
+    </div>
+</div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+    <div class="container margin-bottom-xlg">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-content>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Minister for Finance, Paschal Donohoe TD and the Minister for Media, Tourism, Arts, Culture, Sport and the Gaeltacht, Catherine Martin TD have today (Friday) launched the Covid Restrictions Support Scheme (CRSS).</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Eligible businesses can now register for the scheme on the Revenue Online Service (ROS). The registration process will include providing details such as the location of the business and average weekly turnover for 2019. The claims process will be available from mid-November. Once they have registered, a taxpayer will be able to make a claim for the period their business is limited from operating due to public health guidelines and restrictions.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The CRSS is a targeted support for businesses significantly impacted by restrictions introduced by the government under public health regulations to combat the effects of the COVID-19 pandemic.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The details of the scheme have been published in the Finance Bill 2020 and the key features of the scheme are:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-list>
+    <div class="row">
+        <ul reboot-site-list>
+<li>CRSS is designed to assist those businesses whose trade has been significantly impacted or temporarily closed as a result of the restrictions as set out in the government’s ‘Living with COVID-19’ Plan</li>
+<li>the scheme will generally operate when Level 3 or higher is in place and will cease when restrictions are lifted</li>
+<li>the scheme will apply to businesses where government restrictions prohibit or reduce access by customers to their business premises</li>
+<li>qualifying businesses can apply to the Revenue Commissioners for a cash payment in respect of an advance credit for trading expenses for the period of the restrictions</li>
+<li>to qualify under the scheme, a business must be able to demonstrate that, because of the COVID-19 restrictions, the turnover of the business in the period for which the restrictions are in operation, and for which a claim is made, will be no more than 25% of an amount equal to the average weekly turnover of the business in 2019 (or average weekly turnover in 2020 in the case of a new business) multiplied by the number of weeks in the period for which a claim is made</li>
+<li>the scheme will operate from 13 October 2020 to 31 March 2021 and there is provision for the Minister for Finance to vary aspects of the scheme by Ministerial Order</li>
+        </ul>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Revenue have published an overview of the scheme with some detailed examples, together with guidance on the operation of the scheme on <a href="https://www.revenue.ie/en/Home.aspx" reboot-markdown-link>www.Revenue.ie.</a>
+</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Speaking at the launch of the Covid Restrictions Support Scheme, Minister Donohoe said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;I am confident that the Covid Restrictions Support Scheme will provide much needed support to businesses that have had to close as a result of the COVID-19 restrictions. With the recent change to level 5 throughout the country, this means many more businesses have had to temporarily close and this scheme is designed to provide targeted and timely assistance. We understand the difficulties businesses and individuals are facing and this measure is just one part of the government’s supports, which also include the wage subsidy schemes and temporary reduction in the VAT rate.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;Specific sectoral schemes are also being rolled out which will support many businesses that may not qualify for CRSS. The scheme came into effect from Budget Day 13 October, and claims can be submitted in the coming weeks to cover the period from that date to cover the current period of restrictions (to 1 December). Registration opened earlier this week and Revenue have informed me that over 3,853 businesses have registered nearly 4,160 premises for CRSS with Revenue, which shows the importance of this support to businesses during this time. I’m encouraging all eligible businesses to register with Revenue on ROS so that they can participate in the scheme with payments issuing shortly. Registration to participate in the scheme is now open for qualifying businesses through Revenue’s Online Service, ROS.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Tánaiste, Leo Varadkar said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;This government is determined to support businesses across Ireland that have been adversely impacted by COVID-19. Budget 2021 prioritised investment in helping businesses respond to the twin crises of Brexit and COVID-19. The funding announced in the budget comes on top of the measures announced earlier this year in the July Stimulus – a €7bn package, aimed at protecting jobs and creating new opportunities.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;I welcome the Covid Restriction Support Scheme which specifically targets businesses that have either been forced to temporarily close their premises or only been able to trade at significantly reduced levels as a result of restrictions. The intention of the scheme is to recognise the challenges experienced in particular by sectors that have been most affected by restrictions since the onset of the pandemic in March. We recognise the strain that businesses are under and have taken steps to help through this difficult period. The Covid Restrictions Support Scheme will allow businesses to meet their ongoing costs.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Minister Martin said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;Ensuring our tourism and arts sectors have the supports to help them survive the pandemic is a key priority for Government. It is vital these businesses continue operating and are ready to reopen their doors to help in our recovery, when the time comes. The CRSS helps maintain those crucial financial foundations, assisting hotels, restaurants, and arts venues, while their business are curtailed and restricted for public health reasons. This scheme, negotiated in the Budget, provides rebates, to a maximum weekly payment of €5,000 to facilities temporarily closed or restricted because of the virus. I want to ensure that, while tourism is struggling now, it continues to be a driver of recovery in the future, while arts venues very much need this financial lifeline.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p><strong reboot-markdown-bold>ENDS</strong>
+</p>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="notes"></a>
+        
+        <h2>
+            Notes
+        </h2>
+    </div>
+</div>
+
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="outline-of-scheme"></a>
+        
+        <h3>
+            Outline of Scheme
+        </h3>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The CRSS provides support for businesses that are forced to temporarily close or to operate at significantly reduced levels because of COVID-19 restrictions that either prohibit, or significantly restrict, customers of the business from accessing the premises in which the business is carried on. Generally, this refers to COVID-19 restrictions at Level 3, 4 or 5 of the government’s Plan for Living with COVID-19 but certain businesses may qualify for the support where lower levels of restrictions are in operation.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The scheme will be open to companies and the self-employed carrying on a trade in a business premises where the government restrictions directly prohibit or restrict access to the premises by customers. Where a business has multiple geographical trading locations it is proposed that the business will be in a position to claim for each trading premises separately. It is also available to persons who carry on a trade in partnership.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>To qualify under the scheme, a business must be able to demonstrate that, because of the COVID-19 restrictions, the turnover of the business in the period for which the restrictions are in operation, and for which a claim is made, will be no more than 25% of an amount equal to the average weekly turnover of the business in 2019 (or average weekly turnover in 2020 in the case of a new business) multiplied by the number of weeks in the period for which a claim is made.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>A qualifying person will be able to make a claim to Revenue under the CRSS for a cash payment to be known as an “Advance Credit for Trading Expenses”. This payment will be equal to 10% of their average weekly turnover in 2019 up to €20,000 and 5% thereafter, subject to a maximum weekly payment of €5,000, for each week that their business is affected by the COVID-19 restrictions.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-table>
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table">
+<tr>
+    
+        <td><strong reboot-markdown-bold>Weekly turnover</strong>
+</td>
+    
+        <td><strong reboot-markdown-bold>Rate</strong>
+</td>
+    
+        <td><strong reboot-markdown-bold>Amount</strong>
+</td>
+    
+</tr>
+<tr>
+    
+        <td>First €20,000</td>
+    
+        <td>10%</td>
+    
+        <td>€2,000</td>
+    
+</tr>
+<tr>
+    
+        <td>Next €60,000</td>
+    
+        <td>5%</td>
+    
+        <td>€3,000</td>
+    
+</tr>
+<tr>
+    
+        <td>Maximum payment</td>
+    
+        <td> </td>
+    
+        <td>€5,000</td>
+    
+</tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>For businesses established between 26 December 2019 and 12 October 2020, the claim will be based on their actual weekly average turnover in the period between the date of commencement and 12 October 2020 (subject to the weekly cap of €5,000). Payments made under the scheme will be treated as an advance credit for trading expenses.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-paragraph>
+    <div class="row">
+        <p>To make a claim under the scheme, a number of other conditions must be satisfied including that the person has an up to date tax clearance certificate and complied with their Value-Added Tax obligations. The person must register to claim on the ‘Revenue Online Service’ and make a declaration that they satisfy the conditions to make a claim under this section. Where COVID-19 restrictions for a geographical region are extended beyond the date on which they were due to expire, a new claim is required for each extension period.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-list>
+    <div class="row">
+        <ul reboot-site-list>
+<li>specific anti abuse provisions are included to deter the potential for fraudulent claims</li>
+<li>provision is made for the publication of the name of claimants of CRSS on Revenue’s website</li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="duration"></a>
+        
+        <h3>
+            Duration
+        </h3>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The scheme will operate from 13 October 2020 to 31 March 2021 and there is provision for the Minister for Finance to vary aspects of the scheme by Ministerial Order. </p>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="purpose-of-the-scheme"></a>
+        
+        <h3>
+            Purpose of the scheme
+        </h3>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The CRSS is a targeted support for businesses significantly impacted by restrictions introduced by the government under public health regulations to combat the effects of the COVID-19 pandemic.</p>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="qualification-criteria-please-see-revenueie-for-full-details"></a>
+        
+        <h3>
+            Qualification criteria (please see Revenue.ie for full details)
+        </h3>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>In order to qualify for participation in the scheme, businesses will need to:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-list>
+    <div class="row">
+        <ul reboot-site-list>
+<li>be a self-employed individual or companies who carry on a trade or trading activities, the profits from which are chargeable to tax under Case I of Schedule D. It is also available to persons who carry on a trade in partnership</li>
+<li>operate from a business premises located wholly within a geographical region for which COVID-19 restrictions are in operation, and that premises has, due to the significant COVID-19 restrictions, has either temporarily closed to customers or is substantially restricted in operating</li>
+<li>as a result of these significant restrictions, is operating at less than 25% of turnover in 2019</li>
+<li>have an up to date tax clearance certificate</li>
+<li>have complied with their Value-Added Tax obligations</li>
+<li>intend resuming trading when restrictions are lifted</li>
+<li>register for the scheme on the ‘Revenue Online Service’ and make a declaration that they satisfy the conditions to make a claim</li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="operation-of-the-scheme"></a>
+        
+        <h3>
+            Operation of the scheme
+        </h3>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Qualifying businesses will be able to make a claim to Revenue under the CRSS for a cash payment, which will be known as an “Advance Credit for Trading Expenses” (“ACTE”). The ACTE will provide an immediate cash support to businesses. The amount of the ACTE will be based on an amount equal to 10% of the average weekly turnover of the business in 2019 (or in the case of new businesses, the average weekly turnover in 2020) up to €20,000 and 5% thereafter, subject to a maximum weekly payment of €5,000. </p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>All eligible businesses can claim the support irrespective of their turnover levels, but the amount of the ACTE cannot exceed the lower of the amount based on 10%/5% of the relevant weekly turnover or €5,000 per week.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Where COVID-19 restrictions for a geographical region are extended beyond the date on which they were due to expire, a new claim is required for each extension period.</p>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="other-business-supports"></a>
+        
+        <h3>
+            Other business supports
+        </h3>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The key supports and resources available to help businesses impacted by COVID-19 are outlined on <a href="https://dbei.gov.ie/en/What-We-Do/Supports-for-SMEs/COVID-19-supports/" reboot-markdown-link>dbei.gov.ie/en/What-We-Do/Supports-for-SMEs/COVID-19-supports.</a>
+</p>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 reboot-sidebar" role="complementary">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row margin-bottom-md">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" reboot-sidebar-box-dark>
+
+                <h2>Part of</h2>
+
+                
+
+                
+
+                
+                    
+                    <h3>Policies</h3>
+                    <ul reboot-site-list>
+                        
+                            
+                                <li>
+                                    <a href="/en/policy/089629-public-finances/">Government Finances</a>
+                                </li>
+                            
+                        
+                    </ul>
+                
+
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+
+
+                
+
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" reboot-sidebar-box-dark>
+            <h2>Share</h2>
+            <ul reboot-site-list>
+                <li>
+                    <a href="mailto:example@example.com?subject=Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions;body=http://www.gov.ie/en/press-release/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/" target="_blank">
+                        <img src="/static/_reboot/_reboot_app/img/social/email.png" alt="Email Icon" /></a>
+                    &nbsp;
+                    <a href="mailto:example@example.com?subject=Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions;body=http://www.gov.ie/en/press-release/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.gov.ie/en/press-release/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/" target="_blank">
+                        <img src="/static/_reboot/_reboot_app/img/social/facebook.png" alt="Facebook Icon" /></a>
+                    &nbsp;
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.gov.ie/en/press-release/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/intent/tweet?url=http://www.gov.ie/en/press-release/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/&amp;text=Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions;original_referer=" target="_blank">
+                        <img src="/static/_reboot/_reboot_app/img/social/twitter.png" alt="Twitter Icon" /></a>
+                    &nbsp;
+                    <a href="https://twitter.com/intent/tweet?url=http://www.gov.ie/en/press-release/67bcc-government-launches-the-covid-restrictions-support-scheme-crss-to-support-businesses-significantly-impacted-by-covid-restrictions/&amp;text=Government launches the Covid Restrictions Support Scheme (CRSS) to support businesses significantly impacted by COVID-19 restrictions;original_referer=" target="_blank">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container margin-bottom-xs">
+    <div reboot-beta>
+        <span class="label label-default label-beta">BETA</span>
+        <p>
+            This is a prototype - your feedback will help us to improve it.
+        </p>
+    </div>
+</div>
+
+<div class="container" role="region" aria-label="Gov.ie feedback section" reboot-feedback rfw>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="FeedbackChoices">
+        <div class="row" data-reboot-feedback-header>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" role="heading" aria-level="2">
+                Help us improve gov.ie
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                <a href="#FeedbackV2Widget" data-toggle="collapse" aria-expanded="false" aria-controls="FeedbackV2Widget">Leave feedback</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse" id="FeedbackV2Widget">
+
+        <form action="#" method="POST" rfw-form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="QJGkyV7LX69YqaJtLCfe0IzHI7WWTVoF8V6RFnTVOaZIQuWQqTc4sWfAlGYHRsRb">
+            <input type="hidden" name="value" value="false" />
+            <input type="hidden" name="item_type" value="press_releases" />
+            <input type="hidden" name="item_id" value="95076" />
+
+            
+            
+                <input type="hidden" name="publisher" value="163" />
+            
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm margin-top-sm" reboot-site-alert reboot-site-alert-warning>
+                <p>
+            Do not include any personal details in the box below.<br />
+            The information you submit will be analysed to improve the
+            site and will not be responded to individually.
+        </p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+
+                            <fieldset>
+                                <legend class="reboot-legend" role="heading" aria-level="3">
+                                    Was this page useful
+                                    <span class="reboot-required-star" aria-hidden="true">*</span>
+                                    <span class="sr-only">(required)</span>
+                                </legend>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="radio">
+                                        <input type="radio" name="value" value="true" required rfw-option id="FeedbackChoices_choice_true"> <label for="FeedbackChoices_choice_true">Yes</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="value" value="false" required rfw-option id="FeedbackChoices_choice_false"> <label for="FeedbackChoices_choice_false">No</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <label for="FeedbackChoices" class="reboot-label" role="heading" aria-level="3">
+                    Was this page useful
+                    <span class="reboot-required-star">*<span class="sr-only">(required)</span></span>
+                </label>
+                <ul id="FeedbackChoices">
+                    <li>
+                        <div class="radio">
+                            <label><input type="radio" name="value" value="true" required rfw-option tabindex="0"> Yes</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio">
+                            <label><input type="radio" name="value" value="false" required rfw-option tabindex="0">No</label>
+                        </div>
+                    </li>
+                </ul> -->
+
+
+
+            </div>
+
+            <div class="form-group">
+                <label for="FeedbackChoiceNoTextarea" class="reboot-label">
+                    Describe your experience on Gov.ie<span class="reboot-required-star">*<span class="sr-only">(required)</span></span>
+                </label>
+                <textarea name="text" class="form-control input-lg no-radius" rows="5" id="FeedbackChoiceNoTextarea" required maxlength="400" rfw-textarea></textarea>
+                <p class="help-block" aria-hidden="true">
+                    <small>Max: <span rfw-char-count>0</span>/400</small>
+                </p>
+            </div>
+
+            <a href="#FeedbackV2Widget" rel="nofollow" class="btn btn-lg btn-state-gold" role="button" disabled rfw-submit>
+                Submit
+            </a>
+
+            <div class="col-sm-12 col-xs-12 margin-bottom-sm"></div>
+
+        </form>
+
+        <div rfw-messages style="display: none;">
+            <div class="col-sm-12 col-xs-12 margin-top-sm"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" role="alert" reboot-site-alert reboot-site-alert-success rfw-messages-success style="display: none;">
+                Thank you for your feedback
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" role="alert" reboot-site-alert reboot-site-alert-error rfw-messages-fail style="display: none;">
+                Feedback wasn&#39;t sent. Please try again.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" role="contentinfo" style="background-image: url('/static/_reboot/_reboot_app/img/Footer_Background.png')" reboot-footer>
+    <div class="row">
+        <div class="container">
+            <div class="row margin-bottom-sm">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-sm">
+                    <h2>Services and information</h2>
+                    <ul>
+                        
+                            <li><a href="/en/category/agriculture/">Agriculture</a></li>
+                        
+                            <li><a href="/en/category/business/">Business</a></li>
+                        
+                            <li><a href="/en/category/education/">Education</a></li>
+                        
+                            <li><a href="/en/category/employment/">Employment</a></li>
+                        
+                            <li><a href="/en/category/environment/">Environment</a></li>
+                        
+                            <li><a href="/en/category/family-and-relationships/">Family and Relationships</a></li>
+                        
+                            <li><a href="/en/category/health/">Health</a></li>
+                        
+                            <li><a href="/en/category/housing/">Housing</a></li>
+                        
+                            <li><a href="/en/category/justice/">Justice</a></li>
+                        
+                            <li><a href="/en/category/local-government/">Local Government</a></li>
+                        
+                            <li><a href="/en/category/money-and-tax/">Money and Tax</a></li>
+                        
+                            <li><a href="/en/category/national-government/">National Government</a></li>
+                        
+                            <li><a href="/en/category/social-welfare/">Social Welfare</a></li>
+                        
+                            <li><a href="/en/category/transport-and-travel/">Transport and Travel</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-sm">
+                    <h2>Departments and publications</h2>
+                    <ul>
+                        
+                            <li><a href="/en/circulars/">Circulars</a></li>
+                        
+                            <li><a href="/en/consultations/">Consultations</a></li>
+                        
+                            <li><a href="/en/directory/">Directory</a></li>
+                        
+                            <li><a href="/en/policies/">Policies</a></li>
+                        
+                            <li><a href="/en/publications/">Publications</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-sm">
+                    <h2>About gov.ie</h2>
+                    <ul>
+                        
+                            <li>
+                                <a href="/en/help/about-govie/">
+                                    About gov.ie
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/en/help/accessibility/">
+                                    Accessibility
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/en/help/privacy-policy/">
+                                    Privacy policy
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <img src="/static/_reboot/_reboot_app/img/Government_Logo.png" class="img-responsive" alt="Image: Official mark of Government of Ireland" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <script>
+            function InstanceController(){
+                this.container_group = '';
+                this.item = '';
+            };
+            function SiteSettings(){
+                this.reboot_static_root = '/static/_reboot/_reboot_app/';
+                this.reboot_img_root = this.reboot_static_root + 'img/';
+                this.feedback_url = '/feedback/';
+            };
+        </script>
+
+        <script src="/static/_reboot/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/static/_reboot/google_maps/markerclusterer.js?build=37973b7"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqOEBZm1B3AbHq-FAD-TCxXqhKgjxJHWU"></script>
+        <script src="/static/_reboot/_reboot_app/js/app.js?build=37973b7" type="text/javascript"></script>
+        <script src="/static/_reboot/google_maps/app.js?build=37973b7" type="text/javascript"></script>
+        <script src="/static/_reboot/_reboot_app/js/feedback_v2.js?build=37973b7" type="text/javascript"></script>
+        <script src="/static/_reboot/_reboot_app/js/select_menu_v2.js?build=37973b7" type="text/javascript"></script>
+
+        
+    </body>
+</html>

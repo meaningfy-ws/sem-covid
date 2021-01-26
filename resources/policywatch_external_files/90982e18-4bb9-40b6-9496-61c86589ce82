@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+  <html class="no-js" lang="de" xmlns:xlink="https://www.w3.org/1999/xlink">
+
+
+  <head>
+    <title>ver.di – Fehlerseite</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/verdi.zentral.browser/css/main.css" />
+    <script type="text/javascript" src="/static/verdi.zentral.browser/js/main.js"></script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-language" content="de" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zentral" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/static/verdi.zentral.browser/img/images/logo_verdi_quadrat.jpg" />
+    <link rel="shortcut icon" href="/++resource++verdizentral/img/appicons/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/++resource++verdizentral/img/appicons/touch-icon-57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/++resource++verdizentral/img/appicons/touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/++resource++verdizentral/img/appicons/touch-icon-76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/++resource++verdizentral/img/appicons/touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/++resource++verdizentral/img/appicons/touch-icon-120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/++resource++verdizentral/img/appicons/touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/++resource++verdizentral/img/appicons/touch-icon-152.png" />
+    <meta name="msapplication-TileImage" content="/++resource++verdizentral/img/appicons/favicon-144.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="application-name" content="ver.di" />
+    <meta name="msapplication-square70x70logo" content="/++resource++verdizentral/img/appicons/tile-tiny.png" />
+    <meta name="msapplication-square150x150logo" content="/++resource++verdizentral/img/appicons/tile-square.png" />
+    <meta name="msapplication-wide310x150logo" content="/++resource++verdizentral/img/appicons/tile-wide.png" />
+    <meta name="msapplication-square310x310logo" content="/++resource++verdizentral/img/appicons/tile-large.png" />
+  <!-- Matomo Tag Manager -->
+<script type="text/javascript">
+var _mtm = _mtm || [];
+_mtm.push({"mtm.startTime": (new Date().getTime()), "event": "mtm.Start"});
+var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+g.type="text/javascript"; g.async=true; g.defer=true; g.src="https://web-stat.verdi.de/js/container_HPD9uk6n.js"; s.parentNode.insertBefore(g,s);
+</script>
+<!-- End Matomo Tag Manager --></head>
+  <body class="thm_default">
+
+    <!-- skiplink navigation -->
+    <ul id="skiplinks">
+        <li><a class="skip" href="#main">Zum Inhalt springen</a></li>
+        <li><a class="skip" href="#breadcrumb">Zur Brotkrumennavigation springen</a></li>
+    </ul>
+
+    <div class="wrapper">
+      <!-- Header - start -->
+      <header class="b-main-header x-default">
+        <div class="main-header-content">
+          <!-- Search - start -->
+          <div id="global_search" class="b-top-search js-top-search" role="search">
+            <div class="content">
+              <form id="global_search_form" class="form" method="get" action="http://127.0.0.1:6991/portal/zentral/suche">
+                <fieldset>
+                  <legend class="hide">Suche</legend>
+                  <input class="" type="hidden" value="" />
+                  <label id="global_search_label" class="hide" for="global_search_input">Sucheingabe</label>
+                  <input id="global_search_input" class="input-text js-search-input-autocomplete" role="textbox" aria-required="true" required placeholder="Im ver.di-Netz suchen" aria-labelledby="global_search_label" type="text" name="ZentralSearchPortlet.global_search_input" value="" autocomplete="off" />
+                  <input id="global_search_submit" class="input-submit" type="submit" name="global_search_submit" value="" title="Suchen" />
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="b-autocomplete jsb_ jsb_SearchAutocomplete" data-jsb="path=suggest.json">
+            <div class="content">
+              <ul class="list"></ul>
+            </div>
+          </div>
+          <!-- Search - end -->
+          <!-- Top menu - start -->
+          <nav class="b-top-menu" role="contentinfo">
+            <div class="content">
+  <ul>
+    <li class="element ">
+      <a href="https://mitgliedernetz.verdi.de/" class="link ">
+
+        Mitgliedernetz
+      </a>
+    </li>
+    <li class="element ">
+      <a href="http://vod.verdi.de/login" class="link link-icon">
+        <svg class="icon-globe icon"><use xlink:href="#icon-globe" /></svg>
+
+      </a>
+    </li>
+    <li class="element ">
+      <a href="#" class="link link-icon jsb_ jsb_TopSearch">
+        <svg class="icon-loop icon"><use xlink:href="#icon-loop" /></svg>
+
+      </a>
+    </li>
+  </ul>
+
+</div>
+          </nav>
+          <!-- Top menu - end -->
+          <div class="content">
+            <div class="logo-area">
+              <!-- Logo - start -->
+<h1 id="logo" class="logo-primary">
+  <a class="main-logo-link" title="zur ver.di Startseite" href="http://www.verdi.de">
+    <span>
+      Vereinte<br/>
+      Dienstleistungs-<br/>
+      gewerkschaft
+    </span>
+  </a>
+</h1>
+
+            </div>
+          </div>
+          <!-- Main menu - start -->
+
+
+          <!-- Main menu - end -->
+        </div>
+      </header>
+      <!-- Header - end -->
+
+      <!-- Beginn des Codes, der noch nicht transformiert wurde: -->
+
+      <div class="page_margins">
+        <div class="page">
+          <!-- anfang: #header -->
+          <div id="header" role="banner">
+            <div class="tophead">
+
+
+            </div>
+          </div>
+          <!-- ende: #header -->
+          <!-- anfang: #main -->
+
+          <!-- anfang: subnavigation - kann entfernt werden, wenn das Hauptmenü umgesetzt ist! (#13590) -->
+
+<!-- ende: subnavigation -->
+
+<header class="b-article-header">
+  <div class="content">
+    <div class="section-box">
+      <p class="sub-title">404</p>
+      <h3 class="title">
+        Es ist ein Fehler aufgetreten.</h3>
+      <div class="square"></div>
+    </div>
+  </div>
+</header>
+
+
+<div id="col_full" class="max-content" role="full">
+
+</div>
+<div id="main" class="b-content-area-home">
+  <div class="content">
+    <div class="layout-grid">
+
+
+    <div class="row">
+
+<div class="col col-12">
+
+    <section class="b-portlet-infobox">
+
+                                <h2 class="title">Entschuldigung, es ist ein Fehler aufgetreten.</h2>
+                                <div class="description">
+
+                                    <p class="paragraph">Die von Ihnen aufgerufene Seite ist auf diesem Server nicht bzw. nicht mehr vorhanden. Bitte steuern Sie den gewünschten Inhalt über unsere Homepage oder mit Hilfe der Suchfunktion an. Bitte aktualisieren Sie gegebenenfalls Ihre Lesezeichen.</p>
+
+                                    <p class="paragraph"><a class="link" href="/">Zur Startseite</a></p>
+
+                                    <pre>404 - Not Found</pre>
+                                    <pre></pre>
+<!--  -->
+
+
+                                </div>
+
+                            </section>
+
+</div>
+
+    </div>
+
+
+    </div>
+  </div>
+</div>
+          <!-- ende: #main -->
+        </div>
+      </div>
+
+    <!-- Ende des Codes, der noch nicht transformiert wurde. -->
+
+      <!-- Footer - start -->
+<footer class="b-main-footer">
+    <div class="content">
+
+        <div class="footer-box">
+
+            <div class="footer-square"></div>
+            <div class="footer-content">
+
+                <p class="copy">Am Ende geht’s immer ums Anfangen....</p>
+                <!-- Footer nav - start -->
+                <nav>
+  <ul class="b-main-footer-menu">
+  </ul>
+
+</nav>
+                <!-- Footer nav - end -->
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- Footer - end -->
+
+    </div>
+
+    </body>
+
+</html>
+

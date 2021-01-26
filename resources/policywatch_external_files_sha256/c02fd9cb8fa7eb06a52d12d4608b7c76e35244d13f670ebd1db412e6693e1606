@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:description" content="An overview of NHS Test and Trace, including what happens if you test positive for coronavirus (COVID-19) or have had close contact with someone who has tested positive.">
+<meta property="og:title" content="NHS Test and Trace: how it works">
+<meta property="og:url" content="https://www.gov.uk/guidance/nhs-test-and-trace-how-it-works">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GOV.UK">
+<meta name="twitter:card" content="summary">
+<meta name="Cookieless-Variant" content="B" data-module="track-variant">
+<meta name="govuk:ab-test" content="CookielessAATest:B" data-analytics-dimension="49" data-allowed-variants="A,B,Z">
+<meta name="description" content="An overview of NHS Test and Trace, including what happens if you test positive for coronavirus (COVID-19) or have had close contact with someone who has tested positive.">
+<meta name="govuk:taxon-slugs" content="rules-and-restrictions,testing">
+<meta name="govuk:taxon-slug" content="rules-and-restrictions">
+<meta name="govuk:taxon-ids" content="5c37c642-d4dc-43ff-a7af-3fb30e18c642,b9ade971-9c53-4318-b95b-906a122ed2f8">
+<meta name="govuk:taxon-id" content="5c37c642-d4dc-43ff-a7af-3fb30e18c642">
+<meta name="govuk:themes" content="coronavirus-taxon">
+<meta name="govuk:analytics:organisations" content="&lt;D12&gt;">
+<meta name="govuk:content-has-history" content="true">
+<meta name="govuk:content-id" content="b5f079e1-4d8c-466a-adbd-e768525d00ea">
+<meta name="govuk:schema-name" content="detailed_guide">
+<meta name="govuk:publishing-application" content="whitehall">
+<meta name="govuk:format" content="detailed_guide">
+<meta name="csrf-token" content="bFtUAbJuXMx6bMPt3ujYXQLT1cVKp6C4MOBOFves5YrJ+naEvCy0z8r8aXCQ8wEBRviPlej7iorrh5hzGQXMRA==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title lang="en">
+      NHS Test and Trace: how it works - GOV.UK
+  </title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/govuk-template-3e3f4a131aca72f9b2e458dfd318f65420aef6ada35539243aac38ebbbbcc64f.css">
+<!--<![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/govuk-template-ie8-e4fff1a2ce0e93e66e96db6eedae992a3859b1e608aa46bd3e42ac30f61c58ac.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://www.gov.uk/assets/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css">
+
+    <link rel="stylesheet" media="all" href="https://www.gov.uk/assets/static/fonts-c57ab80a95f2b1764162611b3c98a4c098b356f8e30baf1e50cd63edea464c01.css">
+    <!--[if lt IE 9]><script src="https://www.gov.uk/assets/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://www.gov.uk/assets/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://www.gov.uk/assets/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.gov.uk/assets/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://www.gov.uk/assets/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.gov.uk/assets/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://www.gov.uk/assets/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/core-layout-5c9e91c1edfd49978562c26e27d70735f37888ac7de52549466b18d1672c7733.css">
+<!--[if lte IE 8]><link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/core-layout-ie8-773f4cacc5b2d19e924e37800dca2a1e66acd94c661e1cd95a8a165021bdc667.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://www.gov.uk/assets/static/core-layout-print-c5e97d0ed0feb1d1fc703ef0ed5201026330ec091e02c33fb1db277df068ede5.css">
+
+
+
+    <meta property="og:image" content="https://www.gov.uk/assets/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <link rel="stylesheet" media="screen" href="/assets/government-frontend/application-9a5f79d10b2573d0dc805a6de35ce0a05f81b209f6c555bb0fcf36770a6e44ed.css">
+<link rel="stylesheet" media="print" href="/assets/government-frontend/print-c01e429d41f73399d834c2cd00c8ce3304065c2ddea267f84e2e2fc1ce033990.css">
+<link rel="canonical" href="https://www.gov.uk/guidance/nhs-test-and-trace-how-it-works">
+<meta name="govuk:rendering-application" content="government-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
+
+    
+<div id="global-cookie-message" class="gem-c-cookie-banner govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet>
+  <div class="gem-c-cookie-banner__wrapper govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="gem-c-cookie-banner__message">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/help/cookies">cookies to collect information</a> about how you use GOV.UK. We use this information to make the website work as well as possible and improve government services.</p>
+        </div>
+          <div class="gem-c-cookie-banner__buttons">
+            <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-accept govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
+              
+
+
+  <button class="gem-c-button govuk-button gem-c-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept all cookies</button>
+
+
+            </div>
+            <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-settings govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
+              
+
+
+  <a class="gem-c-button govuk-button gem-c-button--inline" role="button" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked" href="/help/cookies">Set cookie preferences</a>
+
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1">
+    <p class="gem-c-cookie-banner__confirmation-message" role="alert">You’ve accepted all cookies. You can <a class="govuk-link" href="/help/cookies" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.</p>
+    <button class="gem-c-cookie-banner__hide-button" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide</button>
+  </div>
+</div>
+
+
+    <header role="banner" id="global-header" class=" with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" class="content govuk-header__link govuk-header__link--homepage" id="logo" data-module="track-click" data-track-category="homeLinkClicked" data-track-action="homeHeader">
+              <span class="govuk-header__logotype">
+                <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 132 97" height="30" width="36">
+                  <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z">
+                  </path>
+                  <image src="https://www.gov.uk/assets/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" xlink:href="" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+                  </image>
+                </svg>
+                <span class="govuk-header__logotype-text">
+                  GOV.UK
+                </span>
+              </span>
+            </a>
+          </div>
+            <button class="search-toggle js-header-toggle" data-search-toggle-for="search">Show or hide search</button>
+  <form id="search" class="site-search govuk-clearfix" action="/search" method="get" role="search" aria-label="Sitewide">
+    <div class="content govuk-clearfix">
+      
+<div class="gem-c-search  govuk-!-margin-bottom-0 gem-c-search--no-border gem-c-search--on-white" data-module="gem-toggle-input-class-on-focus">
+  <label for="site-search-text" class="gem-c-search__label">
+    Search on GOV.UK
+  </label>
+  <div class="gem-c-search__item-wrapper">
+    <input type="search" value="" id="site-search-text" name="q" title="Search" aria-controls="" class="gem-c-search__item gem-c-search__input js-class-toggle">
+    <div class="gem-c-search__item gem-c-search__submit-wrapper">
+      <button type="submit" class="gem-c-search__submit">Search</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </form>
+
+    
+
+
+
+
+        </div>
+        
+      <div class="header-proposition">
+  <div class="content">
+    <button data-search-toggle-for="proposition-links" class="js-header-toggle mobile-menu-toggle">Menu</button>
+  <nav id="proposition-menu" class="no-proposition-name gem-c-government-navigation" aria-label="Departments and policy navigation">
+  <ul id="proposition-links">
+    <li>
+      <a class="" href="/government/organisations">
+        Departments
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/world">
+        Worldwide
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/how-government-works">
+        How government works
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/get-involved">
+        Get involved
+      </a>
+    </li>
+    <li class="clear-child">
+      <a class="" href="/search/policy-papers-and-consultations?content_store_document_type%5B%5D=open_consultations&amp;amp;content_store_document_type%5B%5D=closed_consultations">
+        Consultations
+      </a>
+    </li>
+    <li>
+      <a class="" href="/search/research-and-statistics">
+        Statistics
+      </a>
+    </li>
+    <li>
+      <a class="" href="/news-and-communications">
+        News and communications
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+</div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      
+  <!--[if gt IE 7]><!-->
+  <div id="global-bar" class="global-bar dont-print" data-module="global-bar" data-global-bar-permanent="true" data-nosnippet>
+    <div class="global-bar-message govuk-width-container">
+
+
+        <div class="global-bar-covid-wrapper">
+            <div class="gem-c-action-link gem-c-action-link--light-text gem-c-action-link--simple-light gem-c-action-link--with-subtext govuk-!-margin-bottom-3">
+
+      <span class="gem-c-action-link__contents-wrapper">      <span class="gem-c-action-link__link-wrapper">
+
+          <a class="govuk-link gem-c-action-link__link js-call-to-action" href="/coronavirus">
+                      Coronavirus (COVID-19)
+          
+
+</a>      </span>
+
+        <span class="gem-c-action-link__subtext-wrapper">
+            <span class="gem-c-action-link__subtext">National lockdown: stay at home</span>
+        </span>
+</span>
+  </div>
+
+
+            <div class="gem-c-action-link gem-c-action-link--light-text gem-c-action-link--simple-light gem-c-action-link--with-subtext govuk-!-margin-bottom-0">
+
+      <span class="gem-c-action-link__contents-wrapper">      <span class="gem-c-action-link__link-wrapper">
+
+          <a class="govuk-link gem-c-action-link__link js-call-to-action" href="/transition">
+                      Brexit
+          
+
+</a>      </span>
+
+        <span class="gem-c-action-link__subtext-wrapper">
+            <span class="gem-c-action-link__subtext">Check how the new rules affect you</span>
+        </span>
+</span>
+  </div>
+
+        </div>
+    </div>
+
+  </div>
+  <!--<![endif]-->
+
+
+  <div id="wrapper" class="direction-ltr">
+
+        
+<div class="gem-c-contextual-breadcrumbs">
+    
+
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-module="track-click">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" href="/">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/coronavirus-taxon" data-track-options='{"dimension28":"3","dimension29":"Coronavirus (COVID-19)"}' class="govuk-breadcrumbs__link" href="/coronavirus-taxon">Coronavirus (COVID-19)</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="breadcrumbClicked" data-track-action="3" data-track-label="/coronavirus-taxon/rules-and-restrictions" data-track-options='{"dimension28":"3","dimension29":"Rules and restrictions during coronavirus"}' class="govuk-breadcrumbs__link" href="/coronavirus-taxon/rules-and-restrictions">Rules and restrictions during coronavirus</a>
+        </li>
+  </ol>
+</div>
+
+
+  
+</div>
+
+
+    <main role="main" id="content" class="detailed-guide" lang="en">
+      
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+    <span class="govuk-caption-xl gem-c-title__context">
+      Guidance
+    </span>
+  <h1 class="gem-c-title__text gem-c-title__text--long">
+    NHS Test and Trace: how it works
+  </h1>
+</div>
+  </div>
+  
+  <div class="govuk-grid-column-two-thirds">
+    
+  <p class="gem-c-lead-paragraph">An overview of NHS Test and Trace, including what happens if you test positive for coronavirus (COVID-19) or have had close contact with someone who has tested positive.</p>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="metadata-logo-wrapper">
+    <div class="govuk-grid-column-two-thirds metadata-column">
+        <div class="app-c-publisher-metadata" lang="en">
+    <div class="app-c-published-dates " lang="en">
+    Published 27 May 2020
+    <br>Last updated 11 January 2021
+      — <a href="#history" class="app-c-published-dates__history-link govuk-link">see all updates</a>
+</div>
+
+      <div class="app-c-publisher-metadata__other">
+        <dl data-module="track-click">
+            <dt class="app-c-publisher-metadata__term">
+              From:
+            </dt>
+            <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
+                <span class="app-c-publisher-metadata__definition-sentence">
+                  <a class="govuk-link" href="/government/organisations/department-of-health-and-social-care">Department of Health and Social Care</a>
+                </span>
+            </dd>
+        </dl>
+      </div>
+  </div>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <div class="app-c-important-metadata app-c-important-metadata--bottom-margin">
+    <dl data-module="track-click">
+      <dt class="app-c-important-metadata__term">Applies to: </dt>
+      <dd class="app-c-important-metadata__definition">England (see guidance for <a class="govuk-link app-link" href="https://gov.wales/test-trace-protect">Wales</a>, <a class="govuk-link app-link" href="https://www.gov.scot/publications/coronavirus-covid-19-test-and-protect/">Scotland</a>, and <a class="govuk-link app-link" href="https://www.nidirect.gov.uk/articles/coronavirus-covid-19-testing-and-contact-tracing">Northern Ireland</a>)</dd>
+    </dl>
+  </div>
+
+
+      <div id="contents" class="app-c-contents-list-with-body" data-module="sticky-element-container">
+      <div class="responsive-bottom-margin">
+          <nav class="gem-c-contents-list  gem-c-contents-list--no-underline " aria-label="Contents" role="navigation" data-module="track-click">
+    <h2 class="gem-c-contents-list__title">
+      Contents
+</h2>
+    <ol class="gem-c-contents-list__list">
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 1" data-track-label="#how-nhs-test-and-trace-helps-fight-the-virus" data-track-options='{"dimension29":"How NHS Test and Trace helps fight the virus"}' href="#how-nhs-test-and-trace-helps-fight-the-virus">How NHS Test and Trace helps fight the virus</a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="#how-nhs-test-and-trace-works" data-track-options='{"dimension29":"How NHS Test and Trace works"}' href="#how-nhs-test-and-trace-works">How NHS Test and Trace works</a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#the-nhs-covid-19-app" data-track-options='{"dimension29":"The NHS COVID-19 app"}' href="#the-nhs-covid-19-app">The NHS COVID-19 app</a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="#part-1-people-who-develop-symptoms-of-coronavirus" data-track-options='{"dimension29":"Part 1: people who develop symptoms of coronavirus"}' href="#part-1-people-who-develop-symptoms-of-coronavirus">Part 1: people who develop symptoms of coronavirus</a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 5" data-track-label="#part-2-people-who-have-had-close-contact-with-someone-who-has-coronavirus" data-track-options='{"dimension29":"Part 2: people who have had close contact with someone who has coronavirus"}' href="#part-2-people-who-have-had-close-contact-with-someone-who-has-coronavirus">Part 2: people who have had close contact with someone who has coronavirus</a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 6" data-track-label="#support-for-people-who-are-self-isolating" data-track-options='{"dimension29":"Support for people who are self-isolating"}' href="#support-for-people-who-are-self-isolating">Support for people who are self-isolating</a>
+
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 7" data-track-label="#customer-logs-and-nhs-qr-codes" data-track-options='{"dimension29":"Customer logs and NHS QR codes"}' href="#customer-logs-and-nhs-qr-codes">Customer logs and NHS QR codes</a>
+
+        </li>
+    </ol>
+</nav>
+      </div>
+    
+      
+<div class="gem-c-print-link govuk-!-margin-top-0 govuk-!-margin-bottom-6">
+    <button class="govuk-link gem-c-print-link__button" data-module="print-link">Print this page</button>
+</div>
+
+      
+<div class="gem-c-govspeak govuk-govspeak " data-module="govspeak">
+    
+        <div class="govspeak">
+<div class="call-to-action">
+<p>England is under national lockdown with the guidance being ‘stay at home’. Find out <a href="https://www.gov.uk/guidance/national-lockdown-stay-at-home" class="govuk-link">what you can and cannot do</a>.</p>
+</div>
+
+<p>NHS Test and Trace:</p>
+
+<ul>
+  <li>ensures that anyone who develops symptoms of coronavirus (COVID-19) can quickly be tested to find out if they have the virus, and also includes targeted asymptomatic testing of NHS and social care staff and care home residents</li>
+  <li>helps trace close recent contacts of anyone who tests positive for coronavirus and, if necessary, notifies them that they must self-isolate at home to help stop the spread of the virus</li>
+</ul>
+
+<p>We have introduced this service to help return life more to normal, in a way that is safe and protects our NHS and social care. The service allows us to trace the spread of the virus and isolate new infections and play a vital role in giving us early warning if the virus is increasing again, locally or nationally.</p>
+
+<h2 id="how-nhs-test-and-trace-helps-fight-the-virus">How NHS Test and Trace helps fight the virus</h2>
+
+<p>NHS Test and Trace will help to control the rate of reproduction (R), reduce the spread of the infection and save lives. By playing your part through the actions set out below, you will directly help to contain the virus by reducing its spread. This means that, thanks to your efforts, we will be able to go as far as it is safe to go in easing lockdown measures.</p>
+
+<p>Playing your part:</p>
+
+<ul>
+  <li>if you develop symptoms, you must continue to follow the rules to self-isolate with other members of your household and get a test to find out if you have coronavirus</li>
+  <li>if you test positive for coronavirus, you must share information promptly and accurately about your recent contacts through NHS Test and Trace to help us alert other people who may need to self-isolate</li>
+  <li>if you have had close recent contact with someone who has coronavirus, you must self-isolate if NHS Test and Trace advises you to do so</li>
+  <li>if you are returning from travel abroad it is important to check whether you need to self-isolate</li>
+</ul>
+
+<p>This specific guidance applies in England only. All 4 administrations are working closely together to have a consistent and joined-up approach to testing and tracing.</p>
+
+<h3 id="definitions">Definitions</h3>
+
+<p>‘Self-isolation if you have symptoms’ means you and all household members must remain at home. Do not go outside your home for any reason, that is to work, school or public areas, and do not use public transport or taxis. The <a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance" class="govuk-link">guidance for households with possible coronavirus infection page</a> has more information on self-isolation.</p>
+
+<p>‘Contact’ means a person who has been in close contact with someone who has tested positive for coronavirus and who may or may not live with them.</p>
+
+<p>It is a legal requirement to self-isolate if you test positive for COVID-19 or if you are identified as a contact and told to self-isolate by Test and Trace. Failure to self-isolate for the full time-period can result in a fine, starting from £1,000.</p>
+
+<h2 id="how-nhs-test-and-trace-works">How NHS Test and Trace works</h2>
+
+<h3 id="part-1-for-someone-with-symptoms-of-coronavirus">Part 1: for someone with symptoms of coronavirus</h3>
+
+<ol>
+  <li>
+    <p>isolate: as soon as you experience coronavirus symptoms, medical advice is clear: you must self-isolate for at least 10 days. Anyone else in your household must self-isolate for 10 days from when you started having symptoms</p>
+  </li>
+  <li>
+    <p>test: <a href="https://www.gov.uk/get-coronavirus-test" class="govuk-link">get a free NHS test immediately to check if you have coronavirus</a> or call 119 if you have no internet access</p>
+  </li>
+  <li>
+    <p>results: if your test is positive, you must complete the remainder of your 10-day self-isolation. Anyone in your household must also complete self-isolation for 10 days from when you started having symptoms. Failure to self-isolate for the full time-period can result in a fine, starting from £1,000. If your test is negative you will no longer be required to self-isolate, though you may wish to do so if you still feel unwell and have symptoms similar to coronavirus. If your test is negative, other household members no longer need to self-isolate.</p>
+  </li>
+  <li>
+    <p>share contacts: if you test positive for coronavirus, NHS Test and Trace will send you a text or email alert or call you with instructions of how to share details of people with whom you have had close, recent contact and places you have visited. It is important that you respond quickly and accurately so that we can give appropriate advice to those who need it. You will be told to do this online via a secure website or you will be called by one of our contract tracers. If NHS Test and Trace contact tracers are unable to contact you for 24 hours, they may pass your case to your local authority to follow up by phone or in person.</p>
+  </li>
+</ol>
+
+<h3 id="part-2-if-you-are-contacted-by-nhs-test-and-trace--because-you-have-been-in-close-contact-with-someone-who-has-tested-positive-for-coronavirus">Part 2: if you are contacted by NHS Test and Trace  because you have been in close contact with someone who has tested positive for coronavirus</h3>
+
+<ol>
+  <li>
+    <p>alert: you will be alerted by NHS Test and Trace if you have been in close contact with someone who has tested positive for coronavirus. The alert will usually come by text, email or phone call. You should then log on to the NHS Test and Trace website, which is normally the easiest way for you and the service to communicate with each other – but, if not, a trained call handler will talk you through what you must do. Under-18s will get a phone call and a parent or guardian will be asked to give permission for the call to continue</p>
+  </li>
+  <li>
+    <p>isolate: you will be told to begin self-isolation for 10 days from your last contact with the person who has tested positive. It’s really important to do this even if you don’t feel unwell because you could still be infectious to others. Failure to self-isolate for the full time period can result in a fine, starting from £1,000. Your household doesn’t need to self-isolate with you, if you do not have symptoms, but they must take extra care to follow the guidance on social distancing and handwashing and avoid contact with you at home</p>
+  </li>
+  <li>
+    <p>test if needed: if you develop symptoms  of coronavirus, other members of your household must self-isolate immediately at home for 10 days and you must <a href="https://www.gov.uk/get-coronavirus-test" class="govuk-link">get a test to check if you have coronavirus</a> or call 119 if you have no internet access. If your test is positive, you must continue to stay at home for at least 10 days and we will get in touch to ask about your contacts since they must self-isolate. If your test is negative, you must still complete your 10-day self-isolation period because the virus may not be detectable yet – this is crucial to avoid unknowingly spreading the virus.</p>
+  </li>
+</ol>
+
+<h2 id="the-nhs-covid-19-app">The NHS COVID-19 app</h2>
+
+<p>The new <a rel="external" href="https://www.covid19.nhs.uk/" class="govuk-link">NHS COVID-19 app</a>, now available to download for free in England and Wales, is the fastest way to see if you’re at risk from coronavirus. The faster you know, the quicker you can alert and protect your loved ones and community.</p>
+
+<p>The app has a number of tools to protect you, including contact tracing, local area alerts and venue check-in. It uses proven technology from Apple and Google, designed to protect every user’s privacy.</p>
+
+<h2 id="part-1-people-who-develop-symptoms-of-coronavirus">Part 1: people who develop symptoms of coronavirus</h2>
+
+<p>This section applies if you have symptoms of coronavirus or you have received a positive test result.</p>
+
+<h3 id="when-to-self-isolate">When to self-isolate</h3>
+
+<p>The medical advice is clear: you must self-isolate if you have coronavirus symptoms or live in the same household as somebody who does. The main symptoms of coronavirus are:</p>
+
+<ul>
+  <li>high temperature – this means you feel hot to touch on your chest or back (you do not need to measure your temperature)</li>
+  <li>new, continuous cough – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</li>
+  <li>loss or change to your sense of smell or taste – this means you’ve noticed you cannot smell or taste anything, or things smell or taste different to normal</li>
+</ul>
+
+<p>For more information, read the further <a rel="external" href="https://www.nhs.uk/conditions/coronavirus-covid-19/check-if-you-have-coronavirus-symptoms/" class="govuk-link">guidance on symptoms</a>.</p>
+
+<p>If you have one or more of these symptoms, you must self-isolate straight away for 10 days – or longer if you still have symptoms other than cough or loss of sense of smell/taste.</p>
+
+<p>If you live in the same household as someone with coronavirus symptoms, you must self-isolate straight away for 10 days.</p>
+
+<p>Failure to self-isolate for the full time-period can result in a fine, starting from £1,000.</p>
+
+<h3 id="how-to-get-a-test">How to get a test</h3>
+
+<p>Anyone with <a rel="external" href="https://www.nhs.uk/conditions/coronavirus-covid-19/symptoms" class="govuk-link">symptoms</a> can get a coronavirus test, whatever their age.</p>
+
+<div class="call-to-action">
+<p><a href="http://www.gov.uk/get-coronavirus-test" class="govuk-link">Get a coronavirus test</a></p>
+</div>
+
+<p>If you don’t have access to the internet, you can get a test by phoning 119.</p>
+
+<p>Our <a href="https://www.gov.uk/guidance/coronavirus-covid-19-getting-tested" class="govuk-link">guidance on testing</a> has more information on our testing programme.</p>
+
+<h3 id="if-you-test-negative">If you test negative</h3>
+
+<p>If you get a negative test result, this means you are at low risk of having coronavirus.</p>
+
+<p>Other members of your household can stop self-isolating. If you feel well and no longer have symptoms similar to coronavirus, you can stop self-isolating. You could still have another virus, such as a cold or flu – in which case it is still best to avoid contact with other people until you are better.</p>
+
+<h3 id="if-you-test-positive">If you test positive</h3>
+
+<p>If you get a positive test result, this means that when you took the test, you had coronavirus. You – and other members of your household – must continue to self-isolate.</p>
+
+<h3 id="health-and-care-workers">Health and care workers</h3>
+
+<p>If you work in a health or care setting, you should follow the separate <a href="https://www.gov.uk/government/publications/covid-19-management-of-exposed-healthcare-workers-and-patients-in-hospital-settings/covid-19-management-of-exposed-healthcare-workers-and-patients-in-hospital-settings" class="govuk-link">guidance for health and care workers on testing</a> and when to return to work.</p>
+
+<h3 id="telling-people-about-your-test-result">Telling people about your test result</h3>
+
+<p>If you develop symptoms, you may wish to alert the people with whom you have had close contact over the last 48 hours. You should tell them that you might have coronavirus but are waiting for a test result.</p>
+
+<p>At this stage (until the test result is known), those people do not need to self-isolate, but they should take extra care in practising <a href="https://www.gov.uk/government/publications/staying-alert-and-safe-social-distancing/staying-alert-and-safe-social-distancing" class="govuk-link">social distancing</a> and good hygiene, like washing their hands regularly. They should also watch out for their own <a rel="external" href="https://www.nhs.uk/conditions/coronavirus-covid-19/check-if-you-have-coronavirus-symptoms/" class="govuk-link">symptoms</a>.</p>
+
+<p>You may want to write down your recent close contacts now so that you have them to hand if you test positive.</p>
+
+<h3 id="sharing-information-about-your-recent-contacts">Sharing information about your recent contacts</h3>
+
+<p>If you get a positive test, we will contact you and ask you to share information about any close contacts you had just before or after you developed symptoms. This is vital if we are to stop the spread of the virus.</p>
+
+<p>We will contact you by text message, email or phone. If you are under 18 years old, we will contact you by phone wherever possible and ask for your parent or guardian’s permission to continue the call.</p>
+
+<p>You will be sent a link to the NHS Test and Trace website and asked to create a confidential account where you can record details about your recent close contacts. If you do not have internet access or if you don’t complete the online process, one of our contact tracers will phone you to gather this information from you.</p>
+
+<p>The information you give will be handled in strict confidence and will only be kept and used in line with data protection laws. It will help us to contact people who are at risk of having been exposed to coronavirus and explain what they must do to help prevent the further spread of the virus.</p>
+
+<p>Some local authorities have their own contact tracing teams who are employed by the local council. NHS Test and Trace may pass your details to these local teams if you have tested positive for coronavirus and they have not been able to contact you for 24 hours. These teams work with local public health experts and will usually contact you by phone and text. In certain circumstances they may visit you at your home to ask you to make further contact with them or to ask about your contacts.</p>
+
+<p>When we contact people to advise them to self-isolate, we do not tell them your identity. But if you have alerted them when you first develop symptoms or when you get your test result, they will be better prepared for the advice we give them.</p>
+
+<h3 id="when-we-contact-you">When we contact you</h3>
+
+<p>If NHS Test and Trace contacts you, the service will use text messages, email or phone.</p>
+
+<p>All texts or emails will ask you to sign into the <a rel="external" href="https://contact-tracing.phe.gov.uk/" class="govuk-link">NHS Test and Trace contact-tracing website</a>.</p>
+
+<p>If NHS Test and Trace calls you by phone, the service will be using the phone number 0300 013 5000.</p>
+
+<p>All information you provide to NHS Test and Trace is held in strict confidence and will only be kept and used in line with the Data Protection Act 2018.</p>
+
+<p>Contact tracers will:</p>
+
+<ul>
+  <li>call you from 0300 013 5000. Local contact tracers will contact you from a local council number. If you’re unsure if this is genuine, please contact your local council for advice</li>
+  <li>send you text messages from ‘NHStracing’</li>
+  <li>ask you to sign into the <a rel="external" href="https://contact-tracing.phe.gov.uk/" class="govuk-link">NHS Test and Trace contact-tracing website</a>
+</li>
+  <li>ask for your full name to confirm your identity, and postcode to offer support while self-isolating</li>
+  <li>ask about the coronavirus symptoms you have been experiencing</li>
+  <li>ask you to provide the name, telephone number and/or email address of anyone you have had close contact with in the 2 days prior to your symptoms starting</li>
+  <li>ask if anyone you have been in contact with is under 18 or lives outside of England</li>
+</ul>
+
+<p>Contact tracers will never:</p>
+
+<ul>
+  <li>ask you to dial a premium rate number to speak to us (for example, those starting 09 or 087)</li>
+  <li>ask you to make any form of payment or purchase a product or any kind</li>
+  <li>ask for any details about your bank account</li>
+  <li>ask for your social media identities or login details, or those of your contacts</li>
+  <li>ask you for any passwords or PINs, or ask you to set up any passwords or PINs over the phone</li>
+  <li>disclose any of your personal or medical information to your contacts</li>
+  <li>provide medical advice on the treatment of any potential coronavirus symptoms</li>
+  <li>ask you to download any software to your PC or ask you to hand over control of your PC, smartphone or tablet to anyone else</li>
+  <li>ask you to access any website that does not belong to the government or NHS</li>
+</ul>
+
+<h3 id="what-we-will-ask-you">What we will ask you</h3>
+
+<p>We will ask you:</p>
+
+<ul>
+  <li>if you have family members or other household members living with you. In line with the medical advice they must remain in self-isolation for the rest of the 10-day period from when your symptoms began</li>
+  <li>if you have had any close contact with anyone other than members of your household. We are interested in in the 48 hours before you developed symptoms and the time since you developed symptoms. Close contact means:
+    <ul>
+      <li>having face-to-face contact with someone less than 1 metre away (this will include times where you have worn a face covering or a face mask)</li>
+      <li>having been within 2 metres of someone for more than 15 minutes (either as a one-off contact, or added up together over one day)</li>
+      <li>travelling in a car or other small vehicle with someone (even on a short journey) or close to them on a plane</li>
+    </ul>
+  </li>
+  <li>if you work in – or have recently visited – a setting with other people (for example, a GP surgery, a school or a workplace). The use of face masks and other forms PPE does not exclude somebody from being considered a close contact, unless they are providing direct care with patients or residents in a health and care setting</li>
+</ul>
+
+<p>We will ask you to provide, where possible, the names and contact details (for example, email address, telephone number) for the people you have had close contact with. As with your own details these will be held in strict confidence and will be kept and used only in line with data protection laws.</p>
+
+<p>If NHS Test and Trace identify you as a contact and you work in a critical service where the recommendation for you to self-isolate would have impact on providing that critical service, your employer will need to escalate this to the <a href="https://www.gov.uk/health-protection-team" class="govuk-link">local health protection team (HPT)</a> for a risk-assessment.</p>
+
+<h3 id="how-this-information-is-used">How this information is used</h3>
+
+<p>Based on the information you provide, we will assess whether we need to alert your contacts and ask them to self-isolate.</p>
+
+<p>We may refer the case to local public health experts if your case is complex, for example, if you work in or have recently visited:</p>
+
+<ul>
+  <li>a health or care setting, such as a hospital or care home</li>
+  <li>a prison or other secure setting</li>
+  <li>a school for people with special needs</li>
+  <li>critical national infrastructure or areas vital for national security</li>
+  <li>when NHS Test and Trace has been unable to contact you after an agreed amount of time and your local authority has set up a system to take over your case</li>
+</ul>
+
+<p>Local public health experts are Public Health England staff and teams employed by your local authority who work together with all parts of the local community to prevent or respond to local outbreaks.</p>
+
+<h2 id="part-2-people-who-have-had-close-contact-with-someone-who-has-coronavirus">Part 2: people who have had close contact with someone who has coronavirus</h2>
+
+<p>This section applies to those who have been identified by NHS Test and Trace as a close contact.</p>
+
+<h3 id="if-you-are-told-to-self-isolate">If you are told to self-isolate</h3>
+
+<p>If we identify you as someone who has had close recent contact with someone who has tested positive for coronavirus, we will notify you that you must self-isolate in line with medical advice and the law.</p>
+
+<p>It is a legal requirement to self-isolate if you are identified as a contact and told to self-isolate by NHS Test and Trace. Failure to self-isolate for the full time-period can result in a fine, starting from £1,000.</p>
+
+<p>You may be feeling well and not have any symptoms, but it is still essential for you to follow the advice that you are given.</p>
+
+<p>This is because, if you have been infected, you could be infectious to others. Some people infected with the virus don’t show any symptoms at all and it is therefore crucial to self-isolate to avoid unknowingly spreading the virus.</p>
+
+<p>If you do not have symptoms, you must not seek a test, as the scientific evidence shows that the test may not be able to detect whether you have the virus.</p>
+
+<h3 id="how-you-will-be-told-to-self-isolate">How you will be told to self-isolate</h3>
+
+<p>If you are aged 18 or over, we will contact you by text message or email but will follow up by phone if we don’t get a response. If we only have a landline number for you, we will contact you on that number.</p>
+
+<p>If you are under 18 years old, we will contact you by phone wherever possible and ask for consent from your parent or guardian to continue the call.</p>
+
+<p>If you have internet access, we will ask you to log onto the NHS Test and Trace website. This is the simplest way of giving you the information you need and the opportunity to ask any questions. The online service will also ask you to confirm that you are following the advice on self-isolation.</p>
+
+<p>If you do not have internet access, we will arrange for a trained call handler to speak to you by phone to give you the information and advice you need.</p>
+
+<h3 id="what-happens-next">What happens next</h3>
+
+<p>You must self-isolate for 10 days after you were in contact with the person who has tested positive for coronavirus. This is crucial to avoid unknowingly spreading the virus and failure to do so can result in a fine, starting from £1,000.</p>
+
+<p>Self-isolation means staying at home and not going outside your home at any time. If you live with other people, they do not need to self-isolate, but they should avoid contact with you as far as possible and follow advice on hygiene. If you do not live with other people, you should seek help from others, or delivery services, for essential activities such as food shopping. Self-isolation can be particularly challenging if you are looking after children, or if you care for vulnerable people who cannot stay with friends or family.</p>
+
+<p>If you go on to develop symptoms, anyone you live with must then self-isolate and you must report your symptoms and get tested.</p>
+
+<p>It is crucial that you complete your 10-day self-isolation period if you’ve been identified as a contact, even if you get a negative test result. This is because you may have the virus, but it cannot yet be detected by a test, so you could unknowingly spread the virus if you leave the house. Other members of your household, however, do not need to remain in self-isolation.</p>
+
+<h3 id="when-we-contact-you-1">When we contact you</h3>
+
+<p>If NHS Test and Trace contacts you, the service will use text messages, email or phone.</p>
+
+<p>All texts or emails will ask you to sign into the <a rel="external" href="https://contact-tracing.phe.gov.uk" class="govuk-link">NHS Test and Trace contact-tracing website</a>.</p>
+
+<p>If NHS Test and Trace calls you by phone, the service will be using the phone number 0300 013 5000.</p>
+
+<p>All information you provide to NHS Test and Trace is held in strict confidence and will only be kept and used in line with the Data Protection Act 2018.</p>
+
+<p>Contact tracers will:</p>
+
+<ul>
+  <li>call you from 0300 013 5000</li>
+  <li>send you text messages from ‘NHS’</li>
+  <li>ask for your full name and date of birth to confirm your identity, and postcode to offer support while self-isolating</li>
+  <li>ask if you are experiencing any coronavirus symptoms</li>
+  <li>provide advice on what you must do as you have been in contact with someone who has tested positive for coronavirus</li>
+</ul>
+
+<p>Contact tracers will never:</p>
+
+<ul>
+  <li>ask you to dial a premium rate number to speak to us (for example, those starting 09 or 087)</li>
+  <li>ask you to make any form of payment or purchase a product of any kind</li>
+  <li>ask for any details about your bank account</li>
+  <li>ask for your social media identities or login details, or those of your contacts</li>
+  <li>ask you for any passwords or PINs, or ask you to set up any passwords or PINs over the phone</li>
+  <li>disclose any of your personal or medical information to your contacts</li>
+  <li>provide medical advice on the treatment of any potential coronavirus symptoms</li>
+  <li>ask you to download any software to your PC or ask you to hand over control of your PC, smartphone or tablet to anyone else</li>
+  <li>ask you to access any website that does not belong to the government or NHS</li>
+</ul>
+
+<h2 id="support-for-people-who-are-self-isolating">Support for people who are self-isolating</h2>
+
+<p>We will direct you to your local authority helpline if you need the following during the period of self-isolation:</p>
+
+<ul>
+  <li>practical or social support for yourself</li>
+  <li>support for someone you care for</li>
+  <li>financial support</li>
+</ul>
+
+<p>This is so you can access the local support available to you, like help delivering food or medicine. You may also be able to get help from the <a href="https://www.gov.uk/find-coronavirus-support" class="govuk-link">NHS volunteer responders</a>.</p>
+
+<p>Employers should support workers who are told to self-isolate and must not ask them to attend work. See the <a href="https://www.gov.uk/guidance/nhs-test-and-trace-workplace-guidance" class="govuk-link">guidance on the NHS Test and Trace service for employers, businesses and workers</a>. If you are in employment, speak to your employer to discuss if you can work from home or other options are available during your period of isolation.</p>
+
+<p>Workers in self-isolation are entitled to Statutory Sick Pay (SSP) for every day they are in isolation, as long as they meet the eligibility conditions. Guidance has been produced for <a href="https://www.gov.uk/guidance/nhs-test-and-trace-workplace-guidance" class="govuk-link">employees that are unable to work because they are self-isolating</a>.</p>
+
+<p>NHS Test and Trace will provide evidence that someone has been told to self-isolate. This evidence can be shared with an employer or education provider. <a rel="external" href="https://111.nhs.uk/isolation-note/" class="govuk-link">Get an isolation note</a> if you need evidence that you’ve been told to self-isolate.</p>
+
+<p>You may be entitled to a one-off payment of £500 through the Test and Trace Support Payment scheme if you are required to stay at home and self-isolate. You should go to your local authority’s website for more information. You will be eligible if you live in England and meet all the following criteria:</p>
+
+<ul>
+  <li>you have been asked to self-isolate by NHS Test and Trace</li>
+  <li>you are employed or self-employed</li>
+  <li>you cannot work from home and will lose income as a result</li>
+  <li>you are receiving at least one of the following benefits:
+    <ul>
+      <li>Universal Credit</li>
+      <li>Working Tax Credits</li>
+      <li>income-related Employment and Support Allowance</li>
+      <li>income-based Jobseeker’s Allowance</li>
+      <li>Income Support</li>
+      <li>Pension Credit</li>
+      <li>Housing Benefit</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="customer-logs-and-nhs-qr-codes">Customer logs and NHS QR codes</h2>
+<p>Continued opening up of the economy and public services is reliant on NHS Test and Trace being used to minimise transmission of the virus. In order to ensure that businesses and local services are able to remain open, we will be mandating that organisations in designated sectors must:</p>
+
+<ul>
+  <li>ask at least one member of every party of customers or visitors (up to 6 people) to provide their name and contact details</li>
+  <li>keep a record of all staff working on their premises and shift times on a given day and their contact details</li>
+  <li>keep these records of customers, visitors and staff for 21 days and provide data to NHS Test and Trace if requested</li>
+  <li>display an official NHS QR code poster from 24 September 2020, so that customers and visitors can ‘check in’ using this option as an alternative to providing their contact details</li>
+  <li>adhere to General Data Protection Regulations</li>
+</ul>
+
+<p>In addition, the hospitality sector will be required to ensure that anyone visiting pubs, restaurants and other venues provides their contact information or checks in using the official <a href="https://www.gov.uk/create-coronavirus-qr-poster" class="govuk-link">NHS QR code</a> before being allowed entry to the venue.</p>
+
+<p>Any designated venue that is found not to be compliant with these regulations will be subject to financial penalties. It is vital that relevant venues comply with these regulations to help keep people safe, and to keep businesses open.</p>
+
+<p>Designated venues will need to keep records of customers, visitors and staff for a period of 21 days and make them available when requested by NHS Test and Trace or local public health officials to help contain clusters or outbreaks.</p>
+
+<p>Find out more about the <a href="https://www.gov.uk/guidance/maintaining-records-of-staff-customers-and-visitors-to-support-nhs-test-and-trace" class="govuk-link">requirements around maintaining these records</a>.</p>
+</div>
+
+</div>
+
+      <div class="responsive-bottom-margin">
+        <div class="app-c-published-dates app-c-published-dates--history" id="history" data-module="toggle" lang="en">
+    Published 27 May 2020
+    <br>Last updated 11 January 2021
+      <a href="#full-history" class="app-c-published-dates__toggle govuk-link" data-controls="full-history" data-expanded="false" data-toggled-text="- hide all updates">+ show all updates</a>
+      <div class="app-c-published-dates__change-history js-hidden" id="full-history">
+        <ol>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2021-01-11T00:15:05.000+00:00">11 January 2021</time>
+              <p class="app-c-published-dates__change-note">Updated a definition of close contact: being within 2 metres of a positive case for more than 15 minutes (the time is now cumulative).</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-12-14T00:15:02.000+00:00">14 December 2020</time>
+              <p class="app-c-published-dates__change-note">Updated to reflect that the 14-day isolation period is now 10 days.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-10-08T11:00:06.000+01:00">8 October 2020</time>
+              <p class="app-c-published-dates__change-note">Updated to reflect that the requirement to self-isolate if you test positive or are contacted by NHS Test and Trace and asked to self-isolate has changed from guidance to law.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-10-07T15:55:44.000+01:00">7 October 2020</time>
+              <p class="app-c-published-dates__change-note">Removed '0300 123 7790' as a second phone number that NHS Test and Trace may call from.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-09-23T15:09:25.000+01:00">23 September 2020</time>
+              <p class="app-c-published-dates__change-note">Added a second phone number that contact tracers will call people from.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-08-27T18:20:34.000+01:00">27 August 2020</time>
+              <p class="app-c-published-dates__change-note">Added references about local contact tracers with info on how and when they may contact you.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-08-21T18:53:59.000+01:00">21 August 2020</time>
+              <p class="app-c-published-dates__change-note">Added a link to a customer logging toolkit.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-07-31T12:42:44.000+01:00">31 July 2020</time>
+              <p class="app-c-published-dates__change-note">Updated to reflect that the self-isolation period has been extended to 10 days for those in the community who have coronavirus (COVID-19) symptoms or a positive test result.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-07-17T10:32:08.000+01:00">17 July 2020</time>
+              <p class="app-c-published-dates__change-note">Added links to equivalent guidance in Scotland, Wales and Northern Ireland.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-06-11T21:00:07.000+01:00">11 June 2020</time>
+              <p class="app-c-published-dates__change-note">Changed line where contact tracers will send text messages from - from 'NHS' to 'NHStracing'.</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2020-05-27T20:35:00.000+01:00">27 May 2020</time>
+              <p class="app-c-published-dates__change-note">First published.</p>
+            </li>
+        </ol>
+      </div>
+</div>
+
+      </div>
+
+      <div data-sticky-element class="app-c-contents-list-with-body__link-wrapper">
+        <div class="app-c-contents-list-with-body__link-container">
+          <a class="govuk-link app-c-back-to-top dont-print" href="#contents">
+    <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
+      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>
+    Contents
+</a>
+
+        </div>
+      </div>
+  </div>
+    
+<div class="gem-c-print-link govuk-!-margin-top-0 govuk-!-margin-bottom-6">
+    <button class="govuk-link gem-c-print-link__button" data-module="print-link">Print this page</button>
+</div>
+  </div>
+  
+<div class="govuk-grid-column-one-third">
+  
+<div class="gem-c-contextual-sidebar">
+    
+
+<a class="govuk-link gem-c-contextual-sidebar__brexit-cta" data-module="track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="/transition" data-track-dimension="Check how the new Brexit rules affect you" data-track-dimension-index="29" lang="en" href="/transition">
+  <h2 class="gem-c-contextual-sidebar__brexit-heading">Brexit</h2>
+  <p class="gem-c-contextual-sidebar__brexit-text">Check how the new Brexit rules affect you</p>
+</a>
+
+
+    
+  <div class="gem-c-related-navigation">
+
+      <h2 id="related-nav-related_items-277b5f8e" class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
+        Related content
+      </h2>
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-277b5f8e" data-module="gem-toggle">
+
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.1 Related content" data-track-label="/government/publications/covid-19-stay-at-home-guidance" data-track-options='{"dimension28":"5","dimension29":"COVID-19: guidance for households with possible coronavirus infection"}' href="/government/publications/covid-19-stay-at-home-guidance">COVID-19: guidance for households with possible coronavirus infection</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.2 Related content" data-track-label="/register-coronavirus-antibody-test" data-track-options="{&quot;dimension28&quot;:&quot;5&quot;,&quot;dimension29&quot;:&quot;Register for an antibody test kit to check if you've had coronavirus before&quot;}" href="/register-coronavirus-antibody-test">Register for an antibody test kit to check if you've had coronavirus before</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.3 Related content" data-track-label="/guidance/nhs-test-and-trace-workplace-guidance" data-track-options='{"dimension28":"5","dimension29":"NHS Test and Trace in the workplace"}' href="/guidance/nhs-test-and-trace-workplace-guidance">NHS Test and Trace in the workplace</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.4 Related content" data-track-label="/guidance/coronavirus-covid-19-getting-tested" data-track-options='{"dimension28":"5","dimension29":"Coronavirus (COVID-19): getting tested"}' href="/guidance/coronavirus-covid-19-getting-tested">Coronavirus (COVID-19): getting tested</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar gem-c-related-navigation__section-link--inline  gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.5 Related content" data-track-label="/government/publications/guidance-for-contacts-of-people-with-possible-or-confirmed-coronavirus-covid-19-infection-who-do-not-live-with-the-person" data-track-options='{"dimension28":"5","dimension29":"Guidance for contacts of people with confirmed coronavirus (COVID-19) infection who do not live with the person"}' href="/government/publications/guidance-for-contacts-of-people-with-possible-or-confirmed-coronavirus-covid-19-infection-who-do-not-live-with-the-person">Guidance for contacts of people with confirmed coronavirus (COVID-19) infection who do not live with the person</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        
+  <div class="gem-c-contextual-footer">
+    
+  <div class="gem-c-related-navigation">
+
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-topics-595d80f8" data-module="gem-toggle">
+
+    <h2 id="related-nav-topics-595d80f8" class="gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--footer" data-track-count="footerRelatedItemSection">Explore the topic</h2>
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.1 Explore the topic" data-track-label="/coronavirus-taxon/rules-and-restrictions" data-track-options='{"dimension28":"2","dimension29":"Rules and restrictions during coronavirus"}' href="/coronavirus-taxon/rules-and-restrictions">Rules and restrictions during coronavirus</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.2 Explore the topic" data-track-label="/coronavirus-taxon/testing" data-track-options='{"dimension28":"2","dimension29":"Testing for coronavirus (COVID-19)"}' href="/coronavirus-taxon/testing">Testing for coronavirus (COVID-19)</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+  </div>
+
+
+    </div>
+  </div>
+
+
+    </main>
+    
+<div class="gem-c-feedback" data-module="feedback">
+  
+<div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+  <div class="gem-c-feedback__prompt-questions js-prompt-questions">
+    <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+    <!-- Maybe button exists only to try and capture clicks by bots -->
+    <button data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" style="display: none" hidden="hidden" aria-hidden="true">
+      Maybe
+    </button>
+    
+    <ul class="gem-c-feedback__option-list">
+      <li class="gem-c-feedback__option-list-item">
+        <button class="govuk-button gem-c-feedback__prompt-link js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick">
+          Yes <span class="govuk-visually-hidden">this page is useful</span>
+        </button>
+      </li>
+      <li class="gem-c-feedback__option-list-item">
+        <button class="govuk-button gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false">
+          No <span class="govuk-visually-hidden">this page is not useful</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="gem-c-feedback__prompt-questions gem-c-feedback__prompt-success js-prompt-success js-hidden" role="alert">
+    Thank you for your feedback
+  </div>
+  <div class="gem-c-feedback__prompt-questions gem-c-feedback__prompt-questions--something-is-wrong js-prompt-questions">
+    <button class="govuk-button gem-c-feedback__prompt-link js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV-UK Open Form" aria-controls="something-is-wrong" aria-expanded="false">
+      There is something wrong with this page
+    </button>
+  </div>
+</div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post">
+  <button class="govuk-button govuk-button--secondary gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true">
+    Close
+  </button>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+      <input type="hidden" name="url" value="https://www.gov.uk/guidance/nhs-test-and-trace-how-it-works">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+      
+<div class="govuk-form-group">
+
+            
+  <label for="input-1932e3a7" class="gem-c-label govuk-label">What were you doing?</label>
+
+
+
+
+
+
+
+    <input name="what_doing" class="gem-c-input govuk-input" id="input-1932e3a7" type="text" aria-describedby="feedback_explanation">
+</div>
+
+      
+<div class="govuk-form-group">
+
+            
+  <label for="input-71bb6465" class="gem-c-label govuk-label">What went wrong?</label>
+
+
+
+
+
+
+
+    <input name="what_wrong" class="gem-c-input govuk-input" id="input-71bb6465" type="text">
+</div>
+
+      
+
+
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+    </div>
+  </div>
+</form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+  <button class="govuk-button govuk-button--secondary gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true">
+    Close
+  </button>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds" id="survey-wrapper">
+      <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+      <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+      <input name="email_survey_signup[survey_source]" type="hidden" value="/guidance/nhs-test-and-trace-how-it-works">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+      
+<div class="govuk-form-group">
+
+            
+  <label for="input-73f6f0c7" class="gem-c-label govuk-label">Email address</label>
+
+
+
+
+
+
+
+    <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-73f6f0c7" type="email" autocomplete="email" aria-describedby="survey_explanation">
+</div>
+
+       
+
+
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+    </div>
+  </div>
+</form>
+
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+      <div class="govuk-width-container">
+        <div class="footer-container govuk-main-wrapper">
+              <div class="govuk-grid-row footer-categories" data-module="track-click">
+      <div class="govuk-grid-column-two-thirds">
+        <h2>Coronavirus (COVID-19)</h2>
+        <ul>
+          <li>
+            <a data-track-category="footerClicked" data-track-action="coronavirusLinks" data-track-label="Coronavirus (COVID-19): guidance and support" href="/coronavirus" class="govuk-link">
+               Coronavirus (COVID-19): guidance and support
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <h2>Brexit</h2>
+        <ul>
+          <li>
+            <a data-track-category="footerClicked" data-track-action="transitionLinks" data-track-label="Check how the new Brexit rules affect you" href="/transition" class="govuk-link">
+               Check how the new Brexit rules affect you
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-row footer-categories" data-module="track-click">
+      <div class="govuk-grid-column-two-thirds">
+        <h2>Services and information</h2>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <ul>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Benefits" href="/browse/benefits">
+                  Benefits
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Births, deaths, marriages and care" href="/browse/births-deaths-marriages">
+                  Births, deaths, marriages and care
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Business and self-employed" href="/browse/business">
+                  Business and self-employed
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="" href="/browse/childcare-parenting">
+                  Childcare and parenting
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Citizenship and living in the UK" href="/browse/citizenship">
+                  Citizenship and living in the UK
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Crime, justice and the law" href="/browse/justice">
+                  Crime, justice and the law
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Disabled people" href="/browse/disabilities">
+                  Disabled people
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Driving and transport" href="/browse/driving">
+                  Driving and transport
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <ul>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Education and learning" href="/browse/education">
+                  Education and learning
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Employing people" href="/browse/employing-people">
+                  Employing people
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Environment and countryside" href="/browse/environment-countryside">
+                  Environment and countryside
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Housing and local services" href="/browse/housing-local-services">
+                  Housing and local services
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Money and tax" href="/browse/tax">
+                  Money and tax
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Passports, travel and living abroad" href="/browse/abroad">
+                  Passports, travel and living abroad
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Visas and immigration" href="/browse/visas-immigration">
+                  Visas and immigration
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Working, jobs and pensions" href="/browse/working">
+                  Working, jobs and pensions
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="How government works" href="/government/how-government-works">
+              How government works
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Departments" href="/government/organisations">
+              Departments
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Worldwide" href="/world">
+              Worldwide
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Services" href="/search/services">
+              Services
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Guidance and regulation" href="/search/guidance-and-regulation">
+              Guidance and regulation
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="News and communications" href="/search/news-and-communications">
+              News and communications
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Research and statistics" href="/search/research-and-statistics">
+              Research and statistics
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Policy papers and consultations" href="/search/policy-papers-and-consultations">
+              Policy papers and consultations
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Transparency and freedom of information releases" href="/search/transparency-and-freedom-of-information-releases">
+              Transparency and freedom of information releases
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+          <div class="footer-meta">
+            <div class="footer-meta-inner">
+                <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a class="govuk-link" href="/help">Help</a></li>
+  <li><a class="govuk-link" href="/help/privacy-notice">Privacy</a></li>
+  <li><a class="govuk-link" href="/help/cookies">Cookies</a></li>
+  <li><a class="govuk-link" href="/contact">Contact</a></li>
+  <li><a class="govuk-link" href="/help/accessibility-statement">Accessibility statement</a></li>
+  <li><a class="govuk-link" href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a class="govuk-link" href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>
+    Built by the
+    <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-link">
+      Government Digital Service
+    </a>
+  </li>
+</ul>
+
+
+
+              <div class="open-government-licence">
+                <p class="logo">
+                  <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="govuk-link open-government-licence__logo-link">
+                    Open Government Licence
+                  </a>
+                </p>
+                  <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="govuk-link">Open Government Licence v3.0</a>, except where otherwise stated</p>
+              </div>
+            </div>
+
+            <div class="copyright">
+              <a class="govuk-link" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+                 © Crown copyright
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+        <script src="https://www.gov.uk/assets/static/global-bar-init-8937018756a61669aeb0eb79274b88cfdcb3ef4b32093b7a72b00776d61b1135.js"></script>
+    <script>
+      if (GOVUK.globalBarInit) {
+        window.GOVUK.globalBarInit.init()
+      }
+    </script>
+  <script src="https://www.gov.uk/assets/static/libs/jquery/jquery-1.12.4-c731c20e2995c576b0509d3bd776f7ab64a66b95363a3b5fae9864299ee594ed.js"></script>
+<script src="https://www.gov.uk/assets/static/header-footer-only-f3ca9f5744a1346a673f6e1f6e4718387458bf7290b2f8e80be700fd1ef1e786.js"></script>
+<script src="https://www.gov.uk/assets/static/surveys-b5737b46c55d5682514456a1bf0cea2075accf1fb9a09c790d988346bdadba95.js"></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="/assets/government-frontend/application-09c2711b945df4f236974198f4f548b96c1e36db334900caddc2454ee0dd0b0e.js"></script><script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "FAQPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.gov.uk/guidance/nhs-test-and-trace-how-it-works"
+  },
+  "name": "NHS Test and Trace: how it works",
+  "datePublished": "2020-05-27T19:35:00.000+00:00",
+  "dateModified": "2021-01-11T00:15:05.000+00:00",
+  "text": "An overview of NHS Test and Trace, including what happens if you test positive for coronavirus (COVID-19) or have had close contact with someone who has tested positive.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "GOV.UK",
+    "url": "https://www.gov.uk",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-logo-e5962881254c9adb48f94d2f627d3bb67f258a6cbccc969e80abb7bbe4622976.png"
+    }
+  },
+  "image": [
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-5ceffac04f7f6d4f421bd1d36dbb723ef48c15426d7f77f90be80a83af3c747e.png",
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-4x3-fcfe16abb1a015848e50d2ea797666a9eaf5158dca38ddfb1e52dc8c0543ab74.png",
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-16x9-fcf616879a7b37970df4d2117de962e08f7d057674ef1af6063dcdd529424eee.png"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "Department of Health and Social Care",
+    "url": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+  },
+  "about": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Thing",
+      "sameAs": "https://www.gov.uk/coronavirus-taxon/rules-and-restrictions"
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Thing",
+      "sameAs": "https://www.gov.uk/coronavirus-taxon/testing"
+    }
+  ],
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "NHS Test and Trace: how it works",
+      "url": "https://www.gov.uk/guidance/nhs-test-and-trace-how-it-works",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "url": "https://www.gov.uk/guidance/nhs-test-and-trace-how-it-works",
+        "text": "\u003cdiv class=\"govspeak\"\u003e\n\u003cdiv class=\"call-to-action\"\u003e\n\u003cp\u003eEngland is under national lockdown with the guidance being ‘stay at home’. Find out \u003ca href=\"https://www.gov.uk/guidance/national-lockdown-stay-at-home\" class=\"govuk-link\"\u003ewhat you can and cannot do\u003c/a\u003e.\u003c/p\u003e\n\u003c/div\u003e\n\n\u003cp\u003eNHS Test and Trace:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eensures that anyone who develops symptoms of coronavirus (COVID-19) can quickly be tested to find out if they have the virus, and also includes targeted asymptomatic testing of NHS and social care staff and care home residents\u003c/li\u003e\n  \u003cli\u003ehelps trace close recent contacts of anyone who tests positive for coronavirus and, if necessary, notifies them that they must self-isolate at home to help stop the spread of the virus\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eWe have introduced this service to help return life more to normal, in a way that is safe and protects our NHS and social care. The service allows us to trace the spread of the virus and isolate new infections and play a vital role in giving us early warning if the virus is increasing again, locally or nationally.\u003c/p\u003e\n\n\u003ch2 id=\"how-nhs-test-and-trace-helps-fight-the-virus\"\u003eHow NHS Test and Trace helps fight the virus\u003c/h2\u003e\n\n\u003cp\u003eNHS Test and Trace will help to control the rate of reproduction (R), reduce the spread of the infection and save lives. By playing your part through the actions set out below, you will directly help to contain the virus by reducing its spread. This means that, thanks to your efforts, we will be able to go as far as it is safe to go in easing lockdown measures.\u003c/p\u003e\n\n\u003cp\u003ePlaying your part:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eif you develop symptoms, you must continue to follow the rules to self-isolate with other members of your household and get a test to find out if you have coronavirus\u003c/li\u003e\n  \u003cli\u003eif you test positive for coronavirus, you must share information promptly and accurately about your recent contacts through NHS Test and Trace to help us alert other people who may need to self-isolate\u003c/li\u003e\n  \u003cli\u003eif you have had close recent contact with someone who has coronavirus, you must self-isolate if NHS Test and Trace advises you to do so\u003c/li\u003e\n  \u003cli\u003eif you are returning from travel abroad it is important to check whether you need to self-isolate\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThis specific guidance applies in England only. All 4 administrations are working closely together to have a consistent and joined-up approach to testing and tracing.\u003c/p\u003e\n\n\u003ch3 id=\"definitions\"\u003eDefinitions\u003c/h3\u003e\n\n\u003cp\u003e‘Self-isolation if you have symptoms’ means you and all household members must remain at home. Do not go outside your home for any reason, that is to work, school or public areas, and do not use public transport or taxis. The \u003ca href=\"https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance\" class=\"govuk-link\"\u003eguidance for households with possible coronavirus infection page\u003c/a\u003e has more information on self-isolation.\u003c/p\u003e\n\n\u003cp\u003e‘Contact’ means a person who has been in close contact with someone who has tested positive for coronavirus and who may or may not live with them.\u003c/p\u003e\n\n\u003cp\u003eIt is a legal requirement to self-isolate if you test positive for COVID-19 or if you are identified as a contact and told to self-isolate by Test and Trace. Failure to self-isolate for the full time-period can result in a fine, starting from £1,000.\u003c/p\u003e\n\n\u003ch2 id=\"how-nhs-test-and-trace-works\"\u003eHow NHS Test and Trace works\u003c/h2\u003e\n\n\u003ch3 id=\"part-1-for-someone-with-symptoms-of-coronavirus\"\u003ePart 1: for someone with symptoms of coronavirus\u003c/h3\u003e\n\n\u003col\u003e\n  \u003cli\u003e\n    \u003cp\u003eisolate: as soon as you experience coronavirus symptoms, medical advice is clear: you must self-isolate for at least 10 days. Anyone else in your household must self-isolate for 10 days from when you started having symptoms\u003c/p\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003etest: \u003ca href=\"https://www.gov.uk/get-coronavirus-test\" class=\"govuk-link\"\u003eget a free NHS test immediately to check if you have coronavirus\u003c/a\u003e or call 119 if you have no internet access\u003c/p\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eresults: if your test is positive, you must complete the remainder of your 10-day self-isolation. Anyone in your household must also complete self-isolation for 10 days from when you started having symptoms. Failure to self-isolate for the full time-period can result in a fine, starting from £1,000. If your test is negative you will no longer be required to self-isolate, though you may wish to do so if you still feel unwell and have symptoms similar to coronavirus. If your test is negative, other household members no longer need to self-isolate.\u003c/p\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eshare contacts: if you test positive for coronavirus, NHS Test and Trace will send you a text or email alert or call you with instructions of how to share details of people with whom you have had close, recent contact and places you have visited. It is important that you respond quickly and accurately so that we can give appropriate advice to those who need it. You will be told to do this online via a secure website or you will be called by one of our contract tracers. If NHS Test and Trace contact tracers are unable to contact you for 24 hours, they may pass your case to your local authority to follow up by phone or in person.\u003c/p\u003e\n  \u003c/li\u003e\n\u003c/ol\u003e\n\n\u003ch3 id=\"part-2-if-you-are-contacted-by-nhs-test-and-trace--because-you-have-been-in-close-contact-with-someone-who-has-tested-positive-for-coronavirus\"\u003ePart 2: if you are contacted by NHS Test and Trace  because you have been in close contact with someone who has tested positive for coronavirus\u003c/h3\u003e\n\n\u003col\u003e\n  \u003cli\u003e\n    \u003cp\u003ealert: you will be alerted by NHS Test and Trace if you have been in close contact with someone who has tested positive for coronavirus. The alert will usually come by text, email or phone call. You should then log on to the NHS Test and Trace website, which is normally the easiest way for you and the service to communicate with each other – but, if not, a trained call handler will talk you through what you must do. Under-18s will get a phone call and a parent or guardian will be asked to give permission for the call to continue\u003c/p\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eisolate: you will be told to begin self-isolation for 10 days from your last contact with the person who has tested positive. It’s really important to do this even if you don’t feel unwell because you could still be infectious to others. Failure to self-isolate for the full time period can result in a fine, starting from £1,000. Your household doesn’t need to self-isolate with you, if you do not have symptoms, but they must take extra care to follow the guidance on social distancing and handwashing and avoid contact with you at home\u003c/p\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003etest if needed: if you develop symptoms  of coronavirus, other members of your household must self-isolate immediately at home for 10 days and you must \u003ca href=\"https://www.gov.uk/get-coronavirus-test\" class=\"govuk-link\"\u003eget a test to check if you have coronavirus\u003c/a\u003e or call 119 if you have no internet access. If your test is positive, you must continue to stay at home for at least 10 days and we will get in touch to ask about your contacts since they must self-isolate. If your test is negative, you must still complete your 10-day self-isolation period because the virus may not be detectable yet – this is crucial to avoid unknowingly spreading the virus.\u003c/p\u003e\n  \u003c/li\u003e\n\u003c/ol\u003e\n\n\u003ch2 id=\"the-nhs-covid-19-app\"\u003eThe NHS COVID-19 app\u003c/h2\u003e\n\n\u003cp\u003eThe new \u003ca rel=\"external\" href=\"https://www.covid19.nhs.uk/\" class=\"govuk-link\"\u003eNHS COVID-19 app\u003c/a\u003e, now available to download for free in England and Wales, is the fastest way to see if you’re at risk from coronavirus. The faster you know, the quicker you can alert and protect your loved ones and community.\u003c/p\u003e\n\n\u003cp\u003eThe app has a number of tools to protect you, including contact tracing, local area alerts and venue check-in. It uses proven technology from Apple and Google, designed to protect every user’s privacy.\u003c/p\u003e\n\n\u003ch2 id=\"part-1-people-who-develop-symptoms-of-coronavirus\"\u003ePart 1: people who develop symptoms of coronavirus\u003c/h2\u003e\n\n\u003cp\u003eThis section applies if you have symptoms of coronavirus or you have received a positive test result.\u003c/p\u003e\n\n\u003ch3 id=\"when-to-self-isolate\"\u003eWhen to self-isolate\u003c/h3\u003e\n\n\u003cp\u003eThe medical advice is clear: you must self-isolate if you have coronavirus symptoms or live in the same household as somebody who does. The main symptoms of coronavirus are:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003ehigh temperature – this means you feel hot to touch on your chest or back (you do not need to measure your temperature)\u003c/li\u003e\n  \u003cli\u003enew, continuous cough – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)\u003c/li\u003e\n  \u003cli\u003eloss or change to your sense of smell or taste – this means you’ve noticed you cannot smell or taste anything, or things smell or taste different to normal\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eFor more information, read the further \u003ca rel=\"external\" href=\"https://www.nhs.uk/conditions/coronavirus-covid-19/check-if-you-have-coronavirus-symptoms/\" class=\"govuk-link\"\u003eguidance on symptoms\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eIf you have one or more of these symptoms, you must self-isolate straight away for 10 days – or longer if you still have symptoms other than cough or loss of sense of smell/taste.\u003c/p\u003e\n\n\u003cp\u003eIf you live in the same household as someone with coronavirus symptoms, you must self-isolate straight away for 10 days.\u003c/p\u003e\n\n\u003cp\u003eFailure to self-isolate for the full time-period can result in a fine, starting from £1,000.\u003c/p\u003e\n\n\u003ch3 id=\"how-to-get-a-test\"\u003eHow to get a test\u003c/h3\u003e\n\n\u003cp\u003eAnyone with \u003ca rel=\"external\" href=\"https://www.nhs.uk/conditions/coronavirus-covid-19/symptoms\" class=\"govuk-link\"\u003esymptoms\u003c/a\u003e can get a coronavirus test, whatever their age.\u003c/p\u003e\n\n\u003cdiv class=\"call-to-action\"\u003e\n\u003cp\u003e\u003ca href=\"http://www.gov.uk/get-coronavirus-test\" class=\"govuk-link\"\u003eGet a coronavirus test\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n\u003cp\u003eIf you don’t have access to the internet, you can get a test by phoning 119.\u003c/p\u003e\n\n\u003cp\u003eOur \u003ca href=\"https://www.gov.uk/guidance/coronavirus-covid-19-getting-tested\" class=\"govuk-link\"\u003eguidance on testing\u003c/a\u003e has more information on our testing programme.\u003c/p\u003e\n\n\u003ch3 id=\"if-you-test-negative\"\u003eIf you test negative\u003c/h3\u003e\n\n\u003cp\u003eIf you get a negative test result, this means you are at low risk of having coronavirus.\u003c/p\u003e\n\n\u003cp\u003eOther members of your household can stop self-isolating. If you feel well and no longer have symptoms similar to coronavirus, you can stop self-isolating. You could still have another virus, such as a cold or flu – in which case it is still best to avoid contact with other people until you are better.\u003c/p\u003e\n\n\u003ch3 id=\"if-you-test-positive\"\u003eIf you test positive\u003c/h3\u003e\n\n\u003cp\u003eIf you get a positive test result, this means that when you took the test, you had coronavirus. You – and other members of your household – must continue to self-isolate.\u003c/p\u003e\n\n\u003ch3 id=\"health-and-care-workers\"\u003eHealth and care workers\u003c/h3\u003e\n\n\u003cp\u003eIf you work in a health or care setting, you should follow the separate \u003ca href=\"https://www.gov.uk/government/publications/covid-19-management-of-exposed-healthcare-workers-and-patients-in-hospital-settings/covid-19-management-of-exposed-healthcare-workers-and-patients-in-hospital-settings\" class=\"govuk-link\"\u003eguidance for health and care workers on testing\u003c/a\u003e and when to return to work.\u003c/p\u003e\n\n\u003ch3 id=\"telling-people-about-your-test-result\"\u003eTelling people about your test result\u003c/h3\u003e\n\n\u003cp\u003eIf you develop symptoms, you may wish to alert the people with whom you have had close contact over the last 48 hours. You should tell them that you might have coronavirus but are waiting for a test result.\u003c/p\u003e\n\n\u003cp\u003eAt this stage (until the test result is known), those people do not need to self-isolate, but they should take extra care in practising \u003ca href=\"https://www.gov.uk/government/publications/staying-alert-and-safe-social-distancing/staying-alert-and-safe-social-distancing\" class=\"govuk-link\"\u003esocial distancing\u003c/a\u003e and good hygiene, like washing their hands regularly. They should also watch out for their own \u003ca rel=\"external\" href=\"https://www.nhs.uk/conditions/coronavirus-covid-19/check-if-you-have-coronavirus-symptoms/\" class=\"govuk-link\"\u003esymptoms\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eYou may want to write down your recent close contacts now so that you have them to hand if you test positive.\u003c/p\u003e\n\n\u003ch3 id=\"sharing-information-about-your-recent-contacts\"\u003eSharing information about your recent contacts\u003c/h3\u003e\n\n\u003cp\u003eIf you get a positive test, we will contact you and ask you to share information about any close contacts you had just before or after you developed symptoms. This is vital if we are to stop the spread of the virus.\u003c/p\u003e\n\n\u003cp\u003eWe will contact you by text message, email or phone. If you are under 18 years old, we will contact you by phone wherever possible and ask for your parent or guardian’s permission to continue the call.\u003c/p\u003e\n\n\u003cp\u003eYou will be sent a link to the NHS Test and Trace website and asked to create a confidential account where you can record details about your recent close contacts. If you do not have internet access or if you don’t complete the online process, one of our contact tracers will phone you to gather this information from you.\u003c/p\u003e\n\n\u003cp\u003eThe information you give will be handled in strict confidence and will only be kept and used in line with data protection laws. It will help us to contact people who are at risk of having been exposed to coronavirus and explain what they must do to help prevent the further spread of the virus.\u003c/p\u003e\n\n\u003cp\u003eSome local authorities have their own contact tracing teams who are employed by the local council. NHS Test and Trace may pass your details to these local teams if you have tested positive for coronavirus and they have not been able to contact you for 24 hours. These teams work with local public health experts and will usually contact you by phone and text. In certain circumstances they may visit you at your home to ask you to make further contact with them or to ask about your contacts.\u003c/p\u003e\n\n\u003cp\u003eWhen we contact people to advise them to self-isolate, we do not tell them your identity. But if you have alerted them when you first develop symptoms or when you get your test result, they will be better prepared for the advice we give them.\u003c/p\u003e\n\n\u003ch3 id=\"when-we-contact-you\"\u003eWhen we contact you\u003c/h3\u003e\n\n\u003cp\u003eIf NHS Test and Trace contacts you, the service will use text messages, email or phone.\u003c/p\u003e\n\n\u003cp\u003eAll texts or emails will ask you to sign into the \u003ca rel=\"external\" href=\"https://contact-tracing.phe.gov.uk/\" class=\"govuk-link\"\u003eNHS Test and Trace contact-tracing website\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eIf NHS Test and Trace calls you by phone, the service will be using the phone number 0300 013 5000.\u003c/p\u003e\n\n\u003cp\u003eAll information you provide to NHS Test and Trace is held in strict confidence and will only be kept and used in line with the Data Protection Act 2018.\u003c/p\u003e\n\n\u003cp\u003eContact tracers will:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003ecall you from 0300 013 5000. Local contact tracers will contact you from a local council number. If you’re unsure if this is genuine, please contact your local council for advice\u003c/li\u003e\n  \u003cli\u003esend you text messages from ‘NHStracing’\u003c/li\u003e\n  \u003cli\u003eask you to sign into the \u003ca rel=\"external\" href=\"https://contact-tracing.phe.gov.uk/\" class=\"govuk-link\"\u003eNHS Test and Trace contact-tracing website\u003c/a\u003e\n\u003c/li\u003e\n  \u003cli\u003eask for your full name to confirm your identity, and postcode to offer support while self-isolating\u003c/li\u003e\n  \u003cli\u003eask about the coronavirus symptoms you have been experiencing\u003c/li\u003e\n  \u003cli\u003eask you to provide the name, telephone number and/or email address of anyone you have had close contact with in the 2 days prior to your symptoms starting\u003c/li\u003e\n  \u003cli\u003eask if anyone you have been in contact with is under 18 or lives outside of England\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eContact tracers will never:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eask you to dial a premium rate number to speak to us (for example, those starting 09 or 087)\u003c/li\u003e\n  \u003cli\u003eask you to make any form of payment or purchase a product or any kind\u003c/li\u003e\n  \u003cli\u003eask for any details about your bank account\u003c/li\u003e\n  \u003cli\u003eask for your social media identities or login details, or those of your contacts\u003c/li\u003e\n  \u003cli\u003eask you for any passwords or PINs, or ask you to set up any passwords or PINs over the phone\u003c/li\u003e\n  \u003cli\u003edisclose any of your personal or medical information to your contacts\u003c/li\u003e\n  \u003cli\u003eprovide medical advice on the treatment of any potential coronavirus symptoms\u003c/li\u003e\n  \u003cli\u003eask you to download any software to your PC or ask you to hand over control of your PC, smartphone or tablet to anyone else\u003c/li\u003e\n  \u003cli\u003eask you to access any website that does not belong to the government or NHS\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"what-we-will-ask-you\"\u003eWhat we will ask you\u003c/h3\u003e\n\n\u003cp\u003eWe will ask you:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eif you have family members or other household members living with you. In line with the medical advice they must remain in self-isolation for the rest of the 10-day period from when your symptoms began\u003c/li\u003e\n  \u003cli\u003eif you have had any close contact with anyone other than members of your household. We are interested in in the 48 hours before you developed symptoms and the time since you developed symptoms. Close contact means:\n    \u003cul\u003e\n      \u003cli\u003ehaving face-to-face contact with someone less than 1 metre away (this will include times where you have worn a face covering or a face mask)\u003c/li\u003e\n      \u003cli\u003ehaving been within 2 metres of someone for more than 15 minutes (either as a one-off contact, or added up together over one day)\u003c/li\u003e\n      \u003cli\u003etravelling in a car or other small vehicle with someone (even on a short journey) or close to them on a plane\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003eif you work in – or have recently visited – a setting with other people (for example, a GP surgery, a school or a workplace). The use of face masks and other forms PPE does not exclude somebody from being considered a close contact, unless they are providing direct care with patients or residents in a health and care setting\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eWe will ask you to provide, where possible, the names and contact details (for example, email address, telephone number) for the people you have had close contact with. As with your own details these will be held in strict confidence and will be kept and used only in line with data protection laws.\u003c/p\u003e\n\n\u003cp\u003eIf NHS Test and Trace identify you as a contact and you work in a critical service where the recommendation for you to self-isolate would have impact on providing that critical service, your employer will need to escalate this to the \u003ca href=\"https://www.gov.uk/health-protection-team\" class=\"govuk-link\"\u003elocal health protection team (HPT)\u003c/a\u003e for a risk-assessment.\u003c/p\u003e\n\n\u003ch3 id=\"how-this-information-is-used\"\u003eHow this information is used\u003c/h3\u003e\n\n\u003cp\u003eBased on the information you provide, we will assess whether we need to alert your contacts and ask them to self-isolate.\u003c/p\u003e\n\n\u003cp\u003eWe may refer the case to local public health experts if your case is complex, for example, if you work in or have recently visited:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003ea health or care setting, such as a hospital or care home\u003c/li\u003e\n  \u003cli\u003ea prison or other secure setting\u003c/li\u003e\n  \u003cli\u003ea school for people with special needs\u003c/li\u003e\n  \u003cli\u003ecritical national infrastructure or areas vital for national security\u003c/li\u003e\n  \u003cli\u003ewhen NHS Test and Trace has been unable to contact you after an agreed amount of time and your local authority has set up a system to take over your case\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eLocal public health experts are Public Health England staff and teams employed by your local authority who work together with all parts of the local community to prevent or respond to local outbreaks.\u003c/p\u003e\n\n\u003ch2 id=\"part-2-people-who-have-had-close-contact-with-someone-who-has-coronavirus\"\u003ePart 2: people who have had close contact with someone who has coronavirus\u003c/h2\u003e\n\n\u003cp\u003eThis section applies to those who have been identified by NHS Test and Trace as a close contact.\u003c/p\u003e\n\n\u003ch3 id=\"if-you-are-told-to-self-isolate\"\u003eIf you are told to self-isolate\u003c/h3\u003e\n\n\u003cp\u003eIf we identify you as someone who has had close recent contact with someone who has tested positive for coronavirus, we will notify you that you must self-isolate in line with medical advice and the law.\u003c/p\u003e\n\n\u003cp\u003eIt is a legal requirement to self-isolate if you are identified as a contact and told to self-isolate by NHS Test and Trace. Failure to self-isolate for the full time-period can result in a fine, starting from £1,000.\u003c/p\u003e\n\n\u003cp\u003eYou may be feeling well and not have any symptoms, but it is still essential for you to follow the advice that you are given.\u003c/p\u003e\n\n\u003cp\u003eThis is because, if you have been infected, you could be infectious to others. Some people infected with the virus don’t show any symptoms at all and it is therefore crucial to self-isolate to avoid unknowingly spreading the virus.\u003c/p\u003e\n\n\u003cp\u003eIf you do not have symptoms, you must not seek a test, as the scientific evidence shows that the test may not be able to detect whether you have the virus.\u003c/p\u003e\n\n\u003ch3 id=\"how-you-will-be-told-to-self-isolate\"\u003eHow you will be told to self-isolate\u003c/h3\u003e\n\n\u003cp\u003eIf you are aged 18 or over, we will contact you by text message or email but will follow up by phone if we don’t get a response. If we only have a landline number for you, we will contact you on that number.\u003c/p\u003e\n\n\u003cp\u003eIf you are under 18 years old, we will contact you by phone wherever possible and ask for consent from your parent or guardian to continue the call.\u003c/p\u003e\n\n\u003cp\u003eIf you have internet access, we will ask you to log onto the NHS Test and Trace website. This is the simplest way of giving you the information you need and the opportunity to ask any questions. The online service will also ask you to confirm that you are following the advice on self-isolation.\u003c/p\u003e\n\n\u003cp\u003eIf you do not have internet access, we will arrange for a trained call handler to speak to you by phone to give you the information and advice you need.\u003c/p\u003e\n\n\u003ch3 id=\"what-happens-next\"\u003eWhat happens next\u003c/h3\u003e\n\n\u003cp\u003eYou must self-isolate for 10 days after you were in contact with the person who has tested positive for coronavirus. This is crucial to avoid unknowingly spreading the virus and failure to do so can result in a fine, starting from £1,000.\u003c/p\u003e\n\n\u003cp\u003eSelf-isolation means staying at home and not going outside your home at any time. If you live with other people, they do not need to self-isolate, but they should avoid contact with you as far as possible and follow advice on hygiene. If you do not live with other people, you should seek help from others, or delivery services, for essential activities such as food shopping. Self-isolation can be particularly challenging if you are looking after children, or if you care for vulnerable people who cannot stay with friends or family.\u003c/p\u003e\n\n\u003cp\u003eIf you go on to develop symptoms, anyone you live with must then self-isolate and you must report your symptoms and get tested.\u003c/p\u003e\n\n\u003cp\u003eIt is crucial that you complete your 10-day self-isolation period if you’ve been identified as a contact, even if you get a negative test result. This is because you may have the virus, but it cannot yet be detected by a test, so you could unknowingly spread the virus if you leave the house. Other members of your household, however, do not need to remain in self-isolation.\u003c/p\u003e\n\n\u003ch3 id=\"when-we-contact-you-1\"\u003eWhen we contact you\u003c/h3\u003e\n\n\u003cp\u003eIf NHS Test and Trace contacts you, the service will use text messages, email or phone.\u003c/p\u003e\n\n\u003cp\u003eAll texts or emails will ask you to sign into the \u003ca rel=\"external\" href=\"https://contact-tracing.phe.gov.uk\" class=\"govuk-link\"\u003eNHS Test and Trace contact-tracing website\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eIf NHS Test and Trace calls you by phone, the service will be using the phone number 0300 013 5000.\u003c/p\u003e\n\n\u003cp\u003eAll information you provide to NHS Test and Trace is held in strict confidence and will only be kept and used in line with the Data Protection Act 2018.\u003c/p\u003e\n\n\u003cp\u003eContact tracers will:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003ecall you from 0300 013 5000\u003c/li\u003e\n  \u003cli\u003esend you text messages from ‘NHS’\u003c/li\u003e\n  \u003cli\u003eask for your full name and date of birth to confirm your identity, and postcode to offer support while self-isolating\u003c/li\u003e\n  \u003cli\u003eask if you are experiencing any coronavirus symptoms\u003c/li\u003e\n  \u003cli\u003eprovide advice on what you must do as you have been in contact with someone who has tested positive for coronavirus\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eContact tracers will never:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eask you to dial a premium rate number to speak to us (for example, those starting 09 or 087)\u003c/li\u003e\n  \u003cli\u003eask you to make any form of payment or purchase a product of any kind\u003c/li\u003e\n  \u003cli\u003eask for any details about your bank account\u003c/li\u003e\n  \u003cli\u003eask for your social media identities or login details, or those of your contacts\u003c/li\u003e\n  \u003cli\u003eask you for any passwords or PINs, or ask you to set up any passwords or PINs over the phone\u003c/li\u003e\n  \u003cli\u003edisclose any of your personal or medical information to your contacts\u003c/li\u003e\n  \u003cli\u003eprovide medical advice on the treatment of any potential coronavirus symptoms\u003c/li\u003e\n  \u003cli\u003eask you to download any software to your PC or ask you to hand over control of your PC, smartphone or tablet to anyone else\u003c/li\u003e\n  \u003cli\u003eask you to access any website that does not belong to the government or NHS\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"support-for-people-who-are-self-isolating\"\u003eSupport for people who are self-isolating\u003c/h2\u003e\n\n\u003cp\u003eWe will direct you to your local authority helpline if you need the following during the period of self-isolation:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003epractical or social support for yourself\u003c/li\u003e\n  \u003cli\u003esupport for someone you care for\u003c/li\u003e\n  \u003cli\u003efinancial support\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThis is so you can access the local support available to you, like help delivering food or medicine. You may also be able to get help from the \u003ca href=\"https://www.gov.uk/find-coronavirus-support\" class=\"govuk-link\"\u003eNHS volunteer responders\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eEmployers should support workers who are told to self-isolate and must not ask them to attend work. See the \u003ca href=\"https://www.gov.uk/guidance/nhs-test-and-trace-workplace-guidance\" class=\"govuk-link\"\u003eguidance on the NHS Test and Trace service for employers, businesses and workers\u003c/a\u003e. If you are in employment, speak to your employer to discuss if you can work from home or other options are available during your period of isolation.\u003c/p\u003e\n\n\u003cp\u003eWorkers in self-isolation are entitled to Statutory Sick Pay (SSP) for every day they are in isolation, as long as they meet the eligibility conditions. Guidance has been produced for \u003ca href=\"https://www.gov.uk/guidance/nhs-test-and-trace-workplace-guidance\" class=\"govuk-link\"\u003eemployees that are unable to work because they are self-isolating\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eNHS Test and Trace will provide evidence that someone has been told to self-isolate. This evidence can be shared with an employer or education provider. \u003ca rel=\"external\" href=\"https://111.nhs.uk/isolation-note/\" class=\"govuk-link\"\u003eGet an isolation note\u003c/a\u003e if you need evidence that you’ve been told to self-isolate.\u003c/p\u003e\n\n\u003cp\u003eYou may be entitled to a one-off payment of £500 through the Test and Trace Support Payment scheme if you are required to stay at home and self-isolate. You should go to your local authority’s website for more information. You will be eligible if you live in England and meet all the following criteria:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eyou have been asked to self-isolate by NHS Test and Trace\u003c/li\u003e\n  \u003cli\u003eyou are employed or self-employed\u003c/li\u003e\n  \u003cli\u003eyou cannot work from home and will lose income as a result\u003c/li\u003e\n  \u003cli\u003eyou are receiving at least one of the following benefits:\n    \u003cul\u003e\n      \u003cli\u003eUniversal Credit\u003c/li\u003e\n      \u003cli\u003eWorking Tax Credits\u003c/li\u003e\n      \u003cli\u003eincome-related Employment and Support Allowance\u003c/li\u003e\n      \u003cli\u003eincome-based Jobseeker’s Allowance\u003c/li\u003e\n      \u003cli\u003eIncome Support\u003c/li\u003e\n      \u003cli\u003ePension Credit\u003c/li\u003e\n      \u003cli\u003eHousing Benefit\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"customer-logs-and-nhs-qr-codes\"\u003eCustomer logs and NHS QR codes\u003c/h2\u003e\n\u003cp\u003eContinued opening up of the economy and public services is reliant on NHS Test and Trace being used to minimise transmission of the virus. In order to ensure that businesses and local services are able to remain open, we will be mandating that organisations in designated sectors must:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eask at least one member of every party of customers or visitors (up to 6 people) to provide their name and contact details\u003c/li\u003e\n  \u003cli\u003ekeep a record of all staff working on their premises and shift times on a given day and their contact details\u003c/li\u003e\n  \u003cli\u003ekeep these records of customers, visitors and staff for 21 days and provide data to NHS Test and Trace if requested\u003c/li\u003e\n  \u003cli\u003edisplay an official NHS QR code poster from 24 September 2020, so that customers and visitors can ‘check in’ using this option as an alternative to providing their contact details\u003c/li\u003e\n  \u003cli\u003eadhere to General Data Protection Regulations\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eIn addition, the hospitality sector will be required to ensure that anyone visiting pubs, restaurants and other venues provides their contact information or checks in using the official \u003ca href=\"https://www.gov.uk/create-coronavirus-qr-poster\" class=\"govuk-link\"\u003eNHS QR code\u003c/a\u003e before being allowed entry to the venue.\u003c/p\u003e\n\n\u003cp\u003eAny designated venue that is found not to be compliant with these regulations will be subject to financial penalties. It is vital that relevant venues comply with these regulations to help keep people safe, and to keep businesses open.\u003c/p\u003e\n\n\u003cp\u003eDesignated venues will need to keep records of customers, visitors and staff for a period of 21 days and make them available when requested by NHS Test and Trace or local public health officials to help contain clusters or outbreaks.\u003c/p\u003e\n\n\u003cp\u003eFind out more about the \u003ca href=\"https://www.gov.uk/guidance/maintaining-records-of-staff-customers-and-visitors-to-support-nhs-test-and-trace\" class=\"govuk-link\"\u003erequirements around maintaining these records\u003c/a\u003e.\u003c/p\u003e\n\u003c/div\u003e"
+      }
+    }
+  ]
+}
+</script><script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Home",
+        "@id": "https://www.gov.uk/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Coronavirus (COVID-19)",
+        "@id": "https://www.gov.uk/coronavirus-taxon"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "name": "Rules and restrictions during coronavirus",
+        "@id": "https://www.gov.uk/coronavirus-taxon/rules-and-restrictions"
+      }
+    }
+  ]
+}
+</script>
+</body>
+</html>

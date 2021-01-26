@@ -1,0 +1,465 @@
+
+<!DOCTYPE html
+><!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!-->
+<html lang="no" class="no-js"> <!--<![endif]-->
+
+<head>
+  
+	<!-- Le styles -->
+	<link href="/resources/css/bootstrap.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-block/ss-symbolicons-block.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-line/ss-symbolicons-line.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/fonts/feed/ss-feed-icons.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/fonts/ss-standard/ss-standard.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/fonts/ss-social-regular/ss-social.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/select2/select2.css?21-01-14-1302" rel="stylesheet">
+	<!-- Modaal -->
+	<link rel="stylesheet" href="/resources/css/modaal.min.css">
+
+	<link href="/resources/css/app.css?21-01-14-1302" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link href="/resources/css/ld-ie.css?21-01-14-1302" rel="stylesheet">
+	<![endif]-->
+
+				<link href="/resources/css/document/lovdata.document.gratis.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.tables.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.web.css?21-01-14-1302" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.css?21-01-14-1302" rel="stylesheet">
+
+
+	<!-- Le scripts -->
+	<script src="/resources/js/jquery-3.4.1.min.js?21-01-14-1302"></script>
+	<!--	<script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script> -->
+
+		<script>
+			var dev = false;
+		</script>
+
+	<script src="/resources/js/modernizr.min.js?21-01-14-1302"></script>
+	<script src="/resources/js/bootstrap.min.js?21-01-14-1302"></script>
+	<script src="/resources/js/jquery.throttle.js?21-01-14-1302"></script>
+	<script src="/resources/js/jquery.form.min.js?21-01-14-1302"></script>
+	<script src="/resources/js/json2.js?21-01-14-1302"></script>
+	<script src="/resources/js/jstorage.js?21-01-14-1302"></script>
+	<script src="/resources/select2/select2.min.js?21-01-14-1302"></script>
+	<script src="/resources/js/app.js?21-01-14-1302"></script>
+	<script src="/resources/js/app-lovdata.js?21-01-14-1302"></script>
+	<script src="/resources/js/highlighter.js?21-01-14-1302"></script>
+	<!-- Modaal -->
+	<script src="/resources/js/modaal.min.js"></script>
+
+	<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-NG7FPV');</script>
+	<!-- End Google Tag Manager -->
+
+	<meta charset="utf-8">
+	<title>Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall - Lovdata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="google-site-verification" content="ENJVlOsNC5zBiaC_PChgiRbBrUBjN6P-Owo6nwS9--Q"/>
+	<meta name="application-name" content="Lovdata"/>
+	<meta property="fb:admins" content="711945576, 714678011"/>
+		<meta name="robots" content="noodp">
+		<meta name="description" content="Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall">
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:description" content="Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall">
+		<meta name="twitter:site" content="@lovdata"/>
+		<meta name="twitter:title" content="Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall"/>
+</head>
+
+	<body class="template-document">
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript aria-hidden="true">
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG7FPV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+	    <div aria-hidden="true" class="print-logo">
+	        <img src="/resources/img/print-logo.jpg" alt="Utskrifts-logo" />
+	    </div>
+
+<header>
+	<div class="ld-navbar" id="ld-navbar">
+		<div id="skiplinks">
+			<a href="#main-content">Til hovedinnhold</a>
+		</div>
+
+		<a role="button" class="open-menu" id="open-menu" aria-label="Åpne meny" aria-hidden="true">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+
+		<a class="logo" href="/" aria-label="Til forsiden"></a>
+
+		<a role="button" class="open-search" aria-label="Åpne søk" aria-hidden="true">
+			<i class="ss-icon ss-symbolicons-block" aria-hidden="true">&#x1F50D;</i>
+		</a>
+
+
+
+		<script>
+			var searchInDocumentPlaceholder = '';
+			var searchInDocument = '';
+			var searchGlobalPlaceholder = 'Søk etter lover, forskrifter, dommer, stortingsvedtak, tariffavtaler m.m.';
+		</script>
+
+		<form role="search" id="sok" action="/sok" METHOD="get">
+			<div class="search">
+				<input class="search-input" type="text" name="q"  placeholder="Søk etter lover, forskrifter, dommer, stortingsvedtak, tariffavtaler m.m."/>
+				<input type="submit" class="submit" value="Søk">
+				<div class="close-mobile-search">Avbryt</div>
+			</div>
+		</form>
+		<a class="pro-login" href="/pro&#x2f;NL&#x2f;lov&#x2f;2020-04-17-23" title="Logg inn"><span>Logg inn</span><i class="ss-icon ss-symbolicons-block">&#x1F512;</i></a>
+	</div>
+</header>
+
+
+<nav role="navigation">
+	<h1 class="sr-only">Hovedmeny</h1>
+	<div class="sidebar">
+		<div class="sidebar-scroll">
+			<ul class="main-nav">
+				<li class="parent rettskilder-parent active">
+					<a data-target="rettskilder" tabindex="0"><i class="weight-icon"></i><span
+						class="nav-label">Rettskilder</span></a>
+				</li>
+				<li class="parent ">
+					<a data-target="tjenester" tabindex="0"><i class="services-icon"></i><span class="nav-label">Tjenester</span></a>
+				</li>
+				<li class="parent ">
+					<a data-target="om" tabindex="0"><i class="info-icon"></i><span class="nav-label">Om Lovdata</span></a>
+				</li>
+				<li class="parent ">
+					<a data-target="mer" tabindex="0"><i class="plus-icon"></i><span class="nav-label">Mer</span></a>
+				</li>
+				<li class="grunnloven-banner social-links">
+					<a href="http://grunnloven.lovdata.no" tabindex="0"><i class="ss-icon ss-feed lover">&#182;</i><span
+						class="nav-label">Grunnloven 1814 til i dag</span></a>
+				</li>
+				<li class="facebook social-links">
+					<a href="https://www.facebook.com/lovdata" tabindex="0"><i class="ss-icon ss-social">&#xF610;</i><span
+						class="nav-label">Lik oss på Facebook</span></a>
+				</li>
+				<li class="twitter social-links">
+					<a href="https://twitter.com/lovdata" tabindex="0"><i class="ss-icon ss-social">&#xF611;</i><span
+						class="nav-label">Følg oss på twitter</span></a>
+				</li>
+				<li class="cookie-info social-links">
+					<a href="https://lovdata.no/info/personvern#cookies" tabindex="0"><i class="ss-icon ss-symbolicons-line">&#x1F36A;</i><span
+						class="nav-label">Om informasjonskapsler</span></a>
+				</li>
+			</ul>
+			<div class="level-2 child open" id="rettskilder">
+				<ul>
+					<li><span class="title">Rettskilder</span></li>
+					<li><a tabindex="0" class="register-lover active" href="/register/lover"><i
+						class="ss-icon ss-feed">&#x00B6;</i> Lover</a></li>
+					<li><a tabindex="0" class="register-stortingsvedtak "
+					       href="/register/stortingsvedtak"><i
+						class="ss-icon ss-feed">&#xF707;</i>Stortingsvedtak</a></li>
+					<li><a tabindex="0" class="register-sentrale-forskrifter "
+					       href="/register/forskrifter"><i
+						class="ss-icon ss-feed">&#xF700;</i>Sentrale forskrifter</a></li>
+					<li><a tabindex="0" class="register-lokale-forskrifter " href="/register/lokaleForskrifter"><i class="ss-icon ss-feed"></i>Lokale forskrifter</a></li>
+					<li><a tabindex="0" class="register-lovtidend " href="/register/lovtidend"><i class="ss-icon ss-feed">&#xF708;</i>Norsk
+							Lovtidend</a></li>
+					<li><a class="register-eosavtalen " href="/register/eosAvtalen">
+							<i class="ss-icon ss-feed">&#xF702;</i>EØS-avtalen</a></li>
+					<li><a tabindex="0" class="register-traktater " href="/register/traktater"><i class="ss-icon ss-symbolicons-block">&#x1F30E;</i>Norges traktater</a></li>
+					<li><a tabindex="0" class="register-dommer " href="/register/avgjørelser"><i class="ss-icon ss-symbolicons-block">&#xE583;</i>Avgjørelser</a></li>
+					<li><a tabindex="0" class="register-trygderetten " href="/register/trygderetten">Trygderettskjennelser</a></li>
+					<li><a tabindex="0" class="register-tariffavtaler " href="/register/tariffavtaler">
+							<i class="ss-icon feed-icon">&#x0638;</i>Tariffavtaler</a></li>
+					<li><a tabindex="0" class="register-sph " href="/sph"><i class="ss-icon ss-symbolicons-block">&#x1F4DA;</i>Statens
+							personalhåndbok</a></li>
+					<li><a tabindex="0" class="register-loverEngelsk " href="/register/loverEngelsk"><i class="ss-icon ss-feed">&#x00B6;</i>Oversatte
+							lover / Translated Acts</a></li>
+					<li><a tabindex="0" class="register-forskrifterEngelsk " href="/register/forskrifterEngelsk"><i
+						class="ss-icon ss-feed">&#xF700;</i>Oversatte
+						forskrifter / Translated regulations</a></li>
+					<li><a tabindex="0" class="register-dommerEngelsk " href="/register/avgjørelserEngelsk"><i class="ss-icon ss-symbolicons-block">&#xE583;</i>Oversatte
+						avgjørelser /
+						Translated decisions</a></li>
+				</ul>
+			</div>
+			<div class="level-2 child " id="tjenester">
+				<ul class="no-icons">
+					<li><span class="title">Tjenester</span></li>
+					<li><a tabindex="0" href="/tjenester/pro/" title="Lovdata Pro">Lovdata Pro<i
+								class="ss-icon icon-right ss-symbolicons-block">&#x2197;</i></a></li>
+					<li><a tabindex="0" href="/pro/auth/student" title="Opprett studentabonnement for Lovdata Pro">Studentabonnement<i
+								class="ss-icon icon-right ss-symbolicons-block">&#x2197;</i></a>
+					</li>
+					<li><a tabindex="0" href="/tjenester/varsling">Varsling</a></li>
+					<li><a tabindex="0" href="/publikasjoner">E-publikasjoner</a></li>
+					<li><a tabindex="0" href="http://www.europalov.no/" target="_blank">Europalov.no<i
+						class="ss-icon icon-right ss-symbolicons-block">&#x2197;</i></a></li>
+					<li><a tabindex="0" href="https://lovdata.helpscoutdocs.com/article/170-sokeoppdrag-og-utskrifter" target="_blank"
+					       class="">Søkeoppdrag<i
+								class="ss-icon icon-right ss-symbolicons-block">&#x2197;</i></a></li>
+					<li><a tabindex="0" href="http://lovdata.helpscoutdocs.com/article/97-kursinformasjon" target="_blank"
+					       class="">Kurs<i
+								class="ss-icon icon-right ss-symbolicons-block">&#x2197;</i></a></li>
+					<li><a tabindex="0" href="/tjenester/tidsskrift">Tidsskrifter</a></li>
+					<li><a tabindex="0" href="/info/api" title="API" class="">API</a></li>
+					<li><a tabindex="0" href="/advokater/" title="Advokatoversikt" class="">Advokatoversikt</a>
+					</li>
+					<li><a tabindex="0" href="/info/22juli" title="22. juli-saken" class="">22.
+						juli-saken</a></li>
+				</ul>
+			</div>
+			<div class="level-2 child " id="om">
+				<ul class="no-icons">
+					<li><span class="title">Om Lovdata</span></li>
+					<li><a tabindex="0" href="/info/om_lovdata" title="Om Lovdata"
+					       class="">Generell Informasjon</a></li>
+					<li><a tabindex="0" href="/info/brukeravtale" title="Brukeravtale"
+					       class="">Brukeravtale</a></li>
+					<li><a tabindex="0" href="/info/personvern" title="Personvern"
+					       class="">Personvern</a></li>
+					<li><a tabindex="0" href="/info/kontakt" title="Kontakt oss" class="">Kontakt
+						oss</a></li>
+					<li><a tabindex="0" href="/info/redaktoransvar" title="Redaktøransvar"
+					       class="">Redaktøransvar</a></li>
+				</ul>
+			</div>
+			<div class="level-2 child " id="mer">
+				<ul class="no-icons">
+					<li><span class="title">Mer</span></li>
+					<li><a tabindex="0" href="/info/rss" title="RSS-feed" class="">RSS-feed</a>
+					</li>
+					<li><a tabindex="0" href="/info/lenker" title="Lenker"
+					       class="">Lenker</a></li>
+					<li><a tabindex="0" href="/eli/" title="European Legislation Identifier"
+					       class="">European Legislation Identifier (BETA)</a></li>
+					<li><a tabindex="0" href="/info/eksamen" title="Eksamen" class="">Eksamen</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<main role="main" id="main-content">
+
+
+    <script type="text/javascript">
+		var documentURL = "/dokument/NL/lov/2020-04-17-23";
+	</script>
+
+	<section role="region" aria-labelledby="toolHeader">
+		<h1 class="sr-only" id="toolHeader">Verktøylinje</h1>
+		<div class="fixed-header">
+			<div class="dropdown-wrap">
+				<div class="bgcDoc">
+					<p aria-hidden="true">Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall</p>
+				</div>
+			</div>
+			<a class="open-meta-list open-meta-list-dropdown"><i class="ss-icon  ss-symbolicons-block">&#xEE00;</i></a>
+			<ul class="meta-list">
+					<li class="innholdsfortegnelse-parent-li">
+						<a role="button" tabindex="0" class="innholdsfortegnelse-parent" data-placement="bottom" title="Innholdsfortegnelse"><i aria-hidden="true"
+							class="ss-icon ss-symbolicons-block">&#xED50;</i><span class="text">Innholdsfortegnelse</span><i aria-hidden="true"
+							class="ss-icon ss-standard navigatedown">&#xF501;</i><i aria-hidden="true" class="ss-icon ss-standard navigateup">&#xF500;</i></a>
+					</li>
+					<li>
+						<a class="lovens-forskrifter" data-placement="bottom" title="Lovens forskrifter"
+						   href="/referanse/hjemmel?dokID=NL/lov/2020-04-17-23">
+							<i aria-hidden="true" class="ss-icon ss-feed">&#63232;</i>
+							<span class="text">Lovens forskrifter</span></a>
+					</li>
+					<li>
+						<a role="button" aria-label="Skriv ut" href="javascript:print()" class="tooltip-parent" data-toggle="tooltip" data-placement="bottom"
+						   title="Skriv ut"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#x2399;</i></a>
+					</li>
+					<li>
+						<a role="button" tabindex="0" aria-label="Del dokument" class="tooltip-parent share-dokument" data-toggle="tooltip" data-placement="bottom" title="Del dokument"
+						   data-id="https://lovdata.no/lov/2020-04-17-23"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i></a>
+					</li>
+			</ul>
+			<ul class="meta-list-dropdown">
+					<li class="mobile-only"><a href="/referanse/hjemmel?dokID=NL/lov/2020-04-17-23"><i aria-hidden="true" class="ss-icon ss-feed">
+						&#63232;</i>Lovens forskrifter</a></li>
+				<li class="mobile-only"><a><i class="ss-icon ss-symbolicons-block">&#x2399;</i>Skriv ut</a></li>
+		    <li><a tabindex="0" role="button" class="share-dokument" data-id="https://lovdata.no/lov/2020-04-17-23"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i>Del dokument</a></li>
+			</ul>
+		</div>
+
+			<div class="innholdsfortegnelse-child" aria-hidden="true">
+				<div class="scroll">
+					<p class="instruction sr-only" tabindex="-1">Trykk Escape for å lukke innholdsfortegnelse</p>
+					<div class="search-in-innholdsfortegnelse">
+						<label for="innhSearch">Søk i innholdsfortegnelse <span class="sr-only">(listen oppdateres idet du skriver)</span></label>
+						<input type="text" class="form-control" placeholder="Skriv søketekst her ..." id="innhSearch">
+					</div>
+					<hr>
+					<ul class="document-index" id="innhdocview document-index">
+						<li class="document-index-item"><a href="/dokument/NL/lov/2020-04-17-23">Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall</a>
+									<ul class="document-index listing" id="innhdocview document-index">
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A71#%C2%A71" data-target="%C2%A71">§ 1. Lovens formål </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A72#%C2%A72" data-target="%C2%A72">§ 2. Stedlig virkeområde </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A73#%C2%A73" data-target="%C2%A73">§ 3. Virkeområde </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A74#%C2%A74" data-target="%C2%A74">§ 4. Vilkår for tilskudd </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A75#%C2%A75" data-target="%C2%A75">§ 5. Tilskuddets størrelse </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A76#%C2%A76" data-target="%C2%A76">§ 6. Generelle forvaltningsregler </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A77#%C2%A77" data-target="%C2%A77">§ 7. Tilskuddsmyndighet og klageinstans </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A78#%C2%A78" data-target="%C2%A78">§ 8. Innhenting av opplysninger </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A79#%C2%A79" data-target="%C2%A79">§ 9. Søknad om tilskudd </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A710#%C2%A710" data-target="%C2%A710">§ 10. Opplysningsplikt for søkeren </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A711#%C2%A711" data-target="%C2%A711">§ 11. Vedtak om tilskudd </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A712#%C2%A712" data-target="%C2%A712">§ 12. Administrative sanksjoner </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A713#%C2%A713" data-target="%C2%A713">§ 13. Straff </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A714#%C2%A714" data-target="%C2%A714">§ 14. Betaling og innkreving </a>
+								</li>
+								<li class="document-index-item">
+									<a href="/dokument/NL/lov/2020-04-17-23/%C2%A715#%C2%A715" data-target="%C2%A715">§ 15. Lovens ikrafttredelse, overgangsbestemmelser </a>
+
+						</li>
+					</ul>
+
+					<div class="empty">Ditt søk ga desverre ingen treff.</div>
+				</div>
+			</div>
+	</section>
+
+
+	<div class="main-content" > 
+		<div class="header inner-max-width">
+			<p class="hjemmel small gray"></p>
+		</div>
+
+<div id="maincolOneColumn"><div id="lovdataDocument" class=" desktop"><div class="lt-ajour-varsel"><a class="reference btn btn-default" href="/LTI/lov/2020-04-17-23">➦ Gå til opprinnelig kunngjort versjon</a></div><div class=" metaWrapper" id="documentMeta"><table style="width:100%" class="metaTitle"><tr><td class="metaTitleEmblem mediumIcons lightgray"></td><td class="metaTitleText"><h1>Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall</h1></td></tr></table><table class=" meta" style="width:100%"><tbody><tr class="odd"><th class=" metafieldLabel">Dato</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_dato">LOV-2020-04-17-23</td></tr><tr class="even"><th class=" metafieldLabel">Departement</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_departement">Finansdepartementet</td></tr><tr class="odd"><th class=" metafieldLabel">Ikrafttredelse</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_ikraft">17.04.2020</td></tr><tr class="even"><th class=" metafieldLabel">Kunngjort</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_kunngjort">17.04.2020   kl. 12.10</td></tr><tr class="odd"><th class=" metafieldLabel">Korttittel</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_korttittel">Lov om midlertidig tilskuddsordning for foretak med stort omsetningsfall</td></tr></tbody></table></div><div class="metaBottom"></div><hr class="red"/><div id="documentBody"><a name="§1"></a><a name="PARAGRAF_1"></a><div data-id="PARAGRAF_1" class="morTag_p paragraf" id="PARAGRAF_1"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 1.</span><span class=" paragrafTittel "><em class=" ">Lovens formål</em></span></h2><p data-uid="0" class="morTag_a avsnitt">Formålet med loven er å etablere en midlertidig ordning for tilskudd til foretak som har stort omsetningsfall som følge av utbrudd av koronavirus.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§1"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§2"></a><a name="PARAGRAF_2"></a><div data-id="PARAGRAF_2" class="morTag_p paragraf" id="PARAGRAF_2"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 2.</span><span class=" paragrafTittel "><em class=" ">Stedlig virkeområde</em></span></h2><p data-uid="0" class="morTag_a avsnitt">Loven gjelder på norsk territorium. Loven gjelder for Svalbard, Jan Mayen og bilandene i det omfanget og med de stedlige tilpasningene Kongen bestemmer.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§2"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§3"></a><a name="PARAGRAF_3"></a><div data-id="PARAGRAF_3" class="morTag_p paragraf" id="PARAGRAF_3"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 3.</span><span class=" paragrafTittel "><em class=" ">Virkeområde</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Tilskuddsordningen gjelder for kalendermånedene mars, april og mai 2020. Kongen kan i forskrift forlenge ordningens varighet.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Ordningen gjelder for foretak som er registrert i foretaksregisteret med hjemmel i foretaksregisterloven § 2-1, og enkeltpersonforetak registrert i enhetsregisteret hvis foretakets inntekt er innehavers hovedinntektskilde. Foretaket må være skattepliktig til Norge, jf. skatteloven § 2-2 første ledd, eller deltakerne i foretaket må være skattepliktig til Norge for selskapets inntekter, jf. skatteloven § 2-2 tredje ledd. Ordningen omfatter også tilfeller der foretaket eller foretakets eier skattlegges i Norge for virksomhet her etter skatteloven § 2-3 første ledd bokstav b.</td></tr></table><a class="namedAnchor" name="a3"></a><a class="namedAnchor" name="AVSNITT_3"></a><table data-id="AVSNITT_3" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(3)</span> Departementet kan gi forskrift om nærmere avgrensning av virkeområdet, herunder at ordningen ikke skal gjelde for foretak i visse næringer og foretak som er eid av stat eller kommune.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§3"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§4"></a><a name="PARAGRAF_4"></a><div data-id="PARAGRAF_4" class="morTag_p paragraf" id="PARAGRAF_4"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 4.</span><span class=" paragrafTittel "><em class=" ">Vilkår for tilskudd</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Foretak som nevnt i § 3 og som oppfyller følgende vilkår kan få tilskudd:</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Foretaket har ansatte. Dette vilkåret gjelder ikke for enkeltpersonforetak og ansvarlige selskap der foretakets inntekt er innehavers eller minst en av deltagernes hovedinntekt</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Foretaket har i perioden det søkes tilskudd om hatt et stort omsetningsfall</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Foretaket utøver lovlig virksomhet</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Foretaket er ikke under konkursbehandling</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Departementet kan gi forskrift til utfylling av denne paragrafen, herunder om beregning av omsetning og omsetningsfallets størrelse, og fastsette ytterligere vilkår.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§4"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§5"></a><a name="PARAGRAF_5"></a><div data-id="PARAGRAF_5" class="morTag_p paragraf" id="PARAGRAF_5"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 5.</span><span class=" paragrafTittel "><em class=" ">Tilskuddets størrelse</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Tilskudd fastsettes på grunnlag av foretakets omsetningsfall og faste, uunngåelige kostnader i den måneden tilskuddet gjelder.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Departementet kan gi forskrift til utfylling og gjennomføring av denne paragraf. Departementet kan herunder gi regler om beregningen av tilskuddet, blant annet hvilke kostnader som omfattes, egenandel, nedskaleringsfaktor for enkelte typer kostnader, særskilte regler for egenandel og kostnader for foretak som er omfattet av statlig pålegg om stenging, øvre grenser for tilskudd som kan gjelde per måned og for hele perioden tilskuddsordningen gjelder og som kan gjelde for det enkelte foretak eller samlet for konsern samt særskilte regler for konserninterne kostnader og omsetning.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§5"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§6"></a><a name="PARAGRAF_6"></a><div data-id="PARAGRAF_6" class="morTag_p paragraf" id="PARAGRAF_6"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 6.</span><span class=" paragrafTittel "><em class=" ">Generelle forvaltningsregler</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Med de særregler som er gitt i §§ 7 til 13, gjelder skatteforvaltningsloven så langt den passer for behandling av saker etter loven her. Forvaltningsloven gjelder ikke for behandling av saker etter loven her, med unntak av forvaltningsloven kapittel VII om forskrifter.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Departementet kan gi forskrift om forvaltningsregler som skal gjelde for behandling av saker etter loven her, herunder utfylle og fravike reglene i skatteforvaltningsloven.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§6"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§7"></a><a name="PARAGRAF_7"></a><div data-id="PARAGRAF_7" class="morTag_p paragraf" id="PARAGRAF_7"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 7.</span><span class=" paragrafTittel "><em class=" ">Tilskuddsmyndighet og klageinstans</em></span></h2><p data-uid="0" class="morTag_a avsnitt">Skatteetaten er tilskuddsmyndighet etter loven. Skattekontoret treffer vedtak i første instans. Skattedirektoratet er klageinstans.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§7"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§8"></a><a name="PARAGRAF_8"></a><div data-id="PARAGRAF_8" class="morTag_p paragraf" id="PARAGRAF_8"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 8.</span><span class=" paragrafTittel "><em class=" ">Innhenting av opplysninger</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Tilskuddsmyndigheten kan uten hinder av taushetsplikt innhente opplysninger ved å pålegge offentlige myndigheter og private rettssubjekter å gi opplysninger som kan ha betydning for tilskudd etter denne loven og kontrollen av dette. Første punktum gjelder også personopplysninger.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Departementet kan gi forskrift om innhenting av opplysninger etter første ledd, herunder om hvem tilskuddsmyndigheten kan innhente opplysninger fra og hvilke opplysninger som kan innhentes.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§8"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§9"></a><a name="PARAGRAF_9"></a><div data-id="PARAGRAF_9" class="morTag_p paragraf" id="PARAGRAF_9"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 9.</span><span class=" paragrafTittel "><em class=" ">Søknad om tilskudd</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Tilskudd etter denne loven gis etter søknad. Søknaden skal inneholde opplysninger som kan ha betydning for fastsetting av tilskuddet.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Departementet kan gi forskrift om krav til søknaden, herunder om hvordan opplysninger skal gis, nærmere vilkår for leveringsmåte og format, hvilke opplysninger søknaden skal inneholde, frister og om bekreftelse av opplysninger fra revisor eller regnskapsfører.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§9"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§10"></a><a name="PARAGRAF_10"></a><div data-id="PARAGRAF_10" class="morTag_p paragraf" id="PARAGRAF_10"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 10.</span><span class=" paragrafTittel "><em class=" ">Opplysningsplikt for søkeren</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Den som søker om tilskudd etter denne loven, skal gi riktige og fullstendige opplysninger. Søkeren skal opptre aktsomt og lojalt, og skal varsle tilskuddsmyndigheten om eventuelle feil.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Departementet kan gi forskrift om bekreftelse og dokumentasjon av opplysninger fra søkeren og om opplysningsplikt for den som har mottatt tilskudd. Bestemmelsen i § 9 annet ledd gjelder tilsvarende.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§10"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§11"></a><a name="PARAGRAF_11"></a><div data-id="PARAGRAF_11" class="morTag_p paragraf" id="PARAGRAF_11"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 11.</span><span class=" paragrafTittel "><em class=" ">Vedtak om tilskudd</em></span></h2><p data-uid="0" class="morTag_a avsnitt">Tilskuddsmyndigheten treffer vedtak om fastsetting av tilskudd etter denne loven. Tilskuddsmyndigheten kan sammenstille nødvendige opplysninger og treffe vedtak som utelukkende er basert på automatisert behandling av personopplysninger.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§11"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§12"></a><a name="PARAGRAF_12"></a><div data-id="PARAGRAF_12" class="morTag_p paragraf" id="PARAGRAF_12"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 12.</span><span class=" paragrafTittel "><em class=" ">Administrative sanksjoner</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Administrativ sanksjon ilegges tilskuddsmottaker som forsettlig eller grovt uaktsomt gir tilskuddsmyndigheten uriktig eller ufullstendig opplysning, eller unnlater å gi pliktig opplysning, når vedkommende forstår eller bør forstå at det kan føre til uberettigede økonomiske fordeler.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Fristen for å ilegge administrativ sanksjon er fem år etter utløpet av den perioden vedtaket om tilskudd gjelder.</td></tr></table><a class="namedAnchor" name="a3"></a><a class="namedAnchor" name="AVSNITT_3"></a><table data-id="AVSNITT_3" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(3)</span> Administrativ sanksjon beregnes med 30 eller 60 prosent av tilskuddet som tilskuddsmottakeren uberettiget har mottatt.</td></tr></table><a class="namedAnchor" name="a4"></a><a class="namedAnchor" name="AVSNITT_4"></a><table data-id="AVSNITT_4" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(4)</span> Skatteforvaltningsloven §§ 14-8 til 14-11 gjelder tilsvarende så langt det passer. Skatteforvaltningsloven §§ 14-1 til 14-7 kommer ikke til anvendelse ved behandlingen av saker etter loven her.</td></tr></table><a class="namedAnchor" name="a5"></a><a class="namedAnchor" name="AVSNITT_5"></a><table data-id="AVSNITT_5" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(5)</span> Departementet kan gi forskrift om administrative sanksjoner.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§12"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§13"></a><a name="PARAGRAF_13"></a><div data-id="PARAGRAF_13" class="morTag_p paragraf" id="PARAGRAF_13"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 13.</span><span class=" paragrafTittel "><em class=" ">Straff</em></span></h2><p data-uid="0" class="morTag_a avsnitt">Straffeloven §§ 378 til 380 om skattesvik gjelder tilsvarende for den som mottar uberettiget tilskudd, likevel slik at bare forsettlige eller grovt uaktsomme overtredelser omfattes.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§13"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§14"></a><a name="PARAGRAF_14"></a><div data-id="PARAGRAF_14" class="morTag_p paragraf" id="PARAGRAF_14"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 14.</span><span class=" paragrafTittel "><em class=" ">Betaling og innkreving</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Departementet kan gi forskrift om betaling av tilskudd etter denne loven, herunder om krav på tilbakebetaling og innkreving av utbetalt tilskudd og om renter og administrative sanksjoner. Departementet kan også gi forskrift om hvem som er kravsmyndighet.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Krav på tilbakebetaling av tilskudd er tvangsgrunnlag for utlegg.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§14"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a name="§15"></a><a name="PARAGRAF_15"></a><div data-id="PARAGRAF_15" class="morTag_p paragraf" id="PARAGRAF_15"><h2 class="paragrafHeader"><span class=" paragrafValue ">§ 15.</span><span class=" paragrafTittel "><em class=" ">Lovens ikrafttredelse, overgangsbestemmelser</em></span></h2><a class="namedAnchor" name="a1"></a><a class="namedAnchor" name="AVSNITT_1"></a><table data-id="AVSNITT_1" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(1)</span> Loven trer i kraft straks.</td></tr></table><a class="namedAnchor" name="a2"></a><a class="namedAnchor" name="AVSNITT_2"></a><table data-id="AVSNITT_2" class="numeral morTag_an avsnitt" style="width:100%"><tr><td class="morTableVerticalAlignTop morTableAlignLeft "><span class="avsnittNummer numeral">(2)</span> Departementet kan gi forskrift om overgangsbestemmelser.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2020-04-17-23/§15"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div></div></div>
+		<ul class="pager">
+				<li class="complete">
+
+				</li>
+			<li class="previous">
+				
+			</li>
+			<li class="next ">
+
+			</li>
+		</ul>
+
+
+	</div> <!-- / Wrapper-->
+
+	<div class="modal fade" id="deleModal" tabindex="-1" role="dialog" aria-labelledby="del" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<p id="del" class="modal-title">Del dokument</p>
+				</div>
+				<div class="modal-body">
+					<input id="urlTextInput" class="form-control dele-url" value="https://lovdata.no/lov/2020-04-17-23" autoselect />
+					<a class="btn btn-primary btn-block URL" tabindex="0" role="button">Kopier URL</a>
+					<a class="btn btn-primary btn-block twitter" href="" target="_blank" role="button">Del på Twitter</a>
+					<a class="btn btn-primary btn-block facebook" href="" target="_blank" role="button">Del på Facebook</a>
+					<a class="btn btn-primary btn-block linkedin" href="" target="_blank" role="button">Del på LinkedIn</a>
+					<a class="btn btn-primary btn-block email" href="" role="button">Del på e-post</a>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</main>
+
+    <script type="text/javascript">
+		$('.btn.btn-primary.btn-block.URL').click(function() {
+			$(".btn.btn-primary.btn-block.URL").select();
+			// Copy text to clipboard
+			document.execCommand('copy');
+		});
+		$(document).ready(function () {
+            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+			if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i) || isSafari) { // iOS + Safari does not like to have this decoded
+			} else if (location.hash != '' && decodeURIComponent(location.hash) != location.hash) {
+				location.hash = decodeURIComponent(location.hash);
+			} else if (window.location.hash == '') {
+			}
+		});
+	</script>
+
+
+<aside role="region" aria-labelledby="faq" class="help closed hidden-xs">
+	<h1 class="sr-only" id="faq">Brukerveiledning</h1>
+	<div class="open-help">
+		<button aria-label="Åpne informasjon om brukerveiledning" aria-expanded="false">
+			<span aria-hidden="true" class="toggle-open ss-icon ss-symbolicons-block">&#x2753;</span>
+			<span aria-hidden="true" class="toggle-close ss-icon ss-symbolicons-block">&#x2421;</span>
+		</button>
+		<noscript>
+			<a aria-label="Gå til hjelpeside" class="open-help-noscript" href="/info/faq"></a>
+		</noscript>
+	</div>
+	<div class="help-container hiddenSidePanel" aria-hidden="true">
+		<h2>Trenger du brukerveiledning?</h2>
+		<p><a class="infolink" href="/info/faq">Få svar på ofte stilte spørsmål her (FAQ)</a></p>
+		<p>Lovdata kan dessverre ikke svare på spørsmål angående juridiske problemer. Lovdata kan heller ikke bidra med å tolke regelverket eller finne frem til rettsregler som passer i et bestemt tilfelle. Kontakt den offentlige etaten spørsmålet gjelder, eventuelt advokat eller rettshjelper hvis du har behov for slik bistand.</p>
+
+		<h2>Fant du ikke det du lette etter?</h2>
+		<p>Send en e-post til <a class="infolink" href="mailto:support@lovdata.no">support@lovdata.no</a></p>
+	</div>
+</aside>
+<footer role="contentinfo" class="footer">
+	<a href="/info/personvern#cookies" class="cookieInfo" aria-hidden="true"><i class="ss-icon ss-symbolicons-line">&#x1F36A;</i><span class="cookie-label">Om informasjonskapsler</span></a>
+	<ul class="footer-nav">
+		<li><a href="/info/information_in_english">Lovdata in English</a></li>
+		<li class="ld-hidden-xs"><p tabindex="0" class="popover-parent" data-placement="top" data-toggle="popover" data-trigger="focus hover" title="" data-content="Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.">Juster tekststørrelse<span class="sr-only">Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.</span></p></li>
+		<li class="visible-xs"><a href="/info/faq">Hjelp</a></li>
+		<li><a href="/info/kontakt">Kontakt</a></li>
+	</ul>
+</footer>
+
+	</body>
+</html>
+

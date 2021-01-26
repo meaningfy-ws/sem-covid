@@ -1,0 +1,862 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <meta charset="utf-8" />
+    <meta name="robots" content="noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Aktualni strokovni članki in komentarji novosti s pravnega področja, izbor aktualnih novic iz Slovenije in tujine, kolumne." />
+
+        <title>IUS-INFO - Medijsko središče</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PSPHB8L');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- BEGIN: Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11015730-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-11015730-1');
+    </script>
+
+    <!-- END: Google Analytics -->
+
+    <link href="/Content/css?v=w49kPcZXvcQRyP7ICB6sDujBXjbQnX_LZV2Jf-pdMAI1" rel="stylesheet"/>
+
+    <link href="/Content/cssCustom?v=bRpaGhhJ_IrdFKRAV-UkQtJspSjbyRo7tJKbNpOUQTM1" rel="stylesheet"/>
+
+
+    <script src="/bundles/jquery?v=M6dmVkrHVhoZ1gfOtvVDZbgBcQTsbWxoLsRizcGkbPk1"></script>
+
+    <script src="/bundles/jquery-ui?v=AthLZP0rjOgsBHGiIOV5yugqvEBMisgIxQ5HTWsy7-c1"></script>
+
+    <script src="/bundles/bootstrap?v=cgXAF3pFX6-ZE3qJWZbm8MxQ5YTQCDNnQSc6j1moEIo1"></script>
+
+
+    <script src="/bundles/AppUtils?v=z_JPvcfCj8CjWNaCO9V0GadyYmucARUolJYiitblT4E1"></script>
+
+    <script src="/bundles/IusInfoSearch?v=Ly7i66mE7F5R18V_NEOhsW6p-S6D7ZwvY2_3Ytt3RDo1"></script>
+
+    <script src="/bundles/IusInfoCookie?v=YfS-ksWJH-G8N-FB1A5L-QYNO7N1CjYscePJuxhgIQ01"></script>
+
+
+    
+    <meta property="og:site_name" content="IUS-INFO" />
+        <meta property="og:title" content="Medijsko središče" />
+    <meta property="og:description" content="Aktualni strokovni članki in komentarji novosti s pravnega področja, izbor aktualnih novic iz Slovenije in tujine, kolumne." />
+    <meta property="og:url" content="https://www.iusinfo.si/medijsko-sredisce/dnevne-novice" />
+        <meta property="og:image" content="https://www.iusinfo.si/Content/Images/Lexpera_logo_social.png" />
+            <meta property="og:type" content="article" />
+
+
+    <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content="Medijsko središče" />
+    <meta name="twitter:description" content="Aktualni strokovni članki in komentarji novosti s pravnega področja, izbor aktualnih novic iz Slovenije in tujine, kolumne." />
+        <meta name="twitter:image" content="https://www.iusinfo.si/Content/Images/Lexpera_logo_social.png" />
+    <meta name="twitter:site" content="@iusinfo" />
+
+    <script src="/Scripts/jquery-ui/Globalization/datepicker-sl.js"></script>
+
+    
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.iusinfo.si",
+        "logo": "https://www.iusinfo.si/Content/Images/Lexpera_logo_social.png"
+        }
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2086729761580294');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=2086729761580294&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <style type="text/css">
+        .popover {
+            background: #438A9D !important;
+            max-width: none;
+            width: 500px;
+            padding: 5px 0 5px 0;
+        }
+
+            .popover.bottom {
+                margin-top: 15px;
+            }
+
+                .popover.bottom .arrow:after {
+                    border-bottom-color: #438A9D;
+                }
+    </style>
+
+
+
+</head>
+<body class="home">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSPHB8L" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+    <script type="text/javascript">
+        $().ready(function () {
+
+            //var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+            //$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
+
+            AppUtils.init();
+
+            //$('#iusTipComments').iusTip({
+            //    tip: 18,
+            //    position: 'bottom',
+            //    width: 525,
+            //    content: '<p class="home-content-header-bold promo-advantages-header" style="border: none;">KOMENTARJI IN OPOMBE</p><p class="tip_subtitle" style="color: #fff;"><b>Komentirajte in vpisujte opombe</b></p><p class="tip_text" style="color: #fff;">Novice, kolumne in nekatere druge dnevne vsebine na portalu IUS-INFO odslej lahko <b>komentirate</b>, v dokumente pa lahko dodajate <b>opombe</b> za svojo evidenco ali svoje mnenje v njih delite z drugimi uporabniki.</p><button type="button" class="form-button-ius from-login-submit-button" style="width: 250px;">Prikaži prihodnjič</button><button type="button" class="form-button-ius from-login-submit-button" style="margin-left: 10px; width: 200px;">Ne prikaži več</button>',
+            //    moreURL: ''
+            //});
+
+            $(function () {
+                $("#lnkUserProfile").bind("click", function () {
+                    if ($("#divUserProfile").css("display") == "none") {
+                        $("#divUserProfile").slideDown("fast");
+                    }
+                    else {
+                        $("#divUserProfile").slideUp("slow");
+                    }
+                });
+                $("#lnkUserProfileIcon").bind("click", function () {
+                    if ($("#divUserProfile").css("display") == "none") {
+                        $("#divUserProfile").slideDown("fast");
+                    }
+                    else {
+                        $("#divUserProfile").slideUp("slow");
+                    }
+                });
+            });
+
+            $(document).mouseup(function (e) {
+                var container = $("#divUserProfile");
+
+                // if the target of the click isn't the container nor a descendant of the container
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.slideUp("slow");
+                }
+            });
+
+            $("#SelectLanguage").change(function () {
+
+                var UserCultureCode = $(this).val();
+                document.location.href = "/Home/ChangeLanguage/?_sUserCultureCode=" + UserCultureCode;
+
+            });
+        });
+    </script>
+
+    <!-- Header -->
+    <header id="head" class="main-header">
+        <div class="container">
+            <div class="row logo-line">
+                <div class="col-xs-4 col-sm-6 logo-container">
+                    <a class="logo" href="https://www.iusinfo.si/" title=""><img src="https://www.iusinfo.si/Content/Images/IUS-INFO_logo.svg" alt="" title="" width="180"></a>
+                </div>
+                <div class="col-xs-8 col-sm-6 login-register ">
+                            <span class="user-login-img">
+                                <a href="https://www.iusinfo.si/Login?ReturnUrl=%2Fmedijsko-sredisce%2Fdnevne-novice"><span class="li li-lock li-login" aria-hidden="true"></span></a>
+                            </span>
+                            <span class="user-login-text">
+                                <a href="https://www.iusinfo.si/Login?ReturnUrl=%2Fmedijsko-sredisce%2Fdnevne-novice">Prijava</a>
+                            </span>
+                            <span id="lnkUserRegisterIcon" class="login-img">
+                                <a href="https://www.iusinfo.si/o-portalu/nov-uporabnik"><span class="li li-person li-login" aria-hidden="true"></span></a>
+                            </span>
+                            <span id="lnkUserRegister" class="user-login-text">
+                                <a href="https://www.iusinfo.si/o-portalu/nov-uporabnik">Nov uporabnik</a>
+                            </span>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+    <!-- content -->
+    <div class="content-wrapper">
+        
+
+        
+
+
+
+<script src="/bundles/IusInfoPublication?v=ncd_ZfmGkEGTZkQKn_yDxa877_dVneAKV76hWiOyEmY1"></script>
+
+<script src="/bundles/IusInfoUser?v=fAQ1276Mq6k-PWk4Awu9U4kdOe7TU3hL7bhixyQ5d0U1"></script>
+
+<script src="/bundles/IusInfoUIDocument?v=5CLHHcKd-b8FvTfILnkcRcRbiuLt22ck9XKKZ-rVCeY1"></script>
+
+
+<script type="text/javascript">
+    $().ready(function () {
+
+        $("#Filter_Articles_Author_DropDown").change(function () {
+            if ($("#Filter_Articles_Author_DropDown option:selected").val() != "*") {
+                window.location.replace("/medijsko-sredisce/kolumne/avtor/" + $("#Filter_Articles_Author_DropDown option:selected").val());
+            }
+            else {
+                window.location.replace("/medijsko-sredisce/kolumne/");
+            }
+        });
+
+        // set textbox for comments
+        if ($("#UIDocumentContentComments").length > 0) {
+
+            //sort comments
+            $(".row[article]").each(function () {
+                var html = $(this);
+                $(this).remove();
+                $("#UIDocumentContentComments").prepend(html);
+            });
+
+            // set textbox
+            $(document).on("focus", ".txtAddComment", function () {
+                if ($(this).val() == 'Dodaj novo opombo...' || $(this).val() == 'Dodaj nov komentar...')
+                    $(this).val('');
+                $(this).css({ 'color': '#484848' });
+                $(this).css({ 'font-weight': 'normal' });
+                $(this).attr('rows', '4');
+                var commentArticle = $(this).attr("article");
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").css({ 'display': 'inline' });
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").next().css({ 'display': 'inline' });
+                $(".txtAddComment[article='" + commentArticle + "']").parent().removeClass("contract");
+            });
+
+            $(document).on("blur", ".txtAddComment", function () {
+                if ($(this).val().length == 0) {
+                    if ($(".txtAddComment").hasClass("txtAddComment_small"))
+                        $(this).val('Dodaj nov komentar...');
+                    else
+                        $(this).val('Dodaj novo opombo...');
+                    $(this).css({ 'color': '#D2CECC' });
+                    $(this).css({ 'font-weight': 'bold' });
+                    $(this).parent().children("div").last().children(".btnAddComment").val("Shrani");
+                    $(this).removeAttr("commentid");
+                    //$(this).attr('rows', '1');
+                    //$(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").css({ 'display': 'none' });
+                    //$(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").next().css({ 'display': 'none' });
+                    //$(".txtAddComment[article='" + commentArticle + "']").parent().addClass("contract");
+                }
+            });
+
+            $(document).on("click", ".divAddComment", function (e) {
+                e.stopPropagation();
+            });
+
+            $(document).on("click", ".chkPublicComment", function (e) {
+                e.stopPropagation();
+                var commentArticle = $(this).attr("article");
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").css({ 'display': 'inline' });
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").next().css({ 'display': 'inline' });
+                $(".txtAddComment[article='" + commentArticle + "']").parent().removeClass("contract");
+            });
+
+            $(window).click(function() {
+                if ($(".txtAddComment[article]").val() == "Dodaj novo opombo...") {
+                    $(".txtAddComment[article]").attr('rows', '1');
+                    $(".txtAddComment[article]").next(".divCommentPublic").css({ 'display': 'none' });
+                    $(".txtAddComment[article]").next(".divCommentPublic").next().css({ 'display': 'none' });
+                    $(".txtAddComment[article]").parent().addClass("contract");
+                    $(".chkPublicComment[article]").prop('checked', false);
+                    $(".chkPublicComment[article]").parent().removeClass('active');
+                    $(".chkPublicComment[article]").parent().parent().parent().removeClass('dynatree-selected');
+                    $(".txtAddComment[article]").parent().children("div").last().children(".btnAddComment").val("Shrani");
+                    $(".txtAddComment[article]").parent().children("div").last().children(".btnAddComment").text("Shrani");
+                }
+            });
+
+            $(document).on("click", "span.dynatree-checkbox, span.dynatree-node a", function () {
+                if ($(this).parent().hasClass('dynatree-selected')) {
+                    $(this).find('input').prop('checked', false);
+                    $(this).closest('label').removeClass('active');
+                    $(this).closest('span.dynatree-node').removeClass('dynatree-selected');
+                } else {
+                    $(this).find('input').prop('checked', true);
+                    $(this).closest('label').addClass('active');
+                    $(this).closest('span.dynatree-node').addClass('dynatree-selected');
+                }
+            });
+
+            // hover comment, show icons to edit or delete comment
+            $(document).on("mouseover", ".row[article]", function (e) {
+                e.preventDefault();
+                $(this).children().children().children(".lnkEditComment").css({ 'display': 'inline' });
+                $(this).children().children().children(".lnkDeleteComment").css({ 'display': 'inline' });
+            });
+            $(document).on("mouseleave", ".row[article]", function (e) {
+                e.preventDefault();
+                $(this).children().children().children(".lnkEditComment").css({ 'display': 'none' });
+                $(this).children().children().children(".lnkDeleteComment").css({ 'display': 'none' });
+            });
+
+            // add new comment or update existing one
+            $(document).on("click", ".btnAddComment", function (event) {
+                event.preventDefault();
+                var commentTitle = $(".home-media-news-title").text();
+                var commentArticle = $(this).parent().parent().parent().attr("article");
+                var commentText = $(".txtAddComment[article='" + commentArticle + "']").val();
+                var commentPublic = false;
+                if ($(".chkPublicComment[article='" + commentArticle + "']").parent().parent().parent().hasClass('dynatree-selected')) {
+                    commentPublic = true;
+                }
+                var commentSOPI = '';
+                var commentClassification = 'II.DnevneVsebine.NOVICE_SI';
+
+                if (commentText.length > 0 && commentText != "Dodaj novo opombo..." && commentText != "Dodaj nov komentar...") {
+                    if ($(".txtAddComment[article='" + commentArticle + "']").parent().children("div").last().children(".btnAddComment").val() == "Popravi") {
+                        var commentID = $(".txtAddComment[article='" + commentArticle + "']").attr("commentid");
+                        IusInfoUIDocument.updateComment(commentID, commentArticle, commentText, commentPublic, commentSOPI);
+                    }
+                    else
+                        IusInfoUIDocument.addComment(commentTitle, commentArticle, commentText, commentPublic, commentSOPI, commentClassification);
+                }
+                $(".txtAddComment[article='" + commentArticle + "']").attr('rows', '1');
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").css({ 'display': 'none' });
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").next().css({ 'display': 'none' });
+                $(".txtAddComment[article='" + commentArticle + "']").parent().addClass("contract");
+            });
+
+            // cancel adding or updating comment
+            $(document).on("click", ".btnCancelComment", function (event) {
+                event.preventDefault();
+                var commentArticle = $(this).parent().parent().parent().attr("article");
+                $(".txtAddComment[article='" + commentArticle + "']").val('Dodaj novo opombo...');
+                $(".txtAddComment[article='" + commentArticle + "']").css({ 'color': '#D2CECC' });
+                $(".txtAddComment[article='" + commentArticle + "']").css({ 'font-weight': 'bold' });
+                $(".txtAddComment[article='" + commentArticle + "']").parent().children("div").last().children(".btnAddComment").val("Shrani");
+                $(".txtAddComment[article='" + commentArticle + "']").parent().children("div").last().children(".btnAddComment").text("Shrani");
+                $(".chkPublicComment[article='" + commentArticle + "']").prop('checked', false);
+                $(".chkPublicComment[article='" + commentArticle + "']").parent().removeClass('active');
+                $(".chkPublicComment[article='" + commentArticle + "']").parent().parent().parent().removeClass('dynatree-selected');
+
+                $(".divAddComment[article='" + commentArticle + "'] input:checkbox").prop('checked', false);
+                if (commentArticle != "0" && !$(".row[article='" + commentArticle + "']").is(":visible")) {
+                    $(".divAddComment[article='" + commentArticle + "']").toggle();
+                }
+
+                $(".txtAddComment[article='" + commentArticle + "']").attr('rows', '1');
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").css({ 'display': 'none' });
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").next().css({ 'display': 'none' });
+                $(".txtAddComment[article='" + commentArticle + "']").parent().addClass("contract");
+            });
+
+            // edit document/article comment
+            $(document).on('click', '.lnkEditComment', function (event) {
+                event.preventDefault();
+                var commentID = $(this).attr("id");
+                var commentArticle = $(this).parent().parent().parent().attr("article");
+
+                // replace breaks with \n
+                var sText = $("div[commentid='" + commentID + "']").children("div").first().children().children(".divListCommentEditableContent").clone();
+                sText.find("br").replaceWith("\n");
+                sText = sText.text();
+
+                // set input form fields
+                $(".txtAddComment[article='" + commentArticle + "']").css({ 'color': '#484848' });
+                $(".txtAddComment[article='" + commentArticle + "']").css({ 'font-weight': 'normal' });
+                $(".txtAddComment[article='" + commentArticle + "']").val(sText);
+                $(".txtAddComment[article='" + commentArticle + "']").attr("commentid", commentID);
+                $(".txtAddComment[article='" + commentArticle + "']").parent().children("div").last().children(".btnAddComment").val("Popravi");
+                $(".txtAddComment[article='" + commentArticle + "']").parent().children("div").last().children(".btnAddComment").text("Popravi");
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").css({ 'display': 'inline' });
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").next().css({ 'display': 'inline' });
+                $(".txtAddComment[article='" + commentArticle + "']").parent().removeClass("contract");
+                $(".txtAddComment[article='" + commentArticle + "']").attr('rows', '4');
+
+                if ($("div[commentid='" + commentID + "']").attr("public") == "true") {
+                    $(".chkPublicComment[article='" + commentArticle + "']").prop('checked', true);
+                    $(".chkPublicComment[article='" + commentArticle + "']").parent().addClass('active');
+                    $(".chkPublicComment[article='" + commentArticle + "']").parent().parent().parent().addClass('dynatree-selected');
+                } else {
+                    $(".chkPublicComment[article='" + commentArticle + "']").prop('checked', false);
+                    $(".chkPublicComment[article='" + commentArticle + "']").parent().removeClass('active');
+                    $(".chkPublicComment[article='" + commentArticle + "']").parent().parent().parent().removeClass('dynatree-selected');
+                }
+
+                setTimeout(function () {
+                    $("html,body").animate({ scrollTop: $(".txtAddComment[article='" + commentArticle + "']").offset().top - $("#UIDocumentToolbar").height() - 84 }, "fast");
+                });
+            });
+
+            // delete document/article comment
+            $(document).on('click', '.lnkDeleteComment', function (event) {
+                var result = confirm("Ste prepričani, da želite zbrisati opombo/komentar?");
+                if (result) {
+                    event.preventDefault();
+                    var commentID = $(this).attr("id");
+                    var commentArticle = $(this).parent().parent().parent().attr("article");
+
+                    IusInfoUIDocument.deleteComment(commentID, commentArticle);
+                }
+                $(".txtAddComment[article='" + commentArticle + "']").attr('rows', '1');
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").css({ 'display': 'none' });
+                $(".txtAddComment[article='" + commentArticle + "']").next(".divCommentPublic").next().css({ 'display': 'none' });
+                $(".txtAddComment[article='" + commentArticle + "']").parent().addClass("contract");
+            });
+        }
+
+        //collapsing icon
+        $(window).resize(function () {
+            IusInfoPublication.publicationLinksFilterContainer('FilterPublicationLinks', 'linksMainContainer', 'FilterPublicationContainer', 'divLinksToggle');
+        });
+
+        //Init:
+        var isSmaller = IusInfoPublication.publicationLinksFilterContainer('FilterPublicationLinks', 'linksMainContainer', 'FilterPublicationContainer', 'divLinksToggle');
+    });
+</script>
+
+<div class="search-header">
+    <input id="CurrentPage" name="CurrentPage" type="hidden" value="1" />
+    <input id="CurrentResultElementId" name="CurrentResultElementId" type="hidden" value="" />
+    <input id="CurrentFrameId" name="CurrentFrameId" type="hidden" value="4" />
+    <div class="container">
+        <div class="search-frame">
+            <div class="row">
+                <div class="col-sm-12 search-box-row">
+                    <!-- inline search -->
+
+
+
+<script type="text/javascript">
+
+    $().ready(function () {
+        IusInfoSearch.init('20');
+    })
+
+</script>
+
+<form action="/medijsko-sredisce/iskanje" id="InlineSearchForm" method="post"><input id="CategoryAddress" name="CategoryAddress" type="hidden" value="" /><input data-val="true" data-val-required="The FromSearchPage field is required." id="FromSearchPage" name="FromSearchPage" type="hidden" value="False" /><input id="SearchTypeRedirect" name="SearchTypeRedirect" type="hidden" value="MediaCentre" />    <div class="inline-search-form  ">
+
+        <input id="SearchQuery" name="SearchQuery" type="search" class="search-inline-input" placeholder="Išči …" value="" />
+        
+        <a id="buInlineSearchClear" class="search-inline-button-clear li" style=" display: none; " href="#">c</a>
+        <a id="buInlineSearch" class="search-inline-button li" href="#">&#83;</a>
+    </div>
+</form>
+                    <!-- /inline search -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="linksMainContainerParent" class="advanced-filters-form">
+        <div class="links-toggle" style="display:none;" id="divLinksToggle" onclick="IusInfoPublication.publicationLinksFilterToggle('arrow-links-toggle', 'linksMainContainer', 'Odpri', 'Zapri')">
+            <div class="advanced-line"></div>
+            <span>Povezave</span>
+            <span class="arrow-links-toggle" title="Odpri"><img src="/Content/Images/downarrow.svg" width="17" alt="Odpri" /></span>
+            <div class="advanced-line"></div>
+        </div>
+        <div id="linksMainContainer" class="linksMainContainer container" style="display: none"></div>
+    </div>
+
+    <div class="margin-top-bottom"></div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-8 search-result-container">
+                <div id="PublicationSearchListContent" class="search-result">
+                            <div class="home-media-news-header">
+                                <span class="home-content-header-bold home-media-news-header-title">DNEVNE NOVICE</span>
+                                <img class="home-media-news-header-icon-bottom" src="/Content/Images/dnevne-novice-icon.svg" />
+                            </div>
+
+
+
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-6">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278265">Vlada sprejela predlog PKP8</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Vlada je na ponedeljkovi dopisni seji sprejela predlog osmega protikoronskega zakona, ki med drugim prina&scaron;a podalj&scaron;anje subvencioniranja čakanja na delo do konca aprila z možnostjo podalj&scaron;anja &scaron;e za dvakrat po en mesec in prevzem dela bremena dviga minimalne plače od delodajalcev na pleča države.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 07:05</span>
+                    </div>
+                    <div class="col-sm-6" style="text-align: right;">
+                            <img class="home-media-news-image" src="/ExternalImages/STAFoto/lxp20210115105938.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278314">Na Nizozemskem nova noč izgredov zaradi policijske ure</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Amsterdam, 26. januarja (STA) - Nizozemska je bila v ponedeljek zvečer znova priča izgredom nasprotnikov prepovedi gibanja v nočnem času, s katerim želi vlada omejiti &scaron;irjenje novega koronavirusa. Policija se je v več mestih po državi spopadla s protestniki, proti katerim je med drugim uporabila solzivec in opozorilne strele. Prijetih je bilo najmanj 184 ljudi.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 13:26</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278312">V ponedeljek potrdili 1652 okužb z novim koronavirusom, umrlo 27 covidnih bolnikov</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 26. januarja (STA) - V ponedeljek so v Sloveniji po vladnih podatkih opravili 35.092 testov in potrdili 1652 okužb z novim koronavirusom. V bolni&scaron;nicah se zdravi 1157 covidnih bolnikov, 192 jih potrebuje intenzivno terapijo. Umrlo pa je 27 covidnih bolnikov.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 13:25</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278310">Avtobusni potniški promet spet po običajnem voznem redu</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 26. januarja (STA) - Z dana&scaron;njim začetkom pouka v prvem triletju osnovnih &scaron;ol medkrajevni avtobusni javni potni&scaron;ki promet spet deluje po običajnem voznem redu. Obvezno je upo&scaron;tevanje priporočil Nacionalnega in&scaron;tituta za javno zdravje (NIJZ) glede no&scaron;enja mask, razkuževanja rok, zasedenosti ter vstopanja in izstopanja iz vozil, je objavila vlada.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 13:22</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278305">Sojenje za umor na Polzeli preklicano zaradi okužbe v zaporu</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Celje, 26. januarja (STA) - Celjsko sodi&scaron;če je preklicalo dana&scaron;nje sojenje za Andreja Vr&scaron;čaja s Polzele, ki ga obtožnica bremeni umora na zahrbten način februarja lani, ko naj bi na Polzeli umoril 69-letnega mo&scaron;kega. V celjskih zaporih, kjer je Vr&scaron;čaj v priporu, se je namreč pojavila okužba z novim koronavirusom, so povedali na upravi za izvr&scaron;evanje kazenskih sankcij.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 12:35</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278302">AstraZeneca se brani očitkov o nizki učinkovitosti cepiva pri starejših</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Bruselj/Berlin, 26. januarja (STA) - Podjetje AstraZeneca je stopilo v bran svojemu cepivu proti covidu-19, potem ko so se v medijih pojavila poročila o dvomih nem&scaron;ke vlade v njegovo učinkovitost pri starej&scaron;ih. V pričakovanju skoraj&scaron;nje odobritve cepiva v EU Evropska komisija in podjetje sicer &scaron;e nista re&scaron;ila spora glede napovedanih zamud pri dobavi. Pogovore nadaljujeta v sredo.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 12:34</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278289">US zadržalo določbo PKP6 glede podaljševanja akreditacij visokošolskim zavodom</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 26. januarja (STA) - Ustavno sodi&scaron;če je do končne odločitve zadržalo izvajanje določbe <a href="/zakonodaja/ziuopdve">&scaron;estega protikoronskega zakona</a>, ki ureja podalj&scaron;evanje akreditacij visoko&scaron;olskim zavodom. Do končne odločitve so prekinjeni tudi postopki za podalj&scaron;anje akreditacij po <a href="/zakonodaja/zvis">visoko&scaron;olskem zakonu</a>, ne vodi se niti postopkov izredne evalvacije visoko&scaron;olskih zavodov, so odločili soglasno.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 10:10</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278274">DZ o rešitvah za učinkovite postopke mednarodne zaščite</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 26. januarja (STA) - Poslanke in poslanci se bodo danes lotili zakonodajnih predlogov o tujcih in o mednarodni za&scaron;čiti. Novela zakona o tujcih v slovenski pravni red vna&scaron;a pravila o pogojih za vstop in prebivanje državljanov tretjih držav, vladni predlog novele zakona o mednarodni za&scaron;čiti pa naj bi zagotovil hitre in učinkovite postopke mednarodne za&scaron;čite.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 07:49</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278273">Danes se v devetih regijah v šolo vračajo učenci prvega triletja in vrtčevski otroci</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 26. januarja (STA) - Po skoraj treh mesecih &scaron;olanja na daljavo in kljub odkritemu angle&scaron;kemu sevu novega koronavirusa se danes v devetih regijah v &scaron;ole znova vračajo učenci prvega triletja, vrtci pa začenjajo znova sprejemati vse otroke. Pred tem so se morali vsi zaposleni, ki bodo fizično prisotni v &scaron;olah in vrtcih, testirati. To bodo morali ponavljati vsak teden.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 07:48</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278275">V prvem dnevu testiranja šolnikov okužbo s koronavirusom potrdili pri 278 osebah</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 25. januarja (STA) - V prvem dnevu testiranja zaposlenih v vzgoji in izobraževanju so okužbo s koronavirusom potrdili pri 278 osebah. Do 21. ure so sicer opravili 20.673 hitrih testov, ki so zabeleženi v Centralnem registru podatkov o pacientih. Delež pozitivnih testov je 1,3-odstoten, so sporočili iz ministrstva za zdravje.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">26.01.2021 07:09</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278280">Bruselj predstavil posodobljene smernice za pripravo načrtov za okrevanje</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Bruselj, 25. januarja (STA) - Evropska komisija je po decembrskem političnem dogovoru o mehanizmu za okrevanje in odpornost članicam predstavila posodobljene smernice za pripravo nacionalnih načrtov za okrevanje po pandemiji covida-19. Države bodo morale npr. dokazati, da načrti vsebujejo vsaj 37 odstotkov sredstev za podnebne cilje in 20 odstotkov za digitalni prehod.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 19:55</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278276">Krepitev naporov na ravni EU za zaščito otrok pred zlorabami prek spleta</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 25. januarja (STA) - Minister za notranje zadeve Ale&scaron; Hojs se je danes na virtualnem srečanju Internetnega foruma EU, ki ga je sklicala Evropska komisija, zavzel za okrepitev naporov za za&scaron;čito otrok pred spolnimi zlorabami prek spleta. To je sicer tudi ena od prednostnih nalog predsedovanja Slovenije Svetu EU v drugi polovici leta.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 19:50</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278277">Za EU poteza Londona glede statusa veleposlanika "neprijateljska"</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Bruselj, 25. januarja (STA) - Odločitev Združenega kraljestva, da veleposlaniku EU v Londonu ne zagotovi polnega diplomatskega statusa, ki ga imajo drugi veleposlaniki, je "neprijateljska" in ne ustvarja dobrih obetov za prihodnje sodelovanje, je danes v Bruslju poudaril visoki zunanjepolitični predstavnik unije Josep Borrell.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 19:50</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278282">V EU vse bolj zaskrbljeni zaradi novih sevov koronavirusa</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Bruselj/Pariz/Berlin, 25. januarja (STA) - V EU vlada vse večja zaskrbljenost zaradi novih, bolj nalezljivih sevov novega koronavirusa. Evropska komisija je zaradi tega odsvetovala potovanja na epidemiolo&scaron;ko zelo tvegana območja v uniji. Pred nevarnostjo novih sevov svarijo tudi v Nemčiji in Franciji. Iz podjetja Moderna so sporočili, da je njihovo cepivo učinkovito tudi proti tem sevom.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 18:55</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278283">EU pri dobavi cepiv od AstraZenece zahteva spoštovanje pogodbe</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Bruselj, 25. januarja (STA) - Evropska komisija je danes od družbe AstraZeneca, ki je konec minulega tedna napovedala zamude pri dobavi cepiva, predvidenega v prvem četrtletju, zahtevala spo&scaron;tovanje pogodbenih obveznosti. Članice EU so s predstavniki podjetja o tem danes razpravljale na zasedanju usmerjevalnega odbora, a odgovori podjetja &scaron;e niso zadovoljivi.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 18:55</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278284">Vlada z več proračunskimi prerazporeditvami za kritje stroškov epidemije</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 25. januarja (STA) - Vlada je danes v leto&scaron;njem državnem proračunu prerazporedila sredstva, ki so potrebna za kritje izdatkov, povezanih s pomočjo po protikoronskih zakonih. Gre med drugim za izplačila kriznega dodatka v javnem sektorju, nadomestila plače za čakanje na delo in zaradi odrejene karantene, fiksnih stro&scaron;kov podjetij in mesečnega temeljnega dohodka.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 18:55</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278268">NIJZ in svetovalna skupina podpirata delno vračanje v OŠ in polno delovanje vrtcev</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 25. januarja (STA) - Epidemiologi Nacionalnega in&scaron;tituta za javno zdravje (NIJZ) in svetovalna skupina za covid-19 pri ministrstvu za zdravje po oceni novega položaja zaradi odkritja angle&scaron;ke različice novega koronavirusa &scaron;e vedno podpirajo odprtje prvega triletja osnovnih &scaron;ol in polno delovanje vrtcev v devetih regijah, je na Twitterju zapisal premier Janez Jan&scaron;a.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 17:21</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278267">Inštitut za mikrobiologijo potrdil angleški sev virusa pri treh vzorcih</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Ljubljana, 25. januarja (STA) - In&scaron;titut za mikrobiologijo in imunologijo medicinske fakultete Univerze v Ljubljani je pri treh od 291 vzorcev iz osrednjeslovenske regije, ki so jih vključili v gensko sekvenciranje in so bili vzeti med 1. in 14. januarjem letos, dokazali vse specifične mutacije značilne za angle&scaron;ki sev, pi&scaron;e na njihovi spletni strani.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 17:08</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278266">Sojenje Winterkornu zaradi domnevne goljufije šele aprila</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Frankfurt, 25. januarja (STA) - Sodni proces proti nekdanjemu prvemu možu Volkswagna Martinu Winterkornu se bo začel dva meseca kasneje od dosedanjih načrtov. Namesto 25. februarja bo stekel 20. aprila, je danes sporočilo deželno sodi&scaron;če v nem&scaron;kem Braunschweigu. Winterkorn se bo moral zagovarjati zaradi obtožb o goljufiji.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 17:08</span>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: solid #EEEEEE 1px; margin-bottom: 10px;">
+                    <div class="col-sm-12">
+                        <span class="home-content-docnumlabel-bold margin-bottom" style="margin-top: 0px;">
+                            <a href="/medijsko-sredisce/dnevne-novice/278263">Bruselj odločno odsvetuje nenujna potovanja na zelo tvegana območja in z njih</a>
+                        </span>
+                            <span class="home-content-docnumlabel margin-bottom">Bruselj, 25. januarja (STA) - Evropska komisija je danes priporočila uvedbo temno rdeče kategorije za opredelitev epidemiolo&scaron;ko zelo tveganih območij v EU ter ob tem odločno odsvetovala vsa nenujna potovanja na ta območja in z njih. Članice EU je pozvala, naj se čim prej dogovorijo o priporočilih, ki sicer niso zavezujoča. Prvič članice o tem razpravljajo že danes.</span>
+                        <span class="home-content-docnumlabel home-media-news-item-date" style="margin: 0px 0 10px 0; padding-bottom: 0px;">25.01.2021 16:52</span>
+                    </div>
+                </div>
+
+                </div>
+
+                    <div class="row" id="ShowMoreSearchResults">
+                        <div class="col-xs-12">
+                            <div class="ShowEntireDocument">
+
+                                <a onclick="IusInfoPublication.showMorePublicationResults(event)" class="ShowEntireDocumentButton" href="https://www.iusinfo.si/medijsko-sredisce/dnevne-novice?pg=2" style="overflow-anchor: none;"><span class="ShowEntireDocumentText">Prikaži več zadetkov</span></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4 search-right-frame" id="FilterPublicationContainer">
+                <div id="FilterPublicationLinks">
+                    <div class="border-top-big-nomargin"></div>
+                    <div class="home-content-header menu-right-bold"><a href="/medijsko-sredisce/dnevne-novice">Dnevne novice</a></div>
+                    <div class="home-content-header menu-right"><a href="/medijsko-sredisce/v-srediscu">V središču</a></div>
+                    <div class="home-content-header menu-right"><a href="/medijsko-sredisce/kolumne">Kolumne</a></div>
+                    <div class="home-content-header menu-right"><a href="/medijsko-sredisce/tednik">Tednik IUS-INFO</a></div>
+                    <div class="home-content-header menu-right"><a href="/medijsko-sredisce/10-najvplivnejsih-pravnikov">10 najvplivnejših pravnikov</a></div>
+                    <div class="home-content-header menu-right"><a href="/Multimedia">Multimedijski arhiv</a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <!-- /content -->
+    <!-- footer -->
+    <footer id="footer" class="main-footer">
+        <div class="container">
+            <div class="row main-footer-row">
+                <div class="col-lg-3 col-sm-12">
+                    <img class="FooterLogo" alt="Lexpera" src="/Content/Images/LEXPERA_Soustvarjamo-pravo_logo.svg">
+                    <div class="main-footer-text">Z izjemnim prepletanjem vsebin Lexpera združuje vrhunske spletne in tiskane blagovne znamke ter odmevne strokovne dogodke. Hitro rastoče mednarodno podjetje predstavljamo ljudje, izvrstni strokovnjaki, ki iščemo in razvijamo sodobne rešitve ter sledimo našemu največjemu dosežku – pridobljenemu zaupanju. Zaščitni znak Lexpere pa ste vi, zadovoljni in zvesti uporabniki.</div>
+                    <div class="margin-top">
+                        <div class="main-footer-text footer-contacts-left">Lexpera d.o.o.</div>
+                        <div class="main-footer-text footer-contacts-right">T: 01 431 22 66</div>
+                    </div>
+                    <div>
+                        <div class="main-footer-text footer-contacts-left">Tivolska 50</div>
+                        <div class="main-footer-text footer-contacts-right">M: <a href="mailto:info@lexpera.si" class="WhiteLinkSmall">info@lexpera.si</a></div>
+                    </div>
+                    <div>
+                        <div class="main-footer-text footer-contacts-left">1000 Ljubljana</div>
+                        <div class="main-footer-text footer-contacts-right">&nbsp;</div>
+                    </div>
+                    <div class="margin-top-bottom"><a href="https://www.iusinfo.si/o-portalu/kaj-je-ius-info" class="WhiteLinkSmall">Več o nas ...</a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                            <div style="margin-bottom: 17px;"><strong><a href="https://www.iusinfo.si/promocija/zakonodaja" class="WhiteLink">VSEBINA</a></strong></div>
+                            <div><a href="https://www.iusinfo.si/promocija/zakonodaja#cistopisi-zakonov" class="WhiteLinkSmall">Čistopisi zakonov</a></div>
+                            <div><a href="https://www.iusinfo.si/promocija/zakonodaja#komentarji-zakonov" class="WhiteLinkSmall">Komentarji zakonov</a></div>
+                            <div><a href="https://www.iusinfo.si/promocija/zakonodaja#ustavno-sodisce-rs" class="WhiteLinkSmall">Sodna praksa</a></div>
+
+                    <div><a href="https://www.iusinfo.si/promocija/literatura#Pravna-praksa" class="WhiteLinkSmall">Revija Pravna praksa</a></div>
+                    <div><a href="https://www.iusinfo.si/promocija/literatura#Podjetje-in-delo" class="WhiteLinkSmall">Revija Podjetje in delo</a></div>
+                    <div><a href="https://www.iusinfo.si/promocija/literatura#Delavci-in-Delodajalci" class="WhiteLinkSmall">Revija Delavci in delodajalci</a></div>
+                    <div><a href="https://www.iusinfo.si/promocija/literatura#Odvetnik" class="WhiteLinkSmall">Revija Odvetnik</a></div>
+                            <div><a href="https://www.iusinfo.si/promocija/zakonodaja#uradni-list-rs" class="WhiteLinkSmall">Uradni list RS</a></div>
+                            <div><a href="https://www.iusinfo.si/promocija/zakonodaja#uradni-list-eu" class="WhiteLinkSmall">Uradni list EU</a></div>
+                            <div><a href="https://www.iusinfo.si/promocija/zakonodaja#sodna-praksa" class="WhiteLinkSmall">Predpisi EU</a></div>
+
+                    <div><a href="https://www.iusinfo.si/zakonodajna-knjiznica" class="WhiteLinkSmall">Zakonodajna knjižnica</a></div>
+                            <div><a href="https://www.iusinfo.si/medijsko-sredisce/dnevne-novice" class="WhiteLinkSmall">Medijsko središče</a></div>
+
+                    <div><a href="https://www.iusinfo.si/promocija/o-novem-portalu" class="WhiteLinkSmall">Več ...</a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div style="margin-bottom: 17px;"><strong><a href="https://www.iusinfo.si/promocija/o-novem-portalu" class="WhiteLink">PRIPOMOČKI</a></strong></div>
+                    <div><a href="https://www.iusinfo.si/promocija/ius-alert" class="WhiteLinkSmall">IUS Alert</a></div>
+                    <div><a href="https://www.iusinfo.si/promocija/zakonodajna-sled" class="WhiteLinkSmall">IUS-INFO Zakonodajna sled</a></div>
+                    <div><a href="/Tools/Index?Type=SalaryCalculation" class="WhiteLinkSmall">Izračun plače</a></div>
+                    <div><a href="/Tools/Index?Type=SalaryEnforcement" class="WhiteLinkSmall">Izračun izvršbe na plačo</a></div>
+                    
+                    <div><a href="/Tools/Index?Type=ChildBenefit" class="WhiteLinkSmall">Izračun otroškega dodatka</a></div>
+                    <div><a href="/Tools/Index?Type=RoyaltyPayment" class="WhiteLinkSmall">Izračun avtorskega honorarja</a></div>
+                    <div><a href="/Tools/Index?Type=TravelExpenses" class="WhiteLinkSmall">Izračun potnih stroškov</a></div>
+                    <div><a href="/Tools/Index?Type=ServiceContract" class="WhiteLinkSmall">Izračun podjemne pogodbe</a></div>
+                    <div><a href="/Tools/Index?Type=LatePaymentInterest" class="WhiteLinkSmall">Izračun zamudnih obresti</a></div>
+                    
+                    <div><a href="http://www.forumpravniki.si/" target="_blank" class="WhiteLinkSmall">Forum PRAVNIKI</a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div style="margin-bottom: 17px;"><strong><a href="https://www.iusinfo.si/o-portalu/paketi" class="WhiteLink">O PORTALU</a></strong></div>
+                    <div><a href="https://www.iusinfo.si/o-portalu/paketi" class="WhiteLinkSmall">Cene in uporabniški paketi</a></div>
+                    <div><a href="https://www.iusinfo.si/o-portalu/paket-javno-narocanje" class="WhiteLinkSmall">Paket javno naročanje</a></div>
+                    <div><a href="https://www.iusinfo.si/o-portalu/za-studente" class="WhiteLinkSmall">Za študente</a></div>
+                    
+                    <div><a href="/download/Splosni_pogoji_uporabe.pdf" target="_blank" class="WhiteLinkSmall">Splošni pogoji</a></div>
+                    <div><a href="/download/Izjava_o_varstvu_osebnih_podatkov.pdf" target="_blank" class="WhiteLinkSmall">Izjava o varstvu podatkov</a></div>
+                    <div class="margin-top"><span>Pomoč uporabnikom:</span></div>
+                    <div><strong><span class="footer-contacts-phone">01 438 01 80</span></strong></div>
+                    <div class="margin-top"><a href="https://www.iusinfo.si/o-portalu/kontaktni-obrazec" class="WhiteLinkSmall">Kontaktni obrazec</a></div>
+                    <div class="footer-button margin-top-bottom">
+                        <button class="form-button-ius form-button-ius-home form-button-ius-red form-button-ius-footer" style="margin: 0;" onclick="window.location='https://www.iusinfo.si/o-portalu/nov-uporabnik'">Preizkusi brezplačno</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="minifooter">
+        <div class="container">
+            <div class="row" id="container2">
+                <div class="col-xs-12 col-sm-6 footer-copyright">
+                    <p class="MiniFooter">&copy; 1989-2021 LEXPERA d.o.o. Vse pravice pridržane.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 footer-social-media-buttons">
+                        <a href="https://www.facebook.com/ius.info/" target="_blank"><span class="li li-facebook li-white li-size-lg" aria-hidden="true" title="IUS-Info Facebook"></span></a>
+                        <a href="https://twitter.com/ius_info" target="_blank"><span class="li li-twitter li-white li-size-lg" aria-hidden="true" title="IUS-Info Twitter"></span></a>
+                        <a href="https://plus.google.com/103245883447521408112" target="_blank"><span class="li li-google li-white li-size-lg" aria-hidden="true" title="IUS-Info Google+"></span></a>
+                        <a href="https://www.linkedin.com/showcase/ius-info/" target="_blank"><span class="li li-linkedin li-white li-size-lg" aria-hidden="true" title="IUS-Info LinkedIn"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // notifications - show message bar
+        var message = '';
+        if (message != '') {
+            var image = '';
+            var type = '' + 'MessageBar';
+            var duration = '';
+
+            // hack for IE lower versions
+            if (isIE() != false && isIE() < 9) {
+                var msg = "";
+                msg += "<div id='" + type + "'>";
+                msg += image + " " + message;
+                msg += "</div>";
+                var fragment = create(msg);
+                document.body.insertBefore(fragment, document.body.childNodes[0]);
+            }
+            else {
+                ShowMessageBar(message, type, image, duration);
+            }
+        }
+
+        // create div - hack for IE lower versions
+        function create(htmlStr) {
+            var frag = document.createDocumentFragment(),
+                temp = document.createElement('div');
+            temp.innerHTML = htmlStr;
+            while (temp.firstChild) {
+                frag.appendChild(temp.firstChild);
+            }
+            return frag;
+        }
+
+        // check browser - hack for IE lower versions
+        function isIE() {
+            var myNav = navigator.userAgent.toLowerCase();
+            return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+        }
+
+        // show simultaneous login message bar
+        function ShowMessageBar(message, type, image, delay) {
+            $("<div />", { id: type, html: image + ' ' + message }).hide().prependTo("body")
+            .slideDown('fast').delay(delay).slideUp(function () { $(this).remove(); });
+        }
+    </script>
+
+    <script type="text/javascript">
+        // show cookie message
+        CookiesMessage_Load();
+    </script>
+
+    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '7f89dc67-2943-4005-99a0-50147bf28ceb', f: true }); done = true; } }; })();</script> 
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b55b4f2e821f681"></script>
+</body>
+</html>
