@@ -1,7 +1,6 @@
 import hashlib
 import json
 import pathlib
-import uuid
 from datetime import datetime
 from functools import partial
 from multiprocessing import Pool, cpu_count
@@ -11,8 +10,7 @@ import requests
 
 def download_source(source):
     download_location = pathlib.Path('resources/policywatch_external_files')
-    # local_file_name = hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest()
-    local_file_name = uuid.uuid4()
+    local_file_name = hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest()
     try:
         with open(pathlib.Path(download_location) / str(local_file_name), 'wb') as output_file:
             url = source['sources::url'] if source['sources::url'].startswith('http') else ('http://' + source['sources::url'])
