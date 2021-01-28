@@ -5,7 +5,6 @@
 # Author: Mihai Coșleț
 # Email: coslet.mihai@gmail.com 
 
-""" """
 import logging
 from typing import List
 from urllib.parse import quote_plus
