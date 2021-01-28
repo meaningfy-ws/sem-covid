@@ -15,11 +15,12 @@ logger = logging.getLogger('lam-fetcher')
 
 TYPES = {
     'html': 'TXT/HTML',
-    'pdf': 'TXT/PDF'
+    'pdf': 'TXT/PDF',
+    'formex': 'TXT/FORMEX'
 }
 
 
-def retrieve_document_by_celex_id(path_to_save: str, celex_id: str, language: str = 'EN', type: str = 'html'):
+def retrieve_document_by_celex_id(path_to_save: str, celex_id: str, language: str = 'EN', type: str = 'formex'):
     logger.debug(f'start retrieving {celex_id} in {language} with {type} format.')
 
     url = f'https://eur-lex.europa.eu/legal-content/{language}/{TYPES[type]}/?uri=CELEX:{celex_id}'
