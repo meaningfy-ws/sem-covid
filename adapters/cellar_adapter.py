@@ -29,36 +29,17 @@ class CellarAdapter:
         self.debug = 'on'
         self.run = '+Run+Query+'
 
-    def get_celex_ids(self, limit: int = None) -> List[str]:
-        """
-        Method to retrieve CELEX ids from virtuoso
-        :param limit: limit of query results
-        :return: CELEX ids
-        """
-        logger.debug(f'start retrieving {limit} CELEX ids.')
-        query = self._limit_query("""prefix cdm: <http://publications.europa.eu/ontology/cdm#>
-
-        select ?celex_id
-        where {{
-            ?eu_act cdm:resource_legal_id_celex ?celex_id.
-            ?eu_act a ?eu_act_type.
-            FILTER(?eu_act_type IN (cdm:regulation, cdm:directive, cdm:decision))
-        }}""", limit)
-
-        response = self._make_request(query)
-        celex_ids = self._extract_values(response, 'celex_id')
-
-        logger.debug(f'finish retrieving {limit} CELEX ids.')
-        return celex_ids
-
-    def get_treaties(self) -> dict:
+    def get_treaties(self, limit: int = None) -> dict:
         """
         Method to retrieve works of treaties and their metadata
+        :param limit: limit of query results
         :return: dict with metadata
         """
         logger.debug(f'start retrieving works of treaties.')
-        query = """prefix cdm: <http://publications.europa.eu/ontology/cdm#>
-        select distinct ?work ?doc_id ?comment ?eurovoc_concept ?subject_matter ?directory_code ?date_created ?date_document ?legal_date_signature ?legal_date_entry_into_force ?legal_id_celex ?legal_eli (group_concat(?created_by; separator=", ") as ?authors)
+        query = self._limit_query("""prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+        prefix lang: <http://publications.europa.eu/resource/authority/language/>
+        
+        select distinct ?work ?doc_id ?title ?comment ?eurovocConcept ?subjectMatter ?directoryCode ?dateCreated ?dateDocument ?legalDateSignature ?legalDateEntryIntoForce ?legalIdCelex ?legalEli  group_concat(?createdBy; separator=", ") as ?authors 
         {
           ?work a cdm:treaty;
                   cdm:work_id_document ?doc_id.
@@ -69,65 +50,69 @@ class CellarAdapter:
             ?work cdm:resource_legal_in-force "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
           }
           optional {
+              ?expression cdm:expression_belongs_to_work ?work. 
+              ?expression cdm:expression_title ?title.
+              ?expression cdm:expression_uses_language lang:ENG.
+          }
+          optional {
             ?work cdm:resource_legal_comment_internal ?comment .
           }
           optional {
-            ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept 
+            ?work cdm:work_is_about_concept_eurovoc ?eurovocConcept 
           }
           optional {
-            ?work cdm:resource_legal_is_about_subject-matter ?subject_matter 
+            ?work cdm:resource_legal_is_about_subject-matter ?subjectMatter 
           }
           optional {
-            ?work cdm:resource_legal_is_about_concept_directory-code ?directory_code 
+            ?work cdm:resource_legal_is_about_concept_directory-code ?directoryCode 
           }
           optional {
-            ?work cdm:work_created_by_agent ?created_by .
+            ?work cdm:work_created_by_agent ?createdBy .
           }
           optional {
-            ?work cdm:work_date_creation ?date_created .
+            ?work cdm:work_date_creation ?dateCreated .
           }
           optional {
-            ?work cdm:work_date_document ?date_document .
+            ?work cdm:work_date_document ?dateDocument .
           }
           optional {
-            ?work cdm:resource_legal_date_signature ?legal_date_signature .
+            ?work cdm:resource_legal_date_signature ?legalDateSignature .
           }
           optional {
-            ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
+            ?work cdm:resource_legal_date_entry-into-force ?legalDateEntryIntoForce .
           }
           optional {
-            ?work cdm:resource_legal_id_celex ?legal_id_celex .
+            ?work cdm:resource_legal_id_celex ?legalIdCelex .
           }
           optional {
-            ?work cdm:resource_legal_eli ?legal_eli .
+            ?work cdm:resource_legal_eli ?legalEli .
           }
           filter not exists{?work a cdm:fragment_resource_legal}.
           filter not exists {?work cdm:work_embargo [].}
-        }"""
+        }""", limit)
 
         response = self._make_request(query)
         return response.json()
 
-    def get_treaty_items(self, treaties: List[str], format='html') -> dict:
+    def get_treaty_items(self, treaties: List[str], format='html', limit: int = None) -> dict:
         """
         Method to retrieve item for provided treaty works
+        :param limit: limit of query results
         :type format: accepted mime types
         :type treaties: list of treaties to run the query against
         :return: dict with metadata
         """
         logger.debug(f'start retrieving items of treaties.')
 
-        query = f"""prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+        query = self._limit_query(f"""prefix cdm: <http://publications.europa.eu/ontology/cdm#>
         prefix cmr: <http://publications.europa.eu/ontology/cdm/cmr#>
         prefix lang: <http://publications.europa.eu/resource/authority/language/>
-        select distinct ?item ?expressionTitle
+        select distinct ?item
         {{
           values ?work {{ {' '.join([f"<{uri}>" for uri in treaties])} }}
           values ?mime {{ {FORMATS[format]} }}
         
           ?expression cdm:expression_belongs_to_work ?work. 
-          ?expression cdm:expression_title ?expressionTitle.
-          ?expression cdm:expression_uses_language lang:ENG.
           
           ?manifestation cdm:manifestation_manifests_expression ?expression.
         
@@ -135,7 +120,7 @@ class CellarAdapter:
           
           ?item cmr:manifestationMimeType ?mime.
         }}
-        """
+        """, limit)
 
         response = self._make_request(query)
         logger.debug(f'start retrieving items of treaties.')
