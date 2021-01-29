@@ -28,6 +28,7 @@ class CellarAdapter:
         self.timeout = '0'
         self.debug = 'on'
         self.run = '+Run+Query+'
+        self.max_query_size = 8000
 
     def get_treaties(self, limit: int = None) -> dict:
         """
@@ -52,7 +53,7 @@ class CellarAdapter:
           optional {
               ?expression cdm:expression_belongs_to_work ?work. 
               ?expression cdm:expression_title ?title.
-              ?expression cdm:expression_uses_language lang:ENG.
+              # ?expression cdm:expression_uses_language lang:ENG.
           }
           optional {
             ?work cdm:resource_legal_comment_internal ?comment .
@@ -94,23 +95,22 @@ class CellarAdapter:
         response = self._make_request(query)
         return response.json()
 
-    def get_treaty_items(self, treaties: List[str], format='html', limit: int = None) -> dict:
+    def get_treaty_items(self, treaties: List[str], format='html') -> dict:
         """
         Method to retrieve item for provided treaty works
-        :param limit: limit of query results
         :type format: accepted mime types
         :type treaties: list of treaties to run the query against
         :return: dict with metadata
         """
         logger.debug(f'start retrieving items of treaties.')
 
-        query = self._limit_query(f"""prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+        query = """prefix cdm: <http://publications.europa.eu/ontology/cdm#>
         prefix cmr: <http://publications.europa.eu/ontology/cdm/cmr#>
         prefix lang: <http://publications.europa.eu/resource/authority/language/>
         select distinct ?item
         {{
-          values ?work {{ {' '.join([f"<{uri}>" for uri in treaties])} }}
-          values ?mime {{ {FORMATS[format]} }}
+          values ?work {{ {values} }}
+          values ?mime {{ ~format~ }}
         
           ?expression cdm:expression_belongs_to_work ?work. 
           
@@ -120,11 +120,16 @@ class CellarAdapter:
           
           ?item cmr:manifestationMimeType ?mime.
         }}
-        """, limit)
+        """.replace('~format~', FORMATS[format])
 
-        response = self._make_request(query)
+        result = {'results': {'bindings': list()}}
+        for full_query in self._chunk_query(query, treaties):
+            logger.debug('retrieving chunk...')
+            response = self._make_request(full_query)
+            result['results']['bindings'] += response.json()['results']['bindings']
+
         logger.debug(f'start retrieving items of treaties.')
-        return response.json()
+        return result
 
     def retrieve_document(self, path_to_save: str, url: str, format: str = 'html'):
         """
@@ -158,6 +163,22 @@ class CellarAdapter:
             raise ValueError(f'request on Virtuoso returned {response.status_code} with {response.content} body')
 
         return response
+
+    def _chunk_query(self, query: str, values_list: list):
+        values_str = ''
+        offset = 0
+        values_max = self.max_query_size - len(query)
+
+        while values_list[offset:]:
+            for value in values_list[offset:]:
+                value_to_add = f' <{value}>'
+                if len(values_str + value_to_add) >= values_max:
+                    break
+                values_str += value_to_add
+                offset += 1
+            print(values_str)
+            yield query.format(values=values_str)
+            values_str = ''
 
     @staticmethod
     def _limit_query(query, limit):
