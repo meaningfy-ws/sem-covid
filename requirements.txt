@@ -1,0 +1,6 @@
+requests==2.25.1  # https://requests.readthedocs.io/en/master/
+
+# Testing Dependencies
+pytest==6.2.2  # https://docs.pytest.org/en/stable/
+coverage==5.4  # https://coverage.readthedocs.io/en/coverage-5.3/
+pytest-cov==2.11.1  # https://github.com/pytest-dev/pytest-cov
