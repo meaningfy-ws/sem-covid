@@ -4,8 +4,10 @@
 # Date:  26/01/2021
 # Author: Mihai Coșleț
 # Email: coslet.mihai@gmail.com
-
+import hashlib
 import logging
+import os
+import pathlib
 from pathlib import Path
 from typing import List
 from urllib.parse import quote_plus
@@ -179,6 +181,128 @@ class CellarAdapter:
             print(values_str)
             yield query.format(values=values_str)
             values_str = ''
+
+    def get_covid19_items(self):
+        logger.debug(f'start retrieving works of treaties.')
+        query = """prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+                    prefix lang: <http://publications.europa.eu/resource/authority/language/>
+                    
+                    SELECT
+                    distinct ?title_ 
+                    group_concat(distinct ?author; separator=",") as ?authors
+                    ?date_document
+                    ?celex
+                    ?Full_OJ
+                    ?manif_pdf
+                    ?manif_html
+                    ?pdf_to_download
+                    ?html_to_download
+                    ?oj_sector
+                    ?resourceType
+                    group_concat(distinct ?eurovocConcept; separator=", ") as ?eurovocConcepts
+                    group_concat(distinct ?subjectMatter; separator=", ") as ?subjectMatters
+                    group_concat(distinct ?directoryCode; separator=", ") as ?directoryCodes
+                    ?legalDateEntryIntoForce
+                    group_concat(distinct ?legalEli; separator=", ") as ?legalElis
+                    
+                    WHERE
+                    {
+                    ?work cdm:resource_legal_comment_internal ?comment.
+                    FILTER(regex(str(?comment),'COVID19'))
+                    
+                    ?work cdm:work_date_document ?date_document.
+                    ?work cdm:work_created_by_agent ?author.
+                    ?work cdm:resource_legal_id_celex ?celex.
+                    
+                      optional {
+                        ?work cdm:work_is_about_concept_eurovoc ?eurovocConcept 
+                      }
+                      optional {
+                        ?work cdm:resource_legal_is_about_subject-matter ?subjectMatter 
+                      }
+                      optional {
+                        ?work cdm:resource_legal_is_about_concept_directory-code ?directoryCode 
+                      }
+                      optional {
+                        ?work cdm:resource_legal_date_entry-into-force ?legalDateEntryIntoForce .
+                      }
+                      optional {
+                        ?work cdm:resource_legal_eli ?legalEli .
+                      }
+                    ?work cdm:resource_legal_id_sector ?oj_sector
+                    
+                    OPTIONAL
+                        {
+                            ?work cdm:work_has_resource-type ?resourceType
+                        }
+                    
+                    
+                    OPTIONAL
+                        {
+                            ?work cdm:resource_legal_published_in_official-journal ?Full_OJ.
+                        }
+                    
+                    OPTIONAL
+                        {
+                            ?exp cdm:expression_title ?title.
+                            ?exp cdm:expression_uses_language ?lang.
+                            ?exp cdm:expression_belongs_to_work ?work.
+                            
+                            FILTER(?lang = lang:ENG)
+                            OPTIONAL
+                            {
+                                ?manif_pdf cdm:manifestation_manifests_expression ?exp.
+                                ?manif_pdf cdm:manifestation_type ?type_pdf.
+                                FILTER(str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
+                            }
+                            
+                            OPTIONAL
+                            {
+                                ?manif_html cdm:manifestation_manifests_expression ?exp.
+                                ?manif_html cdm:manifestation_type ?type_html.
+                                FILTER(str(?type_html) in ('html', 'xhtml'))}}
+                                BIND(IF(BOUND(?title),?title,'The title does not exist in that language'@en) as ?title_)
+                                BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
+                                BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+                    }
+                    
+                    order by ?date_document"""
+
+        response = self._make_request(query)
+        return response.json()
+
+    def download_covid19_items(self):
+        covid19_items = self.get_covid19_items()
+        download_location = pathlib.Path('resources/covid19_eurlex')
+
+        count = len(covid19_items['results']['bindings'])
+        current_item = 0
+
+        for item in covid19_items['results']['bindings']:
+            current_item += 1
+            filename = hashlib.sha256(item['title_']['value'].encode('utf-8')).hexdigest()
+
+            filename_pdf = filename + '_pdf.zip'
+            filename_html = filename + '_html.zip'
+
+            try:
+                print("Processing item " + str(current_item) + " of " + str(count))
+                url = item['pdf_to_download']['value'] if item['pdf_to_download']['value'].startswith('http') else (
+                        'http://' + item['pdf_to_download']['value'])
+                request = requests.get(url, allow_redirects=True)
+
+                with open(pathlib.Path(download_location) / str(filename_pdf), 'wb') as output_file:
+                    output_file.write(request.content)
+
+                url = item['html_to_download']['value'] if item['html_to_download']['value'].startswith('http') else (
+                        'http://' + item['html_to_download']['value'])
+                request = requests.get(url, allow_redirects=True)
+
+                with open(pathlib.Path(download_location) / str(filename_html), 'wb') as output_file:
+                    output_file.write(request.content)
+            except Exception as ex:
+                logger.exception(ex)
+
 
     @staticmethod
     def _limit_query(query, limit):
