@@ -13,7 +13,7 @@ import base64
 from elasticsearch import Elasticsearch
 
 
-class ESIngestAdapter:
+class ESAdapter:
     def __init__(self, protocol: str, hostname: str, port: int, user: str, password: str):
         self.__es__ = Elasticsearch([protocol + '://' + user + ':' + password + '@' + hostname + ':' + str(port)])
 
