@@ -1,0 +1,2033 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"><head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <link rel="dns-prefetch" href="//static2.tv3.lt" /> <link rel="dns-prefetch" href="//static3.tv3.lt" /> <link rel="dns-prefetch" href="//static4.tv3.lt" /> <link rel="dns-prefetch" href="//static1.tv3.lt" /> <link rel="dns-prefetch" href="//static1.inspektorius.lt" /> <link rel="dns-prefetch" href="//static2.inspektorius.lt" /> <link rel="dns-prefetch" href="//static3.inspektorius.lt" /> <link rel="dns-prefetch" href="//static4.inspektorius.lt" /> <link rel="dns-prefetch" href="//static5.inspektorius.lt" /> <link rel="dns-prefetch" href="//gdelt.hit.gemius.pl" /> <link rel="dns-prefetch" href="//www.google-analytics.com" /> <link rel="dns-prefetch" href="//www.facebook.com" /> <link rel="dns-prefetch" href="//connect.facebook.net" /> <link rel="dns-prefetch" href="//fonts.googleapis.com" /> <link rel="dns-prefetch" href="//pbs.twimg.com/" /> <link rel="dns-prefetch" href="//platform.twitter.com" /> <script>
+        var mapas = { };
+        var EadsRps = {
+            'showRegion': function(k){
+                document.write('<div id="tv3_lt_'+ (mapas[k]||k) +'"/></div>');
+            }
+        };
+    </script>  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PVDZHP');</script>  <script>
+        function sticktothetop(stickingTarget, wrapper, scrollTop ) {
+            var window_top = $(window).scrollTop();
+            var top = wrapper.offset().top;
+            var parent = $(stickingTarget).parent('.last-right-add').length;
+
+            if (parent == 0) {
+                var bottom = top + stickingTarget.outerHeight() - 200;
+            } else {
+                var articleHeight = $("#articleContainer").height();
+                var lastAdPosition = $('.last-right-add').attr('data-position');
+                var lastBlockHeight = articleHeight - 1060 * (lastAdPosition - 1);
+                var addToScrollHeight = lastBlockHeight - 1060 - 50;
+                var bottom = top + stickingTarget.outerHeight() - 450 + addToScrollHeight;
+            }
+
+            if (window_top > top && window_top < bottom) {
+                stickingTarget.addClass('custom-stick');
+            } else {
+                if (parent == 0) {
+                    if(stickingTarget.hasClass("custom-stick")){
+                        if(top > scrollTop){
+                            stickingTarget.css('marginTop','0px');
+                        }else{
+                            stickingTarget.css('marginTop','450px');
+                        }
+                        stickingTarget.removeClass('custom-stick');
+                    }
+                } else {
+                    if(stickingTarget.hasClass("custom-stick")){
+                        if(top > scrollTop){
+                            stickingTarget.css('marginTop','0px');
+                        }else{
+                            console.log(addToMargin);
+                            var addToMargin = 250 + addToScrollHeight;
+                            stickingTarget.css('marginTop', addToMargin + 'px');
+                        }
+                        stickingTarget.removeClass('custom-stick');
+                    }
+                }
+            }
+        }
+
+    </script> <meta name="google-site-verification" content="lyw7vOWtKMVsOZ9L-yFfOlWShcrcloSIWpUVWvue1yI" /> <meta name="verify-webtopay" content="a1f2e294f2676bf65102d1da4d9d285b" /> <script type="text/javascript" src="/pjs/mobilDetect.js?3"></script> <link rel="manifest" href="/manifest.json"> <link type="text/css" rel="stylesheet" href="//static2.inspektorius.lt/static.php?v=4.1.1.17&t=c&f=/pcss/2/screen.css" /> <link type="text/css" rel="stylesheet" href="/pcss/2/Fonts/pe-icon-7-weather/css/pe-icon-7-weather.css" /> <link type="text/css" rel="stylesheet" href="/pcss/2/fancybox/jquery.fancybox.min.css" /> <link type="text/css" rel="stylesheet" href="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=c&amp;f=/pcss/2/carousel.css" /> <meta name="title" content="Kodėl turtingiems pensininkams turime duoti daugiau pinigų nei darbuotojams?" /> <meta property="fb:app_id" content="1603170966641905" />  <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+                var pp_gemius_identifier = '.AGQ.Xh2.1p1DazFKMwJUsbfPw184jtCRQyaUU5f6mH.a7';
+                //--><!]]>
+    </script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/js/jquery-1.12.4.min.js"></script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/js/jquery-migrate-1.4.1.min.js"></script> <script type="text/javascript">
+        
+        $.ajaxSetup({cache: true});
+        
+    </script> <script type="text/javascript">
+            /* <![CDATA[ */
+            var doRefresh = false;
+            /*
+            $(function(){
+                if ($('#mainbar .tv3play').length <= 0) {
+                    doRefresh = true;
+                }
+            });
+            */
+            /* ]]> */
+        </script> <script type="text/javascript" src="/js/jquery.cookie.js"></script> <script type="text/javascript" src="/pjs/2/application_v3_2.js?v=4.1.1.17"></script> <script type="text/javascript" src="/pjs/2/blockeris.js" crossorigin="anonymous"></script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/js/publishertag.js"></script> <script type="text/javascript" src="/pjs/2/fancybox/jquery.fancybox.min.js"></script> <script type="text/javascript">
+        
+            </script> <meta property="fb:pages" content="93535661889" /> <meta property="article:author" content="https://www.facebook.com/tv3.lt" /> <meta name="keywords" content="tv3.lt Naujienų portale rasite svarbiausias šiandienos naujienas, išskirtinius TV3 žinių video reportažus, Lietuvos žmonių istorijas ir TV3 televizijos video turinį. ,2020-04-30 05:30:00" /> <meta name="description" content="Vyriausybė nusprendė skirti papildomas išmokas visiems senatvės pensijų ir kitų išmokų gavėjams. Net tiems, kurių&nbsp;pensijos didesnės nei subsidijos ... tv3.lt Naujienų portale rasite svarbiausias šiandienos naujienas, išskirtinius TV3 žinių video reportažus, Lietuvos žmonių istorijas ir TV3 televizijos video tu" /> <meta property="og:title" content="Kodėl turtingiems pensininkams turime duoti daugiau pinigų nei darbuotojams?" /> <meta property="og:image" content="https://www.tv3.lt/Uploads/UArticles/leadPhotos/e6/cb/39/90/e6cb39900450f2925e212b0bab5f2878.jpg" /> <meta property="og:image" content="https://static3.inspektorius.lt/usi/324x216/3/04/73/2e/04732e7b4e4c42f2d0ec1c60fdad1e3a.jpg?v=4.1.1.17&t=cr&s=324x216&m=3&f=/Uploads/UArticles/leadPhotos/e6/cb/39/90/e6cb39900450f2925e212b0bab5f2878.jpg" /> <meta property="og:description" content="Vyriausybė nusprendė skirti papildomas išmokas visiems senatvės pensijų ir kitų išmokų gavėjams. Net tiems, kurių&nbsp;pensijos didesnės nei subsidijos ..." /> <meta property="og:url" content="https://www.tv3.lt/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322" /> <meta property="og:site_name" content="tv3.lt" /> <meta property="og:type" content="article" /> <link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.tv3.lt/m/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322"> <title>
+                    Kodėl turtingiems pensininkams turime duoti daugiau pinigų nei darbuotojams? | tv3.lt
+            </title> <link rel="shortcut icon" type="image/x-icon" href="/pimg/Site/favicon_2019.ico" /> <meta http-equiv="X-UA-Compatible" content="IE=9" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-5e2576e60d33fefa0d0",applicationID:"30724104"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script> <meta name="msapplication-starturl" content="https://www.tv3.lt/?utm_source=IE9jumpDiegimas&amp;utm_campaign=IE9jumpDiegimas" /> <meta name="application-name" content="Tv3" /> <meta name="msapplication-tooltip" content="Tv3" /> <meta name="msapplication-navbutton-color" content="#DF1A20" /> <meta property="fb:page_id" content="142716645769232" /> <script type="text/javascript">
+                        var myKeys = 'verslas,lietuvosverslas,,lietuvos-verslas,,https://www.tv3.lt/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322';
+                    </script> <script type="text/javascript">
+            </script> <script>
+        var splitKeys = myKeys.split(",");
+        var filteredKeys = splitKeys.filter(Boolean)
+                                    .filter(value => !['http://', 'https://', 'mobile-page'].some(element => value.includes(element)))
+                                    .reduce(function(a, b) { if(a.indexOf(b) < 0) a.push(b); return a; },[]);
+        dataLayer.push({
+            'myKeys': filteredKeys.join(",")
+        });
+    </script> <link href="https://plus.google.com/u/0/b/101925857586556927389/" rel="publisher" /> <script type="text/javascript" src="//static.apester.com/js/sdk/latest/apester-sdk.min.js"></script> <meta property="publish_time" content="2020-04-30 05:30:00" /> <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"NewsArticle","url":"tv3.lt\/naujiena\/verslas\/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322","publisher":{"@type":"Organization","name":"TV3","logo":"https:\/\/www.tv3.lt\/pimg\/2\/tv3_logo_01_new.png"},"headline":"Kod\u0117l turtingiems pensininkams turime duoti daugiau pinig\u0173 nei darbuotojams?","image":["tv3.lt\/Uploads\/UArticles\/leadPhotos\/e6\/cb\/39\/90\/e6cb39900450f2925e212b0bab5f2878.jpg","tv3.lt\/Uploads\/UArticles\/leadPhotos\/05\/c7\/ed\/09\/05c7ed09fa5382d1f3cb96c7ca1cbbe3.jpg","tv3.lt\/Uploads\/UArticles\/leadPhotos\/9e\/49\/95\/b1\/9e4995b1b59df76ff15bcb0e278ed7a4.jpg"],"datePublished":"2020-04-30T05:30:00+03:00","dateModified":"2020-04-30T05:30:00+03:00"}</script> <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-19061058-2', 'auto');
+        ga('require', 'displayfeatures');
+        
+                        ga('set', 'contentGroup1', '1200-1400')
+                ga('set', 'contentGroup2', 'Martynas Žilionis')
+                ga('set', 'contentGroup3', '2020')
+                ga('set', 'contentGroup4', 'April')
+        
+                
+        ga('set', 'dimension8', filteredKeys);
+        ga('send', 'pageview');
+        if(window.location.origin+"/" === window.location.href)
+        {
+            ga('send', 'event', 'Titulinis', 'Visit', 'Apsilankymas tituliniame desktop');
+        }
+    </script> <script type="text/javascript">
+var mIds=['321597','187254','187239'];
+var a=[];mIds.forEach(function(b){a.push("adx.adform.net/adx/?mid="+b)});var adformtag=adformtag||[];adformtag.push({preload:a}),adformtag.push(function(){"undefined"!=typeof myKeys&&mIds.forEach(function(a){myKeys.split(",").forEach(function(b){-1==b.indexOf(window.location.pathname)&&adformtag.setTargeting(a,b)})}),adformtag.setRequestLimit(6)});
+</script> <script src="//s1.adform.net/banners/scripts/adx.js"></script> <link type="text/css" rel="stylesheet" href="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=c&amp;f=/pcss/2/lightslider.css" /> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/pjs/2/lightslider.js"></script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/pjs/2/jquery.matchHeight-min.js"></script> </head> <body class="tv3 design-v3"> <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        // lines below shouldn't be edited
+        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+            gt.setAttribute('defer','defer'); gt.src=l+'://galt.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+        //--><!]]>
+    </script>  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVDZHP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  <script>
+    var gallery = 1;
+</script> <div class="topSlotWrap"> <script>
+function sticktothetop(stickingTarget, wrapper, scrollTop ) {
+    var window_top = $(window).scrollTop();
+    var top = wrapper.offset().top;
+    var bottom = top+stickingTarget.outerHeight()-200;
+    if (window_top > top && window_top < bottom) {
+        stickingTarget.addClass('custom-stick');
+    } else {
+           if(stickingTarget.hasClass("custom-stick")){
+                if(top > scrollTop){
+                    stickingTarget.css('marginTop','0px');
+                }else{
+                    stickingTarget.css('marginTop','450px');        
+                }
+           stickingTarget.removeClass('custom-stick');
+           }
+   }
+}
+</script><style><!-- 
+oldbody.tv3 .firstLogo {
+    background: url(/Uploads/kaledu_logo_80x52_DESK.png) !important;
+    background-size: cover !important;
+}
+
+ //--></style> <div class="navigationSegment white-style"> <div class="first-strip"> <div class="header-link-items"> <div class="header-item-wrap" style="width:180px;"> <div class="header-item">
+Sausio 29 d., Penktadienis
+</div> </div> <div class="header-item-wrap" style="width:544px;height:39px"> <div class="header-item"> <a href="/orai" target="_blank" style="color: #777777"> <div class="weather-Digits">Vilnius -2&deg;C</div> </a> </div> </div> <div class="header-item-wrap" style="width:80px;"> <div class="header-item" style="width:fit-content;height: 100%;"> <a href="/paieska" target="_blank" style="color: #777777"> <div class="menu-icon w p-icon"></div> <div class="paieska fl-ml">Paieška</div> </a> </div> </div> <div class="header-item-wrap" style="width:130px;"> <div class="header-item" style="width:fit-content"> <a href="/ikelk" target="_blank" style="color: #777777"> <div class="menu-icon w s-icon"></div> <div class="pranesti fl-ml">Pranešti naujieną</div> </a> </div> </div> <div class="header-item-wrap" style="width:80px;"> <div class="header-item" style="width:fit-content"> <a href="/orai" target="_blank" style="color: #777777;float: left"> <div class="menu-icon w  w-icon" style="margin-top: 12px"></div> <div class="orai fl-ml">Orai</div> </a> </div> </div> <div class="header-item-wrap" style="width:95px;"> <div class="header-item"> <a href="https://play.tv3.lt/" target="_blank"> <div class="button-tv3play" style="background-color: black;"> <div class="menu-icon z-icon"></div> <div class="menu-icon tv3-play-icon"></div> </div> </a> </div> </div> <div class="header-item-wrap"> <div class="header-item"> <a href="https://powerhitradio.tv3.lt/" target="_blank"> <div class="button-tv3play" style="background-color: #ff0000;"> <div class="menu-icon k-icon"></div> <div class="menu-icon pwr-icon"></div> </div> </a> </div> </div> </div> </div> <div class="restriction"> <div class="left-desktop-sticky-btn"></div> <div class="left-desktop-sticky-btn-close"></div> <div class="headerLogo"> <a href="/"> <div class="spriteUrl firstLogo main"><img alt="tv3.lt" class="tv3-main-banner" src="/pimg/2/main-tv3.png"></div> </a> </div> <div class="headerItems"> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Koronavirusas');" href="/rubrika/naujienos/lietuva/koronavirusas">
+Koronavirusas
+</a> </h3> </div> </div> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Lietuva');" href="/rubrika/naujienos/lietuva">
+Lietuva
+</a> </h3> </div> <div class="subMenuItems"> <div class="leftSubMenu"> <h3 class="head_2"> <span>Lietuva</span> </h3> <div class="leftLink"> <a href="/rubrika/naujienos/lietuva/aktualijos">
+Aktualijos
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/lietuva/seimo-rinkimai">
+Seimo Rinkimai
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/lietuva/kino-pavasaris">
+Kino pavasaris
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/lietuva/kriminalai">
+Kriminalai
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/lietuva/komentarai-ir-analize">
+Komentarai ir analizė
+</a> </div> <div class="leftLink"> <a href="http://sveikata.tv3.lt">
+Sveikata
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/lietuva/redakcija-rekomenduoja">
+Redakcija rekomenduoja
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/lietuva/dienos-komentaras">
+Dienos komentaras
+</a> </div> </div> <div class="rightSubMenu news"> <div class="commonBlocHeader noBorderTop"> <div class="blocHeaderButton"> <div class="main-sprite blocHeaderRight" rel="next" onclick="mainMenu.moreNews.slide(5,1,this,4,'news');"></div> <div class="main-sprite blocHeaderLeft" rel="prev" onclick="mainMenu.moreNews.slide(5,-1,this,4,'news');"></div> </div> <div class="blocHeaderInfoB"> <h3 class="head_2"> <span>TOP NAUJIENOS</span> </h3> </div> </div> <div style="clear: both;"></div> <div class="rightContentsRow"> <div class="mostPopularItem"> <a href="/naujiena/lietuva/nuo-covid-19-mire-zinomas-klaipedos-kardiologas-n1079329"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/31/fa/5e/31fa5e6fb7e366515b60889eb8fda6c1.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/18/17/c3/b8/1817c3b8cb5ad4e9d2c844236923dccf.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Nuo COVID-19 mirė žinomas Klaipėdos kardiologas
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/lietuva/artimiausiu-dienu-prognoze-numatomi-iprasti-ziemiski-orai-n1079341"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/9a/c6/ef/9ac6ef47febba1969c4381f324604b01.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/0c/2b/51/e1/0c2b51e1fc33b2ef45676e83760a6a26.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Artimiausių dienų prognozė: „Numatomi įprasti žiemiški orai"
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/lietuva/gyvenimas-be-elektros-suartino-miestelio-bendruomene-internete-dalijasi-isgyvenimo-triukais-n1079323"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/28/c4/9a/28c49a567011e3b61dad5066ca4f5605.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/9d/33/6a/fa/9d336afa5b5e9935d2b3aeb4350e8215.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Gyvenimas be elektros suartino miestelio bendruomenę: internete dalijasi išgyvenimo triukais
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/lietuva/zydu-bendruomenes-pirmininke-reikalauja-pradeti-ikiteismini-tyrima-del-holokausto-neigimo-n1079320"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/9f/7e/7f/9f7e7fe27a814ad1770385a97987eb89.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/9b/9e/68/d2/9b9e68d2a8226fe1fa0f194e769b0218.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Žydų bendruomenės pirmininkė reikalauja pradėti ikiteisminį tyrimą dėl Holokausto neigimo
+</div> </a> </div> </div> </div> </div> </div> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Verslas');" href="/rubrika/naujienos/verslas">
+Verslas
+</a> </h3> </div> <div class="subMenuItems"> <div class="leftSubMenu"> <h3 class="head_2"> <span>Verslas</span> </h3> <div class="leftLink"> <a href="/rubrika/naujienos/verslas/lietuvosverslas">
+Lietuvos verslas
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/verslas/naujas-kodas-skaitmeninis-amzius">
+Naujas kodas: skaitmeninis amžius
+</a> </div> <div class="leftLink"> <a href="http://automanas.tv3.lt">
+Automanas
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/verslas/tarp-miesto-ir-kaimo">
+Tarp miesto ir kaimo
+</a> </div> </div> <div class="rightSubMenu news"> <div class="commonBlocHeader noBorderTop"> <div class="blocHeaderButton"> <div class="main-sprite blocHeaderRight" rel="next" onclick="mainMenu.moreNews.slide(6,1,this,89,'news');"></div> <div class="main-sprite blocHeaderLeft" rel="prev" onclick="mainMenu.moreNews.slide(6,-1,this,89,'news');"></div> </div> <div class="blocHeaderInfoB"> <h3 class="head_2"> <span>TOP NAUJIENOS</span> </h3> </div> </div> <div style="clear: both;"></div> <div class="rightContentsRow"> <div class="mostPopularItem"> <a href="/naujiena/verslas/bedarbiu-daugybe-jiems-leidziama-simtai-milijonu-bet-pigesni-uzsienieciai-vis-tiek-geriau-n1077986"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/42/36/42/423642e86142cbc5aba0303712287958.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/bf/bd/6e/bf/bfbd6ebfcdbd7d5e89d3857defdb0988.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Bedarbių daugybė, jiems leidžiama šimtai milijonų, bet pigesni užsieniečiai vis tiek geriau?
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/verslas/eksperimentas-isbandome-pigiausius-maisto-produktus-galima-sutaupyti-desimtis-euru-n1077178"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/11/e8/ac/11e8ac5a4376298d5bbde56b12a3de27.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/d4/f7/02/7b/d4f7027bef9fd4bb6dfe8615a33d8a01.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Eksperimentas – išbandome pigiausius maisto produktus: galima sutaupyti dešimtis eurų
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/verslas/baltarusisku-kroviniu-netekusi-klaipedos-nafta-sie-metai-bus-sudetingi-n1079479"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/48/37/36/4837360a8a3648d2b1aa2f00357b1aec.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/0b/ea/8e/7a/0bea8e7acd3ef94720c2b944b9fc62c4.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Baltarusiškų krovinių netekusi „Klaipėdos nafta“: šie metai bus sudėtingi
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/verslas/kaunas-ruosiasi-sporto-hales-duru-atidarymui-prie-azuolyno-planuojama-2-tukst-vietu-automobiliu-aikstele-n1079366"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/86/9d/99/869d995734ddf04b116455c552450790.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/20/43/d8/6d/2043d86d45d1b7f0f5f109e776e1fa77.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Kaunas ruošiasi sporto halės durų atidarymui: prie Ąžuolyno planuojama 2 tūkst. vietų automobilių aikštelė
+</div> </a> </div> </div> </div> </div> </div> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Gyvenimas');" href="/rubrika/naujienos/gyvenimas">
+Gyvenimas
+</a> </h3> </div> <div class="subMenuItems"> <div class="leftSubMenu"> <h3 class="head_2"> <span>Gyvenimas</span> </h3> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/patarimai">
+patarimai
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/mamoms">
+Mamoms
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/mano-virtuve">
+Mano virtuvė
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/mada-ir-grozis">
+Mada ir grožis
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/namai">
+Namai
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/santykiai">
+Santykiai
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/moters-gidas">
+Moters gidas
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/istorijos">
+Istorijos
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/gyvenimas/sveikata">
+Sveikata
+</a> </div> </div> <div class="rightSubMenu news"> <div class="commonBlocHeader noBorderTop"> <div class="blocHeaderButton"> <div class="main-sprite blocHeaderRight" rel="next" onclick="mainMenu.moreNews.slide(645,1,this,657,'news');"></div> <div class="main-sprite blocHeaderLeft" rel="prev" onclick="mainMenu.moreNews.slide(645,-1,this,657,'news');"></div> </div> <div class="blocHeaderInfoB"> <h3 class="head_2"> <span>TOP NAUJIENOS</span> </h3> </div> </div> <div style="clear: both;"></div> <div class="rightContentsRow"> <div class="mostPopularItem"> <a href="/naujiena/gyvenimas/vilnietes-vaiko-gimima-aptemde-pyktis-ir-liudesys-ziurejau-i-ji-kaip-i-isdavika-n1069288"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/7a/f4/5a/7af45a8957c16cb2445977930b846f7d.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/09/e1/bc/e0/09e1bce0b8b9a1260b1d25d5b761fcca.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Vilnietės vaiko gimimą aptemdė pyktis ir liūdesys: „Žiūrėjau į jį kaip į išdaviką“
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/gyvenimas/soka-keliancia-busena-daznai-nuraso-infarktui-neapsigaukite-ir-jus-n1079243"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/08/eb/06/08eb06029be7a0659812c006ff66b406.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/8a/5e/f8/2a/8a5ef82a25c46837f0a1ab74162db123.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Šoką keliančią būseną dažnai nurašo infarktui – neapsigaukite ir jūs
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/gyvenimas/13-metes-tevai-ispeja-del-vandens-burbulu-dukra-vos-neuzduso-n1079274"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/cd/02/19/cd02199165e2d04d5bd2d70a8a2e611f.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/62/0a/0d/68/620a0d68d27c29172e49d8b5eed7e020.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+13-metės tėvai įspėja dėl vandens burbulų: dukra vos neužduso
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/gyvenimas/kaledas-kartu-sventusioje-seimoje-gedulas-nuo-covid-19-mire-4-asmenys-n1079394"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/3d/c0/95/3dc0951654411880faac0b03d2281853.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/67/1b/3c/6e/671b3c6e0b41d5c81ce2a67c41b65808.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Kalėdas kartu šventusioje šeimoje – gedulas: nuo COVID-19 mirė 4 asmenys
+</div> </a> </div> </div> </div> </div> </div> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Žmonės');" href="/rubrika/naujienos/zmones">
+Žmonės
+</a> </h3> </div> <div class="subMenuItems"> <div class="leftSubMenu"> <h3 class="head_2"> <span>Žmonės</span> </h3> <div class="leftLink"> <a href="/rubrika/naujienos/zmones/lietuvos-izymybes">
+Lietuvos įžymybės
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/zmones/uzsienio-zvaigzdes">
+Užsienio žvaigždės
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/zmones/muzika">
+Muzika
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/zmones/tv">
+TV
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/zmones/ivairenybes">
+Įvairenybės
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/zmones/gero-vakaro-sou">
+Gero vakaro šou
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/zmones/moterys-meluoja-geriau">
+Moterys meluoja geriau
+</a> </div> </div> <div class="rightSubMenu news"> <div class="commonBlocHeader noBorderTop"> <div class="blocHeaderButton"> <div class="main-sprite blocHeaderRight" rel="next" onclick="mainMenu.moreNews.slide(11,1,this,65,'news');"></div> <div class="main-sprite blocHeaderLeft" rel="prev" onclick="mainMenu.moreNews.slide(11,-1,this,65,'news');"></div> </div> <div class="blocHeaderInfoB"> <h3 class="head_2"> <span>TOP NAUJIENOS</span> </h3> </div> </div> <div style="clear: both;"></div> <div class="rightContentsRow"> <div class="mostPopularItem"> <a href="/naujiena/zmones/faktai-kuriu-apie-karaliene-tikrai-nezinojote-atskleide-planus-jai-mirus-n1079308"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/2f/ad/77/2fad77fad43a9e6d90bd84a9b8b25cb7.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/4e/c9/8e/af/4ec98eaf2c59e6d2fc086818e8a95045.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Faktai, kurių apie karalienę tikrai nežinojote: atskleidė planus jai mirus
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/zmones/tevu-issiilgusi-siaudikyte-su-jais-susitiko-meksikoje-kurortuose-visi-atsipalaidave-n1079220"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/c1/36/86/c13686a4e7ba2891cfd86647db0fcee8.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/93/b8/1e/93/93b81e938c7ac5d1dba393765769f2d9.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Tėvų išsiilgusi Šiaudikytė su jais susitiko Meksikoje: kurortuose visi atsipalaidavę
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/zmones/plauku-prieziura-dar-niekada-nebuvo-tokia-paprasta-atrade-si-buda-kitu-nebeieskosite-n1079298"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/cc/be/33/ccbe334886fa9360f6a63ddccbf231ad.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/22/99/e6/75/2299e67590ade62149d02a1956590d15.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Plaukų priežiūra dar niekada nebuvo tokia paprasta: atradę ši būdą, kitų nebeieškosite
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/zmones/paaiskejo-malumos-nuotraukos-kurioje-jis-buciuoja-moters-pilva-paslaptis-n1079402"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/df/72/d5/df72d5cbe40b8a3f69d057189d067d81.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/5b/f7/27/f7/5bf727f7e849b1ffd6c6beb8c35d899a.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Paaiškėjo Malumos nuotraukos, kurioje jis bučiuoja moters pilvą, paslaptis
+</div> </a> </div> </div> </div> </div> </div> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Užsienis');" href="/rubrika/naujienos/uzsienis">
+Užsienis
+</a> </h3> </div> <div class="subMenuItems"> <div class="leftSubMenu"> <h3 class="head_2"> <span>Užsienis</span> </h3> <div class="leftLink"> <a href="/rubrika/naujienos/uzsienis/uzsienis">
+Užsienis
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/uzsienis/brexit">
+Brexit
+</a> </div> </div> <div class="rightSubMenu news"> <div class="commonBlocHeader noBorderTop"> <div class="blocHeaderButton"> <div class="main-sprite blocHeaderRight" rel="next" onclick="mainMenu.moreNews.slide(7,1,this,85,'news');"></div> <div class="main-sprite blocHeaderLeft" rel="prev" onclick="mainMenu.moreNews.slide(7,-1,this,85,'news');"></div> </div> <div class="blocHeaderInfoB"> <h3 class="head_2"> <span>TOP NAUJIENOS</span> </h3> </div> </div> <div style="clear: both;"></div> <div class="rightContentsRow"> <div class="mostPopularItem"> <a href="/naujiena/uzsienis/slaptos-feisbuko-funkcijos-ka-dabar-galima-messenger-programoje-daryti-patogiau-n1078777"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/8c/24/2e/8c242e27b2b3b12aa1fde4b10b4eab89.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/59/d6/e9/7a/59d6e97a4bf5c6cede123ab1e84514de.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Slaptos feisbuko funkcijos: ką dabar galima „Messenger“ programoje daryti patogiau
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/uzsienis/kurjeris-salikeleje-rado-5-menesiu-berniuka-kuri-ten-paliko-jo-motinos-automobilio-vagis-n1079049"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/06/c3/a1/06c3a1d454a707c3cf9ec60c777a3cba.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/81/68/b7/1c/8168b71cf3a8945719db9c52cbc6fa67.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Kurjeris šalikelėje rado 5 mėnesių berniuką, kurį ten paliko jo motinos automobilio vagis
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/uzsienis/mire-sovietu-ir-rusijos-aktorius-lanovojus-n1079364"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/48/d3/05/48d30559f4132f5fca3e99d2f6d9c966.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/c2/91/13/7d/c291137d940176235bce729e9ea4bb4a.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Mirė sovietų ir Rusijos aktorius Lanovojus
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/uzsienis/pietu-afrikoje-fiksuota-koronaviruso-atmaina-jau-ir-jav-n1079380"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/40/cd/7e/40cd7e522a98c28d52e510c511734e22.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/05/9b/65/1a/059b651a42aaea6c60c22af6bbfb9ec4.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Pietų Afrikoje fiksuota koronaviruso atmaina – jau ir JAV
+</div> </a> </div> </div> </div> </div> </div> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Sportas');" href="/rubrika/naujienos/sportas">
+Sportas
+</a> </h3> </div> <div class="subMenuItems"> <div class="leftSubMenu"> <h3 class="head_2"> <span>Sportas</span> </h3> <div class="leftLink"> <a href="/rubrika/naujienos/sportas/nba">
+NBA
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/sportas/a-lyga">
+A lyga
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/sportas/lkl">
+LKL
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/sportas/krepsinis">
+Krepšinis
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/sportas/futbolas">
+Futbolas
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/sportas/kitos-sporto-sakos">
+Kitos sporto šakos
+</a> </div> </div> <div class="rightSubMenu news"> <div class="commonBlocHeader noBorderTop"> <div class="blocHeaderButton"> <div class="main-sprite blocHeaderRight" rel="next" onclick="mainMenu.moreNews.slide(9,1,this,75,'news');"></div> <div class="main-sprite blocHeaderLeft" rel="prev" onclick="mainMenu.moreNews.slide(9,-1,this,75,'news');"></div> </div> <div class="blocHeaderInfoB"> <h3 class="head_2"> <span>TOP NAUJIENOS</span> </h3> </div> </div> <div style="clear: both;"></div> <div class="rightContentsRow"> <div class="mostPopularItem"> <a href="/naujiena/sportas/arsejant-kovai-del-astuntuko-geras-sansas-zalgiriui-sustiprinti-pozicija-n1079349"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/4e/3d/94/4e3d941b528c6a9c2bbbc8ce4cc8c9dd.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/1c/80/ad/ed/1c80adedfc3a9f6655a548328fdfc49c.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Aršėjant kovai dėl aštuntuko – geras šansas „Žalgiriui“ sustiprinti poziciją
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/sportas/zalgiryje-liekantis-lauvergne-as-cia-yra-daug-geru-dalyku-n1079345"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/f2/f0/d3/f2f0d32143dae309c96f25763c0f5d46.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/7f/7b/b4/82/7f7bb48252b6b38aba1133779d78a6b8.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+„Žalgiryje“ liekantis Lauvergne’as: „Čia yra daug gerų dalykų“
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/sportas/pralaimejimo-kaina-pacquiao-nebenori-kovos-su-mcgregoru-n1079353"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/05/f6/8e/05f68eb6c20082778a519aba3c486a0d.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/a1/08/05/20/a10805201964f6f1edd7938ba5196e18.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Pralaimėjimo kaina: Pacquiao nebenori kovos su McGregoru
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/sportas/ilga-laika-pirmavusi-zenit-neatlaike-lemiamo-dizaineriu-spurto-n1079358"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/d9/d5/37/d9d53788305755eaea9cb676c55fbed9.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/51/f1/7f/6c/51f17f6c4c910f969adf99aa39a25aa5.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Ilgą laiką pirmavusi „Zenit“ neatlaikė lemiamo „dizainerių“ spurto
+</div> </a> </div> </div> </div> </div> </div> <div class="menuItems"> <div class="menuItemsLink"> <h3> <a onclick="ga('send', 'event', 'Navigacija', 'Click', 'Video ');" href="/rubrika/naujienos/video">
+Video
+</a> </h3> </div> <div class="subMenuItems"> <div class="leftSubMenu"> <h3 class="head_2"> <span>Video </span> </h3> <div class="leftLink"> <a href="/rubrika/naujienos/video/dienos-pjuvis">
+Dienos pjūvis
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/video/pasikalbekim">
+Pasikalbėkim
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/video/luzis">
+Lūžis
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/video/zmones-kalba">
+Žmonės kalba
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/video/gyvenimo-receptas">
+Gyvenimo receptas
+</a> </div> <div class="leftLink"> <a href="/rubrika/naujienos/video/plius-minus">
+Plius minus
+</a> </div> </div> <div class="rightSubMenu news"> <div class="commonBlocHeader noBorderTop"> <div class="blocHeaderButton"> <div class="main-sprite blocHeaderRight" rel="next" onclick="mainMenu.moreNews.slide(820,1,this,713,'news');"></div> <div class="main-sprite blocHeaderLeft" rel="prev" onclick="mainMenu.moreNews.slide(820,-1,this,713,'news');"></div> </div> <div class="blocHeaderInfoB"> <h3 class="head_2"> <span>TOP NAUJIENOS</span> </h3> </div> </div> <div style="clear: both;"></div> <div class="rightContentsRow"> <div class="mostPopularItem"> <a href="/naujiena/video/dnr-rezultatai-ateme-zada-nepilnamete-podukra-susilauke-patevio-vaiko-n1079230"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/fd/af/55/fdaf55e77c9f2f8ff299ac0161762d6d.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/0b/16/81/5d/0b16815dd9f32716630a0351feb3aa25.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+DNR rezultatai atėmė žadą: nepilnametė podukra susilaukė patėvio vaiko
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/video/tv3-zinios-europoje-isisiubuoja-kova-del-koronaviruso-vakcinu-tiekimo-n1079231"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/82/4d/2c/824d2c3670b42fe52dd61e18e6e6fe21.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/d9/09/43/b9/d90943b9300d85a2f6f5812191c57c97.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+TV3 Žinios. Europoje įsisiūbuoja kova dėl koronaviruso vakcinų tiekimo
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/video/kalnai-sniego-ne-tik-vargas-lietuviai-daro-vis-daugiau-ispudingu-skulpturu-n1079257"> <div class="mostPopularImg"> <img src="https://static3.inspektorius.lt/usi/185x126/3/54/54/2b/54542b9191e5a1e21c4a740a99a1b4bf.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/8a/38/f2/84/8a38f284da0b9f94b51aa118b8c2f2d7.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Kalnai sniego – ne tik vargas: lietuviai daro vis daugiau įspūdingų skulptūrų
+</div> </a> </div> <div class="mostPopularItem"> <a href="/naujiena/video/gyventojai-kankinasi-be-elektros-su-vaikais-gyvena-be-sildymo-ir-silto-maisto-n1079247"> <div class="mostPopularImg"> <img src="https://static2.inspektorius.lt/usi/185x126/3/4f/69/04/4f6904120a41afe47883d830fdf2cd7d.jpg?v=4.1.1.17&amp;t=cr&amp;s=185x126&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/68/78/7a/65/68787a653f018885510066f271ef5fdb.jpg" width="178" height="121"> </div> <div class="mostPopularTitle">
+Gyventojai kankinasi be elektros: su vaikais gyvena be šildymo ir šilto maisto
+</div> </a> </div> </div> </div> </div> </div> </div> <div id="leftDesktopSticky" class="left-desktop-sticky sticky-hide"> <div class="close-desktop-sticky"></div> <div class="slide-menu-container"> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Koronavirusas');" href="/rubrika/naujienos/lietuva/koronavirusas">
+Koronavirusas
+</a> </h3> </div> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Lietuva');" href="/rubrika/naujienos/lietuva">
+Lietuva
+</a> </h3> <div class="slide-menu-subMenu"> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/lietuva/aktualijos">
+Aktualijos
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/lietuva/seimo-rinkimai">
+Seimo Rinkimai
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/lietuva/kino-pavasaris">
+Kino pavasaris
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/lietuva/kriminalai">
+Kriminalai
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/lietuva/komentarai-ir-analize">
+Komentarai ir analizė
+</a> </div> <div class="desktop-sticky-element"> <a href="http://sveikata.tv3.lt">
+Sveikata
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/lietuva/redakcija-rekomenduoja">
+Redakcija rekomenduoja
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/lietuva/dienos-komentaras">
+ Dienos komentaras
+</a> </div> </div> </div> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Verslas');" href="/rubrika/naujienos/verslas">
+Verslas
+</a> </h3> <div class="slide-menu-subMenu"> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/verslas/lietuvosverslas">
+Lietuvos verslas
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/verslas/naujas-kodas-skaitmeninis-amzius">
+Naujas kodas: skaitmeninis amžius
+</a> </div> <div class="desktop-sticky-element"> <a href="http://automanas.tv3.lt">
+Automanas
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/verslas/tarp-miesto-ir-kaimo">
+Tarp miesto ir kaimo
+</a> </div> </div> </div> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Gyvenimas');" href="/rubrika/naujienos/gyvenimas">
+Gyvenimas
+</a> </h3> <div class="slide-menu-subMenu"> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/patarimai">
+patarimai
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/mamoms">
+Mamoms
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/mano-virtuve">
+Mano virtuvė
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/mada-ir-grozis">
+Mada ir grožis
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/namai">
+Namai
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/santykiai">
+Santykiai
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/moters-gidas">
+Moters gidas
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/istorijos">
+Istorijos
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/gyvenimas/sveikata">
+Sveikata
+</a> </div> </div> </div> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Žmonės');" href="/rubrika/naujienos/zmones">
+Žmonės
+</a> </h3> <div class="slide-menu-subMenu"> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/zmones/lietuvos-izymybes">
+Lietuvos įžymybės
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/zmones/uzsienio-zvaigzdes">
+Užsienio žvaigždės
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/zmones/muzika">
+Muzika
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/zmones/tv">
+TV
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/zmones/ivairenybes">
+Įvairenybės
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/zmones/gero-vakaro-sou">
+Gero vakaro šou
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/zmones/moterys-meluoja-geriau">
+Moterys meluoja geriau
+</a> </div> </div> </div> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Užsienis');" href="/rubrika/naujienos/uzsienis">
+Užsienis
+</a> </h3> <div class="slide-menu-subMenu"> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/uzsienis/uzsienis">
+Užsienis
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/uzsienis/brexit">
+Brexit
+</a> </div> </div> </div> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Sportas');" href="/rubrika/naujienos/sportas">
+Sportas
+</a> </h3> <div class="slide-menu-subMenu"> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/sportas/nba">
+NBA
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/sportas/a-lyga">
+A lyga
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/sportas/lkl">
+LKL
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/sportas/krepsinis">
+Krepšinis
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/sportas/futbolas">
+Futbolas
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/sportas/kitos-sporto-sakos">
+Kitos sporto šakos
+</a> </div> </div> </div> <div class="slide-menu-content"> <h3> <a class="slide-menu-chapter" onclick="ga('send', 'event', 'Navigacija', 'Click', 'Video ');" href="/rubrika/naujienos/video">
+Video
+</a> </h3> <div class="slide-menu-subMenu"> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/video/dienos-pjuvis">
+Dienos pjūvis
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/video/pasikalbekim">
+Pasikalbėkim
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/video/luzis">
+Lūžis
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/video/zmones-kalba">
+Žmonės kalba
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/video/gyvenimo-receptas">
+Gyvenimo receptas
+</a> </div> <div class="desktop-sticky-element"> <a href="/rubrika/naujienos/video/plius-minus">
+Plius minus
+</a> </div> </div> </div> </div> </div> <div class="iconic-popup-cover show-cover"></div>  </div> </div> <script type="text/javascript">
+        var additional = $('div.additionalMenu').length;
+        if(additional > 0) {
+            var topLivescore = 102;
+            var topMain = -101;
+            var topAdditional = -51;
+        } else {
+            var topLivescore = 50;
+            var topMain = -91; //51
+            var topAdditional = -101;
+        }
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (mainMenu.lastScrollPosition < scroll) {
+                mainMenu.maxScroll = scroll;
+                mainMenu.needShowForScroll = false;
+            } else {
+                if (mainMenu.maxScroll - scroll >= 10) {
+                    mainMenu.needShowForScroll = true;
+                }
+            }
+            mainMenu.lastScrollPosition = scroll;
+
+            if (scroll > 500 && mainMenu.visibleForScrollLock == false && mainMenu.statusForScroll == 'display' && !mainMenu.needShowForScroll) {
+                //menuHeight = mainMenu.mainClass.outerHeight()*-1;
+                mainMenu.visibleForScrollLock = true;
+                mainMenu.mainClass.animate({
+                    top: topMain
+                }, 300).promise().done(function () {
+                    mainMenu.statusForScroll = 'hidden';
+                    mainMenu.visibleForScrollLock = false;
+                });
+
+                mainMenu.additionalClass.animate({
+                    top: topAdditional
+                }, 300).promise().done(function () {
+                    mainMenu.statusForScroll = 'hidden';
+                    mainMenu.visibleForScrollLock = false;
+                });
+                if($('.live-broadcast-line-segment').length > 0) {
+                    var extra = $('.live-broadcast-line-segment').height();
+                    $('#liveScore').animate({top: extra}, 300);
+                }
+                else
+                    $('#liveScore').animate({top:"0px"},300);
+            }
+
+            if (mainMenu.needShowForScroll && mainMenu.visibleForScrollLock == false && mainMenu.statusForScroll == 'hidden') {
+                mainMenu.visibleForScrollLock = true;
+                mainMenu.mainClass.animate({
+                    top: '0px'
+                }, 300).promise().done(function () {
+                    mainMenu.statusForScroll = 'display';
+                    mainMenu.visibleForScrollLock = false;
+                    mainMenu.needShowForScroll = false;
+                });
+
+                mainMenu.additionalClass.animate({
+                    top: '51px'
+                }, 300).promise().done(function () {
+                    mainMenu.statusForScroll = 'display';
+                    mainMenu.visibleForScrollLock = false;
+                    mainMenu.needShowForScroll = false;
+                });
+
+                if($('.live-broadcast-line-segment').length > 0) {
+                    var extra = $('.live-broadcast-line-segment').height();
+                    $('#liveScore').animate({top: parseInt(topLivescore+extra)+'px'}, 300);
+                }
+                else
+                    $('#liveScore').animate({top:topLivescore+"px"},300);
+            }
+        });
+
+        $(document).ready(function() {
+            menuHeight = mainMenu.mainClass.outerHeight();
+
+            $('div.navigationSegment div.headerSocial div.socialPIco').mouseenter(function(){
+                mainMenu.social.needHide = false;
+                mainMenu.social.activate();
+            });
+            $('div.navigationSegment div.socialGroup').mouseleave(function(){
+                mainMenu.newsletterSection.itemVisibility = 'hidden';
+                mainMenu.newsletterSection.itemSelector.hide();
+
+                mainMenu.social.needHide = true;
+                mainMenu.social.deactivate();
+            });
+
+            $('div.navigationSegment div.subMenuItems').hover(
+                    function() {
+                        $(this).parent('div.menuItems').addClass('activeHoverPoint');
+                    },
+                    function() {
+                        $(this).parent('div.menuItems').removeClass('activeHoverPoint');
+                    }
+            );
+
+            $('div.navigationSegment a[href$="'+location.pathname.substring(1).replace(/\/$/,'')+'"]').closest('div.menuItems').addClass('activeMainPoint');
+
+            $('div.navigationSegment div.headerItems, div.navigationSegment div.headerLogo').mouseleave(function(){
+                mainMenu.needShowSubMenu  = false;
+                mainMenu.delayFirstSubMenu = true;
+                clearTimeout(mainMenu.timeoutSubMenu);
+            });
+
+            $('div.navigationSegment div.menuItems, div.navigationSegment div.headerLogo').mouseenter(function(){
+                mainMenu.currentMenuItemHover = $(this);
+                if (!mainMenu.needShowSubMenu) {
+                    if (mainMenu.delayFirstSubMenu) {
+                        mainMenu.delayFirstSubMenu = false;
+                        mainMenu.timeoutSubMenu = setTimeout(function () {
+                            mainMenu.currentMenuItemHover.find('div.subMenuItems').show();
+                            mainMenu.needShowSubMenu = true;
+                        }, 450);
+                    }
+                } else {
+                    mainMenu.currentMenuItemHover.find('div.subMenuItems').show();
+                }
+            });
+            $('div.navigationSegment div.menuItems').mouseleave(function(){
+                $('div.navigationSegment div.menuItems').find('div.subMenuItems').hide();
+            });
+            $('div.navigationSegment div.headerLogo').mouseleave(function(){
+                $('div.navigationSegment div.headerLogo div.subMenuItems').hide();
+            });
+
+            // newsletterSection start
+            $('div.navigationSegment div.socialBIco').click(function() {
+                mainMenu.newsletterSection.clickButton();
+            });
+            // newsletterSection end
+        });
+
+        $('input#newsSearch').keypress(function(){
+            if(event.keyCode == 13) {
+                mainMenu.search.startSearch();
+            }
+        });
+
+
+        var mainMenu = {
+            //changeWeightSize: 621,
+            changeWeightSize: 739,
+            delayFirstSubMenu: true,
+            needShowSubMenu: false,
+            timeoutSubMenu: null,
+            currentMenuItemHover: null,
+            visibleForScrollLock: false,
+            lastScrollPosition: 0,
+            maxScroll: 0,
+            needShowForScroll: false,
+            statusForScroll: 'display',
+            mainClass: $('div.navigationSegment'),
+            additionalClass: $('div.additionalMenu')
+        }
+
+        mainMenu.social = {
+            lockAnimation: false,
+            needHide: false,
+            smallSize: 111,
+            fullSize: 222,
+            currentFunction: null,
+
+            activate: function () {
+                var
+                    obj = this,
+                    reducedSize = this.fullSize - this.smallSize;
+
+                if (!obj.lockAnimation && (obj.currentFunction == 'hide' || obj.currentFunction == null)) {
+                    obj.currentFunction = 'activate';
+                    obj.lockAnimation = true;
+
+                    $('div.navigationSegment div.socialPIco').hide();
+                    mainMenu.changeWeightSize = mainMenu.changeWeightSize - reducedSize;
+                    $('div.navigationSegment div.headerItems').width(mainMenu.changeWeightSize);
+                        $('div.navigationSegment div.headerSocial').animate({width: obj.fullSize+'px'}, 300).promise().done(function () {
+                            obj.lockAnimation = false;
+                            if (obj.needHide) {
+                                obj.deactivate();
+                            }
+                        });
+                }
+            },
+            deactivate: function () {
+                var
+                    obj = this,
+                    reducedSize = this.fullSize - this.smallSize;
+
+                if (!obj.lockAnimation && obj.currentFunction == 'activate') {
+                    obj.currentFunction = 'hide';
+                    obj.lockAnimation = true;
+
+                    $('div.navigationSegment div.headerSocial').animate({width: obj.smallSize+'px'}, 300).promise().done(function () {
+                        mainMenu.changeWeightSize = mainMenu.changeWeightSize + reducedSize;
+                        $('div.navigationSegment div.headerItems').width(mainMenu.changeWeightSize);
+                            $('div.navigationSegment div.headerSocial div.socialPIco').show();
+                            obj.lockAnimation = false;
+                            obj.needHide = false;
+                    });
+                }
+            },
+        }
+
+        mainMenu.search = {
+            lockAnimation: false,
+            reducedSize: 250,
+            currentFunction: null,
+
+            activate: function () {
+                var obj = this;
+
+                if (!obj.lockAnimation && (obj.currentFunction == 'deactivate' || obj.currentFunction == null)) {
+                    obj.currentFunction = 'activate';
+                    obj.lockAnimation = true;
+
+                    $('div.navigationSegment div.searchIco').hide();
+                    $('div.navigationSegment div.searchBlock').show();
+                    $('div.navigationSegment div.searchBlock #newsSearch').focus();
+                    mainMenu.changeWeightSize = mainMenu.changeWeightSize - obj.reducedSize;
+                    $('div.navigationSegment div.headerItems').width(mainMenu.changeWeightSize);
+                    $('div.navigationSegment div.headerSearch').animate({width: '299px'}, 300).promise().done(function () {
+                        obj.lockAnimation = false;
+                    });
+                }
+            },
+            deactivate: function () {
+                var obj = this;
+
+                if (!obj.lockAnimation && obj.currentFunction == 'activate') {
+                    obj.currentFunction = 'deactivate';
+                    obj.lockAnimation = true;
+
+                    $('div.navigationSegment div.headerSearch').animate({width: '49px'}, 300).promise().done(function () {
+                        mainMenu.changeWeightSize = mainMenu.changeWeightSize + obj.reducedSize;
+                        $('div.navigationSegment div.searchBlock').hide();
+                        $('div.navigationSegment div.headerSearch div.searchIco').show();
+                        $('div.navigationSegment div.headerItems').width(mainMenu.changeWeightSize);
+                        obj.lockAnimation = false;
+                    });
+                }
+            },
+            startSearch: function () {
+                if ($('input#newsSearch').val() != '') {
+                    document.location='/susije/' + encodeURI($('input#newsSearch').val());
+                }
+            },
+        }
+
+        mainMenu.moreNews = {
+            slideData: {},
+            currentPage: {},
+            maxPages: {},
+            currentDirection: null,
+            lockSlide: false,
+            element: null,
+            group: null,
+
+            slide: function (moreData, direction, element, menuId, group) {
+                var obj = this;
+                if (!obj.lockSlide) {
+                    obj.lockSlide = true;
+                    obj.currentDirection = direction;
+                    obj.element = $(element).closest('div.rightSubMenu');
+                    obj.group = group;
+
+                    if (typeof (this.slideData[menuId]) == 'undefined') {
+                        obj.loadData(moreData, menuId);
+                    } else {
+                        obj.pageControl(menuId);
+                        obj.changeSlide(menuId);
+                    }
+                }
+            },
+            loadData: function (moreData, menuId) {
+                var obj = this;
+                obj.element.find('div.mostPopularItem').addClass('dim');
+
+                switch(obj.group) {
+                    case 'news':
+                        var url = '/Menu/getNewsForHeader/';
+                        break;
+                    case 'projects':
+                        var url = '/Menu/getProjectsForHeader/';
+                        break;
+                }
+
+                $.post(url, {
+                        data: JSON.stringify({'parentId':moreData, 'menuId':menuId})
+                    },
+                    function (data) {
+                        obj.saveData(JSON.parse(data));
+                    });
+            },
+            pageControl: function (menuId) {
+                if (typeof (this.currentPage[menuId]) == 'undefined') {
+                    this.currentPage[menuId] = 0;
+                }
+
+                if ((this.currentPage[menuId] + this.currentDirection) > (this.maxPages[menuId] - 1)){
+                    this.currentPage[menuId] = 0;
+                } else if ((this.currentPage[menuId] + this.currentDirection) < 0) {
+                    this.currentPage[menuId] = this.maxPages[menuId] - 1;
+                } else {
+                    this.currentPage[menuId] = this.currentPage[menuId] + this.currentDirection;
+                }
+            },
+            saveData: function (data) {
+                var obj = this;
+
+                if (data.status == 1) {
+                    obj.slideData[data.menuId] = data.itemsHtml;
+                    obj.maxPages[data.menuId] = data.itemsHtml.length;
+                    if (obj.maxPages[data.menuId] == 1) {
+                        obj.deActivateSlider();
+                    } else {
+                        obj.pageControl(data.menuId);
+                        obj.changeSlide(data.menuId);
+                    }
+                } else {
+                    obj.slideData[data.menuId] = null;
+                    obj.deActivateSlider();
+                }
+            },
+            changeSlide: function (menuId) {
+                this.element.find('div.rightContentsRow').html(
+                    this.slideData[menuId][this.currentPage[menuId]]
+                ).hide().fadeIn('slow');
+
+                this.lockSlide = false;
+            },
+            deActivateSlider: function () {
+                this.element.find('div.blocHeaderButton').hide();
+                this.element.find('div.dim').removeClass('dim');
+            },
+        }
+
+        mainMenu.newsletterSection = {
+            itemSelector: $('div.navigationSegment div.socialGroup div.headerNewsletter'),
+            itemVisibility: 'hidden',
+            lockSendData: false,
+
+            clickButton: function () {
+                var obj = this;
+
+                if (obj.itemVisibility == "hidden") {
+                    obj.itemVisibility = "visible";
+                    obj.itemSelector.show();
+                } else {
+                    obj.itemVisibility = "hidden";
+                    obj.itemSelector.hide();
+                }
+            },
+            sendData: function () {
+                var obj = this;
+
+                if (!obj.lockSendData) {
+                    obj.lockSendData = true;
+                    ga('send', 'event', 'Prenumerata', 'subscribe', 'Prenumerata headeryje');
+                } else {
+                    return false;
+                }
+
+                $.post('/Newsletters/subscribeAjax/', {
+                    data: JSON.stringify({
+                        'email':obj.itemSelector.find('input[name="email"]').val()
+                    })
+                },
+                function (data) {
+                    var resultData = JSON.parse(data);
+
+                    obj.itemSelector.find('div.msgBox').removeClass('greenBg').removeClass('redBg');;
+
+                    if (resultData.status == 1) {
+                        obj.itemSelector.find('div.msgBox').addClass('greenBg');
+                    } else {
+                        obj.itemSelector.find('div.msgBox').addClass('redBg');
+                    }
+
+                    obj.itemSelector.find('div.msgBox div.msg').text(resultData.msg);
+                    obj.itemSelector.find('div.msgBox').show();
+
+                    obj.lockSendData = false;
+                });
+            }
+        }
+
+    </script>  <script>
+
+        $(".left-desktop-sticky-btn").click(function () {
+            $(".iconic-popup-cover").toggle();
+            $(".left-desktop-sticky-btn-close").show();
+            $(".left-desktop-sticky-btn").hide();
+            $("#leftDesktopSticky").addClass("moveIn");
+            $("#leftDesktopSticky").removeClass("sticky-hide");
+            $("#leftDesktopSticky").removeClass("moveOut");
+            $("#leftDesktopSticky").show();
+            $("body").addClass("overflow-hidden");
+        });
+
+        $(".left-desktop-sticky-btn-close").click(function () {
+            $(".iconic-popup-cover").toggle();
+            $(".left-desktop-sticky-btn-close").hide();
+            $(".left-desktop-sticky-btn").show();
+            $("#leftDesktopSticky").removeClass("moveIn");
+            $("#leftDesktopSticky").addClass("moveOut");
+            $("body").removeClass("overflow-hidden");
+            setTimeout(hideSticky, 1000);
+        });
+
+
+        $(".close-desktop-sticky").click(function () {
+            $(".iconic-popup-cover").toggle();
+            $(".left-desktop-sticky-btn-close").hide();
+            $(".left-desktop-sticky-btn").show();
+            $("#leftDesktopSticky").removeClass("moveIn");
+            $("#leftDesktopSticky").addClass("moveOut");
+            $("body").removeClass("overflow-hidden");
+            setTimeout(hideSticky, 1000);
+        });
+
+        $(".iconic-popup-cover").click(function () {
+            $(".iconic-popup-cover").toggle();
+            $(".left-desktop-sticky-btn-close").hide();
+            $(".left-desktop-sticky-btn").show();
+            $("#leftDesktopSticky").removeClass("moveIn");
+            $("#leftDesktopSticky").addClass("moveOut");
+            $("body").removeClass("overflow-hidden");
+            setTimeout(hideSticky, 300);
+        });
+    </script> <script type="application/ld+json">
+      {
+      "@context": "http://schema.org/",
+      "@type": "Organization",
+      "url": "https://www.tv3.lt/",
+      "logo": "https://www.tv3.lt/pimg/2/logo_TV3.png"
+      }
+    </script> <div id="tv980x200_tv3_lt" style="text-align: center;padding-bottom: 10px;"> </div> <script type="text/javascript">
+var placeId='tv980x200_tv3_lt', mId='321597';
+var adformtag=adformtag||[];!function(a,b){var c=document.getElementById(b);if(c){adformtag.push(function(){
+if("undefined"!=typeof myKeys){var b=myKeys.split(",");b.forEach(function(b){b.indexOf(window.location.pathname)==-1&&adformtag.setTargeting(a,b)})}});var d=document.createElement("script");d.setAttribute("data-adfscript","adx.adform.net/adx/?mid="+a),c.appendChild(d),d=document.createElement("script"),d.src="//s1.adform.net/banners/scripts/adx.js",d.async=!0,d.defer=!0,c.appendChild(d)}}(mId,placeId);
+</script> <script>
+$(function(){
+$(window).load(function() {
+fixateAds.init();
+});
+});
+</script> <style>
+
+.tv3 div.commonBlocHeader div.blocHeaderInfo div.headerInfoButton {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 9px;
+}
+
+</style> </div> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/pjs/jquery/jquery.jcarousel.min.js"></script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/pjs/jquery/jquery.history.js"></script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/pjs/galleries/sliderjs.js"></script> <script type="text/javascript" src="//static3.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/pjs/galleries/pikachoose.js"></script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&amp;t=j&amp;f=/pjs/jquery/jquery.pngFix.js"></script> <div id="page"> <div id="mainbar"> <div class="allNewsPlace" data-link="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322"> <div class="load-news" article-id="1041322"> <div class="design-1100 article-1041322" id="#mainbarV2" data-link="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322" article-id="1041322"> <div class="article-load "> <div class="article-info"> <div class="recs"> <i><b><a style="font-family: Arial Black;" class="desktop-author" href="/rubrika/naujienos/verslas" target="_blank">Verslas</a></b> /</i> <i class="source-info">aut. <b><a class="desktop-author" style="font-size: 14px;" href="/autoriai/Martynas_Žilionis" rel="author" target="_blank">Martynas Žilionis</a></b> /</i> <i class="source-info">2020.04.30 05:30</i> <i class="source-info"> / <a href="https://www.tv3.lt" target="_blank" rel="nofollow">Šaltinis: tv3.lt</a></i> </div> </div> </div> <div style="width: 100%; height: max-content" class="arcticle_content a-text article-1041322 article_inside"> <div style="width: 100%;" class="cont_title"> <h1 class="article-title-1100"> <a class="articleTitle" href="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322">Kodėl turtingiems pensininkams turime duoti daugiau pinigų nei darbuotojams?</a> </h1> <div class="readSegment-container"> </div> <div class="first-par-1100"> <p><b>Vyriausybė nusprendė skirti papildomas išmokas visiems senatvės pensijų ir kitų išmokų gavėjams. Net tiems, kurių&nbsp;<a href="/gaires/pensijos" target="_blank">pensijos</a> didesnės nei subsidijos prastovose esantiems&nbsp;darbuotojams. Ar teisinga visų mokesčių mokėtojų lėšomis labiau remti tuos, kurie ir taip pinigų dabar gauna daugiau?</b></p> </div> </div> <div id="articleContainer" class="d-flex"> <div class="article-block-content abc-1041322"> <div class="photo-container"> <div class="bigPhoto"> <a href="/Uploads/UArticles/leadPhotos/e6/cb/39/90/e6cb39900450f2925e212b0bab5f2878.jpg" data-fancybox="photos" data-caption="(nuotr. Fotodiena/Justino Auškelio)" data-width="2400" data-height="1600"> <img class="leadImage" width="755" height="512" alt="(nuotr. Fotodiena/Justino Auškelio)" src="https://static3.inspektorius.lt/usi/755x512/3/09/87/46/098746a26905451afa72eadca796a806.jpg?v=4.1.1.17&amp;t=cr&amp;s=755x512&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/e6/cb/39/90/e6cb39900450f2925e212b0bab5f2878.jpg" /> </a> </div> <div class="article-photo-bottom-ico"></div> </div> <div class="content-container tv3" style="display: flex; margin-top: 40px; justify-content: space-between;"> <div class="desktop-sticky"> <div class="desktop-icon-div letter-icon" data-id="1041322"></div> <a id="facebook" href="https://www.facebook.com/share.php?u=https://www.tv3.lt/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322" target="_blank" data-target="share_window" data-width="534" data-height="500"> <div class="desktop-icon-div fb-icon"></div> </a> <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.tv3.lt/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322" target="_blank" title="LinkedIn" data-target="share_window" data-width="534" data-height="500"> <div class="desktop-icon-div linkedin-desktop-icon"></div> </a> <a id="messenger" href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://www.tv3.lt/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322%23.Xv2eKxjxrq0.messenger&redirect_uri=https%3A%2F%2Fwww.addthis.com%2Fmessengerredirect" target="_blank" data-target="share_window" data-width="534" data-height="500"> <div class="desktop-icon-div messenger-desktop-icon"></div> </a> <div class="desktop-icon-div print-desktop-icon" onclick="printArticle(1041322)"> <title id="at-svg-print-4">Print</title> <g> <path d="M24.67 10.62h-2.86V7.49H10.82v3.12H7.95c-.5 0-.9.4-.9.9v7.66h3.77v1.31L15 24.66h6.81v-5.44h3.77v-7.7c-.01-.5-.41-.9-.91-.9zM11.88 8.56h8.86v2.06h-8.86V8.56zm10.98 9.18h-1.05v-2.1h-1.06v7.96H16.4c-1.58 0-.82-3.74-.82-3.74s-3.65.89-3.69-.78v-3.43h-1.06v2.06H9.77v-3.58h13.09v3.61zm.75-4.91c-.4 0-.72-.32-.72-.72s.32-.72.72-.72c.4 0 .72.32.72.72s-.32.72-.72.72zm-4.12 2.96h-6.1v1.06h6.1v-1.06zm-6.11 3.15h6.1v-1.06h-6.1v1.06z"></path> </g> </div> <a class="comment-count" href="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322?komentarai=1" target="_blank"> <div class="desktop-icon-div comment-icon-container"> <div class="sticky-comment-icon"></div> <b class="comment-count">125</b> </div> </a> </div> <div class="article-text-container" id="news_main"> <div class="pJustify" style="text-align: left;"> <p <p>Socialinės apsaugos ir darbo ministerija skelbia, kad senyvo amžiaus gyventojams, neįgaliesiems, našliams, našlaičiams ketinama skirti vienkartinę 200 eurų dydžio išmoką.</p> <p>Ji bus išmokama, jeigu žmogui iki 2020 m. pabaigos jau yra arba bus paskirta <a href="/gaires/senatvės-pensija" target="_blank">senatvės pensija</a> ar kai kurios kitos „Sodros“ pensijos.</p> <p>Vienkartinė išmoka būtų mokama be atskiro asmens prašymo 2020 m. rugpjūčio mėn. (šiemet Seimo rinkimai bus spalio pradžioje).</p><div class="containerRelatedNews"> <div class="redBox"></div> <div class="relatedNews"> <div class="articleSeeAlsoContainer"> <div class="mainTitle"> <p style="margin: 0;">TAIP PAT SKAITYKITE:</p> </div> </div> </div> <div id="relatedArticlesList"> <div class="relatet-article"> <div id="relArticle-photoSize"> <a href="/naujiena/lietuva/skvernelis-paaiskino-kodel-ir-kam-ketina-skirti-po-200-euru-n1041248" target="_blank"> <img width="200" height="110" alt="Pinigai (nuotr. Fotodiena/Justino Auškelio)" src="https://static2.inspektorius.lt/usi/200x110/3/8a/77/4e/8a774e1470a7481eaa0b42e19200eb1e.jpg?v=4.1.1.17&amp;t=cr&amp;s=200x110&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/c7/0d/43/1c/c70d431c3c8cb5f038707306334aaab2.jpg" /> </a> </div> <div class="related-article-container"> <span> <b><a class="inside" href="/naujiena/lietuva/skvernelis-paaiskino-kodel-ir-kam-ketina-skirti-po-200-euru-n1041248" target="_blank">Skvernelis paaiškino, kodėl ir kam ketina skirti po 200 eurų</a></b> </span> </div> </div> <div class="relatet-article"> <div id="relArticle-photoSize"> <a href="/naujiena/verslas/vardija-kaip-per-karantina-pasikeite-atlyginimai-prekybos-tinkluose-n1041113" target="_blank"> <img width="200" height="110" alt="(Maxima LT nuotr.)  " src="https://static2.inspektorius.lt/usi/200x110/3/22/c5/9b/22c59b4e958852f2913d2e2686f99674.jpg?v=4.1.1.17&amp;t=cr&amp;s=200x110&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/a6/36/b5/eb/a636b5eb8187b25707683a92e25fc407.jpg" /> </a> </div> <div class="related-article-container"> <span> <b><a class="inside" href="/naujiena/verslas/vardija-kaip-per-karantina-pasikeite-atlyginimai-prekybos-tinkluose-n1041113" target="_blank">Vardija, kaip per karantiną pasikeitė atlyginimai prekybos tinkluose</a></b> </span> </div> </div> <div class="relatet-article"> <div id="relArticle-photoSize"> <a href="/naujiena/verslas/kokia-krize-didziausios-algos-dabar-dar-didesnes-nei-pries-metus-n1040948" target="_blank"> <img width="200" height="110" alt="(nuotr. Fotodiena/Justino Auškelio)" src="https://static2.inspektorius.lt/usi/200x110/3/59/c5/76/59c576e9dc8fae7b776cf818e70220a6.jpg?v=4.1.1.17&amp;t=cr&amp;s=200x110&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/51/8e/37/e3/518e37e3936d925eae02d7ba89f59c03.jpg" /> </a> </div> <div class="related-article-container"> <span> <b><a class="inside" href="/naujiena/verslas/kokia-krize-didziausios-algos-dabar-dar-didesnes-nei-pries-metus-n1040948" target="_blank">Kokia krizė? Didžiausios algos dabar dar didesnės nei prieš metus</a></b> </span> </div> </div> </div> </div> <p>Jei žmogui teisė į išvardintas išmokas atsiras po šių metų liepos 1 d., vienkartinę išmoką jis gaus kartu su jau paskirta išmoka.</p> <p>„Sodros“ duomenimis, Lietuvoje senatvės pensiją gauna 611 tūkst. gyventojų.</p> <p>Iš jų 158,5 tūkst. gauna daugiau nei 437 eurų dydžio pensiją (25,9 proc. visų senatvės pensijų gavėjų), o 25,2 tūkst. gauna daugiau nei 610 eurų pensiją (4,1 proc.).</p> <p>Kitaip nei <a href="/gaires/darbo-užmokestis" target="_blank">darbo užmokestis</a>, net ir pačios didžiausios pensijos Lietuvoje neapmokestinamos, nors beveik visose Europos Sąjungos (ES) šalyse tai įprasta.</p> <p>437 eurai arba 610 eurų į rankas yra 607 eurai arba 910,5 eurai ant popieriaus. Tai yra viena arba pusantros minimalios mėnesinės algos.</p> <p>Būtent tokio dydžio yra maksimalios valstybės subsidijos darbuotojams, kuriems dėl karantino paskelbtos prastovos. Tokių yra beveik 90 tūkst.</p> <p>Paprastai tariant, jau dabar nemaža dalis pensininkų gauna didesnes pajamas, nei darbingo amžiaus žmonės, patekę į prastovas. Nepaisant to, Vyriausybė nusprendė, kad jiems labiau verta duoti pinigų nei skurdžiau besiverčiantiems darbingo amžiaus žmonėms. Ar tai teisinga?</p> <p><b>Pasigenda didesnės diferenciacijos</b></p> <p>Lietuvos profesinių sąjungų konfederacijos pirmininkė Inga Ruginienė tiesiai neatsakė, ar teisinga labiau remti kai kuriuos pensininkus negu darbuotojus.</p></p><div class="custom-div" style="line-height:15px;">REKLAMA
+ <div id='tv660x100_straipsnis_v1_tv3_lt'></div> </div> <p>„Aš manau, kad mums nereikėtų sunkiuoju laikotarpiu skirstyti žmonių į vieną ar kitą grupę. Iš tikrųjų visiems yra labai sunku. Akivaizdu, kad pensinio amžiaus žmonės gyvena skurde – tai buvo pripažįstama ir iki karantino. Taigi, tai ta pagalba, manau, yra gera priemonė.</p> <p>Tačiau reikia pasakyti, kad ir dirbantiems žmonėms pagalbos turbūt reikia daugiau, negu dabar yra priemonių pakete. Mes, kaip Profesinių sąjungų konfederacija, tą ne vieną kartą sakėme. Tų priemonių spektras turi būti išplėstas. Atrodo, kad žingsnis po žingsnio Vyriausybė reaguoja, vis prideda, keičia priemones ir bando įsiklausyti“, – dabartinę padėtį komentavo pirmininkė.</p> <p>Vis dėlto, anot jos, dabar darbuotojų paramai skiriamos lėšos nėra stulbinamai didelės ir pagalba turėtų būti didesnė. Svarbu, kad Vyriausybė pradėtų reaguoti atsižvelgdama į šių dienų realijas, nebijotų keisti priemonių, jas papildytų ir skirtų daugiau dėmesio darbuotojams.</p> <p>Į klausimą, ar iš principo teisinga, kad kai ir taip geriau už darbuotojus gyvenantys kai kurie pensininkai gaus dar daugiau pinigų, I. Ruginienė atsakė taip:</p> <p>„Sutinku, kad turėtų būti tam tikra diferenciacija. Lygiai taip pat, kaip kalbame apie subsidijas dėl prastovų arba nedarbingumo išmokas. Mokant jas irgi galėtų būti tam tikra diferenciacija.&nbsp;</p> <p>Visada nuosekliai laikėmės pozicijos ir dabar primename Vyriausybei, kad mes turime siekti palaikyti tuos verslus, kurie sąžiningai mokėjo mokesčius, tuos žmones, kurie iš tikrųjų mokėjo mokesčius ir jų neslėpė. Akivaizdu, kad jiems parama turėtų būti didesnė. Tos diferenciacijos galbūt ir trūksta.“</p> <p><b>Politinės valios užtenka ne viskam</b></p> <p>Į žinią apie 200 eurų išmokas visiems pensininkams sureagavo ir vienas iš darbdavių atstovų Trišalėje taryboje Andrius Romanovskis, kuris taip pat yra Lietuvos verslo konfederacijos viceprezidentas.</p><div class="custom-div" style="line-height:15px;">REKLAMA
+ <div id='tv660x100_straipsnis_v2_tv3_lt'></div> </div> <p>„Mano mama džiaugiasi – karantinas ne tik sumažino jos nereikalingas išlaidas, bet dar ir padidins pajamas. Tikiu, kad pinigus ji gaus žaibo greičiu – per dieną, dvi“, – asmeninėje „Facebook“ paskyroje rašė jis.</p> <p>Tiesa, taip pat pridūrė: „mūsų pensininkų pajamos yra ubagiškos, o vaikai ir anūkai grynaisiais pinigais turi „lyginti“ šią socialinę nelygybę.“</p> <p>Paklaustas, ką galėtų pridėti prie tokios savo pozicijos A. Romanovskis buvo lakoniškas:</p> <p>„Nėra ką pridėti – kai yra politinė valia, tai pensininkai gaus pinigus per keletą dienų, gaila, kad nebuvo tokios valios darbuotojų ir verslo atžvilgiu.“</p> <p><b>Labai klaidingas sprendimas</b></p> <p>Portalas tv3.lt taip pat pasiteiravo, ką apie 200 eurų išmoką galvoja, provincijoje kartu su metais vyresniu vyru gyvenanti 71 metų pensininkė Ilona (tikras vardas ir pavardė redakcijai žinoma).</p> <p>„Na, ką aš žinau. Mano pensija 400 eurų, vyro – 300 eurų. Negali sakyti, kad daug, bet tikrai pragyvenam ir nesakyčiau, kad mums baisiai ko neužtektų. Aišku, papildomi pinigai nepakenks, bet nemanau, kad juos turėtų gauti visi be išimties. Tai neteisinga.&nbsp;</p> <p>Čia taip pat kaip su vaiko pinigais. Taip, yra daug nepasiturinčių šeimų, kuriems jie labai reikalingi. Bet kodėl tuos pinigus reiktų duoti ir turtingoms šeimoms, niekaip nesuprantu“, – kalbėjo moteris.</p> <p>Vilniaus universiteto profesorius <a href="/gaires/teodoras-medaiskis" target="_blank">Teodoras Medaiskis</a> gana griežtai įvertino naują Vyriausybės pasiūlytą priemonę.</p> <p>„Komentaras iš vieno sakinio. Aš visiškai nepritariu, manau, kad tai labai klaidingas sprendimas, geriau pinigus skirti tiems, kas tikrai nukentėjo nuo šito viso, kas neteko darbo, kas turėjo verslą sumažinti ir panašiai, o ne visiems dalinti po du šimtus eurų. Mano nuomone, tai yra klaidingas sprendimas“, – sakė profesorius.</p><div class="custom-div" style="line-height:15px;">REKLAMA
+ <div id='instreamtestas'></div> </div> <p><b>Pinigų gaus, nes nebėgios ieškoti nuolaidų?</b></p> <p>Paprastai teisės aktų projektus, kurie susiję su socialiniu draudimu ir „Sodros“ išmokomis, rengia Socialinės apsaugos ir darbo ministerija.</p> <p>Į klausimą, ar teisinga, kad ir taip gaudami didesnes pajamas nei prastovose esantys darbuotojai, kai kurie pensininkai papildomai dar gaus po 200 eurų, ketvirtadienį ministerija atsakė taip:</p> <p>„Senatvės pensininkai ir neįgalūs asmenys yra didžiausią skurdo riziką patiriančių asmenų grupės. Pasak Statistikos departamento, didžiausias skurdo rizikos lygis 2018 m. buvo 65 metų ir vyresnių asmenų amžiaus grupėje – 37,7 proc. Nevyriausybinės organizacijos, pavyzdžiui, Nacionalinis skurdo mažinimo organizacijų tinklas, išskiria tokias labiausiai pažeidžiamas grupes: bedarbiai, pensininkai, neįgalieji ir vieniši tėvai su vaikais.</p> <p>Bedarbiai įprastai gauna nedarbo išmokas, tačiau ne visi, todėl numatoma įvesti laikiną darbo paieškos išmoką, kuri aktualiausia tiems žmonėms, kurie neturi reikiamo stažo nedarbo išmokai gauti arba jų išmokos mokėjimo laikas yra pasibaigęs. Laikinoji išmoka būtų mokama ne ilgiau nei 6 mėn. ir siektų 200 eurų tiems, kurie negauna nedarbo išmokos, bei 42 eurus tiems, kas gauna. &nbsp;</p> <p>Senatvės, netekto darbingumo/invalidumo pensininkams, našliams, našlaičiams, šalpos ir kitų išmokų gavėjams iš „Sodros“ siūlome vienkartinę 200 Eur išmoką. Ypač sudėtinga situacija tiems žmonėms, kuriems senatvės pensijos amžius sueina šiais metais, tačiau jie netenka darbo – galimybės susirasti darbą priešpensinio amžiaus asmeniui per arba po karantino yra laba minimalios&nbsp;Šeimoms su vaikais, per karantiną netekusioms pajamų, laikinai didiname vaiko pinigus.&nbsp;Visiems nepasiturintiems žmonėms didiname socialines pašalpas, kompensacijas už būsto šildymo išlaidas.</p><div class="custom-div" style="line-height:15px;">REKLAMA
+ <div id='tv660x100_straipsnis_v4_tv3_lt'></div> </div> <p>Numatome toliau tęsti subsidijų mokėjimą po karantino darbdaviams už darbuotojus, kurie iš prastovų grįžta į darbus.
+Priešinti visuomenės grupės šiuo sudėtingu periodu būtų tikrai neatsakinga, stengiamės turimas lėšas visoms visuomenės grupėms paskirstyti solidariai. Vidutinė senatvės pensijas šiuo metu siekia 377 eurus, šalpos išmokų grindys – apie 140 eurų.“</p> <p>Premjeras <a href="/gaires/saulius-skvernelis" target="_blank">Saulius Skvernelis</a> trečiadienį paaiškino, kad pensininkams reikia duoti daugiau pinigų, nes jie esą labiau nukentės dėl karantino.</p> <p>„Nutarta skirti 200 eurų vienkartinę išmoką toms asmenų grupėms, kurios yra arčiausiai skurdo ribos arba labiausiai paveiktos yra ir su tais apribojimais, kurie apsunkina jų gyvenimą. Tai aš kalbu apie mūsų senjorus, senatvės pensininkus, kurie patyrė įvairiausių sunkumų.</p> <p>Tai yra tikrai ta socialinė grupė, kuri gyvena pakankami sunkiai ir šiomis sąlygomis negali daryti to, ką įprastomis sąlygomis darydavo – apibėgti 10–15 parduotuvių, rasti pigiausią produktą, tokiu būdu taupyti per įvairias nuolaidas. Šiandien jie tokios galimybės neturi kažką užsiauginti ir tai parduoti turgelyje ar prie prekybos centro ir prisidurti prie senatvės pensijos.</p> <p>Šitie ribojimai šiai grupei išliks ir toliau, todėl skiriama 200 eurų išmoka ne tik senatvės pensininkams, bet ir šalpos pensininkams nuo našlaičių iki našlių“, – žurnalistams Vyriausybėje trečiadienį kalbėjo S. Skvernelis.</p> <div class="comment-form comment-form-1041322"> <form action="/UComments/saveCommentReply/1041322" method="POST" autocomplete="off"> <input type="hidden" name="commentsUrl" value="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322?komentarai=1"> <div class="reply-comment-container"> <input type="hidden" name="commentsUrl" id="popupCommentUrl" value="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322?komentarai=1"> <textarea id="newComment" class="new-comment-text new-comment-1041322" type="text" name="comment" placeholder="Rašyti komentarą..." required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"></textarea> <br> <input class="new-comment-author" type="text" name="name" placeholder="Vardas" required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"> <input type="submit" value="Komentuoti" class="comment-submit-btn"> </div> </form> </div> <div class="write-comment write-comment-1041322" onclick="writeComment(1041322)"> <b>Rašyti komentarą...</b> </div> <div class="jst_comments_list comments-list-1100"> <div class="new-comment-container"> <div class="user-icon-container"> <span class="userIcon">G</span> </div> <div class="comment-info-container"> <div class="username">Gintas</div> <div class="d-flex"> <div class="date-v2">
+2020-04-30 07:22:13
+</div> <div class="unkind-comment" onclick="UComments.report_v2(this,'1676797');"> <div class="item-msg">Pranešti apie netinkamą komentarą</div> <div class="arrowTriangle"> <div class="triangleExt"> <div class="triangleInt"></div> </div> </div> </div> </div> </div> </div> <div class="new-comment-content">
+Prajuokino - turtingas pensininkas !!! O jei ir gauna daugiau pensijos už pašalpinį,tai jis tą didesnę pensiją UŽSIDIRBO per kokius 40 metų,o ne gauna ją už dyką,negi taip sunku suprast
+</div> <div class="comment-actions"> <div class="comment-action-container"> <div class="response" id="replyComment-1676797" onclick="showCommentReply(1676797)"> <div class="main-sprite-v2 arrow-ico"></div> <div class="reply-text" onclick="UComments.showReply(1676797)">Atsakyti</div> </div> <div class="voices"> <div class="like-nr up" rel="176">+176</div> <div class="like-button" onclick="UComments.rate_v2(this, '1676797', 'up')"> <input type="hidden" class="up-number" value="0"> <div class="main-sprite-v2 like-ico-new"></div> </div> <div class="dislike-button" onclick="UComments.rate_v2(this, '1676797', 'down')"> <input type="hidden" class="down-number" value="0"> <div class="main-sprite-v2 dislike-ico"></div> </div> <div class="dislike-nr down" rel="12">-12</div> </div> </div> </div> <div id="showReply-1676797" class="answer-comment-form"> <form action="/UComments/saveCommentReply/1041322" method="POST" autocomplete="off" name="forma"> <input type="hidden" name="commentId" value="1676797"> <div style="margin-top: 10px;"> <input type="hidden" name="commentsUrl" id="popupCommentUrl" value="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322?komentarai=1"> <textarea class="new-comment-text comment-reply-1676797" id="commentText" name="comment" placeholder="Rašyti komentarą..." required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"></textarea> <br> <input class="new-comment-author" type="text" name="name" id="commentName" placeholder="Vardas" required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"> <input class="comment-submit-btn" type="submit" value="Atsakyti"> </div> </form> </div> <div class="new-comment-container"> <div class="user-icon-container"> <span class="userIcon">V</span> </div> <div class="comment-info-container"> <div class="username">Vau</div> <div class="d-flex"> <div class="date-v2">
+2020-04-30 07:47:57
+</div> <div class="unkind-comment" onclick="UComments.report_v2(this,'1676805');"> <div class="item-msg">Pranešti apie netinkamą komentarą</div> <div class="arrowTriangle"> <div class="triangleExt"> <div class="triangleInt"></div> </div> </div> </div> </div> </div> </div> <div class="new-comment-content">
+Apgailėtinas ir visas pilnas pavydo straipsnis. Ar ne laikas pradėti dirbti., o ne skaičiuoti svetimus UŽDIRBTUS per ilgą savo darbo stažą pinigus.
+</div> <div class="comment-actions"> <div class="comment-action-container"> <div class="response" id="replyComment-1676805" onclick="showCommentReply(1676805)"> <div class="main-sprite-v2 arrow-ico"></div> <div class="reply-text" onclick="UComments.showReply(1676805)">Atsakyti</div> </div> <div class="voices"> <div class="like-nr up" rel="127">+127</div> <div class="like-button" onclick="UComments.rate_v2(this, '1676805', 'up')"> <input type="hidden" class="up-number" value="0"> <div class="main-sprite-v2 like-ico-new"></div> </div> <div class="dislike-button" onclick="UComments.rate_v2(this, '1676805', 'down')"> <input type="hidden" class="down-number" value="0"> <div class="main-sprite-v2 dislike-ico"></div> </div> <div class="dislike-nr down" rel="6">-6</div> </div> </div> </div> <div id="showReply-1676805" class="answer-comment-form"> <form action="/UComments/saveCommentReply/1041322" method="POST" autocomplete="off" name="forma"> <input type="hidden" name="commentId" value="1676805"> <div style="margin-top: 10px;"> <input type="hidden" name="commentsUrl" id="popupCommentUrl" value="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322?komentarai=1"> <textarea class="new-comment-text comment-reply-1676805" id="commentText" name="comment" placeholder="Rašyti komentarą..." required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"></textarea> <br> <input class="new-comment-author" type="text" name="name" id="commentName" placeholder="Vardas" required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"> <input class="comment-submit-btn" type="submit" value="Atsakyti"> </div> </form> </div> <div class="new-comment-container"> <div class="user-icon-container"> <span class="userIcon">O</span> </div> <div class="comment-info-container"> <div class="username">O</div> <div class="d-flex"> <div class="date-v2">
+2020-04-30 06:05:04
+</div> <div class="unkind-comment" onclick="UComments.report_v2(this,'1676785');"> <div class="item-msg">Pranešti apie netinkamą komentarą</div> <div class="arrowTriangle"> <div class="triangleExt"> <div class="triangleInt"></div> </div> </div> </div> </div> </div> </div> <div class="new-comment-content">
+Kur jūs matėt turtinga pensininka ?
+</div> <div class="comment-actions"> <div class="comment-action-container"> <div class="response" id="replyComment-1676785" onclick="showCommentReply(1676785)"> <div class="main-sprite-v2 arrow-ico"></div> <div class="reply-text" onclick="UComments.showReply(1676785)">Atsakyti</div> </div> <div class="voices"> <div class="like-nr up" rel="94">+94</div> <div class="like-button" onclick="UComments.rate_v2(this, '1676785', 'up')"> <input type="hidden" class="up-number" value="0"> <div class="main-sprite-v2 like-ico-new"></div> </div> <div class="dislike-button" onclick="UComments.rate_v2(this, '1676785', 'down')"> <input type="hidden" class="down-number" value="0"> <div class="main-sprite-v2 dislike-ico"></div> </div> <div class="dislike-nr down" rel="10">-10</div> </div> </div> </div> <div id="showReply-1676785" class="answer-comment-form"> <form action="/UComments/saveCommentReply/1041322" method="POST" autocomplete="off" name="forma"> <input type="hidden" name="commentId" value="1676785"> <div style="margin-top: 10px;"> <input type="hidden" name="commentsUrl" id="popupCommentUrl" value="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322?komentarai=1"> <textarea class="new-comment-text comment-reply-1676785" id="commentText" name="comment" placeholder="Rašyti komentarą..." required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"></textarea> <br> <input class="new-comment-author" type="text" name="name" id="commentName" placeholder="Vardas" required oninvalid="this.setCustomValidity('Privaloma užpildyti')" oninput="this.setCustomValidity('')"> <input class="comment-submit-btn" type="submit" value="Atsakyti"> </div> </form> </div> </div> <a href="/naujiena/verslas/kodel-turtingiems-pensininkams-turime-duoti-daugiau-pinigu-nei-darbuotojams-n1041322?komentarai=1" target="_blank"> <div class="read-all-comments"> <b>SKAITYTI KOMENTARUS (125)</b> </div> </a> <script src="/mjs/UComments/UComments.js"></script> <script>
+    function showCommentReply(id) {
+        $("#replyComment-"+id).hide();
+        $("#showReply-"+id).show();
+        $(".comment-reply-"+id).focus();
+    }
+
+    function writeComment(id) {
+        $(".write-comment-" + id).hide();
+        $(".comment-form-" + id).show();
+        $(".new-comment-" + id).focus();
+
+    }
+
+    $(".new-comment-text").focusin( function() {
+        $(this).css('background-color', 'white');
+    }).focusout( function() {
+        $(this).css('background-color', '#f6f6f6');
+    });
+
+    $(".new-comment-author").focusin(function(){
+        $(this).css('background-color', 'white');
+    }).focusout( function() {
+        $(this).css('background-color', '#f6f6f6');
+    });
+
+    $(".like-button").click(function(){
+
+        if ($(this).closest('.voices').find('.up-number').val() == 0) {
+
+            var likeNum = $(this).closest('.voices').find('.like-nr').html();
+            likeNum = likeNum.replace('+', '');
+            likeNum++;
+            $(this).closest('.voices').find('.like-nr').html('+' + likeNum);
+            $(this).closest('.voices').find('.up-number').val(1);
+        }
+    });
+
+    $(".dislike-button").click(function(){
+
+        if ($(this).closest('.voices').find('.down-number').val() == 0) {
+
+            var dislikeNum = $(this).closest('.voices').find('.dislike-nr').html();
+            dislikeNum = dislikeNum.replace('-', '');
+            dislikeNum++;
+            $(this).closest('.voices').find('.dislike-nr').html('-' + dislikeNum);
+            $(this).closest('.voices').find('.down-number').val(1);
+        }
+    });
+</script> </div> </div> </div> </div> <div style="height: 100%; width: 300px;" class="right-ads-block" article-id="1041322"> <div id="firstRightAd-1041322" class="right-ad right-ad-1041322"><div id="customReklama6" class="custom-stick-div">REKLAMA
+ <div id='tv300x600_1d_tv3_lt'></div> </div> </div> <div id="secondRightAd-1041322" class="right-ad right-ad-1041322"><div id="customReklama7" class="custom-stick-div">REKLAMA
+ <div id='tv300x600_2d_tv3_lt'></div> </div> </div> <div id="thirdRightAd-1041322" class="right-ad right-ad-1041322"><div id="customReklama8" class="custom-stick-div">REKLAMA
+ <div id='tv300x600_3d_tv3_lt'></div> </div> </div> <div id="fourthRightAd-1041322" class="right-ad right-ad-1041322"><div id="customReklama9" class="custom-stick-div">REKLAMA
+ <div id='tv300x600_4d_tv3_lt'></div> </div> </div> <div id="fifthRightAd-1041322" class="right-ad right-ad-1041322"><div id="customReklama10" class="custom-stick-div">REKLAMA
+ <div id='tv300x600_1d_TV_tv3_lt'></div> </div> </div> </div> </div> <script src='https://www.google.com/recaptcha/api.js?render=explicit&hl=lt' async defer></script> <div id="reportError" class="tpl"> <div class="errorBlock"> <span class="close">&times;</span> <h2>Pranešti klaidą</h2> <div class="errorBlockPlace"> <label for="errorBadText">Pažymėtos klaidos tekstas</label> <input type="text" name="errorText" class="inputBlock errorBadText" id="errorBadText"> <input type="hidden" name="errorUrl" class="errorUrl" id="errorUrl"> <label for="errorGoodText">Jūsų komentaras</label> <textarea name="errorComment" class="inputBlock inputText errorGoodText" id="errorGoodText"></textarea> <div class="errorMsgText"></div> <div class="clear"></div> <div class="captchaBlock"> <div class="recaptchaPlace" style="width: 305px; margin: 5px auto; clear:both;" data-sitekey="6Ld3cUEUAAAAAFPgUiD6ZPLvq_GjQymkCBcMBTks"></div> </div> <div class="btnBlock"> <span class="button btn reportTextError" type="button">SIŲSTI</span> </div> </div> <div class="clear"></div> </div> </div> <style>
+    #reportError {
+        display:none;
+        opacity: 0;
+        position: fixed;
+        z-index: 100023;
+        width: 100%;
+        top: 15%;
+        left: 0%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease-out;
+    }
+    #reportError .errorBlock {
+        border-top: 5px solid #ff0000;
+        background: #FFF;
+        padding: 0 15px 20px 15px;
+        min-width: 330px;
+        max-width: 680px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+    #reportError .errorBlock .close {
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        cursor: pointer;
+        color: #BBB;
+        font-size: 37px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+    #reportError .errorBlock h2 {
+        color: #ff0000;
+        text-transform: uppercase;
+        margin-top: 28px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    #reportError .errorBlock label {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    #reportError .clear {
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    #reportError .data.msg {
+        display: block;
+        width: 100%;
+        color: red;
+        text-align: center;
+        clear: both;
+    }
+    #reportError .errorBlock .inputBlock {
+        border: 1px solid #E6E6E6;
+        font-size: 16px;
+        line-height: 15px;
+        padding: 12px 5px 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #reportError .errorBlock .inputBlock.inputText {
+        height: 75px;
+        margin-bottom: 5px;
+        line-height: 18px;
+    }
+    #reportError .errorBlock .captchaBlock {
+        float: left;
+    }
+    #reportError .errorBlock .btnBlock {
+        float: right;
+        display: inline-block;
+        margin-top: 35px;
+    }
+    #reportError .errorBlock .btn {
+        color: #FFF;
+        background: #ff0000;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    #reportError .errorBlock .msg {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px;
+    }
+    #textErrorBtn {
+        position: absolute;
+        display: block;
+        left: -9999px;
+        top: -9999px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    .has-error {
+        border: 1px solid red;
+    }
+
+    #TB_overlay.reportErrorBg {
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10001;
+        text-align: center;
+        background-color: #000;
+        filter: alpha(opacity=80);
+        opacity: 0.80;
+    }
+
+    @media (max-width: 767px) {
+        #reportError .errorBlock .captchaBlock {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        #reportError .errorBlock .btnBlock {
+            float: none;
+            width: 100%;
+            margin: 20px auto 0 auto;
+        }
+
+        #reportError .errorBlock .btn {
+            width: 100%;
+        }
+    }
+</style> <script>
+    
+    if (typeof (reportTextError) == 'undefined') {
+        var reportTextError = {
+            holder: '',
+            err: '',
+            txt: '',
+            textErrorBtn: '',
+            isMob: 'ontouchstart' in document.documentElement,
+            image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJGMTMwREI1MTA2NzExRUE4Mzc5QUYyNjREOUFGOTAyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJGMTMwREI2MTA2NzExRUE4Mzc5QUYyNjREOUFGOTAyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkYxMzBEQjMxMDY3MTFFQTgzNzlBRjI2NEQ5QUY5MDIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkYxMzBEQjQxMDY3MTFFQTgzNzlBRjI2NEQ5QUY5MDIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz73eUh+AAAB00lEQVR42sSXv0vDQBTHL1VrJxEHoSgdRKuIg4OioAh2k/4FipNgQdSpBUcXJ3EVQVtwcdDNpQhFcHBUsZOIk0NtK4j2B2JFiN+X9qAWk+YuTfLgQ5Lh3efucsndU1RmOsZAGMyCEdALukAJvIJHcA2STFXTplpUjfGARXALVAHuwbKWjyc9jMTj4EZQ2sgdmBCVR8CXRTHnG2yYlW+3SNrITjP5uk1iTkxPPg0qphtKp1Ut8nkR+Q+Y43JPbdF3gATwMnujDRwxRfHRA5evgFHmTARBhMsVEGXORhSj95B8Bgw5LA+AeZIvMHciTPIpl+STJB92SR4kebdUajZbveZysvIekrdLpRaL1Wu5LP3Ne2r7sbw8k5GVv5P8SSq1UPjbCfF4pn/6vs2biR5xGnnKpdWeUtCDTty80OpzUEzvyk8jr4BD4fT6CQyFRLPjyPvku9oeeHNo1LRSd+u3VBLHHJJvYdT5/47Oxzav8FOjM5wXXNgkTmntNzm9UgdOWiw+Az6RomENlCxKKX8TKKIVC+EHBxIFBJ2CEyAgWy7VMwiuTIovwYCRVFTOtKmrvoqCjvQDrOpNsVU5px8kG8TnoM+s1IqcQyXwA1gSlXJ+BRgAudr6ZjRK4/QAAAAASUVORK5CYII=',
+            selectedText: function () {
+                return window.getSelection ? window.getSelection().toString() : document.getSelection ? document.getSelection() : document.selection ? document.selection.createRange().text : void 0
+            },
+            reportRemove: function () {
+                $('#reportError.removable, #TB_overlay').remove();
+            },
+            validateReCaptcha: function () {
+                $f = $(".errorBlockPlace .g-recaptcha-response");
+                $(".removable .recaptchaPlace").hasClass("has-error") && $(".recaptchaPlace").removeClass("has-error");
+                $v = $.isEmptyObject($.trim($f.val())) ? !1 : $f.val();
+                return $v ? $v : ($(".removable .recaptchaPlace").addClass("has-error"), !1)
+            },
+            send: function (err_m, err) {
+                $('.errorMsgText', err).html('');
+
+                $.post('/Misc/reportErrorText/?t=' + (new Date()).getTime() + '-' + Math.random(), err_m, function (data) {
+                    if (data) {
+                        if (data.success) {
+                            $('.errorBlockPlace', err).html('<div class="msg">Pranešimas apie klaidą priimtas</div>');
+                        } else if (data.error && data.msg) {
+                            $('.errorMsgText', err).html('<div class="msgs">' + data.msg + '</div>');
+                        } else {
+                            $('.errorBlockPlace', err).html('<div class="msg">' + (data.msg || 'Pranešimas apie klaidą priimtas.') + '</div>');
+                        }
+                    } else {
+                        $('.errorBlockPlace', err).html('<div class="msg">' + 'Pranešimas apie klaidą priimtas.' + '</div>');
+                    }
+
+                    if (typeof ('grecaptcha') != 'undefined') {
+                        grecaptcha.reset();
+                    }
+
+                }, 'json');
+            },
+            triggerButton: function (b) {
+                if (reportTextError.textErrorBtn != '') {
+                    reportTextError.textErrorBtn.style.top = "-9999px";
+                    reportTextError.textErrorBtn.style.left = "-9999px";
+                }
+                reportTextError.err = $('#reportError.tpl:eq(0)').clone(true);
+                $(reportTextError.err).addClass('removable').removeClass('tpl');
+                if (typeof ('grecaptcha') != 'undefined') {
+                    var captchaWidgetId = grecaptcha.render($('.recaptchaPlace', reportTextError.err)[0], {
+                        'sitekey': $('.recaptchaPlace', reportTextError.err).data('sitekey'),  // required
+                        'theme': 'light',  // optional
+                        //'callback': 'verifyCallback'  // optional
+                    });
+                }
+
+                reportTextError.reportRemove();
+                var tb = $('<div id="TB_overlay" class="reportErrorBg"></div>');
+                $('body').append(tb);
+
+                $(tb).on('click', function () {
+                    reportTextError.reportRemove();
+                });
+                $(reportTextError.err).on('click', '.close', function () {
+                    reportTextError.reportRemove();
+                });
+
+                $(reportTextError.err).find(".errorBadText").val(reportTextError.txt);
+                $(reportTextError.err).find(".errorUrl").val(location.href);
+
+                $('.btn', reportTextError.err).on('click', function () {
+                    var a = reportTextError.validateReCaptcha();
+                    if (a) {
+                        var sData = $('input,select,textarea', reportTextError.err).serializeArray();
+                        reportTextError.send(sData, reportTextError.err);
+                    }
+                });
+
+                $('body').append(reportTextError.err);
+                $(reportTextError.err).css({'display': 'block', 'opacity': 1});
+            },
+            init: function () {
+
+                document.onselectionchange = function () {
+                    "" !== window.getSelection().toString() && (reportTextError.txt = window.getSelection().toString())
+                };
+
+                if ($('.sticky-social-segment').length) {
+                    $('.sticky-social-segment div:eq(1)').after('<div><a class="errorTextTrigger" href="javascript:;"><img src="' + reportTextError.image + '" height="20"></a></div>');
+                }
+
+                $(document).keydown(function (t) {
+                    if (t.ctrlKey && 13 == t.keyCode && reportTextError.txt != '') {
+                        reportTextError.triggerButton();
+                    }
+                });
+
+                reportTextError.holder = document.getElementById('mainbar') ? document.getElementById('mainbar') : (document.getElementsByClassName("article_inside")[0] || 0);
+                var a = reportTextError.holder || 0;
+                if (a) {
+                    if (!reportTextError.textErrorBtn) {
+                        reportTextError.textErrorBtn = document.createElement("div");
+                        var b = reportTextError.textErrorBtn;
+                        b.id = "textErrorBtn";
+                        b.setAttribute("class", "textErrorBtn");
+                        b.setAttribute("href", "javascript:;");
+                        b.setAttribute("title", "Pranešti klaidą");
+                        a.parentNode.insertBefore(b, a.nextSibling);
+                        var c = document.createElement("img");
+                        c.setAttribute('src', reportTextError.image);
+                        b.appendChild(c);
+                    }
+                    a.addEventListener("mouseup", function (a) {
+                        var d = reportTextError.selectedText();
+                        reportTextError.txt = d.toString();
+
+                        if (d != '' && d != ' ') {
+                            reportTextError.textErrorBtn.style.top = a.pageY - 50 + "px";
+                            reportTextError.textErrorBtn.style.left = a.pageX - 10 + "px";
+                            reportTextError.textErrorBtn.addEventListener("click", function () {
+
+                                reportTextError.triggerButton(b);
+
+                                reportTextError.textErrorBtn.style.top = "-9999px";
+                                reportTextError.textErrorBtn.style.left = "-9999px";
+                                return !1;
+                            });
+                        }
+                    });
+                    a.addEventListener("mousedown", function () {
+                        reportTextError.textErrorBtn.style.top = "-9999px";
+                        reportTextError.textErrorBtn.style.left = "-9999px"
+                    });
+                } else {
+                    $('body').on('click', '.errorTextTrigger', function () {
+                        reportTextError.triggerButton();
+                    });
+                }
+
+            },
+        };
+
+        $(function () {
+            reportTextError.init();
+        });
+    }
+    
+</script> </div> <div style="height: auto; background-color: rgb(246, 246, 246);"> <div style="width: 760px; display: flex; justify-content: flex-end;"> <div style="width: 684px;"> <div class="rekomenduojame"> <div style="text-align: center; font-size: 14px; font-family: Arial;"> <b>REKOMENDUOJAME</b> <br /> <img src="/pimg/desktop-icon/rekomenduojame_blokelio_rodykle.png"> </div> </div> <div class="recomend-ad-block"> <div class="rubricSlider fmSl-1041322"> <ul style="clear:both;"> <li style="float: left;"> <div id="block-5news" class="bbId3804 cCn1603799862"> <div class="commonBlocHeader big"> <div class="blocHeaderInfo"> <div class="headerInfoTitle"> <a data-cat="" href="/rubrika/naujienos/gyvenimas/sveikas-vienas-sveiki-visi/">
+Sveikas vienas - sveiki visi</a> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem small"> <div id="titulinis_branding_NOKEYS_tv3_187266"></div> </div> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/gyvenimas/aktualu-kiekvienam-stai-kaip-be-termometro-galite-suzinoti-kad-karsciuojate-n1078370"> <div class="commonVisualIco medium"> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/8e/9e/a4/8e9ea421437ad7128132f3ec32061e3c.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/92/b7/b1/e9/92b7b1e9d671687d58f47a069d4c09f0.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/gyvenimas/aktualu-kiekvienam-stai-kaip-be-termometro-galite-suzinoti-kad-karsciuojate-n1078370">
+Aktualu kiekvienam: štai, kaip be termometro galite sužinoti, kad karščiuojate
+</a> <a href="/naujiena/gyvenimas/aktualu-kiekvienam-stai-kaip-be-termometro-galite-suzinoti-kad-karsciuojate-n1078370?komentarai=1" class="subTitle">
+(8)
+</a> </h3> </div> </div> <div class="mainNewsItem small rowLast"> <div class="mainItemImage"> <a href="/naujiena/gyvenimas/liaudiski-slogos-gydymo-budai-ivardijo-geriausius-is-ju-n1078162"> <div class="commonVisualIco medium"> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/d6/28/3b/d6283bbc8e37c5506768022fb306445c.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/b8/e2/94/1f/b8e2941ffd076edd8c1492dd6afb6c5a.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/gyvenimas/liaudiski-slogos-gydymo-budai-ivardijo-geriausius-is-ju-n1078162">
+Liaudiški slogos gydymo būdai – įvardijo geriausius iš jų
+</a> <a href="/naujiena/gyvenimas/liaudiski-slogos-gydymo-budai-ivardijo-geriausius-is-ju-n1078162?komentarai=1" class="subTitle">
+(1)
+</a> </h3> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem big rowLast"> <div id="titulinis_branding_NOKEYS_tv3_336028"></div> </div> </div> <div class="mainNewsSpace"></div> </div> </li> <li style="float: left;"> <div id="block-5news" class="bbId3907 cCn1607427658"> <div class="commonBlocHeader big"> <div class="blocHeaderInfo"> <div class="headerInfoTitle"> <a data-cat="" href="https://www.tv3.lt/rubrika/naujienos/zmones">
+Žmonės</a> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem small"> <div id="titulinis_branding_NOKEYS_tv3_321600"></div> </div> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/zmones/atlikejas-paulius-bagdanavicius-atsidure-ligonineje-buvo-reikalinga-operacija-n1079458"> <div class="commonVisualIco medium"> <div class="main-sprite photoIcon"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/73/1c/69/731c6942c44aaccdedfff97876bc9998.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/7c/1c/3b/85/7c1c3b855b3312d18797cadb1018b18f.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/zmones/atlikejas-paulius-bagdanavicius-atsidure-ligonineje-buvo-reikalinga-operacija-n1079458">
+Atlikėjas Paulius Bagdanavičius atsidūrė ligoninėje: buvo reikalinga operacija
+</a> </h3> </div> </div> <div class="mainNewsItem small rowLast"> <div class="mainItemImage"> <a href="/naujiena/zmones/penktadienio-zaidimas-galvok-isbandykite-savo-jegas-n1078776"> <div class="commonVisualIco medium"> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static3.inspektorius.lt/usi/211x232/3/42/af/cb/42afcb92515ea1756ab6a800261791f6.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/61/4f/80/b4/614f80b4a2f9d6bf6732a1489659031f.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/zmones/penktadienio-zaidimas-galvok-isbandykite-savo-jegas-n1078776">
+Penktadienio žaidimas „galvOK“: išbandykite savo jėgas!
+</a> </h3> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem big rowLast"> <div id="titulinis_branding_NOKEYS_tv3_321604"></div> </div> </div> <div class="mainNewsSpace"></div> </div> </li> <li style="float: left;"> <div id="block-5news" class="bbId3957 cCn1611048168"> <div class="commonBlocHeader big"> <div class="blocHeaderInfo"> <div class="headerInfoTitle"> <a data-cat="" href="https://www.tv3.lt/lietuvos-futbolo-apdovanojimai">
+Lietuvos futbolo apdovanojimai</a> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/sportas/2020-uju-lietuvos-futbolo-apdovanojimai-kandidatai-tapti-geriausiu-vyru-komandos-treneriu-n1079421"> <div class="commonVisualIco medium"> <div class="main-sprite photoIcon"></div> <div class="main-sprite partnerIcon" title="Turinys paruoštas bei kontroliuojamas projekto partnerio"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/5c/48/75/5c48752a19b2194a198bd3b4a3f01547.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/f4/a2/52/4e/f4a2524ebfcd1c6316b5abe0d6cc2d09.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/sportas/2020-uju-lietuvos-futbolo-apdovanojimai-kandidatai-tapti-geriausiu-vyru-komandos-treneriu-n1079421">
+2020-ųjų Lietuvos futbolo apdovanojimai: kandidatai tapti geriausiu vyrų komandos treneriu
+</a> </h3> </div> </div> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/sportas/2020-uju-lietuvos-futbolo-apdovanojimai-kandidatai-tapti-geriausiu-moteru-komandos-treneriu-n1079418"> <div class="commonVisualIco medium"> <div class="main-sprite photoIcon"></div> <div class="main-sprite partnerIcon" title="Turinys paruoštas bei kontroliuojamas projekto partnerio"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static3.inspektorius.lt/usi/211x232/3/d5/76/a8/d576a82b80b93400d5515f8667bec2d1.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/3f/64/6e/46/3f646e463a7c9e6ab10a03f16da6d2f1.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/sportas/2020-uju-lietuvos-futbolo-apdovanojimai-kandidatai-tapti-geriausiu-moteru-komandos-treneriu-n1079418">
+2020-ųjų Lietuvos futbolo apdovanojimai: kandidatai tapti geriausiu moterų komandos treneriu
+</a> </h3> </div> </div> <div class="mainNewsItem small rowLast"> <div class="mainItemImage"> <a href="/naujiena/sportas/praejusiais-metais-apdovanojimuose-triumfave-jaunieji-lietuvos-talentai-sekme-pakartoti-tikisi-ir-siemet-n1078701"> <div class="commonVisualIco medium"> <div class="main-sprite partnerIcon" title="Turinys paruoštas bei kontroliuojamas projekto partnerio"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static3.inspektorius.lt/usi/211x232/3/ea/77/bc/ea77bcbb315fc5b4758c850fde9f1a25.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/41/3d/c2/a1/413dc2a18b8d79879a8168469a7cc8c4.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/sportas/praejusiais-metais-apdovanojimuose-triumfave-jaunieji-lietuvos-talentai-sekme-pakartoti-tikisi-ir-siemet-n1078701">
+Praėjusiais metais apdovanojimuose triumfavę jaunieji Lietuvos talentai sėkmę pakartoti tikisi ir šiemet
+</a> <a href="/naujiena/sportas/praejusiais-metais-apdovanojimuose-triumfave-jaunieji-lietuvos-talentai-sekme-pakartoti-tikisi-ir-siemet-n1078701?komentarai=1" class="subTitle">
+(1)
+</a> </h3> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem big rowLast"> <div id="titulinis_branding_NOKEYS_tv3_336031"></div> </div> </div> <div class="mainNewsSpace"></div> </div> </li> <li style="float: left;"> <div id="block-5news" class="bbId3734 cCn1595506998"> <div class="commonBlocHeader big"> <div class="blocHeaderInfo"> <div class="headerInfoTitle"> <a data-cat="" href="/rubrika/naujienos/gyvenimas/moters-gidas/">
+Moters gidas</a> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem small"> <div id="titulinis_branding_NOKEYS_tv3_321599"></div> </div> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/gyvenimas/pagalba-akims-ziemos-metu-stai-ka-svarbu-zinoti-n1079101"> <div class="commonVisualIco medium"> <div class="main-sprite partnerIcon" title="Turinys paruoštas bei kontroliuojamas projekto partnerio"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/73/92/c1/7392c122ff8ab154e6a40623879a537a.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/76/b7/d0/66/76b7d066c0dbccde89d1c5aaf8625c9f.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/gyvenimas/pagalba-akims-ziemos-metu-stai-ka-svarbu-zinoti-n1079101">
+Pagalba akims žiemos metu: štai ką svarbu žinoti
+</a> <a href="/naujiena/gyvenimas/pagalba-akims-ziemos-metu-stai-ka-svarbu-zinoti-n1079101?komentarai=1" class="subTitle">
+(1)
+</a> </h3> </div> </div> <div class="mainNewsItem small rowLast"> <div class="mainItemImage"> <a href="/naujiena/gyvenimas/zymiu-lietuvos-moteru-patarimai-kaip-priziureti-veido-oda-atejus-saltiems-ir-permainingiems-orams-n1078403"> <div class="commonVisualIco medium"> <div class="main-sprite partnerIcon" title="Turinys paruoštas bei kontroliuojamas projekto partnerio"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/87/6d/01/876d014f876e504bff1d7c06dacefdbb.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/af/e7/4c/ec/afe74cecdc4e60ec4e02e2749fa94969.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/gyvenimas/zymiu-lietuvos-moteru-patarimai-kaip-priziureti-veido-oda-atejus-saltiems-ir-permainingiems-orams-n1078403">
+Žymių Lietuvos moterų patarimai, kaip prižiūrėti veido odą atėjus šaltiems ir permainingiems orams
+</a> <a href="/naujiena/gyvenimas/zymiu-lietuvos-moteru-patarimai-kaip-priziureti-veido-oda-atejus-saltiems-ir-permainingiems-orams-n1078403?komentarai=1" class="subTitle">
+(2)
+</a> </h3> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem big rowLast"> <div id="titulinis_branding_NOKEYS_tv3_321603"></div> </div> </div> <div class="mainNewsSpace"></div> </div> </li> <li style="float: left;"> <div id="block-5news" class="bbId3948 cCn1607427658"> <div class="commonBlocHeader big"> <div class="blocHeaderInfo"> <div class="headerInfoTitle"> <a data-cat="" href="https://www.tv3.lt/rubrika/naujienos/zmones/tylus-geradariai-tvarumo-istorijos" target="_blank">
+Tylūs geradariai. Tvarumo istorijos</a> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/zmones/leonardas-pobedonoscevas-laikas-issikuopti-savo-namus-nuo-nereikalingu-daiktu-n1078133"> <div class="commonVisualIco medium"> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static3.inspektorius.lt/usi/211x232/3/20/6f/57/206f576ccbab6e9f85398ebc5c9349f3.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/9f/e5/d2/a2/9fe5d2a27bdf1a959350d9bd37d74145.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/zmones/leonardas-pobedonoscevas-laikas-issikuopti-savo-namus-nuo-nereikalingu-daiktu-n1078133">
+Leonardas Pobedonoscevas: „Laikas išsikuopti savo namus nuo nereikalingų daiktų!“
+</a> </h3> </div> </div> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/zmones/vilnietis-aprode-savo-ismaniuosius-namus-pasake-kiek-kainuoja-ir-kaip-tai-veikia-n1075670"> <div class="commonVisualIco medium"> <div class="main-sprite photoIcon"></div> <div class="main-sprite videoIcon"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/d0/0a/f7/d00af7f307664e4a920ecc1e8b1c063f.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/39/ab/7d/ed/39ab7ded057c73ee99701f176c596637.jpg" width="211" height="232" alt="" /> <div class="video-duration">10:13</div> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/zmones/vilnietis-aprode-savo-ismaniuosius-namus-pasake-kiek-kainuoja-ir-kaip-tai-veikia-n1075670">
+Vilnietis aprodė savo išmaniuosius namus: pasakė, kiek kainuoja ir kaip tai veikia
+</a> <a href="/naujiena/zmones/vilnietis-aprode-savo-ismaniuosius-namus-pasake-kiek-kainuoja-ir-kaip-tai-veikia-n1075670?komentarai=1" class="subTitle">
+(4)
+</a> </h3> </div> </div> <div class="mainNewsItem small rowLast"> <div class="mainItemImage"> <a href="/naujiena/zmones/pobedonoscevas-prakalbo-apie-vieta-kurioje-jauciasi-geriausiai-kviecia-i-ismaniuosius-namus-n1075836"> <div class="commonVisualIco medium"> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static3.inspektorius.lt/usi/211x232/3/ba/38/2d/ba382d89e0b6a28b910fa4c49e2cb830.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/b2/f6/aa/70/b2f6aa70d49b72bdc68e4e8ed5548e71.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/zmones/pobedonoscevas-prakalbo-apie-vieta-kurioje-jauciasi-geriausiai-kviecia-i-ismaniuosius-namus-n1075836">
+Pobedonoscevas prakalbo apie vietą, kurioje jaučiasi geriausiai: kviečia į išmaniuosius namus
+</a> <a href="/naujiena/zmones/pobedonoscevas-prakalbo-apie-vieta-kurioje-jauciasi-geriausiai-kviecia-i-ismaniuosius-namus-n1075836?komentarai=1" class="subTitle">
+(187)
+</a> </h3> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem big rowLast"> <div id="titulinis_branding_NOKEYS_tv3_321606"></div> </div> </div> <div class="mainNewsSpace"></div> </div> </li> <li style="float: left;"> <div class="UnewsBlock cCn1610963555"> <div class="cleaner"></div> <div class="commonBlocHeader big"> <div class="blocHeaderInfo"> <div class="headerInfoTitle"> <a data-cat="" href="https://www.tv3.lt/lietuvos-futbolo-apdovanojimai">
+Lietuvos futbolo apdovanojimai</a> </div> </div> </div> <ul class="block-U3news-items"> <li class="U3newsLi Uli2"><div id="titulinis_branding_NOKEYS_tv3_340711"></div></li> <li class="U3newsLi Uli3"><div class="mainNewsItem small"> <div class="mainItemImage" style="margin-bottom: 0px;"> <a href="https://www.tv3.lt/lietuvos-futbolo-apdovanojimai/" target="_blank"> </div> <img class="lazy" src="/Uploads/image/Futbolo%20rinkimai%202020/LFF_2020_rinkimai_437x290_su_TV.png" width="437" alt="" style="display: inline;"> </a> </div> <div class="mainItemTitle limit3rows" style="line-height: 22px; font-size: 20px;float: none; margin-bottom: 18px; padding-top: 6px; font-weight: bold; width: 437px;"> <a href="https://www.tv3.lt/lietuvos-futbolo-apdovanojimai/" target="_blank">
+Balsuok ir išrink 2020 m. Lietuvos futbolo geriausius!
+</a> </div></li> </ul> <div class="cleaner"></div> <style><!--
+
+.cCn1610963555 .U3newsLi {
+width: 211px;
+float: left;
+margin-right: 12px;
+}
+
+.cCn1610963555 .U2newsLi.Uli2 {
+float: right;
+}
+.cCn1610963555 .U3newsLi.Uli3 {
+margin-right: 0;
+width: 437px;
+float: left;
+height: 347px;
+}
+.cCn1610963555 .U3newsLi.Uli4 {
+margin-right: 0;
+width: 211px;
+float: left;
+margin-right: 12px;
+}
+.cCn1610963555 .U3newsLi.Uli5 {
+margin-right: 0;
+width: 211px;
+float: left;
+margin-right: 12px;
+}
+
+.tv3 .cCn1610963555 .mainItemTitle {
+    display: inline-block;
+    max-height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tv3 .cCn1610963555 div.mainNewsSegment {
+float:left;
+margin-right: 0px;
+}
+
+.tv3 .cCn1610963555 div.mainNewsSegment div.mainNewsItem {
+margin-right: 0px;
+}
+
+
+
+/* .cCn1610963555 .onImg {
+position:absolute;
+z-index:5;
+top: -237px;
+left: 224px;
+}
+*/
+//--> </style> <div id="titulinis_branding_NOKEYS_tv3_337036"></div> <br> <style>
+.cCn1571133456 .mainNewsSegment {
+margin-bottom:-17px !important;
+}
+</style> </div> </li> <li style="float: left;"> <div id="block-5news" class="bbId3961 cCn1611048168"> <div class="commonBlocHeader big"> <div class="blocHeaderInfo"> <div class="headerInfoTitle"> <a data-cat="" href="https://www.tv3.lt/rubrika/naujienos/gyvenimas/eurovizija-2021">
+Eurovizija 2021</a> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem small"> <div id="titulinis_branding_NOKEYS_tv3_187267"></div> </div> <div class="mainNewsItem small"> <div class="mainItemImage"> <a href="/naujiena/gyvenimas/lyg-kitas-zmogus-2012-aisiais-eurovizija-laimejusi-loreen-neatpazistama-n1078556"> <div class="commonVisualIco medium"> <div class="main-sprite photoIcon"></div> <div class="main-sprite videoIcon"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static2.inspektorius.lt/usi/211x232/3/7f/bc/f6/7fbcf6a8142bb52cbf5fc2519ea6c8c5.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/42/50/d1/0c/4250d10cf24dc6d36d744085d921977c.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/gyvenimas/lyg-kitas-zmogus-2012-aisiais-eurovizija-laimejusi-loreen-neatpazistama-n1078556">
+Lyg kitas žmogus: 2012-aisiais „Euroviziją“ laimėjusi Loreen – neatpažįstama
+</a> <a href="/naujiena/gyvenimas/lyg-kitas-zmogus-2012-aisiais-eurovizija-laimejusi-loreen-neatpazistama-n1078556?komentarai=1" class="subTitle">
+(5)
+</a> </h3> </div> </div> <div class="mainNewsItem small rowLast"> <div class="mainItemImage"> <a href="/naujiena/gyvenimas/eurovizijos-lazybininkai-jau-siaucia-grupei-the-roop-garantuoja-pirmaja-vieta-n1078525"> <div class="commonVisualIco medium"> <div class="main-sprite photoIcon"></div> <div class="main-sprite videoIcon"></div> </div> <img class="lazy" src="/cimg/Site/blank.gif" data-src="https://static3.inspektorius.lt/usi/211x232/3/a2/4a/7b/a24a7b9e9d324ca60e4b08ff3f4b3b0c.jpg?v=4.1.1.17&amp;t=cr&amp;s=211x232&amp;m=3&amp;f=/Uploads/UArticles/leadPhotos/df/81/be/92/df81be92f61b6fd4df4a129d2b9fa6d0.jpg" width="211" height="232" alt="" /> </a> </div> <div class="mainItemTitle"> <h3> <a href="/naujiena/gyvenimas/eurovizijos-lazybininkai-jau-siaucia-grupei-the-roop-garantuoja-pirmaja-vieta-n1078525">
+„Eurovizijos“ lažybininkai jau siaučia: grupei „The Roop“ garantuoja pirmąją vietą
+</a> <a href="/naujiena/gyvenimas/eurovizijos-lazybininkai-jau-siaucia-grupei-the-roop-garantuoja-pirmaja-vieta-n1078525?komentarai=1" class="subTitle">
+(5)
+</a> </h3> </div> </div> </div> <div class="mainNewsSegment"> <div class="mainNewsItem big rowLast"> <div id="titulinis_branding_NOKEYS_tv3_187270"></div> </div> </div> <div class="mainNewsSpace"></div> </div> </li> </ul> <div class="fmHLeft fmHbuttons-1041322 arrow-square-left" rel="prev"> <div class="main-sprite rubricBlock-left-arrows"></div> </div> <div class="fmHRight fmHbuttons-1041322 arrow-square-right" rel="next"> <div class="main-sprite rubricBlock-right-arrows"></div> </div> </div> </div> </div> </div> <div style="width: 1100px; height: auto; position: absolute; background-color: rgb(246, 246, 246);"></div> </div> <div style="width: 760px; display: flex; justify-content: flex-end;"> <div style="width: 684px;"> <div class="read-next"> <div style="text-align: center; font-size: 14px; font-family: Arial;"> <b>TOLIAU SKAITYKITE</b> <br /> <img src="/pimg/desktop-icon/rekomenduojame_blokelio_rodykle.png"> </div> </div> </div> </div> </div> <div class="loadMoreNews" data-id="31006" data-article="1041322"></div> <script>
+                if (!window.nextNewsinit){
+                    window.nextNewsinit=1;
+                }
+            </script> </div> <script>
+        // $(".bigPhoto").click(function(){
+        //
+        //     var firstGalleryElement = $(this).parents('.article-block-content').find('.desktop-new-gallery-portrait').find(".popup_caller_")[0];
+        //
+        //     if (firstGalleryElement != undefined) {
+        //         firstGalleryElement.click();
+        //     } else {
+        //         showImageBox(this);
+        //     }
+        // });
+
+        $(".article-photo-top-el").click(function () {
+            var firstGalleryElement = $(this).parents('.article-block-content').find('.desktop-new-gallery-portrait').find(".popup_caller_")[0];
+            firstGalleryElement.click();
+        });
+
+    </script> <script type="text/javascript">
+        $(document).ready(function() {
+            var blockHeight = $(".article-block-content").height();
+            var articleId = $(".right-ads-block:last").attr('article-id');
+
+            if (blockHeight > 1060) {
+                $("#firstRightAd-" + articleId).show();
+                $("#firstRightAd-" + articleId).addClass('right-ad-'+articleId);
+             }
+
+            if (blockHeight > 2130) {
+                $("#secondRightAd-" + articleId).show();
+                $("#secondRightAd-" + articleId).addClass('right-ad-'+articleId);
+            }
+
+            if (blockHeight > 3180) {
+                $("#thirdRightAd-" + articleId).show();
+                $("#thirdRightAd-"  + articleId).addClass('right-ad-'+articleId);
+            }
+
+            if (blockHeight > 4240) {
+                $("#fourthRightAd-" + articleId).show();
+                $("#fourthRightAd-" + articleId).addClass('right-ad-'+articleId);
+            }
+
+            if (blockHeight > 5300) {
+                $("#fifthRightAd-" + articleId).show();
+                $("#fifthRightAd-" + articleId).addClass('right-ad-'+articleId);
+            }
+
+            setTimeout(function() {
+                var count = $('.right-ad-' + articleId).length;
+                var articleHeight = $('.abc-' + articleId).height();
+                var oneBlockHeight = articleHeight / count;
+                $('.right-ad-'+articleId).css('height', oneBlockHeight);
+            }, 15000);
+        });
+
+    </script> <script><!--
+        $(function(){
+            var firstArrPos = $('.photo-title').outerHeight()||0;
+            if(firstArrPos){
+                $('.fmHbuttons-1041322').css('bottom', (firstArrPos+100) + "px");
+            }
+            $('.rubricSlider.fmSl-1041322').fmSlides({
+                speed: 300,
+                delay: 5000,
+                bindArrows: '.fmHbuttons-1041322'
+            });
+        });
+        //--></script> <script>
+    var popupGalLoaded= 0;
+    function show_gallery(item){
+        popupGalLoaded= 1;
+        remove_popup();
+        $('body').append('<div id="TB_overlay"></div>');
+        $('body').append('<div id="gallery_container"></div>');
+
+        window.location.href = window.location.href.replace(/\#.*/, '') + '#' + $(item).attr('data-href').replace('/Gallery/popupGallery/','').replace('/','-');
+
+        $('#gallery_container').load($(item).attr('data-href') +  '/61/' + $('#advGalleryPos').val() + '/', function(r,s,xhr) {
+                if ( s != "error" ) {
+                    jQuery('#photoList').jcarousel({
+                        scroll: 5,
+                        vertical: false,
+                        start: typeof(photoPos) == 'undefined' ? 0 : photoPos
+                    });
+                } else {
+                    remove_popup();
+                }
+        });
+    };
+</script> <script type="text/javascript">
+    jQuery.ajax({
+        url: '/UArticles/updateArticleView/1041322?t=' +(new Date()).getTime() +'-'+ Math.random()
+    });
+
+    function readEasyText(articleId) {
+        $(".read-easy-" + articleId).css('display', 'block');
+        $(".read-easy-button-" + articleId).hide();
+        $(".article-" + articleId).hide();
+
+        var blockHeight = $(".easy-" + articleId).height();
+         if (blockHeight > 1060) {
+                $("#easy-firstRightAd-" + articleId).show();
+             }
+
+            if (blockHeight > 2130) {
+                $("#easy-secondRightAd-" + articleId).show();
+            }
+
+            if (blockHeight > 3180) {
+                $("#easy-thirdRightAd-" + articleId).show();
+            }
+
+            if (blockHeight > 4240) {
+                $("#easy-fourthRightAd-" + articleId).show();
+            }
+
+            if (blockHeight > 5300) {
+                $("#easy-fifthRightAd-" + articleId).show();
+            }
+
+    }
+</script> <script type="text/javascript">
+    function FmCopyLink() {
+        var body_element = document.getElementsByTagName('body')[0];
+        var selection, selection_c;
+        selection = selection_c = window.getSelection();
+        var pagelink = "<br /> Visą straipsnį galite rasti <a href='"+document.location.href+"'>"+document.location.href+"</a>";
+        if (selection_c.toString().length < 20) pagelink = '';
+        var copytext = selection + pagelink;
+        var newdiv = document.createElement('div');
+        newdiv.style.position='absolute';
+        newdiv.style.left='-99999px';
+        body_element.appendChild(newdiv);
+        newdiv.innerHTML = copytext;
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+        },0);
+    }
+    document.oncopy = FmCopyLink;
+
+
+        var tCat = '61';
+
+    $(function(){
+        $.get('/News/articleCommentsCount/1041322/125',function(value){
+        if(value>0){
+            $('#articleComments').html('<span class="quants">'+value+'</span> komentarai');
+            $('.read_comments').html(' Skaityti komentarus ('+value+')');
+        }
+        });
+
+        $("body").keydown(function(event){
+            // left arrow
+            if ((event.keyCode || event.which) == 37) {
+                tLink = $('.nextPrevNewsV2 a.prev').attr('href');
+                if (typeof(tLink) != 'undefined' && !$("#gallery_container").length) {
+                    window.location.href = tLink;
+                }
+            }
+            // right arrow
+            if ((event.keyCode || event.which) == 39) {
+                tLink = $('.nextPrevNewsV2 a.next').attr('href');
+                if (typeof(tLink) != 'undefined' && !$("#gallery_container").length) {
+                    window.location.href = tLink;
+                }
+            }
+        });
+
+        
+        if (leadVideo.canPlayVideo()) {
+            leadVideo.hideForArticleVideo();
+            leadVideo.addMainVideo();
+
+            jQuery(window).scroll(function(){
+                leadVideo.playVideoOnView();
+            })
+        }
+    
+    
+    });
+
+
+    var popupGalLoaded= 0;
+    $(function(){
+        $('.article_inside').on('click', '.popup_caller', function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            popupGalLoaded= 1;
+            remove_popup();
+            $('body').append('<div id="TB_overlay"></div>');
+            $('body').append('<div id="gallery_container"></div>');
+
+            window.location.href = window.location.href.replace(/\#.*/, '') + '#' + $(this).attr('data-href').replace('/Gallery/popupGallery/','').replace('/','-');
+
+            $('#gallery_container').load($(this).attr('data-href') +  '/61/' + $('#advGalleryPos').val() + '/', function() {
+                FB.XFBML.parse();
+                jQuery('#photoList').jcarousel({
+                    scroll: 5,
+                    vertical:false,
+                    start: typeof(photoPos) == 'undefined' ? 0 : photoPos
+                });
+            });
+
+        });
+    });
+    </script> <script>
+        $('[data-fancybox="photos"]').fancybox({
+            protect: true,
+            loop: true,
+            afterShow: function(instance, current) {
+                //console.log('Gemius hit:', top.location.href);
+                hitGemius(top.location.href,'');
+            }
+        });
+    </script> </div><script>
+$(function(){
+$('body').on('click', '.article_inside a', function(a){
+    a.preventDefault(); a.stopPropagation();
+    if(this.href && !this.href.match(/javascript|void|\#/g)){
+        window.open(this.href);
+        return false;
+    }
+});
+//console.log('links loaded');
+});
+</script> <style>
+
+#footer { clear: both; }
+
+</style><script src='https://www.google.com/recaptcha/api.js?render=explicit&hl=lt' async defer></script> <div id="reportError" class="tpl"> <div class="errorBlock"> <span class="close">&times;</span> <h2>Pranešti klaidą</h2> <div class="errorBlockPlace"> <label for="errorBadText">Pažymėtos klaidos tekstas</label> <input type="text" name="errorText" class="inputBlock errorBadText" id="errorBadText"> <input type="hidden" name="errorUrl" class="errorUrl" id="errorUrl"> <label for="errorGoodText">Jūsų komentaras</label> <textarea name="errorComment" class="inputBlock inputText errorGoodText" id="errorGoodText"></textarea> <div class="errorMsgText"></div> <div class="clear"></div> <div class="captchaBlock"> <div class="recaptchaPlace" style="width: 305px; margin: 5px auto; clear:both;" data-sitekey="6Ld3cUEUAAAAAFPgUiD6ZPLvq_GjQymkCBcMBTks"></div> </div> <div class="btnBlock"> <span class="button btn reportTextError" type="button">SIŲSTI</span> </div> </div> <div class="clear"></div> </div> </div> <style>
+    #reportError {
+        display:none;
+        opacity: 0;
+        position: fixed;
+        z-index: 100023;
+        width: 100%;
+        top: 15%;
+        left: 0%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease-out;
+    }
+    #reportError .errorBlock {
+        border-top: 5px solid #ff0000;
+        background: #FFF;
+        padding: 0 15px 20px 15px;
+        min-width: 330px;
+        max-width: 680px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+    #reportError .errorBlock .close {
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        cursor: pointer;
+        color: #BBB;
+        font-size: 37px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+    #reportError .errorBlock h2 {
+        color: #ff0000;
+        text-transform: uppercase;
+        margin-top: 28px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    #reportError .errorBlock label {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    #reportError .clear {
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    #reportError .data.msg {
+        display: block;
+        width: 100%;
+        color: red;
+        text-align: center;
+        clear: both;
+    }
+    #reportError .errorBlock .inputBlock {
+        border: 1px solid #E6E6E6;
+        font-size: 16px;
+        line-height: 15px;
+        padding: 12px 5px 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #reportError .errorBlock .inputBlock.inputText {
+        height: 75px;
+        margin-bottom: 5px;
+        line-height: 18px;
+    }
+    #reportError .errorBlock .captchaBlock {
+        float: left;
+    }
+    #reportError .errorBlock .btnBlock {
+        float: right;
+        display: inline-block;
+        margin-top: 35px;
+    }
+    #reportError .errorBlock .btn {
+        color: #FFF;
+        background: #ff0000;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    #reportError .errorBlock .msg {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px;
+    }
+    #textErrorBtn {
+        position: absolute;
+        display: block;
+        left: -9999px;
+        top: -9999px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    .has-error {
+        border: 1px solid red;
+    }
+
+    #TB_overlay.reportErrorBg {
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10001;
+        text-align: center;
+        background-color: #000;
+        filter: alpha(opacity=80);
+        opacity: 0.80;
+    }
+
+    @media (max-width: 767px) {
+        #reportError .errorBlock .captchaBlock {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        #reportError .errorBlock .btnBlock {
+            float: none;
+            width: 100%;
+            margin: 20px auto 0 auto;
+        }
+
+        #reportError .errorBlock .btn {
+            width: 100%;
+        }
+    }
+</style> <script>
+    
+    if (typeof (reportTextError) == 'undefined') {
+        var reportTextError = {
+            holder: '',
+            err: '',
+            txt: '',
+            textErrorBtn: '',
+            isMob: 'ontouchstart' in document.documentElement,
+            image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJGMTMwREI1MTA2NzExRUE4Mzc5QUYyNjREOUFGOTAyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJGMTMwREI2MTA2NzExRUE4Mzc5QUYyNjREOUFGOTAyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkYxMzBEQjMxMDY3MTFFQTgzNzlBRjI2NEQ5QUY5MDIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkYxMzBEQjQxMDY3MTFFQTgzNzlBRjI2NEQ5QUY5MDIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz73eUh+AAAB00lEQVR42sSXv0vDQBTHL1VrJxEHoSgdRKuIg4OioAh2k/4FipNgQdSpBUcXJ3EVQVtwcdDNpQhFcHBUsZOIk0NtK4j2B2JFiN+X9qAWk+YuTfLgQ5Lh3efucsndU1RmOsZAGMyCEdALukAJvIJHcA2STFXTplpUjfGARXALVAHuwbKWjyc9jMTj4EZQ2sgdmBCVR8CXRTHnG2yYlW+3SNrITjP5uk1iTkxPPg0qphtKp1Ut8nkR+Q+Y43JPbdF3gATwMnujDRwxRfHRA5evgFHmTARBhMsVEGXORhSj95B8Bgw5LA+AeZIvMHciTPIpl+STJB92SR4kebdUajZbveZysvIekrdLpRaL1Wu5LP3Ne2r7sbw8k5GVv5P8SSq1UPjbCfF4pn/6vs2biR5xGnnKpdWeUtCDTty80OpzUEzvyk8jr4BD4fT6CQyFRLPjyPvku9oeeHNo1LRSd+u3VBLHHJJvYdT5/47Oxzav8FOjM5wXXNgkTmntNzm9UgdOWiw+Az6RomENlCxKKX8TKKIVC+EHBxIFBJ2CEyAgWy7VMwiuTIovwYCRVFTOtKmrvoqCjvQDrOpNsVU5px8kG8TnoM+s1IqcQyXwA1gSlXJ+BRgAudr6ZjRK4/QAAAAASUVORK5CYII=',
+            selectedText: function () {
+                return window.getSelection ? window.getSelection().toString() : document.getSelection ? document.getSelection() : document.selection ? document.selection.createRange().text : void 0
+            },
+            reportRemove: function () {
+                $('#reportError.removable, #TB_overlay').remove();
+            },
+            validateReCaptcha: function () {
+                $f = $(".errorBlockPlace .g-recaptcha-response");
+                $(".removable .recaptchaPlace").hasClass("has-error") && $(".recaptchaPlace").removeClass("has-error");
+                $v = $.isEmptyObject($.trim($f.val())) ? !1 : $f.val();
+                return $v ? $v : ($(".removable .recaptchaPlace").addClass("has-error"), !1)
+            },
+            send: function (err_m, err) {
+                $('.errorMsgText', err).html('');
+
+                $.post('/Misc/reportErrorText/?t=' + (new Date()).getTime() + '-' + Math.random(), err_m, function (data) {
+                    if (data) {
+                        if (data.success) {
+                            $('.errorBlockPlace', err).html('<div class="msg">Pranešimas apie klaidą priimtas</div>');
+                        } else if (data.error && data.msg) {
+                            $('.errorMsgText', err).html('<div class="msgs">' + data.msg + '</div>');
+                        } else {
+                            $('.errorBlockPlace', err).html('<div class="msg">' + (data.msg || 'Pranešimas apie klaidą priimtas.') + '</div>');
+                        }
+                    } else {
+                        $('.errorBlockPlace', err).html('<div class="msg">' + 'Pranešimas apie klaidą priimtas.' + '</div>');
+                    }
+
+                    if (typeof ('grecaptcha') != 'undefined') {
+                        grecaptcha.reset();
+                    }
+
+                }, 'json');
+            },
+            triggerButton: function (b) {
+                if (reportTextError.textErrorBtn != '') {
+                    reportTextError.textErrorBtn.style.top = "-9999px";
+                    reportTextError.textErrorBtn.style.left = "-9999px";
+                }
+                reportTextError.err = $('#reportError.tpl:eq(0)').clone(true);
+                $(reportTextError.err).addClass('removable').removeClass('tpl');
+                if (typeof ('grecaptcha') != 'undefined') {
+                    var captchaWidgetId = grecaptcha.render($('.recaptchaPlace', reportTextError.err)[0], {
+                        'sitekey': $('.recaptchaPlace', reportTextError.err).data('sitekey'),  // required
+                        'theme': 'light',  // optional
+                        //'callback': 'verifyCallback'  // optional
+                    });
+                }
+
+                reportTextError.reportRemove();
+                var tb = $('<div id="TB_overlay" class="reportErrorBg"></div>');
+                $('body').append(tb);
+
+                $(tb).on('click', function () {
+                    reportTextError.reportRemove();
+                });
+                $(reportTextError.err).on('click', '.close', function () {
+                    reportTextError.reportRemove();
+                });
+
+                $(reportTextError.err).find(".errorBadText").val(reportTextError.txt);
+                $(reportTextError.err).find(".errorUrl").val(location.href);
+
+                $('.btn', reportTextError.err).on('click', function () {
+                    var a = reportTextError.validateReCaptcha();
+                    if (a) {
+                        var sData = $('input,select,textarea', reportTextError.err).serializeArray();
+                        reportTextError.send(sData, reportTextError.err);
+                    }
+                });
+
+                $('body').append(reportTextError.err);
+                $(reportTextError.err).css({'display': 'block', 'opacity': 1});
+            },
+            init: function () {
+
+                document.onselectionchange = function () {
+                    "" !== window.getSelection().toString() && (reportTextError.txt = window.getSelection().toString())
+                };
+
+                if ($('.sticky-social-segment').length) {
+                    $('.sticky-social-segment div:eq(1)').after('<div><a class="errorTextTrigger" href="javascript:;"><img src="' + reportTextError.image + '" height="20"></a></div>');
+                }
+
+                $(document).keydown(function (t) {
+                    if (t.ctrlKey && 13 == t.keyCode && reportTextError.txt != '') {
+                        reportTextError.triggerButton();
+                    }
+                });
+
+                reportTextError.holder = document.getElementById('mainbar') ? document.getElementById('mainbar') : (document.getElementsByClassName("article_inside")[0] || 0);
+                var a = reportTextError.holder || 0;
+                if (a) {
+                    if (!reportTextError.textErrorBtn) {
+                        reportTextError.textErrorBtn = document.createElement("div");
+                        var b = reportTextError.textErrorBtn;
+                        b.id = "textErrorBtn";
+                        b.setAttribute("class", "textErrorBtn");
+                        b.setAttribute("href", "javascript:;");
+                        b.setAttribute("title", "Pranešti klaidą");
+                        a.parentNode.insertBefore(b, a.nextSibling);
+                        var c = document.createElement("img");
+                        c.setAttribute('src', reportTextError.image);
+                        b.appendChild(c);
+                    }
+                    a.addEventListener("mouseup", function (a) {
+                        var d = reportTextError.selectedText();
+                        reportTextError.txt = d.toString();
+
+                        if (d != '' && d != ' ') {
+                            reportTextError.textErrorBtn.style.top = a.pageY - 50 + "px";
+                            reportTextError.textErrorBtn.style.left = a.pageX - 10 + "px";
+                            reportTextError.textErrorBtn.addEventListener("click", function () {
+
+                                reportTextError.triggerButton(b);
+
+                                reportTextError.textErrorBtn.style.top = "-9999px";
+                                reportTextError.textErrorBtn.style.left = "-9999px";
+                                return !1;
+                            });
+                        }
+                    });
+                    a.addEventListener("mousedown", function () {
+                        reportTextError.textErrorBtn.style.top = "-9999px";
+                        reportTextError.textErrorBtn.style.left = "-9999px"
+                    });
+                } else {
+                    $('body').on('click', '.errorTextTrigger', function () {
+                        reportTextError.triggerButton();
+                    });
+                }
+
+            },
+        };
+
+        $(function () {
+            reportTextError.init();
+        });
+    }
+    
+</script> </div> </div> <div id="footer"> <div class="footer-v1-segment" id="footer"> <div class="this-frame-block"> <div class="links-block"> <div class="column-block first"> <p class="title-text">NAUJIENOS</p> <a class="text-link" href="/rubrika/naujienos/lietuva">Lietuva</a> <a class="text-link" href="/rubrika/naujienos/gyvenimas">Gyvenimas</a> <a class="text-link" href="/rubrika/naujienos/pramogos">Pramogos</a> <a class="text-link" href="/rubrika/naujienos/uzsienis">Užsienis</a> <a class="text-link" href="/rubrika/naujienos/verslas">Verslas</a> <a class="text-link" href="/rubrika/naujienos/sportas">Sportas</a> </div> <div class="column-block second"> <p class="title-text">NAUDINGA</p> <a class="text-link" href="/orai">Orai</a> <a class="text-link" href="/programos/tv3">TV programa</a> <a class="text-link" href="/horoskopai">Horoskopai</a> <a class="text-link" href="https://www.paskolos.lt" target="_blank">Paskolos</a> <a class="text-link" href="https://www.smspinigai.lt" target="_blank">SMS kreditai</a> </div> <div class="column-block third"> <p class="title-text">INFORMACIJA</p> <a class="text-link" href="/apie/privatumo-politika/">Privatumo politika</a> <a class="text-link" href="/apie">Apie tv3.lt</a> <a class="text-link" href="/apie/privatumas">Apie slapukus</a> <a class="text-link" href="/apie/reklama">Reklama</a> <a class="text-link" href="/apie/kontaktai">Kontaktai</a> <a class="text-link" href="/pranesti-klaida">Pranešk apie klaidą</a> <a class="text-link" href="/programos/karjera">Karjera</a> </div> <div class="column-block fourth"> <p class="title-text">TV/RADIJAS</p> <a class="text-link" href="https://play.tv3.lt" target="_blank">TVPlay</a> <a class="text-link" href="/programos/tv3" target="_blank">TV3 televizija</a> <a class="text-link" href="/programos/tv6" target="_blank">TV6</a> <a class="text-link" href="/programos/tv8" target="_blank">TV8</a> <a class="text-link" href="http://powerhitradio.tv3.lt" target="_blank">Power Hit Radio</a> </div> <div class="column-block fifth"> <p class="title-text right">SEK MUS</p> <a class="f-ico main-sprite" href="https://www.facebook.com/tv3televizija/" target="_blank"></a> <a class="in-ico main-sprite" href="https://www.instagram.com/tv3televizija/" target="_blank"></a> <a class="m-ico main-sprite" href="https://m.me/tv3.lt" target="_blank"></a> </div> </div> <div class="action-block" style="margin-top: 40px"> <div class="email"> <span class="title-text">
+NAUJIENŲ PRENUMERATA:
+</span> <div class="input-group"> <input class="email-input" type="text" name="email" placeholder="El. paštas"> <div class="send-mail-button main-sprite"></div> <div class="msg-block"></div> </div> </div> <div class="mobile"> <span class="title-text">
+MOBILIEMS:
+</span> <a class="image-link-apple main-sprite" href="https://itunes.apple.com/us/app/tv3.lt/id1044605360" target="_blank"></a> <a class="image-link-google main-sprite" href="https://play.google.com/store/apps/details?id=lt.tv3.httpstv3.tv3lt" target="_blank"></a> </div> <div class="copyright"> <span class="" style="font-size: 14px; line-height: 31px;color:#888888">
+&copy; All Media Lithuania
+</span> </div> </div> </div> </div> <script><!--
+
+		var EadsRps = EadsRps || { } ;
+		if (typeof(EadsRps) != 'undefined' && typeof(EadsRps.setSkipModals) == 'undefined'){
+			EadsRps.setSkipModals = function(){};
+		}
+		if (typeof(EadsRps) != 'undefined' && typeof(EadsRps.setSkipPanic) == 'undefined'){
+			EadsRps.setSkipPanic = function(){};
+		}
+
+
+function _AFix(cssText) {
+    var css = document.createElement('style'); css.type = 'text/css';
+    css.textContent = cssText;
+    var h = document.getElementsByTagName('head')[0]; h.appendChild(css);
+}
+
+//_AFix('#tv980x200_tv3\\.lt { margin-top: 53px !important; }');
+
+
+//--></script> <style><!-- 
+/*
+
+body.tv3 .firstLogo 
+{
+background-position: 0 0 !important;
+opacity: 0.4 !important;
+}
+
+body.tv3 .firstLogo {
+    background: url(/Uploads/main-tv3-trispalve-desktop.png) no-repeat !important;
+    background-size: 70px !important;
+    -webkit-transition: background-image 0.2s ease-in;
+    transition: background-image 0.2s ease-in;
+    opacity: 1 !important;
+    background-position: 11px 5px !important;
+}
+img.tv3-main-banner { display: none; }
+*/
+//--></style><style>
+/* drf - guidelines bug fix */
+.arcticle_content.a-text a {
+color: #f59330;
+}
+.tv3 div.guidelinesAndPagination {
+    clear: left !important;
+}
+</style> </div> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&t=j&f=/pmjs/Currency/Currency.js"></script> <script type="text/javascript" src="//static2.inspektorius.lt/static.php?v=4.1.1.17&t=j&f=/pjs/2/jquery/jquery.lazyload-tv3.min.js"></script> <script type="text/javascript">
+    
+    $("#mainbar img.lazy").lazyload({ threshold : 800, failure_limit : 10 });
+    
+</script> <div id="fb-root"></div> <script type="text/javascript">
+        window.fbAsyncInit = function() {
+            FB.init({appId: '1603170966641905', senas: '103463032940', status: true, cookie: true, xfbml: true});
+        };
+        (function() {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol + '//connect.facebook.net/lt_LT/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+
+        $(function() {
+            $.getJSON('/News/gaCats', function(data) {
+                $.each( data, function( key, val ) {
+                    $('[data-cat="'+key+'"]').attr('onclick', "ga('send', 'event', 'RubrikosStraipsniai', 'Click', '"+val['title']+"');");
+                });
+            });
+        });
+
+    </script> <div id="back-to-top"><div>Į viršų</div></div> <script type="text/javascript">
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 500, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').show();
+                    } else {
+                        $('#back-to-top').hide();
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
+    </script> <script type="text/javascript">
+        $(function() {
+                        /* footerSegment v1 js start */
+var footerSegment = {
+    mainSelector: '.footer-v1-segment',
+    lockSendData: false,
+    postSystem: new PostLoader(),
+    subscriptionMsg: '',
+    initiation: function () {
+        var obj = this;
+
+        this.subscriptionMsg = $(this.mainSelector).find('.msg-block');
+        $(footerSegment.mainSelector + ' .send-mail-button').click(function() {
+            obj.sendItemData();
+        });
+    },
+    sendItemData: function () {
+        var email = $(this.mainSelector + ' .email-input').val();
+
+        if (email == '') {
+            return false;
+        }
+
+        if (this.lockSendData === false) {
+            this.lockSendData = true;
+            ga('send', 'event', 'Prenumerata', 'subscribe', 'Prenumerata futeryje');
+        } else {
+            return false;
+        }
+
+        this.postSystem.pageUrl = '/Newsletters/subscribeAjax/';
+        this.postSystem.doneCallBack = this.doneSendData.bind(this);
+        this.postSystem.sendData.email = email;
+        this.postSystem.loadData();
+    },
+    doneSendData: function (data) {
+        this.subscriptionMsg.removeClass('greenText').removeClass('redText');
+        this.subscriptionMsg.hide();
+
+        if (data.status == 1) {
+            $(this.mainSelector + ' .email-input').val('');
+            this.subscriptionMsg.addClass('greenText');
+        } else {
+            this.subscriptionMsg.addClass('redText');
+        }
+
+        this.subscriptionMsg.text(data.msg);
+        this.subscriptionMsg.show();
+
+        this.lockSendData = false;
+    }
+};
+footerSegment.initiation();
+/* footerSegment v1 js end */
+            
+        });
+    </script>  <noscript> <img src="//lijuke.panel.kantartns.lt/bug/pic.gif?siteid=tv3.lt" alt="" /> </noscript> <script language="javascript">
+        var tns_already, tnscm_adn = tnscm_adn || [], currentProtocol = ("https:" == location.protocol ? "https:" : "http:");
+        (function(c,m){if(c.indexOf&&c.indexOf(m)<0){c.unshift(m);}}(tnscm_adn,"inline_cm"));
+        if ("undefined"==typeof(tns_already) || null==tns_already || 0==tns_already)
+        {
+            tns_already=1;
+            var i=new Image();
+            i.src=currentProtocol + "//lijuke.panel.kantartns.lt/bug/pic.gif?siteid=tv3.lt&j=1&nocache="+Math.random();
+
+            (function(){
+                var p=document.getElementsByTagName('head')[0];
+                var s=document.createElement("script");
+                s.type="text/javascript";
+                s.src= currentProtocol + "//lisource.panel.kantartns.lt/cm/cm.js";
+                s.async = true;
+                p.appendChild(s);
+            })();
+        };
+    </script>  <script type="text/javascript" src="/pjs/main.js?v=4.1.1.17"></script> <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-5e2576e60d33fefa0d0","applicationID":"30724104","transactionName":"MhBSZQoZCxFUUhZfVgtac0QLDAoPGl8DQ1MMEF5QVw4AEEZdA0U=","queueTime":0,"applicationTime":380,"atts":"HldRE0IDGB8=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body> </html>

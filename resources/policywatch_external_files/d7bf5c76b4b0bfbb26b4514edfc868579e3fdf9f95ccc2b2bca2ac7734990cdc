@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+          <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer', 'GTM-N6MJ8B8');</script>
+      <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+<script>(function(h,o,t,j,a,r){
+  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  h._hjSettings={hjid:"614750",hjsv:5};
+  a=o.getElementsByTagName('head')[0];
+  r=o.createElement('script');r.async=1;
+  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  a.appendChild(r);
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');</script>
+<meta name="title" content="Winwinlening | Agentschap Innoveren en Ondernemen" />
+<meta name="description" content="Met de Winwinlening moedigt de Vlaamse overheid particulieren aan om achtergestelde leningen aan kmo&#039;s te verstrekken met een looptijd van 5 tot 10 jaar, tot een bedrag van € 300.000 (max. € 75.000 per kredietgever). De kredietgever krijgt hiervoor een jaarlijks belastingkrediet van 2,5% en eventueel een eenmalig belastingkrediet van 40% als de kredietnemer het bedrag niet kan terugbetalen." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="//widgets.vlaanderen.be/modules/custom/infolijn_widget/assets/libraries/FlemishAuthorities.InfolijnWidget.GlobalFooter/2.0.0/GlobalFooterRedesign.css?mtime=1611685716" media="all" />
+<script type="text/javascript" src="//widgets.vlaanderen.be/modules/custom/widget/assets/js/widget_api.min.js?mtime=1611685716"></script>
+<script type="text/javascript" src="//widgets.vlaanderen.be/modules/custom/infolijn_widget/assets/libraries/html5shiv/3.7.0/html5shiv.min.js?mtime=1611685716"></script>
+<link rel="stylesheet" href="//widgets.vlaanderen.be/modules/custom/infolijn_widget/assets/libraries/FlemishAuthorities.InfolijnWidget.GlobalHeader/2.0.0/GlobalHeader.css?mtime=1611685716" media="all" />
+<script type="text/javascript" src="//widgets.vlaanderen.be/modules/custom/widget/assets/js/widget_api.min.js?mtime=1611685716"></script>
+<script type="text/javascript" src="//widgets.vlaanderen.be/modules/custom/infolijn_widget/assets/libraries/html5shiv/3.7.0/html5shiv.min.js?mtime=1611685716"></script>
+<link rel="shortcut icon" href="/themes/custom/vlaio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/nl/subsidies-financiering/subsidiedatabank/winwinlening" />
+<link rel="shortlink" href="/nl/node/197" />
+<link rel="revision" href="/nl/subsidies-financiering/subsidiedatabank/winwinlening" />
+
+    <title>Winwinlening | Agentschap Innoveren en Ondernemen</title>
+    <link rel="stylesheet" href="/core/themes/stable/css/system/components/ajax-progress.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/align.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/fieldgroup.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/container-inline.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/clearfix.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/details.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/hidden.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/item-list.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/js.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/nowrap.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/position-container.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/progress.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/reset-appearance.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/resize.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/sticky-header.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/system-status-counter.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/system-status-report-counters.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/system-status-report-general-info.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/tabledrag.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/tablesort.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/core/themes/stable/css/system/components/tree-child.module.css?qnet82" media="all" />
+<link rel="stylesheet" href="/modules/contrib/extlink/extlink.css?qnet82" media="all" />
+<link rel="stylesheet" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?qnet82" media="all" />
+<link rel="stylesheet" href="/themes/custom/vlaio/css/style.css?qnet82" media="all" />
+<link rel="stylesheet" href="/themes/custom/vlaio/css/ie.css?qnet82" media="all" />
+<link rel="stylesheet" href="//dij151upo6vad.cloudfront.net/2.5.2/css/vlaanderen-ui.css" media="all" />
+<link rel="stylesheet" href="//dij151upo6vad.cloudfront.net/2.5.2/css/vlaanderen-ui-corporate.css" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+<script src="/modules/custom/vlaio_ui/js/iframeResizer.min.js?qnet82"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/themes/custom/vlaio/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/themes/custom/vlaio/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/themes/custom/vlaio/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/themes/custom/vlaio/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/themes/custom/vlaio/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/themes/custom/vlaio/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/themes/custom/vlaio/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/themes/custom/vlaio/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/vlaio/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/themes/custom/vlaio/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/vlaio/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/themes/custom/vlaio/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/vlaio/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/themes/custom/vlaio/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff ">
+    <meta name="msapplication-TileImage" content="/themes/custom/vlaio/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff ">
+    <link rel="mask-icon" href="/themes/custom/vlaio/images/favicon/safari-pinned-tab.svg" color="#009B48 ">
+  </head>
+  <body class="page-node node-type-maatregelfiche">
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6MJ8B8"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+            <a href="#main-content" class="visually-hidden focusable">
+      Overslaan en naar de inhoud gaan
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="layout-container">
+
+  <header role="banner">
+      <div>
+    <div id="block-vlaanderenheader">
+  
+    
+      <div id="64f429adf9a23712490ed47014dc5f9966a0121e" class="iwgh2 iw2-no-js iw2-retina-disabled iw2-no-mobile  iw2-mobile-supported iwgh2-redesign iwgh2-redesign-alt iw2-responsive iwgh2-non-sticky iwgh2-default-margin" aria-live="off" lang="nl">
+  <div class="iwgh2-bar">
+    <div class="iw2-layout iw2-default-breakpoint">
+      <div class="iw2-wrapper iw2-default-margin">
+        <div class="iw2-inner-wrapper">
+          <div class="iwgh2-navigation">
+            <a class="iw2-branded" href="https://www.vlaanderen.be/nl" target="_self">
+                            <div class="iwgh2-branding-logo"></div>
+                            <span>Vlaanderen</span>
+            </a>
+            <div class="iw2-menu iw2-menu-no-items" data-show-menu-help="Toon navigatie menu" data-hide-menu-help="Verberg navigatie menu">
+              <div class="iwgh2-navigation-menu-toggle-wrapper">
+                <div class="iwgh2-navigation-menu-toggle-animation-wrapper" style="">
+                  <a class="iwgh2-navigation-menu-site" style="" href="http://www.vlaio.be">Agentschap Innoveren &amp; Ondernemen</a>
+                  <a class="iwgh2-navigation-menu-breadcrumb" style="display:none;" href="javascript:;"></a>
+                  <span class="iwgh2-navigation-menu-toggle iw2-hidden"><span class="iw2-visually-hidden iw2-help-text"></span></span>
+                </div>
+              </div>
+              <div class="iwgh2-flyout-wrapper iw2-window-closed" style="display:none;" tabindex="-1">
+                <div class="iwgh2-search iw2-hidden" role="search">
+                  <form method="POST" action="" novalidate="novalidate">
+                    <div class="iwgh2-form-label">
+                      <label for="iwgh2-search-field">Zoeken</label>
+                    </div>
+                    <div class="iwgh2-form-textfield">
+                      <input id="iwgh2-search-field" type="search" class="iwgh2-search-field iwgh2-form-text" name="query"/>
+                    </div>
+                    <div class="iwgh2-form-actions">
+                      <div class="iwgh2-form-action">
+                        <div class="iwgh2-form-button">
+                          <input type="submit" class="iwgh2-form-submit" name="op" value=""/>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <ul class="iw2-menu-items" tabindex="-1"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="iwgh2-extensions">
+            <div class="iwgh2-extension-contact" data-show-menu-help="Toon menu" data-hide-menu-help="Verberg menu">
+              <a class="iwgh2-extension-contact-toggle iw2-exclude-from-outbound-link-tracking" href="http://www.vlaio.be" target="_self"><span class="iw2-visually-hidden iw2-help-text"></span>Contacteer ons</a>
+              <div class="iwgh2-extension-contact-wrapper iwgh2-flyout-wrapper">
+                <div class="iwgh2-contact-menu iw2-window-closed iw2-menu-no-items" style="display:none;" tabindex="-1">
+                  <div class="iwgh2-contact-menu-header">
+                    <span class="iw2-menu-item-title">Contacteer ons</span>
+                  </div>
+                  <ul class="iw2-menu-items"></ul>
+                </div>
+                <div class="iwgh2-windows">
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+</div>
+
+  </div>
+
+
+  </div>
+
+  </header>
+  <div class="navigation">
+    <div class="layout layout--wide">
+      <div class="grid grid--layout">
+        <div class="logowrapper">
+          <a href="https://www.vlaio.be/nl" class="logo"></a>
+        </div>
+        <div class="menuwrapper">
+          <div class="menuwrapper-inner">
+            <div>
+    <nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation" class="block-secondarynavigation-menu">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/nl/nieuws" data-drupal-link-system-path="nieuws">Nieuws</a>
+              </li>
+                <li class="menu-item">
+        <a href="/nl/publicaties" data-drupal-link-system-path="publicaties">Publicaties</a>
+              </li>
+                <li class="menu-item">
+        <a href="/nl/events" data-drupal-link-system-path="events">Events</a>
+              </li>
+                <li class="menu-item">
+        <a href="/nl/ondernemersverhalen" data-drupal-link-system-path="ondernemersverhalen">Ondernemersverhalen</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/nl/over-ons" data-drupal-link-system-path="over-ons">Over ons</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/nl/andere-doelgroepen" data-drupal-link-system-path="node/388">Andere doelgroepen</a>
+              </li>
+                <li class="menu-item">
+        <a href="/flanders-innovation-entrepreneurship">EN</a>
+              </li>
+        </ul>
+    
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-primarynavigation-menu" id="block-primarynavigation" class="block-primarynavigation-menu">
+            
+  <h2 class="visually-hidden" id="block-primarynavigation-menu">Primary navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/nl/begeleiding-advies" class="begeleiding-advies" data-drupal-link-system-path="node/138">Informatie, begeleiding &amp; advies</a>
+                <span class="arcering"></span>
+      </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/nl/subsidies-financiering" class="subsidies-financiering" data-drupal-link-system-path="node/54">Subsidies &amp; financiering</a>
+                <span class="arcering"></span>
+      </li>
+        </ul>
+    
+  
+
+
+  </nav>
+<div id="block-mobilenavigation">
+  
+    
+  
+      <div class="mobilenavigation">
+<div class="closebutton"></div>
+  <div class="mobilenavigation-inner">
+    
+              <ul class="menu">
+                    <li class="primary menu-item menu-item--collapsed">
+        <a href="/nl/begeleiding-advies" class="begeleiding-advies" data-drupal-link-system-path="node/138">Informatie, begeleiding &amp; advies</a>
+              </li>
+                <li class="primary menu-item menu-item--collapsed">
+        <a href="/nl/subsidies-financiering" class="subsidies-financiering" data-drupal-link-system-path="node/54">Subsidies &amp; financiering</a>
+              </li>
+                <li class="secondary menu-item">
+        <a href="/nl/nieuws" data-drupal-link-system-path="nieuws">Nieuws</a>
+              </li>
+                <li class="secondary menu-item">
+        <a href="/nl/publicaties" data-drupal-link-system-path="publicaties">Publicaties</a>
+              </li>
+                <li class="secondary menu-item">
+        <a href="/nl/events" data-drupal-link-system-path="events">Events</a>
+              </li>
+                <li class="secondary menu-item">
+        <a href="/nl/ondernemersverhalen" data-drupal-link-system-path="ondernemersverhalen">Ondernemersverhalen</a>
+              </li>
+                <li class="secondary menu-item menu-item--collapsed">
+        <a href="/nl/over-ons" data-drupal-link-system-path="over-ons">Over ons</a>
+              </li>
+                <li class="secondary menu-item menu-item--collapsed">
+        <a href="/nl/andere-doelgroepen" data-drupal-link-system-path="node/388">Andere doelgroepen</a>
+              </li>
+                <li class="secondary menu-item">
+        <a href="/flanders-innovation-entrepreneurship">EN</a>
+              </li>
+        </ul>
+    
+  
+
+
+    <div class="contact-wrapper"><a href="/nl/contact" class="button button--large" aria-label="Mobiel menu - contacteer ons">Contacteer ons</a></div>
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+          </div>
+          <div class="searchbutton"></div>
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="extended-navigation-wrapper">
+    <div class="extended-navigation">
+        <div>
+    <div id="block-extendednavigation">
+  
+    
+      <div class="layout layout--wide">
+  <div data-menu="begeleiding-advies" class="extended-navigation-inner clearfix" style="display:none;">
+    <div class="col col-60">
+  <h3>Je zoekt informatie over</h3>
+  <ul>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/jouw-bedrijf-tijdens-corona" hreflang="nl">Jouw bedrijf tijdens corona</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/start" hreflang="nl">Start</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/financiering" hreflang="nl">Financiering</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/groei-innovatie" hreflang="nl">Groei &amp; innovatie</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/overnemen-overlaten" hreflang="nl">Overnemen &amp; overlaten</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/bedrijfshuisvesting" hreflang="nl">Bedrijfshuisvesting</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/internationaal-ondernemen" hreflang="nl">Internationaal ondernemen</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/duurzaam-ondernemen" hreflang="nl">Duurzaam ondernemen</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/vergunningen-getuigschriften" hreflang="nl">Vergunningen &amp; getuigschriften</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies/dossiers" hreflang="nl">Dossiers</a></li>
+      <li class="link--icon--caret"><a href="/nl/begeleiding-advies" class="green" aria-label="Open overzichtspagina van begeleiding en advies">Alles weergeven</a></li>
+    </ul>
+</div>
+<div class="cta-wrapper">
+  <div class="cta-content">
+  <h3>Vind de juiste expertise, begeleiding of netwerk</h3>
+  <p>Ontdek hier de initiatieven die door de overheid worden gesteund</p>
+</div>
+
+  <div class="cta-button-wrapper">
+    <a href="/nl/begeleiding-advies/coaching-en-advies" class="button">Vind de juiste expertise</a>
+  </div>
+</div>
+  </div>
+  <div data-menu="subsidies-financiering" class="extended-navigation-inner clearfix"  style="display:none;">
+    <div class="col col-30">
+  <h3>Je zoekt steun voor</h3>
+  <ul>
+      <li class="link--icon--caret"><a href="/nl/subsidies-financiering?category=opleiding">Opleiding</a></li>
+      <li class="link--icon--caret"><a href="/nl/subsidies-financiering?category=advies">Advies</a></li>
+      <li class="link--icon--caret"><a href="/nl/subsidies-financiering?category=investeringen">Investeringen</a></li>
+      <li class="link--icon--caret"><a href="/nl/subsidies-financiering?category=onderzoek--ontwikkeling">Onderzoek &amp; ontwikkeling</a></li>
+      <li class="link--icon--caret"><a href="/nl/subsidies-financiering" class="green" aria-label="Open overzichtspagina van subsidies en financering">Alles weergeven</a></li>
+    </ul>
+</div>
+<div class="col col-30 u-hidden-mobile">
+    <h3>Uitgelicht</h3>
+    <ul>
+          <li class="link--icon--caret"><a href="/nl/subsidies-financiering/kmo-portefeuille" hreflang="nl">Kmo-portefeuille</a></li>
+          <li class="link--icon--caret"><a href="/nl/subsidies-financiering/kmo-groeisubsidie" hreflang="nl">Kmo-groeisubsidie</a></li>
+          <li class="link--icon--caret"><a href="/nl/subsidies-financiering/onderzoeksproject" hreflang="nl">Onderzoeksproject</a></li>
+          <li class="link--icon--caret"><a href="/nl/subsidies-financiering/ontwikkelingsproject" hreflang="nl">Ontwikkelingsproject</a></li>
+          <li class="link--icon--caret"><a href="/nl/subsidies-financiering/hinderpremie" hreflang="nl">Hinderpremie</a></li>
+        </ul>
+</div>
+
+<div class="cta-wrapper">
+  <div class="cta-content">
+  <h3>Zoek de gepaste steun voor je onderneming</h3>
+  <p>Ontdek de belangrijkste steunmaatregelen van de provinciale, Vlaamse, federale en Europese overheden.</p>
+</div>
+
+  <div class="cta-button-wrapper">
+    <a href="/nl/subsidies-financiering/subsidiedatabank" class="button">Naar de subsidiedatabank</a>
+  </div>
+</div>
+
+  </div>
+</div>
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+    <div class="searchwrapper">
+      <div>
+    <div id="block-zoekveld" class="searchblock">
+  
+    
+  <div class="layout layout--wide">
+          <form class="vlaio-search-form" id="vlaio-header-search-form" data-drupal-selector="vlaio-search-form" action="/nl/subsidies-financiering/subsidiedatabank/winwinlening" method="post" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-textfield form-item-keyword js-form-item-keyword">
+      <label for="edit-keyword-header-search">Zoek naar</label>
+        
+<input placeholder="Wat zoek je?" autocomplete="off" data-drupal-selector="edit-keyword-header-search" type="text" id="edit-keyword-header-search" name="keyword" value="" size="60" maxlength="128" class="form-text input-field" />
+
+
+        </div>
+
+<input data-drupal-selector="edit-submit-search-submit" type="submit" id="edit-submit-search-submit" name="op" value="Zoeken" class="button js-form-submit form-submit input--wide" />
+
+
+<input autocomplete="off" data-drupal-selector="form-sfxzyjpcmciipajvkuvpq-gpz6rsw7tq96l9g2cxs84" type="hidden" name="form_build_id" value="form-SFxzYJpcMCiIPAjvkuvpQ_GPZ6RSw7tq96L9g2Cxs84" class="input-field" />
+
+
+<input data-drupal-selector="edit-vlaio-search-form" type="hidden" name="form_id" value="vlaio_search_form" class="input-field" />
+
+
+</form>
+
+      </div>
+</div>
+<div class="search-autocomplete">
+</div>
+
+  </div>
+
+  </div>
+  
+  
+
+  
+
+  
+  <div class="search-overlayer"></div>
+  
+          <div class="breadcrumbs">
+      <div class="layout layout--wide typography">
+          <div>
+    <div id="block-kruimelpad">
+  
+    
+      
+  
+    
+    <nav role="navigation" aria-labelledby="system-breadcrumb-5596">
+      <h2 id="system-breadcrumb-5596" class="visually-hidden">Kruimelpad</h2>
+      <ol>
+                        <li>
+                          <a href="/nl/subsidies-financiering" class="link--icon--caret link--icon--after"><span>Subsidies & financiering</span></a>
+                      </li>
+                                <li>
+                          <a href="/nl/subsidies-financiering/subsidiedatabank" class="link--icon--caret link--icon--after"><h1>Subsidiedatabank</h1></a>
+                      </li>
+                    </ol>
+    </nav>
+  
+  
+
+  </div>
+
+  </div>
+
+      </div>
+    </div>
+      
+  <main role="main">
+
+    <a id="main-content" tabindex="-1"></a>    
+                              <div class="layout-content">
+              <div>
+    <div id="block-vlaio-content">
+  
+    
+      
+
+<article role="article" about="/nl/subsidies-financiering/subsidiedatabank/winwinlening">
+  <div class="layout layout--wide typography">
+    <div class="grid">
+      <div role="article" about="/nl/subsidies-financiering/subsidiedatabank/winwinlening" class="maatregel-detail col--8-12 col--8-12--m col--1-1--s">
+  
+      </div>
+      <div class="col--8-12 col--8-12--m col--1-1--s maatregel-detail">
+        <div class="title-info-wrap">
+                        <h1>Winwinlening</h1>
+                                
+            <div class="field--field-generated-pdf">
+<a href="/nl/download/pdf?file=generated-pdf/maatregelfiche-winwinlening-197_70.pdf" class="button-pdf">
+  Download als PDF
+</a>
+</div>
+      
+                    
+            <div class="field--field-date-revisionchanged">Laatst gewijzigd op 23 jan 2021 <span class='allchanges'>(<a href="/nl/subsidies-financiering/subsidiedatabank/wijzigingen/197">Alle wijzigingen</a>)</span></div>
+      
+        </div>
+                          <div class="field-samengevat-wrapper u-visible-mobile">
+            
+<div >
+    <h3>Samengevat</h3>
+      
+  <div class="field--field-doelgroep">
+    <div>Voor wie</div>
+              <div>kmo&#039;s</div>
+          </div>
+
+  <div class="field--field-onderwerp">
+    <div>Voor wat</div>
+              <div>lening van particulieren voor financiering investeringen en werkkapitaal </div>
+          </div>
+
+            <div class="field--field-samengevat-vrij-label">Voordeel</div>
+      
+            <div class="field--field-samengevat-vrij-tekst">achtergestelde lening tot €&nbsp;300.000 tegen lage rentevoet</div>
+      
+  </div>
+          </div>
+                
+  <div class="field--field-maatregel-inhoud">
+    <h2 class="visible-in-pdf">Wat houdt de maatregel in</h2>
+                  <div><p class="normal">Met de Winwinlening van PMV/z moedigt de Vlaamse overheid particulieren aan om een achtergestelde lening te verstrekken aan kleine en middelgrote ondernemingen (kmo’s).&nbsp;Een particulier kan tot €&nbsp;75.000 lenen aan een Vlaamse kmo gedurende een looptijd van 5 tot 10&nbsp;jaar.<br />
+De kredietgever krijgt hiervoor een jaarlijks belastingkrediet van 2,5% op het openstaande kapitaal van de Winwinlening. Indien de kredietnemer niet kan terugbetalen, kan de kredietgever daarnaast 40% van het verschuldigde bedrag terugkrijgen via een eenmalig belastingkrediet.<br />
+Een kmo kan tot een bedrag van €&nbsp;300.000 Winwinleningen aangaan, met een maximum van €&nbsp;75.000 per kredietgever.</p>
+
+<p class="normal">PMV/z is het overkoepelende merk voor de Startlening, de Cofinanciering, Cofinanciering+, de Winwinlening en de Waarborgregeling. Door deze vijf producten te groeperen legt PMV/z de nadruk op de mogelijkheid om deze verschillende producten te combineren om te komen tot een optimale financieringsoplossing.</p>
+
+<div>
+<div class="uitgelicht"><strong>1. </strong>De bekendmaking van de maximum- en minimumrentevoet van de Winwinlening voor 2021 wordt verwacht eerstdaags verwacht. We houden je op de hoogte.&nbsp;<br />
+<strong>2. </strong>Half februari wordt ook het Vriendenaandeel gelanceerd: zoals bij de winwinlening zal je als particulier tot maximaal €&nbsp;75.000 kunnen investeren in een Vlaamse onderneming&nbsp;en kan elke onderneming tot €&nbsp;300.000&nbsp;kapitaal op deze manier ophalen. Meer informatie kan je voorlopig terugvinden in deze rubriek&nbsp;<a href="https://www.vlaio.be/nl/subsidies-financiering/subsidiedatabank/vlaamse-steun-voor-ondernemers-coronavirus#Winwinlening-en-vriendenaandeel">Winwinlening en vriendenaandeel</a>. Zodra deze maatregel operationeel is wordt hiervan een aparte maatregel opgenomen in de Subsidiedatabank.&nbsp;</div>
+</div>
+</div>
+              </div>
+
+        
+      <div class="field--field-body-structured">
+              <div>
+  <div id="Wie-komt-in-aanmerking" class="paragraph paragraph--type--vrij-blok paragraph--view-mode--default">
+       
+                
+            <h2 class="field--field-titel">Wie komt in aanmerking</h2>
+      
+            <div class="field--field-tekst"><h5>Als kredietnemer</h5>
+
+<p>Als kredietnemer komen alle kmo’s (ook zelfstandigen en vrije beroepers) met een economische activiteit die in Vlaanderen gevestigd zijn in aanmerking, ook binnen de sector van de sociale economie. Deze kmo's moeten voldoen aan de Europese kmo-definitie:</p>
+
+<ul>
+	<li>met minder dan 250 werknemers;</li>
+	<li>jaaromzet niet hoger dan €&nbsp;50 miljoen en/of balanstotaal niet hoger dan €&nbsp;43 miljoen;</li>
+	<li>voldoen aan het zelfstandigheidscriterium: als er een deelnemingsrelatie bestaat met (een) andere onderneming(en) van 25 % of meer van het kapitaal of van de stemrechten, moeten de gegevens van deze onderneming(en) meegeteld worden bij het toetsen van bovenvermelde criteria. Meer info kan je vinden in <a href="https://ec.europa.eu/docsroom/documents/15582/attachments/1/translations/nl/renditions/pdf" target="_blank">de folder van de Europese Commissie</a>. </li>
+</ul>
+
+<p>Een onderneming die één van deze criteria overschrijdt, wordt beschouwd als grote onderneming.<br />
+Een exploitatiezetel dient in Vlaanderen gelegen te zijn.</p>
+
+<p>Vzw’s zijn ook toegelaten indien deze een economische activiteit uitoefenen. Er is sprake van een economische activiteit op het moment dat er goederen of diensten op de markt worden aangeboden. Ook activiteiten binnen de sociale economie passen hierin. </p>
+
+<p>Ook in bijberoep kan j<span><span>e gebruik maken van de </span></span> Winwinlening.</p>
+
+<h5>Als kredietgever</h5>
+
+<p>Op de datum waarop de Winwinlening gesloten wordt, moet de kredietgever voldoen aan de volgende voorwaarden:</p>
+
+<ul>
+	<li>
+	<p>de kredietgever moet een natuurlijk persoon zijn die deze lening afsluit buiten het kader van zijn handels- of beroepsactiviteiten;</p>
+	</li>
+	<li>
+	<p>deze natuurlijke persoon woont in het Vlaamse Gewest of moet er gelokaliseerd zijn voor de personenbelasting;</p>
+	</li>
+	<li>
+	<p>deze natuurlijke persoon mag geen werknemer zijn van de kredietnemer;</p>
+	</li>
+	<li>
+	<p>als de kredietnemer een zelfstandige is, dan kan de kredietgever niet de echtgenoot, de echtgenote of de wettelijk samenwonende partner van de kredietnemer zijn;</p>
+	</li>
+	<li>
+	<p>als de kredietnemer een rechtspersoon is, kan de kredietgever noch de echtgenoot, de echtgenote of de wettelijk samenwonende partner van de kredietgever, benoemd zijn of optreden als bestuurder, zaakvoerder of in een vergelijkbaar mandaat binnen die rechtspersoon;</p>
+	</li>
+	<li>als de kredietnemer een vennootschap is, kan de kredietgever noch de echtgenoot, de echtgenote of de wettelijk samenwonende partner van de kredietgever rechtstreeks of onrechtstreeks houder zijn van:
+	<ol>
+		<li>meer dan 5% van de aandelen of de stemrechten van deze vennootschap;</li>
+		<li>rechten of effecten waarvan de uitoefening, omwisseling of conversie de overschrijding van die drempel van 5% (vermeld in punt 1.), tot gevolg zou hebben.</li>
+	</ol>
+	</li>
+</ul>
+
+<p>Gedurende de hele looptijd van de Winwinlening mag de kredietgever geen kredietnemer zijn bij een andere Winwinlening.</p></div>
+      
+       
+      </div>
+</div>
+              <div>
+  <div id="Bedrag-van-het-fiscaal-voordeel-voor-de-kredietgever" class="paragraph paragraph--type--vrij-blok paragraph--view-mode--default">
+       
+                
+            <h2 class="field--field-titel">Bedrag van het fiscaal voordeel voor de kredietgever</h2>
+      
+            <div class="field--field-tekst"><p>Het fiscaal voordeel voor de kredietgever bestaat uit:</p>
+
+<ul>
+	<li>Een jaarlijks belastingkrediet voor de hele looptijd van de lening:
+	<ul>
+		<li>Als berekeningsbasis wordt het rekenkundig gemiddelde genomen van alle uitgeleende bedragen op 1 januari en op 31 december van het belastbare tijdperk, met een maximum van €&nbsp;75.000 per belastingplichtige;</li>
+		<li>het belastingkrediet bedraagt 2,5% van de berekeningsbasis (wat neerkomt op een belastingkrediet van maximum €&nbsp;1.875 per jaar).</li>
+	</ul>
+	</li>
+	<li>De mogelijkheid tot een eenmalig belastingkrediet van 30%<sup>*</sup> van het openstaand kapitaal van de lening dat definitief is verloren gegaan als:
+	<ul>
+		<li>de kredietnemer tijdens of binnen maximaal zes maanden na de looptijd van de Winwinlening failliet gaat of als hij zich bevindt in staat van kennelijk onvermogen (= betalingsachterstand van minimum drie maanden) of vrijwillige of gedwongen ontbinding of vereffening;</li>
+		<li>en als de kredietnemer ten gevolge daarvan een deel of het geheel van de Winwinlening niet kan terugbetalen;</li>
+		<li>en als de kredietgever de Winwinlening opeisbaar heeft gesteld.</li>
+	</ul>
+	</li>
+</ul>
+
+<h5><sup>*</sup><span><span><span>Eenmalig belastingkrediet van 40%</span></span></span></h5>
+
+<p><span><span><span>Ingevolge de COVID-19-crisis kan het percentage van het eenmalig belastingkrediet van 30% worden opgetrokken tot maximaal 40%. De verhoging van het eenmalig belastingkrediet geldt alleen voor Winwinleningen die gesloten zijn na 15 maart 2020 tot uiterlijk 31 december 2021.</span></span></span></p></div>
+      
+       
+      </div>
+</div>
+              <div>
+  <div id="Voorwaarden" class="paragraph paragraph--type--vrij-blok paragraph--view-mode--default">
+       
+                
+            <h2 class="field--field-titel">Voorwaarden</h2>
+      
+            <div class="field--field-tekst"><p>De belangrijkste eigenschappen zijn:</p>
+
+<ul>
+	<li><span><span><span>het is een achtergestelde lening, zowel ten aanzien van bestaande als van toekomstige schulden, met een vaste looptijd van 5 tot 10 jaar;</span></span></span></li>
+	<li><span><span><span>je kan kiezen tussen verschillende aflossingsmogelijkheden:</span></span></span>
+	<ul>
+		<li><span><span><span>terugbetaling in één keer op de eindvervaldag;</span></span></span></li>
+		<li><span><span><span>maandelijkse, driemaandelijkse, zesmaandelijkse of jaarlijkse aflossingen (er is een </span></span></span>simulatie mogelijk op de website)<span><span><span>;</span></span></span></li>
+		<li><span><span><span>een eenmalige vervroegde terugbetaling van het volledige openstaande saldo is eveneens mogelijk;</span></span></span></li>
+	</ul>
+	</li>
+	<li><span><span><span>het totale bedrag, in hoofdsom, dat een kredietgever in het kader van één of meer Winwinleningen aan één of meer kredietnemers kan uitlenen, kan ten hoogste €&nbsp;75.000 bedragen;</span></span></span></li>
+	<li><span><span><span>het totale bedrag, in hoofdsom, dat één kredietnemer in het kader van verschillende Winwinleningen kan ontlenen van verschillende kredietgevers, kan ten hoogste € 300.000 bedragen;</span></span></span></li>
+	<li><span><span><span>de rentevoet is gebaseerd op de wettelijke rentevoet die van kracht is op de datum waarop de Winwinlening gesloten wordt:</span></span></span>
+	<ul>
+		<li><span><span><span>de rentevoet bedraagt maximum deze wettelijke rentevoet en minimum de helft van diezelfde rentevoet;</span></span></span></li>
+		<li><span><span><span>deze rentevoet (1,75% in 2020) wordt elk jaar in januari bekend gemaakt;</span></span></span></li>
+		<li><span><span><span>een Winwinlening afgesloten in 2020 moet zich dus situeren tussen 0,875% en 1,75%;</span></span></span></li>
+		<li><span><span><span>deze rentevoet is vast en is een bruto-rentevoet (hierop is roerende voorheffing verschuldigd)</span></span></span>.</li>
+	</ul>
+	</li>
+</ul></div>
+      
+       
+      </div>
+</div>
+              <div>
+  <div id="Aanvraagprocedure" class="paragraph paragraph--type--vrij-blok paragraph--view-mode--default">
+       
+                
+            <h2 class="field--field-titel">Aanvraagprocedure</h2>
+      
+            <div class="field--field-tekst"><p>De Winwinlening moet je laten vaststellen in een akte en aflossingstabel die beschikbaar zijn bij P<span><span>MV/z-Waarborgen</span></span> op <a href="https://www.pmvz.eu/winwinlening" target="_blank">www.pmvz.eu/winwinlening</a>.</p>
+
+<p>De akte en aflossingstabel worden in drievoud afgedrukt en ondertekend, waarvan één bestemd is voor de kredietgever, één voor de kredietnemer en één binnen de 3 maanden moet worden bezorgd aan P<span><span>MV/z-Waarborgen.</span></span><span><span> </span></span></p>
+
+<p><span><span>De ondertekende akte en de aflossingstabel verstuur je bij voorkeur digitaal naar <a href="mailto:winwinlening@pmv.eu">winwinlening@pmv.eu</a>. Indien je niet in de mogelijkheid bent om de documenten digitaal over te maken kunnen ze verstuurd worden naar: Winwinlening, Oude Graanmarkt 63, 1000 Brussel.</span></span><br />
+<span><span>Een Winwinlening kan door PMV/z-Waarborgen niet worden geregistreerd indien de getekende akte en aflossingstabel niet worden overgemaakt.</span></span></p>
+
+<p><span><span>Na ontvangst van de gehandtekende akte en delgingstabel duurt het ongeveer tien werkdagen alvorens de kredietgever de registratiebrief </span></span>van PMV/z-Waarborgen ontvangt die als fiscaal attest dienst doet en dus ter beschikking van de fiscale controle moet worden gehouden.</p>
+
+<p>De voortzetting en het behoud van de Winwinlening kan bewezen worden door de voorlegging van de bankrekeninguittreksels waarop de ontvangen intresten van de Winwinlening staan. </p>
+
+<p>De kredietnemer is verplicht de roerende voorheffing, berekend tegen het correcte tarief, in te houden op de verschuldigde interesten. Die voorheffing dient binnen de 15 dagen na de vervaldag opgenomen te worden in een aangifte roerende voorheffing en gestort aan de dienst Roerende Voorheffing van het belastingkantoor, gebruik makend van formulier 273 (Aangifte in de Roerende Voorheffing Inkomsten van Roerende Goederen en Kapitalen).</p></div>
+      
+       
+      </div>
+</div>
+              <div>
+  <div id="COVID-19-verlenging-looptijd-van-bestaande-leningen" class="paragraph paragraph--type--vrij-blok paragraph--view-mode--default">
+       
+                
+            <h2 class="field--field-titel">COVID-19: verlenging looptijd van bestaande leningen</h2>
+      
+            <div class="field--field-tekst"><p><span><span><span>Ingevolge de COVID-19-crisis kunnen Winwinleningen </span></span></span>die een einde namen in 2020 door de partijen verlengd worden voor een termijn van 1 of 2 jaar. De verlenging diende gepaard te gaan met een uitstel van betaling van kapitaal voor dezelfde periode. De kredietnemer dient in deze periode van verlenging een keer per jaar de intresten te betalen aan de kredietgever (en de roerende voorheffing daarop door te storten aan de dienst roerende voorheffing). De kredietnemer behoudt het jaarlijkse belastingkrediet van 2,50% en het recht op het eenmalig belastingkrediet gedurende de hele looptijd van de verlenging. Het contract van verlenging kan je <a href="https://winwin.pmv.eu/AanvraagUitstel.aspx" target="_blank">online invullen en afdrukken</a>.</p></div>
+      
+       
+      </div>
+</div>
+          </div>
+  
+      </div>
+      
+      <div class="col--4-12 col--4-12--m col--1-1--s vlaio-sidebar anchor-links">
+        <div class="sidebar-wrap anchor-links">
+                      <div class="field-samengevat-wrapper u-hidden-mobile">
+              
+<div >
+    <h3>Samengevat</h3>
+      
+  <div class="field--field-doelgroep">
+    <div>Voor wie</div>
+              <div>kmo&#039;s</div>
+          </div>
+
+  <div class="field--field-onderwerp">
+    <div>Voor wat</div>
+              <div>lening van particulieren voor financiering investeringen en werkkapitaal </div>
+          </div>
+
+            <div class="field--field-samengevat-vrij-label">Voordeel</div>
+      
+            <div class="field--field-samengevat-vrij-tekst">achtergestelde lening tot €&nbsp;300.000 tegen lage rentevoet</div>
+      
+  </div>
+            </div>
+                                <div class="anchor-links">
+              <div><ul><li><a href="#Wie-komt-in-aanmerking">Wie komt in aanmerking</a></li><li><a href="#Bedrag-van-het-fiscaal-voordeel-voor-de-kredietgever">Bedrag van het fiscaal voordeel voor de kredietgever</a></li><li><a href="#Voorwaarden">Voorwaarden</a></li><li><a href="#Aanvraagprocedure">Aanvraagprocedure</a></li><li><a href="#COVID-19-verlenging-looptijd-van-bestaande-leningen">COVID-19: verlenging looptijd van bestaande leningen</a></li><li><a href="#contact">Contact</a></li><li><a href="#maatregelen">Ook interessant</a></li><li><a href="#initiatieven">Coaching en advies</a></li></ul></div>
+            </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+  <div class="maatregel-extra-wrapper">
+              <div class="typography contact" id="contact"> 
+        <div class="layout layout--wide">
+          <div class="grid">
+            <div class="col--8-12 col--1-1--s">
+              <h2 class="shade"> Contact</h2>
+              
+            <div class="field--field-contact-intro"><p>Meer informatie over o.m. de belastingaangifte, de&nbsp;betaling van de roerende voorheffing, wat bij overlijden kredietgever, wat bij stopzetting van de activiteit, overgang van eenmanszaak naar vennootschap, enz...&nbsp;kan je terugvinden in de rubriek "Veel gestelde vragen" op de website&nbsp;<a href="https://www.pmvz.eu/winwinlening" target="_blank">www.pmvz.eu/winwinlening</a>.</p>
+</div>
+      
+            </div>
+            <div class="col--1-1">
+              
+      <div class="field--field-organisaties">
+              <div>
+  <div class="paragraph paragraph--type--contact-organisatie paragraph--view-mode--default">
+    <div class="link--icon--caret organisation">
+            <div class="field--field-organisatie">PMV/z</div>
+      </div>
+    <div class="wrapper clearfix">
+              <div class="adreswrapper">
+  <div class="field--field-adres">
+    <div>Adres</div>
+              <div><p class="address" translate="no"><span class="address-line1">Oude Graanmarkt 63</span><br>
+<span class="postal-code">1000</span> <span class="locality">Brussel</span><br>
+<span class="country">België</span></p></div>
+          </div>
+
+  <div class="field--field-telefoon">
+    <div>Telefoon</div>
+                  <div><span class="tel">T</span><a href="tel:022295277">02 229 52 77</a></div>
+              </div>
+
+  <div class="field--field-e-mail">
+    <div>E-mail</div>
+              <div><a href="mailto:winwinlening@pmv.eu">winwinlening@pmv.eu</a></div>
+          </div>
+
+  <div class="field--field-organisatie-website">
+    <div>Website</div>
+              <div><a href="https://www.pmvz.eu/winwinlening">www.pmvz.eu/winwinlening</a></div>
+          </div>
+</div>
+        <div class="contactpersonen"></div>
+          </div>
+  </div>
+</div>
+          </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+              <div class="typography related-block" id="maatregelen">
+  <div class="field--field-gerelateerde-maatregelen layout layout--wide">
+    <h2 class="shade">Ook interessant</h2>
+    <div class="grid js-equal-height-container">
+            
+              <div class="col--4-12 col--1-1--s">
+          
+
+<article role="article" about="/nl/subsidies-financiering/subsidiedatabank/tax-shelter-voor-startende-ondernemingen" aria-label="Tax Shelter voor startende ondernemingen" class="maatregel js-equal-height">
+  <a href="/nl/subsidies-financiering/subsidiedatabank/tax-shelter-voor-startende-ondernemingen">
+    
+    <div class="title"><h3>Tax Shelter voor startende ondernemingen</h3></div>
+    
+    <div>
+      <div class="grid">
+        <div class="col--1-1 maatregel-teaser-inline">
+            <div class="field--field-teaser">Particulieren kunnen een belastingvermindering bekomen van 30 of 45 % indien zij rechtstreeks of onrechtstreeks investeren in een startende ...</div>
+      <span class="readmore">Lees meer</span></div>
+        <div class="col--1-1 maatregel-partner">Een steunmaatregel van FOD Financiën</div>
+      </div>
+    </div>
+  </a>
+</article>
+
+        </div>
+              <div class="col--4-12 col--1-1--s">
+          
+
+<article role="article" about="/nl/subsidies-financiering/subsidiedatabank/cofinanciering" aria-label="Cofinanciering" class="maatregel js-equal-height">
+  <a href="/nl/subsidies-financiering/subsidiedatabank/cofinanciering">
+    
+    <div class="title"><h3>Cofinanciering</h3></div>
+    
+    <div>
+      <div class="grid">
+        <div class="col--1-1 maatregel-teaser-inline">
+            <div class="field--field-teaser">Dit is een achtergestelde lening van maximum €&nbsp;350.000, bestemd voor starters en bestaande kmo's. De lening wordt steeds gecombineerd met een ...</div>
+      <span class="readmore">Lees meer</span></div>
+        <div class="col--1-1 maatregel-partner">Een steunmaatregel van PMV/z</div>
+      </div>
+    </div>
+  </a>
+</article>
+
+        </div>
+              <div class="col--4-12 col--1-1--s">
+          
+
+<article role="article" about="/nl/subsidies-financiering/subsidiedatabank/waarborgregeling-tot-eu-15-miljoen" aria-label="Waarborgregeling tot €&nbsp;1,5 miljoen" class="maatregel js-equal-height">
+  <a href="/nl/subsidies-financiering/subsidiedatabank/waarborgregeling-tot-eu-15-miljoen">
+    
+    <div class="title"><h3>Waarborgregeling tot €&nbsp;1,5 miljoen</h3></div>
+    
+    <div>
+      <div class="grid">
+        <div class="col--1-1 maatregel-teaser-inline">
+            <div class="field--field-teaser">Ondernemingen die geen financieringsovereenkomst kunnen afsluiten door een gebrek aan voldoende waarborgen, kunnen bij 'financiële instellingen erkend ...</div>
+      <span class="readmore">Lees meer</span></div>
+        <div class="col--1-1 maatregel-partner">Een steunmaatregel van PMV/z</div>
+      </div>
+    </div>
+  </a>
+</article>
+
+        </div>
+          </div>
+  </div>
+</div>
+              <div class="related-initiatieven-wrapper typography" id="initiatieven">
+          <div class="layout layout--wide">
+              <div class="grid">
+    <div class="col--1-1">
+        <h2 class="shade">Coaching en advies</h2>
+    </div>
+</div>
+<div class="grid grid--is-stacked js-equal-height-container" data-visible-limit="2">
+        <div class="col--6-12 col--1-1--s" style="display:none">
+        
+
+<article role="article" about="/nl/begeleiding-advies/coaching-en-advies/vlaio-bedrijfsadviseurs" aria-label="VLAIO bedrijfsadviseurs" class="initiatief js-equal-height">
+    <a href="/nl/begeleiding-advies/coaching-en-advies/vlaio-bedrijfsadviseurs">
+        
+        <div class="title"><h3>VLAIO bedrijfsadviseurs</h3></div>
+        
+        <div>
+            <div>
+                <div class="teaser-inline">
+            <div class="field--field-teaser">Onze bedrijfsadviseurs adviseren en helpen je om je innovatieve plannen, groeiambities of bedrijfstransformatie waar te maken.</div>
+      <span class="readmore u-hidden-mobile ">Lees meer</span></div>
+                <div class="u-hidden-mobile partner">Een initiatief van VLAIO</div>
+            </div>
+        </div>
+    </a>
+</article>
+
+    </div>
+        <div class="col--6-12 col--1-1--s" style="display:none">
+        
+
+<article role="article" about="/nl/begeleiding-advies/coaching-en-advies/mentor-me" aria-label="Mentor Me" class="initiatief js-equal-height">
+    <a href="/nl/begeleiding-advies/coaching-en-advies/mentor-me">
+        
+        <div class="title"><h3>Mentor Me</h3></div>
+        
+        <div>
+            <div>
+                <div class="teaser-inline">
+            <div class="field--field-teaser">Individuele en collectieve begeleiding met als doel de leiderschapskills van de &#039;founder&#039; en de interne structuur te versterken bij een snelle groei.</div>
+      <span class="readmore u-hidden-mobile ">Lees meer</span></div>
+                <div class="u-hidden-mobile partner">Een initiatief van Netwerk Ondernemen</div>
+            </div>
+        </div>
+    </a>
+</article>
+
+    </div>
+        <div class="col--6-12 col--1-1--s" style="display:none">
+        
+
+<article role="article" about="/nl/begeleiding-advies/coaching-en-advies/boost2success" aria-label="Boost2Success" class="initiatief js-equal-height">
+    <a href="/nl/begeleiding-advies/coaching-en-advies/boost2success">
+        
+        <div class="title"><h3>Boost2Success</h3></div>
+        
+        <div>
+            <div>
+                <div class="teaser-inline">
+            <div class="field--field-teaser">Boost2Success analyseert je onderneming gratis en geeft je gratis professioneel advies. Zo is het de gps voor jouw onderneming.</div>
+      <span class="readmore u-hidden-mobile ">Lees meer</span></div>
+                <div class="u-hidden-mobile partner">Een initiatief van Boost2Succes THV</div>
+            </div>
+        </div>
+    </a>
+</article>
+
+    </div>
+        <div class="col--6-12 col--1-1--s" style="display:none">
+        
+
+<article role="article" about="/nl/begeleiding-advies/coaching-en-advies/bryo-standup-bryo-startup" aria-label="Bryo StandUp – Bryo StartUp" class="initiatief js-equal-height">
+    <a href="/nl/begeleiding-advies/coaching-en-advies/bryo-standup-bryo-startup">
+        
+        <div class="title"><h3>Bryo StandUp – Bryo StartUp</h3></div>
+        
+        <div>
+            <div>
+                <div class="teaser-inline">
+            <div class="field--field-teaser">Begeleiding bij alle uitdagingen, problemen en beslissingen die op de weg liggen voor, tijdens en kort na de opstart of overname van een eigen zaak.</div>
+      <span class="readmore u-hidden-mobile ">Lees meer</span></div>
+                <div class="u-hidden-mobile partner">Een initiatief van Voka</div>
+            </div>
+        </div>
+    </a>
+</article>
+
+    </div>
+        <div class="col--6-12 col--1-1--s" style="display:none">
+        
+
+<article role="article" about="/nl/begeleiding-advies/coaching-en-advies/zitdagen-subsidies-en-financiering" aria-label="Zitdagen subsidies en financiering" class="initiatief js-equal-height">
+    <a href="/nl/begeleiding-advies/coaching-en-advies/zitdagen-subsidies-en-financiering">
+        
+        <div class="title"><h3>Zitdagen subsidies en financiering</h3></div>
+        
+        <div>
+            <div>
+                <div class="teaser-inline">
+            <div class="field--field-teaser">Op de zitdag krijg je advies op maat over subsidies en financiering.</div>
+      <span class="readmore u-hidden-mobile ">Lees meer</span></div>
+                <div class="u-hidden-mobile partner">Een initiatief van VLAIO</div>
+            </div>
+        </div>
+    </a>
+</article>
+
+    </div>
+        <div class="col--6-12 col--1-1--s" style="display:none">
+        
+
+<article role="article" about="/nl/begeleiding-advies/coaching-en-advies/financieringsadvies-op-maat" aria-label="Financieringsadvies op maat" class="initiatief js-equal-height">
+    <a href="/nl/begeleiding-advies/coaching-en-advies/financieringsadvies-op-maat">
+        
+        <div class="title"><h3>Financieringsadvies op maat</h3></div>
+        
+        <div>
+            <div>
+                <div class="teaser-inline">
+            <div class="field--field-teaser">We zoeken uit welke subsidies en financieringen bij jouw project passen. </div>
+      <span class="readmore u-hidden-mobile ">Lees meer</span></div>
+                <div class="u-hidden-mobile partner">Een initiatief van VLAIO</div>
+            </div>
+        </div>
+    </a>
+</article>
+
+    </div>
+    </div>
+<div class="all-link">
+    <a href="/nl/begeleiding-advies/coaching-en-advies" class="link--icon--caret">Check alle initiatieven waarop je beroep kan doen</a>
+</div>
+          </div>
+      </div>
+      </div>
+</article>
+
+  </div>
+
+  </div>
+
+          </div>            
+  </main>
+  
+        <footer role="contentinfo" aria-label="Page footer">
+        <div>
+    <div id="block-vlaanderenfooter">
+  
+    
+      <div class="iwgf2__placeholder">
+  <footer id="cba23bcb67b4ab6f628fddec52c4e1cf6d3d46b4" class="iwgf2 iwgf2-redesign iw2-no-js iw2-retina-disabled iw2-no-mobile alternative iw2-mobile-supported iw2-responsive iw2-window-closed iwgf2-expandable iwgf2-default-margin" aria-live="off" role="contentinfo" lang="nl">
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden; display: none;">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="cross" viewBox="0 0 28.84 28.84"><title>cross</title><path d="M26.01 28.84L14.42 17.25 2.83 28.84 0 26.01l11.59-11.59L0 2.83 2.83 0l11.59 11.59L26.01 0l2.83 2.83-11.59 11.59 11.59 11.59-2.83 2.83z"/></symbol><symbol id="login-circle" viewBox="0 0 14 14"><title>login</title><path d="M7 4a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0 10a7 7 0 0 0 4.65-1.78 6 6 0 0 0-9.3 0A7 7 0 0 0 7 14z"/></symbol><symbol id="question-circle" viewBox="0 0 14 14"><title>question-circle</title><path data-name="copy 2" d="M6.36 9.19l1.55-.42a.72.72 0 0 1-.27-.55C7.64 7.12 10 7 10 5.06 10 3.84 8.87 3 7.06 3A4.11 4.11 0 0 0 4 4.25l1.13 1.2a2.24 2.24 0 0 1 1.72-.81C7.63 4.64 8 5 8 5.38 8 6.28 5.9 6.47 5.9 8a1.66 1.66 0 0 0 .46 1.19zM7 12a1.07 1.07 0 1 0-1.1-1.05A1.11 1.11 0 0 0 7 12z"/></symbol><symbol id="search" viewBox="0 0 63.08 63.05"><title>search</title><path data-name="icon search" d="M26.68 53.32A26.66 26.66 0 1 0 0 26.66a26.66 26.66 0 0 0 26.68 26.66zm0-45.91A19.24 19.24 0 1 1 7.42 26.66 19.24 19.24 0 0 1 26.68 7.41zm32.7 55.64A3.71 3.71 0 0 0 62 56.72L45.54 40.26a3.71 3.71 0 0 0-5.25 5.25L56.75 62a3.71 3.71 0 0 0 2.62 1.09z" style="isolation:isolate"/></symbol><symbol id="up-down" viewBox="0 0 7.03 10.01"><title>up-down</title><path d="M.18 7.17c.25.25 2.83 2.65 2.83 2.65a.68.68 0 0 0 1 0s2.6-2.4 2.84-2.65a.69.69 0 0 0 0-1 .66.66 0 0 0-.93 0L3.5 8.42l-2.36-2.2a.66.66 0 0 0-.93 0 .7.7 0 0 0-.03.95zm6.65-4.3C6.59 2.62 4.01.2 4.01.2a.67.67 0 0 0-1 0S.44 2.62.2 2.87a.7.7 0 0 0 0 1 .65.65 0 0 0 .92 0l2.4-2.26 2.36 2.22a.65.65 0 0 0 .92 0 .7.7 0 0 0 0-1z"/></symbol><symbol id="vlaanderen-logo" viewBox="0 0 19.61 31.05"><title>vlaanderen-logo</title><path data-name="Logo Vlaanderen" d="M19.61 16c-1.08-.82-1.59 0-2.27 0s-1.12-1-1.56-.75c-.85.43.34 2 .86 2.27a12.51 12.51 0 0 0 1.18.59 1.72 1.72 0 0 1 1 1.55 3 3 0 0 1 0 .75c-.31 1.32-2.64 2.52-4 1.61a3 3 0 0 1-1.4-2c-.36-1.73-1.62-3-2-4.7-.25-1-.43-2.12-.7-3.15S10.17 10 9.94 9A27.44 27.44 0 0 0 9 5.92C7.71 2.61 7.14 2.85 7.14 2.85s.46.92 2.15 9A47.8 47.8 0 0 0 10.42 17c.16.42.44 1.32.62 1.72.54 1.16 2 2.92 2.05 4.51.05.92.16 1.68.18 2.37a7.37 7.37 0 0 0 .24 1.4c.35 1 3.14 4.09 6.1 4.09v-2.41a10.88 10.88 0 0 1-5.79-1.82 6.37 6.37 0 0 1 .35-1.7 2.78 2.78 0 0 1 2.39-1.94 17.91 17.91 0 0 1 3 .31V16zM6.82 7.36c-.11 1.77-2.87 4.2-3.73 5.75A11.43 11.43 0 0 0 2 15.95a7.53 7.53 0 0 0 .62 4.67c.91 2.18-.12 3 .59 2.54.88-.72.75-2.39.68-3.43a14.77 14.77 0 0 1 0-2.82 13.29 13.29 0 0 1 2.41-5.33 4.84 4.84 0 0 0 .52-4.22m.56 5s.29 1.4-1 5c-3.26 9.45 3 10.34 4.74 12.56 0 0 .69-1-2.14-4-1-1.12-2-3.6-1.15-7.15 1.17-5.13-.5-6.39-.5-6.39M1.21 6.2A4.53 4.53 0 0 1 1 4.7c.2-2.22 2.23-3.12 2.73-3.45A2.7 2.7 0 0 0 4.76 0a3 3 0 0 1-1.21 3.67A6.06 6.06 0 0 0 1.21 6.2m5.11-2.15c.11.23 1 1.45-2.48 4.27s-2.36 4.84-2.36 4.84-3.66-2 .56-5.53 3.35-4.2 3.35-4.2a1.05 1.05 0 0 1 .93.63m4.46 1.08c.59.08 1 1.92 2.35 2.32 1 .29 2.08.13 2.32.74a.52.52 0 0 0 .37.92c.39-1.12.58-5.24-5.03-3.98zm1.86.86c0-.13.12 0 .27-.12a1.66 1.66 0 0 1 .59-.48 1 1 0 0 1 .62 0c.12 0 0 .33 0 .4s-.74-.09-.74.32c0 .67.91 0 1.38 0 .23 1.64-2.48 1.19-2.08-.16z"/></symbol><symbol id="warning" viewBox="0 0 22.03 20"><title>warning</title><path data-name="icon warning" d="M3.06 20.01a5.83 5.83 0 0 1-1-.09 2.25 2.25 0 0 1-1.91-3.08 4.91 4.91 0 0 1 .42-.92c0-.15 8-14 8.06-14.16A4.86 4.86 0 0 1 9.51.62a2.16 2.16 0 0 1 3 0 4.37 4.37 0 0 1 .84 1c-.07 0 8.14 14.36 8.12 14.28a4.36 4.36 0 0 1 .54 1.46 2.32 2.32 0 0 1-2.48 2.65c-1.32.05-.64 0-2 0H3.06zm16-1.34a3.66 3.66 0 0 0 .7 0 .94.94 0 0 0 .8-1.33 4.13 4.13 0 0 0-.36-.75c-.57-1-8.07-14.14-8.1-14.24-.72-1-1.34-1-2.1 0 0 .05-8.22 14.29-8.17 14.36-.82 1.3-.36 1.93 1.18 1.94h16zm-9-12h2v6h-2.05v-6zm-.05 9.34v-2h2v2h-2z"/></symbol></svg>
+    </div>
+    <div class="iwgf2-bar">
+      <div class="iw2-layout iw2-default-breakpoint">
+        <div class="iw2-wrapper iw2-default-margin">
+          <div class="iw2-inner-wrapper">
+            <div class="iwgf2__content">
+              <div class="iwgf2__logo">
+                <svg class="iwgf2__logo__img">
+                  <use xlink:href="#vlaanderen-logo" />
+                </svg>
+                <div class="iwgf2__logo__text">
+                  <div class="iwgf2__logo__title">Vlaanderen</div>
+                  <div class="iwgf2__logo__tagline">verbeelding werkt</div>
+                </div>
+              </div>
+              <div class="iwgf2__site-info">
+                <h2 class="iwgf2__site-info__title">Vlaio.be is een officiële website van de Vlaamse overheid</h2>
+                                <div class="iwgf2__site-info__publisher">
+                  <span>uitgegeven door</span>
+                                    <span itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                                        <a class="iwgf2__site-info__publisher__link" itemprop="url" href="http://www.vlaio.be" target="_self"><span itemprop="name">Agentschap Innoveren &amp; Ondernemen</span></a>
+                                      </span>
+                                                                      </div>
+                
+                <div class="iwgf2__contact-us js-iwgf2-contact-us iwgf2-hidden">
+                  <a class="iwgf2__contact-us__link iwgf2-contact-toggle-show iwgf2-exclude-from-outbound-link-tracking" href="" target="_self" data-show-menu-help="Toon menu" data-hide-menu-help="Verberg menu">
+                    <span><span class="iw2-visually-hidden iw2-help-text"></span>Contacteer ons</span>
+                    <div class="iwgf2__contact-us__link__icon">
+                      <svg class="iwgf2__contact-us__link__icon__img">
+                        <use xlink:href="#question-circle" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="iwgf2__navigation">
+                  <ul class="js-iwgf2-navigation-list iwgf2__navigation__list"></ul>
+                </div>
+              </div>
+
+              <div class="iwgf2-languages iwgf2__languages">
+                <ul class="iwgf2-menu-items iwgf2-menu-no-items iwgf2__languages-list js-iwgf2-languages-list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="iwgf2-windows">
+      <div class="iw2-window-closed iwgf2-window iwgf2-window-contact" style="display:none;" tabindex="-1">
+        <div class="iwgf2-window-wrapper iwgf2-window-contact-wrapper">
+          <div class="iwgf2-window-header">
+            <a class="iwgf2-window-close iw2-exclude-from-outbound-link-tracking" href="javascript:;">
+              <span>Sluiten</span>
+            </a>
+          </div>
+          <div class="iwgf2-window-content" tabindex="-1">
+            <ul class="iw2-menu-items iw2-menu-no-items" tabindex="-1"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </div>
+
+  </div>
+
+    </footer>
+    <div class="cookiewrapper closed">
+    <div class="layout layout--wide">
+      <div class="cookie-content">
+        Om je beter van dienst te zijn, maakt Agentschap Innoveren & Ondernemen gebruik van <a href="https://www.vlaio.be/nl/privacybeleid" target="_blank">cookies.</a>
+      </div>
+      <div class="cookie-cta">
+        <a href="#" class="button">Ik begrijp het</a>
+      </div>
+    </div>
+  </div>
+</div><div id="block-ui-spinner" class="vlaanderen-loading">
+  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 219 86.04">
+    <defs>
+        <style>
+            .a{fill:#FFF;}.cls-1{fill:#f6f6f3;}.cls-2{fill:#009941;}.cls-3,.cls-4,.cls-7{isolation:isolate;}.cls-4{font-size:24.92px;font-family:FlandersArtSans-Medium, Flanders Art Sans;}.cls-4,.cls-7{fill:#fff;}.cls-5{letter-spacing:-0.01em;}.cls-6{letter-spacing:0em;}.cls-7{font-size:13.84px;font-family:FlandersArtSans-Regular, FlandersArtSans-Regular;}.cls-8{letter-spacing:-0.04em;}
+        </style>
+    </defs>
+    <title>
+        vlaio-loading-full
+    </title>
+    <g id="vlaanderen-laden">
+        <g id="Voorpagina">
+            <g id="Page-1">
+                <polygon id="Fill-1" points="44.26 0 0 0.01 0 86.03 76.44 86.03 47.42 0 44.26 0" class="cls-1"/>
+                <polygon id="Fill-2" points="47.48 0.01 76.39 86.04 219 86.04 219 0.01 47.48 0.01" class="cls-2"/>
+                <g fill="none"><g transform="translate(-578 -462)translate(578 462)"><polygon points="0 0 59 0 89 89 0 89" class="a"/><path d="M100.3 50.7L106.5 50.7 106.5 51.8 101.5 51.8 101.5 55.3 106.5 55.3 106.5 56.4 101.5 56.4 101.5 59.9 106.5 59.9 106.5 61 100.3 61 100.3 50.7ZM114.3 52.9L111.5 61 109.9 61 107.1 52.9 108.3 52.9 110.7 59.7 113 52.9 114.3 52.9ZM118.6 53.9C118 53.9 117.5 54.1 117.1 54.5 116.7 54.9 116.5 55.5 116.4 56.2L120.2 56.2C120.2 55 119.9 54.3 119.4 54 119.1 53.9 118.9 53.9 118.6 53.9ZM121.4 57.3L116.3 57.3C116.4 58.1 116.6 58.8 117.1 59.3 117.6 59.8 118.2 60 118.9 60 119.7 60 120.4 59.8 121.2 59.5L121.2 59.5 121.2 60.6C120.4 61 119.6 61.2 118.9 61.2 117.7 61.2 116.8 60.8 116.1 60 115.5 59.2 115.1 58.2 115.1 56.9 115.1 55.7 115.4 54.7 116 53.9 116.5 53.1 117.4 52.7 118.6 52.7 119.8 52.7 120.6 53.2 121 54.1 121.2 54.7 121.4 55.3 121.4 56.2L121.4 57.3ZM126.6 53.9C126 53.9 125.3 54.1 124.4 54.6L124.4 61 123.2 61 123.2 52.9 124 52.9 124.3 53.6C125.2 53 126 52.7 126.8 52.7 127.6 52.7 128.2 53 128.8 53.5 129.3 54 129.5 54.7 129.5 55.8L129.5 61 128.3 61 128.3 55.9C128.3 54.5 127.7 53.9 126.6 53.9ZM137.1 62C137.1 63.1 137.8 63.7 139.1 63.7 139.9 63.7 140.5 63.5 141.1 63.1 141.6 62.7 141.9 62.2 141.9 61.6 141.9 61.1 141.6 60.8 141 60.5 140.5 60.4 139.8 60.3 138.8 60.3L137.9 60.3C137.4 60.9 137.1 61.5 137.1 62ZM139.1 53.8C138.6 53.8 138.1 54 137.8 54.3 137.5 54.7 137.3 55.1 137.3 55.5 137.3 55.9 137.5 56.3 137.8 56.7 138.1 57 138.6 57.2 139.2 57.2 139.7 57.2 140.2 57 140.5 56.7 140.8 56.4 141 56 141 55.5 141 55.1 140.8 54.7 140.5 54.3 140.2 54 139.7 53.8 139.1 53.8ZM139.9 59.3C140.9 59.3 141.7 59.5 142.3 60 142.8 60.4 143.1 60.9 143.1 61.6 143.1 62.4 142.7 63.2 141.8 63.8 141 64.4 140 64.7 139.1 64.7 138.1 64.7 137.3 64.5 136.8 64 136.2 63.5 136 62.9 136 62.1 136 61.8 136 61.5 136.2 61.1 136.4 60.7 136.6 60.4 136.9 60.1 136.7 60 136.6 59.8 136.4 59.5 136.3 59.3 136.3 59 136.3 58.8 136.3 58.3 136.5 57.9 136.8 57.4 136.6 57.1 136.5 56.9 136.3 56.5 136.2 56.1 136.2 55.8 136.2 55.4 136.2 54.7 136.5 54 137 53.5 137.6 53 138.3 52.7 139.2 52.7 139.8 52.7 140.3 52.9 140.7 53.1 141.1 52.9 141.4 52.7 141.8 52.5 142.2 52.4 142.5 52.3 142.8 52.3L143.2 53.3C142.6 53.4 142.1 53.6 141.6 53.9 142 54.3 142.1 54.8 142.1 55.4 142.1 56.2 141.8 56.9 141.3 57.4 140.7 58 140 58.3 139.1 58.3 138.6 58.3 138.1 58.1 137.6 57.9 137.4 58.1 137.3 58.4 137.3 58.6 137.3 58.8 137.4 59 137.6 59.1 137.8 59.2 138 59.3 138.3 59.3L139.9 59.3ZM147.6 53.9C147 53.9 146.5 54.1 146.1 54.5 145.7 54.9 145.5 55.5 145.4 56.2L149.2 56.2C149.2 55 148.9 54.3 148.4 54 148.1 53.9 147.9 53.9 147.6 53.9ZM150.4 57.3L145.3 57.3C145.4 58.1 145.6 58.8 146.1 59.3 146.6 59.8 147.2 60 147.9 60 148.7 60 149.4 59.8 150.2 59.5L150.2 59.5 150.2 60.6C149.4 61 148.6 61.2 147.9 61.2 146.7 61.2 145.8 60.8 145.1 60 144.4 59.2 144.1 58.2 144.1 56.9 144.1 55.7 144.4 54.7 145 53.9 145.5 53.1 146.4 52.7 147.6 52.7 148.7 52.7 149.5 53.2 150 54.1 150.2 54.7 150.4 55.3 150.4 56.2L150.4 57.3ZM155.6 53.8C154.7 53.8 154.1 54.1 153.5 54.6 153 55.2 152.8 55.9 152.8 56.8 152.8 57.8 153 58.5 153.4 59.1 153.8 59.7 154.4 60 155.3 60 156.1 60 156.7 59.7 157.2 59.1L157.2 54.2C156.6 54 156.1 53.8 155.6 53.8ZM158.4 61L157.6 61 157.4 60.3C156.7 60.9 155.9 61.2 155.1 61.2 154 61.2 153.2 60.7 152.5 59.9 151.9 59.1 151.6 58.1 151.6 56.8 151.6 55.6 151.9 54.6 152.6 53.9 153.3 53.1 154.3 52.7 155.7 52.7 156.1 52.7 156.6 52.8 157.2 52.9L157.2 49.8 158.3 49.7 158.4 49.7 158.4 61ZM163.8 60C164.3 60 165.1 59.8 165.9 59.3L165.9 52.9 167.1 52.9 167.1 61 166.4 61 166.1 60.2C165.2 60.8 164.3 61.2 163.5 61.2 162.8 61.2 162.1 60.9 161.6 60.4 161.1 59.9 160.8 59.2 160.8 58.1L160.8 52.9 162 52.9 162 58C162 59.4 162.6 60 163.8 60ZM170.8 49.7L170.8 61 169.6 61 169.6 49.8 170.8 49.7 170.8 49.7ZM176.7 53.8C175.9 53.8 175.2 54.1 174.7 54.6 174.2 55.2 173.9 55.9 173.9 56.8 173.9 57.8 174.1 58.5 174.5 59.1 175 59.7 175.6 60 176.4 60 177.2 60 177.9 59.7 178.3 59.1L178.3 54.2C177.7 54 177.2 53.8 176.7 53.8ZM179.5 61L178.7 61 178.5 60.3C177.8 60.9 177.1 61.2 176.2 61.2 175.2 61.2 174.3 60.7 173.7 59.9 173 59.1 172.7 58.1 172.7 56.8 172.7 55.6 173.1 54.6 173.8 53.9 174.4 53.1 175.5 52.7 176.8 52.7 177.2 52.7 177.7 52.8 178.3 52.9L178.3 49.8 179.4 49.7 179.5 49.7 179.5 61Z" class="a"/><path d="M110.1 39L101.7 39C100.4 39 99.7 39 99.5 38.9 99.4 38.8 99.4 38.5 99.4 37.9 99.4 37.3 99.4 37 99.5 36.8 99.8 36.7 100.3 36.6 100.9 36.5L100.9 26C100.3 26 99.8 25.8 99.5 25.7 99.4 25.6 99.4 25.2 99.4 24.7 99.4 24.1 99.4 23.7 99.5 23.7 99.7 23.6 100.4 23.6 101.7 23.6L102.8 23.6C104.1 23.6 104.8 23.6 105 23.7 105.1 23.7 105.1 24.1 105.1 24.7 105.1 25.2 105.1 25.6 105 25.7 104.7 25.8 104.2 26 103.6 26L103.6 36.4 107.3 36.4C107.3 36 107.4 35.5 107.5 34.9 107.7 34.3 107.8 33.9 107.9 33.7 108.6 33.7 109.2 33.7 109.8 33.9 109.9 33.9 109.9 34.3 110 34.9 110 35.5 110.1 36.1 110.1 36.6L110.1 39ZM115.7 37C116.7 37 117.4 36.6 117.8 35.8 117.9 35.5 118 35.2 118 34.8L118 34.1C116.5 34.1 115.6 34.1 115.2 34.2 114.4 34.3 114 34.8 114 35.4 114 35.9 114.1 36.3 114.4 36.6 114.7 36.9 115.1 37 115.7 37ZM116.1 26.6C118.4 26.6 119.8 27.4 120.4 29 120.6 29.5 120.7 30 120.7 30.6L120.7 35.1C120.7 35.7 120.8 36.1 121.1 36.3 121.4 36.6 121.9 36.8 122.5 36.9L121.2 39.2C120.2 39.2 119.3 38.8 118.5 38 117.6 38.6 116.8 39 116.2 39.1 115.9 39.2 115.6 39.2 115.2 39.2 114.8 39.2 114.5 39.2 114.2 39.1 113.3 39 112.6 38.6 112.1 38 111.5 37.5 111.2 36.6 111.2 35.4 111.2 34.2 111.5 33.4 112.2 32.8 112.8 32.2 113.9 32 115.5 32 116.4 32 117.3 32 118 32.1L118 31.5C118 30.7 117.8 30.1 117.3 29.7 116.9 29.4 116.3 29.2 115.6 29.2 115.4 29.2 115.1 29.2 114.8 29.2 114.8 29.9 114.7 30.2 114.6 30.3 114.5 30.4 114.2 30.5 113.7 30.6 113.2 30.8 112.8 30.8 112.6 30.8 112.4 30.8 112.3 30.4 112.1 29.6 111.9 28.9 111.8 28.2 111.7 27.6L111.8 27.6C113.2 26.9 114.6 26.6 116.1 26.6ZM129.5 36.6C130.4 36.6 131.2 36.3 132 35.8L132 29.4C131.4 29.2 130.7 29.2 130.1 29.2 129 29.2 128.2 29.5 127.5 30.1 126.9 30.8 126.6 31.6 126.6 32.8 126.6 33.9 126.9 34.8 127.4 35.5 127.9 36.2 128.6 36.6 129.5 36.6ZM134.8 22L134.8 36.5C135.5 36.3 136.2 36.3 136.8 36.3 137.1 36.8 137.1 37.5 136.8 38.3 136.8 38.3 136.5 38.4 136.1 38.5 134.7 38.8 133.8 39 133.2 39.2L132.8 39.2 132.2 38.1C131.2 38.9 130.1 39.2 128.9 39.2 128.1 39.2 127.3 39.1 126.7 38.7 126 38.4 125.5 38 125 37.4 124.2 36.3 123.8 35 123.8 33.4 123.8 31.2 124.4 29.5 125.6 28.3 126.8 27.2 128.3 26.6 130.2 26.6 130.8 26.6 131.4 26.6 132 26.7L132 24.8C131.2 24.7 130.7 24.7 130.7 24.7 130.6 24.6 130.5 24.3 130.5 23.7 130.5 23.1 130.5 22.8 130.6 22.6 131.2 22.4 131.8 22.3 132.6 22.2 133.4 22.1 134 22 134.4 22L134.8 22ZM143.8 29.2C143.2 29.2 142.7 29.5 142.2 29.9 141.7 30.3 141.4 30.9 141.2 31.8L146.1 31.8C146.1 30.9 145.8 30.3 145.4 29.9 144.9 29.4 144.4 29.2 143.8 29.2ZM148.6 32.1L148.6 33.9 141.2 33.9C141.5 34.9 141.9 35.5 142.5 36 143.2 36.4 144 36.6 145 36.6 145.9 36.6 146.9 36.3 147.9 35.8L148 35.8 148 38.5C147 39 146 39.2 144.9 39.2 143.8 39.2 142.9 39.1 142.1 38.8 141.4 38.6 140.7 38.2 140.2 37.7 139.6 37.1 139.1 36.5 138.8 35.7 138.4 34.9 138.3 34 138.3 33 138.3 32 138.4 31 138.8 30.2 139.1 29.4 139.5 28.7 140 28.2 141.1 27.1 142.3 26.6 143.7 26.6 145.1 26.6 146.2 27 147.1 27.8 148.1 28.8 148.6 30.2 148.6 32.1ZM163.9 37.9C163.9 38.5 163.9 38.8 163.7 38.9 163.6 39 162.9 39 161.6 39L160.5 39C159.2 39 158.4 39 158.3 38.9 158.2 38.8 158.1 38.5 158.1 37.9 158.1 37.3 158.2 37 158.2 36.8 158.6 36.7 159.1 36.6 159.6 36.5L159.6 34.6 159.7 34.6 159.7 31.7C159.7 30.9 159.4 30.3 158.9 29.9 158.4 29.5 157.7 29.2 156.8 29.2 155.9 29.2 155 29.5 154.3 30L154.3 36.1 154.2 36.1 154.2 36.5C154.8 36.6 155.3 36.7 155.7 36.8 155.7 37 155.8 37.3 155.8 37.9 155.8 38.5 155.7 38.8 155.6 38.9 155.4 39 154.7 39 153.4 39L152.3 39C151 39 150.3 39 150.2 38.9 150 38.8 150 38.5 150 37.9 150 37.3 150 37 150.1 36.8 150.4 36.7 150.9 36.6 151.5 36.5L151.5 34.6 151.5 34.6 151.5 29.6C150.7 29.5 150.2 29.5 150.2 29.5 150 29.4 150 29.1 150 28.5 150 27.9 150 27.6 150.1 27.4 150.6 27.3 151.3 27.1 152.1 27 152.9 26.9 153.4 26.8 153.8 26.8L154.1 27.8C155.3 27 156.5 26.6 157.9 26.6 159.2 26.6 160.2 27 161.1 27.7 162 28.4 162.4 29.4 162.4 30.9L162.4 36.2 162.4 36.2 162.4 36.5C162.9 36.6 163.4 36.7 163.8 36.8 163.9 37 163.9 37.3 163.9 37.9Z" class="a"/></g></g>
+                <g id="leeuw">
+                    <path id="gezicht" d="M49.41,42.87c-1.88-1.43-2.76,0-3.94-.09-1-.08-1.94-1.69-2.71-1.31-1.48.75.59,3.41,1.49,4a21.66,21.66,0,0,0,2,1,3,3,0,0,1,1.81,2.71A5.22,5.22,0,0,1,48,50.48c-.54,2.3-4.57,4.39-6.89,2.81a5.23,5.23,0,0,1-2.43-3.42c-.62-3-2.81-5.25-3.5-8.2-.43-1.8-.74-3.69-1.21-5.5s-1-3.72-1.36-5.42A47.94,47.94,0,0,0,31,25.37C28.79,19.6,27.79,20,27.79,20s.81,1.6,3.73,15.75a83.54,83.54,0,0,0,2,8.86c.28.74.76,2.31,1.08,3,.93,2,3.39,5.1,3.55,7.87.09,1.6.28,2.93.31,4.14a13,13,0,0,0,.41,2.44c.6,1.69,5.45,7.14,10.59,7.14V65.07c-5.11,0-9.93-2.87-10-3.17A11.23,11.23,0,0,1,40,59a4.83,4.83,0,0,1,4.15-3.38c2.48-.18,4,.54,5.28.54Z" class="cls-2" transform="translate(0 0)"/>
+                    <path id="haar4" d="M28.18,36.67s.51,2.45-1.65,8.75c-5.65,16.48,5.14,18,8.22,21.91,0,0,1.19-1.68-3.71-7-1.79-2-3.4-6.29-2-12.47,2-8.94-.86-11.15-.86-11.15" class="cls-2" transform="translate(0 0)"/>
+                    <path id="haar3" d="M27.22,27.88c-.19,3.09-5,7.32-6.47,10a20,20,0,0,0-1.86,4.95A13.2,13.2,0,0,0,20,51c1.58,3.8-.21,5.19,1,4.42,1.53-1.25,1.3-4.16,1.19-6a25.89,25.89,0,0,1,0-4.91c.43-3.29,2.42-6.82,4.12-9.29a8.49,8.49,0,0,0,.9-7.36" class="cls-2" transform="translate(0 0)"/>
+                    <path id="haar2" d="M26.36,22.12c.2.39,1.66,2.53-4.31,7.45S18,38,18,38s-6.36-3.54,1-9.65S24.74,21,24.74,21a1.82,1.82,0,0,1,1.62,1.1" class="cls-2" transform="translate(0 0)"/>
+                    <path id="haar1" d="M17.49,25.86a7.89,7.89,0,0,1-.28-2.62c.26-3.87,3.78-5.44,4.65-6,0,0,1.58-1.08,1.78-2.18,0,0,1.62,4.07-2.09,6.41a10.57,10.57,0,0,0-4.07,4.4" class="cls-2" transform="translate(0 0)"/>
+                    <path id="oog" d="M37.32,25.45c.09-.23.21,0,.47-.21s.56-.7,1-.84a1.82,1.82,0,0,1,1.07.07c.2.05.08.57-.07.7-.32.24-1.27-.16-1.27.56,0,1.17,1.58,0,2.39,0,.39,2.86-4.31,2.07-3.6-.27M34.11,24c1,.14,1.69,3.35,4.07,4.05,1.75.51,3.62.23,4,1.29-.81.43-.17,1.84.64,1.61.67-1.88,1-9.14-8.74-6.95" class="cls-2" transform="translate(0 0)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+  </svg>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"nl\/","currentPath":"node\/197","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"nl"},"pluralDelimiter":"\u0003","data":{"extlink":{"extTarget":true,"extClass":"ext","extLabel":"","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#block-vlaanderenheader, #block-vlaanderenfooter, .googlemaps, .all-link","extCssExplicit":"","extAlert":false,"extAlertText":"","mailtoClass":"0","mailtoLabel":""}},"widget_block":{"script_loader":{"7abe54e12b244b23a4926f72c5e784ac:smart-ssi:nl":["\/\/widgets.vlaanderen.be\/widget\/live\/7abe54e12b244b23a4926f72c5e784ac\/smart_ssi_bootstrap.js"],"b5145fc36d8f43dbbde5c8da3127059a:smart-ssi:nl":["\/\/widgets.vlaanderen.be\/widget\/live\/b5145fc36d8f43dbbde5c8da3127059a\/smart_ssi_bootstrap.js"]}},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"id":"","classes":"","element":"div","show_label":true,"label_element":"h3","attributes":"","effect":"none","speed":"fast"}}},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"vlaio":{"baseurl":"https:\/\/www.vlaio.be"},"user":{"uid":0,"permissionsHash":"3e995f678a7a491cc999bf68501f6f1d2bedd585e7c552c880570beab7466d82"}}</script>
+<script src="/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
+<script src="/core/assets/vendor/jquery/jquery-extend-3.4.0.js?v=3.2.1"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.6.16"></script>
+<script src="/sites/default/files/languages/nl_Ud6AJ9WnveIlAbWtJxIULRqEMDToB41ew9tX7hBaDsI.js?qnet82"></script>
+<script src="/core/misc/drupal.js?v=8.6.16"></script>
+<script src="/core/misc/drupal.init.js?v=8.6.16"></script>
+<script src="//cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js"></script>
+<script src="/themes/custom/vlaio/js/script.js?qnet82"></script>
+<script src="//dij151upo6vad.cloudfront.net/2.5.2/js/vlaanderen-ui.js"></script>
+<script src="//use.fontawesome.com/bd2643d39b.js"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/modules/contrib/extlink/extlink.min.js?v=8.6.16"></script>
+<script src="/modules/contrib/widget_block/assets/js/script-loader.js?v=8.6.16"></script>
+<script src="/modules/custom/vlaio_initiatief/js/limit-visible.js?v=8.6.16"></script>
+
+  </body>
+</html>

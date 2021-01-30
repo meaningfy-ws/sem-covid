@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"70ec3803a0",applicationID:"251193625"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="canonical" href="https://www.vgc.be/nieuws/steunmaatregelen-brussel" />
+<link rel="image_src" href="https://www.vgc.be/sites/vgc/files/styles/medium/public/2020-04/%28c%29%20We%20Love%20Brussels.jpg?itok=jTz0SLV0" />
+<meta property="og:site_name" content="Vlaamse Gemeenschapscommissie" />
+<meta property="og:type" content="Nieuwsbericht" />
+<meta property="og:url" content="https://www.vgc.be/nieuws/steunmaatregelen-brussel" />
+<meta property="og:title" content="Steunmaatregelen in Brussel" />
+<meta property="og:image" content="https://www.vgc.be/sites/vgc/files/styles/medium/public/2020-04/%28c%29%20We%20Love%20Brussels.jpg?itok=jTz0SLV0" />
+<meta property="og:image:url" content="https://www.vgc.be/sites/vgc/files/styles/medium/public/2020-04/%28c%29%20We%20Love%20Brussels.jpg?itok=jTz0SLV0" />
+<meta property="og:image:width" content="220" />
+<meta property="og:image:height" content="220" />
+<meta property="og:updated_time" content="2020-05-13T10:51:42+0200" />
+<meta property="og:image:alt" content="Leeg De Brouckereplein" />
+<meta name="twitter:title" content="Steunmaatregelen in Brussel" />
+<meta name="twitter:url" content="https://www.vgc.be/nieuws/steunmaatregelen-brussel" />
+<meta name="twitter:image:height" content="220" />
+<meta name="twitter:image:width" content="220" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>function euCookieComplianceLoadScripts(category) {if (category === "analytical") {var scriptTag = document.createElement("script");scriptTag.src = "\/sites\/vgc\/files\/google_tag\/primary\/google_tag.script.js";document.body.appendChild(scriptTag);}if (category === "analytical") {var scriptTag = document.createElement("script");scriptTag.src = "\/sites\/vgc\/files\/google_tag\/primary\/google_tag.data_layer.js";document.body.appendChild(scriptTag);}}</script>
+<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #0779bf} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>
+<link rel="shortcut icon" href="/themes/custom/entityone/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="nl" href="https://www.vgc.be/nieuws/steunmaatregelen-brussel" />
+<link rel="revision" href="https://www.vgc.be/nieuws/steunmaatregelen-brussel" />
+<script src="/sites/vgc/files/google_tag/primary/google_tag.script.js?qnl0gk" defer></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>Steunmaatregelen in Brussel | Vlaamse Gemeenschapscommissie</title>
+    <link rel="stylesheet" media="all" href="/sites/vgc/files/css/css_pUNQHltIIaTx-DfWhMIeb34944i2sGzvKOABoGffOCc.css" />
+<link rel="stylesheet" media="all" href="/sites/vgc/files/css/css_s2jrc7GZkgZZdHMwQHvPlgWbc2FLdOHdbDcH8W0TdBE.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/vgc/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/entityone/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/entityone/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/entityone/favicon-16x16.png">
+    <link rel="manifest" href="/themes/custom/entityone/site.webmanifest">
+    <link rel="mask-icon" href="/themes/custom/entityone/safari-pinned-tab.svg" color="#000000">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+
+  <body class="no-sidebars path-node page-node-type-news">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Overslaan en naar de inhoud gaan
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2KXJMR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+  
+  
+
+
+<div role="document" class="page">
+  <header id="site-header" class="site-header">
+              
+          <div class="region region--header">
+        <div class="region__inner">
+          
+
+<div id="block-system-branding-block" class="block block--system block--system-branding-block">
+  
+
+        
+  
+
+        <a href="/" title="Home" rel="home" class="site-logo">
+      <img src="/themes/custom/entityone/logo.svg?v=2.0" alt="Home" />
+    </a>
+      </div>
+
+                      <a href="#menu--main" id="menu-toggle" class="menutoggle" aria-label="Mobile menu toggle">
+              <div class="menutoggle-box">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+              </div>
+            </a>
+                    
+
+  
+<div class="language-switcher-language-url block block--language block--language-blocklanguage-interface block--language-block" id="block-language-block-language-interface" role="navigation">
+  
+
+        
+  
+
+      <ul class="language-switcher-language-url"><li hreflang="nl" data-drupal-link-system-path="node/1264" class="nl is-active"><a href="/nieuws/steunmaatregelen-brussel" class="language-link is-active" hreflang="nl" data-drupal-link-system-path="node/1264">nl</a></li><li hreflang="fr" data-drupal-link-system-path="&lt;front&gt;" class="fr"><a href="/fr" class="language-link" hreflang="fr" data-drupal-link-system-path="&lt;front&gt;">fr</a></li><li hreflang="en" data-drupal-link-system-path="&lt;front&gt;" class="en"><a href="/en" class="language-link" hreflang="en" data-drupal-link-system-path="&lt;front&gt;">en</a></li></ul>
+  </div>
+
+          
+
+  
+<nav id="menu--secondary-menu" aria-label="Secondary menu" id="block-system-menu-block-secondary-menu" class="block block-menu navigation menu--secondary-menu">
+        
+              <ul class="secondary-menu menu">
+                    <li class="menu-item menu-item--collapsed">
+        <span class="menu-item__inner">
+
+                    <a href="/vacatures" data-drupal-link-system-path="node/210">Vacatures</a>
+        </span>
+
+              </li>
+                <li class="menu-item">
+        <span class="menu-item__inner">
+
+                    <a href="/collegebesluiten-raadplegen" data-drupal-link-system-path="node/421">Collegebesluiten</a>
+        </span>
+
+              </li>
+                <li class="menu-item">
+        <span class="menu-item__inner">
+
+                    <a href="/publicaties" data-drupal-link-system-path="publicaties">Publicaties</a>
+        </span>
+
+              </li>
+                <li class="menu-item menu-item--active-trail">
+        <span class="menu-item__inner">
+
+                    <a href="/nieuws" data-drupal-link-system-path="nieuws">Nieuws</a>
+        </span>
+
+              </li>
+                <li class="menu-item">
+        <span class="menu-item__inner">
+
+                    <a href="/persberichten" data-drupal-link-system-path="persberichten">Persberichten</a>
+        </span>
+
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div class="header-bottom">
+                          
+
+  
+<nav id="menu--main" aria-label="Hoofdnavigatie" id="block-system-menu-block-main" class="block block-menu navigation menu--main">
+        <div class="region__inner">
+  <ul class="menu menu-level-0">
+      
+    <li class="menu-item menu-item--expanded">
+      
+      <a href="/wat-biedt-n-brussel" data-drupal-link-system-path="node/407">Wat biedt n-Brussel<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+</a>
+
+                    
+
+  <div class="menu_link_content menu-link-contentmain view-mode-megamenu menu-dropdown menu-dropdown-0 menu-type-megamenu">
+              <div class="region__inner">
+        <div class="mega-menu-top">
+          <div class="submenu-ctas-wrapper">
+            <div class="region__inner">
+  <ul class="menu menu-level-1">
+          
+      <li class="menu-item">
+                <a href="/wat-biedt-n-brussel/cultuur-brussel" data-drupal-link-system-path="node/1089">Cultuur<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/wat-biedt-n-brussel/voor-kinderen-en-jongeren-brussel" data-drupal-link-system-path="node/339">Jeugd<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/wat-biedt-n-brussel/sport-brussel" data-drupal-link-system-path="node/341">Sport<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wat-biedt-n-brussel/gezin" data-drupal-link-system-path="node/19">Gezin<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wat-biedt-n-brussel/gezondheid-brussel" data-drupal-link-system-path="node/300">Gezondheid<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wat-biedt-n-brussel/welzijn" data-drupal-link-system-path="node/891">Welzijn<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wat-biedt-n-brussel/onderwijs-vorming" data-drupal-link-system-path="node/250">Onderwijs en vorming<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wat-biedt-n-brussel/stedelijk-beleid-brussel" data-drupal-link-system-path="node/684">Stedelijk beleid<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/wat-biedt-n-brussel/samenleven" data-drupal-link-system-path="node/685">Samenleven<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wat-biedt-n-brussel/wonen-brussel" data-drupal-link-system-path="node/299">Wonen in Brussel<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/wat-biedt-n-brussel/nederlands-brussel" data-drupal-link-system-path="node/254">Taal<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/wat-biedt-n-brussel/studenten-brussel" data-drupal-link-system-path="node/255">Studenten<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+      </ul>
+</div>
+
+            
+          </div>
+        
+        </div>
+              </div>
+      </div>
+
+          </li>
+      
+    <li class="menu-item menu-item--expanded">
+      
+      <a href="/subsidies-en-dienstverlening" data-drupal-link-system-path="node/472">Subsidies en dienstverlening<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+</a>
+
+                    
+
+  <div class="menu_link_content menu-link-contentmain view-mode-megamenu menu-dropdown menu-dropdown-0 menu-type-megamenu">
+              <div class="region__inner">
+        <div class="mega-menu-top">
+          <div class="submenu-ctas-wrapper">
+            <div class="region__inner">
+  <ul class="menu menu-level-1">
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/subsidies-en-dienstverlening/cultuur" data-drupal-link-system-path="node/22">Cultuur<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/subsidies-en-dienstverlening/jeugd" data-drupal-link-system-path="node/68">Jeugd<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/subsidies-en-dienstverlening/sport" data-drupal-link-system-path="node/67">Sport<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/subsidies-en-dienstverlening/gezin" data-drupal-link-system-path="node/320">Gezin<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/subsidies-en-dienstverlening/gezondheid" data-drupal-link-system-path="node/62">Gezondheid<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/subsidies-en-dienstverlening/welzijn" data-drupal-link-system-path="node/74">Welzijn<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/subsidies-en-dienstverlening/speelpleinen" data-drupal-link-system-path="node/27">Speelpleinen<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/subsidies-en-dienstverlening/onderwijs" data-drupal-link-system-path="node/134">Onderwijs<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/subsidies-en-dienstverlening/vorming" data-drupal-link-system-path="node/28">Vorming<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/subsidies-en-dienstverlening/stedelijk-beleid" data-drupal-link-system-path="node/242">Stedelijk beleid<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/subsidies-en-dienstverlening/samenleven" data-drupal-link-system-path="node/686">Samenleven<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/subsidies-en-dienstverlening/vrijwilligers" data-drupal-link-system-path="node/29">Vrijwilligers<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/subsidies-en-dienstverlening/taal" data-drupal-link-system-path="node/34">Taal<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+      </ul>
+</div>
+
+            
+
+            <div class="field field--name-field-menu-ctas field--type-link field--label-hidden field__items">
+                  <div class="field field--name-field-menu-ctas field--type-link field--label-hidden field__items field__item">
+            <a href="/zoek-subsidies-en-dienstverlening">Zoek subsidies &amp; dienstverlening</a>
+          </div>
+              </div>
+      
+          </div>
+        
+
+            <div class="field field--name-field-menu-sidebar field--type-entity-reference-revisions field--label-hidden field__items">
+                  <div class="landing-block-paragraph field__item">
+
+      <a href="/subsidies-en-dienstverlening/uitleen" class="landing-block-mini-wrapper"
+      >
+      <div id="paragraph-203" class="paragraph paragraph--type--landing-block paragraph--view-mode--mini" tabindex="-1">
+
+                    <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item">
+
+
+<div class="media media--image media--type-image media--view-mode-mega-menu-image">
+  
+      
+
+                    <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="/sites/vgc/files/styles/mega_menu_image/public/2019-02/190215_subsidieloket_icoon-11_0.png?itok=C_Aw5cFJ" width="150" height="90" alt="uitleendienst" typeof="foaf:Image" class="image-style-mega-menu-image" />
+
+
+</div>
+            
+
+  </div>
+</div>
+            
+<div class="title-text-wrapper">  <span class="title">Uitleen</span>
+</div></div>
+    </a>
+  </div>
+                  <div class="landing-block-paragraph field__item">
+
+      <a href="/subsidies-en-dienstverlening/subsidieloket" class="landing-block-mini-wrapper"
+      >
+      <div id="paragraph-204" class="paragraph paragraph--type--landing-block paragraph--view-mode--mini" tabindex="-1">
+
+                    <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item">
+
+
+<div class="media media--image media--type-image media--view-mode-mega-menu-image">
+  
+      
+
+                    <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="/sites/vgc/files/styles/mega_menu_image/public/2019-02/190215_subsidieloket_icoon-12_0.png?itok=NoXc55Cz" width="150" height="90" alt="subsidieloket" typeof="foaf:Image" class="image-style-mega-menu-image" />
+
+
+</div>
+            
+
+  </div>
+</div>
+            
+<div class="title-text-wrapper">  <span class="title">Subsidieloket</span>
+</div></div>
+    </a>
+  </div>
+                  <div class="landing-block-paragraph field__item">
+
+      <a href="/subsidies-en-dienstverlening/lokalen-en-zalen" class="landing-block-mini-wrapper"
+      >
+      <div id="paragraph-234" class="paragraph paragraph--type--landing-block paragraph--view-mode--mini" tabindex="-1">
+
+                    <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item">
+
+
+<div class="media media--image media--type-image media--view-mode-mega-menu-image">
+  
+      
+
+                    <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="/sites/vgc/files/styles/mega_menu_image/public/2019-02/190215_subsidieloket_icoon-13_2.png?itok=OK-bywGq" width="150" height="90" alt="lokalen en zalen" typeof="foaf:Image" class="image-style-mega-menu-image" />
+
+
+</div>
+            
+
+  </div>
+</div>
+            
+<div class="title-text-wrapper">  <span class="title">Lokalen en zalen</span>
+</div></div>
+    </a>
+  </div>
+              </div>
+      
+
+        </div>
+              </div>
+      </div>
+
+          </li>
+      
+    <li class="menu-item menu-item--expanded">
+      
+      <a href="/wie-zijn-wij" data-drupal-link-system-path="node/152">Wie zijn wij<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+</a>
+
+                    
+
+  <div class="menu_link_content menu-link-contentmain view-mode-megamenu menu-dropdown menu-dropdown-0 menu-type-megamenu">
+              <div class="region__inner">
+        <div class="mega-menu-top">
+          <div class="submenu-ctas-wrapper">
+            <div class="region__inner">
+  <ul class="menu menu-level-1">
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wie-zijn-wij/vlaamse-gemeenschapscommissie" data-drupal-link-system-path="node/153">Vlaamse Gemeenschapscommissie<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wie-zijn-wij/actief-beleid-brussel" data-drupal-link-system-path="node/69">Actief beleid in Brussel<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/wie-zijn-wij/strategisch-meerjarenplan-2021-2025" data-drupal-link-system-path="node/1602">Meerjarenplan<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wie-zijn-wij/adviesraden-en-werkgroepen" data-drupal-link-system-path="node/156">Adviesraden en werkgroepen<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item">
+                <a href="/wie-zijn-wij/taalbeleid-van-de-vgc" data-drupal-link-system-path="node/93">Taalbeleid<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+          
+      <li class="menu-item menu-item--expanded">
+                <a href="/wie-zijn-wij/huisstijlgids-en-communicatie" data-drupal-link-system-path="node/95">Huisstijlgids en communicatie<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(2.000000, 2.000000)">
+    <path d="M3.49484712,2.5 L8.41225888,6.92567059 L7.07432941,8.41225888 L1.33103527,3.24329415 C0.889654911,2.84605182 0.889654911,2.15394818 1.33103527,1.75670585 L7.07432941,-3.41225888 L8.41225888,-1.92567059 L3.49484712,2.5 Z" transform="translate(4.706129, 2.500000) rotate(-90.000000) translate(-4.706129, -2.500000) "></path>
+  </g>
+</svg>
+        </a>
+
+      </li>
+      </ul>
+</div>
+
+            
+          </div>
+        
+        </div>
+              </div>
+      </div>
+
+          </li>
+      
+    <li class="menu-item">
+      
+      <a href="/contact" data-drupal-link-system-path="node/410">Contact</a>
+
+                    
+
+
+          </li>
+    </ul>
+</div>
+
+  </nav>
+
+                        
+
+  
+  
+
+<div class="views-exposed-form block block--views block--views-exposed-filter-blocksearch-page-1 block--views-exposed-filter-block block--full-width-search" data-drupal-selector="views-exposed-form-search-page-1" id="block-views-exposed-filter-block-search-page-1">
+  
+
+        
+
+      <input type="checkbox" id="searchtoggle--trigger" name="search-toggle" value="search-open" class="search-toggle visually-hidden">
+    <label class="searchtoggle--trigger"
+           for="searchtoggle--trigger">
+      <div class="search--icon toggle--open"><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M10.0180995,0.0170135747 C7.91074463,0.0175014928 5.95997609,1.12971952 4.88615078,2.94296087 C3.81232547,4.75620223 3.7747616,7.00144515 4.78733032,8.84959276 C4.63937697,8.9190674 4.50463812,9.01375207 4.38914027,9.12941176 L0.430769231,13.0888688 C-0.12045472,13.6401793 -0.12045472,14.5339384 0.430769231,15.0852489 L0.914751131,15.5692308 C1.1795314,15.8341616 1.53874087,15.9830108 1.91330317,15.9830108 C2.28786547,15.9830108 2.64707494,15.8341616 2.9118552,15.5692308 L6.86950226,11.6112217 C6.98533647,11.495791 7.08015077,11.361042 7.14968326,11.2130317 C9.3343265,12.4100266 12.0327729,12.1233591 13.9171704,10.4940926 C15.8015678,8.86482619 16.4750474,6.23609712 15.606203,3.90145101 C14.7373587,1.56680491 12.509176,0.0179366079 10.0180995,0.0170135747 L10.0180995,0.0170135747 Z M1.95800905,14.8691403 L1.13049774,14.0423529 L5.40705882,9.76579186 C5.65508327,10.0676448 5.93199325,10.3445547 6.23384615,10.5925792 L1.95800905,14.8691403 Z M10.0180995,10.7536652 C7.38272668,10.7538651 5.2461728,8.61763532 5.24597288,5.98226245 C5.24577296,3.34688959 7.38200271,1.2103357 10.0173756,1.21013577 C12.6527484,1.20993585 14.7893023,3.3461656 14.7895023,5.98153846 C14.7897904,7.24736947 14.2870686,8.46143806 13.3919909,9.35651577 C12.4969132,10.2515935 11.2828446,10.7543153 10.0170136,10.7540271 L10.0180995,10.7536652 Z" fill="currentColor" fill-rule="nonzero"></path>
+  </g>
+</svg>
+</div>
+      <div class="close--icon toggle--close">
+        <span>+</span>
+      </div>
+    </label>
+    <form class="views-exposed-form" data-drupal-selector="views-exposed-form-search-page-1" action="/zoeken" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-text form-item-text">
+      <label for="edit-text--3">bv. sport, subsidies, ...</label>
+        <input placeholder="bv. sport, subsidies, ..." data-drupal-selector="edit-text" type="text" id="edit-text--3" name="text" size="30" maxlength="128" class="form-text" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--3"><input data-drupal-selector="edit-submit-search-3" type="submit" id="edit-submit-search--3" value="Zoeken" class="button js-form-submit form-submit" />
+</div>
+
+</div>
+
+</form>
+
+  </div>
+
+          </div>
+        </div>
+      </div>
+    
+                </header>
+
+        
+            <section class="content-top">
+<div class="region region--content-top">
+    <div class="region__inner">
+              
+
+<div id="block-system-breadcrumb-block" class="block block--system block--system-breadcrumb-block">
+  
+
+        
+  
+
+      
+
+  <div class="breadcrumb">
+    <span class="back-to">terug naar</span>
+    <ol><li><a href="/">Home</a></li><li><a href="/nieuws">Nieuws</a></li><li>Steunmaatregelen in Brussel</li></ol>
+  </div>
+
+  </div>
+<div data-drupal-messages-fallback class="hidden"></div>
+
+          </div>
+  </div></section>
+      
+      <main role="main">
+      <div class="inner">
+                          
+                  <section id="content" class="main ">
+            <a id="main-content" class="main-content" tabindex="-1"></a>
+            
+<div class="region region--content">
+    <div class="region__inner">
+              
+
+<div id="block-page-title-block" class="block block--core block--page-title-block">
+  
+
+        
+  
+
+      
+
+
+          <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Steunmaatregelen in Brussel</span>
+</h1>
+      
+
+  </div>
+
+
+<div id="block-system-main-block" class="block block--system block--system-main-block">
+  
+
+        
+  
+
+      
+
+
+<article role="article" about="/nieuws/steunmaatregelen-brussel" class="node node--type-news node--view-mode-full">
+
+  <div class="node__submitted">
+        24.04.2020    
+  </div>
+
+  <div class="node__content">
+    
+
+            <div class="field field--name-field-news-body field--type-entity-reference-revisions field--label-hidden field__items">
+                  <div class="text-one-col-paragraph field__item">
+
+    <div id="paragraph-2974" class="paragraph paragraph--type--text-one-col paragraph--view-mode--default no-background" tabindex="-1">
+      
+  
+
+                    <div class="clearfix text-formatted field field--name-field-text field--type-text-long field--label-hidden field__item"><p>Verschillende overheden nemen  steunmaatregelen voor: </p>
+
+<ul><li>werknemers en ambtenaren</li>
+	<li>zelfstandigen en verenigingen</li>
+	<li>gesubsidieerde organisaties </li>
+</ul><p>Hier vindt u een handig overzicht van de maatregelen die gelden in Brussel. Dit overzicht wordt geactualiseerd, telkens wanneer de situatie en/of maatregelen wijzigen. </p>
+
+<h2><strong>Werknemers en ambtenaren</strong></h2>
+
+<p><strong>Maatregelen genomen door de Federale overheid</strong></p>
+
+<ul><li>Wie <strong>tijdelijk werkloos</strong> wordt, heeft recht op een netto vergoeding die schommelt tussen 1.165 en 1.519 euro. Sommige werkgevers willen het verschil tussen de werkloosheidsvergoeding en je nettoloon (gedeeltelijk) compenseren. Maaltijdcheques worden niet uitbetaald.</li>
+	<li>Wie een stukje tijdelijk werkloos is, kan een aanmoedigingspremie van netto 90 tot 150 euro per maand krijgen. Voorwaarde is dat de omzet van het bedrijf waar je werkt met 20 procent gedaald is. je moet de premie als werknemer zelf aanvragen.</li>
+	<li>Ook interims en uitzendkrachten kunnen een vergoeding krijgen voor tijdelijke werkloosheid,  wanneer het uitzendkantoor waarvoor ze werken die aanvraag indient.</li>
+	<li>Voor statutaire ambtenaren, stagiairs en studenten is tijdelijke werkloosheid niet mogelijk.</li>
+	<li>Tijdelijke werkloosheid is er ook voor wie samenwoont met een coronapatiënt, en daardoor niet kan gaan werken. Geneesheren mogen een specifiek afwezigheidsattest uitschrijven in deze laatste situatie.</li>
+	<li>Er is een <strong>uitstel van de afbetaling van het woonkrediet</strong> mogelijk voor mensen die in financiële problemen geraken. Voorwaarde is dat de persoon in kwestie niet meer dan 25.000 euro op zijn of haar spaarrekening heeft staan.</li>
+</ul><p><strong>Maatregelen genomen door het Brussels Hoofdstedelijk Gewest</strong></p>
+
+<ul><li>Niemand kan worden afgesloten van <strong>water of elektriciteit</strong>, ook niet bij onbetaalde facturen. Huurders met <strong>achterstallige huur</strong> kunnen minstens nog tot 3 mei niet uit hun woning gezet worden, ook niet als de eigenaar zich kan beroepen op een vonnis van de vrederechter.</li>
+	<li>Huurders in <strong>sociale woningen</strong> die door de coronacrisis minder verdienen, kunnen vragen om hun huurprijs te verminderen via versnelde procedures.</li>
+	<li>Woningeigenaars krijgen twee maanden extra tijd om hun <strong>onroerende voorheffing</strong> te betalen.</li>
+	<li>Huurders van <strong>private woningen</strong> kunnen voorlopig niet uit hun woning gezet worden wanneer hun huurovereenkomst afloopt.</li>
+	<li>De opzegtermijn voor <strong>studentenkoten</strong> wordt met een maand ingekort.</li>
+	<li>Iedereen krijgt twee maanden extra tijd om zijn <strong>verkeersbelasting</strong> te betalen.</li>
+</ul><h2><strong>Zelfstandigen en ondernemingen</strong></h2>
+
+<p><strong>Maatregelen genomen door de Federale overheid</strong></p>
+
+<ul><li>Werkgevers kunnen een <strong>vereenvoudigde aanvraag indienen voor tijdelijke werkloosheid</strong>. Enkel COVID-19 als reden opgeven volstaat. De federale overheid betaalt bovendien 70 procent van het loon van de werknemers.</li>
+	<li>Er is een <strong>uitstel van betaling van werkgeversbijdragen aan de sociale zekerheid</strong> mogelijk. Betaling van de werkgeversbijdragen voor de sociale zekerheid voor de eerste twee kwartalen van het jaar kunnen worden uitgesteld tot 15 december 2020. Uitstel is automatisch voor horeca, recreatie, cultuur en sport, en alle ondernemingen die getroffen worden door een verplichte sluiting. Andere ondernemingen die gesloten zijn, krijgen uitstel van betaling op basis van een verklaring op eer.</li>
+	<li>De <strong>betalingstermijnen van belastingen</strong> (btw, bedrijfsvoorheffing, personenbelasting en vennootschapsbelasting) zijn met twee maanden verlengd. Er worden voor die periode geen boete of bijkomende kosten aangerekend. </li>
+	<li><strong>Overbruggingsrecht</strong>
+	<ul><li>Een <strong>premie</strong> van 1.291 euro voor zelfstandigen (1.614 voor wie een gezin heeft) die minstens zeven dagen op rij moet stoppen door de crisis.</li>
+	</ul></li>
+</ul><p><strong>Maatregelen genomen door Brussels Hoofdstedelijk Gewest</strong></p>
+
+<ul><li><strong>Hinderpremie</strong>
+
+	<ul><li>Er is een <strong>hindepremie</strong> van 4.000 euro voor bedrijven die moeten sluiten door de noodmaatregelen. De premie is gericht op de horeca- en reissector, kapperszaken, DVD/cassette/video-winkels, carwash, immomakelaars en krantenwinkels.</li>
+		<li>Alle kleine bedrijven en zelfstandigen met minder van 5 voltijdse werknemers krijgen een eenmalige premie van 2.000 euro. Iedereen die een ondernemingsnummer heeft, kan ervoor in aanmerking komen. De premie komt bovenop het federaal overbruggingskrediet.</li>
+	</ul></li>
+	<li><strong>Brussels waarborgfonds</strong>
+	<ul><li>Overheidsgarantie op bankleningen voor een totaalbedrag van 20 miljoen euro. Bedoeld voor kmo’s en zelfstandigen.</li>
+	</ul></li>
+	<li><strong>Vrijstelling city taks voor hotels</strong>
+	<ul><li>Naast die vrijstelling is er ook de mogelijkheid om leningen aan een verlaagde interestvoet toe te kennen aan de kernleveranciers van de horecasector zodat zij de horecazaken een betalingstermijn kunnen bieden. Horecazaken met meer dan 50 personeelsleden kunnen leningen tegen een verlaagde interestvoet krijgen.</li>
+	</ul></li>
+	<li><strong>Vrijstelling van de belasting</strong> op taxidiensten of voertuigen met chauffeur. De vrijstelling geldt voor aanslagjaar 2020.</li>
+</ul><h2><strong>Verenigingen en gesubsidieerde organisaties</strong></h2>
+
+<p><strong>Maatregelen genomen door de Vlaamse overheid</strong></p>
+
+<ul><li><strong>Vrijwilligersverzekering</strong>
+
+	<ul><li>De Vlaamse regering breidt de vrijwilligersverzekering uit naar alle burgers die de komende weken acties op poten zetten om buren en kwetsbaren te helpen tijdens de coronacrisis. Dit om de vele helpende handen extra te beschermen.</li>
+	</ul></li>
+	<li><strong>Deadline subsidieaanvragen</strong>
+	<ul><li>De deadlines voor het indienen van subsidieaanvragen en verslaggeving blijven behouden. De overheid stelt zich wel flexibel op met betrekking tot de volledigheid van de subsidieaanvragen of verslaggeving. Op <a href="https://www.brulocalis.brussels/nl/subsides/maatregelen-covid-19.html">de website van Brulocalis</a> vindt u concrete info en deadlines terug.</li>
+	</ul></li>
+	<li><strong>Jeugdorganisaties</strong> 
+	<ul><li>Omdat veel jeugdorganisaties in financiële problemen kunnen komen door de afgelasting van hun kampen en activiteiten, roept de minister van Jeugd op om zoveel mogelijk solidariteit te tonen met jeugdorganisaties en inschrijvingsgeld, indien mogelijk, niet terug te vragen.</li>
+		<li>Wie het inschrijvingsgeld niet terugvraagt, kan nog steeds rekenen op een belastingsvermindering voor kinderopvangkosten erna.</li>
+	</ul></li>
+	<li><strong>Kinderopvang</strong> 
+	<ul><li>Voor de kinderopvang voor baby’s en peuters en de IBO’s zijn er <a href="https://www.kindengezin.be/kinderopvang/sector-babys-en-peuters/procedures-formulieren-software/coronavirus-compensatiesubsidie.jsp">compensatiesubsidies</a> voorzien. </li>
+	</ul></li>
+</ul><p><strong>Maatregelen genomen door de Vlaamse Gemeenschapscommissie</strong></p>
+
+<ul><li>Specifiek voor de VGC geldt dat ze de toegekende subsidies in 2020 volledig (100 procent) blijft uitbetalen en geen rekening houdt met verminderde resultaten wegens de impact van de coronacrisis. Ook toegekende subsidies voor evenementen en projecten, en waarvoor al bewezen kosten werden gemaakt, maar die afgelast werden wegens de epidemie worden verder uitbetaald. De verslaggeving over het jaar 2020 zal binnen deze context geëvalueerd worden.</li>
+	<li>De deadline voor het indienen van inhoudelijke en financiële verslagen over 2019  voor organisaties met een convenant of overeenkomst wordt <strong>verschoven naar 31 mei 2020.</strong></li>
+	<li>Daarnaast werd de deadline voor het indienen van <a href="https://www.brulocalis.brussels/nl/subsidies.html?sub_id=42">erfgoedprojecten</a> verplaatst naar 1 mei 2020. De indieningsdatum voor trajectsubsidies kunsten werd verplaatst van 1 april naar 15 september.</li>
+	<li>Scholen van het Nederlandstalig Secundair Onderwijs en de derde graad van het basisonderwijs konden via de VGC <strong>laptops </strong>aanvragen voor de kwetsbare jongeren in de scholen. In totaal werden bijna 1.800 laptops verdeeld. Scholen die bericht krijgen dat kwetsbare jongeren ook internetproblemen hebben, kunnen met STARTPROjecten contact opnemen om dit probleem te regelen.</li>
+	<li>De VGC ondersteunde alle scholen van het Nederlandstalig onderwijs in Brussel die tijdens de paasvakantie de opvang van hun leerlingen op school bleven garanderen. Zo konden kinderen waarvan de ouders in cruciale beroepen actief zijn, leerlingen uit het buitengewoon onderwijs en kinderen in een kwetsbare thuissituatie elke werkdag gratis opgevangen worden.</li>
+</ul><p><strong>Maatregelen genomen door het Brussels Hoofdstedelijk Gewest</strong></p>
+
+<ul><li><strong>Imago van Brussel</strong> 
+
+	<ul><li>De reeds toegekende subsidies voor evenementen in het kader van de ‘bevordering van het imago van Brussel’ worden niet teruggetrokken. Toegekende subsidies voor uitgestelde evenementen blijven toegekend.</li>
+		<li>Subsidies voor afgelaste evenementen mogen gebruikt worden om de facturen voor niet-annuleerbare uitgaven te betalen.</li>
+	</ul></li>
+	<li><strong>Sport en gelijk kansen</strong> 
+	<ul><li>Voor evenementen in het kader van sport, gelijke kansen en sociale cohesie geldt dat de subsidie van een afgeschaft evenement niet hoeft te worden terugbetaald als er kosten gemaakt zijn die niet teruggedraaid kunnen worden. Bij uitstel hoeft geen nieuwe aanvraagprocedure voor een subsidie opgestart te worden. De analyse van de verantwoordingsstukken wordt versoepeld.</li>
+	</ul></li>
+	<li><strong>Covid-19 fonds</strong> 
+	<ul><li>De Brusselse regering heeft aanvullende steunmaatregelen voor de non-profitsector aangekondigd. Zij zullen hun subsidies kunnen behouden en er is 29 miljoen euro beschikbaar in een speciaal fonds.</li>
+	</ul></li>
+</ul><h2>Meer info </h2>
+
+<p>Alle overheden van ons land hebben hun coronasteunmaatregelen op speciale websites gepubliceerd.</p>
+
+<ul><li>Voor België: <a href="https://financien.belgium.be/nl/coronavirus">financien.belgium.be/nl/coronavirus</a></li>
+	<li>Voor het Brussels Hoofdstedelijk Gewest: <a href="http://www.1819.brussels/">www.1819.brussels</a></li>
+	<li>Voor Vlaanderen: <a href="http://www.vlaanderen.be/corona">www.vlaanderen.be/corona</a></li>
+</ul><p> </p>
+
+<p>Dit overzicht kwam tot stand in samenwerking met BRUZZ. </p></div>
+            
+
+  </div>
+</div>
+              </div>
+      
+
+  </div>
+
+</article>
+
+  </div>
+
+          </div>
+  </div>
+          </section>
+                                        </div>
+    </main>
+  
+            <section class="content-bottom">
+        
+<div class="region region--content-bottom">
+    <div class="region__inner">
+              
+
+  
+  
+
+<div class="views-exposed-form block block--views block--views-exposed-filter-blocksearch-page-1 block--views-exposed-filter-block block--full-width-search" data-drupal-selector="views-exposed-form-search-page-1" id="block-views-exposed-filter-block-search-page-1--2">
+  
+
+            <h2>Niet gevonden wat je zocht? Zoek het hier.</h2>
+      
+
+      <input type="checkbox" id="searchtoggle--trigger" name="search-toggle" value="search-open" class="search-toggle visually-hidden">
+    <label class="searchtoggle--trigger"
+           for="searchtoggle--trigger">
+      <div class="search--icon toggle--open"><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M10.0180995,0.0170135747 C7.91074463,0.0175014928 5.95997609,1.12971952 4.88615078,2.94296087 C3.81232547,4.75620223 3.7747616,7.00144515 4.78733032,8.84959276 C4.63937697,8.9190674 4.50463812,9.01375207 4.38914027,9.12941176 L0.430769231,13.0888688 C-0.12045472,13.6401793 -0.12045472,14.5339384 0.430769231,15.0852489 L0.914751131,15.5692308 C1.1795314,15.8341616 1.53874087,15.9830108 1.91330317,15.9830108 C2.28786547,15.9830108 2.64707494,15.8341616 2.9118552,15.5692308 L6.86950226,11.6112217 C6.98533647,11.495791 7.08015077,11.361042 7.14968326,11.2130317 C9.3343265,12.4100266 12.0327729,12.1233591 13.9171704,10.4940926 C15.8015678,8.86482619 16.4750474,6.23609712 15.606203,3.90145101 C14.7373587,1.56680491 12.509176,0.0179366079 10.0180995,0.0170135747 L10.0180995,0.0170135747 Z M1.95800905,14.8691403 L1.13049774,14.0423529 L5.40705882,9.76579186 C5.65508327,10.0676448 5.93199325,10.3445547 6.23384615,10.5925792 L1.95800905,14.8691403 Z M10.0180995,10.7536652 C7.38272668,10.7538651 5.2461728,8.61763532 5.24597288,5.98226245 C5.24577296,3.34688959 7.38200271,1.2103357 10.0173756,1.21013577 C12.6527484,1.20993585 14.7893023,3.3461656 14.7895023,5.98153846 C14.7897904,7.24736947 14.2870686,8.46143806 13.3919909,9.35651577 C12.4969132,10.2515935 11.2828446,10.7543153 10.0170136,10.7540271 L10.0180995,10.7536652 Z" fill="currentColor" fill-rule="nonzero"></path>
+  </g>
+</svg>
+</div>
+      <div class="close--icon toggle--close">
+        <span>+</span>
+      </div>
+    </label>
+    <form class="views-exposed-form" data-drupal-selector="views-exposed-form-search-page-1" action="/zoeken" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-text form-item-text">
+      <label for="edit-text--4">bv. sport, subsidies, ...</label>
+        <input placeholder="bv. sport, subsidies, ..." data-drupal-selector="edit-text" type="text" id="edit-text--4" name="text" size="30" maxlength="128" class="form-text" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--4"><input data-drupal-selector="edit-submit-search-4" type="submit" id="edit-submit-search--4" value="Zoeken" class="button js-form-submit form-submit" />
+</div>
+
+</div>
+
+</form>
+
+  </div>
+
+          </div>
+  </div>
+      </section>
+      
+      <footer id="site-footer" class="site-footer" role="contentinfo">
+              
+  <section class="footer-top">
+    <div class="region__inner">
+      <div class="footer-top-wrapper">
+                  <div class="footer-top-menu">                <h4>Andere VGC sites</h4>
+
+  
+  
+
+<nav role="navigation" aria-labelledby="block-system-menu-block-other-vgc-sites-menu" id="block-system-menu-block-other-vgc-sites" class="block block-menu navigation menu--other-vgc-sites">
+      
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.brusselbazaar.be/">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Brusselbazaar</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.n22.brussels/">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+N22 Brusselse gemeenschapscentra</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.onderwijsinbrussel.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Onderwijs in Brussel</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.vgc.be/ondersteuning/opgroeien-brussel">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Opgroeien in Brussel</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.sportinbrussel.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Sport in Brussel</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.woneninbrussel.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Wonen in Brussel</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.afonds.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Jongerenfonds A Fonds</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.vgcspeelpleinen.be/">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+VGC Speelpleinen</a>
+              </li>
+        </ul>
+  
+
+  
+
+
+  </nav>
+</div>
+          <div class="footer-top-menu">                <h4>Bekijk ook</h4>
+
+  
+  
+
+<nav role="navigation" aria-labelledby="block-system-menu-block-worth-a-look-menu" id="block-system-menu-block-worth-a-look" class="block block-menu navigation menu--worth-a-look">
+      
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="http://www.erfgoedcelbrussel.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Erfgoedcel Brussel</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.onderwijscentrumbrussel.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Onderwijscentrum Brussel</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.uitinbrussel.be/paspartoe">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Paspartoe</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://logobrussel.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Logo Brussel</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.jcaximax.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Aximax</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.facebook.com/vlaamsegemeenschapscommissie">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+De VGC op Facebook</a>
+              </li>
+        </ul>
+  
+
+  
+
+
+  </nav>
+</div>
+                      <div class="footer-top-menu">                  <h4>Ontdek</h4>
+
+  
+  
+
+<nav role="navigation" aria-labelledby="block-system-menu-block-discover-menu" id="block-system-menu-block-discover" class="block block-menu navigation menu--discover">
+      
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://brusselsebibliotheken.bibliotheek.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Brusselse bibliotheken</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.muntpunt.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Muntpunt</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.bruzz.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Bruzz</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.desocialekaart.be/">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+De sociale kaart</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.kinderopvanginbrussel.be">
+          <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="use--base-color">
+  <g transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+    <path d="M1.41421356,3 L3.70710678,5.29289322 C4.09763107,5.68341751 4.09763107,6.31658249 3.70710678,6.70710678 C3.31658249,7.09763107 2.68341751,7.09763107 2.29289322,6.70710678 L-0.707106781,3.70710678 C-1.09763107,3.31658249 -1.09763107,2.68341751 -0.707106781,2.29289322 L2.29289322,-0.707106781 C2.68341751,-1.09763107 3.31658249,-1.09763107 3.70710678,-0.707106781 C4.09763107,-0.316582489 4.09763107,0.316582489 3.70710678,0.707106781 L1.41421356,3 Z" transform="translate(1.500000, 3.000000) rotate(-180.000000) translate(-1.500000, -3.000000) "></path>
+  </g>
+</svg>
+Kinderopvang in Brussel</a>
+              </li>
+        </ul>
+  
+
+  
+
+
+  </nav>
+</div>
+                    <div class="initiatif--wrapper">
+            <div class="initiatif">
+              <span>een initiatief van de vlaamse gemeenschapscommissie</span>
+                                            <a href="https://www.vgc.be" title="Home" alt="Home">                <svg xmlns="http://www.w3.org/2000/svg"  width="129" height="65" viewBox="0 0 129 65" alt="VGC logo">
+  <path fill="#0097A9" d="M70.4814876 50.0038017L70.8457025 50.0038017 70.8457025 54.8830992C71.6047521 54.3416116 72.4239669 53.9849174 73.5166116 53.9849174 75.0250413 53.9849174 76.1483058 54.5967769 76.886405 55.5357851 77.6261157 56.4747934 77.9897934 57.7404132 77.9897934 59.0468595 77.9897934 60.7110744 77.545 62.1910331 76.6645455 63.2621901 75.7738843 64.3338843 74.4685124 64.9871074 72.737686 64.9871074 72.0909091 64.9871074 71.3415289 64.8957851 70.592686 64.7319421 69.8443802 64.5680992 69.0847934 64.3338843 68.478843 64.078719L68.478843 50.4126033 70.4814876 50.0038017zM70.8457025 62.4042975C71.502686 62.6191736 72.2321901 62.7104959 72.7989256 62.7104959 73.729876 62.7104959 74.4072727 62.3033058 74.8622727 61.6909091 75.3183471 61.088719 75.541281 60.2818595 75.541281 59.4755372 75.541281 58.6692149 75.3290909 57.883843 74.9036364 57.2805785 74.478719 56.6783884 73.8405372 56.2808678 73.0014463 56.2808678 72.2735537 56.2808678 71.4629339 56.5457025 70.8457025 56.9437603L70.8457025 62.4042975zM86.1754959 56.8218182C85.5797521 56.453843 84.9920661 56.2916116 84.3947107 56.2916116 83.6265289 56.2916116 82.917438 56.5773967 82.2808678 57.067314L82.2808678 64.7835124 79.9123967 64.7835124 79.9123967 54.1890496 81.9161157 54.1890496 82.1583884 55.055C82.8873554 54.4329339 83.7774793 53.9849174 84.8298347 53.9849174 85.1134711 53.9849174 85.5077686 54.0047934 85.8929339 54.0767769 86.2770248 54.147686 86.6514463 54.2502893 86.9243388 54.4039256L86.1754959 56.8218182zM95.637562 64.7835124L95.3942149 63.9567769C94.422438 64.6094628 93.2293388 64.9871074 92.0550413 64.9871074 91.0526446 64.9871074 90.0921488 64.7115289 89.3938017 64.0991322 88.6954545 63.4872727 88.2404545 62.5369835 88.2404545 61.2208678L88.2404545 54.1890496 90.6078512 54.1890496 90.6078512 60.5166116C90.6078512 61.3019835 90.8914876 61.8440083 91.3266116 62.1910331 91.7611983 62.5369835 92.3682231 62.7008264 92.9865289 62.7008264 93.7955372 62.7008264 94.6249587 62.4456612 95.2728099 62.0476033L95.2728099 54.1890496 97.6407438 54.1890496 97.6407438 64.7835124 95.637562 64.7835124zM99.3914463 61.9654132C99.6847521 62.1297934 100.088719 62.3033058 100.544256 62.4558678 100.989587 62.6095041 101.496157 62.7104959 101.991446 62.7104959 102.427107 62.7104959 102.852025 62.6299174 103.186157 62.4354545 103.509545 62.2420661 103.731942 61.9358678 103.731942 61.4765702 103.731942 60.7921901 103.236653 60.4865289 102.588264 60.2410331 102.254669 60.1180165 101.900661 59.9960744 101.52624 59.8843388 100.756983 59.6597934 100.079587 59.2617355 99.6439256 58.5574793 99.4209917 58.2093802 99.3097934 57.7404132 99.3097934 57.137686 99.3097934 56.0267769 99.7449174 55.2295868 100.413182 54.7192562 101.080909 54.2089256 101.981777 53.9849174 102.943347 53.9849174 103.752355 53.9849174 104.662893 54.147686 105.280124 54.3829752L105.280124 56.5258264 105.158719 56.6182231C104.591983 56.3421074 104.035455 56.1890083 103.347314 56.1890083 102.901983 56.1890083 102.48781 56.2609917 102.183223 56.4135537 101.880248 56.5661157 101.678264 56.8019421 101.678264 57.1280165 101.678264 57.6286777 102.163884 57.883843 102.811736 58.118595 103.135124 58.2303306 103.489132 58.3522727 103.864091 58.4849587 104.62314 58.7508678 105.290331 59.1999587 105.725992 59.9557851 105.937645 60.3339669 106.04938 60.8330165 106.04938 61.4459504 106.04938 62.6702066 105.56376 63.558719 104.814917 64.1302893 104.066612 64.7115289 103.054545 64.9871074 102.01186 64.9871074 100.959504 64.9871074 100.028554 64.7217355 99.3097934 64.2629752L99.3097934 62.0271901 99.3914463 61.9654132zM106.990537 61.9654132C107.283843 62.1297934 107.688347 62.3033058 108.143347 62.4558678 108.589215 62.6095041 109.095248 62.7104959 109.591074 62.7104959 110.025661 62.7104959 110.450579 62.6299174 110.784711 62.4354545 111.108636 62.2420661 111.331033 61.9358678 111.331033 61.4765702 111.331033 60.7921901 110.835207 60.4865289 110.187893 60.2410331 109.854298 60.1180165 109.500289 59.9960744 109.125868 59.8843388 108.356612 59.6597934 107.678678 59.2617355 107.243017 58.5574793 107.02062 58.2093802 106.909959 57.7404132 106.909959 57.137686 106.909959 56.0267769 107.344545 55.2295868 108.012273 54.7192562 108.680537 54.2089256 109.580331 53.9849174 110.541901 53.9849174 111.351446 53.9849174 112.261983 54.147686 112.879215 54.3829752L112.879215 56.5258264 112.758347 56.6182231C112.191612 56.3421074 111.635083 56.1890083 110.946405 56.1890083 110.501074 56.1890083 110.086901 56.2609917 109.782851 56.4135537 109.479339 56.5661157 109.277355 56.8019421 109.277355 57.1280165 109.277355 57.6286777 109.762438 57.883843 110.410289 58.118595 110.734752 58.2303306 111.088223 58.3522727 111.462645 58.4849587 112.221694 58.7508678 112.889959 59.1999587 113.325083 59.9557851 113.537273 60.3339669 113.648471 60.8330165 113.648471 61.4459504 113.648471 62.6702066 113.162314 63.558719 112.414008 64.1302893 111.665165 64.7115289 110.653099 64.9871074 109.61095 64.9871074 108.559132 64.9871074 107.628182 64.7217355 106.909959 64.2629752L106.909959 62.0271901 106.990537 61.9654132zM123.160496 62.0373967L123.160496 64.3542975C122.229008 64.813595 121.076198 64.9871074 120.175331 64.9871074 118.717934 64.9871074 117.372273 64.5283471 116.38062 63.6204959 115.389504 62.7104959 114.762066 61.3223967 114.762066 59.4857438 114.762066 57.6995868 115.34814 56.3313636 116.239876 55.3928926 117.119793 54.4640909 118.30376 53.9849174 119.48719 53.9849174 119.82186 53.9849174 120.41814 54.0246694 121.035909 54.2390083 121.652603 54.4538843 122.331074 54.8621488 122.836033 55.5669421 123.342066 56.2706612 123.696612 57.3122727 123.696612 58.7814876L123.696612 60.3731818 117.32124 60.3731818C117.513554 61.2310744 117.948678 61.8133884 118.51595 62.1802893 119.073017 62.5477273 119.75095 62.7008264 120.428347 62.7008264 121.319008 62.7008264 122.259628 62.4456612 123.069174 62.0067769L123.160496 62.0373967zM121.530661 58.4849587C121.480702 57.7097934 121.207273 57.1580992 120.843058 56.7917355 120.478306 56.4339669 120.014174 56.2808678 119.558099 56.2808678 119.073017 56.2808678 118.576653 56.4447107 118.172149 56.8019421 117.756364 57.1693802 117.442645 57.72 117.291694 58.4849587L121.530661 58.4849587zM128.138099 50.0038017L128.138099 64.7835124 125.771777 64.7835124 125.771777 50.2079339 127.835124 50.0038017 128.138099 50.0038017zM22.2799587 15.5140496C24.9057438 12.0368182 29.1038843 10.3677686 33.4228926 10.3677686 46.0414876 10.3677686 49.4897107 20.3245868 49.4897107 27.1914876L49.4897107 47.8813636C49.7921488 52.2369008 52.4173967 54.2701653 55.1790909 55.1919835 60.8179752 49.3505785 64.2952066 41.3727686 64.2952066 32.5725207 64.2952066 14.6647521 49.9011983.148264463 32.1465289.148264463 24.5071488.148264463 16.2816942 3.29512397 10.965124 7.98694215 16.8231818 8.32322314 20.8010744 12.1136364 22.2799587 15.5140496"/>
+  <path fill="#0097A9" d="M42.0791736,47.8813636 L42.0791736,27.1930992 C42.0641322,26.9443802 42.0496281,26.7047934 42.0345868,26.4721901 C41.7955372,21.6627273 37.8659917,17.8314876 33.0366529,17.8314876 C28.3152893,17.8314876 24.2664876,21.4908264 23.8727273,26.1514876 C23.8281405,26.4963636 23.8147107,26.8460744 23.8147107,27.1930992 L23.8147107,46.5244215 L23.8130992,46.5244215 C23.8028926,48.5764876 22.1510331,50.2407025 20.1113223,50.2407025 C18.0791322,50.2407025 16.4315702,48.5866942 16.4122314,46.5394628 L16.4106198,46.5394628 L16.3509917,21.5692562 C15.8691322,14.678719 9.58293388,13.6000413 6.12450413,13.5334298 C2.27177686,18.8800826 0,25.4590496 0,32.5725207 C0,50.4856612 14.3923967,65 32.1465289,65 C38.2704959,65 43.993719,63.2734711 48.8654959,60.2759504 C42.3558264,56.2464876 42.0791736,47.8813636 42.0791736,47.8813636"/>
+</svg>
+              </a>
+              
+                                                                                          </div>
+            <div class="footer-top--social">
+                                                  <a href="https://www.facebook.com/vlaamsegemeenschapscommissie" title="Volg ons op Facebook" alt="Volg ons op Facebook" target="_blank"><span class="visuallyhidden">Volg ons op Facebook</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.997 15.999C31.997 7.163 24.834 0 15.998 0S-.001 7.163-.001 15.999c0 7.985 5.851 14.604 13.499 15.804v-11.18H9.436v-4.625h4.062v-3.525c0-4.01 2.389-6.225 6.043-6.225 1.75 0 3.581.313 3.581.313v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.001h4.437l-.709 4.625h-3.728v11.18c7.649-1.2 13.499-7.819 13.499-15.804z"/></svg></a>
+                                          </div>
+          </div>
+              </div>
+    </div>
+  </section>
+      
+              <section class="footer-bottom">
+          <div class="region__inner">
+            <div class="footer__bottom_content">
+              <div class="copy">&copy; 2021 - <a href="/uw-privacy">Uw privacy</a>
+              </div>
+              <ul>
+	<li><a href="/node/741">Dit is de officiële website van de Vlaamse Gemeenschapscommissie</a></li>
+	<li><a href="/sitemap">Sitemap</a></li>
+</ul>
+
+            </div>
+          </div>
+        </section>
+          </footer>
+  </div>
+
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1264","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"nl"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"addtoany\/addtoany,ckeditor_indentblock\/indentblock,classy\/base,classy\/messages,core\/html5shiv,core\/normalize,entityone\/block--language,entityone\/block--search,entityone\/block--search--solr,entityone\/breadcrumb,entityone\/footer,entityone\/global,entityone\/media--image,entityone\/node--news,entityone\/paragraph,entityone\/paragraph--landing-block,entityone\/paragraph--text-one-col,entityone\/region--footer-top,eu_cookie_compliance\/eu_cookie_compliance,extlink\/drupal.extlink,paragraphs\/drupal.paragraphs.unpublished,system\/base","theme":"entityone","theme_token":null},"ajaxTrustedUrl":{"\/zoeken":true},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(externe link)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":null}},"eu_cookie_compliance":{"popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info inverted\u0022\u003E\n  \u003Cdiv class =\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Cp\u003EDeze website gebruikt cookies om je de beste ervaring op deze website te geven.\u003C\/p\u003E\n\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003E\u003Cspan\u003EMeer info\u003C\/span\u003E\u003C\/button\u003E\n          \u003C\/div\u003E\n\n          \u003Cdiv id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022eu-cookie-compliance-categories clearfix\u0022\u003E\n                  \u003Cdiv class=\u0022eu-cookie-compliance-category\u0022\u003E\n            \u003Cdiv class=\u0022form-type-checkbox\u0022\u003E\n              \u003Cinput type=\u0022checkbox\u0022 name=\u0022cookie-categories\u0022\n                id=\u0022cookie-category-functional\u0022\n                value=\u0022functional\u0022  checked disabled\u003E\n              \u003Cspan class=\u0022checkboxdummy input-dummy\u0022\u003E\u003C\/span\u003E\n              \u003Clabel for=\u0022cookie-category-functional\u0022\u003EFunctionele cookies\u003C\/label\u003E\n            \u003C\/div\u003E\n                          \u003Cdiv class=\u0022eu-cookie-compliance-category-description\u0022\u003EDoor deze website te gebruiken, aanvaard je ons gebruik van noodzakelijke cookies.\u003C\/div\u003E\n                      \u003C\/div\u003E\n                  \u003Cdiv class=\u0022eu-cookie-compliance-category\u0022\u003E\n            \u003Cdiv class=\u0022form-type-checkbox\u0022\u003E\n              \u003Cinput type=\u0022checkbox\u0022 name=\u0022cookie-categories\u0022\n                id=\u0022cookie-category-analytical\u0022\n                value=\u0022analytical\u0022 \u003E\n              \u003Cspan class=\u0022checkboxdummy input-dummy\u0022\u003E\u003C\/span\u003E\n              \u003Clabel for=\u0022cookie-category-analytical\u0022\u003EAnalytische cookies\u003C\/label\u003E\n            \u003C\/div\u003E\n                          \u003Cdiv class=\u0022eu-cookie-compliance-category-description\u0022\u003EIk ga akkoord met analytische cookies (zoals Google Analytics).\u003C\/div\u003E\n                      \u003C\/div\u003E\n        \n      \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n              \u003Cdiv class=\u0022eu-cookie-compliance-categories-buttons\u0022\u003E\n          \u003Cbutton type=\u0022button\u0022\n                  class=\u0022eu-cookie-compliance-save-preferences-button\u0022\u003E\n            \u003Cspan\u003EMijn cookie instellingen opslaan\u003C\/span\u003E\n          \u003C\/button\u003E\n        \u003C\/div\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button hidden\u0022\u003E\n          \u003Cspan\u003EToestemming intrekken\u003C\/span\u003E\n        \u003C\/button\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003E\n        \u003Cspan\u003EIk aanvaard alle cookies\u003Csvg xmlns=\u0022http:\/\/www.w3.org\/2000\/svg\u0022 width=\u002217\u0022 height=\u002212\u0022 viewBox=\u00220 0 17 12\u0022\u003E\n            \u003Cpolyline fill=\u0022none\u0022 stroke=\u0022#FFF\u0022 stroke-linecap=\u0022round\u0022 stroke-linejoin=\u0022round\u0022 stroke-width=\u00222\u0022 points=\u0022584 61.762 588.837 66.6 598.437 57\u0022 transform=\u0022translate(-583 -56)\u0022\/\u003E\n          \u003C\/svg\u003E\n        \u003C\/span\u003E\n      \u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info inverted\u0022\u003E\n  \u003Cdiv class =\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003E\u003Cspan\u003EMeer info\u003C\/span\u003E\u003C\/button\u003E\n          \u003C\/div\u003E\n\n          \u003Cdiv id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022eu-cookie-compliance-categories clearfix\u0022\u003E\n                  \u003Cdiv class=\u0022eu-cookie-compliance-category\u0022\u003E\n            \u003Cdiv class=\u0022form-type-checkbox\u0022\u003E\n              \u003Cinput type=\u0022checkbox\u0022 name=\u0022cookie-categories\u0022\n                id=\u0022cookie-category-functional\u0022\n                value=\u0022functional\u0022  checked disabled\u003E\n              \u003Cspan class=\u0022checkboxdummy input-dummy\u0022\u003E\u003C\/span\u003E\n              \u003Clabel for=\u0022cookie-category-functional\u0022\u003EFunctionele cookies\u003C\/label\u003E\n            \u003C\/div\u003E\n                          \u003Cdiv class=\u0022eu-cookie-compliance-category-description\u0022\u003EDoor deze website te gebruiken, aanvaard je ons gebruik van noodzakelijke cookies.\u003C\/div\u003E\n                      \u003C\/div\u003E\n                  \u003Cdiv class=\u0022eu-cookie-compliance-category\u0022\u003E\n            \u003Cdiv class=\u0022form-type-checkbox\u0022\u003E\n              \u003Cinput type=\u0022checkbox\u0022 name=\u0022cookie-categories\u0022\n                id=\u0022cookie-category-analytical\u0022\n                value=\u0022analytical\u0022 \u003E\n              \u003Cspan class=\u0022checkboxdummy input-dummy\u0022\u003E\u003C\/span\u003E\n              \u003Clabel for=\u0022cookie-category-analytical\u0022\u003EAnalytische cookies\u003C\/label\u003E\n            \u003C\/div\u003E\n                          \u003Cdiv class=\u0022eu-cookie-compliance-category-description\u0022\u003EIk ga akkoord met analytische cookies (zoals Google Analytics).\u003C\/div\u003E\n                      \u003C\/div\u003E\n        \n      \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n              \u003Cdiv class=\u0022eu-cookie-compliance-categories-buttons\u0022\u003E\n          \u003Cbutton type=\u0022button\u0022\n                  class=\u0022eu-cookie-compliance-save-preferences-button\u0022\u003E\n            \u003Cspan\u003EMijn cookie instellingen opslaan\u003C\/span\u003E\n          \u003C\/button\u003E\n        \u003C\/div\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button hidden\u0022\u003E\n          \u003Cspan\u003EToestemming intrekken\u003C\/span\u003E\n        \u003C\/button\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003E\n        \u003Cspan\u003EIk aanvaard alle cookies\u003Csvg xmlns=\u0022http:\/\/www.w3.org\/2000\/svg\u0022 width=\u002217\u0022 height=\u002212\u0022 viewBox=\u00220 0 17 12\u0022\u003E\n            \u003Cpolyline fill=\u0022none\u0022 stroke=\u0022#FFF\u0022 stroke-linecap=\u0022round\u0022 stroke-linejoin=\u0022round\u0022 stroke-width=\u00222\u0022 points=\u0022584 61.762 588.837 66.6 598.437 57\u0022 transform=\u0022translate(-583 -56)\u0022\/\u003E\n          \u003C\/svg\u003E\n        \u003C\/span\u003E\n      \u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/privacybeleid","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"nl","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"disagree_do_not_show_popup":false,"method":"categories","whitelisted_cookies":"CookieConsent","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\n\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EToestemming intrekken\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"withdraw_button_on_info_popup":false,"cookie_categories":["functional","analytical"],"enable_save_preferences_button":true,"fix_first_cookie_category":true,"select_all_categories_by_default":false},"user":{"uid":0,"permissionsHash":"49ad163e7abaee15fc178d993c654f81ebc94ff9e4cac1d2d7bfe828de6d0c8a"}}</script>
+<script src="/sites/vgc/files/js/js_I87NJlEMwT-Nhl1NKHuDe0Evnic8bdskHiGIjwEb3Bw.js"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/vgc/files/js/js_SEl9VvLECup5QLP3L2VK8TQA5NcGOwcA6iFh8WehGx0.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"70ec3803a0","applicationID":"251193625","transactionName":"Y11UNhFZVkVQAUYIDFoXdwEXUVdYHhJTBgZrW1cBC10=","queueTime":0,"applicationTime":13,"atts":"TxpXQFlDRUs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

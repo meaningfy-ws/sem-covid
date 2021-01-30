@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html class="no-js" lang="sl">
+  
+<head>
+  <title>Novice za obrtnike in podjetnike | OZS</title>
+  <link rel="canonical" href="https://www.ozs.si/novice">
+  <meta name="description" content="Spremljajte aktualne novice iz sveta obrtništva in podjetništva: aktualna zakonodaja, zastopanje na državni ravni, zgodbe obrtnikov, ...">
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  
+  <link rel="stylesheet" media="all" href="/assets/glavni-b16f570f3e4a8e6d6a5e989ebedf1efa33c3dc0213fd1bd6c0a0d8cab85eb3eb.css" />
+    <!-- # ce obstaja css z imenom strani ga nalozi -->
+    <link rel="stylesheet" media="all" href="/assets/www.ozs.si-d0ca56d972de270db3e27f58d4bfbc6e163f7f43833eb1ec1413ba472ba77870.css" />
+  <style media="all">/* Pusti pri miru */
+#novica .prozorna {
+  max-width: 80%;
+  height: 5rem;
+  padding: 12px;
+  margin-right: 1rem;
+}
+
+body { font-size:12px; }
+@media only screen and (max-width: 600px) {
+  .novica .prva-novica:after {
+    content: "";
+    height: 250px;
+  }
+  .novice-siroko .text .desno {
+    font-size: 12px;  
+  }
+}
+</style>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&subset=latin,latin-ext&display=swap' rel='stylesheet' type='text/css'>
+<meta name="referrer" content="no-referrer-when-downgrade">
+<link rel="alternate" type="application/rss+xml" title="OZS novice" href="https://www.ozs.si/novice.rss" />
+
+
+  <script src="/assets/glavni-31e4fc27945a4896df4536ec1581db1a4a0e46382741cdff9c3f71a909c5fac4.js"></script>
+  
+  <!-- Google Analytics -->
+<script>
+  window['ga-disable-UA-25552122-1'] = true;
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-25552122-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['disableCookies']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stat.obrt.si/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '12']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="qfXMe+RllhC9U6DO0ZR3t98s5v210Pq1o/6UyimItsSKbWSdNcKGoEnUvNs1Iytc5TUv/FnNc5ViQd+MWyiCCw==" />
+  
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OZS",
+          "item": "https://www.ozs.si/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Novice",
+          "item": "https://www.ozs.si/novice"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+
+<body>
+<div class="ie-ne-priporocamo">
+  Spoštovani uporabnik Microsoft Internet Explorerja!<br><br>
+  Spletni brskalnik, ki ga uporabljate, ne omogoča polne funkcionalnosti spletnih portalov OZS.
+  V izogib težavam pri delu s portalom vam predlagamo, da uporabite sodobne spletne brskalnike kot so Google Chrome, Mozilla Firefox ali Microsoft Edge.<br><br>
+  Hvala lepa za razumevanje.
+</div>
+
+<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+  <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    
+<div id="side-menu" class="is-active menu multilevel-accordion-menu " data-accordion-menu data-submenu-toggle="true">
+  <ul class="menu vertical">
+  <li class=''><a class="top" href="/o-zbornici">O ZBORNICI</a><ul class="menu vertical nested "><li class=''><a href="/o-zbornici/organiziranost">Organiziranost</a></li>
+<li class=''><a href="/o-zbornici/predsednik-ozs">Predsednik OZS</a></li>
+<li class=''><a href="/o-zbornici/poslanstvo-in-temeljne-naloge">Poslanstvo in temeljne naloge</a></li>
+<li class=''><a href="/ooz">Območne zbornice</a></li>
+<li class=''><a href="/o-zbornici/novinarsko-sredisce">Novinarsko središče</a><ul class="menu vertical nested "><li class=''><a href="/o-zbornici/novinarsko-sredisce/kontakt">Kontakt</a></li>
+</ul>
+</li>
+<li class=''><a href="/o-zbornici/obrtnik-podjetnik-leta">Obrtnik in podjetnik leta</a></li>
+<li class=''><a href="/o-zbornici/pocitniske-kapacitete">Počitniške kapacitete</a></li>
+<li class=''><a href="/o-zbornici/projekti">Projekti</a><ul class="menu vertical nested "><li class=''><a href="/o-zbornici/projekti/decent-work-for-all">Decent work for all</a></li>
+<li class=''><a href="/o-zbornici/projekti/master-40">MASTER 4.0</a></li>
+<li class=''><a href="/o-zbornici/projekti/upskills-lab-40">Upskills Lab 4.0</a></li>
+<li class=''><a href="/o-zbornici/projekti/scaleupalps">Scale(up)ALPS</a></li>
+<li class=''><a href="/o-zbornici/projekti/polet">POLET</a></li>
+<li class=''><a href="/o-zbornici/projekti/steps2scale">Steps2Scale</a></li>
+<li class=''><a href="/o-zbornici/projekti/dualplus">DuALPlus</a></li>
+<li class=''><a href="/o-zbornici/projekti/finmed">finMED</a></li>
+<li class=''><a href="/o-zbornici/projekti/eurevita-interreg-si-at">EUREVITA Interreg SI-AT </a></li>
+<li class=''><a href="/o-zbornici/projekti/skupaj-nad-izzive-trga-dela">Skupaj nad izzive trga dela</a></li>
+<li class=''><a href="/o-zbornici/projekti/kruspop">KRUSPOP</a></li>
+<li class=''><a href="/o-zbornici/projekti/star-vital">STAR-VITAL</a></li>
+<li class=''><a href="/o-zbornici/projekti/spot-2018-2022">SPOT 2018-2022</a></li>
+<li class=''><a href="/o-zbornici/projekti/usposabljanje-mentorjev">Usposabljanje mentorjev</a></li>
+<li class=''><a href="/o-zbornici/projekti/humanitarna-pomoc">Humanitarna pomoč</a><ul class="menu vertical nested "><li class=''><a href="/o-zbornici/projekti/humanitarna-pomoc/pravila">Pravila</a></li>
+<li class=''><a href="/o-zbornici/projekti/humanitarna-pomoc/izjava">Izjava</a></li>
+<li class=''><a href="/o-zbornici/projekti/humanitarna-pomoc/porocilo-o-delovanju-ustanove">Poročilo o delovanju ustanove</a></li>
+</ul>
+</li>
+<li class=''><a href="/o-zbornici/projekti/evropska-podjetniska-mreza">Evropska podjetniška mreža</a></li>
+<li class=''><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ EUROPA-MEISTER</a></li>
+<li class=''><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ PSA</a></li>
+</ul>
+</li>
+<li class=''><a href="/o-zbornici/clanstvo">Članstvo</a><ul class="menu vertical nested "><li class=''><a href="/o-zbornici/clanstvo/clanarina">Članarina</a></li>
+<li class=''><a href="/o-zbornici/clanstvo/druge-informacije">Druge informacije</a></li>
+</ul>
+</li>
+<li class=''><a href="/o-zbornici/razpisi">Razpisi</a></li>
+</ul>
+</li>
+<li class=''><a class="top" href="/koledar">DOGODKI</a></li>
+<li class='is-active'><a class="top" href="/novice">Novice</a><ul class="menu vertical nested is-active"><li class=''><a href="/novice/novinarsko-sredisce">Novinarsko središče</a></li>
+<li class=''><a href="/novice/svetovanje">Svetovanje</a></li>
+<li class=''><a href="/novice/tuji-trgi">Tuji trgi</a></li>
+<li class=''><a href="/novice/zastopanje-in-zakonodaja">Zastopanje in zakonodaja</a></li>
+<li class=''><a href="/novice/izobrazevanje">Izobraževanje</a></li>
+<li class=''><a href="/novice/sekcije-in-odbori">Sekcije in odbori</a></li>
+</ul>
+</li>
+<li class=''><a class="top" href="/ooz">Območne zbornice</a></li>
+<li class=''><a class="top" href="/kontakt">Kontakt</a></li>
+<li class=''><a class="top" href="/50-let">50 let OZS</a></li>
+<li class=''><a class="top" href="/koronavirus-info">Koronavirus info</a></li>
+<li class=''><a class="top" href="/maske">Maske</a></li>
+
+  </ul>
+</div>
+  </div>
+
+  <div class="off-canvas-content" data-off-canvas-content>
+    
+
+    <header>
+  <div class="wrap row">
+    
+    <div class="medium-12 large-4 column top-left">
+      <span class="ena"><a href="/postanite-clan">Postanite član OZS</a></span>
+      <span class="dva">Izjemne ugodnosti, svetovanje, poslovna podpora ...</span>
+    </div>
+
+<!-- prijava odjava -->
+    <div class="medium-12 large-8 column top-right">
+      <ul>
+        <li><div  class="iskanje">
+          <span class="ikonca-tag">
+            <input type="text" tabindex="1" placeholder="Hitro iskanje" name="iskanje" id="iskanje" class="text" value="" autocomplete="off">
+          </span></div>
+        </li>
+        <li>
+          <div class="prijava-odjava"><a title="Prijavite se s svojimi podatki" rel="nofollow" href="/prijava?return_to=https://www.ozs.si/novice/ukrepi-v-pravo-smer-megazakon-pa-potrebuje-dolocene-spremembe-5e831faa2114e07a33969b0"><div class="text"><div class="ikonca"><img alt="Prijava" src="/assets/prijava-zaklenjeno-3475799a4ee6f30fae92c5684b3d6f81e8eb6c7c63c62634f69102af800c75c1.png" /></div><div class="prjava">Prijava</div></div></a></div>
+        </li>
+        <li>
+          <div class="english"><a href="/english">Eng</a></div>
+        </li>
+        
+<!-- socialne -->
+        <li class="socialne"> 
+          <img alt="Socialna omrežja" usemap="#socialna-omrezja" src="/assets/socialna_omrezja-43e5a86d3ed54db996c0899cfa2995a9a13220495bd735550fae90579d282a3a.png" />
+          <map id="socialna-omrezja" name="socialna-omrezja">
+            <area shape="rect" title="Spremljajte OZS na Facebook-u" alt="Spremljajte OZS na Facebook-u" coords="4,2,25,23" href="https://www.facebook.com/OZSsi" target="_blank" rel="noreferrer" />
+            <area shape="rect" title="Oglejte si prispevke na YouTube-u" alt="OZS YoutTube" coords="31,2,51,24" href="https://www.youtube.com/user/OZSlovenija" target="_blank" rel="noreferrer" />
+            <area shape="rect" title="Spremljajte nas na Twitter-ju" alt="OZS Twitter" coords="56,2,80,25" href="https://twitter.com/ozsaktualno" target="_blank" rel="noreferrer" />
+            <area shape="rect" title="Spremljajte nas na Instagram-u" alt="OZS Instagram" coords="84,3,106,24" href="https://www.instagram.com/ozsaktualno/" target="_blank" rel="noreferrer" />
+            <area shape="rect" title="Spremljajte nas na LinkedIn" alt="OZS LinkedIn" coords="108,3,134,24" href="https://www.linkedin.com/company/obrtno-podjetniška-zbornica-slovenije" target="_blank" rel="noreferrer"/>
+            <area shape="rect" title="Novinarsko središče" alt="OZS novinarsko središče" coords="136,3,162,24" href="/novice/novinarsko-sredisce"/>
+          </map>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+  
+<!-- burger menu -->
+  <div class="wrap row">
+    <div class="small-12 medium-4 column center-left">
+
+      <div class="show-for-small-only">
+        <nav class="top-bar">
+          <div class="wrap row">
+            <div class="column small-12">
+              <div id="responsive-menu">
+  <div class="show-for-small-only">
+    <ul id="top-menu-small" class="multilevel-accordion-menu vertical menu" data-accordion-menu data-submenu-toggle="true">
+      <li class=""><a href="/o-zbornici">O ZBORNICI</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/organiziranost">Organiziranost</a></li>
+<li class=""><a href="/o-zbornici/predsednik-ozs">Predsednik OZS</a></li>
+<li class=""><a href="/o-zbornici/poslanstvo-in-temeljne-naloge">Poslanstvo in temeljne naloge</a></li>
+<li class=""><a href="/ooz">Območne zbornice</a></li>
+<li class=""><a href="/o-zbornici/novinarsko-sredisce">Novinarsko središče</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/novinarsko-sredisce/kontakt">Kontakt</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/obrtnik-podjetnik-leta">Obrtnik in podjetnik leta</a></li>
+<li class=""><a href="/o-zbornici/pocitniske-kapacitete">Počitniške kapacitete</a></li>
+<li class=""><a href="/o-zbornici/projekti">Projekti</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/projekti/decent-work-for-all">Decent work for all</a></li>
+<li class=""><a href="/o-zbornici/projekti/master-40">MASTER 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/upskills-lab-40">Upskills Lab 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/scaleupalps">Scale(up)ALPS</a></li>
+<li class=""><a href="/o-zbornici/projekti/polet">POLET</a></li>
+<li class=""><a href="/o-zbornici/projekti/steps2scale">Steps2Scale</a></li>
+<li class=""><a href="/o-zbornici/projekti/dualplus">DuALPlus</a></li>
+<li class=""><a href="/o-zbornici/projekti/finmed">finMED</a></li>
+<li class=""><a href="/o-zbornici/projekti/eurevita-interreg-si-at">EUREVITA Interreg SI-AT </a></li>
+<li class=""><a href="/o-zbornici/projekti/skupaj-nad-izzive-trga-dela">Skupaj nad izzive trga dela</a></li>
+<li class=""><a href="/o-zbornici/projekti/kruspop">KRUSPOP</a></li>
+<li class=""><a href="/o-zbornici/projekti/star-vital">STAR-VITAL</a></li>
+<li class=""><a href="/o-zbornici/projekti/spot-2018-2022">SPOT 2018-2022</a></li>
+<li class=""><a href="/o-zbornici/projekti/usposabljanje-mentorjev">Usposabljanje mentorjev</a></li>
+<li class=""><a href="/o-zbornici/projekti/humanitarna-pomoc">Humanitarna pomoč</a></li>
+<li class=""><a href="/o-zbornici/projekti/evropska-podjetniska-mreza">Evropska podjetniška mreža</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ EUROPA-MEISTER</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ PSA</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/clanstvo">Članstvo</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/clanstvo/clanarina">Članarina</a></li>
+<li class=""><a href="/o-zbornici/clanstvo/druge-informacije">Druge informacije</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/razpisi">Razpisi</a></li>
+</ul>
+</li>
+<li class=""><a href="/koledar">DOGODKI</a></li><li class="top_selected "><a href="/novice">Novice</a><ul class="vertical nested"><li class=""><a href="/novice/novinarsko-sredisce">Novinarsko središče</a></li>
+<li class=""><a href="/novice/svetovanje">Svetovanje</a></li>
+<li class=""><a href="/novice/tuji-trgi">Tuji trgi</a></li>
+<li class=""><a href="/novice/zastopanje-in-zakonodaja">Zastopanje in zakonodaja</a></li>
+<li class=""><a href="/novice/izobrazevanje">Izobraževanje</a></li>
+<li class=""><a href="/novice/sekcije-in-odbori">Sekcije in odbori</a></li>
+</ul>
+</li>
+<li class=""><a href="/ooz">Območne zbornice</a></li><li class=""><a href="/kontakt">Kontakt</a></li><li class=""><a href="/50-let">50 let OZS</a></li><li class=""><a href="/koronavirus-info">Koronavirus info</a></li><li class="rdeca"><a href="/maske">Maske</a></li>
+    </ul>
+  </div>
+  <div class="show-for-medium">
+    <ul id="top-menu-large" class="dropdown menu" data-dropdown-menu>
+      
+      <li class=""><a href="/o-zbornici">O ZBORNICI</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/organiziranost">Organiziranost</a></li>
+<li class=""><a href="/o-zbornici/predsednik-ozs">Predsednik OZS</a></li>
+<li class=""><a href="/o-zbornici/poslanstvo-in-temeljne-naloge">Poslanstvo in temeljne naloge</a></li>
+<li class=""><a href="/ooz">Območne zbornice</a></li>
+<li class=""><a href="/o-zbornici/novinarsko-sredisce">Novinarsko središče</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/novinarsko-sredisce/kontakt">Kontakt</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/obrtnik-podjetnik-leta">Obrtnik in podjetnik leta</a></li>
+<li class=""><a href="/o-zbornici/pocitniske-kapacitete">Počitniške kapacitete</a></li>
+<li class=""><a href="/o-zbornici/projekti">Projekti</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/projekti/decent-work-for-all">Decent work for all</a></li>
+<li class=""><a href="/o-zbornici/projekti/master-40">MASTER 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/upskills-lab-40">Upskills Lab 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/scaleupalps">Scale(up)ALPS</a></li>
+<li class=""><a href="/o-zbornici/projekti/polet">POLET</a></li>
+<li class=""><a href="/o-zbornici/projekti/steps2scale">Steps2Scale</a></li>
+<li class=""><a href="/o-zbornici/projekti/dualplus">DuALPlus</a></li>
+<li class=""><a href="/o-zbornici/projekti/finmed">finMED</a></li>
+<li class=""><a href="/o-zbornici/projekti/eurevita-interreg-si-at">EUREVITA Interreg SI-AT </a></li>
+<li class=""><a href="/o-zbornici/projekti/skupaj-nad-izzive-trga-dela">Skupaj nad izzive trga dela</a></li>
+<li class=""><a href="/o-zbornici/projekti/kruspop">KRUSPOP</a></li>
+<li class=""><a href="/o-zbornici/projekti/star-vital">STAR-VITAL</a></li>
+<li class=""><a href="/o-zbornici/projekti/spot-2018-2022">SPOT 2018-2022</a></li>
+<li class=""><a href="/o-zbornici/projekti/usposabljanje-mentorjev">Usposabljanje mentorjev</a></li>
+<li class=""><a href="/o-zbornici/projekti/humanitarna-pomoc">Humanitarna pomoč</a></li>
+<li class=""><a href="/o-zbornici/projekti/evropska-podjetniska-mreza">Evropska podjetniška mreža</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ EUROPA-MEISTER</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ PSA</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/clanstvo">Članstvo</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/clanstvo/clanarina">Članarina</a></li>
+<li class=""><a href="/o-zbornici/clanstvo/druge-informacije">Druge informacije</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/razpisi">Razpisi</a></li>
+</ul>
+</li>
+<li class=""><a href="/koledar">DOGODKI</a></li><li class="top_selected "><a href="/novice">Novice</a><ul class="vertical nested"><li class=""><a href="/novice/novinarsko-sredisce">Novinarsko središče</a></li>
+<li class=""><a href="/novice/svetovanje">Svetovanje</a></li>
+<li class=""><a href="/novice/tuji-trgi">Tuji trgi</a></li>
+<li class=""><a href="/novice/zastopanje-in-zakonodaja">Zastopanje in zakonodaja</a></li>
+<li class=""><a href="/novice/izobrazevanje">Izobraževanje</a></li>
+<li class=""><a href="/novice/sekcije-in-odbori">Sekcije in odbori</a></li>
+</ul>
+</li>
+<li class=""><a href="/ooz">Območne zbornice</a></li><li class=""><a href="/kontakt">Kontakt</a></li><li class=""><a href="/50-let">50 let OZS</a></li><li class=""><a href="/koronavirus-info">Koronavirus info</a></li><li class="rdeca"><a href="/maske">Maske</a></li>
+    </ul>
+  </div>
+</div>
+            </div>
+          </div> 
+        </nav>
+      </div>
+
+      <button class="menu-icon show-for-small-only" data-toggle="offCanvas" data-animate="fade-in fade-out"></button>
+      <a href="/"><img alt="Obrtno-podjetniška zbornica Slovenije" src="/datoteke/ozs/logotipi/ozs-logo-lezeci-1969.png" /></a>
+    </div>
+
+<!-- ozs znamke -->
+    <div class="small-12 medium-8 column center-right hide-for-small-only">
+      <img usemap="#blagovne-znamke" alt="OZS blagovne znamke" src="/assets/blagovne-znamke-1102dab914a3a168c5faf21fc926b625b2a796f2ff2ca9c934542b9084a648a1.png" />
+      <map id="blagovne-znamke" name="blagovne-znamke">
+        <area shape="rect" coords="11,9,130,61" title="Družinsko podjetništvo" alt="Družinsko podjetništvo" href="https://www.druzinskopodjetnistvo.si" target="_blank" rel="noreferrer">
+        <area shape="rect" coords="177,22,277,53" title="Revija Obrtnik-Podjetnik" alt="Revija Obrtnik-Podjetnik" href="/obrtnik" target="_self">
+        <area shape="rect" coords="314,18,414,52" title="Kartica Mozaik podjetnih" alt="Kartica Mozaik podjetnih" href="http://mozaikpodjetnih.si" target="_blank" rel="noreferrer">
+        <area shape="rect" coords="452,26,584,50" title="MojObrtnik.com" alt="MojObrtnik.com" href="https://www.mojobrtnik.com" target="_blank" rel="noreferrer">
+      </map>      
+      <hr>
+    </div>
+  </div>
+
+  <!-- TOP MENU -->  
+  <div class="show-for-medium">
+    <nav class="top-bar">
+      <div class="wrap row">
+        <div class="column small-12">
+           <div id="responsive-menu">
+  <div class="show-for-small-only">
+    <ul id="top-menu-small" class="multilevel-accordion-menu vertical menu" data-accordion-menu data-submenu-toggle="true">
+      <li class=""><a href="/o-zbornici">O ZBORNICI</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/organiziranost">Organiziranost</a></li>
+<li class=""><a href="/o-zbornici/predsednik-ozs">Predsednik OZS</a></li>
+<li class=""><a href="/o-zbornici/poslanstvo-in-temeljne-naloge">Poslanstvo in temeljne naloge</a></li>
+<li class=""><a href="/ooz">Območne zbornice</a></li>
+<li class=""><a href="/o-zbornici/novinarsko-sredisce">Novinarsko središče</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/novinarsko-sredisce/kontakt">Kontakt</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/obrtnik-podjetnik-leta">Obrtnik in podjetnik leta</a></li>
+<li class=""><a href="/o-zbornici/pocitniske-kapacitete">Počitniške kapacitete</a></li>
+<li class=""><a href="/o-zbornici/projekti">Projekti</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/projekti/decent-work-for-all">Decent work for all</a></li>
+<li class=""><a href="/o-zbornici/projekti/master-40">MASTER 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/upskills-lab-40">Upskills Lab 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/scaleupalps">Scale(up)ALPS</a></li>
+<li class=""><a href="/o-zbornici/projekti/polet">POLET</a></li>
+<li class=""><a href="/o-zbornici/projekti/steps2scale">Steps2Scale</a></li>
+<li class=""><a href="/o-zbornici/projekti/dualplus">DuALPlus</a></li>
+<li class=""><a href="/o-zbornici/projekti/finmed">finMED</a></li>
+<li class=""><a href="/o-zbornici/projekti/eurevita-interreg-si-at">EUREVITA Interreg SI-AT </a></li>
+<li class=""><a href="/o-zbornici/projekti/skupaj-nad-izzive-trga-dela">Skupaj nad izzive trga dela</a></li>
+<li class=""><a href="/o-zbornici/projekti/kruspop">KRUSPOP</a></li>
+<li class=""><a href="/o-zbornici/projekti/star-vital">STAR-VITAL</a></li>
+<li class=""><a href="/o-zbornici/projekti/spot-2018-2022">SPOT 2018-2022</a></li>
+<li class=""><a href="/o-zbornici/projekti/usposabljanje-mentorjev">Usposabljanje mentorjev</a></li>
+<li class=""><a href="/o-zbornici/projekti/humanitarna-pomoc">Humanitarna pomoč</a></li>
+<li class=""><a href="/o-zbornici/projekti/evropska-podjetniska-mreza">Evropska podjetniška mreža</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ EUROPA-MEISTER</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ PSA</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/clanstvo">Članstvo</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/clanstvo/clanarina">Članarina</a></li>
+<li class=""><a href="/o-zbornici/clanstvo/druge-informacije">Druge informacije</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/razpisi">Razpisi</a></li>
+</ul>
+</li>
+<li class=""><a href="/koledar">DOGODKI</a></li><li class="top_selected "><a href="/novice">Novice</a><ul class="vertical nested"><li class=""><a href="/novice/novinarsko-sredisce">Novinarsko središče</a></li>
+<li class=""><a href="/novice/svetovanje">Svetovanje</a></li>
+<li class=""><a href="/novice/tuji-trgi">Tuji trgi</a></li>
+<li class=""><a href="/novice/zastopanje-in-zakonodaja">Zastopanje in zakonodaja</a></li>
+<li class=""><a href="/novice/izobrazevanje">Izobraževanje</a></li>
+<li class=""><a href="/novice/sekcije-in-odbori">Sekcije in odbori</a></li>
+</ul>
+</li>
+<li class=""><a href="/ooz">Območne zbornice</a></li><li class=""><a href="/kontakt">Kontakt</a></li><li class=""><a href="/50-let">50 let OZS</a></li><li class=""><a href="/koronavirus-info">Koronavirus info</a></li><li class="rdeca"><a href="/maske">Maske</a></li>
+    </ul>
+  </div>
+  <div class="show-for-medium">
+    <ul id="top-menu-large" class="dropdown menu" data-dropdown-menu>
+      
+      <li class=""><a href="/o-zbornici">O ZBORNICI</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/organiziranost">Organiziranost</a></li>
+<li class=""><a href="/o-zbornici/predsednik-ozs">Predsednik OZS</a></li>
+<li class=""><a href="/o-zbornici/poslanstvo-in-temeljne-naloge">Poslanstvo in temeljne naloge</a></li>
+<li class=""><a href="/ooz">Območne zbornice</a></li>
+<li class=""><a href="/o-zbornici/novinarsko-sredisce">Novinarsko središče</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/novinarsko-sredisce/kontakt">Kontakt</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/obrtnik-podjetnik-leta">Obrtnik in podjetnik leta</a></li>
+<li class=""><a href="/o-zbornici/pocitniske-kapacitete">Počitniške kapacitete</a></li>
+<li class=""><a href="/o-zbornici/projekti">Projekti</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/projekti/decent-work-for-all">Decent work for all</a></li>
+<li class=""><a href="/o-zbornici/projekti/master-40">MASTER 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/upskills-lab-40">Upskills Lab 4.0</a></li>
+<li class=""><a href="/o-zbornici/projekti/scaleupalps">Scale(up)ALPS</a></li>
+<li class=""><a href="/o-zbornici/projekti/polet">POLET</a></li>
+<li class=""><a href="/o-zbornici/projekti/steps2scale">Steps2Scale</a></li>
+<li class=""><a href="/o-zbornici/projekti/dualplus">DuALPlus</a></li>
+<li class=""><a href="/o-zbornici/projekti/finmed">finMED</a></li>
+<li class=""><a href="/o-zbornici/projekti/eurevita-interreg-si-at">EUREVITA Interreg SI-AT </a></li>
+<li class=""><a href="/o-zbornici/projekti/skupaj-nad-izzive-trga-dela">Skupaj nad izzive trga dela</a></li>
+<li class=""><a href="/o-zbornici/projekti/kruspop">KRUSPOP</a></li>
+<li class=""><a href="/o-zbornici/projekti/star-vital">STAR-VITAL</a></li>
+<li class=""><a href="/o-zbornici/projekti/spot-2018-2022">SPOT 2018-2022</a></li>
+<li class=""><a href="/o-zbornici/projekti/usposabljanje-mentorjev">Usposabljanje mentorjev</a></li>
+<li class=""><a href="/o-zbornici/projekti/humanitarna-pomoc">Humanitarna pomoč</a></li>
+<li class=""><a href="/o-zbornici/projekti/evropska-podjetniska-mreza">Evropska podjetniška mreža</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ EUROPA-MEISTER</a></li>
+<li class=""><a href="https://www.ozs.si/sekcija-slikopleskarjev-fasaderjev-in-crkoslikarjev/projekti">Erazmus+ PSA</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/clanstvo">Članstvo</a><ul class="vertical nested"><li class=""><a href="/o-zbornici/clanstvo/clanarina">Članarina</a></li>
+<li class=""><a href="/o-zbornici/clanstvo/druge-informacije">Druge informacije</a></li>
+</ul>
+</li>
+<li class=""><a href="/o-zbornici/razpisi">Razpisi</a></li>
+</ul>
+</li>
+<li class=""><a href="/koledar">DOGODKI</a></li><li class="top_selected "><a href="/novice">Novice</a><ul class="vertical nested"><li class=""><a href="/novice/novinarsko-sredisce">Novinarsko središče</a></li>
+<li class=""><a href="/novice/svetovanje">Svetovanje</a></li>
+<li class=""><a href="/novice/tuji-trgi">Tuji trgi</a></li>
+<li class=""><a href="/novice/zastopanje-in-zakonodaja">Zastopanje in zakonodaja</a></li>
+<li class=""><a href="/novice/izobrazevanje">Izobraževanje</a></li>
+<li class=""><a href="/novice/sekcije-in-odbori">Sekcije in odbori</a></li>
+</ul>
+</li>
+<li class=""><a href="/ooz">Območne zbornice</a></li><li class=""><a href="/kontakt">Kontakt</a></li><li class=""><a href="/50-let">50 let OZS</a></li><li class=""><a href="/koronavirus-info">Koronavirus info</a></li><li class="rdeca"><a href="/maske">Maske</a></li>
+    </ul>
+  </div>
+</div>
+        </div>
+      </div> 
+    </nav>
+  </div>
+  <div style="clear:both"></div>
+  
+</header>
+
+    
+<div  style="background-color: #fff;">
+ <div class="wrap row drobtince">
+  <span class="drobtinca"><a href="/">OZS</a></span><i class="fa fa-arrow-right"></i><span class="drobtinca"><a href="/novice">Novice</a></span>
+ </div>
+</div>
+
+
+      <section class="main">
+        <div class="wrap">NAPAKA DOKUMENT</div>    
+      </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer"><div class="row povezave small-up-1 medium-up-2 large-up-4">
+<div class="column">
+<div class="naslov"><a href="http://www.svetovanje.si" target="_blank">Svetovanje</a></div>
+<a href="http://www.svetovanje.si/svetovanje/davki">Davki</a><br />
+<a href="http://www.svetovanje.si/svetovanje/poslovanje-v-tujini">Poslovanje v tujini</a><br />
+<a href="http://www.svetovanje.si/svetovanje/delovno-pravo-in-socialna-varnost">Delovno pravo in socialna varnost</a><br />
+<a href="http://www.svetovanje.si/svetovanje/racunovodstvo-in-knjigovodstvo">Računovodstvo in knjigovodstvo</a><br />
+<a href="http://www.svetovanje.si/svetovanje/civilno-in-gospodarsko-pravo">Civilno in gospodarsko pravo</a><br />
+<a href="http://www.svetovanje.si/svetovanje/vzorci">Vzorci dokumentov</a>
+
+<div class="naslov"><a href="/javna-pooblastila/izobrazevanja" target="_blank">Izobraževanje</a></div>
+<a href="/javna-pooblastila/izobrazevanja/mojstrski-izpiti">Mojstrski izpiti</a><br />
+<a href="/javna-pooblastila/izobrazevanja/nacionalne-poklicne-kvalifikacije-npk">Nacionalne poklicne kvalifikacije NPK</a><br />
+<a href="/javna-pooblastila/izobrazevanja">Srednje poklicno, strokovno izobraževanje</a></div>
+
+<div class="column">
+<div class="naslov">Povezovanje</div>
+<a href="/sekcije-in-odbori">Strokovne sekcije&nbsp;in odbori</a><br />
+<a href="/ooz">Območne obrtno-podjetni&scaron;ke zbornice</a>
+
+<div class="naslov"><a href="/zastopanje">Zastopanje&nbsp;in zakonodaja</a></div>
+<a href="/zastopanje/forum-obrti-in-podjetnistva">Forum obrti in podjetni&scaron;tva</a><br />
+<a href="/sekcije-in-odbori">Z</a><a href="/zastopanje/zahteve-slovenske-obrti-in-podjetnistva">ahteve slovenske obrti in podjetni&scaron;tva</a>
+
+<div class="naslov"><a href="/tuji-trgi">Tuji trgi</a></div>
+<a href="/tuji-trgi/poslovni-dogodki">Poslovni dogodki</a><br />
+<a href="/tuji-trgi/sejmi">Sejmi</a><br />
+<a href="/tuji-trgi/iskanje-poslov">Iskanje poslov - poslovne priložnosti EEN</a><br />
+<a href="/tuji-trgi/financiranje">Financiranje</a></div>
+
+<div class="column">
+<div class="naslov"><a href="/o-zbornici">O zbornici</a></div>
+<a href="/o-zbornici/organiziranost">Organiziranost</a><br />
+<a href="/o-zbornici/predsednik-ozs">Predsednik OZS</a><br />
+<a href="/o-zbornici/novinarsko-sredisce">Novinarsko sredi&scaron;če</a><br />
+<a href="/o-zbornici/katalog-informacij-javnega-znacaja">Katalog informacij javnega značaja</a><br />
+&nbsp;
+<div class="naslov"><a href="/javna-pooblastila/dovoljenja">Dovoljenja</a></div>
+<a href="/javna-pooblastila/dovoljenja/licence">Licence</a><br />
+<a href="/javna-pooblastila/dovoljenja/dovolilnice">Dovolilnice</a><br />
+<a href="/javna-pooblastila/dovoljenja/obrtna-dovoljenja">Obrtna dovoljenja</a><br />
+<a href="/javna-pooblastila/dovoljenja/vpis-v-imenik-vodij-del">Vpis v imenik vodij del</a><br />
+<a href="/javna-pooblastila/dovoljenja/eu-potrdila">EU potrdila</a></div>
+
+<div class="column">
+<div class="naslov">Ustanova za humanitarno pomoč obrtnikom</div>
+<a href="/o-zbornici/projekti/humanitarna-pomoc">Pomagajte tudi vi</a>
+
+<div class="naslov">Povezave</div>
+<a href="/obrtnik">Revija Obrtnik podjetnik</a><br />
+<a href="https://www.mozaikpodjetnih.si" target="_blank">Mozaik podjetnih</a><br />
+<a href="/ozs-pocitnice">OZS počitnice</a><br />
+<a href="https://sport.ozs.si" target="_blank">OZS &scaron;portna srečanja</a><br />
+<a class="piskotek" href="#" onclick="$('#popup').bPopup({ follow: [false, false], loadUrl: '/piskotki'});return false;">Pi&scaron;kotki</a><br />
+<a href="/avtorji">Avtorji</a>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+      </div>
+    </footer>
+    
+    <div class="wrap" id="bpopup"></div>
+    <style type="text/css"></style><script>
+//<![CDATA[
+
+//]]>
+</script>
+  </div>
+
+  </div>
+</div>
+
+<img class="pisite-nam" alt="Pišite nam" src="/assets/pisite-nam-016f6d0221bb7d0b63da5e0cbc84a2cabefeba61a81930b7c90c30281f43b44d.png" />
+<div id="pisite-nam-okno" class="pisite-nam-okno hidden">
+  <div class="ozadje">
+    <div class="image-1"><img alt="OZS predsednik" src="/assets/stik-predsednik-d90720460b8367076bb8d5deb73294ec009cddf5703c18439c55da337e3a00ea.png" /></div>
+    <div class="tekst"><b>Spoštovani člani,</b><br><br>
+      v Obrtno-podjetniški zbornici Slovenije<br>
+      želimo biti najboljši servis obrtnikov in podjetnikov.<br>
+      Da bi bili pri tem še boljši, vas prosimo,<br>
+      da nam zaupate svoje predloge, ideje in pobude,<br> 
+      na kakšen način bi vam lahko še pomagali.<br>
+      Zavedamo se, da ste srce zbornice naši člani<br>
+      in potrudili se bomo, <br>
+      da vaše želje in pričakovanja tudi izpolnimo.<br><br>
+      <b>Zahvaljujemo se vam za sodelovanje</b>     
+      
+    </div>
+    <div class="image-2"><img alt="Obrtno-podjetniška zbornica Slovenije " src="/assets/stik-logo-ae52036e74ffa27da37c201bcc8e09d76c3faebe2c4ea143535680dd7bfa0a66.png" /></div>
+    <div style="clear: both;"></div>
+    
+    <div class="form">
+      <form id="cmsform">
+        <div class="labela">Vaše ime</div>
+        <span class="ikonca-tag">
+          <input class="ena-vrstica" required="required" type="text" name="record[ime]" id="record_ime" />
+        </span>
+        
+        <div class="labela">Davčna številka</div>
+        <span class="ikonca-tag">
+          <input class="ena-vrstica" required="required" type="text" name="record[ddv]" id="record_ddv" />
+        </span>
+        
+        <div class="labela">E-naslov</div>
+        <span class="ikonca-tag">
+          <input class="ena-vrstica" type="email" required="required" name="record[eposta]" id="record_eposta" />
+        </span>
+
+        <div class="labela">Vsebina pisma</div>
+        <span class="ikonca-tag">
+          <textarea class="vec-vrstic" rows="8" required="required" name="record[body]" id="record_body">
+</textarea>
+        </span>
+        
+        <span class="ikonca-tag hidden">
+          <input type="text" name="record[skrito]" id="record_skrito" />
+        </span>
+        <input value="pisite_nam" type="hidden" name="record[run]" id="record_run" />        
+
+        <div style="text-align: center">
+          <button class="button ena"><i class="fa fa-arrow-right"></i> Pošlji</button>
+          <button class="button dva"><i class="fa fa-close"></i> Zapri</button>
+          <div class="poslano hidden"><b>Sporočilo poslano!<br>Odgovorili vam bomo v najkrajšem možnem času.</b></div>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+<div id="popup"></div> 
+</body>
+
+</html>

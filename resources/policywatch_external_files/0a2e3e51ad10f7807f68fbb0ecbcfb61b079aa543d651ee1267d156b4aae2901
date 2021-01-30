@@ -1,0 +1,983 @@
+﻿
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="sv" data-ng-app="riksdagen"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie-7 lt-ie9 lt-ie8" lang="sv" data-ng-app="riksdagen"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie-8 lt-ie9" lang="sv" data-ng-app="riksdagen"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie-9 lt-ie10" lang="sv" data-ng-app="riksdagen"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="sv" data-ng-app="riksdagen">
+<!--<![endif]-->
+
+<head><title>
+	Förordning (2020:244) om viss tillfällig föräldrapenning med anledning av sjukdomen covid-19 Svensk författningssamling 2020:2020:244 t.o.m. SFS 2020:1246 - Riksdagen
+</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="author" content="Riksdagsförvaltningen" />
+<meta name="content_language" content="sv" />
+<meta name="creation_date" content="2014-12-11 17:26:00" />
+<meta name="changed" content="2014-12-12 15:00:54" />
+<meta name="dcterms.created" content="2014-12-11 17:26:00" />
+<meta name="dcterms.modified" content="2014-12-12 15:00:54" />
+<meta name="WT.sv" content="A" />
+<meta name="robots" content="index,follow" />
+<meta name="riks_breadcrumb" content="Start / Dokument &amp;amp; lagar / Förordning (2020:244) om viss tillfällig föräldrapenning med anledning av sjukdomen covid-19" />
+<meta name="description" content="Riksdagen är den högsta beslutande församlingen i Sverige. Till riksdagens uppgifter hör att besluta om lagar och om statsbudgeten." />
+<meta name="twitter:title" content="Förordning (2020:244) om viss tillfällig föräldrapenning med anledning av sjukdomen covid-19 Svensk författningssamling 2020:2020:244 t.o.m. SFS 2020:1246 - Riksdagen" />
+<meta name="twitter:description" content="Riksdagen är den högsta beslutande församlingen i Sverige. Till riksdagens uppgifter hör att besluta om lagar och om statsbudgeten." />
+<meta name="twitter:image" content="http://www.riksdagen.se/imagevault/publishedmedia/4voegzytb3jlmffe9j1p/logotyp-guld-940x494.jpg" />
+<meta name="riks_pageid" content="76504" />
+<meta name="riks_startpublish" content="2014-12-11 17:26:00" />
+<meta name="riks_stoppublish" content="9999-12-31 23:59:59" />
+<meta name="riks_created" content="2014-12-11 17:26:00" />
+<meta name="riks_saved" content="2020-04-30 12:24:19" />
+<meta name="riks_changed" content="2014-12-12 15:00:54" />
+<meta property="og:title" content="Förordning (2020:244) om viss tillfällig föräldrapenning med anledning av sjukdomen covid-19 Svensk författningssamling 2020:2020:244 t.o.m. SFS 2020:1246 - Riksdagen" />
+<meta property="og:description" content="Riksdagen är den högsta beslutande församlingen i Sverige. Till riksdagens uppgifter hör att besluta om lagar och om statsbudgeten." />
+<meta property="og:image" content="http://www.riksdagen.se/imagevault/publishedmedia/4voegzytb3jlmffe9j1p/logotyp-guld-940x494.jpg" />
+
+
+
+
+
+<!--[if gt IE 9]><!-->
+<link rel="stylesheet" type="text/css" href="/Views/Ui/stylesheets/combined_059DB0A5036E7CAF84DFE8496EFC8DA6.css" />
+<!--<![endif]-->
+
+<!--[if IE 9]>
+    <link rel="stylesheet" href="/Views/Ui/stylesheets/app-split.css" />
+    <link rel="stylesheet" href="/Views/Ui/stylesheets/ie9.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="/Views/Ui/stylesheets/app-split.css" />
+    <link rel="stylesheet" href="/Views/Ui/stylesheets/ie8.css" />
+<![endif]-->
+
+<link rel="shortcut icon" href="/favicon.ico?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=LKuasger7" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=LKuasger7" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=LKuasger7" sizes="32x32" />
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=LKuasger7" sizes="192x192" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=LKuasger7" sizes="96x96" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=LKuasger7" sizes="16x16" />
+<link rel="manifest" href="/manifest.json?v=LKuasger7" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=LKuasger7" color="#1c5170" />
+<link rel="shortcut icon" href="/favicon.ico?v=LKuasger7" />
+<meta name="msapplication-TileColor" content="#1c5170" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=LKuasger7" />
+<meta name="theme-color" content="#1c5170" />
+
+<script src="/Views/Ui/bower_components/modernizr/modernizr.js"></script>
+<script>
+    /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+
+    !function () { function e(e, n, t) { "use strict"; var o = window.document.createElement("link"), a = n || window.document.getElementsByTagName("script")[0], i = window.document.styleSheets; return o.rel = "stylesheet", o.href = e, o.media = "only x", a.parentNode.insertBefore(o, a), o.onloadcssdefined = function (e) { for (var n, t = 0; t < i.length; t++) i[t].href && i[t].href === o.href && (n = !0); n ? e() : setTimeout(function () { o.onloadcssdefined(e) }) }, o.onloadcssdefined(function () { o.media = t || "all" }), o } function n(e, n) { e.onload = function () { e.onload = null, n && n.call(e) }, "isApplicationInstalled" in navigator && "onloadcssdefined" in e && e.onloadcssdefined(n) } !function (t) { var o = function (a, i) { "use strict"; if (a && 3 === a.length) { var r = t.navigator, d = t.document, s = t.Image, c = !(!d.createElementNS || !d.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect || !d.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") || t.opera && -1 === r.userAgent.indexOf("Chrome") || -1 !== r.userAgent.indexOf("Series40")), l = new s; l.onerror = function () { o.method = "png", o.href = a[2], e(a[2]) }, l.onload = function () { var t = 1 === l.width && 1 === l.height, r = a[t && c ? 0 : t ? 1 : 2]; t && c ? o.method = "svg" : t ? o.method = "datapng" : o.method = "png", o.href = r, n(e(r), i) }, l.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==", d.documentElement.className += " grunticon" } }; o.loadCSS = e, o.onloadCSS = n, t.grunticon = o }(this) }();
+
+    grunticon(["/Views/Ui/images/grunticons/icons.data.svg.css", "/Views/Ui/images/grunticons/icons.data.png.css", "/Views/Ui/images/grunticons/icons.fallback.css"], grunticon.svgLoadedCallback);
+</script>
+<script src="/Views/Ui/js/vendors/Readspeaker/ReadSpeaker.js?pids=embhl" type="text/javascript"></script>
+<noscript>
+    <link href="/Views/Ui/images/grunticons/icons.fallback.css" rel="stylesheet" />
+</noscript>
+
+    </head>
+<body id="ctl00_theBody">
+    <a class="skip-link noscroll" href="#main-content-read" accesskey="s">Till sidans huvudinnehåll</a>
+    <div id="totop"></div>
+    <script type="text/javascript">
+        document.body.className += " js-on"
+    </script>
+
+    <form name="aspnetForm" method="post" action="/sv/dokument-lagar/dokument/svensk-forfattningssamling/forordning-2020244-om-viss-tillfallig_sfs-2020-244" id="aspnetForm" class="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hRoXngqP87T+UG2UpKSi7Fly/ZBP27J6BEmNCUR+3ibrgQb5QMmSJvHcX0RRQ+AiU1+dtavzzVjAfFlWoBp7exRWLGlW1Fyqs+Oq512qLBquZpdo" />
+</div>
+
+        
+        
+
+<nav class="mobile-menu-overlay">
+    <div class="row mobile-menu-container">
+        <div class="small-12 small-centered columns">
+            
+                    <ul class="mobile-menu" tabindex="-1">
+                
+                    <li class="fade-in-down animated">
+                        <a href="/sv/">Start</a>
+                    </li>
+                
+                    <li class="fade-in-down animated">
+                        <a href="/sv/ledamoter-partier/">Ledam&#246;ter &amp; partier</a>
+                    </li>
+                
+                    <li class="fade-in-down animated">
+                        <a href="/sv/utskotten-eu-namnden/">Utskotten &amp; EU-n&#228;mnden</a>
+                    </li>
+                
+                    <li class="fade-in-down animated">
+                        <a href="/sv/debatter-och-beslut/">Debatter &amp; beslut</a>
+                    </li>
+                
+                    <li class="fade-in-down animated">
+                        <a href="/sv/dokument-lagar/">Dokument &amp; lagar</a>
+                    </li>
+                
+                    <li class="fade-in-down animated">
+                        <a href="/sv/sa-funkar-riksdagen/">S&#229; funkar riksdagen</a>
+                    </li>
+                
+                    <li class="fade-in-down animated">
+                        <a href="/sv/webb-tv/">Webb-tv</a>
+                    </li>
+                
+                    </ul>
+                
+        </div>
+    </div>
+    <div class="row mobile-search-container">
+        <div class="small-12 medium-10 medium-centered columns">
+            <div class="mobile-search-form fade-in-down animated" id="mobile-search-form">
+                <div>
+                    <label for="mobile-global-search-field" id="search-text-mobile" class="hide-visually">Sök på riksdagen.se</label>
+                    <!-- search field-->
+                    <div class="row">
+                        <div class="large-12 columns">
+
+                            <div class="mobile-search-field-container">
+                                <input data-ng-autocomplete="" class="mobile-search-field" type="search" name="mobileqs" id="mobile-global-search-field" />
+                            </div>
+                            <div class="columns mobile-search-button-container">
+                                <button class="button mobile-search-button postfix center-search-mobile"><i class="icon-search"></i>Sök</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /search field -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+
+
+
+        
+        <div class="header-container">
+            <header class="header-outer">
+                <div class="row main-header" role="banner">
+                    <div class="large-12 columns">
+                        <div class="main-header-inner">
+                            <div class="main-header-inner-container">
+
+                                
+                                <a class="logo" href="/sv/" accesskey="1">
+                                    <img src="/Views/Ui/images/riksdagen-logo.svg" alt="Sveriges riksdags logotyp, tillbaka till startsidan" />
+                                    <img src="/Views/Ui/images/riksdagen-logo.svg" alt="Sveriges riksdags logotyp, tillbaka till startsidan" class="print-only" />
+                                </a>
+                                
+
+                                
+                                
+        <ul class="global-menu extra-menu show-for-large-up">
+            
+                <li class="extra-menu__item">
+                    <a class="extra-menu__link extra-menu__link--icon-link readspeaker-trigger readspeaker-icon" href="https://app-eu.readspeaker.com/cgi-bin/rsent/?customerid=5644&amp;lang=sv_se&amp;readid=main-content-read&amp;url=http%3a%2f%2fwww.riksdagen.se%2fsv%2fdokument-lagar%2fdokument%2fsvensk-forfattningssamling%2fforordning-2020244-om-viss-tillfallig_sfs-2020-244">Lyssna</a>
+                </li>
+            
+    
+        <li class="extra-menu__item">
+            <a href="/sv-LL/sprak/lattlast/" class="extra-menu__link extra-menu__link--icon-link icon-easyread">Lättläst</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/sgn/sprak/teckensprak/" class="extra-menu__link extra-menu__link--icon-link icon-signlanguage">Teckenspråk</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/en/" lang='en' class="extra-menu__link extra-menu__link--icon-link ">In English</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/en/sprak/other-languages/" lang='en' class="extra-menu__link extra-menu__link--icon-link icon-language">Other languages</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/sv/sa-funkar-riksdagen/ordbok/" class="extra-menu__link extra-menu__link--icon-link icon-dictionary">Ordbok</a>
+        </li>
+    
+        </ul>
+    
+
+                                
+
+                                
+                                <div class="search-simple">
+                                    <div id="search-container" data-acurl="">
+                                        <label for="global-search-field" id="search-text" class="hide-visually">Sök på riksdagen.se</label>
+                                        <div class="search-header-container">
+                                            <div class="search-field-container">
+                                                <input type="search" class="search-field search-field-general" placeholder="Sök på riksdagen.se" name="qs" data-ng-autocomplete="" id="global-search-field" accesskey="4" />
+                                            </div>
+                                        </div>
+                                        <ul class="right mobile-top-nav">
+                                            <li class="search-buttons">
+                                                <button id="ctl00_btnSearchfocus" type="button" class="button search-field-focus search-button-mobile main-header-element--large-hidden" aria-label="Sök på riksdagen.se">
+                                                    <i class="icon-search"></i>
+                                                    <span class="search-button-text">Sök</span>
+                                                </button>
+
+                                                <button id="ctl00_btnSearch" type="submit" class="button search-btn show-for-large-up" aria-label="Sök på riksdagen.se">
+                                                    <i class="icon-search"></i>
+                                                    <span class="search-button-text">Sök</span>
+                                                </button>
+
+                                            </li>
+                                            <li class="main-header-element--large-hidden menu-buttons">
+                                                <div class="buttons-container burger-icon">
+                                                    <button type="button" class="menu-button rd-white">
+                                                        <span class="lines-button x">
+                                                            <span class="lines"></span>
+                                                        </span>
+                                                        <span class="menu-text">Meny</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li class="main-header-element--large-hidden close-button">
+                                                <div class="buttons-container burger-icon">
+                                                    <button type="button" class="menu-button rd-white">
+                                                        <span class="lines-button x close">
+                                                            <span class="lines"></span>
+                                                        </span>
+                                                        <span class="menu-text">Stäng</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+        <div class="top-menu">
+            <nav class="top-bar row">
+                <div class="top-bar-section large-12 columns">
+                    <ul role="menu" class="top-menu-items">
+    
+        <li role="menuitem">
+            
+            
+                <a href="/sv/">Start</a>
+            
+        </li>
+    
+        <li role="menuitem">
+            
+            
+                <a href="/sv/ledamoter-partier/">Ledamöter & partier</a>
+            
+        </li>
+    
+        <li role="menuitem">
+            
+            
+                <a href="/sv/utskotten-eu-namnden/">Utskotten & EU-nämnden</a>
+            
+        </li>
+    
+        <li role="menuitem">
+            
+            
+                <a href="/sv/debatter-och-beslut/">Debatter & beslut</a>
+            
+        </li>
+    
+        <li role="menuitem" class='active'>
+            
+            
+                <a href="/sv/dokument-lagar/">Dokument & lagar</a>
+            
+        </li>
+    
+        <li role="menuitem">
+            
+            
+                <a href="/sv/sa-funkar-riksdagen/">Så funkar riksdagen</a>
+            
+        </li>
+    
+        <li role="menuitem">
+            
+            
+                <a href="/sv/webb-tv/">Webb-tv</a>
+            
+        </li>
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    
+
+                
+            </header>
+        </div>
+        
+
+        
+        <div class="main-content">
+            
+                <div class="rsbtn-container">
+                    <div id="readspeaker_button1" class="row rs_skip rsbtn rs_preserve hidden">
+                        <a rel="nofollow" class="rsbtn_play" accesskey="L" href="https://app-eu.readspeaker.com/cgi-bin/rsent/?customerid=5644&amp;lang=sv_se&amp;readid=main-content-read&amp;url=http%3a%2f%2fwww.riksdagen.se%2fsv%2fdokument-lagar%2fdokument%2fsvensk-forfattningssamling%2fforordning-2020244-om-viss-tillfallig_sfs-2020-244">
+                            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Lyssna</span></span></span>
+                            <span class="rsbtn_right rsimg rsplay rspart"></span>
+                        </a>
+
+                    </div>
+                    <div class="readspeaker-info row hidden">
+                        <div class="readspeaker-info__text">
+                            <a id="ctl00_hReadspeakerCookiePage"></a>
+                        </div>
+                    </div>
+
+                </div>
+            
+
+            
+<!--System messages -->
+<div id="ctl00_ctl03_htmlContainerElement" class="module-block-hidden module-system-message">
+    <div class="row">
+        <div class="small-12 columns no-padding-small module-block">
+            
+            <section class="component-system-message block-content-container full-width-small">
+                <div class="component-system-message-content">
+                    
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--/System messages -->
+
+
+
+
+            
+
+<div class="breadcrumb-container">
+    <div class="row">
+        <nav class="small-12 columns">
+            <ul class="breadcrumb">
+                
+                        <li>
+                            
+                                <a class="breadcrumb-list-item" href="/sv/">Start</a>
+                            
+                            
+                        </li>
+                    
+                        <li>
+                            
+                                <a class="breadcrumb-list-item" href="/sv/dokument-lagar/">Dokument &amp; lagar</a>
+                            
+                            
+                        </li>
+                    
+                        <li>
+                            
+                            
+                                <span class="breadcrumb-list-item">Förordning (2020:244) om viss tillfällig föräldrapenning med anledning av sjukdomen covid-19</span>
+                            
+                        </li>
+                    
+            </ul>
+        </nav>
+    </div>
+</div>
+
+            <main id="main-content-read" tabindex="-1">
+                
+    
+
+    
+
+        <div class="module show-as-small-screen-box">
+            <div class="row">
+
+                <div class="small-12 medium-12 large-12 columns">
+
+                    <div class="row">
+                        <div class="small-12 medium-8 large-7 columns">
+                            <!-- page section: top -->
+                            
+
+<!-- page section: top -->
+
+
+    <header class="module-header mobile-border-bottom">
+        <h1 class="biggest">Förordning (2020:244) om viss tillfällig föräldrapenning med anledning av sjukdomen covid-19</h1>
+        <h2 class="big"></h2>
+        <span>t.o.m. SFS 2020:1246</span>
+    </header>
+
+
+<!-- /page section: top -->
+
+                            <!-- /page section: top -->
+
+                            
+
+                            <!-- document: documents -->
+                            
+
+<!-- docuemnt: content -->
+
+            <section class="component-document-content">
+                
+            </section>
+
+<!-- /document: content -->
+
+                            <!-- /document: documents -->
+
+                            <!-- summary: content -->
+                            
+
+
+
+    <section class="component-document-summary">
+        
+
+
+
+
+<b>SFS nr</b>:     
+2020:244<br />
+
+<b>Departement/myndighet</b>:   
+Socialdepartementet <br />  
+
+<b>Utfärdad</b>:   
+2020-04-23 <br />  
+
+
+<b>Ändrad</b>:   
+t.o.m. SFS 2020:1246<br />  
+
+
+<b>Ändringsregister</b>:   
+<a href="http://rkrattsbaser.gov.se/sfsr?bet=2020:244">SFSR (Regeringskansliet)</a> <br />
+
+<b>Källa</b>: 
+
+<a href="http://rkrattsbaser.gov.se/sfst?bet=2020:244">Fulltext (Regeringskansliet)</a> 
+
+
+<br />
+
+<hr />
+
+
+
+
+<div class="sfstoc"><h3>Innehåll:</h3>
+<ul>
+ <li><a href="#overgang">Övergångsbestämmelser</a></li>
+</ul>
+</div>
+<div><p></p><h4 name="Inledande bestämmelser"><a name="Inledande bestämmelser">Inledande bestämmelser</a></h4><p><a class="paragraf" name="P1"><b>1 §</b></a>   I denna förordning finns bestämmelser om undantag från  bestämmelserna om tillfällig föräldrapenning i 13 kap.  socialförsäkringsbalken och från bestämmelserna om  handläggning av ärenden i 110 kap. samma balk när det gäller  ärenden om tillfällig föräldrapenning.</p><p>
+
+Förordningen är meddelad med stöd av 8 kap. 7 §  regeringsformen.</p><p></p><h4 name="Tillfällig föräldrapenning när verksamheter på skolområdet är  stängda"><a name="Tillfällig föräldrapenning när verksamheter på skolområdet är  stängda">Tillfällig föräldrapenning när verksamheter på skolområdet är  stängda</a></h4><p><a class="paragraf" name="P2"><b>2 §</b></a>   En förälder har rätt till tillfällig föräldrapenning  enligt 13 kap. socialförsäkringsbalken för vård av ett barn  som avses i 16, 22 eller 27 § samma kapitel, om föräldern  behöver avstå från förvärvsarbete i samband med att den  verksamhet enligt skollagen (2010:800) som barnet normalt  deltar i är stängd eller delvis stängd i sådana situationer  som avses<br />
+   1. i 3 § första stycket lagen (2020:148) om tillfällig  stängning av verksamheter på skolområdet vid extraordinära  händelser i fredstid,<br />
+   2. i 4 § första stycket samma lag, och<br />
+   3. i 2 § första stycket förordningen (2020:115) om utbildning  på skolområdet och annan pedagogisk verksamhet vid spridning  av viss smitta.</p><p>
+
+Med att en verksamhet enligt skollagen är stängd avses i denna  förordning detsamma som i 2 § lagen om tillfällig stängning av  verksamheter på skolområdet vid extraordinära händelser i  fredstid. Med att en verksamhet enligt skollagen är delvis  stängd avses i denna förordning detsamma som i 2 § tredje  stycket förordningen om utbildning på skolområdet och annan  pedagogisk verksamhet vid spridning av viss smitta.</p><p><a class="paragraf" name="P3"><b>3 §</b></a>   Tillfällig föräldrapenning som lämnas med stöd av 2 §  lämnas under ett obegränsat antal dagar.</p><p><a class="paragraf" name="P4"><b>4 §</b></a>   En förälder har, på det sätt som avses i 13 kap. 18 §  första meningen socialförsäkringsbalken, inte rätt till  tillfällig föräldrapenning som lämnas med stöd av 2 § för tid  när föräldrapenning annars skulle ha lämnats. Detta gäller  oavsett barnets ålder.</p><p><a class="paragraf" name="P5"><b>5 §</b></a>   Försäkringskassan får fatta beslut enligt 13 kap. 4 §  socialförsäkringsbalken för tillfällig föräldrapenning som  lämnas med stöd av 2 § i fråga om barn som avses i 13 kap. 
+22 eller 27 § socialförsäkringsbalken.</p><p><a class="paragraf" name="P6"><b>6 §</b></a>   Överlåtelse enligt 13 kap. 8 § socialförsäkringsbalken av  rätten till tillfällig föräldrapenning får, utöver i de fall  som anges i den paragrafen, göras i samband med att den  verksamhet enligt skollagen (2010:800) som barnet normalt  deltar i är stängd eller delvis stängd.</p><p>
+
+Försäkringskassan får fatta beslut enligt 13 kap. 9 §  socialförsäkringsbalken även när det gäller rätt till  tillfällig föräldrapenning i det fall som anges i första  stycket. Som villkor för detta gäller det som anges i 13 kap. 
+9 § andra stycket socialförsäkringsbalken.</p><p><a class="paragraf" name="P7"><b>7 §</b></a>   I stället för det som följer av hänvisningen i 13 kap. 
+33 § tredje stycket socialförsäkringsbalken till 28 kap. 7 § 1  samma balk ska tillfällig föräldrapenning som lämnas med stöd  av 2 § beräknas på ett underlag som motsvarar 80 procent av  den försäkrades sjukpenninggrundande inkomst sedan denna har  multiplicerats med talet 0,87.</p><p></p><h4 name="Tillfällig föräldrapenning för ett barn som har varit  allvarligt sjukt"><a name="Tillfällig föräldrapenning för ett barn som har varit  allvarligt sjukt">Tillfällig föräldrapenning för ett barn som har varit  allvarligt sjukt</a></h4><p><a class="paragraf" name="P7a"><b>7 a §</b></a>   En förälder har rätt till tillfällig föräldrapenning  enligt 13 kap. socialförsäkringsbalken, om föräldern behöver  avstå från förvärvsarbete för att vårda ett barn som<br />
+   1. avses i 13 kap. 16, 22 eller 27 § samma balk och inte har  fyllt 18 år,<br />
+   2. varaktigt bor hos föräldern,<br />
+   3. någon gång från och med den 1 januari 2020 har varit  allvarligt sjukt i den mening som avses i 13 kap. 30 § samma  balk men inte längre är det, och<br />
+   4. det på grund av den allvarliga sjukdomen eller en  behandling som barnet någon gång från och med den 1 januari 
+2020 har genomgått för den allvarliga sjukdomen finns skäl att  skydda mot smitta av det virus som orsakar sjukdomen covid-19.<br />
+Förordning (2020:583).</p><p><a class="paragraf" name="P7b"><b>7 b §</b></a>   En förälder har rätt till tillfällig föräldrapenning  enligt 13 kap. socialförsäkringsbalken, om föräldern avstår  från förvärvsarbete för att undvika att han eller hon smittar  ett barn med det virus som orsakar sjukdomen covid-19. Det  gäller dock endast om<br />
+   1. barnet inte har fyllt 18 år,<br />
+   2. villkoren i 7 a § 2-4 är uppfyllda,<br />
+   3. föräldern inte har möjlighet att utföra sitt förvärvsarbete  i hemmet, och<br />
+   4. arbetsgivaren inte har erbjudit föräldern andra  arbetsuppgifter inom ramen för anställningen eller det i  övrigt inte har gått att anpassa arbetssituationen på  arbetsplatsen, så att ur smittskyddssynpunkt lämpligt avstånd  kan hållas till andra för att undvika spridning av sjukdomen  covid-19. Förordning (2020:583).</p><p><a class="paragraf" name="P7c"><b>7 c §</b></a>   Tillfällig föräldrapenning för vård av barnet som lämnas  enligt bestämmelserna i 13 kap. socialförsäkringsbalken eller  med stöd av 2 eller 7 a § får lämnas till en förälder för  samma tid som tillfällig föräldrapenning för barnet lämnas med  stöd av 7 b § till en annan förälder eller flera andra  föräldrar. </p><p>
+
+Tillfällig föräldrapenning som lämnas med stöd av 7 b § får  lämnas till en förälder för samma tid som tillfällig  föräldrapenning för barnet lämnas enligt bestämmelserna i 
+13 kap. socialförsäkringsbalken eller med stöd av 2, 7 a eller 
+7 b § till en annan förälder eller flera andra föräldrar.<br />
+Förordning (2020:583).</p><p><a class="paragraf" name="P7d"><b>7 d §</b></a>   Tillfällig föräldrapenning som lämnas med stöd av 7 a  eller 7 b § får inte lämnas till en förälder som på annan  grund kan få tillfällig föräldrapenning för vård av barnet.<br />
+Förordning (2020:583).</p><p><a class="paragraf" name="P7e"><b>7 e §</b></a>   Tillfällig föräldrapenning som lämnas med stöd av 7 a  eller 7 b § lämnas under sammanlagt högst 184 dagar per  förälder. Förordning (2020:911).</p><p><a class="paragraf" name="P7f"><b>7 f §</b></a>   Bestämmelsen i 110 kap. 18 § andra meningen  socialförsäkringsbalken ska tillämpas när det gäller barnets  tidigare sjukdomstillstånd som avses i 7 a § 3.</p><p>
+
+Ett läkarutlåtande ska ges in för att visa att det enligt 
+7 a § 4 finns skäl att skydda barnet mot smitta av det virus  som orsakar sjukdomen covid-19. Förordning (2020:583).</p><p></p><h4 name="Undantag från krav på läkarutlåtande"><a name="Undantag från krav på läkarutlåtande">Undantag från krav på läkarutlåtande</a></h4><p><a class="paragraf" name="P8"><b>8 §</b></a>   Med undantag från det som anges i 110 kap. 18 § första  meningen socialförsäkringsbalken får det särskilda vård- eller  tillsynsbehov som krävs för tillfällig föräldrapenning enligt 
+13 kap. 22 § samma balk styrkas på annat sätt än genom  läkarutlåtande.</p><p></p><h4 name="Bemyndiganden"><a name="Bemyndiganden">Bemyndiganden</a></h4><p><a class="paragraf" name="P9"><b>9 §</b></a>   Försäkringskassan får meddela ytterligare föreskrifter om  tillfällig föräldrapenning som lämnas med stöd av denna  förordning. Försäkringskassan får även meddela föreskrifter om  undantag från bestämmelserna om handläggning av ärenden i 
+110 kap. socialförsäkringsbalken när det gäller ärenden om  sådan tillfällig föräldrapenning som lämnas med stöd av denna  förordning.</p><p>
+
+Föreskrifter enligt första stycket får endast meddelas vid  extraordinära händelser i fredstid.</p><p>
+
+Försäkringskassan får meddela föreskrifter om verkställigheten  av denna förordning.</p><p><br /></p><h3 name="overgang"><a name="overgang">Övergångsbestämmelser</a></h3>
+2020:244<br />
+   1. Denna förordning träder i kraft den 25 april 2020.<br />
+   2. Bestämmelserna om tillfällig föräldrapenning i 2-4, 6 och 
+7 §§ och om undantag från krav på läkarutlåtande i 8 §  tillämpas inte på tillfällig föräldrapenning som avser tid  före ikraftträdandet.<br />
+   3. Förordningen upphör att gälla vid utgången av september 
+2020.<br />
+   4. Den upphävda förordningen gäller dock fortfarande för  tillfällig föräldrapenning som avser tid före utgången av  april 2021. Förordning (2020:1246).<p>
+
+2020:583<br />
+   1. Denna förordning träder i kraft den 1 juli 2020.<br />
+   2. Bestämmelserna om tillfällig föräldrapenning i 7 a-7 f §§  tillämpas inte på tillfällig föräldrapenning som avser tid  före ikraftträdandet.</p><p>
+
+2020:911<br />
+   1. Denna förordning träder i kraft den 16 november 2020.<br />
+   2. Bestämmelsen i 7 e § i den nya lydelsen tillämpas dock för  tid från och med den 1 juli 2020.
+</p></div>
+    </section>
+
+
+                            <!-- /summary: content -->
+                        </div>
+                        <div class="small-12 medium-4 large-5 columns">
+                            <!-- document: activity -->
+                            
+
+<!-- document: activity -->
+
+<!-- /document: activity -->
+
+                            <!-- /document: activity -->
+                        </div>
+
+                        <div class="small-12 medium-4 large-5 columns">
+                           <!-- page section: facts -->
+                            
+
+                            <!-- /page section: facts -->
+                        </div>
+
+                        <div class="small-12 medium-4 large-5 columns">
+                           <!-- page section: register info -->
+                            
+
+                            <!-- /page section: register info -->
+                        </div>
+                         <div class="small-12 medium-4 large-5 columns">
+                              <!-- page section: document information -->
+                             
+
+<!-- page section: document information -->
+
+<!-- /page section: document information  -->
+
+                             <!-- /page section: document information -->
+                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="small-12 columns">
+                            
+    <section class="component-smartlist component-smartlist-document">
+        <div class="smartlist" role="tablist">
+            <!-- Förslagspunkter -->
+            
+
+            <!-- /Förslagspunkter -->
+
+            <!-- Bilagor -->
+            
+
+            <!-- /Bilagor -->
+
+            <!-- Följdmotioner -->
+            
+
+            <!-- /Följdmotioner -->
+
+            <!-- Svar på skriftlig fråga -->
+            
+
+            <!-- /Svar på skriftlig fråga -->
+            
+
+            <!-- Relaterade dokument -->
+            
+
+            <!-- /Relaterade dokument  -->
+
+            <!-- Debatt -->
+            
+
+            <!-- /Debatt -->
+        </div>
+    </section>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <!-- avsändare -->
+                            
+
+                            <!-- /avsändare -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /main-content -->
+    
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+            
+    <div class="component-social clearfix">
+
+        
+
+        <ul class="social-item-list no-list-style">
+            
+                    <li class="item">
+                        <a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.riksdagen.se%2fsv%2fdokument-lagar%2fdokument%2fsvensk-forfattningssamling%2fforordning-2020244-om-viss-tillfallig_sfs-2020-244&amp;t=F%c3%b6rordning+(2020%3a244)+om+viss+tillf%c3%a4llig+f%c3%b6r%c3%a4ldrapenning+med+anledning+av+sjukdomen+covid-19+Svensk+f%c3%b6rfattningssamling+2020%3a2020%3a244+t.o.m.+SFS+2020%3a1246+-+Riksdagen" target="_blank">
+                            <i class="icon icon-facebook"></i>
+                            <span class="hide-visually">Dela på facebook</span>
+                        </a>
+                    </li>
+                
+                    <li class="item">
+                        <a href="https://twitter.com/share?url=http%3a%2f%2fwww.riksdagen.se%2fsv%2fdokument-lagar%2fdokument%2fsvensk-forfattningssamling%2fforordning-2020244-om-viss-tillfallig_sfs-2020-244&amp;text=F%c3%b6rordning+(2020%3a244)+om+viss+tillf%c3%a4llig+f%c3%b6r%c3%a4ldrapenning+med+anledning+av+sjukdomen+covid-19+Svensk+f%c3%b6rfattningssamling+2020%3a2020%3a244+t.o.m.+SFS+2020%3a1246+-+Riksdagen" target="_blank">
+                            <i class="icon icon-twitter"></i>
+                            <span class="hide-visually">Dela på twitter</span>
+                        </a>
+                    </li>
+                
+                    <li class="item">
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.riksdagen.se%2fsv%2fdokument-lagar%2fdokument%2fsvensk-forfattningssamling%2fforordning-2020244-om-viss-tillfallig_sfs-2020-244&amp;title=F%c3%b6rordning+(2020%3a244)+om+viss+tillf%c3%a4llig+f%c3%b6r%c3%a4ldrapenning+med+anledning+av+sjukdomen+covid-19+Svensk+f%c3%b6rfattningssamling+2020%3a2020%3a244+t.o.m.+SFS+2020%3a1246+-+Riksdagen" target="_blank">
+                            <i class="icon icon-linkedin"></i>
+                            <span class="hide-visually">Dela på linkedin</span>
+                        </a>
+                    </li>
+                
+                    <li class="item">
+                        <a href="mailto:?body=http%3a%2f%2fwww.riksdagen.se%2fsv%2fdokument-lagar%2fdokument%2fsvensk-forfattningssamling%2fforordning-2020244-om-viss-tillfallig_sfs-2020-244">
+                            <i class="icon icon-mail"></i>
+                            <span class="hide-visually">Dela via e-post</span>
+                        </a>
+                    </li>
+                
+        </ul>
+    </div>
+
+
+        </div>
+    </div>
+
+            </main>
+        </div>
+        
+
+
+        
+        
+
+            <footer class="footer">
+                <section class="footer__external-info">
+                    <div class="footer__section">
+                        <div class="row">
+                            <div class="footer__column-container">
+                                
+                                    <div class="footer__column">
+                                        <div class="footer__other-sites">
+                                            <h2 class="footer__other-sites-headline" id="c6795645533adda08cdcb55a06c17897">Våra andra webbplatser</h2>
+                                            <div class="footer__other-sites-links">
+                                                
+                                                        <a class="footer__other-sites-link link-external" href="http://eu.riksdagen.se/">EU-information</a>
+                                                    
+                                                        <a class="footer__other-sites-link link-external" href="http://data.riksdagen.se/">Öppna data</a>
+                                                    
+                                                        <a class="footer__other-sites-link link-external" href="http://firademokratin.riksdagen.se/">Fira demokratin!</a>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                <div class="footer__column">
+                                    <div class="footer__social-links">
+                                        
+                                            <div class="footer__social-links-block">
+                                                <h2 class="footer__social-links-headline" id="df86aae596f06b1dca66172c766299f1">Följ Sveriges riksdag</h2>
+                                                <div class="footer__social-links-icons">
+                                                    
+                                                    <a href="https://twitter.com/Sverigesriksdag" class="footer__social-link">
+                                                        <img class="footer__social-logo" src="/Views/Ui/images/logo-twitter.svg" alt="Sveriges riksdag på Twitter" />
+                                                    </a>
+                                                    
+                                                    <a href="https://www.youtube.com/channel/UCmyMhyy_FHtwui-3dsu-K8g/" class="footer__social-link">
+                                                        <img class="footer__social-logo" src="/Views/Ui/images/logo-youtube.svg" alt="Sveriges riksdag på YouTube" />
+                                                    </a>
+                                                    
+                                                    <a href="https://www.instagram.com/sveriges_riksdag/" class="footer__social-link">
+                                                        <img class="footer__social-logo" src="/Views/Ui/images/logo-instagram.svg" alt="Sveriges riksdag på Instagram" />
+                                                    </a>
+                                                    
+                                                    <a href="https://se.linkedin.com/company/riksdagen-se" class="footer__social-link">
+                                                        <img class="footer__social-logo" src="/Views/Ui/images/logo-linkedin.svg" alt="Sveriges riksdag på LinkedInn" />
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="footer__social-links-block">
+                                                <h2 class="footer__social-links-headline" id="d9ae72be53da6fd3437ab030c9ccaa04">Följ talman Andreas Norlén</h2>
+                                                <div class="footer__social-links-icons">
+                                                    
+                                                    <a href="https://twitter.com/andreasostgote" class="footer__social-link">
+                                                        <img class="footer__social-logo" src="/Views/Ui/images/logo-twitter.svg" alt="Talmannen på Twitter" />
+                                                    </a>
+                                                    
+                                                    <a href="https://www.instagram.com/talman.andreas.norlen/" class="footer__social-link">
+                                                        <img class="footer__social-logo" src="/Views/Ui/images/logo-instagram.svg" alt="Talmannen på Instagram" />
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                    <div class="footer__column">
+                                        <div class="footer__subscribe">
+                                            <h2 class="footer__subscribe-headline" id="92b5e95e3d1c9a5c9e60ad1cdcf86917">Prenumerera</h2>
+                                            <div class="footer__subscribe-text">
+                                                För dig som vill bevaka arbetet i kammaren och utskotten finns det flera olika sätt att välja mellan.
+                                            </div>
+                                            <div class="footer__subscribe-links">
+                                                
+                                                        <a class="footer__subscribe-link " href="/sv/folj-och-prenumerera/">Följ & prenumerera</a>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer__internal-info">
+                    <div class="footer__section">
+                        <div class="row">
+                            <div class="footer__column-container">
+                                
+                                    <div class="footer__column">
+                                        <div class="footer__contact-card">
+                                            <h2 class="footer__contact-card-headline" id="6874888ee9dc86c5d72778c4d62d879d">Växeln</h2>
+                                            <div class="footer__contact-link">
+                                                <span class="footer__contact-link-icon footer__contact-link-icon--phone icon__phone-white"></span>
+                                                <a class="footer__contact-link-link" href="tel:08-7864000">08-786 40 00</a>
+                                            </div>
+                                        </div>
+                                        <div class="footer__contact-card">
+                                            <h2 class="footer__contact-card-headline" id="1cb3bbb860dfaedab436f082f565f675">Frågor om riksdagen och EU?</h2>
+                                            <div class="footer__contact-link">
+                                                <span class="footer__contact-link-icon footer__contact-link-icon--phone icon__phone-white"></span>
+                                                <a class="footer__contact-link-link" href="tel:020-349000">020-349 000</a>
+                                            </div>
+                                            <div class="footer__contact-link">
+                                                <span class="footer__contact-link-icon footer__contact-link-icon--mail icon__mail-white"></span>
+                                                <a class="footer__contact-link-link" href="mailto:riksdagsinformation@riksdagen.se">riksdagsinformation@riksdagen.se</a>
+                                            </div>
+                                        </div>
+                                        <div class="footer__contact-card">
+                                            <h2 class="footer__contact-card-headline" id="d6fbd99df67dee8f28e9dba6efaf3d56">Registrator</h2>
+                                            <div class="footer__contact-link footer__contact-link--registrator">
+                                                <span class="footer__contact-link-icon footer__contact-link-icon--mail icon__mail-white"></span>
+                                                <a class="footer__contact-link-link footer__contact-link-link--registrator" href="mailto:registrator.riksdagsforvaltningen@riksdagen.se">registrator.riksdagsforvaltningen@riksdagen.se</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="footer__column">
+                                        <div class="footer__internal-links">
+                                            
+                                                    <a class="footer__internal-link " href="/sv/Kontakt/">Kontakt</a>
+                                                
+                                                    <a class="footer__internal-link " href="/sv/press/">Press</a>
+                                                
+                                                    <a class="footer__internal-link " href="/sv/besok-riksdagen/">Besök riksdagen</a>
+                                                
+                                        </div>
+                                    </div>
+                                
+                                    <div class="footer__column">
+                                        <div class="footer__internal-links">
+                                            
+                                                    <a class="footer__internal-link " href="/sv/sa-funkar-riksdagen/riksdagsforvaltningen/arbeta-hos-oss/">Arbeta hos oss</a>
+                                                
+                                                    <a class="footer__internal-link " href="/sv/larare/">För lärare</a>
+                                                
+                                                    <a class="footer__internal-link " href="/sv/riksdagsbiblioteket/">Riksdagsbiblioteket</a>
+                                                
+                                                    <a class="footer__internal-link " href="/sv/bestall-och-ladda-ned/">Beställ och ladda ned</a>
+                                                
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer__banner">
+                    <div class="row">
+                        <div class="footer__logo-area">
+                            <div class="footer__logo-container">
+                                <a class="footer__logo" href="/">
+                                    <img src="/Views/Ui/images/riksdagen-logo.svg" class="footer__logo-img" alt="Sveriges riksdags logotyp, tillbaka till startsidan" />
+                                </a>
+                            </div>
+                            <div class="footer__logo-text">
+                                All offentlig makt i Sverige utgår från folket och riksdagen är folkets främsta företrädare.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer__functionality">
+                    <div class="row">
+                        <nav>
+                            <div class="footer__extra-menu-container">
+                                <ul class="footer__extra-menu footer__extra-menu--left">
+                                    
+         <li class="extra-menu__item">
+            <a href="/sv/global/om-webbplatsen/" class="extra-menu__link">Om webbplatsen</a>
+        </li>
+    
+         <li class="extra-menu__item">
+            <a href="/sv/global/om-webbplatsen/kakor-cookies/" class="extra-menu__link">Kakor</a>
+        </li>
+    
+         <li class="extra-menu__item">
+            <a href="/sv/global/om-webbplatsen/tillganglighet/" class="extra-menu__link">Tillgänglighet</a>
+        </li>
+    
+
+                                    
+                                </ul>
+                                <ul class="footer__extra-menu footer__extra-menu--right">
+                                    
+        
+            
+                <li class="extra-menu__item">
+                    <a class="extra-menu__link extra-menu__link--icon-link readspeaker-trigger readspeaker-icon" href="https://app-eu.readspeaker.com/cgi-bin/rsent/?customerid=5644&amp;lang=sv_se&amp;readid=main-content-read&amp;url=http%3a%2f%2fwww.riksdagen.se%2fsv%2fdokument-lagar%2fdokument%2fsvensk-forfattningssamling%2fforordning-2020244-om-viss-tillfallig_sfs-2020-244">Lyssna</a>
+                </li>
+            
+    
+        <li class="extra-menu__item">
+            <a href="/sv-LL/sprak/lattlast/" class="extra-menu__link extra-menu__link--icon-link icon-easyread">Lättläst</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/sgn/sprak/teckensprak/" class="extra-menu__link extra-menu__link--icon-link icon-signlanguage">Teckenspråk</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/en/" lang='en' class="extra-menu__link extra-menu__link--icon-link ">In English</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/en/sprak/other-languages/" lang='en' class="extra-menu__link extra-menu__link--icon-link icon-language">Other languages</a>
+        </li>
+    
+        <li class="extra-menu__item">
+            <a href="/sv/sa-funkar-riksdagen/ordbok/" class="extra-menu__link extra-menu__link--icon-link icon-dictionary">Ordbok</a>
+        </li>
+    
+        
+    
+
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+                <div class="footer__to-top">
+                    <div class="footer-nav-to-top">
+                        <div class="to-top">
+                            <a href="#totop">
+                                <span>Till toppen</span>
+                                <i class="icon icon-up-open"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        
+        
+
+
+        
+
+        <div class="reveal-modal-bg" style="display: none;"></div>
+        <div id="modal" class="reveal-modal module-overlay large" data-reveal="" aria-hidden="true" role="dialog" tabindex="-1">
+            <button class="close-reveal-modal overlay-close">
+                <span class="close-text medium-smaller">Stäng</span><i class="icon-cancel icon medium-smaller"></i>
+            </button>
+        </div>
+        
+
+        
+        
+<script type="text/javascript">
+    var rd = rd || {};
+    rd.settings = {};
+
+    // Global settings for video
+    rd.video = {};
+    rd.video.bus = {};
+    rd.settings.video = {
+        voddatapath: '/api/videostream/get/',
+        socketurl: '//meta.riksdagen.se', 
+        embedurl: 'http://www.riksdagen.se/views/pages/embedpage.aspx',
+        CDNpublishpoint: '&publishPoint=5'
+    };
+
+    //Used by system messages
+    rd.settings.socketurl = '//meta.riksdagen.se';
+
+</script>
+
+<script type="text/javascript" src="/Views/Ui/js/combined_510005DB4DA43CFFB3591FBE20F8FDFA.js"></script>
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="926A2AD0" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div></form>
+</body>
+</html>

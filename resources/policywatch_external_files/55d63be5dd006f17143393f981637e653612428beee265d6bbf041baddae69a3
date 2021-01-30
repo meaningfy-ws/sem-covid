@@ -1,0 +1,792 @@
+<!doctype html>
+<html  >
+<head id="head"><title>
+	Za krizna nadomestila za brezposelnost manj kot četrtina predvidenega denarja - Primorske novice
+</title><meta charset="UTF-8" /> 
+<!-- google optimize -->
+<!-- <style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-PMHG2MH':true});</script> -->
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="manifest" href="https://www.primorske.si/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="msapplication-starturl" content="/">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=XBz2Kpp2rb">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?v=XBz2Kpp2rb">
+<link rel="icon" type="image/png" sizes="194x194" href="/icons/favicon-194x194.png?v=XBz2Kpp2rb">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png?v=XBz2Kpp2rb">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png?v=XBz2Kpp2rb">
+<link rel="manifest" href="/icons/site.webmanifest?v=XBz2Kpp2rb">
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg?v=XBz2Kpp2rb" color="#00adef">
+<link rel="shortcut icon" href="/icons/favicon.ico?v=XBz2Kpp2rb">
+<meta name="msapplication-TileColor" content="#00adef">
+<meta name="msapplication-TileImage" content="/icons/mstile-144x144.png?v=XBz2Kpp2rb">
+<meta name="msapplication-config" content="/icons/browserconfig.xml?v=XBz2Kpp2rb">
+<meta name="theme-color" content="#00adef">
+
+<link rel="dns-prefetch" href="//analytics.primorske.si">
+<link rel="dns-prefetch" href="//ogl.primorske.si">
+<link rel="preload" href="https://analytics.primorske.si/piwik.js" onload="embedTracker()" type="script" crossorigin>
+
+<link rel="manifest" href="/icons/manifest.json">
+
+<link rel="stylesheet" href="https://static.primorske.si/assets/css/bootstrap.min.css">
+
+
+<meta property="fb:app_id" content="1533375290215753"/>
+<meta property="fb:pages" content="210103649005590" />
+<script src="https://static.primorske.si/assets/js/ads.js" type="text/javascript"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-337263-2"></script>
+<script>
+  const current_user = 'public';
+  var pn_a = 0;
+  var nc_c = 'pn.article';
+  var x = typeof(b)=='undefined' ? 'True' : b;
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-337263-2', { 'optimize_id': 'GTM-PMHG2MH' });
+
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  if (pn_a > 0) {
+    _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'True']);
+    gtag('config', 'UA-337263-2', {
+      'custom_map': {'dimension1': 'isPaying'}
+    });
+    gtag('event', 'paying user hit', {'isPaying': 'True'});
+  }
+  else {
+    _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'False']);
+    gtag('config', 'UA-337263-2', {
+      'custom_map': {'dimension1': 'isPaying'}
+    });
+    gtag('event', 'paying user hit', {'isPaying': 'False'});
+  }
+  if (nc_c == 'pn.article') {
+    var cd_a = 'STA';
+    var cd_s = 'slovenija';
+    _paq.push(['setCustomDimension', customDimensionId = 4, customDimensionValue = cd_a]);
+    _paq.push(['setCustomDimension', customDimensionId = 5, customDimensionValue = cd_s]);
+    gtag('config', 'UA-337263-2', {
+      'custom_map': {
+        'dimension2': 'author',
+        'dimension3': 'section'
+      }
+    });
+    gtag('event', 'hit', {
+      'author': cd_a,
+      'section': cd_s
+    });
+  }
+  _paq.push(['setCustomDimension', customDimensionId = 6, customDimensionValue = x]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.primorske.si/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.primorske.si/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<!-- iOS App Smart Banner -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-itunes-app" content="app-id=1070735711">
+<link rel="apple-touch-startup-image" href="https://static.primorske.si/assets/img/apple-touch-icon-152x152.png">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- End iOS App Smart Banner -->
+<meta name="msvalidate.01" content="19EB0FE56EC58604A5FCB544339A46EF" />
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '561076344029987'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=561076344029987&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Google AdSense Page level ads -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2742605164819873",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- End Google AdSense Page level ads -->
+
+<!-- MailChimp -->
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/1e3c1abbfd8f63588641defd1/eb2c39ff55218b39e5dac6da8.js");</script>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"1e3c1abbfd8f63588641defd1","lid":"1da5133fee","uniqueMethods":true}) })</script>
+<!-- End MailChimp -->
+
+<!-- GetIn NativeAds -->
+<script>
+      (function() {
+          var s   = document.createElement('script');
+          s.type  = 'text/javascript';
+          s.async = true;
+          s.src   = '//d.get-native.eu/cds/delivery/init';
+          var sc  = document.getElementsByTagName('script')[0];
+          sc.parentNode.insertBefore(s, sc);
+      })();
+</script>
+<!-- End GetIn NativeAds --> 
+<meta property="og:description" content="Vlada je v protikoronski zakonodaji predvidela tudi zaščito oseb, ki so brez dela ostale zaradi epidemije covida-19, pa na podlagi obstoječe pravne podlage ne bi bile upravičene do nadomestila za brezposelnost. Zavod RS za zaposlovanje je tem brezposelnim izplačal le nekaj več kot 907.000 evrov, torej manj kot četrtino predvidenega denarja." /><meta property="og:site_name" content="Primorske Novice" /><meta property="article:author" content="https://www.facebook.com/primorskenovice" /><meta property="article:publisher" content="https://www.facebook.com/primorskenovice" /><meta property="og:title" content="Za krizna nadomestila za brezposelnost manj kot četrtina predvidenega denarja" /><meta property="og:image" content="https://static.primorske.si/foto/highres/gnweb/752122_denar1.jpg" /><meta property="og:image:height" content="639" /><meta property="og:image:width" content="960" /><meta property="og:url" content="https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce" /><meta property="og:type" content="article" /><meta property="og:updated_time" content="2020-08-09T09:01:21.0000000+02:00" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@primorskenovice" /><meta name="twitter:creator" content="@primorskenovice" /><meta name="twitter:title" content="Za krizna nadomestila za brezposelnost manj kot četrtina predvidenega denarja" /><meta name="twitter:description" content="Vlada je v protikoronski zakonodaji predvidela tudi zaščito oseb, ki so brez dela ostale zaradi epidemije covida-19, pa na podlagi obstoječe pravne podlage ne bi bile upravičene do nadomestila za brezposelnost. Zavod RS za zaposlovanje je tem brezposelnim izplačal le nekaj več kot 907.000 evrov, torej manj kot četrtino predvidenega denarja." /><meta name="twitter:image:src" content="http://static.primorske.si/foto/highres/gnweb/752122_denar1.jpg" /><script type="text/javascript" class="teads" async="true" src="//a.teads.tv/page/112492/tag"></script></head>
+<body class="LTR SLSI ContentBody" >
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v2.10&appId=1533375290215753";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <form method="post" action="/slovenija/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce?fbclid=IwAR1RQtZBUDUObdCPR0uBauf2SnbeAohm4YKvHEB5jqRZvBygW2XTX2MjLK" id="form">
+<input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="Swy87TCjiZ284X6eN64rSj6stxRV2hl4KZB7w1FjcrPkwRUg9nA6QUmXEEmNriOSoaCEnyY/dWR0fRzSmbflHJaurqcFdsD3W1cbH7O7mTY=" />
+
+
+<script type='text/javascript' >
+/* <![CDATA[ */
+(function() {
+  var d=document,
+  h=d.getElementsByTagName('head')[0],
+  s=d.createElement('script');
+  s.type='text/javascript';
+  s.async=true;
+  s.src=document.location.protocol + '//test-script.dotmetrics.net/door.js?id=2002';
+  h.appendChild(s);
+}());
+/* ]]> */
+</script><input type="hidden" name="lng" id="lng" value="sl-SI" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LRTV8xzTEbfHGlZ_u4DKc2yYha1_C3-YyqxGnLYNd4VWu7T7URYGvReJsQ1fjgfXPRzNYSKtAWXQSlFV0LJr8hdWsqzwYafEvPboNh5X1rMi0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "isDebuggingEnabled": false,
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+    
+    <div id="ctxM">
+
+</div>
+    
+
+
+<div id="top-bar">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="top-header">
+                <div id="social-menu">
+                    <a href="https://www.facebook.com/primorskenovice" class="facebook"><span>Facebook</span></a>
+                    <a href="https://twitter.com/primorskenovice" class="twitter"><span>Twitter</span></a>
+                    <a href="https://www.instagram.com/primorskenovice/" class="instagram"><span>Instagram</span></a>
+                </div>
+                <a id="primorske-novice-logo" href="/">Primorske novice</a>
+                <div id="mobile-search-form">
+                    <div id="p_lt_zoneTop_Pn_menu_pnlMobileSearch">
+	
+                        <label class="sr-only" for="mobile_search_field">Iskalec</label>
+                        <input name="p$lt$zoneTop$Pn_menu$mobile_search_field" type="text" id="mobile_search_field" class="form-control" placeholder="Najdi..." />
+                    
+</div>
+                </div>
+                <div id="user-menu">
+                    <a href='https://digital.primorske.si/#paketi' class='btn-order'>Naroči se</a>
+                    <a href="#" id="profile-menu-container" class="user">
+                        <span>Uporabnik</span>
+                        <ul class="profile-menu">
+                            <li><a href='/prijava?returnurl=~/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce'>Prijava</a></li><li><a href='/registracija'>Registracija</a></li>
+                            
+                        </ul>
+                    </a>
+                    <a href="#" class="search" id="toggle-search"><span>Najdi</span></a>
+                    <button id="mobile-menu" type="button" role="button" aria-label="Toggle Navigation"><span class="lines"></span></button>
+                </div>
+            </div>
+            <div id="top-menu-container">
+                <ul id='top-menu'>
+<li class='dropdown'><a class='dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' role='button' href='/primorska'>Primorska</a><div class='dropdown-menu'>
+<a class='dropdown-item' href='/primorska/istra'>Istra</a><a class='dropdown-item' href='/primorska/goriska'>Goriška</a><a class='dropdown-item' href='/primorska/srednja-primorska'>Srednja Primorska</a><a class='dropdown-item' href='/primorska/pri-sosedih'>Pri sosedih</a></div>
+</li>
+<li class='black'><a href='/kronika'>Kronika</a></li><li class='dropdown'><a class='dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' role='button' href='/mnenja'>Mnenja</a><div class='dropdown-menu'>
+<a class='dropdown-item' href='/mnenja/komentarji'>Komentarji</a><a class='dropdown-item' href='/mnenja/kolumne'>Kolumne</a><a class='dropdown-item' href='/mnenja/pisma-bralcev'>Pisma bralcev</a></div>
+</li>
+<li class='orange'><a href='/slovenija'>Slovenija</a></li><li class='blue-dark'><a href='/svet'>Svet</a></li><li class='pink-2'><a href='/kultura'>Kultura</a></li><li class='teal'><a href='/sport'>Šport</a></li><li class='dropdown'><a class='dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' role='button' href='/plus'>Plus</a><div class='dropdown-menu'>
+<a class='dropdown-item' href='/plus/7-val'>7. Val</a><a class='dropdown-item' href='/plus/na-valovih-znanja'>Na valovih znanja</a><a class='dropdown-item' href='/plus/sobota'>Sobota</a><a class='dropdown-item' href='/plus/zdravje'>Zdravje</a></div>
+</li>
+<li class='pink'><a href='/zanimivosti'>Zanimivosti</a></li></ul>
+
+                <div id="top-search-form">
+                    <div class="form-inline row">
+                        <label class="sr-only" for="search-field">Iskalec</label>
+                        <div>
+	
+                            <input name="p$lt$zoneTop$Pn_menu$search_field" type="text" id="search_field" class="form-control" placeholder="Najdi..." />
+                        <a id="p_lt_zoneTop_Pn_menu_lnkSearch" class="btn btn-primary" type="button" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;p$lt$zoneTop$Pn_menu$lnkSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:none;">Išči</a>
+                        
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mobile-menu-drawer">
+    <ul>
+<li><span class='dropdown-toggle'>Primorska</span><ul><li><a href='/primorska/istra'>Istra</a></li><li><a href='/primorska/goriska'>Goriška</a></li><li><a href='/primorska/srednja-primorska'>Srednja Primorska</a></li><li><a href='/primorska/pri-sosedih'>Pri sosedih</a></li></ul></li>
+<li class='black'><a href='/kronika'>Kronika</a></li><li><span class='dropdown-toggle'>Mnenja</span><ul><li><a href='/mnenja/komentarji'>Komentarji</a></li><li><a href='/mnenja/kolumne'>Kolumne</a></li><li><a href='/mnenja/pisma-bralcev'>Pisma bralcev</a></li></ul></li>
+<li class='orange'><a href='/slovenija'>Slovenija</a></li><li class='blue-dark'><a href='/svet'>Svet</a></li><li class='pink-2'><a href='/kultura'>Kultura</a></li><li class='teal'><a href='/sport'>Šport</a></li><li><span class='dropdown-toggle'>Plus</span><ul><li><a href='/plus/7-val'>7. Val</a></li><li><a href='/plus/na-valovih-znanja'>Na valovih znanja</a></li><li><a href='/plus/sobota'>Sobota</a></li><li><a href='/plus/zdravje'>Zdravje</a></li></ul></li>
+<li class='pink'><a href='/zanimivosti'>Zanimivosti</a></li></ul>
+
+    <div id="mobile-social-menu">
+        <a href="https://www.facebook.com/primorskenovice" class="facebook"><span>Facebook</span></a>
+        <a href="https://twitter.com/primorskenovice" class="twitter"><span>Twitter</span></a>
+        <a href="https://www.instagram.com/primorskenovice/" class="instagram"><span>Instagram</span></a>
+        <div class="btn-order-container">
+            <a href='https://digital.primorske.si/#paketi' class='btn-order'>Naroči se</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="d-none d-md-block text-center pt-5 mb-3" style="position:relative;"><!--/*
+ASYNC REVIVE
+
+*
+* Revive Adserver Asynchronous JS Tag
+* - Generated with Revive Adserver v4.0.2
+*
+*
+<ins data-revive-zoneid="5" data-revive-id="75fda37eef6fbbb39fbd9b3be779f018"></ins>
+<script async src="//ogl.primorske.si/www/delivery/asyncjs.php"></script>
+-->
+
+<!--/*
+  *
+  * Revive Adserver Javascript Tag
+  * - Generated with Revive Adserver v4.0.2
+  *
+  */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://ogl.primorske.si/www/delivery/...'
+  * to
+  *   'https://ogl.primorske.si/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ogl.primorske.si/www/delivery/ajs.php':'http://ogl.primorske.si/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=5");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ogl.primorske.si/www/delivery/ck.php?n=a4b0ef16&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ogl.primorske.si/www/delivery/avw.php?zoneid=5&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a4b0ef16' border='0' alt='' /></a></noscript>
+
+
+</div>
+<div class="container article" role="main">
+  <div class="row">
+    <div class="author-column">
+      <div class='author-meta'><a href='/avtor?a=STA' class='author-image image-link'><img data-src='https://static.primorske.si/foto/stalne/avtorji/clanki/highres/sta.jpg' class='lazy' /></a><a class='author-name' href='/avtor?a=STA'>STA</a></div>
+
+
+    </div>
+    <div class="content-column">
+      <div id="p_lt_zoneContent_pageplaceholder_p_lt_ctl03_Pn3repeater_lblTimeLocked"></div>
+
+<h1>Za krizna nadomestila za brezposelnost manj kot četrtina predvidenega denarja</h1>
+<div class="article-meta">
+  <div class='author-meta'><a href='/avtor?a=STA' class='author-image image-link'><img data-src='https://static.primorske.si/foto/stalne/avtorji/clanki/highres/sta.jpg' class='lazy' /></a><a class='author-name' href='/avtor?a=STA'>STA</a></div>
+
+  <a href='/slovenija' class='article-category orange-bg hover-bg'>Slovenija</a>
+  <span class="publish-time need_to_be_rendered" datetime='2020-08-09T09:01:21'>
+    09. 08. 2020, 09.01
+    
+  </span>
+  
+</div>
+<p class="article-lead">
+  Vlada je v protikoronski zakonodaji predvidela tudi zaščito oseb, ki so brez dela ostale zaradi epidemije covida-19, pa na podlagi obstoječe pravne podlage ne bi bile upravičene do nadomestila za brezposelnost. Zavod RS za zaposlovanje je tem brezposelnim izplačal le nekaj več kot 907.000 evrov, torej manj kot četrtino predvidenega denarja.
+</p>
+
+
+
+<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ItemObject">
+  <a href='https://static.primorske.si/foto/highres/gnweb/752122_denar1.jpg' class="image-link image-container container-16-9 lightbox" itemprop="contentUrl" data-large='https://static.primorske.si/foto/highres/gnweb/752122_denar1.jpg' title='Foto: Pixabay.com'>
+    <img src='https://static.primorske.si/foto/micro/gnweb/752122_denar1.jpg' class="image-preview" itemprop="thumbnail" alt=' Foto: Pixabay.com' />
+    
+  </a>
+  <figcaption itemprop="caption description">Foto: Pixabay.com</figcaption>
+</figure>
+
+
+  <p>
+    <b>LJUBLJANA</b>
+    <span class="arrrow_orange">&gt;</span> Krizno nadomestilo za brezposelnost je predvidela novela prvega protikoronskega zakona, ki je bila v veljavi od 30. aprila. Gre za začasno denarno nadomestilo plače za osebe, ki so izgubile zaposlitev zaradi covida-19 po 13. marcu, pa sicer niso bile upravičene do denarnega nadomestila za brezposelnost po zakonu o urejanju trga dela.</p>
+  
+  <p>Uveljavitev pravice do kriznega nadomestila za brezposelnost je bila možna od prvega dne brezposelnosti za obdobje trajanja začasnih ukrepov oziroma do konca maja, vlogo pa so lahko oddali le brezposelni, prijavljeni v evidenco zavoda za zaposlovanje.</p>
+  <h3>Začasno denarno nadomestilo za brezposelnost zaradi novega koronavirusa izplačali 954 ljudem</h3>
+  
+  <p>Višina začasnega denarnega nadomestila plače je znašala 513,64 evra bruto oziroma približno 400 evrov neto na mesec.</p>
+  
+  <p>Kot so   pojasnili na zavodu, so začasno denarno nadomestilo za brezposelnost zaradi novega koronavirusa izplačali 954 ljudem, skupaj pa so za nadomestila odšteli nekaj več kot 907.000 evrov bruto.</p>
+  
+  <p>Četudi je ukrep zaključen, ga še vedno izplačujejo, saj v nekaterih primerih ugodijo pritožbam, so dodali.</p>
+  
+  <p>Skupen znesek izplačil za ta ukrep je bil precej nižji, kot je pričakovala vlada. Minister za delo <b>Janez Cigler Kralj</b> je namreč aprila ocenjeval, da bo do nadomestila upravičenih približno  2500 ljudi, za ukrep pa je bilo predvidenih štiri milijone evrov.</p>
+  
+  <p>V sindikatih, ki so bili glavni pobudniki te pomoči, so kljub temu zadovoljni. Kot je   dejal predsednik Konfederacije sindikatov Slovenije Pergam <b>Jakob Počivavšek</b>, je “krizno nadomestilo doseglo svoj namen”.</p>
+  
+  <p>Ukrep je bil po njegovih besedah komplementaren ukrepu subvencioniranja nadomestila za čas čakanja na delo, ki naj bi preprečil izgubo čim večjega števila delovnih mest, če pa je do odpovedi vendarle prišlo, pa je v izrednih razmerah krizno nadomestilo zagotovilo varnostno socialno mrežo za širši krog delavcev, ki so izgubili zaposlitev.</p>
+  <h3>Veliko vlog je bilo zavrnjenih</h3>
+  
+  <p>Veliko število vlog je bilo sicer po njihovih informacijah zavrnjenih, je opozoril. V tej luči se jim “postavlja vprašanje, ali je bil ukrep ustrezno komuniciran z namenom informiranja potencialnih upravičencev in ostale javnosti”. Koliko je bilo zavrnitev, na zavodu   niso povedali.</p>
+  
+  <p>Glede na to, da krizno nadomestilo za brezposelnost ni več v veljavi, bo treba, tako Počivavšek, “v primeru poslabšanja situacije razmišljati o ponovni uvedbi takšnega ukrepa kot samostojnega ukrepa ali v kombinaciji z morebitnimi drugimi ukrepi, ki bi blažili situacijo na trgu dela in zagotavljali socialno varnost delavcem, ki bi izgubili zaposlitev”.</p>
+  
+  <p>Pri tem je treba imeti pred očmi ne le delavce, ki delajo po pogodbah o zaposlitvi, temveč tudi delavce, ki delajo po drugih pravnih podlagah in zaradi epidemije prav tako ne bi mogli več opravljati svojega dela in bi ostali brez prihodkov za preživetje, je sklenil.</p>
+</InnerBody>
+
+
+<div class="share-icons horizontal">
+    <div class="share-text">Deli:</div>
+    <a href='https://www.facebook.com/sharer.php?u=https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce' target='_blank' class='facebook'><span>Facebook</span></a>
+    <a href='https://twitter.com/share?url=https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce' target='_blank' class='twitter'><span>Twitter</span></a>
+    <a href='https://www.linkedin.com/shareArticle?mini=true&url=https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce&title=Za krizna nadomestila za brezposelnost manj kot četrtina predvidenega denarja' target='_blank' class="linkedin"><span>Linkedin</span></a>
+    <a href='mailto:?subject=Za krizna nadomestila za brezposelnost manj kot četrtina predvidenega denarja&body=https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce' target='_self' class="email"><span>E-mail</span></a>
+</div>
+<hr/>
+
+
+
+
+<div class="text-center mb-5" style="overflow:hidden;">
+<!--/*
+  *
+  * Revive Adserver Asynchronous JS Tag
+  * - Generated with Revive Adserver v4.0.2
+  *
+  */-->
+
+<ins data-revive-zoneid="7" data-revive-id="75fda37eef6fbbb39fbd9b3be779f018"></ins>
+<script async src="//ogl.primorske.si/www/delivery/asyncjs.php"></script>
+</div><span id="p_lt_zoneContent_pageplaceholder_p_lt_ctl03_Pn_themeset_repeater_mobile_lblThemeset"></span><a name="related-editorial"></a><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2742605164819873"
+     data-ad-slot="7124111209"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="article-list popular-articles">
+    <h4>
+        Najbolj brano
+    </h4>
+    
+<div class="row">
+
+<div class="col-md-6">
+    <div class="article-list-item small-on-mobile">
+      <div class="image">
+        <a href='/primorska/srednja-primorska/tega-smo-se-bali-prav-na-jok-mi-gre' class="image-link container-16-9" title='“Tega smo se bali. Prav na jok mi gre.”'>
+          <img class="img-fluid lazy" alt='“Tega smo se bali. Prav na jok mi gre.”' data-src='https://static.primorske.si/foto/lowres/gnweb/773015_022-dami.jpg' />
+        </a>
+      </div>
+      <div class="title">
+        <a class="list-title" href='/primorska/srednja-primorska/tega-smo-se-bali-prav-na-jok-mi-gre?utm_source=most_read_lnk_article&utm_medium=most_read&utm_campaign=most_read&pk_campaign=most_read&pk_source=most_read_lnk_article&pk_medium=most_read' target="_blank" title='“Tega smo se bali. Prav na jok mi gre.”'>
+          “Tega smo se bali. Prav na jok mi gre.”
+        </a>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-6">
+    <div class="article-list-item small-on-mobile">
+      <div class="image">
+        <a href='/primorska/istra/kako-je-prislo-do-sirjenja-okuzb-ceprav-so-bili-st' class="image-link container-16-9" title='Kako je prišlo do širjenja okužb, čeprav so bili stanovalci cepljeni?'>
+          <img class="img-fluid lazy" alt='Kako je prišlo do širjenja okužb, čeprav so bili stanovalci cepljeni?' data-src='https://static.primorske.si/foto/lowres/istra/772857_f300_cepljenje_covid05t.jpg' />
+        </a>
+      </div>
+      <div class="title">
+        <a class="list-title" href='/primorska/istra/kako-je-prislo-do-sirjenja-okuzb-ceprav-so-bili-st?utm_source=most_read_lnk_article&utm_medium=most_read&utm_campaign=most_read&pk_campaign=most_read&pk_source=most_read_lnk_article&pk_medium=most_read' target="_blank" title='Kako je prišlo do širjenja okužb, čeprav so bili stanovalci cepljeni?'>
+          Kako je prišlo do širjenja okužb, čeprav so bili stanovalci cepljeni?
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+    <div class="article-list-item small-on-mobile">
+      <div class="image">
+        <a href='/slovenija/dodatki-se-za-tiste-ki-jih-je-pkp7-pozabil' class="image-link container-16-9" title='Dodatki še za tiste, ki jih je PKP7 pozabil'>
+          <img class="img-fluid lazy" alt='Dodatki še za tiste, ki jih je PKP7 pozabil' data-src='https://static.primorske.si/foto/lowres/politika/772724_023--dijaki.jpg' />
+        </a>
+      </div>
+      <div class="title">
+        <a class="list-title" href='/slovenija/dodatki-se-za-tiste-ki-jih-je-pkp7-pozabil?utm_source=most_read_lnk_article&utm_medium=most_read&utm_campaign=most_read&pk_campaign=most_read&pk_source=most_read_lnk_article&pk_medium=most_read' target="_blank" title='Dodatki še za tiste, ki jih je PKP7 pozabil'>
+          Dodatki še za tiste, ki jih je PKP7 pozabil
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="nativendo-article" class="col-md-6">
+    <div class="article-list-item small-on-mobile">
+      <div class="image">
+        <a href='/primorska/goriska/julija-bo-nared-prvih-pet-his' class="image-link container-16-9" title='Julija bo nared prvih pet hiš'>
+          <img class="img-fluid lazy" alt='Julija bo nared prvih pet hiš' data-src='https://static.primorske.si/foto/lowres/gorica/772861_solkanske_vile_007-1.jpg' />
+        </a>
+      </div>
+      <div class="title">
+        <a class="list-title" href='/primorska/goriska/julija-bo-nared-prvih-pet-his?utm_source=most_read_lnk_article&utm_medium=most_read&utm_campaign=most_read&pk_campaign=most_read&pk_source=most_read_lnk_article&pk_medium=most_read' target="_blank" title='Julija bo nared prvih pet hiš'>
+          Julija bo nared prvih pet hiš
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+<div data-contentexchange-widget='XXXbuzXpFEN6YBhur'></div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2742605164819873"
+     data-ad-slot="4380770949"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="row" style="width:100%;"></div><!-- iPROM Central - www.centraliprom.com --><script type="text/javascript">
+_iprom_s='shlnfqghahoyqrjx';
+_iprom_d='mobile';
+</script><script type="text/javascript" src="//central.iprom.net/adserver/adserver.js"></script><!-- iPROM Central - www.centraliprom.com -->
+    </div>
+    <div class="share-column">
+      <div class="share-icons vertical">
+    <div class="share-text">Deli:</div>
+	<a href='https://www.facebook.com/sharer.php?u=https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce' target='_blank' class='facebook'><span>Facebook</span></a>
+	<a href='https://twitter.com/share?url=https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce' target='_blank' class='twitter'><span>Twitter</span></a>
+    <a href='https://www.linkedin.com/shareArticle?mini=true&url' target='_blank' class="linkedin"><span>Linkedin</span></a>
+    <a href='mailto:?subject=Za krizna nadomestila za brezposelnost manj kot četrtina predvidenega denarja&body=https://www.primorske.si/2020/08/09/za-krizna-nadomestila-za-brezposelnost-manj-kot-ce' target='_self' class="email"><span>E-mail</span></a>
+</div><span id="p_lt_zoneContent_pageplaceholder_p_lt_ctl04_Pn_themeset_repeater_lblThemeset"></span>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO PRE-ROLL AD -->
+<!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v4.2.1 -->
+<ins data-revive-zoneid="74" data-revive-id="75fda37eef6fbbb39fbd9b3be779f018"></ins>
+<script async src="//ogl.primorske.si/www/delivery/asyncjs.php"></script>
+<div class="cookie-consent">
+<div class="CookieConsent">
+    <span id="p_lt_zoneFooter_SimpleCookieLawConsent_lblText" class="ConsentText">Spletna stran www.primorske.si uporablja piškotke za zagotavljanje funkcionalnosti, ki jih brez piškotkov ne bi mogli nuditi. <a href="/piskotki">Podrobnosti</a></span>
+    <span class="ConsentButtons">
+        
+        
+        <input type="submit" name="p$lt$zoneFooter$SimpleCookieLawConsent$btnAllowAll" value="Dovoli piškotke" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;p$lt$zoneFooter$SimpleCookieLawConsent$btnAllowAll&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="p_lt_zoneFooter_SimpleCookieLawConsent_btnAllowAll" class="ConsentButton btn btn-default" />
+    </span>
+</div>
+</div><footer>
+  <div class="container">
+    <ul class="footer-menu">
+      <li><a href="/korporativne-strani/o-druzbi">O družbi</a></li>
+      <li><a href="/korporativne-strani/narocanje">Naročanje</a></li>
+      <li><a href="/korporativne-strani/oglasevanje">Oglaševanje</a></li>
+      <li><a href="https://www.primorske.si/korporativne-strani/sprejem-slik-v-redakcijski-sistem">Sprejem slik v redakcijski sistem</a></li>
+      <!--<li><a href="/korporativne-strani/akcije">Akcije</a></li>-->
+      <li><a href="/korporativne-strani/kontakt">Kontakt</a></li>
+      <li><a href="/korporativne-strani/ostalo">Ostalo</a></li>
+      <li><a href="/izjava-o-zasebnosti">Izjava o zasebnosti</a></li>
+    </ul>
+    <p class="copyright">© 2021 Primorske novice - Vse pravice pridržane</p>
+  </div>
+</footer><!--/*
+  *
+  * Revive Adserver Asynchronous JS Tag
+  * - Generated with Revive Adserver v4.0.2
+  *
+  */-->
+
+<ins data-revive-zoneid="12" data-revive-id="75fda37eef6fbbb39fbd9b3be779f018"></ins>
+<script async src="//ogl.primorske.si/www/delivery/asyncjs.php"></script>
+
+
+
+
+
+<!--/*
+  *
+  * Revive Adserver Javascript Tag
+  * - Generated with Revive Adserver v4.0.2
+  *
+  */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://ogl.primorske.si/www/delivery/...'
+  * to
+  *   'https://ogl.primorske.si/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ogl.primorske.si/www/delivery/ajs.php':'http://ogl.primorske.si/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=32");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ogl.primorske.si/www/delivery/ck.php?n=a2dac2ac&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ogl.primorske.si/www/delivery/avw.php?zoneid=32&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a2dac2ac' border='0' alt='' /></a></noscript>
+
+
+<script src="https://static.primorske.si/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="https://static.primorske.si/assets/js/js.cookie.js"></script>
+<script src="https://static.primorske.si/assets/js/fp2.min.js"></script>
+<script src="https://static.primorske.si/assets/js/jquery.magnific-popup.js"></script>
+<script async src="https://static.primorske.si/assets/js/bootstrap-native-v4.js"></script>
+<script async src="https://static.primorske.si/assets/js/primorske.js"></script>
+<script async src="https://static.primorske.si/assets/js/polyfill.min.js"></script>
+<script async src="https://static.primorske.si/assets/js/timeago.min.js"></script>
+<script async src="https://static.primorske.si/assets/js/hammer.min.js"></script>
+
+<script async src="https://static.primorske.si/assets/js/pn.js"></script>
+<script src="https://si.contentexchange.me/static/tracker.js"></script>
+<script src="https://static.primorske.si/assets/js/vanillatoasts.min.js"></script>
+<link rel="stylesheet" href="https://static.primorske.si/assets/css/vanillatoasts.css">
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.primorske.si",
+  "logo": "https://static.primorske.si/foto/pnlogo.png",
+  "name": "Primorske novice",
+  "sameAs": [
+    "https://www.facebook.com/PrimorskeNovice/",
+    "https://twitter.com/primorskenovice",
+    "https://www.instagram.com/primorskenovice/",
+    "https://www.youtube.com/channel/UCjk3z6XNdepcNOKECnHdJFw"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.primorske.si/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.primorske.si/Iskanje?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
+<script>
+// production
+window.addEventListener('load', async() => {
+  var l = window.location.pathname;
+  if ((l != '/status') && (l != '/status/obvestila')) {
+    if ('serviceWorker' in navigator) {
+      const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js', {
+        updateViaCache: 'none'
+      });
+      
+      var firebase_config = {
+        apiKey: "AIzaSyBV4DLsfjGSsRbr9uNhkZ3PQdqYHVvXaFA",
+        authDomain: "primorske-si.firebaseapp.com",
+        databaseURL: "https://primorske-si.firebaseio.com",
+        projectId: "primorske-si",
+        storageBucket: "primorske-si.appspot.com",
+        messagingSenderId: "411264579330",
+        appId: "1:411264579330:web:b4958762a566dd22"
+      };
+  
+      firebase.initializeApp(firebase_config);
+  
+      const messaging = firebase.messaging();
+  
+      messaging.useServiceWorker(registration);
+  
+      messaging.usePublicVapidKey("BKdJ4_PFUtQEfJD17YvVnztkzGl9NLn1cL-4v5GIsYdPeiaYOIatAr7Sz2H-66BbJ2dXtrpYDocRnvP8AsVIJGY");
+  
+      Notification.requestPermission().then((permission) => {
+        if (permission === 'granted') {
+          messaging.getToken()
+          .then(function(currentToken) {
+            if (currentToken) {
+              sendTokenToServer(currentToken, current_user);
+            }
+            else {
+              setTokenSentToServer(false);
+            }
+          })
+          .catch(function(err) {
+            setTokenSentToServer(false);
+          })
+        }
+        else {
+        }
+      });
+  
+      messaging.onTokenRefresh(function() {
+        messaging.getToken()
+        .then(function(refreshedToken) {
+          // token refreshed, send it to the backend
+          setTokenSentToServer(false);
+          sendTokenToServer(refreshedToken);
+        })
+        .catch(function(err) {
+        });
+      });
+  
+      function sendTokenToServer(currentToken, current_user) {
+        if (!isTokenSentToServer()) {
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", 'https://api.primorske.si/pn.svc/notification_token');
+          xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          xhr.onreadystatechange = function(){
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              setTokenSentToServer(true);
+            }
+          };
+          var json = {
+            "token":currentToken,
+            "user_name":current_user,
+            "topic":"pn_all"
+          };
+          xhr.send(JSON.stringify(json));
+        }
+        else {
+          // already sent to server
+        }
+      }
+  
+      function isTokenSentToServer() {
+        return window.localStorage.getItem('sentToServer') == 1;
+      }
+  
+      function setTokenSentToServer(sent) {
+        window.localStorage.setItem('sentToServer', sent ? 1 : 0);
+      }
+
+      messaging.onMessage((payload) => {
+        VanillaToasts.create({
+          title: payload.notification.title,
+          text: payload.notification.body,
+          icon: 'https://www.primorske.si/icons/android-chrome-96x96.png',
+          type: 'info',
+          timeout: 5000,
+          callback: function() {
+            window.open(payload.notification.click_action, '_blank');
+          }
+        });
+      });
+    }
+  }
+});
+</script>
+    
+      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+  <script type="text/javascript"> 
+      //<![CDATA[
+      if (window.WebForm_InitCallback) { 
+        __theFormPostData = '';
+        __theFormPostCollection = new Array();
+        window.WebForm_InitCallback(); 
+      }
+      //]]>
+    </script>
+  </form>
+</body>
+</html>

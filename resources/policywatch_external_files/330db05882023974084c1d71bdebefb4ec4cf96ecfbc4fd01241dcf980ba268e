@@ -1,0 +1,1862 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9" lang=""> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="bg" style="height:auto">
+<!--<![endif]-->
+<head>
+<!-- FONT SP ARIEL - LOAD FIRST AND ONLY SHOW LETTERS WHEN READY -->
+<style>
+@font-face{font-family:SP_Ariel;src:url(/public/trud/web/fonts/sparielbg-webfont.woff2) format("woff2"),url(/public/trud/web/fonts/sparielbg-webfont.woff) format("woff"),url(/public/trud/web/fonts/sparielbg-webfont.ttf) format("truetype");font-weight:400;font-style:normal;font-display:block}@font-face{font-family:SP_Ariel;src:url(/public/trud/web/fonts/sparielbg-bold-webfont.woff2) format("woff2"),url(/public/trud/web/fonts/sparielbg-bold-webfont.woff) format("woff"),url(/public/trud/web/fonts/sparielbg-bold-webfont.ttf) format("truetype");font-weight:700;font-style:normal;font-display:block}
+html,body {font-family: 'SP_Ariel', 'Ariel', sans-serif !important;}
+/* .google-auto-placed{display: none!important} */
+.plakat{min-width: 250px!important}
+</style>
+<link rel="preload" href="/public/trud/web/fonts/zingrustd2demo-base-webfont.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="/public/trud/web/fonts/zingrustdemo-base-webfont.woff2" as="font" crossorigin="anonymous">
+
+<title>Служителите ще получават по 24 лв. на ден (обзор) - Труд</title>
+	<meta property="og:url" content="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/" />
+	<meta property="og:title" content="Служителите ще получават по 24 лв. на ден (обзор) - Труд">
+	<meta property="og:image" content="https://trud.bg/public/images/articles/2020-11/04-3_2647485095903027465_big.jpg">
+	<meta property="og:description" content="Бизнесът отхвърли 650 лв. минималната заплата
+Държавата плаща 60 дни на хора в неплатен отпуск
+Държавата ще плаща за не повече от 60 дни компенсация на работниците, които са в неплатен отпуск, зарад">
+	<meta name="description" content="Бизнесът отхвърли 650 лв. минималната заплата
+Държавата плаща 60 дни на хора в неплатен отпуск
+Държавата ще плаща за не повече от 60 дни компенсация на работниците, които са в неплатен отпуск, зарад">
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M52G9WF');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Publisher Tag -->
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js">
+</script>
+<script>
+window.googletag = window.googletag || {cmd: []};
+googletag.cmd.push(function() {googletag.pubads().set("adsense_background_color", "FFFFFF");});
+</script>
+
+<!-- PROOF OF OWNERSHIP OF trud.bg FOR GOOGLE -->
+<meta name="google-site-verification" content="HdC0SEtDn9z6mK00105QzK4j0GwXBbcZnl0jVwVHr9o">
+
+
+<!-- AD OCEAN SITE MASTER -->
+<script type="text/javascript" src="//bg.adocean.pl/files/js/ado.js"></script>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2020 */
+        if(typeof ado!=="object"){ado={};ado.config=ado.preview=ado.placement=ado.master=ado.slave=function(){};}
+        ado.config({mode: "old", xml: false, consent: true, characterEncoding: true});
+        ado.preview({enabled: true});
+</script><script type="text/javascript">
+	/* (c)AdOcean 2003-2018 */
+		if(typeof ado!=="object"){ado={};ado.config=ado.preview=ado.placement=ado.master=ado.slave=function(){};} 
+		ado.config({mode: "old", xml: false, characterEncoding: true});
+		ado.preview({enabled: true, emiter: "bg.adocean.pl", id: "GSug9YDTl_aCHEcT.IsPLdnxzYn7NSbYIBFFfq2O4_T.e7"});
+	</script>	<!-- ADS FROM OLD SITE -->
+	<!-- <link rel="preload" href="https://adservice.google.bg/adsid/integrator.js?domain=trud.bg" as="script">
+	<script type="text/javascript" src="https://adservice.google.bg/adsid/integrator.js?domain=trud.bg"></script> -->
+	<script type="text/javascript">
+	window.addEventListener("message", receiveMessage, false);
+	function receiveMessage(event)
+		{
+		// d('iframe msg received');
+		if ( event.origin != 'https://googleads.g.doubleclick.net' )
+			{
+			// d('not google ads');
+			return 0;
+			}
+		try
+			{
+			var obj = JSON.parse(event.data);
+			}
+		catch (error)
+			{
+			var obj = 0;
+			// d('NON JSON MSG');
+			return 0;
+			}
+		if ( obj == 0 )
+			{
+			// d('iframe msg empty');
+			return 0;
+			}
+		if ( obj.msg_type != 'resize-me' )
+			{
+			// d('iframe msg not resize');
+			return 0;
+			}
+		d('IFRAME MSG RESIZE');
+		d(obj);
+		setTimeout("fix_gframe('"+ obj.key_value[0]['value'] +"', '"+ obj.key_value[1]['value'] +"')", 200);
+		setTimeout("fix_gframe('"+ obj.key_value[0]['value'] +"', '"+ obj.key_value[1]['value'] +"')", 500);
+		setTimeout("fix_gframe('"+ obj.key_value[0]['value'] +"', '"+ obj.key_value[1]['value'] +"')", 1000);
+		setTimeout("fix_gframe('"+ obj.key_value[0]['value'] +"', '"+ obj.key_value[1]['value'] +"')", 2000);
+		}
+	function fix_gframe($h, $qui)
+		{
+		d('SET G ADS Iframe '+ $qui +' Height to ' + $h);
+		var $frame = $("iframe[data-google-query-id='" + $qui +"']");
+
+		$($frame).css('height', $h);
+		$($frame).parent().css('height', $h);
+		$($frame).parent().parent().css('height', $h);
+		$($frame).parent().parent().parent().css('height', $h);
+		}
+	</script>
+	<script>(function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+'use strict';var g=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},l=this||self,m=/^[\w+/_-]+[=]{0,2}$/,p=null,q=function(){},r=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";
+if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},u=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a};var v=function(a,b){Object.defineProperty(l,a,{configurable:!1,get:function(){return b},set:q})};var y=function(a,b){this.b=a===w&&b||"";this.a=x},x={},w={};var aa=function(a,b){a.src=b instanceof y&&b.constructor===y&&b.a===x?b.b:"type_error:TrustedResourceUrl";if(null===p)b:{b=l.document;if((b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&m.test(b)){p=b;break b}p=""}b=p;b&&a.setAttribute("nonce",b)};var z=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^+new Date).toString(36)};var A=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},B=function(a){this.a=a||l.document||document};B.prototype.appendChild=function(a,b){a.appendChild(b)};var C=function(a,b,c,d,e,f){try{var k=a.a,h=A(a.a,"SCRIPT");h.async=!0;aa(h,b);k.head.appendChild(h);h.addEventListener("load",function(){e();d&&k.head.removeChild(h)});h.addEventListener("error",function(){0<c?C(a,b,c-1,d,e,f):(d&&k.head.removeChild(h),f())})}catch(n){f()}};var ba=l.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ca=l.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),da=l.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),ea=function(a,b,c){this.b=a;this.f=new B(this.b);this.a=null;this.c=[];this.g=!1;this.i=b;this.h=c},F=function(a){if(a.b.body&&!a.g){var b=
+function(){D(a);l.setTimeout(function(){return E(a,3)},50)};C(a.f,a.i,2,!0,function(){l[a.h]||b()},b);a.g=!0}},D=function(a){for(var b=G(1,5),c=0;c<b;c++){var d=H(a);a.b.body.appendChild(d);a.c.push(d)}b=H(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=G(100,110).toString()+"%";b.style.zIndex=G(2147483544,2147483644).toString();b.style["background-color"]=I(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=I(0,10,0,10,0,10);b.style.display=
+"flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=H(a);c.style.width=G(80,85).toString()+"%";c.style.maxWidth=G(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=A(a.f.a,"IMG");d.className=z();d.src=ba;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=H(a),f=H(a);f.style["font-weight"]="bold";f.textContent=ca;var k=H(a);k.textContent=da;J(a,
+e,f);J(a,e,k);J(a,c,d);J(a,c,e);J(a,b,c);a.a=b;a.b.body.appendChild(a.a);b=G(1,5);for(c=0;c<b;c++)d=H(a),a.b.body.appendChild(d),a.c.push(d)},J=function(a,b,c){for(var d=G(1,5),e=0;e<d;e++){var f=H(a);b.appendChild(f)}b.appendChild(c);c=G(1,5);for(d=0;d<c;d++)e=H(a),b.appendChild(e)},G=function(a,b){return Math.floor(a+Math.random()*(b-a))},I=function(a,b,c,d,e,f){return"rgb("+G(Math.max(a,0),Math.min(b,255)).toString()+","+G(Math.max(c,0),Math.min(d,255)).toString()+","+G(Math.max(e,0),Math.min(f,
+255)).toString()+")"},H=function(a){a=A(a.f.a,"DIV");a.className=z();return a},E=function(a,b){0>=b||null!=a.a&&0!=a.a.offsetHeight&&0!=a.a.offsetWidth||(fa(a),D(a),l.setTimeout(function(){return E(a,b-1)},50))},fa=function(a){var b=a.c;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:g(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.c=[];(b=a.a)&&b.parentNode&&b.parentNode.removeChild(b);a.a=null};var ia=function(a,b,c,d,e){var f=ha(c),k=function(n){n.appendChild(f);l.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},h=function(n){document.body?k(document.body):0<n?l.setTimeout(function(){h(n-1)},e):b()};h(3)},ha=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var K={},L=null;var M=function(){},N="function"==typeof Uint8Array,O=function(a,b){a.b=null;b||(b=[]);a.j=void 0;a.f=-1;a.a=b;a:{if(b=a.a.length){--b;var c=a.a[b];if(!(null===c||"object"!=typeof c||Array.isArray(c)||N&&c instanceof Uint8Array)){a.g=b-a.f;a.c=c;break a}}a.g=Number.MAX_VALUE}a.i={}},P=[],Q=function(a,b){if(b<a.g){b+=a.f;var c=a.a[b];return c===P?a.a[b]=[]:c}if(a.c)return c=a.c[b],c===P?a.c[b]=[]:c},R=function(a,b,c){a.b||(a.b={});if(!a.b[c]){var d=Q(a,c);d&&(a.b[c]=new b(d))}return a.b[c]};
+M.prototype.h=N?function(){var a=Uint8Array.prototype.toJSON;Uint8Array.prototype.toJSON=function(){var b;void 0===b&&(b=0);if(!L){L={};for(var c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),d=["+/=","+/","-_=","-_.","-_"],e=0;5>e;e++){var f=c.concat(d[e].split(""));K[e]=f;for(var k=0;k<f.length;k++){var h=f[k];void 0===L[h]&&(L[h]=k)}}}b=K[b];c=[];for(d=0;d<this.length;d+=3){var n=this[d],t=(e=d+1<this.length)?this[d+1]:0;h=(f=d+2<this.length)?this[d+2]:0;k=n>>2;n=(n&
+3)<<4|t>>4;t=(t&15)<<2|h>>6;h&=63;f||(h=64,e||(t=64));c.push(b[k],b[n],b[t]||"",b[h]||"")}return c.join("")};try{return JSON.stringify(this.a&&this.a,S)}finally{Uint8Array.prototype.toJSON=a}}:function(){return JSON.stringify(this.a&&this.a,S)};var S=function(a,b){return"number"!==typeof b||!isNaN(b)&&Infinity!==b&&-Infinity!==b?b:String(b)};M.prototype.toString=function(){return this.a.toString()};var T=function(a){O(this,a)};u(T,M);var U=function(a){O(this,a)};u(U,M);var ja=function(a,b){this.c=new B(a);var c=R(b,T,5);c=new y(w,Q(c,4)||"");this.b=new ea(a,c,Q(b,4));this.a=b},ka=function(a,b,c,d){b=new T(b?JSON.parse(b):null);b=new y(w,Q(b,4)||"");C(a.c,b,3,!1,c,function(){ia(function(){F(a.b);d(!1)},function(){d(!0)},Q(a.a,2),Q(a.a,3),Q(a.a,1))})};var la=function(a,b){V(a,"internal_api_load_with_sb",function(c,d,e){ka(b,c,d,e)});V(a,"internal_api_sb",function(){F(b.b)})},V=function(a,b,c){a=l.btoa(a+b);v(a,c)},W=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];e=l.btoa(a+b);e=l[e];if("function"==r(e))e.apply(null,d);else throw Error("API not exported.");};var X=function(a){O(this,a)};u(X,M);var Y=function(a){this.h=window;this.a=a;this.b=Q(this.a,1);this.f=R(this.a,T,2);this.g=R(this.a,U,3);this.c=!1};Y.prototype.start=function(){ma();var a=new ja(this.h.document,this.g);la(this.b,a);na(this)};
+var ma=function(){var a=function(){if(!l.frames.googlefcPresent)if(document.body){var b=document.createElement("iframe");b.style.display="none";b.style.width="0px";b.style.height="0px";b.style.border="none";b.style.zIndex="-1000";b.style.left="-1000px";b.style.top="-1000px";b.name="googlefcPresent";document.body.appendChild(b)}else l.setTimeout(a,5)};a()},na=function(a){var b=Date.now();W(a.b,"internal_api_load_with_sb",a.f.h(),function(){var c;var d=a.b,e=l[l.btoa(d+"loader_js")];if(e){e=l.atob(e);
+e=parseInt(e,10);d=l.btoa(d+"loader_js").split(".");var f=l;d[0]in f||"undefined"==typeof f.execScript||f.execScript("var "+d[0]);for(;d.length&&(c=d.shift());)d.length?f[c]&&f[c]!==Object.prototype[c]?f=f[c]:f=f[c]={}:f[c]=null;c=Math.abs(b-e);c=1728E5>c?0:c}else c=-1;0!=c&&(W(a.b,"internal_api_sb"),Z(a,Q(a.a,6)))},function(c){Z(a,c?Q(a.a,4):Q(a.a,5))})},Z=function(a,b){a.c||(a.c=!0,a=new l.XMLHttpRequest,a.open("GET",b,!0),a.send())};(function(a,b){l[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];l[a]=q;b.apply(null,d)}})("__d3lUW8vwsKlB__",function(a){"function"==typeof window.atob&&(a=window.atob(a),a=new X(a?JSON.parse(a):null),(new Y(a)).start())});}).call(this);
+
+window.__d3lUW8vwsKlB__("WyJlNjE2ZDUwYTUyYzMxMTBkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4VlB1bE9QQzh5cG5LQlczRjFXbWV4ZkJySndscm13cTNqMG9IYUgxZ1ZjXy1fb0ZYWnEydThuUlFxcVJyUWpRT0ViUE1EV2ZZb0FyTms0UElHUG14NFx1MDAzZCJdCixbMjAsImRpdi1ncHQtYWQiLDEwMCwiWlRZeE5tUTFNR0UxTW1Nek1URXdaQVx1MDAzZFx1MDAzZCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL3d3dy5nc3RhdGljLmNvbS8wZW1uL2YvcC9lNjE2ZDUwYTUyYzMxMTBkLmpzP3VzcXBcdTAwM2RDQWciXQpdCiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hVUWtJVDJKUUdSWmh3ZS1TWlNENWJGVElhWkpVTHFhcnlsUk9QRzl2cl94LUpnanV5cHYzN2lVUHZsTjV0ZzF1aEU2VG9sZDZQLUJsUlpVNmY2P2FiXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2wvQUdTS1d4WDBvMGs4THNNaGRxXzE0MHV6V3VBbHh4Q1l3cW96WFBjTW9IT25aOGM3bFRnZ2xMWnhoZW9sdS1zY0xtWm9yRzVSUkQzdW5lTmwzS3JfeGJOdj9hYlx1MDAzZDJcdTAwMjZzYmZcdTAwM2QxIiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hVdVhHaU8wWkdnSUZYWkpINFJ1YWs2MGVzR1NRS1RQamhVVF9UbXZlaTJoTXhnTXBISVk2VGxpbmVNVWZLY25meWtIN21LdkdQRUpORE5UVHpsP3NiZlx1MDAzZDIiXQo=");</script>
+	
+<script>
+// ENCODE FACEBOOK FOR JS
+var $trud_link = "https:\/\/trud.bg\/\u0441\u043b\u0443\u0436\u0438\u0442\u0435\u043b\u0438\u0442\u0435-\u0449\u0435-\u043f\u043e\u043b\u0443\u0447\u0430\u0432\u0430\u0442-\u043f\u043e-24-\u043b\u0432-\u043d\u0430-\u0434\u0435\u043d-\u043e\u0431\u0437\u043e\u0440\/";
+var $trud_app_id = "1262590873945615";
+var $trud_title = "\u0421\u043b\u0443\u0436\u0438\u0442\u0435\u043b\u0438\u0442\u0435 \u0449\u0435 \u043f\u043e\u043b\u0443\u0447\u0430\u0432\u0430\u0442 \u043f\u043e 24 \u043b\u0432. \u043d\u0430 \u0434\u0435\u043d (\u043e\u0431\u0437\u043e\u0440) - \u0422\u0440\u0443\u0434";
+</script>
+
+<meta charset="utf-8">
+<!-- Open Graph tags -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="height = device-height, width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 2.0, user-scalable = yes" />
+<meta property="fb:app_id" content="1262590873945615">
+<meta property="og:type" content="website">
+<meta name="keywords" content="вестник, труд, новини, анализи, коментари, trud, хороскоп, vestnik trud, trud bg, trud.bg">
+
+	<link rel="amphtml" href="https://trud.bg/amp/служителите-ще-получават-по-24-лв-на-ден-обзор/" />
+			<!-- SHARES -->
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v5.0"></script>
+			<!-- <script async defer crossorigin="anonymous" src="/public/trud/web/js/facebook_sdk.js"></script> -->
+	<!-- moved in all.min.js -->
+	<!-- <script src="/public/trud/web/js/facebook_script.js"></script> -->
+	<!-- <script src="/public/trud/web/js/multiplatform_share.js"></script> -->
+	<!-- FRAME -->
+			<link async defer href="/public/trud/fontawesome-free-5.3.1-web/css/all.min.css" rel="stylesheet" type="text/css" />
+		<!-- Favicon -->
+<!--[if IE]><link rel="shortcut icon" href="/public/images/favicon.ico"><![endif]-->
+<link rel="icon" type="image/svg" href="/public/images/favicon.ico">
+<!-- CSS -->
+	<link async defer rel="stylesheet" href="/public/trud/web/css/all.min.css">
+	<!-- moved in all.min.css -->
+<!-- <link rel="stylesheet" href="/public/trud/web/css/fixes.css"> -->
+
+
+
+
+
+<!-- NEW SLIDER -->
+<!-- NEW SLIDER -->
+<!-- NEW SLIDER -->
+
+
+
+
+
+
+
+
+<!-- RELOAD PAGE USER NOT ACTIVE 300 SECONDS -->
+	<script async defer src="/public/js/reload_on_inactivity.js"></script>
+	
+<script>
+var _root	= '/';
+var _public = '/web';
+var xhr_url = '/bg/application/xhr';
+
+// Detect touch screen
+touchDetect = function() {
+	return 'ontouchstart' in window || navigator.maxTouchPoints;
+};
+
+if ( touchDetect()	== true ) {
+	document.documentElement.classList.remove('no-touch');
+	document.documentElement.classList.add('touch');
+}
+else {
+	document.documentElement.classList.add('no-touch');
+	document.documentElement.classList.remove('touch');
+}
+function href($link){document.location.href=$link;}
+function d($data){console.log($data);}
+</script>
+	<!--[if lt IE 10]>
+	<script type="text/javascript">
+		document.write('<div class="upgrade-browser">\
+		<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" class="ie" target="_blank">Internet Explorer</a>\
+		<a href="http://www.getfirefox.com" class="firefox" target="_blank">Firefox</a>\
+		<a href="http://www.google.com/chrome" class="chrome" target="_blank">Chrome</a>\
+		<a href="http://www.opera.com/download" class="opera" target="_blank">Opera</a>\
+		<a href="https://support.apple.com/downloads/safari" class="safari" target="_blank">Safari</a>\<span>За по-добро качество и функционалност на сайта, моля обновете вашия браузър или изтеглете нов.</span>\
+		<div class="upgrade-browser__close" onclick="hideWarning()"></div>\
+		</div>');
+
+		function hideWarning(){
+			document.getElementById('upgrade-browser').style.display = 'none';
+		}
+	</script>
+	<![endif]-->
+	</script>
+<!-- end Simple Custom CSS and JS -->
+	<script src="/public/trud/web/js/all.min.js"></script>
+	</head>
+<body class="theme-1" style="height:auto;">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M52G9WF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="ado-BniWhmNSkqLKB..eWOF3jWaGwsz15p6JLVtw6oPUhMj.87"></div>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2020, trud_bg.trud_new.InArticle */
+ado.placement({id: 'ado-BniWhmNSkqLKB..eWOF3jWaGwsz15p6JLVtw6oPUhMj.87', server: 'bg.adocean.pl' });
+</script><!-- FACEBOOK SHARE BUTTONS -->
+<!-- <div id="fb-root"> -->
+<div class="menu js-menu">
+	<div class="menu__container">
+		<header class="menu__header">
+			<div class="wrapper">
+				<div class="menu__header-content">
+					<div class="group">
+						<a href="/" title="Труд" class="site-logo">
+							<img src="/public/trud/web/images/logo2020.svg" alt="Труд" class="site-logo__img" />
+							<strong class="sr-only">Труд</strong>
+						</a>
+						<div class="group group--custom">
+							<time class="bold_text_top time" datetime="29.01.21 / 18:54">
+								<span class="bold_text_top time-item time-item--day">Петък</span>
+								<span class="bold_text_top time-item time-item--date">29.01.21 / 18:54</span>
+							</time>
+							<div class="social">
+								<div class="social__item">
+	<a href="https://www.youtube.com/channel/UCqvbqlPfFGnFIiSpMdObXHQ" class="link link--opacity" target="_blank">
+		<svg class="icon icon--yt">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-yt"></use>
+		</svg>
+	</a>
+</div><div class="social__item">
+	<a href="https://instagram.com/trud.bg/" class="link link--opacity" target="_blank">
+		<svg class="icon icon--inst">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-inst"></use>
+		</svg>
+	</a>
+</div><div class="social__item">
+	<a href="https://www.facebook.com/trud.bg" class="link link--opacity" target="_blank">
+		<svg class="icon icon--fb">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-fb"></use>
+		</svg>
+	</a>
+</div>							</div>
+						</div>
+						<script type="text/javascript">
+						function stx_fix()
+							{
+							$(".js-menu-item.active").removeClass("active")
+							$('body').addClass('menu-opened');
+							$('.js-menu-item[data-menu-item="search"]').addClass("active")
+							// $('#search_top').show().addClass('active');
+							document.getElementById('menu-search').focus();
+							// $('.menu__item').css('display', 'none')
+							}
+						</script>
+						<button type="button" class="menu__button menu__button--close" onclick="stx_fix()" style="margin-top:50px;">
+							<svg class="icon">
+								<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-search"></use>
+							</svg>
+						</button>
+						<button type="button" class="menu__button menu__button--close js-menu-toggle">
+							<svg class="icon">
+								<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-cross"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<script type="application/json" class="js-autocomplete-options">
+			{
+			"url": "autocomplete.json",
+			"getValue": "name",
+			"list":
+				{
+				"match":
+					{
+					"enabled": true
+					}
+				}
+			}
+		</script>
+		<div class="menu__main-content">
+			<div class="wrapper">
+				<div class="menu__item js-menu-item" data-menu-item="nav">
+					<nav class="menu-container">
+						<!-- ADI MOVE IT	-->
+						<!-- ADI MOVE IT	-->
+						<div class="additional-nav">
+							<div class="additional-nav__container">
+															<div class="additional-nav__item">
+									<div class="button-holder">
+										<a href="/хороскоп-алена/" title="Хороскоп" class=" test_button button button--light button--icon button--horoscope test_button " style="padding:0;background:none">
+											<img src="/public/images/horoskop_alena1.png" alt="Хороскоп Алена" style="max-height:50px">											<span class="button__text color_text"></span>
+										</a>
+									</div>
+								</div>
+																<div class="additional-nav__item">
+									<div class="button-holder">
+										<a href="/вицове/" title="Вицове" class=" test_button button button--light button--icon button--horoscope button_jokes " >
+																						<span class="button__text color_text">Вицове</span>
+										</a>
+									</div>
+								</div>
+																<div class="additional-nav__item">
+									<div class="button-holder">
+										<a href="/tv_program/" title="ТВ Програма" class=" test_button button button--light  " >
+																						<span class="button__text color_text">ТВ Програма</span>
+										</a>
+									</div>
+								</div>
+																<div class="additional-nav__item">
+									<div class="button-holder">
+										<a href="/времето/" title="Времето" class=" test_button button button--light button_weather " >
+																						<span class="button__text color_text">Времето</span>
+										</a>
+									</div>
+								</div>
+															</div>
+						</div>
+
+						<div class="menu-nav-holder">
+							<div class="menu-nav js-menu-nav">
+								<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="">
+			<a href="/новини/" class="menu-nav-main__link">Новини</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			<div class="menu-nav-dropdown__content-item">
+	<a href="/новини/българия/" title="България" class="menu-nav-dropdown__title">България</a>
+	<div class="menu-nav-dropdown__nav">
+		<div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/българия/крими-и-право/" title="link" class="menu-nav-dropdown__nav-link">Крими и право</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/българия/политика/" title="link" class="menu-nav-dropdown__nav-link">Политика</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/българия/здраве/" title="link" class="menu-nav-dropdown__nav-link">Здраве</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/българия/образувание/" title="link" class="menu-nav-dropdown__nav-link">Образование</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/българия/трудово-правна-консултация/" title="link" class="menu-nav-dropdown__nav-link">Трудово-правна консултация</a>
+</div>
+	</div>
+</div><div class="menu-nav-dropdown__content-item">
+	<a href="/новини/свят/" title="Свят" class="menu-nav-dropdown__title">Свят</a>
+	<div class="menu-nav-dropdown__nav">
+		<div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/свят/европа/" title="link" class="menu-nav-dropdown__nav-link">Европа</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/свят/русия/" title="link" class="menu-nav-dropdown__nav-link">Русия</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/свят/сащ/" title="link" class="menu-nav-dropdown__nav-link">Америка</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/свят/азия/" title="link" class="menu-nav-dropdown__nav-link">Азия</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/новини/свят/близък-изток/" title="link" class="menu-nav-dropdown__nav-link">Близък Изток</a>
+</div>
+	</div>
+</div>
+			<div class="menu-nav-dropdown__content-item" style="display:none">
+				<div class="menu-nav-dropdown__nav" >{sub_menu_link}</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/новини/" class="menu-nav-main__link link link--normal">Новини</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style=""><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="">
+			<a href="/мнения/" class="menu-nav-main__link">Мнения</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			
+			<div class="menu-nav-dropdown__content-item" style="{hide_menu}">
+				<div class="menu-nav-dropdown__nav" ><div class="menu-nav-dropdown__nav-item">
+	<a href="/мнения/анализи/" title="Анализи" class="menu-nav-dropdown__nav-link">Анализи</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/мнения/коментари/" title="Коментари" class="menu-nav-dropdown__nav-link">Коментари</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/мнения/интервюта/" title="Интервюта" class="menu-nav-dropdown__nav-link">Интервюта</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/мнения/силуети/" title="Силуети" class="menu-nav-dropdown__nav-link">Силуети</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/мнения/репортажи/" title="Репортажи" class="menu-nav-dropdown__nav-link">Репортажи</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/мнения/разследване/" title="Разследване" class="menu-nav-dropdown__nav-link">Разследване</a>
+</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/мнения/" class="menu-nav-main__link link link--normal">Мнения</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style=""><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="">
+			<a href="/спорт/" class="menu-nav-main__link">Спорт</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			
+			<div class="menu-nav-dropdown__content-item" style="{hide_menu}">
+				<div class="menu-nav-dropdown__nav" ><div class="menu-nav-dropdown__nav-item">
+	<a href="/спорт/футбол-българия/" title="Футбол БГ" class="menu-nav-dropdown__nav-link">Футбол БГ</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/спорт/футбол-свят/" title="Футбол Свят" class="menu-nav-dropdown__nav-link">Футбол Свят</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/спорт/извън-терена/" title="Извън терена" class="menu-nav-dropdown__nav-link">Извън терена</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/спорт/тото/" title="Тото" class="menu-nav-dropdown__nav-link">Тото</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/спорт/електронни-спортове/" title="Електронни спортове" class="menu-nav-dropdown__nav-link">Електронни спортове</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/спорт/спорт-по-телевизията/" title="Спорт по телевизията" class="menu-nav-dropdown__nav-link">Спорт по телевизията</a>
+</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/спорт/" class="menu-nav-main__link link link--normal">Спорт</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style=""><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="">
+			<a href="/бизнес/" class="menu-nav-main__link">Бизнес</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			
+			<div class="menu-nav-dropdown__content-item" style="{hide_menu}">
+				<div class="menu-nav-dropdown__nav" ><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/имоти/" title="Имоти" class="menu-nav-dropdown__nav-link">Имоти</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/вашите-пари/" title="Вашите пари" class="menu-nav-dropdown__nav-link">Вашите пари</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/инвестиции/" title="Инвестиции" class="menu-nav-dropdown__nav-link">Инвестиции</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/туризъм/" title="Туризъм" class="menu-nav-dropdown__nav-link">Туризъм</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/финанси/" title="Финанси" class="menu-nav-dropdown__nav-link">Финанси</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/икономика/" title="Икономика" class="menu-nav-dropdown__nav-link">Икономика</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/данъчен-консулт/" title="Данъчен консулт" class="menu-nav-dropdown__nav-link">Данъчен консулт</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/бизнес/капитал-и-пазари/" title="Капитал и пазари" class="menu-nav-dropdown__nav-link">Капитал и пазари</a>
+</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/бизнес/" class="menu-nav-main__link link link--normal">Бизнес</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style=""><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="">
+			<a href="/лайфстайл/" class="menu-nav-main__link">Лайфстайл</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			
+			<div class="menu-nav-dropdown__content-item" style="{hide_menu}">
+				<div class="menu-nav-dropdown__nav" ><div class="menu-nav-dropdown__nav-item">
+	<a href="/лайфстайл/лица/" title="Лица" class="menu-nav-dropdown__nav-link">Лица</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/лайфстайл/гурме/" title="Гурме" class="menu-nav-dropdown__nav-link">Гурме</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/вицове/" title="Вицове" class="menu-nav-dropdown__nav-link">Вицове</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/лайфстайл/технологии/" title="Технологии" class="menu-nav-dropdown__nav-link">Технологии</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/лайфстайл/шоубизнес/" title="Шоубизнес" class="menu-nav-dropdown__nav-link">Шоубизнес</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/лайфстайл/автомобили/" title="Автомобили" class="menu-nav-dropdown__nav-link">Автомобили</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/хороскоп-алена/" title="Хороскоп" class="menu-nav-dropdown__nav-link">Хороскоп</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/лайфстайл/днес-да-почерпят/" title="Днес да почерпят" class="menu-nav-dropdown__nav-link">Днес да почерпят</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/лайфстайл/наука/" title="Наука" class="menu-nav-dropdown__nav-link">Наука</a>
+</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/лайфстайл/" class="menu-nav-main__link link link--normal">Лайфстайл</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style=""><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="">
+			<a href="/култура/" class="menu-nav-main__link">Култура</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			
+			<div class="menu-nav-dropdown__content-item" style="{hide_menu}">
+				<div class="menu-nav-dropdown__nav" ><div class="menu-nav-dropdown__nav-item">
+	<a href="/култура/кино/" title="Кино" class="menu-nav-dropdown__nav-link">Кино</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/култура/сериали/" title="Сериали" class="menu-nav-dropdown__nav-link">Сериали</a>
+</div><div class="menu-nav-dropdown__nav-item">
+	<a href="/култура/изкуства/" title="Изкуства" class="menu-nav-dropdown__nav-link">Изкуства</a>
+</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/култура/" class="menu-nav-main__link link link--normal">Култура</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style=""><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="display:none">
+			<a href="/региони/" class="menu-nav-main__link">Региони</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			
+			<div class="menu-nav-dropdown__content-item" style="{hide_menu}">
+				<div class="menu-nav-dropdown__nav" ></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/региони/" class="menu-nav-main__link link link--normal">Региони</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style="display:none"><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+<div class="menu-nav__item js-menu-nav-item">
+	<div class="menu-nav-dropdown js-menu-nav-dropdown">
+		<div class="menu-nav-dropdown__head menu-nav-main" style="display:none">
+			<a href="/столицата/" class="menu-nav-main__link">Столицата</a>
+			<button type="button" class="menu-nav-main__button js-menu-nav-toggle "><svg class="icon icon--rotated">
+					<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+					</svg></button>
+		</div>
+		<div class="menu-nav-dropdown__content js-menu-nav-dropdown-content">
+			
+			<div class="menu-nav-dropdown__content-item" style="{hide_menu}">
+				<div class="menu-nav-dropdown__nav" ></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-nav-main ">
+		<a href="/столицата/" class="menu-nav-main__link link link--normal">Столицата</a>
+		<button type="button" class="menu-nav-main__button js-menu-nav-toggle" style="display:none"><svg class="icon">
+				<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-2"></use>
+			</svg></button>
+	</div>
+</div>
+							</div>
+						</div>
+
+						<div class="menu-subnav">
+							<div class="menu-subnav__container">
+								<div class="menu-subnav__item">
+									<a href="/реклама/" title="Реклама" class="menu-subnav__link link link--normal">Реклама</a>
+								</div>
+								<div class="menu-subnav__item">
+									<a href="/условия-за-ползване/" title="Условия за ползване" class="menu-subnav__link link link--normal">Условия за ползване</a>
+								</div>
+								<div class="menu-subnav__item">
+									<a href="/за-нас/" title="За нас" class="menu-subnav__link link link--normal">За нас</a>
+								</div>
+								<div class="menu-subnav__item">
+									<a href="/автори/" title="Автори" class="menu-subnav__link link link--normal">Автори</a>
+								</div>
+								<div class="menu-subnav__item">
+									<a href="/контакти/" title="Контакти" class="menu-subnav__link link link--normal">Контакти</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div id="search_top" class="menu__item js-menu-item" data-menu-item="search">
+					<div class="menu-search">
+						<form method="get" class="site-form menu-search__form" action="/архив/">
+							<div class="site-form__item">
+								<label for="menu-search" class="site-form__label sr-only">Търси с ключови думи…</label>
+								<div class="easy-autocomplete" style="width: 0px;"><input type="text" name="search" id="menu-search" class="menu-search__input site-form__input site-form__input--type-2 js-autocomplete" placeholder="Търси с ключови думи…" autocomplete="off" value=""><div class="easy-autocomplete-container" id="eac-container-menu-search"><ul style="display: none;"></ul></div></div>
+							</div>
+							<button type="submit" class="menu__button menu__button--submit">
+								<strong class="button__text sr-only">Търси</strong>
+								<svg class="icon">
+									<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 	<header class="sticky-header js-sticky-header">
+		<div class="sticky-header__wrapper">
+			<div class="sticky-header__head">
+				<div class="sticky-header__head-item">
+					<a href="/" title="logo" class="site-logo">
+						<img src="/public/trud/web/images/logo2020.svg" alt="test" class="site-logo__img" alt="Труд" />
+						<strong class="sr-only">Труд</strong>
+					</a>
+				</div>
+				<div class="sticky-header__head-item">
+					<a href="/бизнес/вашите-пари/" title="Вашите пари" class="sticky-header__head-title link link--normal">Вашите пари</a>
+				</div>
+			</div>
+			<div class="sticky-header__content">
+				<div class="sticky-header__content test">
+						<nav class="main-header__subnav js-header-subnav">
+							<ul class="subnav-list js-header-subnav-list">
+								<li class="subnav-list__item">
+	<a href="/бизнес/имоти/" title="Имоти" class="subnav-list__link ">Имоти</a>
+</li>
+<li class="subnav-list__item">
+	<a href="/бизнес/вашите-пари/" title="Вашите пари" class="subnav-list__link active">Вашите пари</a>
+</li>
+<li class="subnav-list__item">
+	<a href="/бизнес/инвестиции/" title="Инвестиции" class="subnav-list__link ">Инвестиции</a>
+</li>
+<li class="subnav-list__item">
+	<a href="/бизнес/туризъм/" title="Туризъм" class="subnav-list__link ">Туризъм</a>
+</li>
+<li class="subnav-list__item">
+	<a href="/бизнес/финанси/" title="Финанси" class="subnav-list__link ">Финанси</a>
+</li>
+<li class="subnav-list__item">
+	<a href="/бизнес/икономика/" title="Икономика" class="subnav-list__link ">Икономика</a>
+</li>
+<li class="subnav-list__item">
+	<a href="/бизнес/данъчен-консулт/" title="Данъчен консулт" class="subnav-list__link ">Данъчен консулт</a>
+</li>
+<li class="subnav-list__item">
+	<a href="/бизнес/капитал-и-пазари/" title="Капитал и пазари" class="subnav-list__link ">Капитал и пазари</a>
+</li>
+
+							</ul>
+						</nav>
+					</div>
+								</div>
+			<!-- <div class="sticky-header__button-holder">
+			</div> -->
+			<div class="sticky-header__progress-holder">
+				<span class="sticky-header__progress js-sticky-header-progress"></span>
+			</div>
+		</div>
+	</header>
+
+	<header id="head_fix_1" class="main-header">
+	<div id="head_fix_2" class="wrapper">
+		<div id="head_fix_3" class="main-header__container">
+			<style>
+			@media only screen and (min-width: 1000px) {
+			#head_fix_1{min-height: 145px}
+			#head_fix_2{min-height: 135px}
+			#head_fix_3{min-height: 135px;padding-top: 10px;}
+			}
+			@media (max-width: 768px)
+				{
+				.menu__button--close{top: 50px;}
+				}
+			</style>
+			<time class="bold_text_top time" datetime="29.01.21 / 18:54">
+				<span id="time-item" class="bold_text_top time-item--day time_fixes">Петък / 29.01.2021 / 18:54</span>
+			</time>
+			<script type="text/javascript">
+			// DAYS A WEEK
+			var days = ['Неделя','Понеделник','Вторник','Сряда','Четвъртък','Петък','Събота'];
+			var currentdate = new Date();
+
+			//	GET THE DAY OF THE MONTH, 2 DIGITS WITH LEADING ZEROS
+			var day = (currentdate.getDate() < 10	? '0' : '') + currentdate.getDate();
+			var month = (currentdate.getMonth() < 9	? '0' : '') + (currentdate.getMonth() + 1 ) ;
+			var $minutes =(currentdate.getMinutes() < 10	? '0' : '') + (currentdate.getMinutes());
+			var $hour =(currentdate.getHours() < 10	? '0' : '') + (currentdate.getHours());
+			var datetime = days[currentdate.getDay()] + " / "
+							+ day + "."
+							+ month	+ "."
+							+ currentdate.getFullYear() + " / "
+							+ $hour + ":"
+							+ $minutes;
+
+			document.getElementById("time-item").innerHTML = datetime ;
+			</script>
+			<div class="main-header__content">
+				<div class="group">
+					<a href="/" title="Труд" class="site-logo">
+						<img src="/public/trud/web/images/logo2020.svg" alt="Труд" class="site-logo__img logo_fixes" />
+						<strong class="sr-only">Труд</strong>
+					</a>
+					<div id="happy_paper" class="border" style="width: 700px;height: 85px;padding:0;margin:-23px 0px 0px 16px;line-height: 2.2em;z-index:36;">
+					<!-- <div id="happy_paper" class="border" style="width: 728px;height: 90px;padding:0;margin:-25px 0px 0px -12px;line-height: 2.2em;z-index:36;"> -->
+						<!-- tech(167) --><div class="section hidden--tablet"><div class="wrapper"><div class="plakat"><a href="https://cdn1.efbet.com/efbet/promotions/sport-casino/promotions.html?utm_source=trud&utm_medium=cpc&utm_campaign=tvc1&utm_content=700x85" style="display:block">
+	<picture>
+		<source srcset="/public/ads/efbet_728x90.webp" type="image/webp">
+		<source srcset="/public/ads/efbet_728x90.png" type="image/jpeg">
+		<img src="/public/ads/efbet_728x90.png" alt="efbet" style="margin-top: 2px;">
+	</picture>
+</a></div></div></div>						<!-- cache fix -->
+						<!-- cache fix -->
+						<!-- cache fix -->
+						<!-- cache fix -->
+						<!-- cache fix -->
+						<!-- <a href="/вижте-карта-на-света-с-потвърдените-сл/" style="display:block">
+							<picture>
+								<source srcset="/public/images/COVID-19-World-new.webp" type="image/webp">
+								<source srcset="/public/images/COVID-19-World-new.jpg" type="image/jpeg">
+								<img src="/public/images/COVID-19-World-new.jpg" alt="COVID 19 map">
+							</picture>
+						</a> -->
+						<!-- <a href="https://cdn1.efbet.com/efbet/promotions/sport-casino/promotions.html?utm_source=trud&utm_medium=cpc&utm_campaign=tvc1&utm_content=700x85" style="display:block">
+							<picture>
+								<source srcset="/public/ads/efbet_728x90.webp" type="image/webp">
+								<source srcset="/public/ads/efbet_728x90.png" type="image/jpeg">
+								<img src="/public/ads/efbet_728x90.png" alt="efbet" style="margin-top: 2px;">
+							</picture>
+						</a> -->
+					</div>
+				</div>
+				<nav class="additional-nav">
+					<div class="additional-nav__container">
+													<div class="additional-nav__item">
+								<div class="button-holder" style="max-width:128px;margin:0 0 -4px 0;">
+									<a href="/хороскоп-алена/" title="Хороскоп" class="bold_text_top button button--light button--icon button--horoscope top_menu_right_buttons"
+									style="padding:0 !important;">
+									<img src="/public/images/horoskop_alena2.png" alt="Хороскоп Алена">									</a>
+								</div>
+							</div>
+													<div class="additional-nav__item">
+								<div class="button-holder" >
+									<a href="/вицове/" title="Вицове" class="bold_text_top button button--light button--icon button--horoscope button_jokes top_menu_right_buttons"
+									>
+																			<span class="button__text">Вицове</span>
+																			</a>
+								</div>
+							</div>
+													<div class="additional-nav__item">
+								<div class="button-holder" >
+									<a href="/tv_program/" title="TV" class="bold_text_top button button--light  button_tv_program top_menu_right_buttons"
+									>
+																			<span class="button__text">TV</span>
+																			</a>
+								</div>
+							</div>
+													<div class="additional-nav__item">
+								<div class="button-holder" >
+									<a href="/времето/" title="Времето" class="bold_text_top button button--light button_weather top_menu_right_buttons"
+									>
+																			<span class="button__text">Времето</span>
+																			</a>
+								</div>
+							</div>
+											</div>
+				</nav>
+			</div>
+			<div class="main-header__menu">
+				<div class="main-header__menu-item main-header__menu-item--nav">
+					<nav class="main-header__nav" style="overflow:visible;">
+					<a href="/новини/" title="Новини" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes">
+	<span class="main-header__nav-text">Новини</span>
+</a><a href="/мнения/" title="Мнения" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes">
+	<span class="main-header__nav-text">Мнения</span>
+</a><a href="/спорт/" title="Спорт" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes">
+	<span class="main-header__nav-text">Спорт</span>
+</a><a href="/бизнес/" title="Бизнес" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes">
+	<span class="main-header__nav-text">Бизнес</span>
+</a><a href="/лайфстайл/" title="Лайфстайл" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes">
+	<span class="main-header__nav-text">Лайфстайл</span>
+</a><a href="/култура/" title="Култура" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes">
+	<span class="main-header__nav-text">Култура</span>
+</a><a href="/региони/" title="Региони" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes">
+	<span class="main-header__nav-text">Региони</span>
+</a><a href="/столицата/" title="Столицата" id="stolicata_top_menu" class="main-header__nav-link js-header-nav-link link link--normal  top_menu_fixes" style="position: relative;padding: 0 !important;margin: -7px 0 0 0;">
+    <img src="/public/images/stolicata/stolicata_stolichna_obshtina_logo_30.png" alt="" style="position: absolute;top: 2px;left: 0;">
+	<span class="main-header__nav-text" style="color: black;overflow:hidden;font-size:116% !important;padding: 7px 10px 4px 0px;border-radius: 5px 0 0;margin-left: 28px;margin-bottom: 0px;">Столицата</span>
+</a>					</nav>
+					<div class="main-header__controller">
+						<span class="group group--custom social_icons">
+							<div class="social__item">
+	<a href="https://www.youtube.com/channel/UCqvbqlPfFGnFIiSpMdObXHQ" class="link link--opacity" target="_blank">
+		<svg class="icon icon--yt">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-yt"></use>
+		</svg>
+	</a>
+</div><div class="social__item">
+	<a href="https://instagram.com/trud.bg/" class="link link--opacity" target="_blank">
+		<svg class="icon icon--inst">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-inst"></use>
+		</svg>
+	</a>
+</div><div class="social__item">
+	<a href="https://www.facebook.com/trud.bg" class="link link--opacity" target="_blank">
+		<svg class="icon icon--fb">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-fb"></use>
+		</svg>
+	</a>
+</div>						</span>
+						<style>
+							@media only screen and (min-width: 768px)
+								{
+								#alena_mobile{display: none}
+								#search_desktop{display: inline-block}
+								#archive_datepicker_input{display: none;}
+								#archive_datepicker_img{display: none;}
+								}
+							@media only screen and (max-width: 768px)
+								{
+								#alena_mobile{display: inline-block !important}
+								#search_desktop{display: none !important}
+								#archive_datepicker_input{display: none;}
+								#archive_datepicker_img{display: none;}
+								}
+							@media only screen and (min-width: 1025px)
+								{
+								#archive_datepicker_input{display: block;}
+								#archive_datepicker_img{display: block;}
+								}
+						</style>
+						<!-- ALENA ICON MOBILE -->
+						<button id="alena_mobile" type="button" class="menu__button menu__button--search" style="right:0;left:auto">
+							<a href="/хороскоп-алена/" title="Хороскоп Алена">
+								<img src="/public/images/horoskop_alena1_mobile.png" alt="Хороскоп Алена" style="margin-bottom: 15px;">
+							</a>
+						</button>
+
+						<!-- SEARCH ICON DESKTOP -->
+						<button id="search_desktop" type="button" class="menu__button menu__button--search js-menu-toggle" data-menu-item="search"
+						onclick="document.getElementById('search').focus();">
+							<svg class="icon">
+								<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-search"></use>
+							</svg>
+						</button>
+						<button type="button" class="menu__button menu__button--menu js-menu-toggle" data-menu-item="nav" style="left:0;right:auto">
+							<svg class="icon">
+								<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-sandwich"></use>
+							</svg>
+						</button>
+						<!-- ARCHIVE DATEPICKER START -->
+						<input name="archive_datepicker_input" id="archive_datepicker_input" value="" type="text" style="width:0;border:0;" >
+						<div id="archive_datepicker_img" class="button-holder" onclick="archive_datepicker()">
+							<a href="#" title="Всички Новини" class="bold_text_top button button--light button_weather top_menu_right_buttons" style="padding:5px !important;margin: 0 0 3px 5px;">
+								<span class="button__text">Всички Новини</span>
+							</a>
+						</div>
+						<script type="text/javascript">
+						function archive_datepicker()
+							{
+							var $to_load = '/public/_core/jquery.ui/base/jquery-ui.min.css';
+							$('head').append($('<link rel="stylesheet" type="text/css" />').attr('href', $to_load));
+
+							$to_load = '/public/_core/jquery.ui/jquery-ui.min.js';
+							$.getScript($to_load, function()
+								{
+								$to_load = '/public/_core/datepicker/datepicker-bg.js';
+								$.getScript($to_load, function()
+									{
+									$to_load = '/public/js/archive_calendar.js';
+									$.getScript($to_load, function(){});
+									});
+								});
+							}
+						</script>
+						<!-- ARCHIVE DATEPICKER END -->
+					</div>
+				</div>
+							</div>
+		</div>
+	</div>
+</header><div class="site js-site">
+<style>
+#article_text_container a{
+color: #01345b!important;
+text-decoration: none!important;
+border-bottom: 3px double currentColor;
+}
+#article_text_container p
+	{
+    /* color: #000; */
+	margin-bottom: 20px;
+    line-height: 1.6;
+	}
+.accent__text, .quote__text{margin: 0!important;}
+.text .tooltip {
+    z-index:auto;
+}
+.js-tooltip-container{
+	z-index: 99;
+}
+#article_text_container .plakat{clear:both}
+.section h2{
+	padding-bottom: 0.3em;
+	line-height: 1.2em;
+}
+</style>
+<!-- <script async src="https://apis.google.com/js/api.js"></script> -->
+<script async src="/public/_core/ajax.js"></script>
+<!-- TWITTER SCRIPT -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+function number_clean($number)
+	{
+	if ( $number === true )
+		{
+		return 1;
+		}
+	$number = String($number);
+	if ( $number == '' || $number == undefined )
+		{ return 0; }
+	$number = pstr_replace(' ', '', $number);
+	$number = pstr_replace(',', '.', $number);
+	// check if negative and save
+	var $negative = $number.substr(0, 1);
+	$number = $number.replace(/[^\d.]/g, '');
+	$number = parseFloat($number);
+	if ( $number == '' || $number == undefined || isNaN($number) )
+		{ return 0; }
+	// if was negative fix it
+	if ( $negative == '-' )
+		{
+		$number = $number * -1;
+		}
+	return $number;
+	}
+function pfloat($number){return number_clean($number);}
+function pround($number, $decimal){if($decimal==undefined){$decimal=0;}$number=pfloat($number);return Math.round($number*Math.pow(10,$decimal))/Math.pow(10,$decimal);}
+function pint($number){return $number=pround($number);}
+function pstr_replace($search, $replace, $string)
+	{
+	$string = String($string);
+
+	if ( $search == '' || $search == undefined || $string == '' || $string == undefined )
+		{ return $string; }
+
+	if ( $search == '\\' )
+		{ $string = $string.replace(/\\/g, $replace); }
+	else if ( $search == '/' )
+		{ $string = $string.replace(/\//g, $replace); }
+	else
+		{
+		while ( $string.search($search) != -1 )
+			{ $string = $string.replace($search, $replace); }
+		}
+	return $string;
+	}
+var $trud_get_id = "5074706";
+var $article_id = "5074706";
+function rate_comment($comment_id, $like)
+	{
+	// HANDLE LIKE
+	if ($like == 1)
+		{
+		// check block
+		if ( $('#like_' + $comment_id).attr('done') == '1' )
+			{
+			return 0;
+			}
+		// GET LIKE COUNT++
+		var $count = pint( $('#like_' + $comment_id).html() ) + 1;
+		// block like
+		$('#like_' + $comment_id).attr('done', 1);
+		}
+
+	// HANDLE LIKE
+	else
+		{
+		// check block
+		if ( $('#dislike_' + $comment_id).attr('done') == '1' )
+			{
+			return 0;
+			}
+		// GET LIKE COUNT++
+		var $count = pint( $('#dislike_' + $comment_id).html() ) + 1;
+		// block like
+		$('#dislike_' + $comment_id).attr('done', 1);
+		}
+
+	var $request = new Array();
+	$request['url'] = '/index.php?p=trud_ajax&article_id=5074706&ajax_rate=1&like=' + $like + '&comment_id=' + $comment_id;
+	$request['on_success'] = 'rate_comment_success';
+	$request['on_success_data'] = {'comment_id' : $comment_id, 'like' : $like, 'count': $count};
+
+	ajax_request($request);
+	}
+
+function rate_comment_success($answer, $data)
+	{
+	if ($answer == '1')
+		{
+		if ($data.like == 1)
+			{
+			$('#like_' + $data.comment_id).html( $data.count );
+			}
+		else
+			{
+			$('#dislike_' + $data.comment_id).html( $data.count );
+			}
+		}
+	}
+
+document.addEventListener("DOMContentLoaded", function(event)
+	{
+	// ARTICLE VIEW++
+	if ( null )
+		{
+		setTimeout(function()
+			{
+			$("#autoopen_comments").trigger('click');
+			},1);
+		}
+	var $request = new Array();
+	$request['url'] = '/index.php?p=trud_ajax&view=' + $article_id;
+	ajax_request($request);
+	document.getElementById('test').style.display = 'none';
+	});
+
+</script>
+<main class="main-content">
+	<!-- TOP SLIDER -->
+	<!-- TOP SLIDER -->
+	<!-- TOP SLIDER -->
+	<!-- <style>
+	@media (max-width: 1366px)
+	{
+	#top_slider_parent{
+		display: flex;
+		margin: 0 auto 0 auto;
+	}
+	#top_slider_parent {width: calc(280px + (1297 - 280) * ((100vw - 320px)/ (1366 - 320)));}
+	}
+	#top_slider{height:200px}
+	@media (max-width: 1024px){#top_slider{height:189px}}
+	@media (max-width: 768px){#top_slider{height:188px}}
+	@media (max-width: 640px){#top_slider{height:150px}}
+	</style> -->
+	<!-- <div id="top_slider_parent" style="overflow: auto;-webkit-overflow-scrolling:touch;">
+		<iframe id="top_slider" src="https://trud.bg/top_slider/"
+		style="height:0;max-height:100%;max-width:100%; min-height: 100%;min-width: 100%;width: 0;"
+		frameborder="0" onload="iframe_full_height(this.id, 1)"></iframe>
+	</div> -->
+	<div class="section pb-80">
+		<div class="wrapper">
+			<div class="grid-holder grid-holder--main">
+				<div class="grid gutters--grid-2">
+					<style>
+						#article_left{padding:20px 0 0 50px;margin-right: -15px;}
+						#article_left2{padding:0;}
+						/* #article_right{padding: 20px 50px 0 30px;} */
+						@media (max-width: 1024px)
+						{
+						#article_left{padding:20px 20px 0 20px;margin-right:0;}
+						/* #article_right{padding: 20px;} */
+						}
+					</style>
+					<div id="article_left" class="grid__item">
+										<!-- <a target="_blank" href="//">ПРОИЗВОЛНА СТАТИЯ</a> -->
+					<!-- // -->
+					<!-- <a target="_blank" href="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">ОРИГИНАЛ</a> -->
+
+
+						<!-- CRUMBS AND BACK -->
+						<!-- CRUMBS AND BACK -->
+						<!-- CRUMBS AND BACK -->
+						<div class="breadcrumbs">
+							<div class="wrapper">
+								<div class="breadcrumbs__container">
+									<div class="breadcrumbs__content">
+										<a href="/" class="breadcrumbs__link link link--normal">Начало</a>
+										<a href="/бизнес/" class="breadcrumbs__link link link--normal">Бизнес</a><a href="/бизнес/вашите-пари/" class="breadcrumbs__link link link--normal">Вашите пари</a>									</div>
+									<div class="breadcrumbs__button-holder">
+										<a href="/бизнес/вашите-пари/" class="breadcrumbs__button">
+										<svg class="icon">
+												<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-arrow-1"></use>
+											</svg>
+											<span class="breadcrumbs__button-text">Върни се назад</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- TITLE -->
+						<!-- TITLE -->
+						<!-- TITLE -->
+						<div class="section js-progress">
+							<div class="section">
+								<div class="wrapper">
+									<div class="inner-article">
+										<div class="inner-article__head">
+											<div class="text ">
+												<h3>Служителите ще получават по 24 лв. на ден (обзор)</h3>
+											</div>
+											<style>
+.fL{float:left}.fR{float:right}.cL{clear:left}.cR{clear:right}#site .cB,.cB{clear:both}.h1,.h2,.h3,.h4,.h5,.h6{font-weight:700}.h1{font-size:3em;margin:.65em 0 .5em;line-height:1.1}.h2{font-size:2.25em;margin:.65em 0;line-height:1.1}.h3{font-size:1.75em;margin:.5em 0 .4em}.h4{font-size:1.5em;margin:1em 0 .55em}.h5{font-size:1.25em}.h6{font-size:1em}.m-xxs{margin:.428em}.m-xs{margin:.857em}.m-s{margin:1.286em}.m-m{margin:1.714em}.m-l{margin:2.142em}.m-xl{margin:2.571em}.m-xxl{margin:3.428em}.m-y-xxs{margin:.428em 0}.m-y-xs{margin:.857em 0}.m-y-s{margin:1.286em 0}.m-y,.m-y-m{margin:1.714em 0}.m-y-l{margin:2.142em 0}.m-y-xl{margin:2.571em 0}.m-y-xxl{margin:3.428em 0}.m-x-xxs{margin:0 .428em}.m-x-xs{margin:0 .857em}.m-x-s{margin:0 1.286em}.m-x,.m-x-m{margin:0 1.714em}.m-x-l{margin:0 2.142em}.m-x-xl{margin:0 2.571em}.m-x-xxl{margin:0 3.428em}.m-t-xxs{margin-top:.428em}.m-t-xs{margin-top:.857em}.m-t-s{margin-top:1.286em}.m-t,.m-t-m{margin-top:1.714em}.m-t-l{margin-top:2.142em}.m-t-xl{margin-top:2.571em}.m-t-xxl{margin-top:3.428em}.m-r-xxs{margin-right:.428em}.m-r-xs{margin-right:.857em}.m-r-s{margin-right:1.286em}.m-r,.m-r-m{margin-right:1.714em}.m-r-xl{margin-right:2.571em}.m-r-xxl{margin-right:3.428em}.m-b-xxs{margin-bottom:.428em}.m-b-xs{margin-bottom:.857em}.m-b-s{margin-bottom:1.286em}.m-b,.m-b-m{margin-bottom:1.714em}.m-b-l{margin-bottom:2.142em}.m-b-xl{margin-bottom:2.571em}.m-b-xxl{margin-bottom:3.428em}.m-l-xxs{margin-left:.428em}.m-l-xs{margin-left:.857em}.m-l-s{margin-left:1.286em}.m-l,.m-l-m{margin-left:1.714em}.m-l-l{margin-left:2.142em}.m-l-xl{margin-left:2.571em}.m-l-xxl{margin-left:3.428em}.p-xxs{padding:.428em}.p-xs{padding:.857em}.p-s{padding:1.286em}.p-m{padding:1.714em}.p-l{padding:2.142em}.p-xl{padding:2.571em}.p-xxl{padding:3.428em}.p-y-xxs{padding:.428em 0}.p-y-xs{padding:.857em 0}.p-y-s{padding:1.286em 0}.p-y,.p-y-m{padding:1.714em 0}.p-y-l{padding:2.142em 0}.p-y-xl{padding:2.571em 0}.p-y-xxl{padding:3.428em 0}.p-x-xxs{padding:0 .428em}.p-x-xs{padding:0 .857em}.p-x-s{padding:0 1.286em}.p-x,.p-x-m{padding:0 1.714em}.p-x-l{padding:0 2.142em}.p-x-xl{padding:0 2.571em}.p-x-xxl{padding:0 3.428em}.p-t-xxs{padding-top:.428em}.p-t-xs{padding-top:.857em}.p-t-s{padding-top:1.286em}.p-t,.p-t-m{padding-top:1.714em}.p-t-l{padding-top:2.142em}.p-t-xl{padding-top:2.571em}.p-t-xxl{padding-top:3.428em}.p-r-xxs{padding-right:.428em}.p-r-xs{padding-right:.857em}.p-r-s{padding-right:1.286em}.p-r,.p-r-m{padding-right:1.714em}.p-r-l{padding-right:2.142em}.p-r-xl{padding-right:2.571em}.p-r-xxl{padding-right:3.428em}.p-b-xxs{padding-bottom:.428em}.p-b-xs{padding-bottom:.857em}.p-b-s{padding-bottom:1.286em}.p-b,.p-b-m{padding-bottom:1.714em}.p-b-l{padding-bottom:2.142em}.p-b-xl{padding-bottom:2.571em}.p-b-xxl{padding-bottom:3.428em}.p-l-xxs{padding-left:.428em}.p-l-xs{padding-left:.857em}.p-l-s{padding-left:1.286em}.p-l,.p-l-m{padding-left:1.714em}.p-l-l{padding-left:2.142em}.p-l-xl{padding-left:2.571em}.p-l-xxl{padding-left:3.428em}time{cursor:default}:root .owl-theme .owl-dots .owl-dot span{width:12px;height:12px;margin:6px}.theme-13 .owl-theme .owl-dots .owl-dot.active span,.theme-13 .owl-theme .owl-dots .owl-dot:hover span{background:#8a1313}.section-top-slider .no-slider{display:flex;flex-wrap:nowrap;overflow:hidden;margin:0 -10px 10px}.section-top-slider .no-slider .item{width:20%;padding:0 10px;flex-shrink:0}.section-top-slider .img,.section-top-slider article a{display:block}.section-top-slider .img{margin-bottom:.5em}.section-sport-slider .img.object-fit-img,.section-top-slider .img.object-fit-img{position:relative;padding-top:56.25%;background:url(../images/logo2020_gray.svg) no-repeat 50% 2em;background-size:80%}.section-sport-slider .img.object-fit-img img,.section-top-slider .img.object-fit-img img{display:block;position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;overflow:hidden;object-fit:cover;transform-origin:center}.section-top-slider h3{max-height:2.5em;overflow:hidden;font-size:1em;line-height:1.3em}.section-top-slider .owl-nav span,:root .section-top-slider .owl-nav button{display:block;width:36px;height:36px;border-radius:50%}:root .section-top-slider .owl-nav button,:root .section-topic-slider .owl-nav button{position:absolute;top:26%;top:calc(50% - 2.8em);z-index:10;transition:opacity .3s ease;outline:0}:root .section-top-slider .owl-nav button:hover{opacity:.7}:root .section-top-slider .owl-nav .owl-prev{left:-15px}:root .section-top-slider .owl-nav .owl-next{right:-15px}.section-top-slider .owl-nav span,.section-topic-slider .owl-nav span{position:relative;text-indent:150%;white-space:nowrap;overflow:hidden}.section-top-slider .owl-nav span:after,.section-top-slider .owl-nav span:before,.section-topic-slider .owl-nav span:after,.section-topic-slider .owl-nav span:before{content:"";position:absolute;top:50%;left:50%;display:block;border-style:solid}.section-top-slider .owl-nav span:before,.section-topic-slider .owl-nav span:before{width:8px;height:8px;border-width:0 0 1px 1px;border-color:#555}.section-top-slider .owl-nav .owl-prev span:before,.section-topic-slider .owl-nav .owl-prev span:before{transform:translate(-4px,-50%) rotate(45deg)}.section-top-slider .owl-nav .owl-next span:before,.section-topic-slider .owl-nav .owl-next span:before{transform:translate(-4px,-50%) rotate(-135deg)}.section-top-slider .owl-nav span:after,.section-topic-slider .owl-nav span:after{width:10px;margin-top:-1px;border-width:2px 0 0;border-color:#888}.section-top-slider .owl-nav .owl-prev span:after,.section-topic-slider .owl-nav .owl-prev span:after{margin-left:-4px}.section-top-slider .owl-nav .owl-next span:after,.section-topic-slider .owl-nav .owl-next span:after{margin-left:-6px}.section-topic-slider{overflow:hidden;position:relative;width:100%;border-radius:0 10px 0 0;box-shadow:0 0 4px rgba(0,0,0,.2)}.section-topic-slider .no-slider{display:flex;flex-direction:row;flex-wrap:nowrap}.section-topic-slider .no-slider:after,.section-topic-slider .no-slider:before,.section-topic-slider .owl-carousel:after,.section-topic-slider .owl-carousel:before{content:"";position:absolute;top:0;bottom:0;width:15%;min-width:5em;z-index:1}.section-topic-slider .no-slider:before,.section-topic-slider .owl-carousel:before{background:linear-gradient(to right,#f8fafa 20%,rgba(248,250,250,0) 100%)}.section-topic-slider .no-slider:after,.section-topic-slider .owl-carousel:after{right:0;border-radius:0 10px 0 0;background:linear-gradient(to right,rgba(248,250,250,0) 0,#f8fafa 80%)}.section-topic-slider .item,.section-topic-slider .owl-carousel,.section-topic-slider .owl-item,.section-topic-slider .owl-stage,.section-topic-slider .owl-stage-outer,.section-topic-slider article,.section-topic-slider article a{height:100%;min-height:2em}.section-topic-slider .item{padding:0 1em}.section-topic-slider article a{position:relative;display:flex;display:flex;align-items:center}.section-topic-slider article a:before{content:"";position:absolute;top:50%;left:-1em;display:block;width:3px;height:3px;margin-top:-2px;margin-left:-2px;background-color:currentcolor;border-radius:50%}.section-topic-slider h3{font-size:.85em;white-space:nowrap}:root .section-topic-slider .owl-nav{margin:0}:root .section-topic-slider .owl-nav button{top:1px;margin:0}.section-topic-slider .owl-nav span,:root .section-topic-slider .owl-nav button{display:block;width:29px;height:29px;border-radius:50%}:root .section-topic-slider .owl-nav .owl-prev{left:4px}:root .section-topic-slider .owl-nav .owl-next{right:4px}.section-opinions-slider{margin-bottom:20px}.section-opinions-slider .owl-carousel{margin-left:0;padding:10px 0;padding-bottom:24px;border-radius:0 15px}.section-opinions-slider .owl-carousel:after{content:"";position:absolute;top:0;left:0;bottom:0;right:0;z-index:-1;background:url(../images/single-letter-white.svg) no-repeat 100% 100%;background-size:87px;opacity:.2}.section-opinions-slider h2{margin:0 0 .3em;font-size:1.9em}.section-opinions-slider article{position:relative;padding:15px;border-top:1px solid rgba(192,192,192,.4)}.section-opinions-slider article:first-child{border-top-width:0}.section-opinions-slider .img{margin-bottom:.7em}.section-opinions-slider h3{margin-bottom:.5em;font-size:1.1em}.info-tag,.section-opinions-slider time,.section-popular time,.section-world-slider time{font-size:.75em;font-weight:700}.section-opinions-slider .owl-theme .owl-dots{position:absolute;top:-2.8em;right:1em}.section-opinions-slider .author{position:relative;padding-top:.5em}.section-opinions-slider .author>a{display:flex;align-items:center}.section-opinions-slider .avatar{width:70px;height:70px;flex-shrink:0;margin-left:-24px;margin-right:.5em;border:2px solid;border-radius:50%;overflow:hidden}.section-opinions-slider .author-name{font-size:.9em}.section-popular{max-width:1290px;max-width:300px;margin:0 auto;padding-bottom:.5em;border-radius:0 0 0 15px;background:url(../images/single-letter-grey.svg) no-repeat right bottom;background-size:87px}.section-popular h2{margin:0;padding:.8em .7em .7em;font-size:1em;font-weight:400;text-align:center;border-radius:10px 0 0}.section-popular article{position:relative;padding:1.1em;padding-left:58px;counter-increment:counter-numbers;border-style:solid;border-width:0 0 1px}.section-popular article:last-child{border-bottom-width:0}.section-popular article:before{content:counter(counter-numbers);position:absolute;left:10px;top:50%;font-size:60px;font-weight:700;color:rgba(112,112,112,.2);transform:translateY(-45%)}.section-popular h3{margin-bottom:.5em;font-size:1em;line-height:1.3em}.section-sport-slider{position:relative}.section-sport-slider:before{content:"";position:absolute;top:-1px;bottom:30%;width:18px;left:-18px;background-color:currentColor}.section-sport-slider article{position:relative}.section-faces-slider .info,.section-sport-slider .info{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:1.5em;padding-top:3em;background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 100%);text-shadow:2px 2px 8px rgba(0,0,0,.7),2px 2px 8px #000,2px 2px 8px rgba(0,0,0,.7)}.section-sport-slider h3{margin-bottom:.5em;font-size:1.9em;max-height:4.6em;overflow:hidden}.section-sport-slider .owl-theme .owl-nav.disabled+.owl-dots{display:flex;margin:4px -2px 0}.section-sport-slider .owl-dots button{width:100%}.section-sport-slider .owl-theme .owl-dots .owl-dot span{width:auto;margin:0 2px;border-radius:0}.section-sport-slider .owl-theme .owl-dots .owl-dot.active span,.section-sport-slider .owl-theme .owl-dots .owl-dot:hover span{background-color:currentColor}.section-world-slider .item{display:flex;flex-wrap:wrap}.section-world-slider article{width:50%}.section-world-slider article .img,.section-world-slider article .info{float:left;width:50%}.section-world-slider article .info{position:relative;left:-10px;margin-top:1em;padding:1em;border-radius:10px 0 0}.section-world-slider h3{margin-bottom:.3em}.section-more-world-slider .article-wrapper{margin:0 -20px}.section-more-world-slider .item{padding:0 20px;border-left:1px solid}.section-more-world-slider .item:nth-child(4n+1){border-left-width:0}.section-faces-slider{margin-bottom:1.3em;overflow-y:hidden}.section-faces-slider .owl-stage{display:flex}.section-faces-slider .img,.section-faces-slider .img a,.section-faces-slider .item,.section-faces-slider article{height:100%}.section-faces-slider .img a{display:block}.section-faces-slider .info{pointer-events:none}.section-faces-slider h3{min-height:3.7em;margin-bottom:0;font-size:1.5em}.inner-article-heading{float:left;overflow-wrap:anywhere;max-width:calc(100% - 200px)}.inner-article__head{display:block;float:left;width:100%;margin:0;padding:0;border-bottom:2px solid #ccc}.inner-article__head-group{display:block;float:left;clear:left;padding-left:0}.inner-article .author{float:right}.inner-article .author img{width:190px}.section-opinions-slider .avatar{transition:all .2s ease}.section-world-slider article .info,:root .section-top-slider .owl-carousel .owl-nav button,:root .section-topic-slider .owl-carousel .owl-nav button{background-color:#fff}.section-opinions-slider .owl-theme .owl-dots .owl-dot span{background-color:#8099ad}.section-opinions-slider .owl-theme .owl-dots .owl-dot.active span,.section-opinions-slider .owl-theme .owl-dots .owl-dot:hover span{background-color:#000}.section-topic-slider{background-color:#f8fafa}.section-opinions-slider .owl-carousel{background-color:#5381a6}.section-latest,.section-latest .info{background-color:#f8f8f8}.section-faces-slider .img a{background-color:#eee}.section-popular{background-color:#f3f7fa}.section-popular h2{background-color:#025381}.section-opinions-slider .avatar{border-color:#fff}.section-more-world-slider .item,.section-popular article{border-color:rgba(192,192,192,.4)}.section-faces-slider h3,.section-popular h2,.section-sport-slider .info,.section-sport-slider .info a{color:#fff}.section-more-world-slider,.section-opinions-slider h2,.section-popular a,.section-popular article,.section-world-slider article .info{color:#000}.section-more-world-slider .tag__text{color:rgba(0,0,0,.5)}
+</style><style>
+@media only screen and (min-width:1025px){.section-more-world-slider .article-wrapper{display:flex;flex-wrap:wrap;overflow-x:hidden}.section-more-world-slider .item{width:25%;margin-bottom:3em}}@media only screen and (max-width:1024px){.section-top-slider .no-slider .item{width:25%}.section-world-slider article{margin-bottom:1em;padding:0 1em 0 1px}.section-world-slider article .img,.section-world-slider article .info{width:100%}.section-world-slider article .info{position:relative;top:-20px;left:auto;width:auto;margin-top:0;margin-right:6%;padding:1em;border-radius:0 10px}}@media only screen and (max-width:767px){.section-top-slider .no-slider .item{width:33.33%}.section-sport-slider:before{width:calc(12px + (18 - 12) * ((100vw - 320px)/ (768 - 320)));left:calc(-1*(12px + (18 - 12) * ((100vw - 320px)/ (768 - 320))))}.section-sport-slider h3{font-size:1.7em}}@media only screen and (max-width:640px){.section-top-slider .no-slider .item{width:50%}.section-topic-slider{border-radius:0 0 10px 0}.topic{margin-top:1em}.topic .topic__title{padding:1em}.section-topic-slider article a{padding:.7em .3em}:root .section-topic-slider .owl-nav button{top:3px}.section-sport-slider h3{font-size:1.5em}.section-world-slider article{width:100%}.section-world-slider article:last-child{margin-bottom:0}.inner-article-heading{width:60%;max-width:none}.inner-article .author{width:35%}.inner-article .author img{width:auto;max-width:100%}}
+</style>											<div class="inner-article__head-group">
+												<div class="inner-article__content">
+													<!-- AUTHOR -->
+													<!-- AUTHOR -->
+													<!-- AUTHOR -->
+													<div class="inner-article__content-group">
+														<div class="tag">
+															<a href="/автор/trud/">
+																<span class="tag__text">Автор: <b style="font-size:115%;color:black">Труд</b></span>
+															</a>
+														</div>
+													</div>
+													<!-- CATEGORY AND DATE -->
+													<!-- CATEGORY AND DATE -->
+													<!-- CATEGORY AND DATE -->
+													<div class="inner-article__content-group">
+														<div class="tag">
+															<div class="grid-holder">
+																<div class="grid grid--wrap grid--align-center gutters--3">
+																	<div class="grid__item grid__item--w-auto grid__item--no-grow grid__item-no-shrink">
+																		<div class="tag__item tag__item--dot">
+																			<span class="tag__text">
+																				<a href="/бизнес/вашите-пари/" title="link" class="link link--normal">Вашите пари</a>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="grid__item grid__item--w-auto grid__item--no-grow grid__item-no-shrink">
+																		<div class="tag__item tag__item--dot">
+																			<time class="tag__text" datetime="2020-11-19T18:29:00+02:00">18:29</time>
+																		</div>
+																	</div>
+																	<div class="grid__item grid__item--w-auto grid__item--no-grow grid__item-no-shrink">
+																		<div class="tag__item">
+																			<time class="tag__text" datetime="19.11.2020">19.11.2020</time>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- TOP COMMENTS AND SHARE -->
+											<!-- TOP COMMENTS AND SHARE -->
+											<!-- TOP COMMENTS AND SHARE -->
+											<div class="inner-article__head-group">
+												<div class="inner-article__content">
+													<!-- <div class="inner-article__content-group">
+														<button type="button" class="page-button page-button--comments js-show-scroll-button" data-scroll="comments" data-show="comments-container" >
+																												</button>
+													</div> -->
+													<!-- SHARE TOP -->
+													<!-- SHARE TOP -->
+													<!-- SHARE TOP -->
+													<div class="inner-article__content-group">
+														<div class="sh-list">
+															<button class="hand">
+															<a onclick="share_facebook()" title="Share on Facebook">
+																<svg class="icon icon--social icon--social-fb">
+																	<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-facebook-new"></use>
+																</svg>
+															</a>
+															</button>
+
+															<button class="sharer" data-sharer="twitter" data-title="Служителите ще получават по 24 лв. на ден (обзор) - Труд" data-img="https://trud.bg/public/images/articles/2020-11/04-3_2647485095903027465_big.jpg" data-url="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">
+															<a title="Tweet">
+																<svg class="icon icon--social icon--social-twitter">
+																	<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-twitter"></use>
+																</svg>
+															</a>
+															</button>
+
+															<button class="sharer" data-sharer="viber" data-title="" data-hashtags="" data-url="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">
+																<a class="sharer" title="Share on Viber">
+																	<svg class="icon icon--social icon--social-viber">
+																		<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-viber"></use>
+																	</svg>
+																</a>
+															</button>
+
+															<button class="sharer" data-sharer="whatsapp" data-title="" data-hashtags="" data-url="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">
+																<a title="Share on whatsup">
+																	<svg class="icon icon--social icon--social-whatsup">
+																		<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-whatsapp"></use>
+																	</svg>
+																</a>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section">
+								<div id="article_left2" class="wrapper wrapper--padded">
+									<div id="article_container" class="text clearfix" style="color:black">
+																					<div class="big-image" style="margin-bottom: 15px;">
+												<div class="big-image__container">
+													<div class="picture picture--16-9">
+														<a href="/public/images/articles/2020-11/04-3_2647485095903027465_original.jpg" data-lightbox="main-image" data-title="Държавата ще дава по 24 лв. на ден на работник в неплатен отпуск.">
+															<picture class="picture__content ">
+																<source media="(min-width: 769px)" srcset="/public/images/articles/2020-11/04-3_2647485095903027465_big.jpg" data-srcset="/public/images/articles/2020-11/04-3_2647485095903027465_big.jpg" class="object-fit-img js-object-fit-img">
+																<source media="(max-width: 640px)" srcset="/public/images/articles/2020-11/04-3_2647485095903027465_small.jpg" data-srcset="/public/images/articles/2020-11/04-3_2647485095903027465_small.jpg" class="object-fit-img js-object-fit-img">
+																<img src="/public/images/articles/2020-11/04-3_2647485095903027465_big.jpg" alt="image" data-src="/public/images/articles/2020-11/04-3_2647485095903027465_big.jpg" class="lazyload object-fit-img js-object-fit-img">
+															</picture>
+														</a>
+																											</div>
+													<span class="big-image__author"></span>
+												</div>
+												<div class="desc_img">Държавата ще дава по 24 лв. на ден на работник в неплатен отпуск.</div>
+											</div>
+											<aside class="text__aside" style="clear: both">
+	<div class="list list--color">
+		<h2 class="section__heading">
+			<span class="section__heading-text">Още по темата:</span>
+		</h2>
+		<div class="list__item">
+	<article class="article">
+		<div class="article__container">
+			<div class="article__content-holder">
+				<div class="article__content">
+					<h3 class="article__title article__title--s" >
+						<a href="/нстс-не-постигна-единодушие-относно-минималната-работна-заплата/" class="link link--normal" target="_blank">НСТС не постигна единодушие за размера на минималната работна заплата</a>
+					</h3>
+					<div class="tag">
+						<div class="grid-holder">
+							<div class="grid grid--wrap grid--align-center gutters--3">
+								<div class="grid__item grid__item--w-auto grid__item--no-grow grid__item-no-shrink">
+									<div class="tag__item tag__item--dot">
+										<time class="tag__text" datetime="13:33">13:33</time>
+									</div>
+								</div>
+								<div class="grid__item grid__item--w-auto grid__item--no-grow grid__item-no-shrink">
+									<div class="tag__item">
+										<time class="tag__text" datetime="2020-11-19">2020-11-19</time>
+									</div>
+								</div>
+								<!-- <div class="grid__item grid__item--w-auto grid__item--no-grow grid__item-no-shrink">
+									<span class="tag__item">
+										<svg class="icon icon--eye">
+											<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-eye"></use>
+										</svg>
+										<span class="tag__text"></span>
+									</span>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</div>
+	</div>
+</aside><div id="article_text_container"><p><strong>Бизнесът отхвърли 650 лв. минималната заплата</strong></p>
+<p><strong>Държавата плаща 60 дни на хора в неплатен отпуск</strong></p>
+<p>Държавата ще плаща за не повече от 60 дни компенсация на работниците, които са в неплатен отпуск, заради затворени със заповед бизнеси. Това предвижда постановление на правителството, което синдикатите и работодателите подкрепиха на заседание на Тристранката. При продължителност на работния ден от 8 часа служителят ще получава по 24 лева на ден за периода на неплатения отпуск, а ако е на непълен работен ден, размерът на компенсацията се определя пропорционално.</p>
+<p>Работниците ще предоставят на работодателя си писмена декларация по образец, в която посочват периода за ползване на неплатен отпуск и банкова сметка, по която да се изплащат парите. Заявления се подават в дирекция &ldquo;Бюро по труда&rdquo;, като комисия разглежда документите в срок от 10 работни дни.</p>
+<p>Социалните партньори обсъдиха и ръста на минималната заплата от догодина. Работодателските организации отхвърлиха предложението тя да се увеличи на 650 лв.</p></div>										<script type="text/javascript">
+										document.addEventListener("DOMContentLoaded", function(event)
+											{
+											var $ad = "<div class=\"section\"><div class=\"wrapper\"><div class=\"plakat\"><script async src=\"https:\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\r\n<!-- Adaptive_News -->\r\n<ins class=\"adsbygoogle\"\r\n     style=\"display:block\"\r\n     data-ad-client=\"ca-pub-1532774560299313\"\r\n     data-ad-slot=\"8511604942\"\r\n     data-ad-format=\"auto\"\r\n     data-full-width-responsive=\"true\"><\/ins>\r\n<script>\r\n     (adsbygoogle = window.adsbygoogle || []).push({});\r\n<\/script><\/div><\/div><\/div>";
+											var $kids = $('#article_text_container').children();
+											// d('ad');
+											// d($kids.length);
+											var $after = pround($kids.length / 2);
+											if ( $after > 0 )
+												{
+												$after--;
+												}
+											d($after);
+											$('#article_text_container').children(':eq('+ $after +')').after( $ad );
+											});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="wrapper">
+								<div class="page-controller">
+									<!-- SHARE BUTTONS -->
+									<!-- SHARE BUTTONS -->
+									<!-- SHARE BUTTONS -->
+									<div class="page-controller__item page-controller__item--border">
+										<div class="sh-list">
+											<button class="hand">
+												<a onclick="share_facebook()" title="Share on Facebook">
+													<svg class="icon icon--social icon--social-fb">
+														<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-facebook-new"></use>
+													</svg>
+												</a>
+											</button>
+
+											<button class="sharer" data-sharer="twitter" data-title="Служителите ще получават по 24 лв. на ден (обзор)" data-hashtags="javascript,Social" data-url="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">
+											<a title="Tweet">
+												<svg class="icon icon--social icon--social-twitter">
+													<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-twitter"></use>
+												</svg>
+											</a>
+											</button>
+
+											<button class="sharer" data-sharer="viber" data-title="" data-hashtags="javascript,Social" data-url="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">
+												<a class="sharer" title="Share on Viber">
+													<svg class="icon icon--social icon--social-viber">
+														<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-viber"></use>
+													</svg>
+												</a>
+											</button>
+
+											<!-- <button class="sharer" data-sharer="instapaper" data-title="" data-hashtags="javascript,Social" data-url="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">
+											<a title="Share on Instagram">
+												<svg class="icon icon--social icon--social-instagram">
+													<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-instagram-new"></use>
+												</svg>
+											</a>
+											</button> -->
+
+											<button class="sharer" data-sharer="whatsapp" data-title="" data-hashtags="javascript,Social" data-url="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/">
+												<a title="Share on whatsup">
+													<svg class="icon icon--social icon--social-whatsup">
+														<use xlink:href="/public/trud/web/images/icons/sprite-social.svg#icon-whatsapp"></use>
+													</svg>
+												</a>
+											</button>
+										</div>
+									</div>
+									<!-- tech(4) --><div class="section visible--tablet"><div class="wrapper"><div class="plakat"><iframe src="https://trud.bg/public/ads/efbet_300x250/" height="250" width="300" title="efbet" style="border:0"></iframe></div></div></div><div class="page-controller__item">
+	<div class="button-holder">
+		<div class="grid-holder">
+			<div class="grid grid--wrap grid--justify-center gutters--10">
+				<div class="grid__item grid__item--w-auto grid__item--no-grow">
+					<a href="#" id="autoopen_comments" title="link" class="yellow_comments_buttons button button--dark button--icon button--show js-show-scroll-button" data-scroll="comments" data-show="comments-container">
+						<svg class="icon">
+							<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-comment"></use>
+						</svg>
+						<span class="button__text">Покажи коментарите</span>
+					</a>
+				</div>
+				<div class="grid__item grid__item--w-auto grid__item--no-grow">
+					<a href="#" title="link" class="yellow_comments_buttons button button--dark button--icon button--write js-show-scroll-button" data-scroll="comments" data-show="comments-container">
+						<svg class="icon">
+							<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-pen"></use>
+						</svg>
+						<span class="button__text">Напиши коментар</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div action="post" class="site-form comments" data-section="comments">
+		<div class="comments__container" data-section="comments-container">
+			<div class="comments__head">
+				<h2 class="comments__header">Коментари</h2>
+				<!-- <div class="comments__filter">
+					<span class="comments__filter-title order_by">Подреди по:</span>
+					<div class="site-form__item site-form__item--comments-search">
+						<label for="regions-popup-select" class="site-form__label sr-only">Подреди по:</label>
+						<form>
+							<input name="p" value="article" type="hidden">
+							<input name="id" value="5074706" type="hidden">
+							<select id="filter" name="filter" class="js-select site-form__select site-form__select--type-5 filter order_filter" onchange="this.form.submit();">
+								<option value="newest"  >Най-скорошни</option>
+								<option value="latest"  >Най-стари</option>
+								<option value="most_likes"  >Най-одобрявани</option>
+								<option value="most_dislikes" >Най-неодобрявани</option>
+							</select>
+						</form>
+					</div>
+				</div> -->
+			</div>
+			<div class="comments-tabs js-tabs">
+				<div class="comments-tabs__nav">
+					<a href="#" title="link" class="button button--border button--icon button--comments-tab button--facebook comments-tabs__nav-item js-tabs-nav-button active">
+						<svg class="icon">
+							<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-fb"></use>
+						</svg>
+						<span class="button__text">Facebook</span>
+					</a>
+					<!-- <a href="#" title="link" class="button button--border button--icon button--comments-tab button--trud comments-tabs__nav-item js-tabs-nav-button ">
+						<svg class="icon">
+							<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-single-letter-no-bb"></use>
+						</svg>
+						<span class="button__text">Коментари</span>
+					</a> -->
+				</div>
+				<div class="comments-tabs__content js-comments-tabs-content">
+
+
+
+					<div class="comments-tabs__content-item js-tabs-content-item ">
+						<!-- facebook comments here -->
+						<!-- facebook comments here -->
+						<!-- facebook comments here -->
+						<div class="fb-comments" data-href="https://trud.bg/служителите-ще-получават-по-24-лв-на-ден-обзор/" data-numposts="2" style="width: 100%">
+						</div>
+					</div>
+
+
+					<!-- TRUD COMMENTS -->
+					<div id="test" class="comments-tabs__content-item js-tabs-content-item">
+						<form method="post" class="hide">
+							<div class="comments__form">
+								<div class="grid-holder">
+									<div class="grid grid--wrap gutters--8">
+										<div class="grid__item grid__item--w-50 grid__item--w-100-phone">
+											<div class="site-form__item">
+												<label for="comments-name" class="site-form__label sr-only">Вашето име</label>
+												<input type="text" name="name" id="name" class="site-form__input site-form__input--type-1" placeholder="Вашето име..." autocomplete="off">
+											</div>
+										</div>
+										<div class="grid__item grid__item--w-50 grid__item--w-100-phone">
+											<div class="site-form__item has-error">
+												<label for="email" class="site-form__label sr-only">Вашият Email</label>
+												<input type="email" name="email" id="email" class="site-form__input site-form__input--type-1" placeholder="Вашият Email..." autocomplete="off">
+												<div class="site-form__error">Задължително поле</div>
+											</div>
+										</div>
+										<div class="grid__item">
+											<div class="site-form__item">
+												<label for="comment-message" class="site-form__label sr-only">Вашият коментар...</label>
+												<textarea rows="4" cols="50" name="text" id="comment-message" class="site-form__textarea" placeholder="Вашият коментар..."></textarea>
+											</div>
+										</div>
+										<div class="grid__item">
+											<button name="submit" id="submit" class="yellow_comments_buttons button button--min-w" value="1" type="submit" >Изпрати</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<ul class="comments__list">
+												</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>									<!-- <a href="/бизнес/вашите-пари/" class="section__heading-anchor link link--normal" title="Виж Всички">
+										<h1 class="section__heading section__heading--xl section__heading--link pb-10">
+											<span class="section__heading-text"></span>
+										</h1>
+									</a> -->
+																	</div>
+							</div>
+						</div>
+					</div>
+					<!-- RIGHT SIDE -->
+					<!-- RIGHT SIDE -->
+					<!-- RIGHT SIDE -->
+					<div id="article_right" class="grid__item grid__item--aside-2">
+						<!-- tech(1) --><iframe id="top_news" src="https://trud.bg/top_news/" style="width:100%;height:593px;padding-bottom:20px;" frameborder="0" onload="iframe_full_height(this.id, 1)"></iframe><div class="section hidden--tablet"><div class="wrapper"><div class="plakat"><iframe src="https://trud.bg/public/ads/efbet_300x600/" height="600" width="300" title="efbet" style="border:0"></iframe></div></div></div><div class="section"><div class="wrapper"><div class="plakat"><div id="ado-DlX6CpXNQ6KChkMq4CdlZqms8yTAvrKsQoQ587I69d7.Y7"></div>
+			<script type="text/javascript">
+			/* (c)AdOcean 2003-2018, trud_bg.trud_new.________ _______ */
+			ado.placement({id: 'ado-DlX6CpXNQ6KChkMq4CdlZqms8yTAvrKsQoQ587I69d7.Y7', server: 'bg.adocean.pl' });
+			</script></div></div></div><div class="section"><div class="wrapper"><div class="plakat"><script type="text/javascript" id="etargetScript83c2d3c72106b8670bd14d262e752583">function etargetPostloadFunction83c2d3c72106b8670bd14d262e752583(){var e="etargetPostload83c2d3c72106b8670bd14d262e752583",t="etargetScript83c2d3c72106b8670bd14d262e752583",o=document.getElementById(e);if(o){for(var n=o.offsetTop,d=o.offsetLeft,r=o.offsetWidth,a=o.offsetHeight;o.offsetParent;)o=o.offsetParent,n+=o.offsetTop,d+=o.offsetLeft;var i=n<window.pageYOffset+window.innerHeight&&d<window.pageXOffset+window.innerWidth&&n+a>window.pageYOffset&&d+r>window.pageXOffset;if(i&&etargetAllowOtherCheck){allowed=!1;var c=document.createElement("script");return c.src="//bg.search.etargetnet.com/generic/uni.php?g=ref:78646,area:300x250",void(document.getElementById(t)&&document.getElementById(e)&&(document.getElementById(t).parentNode.appendChild(c),document.getElementById(t).parentNode.removeChild(document.getElementById(t)),document.getElementById(e).parentNode.removeChild(document.getElementById(e)),document.removeEventListener("scroll",etargetPostloadFunction83c2d3c72106b8670bd14d262e752583),document.removeEventListener("resize",etargetPostloadFunction83c2d3c72106b8670bd14d262e752583),document.removeEventListener("DOMContentLoaded",etargetPostloadFunction83c2d3c72106b8670bd14d262e752583)))}}}var etargetDivID="etargetPostload83c2d3c72106b8670bd14d262e752583",etargetScriptID="etargetScript83c2d3c72106b8670bd14d262e752583",etargetPostloadPoint=document.createElement("div");etargetPostloadPoint.id=etargetDivID;var etargetCurScript=document.getElementById(etargetScriptID);etargetCurScript.parentNode.appendChild(etargetPostloadPoint),document.addEventListener("scroll",etargetPostloadFunction83c2d3c72106b8670bd14d262e752583),document.addEventListener("resize",etargetPostloadFunction83c2d3c72106b8670bd14d262e752583),document.addEventListener("DOMContentLoaded",etargetPostloadFunction83c2d3c72106b8670bd14d262e752583);var etargetAllowOtherCheck=!0;if(typeof("forceRunPostload")=="string"){etargetPostloadFunction83c2d3c72106b8670bd14d262e752583()}</script></div></div></div><div class="section"><div class="wrapper"><div class="plakat"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Article Aside Area -->
+<ins class="adsbygoogle"
+	style="display:block"
+	data-ad-client="ca-pub-1532774560299313"
+	data-ad-slot="4543025061"
+	data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div></div><div class="section"><div class="wrapper"><div class="plakat"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-1532774560299313"
+     data-ad-slot="2560056647"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div></div>					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ВИЖ ПОСЛЕДНИТЕ НОВИНИ -->
+<!-- ВИЖ ПОСЛЕДНИТЕ НОВИНИ -->
+<!-- ВИЖ ПОСЛЕДНИТЕ НОВИНИ -->
+<iframe id="latest_news" src="https://trud.bg/latest_news/" style="width:100%;height:393px" frameborder="0" onload="iframe_full_height(this.id, 1)"></iframe>
+</main>
+<script type="text/javascript">
+// SET IFRAME TO FULL CONTENT HEIGHT TO ELIMINATE SCROLL
+// THE FUNCTION IS CALLED ON READY: window.onresize = function(){iframe_full_height('IFRAME_ID', 1);}
+// IT RUNS ONCE MORE AFTER 500ms
+function iframe_full_height($id, $retry)
+	{
+	// RESET
+	$('#' + $id).css('height', '');
+	// SET
+	$('#' + $id).css('height', $('#' + $id).contents().height());
+	// console.log($id +' = '+ $('#' + $id).contents().height());
+	// DO ANOTHER FOR LAG FIX
+	if ( $retry == 1 )
+		{
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 100);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 200);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 400);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 600);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 800);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 1000);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 2000);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 3000);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 4000);
+		setTimeout("iframe_full_height('"+ $id +"', 0)", 5000);
+		}
+	}
+document.addEventListener("DOMContentLoaded", function(event)
+	{
+	window.onresize = function()
+		{
+		iframe_full_height('latest_news', 1);
+		iframe_full_height('top_news', 1);
+		// iframe_full_height('top_slider', 1);
+		}
+	});
+</script><footer class="main-footer black">
+	<div class="main-footer__top">
+		<div class="wrapper">
+			<div class="main-footer__top-container">
+				<div class="footer-logo">
+					<a href="/" title="Труд" class="site-logo">
+						<img src="/public/trud/web/images/logo2020.svg" alt="Труд" class="site-logo__img" />
+						<strong class="sr-only">Труд</strong>
+					</a>
+				</div>
+				<div class="footer-list">
+					<div class="grid-holder">
+						<div class="grid grid--align-start grid--wrap-desktop grid--justify-space-b grid--justify-center-phablet gutters--10">
+							<!-- BOTTOM MENU -->
+							<!-- BOTTOM MENU -->
+							<!-- BOTTOM MENU -->
+							<div class="grid__item grid__item--w-auto grid__item--w-60-desktop grid__item--w-auto-phablet grid__item--no-grow">
+	<div class="nav-list">
+		<h3 class="nav-list__title">
+			<a href="/новини/" title="Новини" class="nav-list__title-link link link--opacity">Новини</a>
+		</h3>
+		<ul class="nav-list__content nav-list__content--custom hidden--phablet">
+			<li class="nav-list__content-item" style="padding-bottom: 15px;">
+	<a href="/новини/българия/" title="България" class="nav-list__content-link link link--normal">България</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/българия/крими-и-право/" title="Крими и право" class="nav-list__content-link link link--normal">Крими и право</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/българия/политика/" title="Политика" class="nav-list__content-link link link--normal">Политика</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/българия/здраве/" title="Здраве" class="nav-list__content-link link link--normal">Здраве</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/българия/образувание/" title="Образование" class="nav-list__content-link link link--normal">Образование</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/българия/трудово-правна-консултация/" title="Трудово-правна консултация" class="nav-list__content-link link link--normal">Трудово-правна консултация</a>
+</li> <li class="nav-list__content-item" style="padding-bottom: 15px;">
+	<a href="/новини/свят/" title="Свят" class="nav-list__content-link link link--normal">Свят</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/свят/европа/" title="Европа" class="nav-list__content-link link link--normal">Европа</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/свят/русия/" title="Русия" class="nav-list__content-link link link--normal">Русия</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/свят/сащ/" title="Америка" class="nav-list__content-link link link--normal">Америка</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/свят/азия/" title="Азия" class="nav-list__content-link link link--normal">Азия</a>
+</li> <li class="nav-list__content-item" style="">
+	<a href="/новини/свят/близък-изток/" title="Близък Изток" class="nav-list__content-link link link--normal">Близък Изток</a>
+</li>
+		</ul>
+	</div>
+</div><div class="grid__item grid__item--w-auto grid__item--w-20-desktop grid__item--w-auto-phablet grid__item--no-grow">
+	<div class="nav-list">
+		<h3 class="nav-list__title">
+			<a href="/мнения/" title="Мнения" class="nav-list__title-link link link--opacity">Мнения</a>
+		</h3>
+		<ul class="nav-list__content hidden--phablet">
+		<li class="nav-list__content-item" style="">
+	<a href="/мнения/анализи/" title="Анализи" class="nav-list__content-link link link--normal">Анализи</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/мнения/коментари/" title="Коментари" class="nav-list__content-link link link--normal">Коментари</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/мнения/интервюта/" title="Интервюта" class="nav-list__content-link link link--normal">Интервюта</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/мнения/силуети/" title="Силуети" class="nav-list__content-link link link--normal">Силуети</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/мнения/репортажи/" title="Репортажи" class="nav-list__content-link link link--normal">Репортажи</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/мнения/разследване/" title="Разследване" class="nav-list__content-link link link--normal">Разследване</a>
+</li>
+		</ul>
+	</div>
+</div><div class="grid__item grid__item--w-auto grid__item--w-20-desktop grid__item--w-auto-phablet grid__item--no-grow">
+	<div class="nav-list">
+		<h3 class="nav-list__title">
+			<a href="/спорт/" title="Спорт" class="nav-list__title-link link link--opacity">Спорт</a>
+		</h3>
+		<ul class="nav-list__content hidden--phablet">
+		<li class="nav-list__content-item" style="">
+	<a href="/спорт/футбол-българия/" title="Футбол БГ" class="nav-list__content-link link link--normal">Футбол БГ</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/спорт/футбол-свят/" title="Футбол Свят" class="nav-list__content-link link link--normal">Футбол Свят</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/спорт/електронни-спортове/" title="Електронни спортове" class="nav-list__content-link link link--normal">Електронни спортове</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/спорт/тото/" title="Тото" class="nav-list__content-link link link--normal">Тото</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/спорт/спорт-по-телевизията/" title="Спорт по телевизията" class="nav-list__content-link link link--normal">Спорт по телевизията</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/спорт/извън-терена/" title="Извън терена" class="nav-list__content-link link link--normal">Извън терена</a>
+</li>
+		</ul>
+	</div>
+</div><div class="grid__item grid__item--w-auto grid__item--w-20-desktop grid__item--w-auto-phablet grid__item--no-grow">
+	<div class="nav-list">
+		<h3 class="nav-list__title">
+			<a href="/бизнес/" title="Бизнес" class="nav-list__title-link link link--opacity">Бизнес</a>
+		</h3>
+		<ul class="nav-list__content hidden--phablet">
+		<li class="nav-list__content-item" style="">
+	<a href="/бизнес/имоти/" title="Имоти" class="nav-list__content-link link link--normal">Имоти</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/бизнес/вашите-пари/" title="Вашите пари" class="nav-list__content-link link link--normal">Вашите пари</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/бизнес/инвестиции/" title="Инвестиции" class="nav-list__content-link link link--normal">Инвестиции</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/бизнес/туризъм/" title="Туризъм" class="nav-list__content-link link link--normal">Туризъм</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/бизнес/финанси/" title="Финанси" class="nav-list__content-link link link--normal">Финанси</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/бизнес/икономика/" title="Икономика" class="nav-list__content-link link link--normal">Икономика</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/бизнес/данъчен-консулт/" title="Данъчен консулт" class="nav-list__content-link link link--normal">Данъчен консулт</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/бизнес/капитал-и-пазари/" title="Капитал и пазари" class="nav-list__content-link link link--normal">Капитал и пазари</a>
+</li>
+		</ul>
+	</div>
+</div><div class="grid__item grid__item--w-auto grid__item--w-20-desktop grid__item--w-auto-phablet grid__item--no-grow">
+	<div class="nav-list">
+		<h3 class="nav-list__title">
+			<a href="/лайфстайл/" title="Лайфстайл" class="nav-list__title-link link link--opacity">Лайфстайл</a>
+		</h3>
+		<ul class="nav-list__content hidden--phablet">
+		<li class="nav-list__content-item" style="">
+	<a href="/лайфстайл/лица/" title="Лица" class="nav-list__content-link link link--normal">Лица</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/лайфстайл/шоубизнес/" title="Шоубизнес" class="nav-list__content-link link link--normal">Шоубизнес</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/лайфстайл/гурме/" title="Гурме" class="nav-list__content-link link link--normal">Гурме</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/лайфстайл/автомобили/" title="Автомобили" class="nav-list__content-link link link--normal">Автомобили</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/лайфстайл/технологии/" title="Технологии" class="nav-list__content-link link link--normal">Технологии</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/лайфстайл/наука/" title="Наука" class="nav-list__content-link link link--normal">Наука</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/лайфстайл/днес-да-почерпят/" title="Днес да почерпят" class="nav-list__content-link link link--normal">Днес да почерпят</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/вицове/" title="Вицове" class="nav-list__content-link link link--normal">Вицове</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/хороскоп-алена/" title="Хороскоп" class="nav-list__content-link link link--normal">Хороскоп</a>
+</li>
+		</ul>
+	</div>
+</div><div class="grid__item grid__item--w-auto grid__item--w-20-desktop grid__item--w-auto-phablet grid__item--no-grow">
+	<div class="nav-list">
+		<h3 class="nav-list__title">
+			<a href="/култура/" title="Култура" class="nav-list__title-link link link--opacity">Култура</a>
+		</h3>
+		<ul class="nav-list__content hidden--phablet">
+		<li class="nav-list__content-item" style="">
+	<a href="/култура/кино/" title="Кино" class="nav-list__content-link link link--normal">Кино</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/култура/сериали/" title="Сериали" class="nav-list__content-link link link--normal">Сериали</a>
+</li><li class="nav-list__content-item" style="">
+	<a href="/култура/изкуства/" title="Изкуства" class="nav-list__content-link link link--normal">Изкуства</a>
+</li>
+		</ul>
+	</div>
+</div>						</div>
+					</div>
+				</div>
+				<div class="narrow-content">
+					<div class="footer-group">
+						<div class="footer-nav">
+							<div class="grid-holder">
+								<div class="grid grid--wrap grid--justify-center-laptop gutters--h-15 gutters--v-5">
+									<div class="grid__item grid__item--w-auto grid__item--no-grow">
+										<a href="/архив/" title="Архив" class="footer-nav__link link link--opacity">Архив</a>
+									</div>
+									<div class="grid__item grid__item--w-auto grid__item--no-grow">
+										<a href="/за-нас/" title="За нас" class="footer-nav__link link link--opacity">За нас</a>
+									</div>
+									<div class="grid__item grid__item--w-auto grid__item--no-grow">
+										<a href="/автори/" title="Автори" class="footer-nav__link link link--opacity">Автори</a>
+									</div>
+									<div class="grid__item grid__item--ml-auto grid__item--ml-0-laptop grid__item--w-auto grid__item--no-grow">
+										<a href="/реклама/" title="Реклама" class="footer-nav__link link link--opacity">Реклама</a>
+									</div>
+									<div class="grid__item grid__item--w-auto grid__item--no-grow">
+										<a href="/условия-за-ползване/" title="Условия за ползване" class="footer-nav__link link link--opacity">Условия за ползване</a>
+									</div>
+									<div class="grid__item grid__item--w-auto grid__item--no-grow">
+										<a href="/контакти/" title="Контакти" class="footer-nav__link link link--opacity">Контакти</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="social">
+							<div class="grid-holder">
+								<div class="grid grid--align-center grid--justify-center gutters--10">
+
+								<div class="grid__item grid__item--w-auto grid__item--no-grow grid__item--no-shrink">
+	<a href="https://www.youtube.com/channel/UCqvbqlPfFGnFIiSpMdObXHQ" title="Youtube" class="link link--opacity" target="_blank">
+		<svg class="icon icon--yt">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-yt"></use>
+		</svg>
+	</a>
+</div><div class="grid__item grid__item--w-auto grid__item--no-grow grid__item--no-shrink">
+	<a href="https://instagram.com/trud.bg/" title="Instagram" class="link link--opacity" target="_blank">
+		<svg class="icon icon--inst">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-inst"></use>
+		</svg>
+	</a>
+</div><div class="grid__item grid__item--w-auto grid__item--no-grow grid__item--no-shrink">
+	<a href="https://www.facebook.com/trud.bg" title="Facebook" class="link link--opacity" target="_blank">
+		<svg class="icon icon--fb">
+			<use xlink:href="/public/trud/web/images/icons/sprite.svg#icon-fb"></use>
+		</svg>
+	</a>
+</div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-footer__bottom">
+	<div class="wrapper">
+		<div class="footer-copy">
+			<div class="grid-holder">
+				<div class="grid grid--align-center grid--justify-space-b grid--wrap-phone grid--justify-center-phone gutters--h-10 gutters--v-5">
+					<div class="grid__item grid__item--w-auto grid__item--no-grow">
+						<p class="footer-copy__text">© 2020 Труд. Всички права са запазени.</p>
+					</div>
+					<div class="grid__item grid__item--w-auto grid__item--no-grow">
+						<p class="footer-copy__text"><a href="https://v-systems.eu/" target="_blank" rel="noopener">Платформа: Ви Системс</a> // 
+<a href="https://www.studiox.bg/" target="_blank" rel="noopener">Дизайн: Студио Х</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div></footer>
+		<link type="text/css" rel="stylesheet" href="/public/_core/lightbox2-master/dist/css/lightbox.css">
+		<script src="/public/_core/lightbox2-master/dist/js/lightbox.min.js"></script>
+		</div>
+<!-- Gemius -->
+<!-- Gemius -->
+<!-- (C)2000-2020 Gemius SA - gemiusPrism  / trud.bg/Home Page -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = 'ogI6rzuki8k4VFQgj_m.dZPaLb9uqZr0SxrMl9akz5..37';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');gt.setAttribute('defer','defer'); gt.src=l+'://gabg.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+</script>
+
+<!-- HIDE GOOGLE AUTO PLACE IN OPINION SLIDER (IT BREAKS) -->
+<!-- HIDE GOOGLE AUTO PLACE IN OPINION SLIDER (IT BREAKS) -->
+<!-- HIDE GOOGLE AUTO PLACE IN OPINION SLIDER (IT BREAKS) -->
+<style>
+	.opinions .google-auto-placed{display: none}
+</style>
+
+<!-- advertising PHlvfORi9Zj4UrZvZBBn_papyCrIAGqeR0ktN5uZZjnKM3Ws05sWHz0Kh43GMBNz5ck1m4M34LvmLi5tGF3rzw==-->
+<script data-cfasync="false"  id="clevernt" type="text/javascript">
+(function (document, window) {
+var c = document.createElement("script");
+c.type = "text/javascript"; c.async = !0; c.id = "CleverNTLoader45074";  c.setAttribute("data-target",window.name); c.setAttribute("data-callback","put-your-callback-macro-here");
+c.src = "//clevernt.com/scripts/99ce5677313771af2c373b5a200bbe4e.min.js?20200716=" + Math.floor((new Date).getTime());
+var a = !1;
+try {
+a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+} catch (e) {
+a = !1;
+}
+a || ( a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+a.parentNode.insertBefore(c, a);
+})(document, window);
+</script>
+<!-- end advertising -->
+
+<!-- COOKIE WARNING -->
+<script async defer id="cookieWarn" type="text/javascript" src="/public/js/cookie/cookie-warn.min.js"
+data-lang-bg="{
+'text':'trud.bg използва Бисквитки.',
+'accept_text': 'Добре',
+'more_text': '',
+'more_link': '/условия-за-ползване/',
+'reject_text': '',
+'reject_info': 'You can disable unwanted cookies by using this program',
+'reject_link': 'https://www.ghostery.com/'
+}"
+></script><!-- TIME: 0.06 -->
+</body>
+</html>

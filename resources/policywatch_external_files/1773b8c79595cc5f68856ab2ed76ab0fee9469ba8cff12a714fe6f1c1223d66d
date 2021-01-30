@@ -1,0 +1,511 @@
+<!DOCTYPE html><html class="no-js" lang="el"><head><meta charset="UTF-8"><link rel="preload" href="https://static.euronews.com/fonts/noto-sans/noto-sans-latin-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://static.euronews.com/fonts/noto-sans/noto-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect dns-prefetch" href="https://static.euronews.com"><link rel="preconnect dns-prefetch" href="https://api.privacy-center.org"><link rel="preconnect dns-prefetch" href="https://sdk.privacy-center.org"><link rel="preconnect dns-prefetch" href="https://www.googletagservices.com"><link rel="preconnect dns-prefetch" href="https://pagead2.googlesyndication.com"><link rel="dns-prefetch" href="https://api.ownpage.fr"><link rel="dns-prefetch" href="https://script.ownpage.fr"><link rel="dns-prefetch" href="https://mailmunch.co"><link rel="dns-prefetch" href="https://forms.mailmunch.co"><link rel="dns-prefetch" href="https://analytics.mailmunch.co"><link rel="dns-prefetch" href="https://api.cxense.com"><link rel="dns-prefetch" href="https://sp1cluster.cxense.com"><link rel="dns-prefetch" href="https://scomcluster.cxense.com"><link rel="dns-prefetch" href="https://id.cxense.com"><link rel="dns-prefetch" href="https://csyn.cxense.com"><link rel="dns-prefetch" href="https://scdn.cxense.com"><link rel="dns-prefetch" href="https://connect.facebook.net"><link rel="dns-prefetch" href="https://ping.chartbeat.net"><link rel="dns-prefetch" href="https://static.chartbeat.com"><link rel="dns-prefetch" href="https://odb.outbrain.com"><link rel="dns-prefetch" href="https://log.outbrainimg.com"><link rel="dns-prefetch" href="https://mcdp-chidc2.outbrain.com"><link rel="dns-prefetch" href="https://sync.outbrain.com"><link rel="dns-prefetch" href="https://libs.outbrain.com"><link rel="dns-prefetch" href="https://tcheck.outbrainimg.com"><link rel="dns-prefetch" href="https://widgets.outbrain.com"><meta name="dfp-data" content="{&quot;rootId&quot;:&quot;6458&quot;,&quot;adUnit&quot;:null,&quot;keyValues&quot;:null,&quot;level1&quot;:&quot;euronews_new&quot;,&quot;level1AMP&quot;:&quot;euronews_new_AMP&quot;,&quot;mpuLimit&quot;:3,&quot;moatTimeout&quot;:1000,&quot;lazyLoadingOffset&quot;:&quot;100&quot;,&quot;hasSwipe&quot;:true,&quot;moatJwClientId&quot;:&quot;euronewsjwvideo227963755119&quot;}"><meta name="global-store-data" content="eyJrZXlWYWx1ZXMiOnsidGhpcmRfcGFydF9hZHNfdGltZW91dCI6IjMwMDAiLCJmZWF0dXJlX2ZsaXBwaW5nIjp7ImZhc3QiOnsiVnV1a2xlIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImFkb2JlIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJhZHNBdXRvcmVmcmVzaCI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sImFsbFZpZXdzIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJhbXBfYWRvYmVhbmFseXRpY3MiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJhbXBfYXV0b19wcmV2aWV3X3ZpZGVvX21pbnV0ZWx5Ijp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJhbXBfZGlkb21pIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiYW1wX291dGJyYWluIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiYW1wX3Nwb3RpbSI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6dHJ1ZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOnRydWUsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOnRydWUsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sImF1dG9fcHJldmlld192aWRlb19taW51dGVseSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiYXV0b19yZWZyZXNoX2xpdmluZyI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sImF1dG9yZWZyZXNoIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1IjpmYWxzZSwidHIiOmZhbHNlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiY2hhcnRiZWF0Ijp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJjaGFydGJlYXRfbWFiIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJjeGVuc2UiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImN4ZW5zZV9jbXNfcHVibGljIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOnRydWUsImZhIjpmYWxzZSwiZnIiOnRydWUsImh1IjpmYWxzZSwiaXQiOnRydWUsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImRhaWx5bW90aW9uIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJkaWRvbWkiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImZhY2Vib29rIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6dHJ1ZX0sInRoaXJkcGFydCI6dHJ1ZX0sImZsaWdodHNfZXVyb25ld3MiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJnbG9iYWxfZm9vdGVyIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6dHJ1ZX0sInRoaXJkcGFydCI6dHJ1ZX0sImdvb2dsZU9wdGltaXplIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1IjpmYWxzZSwidHIiOmZhbHNlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJodHRwcyI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOnRydWV9LCJ0aGlyZHBhcnQiOmZhbHNlfSwibGF6eWJsb2NrIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1Ijp0cnVlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sIm1hcmZlZWwiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJtYXJmZWVsX21ldGEiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOnRydWUsImRlIjpmYWxzZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6ZmFsc2UsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjp0cnVlfSwidGhpcmRwYXJ0IjpmYWxzZX0sIm1vYXQiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjpmYWxzZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJvb3Z2dXUiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sIm91dGJyYWluIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJvdXRicmFpbl9sYXp5bG9hZGluZyI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0Ijp0cnVlfSwicGZwTGl2ZSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6ZmFsc2UsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJwZnBWT0QiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjpmYWxzZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sInBsYXllcl9sYXp5bG9hZF9jbGljayI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sInNjcmliYmxlbGl2ZSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOnRydWV9LCJ0aGlyZHBhcnQiOnRydWV9LCJzcG90aW0iOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOnRydWUsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjp0cnVlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1Ijp0cnVlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sInN0cmVhbUFNUCI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0Ijp0cnVlfSwic3VydmV5X3BvcHVwIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1IjpmYWxzZSwidHIiOmZhbHNlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwic3dpcGVfYXJ0aWNsZSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sIkJDSW50ZWwiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0Ijp0cnVlfSwiRHVyYXRpb25NZWRpYSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0Ijp0cnVlfSwiU3RpY2t5Rmxvb3IiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJhZHNMYXp5bG9hZGluZyI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOnRydWV9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiYXV0b21hdGFkIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJiYXJyZV9ub3ciOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJiY292ZXJ5Ijp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJnb29nbGVfYW5hbHl0aWNzIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6dHJ1ZX0sInRoaXJkcGFydCI6dHJ1ZX0sImdyYXBlc2hvdCI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOnRydWV9LCJ0aGlyZHBhcnQiOnRydWV9LCJsaXZpbmdfc3BvdGltIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1IjpmYWxzZSwidHIiOmZhbHNlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwibWFpbG11bmNoIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6dHJ1ZX0sInRoaXJkcGFydCI6dHJ1ZX0sIm1pbnV0ZWx5Ijp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sInBvcHVwX21lc3NhZ2VfYWxsX3dlYnNpdGUiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJwb3B1cF9tZXNzYWdlX2xpdmUiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJzdGlja3lTZWNvbmRzTGRiSXNBY3RpdmUiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJ0b3BfdmlkZW9fbWludXRlbHkiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0Ijp0cnVlfX0sInNsb3ciOnsiVnV1a2xlIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImFkb2JlIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJhZHNBdXRvcmVmcmVzaCI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sImFsbFZpZXdzIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJhbXBfYWRvYmVhbmFseXRpY3MiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJhbXBfYXV0b19wcmV2aWV3X3ZpZGVvX21pbnV0ZWx5Ijp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJhbXBfZGlkb21pIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiYW1wX291dGJyYWluIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiYW1wX3Nwb3RpbSI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6dHJ1ZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOnRydWUsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOnRydWUsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sImF1dG9fcHJldmlld192aWRlb19taW51dGVseSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiYXV0b19yZWZyZXNoX2xpdmluZyI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sImF1dG9yZWZyZXNoIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1IjpmYWxzZSwidHIiOmZhbHNlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwiY2hhcnRiZWF0Ijp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJjaGFydGJlYXRfbWFiIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJjeGVuc2UiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImN4ZW5zZV9jbXNfcHVibGljIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOnRydWUsImZhIjpmYWxzZSwiZnIiOnRydWUsImh1IjpmYWxzZSwiaXQiOnRydWUsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImRhaWx5bW90aW9uIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJkaWRvbWkiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sImZhY2Vib29rIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6dHJ1ZX0sInRoaXJkcGFydCI6dHJ1ZX0sImZsaWdodHNfZXVyb25ld3MiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJnbG9iYWxfZm9vdGVyIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6dHJ1ZX0sInRoaXJkcGFydCI6dHJ1ZX0sImdvb2dsZU9wdGltaXplIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1IjpmYWxzZSwidHIiOmZhbHNlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJodHRwcyI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOnRydWV9LCJ0aGlyZHBhcnQiOmZhbHNlfSwibGF6eWJsb2NrIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1Ijp0cnVlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sIm1hcmZlZWwiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOmZhbHNlLCJkZSI6ZmFsc2UsImVsIjpmYWxzZSwiZXMiOmZhbHNlLCJmYSI6ZmFsc2UsImZyIjpmYWxzZSwiaHUiOmZhbHNlLCJpdCI6ZmFsc2UsInB0IjpmYWxzZSwicnUiOmZhbHNlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJtYXJmZWVsX21ldGEiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOnRydWUsImRlIjpmYWxzZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6ZmFsc2UsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjp0cnVlfSwidGhpcmRwYXJ0IjpmYWxzZX0sIm1vYXQiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjpmYWxzZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJvb3Z2dXUiOnsibGFuZ3VhZ2VzIjp7ImVuIjp0cnVlLCJhciI6dHJ1ZSwiZGUiOnRydWUsImVsIjp0cnVlLCJlcyI6dHJ1ZSwiZmEiOnRydWUsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sIm91dGJyYWluIjp7Imxhbmd1YWdlcyI6eyJlbiI6dHJ1ZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjp0cnVlLCJmciI6dHJ1ZSwiaHUiOnRydWUsIml0Ijp0cnVlLCJwdCI6dHJ1ZSwicnUiOnRydWUsInRyIjp0cnVlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOnRydWV9LCJvdXRicmFpbl9sYXp5bG9hZGluZyI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0Ijp0cnVlfSwicGZwTGl2ZSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6ZmFsc2UsImZyIjp0cnVlLCJodSI6dHJ1ZSwiaXQiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwidHIiOnRydWUsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6ZmFsc2V9LCJwZnBWT0QiOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOnRydWUsImRlIjp0cnVlLCJlbCI6dHJ1ZSwiZXMiOnRydWUsImZhIjpmYWxzZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sInBsYXllcl9sYXp5bG9hZF9jbGljayI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX0sInNjcmliYmxlbGl2ZSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOnRydWV9LCJ0aGlyZHBhcnQiOnRydWV9LCJzcG90aW0iOnsibGFuZ3VhZ2VzIjp7ImVuIjpmYWxzZSwiYXIiOnRydWUsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjp0cnVlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1Ijp0cnVlLCJ0ciI6ZmFsc2UsInVrIjpmYWxzZX0sInRoaXJkcGFydCI6dHJ1ZX0sInN0cmVhbUFNUCI6eyJsYW5ndWFnZXMiOnsiZW4iOmZhbHNlLCJhciI6ZmFsc2UsImRlIjpmYWxzZSwiZWwiOmZhbHNlLCJlcyI6ZmFsc2UsImZhIjpmYWxzZSwiZnIiOmZhbHNlLCJodSI6ZmFsc2UsIml0IjpmYWxzZSwicHQiOmZhbHNlLCJydSI6ZmFsc2UsInRyIjpmYWxzZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0Ijp0cnVlfSwic3VydmV5X3BvcHVwIjp7Imxhbmd1YWdlcyI6eyJlbiI6ZmFsc2UsImFyIjpmYWxzZSwiZGUiOmZhbHNlLCJlbCI6ZmFsc2UsImVzIjpmYWxzZSwiZmEiOmZhbHNlLCJmciI6ZmFsc2UsImh1IjpmYWxzZSwiaXQiOmZhbHNlLCJwdCI6ZmFsc2UsInJ1IjpmYWxzZSwidHIiOmZhbHNlLCJ1ayI6ZmFsc2V9LCJ0aGlyZHBhcnQiOmZhbHNlfSwic3dpcGVfYXJ0aWNsZSI6eyJsYW5ndWFnZXMiOnsiZW4iOnRydWUsImFyIjp0cnVlLCJkZSI6dHJ1ZSwiZWwiOnRydWUsImVzIjp0cnVlLCJmYSI6dHJ1ZSwiZnIiOnRydWUsImh1Ijp0cnVlLCJpdCI6dHJ1ZSwicHQiOnRydWUsInJ1Ijp0cnVlLCJ0ciI6dHJ1ZSwidWsiOmZhbHNlfSwidGhpcmRwYXJ0IjpmYWxzZX19fX0sImxvY2FsZSI6ImVsIiwidmVydGljYWxDb25maWd1cmF0aW9uIjp7IndlYnNpdGUiOiJldXJvbmV3cyIsInZlcnRpY2FsX3NpdGUiOnsidHJhdmVsIjp7ImFjdGl2ZSI6eyJlbiI6dHJ1ZSwiZnIiOnRydWUsImRlIjp0cnVlLCJpdCI6dHJ1ZSwiZXMiOnRydWUsInB0Ijp0cnVlLCJydSI6dHJ1ZSwiYXIiOnRydWUsInRyIjp0cnVlLCJmYSI6dHJ1ZSwiZWwiOnRydWUsImh1Ijp0cnVlfSwib3duX2Rlc2lnbiI6eyJlbiI6dHJ1ZX19LCJrbm93bGVkZ2UiOnsiYWN0aXZlIjpudWxsLCJvd25fZGVzaWduIjp7ImVuIjp0cnVlfX0sImxpdmluZ2l0Ijp7ImFjdGl2ZSI6eyJlbiI6dHJ1ZSwiZnIiOnRydWUsImRlIjp0cnVlLCJpdCI6dHJ1ZSwiZXMiOnRydWUsInJ1Ijp0cnVlfSwib3duX2Rlc2lnbiI6eyJlbiI6dHJ1ZSwiZnIiOnRydWUsImRlIjp0cnVlLCJpdCI6dHJ1ZSwiZXMiOnRydWUsInJ1Ijp0cnVlfX19fSwiZ29vZ2xlT3B0aW1pemVJZCI6bnVsbH0="><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]--><link rel="apple-touch-icon" sizes="57x57" href="https://static.euronews.com/favicons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="https://static.euronews.com/favicons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://static.euronews.com/favicons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="https://static.euronews.com/favicons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="https://static.euronews.com/favicons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="https://static.euronews.com/favicons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="https://static.euronews.com/favicons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="https://static.euronews.com/favicons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="https://static.euronews.com/favicons/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" href="https://static.euronews.com/favicons/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="https://static.euronews.com/favicons/android-chrome-192x192.png" sizes="192x192"><link rel="icon" type="image/png" href="https://static.euronews.com/favicons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="https://static.euronews.com/favicons/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="/manifest.json"><link rel="mask-icon" href="https://static.euronews.com/favicons/safari-pinned-tab.svg" color="#003865"><meta name="msapplication-TileColor" content="#003865"><meta name="msapplication-TileImage" content="https://static.euronews.com/favicons/mstile-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-title" content="Euronews.com"><meta name="application-name" content="Euronews.com" /><meta name="msapplication-config" content="browserconfig.xml" /><meta name="msapplication-tooltip" content="Euronews.com" /><meta name="msapplication-window" content="width=1280;height=1024" /><meta name="msapplication-navbutton-color" content="#003865" /><meta name="msapplication-starturl" content="./" /><meta name="msapplication-square70x70logo" content="https://static.euronews.com/favicons/mstile-small.jpg"/><meta name="msapplication-square150x150logo" content="https://static.euronews.com/favicons/mstile-medium.jpg"/><meta name="msapplication-wide310x150logo" content="https://static.euronews.com/favicons/mstile-wide.jpg"/><meta name="msapplication-square310x310logo" content="https://static.euronews.com/favicons/mstile-large.jpg"/><meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"><meta name="mobile-web-app-capable" content="no"><link rel="home" href="/" title="homepage"><link rel="stylesheet" href="/build/b4c87ffb18213a650f05-font_noto.css"><link rel="stylesheet" href="/build/f9a98c4570009f6c6d3b-26.css"><link rel="stylesheet" href="/build/703429a99fa50a0374e3-app_css.css"><script data-feature="didomi" src="/build/25df26200ed0b3edf974-runtime.js" async></script><script data-feature="didomi" src="/build/1abf00f9eddd81748eca-didomi.js" async></script><script src="/build/ef1e1b03a23e38efa768-globalstore_bridge.js"></script><script>
+          window.digitalData = JSON.parse('{\"site\":{\"platform\":\"\",\"language\":\"el\",\"primarylanguage\":\"\",\"secondarylanguage\":\"\",\"environment\":\"prod\",\"brand\":\"euronews\",\"servicetype\":\"web\",\"version\":{\"versions\":{\"date\":20210127162149,\"revision\":\"4.185.0\"}}},\"page\":{\"pagename\":\"euronews.na.na.na.error404\",\"pagehasad\":\"\",\"pagenumads\":\"\",\"sitesection\":\"\",\"sitesubsection1\":\"\",\"sitesubsection2\":\"\",\"pagetype\":\"page\",\"pageurl\":\"gr.euronews.com\\/favicon.ico\",\"pagedownloadtime\":\"\",\"vertical\":\"na\",\"theme\":\"na\",\"program\":\"na\",\"contenttype\":\"txt\",\"menustatus\":\"\",\"pagereload\":\"\",\"pagedisplaybreakpoint\":\"\",\"displaybreakingnewsbar\":\"none\",\"swipe\":\"none\",\"urlpath\":\"gr.euronews.com\\/favicon.ico\"},\"search\":{\"keyword\":\"\",\"searchresult\":\"\"},\"uv\":{\"uvid\":\"\"},\"article\":{\"eventid\":\"none\",\"storyid\":\"none\",\"updatedate\":\"none\",\"title\":\"none\",\"format\":\"none\",\"nbdayssincepublication\":\"none\",\"articlepromotedtobcs\":\"\",\"articlepromotedtohp\":\"\"},\"video\":{\"videoid\":\"none\",\"youtubevideoid\":\"none\",\"housenumbervidid\":\"none\",\"name\":\"none\",\"publicationdate\":\"none\",\"type\":\"none\",\"duration\":\"none\",\"isinplaylist\":\"none\",\"playlistname\":\"none\",\"haspreview\":\"none\",\"viewmode\":\"none\",\"playername\":\"none\",\"playlistnumitems\":\"none\",\"playlistposition\":\"none\",\"playerversion\":\"none\",\"soundstatus\":\"none\"},\"component\":{\"name\":\"\",\"type\":\"\",\"action\":\"\",\"pagename\":\"\",\"actiondetail\":\"\"},\"newsletter\":{\"name\":\"\",\"location\":\"\"},\"thirdPartiesDisabled\":[],\"scribbleId\":2818513,\"sendDate\":null}');
+          let dfpDataJson = document.head.querySelector("meta[name=dfp-data]");
+          if (null !== dfpDataJson) {
+              try {
+                  window.dfpData = JSON.parse(dfpDataJson.content);
+                  window.dfpData.adobeReady = false;
+                  window.dfpData.grapeshotReady = false;
+                  window.dfpData.streamampReady = false;
+                  window.dfpData.streamampConfigReady = false;
+                  window.dfpData.moatReady = false;
+              } catch (e) {
+                  console.error("DfpData has incorrect values");
+              }
+          }
+      </script><script src="/build/29266c5949f07cbc060b-adobeDatalayer_bridge.js" data-feature="adobe"></script><script src="//assets.adobedtm.com/cbcaa08b4d07/21b46dbf0308/launch-18c76c3a7465.min.js" data-feature="adobe" async></script><script src="/build/903f8cef4af014082ebc-0.js" defer></script><script src="/build/da61d74cf5f8ff6b7e36-2.js" defer></script><script src="/build/998a84bc05822e80ff8b-main.js" defer></script></head><body  ><div id="outdated"></div><div><div class="u-position-relative u-zindex--999" id="js-header"><header class="o-site-header c-site-header" role="banner"><input type="checkbox" id="c-burger-btn-checkbox" class="c-burger-btn-checkbox u-hide-for-all" role="button"><label class="c-burger-btn u-hide-for-large u-margin-bottom-0" for="c-burger-btn-checkbox" id="toggle-menu"><div class="c-burger-btn__container" id="hamburger-button"><div class="c-burger-btn__bar c-burger-btn__bar-1"></div><div class="c-burger-btn__bar c-burger-btn__bar-2"></div><div class="c-burger-btn__bar c-burger-btn__bar-3"></div><div class="c-burger-btn__bar c-burger-btn__bar-4"></div><div class="c-burger-btn__bar c-burger-btn__bar-5"></div><div class="c-burger-btn__bar c-burger-btn__bar-6"></div></div></label><div class="o-site-header__top u-show-for-medium"><ul class="c-menu-language js-language-list"><li class="c-menu-language__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#fff" xmlns:v="https://vecta.io/nano"><path d="M23.98 8c8.822 0 16 7.178 16 16s-7.178 16-16 16-16-7.178-16-16 7.178-16 16-16m0-4c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20h0z"/><path d="M23.98 9c1.717 0 5 5.842 5 15s-3.283 15-5 15-5-5.84-5-15 3.283-15 5-15m0-3c-4.418 0-8 8.06-8 18s3.582 18 8 18 8-8.06 8-18-3.582-18-8-18h0z"/><path d="M5.98 28.5h36v3h-36zm0-12h36v3h-36z"/></svg></li><li><button class="c-menu-language--isSelected">Ελληνικά</button><div class="c-menu-language__list"><div class="flex"><ul class="u-margin-end-2"><li ><a class="u-padding-end-4"
+                   href="//www.euronews.com"
+                   lang="en-GB"
+                   hreflang="en"
+                   data-locale="en"
+                   data-locale-origin="//www.euronews.com"
+                        >
+                  English
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//fr.euronews.com"
+                   lang="fr-FR"
+                   hreflang="fr"
+                   data-locale="fr"
+                   data-locale-origin="//fr.euronews.com"
+                        >
+                  Français
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//de.euronews.com"
+                   lang="de-DE"
+                   hreflang="de"
+                   data-locale="de"
+                   data-locale-origin="//de.euronews.com"
+                        >
+                  Deutsch
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//it.euronews.com"
+                   lang="it-IT"
+                   hreflang="it"
+                   data-locale="it"
+                   data-locale-origin="//it.euronews.com"
+                        >
+                  Italiano
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//es.euronews.com"
+                   lang="es-ES"
+                   hreflang="es"
+                   data-locale="es"
+                   data-locale-origin="//es.euronews.com"
+                        >
+                  Español
+                </a></li></ul><ul class="u-margin-end-2"><li ><a class="u-padding-end-4"
+                   href="//pt.euronews.com"
+                   lang="pt-PT"
+                   hreflang="pt"
+                   data-locale="pt"
+                   data-locale-origin="//pt.euronews.com"
+                        >
+                  Português
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//ru.euronews.com"
+                   lang="ru-RU"
+                   hreflang="ru"
+                   data-locale="ru"
+                   data-locale-origin="//ru.euronews.com"
+                        >
+                  Русский
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//tr.euronews.com"
+                   lang="tr-TR"
+                   hreflang="tr"
+                   data-locale="tr"
+                   data-locale-origin="//tr.euronews.com"
+                        >
+                  Türkçe
+                </a></li><li class="c-menu-language-item--isActive"><a class="u-padding-end-4"
+                   href="//gr.euronews.com"
+                   lang="el-GR"
+                   hreflang="el"
+                   data-locale="el"
+                   data-locale-origin="//gr.euronews.com"
+                        >
+                  Ελληνικά
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//hu.euronews.com"
+                   lang="hu-HU"
+                   hreflang="hu"
+                   data-locale="hu"
+                   data-locale-origin="//hu.euronews.com"
+                        >
+                  Magyar
+                </a></li></ul><ul><li ><a class="u-padding-end-4"
+                   href="//per.euronews.com"
+                  lang="fa-IR"
+                  hreflang="fa"
+                  data-locale="fa"
+                   data-locale-origin="//per.euronews.com"
+                  >
+                    فارسی
+                </a></li><li ><a class="u-padding-end-4"
+                   href="//arabic.euronews.com"
+                  lang="hy-AM"
+                  hreflang="ar"
+                  data-locale="ar"
+                   data-locale-origin="//arabic.euronews.com"
+                  >
+                    العربية
+                </a></li><li ><a class="u-padding-end-4"
+                   href="https://www.euronews.al/al"
+                  lang="sq-AL"
+                  hreflang="al"
+                  data-locale="al"
+                   data-locale-origin="https://www.euronews.al/al"
+                                      target="_blank" rel="noopener"
+                  >
+                    Shqip
+                </a></li><li ><a class="u-padding-end-4"
+                   href="http://www.euronews.ro"
+                  lang="ro-RO"
+                  hreflang="ro"
+                  data-locale="ro"
+                   data-locale-origin="http://www.euronews.ro"
+                                      target="_blank" rel="noopener"
+                  >
+                    Română
+                </a></li></ul></div></div></li></ul><div class="js-search-menu o-header-topbar__search"><div class="c-search-form c-search-form-topbar js-awesomeplete-searchBar" id="search-autocomplete"><search-form
+        apiurl="/api/searchautocomplete.json?q="
+        eventisallowed="1"
+        searchplaceholder="Αναζήτηση στο"
+        class="c-search-form-topbar"></search-form></div></div><ul class="o-header-topbar__internal-links c-internal-links u-show-for-large"><li class="c-internal-links__link"><a class="c-links__text-icon" href="/follow-us" rel="noopener" aria-label="Read more about follow us !"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M42,8H6a2,2,0,0,0-2,2V38a2,2,0,0,0,2,2H42a2,2,0,0,0,2-2V10A2,2,0,0,0,42,8Zm-2,4.19L39.85,12H40ZM37.53,12,24,22.15,10.52,12ZM8,36V13.86L24,25.91l16-12V36Z" fill="#002e44"/></svg><span data-event="newsletter-link-header" class="c-internal-links__text">Ενημερωτικό δελτίο</span></a></li><li class="c-internal-links__link"><a class="c-links__text-icon"
+           href="https://games.euronews.com/en?arkpromo=Site_TopNav"
+           target="_blank"
+           rel="noopener"
+           aria-label="Read more about euronews games services"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve"><style>.games_color{fill:#082332}</style><path class="games_color" d="M24,4C20.3,16.9,2.4,17.4,6,29.9S22,32,22,32s2.3,10.3-6,12h16c-8.3-1.7-6-12-6-12s12.4,10.4,16-2.1S27.7,16.9,24,4z"/></svg><span class="c-internal-links__text c-internal-links__text--games">Games</span></a></li></ul></div><a class="o-site-header__logo" href="/" aria-label="Euronews Logo"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 671.3 80" style="enable-background:new 0 0 671.3 85;" xml:space="preserve" width="110" height="24"><path d="M65.9,58.2C60.6,66,51.7,70.7,42.3,70.8c-13.6,0-25.6-10-28.5-23.7l-0.1-0.5h66.5c0.2-1.9,0.3-3.8,0.3-5.6l0,0
+        v-0.3c0-21.7-17.1-39.4-38.3-39.4S4,18.9,4,40.6s17.1,39.4,38.3,39.4c14.4,0,27.4-8.2,34-21.4l1-1.9H66.9
+        C66.6,57.2,66.2,57.7,65.9,58.2z M13.2,36.8c1.9-15,14.4-26.3,28.9-26.3s27.1,11.3,28.9,26.3l0.1,0.5h-58V36.8z" fill="#005587" /><path d="M123.3,80.1c-4.1,0-8.2-0.8-12.1-2.3c-3.7-1.4-7-3.6-9.8-6.4c-2.9-2.8-5.1-6.2-6.5-9.9
+        c-1.5-4.1-2.3-8.4-2.2-12.8V2.8h8.8v45.1c-0.1,3.3,0.4,6.7,1.6,9.8c2.1,5.5,6.3,9.9,11.7,12.2c5.5,2.2,11.6,2.2,17,0
+        c2.6-1.1,5-2.7,7-4.8c2.1-2.1,3.7-4.7,4.8-7.4c1.2-3.1,1.9-6.5,1.9-9.8V2.8h8.8v45.9c0,4.4-0.9,8.7-2.6,12.8
+        c-3.1,7.4-9,13.3-16.5,16.4C131.5,79.3,127.4,80.1,123.3,80.1z" fill="#005587" /><path d="M166.9,78V34.6c0-3.2,0.4-6.3,1.1-9.4c0.9-4,2.7-7.7,5.1-11c3-4,7-7.2,11.6-9.2c5.5-2.5,12.3-3.8,20.2-3.8h1.5
+        v9.4h-1.5c-5-0.1-9.9,0.7-14.6,2.3c-3.3,1.1-6.3,3.1-8.6,5.6c-1.9,2.2-3.4,4.8-4.2,7.6c-0.8,2.7-1.2,5.6-1.2,8.4V78H166.9z" fill="#005587" /><path d="M348.6,78V38.4c0.1-2.9-0.3-5.8-1.3-8.5c-0.9-2.3-2.2-4.4-4-6.2c-1.6-1.7-3.5-3-5.6-3.9
+        c-4.5-1.9-9.6-1.9-14.1,0c-2.2,0.9-4.1,2.2-5.7,3.9c-1.7,1.8-3.1,3.9-4,6.2c-1.1,2.7-1.6,5.5-1.7,8.4v39.6h-17.5V37.5
+        c0-5,1-10,2.9-14.7c1.7-4.3,4.3-8.3,7.6-11.6c3.3-3.2,7.1-5.8,11.4-7.5c8.9-3.5,18.8-3.6,27.7-0.1c4.3,1.7,8.2,4.3,11.4,7.5
+        c3.3,3.3,5.9,7.3,7.6,11.6c1.8,4.7,2.6,9.7,2.5,14.7v40.3h-17.2V78z" fill="#005587" /><path d="M412.8,80c-21.1,0-38.3-17.6-38.3-39.3s17.1-39.4,38.3-39.4c21.1,0,38.2,17.6,38.2,39.4c0,2-0.2,4.1-0.4,6
+        l-0.1,0.6h-59.7l0.3,0.8c3.6,12,16.1,18.8,28.1,15.2c3-0.9,5.9-2.4,8.3-4.5c0,0,1.1-1,1.3-1.1h18.6l-0.5,1.1
+        C440.5,71.7,427.3,79.9,412.8,80z M412.8,17.1c-10,0.1-18.8,6.6-21.7,16.2l-0.3,0.8h44l-0.3-0.8C431.6,23.6,422.8,17.1,412.8,17.1z" fill="#005587" /><path d="M457,3.2V2.7h18.9c2.3,18.1,8.2,46.9,13.4,60c5.5-13,11.8-41.8,14.1-60h15.8c2.4,18.1,8.6,45.7,14.2,60
+        c5.2-14.2,11-41.8,13.4-60h18.8v0.5c-4.4,28.3-12.6,57.5-19.6,74.8h-23.6c-4.9-11.9-8.6-24.3-11.1-37c-2.3,13-7.4,28.3-11,37h-23.5
+        C468.5,59.1,459.5,27.3,457,3.2z" fill="#005587" /><path d="M573.5,74.7V60.4h0.8c6.6,1.8,13.3,2.9,20.1,3.1h3.9c6.1,0,10.8-1.9,10.8-8.1c0-4.7-4.1-6.5-8.5-7.7l-11.6-3.1
+        c-8.5-2.2-15.5-8.1-15.5-20.9c0-15.1,12.4-21.3,27.5-21.3h3.9c4.7,0,14,1.2,18.2,2.8v14.3h-0.8c-5.7-1.3-11.6-2.1-17.4-2.3h-3.5
+        c-5.5,0-10.1,1.1-10.1,6.5c0,4.3,3.2,5.9,7,6.9l11.6,3.2c11.2,3,17,9.6,17,21.6c0,16.6-12,22.9-28.6,22.9h-3.9
+        C587.3,78,580.2,76.8,573.5,74.7z" fill="#005587" /><circle cx="653.4" cy="62.3" r="15.9" fill="#005587" /><path d="M247.7,1.4c-21.2,0-38.5,17.6-38.5,39.4s17.2,39.4,38.5,39.4s38.5-17.6,38.5-39.4S268.9,1.4,247.7,1.4z
+         M247.7,69.5c-14.8,0-26.9-12.9-26.9-28.6s12.1-28.6,26.9-28.6c14.8,0,26.9,12.9,26.9,28.6S262.6,69.5,247.7,69.5z" fill="#005587" /></svg></a><div class="o-site-menu-icons u-hide-for-medium"><a class="o-site-menu-icons__btn" href="/just-in" title="Just In "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24"><path d="M30.56,17.57a.67.67,0,0,0-.36.53.58.58,0,0,0,.06.26.45.45,0,0,0,.24.21l9.55,4.12a.7.7,0,0,0,.89-.44s0-.05,0-.08l1.62-10.25a.48.48,0,0,0-.24-.54.6.6,0,0,0-.63,0l-3.28,1.81L38,13.4a17.93,17.93,0,1,0,3.15,14,1.79,1.79,0,1,0-3.51-.67,14.36,14.36,0,1,1-2.79-11.51l-.64.35Z" fill="#00202f" /><path d="M28.91,31.38a1.86,1.86,0,0,1-1.29-.53l-5.35-5.36a1.82,1.82,0,0,1-.54-1.29V14.94a1.82,1.82,0,0,1,3.64,0v8.51l4.83,4.82a1.82,1.82,0,0,1-1.29,3.11Z" fill="#00202f" /></svg></a><a class="o-site-menu-icons__btn js-menu-live" href="/live" title="Live"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24"><path d="M40.063 12v21.875h-32V12h32m2-4h-36c-1.1 0-2 .9-2 2v25.875c0 1.1.9 2 2 2h36c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2h0zM29.34 22.52l-7.5-5c-.153-.102-.35-.1-.513-.025a.5.5 0 0 0-.264.441v10a.5.5 0 0 0 .264.441c.074.04.155.06.236.06.097 0 .194-.028.277-.084l7.5-5a.5.5 0 0 0 0-.832zM32 44H16a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4z" fill="#00202f"/></svg></a></div><section class="o-header-menu u-hide-for-small-only"><nav class="o-section o-header-menu__nav"><ul class="o-header-menu__list"><li class="o-header-menu__first-list u-flex-container"><div class="list-item u-show-for-large-only"><a class="list-item__link" href="/european-affairs/european-news" aria-label="Read more about Ευρώπη">
+              Ευρώπη
+            </a></div><div class="list-item u-show-for-large-only"><a class="list-item__link" href="/news/international" aria-label="Read more about Κόσμος">
+              Κόσμος
+            </a></div><div class="list-item u-show-for-large-only"><a class="list-item__link" href="/news/business" aria-label="Read more about Οικονομία">
+              Οικονομία
+            </a></div><div class="list-item u-show-for-large-only"><a class="list-item__link" href="/news/sport" aria-label="Read more about Αθλητικά">
+              Αθλητικά
+            </a></div><div class="list-item u-show-for-large-only"><a class="list-item__link" href="/lifestyle/culture" aria-label="Read more about Πολιτισμός">
+              Πολιτισμός
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="/european-affairs/european-news" aria-label="Read more about Ευρώπη">
+              Ευρώπη
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="/news/international" aria-label="Read more about Κόσμος">
+              Κόσμος
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="/news/business" aria-label="Read more about Οικονομία">
+              Οικονομία
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="/news/sport" aria-label="Read more about Αθλητικά">
+              Αθλητικά
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="/lifestyle/culture" aria-label="Read more about Πολιτισμός">
+              Πολιτισμός
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="/knowledge/sci-tech" aria-label="Read more about Sci-tech">
+              Sci-tech
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="//gr.euronews.com/travel" aria-label="Read more about Ταξίδια">
+              Ταξίδια
+            </a></div><div class="list-item u-show-for-xlarge"><a class="list-item__link" href="/video" aria-label="Read more about Βίντεο">
+              Βίντεο
+            </a></div></li><li id="list-item" class="list-item list-item--more u-hide-for-xlarge"><a href="#" class="js-menu-more more-link list-item__link">περισσότερα</a><div class="c-menu-more c-header-sub-menu u-hide-for-all"><a class="list-item__link u-show-for-medium-only" href="/european-affairs/european-news" aria-label="Read more about Ευρώπη">
+                  Ευρώπη
+                </a><a class="list-item__link u-show-for-medium-only" href="/news/international" aria-label="Read more about Κόσμος">
+                  Κόσμος
+                </a><a class="list-item__link u-show-for-medium-only" href="/news/business" aria-label="Read more about Οικονομία">
+                  Οικονομία
+                </a><a class="list-item__link u-show-for-medium-only" href="/news/sport" aria-label="Read more about Αθλητικά">
+                  Αθλητικά
+                </a><a class="list-item__link u-show-for-medium-only" href="/lifestyle/culture" aria-label="Read more about Πολιτισμός">
+                  Πολιτισμός
+                </a><a class="list-item__link u-show-for-medium-only" href="/knowledge/sci-tech" aria-label="Read more about Sci-tech">
+                  Sci-tech
+                </a><a class="list-item__link u-show-for-medium-only" href="//gr.euronews.com/travel" aria-label="Read more about Ταξίδια">
+                  Ταξίδια
+                </a><a class="list-item__link u-show-for-medium-only" href="/video" aria-label="Read more about Βίντεο">
+                  Βίντεο
+                </a><a class="list-item__link u-show-for-large-only" href="/knowledge/sci-tech" aria-label="Read more about Sci-tech">
+                  Sci-tech
+                </a><a class="list-item__link u-show-for-large-only" href="//gr.euronews.com/travel" aria-label="Read more about Ταξίδια">
+                  Ταξίδια
+                </a><a class="list-item__link u-show-for-large-only" href="/video" aria-label="Read more about Βίντεο">
+                  Βίντεο
+                </a></div></li><li class="js-programs_links list-item list-item--programs"><a href="#" class="c-programs-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" xmlns:v="https://vecta.io/nano"><path d="M18 24h22.02m-32-.015h3.917M18 13.993h22.02m-32-.015h3.917M18 33.993h22.02m-32-.015h3.917"/></svg><span class="c-programs-icon__text">Programmes</span></a></li><li class="u-hide-for-medium"><a class="c-header-logo__link" href="/"><svg version="1.1" class="c-header-logo__svg" xmlns="http://www.w3.org/2000/svg" x="0px"
+	 y="0px" viewBox="0 0 671.3 80" style="enable-background:new 0 0 671.3 85;" xml:space="preserve"><path class="" d="M65.9,58.2C60.6,66,51.7,70.7,42.3,70.8c-13.6,0-25.6-10-28.5-23.7l-0.1-0.5h66.5c0.2-1.9,0.3-3.8,0.3-5.6l0,0
+	v-0.3c0-21.7-17.1-39.4-38.3-39.4S4,18.9,4,40.6s17.1,39.4,38.3,39.4c14.4,0,27.4-8.2,34-21.4l1-1.9H66.9
+	C66.6,57.2,66.2,57.7,65.9,58.2z M13.2,36.8c1.9-15,14.4-26.3,28.9-26.3s27.1,11.3,28.9,26.3l0.1,0.5h-58V36.8z"/><path class="" d="M123.3,80.1c-4.1,0-8.2-0.8-12.1-2.3c-3.7-1.4-7-3.6-9.8-6.4c-2.9-2.8-5.1-6.2-6.5-9.9
+	c-1.5-4.1-2.3-8.4-2.2-12.8V2.8h8.8v45.1c-0.1,3.3,0.4,6.7,1.6,9.8c2.1,5.5,6.3,9.9,11.7,12.2c5.5,2.2,11.6,2.2,17,0
+	c2.6-1.1,5-2.7,7-4.8c2.1-2.1,3.7-4.7,4.8-7.4c1.2-3.1,1.9-6.5,1.9-9.8V2.8h8.8v45.9c0,4.4-0.9,8.7-2.6,12.8
+	c-3.1,7.4-9,13.3-16.5,16.4C131.5,79.3,127.4,80.1,123.3,80.1z"/><path class="" d="M166.9,78V34.6c0-3.2,0.4-6.3,1.1-9.4c0.9-4,2.7-7.7,5.1-11c3-4,7-7.2,11.6-9.2c5.5-2.5,12.3-3.8,20.2-3.8h1.5
+	v9.4h-1.5c-5-0.1-9.9,0.7-14.6,2.3c-3.3,1.1-6.3,3.1-8.6,5.6c-1.9,2.2-3.4,4.8-4.2,7.6c-0.8,2.7-1.2,5.6-1.2,8.4V78H166.9z"/><path class="" d="M348.6,78V38.4c0.1-2.9-0.3-5.8-1.3-8.5c-0.9-2.3-2.2-4.4-4-6.2c-1.6-1.7-3.5-3-5.6-3.9
+	c-4.5-1.9-9.6-1.9-14.1,0c-2.2,0.9-4.1,2.2-5.7,3.9c-1.7,1.8-3.1,3.9-4,6.2c-1.1,2.7-1.6,5.5-1.7,8.4v39.6h-17.5V37.5
+	c0-5,1-10,2.9-14.7c1.7-4.3,4.3-8.3,7.6-11.6c3.3-3.2,7.1-5.8,11.4-7.5c8.9-3.5,18.8-3.6,27.7-0.1c4.3,1.7,8.2,4.3,11.4,7.5
+	c3.3,3.3,5.9,7.3,7.6,11.6c1.8,4.7,2.6,9.7,2.5,14.7v40.3h-17.2V78z"/><path class="" d="M412.8,80c-21.1,0-38.3-17.6-38.3-39.3s17.1-39.4,38.3-39.4c21.1,0,38.2,17.6,38.2,39.4c0,2-0.2,4.1-0.4,6
+	l-0.1,0.6h-59.7l0.3,0.8c3.6,12,16.1,18.8,28.1,15.2c3-0.9,5.9-2.4,8.3-4.5c0,0,1.1-1,1.3-1.1h18.6l-0.5,1.1
+	C440.5,71.7,427.3,79.9,412.8,80z M412.8,17.1c-10,0.1-18.8,6.6-21.7,16.2l-0.3,0.8h44l-0.3-0.8C431.6,23.6,422.8,17.1,412.8,17.1z"
+	/><path class="" d="M457,3.2V2.7h18.9c2.3,18.1,8.2,46.9,13.4,60c5.5-13,11.8-41.8,14.1-60h15.8c2.4,18.1,8.6,45.7,14.2,60
+	c5.2-14.2,11-41.8,13.4-60h18.8v0.5c-4.4,28.3-12.6,57.5-19.6,74.8h-23.6c-4.9-11.9-8.6-24.3-11.1-37c-2.3,13-7.4,28.3-11,37h-23.5
+	C468.5,59.1,459.5,27.3,457,3.2z"/><path class="" d="M573.5,74.7V60.4h0.8c6.6,1.8,13.3,2.9,20.1,3.1h3.9c6.1,0,10.8-1.9,10.8-8.1c0-4.7-4.1-6.5-8.5-7.7l-11.6-3.1
+	c-8.5-2.2-15.5-8.1-15.5-20.9c0-15.1,12.4-21.3,27.5-21.3h3.9c4.7,0,14,1.2,18.2,2.8v14.3h-0.8c-5.7-1.3-11.6-2.1-17.4-2.3h-3.5
+	c-5.5,0-10.1,1.1-10.1,6.5c0,4.3,3.2,5.9,7,6.9l11.6,3.2c11.2,3,17,9.6,17,21.6c0,16.6-12,22.9-28.6,22.9h-3.9
+	C587.3,78,580.2,76.8,573.5,74.7z"/><circle class="" cx="653.4" cy="62.3" r="15.9"/><path class="" d="M247.7,1.4c-21.2,0-38.5,17.6-38.5,39.4s17.2,39.4,38.5,39.4s38.5-17.6,38.5-39.4S268.9,1.4,247.7,1.4z
+	 M247.7,69.5c-14.8,0-26.9-12.9-26.9-28.6s12.1-28.6,26.9-28.6c14.8,0,26.9,12.9,26.9,28.6S262.6,69.5,247.7,69.5z"/></svg></a></li><li class="c-menu-icons"><a href="/weather/europe" title="Καιρός"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M15.79,25.89A6.46,6.46,0,0,1,15.12,23a6.52,6.52,0,0,1,11.23-4.53,9.5,9.5,0,0,1,3.39-.63,8.5,8.5,0,0,1,1.14.08,10.53,10.53,0,0,0-18.6,9.88A7.48,7.48,0,0,1,15.79,25.89Z"></path><path d="M25.36,11.34h0a1.77,1.77,0,0,0,2.21-1.15L28,8.77a1.77,1.77,0,0,0-1.15-2.22h0A1.76,1.76,0,0,0,24.66,7.7l-.45,1.42A1.77,1.77,0,0,0,25.36,11.34Z"></path><path d="M15.68,12.3h0a1.77,1.77,0,0,0,.75-2.38l-.68-1.33a1.77,1.77,0,0,0-2.38-.75h0a1.78,1.78,0,0,0-.76,2.38l.69,1.32A1.78,1.78,0,0,0,15.68,12.3Z"></path><path d="M33,17.35h0a1.76,1.76,0,0,0,2.38.76l1.33-.69A1.77,1.77,0,0,0,37.43,15h0a1.77,1.77,0,0,0-2.38-.75L33.73,15A1.77,1.77,0,0,0,33,17.35Z"></path><path class="cls-1" d="M6.05,32h0a1.76,1.76,0,0,0,2.38.75L9.75,32a1.76,1.76,0,0,0,.75-2.38h0a1.77,1.77,0,0,0-2.38-.75l-1.32.69A1.77,1.77,0,0,0,6.05,32Z"></path><path d="M39.11,31.51c-.12,0-.23,0-.34,0a8.72,8.72,0,0,0,.34-2.41,8.86,8.86,0,0,0-17.66-1.08,6.89,6.89,0,0,0-2.58-.5,7,7,0,0,0,0,13.92,6.34,6.34,0,0,0,.76,0H39.09v-.06h0a4.94,4.94,0,0,0,0-9.88Z"></path><path d="M9.41,19.92h0a1.77,1.77,0,0,0-1.15-2.21l-1.42-.45a1.77,1.77,0,0,0-2.22,1.15h0a1.77,1.77,0,0,0,1.15,2.21l1.42.45A1.76,1.76,0,0,0,9.41,19.92Z"></path></svg></a></li><li class="c-menu-icons"><a href="/just-in" title="Just In "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#fff" xmlns:v="https://vecta.io/nano"><path d="M43.506 21.384l1.77-11.215c.036-.228-.067-.442-.266-.553s-.466-.103-.69.022l-12.2 6.75c-.225.125-.373.345-.386.574a.52.52 0 0 0 .064.286c.056.102.147.184.263.233l10.44 4.464c.194.083.433.065.637-.048s.347-.306.38-.514z"/><path d="M39.708 27.042l-.332 1.385c-2.44 8.478-11.324 13.4-19.802 10.95s-13.4-11.324-10.95-19.802 11.324-13.4 19.802-10.95c4.842 1.394 8.512 4.892 10.322 9.213 1.498.42 2.975.73 4.24-.104-2.004-6.057-6.86-11.054-13.455-12.954C18.92 1.725 7.837 7.852 4.78 18.467a20 20 0 0 0 13.686 24.752c10.616 3.055 21.697-3.072 24.753-13.686a20.09 20.09 0 0 0 .424-1.819c-1.025-.632-2.26-.856-3.936-.672zM24.02 11.74h0c-1.1-.001-2 .898-2.002 1.998l-.01 10.335c-.001 1.1.898 2 1.998 2.002h0c1.1.001 2-.898 2.002-1.998l.01-10.335c.001-1.1-.898-2-1.998-2.002z"/><path d="M30.933 31.403h0c.792-.763.816-2.036.052-2.828l-5.55-5.76c-.763-.792-2.036-.816-2.828-.052h0c-.792.763-.816 2.036-.052 2.828l5.55 5.76c.764.792 2.036.815 2.828.052zm12.647-3.18a2.02 2.02 0 0 1-2.496 1.38 2.02 2.02 0 0 1-1.38-2.496 2.02 2.02 0 0 1 2.496-1.38 2.02 2.02 0 0 1 1.38 2.496z"/></svg></a></li><li class="c-menu-icons"><a href="/bulletin" title="Δελτίο"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M32.44,27.64,26.06,23.4a.42.42,0,0,0-.43,0,.44.44,0,0,0-.23.38v8.49a.44.44,0,0,0,.23.38.46.46,0,0,0,.2.05.48.48,0,0,0,.23-.07l6.38-4.25a.44.44,0,0,0,.18-.35A.44.44,0,0,0,32.44,27.64Z"></path><path d="M38,18V38H18V18H38m2-4H16a2,2,0,0,0-2,2V40a2,2,0,0,0,2,2H40a2,2,0,0,0,2-2V16a2,2,0,0,0-2-2Z"></path><path d="M32.1,6H8A2,2,0,0,0,6,8V32a2,2,0,0,0,4,0V10H32.1a2,2,0,0,0,0-4Z"></path></svg></a></li><li class="c-menu-icons"><a class="c-menu-icons--live"
+           href="/live"
+           title="Live"><span class="c-menu-icons--live__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#fff" xmlns:v="https://vecta.io/nano"><path d="M40.063 12v21.875h-32V12h32m2-4h-36c-1.1 0-2 .9-2 2v25.875c0 1.1.9 2 2 2h36c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2h0zM29.34 22.52l-7.5-5c-.153-.102-.35-.1-.513-.025a.5.5 0 0 0-.264.441v10a.5.5 0 0 0 .264.441c.074.04.155.06.236.06.097 0 .194-.028.277-.084l7.5-5a.5.5 0 0 0 0-.832zM32 44H16a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4z"/></svg></span><span class="list-item__link c-menu-icons--live__text">Live</span></a></li></ul><div class="js-programs-menu c-programs-menu c-header-sub-menu u-hide-for-all"><div class="c-programs-menu__categories"><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><a href="/european-affairs/european-news" class="title" aria-label="Read more about Ευρώπη">
+                  Ευρώπη
+                </a></div><ul><li class="list-item"><a href="/programs/smart-regions"
+                     class="js-menu-program-smart-regions list-item__link"
+                     aria-label="Read more about smart-regions"
+                     >Smart Regions
+                  </a></li><li class="list-item"><a href="/programs/brussels-bureau"
+                     class="js-menu-program-brussels-bureau list-item__link"
+                     aria-label="Read more about brussels-bureau"
+                     >Γραφείο Βρυξελλών
+                  </a></li><li class="list-item"><a href="/programs/state-of-the-union"
+                     class="js-menu-program-state-of-the-union list-item__link"
+                     aria-label="Read more about state-of-the-union"
+                     >Κατάσταση Της Ένωσης
+                  </a></li></ul><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><a href="/news/business" class="title" aria-label="Read more about Οικονομία">
+                  Οικονομία
+                </a></div><ul><li class="list-item"><a href="/programs/business-line"
+                     class="js-menu-program-business-line list-item__link"
+                     aria-label="Read more about business-line"
+                     >Business Line
+                  </a></li><li class="list-item"><a href="/programs/business-planet"
+                     class="js-menu-program-business-planet list-item__link"
+                     aria-label="Read more about business-planet"
+                     >Business Planet
+                  </a></li><li class="list-item"><a href="/programs/disrupted"
+                     class="js-menu-program-disrupted list-item__link"
+                     aria-label="Read more about disrupted"
+                     >Disrupted
+                  </a></li><li class="list-item"><a href="/programs/focus"
+                     class="js-menu-program-focus list-item__link"
+                     aria-label="Read more about focus"
+                     >Focus
+                  </a></li><li class="list-item"><a href="/programs/realeconomy"
+                     class="js-menu-program-realeconomy list-item__link"
+                     aria-label="Read more about realeconomy"
+                     >Real Economy
+                  </a></li><li class="list-item"><a href="/programs/target"
+                     class="js-menu-program-target list-item__link"
+                     aria-label="Read more about target"
+                     >Target
+                  </a></li></ul></div><div class="c-programs-menu__categories"><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><a href="/news/international" class="title" aria-label="Read more about Κόσμος">
+                  Κόσμος
+                </a></div><ul><li class="list-item"><a href="/programs/global-japan"
+                     class="js-menu-program-global-japan list-item__link"
+                     aria-label="Read more about global-japan"
+                     >Global Japan
+                  </a></li><li class="list-item"><a href="/nocomment"
+                     class="js-menu-program-nocomment list-item__link"
+                     aria-label="Read more about nocomment"
+                     >No Comment
+                  </a></li><li class="list-item"><a href="/programs/spotlight"
+                     class="js-menu-program-spotlight list-item__link"
+                     aria-label="Read more about spotlight"
+                     >Spotlight
+                  </a></li><li class="list-item"><a href="/programs/globalconversation"
+                     class="js-menu-program-globalconversation list-item__link"
+                     aria-label="Read more about globalconversation"
+                     >The Global Conversation
+                  </a></li><li class="list-item"><a href="/programs/unreported-europe"
+                     class="js-menu-program-unreported-europe list-item__link"
+                     aria-label="Read more about unreported-europe"
+                     >Unreported Europe
+                  </a></li><li class="list-item"><a href="/programs/view"
+                     class="js-menu-program-view list-item__link"
+                     aria-label="Read more about view"
+                     >View
+                  </a></li><li class="list-item"><a href="/programs/world"
+                     class="js-menu-program-world list-item__link"
+                     aria-label="Read more about world"
+                     >Διεθνή Νέα
+                  </a></li></ul></div><div class="c-programs-menu__categories"><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><a href="/lifestyle/culture" class="title" aria-label="Read more about Πολιτισμός">
+                  Πολιτισμός
+                </a></div><ul><li class="list-item"><a href="/programs/cinema"
+                     class="js-menu-program-cinema list-item__link"
+                     aria-label="Read more about cinema"
+                     >Cinema
+                  </a></li><li class="list-item"><a href="/programs/cult"
+                     class="js-menu-program-cult list-item__link"
+                     aria-label="Read more about cult"
+                     >Cult
+                  </a></li><li class="list-item"><a href="/programs/musica"
+                     class="js-menu-program-musica list-item__link"
+                     aria-label="Read more about musica"
+                     >Musica
+                  </a></li></ul><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><a href="/news/sport" class="title" aria-label="Read more about Αθλητικά">
+                  Αθλητικά
+                </a></div><ul></ul></div><div class="c-programs-menu__categories"><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><a href="/knowledge/sci-tech" class="title" aria-label="Read more about Sci-tech">
+                  Sci-tech
+                </a></div><ul><li class="list-item"><a href="/programs/climate-now"
+                     class="js-menu-program-climate-now list-item__link"
+                     aria-label="Read more about climate-now"
+                     >Climate Now
+                  </a></li><li class="list-item"><a href="/programs/futuris"
+                     class="js-menu-program-futuris list-item__link"
+                     aria-label="Read more about futuris"
+                     >Futuris
+                  </a></li><li class="list-item"><a href="/programs/ocean"
+                     class="js-menu-program-ocean list-item__link"
+                     aria-label="Read more about ocean"
+                     >Ocean
+                  </a></li><li class="list-item"><a href="/programs/sci-tech"
+                     class="js-menu-program-sci-tech list-item__link"
+                     aria-label="Read more about sci-tech"
+                     >Επιστήμη – Τεχνολογία
+                  </a></li></ul></div><div class="c-programs-menu__categories"><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><a href="//gr.euronews.com/travel" class="title" aria-label="Read more about Ταξίδια">
+                  Ταξίδια
+                </a></div><ul><li class="list-item"><a href="/programs/adventures"
+                     class="js-menu-program-adventures list-item__link"
+                     aria-label="Read more about adventures"
+                     >Adventures
+                  </a></li><li class="list-item"><a href="/programs/explore"
+                     class="js-menu-program-explore list-item__link"
+                     aria-label="Read more about explore"
+                     >Explore
+                  </a></li><li class="list-item"><a href="/programs/postcards"
+                     class="js-menu-program-postcards list-item__link"
+                     aria-label="Read more about postcards"
+                     >Postcards
+                  </a></li><li class="list-item"><a href="/programs/taste"
+                     class="js-menu-program-taste list-item__link"
+                     aria-label="Read more about taste"
+                     >Taste
+                  </a></li></ul></div><div class="c-programs-menu__categories"><div class="list-item u-padding-bottom-2 u-padding-top-2 u-margin-top-2"><span class="title">Αφιερώματα</span></div><ul><li class="list-item"><a href="/special/angola-360"
+                     class="js-menu-program-hub_angola-360 list-item__link"
+                     aria-label="Read more about hub_angola-360"
+                     >Angola 360
+                  </a></li><li class="list-item"><a href="/special/coronavirus"
+                     class="js-menu-program-hub_Coronavirus list-item__link"
+                     aria-label="Read more about hub_Coronavirus"
+                     >Coronavirus
+                  </a></li><li class="list-item"><a href="/special/destination-dubai"
+                     class="js-menu-program-hub_destination-dubai list-item__link"
+                     aria-label="Read more about hub_destination-dubai"
+                     >Destination Dubai
+                  </a></li><li class="list-item"><a href="https://gr.euronews.com/programs/football-for-friendship"
+                     class="js-menu-program-custom_Football for friendship list-item__link"
+                     aria-label="Read more about custom_Football for friendship"
+                     >Football For Friendship
+                  </a></li><li class="list-item"><a href="/special/here-we-grow"
+                     class="js-menu-program-hub_here-we-grow list-item__link"
+                     aria-label="Read more about hub_here-we-grow"
+                     >Here We Grow: Spain
+                  </a></li><li class="list-item"><a href="/special/climate"
+                     class="js-menu-program-hub_Climate list-item__link"
+                     aria-label="Read more about hub_Climate"
+                     >Κλιματική Κρίση
+                  </a></li></ul></div><div class="c-programs-menu__footer"><footer class="c-section__footer"><a class="c-section__footer__link " href="/programs" >
+    Όλες οι εκπομπές 
+  </a></footer></div></div></nav></section></header><section class="c-breakingNews c-breakingNews--hidden js-breakingNews"><div class="o-section c-breakingNews__content"><strong class="c-breakingNews__title">Έκτακτη είδηση</strong><div class="c-breakingNews__swiper"><div class="c-swiper c-swiper--breakingNews"                   ><div id="breaking-news-component" class="swiper-container" data-carousel="breaking-news"
+       data-carousel-theme="carousel"><div class="swiper-wrapper"><breaking-news></breaking-news></div><div class="breaking-news-component swiper-pagination"></div></div><div class="breaking-news-component swiper-button-prev u-hide-for-small-only"></div><div class="breaking-news-component swiper-button-next u-hide-for-small-only"></div></div><button class="c-swipper__button close-breaking-news" aria-label="Close alert"><svg version="1.1" class="c-button--cross" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 width="17px" height="17px" viewBox="0 0 17 17" style="enable-background:new 0 0 17 17;" xml:space="preserve"><polygon  points="15.5,16.7 8.5,10.1 1.6,16.7 0.2,15.2 7.1,8.8 0.2,2.3 1.6,0.8 8.5,7.4 15.5,0.8 16.8,2.3 10,8.8 
+	16.8,15.2 "/></svg></button></div></div></section></div></div><a href="#" id="dfp-wallpaper-wrapper" class="u-hide-for-all"></a><main class="o-site-main" id="enw-main-content"><section class="enw-block-error text-book"><img class="enw-block-error__logo" src="/images/Euronews-logo-Negative-RGB.png"
+             alt="Euronews logo"><p class="enw-block-error__404">404</p><img class="enw-block-error__img" src="//static.euronews.com/500/500.gif"
+             alt="Euronews not found image"/><p>Η σελίδα που αναζητήσατε δεν υπάρχει<br/><a class="enw-block-error__link"
+                                                      href="/">Πατήστε εδώ για να επιστρέψετε στην αρχική σελίδα του Euronews</a></p></section><script> window.digitalData = JSON.parse('{\"site\":{\"platform\":\"\",\"language\":\"el\",\"primarylanguage\":\"\",\"secondarylanguage\":\"\",\"environment\":\"prod\",\"brand\":\"euronews\",\"servicetype\":\"web\",\"version\":{\"versions\":{\"date\":20210127162149,\"revision\":\"4.185.0\"}}},\"page\":{\"pagename\":\"euronews.na.na.na.error404\",\"pagehasad\":\"\",\"pagenumads\":\"\",\"sitesection\":\"\",\"sitesubsection1\":\"\",\"sitesubsection2\":\"\",\"pagetype\":\"page\",\"pageurl\":\"gr.euronews.com\\/favicon.ico\",\"pagedownloadtime\":\"\",\"vertical\":\"na\",\"theme\":\"na\",\"program\":\"na\",\"contenttype\":\"txt\",\"menustatus\":\"\",\"pagereload\":\"\",\"pagedisplaybreakpoint\":\"\",\"displaybreakingnewsbar\":\"none\",\"swipe\":\"none\",\"urlpath\":\"gr.euronews.com\\/favicon.ico\"},\"search\":{\"keyword\":\"\",\"searchresult\":\"\"},\"uv\":{\"uvid\":\"\"},\"article\":{\"eventid\":\"none\",\"storyid\":\"none\",\"updatedate\":\"none\",\"title\":\"none\",\"format\":\"none\",\"nbdayssincepublication\":\"none\",\"articlepromotedtobcs\":\"\",\"articlepromotedtohp\":\"\"},\"video\":{\"videoid\":\"none\",\"youtubevideoid\":\"none\",\"housenumbervidid\":\"none\",\"name\":\"none\",\"publicationdate\":\"none\",\"type\":\"none\",\"duration\":\"none\",\"isinplaylist\":\"none\",\"playlistname\":\"none\",\"haspreview\":\"none\",\"viewmode\":\"none\",\"playername\":\"none\",\"playlistnumitems\":\"none\",\"playlistposition\":\"none\",\"playerversion\":\"none\",\"soundstatus\":\"none\"},\"component\":{\"name\":\"\",\"type\":\"\",\"action\":\"\",\"pagename\":\"\",\"actiondetail\":\"\"},\"newsletter\":{\"name\":\"\",\"location\":\"\"},\"thirdPartiesDisabled\":[],\"scribbleId\":2818513,\"sendDate\":null}');</script><script src="//assets.adobedtm.com/cbcaa08b4d07/21b46dbf0308/launch-18c76c3a7465.min.js"
+                data-feature="adobe" async></script></main><aside id="hamburger-menu" class="enw-menu u-hide-for-large enw-block-scrollable js-scrollable"><div class="enw-hamburger-menu-content" id="hamburger-menu-content" data-content="{&quot;mainItems&quot;:[{&quot;url&quot;:&quot;\/european-affairs\/european-news&quot;,&quot;label&quot;:&quot;\u0395\u03c5\u03c1\u03ce\u03c0\u03b7&quot;,&quot;theme&quot;:&quot;europe&quot;},{&quot;url&quot;:&quot;\/news\/international&quot;,&quot;label&quot;:&quot;\u039a\u03cc\u03c3\u03bc\u03bf\u03c2&quot;,&quot;theme&quot;:&quot;news&quot;},{&quot;url&quot;:&quot;\/news\/business&quot;,&quot;label&quot;:&quot;\u039f\u03b9\u03ba\u03bf\u03bd\u03bf\u03bc\u03af\u03b1&quot;,&quot;theme&quot;:&quot;business&quot;},{&quot;url&quot;:&quot;\/news\/sport&quot;,&quot;label&quot;:&quot;\u0391\u03b8\u03bb\u03b7\u03c4\u03b9\u03ba\u03ac&quot;,&quot;theme&quot;:&quot;sport&quot;},{&quot;url&quot;:&quot;\/lifestyle\/culture&quot;,&quot;label&quot;:&quot;\u03a0\u03bf\u03bb\u03b9\u03c4\u03b9\u03c3\u03bc\u03cc\u03c2&quot;,&quot;theme&quot;:&quot;culture&quot;},{&quot;url&quot;:&quot;\/knowledge\/sci-tech&quot;,&quot;label&quot;:&quot;Sci-tech&quot;,&quot;theme&quot;:&quot;science_technology&quot;},{&quot;url&quot;:&quot;\/\/gr.euronews.com\/travel&quot;,&quot;label&quot;:&quot;\u03a4\u03b1\u03be\u03af\u03b4\u03b9\u03b1&quot;,&quot;theme&quot;:&quot;&quot;},{&quot;url&quot;:&quot;\/video&quot;,&quot;label&quot;:&quot;\u0392\u03af\u03bd\u03c4\u03b5\u03bf&quot;,&quot;theme&quot;:&quot;&quot;}],&quot;hubs&quot;:[{&quot;url&quot;:&quot;\/special\/coronavirus&quot;,&quot;label&quot;:&quot;Coronavirus&quot;,&quot;id&quot;:&quot;hub_Coronavirus&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;https:\/\/gr.euronews.com\/programs\/football-for-friendship&quot;,&quot;label&quot;:&quot;Football for friendship&quot;,&quot;id&quot;:&quot;custom_Football for friendship&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/here-we-grow&quot;,&quot;label&quot;:&quot;Here we grow: Spain&quot;,&quot;id&quot;:&quot;hub_here-we-grow&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/climate&quot;,&quot;label&quot;:&quot;\u039a\u03bb\u03b9\u03bc\u03b1\u03c4\u03b9\u03ba\u03ae \u03ba\u03c1\u03af\u03c3\u03b7&quot;,&quot;id&quot;:&quot;hub_Climate&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/angola-360&quot;,&quot;label&quot;:&quot;Angola 360&quot;,&quot;id&quot;:&quot;hub_angola-360&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/destination-dubai&quot;,&quot;label&quot;:&quot;Destination Dubai&quot;,&quot;id&quot;:&quot;hub_destination-dubai&quot;,&quot;order&quot;:0}],&quot;programsBlocks&quot;:[[{&quot;label&quot;:&quot;\u0395\u03c5\u03c1\u03ce\u03c0\u03b7&quot;,&quot;items&quot;:[{&quot;url&quot;:&quot;\/programs\/smart-regions&quot;,&quot;label&quot;:&quot;Smart Regions&quot;,&quot;id&quot;:&quot;smart-regions&quot;},{&quot;url&quot;:&quot;\/programs\/brussels-bureau&quot;,&quot;label&quot;:&quot;\u0393\u03c1\u03b1\u03c6\u03b5\u03af\u03bf \u0392\u03c1\u03c5\u03be\u03b5\u03bb\u03bb\u03ce\u03bd&quot;,&quot;id&quot;:&quot;brussels-bureau&quot;},{&quot;url&quot;:&quot;\/programs\/state-of-the-union&quot;,&quot;label&quot;:&quot;\u039a\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7 \u03c4\u03b7\u03c2 \u0388\u03bd\u03c9\u03c3\u03b7\u03c2&quot;,&quot;id&quot;:&quot;state-of-the-union&quot;}],&quot;url&quot;:&quot;\/european-affairs\/european-news&quot;},{&quot;label&quot;:&quot;\u039f\u03b9\u03ba\u03bf\u03bd\u03bf\u03bc\u03af\u03b1&quot;,&quot;items&quot;:[{&quot;url&quot;:&quot;\/programs\/business-line&quot;,&quot;label&quot;:&quot;Business Line&quot;,&quot;id&quot;:&quot;business-line&quot;},{&quot;url&quot;:&quot;\/programs\/business-planet&quot;,&quot;label&quot;:&quot;business planet&quot;,&quot;id&quot;:&quot;business-planet&quot;},{&quot;url&quot;:&quot;\/programs\/disrupted&quot;,&quot;label&quot;:&quot;Disrupted&quot;,&quot;id&quot;:&quot;disrupted&quot;},{&quot;url&quot;:&quot;\/programs\/focus&quot;,&quot;label&quot;:&quot;focus&quot;,&quot;id&quot;:&quot;focus&quot;},{&quot;url&quot;:&quot;\/programs\/realeconomy&quot;,&quot;label&quot;:&quot;real economy&quot;,&quot;id&quot;:&quot;realeconomy&quot;},{&quot;url&quot;:&quot;\/programs\/target&quot;,&quot;label&quot;:&quot;target&quot;,&quot;id&quot;:&quot;target&quot;}],&quot;url&quot;:&quot;\/news\/business&quot;}],[{&quot;label&quot;:&quot;\u039a\u03cc\u03c3\u03bc\u03bf\u03c2&quot;,&quot;items&quot;:[{&quot;url&quot;:&quot;\/programs\/global-japan&quot;,&quot;label&quot;:&quot;Global Japan&quot;,&quot;id&quot;:&quot;global-japan&quot;},{&quot;url&quot;:&quot;\/nocomment&quot;,&quot;label&quot;:&quot;No Comment&quot;,&quot;id&quot;:&quot;nocomment&quot;,&quot;openInNewTab&quot;:false},{&quot;url&quot;:&quot;\/programs\/spotlight&quot;,&quot;label&quot;:&quot;Spotlight&quot;,&quot;id&quot;:&quot;spotlight&quot;},{&quot;url&quot;:&quot;\/programs\/globalconversation&quot;,&quot;label&quot;:&quot;the global conversation&quot;,&quot;id&quot;:&quot;globalconversation&quot;},{&quot;url&quot;:&quot;\/programs\/unreported-europe&quot;,&quot;label&quot;:&quot;Unreported Europe&quot;,&quot;id&quot;:&quot;unreported-europe&quot;},{&quot;url&quot;:&quot;\/programs\/view&quot;,&quot;label&quot;:&quot;View&quot;,&quot;id&quot;:&quot;view&quot;},{&quot;url&quot;:&quot;\/programs\/world&quot;,&quot;label&quot;:&quot;\u0394\u03b9\u03b5\u03b8\u03bd\u03ae \u03bd\u03ad\u03b1&quot;,&quot;id&quot;:&quot;world&quot;}],&quot;url&quot;:&quot;\/news\/international&quot;}],[{&quot;label&quot;:&quot;\u03a0\u03bf\u03bb\u03b9\u03c4\u03b9\u03c3\u03bc\u03cc\u03c2&quot;,&quot;items&quot;:[{&quot;url&quot;:&quot;\/programs\/cinema&quot;,&quot;label&quot;:&quot;cinema&quot;,&quot;id&quot;:&quot;cinema&quot;},{&quot;url&quot;:&quot;\/programs\/cult&quot;,&quot;label&quot;:&quot;Cult&quot;,&quot;id&quot;:&quot;cult&quot;},{&quot;url&quot;:&quot;\/programs\/musica&quot;,&quot;label&quot;:&quot;musica&quot;,&quot;id&quot;:&quot;musica&quot;}],&quot;url&quot;:&quot;\/lifestyle\/culture&quot;},{&quot;label&quot;:&quot;\u0391\u03b8\u03bb\u03b7\u03c4\u03b9\u03ba\u03ac&quot;,&quot;items&quot;:[],&quot;url&quot;:&quot;\/news\/sport&quot;}],[{&quot;label&quot;:&quot;Sci-tech&quot;,&quot;items&quot;:[{&quot;url&quot;:&quot;\/programs\/climate-now&quot;,&quot;label&quot;:&quot;Climate Now&quot;,&quot;id&quot;:&quot;climate-now&quot;},{&quot;url&quot;:&quot;\/programs\/futuris&quot;,&quot;label&quot;:&quot;futuris&quot;,&quot;id&quot;:&quot;futuris&quot;},{&quot;url&quot;:&quot;\/programs\/ocean&quot;,&quot;label&quot;:&quot;Ocean&quot;,&quot;id&quot;:&quot;ocean&quot;},{&quot;url&quot;:&quot;\/programs\/sci-tech&quot;,&quot;label&quot;:&quot;\u0395\u03c0\u03b9\u03c3\u03c4\u03ae\u03bc\u03b7 \u2013 \u03a4\u03b5\u03c7\u03bd\u03bf\u03bb\u03bf\u03b3\u03af\u03b1&quot;,&quot;id&quot;:&quot;sci-tech&quot;}],&quot;url&quot;:&quot;\/knowledge\/sci-tech&quot;}],[{&quot;label&quot;:&quot;\u03a4\u03b1\u03be\u03af\u03b4\u03b9\u03b1&quot;,&quot;items&quot;:[{&quot;url&quot;:&quot;\/programs\/adventures&quot;,&quot;label&quot;:&quot;Adventures&quot;,&quot;id&quot;:&quot;adventures&quot;},{&quot;url&quot;:&quot;\/programs\/explore&quot;,&quot;label&quot;:&quot;explore&quot;,&quot;id&quot;:&quot;explore&quot;},{&quot;url&quot;:&quot;\/programs\/postcards&quot;,&quot;label&quot;:&quot;Postcards&quot;,&quot;id&quot;:&quot;postcards&quot;},{&quot;url&quot;:&quot;\/programs\/taste&quot;,&quot;label&quot;:&quot;Taste&quot;,&quot;id&quot;:&quot;taste&quot;}],&quot;url&quot;:&quot;\/\/gr.euronews.com\/travel&quot;}],[{&quot;label&quot;:&quot;\u0391\u03c6\u03b9\u03b5\u03c1\u03ce\u03bc\u03b1\u03c4\u03b1&quot;,&quot;items&quot;:[{&quot;url&quot;:&quot;\/special\/angola-360&quot;,&quot;label&quot;:&quot;Angola 360&quot;,&quot;id&quot;:&quot;hub_angola-360&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/coronavirus&quot;,&quot;label&quot;:&quot;Coronavirus&quot;,&quot;id&quot;:&quot;hub_Coronavirus&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/destination-dubai&quot;,&quot;label&quot;:&quot;Destination Dubai&quot;,&quot;id&quot;:&quot;hub_destination-dubai&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;https:\/\/gr.euronews.com\/programs\/football-for-friendship&quot;,&quot;label&quot;:&quot;Football for friendship&quot;,&quot;id&quot;:&quot;custom_Football for friendship&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/here-we-grow&quot;,&quot;label&quot;:&quot;Here we grow: Spain&quot;,&quot;id&quot;:&quot;hub_here-we-grow&quot;,&quot;order&quot;:0},{&quot;url&quot;:&quot;\/special\/climate&quot;,&quot;label&quot;:&quot;\u039a\u03bb\u03b9\u03bc\u03b1\u03c4\u03b9\u03ba\u03ae \u03ba\u03c1\u03af\u03c3\u03b7&quot;,&quot;id&quot;:&quot;hub_Climate&quot;,&quot;order&quot;:0}],&quot;url&quot;:&quot;&quot;}]],&quot;channelsItems&quot;:[{&quot;label&quot;:&quot;\u0395\u03b9\u03b4\u03ae\u03c3\u03b5\u03b9\u03c2&quot;,&quot;url&quot;:&quot;\/news&quot;,&quot;displayFooter&quot;:true},{&quot;label&quot;:&quot;Lifestyle&quot;,&quot;url&quot;:&quot;\/lifestyle&quot;,&quot;displayFooter&quot;:true},{&quot;label&quot;:&quot;\u0393\u03bd\u03ce\u03c3\u03b7&quot;,&quot;url&quot;:&quot;\/knowledge&quot;,&quot;displayFooter&quot;:true},{&quot;label&quot;:&quot;\u0392\u03af\u03bd\u03c4\u03b5\u03bf&quot;,&quot;url&quot;:&quot;\/video&quot;,&quot;openInNewTab&quot;:false,&quot;displayFooter&quot;:false},{&quot;label&quot;:&quot;\u0395\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ac \u0398\u03ad\u03bc\u03b1\u03c4\u03b1&quot;,&quot;url&quot;:&quot;\/european-affairs&quot;,&quot;displayFooter&quot;:true}]}"><div class="u-hide-for-large u-margin-bottom-3"><div class="c-search-form js-awesomeplete-searchBar" id="hamburger-search-autocomplete"><search-form
+        apiurl="/api/searchautocomplete.json?q="
+        eventisallowed="1"
+        searchplaceholder="Αναζητήστε στο"
+        class=""></search-form></div></div><section class="o-section c-barre-now c-barre-now--mobile  u-hide-for-large u-padding-x-0 " data-event="barre-now-tags-mobile"><h3 class="c-barre-now__tag-title">
+    Top tags
+  </h3><ul><li><a class="c-tag c-tag--dark qa-tag" href="//gr.euronews.com/tag/covid-19">Covid-19</a></li><li><a class="c-tag c-tag--dark qa-tag" href="//gr.euronews.com/tag/pandemic">πανδημία</a></li><li><a class="c-tag c-tag--dark qa-tag" href="//gr.euronews.com/tag/news">ειδήσεις</a></li><li><a class="c-tag c-tag--dark qa-tag" href="//gr.euronews.com/tag/coronavirus-vaccine">εμβόλιο COVID-19</a></li><li><a class="c-tag c-tag--dark qa-tag" href="//gr.euronews.com/tag/cyprus">Κύπρος</a></li><li><a class="c-tag c-tag--dark qa-tag" href="//gr.euronews.com/tag/greece">Ελλάδα</a></li></ul></section><div class="c-menu-mobile-list c-menu-mobile-list-main"><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="/european-affairs/european-news">
+                    Ευρώπη
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="/news/international">
+                    Κόσμος
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="/news/business">
+                    Οικονομία
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="/news/sport">
+                    Αθλητικά
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="/lifestyle/culture">
+                    Πολιτισμός
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="/knowledge/sci-tech">
+                    Sci-tech
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="//gr.euronews.com/travel">
+                    Ταξίδια
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+                   href="/video">
+                    Βίντεο
+                </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item"
+               href="/programs">
+                Όλες οι εκπομπές 
+            </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item" href="/special/coronavirus">
+                        Coronavirus
+                    </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item" href="https://gr.euronews.com/programs/football-for-friendship">
+                        Football for friendship
+                    </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item" href="/special/here-we-grow">
+                        Here we grow: Spain
+                    </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item" href="/special/climate">
+                        Κλιματική κρίση
+                    </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item" href="/special/angola-360">
+                        Angola 360
+                    </a><a class="c-menu-mobile-list__item c-menu-mobile-list-main__item" href="/special/destination-dubai">
+                        Destination Dubai
+                    </a></div><section class="bottom-links"><ul class="bottom-links__list"><li><a class="bottom-links__icon" href="/live" title="Live"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#fff" xmlns:v="https://vecta.io/nano"><path d="M40.063 12v21.875h-32V12h32m2-4h-36c-1.1 0-2 .9-2 2v25.875c0 1.1.9 2 2 2h36c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2h0zM29.34 22.52l-7.5-5c-.153-.102-.35-.1-.513-.025a.5.5 0 0 0-.264.441v10a.5.5 0 0 0 .264.441c.074.04.155.06.236.06.097 0 .194-.028.277-.084l7.5-5a.5.5 0 0 0 0-.832zM32 44H16a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4z"/></svg><span class="bottom-links__text">Live</span></a></li><li class="u-show-for-small-only"><a class="bottom-links__icon" href="/programs/view"
+         title="All views"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24,16a8,8,0,1,0,8,8A8,8,0,0,0,24,16Zm5.65,5H26.91a8.33,8.33,0,0,0-1.27-3.18A6.44,6.44,0,0,1,29.65,21Zm.75,3a6.27,6.27,0,0,1-.26,1.8h-3a16.25,16.25,0,0,0,0-3.6h3A6.27,6.27,0,0,1,30.4,24ZM24,30c-.47,0-1.23-1.12-1.67-3h3.34C25.23,28.88,24.47,30,24,30Zm-1.88-4.2a13.56,13.56,0,0,1,0-3.6h3.76a13.56,13.56,0,0,1,0,3.6ZM17.6,24a6.27,6.27,0,0,1,.26-1.8h3a16.25,16.25,0,0,0,0,3.6h-3A6.27,6.27,0,0,1,17.6,24ZM24,18c.47,0,1.23,1.12,1.67,3H22.33C22.77,19.12,23.53,18,24,18Zm-1.64-.18A8.33,8.33,0,0,0,21.09,21H18.35A6.44,6.44,0,0,1,22.36,17.82Zm-4,9.18h2.74a8.33,8.33,0,0,0,1.27,3.18A6.44,6.44,0,0,1,18.35,27Zm7.29,3.18A8.33,8.33,0,0,0,26.91,27h2.74A6.44,6.44,0,0,1,25.64,30.18Z" fill="#002e44"/><path d="M43,19.5A24.71,24.71,0,0,0,2,24a24.71,24.71,0,0,0,44,0A24.63,24.63,0,0,0,43,19.5ZM24,33A20.23,20.23,0,0,1,7.2,24a20.19,20.19,0,0,1,33.6,0A20.23,20.23,0,0,1,24,33Z"/></svg><span class="bottom-links__text">All views</span></a></li><li class="u-show-for-small-only"><a class="bottom-links__icon" href="/bulletin" title="Δελτίο"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M32.44,27.64,26.06,23.4a.42.42,0,0,0-.43,0,.44.44,0,0,0-.23.38v8.49a.44.44,0,0,0,.23.38.46.46,0,0,0,.2.05.48.48,0,0,0,.23-.07l6.38-4.25a.44.44,0,0,0,.18-.35A.44.44,0,0,0,32.44,27.64Z"></path><path d="M38,18V38H18V18H38m2-4H16a2,2,0,0,0-2,2V40a2,2,0,0,0,2,2H40a2,2,0,0,0,2-2V16a2,2,0,0,0-2-2Z"></path><path d="M32.1,6H8A2,2,0,0,0,6,8V32a2,2,0,0,0,4,0V10H32.1a2,2,0,0,0,0-4Z"></path></svg><span class="bottom-links__text">Δελτίο</span></a></li><li><a class="bottom-links__icon" href="/just-in"
+         title="Just In "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#fff" xmlns:v="https://vecta.io/nano"><path d="M43.506 21.384l1.77-11.215c.036-.228-.067-.442-.266-.553s-.466-.103-.69.022l-12.2 6.75c-.225.125-.373.345-.386.574a.52.52 0 0 0 .064.286c.056.102.147.184.263.233l10.44 4.464c.194.083.433.065.637-.048s.347-.306.38-.514z"/><path d="M39.708 27.042l-.332 1.385c-2.44 8.478-11.324 13.4-19.802 10.95s-13.4-11.324-10.95-19.802 11.324-13.4 19.802-10.95c4.842 1.394 8.512 4.892 10.322 9.213 1.498.42 2.975.73 4.24-.104-2.004-6.057-6.86-11.054-13.455-12.954C18.92 1.725 7.837 7.852 4.78 18.467a20 20 0 0 0 13.686 24.752c10.616 3.055 21.697-3.072 24.753-13.686a20.09 20.09 0 0 0 .424-1.819c-1.025-.632-2.26-.856-3.936-.672zM24.02 11.74h0c-1.1-.001-2 .898-2.002 1.998l-.01 10.335c-.001 1.1.898 2 1.998 2.002h0c1.1.001 2-.898 2.002-1.998l.01-10.335c.001-1.1-.898-2-1.998-2.002z"/><path d="M30.933 31.403h0c.792-.763.816-2.036.052-2.828l-5.55-5.76c-.763-.792-2.036-.816-2.828-.052h0c-.792.763-.816 2.036-.052 2.828l5.55 5.76c.764.792 2.036.815 2.828.052zm12.647-3.18a2.02 2.02 0 0 1-2.496 1.38 2.02 2.02 0 0 1-1.38-2.496 2.02 2.02 0 0 1 2.496-1.38 2.02 2.02 0 0 1 1.38 2.496z"/></svg><span class="bottom-links__text">Just In </span></a></li><li><a class="bottom-links__icon weather-icon" href="/weather/europe"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M15.79,25.89A6.46,6.46,0,0,1,15.12,23a6.52,6.52,0,0,1,11.23-4.53,9.5,9.5,0,0,1,3.39-.63,8.5,8.5,0,0,1,1.14.08,10.53,10.53,0,0,0-18.6,9.88A7.48,7.48,0,0,1,15.79,25.89Z"></path><path d="M25.36,11.34h0a1.77,1.77,0,0,0,2.21-1.15L28,8.77a1.77,1.77,0,0,0-1.15-2.22h0A1.76,1.76,0,0,0,24.66,7.7l-.45,1.42A1.77,1.77,0,0,0,25.36,11.34Z"></path><path d="M15.68,12.3h0a1.77,1.77,0,0,0,.75-2.38l-.68-1.33a1.77,1.77,0,0,0-2.38-.75h0a1.78,1.78,0,0,0-.76,2.38l.69,1.32A1.78,1.78,0,0,0,15.68,12.3Z"></path><path d="M33,17.35h0a1.76,1.76,0,0,0,2.38.76l1.33-.69A1.77,1.77,0,0,0,37.43,15h0a1.77,1.77,0,0,0-2.38-.75L33.73,15A1.77,1.77,0,0,0,33,17.35Z"></path><path class="cls-1" d="M6.05,32h0a1.76,1.76,0,0,0,2.38.75L9.75,32a1.76,1.76,0,0,0,.75-2.38h0a1.77,1.77,0,0,0-2.38-.75l-1.32.69A1.77,1.77,0,0,0,6.05,32Z"></path><path d="M39.11,31.51c-.12,0-.23,0-.34,0a8.72,8.72,0,0,0,.34-2.41,8.86,8.86,0,0,0-17.66-1.08,6.89,6.89,0,0,0-2.58-.5,7,7,0,0,0,0,13.92,6.34,6.34,0,0,0,.76,0H39.09v-.06h0a4.94,4.94,0,0,0,0-9.88Z"></path><path d="M9.41,19.92h0a1.77,1.77,0,0,0-1.15-2.21l-1.42-.45a1.77,1.77,0,0,0-2.22,1.15h0a1.77,1.77,0,0,0,1.15,2.21l1.42.45A1.76,1.76,0,0,0,9.41,19.92Z"></path></svg><span class="bottom-links__text">Καιρός</span></a></li><li><a class="bottom-links__icon"
+         href="https://games.euronews.com/en?arkpromo=Site_TopNav"
+         target="_blank"
+         rel="noopener"
+         aria-label="Read more about euronews games services"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve"><style>.games_color{fill:#082332}</style><path class="games_color" d="M24,4C20.3,16.9,2.4,17.4,6,29.9S22,32,22,32s2.3,10.3-6,12h16c-8.3-1.7-6-12-6-12s12.4,10.4,16-2.1S27.7,16.9,24,4z"/></svg><span class="bottom-links__text">Games</span></a></li></ul></section><div class="c-languages js-languageSelect-menu-burger"><div class="c-languages__select"><select class="c-languages__select__options js-languageSelect" aria-label="Γλώσσα" ><option value="//www.euronews.com"
+                    
+                    lang="en-GB"
+                    data-locale="en">
+              English
+            </option><option value="//fr.euronews.com"
+                    
+                    lang="fr-FR"
+                    data-locale="fr">
+              Français
+            </option><option value="//de.euronews.com"
+                    
+                    lang="de-DE"
+                    data-locale="de">
+              Deutsch
+            </option><option value="//it.euronews.com"
+                    
+                    lang="it-IT"
+                    data-locale="it">
+              Italiano
+            </option><option value="//es.euronews.com"
+                    
+                    lang="es-ES"
+                    data-locale="es">
+              Español
+            </option><option value="//pt.euronews.com"
+                    
+                    lang="pt-PT"
+                    data-locale="pt">
+              Português
+            </option><option value="//ru.euronews.com"
+                    
+                    lang="ru-RU"
+                    data-locale="ru">
+              Русский
+            </option><option value="//tr.euronews.com"
+                    
+                    lang="tr-TR"
+                    data-locale="tr">
+              Türkçe
+            </option><option value="//gr.euronews.com"
+                     selected
+                    lang="el-GR"
+                    data-locale="el">
+              Ελληνικά
+            </option><option value="//hu.euronews.com"
+                    
+                    lang="hu-HU"
+                    data-locale="hu">
+              Magyar
+            </option><option value="//per.euronews.com"
+                    
+                    lang="fa-IR"
+                    data-locale="fa">
+              فارسی
+            </option><option value="//arabic.euronews.com"
+                    
+                    lang="hy-AM"
+                    data-locale="ar">
+              العربية
+            </option><option value="https://www.euronews.al/al"
+                    
+                    lang="sq-AL"
+                    data-locale="al">
+              Shqip
+            </option><option value="http://www.euronews.ro"
+                    
+                    lang="ro-RO"
+                    data-locale="ro">
+              Română
+            </option></select></div></div><section class="bottom-social-links"><ul class="c-social-share "></ul></section></div></aside><script type="x/template" id="search-form-template"><input class="c-search-form__input awesomplete"
+    aria-expanded="true"
+    aria-label="Αναζήτηση στο"
+    placeholder="{{searchplaceholder}}"
+    type="search"
+    v-model="inputSearch"
+    v-on:keyup="updateData | debounce 400"
+    v-on:keyup.enter="launchSearch"
+    v-bind:class="{'noResult': noResult}"><div class="c-search-form__loader"
+    v-bind:class="{'loading': isLoading}"><svg class="loader" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50"><path d="M43.935 25.145c0-10.318-8.364-18.683-18.683-18.683-10.318 0-18.683 8.365-18.683 18.683h4.067c0-8.07 6.543-14.615 14.615-14.615s14.615 6.543 14.615 14.615h4.068z"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/></path></svg></div><button class="c-search-form__button"
+    aria-label="search button"
+    v-on:click="launchSearch"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#fff" xmlns:v="https://vecta.io/nano"><path d="M28.056 27.944h0c-.78.777-.78 2.05-.003 2.828l8.163 8.18c.777.78 2.05.78 2.828.003h0c.78-.777.78-2.05.003-2.828l-8.163-8.18c-.776-.778-2.05-.78-2.828-.003z"/><path d="M20.5 11c5.238 0 9.5 4.262 9.5 9.5S25.738 30 20.5 30 11 25.738 11 20.5s4.262-9.5 9.5-9.5m0-4C13.044 7 7 13.044 7 20.5S13.044 34 20.5 34 34 27.956 34 20.5 27.956 7 20.5 7h0z"/></svg></button></script><div class="breakingNews-master-hidden"></div><div class="js-browser-unsupported browser-unsupported hide" data-msg="Το euronews δεν είναι διαθέσιμο στον Internet Explorer. Ο συγκεκριμένος browser δεν είναι ενημερωμένος από την Microsoft και δεν ακολουθεί τις τεχνολογικές εξελίξεις. Χρησιμοποιήστε κάποιον άλλο φυλλομετρητή, όπως Edge, Safari, Google Chrome ή Mozilla Firefox."><div class="browser-unsupported__bkg"></div><div class="browser-unsupported__modal js-browser-unsupported-txt"></div></div></body></html>

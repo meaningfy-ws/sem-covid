@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="script-disabled">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-b6f9115f7c7696f8896",applicationID:"27579118"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-40929792-45", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<link rel="canonical" href="https://werk.belgie.be/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" />
+<meta name="description" content="Vanaf 13 maart 2020 wordt de notie tijdelijke werkloosheid wegens overmacht soepel toegepast door de RVA. Alle situaties van tijdelijke werkloosheid als gevolg van het coronavirus,  kunnen  beschouwd worden als tijdelijke werkloosheid wegens overmacht, ook indien er bijvoorbeeld toch nog op bepaalde dagen kan worden gewerkt." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #0079cc} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>
+<meta name="msapplication-config" content="/themes/custom/employment/images/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="alternate" hreflang="nl" href="https://werk.belgie.be/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" />
+<link rel="alternate" hreflang="fr" href="https://werk.belgie.be/fr/actualites/chomage-temporaire-la-demande-de-reconnaissance-comme-entreprise-en-difficulte-nest-plus" />
+<link rel="alternate" hreflang="de" href="https://werk.belgie.be/de/nachrichten/zeitweilige-arbeitslosigkeit-der-antrag-auf-anerkennung-als-unternehmen-schwierigkeiten" />
+<link rel="shortcut icon" href="/themes/custom/employment/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/employment/images/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/employment/images/favicons/favicon.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="/themes/custom/employment/images/favicons/favicon@2x.png" />
+<link rel="manifest" href="/themes/custom/employment/images/favicons/site.webmanifest" />
+<link rel="mask-icon" href="/themes/custom/employment/images/favicons/safari-pinned-tab.svg" color="#817c00" />
+
+    <title>Tijdelijke werkloosheid: aanvraag tot erkenning als onderneming in moeilijkheden niet meer vereist - Federale Overheidsdienst Werkgelegenheid, Arbeid en Sociaal Overleg</title>
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/ajax-progress.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/autocomplete-loading.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/fieldgroup.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/details.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/item-list.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/js.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/nowrap.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/position-container.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/progress.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/reset-appearance.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/resize.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/sticky-header.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-counter.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-counters.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-general-info.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tabledrag.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tablesort.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tree-child.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/utilities/align.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/utilities/clearfix.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/utilities/container-inline.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/utilities/hidden.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/core.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/tabs.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/modules/contrib/leaflet/js/leaflet/dist/leaflet.css?qno7ek" />
+<link rel="stylesheet" media="all" href="//unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<link rel="stylesheet" media="all" href="/core/modules/views/css/views.module.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/modules/contrib/eu_cookie_compliance/css/eu_cookie_compliance.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/theme.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/modules/contrib/basic_cart/css/basic_cart.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/extlink/extlink-window.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/core/modules/layout_discovery/layouts/twocol/twocol.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/modules/contrib/openfed_social/assets/styles/openfed_social.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/openfed_federalheader/federalheader-block.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/normalize.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/reboot.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/selection.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/root.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/headings.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/typography.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/blockquotes.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/lists.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/media.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/code.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/tables.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/base/elements/forms.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/base/elements.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/layout/grid.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/layout/page.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/layout/maintenance-page.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/layout/language-selection-page.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/layout/region.css?qno7ek" />
+
+<!--[if lte IE 11]>
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/outdated-browser.css?qno7ek" />
+<![endif]-->
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/flatpickr.min.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/block/branding.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/breadcrumb.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/menu.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/menu-menubar.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/menu-footer.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/action-links.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/links.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/tabs.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/pager.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/dataset/item-list.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/field/label-inline.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/field/text-formatted.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/field/multiple-value-form.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/node/unpublished.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/misc/skip-link.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/contrib/kiso/css/components/navigation/links--language-block.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/layouts.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/blocks.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/forms.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/jquery.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/views.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/nodes.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/paragraphs.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/taxonomies.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/horizontal-tabs.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/tabs.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/ajax-progress.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/user.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/eu-cookie-compliance.css?qno7ek" />
+<link rel="stylesheet" media="all" href="/themes/custom/employment/css/components/noscript.css?qno7ek" />
+<link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Muli:300,400,700&amp;display=swap" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&amp;display=swap" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;display=swap" />
+<link rel="stylesheet" media="print" href="/themes/custom/employment/css/theme/print.css?qno7ek" />
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+
+  </head>
+  <body class="toolbar-themes toolbar-no-tabs toolbar-no-icons toolbar-themes-admin-theme--adminimal-theme sidebar one-sidebar is-visible--navigation not-logged-in page--node page--node-type-news">
+            <a href="#main-content" class="visually-hidden focusable skip-link">Overslaan en naar de inhoud gaan</a>
+        
+      <div class="page dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    
+      <div class="page__wrapper page__wrapper--tools">
+      <div class="page__section page__section--tools container">
+          
+<nav class="language-switcher-language-url block block--language block--language--language-interface block--region-tools" id="block-languageswitcher" aria-label="Language switcher">
+  
+    
+
+        
+<ul class="links links--language-block"><li data-drupal-link-system-path="node/11824" class="is-active"><a href="/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" class="language-link is-active" lang="nl" aria-label="Dutch" hreflang="nl" data-drupal-link-system-path="node/11824"><abbr title="Dutch">NL</abbr></a></li><li data-drupal-link-system-path="node/11824" class="is-active"><a href="/fr/actualites/chomage-temporaire-la-demande-de-reconnaissance-comme-entreprise-en-difficulte-nest-plus" class="language-link" lang="fr" aria-label="Français" hreflang="fr" data-drupal-link-system-path="node/11824"><abbr title="Français">FR</abbr></a></li><li data-drupal-link-system-path="node/11824" class="is-active"><a href="/de/nachrichten/zeitweilige-arbeitslosigkeit-der-antrag-auf-anerkennung-als-unternehmen-schwierigkeiten" class="language-link" lang="de" aria-label="Deutsch" hreflang="de" data-drupal-link-system-path="node/11824"><abbr title="Deutsch">DE</abbr></a></li><li><del class="language-link disabled">
+            <abbr aria-hidden="true" title="English (unavailable)">EN</abbr>
+          </del></li></ul>
+  </nav>
+<div id="block-federalheader" class="block block--openfed-federalheader block--openfed-federalheader--federalheader block--region-tools">
+  
+    
+
+      <small class="block--openfed-federalheader__link">Andere informatie en diensten van de overheid: <span><a href="https://www.belgium.be/nl">www.belgium.be</a></span></small><img src="/profiles/contrib/openfed/modules/openfed_features/openfed_federalheader/assets/images/federalheader_logo.svg" alt="Logo of the Belgian Federal Authorities" class="block--openfed-federalheader__logo">
+  </div>
+
+
+      </div>
+    </div>
+  
+<header class="page__wrapper page__wrapper--header" role="banner">
+              <div class="page__section page__section--banner">
+        <div class="page__inner page__inner--banner container">
+            <div  id="block-employment-branding" class="block block--system-branding">
+      <a href="/nl" title="Back to the home page" rel="home">
+              <img class="logo" src="/themes/custom/employment/logo.svg" alt="Back to the Federale Overheidsdienst Werkgelegenheid, Arbeid en Sociaal Overleg homepage" width="70" height="76" />
+                    <span class="name" aria-hidden="true">Federale Overheidsdienst<br />Werkgelegenheid,<br />Arbeid en Sociaal Overleg</span>
+          </a>
+      </div>
+
+
+
+
+
+
+<nav id="block-headermenunl" aria-label="Header Menu NL" class="block block--menu block--menu--header-menu-nl block--region-header">
+  
+    
+
+        
+              <ul class="menu">
+                          
+              <li class="menu-item expanded dropdown">
+          <a class="dropdown-toggle" href="/nl/over-de-fod" data-toggle="dropdown">Over de FOD<span class="caret"></span></a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/voorstelling" title="Voorstelling" hreflang="nl" data-drupal-link-system-path="node/3124">Voorstelling</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/voorstelling/missie" title="Missie" hreflang="nl" data-drupal-link-system-path="node/3125">Missie</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/voorstelling/waarden" title="Waarden" hreflang="nl" data-drupal-link-system-path="node/3203">Waarden</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/voorstelling/historiek" title="Historiek" hreflang="nl" data-drupal-link-system-path="node/3126">Historiek</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/voorstelling/logo" title="Logo" hreflang="nl" data-drupal-link-system-path="node/3127">Logo</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/bestuursovereenkomst" title="Bestuursovereenkomst" hreflang="nl" data-drupal-link-system-path="node/3204">Bestuursovereenkomst</a>
+                  </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/structuur-van-de-fod" title="Structuur van de FOD" hreflang="nl" data-drupal-link-system-path="node/3133">Structuur van de FOD</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/diensten-van-de-voorzitter" title="Diensten van de voorzitter" hreflang="nl" data-drupal-link-system-path="node/3134">Diensten van de voorzitter</a>
+                  </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/stafdiensten" title="Stafdiensten" hreflang="nl" data-drupal-link-system-path="node/3135">Stafdiensten</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/stafdiensten/stafdienst-budget-en-beheerscontrole" title="Stafdienst Budget en Beheerscontrole" hreflang="nl" data-drupal-link-system-path="node/3136">Stafdienst Budget en Beheerscontrole</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/stafdiensten/stafdienst-personeel-en-organisatie" title="Stafdienst Personeel en Organisatie" hreflang="nl" data-drupal-link-system-path="node/3137">Stafdienst Personeel en Organisatie</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/stafdiensten/stafdienst-informatie-en-communicatietechnologieen" title="Stafdienst Informatie- en Communicatietechnologieën" hreflang="nl" data-drupal-link-system-path="node/3138">Stafdienst Informatie- en Communicatietechnologieën</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/algemene-directie-collectieve-arbeidsbetrekkingen" title="Algemene Directie Collectieve Arbeidsbetrekkingen" hreflang="nl" data-drupal-link-system-path="node/3139">AD Collectieve Arbeidsbetrekkingen</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/ad-individuele-arbeidsbetrekkingen-inspraakorganen-en" title="AD Individuele Arbeidsbetrekkingen, Inspraakorganen en Werkgelegenheid" hreflang="nl" data-drupal-link-system-path="node/3140">AD Individuele Arbeidsbetrekkingen, Inspraakorganen en Werkgelegenheid</a>
+                  </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/arbeidsinspectie-ad-toezicht-op-de-sociale-wetten" title="Arbeidsinspectie - AD Toezicht op de Sociale Wetten" hreflang="nl" data-drupal-link-system-path="node/3141">Arbeidsinspectie - AD Toezicht op de Sociale Wetten</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item collapsed">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/arbeidsinspectie-ad-toezicht-op-de-sociale-wetten/externe" title="Externe directies Toezicht op de Sociale Wetten" hreflang="nl" data-drupal-link-system-path="node/3161">Externe directies Toezicht op de Sociale Wetten</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/ad-humanisering-van-de-arbeid" title="AD Humanisering van de Arbeid" hreflang="nl" data-drupal-link-system-path="node/3142">AD Humanisering van de Arbeid</a>
+                  </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/arbeidsinspectie-ad-toezicht-op-het-welzijn-op-het-werk" title="Arbeidsinspectie - AD Toezicht op het Welzijn op het Werk" hreflang="nl" data-drupal-link-system-path="node/3143">Arbeidsinspectie - AD Toezicht op het Welzijn op het Werk</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/arbeidsinspectie-ad-toezicht-op-het-welzijn-op-het-werk/afdeling" title="Afdeling van het Toezicht op de chemische risico’s" hreflang="nl" data-drupal-link-system-path="node/10613">Afdeling van het Toezicht op de chemische risico’s</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/arbeidsinspectie-ad-toezicht-op-het-welzijn-op-het-werk/externe" title="Externe directies Toezicht op het Welzijn op het Werk" hreflang="nl" data-drupal-link-system-path="node/3160">Externe directies Toezicht op het Welzijn op het Werk</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/structuur-van-de-fod/sociale-inlichtingen-en-opsporingsdienst-siod" title="Sociale Inlichtingen- en Opsporingsdienst (SIOD)" hreflang="nl" data-drupal-link-system-path="node/3164">Sociale Inlichtingen- en Opsporingsdienst (SIOD)</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/dienstverlening" title="Dienstverlening" hreflang="nl" data-drupal-link-system-path="node/3129">Dienstverlening</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/dienstverlening/informatie" title="Informatie" hreflang="nl" data-drupal-link-system-path="node/3162">Informatie</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/dienstverlening/documentatie" title="Documentatie" hreflang="nl" data-drupal-link-system-path="node/3131">Documentatie</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/dienstverlening/afschriften-van-cao" title="Afschriften van CAO" hreflang="nl" data-drupal-link-system-path="node/3130">Afschriften van CAO</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/dienstverlening/de-eretekens-van-de-arbeid" title="De eretekens van de arbeid" hreflang="nl" data-drupal-link-system-path="node/3132">De eretekens van de arbeid</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/dienstverlening/opleidingen" title="Opleidingen" hreflang="nl" data-drupal-link-system-path="node/3165">Opleidingen</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/dienstverlening/gebruikershandvest-van-de-fod" title="Gebruikershandvest van de FOD" hreflang="nl" data-drupal-link-system-path="node/3205">Gebruikershandvest van de FOD</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/dienstverlening/attesten-openbare-aanbestedingen" title="Attesten openbare aanbestedingen " hreflang="nl" data-drupal-link-system-path="node/10423">Attesten openbare aanbestedingen </a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/inbreuken" title="Inbreuken" hreflang="nl" data-drupal-link-system-path="node/5690">Inbreuken</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken/de-arbeidsinspectie" title="De Arbeidsinspectie" hreflang="nl" data-drupal-link-system-path="node/10550">De Arbeidsinspectie</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken/de-controles" title="De controles" hreflang="nl" data-drupal-link-system-path="node/10551">De controles</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken/de-gevolgen-van-een-controle" title="De gevolgen van een controle" hreflang="nl" data-drupal-link-system-path="node/10552">De gevolgen van een controle</a>
+                  </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/inbreuken/het-verloop-van-een-proces-verbaal" title="Het verloop van een proces-verbaal" hreflang="nl" data-drupal-link-system-path="node/10553">Het verloop van een proces-verbaal</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken/het-verloop-van-een-proces-verbaal/de-bekendmaking-van-het-proces-verbaal-tot" title="De bekendmaking van het proces-verbaal tot vaststelling van een inbreuk" hreflang="nl" data-drupal-link-system-path="node/10555">De bekendmaking van het proces-verbaal tot vaststelling van een inbreuk</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken/het-verloop-van-een-proces-verbaal/de-beslissing-van-het-openbaar-ministerie" title="De beslissing van het openbaar ministerie" hreflang="nl" data-drupal-link-system-path="node/10556">De beslissing van het openbaar ministerie</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken/het-verloop-van-een-proces-verbaal/de-inbreuken" title="De inbreuken" hreflang="nl" data-drupal-link-system-path="node/10560">De inbreuken</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken/het-verloop-van-een-proces-verbaal/strafrechtelijke-vervolgingen" title="Strafrechtelijke vervolgingen" hreflang="nl" data-drupal-link-system-path="node/10561">Strafrechtelijke vervolgingen</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/over-de-fod/inbreuken/het-verloop-van-een-proces-verbaal/administratieve-procedure" title="Administratieve procedure" hreflang="nl" data-drupal-link-system-path="node/10562">Administratieve procedure</a>
+                  </li>
+        </ul>
+  
+            </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/emas" title="EMAS" hreflang="nl" data-drupal-link-system-path="node/3166">EMAS</a>
+                  </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/gerelateerde-organen" title="Gerelateerde organen" hreflang="nl" data-drupal-link-system-path="node/3146">Gerelateerde organen</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/gerelateerde-organen/parastatalen" title="Parastatalen" hreflang="nl" data-drupal-link-system-path="node/3147">Parastatalen</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/parastatalen/rijksdienst-voor-arbeidsvoorziening-rva" title="Rijksdienst voor Arbeidsvoorziening (RVA)" hreflang="nl" data-drupal-link-system-path="node/3148">Rijksdienst voor Arbeidsvoorziening (RVA)</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/parastatalen/hulpkas-voor-werkloosheidsuitkeringen-hvw" title="Hulpkas voor werkloosheidsuitkeringen (HVW)" hreflang="nl" data-drupal-link-system-path="node/3149">Hulpkas voor werkloosheidsuitkeringen (HVW)</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/parastatalen/nationale-arbeidsraad-nar" title="Nationale Arbeidsraad (NAR)" hreflang="nl" data-drupal-link-system-path="node/3150">Nationale Arbeidsraad (NAR)</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/parastatalen/koninklijk-instituut-der-eliten-van-de-arbeid-van" title="Koninklijk instituut der eliten van de arbeid van België" hreflang="nl" data-drupal-link-system-path="node/3151">Koninklijk instituut der eliten van de arbeid van België</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/gerelateerde-organen/adviesorganen" title="Adviesorganen" hreflang="nl" data-drupal-link-system-path="node/3153">Adviesorganen</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/adviesorganen/hoge-raad-voor-de-werkgelegenheid" title="Hoge Raad voor de Werkgelegenheid" hreflang="nl" data-drupal-link-system-path="node/3157">Hoge Raad voor de Werkgelegenheid</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/adviesorganen/overlegcomite-voor-het-kaderpersoneel" title="Overlegcomité voor het kaderpersoneel" hreflang="nl" data-drupal-link-system-path="node/3154">Overlegcomité voor het kaderpersoneel</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/adviesorganen/paritaire-comites-en-subcomites" title="Paritaire comités en subcomités" hreflang="nl" data-drupal-link-system-path="node/3155">Paritaire comités en subcomités</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/adviesorganen/provinciale-comites-voor-de-bevordering-van-de" title="Provinciale comités voor de bevordering van de arbeid" hreflang="nl" data-drupal-link-system-path="node/3156">Provinciale comités voor de bevordering van de arbeid</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/fondsen-voor-bestaanszekerheid" title="Fondsen voor bestaanszekerheid" hreflang="nl" data-drupal-link-system-path="node/3158">Fondsen voor bestaanszekerheid</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/gerelateerde-organen/commissie-voor-goede-diensten" title="Commissie voor goede diensten" hreflang="nl" data-drupal-link-system-path="node/9804">Commissie voor goede diensten</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/toegang-tot-de-diensten" title="Toegang tot de diensten" hreflang="nl" data-drupal-link-system-path="node/3128">Toegang tot de diensten</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/toegang-tot-de-diensten/toegangsplan-tot-de-fod" title="Toegangsplan tot de FOD" hreflang="nl" data-drupal-link-system-path="node/3163">Toegangsplan tot de FOD</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/werken-bij-de-fod" title="Werken bij de FOD" hreflang="nl" data-drupal-link-system-path="node/3167">Werken bij de FOD</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/overheidsopdrachten" title="Overheidsopdrachten" hreflang="nl" data-drupal-link-system-path="node/3200">Overheidsopdrachten</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/openbaarheid-van-bestuur" title="Openbaarheid van bestuur" hreflang="nl" data-drupal-link-system-path="node/3201">Openbaarheid van bestuur</a>
+                  </li>
+                      
+              <li class="menu-item expanded">
+          <a href="/nl/over-de-fod/bescherming-van-persoonsgegevens" title="Bescherming van persoonsgegevens" hreflang="nl" data-drupal-link-system-path="node/3207">Bescherming van persoonsgegevens</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/bescherming-van-persoonsgegevens/specifieke-beraadslagingen-en-protocollen" title="Specifieke beraadslagingen en protocollen" hreflang="nl" data-drupal-link-system-path="node/3208">Specifieke beraadslagingen en protocollen</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/toegankelijkheidsverklaring" title="Toegankelijkheidsverklaring" hreflang="nl" data-drupal-link-system-path="node/12187">Toegankelijkheidsverklaring</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/blog" data-drupal-link-system-path="blog">Blog</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/werken-bij-de-fod" data-drupal-link-system-path="node/3167">Werken bij de FOD</a>
+                  </li>
+                      
+              <li class="menu-item expanded dropdown">
+          <a class="dropdown-toggle" href="/nl/contact" data-toggle="dropdown">Contact<span class="caret"></span></a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item expanded">
+          <a href="/nl/contact/informatie-aanvragen" title="Informatie aanvragen" hreflang="nl" data-drupal-link-system-path="node/5645">Informatie aanvragen</a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item">
+          <a href="/nl/contact/informatie-aanvragen/pers" title="Pers" hreflang="nl" data-drupal-link-system-path="node/10712">Pers</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/contact/arbeidsinspectie" title="Arbeidsinspectie" hreflang="nl" data-drupal-link-system-path="node/172">Arbeidsinspectie</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/contact/klachten-over-onze-diensten" title="Klachten over onze diensten" hreflang="nl" data-drupal-link-system-path="node/10048">Klachten over onze diensten</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="https://www.facebook.com/FODWerkgelegenheid" target="_blank" class="facebook">Facebook</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="https://twitter.com/FODWerk" target="_blank" class="twitter">Twitter</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="https://be.linkedin.com/company/fod-werkgelegenheid-arbeid-en-sociaal-overleg" target="_blank" class="linkedin">Linkedin</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+
+                    <button type="button" class="button button--toggler" aria-controls="section-navigation" aria-expanded="false"><span></span>Menu</button>
+        </div>
+      </div>
+      
+              <div class="page__section page__section--navigation">
+        <div class="page__inner page__inner--navigation container" id="section-navigation">
+            
+<nav id="block-mainmenunl" aria-label="Main Menu NL" class="block block--menu block--menu--main-menu-nl block--region-navigation">
+  
+    
+
+        
+              <ul class="menu">
+                          
+              <li class="menu-item">
+          <a href="/nl/homepage" title="Homepage" hreflang="nl" data-drupal-link-system-path="node/1">Home</a>
+                  </li>
+                      
+              <li class="menu-item expanded active-trail dropdown">
+          <a class="dropdown-toggle" href="/nl/themas" data-toggle="dropdown">Thema&#039;s<span class="caret"></span></a>
+                                  <ul class="menu menu-dropdown">
+                          
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/arbeidsreglementering" title="Arbeidsreglementering" hreflang="nl" data-drupal-link-system-path="node/3209">Arbeidsreglementering</a>
+                  </li>
+                      
+              <li class="menu-item collapsed active-trail">
+          <a href="/nl/themas/coronavirus" title="Coronavirus" hreflang="nl" data-drupal-link-system-path="node/11810">Coronavirus</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/arbeidsovereenkomsten" title="Arbeidsovereenkomsten" hreflang="nl" data-drupal-link-system-path="node/4113">Arbeidsovereenkomsten</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/paritaire-comites-en-collectieve-arbeidsovereenkomsten-caos" title="Paritaire comités en collectieve arbeidsovereenkomsten (CAO&#039;S)" hreflang="nl" data-drupal-link-system-path="node/5635">Paritaire comités en collectieve arbeidsovereenkomsten (CAO&#039;S)</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/werkgelegenheid-en-arbeidsmarkt" title="Werkgelegenheid en arbeidsmarkt" hreflang="nl" data-drupal-link-system-path="node/3378">Werkgelegenheid en arbeidsmarkt</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/werkloosheid-en-weer-aan-het-werk" title="Werkloosheid en weer aan het werk" hreflang="nl" data-drupal-link-system-path="node/3406">Werkloosheid en weer aan het werk</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/herstructurering" title="Herstructurering" hreflang="nl" data-drupal-link-system-path="node/3234">Herstructurering</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/verloning" title="Verloning" hreflang="nl" data-drupal-link-system-path="node/3976">Verloning</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/feestdagen-en-verloven" title="Feestdagen en verloven" hreflang="nl" data-drupal-link-system-path="node/3274">Feestdagen en verloven</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/internationaal" title="Internationaal" hreflang="nl" data-drupal-link-system-path="node/5634">Internationaal</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/welzijn-op-het-werk" title="Welzijn op het werk" hreflang="nl" data-drupal-link-system-path="node/3289">Welzijn op het werk</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/sociaal-overleg" title="Sociaal overleg" hreflang="nl" data-drupal-link-system-path="node/3245">Sociaal overleg</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/gelijkheid-en-non-discriminatie" title="Gelijkheid en non-discriminatie" hreflang="nl" data-drupal-link-system-path="node/5636">Gelijkheid en non-discriminatie</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/werkbaar-en-wendbaar-werk" title="Werkbaar en wendbaar werk" hreflang="nl" data-drupal-link-system-path="node/4422">Werkbaar en wendbaar werk</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/nieuws" target="_self" data-drupal-link-system-path="news">Nieuws</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/publicaties" target="_self" data-drupal-link-system-path="publications">Publicaties</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/statistieken" target="_self" data-drupal-link-system-path="statistics">Statistieken</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/erkenningen" target="_self" data-drupal-link-system-path="approvals">Erkenningen</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/over-de-fod/inbreuken" data-drupal-link-system-path="node/5690">Inbreuken</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+<div class="views-exposed-form block block--views block--views--search-page-2 block--region-navigation" data-drupal-selector="views-exposed-form-search-page-2" id="block-exposedformsearchpage-2" role="search" aria-label="Global">
+      <form action="/nl/search-no-autocomplete" method="get" id="views-exposed-form-search-page-2" accept-charset="UTF-8" class="form">
+  <div class="views-exposed-form container-inline clearfix">
+  <div class="form-item form-item--type-textfield form-item--name-fulltext js-form-item js-form-type-textfield js-form-item-fulltext">
+      
+<label for="edit-fulltext">Zoeken</label>
+        
+<input data-drupal-selector="edit-fulltext" type="text" id="edit-fulltext" name="fulltext" value="" size="30" maxlength="128" class="form-text" title="fulltext" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+<input data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Zoeken" class="button js-form-submit form-submit" title="" />
+</div>
+
+</div>
+
+</form>
+
+  </div>
+
+
+        </div>
+      </div>
+      </header>
+
+      <div class="page__wrapper page__wrapper--top">
+      <div class="page__section page__section--top container">
+          <div data-drupal-messages-fallback class="hidden"></div>
+  <nav  class="block block--system block--system--breadcrumb" aria-label="Kruimelpad">
+  <ol>
+          <li><a href="/nl" title="Home">Home</a></li>
+          <li><a href="/nl/themas" title="Thema&#039;s">Thema&#039;s</a></li>
+          <li><a href="/nl/themas/coronavirus" title="Coronavirus">Coronavirus</a></li>
+          <li><span class="visually-hidden">Current Page:</span>Tijdelijke werkloosheid: aanvraag tot erkenning als onderneming in moeilijkheden niet meer vereist </li>
+      </ol>
+</nav>
+
+  <div id="block-openfedsocialblock" class="block block--openfed-social block--openfed-social--openfedsocialblock">
+  
+    
+      <div class="share-options">
+  <button class="handler" type="button">Sharing options</button>
+  <div class="options-wrapper" id="share-top">
+    <span class="title h4">Deel deze pagina via...</span>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//werk.belgie.be/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" class="openfed_social_share_link openfed_social_share_link_facebook" target="_blank"><img class="openfed_social_buttons" src="/modules/contrib/openfed_social/assets/images/facebook.svg" width="30" height="30" alt="Facebook Share Button" typeof="foaf:Image" />
+</a>
+              <a href="https://twitter.com/intent/tweet?text=Tijdelijke%20werkloosheid%3A%20aanvraag%20tot%20erkenning%20als%20onderneming%20in%20moeilijkheden%20niet%20meer%20vereist%20&amp;url=https%3A//werk.belgie.be/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" class="openfed_social_share_link openfed_social_share_link_twitter" target="_blank"><img class="openfed_social_buttons" src="/modules/contrib/openfed_social/assets/images/twitter.svg" width="30" height="30" alt="Twitter Share Button" typeof="foaf:Image" />
+</a>
+              <a href="mailto:?subject=Tijdelijke%20werkloosheid%3A%20aanvraag%20tot%20erkenning%20als%20onderneming%20in%20moeilijkheden%20niet%20meer%20vereist%20&amp;body=https%3A//werk.belgie.be/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" class="openfed_social_share_link openfed_social_share_link_email"><img class="openfed_social_buttons" src="/modules/contrib/openfed_social/assets/images/email.svg" width="30" height="30" alt="Share by Email Button" typeof="foaf:Image" />
+</a>
+        </div>
+</div>
+
+    <button class="print" onclick="window.print();" type="button">Print this page</button>
+  </div>
+
+
+      </div>
+    </div>
+  
+  <div class="page__wrapper page__wrapper--main">
+    <main class="page__section page__section--main" role="main">
+            <span id="main-content"></span>
+    <div class="layout layout--twocol with-region-second">
+              <div class="layout--region layout--region-top">
+        <div class="region-top container">
+          <div class="block-region-top"><div class="block block--ctools-block block--ctools-block--nodetitle">
+  <h1>
+          <span>Tijdelijke werkloosheid: aanvraag tot erkenning als onderneming in moeilijkheden niet meer vereist </span>
+
+      </h1>
+</div>
+<div class="block block--ctools-block block--ctools-block--nodefield-publication-date block--region-top">
+  
+      <div class="block__title">Gepubliceerd op </div>
+    
+
+      
+            <div class="field field--name-field-publication-date field--type-datetime field--label-hidden field__item"><time datetime="2020-03-23T12:00:00Z" class="datetime">23 maart 2020</time>
+</div>
+      
+  </div>
+<div class="block block--ctools-block block--ctools-block--nodefield-theme block--region-top">
+  
+      <div class="block__title">in</div>
+    
+
+      
+  <div class="field field--name-field-theme field--type-entity-reference field--label-visually_hidden icon-dienstverlening">
+    <div class="field__label visually-hidden">Theme</div>
+                  <div class="field__item"><a href="/nl/nieuws?theme=412" hreflang="nl">Coronavirus</a></div>
+            </div>
+
+  </div></div>
+                  </div>
+      </div>
+    
+    <div class="layout--region layout--region-main">
+      <div class="region-main container">
+                          <div class="layout--region layout--region-first">
+            <div class="region-first">
+              <div class="block-region-first"><div class="block block--ctools block--ctools--node block--region-first">
+  
+    
+
+      <article role="article" about="/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" class="node node--type-news node--promoted node--view-mode-full">
+
+  
+  
+            <div class="clearfix field--text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><span><span><span>Verruiming van de tijdelijke werkloosheid voor bedienden wegens overmacht door de RVA </span></span></span></h2>
+
+<p><span><span><span>Vanaf 13 maart 2020 wordt de notie tijdelijke werkloosheid wegens overmacht soepel toegepast door de RVA. Alle <span><span><span><span><span>situaties van tijdelijke werkloosheid als gevolg van het coronavirus,  kunnen  beschouwd worden als tijdelijke werkloosheid wegens overmacht, ook indien er bijvoorbeeld toch nog op bepaalde dagen kan worden gewerkt.</span></span></span></span></span></span></span></span></p>
+
+<p><span><span><span><span><span><span><span><span>Voorlopig geldt deze soepele regeling tot en met 05 april 2020. Deze periode kan worden verlengd tot 30 juni 2020, indien de  maatregelen door de regering worden verlengd of versterkt.</span></span></span></span></span></span></span></span></p>
+
+<p><span><span><span><span lang="NL" xml:lang="NL" xml:lang="NL"><span><span><span>Op de <a href="https://www.rva.be/nl/nieuws/tijdelijke-werkloosheid-ten-gevolge-van-het-uitbreken-van-het-coronavirus-covid-19-vereenvoudiging-van-de-procedure">website van de RVA</a> vindt u de formaliteiten die hiervoor dienen vervuld te worden.</span></span></span></span></span></span></span></p>
+
+<h2><span><span><span><span lang="NL" xml:lang="NL" xml:lang="NL"><span><span><span>Opgelet: </span></span></span></span></span></span></span></h2>
+
+<p><span><span><span>Er dient dus geen aanvraag tot erkenning als onderneming in moeilijkheden nog te worden ingediend bij de FOD Werkgelegenheid, Arbeid en Sociaal Overleg. Zolang deze ruime toepassing van tijdelijke werkloosheid wegens overmacht van kracht is, zal de FOD Werkgelegenheid zulke erkenningsaanvragen niet in overweging nemen. Dit geldt ook voor de dossiers die na 13 maart werden ingediend.</span></span></span></p>
+
+<div>
+<p class="txt1"><span><span><span><span><span><span><span>Indien de tijdelijke werkloosheid niet het gevolg is van het coronavirus, kan de werkgever nog een beroep doen op het stelsel van tijdelijke werkloosheid op grond van economische oorzaken.</span></span></span></span></span></span></span></p>
+</div></div>
+      
+
+</article>
+
+  </div>
+
+<aside class="views-element-container block block--views block--views--related-content-and-elements-block-1 block--region-first" aria-labelledby="block-views-blockrelated-content-and-elements-block-1-heading">
+  
+      <h2 class="block__title" id="block-views-blockrelated-content-and-elements-block-1-heading">Gerelateerde nieuwsberichten</h2>
+    
+
+        <div><div class="view view-related-content-and-elements view-id-related_content_and_elements view-display-id-block_1 js-view-dom-id-d6adbd04a74b56943b5bfcce38e62b448204fbd95cd08fa8a6bb0d8f4da23969">
+  
+  
+  
+
+  
+  
+  
+
+    <div class="view-content">
+    
+
+<ul class="views-rows">
+
+      <li class="views-row"><div class="views-field views-field-field-publication-date"><div class="field-content"><time datetime="2020-11-02T12:00:00Z" class="datetime">02/11/2020</time>
+</div></div><div class="views-field views-field-title"><h3 class="field-content"><a href="/nl/nieuws/update-coronavirus-preventiemaatregelen-en-arbeidsrechtelijke-gevolgen" hreflang="nl">Update: Coronavirus: preventiemaatregelen en arbeidsrechtelijke gevolgen</a></h3></div></li>
+  
+</ul>
+  </div>
+  
+  
+  
+  
+  </div></div>
+
+  </aside>
+</div>
+            </div>
+          </div>
+        
+                          <div class="layout--region layout--region-second">
+            <div class="region-second">
+              <div class="block-region-second">
+<aside class="views-element-container block block--views block--views--related-content-and-elements-block-2 block--region-second" aria-labelledby="block-views-blockrelated-content-and-elements-block-2-heading">
+  
+      <h2 class="block__title" id="block-views-blockrelated-content-and-elements-block-2-heading">Op deze website</h2>
+    
+
+        <div><div class="view view-related-content-and-elements view-id-related_content_and_elements view-display-id-block_2 js-view-dom-id-a6181240420b6a745e3b2f2532948c91aa4b3fb6c74e8b0f2f9785d84671705d">
+  
+  
+  
+
+  
+  
+  
+
+    <div class="view-content">
+    
+
+<ul class="views-rows">
+
+      <li class="views-row"><div class="views-field views-field-title"><h3 class="field-content"><a href="/nl/themas/coronavirus" hreflang="nl">Coronavirus</a></h3></div></li>
+  
+</ul>
+  </div>
+  
+  
+  
+  
+  </div></div>
+
+  </aside>
+
+<aside data-drupal-selector="measuremail-subscribe-form" class="block--measuremail--newsletter-subscription block block--measuremail block--measuremail-- block--region-second" aria-label="Measuremail">
+  
+    
+
+        <form action="/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" method="post" id="measuremail-subscribe-form" accept-charset="UTF-8" class="form">
+  <h2>Nieuwsbrief</h2>
+
+<p>Schrijf u in voor onze nieuwsbrief!</p>
+<div class="form-item form-item--type-email form-item--name-emailaddress js-form-item js-form-type-email js-form-item-emailaddress">
+        
+<label for="edit-emailaddress" data-required="true" class="form-required js-form-required">E-mail</label>
+        
+<input data-drupal-selector="edit-emailaddress" type="email" id="edit-emailaddress" name="EmailAddress" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true" placeholder="Uw e-mailadres" title="emailaddress" />
+
+        </div>
+
+<input data-drupal-selector="edit-culture" type="hidden" name="Culture" value="nl-NL" title="culture" />
+
+<input data-drupal-selector="edit-subscription" type="hidden" name="subscription" value="8df11232-b950-4bd9-b85e-f1e056099896" title="subscription" />
+
+<input data-drupal-selector="edit-callbackurl" type="hidden" name="callbackurl" value="https://werk.belgie.be/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" title="callbackurl" />
+
+<input id="FormUrl" data-drupal-selector="edit-metadataformurl" type="hidden" name="metadata.FormUrl" value="https://werk.belgie.be/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" title="metadataformurl" />
+
+<input id="FormVersion" data-drupal-selector="edit-metadataformversion" type="hidden" name="metadata.FormVersion" value="1" title="metadataformversion" />
+
+<input id="PrivacyUrl" data-drupal-selector="edit-metadataprivacyurl" type="hidden" name="metadata.PrivacyUrl" value="https://fodwaso.pr.belgium.be/nl/over-de-fod/bescherming-van-persoonsgegevens" title="metadataprivacyurl" />
+
+<input id="PrivacyVersion" data-drupal-selector="edit-metadataprivacyversion" type="hidden" name="metadata.PrivacyVersion" value="1" title="metadataprivacyversion" />
+
+<input autocomplete="off" data-drupal-selector="form-7i0mdj8vioog8wwdlvkp19zi34kcowa77wpkkgpoqxm" type="hidden" name="form_build_id" value="form-7i0mdj8VIoog8WWdlVKP19ZI34KcOwa77WPkKGpoQxM" title="form-build-id" />
+
+<input data-drupal-selector="edit-measuremail-subscribe-form" type="hidden" name="form_id" value="measuremail_subscribe_form" title="form-id" />
+
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Subscribe" class="button js-form-submit form-submit" title="op" />
+<fieldset data-drupal-selector="edit-unknown-confidentiality" id="edit-unknown-confidentiality--wrapper" class="fieldgroup form-composite required form-item form-wrapper js-form-item js-form-wrapper" aria-required="true">
+      <legend>
+    <span class="fieldset-legend form-required js-form-required">GDPR</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div id="edit-unknown-confidentiality" class="form-checkboxes"><div class="form-item form-item--type-checkbox form-item--name-unknown-confidentiality-gdpr js-form-item js-form-type-checkbox js-form-item-unknown-confidentiality-gdpr">
+        
+<input data-drupal-selector="edit-unknown-confidentiality-gdpr" type="checkbox" id="edit-unknown-confidentiality-gdpr" name="unknown_confidentiality[gdpr]" value="gdpr" class="form-checkbox" title="unknown-confidentiality-gdpr" />
+
+        
+<label for="edit-unknown-confidentiality-gdpr" class="option">Ik bevestig hierbij dat de informatie die in dit formulier is ingevuld, kan worden gebruikt voor het versturen van de nieuwsbrief (zie onze <a href="/nl/over-de-fod/bescherming-van-persoonsgegevens">privacyverklaring</a>)</label>
+      </div>
+</div>
+
+          </div>
+</fieldset>
+<div class="url-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="form-item form-item--type-textfield form-item--name-url js-form-item js-form-type-textfield js-form-item-url">
+      
+<label for="edit-url">Laat dit veld leeg</label>
+        
+<input autocomplete="off" data-drupal-selector="edit-url" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text" title="url" />
+
+        </div>
+</div>
+
+</form>
+
+  </aside>
+</div>
+            </div>
+          </div>
+              </div>
+    </div>
+
+          </div>
+
+
+
+    </main>
+  </div>
+
+<footer class="page__wrapper page__wrapper--footer" role="contentinfo">
+              <div class="page__section page__section--breadcrumb">
+        <div class="page__inner page__inner--breadcrumb container">
+              <nav  class="block block--system block--system--breadcrumb" aria-label="Kruimelpad">
+  <ol>
+          <li><a href="/nl" title="Home">Home</a></li>
+          <li><a href="/nl/themas" title="Thema&#039;s">Thema&#039;s</a></li>
+          <li><a href="/nl/themas/coronavirus" title="Coronavirus">Coronavirus</a></li>
+          <li><span class="visually-hidden">Current Page:</span>Tijdelijke werkloosheid: aanvraag tot erkenning als onderneming in moeilijkheden niet meer vereist </li>
+      </ol>
+</nav>
+
+
+
+        </div>
+      </div>
+      
+        <div class="page__section page__section--bottom">
+      <div class="page__inner page__inner--bottom container">
+                <div class="bottom--left">
+            
+<nav id="block-mainmenunl-2" aria-labelledby="block-mainmenunl-2-heading" class="block block--menu block--menu--main-menu-nl block--region-bottom-left">
+  
+      <h2 class="block__title" id="block-mainmenunl-2-heading">Thema&#039;s</h2>
+    
+
+        
+              <ul class="menu">
+                          
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/arbeidsreglementering" title="Arbeidsreglementering" hreflang="nl" data-drupal-link-system-path="node/3209">Arbeidsreglementering</a>
+                  </li>
+                      
+              <li class="menu-item collapsed active-trail">
+          <a href="/nl/themas/coronavirus" title="Coronavirus" hreflang="nl" data-drupal-link-system-path="node/11810">Coronavirus</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/arbeidsovereenkomsten" title="Arbeidsovereenkomsten" hreflang="nl" data-drupal-link-system-path="node/4113">Arbeidsovereenkomsten</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/paritaire-comites-en-collectieve-arbeidsovereenkomsten-caos" title="Paritaire comités en collectieve arbeidsovereenkomsten (CAO&#039;S)" hreflang="nl" data-drupal-link-system-path="node/5635">Paritaire comités en collectieve arbeidsovereenkomsten (CAO&#039;S)</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/werkgelegenheid-en-arbeidsmarkt" title="Werkgelegenheid en arbeidsmarkt" hreflang="nl" data-drupal-link-system-path="node/3378">Werkgelegenheid en arbeidsmarkt</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/werkloosheid-en-weer-aan-het-werk" title="Werkloosheid en weer aan het werk" hreflang="nl" data-drupal-link-system-path="node/3406">Werkloosheid en weer aan het werk</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/herstructurering" title="Herstructurering" hreflang="nl" data-drupal-link-system-path="node/3234">Herstructurering</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/verloning" title="Verloning" hreflang="nl" data-drupal-link-system-path="node/3976">Verloning</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/feestdagen-en-verloven" title="Feestdagen en verloven" hreflang="nl" data-drupal-link-system-path="node/3274">Feestdagen en verloven</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/internationaal" title="Internationaal" hreflang="nl" data-drupal-link-system-path="node/5634">Internationaal</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/welzijn-op-het-werk" title="Welzijn op het werk" hreflang="nl" data-drupal-link-system-path="node/3289">Welzijn op het werk</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/sociaal-overleg" title="Sociaal overleg" hreflang="nl" data-drupal-link-system-path="node/3245">Sociaal overleg</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/gelijkheid-en-non-discriminatie" title="Gelijkheid en non-discriminatie" hreflang="nl" data-drupal-link-system-path="node/5636">Gelijkheid en non-discriminatie</a>
+                  </li>
+                      
+              <li class="menu-item collapsed">
+          <a href="/nl/themas/werkbaar-en-wendbaar-werk" title="Werkbaar en wendbaar werk" hreflang="nl" data-drupal-link-system-path="node/4422">Werkbaar en wendbaar werk</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        </div>
+                        <div class="bottom--right">
+            
+
+              
+  <div data-drupal-selector="measuremail-subscribe-form-2" class="block--measuremail--newsletter-subscription block block--measuremail block--measuremail--measuremail block--region-bottom-right" id="block-measuremail" role="region" aria-label="Measuremail NL">
+  
+        
+
+          <form action="/nl/nieuws/tijdelijke-werkloosheid-aanvraag-tot-erkenning-als-onderneming-moeilijkheden-niet-meer" method="post" id="measuremail-subscribe-form--2" accept-charset="UTF-8" class="form">
+  <h2>Nieuwsbrief</h2>
+
+<p>Schrijf u in voor onze nieuwsbrief!</p>
+<div class="form-item form-item--type-email form-item--name-emailaddress js-form-item js-form-type-email js-form-item-emailaddress">
+        
+<label for="edit-emailaddress--2" data-required="true" class="form-required js-form-required">E-mail</label>
+        
+<input data-drupal-selector="edit-emailaddress" type="email" id="edit-emailaddress--2" name="EmailAddress" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true" placeholder="Uw e-mailadres" title="emailaddress" />
+
+        </div>
+
+<input data-drupal-selector="edit-culture" type="hidden" name="Culture" value="nl-NL" title="culture" />
+
+<input data-drupal-selector="edit-subscription" type="hidden" name="subscription" value="8df11232-b950-4bd9-b85e-f1e056099896" title="subscription" />
+
+<input data-drupal-selector="edit-callbackurl" type="hidden" name="callbackurl" value="https://werk.belgie.be/nl/nieuws/goedkeuring-van-de-wijzigingen-verband-met-de-dienstencheques?id=17756" title="callbackurl" />
+
+<input id="FormUrl" data-drupal-selector="edit-metadataformurl" type="hidden" name="metadata.FormUrl" value="https://werk.belgie.be/nl/nieuws/goedkeuring-van-de-wijzigingen-verband-met-de-dienstencheques?id=17756" title="metadataformurl" />
+
+<input id="FormVersion" data-drupal-selector="edit-metadataformversion" type="hidden" name="metadata.FormVersion" value="1" title="metadataformversion" />
+
+<input id="PrivacyUrl" data-drupal-selector="edit-metadataprivacyurl" type="hidden" name="metadata.PrivacyUrl" value="https://fodwaso.pr.belgium.be/nl/over-de-fod/bescherming-van-persoonsgegevens" title="metadataprivacyurl" />
+
+<input id="PrivacyVersion" data-drupal-selector="edit-metadataprivacyversion" type="hidden" name="metadata.PrivacyVersion" value="1" title="metadataprivacyversion" />
+
+<input autocomplete="off" data-drupal-selector="form-brsvaidv9x9qtpvjhsz99rptddpoutfspgdihjyq0da" type="hidden" name="form_build_id" value="form-brSvAIdv9x9qtPvJhsZ99RPTdDPOutFspGDihJYQ0DA" title="form-build-id" />
+
+<input data-drupal-selector="edit-measuremail-subscribe-form-2" type="hidden" name="form_id" value="measuremail_subscribe_form" title="form-id" />
+
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Subscribe" class="button js-form-submit form-submit" title="op" />
+<fieldset data-drupal-selector="edit-unknown-confidentiality" id="edit-unknown-confidentiality--2--wrapper" class="fieldgroup form-composite required form-item form-wrapper js-form-item js-form-wrapper" aria-required="true">
+      <legend>
+    <span class="fieldset-legend form-required js-form-required">GDPR</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div id="edit-unknown-confidentiality--2" class="form-checkboxes"><div class="form-item form-item--type-checkbox form-item--name-unknown-confidentiality-gdpr js-form-item js-form-type-checkbox js-form-item-unknown-confidentiality-gdpr">
+        
+<input data-drupal-selector="edit-unknown-confidentiality-gdpr" type="checkbox" id="edit-unknown-confidentiality-gdpr--2" name="unknown_confidentiality[gdpr]" value="gdpr" class="form-checkbox" title="unknown-confidentiality-gdpr" />
+
+        
+<label for="edit-unknown-confidentiality-gdpr--2" class="option">Ik bevestig hierbij dat de informatie die in dit formulier is ingevuld, kan worden gebruikt voor het versturen van de nieuwsbrief (zie onze <a href="/nl/over-de-fod/bescherming-van-persoonsgegevens">privacyverklaring</a>)</label>
+      </div>
+</div>
+
+          </div>
+</fieldset>
+<div class="url-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="form-item form-item--type-textfield form-item--name-url js-form-item js-form-type-textfield js-form-item-url">
+      
+<label for="edit-url--2">Laat dit veld leeg</label>
+        
+<input autocomplete="off" data-drupal-selector="edit-url" type="text" id="edit-url--2" name="url" value="" size="20" maxlength="128" class="form-text" title="url" />
+
+        </div>
+</div>
+
+</form>
+
+      </div>
+
+<nav id="block-bottommenunl" aria-label="Bottom Menu NL" class="block block--menu block--menu--bottom-menu-nl block--region-bottom-right">
+  
+    
+
+        
+              <ul class="menu">
+                          
+              <li class="menu-item">
+          <a href="https://www.evenementen.werk.belgie.be/nl">Evenementen</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="http://www.beswic.be/nl">BeSWIC</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+<nav id="block-socialmenunl" aria-label="Social Menu NL" class="block block--menu block--menu--social-menu-nl block--region-bottom-right">
+  
+    
+
+        
+              <ul class="menu">
+                          
+              <li class="menu-item">
+          <a href="https://www.facebook.com/FODWerkgelegenheid" target="_blank" class="facebook">Facebook</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="https://twitter.com/FODWerk" target="_blank" class="twitter">Twitter</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="https://be.linkedin.com/company/fod-werkgelegenheid-arbeid-en-sociaal-overleg" target="_blank" class="linkedin">Linkedin</a>
+                  </li>
+                      
+              <li class="menu-item">
+          <a href="/nl/news/rss.xml" target="_blank" class="rss" data-drupal-link-system-path="news/rss.xml">RSS</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        </div>
+              </div>
+    </div>
+  
+              <div class="page__section page__section--footer">
+        <div class="page__inner page__inner--footer container">
+            
+    
+<div id="block-footermessagefr" role="region" aria-label="Footer Message FR" class="block block--block-content block--block-content--footermessagefr block--region-footer">
+
+  
+    
+
+      
+            <div class="clearfix field--text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Federale Overheidsdienst Werkgelegenheid, Arbeid en Sociaal Overleg - <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="1b15a80d-1adf-4689-914d-f36c3f5da569" href="/nl/gebruiksvoorwaarden" title="Gebruiksvoorwaarden">Gebruiksvoorwaarden</a> - <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="f56c59a1-53ba-4dd5-97ae-f9bda32c2eb4" href="/nl/over-de-fod/bescherming-van-persoonsgegevens" title="Bescherming van persoonsgegevens">Bescherming van persoonsgegevens</a> - <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="1ac78942-ab81-4180-adf7-07db5ebd686c" href="/nl/over-de-fod/toegankelijkheidsverklaring" title="Toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a></p></div>
+      
+  
+  </div>
+
+
+        </div>
+      </div>
+      </footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"nl\/","currentPath":"node\/11824","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"nl","themeUrl":"themes\/custom\/employment"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":true,"extNofollow":true,"extFollowNoOverride":true,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"p, .field--name-field-links, .field--type-text-long, .node--type-approvals.node--view-mode-teaser","extAlert":false,"extAlertText":"","mailtoClass":"mailto","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"eu_cookie_compliance":{"popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      Onze website gebruikt cookies van derden om het gebruik van onze website te analyseren. U kunt uw voorkeuren op elk gewenst moment veranderen via uw browserinstellingen.\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMeer informatie\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EOk\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022\u003ENee, bedankt\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMeer informatie\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EOk\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022\u003ENee, bedankt\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/nl\/over-de-fod\/bescherming-van-persoonsgegevens","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"nl","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"disagree_do_not_show_popup":false,"method":"opt_in","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy-instellingen\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"withdraw_button_on_info_popup":false,"cookie_categories":[],"enable_save_preferences_button":true,"fix_first_cookie_category":true,"select_all_categories_by_default":false},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/nl\/search-no-autocomplete":true},"user":{"uid":0,"permissionsHash":"1523828617aae1b865b4e410b7eaf708dc5a0c79ce62a9b121d9c92cbae509a0"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.4.1"></script>
+<script src="/core/assets/vendor/jquery/jquery-htmlprefilter-3.5.0.js?v=3.4.1"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.8.8"></script>
+<script src="/sites/default/files/languages/nl_yTfwksj5vGj53dlYdIvT_LMnfSSEsvI-GIbcf30sqgg.js?qno7ek"></script>
+<script src="/core/misc/drupal.js?v=8.8.8"></script>
+<script src="/core/misc/drupal.init.js?v=8.8.8"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/data-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/disable-selection-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/form-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/labels-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/jquery-1-7-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/scroll-parent-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/tabbable-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/unique-id-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/version-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/escape-selector-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/focusable-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/ie-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/keycode-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/plugin-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-active-element-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-blur-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widget-min.js?v=1.12.1"></script>
+<script src="/modules/contrib/basic_cart/js/basic_cart.js?v=1.x"></script>
+<script src="/modules/contrib/google_analytics/js/google_analytics.js?v=8.8.8"></script>
+<script src="/themes/custom/employment/js/accordion.min.js?qno7ek"></script>
+<script src="/themes/custom/employment/js/accordion-search.min.js?qno7ek"></script>
+<script src="/themes/custom/employment/js/tabs.min.js?qno7ek"></script>
+<script src="/themes/custom/employment/js/dialog.min.js?qno7ek"></script>
+<script src="/themes/custom/employment/js/init.min.js?qno7ek"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/tabs-min.js?v=1.12.1"></script>
+<script src="/modules/contrib/leaflet/js/leaflet/dist/leaflet.js?v=1.4.0"></script>
+<script src="/modules/contrib/leaflet/leaflet.drupal.js?v=8.8.8"></script>
+<script src="/modules/contrib/leaflet_maptiler/assets/js/leaflet_maptiler.js?v=8.8.8"></script>
+<script src="//unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<script src="/themes/custom/employment/js/leaflet_builder.min.js?qno7ek"></script>
+
+<!--[if lte IE 11]>
+<script src="/themes/custom/employment/js/outdated-browser.min.js?v=8.8.8"></script>
+<![endif]-->
+<script src="/themes/custom/employment/js/flatpickr/flatpickr.min.js?v=8.8.8"></script>
+<script src="/themes/custom/employment/js/flatpickr/l10n/flatpickr-nl.js?v=8.8.8"></script>
+<script src="/themes/custom/employment/js/flatpickr/l10n/flatpickr-fr.js?v=8.8.8"></script>
+<script src="/themes/custom/employment/js/flatpickr/l10n/flatpickr-de.js?v=8.8.8"></script>
+<script src="/themes/custom/employment/js/jquery.doubleScroll.min.js?v=8.8.8"></script>
+<script src="/themes/custom/employment/js/utils.min.js?v=8.8.8"></script>
+<script src="/modules/contrib/extlink/extlink.js?v=8.8.8"></script>
+<script src="/core/assets/vendor/jquery.cookie/jquery.cookie.min.js?v=1.4.1"></script>
+<script src="/modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance.js?v=1"></script>
+<script src="/modules/contrib/openfed_social/assets/scripts/openfed_social.js?v=1.x"></script>
+
+    <noscript class="noscript">
+            For full functionality of this site it is necessary to enable JavaScript.<br>
+        Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.    </noscript>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-b6f9115f7c7696f8896","applicationID":"27579118","transactionName":"MhBSZQoZXUEEVEdcDAtacVIMEVxcSnNBQBMEGWxyFwpWbiNYQVg\/IxpCXDoNWl4BUkEYXRcQXlUdCmNeBFRWXQwJEVVDPhdBXyRUR1wMCw==","queueTime":0,"applicationTime":2521,"atts":"HldRE0IDTk8=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body>
+</html>

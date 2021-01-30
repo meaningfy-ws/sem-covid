@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<base href="http://www.sssh.hr/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Početna - SSSH - Savez Samostalnih Sindikata Hrvatske </title>
+	<meta http-equiv='Cache-control' content='no-cache' />
+	<meta name='robots' content='index,follow' />
+	<meta name="author" content="Virtus dizajn" />
+	<meta name="Copyright" content="SSSH - Savez Samostalnih Sindikata Hrvatske" />
+	<meta name="DC.language" content="hr-HR" />
+	<meta name="DC.title" content="Virtus dizajn" />
+	<meta name="DC.creator" content="Virtus dizajn" />
+	<meta name="DC.format" content="text/html" />
+	<meta name="DC.identifier" content="http://www.virtus-dizajn.com/" />
+	<meta name="DC.publisher" content="Virtus dizajn" />
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<meta name="description" content="Početna - SSSH - Savez Samostalnih Sindikata Hrvatske"/>
+	<meta name="keywords" content="Početna - SSSH - Savez Samostalnih Sindikata Hrvatske"/>
+	<meta property="og:image" content="" />
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />	
+	
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>	
+	<script type="text/javascript" src="js/global.js"></script>		
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>	
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />	
+	<link rel="icon" type="image/ico" href="/images/favicon.ico" />	
+	<script type="text/javascript" src="js/fancybox/fancybox.js"></script>
+
+
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function() { 			
+		jQuery('.hidden').hide();		
+		
+			
+
+			
+		$( ".menu_mob" ).click(function() {
+  			$( ".mm" ).slideToggle( 1000 );
+  			$( ".col1 ul" ).hide( 1000 );
+		});
+
+		$( ".submenu_mob" ).click(function() {			
+
+			//$( ".col1 ul" ).removeClass(".col1 ul");			
+			//$( ".col1" ).removeClass(".col1 ul");			
+			//alert(window.location.href);
+			
+			//if (homepage != 'http://www.sssh.hr/hr/')
+			//	return false;			
+
+			
+			$( ".col1 ul" ).css("left","auto");
+			$( ".col1 ul" ).css("right","0px");
+
+			$( ".col1 ul" ).slideToggle( 1000 );
+  			$( ".mm" ).hide( "slow");
+  			
+		});
+
+			// anatron
+			// da se menui otvori odmah po dolasku na stranicu, ali ne i na naslovnu hr i en i lng anymore
+			var homepage = window.location.href;
+			//var lochp = 'http://www.sssh.hr/hr/';
+			if(homepage.length == 22)
+				//homepage = homepage + "/";
+			if (homepage.length == 18)
+				homepage = homepage + "/hr/";
+
+			var lochp = 'http://www.sssh.hr/hr/';
+			
+
+			if (homepage.localeCompare(lochp) > 0 )
+			{
+				//console.log("mali pero ide u ducan");
+				//console.log(homepage);
+				//console.log(lochp);
+				//console.log(homepage.localeCompare(lochp));
+				//if($(".submenu_mob"))
+					//$( ".submenu_mob" ).click();
+			}
+
+
+		}); 
+
+   
+	</script>
+
+	<!--[if lte IE 6]>
+	<meta http-equiv="refresh" content="0; url="/warning" />
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	window.top.location = '/warning';
+	/* ]]> */
+	</script>
+	<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29248763-49']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+	
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/hr_HR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--	Start	-->
+<div id="container">
+	<!--	Header	-->
+	<div class="hd">
+		<div class="lang_mob">				
+				<a href="hr" class="slc" title="Hrvatski">Hrvatski</a>
+				<a class="en " href="en" title="Engleski">Engleski</a> 
+				<a class="fb" href="https://www.facebook.com/SavezSamostalnihSindikataHrvatske?fref=ts" title="Facebook" target="_blank">Facebook</a>
+				<a class="yt" href="http://www.youtube.com/user/sindikalnaakcija" title="Youtube" target="_blank"></a>
+			</div>
+
+			<div class="menu_mob"><a href="#" id="menu_mob"></a></div>
+		<h1  ><a href="http://www.sssh.hr/" title="SSSH">SSSH</a></h1>
+		<div class="righty">
+			<div class="lang">
+				<a href="hr" class="slc" title="Hrvatski">Hrvatski</a>
+				<a class="en " href="en" title="Engleski">Engleski</a> 
+				<a class="fb" href="https://www.facebook.com/SavezSamostalnihSindikataHrvatske?fref=ts" title="Facebook" target="_blank">Facebook</a>
+				<a class="yt" href="https://www.youtube.com/channel/UCJyQ5SzpHCcTbw1RvcsHBfA" title="Youtube" target="_blank"></a>
+			</div>
+			<div class="clear"></div>
+			<div class="search">
+			<form action="hr/pretraga" method="post">
+				<input name="search_string" type="text" value="Tražilica" onclick="this.value='';"/> 
+				<input class="btn" name="pretraga" type="submit" value=""/>
+			</form>
+			</div>
+			<div class="clear"></div>
+			<ul>
+				<li class="first"><a href="http://www.sssh.hr/" title="Početna" class="slc">Početna</a></li>
+				<li><a href="hr/static/sssh-1"  title="SSSH">SSSH</a></li>
+				<li><a href="hr/sindikati"  title="Sindikati">Sindikati</a></li>
+				
+				<li><a href="hr/za-medije"  title="Za medije">Za medije</a></li>
+						<li><a href="hr/projekti"  title="Projekti">Projekti</a></li>
+				<li><a href="hr/dokumenti"  title="Dokumenti">Dokumenti</a></li>
+				<li><a href="hr/static/linkovi-30"  title="Linkovi">Linkovi</a></li>
+				<li class="last"><a href="hr/static/kontakti"  title="Kontakti">Kontakti</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="submenu_mob"><a href="#" id="submenu_mob"></a></div>
+	<!--	End Header	-->
+	<!--	Main Menu	-->
+	<div class="mm">
+		<ul>
+			<li><a href="hr/static/radnicka-prava-32"  title="Radnička prava">Radnička prava</a></li>
+					<li><a href="hr/uclani-se" >Učlani se</a></li>
+					<li><a href="hr/static/podrucja-rada-41"   title="Područja rada">Područja rada</a></li>
+			<li><a href="hr/kampanje"  title="Kampanje">Kampanje</a></li>
+			<li><a href="hr/aktivnosti"  title="Aktivnosti">Aktivnosti</a></li>
+			<li><a href="hr/vijesti"  title="">Vijesti</a></li>
+
+
+			<li class="mobile_sec"><a href="hr/static/sssh-1"  title="SSSH">SSSH</a></li>
+				<li class="mobile_sec"><a href="hr/sindikati"  title="Sindikati">Sindikati</a></li>
+				<li class="mobile_sec"><a href="hr/za-medije"  title="Za medije">Za medije</a></li>
+				<li class="mobile_sec"><a href="hr/projekti"  title="Projekti">Projekti</a></li>
+				<li class="mobile_sec"><a href="hr/dokumenti"  title="Dokumenti">Dokumenti</a></li>
+				<li class="mobile_sec"><a href="hr/static/linkovi-30"  title="Linkovi">Linkovi</a></li>
+				<li class="mobile_sec"><a href="hr/static/kontakti"  title="Kontakti">Kontakti</a></li>
+		</ul>
+	</div>
+	<!--	End Main Menu	-->
+	
+	
+	<!--	Top News	-->
+	<div class="top_nws">
+			<div class="box">
+			<div class="box-top-slika">
+				<a href="hr/vise/nacionalne-aktivnosti-72/izmjene-zor-a-sto-radimo-i-kako-se-ukljuciti-4545"><img src="upload_data/site_photos/an_cover-top-sssh-izmjene-zakona-o-radu-500.jpg" alt="" /></a>
+			</div>
+			<div class="text">
+				<h1><a href="hr/vise/nacionalne-aktivnosti-72/izmjene-zor-a-sto-radimo-i-kako-se-ukljuciti-4545" title="Izmjene ZOR-a: Što radimo i kako se uključiti?">Izmjene ZOR-a: Što radimo i kako se uključiti?</a></h1>
+				<p>
+	Krajem rujna počeli su konzultativni sastanci sindikalnih sredi&scaron;njica, udruge poslodavaca i...</p>
+				<div class="info">
+					<span></span>
+					<a href="hr/vise/nacionalne-aktivnosti-72/izmjene-zor-a-sto-radimo-i-kako-se-ukljuciti-4545" title="Pročitaj više">Pročitaj više</a>
+				</div>
+			</div>
+		</div>
+			<div class="box">
+			<div class="box-top-slika">
+				<a href="hr/vise/projekti-70/mobilna-aplikacija-sssh-novi-alati-za-sindikalni-rad-4444"><img src="upload_data/site_photos/an_sssh-feature-graphic-fin.png" alt="" /></a>
+			</div>
+			<div class="text">
+				<h1><a href="hr/vise/projekti-70/mobilna-aplikacija-sssh-novi-alati-za-sindikalni-rad-4444" title="Mobilna aplikacija SSSH – novi alati za sindikalni rad">Mobilna aplikacija SSSH – novi alati za sindikalni rad</a></h1>
+				<p>
+	SSSH je objavio mobilnu aplikaciju namijenjenu sindikalnim povjerenicima i radničkim predstavnicima...</p>
+				<div class="info">
+					<span></span>
+					<a href="hr/vise/projekti-70/mobilna-aplikacija-sssh-novi-alati-za-sindikalni-rad-4444" title="Pročitaj više">Pročitaj više</a>
+				</div>
+			</div>
+		</div>
+			<div class="box-last">
+			<div class="box-top-slika">
+				<a href="hr/vise/projekti-70/pokrenuta-nova-web-stranica-radpomjeri.eu-4438"><img src="upload_data/site_photos/an_radpomjeri_fotografija.jpg" alt="" /></a>
+			</div>
+			<div class="text">
+				<h1><a href="hr/vise/projekti-70/pokrenuta-nova-web-stranica-radpomjeri.eu-4438" title="Pokrenuta nova web stranica radpomjeri.eu  ">Pokrenuta nova web stranica radpomjeri.eu  </a></h1>
+				<p>
+	Savez samostalnih sindikata Hrvatske (SSSH) pokrenuo je novu internetsku stranicu radpomjeri.eu...</p>
+				<div class="info">
+					<span></span>
+					<a href="hr/vise/projekti-70/pokrenuta-nova-web-stranica-radpomjeri.eu-4438" title="Pročitaj više">Pročitaj više</a>
+				</div>
+			</div>
+		</div>
+			<div class="clear"></div>
+	</div>
+	<!--	End Top News	-->	<!--	Bc	-->
+<div class="bc">
+<!--	Trenutno se nalazite na: 	-->
+	<span>Početna</span>
+	
+</div>
+<!--	End Bc	-->
+	<!--	Content	-->
+	<div class="content">
+		<!--	Col1	-->
+		<script  type="text/javascript">
+		$(document).ready(function() {
+		  		 });
+	</script>
+		<div class="col1">
+			<ul>
+			<li><a href="hr/dokumenti/statistike-16">Statistike</a></li><li><a href="hr/dokumenti/zakoni-i-propisi/novi-propisi-26">Novi propisi</a></li><li><a href="hr/dokumenti/zakoni-i-propisi/radno-zakonodavstvo-22">Zakon o radu</a></li><li><a href="hr/static/podrucja-rada/radno-pravo/pravna-pomoc-47">Pravna pomoć</a></li><li><a href="hr/cesta-pitanja/sssh/cesta-pitanja-98">Česta pitanja</a></li><li><a href="hr/uclani-se">Zašto je važno biti član sindikata</a></li>			</ul>
+			
+			<div class="contact">
+				<p><strong>Savez samostalnih sindikata Hrvatske</strong></p>
+				<p>Trg kralja Petra Krešimira IV. 2,<br />
+				10 000 Zagreb
+								</p>
+				
+				<p>tel: + 385 1 46 55 616<br />
+				tel:+ 385 1 46 55 013<br />
+				fax: + 385 1 46 55 040<br />
+				email: <a href="mailto:sssh@sssh.hr">sssh@sssh.hr</a> </p>
+				<a class="moar" href="hr/static/kontakti" title="Opširnije">Opširnije</a>
+				<div class="clear"></div>
+			</div>
+		
+			<div class="contact contact-urednik"> 
+				<p><strong>Urednica:</strong><br/>
+				Marijana Tomić</p>
+			</div>
+<a href="https://www.facebook.com/SavezSamostalnihSindikataHrvatske" target="_blank">
+			<div class="contact face_plugin">
+
+				<p><strong>Facebook:</strong><br><br><br><br>
+					</p>
+					
+					
+					
+               <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSavezSamostalnihSindikataHrvatske%3Ffref%3Dts&width=196&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId" width="180" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
+</a>
+			<div class="contact newsletter">
+
+				<p><strong>Prijava na newsletter:</strong>
+					</p>
+					
+				<a href="http://www.sssh.hr/newsletter_sssh/" target="_blank"><img src="../images/nl.png" width="190px"></a>
+					
+              
+			</div>
+		
+
+			
+							<div class="banner">
+					<a href="http://www.sssh.hr/hr/vise/0-0/podcast-rad-po-mjeri-covjeka-4650"><img src="upload_data/site_photos/th_53241175819390778071462529787_banneri-rpmc.png" alt="" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://sssh.hr/hr/dokumenti/publikacije/sindikalna-akcija-18"><img src="upload_data/site_photos/th_banneri-2020-16-.png" alt="Sindikalna akcija" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/hr/vise/ostalo-0/pretplatite-se-na-glasilo-sssh-sindikalnu-akciju-3264"><img src="upload_data/site_photos/th_banneri-2020-18-.png" alt="Nisi pretplatnik Sindikalne akcije?" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/hr/vise/nacionalne-aktivnosti-72/obavijest-sssh-sindikalnim-povjerenicima-drugim-radnickim-predstavnicima-i-clanovima-udruzenih-sindikata-4245"><img src="upload_data/site_photos/th_covid-i-radna-prava.png" alt="PRAVA NISU SUSPENDIRANA" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/upload_data/site_files/statut-sssh-2018_pdf.pdf"><img src="upload_data/site_photos/th_banneri-2020-22-.png" alt="STATUT SSSH" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.kolektivni-ugovori.info/"><img src="upload_data/site_photos/th_banner_300x250.jpg" alt="Baza kolektivnih ugovora" /></a>
+				</div>
+					<!--	
+			<div class="banner">
+				<a href="http://virtus-projekti.com/SSSH/hr/vijesti/kampanje-71#6"><img alt="Protiv neisplate plaće" src="upload_data/site_photos/th_kampanja.jpg"></a>
+			</div>	-->
+
+			
+
+		</div>
+		<!--	End Col1	-->		<!--	Col2	-->
+		<div class="col2">
+			<!--	News	-->
+			<div class="nws">
+				<!--	Box	-->
+										<div class="box">
+													<div class="image"><a href="hr/vise/nacionalne-aktivnosti-72/sssh-prikupljena-sredstva-uplatio-za-nabavku-stambenih-kontejnera-4666"><img src="upload_data/site_photos/th_kontejner-u-vrtu-500.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/nacionalne-aktivnosti-72/sssh-prikupljena-sredstva-uplatio-za-nabavku-stambenih-kontejnera-4666" title="SSSH prikupljena sredstva uplatio za nabavku stambenih kontejnera">SSSH prikupljena sredstva uplatio za nabavku stambenih kontejnera</a></h1>
+								<p>
+	Zagreb, 28. siječnja 2021. &ndash; U akciji koju je pokrenuo 30. prosinca, dan nakon razornog potresa koji je pogodio Sisačko-moslavačku županiju, SSSH je od udruženih sindikata, sindikalnih podružnica i članova do 27. siječnja prikupio...</p>
+								<div class="info">
+
+									<span style="display: none;" >28.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/nacionalne-aktivnosti-72/sssh-prikupljena-sredstva-uplatio-za-nabavku-stambenih-kontejnera-4666" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/granski-sindikati-74/pomorci-kljucni-radnici-i-u-republici-hrvatskoj-4665"><img src="upload_data/site_photos/th_20524166671124345788849633143_brod.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/granski-sindikati-74/pomorci-kljucni-radnici-i-u-republici-hrvatskoj-4665" title="Pomorci - ključni radnici i u Republici Hrvatskoj">Pomorci - ključni radnici i u Republici Hrvatskoj</a></h1>
+								<p>
+	Rijeka, 26. siječnja 2021. (sph.hr/SSSH) - Sindikat pomoraca Hrvatske je proteklih mjeseci u nekoliko navrata apelirao na nadležne da prema naputku IMO-a&nbsp; i UN-a proglase pomorce ključnim radnicima, a to su, prema informacijama iz...</p>
+								<div class="info">
+
+									<span style="display: none;" >27.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/granski-sindikati-74/pomorci-kljucni-radnici-i-u-republici-hrvatskoj-4665" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/granski-sindikati-74/duro-dakovic-aparati-uspjesno-posluju-a-prijeti-im-stecaj-4664"><img src="upload_data/site_photos/th_dd-aparati-povjerenik.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/granski-sindikati-74/duro-dakovic-aparati-uspjesno-posluju-a-prijeti-im-stecaj-4664" title="Đuro Đaković Aparati uspješno posluju, a prijeti im stečaj">Đuro Đaković Aparati uspješno posluju, a prijeti im stečaj</a></h1>
+								<p>
+	Slavonski Brod, 25. siječnja 2021. (vijesti.hrt.hr/SSSH) - Posluju uspje&scaron;no, ali, ipak, im prijeti stečaj! Sudbina je to tvrtke Đuro Đaković Aparati iz Slavonskoga Broda koja proizvodima za potporu disanju posljednjih mjeseci...</p>
+								<div class="info">
+
+									<span style="display: none;" >25.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/granski-sindikati-74/duro-dakovic-aparati-uspjesno-posluju-a-prijeti-im-stecaj-4664" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/nacionalne-aktivnosti-72/europski-radnici-trebali-bi-dobiti-zakonsko-pravo-da-nakon-radnog-vremena-ne-odgovaraju-na-pozive-poslodavca-4663"><img src="upload_data/site_photos/th_home-office_500.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/nacionalne-aktivnosti-72/europski-radnici-trebali-bi-dobiti-zakonsko-pravo-da-nakon-radnog-vremena-ne-odgovaraju-na-pozive-poslodavca-4663" title="Europski radnici trebali bi dobiti zakonsko pravo da nakon radnog vremena ne odgovaraju na pozive poslodavca">Europski radnici trebali bi dobiti zakonsko pravo da nakon radnog vremena ne odgovaraju na pozive poslodavca</a></h1>
+								<p>
+	Zagreb, 25. siječnja 2021. (faktograf.hr/SSSH) - Europski parlament (EP) donio je rezoluciju kojom se Europsku komisiju poziva na dono&scaron;enje propisa koji će svim radnicima omogućiti da se bez ikakvih posljedica nakon radnog vremena ne...</p>
+								<div class="info">
+
+									<span style="display: none;" >25.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/nacionalne-aktivnosti-72/europski-radnici-trebali-bi-dobiti-zakonsko-pravo-da-nakon-radnog-vremena-ne-odgovaraju-na-pozive-poslodavca-4663" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/nacionalne-aktivnosti-72/javni-poziv-za-podnosenje-prijedloga-za-dodjelu-priznanja-i-nagrade-za-zivotno-djelo-za-promicanje-zastite-na-radu-u-rh-4662"><img src="upload_data/site_photos/th_znr-natjecaj-500.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/nacionalne-aktivnosti-72/javni-poziv-za-podnosenje-prijedloga-za-dodjelu-priznanja-i-nagrade-za-zivotno-djelo-za-promicanje-zastite-na-radu-u-rh-4662" title="Javni poziv za podnošenje prijedloga za dodjelu priznanja i nagrade za životno djelo za promicanje zaštite na radu u RH">Javni poziv za podnošenje prijedloga za dodjelu priznanja i nagrade za životno djelo za promicanje zaštite na radu u RH</a></h1>
+								<p>
+	Zagreb, 25. siječnja 2021. (mrosp.gov.hr/SSSH) - I ove je godine Ministarstvo rada, mirovinskog sustava, obitelji i socijalne politike raspisalo natječaj za dodjelu priznanja i nagrade za životno djelo za promicanje za&scaron;tite na radu u...</p>
+								<div class="info">
+
+									<span style="display: none;" >25.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/nacionalne-aktivnosti-72/javni-poziv-za-podnosenje-prijedloga-za-dodjelu-priznanja-i-nagrade-za-zivotno-djelo-za-promicanje-zastite-na-radu-u-rh-4662" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/nacionalne-aktivnosti-72/jednokratna-naknada-4661"><img src="upload_data/site_photos/th_ostecena-kuca-glina-500-cca.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/nacionalne-aktivnosti-72/jednokratna-naknada-4661" title="Jednokratna naknada">Jednokratna naknada</a></h1>
+								<p>
+	Zagreb, 25. siječnja 2021. (mrosp.gov.hr/SSSH) - Ministarstvo rada, mirovinskog sustava, obitelji i socijalne politike poziva SVE koji su stradali i imaju o&scaron;tećene objekte u nedavnom razornom potresu na podno&scaron;enje zahtjeva za...</p>
+								<div class="info">
+
+									<span style="display: none;" >25.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/nacionalne-aktivnosti-72/jednokratna-naknada-4661" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/nacionalne-aktivnosti-72/izmjene-kriterija-za-poslodavce-s-podrucja-na-kojima-je-proglasena-katastrofa-4660"><img src="upload_data/site_photos/th_decko-s-pilane-500.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/nacionalne-aktivnosti-72/izmjene-kriterija-za-poslodavce-s-podrucja-na-kojima-je-proglasena-katastrofa-4660" title="Izmjene kriterija za poslodavce s područja na kojima je proglašena katastrofa">Izmjene kriterija za poslodavce s područja na kojima je proglašena katastrofa</a></h1>
+								<p>
+	Zagreb, 22. siječnja 2021. (hzz.hr/SSSH) &ndash; Upravno vijeće Hrvatskog zavoda za zapo&scaron;ljavanje na jučera&scaron;njoj je sjednici donijelo odluku o Izmjenama i dopunama Uvjeta i načina kori&scaron;tenja sredstava za provođenje mjera...</p>
+								<div class="info">
+
+									<span style="display: none;" >25.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/nacionalne-aktivnosti-72/izmjene-kriterija-za-poslodavce-s-podrucja-na-kojima-je-proglasena-katastrofa-4660" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/nacionalne-aktivnosti-72/raspisan-natjecaj-za-dodjelu-nagrade-sssh-srce-sindikalne-solidarnosti-u-2021.-godini-4659"><img src="upload_data/site_photos/th_io-sssh-21012021.jpg" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/nacionalne-aktivnosti-72/raspisan-natjecaj-za-dodjelu-nagrade-sssh-srce-sindikalne-solidarnosti-u-2021.-godini-4659" title="Raspisan natječaj za dodjelu nagrade SSSH „Srce sindikalne solidarnosti“ u 2021. godini">Raspisan natječaj za dodjelu nagrade SSSH „Srce sindikalne solidarnosti“ u 2021. godini</a></h1>
+								<p>
+	Zagreb, 21. siječnja 2021. &ndash; Izvr&scaron;ni odbor SSSH raspisao je interni natječaj za dodjelu nagrade SSSH &bdquo;Srce sindikalne solidarnosti&ldquo; u 2021. godini.
+	
+	Riječ je o stalnoj godi&scaron;njoj nagradi SSSH, ustanovljenoj...</p>
+								<div class="info">
+
+									<span style="display: none;" >22.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/nacionalne-aktivnosti-72/raspisan-natjecaj-za-dodjelu-nagrade-sssh-srce-sindikalne-solidarnosti-u-2021.-godini-4659" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/medunarodne-aktivnosti-73/europski-sudovi-presuduju-u-korist-platformskih-radnika-4658"><img src="upload_data/site_photos/th_cover-za-rpmc-vijesti-18.png" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/medunarodne-aktivnosti-73/europski-sudovi-presuduju-u-korist-platformskih-radnika-4658" title="Europski sudovi presuđuju u korist platformskih radnika">Europski sudovi presuđuju u korist platformskih radnika</a></h1>
+								<p>
+	Zagreb, 20. siječnja 2021. (radpmjeri.eu) - &Scaron;panjolski, belgijski i talijanski sudovi u posljednjih su mjesec dana donijeli presude o pravima dostavljača koji rade putem digitalnih platformi (tzv. platformski radnici). Te presude...</p>
+								<div class="info">
+
+									<span style="display: none;" >20.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/medunarodne-aktivnosti-73/europski-sudovi-presuduju-u-korist-platformskih-radnika-4658" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+										<div class="box">
+													<div class="image"><a href="hr/vise/nacionalne-aktivnosti-72/webinar-2.4-provedba-izbora-za-radnicko-vijece-4657"><img src="upload_data/site_photos/th_webinar-cover-2020-28-01.png" alt="" /></a></div>
+													<div class="text" >
+								<h1><a href="hr/vise/nacionalne-aktivnosti-72/webinar-2.4-provedba-izbora-za-radnicko-vijece-4657" title="Webinar 2.4: Provedba izbora za radničko vijeće">Webinar 2.4: Provedba izbora za radničko vijeće</a></h1>
+								<p>
+	Zagreb, 18. siječnja 2021. &ndash; SSSH nastavlja s on-line edukacijama pod nazivom &ldquo;Provedba izbora za radničko vijeće&rdquo; u četvrtak, 28. siječnja, od 14:00 do 16:00 sati.
+
+	Prijavi se na sudjelovanje!
+
+	Pred nama je izborna...</p>
+								<div class="info">
+
+									<span style="display: none;" >19.01.2021.</span> 
+									
+									<a style="display: none;"> href="hr/vise/nacionalne-aktivnosti-72/webinar-2.4-provedba-izbora-za-radnicko-vijece-4657" title="Pročitaj više">Pročitaj više</a>
+									
+								</div>
+							</div>
+						</div>
+						<!--	End Box	-->
+						<div class="clear"></div>
+						<div class="space"></div>
+								<div class="pages">
+									</div>
+			</div>
+			<!--	End News	-->
+
+
+		</div>
+		<!--	End Col2	-->
+<!--	Col3	-->
+		<div class="col3">
+							<div class="banner">
+					<a href="http://sssh.hr/hr/uclani-se"><img src="upload_data/site_photos/th_banneri-2020-2-.png" alt="Učlani se" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/hr/static/sssh/mobilna-aplikacija-sssh-107"><img src="upload_data/site_photos/th_banneri-2020-4-.png" alt="Mobilna aplikacija SSSH" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://radpomjeri.eu"><img src="upload_data/site_photos/th_banneri-2020-5-.png" alt="RAD PO MJERI ČOVJEKA" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/upload_data/site_files/2021-sijecanj-tekst-za-web.pdf"><img src="upload_data/site_photos/th_banneri-2020-6-.png" alt="Proširenje pravne pomoći članovima" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/upload_data/site_files/popusti-za-clanove-sssh-21012021.pdf"><img src="upload_data/site_photos/th_banneri-2020-9-.png" alt="Pogodnosti za članove" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://educa.sssh.hr/"><img src="upload_data/site_photos/th_educa_180x160.jpg" alt="EDUCA@SSSH" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://sssh.hr/hr/static/sssh/sekcija-mladih-sssh-7"><img src="upload_data/site_photos/th_banneri-2020-26-.png" alt="Sekcija mladih SSSH" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://sssh.hr/hr/static/sssh/zenska-sekcija-sssh-6"><img src="upload_data/site_photos/th_banneri-2020-27-.png" alt="Ženska sekcija SSSH" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/hr/static/podrucja-rada/radno-pravo/pravno-savjetovaliste-za-upucene-radnike-100"><img src="upload_data/site_photos/th_banneri-2020.png" alt="Pravno savjetovalište za upućene radnike" /></a>
+				</div>
+							<div class="banner">
+					<a href="http://www.sssh.hr/hr/kampanje/#24"><img src="upload_data/site_photos/th_banneri-2020-13-.png" alt="" /></a>
+				</div>
+						<!--
+			<div class="banner"><a href="#"><img src="images/stop.jpg" alt="" /></a></div>
+			<div class="banner"><a href="#"><img src="images/etui.jpg" alt="" /></a></div>
+			<div class="banner"><a href="#"><img src="images/sindikalna_akcija.jpg" alt="" /></a></div>-->
+		
+					<div class="poll" style="display:block" id="anketa">
+						<form action="" method="post">
+						<input type="hidden" name="anketa_id" value="23"/>
+				<p>Što je najveći problem na području radnoga vremena?</p>
+											<div class="cont"><input name="odgovor" type="radio" value="1" /> <span>Neplaćeni prekovremeni rad</span></div>
+						<div class="clear"></div>
+										<div class="cont"><input name="odgovor" type="radio" value="2" /> <span>Nemogućnost utjecaja na radno vrijeme </span></div>
+						<div class="clear"></div>
+										<div class="cont"><input name="odgovor" type="radio" value="3" /> <span>Rad nedjeljom</span></div>
+						<div class="clear"></div>
+								<input name="glasaj" type="submit" class="submit" value="Glasaj" /> <input name="" onclick="document.getElementById('rezultat').style.display='block'; document.getElementById('anketa').style.display='none'; return false;" type="button" class="results" value="Rezultati" />
+					</form>
+					</div>	
+							
+			<div id="rezultat" style="display:none" class="poll">
+				<label>Što je najveći problem na području radnoga vremena?</label>
+				<table style="border:none">	
+				
+						<tr><td style="border:none">Neplaćeni prekovremeni rad</td></tr>
+						<tr><td style="border-bottom: 1px solid #DBDBDB; padding-bottom:5px;">
+									<span title="77 glasova" style="width:73.430463576159px; background-color:#C4161C; margin-right:10px; font-size:0px; height:15px; float:left"> </span> <strong>51 %</strong></td></tr>
+						<tr><td style="border:none">Nemogućnost utjecaja na radno vrijeme </td></tr>
+						<tr><td style="border-bottom: 1px solid #DBDBDB; padding-bottom:5px;">
+									<span title="55 glasova" style="width:52.450331125828px; background-color:#C4161C; margin-right:10px; font-size:0px; height:15px; float:left"> </span> <strong>36 %</strong></td></tr>
+						<tr><td style="border:none">Rad nedjeljom</td></tr>
+						<tr><td style="border-bottom: 1px solid #DBDBDB; padding-bottom:5px;">
+									<span title="19 glasova" style="width:18.119205298013px; background-color:#C4161C; margin-right:10px; font-size:0px; height:15px; float:left"> </span> <strong>13 %</strong></td></tr>				</table>
+				<input name="" value="&laquo; Povratak" type="button" class="submit" onclick="document.getElementById('rezultat').style.display='none';document.getElementById('anketa').style.display='block'; return false;" />
+			</div>
+			
+			
+			
+		</div>
+		<!--	End Col3	-->
+		<div class="clear"></div>
+	</div>
+	<!--	End Content	-->
+</div>
+<!--	End	-->
+<!--	Footer	-->
+<div id="footer">
+	<!-- DODAO BANNER-->
+	
+			<a href="http://www.sssh.hr/upload_data/site_files/2021-sijecanj-tekst-za-web.pdf" target="_blank" style="position:relative;float: right;z-index:100"><img src="http://www.sssh.hr/upload_data/site_photos/Banneri_dolje1.png"> </a>
+			<a href="http://www.sssh.hr/upload_data/site_files/popusti-za-clanove-sssh-13012021.pdf" target="_blank" style="position:relative;float: right;z-index:100"><img src="http://www.sssh.hr/upload_data/site_photos/Banneri_dolje2.png"></a>
+
+	<div class="cont">
+		<div class="fm">
+			<ul>
+				<li class="first"><a href="hr/static/radnicka-prava-32"  title="Radnička prava">Radnička prava</a></li>         
+				
+				<li><a href="hr/uclani-se" >Učlani se</a></li>     
+						<li><a href="hr/static/podrucja-rada-41"   title="Područja rada">Područja rada</a></li>          
+				<li><a href="hr/kampanje"  title="Kampanje">Kampanje</a></li>        
+				<li><a href="hr/aktivnosti"  title="Aktivnosti">Aktivnosti</a></li>         
+				<li><a href="hr/vijesti"  title="">Vijesti</a></li> 
+			</ul>
+		</div>
+		<div class="fm2">
+			<ul>
+				<li class="first"><a href="http://www.sssh.hr/" title="Početna" class="slc">Početna</li>
+				<li><a href="hr/static/sssh-1"  title="SSSH">SSSH</a></li>
+				<li><a href="hr/sindikati"  title="Sindikati">Sindikati</a></li>
+						<li><a href="hr/za-medije"  title="Za medije">Za medije</a></li>
+						<li><a href="hr/projekti"  title="Projekti">Projekti</a></li>
+				<li><a href="hr/dokumenti"  title="Dokumenti">Dokumenti</a></li>
+				<li><a href="hr/static/linkovi-30"  title="Linkovi">Linkovi</a></li>
+				<li><a href="hr/static/kontakti"  title="Kontakti">Kontakti</a></li>
+			</ul>
+
+			
+
+		</div>
+		<div class="copyright">
+
+			<!-- DODAO BANNER-->
+			<!--
+			<a href="http://www.sssh.hr/upload_data/site_files/nadogradnja-pravne-pomoci-2.pdf" target="_blank"><img src="http://www.sssh.hr/upload_data/site_photos/th_nadogradnja-pravne-pomoci.png"> </a>
+			<a href="http://www.sssh.hr/upload_data/site_files/popusti-za-clanove-sssh_za-objavu.pdf" target="_blank"><img src="http://www.sssh.hr/upload_data/site_photos/th_pogodnost_banner.png"></a>
+		-->
+
+
+			<p>Copyright © 2012 <strong>SSSH.</strong> Sva prava pridržana.</p>
+		</div>
+		<div class="sociala">
+			<br><br><br>
+			<a href="https://www.facebook.com/SavezSamostalnihSindikataHrvatske?fref=ts" title="Facebook" target="_blank" style="position: relative;float: left;right: 220px;">Facebook</a>
+			<a class="yt" href="https://www.youtube.com/channel/UCJyQ5SzpHCcTbw1RvcsHBfA" target="_blank" title="Youtube" style="position: relative;float: left;right:200px;">Youtube</a>
+		</div>
+	</div>
+</div>
+<!--	End Footer	-->
+</body>
+</html>

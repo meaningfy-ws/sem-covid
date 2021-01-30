@@ -1,0 +1,940 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="de-DE" xml:lang="de-DE"><head><meta property="fb:pages" content="162071333824181">
+<meta property="fb:pages" content="174552715889678">
+<meta property="fb:pages" content="168791039831303">
+<meta property="fb:pages" content="1421437201207008">
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta><meta name="stationcode" content="DLF"></meta><meta name="category" content="none"></meta><meta name="searchable" content="false"></meta><meta name="broadcast" content="none"></meta><title>Die Nachrichten</title><meta name="viewport" content="width=device-width, initial-scale=1"></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta http-equiv="Content-Script-Type" content="text/javascript"></meta><meta http-equiv="X-UA-Compatible" content="IE=edge"></meta><link rel="shortcut icon" href="/favicon-com.ico"></link><link rel="canonical" href="https://www.deutschlandfunk.de/die-nachrichten.1441.de.html">
+<link rel="icon" type="image/x-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon.ico">
+<link rel="icon" type="image/png" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-57x57.png" sizes="57x57">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-60x60.png" sizes="60x60">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-72x72.png" sizes="72x72">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-76x76.png" sizes="76x76">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-114x114.png" sizes="114x114">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-120x120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-128x128.png" sizes="128x128">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-144x144.png" sizes="144x144">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-152x152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://www.deutschlandfunk.de/themes/dradio/icons/dlf/favicon-196x196.png" sizes="196x196">
+<meta name="date" content="2019-04-15T17:08:27+0200"></meta><meta name="robots" content="index,follow,noarchive"></meta><meta name="googlebot" content="noarchive"></meta><link rel="stylesheet" type="text/css" media="screen, projection" href="https://www.deutschlandfunk.de/themes/dradio/css.php?files=dlf24.css,dlf24.custom.css,fonts.graphik.css,colorbox4.css,optin.css&amp;facf773"></link><link rel="stylesheet" href="https://www.deutschlandfunk.de/themes/dradio/dlf24.portrait.css?facf773" media="screen and (max-width: 766px)"></link><link rel="stylesheet" type="text/css" media="print" href="https://www.deutschlandfunk.de/themes/dradio/css.php?files=dlf24.css&amp;facf773"></link><!--[if IE 9]><link rel="stylesheet" type="text/css" href="https://www.deutschlandfunk.de/themes/dradio/dlf_2015.ie9.css?facf773" media="screen, projection"/><![endif]--><!--[if IE 8]><link rel="stylesheet" type="text/css" href="https://www.deutschlandfunk.de/themes/dradio/dlf_2015.ie8.css?facf773" media="screen, projection"/><![endif]--><link rel="stylesheet" type="text/css" href="https://www.deutschlandfunk.de/themes/dradio/print.css?facf773" media="print"></link><noscript><link rel="stylesheet" type="text/css" href="https://www.deutschlandfunk.de/themes/dradio/dlf2015.nojs.css?facf773"></link></noscript><script type="text/javascript">
+        THEME_FILES = 'https://www.deutschlandfunk.de/themes/dradio/';
+      </script><script type="text/javascript" src="https://www.deutschlandfunk.de/themes/dradio/script/smarttag.js?rev=facf773"> </script><script type="text/javascript" src="https://www.deutschlandfunk.de/themes/dradio/js.php?files=script/jquery-2.1.4.min.js,script/dlf24/chosen.jquery.min.js,script/jquery.cookie.js,script/dlf24/modernizr.min.js,script/dlf24/flexibility.js,script/tracking.js,script/dlf24/dlf24.js,script/aod/jquery.mkdraod.interface.js,script/jquery.colorbox-min.js,privacy/privacy-common.js,privacy/privacy-thirdparty.js,privacy/privacy-tracking.js,script/responsive-embed.js,microtypography/microtype.js,ardplayer/base/js/libs/jquery.tools-1.2.7.min.js,ardplayer/base/js/libs/swfobject.js,ardplayer/base/js/libs/mm.useractivity.js,ardplayer/base/js/libs/json2.js,ardplayer/base/js/libs/shortcut.js,ardplayer/base/js/libs/bigscreen.min.js,ardplayer/base/js/libs/hls-0.7.11.light.min.js,ardplayer/base/js/libs/TweenLite.min.js,ardplayer/base/js/libs/Draggable.min.js,ardplayer/base/js/libs/CSSPlugin.min.js,ardplayer/js/base.min.js,script/ardplayer-namespace-fix.js,script/audioplayer.js,script/dlf-audioplayer.js&amp;rev=facf773"> </script><script type="text/javascript"><!--
+        if (!navigator.userAgent.match(/msie [6]/i)) {
+          $(function() {
+            if ( $('input.date').length > 0 ) {
+              $('input.date').datepicker('option', 'dayNames', ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag']);
+              $('input.date').datepicker('option', 'dayNamesShort', ['Son', 'Mon', 'Die', 'Mit', 'Don', 'Fre', 'Sam']);
+              $('input.date').datepicker('option', 'dayNamesMin', ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa']);
+              $('input.date').datepicker('option', 'monthNames', ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']);
+              $('input.date').datepicker('option', 'monthNamesShort', ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']);
+            }
+          });
+        }
+      
+        //--></script><meta property="og:url" content="https://www.deutschlandfunk.de/die-nachrichten.1441.de.html">
+<meta property="og:title" content="EU-Behörde Grünes Licht für Covid-19-Impfstoff von AstraZeneca">
+<meta property="og:description" content="Die Europäische Arzneimittelbehörde EMA hat den Einsatz des Covid-19-Impfstoffs von AstraZeneca genehmigt. Ein Ausschuss empfahl eine bedingte Zulassung des Impfstoffs. Die finale Entscheidung muss nun noch von der Europäischen Kommission gefällt werden. Dies gilt als Formsache. ">
+<meta property="og:image" content="https://www.deutschlandfunk.de/media/thumbs/a/a358f452e2622f306d53a4ae32f8ccfbv1_mincrop_970x315_b3535db83dc50e27c1bb1392364c95a2.jpg?key=e5cc54">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="945">
+<meta property="og:image:height" content="315">
+<meta property="og:image:alt" content="Großbritannien, Bristol: Ampullen mit dem Corona-Impfstoff des Herstellers AstraZeneca stehen in kleinen Kartons verpackt in einem Kühlschrank im Ashton Gate Stadium.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Deutschlandfunk">
+<meta property="og:locale" content="de_DE"></head><body><div class="wrapper" id="wrapper"><script>
+      $(window).mkdraod_interface({
+      baseURL: 'https://srv.deutschlandradio.de/themes/dradio/script/aod/index.html'
+      });
+    </script><header class="header"><div id="player-container" style="width:1px;height:1px;position:fixed;top:-9999px"><div id="audioplayer"> </div></div><div class="header-inner"><span class="header__menu"></span><nav class="sub-nav">            <ul class="dlf-subnavigation">
+              <li><a href="https://www.deutschlandradio.de/">Deutschlandradio</a></li>
+              <li><a href="https://www.deutschlandfunk.de/">Dlf</a></li>
+              <li><a href="https://www.deutschlandfunkkultur.de/">Dlf Kultur</a></li>
+              <li><a href="http://www.deutschlandfunknova.de/">Dlf Nova</a></li>
+              <li><a href="/die-nachrichten-wochenueberblick.1724.de.html">Archiv</a></li>
+              <li>
+                <a href="/die-nachrichten.353.de.rss">RSS</a>
+              </li>
+              <li>
+                <a href="/podcast-nachrichten.1257.de.podcast.xml">Podcasts</a>
+              </li>
+              <li class="fb">
+                <a href="http://www.facebook.com/deutschlandfunk" target="_blank"></a>
+              </li>
+              <li class="tw">
+                <a href="http://twitter.com/dlfnachrichten" target="_blank"></a>
+              </li>
+              <li class="in">
+                <a href="http://instagram.com/deutschlandfunk/" target="_blank"></a>
+              </li>
+            </ul></nav><div class="header__pause"><div class="dlf-livestream"><div><a href="#" class="player-embed" data-audio-src="https://ondemand-mp3.dradio.de/file/dradio/nachrichten/nachrichten.mp3" data-audio-title="Die Nachrichten" data-audio-delivery-mode="download"><span class="play-button"></span></a><div class="dlf-livesendung"><span>Die Nachrichten</span></div><div class="dlf-player player-main" style="display:none"><a class="dlf-pausebutton player-state liveplay "> </a><div class="dlf-progress player-progressbar"><div class="progress"><div class="player-progressbar-text-outer percent"><span class="percent player-progressbar-text-inner" style="left:0"> </span><span class="percent player-progressbar-text-inner" style="left:100%"> </span></div><div class="bar player-progressbar-runner"> </div></div></div><div class="dlf-playtime player-progressbar-time">0:00</div><a class="dlf-download player-download" href="#" target="_blank" type="application/octet-stream" download="download"> 
+      </a></div><script type="text/javascript">
+      var Player = (function (p) {
+        p.conf = {
+          hidePlayerDelayInSeconds: '10',
+          textSpeed: 40,
+          timeIncrement: Boolean(),
+          playerLoadingText: 'Lade Audio. Bitte haben sie Geduld.',
+          playerKey: 'mw0Kv9eMPxXAfLyDMTjUvtXdilzPDhk/m52fpg==',
+          playerLogging: Boolean(),
+        }
+        return p;
+      })(Player || {});
+    </script>
+</div></div></div><div class="logo"><a href="/die-nachrichten.1441.de.html"><span class="logo__img"></span><span class="site__title">Die Nachrichten</span></a></div><div class="header__hide"><div class="header__player header-interaction"><div class="dlf-livestream"><div><a href="#" class="player-embed" data-audio-src="https://ondemand-mp3.dradio.de/file/dradio/nachrichten/nachrichten.mp3" data-audio-title="Die Nachrichten" data-audio-delivery-mode="download"><span class="play-button"></span></a><div class="dlf-livesendung"><span>Die Nachrichten</span></div><div class="dlf-player player-main" style="display:none"><a class="dlf-pausebutton player-state liveplay "> </a><div class="dlf-progress player-progressbar"><div class="progress"><div class="player-progressbar-text-outer percent"><span class="percent player-progressbar-text-inner" style="left:0"> </span><span class="percent player-progressbar-text-inner" style="left:100%"> </span></div><div class="bar player-progressbar-runner"> </div></div></div><div class="dlf-playtime player-progressbar-time">0:00</div><a class="dlf-download player-download" href="#" target="_blank" type="application/octet-stream" download="download"> 
+      </a></div><script type="text/javascript">
+      var Player = (function (p) {
+        p.conf = {
+          hidePlayerDelayInSeconds: '10',
+          textSpeed: 40,
+          timeIncrement: Boolean(),
+          playerLoadingText: 'Lade Audio. Bitte haben sie Geduld.',
+          playerKey: 'mw0Kv9eMPxXAfLyDMTjUvtXdilzPDhk/m52fpg==',
+          playerLogging: Boolean(),
+        }
+        return p;
+      })(Player || {});
+    </script>
+</div></div><nav class="header__floatnav">            <ul>
+              <li><a href="/die-nachrichten-wochenueberblick.1724.de.html">Archiv</a></li>
+              <li><a href="/die-nachrichten.353.de.rss" target="_blank">Rss</a></li>
+              <li><a href="/podcast-nachrichten.1257.de.podcast.xml" target="_blank">Podcast</a></li>
+            </ul></nav></div><div class="header__search"><form action="suchergebnisse.448.de.html" method="get" class="search__form">
+  <input type="hidden" name="search[submit]" value="1"/>
+  <input type="hidden" name="search[withNews][]" value="WithNews"/>
+  <input type="search" name="search[word]" value="" autocomplete="off" title="Seiten durchsuchen" placeholder="Suchen"/>
+  <input type="submit" value="Absenden"/>
+</form><script type="text/javascript">
+      var searchConfigData = {
+      core: 'live'
+      };
+    </script>
+</div></div></div><nav>            <ul class="dlfn-main__nav">
+              <li class="active"><a href="/die-nachrichten-startseite.1441.de.html">Überblick</a></li>
+              <li><a href="/die-nachrichten-kulturnachrichten.2792.de.html">Kultur</a></li>
+              <li><a href="/die-nachrichten-wissensnachrichten.2794.de.html">Wissen</a></li>
+              <li><a href="/die-nachrichten-sportnachrichten.2793.de.html">Sport</a></li>
+            </ul></nav></header><div id="content"><section class="dlfn-teaser"><article><div class="dlfn-teaser-image"><header><h3><a href="die-nachrichten-detail.1939.de.html?drn:news_id=1221706"><span class="overline">EU-Behörde</span><span>Grünes Licht für Covid-19-Impfstoff von AstraZeneca</span></a></h3></header><div class="gradient"> </div><img src="https://www.deutschlandfunk.de/media/thumbs/8/83b903739b99e737c93489137f0b42a3v1_mincrop_970x315_b3535db83dc50e27c1bb1392364c95a2.jpg?key=1a8bd1" alt="Großbritannien, Bristol: Ampullen mit dem Corona-Impfstoff des Herstellers AstraZeneca stehen in kleinen Kartons verpackt in einem Kühlschrank im Ashton Gate Stadium. (Andrew Matthews/PA Wire/dpa)" title="Großbritannien, Bristol: Ampullen mit dem Corona-Impfstoff des Herstellers AstraZeneca stehen in kleinen Kartons verpackt in einem Kühlschrank im Ashton Gate Stadium. (Andrew Matthews/PA Wire/dpa)"/><img src="https://www.deutschlandfunk.de/media/thumbs/a/a358f452e2622f306d53a4ae32f8ccfbv1_max_560x315_b3535db83dc50e27c1bb1392364c95a2.jpg?key=532452" class="mobile-img" alt="Großbritannien, Bristol: Ampullen mit dem Corona-Impfstoff des Herstellers AstraZeneca stehen in kleinen Kartons verpackt in einem Kühlschrank im Ashton Gate Stadium. (Andrew Matthews/PA Wire/dpa)"/></div><p><a href="die-nachrichten-detail.1939.de.html?drn:news_id=1221706">Die Europäische Arzneimittelbehörde EMA hat den Einsatz des Covid-19-Impfstoffs von AstraZeneca genehmigt. Ein Ausschuss empfahl eine bedingte Zulassung des Impfstoffs. Die finale Entscheidung muss nun noch von der Europäischen Kommission gefällt werden. Dies gilt als Formsache. </a></p></article></section><div class="content"><div class="inner-container"><section>
+
+
+
+
+
+
+
+
+
+<div class="dlfn-topnews-container">
+  <article class="dlfn-topnews">
+    <a href="newsblog-zum-coronavirus-eu-laender-einigen-sich-auf-reise.2852.de.html?dram:article_id=472514">
+      <img src="https://www.deutschlandfunk.de/media/thumbs/8/8981230982a8b550542abe7872c522b3v1_max_440x247_b3535db83dc50e27c1bb1392364c95a2.jpg?key=21737f" alt="Beamte der Bundespolizei kontrollieren am Flughafen Frankfurt die Passagiere einer aus Prag gelandeten Passagiermaschine. Hintergrund ist die Entscheidung der Bundesregierung, zahlreiche Länder als Hochrisikoländer einzustufen. Wer aus einem der betroffenen Staaten nach Deutschland einreist, muss jetzt einen negativen, aktuellen Corona-Test vorweisen können. (picture alliance/dpa | Boris Roessler)" title="Beamte der Bundespolizei kontrollieren am Flughafen Frankfurt die Passagiere einer aus Prag gelandeten Passagiermaschine. Hintergrund ist die Entscheidung der Bundesregierung, zahlreiche Länder als Hochrisikoländer einzustufen. Wer aus einem der betroffenen Staaten nach Deutschland einreist, muss jetzt einen negativen, aktuellen Corona-Test vorweisen können. (picture alliance/dpa | Boris Roessler)"/>
+    </a>
+    <div class="topnews-inner">
+      <header>
+        <h3>
+          <a href="newsblog-zum-coronavirus-eu-laender-einigen-sich-auf-reise.2852.de.html?dram:article_id=472514"><span class="overline">Newsblog zum Coronavirus</span>+++ EU-Länder einigen sich auf Reise-Beschränkungen +++</a>
+        </h3>
+      </header>
+      <p>
+        <a href="newsblog-zum-coronavirus-eu-laender-einigen-sich-auf-reise.2852.de.html?dram:article_id=472514">Die EU-Staaten haben sich auf gemeinsame Reisebeschränkungen verständigt. Der Vertrag zwischen der EU und AstraZeneca ist öffentlich einsehbar, allerdings in Teilen geschwärzt. In Deutschland sind bislang 150 Infektionen mit mutierten Coronaviren nachgewiesen worden. Mehr in unserem Corona-Newsblog.</a>
+      </p>
+    </div>
+  </article>
+  <article class="dlfn-topnews">
+    <a href="bundestag-vorschlag-fuer-neuregelung-der-sterbehilfe.1939.de.html?drn:news_id=1221690">
+      <img src="https://www.deutschlandfunk.de/media/thumbs/e/ef0c2cf47e7f5bc2df830751671a7125v2_max_340x191_b3535db83dc50e27c1bb1392364c95a2.jpg?key=03d829" alt="Eine Person liegt im Krankenhausbett und hat ein Gerät zur Überwachung des Herzzrhytmuses an seinem Finger. (Getty Images / iStock / gorodenkoff)" title="Eine Person liegt im Krankenhausbett und hat ein Gerät zur Überwachung des Herzzrhytmuses an seinem Finger. (Getty Images / iStock / gorodenkoff)"/>
+    </a>
+    <div class="topnews-inner">
+      <header>
+        <h3>
+          <a href="bundestag-vorschlag-fuer-neuregelung-der-sterbehilfe.1939.de.html?drn:news_id=1221690"><span class="overline">Bundestag</span>Vorschlag für Neuregelung der Sterbehilfe</a>
+        </h3>
+      </header>
+      <p>
+        <a href="bundestag-vorschlag-fuer-neuregelung-der-sterbehilfe.1939.de.html?drn:news_id=1221690">Mehrere Bundestagsabgeordnete haben einen parteiübergreifenden Vorschlag zur Neuregelung der Sterbehilfe vorgestellt. Der Gesetzentwurf soll es Ärzten erlauben, Sterbewilligen tödlich wirkende Medikamente zu verschreiben. Voraussetzung wäre eine vorherige verpflichtende Beratung.</a>
+      </p>
+    </div>
+  </article>
+  <article class="dlfn-topnews">
+    <a href="gericht-shell-nigeria-verantwortlich-fuer-oel-verschmutzung.1939.de.html?drn:news_id=1221689">
+      <img src="https://www.deutschlandfunk.de/media/thumbs/3/30b18d6939c401f19c0954955e6426bdv1_max_340x191_b3535db83dc50e27c1bb1392364c95a2.jpg?key=e8a1a4" alt="Ölarbeiter im Nigerdelta im Süden Nigerias (EPA)" title="Ölarbeiter im Nigerdelta im Süden Nigerias (EPA)"/>
+    </a>
+    <div class="topnews-inner">
+      <header>
+        <h3>
+          <a href="gericht-shell-nigeria-verantwortlich-fuer-oel-verschmutzung.1939.de.html?drn:news_id=1221689"><span class="overline">Gericht</span>Shell Nigeria verantwortlich für Öl-Verschmutzung im Niger-Deta</a>
+        </h3>
+      </header>
+      <p>
+        <a href="gericht-shell-nigeria-verantwortlich-fuer-oel-verschmutzung.1939.de.html?drn:news_id=1221689">Das Tochterunternehmen des Öl-Konzerns Shell in Nigeria muss nach einem Gerichtsurteil Bauern in dem Land für Ölverschmutzungen entschädigen. Das Unternehmen sei haftbar für Verseuchungen in den Jahren 2004 und 2005, stellte ein niederländisches Berufungsgericht in Den Haag fest. </a>
+      </p>
+    </div>
+  </article>
+</div>
+</section><section>
+
+
+
+<div class="dlfn-nachrichten">
+  <div class="dlfn-boxes">
+    <article class="dlfn-boxarticle large ">
+      <header>
+        <h3>
+          <a href="bafin-prasident-hufeld-muss-nach-wirecard-skandal-gehen.1939.de.html?drn:news_id=1221718"><span class="overline">BaFin</span>Präsident Hufeld muss nach Wirecard-Skandal gehen</a>
+        </h3>
+      </header>
+      <a href="bafin-prasident-hufeld-muss-nach-wirecard-skandal-gehen.1939.de.html?drn:news_id=1221718">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/5/507e7d0cccd4dabe1a11a779ab18c0cev1_mincrop_441x249_b3535db83dc50e27c1bb1392364c95a2.jpg?key=d891d5" alt="Felix Hufeld steht vor einem Logo der Bundesanstalt. (picture alliance / dpa / Arne Dedert)" title="Felix Hufeld steht vor einem Logo der Bundesanstalt. (picture alliance / dpa / Arne Dedert)"/>
+      </a>
+    </article>
+    <article class="dlfn-boxarticle half">
+      <a href="coronavirus-pandemie-bundesregierung-dampft-erwartungen-an.1939.de.html?drn:news_id=1221702">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/1/1cb2798f30204679f9f880ed5c080e1av1_mincrop_215x125_b3535db83dc50e27c1bb1392364c95a2.jpg?key=87073f" alt="Regierungssprecher Steffen Seibert vor einer Sitzung des Bundeskabinetts (picture alliance / dpa / Michael Kappeler)" title="Regierungssprecher Steffen Seibert vor einer Sitzung des Bundeskabinetts (picture alliance / dpa / Michael Kappeler)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="coronavirus-pandemie-bundesregierung-dampft-erwartungen-an.1939.de.html?drn:news_id=1221702"><span class="overline">Coronavirus-Pandemie</span>Bundesregierung dämpft Erwartungen an den "Impfgipfel"</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle half">
+      <a href="covid-19-auch-moderna-liefert-offenbar-weniger-corona.1939.de.html?drn:news_id=1221691">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/7/7e05de0269930307a8842e44c3221932v1_mincrop_215x125_b3535db83dc50e27c1bb1392364c95a2.jpg?key=b17186" alt="Ein Fläschchen des Corona-Impfstoffs von Moderna (imago / ZUMA / Meg Mclaughlin)" title="Ein Fläschchen des Corona-Impfstoffs von Moderna (imago / ZUMA / Meg Mclaughlin)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="covid-19-auch-moderna-liefert-offenbar-weniger-corona.1939.de.html?drn:news_id=1221691"><span class="overline">Covid-19</span>Auch Moderna liefert offenbar weniger Corona-Impfstoff als geplant</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle half">
+      <a href="verkehr-milliardenschwerer-zusammenschluss-zwischen-alstom.1939.de.html?drn:news_id=1221704">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/a/afb9962837dcd8b41e680320684c3c31v1_mincrop_215x125_b3535db83dc50e27c1bb1392364c95a2.jpg?key=d2a391" alt="Die Zentrale des französischen Konzerns Alstom in Levallois-Perret nordwestlich von Paris. (AFP / Patrick Kovarik)" title="Die Zentrale des französischen Konzerns Alstom in Levallois-Perret nordwestlich von Paris. (AFP / Patrick Kovarik)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="verkehr-milliardenschwerer-zusammenschluss-zwischen-alstom.1939.de.html?drn:news_id=1221704"><span class="overline">Verkehr</span>Milliardenschwerer Zusammenschluss zwischen Alstom und Bombardier</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle half">
+      <a href="gesetzentwurf-parlament-in-portugal-stimmt-fur.1939.de.html?drn:news_id=1221717">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/9/9ae1127554cab330f9f6343cf54c5765v1_mincrop_215x125_b3535db83dc50e27c1bb1392364c95a2.jpg?key=780b00" alt="Das Parlamentsgebäude in Lissabon. (Imago/Westend61)" title="Das Parlamentsgebäude in Lissabon. (Imago/Westend61)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="gesetzentwurf-parlament-in-portugal-stimmt-fur.1939.de.html?drn:news_id=1221717"><span class="overline">Gesetzentwurf</span>Parlament in Portugal stimmt für Legalisierung der Sterbehilfe</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle half">
+      <a href="bundestag-verkehrsminister-scheuer-verteidigt-umstrittene.1939.de.html?drn:news_id=1221703">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/8/8e9ca8ef4cf570c50a7dee7791e47f15v1_mincrop_215x125_b3535db83dc50e27c1bb1392364c95a2.jpg?key=6f0f96" alt="Eine Hand hält ein Smartphone mit dem Uber-Logo in die Kamera; im Hintergrund ist eine Taxirufsäule mit dem beleuchteten &quot;Taxi&quot;-Logo zu sehen. (dpa / Stefan Jaitner)" title="Eine Hand hält ein Smartphone mit dem Uber-Logo in die Kamera; im Hintergrund ist eine Taxirufsäule mit dem beleuchteten &quot;Taxi&quot;-Logo zu sehen. (dpa / Stefan Jaitner)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="bundestag-verkehrsminister-scheuer-verteidigt-umstrittene.1939.de.html?drn:news_id=1221703"><span class="overline">Bundestag</span>Verkehrsminister Scheuer verteidigt umstrittene Fahrdienst-Reform</a>
+        </h3>
+      </header>
+    </article>
+    <div class="dlfn-boxessmall">
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="katholische-kirche-missbrauchsbeauftragter-rorig-kritisiert.1939.de.html?drn:news_id=1221692"><span class="overline">Katholische Kirche</span>Missbrauchsbeauftragter Rörig kritisiert Kardinal Woelki</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="corona-impfstoff-russland-bietet-eu-100-millionen-dosen.1939.de.html?drn:news_id=1221657"><span class="overline">Corona-Impfstoff</span>Russland bietet EU 100 Millionen Dosen Sputnik V an</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <article class="dlfn-boxarticle small single">
+      <header>
+        <h3>
+          <a href="corona-impfstoff-eu-kommission-veroffentlicht-vertrag-mit.1939.de.html?drn:news_id=1221661"><span class="overline">Corona-Impfstoff</span>EU-Kommission veröffentlicht Vertrag mit AstraZeneca</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle small single">
+      <header>
+        <h3>
+          <a href="rheinland-pfalz-ministerprasidentin-dreyer-fordert.1939.de.html?drn:news_id=1221665"><span class="overline">Rheinland-Pfalz</span>Ministerpräsidentin Dreyer fordert nationalen Impfplan</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle small single">
+      <header>
+        <h3>
+          <a href="nach-vorwurf-des-wahlbetrugs-warnungen-vor-militarputsch-in.1939.de.html?drn:news_id=1221662"><span class="overline">Nach Vorwurf des Wahlbetrugs</span>Warnungen vor Militärputsch in Myanmar</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle small single">
+      <header>
+        <h3>
+          <a href="bundesagentur-fur-arbeit-corona-pandemie-treibt.1939.de.html?drn:news_id=1221642"><span class="overline">Bundesagentur für Arbeit</span>Corona-Pandemie treibt Langzeitarbeitslosigkeit nach oben</a>
+        </h3>
+      </header>
+    </article>
+    <div class="slideout hide">
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="unternehmen-2021-sollen-5-000-nachwuchskrafte-bei-der.1939.de.html?drn:news_id=1221646"><span class="overline">Unternehmen</span>2021 sollen 5.000 Nachwuchskräfte bei der Deutschen Bahn eingestellt werden</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="pandemie-corona-impfgipfel-bartsch-fordert-beteiligung-von.1939.de.html?drn:news_id=1221612"><span class="overline">Pandemie</span>Corona-Impfgipfel: Bartsch fordert Beteiligung von Landräten und Fraktionschefs</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="hongkong-streit-china-erkennt-britische-ubersee-passe-nicht.1939.de.html?drn:news_id=1221613"><span class="overline">Hongkong-Streit</span>China erkennt britische Übersee-Pässe nicht mehr an</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="usa-biden-hebt-abtreibungsbeschrankungen-auf.1939.de.html?drn:news_id=1221614"><span class="overline">USA</span>Biden hebt Abtreibungsbeschränkungen auf</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="elterngeld-eltern-von-fruhgeborenen-werden-starker-gefordert.1939.de.html?drn:news_id=1221601"><span class="overline">Elterngeld</span>Eltern von Frühgeborenen werden stärker gefördert</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="fall-daniel-pearl-pakistanische-regierung-lasst-offenbar.1939.de.html?drn:news_id=1221590"><span class="overline">Fall Daniel Pearl</span>Pakistanische Regierung lässt offenbar Freilassung des mutmaßlichen Mörders prüfen</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <div class="slideout hide">
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="u-ausschuss-zur-pkw-maut-spd-vertragsunterzeichnung-war.1939.de.html?drn:news_id=1221588"><span class="overline">U-Ausschuss zur Pkw-Maut</span>SPD: Vertragsunterzeichnung war Scheuers persönliche politische Entscheidung</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="corona-schnelltests-caritas-prasident-neher-fordert.1939.de.html?drn:news_id=1221587"><span class="overline">Corona-Schnelltests</span>Caritas-Präsident Neher fordert stärkeren Einsatz der Bundeswehr in Heimen</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="nordrhein-westfalen-brand-zerstort-fluchtlingsunterkunft-in.1939.de.html?drn:news_id=1221563"><span class="overline">Nordrhein-Westfalen</span>Brand zerstört Flüchtlingsunterkunft in Schleiden</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="bangladesch-erneut-rohingya-fluchtlinge-auf-insel.1939.de.html?drn:news_id=1221559"><span class="overline">Bangladesch</span>Erneut Rohingya-Flüchtlinge auf Insel umgesiedelt</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="osterreich-bundesprasident-kritisiert-abschiebung-von.1939.de.html?drn:news_id=1221560"><span class="overline">Österreich</span>Bundespräsident kritisiert Abschiebung von Schülerinnen nach Georgien und Armenien</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="asylrecht-2020-gab-es-halb-so-viele-abschiebungen-aus.1939.de.html?drn:news_id=1221561"><span class="overline">Asylrecht</span>2020 gab es halb so viele Abschiebungen aus Deutschland wie 2019</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+  </div>
+</div><span class="show">weitere Nachrichten</span>
+</section><section>
+
+
+
+<div class="dlfn-section wissen">
+  <h2 class="section-headline">
+    <a href="die-nachrichten-wissensnachrichten.2794.de.html">Wissen</a>
+  </h2>
+  <div class="hrline"> </div>
+  <div class="dlfn-boxes">
+    <article class="dlfn-boxarticle large colored">
+      <a href="covid-19-munsteraner-virologen-erforschen-medikament-gegen.2850.de.html?drn:news_id=1221687">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/a/a28c3b5d835de70407b0807e41ad03b2v1_mincrop_441x249_b3535db83dc50e27c1bb1392364c95a2.jpg?key=7cd5e3" alt="Universitätsklinik Münster, Zentralklinikum, Schild zu Geburtshilfe/ Kreissaal. 16.05.2014. (imago / Rüdiger Wölk)" title="Universitätsklinik Münster, Zentralklinikum, Schild zu Geburtshilfe/ Kreissaal. 16.05.2014. (imago / Rüdiger Wölk)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="covid-19-munsteraner-virologen-erforschen-medikament-gegen.2850.de.html?drn:news_id=1221687"><span class="overline">Covid-19</span>Münsteraner Virologen erforschen Medikament gegen das Coronavirus</a>
+        </h3>
+      </header>
+    </article>
+    <div class="dlfn-boxessmall">
+      <article class="dlfn-boxarticle small alternative">
+        <a href="hochschulen-mehr-studierende-in-deutschland-aber-weniger.2850.de.html?drn:news_id=1221627">
+          <img src="https://www.deutschlandfunk.de/media/thumbs/a/a9d3797e550d92a265c54af6b4d8d8d6v1_mincrop_340x191_b3535db83dc50e27c1bb1392364c95a2.jpg?key=f0fe77" alt="Jura-Studierende in Bochum (dpa/picture alliance/JOKER)" title="Jura-Studierende in Bochum (dpa/picture alliance/JOKER)"/>
+        </a>
+        <header>
+          <h3>
+            <a href="hochschulen-mehr-studierende-in-deutschland-aber-weniger.2850.de.html?drn:news_id=1221627"><span class="overline">Hochschulen</span>Mehr Studierende in Deutschland - aber weniger Studienanfänger</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="psychologie-jeden-dritten-belastet-corona-pandemie-psychisch.2850.de.html?drn:news_id=1221610"><span class="overline">Psychologie</span>Jeden dritten belastet Corona-Pandemie psychisch</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <div class="dlfn-boxessmall">
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="covid-19-who-experten-beginnen-mit-untersuchung-zum-virus.2850.de.html?drn:news_id=1221628"><span class="overline">Covid-19</span>WHO-Experten beginnen mit Untersuchung zum Virus-Ursprung in Wuhan</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="artenschutz-kampf-gegen-elfenbeinhandel-in-der-eu-soll.2850.de.html?drn:news_id=1221391"><span class="overline">Artenschutz</span>Kampf gegen Elfenbeinhandel in der EU soll verschärft werden</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="auszeichnung-krokodil-ist-zootier-des-jahres-2021.2850.de.html?drn:news_id=1221392"><span class="overline">Auszeichnung</span>Krokodil ist Zootier des Jahres 2021</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <div class="slideout hide">
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="coronavirus-pandemie-21-jahriger-hackt-online-unterricht.2850.de.html?drn:news_id=1221393"><span class="overline">Coronavirus-Pandemie</span>21-Jähriger hackt Online-Unterricht</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="uni-glasgow-studie-zur-gesellschaftlichen-teilhabe-in-der.2850.de.html?drn:news_id=1221394"><span class="overline">Uni Glasgow</span>Studie zur gesellschaftlichen Teilhabe in der Politik</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="studie-mondzyklus-beeinflusst-offenbar-schlafgewohnheiten.2850.de.html?drn:news_id=1221395"><span class="overline">Studie</span>Mondzyklus beeinflusst offenbar Schlafgewohnheiten der Menschen</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="studie-zahl-der-haie-und-rochen-in-meeren-extrem-gesunken.2850.de.html?drn:news_id=1221396"><span class="overline">Studie</span>Zahl der Haie und Rochen in Meeren extrem gesunken</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="schulschliessungen-kontaktbeschrankungen-co-neurobiologe.2850.de.html?drn:news_id=1221557"><span class="overline">Schulschließungen, Kontaktbeschränkungen &amp;Co</span>Neurobiologe: Unterdrückte Bedürfnisse verändern das Gehirn von Kindern</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+  </div>
+</div><span class="show">weitere Wissennachrichten</span>
+</section><section>
+
+
+
+<div class="dlfn-section kultur">
+  <h2 class="section-headline">
+    <a href="die-nachrichten-kulturnachrichten.2792.de.html">Kultur</a>
+  </h2>
+  <div class="hrline"> </div>
+  <div class="dlfn-boxes">
+    <article class="dlfn-boxarticle large colored">
+      <a href="literatur-leipziger-buchmesse-erneut-wegen-corona-pandemie.2849.de.html?drn:news_id=1221605">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/b/b3b21c3af07fae567acc222c74c1e79bv1_mincrop_441x249_b3535db83dc50e27c1bb1392364c95a2.jpg?key=92c0fe" alt="Blick auf die Glashalle der Leipziger Messe.  (picture alliance / dpa-Zentralbild / Jan Woitas)" title="Blick auf die Glashalle der Leipziger Messe.  (picture alliance / dpa-Zentralbild / Jan Woitas)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="literatur-leipziger-buchmesse-erneut-wegen-corona-pandemie.2849.de.html?drn:news_id=1221605"><span class="overline">Literatur</span>Leipziger Buchmesse erneut wegen Corona-Pandemie abgesagt</a>
+        </h3>
+      </header>
+    </article>
+    <div class="dlfn-boxessmall">
+      <article class="dlfn-boxarticle small alternative">
+        <a href="usa-worterbuch-nimmt-begriff-second-gentleman-auf.2849.de.html?drn:news_id=1221679">
+          <img src="https://www.deutschlandfunk.de/media/thumbs/e/ebdd9ccc2856d7af2227ce8dfa2412e0v1_mincrop_340x191_b3535db83dc50e27c1bb1392364c95a2.jpg?key=6108ba" alt="Vizepräsidentin Kamala Harris bei der Umarmung ihres Ehemanns, Doug Emhoff, nachdem sie vereidigt wurde  (dpa / Pool AFP / Saul Loeb)" title="Vizepräsidentin Kamala Harris bei der Umarmung ihres Ehemanns, Doug Emhoff, nachdem sie vereidigt wurde  (dpa / Pool AFP / Saul Loeb)"/>
+        </a>
+        <header>
+          <h3>
+            <a href="usa-worterbuch-nimmt-begriff-second-gentleman-auf.2849.de.html?drn:news_id=1221679"><span class="overline">USA</span>Wörterbuch nimmt Begriff "Second Gentleman" auf</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="mosambik-regierung-weist-britischen-journalisten-aus.2849.de.html?drn:news_id=1221678"><span class="overline">Mosambik</span>Regierung weist britischen Journalisten aus</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <div class="dlfn-boxessmall">
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="independent-filme-sundance-festival-startet-als-virtuelles.2849.de.html?drn:news_id=1221609"><span class="overline">Independent-Filme</span>Sundance-Festival startet als virtuelles Format</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="new-york-botticelli-werk-fur-80-millionen-dollar-versteigert.2849.de.html?drn:news_id=1221397"><span class="overline">New York</span>Botticelli-Werk für 80 Millionen Dollar versteigert</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="literatur-us-poetin-amanda-gorman-wird-autorin-bei-verlag.2849.de.html?drn:news_id=1221398"><span class="overline">Literatur</span>US-Poetin Amanda Gorman wird Autorin bei Verlag Hoffmann und Campe</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <div class="slideout hide">
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="covid-19-londoner-opernhaus-bietet-atemubungen-fur-langzeit.2849.de.html?drn:news_id=1221399"><span class="overline">Covid-19</span>Londoner Opernhaus bietet Atemübungen für Langzeit-Corona-Patienten</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="kunstmesse-art-cologne-wird-wegen-coronakrise-erneut.2849.de.html?drn:news_id=1221400"><span class="overline">Kunstmesse</span>Art Cologne wird wegen Coronakrise erneut verschoben</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="stargeigerin-anne-sophie-mutter-ubt-scharfe-kritik-am.2849.de.html?drn:news_id=1221401"><span class="overline">Stargeigerin</span>Anne-Sophie Mutter übt scharfe Kritik am Umgang mit der Kultur</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="usa-schauspielerin-cloris-leachman-stirbt-mit-94-jahren.2849.de.html?drn:news_id=1221402"><span class="overline">USA</span>Schauspielerin Cloris Leachman stirbt mit 94 Jahren</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+  </div>
+</div><span class="show">weitere Kulturnachrichten</span>
+</section><section>
+
+
+
+<div class="dlfn-section sport">
+  <h2 class="section-headline">
+    <a href="die-nachrichten-sportnachrichten.2793.de.html">Sport</a>
+  </h2>
+  <div class="hrline"> </div>
+  <div class="dlfn-boxes">
+    <article class="dlfn-boxarticle large colored">
+      <a href="fussball-em-und-wm-finale-sollen-im-ard-horfunk-von-frauen.2851.de.html?drn:news_id=1221608">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/7/7c495e70fd4181c2b60e7678a0b69f44v1_mincrop_441x249_b3535db83dc50e27c1bb1392364c95a2.jpg?key=6688e2" alt="WDR-Sportreporterin Sabine Töpperwien am Mikrofon, aufgenommen am 08.11.2003 im Bochumer Ruhrstadion (picture-alliance / dpa | Franz-Peter Tschauner)" title="WDR-Sportreporterin Sabine Töpperwien am Mikrofon, aufgenommen am 08.11.2003 im Bochumer Ruhrstadion (picture-alliance / dpa | Franz-Peter Tschauner)"/>
+      </a>
+      <header>
+        <h3>
+          <a href="fussball-em-und-wm-finale-sollen-im-ard-horfunk-von-frauen.2851.de.html?drn:news_id=1221608"><span class="overline">Fußball-EM und WM</span>Finale sollen im ARD-Hörfunk von Frauen kommentiert werden</a>
+        </h3>
+      </header>
+    </article>
+    <div class="dlfn-boxessmall">
+      <article class="dlfn-boxarticle small alternative">
+        <a href="sudkorea-triathlontrainer-muss-wegen-missbrauchs-sieben.2851.de.html?drn:news_id=1221676">
+          <img src="https://www.deutschlandfunk.de/media/thumbs/9/9d4bc9d619ce3274cdfb369f5c0f7866v1_mincrop_340x191_b3535db83dc50e27c1bb1392364c95a2.jpg?key=3fe95d" alt="Die südkoreanische Triathletin Choi Suk-hyeon. (Youtube/YTN TV)" title="Die südkoreanische Triathletin Choi Suk-hyeon. (Youtube/YTN TV)"/>
+        </a>
+        <header>
+          <h3>
+            <a href="sudkorea-triathlontrainer-muss-wegen-missbrauchs-sieben.2851.de.html?drn:news_id=1221676"><span class="overline">Südkorea</span>Triathlontrainer muss wegen Missbrauchs sieben Jahre ins Gefängnis</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="italien-fussballverband-erlaubt-klubs-in-corona-krise.2851.de.html?drn:news_id=1221677"><span class="overline">Italien</span>Fußballverband erlaubt Klubs in Corona-Krise verspätete Gehaltszahlungen</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <div class="dlfn-boxessmall">
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="zweite-fussball-bundesliga-fc-st-pauli-unterliegt-vfl.2851.de.html?drn:news_id=1221416"><span class="overline">Zweite Fußball-Bundesliga</span>FC St. Pauli unterliegt VfL Bochum 2:3</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="vendee-globe-solo-segler-herrmann-wird-vierter.2851.de.html?drn:news_id=1221417"><span class="overline">Vendée Globe</span>Solo-Segler Herrmann wird Vierter</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle small ">
+        <header>
+          <h3>
+            <a href="manchester-united-fussballclub-verurteilt-rassistische.2851.de.html?drn:news_id=1221418"><span class="overline">Manchester United</span>Fußballclub verurteilt rassistische Schmähungen</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+    <div class="slideout hide">
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="coronavirus-absagen-im-wintersport-nach-norwegens.2851.de.html?drn:news_id=1221419"><span class="overline">Coronavirus</span>Absagen im Wintersport nach Norwegens Grenzschließungen</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="kugelstossen-olympiasiegerin-margitta-gummel-gestorben.2851.de.html?drn:news_id=1221420"><span class="overline">Kugelstoßen</span>Olympiasiegerin Margitta Gummel gestorben</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="profisport-schmerzmittelmissbrauch-im-sport.2851.de.html?drn:news_id=1221421"><span class="overline">Profisport</span>Schmerzmittelmissbrauch im Sport besorgniserregend</a>
+          </h3>
+        </header>
+      </article>
+      <article class="dlfn-boxarticle long">
+        <header>
+          <h3>
+            <a href="fussball-europameisterschaft-uefa-halt-an-em-planen-fest.2851.de.html?drn:news_id=1221422"><span class="overline">Fußball-Europameisterschaft</span>UEFA hält an EM-Plänen fest</a>
+          </h3>
+        </header>
+      </article>
+    </div>
+  </div>
+</div><span class="show">weitere Sportnachrichten</span>
+</section><section>
+
+
+
+
+
+
+
+
+
+
+
+<div class="dlfn-seitedrei">
+  <h2>
+    <a href="die-nachrichten-vertieft.1949.de.html">Nachrichten vertieft</a>
+  </h2>
+  <article class="dlfn-drei-artikel">
+    <a href="corona-impfstoffe-will-astrazeneca-die-eu-ausbooten.1939.de.html?drn:news_id=1220026">
+      <img src="https://www.deutschlandfunk.de/media/thumbs/b/b06bf6a20b6e3b35e63e59e7be26ba89v1_max_340x191_b3535db83dc50e27c1bb1392364c95a2.jpg?key=df0148" alt="Zwei Phiolen mit dem Coronaserum-Impfstoff von AstraZeneca. Dazwischen liegt eine Spritze. (picture alliance / Drago Prvulovic)" title="Zwei Phiolen mit dem Coronaserum-Impfstoff von AstraZeneca. Dazwischen liegt eine Spritze. (picture alliance / Drago Prvulovic)"/>
+    </a>
+    <div class="news-inner">
+      <header>
+        <h3>
+          <a href="corona-impfstoffe-will-astrazeneca-die-eu-ausbooten.1939.de.html?drn:news_id=1220026"><span class="overline">Corona-Impfstoffe</span>Will AstraZeneca die EU ausbooten?</a>
+        </h3>
+      </header>
+      <p>
+        <a href="corona-impfstoffe-will-astrazeneca-die-eu-ausbooten.1939.de.html?drn:news_id=1220026">
+          <p>Der Streit um die verzögerte Lieferung des AstraZeneca-Impfstoffes an die EU zieht immer weitere Kreise. Nicht nur in der EU-Kommission herrscht Empörung. Sogar der Begriff "Patent-Enteignung" soll schon gefallen sein. Welche Druckmittel hat Brüssel gegenüber dem Pharmakonzern? Und was steht genau in den Verträgen mit AstraZeneca?</p>
+        </a>
+      </p>
+    </div>
+  </article>
+  <article class="dlfn-drei-artikel">
+    <a href="fragen-und-antworten-das-weltwirtschaftsforum-im-netz-statt.1939.de.html?drn:news_id=1220135">
+      <img src="https://www.deutschlandfunk.de/media/thumbs/c/cc380958a0c3873f4ee5d83f26a70ab1v1_max_340x191_b3535db83dc50e27c1bb1392364c95a2.jpg?key=561786" alt="Klaus Schwab, ein älterer Herr, im seriösen Anzug vor einer vertäfelten Wand. (imago/Xinhua/Xu Jinquan)" title="Klaus Schwab, ein älterer Herr, im seriösen Anzug vor einer vertäfelten Wand. (imago/Xinhua/Xu Jinquan)"/>
+    </a>
+    <div class="news-inner">
+      <header>
+        <h3>
+          <a href="fragen-und-antworten-das-weltwirtschaftsforum-im-netz-statt.1939.de.html?drn:news_id=1220135"><span class="overline">Fragen und Antworten</span>Das Weltwirtschaftsforum im Netz statt in Davos</a>
+        </h3>
+      </header>
+      <p>
+        <a href="fragen-und-antworten-das-weltwirtschaftsforum-im-netz-statt.1939.de.html?drn:news_id=1220135">
+          <p>Das Weltwirtschaftsforum (WEF) in Davos steht im Zeichen der Pandemie. Die Veranstaltung findet erstmals rein digital statt. Erst im Sommer will sich die Politik- und Wirtschaftselite in Singapur persönlich treffen.</p>
+        </a>
+      </p>
+    </div>
+  </article>
+  <div class="slideout hide">
+    <article class="dlfn-boxarticle long">
+      <header>
+        <h3>
+          <a href="covid-19-wie-funktioniert-ein-antikoerper-medikament-und.2850.de.html?drn:news_id=1219988"><span class="overline">Covid-19</span>Wie funktioniert ein Antikörper-Medikament und wann ist es sinnvoll?</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle long">
+      <header>
+        <h3>
+          <a href="covid-19-so-wird-der-verlaengerte-und-verschaerfte-lockdown.1939.de.html?drn:news_id=1218959"><span class="overline">Covid-19</span>So wird der verlängerte und verschärfte Lockdown in den Bundesländern umgesetzt</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle long">
+      <header>
+        <h3>
+          <a href="mega-events-trotz-pandemie-was-wird-aus-olympia-und-der.1939.de.html?drn:news_id=1219068"><span class="overline">Mega-Events trotz Pandemie?</span>Was wird aus Olympia und der Fußball-EM?</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle long">
+      <header>
+        <h3>
+          <a href="corona-beschluesse-neue-homeoffice-regeln-treten-naechsten.1939.de.html?drn:news_id=1218179"><span class="overline">Corona-Beschlüsse</span>Homeoffice-Regeln treten nächste Woche in Kraft</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle long">
+      <header>
+        <h3>
+          <a href="verfassungsschutz-entscheidet-afd-erlaeutert-ihre.1939.de.html?drn:news_id=1218214"><span class="overline">Verfassungsschutz entscheidet</span>AfD erläutert ihre Vorstellung vom "deutschen Staatsvolk"</a>
+        </h3>
+      </header>
+    </article>
+    <article class="dlfn-boxarticle long">
+      <header>
+        <h3>
+          <a href="kein-komplett-lockdown-erleichterung-in-der-wirtschaft.1939.de.html?drn:news_id=1218149"><span class="overline">Kein Komplett-Lockdown</span>Erleichterung in der Wirtschaft über Corona-Beschlüsse</a>
+        </h3>
+      </header>
+    </article>
+  </div>
+  <span class="show alt">weitere Beiträge</span>
+</div>
+</section><section>
+
+
+<section>
+  <div class="dlfn-presseschau">
+    <h2>Presseschau</h2>
+    <article class="dlfn-presse-artikel">
+      <header>
+        <h3>
+          <a href="wirtschafts-presseschau.2863.de.html"><span class="overline">29. Januar 2021</span>Wirtschaftspresseschau</a>
+        </h3>
+      </header>
+      <a href="wirtschafts-presseschau.2863.de.html">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/4/406ecc3d8c65349934a16efadcb3374cv1_mincrop_216x122_b3535db83dc50e27c1bb1392364c95a2.jpg?key=b79e47" alt="Andreas Scheuer (CSU), Bundesminister für Verkehr und digitale Infrastruktur, nimmt an der Sitzung des Bundestages während der Debatte zum Bundeshaushalt 2021 teil. (picture alliance/dpa/Kay Nietfeld)" title="Andreas Scheuer (CSU), Bundesminister für Verkehr und digitale Infrastruktur, nimmt an der Sitzung des Bundestages während der Debatte zum Bundeshaushalt 2021 teil. (picture alliance/dpa/Kay Nietfeld)"/>
+      </a>
+      <p>
+        <a href="wirtschafts-presseschau.2863.de.html">In den Wirtschaftskommentaren geht es um die staatlichen Millionenhilfen für Galeria Karstadt Kaufhof und um die zweite Befragung von Bundesverkehrsminister Scheuer im Maut-Untersuchungsaussschuss.</a>
+      </p>
+    </article>
+    <article class="dlfn-presse-artikel">
+      <header>
+        <h3>
+          <a href="internationale-presseschau.2860.de.html"><span class="overline">29. Januar 2021</span>Internationale Presseschau</a>
+        </h3>
+      </header>
+      <a href="internationale-presseschau.2860.de.html">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/d/d6c90ba5418335bea40ea73e868c4fadv1_mincrop_216x122_b3535db83dc50e27c1bb1392364c95a2.jpg?key=de5fb1" alt="EU-Kommissionschefin Ursula von der Leyen bei einer Konferenz zum Coronavirus in Brüssel am 22.01.2021 (dpa / XinHua / European Union)" title="EU-Kommissionschefin Ursula von der Leyen bei einer Konferenz zum Coronavirus in Brüssel am 22.01.2021 (dpa / XinHua / European Union)"/>
+      </a>
+      <p>
+        <a href="internationale-presseschau.2860.de.html">Kommentiert werden das Abtreibungsrecht in Polen, die Asylpolitik in Österreich und das Urteil im Mordfall Lübcke. Im Mittelpunkt steht jedoch der Streit mit dem Pharma-Unternehmen Astrazeneca über die Lieferung von Impfstoffen.</a>
+      </p>
+    </article>
+    <article class="dlfn-presse-artikel">
+      <header>
+        <h3>
+          <a href="presseschau-aus-deutschen-zeitungen.2287.de.html"><span class="overline">29. Januar 2021</span>Presseschau</a>
+        </h3>
+      </header>
+      <a href="presseschau-aus-deutschen-zeitungen.2287.de.html">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/9/96ef6425da9e265f0db7ebbc3229648fv1_mincrop_216x122_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4c6249" alt="Schwarz-weiß-Foto von Walter Lübcke bei seiner Beerdigung (picture alliance / ASSOCIATED PRESS | Swen Pfoertner)" title="Schwarz-weiß-Foto von Walter Lübcke bei seiner Beerdigung (picture alliance / ASSOCIATED PRESS | Swen Pfoertner)"/>
+      </a>
+      <p>
+        <a href="presseschau-aus-deutschen-zeitungen.2287.de.html">In den Zeitungskommentaren gibt es heute zwei große Themen: den Streit um die Impflieferungen an die EU-Staaten und das Urteil im Prozess um den Mord am Kasseler Regierungspräsidenten Lübcke.</a>
+      </p>
+    </article>
+    <article class="dlfn-presse-artikel">
+      <header>
+        <h3>
+          <a href="blick-in-die-zeitungen-von-morgen.2862.de.html"><span class="overline">28. Januar 2021</span>Presseschau</a>
+        </h3>
+      </header>
+      <a href="blick-in-die-zeitungen-von-morgen.2862.de.html">
+        <img src="https://www.deutschlandfunk.de/media/thumbs/b/bc9626c48e38f56afd0b746fc519cac0v1_mincrop_216x122_b3535db83dc50e27c1bb1392364c95a2.jpg?key=d8ee78" alt="Mit Schildern und Plakaten erinnern Demonstranten vor dem Landgericht an das Schicksal des ermordeten Kasseler Regierungspräsidenten Lübcke (picture alliance/dpa/Boris Roessler)" title="Mit Schildern und Plakaten erinnern Demonstranten vor dem Landgericht an das Schicksal des ermordeten Kasseler Regierungspräsidenten Lübcke (picture alliance/dpa/Boris Roessler)"/>
+      </a>
+      <p>
+        <a href="blick-in-die-zeitungen-von-morgen.2862.de.html">In den Zeitungskommentaren gibt es zwei große Themen: den Streit um die Impflieferungen an die EU-Staaten und das Urteil im Prozess um den Mord am Kasseler Regierungspräsidenten Lübcke.</a>
+      </p>
+    </article>
+  </div>
+</section>
+</section><section><div class="dlfn-infobar"><div class="dlfn-wetter"><h2><a href="https://www.deutschlandradio.de/wetter.268.de.html">Wetter</a></h2>
+
+
+
+
+<Richtext>
+  <p>
+    <img src="https://www.deutschlandradio.de/media/files/wetter/Deutschlandkarte.jpg" width="100%"/>
+  </p>
+</Richtext>
+</div><div class="dlfn-nleicht"><h2>Nachrichtenleicht</h2><a href="https://www.nachrichtenleicht.de/startseite.1899.de.html" target="_self">
+  <img src="logo-von-nachrichten-leicht.media.7323c733f72a7bce7c2107cc773eaddfv3.png" width="100%" alt="Logo von Nachrichten leicht (Deutschlandfunk)" title="Logo von Nachrichten leicht (Deutschlandfunk)"/>
+</a><article class="nachrichten">
+  <h3>
+    <a href="https://www.nachrichtenleicht.de/nachrichten.2005.de.html"><span class="overline">Nachrichten</span> Corona-Zahlen sinken</a>
+  </h3>
+</article><article class="kultur">
+  <h3>
+    <a href="https://www.nachrichtenleicht.de/kultur.2006.de.html"><span class="overline">Kultur</span> Kritik an Club-House-App</a>
+  </h3>
+</article><article class="vermischtes">
+  <h3>
+    <a href="https://www.nachrichtenleicht.de/vermischtes.2007.de.html"><span class="overline">Vermischtes</span> Krawalle gegen Corona-Regeln</a>
+  </h3>
+</article><article class="sport">
+  <h3>
+    <a href="https://www.nachrichtenleicht.de/sport.2004.de.html"><span class="overline">Sport</span> Aus für deutsche Handballer</a>
+  </h3>
+</article>
+</div><div class="dlfn-archiv"><h2><a href="die-nachrichten-wochenueberblick.1724.de.html">Archiv</a></h2>
+
+
+
+
+
+<ul xmlns:str="http://exslt.org/strings">
+  <li>
+    <a href="die-nachrichten-wochenueberblick.1724.de.html" target="_self" title="Wochenüberblick">Wochenüberblick</a>
+  </li>
+  <li>
+    <a href="die-nachrichten-nachlesen.1794.de.html" target="_self" title="Nachrichten zum Nachlesen">Nachrichten zum Nachlesen</a>
+  </li>
+  <li>
+    <a href="#" target="_self" onclick="javascript:$(window).mkdraod_interface('openAODwithStream',$(window).mkdraod_interface('consts').stream.MKDRAOD_STREAM_DEUTSCHLANDFUNK,{launchMode:$(window).mkdraod_interface('consts').mode.MKDRAOD_MODE_SUCHE,launchModeState:{suche:{searchTerm:'nachrichten'}}});return false;" title="Nachrichten zum Nachhören">Nachrichten zum Nachhören</a>
+  </li>
+  <li>
+    <a href="die-nachrichten-barrierefrei.1793.de.html" target="_self" title="Nachrichten barrierefrei">Nachrichten barrierefrei</a>
+  </li>
+</ul>
+</div></div></section></div><div id="ati-data" style="display:none;" data-pageId="" data-update="202101290000" data-name="Die+Nachrichten" data-chapter1="DLF24" data-chapter2="Die+Nachrichten" data-level2="25" data-custom--typ="andere" data-custom--page_name="Die+Nachrichten" data-custom--category1="25" data-custom--pub_datum="2021-01-29" data-custom--site_version="desktop"> </div><div id="ivw-data" style="display:none;" data-st="dradio" data-cp="100" data-sv="ke" data-co="www.deutschlandradio.de%2FDeutschlandfunk"> </div>
+</div></div><footer><nav class="sub-nav mobile">            <ul class="dlf-subnavigation">
+              <li><a href="https://www.deutschlandradio.de/">Deutschlandradio</a></li>
+              <li><a href="https://www.deutschlandfunk.de/">Dlf</a></li>
+              <li><a href="https://www.deutschlandfunkkultur.de/">Dlf Kultur</a></li>
+              <li><a href="http://www.deutschlandfunknova.de/">Dlf Nova</a></li>
+              <li><a href="/die-nachrichten-wochenueberblick.1724.de.html">Archiv</a></li>
+              <li>
+                <a href="/die-nachrichten.353.de.rss">RSS</a>
+              </li>
+              <li>
+                <a href="/podcast-nachrichten.1257.de.podcast.xml">Podcasts</a>
+              </li>
+              <li class="fb">
+                <a href="http://www.facebook.com/deutschlandfunk" target="_blank"></a>
+              </li>
+              <li class="tw">
+                <a href="http://twitter.com/dlfnachrichten" target="_blank"></a>
+              </li>
+              <li class="in">
+                <a href="http://instagram.com/deutschlandfunk/" target="_blank"></a>
+              </li>
+            </ul></nav><nav>            <h3><a href="#">Deutschlandradio © 2009-2021</a></h3>
+            <ul class="dlf-footermenu">
+              <li>
+                  <a href="https://www.deutschlandradio.de/">Deutschlandradio</a>
+              </li>
+              <li>
+                  <a href="https://www.deutschlandradio.de/datenschutz.1828.de.html">Datenschutz</a>
+              </li>
+              <li>
+                  <a href="https://www.deutschlandradio.de/hilfe.215.de.html">Hilfe</a>
+              </li>
+              <li>
+                  <a href="https://www.deutschlandradio.de/impressum.223.de.html">Impressum</a>
+              </li>
+              <li>
+                  <a href="https://www.deutschlandradio.de/kontakt.359.de.html">Kontakt</a>
+              </li>
+              <li>
+                  <a href="https://www.deutschlandradio.de/presse.2079.de.html">Presse</a>
+              </li>
+            </ul>
+            <ul class="dlf-footermenu">
+                <li class="footer-title">
+                    Partner
+                </li>
+                <li>
+                    <a href="http://www.ard.de/">ARD</a>
+                </li>
+                <li>
+                    <a href="http://www.zdf.de/">ZDF</a>
+                </li>
+                <li>
+                    <a href="http://www.phoenix.de/">Phoenix</a>
+                </li>
+                <li>
+                    <a href="http://www.arte.tv/">arte</a>
+                </li>
+                <li>
+                    <a href="https://www.deutschlandradio.de/chronik-der-mauer.244.de.html">Chronik der Mauer</a>
+                </li>
+            </ul></nav></footer><script type="text/javascript">
+var page_mapping = Array();
+page_mapping[1818] = 2852;
+page_mapping[447] = 1939;
+</script></div></body></html>

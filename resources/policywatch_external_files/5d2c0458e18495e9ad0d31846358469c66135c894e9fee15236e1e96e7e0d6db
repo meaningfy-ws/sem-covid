@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="https://techchill.co/wp-content/themes/techchill2020/assets/images/icons/techchill-blue-icon.png" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Source+Sans+Pro" rel="stylesheet">
+
+    <title>HackForce hackathon solutions are already being implemented - TechChill</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The first virtual hackathon in Latvia HackForce ended with LIVE pitches of all 28 hackathon ideas aimed to find solutions for the crisis caused by coronavirus. Thanks to the high interest, teams hard work and potential, the initiative gained huge interest by the public and media."/>
+<link rel="canonical" href="https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="HackForce hackathon solutions are already being implemented - TechChill" />
+<meta property="og:description" content="The first virtual hackathon in Latvia HackForce ended with LIVE pitches of all 28 hackathon ideas aimed to find solutions for the crisis caused by coronavirus. Thanks to the high interest, teams hard work and potential, the initiative gained huge interest by the public and media." />
+<meta property="og:url" content="https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/" />
+<meta property="og:site_name" content="TechChill" />
+<meta property="article:section" content="Startups" />
+<meta property="article:published_time" content="2020-03-20T15:47:21+02:00" />
+<meta property="article:modified_time" content="2020-11-02T09:33:04+02:00" />
+<meta property="og:updated_time" content="2020-11-02T09:33:04+02:00" />
+<meta property="og:image" content="https://techchill.co/wp-content/uploads/2020/03/89596738_1845201762277421_9197993822427021312_n.jpg" />
+<meta property="og:image:secure_url" content="https://techchill.co/wp-content/uploads/2020/03/89596738_1845201762277421_9197993822427021312_n.jpg" />
+<meta property="og:image:width" content="960" />
+<meta property="og:image:height" content="540" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="The first virtual hackathon in Latvia HackForce ended with LIVE pitches of all 28 hackathon ideas aimed to find solutions for the crisis caused by coronavirus. Thanks to the high interest, teams hard work and potential, the initiative gained huge interest by the public and media." />
+<meta name="twitter:title" content="HackForce hackathon solutions are already being implemented - TechChill" />
+<meta name="twitter:image" content="https://techchill.co/wp-content/uploads/2020/03/89596738_1845201762277421_9197993822427021312_n.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//storage.googleapis.com' />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="TechChill &raquo; Feed" href="https://techchill.co/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TechChill &raquo; Comments Feed" href="https://techchill.co/comments/feed/" />
+<link rel='stylesheet' id='mailigen_css-css'  href='https://techchill.co/wp-content/plugins/mailigen-widget/css/mailigen.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://techchill.co/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='talque-view-css'  href='https://storage.googleapis.com/assets.talque.com/plugin/view/be6MLSG7AkHAFXLVRaM/app.css?ver=2.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-style-css'  href='https://techchill.co/wp-content/plugins/wc-gallery/includes/css/style.css?ver=1.65' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-popup-style-css'  href='https://techchill.co/wp-content/plugins/wc-gallery/includes/css/magnific-popup.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-flexslider-style-css'  href='https://techchill.co/wp-content/plugins/wc-gallery/includes/vendors/flexslider/flexslider.css?ver=2.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-owlcarousel-style-css'  href='https://techchill.co/wp-content/plugins/wc-gallery/includes/vendors/owlcarousel/assets/owl.carousel.css?ver=2.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-owlcarousel-theme-style-css'  href='https://techchill.co/wp-content/plugins/wc-gallery/includes/vendors/owlcarousel/assets/owl.theme.default.css?ver=2.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woofcicons-css'  href='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/css/woofcicons.css?ver=1.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woo-floating-cart-css'  href='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/css/woo-floating-cart.css?ver=1.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='magenest_ticket-css'  href='https://techchill.co/wp-content/plugins/woocommerce-event-ticket/assets/css/book.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='swedbankv2-css'  href='https://techchill.co/wp-content/plugins/woocommerce-gateway-swedbank-v2/css/swedbank_plugin.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://techchill.co/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.4.4' type='text/css' media='all' />
+<style id='woocommerce-layout-inline-css' type='text/css'>
+
+	.infinite-scroll .woocommerce-pagination {
+		display: none;
+	}
+</style>
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://techchill.co/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.4.4' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://techchill.co/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.4.4' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='fancybox-css'  href='https://techchill.co/wp-content/themes/techchill2020/assets/css/jquery.fancybox.css?ver=1.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='default-css-css'  href='https://techchill.co/wp-content/themes/techchill2020/assets/css/style.css?ver=868' type='text/css' media='all' />
+<link rel='stylesheet' id='wcrp_jqueryui-css'  href='https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='kirki_google_fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700%2Cregular%2C600%2C600italic&#038;subset=latin-ext&#038;ver=3.0.15' type='text/css' media='all' />
+<link rel='stylesheet' id='kirki-styles-woofc-css'  href='https://techchill.co/wp-content/plugins/woo-floating-cart/includes/kirki/assets/css/kirki-styles.css?ver=3.0.15' type='text/css' media='all' />
+<style id='kirki-styles-woofc-inline-css' type='text/css'>
+.woofc-inner{margin-left:20px;margin-right:20px;max-width:calc(100vw - (20px * 2));margin-top:20px;margin-bottom:20px;max-height:calc(100vh - (20px * 2));width:440px;height:400px;}.admin-bar .woofc-inner{max-height:calc(100vh - ((20px * 2)) - 46px);}.woofc-inner .woofc-header{background:#ffffff;border-color:#e6e6e6;-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}.woofc-inner .woofc-wrapper, .woofc-trigger{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}.woofc-cart-open.woofc-pos-bottom-right .woofc-trigger,.woofc-cart-open.woofc-pos-top-right .woofc-trigger,.woofc-pos-bottom-right .woofc-inner .woofc-body,.woofc-pos-top-right .woofc-inner .woofc-body{-webkit-border-radius:0 0 6px 0;-moz-border-radius:0 0 6px 0;border-radius:0 0 6px 0;}.woofc-cart-open.woofc-pos-bottom-left .woofc-trigger,.woofc-cart-open.woofc-pos-top-left .woofc-trigger,.woofc-pos-bottom-left .woofc-inner .woofc-body,.woofc-pos-top-left .woofc-inner .woofc-body{-webkit-border-radius:0 0 0 6px;-moz-border-radius:0 0 0 6px;border-radius:0 0 0 6px;}.woofc-inner .woofc-footer{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}.woofc-cart-open .woofc-inner .woofc-footer{-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;}.woofc-spinner-chasing-dots .woofc-spinner-child,.woofc-spinner-circle .woofc-spinner-child:before,.woofc-spinner-cube-grid .woofc-spinner-cube,.woofc-spinner-double-bounce .woofc-spinner-child,.woofc-spinner-fading-circle .woofc-spinner-circle:before,.woofc-spinner-folding-cube .woofc-spinner-cube:before,.woofc-spinner-rotating-plane,.woofc-spinner-spinner-pulse,.woofc-spinner-three-bounce .woofc-spinner-child,.woofc-spinner-wandering-cubes .woofc-spinner-cube,.woofc-spinner-wave .woofc-spinner-rect{background-color:#2c97de;}.woofc-spinner-loading-text{color:#2c97de;}.woofc-spinner-wrap{background-color:rgba(255,255,255,0.5);}.woofc-trigger .woofc-count{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:15px;font-weight:700;font-style:normal;background:#e94b35;color:#fff;}.woofc-inner .woofc-title{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:16px;font-weight:700;font-style:normal;letter-spacing:1.4px;text-transform:uppercase;color:#0a0a0a;}.woofc-inner .woofc-undo{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:10px;font-weight:700;font-style:normal;letter-spacing:1.4px;text-transform:uppercase;color:#808b97;}.woofc-inner .woofc-cart-error{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:10px;font-weight:700;font-style:normal;letter-spacing:1.4px;text-transform:uppercase;color:#dd3333;}.woofc-empty .woofc-inner .woofc-no-product{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;font-style:normal;letter-spacing:1.4px;text-align:left;text-transform:none;}.woofc-inner .woofc-product-variations dl dt{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:10px;font-weight:600;font-style:normal;text-transform:capitalize;}.woofc-inner .woofc-product-variations dl dd{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-style:normal;text-transform:capitalize;}.woofc-trigger.woofc-icontype-image .woofc-trigger-cart-icon{background-image:url("https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/img/open.svg");}.woofc-trigger.woofc-icontype-image .woofc-trigger-close-icon{background-image:url("https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/img/close.svg");}.woofc-trigger{background:#ffffff;}.woofc-no-touchevents .woofc:not(.woofc-cart-open) .woofc-trigger:hover,.woofc-touchevents .woofc:not(.woofc-cart-open) .woofc-trigger:focus{background:#ffffff;}.woofc-cart-open .woofc-trigger{background:#ffffff;}.woofc-inner .woofc-undo a{color:#2b3e51;}.woofc-no-touchevents .woofc-inner .woofc-undo a:hover,.woofc-touchevents .woofc-inner .woofc-undo a:focus{color:#2b3e51;}.woofc-inner .woofc-body{color:#666666;}.woofc-inner .woofc-product-title > span,.woofc-inner .woofc-product-title a{color:#2b3e51;}.woofc-no-touchevents .woofc-inner .woofc-product-title a:hover,.woofc-touchevents .woofc-inner .woofc-product-title a:focus{color:#2c97de;}.woofc-inner .woofc-delete-item{color:#2b3e51;}.woofc-no-touchevents .woofc-inner .woofc-delete-item:hover,.woofc-touchevents .woofc-inner .woofc-delete-item:focus{color:#2c97de;}.woofc-inner .woofc-quantity .woofc-quantity-button{color:#808B94;}.woofc-no-touchevents .woofc-inner .woofc-quantity .woofc-quantity-button:hover,.woofc-touchevents .woofc-inner .woofc-quantity .woofc-quantity-button:focus{color:#2c97de;}.woofc-inner a.woofc-checkout{background:#e7085e;}.woofc-no-touchevents .woofc-inner a.woofc-checkout:hover,.woofc-touchevents .woofc-inner a.woofc-checkout:focus{background:#e7085e;}.woofc-cart-open .woofc-inner a.woofc-checkout{color:#ffffff;}.woofc-no-touchevents .woofc-cart-open .woofc-inner a.woofc-checkout:hover,.woofc-touchevents .woofc-cart-open .woofc-inner a.woofc-checkout:focus{color:#ffffff;}@media (min-width: 783px){.admin-bar .woofc-inner{max-height:calc(100vh - ((20px * 2)) - 32px);}}@media (min-width: 480px){.woofc-inner .woofc-price,.woofc-inner .woofc-product-title{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:18px;font-weight:700;font-style:normal;text-transform:capitalize;}.woofc-inner .woofc-actions{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;font-style:normal;text-transform:capitalize;}.woofc-inner .woofc-quantity input{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;font-style:normal;letter-spacing:1.2px;}.woofc-inner a.woofc-checkout{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:24px;font-weight:600;font-style:italic;text-transform:none;}.woofc-inner .woofc-quantity .woofc-quantity-button{font-size:10px;}}@media (max-width: 479px){.woofc-inner .woofc-price,.woofc-inner .woofc-product-title{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:18px;font-weight:700;font-style:normal;text-transform:capitalize;}.woofc-inner .woofc-actions{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;font-style:normal;text-transform:capitalize;}.woofc-inner .woofc-quantity input{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:calc(16px * 0.85);font-weight:400;font-style:normal;letter-spacing:1.2px;}.woofc-inner a.woofc-checkout{font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;font-size:24px;font-weight:600;font-style:italic;text-transform:none;}.woofc-inner .woofc-quantity .woofc-quantity-button{font-size:calc(10px * 0.85);}}
+</style>
+<script type='text/javascript' src='https://techchill.co/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/mailigen-widget/js/mailigen.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://storage.googleapis.com/assets.talque.com/plugin/view/be6MLSG7AkHAFXLVRaM/app.js?ver=2.0.2'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_ded8444094450bd817b7d734dc65b095","fragment_name":"wc_fragments_ded8444094450bd817b7d734dc65b095"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//techchill.co/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.9.7'></script>
+<script type='text/javascript'>
+		jQuery( 'body' ).bind( 'wc_fragments_refreshed', function() {
+			jQuery( 'body' ).trigger( 'jetpack-lazy-images-load' );
+		} );
+	
+</script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/vendors/jquery.ajaxqueue-min.js?ver=1.1.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/vendors/jquery.touch-min.js?ver=1.1.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/vendors/js.cookie-min.js?ver=1.1.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/vendors/TweenMax-min.js?ver=1.1.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/vendors/jquery.serializejson-min.js?ver=1.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WOOFC = {"ajaxurl":"https:\/\/techchill.co\/wp-admin\/admin-ajax.php","litemode":"","lang":{"wait":"Please wait","loading":"Loading","min_qty_required":"Min quantity required","max_stock_reached":"Stock limit reached"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woo-floating-cart/public/assets/js/woo-floating-cart-min.js?ver=1.1.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce-event-ticket/js/chain.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce-event-ticket/js/pdfchain.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce-event-ticket/js/setting-email-template.js?ver=4.9.7'></script>
+<link rel='https://api.w.org/' href='https://techchill.co/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://techchill.co/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://techchill.co/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.7" />
+<meta name="generator" content="WooCommerce 3.4.4" />
+<link rel='shortlink' href='https://techchill.co/?p=8224' />
+<link rel="alternate" type="application/json+oembed" href="https://techchill.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftechchill.co%2Fhackforce-hackathon-solutions-are-already-being-implemented%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://techchill.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftechchill.co%2Fhackforce-hackathon-solutions-are-already-being-implemented%2F&#038;format=xml" />
+
+<!-- WP Affiliate plugin v6.0.5 - https://www.tipsandtricks-hq.com/wordpress-affiliate-platform-plugin-simple-affiliate-program-for-wordpress-blogsite-1474 -->
+<link type="text/css" rel="stylesheet" href="https://techchill.co/wp-content/plugins/wp-affiliate-platform/affiliate_platform_style.css" />
+	<style>
+		.myprefix-maybe-sticky {
+		    position: fixed !important;
+		    top: -100px;
+		    width: 100%;
+		    z-index: 999;
+		    opacity: 0;
+		    background: #FFF;
+		    transition: 0.6s all;
+				box-shadow: 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
+		}
+
+		.myprefix-show {
+		    top: 0;
+		    opacity: 1;
+		}
+	</style>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+<style type="text/css" id="breadcrumb-trail-css">.breadcrumbs .trail-browse,.breadcrumbs .trail-items,.breadcrumbs .trail-items li {display: inline-block;margin:0;padding: 0;border:none;background:transparent;text-indent: 0;}.breadcrumbs .trail-browse {font-size: inherit;font-style:inherit;font-weight: inherit;color: inherit;}.breadcrumbs .trail-items {list-style: none;}.trail-items li::after {content: "\002F";padding: 0 0.5em;}.trail-items li:last-of-type::after {display: none;}</style>
+		<style type="text/css" id="wp-custom-css">
+			.the-icon img {
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
+}
+
+.the-speaker-image img {
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
+}		</style>
+	    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNK97ML" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<!-- ti.to -->
+	<script src="https://js.tito.io/v1" async></script>
+	<link rel="stylesheet" type="text/css" href="https://css.tito.io/v1.1" />
+  
+            <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1890644427867352'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1890644427867352&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TNK97ML');</script>
+<!-- End Google Tag Manager -->    </head>
+
+    <body id="page" class="post-template-default single single-post postid-8224 single-format-standard login-view woocommerce-no-js">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNK97ML"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="hero-image-bg">
+        <header id="site-header" class="">
+            <div id="app" class="container">
+            <nav class="navbar navbar-expand-xl navbar-light bg-faded">
+                    <div>
+                        <a class="navbar-brand" href="https://techchill.co"><img src="https://techchill.co/wp-content/themes/techchill2020/assets/images/techchill-logo-green.svg" width="138" height="45"></a>
+                    </div>
+                    <div class="date-place hide-small">
+                        <div class="countdown">
+                            <div id="demo" style="display: inline-block;padding-top: 3px;"></div>
+                        </div>
+                        <script>
+                            var countDownDate = new Date("May 07, 2021 9:00:00").getTime();
+
+                            function setTimer() {
+                                var now = new Date().getTime();
+                                var distance = countDownDate - now;
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+                                + minutes + "M " + seconds + "S ";
+
+                                if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("demo").innerHTML = "BEGUN";
+                                }
+                            }
+
+                            setTimer();
+
+                            var x = setInterval(function() {
+                                setTimer();
+                            }, 1000);
+                        </script>
+                    </div>
+
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="btn-effect-white">
+                            <a class="btn-no-underline" href="#" >
+                                <div class="btn-navbar-outside-white">
+                                    <div class="btn-navbar-inside-white">
+                                        <svg class="toggle-border" width="40px" height="40px">
+                                            <path d="M2,2 L38,2 L38,38 L38,38 L2,38 L2,2"></path>
+                                        </svg>
+                                        <svg class="toggler-active" width="16px" height="16px" viewBox="0 0 16 16">
+                                            <defs>
+                                                <path d="M2,3 L14,3 L14,5 L2,5 L2,3 Z M2,7 L14,7 L14,9 L2,9 L2,7 Z M2,11 L14,11 L14,13 L2,13 L2,11 Z" id="path-1"></path>
+                                            </defs>
+                                            <g id="Icons/Hamburger" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <use id="Combined-Shape" fill="#00AEEF" xlink:href="#path-1"></use>
+                                                <g id="Colors/Green" mask="url(#mask-2)" fill="#00AEEF">
+                                                    <rect id="Rectangle-2-Copy-2" x="0" y="0" width="16" height="16"></rect>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <div class="opened-menu">
+                                            <svg width="11" height="11">
+                                                    <line x1="1" y1="10"
+                                                          x2="10" y2="1"
+                                                          stroke="#00AEEF"
+                                                          stroke-width="2"/>
+                                                    <line x1="1" y1="1"
+                                                          x2="10" y2="10"
+                                                          stroke="#00AEEF"
+                                                          stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </button>
+
+                    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <ul id="menu-menu-1" class="navbar-nav menu-ferdinand"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227 nav-item" menu__item><a title="News" href="https://techchill.co/news/" class="nav-link">News</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-8390 nav-item" menu__item><a title="Conference" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link menu__link" id="menu-item-dropdown-8390">Conference</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-8390" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8579 nav-item" menu__item><a title="2021" href="https://techchill.co/techchill2021/" class="dropdown-item">2021</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8391 nav-item" menu__item><a title="2020" href="https://techchill.co/techchill2020/" class="dropdown-item">2020</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8427 nav-item" menu__item><a title="2019" href="https://techchill.co/techchill2019/" class="dropdown-item">2019</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8452 nav-item" menu__item><a title="2018" href="https://techchill.co/techchill2018/" class="dropdown-item">2018</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8467 nav-item" menu__item><a title="2017" href="https://techchill.co/techchill2017/" class="dropdown-item">2017</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-8765 nav-item" menu__item><a title="Tickets" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link menu__link" id="menu-item-dropdown-8765">Tickets</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-8765" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8768 nav-item" menu__item><a title="Startups" href="https://techchill.co/startup/" class="dropdown-item">Startups</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8767 nav-item" menu__item><a title="Investors" href="https://techchill.co/investor/" class="dropdown-item">Investors</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8766 nav-item" menu__item><a title="General" href="https://techchill.co/general/" class="dropdown-item">General</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8359 nav-item" menu__item><a title="Activities" href="https://techchill.co/what-we-do/" class="nav-link">Activities</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-398 nav-item" menu__item><a title="About" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link menu__link" id="menu-item-dropdown-398">About</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-398" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4112 nav-item" menu__item><a title="About us" href="https://techchill.co/about-us/" class="dropdown-item">About us</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5509 nav-item" menu__item><a title="Team" href="https://techchill.co/team/" class="dropdown-item">Team</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8593 nav-item" menu__item><a title="Vacancies" href="https://techchill.co/joinus/" class="dropdown-item">Vacancies</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1504 nav-item" menu__item><a title="Community" href="https://techchill.co/community/" class="dropdown-item">Community</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8485 nav-item" menu__item><a title="Opportunities" href="https://techchill.co/opportunities/" class="dropdown-item">Opportunities</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2730 nav-item" menu__item><a title="Supporters" href="https://techchill.co/supporters/" class="dropdown-item">Supporters</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5433 nav-item" menu__item><a title="Sustainability Policy" href="https://techchill.co/sustainability-policy/" class="dropdown-item">Sustainability Policy</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7436 nav-item" menu__item><a title="Practical Information" href="https://techchill.co/practical-information/" class="dropdown-item">Practical Information</a></li>
+</ul>
+</li>
+</ul>
+                                                    <a class="nav-link account-link" href="https://techchill.co/my-account/">Login</a>
+                        
+                                            </div>
+                </nav>
+            </div>
+        </header>
+            <div class="container">
+            <div class="row">
+                <div class="single-top-container">
+                    <div class="big-banner-post">
+                        <div class="big-banner-title">
+                            <h2 class="page">HackForce hackathon solutions are already being implemented</h2>
+                            <div class="post-date-info">
+                                <div class="date">20 March 2020</div>
+                                <div class="dot"></div>
+                                <div class="cat">
+                                                                        <span><a href="https://techchill.co/category/startups/">Startups</a></span>
+                                </div>
+                            </div>
+
+                            <div class="hide-desktop">
+                                <div class="soc-title">Share</div>
+                                <div class="btn-effect-white" style="display: inline-block;margin-right: 5px">
+                                    <a class="btn-no-underline" target="_blank" href="https://www.facebook.com/sharer?u=https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/&t=HackForce hackathon solutions are already being implemented">
+                                        <div class="btn-navbar-outside-white">
+                                           <div class="btn-navbar-inside-white"><i class="fab fa-facebook-f" style="margin-left: 3px;"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="btn-effect-white" style="display: inline-block;margin-right: 5px">
+                                    <a class="btn-no-underline" target="_blank" href="http://twitter.com/intent/tweet?text=Currently reading HackForce hackathon solutions are already being implemented&amp;url=https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/">
+                                        <div class="btn-navbar-outside-white">
+                                           <div class="btn-navbar-inside-white"><i class="fab fa-twitter" style="margin-left: 3px;"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="btn-effect-white" style="display: inline-block;margin-right: 5px">
+                                    <a class="btn-no-underline" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/&title=HackForce hackathon solutions are already being implemented&summary=&source=TechChill">
+                                        <div class="btn-navbar-outside-white">
+                                           <div class="btn-navbar-inside-white"><i class="fab fa-linkedin-in" style="margin-left: 3px;"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="btn-effect-white" style="display: inline-block;margin-right: 5px">
+                                    <a class="btn-no-underline" target="_blank" href="https://www.facebook.com/sharer?u=https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/&t=HackForce hackathon solutions are already being implemented">
+                                        <div class="btn-navbar-outside-white">
+                                           <div class="btn-navbar-inside-white"><i class="fas fa-link" style="margin-left: 3px;"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="single-image-container">
+                                    <div class="">
+                        <img class="img-fluid image-cut-post" src="https://techchill.co/wp-content/uploads/2020/03/89596738_1845201762277421_9197993822427021312_n-920x614.jpg">
+                    </div>
+                            </div>
+        </div>
+        <div class="row content-container">
+            <div id="share-order" class="share-list">
+                <div class="hide-large">
+                    <div class="share">SHARE</div>
+                        <div class="btn-effect-black" style="margin-bottom: 10px;">
+                            <a class="btn-no-underline" target="_blank" href="https://www.facebook.com/sharer?u=https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/&t=HackForce hackathon solutions are already being implemented">
+                                <div class="btn-cut-soc-black">
+                                    <div class="btn-cut-inside-black"><i class="fab fa-facebook-f"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn-effect-black" style="margin-bottom: 10px;">
+                            <a class="btn-no-underline" target="_blank" href="http://twitter.com/intent/tweet?text=Currently reading HackForce hackathon solutions are already being implemented&amp;url=https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/">
+                                <div class="btn-cut-soc-black">
+                                    <div class="btn-cut-inside-black"><i class="fab fa-twitter"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn-effect-black" style="margin-bottom: 10px;">
+                            <a class="btn-no-underline" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://techchill.co/hackforce-hackathon-solutions-are-already-being-implemented/&title=HackForce hackathon solutions are already being implemented&summary=&source=TechChill">
+                                <div class="btn-cut-soc-black">
+                                    <div class="btn-cut-inside-black"><i class="fab fa-linkedin-in"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn-effect-black" style="margin-bottom: 10px;">
+                            <a class="btn-no-underline" href="#">
+                                <div class="btn-cut-soc-black">
+                                    <div class="btn-cut-inside-black"><i class="fas fa-link"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="blog-post-single">
+                
+                <h5><b><span style="font-size: 12pt;">The first virtual hackathon in Latvia HackForce ended with LIVE pitches of all 28 hackathon ideas aimed to find solutions for the crisis caused by coronavirus. Thanks to the high interest, teams hard work and potential, the initiative gained huge interest by the public and media. In 48 hours over 850 people from 25 countries joined the public Slack, 70 mentors helped the team succeed, and at the end, live-stream has been viewed already by over 15 000 people. </span></b><b><span style="font-size: 12pt;">The President of Latvia Egils Levits also joined the live-stream to congratulate and thank the teams. </span></b></h5>
+<p>Top teams were chosen by the jury with professionals from the startup community, the government, investors, and the health industry. Jury who chose the top teams were: Edgars Labsvīrs, Director at National Health Services, Olga Barreto Goncalves, Chief Startup Instigator at Investment and Development Agency of Latvia, Cristobal Alonso, CEO at  Startup Wise Guys, Andris Berzins, Managing Partner at Change Ventures, Solvita Kostjukova, CEO at ALINA and Reinis Znotiņš, Deputy Minister at Ministry of Education.</p>
+<p>We have gathered information about the top five teams, who are already implementing their ideas thanks to the huge support from the partners, community and everyone involved:</p>
+<h3>1st place: <a href="https://www.youtube.com/watch?v=aq2dRraGyVg"><b>Face Shields</b></a></h3>
+<p><em><strong>3D printed face protector for medical professionals</strong></em></p>
+<p><span style="font-weight: 400;">The team:  Didzis Dejus, Jānis Jātnieks, Einārs Edziņš, Fricis Pirtnieks, Maruta Skudra-Rumba, Sofija Jakobsone, Elvīra Krēķe, PSKUS doctor Armands Buļs and others.</span></p>
+<p><img class="alignnone size-medium wp-image-8231" src="https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-300x300.jpg" alt="" width="300" height="300" srcset="https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-300x300.jpg 300w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-150x150.jpg 150w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-768x768.jpg 768w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-1024x1024.jpg 1024w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-48x48.jpg 48w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-250x250.jpg 250w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-550x550.jpg 550w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-800x800.jpg 800w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-180x180.jpg 180w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-500x500.jpg 500w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-600x600.jpg 600w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji-100x100.jpg 100w, https://techchill.co/wp-content/uploads/2020/03/komandas-selfiji.jpg 1200w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><span style="font-weight: 400;">In consultation with the PSKUS specialists at Pauls Stradins Clinical University Hospital, the first prototypes of facial protectors were produced, which were presented by the team to the leading Latvian epidemiologists on day 2. </span><span style="font-weight: 400;">Today, the team is in contact with doctors and hospitals, manufacturers and representatives of the Ministry of Health, who are very interested in using the solution and plan to introduce them.</span></p>
+<p><span style="font-weight: 400;">For further development of the project, the team was rewarded with EUR 12 000, of which EUR 10 000 was allocated by the Ministry of Economy in cooperation with the Latvian Investment and Development Agency, EUR 1 000 &#8211; Tet and EUR 1 000 &#8211; Ubiquiti Riga.</span></p>
+<h3>2nd place: <a href="https://youtu.be/HsGBqwpC3ic"><b>Emergency Ventilator</b></a></h3>
+<p><em><strong>Emergency ventilators treating patients with short-term respiratory failure</strong></em></p>
+<p><span style="font-weight: 400;">The team:</span> <span style="font-weight: 400;">Einārs Deksnis</span><span style="font-weight: 400;">, </span><span style="font-weight: 400;">Guntis Kuļikovskis</span><span style="font-weight: 400;">,</span><span style="font-weight: 400;"> Davis Kuma</span><span style="font-weight: 400;">,</span><span style="font-weight: 400;"> Margarita Matulenko</span><span style="font-weight: 400;">, Aivars Ritovs, Ilmars Poikāns, Linda Lancere un Edgars Zvirgzdins.</span></p>
+<p><span style="font-weight: 400;">As part of the hackathon, the team worked on manufacture of artificial respiratory equipment that treats patients with short-term respiratory failure and is heavily needed to treat complications caused by COVID-19. </span><span style="font-weight: 400;">Within 48 hours, the first prototype of an artificial lung-venting machine was created. Currently, the team is actively consulting industry experts to make improvements and begin its testing.</span></p>
+<p><span style="font-weight: 400;">For further development of the project, the team was awarded €8 000, of which €7 000 was allocated by the Ministry of Economy in cooperation with the Latvian Investment and Development Agency and €1000 &#8211; Ubiquiti Riga.</span></p>
+<h3>3rd place: <a href="https://youtu.be/6phq89zEYZg"><b>Exonicus</b></a><b><br />
+</b></h3>
+<p><em><strong>Keeping safe medical personnel caring for COVID-19 patients</strong></em></p>
+<p><span style="font-weight: 400;">The team: Reinis Balmaks, Aija Vilde, Ieva Šlēziņa, Sandis Kondrats, Janis Kondrats, Paul Keire, Vilnis Kleper, Raimonds Udris, Natālija Prave Lukina, Silvija Pole, Andre Nitzschmann, Arnis Cirulis, Arvis Magone, Jānis Grinvalds un Liene Mingailīte. </span></p>
+<p><i><span style="font-weight: 400;">Exonicus </span></i><span style="font-weight: 400;">team is developing a computer and smart-device simulation program that provides training to medical personnel caring for COVID-19 patients.</span><span style="font-weight: 400;"> In cooperation with the University of Riga Stradins Medical Education and Technology Centre, Vidzeme University and Digital Health Cluster Latvia, </span><i><span style="font-weight: 400;"> Exonicus</span></i><span style="font-weight: 400;"> team is currently working on a video simulation programme for the development of a training scenario, which will be distributed immediately throughout Latvia through the Infectology and Disease Prevention and Control Centre.</span></p>
+<p><img class="alignnone size-medium wp-image-8230" src="https://techchill.co/wp-content/uploads/2020/03/HCS_media2-300x169.jpg" alt="" width="300" height="169" srcset="https://techchill.co/wp-content/uploads/2020/03/HCS_media2-300x169.jpg 300w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-768x432.jpg 768w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-1024x576.jpg 1024w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-250x141.jpg 250w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-550x309.jpg 550w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-800x450.jpg 800w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-320x180.jpg 320w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-533x300.jpg 533w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-889x500.jpg 889w, https://techchill.co/wp-content/uploads/2020/03/HCS_media2-600x338.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><span style="font-weight: 400;">For further development of the project, the team was rewarded with EUR 6 000, of which EUR 5 000 was allocated by the Ministry of Economics in cooperation with the Latvian Investment and Development Agency and EUR 1 000 &#8211; Swedbank Latvija.</span></p>
+<h3><b>4th place: <a href="http://youtu.be/MZytSKP0guA?hd=1">Flipful</a></b><b><br />
+</b></h3>
+<p><em><strong>Business rescue package to fight coronavirus fallout</strong></em></p>
+<p>The team: <span style="font-weight: 400;">Jānis Putniņš, Ivans Dorohovs, Darja Nipere, Viktors Saulītis.</span></p>
+<p><span style="font-weight: 400;">The Latvian government has promised to provide 75% of salary payments to employers affected by the consequences of the virus in order to avoid the liquidation of companies. Flipful&#8217;s team is developing a corporate support tool &#8211; a solution to idle payments management as a one-stop point to make processing easier for both the National Revenue Service and businesses, making it simple and understandable without additional administrative burden.</span></p>
+<p><span style="font-weight: 400;">For further development of the project, the team was rewarded with EUR 2 500, of which EUR 1 500 was allocated by the Ministry of Economics in cooperation with the Latvian Investment and Development Agency and EUR 1 000 &#8211; Swedbank Latvija.</span></p>
+<h3><b>5th plac: <a href="https://youtu.be/jKUObOdE26o">Paliec Mājās</a></b><b><br />
+</b></h3>
+<p><em><strong>A volunteer-based crisis communication hotline managing contactless delivery solutions for every age group.</strong></em></p>
+<p><span style="font-weight: 400;">The team: Mārtiņš Zeps, Inese Vaivare, Gustavs Upmanis, Maija Kale, Anete Agneta Krišjanova, Uldis Jansons, Daniel Zohar, Mairita Lūse, Arina Stivriņa.</span></p>
+<p><span style="font-weight: 400;"> “Stay Home”, in close cooperation with state and non-governmental organisations, has developed a hotline and an Internet platform for volunteers connecting those who need help with those who can provide it. The Facebook group of the “Stay Home” Voluntary Aid movement already has nearly a thousand members organizing to offer help. Anyone here can join the group:  </span><a href="https://www.facebook.com/groups/661487034599519/"><span style="font-weight: 400;">https://www.facebook.com/groups/661487034599519/</span></a></p>
+<p><span style="font-weight: 400;">For further development of the project, the team was awarded €6 500, of which €1 500 was awarded by the Economy Ministry in cooperation with the Latvian Investment and Development Agency, €3,000 &#8211; LMT, €1000 Ubiquiti Riga and €1000 &#8211; Swedbank Latvia.</span></p>
+<p><strong>Organisers:</strong></p>
+<p><i><span style="font-weight: 400;">HackForce </span></i><span style="font-weight: 400;">hackathon was created in 12 hours and organized by 16 individual volunteers from various fields </span><span style="font-weight: 400;">&#8211; Zane Bojāre, Uldis Žeidurs un Egita Poļanska (StartupWiseGuys), Madara Ermansone un Anna Marija Ķiesnere (TechChill), Līva Pērkone, Zane Grēta Grants, Laila Ratmane un Kristīne Šeiko (Helve), Edgars Zvirgzdiņš (et Sons), Kirils Solovjovs (Possible Security), Ieva Upeniece (Baltic SandBox), Katrīna Peipiņa un Olga Barretu Goncalves (LIAA), Elīna Lidere (LMT), Mārīte Aleksandra Silava (Swedbank) and Diāna Lāce (Startin.lv).</span></p>
+<p><img class="alignnone size-medium wp-image-8235" src="https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-300x135.png" alt="" width="300" height="135" srcset="https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-300x135.png 300w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-768x346.png 768w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-1024x461.png 1024w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-250x113.png 250w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-550x248.png 550w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-800x360.png 800w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-400x180.png 400w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-666x300.png 666w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-1110x500.png 1110w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-1100x500.png 1100w, https://techchill.co/wp-content/uploads/2020/03/HACKFORCE-POWER-600x270.png 600w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+
+                <div class="back-btn">
+                                            <div class="btn-effect-black">
+                            <a class="btn-no-underline" href="https://techchill.co/news/" target="">
+                                <div class="btn-cut-outside-black backtonews-btn">
+                                   <div class="btn-cut-inside-black">BACK TO NEWS LIST</div>
+                                </div>
+                            </a>
+                        </div>
+                                    </div>
+
+                <div class="post-tags">
+                    <h4>Tags</h4>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="related-blog-content our-sponsors-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="speaker-big-title">Like what you read? Here's more:</h3>
+                </div>
+            </div>
+                    </div>
+    </div>
+
+    <footer style="">
+        <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="newsletter">
+                                <div class="newsletter-text">
+                                Subscribe to our newsletter:
+                                </div>
+
+                                <div class="subscribe-form-box" style="display:inline-block">
+                                    
+
+<li id="mailigen_widget-2" class="widget-container MailigenWidget"> <form id='mg-widget-form' class='mg-widget-form' method='post' action=''><div class="mg-error-box">&nbsp;</div><div class='mailigen-form' style='display:inline-block;'><div class='mc4wp-form-fields' style='display:inline-block'><input id='EMAIL' type='text' name='EMAIL' maxlength='150' placeholder='Your email address' class=' EMAIL' /></div></div><div class='mc4wp-form-fields' style='display:inline-block;'><button type='submit' name='mailigen_submit' class='mailigen-submit'>SUBSCRIBE<span class='mg_waiting'></span></button></div><input type='hidden' name='action' value='mailigen_subscribe'><input type='hidden' name='mailigen_widget_form_id' value='mailigen_widget-2'><input type='hidden' name='mailigen_widget_form_number' value='2'></form></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-general">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 hide-tablet">
+                            <div class="footer-col">
+                                <h4><a href="https://techchill.co/news/">News</a></h4>
+<p><!--
+
+
+<h4>Why attend</h4>
+
+
+<a href="https://techchill.co/general/">General</a>
+
+<a href="https://techchill.co/startup/">Startups</a>
+
+<a href="https://techchill.co/investor/">Investors</a>
+
+<a href="https://techchill.co/executive/">Executives</a>
+
+<a href="https://techchill.co/media-accreditation/">Media</a>
+
+<a href="https://techchill.co/academics-students/">Academics &amp; students</a>
+--></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 hide-tablet">
+                            <div class="footer-col">
+                                <h4>About</h4>
+<p><a href="https://techchill.co/about-us/">About us</a></p>
+<p><a href="https://techchill.co/community/">Community</a></p>
+<p><a href="https://techchill.co/practical-information/">Practical information</a></p>
+<p><a href="https://techchill.co/supporters/">Supporters</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 hide-tablet">
+                            <div class="footer-col">
+                                <h4>Legal</h4>
+<p><a href="http://techchill.co/privacy-policy/" rel="noopener">Privacy Policy</a></p>
+<p><a href="http://techchill.co/cookie-policy/" rel="noopener">Cookie Policy</a></p>
+<p><a href="http://techchill.co/terms-of-service-3/" rel="noopener">Terms Of Service</a></p>
+<div><img class="alignnone wp-image-1067" src="https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-300x91.png" alt="" width="105" height="32" srcset="https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-300x91.png 300w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-768x232.png 768w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-1024x309.png 1024w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-250x76.png 250w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-550x166.png 550w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-800x242.png 800w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-596x180.png 596w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-993x300.png 993w, https://techchill.co/wp-content/uploads/2018/08/visa_PNG33-600x181.png 600w" sizes="(max-width: 105px) 100vw, 105px" /></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 hide-tablet">
+                            <div class="footer-col">
+                                <p>TechChill Foundation</p>
+<p>Reg. Nr. 40008257917</p>
+<p>TechHub Riga</p>
+<p>Sporta 2, Riga LV-1013, Latvia</p>
+<p><a href="mailto:info@techchill.co">info@techchill.co</a></p>
+<p>&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 hide-tablet">
+                            <div class="footer-col">
+                                <h4><a href="https://drive.google.com/drive/folders/1VSYwKFk-5DrNVx3oZz1PMZ0ey_wNtPeO?usp=sharing" target="_blank" rel="noopener">Press Kit</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer-col">
+                                <div class="col-1-title">
+                                    <h4>Chill with us</h4>
+                                </div>
+
+                                    <div class="hide-desktop">
+                                        
+                                            
+                                                <div class="btn-effect-white" style="display: inline-block;margin-right: 10px">
+                                                    <a class="btn-no-underline" href="https://www.facebook.com/techchillHQ/" target="_blank">
+                                                        <div class="btn-navbar-outside-white">
+                                                           <div class="btn-navbar-inside-white"><i class="fab fa-facebook-f" style="margin-left: 3px;"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            
+                                            
+                                            
+                                                <div class="btn-effect-white" style="display: inline-block;margin-right: 10px">
+                                                    <a class="btn-no-underline" href="https://twitter.com/TechChill" target="_blank">
+                                                        <div class="btn-navbar-outside-white">
+                                                           <div class="btn-navbar-inside-white"><i class="fab fa-twitter" style="margin-left: 3px;"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            
+                                            
+                                            
+                                                <div class="btn-effect-white" style="display: inline-block;margin-right: 10px">
+                                                    <a class="btn-no-underline" href="https://www.linkedin.com/company/techchill/" target="_blank">
+                                                        <div class="btn-navbar-outside-white">
+                                                           <div class="btn-navbar-inside-white"><i class="fab fa-linkedin-in" style="margin-left: 3px;"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            
+                                            
+                                            
+                                                <div class="btn-effect-white" style="display: inline-block;margin-right: 10px">
+                                                    <a class="btn-no-underline" href="https://www.instagram.com/techchill/" target="_blank">
+                                                        <div class="btn-navbar-outside-white">
+                                                           <div class="btn-navbar-inside-white"><i class="fab fa-instagram" style="margin-left: 3px;"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            
+                                            
+                                            
+                                                <div class="btn-effect-white" style="display: inline-block;margin-right: 10px">
+                                                    <a class="btn-no-underline" href="https://www.youtube.com/channel/UCUxKGxYx9RMcF03gP-mUh2Q" target="_blank">
+                                                        <div class="btn-navbar-outside-white">
+                                                           <div class="btn-navbar-inside-white"><i class="fab fa-youtube" style="margin-left: 3px;"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            
+                                                                                </div>
+
+                                        
+                                            
+                                                <p class="hide-tablet"><a href="https://www.facebook.com/techchillHQ/" target="_blank"><i class="fab fa-facebook-f soc-icon"></i>Facebook</a></p>
+
+                                            
+                                            
+                                            
+                                                <p class="hide-tablet"><a href="https://twitter.com/TechChill" target="_blank"><i class="fab fa-twitter soc-icon"></i>Twitter</a></p>
+
+                                            
+                                            
+                                            
+                                                <p class="hide-tablet"><a href="https://www.linkedin.com/company/techchill/" target="_blank"><i class="fab fa-linkedin-in soc-icon"></i>LinkedIn</a></p>
+
+                                            
+                                            
+                                            
+                                                <p class="hide-tablet"><a href="https://www.instagram.com/techchill/" target="_blank"><i class="fab fa-instagram soc-icon"></i>Instagram</a></p>
+
+                                            
+                                            
+                                            
+                                                <p class="hide-tablet"><a href="https://www.youtube.com/channel/UCUxKGxYx9RMcF03gP-mUh2Q" target="_blank"><i class="fab fa-youtube soc-icon"></i>YouTube</a></p>
+
+                                            
+                                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cpyright">
+                            © 2021 TechChill
+                            </div>
+                            <div class="copyright-logo">
+                                <a class="developed-by btn-no-underline" href="https://www.webdev.lv/" target="_blank">Developed by: <img class="webdev-logo" src="https://techchill.co/wp-content/themes/techchill2020/assets/images/webdev-majas-lapu-izstrade-logo.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div id="woofc">
+<div class="woofc woofc-pos-bottom-right woofc-counter-pos-top-left woofc-show-on-all woofc-empty"  data-position="bottom-right" data-triggerevent="vclick" data-hoverdelay="200" data-flytocart="1" data-flyduration="2000" data-shaketrigger="vertical" data-opencart-onadd="1" data-loadingtimeout="2000">
+	
+		
+	
+<div class="woofc-inner">
+	<div class="woofc-wrapper">
+		
+		
+<div class="woofc-header">
+	
+	<span class="woofc-title">Cart</h2>
+	<span class="woofc-undo">Item Removed. <a href="#0">Undo</a></span>
+	<span class="woofc-cart-error"></span>
+	
+</div>		
+		<div class="woofc-body">
+			
+						
+			
+<ul class="woofc-list">
+	
+<li class="woofc-no-product">
+	No products in the cart.</li></ul>		
+						
+		</div> <!-- .woofc-body -->
+
+		
+<div class="woofc-footer">
+	
+	<a href="https://techchill.co/checkout/" class="woofc-checkout woofc-btn">
+		<em>
+			Checkout <span class="woofc-dash">-</span> 
+			<span class="amount">&euro;0.00</span>
+		</em>
+	</a>
+	
+	
+<a href="#" class="woofc-trigger woofc-icontype-image">
+	
+	<span class="woofc-trigger-cart-icon"></span>
+	
+	<ul class="woofc-count"> <!-- cart items count -->
+		<li>0</li>
+		<li>1</li>
+	</ul> <!-- .count -->
+	
+	<span class="woofc-trigger-close-icon"></span>
+</a>	
+</div>
+		
+		<div class="woofc-spinner-wrap"><div class="woofc-spinner-inner">
+			<div class="woofc-spinner woofc-spinner-three-bounce">
+		        <div class="woofc-spinner-child woofc-spinner-bounce1"></div>
+		        <div class="woofc-spinner-child woofc-spinner-bounce2"></div>
+		        <div class="woofc-spinner-child woofc-spinner-bounce3"></div>
+		    </div></div></div>		
+	</div> <!-- .woofc-wrapper -->
+</div> <!-- .woofc-inner -->
+	
+</div></div>
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/techchill.co\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/techchill.co\/checkout\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//techchill.co/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://techchill.co/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.4.4'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/themes/techchill2020/assets/js/bootstrap.min.js?ver=1.1.1'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/themes/techchill2020/assets/js/grt-youtube-popup.js?ver=1.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var custom_data = {"ajaxurl":"https:\/\/techchill.co\/wp-admin\/admin-ajax.php","my_account_url":"https:\/\/techchill.co\/my-account\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://techchill.co/wp-content/themes/techchill2020/assets/js/ajax_checkout.js?ver=1.1.3'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/themes/techchill2020/assets/js/jquery.fancybox.js?ver=1.1.1'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/themes/techchill2020/assets/js/jquery.bxslider-responsive.js?ver=1.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajaxurl":"https:\/\/techchill.co\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://techchill.co/wp-content/themes/techchill2020/assets/js/custom.js?ver=1.1.6'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce-reminder-pro//assets/js/jquery-ui.min.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce-reminder-pro//assets/js/jquery-ui-timepicker-addon.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce-reminder-pro//assets/js/jquery-ui-sliderAccess.js?ver=4.9.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wcrp_settings = {"gaptime":"0","ajax_url":"https:\/\/techchill.co\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://techchill.co/wp-content/plugins/woocommerce-reminder-pro//assets/js/dateandtimescript.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://techchill.co/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+  <script type="text/javascript"> _linkedin_partner_id = "586236"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
+  </script>
+  <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=586236&fmt=gif" /> </noscript>
+  </body>
+</html>

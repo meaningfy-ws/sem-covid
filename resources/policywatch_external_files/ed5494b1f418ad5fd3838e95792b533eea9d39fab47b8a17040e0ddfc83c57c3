@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr" prefix="og: http://ogp.me/ns# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+
+  <link rel="stylesheet" href="https://koronavirus.gov.hu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link rel="stylesheet" href="https://koronavirus.gov.hu/sites/default/files/css/css_zkG2T5pRW6q20eM2IbNVge6Oub5_rTk1ywWpFXibv9I.css" media="all" />
+<link rel="stylesheet" href="https://koronavirus.gov.hu/sites/default/files/css/css_PGbJgHCUCBf4dg7K9Kt8aAwsApndP4GZ9RuToPy3-Fk.css" media="all" />
+<link rel="stylesheet" href="https://koronavirus.gov.hu/sites/default/files/css/css_exJYuYWIpQJNyxmRDMpVEpsYbX7JsxMeC3p1DJx9AR0.css" media="all" />
+  <script src="https://koronavirus.gov.hu/sites/default/files/js/js_bHixdNqIm_fGV7c3IlqVJl-OQXz4T0rdcigI0kCjuGg.js"></script>
+<script src="https://koronavirus.gov.hu/sites/default/files/js/js_sreT2UNZm3_P-Ff8xh-SyFccmsxVs0tZ0xymNLFIHPM.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-159265518-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="https://koronavirus.gov.hu/sites/default/files/js/js_ezRRywsnSwTdkc6SHPmZOjAgz5-JMCWdtz85svJHEG8.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"koronavirus","theme_token":"Zv-GDR_h8hfBZr6W-F_WNp05tryt41hrd0x262Q_sc4","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/hu_qf4WoEOElk4YMz4UznaSRvHL3EO9zp_ZsaklE1YLKgA.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/koronavirus\/js\/menu.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/koronavirus\/css\/style.css":1}},"better_exposed_filters":{"views":{"actual":{"displays":{"block_1":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":0,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="/sites/all/themes/koronavirus/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+  <script src="/sites/all/themes/koronavirus/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/sites/all/themes/koronavirus/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/sites/all/themes/koronavirus/css/animate.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta charset="utf-8" />
+<link rel="apple-touch-icon" href="https://koronavirus.gov.hu/sites/default/files/128.png" type="image/png" />
+<link rel="apple-touch-icon-precomposed" href="https://koronavirus.gov.hu/sites/default/files/128_0.png" type="image/png" />
+<meta name="description" content="Az országban 904 vállalat vette igénybe a kormány versenyképesség-növelő támogatását, amivel 30 iparágban 425 milliárd forint értékű beruházás valósul meg ezekben a hónapokban, és 155 ezer munkahelyet védenek meg - közölte a külgazdasági és külügyminiszter szerdán Debrecenben, amikor támogatási szerződést adott át a helyi MST-Engineering Kft.-nek." />
+<meta name="abstract" content="Az országban 904 vállalat vette igénybe a kormány versenyképesség-növelő támogatását, amivel 30 iparágban 425 milliárd forint értékű beruházás valósul meg ezekben a hónapokban, és 155 ezer munkahelyet védenek meg - közölte a külgazdasági és külügyminiszter szerdán Debrecenben, amikor támogatási szerződést adott át a helyi MST-Engineering Kft.-nek." />
+<meta name="keywords" content="koronavírus" />
+<link rel="image_src" href="https://koronavirus.gov.hu/sites/default/files/120448288_203568157802409_4227842564767563204_o.jpg" />
+<link rel="canonical" href="https://koronavirus.gov.hu/cikkek/szijjarto-peter-155-ezer-munkahelyet-vedenek-meg-versenykepesseg-novelo-tamogatasokkal" />
+<link rel="shortlink" href="https://koronavirus.gov.hu/node/12006" />
+<meta property="og:title" content="Szijjártó Péter: 155 ezer munkahelyet védenek meg a versenyképesség-növelő támogatásokkal" />
+<meta property="og:description" content="Az országban 904 vállalat vette igénybe a kormány versenyképesség-növelő támogatását, amivel 30 iparágban 425 milliárd forint értékű beruházás valósul meg ezekben a hónapokban, és 155 ezer munkahelyet védenek meg - közölte a külgazdasági és külügyminiszter szerdán Debrecenben, amikor támogatási szerződést adott át a helyi MST-Engineering Kft.-nek." />
+<meta property="og:updated_time" content="2020-09-30T17:00:53+02:00" />
+<meta property="og:image" content="https://koronavirus.gov.hu/sites/default/files/120448288_203568157802409_4227842564767563204_o.jpg" />
+<meta property="article:published_time" content="2020-09-30T16:21:52+02:00" />
+<meta property="article:modified_time" content="2020-09-30T17:00:53+02:00" />
+<link rel="shortcut icon" href="https://koronavirus.gov.hu/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+  <!--<title>Szijjártó Péter: 155 ezer munkahelyet védenek meg a versenyképesség-növelő támogatásokkal</title>-->
+  <title>Szijjártó Péter: 155 ezer munkahelyet védenek meg a versenyképesség-növelő támogatásokkal</title>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-12006 node-type-article">
+    
+<div class="main-container container-fluid">
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                                              <div class="region region-content">
+    <section id="block-block-4" class="block block-block clearfix">
+
+      
+  <div class="menu-navigation container-fluid hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-11">
+                <div class="main-menu">
+                    <a href="/" class="btn btn-link">Címlap</a>
+                    <a href="hirek" class="btn btn-link">Hírek</a>
+                    <a href="/intezkedesek" class="btn btn-link">Intézkedések</a>
+                    <a href="megelozes" class="btn btn-link">Megelőzés</a>
+                    <a href="mit-tegyunk-tunetek-eseten" class="btn btn-link">Mit tegyünk?</a>
+                    <a href="mit-kell-tudni-a-koronavirusrol" class="btn btn-link">Mit kell tudni?</a>
+                    <a href="/letoltheto-tajekoztatok" class="btn btn-link">Tájékoztatók</a>
+                    <a href="/aktualis" class="btn btn-link kijarasi-korlatozas">Aktuális</a>
+                </div>
+            </div>
+            <div class="col-xs-1 text-right">
+                <a href="https://facebook.com/koronavirus.gov.hu" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <div class="main-menu-en"><a href="http://abouthungary.hu/" class="btn btn-link" target="_blank">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu-navigation container hidden-sm hidden-md hidden-lg">
+    <div class="row">
+        <div class="col-xs-6">
+            <a href="https://facebook.com/koronavirus.gov.hu" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <div class="main-menu-en"><a href="http://abouthungary.hu/" class="btn btn-link" target="_blank">EN</a>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+            <a class="menu-icon-trigger"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div class="mobile-menu">
+                <span class="close"><i class="fas fa-times"></i></span>
+                <a href="/" class="menu__item">Címlap</a>
+                <a href="hirek" class="menu__item">Hírek</a>
+                <a href="/intezkedesek" class="menu__item">Intézkedések</a>
+                <a href="megelozes" class="menu__item">Megelőzés</a>
+                <a href="mit-tegyunk-tunetek-eseten" class="menu__item">Mit tegyünk?</a>
+                <a href="mit-kell-tudni-a-koronavirusrol" class="menu__item">Mit kell tudni?</a>
+                <a href="/letoltheto-tajekoztatok" class="menu__item">Tájékoztatók</a>
+                <a href="/aktualis" class="menu__item kijarasi-korlatozas">Aktuális</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="https://www.vakcinainfo.gov.hu" target="_blank">
+    <div class="vakcina-info container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    www.vakcinainfo.gov.hu - Regisztráljon a koronavírus elleni védőoltásra!
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+</section>
+<section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-12006" class="node node-article node-promoted node-sticky clearfix" about="/cikkek/szijjarto-peter-155-ezer-munkahelyet-vedenek-meg-versenykepesseg-novelo-tamogatasokkal" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Szijjártó Péter: 155 ezer munkahelyet védenek meg a versenyképesség-növelő támogatásokkal" class="rdf-meta element-hidden"></span>      </header>
+        </article>
+
+</section>
+<section id="block-views-actual-block-1" class="block block-views clearfix">
+
+      
+  <div class="view view-actual view-id-actual view-display-id-block_1 view-dom-id-6ca458e204ce6c027703f0930239530d">
+            <div class="view-header">
+      <div class="section">
+<div class="container">
+<h1>Szijjártó Péter: 155 ezer munkahelyet védenek meg a versenyképesség-növelő támogatásokkal</h1>
+<p><i>2020. szeptember 30. - 16:21</i></p>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v6.0"></script>
+<div class="fb-share-button" data-href="https://koronavirus.gov.hu/cikkek/szijjarto-peter-155-ezer-munkahelyet-vedenek-meg-versenykepesseg-novelo-tamogatasokkal" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkoronavirus.gov.hu/cikkek/szijjarto-peter-155-ezer-munkahelyet-vedenek-meg-versenykepesseg-novelo-tamogatasokkal&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Megosztás</a></div>
+<div class="page_body">
+<p><p>Az országban 904 vállalat vette igénybe a kormány versenyképesség-növelő támogatását, amivel 30 iparágban 425 milliárd forint értékű beruházás valósul meg ezekben a hónapokban, és 155 ezer munkahelyet védenek meg - közölte a külgazdasági és külügyminiszter szerdán Debrecenben, amikor támogatási szerződést adott át a helyi MST-Engineering Kft.-nek.</p>
+</p>
+<p><p><img alt="" height="400" src="/sites/default/files/sites/default/files/imce/120448288_203568157802409_4227842564767563204_o.jpg" width="600" /></p>
+
+<p>Szijjártó Péter hozzátette: a kormány azokkal a vállalkozásokkal kötött szövetséget, amelyek vállalják, hogy fejlesztenek és megtartják a munkaerőt.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Erőfeszítéseik eredményeként augusztus végére a munkában lévők száma már meghaladta a 4,5 milliót, ami 54 ezerrel több foglalkoztatottat jelent a júliusi létszámnál - mutatott rá a politikus.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Szijjártó Péter jelezte, a gépipari berendezéseket tervező, gyártó és forgalmazó debreceni MST-Engineering Kft., amely termékeinek 99 százalékát exportálja, 565 millió forintos beruházáshoz 282 millió forint támogatást kapott, amivel 80 munkahelyet tud megtartani.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;A külgazdasági miniszter azt mondta, a magyar gazdaság meghatározó ágazata a gépipar, amely több mint 380 ezer embert foglalkoztat, az exporthányada pedig meghaladja a 90 százalékot.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Szijjártó Péter kitért a hajdú-bihari beruházásokra is. Azt mondta: a megyére mindig számíthat az ország, 35 helyi vállalkozás kötelezte el magát beruházások mellett. A 16,5 milliárd forint összértékű fejlesztéseket a kormány 8,2 milliárd forinttal támogatja, és ezzel 4100 munkahelyet tudnak megvédeni - sorolta.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Kósa Lajos (Fidesz), a térség országgyűlési képviselője szerint sok olyan exportáló cég kellene, mint az MST-Engineering Kft., amely exporttevékenységével és technológiai fejlesztésekkel segíti a magyar gazdaságot.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Bocskai István, a cég értékesítési vezetője, miután átvette Szijjártó Pétertől a támogatási szerződést elmondta: cégük magyar tulajdonban van, a 99 százalékban exportból származó árbevételük az elmúlt öt évben évente 17 százalékkal növekedett, és meghaladja az egymilliárd forintot. A mostani beruházással csökkenteni kívánják a beszállítási költségeket és rövidebb szállítási határidőket tudnak majd vállalni. A növekedés nem áll meg: új gyártócsarnokot és irodaépületet építenek az új debreceni déli ipari övezetben - jelezte Bocskai István.</p>
+
+<p><img alt="" height="400" src="/sites/default/files/sites/default/files/imce/120616261_203568147802410_5917297920097687424_o.jpg" width="600" /><br />
+MTI 2020. szeptember 30.</p>
+</p>
+</div>
+</div>
+</div>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container-fluid">
+      <div class="region region-footer">
+    <section id="block-block-5" class="block block-block clearfix">
+
+      
+  <div class="container">
+<div class="row">
+<div class="col-xs-6">
+<h4>Egyéb információk</h4>
+<a href="https://koronavirus.gov.hu/sites/default/files/sites/default/files/imce/adatkezelesi_tajekoztato_koronavirus_honlap_20200520.pdf">Adatvédelmi tájékoztató</a><br />
+<a href="/impersszum">Impresszum/Sajtó</a><br />
+<a class="rss-icon" href="/cikkek/rss.xml">RSS</a><br />
+Támogatott böngészők: Chrome, Firefox, Safari, Edge</div>
+
+<div class="col-xs-6">
+<h4>Információs vonalak:</h4>
+<a href="tel:+3680277455">+36 80 277 455</a><br />
+<a href="tel:+3680277456">+36 80 277 456</a><br />
+<a href="tel:+3615501825">Külföldről: +36 1 550 1825</a><br />
+<a href="mailto:koronavirus@1818.hu" target="_top">koronavirus@1818.hu</a></div>
+</div>
+</div>
+
+</section>
+<section id="block-block-18" class="block block-block clearfix">
+
+      
+  <script src="/sites/all/libraries/scroll/scroll.js"></script>
+</section>
+<section id="block-block-19" class="block block-block clearfix">
+
+      
+  <script src="/sites/all/libraries/addImgResponsive/addImgResponsive.js"></script>
+</section>
+  </div>
+  </footer>
+  <script src="https://koronavirus.gov.hu/sites/default/files/js/js_MRdvkC2u4oGsp5wVxBG1pGV5NrCPW3mssHxIn6G9tGE.js"></script>
+</body>
+</html>

@@ -1,0 +1,2536 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="it">
+
+	<head>
+        <!-- Risorse JS & CSS Header -->
+        
+
+
+<!-- Meta tag -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description"
+	content="Istituto Poligrafico e Zecca dello Stato" />
+<meta name="keywords" content="nomattiva, pubblica, amministrazione, legge, decreto, poligrafico, uffici Poligrafico e Zecca dello Stato" />
+<meta name="author" content="Istituto Poligrafico e Zecca dello Stato" />
+<meta name="viewport"
+	content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta name="generator" content="">
+
+<title>Normattiva</title>
+
+<!-- Bootstrap Italia CSS -->
+<link href="/css/bootstrap-italia.min.css" rel="stylesheet">
+
+<!-- Bootstrap Italia custom CSS -->
+<!-- <link href="/css/compiled/bootstrap-italia-custom.min.css" rel="stylesheet"> -->
+
+<!-- App styles -->
+<link href="/css/main.css" rel="stylesheet">
+
+<!-- App styles -->
+<link href="/css/grafico.css" rel="stylesheet">
+
+		<!-- Titolo della pagina -->
+		<title>Normattiva</title>
+		
+		
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+ 	        
+         
+         
+         
+         
+         
+     
+     
+    <!-- ELI legal resource -->
+	<meta about="na:id/2020/03/17/20G00034/" typeof="eli:LegalResource" />
+	<!-- ELI legal expression -->
+	<meta about="na:id/2020/03/17/20G00034//ita" typeof="eli:LegalExpression" />
+	<!-- ELI realizes legalexpr to legalrsc -->
+	<meta about="na:id/2020/03/17/20G00034//ita" property="eli:realizes" resource="na:id/2020/03/17/20G00034/" /> 
+	<!-- ELI title -->
+	<meta about="na:id/2020/03/17/20G00034/" property="eli:title" content="Misure  di  potenziamento  del  Servizio  sanitario  nazionale  e  di
+sostegno  economico  per  famiglie,  lavoratori  e  imprese  connesse
+all&#039;emergenza epidemiologica da COVID-19. (20G00034)" xml:lang="it" lang="it" datatype="xsd:string" />
+	<!-- ELI version -->
+	<meta about="na:id/2020/03/17/20G00034/" property="eli:version" resource="gu:tables/versions#"/>
+	<!-- ELI format -->
+	<meta about="na:id/2020/03/17/20G00034//ita/html" typeof="eli:Format" />
+	<!-- ELI is_embodied_by legalexpr to format  -->
+	<meta about="na:id/2020/03/17/20G00034//ita" property="eli:is_embodied_by" resource="na:id/2020/03/17/20G00034//ita/html" />
+	<!-- ELI uri_schema -->
+	<meta about="na:id/2020/03/17/20G00034/" property="eli:uri_schema" content="http://www.normattiva.it/eli/id/{yyyy}/{mm}/{dd}/{codiceRedazionale}/{tipoVersione}"/> 
+	<!-- ELI id_local -->
+	<meta about="na:id/2020/03/17/20G00034/" property="eli:id_local" content="20G00034" />
+	<!-- ELI type_document -->
+	<meta about="na:id/2020/03/17/20G00034/" property="eli:type_document" resource="gu:tables/resource-type#DECRETO-LEGGE"/>
+	
+	
+	
+	
+	<meta about="na:id/2020/03/17/20G00034/" property="eli:date_document" content="2020-03-17" datatype="xsd:date" />
+	
+	
+	<meta about="na:id/2020/03/17/20G00034//ita" property="eli:language" resource="http://publications.europa.eu/resource/authority/language/ITA" />
+	<meta about="na:id/2020/03/17/20G00034//ita" property="eli:publisher_agent" resource="http://www.ipzs.it" />
+	<meta about="na:id/2020/03/17/20G00034//ita/html" property="eli:format" resource="http://www.iana.org/assignments/media-types/text/html" />
+    
+
+
+
+	</head>
+
+	<body>
+
+		
+
+
+
+
+<header class="navbar-wrapper navbar-fixed-top">
+
+	<div class="it-header-wrapper border-bottom">
+
+		<div class="it-header-slim-wrapper d-print-none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="it-header-slim-wrapper-content">
+							<a class="d-none d-lg-block navbar-brand" target="_blank" href="http://www.governo.it">Presidenza del consiglio dei ministri</a>
+							<div class="header-slim-right-zone">
+								<div class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+									
+									
+											
+												<span>ITA</span>
+											
+											
+										 <svg class="icon d-none d-lg-block">
+	                    <use xlink:href="/svg/sprite.svg#it-expand" ></use>
+	                  </svg>
+	                </a>
+	                <div class="dropdown-menu">
+	                  <div class="row">
+	                    <div class="col-12">
+	                      <div class="link-list-wrapper">
+	                        <ul class="link-list">
+	                          <li>
+	                          	<a class="list-item" href="/?language=it"><span>ITA</span></a>
+	                          </li>
+	                          <li>
+	                          	<a class="list-item" href="/?language=en"><span>ENG</span></a>
+	                          </li>
+	                        </ul>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+
+  	<div class="row bg-white it-nav-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 pl-3">
+						<a href="/" class="">
+							<figure class="figure w-100 mb-0">
+								<img class="figure-img img-fluid rounded LogoImg mb-0" alt="Logo Normattiva" src="/svg/LogoNormattivaL.svg" >
+							</figure>
+							<div class="it-brand-text">
+								<h1 class="sr-only">Normattiva - Il portale della legge vigente</h1>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="it-header-navbar-wrapper bg-white d-print-none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 bg-white">
+
+						<nav class="navbar navbar-expand-lg has-megamenu">
+							<button class="custom-navbar-toggler w-100" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+								<svg class="icon icon-lg">
+									<use xlink:href="/svg/sprite.svg#it-burger"></use>
+								</svg>
+							</button>
+							<div class="navbar-collapsable" id="nav10">
+								<div class="overlay"></div>
+								<div class="close-div sr-only">
+									<button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+								</div>
+								<div class="menu-wrapper">
+									<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link" href="/">
+												<span>Home</span><span class="sr-only">current</span>
+											</a>
+										</li>
+
+										<!-- MEGAMENU PROGETTO -->
+										<li class="nav-item dropdown">
+											<a class="nav-link btn-dropdown dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+												<span>Il progetto</span>
+												<svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="/svg/sprite.svg#it-expand"></use></svg>
+											</a>
+											<div class="dropdown-menu shadow border-right border-bottom border-left" id="dropdownProgetto">
+												<div class="link-list-wrapper">
+													<ul class="link-list">
+														<li>
+															<a class="list-item mb-2" href="/staticPage/progettoObiettivo"><span>L&#39;obiettivo</span></a>
+														</li>
+														<li>
+															<a class="list-item" href="/staticPage/progettoCoordinamento"><span>Il coordinamento delle iniziative pubbliche</span></a>
+														</li>
+														<li>
+															<a class="list-item mb-2" href="/staticPage/progettoCaratteri"><span>I caratteri qualificanti del progetto</span></a>
+														</li>
+														<li>
+															<a class="list-item mb-2" href="/staticPage/progettoObiettiviRaggiunti"><span>Obiettivi Raggiunti</span></a>
+														</li>
+														<li>
+															<a class="list-item mb-2" href="/staticPage/progettoObiettiviFuturi"><span>Obiettivi Futuri</span></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									<!-- MEGAMENU PROGETTO -->
+
+									<!-- MEGAMENU RICERCA NEI DOCUEMNTI -->
+									<li class="nav-item dropdown">
+										<a class="nav-link btn-dropdown dropdown-toggle" href="/staticPage/ricercaNeiDocumenti" data-toggle="dropdown" aria-expanded="false">
+											<span>Collegamenti veloci</span>
+											<svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="/svg/sprite.svg#it-expand"></use></svg>
+										</a>
+										<div class="dropdown-menu shadow border-right border-bottom border-left" id="dropdownUtilita">
+											<div class="link-list-wrapper">
+												<ul class="link-list">
+													<li>
+              							<a class="list-item mb-2" href="/staticPage/codici"><span>Costituzione e Codici</span></a>
+             							</li>
+													<li>
+														<a class="list-item mb-2" href="/ricerca/elencoPerData"><span>Elenco atti per data di emanazione</span></a>
+													</li>
+													<li>
+														<a class="list-item mb-2" href="/staticPage/leggi_approvate"><span>Leggi approvate in attesa di pubblicazione</span></a>
+													</li>
+													<li>
+														<a class="list-item" href="/staticPage/gazzetta"><span>Gazzetta Ufficiale</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<!-- MEGAMENU RICERCA NEI DOCUEMNTI -->
+
+									<!-- MEGAMENU MFR -->
+									<li class="nav-item dropdown">
+										<a class="nav-link btn-dropdown dropdown-toggle" href="/staticPage/ricercaNeiDocumenti" data-toggle="dropdown" aria-expanded="false">
+											<span>Legislazione Regionale</span>
+											<svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="/svg/sprite.svg#it-expand"></use></svg>
+										</a>
+										<div class="dropdown-menu shadow border-right border-bottom border-left" id="dropdownMFR">
+											<div class="link-list-wrapper">
+												<ul class="link-list">
+													<li>
+														<a class="list-item mb-2" target="_blank" href="https://www.normattiva.it/mfr/">
+															<span class="mr-0">Motore federato regionale</span>
+															<svg class="icon my-0">
+							              		<use xlink:href="/svg/sprite.svg#it-external-link"></use>
+							              	</svg>
+														</a>
+													</li>
+													<li>
+														<a class="list-item" href="/legislazioneRegionale"><span>Banche dati giuridiche regionali</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<!-- MEGAMENU MFR -->
+
+									<!-- MEGAMENU GUIDA ALL USO -->
+									<li class="nav-item dropdown">
+										<a class="nav-link btn-dropdown dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+											<span>Guida all&#39;uso</span>
+											<svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="/svg/sprite.svg#it-expand"></use></svg>
+										</a>
+										<div class="dropdown-menu shadow border-right border-bottom border-left" id="dropdownGuida">
+											<div class="link-list-wrapper">
+												<ul class="link-list">
+													<li>
+														<a class="list-item mb-2" href="/staticPage/guidaAllUso_Normattiva"><span>Normattiva </span></a>
+													</li>
+													<li>
+														<a class="list-item mb-2" href="/staticPage/guidaAllUso_Regioni"><span>Normattiva regioni</span></a>
+													</li>
+													
+													<li>
+														<a class="list-item mb-2" href="/staticPage/guidaAllUso_Accessibilita"><span>Accessibilità</span></a>
+													</li>
+													<li>
+														<a class="list-item" href="/staticPage/faq"><span>FAQ</span></a>
+													</li>
+													
+													<li>
+														<a class="list-item mb-2" href="/staticPage/utilita"><span>Utilità</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<!-- MEGAMENU GUIDA ALL USO -->
+
+									<!-- MEGAMENU UTILITA -->
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	
+		
+			
+			
+				<div class="container-fluid pb-0">
+					<div class="container">
+						<div class="row SerachSmall">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 pt-0 mt-3 mb-2 d-print-none">
+								<div class="w-100">
+									<!--RICERCA FORM -->
+									<form action="/ricerca/veloce/0" method="POST" accept-charset="UTF-8">
+									<input type="hidden" name="tabID" />
+									<input type="hidden" name="title" value="lbl.risultatoRicerca" />
+									<div class="form-group mb-0">
+										<div class="input-group bg-white">
+											<div class="input-group-prepend">
+												<div class="input-group-text"><svg class="icon icon-sm icon-primary"><use xlink:href="/svg/sprite.svg#it-pencil"></use></svg></div>
+											</div>
+											<label id="searchLabel" for="testoRicerca">Ricerca semplice</label>
+											<input type="text" class="form-control autocomplete bg-transparent" data-provide="typeahead" autocomplete="off" aria-labelledby="searchLabel" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" dir="auto" id="testoRicerca" name="testoRicerca" value="">
+											<div class="input-group-append">
+												<button class="btn btn-primary btn-xs" type="submit" id="button-3" style="z-index: 0;" >
+													<span class="sr-only">cerca</span>
+													<svg class="icon icon-white">
+														<use xlink:href="/svg/sprite.svg#it-search"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									</form>
+									<!--RICERCA FORM -->
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 pt-xl-3 pt-lg-3 ml-auto d-print-none text-right">
+								<a class="btn btn-primary" href="/ricerca/avanzata">Ricerca avanzata</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		
+	
+	
+
+ 
+
+
+
+<div class="container mb-4 d-print-none">
+	<nav class="breadcrumb-container" aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	     
+				
+				
+				  	
+	           
+      		
+	  </ol>
+	</nav>
+</div>
+</header>
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+<div class="it-datepicker-wrapper d-none">
+	<div class="form-group">
+		<input class="form-control it-date-datepicker" id="date10" type="text" placeholder="inserisci la data in formato gg/mm/aaaa" >
+		<label for="date1">Date label</label>
+	</div>
+</div>
+
+
+
+<div class="container-fluid ToolbarDettaglio pt-2">
+	<div class="container bg-white px-4 pt-3">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<form id="command" action="/atto/caricaDettaglioAtto" method="POST">
+			<div class="form-row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 py-1 m-0">
+					<p class="m-0 py-2">vigente al</p>
+				</div>
+
+				<input type="hidden" name="tabID" />
+				<input type="hidden" name="bloccoAggiornamentoBreadCrumb" />
+				<input type="hidden" name="atto.dataPubblicazioneGazzetta" value="2020-03-17" />
+				<input type="hidden" name="atto.codiceRedazionale" value="20G00034" />
+				<input type="hidden" name="tipoDettaglio" value="singolavigenza" />
+				<input type="hidden" name="qId" value="" />
+
+				<div class="col-10 col-sm-10 col-md-10 col-lg-3 col-xl-3 mt-2 mt-lg-0 mt-xl-0">
+					<div class="it-datepicker-wrapper">
+						<div class="form-group m-0">
+							<input name="dataVigenza" id="date1" type="text" class="form-control it-date-datepicker" value="29/01/2021" required="true" placeholder = "&nbsp">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 mt-2 mt-lg-0 mt-xl-0">
+					<button type="submit" class="btn btn-primary p-1">
+						<svg class="icon icon-white">
+			        	<use xlink:href="/svg/sprite.svg#it-search"></use>
+								<span class="sr-only">search</span>
+			        </svg>
+					</button>
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 mt-lg-0 mt-xl-0">
+					
+						
+							
+
+							<a href="/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2020-03-17&atto.codiceRedazionale=20G00034&tipoDettaglio=originario&qId=" class="btn btn-outline-primary" onmouseup="evaluateHrefBlock(this, 'Atto originario');">Mostra Atto Originario</a>
+
+						
+						
+					
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-2 mt-lg-0 mt-xl-0">
+					
+						
+							
+							<a href="/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2020-03-17&atto.codiceRedazionale=20G00034&tipoDettaglio=multivigenza&qId=" class="btn btn-outline-primary" onmouseup="evaluateHrefBlock(this, 'Atto multivigente');">Mostra Atto Multivigente </a>
+						
+						
+					
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+		<div class="container DettaglioPag mb-4">
+
+			<div class="row area_dettaglio">
+
+				
+
+
+
+ 
+
+
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box testa_atto my-3">
+		
+	
+	   
+	<div id="titoloAtto" class="data_info text-center my-1"> 
+
+		DECRETO-LEGGE
+
+		 
+
+		 	
+			
+			17 
+			marzo
+			2020, n. 18 
+		
+		
+		
+		
+		
+		
+		<!-- solo preprod spostato su sidebar_tools 
+		
+		
+			
+				 
+				
+								
+				
+				
+			
+			
+			
+				
+				
+				
+				
+					
+						- <span>ultimo aggiornamento all'atto: <a href="/atto/caricaDettaglioAttoUltimoAgg?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034&amp;atto.dataVigenza=2020-12-31" target="_blank">31/12/2020</a></span>
+					
+				
+		
+			
+		
+		 -->
+		
+	</div>
+	
+    <p>Misure  di  potenziamento  del  Servizio  sanitario  nazionale  e  di
+sostegno  economico  per  famiglie,  lavoratori  e  imprese  connesse
+all'emergenza epidemiologica da COVID-19. (20G00034) 
+</p>
+	
+	<div class="note mb-3">
+		
+		
+			<small class="text-muted">note:</small>
+			<span class="NoteEvidenza">
+				<mark>Entrata in vigore del provvedimento: 17/03/2020
+<br/>Decreto-Legge convertito con modificazioni dalla L. 24 aprile 2020, n. 27 (in S.O. n. 16, relativo alla G.U. 29/04/2020, n. 110).</mark>
+			</span>
+		
+		
+		
+			
+			<em>(Ultimo aggiornamento all&#39;atto pubblicato il 31/12/2020)</em>
+		
+	</div>
+	
+	<div class="riferimento my-2">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+	
+			
+				 
+				
+				
+				<span class="link_gazzetta">
+				
+					
+					
+					
+					
+					
+					<a target="_blank" style="color:#0066cc; text-decoration:none;" href="http://www.gazzettaufficiale.it/eli/gu/2020/03/17/70/sg/pdf">(GU n.70 del 17-03-2020)</a>
+				</span>
+			
+			
+		
+	
+	</div>
+
+</div>
+
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 box iframe_sx">
+					<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+			
+
+			<div id="sx_dettaglio my-4">
+				
+					<div id="vigenti" class="mb-4">
+						<small>vigente al</small>
+						<span class="rosso">29/01/2021</span>
+					</div>
+				
+				<div id="albero">
+					
+
+					<!-- AGGIUNGERE TIPO RICERCA	 -->
+					<ul><li class="box_articoli"><span>Articoli</span></li><li class="condiv singolo_risultato_collapse"><div class="collapse-div text-center"><div class="collapse-header"><a class="" data-toggle="collapse" data-target="#coll_1" aria-expanded="true" aria-controls="coll_1">Titolo I</a></div><span class="snippets"><div id="coll_1" class="collapse show">Misure di potenziamento del Servizio sanitario nazionale</div></span></div></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">1</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=2&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">2</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=2&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">2 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=2&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">2 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=2&art.idSottoArticolo=4&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">2 quater</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=2&art.idSottoArticolo=5&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">2 quinquies</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=2&art.idSottoArticolo=6&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">2 sexies</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=2&art.idSottoArticolo=7&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">2 septies</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=3&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">3</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=4&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">4</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=4&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">4 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=4&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">4 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=5&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">5</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=5&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">5 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=5&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">5 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=5&art.idSottoArticolo=4&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">5 quater</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=5&art.idSottoArticolo=5&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">5 quinquies</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=5&art.idSottoArticolo=6&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">5 sexies</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=6&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">6</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=7&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">7</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=8&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">8</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=9&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">9</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=10&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">10</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=11&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">11</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=12&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">12</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=13&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">13</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=14&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">14</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=15&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">15</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=16&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">16</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=17&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">17</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=17&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">17 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=17&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">17 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=17&art.idSottoArticolo=4&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">17 quater</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=18&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">18</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=18&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">18 bis</a></li><li class="condiv singolo_risultato_collapse"><div class="collapse-div text-center"><div class="collapse-header"><a class="" data-toggle="collapse" data-target="#coll_2" aria-expanded="true" aria-controls="coll_2">Titolo II</a></div><span class="snippets"><div id="coll_2" class="collapse show">Misure a sostegno del lavoro<br/>Capo I<br/>Estensione delle misure speciali in tema di ammortizzatori sociali per tutto il territorio nazionale</div></span></div></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=11&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=19&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">19</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=19&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">19 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=20&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">20</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=21&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">21</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=9&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=22&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">22</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=22&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">22 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=22&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">22 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=22&art.idSottoArticolo=4&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">22 quater</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=22&art.idSottoArticolo=5&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">22 quinquies</a></li><li class="condiv singolo_risultato_collapse"><div class="collapse-div text-center"><div class="collapse-header"><a class="" data-toggle="collapse" data-target="#coll_3" aria-expanded="true" aria-controls="coll_3">Capo II</a></div><span class="snippets"><div id="coll_3" class="collapse show">Norme speciali in materia di riduzione dell'orario di lavoro e di sostegno ai lavoratori</div></span></div></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=23&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">23</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=24&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">24</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=25&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">25</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=26&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">26</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=27&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">27</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=28&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">28</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=29&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">29</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=30&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">30</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=31&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">31</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=32&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">32</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=33&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">33</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=34&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">34</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=35&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">35</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=35&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">35 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=36&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">36</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=37&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">37</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=38&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">38</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=39&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">39</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=40&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">40</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=41&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">41</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=42&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">42</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=43&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">43</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=44&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">44</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=44&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">44 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=45&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">45</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=46&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">46</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=47&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">47</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=48&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">48</a></li><li class="condiv singolo_risultato_collapse"><div class="collapse-div text-center"><div class="collapse-header"><a class="" data-toggle="collapse" data-target="#coll_4" aria-expanded="true" aria-controls="coll_4">Titolo III</a></div><span class="snippets"><div id="coll_4" class="collapse show">Misure a sostegno della liquidità attraverso il sistema bancario</div></span></div></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=49&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">49</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=49&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">49 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=50&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">50</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=51&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">51</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=52&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">52</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=53&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">53</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=54&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">54</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=54&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">54 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=54&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">54 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=54&art.idSottoArticolo=4&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">54 quater</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=55&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">55</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=56&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">56</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=57&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">57</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=58&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">58</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=59&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">59</a></li><li class="condiv singolo_risultato_collapse"><div class="collapse-div text-center"><div class="collapse-header"><a class="" data-toggle="collapse" data-target="#coll_5" aria-expanded="true" aria-controls="coll_5">Titolo IV</a></div><span class="snippets"><div id="coll_5" class="collapse show">Misure fiscali a sostegno della liquidità delle famiglie e delle imprese</div></span></div></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=60&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">60</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=61&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">61</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=61&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">61 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=62&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">62</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=62&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">62 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=63&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">63</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=64&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">64</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=65&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">65</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=66&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">66</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=67&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">67</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=8&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=68&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">68</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=69&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">69</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=70&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">70</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=71&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">71</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=71&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">71 bis</a></li><li class="condiv singolo_risultato_collapse"><div class="collapse-div text-center"><div class="collapse-header"><a class="" data-toggle="collapse" data-target="#coll_6" aria-expanded="true" aria-controls="coll_6">Titolo V</a></div><span class="snippets"><div id="coll_6" class="collapse show">Ulteriori disposizioni<br/><em><strong>((...))</strong></em></div></span></div></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=11&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=72&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">72</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=72&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">72 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=72&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">72 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=72&art.idSottoArticolo=4&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">72 quater</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=73&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">73</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=73&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">73 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=74&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">74</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=74&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">74 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=74&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">74 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=75&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">75</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=76&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">76</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=77&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">77</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=78&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">78</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=79&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">79</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=80&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">80</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=81&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">81</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=82&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">82</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=83&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">83</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=84&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">84</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=85&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">85</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=86&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">86</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=86&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">86 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=9&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=87&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">87</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=87&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">87 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=88&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">88</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=88&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">88 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=89&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">89</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=90&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">90</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=90&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">90 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=91&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">91</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=92&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">92</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=93&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">93</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=94&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">94</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=94&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">94 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=95&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">95</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=96&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">96</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=97&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">97</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=98&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">98</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=99&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">99</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=9&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=100&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">100</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=101&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">101</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=102&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">102</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=103&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">103</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=103&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">103 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=4&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=104&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">104</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=105&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">105</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=106&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">106</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=7&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=107&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">107</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=107&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">107 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=108&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">108</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=109&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">109</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=110&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">110</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=111&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">111</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=112&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">112</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=113&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">113</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=113&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">113 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=114&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">114</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=115&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">115</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=116&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">116</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=117&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">117</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=118&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">118</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=119&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">119</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=120&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">120</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=121&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">121</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=121&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">121 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=121&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">121 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=6&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=122&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">122</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=123&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">123</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=124&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">124</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=125&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">125</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=125&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">125 bis</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=125&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">125 ter</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=3&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=126&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">126</a></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=127&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">127</a></li><li class="chiusura"><img src="/images/albero_atto/chiusura.jpg" title="Elemento grafico"/></li></ul>
+
+            		
+	            		<div class="allegati_lista">
+	            			<ul>
+	            				<li class="box_articoli">
+	            					<span>Allegati</span>
+	            				</li>
+	            			</ul>
+	            			<!-- AGGIUNGERE TIPO RICERCA -->
+	                		<ul><li class="box_allegati_small"><span>Allegato 1</span></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=1&art.idGruppo=7&art.flagTipoArticolo=1&art.codiceRedazionale=20G00034&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">Allegato 1</a></li><li class="chiusura"><img src="/images/albero_atto/chiusura.jpg" title="Elemento grafico"/></li><li class="box_allegati_small"><span>Tabelle</span></li><li><img src="/images/albero_atto/link_v2.png" title="elemento grafico"/><a href="" onclick="return showArticle('/atto/caricaArticolo?art.versione=2&art.idGruppo=7&art.flagTipoArticolo=2&art.codiceRedazionale=20G00034&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&', this);" class="numero_articolo">Tabelle</a></li><li class="chiusura"><img src="/images/albero_atto/chiusura.jpg" title="Elemento grafico"/></li></ul>
+		            	</div>
+	            	
+	            </div>
+	        </div>
+	    
+	
+
+	<!-- Modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="modalSearchedWords">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title">Parole cercate:
+					</h2>
+				</div>
+				<div class="modal-body">
+					<ul>
+						
+					</ul>
+					<p>Presente nei seguenti articoli</p>
+					<ul>
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</ul>
+					
+						<p>Presente nei seguenti allegati</p>
+						<ul>
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						</ul>
+					
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">chiudi</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</html>
+
+				</div>
+
+				<div id = "testo" class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 box iframe_dx">
+					<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+
+
+ 
+
+
+		<div class="vigore my-4">
+			 
+				
+					
+						
+						<pre>Testo in vigore dal:</span> <span id = "artInizio" class="rosso">15-8-2020</pre>
+						
+					
+					
+				
+			
+		</div>
+		<div>
+			<span>
+				
+			</span>
+
+<!-- 
+
+<p> flagTipoArticolo: 0</p>
+<p> descrizione: 1</p>
+<p> descrizioneConParte: </p>
+<p> descrizioneCommiParte: </p>
+<p> progressivo: 0</p> 
+<p> version: 5</p>
+<p> tipoArticolo: DEFAULT</p>
+
+ -->
+
+			<span>
+					
+				
+					
+			</span>
+		</div>
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		<!-- LINK CHE MOSTRA AL CARICAMENTO SOLAMENTE IL PRIMO ARTICOLO CON I RIFERIMENTI ATTIVI -->
+		<a  href="javascript:" 
+			onclick = "showArticle('/atto/caricaArticolo?art.versione=5&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=20G00034&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2020-03-17&art.progressivo=0&riferimenti=true&qId=&art.imUpdate=false')" 
+			class="btn btn-outline-primary mb-3">attiva riferimenti normativi</a>
+			
+		  
+        	
+        	 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+			 
+
+			<a href="#" class="btn btn-outline-primary mb-3" target="_parent" data-href="/do/atto/vediAggiornamentiAllArticolo?art.dataPubblicazioneGazzetta=2020-03-17&amp;art.codiceRedazionale=20G00034&amp;art.flagTipoArticolo=0&amp;art.idArticolo=1&amp;art.idSottoArticolo=1&amp;art.idSottoArticolo1=10&amp;art.versione=5" data-toggle="modal" data-target="#aggiornamenti_articolo" id="aggiornamenti_articolo_button">aggiornamenti all'articolo</a>  
+       
+		 
+		
+		<!-- IN ENTRAMBI I PRE, IL CONTENUTO VIENE MODIFICATO DINAMICAMENTE PER OGNI ARTICOLO TRAMITE AJAX -->
+		<pre class="nero"> 
+ 
+                   IL PRESIDENTE DELLA REPUBBLICA 
+ 
+  Visti gli articoli 77 e 87 della Costituzione; 
+  Visto il decreto-legge 23 febbraio  2020,  n.  6,  convertito,  con
+modificazioni, dalla legge 5 marzo 2020, n. 13; 
+  Visto il decreto-legge 2 marzo 2020, n. 9; 
+  Visto il decreto-legge 8 marzo 2020, n. 11; 
+  Visto il decreto-legge 9 marzo 2020, n. 14; 
+  Ritenuta la straordinaria necessita' e  urgenza  di  contenere  gli
+effetti  negativi  che  l'emergenza   epidemiologica   COVID-19   sta
+producendo sul tessuto socio-economico nazionale,  prevedendo  misure
+di potenziamento del Servizio sanitario nazionale,  della  protezione
+civile e della sicurezza, nonche' di sostegno  al  mondo  del  lavoro
+pubblico e privato ed a favore delle famiglie e delle imprese; 
+  Ritenuta la straordinaria necessita' e urgenza di adottare altresi'
+disposizioni in materia di giustizia, di  trasporti,  per  i  settori
+agricolo e sportivo, dello spettacolo e della cultura, della scuola e
+dell'universita'; 
+  Ritenuta  altresi'  la  straordinaria  necessita'  e   urgenza   di
+prevedere la sospensione degli obblighi di versamento per  tributi  e
+contributi, di altri adempimenti e incentivi fiscali; 
+  Considerate le deliberazioni adottate dalle Camere in data 11 marzo
+2020, con  le  quali  il  Governo  e'  stato  autorizzato,  nel  dare
+attuazione a quanto indicato nella Relazione al Parlamento presentata
+ai sensi dell'articolo 6, comma 5, della legge 24 dicembre  2012,  n.
+243, allo scostamento e all'aggiornamento del piano di rientro  verso
+l'obiettivo di medio termine per fronteggiare le esigenze sanitarie e
+socio-economiche derivanti dall'emergenza epidemiologica COVID-19; 
+  Vista la deliberazione del Consiglio dei ministri,  adottata  nella
+riunione del 16 marzo 2020; 
+  Sulla proposta del Presidente del  Consiglio  dei  ministri  e  del
+Ministro dell'economia e delle finanze; 
+ 
+                              E m a n a 
+ 
+                     il seguente decreto-legge: 
+ 
+                               Art. 1 
+ 
+(Finanziamento aggiuntivo  per  incentivi  in  favore  del  personale
+            dipendente del Servizio sanitario nazionale) 
+ 
+  1. Per l'anno 2020,  allo  scopo  di  incrementare  le  risorse  da
+destinare  prioritariamente  alla  remunerazione  delle   prestazioni
+correlate  alle  particolari  condizioni  di  lavoro  del   personale
+dipendente  delle  aziende  e  degli  enti  del  Servizio   sanitario
+nazionale direttamente impiegato nelle attivita'  di  contrasto  alla
+emergenza epidemiologica determinata dal diffondersi del COVID-19,  i
+fondi contrattuali per le condizioni di lavoro della dirigenza medica
+e sanitaria dell'area della sanita' e i  fondi  contrattuali  per  le
+condizioni di lavoro e incarichi del personale del  comparto  sanita'
+nonche', per la restante parte, i  relativi  fondi  incentivant  sono
+complessivamente incrementati, per ogni regione e provincia autonoma,
+in deroga all'articolo 23, comma 2, del decreto legislativo 25 maggio
+2017, n. 75 e ai  vincoli  previsti  dalla  legislazione  vigente  in
+materia di spesa di personale, dell'importo indicato per ciascuna  di
+esse nella tabella A allegata al presente decreto. 
+  2. Per l'attuazione del comma 1 e'  autorizzata  la  spesa  di  250
+milioni  di  euro  a  valere  sul  finanziamento  sanitario  corrente
+stabilito per l'anno 2020. Al relativo finanziamento  accedono  tutte
+le regioni e le province autonome di Trento e di Bolzano,  in  deroga
+alle disposizioni  legislative  che  stabiliscono  per  le  autonomie
+speciali  il  concorso  regionale  e  provinciale  al   finanziamento
+sanitario corrente, sulla base delle quote  d'accesso  al  fabbisogno
+sanitario indistinto corrente rilevate per  l'anno  2019  e  per  gli
+importi indicati nella tabella A allegata al presente decreto. <em><strong>((Tali
+importi possono essere incrementati di un ammontare aggiuntivo il cui
+importo non puo' essere superiore al  doppio  degli  stessi))</strong></em>,  dalle
+regioni e dalle province autonome, con proprie risorse disponibili  a
+legislazione vigente, a condizione che sia salvaguardato l'equilibrio
+economico del sistema  sanitario  della  regione  e  della  provincia
+autonoma, per la remunerazione delle prestazioni di cui al  comma  1,
+compresa l'erogazione delle  indennita'  previste  dall'articolo  86,
+comma 6, del contratto collettivo nazionale  di  lavoro  relativo  al
+personale del comparto sanita' - Triennio 2016-2018,  pubblicato  nel
+supplemento ordinario alla Gazzetta Ufficiale n. 233  del  6  ottobre
+2018. A valere sulle risorse di cui al  presente  comma  destinate  a
+incrementare i fondi incentivanti, le regioni e le province  autonome
+possono riconoscere al  personale  di  cui  al  comma  1  un  premio,
+commisurato al servizio effettivamente prestato nel corso dello stato
+di emergenza deliberato dal Consiglio  dei  ministri  il  31  gennaio
+2020, di importo non superiore a 2.000 euro al lordo  dei  contributi
+previdenziali e assistenziali e degli  oneri  fiscali  a  carico  del
+dipendente e  comunque  per  una  spesa  complessiva,  al  lordo  dei
+contributi e degli oneri a carico dell'amministrazione, non superiore
+all'ammontare delle predette risorse destinate a incrementare i fondi
+incentivanti. 
+  3. Per le finalita' di cui all'articolo 2-bis, commi 1, lettera a),
+e 5, e' autorizzata l'ulteriore spesa  di  100  milioni  di  euro,  a
+valere sul finanziamento  sanitario  corrente  stabilito  per  l'anno
+2020, nei limiti degli importi indicati nella tabella A  allegata  al
+presente decreto. 
+</pre> 
+		<pre class="rosso"></pre>
+						
+
+		
+		
+
+				</div>
+
+				<div id = "testo" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 box SidebarTools">
+					
+
+ 
+
+
+
+
+
+
+
+
+
+
+<div class="sidebar-wrapper it-line-left-side py-1">
+	<div class="sidebar-linklist-wrapper">
+		<div class="link-list-wrapper">
+			<ul class="link-list">
+		        <li>
+		          <h3 class="no_toc">Approfondimenti</h3>
+		        </li>
+		        
+					
+						
+							
+							
+						
+						<li>
+							<a id="aggiornamenti_atto_button" data-href="/do/atto/vediAggiornamentiAllAtto?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034" data-toggle="modal" data-target="#aggiornamenti_atto" class="list-item medium">
+								aggiornamenti all&#39;atto
+							</a>
+						</li>
+					
+					
+				
+
+				
+					
+						
+							
+							
+							
+						
+						<li>
+							<a id="atti_aggiornati_button" data-href="/do/atto/vediAttiAggiornati/ALL?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034&amp;currentSearch=ricerca_avanzata_aggiornamenti" data-toggle="modal" data-target="#atti_aggiornati" class="list-item medium">
+								atti aggiornati
+							</a>
+						</li>
+					
+					
+				
+
+				
+					
+						
+							
+							
+							
+						
+						<li>
+							<a id="circolari_button" data-href="/do/atto/vediAttiCorrelati?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034&amp;currentSearch=ricerca_avanzata_aggiornamenti" data-toggle="modal" data-target="#circolari" class="list-item medium">
+								atti correlati
+							</a>
+						</li>
+					
+					
+				
+
+				
+					
+					
+						<li>
+							<a class="list-item medium disabled">
+								note atto
+							</a>
+						</li>
+					
+				
+
+				
+					
+					
+						<li>
+							<a class="list-item medium disabled">
+								lavori preparatori
+							</a>
+						</li>
+					
+				
+
+				
+					
+					
+						<li>
+							<a class="list-item medium disabled">
+								relazioni
+							</a>
+						</li>
+					
+				
+
+				
+					
+					
+						<li>
+							<a class="list-item medium disabled">
+								aggiornamenti al titolo
+							</a>
+						</li>
+					
+				
+
+				
+					
+						
+							
+							
+							
+						
+						<li>
+							<a id="aggiornamenti_struttura_button" data-href="/do/atto/vediAggiornamentiAllaStruttura?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034&amp;currentSearch=" data-toggle="modal" data-target="#aggiornamenti_struttura" class="list-item medium">
+								aggiornamenti alla struttura
+							</a>
+						</li>
+					
+					
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="sidebar-wrapper it-line-left-side py-1">
+	<div class="sidebar-linklist-wrapper">
+		<div class="link-list-wrapper">
+			<ul class="link-list">
+		        <li>
+		          <h3 class="no_toc">Funzioni </h3>
+		        </li>
+				<li>
+					
+						
+						
+						
+					
+					<a href="/atto/vediMenuHTML?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034&amp;currentSearch=ricerca_avanzata_aggiornamenti" target="_blank" class="list-item medium">
+						atto completo
+					</a>
+				</li>
+
+				<li>
+					
+						
+						
+						
+					
+					<a href="/atto/vediMenuExport?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034&amp;currentSearch=" target="_blank" class="list-item medium">
+						esporta
+					</a>
+				</li>
+				
+					
+						
+						
+					
+					<li>
+						<a data-href="/do/atto/vediPermalink?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034" data-toggle="modal" data-target="#collegamento_permanente" id="collegamento_permanente_button" class="list-item medium">
+							collegamento permanente
+						</a>
+					</li>
+					<!-- <li>
+						<a href="/staticPage/guidaInLinea.html"Guida in linea id="guida_linea_button" class="list-item medium">
+							guida in linea
+						</a>
+					</li> -->
+				
+				
+					
+						
+							
+							
+						
+						<li>
+							<a id="rubriche_button" data-href="/atto/vediRubriche?atto.dataPubblicazioneGazzetta=2020-03-17&amp;atto.codiceRedazionale=20G00034" data-toggle="modal" data-target="#rubriche" class="list-item medium">
+								Indice dell&#39;atto
+							</a>
+						</li>
+					
+					
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		
+
+
+
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container d-print-none">
+      <section>
+        <div class="row clearfix">
+          <div class="col-sm-12 BluLine">
+              <ul class="list-inline text-left social float-right">
+                <!-- <li class="list-inline-item"><a class="text-white" href="#" target="_blank">
+                  <svg class="icon icon-sm icon-white align-top">
+                    <use xlink:href="/svg/sprite.svg#it-facebook "></use>
+                  </svg>
+                  <span class="sr-only">Facebook</span></a>
+                </li>
+                <li class="list-inline-item"><a class="text-white" href="#" target="_blank">
+                  <svg class="icon icon-sm icon-white align-top">
+                    <use xlink:href="/svg/sprite.svg#it-twitter"></use>
+                  </svg>
+                  <span class="sr-only">Twitter</span></a>
+                </li>
+                <li class="list-inline-item"><a class="text-white" href="#" target="_blank">
+                  <svg class="icon icon-sm icon-white align-top">
+                    <use xlink:href="/svg/sprite.svg#it-instagram"></use>
+                  </svg>
+                  <span class="sr-only">Instagram</span></a>
+                </li>
+                <li class="list-inline-item"><a class="text-white" href="#" target="_blank">
+                  <svg class="icon icon-sm icon-white align-top">
+                    <use xlink:href="/svg/sprite.svg#it-youtube"></use>
+                  </svg>
+                  <span class="sr-only">Youtube</span></a>
+                </li>-->
+                <li class="list-inline-item"><a class="text-white" href="https://teamdigitale.governo.it/ " target="_blank">
+                  <svg class="icon icon-sm icon-white align-top">
+                    <use xlink:href="/svg/sprite.svg#it-team-digitale"></use>
+                  </svg>
+                  <span class="sr-only">Team Digitale</span></a>
+                </li>
+                <li class="list-inline-item"><a class="text-white" href="https://designers.italia.it/ " target="_blank">
+                  <svg class="icon icon-sm icon-white align-top">
+                    <use xlink:href="/svg/sprite.svg#it-designers-italia"></use>
+                  </svg>
+                  <span class="sr-only">Designers Italia</span></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid m-0 BackW d-print-none">
+      <div class="container">
+        <section>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4 class="ContributoTxt">CON IL CONTRIBUTO DI</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 pb-2">
+              <div class="img-wrapper text-left">
+              	<a href="http://www.governo.it/" target="_blank" class="LinkMin">
+              		<span class="font-weight-bold UpperText">presidenza del consiglio dei ministri</span>
+              	</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 pb-2">
+              <div class="img-wrapper text-center">
+              <a href="https://www.camera.it/" target="_blank" class="LinkMin">
+                <span class="font-weight-bold UpperText">camera dei deputati</span>
+              </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 pb-2">
+              <div class="img-wrapper text-right">
+              <a href="http://www.senato.it/home" target="_blank" class="LinkMin">
+                <span class="font-weight-bold UpperText">senato della repubblica</span>
+              </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="container d-print-none">
+      <section>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 pb-2">
+            <h4 class="mt-3">
+              IN COLLABORAZIONE CON
+            </h4>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="http://www.cortedicassazione.it">CORTE SUPREMA DI CASSAZIONE</a></li>
+                <li><a class="list-item" href="https://www.agid.gov.it/">AGENZIA PER L'ITALIA DIGITALE E PRESIDENZA DEL CONSIGLIO DEI MINISTRI</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 pb-2 text-center">
+            <h4 class="mt-3">
+              NORMATTIVA
+            </h4>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="/showArchivioNews">Archivio news</a></li>
+                <li><a class="list-item" href="/staticPage/progetto">Il progetto</a></li>
+                <li><a class="list-item" href="/staticPage/guidaAllUso">Guida all&#39;uso</a></li>
+                <li><a class="list-item" href="/staticPage/ricercaNeiDocumenti">Collegamenti veloci</a></li>
+                <li><a class="list-item" href="/ricerca/avanzata">Ricerca avanzata</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 pb-2 text-right">
+            <h4 class="mt-3">
+              Collegamenti veloci
+            </h4>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="/staticPage/codici">Costituzione e Codici</a></li>
+                <li><a class="list-item" href="/ricerca/elencoPerData">Elenco atti per data di emanazione</a></li>
+                <li><a class="list-item" href="/staticPage/gazzetta">Gazzetta Ufficiale</a></li>
+                <li><a class="list-item" href="/legislazioneRegionale">Motore federato regionale</a></li>
+                <li><a class="list-item" href="/staticPage/leggi_approvate">Leggi approvate in attesa di pubblicazione</a></li>
+                <li><a class="list-item" href="/staticPage/utilita">Utilità</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="py-4 border-white border-top">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 pb-2">
+            <h4 class="mt-3">
+              Contatti
+            </h4>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li>
+                  <a href="/staticPage/contatti" title="Vai alla pagina: Contatti">
+                  <svg class="icon icon-white">
+                    <use xlink:href="/svg/sprite.svg#it-mail"></use>
+                  </svg>
+                  <span class="sr-only">contatti</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 text-right">
+            <h4 class="mt-3">
+              REALIZZAZIONE E GESTIONE
+            </h4>
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="https://www.ipzs.it" title="vai al link ISTITUTO POLIGRAFICO E ZECCA DELLO STATO">ISTITUTO POLIGRAFICO E ZECCA DELLO STATO</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-print-none">
+          <h3 class="sr-only text-white">Sezione Link Utili</h3>
+          <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row p-2">
+            <li class="list-inline-item"><a class="list-item" href="/staticPage/cookie_policy"><span>Cookie policy</span></a></li>
+            <li class="list-inline-item"><a class="list-item" href="/staticPage/privacy_policy"><span>Privacy policy</span></a></li>
+            <li class="list-inline-item"><a class="list-item" href="/staticPage/legal"><span>Note legali</span></a></li>
+            <li class="list-inline-item"><a class="list-item" href="/mappa"><span>Mappa del sito</span></a></li>
+            <li class="list-inline-item"><a class="list-item" href="/staticPage/faq"><span>FAQ</span></a></li>
+            <li class="list-inline-item"><a class="list-item" href="/staticPage/guidaAllUso_Accessibilita"><span>Accessibilità</span></a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="float-right">
+            <small class="text-white">Portale Normattiva, Versione 2.0.6</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center">
+	<a href="#" aria-hidden="true" data-attribute="back-to-top" class="back-to-top shadow">
+    <span class="sr-only text-white">torna su</span>
+    <svg class="icon icon-light"><use xlink:href="/svg/sprite.svg#it-arrow-up"></use></svg>
+	</a>
+</div>
+
+
+</footer>
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+		<div class="modal" tabindex="-1" role="dialog" id="lavori_preparatori" >
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+				
+				<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_lavoriPreparatori');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_lavoriPreparatori">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">lavori preparatori</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="aggiornamenti_atto">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+				
+				<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_aggiornamentiAtto');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_aggiornamentiAtto">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">aggiornamenti all&#39;atto</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				 </div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="atti_aggiornati">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+				
+				<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_attiAggiornati');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_attiAggiornati">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">atti aggiornati</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="circolari">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     	<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_circolari');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_circolari">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">atti correlati</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				</div>
+			
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="rubriche">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     		<div class="modal-header">
+		       			<h2 class="modal-title">Indice dell&#39;atto</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="aggiornamenti_struttura">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     	<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_aggiornamentiStruttura');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_aggiornamentiStruttura">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">aggiornamenti alla struttura</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="aggiornamenti_titolo">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+				
+				<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_aggiornamentiTitolo');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_aggiornamentiTitolo">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">aggiornamenti al titolo</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				  </div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="relazioni">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     	<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_relazioni');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_relazioni">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">relazioni</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="note_atto">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     	<div class="col-12 text-right pr-3 SpaceTopCol pt-3 pb-0">
+					<a  target="_blank" onclick="printModal('modalContent_noteAtto');" class="btn btn-primary btn-sm btn-icon p-1"> <svg class="icon icon-white IconCustom">
+							<use xlink:href="/svg/sprite.svg#it-print "></use></svg>
+					</a>
+				</div>
+				
+				<div id="modalContent_noteAtto">
+
+		     		<div class="modal-header pt-1">
+		       			<h2 class="modal-title">note atto</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+				   	
+				 </div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="collegamento_permanente">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     		<div class="modal-header">
+		       			<h2 class="modal-title">collegamento permanente</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="guida_linea">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     		<div class="modal-header">
+		       			<h2 class="modal-title">guida in linea</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="aggiornamenti_articolo">
+
+			<div class="modal-dialog" role="document">
+
+				<div class="modal-content">
+
+		     		<div class="modal-header">
+		       			<h2 class="modal-title">Aggiornamenti all'articolo</h2>
+	     			</div>
+
+				    <div class="modal-body">
+
+				   	</div>
+
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">chiudi</button>
+				    </div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		
+
+
+ 	<form action="#" id="formConTabID" method="GET"><input type="hidden" name="tabID" id="tabID" /><input type="hidden" name="title" /></form>
+
+<script>
+
+	window.__PUBLIC_PATH__ = '/fonts'
+
+	var contextRoot = '/';
+</script>
+	
+
+<script src="/js/bootstrap-italia.bundle.min.js" ></script>
+<script src="/js/bootstrap3-typeahead.min.js"></script>
+
+<script type="text/javascript" src="/js/properties.js"></script>
+
+<script type="text/javascript" src="/js/printThis.js"></script>
+
+<script type="text/javascript" src="/js/normattiva.js"></script>
+<script type="text/javascript" src="/tempJs/functions.js"></script>
+<script type="text/javascript" src="/tempJs/main.js"></script>
+
+<!-- MappaItalia -->
+<script type="text/javascript" src="/js/plugins/raphael/raphael-min.js"></script>
+
+<script>
+	var primaryTabID = ''
+	if (primaryTabID == '') {
+		tabID = 2;
+	} else {
+		tabID=primaryTabID;
+		if (sessionStorage) {
+			sessionStorage.tabID=primaryTabID;
+		}
+	}
+	if (sessionStorage) {
+		tabID = sessionStorage.tabID ? sessionStorage.tabID : sessionStorage.tabID = Math.random();
+	}
+	var el=document.getElementsByName("tabID");
+	for (i=0; i<el.length; i++) {
+		el[i].value=tabID;
+	}
+	function evaluateHref(el, titolo) {
+		evaluateHrefCore(el, titolo, false, false);
+	}
+	function evaluateHrefNewPage(el, titolo) {
+		evaluateHrefCore(el, titolo, true, false);
+	}
+	function evaluateHrefBlock(el, titolo) {
+		evaluateHrefCore(el, titolo, false, true);
+	}
+	function evaluateHrefNewPageBlock(el, titolo) {
+		evaluateHrefCore(el, titolo, true, true);
+	}
+	function evaluateHrefCore(el, titolo, newTab, block) {
+		var tabID=document.getElementById('tabID').value;
+		var ref=el.href;
+		if (ref.includes("tabID=")) {
+			ref=ref.substring(0, el.href.indexOf("tabID=")-1);
+			el.href=ref;
+		}
+		if (el.href.includes("?")) {
+			el.href+="&";
+		} else {
+			el.href+="?";
+		}
+		el.href+="tabID="+tabID+"&title="+titolo;
+		if (newTab || event.which==2 ||event.which==3) {
+			el.href+="&generaTabId=true";
+		}
+		if (block) {
+			el.href+="&bloccoAggiornamentoBreadCrumb=true";
+		}
+	}
+	
+	
+	
+	function isValidUrl4GA(url) {
+		if(url.includes("/gotoBreadCrumb") 
+				|| url.includes("/filter/add") 
+				|| url.includes("/filter/remove") 
+		){
+			return false
+		}else{
+			return true
+		}	
+	}
+	
+	
+	function removeURLParameter(url, parameter) {
+	    //prefer to use l.search if you have a location/link object
+	    var urlparts = url.split('?');   
+	    if (urlparts.length >= 2) {
+
+	        var prefix = encodeURIComponent(parameter) + '=';
+	        var pars = urlparts[1].split(/[&;]/g);
+
+	        //reverse iteration as may be destructive
+	        for (var i = pars.length; i-- > 0;) {    
+	            //idiom for string.startsWith
+	            if (pars[i].lastIndexOf(prefix, 0) !== -1) {  
+	                pars.splice(i, 1);
+	            }
+	        }
+
+	        return urlparts[0] + (pars.length > 0 ? '?' + pars.join('&') : '');
+	    }
+	    return url;
+	}
+	
+	
+	/* Analytics */
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  
+	  if(isValidUrl4GA(location.pathname)){
+	  
+		
+		ga('create','UA-180222408-1','auto');
+		
+		
+		  
+		  
+		  //Rimuovi parametri tecnici 
+		  var urlPage = location.pathname + removeURLParameter(removeURLParameter(removeURLParameter(removeURLParameter(removeURLParameter(location.search, 'tabID'), 'title'),'initBreadCrumb'),'bloccoAggiornamentoBreadCrumb'), 'qId') ;
+		  
+		  ga('set', 'anonymizeIp', true);
+		  
+		 /*Google custom dimension*/
+		 
+	     
+	     ga('set', 'page', urlPage);
+	    		 
+	     ga('send', 'pageview');
+	  }
+	  
+</script>
+
+
+
+	</body>
+
+</html>
