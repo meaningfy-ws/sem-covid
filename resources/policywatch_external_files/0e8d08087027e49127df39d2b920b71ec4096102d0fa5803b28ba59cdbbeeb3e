@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<script type="text/plain" data-cookieconsent="statistics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CG92Q3');</script>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<!-- Facebook Pixel Code -->
+<script type="text/plain" data-cookieconsent="marketing">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '940685132747035');
+  fbq('track', 'PageView');
+</script>
+<!-- End Facebook Pixel Code -->
+
+<meta charset="utf-8">
+<!-- 
+	Website by LIMESODA Interactive Marketing GmbH | www.limesoda.com
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2021 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+<link rel="shortcut icon" href="/typo3conf/ext/site_default/Resources/Public/Icons/favicon.ico" type="image/x-icon">
+
+<meta name="generator" content="TYPO3 CMS" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="404" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://wirtschaftsagentur.at/404/" />
+<meta property="og:site_name" content="Wirtschaftsagentur" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="404" />
+<meta name="google" content="notranslate" />
+<meta name="google-site-verification" content="0w8HFoCM7f2FsYDryeVFjXujFE4wlfgcNCx-KHY9wUI" />
+<meta name="apple-mobile-web-app-capable" content="no" />
+<meta name="msapplication-config" content="none" />
+
+
+<link rel="stylesheet" type="text/css" href="/typo3temp/assets/compressed/merged-b2313238682c4bf51ebbd4804a3097da-919022e138638930ab7544c9fb92f82e.css?1611680698" media="all">
+
+
+
+
+<script src="/typo3temp/assets/compressed/merged-0983b078b2187d38a9f3276956f28393-16a22cb2de91a24610dc9e4aeec62789.js?1611680698"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+/*_scriptCode*/
+
+			/* decrypt helper function */
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			/* decrypt string */
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	/* 0-9 . , - + / : */
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	/* A-Z @ */
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	/* a-z */
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			/* decrypt spam-protected emails */
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,3);
+		}
+		
+
+/*TS_inlineJS*/
+
+LSCookieConsentOptions = {labels: {LABEL_REQUIRED: 'Erforderliche Cookies',LABEL_STATISTICS: 'Statistik',LABEL_MARKETING: 'Marketing',LABEL_OK: 'Auswahl bestätigen',LABEL_ALL: 'Alle Cookies akzeptieren',EXPLANATION: 'Um die Webseite optimal gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Nähere Informationen finden Sie in  <a href="/datenschutz/" title="Hier gelangen Sie zu unserer Datenschutzerklärung">unserer Datenschutzerklärung.</a>',DETAILS: 'Cookie-Präferenzen'},placement: 'bottom',container: 'popup-cookieconsent',hideOptions:true,trackImmediately:false};
+
+
+/*]]>*/
+</script>
+
+
+<title>Wirtschaftsagentur.at: Ein Fonds der Stadt Wien › 404</title><meta name="theme-color" content="#E21D1A">
+<meta property="og:title" content="404" />		<script type="text/javascript" src="//use.typekit.net/pgw8qcy.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <!--[if lt IE 9]>
+            <script src="/typo3conf/ext/site_default/Resources/Public/js/ie/html5shiv.min.js"></script>
+            <script src="/typo3conf/ext/site_default/Resources/Public/js/ie/respond.min.js"></script>
+        <![endif]-->
+<link rel="canonical" href="https://wirtschaftsagentur.at/404/"/>
+
+<link rel="alternate" hreflang="de-AT" href="https://wirtschaftsagentur.at/404/"/>
+<link rel="alternate" hreflang="en-EN" href="https://viennabusinessagency.at/404/"/>
+<link rel="alternate" hreflang="x-default" href="https://wirtschaftsagentur.at/404/"/>
+
+</head>
+<body id="body_id_213" data-language-uid="0" class="static">
+
+
+
+<div class="wa-wrapper" id="top" data-scrolltotoplabel="Nach oben">
+
+    <!--
+        global header
+    -->
+    <header class="wa-header-top">
+        <div class="navbar">
+            <!-- sticky navigation: search, language selector, social media links -->
+            <a class="wa-logo__homelink" href="/">
+                Wirtschaftsagentur Wien
+            </a>
+            <div class="wa-sticky">
+                <ul>
+                    <li class="wa-search">
+                        
+                        <form class="wa-search-form" action="/suche/" method="get" role="search" data-autocomplete="/">
+    <div>
+        <label for="wa-search-q" class="visuallyhidden">
+            Suche
+        </label>
+		<input type="text" name="tx_kesearch_pi1[sword]" value="" id="wa-search-q" class="visuallyhidden">
+		<button type="submit" id="wa-search-button">
+			<i class="wa-icon-search"> </i>
+			<span class="visuallyhidden">Suche</span>
+		</button>
+    </div>
+</form>
+
+                    </li>
+
+                    <li class="wa-login"><a href="/login/"><i class="wa-icon-user"> </i> <span class="label">Login</span></a></li>
+
+                    
+                    <li class="wa-lang"><a href="/404/" lang="de" class="active" style="display:none"><i class="wa-icon-lang"> </i> <span class="label">Deutsch</span></a><a href="https://viennabusinessagency.at/404/" lang="en"><i class="wa-icon-lang"> </i> <span class="label">English</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- logo -->
+
+        <!-- main navigation, first level -->
+        <nav class="wa-nav-main">
+            <div class="wa-logo">
+                <a class="wa-logo__link" href="/" title="Wirtschaftsagentur Wien">
+                    <img class="wa-logo__image" alt="Wirtschaftsagentur Wien" src="/typo3conf/ext/site_default/Resources/Public/images/logo_de.svg" width="155" height="155" title="" />
+                </a>
+            </div>
+            <ul><li><a href="/ueber-uns/das-unternehmen/organisation/"><i class="wa-icon-about"> </i> <span class="label">Über uns</span></a><ul><li><span class="wa-nav-main-group">Das Unternehmen</span><ul><li class="wa-nav-collapsed"><a href="/ueber-uns/das-unternehmen/organisation/">Organisation</a><ul><li><a href="/ueber-uns/das-unternehmen/organisation/gender-und-diversitaet/">Gender und Diversität</a></li><li><a href="/ueber-uns/das-unternehmen/organisation/compliance/">Compliance</a></li><li><a href="/ueber-uns/das-unternehmen/organisation/bildnachweis/">Bildnachweis</a></li></ul></li><li><a href="/ueber-uns/das-unternehmen/team/">Team</a></li></ul></li></ul></li><li><a href="/foerderungen/aktuelle-programme/"><i class="i-foerderung"> </i> <span class="label">Förderungen</span></a><ul><li><a href="/foerderungen/aktuelle-programme/">Aktuelle Programme</a></li><li><a href="https://cockpit.wirtschaftsagentur.at">Online-Förderantrag</a></li><li><span class="wa-nav-main-group">Infos</span><ul><li><a href="/foerderungen/infos/lets-talk-foerderungen/">Let's talk Förderungen</a></li><li><a href="/foerderungen/infos/lets-talk-lebensmittel/">Let's talk Lebensmittel</a></li></ul></li></ul></li><li><a href="/beratungen"><i class="i-beratung"> </i> <span class="label">Beratungen</span></a><ul><li><a href="/beratungen/">Übersicht</a></li></ul></li><li><a href="/immobilien/lets-talk-standorte/"><i class="wa-icon-space"> </i> <span class="label">Immobilien</span></a><ul><li><a href="/immobilien/lets-talk-standorte/">Immobilien</a></li><li><span class="wa-nav-main-group">Arbeitsräume</span><ul><li class="wa-nav-collapsed"><a href="/immobilien/arbeitsraeume/bueros-mieten/">Büros mieten</a><ul><li><a href="/immobilien/arbeitsraeume/bueros-mieten/energybase/">ENERGYbase</a></li><li><a href="/immobilien/arbeitsraeume/bueros-mieten/mariahilfer-strasse/">Mariahilfer Straße</a></li><li><a href="/immobilien/arbeitsraeume/bueros-mieten/media-quarter-marx/">Media Quarter Marx</a></li><li><a href="/immobilien/arbeitsraeume/bueros-mieten/stutterheimstrasse/">Stutterheimstraße</a></li><li><a href="/immobilien/arbeitsraeume/bueros-mieten/technologiezentrum-seestadt/">Technologiezentrum Seestadt</a></li></ul></li><li><a href="/immobilien/arbeitsraeume/labs-mieten/">Labs mieten</a></li><li><a href="/immobilien/arbeitsraeume/buero-services/">Büro-Services</a></li></ul></li><li><span class="wa-nav-main-group">Technologiezentrum Seestadt</span><ul><li><a href="/immobilien/technologiezentrum-seestadt/technologiezentrum-seestadt/">Technologiezentrum Seestadt</a></li></ul></li><li><span class="wa-nav-main-group">Standortentwicklung</span><ul><li><a href="/immobilien/standortentwicklung/vienna-business-districts/">Vienna Business Districts</a></li><li><a href="/immobilien/standortentwicklung/media-quarter-marx/">Media Quarter Marx</a></li><li><a href="/immobilien/standortentwicklung/vienna-biocenter/">Vienna Biocenter</a></li><li><a href="/immobilien/standortentwicklung/vienna-innovation-area/">Vienna Innovation Area</a></li></ul></li></ul></li><li><a href="/international/wirtschaftsmetropole-wien/"><i class="wa-icon-international"> </i> <span class="label">International</span></a><ul><li><a href="/international/wirtschaftsmetropole-wien/">Wirtschaftsmetropole Wien</a></li><li><span class="wa-nav-main-group">Invest in Vienna</span><ul><li><a href="/international/invest-in-vienna/betriebsansiedlung-in-wien/">Betriebsansiedlung in Wien</a></li><li><a href="/international/invest-in-vienna/expat-in-wien/">Expat in Wien</a></li></ul></li><li><span class="wa-nav-main-group">Standort Wien</span><ul><li><a href="/international/standort-wien/wirtschaftsstandort-wien/">Wirtschaftsstandort Wien</a></li><li><a href="/international/standort-wien/daten-und-fakten/">Daten und Fakten</a></li><li><a href="/international/standort-wien/wien-im-weltweiten-vergleich/">Wien im weltweiten Vergleich</a></li></ul></li></ul></li><li><a href="/startup-city-vienna/startup-in-wien/"><i class="wa-icon-start-up"> </i> <span class="label">Startup City Vienna</span></a><ul><li><a href="/startup-city-vienna/startup-in-wien/">Startup in Wien</a></li><li><a href="/startup-city-vienna/aktuelle-calls-wettbewerbe/">Aktuelle Calls & Wettbewerbe</a></li><li><a href="/startup-city-vienna/startup-oekosystem/">Startup Ökosystem</a></li><li><a href="/startup-city-vienna/faqs/">FAQs</a></li></ul></li><li><a href="/gruenden-und-wachsen/neu-gruenden-und-wachsen/"><i class="i-gruenden"> </i> <span class="label">Gründen und Wachsen</span></a><ul><li><span class="wa-nav-main-group">Gründen und Wachsen</span><ul><li><a href="/gruenden-und-wachsen/neu-gruenden-und-wachsen/von-der-idee-zum-unternehmen/">Beratung & Orientierung</a></li><li><a href="/gruenden-und-wachsen/neu-gruenden-und-wachsen/workshops-coachings-labs/">Coachings & Labs</a></li><li><a href="/workshops/">Academy-Workshops</a></li></ul></li></ul></li><li><a href="/technologie/technologiestandort-wien/"><i class="wa-icon-technology"> </i> <span class="label">Technologie</span></a><ul><li><a href="/technologie/technologiestandort-wien/">Technologiestandort Wien</a></li><li><span class="wa-nav-main-group">Technologie erleben</span><ul><li><a href="/technologie/technologie-erleben/workshops/">Workshops für Schulklassen</a></li></ul></li><li><span class="wa-nav-main-group">Co-Creation Lab Vienna</span><ul><li><a href="/technologie/co-creation-lab-vienna/co-creation-lab/">Co-Creation Lab</a></li></ul></li><li><span class="wa-nav-main-group">Technologieplattform</span><ul><li><a href="/technologie/technologieplattform/technologien-aus-wien/">Technologien aus Wien</a></li><li><a href="/technologie/technologieplattform/unternehmen-eintragen/">Unternehmen eintragen</a></li><li><a href="/technologie/technologieplattform/ueber-die-technologieplattform/">Über die Technologieplattform</a></li></ul></li></ul></li><li><a href="/creative-industries/kreatives-wien-entwickeln/"><i class="wa-icon-creative"> </i> <span class="label">Creative Industries</span></a><ul><li><a href="/creative-industries/kreatives-wien-entwickeln/">Kreatives Wien entwickeln</a></li><li><a href="/creative-industries/mission-creative-industries/">Mission: Creative Industries</a></li><li><span class="wa-nav-main-group">Make things happen</span><ul><li><a href="/creative-industries/make-things-happen/challenges/">Challenges</a></li><li><a href="/creative-industries/make-things-happen/mehrwert-kooperation/">Mehrwert Kooperation</a></li></ul></li><li><span class="wa-nav-main-group">Wettbewerbe</span><ul><li><a href="/creative-industries/wettbewerbe/content-vienna/">Content Vienna</a></li><li class="wa-nav-collapsed"><a href="/creative-industries/wettbewerbe/creatives-for-vienna/">Creatives for Vienna</a><ul><li><a href="/creative-industries/wettbewerbe/creatives-for-vienna/praemierte-ideen/">Prämierte Ideen</a></li></ul></li></ul></li></ul></li><li><a href="/veranstaltungen"><i class="i-news"> </i> <span class="label">News, Workshops und Veranstaltungen</span></a><ul><li><a href="/news/">News</a></li><li><a href="/veranstaltungen/">Veranstaltungen</a></li><li><a href="/workshops/">Academy-Workshops</a></li></ul></li><li><a href="/erfolgsgeschichten/uebersicht/" title="Erfolgsgeschichten"><i class="i-erfolgsgeschichten"> </i> <span class="label">Erfolgsgeschichten</span></a><ul><li><a href="/erfolgsgeschichten/uebersicht/">Übersicht</a></li><li><a href="/erfolgsgeschichten/apeiron/">Apeiron</a></li><li><a href="/erfolgsgeschichten/arthur-arbesser/">Arthur Arbesser</a></li><li><a href="/erfolgsgeschichten/aws-designteam/">AWS Designteam</a></li><li><a href="/erfolgsgeschichten/bluen/">blün</a></li><li><a href="/erfolgsgeschichten/ch4pa-spirit-design/">CH4PA - Spirit Design</a></li><li><a href="/erfolgsgeschichten/chatbots-agency/">Chatbots Agency</a></li><li><a href="/erfolgsgeschichten/compact-electric/">Compact Electric</a></li><li><a href="/erfolgsgeschichten/courseticket/">Courseticket</a></li><li><a href="/erfolgsgeschichten/crystalline-mirror-solutions/">Crystalline Mirror Solutions</a></li><li><a href="/erfolgsgeschichten/elfenkleid/">Elfenkleid</a></li><li><a href="/erfolgsgeschichten/erdbeerwoche/">erdbeerwoche</a></li><li><a href="/erfolgsgeschichten/eversports/">Eversports</a></li><li><a href="/erfolgsgeschichten/evva/">EVVA</a></li><li><a href="/erfolgsgeschichten/fateeva/">FATEEVA</a></li><li><a href="/erfolgsgeschichten/ferrari-zoechling/">Ferrari Zöchling</a></li><li><a href="/erfolgsgeschichten/fleischerei-klaghofer/">Fleischerei Klaghofer</a></li><li><a href="/erfolgsgeschichten/gst-antivirals/">G.ST Antivirals</a></li><li><a href="/erfolgsgeschichten/iss-mich/">iss mich!</a></li><li><a href="/erfolgsgeschichten/house-of-supersense/">House of SUPERSENSE</a></li><li><a href="/erfolgsgeschichten/insititue-fuer-molekulare-pathologie/" title="Insititue für Molekulare Pathologie">Institut für Molekulare Pathologie</a></li><li><a href="/erfolgsgeschichten/joadre/">Joadre</a></li><li><a href="/erfolgsgeschichten/kunabi-brother/">Kunabi Brother</a></li><li><a href="/erfolgsgeschichten/lithoz/">Lithoz</a></li><li><a href="/erfolgsgeschichten/marinomed/">Marinomed</a></li><li><a href="/erfolgsgeschichten/markta-und-unverschwendet/">markta und unverschwendet</a></li><li><a href="/erfolgsgeschichten/media-apparat/">Media Apparat</a></li><li><a href="/erfolgsgeschichten/mikme/">Mikme</a></li><li><a href="/erfolgsgeschichten/music-traveler/">Music Traveler</a></li><li><a href="/erfolgsgeschichten/mysugr/">mySugr</a></li><li><a href="/erfolgsgeschichten/obstraupe/" title="Obstraupe">Obstraupe</a></li><li><a href="/erfolgsgeschichten/parkbob/">Parkbob</a></li><li><a href="/erfolgsgeschichten/pregenerate/">PreGenerate</a></li><li><a href="/erfolgsgeschichten/scan/">s::can</a></li><li><a href="/erfolgsgeschichten/silvia-mueller/">Silvia Müller</a></li><li><a href="/erfolgsgeschichten/tourradar/">TourRadar</a></li><li><a href="/erfolgsgeschichten/ubimet/">UBIMET</a></li><li><a href="/erfolgsgeschichten/vanillas/">Vanillas</a></li><li><a href="/erfolgsgeschichten/vollpension/">Vollpension</a></li><li><a href="/erfolgsgeschichten/voltia/">Voltia</a></li><li><a href="/erfolgsgeschichten/waytation/">Waytation</a></li><li><a href="/erfolgsgeschichten/wedco/">Wedco</a></li><li><a href="/erfolgsgeschichten/wiegert/">Wiegert</a></li></ul></li></ul>
+        </nav>
+    </header>
+
+    <!--
+        main content
+    -->
+    <main class="js-main-height">
+		<div class="wa-content">
+			<h1 class="visuallyhidden">404</h1>
+	        <!--TYPO3SEARCH_begin-->
+            <h1 class="wa-headline">Seite nicht gefunden</h1>
+	        <!--TYPO3SEARCH_end-->
+		</div>
+	</main>
+
+    <!--
+        global footer
+    -->
+    <footer class="wa-footer-global">
+        <!-- meta navigation -->
+        <div class="wa-nav-meta">
+            <ul><li><a href="/kontakt/">Kontakt</a></li><li><a href="/newsletter/">Newsletter</a></li><li><a href="/jobs/">Jobs</a></li><li><a href="/presse/">Presse</a></li><li><a href="/impressum/">Impressum</a></li><li><a href="/datenschutz/">Datenschutz</a></li><li><a href="/barrierefreiheit/">Barrierefreiheit</a></li></ul>
+        </div>
+
+        <!-- address (microformatted) -->
+		<div class="wa-contact" role="contentinfo">
+			<div class="h-card">
+				<p class="p-name">Wirtschaftsagentur Wien.<br>Ein Fonds der Stadt Wien.</p>
+				<p class="p-adr h-adr">
+					<i class="wa-icon-location"> </i>
+					<span class="p-street-address">Mariahilfer Straße 20</span>
+					<span class="p-locality">1070 Wien</span>
+					<span class="p-country-name">Österreich</span>
+				</p>
+				<p class="p-tel">
+					<i class="wa-icon-phone"> </i>
+					<a href="tel:+43125200">+43 1 25200</a>
+				</p>
+			</div>
+            <div class="wa-social">
+                <ul>
+                    <li class="facebook">
+						<i class="i-facebook"> </i>
+						<a href="https://www.facebook.com/WirtschaftsagenturWien" target="_blank" rel="noopener noreferrer">Facebook</a>
+					</li>
+                    <li class="linkedin">
+						<i class="i-linkedin"> </i>
+						<a href="https://www.linkedin.com/company/vienna-business-agency/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+					</li>
+                </ul>
+            </div>
+		</div>
+    </footer>
+</div>
+<script src="/typo3temp/assets/compressed/merged-04d08ef063deece111d7cbc88b27a777-4dacf9575dcee0dffbb4d9483ef3a132.js?1611680698" type="" async="async"></script>
+
+<script src="/typo3temp/assets/compressed/merged-b5f97f209ec13044dd95d9c3c7a01861-37e537d0dbd97ece6774334ed4bce5c5.js?1611680698"></script>
+
+
+
+</body>
+</html>

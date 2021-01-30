@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>ZZZS - Napaka</title>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<meta name='description' content='ZZZS Napaka ' />
+<link rel='stylesheet' href='/webdsg.nsf/zzzsMPR.css' type='text/css' media='all' title='ZZZS normal' charset='utf-8' />
+<link rel='alternate stylesheet'  href='/webdsg.nsf/zzzsXPR.css' type='text/css' media='all' title='ZZZS big'>
+<!--[if lte IE 6]><link rel='stylesheet' href='/webdsg.nsf/ie6.css' type='text/css' title='ZZZS normal' charset='utf-8' /><![endif]-->
+<script src='/webdsg.nsf/jquery-1.2.6.min.portal.js' type='text/javascript' charset='utf-8'></script>
+<script src='/webdsg.nsf/jquery.bgiframe.min.portal.js' type='text/javascript' charset='utf-8'></script>
+<script src='/webdsg.nsf/hoverIntent.portal.js' type='text/javascript' charset='utf-8'></script>
+<script src='/webdsg.nsf/styleswitch.portal.js' type='text/javascript' charset='utf-8'></script>
+<script src='/webdsg.nsf/superfish.portal.js' type='text/javascript' charset='utf-8'></script>
+<script src='/webdsg.nsf/navigacija.portal.js' type='text/javascript' charset='utf-8'></script>
+
+<script language="JavaScript" type="text/javascript">
+<!-- 
+document._domino_target = "_self";
+function _doClick(v, o, t) {
+  var returnValue = false;
+  var url="&Click=" + v;
+  if (o.href != null) {
+    o.href = url;
+    returnValue = true;
+  } else {
+    if (t == null)
+      t = document._domino_target;
+    window.open(url, t);
+  }
+  return returnValue;
+}
+// -->
+</script>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" class='content-level-7'>
+
+<form action=""></form><div id="body">	
+ 	 <div id="header">
+ 	 	<h1 style="display: block;"><a href="/index.html" title="ZZZS &mdash; Zavod za zdravstveno zavarovanje Slovenije">ZZZS &mdash; Zavod za zdravstveno zavarovanje Slovenije</a></h1>
+		<div id="home"><a href="/index.html">prva stran</a></div>
+		<p id="hImg"><img src="http://www.cbz.si/webdsg.nsf/solidarnost.jpg" width="156" height="94" alt="Solidarnost"></p>
+		</div>
+  <br class="clear">
+	 <div id="main-content" >
+			<ul id="crumbs-nav">
+				<li><a href="/index.html">www.zzzs.si</a></li>
+			</ul> 
+			<div  class="content clearfix"> 
+				<h1>Napaka</h1><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr><td><img src="http://www.cbz.si/webdsg.nsf/spacer.gif" alt="" width="5" height="5" /></td></tr>
+				<tr><td>
+<p><b><font size="5">Spletne strani ni mogoče najti.<br>
+
+</font></b><br><br>
+Vljudno vas vabimo, da se napotite na <b><a href='http://www.zzzs.si' >začetno stran</a></b></a><br><br>Če želite lahko napako sporočite na naslov: webmaster@zzzs.si<br>***Napaka je***= HTTP Web Server: Couldn t find design note - o/55F91A45343677D6C125852D0030324   <br>***Stran z napako***= /zzzs/internet/zzzs.nsf/o/55F91A45343677D6C125852D0030324   <br>****Browser***= python-requests/2.25.1<br>*** Referenca *** = <a href="javascript: mywin = window.open('***Napaka je***= HTTP Web Server: Couldn t find design note - o/55F91A45343677D6C125852D0030324   <br>***Stran z napako***= /zzzs/internet/zzzs.nsf/o/55F91A45343677D6C125852D0030324   <br>****Browser***= python-requests/2.25.1','mywindow');mywin.focus()">***Napaka je***= HTTP Web Server: Couldn t find design note - o/55F91A45343677D6C125852D0030324   <br>***Stran z napako***= /zzzs/internet/zzzs.nsf/o/55F91A45343677D6C125852D0030324   <br>****Browser***= python-requests/2.25.1</a>
+
+				</td></tr>
+				<tr><td><img src="http://www.cbz.si/webdsg.nsf/spacer.gif" alt="" width="10" height="10" /></td></tr>
+				</table>
+			 				    
+			</div> <!--content -->
+   </div> <!-- main content --> 
+	<div id="footer">
+	 	 <div id="footer-nav">        
+		<p>	
+		<a href="http://www.zzzs.si/">Domov</a>
+		<a href="http://www.cbz.si/cbz/bazazdr2.nsf/Search/$searchForm?SearchView">Centralna baza zdravil</a>
+		<a href="https://zavarovanec.zzzs.si/wps/portal/portali/azos/mtp/mp_seznam_dobaviteljev/">Dobavitelji medicinskih pripomočkov</a>
+		<a href="https://zavarovanec.zzzs.si/wps/portal/portali/azos/pravice_zdravstvenih_storitev/cakalne_dobe">Čakalne dobe in ordinacijski časi</a>
+		</p>        
+		
+		<p>
+		<a href="http://www.zzzs.si/tujina">Mednarodno zdravstveno zavarovanje in naročanje evropske kartice zdravstvenega zavarovanja</a>
+		<a href="http://www.zzzs.si/egradiva">Elektronska gradiva ZZZS</a> 
+		</p>         
+		
+		<p>
+		<a href="http://www.zzzs.si/zzzs/internet/zzzsjn.nsf">Javna naročila ZZZS</a>
+		<a href="/zaposlitve">Zaposlitve</a>
+		<a href="http://www.zzzs.si/zzzs/internet/zzzs.nsf/o/C39D17FB75BC0140C1256D41002D375C">Povezave na sorodne strani</a>
+<!--		<a href="http://www.zzzs.si/zzzs/internet/zzzs.nsf/o/117B56F75EDF9BDFC12574E200287B3A">Informacije o delovanju ON-LINE sistema</a> -->
+		<a href="https://partner.zzzs.si/wps/portal/portali/aizv/e-poslovanje/sistem_on_line_resitve_za_preverjanje_urejenosti_z/sistem_on_line/">Informacije o delovanju ON-LINE sistema</a>
+		</p>
+		<p>
+                                <a href="http://www.zzzs.si/zzzs/internet/zzzs.nsf/o/9FA597ABDE867677C1257F46003F37F2">Prijava suma goljufij</a>
+		<a href="http://www.zzzs.si/zdravje/index.html">Za svoje zdravje</a>
+		</p>
+		</div>
+		              
+		<p>© 2013 ZZZS Vse pravice pridržane</p>  
+	</div></form>
+</body>
+</html>

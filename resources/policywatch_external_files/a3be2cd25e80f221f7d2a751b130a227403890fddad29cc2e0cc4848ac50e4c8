@@ -1,0 +1,309 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="Html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head id="Head1"><script src="/res/Remotion.Web/v1.20.8.10000/Html/TabStrip.js" type="text/javascript"></script>
+<script src="/res/Remotion.Web/v1.20.8.10000/Html/jquery-1.6.4.js" type="text/javascript"></script>
+<script src="/res/Remotion.Web/v1.20.8.10000/Html/Utilities.js" type="text/javascript"></script>
+<script src="/res/Remotion.Web/v1.20.8.10000/Themes/NovaGray/Html/StyleUtility.js" type="text/javascript"></script>
+<script src="/Html3/BasePage.js" type="text/javascript"></script>
+<script src="/res/Remotion.Web/v1.20.8.10000/Html/jquery.IFrameShim.js" type="text/javascript"></script>
+<script src="/res/Remotion.Web/v1.20.8.10000/Html/SmartNavigation.js" type="text/javascript"></script>
+<script src="/res/Remotion.Web/v1.20.8.10000/Html/SmartPage.js" type="text/javascript"></script>
+<script src="/res/Remotion.Web/v1.20.8.10000/Html/ExecutionEngine.js" type="text/javascript"></script>
+<script src="/Html3/Global.js" type="text/javascript"></script>
+<style type="text/css">
+	@import url("/res/Remotion.Web/v1.20.8.10000/Themes/NovaGray/Html/TabStrip.css");
+	@import url("/res/Remotion.Web/v1.20.8.10000/Themes/NovaGray/Html/SmartPage.css");
+	@import url("/res/Remotion.Web/v1.20.8.10000/Themes/NovaGray/Html/ExecutionEngine.css");
+</style>
+<link href="/Images/favicon.ico" rel="shortcut icon" /><style type="text/css">
+	@import url("/res/Remotion.Web/v1.20.8.10000/Themes/NovaGray/Html/Style.css");
+	@import url("/Html3/global.css");
+	@import url("/Html3/showDocument.css");
+	@import url("/Html3/showDocumentContent.css");
+</style>
+<style type="text/css">
+	@import url("/Html3/RisTabbedMenu.css");
+</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" /><!--[if IE]>
+<link id="BrowserSwitch_IEHacksGeneralLink" href="/Html3/hacks/ie.css" rel="stylesheet" type="text/css" />
+
+<![endif]-->
+<!--[if lt IE 8]>
+<link id="BrowserSwitch_IEHacks7Link" href="/Html3/hacks/ie7.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<![endif]-->
+<!--[if lt IE 7]>
+<link id="BrowserSwitch_IEHacks6Link" href="/Html3/hacks/ie6.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<![endif]-->
+<!--[if lt IE 5.5]>
+<link id="BrowserSwitch_IEHacks5Link" href="/Html3/hacks/ie50.css" rel="stylesheet" type="text/css" />
+
+<![endif]-->
+<title>
+	RIS - 20011162 - Bundesrecht konsolidiert, Fassung vom 29.01.2021
+</title></head>
+<body>
+<form onreset="return false;" action="/GeltendeFassung.wxe?Abfrage=Bundesnormen&amp;Gesetzesnummer=20011162" name="Form" method="post" id="Form">
+<div class="aspNetHidden">
+<input type="hidden" name="wxePageTokenField" id="wxePageTokenField" value="fcb48b4f-4140-4fbe-9d02-7bc61dfa9062" />
+<input type="hidden" name="ServerTime" id="ServerTime" value="637475377149084753" />
+<input type="hidden" name="ServerID" id="ServerID" value="-414478582" />
+<input type="hidden" name="WxeFunctionToken" id="WxeFunctionToken" value="ecaea954-ffc2-46bc-873e-b417ee45e94c" />
+<input type="hidden" name="wxeReturningTokenField" id="wxeReturningTokenField" value="" />
+<input type="hidden" name="wxePostBackSequenceNumberField" id="wxePostBackSequenceNumberField" value="2" />
+<input type="hidden" name="SmartPage_CacheDetectionField" id="SmartPage_CacheDetectionField" value="" />
+<input type="hidden" name="smartScrolling" id="smartScrolling" value="" />
+<input type="hidden" name="smartFocus" id="smartFocus" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+StyleUtility.AddBrowserSwitch();
+function wxeDoSubmit (button, pageToken) { 
+  var theForm = document.Form; 
+  theForm.wxeReturningTokenField.value = pageToken; 
+  document.getElementById(button).click(); 
+}
+function wxeDoPostBack (control, argument, returningToken) { 
+  var theForm = document.Form; 
+  theForm.wxeReturningTokenField.value = returningToken; 
+  __doPostBack (control, argument); 
+}
+WxePage_Context.SetInstance (new WxePage_Context (
+    
+false,
+    
+600000,
+    
+'/GeltendeFassung.wxe?WxeFunctionToken=ecaea954-ffc2-46bc-873e-b417ee45e94c&WxeAction=Refresh',
+    
+null,
+    
+'<p>Sie sind dabei, die Seite zu verlassen.</p><p>Sie können keine weiteren Eingaben an den Server senden.</p>',
+    
+'Die Navigation mit den Schaltflächen Vorwärts und Zurück wird nicht unterstützt.'));
+
+function SmartPage_Initialize ()
+{
+  var eventHandlers = new Array();
+  eventHandlersByEvent = new Array();
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'BasePage_OnPostBack';
+  eventHandlers['onpostback'] = eventHandlersByEvent;
+
+  eventHandlersByEvent = new Array();
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'BasePage_OnUnload';
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'WxePage_OnUnload';
+  eventHandlers['onunload'] = eventHandlersByEvent;
+
+  eventHandlersByEvent = new Array();
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'RegisterLocationHashChangedHandler';
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'AdjustLayout';
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'WxePage_OnLoad';
+  eventHandlers['onload'] = eventHandlersByEvent;
+
+  eventHandlersByEvent = new Array();
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'AdjustLayout';
+  eventHandlers['onresize'] = eventHandlersByEvent;
+
+  eventHandlersByEvent = new Array();
+  eventHandlersByEvent[eventHandlersByEvent.length] = 'WxePage_OnAbort';
+  eventHandlers['onabort'] = eventHandlersByEvent;
+
+
+  var trackedControls = new Array();
+
+  var synchronousPostBackCommands = new Array();
+
+  if (SmartPage_Context.Instance == null)
+  {
+
+    SmartPage_Context.Instance = new SmartPage_Context (
+        'Form',
+        false,
+        null,
+        '<p>Die Seite wird gerade neu geladen.</p><p>Warten Sie mit weiteren Eingaben, bis die Übertragung abgeschlossen ist.</p>',
+        'smartScrolling',
+        'smartFocus',
+        'WxePage_CheckFormState');
+  }
+
+  SmartPage_Context.Instance.set_AbortQueuedSubmit (false);
+  SmartPage_Context.Instance.set_EventHandlers (eventHandlers);
+  SmartPage_Context.Instance.set_TrackedIDs (trackedControls);
+  SmartPage_Context.Instance.set_SynchronousPostBackCommands (synchronousPostBackCommands);
+}
+
+SmartPage_Initialize ();
+
+
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvoPzK2GedSY21RhVhk025FXfmS4a2OfEPvRiTxAhYN1kic06C1HzT0KU2Ze_wD5zWt2v4eBRdtuiltN-hKD7Bjd9oB5WcXX6YFI6J9M0Tf6bioaCjVBVWZWPrE6NtVFpDdqyArg7dhlPAwtXd_fKmew1&amp;t=4f7d5f1" type="text/javascript"></script>
+  
+  <div id="pagebase">
+    <div id="page">
+      
+
+<div id="header" class="clearfix">
+  
+
+<span class="onlyScreenreader">Seitenbereiche:</span>
+<ul id="servicenav">
+  <li>
+    <a href="#main" accesskey="0" class="onlyScreenreader">Zum Inhalt (<span lang="en" xml:lang="en">Accesskey</span> 0)</a>
+  </li>
+  <li>
+    <a href="#navigation" accesskey="1" class="onlyScreenreader">Zur Navigationsleiste (<span lang="en" xml:lang="en">Accesskey</span> 1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a id="Header_ServiceNavigation_ContactLink" accesskey="4" lang="de" xml:lang="de" href="/UI/Kontakt.aspx">Kontakt<span class="onlyScreenreader"> (<span lang="en" xml:lang="en">Accesskey</span> 4)</span>
+    </a>
+  </li>
+  <li>
+    <a id="Header_ServiceNavigation_ImpressumLink" accesskey="5" lang="de" xml:lang="de" href="/UI/Impressum.aspx">Impressum<span class="onlyScreenreader"> (<span lang="en" xml:lang="en">Accesskey</span> 5)</span>
+    </a>
+  </li>
+  <li>
+    <a id="Header_ServiceNavigation_PrivacyPolicyLink" accesskey="6" lang="de" xml:lang="de" href="/UI/Datenschutz.aspx">Datenschutzerkl&#228;rung<span class="onlyScreenreader"> (<span lang="en" xml:lang="en">Accesskey</span> 6)</span>
+    </a>
+  </li>
+  <li>
+    <a id="Header_ServiceNavigation_AccessibilityStatementLink" accesskey="7" lang="de" xml:lang="de" href="/UI/Barrierefreiheit.aspx">Barrierefreiheitserkl&#228;rung<span class="onlyScreenreader"> (<span lang="en" xml:lang="en">Accesskey</span> 7)</span>
+    </a>
+  </li>
+  <li>
+    <a id="Header_ServiceNavigation_SiteMapLink" accesskey="8" lang="de" xml:lang="de" href="/UI/SiteMap.aspx"><span lang="en" xml:lang="en">Sitemap</span><span class="onlyScreenreader"> (<span lang="en" xml:lang="en">Accesskey</span> 8)</span>
+    </a>
+  </li>
+  <li id="Header_ServiceNavigation_LanguageItem">
+    <a id="Header_ServiceNavigation_LanguageLink" accesskey="9" class="last-item" lang="de" xml:lang="de" href="/defaultEn.aspx">English</a><span class="onlyScreenreader"> (<span lang="en" xml:lang="en">Accesskey</span> 9)</span>
+  </li>
+
+</ul>
+
+  <a id="Header_HomePageLink" href="/default.aspx"><img id="Header_BkaLogo" title="Zur Startseite" src="/Images/RisHeader.jpg" alt="Rechtsinformationssystem des Bundes" /></a>
+
+  <div>
+    <a id="navigation">
+      <span class="onlyScreenreader">Navigationsleiste:</span>
+    </a>
+    <div id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip" class="tabbedMainMenu">
+	<div class="tabStripTabsPane" role="tablist">
+		<ul role="none">
+			<li role="none"><span class="tabStripTabWrapper"><span class="tabStripTabSeparator"><span></span></span><span id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_StartseiteTab" role="none" class="tabStripTab"><a href="default.aspx" id="Header_MainNavigation_RisTabbedMenu_StartseiteTab_Command"><span class="anchorBody"><span>Startseite</span></span></a></span></span></li>
+			<li role="none"><span class="tabStripTabWrapper"><span class="tabStripTabSeparator"><span></span></span><span id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_BundesrechtTab" role="none" class="tabStripTabSelected"><a href="Bund/" id="Header_MainNavigation_RisTabbedMenu_BundesrechtTab_Command"><span class="anchorBody"><span>Bundesrecht</span></span></a></span></span></li>
+			<li role="none"><span class="tabStripTabWrapper"><span class="tabStripTabSeparator"><span></span></span><span id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_LandesrechtTab" role="none" class="tabStripTab"><a href="Land/" id="Header_MainNavigation_RisTabbedMenu_LandesrechtTab_Command"><span class="anchorBody"><span>Landesrecht</span></span></a></span></span></li>
+			<li role="none"><span class="tabStripTabWrapper"><span class="tabStripTabSeparator"><span></span></span><span id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_GemeinderechtTab" role="none" class="tabStripTab"><a href="Gemeinde/" id="Header_MainNavigation_RisTabbedMenu_GemeinderechtTab_Command"><span class="anchorBody"><span>Gemeinderecht</span></span></a></span></span></li>
+			<li role="none"><span class="tabStripTabWrapper"><span class="tabStripTabSeparator"><span></span></span><span id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_JudikaturTab" role="none" class="tabStripTab"><a href="Judikatur/" id="Header_MainNavigation_RisTabbedMenu_JudikaturTab_Command"><span class="anchorBody"><span>Judikatur</span></span></a></span></span></li>
+			<li role="none"><span class="tabStripTabWrapper"><span class="tabStripTabSeparator"><span></span></span><span id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_SonstigeTab" role="none" class="tabStripTab"><a href="Sonstige/" id="Header_MainNavigation_RisTabbedMenu_SonstigeTab_Command"><span class="anchorBody"><span>Sonstige Kundmachungen, Erlässe</span></span></a></span></span></li>
+			<li role="none"><span class="tabStripTabWrapper"><span class="tabStripTabSeparator"><span></span></span><span id="Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_GesamtabfrageTab" role="none" class="tabStripTab"><a href="Gesamtabfrage/" id="Header_MainNavigation_RisTabbedMenu_GesamtabfrageTab_Command"><span class="anchorBody"><span>Gesamtabfrage</span></span></a></span></span><span class="last"></span></li>
+
+		</ul>
+	</div><div class="clearingPane">
+
+	</div>
+</div>
+  </div>
+
+</div>
+
+      <div id="main">
+        
+          <div id="TopPageNavigation">
+            <div class="FloatLeft">
+              <h1 id="Title">
+                Bundesrecht konsolidiert: Gesamte Rechtsvorschrift f&#252;r 20011162, Fassung vom 29.01.2021
+              </h1>
+            </div>
+            <ul>
+              <li>
+                <div id="FirstRow">
+                  <div class="FloatRight">
+                    <span class="PrintPreview">
+                      
+                    </span>
+                    <span class="Print">
+                      
+                    </span>
+                  </div>
+                  <div class="ClearingPane"></div>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        
+
+        <div id="content">
+          
+
+  
+
+
+        </div>
+
+        
+          <div id="RelatedDocumentNotFoundMessage">
+            <p>
+              Die Rechtsvorschrift &#39;20011162&#39; ist am 29.01.2021 nicht mehr oder noch nicht in Kraft.
+            </p>
+            <p>
+              Bitte benutzen Sie folgenden Link, um
+              <a id="DefaultPageLink" href="default.aspx">zur Startseite</a> zur&uuml;ckzukehren.
+            </p>
+          </div>
+        
+
+        <div class="ClearingPane"></div>
+
+      </div>
+
+      
+<div id="footer">
+  <div id="Topline">
+    <a href="#header">
+      Zum Seitenanfang
+    </a><span class="onlyScreenreader">.</span>
+  </div>
+  <h2 class="onlyScreenreader">
+    &#220;ber diese Seite
+  </h2>
+  <ul id="Bottomline">
+    <li id="Copyright">
+      &copy; 2021 Bundesministerium für Digitalisierung und Wirtschaftsstandort  
+    </li>
+    
+  </ul>
+</div>
+    </div>
+  </div>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+SmartPage_OnStartUp (false, false);
+WebTabStrip.Initialize ($('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip'));
+StyleUtility.CreateBorderSpans ('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_StartseiteTab > *:first');
+StyleUtility.CreateBorderSpans ('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_BundesrechtTab > *:first');
+StyleUtility.CreateBorderSpans ('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_LandesrechtTab > *:first');
+StyleUtility.CreateBorderSpans ('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_GemeinderechtTab > *:first');
+StyleUtility.CreateBorderSpans ('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_JudikaturTab > *:first');
+StyleUtility.CreateBorderSpans ('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_SonstigeTab > *:first');
+StyleUtility.CreateBorderSpans ('#Header_MainNavigation_RisTabbedMenu_MainMenuTabStrip_GesamtabfrageTab > *:first');
+//]]>
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,911 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<base href="http://mof.gov.cy/">
+<title>Νομοθεσία/ Διατάγματα , Χρηματοοικονομικά / Τραπεζικά, MINISTRY OF FINANCE</title>
+<meta name="description" content="The mission of Ministry of Finance is the configuration of economic policy, the training and follow-up of concretisation of Government owned Budget, tax political, the effective management of economic resources of State, the discovery of resources for cover of lending needs of State, the promotion of computerisation of public service and the growth and exploitation of human potential of Public Service." />
+<meta name="keywords" content="Cyprus,investments, European Union, state, inflation, debt, taxation, ellejma, growth, Euro, budgetary, economy" />
+<meta name="author" content="BDigital Web Solutions" />
+<meta name="copyright" content="Copyright © 2016, MINISTRY OF FINANCE" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,greek' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="includes/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="layout/style.css">
+<link rel="stylesheet" type="text/css" href="layout/site.css?20170622">
+
+<link rel="stylesheet" type="text/css" href="tools/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="tools/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="tools/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" href="tools/fancyBox/css/jquery.fancybox.css">
+
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png?v=2" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png?v=2" sizes="16x16">
+<link rel="manifest" href="/favicon/manifest.json?v=2">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=2" color="#114b8a">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=2">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=2">
+<meta name="theme-color" content="#ffffff">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="includes/modernizr.js"></script>
+<script type="text/javascript" src="includes/jquery.js"></script>
+<script>
+var curLang = 'gr';
+</script>
+<script type="text/javascript" src="includes/functions.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="includes/selectivizr-min.js"></script>
+<script type="text/javascript" src="includes/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<a name="top" id="top"></a>
+<!--Start of Google Analytics Script-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47118784-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--End of Google Analytics Script-->
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-578f26c3f094e9b8" async></script>
+<!-- AddThis Button END -->
+<div id="OverallBlockBg"></div>
+<div id="OverallBlock">
+	<div class="block_cell">
+    	<div class="block_body">
+            <div id="OverallBlockBody">Loading...</div>
+        </div>
+    </div>
+</div>
+<header id="page_h">
+        <div class="row_a">
+      <div class="container">
+          <div class="d_table relative">
+            <div class="d_col">
+                                <a href="/gr/" class="logo_img_gr">&nbsp;</a>
+								                <div class="bmenu-bar hidden-xs hidden-sm">
+                	<ul class="basic_menu">
+                    	<li>&nbsp;</li>
+                    	<li><a href="/gr/">Αρχική Σελίδα</a></li>
+                    	<li><a href="gr/χάρτης-πλοήγησης" title="Χάρτης Πλοήγησης"  target="_self"  >Χάρτης Πλοήγησης</a></li>
+                    	<li><a href="gr/επικοινωνία" title="Επικοινωνία"  target="_self"  >Επικοινωνία</a></li>
+                    	<li class="lang">
+							                                                        <a href="en/legislation/financial-banking" title="ENGLISH">ENGLISH</a>                                                    </li>
+                    	<li>&nbsp;</li>
+                    </ul>
+                </div>
+                
+                <div class="pull-right top-r">
+                  <div class="pull-left">
+                    <div class="cy-logo">
+                      <img src="layout/images/cy_logo.png" class="img-responsive" alt="Cyprus Republic" />
+                    </div>
+                    <div class="mob_btns visible-xs-block visible-sm-block clearfix">
+                        <button type="button" class="mob_btn mm_btn border_r_4" id="mm_btn">
+                            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+                        <button type="button" class="mob_btn m_search_btn border_r_4" id="search_btn">
+                            &nbsp;
+                        </button>
+                    </div>
+                     <div class="search_box" id="search_block">
+                      <div class="inner border_r_4 clearfix">
+                          <form name="formSearchBox" method="post" action="javascript:goToSearch_Top(document.formSearchBox,'Y','gr');">
+                            <input type="text" name="t_searchquery" size="50" id="t_searchquery" class="searchfield font-a" placeholder="Αναζήτηση" />
+                            <input type="button" class="search_btn" onClick="javascript:goToSearch_Top(document.formSearchBox,'Y','gr')" />
+                            <input type="hidden" name="pageaction" value="search">
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row_b">
+    	<div class="container">
+        	<nav class="main_menu" id="mm_block">
+	<ul class="L1 bm_lang visible-xs-block hidden-xs-block">
+      <li>
+                              <a href="en/legislation/financial-banking" title="ENGLISH">ENGLISH</a>                </li>
+    </ul>
+    <ul class="L1">
+	        <li><a href="gr/υπουργείο-οικονομικών" title="Υπουργείο Οικονομικών"  target="_self"  class="L1-a anim_btn" >Υπουργείο Οικονομικών</a>    	    </li>
+            <li><a href="gr/διευθύνσεις-και-μονάδες" title="Διευθύνσεις / Μονάδες / Υπηρεσίες"  target="_self"  class="L1-a anim_btn" >Διευθύνσεις / Μονάδες / Υπηρεσίες</a>    	    </li>
+            <li><a href="gr/τμήματα" title="Τμήματα"  target="_self"  class="L1-a anim_btn" >Τμήματα</a>    	    </li>
+            <li class="sm_exist"><a href="gr/γραφείο-τύπου" title="Γραφείο Τύπου"  target="_self"  class="L1-a anim_btn" >Γραφείο Τύπου</a>    	    	<a class="mob_show_sb visible-xs-block visible-sm-block" data-level='2'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <ul class="L2">
+        				            <li class="sm_exist"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού" title="Γραφείο Τύπου Υπουργού"  target="_self"  class="L2-a" >Γραφείο Τύπου Υπουργού</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου" title="Ανακοινώσεις & Εγκύκλιοι Υπουργείου"  target="_self"  class="L2-a" >Ανακοινώσεις & Εγκύκλιοι Υπουργείου</a>			              </li>
+            			        </ul>
+   		    </li>
+            <li class="sm_exist"><a href="gr/οικονομικοί-δείκτες" title="Οικονομικοί Δείκτες"  target="_self"  class="L1-a anim_btn" >Οικονομικοί Δείκτες</a>    	    	<a class="mob_show_sb visible-xs-block visible-sm-block" data-level='2'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <ul class="L2">
+        				            <li class="sm_exist"><a href="gr/οικονομικοί-δείκτες/μακροοικονομικά" title="Μάκρο - Οικονομικά"  target="_self"  class="L2-a" >Μάκρο - Οικονομικά</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/οικονομικοί-δείκτες/δημόσια-οικονομικά" title="Δημόσια Οικονομικά"  target="_self"  class="L2-a" >Δημόσια Οικονομικά</a>			              </li>
+                    </ul>
+   		    </li>
+            <li class="sm_exist"><a href="gr/1-εκδόσεις" title="Εκδόσεις "  target="_self"  class="L1-a anim_btn" >Εκδόσεις </a>    	    	<a class="mob_show_sb visible-xs-block visible-sm-block" data-level='2'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <ul class="L2">
+        				            <li class="sm_exist"><a href="gr/1-εκδόσεις/ετήσια-έκθεση-υπουργείου-οικονομικών" title="Ετήσια Έκθεση Υπουργείου Οικονομικών"  target="_self"  class="L2-a" >Ετήσια Έκθεση Υπουργείου Οικονομικών</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/στρατηγικό-πλαίσιο-δημοσιονομικής-πολιτικής" title="Στρατηγικό Πλαίσιο Δημοσιονομικής Πολιτικής"  target="_self"  class="L2-a" >Στρατηγικό Πλαίσιο Δημοσιονομικής Πολιτικής</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/2-στρατηγικό-σχέδιο-υπουργείου-οικονομικών" title="Στρατηγικό Σχέδιο Υπουργείου Οικονομικών"  target="_self"  class="L2-a" >Στρατηγικό Σχέδιο Υπουργείου Οικονομικών</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/σχέδιο-δημοσιονομικού-προγράμματος" title="Σχέδιο Δημοσιονομικού Προγράμματος"  target="_self"  class="L2-a" >Σχέδιο Δημοσιονομικού Προγράμματος</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/έκθεση-δημοσιονομικών-κινδύνων" title="Έκθεση Δημοσιονομικών Κινδύνων"  target="_self"  class="L2-a" >Έκθεση Δημοσιονομικών Κινδύνων</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/δελτία-οικονομικής-ανασκόπησης" title="Δελτία Οικονομικής Ανασκόπησης"  target="_self"  class="L2-a" >Δελτία Οικονομικής Ανασκόπησης</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/οικονομικές-εξελίξεις-και-προοπτικές" title="Οικονομικές Εξελίξεις και Προοπτικές"  target="_self"  class="L2-a" >Οικονομικές Εξελίξεις και Προοπτικές</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/πρόγραμμα-σταθερότητας" title="Πρόγραμμα Σταθερότητας"  target="_self"  class="L2-a" >Πρόγραμμα Σταθερότητας</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/δοκίμια-οικονομικής-πολιτικής" title="Δοκίμια Οικονομικής Πολιτικής"  target="_self"  class="L2-a" >Δοκίμια Οικονομικής Πολιτικής</a>			              </li>
+            						            <li class="sm_exist"><a href="gr/1-εκδόσεις/οδηγός-εναρμόνισης-με-το-δίκαιο-της-ευρωπαϊκής-ένωσης" title="Οδηγός Εναρμόνισης με το Δίκαιο της Ευρωπαϊκής Ένωσης  "  target="_self"  class="L2-a" >Οδηγός Εναρμόνισης με το Δίκαιο της Ευρωπαϊκής Ένωσης  </a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/1-παρουσιάσεις" title="Παρουσιάσεις"  target="_self"  class="L2-a" >Παρουσιάσεις</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/1-εκδόσεις/εκδόσεις-από-άλλους-οργανισμούς" title="Εκδόσεις από άλλους οργανισμούς"  target="_self"  class="L2-a" >Εκδόσεις από άλλους οργανισμούς</a>			              </li>
+            									            <li class="sm_exist"><a href="gr/1-εκδόσεις/σχέδιο-δημοσίευσης-υπουργείου-οικονομικών" title="Σχέδιο Δημοσίευσης Υπουργείου Οικονομικών"  target="_self"  class="L2-a" >Σχέδιο Δημοσίευσης Υπουργείου Οικονομικών</a>			              </li>
+                    </ul>
+   		    </li>
+                <li class="sm_exist active"><a href="gr/νομοθεσία" title="Νομοθεσία/ Διατάγματα "  target="_self"  class="L1-a anim_btn" >Νομοθεσία/ Διατάγματα </a>    	    	<a class="mob_show_sb visible-xs-block visible-sm-block" data-level='2'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <ul class="L2">
+        				            <li class="sm_exist active"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά" title="Χρηματοοικονομικά / Τραπεζικά"  target="_self"  class="L2-a" >Χρηματοοικονομικά / Τραπεζικά</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/νομοθεσία/χρηματοδοτικές-μισθώσεις" title="Χρηματοδοτικές Μισθώσεις"  target="_self"  class="L2-a" >Χρηματοδοτικές Μισθώσεις</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/νομοθεσία/ενιαίο-δημόσιο-επιτόκιο-υπερημερίας" title="Ενιαίο Δημόσιο Επιτόκιο Υπερημερίας"  target="_self"  class="L2-a" >Ενιαίο Δημόσιο Επιτόκιο Υπερημερίας</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/νομοθεσία/φορολογικά" title="Φορολογικά"  target="_self"  class="L2-a" >Φορολογικά</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/νομοθεσία/δημοσιονομική-διαχείριση" title="Δημοσιονομική Διαχείριση"  target="_self"  class="L2-a" >Δημοσιονομική Διαχείριση</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/νομοθεσία/στοιχήματα-και-ορισμένα-τυχερά-παιχνίδια" title="Στοιχήματα και Ορισμένα Τυχερά Παιχνίδια"  target="_self"  class="L2-a" >Στοιχήματα και Ορισμένα Τυχερά Παιχνίδια</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/νομοθεσία/1-αξιοποίηση-κρατικής-περιουσίας" title="Αξιοποίηση Κρατικής Περιουσίας"  target="_self"  class="L2-a" >Αξιοποίηση Κρατικής Περιουσίας</a>			              </li>
+            			            <li class="sm_exist"><a href="gr/νομοθεσία/εκσυγχρονισμός-καινοτομία" title="Εκσυγχρονισμός / Καινοτομία"  target="_self"  class="L2-a" >Εκσυγχρονισμός / Καινοτομία</a>			              </li>
+                    </ul>
+   		    </li>
+                        </ul>
+	<ul class="L1 bm_L1 visible-xs-block hidden-xs-block">
+      <li><a href="gr/χάρτης-πλοήγησης" title="Χάρτης Πλοήγησης"  target="_self"  class="L1-a" >Χάρτης Πλοήγησης</a></li>
+      <li><a href="gr/επικοινωνία" title="Επικοινωνία"  target="_self"  class="L1-a" >Επικοινωνία</a></li>
+      <li><a href="/gr/" class="L1-a">Η γνώμη σας μετρά</a></li>
+    </ul>    
+    
+</nav>        
+        </div>
+    </div>
+</header>
+<div class="bcrumb_row">
+  <div class="container">
+	  <div class="bcrumb_bar f_size_s"><a href="/gr/">Αρχική Σελίδα</a>&nbsp; | &nbsp;<a href="gr/νομοθεσία" title="Νομοθεσία/ Διατάγματα "  target="_self"  >Νομοθεσία/ Διατάγματα </a>&nbsp; | &nbsp;<span>Χρηματοοικονομικά / Τραπεζικά</span></div>
+  </div>
+</div>
+<div class="modRecList pad_c">
+    <div class="container">
+    	<h1 class="hor-line">Χρηματοοικονομικά / Τραπεζικά</h1>
+		        <div class="row">
+        	<div class="col-sm-8 col-md-9 pad-r-a">
+            	                <div class="items-list">
+                											<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/διατάγματα-που-εκδοθήκαν-δυνάμει-του-περί-της-συγκρισιμότητας-των-τελών-της-αλλαγής-λογαριασμού-πληρωμών-και-της-πρόσβασης-σε-λογαριασμούς-πληρωμών-νόμου-του-2017" title="Διατάγματα που εκδοθήκαν δυνάμει του περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμου του 2017">Διατάγματα που εκδοθήκαν δυνάμει του περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμου του 2017</a></h2>
+                                                                <div class="w-links mar-top-a">Διατάγματα που εκδοθήκαν δυνάμει του περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμου του 2017...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/διατάγματα-που-εκδοθήκαν-δυνάμει-του-περί-της-συγκρισιμότητας-των-τελών-της-αλλαγής-λογαριασμού-πληρωμών-και-της-πρόσβασης-σε-λογαριασμούς-πληρωμών-νόμου-του-2017" title="Διατάγματα που εκδοθήκαν δυνάμει του περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμου του 2017">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/διάταγμα-ο-περί-της-λήψης-έκτακτων-μέτρων-από-χρηματοοικονομικούς-οργανισμούς-και-εποπτικές-αρχές-νόμος-του-2020" title="Ο Περί της Λήψης Έκτακτων Μέτρων από Χρηματοοικονομικούς Οργανισμούς και Εποπτικές Αρχές Νόμος του 2020">Ο Περί της Λήψης Έκτακτων Μέτρων από Χρηματοοικονομικούς Οργανισμούς και Εποπτικές Αρχές Νόμος του 2020</a></h2>
+                                                                <div class="w-links mar-top-a">Ο Περί της Λήψης Έκτακτων Μέτρων από Χρηματοοικονομικούς Οργανισμούς και Εποπτικές Αρχές Νόμος του 2020...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/διάταγμα-ο-περί-της-λήψης-έκτακτων-μέτρων-από-χρηματοοικονομικούς-οργανισμούς-και-εποπτικές-αρχές-νόμος-του-2020" title="Ο Περί της Λήψης Έκτακτων Μέτρων από Χρηματοοικονομικούς Οργανισμούς και Εποπτικές Αρχές Νόμος του 2020">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/tο-περί-πώλησης-ενυπόθηκου-ακινήτου-μέσω-ηλεκτρονικού-συστήματος-πλειστηριασμού-διάταγμα-του-2019" title="Tο περί Πώλησης Ενυπόθηκου Ακινήτου μέσω Ηλεκτρονικού Συστήματος Πλειστηριασμού Διάταγμα του 2019">Tο περί Πώλησης Ενυπόθηκου Ακινήτου μέσω Ηλεκτρονικού Συστήματος Πλειστηριασμού Διάταγμα του 2019</a></h2>
+                                                                <div class="w-links mar-top-a">Tο περί Πώλησης Ενυπόθηκου Ακινήτου μέσω Ηλεκτρονικού Συστήματος Πλειστηριασμού Διάταγμα του 2019...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/tο-περί-πώλησης-ενυπόθηκου-ακινήτου-μέσω-ηλεκτρονικού-συστήματος-πλειστηριασμού-διάταγμα-του-2019" title="Tο περί Πώλησης Ενυπόθηκου Ακινήτου μέσω Ηλεκτρονικού Συστήματος Πλειστηριασμού Διάταγμα του 2019">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ποινικών-κυρώσεων-για-την-κατάχρηση-της-αγοράς-τροποποιητικός-νόμος-του-2019-ν-107-i-2019" title="Ο περί Ποινικών Κυρώσεων για την Κατάχρηση της Αγοράς (Τροποποιητικός) Νόμος του 2019 (Ν. 107(I)/2019)">Ο περί Ποινικών Κυρώσεων για την Κατάχρηση της Αγοράς (Τροποποιητικός) Νόμος του 2019 (Ν. 107(I)/2019)</a></h2>
+                                                                <div class="w-links mar-top-a"><br />
+Ο περί Ποινικών Κυρώσεων για την Κατάχρηση της Αγοράς (Τροποποιητικός) Νόμος του 2019 (Ν. 107(I)/2019)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ποινικών-κυρώσεων-για-την-κατάχρηση-της-αγοράς-τροποποιητικός-νόμος-του-2019-ν-107-i-2019" title="Ο περί Ποινικών Κυρώσεων για την Κατάχρηση της Αγοράς (Τροποποιητικός) Νόμος του 2019 (Ν. 107(I)/2019)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ορισμένων-νομικών-προσώπων-δημοσίου-δικαίου-διορισμός-διοικητικών-συμβουλίων-τροποποιητικός-νόμος-του-2019-ν-106-i-2019" title="Ο περί Ορισμένων Νομικών Προσώπων Δημοσίου Δικαίου (Διορισμός Διοικητικών Συμβουλίων) (Τροποποιητικός) Νόμος του 2019 (Ν. 106(I)/2019)">Ο περί Ορισμένων Νομικών Προσώπων Δημοσίου Δικαίου (Διορισμός Διοικητικών Συμβουλίων) (Τροποποιητικός) Νόμος του 2019 (Ν. 106(I)/2019)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Ορισμένων Νομικών Προσώπων Δημοσίου Δικαίου (Διορισμός Διοικητικών Συμβουλίων) (Τροποποιητικός) Νόμος του 2019 (Ν. 106(I)/2019)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ορισμένων-νομικών-προσώπων-δημοσίου-δικαίου-διορισμός-διοικητικών-συμβουλίων-τροποποιητικός-νόμος-του-2019-ν-106-i-2019" title="Ο περί Ορισμένων Νομικών Προσώπων Δημοσίου Δικαίου (Διορισμός Διοικητικών Συμβουλίων) (Τροποποιητικός) Νόμος του 2019 (Ν. 106(I)/2019)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ν-57-i-2019-ο-περί-δημόσιας-προσφοράς-και-ενημερωτικού-δελτίου-τροποποιητικός-νόμος-του-2019" title="Ν. 57(I)/2019 - Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2019 ">Ν. 57(I)/2019 - Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2019 </a></h2>
+                                                                <div class="w-links mar-top-a">Ν. 57(I)/2019 - Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2019 <br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ν-57-i-2019-ο-περί-δημόσιας-προσφοράς-και-ενημερωτικού-δελτίου-τροποποιητικός-νόμος-του-2019" title="Ν. 57(I)/2019 - Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2019 ">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αξιών-και-χρηματιστηρίου-αξιών-κύπρου-κεντρικό-αποθετήριο-και-κεντρικό-μητρώο-αξιών-τροποποιητικός-νόμος-του-2019-ν-29-i-2019" title="Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Κεντρικό Αποθετήριο και Κεντρικό Μητρώο Αξιών) (Τροποποιητικός) Νόμος του 2019 (Ν. 29(I)/2019)">Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Κεντρικό Αποθετήριο και Κεντρικό Μητρώο Αξιών) (Τροποποιητικός) Νόμος του 2019 (Ν. 29(I)/2019)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Κεντρικό Αποθετήριο και Κεντρικό Μητρώο Αξιών) (Τροποποιητικός) Νόμος του 2019 (Ν. 29(I)/2019)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αξιών-και-χρηματιστηρίου-αξιών-κύπρου-κεντρικό-αποθετήριο-και-κεντρικό-μητρώο-αξιών-τροποποιητικός-νόμος-του-2019-ν-29-i-2019" title="Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Κεντρικό Αποθετήριο και Κεντρικό Μητρώο Αξιών) (Τροποποιητικός) Νόμος του 2019 (Ν. 29(I)/2019)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-του-εθνικού-ταμείου-επενδύσεων-και-του-κυπριακού-οργανισμού-διαχείρισης-επενδύσεων-και-για-συναφή-θέματα-νόμος-του-2019-ν-33-i-2019" title="Ο περί του Εθνικού Ταμείου Επενδύσεων και του Κυπριακού Οργανισμού Διαχείρισης Επενδύσεων και για Συναφή Θέματα Νόμος του 2019 (Ν. 33(I)/2019)">Ο περί του Εθνικού Ταμείου Επενδύσεων και του Κυπριακού Οργανισμού Διαχείρισης Επενδύσεων και για Συναφή Θέματα Νόμος του 2019 (Ν. 33(I)/2019)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί του Εθνικού Ταμείου Επενδύσεων και του Κυπριακού Οργανισμού Διαχείρισης Επενδύσεων και για Συναφή Θέματα Νόμος του 2019 (Ν. 33(I)/2019)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-του-εθνικού-ταμείου-επενδύσεων-και-του-κυπριακού-οργανισμού-διαχείρισης-επενδύσεων-και-για-συναφή-θέματα-νόμος-του-2019-ν-33-i-2019" title="Ο περί του Εθνικού Ταμείου Επενδύσεων και του Κυπριακού Οργανισμού Διαχείρισης Επενδύσεων και για Συναφή Θέματα Νόμος του 2019 (Ν. 33(I)/2019)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ασφαλιστικών-και-αντασφαλιστικών-εργασιών-και-άλλων-συναφών-θεμάτων-τροποποιητικός-νόμος" title="Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός) Νόμος ">Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός) Νόμος </a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός) Νόμος <br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ασφαλιστικών-και-αντασφαλιστικών-εργασιών-και-άλλων-συναφών-θεμάτων-τροποποιητικός-νόμος" title="Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός) Νόμος ">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ανάκαμψης-κεπευ-και-λοιπών-οντοτήτων-υπό-την-εποπτεία-της-επιτροπής-κεφαλαιαγοράς-και-για-συναφή-θέματα-τροποποιητικός-νόμος-του-2019-ν-73-i-2019" title="Ο περί Ανάκαμψης ΚΕΠΕΥ και Λοιπών Οντοτήτων υπό την Εποπτεία της Επιτροπής Κεφαλαιαγοράς και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2019 (Ν. 73(I)/2019)">Ο περί Ανάκαμψης ΚΕΠΕΥ και Λοιπών Οντοτήτων υπό την Εποπτεία της Επιτροπής Κεφαλαιαγοράς και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2019 (Ν. 73(I)/2019)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Ανάκαμψης ΚΕΠΕΥ και Λοιπών Οντοτήτων υπό την Εποπτεία της Επιτροπής Κεφαλαιαγοράς και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2019 (Ν. 73(I)/2019)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ανάκαμψης-κεπευ-και-λοιπών-οντοτήτων-υπό-την-εποπτεία-της-επιτροπής-κεφαλαιαγοράς-και-για-συναφή-θέματα-τροποποιητικός-νόμος-του-2019-ν-73-i-2019" title="Ο περί Ανάκαμψης ΚΕΠΕΥ και Λοιπών Οντοτήτων υπό την Εποπτεία της Επιτροπής Κεφαλαιαγοράς και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2019 (Ν. 73(I)/2019)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-επιτροπής-κεφαλαιαγοράς-κύπρου-τροποποιητικός-νόμος-του-2018-ν-137-i-2018" title="Οι περί Επιτροπής Κεφαλαιαγοράς Κύπρου (Τροποποιητικοί) Νόμοι">Οι περί Επιτροπής Κεφαλαιαγοράς Κύπρου (Τροποποιητικοί) Νόμοι</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Επιτροπής Κεφαλαιαγοράς Κύπρου (Τροποποιητικός) Νόμος του 2018 (Ν. 137(I)/2018)<br />
+<br />
+Ο περί Επιτροπής Κεφαλαιαγοράς Κύπρου (Τροποποιητικός) Νόμος του 2019 (Ν. 56(I)/2019)...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-επιτροπής-κεφαλαιαγοράς-κύπρου-τροποποιητικός-νόμος-του-2018-ν-137-i-2018" title="Οι περί Επιτροπής Κεφαλαιαγοράς Κύπρου (Τροποποιητικοί) Νόμοι">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-δημόσιας-προσφοράς-και-ενημερωτικού-δελτίου-τροποποιητικός-νόμος-του-2018-ν-133-i-2018" title="Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2018 (Ν. 133(I)/2018)">Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2018 (Ν. 133(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2018 (Ν. 133(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-δημόσιας-προσφοράς-και-ενημερωτικού-δελτίου-τροποποιητικός-νόμος-του-2018-ν-133-i-2018" title="Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2018 (Ν. 133(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-οργανισμών-εναλλακτικών-επενδύσεων-νόμος-του-2018-ν-124-ι-2018" title="Ο περί Οργανισμών Εναλλακτικών Επενδύσεων Νόμος του 2018 (Ν.124(Ι)/2018)">Ο περί Οργανισμών Εναλλακτικών Επενδύσεων Νόμος του 2018 (Ν.124(Ι)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Οργανισμών Εναλλακτικών Επενδύσεων Νόμος του 2018 (Ν.124(Ι)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-οργανισμών-εναλλακτικών-επενδύσεων-νόμος-του-2018-ν-124-ι-2018" title="Ο περί Οργανισμών Εναλλακτικών Επενδύσεων Νόμος του 2018 (Ν.124(Ι)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-τιτλοποιήσεων-νόμος-του-2018-ν-88-i-2018" title="Ο περί Τιτλοποιήσεων Νόμος του 2018 (Ν. 88(I)/2018)">Ο περί Τιτλοποιήσεων Νόμος του 2018 (Ν. 88(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Τιτλοποιήσεων Νόμος του 2018 (Ν. 88(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-τιτλοποιήσεων-νόμος-του-2018-ν-88-i-2018" title="Ο περί Τιτλοποιήσεων Νόμος του 2018 (Ν. 88(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-μεταβιβάσεως-και-υποθηκεύσεως-ακινήτων-τροποποιητικός-νόμος-του-2018-ν-87-i-2018" title="Ο περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων (Τροποποιητικός) Νόμος του 2018 (Ν. 87(I)/2018)">Ο περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων (Τροποποιητικός) Νόμος του 2018 (Ν. 87(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων (Τροποποιητικός) Νόμος του 2018 (Ν. 87(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-μεταβιβάσεως-και-υποθηκεύσεως-ακινήτων-τροποποιητικός-νόμος-του-2018-ν-87-i-2018" title="Ο περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων (Τροποποιητικός) Νόμος του 2018 (Ν. 87(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αγοραπωλησίας-πιστωτικών-διευκολύνσεων-και-για-συναφή-θέματα-τροποποιητικός-νόμος-του-2018-ν-86-i-2018" title="Ο περί Αγοραπωλησίας Πιστωτικών Διευκολύνσεων και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2018 (Ν. 86(I)/2018)">Ο περί Αγοραπωλησίας Πιστωτικών Διευκολύνσεων και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2018 (Ν. 86(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Αγοραπωλησίας Πιστωτικών Διευκολύνσεων και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2018 (Ν. 86(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αγοραπωλησίας-πιστωτικών-διευκολύνσεων-και-για-συναφή-θέματα-τροποποιητικός-νόμος-του-2018-ν-86-i-2018" title="Ο περί Αγοραπωλησίας Πιστωτικών Διευκολύνσεων και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2018 (Ν. 86(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αφερεγγυότητας-φυσικών-προσώπων-προσωπικά-σχέδια-αποπληρωμής-και-διάταγμα-απαλλαγής-οφειλών-τροποποιητικός-αρ-2-νόμος-του-2018-ν-85-i-2018" title="Ο περί Αφερεγγυότητας Φυσικών Προσώπων (Προσωπικά Σχέδια Αποπληρωμής και Διάταγμα Απαλλαγής Οφειλών) (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 85(I)/2018)">Ο περί Αφερεγγυότητας Φυσικών Προσώπων (Προσωπικά Σχέδια Αποπληρωμής και Διάταγμα Απαλλαγής Οφειλών) (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 85(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Αφερεγγυότητας Φυσικών Προσώπων (Προσωπικά Σχέδια Αποπληρωμής και Διάταγμα Απαλλαγής Οφειλών) (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 85(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αφερεγγυότητας-φυσικών-προσώπων-προσωπικά-σχέδια-αποπληρωμής-και-διάταγμα-απαλλαγής-οφειλών-τροποποιητικός-αρ-2-νόμος-του-2018-ν-85-i-2018" title="Ο περί Αφερεγγυότητας Φυσικών Προσώπων (Προσωπικά Σχέδια Αποπληρωμής και Διάταγμα Απαλλαγής Οφειλών) (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 85(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-εταιρειών-τροποποιητικός-αρ-2-νόμος-του-2018-ν-83-i-2018" title="Ο περί Εταιρειών (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 83(I)/2018)">Ο περί Εταιρειών (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 83(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Εταιρειών (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 83(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-εταιρειών-τροποποιητικός-αρ-2-νόμος-του-2018-ν-83-i-2018" title="Ο περί Εταιρειών (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 83(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-διατραπεζικών-προμηθειών-για-πράξεις-πληρωμών-με-κάρτες-νόμος-του-2018-ν-77-i-2018" title="Ο περί Διατραπεζικών Προμηθειών για Πράξεις Πληρωμών με Κάρτες Νόμος του 2018 (Ν. 77(I)/2018)">Ο περί Διατραπεζικών Προμηθειών για Πράξεις Πληρωμών με Κάρτες Νόμος του 2018 (Ν. 77(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Διατραπεζικών Προμηθειών για Πράξεις Πληρωμών με Κάρτες Νόμος του 2018 (Ν. 77(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-διατραπεζικών-προμηθειών-για-πράξεις-πληρωμών-με-κάρτες-νόμος-του-2018-ν-77-i-2018" title="Ο περί Διατραπεζικών Προμηθειών για Πράξεις Πληρωμών με Κάρτες Νόμος του 2018 (Ν. 77(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-συστήματος-εγγύησης-των-καταθέσεων-και-εξυγίανσης-πιστωτικών-και-άλλων-ιδρυμάτων-τροποποιητικός-νόμος-του-2018-ν-41-i-2018" title="Ο περί Συστήματος Εγγύησης των Καταθέσεων και Εξυγίανσης Πιστωτικών και Άλλων Ιδρυμάτων (Τροποποιητικός) Νόμος του 2018 (Ν. 41(I)/2018)">Ο περί Συστήματος Εγγύησης των Καταθέσεων και Εξυγίανσης Πιστωτικών και Άλλων Ιδρυμάτων (Τροποποιητικός) Νόμος του 2018 (Ν. 41(I)/2018)</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Συστήματος Εγγύησης των Καταθέσεων και Εξυγίανσης Πιστωτικών και Άλλων Ιδρυμάτων (Τροποποιητικός) Νόμος του 2018 (Ν. 41(I)/2018)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-συστήματος-εγγύησης-των-καταθέσεων-και-εξυγίανσης-πιστωτικών-και-άλλων-ιδρυμάτων-τροποποιητικός-νόμος-του-2018-ν-41-i-2018" title="Ο περί Συστήματος Εγγύησης των Καταθέσεων και Εξυγίανσης Πιστωτικών και Άλλων Ιδρυμάτων (Τροποποιητικός) Νόμος του 2018 (Ν. 41(I)/2018)">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/οι-περί-της-παρεμπόδισης-και-καταπολέμησης-της-νομιμοποίησης-εσόδων-από-παράνομες-δραστηριότητες-τροποποιητικοί-νόμοι" title="Οι περί της Παρεμπόδισης και Καταπολέμησης της Νομιμοποίησης Εσόδων από Παράνομες Δραστηριότητες (Τροποποιητικοί) Νόμοι">Οι περί της Παρεμπόδισης και Καταπολέμησης της Νομιμοποίησης Εσόδων από Παράνομες Δραστηριότητες (Τροποποιητικοί) Νόμοι</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/νομοθεσίες-για-τη-μείωση-των-μη-εξυπηρετούμενων-δανείων-όπως-δημοσιεύτηκαν-στην-επίσημη-εφημερίδα-στις-13-07-2018" title="Νομοθεσίες για τη μείωση των μη εξυπηρετούμενων δανείων όπως δημοσιεύτηκαν στην Επίσημη Εφημερίδα στις 13/07/2018">Νομοθεσίες για τη μείωση των μη εξυπηρετούμενων δανείων όπως δημοσιεύτηκαν στην Επίσημη Εφημερίδα στις 13/07/2018</a></h2>
+                                                                <div class="w-links mar-top-a">Νομοθεσίες για τη μείωση των μη εξυπηρετούμενων δανείων όπως δημοσιεύτηκαν στην Επίσημη Εφημερίδα στις 13/07/2018...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/νομοθεσίες-για-τη-μείωση-των-μη-εξυπηρετούμενων-δανείων-όπως-δημοσιεύτηκαν-στην-επίσημη-εφημερίδα-στις-13-07-2018" title="Νομοθεσίες για τη μείωση των μη εξυπηρετούμενων δανείων όπως δημοσιεύτηκαν στην Επίσημη Εφημερίδα στις 13/07/2018">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-παροχής-και-χρήσης-υπηρεσιών-πληρωμών-και-πρόσβασης-στα-συστήματα-πληρωμών-νομός" title="Ο περί της Παροχής και Χρήσης Υπηρεσιών Πληρωμών και Πρόσβασης στα Συστήματα Πληρωμών Νομός ">Ο περί της Παροχής και Χρήσης Υπηρεσιών Πληρωμών και Πρόσβασης στα Συστήματα Πληρωμών Νομός </a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί της Παροχής και Χρήσης Υπηρεσιών Πληρωμών και Πρόσβασης στα Συστήματα Πληρωμών Νομός του 2018<br />
+<br />
+Ο περί της Παροχής και Χρήσης Υπηρεσιών Πληρωμών και Πρόσβασης στα Συστήματα Πληρωμών (Τροποποιητικός) Νόμος του 2019 (Ν. 32(I)/2019)<br />
+...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-παροχής-και-χρήσης-υπηρεσιών-πληρωμών-και-πρόσβασης-στα-συστήματα-πληρωμών-νομός" title="Ο περί της Παροχής και Χρήσης Υπηρεσιών Πληρωμών και Πρόσβασης στα Συστήματα Πληρωμών Νομός ">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ιδρυμάτων-ηλεκτρονικού-χρήματος-τροποποιητικός-νόμος-του-2018" title="Ο περί Ιδρυμάτων Ηλεκτρονικού Χρήματος (Τροποποιητικός)  Νόμος του 2018">Ο περί Ιδρυμάτων Ηλεκτρονικού Χρήματος (Τροποποιητικός)  Νόμος του 2018</a></h2>
+                                                                <div class="w-links mar-top-a">Ο περί Ιδρυμάτων Ηλεκτρονικού Χρήματος (Τροποποιητικός)  Νόμος του 2018...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ιδρυμάτων-ηλεκτρονικού-χρήματος-τροποποιητικός-νόμος-του-2018" title="Ο περί Ιδρυμάτων Ηλεκτρονικού Χρήματος (Τροποποιητικός)  Νόμος του 2018">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-εξ-αποστάσεως-εμπορίας-χρηματοοικονομικών-υπηρεσιών-προς-τους-καταναλωτές-τροποποιητικός-νόμος-του-2018" title="Ο περί της εξ Αποστάσεως Εμπορίας Χρηματοοικονομικών Υπηρεσιών προς τους Καταναλωτές (Τροποποιητικός) Νόμος του 2018">Ο περί της εξ Αποστάσεως Εμπορίας Χρηματοοικονομικών Υπηρεσιών προς τους Καταναλωτές (Τροποποιητικός) Νόμος του 2018</a></h2>
+                                                                <div class="w-links mar-top-a">Ν. 29(Ι) του 2018: «Ο περί της εξ Αποστάσεως Εμπορίας Χρηματοοικονομικών Υπηρεσιών προς τους Καταναλωτές (Τροποποιητικός) Νόμος του 2018»...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-εξ-αποστάσεως-εμπορίας-χρηματοοικονομικών-υπηρεσιών-προς-τους-καταναλωτές-τροποποιητικός-νόμος-του-2018" title="Ο περί της εξ Αποστάσεως Εμπορίας Χρηματοοικονομικών Υπηρεσιών προς τους Καταναλωτές (Τροποποιητικός) Νόμος του 2018">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/τα-περί-της-ανακεφαλαιοποίησης-της-συνεργατικής-κυπριακής-τράπεζας-διατάγματα-του-2013-εως-2018" title="Τα περί της Ανακεφαλαιοποίησης της Συνεργατικής Κυπριακής Τράπεζας Διατάγματα του 2013 εως 2018">Τα περί της Ανακεφαλαιοποίησης της Συνεργατικής Κυπριακής Τράπεζας Διατάγματα του 2013 εως 2018</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/οδηγία-οδ87-01-της-επιτροπής-κεφαλαιαγοράς" title="Οδηγία ΟΔ87-01 της Επιτροπής Κεφαλαιαγοράς">Οδηγία ΟΔ87-01 της Επιτροπής Κεφαλαιαγοράς</a></h2>
+                                                                <div class="w-links mar-top-a">Οδηγία ΟΔ87-01 της Επιτροπής Κεφαλαιαγοράς για την προστασία των χρηματοοικονομικών μέσων και κεφαλαίων των πελατών, τις απαιτήσεις σχετικά με την παρακολούθηση των προϊόντων και τους κανόνες για την παροχή ή λήψη αμοιβών, προμηθειών ή άλλων χρηματικών ή μη χρηματικών οφελών. ...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/οδηγία-οδ87-01-της-επιτροπής-κεφαλαιαγοράς" title="Οδηγία ΟΔ87-01 της Επιτροπής Κεφαλαιαγοράς">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-ίδρυσης-ταμείου-νομικής-αρωγής-σε-επενδυτές-καταργητικός-νόμος-του-2017" title="Ο περί της Ίδρυσης Ταμείου Νομικής Αρωγής σε Επενδυτές (Καταργητικός) Νόμος του 2017">Ο περί της Ίδρυσης Ταμείου Νομικής Αρωγής σε Επενδυτές (Καταργητικός) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-συμβάσεων-πίστωσης-για-καταναλωτές-σε-σχέση-με-ακίνητα-που-προορίζονται-για-κατοικία-τροποποιητικός-νόμος-του-2017" title="Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία (Τροποποιητικός) Νόμος του 2017">Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία (Τροποποιητικός) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αξιών-και-χρηματιστηρίου-αξιών-κύπρου-τροποποιητικός-αρ-2-νόμος-του-2017" title="Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Τροποποιητικός) (Αρ.2) Νόμος του 2017">Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Τροποποιητικός) (Αρ.2) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-συμβάσεων-πίστωσης-για-καταναλωτές-σε-σχέση-με-ακίνητα-που-προορίζονται-για-κατοικία-νόμοι" title="Ο περί Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για κατοικία Νόμοι">Ο περί Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για κατοικία Νόμοι</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-οργανισμού-χρηματοδοτήσεως-στέγης-τροποποιητικός-νόμος-του-2017" title="Οι περί Οργανισμού Χρηματοδοτήσεως Στέγης (Τροποποιητικοί) Νόμοι">Οι περί Οργανισμού Χρηματοδοτήσεως Στέγης (Τροποποιητικοί) Νόμοι</a></h2>
+                                                                <div class="w-links mar-top-a"><br />
+Ο περί Οργανισμού Χρηματοδοτήσεως Στέγης (Τροποποιητικός) Νόμος του 2019 (Ν. 113(I)/2019)<br />
+<br />
+Ο περί Οργανισμού Χρηματοδοτήσεως Στέγης (Τροποποιητικός) Νόμος του 2017...<a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-οργανισμού-χρηματοδοτήσεως-στέγης-τροποποιητικός-νόμος-του-2017" title="Οι περί Οργανισμού Χρηματοδοτήσεως Στέγης (Τροποποιητικοί) Νόμοι">περισσότερα</a></div>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-σύστασης-και-λειτουργίας-του-ενιαίου-φορέα-εξώδικης-επίλυσης-διαφορών-χρηματοοικονομικής-φύσεως-τροποποιητικός-νόμος-του-2017" title="Ο περί της Σύστασης και Λειτουργίας του Ενιαίου Φορέα Εξώδικης Επίλυσης Διαφορών Χρηματοοικονομικής Φύσεως (Τροποποιητικός) Νόμος του 2017">Ο περί της Σύστασης και Λειτουργίας του Ενιαίου Φορέα Εξώδικης Επίλυσης Διαφορών Χρηματοοικονομικής Φύσεως (Τροποποιητικός) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ασφαλιστικών-και-αντασφαλιστικών-εργασιών-και-άλλων-συναφών-θεμάτων-τροποποιητικός-νόμος-του-2017" title="Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός Νόμος) του 2017">Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός Νόμος) του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-δημοσίων-δανείων-τροποποιητικός-νόμος-του-2017" title="Ο  περί  Δημοσίων  Δανείων  (Τροποποιητικός)  Νόμος  του  2017 ">Ο  περί  Δημοσίων  Δανείων  (Τροποποιητικός)  Νόμος  του  2017 </a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-επενδυτικών-υπηρεσιών-και-δραστηριοτήτων-και-ρυθμιζόμενων-αγορών-νόμος-του-2017" title="Ο περί Επενδυτικών Υπηρεσιών και Δραστηριοτήτων και Ρυθμιζόμενων Αγορών Νόμος του 2017">Ο περί Επενδυτικών Υπηρεσιών και Δραστηριοτήτων και Ρυθμιζόμενων Αγορών Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-συγκρισιμότητας-των-τελών-της-αλλαγής-λογαριασμού-πληρωμών-και-της-πρόσβασης-σε-λογαριασμούς-πληρωμών-νόμος-του-2017" title="Ο περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμος του 2017">Ο περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-υλοποίησης-του-ενιαίου-χώρου-πληρωμών-σε-ευρώ-τροποιητικός-νόμος-του-2017" title="Ο περί Υλοποίησης του Ενιαίου Χώρου Πληρωμών σε Ευρώ (Τροποιητικός) Νόμος του 2017">Ο περί Υλοποίησης του Ενιαίου Χώρου Πληρωμών σε Ευρώ (Τροποιητικός) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-προϋποθέσεων-διαφάνειας-κινητές-αξίες-προς-διαπραγμάτευση-σε-ρυθμιζόμενη-αγορά-τροποποιητικός-νόμος-του-2017" title="Ο περί των Προϋποθέσεων Διαφάνειας (Κινητές Αξίες προς Διαπραγμάτευση σε Ρυθμιζόμενη Αγορά) (Τροποποιητικός) Νόμος του 2017">Ο περί των Προϋποθέσεων Διαφάνειας (Κινητές Αξίες προς Διαπραγμάτευση σε Ρυθμιζόμενη Αγορά) (Τροποποιητικός) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-του-αμετακλήτου-του-διακανονισμού-στα-συστήματα-πληρωμών-και-στα-συστήματα-διακανονισμού-αξιογράφων-τροποποιητικός-νόμος-του-2017" title="Ο περί του Αμετακλήτου του Διακανονισμού στα Συστήματα Πληρωμών και στα Συστήματα Διακανονισμού Αξιογράφων (Τροποποιητικός) Νόμος του 2017">Ο περί του Αμετακλήτου του Διακανονισμού στα Συστήματα Πληρωμών και στα Συστήματα Διακανονισμού Αξιογράφων (Τροποποιητικός) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-συμβάσεων-καταναλωτικής-πίστης-τροποποιητικός-νόμος-του-2017" title="Ο περί των Συμβάσεων Καταναλωτικής Πίστης (Τροποποιητικός) Νόμος του 2017">Ο περί των Συμβάσεων Καταναλωτικής Πίστης (Τροποποιητικός) Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-συμβάσεων-πίστωσης-για-καταναλωτές-σε-σχέση-με-ακίνητα-που-προορίζονται-για-κατοικία-νόμος-του-2017" title="Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία Νόμος του 2017">Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία Νόμος του 2017</a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                    										<div class="item-box revealOnScroll anim-topic" data-animation="anim-topic">
+                    	<div class="row">
+                        	                        	<div class="col-xs-12">
+                            	<h2 class="f_size_l"><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/οι-περί-εργασιών-πιστωτικών-ιδρυμάτων-τροποποιητικοί-νόμοι" title="Οι περί Εργασιών Πιστωτικών Ιδρυμάτων Τροποποιητικοί  Νόμοι ">Οι περί Εργασιών Πιστωτικών Ιδρυμάτων Τροποποιητικοί  Νόμοι </a></h2>
+                                                            </div>
+                        </div>
+                    </div>                    
+                                    </div>
+        						            </div>
+        	<div class="col-sm-4 sm_top_line col-md-3">
+            	<div class="sub_menu">
+	<h3 class="f_size_m">Χρηματοοικονομικά / Τραπεζικά</h3>
+    <ul>
+    	                <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/διατάγματα-που-εκδοθήκαν-δυνάμει-του-περί-της-συγκρισιμότητας-των-τελών-της-αλλαγής-λογαριασμού-πληρωμών-και-της-πρόσβασης-σε-λογαριασμούς-πληρωμών-νόμου-του-2017" title="Διατάγματα που εκδοθήκαν δυνάμει του περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμου του 2017">Διατάγματα που εκδοθήκαν δυνάμει του περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμου του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/διάταγμα-ο-περί-της-λήψης-έκτακτων-μέτρων-από-χρηματοοικονομικούς-οργανισμούς-και-εποπτικές-αρχές-νόμος-του-2020" title="Ο Περί της Λήψης Έκτακτων Μέτρων από Χρηματοοικονομικούς Οργανισμούς και Εποπτικές Αρχές Νόμος του 2020">Ο Περί της Λήψης Έκτακτων Μέτρων από Χρηματοοικονομικούς Οργανισμούς και Εποπτικές Αρχές Νόμος του 2020</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/tο-περί-πώλησης-ενυπόθηκου-ακινήτου-μέσω-ηλεκτρονικού-συστήματος-πλειστηριασμού-διάταγμα-του-2019" title="Tο περί Πώλησης Ενυπόθηκου Ακινήτου μέσω Ηλεκτρονικού Συστήματος Πλειστηριασμού Διάταγμα του 2019">Tο περί Πώλησης Ενυπόθηκου Ακινήτου μέσω Ηλεκτρονικού Συστήματος Πλειστηριασμού Διάταγμα του 2019</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ποινικών-κυρώσεων-για-την-κατάχρηση-της-αγοράς-τροποποιητικός-νόμος-του-2019-ν-107-i-2019" title="Ο περί Ποινικών Κυρώσεων για την Κατάχρηση της Αγοράς (Τροποποιητικός) Νόμος του 2019 (Ν. 107(I)/2019)">Ο περί Ποινικών Κυρώσεων για την Κατάχρηση της Αγοράς (Τροποποιητικός) Νόμος του 2019 (Ν. 107(I)/2019)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ορισμένων-νομικών-προσώπων-δημοσίου-δικαίου-διορισμός-διοικητικών-συμβουλίων-τροποποιητικός-νόμος-του-2019-ν-106-i-2019" title="Ο περί Ορισμένων Νομικών Προσώπων Δημοσίου Δικαίου (Διορισμός Διοικητικών Συμβουλίων) (Τροποποιητικός) Νόμος του 2019 (Ν. 106(I)/2019)">Ο περί Ορισμένων Νομικών Προσώπων Δημοσίου Δικαίου (Διορισμός Διοικητικών Συμβουλίων) (Τροποποιητικός) Νόμος του 2019 (Ν. 106(I)/2019)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ν-57-i-2019-ο-περί-δημόσιας-προσφοράς-και-ενημερωτικού-δελτίου-τροποποιητικός-νόμος-του-2019" title="Ν. 57(I)/2019 - Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2019 ">Ν. 57(I)/2019 - Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2019 </a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αξιών-και-χρηματιστηρίου-αξιών-κύπρου-κεντρικό-αποθετήριο-και-κεντρικό-μητρώο-αξιών-τροποποιητικός-νόμος-του-2019-ν-29-i-2019" title="Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Κεντρικό Αποθετήριο και Κεντρικό Μητρώο Αξιών) (Τροποποιητικός) Νόμος του 2019 (Ν. 29(I)/2019)">Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Κεντρικό Αποθετήριο και Κεντρικό Μητρώο Αξιών) (Τροποποιητικός) Νόμος του 2019 (Ν. 29(I)/2019)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-του-εθνικού-ταμείου-επενδύσεων-και-του-κυπριακού-οργανισμού-διαχείρισης-επενδύσεων-και-για-συναφή-θέματα-νόμος-του-2019-ν-33-i-2019" title="Ο περί του Εθνικού Ταμείου Επενδύσεων και του Κυπριακού Οργανισμού Διαχείρισης Επενδύσεων και για Συναφή Θέματα Νόμος του 2019 (Ν. 33(I)/2019)">Ο περί του Εθνικού Ταμείου Επενδύσεων και του Κυπριακού Οργανισμού Διαχείρισης Επενδύσεων και για Συναφή Θέματα Νόμος του 2019 (Ν. 33(I)/2019)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ασφαλιστικών-και-αντασφαλιστικών-εργασιών-και-άλλων-συναφών-θεμάτων-τροποποιητικός-νόμος" title="Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός) Νόμος ">Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός) Νόμος </a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ανάκαμψης-κεπευ-και-λοιπών-οντοτήτων-υπό-την-εποπτεία-της-επιτροπής-κεφαλαιαγοράς-και-για-συναφή-θέματα-τροποποιητικός-νόμος-του-2019-ν-73-i-2019" title="Ο περί Ανάκαμψης ΚΕΠΕΥ και Λοιπών Οντοτήτων υπό την Εποπτεία της Επιτροπής Κεφαλαιαγοράς και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2019 (Ν. 73(I)/2019)">Ο περί Ανάκαμψης ΚΕΠΕΥ και Λοιπών Οντοτήτων υπό την Εποπτεία της Επιτροπής Κεφαλαιαγοράς και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2019 (Ν. 73(I)/2019)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-επιτροπής-κεφαλαιαγοράς-κύπρου-τροποποιητικός-νόμος-του-2018-ν-137-i-2018" title="Οι περί Επιτροπής Κεφαλαιαγοράς Κύπρου (Τροποποιητικοί) Νόμοι">Οι περί Επιτροπής Κεφαλαιαγοράς Κύπρου (Τροποποιητικοί) Νόμοι</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-δημόσιας-προσφοράς-και-ενημερωτικού-δελτίου-τροποποιητικός-νόμος-του-2018-ν-133-i-2018" title="Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2018 (Ν. 133(I)/2018)">Ο περί Δημόσιας Προσφοράς και Ενημερωτικού Δελτίου (Τροποποιητικός) Νόμος του 2018 (Ν. 133(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-οργανισμών-εναλλακτικών-επενδύσεων-νόμος-του-2018-ν-124-ι-2018" title="Ο περί Οργανισμών Εναλλακτικών Επενδύσεων Νόμος του 2018 (Ν.124(Ι)/2018)">Ο περί Οργανισμών Εναλλακτικών Επενδύσεων Νόμος του 2018 (Ν.124(Ι)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-τιτλοποιήσεων-νόμος-του-2018-ν-88-i-2018" title="Ο περί Τιτλοποιήσεων Νόμος του 2018 (Ν. 88(I)/2018)">Ο περί Τιτλοποιήσεων Νόμος του 2018 (Ν. 88(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-μεταβιβάσεως-και-υποθηκεύσεως-ακινήτων-τροποποιητικός-νόμος-του-2018-ν-87-i-2018" title="Ο περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων (Τροποποιητικός) Νόμος του 2018 (Ν. 87(I)/2018)">Ο περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων (Τροποποιητικός) Νόμος του 2018 (Ν. 87(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αγοραπωλησίας-πιστωτικών-διευκολύνσεων-και-για-συναφή-θέματα-τροποποιητικός-νόμος-του-2018-ν-86-i-2018" title="Ο περί Αγοραπωλησίας Πιστωτικών Διευκολύνσεων και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2018 (Ν. 86(I)/2018)">Ο περί Αγοραπωλησίας Πιστωτικών Διευκολύνσεων και για Συναφή Θέματα (Τροποποιητικός) Νόμος του 2018 (Ν. 86(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αφερεγγυότητας-φυσικών-προσώπων-προσωπικά-σχέδια-αποπληρωμής-και-διάταγμα-απαλλαγής-οφειλών-τροποποιητικός-αρ-2-νόμος-του-2018-ν-85-i-2018" title="Ο περί Αφερεγγυότητας Φυσικών Προσώπων (Προσωπικά Σχέδια Αποπληρωμής και Διάταγμα Απαλλαγής Οφειλών) (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 85(I)/2018)">Ο περί Αφερεγγυότητας Φυσικών Προσώπων (Προσωπικά Σχέδια Αποπληρωμής και Διάταγμα Απαλλαγής Οφειλών) (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 85(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-εταιρειών-τροποποιητικός-αρ-2-νόμος-του-2018-ν-83-i-2018" title="Ο περί Εταιρειών (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 83(I)/2018)">Ο περί Εταιρειών (Τροποποιητικός) (Αρ. 2) Νόμος του 2018 (Ν. 83(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-διατραπεζικών-προμηθειών-για-πράξεις-πληρωμών-με-κάρτες-νόμος-του-2018-ν-77-i-2018" title="Ο περί Διατραπεζικών Προμηθειών για Πράξεις Πληρωμών με Κάρτες Νόμος του 2018 (Ν. 77(I)/2018)">Ο περί Διατραπεζικών Προμηθειών για Πράξεις Πληρωμών με Κάρτες Νόμος του 2018 (Ν. 77(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-συστήματος-εγγύησης-των-καταθέσεων-και-εξυγίανσης-πιστωτικών-και-άλλων-ιδρυμάτων-τροποποιητικός-νόμος-του-2018-ν-41-i-2018" title="Ο περί Συστήματος Εγγύησης των Καταθέσεων και Εξυγίανσης Πιστωτικών και Άλλων Ιδρυμάτων (Τροποποιητικός) Νόμος του 2018 (Ν. 41(I)/2018)">Ο περί Συστήματος Εγγύησης των Καταθέσεων και Εξυγίανσης Πιστωτικών και Άλλων Ιδρυμάτων (Τροποποιητικός) Νόμος του 2018 (Ν. 41(I)/2018)</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/οι-περί-της-παρεμπόδισης-και-καταπολέμησης-της-νομιμοποίησης-εσόδων-από-παράνομες-δραστηριότητες-τροποποιητικοί-νόμοι" title="Οι περί της Παρεμπόδισης και Καταπολέμησης της Νομιμοποίησης Εσόδων από Παράνομες Δραστηριότητες (Τροποποιητικοί) Νόμοι">Οι περί της Παρεμπόδισης και Καταπολέμησης της Νομιμοποίησης Εσόδων από Παράνομες Δραστηριότητες (Τροποποιητικοί) Νόμοι</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/νομοθεσίες-για-τη-μείωση-των-μη-εξυπηρετούμενων-δανείων-όπως-δημοσιεύτηκαν-στην-επίσημη-εφημερίδα-στις-13-07-2018" title="Νομοθεσίες για τη μείωση των μη εξυπηρετούμενων δανείων όπως δημοσιεύτηκαν στην Επίσημη Εφημερίδα στις 13/07/2018">Νομοθεσίες για τη μείωση των μη εξυπηρετούμενων δανείων όπως δημοσιεύτηκαν στην Επίσημη Εφημερίδα στις 13/07/2018</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-παροχής-και-χρήσης-υπηρεσιών-πληρωμών-και-πρόσβασης-στα-συστήματα-πληρωμών-νομός" title="Ο περί της Παροχής και Χρήσης Υπηρεσιών Πληρωμών και Πρόσβασης στα Συστήματα Πληρωμών Νομός ">Ο περί της Παροχής και Χρήσης Υπηρεσιών Πληρωμών και Πρόσβασης στα Συστήματα Πληρωμών Νομός </a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ιδρυμάτων-ηλεκτρονικού-χρήματος-τροποποιητικός-νόμος-του-2018" title="Ο περί Ιδρυμάτων Ηλεκτρονικού Χρήματος (Τροποποιητικός)  Νόμος του 2018">Ο περί Ιδρυμάτων Ηλεκτρονικού Χρήματος (Τροποποιητικός)  Νόμος του 2018</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-εξ-αποστάσεως-εμπορίας-χρηματοοικονομικών-υπηρεσιών-προς-τους-καταναλωτές-τροποποιητικός-νόμος-του-2018" title="Ο περί της εξ Αποστάσεως Εμπορίας Χρηματοοικονομικών Υπηρεσιών προς τους Καταναλωτές (Τροποποιητικός) Νόμος του 2018">Ο περί της εξ Αποστάσεως Εμπορίας Χρηματοοικονομικών Υπηρεσιών προς τους Καταναλωτές (Τροποποιητικός) Νόμος του 2018</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/τα-περί-της-ανακεφαλαιοποίησης-της-συνεργατικής-κυπριακής-τράπεζας-διατάγματα-του-2013-εως-2018" title="Τα περί της Ανακεφαλαιοποίησης της Συνεργατικής Κυπριακής Τράπεζας Διατάγματα του 2013 εως 2018">Τα περί της Ανακεφαλαιοποίησης της Συνεργατικής Κυπριακής Τράπεζας Διατάγματα του 2013 εως 2018</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/οδηγία-οδ87-01-της-επιτροπής-κεφαλαιαγοράς" title="Οδηγία ΟΔ87-01 της Επιτροπής Κεφαλαιαγοράς">Οδηγία ΟΔ87-01 της Επιτροπής Κεφαλαιαγοράς</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-ίδρυσης-ταμείου-νομικής-αρωγής-σε-επενδυτές-καταργητικός-νόμος-του-2017" title="Ο περί της Ίδρυσης Ταμείου Νομικής Αρωγής σε Επενδυτές (Καταργητικός) Νόμος του 2017">Ο περί της Ίδρυσης Ταμείου Νομικής Αρωγής σε Επενδυτές (Καταργητικός) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-συμβάσεων-πίστωσης-για-καταναλωτές-σε-σχέση-με-ακίνητα-που-προορίζονται-για-κατοικία-τροποποιητικός-νόμος-του-2017" title="Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία (Τροποποιητικός) Νόμος του 2017">Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία (Τροποποιητικός) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-αξιών-και-χρηματιστηρίου-αξιών-κύπρου-τροποποιητικός-αρ-2-νόμος-του-2017" title="Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Τροποποιητικός) (Αρ.2) Νόμος του 2017">Ο περί Αξιών και Χρηματιστηρίου Αξιών Κύπρου (Τροποποιητικός) (Αρ.2) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-συμβάσεων-πίστωσης-για-καταναλωτές-σε-σχέση-με-ακίνητα-που-προορίζονται-για-κατοικία-νόμοι" title="Ο περί Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για κατοικία Νόμοι">Ο περί Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για κατοικία Νόμοι</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-οργανισμού-χρηματοδοτήσεως-στέγης-τροποποιητικός-νόμος-του-2017" title="Οι περί Οργανισμού Χρηματοδοτήσεως Στέγης (Τροποποιητικοί) Νόμοι">Οι περί Οργανισμού Χρηματοδοτήσεως Στέγης (Τροποποιητικοί) Νόμοι</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-σύστασης-και-λειτουργίας-του-ενιαίου-φορέα-εξώδικης-επίλυσης-διαφορών-χρηματοοικονομικής-φύσεως-τροποποιητικός-νόμος-του-2017" title="Ο περί της Σύστασης και Λειτουργίας του Ενιαίου Φορέα Εξώδικης Επίλυσης Διαφορών Χρηματοοικονομικής Φύσεως (Τροποποιητικός) Νόμος του 2017">Ο περί της Σύστασης και Λειτουργίας του Ενιαίου Φορέα Εξώδικης Επίλυσης Διαφορών Χρηματοοικονομικής Φύσεως (Τροποποιητικός) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-ασφαλιστικών-και-αντασφαλιστικών-εργασιών-και-άλλων-συναφών-θεμάτων-τροποποιητικός-νόμος-του-2017" title="Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός Νόμος) του 2017">Ο περί Ασφαλιστικών και Αντασφαλιστικών Εργασιών και Άλλων Συναφών Θεμάτων (Τροποποιητικός Νόμος) του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-δημοσίων-δανείων-τροποποιητικός-νόμος-του-2017" title="Ο  περί  Δημοσίων  Δανείων  (Τροποποιητικός)  Νόμος  του  2017 ">Ο  περί  Δημοσίων  Δανείων  (Τροποποιητικός)  Νόμος  του  2017 </a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-επενδυτικών-υπηρεσιών-και-δραστηριοτήτων-και-ρυθμιζόμενων-αγορών-νόμος-του-2017" title="Ο περί Επενδυτικών Υπηρεσιών και Δραστηριοτήτων και Ρυθμιζόμενων Αγορών Νόμος του 2017">Ο περί Επενδυτικών Υπηρεσιών και Δραστηριοτήτων και Ρυθμιζόμενων Αγορών Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-της-συγκρισιμότητας-των-τελών-της-αλλαγής-λογαριασμού-πληρωμών-και-της-πρόσβασης-σε-λογαριασμούς-πληρωμών-νόμος-του-2017" title="Ο περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμος του 2017">Ο περί της Συγκρισιμότητας των Τελών, της Αλλαγής Λογαριασμού Πληρωμών και της Πρόσβασης σε Λογαριασμούς Πληρωμών Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-υλοποίησης-του-ενιαίου-χώρου-πληρωμών-σε-ευρώ-τροποιητικός-νόμος-του-2017" title="Ο περί Υλοποίησης του Ενιαίου Χώρου Πληρωμών σε Ευρώ (Τροποιητικός) Νόμος του 2017">Ο περί Υλοποίησης του Ενιαίου Χώρου Πληρωμών σε Ευρώ (Τροποιητικός) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-προϋποθέσεων-διαφάνειας-κινητές-αξίες-προς-διαπραγμάτευση-σε-ρυθμιζόμενη-αγορά-τροποποιητικός-νόμος-του-2017" title="Ο περί των Προϋποθέσεων Διαφάνειας (Κινητές Αξίες προς Διαπραγμάτευση σε Ρυθμιζόμενη Αγορά) (Τροποποιητικός) Νόμος του 2017">Ο περί των Προϋποθέσεων Διαφάνειας (Κινητές Αξίες προς Διαπραγμάτευση σε Ρυθμιζόμενη Αγορά) (Τροποποιητικός) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-του-αμετακλήτου-του-διακανονισμού-στα-συστήματα-πληρωμών-και-στα-συστήματα-διακανονισμού-αξιογράφων-τροποποιητικός-νόμος-του-2017" title="Ο περί του Αμετακλήτου του Διακανονισμού στα Συστήματα Πληρωμών και στα Συστήματα Διακανονισμού Αξιογράφων (Τροποποιητικός) Νόμος του 2017">Ο περί του Αμετακλήτου του Διακανονισμού στα Συστήματα Πληρωμών και στα Συστήματα Διακανονισμού Αξιογράφων (Τροποποιητικός) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-συμβάσεων-καταναλωτικής-πίστης-τροποποιητικός-νόμος-του-2017" title="Ο περί των Συμβάσεων Καταναλωτικής Πίστης (Τροποποιητικός) Νόμος του 2017">Ο περί των Συμβάσεων Καταναλωτικής Πίστης (Τροποποιητικός) Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/ο-περί-των-συμβάσεων-πίστωσης-για-καταναλωτές-σε-σχέση-με-ακίνητα-που-προορίζονται-για-κατοικία-νόμος-του-2017" title="Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία Νόμος του 2017">Ο περί των Συμβάσεων Πίστωσης για Καταναλωτές σε σχέση με Ακίνητα που προορίζονται για Κατοικία Νόμος του 2017</a></li>
+        
+                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά/οι-περί-εργασιών-πιστωτικών-ιδρυμάτων-τροποποιητικοί-νόμοι" title="Οι περί Εργασιών Πιστωτικών Ιδρυμάτων Τροποποιητικοί  Νόμοι ">Οι περί Εργασιών Πιστωτικών Ιδρυμάτων Τροποποιητικοί  Νόμοι </a></li>
+        
+            </ul>
+</div>
+            	            	<div class="tw_blo_in">
+	<a class="twitter-timeline" data-height="350" data-link-color="#09b7ff" href="https://twitter.com/MoF_Cyprus">Tweets by MoF_Cyprus</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+            </div>
+        </div>
+	</div>
+</div>
+<div class="art_block pad_a revealOnScroll anim-section">
+	<div class="container">
+    	<h3>Ανακοινώσεις & Εγκύκλιοι</h3>
+        <div class="row">
+        				                    	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/διευκρινίσεις-για-το-ειδικό-σχέδιο-χορηγίας-για-επιχειρήσεις-και-αυτοτελώς-εργαζομένους-για-φροντιστήρια-σχολές-χορού-και-ωδεία" title="Διευκρινίσεις για το Ειδικό Σχέδιο Χορηγίας για Επιχειρήσεις και Αυτοτελώς Εργαζομένους, για Φροντιστήρια, Σχολές Χορού και Ωδεία"><img src="assets/modules/wnp/articles/202101/822/images/s_b_ministry.jpg" alt="Διευκρινίσεις για το Ειδικό Σχέδιο Χορηγίας για Επιχειρήσεις και Αυτοτελώς Εργαζομένους, για Φροντιστήρια, Σχολές Χορού και Ωδεία" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-29">29/01/2021</time>
+                                                <em class="subtitle color-a">Υπουργείο Οικονομικών</em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/διευκρινίσεις-για-το-ειδικό-σχέδιο-χορηγίας-για-επιχειρήσεις-και-αυτοτελώς-εργαζομένους-για-φροντιστήρια-σχολές-χορού-και-ωδεία" title="Διευκρινίσεις για το Ειδικό Σχέδιο Χορηγίας για Επιχειρήσεις και Αυτοτελώς Εργαζομένους, για Φροντιστήρια, Σχολές Χορού και Ωδεία">Διευκρινίσεις για το Ειδικό Σχέδιο Χορηγίας για Επιχειρήσεις και Αυτοτελώς Εργαζομένους, για Φροντιστήρια, Σχολές Χορού και Ωδεία</a></h4>
+                </div>
+            </div>
+                                	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/ειδικό-σχέδιο-χορηγίας-για-επιχειρήσεις-και-αυτοτελώς-εργαζομένους-για-φροντιστήεια-σχολές-χορού-και-ωδεία" title="Ειδικό Σχέδιο Χορηγίας για επιχειρήσεις και αυτοτελώς εργαζομένους για φροντιστήρια, σχολές χορού και ωδεία"><img src="assets/modules/wnp/articles/202101/817/images/s_xorigeies_sxoles_1200x630px_twitter_v2_01.png" alt="Ειδικό Σχέδιο Χορηγίας για επιχειρήσεις και αυτοτελώς εργαζομένους για φροντιστήρια, σχολές χορού και ωδεία" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-26">26/01/2021</time>
+                                                <em class="subtitle color-a">Υπουργείο Οικονομικών</em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/ειδικό-σχέδιο-χορηγίας-για-επιχειρήσεις-και-αυτοτελώς-εργαζομένους-για-φροντιστήεια-σχολές-χορού-και-ωδεία" title="Ειδικό Σχέδιο Χορηγίας για επιχειρήσεις και αυτοτελώς εργαζομένους για φροντιστήρια, σχολές χορού και ωδεία">Ειδικό Σχέδιο Χορηγίας για επιχειρήσεις και αυτοτελώς εργαζομένους για φροντιστήρια, σχολές χορού και ωδεία</a></h4>
+                </div>
+            </div>
+                                	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/nομοσχέδιο-που-τροποποιεί-τον-περί-δικαστηρίων-νόμο" title="Nομοσχέδιο που τροποποιεί τον περί Δικαστηρίων Νόμο"><img src="assets/modules/wnp/articles/202101/815/images/s_img_9711.JPG" alt="Nομοσχέδιο που τροποποιεί τον περί Δικαστηρίων Νόμο" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-22">22/01/2021</time>
+                                                <em class="subtitle color-a">Υπουργείο Οικονομικών</em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/nομοσχέδιο-που-τροποποιεί-τον-περί-δικαστηρίων-νόμο" title="Nομοσχέδιο που τροποποιεί τον περί Δικαστηρίων Νόμο">Nομοσχέδιο που τροποποιεί τον περί Δικαστηρίων Νόμο</a></h4>
+                </div>
+            </div>
+                                	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/μεταφορά-αρμοδιότητας-σχεδίου-cyprus-startup-visa-στο-υφυπουργείο-έρευνας-καινοτομίας-και-ψηφιακής-πολιτικής" title="Μεταφορά αρμοδιότητας Σχεδίου Cyprus Startup Visa στο Υφυπουργείο Έρευνας Καινοτομίας και Ψηφιακής Πολιτικής"><img src="assets/modules/wnp/articles/202101/813/images/s_startup2.jpg" alt="Μεταφορά αρμοδιότητας Σχεδίου Cyprus Startup Visa στο Υφυπουργείο Έρευνας Καινοτομίας και Ψηφιακής Πολιτικής" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-21">21/01/2021</time>
+                                                <em class="subtitle color-a">Υπουργείο Οικονομικών</em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου/μεταφορά-αρμοδιότητας-σχεδίου-cyprus-startup-visa-στο-υφυπουργείο-έρευνας-καινοτομίας-και-ψηφιακής-πολιτικής" title="Μεταφορά αρμοδιότητας Σχεδίου Cyprus Startup Visa στο Υφυπουργείο Έρευνας Καινοτομίας και Ψηφιακής Πολιτικής">Μεταφορά αρμοδιότητας Σχεδίου Cyprus Startup Visa στο Υφυπουργείο Έρευνας Καινοτομίας και Ψηφιακής Πολιτικής</a></h4>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+<div class="art_block pad_a bg-color revealOnScroll anim-section">
+	<div class="container">
+    	<h3>Γραφείο Τύπου Υπουργού</h3>
+        <div class="row">
+			                    	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/δήλωση-υπουργού-οικονομικών-κ-κωνσταντίνου-πετρίδη-για-την-κατάθεσή-του-στην-ερευνητική-επιτροπή-για-το-κυπριακό-επενδυτικό-πρόγραμμα" title="Δήλωση Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη για την κατάθεσή του στην Ερευνητική Επιτροπή για το Κυπριακό Επενδυτικό Πρόγραμμα"><img src="assets/modules/wnp/articles/202101/820/images/s_27394.jpg" alt="Δήλωση Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη για την κατάθεσή του στην Ερευνητική Επιτροπή για το Κυπριακό Επενδυτικό Πρόγραμμα" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-28">28/01/2021</time>
+                                                <em class="subtitle color-a"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού" title="Γραφείο Τύπου Υπουργού">Γραφείο Τύπου Υπουργού</a></em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/δήλωση-υπουργού-οικονομικών-κ-κωνσταντίνου-πετρίδη-για-την-κατάθεσή-του-στην-ερευνητική-επιτροπή-για-το-κυπριακό-επενδυτικό-πρόγραμμα" title="Δήλωση Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη για την κατάθεσή του στην Ερευνητική Επιτροπή για το Κυπριακό Επενδυτικό Πρόγραμμα">Δήλωση Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη για την κατάθεσή του στην Ερευνητική Επιτροπή για το Κυπριακό Επενδυτικό Πρόγραμμα</a></h4>
+                </div>
+            </div>
+                                	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/the-outlook-for-the-cyprus-economy-by-constantinos-petrides-minister-of-finance-at-the-5th-cyprus-international-investors-summit" title="Ομιλία Υπουργού Οικονομικών "The Outlook for the Cyprus Economy" - The 5th Cyprus International Investors Summit"><img src="assets/modules/wnp/articles/202101/818/images/s_.jpg" alt="Ομιλία Υπουργού Οικονομικών "The Outlook for the Cyprus Economy" - The 5th Cyprus International Investors Summit" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-28">28/01/2021</time>
+                                                <em class="subtitle color-a"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού" title="Γραφείο Τύπου Υπουργού">Γραφείο Τύπου Υπουργού</a></em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/the-outlook-for-the-cyprus-economy-by-constantinos-petrides-minister-of-finance-at-the-5th-cyprus-international-investors-summit" title="Ομιλία Υπουργού Οικονομικών "The Outlook for the Cyprus Economy" - The 5th Cyprus International Investors Summit">Ομιλία Υπουργού Οικονομικών "The Outlook for the Cyprus Economy" - The 5th Cyprus International Investors Summit</a></h4>
+                </div>
+            </div>
+                                	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/δηλώσεις-υπουργού-οικονομικών-κ-κωνσταντίνου-πετρίδη-στη-βουλή-μετά-τη-ψήφιση-του-κρατικού-προϋπολογισμού" title="Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή, μετά τη ψήφιση του Κρατικού Προϋπολογισμού"><img src="assets/modules/wnp/articles/202101/814/images/s_image_1.jpg" alt="Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή, μετά τη ψήφιση του Κρατικού Προϋπολογισμού" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-21">21/01/2021</time>
+                                                <em class="subtitle color-a"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού" title="Γραφείο Τύπου Υπουργού">Γραφείο Τύπου Υπουργού</a></em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/δηλώσεις-υπουργού-οικονομικών-κ-κωνσταντίνου-πετρίδη-στη-βουλή-μετά-τη-ψήφιση-του-κρατικού-προϋπολογισμού" title="Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή, μετά τη ψήφιση του Κρατικού Προϋπολογισμού">Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή, μετά τη ψήφιση του Κρατικού Προϋπολογισμού</a></h4>
+                </div>
+            </div>
+                                	<div class="xxs-full col-xs-6 col-md-3 par-box">
+            	<div class="item-box">
+                						<div class="photo"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/δηλώσεις-υπουργού-οικονομικών-κ-κωνσταντίνου-πετρίδη-στη-βουλή-για-τον-αναθεωρημένο-προϋπολογισμό-2021" title="Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή για τον αναθεωρημένο Προϋπολογισμό 2021"><img src="assets/modules/wnp/articles/202101/810/images/s_20210115_151019.jpg" alt="Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή για τον αναθεωρημένο Προϋπολογισμό 2021" class="img-responsive" /></a></div>
+                                        <div class="subhead">
+                                                <time class="artdate bold color-b" pubdate="2021-01-15">15/01/2021</time>
+                                                <em class="subtitle color-a"><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού" title="Γραφείο Τύπου Υπουργού">Γραφείο Τύπου Υπουργού</a></em>
+                    </div>
+                    <h4><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού/δηλώσεις-υπουργού-οικονομικών-κ-κωνσταντίνου-πετρίδη-στη-βουλή-για-τον-αναθεωρημένο-προϋπολογισμό-2021" title="Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή για τον αναθεωρημένο Προϋπολογισμό 2021">Δηλώσεις Υπουργού Οικονομικών κ. Κωνσταντίνου Πετρίδη στη Βουλή για τον αναθεωρημένο Προϋπολογισμό 2021</a></h4>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+<footer id="page_f">
+	<div class="bot-menu hidden-xs hidden-sm">
+    	<div class="container">
+            <div class="bot-row clearfix">
+                				                				                <div class="col-block">
+                                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/υπουργείο-οικονομικών" title="Υπουργείο Οικονομικών"  target="_self"  >Υπουργείο Οικονομικών</a></strong>
+                                                                        <ul class="sup_list">
+                                                                         <li><a href="gr/υπουργείο-οικονομικών/ο-υπουργός-οικονομικών-στη-μεσημβρινή-εκπομπή-του-άλφα-για-τη-ψήφιση-του-προϋπολογισμού-βίντεο" title="Ο Υπουργός Οικονομικών στη μεσημβρινή εκπομπή του Άλφα για τη ψήφιση του προϋπολογισμού - Βίντεο">Ο Υπουργός Οικονομικών στη μεσημβρινή εκπομπή του Άλφα για τη ψήφιση του προϋπολογισμού - Βίντεο</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/ο-υπουργός-οικονομικών-στο-κεντρικό-δελτίο-του-omega-για-τον-προϋπολογισμό-βίντεο" title="Ο Υπουργός Οικονομικών στο Κεντρικό Δελτίο του Omega για τον προϋπολογισμό - Βίντεο">Ο Υπουργός Οικονομικών στο Κεντρικό Δελτίο του Omega για τον προϋπολογισμό - Βίντεο</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/o-yπουργός-οικονομικών-στην-εκπομπή-αlpha-ενημέρωση-για-τον-αναθεωρημένο-προϋπολογισμό-που-ενέκρινε-το-υπουργικό-βίντεο" title="O Yπουργός Οικονομικών στην εκπομπή Αlpha Ενημέρωση για τον αναθεωρημένο προϋπολογισμό που ενέκρινε το Υπουργικό - Βίντεο">O Yπουργός Οικονομικών στην εκπομπή Αlpha Ενημέρωση για τον αναθεωρημένο προϋπολογισμό που ενέκρινε το Υπουργικό - Βίντεο</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/o-υπουργός-οικονομικών-στο-sigma-για-τα-νέα-μέτρα-στήριξης-της-οικονομίας-και-τη-ψήφιση-του-προυπολογισμού" title="O Υπουργός Οικονομικών στο Sigma για τα νέα μέτρα στήριξης της οικονομίας και τη ψήφιση του προυπολογισμού - Βίντεο">O Υπουργός Οικονομικών στο Sigma για τα νέα μέτρα στήριξης της οικονομίας και τη ψήφιση του προυπολογισμού - Βίντεο</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/υποικ-στον-αντ1-δεν-προβλέπεται-νωρίτερα-έξοδος-στις-αγορές-για-δανεισμό-βιντεο" title="ΥΠΟΙΚ στον ΑΝΤ1: Δεν προβλέπεται νωρίτερα έξοδος στις αγορές για δανεισμό - ΒΙΝΤΕΟ ">ΥΠΟΙΚ στον ΑΝΤ1: Δεν προβλέπεται νωρίτερα έξοδος στις αγορές για δανεισμό - ΒΙΝΤΕΟ </a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/ο-υποικ-στον-αντ1-δεν-θα-μπούμε-σε-μια-λογική-πολιτικών-εκβιασμών-που-δεν-έχουν-σχέση-με-τον-προϋπολογισμό-βίντεο" title="Ο ΥΠΟΙΚ στον Αντ1: Δεν θα μπούμε σε μια λογική πολιτικών εκβιασμών που δεν έχουν σχέση με τον προϋπολογισμό - Βίντεο ">Ο ΥΠΟΙΚ στον Αντ1: Δεν θα μπούμε σε μια λογική πολιτικών εκβιασμών που δεν έχουν σχέση με τον προϋπολογισμό - Βίντεο </a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/1-ο-υπουργός-οικονομικών-στο-κεντρικό-δελτίο-ειδήσεων-του-omega-για-τον-προϋπολογισμό-του-2021" title="Ο Υπουργός Οικονομικών στο κεντρικό δελτίο ειδήσεων του Omega για τον Προϋπολογισμό του 2021- Βίντεο">Ο Υπουργός Οικονομικών στο κεντρικό δελτίο ειδήσεων του Omega για τον Προϋπολογισμό του 2021- Βίντεο</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/ο-υπουργός-οικονομικών-στο-sigma-για-την-ψήφιση-του-προϋπολογισμού-βίντεο" title="Ο Υπουργός Οικονομικών στο Sigma για την ψήφιση του προϋπολογισμού - Βίντεο ">Ο Υπουργός Οικονομικών στο Sigma για την ψήφιση του προϋπολογισμού - Βίντεο </a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/yπουργός-οικονομικών-στον-alpha-για-τα-σενάρια-καταψήφισης-του-προϋπολογισμού-βίντεο" title="Yπουργός Οικονομικών στον Alpha για τα σενάρια καταψήφισης του προϋπολογισμού - Βίντεο">Yπουργός Οικονομικών στον Alpha για τα σενάρια καταψήφισης του προϋπολογισμού - Βίντεο</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/1-υπουργός-οικονομικών" title="Υπουργός Οικονομικών">Υπουργός Οικονομικών</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/1-γενικός-διευθυντής" title="Γενικός Διευθυντής">Γενικός Διευθυντής</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/αποστολή-όραμα" title="Αποστολή - Όραμα">Αποστολή - Όραμα</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/προηγούμενοι-υπουργοί" title="Προηγούμενοι Υπουργοί">Προηγούμενοι Υπουργοί</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/οργανόγραμμα" title="Οργανόγραμμα">Οργανόγραμμα</a></li>
+						                                                                           <li><a href="gr/υπουργείο-οικονομικών/ανθρώπινο-δυναμικό" title="Ανθρώπινο Δυναμικό">Ανθρώπινο Δυναμικό</a></li>
+						                                                  </ul>
+                                                                    </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/διευθύνσεις-και-μονάδες" title="Διευθύνσεις / Μονάδες / Υπηρεσίες"  target="_self"  >Διευθύνσεις / Μονάδες / Υπηρεσίες</a></strong>
+                                                                        <ul class="sup_list">
+                                                                         <li><a href="gr/διευθύνσεις-και-μονάδες/δ-νση-στρατηγικής-συντονισμού-και-επικοινωνίας" title="Δ/νση Στρατηγικής, Συντονισμού και Επικοινωνίας">Δ/νση Στρατηγικής, Συντονισμού και Επικοινωνίας</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/δ-νση-διεθνών-χρηματοδοτικών-οργανισμών-και-οικονομικής-διαχείρισης-κεντρικής-κυβέρνησης" title="Δ/νση Διεθνών Χρηματοδοτικών Οργανισμών και Οικονομικής Διαχείρισης Κεντρικής Κυβέρνησης">Δ/νση Διεθνών Χρηματοδοτικών Οργανισμών και Οικονομικής Διαχείρισης Κεντρικής Κυβέρνησης</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/δ-νση-οικονομικής-πολιτικής-ευρωπαϊκών-και-διεθνών-θεμάτων" title="Δ/νση Οικονομικής Πολιτικής, Ευρωπαϊκών και Διεθνών Θεμάτων">Δ/νση Οικονομικής Πολιτικής, Ευρωπαϊκών και Διεθνών Θεμάτων</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/δ-νση-προϋπολογισμού" title="Δ/νση Προϋπολογισμού">Δ/νση Προϋπολογισμού</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/γραφείο-διαχείρισης-δημόσιου-χρέους" title="Γραφείο Διαχείρισης Δημόσιου Χρέους">Γραφείο Διαχείρισης Δημόσιου Χρέους</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/δ-νση-χρηματοοικονομικής-σταθερότητας" title="Δ/νση Χρηματοοικονομικής Σταθερότητας">Δ/νση Χρηματοοικονομικής Σταθερότητας</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/υπηρεσίες-κρατικών-αγορών-και-προμηθειών" title="Υπηρεσίες Κρατικών Αγορών και Προμηθειών">Υπηρεσίες Κρατικών Αγορών και Προμηθειών</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/υπηρεσία-ελέγχου-ασφαλιστικών-εταιρειών" title="Υπηρεσία Ελέγχου Ασφαλιστικών Εταιρειών">Υπηρεσία Ελέγχου Ασφαλιστικών Εταιρειών</a></li>
+						                                                                           <li><a href="gr/διευθύνσεις-και-μονάδες/μονάδα-εσωτερικού-ελέγχου-υπουργείου-οικονομικών" title="Μονάδα Εσωτερικού Ελέγχου Υπουργείου Οικονομικών">Μονάδα Εσωτερικού Ελέγχου Υπουργείου Οικονομικών</a></li>
+						                                                  </ul>
+                                                                    </div>
+                                                   	                </div>
+                               				                <div class="col-block">
+                                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/τμήματα" title="Τμήματα"  target="_self"  >Τμήματα</a></strong>
+                                                                        <ul class="sup_list">
+                                                                         <li><a href="gr/τμήματα/τμήμα-τελωνείων" title="Τμήμα Τελωνείων">Τμήμα Τελωνείων</a></li>
+						                                                                           <li><a href="gr/τμήματα/1-τμήμα-φορολογίας" title="Τμήμα Φορολογίας">Τμήμα Φορολογίας</a></li>
+						                                                                           <li><a href="gr/τμήματα/1-τμήμα-δημόσιας-διοίκησης-και-προσωπικού" title="Τμήμα Δημόσιας Διοίκησης και Προσωπικού">Τμήμα Δημόσιας Διοίκησης και Προσωπικού</a></li>
+						                                                                           <li><a href="gr/τμήματα/1-στατιστική-υπηρεσία" title="Στατιστική Υπηρεσία">Στατιστική Υπηρεσία</a></li>
+						                                                                           <li><a href="gr/τμήματα/τυπογραφείο-της-κυπριακής-δημοκρατίας" title="Τυπογραφείο της Κυπριακής Δημοκρατίας">Τυπογραφείο της Κυπριακής Δημοκρατίας</a></li>
+						                                                  </ul>
+                                                                    </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/γραφείο-τύπου" title="Γραφείο Τύπου"  target="_self"  >Γραφείο Τύπου</a></strong>
+                                                <ul class="sup_list">
+                                                        <li><a href="gr/γραφείο-τύπου/γραφείο-τύπου-υπουργού" title="Γραφείο Τύπου Υπουργού"  target="_self"  >Γραφείο Τύπου Υπουργού</a></li>
+                                                                                    <li><a href="gr/γραφείο-τύπου/ανακοινώσεις-εγκύκλιοι-υπουργείου" title="Ανακοινώσεις & Εγκύκλιοι Υπουργείου"  target="_self"  >Ανακοινώσεις & Εγκύκλιοι Υπουργείου</a></li>
+                                                                                    <li><a href="gr/γραφείο-τύπου/1-εξυπηρέτηση-πολιτών" title="Εξυπηρέτηση Πολιτών"  target="_self"  >Εξυπηρέτηση Πολιτών</a></li>
+                                                                                </ul>
+                                            </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/οικονομικοί-δείκτες" title="Οικονομικοί Δείκτες"  target="_self"  >Οικονομικοί Δείκτες</a></strong>
+                                                <ul class="sup_list">
+                                                        <li><a href="gr/οικονομικοί-δείκτες/μακροοικονομικά" title="Μάκρο - Οικονομικά"  target="_self"  >Μάκρο - Οικονομικά</a></li>
+                                                                                    <li><a href="gr/οικονομικοί-δείκτες/δημόσια-οικονομικά" title="Δημόσια Οικονομικά"  target="_self"  >Δημόσια Οικονομικά</a></li>
+                                                                                </ul>
+                                            </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/1-εκδόσεις" title="Εκδόσεις "  target="_self"  >Εκδόσεις </a></strong>
+                                                <ul class="sup_list">
+                                                        <li><a href="gr/1-εκδόσεις/ετήσια-έκθεση-υπουργείου-οικονομικών" title="Ετήσια Έκθεση Υπουργείου Οικονομικών"  target="_self"  >Ετήσια Έκθεση Υπουργείου Οικονομικών</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/στρατηγικό-πλαίσιο-δημοσιονομικής-πολιτικής" title="Στρατηγικό Πλαίσιο Δημοσιονομικής Πολιτικής"  target="_self"  >Στρατηγικό Πλαίσιο Δημοσιονομικής Πολιτικής</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/2-στρατηγικό-σχέδιο-υπουργείου-οικονομικών" title="Στρατηγικό Σχέδιο Υπουργείου Οικονομικών"  target="_self"  >Στρατηγικό Σχέδιο Υπουργείου Οικονομικών</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/σχέδιο-δημοσιονομικού-προγράμματος" title="Σχέδιο Δημοσιονομικού Προγράμματος"  target="_self"  >Σχέδιο Δημοσιονομικού Προγράμματος</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/έκθεση-δημοσιονομικών-κινδύνων" title="Έκθεση Δημοσιονομικών Κινδύνων"  target="_self"  >Έκθεση Δημοσιονομικών Κινδύνων</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/δελτία-οικονομικής-ανασκόπησης" title="Δελτία Οικονομικής Ανασκόπησης"  target="_self"  >Δελτία Οικονομικής Ανασκόπησης</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/οικονομικές-εξελίξεις-και-προοπτικές" title="Οικονομικές Εξελίξεις και Προοπτικές"  target="_self"  >Οικονομικές Εξελίξεις και Προοπτικές</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/πρόγραμμα-σταθερότητας" title="Πρόγραμμα Σταθερότητας"  target="_self"  >Πρόγραμμα Σταθερότητας</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/δοκίμια-οικονομικής-πολιτικής" title="Δοκίμια Οικονομικής Πολιτικής"  target="_self"  >Δοκίμια Οικονομικής Πολιτικής</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/ειδικές-μελέτες" title="Ειδικές Μελέτες"  target="_self"  >Ειδικές Μελέτες</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/οδηγός-εναρμόνισης-με-το-δίκαιο-της-ευρωπαϊκής-ένωσης" title="Οδηγός Εναρμόνισης με το Δίκαιο της Ευρωπαϊκής Ένωσης  "  target="_self"  >Οδηγός Εναρμόνισης με το Δίκαιο της Ευρωπαϊκής Ένωσης  </a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/1-παρουσιάσεις" title="Παρουσιάσεις"  target="_self"  >Παρουσιάσεις</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/εκδόσεις-από-άλλους-οργανισμούς" title="Εκδόσεις από άλλους οργανισμούς"  target="_self"  >Εκδόσεις από άλλους οργανισμούς</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/1-υπηρεσία-ελέγχου-ασφαλιστικών-εταιρειών" title="Υπηρεσία Ελέγχου Ασφαλιστικών Εταιρειών"  target="_self"  >Υπηρεσία Ελέγχου Ασφαλιστικών Εταιρειών</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/διαβούλευση" title="Διαβούλευση"  target="_self"  >Διαβούλευση</a></li>
+                                                                                    <li><a href="gr/1-εκδόσεις/σχέδιο-δημοσίευσης-υπουργείου-οικονομικών" title="Σχέδιο Δημοσίευσης Υπουργείου Οικονομικών"  target="_self"  >Σχέδιο Δημοσίευσης Υπουργείου Οικονομικών</a></li>
+                                                                                </ul>
+                                            </div>
+                                                   	                </div>
+                               				                <div class="col-block">
+                                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/φορολογική-επενδυτική-πολιτική" title="Φορολογική/Επενδυτική Πολιτική"  target="_self"  >Φορολογική/Επενδυτική Πολιτική</a></strong>
+                                                <ul class="sup_list">
+                                                        <li><a href="gr/φορολογική-επενδυτική-πολιτική/συμβάσεις-αποφυγής-διπλής-φορολογίας" title="Συμβάσεις Αποφυγής Διπλής Φορολογίας"  target="_self"  >Συμβάσεις Αποφυγής Διπλής Φορολογίας</a></li>
+                                                                                    <li><a href="gr/φορολογική-επενδυτική-πολιτική/πολυμερείς-συμβάσεις" title="Πολυμερείς και Διμερείς Συμβάσεις"  target="_self"  >Πολυμερείς και Διμερείς Συμβάσεις</a></li>
+                                                                                    <li><a href="gr/φορολογική-επενδυτική-πολιτική/φορολογικά-κίνητρα" title="Φορολογικά Κίνητρα "  target="_self"  >Φορολογικά Κίνητρα </a></li>
+                                                                                </ul>
+                                            </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/νομοθεσία" title="Νομοθεσία/ Διατάγματα "  target="_self"  >Νομοθεσία/ Διατάγματα </a></strong>
+                                                <ul class="sup_list">
+                                                        <li><a href="gr/νομοθεσία/χρηματοοικονομικά-τραπεζικά" title="Χρηματοοικονομικά / Τραπεζικά"  target="_self"  >Χρηματοοικονομικά / Τραπεζικά</a></li>
+                                                                                    <li><a href="gr/νομοθεσία/χρηματοδοτικές-μισθώσεις" title="Χρηματοδοτικές Μισθώσεις"  target="_self"  >Χρηματοδοτικές Μισθώσεις</a></li>
+                                                                                    <li><a href="gr/νομοθεσία/ενιαίο-δημόσιο-επιτόκιο-υπερημερίας" title="Ενιαίο Δημόσιο Επιτόκιο Υπερημερίας"  target="_self"  >Ενιαίο Δημόσιο Επιτόκιο Υπερημερίας</a></li>
+                                                                                    <li><a href="gr/νομοθεσία/φορολογικά" title="Φορολογικά"  target="_self"  >Φορολογικά</a></li>
+                                                                                    <li><a href="gr/νομοθεσία/δημοσιονομική-διαχείριση" title="Δημοσιονομική Διαχείριση"  target="_self"  >Δημοσιονομική Διαχείριση</a></li>
+                                                                                    <li><a href="gr/νομοθεσία/στοιχήματα-και-ορισμένα-τυχερά-παιχνίδια" title="Στοιχήματα και Ορισμένα Τυχερά Παιχνίδια"  target="_self"  >Στοιχήματα και Ορισμένα Τυχερά Παιχνίδια</a></li>
+                                                                                    <li><a href="gr/νομοθεσία/1-αξιοποίηση-κρατικής-περιουσίας" title="Αξιοποίηση Κρατικής Περιουσίας"  target="_self"  >Αξιοποίηση Κρατικής Περιουσίας</a></li>
+                                                                                    <li><a href="gr/νομοθεσία/εκσυγχρονισμός-καινοτομία" title="Εκσυγχρονισμός / Καινοτομία"  target="_self"  >Εκσυγχρονισμός / Καινοτομία</a></li>
+                                                                                </ul>
+                                            </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/διεθνείς-χρηματοδοτικοί-οργανισμοί" title="Διεθνείς Χρηματοδοτικοί Οργανισμοί"  target="_self"  >Διεθνείς Χρηματοδοτικοί Οργανισμοί</a></strong>
+                                                <ul class="sup_list">
+                                                        <li><a href="gr/διεθνείς-χρηματοδοτικοί-οργανισμοί/οργανισμοί" title="Οργανισμοί"  target="_self"  >Οργανισμοί</a></li>
+                                                                                    <li><a href="gr/διεθνείς-χρηματοδοτικοί-οργανισμοί/ανακοινώσεις" title="Ανακοινώσεις"  target="_self"  >Ανακοινώσεις</a></li>
+                                                                                </ul>
+                                            </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/χρήσιμες-συνδέσεις" title="Χρήσιμες Συνδέσεις"  target="_self"  >Χρήσιμες Συνδέσεις</a></strong>
+                                                                        <ul class="sup_list">
+                                                                         <li><a href="gr/χρήσιμες-συνδέσεις/μέτρα-για-τον-covid-19" title="Μέτρα για τον COVID-19">Μέτρα για τον COVID-19</a></li>
+						                                                                           <li><a href="gr/χρήσιμες-συνδέσεις/brexit-και-κύπρος" title="Brexit και Κύπρος">Brexit και Κύπρος</a></li>
+						                                                                           <li><a href="gr/χρήσιμες-συνδέσεις/σχέδιο-εστία" title="Σχέδιο ΕΣΤΙΑ">Σχέδιο ΕΣΤΙΑ</a></li>
+						                                                                           <li><a href="gr/χρήσιμες-συνδέσεις/1-επιτροπή-εποπτείας-και-ελέγχου-για-το-κυπριακό-επενδυτικό-πρόγραμμα" title="Επιτροπή Εποπτείας και Ελέγχου για το Κυπριακό Επενδυτικό Πρόγραμμα">Επιτροπή Εποπτείας και Ελέγχου για το Κυπριακό Επενδυτικό Πρόγραμμα</a></li>
+						                                                                           <li><a href="gr/χρήσιμες-συνδέσεις/συνδέσεις" title="Συνδέσεις">Συνδέσεις</a></li>
+						                                                                           <li><a href="gr/χρήσιμες-συνδέσεις/μητρώο-ορκωτών-μεταφραστών" title="Μητρώο Ορκωτών Μεταφραστών">Μητρώο Ορκωτών Μεταφραστών</a></li>
+						                                                  </ul>
+                                                                    </div>
+                                                   	                </div>
+                               				                <div class="col-block">
+                                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/επικοινωνία" title="Επικοινωνία"  target="_self"  >Επικοινωνία</a></strong>
+                                                                                            </div>
+                                				                                    <div class="item_box">
+                        <strong class="L1 font-a"><a href="gr/χάρτης-πλοήγησης" title="Χάρτης Πλοήγησης"  target="_self"  >Χάρτης Πλοήγησης</a></strong>
+                                                                                            </div>
+                                                   	                    <div class="item_box">
+                        <div class="smedia-btns clearfix hidden-xs hidden-sm">
+                            <em class="slabel f_size_m bold">Συνδεθείτε μαζί μας</em>
+														                                                        <a class="tw" href="https://twitter.com/MoF_Cyprus" target="_blank">twitter</a>                        </div>
+                    </div>
+                                    </div>
+                                           </div>
+        </div>
+    </div>
+    <div class="credits">
+        <div class="container">
+          <div class="smedia-btns visible-xs-block visible-sm-block">
+              <a class="tw" href="https://twitter.com/MoF_Cyprus" target="_blank">twitter</a>          </div>
+          <div class="row">
+          	<div class="col-sm-6 sm_centered bot-txt">&copy; 2017 Κυπριακή Δημοκρατία, Υπουργείο Οικονομικών</div>
+          	<div class="col-sm-6 sm_centered sm_mar_top_c bot-txt bd"><a href="http://www.bdigital.com/" target="bdigital">Design & Development by BDigital</a> | <a href="http://www.bdigital.com/" target="bdigital">Powered by WebStudio Government Portal</a></div>
+          </div>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+var curLang = 'gr';
+</script>
+<script src="tools/scroll-pagination/scroll-pagination.js"></script>
+<script src="tools/owl-carousel/owl.carousel.min.js"></script>
+<script src="includes/bootstrap/js/bootstrap.min.js"></script>
+<script src="tools/fancyBox/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="tools/fancyBox/js/jquery.fancybox.pack.js"></script>
+<script src="includes/inits.js?0707015"></script>
+<input type="hidden" id="userToken" name="userToken" value="3e85b3e3b2c11fa934db4b" />
+<input type="hidden" id="lang" name="lang" value="gr" />
+</body>
+</html>

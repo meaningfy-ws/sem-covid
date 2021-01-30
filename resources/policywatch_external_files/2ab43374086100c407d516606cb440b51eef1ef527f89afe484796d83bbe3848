@@ -1,0 +1,940 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="/static/_reboot/cookiejs.js"></script>
+        
+        <script>
+            var dataLayer = [{'govie_cg_id': 167, 'govie_cg_title': 'Department of Enterprise, Trade and Employment', 'govie_i_title': 'Government updates Protocol to protect staff in the workplace', 'govie_i_type': 'press_releases', 'govie_i_id': 98200}];
+        </script>
+        
+        <meta name="google-site-verification" content="O_Juklz6GPKoqtfnU0SrMMBu0F10BJbQ2d67lXd1ZFw" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="/static/_reboot/bootstrap/bootstrap.min.css?build=758e583" rel="stylesheet" />
+        <link href="/static/_reboot/fontawesome/all.css" rel="stylesheet" />
+        <!-- <link href="/static/_reboot/_reboot_app/css/fonts.css?build=758e583" rel="stylesheet" /> -->
+        <link href="/static/_reboot/_reboot_app/css/style.css?build=758e583" rel="stylesheet" />
+        <link href="/static/_reboot/_reboot_app/img/favicon.png?build=758e583" rel="shortcut icon" />
+        
+        <!-- PAGE META -->
+        <title>gov.ie - Government updates Protocol to protect staff in the workplace</title>
+        
+        
+        <meta name="og:title" property="og:title" content="Government updates Protocol to protect staff in the workplace">
+        
+        <!-- Shims -->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="/static/_reboot/bootstrap/html5shiv.min.js?build=758e583"></script>
+            <script src="/static/_reboot/bootstrap/respond.min.js?build=758e583"></script>
+        <![endif]-->
+        <script src="/static/_reboot/jquery/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <script>
+
+
+            function uuidv4() {
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                    return v.toString(16);
+                });
+            };
+
+            function site_layer(){
+                return window.dataLayer || {};
+            };
+
+            function link_click_tracking(){
+                var _layer = site_layer();
+                var all_links = document.getElementsByTagName('a');
+                for (var i = 0; i < all_links.length; i++) {        if (all_links[i].hasAttribute('reboot-markdown-document-link') === true) {
+                        all_links[i].addEventListener('click', function(event){
+                            ga('send', {
+                                'hitType': 'event',
+                                'eventCategory': _layer.govie_cg_title,
+                                'eventAction': 'document_click',
+                                'eventLabel': event.target.getAttribute('href'),
+                            });
+                        });
+                    };
+            	};
+            };
+
+            function load_gtm(id, uuid){
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                var _layer = site_layer();
+
+                ga('create', id, {'storage': 'none', 'clientId': uuid});
+                ga('send', 'pageview');
+                ga('send', {'hitType': 'event', 'eventCategory': _layer.govie_cg_title, 'eventAction': 'page view', 'eventLabel': _layer.govie_i_title});
+                ga('send', {'hitType': 'event', 'eventCategory': _layer.govie_cg_title, 'eventAction': 'page view type', 'eventLabel': _layer.govie_i_type});
+
+                // Enable link click tracking
+                link_click_tracking();
+            };
+
+            __COOKIEJS_CSS_DEFAULT_FONT = 'Lato';
+            __COOKIEJS_CURRENT_LANGUAGE = 'en';
+
+            function load_analytics(preference_is_set) {
+                if (preference_is_set === true) {
+                    __cookiejs_load_google_analytics('GTM-KWS7Z8Z');
+                } else {
+                    __cookiejs_delete_cookie('_ga');
+                    __cookiejs_delete_cookie('_gid');
+                    __cookiejs_delete_cookie('_gat_(.*)');
+                    load_gtm("UA-42328974-1", uuidv4());
+                };
+            };
+
+            function load_iframes(preference_is_set) {
+                if (preference_is_set === true) {
+                    __cookiejs_load_iframes();
+
+                } else {
+                    __cookiejs_hide_iframes([
+                        'youtube.com',
+                        'livestream.com',
+                    ]);
+                };
+            };
+
+            __cookiejs_add_preferences([
+                new __CookieJsPreference(__COOKIEJS_TRANSLATION_PREFERENCE_GOOGLE_ANALYTICS, 'analytics', load_analytics),
+                new __CookieJsPreference(__COOKIEJS_TRANSLATION_PREFERENCE_IFRAMES, 'iframes', load_iframes),
+            ]);
+
+            $(window).load(function(){
+
+                var banner_selector = __COOKIEJS_CLASSNAME_BANNER;
+                var footer_selector = __COOKIEJS_CLASSNAME_FOOTER;
+
+                var banner = $('.' + banner_selector).first();
+                if (banner !== undefined){
+                    banner.removeClass(banner_selector);
+                    banner.addClass('container');
+                };
+
+                var footer = $('.' + footer_selector).first();
+                if (footer !== undefined){
+                    footer.removeClass(footer_selector);
+                    footer.addClass('container');
+
+                    footer_h2 = footer.find('h2').first();
+                    if (footer_h2 !== undefined) {
+                        footer_h2.css('padding-left', '0px');
+                    };
+
+                    footer_ul = footer.find('ul').first();
+                    if (footer_ul !== undefined) {
+                        footer_ul.css('padding-left', '0px');
+                    };
+
+                };
+            });
+
+        </script>
+
+        
+
+
+<a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default" role="navigation" aria-labelledby="RebootSrMainMenuNav" reboot-navbar>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#RebootMainMenu" aria-expanded="false">
+                <span class="sr-only">Toggle main navigation</span>
+                <img src="/static/_reboot/_reboot_app/img/Icon_Hamburger.png" alt="Image: Toggle main navigation" />
+            </button>
+            <a href="/en/" class="navbar-brand">
+                <img src="/static/_reboot/_reboot_app/img/Image_Logo.png" alt="Project logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="RebootMainMenu">
+            <h2 class="sr-only" id="RebootSrMainMenuNav">
+                Main navigation
+            </h2>
+            <ul class="nav navbar-nav navbar-right">
+
+                
+                    <li><a href="/en/help/departments/">Departments</a></li>
+                
+
+                
+                    <li><a href="/en/consultations/">Consultations</a></li>
+                
+                    <li><a href="/en/publications/">Publications</a></li>
+                
+                    <li><a href="/en/policies/">Policies</a></li>
+                
+
+                <li class="separator hidden-sm hidden-xs" role="separator">
+                    <img src="/static/_reboot/_reboot_app/img/Tapered_Vertical_Rule_Green.png" alt="Image: Separator"/>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Languages <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                            <li>
+                                <a href="/en/press-release/59704-government-updates-protocol-to-protect-staff-in-the-workplace/">
+                                    English
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/ga/preasraitis/59704-government-updates-protocol-to-protect-staff-in-the-workplace/">
+                                    Gaeilge
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <div class="col-sm-12 col-xs-12 hidden-lg hidden-md margin-bottom-sm"></div>
+                </li>
+                
+                    <li class="hidden-sm hidden-xs" reboot-search-drawer-trigger>
+                        <span class="pointer" role="button" aria-label="Toggle search menu" tabindex="0">
+                            <img src="/static/_reboot/_reboot_app/img/Icon_Search.png" alt="Image: Search button" aria-hidden="true" />
+                        </span>
+                    </li>
+                    <li class="hidden-lg hidden-md">
+                        <div class="col-md-12 col-sm-12 col-xs-12 padding-bottom-sm">
+                            
+
+
+
+
+
+
+
+
+
+
+
+<form action="/en/search/" method="GET" role="search" aria-label="Search gov.ie">
+    <div class="input-group">
+        <input type="text" name="q" value="" class="form-control input-lg no-radius" aria-label="Search input field" placeholder="Search gov.ie">
+        <span class="input-group-btn">
+            <button class="btn btn-default btn-state-gold btn-lg no-radius" alt="Button: Search">
+                <img src="/static/_reboot/_reboot_app/img/Icon_Search.png" alt="Image: Search button" />
+            </button>
+        </span>
+    </div>
+</form>
+
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid" reboot-search-drawer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    
+
+
+
+
+
+
+
+
+
+
+
+<form action="/en/search/" method="GET" role="search" aria-label="Search gov.ie">
+    <div class="input-group">
+        <input type="text" name="q" value="" class="form-control input-lg no-radius" aria-label="Search input field" placeholder="Search gov.ie">
+        <span class="input-group-btn">
+            <button class="btn btn-default btn-state-gold btn-lg no-radius" alt="Button: Search">
+                <img src="/static/_reboot/_reboot_app/img/Icon_Search.png" alt="Image: Search button" />
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+
+    
+
+    
+
+
+
+
+
+
+
+    <div class="container margin-bottom-xlg" id="main" role="main">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                
+
+
+
+
+<div class="row" reboot-header>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <span>
+            
+            Press release
+            
+        </span>
+        <h1>Government updates Protocol to protect staff in the workplace</h1>
+
+        
+
+
+
+
+
+    
+    <p>
+        From
+        
+            <a href="/en/organisation/department-of-enterprise-trade-and-employment/">Department of Enterprise, Trade and Employment</a>&nbsp;
+        
+        
+    </p>
+
+
+
+        
+        
+        
+
+        
+            
+            
+            <p>Published on <time datetime="2020-11-20">20 November 2020</time></p>
+        
+
+        
+
+        
+
+        
+            
+            
+            <p>Last updated on <time datetime="2020-11-20">20 November 2020</time></p>
+        
+
+        
+
+
+
+
+    </div>
+</div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+    <div class="container margin-bottom-xlg">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-content>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The government today (20 November 2020) published updated guidance to prevent the spread of COVID-19 in the workplace to staff.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The pandemic has affected every aspect of our lives. This updated <a href="/en/publication/bb7fd-work-safely-protocol/" reboot-markdown-link>Work Safely Protocol</a>
+ sets out the actions that need to be taken to reduce the spread of COVID-19 in the workplace.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>It contains information and practical advice on a range of topics such as the management and control of outbreaks, selection of hand sanitisers, wearing of masks, ventilation of workplaces and symptoms. These are areas where our knowledge has developed since the start of the virus and it is important that the guidance reflects the most up to date public health advice available.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Taoiseach Micheál Martin TD said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;I welcome today’s publication of the updated Work Safely Protocol. The Protocol provides clear, helpful guidance to all businesses and workers, outlining what they need to do to tackle COVID-19 and ensure the safety of all in the workplace.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;This Protocol has been developed in close consultation with employers and trade unions through the Labour Employer Economic Forum (LEEF); such cooperation is an essential part of our collective efforts to manage the pandemic.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;I am urging people to be particularly vigilant in the coming weeks, in the run up to Christmas, as certain workplaces will see an increase in activity. It’s important for employers and workers to pay renewed attention to the risks – and consult the Protocol to ensure a safe work environment.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Tánaiste and Minister for Enterprise, Trade and Employment, Leo Varadkar TD, said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;It is crucial that we provide employers and managers with the tools to manage their business in a way that is safe for workers. This Protocol, which has been updated in consultation with health experts, worker representatives and employer groups, sets out the practical steps that need to be taken to prevent the spread of the virus in the workplace.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;I’d like to pay tribute to the commitment and resourcefulness of both business owners and staff around the country and thank you all for the incredible effort you have put in to keep your workers and customers safe over the past few months. It has been exceptionally challenging, and you have shown true grit and leadership.</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;Your efforts to date have saved lives. We are asking that you continue to keep adapting your business so that it is as safe as it possibly can be. This will be especially important as we ease restrictions in the lead up to Christmas. It is in everyone’s interest to ensure Christmas workplace outbreaks are avoided.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Health and Safety Authority will remain the lead Agency in co-ordinating compliance with the Work Safely Protocol. It will continue to be supported in this role by inspectors from a range of other government departments and State bodies.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Nearly 20,000 COVID-19 inspections around compliance with the Protocol have been carried out since May 2020. The government has made additional funding of €4m available to the HSA for 2021. This will largely be used for extra staff to focus on the management and prevention of COVID-19 in the workplace.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Dr Sharon McGuinness, Chief Executive Officer of the Health and Safety Authority, said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;The key to effectively managing COVID-19 in the workplace remains close collaboration and communication between employers and workers. This Work Safely Protocol is an update to reflect the evolving public health guidelines. It provides clear guidelines and measures to employers and workers and is supplemented by a range of templates and online resources available from our website. The prevention and control measures have not changed and the importance of adhering to hand hygiene, respiratory hygiene and physical distancing continues to be emphasised. I urge all employers and workers to ensure that the requirements outlined in this Protocol are embedded in their workplace.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Patricia King, ICTU General Secretary, said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;The revised Work Safely Protocol is an important document and it is vital that it is fully complied with and also crucial that workers can have full confidence that workplaces are COVID safe. I commend the appointment of lead worker representatives who will play a central role ensuring that standards are complied with.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Danny McCoy, Chief Executive Officer of Ibec, said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;Ibec welcomes the publication of the Work Safely Protocol. The Protocol has provided valuable guidance for employers and employees to establish and maintain safe working environments in the context of COVID-19. The Protocol is a living document and as such we are pleased to see this revised version incorporating the learnings and insights of recent months.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Tom Parlon, Chief Executive Officer of the Construction Industry Federation, said:</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-quote>
+    <div class="row">
+        <blockquote>
+            <p>&quot;The Construction Industry Federation welcomes the publication of the Work Safely protocol. The construction industry has a long track record of operating world class safety protocols and advises members to review the updated protocol in tandem with the industry specific C19 Standard Operating Procedure (SOP). Our standard operating procedure has enabled the industry to operate during the pandemic. This protocol is critical to maintaining some level of economic activity throughout pandemic related restrictions. This protocol will be promoted throughout the construction industry and bolster the comprehensive practices evident on construction sites around Ireland.&quot;</p>
+        </blockquote>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>Community transmission is still a challenge. Employees need to consider public health advice covering travelling to work, lunchtime and breaktime behaviour. Every employer should read the revised Protocol and ensure that public health advice is fully implemented in their business and, also, that any employee who can work from home should continue to do so. </p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Tánaiste also acknowledged the collaborative efforts by the Health and Safety Authority (HSA), the Health Services Executive (HSE) and the Department of Health, together with the social partner members of the Labour Employer Economic Forum (LEEF) which worked jointly on updating the Protocol.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p><strong reboot-markdown-bold>ENDS</strong>
+</p>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-heading>
+    <div class="row">
+        
+            <a name="notes"></a>
+        
+        <h2>
+            Notes
+        </h2>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Work Safely Protocol is a revision of the Return to Work Safely Protocol published in May 2020. The revised Protocol incorporates the current advice on the Public Health measures needed to reduce the spread of COVID-19 in the community and workplaces as issued by the National Public Health Emergency Team (NPHET) and the Department of Health.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>It sets out the minimum measures required in every place of work to prevent the spread of COVID-19 and to facilitate the re-opening of workplaces following temporary closures and the ongoing safe operation of those workplaces. The revision of the Protocol was necessary to reflect the government’s Plan for Living with COVID-19, which was published in September. The main updated Public Health advice includes information on the management and control of outbreaks, selection of hand sanitisers, wearing of masks, ventilation of workplaces. These are areas where knowledge has developed since the start of the pandemic. The Protocol contains links directing employers and employees to a range of government departments and agencies where additional and more detailed information and guidance can be sourced.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Health and Safety Authority will remain the lead Agency in relation to co-ordinating compliance with the Work Safely Protocol. It will continue to be supported in this role by inspectors from a range of other government departments and State bodies. The Health and Safety Authority together with these other inspectorates have carried out nearly 20,000 COVID-19 inspections around compliance with the Protocol since May 2020. In addition, the government has made additional funding of €4m available to the Health and Safety Authority for its 2021 budget. This will largely be used by the Health and Safety Authority to set up a new Occupational Health Division which will co-ordinate, and focus on, the Authority’s response to the management of COVID-19 in the workplace.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" reboot-markdown-horizontal-rule>
+    <div class="row">
+        <hr  />
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>The Department of Enterprise, Trade and Employment (DETE) plays a key role in implementing the government’s policies of stimulating the productive capacity of the economy and creating an environment which supports job creation and maintenance. The department has lead responsibility for Irish policy on global trade and inward investment and a remit to promote fair competition in the marketplace, protect consumers and safeguard workers.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" reboot-markdown-paragraph>
+    <div class="row">
+        <p>For further information please contact Press Office, D/Enterprise, Trade and Employment, <a href="mailto:press.office@enterprise.gov.ie" reboot-markdown-link>press.office@enterprise.gov.ie</a>
+ or (01) 631 2200.</p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-xlg" reboot-markdown-paragraph>
+    <div class="row">
+        <p>If you no longer wish to receive emails from the Department of Enterprise, Trade and Employment Press Office, please notify us by email to <a href="mailto:press.office@enterprise.gov.ie" reboot-markdown-link>press.office@enterprise.gov.ie</a>
+</p>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 reboot-sidebar" role="complementary">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row margin-bottom-md">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" reboot-sidebar-box-dark>
+
+                <h2>Part of</h2>
+
+                
+
+                
+
+                
+                    
+                    <h3>Policies</h3>
+                    <ul reboot-site-list>
+                        
+                            
+                                <li>
+                                    <a href="/en/policy/61efd3-business-enterprise-and-innovation/">Business and Trade</a>
+                                </li>
+                            
+                        
+                    </ul>
+                
+
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+
+
+                
+
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" reboot-sidebar-box-dark>
+            <h2>Share</h2>
+            <ul reboot-site-list>
+                <li>
+                    <a href="mailto:example@example.com?subject=Government updates Protocol to protect staff in the workplace;body=http://www.gov.ie/en/press-release/59704-government-updates-protocol-to-protect-staff-in-the-workplace/" target="_blank">
+                        <img src="/static/_reboot/_reboot_app/img/social/email.png" alt="Email Icon" /></a>
+                    &nbsp;
+                    <a href="mailto:example@example.com?subject=Government updates Protocol to protect staff in the workplace;body=http://www.gov.ie/en/press-release/59704-government-updates-protocol-to-protect-staff-in-the-workplace/" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.gov.ie/en/press-release/59704-government-updates-protocol-to-protect-staff-in-the-workplace/" target="_blank">
+                        <img src="/static/_reboot/_reboot_app/img/social/facebook.png" alt="Facebook Icon" /></a>
+                    &nbsp;
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.gov.ie/en/press-release/59704-government-updates-protocol-to-protect-staff-in-the-workplace/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/intent/tweet?url=http://www.gov.ie/en/press-release/59704-government-updates-protocol-to-protect-staff-in-the-workplace/&amp;text=Government updates Protocol to protect staff in the workplace;original_referer=" target="_blank">
+                        <img src="/static/_reboot/_reboot_app/img/social/twitter.png" alt="Twitter Icon" /></a>
+                    &nbsp;
+                    <a href="https://twitter.com/intent/tweet?url=http://www.gov.ie/en/press-release/59704-government-updates-protocol-to-protect-staff-in-the-workplace/&amp;text=Government updates Protocol to protect staff in the workplace;original_referer=" target="_blank">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container margin-bottom-xs">
+    <div reboot-beta>
+        <span class="label label-default label-beta">BETA</span>
+        <p>
+            This is a prototype - your feedback will help us to improve it.
+        </p>
+    </div>
+</div>
+
+<div class="container" role="region" aria-label="Gov.ie feedback section" reboot-feedback rfw>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="FeedbackChoices">
+        <div class="row" data-reboot-feedback-header>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" role="heading" aria-level="2">
+                Help us improve gov.ie
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                <a href="#FeedbackV2Widget" data-toggle="collapse" aria-expanded="false" aria-controls="FeedbackV2Widget">Leave feedback</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse" id="FeedbackV2Widget">
+
+        <form action="#" method="POST" rfw-form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="UIr8SrZHT0ljkhnlDLAWcwlujbWj45JGlCmk4RPfYXbYDxFoz7V9PlBMPWD320xv">
+            <input type="hidden" name="value" value="false" />
+            <input type="hidden" name="item_type" value="press_releases" />
+            <input type="hidden" name="item_id" value="98200" />
+
+            
+            
+                <input type="hidden" name="publisher" value="167" />
+            
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm margin-top-sm" reboot-site-alert reboot-site-alert-warning>
+                <p>
+            Do not include any personal details in the box below.<br />
+            The information you submit will be analysed to improve the
+            site and will not be responded to individually.
+        </p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+
+                            <fieldset>
+                                <legend class="reboot-legend" role="heading" aria-level="3">
+                                    Was this page useful
+                                    <span class="reboot-required-star" aria-hidden="true">*</span>
+                                    <span class="sr-only">(required)</span>
+                                </legend>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="radio">
+                                        <input type="radio" name="value" value="true" required rfw-option id="FeedbackChoices_choice_true"> <label for="FeedbackChoices_choice_true">Yes</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="value" value="false" required rfw-option id="FeedbackChoices_choice_false"> <label for="FeedbackChoices_choice_false">No</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <label for="FeedbackChoices" class="reboot-label" role="heading" aria-level="3">
+                    Was this page useful
+                    <span class="reboot-required-star">*<span class="sr-only">(required)</span></span>
+                </label>
+                <ul id="FeedbackChoices">
+                    <li>
+                        <div class="radio">
+                            <label><input type="radio" name="value" value="true" required rfw-option tabindex="0"> Yes</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio">
+                            <label><input type="radio" name="value" value="false" required rfw-option tabindex="0">No</label>
+                        </div>
+                    </li>
+                </ul> -->
+
+
+
+            </div>
+
+            <div class="form-group">
+                <label for="FeedbackChoiceNoTextarea" class="reboot-label">
+                    Describe your experience on Gov.ie<span class="reboot-required-star">*<span class="sr-only">(required)</span></span>
+                </label>
+                <textarea name="text" class="form-control input-lg no-radius" rows="5" id="FeedbackChoiceNoTextarea" required maxlength="400" rfw-textarea></textarea>
+                <p class="help-block" aria-hidden="true">
+                    <small>Max: <span rfw-char-count>0</span>/400</small>
+                </p>
+            </div>
+
+            <a href="#FeedbackV2Widget" rel="nofollow" class="btn btn-lg btn-state-gold" role="button" disabled rfw-submit>
+                Submit
+            </a>
+
+            <div class="col-sm-12 col-xs-12 margin-bottom-sm"></div>
+
+        </form>
+
+        <div rfw-messages style="display: none;">
+            <div class="col-sm-12 col-xs-12 margin-top-sm"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" role="alert" reboot-site-alert reboot-site-alert-success rfw-messages-success style="display: none;">
+                Thank you for your feedback
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm" role="alert" reboot-site-alert reboot-site-alert-error rfw-messages-fail style="display: none;">
+                Feedback wasn&#39;t sent. Please try again.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" role="contentinfo" style="background-image: url('/static/_reboot/_reboot_app/img/Footer_Background.png')" reboot-footer>
+    <div class="row">
+        <div class="container">
+            <div class="row margin-bottom-sm">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-sm">
+                    <h2>Services and information</h2>
+                    <ul>
+                        
+                            <li><a href="/en/category/agriculture/">Agriculture</a></li>
+                        
+                            <li><a href="/en/category/business/">Business</a></li>
+                        
+                            <li><a href="/en/category/education/">Education</a></li>
+                        
+                            <li><a href="/en/category/employment/">Employment</a></li>
+                        
+                            <li><a href="/en/category/environment/">Environment</a></li>
+                        
+                            <li><a href="/en/category/family-and-relationships/">Family and Relationships</a></li>
+                        
+                            <li><a href="/en/category/health/">Health</a></li>
+                        
+                            <li><a href="/en/category/housing/">Housing</a></li>
+                        
+                            <li><a href="/en/category/justice/">Justice</a></li>
+                        
+                            <li><a href="/en/category/local-government/">Local Government</a></li>
+                        
+                            <li><a href="/en/category/money-and-tax/">Money and Tax</a></li>
+                        
+                            <li><a href="/en/category/national-government/">National Government</a></li>
+                        
+                            <li><a href="/en/category/social-welfare/">Social Welfare</a></li>
+                        
+                            <li><a href="/en/category/transport-and-travel/">Transport and Travel</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-sm">
+                    <h2>Departments and publications</h2>
+                    <ul>
+                        
+                            <li><a href="/en/circulars/">Circulars</a></li>
+                        
+                            <li><a href="/en/consultations/">Consultations</a></li>
+                        
+                            <li><a href="/en/directory/">Directory</a></li>
+                        
+                            <li><a href="/en/policies/">Policies</a></li>
+                        
+                            <li><a href="/en/publications/">Publications</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-sm">
+                    <h2>About gov.ie</h2>
+                    <ul>
+                        
+                            <li>
+                                <a href="/en/help/about-govie/">
+                                    About gov.ie
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/en/help/accessibility/">
+                                    Accessibility
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/en/help/privacy-policy/">
+                                    Privacy policy
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <img src="/static/_reboot/_reboot_app/img/Government_Logo.png" class="img-responsive" alt="Image: Official mark of Government of Ireland" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <script>
+            function InstanceController(){
+                this.container_group = '';
+                this.item = '';
+            };
+            function SiteSettings(){
+                this.reboot_static_root = '/static/_reboot/_reboot_app/';
+                this.reboot_img_root = this.reboot_static_root + 'img/';
+                this.feedback_url = '/feedback/';
+            };
+        </script>
+
+        <script src="/static/_reboot/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/static/_reboot/google_maps/markerclusterer.js?build=758e583"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqOEBZm1B3AbHq-FAD-TCxXqhKgjxJHWU"></script>
+        <script src="/static/_reboot/_reboot_app/js/app.js?build=758e583" type="text/javascript"></script>
+        <script src="/static/_reboot/google_maps/app.js?build=758e583" type="text/javascript"></script>
+        <script src="/static/_reboot/_reboot_app/js/feedback_v2.js?build=758e583" type="text/javascript"></script>
+        <script src="/static/_reboot/_reboot_app/js/select_menu_v2.js?build=758e583" type="text/javascript"></script>
+
+        
+    </body>
+</html>

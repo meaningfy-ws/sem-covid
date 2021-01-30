@@ -1,0 +1,1168 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>ORD DE URGENTA       153 03/09/2020 - Portal Legislativ</title>
+    <link href="/Content/css?v=iKXncnEnzeZrcZDXQ4gyEFYtrgIhK9GqKaiZ1xjeUOQ1" rel="stylesheet"/>
+
+    <link href="/Content/themes/base/css?v=7T_tuS9RP8sQe2HxerJdL6STYU-qCHtjrExyjsSiYcQ1" rel="stylesheet"/>
+
+    <meta name="keywords" content="ORD DE URGENTA       153 03/09/2020 - Portal Legislativ">
+    <meta name="description" content="ORD DE URGENTA       153 03/09/2020 - Portal Legislativ">
+    <meta name="title" content="ORD DE URGENTA       153 03/09/2020 - Portal Legislativ">
+    <link href="/Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/Content/Images/Site/temanoua/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/Content/public.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="/bundles/modernizr?v=qVODBytEBVVePTNtSFXgRX0NCEjh9U_Oj8ePaSiRcGg1"></script>
+
+    <script src="/bundles/jquery?v=UgyEMAYOuSB9Bb6HcOEVHpd6fIIp54yF086SRNVcdIY1"></script>
+
+    <script src="/bundles/jqueryui?v=O4Awnx3xYnFLmC1TAsxXigS8kLERW18heIHqD0bRSTE1"></script>
+
+    <script src="/bundles/bootstrap?v=WyYa2dIFje-38fhrXc_sQiaOB-lu9j8r45bVIBgtqrw1"></script>
+
+    <script type="text/javascript" language="JavaScript">
+        var backColor = '#f0ffff';
+        var actColor = 'white';
+        var brdColor = 'black';
+        function marcheaza(id_ttl, id) {
+            /*id.style.backgroundColor=backColor;
+            id_ttl.style.cursor='pointer';
+            id.style.borderColor=brdColor;
+            id.style.borderStyle='dashed';*/
+        }
+        function demarcheaza(id_ttl, id) {
+            /*id.style.backgroundColor='transparent';
+            id_ttl.style.cursor='default';
+            id.style.borderColor=actColor;
+            id.style.borderStyle='dotted';*/
+        }
+        function plusMinus(id1, id2) {
+            if (id1.style.display == 'none') {
+                id1.style.display = 'inline';
+                id2.style.display = 'none';
+            }
+            else {
+                id1.style.display = 'none';
+                id2.style.display = 'inline';
+            }
+        }
+        function setCursor(id, tipCursor) {
+            id.style.cursor = tipCursor;
+        }
+    </script>
+    <script>
+        function pozitioneaza(id) {
+            var id_nou = id.substring(0, id.length - 4);
+           //document.getElementById('toTop').click();
+            $("#toTop").trigger("click");
+ 
+        }
+ 
+
+    </script>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix-nav" data-twttr-rendered="true">
+    <a name="top"></a>
+
+
+    <div id="toTop" class="toggle-menu menu-left"><a class="toggle-menu menu-left"><img src="/Content/Images/Site/temanoua/butonmeniu.png" alt="logo" /></a> </div>
+    <div id="masterwrapper page-content">
+        <div id="header_wrapper" class="navbar navbar-default">
+            <!--navbar-fixed-top-->
+            <header>
+                <div id="header">
+                    <div class="header_top">
+                        <div class="banner">
+                            <div class="row">
+                                <img class="img-responsive center-block pozawidth" id="logoportal" src="/Content/Images/Site/header_logo.png" style="width:85%;" alt="logo" />
+                            </div>
+                        </div>
+                        <div class="row margin0" id="textlogo">
+                            <center>
+                                <h4 class="reducerespatiu logo">Portal Legislativ</h4>
+
+                            </center>
+                            <!-- <div style="float:right; position:relative; right:0; margin-top:-23px;">
+                                <a data-toggle="modal" data-target="#mesajBetaModal" style="cursor:pointer;">
+                                    <img width="50" src="/Content/Images/Site/versiunebeta.png" alt="Versiune Beta 2.0" />
+                                </a>
+                            </div>-->
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="menu_wrapper navbar navbar-inverse" role="navigation" id="slide-nav">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a id="btnNavbar" class="navbar-toggle">
+                                    <span class="sr-only">Meniu</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </a>
+
+                            </div>
+                            <div id="slidemenu" style="cursor:pointer;">
+                                <div id="menu" onclick="pozitioneaza('')">
+                                    <a style=" cursor:pointer;" onclick="pozitioneaza('')">
+                                        <h3>Meniu</h3>
+                                    </a>
+                                    <ul></ul>
+                                    <ul class="mainmenu">
+ 
+        <li>
+            <a href="/Public/Acasa" class="main_link">
+
+                Acasă
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/NLEX" class="main_link">
+
+                Despre Proiect
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/Functionalitati" class="main_link">
+
+                Facilități Oferite 
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/LegaturiUtile" class="main_link">
+
+                Legături Utile
+
+            </a>
+        </li>
+
+
+             
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </header>
+            <div class="meniunu">
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+                    <h3 style="padding-left:65px; margin-top:-5px;">Meniu</h3>
+                    <div id="meniutitlu"></div>
+                    <div id="meniupaginastart">
+ 
+        <li>
+            <a href="/Public/Acasa" class="main_link">
+
+                Acasă
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/NLEX" class="main_link">
+
+                Despre Proiect
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/Functionalitati" class="main_link">
+
+                Facilități Oferite 
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/LegaturiUtile" class="main_link">
+
+                Legături Utile
+
+            </a>
+        </li>
+
+
+              <br />
+                        Prin portalul N-Lex se acorda acces gratuit la legislatiile nationale ale statelor membre, portalul fiind
+                        conceput pe baza unei tehnologii de comunicare interne, ce permite accesarea directa a bazelor de date legislative nationale,
+                        rezultatele cautarilor venind direct de la sursa.
+                    </div>
+                    <script>
+                        if (window.location.href.indexOf('DetaliiDocument') != -1) {
+                            $('#meniupaginastart').hide();
+                        }
+                        else {
+                            $('#meniupaginastart').show();
+                        }
+                    </script>
+                </nav>
+            </div>
+        </div>
+ 
+        <div id="page_content" style="margin-top:-15px;">
+            <div id="page_wrapper">
+                <div class="articole_wrapper">
+                    
+
+
+<style>
+    #masterwrapper, #page_content, #page_wrapper {
+        background-color: white;
+        background: white;
+    }
+
+    #document_info {
+        font-size: 15px;
+    }
+
+    #fisaact {
+        font-size: 14px;
+    }
+
+    .seincarca {
+        position: fixed;
+        z-index: 1100;
+        left: 45%;
+        /*	margin-top: -500px;*/
+        top: 45%;
+        height: 100px;
+        background-color: #ffffff;
+        -moz-box-shadow: 5px 5px 5px #400;
+        -webkit-box-shadow: 5px 5px 5px #400;
+        box-shadow: 5px 5px 5px #400;
+        border: 1px solid #dadada;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -khtml-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+    .cbsloader {
+        background-image: url(~/../../../Content/Images/Site/bar-circle.gif);
+        background-repeat: no-repeat;
+    }
+
+    #modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('~/../../../Content/Images/Site/tint20.png') 0 0 repeat;
+        background: rgba(0,0,0,0.2);
+    }
+    #sidebar  {
+        &.affix;
+
+    {
+        top: 10px;
+        bottom: auto;
+    }
+
+    &.affix-top {
+        position: absolute;
+        top: 20px;
+    }
+
+    &.affix-bottom {
+        position: relative;
+        top: auto;
+        bottom: auto;
+    }
+
+    }
+
+</style>
+ <script>
+
+     function imgSIZE() {
+         $("#infoactinfoact img").one("load", function() {
+             try {
+                 var theImage = new Image();
+                 theImage.src = $(this).attr("src");
+                 var imgW = theImage.width;
+                 var imgH = theImage.height;
+                 // console.log($(this).attr("src") + "   - " + imgW + ", " + imgH);
+
+                 
+                 $(this).css("max-width", "100%");
+                 $(this).css("width", imgW+"px");
+                 
+             }
+             catch(e) {
+                 // console.log("horror> "+e);
+             }
+         });
+     }
+
+ </script>
+
+<div class="container bs-docs-container"  data-target="#sidebar">
+
+    <div class="row" id="textdocumentleg">
+        <div class="col-md-3" id="meniu">
+            <div class="bs-docs-sidebar affix-top meniuaffix" id="sidebar">
+                <div class="articole_wrapper">
+                    <div class="h1_articole">
+                        <h1>Cuprins</h1>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+                <div id="loaderDiv" class="seincarca" style="display: none; text-align: center; width: auto !important; height: auto !important; padding: 40px;">
+                    <div id="modal"></div>
+                    <progress max="100">
+                        <div class="cbsloader">
+                            <div style="color:#333; margin-top:-40px; margin-left:130px;">
+                            </div>
+                            <br>
+                            <div style="color:#333; margin-left:49px; margin-top:-5px;">
+                                <b>Se încarcă, vă rugăm asteptati.</b><br><br>
+                            </div>
+                        </div>
+                    </progress>
+                </div>
+                <div class="details_navigation">
+
+                    <input type="hidden" id="id_act" name="id_act" value="230106" />
+                    <div class="nav_header expanded" data-target="FormeAct" style="margin-left:-10px; font-weight: bold !important;">
+                            <span class="trigger plus">+</span>
+                             <b><span>Forme act</span></b>
+                    </div>
+                    <div class="nav_content expanded" data-target="FormeAct" style="margin-left: -10px;">
+                            <div class="forme_act">
+<input checked="checked" id="Formaconsolidata" name="FormeAct" onchange="SchimbareFormaAct();" type="radio" value="1" /><label for="Formaconsolidata">Forma consolidata</label>                                        <div class="forme_act_chk">
+                                            
+                                            
+                                        </div>
+                                            <div>
+                                                <div id="label_forme_actz" onclick="toggle_istoric_forme_actz()" style="cursor: pointer; margin-left: -5px; margin-top: 5px;">&nbsp;&nbsp;&nbsp;+&nbsp;istoric consolidări</div>
+                                                <div id="istoric_fa" class="nav_content expanded" style="display: none; margin-left: -8px;">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a title='Consolidarea din 21.09.2020' style='color:red;text-decoration:none;cursor:default'>21.09.2020</a><br/>
+                                                </div>
+                                            </div>
+                                <!--
+                                -->
+                            </div>
+                            <div class="forme_act">
+                                <!--
+                                -->
+                            </div>
+                            <div class="forme_act">
+                                <!--
+                                -->
+<input id="Formadebaza" name="FormeAct" onchange="incarcaFormaDeBaza(229768);" type="radio" value="3" /><label for="Formadebaza">Forma de baza</label>                            </div>
+                    </div>
+
+                    <div id="label_fisaact" class="nav_header" onclick="toggle_fisaact()" style="margin-left:-10px !important; margin-top:10px;">
+                        <span id="label_fisaact_plus_minus" style="cursor:pointer">+</span>
+                        <span style="cursor: pointer; font-weight: bold; color: #3c3636; ">Fișă act</span>
+                    </div>
+
+                    <div id="content_fisaact" class="nav_content" style="display: none;">
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="1" id="Actiunisuferite" name="Actiunisuferite" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Actiunisuferite" type="hidden" value="false" />
+                                <label for="Actiunisuferite">Actiuni suferite</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="2" id="ActiuniInduse" name="ActiuniInduse" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="ActiuniInduse" type="hidden" value="false" />
+                                <label for="ActiuniInduse">Actiuni Induse</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="3" id="Referape" name="Referape" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Referape" type="hidden" value="false" />
+                                <label for="Referape">Refera pe</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="4" id="Referitde" name="Referitde" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Referitde" type="hidden" value="false" />
+                                <label for="Referitde">Referit de</label>
+                            </div>
+                    </div>
+
+                </div>
+                <p style="padding-top: 10px; font-variant: small-caps; border-bottom: 3px solid #BB3A3A; color: #112F5D; font-size: 18px; font-family: EB Garamond !important; ">Cuprinsul Actului</p>
+                <ul class="nav bs-docs-sidenav" style=" margin-top:5px;">
+
+                    pentru instituirea unor măsuri fiscale de stimulare a menținerii/creșterii capitalurilor proprii, precum și pentru completarea unor acte normative<li><a href="#id_artA21_ttl" onclick="&#xA;        pozitioneaza('id_artA21_ttl')&#xA;      ">Articolul I</a></li><li><a href="#id_artA133_ttl" onclick="&#xA;        pozitioneaza('id_artA133_ttl')&#xA;      ">Articolul II</a></li><li><a href="#id_artA140_ttl" onclick="&#xA;        pozitioneaza('id_artA140_ttl')&#xA;      ">Articolul III</a></li><li><a href="#id_artA143_ttl" onclick="&#xA;        pozitioneaza('id_artA143_ttl')&#xA;      ">Articolul IV</a></li><li><a href="#id_artA152_ttl" onclick="&#xA;        pozitioneaza('id_artA152_ttl')&#xA;      ">Articolul V</a></li><li><a href="#id_artA154_ttl" onclick="&#xA;        pozitioneaza('id_artA154_ttl')&#xA;      ">Articolul VI</a></li>PRIM-MINISTRULUDOVIC ORBANContrasemnează:Ministrul finanțelor publice,Vasile-Florin CîțuMinistrul economiei, energiei și mediului de afaceri,Virgil-Daniel Popescu
+
+                </ul>
+                <a class="back-to-top" onclick="pozitioneaza('')" href="#top">
+                    Reveniti in topul paginii
+                </a>
+                <div style="text-align:center;">
+                    
+
+                    <a target="_blank" class="btn btn-primary btn-xs" href=/Public/FormaPrintabila/00000G2U4RSOFMT6IAV2LIYM2ER6KVNH>
+                        <span class="glyphicon glyphicon-print"></span> Forma printabilă
+                    </a>
+                </div>
+                <div class="articole_wrapper">
+                    <div class="h1_articole">
+
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+
+
+
+        <div class="col-md-8" role="main" id="infoactinfoact">
+            <div class="bs-docs-section">
+                <div class="main_details">
+                    
+                    <div class="document_info" id="document_info">
+                        <div id="forme_act_container" data-id="FormeAct" data-state="loaded">
+                                    <div id="div_Formaconsolidata" class="content_forma_act" data-state="loaded">
+                                        
+                                        <span class="S_DEN">ORDONANȚĂ DE URGENȚĂ nr. 153 din 3 septembrie 2020</span><span class="S_HDR">pentru instituirea unor măsuri fiscale de stimulare a menținerii/creșterii capitalurilor proprii, precum și pentru completarea unor acte normative</span><table cellspacing="0px" cellpadding="0px" class="S_EMT"><tr valign="baseline"><td width="75px"><span class="S_EMT_TTL">EMITENT</span></td><td><span class="S_EMT_BDY"><li>GUVERNUL ROMÂNIEI</li></span></td></tr></table><span class="S_PUB"><span class="S_PUB_TTL">Publicat în 
+			</span><span class="S_PUB_BDY">MONITORUL OFICIAL nr. 817 din 4 septembrie 2020</span></span><span id="fisaact"><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='actiuni_suferite'></span><br/><span style='display:none;border:1px solid;height:180px;overflow:auto' id='actiuni_induse'></span><br/><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='refera_pe'></span><br/><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='referit_de'></span><br/><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA4">Pentru a stimula asigurarea de resurse financiare suplimentare contribuabililor plătitori de impozit pe profit, impozit pe veniturile microîntreprinderilor sau impozit specific unor activități, prin reducerea sarcinii fiscale,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA5">având în vedere necesitatea stimulării și dezvoltării capitalului românesc și a competitivității operatorilor economici pentru tranziția la o economie durabilă, se propune acordarea unei reduceri la determinarea impozitului pe profit, impozitului pe veniturile microîntreprinderilor și impozitului specific unor activități în funcție de menținerea/creșterea capitalurilor proprii.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA6">Ținând cont de faptul că îndeplinirea cerințelor de creștere a capitalurilor proprii presupune o perioadă îndelungată pentru identificarea surselor de finanțare în corelație cu perioada de aplicare a măsurii, respectiv 2021-2025, este necesară reglementarea acesteia cu suficient timp anterior aplicării acesteia, astfel încât aceasta să poată genera efectele așteptate începând cu anul 2021.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA7">În vederea aplicării unor măsuri fiscale benefice pentru mediul de afaceri în contextul în care măsurile pentru combaterea pandemiei de COVID-19 au generat dificultăți de natură financiară pentru majoritatea operatorilor economici, aceștia confruntânduse în această perioadă cu o lipsă severă de lichiditate,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA8">având în vedere impactul major asupra mediului economic generat deja pe durata stării de urgență, respectiv de alertă, în considerarea faptului că măsurile instituite de autoritățile publice competente, în contextul pandemiei de COVID-19, au restrâns, pe perioada pentru care a fost instituită starea de urgență, respectiv de alertă, unele drepturi și libertăți fundamentale, între care se regăsesc și dreptul la liberă circulație și libertatea economică,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA9">pentru continuarea susținerii realizării obiectivelor urmărite prin acordarea bonificației la plată, respectiv de a stimula achitarea obligațiilor fiscale la termenele scadente, specifice fiecărei categorii de contribuabili, sunt necesare clarificări legate de definitivarea impozitului pe profit aferent anului fiscal 2020, dar și reglementarea unor cazuri specifice contribuabililor plătitori de impozit pe profit cu anul fiscal modificat.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA10">Ținând cont de faptul că, în contextul declarării stării de alertă, o parte din operatorii economici fie emit un număr redus de bonuri fiscale, întrucât se confruntă cu o scădere a cererii, fie nu emit bonuri fiscale, întrucât activitatea le este restricționată, ca măsură de combatere a răspândirii SARS-CoV-2, astfel că, în continuare, Loteria bonurilor fiscale nu mai poate produce efectele scontate.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA11">Având în vedere faptul că evoluția epidemiei de coronavirus este imprevizibilă, context în care măsurile care vor fi luate de autorități, în viitor, în vederea prevenirii și combaterii efectelor pandemiei de COVID-19, nu pot fi anticipate,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA12">ținând cont de faptul că este necesară stabilirea modalității de colaborare dintre autoritățile publice, instituțiile publice și de interes public din administrația publică centrală și locală, precum și alte persoane, respectiv prin mijloace electronice, pentru realizarea atribuțiilor stabilite de normele juridice care reglementează activitatea autorităților publice, instituțiilor publice și de interes public din administrația publică centrală și locală,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA13">ținând seama de faptul că nepromovarea prezentului act normativ ar avea consecințe negative, în sensul că:<span class="S_LIN" id="id_linA14"><span class="S_LIN_TTL" id="id_linA14_ttl" onMouseOver="marcheaza(id_linA14_ttl,id_linA14)" onMouseOut="demarcheaza(id_linA14_ttl,id_linA14)" onMouseDown="plusMinus(id_linA14_short,id_linA14_bdy)">– </span><span class="S_LIN_BDY" id="id_linA14_bdy">ar conduce la menținerea sau chiar agravarea situației operatorilor subcapitalizați, instabili financiar, în pragul ieșirii din circuitul economic, precum și la posibile reduceri de locuri de muncă create de aceștia;</span><span style="display:none" class="S_LIN_SHORT" id="id_linA14_short" onMouseOver="marcheaza(id_linA14_short,id_linA14)" onMouseOut="demarcheaza(id_linA14_short,id_linA14)" onMouseDown="plusMinus(id_linA14_short,id_linA14_bdy)"> ... </span></span><span class="S_LIN" id="id_linA15"><span class="S_LIN_TTL" id="id_linA15_ttl" onMouseOver="marcheaza(id_linA15_ttl,id_linA15)" onMouseOut="demarcheaza(id_linA15_ttl,id_linA15)" onMouseDown="plusMinus(id_linA15_short,id_linA15_bdy)">– </span><span class="S_LIN_BDY" id="id_linA15_bdy">o lipsă bruscă de lichiditate poate genera chiar insolvabilitatea unor operatori economici, cu efecte grave asupra mediului de afaceri și, implicit, asupra veniturilor statului, dar și faptul că acest lucru, pe termen scurt și mediu, poate afecta grav situația economică a operatorilor și situația angajaților acestora, cu posibile consecințe chiar și pe termen lung;</span><span style="display:none" class="S_LIN_SHORT" id="id_linA15_short" onMouseOver="marcheaza(id_linA15_short,id_linA15)" onMouseOut="demarcheaza(id_linA15_short,id_linA15)" onMouseDown="plusMinus(id_linA15_short,id_linA15_bdy)"> ... </span></span><span class="S_LIN" id="id_linA16"><span class="S_LIN_TTL" id="id_linA16_ttl" onMouseOver="marcheaza(id_linA16_ttl,id_linA16)" onMouseOut="demarcheaza(id_linA16_ttl,id_linA16)" onMouseDown="plusMinus(id_linA16_short,id_linA16_bdy)">– </span><span class="S_LIN_BDY" id="id_linA16_bdy">ar conduce la cheltuirea nejustificată a resurselor bugetare, tocmai într-o conjunctură în care criza generată de pandemia de COVID-19 are consecințe pe plan economic și reclamă mai mult ca oricând gestionarea prudentă a resurselor bugetare, în vederea relansării economiei afectate de pandemia de COVID-19;</span><span style="display:none" class="S_LIN_SHORT" id="id_linA16_short" onMouseOver="marcheaza(id_linA16_short,id_linA16)" onMouseOut="demarcheaza(id_linA16_short,id_linA16)" onMouseDown="plusMinus(id_linA16_short,id_linA16_bdy)"> ... </span></span><span class="S_LIN" id="id_linA17"><span class="S_LIN_TTL" id="id_linA17_ttl" onMouseOver="marcheaza(id_linA17_ttl,id_linA17)" onMouseOut="demarcheaza(id_linA17_ttl,id_linA17)" onMouseDown="plusMinus(id_linA17_short,id_linA17_bdy)">– </span><span class="S_LIN_BDY" id="id_linA17_bdy">ar crește riscul ca informațiile și documentele necesare pentru soluționarea unor cereri ale cetățenilor să fie solicitate de la cetățean, ceea ce conduce la creșterea birocrației,</span><span style="display:none" class="S_LIN_SHORT" id="id_linA17_short" onMouseOver="marcheaza(id_linA17_short,id_linA17)" onMouseOut="demarcheaza(id_linA17_short,id_linA17)" onMouseDown="plusMinus(id_linA17_short,id_linA17_bdy)"> ... </span></span><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA18">având în vedere că elementele sus-menționate vizează interesul public și strategic, sunt o prioritate a Programului de guvernare și constituie o situație de urgență și extraordinară, a cărei reglementare nu poate fi amânată, se impune adoptarea de măsuri imediate pe calea ordonanței de urgență.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA19">În temeiul <A href="~/../../../Public/DetaliiDocumentAfis/47355">art. 115 alin. (4) din Constituția României, republicată</A>,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA20">Guvernul României adoptă prezenta ordonanță de urgență.<!----></span><span class="S_ART" style="display: block; color:black;" id="id_artA21" name="id_artA21"><span class="TAG_COLLAPSED" id="id_cllpsdA21" onMouseOver="marcheaza(id_cllpsdA21,id_artA21)" onMouseOut="demarcheaza(id_cllpsdA21,id_artA21)" onMouseDown="plusMinus(id_artA21_bdy,id_cllpsdA21)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA21_ttl" onMouseOver="marcheaza(id_artA21_ttl,id_artA21)" onMouseOut="demarcheaza(id_artA21_ttl,id_artA21)" onMouseDown="plusMinus(id_artA21_bdy,id_cllpsdA21)">Articolul I</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA21_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA22"><span class="S_ALN_TTL" id="id_litA22_ttl" onMouseOver="marcheaza(id_litA22_ttl,id_litA22)" onMouseOut="demarcheaza(id_litA22_ttl,id_litA22)" onMouseDown="plusMinus(id_litA22_short,id_litA22_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA22_bdy"> Contribuabilii plătitori de impozit pe profit, indiferent de sistemul de declarare și plată prevăzut la <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 41 din Legea nr. 227/2015 privind Codul fiscal</A>, cu modificările și completările ulterioare, denumită în continuare <A href="~/../../../Public/DetaliiDocumentAfis/228099">Codul fiscal</A>, contribuabilii plătitori de impozit pe veniturile microîntreprinderilor potrivit <A href="~/../../../Public/DetaliiDocumentAfis/228099">titlului III „Impozitul pe veniturile microîntreprinderilor“ din Codul fiscal</A>, precum și contribuabilii care intră sub incidența prevederilor <A href="~/../../../Public/DetaliiDocumentAfis/228077">Legii nr. 170/2016</A> privind impozitul specific unor activități, cu completările ulterioare, beneficiază de reduceri ale impozitului pe profit anual/impozitului pe veniturile microîntreprinderilor/impozitului specific unor activități, astfel:<span class="S_LIT" style="display: block; color:black;" id="id_litA23"><span class="S_LIT_TTL" id="id_litA23_ttl" onMouseOver="marcheaza(id_litA23_ttl,id_litA23)" onMouseOut="demarcheaza(id_litA23_ttl,id_litA23)" onMouseDown="plusMinus(id_litA23_short,id_litA23_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA23_bdy">2%, în cazul în care capitalul propriu contabil, prezentat în situațiile financiare anuale, respectiv în raportările contabile anuale pentru sediile permanente ale persoanelor juridice  rezidente în state aparținând Spațiului Economic European, în anul pentru care datorează impozitul, este pozitiv. Pentru contribuabilii care, potrivit prevederilor legale, au obligația constituirii capitalului social, capitalul propriu contabil trebuie să îndeplinească concomitent și condiția de a fi la nivelul unei valori cel puțin egale cu jumătate din capitalul social subscris;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA23_short" onMouseOver="marcheaza(id_litA23_short,id_litA23)" onMouseOut="demarcheaza(id_litA23_short,id_litA23)" onMouseDown="plusMinus(id_litA23_short,id_litA23_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA25"><span class="S_LIT_TTL" id="id_litA25_ttl" onMouseOver="marcheaza(id_litA25_ttl,id_litA25)" onMouseOut="demarcheaza(id_litA25_ttl,id_litA25)" onMouseDown="plusMinus(id_litA25_short,id_litA25_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA25_bdy">dacă înregistrează o creștere anuală a capitalului propriu ajustat al anului pentru care datorează impozitul față de capitalul propriu ajustat înregistrat în anul precedent și îndeplinește concomitent condiția prevăzută la <span class="S_LGI">lit. a)</span>, reducerile au următoarele valori:<span class="S_PAR" style="display: block; color:black;" id="id_parA26"><table style="display: block; color:black;"><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Procentul de reducere a impozitului</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Intervalele de creștere anuală a capitalului propriu ajustat</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">5%</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">până la 5% inclusiv</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">6%</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">peste 5% și până la 10% inclusiv</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">7%</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">peste 10% și până la 15% inclusiv</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">8%</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">peste 15% și până la 20% inclusiv</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">9%</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">peste 20% și până la 25% inclusiv</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">10%</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">peste 25% </td></tr></table><!----></span></span><span style="display: none" class="S_LIT_SHORT" id="id_litA25_short" onMouseOver="marcheaza(id_litA25_short,id_litA25)" onMouseOut="demarcheaza(id_litA25_short,id_litA25)" onMouseDown="plusMinus(id_litA25_short,id_litA25_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA56"><span class="S_LIT_TTL" id="id_litA56_ttl" onMouseOver="marcheaza(id_litA56_ttl,id_litA56)" onMouseOut="demarcheaza(id_litA56_ttl,id_litA56)" onMouseDown="plusMinus(id_litA56_short,id_litA56_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA56_bdy">3%, dacă înregistrează o creștere peste nivelul prevăzut la <span class="S_LGI">alin. (4)</span> a capitalului propriu ajustat al anului pentru care datorează impozitul față de capitalul propriu ajustat înregistrat în anul 2020 și dacă îndeplinește concomitent condiția prevăzută la <span class="S_LGI">lit. a)</span>. Prevederile prezentei litere se aplică începând cu anul 2022, respectiv începând cu anul fiscal modificat care începe în anul 2022.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA56_short" onMouseOver="marcheaza(id_litA56_short,id_litA56)" onMouseOut="demarcheaza(id_litA56_short,id_litA56)" onMouseDown="plusMinus(id_litA56_short,id_litA56_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA57"><span class="S_ALN_TTL" id="id_litA57_ttl" onMouseOver="marcheaza(id_litA57_ttl,id_litA57)" onMouseOut="demarcheaza(id_litA57_ttl,id_litA57)" onMouseDown="plusMinus(id_litA57_short,id_litA57_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA57_bdy"> În cazul în care sunt aplicabile două sau trei din reducerile prevăzute la <span class="S_LGI">alin. (1)</span>, pentru determinarea valorii reducerii, procentele corespunzătoare acestora se adună, iar valoarea rezultată se aplică asupra impozitului.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA58"><span class="S_ALN_TTL" id="id_litA58_ttl" onMouseOver="marcheaza(id_litA58_ttl,id_litA58)" onMouseOut="demarcheaza(id_litA58_ttl,id_litA58)" onMouseDown="plusMinus(id_litA58_short,id_litA58_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA58_bdy"> Nu intră sub incidența prevederilor prezentului articol contribuabilii pentru care reglementările contabile sunt emise de Banca Națională a României, respectiv de Autoritatea de Supraveghere Financiară.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA59"><span class="S_ALN_TTL" id="id_litA59_ttl" onMouseOver="marcheaza(id_litA59_ttl,id_litA59)" onMouseOut="demarcheaza(id_litA59_ttl,id_litA59)" onMouseDown="plusMinus(id_litA59_short,id_litA59_bdy)">(4)<!----></span> <span class="S_ALN_BDY" id="id_litA59_bdy"> În aplicarea prevederilor <span class="S_LGI">alin. (1) lit. c)</span>, procentul de creștere a capitalului propriu ajustat al anului pentru care datorează impozitul față de capitalul propriu ajustat înregistrat în anul 2020 are următoarele valori:<span class="S_PAR" style="display: block; color:black;" id="id_parA60"><table style="display: block; color:black;"><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Anul pentru care datorează impozitul</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">Procentul minim de creștere a capitalului propriu ajustat</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">2022</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">5%</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">2023</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">10%</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">2024</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">15%</td></tr><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">2025</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">20%</td></tr></table><!----></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA82"><span class="S_ALN_TTL" id="id_litA82_ttl" onMouseOver="marcheaza(id_litA82_ttl,id_litA82)" onMouseOut="demarcheaza(id_litA82_ttl,id_litA82)" onMouseDown="plusMinus(id_litA82_short,id_litA82_bdy)">(5)<!----></span> <span class="S_ALN_BDY" id="id_litA82_bdy"> În sensul prezentului articol, capitalul propriu ajustat cuprinde următoarele elemente:<span class="S_LIT" style="display: block; color:black;" id="id_litA83"><span class="S_LIT_TTL" id="id_litA83_ttl" onMouseOver="marcheaza(id_litA83_ttl,id_litA83)" onMouseOut="demarcheaza(id_litA83_ttl,id_litA83)" onMouseDown="plusMinus(id_litA83_short,id_litA83_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA83_bdy">capital subscris vărsat/capital de dotare;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA83_short" onMouseOver="marcheaza(id_litA83_short,id_litA83)" onMouseOut="demarcheaza(id_litA83_short,id_litA83)" onMouseDown="plusMinus(id_litA83_short,id_litA83_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA84"><span class="S_LIT_TTL" id="id_litA84_ttl" onMouseOver="marcheaza(id_litA84_ttl,id_litA84)" onMouseOut="demarcheaza(id_litA84_ttl,id_litA84)" onMouseDown="plusMinus(id_litA84_short,id_litA84_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA84_bdy">patrimoniul regiei;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA84_short" onMouseOver="marcheaza(id_litA84_short,id_litA84)" onMouseOut="demarcheaza(id_litA84_short,id_litA84)" onMouseDown="plusMinus(id_litA84_short,id_litA84_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA85"><span class="S_LIT_TTL" id="id_litA85_ttl" onMouseOver="marcheaza(id_litA85_ttl,id_litA85)" onMouseOut="demarcheaza(id_litA85_ttl,id_litA85)" onMouseDown="plusMinus(id_litA85_short,id_litA85_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA85_bdy">patrimoniul public;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA85_short" onMouseOver="marcheaza(id_litA85_short,id_litA85)" onMouseOut="demarcheaza(id_litA85_short,id_litA85)" onMouseDown="plusMinus(id_litA85_short,id_litA85_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA86"><span class="S_LIT_TTL" id="id_litA86_ttl" onMouseOver="marcheaza(id_litA86_ttl,id_litA86)" onMouseOut="demarcheaza(id_litA86_ttl,id_litA86)" onMouseDown="plusMinus(id_litA86_short,id_litA86_bdy)">d)<!----></span> <span class="S_LIT_BDY" id="id_litA86_bdy">patrimoniul privat;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA86_short" onMouseOver="marcheaza(id_litA86_short,id_litA86)" onMouseOut="demarcheaza(id_litA86_short,id_litA86)" onMouseDown="plusMinus(id_litA86_short,id_litA86_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA87"><span class="S_LIT_TTL" id="id_litA87_ttl" onMouseOver="marcheaza(id_litA87_ttl,id_litA87)" onMouseOut="demarcheaza(id_litA87_ttl,id_litA87)" onMouseDown="plusMinus(id_litA87_short,id_litA87_bdy)">e)<!----></span> <span class="S_LIT_BDY" id="id_litA87_bdy">patrimoniul institutelor naționale de cercetare-dezvoltare;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA87_short" onMouseOver="marcheaza(id_litA87_short,id_litA87)" onMouseOut="demarcheaza(id_litA87_short,id_litA87)" onMouseDown="plusMinus(id_litA87_short,id_litA87_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA88"><span class="S_LIT_TTL" id="id_litA88_ttl" onMouseOver="marcheaza(id_litA88_ttl,id_litA88)" onMouseOut="demarcheaza(id_litA88_ttl,id_litA88)" onMouseDown="plusMinus(id_litA88_short,id_litA88_bdy)">f)<!----></span> <span class="S_LIT_BDY" id="id_litA88_bdy">prime de capital;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA88_short" onMouseOver="marcheaza(id_litA88_short,id_litA88)" onMouseOut="demarcheaza(id_litA88_short,id_litA88)" onMouseDown="plusMinus(id_litA88_short,id_litA88_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA89"><span class="S_LIT_TTL" id="id_litA89_ttl" onMouseOver="marcheaza(id_litA89_ttl,id_litA89)" onMouseOut="demarcheaza(id_litA89_ttl,id_litA89)" onMouseDown="plusMinus(id_litA89_short,id_litA89_bdy)">g)<!----></span> <span class="S_LIT_BDY" id="id_litA89_bdy">rezerva legală, statutară sau contractuală și alte rezerve constituite din profitul net ca urmare a deciziei acționarilor/asociaților sau potrivit prevederilor legale;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA89_short" onMouseOver="marcheaza(id_litA89_short,id_litA89)" onMouseOut="demarcheaza(id_litA89_short,id_litA89)" onMouseDown="plusMinus(id_litA89_short,id_litA89_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA90"><span class="S_LIT_TTL" id="id_litA90_ttl" onMouseOver="marcheaza(id_litA90_ttl,id_litA90)" onMouseOut="demarcheaza(id_litA90_ttl,id_litA90)" onMouseDown="plusMinus(id_litA90_short,id_litA90_bdy)">h)<!----></span> <span class="S_LIT_BDY" id="id_litA90_bdy">rezultatul net reportat - sold creditor, reprezentând diferența pozitivă dintre soldurile creditoare și debitoare.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA90_short" onMouseOver="marcheaza(id_litA90_short,id_litA90)" onMouseOut="demarcheaza(id_litA90_short,id_litA90)" onMouseDown="plusMinus(id_litA90_short,id_litA90_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA91"><span class="S_ALN_TTL" id="id_litA91_ttl" onMouseOver="marcheaza(id_litA91_ttl,id_litA91)" onMouseOut="demarcheaza(id_litA91_ttl,id_litA91)" onMouseDown="plusMinus(id_litA91_short,id_litA91_bdy)">(6)<!----></span> <span class="S_ALN_BDY" id="id_litA91_bdy"> Elementele luate în calcul potrivit <span class="S_LGI">alin. (5)</span> pentru determinarea capitalului propriu ajustat sunt cele prezentate în situațiile financiare anuale/raportările contabile anuale.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA92"><span class="S_ALN_TTL" id="id_litA92_ttl" onMouseOver="marcheaza(id_litA92_ttl,id_litA92)" onMouseOut="demarcheaza(id_litA92_ttl,id_litA92)" onMouseDown="plusMinus(id_litA92_short,id_litA92_bdy)">(7)<!----></span> <span class="S_ALN_BDY" id="id_litA92_bdy"> Pentru determinarea capitalului propriu ajustat potrivit <span class="S_LGI">alin. (5) lit. a)</span> de către sediile permanente, capitalul subscris vărsat se înlocuiește cu capitalul de dotare pus la dispoziție de persoana juridică străină pentru desfășurarea activității în România.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA93"><span class="S_ALN_TTL" id="id_litA93_ttl" onMouseOver="marcheaza(id_litA93_ttl,id_litA93)" onMouseOut="demarcheaza(id_litA93_ttl,id_litA93)" onMouseDown="plusMinus(id_litA93_short,id_litA93_bdy)">(8)<!----></span> <span class="S_ALN_BDY" id="id_litA93_bdy"> În cazul în care în anul pentru care datorează impozitul se efectuează următoarele operațiuni de reorganizare, potrivit legii, care produc efecte în anul respectiv, contribuabilii stabilesc capitalul propriu ajustat al anului precedent, respectiv al anului 2020, potrivit următoarelor reguli:<span class="S_LIT" style="display: block; color:black;" id="id_litA94"><span class="S_LIT_TTL" id="id_litA94_ttl" onMouseOver="marcheaza(id_litA94_ttl,id_litA94)" onMouseOut="demarcheaza(id_litA94_ttl,id_litA94)" onMouseDown="plusMinus(id_litA94_short,id_litA94_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA94_bdy">contribuabilii care, în cazul fuziunii, absorb una sau mai multe persoane juridice, însumează capitalul propriu ajustat înregistrat de aceștia în anul precedent, respectiv anul 2020, cu capitalul propriu ajustat pentru aceiași ani înregistrat de celelalte societăți cedente;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA94_short" onMouseOver="marcheaza(id_litA94_short,id_litA94)" onMouseOut="demarcheaza(id_litA94_short,id_litA94)" onMouseDown="plusMinus(id_litA94_short,id_litA94_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA95"><span class="S_LIT_TTL" id="id_litA95_ttl" onMouseOver="marcheaza(id_litA95_ttl,id_litA95)" onMouseOut="demarcheaza(id_litA95_ttl,id_litA95)" onMouseDown="plusMinus(id_litA95_short,id_litA95_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA95_bdy">contribuabilii înființați prin fuziunea a două sau mai multe persoane juridice însumează capitalul propriu ajustat înregistrat în anul precedent, respectiv anul 2020, de societățile cedente;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA95_short" onMouseOver="marcheaza(id_litA95_short,id_litA95)" onMouseOut="demarcheaza(id_litA95_short,id_litA95)" onMouseDown="plusMinus(id_litA95_short,id_litA95_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA96"><span class="S_LIT_TTL" id="id_litA96_ttl" onMouseOver="marcheaza(id_litA96_ttl,id_litA96)" onMouseOut="demarcheaza(id_litA96_ttl,id_litA96)" onMouseDown="plusMinus(id_litA96_short,id_litA96_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA96_bdy">contribuabilii înființați prin divizarea sub orice formă a unei persoane juridice împart capitalul propriu ajustat înregistrat în anul precedent, respectiv în anul 2020, de societatea cedentă proporțional cu valoarea activelor transferate, conform proiectului de divizare întocmit potrivit legii;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA96_short" onMouseOver="marcheaza(id_litA96_short,id_litA96)" onMouseOut="demarcheaza(id_litA96_short,id_litA96)" onMouseDown="plusMinus(id_litA96_short,id_litA96_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA97"><span class="S_LIT_TTL" id="id_litA97_ttl" onMouseOver="marcheaza(id_litA97_ttl,id_litA97)" onMouseOut="demarcheaza(id_litA97_ttl,id_litA97)" onMouseDown="plusMinus(id_litA97_short,id_litA97_bdy)">d)<!----></span> <span class="S_LIT_BDY" id="id_litA97_bdy">contribuabilii care primesc active și pasive prin operațiuni de divizare sub orice formă a unei persoane juridice însumează capitalul propriu ajustat înregistrat de aceștia în anul precedent, respectiv anul 2020, cu capitalul propriu ajustat înregistrat de societatea cedentă în aceiași ani, recalculat proporțional cu valoarea activelor transferate, conform proiectului de divizare întocmit potrivit legii;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA97_short" onMouseOver="marcheaza(id_litA97_short,id_litA97)" onMouseOut="demarcheaza(id_litA97_short,id_litA97)" onMouseDown="plusMinus(id_litA97_short,id_litA97_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA98"><span class="S_LIT_TTL" id="id_litA98_ttl" onMouseOver="marcheaza(id_litA98_ttl,id_litA98)" onMouseOut="demarcheaza(id_litA98_ttl,id_litA98)" onMouseDown="plusMinus(id_litA98_short,id_litA98_bdy)">e)<!----></span> <span class="S_LIT_BDY" id="id_litA98_bdy">contribuabilii care transferă, potrivit legii, o parte din patrimoniu uneia sau mai multor societăți beneficiare recalculează capitalul propriu ajustat pentru anul precedent, respectiv anul 2020, proporțional cu valoarea activelor menținute de către persoana juridică care transferă activele, conform proiectului de divizare întocmit potrivit legii. </span><span style="display: none" class="S_LIT_SHORT" id="id_litA98_short" onMouseOver="marcheaza(id_litA98_short,id_litA98)" onMouseOut="demarcheaza(id_litA98_short,id_litA98)" onMouseDown="plusMinus(id_litA98_short,id_litA98_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA99"><span class="S_ALN_TTL" id="id_litA99_ttl" onMouseOver="marcheaza(id_litA99_ttl,id_litA99)" onMouseOut="demarcheaza(id_litA99_ttl,id_litA99)" onMouseDown="plusMinus(id_litA99_short,id_litA99_bdy)">(9)<!----></span> <span class="S_ALN_BDY" id="id_litA99_bdy"> În cazul contribuabililor care în anul pentru care datorează impozitul devin sedii permanente ale persoanelor juridice străine ca urmare a operațiunilor prevăzute la <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 33 din Codul fiscal</A>, capitalul propriu ajustat al anului precedent, respectiv al anului 2020, se stabilește potrivit următoarelor reguli:<span class="S_LIT" style="display: block; color:black;" id="id_litA100"><span class="S_LIT_TTL" id="id_litA100_ttl" onMouseOver="marcheaza(id_litA100_ttl,id_litA100)" onMouseOut="demarcheaza(id_litA100_ttl,id_litA100)" onMouseDown="plusMinus(id_litA100_short,id_litA100_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA100_bdy">în cazul fuziunii prin absorbție, capitalul propriu ajustat al sediului permanent pentru anul precedent, respectiv anul 2020, este cel înregistrat de către societatea cedentă;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA100_short" onMouseOver="marcheaza(id_litA100_short,id_litA100)" onMouseOut="demarcheaza(id_litA100_short,id_litA100)" onMouseDown="plusMinus(id_litA100_short,id_litA100_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA101"><span class="S_LIT_TTL" id="id_litA101_ttl" onMouseOver="marcheaza(id_litA101_ttl,id_litA101)" onMouseOut="demarcheaza(id_litA101_ttl,id_litA101)" onMouseDown="plusMinus(id_litA101_short,id_litA101_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA101_bdy">în cazul divizării totale, divizării parțiale și transferului de active, sediile permanente determină capitalul propriu ajustat pentru anul precedent, respectiv anul 2020, în baza celui înregistrat de societatea cedentă, recalculat pentru fiecare sediu permanent, proporțional cu valoarea activelor, potrivit legii. Societățile cedente care nu încetează să existe în urma efectuării unei astfel de operațiuni stabilesc capitalul propriu ajustat potrivit regulilor prevăzute la <span class="S_LGI">alin. (8) lit. e)</span>.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA101_short" onMouseOver="marcheaza(id_litA101_short,id_litA101)" onMouseOut="demarcheaza(id_litA101_short,id_litA101)" onMouseDown="plusMinus(id_litA101_short,id_litA101_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA102"><span class="S_ALN_TTL" id="id_litA102_ttl" onMouseOver="marcheaza(id_litA102_ttl,id_litA102)" onMouseOut="demarcheaza(id_litA102_ttl,id_litA102)" onMouseDown="plusMinus(id_litA102_short,id_litA102_bdy)">(10)<!----></span> <span class="S_ALN_BDY" id="id_litA102_bdy">În aplicarea prevederilor <span class="S_LGI">alin. (1) lit. b)</span> și <span class="S_LGI">c)</span>, creșterea capitalului propriu ajustat se determină astfel:<span class="S_LIT" style="display: block; color:black;" id="id_litA103"><span class="S_LIT_TTL" id="id_litA103_ttl" onMouseOver="marcheaza(id_litA103_ttl,id_litA103)" onMouseOut="demarcheaza(id_litA103_ttl,id_litA103)" onMouseDown="plusMinus(id_litA103_short,id_litA103_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA103_bdy">creșterea anuală a capitalului propriu ajustat în anul pentru care datorează impozitul față de capitalul propriu ajustat înregistrat în anul precedent, prevăzută la <span class="S_LGI">alin. (1) lit. b)</span>, se determină potrivit următoarei formule:<table style="display: block; color:blue;"><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">CCPA_an/an prec</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">=</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:blue;" id="id_parA99808972">CPA al anului pentru care datorează impozitul - CPA înregistrat în anul precedent<!----></span><span class="S_PAR" style="display: block; color:blue;" id="id_parA99808973">..................................................................................<!----></span><span class="S_PAR" style="display: block; color:blue;" id="id_parA99808974">CPA înregistrat în anul precedent <!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">x</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">100,;</td></tr></table><span class="S_PAR" style="display: block; color:blue;white-space:normal;line-height:100%;" id="id_parA21793239">
+			(la 21-09-2020, 
+			Porțiunea din Litera a) din alin. (10) al art. I a fost modificată de <A href="~/../../../Public/DetaliiDocumentAfis/230357">RECTIFICAREA nr. 153 din 3 septembrie 2020, publicată în MONITORUL OFICIAL nr. 861 din 21 septembrie 2020</A>
+			)
+	</span><span class="S_PAR" style="display: block; color:black;" id="id_parA107">unde:<span class="S_PAR" style="display: block; color:black;" id="id_parA108">CCPA - creșterea anuală a capitalului propriu ajustat;<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA109">CPA - capitalul propriu ajustat;<!----></span><!----></span></span><span style="display: none" class="S_LIT_SHORT" id="id_litA103_short" onMouseOver="marcheaza(id_litA103_short,id_litA103)" onMouseOut="demarcheaza(id_litA103_short,id_litA103)" onMouseDown="plusMinus(id_litA103_short,id_litA103_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA110"><span class="S_LIT_TTL" id="id_litA110_ttl" onMouseOver="marcheaza(id_litA110_ttl,id_litA110)" onMouseOut="demarcheaza(id_litA110_ttl,id_litA110)" onMouseDown="plusMinus(id_litA110_short,id_litA110_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA110_bdy">creșterea capitalului propriu ajustat în anul pentru care datorează impozitul față de capitalul propriu ajustat înregistrat în anul 2020, prevăzută la <span class="S_LGI">alin. (1) lit. c)</span>, se determină potrivit următoarei formule:<table style="display: block; color:blue;"><tr><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">CCPA_an/2020</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">=</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan=""><span class="S_PAR" style="display: block; color:blue;" id="id_parA99808981">CPA al anului pentru care datorează impozitul - CPA înregistrat în anul 2020 <!----></span><span class="S_PAR" style="display: block; color:blue;" id="id_parA99808982">...............................................................................................<!----></span><span class="S_PAR" style="display: block; color:blue;" id="id_parA99808983">CPA înregistrat în anul 2020 <!----></span></td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">x</td><td style="border: 1px solid black;white-space:pre" colspan="" align="" rowspan="">100,.</td></tr></table><span class="S_PAR" style="display: block; color:blue;white-space:normal;line-height:100%;" id="id_parA21793258">
+			(la 21-09-2020, 
+			Porțiunea din Litera b) din alin. (10) al art. I a fost modificată de <A href="~/../../../Public/DetaliiDocumentAfis/230357">RECTIFICAREA nr. 153 din 3 septembrie 2020, publicată în MONITORUL OFICIAL nr. 861 din 21 septembrie 2020</A>
+			)
+	</span><span class="S_PAR" style="display: block; color:black;" id="id_parA114">unde:<span class="S_PAR" style="display: block; color:black;" id="id_parA115">CCPA - creșterea capitalului propriu ajustat;<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA116">CPA - capitalul propriu ajustat.<!----></span><!----></span></span><span style="display: none" class="S_LIT_SHORT" id="id_litA110_short" onMouseOver="marcheaza(id_litA110_short,id_litA110)" onMouseOut="demarcheaza(id_litA110_short,id_litA110)" onMouseDown="plusMinus(id_litA110_short,id_litA110_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA117"><span class="S_ALN_TTL" id="id_litA117_ttl" onMouseOver="marcheaza(id_litA117_ttl,id_litA117)" onMouseOut="demarcheaza(id_litA117_ttl,id_litA117)" onMouseDown="plusMinus(id_litA117_short,id_litA117_bdy)">(11)<!----></span> <span class="S_ALN_BDY" id="id_litA117_bdy"> În aplicarea prevederilor <span class="S_LGI">alin. (1)</span> și <span class="S_LGI">(4)</span>, contribuabilii care intră sub incidența prevederilor <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 16 alin. (5) din Codul fiscal</A> au în vedere următoarele:<span class="S_LIT" style="display: block; color:black;" id="id_litA118"><span class="S_LIT_TTL" id="id_litA118_ttl" onMouseOver="marcheaza(id_litA118_ttl,id_litA118)" onMouseOut="demarcheaza(id_litA118_ttl,id_litA118)" onMouseDown="plusMinus(id_litA118_short,id_litA118_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA118_bdy">anul de bază care se substituie anului 2020 pentru aplicarea <span class="S_LGI">alin. (1) lit. c)</span> este anul fiscal modificat încheiat în anul 2021;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA118_short" onMouseOver="marcheaza(id_litA118_short,id_litA118)" onMouseOut="demarcheaza(id_litA118_short,id_litA118)" onMouseDown="plusMinus(id_litA118_short,id_litA118_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA119"><span class="S_LIT_TTL" id="id_litA119_ttl" onMouseOver="marcheaza(id_litA119_ttl,id_litA119)" onMouseOut="demarcheaza(id_litA119_ttl,id_litA119)" onMouseDown="plusMinus(id_litA119_short,id_litA119_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA119_bdy">procentul de creștere care se aplică este cel corespunzător anului fiscal modificat care începe în anii prevăzuți la <span class="S_LGI">alin. (4)</span>;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA119_short" onMouseOver="marcheaza(id_litA119_short,id_litA119)" onMouseOut="demarcheaza(id_litA119_short,id_litA119)" onMouseDown="plusMinus(id_litA119_short,id_litA119_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA120"><span class="S_LIT_TTL" id="id_litA120_ttl" onMouseOver="marcheaza(id_litA120_ttl,id_litA120)" onMouseOut="demarcheaza(id_litA120_ttl,id_litA120)" onMouseDown="plusMinus(id_litA120_short,id_litA120_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA120_bdy">ultimul an fiscal modificat pentru care se aplică reducerile este anul care se încheie în anul 2026.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA120_short" onMouseOver="marcheaza(id_litA120_short,id_litA120)" onMouseOut="demarcheaza(id_litA120_short,id_litA120)" onMouseDown="plusMinus(id_litA120_short,id_litA120_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA121"><span class="S_ALN_TTL" id="id_litA121_ttl" onMouseOver="marcheaza(id_litA121_ttl,id_litA121)" onMouseOut="demarcheaza(id_litA121_ttl,id_litA121)" onMouseDown="plusMinus(id_litA121_short,id_litA121_bdy)">(12)<!----></span> <span class="S_ALN_BDY" id="id_litA121_bdy"> Pentru aplicarea prevederilor prezentului articol se au în vedere următoarele:<span class="S_LIT" style="display: block; color:black;" id="id_litA122"><span class="S_LIT_TTL" id="id_litA122_ttl" onMouseOver="marcheaza(id_litA122_ttl,id_litA122)" onMouseOut="demarcheaza(id_litA122_ttl,id_litA122)" onMouseDown="plusMinus(id_litA122_short,id_litA122_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA122_bdy">pentru plătitorii de impozit pe profit procentul aferent reducerii de impozit se aplică la impozitul pe profit anual al anului în care sunt îndeplinite condițiile prevăzute la <span class="S_LGI">alin. (1)</span>, iar valoarea reducerii rezultate se scade din acesta. În sensul prezentei litere, impozitul pe profit anual reprezintă impozitul pe profit după scăderea creditului fiscal extern, impozitului pe profit scutit sau redus, sumelor reprezentând sponsorizare și/sau mecenat, burse private, în limita prevăzută de lege, precum și a costului de achiziție al aparatelor de marcat electronice fiscale;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA122_short" onMouseOver="marcheaza(id_litA122_short,id_litA122)" onMouseOut="demarcheaza(id_litA122_short,id_litA122)" onMouseDown="plusMinus(id_litA122_short,id_litA122_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA123"><span class="S_LIT_TTL" id="id_litA123_ttl" onMouseOver="marcheaza(id_litA123_ttl,id_litA123)" onMouseOut="demarcheaza(id_litA123_ttl,id_litA123)" onMouseDown="plusMinus(id_litA123_short,id_litA123_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA123_bdy">pentru plătitorii de impozit pe veniturile microîntreprinderilor procentul aferent reducerii de impozit se aplică la impozitul datorat pe întregul an fiscal, iar valoarea reducerii rezultate se scade din impozitul aferent trimestrului IV. În cazul în care valoarea reducerii este mai mare decât impozitul aferent trimestrului IV, diferența care nu a fost scăzută din impozitul aferent trimestrului IV se scade din impozitul aferent trimestrelor anterioare, prin depunerea unei declarații rectificative;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA123_short" onMouseOver="marcheaza(id_litA123_short,id_litA123)" onMouseOut="demarcheaza(id_litA123_short,id_litA123)" onMouseDown="plusMinus(id_litA123_short,id_litA123_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA124"><span class="S_LIT_TTL" id="id_litA124_ttl" onMouseOver="marcheaza(id_litA124_ttl,id_litA124)" onMouseOut="demarcheaza(id_litA124_ttl,id_litA124)" onMouseDown="plusMinus(id_litA124_short,id_litA124_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA124_bdy">în cazul microîntreprinderilor care devin plătitoare de impozit pe profit în anul pentru care se aplică reducerea, procentul aferent reducerii de impozit se aplică asupra impozitului pe veniturile microîntreprinderilor însumat cu impozitul pe profit, iar valoarea reducerii rezultate se scade din impozitul pe profit, potrivit prevederilor <span class="S_LGI">lit. a)</span>. În cazul în care valoarea reducerii este mai mare decât impozitul pe profit, diferența care nu a fost scăzută din impozitul pe profit se scade din impozitul pe veniturile microîntreprinderilor, prin depunerea unei declarații rectificative;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA124_short" onMouseOver="marcheaza(id_litA124_short,id_litA124)" onMouseOut="demarcheaza(id_litA124_short,id_litA124)" onMouseDown="plusMinus(id_litA124_short,id_litA124_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA125"><span class="S_LIT_TTL" id="id_litA125_ttl" onMouseOver="marcheaza(id_litA125_ttl,id_litA125)" onMouseOut="demarcheaza(id_litA125_ttl,id_litA125)" onMouseDown="plusMinus(id_litA125_short,id_litA125_bdy)">d)<!----></span> <span class="S_LIT_BDY" id="id_litA125_bdy">pentru plătitorii de impozit specific unor activități procentul aferent reducerii de impozit se aplică la impozitul datorat pe întregul an fiscal, iar valoarea reducerii rezultate se scade din impozitul datorat pentru semestrul II. În cazul în care valoarea reducerii este mai mare decât impozitul aferent semestrului II, diferența care nu a fost scăzută din impozitul aferent semestrului II se scade din impozitul aferent semestrului I, prin depunerea unei declarații rectificative;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA125_short" onMouseOver="marcheaza(id_litA125_short,id_litA125)" onMouseOut="demarcheaza(id_litA125_short,id_litA125)" onMouseDown="plusMinus(id_litA125_short,id_litA125_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA126"><span class="S_LIT_TTL" id="id_litA126_ttl" onMouseOver="marcheaza(id_litA126_ttl,id_litA126)" onMouseOut="demarcheaza(id_litA126_ttl,id_litA126)" onMouseDown="plusMinus(id_litA126_short,id_litA126_bdy)">e)<!----></span> <span class="S_LIT_BDY" id="id_litA126_bdy">plătitorii de impozit specific unor activități care datorează și impozit pe profit aplică reducerea atât pentru impozitul specific potrivit <span class="S_LGI">lit. d)</span>, cât și pentru impozitul pe profit potrivit <span class="S_LGI">lit. a)</span>.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA126_short" onMouseOver="marcheaza(id_litA126_short,id_litA126)" onMouseOut="demarcheaza(id_litA126_short,id_litA126)" onMouseDown="plusMinus(id_litA126_short,id_litA126_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA127"><span class="S_ALN_TTL" id="id_litA127_ttl" onMouseOver="marcheaza(id_litA127_ttl,id_litA127)" onMouseOut="demarcheaza(id_litA127_ttl,id_litA127)" onMouseDown="plusMinus(id_litA127_short,id_litA127_bdy)">(13)<!----></span> <span class="S_ALN_BDY" id="id_litA127_bdy"> Pe perioada aplicării prevederilor prezentului articol, termenele pentru depunerea declarațiilor și pentru plata impozitului sunt următoarele:<span class="S_LIT" style="display: block; color:black;" id="id_litA128"><span class="S_LIT_TTL" id="id_litA128_ttl" onMouseOver="marcheaza(id_litA128_ttl,id_litA128)" onMouseOut="demarcheaza(id_litA128_ttl,id_litA128)" onMouseDown="plusMinus(id_litA128_short,id_litA128_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA128_bdy">pentru contribuabilii plătitori de impozit pe profit, prin derogare de la prevederile <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 41</A> și <A href="~/../../../Public/DetaliiDocumentAfis/228099">42 din Codul fiscal</A>, termenul pentru depunerea declarației anuale privind impozitul pe profit și plata impozitului pe profit aferent anului fiscal respectiv este până la data de 25 iunie inclusiv a anului următor, iar pentru contribuabilii care intră sub incidența prevederilor <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 16 alin. (5) din Codul fiscal</A> până la data de 25 a celei de-a șasea luni inclusiv de la închiderea anului fiscal modificat; </span><span style="display: none" class="S_LIT_SHORT" id="id_litA128_short" onMouseOver="marcheaza(id_litA128_short,id_litA128)" onMouseOut="demarcheaza(id_litA128_short,id_litA128)" onMouseDown="plusMinus(id_litA128_short,id_litA128_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA129"><span class="S_LIT_TTL" id="id_litA129_ttl" onMouseOver="marcheaza(id_litA129_ttl,id_litA129)" onMouseOut="demarcheaza(id_litA129_ttl,id_litA129)" onMouseDown="plusMinus(id_litA129_short,id_litA129_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA129_bdy">pentru contribuabilii plătitori de impozit pe veniturile microîntreprinderilor, prin derogare de la prevederile <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 56 din Codul fiscal</A>, termenul pentru depunerea declarației aferente trimestrului IV și plata impozitului aferent acestui trimestru este până la data de 25 iunie inclusiv a anului următor;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA129_short" onMouseOver="marcheaza(id_litA129_short,id_litA129)" onMouseOut="demarcheaza(id_litA129_short,id_litA129)" onMouseDown="plusMinus(id_litA129_short,id_litA129_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA130"><span class="S_LIT_TTL" id="id_litA130_ttl" onMouseOver="marcheaza(id_litA130_ttl,id_litA130)" onMouseOut="demarcheaza(id_litA130_ttl,id_litA130)" onMouseDown="plusMinus(id_litA130_short,id_litA130_bdy)">c)<!----></span> <span class="S_LIT_BDY" id="id_litA130_bdy">pentru plătitorii de impozit specific unor activități, prin derogare de la prevederile <A href="~/../../../Public/DetaliiDocumentAfis/228077">art. 8 din Legea nr. 170/2016</A>, cu completările ulterioare, termenul pentru depunerea declarației aferente semestrului II și plata impozitului aferent acestui semestru este până la data de 25 iunie inclusiv a anului următor.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA130_short" onMouseOver="marcheaza(id_litA130_short,id_litA130)" onMouseOut="demarcheaza(id_litA130_short,id_litA130)" onMouseDown="plusMinus(id_litA130_short,id_litA130_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA131"><span class="S_ALN_TTL" id="id_litA131_ttl" onMouseOver="marcheaza(id_litA131_ttl,id_litA131)" onMouseOut="demarcheaza(id_litA131_ttl,id_litA131)" onMouseDown="plusMinus(id_litA131_short,id_litA131_bdy)">(14)<!----></span> <span class="S_ALN_BDY" id="id_litA131_bdy"> În aplicarea prevederilor prezentului articol, pentru contribuabilii înființați în cursul anului, cu excepția celor prevăzuți la <span class="S_LGI">alin. (8)</span> și <span class="S_LGI">(9)</span>, anul înființării reprezintă anul de bază care se substituie anului 2020 pentru aplicarea prevederilor <span class="S_LGI">alin. (1) lit. c)</span>.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA132"><span class="S_ALN_TTL" id="id_litA132_ttl" onMouseOver="marcheaza(id_litA132_ttl,id_litA132)" onMouseOut="demarcheaza(id_litA132_ttl,id_litA132)" onMouseDown="plusMinus(id_litA132_short,id_litA132_bdy)">(15)<!----></span> <span class="S_ALN_BDY" id="id_litA132_bdy"> Pentru contribuabilii care intră sub incidența <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 16 alin. (5) din Codul fiscal</A> prevederile prezentului articol se aplică cu anul fiscal modificat care începe în anul 2021.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA133" name="id_artA133"><span class="TAG_COLLAPSED" id="id_cllpsdA133" onMouseOver="marcheaza(id_cllpsdA133,id_artA133)" onMouseOut="demarcheaza(id_cllpsdA133,id_artA133)" onMouseDown="plusMinus(id_artA133_bdy,id_cllpsdA133)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA133_ttl" onMouseOver="marcheaza(id_artA133_ttl,id_artA133)" onMouseOut="demarcheaza(id_artA133_ttl,id_artA133)" onMouseDown="plusMinus(id_artA133_bdy,id_cllpsdA133)">Articolul II</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA133_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA134"><A href="~/../../../Public/DetaliiDocumentAfis/227394">După alineatul (6) al articolului 1</A> din <A href="~/../../../Public/DetaliiDocumentAfis/227394">Ordonanța de urgență a Guvernului nr. 33/2020</A> privind unele măsuri fiscale și modificarea unor acte normative, publicată în Monitorul Oficial al României, Partea I, nr. 260 din 30 martie 2020, aprobată cu completări prin <A href="~/../../../Public/DetaliiDocumentAfis/225618">Legea nr. 54/2020</A>, cu modificările ulterioare, se introduc patru noi alineate, alineatele (7)-(10), cu următorul cuprins:<span class="S_CIT"><span class="S_ALN" style="display: block; color:black;" id="id_litA136"><span class="S_ALN_TTL" id="id_litA136_ttl" onMouseOver="marcheaza(id_litA136_ttl,id_litA136)" onMouseOut="demarcheaza(id_litA136_ttl,id_litA136)" onMouseDown="plusMinus(id_litA136_short,id_litA136_bdy)">(7)<!----></span> <span class="S_ALN_BDY" id="id_litA136_bdy"> Pentru definitivarea impozitului pe profit aferent anului fiscal prin declarația anuală privind impozitul pe profit, bonificația aplicată potrivit prevederilor prezentului articol se scade din valoarea impozitului pe profit aferent anului fiscal, iar în cazul în care bonificația depășește valoarea impozitului pe profit aferent anului fiscal, suma aferentă bonificației care se ia în calcul este la nivelul valorii impozitului respectiv. În sensul prezentului alineat, valoarea impozitului pe profit aferent anului fiscal reprezintă impozitul pe profit după scăderea creditului fiscal extern, impozitului pe profit scutit sau redus, sumelor reprezentând sponsorizare și/sau mecenat, burse private, în limita prevăzută de lege, reducerii conform <A href="~/../../../Public/DetaliiDocumentAfis/195916">Ordonanței Guvernului nr. 23/2017</A> privind plata defalcată a TVA, costului de achiziție al aparatelor de marcat electronice fiscale.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA137"><span class="S_ALN_TTL" id="id_litA137_ttl" onMouseOver="marcheaza(id_litA137_ttl,id_litA137)" onMouseOut="demarcheaza(id_litA137_ttl,id_litA137)" onMouseDown="plusMinus(id_litA137_short,id_litA137_bdy)">(8)<!----></span> <span class="S_ALN_BDY" id="id_litA137_bdy"> Pentru aplicarea prevederilor alin. (1)-(3), în cazul contribuabililor cu anul fiscal modificat care aplică sistemul trimestrial de declarare și plată a impozitului pe profit, precum și în cazul celor cu anul fiscal modificat care intră sub incidența prevederilor <A href="~/../../../Public/DetaliiDocumentAfis/228099">art. 41 alin. (10) din Legea nr. 227/2015</A>, cu modificările și completările ulterioare, diferența de impozit pe profit datorat determinată la definitivarea impozitului pe profit aferent anului fiscal se consideră impozit pe profit datorat aferent ultimului trimestru. Acestor contribuabili li se aplică prevederile alin. (1)-(3) pentru diferența de impozit pe profit datorat, determinată la definitivarea impozitului pe profit aferent anului fiscal. Prevederile prezentului alineat se aplică și pentru diferența de impozit pe profit datorat, determinată la definitivarea impozitului pe profit aferent anului fiscal, dacă aceasta este plătită până la termenul scadent cuprins în perioada 26 decembrie 2020-25 februarie 2021 inclusiv.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA138"><span class="S_ALN_TTL" id="id_litA138_ttl" onMouseOver="marcheaza(id_litA138_ttl,id_litA138)" onMouseOut="demarcheaza(id_litA138_ttl,id_litA138)" onMouseDown="plusMinus(id_litA138_short,id_litA138_bdy)">(9)<!----></span> <span class="S_ALN_BDY" id="id_litA138_bdy"> Contribuabilii prevăzuți la alin. (8) care au depus declarația privind impozitul pe profit fără aplicarea bonificațiilor prevăzute la alin. (1)-(3) pot beneficia de acestea, pentru diferența de impozit pe profit datorat determinată la definitivarea impozitului pe profit aferent anului fiscal respectiv, prin depunerea unei declarații rectificative, cu respectarea condițiilor prevăzute în cadrul acestor alineate.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA139"><span class="S_ALN_TTL" id="id_litA139_ttl" onMouseOver="marcheaza(id_litA139_ttl,id_litA139)" onMouseOut="demarcheaza(id_litA139_ttl,id_litA139)" onMouseDown="plusMinus(id_litA139_short,id_litA139_bdy)">(10)<!----></span> <span class="S_ALN_BDY" id="id_litA139_bdy"> În sensul prevederilor prezentului articol, bonificația se acordă și pentru impozitul pe profit datorat trimestrial/plata anticipată trimestrială, care se stinge cu impozitul pe profit de recuperat din anii fiscali precedenți. Aceste prevederi se aplică și pentru stingerile efectuate pentru impozitul pe profit datorat trimestrial/plata anticipată trimestrială aferente trimestrelor I și II ale anului 2020, respectiv pentru cele aferente perioadelor scadente prevăzute la alin. (2) pentru contribuabilii cu anul fiscal modificat, cu impozitul pe profit de recuperat din anii fiscali precedenți. De aceste prevederi pot beneficia și contribuabilii care au depus declarația privind impozitul pe profit datorat trimestrial/plata anticipată trimestrială aferentă trimestrelor I și/sau II ale anului 2020, respectiv pentru perioadele scadente prevăzute la alin. (2) pentru contribuabilii cu anul fiscal modificat, fără aplicarea bonificațiilor prevăzute la alin. (1)-(3), prin depunerea unei declarații rectificative și cu respectarea condițiilor prevăzute în cadrul acestor alineate.</span></span></span><!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA140" name="id_artA140"><span class="TAG_COLLAPSED" id="id_cllpsdA140" onMouseOver="marcheaza(id_cllpsdA140,id_artA140)" onMouseOut="demarcheaza(id_cllpsdA140,id_artA140)" onMouseDown="plusMinus(id_artA140_bdy,id_cllpsdA140)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA140_ttl" onMouseOver="marcheaza(id_artA140_ttl,id_artA140)" onMouseOut="demarcheaza(id_artA140_ttl,id_artA140)" onMouseDown="plusMinus(id_artA140_bdy,id_cllpsdA140)">Articolul III</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA140_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA141"><span class="S_ALN_TTL" id="id_litA141_ttl" onMouseOver="marcheaza(id_litA141_ttl,id_litA141)" onMouseOut="demarcheaza(id_litA141_ttl,id_litA141)" onMouseDown="plusMinus(id_litA141_short,id_litA141_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA141_bdy"> Începând cu data intrării în vigoare a prezentei ordonanțe de urgență se suspendă extragerile lunare și ocazionale ale Loteriei bonurilor fiscale organizate în baza <A href="~/../../../Public/DetaliiDocumentAfis/205518">Ordonanței Guvernului nr. 10/2015</A> pentru organizarea Loteriei bonurilor fiscale, aprobată cu modificări și completări prin <A href="~/../../../Public/DetaliiDocumentAfis/169151">Legea nr. 166/2015</A>, cu completările ulterioare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA142"><span class="S_ALN_TTL" id="id_litA142_ttl" onMouseOver="marcheaza(id_litA142_ttl,id_litA142)" onMouseOut="demarcheaza(id_litA142_ttl,id_litA142)" onMouseDown="plusMinus(id_litA142_short,id_litA142_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA142_bdy"> Extragerile Loteriei bonurilor fiscale se reiau în termen de 90 de zile de la data încetării stării de alertă/urgență, după caz.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA143" name="id_artA143"><span class="TAG_COLLAPSED" id="id_cllpsdA143" onMouseOver="marcheaza(id_cllpsdA143,id_artA143)" onMouseOut="demarcheaza(id_cllpsdA143,id_artA143)" onMouseDown="plusMinus(id_artA143_bdy,id_cllpsdA143)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA143_ttl" onMouseOver="marcheaza(id_artA143_ttl,id_artA143)" onMouseOut="demarcheaza(id_artA143_ttl,id_artA143)" onMouseDown="plusMinus(id_artA143_bdy,id_cllpsdA143)">Articolul IV</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA143_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA144"><A href="~/../../../Public/DetaliiDocumentAfis/227328">După articolul 70</A> din <A href="~/../../../Public/DetaliiDocumentAfis/227328">Legea nr. 207/2015 privind Codul de procedură fiscală</A>, publicată în Monitorul Oficial al României, Partea I, nr. 547 din 23 iulie 2015, cu modificările și completările ulterioare, se introduce un nou articol, articolul 70^1, cu următorul cuprins:<span class="S_CIT"><span class="S_ART" style="display: block; color:black;" id="id_artA146" name="id_artA146"><span class="TAG_COLLAPSED" id="id_cllpsdA146" onMouseOver="marcheaza(id_cllpsdA146,id_artA146)" onMouseOut="demarcheaza(id_cllpsdA146,id_artA146)" onMouseDown="plusMinus(id_artA146_bdy,id_cllpsdA146)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA146_ttl" onMouseOver="marcheaza(id_artA146_ttl,id_artA146)" onMouseOut="demarcheaza(id_artA146_ttl,id_artA146)" onMouseDown="plusMinus(id_artA146_bdy,id_cllpsdA146)">Articolul 70^1</span><span class="S_ART_DEN"> Modalitatea de colaborare<!----></span><span class="S_ART_BDY" id="id_artA146_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA148"><span class="S_ALN_TTL" id="id_litA148_ttl" onMouseOver="marcheaza(id_litA148_ttl,id_litA148)" onMouseOut="demarcheaza(id_litA148_ttl,id_litA148)" onMouseDown="plusMinus(id_litA148_short,id_litA148_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA148_bdy"> Furnizarea de informații și documente între Ministerul Finanțelor Publice/A.N.A.F și autoritățile publice, instituțiile publice și de interes public din administrația publică centrală și locală, precum și alte persoane juridice de drept privat, în temeiul prezentului cod sau al altor acte normative, se realizează, în formă dematerializată, prin mijloace electronice utilizând sistemul informatic propriu al Ministerului Finanțelor Publice/A.N.A.F, denumit PatrimVen.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA149"><span class="S_ALN_TTL" id="id_litA149_ttl" onMouseOver="marcheaza(id_litA149_ttl,id_litA149)" onMouseOut="demarcheaza(id_litA149_ttl,id_litA149)" onMouseDown="plusMinus(id_litA149_short,id_litA149_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA149_bdy"> PatrimVen este un depozit de date în care sunt colectate și agregate date obținute de Ministerul Finanțelor Publice/A.N.A.F, în condițiile legii, de la autoritățile/instituțiile publice și de interes public, din administrația publică centrală și locală ori de la contribuabili/plătitori și care sunt puse la dispoziția autorităților publice, instituțiilor publice și de interes public din administrația publică centrală și locală, precum și altor persoane juridice de drept privat, în beneficiul cetățenilor și în scopul realizării atribuțiilor stabilite de normele juridice care reglementează activitatea instituțiilor, autorităților ori persoanelor juridice de drept privat care primesc respectivele informații și/sau documente.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA150"><span class="S_ALN_TTL" id="id_litA150_ttl" onMouseOver="marcheaza(id_litA150_ttl,id_litA150)" onMouseOut="demarcheaza(id_litA150_ttl,id_litA150)" onMouseDown="plusMinus(id_litA150_short,id_litA150_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA150_bdy"> Prin excepție de la prevederile alin. (1), la solicitarea autorităților judiciare ori în situația în care, din motive tehnice, informațiile sau documentele nu pot fi furnizate prin PatrimVen, acestea se pot transmite în format letric sau pe dispozitive/suporturi de stocare a datelor.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA151"><span class="S_ALN_TTL" id="id_litA151_ttl" onMouseOver="marcheaza(id_litA151_ttl,id_litA151)" onMouseOut="demarcheaza(id_litA151_ttl,id_litA151)" onMouseDown="plusMinus(id_litA151_short,id_litA151_bdy)">(4)<!----></span> <span class="S_ALN_BDY" id="id_litA151_bdy"> Procedura de înrolare, precum și modalitățile de acces în PatrimVen se aprobă prin ordin al ministrului finanțelor publice.</span></span></span></span></span><!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA152" name="id_artA152"><span class="TAG_COLLAPSED" id="id_cllpsdA152" onMouseOver="marcheaza(id_cllpsdA152,id_artA152)" onMouseOut="demarcheaza(id_cllpsdA152,id_artA152)" onMouseDown="plusMinus(id_artA152_bdy,id_cllpsdA152)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA152_ttl" onMouseOver="marcheaza(id_artA152_ttl,id_artA152)" onMouseOut="demarcheaza(id_artA152_ttl,id_artA152)" onMouseDown="plusMinus(id_artA152_bdy,id_cllpsdA152)">Articolul V</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA152_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA153">Sumele prevăzute la <A href="~/../../../Public/DetaliiDocumentAfis/229203">art. 24 lit. b)</A> și <A href="~/../../../Public/DetaliiDocumentAfis/229203">c) din Ordonanța de urgență a Guvernului nr. 135/2020</A> cu privire la rectificarea bugetului de stat pe anul 2020, modificarea unor acte normative și stabilirea unor măsuri bugetare se repartizează pe județe și unități administrativ-teritoriale prin hotărâre a Guvernului inițiată de Ministerul Finanțelor Publice, astfel cum au fost acestea fundamentate.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA154" name="id_artA154"><span class="TAG_COLLAPSED" id="id_cllpsdA154" onMouseOver="marcheaza(id_cllpsdA154,id_artA154)" onMouseOut="demarcheaza(id_cllpsdA154,id_artA154)" onMouseDown="plusMinus(id_artA154_bdy,id_cllpsdA154)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA154_ttl" onMouseOver="marcheaza(id_artA154_ttl,id_artA154)" onMouseOut="demarcheaza(id_artA154_ttl,id_artA154)" onMouseDown="plusMinus(id_artA154_bdy,id_cllpsdA154)">Articolul VI</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA154_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA155">Prevederile <span class="S_LGI">art. I</span> intră în vigoare începând cu data de 1 ianuarie 2021 și se aplică pentru perioada 2021-2025.<!----></span></span></span><span class="S_SMN"><br /><span class="S_SMN_PAR">PRIM-MINISTRU<!----></span><br /><span class="S_SMN_PAR">LUDOVIC ORBAN<!----></span><br /><span class="S_SMN_PAR">Contrasemnează:<!----></span><br /><span class="S_SMN_PAR">Ministrul finanțelor publice,<!----></span><br /><span class="S_SMN_PAR">Vasile-Florin Cîțu<!----></span><br /><span class="S_SMN_PAR">Ministrul economiei, energiei și mediului de afaceri,<!----></span><br /><span class="S_SMN_PAR">Virgil-Daniel Popescu<!----></span></span><span class="S_PAR" style="display: block; color:black;" id="id_parA163">București, 3 septembrie 2020.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA164">Nr. 153.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA178">-----<!----></span>
+                                    </div>
+                                    <div id="div_Formerepublicate" class="content_forma_act" style="display: none" data-state="empty"></div>
+                                    <div id="div_Formadebaza" class="content_forma_act" style="display: none" data-state="empty"></div>
+
+
+                        </div>
+
+                        <div id="fisa_act_container" style="display: none" data-id="FisaAct" data-state="empty">
+                                <div id="div_Actiunisuferite" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_ActiuniInduse" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_Referape" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_Referitde" class="content_fisa_act" data-state="empty">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+ 
+<script type="text/javascript">
+    if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+        $("#meniu").css("float", "left");
+        $("#meniu").css("width", "20%");
+        $(".affix-top").css("position", "fixed");
+        $(".affix-top").css("top", "20px");
+        $(".affix-bottom").css("top", "20px");
+        $("#infoactinfoact").css("float", "right");
+        $("#infoactinfoact").css("width", "79%");
+        //var naturalWidth = img.naturalWidth;
+        //var imagini = document.getElementsByTagName("img");
+        //for (i=0;i<imagini.length;i++)
+        //{
+         //   alert(imagini[i].naturalWidth);
+         //   imagini[i].setAttribute("style","max-width:"+imagini[i].naturalWidth+"px");
+       // }
+       //////$("#infoactinfoact img").css("max-width", +"px");
+        /////alert($("#infoactinfoact img").width);
+        $("#infoactinfoact img").css("width", "auto");
+         
+        
+ 
+    }
+    var sbarHeight = null;
+
+    $(function () {
+
+        if (document.getElementsByClassName("alert")[0])
+            document.getElementsByClassName("alert")[0].style.visibility = 'hidden';
+
+        document.getElementById("Actiunisuferite").checked = false;
+        document.getElementById("ActiuniInduse").checked = false;
+        document.getElementById("Referape").checked = false;
+        document.getElementById("Referitde").checked = false;
+
+        //alert(document.getElementById("header_wrapper").offsetHeight);
+        //alert(screen.height);
+
+        var inaltime_meniu_stanga = screen.height - document.getElementById("header_wrapper").offsetHeight;
+        //alert(inaltime_meniu_stanga);
+        //  document.getElementById("meniu_stanga").style.maxHeight = inaltime_meniu_stanga + "px";
+
+        if (window.location.href.indexOf("forma_de_baza") != -1) {
+            document.getElementById("Formadebaza").style.disabled = true;
+            document.getElementById("Formadebaza").nextSibling.style.disabled = true;
+        }
+
+        if (window.location.href.indexOf("isFormaDeBaza") != -1) {
+            if (document.getElementById('istoric_fa'))
+                document.getElementById('istoric_fa').style.display = 'none'
+            document.getElementById("Formadebaza").checked = true;
+        }
+
+        if (window.location.href.indexOf("#A") != -1) {
+            var id_elem = window.location.href.split("#")[1];
+            window.scrollTo(id_elem.offsetHeight, 0);
+        }
+        else
+            window.scrollTo(0, 0);
+
+        //alert(document.getElementById('menu'));
+
+        //afisare/ascundere radio buttons (forme consolidate, forme republicate, forma de baza)
+
+        if (window.innerWidth < 1010) {
+            document.getElementById('sidebar').id = 'sidebar1';
+            document.getElementById('meniutitlu').appendChild(document.getElementById('sidebar1'));
+            document.getElementById('sidebar1').style.display = 'block';
+        }
+
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        && location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - 0 //offsets for fixed header
+                    }, 50);
+                    return false;
+                }
+            }
+        });
+        //Executed on page load with URL containing an anchor tag.
+        if ($(location.href.split("#")[1])) {
+            var target = $('#' + location.href.split("#")[1]);
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 0 //offset height of header here too.
+                }, 50);
+                return false;
+            }
+        }
+        /*
+        $("#sidebar").affix({
+            offset: {
+                top: $("header").outerHeight(true),
+                bottom: $("footer").outerHeight(true)+10
+            }
+        });
+        */
+        //alert(inaltimediv);
+        //document.getElementsByClassName('meniuaffix')[0].style.maxHeight = inaltimediv + "px";
+      $(window).resize(function () {
+            doResizeMenu();
+        });
+        
+        // scroll pe meniu la incarcare pagina (onload jQuery)
+      doResizeMenu();
+      imgSIZE(); // redim poze
+
+      // inaltime initiala sidebar
+      if ($("#sidebar").html())
+          sbarHeight = $("#sidebar").height();
+      else
+          sbarHeight = $("#sidebar1").height();
+        
+      $(window).scroll(function () {
+          if (isScrolledIntoView($(".footer_logo"))) {
+              $("#sidebar").height(sbarHeight - 200);
+          }
+          else {
+              $("#sidebar").height(sbarHeight);
+          }
+      });
+
+      var _tipact = 2;
+        //alert(_tipact);
+        if ((_tipact == 3 || _tipact == 2) && window.location.href.indexOf('isFormaDeBaza') == -1)
+        {
+            if (document.getElementById('Formaconsolidata'))
+            {
+                document.getElementById('Formaconsolidata').checked = true;
+            }
+        }        
+        else
+        {
+            //republicare
+            if (_tipact == 4)
+            {
+                if (document.getElementById('Formerepublicate'))
+                {
+                    document.getElementById('Formerepublicate').checked = true;
+                }
+                else if (document.getElementById('Formadebaza'))
+                {
+                    document.getElementById('Formadebaza').checked = true;
+                }
+            }
+            else
+                if (document.getElementById('Formadebaza'))
+                {
+                    document.getElementById('Formadebaza').checked = true;
+                }
+        }
+        //republicata (fortez forma de baza)
+        if (_tipact == 5)
+        {
+            if (document.getElementById('Formaconsolidata'))
+            {
+                document.getElementById('Formaconsolidata').checked = true;
+            }
+        }
+
+    }); // onload jQuery END
+
+    function doResizeMenu() {
+        var proc = 65;
+        var wh = window.innerHeight;
+        var dy = Math.floor(proc*wh/100);
+        var inaltimediv = window.innerHeight;
+        //var inaltimediv = window.innerHeight - $('#header_footer').height() - 400; // $("#footer_wrapper").height();
+        var inaltimediv1 = window.innerHeight - $('#header_wrapper').height();
+        
+        $("#sidebar").height(dy);
+        $("#sidebar1").height(inaltimediv1);
+    }
+
+    function AfiseazaTextModificat(e) {
+        // console.log($(e).prop("checked"));
+    }
+    function toggle_cuprins() {
+        if (document.getElementById('tree_cuprins_act').style.display != 'none')
+            document.getElementById('tree_cuprins_act').style.display = 'none'
+        else
+            document.getElementById('tree_cuprins_act').style.display = 'block';
+    }
+
+    function toggle_fisaact() {
+        if (document.getElementById('content_fisaact').style.display != 'none') {
+            document.getElementById('label_fisaact_plus_minus').innerHTML = '+';
+            document.getElementById('content_fisaact').style.display = 'none'
+        }
+        else {
+            document.getElementById('label_fisaact_plus_minus').innerHTML = '&#8212;&#160;';
+            document.getElementById('content_fisaact').style.display = 'block';
+        }
+    }
+
+    function toggle_istoric_forme_actz() {
+        if (document.getElementById('istoric_fa').style.display != 'none') {
+            document.getElementById('istoric_fa').style.display = 'none';
+            document.getElementById('label_forme_actz').innerHTML = "&nbsp;&nbsp;&nbsp;+&nbsp;istoric consolidari";
+        }
+        else {
+            document.getElementById('istoric_fa').style.display = 'block';
+            document.getElementById('label_forme_actz').innerHTML = "&nbsp;&nbsp;&nbsp;&#8212;&nbsp;istoric consolidari";
+        }
+    }
+    function scroll_to_fa() {
+        if (document.getElementById('fa_selectata'))
+            document.getElementById('meniu_stanga').scrollTop = document.getElementById('fa_selectata').offsetTop;
+    }
+    function ArataFisaAct(elem) {
+        //alert(elem.id);
+        if (elem.id == 'Actiunisuferite')
+        {
+            if (document.getElementById('actiuni_suferite').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/actiuniSuferite", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('actiuni_suferite').style.height = '30px';
+                    document.getElementById('actiuni_suferite').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('actiuni_suferite').style.display == 'none')
+                document.getElementById('actiuni_suferite').style.display = 'block';            
+            else
+                document.getElementById('actiuni_suferite').style.display = 'none';
+            
+        }
+
+        if (elem.id == 'ActiuniInduse')
+        {
+            if (document.getElementById('actiuni_induse').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/actiuniInduse", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('actiuni_induse').style.height = '30px';
+                    document.getElementById('actiuni_induse').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('actiuni_induse').style.display == 'none')
+                document.getElementById('actiuni_induse').style.display = 'block';
+            else
+                document.getElementById('actiuni_induse').style.display = 'none';
+        }
+
+        if (elem.id == 'Referape')
+        {
+            if (document.getElementById('refera_pe').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/referaPe", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('refera_pe').style.height = '30px';
+                    document.getElementById('refera_pe').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('refera_pe').style.display == 'none')
+                document.getElementById('refera_pe').style.display = 'block';
+            else
+                document.getElementById('refera_pe').style.display = 'none';
+        }
+
+        if (elem.id == 'Referitde')
+        {
+            if (document.getElementById('referit_de').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/referitDe", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('referit_de').style.height = '30px';
+                    document.getElementById('referit_de').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('referit_de').style.display == 'none')
+                document.getElementById('referit_de').style.display = 'block';
+            else
+                document.getElementById('referit_de').style.display = 'none';
+        }
+        window.scrollTo(0, 0);
+
+    }
+    function alege_articol(tip, select) {
+        var element_selectat = select.options[select.selectedIndex].text;
+        var id_elem = '';
+
+        if (tip == 1)
+            id = "actiuni_suferite";
+        else if (tip == 2)
+            id = "actiuni_induse";
+        else if (tip == 3)
+            id = "refera_pe";
+        else
+            id = "referit_de";
+
+        var linii_tabel = document.getElementById(id).childNodes[4].childNodes[0].childNodes;
+
+        if (element_selectat == 'Toate sectiunile')
+            for (i = 0; i < linii_tabel.length; i++) {
+                linii_tabel[i].style.display = 'table-row';
+            }
+        else {
+            linii_tabel[0].style.display = 'table-row';
+            for (i = 1; i < linii_tabel.length; i++) {
+                var element_gasit = linii_tabel[i].childNodes[0].innerHTML;
+                if (element_selectat != element_gasit)
+                    linii_tabel[i].style.display = 'none';
+                else
+                    linii_tabel[i].style.display = 'table-row';
+            }
+        }
+    }
+
+    function alege_articol_ref(select) {
+        var element_selectat = select.options[select.selectedIndex].text;
+
+        $("#loaderDiv").show();
+        $.post("/Public/getReferitDe", { contor: document.getElementById('id_act').value, element: element_selectat }, function (result) {
+            if (result.acte.indexOf('Nu exist') != -1)
+                document.getElementById('referit_de').style.height = '30px';
+            document.getElementById('referit_de').innerHTML = result.acte;
+            $("#loaderDiv").hide();
+        });
+
+    }
+
+    function incarcaFormaDeBaza(contor) {
+        $.post("/Public/DetaliiDocument/229768", { isFormaDeBaza: true }, function (result) {
+            window.location.href = result.Url;
+        });
+    }
+    function myFunction() {
+        var latime = window.innerWidth;
+        if (latime < 1010) {
+            if (document.getElementById('sidebar')) {
+                document.getElementById('meniutitlu').appendChild(document.getElementById('sidebar'));
+                document.getElementById('sidebar').style.display = 'block';
+                // $("#sidebar").hide(); // display : none
+                // $("#sidebar").show(); // display : default
+                document.getElementById('sidebar').id = 'sidebar1';
+            }
+        }
+        else {
+            if (document.getElementById('sidebar1')) {
+                document.getElementById('meniu').insertBefore(document.getElementById('sidebar1'), document.getElementById('infoact'));
+                document.getElementById('sidebar1').style.display = 'block';
+                document.getElementById('sidebar1').id = 'sidebar';
+                setTimeout(function () { $("#sidebar").height(sbarHeight); }, 1000);
+                
+            }
+            else {
+                document.getElementById('meniu').insertBefore(document.getElementById('sidebar'), document.getElementById('infoact'));
+                document.getElementById('sidebar').style.display = 'block';
+                //document.getElementById('sidebar').id = 'sidebar';
+            }
+        }
+    }
+    //document.getElementById('menu').appendChild(document.getElementById('sidebar'));
+    //document.getElementById('sidebar').style.display = 'inline';
+    //document.getElementById('sidebar').style.zIndex = '999';
+    window.onresize = myFunction;
+
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    $(document).ready(function () {
+        doResizeMenu();
+    });
+    $(window).resize(function () {
+        doResizeMenu();
+    });
+</script>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+            <div class="clear"></div>
+ 
+        </div>
+        <footer>
+            <div id="footer_wrapper">
+                <div class="footer_wrapper_inner bs-docs-footer">
+                    <div class="footer_inner">
+                        <div class="footer_logo"></div>
+                        <ul class="top_menu">
+                            <li class="floatnone" style="margin-left: -70px;">
+                                <center>
+                                    <div style="max-width:1024px;">
+                                        <br /><img src="/Content/Images/Site/justitie_logo.png" style="max-width:90px; position:relative; z-index:9999; width:100%; margin-top:-35px;" align="left" alt="logo" />
+                                        <p style="text-transform:none;">Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României.</p>
+                                        <br />
+                                        <center><p style="text-transform:none;">Pentru informații detaliate despre celelalte programe cofinanțate de Uniunea Europeană, vă invităm să vizitați <a onmouseover="this.style.color = '#386897'" onmouseout="    this.style.color = '#ffffff'" style="color: #ffffff; font-weight:bold;" href="http://www.fonduri-ue.ro">www.fonduri-ue.ro</a>.</p></center>
+                                    </div>
+                                </center>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_inner">
+                        <div class="copyright left">
+                            Copyright &copy; 2021 - Ministerul Justiției. Toate drepturile rezervate. - <a href="/Public/Termeni">Termeni și Condiții</a>
+                            <div id="meniufooter">
+
+                            </div>
+                        </div>
+                        <div class="copyright right">        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/Acasa">
+
+    &nbsp;&#124;&nbsp;Acasă
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/NLEX">
+
+    &nbsp;&#124;&nbsp;Despre Proiect
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/Functionalitati">
+
+    &nbsp;&#124;&nbsp;Facilități Oferite 
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/LegaturiUtile">
+
+    &nbsp;&#124;&nbsp;Legături Utile
+
+</a>
+        </li>
+
+
+</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.toggle-menu').jPushMenu();
+
+                $('ul.mainmenu li.dropdown').hover(function () {
+                    $(this).find('a.main_link').addClass('active');
+                    $(this).find('.level2_menu').show();
+                    $('li.dropdown_2').hover(function () {
+                        $(this).find('a.second_link').addClass('second_active');
+                        $(this).find('.level3_menu').show();
+
+                    }, function () {
+                        $(this).find('a.second_link').removeClass('second_active');
+                        $('.level3_menu').hide();
+                    });
+
+                }, function () {
+                    $(this).find('a.main_link').removeClass('active');
+                    $('.level2_menu').hide();
+                });
+    
+                if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+
+                    $('#mesajIe8Modal').modal('show');
+
+                }
+            });
+            //
+
+
+
+            $(document).ready(function () {
+
+
+                //stick in the fixed 100% height behind the navbar but don't wrap it
+                $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
+
+                $('#slide-nav.navbar-default').after($('<div id="navbar-height-col"></div>'));
+
+                // Enter your ids or classes
+                var toggler = '.navbar-toggle';
+                var pagewrapper = '#page-content';
+                var navigationwrapper = '.navbar-header';
+                var menuwidth = '100%'; // the menu inside the slide menu itself
+                var slidewidth = '60%';
+                var menuneg = '-100%';
+                var slideneg = '-60%';
+
+
+                $("#slide-nav").on("click", toggler, function (e) {
+
+                    var selected = $(this).hasClass('slide-active');
+
+                    $('#slidemenu').stop().animate({
+                        left: selected ? menuneg : '0px'
+                    });
+
+                    $('#navbar-height-col').stop().animate({
+                        left: selected ? slideneg : '0px'
+                    });
+
+                    $(pagewrapper).stop().animate({
+                        left: selected ? '0px' : slidewidth
+                    });
+
+                    $(navigationwrapper).stop().animate({
+                        left: selected ? '0px' : slidewidth
+                    });
+
+
+                    $(this).toggleClass('slide-active', !selected);
+                    $('#slidemenu').toggleClass('slide-active');
+
+
+                    $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+
+
+                });
+
+
+                var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+
+
+                $(window).on("resize", function () {
+
+                    if ($(window).width() > 1010 && $('.navbar-toggle').is(':hidden')) {
+                        $(selected).removeClass('slide-active');
+                    }
+
+
+                });
+
+
+            });
+        </script>
+        
+    </div>
+    <script>
+
+        function replaceScript() {
+            var toReplace = '<a href="javascript:;">Proiect</a>';
+            var replaceWith = '';
+            document.body.innerHTML = document.body.innerHTML.replace(toReplace, replaceWith);
+        }
+        replaceScript();
+
+        if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+            $("#toTop").hide();
+            $(".meniunu").hide();
+            $(".icon-bar").hide();
+            $("#btnNavbar").hide();
+            $(".navbar-header").hide();
+            $("body").css("min-width", "600px");
+
+        }
+
+       /* if (navigator.appName.indexOf("Netscape") != -1) {
+            $("#page_wrapper").css("transform", "scale(0.8)");
+            alert(0);
+            $("#page_wrapper").css("transform-origin", "50% 0% ");
+        }*/
+    </script>
+    
+    <!-- BETA Mesaj -->
+    <div class="modal fade" id="mesajBetaModal" tabindex="-1" role="dialog" aria-labelledby="mesajBetaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 700px; margin: 5% auto; ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Inchide</span></button>
+                    <br /><div class="alert alert-danger" role="alert"> <center>Versiune Beta</center></div>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        A fost lansata versiunea Beta a Portalului Legislativ<br /><br /><br />
+                    Fiind o versiune Beta, este posibil ca unele facilitati sa nu functioneze in mod corect.</center>  
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Inchide mesajul de atentionare</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- IE8 Mesaj -->
+    <div class="modal fade" id="mesajIe8Modal" tabindex="-1" role="dialog" aria-labelledby="mesajIe8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 700px; margin: 5% auto; ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Inchide</span></button>
+                    <br /><div class="alert alert-danger" role="alert"> <center>Datorita faptului ca folositi o versiune de Internet Explorer (Internet Explorer 8) foarte veche este posibil ca unele functionalitati sa fie dezactivate sau sa nu functioneze corect!</center></div>
+                </div>
+                <div class="modal-body">
+                    <div style="width:100%;">
+                        <div style="width:50%; float:left; text-transform:uppercase;">
+                            <span style="font-size:18px; font-weight:bold; text-transform:none;">Ce browser sa aleg?</span>
+                            <br /><br /><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/chrome.jpg" align="left" width="69" style="padding-right:10px;" /><b>Google Chrome</b><br />
+                                <br /><a href="http://www.google.com/chrome" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/firefox.jpg" align="left" width="69" style="padding-right:10px;" /><b>Mozilla Firefox</b><br />
+                                <br /><a href="https://www.mozilla.org/en-US/firefox/all/?q=romania" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/ie.jpg" align="left" width="69" style="padding-right:10px;" /><b>Internet Explorer</b><br />
+                                <br />
+                                <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/safari.jpg" align="left" width="69" style="padding-right:10px;" /><b>Apple Safari</b><br />
+                                <br /><a href="http://www.apple.com/safari/" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div>
+                        </div>
+                        <div style="width:50%; float:left;">
+                            <span style="font-size:18px; font-weight:bold;">De ce sa actualizez browserul?</span>
+                            <br /><br /><br />
+                            Browserele invechite, cum ar fi Internet Explorer 8 (lansat în 2001) nu respecta standardele web, nu ofera unele facilitati noi browser-ului, cum ar fi de navigatie sau descarcare, managerul de tab-uri, si au probleme de securitate.
+                            <br /><br />
+                            Aceasta afecteaza, de asemenea, calitatea de redare site-uri web.
+                            <br /><br /><br />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Inchide mesajul de atentionare</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

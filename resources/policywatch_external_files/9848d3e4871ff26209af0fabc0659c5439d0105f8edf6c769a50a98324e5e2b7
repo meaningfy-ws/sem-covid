@@ -1,0 +1,1146 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>HOTARARE             677 14/08/2020 - Portal Legislativ</title>
+    <link href="/Content/css?v=iKXncnEnzeZrcZDXQ4gyEFYtrgIhK9GqKaiZ1xjeUOQ1" rel="stylesheet"/>
+
+    <link href="/Content/themes/base/css?v=7T_tuS9RP8sQe2HxerJdL6STYU-qCHtjrExyjsSiYcQ1" rel="stylesheet"/>
+
+    <meta name="keywords" content="HOTARARE             677 14/08/2020 - Portal Legislativ">
+    <meta name="description" content="HOTARARE             677 14/08/2020 - Portal Legislativ">
+    <meta name="title" content="HOTARARE             677 14/08/2020 - Portal Legislativ">
+    <link href="/Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/Content/Images/Site/temanoua/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/Content/public.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="/bundles/modernizr?v=qVODBytEBVVePTNtSFXgRX0NCEjh9U_Oj8ePaSiRcGg1"></script>
+
+    <script src="/bundles/jquery?v=UgyEMAYOuSB9Bb6HcOEVHpd6fIIp54yF086SRNVcdIY1"></script>
+
+    <script src="/bundles/jqueryui?v=O4Awnx3xYnFLmC1TAsxXigS8kLERW18heIHqD0bRSTE1"></script>
+
+    <script src="/bundles/bootstrap?v=WyYa2dIFje-38fhrXc_sQiaOB-lu9j8r45bVIBgtqrw1"></script>
+
+    <script type="text/javascript" language="JavaScript">
+        var backColor = '#f0ffff';
+        var actColor = 'white';
+        var brdColor = 'black';
+        function marcheaza(id_ttl, id) {
+            /*id.style.backgroundColor=backColor;
+            id_ttl.style.cursor='pointer';
+            id.style.borderColor=brdColor;
+            id.style.borderStyle='dashed';*/
+        }
+        function demarcheaza(id_ttl, id) {
+            /*id.style.backgroundColor='transparent';
+            id_ttl.style.cursor='default';
+            id.style.borderColor=actColor;
+            id.style.borderStyle='dotted';*/
+        }
+        function plusMinus(id1, id2) {
+            if (id1.style.display == 'none') {
+                id1.style.display = 'inline';
+                id2.style.display = 'none';
+            }
+            else {
+                id1.style.display = 'none';
+                id2.style.display = 'inline';
+            }
+        }
+        function setCursor(id, tipCursor) {
+            id.style.cursor = tipCursor;
+        }
+    </script>
+    <script>
+        function pozitioneaza(id) {
+            var id_nou = id.substring(0, id.length - 4);
+           //document.getElementById('toTop').click();
+            $("#toTop").trigger("click");
+ 
+        }
+ 
+
+    </script>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix-nav" data-twttr-rendered="true">
+    <a name="top"></a>
+
+
+    <div id="toTop" class="toggle-menu menu-left"><a class="toggle-menu menu-left"><img src="/Content/Images/Site/temanoua/butonmeniu.png" alt="logo" /></a> </div>
+    <div id="masterwrapper page-content">
+        <div id="header_wrapper" class="navbar navbar-default">
+            <!--navbar-fixed-top-->
+            <header>
+                <div id="header">
+                    <div class="header_top">
+                        <div class="banner">
+                            <div class="row">
+                                <img class="img-responsive center-block pozawidth" id="logoportal" src="/Content/Images/Site/header_logo.png" style="width:85%;" alt="logo" />
+                            </div>
+                        </div>
+                        <div class="row margin0" id="textlogo">
+                            <center>
+                                <h4 class="reducerespatiu logo">Portal Legislativ</h4>
+
+                            </center>
+                            <!-- <div style="float:right; position:relative; right:0; margin-top:-23px;">
+                                <a data-toggle="modal" data-target="#mesajBetaModal" style="cursor:pointer;">
+                                    <img width="50" src="/Content/Images/Site/versiunebeta.png" alt="Versiune Beta 2.0" />
+                                </a>
+                            </div>-->
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="menu_wrapper navbar navbar-inverse" role="navigation" id="slide-nav">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a id="btnNavbar" class="navbar-toggle">
+                                    <span class="sr-only">Meniu</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </a>
+
+                            </div>
+                            <div id="slidemenu" style="cursor:pointer;">
+                                <div id="menu" onclick="pozitioneaza('')">
+                                    <a style=" cursor:pointer;" onclick="pozitioneaza('')">
+                                        <h3>Meniu</h3>
+                                    </a>
+                                    <ul></ul>
+                                    <ul class="mainmenu">
+ 
+        <li>
+            <a href="/Public/Acasa" class="main_link">
+
+                Acasă
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/NLEX" class="main_link">
+
+                Despre Proiect
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/Functionalitati" class="main_link">
+
+                Facilități Oferite 
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/LegaturiUtile" class="main_link">
+
+                Legături Utile
+
+            </a>
+        </li>
+
+
+             
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </header>
+            <div class="meniunu">
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+                    <h3 style="padding-left:65px; margin-top:-5px;">Meniu</h3>
+                    <div id="meniutitlu"></div>
+                    <div id="meniupaginastart">
+ 
+        <li>
+            <a href="/Public/Acasa" class="main_link">
+
+                Acasă
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/NLEX" class="main_link">
+
+                Despre Proiect
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/Functionalitati" class="main_link">
+
+                Facilități Oferite 
+
+            </a>
+        </li>
+        <li>
+            <a href="/Public/LegaturiUtile" class="main_link">
+
+                Legături Utile
+
+            </a>
+        </li>
+
+
+              <br />
+                        Prin portalul N-Lex se acorda acces gratuit la legislatiile nationale ale statelor membre, portalul fiind
+                        conceput pe baza unei tehnologii de comunicare interne, ce permite accesarea directa a bazelor de date legislative nationale,
+                        rezultatele cautarilor venind direct de la sursa.
+                    </div>
+                    <script>
+                        if (window.location.href.indexOf('DetaliiDocument') != -1) {
+                            $('#meniupaginastart').hide();
+                        }
+                        else {
+                            $('#meniupaginastart').show();
+                        }
+                    </script>
+                </nav>
+            </div>
+        </div>
+ 
+        <div id="page_content" style="margin-top:-15px;">
+            <div id="page_wrapper">
+                <div class="articole_wrapper">
+                    
+
+
+<style>
+    #masterwrapper, #page_content, #page_wrapper {
+        background-color: white;
+        background: white;
+    }
+
+    #document_info {
+        font-size: 15px;
+    }
+
+    #fisaact {
+        font-size: 14px;
+    }
+
+    .seincarca {
+        position: fixed;
+        z-index: 1100;
+        left: 45%;
+        /*	margin-top: -500px;*/
+        top: 45%;
+        height: 100px;
+        background-color: #ffffff;
+        -moz-box-shadow: 5px 5px 5px #400;
+        -webkit-box-shadow: 5px 5px 5px #400;
+        box-shadow: 5px 5px 5px #400;
+        border: 1px solid #dadada;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -khtml-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+    .cbsloader {
+        background-image: url(~/../../../Content/Images/Site/bar-circle.gif);
+        background-repeat: no-repeat;
+    }
+
+    #modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('~/../../../Content/Images/Site/tint20.png') 0 0 repeat;
+        background: rgba(0,0,0,0.2);
+    }
+    #sidebar  {
+        &.affix;
+
+    {
+        top: 10px;
+        bottom: auto;
+    }
+
+    &.affix-top {
+        position: absolute;
+        top: 20px;
+    }
+
+    &.affix-bottom {
+        position: relative;
+        top: auto;
+        bottom: auto;
+    }
+
+    }
+
+</style>
+ <script>
+
+     function imgSIZE() {
+         $("#infoactinfoact img").one("load", function() {
+             try {
+                 var theImage = new Image();
+                 theImage.src = $(this).attr("src");
+                 var imgW = theImage.width;
+                 var imgH = theImage.height;
+                 // console.log($(this).attr("src") + "   - " + imgW + ", " + imgH);
+
+                 
+                 $(this).css("max-width", "100%");
+                 $(this).css("width", imgW+"px");
+                 
+             }
+             catch(e) {
+                 // console.log("horror> "+e);
+             }
+         });
+     }
+
+ </script>
+
+<div class="container bs-docs-container"  data-target="#sidebar">
+
+    <div class="row" id="textdocumentleg">
+        <div class="col-md-3" id="meniu">
+            <div class="bs-docs-sidebar affix-top meniuaffix" id="sidebar">
+                <div class="articole_wrapper">
+                    <div class="h1_articole">
+                        <h1>Cuprins</h1>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+                <div id="loaderDiv" class="seincarca" style="display: none; text-align: center; width: auto !important; height: auto !important; padding: 40px;">
+                    <div id="modal"></div>
+                    <progress max="100">
+                        <div class="cbsloader">
+                            <div style="color:#333; margin-top:-40px; margin-left:130px;">
+                            </div>
+                            <br>
+                            <div style="color:#333; margin-left:49px; margin-top:-5px;">
+                                <b>Se încarcă, vă rugăm asteptati.</b><br><br>
+                            </div>
+                        </div>
+                    </progress>
+                </div>
+                <div class="details_navigation">
+
+                    <input type="hidden" id="id_act" name="id_act" value="229226" />
+                    <div class="nav_header expanded" data-target="FormeAct" style="margin-left:-10px; font-weight: bold !important;">
+                    </div>
+                    <div class="nav_content expanded" data-target="FormeAct" style="margin-left: -10px;">
+                            <div class="forme_act">
+                                <!--
+                                -->
+                            </div>
+                            <div class="forme_act">
+                                <!--
+                                -->
+                            </div>
+                            <div class="forme_act">
+                                <!--
+                                -->
+                            </div>
+                    </div>
+
+                    <div id="label_fisaact" class="nav_header" onclick="toggle_fisaact()" style="margin-left:-10px !important; margin-top:10px;">
+                        <span id="label_fisaact_plus_minus" style="cursor:pointer">+</span>
+                        <span style="cursor: pointer; font-weight: bold; color: #3c3636; ">Fișă act</span>
+                    </div>
+
+                    <div id="content_fisaact" class="nav_content" style="display: none;">
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="1" id="Actiunisuferite" name="Actiunisuferite" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Actiunisuferite" type="hidden" value="false" />
+                                <label for="Actiunisuferite">Actiuni suferite</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="2" id="ActiuniInduse" name="ActiuniInduse" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="ActiuniInduse" type="hidden" value="false" />
+                                <label for="ActiuniInduse">Actiuni Induse</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="3" id="Referape" name="Referape" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Referape" type="hidden" value="false" />
+                                <label for="Referape">Refera pe</label>
+                            </div>
+                            <div class="fisa_Act">
+                                <input class="fisa_act_chk" datavalue="4" id="Referitde" name="Referitde" onchange="ArataFisaAct(this);" type="checkbox" value="true" /><input name="Referitde" type="hidden" value="false" />
+                                <label for="Referitde">Referit de</label>
+                            </div>
+                    </div>
+
+                </div>
+                <p style="padding-top: 10px; font-variant: small-caps; border-bottom: 3px solid #BB3A3A; color: #112F5D; font-size: 18px; font-family: EB Garamond !important; ">Cuprinsul Actului</p>
+                <ul class="nav bs-docs-sidenav" style=" margin-top:5px;">
+
+                    privind aprobarea Programului național de digitalizare a microîntreprinderilor, întreprinderilor  mici și mijlocii, finanțat în cadrul Programului operațional Competitivitate 2014-2020<li><a href="#id_artA264_ttl" onclick="&#xA;        pozitioneaza('id_artA264_ttl')&#xA;      ">Articolul 1</a></li><li><a href="#id_artA266_ttl" onclick="&#xA;        pozitioneaza('id_artA266_ttl')&#xA;      ">Articolul 2</a></li><li><a href="#id_artA271_ttl" onclick="&#xA;        pozitioneaza('id_artA271_ttl')&#xA;      ">Articolul 3</a></li><li><a href="#id_artA273_ttl" onclick="&#xA;        pozitioneaza('id_artA273_ttl')&#xA;      ">Articolul 4</a></li><li><a href="#id_artA279_ttl" onclick="&#xA;        pozitioneaza('id_artA279_ttl')&#xA;      ">Articolul 5</a></li><li><a href="#id_artA313_ttl" onclick="&#xA;        pozitioneaza('id_artA313_ttl')&#xA;      ">Articolul 6</a></li>PRIM-MINISTRULUDOVIC ORBANContrasemnează:p. Ministrul fondurilor europene,Carmen Moraru,secretar de statPreședintele Autorității pentru Digitalizarea României,Ioan-Sabin SărmașMinistrul economiei, energiei și mediului de afaceri,Virgil-Daniel Popescup. Ministrul mediului, apelor și pădurilor,Mircea Fechet,secretar de statMinistrul finanțelor publice,Vasile-Florin Cîțu
+
+                </ul>
+                <a class="back-to-top" onclick="pozitioneaza('')" href="#top">
+                    Reveniti in topul paginii
+                </a>
+                <div style="text-align:center;">
+                    
+
+                    <a target="_blank" class="btn btn-primary btn-xs" href=/Public/FormaPrintabila/00000G1XI0L7U98XOXG3G9OT98AFA4I2>
+                        <span class="glyphicon glyphicon-print"></span> Forma printabilă
+                    </a>
+                </div>
+                <div class="articole_wrapper">
+                    <div class="h1_articole">
+
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+
+
+
+        <div class="col-md-8" role="main" id="infoactinfoact">
+            <div class="bs-docs-section">
+                <div class="main_details">
+                    
+                    <div class="document_info" id="document_info">
+                        <div id="forme_act_container" data-id="FormeAct" data-state="loaded">
+                                    <div id="div_Formaconsolidata" class="content_forma_act" data-state="loaded">
+                                        
+                                        <span class="S_DEN">HOTĂRÂRE nr. 677 din 14 august 2020</span><span class="S_HDR">privind aprobarea Programului național de digitalizare a microîntreprinderilor, întreprinderilor  mici și mijlocii, finanțat în cadrul Programului operațional Competitivitate 2014-2020</span><table cellspacing="0px" cellpadding="0px" class="S_EMT"><tr valign="baseline"><td width="75px"><span class="S_EMT_TTL">EMITENT</span></td><td><span class="S_EMT_BDY"><li>GUVERNUL ROMÂNIEI</li></span></td></tr></table><span class="S_PUB"><span class="S_PUB_TTL">Publicat în 
+			</span><span class="S_PUB_BDY">MONITORUL OFICIAL nr. 756 din 19 august 2020</span></span><span id="fisaact"><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='actiuni_suferite'></span><br/><span style='display:none;border:1px solid;height:180px;overflow:auto' id='actiuni_induse'></span><br/><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='refera_pe'></span><br/><span style='display:none;height:180px;overflow:auto;border:1px solid;' id='referit_de'></span><br/><!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA262">În temeiul <A href="~/../../../Public/DetaliiDocumentAfis/47355">art. 108 din Constituția României, republicată</A>, și al <A href="~/../../../Public/DetaliiDocumentAfis/226704">art. 3 alin. (1)</A> și <A href="~/../../../Public/DetaliiDocumentAfis/226704">(3) din Ordonanța de urgență a Guvernului nr. 94/2020</A> privind unele măsuri pentru finanțarea din fonduri europene a unor programe naționale,<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA263">Guvernul României adoptă prezenta hotărâre.<!----></span><span class="S_ART" style="display: block; color:black;" id="id_artA264" name="id_artA264"><span class="TAG_COLLAPSED" id="id_cllpsdA264" onMouseOver="marcheaza(id_cllpsdA264,id_artA264)" onMouseOut="demarcheaza(id_cllpsdA264,id_artA264)" onMouseDown="plusMinus(id_artA264_bdy,id_cllpsdA264)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA264_ttl" onMouseOver="marcheaza(id_artA264_ttl,id_artA264)" onMouseOut="demarcheaza(id_artA264_ttl,id_artA264)" onMouseDown="plusMinus(id_artA264_bdy,id_cllpsdA264)">Articolul 1</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA264_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA265">Se aprobă Programul național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii, finanțat în cadrul Programului operațional Competitivitate 2014-2020, prin axa prioritară 2 - Tehnologia informației și comunicațiilor (TIC) pentru o economie digitală competitivă, prioritatea de investiții 2b - Dezvoltarea produselor și serviciilor TIC, a comerțului electronic și a cererii de TIC; obiectiv specific OS 2.2 - Creșterea contribuției sectorului TIC pentru competitivitatea economică; acțiunea 2.2.1 - Sprijinirea creșterii valorii adăugate generate de sectorul TIC și a inovării în domeniu prin dezvoltarea de clustere și acțiunea 2.2.2 - Sprijinirea utilizării TIC pentru dezvoltarea afacerilor, în special a cadrului de derulare a comerțului electronic.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA266" name="id_artA266"><span class="TAG_COLLAPSED" id="id_cllpsdA266" onMouseOver="marcheaza(id_cllpsdA266,id_artA266)" onMouseOut="demarcheaza(id_cllpsdA266,id_artA266)" onMouseDown="plusMinus(id_artA266_bdy,id_cllpsdA266)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA266_ttl" onMouseOver="marcheaza(id_artA266_ttl,id_artA266)" onMouseOut="demarcheaza(id_artA266_ttl,id_artA266)" onMouseDown="plusMinus(id_artA266_bdy,id_cllpsdA266)">Articolul 2</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA266_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA267"><span class="S_ALN_TTL" id="id_litA267_ttl" onMouseOver="marcheaza(id_litA267_ttl,id_litA267)" onMouseOut="demarcheaza(id_litA267_ttl,id_litA267)" onMouseDown="plusMinus(id_litA267_short,id_litA267_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA267_bdy"> Valoarea Programului național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii, finanțat în cadrul Programului operațional Competitivitate 2014-2020, este de 726 milioane lei, echivalentul a 150 milioane euro, la cursul InforEuro din luna iulie 2020, din care contribuția Uniunii Europene este de 617,1 milioane lei, echivalentul a 127,5 milioane euro, corespunzând unei contribuții a Uniunii Europene de 85%, iar contribuția națională este de 108,9 milioane lei, echivalentul a 22,5 milioane euro, corespunzând unei contribuții naționale de 15%.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA268"><span class="S_ALN_TTL" id="id_litA268_ttl" onMouseOver="marcheaza(id_litA268_ttl,id_litA268)" onMouseOut="demarcheaza(id_litA268_ttl,id_litA268)" onMouseDown="plusMinus(id_litA268_short,id_litA268_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA268_bdy">Finanțarea Programului național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii este asigurată din alocarea disponibilă prin Programul operațional Competitivitate 2014-2020 pentru acțiunile prevăzute la <span class="S_LGI">art. 1</span> și din sume suplimentare ce vor fi asigurate prin utilizarea mecanismului supracontractării, în conformitate cu prevederile <A href="~/../../../Public/DetaliiDocumentAfis/224192">art. 12 alin. (1) lit. a) din Ordonanța de urgență a Guvernului nr. 40/2015</A> privind gestionarea financiară a fondurilor europene pentru perioada de programare 2014-2020, aprobată cu modificări și completări prin <A href="~/../../../Public/DetaliiDocumentAfis/178818">Legea nr. 105/2016</A>, cu modificările și completările ulterioare.</span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA269"><span class="S_ALN_TTL" id="id_litA269_ttl" onMouseOver="marcheaza(id_litA269_ttl,id_litA269)" onMouseOut="demarcheaza(id_litA269_ttl,id_litA269)" onMouseDown="plusMinus(id_litA269_short,id_litA269_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA269_bdy"> Sumele angajate prin utilizarea mecanismului supracontractării și care nu sunt decontate din sumele alocate Programului operațional Competitivitate 2014-2020 sunt suportate din bugetul de stat, prin bugetul Ministerului Fondurilor Europene, în calitate de autoritate de management pentru Programul operațional Competitivitate 2014-2020, dacă nu pot fi incluse la finanțare din fonduri externe nerambursabile, în perioada de programare 2021-2027. </span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA270"><span class="S_ALN_TTL" id="id_litA270_ttl" onMouseOver="marcheaza(id_litA270_ttl,id_litA270)" onMouseOut="demarcheaza(id_litA270_ttl,id_litA270)" onMouseDown="plusMinus(id_litA270_short,id_litA270_bdy)">(4)<!----></span> <span class="S_ALN_BDY" id="id_litA270_bdy"> Ministerul Fondurilor Europene, prin Autoritatea de management pentru Programul operațional Competitivitate, în vederea introducerii agențiilor pentru dezvoltare regională ca beneficiari eligibili în cadrul acțiunii 2.2.2 - Sprijinirea utilizării TIC pentru dezvoltarea afacerilor, în special a cadrului de derulare a comerțului electronic, efectuează demersurile necesare modificării Programului operațional Competitivitate 2014-2020.</span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA271" name="id_artA271"><span class="TAG_COLLAPSED" id="id_cllpsdA271" onMouseOver="marcheaza(id_cllpsdA271,id_artA271)" onMouseOut="demarcheaza(id_cllpsdA271,id_artA271)" onMouseDown="plusMinus(id_artA271_bdy,id_cllpsdA271)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA271_ttl" onMouseOver="marcheaza(id_artA271_ttl,id_artA271)" onMouseOut="demarcheaza(id_artA271_ttl,id_artA271)" onMouseDown="plusMinus(id_artA271_bdy,id_cllpsdA271)">Articolul 3</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA271_bdy"><span class="S_PAR" style="display: block; color:black;" id="id_parA272">Durata de implementare a Programului național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii este până la data de 31 decembrie 2023.<!----></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA273" name="id_artA273"><span class="TAG_COLLAPSED" id="id_cllpsdA273" onMouseOver="marcheaza(id_cllpsdA273,id_artA273)" onMouseOut="demarcheaza(id_cllpsdA273,id_artA273)" onMouseDown="plusMinus(id_artA273_bdy,id_cllpsdA273)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA273_ttl" onMouseOver="marcheaza(id_artA273_ttl,id_artA273)" onMouseOut="demarcheaza(id_artA273_ttl,id_artA273)" onMouseDown="plusMinus(id_artA273_bdy,id_cllpsdA273)">Articolul 4</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA273_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA274"><span class="S_ALN_TTL" id="id_litA274_ttl" onMouseOver="marcheaza(id_litA274_ttl,id_litA274)" onMouseOut="demarcheaza(id_litA274_ttl,id_litA274)" onMouseDown="plusMinus(id_litA274_short,id_litA274_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA274_bdy"> Obiectivul Programului național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii este creșterea competitivității IMM-urilor din România prin: <span class="S_LIT" style="display: block; color:black;" id="id_litA275"><span class="S_LIT_TTL" id="id_litA275_ttl" onMouseOver="marcheaza(id_litA275_ttl,id_litA275)" onMouseOut="demarcheaza(id_litA275_ttl,id_litA275)" onMouseDown="plusMinus(id_litA275_short,id_litA275_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA275_bdy">dezvoltarea unor produse/servicii/aplicații inovative din domeniul tehnologiei informațiilor și comunicațiilor care să vină în sprijinul IMM-urilor și autorităților publice, urmărindu-se finanțarea unor produse/servicii/aplicații TIC inovative care să asigure trecerea de la producția prin externalizare, respectiv outsourcing, la dezvoltarea bazată pe inovare, precum și colaborarea între membrii din cadrul unui cluster din industria TIC sau între aceștia și membrii altor clustere, pentru asigurarea unui acces rapid și facil la implementarea produselor din domeniul tehnologiei informației inovative obținute;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA275_short" onMouseOver="marcheaza(id_litA275_short,id_litA275)" onMouseOut="demarcheaza(id_litA275_short,id_litA275)" onMouseDown="plusMinus(id_litA275_short,id_litA275_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA276"><span class="S_LIT_TTL" id="id_litA276_ttl" onMouseOver="marcheaza(id_litA276_ttl,id_litA276)" onMouseOut="demarcheaza(id_litA276_ttl,id_litA276)" onMouseDown="plusMinus(id_litA276_short,id_litA276_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA276_bdy">acordarea de sprijin financiar nerambursabil pentru digitalizarea microîntreprinderilor și întreprinderilor mici și mijlocii din alte sectoare de activitate decât TIC, în cele 8 regiuni de dezvoltate ale României, în vederea creșterii competitivității IMM și dinamizării sectorului TIC. </span><span style="display: none" class="S_LIT_SHORT" id="id_litA276_short" onMouseOver="marcheaza(id_litA276_short,id_litA276)" onMouseOut="demarcheaza(id_litA276_short,id_litA276)" onMouseDown="plusMinus(id_litA276_short,id_litA276_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA277"><span class="S_ALN_TTL" id="id_litA277_ttl" onMouseOver="marcheaza(id_litA277_ttl,id_litA277)" onMouseOut="demarcheaza(id_litA277_ttl,id_litA277)" onMouseDown="plusMinus(id_litA277_short,id_litA277_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA277_bdy">Obiectivul prevăzut la <span class="S_LGI">alin. (1) lit. b)</span> se implementează prin încheierea de contracte de finanțare între agențiile pentru dezvoltare regională și beneficiarii de ajutor de minimis. </span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA278"><span class="S_ALN_TTL" id="id_litA278_ttl" onMouseOver="marcheaza(id_litA278_ttl,id_litA278)" onMouseOut="demarcheaza(id_litA278_ttl,id_litA278)" onMouseDown="plusMinus(id_litA278_short,id_litA278_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA278_bdy"> Indicatorul de rezultat al Programului național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii este 3S9 - Valoarea adăugată brută generată de sectorul TIC din cadrul Programului operațional Competitivitate 2014-2020. </span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA279" name="id_artA279"><span class="TAG_COLLAPSED" id="id_cllpsdA279" onMouseOver="marcheaza(id_cllpsdA279,id_artA279)" onMouseOut="demarcheaza(id_cllpsdA279,id_artA279)" onMouseDown="plusMinus(id_artA279_bdy,id_cllpsdA279)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA279_ttl" onMouseOver="marcheaza(id_artA279_ttl,id_artA279)" onMouseOut="demarcheaza(id_artA279_ttl,id_artA279)" onMouseDown="plusMinus(id_artA279_bdy,id_cllpsdA279)">Articolul 5</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA279_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA280"><span class="S_ALN_TTL" id="id_litA280_ttl" onMouseOver="marcheaza(id_litA280_ttl,id_litA280)" onMouseOut="demarcheaza(id_litA280_ttl,id_litA280)" onMouseDown="plusMinus(id_litA280_short,id_litA280_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA280_bdy"> Activitățile eligibile în cadrul Programului național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii sunt:<span class="S_LIT" style="display: block; color:black;" id="id_litA281"><span class="S_LIT_TTL" id="id_litA281_ttl" onMouseOver="marcheaza(id_litA281_ttl,id_litA281)" onMouseOut="demarcheaza(id_litA281_ttl,id_litA281)" onMouseDown="plusMinus(id_litA281_short,id_litA281_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA281_bdy">activități pentru dezvoltarea de produse inovative în domeniul TIC, de tipul: <span class="S_PCT" style="display: block; color:black;" id="id_pctA282"><span class="S_PCT_TTL" id="id_pctA282_ttl" onMouseOver="marcheaza(id_pctA282_ttl,id_pctA282)" onMouseOut="demarcheaza(id_pctA282_ttl,id_pctA282)" onMouseDown="plusMinus(id_pctA282_short,id_pctA282_bdy)">1.<!----></span> <span class="S_PCT_BDY" id="id_pctA282_bdy">activități aferente achiziționării de hardware TIC și a altor dispozitive aferente, inclusiv cheltuieli de instalare, configurare și punere în funcțiune, justificate din punctul de vedere al implementării proiectului. Sunt excluse elementele de mobilier care nu au legătură cu funcționarea produselor/aplicațiilor informatice implementate prin proiect;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA282_short" onMouseOver="marcheaza(id_pctA282_short,id_pctA282)" onMouseOut="demarcheaza(id_pctA282_short,id_pctA282)" onMouseDown="plusMinus(id_pctA282_short,id_pctA282_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA283"><span class="S_PCT_TTL" id="id_pctA283_ttl" onMouseOver="marcheaza(id_pctA283_ttl,id_pctA283)" onMouseOut="demarcheaza(id_pctA283_ttl,id_pctA283)" onMouseDown="plusMinus(id_pctA283_short,id_pctA283_bdy)">2.<!----></span> <span class="S_PCT_BDY" id="id_pctA283_bdy">activități aferente amenajării centrului de date în care se vor instala echipamentele TIC achiziționate prin proiect, instalarea realizându-se o singură dată pe perioada implementării;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA283_short" onMouseOver="marcheaza(id_pctA283_short,id_pctA283)" onMouseOut="demarcheaza(id_pctA283_short,id_pctA283)" onMouseDown="plusMinus(id_pctA283_short,id_pctA283_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA284"><span class="S_PCT_TTL" id="id_pctA284_ttl" onMouseOver="marcheaza(id_pctA284_ttl,id_pctA284)" onMouseOut="demarcheaza(id_pctA284_ttl,id_pctA284)" onMouseDown="plusMinus(id_pctA284_short,id_pctA284_bdy)">3.<!----></span> <span class="S_PCT_BDY" id="id_pctA284_bdy">activități aferente achiziționării și/sau dezvoltării aplicațiilor software/licențelor necesare implementării proiectului, configurarea și implementarea bazelor de date, migrarea și integrarea diverselor structuri de date existente, achiziționarea și implementarea de soluții de semnătură electronică, inclusiv resurse de stocare si procesare, justificate din punctul de vedere al implementării proiectului. Dezvoltarea și implementarea soluțiilor software specifice proiectului și integrarea aplicațiilor folosite trebuie să respecte obligatoriu etapele clare de dezvoltare: analiza cerințelor, proiectare, implementare și testare, precum și pe cele de punere în funcțiune, dacă este cazul;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA284_short" onMouseOver="marcheaza(id_pctA284_short,id_pctA284)" onMouseOut="demarcheaza(id_pctA284_short,id_pctA284)" onMouseDown="plusMinus(id_pctA284_short,id_pctA284_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA285"><span class="S_PCT_TTL" id="id_pctA285_ttl" onMouseOver="marcheaza(id_pctA285_ttl,id_pctA285)" onMouseOut="demarcheaza(id_pctA285_ttl,id_pctA285)" onMouseDown="plusMinus(id_pctA285_short,id_pctA285_bdy)">4.<!----></span> <span class="S_PCT_BDY" id="id_pctA285_bdy">activități aferente cercetării industriale sau dezvoltării experimentale; </span><span style="display:none" class="S_PCT_SHORT" id="id_pctA285_short" onMouseOver="marcheaza(id_pctA285_short,id_pctA285)" onMouseOut="demarcheaza(id_pctA285_short,id_pctA285)" onMouseDown="plusMinus(id_pctA285_short,id_pctA285_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA286"><span class="S_PCT_TTL" id="id_pctA286_ttl" onMouseOver="marcheaza(id_pctA286_ttl,id_pctA286)" onMouseOut="demarcheaza(id_pctA286_ttl,id_pctA286)" onMouseDown="plusMinus(id_pctA286_short,id_pctA286_bdy)">5.<!----></span> <span class="S_PCT_BDY" id="id_pctA286_bdy">activități necesare informării și publicității proiectului;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA286_short" onMouseOver="marcheaza(id_pctA286_short,id_pctA286)" onMouseOut="demarcheaza(id_pctA286_short,id_pctA286)" onMouseDown="plusMinus(id_pctA286_short,id_pctA286_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA287"><span class="S_PCT_TTL" id="id_pctA287_ttl" onMouseOver="marcheaza(id_pctA287_ttl,id_pctA287)" onMouseOut="demarcheaza(id_pctA287_ttl,id_pctA287)" onMouseDown="plusMinus(id_pctA287_short,id_pctA287_bdy)">6.<!----></span> <span class="S_PCT_BDY" id="id_pctA287_bdy">activități aferente achiziționării de servicii de consultanță pentru elaborarea documentațiilor necesare pregătirii proiectului propus spre finanțare și managementul proiectului, inclusiv elaborarea documentațiilor necesare implementării proiectului și servicii de asistență juridică pentru realizarea achizițiilor, elaborarea documentației de atribuire și aplicarea procedurilor de atribuire a contractelor de achiziție;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA287_short" onMouseOver="marcheaza(id_pctA287_short,id_pctA287)" onMouseOut="demarcheaza(id_pctA287_short,id_pctA287)" onMouseDown="plusMinus(id_pctA287_short,id_pctA287_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA288"><span class="S_PCT_TTL" id="id_pctA288_ttl" onMouseOver="marcheaza(id_pctA288_ttl,id_pctA288)" onMouseOut="demarcheaza(id_pctA288_ttl,id_pctA288)" onMouseDown="plusMinus(id_pctA288_short,id_pctA288_bdy)">7.<!----></span> <span class="S_PCT_BDY" id="id_pctA288_bdy">activități aferente instruirii personalului care va utiliza produsele implementate/achiziționate și a personalului care va asigura mentenanța;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA288_short" onMouseOver="marcheaza(id_pctA288_short,id_pctA288)" onMouseOut="demarcheaza(id_pctA288_short,id_pctA288)" onMouseDown="plusMinus(id_pctA288_short,id_pctA288_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA289"><span class="S_PCT_TTL" id="id_pctA289_ttl" onMouseOver="marcheaza(id_pctA289_ttl,id_pctA289)" onMouseOut="demarcheaza(id_pctA289_ttl,id_pctA289)" onMouseDown="plusMinus(id_pctA289_short,id_pctA289_bdy)">8.<!----></span> <span class="S_PCT_BDY" id="id_pctA289_bdy">activități de achiziție a serviciilor de auditare intermediară/ finală, financiară, conform reglementărilor naționale, și tehnică, din perspectiva corespondenței rezultatului proiectului cu cererea de finanțare și obiectivele Programului operațional Competitivitate;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA289_short" onMouseOver="marcheaza(id_pctA289_short,id_pctA289)" onMouseOut="demarcheaza(id_pctA289_short,id_pctA289)" onMouseDown="plusMinus(id_pctA289_short,id_pctA289_bdy)"> ... </span></span></span><span style="display: none" class="S_LIT_SHORT" id="id_litA281_short" onMouseOver="marcheaza(id_litA281_short,id_litA281)" onMouseOut="demarcheaza(id_litA281_short,id_litA281)" onMouseDown="plusMinus(id_litA281_short,id_litA281_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA290"><span class="S_LIT_TTL" id="id_litA290_ttl" onMouseOver="marcheaza(id_litA290_ttl,id_litA290)" onMouseOut="demarcheaza(id_litA290_ttl,id_litA290)" onMouseDown="plusMinus(id_litA290_short,id_litA290_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA290_bdy">activități de digitalizare a microîntreprinderilor și a întreprinderilor mici și mijlocii, altele decât cele care au ca obiect principal de activitate TIC, de tipul:<span class="S_PCT" style="display: block; color:black;" id="id_pctA291"><span class="S_PCT_TTL" id="id_pctA291_ttl" onMouseOver="marcheaza(id_pctA291_ttl,id_pctA291)" onMouseOut="demarcheaza(id_pctA291_ttl,id_pctA291)" onMouseDown="plusMinus(id_pctA291_short,id_pctA291_bdy)">1.<!----></span> <span class="S_PCT_BDY" id="id_pctA291_bdy">activități aferente achiziționării de hardware TIC și a altor dispozitive și echipamente aferente, inclusiv cheltuieli de instalare, configurare, punere în funcțiune, justificate din punctul de vedere al implementării proiectului. Sunt excluse elemente de mobilier care nu au legătură cu funcționarea produselor/aplicațiilor informatice implementate prin proiect;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA291_short" onMouseOver="marcheaza(id_pctA291_short,id_pctA291)" onMouseOut="demarcheaza(id_pctA291_short,id_pctA291)" onMouseDown="plusMinus(id_pctA291_short,id_pctA291_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA292"><span class="S_PCT_TTL" id="id_pctA292_ttl" onMouseOver="marcheaza(id_pctA292_ttl,id_pctA292)" onMouseOut="demarcheaza(id_pctA292_ttl,id_pctA292)" onMouseDown="plusMinus(id_pctA292_short,id_pctA292_bdy)">2.<!----></span> <span class="S_PCT_BDY" id="id_pctA292_bdy">activități aferente realizării rețelei LAN necesare pentru implementarea proiectului;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA292_short" onMouseOver="marcheaza(id_pctA292_short,id_pctA292)" onMouseOut="demarcheaza(id_pctA292_short,id_pctA292)" onMouseDown="plusMinus(id_pctA292_short,id_pctA292_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA293"><span class="S_PCT_TTL" id="id_pctA293_ttl" onMouseOver="marcheaza(id_pctA293_ttl,id_pctA293)" onMouseOut="demarcheaza(id_pctA293_ttl,id_pctA293)" onMouseDown="plusMinus(id_pctA293_short,id_pctA293_bdy)">3.<!----></span> <span class="S_PCT_BDY" id="id_pctA293_bdy">activități aferente achiziționării și/sau dezvoltării și/sau adaptării aplicațiilor software/licențelor necesare implementării proiectului, configurarea și implementarea bazelor de date, migrarea și integrarea diverselor structuri de date existente, inclusiv soluțiile de automatizare software de tip RPA, respectiv Robotic Process Automation;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA293_short" onMouseOver="marcheaza(id_pctA293_short,id_pctA293)" onMouseOut="demarcheaza(id_pctA293_short,id_pctA293)" onMouseDown="plusMinus(id_pctA293_short,id_pctA293_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA294"><span class="S_PCT_TTL" id="id_pctA294_ttl" onMouseOver="marcheaza(id_pctA294_ttl,id_pctA294)" onMouseOut="demarcheaza(id_pctA294_ttl,id_pctA294)" onMouseDown="plusMinus(id_pctA294_short,id_pctA294_bdy)">4.<!----></span> <span class="S_PCT_BDY" id="id_pctA294_bdy">activități aferente achiziționării unui website de prezentare a companiei, inclusiv achiziția de domeniu și găzduirea pe server;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA294_short" onMouseOver="marcheaza(id_pctA294_short,id_pctA294)" onMouseOut="demarcheaza(id_pctA294_short,id_pctA294)" onMouseDown="plusMinus(id_pctA294_short,id_pctA294_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA295"><span class="S_PCT_TTL" id="id_pctA295_ttl" onMouseOver="marcheaza(id_pctA295_ttl,id_pctA295)" onMouseOut="demarcheaza(id_pctA295_ttl,id_pctA295)" onMouseDown="plusMinus(id_pctA295_short,id_pctA295_bdy)">5.<!----></span> <span class="S_PCT_BDY" id="id_pctA295_bdy">activități aferente achiziționării unui nume de domeniu nou;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA295_short" onMouseOver="marcheaza(id_pctA295_short,id_pctA295)" onMouseOut="demarcheaza(id_pctA295_short,id_pctA295)" onMouseDown="plusMinus(id_pctA295_short,id_pctA295_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA296"><span class="S_PCT_TTL" id="id_pctA296_ttl" onMouseOver="marcheaza(id_pctA296_ttl,id_pctA296)" onMouseOut="demarcheaza(id_pctA296_ttl,id_pctA296)" onMouseDown="plusMinus(id_pctA296_short,id_pctA296_bdy)">6.<!----></span> <span class="S_PCT_BDY" id="id_pctA296_bdy">activități aferente achiziționării soluției de semnătură electronică;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA296_short" onMouseOver="marcheaza(id_pctA296_short,id_pctA296)" onMouseOut="demarcheaza(id_pctA296_short,id_pctA296)" onMouseDown="plusMinus(id_pctA296_short,id_pctA296_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA297"><span class="S_PCT_TTL" id="id_pctA297_ttl" onMouseOver="marcheaza(id_pctA297_ttl,id_pctA297)" onMouseOut="demarcheaza(id_pctA297_ttl,id_pctA297)" onMouseDown="plusMinus(id_pctA297_short,id_pctA297_bdy)">7.<!----></span> <span class="S_PCT_BDY" id="id_pctA297_bdy">activități de trecere a arhivelor din analog/dosare/hârtie în digital indexabil;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA297_short" onMouseOver="marcheaza(id_pctA297_short,id_pctA297)" onMouseOut="demarcheaza(id_pctA297_short,id_pctA297)" onMouseDown="plusMinus(id_pctA297_short,id_pctA297_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA298"><span class="S_PCT_TTL" id="id_pctA298_ttl" onMouseOver="marcheaza(id_pctA298_ttl,id_pctA298)" onMouseOut="demarcheaza(id_pctA298_ttl,id_pctA298)" onMouseDown="plusMinus(id_pctA298_short,id_pctA298_bdy)">8.<!----></span> <span class="S_PCT_BDY" id="id_pctA298_bdy">activități aferente achiziționării de aplicații informatice specifice pentru persoanele cu dizabilități;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA298_short" onMouseOver="marcheaza(id_pctA298_short,id_pctA298)" onMouseOut="demarcheaza(id_pctA298_short,id_pctA298)" onMouseDown="plusMinus(id_pctA298_short,id_pctA298_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA299"><span class="S_PCT_TTL" id="id_pctA299_ttl" onMouseOver="marcheaza(id_pctA299_ttl,id_pctA299)" onMouseOut="demarcheaza(id_pctA299_ttl,id_pctA299)" onMouseDown="plusMinus(id_pctA299_short,id_pctA299_bdy)">9.<!----></span> <span class="S_PCT_BDY" id="id_pctA299_bdy">activități aferente achiziționării soluțiilor din domeniul tehnologiei informației pentru comerțul electronic;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA299_short" onMouseOver="marcheaza(id_pctA299_short,id_pctA299)" onMouseOut="demarcheaza(id_pctA299_short,id_pctA299)" onMouseDown="plusMinus(id_pctA299_short,id_pctA299_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA300"><span class="S_PCT_TTL" id="id_pctA300_ttl" onMouseOver="marcheaza(id_pctA300_ttl,id_pctA300)" onMouseOut="demarcheaza(id_pctA300_ttl,id_pctA300)" onMouseDown="plusMinus(id_pctA300_short,id_pctA300_bdy)">10.<!----></span> <span class="S_PCT_BDY" id="id_pctA300_bdy">activități aferente achizițiilor de servicii de tip cloud și SaaS, respectiv Software as a Service;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA300_short" onMouseOver="marcheaza(id_pctA300_short,id_pctA300)" onMouseOut="demarcheaza(id_pctA300_short,id_pctA300)" onMouseDown="plusMinus(id_pctA300_short,id_pctA300_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA301"><span class="S_PCT_TTL" id="id_pctA301_ttl" onMouseOver="marcheaza(id_pctA301_ttl,id_pctA301)" onMouseOut="demarcheaza(id_pctA301_ttl,id_pctA301)" onMouseDown="plusMinus(id_pctA301_short,id_pctA301_bdy)">11.<!----></span> <span class="S_PCT_BDY" id="id_pctA301_bdy">activități aferente achiziționării serviciilor de găzduire, incluzând toate tipurile de servicii de găzduire, cu excepția pachetelor de reseller;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA301_short" onMouseOver="marcheaza(id_pctA301_short,id_pctA301)" onMouseOut="demarcheaza(id_pctA301_short,id_pctA301)" onMouseDown="plusMinus(id_pctA301_short,id_pctA301_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA302"><span class="S_PCT_TTL" id="id_pctA302_ttl" onMouseOver="marcheaza(id_pctA302_ttl,id_pctA302)" onMouseOut="demarcheaza(id_pctA302_ttl,id_pctA302)" onMouseDown="plusMinus(id_pctA302_short,id_pctA302_bdy)">12.<!----></span> <span class="S_PCT_BDY" id="id_pctA302_bdy">activități aferente achiziționării de servicii pentru consolidarea securității cibernetice aplicabile pentru software/ găzduire/rețele;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA302_short" onMouseOver="marcheaza(id_pctA302_short,id_pctA302)" onMouseOut="demarcheaza(id_pctA302_short,id_pctA302)" onMouseDown="plusMinus(id_pctA302_short,id_pctA302_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA303"><span class="S_PCT_TTL" id="id_pctA303_ttl" onMouseOver="marcheaza(id_pctA303_ttl,id_pctA303)" onMouseOut="demarcheaza(id_pctA303_ttl,id_pctA303)" onMouseDown="plusMinus(id_pctA303_short,id_pctA303_bdy)">13.<!----></span> <span class="S_PCT_BDY" id="id_pctA303_bdy">activități aferente achiziționării de servicii de consultanță pentru elaborarea documentațiilor necesare pregătirii proiectului propus spre finanțare și/sau managementul proiectului, inclusiv elaborarea documentațiilor necesare implementării proiectului;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA303_short" onMouseOver="marcheaza(id_pctA303_short,id_pctA303)" onMouseOut="demarcheaza(id_pctA303_short,id_pctA303)" onMouseDown="plusMinus(id_pctA303_short,id_pctA303_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA304"><span class="S_PCT_TTL" id="id_pctA304_ttl" onMouseOver="marcheaza(id_pctA304_ttl,id_pctA304)" onMouseOut="demarcheaza(id_pctA304_ttl,id_pctA304)" onMouseDown="plusMinus(id_pctA304_short,id_pctA304_bdy)">14.<!----></span> <span class="S_PCT_BDY" id="id_pctA304_bdy">activități aferente instruirii personalului care va utiliza produsele implementate/achiziționate și a personalului care va asigura mentenanța;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA304_short" onMouseOver="marcheaza(id_pctA304_short,id_pctA304)" onMouseOut="demarcheaza(id_pctA304_short,id_pctA304)" onMouseDown="plusMinus(id_pctA304_short,id_pctA304_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA305"><span class="S_PCT_TTL" id="id_pctA305_ttl" onMouseOver="marcheaza(id_pctA305_ttl,id_pctA305)" onMouseOut="demarcheaza(id_pctA305_ttl,id_pctA305)" onMouseDown="plusMinus(id_pctA305_short,id_pctA305_bdy)">15.<!----></span> <span class="S_PCT_BDY" id="id_pctA305_bdy">activități de achiziție a serviciilor de auditare intermediară/ finală, financiară, conform reglementărilor naționale, și tehnică, din perspectiva corespondenței rezultatului proiectului cu Cererea de finanțare și obiectivele Programului operațional Competitivitate;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA305_short" onMouseOver="marcheaza(id_pctA305_short,id_pctA305)" onMouseOut="demarcheaza(id_pctA305_short,id_pctA305)" onMouseDown="plusMinus(id_pctA305_short,id_pctA305_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA306"><span class="S_PCT_TTL" id="id_pctA306_ttl" onMouseOver="marcheaza(id_pctA306_ttl,id_pctA306)" onMouseOut="demarcheaza(id_pctA306_ttl,id_pctA306)" onMouseDown="plusMinus(id_pctA306_short,id_pctA306_bdy)">16.<!----></span> <span class="S_PCT_BDY" id="id_pctA306_bdy">servicii de consultanță/analiză pentru identificarea soluțiilor tehnice de care au nevoie IMM-urile.</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA306_short" onMouseOver="marcheaza(id_pctA306_short,id_pctA306)" onMouseOut="demarcheaza(id_pctA306_short,id_pctA306)" onMouseDown="plusMinus(id_pctA306_short,id_pctA306_bdy)"> ... </span></span></span><span style="display: none" class="S_LIT_SHORT" id="id_litA290_short" onMouseOver="marcheaza(id_litA290_short,id_litA290)" onMouseOut="demarcheaza(id_litA290_short,id_litA290)" onMouseDown="plusMinus(id_litA290_short,id_litA290_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA307"><span class="S_ALN_TTL" id="id_litA307_ttl" onMouseOver="marcheaza(id_litA307_ttl,id_litA307)" onMouseOut="demarcheaza(id_litA307_ttl,id_litA307)" onMouseDown="plusMinus(id_litA307_short,id_litA307_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA307_bdy"> Beneficiarii eligibili, în sensul <A href="~/../../../Public/DetaliiDocumentAfis/226704">art. 3 alin. (3) lit. e) din Ordonanța de urgență a Guvernului nr 94/2020</A> privind unele măsuri pentru finanțarea din fonduri europene a unor programe naționale, sunt:<span class="S_LIT" style="display: block; color:black;" id="id_litA308"><span class="S_LIT_TTL" id="id_litA308_ttl" onMouseOver="marcheaza(id_litA308_ttl,id_litA308)" onMouseOut="demarcheaza(id_litA308_ttl,id_litA308)" onMouseDown="plusMinus(id_litA308_short,id_litA308_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA308_bdy">pentru proiectele care vizează atingerea obiectivului prevăzut la <span class="S_LGI">art. 4 alin. (1) lit. a):</span><span class="S_PCT" style="display: block; color:black;" id="id_pctA309"><span class="S_PCT_TTL" id="id_pctA309_ttl" onMouseOver="marcheaza(id_pctA309_ttl,id_pctA309)" onMouseOut="demarcheaza(id_pctA309_ttl,id_pctA309)" onMouseDown="plusMinus(id_pctA309_short,id_pctA309_bdy)">1.<!----></span> <span class="S_PCT_BDY" id="id_pctA309_bdy">întreprinderi, respectiv microîntreprinderi, întreprinderi mici, întreprinderi mijlocii care își desfășoară activitatea în România, al căror obiect de activitate este în domeniul TIC;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA309_short" onMouseOver="marcheaza(id_pctA309_short,id_pctA309)" onMouseOut="demarcheaza(id_pctA309_short,id_pctA309)" onMouseDown="plusMinus(id_pctA309_short,id_pctA309_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA310"><span class="S_PCT_TTL" id="id_pctA310_ttl" onMouseOver="marcheaza(id_pctA310_ttl,id_pctA310)" onMouseOut="demarcheaza(id_pctA310_ttl,id_pctA310)" onMouseDown="plusMinus(id_pctA310_short,id_pctA310_bdy)">2.<!----></span> <span class="S_PCT_BDY" id="id_pctA310_bdy">întreprinderi, respectiv microîntreprinderi, întreprinderi mici, întreprinderi mijlocii care își desfășoară activitatea în România, în cadrul clusterelor al căror obiect de activitate este în domeniul TIC;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA310_short" onMouseOver="marcheaza(id_pctA310_short,id_pctA310)" onMouseOut="demarcheaza(id_pctA310_short,id_pctA310)" onMouseDown="plusMinus(id_pctA310_short,id_pctA310_bdy)"> ... </span></span><span class="S_PCT" style="display: block; color:black;" id="id_pctA311"><span class="S_PCT_TTL" id="id_pctA311_ttl" onMouseOver="marcheaza(id_pctA311_ttl,id_pctA311)" onMouseOut="demarcheaza(id_pctA311_ttl,id_pctA311)" onMouseDown="plusMinus(id_pctA311_short,id_pctA311_bdy)">3.<!----></span> <span class="S_PCT_BDY" id="id_pctA311_bdy">consorții formate din entitățile definite la <span class="S_LGI">pct. 1</span> și <span class="S_LGI">2</span> și întreprinderi, respectiv microîntreprinderi, întreprinderi mici, întreprinderi mijlocii care își desfășoară activitatea în România;</span><span style="display:none" class="S_PCT_SHORT" id="id_pctA311_short" onMouseOver="marcheaza(id_pctA311_short,id_pctA311)" onMouseOut="demarcheaza(id_pctA311_short,id_pctA311)" onMouseDown="plusMinus(id_pctA311_short,id_pctA311_bdy)"> ... </span></span></span><span style="display: none" class="S_LIT_SHORT" id="id_litA308_short" onMouseOver="marcheaza(id_litA308_short,id_litA308)" onMouseOut="demarcheaza(id_litA308_short,id_litA308)" onMouseDown="plusMinus(id_litA308_short,id_litA308_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA312"><span class="S_LIT_TTL" id="id_litA312_ttl" onMouseOver="marcheaza(id_litA312_ttl,id_litA312)" onMouseOut="demarcheaza(id_litA312_ttl,id_litA312)" onMouseDown="plusMinus(id_litA312_short,id_litA312_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA312_bdy">pentru proiectele care vizează atingerea obiectivului prevăzut la <span class="S_LGI">art. 4 alin. (1) lit. b)</span>, solicitanți eligibili sunt agențiile pentru dezvoltare regională. Beneficiarii finali ai ajutorului de minimis sunt microîntreprinderile și întreprinderile mici și mijlocii cu obiect principal de activitate altul decât tehnologia informațiilor și comunicațiilor.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA312_short" onMouseOver="marcheaza(id_litA312_short,id_litA312)" onMouseOut="demarcheaza(id_litA312_short,id_litA312)" onMouseDown="plusMinus(id_litA312_short,id_litA312_bdy)"> ... </span></span></span></span></span></span><span class="S_ART" style="display: block; color:black;" id="id_artA313" name="id_artA313"><span class="TAG_COLLAPSED" id="id_cllpsdA313" onMouseOver="marcheaza(id_cllpsdA313,id_artA313)" onMouseOut="demarcheaza(id_cllpsdA313,id_artA313)" onMouseDown="plusMinus(id_artA313_bdy,id_cllpsdA313)">
+				 + 
+			</span><span class="S_ART_TTL" id="id_artA313_ttl" onMouseOver="marcheaza(id_artA313_ttl,id_artA313)" onMouseOut="demarcheaza(id_artA313_ttl,id_artA313)" onMouseDown="plusMinus(id_artA313_bdy,id_cllpsdA313)">Articolul 6</span><span class="S_ART_DEN"><!----></span><span class="S_ART_BDY" id="id_artA313_bdy"><span class="S_ALN" style="display: block; color:black;" id="id_litA314"><span class="S_ALN_TTL" id="id_litA314_ttl" onMouseOver="marcheaza(id_litA314_ttl,id_litA314)" onMouseOut="demarcheaza(id_litA314_ttl,id_litA314)" onMouseDown="plusMinus(id_litA314_short,id_litA314_bdy)">(1)<!----></span> <span class="S_ALN_BDY" id="id_litA314_bdy"> Finanțarea activităților și cheltuielilor aferente Programului național de digitalizare a microîntreprinderilor, întreprinderilor mici și mijlocii intră sub incidența ajutorului de stat și/sau a ajutorului de minimis și are în vedere, în principal:<span class="S_LIT" style="display: block; color:black;" id="id_litA315"><span class="S_LIT_TTL" id="id_litA315_ttl" onMouseOver="marcheaza(id_litA315_ttl,id_litA315)" onMouseOut="demarcheaza(id_litA315_ttl,id_litA315)" onMouseDown="plusMinus(id_litA315_short,id_litA315_bdy)">a)<!----></span> <span class="S_LIT_BDY" id="id_litA315_bdy">realizarea/dezvoltarea de produse/servicii/aplicații TIC inovative, prin finanțarea investițiilor în cercetare industrială și/sau dezvoltare experimentală, în inovare de proces și/sau organizațională, în active corporale și/sau necorporale, în alte proiecte de inovare etc. Sprijinul va fi acordat pentru dezvoltarea de produse/soluții/aplicații TIC inovative cu aplicabilitate în următoarele domenii: internetul lucrurilor, oraș inteligent/sat inteligent; digitalizare, respectiv automatizare, robotizare industrială; inteligență artificială, realitate augmentată; tranzacții electronice; securitate cibernetică; big data, blockchain; e-guvernare/ eadministrație - digitizarea administrației publice; e-sănătate;</span><span style="display: none" class="S_LIT_SHORT" id="id_litA315_short" onMouseOver="marcheaza(id_litA315_short,id_litA315)" onMouseOut="demarcheaza(id_litA315_short,id_litA315)" onMouseDown="plusMinus(id_litA315_short,id_litA315_bdy)"> ... </span></span><span class="S_LIT" style="display: block; color:black;" id="id_litA316"><span class="S_LIT_TTL" id="id_litA316_ttl" onMouseOver="marcheaza(id_litA316_ttl,id_litA316)" onMouseOut="demarcheaza(id_litA316_ttl,id_litA316)" onMouseDown="plusMinus(id_litA316_short,id_litA316_bdy)">b)<!----></span> <span class="S_LIT_BDY" id="id_litA316_bdy">digitalizarea activităților microîntreprinderilor și întreprinderilor mici și mijlocii prin finanțarea investițiilor realizate pentru dezvoltarea și/sau achiziționarea de produse TIC.</span><span style="display: none" class="S_LIT_SHORT" id="id_litA316_short" onMouseOver="marcheaza(id_litA316_short,id_litA316)" onMouseOut="demarcheaza(id_litA316_short,id_litA316)" onMouseDown="plusMinus(id_litA316_short,id_litA316_bdy)"> ... </span></span></span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA317"><span class="S_ALN_TTL" id="id_litA317_ttl" onMouseOver="marcheaza(id_litA317_ttl,id_litA317)" onMouseOut="demarcheaza(id_litA317_ttl,id_litA317)" onMouseDown="plusMinus(id_litA317_short,id_litA317_bdy)">(2)<!----></span> <span class="S_ALN_BDY" id="id_litA317_bdy"> Regulile de acordare a ajutorului de stat vor fi prevăzute în cadrul schemelor de ajutor de stat și de minimis, ce vor fi aprobate prin ordin al ministrului fondurilor europene și al președintelui Autorității pentru Digitalizarea României, emis în termen de 45 de zile de la data intrării în vigoare a prezentei hotărâri, și în cadrul documentelor specifice apelurilor de proiecte. </span></span><span class="S_ALN" style="display: block; color:black;" id="id_litA318"><span class="S_ALN_TTL" id="id_litA318_ttl" onMouseOver="marcheaza(id_litA318_ttl,id_litA318)" onMouseOut="demarcheaza(id_litA318_ttl,id_litA318)" onMouseDown="plusMinus(id_litA318_short,id_litA318_bdy)">(3)<!----></span> <span class="S_ALN_BDY" id="id_litA318_bdy"> Regulile de acordare a ajutorului de stat și de minimis sunt prevăzute în cadrul Schemei de ajutor de minimis pentru creșterea contribuției sectorului TIC pentru competitivitatea economică, al Schemei de ajutor de stat pentru sprijinirea dezvoltării de produse și servicii TIC inovative create de IMM-uri, în cadrul axei prioritare 2, prioritatea de investiție 2b - Dezvoltarea produselor și serviciilor TIC, a comerțului electronic și a cererii de TIC, acțiunea 2.2.1 „Sprijinirea creșterii valorii adăugate generate de sectorul TIC și a inovării în domeniu prin dezvoltarea de clustere“, apelul 3, din Programul operațional Competitivitate 2014-2020 și al Schemei de ajutor de minimis „Digitalizarea IMM“.</span></span></span></span><span class="S_SMN"><br /><span class="S_SMN_PAR">PRIM-MINISTRU<!----></span><br /><span class="S_SMN_PAR">LUDOVIC ORBAN<!----></span><br /><span class="S_SMN_PAR">Contrasemnează:<!----></span><br /><span class="S_SMN_PAR">p. Ministrul fondurilor europene,<!----></span><br /><span class="S_SMN_PAR">Carmen Moraru,<!----></span><br /><span class="S_SMN_PAR">secretar de stat<!----></span><br /><span class="S_SMN_PAR">Președintele Autorității pentru Digitalizarea României,<!----></span><br /><span class="S_SMN_PAR">Ioan-Sabin Sărmaș<!----></span><br /><span class="S_SMN_PAR">Ministrul economiei, energiei și mediului de afaceri,<!----></span><br /><span class="S_SMN_PAR">Virgil-Daniel Popescu<!----></span><br /><span class="S_SMN_PAR">p. Ministrul mediului, apelor și pădurilor,<!----></span><br /><span class="S_SMN_PAR">Mircea Fechet,<!----></span><br /><span class="S_SMN_PAR">secretar de stat<!----></span><br /><span class="S_SMN_PAR">Ministrul finanțelor publice,<!----></span><br /><span class="S_SMN_PAR">Vasile-Florin Cîțu<!----></span></span><span class="S_PAR" style="display: block; color:black;" id="id_parA334">București, 14 august 2020.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA335">Nr. 677.<!----></span><span class="S_PAR" style="display: block; color:black;" id="id_parA338">-----<!----></span>
+                                    </div>
+                                    <div id="div_Formerepublicate" class="content_forma_act" style="display: none" data-state="empty"></div>
+                                    <div id="div_Formadebaza" class="content_forma_act" style="display: none" data-state="empty"></div>
+
+
+                        </div>
+
+                        <div id="fisa_act_container" style="display: none" data-id="FisaAct" data-state="empty">
+                                <div id="div_Actiunisuferite" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_ActiuniInduse" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_Referape" class="content_fisa_act" data-state="empty">
+                                </div>
+                                <div id="div_Referitde" class="content_fisa_act" data-state="empty">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+ 
+<script type="text/javascript">
+    if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+        $("#meniu").css("float", "left");
+        $("#meniu").css("width", "20%");
+        $(".affix-top").css("position", "fixed");
+        $(".affix-top").css("top", "20px");
+        $(".affix-bottom").css("top", "20px");
+        $("#infoactinfoact").css("float", "right");
+        $("#infoactinfoact").css("width", "79%");
+        //var naturalWidth = img.naturalWidth;
+        //var imagini = document.getElementsByTagName("img");
+        //for (i=0;i<imagini.length;i++)
+        //{
+         //   alert(imagini[i].naturalWidth);
+         //   imagini[i].setAttribute("style","max-width:"+imagini[i].naturalWidth+"px");
+       // }
+       //////$("#infoactinfoact img").css("max-width", +"px");
+        /////alert($("#infoactinfoact img").width);
+        $("#infoactinfoact img").css("width", "auto");
+         
+        
+ 
+    }
+    var sbarHeight = null;
+
+    $(function () {
+
+        if (document.getElementsByClassName("alert")[0])
+            document.getElementsByClassName("alert")[0].style.visibility = 'hidden';
+
+        document.getElementById("Actiunisuferite").checked = false;
+        document.getElementById("ActiuniInduse").checked = false;
+        document.getElementById("Referape").checked = false;
+        document.getElementById("Referitde").checked = false;
+
+        //alert(document.getElementById("header_wrapper").offsetHeight);
+        //alert(screen.height);
+
+        var inaltime_meniu_stanga = screen.height - document.getElementById("header_wrapper").offsetHeight;
+        //alert(inaltime_meniu_stanga);
+        //  document.getElementById("meniu_stanga").style.maxHeight = inaltime_meniu_stanga + "px";
+
+        if (window.location.href.indexOf("forma_de_baza") != -1) {
+            document.getElementById("Formadebaza").style.disabled = true;
+            document.getElementById("Formadebaza").nextSibling.style.disabled = true;
+        }
+
+        if (window.location.href.indexOf("isFormaDeBaza") != -1) {
+            if (document.getElementById('istoric_fa'))
+                document.getElementById('istoric_fa').style.display = 'none'
+            document.getElementById("Formadebaza").checked = true;
+        }
+
+        if (window.location.href.indexOf("#A") != -1) {
+            var id_elem = window.location.href.split("#")[1];
+            window.scrollTo(id_elem.offsetHeight, 0);
+        }
+        else
+            window.scrollTo(0, 0);
+
+        //alert(document.getElementById('menu'));
+
+        //afisare/ascundere radio buttons (forme consolidate, forme republicate, forma de baza)
+
+        if (window.innerWidth < 1010) {
+            document.getElementById('sidebar').id = 'sidebar1';
+            document.getElementById('meniutitlu').appendChild(document.getElementById('sidebar1'));
+            document.getElementById('sidebar1').style.display = 'block';
+        }
+
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        && location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - 0 //offsets for fixed header
+                    }, 50);
+                    return false;
+                }
+            }
+        });
+        //Executed on page load with URL containing an anchor tag.
+        if ($(location.href.split("#")[1])) {
+            var target = $('#' + location.href.split("#")[1]);
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 0 //offset height of header here too.
+                }, 50);
+                return false;
+            }
+        }
+        /*
+        $("#sidebar").affix({
+            offset: {
+                top: $("header").outerHeight(true),
+                bottom: $("footer").outerHeight(true)+10
+            }
+        });
+        */
+        //alert(inaltimediv);
+        //document.getElementsByClassName('meniuaffix')[0].style.maxHeight = inaltimediv + "px";
+      $(window).resize(function () {
+            doResizeMenu();
+        });
+        
+        // scroll pe meniu la incarcare pagina (onload jQuery)
+      doResizeMenu();
+      imgSIZE(); // redim poze
+
+      // inaltime initiala sidebar
+      if ($("#sidebar").html())
+          sbarHeight = $("#sidebar").height();
+      else
+          sbarHeight = $("#sidebar1").height();
+        
+      $(window).scroll(function () {
+          if (isScrolledIntoView($(".footer_logo"))) {
+              $("#sidebar").height(sbarHeight - 200);
+          }
+          else {
+              $("#sidebar").height(sbarHeight);
+          }
+      });
+
+      var _tipact = 1;
+        //alert(_tipact);
+        if ((_tipact == 3 || _tipact == 2) && window.location.href.indexOf('isFormaDeBaza') == -1)
+        {
+            if (document.getElementById('Formaconsolidata'))
+            {
+                document.getElementById('Formaconsolidata').checked = true;
+            }
+        }        
+        else
+        {
+            //republicare
+            if (_tipact == 4)
+            {
+                if (document.getElementById('Formerepublicate'))
+                {
+                    document.getElementById('Formerepublicate').checked = true;
+                }
+                else if (document.getElementById('Formadebaza'))
+                {
+                    document.getElementById('Formadebaza').checked = true;
+                }
+            }
+            else
+                if (document.getElementById('Formadebaza'))
+                {
+                    document.getElementById('Formadebaza').checked = true;
+                }
+        }
+        //republicata (fortez forma de baza)
+        if (_tipact == 5)
+        {
+            if (document.getElementById('Formaconsolidata'))
+            {
+                document.getElementById('Formaconsolidata').checked = true;
+            }
+        }
+
+    }); // onload jQuery END
+
+    function doResizeMenu() {
+        var proc = 65;
+        var wh = window.innerHeight;
+        var dy = Math.floor(proc*wh/100);
+        var inaltimediv = window.innerHeight;
+        //var inaltimediv = window.innerHeight - $('#header_footer').height() - 400; // $("#footer_wrapper").height();
+        var inaltimediv1 = window.innerHeight - $('#header_wrapper').height();
+        
+        $("#sidebar").height(dy);
+        $("#sidebar1").height(inaltimediv1);
+    }
+
+    function AfiseazaTextModificat(e) {
+        // console.log($(e).prop("checked"));
+    }
+    function toggle_cuprins() {
+        if (document.getElementById('tree_cuprins_act').style.display != 'none')
+            document.getElementById('tree_cuprins_act').style.display = 'none'
+        else
+            document.getElementById('tree_cuprins_act').style.display = 'block';
+    }
+
+    function toggle_fisaact() {
+        if (document.getElementById('content_fisaact').style.display != 'none') {
+            document.getElementById('label_fisaact_plus_minus').innerHTML = '+';
+            document.getElementById('content_fisaact').style.display = 'none'
+        }
+        else {
+            document.getElementById('label_fisaact_plus_minus').innerHTML = '&#8212;&#160;';
+            document.getElementById('content_fisaact').style.display = 'block';
+        }
+    }
+
+    function toggle_istoric_forme_actz() {
+        if (document.getElementById('istoric_fa').style.display != 'none') {
+            document.getElementById('istoric_fa').style.display = 'none';
+            document.getElementById('label_forme_actz').innerHTML = "&nbsp;&nbsp;&nbsp;+&nbsp;istoric consolidari";
+        }
+        else {
+            document.getElementById('istoric_fa').style.display = 'block';
+            document.getElementById('label_forme_actz').innerHTML = "&nbsp;&nbsp;&nbsp;&#8212;&nbsp;istoric consolidari";
+        }
+    }
+    function scroll_to_fa() {
+        if (document.getElementById('fa_selectata'))
+            document.getElementById('meniu_stanga').scrollTop = document.getElementById('fa_selectata').offsetTop;
+    }
+    function ArataFisaAct(elem) {
+        //alert(elem.id);
+        if (elem.id == 'Actiunisuferite')
+        {
+            if (document.getElementById('actiuni_suferite').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/actiuniSuferite", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('actiuni_suferite').style.height = '30px';
+                    document.getElementById('actiuni_suferite').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('actiuni_suferite').style.display == 'none')
+                document.getElementById('actiuni_suferite').style.display = 'block';            
+            else
+                document.getElementById('actiuni_suferite').style.display = 'none';
+            
+        }
+
+        if (elem.id == 'ActiuniInduse')
+        {
+            if (document.getElementById('actiuni_induse').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/actiuniInduse", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('actiuni_induse').style.height = '30px';
+                    document.getElementById('actiuni_induse').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('actiuni_induse').style.display == 'none')
+                document.getElementById('actiuni_induse').style.display = 'block';
+            else
+                document.getElementById('actiuni_induse').style.display = 'none';
+        }
+
+        if (elem.id == 'Referape')
+        {
+            if (document.getElementById('refera_pe').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/referaPe", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('refera_pe').style.height = '30px';
+                    document.getElementById('refera_pe').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('refera_pe').style.display == 'none')
+                document.getElementById('refera_pe').style.display = 'block';
+            else
+                document.getElementById('refera_pe').style.display = 'none';
+        }
+
+        if (elem.id == 'Referitde')
+        {
+            if (document.getElementById('referit_de').innerHTML == '')
+            {
+                $("#loaderDiv").show();
+                $.post("/Public/referitDe", { contor: document.getElementById('id_act').value }, function (result) {
+                    if (result.acte.indexOf('Nu exist') != -1)
+                        document.getElementById('referit_de').style.height = '30px';
+                    document.getElementById('referit_de').innerHTML = result.acte;
+                    $("#loaderDiv").hide();
+                });
+            }
+
+            if (document.getElementById('referit_de').style.display == 'none')
+                document.getElementById('referit_de').style.display = 'block';
+            else
+                document.getElementById('referit_de').style.display = 'none';
+        }
+        window.scrollTo(0, 0);
+
+    }
+    function alege_articol(tip, select) {
+        var element_selectat = select.options[select.selectedIndex].text;
+        var id_elem = '';
+
+        if (tip == 1)
+            id = "actiuni_suferite";
+        else if (tip == 2)
+            id = "actiuni_induse";
+        else if (tip == 3)
+            id = "refera_pe";
+        else
+            id = "referit_de";
+
+        var linii_tabel = document.getElementById(id).childNodes[4].childNodes[0].childNodes;
+
+        if (element_selectat == 'Toate sectiunile')
+            for (i = 0; i < linii_tabel.length; i++) {
+                linii_tabel[i].style.display = 'table-row';
+            }
+        else {
+            linii_tabel[0].style.display = 'table-row';
+            for (i = 1; i < linii_tabel.length; i++) {
+                var element_gasit = linii_tabel[i].childNodes[0].innerHTML;
+                if (element_selectat != element_gasit)
+                    linii_tabel[i].style.display = 'none';
+                else
+                    linii_tabel[i].style.display = 'table-row';
+            }
+        }
+    }
+
+    function alege_articol_ref(select) {
+        var element_selectat = select.options[select.selectedIndex].text;
+
+        $("#loaderDiv").show();
+        $.post("/Public/getReferitDe", { contor: document.getElementById('id_act').value, element: element_selectat }, function (result) {
+            if (result.acte.indexOf('Nu exist') != -1)
+                document.getElementById('referit_de').style.height = '30px';
+            document.getElementById('referit_de').innerHTML = result.acte;
+            $("#loaderDiv").hide();
+        });
+
+    }
+
+    function incarcaFormaDeBaza(contor) {
+        $.post("/Public/DetaliiDocument/229226", { isFormaDeBaza: true }, function (result) {
+            window.location.href = result.Url;
+        });
+    }
+    function myFunction() {
+        var latime = window.innerWidth;
+        if (latime < 1010) {
+            if (document.getElementById('sidebar')) {
+                document.getElementById('meniutitlu').appendChild(document.getElementById('sidebar'));
+                document.getElementById('sidebar').style.display = 'block';
+                // $("#sidebar").hide(); // display : none
+                // $("#sidebar").show(); // display : default
+                document.getElementById('sidebar').id = 'sidebar1';
+            }
+        }
+        else {
+            if (document.getElementById('sidebar1')) {
+                document.getElementById('meniu').insertBefore(document.getElementById('sidebar1'), document.getElementById('infoact'));
+                document.getElementById('sidebar1').style.display = 'block';
+                document.getElementById('sidebar1').id = 'sidebar';
+                setTimeout(function () { $("#sidebar").height(sbarHeight); }, 1000);
+                
+            }
+            else {
+                document.getElementById('meniu').insertBefore(document.getElementById('sidebar'), document.getElementById('infoact'));
+                document.getElementById('sidebar').style.display = 'block';
+                //document.getElementById('sidebar').id = 'sidebar';
+            }
+        }
+    }
+    //document.getElementById('menu').appendChild(document.getElementById('sidebar'));
+    //document.getElementById('sidebar').style.display = 'inline';
+    //document.getElementById('sidebar').style.zIndex = '999';
+    window.onresize = myFunction;
+
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    $(document).ready(function () {
+        doResizeMenu();
+    });
+    $(window).resize(function () {
+        doResizeMenu();
+    });
+</script>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+            <div class="clear"></div>
+ 
+        </div>
+        <footer>
+            <div id="footer_wrapper">
+                <div class="footer_wrapper_inner bs-docs-footer">
+                    <div class="footer_inner">
+                        <div class="footer_logo"></div>
+                        <ul class="top_menu">
+                            <li class="floatnone" style="margin-left: -70px;">
+                                <center>
+                                    <div style="max-width:1024px;">
+                                        <br /><img src="/Content/Images/Site/justitie_logo.png" style="max-width:90px; position:relative; z-index:9999; width:100%; margin-top:-35px;" align="left" alt="logo" />
+                                        <p style="text-transform:none;">Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României.</p>
+                                        <br />
+                                        <center><p style="text-transform:none;">Pentru informații detaliate despre celelalte programe cofinanțate de Uniunea Europeană, vă invităm să vizitați <a onmouseover="this.style.color = '#386897'" onmouseout="    this.style.color = '#ffffff'" style="color: #ffffff; font-weight:bold;" href="http://www.fonduri-ue.ro">www.fonduri-ue.ro</a>.</p></center>
+                                    </div>
+                                </center>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_inner">
+                        <div class="copyright left">
+                            Copyright &copy; 2021 - Ministerul Justiției. Toate drepturile rezervate. - <a href="/Public/Termeni">Termeni și Condiții</a>
+                            <div id="meniufooter">
+
+                            </div>
+                        </div>
+                        <div class="copyright right">        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/Acasa">
+
+    &nbsp;&#124;&nbsp;Acasă
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/NLEX">
+
+    &nbsp;&#124;&nbsp;Despre Proiect
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/Functionalitati">
+
+    &nbsp;&#124;&nbsp;Facilități Oferite 
+
+</a>
+        </li>
+        <li class="meniufooter">
+            <a style="color: #386897;" onmouseover="this.style.color = '#fafafa'" onmouseout="this.style.color = '#386897'" href="/Public/LegaturiUtile">
+
+    &nbsp;&#124;&nbsp;Legături Utile
+
+</a>
+        </li>
+
+
+</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.toggle-menu').jPushMenu();
+
+                $('ul.mainmenu li.dropdown').hover(function () {
+                    $(this).find('a.main_link').addClass('active');
+                    $(this).find('.level2_menu').show();
+                    $('li.dropdown_2').hover(function () {
+                        $(this).find('a.second_link').addClass('second_active');
+                        $(this).find('.level3_menu').show();
+
+                    }, function () {
+                        $(this).find('a.second_link').removeClass('second_active');
+                        $('.level3_menu').hide();
+                    });
+
+                }, function () {
+                    $(this).find('a.main_link').removeClass('active');
+                    $('.level2_menu').hide();
+                });
+    
+                if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+
+                    $('#mesajIe8Modal').modal('show');
+
+                }
+            });
+            //
+
+
+
+            $(document).ready(function () {
+
+
+                //stick in the fixed 100% height behind the navbar but don't wrap it
+                $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
+
+                $('#slide-nav.navbar-default').after($('<div id="navbar-height-col"></div>'));
+
+                // Enter your ids or classes
+                var toggler = '.navbar-toggle';
+                var pagewrapper = '#page-content';
+                var navigationwrapper = '.navbar-header';
+                var menuwidth = '100%'; // the menu inside the slide menu itself
+                var slidewidth = '60%';
+                var menuneg = '-100%';
+                var slideneg = '-60%';
+
+
+                $("#slide-nav").on("click", toggler, function (e) {
+
+                    var selected = $(this).hasClass('slide-active');
+
+                    $('#slidemenu').stop().animate({
+                        left: selected ? menuneg : '0px'
+                    });
+
+                    $('#navbar-height-col').stop().animate({
+                        left: selected ? slideneg : '0px'
+                    });
+
+                    $(pagewrapper).stop().animate({
+                        left: selected ? '0px' : slidewidth
+                    });
+
+                    $(navigationwrapper).stop().animate({
+                        left: selected ? '0px' : slidewidth
+                    });
+
+
+                    $(this).toggleClass('slide-active', !selected);
+                    $('#slidemenu').toggleClass('slide-active');
+
+
+                    $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+
+
+                });
+
+
+                var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+
+
+                $(window).on("resize", function () {
+
+                    if ($(window).width() > 1010 && $('.navbar-toggle').is(':hidden')) {
+                        $(selected).removeClass('slide-active');
+                    }
+
+
+                });
+
+
+            });
+        </script>
+        
+    </div>
+    <script>
+
+        function replaceScript() {
+            var toReplace = '<a href="javascript:;">Proiect</a>';
+            var replaceWith = '';
+            document.body.innerHTML = document.body.innerHTML.replace(toReplace, replaceWith);
+        }
+        replaceScript();
+
+        if (navigator.appVersion.indexOf("MSIE 8.") != -1) {
+            $("#toTop").hide();
+            $(".meniunu").hide();
+            $(".icon-bar").hide();
+            $("#btnNavbar").hide();
+            $(".navbar-header").hide();
+            $("body").css("min-width", "600px");
+
+        }
+
+       /* if (navigator.appName.indexOf("Netscape") != -1) {
+            $("#page_wrapper").css("transform", "scale(0.8)");
+            alert(0);
+            $("#page_wrapper").css("transform-origin", "50% 0% ");
+        }*/
+    </script>
+    
+    <!-- BETA Mesaj -->
+    <div class="modal fade" id="mesajBetaModal" tabindex="-1" role="dialog" aria-labelledby="mesajBetaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 700px; margin: 5% auto; ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Inchide</span></button>
+                    <br /><div class="alert alert-danger" role="alert"> <center>Versiune Beta</center></div>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        A fost lansata versiunea Beta a Portalului Legislativ<br /><br /><br />
+                    Fiind o versiune Beta, este posibil ca unele facilitati sa nu functioneze in mod corect.</center>  
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Inchide mesajul de atentionare</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- IE8 Mesaj -->
+    <div class="modal fade" id="mesajIe8Modal" tabindex="-1" role="dialog" aria-labelledby="mesajIe8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 700px; margin: 5% auto; ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Inchide</span></button>
+                    <br /><div class="alert alert-danger" role="alert"> <center>Datorita faptului ca folositi o versiune de Internet Explorer (Internet Explorer 8) foarte veche este posibil ca unele functionalitati sa fie dezactivate sau sa nu functioneze corect!</center></div>
+                </div>
+                <div class="modal-body">
+                    <div style="width:100%;">
+                        <div style="width:50%; float:left; text-transform:uppercase;">
+                            <span style="font-size:18px; font-weight:bold; text-transform:none;">Ce browser sa aleg?</span>
+                            <br /><br /><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/chrome.jpg" align="left" width="69" style="padding-right:10px;" /><b>Google Chrome</b><br />
+                                <br /><a href="http://www.google.com/chrome" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/firefox.jpg" align="left" width="69" style="padding-right:10px;" /><b>Mozilla Firefox</b><br />
+                                <br /><a href="https://www.mozilla.org/en-US/firefox/all/?q=romania" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/ie.jpg" align="left" width="69" style="padding-right:10px;" /><b>Internet Explorer</b><br />
+                                <br />
+                                <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div><br />
+                            <div class="row">
+                                <img src="/Content/Images/Site/browsere/safari.jpg" align="left" width="69" style="padding-right:10px;" /><b>Apple Safari</b><br />
+                                <br /><a href="http://www.apple.com/safari/" target="_blank"><span style="text-transform:none; font-size:13px;">Descarca Browser</span></a>
+                            </div>
+                        </div>
+                        <div style="width:50%; float:left;">
+                            <span style="font-size:18px; font-weight:bold;">De ce sa actualizez browserul?</span>
+                            <br /><br /><br />
+                            Browserele invechite, cum ar fi Internet Explorer 8 (lansat în 2001) nu respecta standardele web, nu ofera unele facilitati noi browser-ului, cum ar fi de navigatie sau descarcare, managerul de tab-uri, si au probleme de securitate.
+                            <br /><br />
+                            Aceasta afecteaza, de asemenea, calitatea de redare site-uri web.
+                            <br /><br /><br />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Inchide mesajul de atentionare</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

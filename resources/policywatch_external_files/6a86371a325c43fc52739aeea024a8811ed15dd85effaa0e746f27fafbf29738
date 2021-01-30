@@ -1,0 +1,975 @@
+
+<!doctype html>
+<html lang="sk-SK"
+	prefix="og: https://ogp.me/ns#" >
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+
+
+	<!-- old bxslider links
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	-->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/favicon.png" />
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://www.ozkovo.sk/wp-content/themes/ozkovo/style.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="https://www.ozkovo.sk/wp-content/themes/ozkovo/print.css" />
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script-->
+
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function($) {
+		$('.sliderwrap').bxSlider({
+				mode: 'fade',
+				auto: true,
+				controls: false,
+				speed: 2000,
+				adaptiveHeight: true,
+				responsive: true,
+				pager: true
+			});
+		
+		$('.slidebenefits').bxSlider({
+				mode: 'horizontal',
+				//auto: true,
+				controls: true,
+				//speed: 2000,
+				//adaptiveHeight: false,
+				//responsive: true,
+				pager: false,
+				slideWidth: 300,
+				slideMargin: 10,
+				minSlides:2,
+				maxSlides:3
+			});
+		
+		});
+	//]]>
+  	</script>
+
+	<script type="text/javascript">
+/*
+	jQuery(document).ready(function($) {
+		$(window).load(function(){
+		    $(window).resize(function(){
+		      var width = $('.bx-wrapper').width() - 980; //$(this).height() - $("#header").height() + $("#footer").height() - 35
+		      var margin = width /2 -50;
+		      var margintext = width/2 - 220;
+		      //$('#wrap').height(height);
+		      $('.bx-prev').css('left', margin); 
+		      $('.bx-next').css('right', margin);
+		      $('.containergal').css('left', margintext);
+		      //$('.bx-wrapper .containergal').css('left', margin - 160);
+		    });
+	    $(window).resize();
+	  });
+	});
+	*/
+	</script>
+
+	
+<!-- All In One SEO Pack 3.7.1[,] -->
+<script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.ozkovo.sk/#organization","url":"https://www.ozkovo.sk/","name":"Odborový zväz KOVO","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://www.ozkovo.sk/#logo","url":"https://www.ozkovo.sk/wp-content/uploads/2019/09/logo_mini.png","caption":""},"image":{"@id":"https://www.ozkovo.sk/#logo"}},{"@type":"WebSite","@id":"https://www.ozkovo.sk/#website","url":"https://www.ozkovo.sk/","name":"Odborový zväz KOVO","publisher":{"@id":"https://www.ozkovo.sk/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.ozkovo.sk/?s={search_term_string}","query-input":"required name=search_term_string"}}]}</script>
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-82324131-1', { 'cookieDomain': 'www.ozkovo.sk' } );
+				// Plugins
+				
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<!-- All In One SEO Pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ozkovo.sk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='cnss_font_awesome_css-css'  href='https://www.ozkovo.sk/wp-content/plugins/easy-social-icons/css/font-awesome/css/all.min.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cnss_font_awesome_v4_shims-css'  href='https://www.ozkovo.sk/wp-content/plugins/easy-social-icons/css/font-awesome/css/v4-shims.min.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cnss_css-css'  href='https://www.ozkovo.sk/wp-content/plugins/easy-social-icons/css/cnss.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.ozkovo.sk/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ugb-style-css-css'  href='https://www.ozkovo.sk/wp-content/plugins/stackable-ultimate-gutenberg-blocks/dist/frontend_blocks.css?ver=2.12.2' type='text/css' media='all' />
+<style id='ugb-style-css-inline-css' type='text/css'>
+:root {
+			--content-width: 900px;
+		}
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='https://www.ozkovo.sk/wp-includes/css/dashicons.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.ozkovo.sk/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.3' type='text/css' media='all' />
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+</style>
+<link rel='stylesheet' id='simplelightbox-0-css'  href='https://www.ozkovo.sk/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/simplelightbox/simple-lightbox.css?ver=3.3.20' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Fira+Sans%3A400%2C400i%2C700%2C700i%7COpen+Sans%3A400%2C400i%2C700%2C700i&#038;subset=latin-ext&#038;ver=5.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4' id='jquery-ui-widget-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/easy-social-icons/js/cnss.js?ver=1.0' id='cnss_js-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4' id='jquery-ui-draggable-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4' id='jquery-ui-slider-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2' id='jquery-touch-punch-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-admin/js/iris.min.js?ver=5.5.3' id='iris-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-admin/js/color-picker.js?ver=5.5.3' id='wp-color-picker-js'></script>
+<script type='text/javascript' id='ugb-block-frontend-js-js-extra'>
+/* <![CDATA[ */
+var stackable = {"restUrl":"https:\/\/www.ozkovo.sk\/wp-json\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/stackable-ultimate-gutenberg-blocks/dist/frontend_blocks.js?ver=2.12.2' id='ugb-block-frontend-js-js'></script>
+<script type='text/javascript' id='photocrati_ajax-js-extra'>
+/* <![CDATA[ */
+var photocrati_ajax = {"url":"https:\/\/www.ozkovo.sk\/index.php?photocrati_ajax=1","wp_home_url":"https:\/\/www.ozkovo.sk","wp_site_url":"https:\/\/www.ozkovo.sk","wp_root_url":"https:\/\/www.ozkovo.sk","wp_plugins_url":"https:\/\/www.ozkovo.sk\/wp-content\/plugins","wp_content_url":"https:\/\/www.ozkovo.sk\/wp-content","wp_includes_url":"https:\/\/www.ozkovo.sk\/wp-includes\/","ngg_param_slug":"nggallery"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ajax/static/ajax.min.js?ver=3.3.20' id='photocrati_ajax-js'></script>
+<link rel="https://api.w.org/" href="https://www.ozkovo.sk/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ozkovo.sk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ozkovo.sk/wp-includes/wlwmanifest.xml" /> 
+<style type="text/css">
+		ul.cnss-social-icon li.cn-fa-icon a:hover{opacity: 0.7!important;color:#ffffff!important;}
+		</style><!-- <meta name="NextGEN" version="3.3.20" /> -->
+<style type="text/css">.blue-message {
+background: none repeat scroll 0 0 #3399ff;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.green-message {
+background: none repeat scroll 0 0 #8cc14c;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.orange-message {
+background: none repeat scroll 0 0 #faa732;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.red-message {
+background: none repeat scroll 0 0 #da4d31;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.grey-message {
+background: none repeat scroll 0 0 #53555c;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.left-block {
+background: none repeat scroll 0 0px, radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+color: #8b8e97;
+padding: 10px;
+margin: 10px;
+float: left;
+} 
+.right-block {
+background: none repeat scroll 0 0px, radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+color: #8b8e97;
+padding: 10px;
+margin: 10px;
+float: right;
+} 
+.blockquotes {
+background: none;
+border-left: 5px solid #f1f1f1;
+color: #8B8E97;
+font-size: 14px;
+font-style: italic;
+line-height: 22px;
+padding-left: 15px;
+padding: 10px;
+width: 60%;
+float: left;
+} 
+</style></head>
+
+<body class="error404">
+
+
+	<div class="wrapperzzz">
+
+		<div id="header">
+			<div id="topheader">
+				<div class="container"><div class="paddinglr">
+
+										  	<div class="phone topitem"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/phone.png" alt="" />0421-2-32441 174</div>
+										  	<div class="email topitem"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/email.png" alt="" />info@ozkovo.sk</div>
+										  	<div class="address topitem">Miletičova 24, 815 70 Bratislava 1</div>
+					
+					<div class="login right">
+						<img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/login.png" alt="" />
+													    <a title="Prihlásenie" href="https://www.ozkovo.sk/prihlasenie">Prihlásenie</a>
+														
+					</div>
+					<div class="clear"></div>
+				</div></div>
+			</div>
+
+			<div id="bottomheader"><div class="container"><div class="padding">
+					<div id="logo" onclick="window.location.href='https://www.ozkovo.sk'" style="cursor: pointer;" title="Odborový zväz KOVO"></div>
+						<div id="wrapmenu">
+		<div class="searchform"><div class="searchformtop">
+    <div class="form">
+        <form role="search" method="get" id="searchformtop" action="https://www.ozkovo.sk/">
+           	<input type="submit" value="" id="searchsubmittop" name="submit">
+           	<input type="text" placeholder="Hľadať" id="stop" name="s" value="">
+ 		</form>
+    </div>
+    <div class="clear"></div>
+</div>		<div class="clear"></div></div>
+		
+		<div id="menu">   
+	    <ul id="menu-headermenu" class="menu"><li id="menu-item-119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-119"><a href="#">Aktuality</a>
+<ul class="sub-menu">
+	<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8"><a href="https://www.ozkovo.sk/clanky/">Články</a>
+	<ul class="sub-menu">
+		<li id="menu-item-551" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-551"><a href="https://www.ozkovo.sk/clanky/aktuality/">Aktuality</a></li>
+		<li id="menu-item-117" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-117"><a href="https://www.ozkovo.sk/clanky/archiv/">Archív</a>
+		<ul class="sub-menu">
+			<li id="menu-item-118" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-118"><a href="https://www.ozkovo.sk/clanky/archiv/2014/">2014</a></li>
+			<li id="menu-item-188" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188"><a href="https://www.ozkovo.sk/clanky/archiv/2015/">2015</a></li>
+			<li id="menu-item-246" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-246"><a href="https://www.ozkovo.sk/clanky/archiv/2016/">2016</a></li>
+			<li id="menu-item-312" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-312"><a href="https://www.ozkovo.sk/clanky/archiv/2017/">2017</a></li>
+			<li id="menu-item-389" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-389"><a href="https://www.ozkovo.sk/clanky/archiv/2018/">2018</a></li>
+			<li id="menu-item-406" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-406"><a href="https://www.ozkovo.sk/clanky/archiv/2019/">2019</a></li>
+			<li id="menu-item-2837" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2837"><a href="https://www.ozkovo.sk/clanky/archiv/2020/">2020</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-740"><a href="https://www.ozkovo.sk/casopis-priority/">Časopis Priority</a>
+	<ul class="sub-menu">
+		<li id="menu-item-742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-742"><a href="https://www.ozkovo.sk/casopis-priority/redakcia/">Redakcia</a></li>
+		<li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="https://www.ozkovo.sk/casopis-priority/redakcna-rada/">Redakčná rada</a></li>
+		<li id="menu-item-741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-741"><a href="https://www.ozkovo.sk/casopis-priority/archiv/">Archív</a></li>
+	</ul>
+</li>
+	<li id="menu-item-747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-747"><a href="https://www.ozkovo.sk/tlacove-spravy/">Tlačové správy</a></li>
+	<li id="menu-item-746" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-746"><a href="https://www.ozkovo.sk/napisali-o-nas/">Napísali o nás</a></li>
+	<li id="menu-item-752" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-752"><a href="https://www.ozkovo.sk/foto-a-video/">Foto a video</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1966" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1966"><a href="https://www.ozkovo.sk/foto-a-video/2010/">2010</a></li>
+		<li id="menu-item-754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-754"><a href="https://www.ozkovo.sk/foto-a-video/2011/">2011</a></li>
+		<li id="menu-item-755" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-755"><a href="https://www.ozkovo.sk/foto-a-video/2012/">2012</a></li>
+		<li id="menu-item-756" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-756"><a href="https://www.ozkovo.sk/foto-a-video/2013/">2013</a></li>
+		<li id="menu-item-757" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-757"><a href="https://www.ozkovo.sk/foto-a-video/2014-foto-a-video/">2014</a></li>
+		<li id="menu-item-758" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-758"><a href="https://www.ozkovo.sk/foto-a-video/2015-foto-a-video/">2015</a></li>
+		<li id="menu-item-759" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-759"><a href="https://www.ozkovo.sk/foto-a-video/2016-foto-a-video/">2016</a></li>
+		<li id="menu-item-760" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-760"><a href="https://www.ozkovo.sk/foto-a-video/2017-foto-a-video/">2017</a></li>
+		<li id="menu-item-761" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-761"><a href="https://www.ozkovo.sk/foto-a-video/2018-foto-a-video/">2018</a></li>
+		<li id="menu-item-762" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-762"><a href="https://www.ozkovo.sk/foto-a-video/2019-foto-a-video/">2019</a></li>
+		<li id="menu-item-2839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2839"><a href="https://www.ozkovo.sk/foto-a-video/2020-foto-a-video/">2020</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9"><a href="https://www.ozkovo.sk/o-nas/">O nás</a>
+<ul class="sub-menu">
+	<li id="menu-item-1341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1341"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/">História OZ KOVO</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/historia-zjazdov-oz-kovo/">História zjazdov OZ KOVO</a></li>
+		<li id="menu-item-1342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1342"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/25-rokov-oz-kovo/">25 rokov OZ KOVO</a></li>
+		<li id="menu-item-1344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1344"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/strucna-historia-vzniku-odborov-na-nasom-uzemi/">Stručná história vzniku odborov na našom území</a></li>
+	</ul>
+</li>
+	<li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="https://www.ozkovo.sk/o-nas/posobnost/">Pôsobnosť OZ KOVO</a></li>
+	<li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557"><a href="https://www.ozkovo.sk/o-nas/ciele-a-poslanie/">Ciele a poslanie</a></li>
+	<li id="menu-item-575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-575"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/">Orgány OZ KOVO</a>
+	<ul class="sub-menu">
+		<li id="menu-item-581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-581"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/zjazd-odboroveho-zvazu/">zjazd odborového zväzu</a></li>
+		<li id="menu-item-580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/rada-odboroveho-zvazu/">rada odborového zväzu</a></li>
+		<li id="menu-item-579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-579"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/predsednictvo-odboroveho-zvazu/">predsedníctvo odborového zväzu</a></li>
+		<li id="menu-item-578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-578"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/regionalna-rada-predsedov/">regionálna rada odborového zväzu</a></li>
+		<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/vybor-mandatoveho-obvodu-odboroveho-zvazu/">výbor mandatového obvodu odborového zväzu</a></li>
+		<li id="menu-item-576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/revizna-komisia-odboroveho-zvazu/">revízna komisia odborového zväzu</a></li>
+	</ul>
+</li>
+	<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="https://www.ozkovo.sk/o-nas/clenstvo-oz-kovo/">Členstvo OZ KOVO</a></li>
+	<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-649"><a href="https://www.ozkovo.sk/o-nas/komisie/">Komisie</a>
+	<ul class="sub-menu">
+		<li id="menu-item-663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663"><a href="https://www.ozkovo.sk/o-nas/komisie/legislativno-pravna-komisia/">Legislatívno právna komisia</a></li>
+		<li id="menu-item-651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-651"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-mladych/">Komisia mladých</a>
+		<ul class="sub-menu">
+			<li id="menu-item-720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-mladych/clenovia-komisie-mladych/">Členovia komisie</a></li>
+			<li id="menu-item-713" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-713"><a href="https://www.ozkovo.sk/aktivity-mladych-kovakov/">Aktivity komisie</a></li>
+		</ul>
+</li>
+		<li id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-bozp/">Komisia pre BOZP</a></li>
+		<li id="menu-item-653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-653"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/">Komisia pre kolektívne vyjednávanie</a>
+		<ul class="sub-menu">
+			<li id="menu-item-654" class="bytpodnik menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-bytove-hospodarstvo/"><span></span>Komisia KV pre bytové hospodárstvo</a></li>
+			<li id="menu-item-655" class="doprava menu-item menu-item-type-post_type menu-item-object-page menu-item-655"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-dopravu/"><span></span>Komisia KV pre dopravu</a></li>
+			<li id="menu-item-656" class="hasici menu-item menu-item-type-post_type menu-item-object-page menu-item-656"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-hazz/"><span></span>Komisia KV pre HaZZ</a></li>
+			<li id="menu-item-657" class="elektro menu-item menu-item-type-post_type menu-item-object-page menu-item-657"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-elektrotechnickeho-priemyslu/"><span></span>Komisia KV pre oblasť elektrotechnického priemyslu</a></li>
+			<li id="menu-item-658" class="hutnici menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-hutnickeho-priemyslu/"><span></span>Komisia KV pre oblasť hutníckeho priemyslu</a></li>
+			<li id="menu-item-659" class="sklari menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-sklarskeho-priemyslu/"><span></span>Komisia KV pre oblasť sklárskeho priemyslu</a></li>
+			<li id="menu-item-660" class="strojari menu-item menu-item-type-post_type menu-item-object-page menu-item-660"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-strojarskeho-priemyslu/"><span></span>Komisia KV pre oblasť strojárskeho priemyslu</a></li>
+		</ul>
+</li>
+		<li id="menu-item-662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-662"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-vzdelavanie/">Komisia pre vzdelávanie</a></li>
+		<li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-rovnost-prilezitosti/">Komisia pre rovnosť príležitostí</a></li>
+		<li id="menu-item-650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-automotiv/">Komisia AUTOMOTIV</a></li>
+	</ul>
+</li>
+	<li id="menu-item-494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494"><a href="https://www.ozkovo.sk/o-nas/20-dovodov-preco-byt-v-odboroch/">20 dôvodov prečo byť v odboroch</a></li>
+</ul>
+</li>
+<li id="menu-item-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-95"><a href="https://www.ozkovo.sk/kampane/">Kampane</a>
+<ul class="sub-menu">
+	<li id="menu-item-449" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-449"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/">Staň sa členom OZ KOVO</a>
+	<ul class="sub-menu">
+		<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="https://www.ozkovo.sk/vyhody-pre-clenov/">Výhody KOVO</a></li>
+		<li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-452"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/ako-sa-stat-clenom/">Ako sa stať členom</a></li>
+		<li id="menu-item-492" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-492"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/preco-sa-stat-clenom-oz-kovo/">Prečo sa stať členom OZ KOVO?</a></li>
+		<li id="menu-item-622" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-622"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/propagacne-materialy-stan-sa-clenom-oz-kovo/">Propagačné materiály</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1329" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1329"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/">OZ KOVO kampane</a>
+	<ul class="sub-menu">
+		<li id="menu-item-708" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-708"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/skor-do-dochodku/">Skôr do dôchodku</a>
+		<ul class="sub-menu">
+			<li id="menu-item-709" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-709"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/skor-do-dochodku/aktuality-skor-do-dochodku/">Aktuality</a></li>
+			<li id="menu-item-712" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-712"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/skor-do-dochodku/propagacne-materialy/">Propagačné materiály</a></li>
+		</ul>
+</li>
+		<li id="menu-item-190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-190"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/kampan-na-podporu-kolektivneho-vyjednavania/">Kampaň na podporu kolektívneho vyjednávania</a></li>
+		<li id="menu-item-451" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-451"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/za-vyssie-mzdy/">Za vyššie mzdy</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1328" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1328"><a href="https://www.ozkovo.sk/kampane/medzinarodne-kampane/">Medzinárodné kampane</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1330" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1330"><a href="https://www.ozkovo.sk/kampane/medzinarodne-kampane/together-at-work/">Together at work</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-917" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-917"><a href="https://www.ozkovo.sk/dokumenty/">Dokumenty</a>
+<ul class="sub-menu">
+	<li id="menu-item-927" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927"><a href="https://www.ozkovo.sk/dokumenty/legislativa-sr/">Legislatíva SR</a></li>
+	<li id="menu-item-924" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-924"><a href="https://www.ozkovo.sk/dokumenty/legislativa-eu/">Legislatíva EÚ</a>
+	<ul class="sub-menu">
+		<li id="menu-item-925" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-925"><a href="https://www.ozkovo.sk/dokumenty/legislativa-eu/dohovory-mop/">Dohovory MOP</a></li>
+		<li id="menu-item-926" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-926"><a href="https://www.ozkovo.sk/dokumenty/legislativa-eu/europska-socialna-charta/">Európska sociálna charta</a></li>
+	</ul>
+</li>
+	<li id="menu-item-920" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-920"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/">KV/KZVS</a>
+	<ul class="sub-menu">
+		<li id="menu-item-921" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-921"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/aktuality-kv-kzvs/">Aktuality</a></li>
+		<li id="menu-item-922" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-922"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/ekonomicke-udaje/">Ekonomické údaje</a></li>
+		<li id="menu-item-923" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-923"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/">Platné KZVS</a>
+		<ul class="sub-menu">
+			<li id="menu-item-938" class="strojari menu-item menu-item-type-taxonomy menu-item-object-category menu-item-938"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-strojarskeho-priemyslu/"><span></span>pre oblasť strojárskeho priemyslu</a></li>
+			<li id="menu-item-936" class="hutnici menu-item menu-item-type-taxonomy menu-item-object-category menu-item-936"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-hutnickeho-priemyslu/"><span></span>pre oblasť hutníckeho priemyslu</a></li>
+			<li id="menu-item-935" class="elektro menu-item menu-item-type-taxonomy menu-item-object-category menu-item-935"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-elektrotechnickeho-priemyslu/"><span></span>pre oblasť elektrotechnického priemyslu</a></li>
+			<li id="menu-item-937" class="sklari menu-item menu-item-type-taxonomy menu-item-object-category menu-item-937"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-sklarskeho-priemyslu/"><span></span>pre oblasť sklárskeho priemyslu</a></li>
+			<li id="menu-item-939" class="doprava menu-item menu-item-type-taxonomy menu-item-object-category menu-item-939"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-verejnej-cestnej-dopravy/"><span></span>pre oblasť verejnej cestnej dopravy</a></li>
+			<li id="menu-item-933" class="bytpodnik menu-item menu-item-type-taxonomy menu-item-object-category menu-item-933"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-bytoveho-hospodarstva/"><span></span>pre oblasť bytového hospodárstva</a></li>
+			<li id="menu-item-940" class="hasici menu-item menu-item-type-taxonomy menu-item-object-category menu-item-940"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-prislusnikov-hasicskeho-a-zachranneho-zboru/"><span></span>pre príslušníkov hasičského a záchranného zboru</a></li>
+			<li id="menu-item-942" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-942"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-verejnu-sluzbu/">pre verejnú službu</a></li>
+			<li id="menu-item-941" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-941"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-statnu-sluzbu/">pre štátnu službu</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1031" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1031"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/rozsirovanie/">Rozširovanie</a></li>
+	</ul>
+</li>
+	<li id="menu-item-918" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-918"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/">Dokumenty OZ KOVO</a>
+	<ul class="sub-menu">
+		<li id="menu-item-943" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-943"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/stanoviska/">Stanoviská</a></li>
+		<li id="menu-item-919" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-919"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/metodicke-usmernenia/">Metodické usmernenia</a></li>
+		<li id="menu-item-944" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-944"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/vnutrozvazove-dokumenty/">Vnútrozväzové dokumenty</a></li>
+	</ul>
+</li>
+	<li id="menu-item-928" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-928"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/">Medzinárodné informácie</a>
+	<ul class="sub-menu">
+		<li id="menu-item-929" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-929"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/aktuality-medzinarodne-informacie/">Aktuality</a></li>
+		<li id="menu-item-931" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-931"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/nadnarodne-struktury/">Nadnárodné štruktúry</a></li>
+		<li id="menu-item-932" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-932"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/odbory-v-zahranici/">Odbory v zahraničí</a></li>
+		<li id="menu-item-930" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/archiv-medzinarodne-informacie/">Archív</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-873" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-873"><a href="https://www.ozkovo.sk/poradenstvo/">Poradenstvo</a>
+<ul class="sub-menu">
+	<li id="menu-item-2269" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2269"><a href="https://www.ozkovo.sk/poradenstvo/koronavirus-informacie-pre-zamestnancov/">Koronavirus &#8211; informácie pre zamestnancov</a></li>
+	<li id="menu-item-1886" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1886"><a href="https://www.ozkovo.sk/poradenstvo/zalozenie-odborov-v-podniku/">Ako založiť odbory v podniku</a></li>
+	<li id="menu-item-878" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-878"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/">Pracovno-právna poradňa</a></li>
+	<li id="menu-item-874" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-874"><a href="https://www.ozkovo.sk/poradenstvo/bozp/">BOZP</a>
+	<ul class="sub-menu">
+		<li id="menu-item-875" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-875"><a href="https://www.ozkovo.sk/poradenstvo/bozp/aktualne-informacie/">Aktuálne informácie</a></li>
+		<li id="menu-item-877" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-877"><a href="https://www.ozkovo.sk/poradenstvo/bozp/pravne-predpisy/">Právne predpisy</a></li>
+		<li id="menu-item-876" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-876"><a href="https://www.ozkovo.sk/poradenstvo/bozp/letaky/">Letáky</a></li>
+	</ul>
+</li>
+	<li id="menu-item-879" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-879"><a href="https://www.ozkovo.sk/poradenstvo/socialne/">Sociálne</a>
+	<ul class="sub-menu">
+		<li id="menu-item-882" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-882"><a href="https://www.ozkovo.sk/poradenstvo/socialne/socialny-fond/">Sociálny fond</a></li>
+		<li id="menu-item-880" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-880"><a href="https://www.ozkovo.sk/poradenstvo/socialne/garancny-fond/">Garančný fond</a></li>
+		<li id="menu-item-881" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-881"><a href="https://www.ozkovo.sk/poradenstvo/socialne/socialna-vypomoc/">Sociálna výpomoc</a></li>
+	</ul>
+</li>
+	<li id="menu-item-883" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-883"><a href="https://www.ozkovo.sk/poradenstvo/vzdelavanie/">Vzdelávanie</a>
+	<ul class="sub-menu">
+		<li id="menu-item-885" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-885"><a href="https://www.ozkovo.sk/poradenstvo/vzdelavanie/dokumenty-vzdelavanie/">Dokumenty</a></li>
+		<li id="menu-item-884" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-884"><a href="https://www.ozkovo.sk/poradenstvo/vzdelavanie/aktualne-informacie-vzdelavanie/">Aktuálne informácie</a>
+		<ul class="sub-menu">
+			<li id="menu-item-947" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-947"><a href="https://www.ozkovo.sk/poradenstvo/vase-otazky/">Vaše otázky</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-86"><a href="https://www.ozkovo.sk/kontakt/">Kontakt</a>
+<ul class="sub-menu">
+	<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="https://www.ozkovo.sk/kontakt/kontakt-pre-media/">Kontakt pre médiá</a></li>
+	<li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a href="https://www.ozkovo.sk/kontakt/centrala-oz-kovo/">Centrála OZ KOVO</a></li>
+	<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://www.ozkovo.sk/kontakt/vedenie-oz-kovo/">Vedenie OZ KOVO</a></li>
+	<li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a href="https://www.ozkovo.sk/kontakt/predsednictvo-oz-kovo/">Predsedníctvo OZ KOVO</a></li>
+	<li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="https://www.ozkovo.sk/kontakt/metodicke-pracoviska/">Metodické pracoviská</a></li>
+</ul>
+</li>
+</ul>	    <div class="clear"></div>
+		</div>
+	</div>				<div class="clear"></div>
+			</div></div></div>
+
+			<div class="menuresp">
+					<div id="logomini" onclick="window.location.href='https://www.ozkovo.sk'" style="cursor: pointer;" title="Odborový zväz KOVO"></div>
+	<label for="menu-toggle" class="menu-toggle">&#9776;</label>
+	<input type="checkbox" id="menu-toggle"/>
+
+	<div id="menut">
+		<ul id="menuresp" class="small-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-119"><a href="#">Aktuality</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8"><a href="https://www.ozkovo.sk/clanky/">Články</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-551"><a href="https://www.ozkovo.sk/clanky/aktuality/">Aktuality</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-117"><a href="https://www.ozkovo.sk/clanky/archiv/">Archív</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-118"><a href="https://www.ozkovo.sk/clanky/archiv/2014/">2014</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188"><a href="https://www.ozkovo.sk/clanky/archiv/2015/">2015</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-246"><a href="https://www.ozkovo.sk/clanky/archiv/2016/">2016</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-312"><a href="https://www.ozkovo.sk/clanky/archiv/2017/">2017</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-389"><a href="https://www.ozkovo.sk/clanky/archiv/2018/">2018</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-406"><a href="https://www.ozkovo.sk/clanky/archiv/2019/">2019</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2837"><a href="https://www.ozkovo.sk/clanky/archiv/2020/">2020</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-740"><a href="https://www.ozkovo.sk/casopis-priority/">Časopis Priority</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-742"><a href="https://www.ozkovo.sk/casopis-priority/redakcia/">Redakcia</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="https://www.ozkovo.sk/casopis-priority/redakcna-rada/">Redakčná rada</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-741"><a href="https://www.ozkovo.sk/casopis-priority/archiv/">Archív</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-747"><a href="https://www.ozkovo.sk/tlacove-spravy/">Tlačové správy</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-746"><a href="https://www.ozkovo.sk/napisali-o-nas/">Napísali o nás</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-752"><a href="https://www.ozkovo.sk/foto-a-video/">Foto a video</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1966"><a href="https://www.ozkovo.sk/foto-a-video/2010/">2010</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-754"><a href="https://www.ozkovo.sk/foto-a-video/2011/">2011</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-755"><a href="https://www.ozkovo.sk/foto-a-video/2012/">2012</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-756"><a href="https://www.ozkovo.sk/foto-a-video/2013/">2013</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-757"><a href="https://www.ozkovo.sk/foto-a-video/2014-foto-a-video/">2014</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-758"><a href="https://www.ozkovo.sk/foto-a-video/2015-foto-a-video/">2015</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-759"><a href="https://www.ozkovo.sk/foto-a-video/2016-foto-a-video/">2016</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-760"><a href="https://www.ozkovo.sk/foto-a-video/2017-foto-a-video/">2017</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-761"><a href="https://www.ozkovo.sk/foto-a-video/2018-foto-a-video/">2018</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-762"><a href="https://www.ozkovo.sk/foto-a-video/2019-foto-a-video/">2019</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2839"><a href="https://www.ozkovo.sk/foto-a-video/2020-foto-a-video/">2020</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9"><a href="https://www.ozkovo.sk/o-nas/">O nás</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1341"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/">História OZ KOVO</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/historia-zjazdov-oz-kovo/">História zjazdov OZ KOVO</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1342"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/25-rokov-oz-kovo/">25 rokov OZ KOVO</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1344"><a href="https://www.ozkovo.sk/o-nas/historia-oz-kovo/strucna-historia-vzniku-odborov-na-nasom-uzemi/">Stručná história vzniku odborov na našom území</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="https://www.ozkovo.sk/o-nas/posobnost/">Pôsobnosť OZ KOVO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557"><a href="https://www.ozkovo.sk/o-nas/ciele-a-poslanie/">Ciele a poslanie</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-575"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/">Orgány OZ KOVO</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-581"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/zjazd-odboroveho-zvazu/">zjazd odborového zväzu</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/rada-odboroveho-zvazu/">rada odborového zväzu</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-579"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/predsednictvo-odboroveho-zvazu/">predsedníctvo odborového zväzu</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-578"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/regionalna-rada-predsedov/">regionálna rada odborového zväzu</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/vybor-mandatoveho-obvodu-odboroveho-zvazu/">výbor mandatového obvodu odborového zväzu</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a href="https://www.ozkovo.sk/o-nas/organy-oz-kovo/revizna-komisia-odboroveho-zvazu/">revízna komisia odborového zväzu</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="https://www.ozkovo.sk/o-nas/clenstvo-oz-kovo/">Členstvo OZ KOVO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-649"><a href="https://www.ozkovo.sk/o-nas/komisie/">Komisie</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663"><a href="https://www.ozkovo.sk/o-nas/komisie/legislativno-pravna-komisia/">Legislatívno právna komisia</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-651"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-mladych/">Komisia mladých</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-mladych/clenovia-komisie-mladych/">Členovia komisie</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-713"><a href="https://www.ozkovo.sk/aktivity-mladych-kovakov/">Aktivity komisie</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-bozp/">Komisia pre BOZP</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-653"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/">Komisia pre kolektívne vyjednávanie</a>
+		<ul class="sub-menu">
+			<li class="bytpodnik menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-bytove-hospodarstvo/"><span></span>Komisia KV pre bytové hospodárstvo</a></li>
+			<li class="doprava menu-item menu-item-type-post_type menu-item-object-page menu-item-655"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-dopravu/"><span></span>Komisia KV pre dopravu</a></li>
+			<li class="hasici menu-item menu-item-type-post_type menu-item-object-page menu-item-656"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-hazz/"><span></span>Komisia KV pre HaZZ</a></li>
+			<li class="elektro menu-item menu-item-type-post_type menu-item-object-page menu-item-657"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-elektrotechnickeho-priemyslu/"><span></span>Komisia KV pre oblasť elektrotechnického priemyslu</a></li>
+			<li class="hutnici menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-hutnickeho-priemyslu/"><span></span>Komisia KV pre oblasť hutníckeho priemyslu</a></li>
+			<li class="sklari menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-sklarskeho-priemyslu/"><span></span>Komisia KV pre oblasť sklárskeho priemyslu</a></li>
+			<li class="strojari menu-item menu-item-type-post_type menu-item-object-page menu-item-660"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-kolektivne-vyjednavanie/komisia-kv-pre-oblast-strojarskeho-priemyslu/"><span></span>Komisia KV pre oblasť strojárskeho priemyslu</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-662"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-vzdelavanie/">Komisia pre vzdelávanie</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-pre-rovnost-prilezitosti/">Komisia pre rovnosť príležitostí</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650"><a href="https://www.ozkovo.sk/o-nas/komisie/komisia-automotiv/">Komisia AUTOMOTIV</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494"><a href="https://www.ozkovo.sk/o-nas/20-dovodov-preco-byt-v-odboroch/">20 dôvodov prečo byť v odboroch</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-95"><a href="https://www.ozkovo.sk/kampane/">Kampane</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-449"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/">Staň sa členom OZ KOVO</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="https://www.ozkovo.sk/vyhody-pre-clenov/">Výhody KOVO</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-452"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/ako-sa-stat-clenom/">Ako sa stať členom</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-492"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/preco-sa-stat-clenom-oz-kovo/">Prečo sa stať členom OZ KOVO?</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-622"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/propagacne-materialy-stan-sa-clenom-oz-kovo/">Propagačné materiály</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1329"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/">OZ KOVO kampane</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-708"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/skor-do-dochodku/">Skôr do dôchodku</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-709"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/skor-do-dochodku/aktuality-skor-do-dochodku/">Aktuality</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-712"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/skor-do-dochodku/propagacne-materialy/">Propagačné materiály</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-190"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/kampan-na-podporu-kolektivneho-vyjednavania/">Kampaň na podporu kolektívneho vyjednávania</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-451"><a href="https://www.ozkovo.sk/kampane/oz-kovo-kampane/za-vyssie-mzdy/">Za vyššie mzdy</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1328"><a href="https://www.ozkovo.sk/kampane/medzinarodne-kampane/">Medzinárodné kampane</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1330"><a href="https://www.ozkovo.sk/kampane/medzinarodne-kampane/together-at-work/">Together at work</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-917"><a href="https://www.ozkovo.sk/dokumenty/">Dokumenty</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927"><a href="https://www.ozkovo.sk/dokumenty/legislativa-sr/">Legislatíva SR</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-924"><a href="https://www.ozkovo.sk/dokumenty/legislativa-eu/">Legislatíva EÚ</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-925"><a href="https://www.ozkovo.sk/dokumenty/legislativa-eu/dohovory-mop/">Dohovory MOP</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-926"><a href="https://www.ozkovo.sk/dokumenty/legislativa-eu/europska-socialna-charta/">Európska sociálna charta</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-920"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/">KV/KZVS</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-921"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/aktuality-kv-kzvs/">Aktuality</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-922"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/ekonomicke-udaje/">Ekonomické údaje</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-923"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/">Platné KZVS</a>
+		<ul class="sub-menu">
+			<li class="strojari menu-item menu-item-type-taxonomy menu-item-object-category menu-item-938"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-strojarskeho-priemyslu/"><span></span>pre oblasť strojárskeho priemyslu</a></li>
+			<li class="hutnici menu-item menu-item-type-taxonomy menu-item-object-category menu-item-936"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-hutnickeho-priemyslu/"><span></span>pre oblasť hutníckeho priemyslu</a></li>
+			<li class="elektro menu-item menu-item-type-taxonomy menu-item-object-category menu-item-935"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-elektrotechnickeho-priemyslu/"><span></span>pre oblasť elektrotechnického priemyslu</a></li>
+			<li class="sklari menu-item menu-item-type-taxonomy menu-item-object-category menu-item-937"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-sklarskeho-priemyslu/"><span></span>pre oblasť sklárskeho priemyslu</a></li>
+			<li class="doprava menu-item menu-item-type-taxonomy menu-item-object-category menu-item-939"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-verejnej-cestnej-dopravy/"><span></span>pre oblasť verejnej cestnej dopravy</a></li>
+			<li class="bytpodnik menu-item menu-item-type-taxonomy menu-item-object-category menu-item-933"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-oblast-bytoveho-hospodarstva/"><span></span>pre oblasť bytového hospodárstva</a></li>
+			<li class="hasici menu-item menu-item-type-taxonomy menu-item-object-category menu-item-940"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-prislusnikov-hasicskeho-a-zachranneho-zboru/"><span></span>pre príslušníkov hasičského a záchranného zboru</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-942"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-verejnu-sluzbu/">pre verejnú službu</a></li>
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-941"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/platne-kzvs/pre-statnu-sluzbu/">pre štátnu službu</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1031"><a href="https://www.ozkovo.sk/dokumenty/kv-kzvs/rozsirovanie/">Rozširovanie</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-918"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/">Dokumenty OZ KOVO</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-943"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/stanoviska/">Stanoviská</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-919"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/metodicke-usmernenia/">Metodické usmernenia</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-944"><a href="https://www.ozkovo.sk/dokumenty/dokumenty-oz-kovo/vnutrozvazove-dokumenty/">Vnútrozväzové dokumenty</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-928"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/">Medzinárodné informácie</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-929"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/aktuality-medzinarodne-informacie/">Aktuality</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-931"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/nadnarodne-struktury/">Nadnárodné štruktúry</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-932"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/odbory-v-zahranici/">Odbory v zahraničí</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930"><a href="https://www.ozkovo.sk/dokumenty/medzinarodne-informacie/archiv-medzinarodne-informacie/">Archív</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-873"><a href="https://www.ozkovo.sk/poradenstvo/">Poradenstvo</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2269"><a href="https://www.ozkovo.sk/poradenstvo/koronavirus-informacie-pre-zamestnancov/">Koronavirus &#8211; informácie pre zamestnancov</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1886"><a href="https://www.ozkovo.sk/poradenstvo/zalozenie-odborov-v-podniku/">Ako založiť odbory v podniku</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-878"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/">Pracovno-právna poradňa</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-874"><a href="https://www.ozkovo.sk/poradenstvo/bozp/">BOZP</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-875"><a href="https://www.ozkovo.sk/poradenstvo/bozp/aktualne-informacie/">Aktuálne informácie</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-877"><a href="https://www.ozkovo.sk/poradenstvo/bozp/pravne-predpisy/">Právne predpisy</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-876"><a href="https://www.ozkovo.sk/poradenstvo/bozp/letaky/">Letáky</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-879"><a href="https://www.ozkovo.sk/poradenstvo/socialne/">Sociálne</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-882"><a href="https://www.ozkovo.sk/poradenstvo/socialne/socialny-fond/">Sociálny fond</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-880"><a href="https://www.ozkovo.sk/poradenstvo/socialne/garancny-fond/">Garančný fond</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-881"><a href="https://www.ozkovo.sk/poradenstvo/socialne/socialna-vypomoc/">Sociálna výpomoc</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-883"><a href="https://www.ozkovo.sk/poradenstvo/vzdelavanie/">Vzdelávanie</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-885"><a href="https://www.ozkovo.sk/poradenstvo/vzdelavanie/dokumenty-vzdelavanie/">Dokumenty</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-884"><a href="https://www.ozkovo.sk/poradenstvo/vzdelavanie/aktualne-informacie-vzdelavanie/">Aktuálne informácie</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-947"><a href="https://www.ozkovo.sk/poradenstvo/vase-otazky/">Vaše otázky</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-86"><a href="https://www.ozkovo.sk/kontakt/">Kontakt</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="https://www.ozkovo.sk/kontakt/kontakt-pre-media/">Kontakt pre médiá</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a href="https://www.ozkovo.sk/kontakt/centrala-oz-kovo/">Centrála OZ KOVO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://www.ozkovo.sk/kontakt/vedenie-oz-kovo/">Vedenie OZ KOVO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a href="https://www.ozkovo.sk/kontakt/predsednictvo-oz-kovo/">Predsedníctvo OZ KOVO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="https://www.ozkovo.sk/kontakt/metodicke-pracoviska/">Metodické pracoviská</a></li>
+</ul>
+</li>
+</ul>
+		<div class="respmenucont">
+			<div class="smallcontacts">
+				<div class="smallcontact">
+					<div class="login"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/login.png" alt="" />Prihlásenie</div>
+											  	<div class="phone topitem"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/phone.png" alt="" />0421-2-32441 174</div>
+												  	<div class="email topitem"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/email.png" alt="" />
+						  		<a href="mailto:info@ozkovo.sk" title="info@ozkovo.sk">info@ozkovo.sk</a></div>
+												  	<div class="address topitem">Miletičova 24, 815 70 Bratislava 1</div>
+											<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="socialresp"><ul id="" class="cnss-social-icon " style="text-align:left;"><li class="cn-fa-facebook" style="display:inline-block;"><a class="" target="_blank" href="https://www.facebook.com/OdborovyZvazKovo/" title="Facebook" style=""><img src="https://www.ozkovo.sk/wp-content/uploads/2019/07/ico-fb.png" border="0" width="32" height="32" alt="Facebook" title="Facebook" style="margin:2px;" /></a></li><li class="cn-fa-youtube" style="display:inline-block;"><a class="" target="_blank" href="https://www.youtube.com/results?search_query=OZ+KOVO" title="YouTube" style=""><img src="https://www.ozkovo.sk/wp-content/uploads/2019/07/ico-yt.png" border="0" width="32" height="32" alt="YouTube" title="YouTube" style="margin:2px;" /></a></li><li class="cn-fa-twitter" style="display:inline-block;"><a class="" target="_blank" href="https://twitter.com/kovo_odbory" title="Twitter" style=""><img src="https://www.ozkovo.sk/wp-content/uploads/2019/07/ico-tw.png" border="0" width="32" height="32" alt="Twitter" title="Twitter" style="margin:2px;" /></a></li></ul></div>
+								<div class="clear"></div>
+							</div>	
+			<div class="clear"></div>
+		</div>
+	</div>				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		
+		<div id="main"><div class="notfound">
+
+	<div class="container"><div class="padding60">		
+		<div class="siteleft"><div class="padding">
+			<div class="titlebg"><h1 class="entry-title">Stránka nenájdená</h1></div>
+
+			<div class="entry-content"><div class="paddinglr">
+				<p>Ľutujeme, ale neboli nájdené žiadne články.</p>				<p>Skúste nové hľadanie.</p>				<div class="search"><div class="searchformtop">
+    <div class="form">
+        <form role="search" method="get" id="searchformtop" action="https://www.ozkovo.sk/">
+           	<input type="submit" value="" id="searchsubmittop" name="submit">
+           	<input type="text" placeholder="Hľadať" id="stop" name="s" value="">
+ 		</form>
+    </div>
+    <div class="clear"></div>
+</div></div>
+				<div class="clear"></div>
+			</div></div>
+
+
+			<div class="clear"></div>
+		</div></div><!-- .paddinglr --><!-- .siteleft -->
+
+		
+<div class="sidebar">
+
+	<div class="widget">
+		<div class="widget-title">
+			Najčítanejšie články		</div>
+
+					<div class="sidenewitem">				
+				            <div class="nosideimg"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/choroba-z-povolania-jej-priznanie-a-niektore-suvisiace-otazky/" title="Choroba z povolania, jej priznanie a niektoré súvisiace otázky"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/categoryimg.png" alt="Choroba z povolania, jej priznanie a niektoré súvisiace otázky" /></a></div>
+                    	<div class="paddcat">
+					<div class="title"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/choroba-z-povolania-jej-priznanie-a-niektore-suvisiace-otazky/">Choroba z povolania, jej priznanie a niektoré súvisiace otázky</a></div>
+					<div class="xcrpt">
+												<p>Choroba z povolania predstavuje jav, s ktorým sa môže stretnúť každá fyzická osoba v súvislosti s plnením svojich pracovných úloh. Ako vyplýva z jej samotného označenia a ako je &#8230;</p>
+						
+					</div>
+				</div>
+			</div>
+					<div class="sidenewitem">				
+				            <div class="nosideimg"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/nariadovanie-dovolenky-zamestnancovi-zo-da-na-de/" title="Nariaďovanie dovolenky zamestnancovi zo dňa na deň"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/categoryimg.png" alt="Nariaďovanie dovolenky zamestnancovi zo dňa na deň" /></a></div>
+                    	<div class="paddcat">
+					<div class="title"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/nariadovanie-dovolenky-zamestnancovi-zo-da-na-de/">Nariaďovanie dovolenky zamestnancovi zo dňa na deň</a></div>
+					<div class="xcrpt">
+												
+<p>Môže sa zamestnanec brániť proti nariaďovaniu čerpania dovolenky zamestnávateľom „zo dňa na deň“?</p>
+						
+					</div>
+				</div>
+			</div>
+					<div class="sidenewitem">				
+				            <div class="nosideimg"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/nevycerpana-dovolenka-zamestnanca-a-jej-preplatenie-po-skonceni-pracovneho-pomeru-v-roku-2015/" title="Nevyčerpaná dovolenka zamestnanca a jej preplatenie po skončení pracovného pomeru v roku 2015"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/categoryimg.png" alt="Nevyčerpaná dovolenka zamestnanca a jej preplatenie po skončení pracovného pomeru v roku 2015" /></a></div>
+                    	<div class="paddcat">
+					<div class="title"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/nevycerpana-dovolenka-zamestnanca-a-jej-preplatenie-po-skonceni-pracovneho-pomeru-v-roku-2015/">Nevyčerpaná dovolenka zamestnanca a jej preplatenie po skončení pracovného pomeru v roku 2015</a></div>
+					<div class="xcrpt">
+												<p>Právna úprava Zákonníka práce stanovuje povinnosť vyčerpania dovolenky na zotavenie najneskôr do konca nasledujúceho kalendárneho roka. Uvedené sa výnimočne nevzťahuje na zamestnancov, ktorí si nemohli svoju dovolenku na zotavenie &#8230;</p>
+						
+					</div>
+				</div>
+			</div>
+					<div class="sidenewitem">				
+				            <div class="nosideimg"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/neplatene-volno/" title="Neplatené voľno"><img src="https://www.ozkovo.sk/wp-content/themes/ozkovo/images/categoryimg.png" alt="Neplatené voľno" /></a></div>
+                    	<div class="paddcat">
+					<div class="title"><a href="https://www.ozkovo.sk/poradenstvo/pracovno-pravna-poradna/neplatene-volno/">Neplatené voľno</a></div>
+					<div class="xcrpt">
+												<p>Čerpanie neplateného voľna Môže zamestnávateľ určiť jednostranne čerpanie neplateného voľna ? Právo zamestnávateľa nariadiť čerpanie neplateného voľna zamestnancovi neupravuje a teda mu toto právo nepriznáva žiadne ustanovenia Zákonníka práce. &#8230;</p>
+						
+					</div>
+				</div>
+			</div>
+					<div class="sidenewitem">				
+				            <div class="sideimg">
+                 <a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/ako-sa-stat-clenom/" title="Ako sa stať členom"><img width="572" height="390" src="https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720-572x390.jpg" class="attachment-singleimg size-singleimg wp-post-image" alt="" loading="lazy" srcset="https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720-572x390.jpg 572w, https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720-300x205.jpg 300w, https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720-768x524.jpg 768w, https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720-400x273.jpg 400w, https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720-249x170.jpg 249w, https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720-198x135.jpg 198w, https://www.ozkovo.sk/wp-content/uploads/2019/08/action-2277292_960_720.jpg 960w" sizes="(max-width: 572px) 100vw, 572px" /></a>
+            </div>
+
+                    	<div class="paddcat">
+					<div class="title"><a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/ako-sa-stat-clenom/">Ako sa stať členom</a></div>
+					<div class="xcrpt">
+												<p>Stačí vyplniť kontaktný formulár a pracovníci OZ KOVO sa Vám ozvú.</p>
+						
+					</div>
+				</div>
+			</div>
+			
+		
+	</div>
+
+	<div class="widget">
+		<div class="widget-title">
+			Členstvo v OZ KOVO		</div>
+
+						
+
+		<div class="bluebtn">
+			<a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/ako-sa-stat-clenom/" title="Staňte sa členom">
+				<div class="btnname">Staňte sa členom</div>
+			</a>
+		</div>
+
+		<div class="greybtn">
+			<a href="https://www.ozkovo.sk/vyhody-pre-clenov/" title="Výhody KOVO">
+				<div class="btnname">Výhody KOVO</div>
+			</a>
+		</div>
+
+		<div class="goldbtn">
+			<a href="https://www.ozkovo.sk/kampane/stan-sa-clenom-oz-kovo/preco-sa-stat-clenom-oz-kovo/" title="Prečo byť členom">
+				<div class="btnname">Prečo byť členom</div>
+			</a>
+		</div>
+
+	</div>
+	
+		<div class="widget">
+		<div class="widget-title">Najnovšie články</div>
+		<ul>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/vzdelavanie-2021/">VZDELÁVANIE 2021</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/fnv-a-cnv-holandske-clenske-organizacie-industriall-europe-vymyslaju-novy-format-strajku/">FNV a CNV, holandské členské organizácie industriAll Europe, vymýšľajú nový formát štrajku.</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/celoplosne-skriningove-testovanie-a-zakaz-vychadzania-platny-od-27-januara-do-7-februara-2021/">Celoplošné skríningové testovanie a zákaz vychádzania platný od 27. januára do 7. februára 2021</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/poradenstvo/koronavirus-informacie-pre-zamestnancov/informacie-pre-zamestnancov/">Informácie pre zamestnancov</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/ocami-podpredsednicky-oz-kovo-legislativne-cunami/">Očami podpredsedníčky OZ KOVO &#8211; LEGISLATÍVNE CUNAMI</a>
+									</li>
+					</ul>
+
+		</div><div class="widget"><div class="widget-title">Značky</div><div class="tagcloud"><a href="https://www.ozkovo.sk/tag/bozp/" class="tag-cloud-link tag-link-179 tag-link-position-1" style="font-size: 8pt;" aria-label="BOZP (1 položka)">BOZP</a>
+<a href="https://www.ozkovo.sk/tag/bytove-hospodarstvo/" class="tag-cloud-link tag-link-147 tag-link-position-2" style="font-size: 14.588235294118pt;" aria-label="bytové hospodárstvo (4 položky)">bytové hospodárstvo</a>
+<a href="https://www.ozkovo.sk/tag/choroba-z-povolania/" class="tag-cloud-link tag-link-203 tag-link-position-3" style="font-size: 8pt;" aria-label="choroba z povolania (1 položka)">choroba z povolania</a>
+<a href="https://www.ozkovo.sk/tag/ekonomika/" class="tag-cloud-link tag-link-178 tag-link-position-4" style="font-size: 19.529411764706pt;" aria-label="ekonomika (9 položiek)">ekonomika</a>
+<a href="https://www.ozkovo.sk/tag/elektrotechnicky-priemysel/" class="tag-cloud-link tag-link-148 tag-link-position-5" style="font-size: 15.905882352941pt;" aria-label="elektrotechnický priemysel (5 položiek)">elektrotechnický priemysel</a>
+<a href="https://www.ozkovo.sk/tag/etuc/" class="tag-cloud-link tag-link-197 tag-link-position-6" style="font-size: 12.941176470588pt;" aria-label="ETUC (3 položky)">ETUC</a>
+<a href="https://www.ozkovo.sk/tag/hasicsky-a-zachranny-zbor/" class="tag-cloud-link tag-link-153 tag-link-position-7" style="font-size: 17.882352941176pt;" aria-label="hasičský a záchranný zbor (7 položiek)">hasičský a záchranný zbor</a>
+<a href="https://www.ozkovo.sk/tag/hutnicky-priemysel/" class="tag-cloud-link tag-link-154 tag-link-position-8" style="font-size: 20.847058823529pt;" aria-label="hutnícky priemysel (11 položiek)">hutnícky priemysel</a>
+<a href="https://www.ozkovo.sk/tag/industiall/" class="tag-cloud-link tag-link-199 tag-link-position-9" style="font-size: 8pt;" aria-label="IndustiAll (1 položka)">IndustiAll</a>
+<a href="https://www.ozkovo.sk/tag/kilecko/" class="tag-cloud-link tag-link-201 tag-link-position-10" style="font-size: 8pt;" aria-label="kilečko (1 položka)">kilečko</a>
+<a href="https://www.ozkovo.sk/tag/kolektivne-vyjednavanie/" class="tag-cloud-link tag-link-146 tag-link-position-11" style="font-size: 20.188235294118pt;" aria-label="kolektívne vyjednávanie (10 položiek)">kolektívne vyjednávanie</a>
+<a href="https://www.ozkovo.sk/tag/koronavirus/" class="tag-cloud-link tag-link-174 tag-link-position-12" style="font-size: 12.941176470588pt;" aria-label="koronavirus (3 položky)">koronavirus</a>
+<a href="https://www.ozkovo.sk/tag/kzvs/" class="tag-cloud-link tag-link-206 tag-link-position-13" style="font-size: 8pt;" aria-label="KZVS (1 položka)">KZVS</a>
+<a href="https://www.ozkovo.sk/tag/medzinarodne/" class="tag-cloud-link tag-link-200 tag-link-position-14" style="font-size: 10.964705882353pt;" aria-label="medzinárodné (2 položky)">medzinárodné</a>
+<a href="https://www.ozkovo.sk/tag/minimalna-mzda/" class="tag-cloud-link tag-link-191 tag-link-position-15" style="font-size: 10.964705882353pt;" aria-label="minimálna mzda (2 položky)">minimálna mzda</a>
+<a href="https://www.ozkovo.sk/tag/mzdova-oblast/" class="tag-cloud-link tag-link-143 tag-link-position-16" style="font-size: 17.882352941176pt;" aria-label="mzdová oblasť (7 položiek)">mzdová oblasť</a>
+<a href="https://www.ozkovo.sk/tag/nazor/" class="tag-cloud-link tag-link-198 tag-link-position-17" style="font-size: 8pt;" aria-label="názor (1 položka)">názor</a>
+<a href="https://www.ozkovo.sk/tag/odborarska-cinnost/" class="tag-cloud-link tag-link-145 tag-link-position-18" style="font-size: 12.941176470588pt;" aria-label="odborárska činnosť (3 položky)">odborárska činnosť</a>
+<a href="https://www.ozkovo.sk/tag/poradenstvo/" class="tag-cloud-link tag-link-189 tag-link-position-19" style="font-size: 8pt;" aria-label="poradenstvo (1 položka)">poradenstvo</a>
+<a href="https://www.ozkovo.sk/tag/postoj/" class="tag-cloud-link tag-link-192 tag-link-position-20" style="font-size: 8pt;" aria-label="postoj (1 položka)">postoj</a>
+<a href="https://www.ozkovo.sk/tag/prepustanie/" class="tag-cloud-link tag-link-186 tag-link-position-21" style="font-size: 12.941176470588pt;" aria-label="prepúšťanie (3 položky)">prepúšťanie</a>
+<a href="https://www.ozkovo.sk/tag/priority/" class="tag-cloud-link tag-link-166 tag-link-position-22" style="font-size: 22pt;" aria-label="PRIORITY (13 položiek)">PRIORITY</a>
+<a href="https://www.ozkovo.sk/tag/priplatky/" class="tag-cloud-link tag-link-204 tag-link-position-23" style="font-size: 8pt;" aria-label="príplatky (1 položka)">príplatky</a>
+<a href="https://www.ozkovo.sk/tag/sklarsky-priemysel/" class="tag-cloud-link tag-link-155 tag-link-position-24" style="font-size: 14.588235294118pt;" aria-label="sklársky priemysel (4 položky)">sklársky priemysel</a>
+<a href="https://www.ozkovo.sk/tag/strojarsky-priemysel/" class="tag-cloud-link tag-link-149 tag-link-position-25" style="font-size: 18.705882352941pt;" aria-label="strojársky priemysel (8 položiek)">strojársky priemysel</a>
+<a href="https://www.ozkovo.sk/tag/tlacova-sprava/" class="tag-cloud-link tag-link-176 tag-link-position-26" style="font-size: 8pt;" aria-label="tlačová správa (1 položka)">tlačová správa</a>
+<a href="https://www.ozkovo.sk/tag/tripartita/" class="tag-cloud-link tag-link-190 tag-link-position-27" style="font-size: 8pt;" aria-label="tripartita (1 položka)">tripartita</a>
+<a href="https://www.ozkovo.sk/tag/verejna-cestna-doprava/" class="tag-cloud-link tag-link-150 tag-link-position-28" style="font-size: 17.882352941176pt;" aria-label="verejná cestná doprava (7 položiek)">verejná cestná doprava</a>
+<a href="https://www.ozkovo.sk/tag/verejna-sluzba/" class="tag-cloud-link tag-link-151 tag-link-position-29" style="font-size: 17.882352941176pt;" aria-label="verejná služba (7 položiek)">verejná služba</a>
+<a href="https://www.ozkovo.sk/tag/vzdelavanie/" class="tag-cloud-link tag-link-171 tag-link-position-30" style="font-size: 10.964705882353pt;" aria-label="vzdelávanie (2 položky)">vzdelávanie</a>
+<a href="https://www.ozkovo.sk/tag/casopis/" class="tag-cloud-link tag-link-205 tag-link-position-31" style="font-size: 8pt;" aria-label="časopis (1 položka)">časopis</a>
+<a href="https://www.ozkovo.sk/tag/strajk/" class="tag-cloud-link tag-link-207 tag-link-position-32" style="font-size: 8pt;" aria-label="štrajk (1 položka)">štrajk</a>
+<a href="https://www.ozkovo.sk/tag/statna-sluzba/" class="tag-cloud-link tag-link-152 tag-link-position-33" style="font-size: 12.941176470588pt;" aria-label="štátna služba (3 položky)">štátna služba</a></div>
+</div></div><!-- #secondary -->		<div class="clear"></div>
+
+	</div></div>
+</div>
+	
+			<div class="clear"></div>
+		</div><!-- .main -->
+
+		<div id="footer"><div class="container"><div class="padding40">
+
+		
+		   	<div class="footerfirstcol">
+		   		
+		<div class="widget">
+		<div class="widget-title">Najnovšie články</div>
+		<ul>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/vzdelavanie-2021/">VZDELÁVANIE 2021</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/fnv-a-cnv-holandske-clenske-organizacie-industriall-europe-vymyslaju-novy-format-strajku/">FNV a CNV, holandské členské organizácie industriAll Europe, vymýšľajú nový formát štrajku.</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/celoplosne-skriningove-testovanie-a-zakaz-vychadzania-platny-od-27-januara-do-7-februara-2021/">Celoplošné skríningové testovanie a zákaz vychádzania platný od 27. januára do 7. februára 2021</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/poradenstvo/koronavirus-informacie-pre-zamestnancov/informacie-pre-zamestnancov/">Informácie pre zamestnancov</a>
+									</li>
+											<li>
+					<a href="https://www.ozkovo.sk/clanky/ocami-podpredsednicky-oz-kovo-legislativne-cunami/">Očami podpredsedníčky OZ KOVO &#8211; LEGISLATÍVNE CUNAMI</a>
+									</li>
+					</ul>
+
+		</div>		   	</div>
+			  
+		   	<div class="footersecondcol">
+		   		<div class="widget"><div class="widget-title">Menu</div><div class="menu-footersecondcolmenu-container"><ul id="menu-footersecondcolmenu" class="menu"><li id="menu-item-788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-788"><a href="https://www.ozkovo.sk/vyhody-pre-clenov/">Výhody KOVO</a></li>
+<li id="menu-item-1352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1352"><a href="https://www.ozkovo.sk/google/">GDPR</a>
+<ul class="sub-menu">
+	<li id="menu-item-1354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1354"><a href="https://www.ozkovo.sk/google/informacie-o-spracuvani-osobnych-udajov/">Informácie o spracúvaní osobných údajov</a></li>
+	<li id="menu-item-1353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1353"><a href="https://www.ozkovo.sk/google/informacie-o-zodpovednej-osobe/">Informácie o zodpovednej osobe</a></li>
+</ul>
+</li>
+<li id="menu-item-789" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-789"><a href="https://www.ozkovo.sk/napisali-o-nas/">Napísali o nás</a></li>
+<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a href="https://www.ozkovo.sk/kontakt/">Kontakty</a></li>
+</ul></div></div>		   	</div>
+
+		   	<div class="footerthirdcol">
+		   		<div class="widget-title">Sledujte nás:</div><ul id="" class="cnss-social-icon " style="text-align:left;"><li class="cn-fa-facebook" style="display:inline-block;"><a class="" target="_blank" href="https://www.facebook.com/OdborovyZvazKovo/" title="Facebook" style=""><img src="https://www.ozkovo.sk/wp-content/uploads/2019/07/ico-fb.png" border="0" width="32" height="32" alt="Facebook" title="Facebook" style="margin:2px;" /></a></li><li class="cn-fa-youtube" style="display:inline-block;"><a class="" target="_blank" href="https://www.youtube.com/results?search_query=OZ+KOVO" title="YouTube" style=""><img src="https://www.ozkovo.sk/wp-content/uploads/2019/07/ico-yt.png" border="0" width="32" height="32" alt="YouTube" title="YouTube" style="margin:2px;" /></a></li><li class="cn-fa-twitter" style="display:inline-block;"><a class="" target="_blank" href="https://twitter.com/kovo_odbory" title="Twitter" style=""><img src="https://www.ozkovo.sk/wp-content/uploads/2019/07/ico-tw.png" border="0" width="32" height="32" alt="Twitter" title="Twitter" style="margin:2px;" /></a></li></ul>		   		<div class="widget"><div class="widget-title">Kontaktujte nás</div>			<div class="textwidget"><p><a href="mailto:info@ozkovo.sk">info@ozkovo.sk</a></p>
+<p>00421-2-32441 174</p>
+</div>
+		</div>		   	</div>
+
+			<div class="clear"></div>
+
+			<div id="footerlogo" onclick="window.location.href='https://www.ozkovo.sk'" style="cursor: pointer;" title="Odborový zväz KOVO"></div>
+			<div class="footermenu">
+			    <ul id="menu-footermenu" class="menu"><li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="https://www.ozkovo.sk/clanky/">Články<span> | </span></a></li>
+<li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6"><a href="https://www.ozkovo.sk/o-nas/">O nás<span> | </span></a></li>
+<li id="menu-item-787" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-787"><a href="https://www.ozkovo.sk/kampane/">Kampane<span> | </span></a></li>
+<li id="menu-item-1294" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1294"><a href="https://www.ozkovo.sk/dokumenty/">Dokumenty<span> | </span></a></li>
+<li id="menu-item-1295" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1295"><a href="https://www.ozkovo.sk/poradenstvo/">Poradenstvo<span> | </span></a></li>
+</ul>			   	<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div></div></div>
+
+		<div class="clear"></div>
+	</div><!-- .wrapperzzz -->
+
+<!-- ngg_resource_manager_marker --><script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4' id='jquery-ui-sortable-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.ozkovo.sk\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.3' id='contact-form-7-js'></script>
+<script type='text/javascript' id='ngg_common-js-extra'>
+/* <![CDATA[ */
+
+var nextgen_lightbox_settings = {"static_path":"https:\/\/www.ozkovo.sk\/wp-content\/plugins\/nextgen-gallery\/products\/photocrati_nextgen\/modules\/lightbox\/static\/{placeholder}","context":"all_images_direct"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_gallery_display/static/common.js?ver=3.3.20' id='ngg_common-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/lightbox_context.js?ver=3.3.20' id='ngg_lightbox_context-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/simplelightbox/simple-lightbox.js?ver=3.3.20' id='simplelightbox-0-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/simplelightbox/nextgen_simple_lightbox_init.js?ver=3.3.20' id='simplelightbox-1-js'></script>
+<script type='text/javascript' src='https://www.ozkovo.sk/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+			<script type="text/javascript" id="uagb-script-frontend">document.addEventListener("DOMContentLoaded", function(){( function( $ ) {  })(jQuery)})</script>
+			
+</body>
+</html>

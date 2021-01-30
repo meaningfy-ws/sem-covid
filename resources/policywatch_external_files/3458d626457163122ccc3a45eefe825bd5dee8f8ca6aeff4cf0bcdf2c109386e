@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+<head>
+ <title>Indennità Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <meta name="language" content="it">
+ 
+ <script type="text/javascript">var sPathBarDelPortaleNuova='NPI/Schede News/Indennità Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020';</script><script type="text/javascript">var sPathBarDelPortale='NPI/Schede News/Indennità Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020';</script>
+ <meta name="IdContenuto" content="53856"><meta name="IdTipologiaContenuto" content="news">
+ <!-- 03/05/2019 - modificate url riferimento relativo Applicazione -->
+ <link href='modelliNuovo/assets/vendor/fonts/local-titillium.css' rel='stylesheet' type='text/css' />
+ <link rel="stylesheet" type='text/css' href="modelliNuovo/assets/vendor/fontawesome/css/font-awesome.min.css?v=2" />
+ <link href="modelliNuovo/assets/css/styleUnico.css?v=105" type="text/css" rel="stylesheet" />
+ <link href="modelliNuovo/assets/css/styleAggiunto.css?v=202012181703" type="text/css" rel="stylesheet" />
+ <link href="modelliNuovo/assets/css/styleUltimate.css?v=10" type="text/css" rel="stylesheet" />
+ <!--03/05/2019 - modificate url riferimento relativo Applicazione -->
+ <link rel="canonical" href="http://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53856"/>
+ <link rel="stylesheet" type="text/css" href="modelliNuovo/assets/css/print.css?v=1" media="print" />
+ 
+ <meta property="og:url" content="https%3a%2f%2fwww.inps.it%2fNuovoportaleINPS%2fdefault.aspx%3fitemdir%3d53856%26lang%3dIT" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Indennità Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020" />
+<meta property="og:site_name" content="INPS" />
+<meta property="og:description" content="BONUS BABY SITTING/CENTRI ESTIVI
+Alla data del 18 giugno 2020 si contano 451.746 richiedenti di bonus baby-sitting/centri estivi.
+
+CONGEDI STRAORDINARI
+P..." />
+<meta property="og:image" content="https%3a%2f%2fwww.inps.it%2fdocallegatiNP%2f%2fMig%2fImmagini_News%2fVisual_istituzionale2.jpg" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Indennità Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020">
+<meta name="twitter:description" content="BONUS BABY SITTING/CENTRI ESTIVI
+Alla data del 18 giugno 2020 si contano 451.746 richiedenti di bonus baby-sitting/centri estivi.
+
+CONGEDI STRAORDINARI
+P...">
+<meta name="twitter:image" content="https%3a%2f%2fwww.inps.it%2fdocallegatiNP%2f%2fMig%2fImmagini_News%2fVisual_istituzionale2.jpg">
+
+ <script src="modelliNuovo/assets/vendor/jquery-1.12.0.min.js?v=1" type="text/javascript"></script>
+
+ 
+ <!-- <script type='text/javascript' src="modelliNuovo/assets/js/modernizr-2.8.3.js?v=1"></script>-->
+ <!-- VT 9/11 css accordion -->
+ <!--03/05/2019 modificate url riferimento relativo Applicazione -->
+ <link rel="stylesheet" type="text/css" href="modelliNuovo/assets/css/custom.css?v=3" />
+ 
+ <!-- <link rel="stylesheet" href="modelliNuovo/assets/vendor/jwPlayer.css?v=1" /> -->
+ 
+<script src="include/libPortale.js?v=14" type="text/javascript" ></script>
+
+<script type='text/javascript'>SetCookie('provienidahome','yes');</script>
+<link rel='stylesheet'	href='include/CSS_aggiunte.css' type='text/css' /></head>
+
+<body class="home-page ">
+ <div class="skiplink sr-only">
+ <ul>
+ <li>
+ <a accesskey="1" href="#InEvidenzaLayout">Vai al Contenuto</a>
+ </li>
+ <li>
+ <a accesskey="2" href="#logo">Vai alla navigazione del sito (sommario delle linee guida)</a>
+ </li>
+ </ul>
+ </div>
+ <div id="toppage"></div>
+ <div id="cookie_directive_container" style="display: none">
+ <div class="container">
+ Questo sito utilizza cookie tecnici e di terze parti per funzionalità quali la condivisione sui social network e/o la visualizzazione di media. <br/>
+Per vedere quali cookie utilizziamo <a title="leggi l'informativa" href='default.aspx?sPathID=%3b0%3b51725%3b&lastMenu=51725&iMenu=113&iNodo=51725&p4=2'>leggi l'informativa</a>. Chiudendo questo banner o premendo il tasto ACCETTO si acconsente all'uso dei cookie.'
+ <a id="cookie_accept" href="#" class="btn btn-default">Accetto</a>
+ <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+ <span aria-hidden="true">&times; </span>
+ </button>
+ </div>
+ </div>
+ <!-- Cookie advisor -->
+ <script type="text/javascript">
+ $(document).ready(function () {
+ var bNascondiDivCookie = leggiCookie("nascondiDivCookie");
+ var bDisattivaDivCookie = 'true';
+ if (bNascondiDivCookie != 'true' && bDisattivaDivCookie == 'true') {
+ $("#cookie_directive_container").appendTo("#cookie_directive");
+ $('#cookie_directive_container').show();
+
+ var distance = $(window).scrollTop();
+ $(window).scroll(function () {
+ if ($(this).scrollTop() != distance) {
+ $('#cookie_directive_container').hide();
+ }
+ });
+ }
+ });
+ $("#cookie_accept").click(function () {
+ $('#cookie_directive_container').hide();
+ scriviCookie("nascondiDivCookie", "true", 7200)
+ });
+ $("#cookie_directive_container .close").click(function () {
+ $('#cookie_directive_container').hide();
+ scriviCookie("nascondiDivCookie", "true", 7200)
+ });
+
+ </script>
+ <!-- Fine Cookie advisor -->
+ <nav role="navigation" id="header-navbar" class="navbar navbar-inverse navbar-global HM_navbg">
+ <div class="container HM_alignTop" style="padding-left: 0;">
+ <div class="navbar-header hidden-md HM_mobNavHead">
+ <button id="navbar-global-menu-btn" type="button" class="navbar-toggle collapsed overlay HM_MobBtnWidth HM_mobNavHead" data-toggle="collapse" aria-expanded="false" style="height:59px">
+ <span class="sr-only">Mostra la navigazione</span>
+
+ <em id="times-bars" class="fa fa-bars HM_MobBtnSize" style="color: white;"></em>
+
+ </button>
+ <a class="navbar-brand" href="default.aspx" title="Vai alla home" style="margin-top: 4px;">
+ <div class="logo-small"> </div>
+ </a>
+ <!--24/06/2019 messo dinamico-->
+ <a href="/myinps/default.aspx?accessoinps=1" title='Entra in MyInps' class="navbar-toggle user-not-logged navbar-global__button hidden-md HM_MyInps"><em id="avatarMobile" class="fa fa-user HM_MangoP"></em></a>
+
+ </div>
+ <div class="navbar-collapse navbar-top HM_form collapse HM_mob-form HM_mobNavHiddenMenu close-overlay" id="navbar-global-menu" role="navigation" aria-expanded="false">
+ <ul class="nav navbar-nav hidden-lg visible-xs hidden-md visible-sm HM_mobNavbar-nav">
+<li class="HM_itemLI ">
+<a href="//www.inps.it/nuovoportaleinps/default.aspx" class="dropdown-toggle HM_mobNavDDL" role="button" target="_self" title="Utilizza questo link per accedere alla Home Page">Home</a>
+</li>
+<li class="HM_itemLI ">
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=11" class="dropdown-toggle HM_mobNavDDL" role="button" target="_self" title="Clicca qui per accedere alla sezione L'Istituto">L'Istituto</a>
+</li>
+<li class="HM_itemLI ">
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=12" class="dropdown-toggle HM_mobNavDDL" role="button" target="_self" title="Clicca qui per accedere alla sezione Dati, Ricerche e Bilanci ">Dati, ricerche e bilanci</a>
+</li>
+<li class="HM_itemLI ">
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=10" class="dropdown-toggle HM_mobNavDDL" role="button" target="_self" title="Clicca qui per accedere alla sezione Inps Comunica ">INPS Comunica</a>
+</li>
+<li class="HM_itemLI ">
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=91" class="dropdown-toggle HM_mobNavDDL" role="button" target="_self" title="Clicca qui per accedere alla sezione Prestazioni e servizi">Prestazioni e servizi</a>
+</li>
+</ul>
+
+ <ul class="nav navbar-nav navbar-left HM_mobNavbar-nav">
+<li  class="HM_itemLI HM_topForm HM_adjustHead "><a title="Clicca qui per accedere ai servizi" href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=111" target="_self" class="HM_topheader HM_headFix HM_mobNavDDL HM_checkLink "> Accedere ai servizi </a></li>
+<li id="helpContatti" class="HM_itemLI HM_topForm HM_adjustHead "><a id="logo" title="Clicca qui per accedere alla sezione Contatti" href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=24" target="_self" class="HM_topheader HM_headFix HM_mobNavDDL HM_checkLink "> Contatti </a></li>
+</ul>
+
+ <ul class="nav HM_navbar-right navbar-nav HM_alignSede HM_mobNavbar-nav">
+<li  class="HM_itemLI HM_topForm "><a title="Clicca qui per accedere alla sezione Trova la sede" href="//www.inps.it/nuovoportaleinps/default.aspx?iIDservizio=2376" target="_self" class="HM_topheader HM_mobNavDDL HM_checkLink "> Trova la sede <em class="fa fa-street-view" aria-hidden="true"></em></a></li>
+<li id="helpLanguage" class="HM_itemLI HM_topForm" onclick="HM_higlight(this)">
+<a id="HM_idLingua" href="#" class="dropdown-toggle HM_topheader HM_mobNavDDL HM_fixSedePos" onclick="cambiaAltezzaFooterSocial(this)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="MLS_sizeImage" alt="Clicca per vedere il contenuto in italiano" src="/docallegatiNP/SiteCollectionImages/Bandiere/italia.png"/> IT <em class="fa fa-angle-down"></em></a>
+<ul class="dropdown-menu HM_dropDownMobileList HM_hoverSubItems">
+<li><a href="/nuovoportaleinps/default.aspx?lang=it" title="Clicca per vedere il contenuto in italiano"><img class="MLS_sizeImage" alt="Clicca per vedere il contenuto in italiano" src="/docallegatiNP/SiteCollectionImages/Bandiere/italia.png"/> IT</a></li>
+<li><a href="/nuovoportaleinps/default.aspx?imenu=102" title="klicken, um den Inhalt auf Deutsch zu sehen"><img class="MLS_sizeImage" alt="klicken, um den Inhalt auf Deutsch zu sehen" src="/docallegatiNP/SiteCollectionImages/Bandiere/germania.png"/> DE</a></li>
+
+</ul>
+</li>
+</ul>
+
+ <div class="navbar hidden-md HM_navbar-canvas" id="socialSpan" style="">
+ <ul style="display:inline-flex" class="HM_ul HM_li-icon">
+ <li><a class="HM_mobNavDDL" title="Facebook" href="https://www.facebook.com/INPS.PerLaFamiglia/"><span class="link-node__icon HMsocial"><em class="fa fa-facebook-square"></em></span></a></li><li><a class="HM_mobNavDDL" title="Twitter" href="http://www.twitter.com/Inps_it"><span class="link-node__icon HMsocial"><em class="fa fa-twitter"></em></span></a></li><li><a class="HM_mobNavDDL" title="YouTube" href="https://www.youtube.com/user/INPSComunica"><span class="link-node__icon HMsocial"><em class="fa fa-youtube-play"></em></span></a></li><li><a class="HM_mobNavDDL" title="LinkedIn" href="https://www.linkedin.com/company/inps-official/"><span class="link-node__icon HMsocial"><em class="fa fa-linkedin-square"></em></span></a></li><li><a class="HM_mobNavDDL" title="Instagram" href="https://www.instagram.com/inps_social/"><span class="link-node__icon HMsocial"><em class="fa fa-instagram"></em></span></a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </nav>
+  <div id="mobile-menu-user" class="collapse navbar-collapse navbar-top hidden-md" > <nav class="nav navbar"> <ul id="menu-user" class="nav navbar-nav navbar__navbar-nav"></ul></nav></div>
+
+ <header class="header-global row HM_HeaderAlign" id="searchPanel">
+ <div class="container HM_alignSearchBar" style="margin-bottom: 1em;">
+ <div class="row vertical-align" style="margin-left:0px !important">
+ <ul class="col-1 nav navbar-nav hide-nav HM_mobHider" style="">
+ <li>
+ <a id="HM_logo" href="default.aspx" class="HM_box_logo_inps hidden-xs visible-md">
+ <img src="//www.inps.it/nuovoportaleinps/modelliNuovo/assets/img/logo-inps-neg.png?sBI=IdArt:53856,IdTipo:0,Lang:1,IdSez:0,DaRic:0,Auth:0,IdNavMod:0,IdTema:0,Ts:171344769" alt="Istituto Nazionale Previdenza Sociale" class="HM_logo-INPS">
+ </a>
+ </li>
+ </ul>
+ <div class="col-9 HM_centerRicerca HM_mobScaleSearch">
+ <form class="navbar-form navbar-right HM_mobScaleSearch" role="search" action="/search122/ricercaNew.aspx" method="GET">
+ <div class="search-input-controls search__input-box fa fa-search HM_searchBoxStyle" id="numero3" style="margin-top:6px !important">
+ <div id="helpSearch" class="input-group HM_mobSearchAlign">
+ <label for="foldit" style="visibility:hidden; width:0; font-size:0px;">-</label>
+ <input type="text" id="foldit" name="sTrova" placeholder="Cerchi servizi, prestazioni, informazioni? Es. Pensioni" value="" class="form-control HM_barraRicercaResponsive" autocomplete="off">
+ <span class="input-group-btn">
+ <button id="btnFoldit" type="submit" data-href="/search122/ricercaNew.aspx" data-loading-text="Stiamo ottimizzando la tua ricerca" class="btn btn-primary loading-btn">
+ Cerca
+ </button>
+ </span>
+ </div>
+ </div>
+ </form>
+ </div>
+ <div class="col-md-2  HM_mobHider HM_headerUtenteLoggato">
+<ul class="HM_utenteLoggato HM_allineaEntraINPS">
+<li class="user-not-logged">
+<a id="aModal" title="" href="#" style="display:none" data-uri="//www.inps.it/NuovoportaleINPS/default.aspx?itemdir=53856&amp;lang=IT" data-toggle="modal" data-target="#modal-iframe">&nbsp;</a>
+<a id="btLogin" class="btn btn-primary visible-xs visible-sm visible-lg HM_aggiustaBottone" href="//www.inps.it/myinps/default.aspx?accessoinps=1" title="Entra in MyInps">
+<em class="fa fa-user"></em>  Entra in MyINPS
+</a>
+</li>
+</ul>
+</div>
+
+ </div>
+ </div>
+
+ <div class="row HM_navbarJumbo">
+ <div class="hidden-xs visible-md visible-lg container" style="padding:0;">
+ <div id="navbar" class="navbar-collapse collapse nav">
+ <ul id="menu-main" class="nav navbar-nav" style="width: auto;">
+<li class="HM_dropdown-large" onclick="HM_higlight(this)">
+<a class="HM_headerJumbo  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx" target="_self">Home</a>
+</li>
+<li class="HM_dropdown-large" onclick="HM_higlight(this)">
+<a href="#" class="dropdown-toggle HM_headerJumbo " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> L'Istituto  <em class="fa fa-angle-down"></em></a>
+<ul class="dropdown-menu HM_dropdown-menu-large" style="width:102%;top:auto;background: #FFFFFF;">
+<li>
+<ul class="container" style="margin:auto;border-bottom: solid 1px;">
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/NuovoportaleINPS/default.aspx?sPathID=%3b0%3b51646%3b&lastMenu=51646&iMenu=11&p4=2" title="Clicca qui per accedere alla sezione La Storia" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">La storia</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46865%3b&lastMenu=46865&iMenu=11&p4=2" title="Clicca qui per accedere alla sezione Organi Istituzionali" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Organi istituzionali</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46723%3b&lastMenu=46723&iMenu=11&p4=2" title="Clicca qui per accedere alla sezione Struttura organizzativa" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Struttura organizzativa</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/NuovoportaleINPS/default.aspx?sPathID=%3b0%3b51646%3b53066%3b&lastMenu=53066&iMenu=11&iNodo=53066&p4=2" title="Clicca qui per accedere alla sezione Codice disciplinare" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Codice disciplinare</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/NuovoportaleINPS/default.aspx?sPathID=%3b0%3b51646%3b50111%3b&lastMenu=50111&iMenu=11&iNodo=50111&p4=2" title="Clicca qui per accedere alla sezione Comitato Unico di Garanzia" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Comitato Unico di Garanzia</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b50101%3b46900%3b&lastMenu=46900&iMenu=11&p4=2" title="Clicca qui per accedere alla sezione Patrimonio immobiliare e mobiliare" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Patrimonio immobiliare e mobiliare</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b51176%3b50101%3b&lastMenu=50101&iMenu=11&p4=2" title="Clicca qui per accedere alla sezione Patrimonio delle strutture sociali" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Patrimonio delle strutture sociali</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/NuovoportaleINPS/default.aspx?sPathID=%3b0%3b50111%3b46688%3b&lastMenu=46688&iMenu=11&p4=2" title="Clicca qui per accedere alla sezione Progetti" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Progetti</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="https://servizi2.inps.it/servizi/Biblioteca/" title="Clicca qui per accedere alla sezione Biblioteca centrale e archivio storico" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Biblioteca centrale e archivio storico</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+</ul>
+</li>
+</ul>
+<div class="container HM_entraSezione">
+<a style="float: right;" class="HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=11" title="Clicca qui per accedere alla sezione L'Istituto" target="_self"><em class="fa fa-arrow-circle-o-right"></em> Entra nella sezione</a>
+</div>
+<div style="text-align: center;height: 29px;margin-bottom: -7px;background:#f5f5f0;margin-top: 25px;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#007db3;line-height: 40px;font-weight: 700;">CHIUDI </a>
+</div>
+<div style="text-align: center;margin-bottom: -7px;background:#f5f5f0;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" title="Chiudi menu" aria-expanded="false" style="color:#007db3;"><em class="fa fa-angle-up" style="font-weight:700;"></em></a>
+</div>
+</li>
+</ul>
+</li>
+<li class="HM_dropdown-large" onclick="HM_higlight(this)">
+<a href="#" class="dropdown-toggle HM_headerJumbo " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Dati, ricerche e bilanci  <em class="fa fa-angle-down"></em></a>
+<ul class="dropdown-menu HM_dropdown-menu-large" style="width:102%;top:auto;background: #FFFFFF;">
+<li>
+<ul class="container" style="margin:auto;border-bottom: solid 1px;">
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46306%3b&lastMenu=46306&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Bilanci, rendiconti e flussi finanziari" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Bilanci, rendiconti e flussi finanziari</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46252%3b&lastMenu=46252&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Rendiconto e Bilancio sociale " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Rendiconto e Bilancio sociale</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46252%3b46419%3b&lastMenu=46419&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione SIUSS (già Casellario dell'assistenza)" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">SIUSS (già Casellario dell'assistenza)</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b51044%3b&lastMenu=51044&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Note trimestrali sulle tendenze dell'occupazione " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Note trimestrali sulle tendenze dell'occupazione </span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/OpenData/default.aspx?iidlink=103" title="Clicca qui per accedere alla sezione Open Data " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Open Data</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46437%3b&lastMenu=46437&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Osservatori statistici e altre statistiche" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Osservatori statistici e altre statistiche</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46251%3b46396%3b&lastMenu=46396&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Rapporti Annuali " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Rapporti Annuali</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46396%3b50879%3b&lastMenu=50879&iMenu=12&iNodo=50879&p4=2" title="Clicca qui per accedere alla sezione Rapporto annuale sul mercato del lavoro " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Rapporto annuale sul mercato del lavoro</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b50879%3b46435%3b&lastMenu=46435&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Rapporto WorldWideInps " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Rapporto WorldWideInps</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46435%3b46390%3b&lastMenu=46390&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Studi e analisi " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Studi e analisi</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46390%3b46689%3b&lastMenu=46689&iMenu=12&p4=2" title="Clicca qui per accedere alla sezione Visitinps scholars" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Visitinps scholars</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46390%3b46689%3b10325%3b52687%3b&lastMenu=52687&iMenu=12&p4=2" title="Clicca qui per accedere alla zezione Seminari INPS" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Seminari INPS</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class="container HM_entraSezione">
+<a style="float: right;" class="HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=12" title="Clicca qui per accedere alla sezione Dati, Ricerche e Bilanci " target="_self"><em class="fa fa-arrow-circle-o-right"></em> Entra nella sezione</a>
+</div>
+<div style="text-align: center;height: 29px;margin-bottom: -7px;background:#f5f5f0;margin-top: 25px;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#007db3;line-height: 40px;font-weight: 700;">CHIUDI </a>
+</div>
+<div style="text-align: center;margin-bottom: -7px;background:#f5f5f0;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" title="Chiudi menu" aria-expanded="false" style="color:#007db3;"><em class="fa fa-angle-up" style="font-weight:700;"></em></a>
+</div>
+</li>
+</ul>
+</li>
+<li class="HM_dropdown-large" onclick="HM_higlight(this)">
+<a href="#" class="dropdown-toggle HM_headerJumbo " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> INPS Comunica  <em class="fa fa-angle-down"></em></a>
+<ul class="dropdown-menu HM_dropdown-menu-large" style="width:102%;top:auto;background: #FFFFFF;">
+<li>
+<ul class="container" style="margin:auto;border-bottom: solid 1px;">
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46570%3b53000%3b&lastMenu=53000&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Coronavirus: le misure dell’INPS" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Coronavirus: le misure dell’INPS</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46528%3b&lastMenu=46528&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Ufficio Stampa " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Ufficio Stampa</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46528%3b46570%3b&lastMenu=46570&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Atti " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Atti</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46570%3b52169%3b&lastMenu=52169&iMenu=10&iNodo=52169&p4=2" title="Clicca qui per accedere alla sezione Audizioni" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Audizioni</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b51413%3b50464%3b&lastMenu=50464&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Guide" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Guide</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46526%3b&lastMenu=46526&iMenu=10&iNodo=46526&p4=2" title="Clicca qui per accedere alla sezione Bookinps - Concessione sale convegni" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Bookinps - Concessione sale convegni</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46526%3b46612%3b&lastMenu=46612&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Social Media" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Social Media</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46556%3b46557%3b&lastMenu=46557&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Foto" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Foto</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46556%3b46527%3b&lastMenu=46527&iMenu=10&iNodo=46527&p4=2" title="Clicca qui per accedere alla sezione Notizie" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Notizie</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46527%3b51730%3b&lastMenu=51730&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Dossier" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Dossier</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b51730%3b46614%3b&lastMenu=46614&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Pubblicazioni" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Pubblicazioni</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46614%3b46623%3b&lastMenu=46623&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Patrimonio artistico" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Patrimonio artistico </span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46623%3b46575%3b&lastMenu=46575&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Eventi e convegni" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Eventi e convegni</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b52495%3b&lastMenu=52495&iMenu=10&p4=2" title="Clicca qui per accedere alla sezione Patrocinio gratuito" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Patrocinio gratuito</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46575%3b46525%3b&lastMenu=46525&iMenu=10&iNodo=46525&p4=2" title="Clicca qui per accedere alla sezione Sportello Voce per sordi" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Sportello Voce per sordi</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46525%3b50035%3b&lastMenu=50035&iMenu=10&iNodo=50035&p4=2" title="Clicca qui per accedere alla sezione Sportello Mobile INPS " target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Sportello Mobile INPS</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class="container HM_entraSezione">
+<a style="float: right;" class="HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=10" title="Clicca qui per accedere alla sezione Inps Comunica " target="_self"><em class="fa fa-arrow-circle-o-right"></em> Entra nella sezione</a>
+</div>
+<div style="text-align: center;height: 29px;margin-bottom: -7px;background:#f5f5f0;margin-top: 25px;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#007db3;line-height: 40px;font-weight: 700;">CHIUDI </a>
+</div>
+<div style="text-align: center;margin-bottom: -7px;background:#f5f5f0;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" title="Chiudi menu" aria-expanded="false" style="color:#007db3;"><em class="fa fa-angle-up" style="font-weight:700;"></em></a>
+</div>
+</li>
+</ul>
+</li>
+<li class="HM_dropdown-large" onclick="HM_higlight(this)">
+<a href="#" class="dropdown-toggle HM_headerJumbo " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Prestazioni e servizi  <em class="fa fa-angle-down"></em></a>
+<ul class="dropdown-menu HM_dropdown-menu-large" style="width:102%;top:auto;background: #FFFFFF;">
+<li>
+<ul class="container" style="margin:auto;border-bottom: solid 1px;">
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=91" title="Clicca qui per accedere alla sezione Esplora il sito" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Esplora il sito</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=92" title="Clicca qui per accedere alla sezione Naviga per utente" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Naviga per utente</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=93" title="Clicca qui per accedere alla sezione Naviga per tema" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Naviga per tema</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=97" title="Guida alle prestazioni erogate" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Prestazioni</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=94" title="Accesso alle procedure online" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Servizi</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=95" title="Clicca qui per accedere alla sezione Moduli" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Moduli</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=96" title="Clicca qui per accedere alla sezione Software" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Software</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=98" title="Clicca qui per accedere alla sezione App Mobile" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">App Mobile</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sservice-finder-action=1" title="Clicca qui per accedere alla sezione Trova la prestazione" target="_self">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">Trova la prestazione</span>
+</a>
+</li>
+<li>
+<a class="wide-button wide-button2  HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b42646%3b&lastMenu=42646&iMenu=1&itemDir=54374" title="Clicca qui per accedere alla sezione FAQ" target="_parent">
+<em class="HM_wide-button__icon fa fa-chevron-right" style="float: left;"></em>
+<span class="wide-button__label HM_JumboItem" style="font-weight: 400;">FAQ</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="col-sm-3">
+<ul>
+</ul>
+</li>
+</ul>
+<div class="container HM_entraSezione">
+<a style="float: right;" class="HM_checkLink" href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=91" title="Clicca qui per accedere alla sezione Prestazioni e servizi" target="_self"><em class="fa fa-arrow-circle-o-right"></em> Entra nella sezione</a>
+</div>
+<div style="text-align: center;height: 29px;margin-bottom: -7px;background:#f5f5f0;margin-top: 25px;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#007db3;line-height: 40px;font-weight: 700;">CHIUDI </a>
+</div>
+<div style="text-align: center;margin-bottom: -7px;background:#f5f5f0;" class="">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" title="Chiudi menu" aria-expanded="false" style="color:#007db3;"><em class="fa fa-angle-up" style="font-weight:700;"></em></a>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+
+ </div>
+ </div>
+
+ </div>
+ </header>
+ <div id="search-spotlight" class="search-quick-results background-gray--lighter hidden">
+ <div class="container">
+ <div class="row" id="objInnerResult"></div>
+ </div>
+ <div class="row">
+ <div class="col-md-offset-4 col-md-4">
+ <a id="search-spotlight-all" class="btn btn-primary" href="/search122/ricercaNew.aspx?sTrova=">Tutti i risultati </a>
+ </div>
+ <!--<div class="HM_chiudiBottone">
+ <a href="javascript:HM_nascondiSuggerimenti();"><em class="fa fa-close HM_styleChiudiSugg"></em></a>
+ </div>-->
+ </div>
+ </div>
+
+ <script src="/search122/js/ricerca.js" type="text/javascript"></script>
+ <!--</div>
+
+ </div>-->
+ <!-- /container -->
+ <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <script src="modelliNuovo/assets/js/jquery.joyride-2.1.js?v=4"></script>
+ <!--UPDATE TEMPALE 2020-07-28-->
+
+<section class="background-gray--lighter">
+ <div class="container layout__header">
+ <div class="row "> 
+ <div class="col-md-12">   
+ <div class="breadcrumbs"><a title="home" href='default.aspx'><em class='fa fa-home'></em></a> / <a href='default.aspx?iMenu=10'>Inps Comunica</a> / <a href='default.aspx?itemdir=47009'>Notizie</a>   / <span class='current'>Indennità&nbsp;Covid,&nbsp;Bonus&nbsp;baby&nbsp;sitting,&nbsp;Congedi&nbsp;e&nbsp;REM.. </span>   <span id='spanlogout' style='float:right; margin:-4px 0 -5px 0; display:none;'><a style='color:#225b92;padding-right:10px;vertical-align:middle' href='https://serviziweb2.inps.it/PassiWeb/ChangeContacts'>Modifica Contatti</a><a style='color:#225b92;padding-right:10px;vertical-align:middle' href='https://serviziweb2.inps.it/PassiWeb/jsp/changePin/index.jsp'>Modifica Pin</a><a href='https://serviziweb2.inps.it/PassiWeb/jsp/logout.jsp'><img style='vertical-align:middle' alt='Esci' src='asset/img/imgLogout3.png'/></a></span></div> 
+ <div class="main__title main__title notizie-icon">
+ <h1>
+  Indennit&#224; Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020 
+ </h1>
+ <span class="article__meta__label">
+<em class="fa fa-clock-o"></em>
+19 giugno 2020
+</span>
+
+ </div>
+ </div>
+ 
+ 
+ </div>
+ </div>
+ </section>
+ <!-- template schede --> 
+<section class="" style="min-height:450px"> 
+ <div class="container prestazioni-servizi">
+ <article id="SchedeServOriApp" class="article article--with-sidenav article--accordionable article--with-sticky-header" data-accordiontrigger="h2.article__section__heading" data-accordioncollapsedicon="fa fa-plus-square-o" data-accordionexpandedicon="fa fa-minus-square-o">
+ 
+ <div class="row">
+
+ <div class="col-md-3 scrollspy" id="menunavigazioneacc">
+ <nav data-spy="affix" class="nav navbar navbar-vertical navbar--outline article__nav article__outline article__nav--sticky--fixed affix-top" id="article__outline--1464647796816">
+ <h2 class="navbar--outline__heading hidden-xs visible-md">Indice </h2>
+ <button class="visible-xs-block hidden-md btn btn-default navbar-vertical__hamburger"> Indice <em class="navbar-vertical__hamburger__icon-collapsed fa fa-bars"></em> <em class="navbar-vertical__hamburger__icon-expanded fa fa-times"></em> </button>
+ <ul id="HelpSchedaServizioIndice" class="navbar__navbar-nav navbar-nav">
+ <li class="navbar__node  ">
+<a title="" href="#toppage">
+<span class="navbar__node__label">Inizio Pagina</span>
+</a>
+</li>
+
+ 
+ </ul>
+ <div class="hidden-xs hidden-sm visible-md">
+ <a id="btnAiutaciaMigliorareSchede" class="wide-button" href="#modal-feedback" data-toggle="modal">
+ <em class="wide-button__icon fa fa-comment"></em>
+ <span class="wide-button__label" >Aiutaci a migliorare questa pagina</span>
+ </a>
+ <a class="wide-button" href="#" id="btnJoyride">
+ <em class="wide-button__icon fa fa-binoculars"></em>
+ <span class="wide-button__label" >Scopri come usare il portale</span>
+ </a>
+ </div> 
+
+ </nav>
+ 
+ </div>
+ 
+
+ <div id="HelpSchedaServizioContenuti" class="col-md-8 col-lg-6" style= "margin-top: 1.2em">
+ <div class="sl-container" id="contenutoacc">
+ <div id="InEvidenzaLayout">
+ <section class="article__section"><p><strong>BONUS BABY SITTING/CENTRI ESTIVI</strong></p>
+<p>Alla data del <strong>18 giugno 2020</strong> si contano <strong>451.746</strong> richiedenti di bonus baby-sitting/centri estivi.</p>
+
+<p><strong>CONGEDI STRAORDINARI</strong></p>
+<p>Per ciò che riguarda i congedi straordinari sono stati erogati a oggi in numero di <strong>406.832</strong> (conguaglio + pagamento diretto).</p>
+
+<p><strong>CONGEDI PARENTALI</strong></p>
+<p>Per ciò che riguarda i congedi parentali alla data del <strong>18 giugno 2020</strong> si contano <strong>464.599</strong> richiedenti.</p>
+ 
+
+<p><strong>INDENNITÀ 600 euro: MARZO E APRILE DOMANDE ACCOLTE</strong></p>
+<p>Alla data del 18 giugno 2020 sono state accolte 4.060.941 domande di Indennità 600 euro.</p>
+ 
+
+<p><strong>REDDITO DI EMERGENZA</strong></p>
+<p>Alla data del <strong>18 giugno 2020</strong> sono pervenute all&#8217;INPS un totale di <strong>387.363</strong> domande di Reddito di Emergenza.</p>
+
+<p><img alt="Tabella 1" src="/docallegatiNP/Mig/Immagini_News/Immagini_interne_news/Tab1_news_inden_COVID_bonus_congedi_REM_18_giugno.jpg" style="margin: 5px; max-width: 100%;"/>&#160;</p>
+
+
+<p><strong>INDENNITÀ LAVORATORI DOMESTICI</strong></p>
+<p>Alla data del <strong>18 giugno 2020</strong> sono pervenute all&#8217;INPS un totale di <strong>208.422</strong> domande di indennità lavoratori domestici.</p>
+
+
+<p><strong>Dati di sintesi delle prestazioni Covid</strong></p>
+
+<p><img alt="Tabella 2" src="/docallegatiNP/Mig/Immagini_News/Immagini_interne_news/Tab2_news_inden_COVID_bonus_congedi_REM_18_giugno.jpg" style="margin: 5px; max-width: 100%;"/>&#160;</p>
+
+
+
+
+</section> 
+ </div>
+ </div>
+ <div class="sl-container">
+
+ 
+ 
+ <div class="sl-container"> <div class="page-inner-section" >
+ <section class="article__meta">
+ <div class="row article__meta__cluster">
+ <div class="col-xs-12 article__meta__tag"> <em class="article__meta__tag__icon fa fa-tags" title="Tag redazionali"></em>
+ <ul></ul>
+ </div>
+ </div>
+ <div id="footerarticolo2" class="row article__meta__cluster">
+<div class="col-xs-12 col-md-9 article__meta__published">
+<span class="article__meta__label">
+<em class="fa fa-clock-o">
+</em>Pubblicato il  
+</span>
+<span class="article__meta__value">
+19 giugno 2020
+</span>
+</div>
+</div>
+
+ <div class="row article__meta__cluster" id="footerarticolo">
+ <div class="col-xs-12 col-md-6 article__meta__activities"><div class="people-activity-meta"><div class="mediaShare" id="cuoricino0" style="display:none;"><div class="mediaContent" style="font-size:13px;text-align:left"> 
+ <a href="Javascript:goLoginPassi('https://serviziweb2.inps.it/PassiWeb/jsp/login.jsp');" style="font-size:13px;color:white;text-decoration:underline"> Registrati al MyINPS</a><br />   per aggiungere questo contenuto all'elenco dei tuoi interessi.  </a>
+</div><div class="arrowDown" style="margin-left: 10%" ></div></div> 
+<div id="share" class="mediaShare" style="display:none">
+	<div class="mediaContent">Condividi questo contenuto:
+        <div class="share-buttons">
+            <a href="#" title="share facebook" onclick="ShareSocialNetwork('facebook', '/nuovoportaleinps/default.aspx?itemdir=53856&tipologia=news&idunivoco=53856'); return false;"><strong class="fa fa-facebook-official "></strong></a>
+			<a href="#" title="share twitter" onclick="ShareSocialNetwork('twitter', '/nuovoportaleinps/default.aspx?itemdir=53856&tipologia=news&idunivoco=53856'); return false;"><strong class="fa fa-twitter"></strong></a>
+			<a href="#" title="share linkedin" onclick="ShareSocialNetwork('linkedin', '/nuovoportaleinps/default.aspx?itemdir=53856&tipologia=news&idunivoco=53856'); return false;"><strong class="fa fa-linkedin-square"></strong></a>
+        </div>
+    </div>
+    <div class="arrowDown"></div>
+</div>
+<ul><li class="favorites"><a style='cursor:pointer;' href='javascript:void(0);' onclick="ShowdivShare('cuoricino0')"><em class="icon icon__heart"></em>301 </a></li><li class="share"><a style="cursor:pointer;" title="Condivisioni degli ultimi 3 mesi" href ="javascript: Void(0);" onclick="ShowdivShare('share')"><em class="icon icon__share"></em>0</a></li></ul></div></div>
+ <div class="col-xs-12 col-md-6 article__meta__tools" id="printAndSave"><ul><li class='SalvaInFormatoPDF'><a  href ="/bussola/GetPDFVersion2.aspx?NPI=true&amp;iIDItem=53856&amp;lang=0" ><em class="fa fa-download"></em> Salva</a></li><li class="hidden-xs visible-lg"><a onclick="window.print();" href ="javascript:void(0);"><em class="fa fa-print"></em> Stampa</a></li></ul></div>
+ </div>
+ </section>
+</div>
+
+
+ </div>
+ </div>
+ </div>
+<div class=" sidebar-right col-md-offset-3 col-md-9 col-lg-offset-0 col-lg-3 " style="margin-top: 1.2em"> 
+ <div class="sidebar_right_group_links"><h2>Allegati</h2><a href='/docallegatiNP/Mig/AllegatiNews/Notizia%20in%20formato%20accessibile%20Indennità %20Covid,%20Bonus%20baby%20sitting,%20Congedi%20e%20REM_i%20dati%20al%2018%20giugno%202020.pdf' class='item'><div class='icon'><em class='fa fa-file-pdf-o'></em></div>
+<div class='text'><span class='title'>Notizia in formato accessibile</span>
+<span class='size'>PDF 602 Kb</span>
+</div>
+</a>
+</div>
+ 
+ 
+
+ <div class="visible-xs hidden-md" style="padding-left:15px">
+ <a class="wide-button" href="#modal-feedback" data-toggle="modal">
+ <em class="wide-button__icon fa fa-comment"></em>
+ <span class="wide-button__label">Aiutaci a migliorare questa pagina</span>
+ </a>
+ <a class="wide-button" href="#" id="btnJoyride2">
+ <em class="wide-button__icon fa fa-binoculars"></em>
+ <span class="wide-button__label">Scopri come usare il portale</span>
+ </a>
+ </div> 
+ </div>
+ 
+ 
+ 
+</div>
+ </article>
+ </div>
+ </section>
+
+ <h3 style="display:none"></h3>
+<!-- Messaggio scrollabile -->
+ <div id="modal-service" class="modal fade scrollable modal-vertical-centered modal__identity--servizio" role="dialog">
+ <div class="modal-dialog ">
+ <div class="modal-content large">
+ <div class="modal-header">
+ <a href="javascript:void(0);" tabindex="0" title="ModalService skip" id="ModalServiceRedirecter"></a>
+ <button type="button" aria-label="Chiudi" class="close" data-dismiss="modal" id="closeModalService">&times;</button>
+ <h4 class="modal-title"><em class="fa fa-inbox"></em> Servizio</h4>
+ </div>
+ <div class="modal-intro">
+ <h3> Indennit&#224; Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020</h3>
+ </div>
+ <div class="modal-body modalDim">
+ 
+ <!-- "sl-container" è una classe contenitore di tutti i contenuti di secondo livello raccolti in accordion -->
+ <div class="sl-container" id="service-list">
+
+ <br /><div class="notice-box expired"><div class="icon"><em class="fa fa-exclamation-triangle"></em></div><div class="text">Il collegamento al servizio richiesto non è ancora attivo. Per il servizio che stai cercando vai all’<a href="default.aspx?iPrestazioni=94">elenco dei servizi.</a></div></div>
+
+
+ 
+ 
+ 
+ </div>
+ 
+ 
+ 
+ </div>
+ <div class="modal-footer">
+ <a href="#" tabindex="0" title="Feedback skip" onfocus="javascript:document.getElementById('closeModalService').focus();"></a>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--fine modale scrollabile -->
+ 
+<!-- iFrame nella modale -->
+ <div id="modal-servizio-accesso" class="modal modal__identity--servizio" role="dialog">
+ <div class="modal-dialog">
+ <div class="modal-content">
+ <div class="modal-header">
+ <button type="button" aria-label="Chiudi" class="close" data-dismiss="modal">&times;</button>
+ <h4 class="modal-title"><em class="fa fa-inbox"></em> </h4>
+ </div>
+ <div class="modal-intro">
+ <span id="ModalServiceTitle" class="modal-h3"></span>
+ </div>
+ 
+ <div class="modal-body"> 
+ <iframe src="nothing.txt" name="Accesso al servizio selezionato" title="Accesso al servizio" ></iframe> 
+ </div>
+ </div>
+ 
+ </div>
+ </div>
+ 
+<!--fine iFrame nella modale -->
+
+<ol id="joyRideTipContent"><li data-id="modal-service-open" data-options="tipLocation:left;tipAnimation:fade" data-next-button="Avanti" class="custom">
+<span class='titleJoyride'>
+Accedi al servizio</span>
+<p>
+Selezionando il pulsante puoi accedere direttamente al servizio o a un eventuale ulteriore menu di scelta.</p>
+</li>
+<li data-id="HelpSchedaServizioIndice" data-options="tipLocation:top;tipAnimation:fade" data-next-button="Indietro" data-prev-button="Avanti">
+<span class='titleJoyride'>
+Indice</span>
+<p>
+Attraverso l'indice della pagina puoi selezionare ogni singola voce per accedere direttamente alla sezione di tuo interesse.</p>
+</li>
+<li data-id="HelpSchedaServizioContenuti" data-options="tipLocation:left;tipAnimation:fade" data-next-button="Indietro" data-prev-button="Avanti">
+<span class='titleJoyride'>
+Il contenuto della pagina</span>
+<p>
+In quest'area è presente il contenuto della pagina. Con il segno + puoi espandere la sezione che ti interessa.</p>
+</li>
+<li data-id="HelpAccedialservizio" data-options="tipLocation:top;tipAnimation:fade" data-next-button="Indietro" data-prev-button="Chiudi">
+<span class='titleJoyride'>
+Accesso al servizio</span>
+<p>
+Selezionando il pulsante puoi accedere direttamente al servizio o a un eventuale ulteriore menu di scelta.</p>
+</li>
+</ol>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="./modelliNuovo/assets/vendor//bootstrap.min.js">
+</script>
+<script src="./modelliNuovo/assets/vendor/bootstrap-slider/bootstrap-slider.min.js">
+</script>
+<script src="./modelliNuovo/assets/vendor/bootstrapdialog/bootstrap-dialog.js">
+</script>
+<script src="./modelliNuovo/assets/vendor/swiper/js/swiper.jquery.min.js">
+</script>
+<script src="./modelliNuovo/assets/vendor/tabcordion/tabcordion.js">
+</script>
+
+
+<script type="text/javascript">
+ var $_viewportBreakpoints = {
+ "md": "768",
+ "lg": "960"
+ };
+ /* var $_uxdtestUrl = '/uxdtest/uxdtest.aspx';*/
+</script>
+<script src="./modelliNuovo/assets/js/jquery.joyride-2.1.js?v=4">
+</script>
+<script type="text/javascript">
+ 
+
+ $("#card-menu-utente").click(function () {
+ $('#dropdown-menu-utente').css('display', 'block');
+ });
+ $("#card-menu-utente").mouseover(function () {
+ $('#dropdown-menu-utente').css('display', 'block');
+ });
+ $("#card-menu-utente").blur(function () {
+ $('#dropdown-menu-utente').css('display', 'none');
+ });
+ $(".header-global__personal-card").mouseleave(function () {
+ $('#dropdown-menu-utente').css('display', 'none');
+ });
+
+ $(function () {
+ findModalScrollableHeight();
+ });
+ $(window).resize(function () {
+ findModalScrollableHeight();
+ });
+
+ //Funzione per definire l'area scrollabile della modale
+ var findModalScrollableHeight = function () {
+ //verifico se la grandezza della finestra è superiore a 500px
+ if ($(window).height() > 500) {
+ //alla grandezza della finestra tolgo 300px di ingonmbro della modale, uso il risultato per definire il corpo della modale che è scrollabile 
+ var altezza = ($(window).height() - 300);
+ $(".modal.scrollable .modal-body").height(altezza);
+ } else {
+ $(".modal.scrollable .modal-body").height(250);
+ }
+ };
+</script>
+
+
+<script type="text/javascript">
+ $('body').on('click', function (e) {
+ //elimino le popover al clic tranne se clicco nella popover stessa
+ if ($(e.target).data('toggle') !== 'popover'
+ && $(e.target).parents('[data-toggle="popover"]').length === 0
+ && $(e.target).parents('.popover.in').length === 0) {
+ $('[data-toggle="popover"]').popover('hide');
+ }
+ });
+
+ $('[data-toggle="popover"]').popover({
+ trigger: 'hover',
+ placement: 'top',
+ html: true,
+ delay: {
+ show: 100,
+ hide: 20000
+ },
+ content: function () {
+ //recupero il div di riferimento e lo inserisco come contentuto della popover
+ return $('#' + $(this).attr("id") + '-content').html();
+ }
+ });
+
+
+ //Andando sul link di una popover disabilito le altre
+ $('[data-toggle="popover"]').on('mouseover', function (e) {
+ $('[data-toggle="popover"]').not(this).popover('hide');
+ });
+ 
+ $(window).scroll(function () {
+ //faccio sparire le popover allo scroll
+ $('[data-toggle="popover"]').popover('hide');
+ });
+
+ 
+
+
+</script>
+
+<div id="overlay"></div>
+<div id="divSpinAlCentro" style="position:fixed;top:50%;left:50%;visibility:hidden;background:#ffffff;z-index:2000;">
+
+</div>
+<script type="text/javascript">
+ var opts = {
+ lines: 13, // The number of lines to draw
+ length: 38, // The length of each line
+ width: 17, // The line thickness
+ radius: 45, // The radius of the inner circle
+ scale: 1, // Scales overall size of the spinner
+ corners: 1, // Corner roundness (0..1)
+ color: 'black', // CSS color or array of colors
+ fadeColor: 'transparent', // CSS color or array of colors
+ speed: 1, // Rounds per second
+ rotate: 0, // The rotation offset
+ animation: 'spinner-line-fade-quick', // The CSS animation name for the lines
+ direction: 1, // 1: clockwise, -1: counterclockwise
+ zIndex: 2e9, // The z-index (defaults to 2000000000)
+ className: 'spinner', // The CSS class to assign to the spinner
+ top: '50%', // Top position relative to parent
+ left: '50%', // Left position relative to parent
+ shadow: '0 0 1px transparent', // Box-shadow for the lines
+ position: 'absolute' // Element positioning
+ };
+ try {
+ new Spinner().spin(document.getElementById('divSpinAlCentro'));
+ }
+ catch (es)
+ { }
+
+</script>
+
+<script type="text/javascript">
+ // $(".InserisciSpin").click(function () {
+ // setTimeout("$('#divSpinAlCentro').css('visibility', 'visible');$('#overlay').show()", 1000);
+ // });
+</script>
+<script type="text/javascript">
+ function spinAttendi()
+ {
+ // visualizzo lo spin di attesa se la chat operatore è chiusa o non definita
+ if (typeof b_ChatOperatoreIsOpen === 'undefined' || b_ChatOperatoreIsOpen === null || !b_ChatOperatoreIsOpen)
+ setTimeout("$('#divSpinAlCentro').css('visibility', 'visible');$('#overlay').show()", 1000);
+ }
+
+
+ $(".InserisciSpin").click(function () {
+ spinAttendi();
+ });
+
+
+ $(".InserisciSpin2").change(function () {
+ spinAttendi();
+ });
+</script>
+
+
+
+<script src="modelliNuovo/assets/js/app.js?v=202006151309" type="text/javascript"></script>
+<footer id="footer" class="footer">
+ <ol id="InitialJoyRide" style="display:none;"> </ol>
+ <div class="container">
+ <div class="hidden-xs visible-md col-md-1 col-sm-2 col-lg-1">
+ <a href="/nuovoportaleinps/default.aspx"><img src="./modelliNuovo/assets/img/logo-inps-neg.png" class="logo" alt="INPS" title="Torna alla Home"></a>
+ </div>
+
+ <div class="visible-lg col-lg-11 col-md-11 col-md-push-1 col-lg-push-1 col-lg-10-colonne">
+ <div class="col-lg-2 col-md-2">
+<div class="visible-xs hidden-md pull-right"><img src="./modelliNuovo/assets/img/logo-inps-neg.png" class="logo" alt="INPS"></div>
+<h2 class="">Istituto Nazionale Previdenza Sociale </h2>
+<ul>
+<li>
+<span >P.IVA 02121151001 </span>
+</li>
+<li>
+<span ><em>Sede Legale: <br/>Via Ciro il Grande, 21 <br/>00144 Roma</em> </span>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=24"  target="_self"><span class="footer-bold">Contatti </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iidlink=88"  target="_self"><span class="footer-bold">PEC </span></a>
+</li>
+<li><a class="FD_socialLink" title="Facebook" href="https://www.facebook.com/INPS.PerLaFamiglia/" ><img src="/docallegatiNP/Mig/Icons/logo-facebook-footer.jpg" alt="Facebook"></a><a class="FD_socialLink" title="Twitter" href="http://www.twitter.com/Inps_it" ><img src="/docallegatiNP/Mig/Icons/logo-twitter-footer.jpg" alt="Twitter"></a><a class="FD_socialLink" title="YouTube" href="https://www.youtube.com/user/INPSComunica" ><img src="/docallegatiNP/Mig/Icons/logo-youtube-footer.jpg" alt="YouTube"></a><a class="FD_socialLink" title="LinkedIn" href="https://www.linkedin.com/company/inps-official/" ><img src="/docallegatiNP/Mig/Icons/logo-linkedin-footer.jpg" alt="LinkedIn"></a><a class="FD_socialLink" title="Instagram" href="https://www.instagram.com/inps_social/" ><img src="/docallegatiNP/Mig/Images/logo-instagram-footer.jpg" alt="Instagram"></a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2">
+
+<h2 class="bold">L'INPS </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=11"  target="_self"><span >L'Istituto </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=10"  target="_self"><span >INPS Comunica </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=26"  target="_self"><span >Archivio </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?smappa=yes"  target="_self"><span >Mappa del sito </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=98"  target="_self"><span >RSS </span></a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2">
+
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=101"  target="_self"  class="FD_headerWithURL"><h2 class="">Amministrazione Trasparente </h2></a>
+<ul>
+</ul>
+<h2 class="">Avvisi, Bandi e Fatturazione </h2>
+<ul>
+<li>
+<a href="//www.inps.it/Welfare/default.aspx?startpage=avvisi"  target="_self"><span >Avvisi </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46070%3b46106%3b&lastMenu=46106&iMenu=13&p4=2"  target="_self"><span >Concorsi </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46241%3b&lastMenu=46241&iMenu=13&p4=2"  target="_self"><span >Fatturazione elettronica </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46241%3b46236%3b&lastMenu=46236&iMenu=13&p4=2"  target="_self"><span >Fornitori e Professionisti </span></a>
+</li>
+<li>
+<a href="//www.inps.it/GareOnlineInt/default.aspx?startpage=gare"  target="_self"><span >Gare </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46070%3b46240%3b&lastMenu=46240&iMenu=13&p4=2"  target="_self"><span >Aste immobiliari INPS </span></a>
+</li>
+<li>
+<a href="//www.inps.it/Welfare/default.aspx?startpage=welfare"  target="_self"><span >Welfare, assistenza e mutualit&agrave; </span></a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2">
+
+<h2 class="">Prestazioni e servizi </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=91"  target="_self"><span >Esplora il sito </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=92"  target="_self"><span >Naviga per utente </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=93"  target="_self"><span >Naviga per tema </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=97"  target="_self"><span >Prestazioni </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=94"  target="_self"><span >Servizi </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=95"  target="_self"><span >Moduli </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=96"  target="_self"><span >Software </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=98"  target="_self"><span >App mobile </span></a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2">
+
+<h2 class="">Dati, ricerche e bilanci </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46306%3b&lastMenu=46306&iMenu=12&p4=2"  target="_self"><span >Bilanci e rendiconti </span></a>
+</li>
+<li>
+<a href="//www.inps.it/OpenData/default.aspx?iidlink=103"  target="_self"><span >Open Data </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iidlink=105"  target="_self"><span >Rapporti Annuali </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46437%3b&lastMenu=46437&iMenu=12&p4=2"  target="_self"><span >Osservatori statistici e altre statistiche </span></a>
+</li>
+</ul>
+<h2 class="">Note legali </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=113"  target="_self"><span >Privacy </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=;0;46124;&lastMenu=46124&iMenu=13&p4=2"  target="_self"><span >Atti di notifica </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=0%3b&iMenu=118"  target="_self"><span >Dichiarazioni di accessibilit&agrave; </span></a>
+</li>
+</ul>
+</div>
+
+ </div>
+ <div class="visible-md hidden-lg col-md-11">
+ <div class="col-md-4">
+<h2 class="">Istituto Nazionale Previdenza Sociale </h2>
+<ul>
+<li>
+<span >P.IVA 02121151001 </span>
+</li>
+<li>
+<span ><em>Sede Legale: <br/>Via Ciro il Grande, 21 <br/>00144 Roma</em> </span>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=24"  target="_self"><span class="footer-bold">Contatti </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iidlink=88"  target="_self"><span class="footer-bold">PEC </span></a>
+</li>
+<li><a class="FD_socialLink" title="Facebook" href="https://www.facebook.com/INPS.PerLaFamiglia/" ><img src="/docallegatiNP/Mig/Icons/logo-facebook-footer.jpg" alt="Facebook"></a><a class="FD_socialLink" title="Twitter" href="http://www.twitter.com/Inps_it" ><img src="/docallegatiNP/Mig/Icons/logo-twitter-footer.jpg" alt="Twitter"></a><a class="FD_socialLink" title="YouTube" href="https://www.youtube.com/user/INPSComunica" ><img src="/docallegatiNP/Mig/Icons/logo-youtube-footer.jpg" alt="YouTube"></a><a class="FD_socialLink" title="LinkedIn" href="https://www.linkedin.com/company/inps-official/" ><img src="/docallegatiNP/Mig/Icons/logo-linkedin-footer.jpg" alt="LinkedIn"></a><a class="FD_socialLink" title="Instagram" href="https://www.instagram.com/inps_social/" ><img src="/docallegatiNP/Mig/Images/logo-instagram-footer.jpg" alt="Instagram"></a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<h2 class="bold">L'INPS </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=11"  target="_self"><span >L'Istituto </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=10"  target="_self"><span >INPS Comunica </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=26"  target="_self"><span >Archivio </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?smappa=yes"  target="_self"><span >Mappa del sito </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=98"  target="_self"><span >RSS </span></a>
+</li>
+</ul>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=101"  target="_self" class="FD_headerWithURL"><h2 class="">Amministrazione Trasparente </h2></a>
+<ul>
+</ul>
+<h2 class="">Avvisi, Bandi e Fatturazione </h2>
+<ul>
+<li>
+<a href="//www.inps.it/Welfare/default.aspx?startpage=avvisi"  target="_self"><span >Avvisi </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46070%3b46106%3b&lastMenu=46106&iMenu=13&p4=2"  target="_self"><span >Concorsi </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46241%3b&lastMenu=46241&iMenu=13&p4=2"  target="_self"><span >Fatturazione elettronica </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46241%3b46236%3b&lastMenu=46236&iMenu=13&p4=2"  target="_self"><span >Fornitori e Professionisti </span></a>
+</li>
+<li>
+<a href="//www.inps.it/GareOnlineInt/default.aspx?startpage=gare"  target="_self"><span >Gare </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46070%3b46240%3b&lastMenu=46240&iMenu=13&p4=2"  target="_self"><span >Aste immobiliari INPS </span></a>
+</li>
+<li>
+<a href="//www.inps.it/Welfare/default.aspx?startpage=welfare"  target="_self"><span >Welfare, assistenza e mutualit&agrave; </span></a>
+</li>
+</ul>
+</div>
+<div class="col-md-4">
+<h2 class="">Prestazioni e servizi </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=91"  target="_self"><span >Esplora il sito </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=92"  target="_self"><span >Naviga per utente </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=93"  target="_self"><span >Naviga per tema </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=97"  target="_self"><span >Prestazioni </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=94"  target="_self"><span >Servizi </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=95"  target="_self"><span >Moduli </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=96"  target="_self"><span >Software </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=98"  target="_self"><span >App mobile </span></a>
+</li>
+</ul>
+<h2 class="">Dati, ricerche e bilanci </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46306%3b&lastMenu=46306&iMenu=12&p4=2"  target="_self"><span >Bilanci e rendiconti </span></a>
+</li>
+<li>
+<a href="//www.inps.it/OpenData/default.aspx?iidlink=103"  target="_self"><span >Open Data </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iidlink=105"  target="_self"><span >Rapporti Annuali </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46437%3b&lastMenu=46437&iMenu=12&p4=2"  target="_self"><span >Osservatori statistici e altre statistiche </span></a>
+</li>
+</ul>
+<h2 class="">Note legali </h2>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=113"  target="_self"><span >Privacy </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=;0;46124;&lastMenu=46124&iMenu=13&p4=2"  target="_self"><span >Atti di notifica </span></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=0%3b&iMenu=118"  target="_self"><span >Dichiarazioni di accessibilit&agrave; </span></a>
+</li>
+</ul>
+</div>
+
+ </div>
+
+ <div class="visible-xs visible-sm hidden-md hidden-lg col-lg-8">
+ <div class="col-sm-12" style="padding-left:  0;">
+<div class="visible-xs visible-sm hidden-md pull-right"><img src="./modelliNuovo/assets/img/logo-inps-neg.png" class="logo" alt="INPS"></div>
+<a href="#" onclick="return false;" title="" target="_self" class="FD_headerNo_URL"><h2 class="">Istituto Nazionale Previdenza Sociale </h2></a>
+<ul>
+<li>
+<a href="#" onclick="return false;" title="" class=" FD_headerNo_URL" target="_self"> P.IVA 02121151001</a>
+</li>
+<li>
+<a href="#" onclick="return false;" title="" class=" FD_headerNo_URL" target="_blank"> <em>Sede Legale: <br/>Via Ciro il Grande, 21 <br/>00144 Roma</em></a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=24" title="" class="footer-bold " target="_self"> Contatti</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iidlink=88" title="" class="footer-bold " target="_self"> PEC</a>
+</li>
+<li><a class="FD_socialLink" title="Facebook" href="https://www.facebook.com/INPS.PerLaFamiglia/" ><img src="/docallegatiNP/Mig/Icons/logo-facebook-footer.jpg" alt="Facebook"></a><a class="FD_socialLink" title="Twitter" href="http://www.twitter.com/Inps_it" ><img src="/docallegatiNP/Mig/Icons/logo-twitter-footer.jpg" alt="Twitter"></a><a class="FD_socialLink" title="YouTube" href="https://www.youtube.com/user/INPSComunica" ><img src="/docallegatiNP/Mig/Icons/logo-youtube-footer.jpg" alt="YouTube"></a><a class="FD_socialLink" title="LinkedIn" href="https://www.linkedin.com/company/inps-official/" ><img src="/docallegatiNP/Mig/Icons/logo-linkedin-footer.jpg" alt="LinkedIn"></a><a class="FD_socialLink" title="Instagram" href="https://www.instagram.com/inps_social/" ><img src="/docallegatiNP/Mig/Images/logo-instagram-footer.jpg" alt="Instagram"></a></li>
+</ul>
+</div>
+<div class="col-sm-12 accordation">
+<a href="#" onclick="return false;" title="" target="_blank" class="FD_headerNo_URL"><h2 class="bold">L'INPS  <span class="">+</span></h2></a>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=11" title="" class=" " target="_self"> L'Istituto</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=10" title="" class=" " target="_self"> INPS Comunica</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=26" title="" class=" " target="_self"> Archivio</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?smappa=yes" title="" class=" " target="_self"> Mappa del sito</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=98" title="" class=" " target="_self"> RSS</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-12 FD_linkFooterMobile">
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=101" title="" target="_self" class="FD_headerWithURL"><h2 class="">Amministrazione Trasparente  </h2></a>
+<ul>
+</ul>
+</div>
+<div class="col-sm-12 accordation">
+<a href="#" onclick="return false;" title="" target="_self" class="FD_headerNo_URL"><h2 class="">Prestazioni e servizi  <span class="">+</span></h2></a>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=91" title="" class=" " target="_self"> Esplora il sito</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=92" title="" class=" " target="_self"> Naviga per utente</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=93" title="" class=" " target="_self"> Naviga per tema</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=97" title="" class=" " target="_self"> Prestazioni</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=94" title="" class=" " target="_self"> Servizi</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=95" title="" class=" " target="_self"> Moduli</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=96" title="" class=" " target="_self"> Software</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iprestazioni=98" title="" class=" " target="_self"> App mobile</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-12 accordation">
+<a href="#" onclick="return false;" title="" target="_self" class="FD_headerNo_URL"><h2 class="">Dati, ricerche e bilanci  <span class="">+</span></h2></a>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46306%3b&lastMenu=46306&iMenu=12&p4=2" title="" class=" " target="_self"> Bilanci e rendiconti</a>
+</li>
+<li>
+<a href="//www.inps.it/OpenData/default.aspx?iidlink=103" title="" class=" " target="_self"> Open Data</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iidlink=105" title="" class=" " target="_self"> Rapporti Annuali</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46437%3b&lastMenu=46437&iMenu=12&p4=2" title="" class=" " target="_self"> Osservatori statistici e altre statistiche</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-12 accordation">
+<a href="#" onclick="return false;" title="" target="_self" class="FD_headerNo_URL"><h2 class="">Note legali  <span class="">+</span></h2></a>
+<ul>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?iMenu=113" title="" class=" " target="_self"> Privacy</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=;0;46124;&lastMenu=46124&iMenu=13&p4=2" title="" class=" " target="_self"> Atti di notifica</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=0%3b&iMenu=118" title="" class=" " target="_self"> Dichiarazioni di accessibilità</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-12 accordation">
+<a href="#" onclick="return false;" title="" target="_self" class="FD_headerNo_URL"><h2 class="">Avvisi, Bandi e Fatturazione  <span class="">+</span></h2></a>
+<ul>
+<li>
+<a href="//www.inps.it/Welfare/default.aspx?startpage=avvisi" title="" class=" " target="_self"> Avvisi</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46070%3b46106%3b&lastMenu=46106&iMenu=13&p4=2" title="" class=" " target="_self"> Concorsi</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46241%3b&lastMenu=46241&iMenu=13&p4=2" title="" class=" " target="_self"> Fatturazione elettronica</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46241%3b46236%3b&lastMenu=46236&iMenu=13&p4=2" title="" class=" " target="_self"> Fornitori e Professionisti</a>
+</li>
+<li>
+<a href="//www.inps.it/GareOnlineInt/default.aspx?startpage=gare" title="" class=" " target="_self"> Gare</a>
+</li>
+<li>
+<a href="//www.inps.it/nuovoportaleinps/default.aspx?sID=%3b0%3b46070%3b46240%3b&lastMenu=46240&iMenu=13&p4=2" title="" class=" " target="_self"> Aste immobiliari INPS</a>
+</li>
+<li>
+<a href="//www.inps.it/Welfare/default.aspx?startpage=welfare" title="" class=" " target="_self"> Welfare, assistenza e mutualità</a>
+</li>
+</ul>
+</div>
+
+ </div>
+ </div>
+ <div class="footer__bottom">
+ <div class="footeruno">
+ <img src="modelliNuovo/assets/img/img-istituzionale-footer.png" height="40" width="40" alt=""> www.inps.gov.it
+ </div>
+ <div class="footerdue">&copy; 2010-2017 Istituto Nazionale Previdenza Sociale.</div>
+ <div class="footertre">
+ Tutti i diritti riservati.
+ </div>
+ </div>
+
+ 
+ <div id="app" class="modal fade" tabindex="-1" role="dialog">
+ <div class="modal-dialog modal-lg">
+ <div class="modal-content">
+ <div class="modal-header">
+ <button type="button" aria-label="Chiudi" class="close" data-dismiss="modal">
+ <span aria-hidden="true">&times; </span>
+ </button>
+ <h3 class="modal-title">
+ Servizio Online per richiedere la prestazione
+ </h3>
+ </div>
+ <div class="modal-body modalDim">
+ <p class="modal-body-message">
+ Qui ci sarà lo strumento per richiedere questa prestazione o servizio.
+ </p>
+ </div>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+ </div>
+ </div>
+ </div>
+ </div>
+
+</footer>
+<div id="modal-notifica" class="modal fade modal-vertical-centered" role="dialog">
+ <form id="notifiche-form" method="POST" style="background-color:transparent">
+ <div class="modal-dialog ">
+ <div class="modal-content large">
+ <div class="modal-header">
+ <button type="button" aria-label="Chiudi" class="close" data-dismiss="modal">&times;</button>
+ <h4 id="h4TitleNotif" class="modal-title"><em class="fa fa-bell-o"></em>&nbsp;<label id="labelTitleNotif"></label> </h4>
+ </div>
+ <div class="modal-intro">
+ <h3 id="h3Title">&nbsp;</h3>
+ <span id="spanDate" class="date"> </span>
+ </div>
+ <div class="modal-body modalDim">
+ <p id="pTesto"> </p>
+ </div>
+ <div class="modal-footer">
+ <div class="btn-group">
+ <button id="segna-notifica-letta" type="submit" name="btSubmit" value='1' class="btn btn-primary">Segna </button>
+ <button id="rimuovi-notifica" type="submit" name="btSubmit2" value='2' class="btn btn-primary">Cancella Avviso</button>
+ </div>
+ </div>
+ </div>
+
+ </div>
+ <input type="hidden" id="Remove-Notifiy" name="Remove-Notifiy">
+ </form>
+</div>
+
+<div id="modal-video" class="modal fade modal-vertical-centered" role="dialog">
+ <div class="modal-dialog">
+ <div class="modal-content large">
+ <div class="modal-header">
+ <a href="#" tabindex="0" title="Video skip" onfocus="javascript:document.getElementById('closeModalVideo').focus();" id="btnVideoSkip2"></a>
+ <button type="button" id="closeVideo" data-event="close-video" aria-label="Chiudi" class="close" data-dismiss="modal">&times;</button>
+ <h4 class="modal-title"><em class="fa fa-video-camera"></em>&nbsp;&nbsp;&nbsp;Video</h4>
+ </div>
+ <div class="modal-body">
+ <div class="player">
+ <div id="player-video-article-default"></div>
+ </div>
+ </div>
+ <div class="modal-footer">
+ <div class="btn-group">
+ <button id="closeModalVideo" data-event="close-video" aria-label="Chiudi" type="submit" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+ <a href="#" tabindex="0" title="Video skip" onfocus="javascript:document.getElementById('closeVideo').focus();" id="btnVideoSkip"></a>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+
+<!-- Messaggio nella modale -->
+
+
+<!-- Scadenza nella modale -->
+<div id="eventDetail" class="modal fade modal-vertical-centered in" role="dialog">
+ <div class="modal-dialog ">
+ <div class="modal-content large">
+ <div class="modal-header">
+ <button type="button" aria-label="Chiudi" class="close" data-dismiss="modal">×</button>
+ <h4 class="modal-title"><em class="fa fa-calendar"></em> Scadenza da <span id="eventAuthor"></span></h4>
+ </div>
+
+ <div class="modal-intro">
+ <h3 id="eventTitle">&nbsp;</h3>
+ <span id="eventDate" class="date"></span>
+ </div>
+
+ <div class="modal-body modalDim">
+ <p id="eventText"></p>
+ </div>
+ <form id="scadenze-form" method="POST" style="background-color:transparent">
+ <div class="modal-footer">
+ <div class="btn-group">
+ <button id="segna-scadenza-letta" type="submit" name="segna-scadenza-letta" class="btn btn-primary">Segna come letta</button>
+ <button id="rimuovi-scadenza" type="submit" name="rimuovi-scadenza" class="btn btn-primary">Cancella Scadenza</button>
+ </div>
+ </div>
+ </form>
+ </div>
+ </div>
+</div>
+
+<script type="text/javascript">
+ var securityCheckStatus = 0;
+ var securityCheckMessage = "Attenzione! Il codice di sicurezza che hai inserito è errato. Digita esattamente il testo che leggi nell’area «Verifiche di sicurezza»..";
+
+ var valRatingCompleto = 0;
+ var valRatingChiaro = 0;
+ var valRatingAggiornato = 0;
+ var valRatingFacile = 0;
+
+ var valTrovato = 0;
+ var valTestoFeedback = "";
+
+</script>
+<div id="modal-feedback" class="modal scrollable fade modal-vertical-centered" role="dialog">
+
+ <div class="modal-dialog">
+ <div class="modal-content large">
+
+ <form class="modal-form" name="feedback_form" method="post" enctype="multipart/form-data" action="//www.inps.it/NuovoportaleINPS/default.aspx?itemdir=53856&lang=IT">
+ <input type="hidden" name="itemDir" id="ItemDir" value="53856" />
+ <input type="hidden" name="iStatoPagina" id="iStatoPagina" value="5" />
+ <input type="hidden" name="insfeedb" id="insfeedb" value="true" />
+ <input type="hidden" name="fbbreadcrumb" id="fbbreadcrumb" value="NPI/Schede News/Indennità Covid, Bonus baby sitting, Congedi e REM: i dati al 18 giugno 2020" />
+ <input type="hidden" name="fbaggiunta" id="fbaggiunta" value="" />
+ <input type="hidden" name="refreshcaptcha" id="refreshcaptcha" value="false" />
+ <input type="hidden" name="nfsm" value="1d852941-8046-45c5-95b8-a48b21156a6c" />
+ <input type="hidden" name="securitycode" id="securitycode" value="BGnQ1i7fA8A=" />
+
+ <div class="modal-header">
+ <a href="#" tabindex="0" title="Feedback skip" onfocus="javascript:document.getElementById('btnFeedback').focus();" id="btnFeedbackSkip2"></a> 
+ <button type="button" tabindex="0" title="chiudi" id="closeFeedback" aria-label="Chiudi" class="close" data-dismiss="modal">&times;</button>
+ <h4 class="modal-title"><em class="fa fa-comment"></em> Feedback</h4>
+ </div>
+
+ <div class="modal-intro">
+ <span class="h3Aiutaci">Aiutaci a migliorare questa pagina</span>
+ </div>
+
+ <!--<br />-->
+
+ <div id="divMessageAiutaMigliorarePagina" class="notice-box expired distance-to-top" style="display: none;">
+ <div class="icon">
+ <em class="fa fa-exclamation-triangle"></em>
+ </div>
+ <div class="text">
+ <span id="spanMessage">Attenzione! Per esprimere la tua opinione devi compilare i campi obbligatori evidenziati in rosso.</span>
+ </div>
+ </div>
+ 
+ <div class="modal-body modalDim" id="feedback_body">
+ <fieldset>
+ <legend>Hai trovato quello che cercavi?</legend>
+ <label class="radio-inline" for="trovato1">
+ <input type="radio" name="trovato" tabindex="0" id="trovato1" aria-label="hai trovato quello che cercavi - risposta SI" value="1">
+ 
+ Sì
+ </label>
+ 
+ <label class="radio-inline" for="trovato2">
+ <input type="radio" name="trovato" tabindex="0" id="trovato2" aria-label="hai trovato quello che cercavi - risposta NO" value="2">
+ No
+ </label>
+ 
+ <label class="radio-inline" for="trovato3">
+ <input type="radio" name="trovato" tabindex="0" id="trovato3" aria-label="hai trovato quello che cercavi - risposta IN PARTE" value="3">
+ In parte
+ </label>
+ </fieldset>
+
+ <fieldset> 
+ <legend>Il contenuto ti è sembrato</legend>
+ <div class="row">
+ <div class=" col-sm-4">
+ <div class="row">
+ <div class="col-xs-6" id="rating_chiaro">Chiaro</div>
+ <div class="col-xs-6"> 
+ <div class="ratingcontrol-target" data-name="chiaro" id="gruppo-chiaro"></div> 
+ <input id="chiaro" title="chiaro" name="ratingchiaro" value="0" type="number" class="hidden" />
+ </div>
+ <div class="col-xs-6" id="rating_completo">Completo</div>
+ <div class="col-xs-6"> 
+ <div class="ratingcontrol-target" data-name="completo" id="gruppo-completo"></div> 
+ <input id="completo" title="completo" name="ratingcompleto" value="0" type="number" class="hidden" />
+ </div>
+ </div>
+ </div>
+ 
+ <div class="col-sm-offset-2 col-sm-4">
+ <div class="row">
+ <div class="col-xs-6" id="rating_aggiornato">Aggiornato</div>
+ <div class="col-xs-6"> 
+ <div class="ratingcontrol-target" data-name="aggiornato" id="gruppo-aggiornato"></div> 
+ <input id="aggiornato" title="Aggiornato" name="ratingaggiornato" value="0" class="hidden" />
+ </div>
+ <div class="col-xs-6" id="rating_facile">Facile da trovare</div>
+ <div class="col-xs-6"> 
+ <div class="ratingcontrol-target" data-name="facile da trovare" id="gruppo-facile"></div> 
+ <input id="facile" title="Facile da trovare" name="ratingfacile" value="0" class="hidden" />
+ </div>
+ </div>
+ </div> 
+ </div>
+ </fieldset>
+
+ <fieldset>
+ <legend>Come possiamo migliorarlo?
+ <label for="testoFeedback"><span style="visibility:hidden">testo</span></label>
+ </legend>
+ 
+ 
+ <textarea class="form-control" name="testoFeedback" rows="3" aria-label="Come possiamo migliorarlo? Campo testo" id="testoFeedback"></textarea>
+ 
+ </fieldset>
+ 
+ <div id="security" class="recaptcha">
+ <label id="label-for-security-check" for="securitycheck"><span>Verifica di sicurezza</span></label>
+ <br />
+ 
+ <img src="generaCaptcha.aspx?stringa=BGnQ1i7fA8A%3d" alt='Se non riesci a leggere questo codice di verifica, digita questo codice, senza tenere in considerazione gli * : p*g*0*n*' title='Se non riesci a leggere questo codice di verifica, digita questo codice, senza tenere in considerazione gli * : p*g*0*n*'/>
+ 
+ <input type="text" id="securitycheck" name="securitycheck" aria-label='Se non riesci a leggere questo codice di verifica, digita questo codice, senza tenere in considerazione gli * : p*g*0*n*' title='Se non riesci a leggere questo codice di verifica, digita questo codice, senza tenere in considerazione gli * : p*g*0*n*'>
+ 
+
+ </div>
+
+ <div id="honeypotsome-div" class="invisible">
+ If you see this, leave this form field blank 
+ and invest in CSS support.
+ <label for="honeypot"><span style="visibility:hidden">Verifica:</span></label>
+ <input type="text" name="captcha" id="honeypot" value="blabla" />
+ </div>
+ </div>
+
+ <div class="modal-footer"> 
+ <div class="btn-group"> 
+ <button type="submit" class="btn btn-primary" tabindex="0" onclick="refreshCaptcha()" id='rigeneracapthaNpi'>Rigenera codice</button>&nbsp;
+ <button type="submit" class="btn btn-primary" tabindex="0" style="padding: 0.5em 1.5em;" onclick="return validateFeedbackForm(feedback_form)" id="btnFeedback">Invia</button> 
+ <a href="#" tabindex="0" title="Feedback skip" onfocus="javascript:document.getElementById('closeFeedback').focus();" id="btnFeedbackSkip"></a> 
+ </div>
+ </div>
+ </form>
+ </div>
+ </div>
+</div>
+<script type="text/javascript">
+ function refreshCaptcha() {
+ $('#refreshcaptcha')[0].setAttribute('value', 'true');
+ }
+
+ $(document).ready(function () {
+ $('#modal-feedback').on('hidden.bs.modal', function () {
+ $("#testoFeedback").val("");
+
+ $('#chiaro').val(0);
+ $('#gruppo-chiaro').ratingcontrol('cancel', false); 
+
+ $('#completo').val(0);
+ $('#gruppo-completo').ratingcontrol('cancel', false); 
+
+ $('#aggiornato').val(0);
+ $('#gruppo-aggiornato').ratingcontrol('cancel', false); 
+
+ $('#facile').val(0);
+ $('#gruppo-facile').ratingcontrol('cancel', false); 
+
+ $("#trovato1").prop("checked", false);
+ $("#trovato2").prop("checked", false);
+ $("#trovato3").prop("checked", false);
+
+ $("#divMessageAiutaMigliorarePagina").css("display", "none");
+ });
+ });
+
+</script>
+
+<!-- Rating control related -->
+
+<script src="modelliNuovo/assets/js/jquery.ratingcontrol.js" type="text/javascript"></script>
+<!-- /Rating control related -->
+
+<script src="modelliNuovo/assets/player/js/js-player.js" type="text/javascript"></script>
+<script src="modelliNuovo/assets/player/jwplayer/jwplayer.js" type="text/javascript"></script>
+
+
+<!-- C1 -->
+<script type="text/javascript">
+	var pkDocumentTitle = document.title;
+    var pkBarPathDelPortale = "";
+    //C2
+    if (typeof (sPathBarDelPortaleNuova) !== 'undefined' && sPathBarDelPortaleNuova.length > 0) {
+		sPathBarDelPortale = sPathBarDelPortaleNuova;
+    }
+
+	if (typeof (sPathBarDelPortale) !== 'undefined') {
+		if (sPathBarDelPortale.substring(0, 1) != "/") {
+			pkBarPathDelPortale = "/";
+		}
+		pkBarPathDelPortale += sPathBarDelPortale;
+	}
+	else {
+		pkBarPathDelPortale = window.location.href;
+	}
+
+	var _paq = _paq || [];
+	/* C3 */
+	//_paq.push(["setCookieDomain", "*.inps.it"]);
+	_paq.push(["setDocumentTitle", sPathBarDelPortaleNuova]);
+	_paq.push(['setCustomUrl', location.href.toLowerCase()]);	
+	//C8
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		//var u = "//**/stat3/"; //C4
+		//var u = "//**/stat3/"; //C5
+		var u = "//www.inps.it/stat3/"; //C6
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '2']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+
+	window.piwikAsyncInit = function () {
+		//C7
+		trackBigData();
+	};
+
+	function trackPiwikScrollPageView() {
+		_paq.push(["trackPageView"]);
+		//C7
+		trackBigData();
+	}
+
+	//C7
+
+	var trackBigData = function (){
+		var piwikBigData = Piwik.getTracker("//www.inps.it/stat3/bd.php", 11);
+		//piwikBigData.setDocumentTitle(pkBarPathDelPortale);
+		piwikBigData.setDocumentTitle(window.location.origin.toLowerCase() + pkBarPathDelPortale);
+		
+		try {
+			var cookieByName = getCookieByName("newSCCSP");
+			if (cookieByName){
+				piwikBigData.setCustomVariable( 1, 'userId', getCookieByName("newSCCSP"), 'page');
+			}
+
+			if (document.head.querySelector("meta[name=IdContenuto]")) {
+				piwikBigData.setCustomVariable( 2, 'contentId', document.head.querySelector("meta[name=IdContenuto]").content, 'page');
+			}
+
+			if (document.head.querySelector("meta[name=IdTipologiaContenuto]")) {
+				piwikBigData.setCustomVariable( 3, 'contentTypeId', document.head.querySelector("meta[name=IdTipologiaContenuto]").content, 'page');
+			}
+		}
+		catch (err) {
+		} 		
+		
+		piwikBigData.enableLinkTracking(true);
+		piwikBigData.trackPageView();
+	}
+	
+	getCookieByName = function (name) {
+		match = document.cookie.match(new RegExp(name + '=([^;]+)'));
+		if (match) return match[1];
+		else return "";
+	}
+</script>
+<noscript><p><img src="//www.inps.it/stat3/piwik.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End C1 -->
+
+<script type="text/javascript">
+ var $_viewportBreakpoints = {
+ "md": "768",
+ "lg": "960",
+ };
+
+</script>
+<!--UPDATE TEMPALE 2020-07-28-->
+<!--getfooter CACHE-->
+
+
+
+<script type="text/javascript">
+ //rimensionamento della modale con iframe al clic del link per farla apparire
+ $("#modal-iframe").on('shown.bs.modal', function () {
+
+ $("#modal-iframe .modal-body").height($("#modal-iframe .modal-dialog").height() - 155);
+
+ });
+
+ //rimensionamento della modale con iframe al ridimensionamento della finestra
+ $(window).resize(function () {
+ $("#modal-iframe .modal-body").height($("#modal-iframe .modal-dialog").height() - 155);
+
+ });
+ // RESIZING DINAMICO MODALE -> SEDI INPS
+ $("#modal-servizio-accesso").on('show.bs.modal', function () {
+
+ CentraModali("servizio-accesso");
+ });
+
+ $('#modal-servizio-accesso').on('hidden.bs.modal', function () {
+ window.location = window.location.href.split("?")[0];
+ });
+
+
+ $(window).resize(function () {
+
+ CentraModali("servizio-accesso");
+
+ });
+
+ /* Skiplink */
+ $(function () {
+ //Quando un link dentro il div skiplink ha il fous, il div contenitore appare
+ $('.skiplink a').on({
+ 'focus': function () {
+ $('.skiplink').removeClass('sr-only').addClass('skiplink--focused');
+ },
+ 'blur': function () {
+ $('.skiplink').addClass('sr-only').removeClass('skiplink--focused');
+ }
+ });
+ });
+</script>
+<script type="text/javascript">$(document).ready(function () {   $('.service-list a').click(function () {       if (this.href != 'javascript:void(0)') {            var btnDisabled = this;            var oldHref = this.href;           var oldClick = this.attributes["onclick"].nodeValue;     var tmpFunc = new Function(oldClick);    tmpFunc();      this.href = 'javascript:void(0)';           this.removeAttribute('onclick');           setTimeout(function () { btnDisabled.href = oldHref; btnDisabled.setAttribute('onclick', oldClick); }, 5000);           window.location.href = oldHref;       }   });});</script>
+</body> 
+</html> 
+<!--A_: 0
+B_: 0
+ WPMI ver. utente = 0,0312478
+B3: 0,0312478
+C_: 0,0468735
+D_: 0,0626621
+ prima 29/01/2021 17:13:44
+   **** OTTIMIZZZATO stamapaalberointgable ****
+   **** OTTIMIZZZATO stamapaalberointgable ****
+ dopo 29/01/2021 17:13:44
+ prima getListaServiziModuliSchede 29/01/2021 17:13:44
+ dopo getListaServiziModuliSchede 29/01/2021 17:13:44
+D1: 0,3281348
+D2: 0,3281348
+E_: 0,3281348
+F_: 0,3281348
+F1: 0,3593886
+0 Pif, form insfeedb vuoto,F2: 0,3750134
+G_: 0,3750134
+h_: 0,3750134
+I_: 0,4062542
+iStatoPagina: 5
+L_: 0,4531405
+ Tempo esecuzione=0,4531405 IP0INPS-FL17--><!-- versione 1.72 NPI ver. del 07-11-2019 14.00   -->
+<!-- current Version: 1.0.19324.1530, Date: 07/01/2021   -->

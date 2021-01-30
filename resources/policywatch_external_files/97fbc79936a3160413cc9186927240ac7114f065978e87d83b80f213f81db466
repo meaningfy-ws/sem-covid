@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<title>VEGORA | COVID-19- MJERE - HZZ - VEGORA </title>
+<meta name="keywords" content="COVID-19, MJERE,  HZZ , VEGORA">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://vegora.hr/xmlrpc.php" />
+<link rel="shortcut icon" type="image/x-icon" href="https://vegora.hr/wp-content/uploads/2016/02/Vegora-Favicon.png">
+<link rel="apple-touch-icon" href="https://vegora.hr/wp-content/uploads/2016/02/Vegora-Favicon.png"/>
+<link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic|Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="VEGORA &raquo; Kanal" href="https://vegora.hr/feed/" />
+<link rel="alternate" type="application/rss+xml" title="VEGORA &raquo; Kanal komentara" href="https://vegora.hr/comments/feed/" />
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://vegora.hr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.9' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy-facebook-likebox-custom-fonts-css'  href='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/frontend/assets/css/esf-custom-fonts.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy-facebook-likebox-popup-styles-css'  href='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/facebook/frontend/assets/css/magnific-popup.css?ver=6.1.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy-facebook-likebox-frontend-css'  href='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/facebook/frontend/assets/css/easy-facebook-likebox-frontend.css?ver=6.1.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy-facebook-likebox-customizer-style-css'  href='https://vegora.hr/wp-admin/admin-ajax.php?action=easy-facebook-likebox-customizer-style&#038;ver=6.1.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='cookielawinfo-style-css'  href='https://vegora.hr/wp-content/plugins/webtoffee-gdpr-cookie-consent/css/cli-style.css?ver=1.5.4' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='cookielawinfo-style-gdpr-css'  href='https://vegora.hr/wp-content/plugins/webtoffee-gdpr-cookie-consent/gdpr/style.css?ver=1.5.4' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mc4wp-form-themes-css'  href='https://vegora.hr/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.min.css?ver=4.8.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='default_style-css'  href='https://vegora.hr/wp-content/themes/bridge/style.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='qode-font-awesome-css'  href='https://vegora.hr/wp-content/themes/bridge/css/font-awesome/css/font-awesome.min.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='qode-elegant-icons-css'  href='https://vegora.hr/wp-content/themes/bridge/css/elegant-icons/style.min.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='stylesheet-css'  href='https://vegora.hr/wp-content/themes/bridge/css/stylesheet.min.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='style_dynamic-css'  href='https://vegora.hr/wp-content/themes/bridge/css/style_dynamic.css?ver=1600335208' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='responsive-css'  href='https://vegora.hr/wp-content/themes/bridge/css/responsive.min.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='style_dynamic_responsive-css'  href='https://vegora.hr/wp-content/themes/bridge/css/style_dynamic_responsive.css?ver=1600335208' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='js_composer_front-css'  href='https://vegora.hr/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.7' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='custom_css-css'  href='https://vegora.hr/wp-content/themes/bridge/css/custom_css.css?ver=1600335208' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='esf-custom-fonts-css'  href='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/frontend/assets/css/esf-custom-fonts.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='esf-insta-frontend-css'  href='https://vegora.hr/wp-content/plugins/easy-facebook-likebox//instagram/frontend/assets/css/esf-insta-frontend.css?ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='esf-insta-customizer-style-css'  href='https://vegora.hr/wp-admin/admin-ajax.php?action=esf-insta-customizer-style&#038;ver=4.9.15' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='pojo-a11y-css'  href='https://vegora.hr/wp-content/plugins/pojo-accessibility/assets/css/style.min.css?ver=1.0.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='cf7cf-style-css'  href='https://vegora.hr/wp-content/plugins/cf7-conditional-fields/style.css?ver=1.9.14' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//vegora.hr/wp-content/cache/wpfc-minified/7z10o3gb/440rk.css" media="all"/>
+<script type='text/javascript' src='https://vegora.hr/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/facebook/frontend/assets/js/jquery.magnific-popup.min.js?ver=6.1.0'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/facebook/frontend/assets/js/jquery.cookie.js?ver=6.1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var public_ajax = {"ajax_url":"https:\/\/vegora.hr\/wp-admin\/admin-ajax.php","efbl_is_fb_pro":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/facebook/frontend/assets/js/public.js?ver=6.1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":{"nuzni":{"0":{"ID":17233,"post_author":"2","post_date":"2018-05-24 15:26:35","post_date_gmt":"2018-05-24 13:26:35","post_content":"Kola\u010di\u0107 za pohranu korisnikove suglasnosti za trenuta\u010dnu domenu.","post_title":"viewed_cookie_policy","post_excerpt":"","post_status":"publish","comment_status":"closed","ping_status":"closed","post_password":"","post_name":"viewed_cookie_policy","to_ping":"","pinged":"","post_modified":"2018-05-24 15:26:35","post_modified_gmt":"2018-05-24 13:26:35","post_content_filtered":"","post_parent":0,"guid":"https:\/\/vegora.hr\/?post_type=cookielawinfo&#038;p=17233","menu_order":0,"post_type":"cookielawinfo","post_mime_type":"","comment_count":"0","filter":"raw"},"term_id":141,"name":"Nu\u017eni"},"statistika":{"0":{"ID":17254,"post_author":"2","post_date":"2018-05-29 01:40:55","post_date_gmt":"2018-05-28 23:40:55","post_content":"","post_title":"_ga","post_excerpt":"","post_status":"publish","comment_status":"closed","ping_status":"closed","post_password":"","post_name":"_ga","to_ping":"","pinged":"","post_modified":"2018-05-29 01:43:39","post_modified_gmt":"2018-05-28 23:43:39","post_content_filtered":"","post_parent":0,"guid":"https:\/\/vegora.hr\/?post_type=cookielawinfo&#038;p=17254","menu_order":0,"post_type":"cookielawinfo","post_mime_type":"","comment_count":"0","filter":"raw"},"1":{"ID":17240,"post_author":"2","post_date":"2018-05-24 18:56:02","post_date_gmt":"2018-05-24 16:56:02","post_content":"Used by Google Analytics to throttle request rate.","post_title":"_gat","post_excerpt":"","post_status":"publish","comment_status":"closed","ping_status":"closed","post_password":"","post_name":"_gat","to_ping":"","pinged":"","post_modified":"2018-05-24 19:00:00","post_modified_gmt":"2018-05-24 17:00:00","post_content_filtered":"","post_parent":0,"guid":"https:\/\/vegora.hr\/?post_type=cookielawinfo&#038;p=17240","menu_order":0,"post_type":"cookielawinfo","post_mime_type":"","comment_count":"0","filter":"raw"},"2":{"ID":17238,"post_author":"2","post_date":"2018-05-24 18:55:17","post_date_gmt":"2018-05-24 16:55:17","post_content":"Registers a unique ID that is used to generate statistical data on how the visitor uses the website.","post_title":"_gid","post_excerpt":"","post_status":"publish","comment_status":"closed","ping_status":"closed","post_password":"","post_name":"_gid","to_ping":"","pinged":"","post_modified":"2018-05-24 19:00:22","post_modified_gmt":"2018-05-24 17:00:22","post_content_filtered":"","post_parent":0,"guid":"https:\/\/vegora.hr\/?post_type=cookielawinfo&#038;p=17238","menu_order":0,"post_type":"cookielawinfo","post_mime_type":"","comment_count":"0","filter":"raw"},"term_id":142,"name":"Statisti\u010dki"}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/webtoffee-gdpr-cookie-consent/js/cookielawinfo.js?ver=1.5.4'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/easy-facebook-likebox/frontend/assets/js/imagesloaded.pkgd.min.js?ver=4.9.15'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var esf_insta = {"ajax_url":"https:\/\/vegora.hr\/wp-admin\/admin-ajax.php","version":"free","nonce":"7665a29c2f"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/easy-facebook-likebox//instagram/frontend/assets/js/esf-insta-public.js?ver=1'></script>
+<link rel='https://api.w.org/' href='https://vegora.hr/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vegora.hr/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://vegora.hr/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Popis druge skupine subjekata koji su zaprimili potpore Zagrebačke županije &#8211; COVID-19' href='https://vegora.hr/2020/09/04/popis-druge-skupine-zagrebacka-zupanija-covid-19/' />
+<link rel='next' title='MJERE ZA POMOĆ GOSPODARSTVU USLIJED EPIDEMIJE KORONAVIRUSA' href='https://vegora.hr/2020/09/09/https-vegora-hr-mjere-za-pomoc-gospodarstvu-uslijed-epidemije-koronavirusa-obratite-nam-se/' />
+<meta name="generator" content="WordPress 4.9.15" />
+<link rel="canonical" href="https://vegora.hr/2020/09/09/hzz-nastavak-potpora-za-ocuvanje-radnih-mjesta-prijave-od-iduceg-tjedna/" />
+<link rel='shortlink' href='https://vegora.hr/?p=19680' />
+<link rel="alternate" type="application/json+oembed" href="https://vegora.hr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvegora.hr%2F2020%2F09%2F09%2Fhzz-nastavak-potpora-za-ocuvanje-radnih-mjesta-prijave-od-iduceg-tjedna%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://vegora.hr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvegora.hr%2F2020%2F09%2F09%2Fhzz-nastavak-potpora-za-ocuvanje-radnih-mjesta-prijave-od-iduceg-tjedna%2F&#038;format=xml" />
+<style type="text/css">
+#category-posts-2-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-2-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-2-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-2-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-2-internal .cat-post-title {font-size: 15px;}
+#category-posts-2-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-2-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-2-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-2-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-2-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-2-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-2-internal p {margin:5px 0 0 0}
+#category-posts-2-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-2-internal .dashicons {vertical-align:middle;}
+#category-posts-2-internal .cat-post-crop {overflow: hidden; display:inline-block}
+#category-posts-2-internal .cat-post-item img {margin: initial;}
+#category-posts-2-internal .cat-post-thumbnail {float:left;}
+#category-posts-2-internal .cat-post-blur img {padding-bottom: 0 !important; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+#category-posts-2-internal .cat-post-blur:hover img {-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);}
+#category-posts-3-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-3-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-3-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-3-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-3-internal .cat-post-title {font-size: 15px;}
+#category-posts-3-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-3-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-3-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-3-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-3-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-3-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-3-internal p {margin:5px 0 0 0}
+#category-posts-3-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-3-internal .dashicons {vertical-align:middle;}
+#category-posts-3-internal .cat-post-crop {overflow: hidden; display:inline-block}
+#category-posts-3-internal .cat-post-item img {margin: initial;}
+#category-posts-3-internal .cat-post-thumbnail {float:left;}
+#category-posts-3-internal .cat-post-blur img {padding-bottom: 0 !important; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+#category-posts-3-internal .cat-post-blur:hover img {-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);}
+#category-posts-6-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-6-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-6-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-6-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-6-internal .cat-post-title {font-size: 15px;}
+#category-posts-6-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-6-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-6-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-6-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-6-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-6-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-6-internal p {margin:5px 0 0 0}
+#category-posts-6-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-6-internal .dashicons {vertical-align:middle;}
+#category-posts-6-internal .cat-post-crop {overflow: hidden; display:inline-block}
+#category-posts-6-internal .cat-post-item img {margin: initial;}
+#category-posts-6-internal .cat-post-thumbnail {float:left;}
+#category-posts-5-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-5-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-5-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-5-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-5-internal .cat-post-title {font-size: 15px;}
+#category-posts-5-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-5-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-5-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-5-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-5-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-5-internal .cat-post-item a:after {content: ""; display: table;	clear: both;}
+#category-posts-5-internal p {margin:5px 0 0 0}
+#category-posts-5-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-5-internal .dashicons {vertical-align:middle;}
+#category-posts-7-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-7-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-7-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-7-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-7-internal .cat-post-title {font-size: 15px;}
+#category-posts-7-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-7-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-7-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-7-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-7-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-7-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-7-internal p {margin:5px 0 0 0}
+#category-posts-7-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-7-internal .dashicons {vertical-align:middle;}
+#category-posts-7-internal .cat-post-crop {overflow: hidden; display:inline-block}
+#category-posts-7-internal .cat-post-item img {margin: initial;}
+#category-posts-7-internal .cat-post-thumbnail {float:left;}
+#category-posts-13-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-13-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-13-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-13-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-13-internal .cat-post-title {font-size: 15px;}
+#category-posts-13-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-13-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-13-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-13-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-13-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-13-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-13-internal p {margin:5px 0 0 0}
+#category-posts-13-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-13-internal .dashicons {vertical-align:middle;}
+#category-posts-13-internal .cat-post-crop {overflow: hidden; display:inline-block}
+#category-posts-13-internal .cat-post-item img {margin: initial;}
+#category-posts-13-internal .cat-post-thumbnail {float:left;}
+#category-posts-16-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-16-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-16-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-16-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-16-internal .cat-post-title {font-size: 15px;}
+#category-posts-16-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-16-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-16-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-16-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-16-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-16-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-16-internal p {margin:5px 0 0 0}
+#category-posts-16-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-16-internal .dashicons {vertical-align:middle;}
+#category-posts-16-internal .cat-post-crop {overflow: hidden; display:inline-block}
+#category-posts-16-internal .cat-post-item img {margin: initial;}
+#category-posts-16-internal .cat-post-thumbnail {float:left;}
+#category-posts-4-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-4-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-4-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-4-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-4-internal .cat-post-title {font-size: 15px;}
+#category-posts-4-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-4-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-4-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-4-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-4-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-4-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-4-internal p {margin:5px 0 0 0}
+#category-posts-4-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-4-internal .dashicons {vertical-align:middle;}
+#category-posts-4-internal .cat-post-crop {overflow: hidden; display:inline-block}
+#category-posts-4-internal .cat-post-item img {margin: initial;}
+#category-posts-4-internal .cat-post-thumbnail {float:left;}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171570091-4"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-171570091-4');
+</script><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://vegora.hr/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css">
+#pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a{ background-color: #e51146;	color: #ffffff;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items.pojo-a11y-links{ border-color: #e51146;}
+body.pojo-a11y-focusable a:focus{ outline-style: solid !important;	outline-width: 1px !important;	outline-color: #FF0000 !important;}
+#pojo-a11y-toolbar{ top: 92px !important;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay{ background-color: #ffffff;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title{ color: #333333;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a.active{ background-color: #e51146;	color: #ffffff;}
+@media (max-width: 767px) { #pojo-a11y-toolbar { top: 0px !important; } }</style>
+<style>
+.table-responsive table{
+border-collapse: collapse;
+border-spacing: 0;
+table-layout: auto;
+padding: 0;
+width: 100%;
+max-width: 100%;
+margin: 0 auto 20px auto;
+}
+.table-responsive {
+overflow-x: auto;
+min-height: 0.01%;
+margin-bottom: 20px;
+}
+.table-responsive::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+background: #dddddd;
+border-radius: 2px;
+}
+.table-responsive::-webkit-scrollbar-track-piece {
+background: #fff;
+}
+@media (max-width: 992px) {
+.table-responsive table{
+width: auto!important;
+margin:0 auto 15px auto!important;
+}
+}
+@media screen and (max-width: 767px) {
+.table-responsive {
+width: 100%;
+margin-bottom: 15px;
+overflow-y: hidden;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.table-responsive::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+}
+}
+@media screen and (min-width: 1200px) {
+.table-responsive .table {
+max-width: 80%!important;
+}
+}
+.wprt-container .table > thead > tr > th,
+.wprt-container .table > tbody > tr > th,
+.wprt-container .table > tfoot > tr > th,
+.wprt-container .table > thead > tr > td,
+.wprt-container .table > tbody > tr > td,
+.wprt-container .table > tfoot > tr > td,
+.wprt-container .table > tr > td{
+border: 1px solid #dddddd!important;
+}
+.wprt-container .table > thead > tr > th,
+.wprt-container .table > tbody > tr > th,
+.wprt-container .table > tfoot > tr > th,
+.wprt-container .table > thead > tr > td,
+.wprt-container .table > tbody > tr > td,
+.wprt-container .table > tfoot > tr > td,
+.wprt-container .table > tr > td{
+padding-top: 8px!important;
+padding-right: 8px!important;
+padding-bottom: 8px!important;
+padding-left: 8px!important;
+vertical-align: middle;
+text-align: center;
+}
+.wprt-container .table-responsive .table tr:nth-child(odd) {
+background-color: #fff!important;
+}
+.wprt-container .table-responsive .table tr:nth-child(even){
+background-color: #f20a34!important;
+}
+.wprt-container .table-responsive .table thead+tbody tr:nth-child(even) {
+background-color: #fff!important;
+}
+.wprt-container .table-responsive .table thead+tbody tr:nth-child(odd){
+background-color: #f20a34!important;
+}
+.table-responsive table p {
+margin: 0!important;
+padding: 0!important;
+}
+.table-responsive table tbody tr td, .table-responsive table tbody tr th{
+background-color: inherit!important;
+}
+</style>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-19680 single-format-standard  qode-theme-ver-7.5 wpb-js-composer js-comp-ver-5.4.7 vc_responsive">
+<div class="wrapper">
+<div class="wrapper_inner">
+<!-- Google Analytics start -->
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-113335824-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- Google Analytics end -->
+<header class=" has_top scroll_top dark stick scrolled_not_transparent page_header">
+<div class="header_inner clearfix">
+<form role="search" id="searchform" action="https://vegora.hr/" class="qode_search_form" method="get">
+<i class="qode_icon_font_awesome fa fa-search qode_icon_in_search" ></i>				<input type="text" placeholder="Search" name="s" class="qode_search_field" autocomplete="off" />
+<input type="submit" value="Search" />
+<div class="qode_search_close">
+<a href="#">
+<i class="qode_icon_font_awesome fa fa-times qode_icon_in_search" ></i>					</a>
+</div>
+</form>
+<div class="header_top_bottom_holder">
+<div class="header_top clearfix" style='background-color:rgba(255, 255, 255, 0.5);' >
+<div class="left">
+<div class="inner">
+</div>
+</div>
+<div class="right">
+<div class="inner">
+<div class="header-widget widget_text header-right-widget">			<div class="textwidget"><span class='q_social_icon_holder square_social' data-hover-background-color=#000000 data-hover-color=#ffffff><a href='https://web.facebook.com/razvojna.agencija.vegora/' target='_blank'><span class='fa-stack fa-lg' style='background-color: #e51146;margin: 0 0 0 -80px;font-size: 12px;'><i class="qode_icon_font_awesome fa fa-facebook " style="color: #ffffff;" ></i></span></a></span>
+<span class='q_social_icon_holder square_social' data-hover-background-color=#000000 data-hover-color=#ffffff><a href='mailto:info@vegora.hr' target='_blank'><span class='fa-stack fa-lg' style='background-color: #e51146;margin: 0 0 0 -56px;font-size: 12px;'><i class="qode_icon_font_awesome fa fa-envelope " style="color: #ffffff;" ></i></span></a></span>
+<span class='q_social_icon_holder square_social' data-hover-background-color=#000000 data-hover-color=#ffffff><a href='https://www.linkedin.com/organization/17973949' target='_blank'><span class='fa-stack fa-lg' style='background-color: #e51146;margin: 0 0 0 -32px;font-size: 12px;'><i class="qode_icon_font_awesome fa fa-linkedin " style="color: #ffffff;" ></i></span></a></span></div>
+</div>						</div>
+</div>
+</div>
+<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0.5);' >
+<div class="header_inner_left">
+<div class="mobile_menu_button">
+<span>
+<i class="qode_icon_font_awesome fa fa-bars " ></i>                                </span>
+</div>
+<div class="logo_wrapper">
+<div class="q_logo">
+<a href="https://vegora.hr/">
+<img class="normal" src="https://vegora.hr/wp-content/uploads/2017/04/Vegora-Logo-Menu.png" alt="Logo"/>
+<img class="light" src="https://vegora.hr/wp-content/uploads/2016/02/Vegora-Menu-Logo-Light.png" alt="Logo"/>
+<img class="dark" src="https://vegora.hr/wp-content/uploads/2017/04/Vegora-Logo-Menu.png" alt="Logo"/>
+<img class="sticky" src="https://vegora.hr/wp-content/uploads/2017/04/Vegora-Logo-Menu-sticky.png" alt="Logo"/>
+<img class="mobile" src="https://vegora.hr/wp-content/uploads/2017/04/Vegora-Logo-Menu.png" alt="Logo"/>
+</a>
+</div>
+</div>
+</div>
+<div class="header_inner_right">
+<div class="side_menu_button_wrapper right">
+<div class="side_menu_button">
+<a class="search_button search_slides_from_window_top normal" href="javascript:void(0)">
+<i class="qode_icon_font_awesome fa fa-search " ></i>											</a>
+</div>
+</div>
+</div>
+<nav class="main_menu drop_down right">
+<ul id="menu-main-menu" class=""><li id="nav-menu-item-18857" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a href="https://vegora.hr/aktualno-2/" class=""><i class="menu_icon blank fa"></i><span>aktualno</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-15535" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://vegora.hr/usluge/" class=""><i class="menu_icon blank fa"></i><span>Poduzetništvo</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-18062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;"><i class="menu_icon blank fa"></i><span>NAŠI PROJEKTI</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-19879" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/projekt/stavimo-grad-na-digitalnu-kartu/" class=""><i class="menu_icon blank fa"></i><span>STAVIMO GRAD NA DIGITALNU KARTU</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-20068" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/projekt/sintra_erasmus/" class=""><i class="menu_icon blank fa"></i><span>SINTRA ERASMUS+</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-19754" class="menu-item menu-item-type-post_type menu-item-object-page "><a target="_blank" href="https://vegora.hr/projekt/neset/" class=""><i class="menu_icon blank fa"></i><span>NESET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-18086" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://vegora.hr/projekt/feenics/" class=""><i class="menu_icon blank fa"></i><span>FEENICS ERASMUS+</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-15533" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://vegora.hr/usluge/o-nama/" class=""><i class="menu_icon blank fa"></i><span>O nama</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-15540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://vegora.hr/kontakt/" class=""><i class="menu_icon blank fa"></i><span>Kontakt</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-19814" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/izjava-o-pristupacnosti/" class=""><i class="menu_icon blank fa"></i><span>Izjava o pristupačnosti</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+</ul>						</nav>
+<nav class="mobile_menu">
+<ul id="menu-main-menu-1" class=""><li id="mobile-menu-item-18857" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://vegora.hr/aktualno-2/" class=""><span>aktualno</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-15535" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/usluge/" class=""><span>Poduzetništvo</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-18062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h3><span>NAŠI PROJEKTI</span></h3><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-19879" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/projekt/stavimo-grad-na-digitalnu-kartu/" class=""><span>STAVIMO GRAD NA DIGITALNU KARTU</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-20068" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/projekt/sintra_erasmus/" class=""><span>SINTRA ERASMUS+</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-19754" class="menu-item menu-item-type-post_type menu-item-object-page "><a target="_blank" href="https://vegora.hr/projekt/neset/" class=""><span>NESET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-18086" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://vegora.hr/projekt/feenics/" class=""><span>FEENICS ERASMUS+</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-15533" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/usluge/o-nama/" class=""><span>O nama</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-15540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://vegora.hr/kontakt/" class=""><span>Kontakt</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-19814" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://vegora.hr/izjava-o-pristupacnosti/" class=""><span>Izjava o pristupačnosti</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+</ul>					</nav>
+</div>
+</div>
+</div>
+</header>
+<a id='back_to_top' href='#'>
+<span class="fa-stack">
+<i class="fa fa-arrow-up" style=""></i>
+</span>
+</a>
+<div class="content ">
+<div class="content_inner  ">
+<div class="title_outer title_without_animation"    data-height="400">
+<div class="title title_size_small  position_left " style="height:400px;">
+<div class="image not_responsive"><img src="https://vegora.hr/wp-content/uploads/2018/05/title-image.jpg" alt="&nbsp;" /> </div>
+<div class="title_holder"  >
+<div class="container">
+<div class="container_inner clearfix">
+<div class="title_subtitle_holder" >
+<div class="title_subtitle_holder_inner">
+<h1><span>HZZ &#8211; Nastavak potpora za očuvanje radnih mjesta, prijave od idućeg tjedna</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<svg class="angled-section svg-title-bottom" preserveAspectRatio="none" viewBox="0 0 86 86" width="100%" height="86">
+<polygon style="fill: #ffffff;" points="0,86 86,0 86,86" />
+</svg>
+</div>
+</div>
+<div class="container">
+<div class="container_inner default_template_holder" >
+<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+<div class="column1">
+<div class="column_inner">
+<div class="blog_holder blog_single">	
+<article id="post-19680" class="post-19680 post type-post status-publish format-standard has-post-thumbnail hentry category-covid-19 category-covid-19-2 category-covid19daily category-covidkorisneinfo category-naslovna category-vijesti tag-covid-19">
+<div class="post_content_holder">
+<div class="post_text">
+<div class="post_text_inner">
+<h2><span class="date">09 ruj.</span> HZZ &#8211; Nastavak potpora za očuvanje radnih mjesta, prijave od idućeg tjedna</h2>
+<div class="post_info">
+<span class="time">Posted at 09:23h</span>
+in <a href="https://vegora.hr/category/vijesti/covid-19/" rel="category tag">COVID - 19</a>, <a href="https://vegora.hr/category/covid-19-2/" rel="category tag">COVID - 19</a>, <a href="https://vegora.hr/category/covid19daily/" rel="category tag">COVID 19 - DNEVNI INFO</a>, <a href="https://vegora.hr/category/covid-19-2/covidkorisneinfo/" rel="category tag">COVID-19 KORISNE INFO</a>, <a href="https://vegora.hr/category/naslovna/" rel="category tag">Naslovna</a>, <a href="https://vegora.hr/category/vijesti/" rel="category tag">Vijesti</a>							<span class="post_author">
+by								<a class="post_author_link" href="https://vegora.hr/author/vgvegora/">vgvegora</a>
+</span>
+<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_icon"></span><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="#" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=HZZ+%26%238211%3B+Nastavak+potpora+za+o%C4%8Duvanje+radnih+mjesta%2C+prijave+od+idu%C4%87eg+tjedna&amp;p[summary]=Rok+za+podno%C5%A1enje+zahtjeva+za+dobivanje+potpora+za+rujan+je+od+15.+rujna+do+15.+listopada.&amp;p[url]=https%3A%2F%2Fvegora.hr%2F2020%2F09%2F09%2Fhzz-nastavak-potpora-za-ocuvanje-radnih-mjesta-prijave-od-iduceg-tjedna%2F&amp;&p[images][0]=https://vegora.hr/wp-content/uploads/2020/06/C19_FB_Purple-1.jpg', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><img src="https://vegora.hr/wp-content/uploads/2019/09/facebook-254165_1280.jpg" alt="" /></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=Rok+za+podno%C5%A1enje+zahtjeva+za+dobivanje+potpora+za+rujan+je+od+15.+rujna+do+15.+listopada.https://vegora.hr/2020/09/09/hzz-nastavak-potpora-za-ocuvanje-radnih-mjesta-prijave-od-iduceg-tjedna/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="google_share"><a href="#" onclick="popUp=window.open('https://plus.google.com/share?url=https%3A%2F%2Fvegora.hr%2F2020%2F09%2F09%2Fhzz-nastavak-potpora-za-ocuvanje-radnih-mjesta-prijave-od-iduceg-tjedna%2F', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-google-plus"></i></a></li></ul></div></div></div>	
+</div>
+<div class="wprt-container"><p><span style="font-size: 14pt; color: #000000;"><strong>Upravno vijeće Hrvatskog zavoda za zapošljavanje je 7. rujna donijelo odluku o Izmjenama i dopunama Uvjeta i načina korištenja sredstava za provođenje mjera aktivne politike zapošljavanja u 2020. godini.</strong></span></p>
+<p>&nbsp;</p>
+<h4><span style="font-size: 14pt; color: #000000;"><strong>Primjena potpora za očuvanje radnih mjesta u djelatnostima pogođenim Koronavirusom (COVID – 19) i potpora za Mikropoduzetnike nastavlja se i u razdoblju od rujna do prosinca 2020.</strong></span></h4>
+<p><span style="font-size: 14pt; color: #000000;">Potpora za očuvanje radnih mjesta pogođenim Koronavirusom uključuje sve djelatnosti kao i do sada, poput putničkog prijevoza, djelatnosti pružanja smještaja, pripreme hrane i pića, tzv. event industriju, itd. kojima je i nadalje omogućeno korištenje potpore do 4.000 kuna po radniku uz uvjet pada prihoda za najmanje 60 posto.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; color: #000000;"><strong>Potpora za mikropoduzetnike?</strong></span></p>
+<p><span style="font-size: 14pt; color: #000000;">Uključuje iznos do 2.000 kuna po radniku za poslodavce koji zapošljavaju do 10 radnika uz uvjet pada prihoda za najmanje 50 posto.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Važno je naglasiti da će svi poslodavci, bez obzira na djelatnost, koji ne mogu poslovati ili kojima je na bilo koji način ograničen rad sukladno Odlukama Stožera civilne zaštite moći koristiti ove mjere, s time da će se za one kojima je rad ograničen odlukom Stožera (npr. skraćeno radno vrijeme, smanjen broj posjetitelja, itd.) po potrebi morati dokazati poteškoće u poslovanju (pad prihoda za 60 odnosno 50 posto).</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; color: #000000;"><strong>Koji je rok za podnošenje zahtjeva za dobivanje potpora za rujan?</strong></span></p>
+<p><span style="font-size: 14pt; color: #000000;">Rok za podnošenje je od 15. rujna do 15. listopada.</span></p>
+<h3></h3>
+<p><strong><span style="font-size: 14pt; color: #000000;">Što kada je korisnik mjere Stalni sezonac?</span></strong></p>
+<p><span style="font-size: 14pt; color: #000000;">S obzirom na produžene izvanredne okolnosti uslijed situacije izazvane Koronavirusom , određena je odredba kojom je definirano na koje se načine novčana pomoć određuje u slučajevima kada korisnik mjere Stalni sezonac u 2020.g. nije uopće radio, ukoliko je radio najmanje tri cijela kalendarska mjeseca, te ukoliko je radio kraće od tri cijela kalendarska mjeseca.</span></p>
+<p><span style="font-size: 14pt; color: #000000;">Nakon isteka prvih šest mjeseci za osobe koje su koristile mjeru, a za vrijeme trajanja posebnih okolnosti uzrokovanih Koronavirusom (COVID – 19), novčana pomoć određuje se na sljedeći način:</span></p>
+<ul>
+<li><span style="font-size: 14pt; color: #000000;">ako osoba u 2020. godini nije uopće radila, novčana pomoć iznosi 50% neto iznosa minimalne plaće (1.625,00 kn) i to za cijelo vrijeme korištenja mjere stalni sezonac COVID-19</span></li>
+<li><span style="font-size: 14pt; color: #000000;">ako je osoba u 2020. godini radila najmanje tri cijela kalendarska mjeseca, novčana pomoć za prvih 90 dana korištenja iznosi 60% bruto plaće ostvarene za ta tri mjeseca, a za preostalo vrijeme korištenja iznosi 30% bruto plaće</span></li>
+<li><span style="font-size: 14pt; color: #000000;">ako je osoba u 2020. godini radila kraće od tri cijela kalendarska mjeseca, novčana pomoć određuje se prema ostvarenoj plaći u 2019. godini.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; color: #000000;">Nastavlja se produljenje mjere Stalni sezonac (COVID &#8211; 19) za stalne sezonce kojima je radni odnos u sezoni 2020.g. bio kraći od šest mjeseci, jer se navedeno (rad kraći od 6 mjeseci) s obzirom na epidemiju Koronavirusa smatra opravdanim razlogom. Poslodavci i dalje podnose zahtjev za Stalni sezonac (COVID – 19) uz dokumentaciju koja se od njih traži.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; color: #000000;">Revidirane su i obveze poslodavca koje se odnose na zapošljavanje u narednoj sezoni u trajanju od najmanje 6 mjeseci, s izuzetkom zapošljavanja za vrijeme trajanja posebnih okolnosti uzrokovanih Koronavirusom (COVID – 19) tijekom 2020. i 2021. godine.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; color: #000000;">Više informacija o potporama za očuvanje radnih mjesta potražite na <a style="color: #000000;" href="https://www.hzz.hr/novosti-priopcenja/nastavak-provodjenja-potpora-za-ocuvanje-radnih-mjesta-do-prosinca.php"><em><strong>OVDJE</strong></em></a><em><strong>.</strong></em></span></p>
+<p>&nbsp;</p>
+<p><span style="color: #000000; font-size: 14pt;">Ukoliko trebate dodatne informacije ili pomoć u prijavi za mjere HZZ-a, slobodno nas kontaktirajte putem e-maila na <em><strong><a style="color: #000000;" href="mailto:mjere@vegora.hr">mjere@vegora.hr</a>.</strong></em></span></p>
+<p><span style="color: #000000; font-size: 14pt;">Zadnji datum ažuriranja ovih mjera od HZZ-a je 9.9.2020. godine. Nakon toga, HZZ nije ažurirao mjere.</span></p>
+<p>&nbsp;</p>
+</div>					</div>
+</div>
+</div>
+<div class="single_tags clearfix">
+<div class="tags_text">
+<h5>Tags:</h5>
+<a href="https://vegora.hr/tag/covid-19/" rel="tag">COVID - 19</a>			</div>
+</div>
+</article>										</div>
+<br/><br/> 
+</div>
+</div>	
+<div class="column2"> 
+<div class="column_inner">
+<aside class="sidebar">
+<div class="widget widget_media_image"><img width="300" height="140" src="https://vegora.hr/wp-content/uploads/2019/11/C19_Info_-Widget-Banner-300x140.png" class="image wp-image-18825  attachment-medium size-medium" alt="COVID-19 - DNEVNI INFO - MJERE ZA PODUZETNIKE - VELIKA GORICA" style="max-width: 100%; height: auto;" srcset="https://vegora.hr/wp-content/uploads/2019/11/C19_Info_-Widget-Banner-300x140.png 300w, https://vegora.hr/wp-content/uploads/2019/11/C19_Info_-Widget-Banner-768x358.png 768w, https://vegora.hr/wp-content/uploads/2019/11/C19_Info_-Widget-Banner-700x326.png 700w, https://vegora.hr/wp-content/uploads/2019/11/C19_Info_-Widget-Banner.png 770w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="widget cat-post-widget"><ul id="category-posts-5-internal" class="category-posts-internal">
+<li class='cat-post-item'><a class="cat-post-everything-is-link" href="https://vegora.hr/2021/01/04/novoosnovane-tvrtke-oslobodene-placanja-komorske-clanarine-dvije-godine/" title=""><div><span class="cat-post-date">4. siječnja 2021. 16:05</span></div><div>
+<span class="cat-post-title">Novoosnovane tvrtke oslobođene plaćanja komorske članarine dvije godine</span></div></a></li><li class='cat-post-item'><a class="cat-post-everything-is-link" href="https://vegora.hr/2020/09/10/popis-trece-skupine-subjekata-koji-su-zaprimili-potpore-zagrebacke-zupanije-covid-19/" title=""><div><span class="cat-post-date">10. rujna 2020. 11:36</span></div><div>
+<span class="cat-post-title">Popis treće skupine subjekata koji su zaprimili potpore Zagrebačke županije &#8211; COVID-19</span></div></a></li><li class='cat-post-item'><a class="cat-post-everything-is-link" href="https://vegora.hr/2020/09/09/https-vegora-hr-mjere-za-pomoc-gospodarstvu-uslijed-epidemije-koronavirusa-obratite-nam-se/" title=""><div><span class="cat-post-date">9. rujna 2020. 14:21</span></div><div>
+<span class="cat-post-title">MJERE ZA POMOĆ GOSPODARSTVU USLIJED EPIDEMIJE KORONAVIRUSA</span></div></a></li><li class='cat-post-item'><a class="cat-post-everything-is-link" href="https://vegora.hr/2020/08/10/potpora-za-ocuvanje-radnih-mjesta-u-zastitnim-radionicama-integrativnim-radionicama-i-radnim-jedinicama-za-zaposljavanje-osoba-s-invaliditetom/" title=""><div><span class="cat-post-date">10. kolovoza 2020. 11:43</span></div><div>
+<span class="cat-post-title">POTPORA ZA OČUVANJE RADNIH MJESTA u zaštitnim radionicama, integrativnim radionicama i radnim jedinicama za zapošljavanje osoba s invaliditetom</span></div></a></li><li class='cat-post-item'><a class="cat-post-everything-is-link" href="https://vegora.hr/2020/07/30/hzz-potpora-za-ocuvanje-radnih-mjesta-skracivanje-radnog-vremena/" title=""><div><span class="cat-post-date">30. srpnja 2020. 11:50</span></div><div>
+<span class="cat-post-title">HZZ &#8211; POTPORA ZA OČUVANJE RADNIH MJESTA &#8211; skraćivanje radnog vremena</span></div></a></li></ul>
+</div>		</aside>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>						
+				<div class="content_bottom" >
+</div>
+</div>
+</div>
+<footer >
+<div class="footer_inner clearfix">
+<div class="footer_top_holder">
+<div class="footer_top">
+<div class="container">
+<div class="container_inner">
+<div id="text-25" class="widget widget_text">			<div class="textwidget"><p>© 2020. Razvojna agencija Grada Velika Gorica VE-GO-RA | Sva prava pridržana | <a style="color: white !important;" href="https://vegora.hr/izjava-o-pristupacnosti">Izjava o pristupačnosti</a></p>
+</div>
+</div>									</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<div id="cookie-law-info-bar"><span>Naše web stranice koriste kolačiće kako bi vam omogućili najbolje korisničko iskustvo. Pregledavanjem web stranice slažete se s <a href="https://vegora.hr/kolacici/" id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  >korištenjem kolačića</a> <a href="#" id="cookie_action_close_header" class="medium cli-plugin-button red">Slažem se</a> <a href="#" class="medium cli-plugin-button cli-plugin-main-button" id="cliSettingsPopupButton">Postavke</a></span></div><div id="cookie-law-info-again"><span id="cookie_hdr_showagain">Postavke privatnosti i kolačića</span></div>                
+<div class="cli-modal cli-fade" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="cli-modal-dialog" role="document">
+<div class="cli-modal-content">
+<button type="button" class="cli-modal-close" id="cliModalClose">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="cli-modal-body">
+<div class="cli-container-fluid">
+<div class="cli-row">
+<div class="cli-col-4 cli-d-flex cli-align-items-stretch cli-px-0">
+<div class="cli-nav-pills" id="settings-tab" role="tablist" aria-orientation="vertical">
+<a class="cli-nav-link cli-active" id="v-pills-home-tab" tab-target="privacy" data-toggle="cli-toggle-tab">
+Privacy Overview                    </a>
+<a class="cli-nav-link" id="v-pills-nuzni-tab" tab-target="nuzni" data-toggle="cli-toggle-tab">
+Nužni                    </a>
+<a class="cli-nav-link" id="v-pills-statistika-tab" tab-target="statistika" data-toggle="cli-toggle-tab">
+Statistički                    </a>
+</div>
+</div>
+<div class="cli-col-8 cli-d-flex cli-align-items-stretch cli-px-0">
+<div class="cli-tab-content" id="v-pills-tabContent">
+<div class="cli-tab-pane cli-fade cli-show cli-active" id="privacy" role="tabpanel" aria-labelledby="v-pills-home-tab">
+<h4>Privacy Overview</h4>
+<p>Naše web stranice koriste kolačiće kako bi vam omogućili najbolje korisničko iskustvo.                      </p>
+</div>
+<div class="cli-tab-pane cli-fade" id="nuzni">
+<h4>Nužni</h4>
+<p>
+<p>Nužni kolačići čine stranicu upotrebljivom omogućavajući osnovne funkcije kao što su navigacija stranicom i pristup zaštićenim područjima. Web-stranica ne može ispravno funkcionirati bez ovih kolačića.</p>
+</p>
+<div>
+<label class="cli-switch" for="checkbox-nuzni">
+<input type="checkbox" id="checkbox-nuzni" checked />
+<div class="cli-slider"></div>
+On/Off                            
+</label>
+</div>
+</div>
+<div class="cli-tab-pane cli-fade" id="statistika">
+<h4>Statistički</h4>
+<p>
+<p>Statistički kolačići anonimnim prikupljanjem i slanjem podataka pomažu vlasnicima stranice da shvate na koji način posjetitelji komuniciraju sa stranicom.</p>
+</p>
+<div>
+<label class="cli-switch" for="checkbox-statistika">
+<input type="checkbox" id="checkbox-statistika" checked />
+<div class="cli-slider"></div>
+On/Off                            
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cli-modal-backdrop cli-fade"></div>            
+<script type="text/javascript">
+//<![CDATA[
+jQuery(document).ready(function() {
+cli_show_cookiebar({
+settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":false,"button_1_button_colour":"#e51146","button_1_button_hover":"#b70e38","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#e51146","button_2_as_button":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":true,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":true,"showagain_tab":true,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+});
+});
+//]]>
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/vegora.hr\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"https:\/\/vegora.hr\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/qode-like.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/plugins.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/lemmon-slider.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/jquery.fullPage.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/jquery.mousewheel.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/jquery.touchSwipe.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=5.4.7'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/TweenLite.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/ScrollToPlugin.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/smoothPageScroll.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyDw75GWeeW9-zK9ejRBKywDL1lEyTXFD2I#038;ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/default_dynamic.js?ver=1600335208'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/default.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/themes/bridge/js/custom_js.js?ver=1600335208'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-includes/js/comment-reply.min.js?ver=4.9.15'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PojoA11yOptions = {"focusable":"1","remove_link_target":"","add_role_links":"1","enable_save":"1","save_expiration":"12"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/pojo-accessibility/assets/js/app.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/wp-responsive-table/assets/frontend/js/wprt-script.js?ver=1.2.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7cf_global_settings = {"ajaxurl":"https:\/\/vegora.hr\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vegora.hr/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.9.14'></script>
+<script type='text/javascript' src='https://vegora.hr/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<a id="pojo-a11y-skip-content" class="pojo-skip-link pojo-skip-content" tabindex="1" accesskey="s" href="#content">Skip to content</a>
+<nav id="pojo-a11y-toolbar" class="pojo-a11y-toolbar-right" role="navigation">
+<div class="pojo-a11y-toolbar-toggle">
+<a class="pojo-a11y-toolbar-link pojo-a11y-toolbar-toggle-link" href="javascript:void(0);" title="Alati za pristupačnost">
+<span class="pojo-sr-only sr-only">Open toolbar</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor" width="1em">
+<g><path d="M60.4,78.9c-2.2,4.1-5.3,7.4-9.2,9.8c-4,2.4-8.3,3.6-13,3.6c-6.9,0-12.8-2.4-17.7-7.3c-4.9-4.9-7.3-10.8-7.3-17.7c0-5,1.4-9.5,4.1-13.7c2.7-4.2,6.4-7.2,10.9-9.2l-0.9-7.3c-6.3,2.3-11.4,6.2-15.3,11.8C7.9,54.4,6,60.6,6,67.3c0,5.8,1.4,11.2,4.3,16.1s6.8,8.8,11.7,11.7c4.9,2.9,10.3,4.3,16.1,4.3c7,0,13.3-2.1,18.9-6.2c5.7-4.1,9.6-9.5,11.7-16.2l-5.7-11.4C63.5,70.4,62.5,74.8,60.4,78.9z"/><path d="M93.8,71.3l-11.1,5.5L70,51.4c-0.6-1.3-1.7-2-3.2-2H41.3l-0.9-7.2h22.7v-7.2H39.6L37.5,19c2.5,0.3,4.8-0.5,6.7-2.3c1.9-1.8,2.9-4,2.9-6.6c0-2.5-0.9-4.6-2.6-6.3c-1.8-1.8-3.9-2.6-6.3-2.6c-2,0-3.8,0.6-5.4,1.8c-1.6,1.2-2.7,2.7-3.2,4.6c-0.3,1-0.4,1.8-0.3,2.3l5.4,43.5c0.1,0.9,0.5,1.6,1.2,2.3c0.7,0.6,1.5,0.9,2.4,0.9h26.4l13.4,26.7c0.6,1.3,1.7,2,3.2,2c0.6,0,1.1-0.1,1.6-0.4L97,77.7L93.8,71.3z"/></g>					</svg>
+</a>
+</div>
+<div class="pojo-a11y-toolbar-overlay">
+<div class="pojo-a11y-toolbar-inner">
+<p class="pojo-a11y-toolbar-title">Alati za pristupačnost</p>
+<ul class="pojo-a11y-toolbar-items pojo-a11y-tools">
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-resize-font pojo-a11y-btn-resize-plus" data-action="resize-plus" data-action-group="resize" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M256 200v16c0 4.25-3.75 8-8 8h-56v56c0 4.25-3.75 8-8 8h-16c-4.25 0-8-3.75-8-8v-56h-56c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h56v-56c0-4.25 3.75-8 8-8h16c4.25 0 8 3.75 8 8v56h56c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z""></path></svg></span><span class="pojo-a11y-toolbar-text">Povećaj tekst</span>								</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-resize-font pojo-a11y-btn-resize-minus" data-action="resize-minus" data-action-group="resize" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M256 200v16c0 4.25-3.75 8-8 8h-144c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h144c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z"></path></svg></span><span class="pojo-a11y-toolbar-text">Smanji tekst</span>								</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-grayscale" data-action="grayscale" data-action-group="schema" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M15.75 384h-15.75v-352h15.75v352zM31.5 383.75h-8v-351.75h8v351.75zM55 383.75h-7.75v-351.75h7.75v351.75zM94.25 383.75h-7.75v-351.75h7.75v351.75zM133.5 383.75h-15.5v-351.75h15.5v351.75zM165 383.75h-7.75v-351.75h7.75v351.75zM180.75 383.75h-7.75v-351.75h7.75v351.75zM196.5 383.75h-7.75v-351.75h7.75v351.75zM235.75 383.75h-15.75v-351.75h15.75v351.75zM275 383.75h-15.75v-351.75h15.75v351.75zM306.5 383.75h-15.75v-351.75h15.75v351.75zM338 383.75h-15.75v-351.75h15.75v351.75zM361.5 383.75h-15.75v-351.75h15.75v351.75zM408.75 383.75h-23.5v-351.75h23.5v351.75zM424.5 383.75h-8v-351.75h8v351.75zM448 384h-15.75v-352h15.75v352z"></path></svg></span><span class="pojo-a11y-toolbar-text">Sivi tonovi</span>								</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-high-contrast" data-action="high-contrast" data-action-group="schema" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M192 360v-272c-75 0-136 61-136 136s61 136 136 136zM384 224c0 106-86 192-192 192s-192-86-192-192 86-192 192-192 192 86 192 192z""></path></svg></span><span class="pojo-a11y-toolbar-text">Visoki kontrast</span>								</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-negative-contrast" data-action="negative-contrast" data-action-group="schema" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M416 240c-23.75-36.75-56.25-68.25-95.25-88.25 10 17 15.25 36.5 15.25 56.25 0 61.75-50.25 112-112 112s-112-50.25-112-112c0-19.75 5.25-39.25 15.25-56.25-39 20-71.5 51.5-95.25 88.25 42.75 66 111.75 112 192 112s149.25-46 192-112zM236 144c0-6.5-5.5-12-12-12-41.75 0-76 34.25-76 76 0 6.5 5.5 12 12 12s12-5.5 12-12c0-28.5 23.5-52 52-52 6.5 0 12-5.5 12-12zM448 240c0 6.25-2 12-5 17.25-46 75.75-130.25 126.75-219 126.75s-173-51.25-219-126.75c-3-5.25-5-11-5-17.25s2-12 5-17.25c46-75.5 130.25-126.75 219-126.75s173 51.25 219 126.75c3 5.25 5 11 5 17.25z"></path></svg></span><span class="pojo-a11y-toolbar-text">Negativni kontrast</span>							</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-light-background" data-action="light-background" data-action-group="schema" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M184 144c0 4.25-3.75 8-8 8s-8-3.75-8-8c0-17.25-26.75-24-40-24-4.25 0-8-3.75-8-8s3.75-8 8-8c23.25 0 56 12.25 56 40zM224 144c0-50-50.75-80-96-80s-96 30-96 80c0 16 6.5 32.75 17 45 4.75 5.5 10.25 10.75 15.25 16.5 17.75 21.25 32.75 46.25 35.25 74.5h57c2.5-28.25 17.5-53.25 35.25-74.5 5-5.75 10.5-11 15.25-16.5 10.5-12.25 17-29 17-45zM256 144c0 25.75-8.5 48-25.75 67s-40 45.75-42 72.5c7.25 4.25 11.75 12.25 11.75 20.5 0 6-2.25 11.75-6.25 16 4 4.25 6.25 10 6.25 16 0 8.25-4.25 15.75-11.25 20.25 2 3.5 3.25 7.75 3.25 11.75 0 16.25-12.75 24-27.25 24-6.5 14.5-21 24-36.75 24s-30.25-9.5-36.75-24c-14.5 0-27.25-7.75-27.25-24 0-4 1.25-8.25 3.25-11.75-7-4.5-11.25-12-11.25-20.25 0-6 2.25-11.75 6.25-16-4-4.25-6.25-10-6.25-16 0-8.25 4.5-16.25 11.75-20.5-2-26.75-24.75-53.5-42-72.5s-25.75-41.25-25.75-67c0-68 64.75-112 128-112s128 44 128 112z"></path></svg></span><span class="pojo-a11y-toolbar-text">Svijetla pozadina</span>								</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-links-underline" data-action="links-underline" data-action-group="toggle" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M364 304c0-6.5-2.5-12.5-7-17l-52-52c-4.5-4.5-10.75-7-17-7-7.25 0-13 2.75-18 8 8.25 8.25 18 15.25 18 28 0 13.25-10.75 24-24 24-12.75 0-19.75-9.75-28-18-5.25 5-8.25 10.75-8.25 18.25 0 6.25 2.5 12.5 7 17l51.5 51.75c4.5 4.5 10.75 6.75 17 6.75s12.5-2.25 17-6.5l36.75-36.5c4.5-4.5 7-10.5 7-16.75zM188.25 127.75c0-6.25-2.5-12.5-7-17l-51.5-51.75c-4.5-4.5-10.75-7-17-7s-12.5 2.5-17 6.75l-36.75 36.5c-4.5 4.5-7 10.5-7 16.75 0 6.5 2.5 12.5 7 17l52 52c4.5 4.5 10.75 6.75 17 6.75 7.25 0 13-2.5 18-7.75-8.25-8.25-18-15.25-18-28 0-13.25 10.75-24 24-24 12.75 0 19.75 9.75 28 18 5.25-5 8.25-10.75 8.25-18.25zM412 304c0 19-7.75 37.5-21.25 50.75l-36.75 36.5c-13.5 13.5-31.75 20.75-50.75 20.75-19.25 0-37.5-7.5-51-21.25l-51.5-51.75c-13.5-13.5-20.75-31.75-20.75-50.75 0-19.75 8-38.5 22-52.25l-22-22c-13.75 14-32.25 22-52 22-19 0-37.5-7.5-51-21l-52-52c-13.75-13.75-21-31.75-21-51 0-19 7.75-37.5 21.25-50.75l36.75-36.5c13.5-13.5 31.75-20.75 50.75-20.75 19.25 0 37.5 7.5 51 21.25l51.5 51.75c13.5 13.5 20.75 31.75 20.75 50.75 0 19.75-8 38.5-22 52.25l22 22c13.75-14 32.25-22 52-22 19 0 37.5 7.5 51 21l52 52c13.75 13.75 21 31.75 21 51z"></path></svg></span><span class="pojo-a11y-toolbar-text">Podcrtane poveznice</span>								</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-readable-font" data-action="readable-font" data-action-group="toggle" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M181.25 139.75l-42.5 112.5c24.75 0.25 49.5 1 74.25 1 4.75 0 9.5-0.25 14.25-0.5-13-38-28.25-76.75-46-113zM0 416l0.5-19.75c23.5-7.25 49-2.25 59.5-29.25l59.25-154 70-181h32c1 1.75 2 3.5 2.75 5.25l51.25 120c18.75 44.25 36 89 55 133 11.25 26 20 52.75 32.5 78.25 1.75 4 5.25 11.5 8.75 14.25 8.25 6.5 31.25 8 43 12.5 0.75 4.75 1.5 9.5 1.5 14.25 0 2.25-0.25 4.25-0.25 6.5-31.75 0-63.5-4-95.25-4-32.75 0-65.5 2.75-98.25 3.75 0-6.5 0.25-13 1-19.5l32.75-7c6.75-1.5 20-3.25 20-12.5 0-9-32.25-83.25-36.25-93.5l-112.5-0.5c-6.5 14.5-31.75 80-31.75 89.5 0 19.25 36.75 20 51 22 0.25 4.75 0.25 9.5 0.25 14.5 0 2.25-0.25 4.5-0.5 6.75-29 0-58.25-5-87.25-5-3.5 0-8.5 1.5-12 2-15.75 2.75-31.25 3.5-47 3.5z"></path></svg></span><span class="pojo-a11y-toolbar-text">Istaknuti font</span>								</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-reset" data-action="reset" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M384 224c0 105.75-86.25 192-192 192-57.25 0-111.25-25.25-147.75-69.25-2.5-3.25-2.25-8 0.5-10.75l34.25-34.5c1.75-1.5 4-2.25 6.25-2.25 2.25 0.25 4.5 1.25 5.75 3 24.5 31.75 61.25 49.75 101 49.75 70.5 0 128-57.5 128-128s-57.5-128-128-128c-32.75 0-63.75 12.5-87 34.25l34.25 34.5c4.75 4.5 6 11.5 3.5 17.25-2.5 6-8.25 10-14.75 10h-112c-8.75 0-16-7.25-16-16v-112c0-6.5 4-12.25 10-14.75 5.75-2.5 12.75-1.25 17.25 3.5l32.5 32.25c35.25-33.25 83-53 132.25-53 105.75 0 192 86.25 192 192z"></path></svg></span>
+<span class="pojo-a11y-toolbar-text">Reset</span>
+</a>
+</li>
+</ul>
+<ul class="pojo-a11y-toolbar-items pojo-a11y-links">
+<li class="pojo-a11y-toolbar-item">
+<a href="https://vegora.hr/kontakt/" class="pojo-a11y-toolbar-link pojo-a11y-link-help" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M224 344v-48c0-4.5-3.5-8-8-8h-48c-4.5 0-8 3.5-8 8v48c0 4.5 3.5 8 8 8h48c4.5 0 8-3.5 8-8zM288 176c0-45.75-48-80-91-80-40.75 0-71.25 17.5-92.75 53.25-2.25 3.5-1.25 8 2 10.5l33 25c1.25 1 3 1.5 4.75 1.5 2.25 0 4.75-1 6.25-3 11.75-15 16.75-19.5 21.5-23 4.25-3 12.5-6 21.5-6 16 0 30.75 10.25 30.75 21.25 0 13-6.75 19.5-22 26.5-17.75 8-42 28.75-42 53v9c0 4.5 3.5 8 8 8h48c4.5 0 8-3.5 8-8v0c0-5.75 7.25-18 19-24.75 19-10.75 45-25.25 45-63.25zM384 224c0 106-86 192-192 192s-192-86-192-192 86-192 192-192 192 86 192 192z"></path></svg></span><span class="pojo-a11y-toolbar-text">Pomoć</span>							</a>
+</li>
+<li class="pojo-a11y-toolbar-item">
+<a href="https://vegora.hr/izjava-o-pristupacnosti/" class="pojo-a11y-toolbar-link pojo-a11y-link-feedback" tabindex="-1">
+<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><path fill="currentColor" d="M448 224c0 88.5-100.25 160-224 160-12.25 0-24.5-0.75-36.25-2-32.75 29-71.75 49.5-115 60.5-9 2.5-18.75 4.25-28.5 5.5-5.5 0.5-10.75-3.5-12-9.5v-0.25c-1.25-6.25 3-10 6.75-14.5 15.75-17.75 33.75-32.75 45.5-74.5-51.5-29.25-84.5-74.5-84.5-125.25 0-88.25 100.25-160 224-160s224 71.5 224 160z"></path></svg></span><span class="pojo-a11y-toolbar-text">Izjava o pristupačnosti</span>							</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<script type="text/javascript">
+if (typeof jQuery !== 'undefined')  {
+jQuery( document ).ready(function () {
+var cwp_namespace = window.cwp_namespace || {};
+cwp_namespace.fluid_images = cwp_namespace.fluid_images || {};
+cwp_namespace.fluid_images = {
+Widgets : {},
+widget : null,
+Span : function (_self, _imageRatio) {
+this.self = _self;
+this.imageRatio = _imageRatio;
+},
+WidgetPosts : function (widget, ratio) {
+this.Spans = {};
+this.allSpans = widget.find( '.cat-post-crop' );
+this.firstSpan = this.allSpans.first();
+this.maxSpanWidth = this.firstSpan.width();
+this.firstListItem = this.firstSpan.closest( 'li' );
+this.ratio = ratio;
+for( var i = 0; i < this.allSpans.length; i++ ){
+var imageRatio = this.firstSpan.width() / jQuery(this.allSpans[i]).find( 'img' ).height();
+this.Spans[i] = new cwp_namespace.fluid_images.Span( jQuery(this.allSpans[i]), imageRatio );
+}
+this.changeImageSize = function changeImageSize() {
+this.listItemWidth = this.firstListItem.width();
+this.SpanWidth = this.firstSpan.width();
+if(this.listItemWidth < this.SpanWidth ||	
+this.listItemWidth < this.maxSpanWidth) {				
+this.allSpans.width( this.listItemWidth );
+var spanHeight = this.listItemWidth / this.ratio;
+this.allSpans.height( spanHeight );
+for( var index in this.Spans ){
+var imageHeight = this.listItemWidth / this.Spans[index].imageRatio;
+jQuery(this.Spans[index].self).find( 'img' ).css({
+height: imageHeight,
+marginTop: -(imageHeight - spanHeight) / 2
+});
+};
+}
+}
+},
+}
+cwp_namespace.fluid_images.widget = jQuery('#category-posts-5');
+cwp_namespace.fluid_images.Widgets['category-posts-5'] = new cwp_namespace.fluid_images.WidgetPosts(cwp_namespace.fluid_images.widget,2);
+jQuery(window).on('load resize', function() {
+for (var widget in cwp_namespace.fluid_images.Widgets) {
+cwp_namespace.fluid_images.Widgets[widget].changeImageSize();
+}
+});
+});
+}
+</script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.34497714042664 seconds, on 29-01-21 18:12:13 --><!-- need to refresh to see cached version -->
