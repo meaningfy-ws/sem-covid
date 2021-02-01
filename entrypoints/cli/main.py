@@ -4,12 +4,8 @@
 # Date:  30/01/2021
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
-import json
-import pathlib
-from datetime import datetime
 
 from adapters.cellar_adapter import CellarAdapter
-from adapters.pwdb_adapter import enrich_policy_watch, split_policy_watch
 
 if __name__ == "__main__":
     # print(str(datetime.now()) + " - starting downloading the EU’s PolicyWatch DB for Covid19 (JSON)...")
