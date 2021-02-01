@@ -303,7 +303,6 @@ class CellarAdapter:
             except Exception as ex:
                 logger.exception(ex)
 
-
     @staticmethod
     def _limit_query(query, limit):
         return query if not limit else query + f' LIMIT {limit}'
