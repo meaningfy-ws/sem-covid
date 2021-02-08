@@ -127,8 +127,8 @@ class CellarAdapter:
         response = self._make_request(query)
         return response.json()
 
-    def download_covid19_items(self, covid19_items):
-        download_location = pathlib.Path('resources/covid19_eurlex')
+    def download_covid19_items(self, output_path: pathlib.Path, covid19_items):
+        download_location = output_path
 
         count = len(covid19_items['results']['bindings'])
         current_item = 0
@@ -141,7 +141,7 @@ class CellarAdapter:
             filename_html = filename + '_html.zip'
 
             try:
-                print("Processing item " + str(current_item) + " of " + str(count))
+                logger.info("Processing item " + str(current_item) + " of " + str(count))
                 url = item['pdf_to_download']['value'] if item['pdf_to_download']['value'].startswith('http') else (
                         'http://' + item['pdf_to_download']['value'])
                 request = requests.get(url, allow_redirects=True)
@@ -272,7 +272,7 @@ class CellarAdapter:
             filename_html = filename + '_html.zip'
 
             try:
-                print("Processing item " + str(current_item) + " of " + str(count))
+                logger.info("Processing item " + str(current_item) + " of " + str(count))
                 url = item['pdf_to_download']['value'] if item['pdf_to_download']['value'].startswith('http') else (
                         'http://' + item['pdf_to_download']['value'])
                 request = requests.get(url, allow_redirects=True)

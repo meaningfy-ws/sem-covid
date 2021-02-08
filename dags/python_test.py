@@ -1,23 +1,21 @@
-#!/usr/bin/python3
-
-# cellar_adapter.py
-# Date:  30/01/2021
-# Author: Laurentiu Mandru
-# Email: mclaurentiu79@gmail.com
+"""
+Code that goes along with the Airflow located at:
+http://airflow.readthedocs.org/en/latest/tutorial.html
+"""
+from airflow import DAG
+from airflow.operators.bash_operator import BashOperator
+from datetime import datetime, timedelta
+from airflow.operators.python_operator import PythonOperator
 
 import hashlib
 import json
-import logging
 import pathlib
 from functools import partial
 from multiprocessing import Pool, cpu_count
 import requests
 
-logger = logging.getLogger('lam-fetcher')
-
-
-def enrich_policy_watch(covid19db_json_location: pathlib.Path, covid19_enriched_fragments_output_path: pathlib.Path):
-    with open(covid19db_json_location, encoding='utf-8') as covid19db:
+def enrich_policy_watch():
+    with open(pathlib.Path('resources') / 'covid19db.json', encoding='utf-8') as covid19db:
         covid19json = json.loads(covid19db.read())
 
     list_count = len(covid19json)
@@ -25,7 +23,7 @@ def enrich_policy_watch(covid19db_json_location: pathlib.Path, covid19_enriched_
 
     for field_data in covid19json:
         current_item += 1
-        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['fieldData']['title'])
+        print('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['fieldData']['title'])
         # map.pool has SERIOUS LOCK/DEADLOCK ISSUES ! Remove the code and make it sequential !
         with Pool(processes=cpu_count()) as pool:
             field_data['portalData']['sources'] = pool.map(partial(__download_source),
@@ -34,7 +32,7 @@ def enrich_policy_watch(covid19db_json_location: pathlib.Path, covid19_enriched_
             pool.join()
 
             for source in field_data['portalData']['sources']:
-                with open(covid19_enriched_fragments_output_path / hashlib.sha256(
+                with open(pathlib.Path('resources/policy_watch_field_data_fragments') / hashlib.sha256(
                         source['sources::url'].encode('utf-8')).hexdigest(), 'w') as enriched_fragment_file:
                     json.dump(source, enriched_fragment_file)
 
@@ -50,3 +48,22 @@ def __download_source(source):
         source['failure_reason'] = str(ex)
 
     return source
+    
+default_args = {
+    "owner": "airflow",
+    "depends_on_past": False,
+    "start_date": datetime(2015, 6, 1),
+    "email": ["mclaurentiu79@gmail.com"],
+    "email_on_failure": False,
+    "email_on_retry": False,
+    "retries": 1,
+    "retry_delay": timedelta(minutes=500),
+    # 'queue': 'bash_queue',
+    # 'pool': 'backfill',
+    # 'priority_weight': 10,
+    # 'end_date': datetime(2016, 1, 1),
+}
+
+dag = DAG("python_test_001", default_args=default_args, schedule_interval=timedelta(minutes=1000))
+
+python_task=PythonOperator(task_id='my_test_task_001', python_callable=enrich_policy_watch, retries=1, dag=dag)
