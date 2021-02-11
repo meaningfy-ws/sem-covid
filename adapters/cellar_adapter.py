@@ -289,6 +289,22 @@ class CellarAdapter:
             except Exception as ex:
                 logger.exception(ex)
 
+    def _chunk_query(self, query: str, values_list: list):
+        values_str = ''
+        offset = 0
+        values_max = self.max_query_size - len(query)
+
+        while values_list[offset:]:
+            for value in values_list[offset:]:
+                value_to_add = f' <{value}>'
+                if len(values_str + value_to_add) >= values_max:
+                    break
+                values_str += value_to_add
+                offset += 1
+            print(values_str)
+            yield query.format(values=values_str)
+            values_str = ''
+
     @staticmethod
     def _limit_query(query, limit):
         return query if not limit else query + f' LIMIT {limit}'
