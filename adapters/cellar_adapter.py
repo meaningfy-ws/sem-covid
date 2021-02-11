@@ -26,17 +26,8 @@ class CellarAdapter:
         self.timeout = '0'
         self.debug = 'on'
         self.run = '+Run+Query+'
+        self.limit_per_request = 1000
         self.max_query_size = 8000
-
-    def _make_request(self, query):
-        request_url = f'{self.url}/?default-graph-uri={self.default_graph}&format={self.format}&timeout={self.timeout}&debug={self.debug}&run={self.run}&query={quote_plus(query)}'
-
-        response = requests.get(request_url)
-        if response.status_code != 200:
-            logger.debug(f'request on Virtuoso returned {response.status_code} with {response.content} body')
-            raise ValueError(f'request on Virtuoso returned {response.status_code} with {response.content} body')
-
-        return response
 
     def get_covid19_items(self):
         logger.debug(f'start retrieving works of treaties.')
@@ -305,9 +296,50 @@ class CellarAdapter:
             yield query.format(values=values_str)
             values_str = ''
 
+    def _make_request(self, query):
+        request_url = f'{self.url}/?default-graph-uri={self.default_graph}&format={self.format}&timeout={self.timeout}&debug={self.debug}&run={self.run}&query={quote_plus(query)}'
+
+        response = requests.get(request_url)
+        if response.status_code != 200:
+            logger.debug(f'request on Virtuoso returned {response.status_code} with {response.content} body')
+            raise ValueError(f'request on Virtuoso returned {response.status_code} with {response.content} body')
+
+        return response
+
+    def _throttled_make_request(self, query: str, limit: int = None) -> list:
+        """
+        Method for making a series of smaller until no more results are returned from server
+
+        Note: the query has to be sorted.
+        :param query: query to be sent to Cellar
+        :param limit: number of max results per request (defaults to the value from __init__)
+        :return: list of requests Response objects
+        """
+        if not limit:
+            limit = self.limit_per_request
+
+        responses = list()
+
+        responses.append(self._make_request(self._limit_query(query, limit)))
+        offset = limit
+        continue_requests = bool(responses[0].json()['results']['bindings'])
+
+        while continue_requests:
+            response = self._make_request(self._offset_query(self._limit_query(query, limit), offset))
+            continue_requests = bool(response.json()['results']['bindings'])
+            offset += limit
+            if continue_requests:
+                responses.append(response)
+
+        return responses
+
     @staticmethod
-    def _limit_query(query, limit):
+    def _limit_query(query: str, limit: int):
         return query if not limit else query + f' LIMIT {limit}'
+
+    @staticmethod
+    def _offset_query(query: str, offset: int):
+        return query if not offset else query + f' OFFSET {offset}'
 
     @staticmethod
     def _extract_values(dictionary, key: str):
