@@ -16,3 +16,7 @@ create-indexes:
 	@ curl -X PUT "http://srv.meaningfy.ws:9200/treaties-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/treaties_index_mapping.json
 
 all: install
+
+test:
+	@ echo "$(BUILD_PRINT)Running the tests"
+	@ pytest --html=report.html --self-contained-html
