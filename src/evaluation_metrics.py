@@ -1,30 +1,17 @@
-from sklearn.metrics import (confusion_matrix, f1_score, precision_score, accuracy_score,
+import pandas as pd
+from numpy.core.records import ndarray
+from pandas import Series
+from sklearn.metrics import (f1_score, precision_score, accuracy_score,
                              recall_score, mean_squared_error, mean_absolute_error)
 
-import pandas as pd
 
-
-# TODO: issue with maximum recursion depth in confusion_matrix function
-
-def confusion_matrix(actual, prediction):
-    """
-    assuming we have actual test and predicted labels
-    and we want to see the confusion matrix of those 2 labels
-    :actual: the real test label
-    :prediction: predicted label
-    """
-
-    matrix = confusion_matrix(actual, prediction)
-
-    return matrix
-
-
-def evaluation(actual, prediction, title):
+def evaluation(actual: Series, prediction: ndarray, title: str):
     """
     assuming we have actual test and predicted labels
     and we want to see the evaluation score of those 2 labels
     :actual: the real test label
     :prediction: predicted label
+    :title: column title of the DataFrame
     """
     accuracy = accuracy_score(actual, prediction)
     precision = precision_score(actual, prediction, average="macro")
@@ -39,5 +26,3 @@ def evaluation(actual, prediction, title):
                                      title: [accuracy, precision, recall, f1, mae, mse]})
 
     return evaluate_metrics
-
-
