@@ -1,28 +1,21 @@
-import re
-import string
-
-from nltk.corpus import stopwords
+import jq
+import pandas as pd
 
 
-def cleaning(text):
-    """cleaner function"""
-    stopword = stopwords.words('english')
-    # set text to lowercase
-    text = text.lower()
-    # remove links
-    text = re.sub(r"^https?:\/\/.*[\r\n]*", '', text)
-    # remove "new line" symbol
-    text = re.sub('\n', '', text)
-    # Match every decimal digits and every character marked as letters in Unicode database
-    text = re.sub('\w*\d\w*', '', text)
-    # Delete square brackets
-    text = re.sub('\[.*?\]', '', text)
-    text = re.sub('[‘’“”…]', '', text)
-    # remove punctuation
-    text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
-    text = ''.join(text)
-    text = re.split('\W+', text)
-    text = [word for word in text if word not in stopword]
+def transformer(file, rules):
+    """
+        assuming we have json file and transformation rules
+        and we want to transform in into DataFrame format
+        :file: JSON file
+        :transformation_rules: dictionary based on
+        jq library rules of transformation
+    """
 
-    return text
+    jq_transformation_program = (".[] | "+str(rules)).replace("\n","")
+    transformation = jq.compile(jq_transformation_program)
+
+    new_data = transformation.input(file).all()
+    df_from_json = pd.DataFrame.from_records(new_data)
+
+    return df_from_json
 
