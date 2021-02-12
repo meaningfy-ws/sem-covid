@@ -1,0 +1,18 @@
+# Testing Dependencies
+pytest
+coverage
+pytest-cov
+pytest-bdd
+
+# Documentation Dependencies
+sphinx
+recommonmark
+
+# ML Libraries
+pandas
+sklearn
+gensim
+mlflow
+nltk
+spacy
+jq
