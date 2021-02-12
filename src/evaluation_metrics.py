@@ -3,28 +3,41 @@ from sklearn.metrics import (confusion_matrix, f1_score, precision_score, accura
 
 import pandas as pd
 
-class EvaluationMetrics:
-    def __init__(self, actual, prediction):
-        self.actual = actual
-        self.prediction = prediction
 
-    def confusion_matrix(self):
-        matrix = confusion_matrix(self.actual, self.prediction)
-        return matrix
+# TODO: issue with maximum recursion depth in confusion_matrix function
 
-    def evaluation(self):
-        accuracy = accuracy_score(self.actual, self.prediction)
-        precision = precision_score(self.actual, self.prediction, average="macro")
-        recall = recall_score(self.actual, self.prediction, average="macro")
-        f1 = f1_score(self.actual, self.prediction, average="macro")
-        mae = mean_absolute_error(self.actual, self.prediction)
-        mse = mean_squared_error(self.actual, self.prediction)
+def confusion_matrix(actual, prediction):
+    """
+    assuming we have actual test and predicted labels
+    and we want to see the confusion matrix of those 2 labels
+    :actual: the real test label
+    :prediction: predicted label
+    """
 
-        evaluate_metrics = pd.DataFrame({'Evaluation Metrics': ['Accuracy', 'Precission', 'Recall',
-                                                                'F1 Score', 'Mean Absolute Error',
-                                                                'Mean Squared Error'],
-                                         'Category': [accuracy, precision, recall, f1, mae, mse]})
+    matrix = confusion_matrix(actual, prediction)
 
-        return evaluate_metrics
+    return matrix
+
+
+def evaluation(actual, prediction, title):
+    """
+    assuming we have actual test and predicted labels
+    and we want to see the evaluation score of those 2 labels
+    :actual: the real test label
+    :prediction: predicted label
+    """
+    accuracy = accuracy_score(actual, prediction)
+    precision = precision_score(actual, prediction, average="macro")
+    recall = recall_score(actual, prediction, average="macro")
+    f1 = f1_score(actual, prediction, average="macro")
+    mae = mean_absolute_error(actual, prediction)
+    mse = mean_squared_error(actual, prediction)
+
+    evaluate_metrics = pd.DataFrame({'Evaluation Metrics': ['Accuracy', 'Precission', 'Recall',
+                                                            'F1 Score', 'Mean Absolute Error',
+                                                            'Mean Squared Error'],
+                                     title: [accuracy, precision, recall, f1, mae, mse]})
+
+    return evaluate_metrics
 
 
