@@ -1,8 +1,9 @@
 
 import pandas as pd
+from pandas import DataFrame
 
 
-def reduce_array_column(df, column, new_column=None):
+def reduce_array_column(df: DataFrame, column: str, new_column=None):
     """
         assuming that the column contains array objects,
         reduces thse arrays to a string of concatenated values
@@ -19,7 +20,7 @@ def reduce_array_column(df, column, new_column=None):
     return df
 
 
-def multi_label_column_to_binary_columns(df, column):
+def multi_label_column_to_binary_columns(df: DataFrame, column: str):
     """
         assuming that the column contains array objects,
         returns a new dataframe with binary columns (True/False)

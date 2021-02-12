@@ -1,10 +1,14 @@
 import re
 import string
 
+import nltk
+
+nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 
 
-def cleaning(text):
+def cleaning(text: str):
     """cleaner function"""
     stopword = stopwords.words('english')
     # set text to lowercase
