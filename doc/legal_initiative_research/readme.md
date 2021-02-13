@@ -139,4 +139,34 @@ cdm:internal_number_sequential_number
 cdm:internal_number_year
 cdm:internal_number_prefix
 
+# Legal initiatives are part of a dossier 
+
+The *dossier* is a parent work (complex work) that probably contains all the works related to a legal initiative. Yes, there are multiple stages to a legal initiative, and at each stage other documents are added. 
+
+```
+select * 
+{
+ ?dossier cdm:dossier_contains_work ?work . 
+}
+```
+
+OR  (hopefully the well implemented inverse)
+
+```
+select * 
+{
+ ?work cdm:work_part_of_dossier ?dossier  . 
+}
+```
+ 
+# Open questions:
+ 
+ Looking at the BRP website much information is available there that normally should be also found (should be recorded) in the Cellar somewhere. 
+ 
+ The next questions arise
+ 
+ * Where are the stages recorded ? (what CDM properties) 
+ * Where are the feedback dates recorded (Feedback open from, Feedback closed by) ? (check date annotations in LAM)
+ * What is the difference between *Type of act* and *Document category*
+ 
  
