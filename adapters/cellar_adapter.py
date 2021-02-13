@@ -7,7 +7,8 @@
 import hashlib
 import logging
 import pathlib
-from urllib.parse import quote_plus
+
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 import requests
 
@@ -115,8 +116,7 @@ class CellarAdapter:
                     
                     order by ?date_document"""
 
-        response = self._make_request(query)
-        return response.json()
+        return self._make_request(query)
 
     def download_covid19_items(self, output_path: pathlib.Path, covid19_items):
         download_location = output_path
@@ -246,8 +246,7 @@ class CellarAdapter:
                     }
                     ORDER BY ?dateDocument"""
 
-        response = self._make_request(query)
-        return response.json()
+        return self._make_request(query)
 
     def download_treaty_items(self, treaty_items):
         download_location = pathlib.Path('resources/treaties')
@@ -296,42 +295,36 @@ class CellarAdapter:
             yield query.format(values=values_str)
             values_str = ''
 
-    def _make_request(self, query):
-        request_url = f'{self.url}/?default-graph-uri={self.default_graph}&format={self.format}&timeout={self.timeout}&debug={self.debug}&run={self.run}&query={quote_plus(query)}'
+    def _make_request(self, query) -> dict:
+        wrapper = SPARQLWrapper(self.url)
+        wrapper.setQuery(query)
+        wrapper.setReturnFormat(JSON)
 
-        response = requests.get(request_url)
-        if response.status_code != 200:
-            logger.debug(f'request on Virtuoso returned {response.status_code} with {response.content} body')
-            raise ValueError(f'request on Virtuoso returned {response.status_code} with {response.content} body')
+        return wrapper.query().convert()
 
-        return response
-
-    def _throttled_make_request(self, query: str, limit: int = None) -> list:
+    def _throttled_make_request(self, query: str, limit: int = None) -> dict:
         """
         Method for making a series of smaller until no more results are returned from server
 
         Note: the query has to be sorted.
         :param query: query to be sent to Cellar
         :param limit: number of max results per request (defaults to the value from __init__)
-        :return: list of requests Response objects
         """
         if not limit:
             limit = self.limit_per_request
 
-        responses = list()
-
-        responses.append(self._make_request(self._limit_query(query, limit)))
+        final_response = self._make_request(self._limit_query(query, limit))
         offset = limit
-        continue_requests = bool(responses[0].json()['results']['bindings'])
+        continue_requests = bool(final_response['results']['bindings'])
 
         while continue_requests:
             response = self._make_request(self._offset_query(self._limit_query(query, limit), offset))
-            continue_requests = bool(response.json()['results']['bindings'])
+            continue_requests = bool(response['results']['bindings'])
             offset += limit
             if continue_requests:
-                responses.append(response)
+                final_response['results']['bindings'] += response['results']['bindings']
 
-        return responses
+        return final_response
 
     @staticmethod
     def _limit_query(query: str, limit: int):
