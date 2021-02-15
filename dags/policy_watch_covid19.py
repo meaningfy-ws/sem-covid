@@ -186,11 +186,7 @@ default_args = {
     "email_on_failure": False,
     "email_on_retry": False,
     "retries": 0,
-    "retry_delay": timedelta(minutes=5000),
-    # 'queue': 'bash_queue',
-    # 'pool': 'backfill',
-    # 'priority_weight': 10,
-    # 'end_date': datetime(2016, 1, 1),
+    "retry_delay": timedelta(minutes=5000)
 }
 
 dag = DAG('PolicyWatch_DB_Enrich_DAG_version_' + version,
