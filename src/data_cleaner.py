@@ -1,11 +1,19 @@
 import re
 import string
 
+import nltk
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 
 
-def cleaning(text):
-    """cleaner function"""
+def prepare_text_for_cleaning(text: str):
+    """
+        assuming we have text that have to be cleaned
+        to be used in training model. It will go through
+        several stages of cleaning such as removing links,
+        symbols, numbers i.e.
+        :text: messy string, ready for cleaning
+    """
     stopword = stopwords.words('english')
     # set text to lowercase
     text = text.lower()
