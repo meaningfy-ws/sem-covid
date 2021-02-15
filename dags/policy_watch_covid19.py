@@ -102,10 +102,6 @@ def download_policy_watch_resources():
         for source in field_data['portalData']['sources']:
             __download_source(source)
 
-        if current_item == 100:
-            # process just 100 items for debugging purposes
-            break
-
     with open(covid19_resources / pathlib.Path(dataset_local_filename), 'w') as processed_covid19db:
         json.dump(covid19json, processed_covid19db)
 
