@@ -3,6 +3,7 @@ Code that goes along with the Airflow located at:
 http://airflow.readthedocs.org/en/latest/tutorial.html
 """
 import hashlib
+import json
 import logging
 import os
 import pathlib
@@ -14,7 +15,7 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 
 logger = logging.getLogger('lam-fetcher')
-version = '0.2'
+version = '0.3'
 
 _url = 'http://publications.europa.eu/webapi/rdf/sparql'
 _default_graph = ''
@@ -135,7 +136,9 @@ def get_treaty_items():
 
     response = _make_request(query)
     logger.info('..done.')
-    return response.json()
+    with open(
+            pathlib.Path(os.path.dirname(os.path.realpath(__file__))) / pathlib.Path('treaties.json'), 'w') as treaties_json:
+        json.dump(response.json(), treaties_json)
 
 
 def download_treaty_items(treaty_items, download_location: pathlib.Path = None):
@@ -155,7 +158,7 @@ def download_treaty_items(treaty_items, download_location: pathlib.Path = None):
         filename_html = filename + '_html.zip'
         logger.info("Processing item " + str(current_item) + " of " + str(count))
 
-        #Two tries, because URLs are whacky in these datasets. I'm looking at you, Maria.
+        # Two tries, because URLs are whacky in these datasets. I'm looking at you, Maria.
 
         try:
             url = item['pdf_to_download']['value'] if item['pdf_to_download']['value'].startswith('http') else (
@@ -179,9 +182,9 @@ def download_treaty_items(treaty_items, download_location: pathlib.Path = None):
             logger.exception(ex)
 
 
-def process_treaty_items():
-    treaty_items = get_treaty_items()
-    download_treaty_items(treaty_items)
+# def process_treaty_items():
+#     treaty_items = get_treaty_items()
+#     download_treaty_items(treaty_items)
 
 
 default_args = {
@@ -192,15 +195,12 @@ default_args = {
     "email_on_failure": False,
     "email_on_retry": False,
     "retries": 1,
-    "retry_delay": timedelta(minutes=500),
-    # 'queue': 'bash_queue',
-    # 'pool': 'backfill',
-    # 'priority_weight': 10,
-    # 'end_date': datetime(2016, 1, 1),
+    "retry_delay": timedelta(minutes=500)
 }
 
 dag = DAG('Treaty_Items_DAG_version_' + version, default_args=default_args,
-          schedule_interval=timedelta(minutes=1000))
+          schedule_interval=timedelta(minutes=1000),
+          max_active_runs=1)
 
 python_task = PythonOperator(task_id='Treaty_Items_task_version_' + version,
-                             python_callable=process_treaty_items, retries=1, dag=dag)
+                             python_callable=get_treaty_items, retries=1, dag=dag)
