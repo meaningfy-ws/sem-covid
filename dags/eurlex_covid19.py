@@ -1,6 +1,9 @@
 import hashlib
 import logging
 import os
+import tempfile
+import zipfile
+from itertools import chain
 from json import dumps, loads
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -10,13 +13,31 @@ import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from tika import parser
+from elasticsearch import Elasticsearch
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.1.10'
+VERSION = '0.2'
 
 URL = 'http://publications.europa.eu/webapi/rdf/sparql'
 EURLEX_JSON_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Path('eurlex.json')
 EURLEX_DOWNLOAD_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Path('eurlex')
+APACHE_TIKA_URL = 'http://apache-tika:9998'
+TIKA_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Path('tika')
+
+CONTENT_PATH_KEY = 'content_path'
+CONTENT_KEY = 'content'
+FAILURE_KEY = 'failure_reason'
+
+LIMIT = 40
+
+elasticsearch_url = 'http://elasticsearch:9200'
+elasticsearch_index_name = 'eurlex-covid-index'
+elasticsearch_protocol: str = 'http'
+elasticsearch_hostname: str = 'elasticsearch'
+elasticsearch_port: int = 9200
+elasticsearch_user: str = 'elastic'
+elasticsearch_password: str = 'changeme'
 
 
 def make_request(query):
@@ -116,23 +137,24 @@ def get_covid19_items():
     save_location.write_text(dumps(make_request(query)))
 
 
-def download_file(source: dict, location: Union[str, Path], file_name: str):
+def download_file(source: dict, location_details: dict, location: Union[str, Path], file_name: str):
     try:
-        url = source['value'] if source['value'].startswith('http') else 'http://' + source['value']
+        url = location_details['value'] if location_details['value'].startswith('http') \
+            else 'http://' + location_details['value']
         request = requests.get(url, allow_redirects=True)
 
         (Path(location) / file_name).write_bytes(request.content)
-        source['content_path'] = file_name
+        source[CONTENT_PATH_KEY] = file_name
         return True
 
     except Exception as e:
-        source['failure_reason'] = str(e)
+        source[FAILURE_KEY] = str(e)
         return False
 
 
 def download_covid19_items():
+    EURLEX_DOWNLOAD_LOCATION.mkdir(exist_ok=True)
     download_location = EURLEX_DOWNLOAD_LOCATION
-    download_location.mkdir()
     logger.info(f'Enriched fragments will be saved locally to {download_location}')
 
     eurlex_json = loads(EURLEX_JSON_LOCATION.read_text())['results']['bindings']
@@ -144,23 +166,25 @@ def download_covid19_items():
         'pdf': 0
     }
 
-    for index, item in enumerate(eurlex_json[:40]):
+    for index, item in enumerate(eurlex_json):
         if item.get('manifestation_html'):
             filename = hashlib.sha256(item['manifestation_html']['value'].encode('utf-8')).hexdigest()
 
-            logger.info(f"[{index+1}/{eurlex_items_count}] Downloading HTML manifestation for {item['processed_title']['value']}")
+            logger.info(
+                f"[{index + 1}/{eurlex_items_count}] Downloading HTML manifestation for {item['processed_title']['value']}")
 
             html_file = filename + '_html.zip'
-            if download_file(item['html_to_download'], download_location, html_file):
+            if download_file(item, item['html_to_download'], download_location, html_file):
                 counter['html'] += 1
         elif item.get('manifestation_pdf'):
             filename = hashlib.sha256(item['manifestation_pdf']['value'].encode('utf-8')).hexdigest()
 
-            logger.info(f"[{index+1}/{eurlex_items_count}] Downloading PDF manifestation for {item['processed_title']['value']}")
+            logger.info(
+                f"[{index + 1}/{eurlex_items_count}] Downloading PDF manifestation for {item['processed_title']['value']}")
 
-            html_file = filename + '_pdf.zip'
-            if download_file(item['pdf_to_download'], download_location, html_file):
-                counter['pdf'] +=1
+            pdf_file = filename + '_pdf.zip'
+            if download_file(item, item['pdf_to_download'], download_location, pdf_file):
+                counter['pdf'] += 1
         else:
             logger.exception(f"No manifestation has been found for {item['processed_title']['value']}")
 
@@ -170,10 +194,86 @@ def download_covid19_items():
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
-# check if more than 1 file in zip
-def process_eurlex_items():
-    covid19_items = get_covid19_items()
-    download_covid19_items()
+
+def extract_document_content_with_tika():
+    logger.info(f'Using Apache Tika at {APACHE_TIKA_URL}')
+    logger.info(f'Loading resource files from {EURLEX_JSON_LOCATION}')
+
+    eurlex_json = loads(EURLEX_JSON_LOCATION.read_text())['results']['bindings']
+    eurlex_items_count = len(eurlex_json)
+
+    logger.info(f'Saving Tika processed fragments to {TIKA_LOCATION}')
+    TIKA_LOCATION.mkdir(exist_ok=True)
+    tika_location = TIKA_LOCATION
+    counter = {
+        'general': 0,
+        'success': 0
+    }
+
+    for index, item in enumerate(eurlex_json):
+        valid_sources = 0
+        identifier = item['processed_title']['value']
+        logger.info(f'[{index + 1}/{eurlex_items_count}] Processing {identifier}')
+        item['content'] = list()
+
+        if FAILURE_KEY in item:
+            logger.info(
+                f'Will not process source <{identifier}> because it failed download with reason <{item[FAILURE_KEY]}>')
+        else:
+            try:
+                with tempfile.TemporaryDirectory() as temp_dir:
+                    with zipfile.ZipFile(EURLEX_DOWNLOAD_LOCATION / item[CONTENT_PATH_KEY], 'r') as zip_ref:
+                        zip_ref.extractall(temp_dir)
+
+                    logger.info(f'Processing each file from {item[CONTENT_PATH_KEY]}:')
+                    for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.pdf')):
+                        logger.info(f'Parsing {Path(content_file).name}')
+                        counter['general'] += 1
+                        parse_result = parser.from_file(str(content_file), APACHE_TIKA_URL)
+
+                        if 'content' in parse_result:
+                            logger.info(f'Parse result (first 100 characters): {dumps(parse_result)[:100]}')
+                            item['content'].append(parse_result['content'])
+                            counter['success'] += 1
+
+                            valid_sources += 1
+                        else:
+                            logger.warning(
+                                f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
+            except Exception as e:
+                logger.exception(e)
+        if valid_sources:
+            filename = hashlib.sha256(item['manifestation_html']['value'].encode('utf-8')).hexdigest()
+            (tika_location / filename).write_text(dumps(item))
+
+    updated_eurlex_json = loads(EURLEX_JSON_LOCATION.read_text())
+    updated_eurlex_json['results']['bindings'] = eurlex_json
+    EURLEX_JSON_LOCATION.write_text(dumps(updated_eurlex_json))
+
+    logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
+
+
+def upload_processed_documents_to_elasticsearch():
+    elasticsearch_client = Elasticsearch(
+        [f'{elasticsearch_protocol}://{elasticsearch_user}:{elasticsearch_password}@{elasticsearch_hostname}:{elasticsearch_port}'])
+
+    logger.info(f'Using ElasticSearch at {elasticsearch_protocol}://{elasticsearch_hostname}:{elasticsearch_port}')
+
+    tika_location = TIKA_LOCATION
+    logger.info(f'Loading files from {tika_location}')
+
+    file_count = 0
+
+    for tika_file in tika_location.iterdir():
+        try:
+            logger.info(f'Sending to ElasticSearch ( {elasticsearch_index_name} ) the file {tika_file}')
+            logger.info(f'first 100: {tika_file.read_text()[:100]}')
+            elasticsearch_client.index(index=elasticsearch_index_name, body=tika_file.read_text())
+            file_count += 1
+        except Exception as ex:
+            logger.exception(ex)
+
+    logger.info(f'Sent {file_count} file(s) to ElasticSearch.')
 
 
 default_args = {
@@ -193,10 +293,22 @@ dag = DAG(
     schedule_interval=timedelta(minutes=1000)
 )
 
-get_eurlex_json_task = PythonOperator(task_id=f'EURLex_COVID19_get_json_task_version_{VERSION}',
-                                      python_callable=get_covid19_items, retries=1, dag=dag)
+get_eurlex_json_task = PythonOperator(
+    task_id=f'EURLex_COVID19_get_json_task_version_{VERSION}',
+    python_callable=get_covid19_items, retries=1, dag=dag)
 
-download_documents_and_enrich_eurlex_json_task = PythonOperator(task_id=f'EURLex_COVID19_get_documents_task_version_{VERSION}',
-                                            python_callable=download_covid19_items, retries=1, dag=dag)
+download_documents_and_enrich_eurlex_json_task = PythonOperator(
+    task_id=f'EURLex_COVID19_get_documents_task_version_{VERSION}',
+    python_callable=download_covid19_items, retries=1, dag=dag)
+
+extract_content_with_tika_task = PythonOperator(
+    task_id=f'EURLex_COVID19_extract_content_task_version_{VERSION}',
+    python_callable=extract_document_content_with_tika, retries=1, dag=dag)
+
+upload_to_elastic_task = PythonOperator(
+    task_id=f'EURLex_COVID19_elastic_upload_task_version_{VERSION}',
+    python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
 
 download_documents_and_enrich_eurlex_json_task.set_upstream(get_eurlex_json_task)
+extract_content_with_tika_task.set_upstream(download_documents_and_enrich_eurlex_json_task)
+upload_to_elastic_task.set_upstream(extract_content_with_tika_task)
