@@ -17,26 +17,21 @@ from elasticsearch import Elasticsearch
 
 from tika import parser
 
-# Most of the following should be loaded from Airflow variables, like this: var_name = Variable.get("APACHE_TIKA_URL")
-
-dataset_url = 'http://static.eurofound.europa.eu/covid19db/data/covid19db.json'
-dataset_local_filename = 'covid19db.json'
+apache_tika_url = Variable.get("APACHE_TIKA_URL")
+elasticsearch_index_name = Variable.get("PWDB_ELASTIC_SEARCH_INDEX_NAME")
+elasticsearch_protocol: str = Variable.get("ELASTICSEARCH_PROTOCOL")
+elasticsearch_hostname: str = Variable.get("ELASTICSEARCH_URL")
+elasticsearch_port: int = Variable.get("ELASTICSEARCH_PORT")
+elasticsearch_user: str = Variable.get("ELASTICSEARCH_USERNAME")
+elasticsearch_password: str = Variable.get("ELASTICSEARCH_PASSWORD")
+dataset_url = Variable.get("PWDB_DATASET_URL")
+dataset_local_filename = Variable.get("PWDB_DATASET_LOCAL_FILENAME")
 covid19db_json_location = pathlib.Path(os.path.dirname(os.path.realpath(__file__))) / pathlib.Path(
     dataset_local_filename)
 covid19_resources = pathlib.Path(os.path.dirname(os.path.realpath(__file__))) / pathlib.Path(
-    'covid19-resources')
+    Variable.get("PWDB_COVID19_RESOURCES"))
 logger = logging.getLogger('lam-fetcher')
-version = '0.04'
-
-apache_tika_url = 'http://apache-tika:9998'
-
-elasticsearch_url = 'http://elasticsearch:9200'
-elasticsearch_index_name = 'pwdb-index'
-elasticsearch_protocol: str = 'http'
-elasticsearch_hostname: str = 'elasticsearch'
-elasticsearch_port: int = 9200
-elasticsearch_user: str = 'elastic'
-elasticsearch_password: str = 'changeme'
+version = '0.01'
 
 
 def put_elasticsearch_documents():
