@@ -31,7 +31,7 @@ covid19db_json_location = pathlib.Path(os.path.dirname(os.path.realpath(__file__
 covid19_resources = pathlib.Path(os.path.dirname(os.path.realpath(__file__))) / pathlib.Path(
     Variable.get("PWDB_COVID19_RESOURCES"))
 logger = logging.getLogger('lam-fetcher')
-version = '0.01'
+version = '1.0'
 
 
 def put_elasticsearch_documents():
@@ -71,7 +71,7 @@ def put_elasticsearch_documents():
 
 
 def download_policy_dataset():
-    response = requests.get(dataset_url)
+    response = requests.get(dataset_url, timeout=30)
     response.raise_for_status()
 
     with open(covid19db_json_location, 'wb') as local_dataset_file:
@@ -110,7 +110,7 @@ def __download_source(source):
         filename = str(covid19_resources / pathlib.Path(
             hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest() + '.res'))
 
-        request = requests.get(url, allow_redirects=True)
+        request = requests.get(url, allow_redirects=True, timeout=30)
 
         with open(filename, 'wb') as resource_file:
             resource_file.write(request.content)
@@ -182,8 +182,9 @@ default_args = {
 
 dag = DAG('PolicyWatch_DB_Enrich_DAG_version_' + version,
           default_args=default_args,
-          schedule_interval=timedelta(minutes=5000),
-          max_active_runs=1)
+          schedule_interval="@once",
+          max_active_runs=1,
+          concurrency=1)
 
 download_task = PythonOperator(task_id='PolicyWatch_DB_Download_task_version_' + version,
                                python_callable=download_policy_dataset, retries=1, dag=dag)
