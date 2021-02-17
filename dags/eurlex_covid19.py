@@ -12,32 +12,31 @@ from typing import Union
 import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
+from airflow.models import Variable
 from airflow.operators.python import PythonOperator
 from tika import parser
 from elasticsearch import Elasticsearch
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.2'
 
-URL = 'http://publications.europa.eu/webapi/rdf/sparql'
-EURLEX_JSON_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Path('eurlex.json')
-EURLEX_DOWNLOAD_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Path('eurlex')
-APACHE_TIKA_URL = 'http://apache-tika:9998'
+VERSION = '0.2.3'
+
+URL: str = Variable.get('EURLEX_SPARQL_URL')
+EURLEX_JSON_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Variable.get('EURLEX_DATASET_LOCAL_FILENAME')
+EURLEX_DOWNLOAD_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Variable.get('EURLEX_RESOURCES')
+APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
 TIKA_LOCATION = Path(os.path.dirname(os.path.realpath(__file__))) / Path('tika')
+
+ELASTICSEARCH_INDEX_NAME: str = Variable.get('EURLEX_ELASTIC_SEARCH_INDEX_NAME')
+ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')
+ELASTICSEARCH_HOSTNAME: str = Variable.get('ELASTICSEARCH_URL')
+ELASTICSEARCH_PORT: int = Variable.get('ELASTICSEARCH_PORT')
+ELASTICSEARCH_USER: str = Variable.get('ELASTICSEARCH_USERNAME')
+ELASTICSEARCH_PASSWORD: str = Variable.get('ELASTICSEARCH_PASSWORD')
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
-
-LIMIT = 40
-
-elasticsearch_url = 'http://elasticsearch:9200'
-elasticsearch_index_name = 'eurlex-covid-index'
-elasticsearch_protocol: str = 'http'
-elasticsearch_hostname: str = 'elasticsearch'
-elasticsearch_port: int = 9200
-elasticsearch_user: str = 'elastic'
-elasticsearch_password: str = 'changeme'
 
 
 def make_request(query):
@@ -157,7 +156,9 @@ def download_covid19_items():
     download_location = EURLEX_DOWNLOAD_LOCATION
     logger.info(f'Enriched fragments will be saved locally to {download_location}')
 
-    eurlex_json = loads(EURLEX_JSON_LOCATION.read_text())['results']['bindings']
+    eurlex_json = loads(EURLEX_JSON_LOCATION.read_text())
+    logger.info(dumps(eurlex_json)[:100])
+    eurlex_json = eurlex_json['results']['bindings']
     eurlex_items_count = len(eurlex_json)
     logger.info(f'Found {eurlex_items_count} EURLex COVID19 items.')
 
@@ -255,9 +256,10 @@ def extract_document_content_with_tika():
 
 def upload_processed_documents_to_elasticsearch():
     elasticsearch_client = Elasticsearch(
-        [f'{elasticsearch_protocol}://{elasticsearch_user}:{elasticsearch_password}@{elasticsearch_hostname}:{elasticsearch_port}'])
+        [
+            f'{ELASTICSEARCH_PROTOCOL}://{ELASTICSEARCH_USER}:{ELASTICSEARCH_PASSWORD}@{ELASTICSEARCH_HOSTNAME}:{ELASTICSEARCH_PORT}'])
 
-    logger.info(f'Using ElasticSearch at {elasticsearch_protocol}://{elasticsearch_hostname}:{elasticsearch_port}')
+    logger.info(f'Using ElasticSearch at {ELASTICSEARCH_PROTOCOL}://{ELASTICSEARCH_HOSTNAME}:{ELASTICSEARCH_PORT}')
 
     tika_location = TIKA_LOCATION
     logger.info(f'Loading files from {tika_location}')
@@ -266,9 +268,9 @@ def upload_processed_documents_to_elasticsearch():
 
     for tika_file in tika_location.iterdir():
         try:
-            logger.info(f'Sending to ElasticSearch ( {elasticsearch_index_name} ) the file {tika_file}')
+            logger.info(f'Sending to ElasticSearch ( {ELASTICSEARCH_INDEX_NAME} ) the file {tika_file}')
             logger.info(f'first 100: {tika_file.read_text()[:100]}')
-            elasticsearch_client.index(index=elasticsearch_index_name, body=tika_file.read_text())
+            elasticsearch_client.index(index=ELASTICSEARCH_INDEX_NAME, body=tika_file.read_text())
             file_count += 1
         except Exception as ex:
             logger.exception(ex)
@@ -309,6 +311,4 @@ upload_to_elastic_task = PythonOperator(
     task_id=f'EURLex_COVID19_elastic_upload_task_version_{VERSION}',
     python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
 
-download_documents_and_enrich_eurlex_json_task.set_upstream(get_eurlex_json_task)
-extract_content_with_tika_task.set_upstream(download_documents_and_enrich_eurlex_json_task)
-upload_to_elastic_task.set_upstream(extract_content_with_tika_task)
+get_eurlex_json_task >> download_documents_and_enrich_eurlex_json_task >> extract_content_with_tika_task >> upload_to_elastic_task
