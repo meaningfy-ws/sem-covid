@@ -44,9 +44,8 @@ class ESAdapter:
     def get_pipeline(self, pipeline_id: str):
         return self._es.ingest.get_pipeline(id=pipeline_id)
 
-    def ingest_document(self, index_name: str, pipeline_id: str, payload):
+    def ingest_document(self, index_name: str, payload):
         result = self._es.index(index=index_name,
-                                # pipeline=pipeline_id,
                                 body={'data': str(base64.b64encode(payload))})
         return result
 
