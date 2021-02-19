@@ -1,0 +1,65 @@
+# Based on teh findings and on the SAPRQL queries to get COVID and Treaties documents from Cellar
+# proceed with developing the SPARQL query for legal initiatives
+
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+prefix lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT
+distinct
+    ?work
+    ?title
+    ?author ?author_label
+    ?resource_type ?resource_type_label
+    ?eurovoc_concept ?eurovoc_concept_label
+    ?subject_matter ?subject_matter_label
+    ?directory_code ?directory_code_label
+
+WHERE {
+    VALUES ?expr_lang { lang:ENG}
+
+    ?work cdm:resource_legal_comment_internal ?comment .
+    FILTER (regex(str(?comment),'COVID19'))
+
+
+    optional {
+        ?work cdm:work_created_by_agent ?author .
+        ?author skos:prefLabel ?author_label .
+        FILTER (lang(?author_label)="en")
+    }
+    optional {
+        ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
+        ?eurovoc_concept skos:prefLabel ?eurovoc_concept_label .
+        FILTER (lang(?eurovoc_concept_label)="en")
+    }
+    optional {
+        ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
+        ?subject_matter skos:prefLabel ?subject_matter_label .
+        FILTER (lang(?subject_matter_label)="en")
+    }
+    optional {
+        ?work cdm:resource_legal_is_about_concept_directory-code ?directory_code .
+        ?directory_code skos:prefLabel ?directory_code_label .
+        FILTER (lang(?directory_code_label)="en")
+    }
+    optional {
+        ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_id_sector ?oj_sector
+    }
+    OPTIONAL {
+        ?work cdm:work_has_resource-type ?resource_type .
+        ?resource_type skos:prefLabel ?resource_type_label .
+        FILTER (lang(?resource_type_label)="en")
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_published_in_official-journal ?Full_OJ .
+    }
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work .
+        ?exp cdm:expression_title ?title .
+        ?exp cdm:expression_uses_language ?lang .
+        FILTER (?lang = $expr_lang)
+    }
+}
