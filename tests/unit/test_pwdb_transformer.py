@@ -1,5 +1,5 @@
 import json
-from src.pwdb_transformer import transform_json_to_csv, get_transformation_rules
+from sc_wrangling.pwdb_transformer import transform_json_to_csv, get_transformation_rules
 
 
 def test_transform_json_to_csv_number_of_columns_and_rows(tmpdir):
