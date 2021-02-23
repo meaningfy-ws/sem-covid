@@ -1,4 +1,4 @@
-from src.data_cleaner import prepare_text_for_cleaning
+from sc_wrangling.data_cleaner import prepare_text_for_cleaning
 
 
 def test_data_cleaner():
