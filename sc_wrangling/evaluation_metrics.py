@@ -4,9 +4,6 @@ from pandas import Series
 from sklearn.metrics import (f1_score, precision_score, accuracy_score,
                              recall_score, mean_squared_error, mean_absolute_error)
 
-# Area Under the ROC curve (AUC – ROC)
-# Confusion matrix
-# Matthews correlation coefficient
 
 def model_evaluation_metrics(actual: Series, prediction: ndarray, label: str):
     """
