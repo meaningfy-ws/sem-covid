@@ -5,7 +5,7 @@ from sklearn.metrics import (f1_score, precision_score, accuracy_score,
                              recall_score, mean_squared_error, mean_absolute_error)
 
 
-def model_evaluation_metrics(actual: Series, prediction: ndarray, label: str):
+def model_evaluation_metrics(actual: Series, prediction: ndarray):
     """
     assuming we have actual test and predicted labels
     and we want to see the evaluation score of those 2 labels
@@ -20,9 +20,9 @@ def model_evaluation_metrics(actual: Series, prediction: ndarray, label: str):
     mae = mean_absolute_error(actual, prediction)
     mse = mean_squared_error(actual, prediction)
 
-    evaluate_metrics = pd.DataFrame({'Evaluation Metrics': ['Accuracy', 'Precission', 'Recall',
-                                                            'F1 Score', 'Mean Absolute Error',
-                                                            'Mean Squared Error'],
-                                     label: [accuracy, precision, recall, f1, mae, mse]})
+    evaluate_metrics = pd.DataFrame({'Metric Labels': ['Accuracy', 'Precision', 'Recall',
+                                                       'F1-Score', 'Mean Absolute Error',
+                                                       'Mean Squared Error'],
+                                     "Metric values": [accuracy, precision, recall, f1, mae, mse]})
 
     return evaluate_metrics
