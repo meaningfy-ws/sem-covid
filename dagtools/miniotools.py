@@ -7,6 +7,7 @@
 
 import io
 import logging
+from json import dumps
 
 from minio import Minio
 from minio.deleteobjects import DeleteObject
@@ -55,6 +56,9 @@ class MinioAdapter:
         raw_content_size = raw_content.getbuffer().nbytes
         self.minio_client.put_object(self.minio_bucket, object_name, raw_content, raw_content_size)
         return raw_content_size
+
+    def put_object_from_string(self, object_name, content_as_string: str):
+        return self.put_object(object_name, bytes(content_as_string, encoding='utf8'))
 
     def list_objects(self, object_prefix):
         return self.minio_client.list_objects(self.minio_bucket, prefix=object_prefix)
