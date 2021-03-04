@@ -28,13 +28,17 @@ elasticsearch_user: str = Variable.get("ELASTICSEARCH_USERNAME")
 elasticsearch_password: str = Variable.get("ELASTICSEARCH_PASSWORD")
 dataset_url = Variable.get("PWDB_DATASET_URL")
 dataset_local_filename = Variable.get("PWDB_DATASET_LOCAL_FILENAME")
+
 minio_url = Variable.get("MINIO_URL")
 minio_bucket = Variable.get("PWDB_COVID19_BUCKET_NAME")
 minio_acces_key = Variable.get("MINIO_ACCESS_KEY")
 minio_secret_key = Variable.get("MINIO_SECRET_KEY")
 
+RESOURCE_FILE_PREFIX = 'res/'
+TIKA_FILE_PREFIX = 'tika/'
+
 logger = logging.getLogger('lam-fetcher')
-version = '1.4'
+VERSION = '0.9.0'
 
 
 def download_policy_dataset():
@@ -64,7 +68,7 @@ def download_policy_watch_resources():
         for source in field_data['portalData']['sources']:
             download_single_source(source, minio)
 
-    minio.put_object(dataset_local_filename, json.dumps(covid19json).encode())
+    minio.put_object_from_string(dataset_local_filename, json.dumps(covid19json))
     logger.info("...done downloading.")
 
 
@@ -72,7 +76,7 @@ def download_single_source(source, minio: MinioAdapter):
     try:
         url = source['sources::url'] if source['sources::url'].startswith('http') else (
                 'http://' + source['sources::url'])
-        filename = str('res.' + hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest())
+        filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest())
 
         with requests.get(url, allow_redirects=True, timeout=30) as response:
             minio.put_object(filename, response.content)
@@ -105,7 +109,8 @@ def process_using_tika():
                                 '> because it failed download with reason <' +
                                 source['failure_reason'] + '>')
                 else:
-                    parse_result = parser.from_buffer(minio.get_object(source['content_path']).decode('utf-8'), apache_tika_url)
+                    parse_result = parser.from_buffer(minio.get_object(source['content_path']).decode('utf-8'),
+                                                      apache_tika_url)
 
                     logger.info('RESULT IS ' + json.dumps(parse_result))
                     if 'content' in parse_result:
@@ -116,8 +121,8 @@ def process_using_tika():
                                        source['sources::title'])
 
             if valid_sources > 0:
-                minio.put_object(json.dumps(field_data).encode(), 'tika.' + hashlib.sha256(
-                    field_data['fieldData']['title'].encode('utf-8')).hexdigest())
+                minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
+                    field_data['fieldData']['title'].encode('utf-8')).hexdigest(), json.dumps(field_data))
             else:
                 logger.warning('Field ' + field_data['fieldData']['title'] + ' had no valid or processable sources.')
         except Exception as ex:
@@ -139,7 +144,7 @@ def put_elasticsearch_documents():
         elasticsearch_port))
 
     minio = MinioAdapter(minio_url, minio_acces_key, minio_secret_key, minio_bucket)
-    objects = minio.list_objects('tika.')
+    objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
 
     for obj in objects:
@@ -149,7 +154,7 @@ def put_elasticsearch_documents():
                         ' ) the file ' +
                         obj.object_name)
             elasticsearch_client.index(index=elasticsearch_index_name,
-                                           body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
+                                       body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
@@ -167,7 +172,7 @@ default_args = {
     "retries": 0,
     "retry_delay": timedelta(minutes=3600)
 }
-dag = DAG('PolicyWatchDB_ver_' + version,
+dag = DAG('PolicyWatchDB_ver_' + VERSION,
           default_args=default_args,
           schedule_interval="@once",
           max_active_runs=1,
