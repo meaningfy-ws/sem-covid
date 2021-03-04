@@ -40,9 +40,9 @@ class MinioAdapter:
             self.minio_client.make_bucket(self.minio_bucket)
             self.logger.info('...done.')
 
-    def empty_bucket(self):
+    def empty_bucket(self, object_name_prefix=None):
         self.logger.info('Clearing the ' + self.minio_bucket + ' bucket...')
-        objects = self.minio_client.list_objects(self.minio_bucket)
+        objects = self.minio_client.list_objects(self.minio_bucket, prefix=object_name_prefix)
         objects_to_delete = [DeleteObject(x.object_name) for x in objects]
         for error in self.minio_client.remove_objects(self.minio_bucket, objects_to_delete):
             self.logger.error("Deletion error: {}".format(error))
