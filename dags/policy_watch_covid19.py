@@ -36,11 +36,14 @@ minio_bucket = Variable.get("PWDB_COVID19_BUCKET_NAME")
 minio_acces_key = Variable.get("MINIO_ACCESS_KEY")
 minio_secret_key = Variable.get("MINIO_SECRET_KEY")
 
+CONTENT_PATH_KEY = 'content_path'
+CONTENT_KEY = 'content'
+FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.9.31'
+VERSION = '0.10.0'
 
 transformation = '''{
 identifier: .recordId,
@@ -64,7 +67,7 @@ social_partner_role: .fieldData.socialPartnerrole,
 is_sector_specific: .fieldData.isSector,
 private_or_public_sector: .fieldData.sector_privateOrPublic,
 is_occupation_specific: .fieldData.isOccupation,
-actors: [.portalData.actors[] |  ."actors::name" ],
+actors: [.portalData.actors[] | ."actors::name" ],
 target_groups: [.portalData.targetGroups[] | ."targetGroups::name"],
 funding: [.portalData.funding[] | ."funding::name" ],
 sectors: [.portalData.sectors[] | ."sectors::name" ],
@@ -97,7 +100,7 @@ def download_single_source(source, minio: MinioAdapter):
         with requests.get(url, allow_redirects=True, timeout=30) as response:
             minio.put_object(filename, response.content)
 
-        source['content_path'] = filename
+        source[CONTENT_PATH_KEY] = filename
     except Exception as ex:
         source['failure_reason'] = str(ex)
 
@@ -112,7 +115,7 @@ def download_policy_watch_resources():
     list_count = len(covid19json)
     current_item = 0
 
-    for field_data in covid19json[:100]:
+    for field_data in covid19json:
         current_item += 1
         logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'])
 
@@ -134,7 +137,7 @@ def process_using_tika():
     list_count = len(covid19json)
     current_item = 0
 
-    for field_data in covid19json[:100]:
+    for field_data in covid19json:
         current_item += 1
         valid_sources = 0
         logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'])
@@ -147,13 +150,13 @@ def process_using_tika():
                                 '> because it failed download with reason <' +
                                 source['failure_reason'] + '>')
                 else:
-                    logger.info(f'content path is: {source["content_path"]}')
-                    parse_result = parser.from_buffer(minio.get_object(source['content_path']), apache_tika_url)
+                    logger.info(f'content path is: {source[CONTENT_PATH_KEY]}')
+                    parse_result = parser.from_buffer(minio.get_object(source[CONTENT_PATH_KEY]), apache_tika_url)
 
                     logger.info('RESULT IS ' + json.dumps(parse_result))
-                    if 'content' in parse_result:
+                    if CONTENT_KEY in parse_result:
                         logger.info(f"content type: {type(parse_result['content'])}")
-                        source['content'] = parse_result['content'].replace('\n', '')[:100]
+                        source[CONTENT_KEY] = parse_result['content'].replace('\n', '')
                         valid_sources += 1
                     else:
                         logger.warning('Apache Tika did NOT return a valid content for the source ' +
