@@ -10,10 +10,12 @@ import json
 import logging
 from datetime import datetime, timedelta
 
+from jq import compile
+from json import dumps, loads
 import requests
 from airflow import DAG
 from airflow.models import Variable
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 from elasticsearch import Elasticsearch
 from tika import parser
 
@@ -34,11 +36,50 @@ minio_bucket = Variable.get("PWDB_COVID19_BUCKET_NAME")
 minio_acces_key = Variable.get("MINIO_ACCESS_KEY")
 minio_secret_key = Variable.get("MINIO_SECRET_KEY")
 
+CONTENT_PATH_KEY = 'content_path'
+CONTENT_KEY = 'content'
+FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.9.0'
+VERSION = '0.10.0'
+
+transformation = '''{
+identifier: .recordId,
+title: .fieldData.title,
+title_national_language: .fieldData.title_nationalLanguage,
+country: .fieldData.calc_country,
+start_date: .fieldData.d_startDate,
+end_date: .fieldData.d_endDate,
+date_type: .fieldData.dateType,
+type_of_measure: .fieldData.calc_type,
+status_of_regulation: .fieldData.statusOfRegulation,
+category: .fieldData.calc_minorCategory,
+subcategory: .fieldData.calc_subMinorCategory,
+creation_date: .fieldData.calc_creationDay,
+background_info_description: .fieldData.descriptionBackgroundInfo,
+content_of_measure_description: .fieldData.descriptionContentOfMeasure,
+use_of_measure_description: .fieldData.descriptionUseOfMeasure,
+involvement_of_social_partners_description: .fieldData.descriptionInvolvementOfSocialPartners,
+social_partner_form: .fieldData.socialPartnerform,
+social_partner_role: .fieldData.socialPartnerrole,
+is_sector_specific: .fieldData.isSector,
+private_or_public_sector: .fieldData.sector_privateOrPublic,
+is_occupation_specific: .fieldData.isOccupation,
+actors: [.portalData.actors[] | ."actors::name" ],
+target_groups: [.portalData.targetGroups[] | ."targetGroups::name"],
+funding: [.portalData.funding[] | ."funding::name" ],
+sectors: [.portalData.sectors[] | ."sectors::name" ],
+occupations: [.portalData.occupations[] | .],
+sources: [.portalData.sources[] | { url: ."sources::url", title: ."sources::title"}]
+}'''
+
+SEARCH_RULE = ".[] | "
+
+
+def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
+    return (search_rule + rules).replace("\n", "")
 
 
 def download_policy_dataset():
@@ -46,8 +87,24 @@ def download_policy_dataset():
     response.raise_for_status()
     minio = MinioAdapter(minio_url, minio_acces_key, minio_secret_key, minio_bucket)
     minio.empty_bucket()
-    uploaded_bytes = minio.put_object(dataset_local_filename, response.content)
+    transformed_json = compile(get_transformation_rules(transformation)).input(loads(response.content)).all()
+    uploaded_bytes = minio.put_object(dataset_local_filename, dumps(transformed_json).encode('utf-8'))
     logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + minio_bucket + '] at ' + minio_url)
+
+
+def download_single_source(source, minio: MinioAdapter):
+    try:
+        url = source['url'] if source['url'].startswith('http') else ('http://' + source['url'])
+        filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['url'].encode('utf-8')).hexdigest())
+
+        with requests.get(url, allow_redirects=True, timeout=30) as response:
+            minio.put_object(filename, response.content)
+
+        source[CONTENT_PATH_KEY] = filename
+    except Exception as ex:
+        source['failure_reason'] = str(ex)
+
+    return source
 
 
 def download_policy_watch_resources():
@@ -60,32 +117,16 @@ def download_policy_watch_resources():
 
     for field_data in covid19json:
         current_item += 1
-        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['fieldData']['title'])
+        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'])
 
-        if not field_data['fieldData']['d_endDate']:
-            field_data['fieldData']['d_endDate'] = None  # Bozo lives here
+        if not field_data['end_date']:
+            field_data['end_date'] = None  # Bozo lives here
 
-        for source in field_data['portalData']['sources']:
+        for source in field_data['sources']:
             download_single_source(source, minio)
 
     minio.put_object_from_string(dataset_local_filename, json.dumps(covid19json))
     logger.info("...done downloading.")
-
-
-def download_single_source(source, minio: MinioAdapter):
-    try:
-        url = source['sources::url'] if source['sources::url'].startswith('http') else (
-                'http://' + source['sources::url'])
-        filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['sources::url'].encode('utf-8')).hexdigest())
-
-        with requests.get(url, allow_redirects=True, timeout=30) as response:
-            minio.put_object(filename, response.content)
-
-        source['content_path'] = filename
-    except Exception as ex:
-        source['failure_reason'] = str(ex)
-
-    return source
 
 
 def process_using_tika():
@@ -99,32 +140,33 @@ def process_using_tika():
     for field_data in covid19json:
         current_item += 1
         valid_sources = 0
-        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['fieldData']['title'])
+        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'])
 
         try:
-            for source in field_data['portalData']['sources']:
+            for source in field_data['sources']:
                 if 'failure_reason' in source:
                     logger.info('Will not process source <' +
-                                source['sources::title'] +
+                                source['title'] +
                                 '> because it failed download with reason <' +
                                 source['failure_reason'] + '>')
                 else:
-                    parse_result = parser.from_buffer(minio.get_object(source['content_path']).decode('utf-8'),
-                                                      apache_tika_url)
+                    logger.info(f'content path is: {source[CONTENT_PATH_KEY]}')
+                    parse_result = parser.from_buffer(minio.get_object(source[CONTENT_PATH_KEY]), apache_tika_url)
 
                     logger.info('RESULT IS ' + json.dumps(parse_result))
-                    if 'content' in parse_result:
-                        source['content'] = parse_result['content']
+                    if CONTENT_KEY in parse_result:
+                        logger.info(f"content type: {type(parse_result['content'])}")
+                        source[CONTENT_KEY] = parse_result['content'].replace('\n', '')
                         valid_sources += 1
                     else:
                         logger.warning('Apache Tika did NOT return a valid content for the source ' +
-                                       source['sources::title'])
+                                       source['title'])
 
             if valid_sources > 0:
                 minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
-                    field_data['fieldData']['title'].encode('utf-8')).hexdigest(), json.dumps(field_data))
+                    field_data['title'].encode('utf-8')).hexdigest(), json.dumps(field_data))
             else:
-                logger.warning('Field ' + field_data['fieldData']['title'] + ' had no valid or processable sources.')
+                logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
         except Exception as ex:
             logger.exception(ex)
 
@@ -190,6 +232,4 @@ tika_task = PythonOperator(task_id='Tika',
 elasticsearch_task = PythonOperator(task_id='ElasticSearch',
                                     python_callable=put_elasticsearch_documents, retries=1, dag=dag)
 
-enrich_task.set_upstream(download_task)
-tika_task.set_upstream(enrich_task)
-elasticsearch_task.set_upstream(tika_task)
+download_task >> enrich_task >> tika_task >> elasticsearch_task

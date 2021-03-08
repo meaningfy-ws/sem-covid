@@ -1,172 +1,195 @@
 {
-   "mappings":{
-      "properties":{
-         "fieldData":{
-            "properties":{
-               "calc_country":{
-                  "type":"text"
-               },
-               "calc_creationDay":{
-                  "type":"date",
-                  "format":"MM/dd/YYYY"
-               },
-               "calc_githubURL":{
-                  "type":"text"
-               },
-               "calc_identifier":{
-                  "type":"text"
-               },
-               "calc_lastUpdate":{
-                  "type":"date",
-                  "format":"MM/dd/YYYY"
-               },
-               "calc_minorCategory":{
-                  "type":"text"
-               },
-               "calc_subMinorCategory":{
-                  "type":"text"
-               },
-               "calc_type":{
-                  "type":"text"
-               },
-               "d_endDate":{
-                  "type":"date",
-                  "format":"MM/dd/YYYY"
-               },
-               "d_startDate":{
-                  "type":"date",
-                  "format":"MM/dd/YYYY"
-               },
-               "dateType":{
-                  "type":"text"
-               },
-               "descriptionBackgroundInfo":{
-                  "type":"text"
-               },
-               "descriptionContentOfMeasure":{
-                  "type":"text"
-               },
-               "descriptionInvolvementOfSocialPartners":{
-                  "type":"text"
-               },
-               "descriptionUseOfMeasure":{
-                  "type":"text"
-               },
-               "isOccupation":{
-                  "type":"text"
-               },
-               "isSector":{
-                  "type":"text"
-               },
-               "sector_privateOrPublic":{
-                  "type":"text"
-               },
-               "socialPartner_form":{
-                  "type":"text"
-               },
-               "socialPartner_role":{
-                  "type":"text"
-               },
-               "statusOfRegulation":{
-                  "type":"text"
-               },
-               "title":{
-                  "type":"text"
-               },
-               "title_nationalLanguage":{
-                  "type":"text"
-               }
-            }
-         },
-         "modId":{
-            "type":"integer"
-         },
-         "recordId":{
-            "type":"integer"
-         },
-         "portalData":{
-            "properties":{
-               "actors":{
-                  "properties":{
-                     "actors::name":{
-                        "type":"text"
-                     },
-                     "modId":{
-                        "type":"integer"
-                     },
-                     "recordId":{
-                        "type":"integer"
-                     }
-                  }
-               },
-               "funding":{
-                  "properties":{
-                     "funding::name":{
-                        "type":"text"
-                     },
-                     "modId":{
-                        "type":"integer"
-                     },
-                     "recordId":{
-                        "type":"integer"
-                     }
-                  }
-               },
-               "sources":{
-                  "properties":{
-                     "content":{
-                        "type":"text"
-                     },
-                     "modId":{
-                        "type":"integer"
-                     },
-                     "recordId":{
-                        "type":"integer"
-                     },
-                     "sources::d_date":{
-                        "type":"date",
-                        "format":"MM/dd/YYYY"
-                     },
-                     "sources::title":{
-                        "type":"text"
-                     },
-                     "sources::url":{
-                        "type":"text"
-                     }
-                  }
-               },
-               "targetGroups":{
-                  "properties":{
-                     "modId":{
-                        "type":"integer"
-                     },
-                     "recordId":{
-                        "type":"integer"
-                     },
-                     "targetGroups::name":{
-                        "type":"text"
-                     }
-                  }
-               },
-               "updates":{
-                  "properties":{
-                     "modId":{
-                        "type":"integer"
-                     },
-                     "recordId":{
-                        "type":"integer"
-                     },
-                     "updates::d_date":{
-                        "type":"date",
-                        "format":"MM/dd/YYYY"
-                     },
-                     "updates::description":{
-                        "type":"text"
-                     }
-                  }
-               }
-            }
-         }
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text",
+        "analyzer": "english"
+      },
+      "title_national_language": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "background_info_description": {
+        "type": "text",
+        "analyzer": "english"
+      },
+      "content_of_measure_description": {
+        "type": "text",
+        "analyzer": "english"
+      },
+      "involvement_of_social_partners_description": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "use_of_measure_description": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "category": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "subcategory": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "country": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "creation_date": {
+        "type": "date",
+        "format": "dd/MM/YYYY"
+      },
+      "date_type": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "end_date": {
+        "type": "date",
+        "format": "dd/MM/YYYY"
+      },
+      "actors": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "funding": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "identifier": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "sectors": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "sources": {
+        "properties": {
+          "content": {
+            "type": "text",
+            "analyzer": "english"
+          },
+          "content_path": {
+            "type": "text"
+          },
+          "title": {
+            "type": "text"
+          },
+          "url": {
+            "type": "text"
+          }
+        }
+      },
+      "start_date": {
+        "type": "date",
+        "format": "dd/MM/YYYY"
+      },
+      "status_of_regulation": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "target_groups": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "type_of_measure": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "is_occupation_specific": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "is_sector_specific": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "private_or_public_sector": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
       }
-   }
+    }
+  }
 }
