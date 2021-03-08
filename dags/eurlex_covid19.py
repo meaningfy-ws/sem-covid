@@ -8,6 +8,7 @@ from json import dumps, loads
 from pathlib import Path
 
 import requests
+from jq import compile
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.models import Variable
@@ -18,7 +19,7 @@ from tika import parser
 from dagtools.miniotools import MinioAdapter
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.9.0'
+VERSION = '0.9.8'
 
 URL: str = Variable.get('EURLEX_SPARQL_URL')
 APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
@@ -41,6 +42,31 @@ MINIO_URL = Variable.get("MINIO_URL")
 MINIO_BUCKET = Variable.get('EURLEX_BUCKET_NAME')
 MINIO_ACCESS_KEY = Variable.get("MINIO_ACCESS_KEY")
 MINIO_SECRET_KEY = Variable.get("MINIO_SECRET_KEY")
+
+transformation = '''{
+title: .processed_title.value,
+date: .date_document.value,
+celex_id: .celex.value,
+oj: .full_oj.value,
+manifestation_html: .manifestation_html.value,
+manifestation_pdf: .manifestation_pdf.value,
+html_to_download: .html_to_download.value,
+pdf_to_download: .pdf_to_download.value,
+oj_sector: .oj_sector.value,
+resource_type: .resource_type.value,
+authors: .authors.value,
+eurovoc_concepts: .eurovoc_concepts.value,
+subject_matters: .subject_matters.value,
+directory_codes: .directory_codes.value,
+legal_elis: .legal_elis.value,
+content: .content
+}'''
+
+SEARCH_RULE = ".[] | "
+
+
+def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
+    return (search_rule + rules).replace("\n", "")
 
 
 def make_request(query):
@@ -140,15 +166,18 @@ def get_covid19_items():
     
     } ORDER by ?date_document"""
 
-    uploaded_bytes = minio.put_object_from_string(EURLEX_JSON, dumps(make_request(query)))
+    response = make_request(query)['results']['bindings']
+    transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
+    uploaded_bytes = minio.put_object(EURLEX_JSON, dumps(transformed_json).encode('utf-8'))
+
     logger.info(f'Save query result to {EURLEX_JSON}')
     logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + MINIO_BUCKET + '] at ' + MINIO_URL)
 
 
-def download_file(source: dict, location_details: dict, file_name: str, minio: MinioAdapter):
+def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
     try:
-        url = location_details['value'] if location_details['value'].startswith('http') \
-            else 'http://' + location_details['value']
+        url = location_details if location_details.startswith('http') \
+            else 'http://' + location_details
         request = requests.get(url, allow_redirects=True, timeout=30)
         minio.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
         source[CONTENT_PATH_KEY] = file_name
@@ -165,8 +194,6 @@ def download_covid19_items():
     minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, MINIO_BUCKET)
 
     eurlex_json = loads(minio.get_object(EURLEX_JSON).decode('utf-8'))
-    logger.info(dumps(eurlex_json)[:100])
-    eurlex_json = eurlex_json['results']['bindings']
     eurlex_items_count = len(eurlex_json)
     logger.info(f'Found {eurlex_items_count} EURLex COVID19 items.')
 
@@ -177,29 +204,27 @@ def download_covid19_items():
 
     for index, item in enumerate(eurlex_json):
         if item.get('manifestation_html'):
-            filename = hashlib.sha256(item['manifestation_html']['value'].encode('utf-8')).hexdigest()
+            filename = hashlib.sha256(item['manifestation_html'].encode('utf-8')).hexdigest()
 
             logger.info(
-                f"[{index + 1}/{eurlex_items_count}] Downloading HTML manifestation for {item['processed_title']['value']}")
+                f"[{index + 1}/{eurlex_items_count}] Downloading HTML manifestation for {item['title']}")
 
             html_file = filename + '_html.zip'
             if download_file(item, item['html_to_download'], html_file, minio):
                 counter['html'] += 1
         elif item.get('manifestation_pdf'):
-            filename = hashlib.sha256(item['manifestation_pdf']['value'].encode('utf-8')).hexdigest()
+            filename = hashlib.sha256(item['manifestation_pdf'].encode('utf-8')).hexdigest()
 
             logger.info(
-                f"[{index + 1}/{eurlex_items_count}] Downloading PDF manifestation for {item['processed_title']['value']}")
+                f"[{index + 1}/{eurlex_items_count}] Downloading PDF manifestation for {item['title']}")
 
             pdf_file = filename + '_pdf.zip'
             if download_file(item, item['pdf_to_download'], pdf_file, minio):
                 counter['pdf'] += 1
         else:
-            logger.exception(f"No manifestation has been found for {item['processed_title']['value']}")
+            logger.exception(f"No manifestation has been found for {item['title']}")
 
-    updated_eurlex_json = loads(minio.get_object(EURLEX_JSON).decode('utf-8'))
-    updated_eurlex_json['results']['bindings'] = eurlex_json
-    minio.put_object_from_string(EURLEX_JSON, dumps(updated_eurlex_json))
+    minio.put_object_from_string(EURLEX_JSON, dumps(eurlex_json))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -208,7 +233,7 @@ def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {EURLEX_JSON}')
     minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, MINIO_BUCKET)
-    eurlex_json = loads(minio.get_object(EURLEX_JSON))['results']['bindings']
+    eurlex_json = loads(minio.get_object(EURLEX_JSON))
     eurlex_items_count = len(eurlex_json)
 
     counter = {
@@ -218,7 +243,7 @@ def extract_document_content_with_tika():
 
     for index, item in enumerate(eurlex_json):
         valid_sources = 0
-        identifier = item['processed_title']['value']
+        identifier = item['title']
         logger.info(f'[{index + 1}/{eurlex_items_count}] Processing {identifier}')
         item['content'] = list()
 
@@ -253,12 +278,10 @@ def extract_document_content_with_tika():
             except Exception as e:
                 logger.exception(e)
         if valid_sources:
-            filename = hashlib.sha256(item['manifestation_html']['value'].encode('utf-8')).hexdigest()
+            filename = hashlib.sha256(item['manifestation_html'].encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    updated_eurlex_json = loads(minio.get_object(EURLEX_JSON).decode('utf-8'))
-    updated_eurlex_json['results']['bindings'] = eurlex_json
-    minio.put_object_from_string(EURLEX_JSON, dumps(updated_eurlex_json))
+    minio.put_object_from_string(EURLEX_JSON, dumps(eurlex_json))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
@@ -299,25 +322,27 @@ default_args = {
 }
 
 dag = DAG(
-    'EURLex_COVID19_DAG_version_' + VERSION,
+    'EURLex_COVID19_ver_' + VERSION,
     default_args=default_args,
-    schedule_interval="@once"
+    schedule_interval="@once",
+    max_active_runs=1,
+    concurrency=1
 )
 
 get_eurlex_json_task = PythonOperator(
-    task_id=f'EURLex_COVID19_get_json_task_version_{VERSION}',
+    task_id=f'Download',
     python_callable=get_covid19_items, retries=1, dag=dag)
 
 download_documents_and_enrich_eurlex_json_task = PythonOperator(
-    task_id=f'EURLex_COVID19_get_documents_task_version_{VERSION}',
+    task_id=f'Enrich',
     python_callable=download_covid19_items, retries=1, dag=dag)
 
 extract_content_with_tika_task = PythonOperator(
-    task_id=f'EURLex_COVID19_extract_content_task_version_{VERSION}',
+    task_id=f'Tika',
     python_callable=extract_document_content_with_tika, retries=1, dag=dag)
 
 upload_to_elastic_task = PythonOperator(
-    task_id=f'EURLex_COVID19_elastic_upload_task_version_{VERSION}',
+    task_id=f'Elasticsearch',
     python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
 
 get_eurlex_json_task >> download_documents_and_enrich_eurlex_json_task >> extract_content_with_tika_task >> upload_to_elastic_task
