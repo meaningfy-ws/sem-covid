@@ -306,7 +306,7 @@ def download_covid19_items():
                 html_file = filename + '_html.zip'
                 if download_file(item, html_manifestation, html_file, minio):
                     counter['html'] += 1
-        elif item.get('manifestation_pdf'):
+        elif item.get('manifs_pdf'):
             for pdf_manifestation in item.get('pdfs_to_download'):
 
                 filename = hashlib.sha256(pdf_manifestation.encode('utf-8')).hexdigest()
