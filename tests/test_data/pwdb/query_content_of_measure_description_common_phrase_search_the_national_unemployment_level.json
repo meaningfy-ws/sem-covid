@@ -1,0 +1,10 @@
+{
+  "query": {
+    "common": {
+      "content_of_measure_description": {
+        "query": "the national unemployment level",
+        "cutoff_frequency": 0.001
+      }
+    }
+  }
+}
