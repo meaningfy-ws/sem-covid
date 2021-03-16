@@ -4,5 +4,4 @@ services:
   splash:
     image: scrapinghub/splash
     ports:
-    # using 5080 port to avoid conflicts with existing container using the 8050 port
-      - 5080:8050
+      - ${SPLASH_EXTERNAL_PORT}:8050
