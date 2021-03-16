@@ -1,0 +1,9 @@
+{
+  "query": {
+    "match": {
+          "background_info_description": {
+            "query" : "covid"
+          }
+        }
+  }
+}
