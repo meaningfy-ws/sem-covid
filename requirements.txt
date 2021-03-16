@@ -9,3 +9,8 @@ pytest-cov
 coverage
 minio
 pytest-bdd
+
+#
+apache-airflow
+tika
+jq
