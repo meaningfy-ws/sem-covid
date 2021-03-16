@@ -7,7 +7,7 @@ BUILD_PRINT = \e[1;34mSTEP: \e[0m
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
-	@ pip install -r resources/requirements.txt
+	@ pip install -r requirements.txt
 
 create-indexes:
 	@ echo "$(BUILD_PRINT)Creating indexes and their respective mappings"
@@ -19,4 +19,4 @@ all: install
 
 test:
 	@ echo "$(BUILD_PRINT)Running the tests"
-	@ pytest --html=report.html --self-contained-html
+	@ pytest -s --html=report.html --self-contained-html
