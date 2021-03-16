@@ -137,5 +137,5 @@ junit_report.xml
 
 .idea/
 report.html
-law_fetcher/dags/eurlex-resources/
-law_fetcher/dags/tika/
+law_fetcher/entrypoints/dags/eurlex-resources/
+law_fetcher/entrypoints/dags/tika/
