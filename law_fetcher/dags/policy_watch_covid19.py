@@ -9,17 +9,17 @@ import hashlib
 import json
 import logging
 from datetime import datetime, timedelta
-
-from jq import compile
 from json import dumps, loads
+
 import requests
 from airflow import DAG
 from airflow.models import Variable
 from airflow.operators.python import PythonOperator
 from elasticsearch import Elasticsearch
+from jq import compile
 from tika import parser
 
-from dagtools.miniotools import MinioAdapter
+from law_fetcher.adapters.minio_adapter import MinioAdapter
 
 apache_tika_url = Variable.get("APACHE_TIKA_URL")
 elasticsearch_index_name = Variable.get("PWDB_ELASTIC_SEARCH_INDEX_NAME")
