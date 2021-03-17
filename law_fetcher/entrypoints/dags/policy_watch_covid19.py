@@ -42,7 +42,7 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
 VERSION = '0.10.0'
 
 transformation = '''{

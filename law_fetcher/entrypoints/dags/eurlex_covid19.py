@@ -18,7 +18,8 @@ from tika import parser
 
 from law_fetcher.adapters.minio_adapter import MinioAdapter
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
+
 VERSION = '0.10.0'
 
 URL: str = Variable.get('EURLEX_SPARQL_URL')
