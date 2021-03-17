@@ -11,7 +11,7 @@ import logging
 from minio import Minio
 from minio.deleteobjects import DeleteObject
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
 
 
 class MinioAdapter:

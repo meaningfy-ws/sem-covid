@@ -6,3 +6,7 @@
 # Email: costezki.eugen@gmail.com 
 
 """ """
+import logging
+
+LOGGING_FORMAT = '%(asctime)s %(levelname)5s %(funcName)5s: %(message)s'
+logging.basicConfig(format=LOGGING_FORMAT)

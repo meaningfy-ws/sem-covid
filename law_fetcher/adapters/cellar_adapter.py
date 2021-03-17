@@ -13,7 +13,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 import requests
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
 
 FORMATS = {
     'html': '"application/xhtml+xml" "text/html"',
