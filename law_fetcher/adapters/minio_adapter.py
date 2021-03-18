@@ -1,51 +1,45 @@
 #!/usr/bin/python3
 
-# main.py
+# minio_adapter.py
 # Date:  02/03/2021
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
 
 import io
 import logging
-from json import dumps
 
 from minio import Minio
 from minio.deleteobjects import DeleteObject
 
+logger = logging.getLogger(__name__)
+
 
 class MinioAdapter:
-    def __init__(self, minio_url, minio_access_key, minio_secret_key, minio_bucket):
-        self.logger = logging.getLogger('lam-fetcher')
+
+    def __init__(self, minio_url: str, minio_access_key: str, minio_secret_key: str, minio_bucket: str):
         self.minio_url = minio_url
         self.minio_access_key = minio_access_key
         self.minio_secret_key = minio_secret_key
         self.minio_bucket = minio_bucket
-        self.initialize()
 
-    def initialize(self):
-        self.logger.info('Connecting to Minio instance on ' + self.minio_url)
-
-        self.minio_client = Minio(
-            self.minio_url,
-            access_key=self.minio_access_key,
-            secret_key=self.minio_secret_key,
-            secure=False
-        )
-        self.logger.info('...done.')
-
+        logger.info('Connecting to Minio instance on ' + self.minio_url)
+        self.minio_client = Minio(self.minio_url,
+                                  access_key=self.minio_access_key,
+                                  secret_key=self.minio_secret_key,
+                                  secure=False)
         if self.minio_client.bucket_exists(self.minio_bucket):
-            self.logger.info('Bucket ' + self.minio_bucket + ' already exists.')
+            logger.info('The bucket ' + self.minio_bucket + ' already exists.')
         else:
-            self.logger.info('Bucket ' + self.minio_bucket + ' does not exist. Creating...')
+            logger.info('Creating the bucket ' + self.minio_bucket + '')
             self.minio_client.make_bucket(self.minio_bucket)
-            self.logger.info('...done.')
+        logger.info('...done.')
 
     def empty_bucket(self, object_name_prefix=None):
-        self.logger.info('Clearing the ' + self.minio_bucket + ' bucket...')
+        logger.info('Clearing the ' + self.minio_bucket + ' bucket...')
         objects = self.minio_client.list_objects(self.minio_bucket, prefix=object_name_prefix)
         objects_to_delete = [DeleteObject(x.object_name) for x in objects]
         for error in self.minio_client.remove_objects(self.minio_bucket, objects_to_delete):
-            self.logger.error("Deletion error: {}".format(error))
+            logger.error(f"Deletion error: {error}")
 
     def get_object(self, object_name):
         with self.minio_client.get_object(self.minio_bucket, object_name) as response:

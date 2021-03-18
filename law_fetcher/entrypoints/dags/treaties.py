@@ -22,9 +22,9 @@ from airflow.operators.python import PythonOperator
 from elasticsearch import Elasticsearch
 from tika import parser
 
-from dagtools.miniotools import MinioAdapter
+from law_fetcher.adapters.minio_adapter import MinioAdapter
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
 VERSION = '0.9.0'
 
 URL: str = Variable.get('TREATIES_SPARQL_URL')
