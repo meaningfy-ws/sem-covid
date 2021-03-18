@@ -9,17 +9,17 @@ import hashlib
 import json
 import logging
 from datetime import datetime, timedelta
-
-from jq import compile
 from json import dumps, loads
+
 import requests
 from airflow import DAG
 from airflow.models import Variable
 from airflow.operators.python import PythonOperator
 from elasticsearch import Elasticsearch
+from jq import compile
 from tika import parser
 
-from dagtools.miniotools import MinioAdapter
+from law_fetcher.adapters.minio_adapter import MinioAdapter
 
 apache_tika_url = Variable.get("APACHE_TIKA_URL")
 elasticsearch_index_name = Variable.get("PWDB_ELASTIC_SEARCH_INDEX_NAME")
@@ -42,7 +42,7 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
 VERSION = '0.10.0'
 
 transformation = '''{
@@ -86,7 +86,9 @@ def download_policy_dataset():
     response = requests.get(dataset_url, stream=True, timeout=30)
     response.raise_for_status()
     minio = MinioAdapter(minio_url, minio_acces_key, minio_secret_key, minio_bucket)
-    minio.empty_bucket()
+    minio.empty_bucket(object_name_prefix=None)
+    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
+    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
     transformed_json = compile(get_transformation_rules(transformation)).input(loads(response.content)).all()
     uploaded_bytes = minio.put_object(dataset_local_filename, dumps(transformed_json).encode('utf-8'))
     logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + minio_bucket + '] at ' + minio_url)

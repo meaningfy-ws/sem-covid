@@ -4,6 +4,7 @@
 # Date:  26/01/2021
 # Author: Mihai Coșleț
 # Email: coslet.mihai@gmail.com
+
 import hashlib
 import logging
 import pathlib
@@ -12,13 +13,14 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 import requests
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
 
 FORMATS = {
     'html': '"application/xhtml+xml" "text/html"',
 }
 
 
+# TODO: refactor Cellar adapter into a generic SPARQL adapter and individual query scoping a dataset
 class CellarAdapter:
     def __init__(self):
         self.url = 'http://publications.europa.eu/webapi/rdf/sparql'

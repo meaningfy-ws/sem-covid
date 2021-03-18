@@ -2,7 +2,7 @@
 
 ## Run the `eu-timeline` spider
 
-1. install the dependencies from [`eu_action_timeline/requirements.txt`](/eu_action_timeline/requirements.txt):
+1. install the dependencies from [`eu_action_timeline/requirements.txt`](/law_fetcher/entrypoints/crawlers/requirements.txtxt):
    ```
    make install-scrapy-dependencies
    ```

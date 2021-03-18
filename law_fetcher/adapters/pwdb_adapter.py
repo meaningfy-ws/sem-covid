@@ -13,7 +13,7 @@ from functools import partial
 from multiprocessing import Pool, cpu_count
 import requests
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
 
 
 def enrich_policy_watch(covid19db_json_location: pathlib.Path, covid19_enriched_fragments_output_path: pathlib.Path):
