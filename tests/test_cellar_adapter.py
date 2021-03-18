@@ -4,7 +4,7 @@
 # Date:  11/02/2021
 # Author: Mihai Coșleț
 # Email: coslet.mihai@gmail.com
-from adapters.cellar_adapter import CellarAdapter
+from law_fetcher.adapters.cellar_adapter import CellarAdapter
 
 
 def test_all_treaties_are_extracted():
@@ -12,7 +12,6 @@ def test_all_treaties_are_extracted():
 
     treaties = ca.get_treaty_items()
     treaty_titles = ca._extract_values(treaties, 'title')
-
 
     assert len(treaty_titles) == 45
     assert 'Charter of Fundamental Rights of the European Union' in treaty_titles

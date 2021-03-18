@@ -2,8 +2,10 @@
 A module for gathering documents from various legal sources
 
 Example on how to use the `CellarAdapter` to retrieve treaties document items:
+
 ```python
-from adapters.cellar_adapter import CellarAdapter
+from law_fetcher.adapters.cellar_adapter import CellarAdapter
+
 ca = CellarAdapter()
 
 treaties = ca.get_treaties()

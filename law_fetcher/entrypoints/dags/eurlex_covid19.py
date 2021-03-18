@@ -8,17 +8,18 @@ from json import dumps, loads
 from pathlib import Path
 
 import requests
-from jq import compile
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.models import Variable
 from airflow.operators.python import PythonOperator
 from elasticsearch import Elasticsearch
+from jq import compile
 from tika import parser
 
-from dagtools.miniotools import MinioAdapter
+from law_fetcher.adapters.minio_adapter import MinioAdapter
 
-logger = logging.getLogger('lam-fetcher')
+logger = logging.getLogger(__name__)
+
 VERSION = '0.10.0'
 
 URL: str = Variable.get('EURLEX_SPARQL_URL')
