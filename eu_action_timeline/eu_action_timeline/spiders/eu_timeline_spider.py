@@ -8,15 +8,11 @@ class EUTimelineSpider(scrapy.Spider):
     name = 'eu-timeline'
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
     presscorner_base_url = 'https://ec.europa.eu/commission/presscorner/detail'
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
-    }
 
     def start_requests(self):
-        yield scrapy.Request(url=self.url, callback=self.parse_main_page, headers=self.headers)
+        yield scrapy.Request(url=self.url, callback=self.parse_main_page)
 
     def parse_main_page(self, response):
-        data = {}
         timeline_data = response.xpath(
             '//div[@class="field field-name-field-core-timelines field--field-core-timelines"]/div["field__items"]/*[ @class !="clearfix"]')
         month_name = ''
@@ -24,7 +20,7 @@ class EUTimelineSpider(scrapy.Spider):
             if not index % 2:
                 self.logger.info(f'Processing data for {month_name}.')
 
-                month_name = block.xpath('*//h2/text()').get()
+                month_name = block.xpath('/div/h2/text()').get()
 
             else:
                 month_timeline = block.xpath('*//li')
@@ -46,9 +42,10 @@ class EUTimelineSpider(scrapy.Spider):
                         for presscorner_link in presscorner_links:
                             self.logger.info(f'Processing data for this link: {presscorner_link}.')
                             yield SplashRequest(url=presscorner_link, callback=self.parse_presscorner_page,
-                                                args={'wait': 5 },
+                                                args={'wait': 5},
                                                 meta=meta)
                     else:
+                        self.logger.info()
                         yield EuActionTimelineItem(**meta)
 
     def parse_presscorner_page(self, response):
@@ -59,7 +56,8 @@ class EUTimelineSpider(scrapy.Spider):
             title=meta['title'],
             excerpt=meta['excerpt'],
             presscorner_links=meta['presscorner_links'],
-            all_links=meta['all_links']
+            all_links=meta['all_links'],
+            detail_link=response.url
         )
         item['article_content'] = response.xpath('//div[@class="ecl-paragraph"]').get()
         item['detail_title'] = response.xpath(
