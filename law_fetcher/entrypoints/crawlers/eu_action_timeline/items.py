@@ -13,6 +13,7 @@ class EuActionTimelineItem(scrapy.Item):
     detail_title = scrapy.Field()
     detail_link = scrapy.Field()
     detail_content = scrapy.Field()
+    detail_metadata = scrapy.Field()
     excerpt = scrapy.Field()
     presscorner_links = scrapy.Field()
     pdf_links = scrapy.Field()
