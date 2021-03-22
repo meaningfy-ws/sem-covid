@@ -17,17 +17,19 @@ Features:
 - easy tracking using MlFlow
 - support injection of external dependencies (Airflow, MlFlow, S3 etc.)
 """
-
+import logging
 from abc import ABC, abstractmethod
-from datetime import date
+from datetime import datetime
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
+logger = logging.getLogger(__name__)
+
 DEFAULTS_DAG_ARGS = {
     'owner': 'Meaningfy',
     'schedule_interval': '@once',
-    "start_date": date.today(),
+    "start_date": datetime.now(),
     'max_active_runs': 1,
     'concurrency': 1,
     "retries": 0,
@@ -113,20 +115,18 @@ class BaseExperiment(ABC):
             Create a standard ML DAG for the current experiment.
         :return:
         """
-
-        dag_args['default_args'] = DEFAULTS_DAG_ARGS.copy().update(dag_args.get('default_args', {}))
+        updated_default_args_copy = {**DEFAULTS_DAG_ARGS.copy(), **dag_args.get('default_args', {})}
+        dag_args['default_args'] = updated_default_args_copy
         dag_id = f"mlx_{self.__class__.__name__}_{self.version if self.version else '0.0.1'}"
         print(dag_id)
         dag = DAG(dag_id=dag_id, **dag_args)
-        # instantiate a PythonOperator for each ml stage
-        with dag as dag:
+        with dag:
+            # instantiate a PythonOperator for each ml stage
             stage_python_operators = [PythonOperator(task_id=f"{stage.__name__}_step",
                                                      python_callable=stage,
-                                                     provide_context=True,
                                                      dag=dag)
                                       for stage in self.ml_stages]
             # iterate stages in successive pairs and connect them
             for stage, successor_stage in zip(stage_python_operators, stage_python_operators[1:]):
                 stage >> successor_stage
-
         return dag
