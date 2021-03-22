@@ -17,16 +17,37 @@ Features:
 - easy tracking using MlFlow
 - support injection of external dependencies (Airflow, MlFlow, S3 etc.)
 """
+
 from abc import ABC, abstractmethod
+from datetime import date
+
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+
+DEFAULTS_DAG_ARGS = {
+    'owner': 'Meaningfy',
+    'schedule_interval': '@once',
+    "start_date": date.today(),
+    'max_active_runs': 1,
+    'concurrency': 1,
+    "retries": 0,
+    'depends_on_past': False,
+}
 
 
-class BaseExperiment(object, ABC):
+class BaseExperiment(ABC):
     """
      The base experiment class from which all experiments shall be derived.
     """
 
+    def __init__(self, version: str = "0.0.1"):
+        self.version = version
+        self.ml_stages = [self.data_extraction, self.data_validation,
+                          self.data_preparation, self.model_training,
+                          self.model_evaluation, self.model_validation]
+
     @abstractmethod
-    def data_extraction(self):
+    def data_extraction(self, *args, **kwargs):
         """
             Select and integrate the relevant data from various data sources for the ML experiment.
             Outcome: data available for processing.
@@ -34,7 +55,7 @@ class BaseExperiment(object, ABC):
         """
 
     @abstractmethod
-    def data_validation(self):
+    def data_validation(self, *args, **kwargs):
         """
             Decide automatically if to (re)train the model or stop the execution of the pipeline.
             This decission is automatically done based on the following criteria:
@@ -49,7 +70,7 @@ class BaseExperiment(object, ABC):
         """
 
     @abstractmethod
-    def data_preparation(self):
+    def data_preparation(self, *args, **kwargs):
         """
             Prepare the data for the ML task,
             including cleaning, transformation, feature engineering and split into training, test and validation sets.
@@ -60,7 +81,7 @@ class BaseExperiment(object, ABC):
         """
 
     @abstractmethod
-    def model_training(self):
+    def model_training(self, *args, **kwargs):
         """
             Implement different ML algorithms to train one or multiple models,
             including hyperparameter tuning to get best performing model.
@@ -69,7 +90,7 @@ class BaseExperiment(object, ABC):
         """
 
     @abstractmethod
-    def model_evaluation(self):
+    def model_evaluation(self, *args, **kwargs):
         """
             Evaluate the model on a (holdout) test set to measure the model quality in terms of preselected metrics.
             Outcome: metrics available to asses the model quality.
@@ -77,7 +98,7 @@ class BaseExperiment(object, ABC):
         """
 
     @abstractmethod
-    def model_validation(self):
+    def model_validation(self, *args, **kwargs):
         """
             Confirm that the model is adequate for deployment based on a given baseline and store the model in a ML
             metadata repository.
@@ -87,18 +108,25 @@ class BaseExperiment(object, ABC):
         :return:
         """
 
-    def create_dag(self, default_dag_args: dict = None):
+    def create_dag(self, **dag_args):
         """
             Create a standard ML DAG for the current experiment.
         :return:
         """
 
-    def build_default_args(self, kwargs):
-        fixed_defaults_args = {
-            'owner': 'Meaningfy',
-            'schedule_interval': '@once',
-            'max_active_runs': 1,
-            'concurrency': 1,
-            "retries": 0,
-            'depends_on_past': False,
-        }
+        dag_args['default_args'] = DEFAULTS_DAG_ARGS.copy().update(dag_args.get('default_args', {}))
+        dag_id = f"mlx_{self.__class__.__name__}_{self.version if self.version else '0.0.1'}"
+        print(dag_id)
+        dag = DAG(dag_id=dag_id, **dag_args)
+        # instantiate a PythonOperator for each ml stage
+        with dag as dag:
+            stage_python_operators = [PythonOperator(task_id=f"{stage.__name__}_step",
+                                                     python_callable=stage,
+                                                     provide_context=True,
+                                                     dag=dag)
+                                      for stage in self.ml_stages]
+            # iterate stages in successive pairs and connect them
+            for stage, successor_stage in zip(stage_python_operators, stage_python_operators[1:]):
+                stage >> successor_stage
+
+        return dag
