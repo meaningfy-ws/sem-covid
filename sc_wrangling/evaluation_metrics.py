@@ -5,24 +5,25 @@ from sklearn.metrics import (f1_score, precision_score, accuracy_score,
                              recall_score, mean_squared_error, mean_absolute_error)
 
 
-def model_evaluation_metrics(actual: Series, prediction: ndarray):
+def model_evaluation_metrics(actual_data: Series, predicted_data: ndarray):
     """
-    assuming we have actual test and predicted labels
-    and we want to see the evaluation score of those 2 labels
-    :actual: the real test label
-    :prediction: predicted label
-    :label: column title of the DataFrame
+        assuming we have actual test and predicted labels
+        and we want to see the evaluation score of those 2 labels
+        :actual_data: the real test label
+        :predicted_data: predicted label
+        :return: the evaluation metrics result in dictionary form
     """
-    accuracy = accuracy_score(actual, prediction)
-    precision = precision_score(actual, prediction, average="macro")
-    recall = recall_score(actual, prediction, average="macro")
-    f1 = f1_score(actual, prediction, average="macro")
-    mae = mean_absolute_error(actual, prediction)
-    mse = mean_squared_error(actual, prediction)
+    accuracy = accuracy_score(actual_data, predicted_data)
+    precision = precision_score(actual_data, predicted_data, average="macro")
+    recall = recall_score(actual_data, predicted_data, average="macro")
+    f1 = f1_score(actual_data, predicted_data, average="macro")
+    mae = mean_absolute_error(actual_data, predicted_data)
+    mse = mean_squared_error(actual_data, predicted_data)
 
-    evaluate_metrics = pd.DataFrame({'Metric Labels': ['Accuracy', 'Precision', 'Recall',
-                                                       'F1-Score', 'Mean Absolute Error',
-                                                       'Mean Squared Error'],
-                                     "Metric values": [accuracy, precision, recall, f1, mae, mse]})
+    metric_lables = ['Accuracy', 'Precision', 'Recall',
+                     'F1-Score', 'Mean Absolute Error',
+                     'Mean Squared Error']
 
-    return evaluate_metrics
+    metric_values = [accuracy, precision, recall, f1, mae, mse]
+
+    return {key: values for key, values in zip(metric_lables, metric_values)}
