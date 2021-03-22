@@ -27,16 +27,10 @@ class EUTimelineSpider(scrapy.Spider):
         self.logger.info(f'Uploaded {uploaded_bytes}')
 
     def parse_main_page(self, response):
-        # months = response.xpath('//div[@class="field field-name-field-core-introduction field--wysiwyg field--field-core-introduction"]/div/h2/text()')
-        #
-        # timeline_blocks = response.xpath('//div[@class="timeline timeline-processed"]')
-        # names = [month.get() for month in months]
-        # self.logger.error(timeline_blocks.get())
-
         timeline_data = response.xpath(
             '//div[@class="field field-name-field-core-timelines field--field-core-timelines"]/div["field__items"]/*[ @class !="clearfix"]')
         month_name = ''
-        for index, block in enumerate(timeline_data[:4]):
+        for index, block in enumerate(timeline_data):
             if not index % 2:
                 self.logger.info(f'Processing data for {month_name}.')
                 month_name = block.xpath('*/h2/text()').get()

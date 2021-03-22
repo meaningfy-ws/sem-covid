@@ -15,7 +15,7 @@ from law_fetcher.adapters.minio_adapter import MinioAdapter
 from law_fetcher.entrypoints.crawlers.eu_action_timeline.spiders.eu_timeline_spider import EUTimelineSpider
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.0.15'
+VERSION = '0.1.0'
 
 APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
 ELASTICSEARCH_INDEX_NAME: str = Variable.get('EU_ACTION_TIMELINE_ELASTIC_SEARCH_INDEX_NAME')
