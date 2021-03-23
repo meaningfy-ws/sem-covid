@@ -1,7 +1,7 @@
 from pandas import DataFrame
 
 
-def replace_values_with_numbers(data_frame: DataFrame, column: str):
+def convert_column_values_into_numbers(data_frame: DataFrame, column: str):
     """
         assuming we have column's values in DataFrame we want to
         transform in numbers
