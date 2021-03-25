@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% set active_page = "index" %}
+
+{% block app_content %}
+    <h1 id="title">{{ title }}</h1>
+    <div class="row z-depth-3">
+        <div class="col s3">
+            <form id="search-form" class="form" method="POST" role="form"
+                  action="">
+
+                {{ form.csrf_token }}
+                {{ macros.render_select_field(form.topic) }}
+                {{ macros.render_select_field(form.stage) }}
+                {{ macros.render_select_field(form.act_type) }}
+
+                <div class="row">
+                    <div class="col left-align">
+                        <div class="row">
+                            <button type="submit" id="submit" class="btn blue darken-2">Search<i
+                                    class="material-icons right">check</i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <a href="{{ url_for('index') }}" id="reload" class="btn btn-file red darken-2">Reset form<i
+                                    class="material-icons right">clear</i></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+{% endblock %}

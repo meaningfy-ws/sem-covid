@@ -1,0 +1,6 @@
+requests
+elasticsearch
+
+Flask  # https://flask.palletsprojects.com/en/1.1.x/e
+Flask-Wtf  # https://flask-wtf.readthedocs.io/en/stable/
+gunicorn  # https://gunicorn.org/
