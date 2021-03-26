@@ -1,3 +1,5 @@
+from json import dumps
+
 import scrapy
 from scrapy_splash import SplashRequest
 
@@ -8,26 +10,33 @@ class EUTimelineSpider(scrapy.Spider):
     name = 'eu-timeline'
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
     presscorner_base_url = 'https://ec.europa.eu/commission/presscorner/detail'
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
-    }
+
+    def __init__(self, filename, *args, storage_adapter=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.storage_adapter = storage_adapter
+        self.filename = filename
+        self.data = list()
+        self.logger.debug(self.storage_adapter)
 
     def start_requests(self):
-        yield scrapy.Request(url=self.url, callback=self.parse_main_page, headers=self.headers)
+        yield scrapy.Request(url=self.url, callback=self.parse_main_page)
+
+    def closed(self, reason):
+        self.logger.info(self.data)
+        uploaded_bytes = self.storage_adapter.put_object(self.filename, dumps(self.data).encode('utf-8'))
+        self.logger.info(f'Uploaded {uploaded_bytes}')
 
     def parse_main_page(self, response):
-        data = {}
         timeline_data = response.xpath(
             '//div[@class="field field-name-field-core-timelines field--field-core-timelines"]/div["field__items"]/*[ @class !="clearfix"]')
         month_name = ''
         for index, block in enumerate(timeline_data):
             if not index % 2:
                 self.logger.info(f'Processing data for {month_name}.')
-
-                month_name = block.xpath('*//h2/text()').get()
+                month_name = block.xpath('*/h2/text()').get()
 
             else:
-                month_timeline = block.xpath('*//li')
+                month_timeline = block.xpath('*//li[@class="timeline__list__item"]')
                 for month in month_timeline:
                     date = month.xpath('*[@class="timeline__list__item__title"]/text()').get()
                     title = month.xpath('*//h4//text()').get()
@@ -44,12 +53,13 @@ class EUTimelineSpider(scrapy.Spider):
                     meta['all_links'] = [link.attrib['href'] for link in month.xpath('*//p//a')]
                     if presscorner_links:
                         for presscorner_link in presscorner_links:
-                            self.logger.info(f'Processing data for this link: {presscorner_link}.')
+                            self.logger.info(f'Processing data for link: {presscorner_link}.')
                             yield SplashRequest(url=presscorner_link, callback=self.parse_presscorner_page,
-                                                args={'wait': 5 },
+                                                args={'wait': 5},
+                                                dont_filter=True,
                                                 meta=meta)
                     else:
-                        yield EuActionTimelineItem(**meta)
+                        self.data.append(meta)
 
     def parse_presscorner_page(self, response):
         meta = response.meta
@@ -59,9 +69,17 @@ class EUTimelineSpider(scrapy.Spider):
             title=meta['title'],
             excerpt=meta['excerpt'],
             presscorner_links=meta['presscorner_links'],
-            all_links=meta['all_links']
+            all_links=meta['all_links'],
+            detail_link=response.url
         )
-        item['article_content'] = response.xpath('//div[@class="ecl-paragraph"]').get()
+
+        metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
+        item['detail_metadata'] = {
+            'type': metadata[0].get(),
+            'date': metadata[1].get(),
+            'location': metadata[2].get()
+        }
+        item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]').get()
         item['detail_title'] = response.xpath(
             '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
 
@@ -82,4 +100,5 @@ class EUTimelineSpider(scrapy.Spider):
                 'email': press_contact.xpath('*//div/div[@class="ecl-field__body"]/a/text()').get()
             })
 
-        yield item
+        self.logger.info(f'Push data from: {response.url}.')
+        self.data.append(dict(item))
