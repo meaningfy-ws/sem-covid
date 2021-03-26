@@ -10,6 +10,8 @@
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html
 
 import base64
+from typing import List
+
 from elasticsearch import Elasticsearch
 
 
@@ -64,3 +66,50 @@ class ESAdapter:
             result = self._es.search(index=index_name, q=query, _source_excludes=["data"])
 
         return result
+
+    def get_aggregation(self, index_name: str, body: dict) -> dict:
+        result = self._es.search(index=index_name, body=body)
+        return result
+
+    @staticmethod
+    def extract_aggregation_tuples(aggregation: dict, aggregation_label: str) -> List[tuple]:
+        return [(concept['key'], concept['key']) for concept in
+                aggregation['aggregations'][aggregation_label]['buckets']]
+
+    @staticmethod
+    def build_query(query_match: List[tuple] = None, query_filter: List[tuple] = None, fields: list = None,
+                    offset=0):
+
+        """
+
+        :param query_match:
+        :param query_filter:
+        :param fields:
+        :return:
+        """
+        query = {
+            'query': {
+                'bool': {
+                    'should': [],
+                    'filter': []
+                }
+            },
+            "from": offset
+        }
+        if query_match:
+            for elastic_field, value in query_match:
+                if value:
+                    query['query']['bool']['should'].append({'match': {elastic_field: value}})
+            if query['query']['bool']['should']:
+                query['query']['bool']['minimum_should_match'] = 1
+
+        if query_filter:
+            for elastic_field, value in query_filter:
+                if value:
+                    query['query']['bool']['filter'].append({'term': {elastic_field: value}})
+
+        if fields:
+            query['fields'] = fields
+            query['_source'] = False
+
+        return query

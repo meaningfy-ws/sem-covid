@@ -1,6 +1,6 @@
 {% macro render_upload_input_field(field) %}
     <div class="row">
-        <div class="col s12">
+        <div class="col">
             {{ field.label }}
             <div class="file-field input-field">
                 <div class="btn blue lighten-1">
@@ -33,10 +33,11 @@
 
 {% macro render_text_input_field(field) %}
     <div class="row">
-        <div class="col s12">
+        <div class="col">
             <div class="input-field">
                 {{ field.label }}
                 {{ field(**kwargs)|safe }}
+                <span class="helper-text">{{ field.description }}</span>
 
                 {% if field.errors %}
 
@@ -52,7 +53,7 @@
 
 {% macro render_text_area_field(field) %}
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col">
             {{ field(class_='materialize-textarea')|safe }}
             {{ field.label }}
             <span class="helper-text">{{ field.description }}</span>
@@ -68,10 +69,10 @@
     </div>
 {% endmacro %}
 
-{% macro render_select_field(field) %}
+{% macro render_select_field(field, class='') %}
     <div class="row">
         <div class="input-field col">
-            {{ field() }}
+            {{ field(class=class) | safe }}
             <label>{{ field.label }}</label>
 
             <span class="helper-text">{{ field.description }}</span>
