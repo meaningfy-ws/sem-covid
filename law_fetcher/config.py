@@ -12,6 +12,7 @@ import logging
 import os
 from distutils.util import strtobool
 
+
 class LawFetcherConfig:
     logger_name = 'law-fetcher'
     logger = logging.getLogger(logger_name)
@@ -31,6 +32,12 @@ class LawFetcherConfig:
     @property
     def LAW_FETCHER_DEBUG(self) -> bool:
         value = strtobool(os.environ.get('LAW_FETCHER_DEBUG', 'true'))
+        self.logger.debug(value)
+        return value
+
+    @property
+    def PAGINATION_SIZE(self) -> int:
+        value = os.environ.get('PAGINATION_SIZE', 20)
         self.logger.debug(value)
         return value
 

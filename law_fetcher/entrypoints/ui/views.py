@@ -9,7 +9,6 @@
 UI pages
 """
 import logging
-from json import loads
 from math import ceil
 
 from flask import render_template, request
@@ -22,12 +21,6 @@ from law_fetcher.entrypoints.ui.forms import SearchForm
 logger = logging.getLogger(config.LAW_FETCHER_LOGGER)
 
 DEFAULT_CHOICE = [('', 'All')]
-PAGINATION_SIZE = 10
-
-
-def get_error_message_from_response(response):
-    return f'Status: {loads(response).get("status")}. Title: {loads(response).get("title")}' \
-           f' Detail: {loads(response).get("detail")}'
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -81,13 +74,21 @@ def index():
         body = es_adapter.build_query(query_match, query_filter, fields)
         result = es_adapter._es.search(index='legal-initiatives-index', body=body)
         result_count = result['hits']['total']['value']
-        pages = ceil(result_count / PAGINATION_SIZE)
+        pages = ceil(result_count / config.PAGINATION_SIZE)
         return render_template('index.html', title='Law Fetcher index page', form=form, data=result['hits']['hits'],
                                count=result_count, current_page=1, pages=pages)
 
-    body = es_adapter.build_query(query_match, query_filter, fields, (page - 1) * 10)
+    body = es_adapter.build_query(query_match, query_filter, fields, (page - 1) * config.PAGINATION_SIZE)
     result = es_adapter._es.search(index='legal-initiatives-index', body=body)
     result_count = result['hits']['total']['value']
-    pages = ceil(result_count / PAGINATION_SIZE)
+    pages = ceil(result_count / config.PAGINATION_SIZE)
     return render_template('index.html', title='Law Fetcher index page', form=form, data=result['hits']['hits'],
                            count=result_count, current_page=page, pages=pages)
+
+
+@app.route('/legal-initiatives/<id>', methods=['GET'])
+def legal_initiatives_detail(id):
+    es_adapter = ESAdapter('http', 'elasticsearch', 9200, 'elastic', 'changeme')
+    document = es_adapter.get_document('legal-initiatives-index', id)
+
+    return render_template('legal_initiatives/detail.html', title='Legal Initiatives Document', document=document['_source'])
