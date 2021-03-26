@@ -41,6 +41,17 @@ class LawFetcherConfig:
         self.logger.debug(value)
         return value
 
+    @property
+    def ELASTICSEARCH_DETAILS(self) -> dict:
+        value = {
+            'protocol': os.environ.get('ELASTICSEARCH_PROTOCOL', 'http'),
+            'hostname': os.environ.get('ELASTICSEARCH_HOST_NAME', 'elasticsearch'),
+            'port': int(os.environ.get('ELASTICSEARCH_HOST_PORT', '9200')),
+            'user': os.environ.get('ELASTICSEARCH_USERNAME'),
+            'password': os.environ.get('ELASTICSEARCH_PASSWORD')
+        }
+        self.logger.debug(value)
+        return value
 
 config = LawFetcherConfig()
 

@@ -30,7 +30,7 @@ def index():
     topic = request.args.get('topic', None)
     document_category = request.args.get('document_category', None)
 
-    es_adapter = ESAdapter('http', 'elasticsearch', 9200, 'elastic', 'changeme')
+    es_adapter = ESAdapter(**config.ELASTICSEARCH_DETAILS)
     form = SearchForm()
 
     query = {
@@ -43,7 +43,6 @@ def index():
     }
     concepts = es_adapter.get_aggregation(index_name='legal-initiatives-index', body=query)
     concept_choices = es_adapter.extract_aggregation_tuples(concepts, 'eurovoc_concept_labels')
-
     form.topic.choices = DEFAULT_CHOICE + concept_choices
 
     query = {
@@ -57,7 +56,6 @@ def index():
 
     resource_types = es_adapter.get_aggregation(index_name='legal-initiatives-index', body=query)
     resource_choices = es_adapter.extract_aggregation_tuples(resource_types, 'resource_type_labels')
-
     form.document_category.choices = DEFAULT_CHOICE + resource_choices
 
     if not (form.validate_on_submit()) and (keywords or topic or document_category):
@@ -88,7 +86,8 @@ def index():
 
 @app.route('/legal-initiatives/<id>', methods=['GET'])
 def legal_initiatives_detail(id):
-    es_adapter = ESAdapter('http', 'elasticsearch', 9200, 'elastic', 'changeme')
+    es_adapter = ESAdapter(**config.ELASTICSEARCH_DETAILS)
     document = es_adapter.get_document('legal-initiatives-index', id)
 
-    return render_template('legal_initiatives/detail.html', title='Legal Initiatives Document', document=document['_source'])
+    return render_template('legal_initiatives/detail.html', title='Legal Initiatives Document',
+                           document=document['_source'])
