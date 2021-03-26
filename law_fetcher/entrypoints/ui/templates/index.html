@@ -37,21 +37,23 @@
         <div class="col s9">
             {% if data %}
                 {% for d in data %}
-                    <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
-                            <h5>Title: {{ d.fields.title[0] }}</h5>
-                            <p>Topic:
-                                {% for topic in d.fields.eurovoc_concept_labels %}
-                                    {{ topic }}
-                                {% endfor %}
-                            </p>
-                            <p>Document Category:
-                                {% for category in d.fields.resource_type_labels %}
-                                    {{ category }}
-                                {% endfor %}
-                            </p>
+                    <a href="{{ url_for('legal_initiatives_detail', id=d._id) }}">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <h5>Title: {{ d.fields.title[0] }}</h5>
+                                <p>Topic:
+                                    {% for topic in d.fields.eurovoc_concept_labels %}
+                                        {{ topic }}
+                                    {% endfor %}
+                                </p>
+                                <p>Document Category:
+                                    {% for category in d.fields.resource_type_labels %}
+                                        {{ category }}
+                                    {% endfor %}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 {% endfor %}
                 <ul class="pagination">
                     <li class="{{ 'disabled' if current_page==1 else 'waves-effect' }}"><a
@@ -66,7 +68,8 @@
                         </a></li>
                     {% endfor %}
                     <li class="{{ 'disabled' if current_page==pages else 'waves-effect' }}"><a
-                            href="{{ url_for('index', page=current_page+1, keywords=form.keywords.data, topic=form.topic.data, document_category=form.document_category.data ) }}"><i
+                            href="
+                                    {{ url_for('index', page=current_page+1, keywords=form.keywords.data, topic=form.topic.data, document_category=form.document_category.data ) }}"><i
                             class="material-icons">chevron_right</i></a></li>
                 </ul>
             {% endif %}

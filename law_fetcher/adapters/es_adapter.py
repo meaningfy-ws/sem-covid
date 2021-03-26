@@ -14,6 +14,8 @@ from typing import List
 
 from elasticsearch import Elasticsearch
 
+from law_fetcher.config import config
+
 
 class ESAdapter:
     def __init__(self, protocol: str, hostname: str, port: int, user: str, password: str):
@@ -67,6 +69,9 @@ class ESAdapter:
 
         return result
 
+    def get_document(self, index_name: str, id: str):
+        return self._es.get(index=index_name, id=id)
+
     def get_aggregation(self, index_name: str, body: dict) -> dict:
         result = self._es.search(index=index_name, body=body)
         return result
@@ -94,7 +99,8 @@ class ESAdapter:
                     'filter': []
                 }
             },
-            "from": offset
+            "from": offset,
+            "size": config.PAGINATION_SIZE
         }
         if query_match:
             for elastic_field, value in query_match:
