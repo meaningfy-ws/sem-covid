@@ -5,3 +5,20 @@ services:
     image: scrapinghub/splash
     ports:
       - ${SPLASH_EXTERNAL_PORT}:8050
+
+  law-fetcher-ui:
+    container_name: law-fetcher-ui
+    build:
+      context: ..
+      dockerfile: ./docker/ui/Dockerfile
+    volumes:
+      - ..:/usr/src/app
+    ports:
+      - ${LAW_FETCHER_UI_PORT}:${LAW_FETCHER_UI_PORT}
+    env_file: .env
+    networks:
+      - mydefault
+
+networks:
+  mydefault:
+    name: globalnet
