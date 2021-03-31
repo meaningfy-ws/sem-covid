@@ -1,10 +1,10 @@
-BOT_NAME = 'eu_action_timeline'
+BOT_NAME = 'scrapy_crawlers'
 
-SPIDER_MODULES = ['eu_action_timeline.spiders']
-NEWSPIDER_MODULE = 'eu_action_timeline.spiders'
+SPIDER_MODULES = ['scrapy_crawlers.spiders']
+NEWSPIDER_MODULE = 'scrapy_crawlers.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'eu_action_timeline (+http://www.yourdomain.com)'
+# USER_AGENT = 'scrapy_crawlers (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -13,7 +13,7 @@ DEFAULT_REQUEST_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
 }
 
-SPLASH_URL = 'http://srv.meaningfy.ws:5080'
+SPLASH_URL = 'http://localhost:5080'
 
 SPIDER_MIDDLEWARES = {
     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
