@@ -16,11 +16,11 @@ install-scrapy-dependencies:
 
 start-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file eu_action_timeline/docker-compose.yml --env-file .env up -d splash
+	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
 
 stop-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file eu_action_timeline/docker-compose.yml --env-file .env stop splash
+	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
 
 create-indexes:
 	@ echo "$(BUILD_PRINT)Creating indexes and their respective mappings"
