@@ -10,9 +10,9 @@ from elasticsearch.client import Elasticsearch
 from scrapy.crawler import CrawlerProcess
 from tika import parser
 
-import law_fetcher.entrypoints.crawlers.eu_action_timeline.settings as crawler_config
+import law_fetcher.entrypoints.crawlers.scrapy_crawlers.settings as crawler_config
 from law_fetcher.adapters.minio_adapter import MinioAdapter
-from law_fetcher.entrypoints.crawlers.eu_action_timeline.spiders.eu_timeline_spider import EUTimelineSpider
+from law_fetcher.entrypoints.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
 
 logger = logging.getLogger('lam-fetcher')
 VERSION = '0.1.0'
