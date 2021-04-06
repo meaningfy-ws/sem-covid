@@ -7,7 +7,7 @@ from pandas import DataFrame
 from ml_experiments.adapters.minio_adapter import MinioAdapter
 
 
-class MinioTestFileCreation(MinioAdapter):
+class MinioFakeConnection(MinioAdapter):
     def get_test_dataframe_from_minio(self) -> DataFrame:
         test_dataframe = self.create_test_dataframe()
         pickle_test_dataframe = dumps(test_dataframe)
