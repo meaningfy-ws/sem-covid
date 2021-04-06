@@ -48,6 +48,12 @@ class MLExperimentsConfig:
         return value
 
     @property
+    def ML_EXPERIMENTS_TEST_BUCKET_NAME(self) -> str:
+        value = os.environ.get('ML_EXPERIMENTS_TEST_BUCKET_NAME')
+        self.logger.debug(value)
+        return value
+
+    @property
     def SC_PWDB_JSON(self) -> str:
         value = os.environ.get('SC_PWDB_JSON')
         self.logger.debug(value)
@@ -72,8 +78,8 @@ class MLExperimentsConfig:
         return value
 
     @property
-    def PWDB_LAW2VEC_MODEL(self) -> str:
-        value = os.environ.get('PWDB_LAW2VEC_MODEL')
+    def LAW2VEC_MODEL(self) -> str:
+        value = os.environ.get('LAW2VEC_MODEL')
         self.logger.debug(value)
         return value
 
