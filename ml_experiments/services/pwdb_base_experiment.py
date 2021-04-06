@@ -103,8 +103,9 @@ class PWDBBaseExperiment(BaseExperiment):
 
         pwdb_dataframe = pickle.loads(self.minio_adapter.get_object(config.SC_PWDB_DATA_FRAME))
         pwdb_dataframe_columns = self.prepare_pwdb_data(pwdb_dataframe)
-        pwdb_word2vec_model = self.train_pwdb_word2vec_language_model(pwdb_dataframe_columns)
-        pwdb_train_test_data = self.train_pwdb_data(pwdb_dataframe_columns)
+        pwdb_target_groups_refactor = self.target_group_refactoring(pwdb_dataframe_columns)
+        pwdb_word2vec_model = self.train_pwdb_word2vec_language_model(pwdb_target_groups_refactor)
+        pwdb_train_test_data = self.train_pwdb_data(pwdb_target_groups_refactor)
         pwdb_word2vec_pickle = pickle.dumps(pwdb_word2vec_model)
         pwdb_train_test_pickle = pickle.dumps(pwdb_train_test_data)
         self.minio_adapter.put_object("train_test_split.pkl", pwdb_train_test_pickle)
@@ -194,5 +195,3 @@ class PWDBBaseExperiment(BaseExperiment):
         train_test_dict = {"X_train": x_train, "X_test": x_test, "y_train": y_train, "y_test": y_test}
 
         return train_test_dict
-
-
