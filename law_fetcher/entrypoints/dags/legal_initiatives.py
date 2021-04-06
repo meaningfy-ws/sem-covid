@@ -403,7 +403,7 @@ def extract_document_content_with_tika():
             except Exception as e:
                 logger.exception(e)
         if valid_sources:
-            manifestation = item.get('manifs_html', [None])[0] or item.get('manifs_pdf', [None])[0]
+            manifestation = (item.get('manifs_html') or item.get('manifs_pdf'))[0]
             filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
