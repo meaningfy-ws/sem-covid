@@ -48,33 +48,3 @@ class TestPreparationPWDBData(unittest.TestCase):
 
     def test_target_groups_serial_equals_of_expected_and_test_dataframe(self):
         assert_series_equal(self.EXPECTED_DATAFRAME['Target groups'], self.PWDB_PREPARE_FUNCTION['Target groups'])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
