@@ -10,23 +10,22 @@
     The common part to all ML experiments is tha data loading, extraction and preparation.
 """
 
+import json
 import logging
 import pickle
 from abc import ABC
-from json import loads, dumps
 
-from jq import compile
+import jq
 import pandas as pd
-from pandas import DataFrame
 from gensim.models import Word2Vec
-from sklearn.model_selection import train_test_split
+from sklearn import model_selection
 
 from ml_experiments.config import config
-from ml_experiments.services.sc_wrangling.pwdb_transformer import get_transformation_rules
-from ml_experiments.services.sc_wrangling.feature_selector import reduce_array_column
-from ml_experiments.services.sc_wrangling.data_cleaning import prepare_text_for_cleaning
-from ml_experiments.services.sc_wrangling.value_replacement import MultiColumnLabelEncoder
 from ml_experiments.services.base_experiment import BaseExperiment
+from ml_experiments.services.sc_wrangling import data_cleaning
+from ml_experiments.services.sc_wrangling import feature_selector
+from ml_experiments.services.sc_wrangling import pwdb_transformer
+from ml_experiments.services.sc_wrangling import value_replacement
 
 logger = logging.getLogger(__name__)
 
@@ -87,12 +86,12 @@ class PWDBBaseExperiment(BaseExperiment):
         raw_pwdb_dataset = self.requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
         raw_pwdb_dataset.raise_for_status()
         self.minio_adapter.empty_bucket()
-        pwdb_json_dataset = compile(get_transformation_rules(PWDB_REFACTORING_RULES)) \
-            .input(loads(raw_pwdb_dataset.content)).all()
-        self.minio_adapter.put_object(config.SC_PWDB_JSON, dumps(pwdb_json_dataset).encode('utf-8'))
-        pwdb_dataframe = pd.DataFrame.from_records(pwdb_json_dataset)
-        pickle_pwdb_dataframe = pickle.dumps(pwdb_dataframe)
-        self.minio_adapter.put_object("pwdb_dataframe.pkl", pickle_pwdb_dataframe)
+        pwdb_json_dataset = pwdb_transformer.transform_pwdb(json.loads(raw_pwdb_dataset.content))
+        self.minio_adapter.put_object(config.SC_PWDB_JSON, json.dumps(pwdb_json_dataset).encode('utf-8'))
+
+        # pwdb_dataframe = pd.DataFrame.from_records(pwdb_json_dataset)
+        # pickle_pwdb_dataframe = json.dumps(pwdb_dataframe)
+        # self.minio_adapter.put_object("pwdb_dataframe.json", pickle_pwdb_dataframe)
 
     def data_validation(self, *args, **kwargs):
         # TODO: implement me by validating the returned index structure for a start,
