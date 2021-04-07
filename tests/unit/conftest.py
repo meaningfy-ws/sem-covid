@@ -10,7 +10,6 @@ from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from ml_experiments.services.sc_wrangling.pwdb_transformer import transform_pwdb
 
 
-@pytest.fixture(scope="session")
 def raw_pwdb_data():
     raw_sample = [{
         "fieldData": {
@@ -171,17 +170,23 @@ def raw_pwdb_data():
     return raw_sample
 
 
-class FakeRequest(object):
+@pytest.fixture(scope="session", name="raw_pwdb_data")
+def raw_pwdb_data_fixture():
+    return raw_pwdb_data()
 
-    def get(self, *args, **kwargs):
-        pass
 
+class FakeResult(object):
     def raise_for_status(self, *args, **kwargs):
         pass
 
     @property
-    def content(self):
-        return raw_pwdb_data()
+    def content(self) -> str:
+        return json.dumps(raw_pwdb_data())
+
+
+class FakeRequest(object):
+    def get(self, *args, **kwargs):
+        return FakeResult()
 
 
 class FakeMinioAdapter(object):
@@ -214,12 +219,16 @@ class ForTestingBasePWDBExperiment(PWDBBaseExperiment):
 
 @pytest.fixture(scope="session")
 def base_experiment():
-    return ForTestingBasePWDBExperiment(FakeMinioAdapter(), FakeRequest())
+    return ForTestingBasePWDBExperiment(minio_adapter=FakeMinioAdapter(), requests=FakeRequest())
 
 
-@pytest.fixture(scope="session")
 def transformed_pwdb_json():
     return transform_pwdb(raw_pwdb_data())
+
+
+@pytest.fixture(scope="session", name="transformed_pwdb_json")
+def transformed_pwdb_json_fixture():
+    return transformed_pwdb_json()
 
 
 @pytest.fixture(scope="session")
