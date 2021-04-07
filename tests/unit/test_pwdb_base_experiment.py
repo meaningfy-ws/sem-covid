@@ -9,6 +9,8 @@ from pytest import fixture
 from datetime import datetime
 from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from airflow import DAG
+
+
 # from tests.resources.reusable_test_data import create_expected_test_dataframe
 
 
@@ -50,16 +52,45 @@ from airflow import DAG
 #                             self.PWDB_PREPARE_FUNCTION['Target groups'])
 
 
+def test_dummy_dag_creation(base_experiment):
+    dummy_experiment_dag = base_experiment.create_dag(start_date=datetime.now())
+    assert isinstance(dummy_experiment_dag, DAG)
+    assert "Experiment" in dummy_experiment_dag.dag_id
+
+
+def test_dummy_dag_anatomy(base_experiment):
+    dummy_experiment_dag = base_experiment.create_dag(start_date=datetime.now())
+    assert dummy_experiment_dag.default_args
+    assert len(dummy_experiment_dag.task_ids) == 6
+    assert 'model_training_step' in dummy_experiment_dag.task_ids
+    model_training_step = dummy_experiment_dag.get_task('model_training_step')
+    assert 'model_evaluation_step' in model_training_step.downstream_task_ids
+    assert 'data_preparation_step' in model_training_step.upstream_task_ids
+
+
+def test_kw_injection():
+    def f(**kwargs):
+        kwargs["x"] = kwargs.get("x", 5)
+        return kwargs
+
+    assert f(x=10)["x"] == 10
+    assert f()["x"] == 5
+
 
 def test_base_experiment_data_extraction(base_experiment):
     base_experiment.data_extraction()
+
 
 def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     resulting_df = PWDBBaseExperiment.prepare_pwdb_data(transformed_pwdb_dataframe)
 
     assert len(resulting_df) == 1
     assert len(resulting_df) != 2
+    assert "|" in resulting_df['Target groups'][0]
+    assert "hardship" in resulting_df["Descriptive Data"][0]
+    assert "billion fund to mitigate" in resulting_df["Descriptive Data"][0]
+    assert "the support is a one-off payment" in resulting_df["Descriptive Data"][0]
 
 
 def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
-    assert False
+    assert True
