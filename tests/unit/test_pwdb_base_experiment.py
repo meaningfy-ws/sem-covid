@@ -3,10 +3,13 @@ import unittest
 from pandas import DataFrame
 from pandas.testing import assert_frame_equal, assert_series_equal
 
-from ml_experiments.config import config
-from tests.resources.minio_connection import MinioFakeConnection
+# from ml_experiments.config import config
+# from tests.resources.minio_connection import MinioFakeConnection
+from pytest import fixture
+from datetime import datetime
 from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
-from tests.resources.reusable_test_data import create_expected_test_dataframe
+from airflow import DAG
+# from tests.resources.reusable_test_data import create_expected_test_dataframe
 
 
 # minio = MinioFakeConnection(config.MINIO_URL, config.MINIO_ACCESS_KEY,
@@ -45,6 +48,31 @@ from tests.resources.reusable_test_data import create_expected_test_dataframe
 #     def test_target_groups_serial_equals_of_expected_and_test_dataframe(self):
 #         assert_series_equal(create_expected_test_dataframe()['Target groups'],
 #                             self.PWDB_PREPARE_FUNCTION['Target groups'])
+
+
+def test_dummy_dag_creation(base_experiment):
+    dummy_experiment_dag = base_experiment.create_dag(start_date=datetime.now())
+    assert isinstance(dummy_experiment_dag, DAG)
+    assert "DummyExperiment" in dummy_experiment_dag.dag_id
+
+
+def test_dummy_dag_anatomy(base_experiment):
+    dummy_experiment_dag = base_experiment.create_dag(start_date=datetime.now())
+    assert dummy_experiment_dag.default_args
+    assert len(dummy_experiment_dag.task_ids) == 6
+    assert 'model_training_step' in dummy_experiment_dag.task_ids
+    model_training_step = dummy_experiment_dag.get_task('model_training_step')
+    assert 'model_evaluation_step' in model_training_step.downstream_task_ids
+    assert 'data_preparation_step' in model_training_step.upstream_task_ids
+
+
+def test_kw_injection():
+    def f(**kwargs):
+        kwargs["x"] = kwargs.get("x", 5)
+        return kwargs
+
+    assert f(x=10)["x"] == 10
+    assert f()["x"] == 5
 
 
 def test_base_experiment_data_extraction(base_experiment):
