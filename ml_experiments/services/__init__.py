@@ -2,7 +2,7 @@
 
 # __init__.py
 # Date:  18/03/2021
-# Author: Eugeniu Costetchi
-# Email: costezki.eugen@gmail.com 
+# Author: Dan Chiriac
+# Email: dan.chiriac1453@gmail.com
 
 """ """
