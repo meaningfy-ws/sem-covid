@@ -1,6 +1,7 @@
 # Testing Dependencies
 pytest
 coverage
+pytest-mock
 pytest-cov
 pytest-bdd
 
