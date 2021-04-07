@@ -1,3 +1,4 @@
+import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
@@ -6,6 +7,7 @@ class MultiColumnLabelEncoder:
     """Encode multiple columns for a DataFrame"""
     def __init__(self, columns: list = None):
         self.columns = columns
+        warnings.warn("Please use a well established method from sklearn", DeprecationWarning)
 
     def fit(self, x, y=None):
         return self
