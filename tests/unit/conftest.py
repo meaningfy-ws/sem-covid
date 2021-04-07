@@ -192,10 +192,6 @@ class FakeMinioAdapter(object):
             :return: dict object
         """
 
-        # data_object = {'Title': ['title_one', 'title_two'], 'Background information': ['bi_one', 'bi_two'],
-        #                'Content of measure': ['cm_one', 'cm_two'], 'Category': ['cm_one', 'cm_two'],
-        #                'Subcategory': ['sub_one', 'sub_two'], 'Type of measure': ['tom_one', 'tom_two'],
-        #                'Target groups': [['tg_one', 'tg_two'], ['tg_one_first', 'tg_two_second']]}
         return bytes(json.dumps(raw_pwdb_data()), encoding="utf8")
 
     def empty_bucket(self):

@@ -13,7 +13,6 @@ import logging
 import pickle
 import tempfile
 
-
 from gensim.models import KeyedVectors
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.pipeline import Pipeline
@@ -21,23 +20,21 @@ from sklearn.svm import SVC, LinearSVC
 
 from ml_experiments.config import config
 from ml_experiments.adapters.minio_adapter import MinioAdapter
-from ml_experiments.services.base_experiment import BaseExperiment
-from ml_experiments.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectorizer
+from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from ml_experiments.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
+from ml_experiments.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectorizer
 
 logger = logging.getLogger(__name__)
 
 
-class SVMPWDBExperiment(BaseExperiment):
+class SVMPWDBExperiment(PWDBBaseExperiment):
+    """
+        This class implements the SVM ML experiments
+    """
 
-    def data_extraction(self, *args, **kwargs):
-        pass
-
-    def data_validation(self, *args, **kwargs):
-        pass
-
-    def data_preparation(self, *args, **kwargs):
-        pass
+    def __init__(self, minio_model_adapter, minio_adapter, requests, **kwargs):
+        super().__init__(minio_adapter, requests, None, **kwargs)
+        self.minio_model_adapter = minio_model_adapter
 
     def model_training(self, *args, **kwargs):
         train_test_dataset = pickle.loads(self.minio_adapter.get_object(config.PWDB_TRAIN_TEST))
