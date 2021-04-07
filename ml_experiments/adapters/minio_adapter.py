@@ -41,18 +41,18 @@ class MinioAdapter:
         for error in self.minio_client.remove_objects(self.minio_bucket, objects_to_delete):
             logger.error(f"Deletion error: {error}")
 
-    def get_object(self, object_name):
+    def get_object(self, object_name: str):
         with self.minio_client.get_object(self.minio_bucket, object_name) as response:
             return response.read()
 
-    def put_object(self, object_name, content):
+    def put_object(self, object_name: str, content) -> int:
         raw_content = io.BytesIO(content)
         raw_content_size = raw_content.getbuffer().nbytes
         self.minio_client.put_object(self.minio_bucket, object_name, raw_content, raw_content_size)
         return raw_content_size
 
-    def put_object_from_string(self, object_name, content_as_string: str):
+    def put_object_from_string(self, object_name: str, content_as_string: str):
         return self.put_object(object_name, bytes(content_as_string, encoding='utf8'))
 
-    def list_objects(self, object_prefix):
+    def list_objects(self, object_prefix: str):
         return self.minio_client.list_objects(self.minio_bucket, prefix=object_prefix)
