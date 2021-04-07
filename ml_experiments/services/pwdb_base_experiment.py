@@ -101,6 +101,8 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
                      labels that will be used into train-test part.
         """
         feature_selector.reduce_array_column(pwdb_dataframe, "Target groups")
+        # TODO: train test split with all cols
+        # TODO: use of measure, involvement social partener, title
         pwdb_dataframe_columns = pwdb_dataframe[['Title', 'Background information', 'Content of measure',
                                                  'Category', 'Subcategory', 'Type of measure', 'Target groups']]
 
