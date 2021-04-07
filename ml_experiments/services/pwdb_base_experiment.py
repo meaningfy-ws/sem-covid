@@ -85,6 +85,7 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         pwdb_train_test_pickle = pickle.dumps(pwdb_train_test_data)
         self.minio_adapter.put_object("train_test_split.pkl", pwdb_train_test_pickle)
 
+
     @staticmethod
     def prepare_pwdb_data(pwdb_dataframe: pd.DataFrame) -> pd.DataFrame:
         """
