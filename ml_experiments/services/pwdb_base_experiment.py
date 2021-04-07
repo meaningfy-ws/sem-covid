@@ -15,7 +15,6 @@ import logging
 import pickle
 from abc import ABC
 
-import jq
 import pandas as pd
 from gensim.models import Word2Vec
 from sklearn import model_selection
@@ -88,10 +87,6 @@ class PWDBBaseExperiment(BaseExperiment):
         self.minio_adapter.empty_bucket()
         pwdb_json_dataset = pwdb_transformer.transform_pwdb(json.loads(raw_pwdb_dataset.content))
         self.minio_adapter.put_object(config.SC_PWDB_JSON, json.dumps(pwdb_json_dataset).encode('utf-8'))
-
-        # pwdb_dataframe = pd.DataFrame.from_records(pwdb_json_dataset)
-        # pickle_pwdb_dataframe = json.dumps(pwdb_dataframe)
-        # self.minio_adapter.put_object("pwdb_dataframe.json", pickle_pwdb_dataframe)
 
     def data_validation(self, *args, **kwargs):
         # TODO: implement me by validating the returned index structure for a start,
