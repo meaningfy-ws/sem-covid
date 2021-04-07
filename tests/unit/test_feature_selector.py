@@ -1,6 +1,7 @@
 import pandas as pd
 
-from sc_wrangling.feature_selector import reduce_array_column, multi_label_column_to_binary_columns
+from ml_experiments.services.sc_wrangling.feature_selector import (reduce_array_column,
+                                                                   multi_label_column_to_binary_columns)
 
 
 def test_reduce_array_column_rows_expectation():
