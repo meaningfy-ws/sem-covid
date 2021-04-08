@@ -85,7 +85,6 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         pwdb_train_test_pickle = pickle.dumps(pwdb_train_test_data)
         self.minio_adapter.put_object("train_test_split.pkl", pwdb_train_test_pickle)
 
-
     @staticmethod
     def prepare_pwdb_data(pwdb_dataframe: pd.DataFrame) -> pd.DataFrame:
         """
@@ -101,16 +100,17 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
                      labels that will be used into train-test part.
         """
         feature_selector.reduce_array_column(pwdb_dataframe, "Target groups")
-        pwdb_dataframe_columns = pwdb_dataframe[['Title', 'Background information', 'Content of measure',
-                                                 'Category', 'Subcategory', 'Type of measure', 'Target groups']]
+        # TODO: train test split with all cols
+        pwdb_descriptive_data = pwdb_dataframe['Title'].map(str) + ' ' + \
+            pwdb_dataframe['Background information'].map(str) + ' ' + \
+            pwdb_dataframe['Content of measure'].map(str) + ' ' + \
+            pwdb_dataframe['Use of measure'] + ' ' + \
+            pwdb_dataframe['Views of social partners']
 
-        pwdb_descriptive_data = pwdb_dataframe_columns['Title'].map(str) + ' ' + \
-                                pwdb_dataframe_columns['Background information'].map(str) + ' ' + \
-                                pwdb_dataframe_columns['Content of measure'].map(str)
-        pwdb_dataframe_columns['Descriptive Data'] = pwdb_descriptive_data \
+        pwdb_dataframe['Descriptive Data'] = pwdb_descriptive_data \
             .apply(lambda x: data_cleaning.prepare_text_for_cleaning(x))
         pwdb_dataframe_columns = value_replacement.MultiColumnLabelEncoder(
-            columns=['Category', 'Subcategory', 'Type of measure']).fit_transform(pwdb_dataframe_columns)
+            columns=['Category', 'Subcategory', 'Type of measure']).fit_transform(pwdb_dataframe)
 
         return pwdb_dataframe_columns
 
@@ -156,9 +156,8 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
             :return: As a result, we will have a dictionary with split data.
         """
         pwdb_common_text = pwdb_dataframe['Descriptive Data']
-        pwdb_classifiers = pwdb_dataframe.drop(['Descriptive Data', 'Title',
-                                                'Background information', 'Content of measure'], axis=1)
-        # pwdb_word2vec = Word2Vec(pwdb_common_text, window=5, min_count=10, size=300)
+        pwdb_classifiers = pwdb_dataframe[['Category', 'Subcategory', 'Type of measure',
+                                           'Businesses', 'Citizens', 'Workers']]
         x_train, x_test, y_train, y_test = model_selection.train_test_split(pwdb_common_text, pwdb_classifiers,
                                                                             random_state=42, test_size=0.3,
                                                                             shuffle=True)
