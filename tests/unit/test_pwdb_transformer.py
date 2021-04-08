@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 def test_pwdb_transformer(raw_pwdb_data):
-    assert len(raw_pwdb_data) == 1
+    assert len(raw_pwdb_data) == 2
     transformed_data_sample = transform_pwdb(raw_pwdb_data)[0]
 
     assert "Title" in transformed_data_sample
