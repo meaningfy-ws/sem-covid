@@ -1,39 +1,7 @@
-import unittest
 
-from pandas import DataFrame
-from pandas.testing import assert_frame_equal, assert_series_equal
-
-# from ml_experiments.config import config
-# from tests.resources.minio_connection import MinioFakeConnection
-from pytest import fixture
 from datetime import datetime
 from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from airflow import DAG
-
-#     # def test_len_of_expected_data_and_test_dataframe(self):
-#     #     self.assertEqual(len(create_expected_test_dataframe()), len(self.PWDB_PREPARE_FUNCTION))
-#
-#     def test_compare_expected_data_with_test_dataframe(self):
-#         assert_frame_equal(create_expected_test_dataframe(), self.PWDB_PREPARE_FUNCTION)
-#
-#     def test_descriptive_data_serial_equals_of_expected_and_test_dataframe(self):
-#         assert_series_equal(create_expected_test_dataframe()['Descriptive Data'],
-#                             self.PWDB_PREPARE_FUNCTION['Descriptive Data'])
-#
-#     def test_category_equals_of_expected_and_test_dataframe(self):
-#         assert_series_equal(create_expected_test_dataframe()['Category'], self.PWDB_PREPARE_FUNCTION['Category'])
-#
-#     def test_subcategory_equals_of_expected_and_test_dataframe(self):
-#         assert_series_equal(create_expected_test_dataframe()['Subcategory'],
-#         self.PWDB_PREPARE_FUNCTION['Subcategory'])
-#
-#     def test_type_of_measure_equals_of_expected_and_test_dataframe(self):
-#         assert_series_equal(create_expected_test_dataframe()['Type of measure'],
-#                             self.PWDB_PREPARE_FUNCTION['Type of measure'])
-#
-#     def test_target_groups_serial_equals_of_expected_and_test_dataframe(self):
-#         assert_series_equal(create_expected_test_dataframe()['Target groups'],
-#                             self.PWDB_PREPARE_FUNCTION['Target groups'])
 
 
 def test_dummy_dag_creation(base_experiment):
@@ -77,6 +45,9 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     assert "Views of social partners" in resulting_df
     assert "|" in resulting_df['Target groups'][0]
     assert "Descriptive Data" in resulting_df
+    assert "Category" in resulting_df
+    assert "Subcategory" in resulting_df
+    assert "Type of measure" in resulting_df
     assert "hardship" in resulting_df["Descriptive Data"][0]
     assert "billion fund to mitigate" in resulting_df["Background information"][0]
     assert "The support is a one-off payment" in resulting_df["Content of measure"][0]
@@ -94,6 +65,14 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     assert "(35%)" not in resulting_df["Descriptive Data"][0]
     assert "Economic" not in resulting_df["Descriptive Data"][0]
     assert "fund:" not in resulting_df["Descriptive Data"][0]
+    assert 0 in resulting_df['Category']
+    assert 0 in resulting_df['Subcategory']
+    assert 0 in resulting_df['Type of measure']
+    assert "Income protection beyond short-time work" not in resulting_df['Category']
+    assert "Extensions of  income support to workers not covered by any kind of protection scheme" \
+           not in resulting_df['Subcategory']
+    assert "Legislations or other statutory regulations" not in resulting_df['Type of measure']
+
 
 def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
     assert True
