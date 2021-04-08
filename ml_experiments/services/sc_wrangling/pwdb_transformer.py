@@ -1,4 +1,5 @@
 import json
+from typing import List
 
 import jq
 
@@ -33,7 +34,7 @@ PWDB_REFACTORING_RULES = '''.[] | {
 }'''
 
 
-def transform_pwdb(pwdb_json_object: dict):
+def transform_pwdb(pwdb_json_object: List[dict]):
     jq_programme = jq.compile(PWDB_REFACTORING_RULES.replace("\n", ""))
     transformed_pwdb = jq_programme.input(pwdb_json_object).all()
     return transformed_pwdb
