@@ -86,7 +86,12 @@ def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
     assert 1 or 0 in resulting_df['Businesses']
     assert 1 or 0 in resulting_df['Citizens']
     assert 1 or 0 in resulting_df['Workers']
-    assert "Target groups_One person or microenterprises|Self-employed|Solo-self-employed" in resulting_df
+
+
+# def test_train_pwdb_data(transformed_pwdb_dataframe):
+#     prepare_pwdb_dataframe = PWDBBaseExperiment.prepare_pwdb_data(transformed_pwdb_dataframe)
+#     pwdb_target_groups_refactor = PWDBBaseExperiment.target_group_refactoring(prepare_pwdb_dataframe)
+#     resulting_df = PWDBBaseExperiment.train_pwdb_data(pwdb_target_groups_refactor)
 
 
 
