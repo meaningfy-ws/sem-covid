@@ -1,4 +1,4 @@
-include .env
+include .env-dev
 
 BUILD_PRINT = \e[1;34mSTEP: \e[0m
 
