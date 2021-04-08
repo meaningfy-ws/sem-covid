@@ -156,9 +156,8 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
             :return: As a result, we will have a dictionary with split data.
         """
         pwdb_common_text = pwdb_dataframe['Descriptive Data']
-        pwdb_classifiers = pwdb_dataframe.drop(['Descriptive Data', 'Title',
-                                                'Background information', 'Content of measure'], axis=1)
-        # pwdb_word2vec = Word2Vec(pwdb_common_text, window=5, min_count=10, size=300)
+        pwdb_classifiers = pwdb_dataframe[['Category', 'Subcategory', 'Type of measure',
+                                           'Businesses', 'Citizens', 'Workers']]
         x_train, x_test, y_train, y_test = model_selection.train_test_split(pwdb_common_text, pwdb_classifiers,
                                                                             random_state=42, test_size=0.3,
                                                                             shuffle=True)
