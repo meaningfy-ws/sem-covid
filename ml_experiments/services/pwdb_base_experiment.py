@@ -102,10 +102,10 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         feature_selector.reduce_array_column(pwdb_dataframe, "Target groups")
         # TODO: train test split with all cols
         pwdb_descriptive_data = pwdb_dataframe['Title'].map(str) + ' ' + \
-                                pwdb_dataframe['Background information'].map(str) + ' ' + \
-                                pwdb_dataframe['Content of measure'].map(str) + ' ' + \
-                                pwdb_dataframe['Use of measure'] + ' ' + \
-                                pwdb_dataframe['Views of social partners']
+            pwdb_dataframe['Background information'].map(str) + ' ' + \
+            pwdb_dataframe['Content of measure'].map(str) + ' ' + \
+            pwdb_dataframe['Use of measure'] + ' ' + \
+            pwdb_dataframe['Views of social partners']
 
         pwdb_dataframe['Descriptive Data'] = pwdb_descriptive_data \
             .apply(lambda x: data_cleaning.prepare_text_for_cleaning(x))
