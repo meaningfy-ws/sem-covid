@@ -10,23 +10,6 @@ from datetime import datetime
 from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from airflow import DAG
 
-
-# from tests.resources.reusable_test_data import create_expected_test_dataframe
-
-
-# minio = MinioFakeConnection(config.MINIO_URL, config.MINIO_ACCESS_KEY,
-#                             config.MINIO_SECRET_KEY, config.ML_EXPERIMENTS_BUCKET_NAME)
-#
-# obj = minio.get_object("covid19.json")
-# print(type(obj))
-
-# def test_len_of_expected_data_and_test_dataframe():
-#     assert len(create_expected_test_dataframe()) == len(PWDB_PREPARE_FUNCTION)
-
-# class TestPreparationPWDBData(unittest.TestCase):
-#     TEST_DATAFRAME = minio.get_test_dataframe_from_minio()
-#     PWDB_PREPARE_FUNCTION = PWDBBaseExperiment.prepare_pwdb_data(TEST_DATAFRAME)
-#
 #     # def test_len_of_expected_data_and_test_dataframe(self):
 #     #     self.assertEqual(len(create_expected_test_dataframe()), len(self.PWDB_PREPARE_FUNCTION))
 #
@@ -41,7 +24,8 @@ from airflow import DAG
 #         assert_series_equal(create_expected_test_dataframe()['Category'], self.PWDB_PREPARE_FUNCTION['Category'])
 #
 #     def test_subcategory_equals_of_expected_and_test_dataframe(self):
-#         assert_series_equal(create_expected_test_dataframe()['Subcategory'], self.PWDB_PREPARE_FUNCTION['Subcategory'])
+#         assert_series_equal(create_expected_test_dataframe()['Subcategory'],
+#         self.PWDB_PREPARE_FUNCTION['Subcategory'])
 #
 #     def test_type_of_measure_equals_of_expected_and_test_dataframe(self):
 #         assert_series_equal(create_expected_test_dataframe()['Type of measure'],
@@ -86,10 +70,21 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
 
     assert len(resulting_df) == 1
     assert len(resulting_df) != 2
+    assert "Title" in resulting_df
+    assert "Background information" in resulting_df
+    assert "Content of measure" in resulting_df
+    assert "Use of measure" in resulting_df
+    assert "Views of social partners" in resulting_df
     assert "|" in resulting_df['Target groups'][0]
     assert "hardship" in resulting_df["Descriptive Data"][0]
-    assert "billion fund to mitigate" in resulting_df["Descriptive Data"][0]
-    assert "the support is a one-off payment" in resulting_df["Descriptive Data"][0]
+    assert "billion fund to mitigate" in resulting_df["Background information"][0]
+    assert "The support is a one-off payment" in resulting_df["Content of measure"][0]
+    assert "applications for phase" in resulting_df["Use of measure"][0]
+    assert "Federal Economic Chamber" in resulting_df["Views of social partners"][0]
+    assert "self-employedpart" not in resulting_df["Descriptive Data"][0]
+    assert "schemessupport" not in resulting_df["Descriptive Data"][0]
+    assert "januaryinformation" not in resulting_df["Descriptive Data"][0]
+    assert "subsidiesfederal" not in resulting_df["Descriptive Data"][0]
 
 
 def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
