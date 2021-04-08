@@ -76,6 +76,7 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     assert "Use of measure" in resulting_df
     assert "Views of social partners" in resulting_df
     assert "|" in resulting_df['Target groups'][0]
+    assert "Descriptive Data" in resulting_df
     assert "hardship" in resulting_df["Descriptive Data"][0]
     assert "billion fund to mitigate" in resulting_df["Background information"][0]
     assert "The support is a one-off payment" in resulting_df["Content of measure"][0]
@@ -85,7 +86,14 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     assert "schemessupport" not in resulting_df["Descriptive Data"][0]
     assert "januaryinformation" not in resulting_df["Descriptive Data"][0]
     assert "subsidiesfederal" not in resulting_df["Descriptive Data"][0]
-
+    assert "\u20ac4" not in resulting_df["Descriptive Data"][0]
+    assert "2020" not in resulting_df["Descriptive Data"][0]
+    assert "\r\r" not in resulting_df["Descriptive Data"][0]
+    assert "100,000" not in resulting_df["Descriptive Data"][0]
+    assert "(mid-July to mid-August)" not in resulting_df["Descriptive Data"][0]
+    assert "(35%)" not in resulting_df["Descriptive Data"][0]
+    assert "Economic" not in resulting_df["Descriptive Data"][0]
+    assert "fund:" not in resulting_df["Descriptive Data"][0]
 
 def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
     assert True
