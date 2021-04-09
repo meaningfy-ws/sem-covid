@@ -257,7 +257,7 @@ def extract_document_content_with_tika():
                         parse_result = parser.from_file(str(content_file), APACHE_TIKA_URL)
 
                         if 'content' in parse_result:
-                            logger.info(f'Parse result (first 100 characters): {dumps(parse_result)[:100]}')
+                            # logger.info(f'Parse result (first 100 characters): {dumps(parse_result)[:100]}')
                             item['content'].append(parse_result['content'])
                             counter['success'] += 1
 
