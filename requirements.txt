@@ -9,7 +9,11 @@ pytest-bdd
 sphinx
 recommonmark
 
+# Data Visualisation
+plotly
+
 # ML Libraries
+statsmodels
 pandas
 sklearn
 gensim
