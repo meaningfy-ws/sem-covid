@@ -181,7 +181,7 @@
       },
       "content": {
         "type": "text",
-        "analyzer": "standard"
+        "analyzer": "english"
       }
     }
   }
