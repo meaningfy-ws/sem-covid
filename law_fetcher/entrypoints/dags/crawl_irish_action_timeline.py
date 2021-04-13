@@ -27,7 +27,7 @@ logger = logging.getLogger('lam-fetcher')
 VERSION = '0.1.0'
 
 APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
-ELASTICSEARCH_INDEX_NAME: str = Variable.get('EU_ACTION_TIMELINE_ELASTIC_SEARCH_INDEX_NAME')  # TODO: changeme
+ELASTICSEARCH_INDEX_NAME: str = Variable.get('IRISH_ACTION_TIMELINE_ELASTIC_SEARCH_INDEX_NAME')
 ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')
 ELASTICSEARCH_HOSTNAME: str = Variable.get('ELASTICSEARCH_URL')
 ELASTICSEARCH_PORT: int = Variable.get('ELASTICSEARCH_PORT')
@@ -37,9 +37,9 @@ ELASTICSEARCH_PASSWORD: str = Variable.get('ELASTICSEARCH_PASSWORD')
 SPLASH_URL: str = Variable.get('SPLASH_URL')
 TIKA_FILE_PREFIX = 'tika/'
 
-EU_ACTION_TIMELINE_JSON = Variable.get('EU_ACTION_TIMELINE_JSON')  # TODO: changeme
+IRISH_ACTION_TIMELINE_JSON = Variable.get('IRISH_ACTION_TIMELINE_JSON')
 MINIO_URL = Variable.get("MINIO_URL")
-MINIO_BUCKET = Variable.get('EU_ACTION_TIMELINE_BUCKET_NAME')  # TODO: changeme
+MINIO_BUCKET = Variable.get('IRISH_ACTION_TIMELINE_BUCKET_NAME')
 MINIO_ACCESS_KEY = Variable.get("MINIO_ACCESS_KEY")
 MINIO_SECRET_KEY = Variable.get("MINIO_SECRET_KEY")
 
@@ -62,27 +62,25 @@ def start_crawler():
     settings = extract_settings_from_module(crawler_config)
     settings['SPLASH_URL'] = SPLASH_URL
     process = CrawlerProcess(settings=settings)
-    process.crawl(IrishGovCrawler, filename=EU_ACTION_TIMELINE_JSON, storage_adapter=minio)
+    process.crawl(IrishGovCrawler, filename=IRISH_ACTION_TIMELINE_JSON, storage_adapter=minio)
     process.start()
 
 
-# TODO: refactor variables pointing to the EU action timline, such as ''eu_action_timeline_json''
-
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {APACHE_TIKA_URL}')
-    logger.info(f'Loading resource files from {EU_ACTION_TIMELINE_JSON}')
+    logger.info(f'Loading resource files from {IRISH_ACTION_TIMELINE_JSON}')
     minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, MINIO_BUCKET)
-    eu_action_timeline_json = loads(minio.get_object(EU_ACTION_TIMELINE_JSON))
-    eu_action_timeline_items_count = len(eu_action_timeline_json)
+    irish_action_timeline_json = loads(minio.get_object(IRISH_ACTION_TIMELINE_JSON))
+    irish_action_timeline_items_count = len(irish_action_timeline_json)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(eu_action_timeline_json):
+    for index, item in enumerate(irish_action_timeline_json):
         identifier = item['title']
-        logger.info(f'[{index + 1}/{eu_action_timeline_items_count}] Processing {identifier}')
+        logger.info(f'[{index + 1}/{irish_action_timeline_items_count}] Processing {identifier}')
 
         if CONTENT_PATH_KEY in item:
             counter['general'] += 1
@@ -95,7 +93,7 @@ def extract_document_content_with_tika():
         filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
         minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(EU_ACTION_TIMELINE_JSON, dumps(eu_action_timeline_json))
+    minio.put_object_from_string(IRISH_ACTION_TIMELINE_JSON, dumps(irish_action_timeline_json))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
