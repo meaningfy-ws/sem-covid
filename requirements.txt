@@ -9,21 +9,25 @@ pytest-bdd
 sphinx
 recommonmark
 
+# aditional libraries
+IPython
+statsmodels
+scipy
+tqdm
+jq
+
 # Data Visualisation
 plotly
 
 # ML Libraries
 numpy
-scipy
-statsmodels
 pandas
 sklearn
 gensim
 mlflow
 nltk
-spacy
 clean-text
-jq
+spacy
 minio
 apache-airflow
 
