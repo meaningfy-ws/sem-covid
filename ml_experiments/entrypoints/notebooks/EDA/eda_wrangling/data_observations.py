@@ -1,5 +1,6 @@
 
 from collections import Counter
+from IPython.core.display import Markdown, display
 
 import pandas as pd
 import plotly.express as px
@@ -19,6 +20,16 @@ def plot_pie_chart(observations: pd.DataFrame, chart_title: str) -> px:
     """
     columns = observations.columns
     return px.pie(observations, values=columns[1], names=columns[0], title=chart_title)
+
+
+def eda_display_result(result : pd.DataFrame,chart_title : str, bar_char : bool = True,pie_chart : bool = True):
+    if result.size > 0 :
+        display(Markdown(chart_title))
+        display(tuple(result))
+        if bar_char:
+            plot_bar_chart(result, chart_title).show()
+        if pie_chart:
+            plot_pie_chart(result, chart_title).show()
 
 
 def calc_freq_categorical_data(data: pd.Series, title: str, relative: bool = False):
