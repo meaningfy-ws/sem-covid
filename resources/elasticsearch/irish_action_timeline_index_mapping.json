@@ -1,6 +1,5 @@
 {
   "mappings": {
-    "_doc": {
       "properties": {
         "campaigns_links": {
           "properties": {
@@ -171,5 +170,4 @@
         }
       }
     }
-  }
 }
