@@ -21,6 +21,7 @@ from tika import parser
 
 from law_fetcher.adapters.minio_adapter import MinioAdapter
 
+VERSION = '0.10.1'
 apache_tika_url = Variable.get("APACHE_TIKA_URL")
 elasticsearch_index_name = Variable.get("PWDB_ELASTIC_SEARCH_INDEX_NAME")
 elasticsearch_protocol: str = Variable.get("ELASTICSEARCH_PROTOCOL")
@@ -43,7 +44,7 @@ RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
 logger = logging.getLogger(__name__)
-VERSION = '0.10.0'
+
 
 transformation = '''{
 identifier: .recordId,
@@ -197,7 +198,7 @@ def put_elasticsearch_documents():
                         elasticsearch_index_name +
                         ' ) the file ' +
                         obj.object_name)
-            elasticsearch_client.index(index=elasticsearch_index_name,
+            elasticsearch_client.index(index=elasticsearch_index_name, id=obj.object_name.split("/")[1],
                                        body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
