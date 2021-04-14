@@ -18,7 +18,7 @@ def get_nlp_docs(data: pd.Series):
     return [nlp(row) for row in data]
 
 
-def get_entity_words(data : pd.Series, entity_name : str = 'ORG',docs : list = None):
+def get_entity_words(data: pd.Series, entity_name: str = 'ORG', docs: list = None):
     """
     Function to get list of words labeled with entity_name
     :param data:
@@ -28,8 +28,8 @@ def get_entity_words(data : pd.Series, entity_name : str = 'ORG',docs : list = N
     """
     if docs is None:
         docs = get_nlp_docs(data)
-    result = [e.text for doc in docs for e in doc.ents if e.label_== entity_name]
-    return pd.Series(result,dtype=str)
+    result = [e.text for doc in docs for e in doc.ents if e.label_ == entity_name]
+    return pd.Series(result, dtype=str)
 
 
 def get_named_entities(data: pd.Series, docs: list = None):
