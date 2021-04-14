@@ -127,8 +127,6 @@ def download_policy_watch_resources():
 
         for source in field_data['sources']:
             download_single_source(source, minio)
-        if current_item == 100:
-            break
 
     minio.put_object_from_string(dataset_local_filename, json.dumps(covid19json))
     logger.info("...done downloading.")
