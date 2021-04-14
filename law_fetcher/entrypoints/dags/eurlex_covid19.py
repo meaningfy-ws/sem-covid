@@ -400,7 +400,7 @@ def upload_processed_documents_to_elasticsearch():
     for obj in objects:
         try:
             logger.info(f'Sending to ElasticSearch ( {ELASTICSEARCH_INDEX_NAME} ) the object {obj.object_name}')
-            elasticsearch_client.index(index=ELASTICSEARCH_INDEX_NAME,
+            elasticsearch_client.index(index=ELASTICSEARCH_INDEX_NAME, id=obj.object_name.split("/")[1],
                                        body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
