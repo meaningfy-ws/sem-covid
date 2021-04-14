@@ -3,7 +3,7 @@ from ml_experiments.services.sc_wrangling.value_replacement import MultiColumnLa
 
 
 def test_replace_column_labels_with_label_encoder(transformed_pwdb_dataframe):
-    assert len(transformed_pwdb_dataframe) == 1
+    assert len(transformed_pwdb_dataframe) == 2
     pwdb_label_encoder = MultiColumnLabelEncoder(
         columns=['Category', 'Subcategory', 'Type of measure']).fit_transform(transformed_pwdb_dataframe)
     assert 'Category' in pwdb_label_encoder
