@@ -158,26 +158,16 @@
           }
         },
         "published_date": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword",
-              "ignore_above": 256
-            }
-          }
+          "type": "date",
+          "format":"DD MMMM YYYY"
         },
         "title": {
           "type": "text",
           "analyzer": "english"
         },
         "updated_date": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword",
-              "ignore_above": 256
-            }
-          }
+          "type": "date",
+          "format":"DD MMMM YYYY"
         }
       }
     }
