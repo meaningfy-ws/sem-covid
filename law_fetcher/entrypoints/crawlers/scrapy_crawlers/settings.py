@@ -1,7 +1,7 @@
 BOT_NAME = 'scrapy_crawlers'
 
-SPIDER_MODULES = ['scrapy_crawlers.spiders']
-NEWSPIDER_MODULE = 'scrapy_crawlers.spiders'
+SPIDER_MODULES = ['law_fetcher.entrypoints.crawlers.scrapy_crawlers.spiders']
+NEWSPIDER_MODULE = 'law_fetcher.entrypoints.crawlers.scrapy_crawlers.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'scrapy_crawlers (+http://www.yourdomain.com)'
