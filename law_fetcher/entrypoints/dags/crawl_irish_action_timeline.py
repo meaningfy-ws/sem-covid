@@ -9,6 +9,7 @@
 
 import hashlib
 import logging
+import uuid
 from datetime import datetime, timedelta
 from json import loads, dumps
 
@@ -24,7 +25,7 @@ from law_fetcher.adapters.minio_adapter import MinioAdapter
 from law_fetcher.entrypoints.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
 ELASTICSEARCH_INDEX_NAME: str = Variable.get('IRISH_ACTION_TIMELINE_ELASTIC_SEARCH_INDEX_NAME')
@@ -90,6 +91,8 @@ def extract_document_content_with_tika():
                 item[CONTENT_PATH_KEY] = parse_result['content']
 
         manifestation = item.get('detail_link') or item['title']
+        if manifestation is None:
+            manifestation = "no title ( " + str(uuid.uuid4()) + " )"
         filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
         minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
