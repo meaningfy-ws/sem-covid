@@ -23,7 +23,11 @@ class IrishGovCrawler(scrapy.Spider):
 
     def __init__(self, filename, *args, storage_adapter=None, **kwargs):
         super().__init__(*args, **kwargs)
-        self.text_searches = ['covid', 'pandemic', 'virus', 'crisis']
+        self.text_searches = ["covid", "pandemic", "virus", "crisis", "infectious disease", "epidemiology", "epidemic",
+                              "disease surveillance", "health control", "public hygiene", "hospital infection",
+                              "patient safety", "patient's rights", "illness", "protective equipment",
+                              "crisis management", "freedom of movement", "restriction of liberty", "social impact",
+                              "economic consequence", "working conditions", "distance learning", "state of emergency"]
         self.storage_adapter = storage_adapter
         self.filename = filename
         self.data = list()
