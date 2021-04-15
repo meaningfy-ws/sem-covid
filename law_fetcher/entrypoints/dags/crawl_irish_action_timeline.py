@@ -25,7 +25,7 @@ from law_fetcher.adapters.minio_adapter import MinioAdapter
 from law_fetcher.entrypoints.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
 
 logger = logging.getLogger('lam-fetcher')
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
 ELASTICSEARCH_INDEX_NAME: str = Variable.get('IRISH_ACTION_TIMELINE_ELASTIC_SEARCH_INDEX_NAME')
@@ -44,7 +44,7 @@ MINIO_BUCKET = Variable.get('IRISH_ACTION_TIMELINE_BUCKET_NAME')
 MINIO_ACCESS_KEY = Variable.get("MINIO_ACCESS_KEY")
 MINIO_SECRET_KEY = Variable.get("MINIO_SECRET_KEY")
 
-CONTENT_PATH_KEY = 'detail_content'
+CONTENT_PATH_KEY = 'content'
 
 
 def extract_settings_from_module(module):

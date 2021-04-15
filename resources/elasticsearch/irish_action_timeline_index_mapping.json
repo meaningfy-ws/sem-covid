@@ -158,7 +158,7 @@
         },
         "published_date": {
           "type": "date",
-          "format":"DD MMMM YYYY"
+          "format":"D MMMM YYYY"
         },
         "title": {
           "type": "text",
@@ -166,7 +166,7 @@
         },
         "updated_date": {
           "type": "date",
-          "format":"DD MMMM YYYY"
+          "format":"D MMMM YYYY"
         }
       }
     }
