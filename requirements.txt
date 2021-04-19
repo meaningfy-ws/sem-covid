@@ -6,8 +6,13 @@ pytest-cov
 pytest-bdd
 
 # Documentation Dependencies
+IPython
+statsmodels
+scipy
+tqdm
 sphinx
 recommonmark
+numpy
 
 # ML Libraries
 pandas

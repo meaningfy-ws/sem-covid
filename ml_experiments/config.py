@@ -54,14 +54,56 @@ class MLExperimentsConfig:
         return value
 
     @property
+    def EURLEX_BUCKET_NAME(self) -> str:
+        value = os.environ.get('EURLEX_BUCKET_NAME')
+        self.logger.debug(value)
+        return value
+
+    @property
+    def EURLEX_EXTENDED_BUCKET_NAME(self) -> str:
+        value = os.environ.get('EURLEX_EXTENDED_BUCKET_NAME')
+        self.logger.debug(value)
+        return value
+
+    @property
+    def EU_TIMELINE_BUCKET_NAME(self) -> str:
+        value = os.environ.get('EU_TIMELINE_BUCKET_NAME')
+        self.logger.debug(value)
+        return value
+
+    @property
+    def IRISH_TIMELINE_BUCKET_NAME(self) -> str:
+        value = os.environ.get('IRISH_TIMELINE_BUCKET_NAME')
+        self.logger.debug(value)
+        return value
+
+    @property
+    def IRISH_TIMELINE_JSON(self) -> str:
+        value = os.environ.get('IRISH_TIMELINE_JSON')
+        self.logger.debug(value)
+        return value
+
+    @property
     def SC_PWDB_JSON(self) -> str:
         value = os.environ.get('SC_PWDB_JSON')
         self.logger.debug(value)
         return value
 
     @property
+    def EURLEX_JSON(self) -> str:
+        value = os.environ.get('EURLEX_JSON')
+        self.logger.debug(value)
+        return value
+
+    @property
     def SC_PWDB_DATA_FRAME(self) -> str:
         value = os.environ.get('SC_PWDB_DATA_FRAME')
+        self.logger.debug(value)
+        return value
+
+    @property
+    def EU_TIMELINE_JSON(self) -> str:
+        value = os.environ.get('EU_TIMELINE_JSON')
         self.logger.debug(value)
         return value
 
