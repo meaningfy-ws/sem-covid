@@ -25,6 +25,8 @@ from ml_experiments.services.sc_wrangling.evaluation_metrics import model_evalua
 
 logger = logging.getLogger(__name__)
 
+# TODO: get rid of all the constants in this file; use config file for that
+
 ML_EXPERIMENTS_BUCKET_NAME = "ml-experiments"
 LANGUAGE_MODEL_BUCKET_NAME = "language-models"
 
@@ -118,9 +120,6 @@ class KNNPWDBExperiment(BaseExperiment):
     def model_validation(self, *args, **kwargs):
         pass
 
-
-knn = KNNPWDBExperiment()
-knn.model_training()
 
 
 
