@@ -84,6 +84,7 @@ class SVMPWDBExperiment(PWDBBaseExperiment):
         pickle_l2v_tom = pickle.dumps(fit_l2v_tom)
         pickle_l2v_target_groups_l1 = pickle.dumps(fit_l2v_target_groups_l1)
 
+        # TODO: do you think the hardcoded value is a good idea?
         self.minio_adapter.put_object("word2vec/SVM/svm_category.pkl", pickle_w2v_category)
         self.minio_adapter.put_object("word2vec/SVM/svm_subcategory.pkl", pickle_w2v_subcategory)
         self.minio_adapter.put_object("word2vec/SVM/svm_type_of_measure.pkl", pickle_w2v_tom)
