@@ -6,3 +6,7 @@
 # Email: dan.chiriac1453@gmail.com
 
 """ """
+
+import dotenv
+
+dotenv.load_dotenv()
