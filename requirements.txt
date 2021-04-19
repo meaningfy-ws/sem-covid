@@ -6,29 +6,22 @@ pytest-cov
 pytest-bdd
 
 # Documentation Dependencies
-sphinx
-recommonmark
-
-# aditional libraries
 IPython
 statsmodels
 scipy
 tqdm
-jq
-
-# Data Visualisation
-plotly
+sphinx
+recommonmark
+numpy
 
 # ML Libraries
-numpy
 pandas
 sklearn
 gensim
 mlflow
-nltk
-clean-text
 spacy
+clean-text
+jq
 minio
 apache-airflow
-
 jupyterlab
