@@ -8,23 +8,23 @@
 """
     A registry of the frequently used datasets and language models
 """
-from ml_experiments.services.base_data_source import BinaryDatasource
+from ml_experiments import config
+from ml_experiments.adapters.data_source import BinaryDataSource, TabularDatasource
 
 
 class Dataset(object):
-    # PWDB = FakeTabularDatasource()
-    # EU_CELLAR = FakeTabularDatasource()
-    # EU_ACTION_TIMELINE = FakeTabularDatasource()
-    # IRELAND_ACTION_TIMELINE = FakeTabularDatasource()
-    ...
+    """
+        Registry of dataset sources
+    """
+    PWDB = TabularDatasource(config.PWDB_IDX)
+    EU_CELLAR = TabularDatasource(config.EU_CELLAR_IDX)
+    EU_ACTION_TIMELINE = TabularDatasource(config.EU_ACTION_TIMELINE_IDX)
+    IRELAND_ACTION_TIMELINE = TabularDatasource(config.IRELAND_ACTION_TIMELINE_IDX)
 
 
 class LanguageModel(object):
-    # LAW2VEC = FakeTabularDatasource()
-    # JRC2VEC = FakeTabularDatasource()
-    ...
-
-
-class Law2VecDataSource(BinaryDatasource):
-    def fetch_binary(self) -> bytearray:
-        pass
+    """
+        Registry of language model data sources
+    """
+    LAW2VEC = BinaryDataSource(config.LANGUAGE_MODEL_BUCKET_NAME, config.LAW2VEC_MODEL_PATH)
+    JRC2VEC = BinaryDataSource(config.LANGUAGE_MODEL_BUCKET_NAME, config.JRC2VEC_MODEL_PATH)

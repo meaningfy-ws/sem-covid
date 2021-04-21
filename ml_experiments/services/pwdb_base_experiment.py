@@ -18,7 +18,7 @@ import pandas as pd
 from gensim.models import Word2Vec
 from sklearn import model_selection
 
-from ml_experiments.config import config
+from ml_experiments import config
 from ml_experiments.services.base_experiment import BaseExperiment
 from ml_experiments.services.sc_wrangling import data_cleaning
 from ml_experiments.services.sc_wrangling import feature_selector

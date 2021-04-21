@@ -18,7 +18,7 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC, LinearSVC
 
-from ml_experiments.config import config
+from ml_experiments import config
 from ml_experiments.adapters.minio_adapter import MinioAdapter
 from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from ml_experiments.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
@@ -40,7 +40,7 @@ class SVMPWDBExperiment(PWDBBaseExperiment):
         train_test_dataset = pickle.loads(self.minio_adapter.get_object(config.PWDB_TRAIN_TEST))
         load_pwdb_word2vec = pickle.loads(self.minio_model_adapter.get_object(config.PWDB_WORD2VEC_MODEL))
         temporary_file = tempfile.NamedTemporaryFile()
-        temporary_file.write(self.minio_model_adapter.get_object(config.LAW2VEC_MODEL))
+        temporary_file.write(self.minio_model_adapter.get_object(config.LAW2VEC_MODEL_PATH))
         load_law2vec = KeyedVectors.load_word2vec_format(temporary_file.name)
         temporary_file.close()
 

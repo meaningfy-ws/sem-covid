@@ -6,7 +6,7 @@ import json
 import pytest
 import pandas as pd
 
-from ml_experiments.services.base_data_source import BinaryCachedDataSource
+from ml_experiments.adapters.data_source import BinaryDataSource, TabularDatasource
 from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from ml_experiments.services.sc_wrangling.pwdb_transformer import transform_pwdb
 
@@ -345,6 +345,20 @@ def transformed_pwdb_dataframe():
     return pd.DataFrame.from_records(transformed_pwdb_json())
 
 
-class FakeCachedDataSource(BinaryCachedDataSource):
+class FakeBinaryDataSource(BinaryDataSource):
+
+    def __init__(self):
+        super().__init__("bongo", "bongo")
+
     def _fetch(self) -> bytes:
         return b"Bytes objects are immutable sequences of single bytes"
+
+
+class FakeTabularDataSource(TabularDatasource):
+
+    def __init__(self):
+        super().__init__("bongo")
+
+    def _fetch(self) -> pd.DataFrame:
+        d = {'col1': [1, 2, 12], 'col2': [3, 4, 13], 'col3': ['abs', 'qwe', 'bongo']}
+        return pd.DataFrame(data=d)
