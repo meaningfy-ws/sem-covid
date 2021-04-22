@@ -6,7 +6,7 @@
 # Email: costezki.eugen@gmail.com 
 
 """ """
-from ml_experiments.adapters.es_adapter import ESAdapter
+from sem_covid.adapters.es_adapter import ESAdapter
 from tests.unit.conftest import FakeBinaryDataSource, FakeTabularDataSource
 
 

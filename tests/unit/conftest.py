@@ -6,9 +6,10 @@ import json
 import pytest
 import pandas as pd
 
-from ml_experiments.adapters.data_source import BinaryDataSource, TabularDatasource
-from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
-from ml_experiments.services.sc_wrangling.pwdb_transformer import transform_pwdb
+from sem_covid.base_config import BaseConfig
+from sem_covid.adapters.data_source import BinaryDataSource, TabularDatasource
+from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
+from sem_covid.services.sc_wrangling.pwdb_transformer import transform_pwdb
 
 
 def raw_pwdb_data():
@@ -362,3 +363,10 @@ class FakeTabularDataSource(TabularDatasource):
     def _fetch(self) -> pd.DataFrame:
         d = {'col1': [1, 2, 12], 'col2': [3, 4, 13], 'col3': ['abs', 'qwe', 'bongo']}
         return pd.DataFrame(data=d)
+
+
+class FakeBaseConfig(object):
+
+    @property
+    def PWDB_XXX(self):
+        return BaseConfig.find_value(default_value="baubau")

@@ -1,6 +1,6 @@
 
-from ml_experiments.entrypoints.notebooks.EDA.eda_wrangling.data_observations import (calc_freq_categorical_data,
-                                                                                      calc_freq_missing_data)
+from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.data_observations import (calc_freq_categorical_data,
+                                                                                 calc_freq_missing_data)
 
 
 def test_calc_freq_categorical_data(transformed_pwdb_dataframe):

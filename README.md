@@ -6,7 +6,7 @@ This project includes functionality for gathering documents from various legal s
 Example on how to use the `CellarAdapter` to retrieve treaties document items:
 
 ```python
-from law_fetcher.adapters.cellar_adapter import CellarAdapter
+from sem_covid.adapters.cellar_adapter import CellarAdapter
 
 ca = CellarAdapter()
 

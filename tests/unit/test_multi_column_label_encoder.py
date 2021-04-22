@@ -1,5 +1,5 @@
 
-from ml_experiments.services.sc_wrangling.value_replacement import MultiColumnLabelEncoder
+from sem_covid.services.sc_wrangling.value_replacement import MultiColumnLabelEncoder
 
 
 def test_replace_column_labels_with_label_encoder(transformed_pwdb_dataframe):

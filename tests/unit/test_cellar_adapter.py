@@ -4,7 +4,7 @@
 # Date:  11/02/2021
 # Author: Mihai Coșleț
 # Email: coslet.mihai@gmail.com
-from law_fetcher.adapters.cellar_adapter import CellarAdapter
+from sem_covid.adapters.cellar_adapter import CellarAdapter
 
 
 def test_all_treaties_are_extracted():
