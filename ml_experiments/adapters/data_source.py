@@ -148,3 +148,26 @@ class TabularDatasource(BaseDataSource):
     def _from_local_cache(self) -> pd.DataFrame:
         pkl_bytes = self.path_to_local_cache().read_bytes()
         return pickle.loads(pkl_bytes)
+
+
+class FeatureStore(BaseDataSource):
+    """
+        A simple feature store based on ElasticSearch service
+    """
+
+    def __init__(self):
+        super().__init__(enable_caching=False)
+
+    def fetch(self, object_name: str) -> pd.DataFrame:
+        """
+
+        :param object_name:
+        :return:
+        """
+
+    def dump(self, object_name: str, content: pd.DataFrame) -> Any:
+        """
+
+        :param object_name:
+        :return:
+        """
