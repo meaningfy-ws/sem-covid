@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% set active_page = "index" %}
+
+{% block app_content %}
+    <h1 id="title">{{ title }}</h1>
+    <div class="row z-depth-3">
+        <div class="col s3">
+            <form id="search-form" class="form" method="POST" role="form"
+                  action="">
+
+                {{ form.csrf_token }}
+                {{ macros.render_text_input_field(form.keywords) }}
+                {{ macros.render_select_field(form.topic) }}
+                {{ macros.render_select_field(form.document_category) }}
+                {#                {{ macros.render_select_field(form.start_date, class="datepicker") }}#}
+                {#                {{ form.start_date(class="datepicker") }}#}
+
+                <div class="row">
+                    <div class="col left-align">
+                        <div class="row">
+                            <button type="submit" id="submit" class="btn blue darken-2">Search<i
+                                    class="material-icons right">check</i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <a href="{{ url_for('index') }}" id="reload" class="btn btn-file red darken-2">Reset form<i
+                                    class="material-icons right">clear</i></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="col s3">
+                <h4>Count: {{ count if count else 0 }}</h4>
+            </div>
+        </div>
+        <div class="col s9">
+            {% if data %}
+                {% for d in data %}
+                    <a href="{{ url_for('legal_initiatives_detail', id=d._id) }}">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <h5>Title: {{ d.fields.title[0] }}</h5>
+                                <p>Topic:
+                                    {% for topic in d.fields.eurovoc_concept_labels %}
+                                        {{ topic }}
+                                    {% endfor %}
+                                </p>
+                                <p>Document Category:
+                                    {% for category in d.fields.resource_type_labels %}
+                                        {{ category }}
+                                    {% endfor %}
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+                <ul class="pagination">
+                    <li class="{{ 'disabled' if current_page==1 else 'waves-effect' }}"><a
+                            href="{{ url_for('index', page=current_page-1, keywords=form.keywords.data, topic=form.topic.data, document_category=form.document_category.data ) }}"><i
+                            class="material-icons">chevron_left</i></a>
+                    </li>
+                    {% for page_num in range(1, pages+1) %}
+                        <li class="{{ 'active' if current_page==page_num else 'waves-effect' }}"><a
+                                href="{{ url_for('index', page=page_num, keywords=form.keywords.data, topic=form.topic.data, document_category=form.document_category.data ) }}"
+                                class="btn btn-dark">
+                            {{ page_num }}
+                        </a></li>
+                    {% endfor %}
+                    <li class="{{ 'disabled' if current_page==pages else 'waves-effect' }}"><a
+                            href="
+                                    {{ url_for('index', page=current_page+1, keywords=form.keywords.data, topic=form.topic.data, document_category=form.document_category.data ) }}"><i
+                            class="material-icons">chevron_right</i></a></li>
+                </ul>
+            {% endif %}
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+            {#$('.datepicker').datepicker({format:"{{ form.start_date.format }}"});#}
+        });
+    </script>
+{% endblock %}
