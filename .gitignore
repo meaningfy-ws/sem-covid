@@ -1,3 +1,4 @@
+.idea
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -70,6 +71,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+doc/_build/
 
 # PyBuilder
 target/
@@ -102,9 +104,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-
 .env
-
 .venv
 env/
 venv/
