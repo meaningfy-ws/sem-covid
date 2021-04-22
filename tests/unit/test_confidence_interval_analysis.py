@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 
 
-from ml_experiments.entrypoints.notebooks.EDA.eda_wrangling.confidence_interval_analysis import (
+from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.confidence_interval_analysis import (
     confidence_interval_with_mean, confidence_interval_for_proportion, z_score_for_series)
 
-from ml_experiments.entrypoints.notebooks.EDA.eda_wrangling.binary_matrix import convert_to_binary_matrix
+from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.binary_matrix import convert_to_binary_matrix
 
 
 def test_confidence_interval_with_mean(transformed_pwdb_dataframe):

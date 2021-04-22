@@ -1,5 +1,5 @@
 
-from ml_experiments.services.sc_wrangling.data_cleaning import *
+from sem_covid.services.sc_wrangling.data_cleaning import *
 
 
 def test_clean_fix_unicode():

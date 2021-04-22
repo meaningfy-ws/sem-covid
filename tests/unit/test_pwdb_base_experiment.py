@@ -1,6 +1,6 @@
 
 from datetime import datetime
-from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
+from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from airflow import DAG
 
 

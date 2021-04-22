@@ -1,5 +1,5 @@
 
-from ml_experiments.entrypoints.notebooks.EDA.eda_wrangling.collision_analysis import (
+from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.collision_analysis import (
     class_collision_in_columns, class_collision)
 
 

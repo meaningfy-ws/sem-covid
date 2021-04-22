@@ -2,7 +2,7 @@
 import spacy
 import pandas as pd
 
-from ml_experiments.entrypoints.notebooks.EDA.eda_wrangling.word_handling import *
+from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.word_handling import *
 
 
 def test_get_nlp_docs(transformed_pwdb_dataframe):

@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-from ml_experiments.entrypoints.notebooks.EDA.eda_wrangling.binary_matrix import (
+from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.binary_matrix import (
     convert_to_binary_matrix, dependency_table)
 
 
