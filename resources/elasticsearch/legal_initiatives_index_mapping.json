@@ -6,7 +6,17 @@
       },
       "title": {
         "type": "text",
-        "analyzer": "english"
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
+          }
+        }
       },
       "cdm_types": {
         "type": "text",
@@ -19,10 +29,15 @@
       },
       "cdm_labels": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },
@@ -37,10 +52,15 @@
       },
       "resource_type_labels": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },
@@ -55,10 +75,15 @@
       },
       "eurovoc_concept_labels": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },
@@ -73,10 +98,15 @@
       },
       "subject_matter_labels": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },
@@ -91,10 +121,15 @@
       },
       "directory_codes_labels": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },
@@ -127,10 +162,15 @@
       },
       "author_labels": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },
@@ -181,7 +221,17 @@
       },
       "content": {
         "type": "text",
-        "analyzer": "standard"
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
+          }
+        }
       },
       "part_of_dossiers": {
         "type": "text",
@@ -194,10 +244,15 @@
       },
       "work_sequences": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },

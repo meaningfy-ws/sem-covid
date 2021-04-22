@@ -1,200 +1,211 @@
 {
-   "mappings":{
-      "properties":{
-         "authors":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
+  "mappings": {
+    "properties": {
+      "authors": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "dateCreated": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "date",
+            "format": "YYYY-MM-dd"
+          }
+        }
+      },
+      "dateDocument": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "date",
+            "format": "YYYY-MM-dd"
+          }
+        }
+      },
+      "directoryCodes": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "doc_id": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "eurovocConcepts": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "html_to_download": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          },
+          "contents": {
+            "type": "text"
+          }
+        }
+      },
+      "legalDateEntryIntoForce": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "date",
+            "format": "YYYY-MM-dd"
+          }
+        }
+      },
+      "legalDateSignature": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "date",
+            "format": "YYYY-MM-dd"
+          }
+        }
+      },
+      "legalElis": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "legalIdCelex": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "oj_sector": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "pdf_to_download": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          },
+          "contents": {
+            "type": "text"
+          }
+        }
+      },
+      "subjectMatters": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
+      },
+      "title": {
+        "properties": {
+          "datatype": {
+            "type": "text"
+          },
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text",
+            "analyzer": "english",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "token_count": {
+                "type": "token_count",
+                "analyzer": "english"
+              }
             }
-         },
-         "dateCreated":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"date",
-                  "format":"YYYY-MM-dd"
-               }
-            }
-         },
-         "dateDocument":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"date",
-                  "format":"YYYY-MM-dd"
-               }
-            }
-         },
-         "directoryCodes":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "doc_id":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "eurovocConcepts":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "html_to_download":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               },
-               "contents":{
-                  "type":"text"
-               }
-            }
-         },
-         "legalDateEntryIntoForce":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"date",
-                  "format":"YYYY-MM-dd"
-               }
-            }
-         },
-         "legalDateSignature":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"date",
-                  "format":"YYYY-MM-dd"
-               }
-            }
-         },
-         "legalElis":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "legalIdCelex":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "oj_sector":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "pdf_to_download":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               },
-               "contents":{
-                  "type":"text"
-               }
-            }
-         },
-         "subjectMatters":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "title":{
-            "properties":{
-               "datatype":{
-                  "type":"text"
-               },
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         },
-         "work":{
-            "properties":{
-               "type":{
-                  "type":"text"
-               },
-               "value":{
-                  "type":"text"
-               }
-            }
-         }
+          }
+        }
+      },
+      "work": {
+        "properties": {
+          "type": {
+            "type": "text"
+          },
+          "value": {
+            "type": "text"
+          }
+        }
       }
-   }
+    }
+  }
 }
