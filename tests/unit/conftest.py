@@ -6,6 +6,7 @@ import json
 import pytest
 import pandas as pd
 
+from ml_experiments.adapters.data_source import BinaryDataSource, TabularDatasource
 from ml_experiments.services.pwdb_base_experiment import PWDBBaseExperiment
 from ml_experiments.services.sc_wrangling.pwdb_transformer import transform_pwdb
 
@@ -166,114 +167,114 @@ def raw_pwdb_data():
         "recordId": "95",
         "modId": "137"
     },
-    {
-        "fieldData": {
-            "title": "State support for tourism - Access to finance",
-            "title_nationalLanguage": "Massnahmenpaket fuer den Tourismus - Bank",
-            "d_startDate": "03/06/2020",
-            "d_endDate": "12/31/2020",
-            "calc_country": "Austria",
-            "calc_minorCategory": "Supporting businesses to stay afloat",
-            "calc_subMinorCategory": "Access to finance",
-            "calc_identifier": "AT-2020-10/213",
-            "dateType": "Temporary",
-            "calc_creationDay": "03/31/2020",
-            "calc_lastUpdate": "01/04/2021",
-            "descriptionBackgroundInfo": "As the tourism industry was among the first sectors to be affected by the closure of enterprises and travel restrictions, the Austrian government - following dialogue with the social partners - announced a support package on 4 March to help ensure the liquidity of small and medium sized enterprises operating in tourism as well as in related business activities (i.e. leisure activities or transport services related to tourism). \r\rNext to this measure, also the other support measures (short-time work, 'Haertefallfonds', subsidy for fixed costs) are available to companies in the tourism industry.\r\r\r",
-            "descriptionContentOfMeasure": "Initially, bank guarantees amounting to \u20ac100 million were foreseen, but this was increased to around \u20ac1 billion on 22 March 2020. Also the costs for issuing the bank guarantees (1% administration fee and 0.8% recurring provision) will be covered by the state. The financial measures are administered by the specialised Austrian Bank for Tourism (OHT).\r\rIn addition, some regional states (Bundeslaender) have declared they they will support companies by taking on the payment of interest on the loans and some banks have announced they will keep interest rates low (at 1%). The administrative application has been simplified via an online form.\r\rFor companies which were already holding loans from the OHT bank (so called 'TOP-tourism-loans'), the repayment of the outstanding capital can be stopped during 2020 upon application.\r\r",
-            "descriptionUseOfMeasure": "\rSince 11 March 2020 (until 31 March), 4,000 requests for support were received and by 26 March, more than 150 bank guarantees, with a volume of \u20ac32.5 million had been drafted.",
-            "descriptionInvolvementOfSocialPartners": "The social partners were consulted.",
-            "socialPartner_form": "Direct consultation",
-            "socialPartner_role": "Consulted",
-            "calc_githubURL": "https://static.eurofound.europa.eu/covid19db/cases/AT-2020-10_213.html",
-            "isOccupation": "No",
-            "isSector": "Yes",
-            "sector_privateOrPublic": "Not specified",
-            "calc_type": "Legislations or other statutory regulations",
-            "statusOfRegulation": "New aspects included into existing measure"
-        },
-        "portalData": {
-            "sources": [
-                {
-                    "recordId": "62",
-                    "sources::title": "State support for Tourism",
-                    "sources::url": "https://orf.at/stories/3159574/",
-                    "sources::d_date": "03/27/2020",
-                    "modId": "5"
-                },
-                {
-                    "recordId": "63",
-                    "sources::title": "Package of measures for tourism (Ma\u00dfnahmenpaket f\u00fcr den Tourismus)",
-                    "sources::url": "https://www.bmlrt.gv.at/tourismus/corona-tourismus/corona-ma%C3%9Fnahmenpaket.html",
-                    "sources::d_date": "03/30/2020",
-                    "modId": "7"
-                },
-                {
-                    "recordId": "64",
-                    "sources::title": "WKO information on Tourism package",
-                    "sources::url": "https://www.wko.at/service/coronavirus-ueberbrueckungsfinanzierung.html",
-                    "sources::d_date": "03/31/2020",
-                    "modId": "6"
-                }
-            ],
-            "actors": [
-                {
-                    "recordId": "1",
-                    "actors::name": "National government",
-                    "modId": "3"
-                },
-                {
-                    "recordId": "12",
-                    "actors::name": "Public support service providers",
-                    "modId": "1"
-                }
-            ],
-            "targetGroups": [
-                {
-                    "recordId": "60",
-                    "targetGroups::name": "Sector specific set of companies",
-                    "modId": "12"
-                },
-                {
-                    "recordId": "62",
-                    "targetGroups::name": "SMEs",
-                    "modId": "12"
-                }
-            ],
-            "funding": [
-                {
-                    "recordId": "7",
-                    "funding::name": "National funds",
-                    "modId": "0"
-                }
-            ],
-            "occupations": [],
-            "sectors": [
-                {
-                    "recordId": "83",
-                    "sectors::code": "I55",
-                    "sectors::name": "Accommodation",
-                    "modId": "0"
-                },
-                {
-                    "recordId": "84",
-                    "sectors::code": "I56",
-                    "sectors::name": "Food and beverage service activities",
-                    "modId": "0"
-                },
-                {
-                    "recordId": "125",
-                    "sectors::code": "R93",
-                    "sectors::name": "Sports activities and amusement and recreation activities",
-                    "modId": "0"
-                }
-            ],
-            "updates": [],
-            "regions": []
-        },
-        "recordId": "96",
-        "modId": "117"
-    }]
+        {
+            "fieldData": {
+                "title": "State support for tourism - Access to finance",
+                "title_nationalLanguage": "Massnahmenpaket fuer den Tourismus - Bank",
+                "d_startDate": "03/06/2020",
+                "d_endDate": "12/31/2020",
+                "calc_country": "Austria",
+                "calc_minorCategory": "Supporting businesses to stay afloat",
+                "calc_subMinorCategory": "Access to finance",
+                "calc_identifier": "AT-2020-10/213",
+                "dateType": "Temporary",
+                "calc_creationDay": "03/31/2020",
+                "calc_lastUpdate": "01/04/2021",
+                "descriptionBackgroundInfo": "As the tourism industry was among the first sectors to be affected by the closure of enterprises and travel restrictions, the Austrian government - following dialogue with the social partners - announced a support package on 4 March to help ensure the liquidity of small and medium sized enterprises operating in tourism as well as in related business activities (i.e. leisure activities or transport services related to tourism). \r\rNext to this measure, also the other support measures (short-time work, 'Haertefallfonds', subsidy for fixed costs) are available to companies in the tourism industry.\r\r\r",
+                "descriptionContentOfMeasure": "Initially, bank guarantees amounting to \u20ac100 million were foreseen, but this was increased to around \u20ac1 billion on 22 March 2020. Also the costs for issuing the bank guarantees (1% administration fee and 0.8% recurring provision) will be covered by the state. The financial measures are administered by the specialised Austrian Bank for Tourism (OHT).\r\rIn addition, some regional states (Bundeslaender) have declared they they will support companies by taking on the payment of interest on the loans and some banks have announced they will keep interest rates low (at 1%). The administrative application has been simplified via an online form.\r\rFor companies which were already holding loans from the OHT bank (so called 'TOP-tourism-loans'), the repayment of the outstanding capital can be stopped during 2020 upon application.\r\r",
+                "descriptionUseOfMeasure": "\rSince 11 March 2020 (until 31 March), 4,000 requests for support were received and by 26 March, more than 150 bank guarantees, with a volume of \u20ac32.5 million had been drafted.",
+                "descriptionInvolvementOfSocialPartners": "The social partners were consulted.",
+                "socialPartner_form": "Direct consultation",
+                "socialPartner_role": "Consulted",
+                "calc_githubURL": "https://static.eurofound.europa.eu/covid19db/cases/AT-2020-10_213.html",
+                "isOccupation": "No",
+                "isSector": "Yes",
+                "sector_privateOrPublic": "Not specified",
+                "calc_type": "Legislations or other statutory regulations",
+                "statusOfRegulation": "New aspects included into existing measure"
+            },
+            "portalData": {
+                "sources": [
+                    {
+                        "recordId": "62",
+                        "sources::title": "State support for Tourism",
+                        "sources::url": "https://orf.at/stories/3159574/",
+                        "sources::d_date": "03/27/2020",
+                        "modId": "5"
+                    },
+                    {
+                        "recordId": "63",
+                        "sources::title": "Package of measures for tourism (Ma\u00dfnahmenpaket f\u00fcr den Tourismus)",
+                        "sources::url": "https://www.bmlrt.gv.at/tourismus/corona-tourismus/corona-ma%C3%9Fnahmenpaket.html",
+                        "sources::d_date": "03/30/2020",
+                        "modId": "7"
+                    },
+                    {
+                        "recordId": "64",
+                        "sources::title": "WKO information on Tourism package",
+                        "sources::url": "https://www.wko.at/service/coronavirus-ueberbrueckungsfinanzierung.html",
+                        "sources::d_date": "03/31/2020",
+                        "modId": "6"
+                    }
+                ],
+                "actors": [
+                    {
+                        "recordId": "1",
+                        "actors::name": "National government",
+                        "modId": "3"
+                    },
+                    {
+                        "recordId": "12",
+                        "actors::name": "Public support service providers",
+                        "modId": "1"
+                    }
+                ],
+                "targetGroups": [
+                    {
+                        "recordId": "60",
+                        "targetGroups::name": "Sector specific set of companies",
+                        "modId": "12"
+                    },
+                    {
+                        "recordId": "62",
+                        "targetGroups::name": "SMEs",
+                        "modId": "12"
+                    }
+                ],
+                "funding": [
+                    {
+                        "recordId": "7",
+                        "funding::name": "National funds",
+                        "modId": "0"
+                    }
+                ],
+                "occupations": [],
+                "sectors": [
+                    {
+                        "recordId": "83",
+                        "sectors::code": "I55",
+                        "sectors::name": "Accommodation",
+                        "modId": "0"
+                    },
+                    {
+                        "recordId": "84",
+                        "sectors::code": "I56",
+                        "sectors::name": "Food and beverage service activities",
+                        "modId": "0"
+                    },
+                    {
+                        "recordId": "125",
+                        "sectors::code": "R93",
+                        "sectors::name": "Sports activities and amusement and recreation activities",
+                        "modId": "0"
+                    }
+                ],
+                "updates": [],
+                "regions": []
+            },
+            "recordId": "96",
+            "modId": "117"
+        }]
 
     return raw_sample
 
@@ -342,3 +343,22 @@ def transformed_pwdb_json_fixture():
 @pytest.fixture(scope="session")
 def transformed_pwdb_dataframe():
     return pd.DataFrame.from_records(transformed_pwdb_json())
+
+
+class FakeBinaryDataSource(BinaryDataSource):
+
+    def __init__(self):
+        super().__init__("bongo", "bongo")
+
+    def _fetch(self) -> bytes:
+        return b"Bytes objects are immutable sequences of single bytes"
+
+
+class FakeTabularDataSource(TabularDatasource):
+
+    def __init__(self):
+        super().__init__("bongo")
+
+    def _fetch(self) -> pd.DataFrame:
+        d = {'col1': [1, 2, 12], 'col2': [3, 4, 13], 'col3': ['abs', 'qwe', 'bongo']}
+        return pd.DataFrame(data=d)
