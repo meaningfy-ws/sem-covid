@@ -1,47 +1,6 @@
-
-# ML Libraries
-scipy
-gensim
-numpy
-pandas
-sklearn
-spacy
-statsmodels
-
-
-# Testing Dependencies
-pytest
-pytest-bdd
-pytest-cov
-pytest-html
-pytest-mock
-coverage
-
-# Development  Dependencies
-progressbar2
-tqdm
-jupyterlab
-ipython
-plotly
-
-# Infra dependecies 
-
-elasticsearch
-es-pandas
-apache-airflow
-clean-text
-jq
-minio
-mlflow
-scrapy
-scrapy-splash
-tika
-sparqlwrapper
-rdflib
-python-dotenv
-requests
-
-# Documentation Dependencies
-
-sphinx
-recommonmark
+-r requirements/test.txt
+-r requirements/ml.txt
+-r requirements/jupyter.txt
+-r requirements/infra.txt
+-r requirements/flask.txt
+-r requirements/doc.txt
