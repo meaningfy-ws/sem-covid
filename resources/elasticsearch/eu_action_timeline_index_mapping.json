@@ -3,24 +3,25 @@
     "properties": {
       "title": {
         "type": "text",
-        "analyzer": "english"
-      },
-      "month_name": {
-        "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
           }
         }
       },
+      "month_name": {
+        "type": "date",
+        "format": "MMMM YYYY"
+      },
       "date": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
+        "type": "date",
+        "format": "D MMMM"
         }
       },
       "presscorner_links": {
@@ -70,15 +71,45 @@
       },
       "excerpt": {
         "type": "text",
-        "analyzer": "english"
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
+          }
+        }
       },
       "detail_title": {
         "type": "text",
-        "analyzer": "english"
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
+          }
+        }
       },
       "detail_content": {
         "type": "text",
-        "analyzer": "english"
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type":     "token_count",
+            "analyzer": "english"
+          }
+        }
       },
       "detail_metadata": {
         "properties": {
