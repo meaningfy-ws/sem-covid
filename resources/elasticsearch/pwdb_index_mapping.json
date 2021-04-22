@@ -3,7 +3,17 @@
     "properties": {
       "title": {
         "type": "text",
-        "analyzer": "english"
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
       },
       "title_national_language": {
         "type": "text",
@@ -11,27 +21,57 @@
       },
       "background_info_description": {
         "type": "text",
-        "analyzer": "english"
-      },
-      "content_of_measure_description": {
-        "type": "text",
-        "analyzer": "english"
-      },
-      "involvement_of_social_partners_description": {
-        "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "content_of_measure_description": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "involvement_of_social_partners_description": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
           }
         }
       },
       "use_of_measure_description": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
           }
         }
       },
@@ -119,7 +159,17 @@
         "properties": {
           "content": {
             "type": "text",
-            "analyzer": "english"
+            "analyzer": "english",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "token_count": {
+                "type": "token_count",
+                "analyzer": "english"
+              }
+            }
           },
           "content_path": {
             "type": "text"
