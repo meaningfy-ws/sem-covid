@@ -1,20 +1,47 @@
-elasticsearch
-requests
-sparqlwrapper
-tika
-ipython
+
+# ML Libraries
+scipy
+gensim
+numpy
+pandas
+sklearn
+spacy
+statsmodels
+
+
+# Testing Dependencies
 pytest
-pytest-html
-pytest-cov
-coverage
-minio
 pytest-bdd
+pytest-cov
+pytest-html
+pytest-mock
+coverage
 
-#
+# Development  Dependencies
+progressbar2
+tqdm
+jupyterlab
+ipython
+plotly
+
+# Infra dependecies 
+
+elasticsearch
+es-pandas
 apache-airflow
-tika
+clean-text
 jq
+minio
+mlflow
+scrapy
+scrapy-splash
+tika
+sparqlwrapper
+rdflib
+python-dotenv
+requests
 
-ipython==7.21.0
-Scrapy==2.4.1
-scrapy-splash==0.7.2
+# Documentation Dependencies
+
+sphinx
+recommonmark

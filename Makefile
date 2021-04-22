@@ -1,14 +1,19 @@
+include .env-dev
+
 BUILD_PRINT = \e[1;34mSTEP: \e[0m
 
 #-----------------------------------------------------------------------------
 # Basic commands
 #-----------------------------------------------------------------------------
 
+
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
 	@ pip install -r requirements.txt
+	@ python -m spacy download en_core_web_sm
 
+#	TODO refactor
 install-scrapy-dependencies:
 	@ echo "$(BUILD_PRINT)Installing Scrapy the requirements"
 	@ pip install --upgrade pip
@@ -22,6 +27,7 @@ stop-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
 	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
 
+# TODO refactor
 create-indexes:
 	@ echo "$(BUILD_PRINT)Creating indexes and their respective mappings"
 	@ curl -X PUT "http://localhost:9200/pwdb-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/pwdb_index_mapping.json
