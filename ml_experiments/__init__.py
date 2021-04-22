@@ -15,8 +15,6 @@ import warnings
 
 import dotenv
 
-dotenv.load_dotenv()
-
 logger = logging.getLogger(__name__)
 
 
@@ -148,4 +146,5 @@ class MLExperimentsConfig:
         return value
 
 
+dotenv.load_dotenv()
 config = MLExperimentsConfig()
