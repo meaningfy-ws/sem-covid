@@ -102,7 +102,9 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+
 .env
+
 .venv
 env/
 venv/
@@ -127,3 +129,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# project related
+cucumber_report.json
+junit_report.xml
+*.ldb
+.idea/
