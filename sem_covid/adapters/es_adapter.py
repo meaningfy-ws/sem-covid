@@ -28,7 +28,7 @@ class ESAdapter:
 
         self._es_pandas = es_pandas(hosts=[host_name],
                                     http_auth=(user, password),
-                                    port=port, http_compress=True, )
+                                    port=port, http_compress=True)
         self._es = self._es_pandas.es
 
     def info(self):
@@ -41,15 +41,10 @@ class ESAdapter:
     def get_index(self, index_name: str):
         return self._es.indices.get_alias(index=index_name)
 
-    def ingest_document(self, index_name: str, payload):
-        # TODO: try bulk_ingest
-        # https://github.com/elastic/elasticsearch-py/tree/master/examples/bulk-ingest
-        return self._es.index(index=index_name,
-                              body={'data': str(base64.b64encode(payload))})
-
     def get_document(self, index_name: str, id: str):
         return self._es.get(index=index_name, id=id)
 
+    # TODO:
     def get_document_by_id(self, index_name, document_id, exclude_binary_source: bool = True):
         warnings.warn("use get document instead", DeprecationWarning)
         if exclude_binary_source:

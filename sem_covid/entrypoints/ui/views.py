@@ -31,8 +31,8 @@ def index():
     topic = request.args.get('topic', None)
     document_category = request.args.get('document_category', None)
 
-    es_adapter = ESAdapter(host_name=config.ELASTIC_HOST, port=config.ELASTIC_PORT,
-                           user=config.ELASTIC_USER, password=config.ELASTIC_PASSWORD)
+    es_adapter = ESAdapter(host_name=config.ELASTICSEARCH_HOST, port=config.ELASTICSEARCH_PORT,
+                           user=config.ELASTICSEARCH_USER, password=config.ELASTICSEARCH_PASSWORD)
     form = SearchForm()
 
     query = {
@@ -88,8 +88,8 @@ def index():
 
 @app.route('/legal-initiatives/<id>', methods=['GET'])
 def legal_initiatives_detail(id):
-    es_adapter = ESAdapter(host_name=config.ELASTIC_HOST, port=config.ELASTIC_PORT,
-                           user=config.ELASTIC_USER, password=config.ELASTIC_PASSWORD)
+    es_adapter = ESAdapter(host_name=config.ELASTICSEARCH_HOST, port=config.ELASTICSEARCH_PORT,
+                           user=config.ELASTICSEARCH_USER, password=config.ELASTICSEARCH_PASSWORD)
     document = es_adapter.get_document('legal-initiatives-index', id)
 
     return render_template('legal_initiatives/detail.html', title='Legal Initiatives Document',
