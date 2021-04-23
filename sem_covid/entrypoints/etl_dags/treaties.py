@@ -22,22 +22,13 @@ from airflow.operators.python import PythonOperator
 from elasticsearch import Elasticsearch
 from tika import parser
 
+from sem_covid import config
 from sem_covid.adapters.minio_adapter import MinioAdapter
 
 logger = logging.getLogger(__name__)
 VERSION = '0.9.0'
 
-# TODO: rely on the project configs for these variables: both environment or Airflow vars
-
-URL: str = Variable.get('TREATIES_SPARQL_URL')
-APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
-
-ELASTICSEARCH_INDEX_NAME: str = Variable.get('TREATIES_ELASTIC_SEARCH_INDEX_NAME')
 ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')
-ELASTICSEARCH_HOSTNAME: str = Variable.get('ELASTICSEARCH_URL')
-ELASTICSEARCH_PORT: int = Variable.get('ELASTICSEARCH_PORT')
-ELASTICSEARCH_USER: str = Variable.get('ELASTICSEARCH_USERNAME')
-ELASTICSEARCH_PASSWORD: str = Variable.get('ELASTICSEARCH_PASSWORD')
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
@@ -45,15 +36,9 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
-TREATIES_JSON = Variable.get('TREATIES_JSON')
-MINIO_URL = Variable.get("MINIO_URL")
-TREATIES_BUCKET = Variable.get('TREATIES_BUCKET_NAME')
-MINIO_ACCESS_KEY = Variable.get("MINIO_ACCESS_KEY")
-MINIO_SECRET_KEY = Variable.get("MINIO_SECRET_KEY")
-
 
 def make_request(query):
-    wrapper = SPARQLWrapper(URL)
+    wrapper = SPARQLWrapper(config.TREATIES_SPARQL_URL)
     wrapper.setQuery(query)
     wrapper.setReturnFormat(JSON)
     return wrapper.query().convert()
@@ -61,7 +46,8 @@ def make_request(query):
 
 def get_treaty_items():
     logger.info(f'Start retrieving works of treaties..')
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, TREATIES_BUCKET)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.TREATIES_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -160,9 +146,10 @@ def get_treaty_items():
                 }
                 ORDER BY ?dateDocument"""
 
-    uploaded_bytes = minio.put_object_from_string(TREATIES_JSON, dumps(make_request(query)))
-    logger.info(f'Save query result to the {TREATIES_JSON} bucket')
-    logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + TREATIES_BUCKET + '] at ' + MINIO_URL)
+    uploaded_bytes = minio.put_object_from_string(config.TREATIES_JSON, dumps(make_request(query)))
+    logger.info(f'Save query result to the {config.TREATIES_JSON} bucket')
+    logger.info('Uploaded ' + str(
+        uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
 def download_file(source: dict, location_details: dict, file_name: str, minio: MinioAdapter):
@@ -180,11 +167,12 @@ def download_file(source: dict, location_details: dict, file_name: str, minio: M
 
 
 def download_treaties_items():
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, TREATIES_BUCKET)
-    treaties_json = loads(minio.get_object(TREATIES_JSON).decode('utf-8'))
-    logger.info(dumps(treaties_json)[:100])
-    treaties_json = treaties_json['results']['bindings']
-    treaties_items_count = len(treaties_json)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.TREATIES_BUCKET_NAME)
+    config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
+    logger.info(dumps(config.TREATIES_JSON)[:100])
+    config.TREATIES_JSON = config.TREATIES_JSON['results']['bindings']
+    treaties_items_count = len(config.TREATIES_JSON)
     logger.info(f'Found {treaties_items_count} treaties items.')
 
     counter = {
@@ -192,7 +180,7 @@ def download_treaties_items():
         'pdf': 0
     }
 
-    for index, item in enumerate(treaties_json):
+    for index, item in enumerate(config.TREATIES_JSON):
         if item.get('html_to_download') and item['html_to_download']['value'] != '/zip':
             filename = hashlib.sha256(item['html_to_download']['value'].encode('utf-8')).hexdigest()
 
@@ -214,26 +202,27 @@ def download_treaties_items():
         else:
             logger.exception(f"No treaties files has been found for {item['title']['value']}")
 
-    updated_treaties_json = loads(minio.get_object(TREATIES_JSON).decode('utf-8'))
-    updated_treaties_json['results']['bindings'] = treaties_json
-    minio.put_object_from_string(TREATIES_JSON, dumps(updated_treaties_json))
+    updated_config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
+    updated_config.TREATIES_JSON['results']['bindings'] = config.TREATIES_JSON
+    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_config.TREATIES_JSON))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
 
 def extract_document_content_with_tika():
-    logger.info(f'Using Apache Tika at {APACHE_TIKA_URL}')
-    logger.info(f'Loading resource files from {TREATIES_JSON}')
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, TREATIES_BUCKET)
-    treaties_json = loads(minio.get_object(TREATIES_JSON))['results']['bindings']
-    treaties_items_count = len(treaties_json)
+    logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
+    logger.info(f'Loading resource files from {config.TREATIES_JSON}')
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.TREATIES_BUCKET_NAME)
+    config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON))['results']['bindings']
+    treaties_items_count = len(config.TREATIES_JSON)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(treaties_json):
+    for index, item in enumerate(config.TREATIES_JSON):
         valid_sources = 0
         identifier = item['title']['value']
         logger.info(f'[{index + 1}/{treaties_items_count}] Processing {identifier}')
@@ -256,7 +245,7 @@ def extract_document_content_with_tika():
                     for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.pdf')):
                         logger.info(f'Parsing {Path(content_file).name}')
                         counter['general'] += 1
-                        parse_result = parser.from_file(str(content_file), APACHE_TIKA_URL)
+                        parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
 
                         if 'content' in parse_result:
                             # logger.info(f'Parse result (first 100 characters): {dumps(parse_result)[:100]}')
@@ -273,9 +262,9 @@ def extract_document_content_with_tika():
             filename = hashlib.sha256(item['html_to_download']['value'].encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    updated_treaties_json = loads(minio.get_object(TREATIES_JSON).decode('utf-8'))
-    updated_treaties_json['results']['bindings'] = treaties_json
-    minio.put_object_from_string(TREATIES_JSON, dumps(updated_treaties_json))
+    updated_config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
+    updated_config.TREATIES_JSON['results']['bindings'] = config.TREATIES_JSON
+    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_config.TREATIES_JSON))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
@@ -283,19 +272,21 @@ def extract_document_content_with_tika():
 def upload_processed_documents_to_elasticsearch():
     elasticsearch_client = Elasticsearch(
         [
-            f'{ELASTICSEARCH_PROTOCOL}://{ELASTICSEARCH_USER}:{ELASTICSEARCH_PASSWORD}@{ELASTICSEARCH_HOSTNAME}:{ELASTICSEARCH_PORT}'])
+            f'{ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_USER}:{config.ELASTICSEARCH_PASSWORD}@{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}'])
 
-    logger.info(f'Using ElasticSearch at {ELASTICSEARCH_PROTOCOL}://{ELASTICSEARCH_HOSTNAME}:{ELASTICSEARCH_PORT}')
+    logger.info(
+        f'Using ElasticSearch at {ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
 
-    logger.info(f'Loading files from {MINIO_URL}')
+    logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, TREATIES_BUCKET)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.TREATIES_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
         try:
-            logger.info(f'Sending to ElasticSearch ( {ELASTICSEARCH_INDEX_NAME} ) the object {obj.object_name}')
-            elasticsearch_client.index(index=ELASTICSEARCH_INDEX_NAME, id=obj.object_name.split("/")[1],
+            logger.info(f'Sending to ElasticSearch ( {config.TREATIES_IDX} ) the object {obj.object_name}')
+            elasticsearch_client.index(index=config.TREATIES_IDX, id=obj.object_name.split("/")[1],
                                        body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
@@ -319,10 +310,10 @@ dag = DAG('Treaty_Items_DAG_version_' + VERSION, default_args=default_args,
           schedule_interval="@once",
           max_active_runs=1)
 
-get_treaties_json_task = PythonOperator(task_id='Treaty_Items_task_version_' + VERSION,
-                                        python_callable=get_treaty_items, retries=1, dag=dag)
+get_config.TREATIES_JSON_task = PythonOperator(task_id='Treaty_Items_task_version_' + VERSION,
+                                               python_callable=get_treaty_items, retries=1, dag=dag)
 
-download_documents_from_treaties_json_task = PythonOperator(
+download_documents_from_config.TREATIES_JSON_task = PythonOperator(
     task_id=f'get_treaties_documents_task_version_{VERSION}',
     python_callable=download_treaties_items, retries=1, dag=dag)
 
@@ -334,4 +325,4 @@ upload_to_elastic_task = PythonOperator(
     task_id=f'treaties_elastic_upload_task_version_{VERSION}',
     python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
 
-get_treaties_json_task >> download_documents_from_treaties_json_task >> extract_content_with_tika_task >> upload_to_elastic_task
+get_config.TREATIES_JSON_task >> download_documents_from_config.TREATIES_JSON_task >> extract_content_with_tika_task >> upload_to_elastic_task
