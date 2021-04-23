@@ -27,6 +27,8 @@ from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishG
 logger = logging.getLogger(__name__)
 VERSION = '0.1.2'
 
+# TODO: rely on the project configs for these variables: both environment or Airflow vars
+
 APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
 ELASTICSEARCH_INDEX_NAME: str = Variable.get('IRISH_ACTION_TIMELINE_ELASTIC_SEARCH_INDEX_NAME')
 ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')

@@ -28,6 +28,8 @@ from sem_covid.adapters.minio_adapter import MinioAdapter
 logger = logging.getLogger(__name__)
 VERSION = '0.1.1'
 
+# TODO: rely on the project configs for these variables: both environment or Airflow vars
+
 URL: str = Variable.get('SPARQL_URL')
 APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
 
