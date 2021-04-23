@@ -57,7 +57,45 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     @property
+    def LEGAL_INITIATIVES_BUCKET_NAME(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def TREATIES_BUCKET_NAME(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
     def SC_PWDB_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def EU_ACTION_TIMELINE_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def IRISH_TIMELINE_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def EURLEX_TIMELINE_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def EURLEX_EXTENDED_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def LEGAL_INITIATIVES_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def TREATIES_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
         return BaseConfig.find_value()
 
@@ -102,6 +140,10 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     @property
+    def TREATIES_IDX(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
     def EU_ACTION_TIMELINE_IDX(self) -> str:
         return BaseConfig.find_value()
 
@@ -111,6 +153,26 @@ class SemCovidConfig(object):
 
     @property
     def APACHE_TIKA_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def SPLASH_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def EURLEX_SPARQL_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def LEGAL_INITIATIVES_SPARQL_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def LEGAL_INITIATIVES_IDX(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def TREATIES_SPARQL_URL(self) -> str:
         return BaseConfig.find_value()
 
 

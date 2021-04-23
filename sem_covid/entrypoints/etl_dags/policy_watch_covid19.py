@@ -21,8 +21,6 @@ from sem_covid import config
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.sc_wrangling.pwdb_transformer import transform_pwdb
 
-# TODO: rely on the project configs for these variables: both environment or Airflow vars
-
 VERSION = '0.10.1'
 
 elasticsearch_protocol: str = Variable.get("ELASTICSEARCH_PROTOCOL")
