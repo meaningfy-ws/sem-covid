@@ -21,6 +21,8 @@ from tika import parser
 
 from sem_covid.adapters.minio_adapter import MinioAdapter
 
+# TODO: rely on the project configs for these variables: both environment or Airflow vars
+
 VERSION = '0.10.1'
 apache_tika_url = Variable.get("APACHE_TIKA_URL")
 elasticsearch_index_name = Variable.get("PWDB_ELASTIC_SEARCH_INDEX_NAME")

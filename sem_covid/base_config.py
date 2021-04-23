@@ -18,7 +18,11 @@ class BaseConfig(object):
     @staticmethod
     def find_value(default_value: str = None) -> str:
         """
-            Will search for an environment variable identical to the caller this function.
+            Will search for a variable identical to the caller this function.
+            In teh following sources:
+            - environment
+            - Airflow
+            - vault (kv)
         :param default_value: default value if the environment variable does not exist
         :return:
         """
