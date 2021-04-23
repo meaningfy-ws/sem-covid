@@ -9,6 +9,7 @@
 import inspect
 import logging
 import os
+from airflow.models import Variable
 
 logger = logging.getLogger(__name__)
 
@@ -28,5 +29,13 @@ class BaseConfig(object):
         """
         caller_function_name = inspect.stack()[1][3]
         value = os.environ.get(caller_function_name, default=default_value)
+        if not value:
+            try:
+                value = Variable.get(caller_function_name)
+            except Exception as ex:
+                if not default_value:
+                    raise ex
+                else:
+                    value = default_value
         logger.debug(value)
         return value
