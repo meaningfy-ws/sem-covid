@@ -1,5 +1,4 @@
-include .env-dev
-
+SHELL=/bin/bash -o pipefail
 BUILD_PRINT = \e[1;34mSTEP: \e[0m
 
 #-----------------------------------------------------------------------------
@@ -43,3 +42,30 @@ all: install
 test:
 	@ echo "$(BUILD_PRINT)Running the tests"
 	@ pytest -s --html=report.html --self-contained-html
+
+
+# Getting secrets from Vault
+
+# Testing whether an env variable is set or not
+guard-%:
+	@ if [ "${${*}}" = "" ]; then \
+        echo "Environment variable $* not set"; \
+        exit 1; \
+	fi
+
+# Testing that vault is installed
+vault-installed: #; @which vault1 > /dev/null
+	@ if ! hash vault 2>/dev/null; then \
+        echo "Vault is not installed, refer to https://www.vaultproject.io/downloads"; \
+        exit 1; \
+	fi
+
+# Get secrets in dotenv format
+vault_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
+	@ echo "Writing the mfy/sem-covid secret from Vault to .env"
+	@ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" > .env
+
+# Get secrets in json format
+vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
+	@ echo "Writing the mfy/sem-covid secret from Vault to variables.json"
+	@ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data" > variables.json
