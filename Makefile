@@ -30,13 +30,12 @@ stop-splash:
 # TODO refactor
 create-indexes:
 	@ echo "$(BUILD_PRINT)Creating indexes and their respective mappings"
-	@ curl -X PUT "http://localhost:9200/pwdb-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/pwdb_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/eurlex-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/eurlex_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/legal-initiatives-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/legal_initiatives_mapping.json
-	@ curl -X PUT "http://localhost:9200/treaties-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/treaties_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/legal-initiatives-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/legal_initiatives_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/eu-action-timeline-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/eu_action_timeline_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/irish-action-timeline-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/irish_action_timeline_index_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_pwdb" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/pwdb_index_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_eu_cellar" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/eu_cellar_index_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_legal_initiatives -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/legal_initiatives_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_treaties" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/treaties_index_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_eu_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/eu_timeline_index_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_ireland_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ireland_timeline_index_mapping.json
 
 all: install
 
