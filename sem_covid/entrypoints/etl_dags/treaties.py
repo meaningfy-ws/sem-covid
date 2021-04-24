@@ -17,24 +17,21 @@ from pathlib import Path
 import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
-from airflow.models import Variable
 from airflow.operators.python import PythonOperator
-from elasticsearch import Elasticsearch
 from tika import parser
 
 from sem_covid import config
+from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 
-logger = logging.getLogger(__name__)
+
 VERSION = '0.9.0'
-
-ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')
-
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
+logger = logging.getLogger(__name__)
 
 
 def make_request(query):
@@ -202,9 +199,9 @@ def download_treaties_items():
         else:
             logger.exception(f"No treaties files has been found for {item['title']['value']}")
 
-    updated_config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    updated_config.TREATIES_JSON['results']['bindings'] = config.TREATIES_JSON
-    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_config.TREATIES_JSON))
+    updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
+    updated_treaties_json['results']['bindings'] = config.TREATIES_JSON
+    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_treaties_json))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -248,7 +245,6 @@ def extract_document_content_with_tika():
                         parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
 
                         if 'content' in parse_result:
-                            # logger.info(f'Parse result (first 100 characters): {dumps(parse_result)[:100]}')
                             item['content'].append(parse_result['content'])
                             counter['success'] += 1
 
@@ -262,20 +258,21 @@ def extract_document_content_with_tika():
             filename = hashlib.sha256(item['html_to_download']['value'].encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    updated_config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    updated_config.TREATIES_JSON['results']['bindings'] = config.TREATIES_JSON
-    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_config.TREATIES_JSON))
+    updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
+    updated_treaties_json['results']['bindings'] = config.TREATIES_JSON
+    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_treaties_json))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
 def upload_processed_documents_to_elasticsearch():
-    elasticsearch_client = Elasticsearch(
-        [
-            f'{ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_USER}:{config.ELASTICSEARCH_PASSWORD}@{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}'])
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+                           config.ELASTICSEARCH_PORT,
+                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_PASSWORD)
 
     logger.info(
-        f'Using ElasticSearch at {ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
+        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
@@ -286,8 +283,8 @@ def upload_processed_documents_to_elasticsearch():
     for obj in objects:
         try:
             logger.info(f'Sending to ElasticSearch ( {config.TREATIES_IDX} ) the object {obj.object_name}')
-            elasticsearch_client.index(index=config.TREATIES_IDX, id=obj.object_name.split("/")[1],
-                                       body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+            es_adapter.index(index_name=config.TREATIES_IDX, document_id=obj.object_name.split("/")[1],
+                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
@@ -310,10 +307,10 @@ dag = DAG('Treaty_Items_DAG_version_' + VERSION, default_args=default_args,
           schedule_interval="@once",
           max_active_runs=1)
 
-get_config.TREATIES_JSON_task = PythonOperator(task_id='Treaty_Items_task_version_' + VERSION,
+download_task = PythonOperator(task_id='Treaty_Items_task_version_' + VERSION,
                                                python_callable=get_treaty_items, retries=1, dag=dag)
 
-download_documents_from_config.TREATIES_JSON_task = PythonOperator(
+download_documents_task = PythonOperator(
     task_id=f'get_treaties_documents_task_version_{VERSION}',
     python_callable=download_treaties_items, retries=1, dag=dag)
 
@@ -325,4 +322,4 @@ upload_to_elastic_task = PythonOperator(
     task_id=f'treaties_elastic_upload_task_version_{VERSION}',
     python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
 
-get_config.TREATIES_JSON_task >> download_documents_from_config.TREATIES_JSON_task >> extract_content_with_tika_task >> upload_to_elastic_task
+download_task >> download_documents_task >> extract_content_with_tika_task >> upload_to_elastic_task
