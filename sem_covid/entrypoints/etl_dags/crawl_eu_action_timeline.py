@@ -4,24 +4,21 @@ from datetime import datetime, timedelta
 from json import loads, dumps
 
 from airflow import DAG
-from airflow.models import Variable
 from airflow.operators.python import PythonOperator
-from elasticsearch.client import Elasticsearch
 from scrapy.crawler import CrawlerProcess
 from tika import parser
 
 import sem_covid.services.crawlers.scrapy_crawlers.settings as crawler_config
 from sem_covid import config
+from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
 
-logger = logging.getLogger(__name__)
+
 VERSION = '0.1.0'
-
-ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')
 TIKA_FILE_PREFIX = 'tika/'
-
 CONTENT_PATH_KEY = 'detail_content'
+logger = logging.getLogger(__name__)
 
 
 def extract_settings_from_module(module):
@@ -79,13 +76,13 @@ def extract_document_content_with_tika():
 
 
 def upload_processed_documents_to_elasticsearch():
-    elasticsearch_client = Elasticsearch(
-        [
-            f'{ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_USER}:{config.ELASTICSEARCH_PASSWORD}@{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}'])
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+                           config.ELASTICSEARCH_PORT,
+                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_PASSWORD)
 
     logger.info(
-        f'Using ElasticSearch at {ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
-
+        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
     logger.info(f'Loading files from {config.MINIO_URL}')
 
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
@@ -95,8 +92,8 @@ def upload_processed_documents_to_elasticsearch():
     for obj in objects:
         try:
             logger.info(f'Sending to ElasticSearch ( {config.EU_ACTION_TIMELINE_IDX} ) the object {obj.object_name}')
-            elasticsearch_client.index(index=config.EU_ACTION_TIMELINE_IDX, id=obj.object_name.split("/")[1],
-                                       body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+            es_adapter.index(index_name=config.EU_ACTION_TIMELINE_IDX, document_id=obj.object_name.split("/")[1],
+                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)

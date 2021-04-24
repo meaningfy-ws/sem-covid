@@ -10,26 +10,22 @@ from pathlib import Path
 import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
-from airflow.models import Variable
 from airflow.operators.python import PythonOperator
-from elasticsearch import Elasticsearch
 from jq import compile
 from tika import parser
 
 from sem_covid import config
+from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 
-logger = logging.getLogger(__name__)
 
 VERSION = '0.0.7'
-
-ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')
-
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
+logger = logging.getLogger(__name__)
 
 transformation = '''{
 work: .work.value,
@@ -367,12 +363,13 @@ def extract_document_content_with_tika():
 
 
 def upload_processed_documents_to_elasticsearch():
-    elasticsearch_client = Elasticsearch(
-        [
-            f'{ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_USER}:{config.ELASTICSEARCH_PASSWORD}@{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}'])
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+                           config.ELASTICSEARCH_PORT,
+                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_PASSWORD)
 
     logger.info(
-        f'Using ElasticSearch at {ELASTICSEARCH_PROTOCOL}://{config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
+        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
@@ -382,8 +379,8 @@ def upload_processed_documents_to_elasticsearch():
     for obj in objects:
         try:
             logger.info(f'Sending to ElasticSearch ( {config.EU_CELLAR_IDX} ) the object {obj.object_name}')
-            elasticsearch_client.index(index=config.EU_CELLAR_IDX, id=obj.object_name.split("/")[1],
-                                       body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+            es_adapter.index(index_name=config.EU_CELLAR_IDX, document_id=obj.object_name.split("/")[1],
+                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
@@ -410,11 +407,11 @@ dag = DAG(
     concurrency=1
 )
 
-get_config.EURLEX_EXTENDED_JSON_task = PythonOperator(
+download_task = PythonOperator(
     task_id=f'Download',
     python_callable=get_covid19_items, retries=1, dag=dag)
 
-download_documents_and_enrich_config.EURLEX_EXTENDED_JSON_task = PythonOperator(
+download_documents_and_enrich_json_task = PythonOperator(
     task_id=f'Enrich',
     python_callable=download_covid19_items, retries=1, dag=dag)
 
@@ -426,4 +423,4 @@ upload_to_elastic_task = PythonOperator(
     task_id=f'Elasticsearch',
     python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
 
-get_config.EURLEX_EXTENDED_JSON_task >> download_documents_and_enrich_config.EURLEX_EXTENDED_JSON_task >> extract_content_with_tika_task >> upload_to_elastic_task
+download_task >> download_documents_and_enrich_json_task >> extract_content_with_tika_task >> upload_to_elastic_task

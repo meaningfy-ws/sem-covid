@@ -12,25 +12,20 @@ from datetime import datetime, timedelta
 
 import requests
 from airflow import DAG
-from airflow.models import Variable
 from airflow.operators.python import PythonOperator
-from elasticsearch import Elasticsearch
 from tika import parser
 
 from sem_covid import config
+from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.sc_wrangling.pwdb_transformer import transform_pwdb
 
 VERSION = '0.10.1'
-
-elasticsearch_protocol: str = Variable.get("ELASTICSEARCH_PROTOCOL")
-
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
-
 logger = logging.getLogger(__name__)
 
 
@@ -130,17 +125,11 @@ def process_using_tika():
 
 
 def put_elasticsearch_documents():
-    elasticsearch_client = Elasticsearch([elasticsearch_protocol +
-                                          '://' +
-                                          config.ELASTICSEARCH_USER +
-                                          ':' +
-                                          config.ELASTICSEARCH_PASSWORD +
-                                          '@' +
-                                          config.ELASTICSEARCH_HOST +
-                                          ':' +
-                                          str(config.ELASTICSEARCH_PORT)])
-
-    logger.info('Using ElasticSearch at ' + elasticsearch_protocol + '://' + config.ELASTICSEARCH_HOST + ':' + str(
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+                           config.ELASTICSEARCH_PORT,
+                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_PASSWORD)
+    logger.info('Using ElasticSearch at ' + config.ELASTICSEARCH_HOST + ':' + str(
         config.ELASTICSEARCH_PORT))
 
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.PWDB_BUCKET_NAME)
@@ -153,8 +142,8 @@ def put_elasticsearch_documents():
                         config.PWDB_IDX +
                         ' ) the file ' +
                         obj.object_name)
-            elasticsearch_client.index(index=config.PWDB_IDX, id=obj.object_name.split("/")[1],
-                                       body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
+            es_adapter.index(index_name=config.PWDB_IDX, document_id=obj.object_name.split("/")[1],
+                             document_body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)

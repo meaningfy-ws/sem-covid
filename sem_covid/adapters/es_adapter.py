@@ -9,7 +9,6 @@
 # To read:
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html
 
-import base64
 import warnings
 from typing import List, Union
 
@@ -17,7 +16,6 @@ import pandas as pd
 from es_pandas import es_pandas
 
 
-# TODO: refactor this adapter for production
 # Needs:
 # - dump an index, as JSON, so that it can be ingested afterwards exactly as is
 #   stripped, if necessary of internal ES fields e.g. field_name.keywords,
@@ -31,28 +29,11 @@ class ESAdapter:
                                     port=port, http_compress=True)
         self._es = self._es_pandas.es
 
-    def info(self):
-        return self._es.cat.health()
-
-    def create_index(self, index_name: str):
-        # ignore 400 because it means that the index already exist
-        return self._es.indices.create(index=index_name, ignore=400)
-
-    def get_index(self, index_name: str):
-        return self._es.indices.get_alias(index=index_name)
+    def index(self, index_name, document_id, document_body):
+        self._es.index(index=index_name, id=document_id, body=document_body)
 
     def get_document(self, index_name: str, id: str):
         return self._es.get(index=index_name, id=id)
-
-    # TODO:
-    def get_document_by_id(self, index_name, document_id, exclude_binary_source: bool = True):
-        warnings.warn("use get document instead", DeprecationWarning)
-        if exclude_binary_source:
-            result = self._es.get(index=index_name, id=document_id)
-        else:
-            result = self._es.get(index=index_name, id=document_id, _source_excludes=["data"])
-
-        return result
 
     def search(self, index_name: str, query: str, exclude_binary_source: bool = True):
         if exclude_binary_source:
