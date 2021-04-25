@@ -21,8 +21,6 @@ PWDB_REFACTORING_RULES = '''.[] | {
     "Use of measure": .fieldData.descriptionUseOfMeasure,
     "Actors": [.portalData.actors[] |  ."actors::name" ],
     "Target groups": [.portalData.targetGroups[] | ."targetGroups::name"],
-    "Sectors": [.portalData.sectors[] | ."sectors::name" ], 
-    "Occupations": [.portalData.occupations[] | ."occupations::name"], 
     "Funding": [.portalData.funding[] | ."funding::name" ],
     "Views of social partners": .fieldData.descriptionInvolvementOfSocialPartners,
     "Form of social partner involvement": .fieldData.socialPartnerform,
