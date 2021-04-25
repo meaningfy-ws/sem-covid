@@ -11,6 +11,65 @@
           }
         }
       },
+      "comment": {
+        "properties": {
+          "datatype": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "type": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "value": {
+            "type": "text",
+            "analyzer": "english",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "token_count": {
+                "type": "token_count",
+                "analyzer": "english"
+              }
+            }
+          }
+        }
+      },
+      "content": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "content_path": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
       "dateCreated": {
         "properties": {
           "datatype": {
