@@ -6,7 +6,17 @@
       },
       "title": {
         "type": "text",
-        "analyzer": "english"
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
       },
       "cdm_types": {
         "type": "text",
@@ -220,6 +230,38 @@
           "token_count": {
             "type": "token_count",
             "analyzer": "english"
+          }
+        }
+      },
+      "part_of_dossiers": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "work_sequences": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "related_to_works": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
           }
         }
       }
