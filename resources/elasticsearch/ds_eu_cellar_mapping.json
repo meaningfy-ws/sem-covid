@@ -232,6 +232,12 @@
             "analyzer": "english"
           }
         }
+      },
+      "eu_cellar_core": {
+        "type": "boolean"
+      },
+      "eu_cellar_extended": {
+        "type": "boolean"
       }
     }
   }
