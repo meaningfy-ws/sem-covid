@@ -59,6 +59,12 @@ vault-installed: #; @which vault1 > /dev/null
 vault_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
    @ echo "Writing the mfy/sem-covid secret from Vault to .env"
    @ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" > .env
+
+# Get secrets in dotenv format
+vault_experiments_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
+   @ echo "Writing the mfy/sem-covid secret from Vault to .env"
+   @ vault kv get -format="json" mfy/sem_covid_experiments | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" > .env
+   
 # Get secrets in json format
 vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
    @ echo "Writing the mfy/sem-covid secret from Vault to variables.json"
