@@ -14,7 +14,6 @@ from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
 
-
 VERSION = '0.1.0'
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_PATH_KEY = 'detail_content'
@@ -47,15 +46,15 @@ def extract_document_content_with_tika():
     logger.info(f'Loading resource files from {config.EU_ACTION_TIMELINE_JSON}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.EU_TIMELINE_BUCKET_NAME)
-    config.EU_ACTION_TIMELINE_JSON = loads(minio.get_object(config.EU_ACTION_TIMELINE_JSON))
-    eu_action_timeline_items_count = len(config.EU_ACTION_TIMELINE_JSON)
+    json_content = loads(minio.get_object(config.EU_ACTION_TIMELINE_JSON))
+    eu_action_timeline_items_count = len(json_content)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(config.EU_ACTION_TIMELINE_JSON):
+    for index, item in enumerate(json_content):
         identifier = item['title']
         logger.info(f'[{index + 1}/{eu_action_timeline_items_count}] Processing {identifier}')
 
@@ -70,7 +69,7 @@ def extract_document_content_with_tika():
         filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
         minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.EU_ACTION_TIMELINE_JSON, dumps(config.EU_ACTION_TIMELINE_JSON))
+    minio.put_object_from_string(config.EU_ACTION_TIMELINE_JSON, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
@@ -93,7 +92,7 @@ def upload_processed_documents_to_elasticsearch():
         try:
             logger.info(f'Sending to ElasticSearch ( {config.EU_ACTION_TIMELINE_IDX} ) the object {obj.object_name}')
             es_adapter.index(index_name=config.EU_ACTION_TIMELINE_IDX, document_id=obj.object_name.split("/")[1],
-                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+                             document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
