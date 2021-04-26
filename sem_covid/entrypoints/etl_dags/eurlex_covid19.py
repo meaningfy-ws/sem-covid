@@ -62,6 +62,324 @@ htmls_to_download: .htmls_to_download.value | split("| ")
 
 SEARCH_RULE = ".[] | "
 
+eurlex_query = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT
+    ?work ?title
+
+    (group_concat(DISTINCT ?cdm_type; separator="| ") as ?cdm_types)
+    (group_concat(DISTINCT ?cdm_type_label; separator="| ") as ?cdm_type_labels)
+
+    (group_concat(DISTINCT ?resource_type; separator="| ") as ?resource_types)
+    (group_concat(DISTINCT ?resource_type_label; separator="| ") as ?resource_type_labels)
+
+    (group_concat(DISTINCT ?eurovoc_concept; separator="| ") as ?eurovoc_concepts)
+    (group_concat(DISTINCT ?eurovoc_concept_label; separator="| ") as ?eurovoc_concept_labels)
+
+    (group_concat(DISTINCT ?subject_matter; separator="| ") as ?subject_matters)
+    (group_concat(DISTINCT ?subject_matter_label; separator="| ") as ?subject_matter_labels)
+
+    (group_concat(DISTINCT ?directory_code; separator="| ") as ?directory_codes)
+    (group_concat(DISTINCT ?directory_code_label; separator="| ") as ?directory_codes_labels)
+
+    (group_concat(DISTINCT ?celex; separator="| ") as ?celex_numbers)
+    (group_concat(DISTINCT ?legal_eli; separator="| ") as ?legal_elis)
+    (group_concat(DISTINCT ?id_document; separator="| ") as ?id_documents)
+    (group_concat(DISTINCT ?same_as_uri; separator="| ") as ?same_as_uris)
+
+    (group_concat(DISTINCT ?author; separator="| ") as ?authors)
+    (group_concat(DISTINCT ?author_label; separator="| ") as ?author_labels)
+
+    (group_concat(DISTINCT ?full_oj; separator="| ") as ?full_ojs)
+    (group_concat(DISTINCT ?oj_sector; separator="| ") as ?oj_sectors)
+    (group_concat(DISTINCT ?internal_comment; separator="| ") as ?internal_comments)
+    (group_concat(DISTINCT ?in_force; separator="| ") as ?is_in_force)
+
+    (group_concat(DISTINCT ?date_document; separator="| ") as ?dates_document)
+    (group_concat(DISTINCT ?date_created; separator="| ") as ?dates_created)
+    (group_concat(DISTINCT ?legal_date_entry_into_force; separator="| ") as ?legal_dates_entry_into_force)
+    (group_concat(DISTINCT ?legal_date_signature; separator="| ") as ?legal_dates_signature)
+
+    (group_concat(DISTINCT ?manif_pdf; separator="| ") as ?manifs_pdf)
+    (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
+    (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
+    (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
+WHERE {
+    # selector criteria
+    VALUES ?expr_lang { lang:ENG}
+    ?work cdm:resource_legal_comment_internal ?comment .
+    FILTER (regex(str(?comment),'COVID19'))
+    FILTER NOT EXISTS { ?work cdm:work_embargo [] . }
+
+    # metadata - classification criteria
+    OPTIONAL {
+        ?work a ?cdm_type .
+        OPTIONAL {
+            ?cdm_type skos:prefLabel ?cdm_type_label .
+            FILTER (lang(?cdm_type_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:work_has_resource-type ?resource_type .
+        OPTIONAL {
+            ?resource_type skos:prefLabel ?resource_type_label .
+            FILTER (lang(?resource_type_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
+        OPTIONAL {
+            ?subject_matter skos:prefLabel ?subject_matter_label .
+            FILTER (lang(?subject_matter_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_is_about_concept_directory-code ?directory_code .
+        OPTIONAL {
+            ?directory_code skos:prefLabel ?directory_code_label .
+            FILTER (lang(?directory_code_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
+        OPTIONAL {
+            ?eurovoc_concept skos:prefLabel ?eurovoc_concept_label .
+            FILTER (lang(?eurovoc_concept_label)="en")
+        }
+    }
+
+    # metadata - descriptive criteria
+    OPTIONAL {
+        ?work cdm:work_created_by_agent ?author .
+        OPTIONAL {
+            ?author skos:prefLabel ?author_label .
+            FILTER (lang(?author_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_in-force ?in_force .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_id_sector ?oj_sector .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_published_in_official-journal ?full_oj .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_comment_internal ?internal_comment .
+    }
+    OPTIONAL {
+        ?work cdm:work_date_document ?date_document .
+    }
+    OPTIONAL {
+        ?work cdm:work_date_creation ?date_created .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_date_signature ?legal_date_signature .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
+    }
+
+    # metadata - identification properties
+    OPTIONAL {
+        ?work cdm:resource_legal_id_celex ?celex .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_eli ?legal_eli .
+    }
+    OPTIONAL {
+        ?work cdm:work_id_document ?id_document .
+    }
+    OPTIONAL {
+        ?work owl:sameAs ?same_as_uri .
+    }
+
+    # diving down FRBR structure for the title and the content
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+             cdm:expression_uses_language ?expr_lang ;
+             cdm:expression_title ?title .
+
+        OPTIONAL {
+            ?manif_pdf cdm:manifestation_manifests_expression ?exp ;
+                       cdm:manifestation_type ?type_pdf .
+            FILTER (str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
+        }
+        OPTIONAL {
+            ?manif_html cdm:manifestation_manifests_expression ?exp ;
+                        cdm:manifestation_type ?type_html .
+            FILTER (str(?type_html) in ('html', 'xhtml'))
+        }
+    }
+    BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
+    BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+}
+GROUP BY ?work ?title
+ORDER BY ?work ?title"""
+
+eurlex_extended_query = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+        PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+        PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+        SELECT DISTINCT
+            ?work ?title
+            (group_concat(DISTINCT ?cdm_type; separator="| ") as ?cdm_types)
+            (group_concat(DISTINCT ?cdm_type_label; separator="| ") as ?cdm_type_labels)
+
+            (group_concat(DISTINCT ?resource_type; separator="| ") as ?resource_types)
+            (group_concat(DISTINCT ?resource_type_label; separator="| ") as ?resource_type_labels)
+
+            (group_concat(DISTINCT ?eurovoc_concept; separator="| ") as ?eurovoc_concepts)
+            (group_concat(DISTINCT ?eurovoc_concept_label; separator="| ") as ?eurovoc_concept_labels)
+
+            (group_concat(DISTINCT ?subject_matter; separator="| ") as ?subject_matters)
+            (group_concat(DISTINCT ?subject_matter_label; separator="| ") as ?subject_matter_labels)
+
+            (group_concat(DISTINCT ?directory_code; separator="| ") as ?directory_codes)
+            (group_concat(DISTINCT ?directory_code_label; separator="| ") as ?directory_codes_labels)
+
+            (group_concat(DISTINCT ?celex; separator="| ") as ?celex_numbers)
+            (group_concat(DISTINCT ?legal_eli; separator="| ") as ?legal_elis)
+            (group_concat(DISTINCT ?id_document; separator="| ") as ?id_documents)
+            (group_concat(DISTINCT ?same_as_uri; separator="| ") as ?same_as_uris)
+
+            (group_concat(DISTINCT ?author; separator="| ") as ?authors)
+            (group_concat(DISTINCT ?author_label; separator="| ") as ?author_labels)
+
+            (group_concat(DISTINCT ?full_oj; separator="| ") as ?full_ojs)
+            (group_concat(DISTINCT ?oj_sector; separator="| ") as ?oj_sectors)
+            (group_concat(DISTINCT ?internal_comment; separator="| ") as ?internal_comments)
+            (group_concat(DISTINCT ?in_force; separator="| ") as ?is_in_force)
+
+            (group_concat(DISTINCT ?date_document; separator="| ") as ?dates_document)
+            (group_concat(DISTINCT ?date_created; separator="| ") as ?dates_created)
+            (group_concat(DISTINCT ?legal_date_entry_into_force; separator="| ") as ?legal_dates_entry_into_force)
+            (group_concat(DISTINCT ?legal_date_signature; separator="| ") as ?legal_dates_signature)
+
+            (group_concat(DISTINCT ?manif_pdf; separator="| ") as ?manifs_pdf)
+            (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
+            (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
+            (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
+        WHERE {
+            VALUES ?expr_lang { lang:ENG}
+
+            VALUES ?eurovoc_concept {<http://eurovoc.europa.eu/1759> <http://eurovoc.europa.eu/1758> <http://eurovoc.europa.eu/838> <http://eurovoc.europa.eu/837> <http://eurovoc.europa.eu/c_abfaf2ea> <http://eurovoc.europa.eu/192> <http://eurovoc.europa.eu/3371> <http://eurovoc.europa.eu/1756> <http://eurovoc.europa.eu/c_9b88f778> <http://eurovoc.europa.eu/c_60d3928d> <http://eurovoc.europa.eu/3370> <http://eurovoc.europa.eu/1754> <http://eurovoc.europa.eu/c_5b447e3a> <http://eurovoc.europa.eu/5612> <http://eurovoc.europa.eu/3906> <http://eurovoc.europa.eu/3588> <http://eurovoc.europa.eu/7131> <http://eurovoc.europa.eu/3086> <http://eurovoc.europa.eu/82> <http://eurovoc.europa.eu/779> <http://eurovoc.europa.eu/886> }
+
+            ?work cdm:work_date_document ?date_document .
+            FILTER ( strdt(?date_document, xsd:date) > "2020-01-01"^^xsd:date)
+
+            ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
+            OPTIONAL {
+                ?eurovoc_concept skos:prefLabel ?eurovoc_concept_label .
+                FILTER (lang(?eurovoc_concept_label)="en")
+            }
+
+            OPTIONAL {
+                ?work a ?cdm_type .
+                OPTIONAL {
+                    ?cdm_type skos:prefLabel ?cdm_type_label .
+                    FILTER (lang(?cdm_type_label)="en")
+                }
+            }
+            OPTIONAL {
+                ?work cdm:work_has_resource-type ?resource_type .
+                OPTIONAL {
+                    ?resource_type skos:prefLabel ?resource_type_label .
+                    FILTER (lang(?resource_type_label)="en")
+                }
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
+                OPTIONAL {
+                    ?subject_matter skos:prefLabel ?subject_matter_label .
+                    FILTER (lang(?subject_matter_label)="en")
+                }
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_is_about_concept_directory-code ?directory_code .
+                OPTIONAL {
+                    ?directory_code skos:prefLabel ?directory_code_label .
+                    FILTER (lang(?directory_code_label)="en")
+                }
+            }
+
+            OPTIONAL {
+                ?work cdm:work_created_by_agent ?author .
+                OPTIONAL {
+                    ?author skos:prefLabel ?author_label .
+                    FILTER (lang(?author_label)="en")
+                }
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_in-force ?in_force .
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_id_sector ?oj_sector .
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_published_in_official-journal ?full_oj .
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_comment_internal ?internal_comment .
+            }
+
+            OPTIONAL {
+                ?work cdm:work_date_creation ?date_created .
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_date_signature ?legal_date_signature .
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
+            }
+
+            OPTIONAL {
+                ?work cdm:resource_legal_id_celex ?celex .
+            }
+            OPTIONAL {
+                ?work cdm:resource_legal_eli ?legal_eli .
+            }
+            OPTIONAL {
+                ?work cdm:work_id_document ?id_document .
+            }
+            OPTIONAL {
+                ?work owl:sameAs ?same_as_uri .
+            }
+
+            OPTIONAL {
+                ?exp cdm:expression_belongs_to_work ?work ;
+                     cdm:expression_uses_language ?expr_lang ;
+                     cdm:expression_title ?title .
+
+                OPTIONAL {
+                    ?manif_pdf cdm:manifestation_manifests_expression ?exp ;
+                               cdm:manifestation_type ?type_pdf .
+                    FILTER (str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
+                }
+                OPTIONAL {
+                    ?manif_html cdm:manifestation_manifests_expression ?exp ;
+                                cdm:manifestation_type ?type_html .
+                    FILTER (str(?type_html) in ('html', 'xhtml'))
+                }
+            }
+            BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
+            BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+        }
+        GROUP BY ?work ?title
+        ORDER BY ?work ?title"""
+
+sources = {
+    "EurLex": {"json": config.EURLEX_TIMELINE_JSON, "query": eurlex_query},
+    "Extended EurLex": {"json": config.EURLEX_EXTENDED_JSON, "query": eurlex_extended_query}
+}
+
 
 def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
     return (search_rule + rules).replace("\n", "")
@@ -75,179 +393,23 @@ def make_request(query):
     return wrapper.query().convert()
 
 
-def get_covid19_items():
-    logger.info('Start retrieving EURLex Covid 19 items')
+def clear_bucket():
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
 
-    query = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
-    PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
-    PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
-    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    
-    SELECT DISTINCT
-        ?work ?title
-    
-        (group_concat(DISTINCT ?cdm_type; separator="| ") as ?cdm_types)
-        (group_concat(DISTINCT ?cdm_type_label; separator="| ") as ?cdm_type_labels)
-    
-        (group_concat(DISTINCT ?resource_type; separator="| ") as ?resource_types)
-        (group_concat(DISTINCT ?resource_type_label; separator="| ") as ?resource_type_labels)
-    
-        (group_concat(DISTINCT ?eurovoc_concept; separator="| ") as ?eurovoc_concepts)
-        (group_concat(DISTINCT ?eurovoc_concept_label; separator="| ") as ?eurovoc_concept_labels)
-    
-        (group_concat(DISTINCT ?subject_matter; separator="| ") as ?subject_matters)
-        (group_concat(DISTINCT ?subject_matter_label; separator="| ") as ?subject_matter_labels)
-    
-        (group_concat(DISTINCT ?directory_code; separator="| ") as ?directory_codes)
-        (group_concat(DISTINCT ?directory_code_label; separator="| ") as ?directory_codes_labels)
-    
-        (group_concat(DISTINCT ?celex; separator="| ") as ?celex_numbers)
-        (group_concat(DISTINCT ?legal_eli; separator="| ") as ?legal_elis)
-        (group_concat(DISTINCT ?id_document; separator="| ") as ?id_documents)
-        (group_concat(DISTINCT ?same_as_uri; separator="| ") as ?same_as_uris)
-    
-        (group_concat(DISTINCT ?author; separator="| ") as ?authors)
-        (group_concat(DISTINCT ?author_label; separator="| ") as ?author_labels)
-    
-        (group_concat(DISTINCT ?full_oj; separator="| ") as ?full_ojs)
-        (group_concat(DISTINCT ?oj_sector; separator="| ") as ?oj_sectors)
-        (group_concat(DISTINCT ?internal_comment; separator="| ") as ?internal_comments)
-        (group_concat(DISTINCT ?in_force; separator="| ") as ?is_in_force)
-    
-        (group_concat(DISTINCT ?date_document; separator="| ") as ?dates_document)
-        (group_concat(DISTINCT ?date_created; separator="| ") as ?dates_created)
-        (group_concat(DISTINCT ?legal_date_entry_into_force; separator="| ") as ?legal_dates_entry_into_force)
-        (group_concat(DISTINCT ?legal_date_signature; separator="| ") as ?legal_dates_signature)
-    
-        (group_concat(DISTINCT ?manif_pdf; separator="| ") as ?manifs_pdf)
-        (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
-        (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
-        (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
-    WHERE {
-        # selector criteria
-        VALUES ?expr_lang { lang:ENG}
-        ?work cdm:resource_legal_comment_internal ?comment .
-        FILTER (regex(str(?comment),'COVID19'))
-        FILTER NOT EXISTS { ?work cdm:work_embargo [] . }
-    
-        # metadata - classification criteria
-        OPTIONAL {
-            ?work a ?cdm_type .
-            OPTIONAL {
-                ?cdm_type skos:prefLabel ?cdm_type_label .
-                FILTER (lang(?cdm_type_label)="en")
-            }
-        }
-        OPTIONAL {
-            ?work cdm:work_has_resource-type ?resource_type .
-            OPTIONAL {
-                ?resource_type skos:prefLabel ?resource_type_label .
-                FILTER (lang(?resource_type_label)="en")
-            }
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
-            OPTIONAL {
-                ?subject_matter skos:prefLabel ?subject_matter_label .
-                FILTER (lang(?subject_matter_label)="en")
-            }
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_is_about_concept_directory-code ?directory_code .
-            OPTIONAL {
-                ?directory_code skos:prefLabel ?directory_code_label .
-                FILTER (lang(?directory_code_label)="en")
-            }
-        }
-        OPTIONAL {
-            ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
-            OPTIONAL {
-                ?eurovoc_concept skos:prefLabel ?eurovoc_concept_label .
-                FILTER (lang(?eurovoc_concept_label)="en")
-            }
-        }
-    
-        # metadata - descriptive criteria
-        OPTIONAL {
-            ?work cdm:work_created_by_agent ?author .
-            OPTIONAL {
-                ?author skos:prefLabel ?author_label .
-                FILTER (lang(?author_label)="en")
-            }
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_in-force ?in_force .
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_id_sector ?oj_sector .
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_published_in_official-journal ?full_oj .
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_comment_internal ?internal_comment .
-        }
-        OPTIONAL {
-            ?work cdm:work_date_document ?date_document .
-        }
-        OPTIONAL {
-            ?work cdm:work_date_creation ?date_created .
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_date_signature ?legal_date_signature .
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
-        }
-    
-        # metadata - identification properties
-        OPTIONAL {
-            ?work cdm:resource_legal_id_celex ?celex .
-        }
-        OPTIONAL {
-            ?work cdm:resource_legal_eli ?legal_eli .
-        }
-        OPTIONAL {
-            ?work cdm:work_id_document ?id_document .
-        }
-        OPTIONAL {
-            ?work owl:sameAs ?same_as_uri .
-        }
-    
-        # diving down FRBR structure for the title and the content
-        OPTIONAL {
-            ?exp cdm:expression_belongs_to_work ?work ;
-                 cdm:expression_uses_language ?expr_lang ;
-                 cdm:expression_title ?title .
-    
-            OPTIONAL {
-                ?manif_pdf cdm:manifestation_manifests_expression ?exp ;
-                           cdm:manifestation_type ?type_pdf .
-                FILTER (str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
-            }
-            OPTIONAL {
-                ?manif_html cdm:manifestation_manifests_expression ?exp ;
-                            cdm:manifestation_type ?type_html .
-                FILTER (str(?type_html) in ('html', 'xhtml'))
-            }
-        }
-        BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
-        BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
-    }
-    GROUP BY ?work ?title
-    ORDER BY ?work ?title"""
+
+def get_single_item(query, json_file_name):
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
 
     response = make_request(query)['results']['bindings']
     transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
-    uploaded_bytes = minio.put_object(config.EURLEX_TIMELINE_JSON, dumps(transformed_json).encode('utf-8'))
+    uploaded_bytes = minio.put_object(json_file_name, dumps(transformed_json).encode('utf-8'))
 
-    logger.info(f'Save query result to {config.EURLEX_TIMELINE_JSON}')
-    logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + config.EURLEX_BUCKET_NAME + '] at ' + config.MINIO_URL)
+    logger.info(f'Save query result to {json_file_name}')
+    logger.info('Uploaded ' + str(
+        uploaded_bytes) + ' bytes to bucket [' + config.EURLEX_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
 def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
@@ -264,28 +426,28 @@ def download_file(source: dict, location_details: str, file_name: str, minio: Mi
         return False
 
 
-def download_covid19_items():
+def download_dataset_items(json_file_name):
     logger.info(f'Enriched fragments will be saved locally to the bucket {config.EURLEX_BUCKET_NAME}')
 
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
 
-    config.EURLEX_TIMELINE_JSON = loads(minio.get_object(config.EURLEX_TIMELINE_JSON).decode('utf-8'))
-    eurlex_items_count = len(config.EURLEX_TIMELINE_JSON)
-    logger.info(f'Found {eurlex_items_count} EURLex COVID19 items.')
+    json_content = loads(minio.get_object(json_file_name).decode('utf-8'))
+    items_count = len(json_content)
+    logger.info(f'Found {items_count} EURLex COVID19 items.')
 
     counter = {
         'html': 0,
         'pdf': 0
     }
 
-    for index, item in enumerate(config.EURLEX_TIMELINE_JSON):
+    for index, item in enumerate(json_content):
         item[CONTENT_PATH_KEY] = list()
         if item.get('manifs_html'):
             for html_manifestation in item.get('htmls_to_download'):
                 filename = hashlib.sha256(html_manifestation.encode('utf-8')).hexdigest()
 
                 logger.info(
-                    f"[{index + 1}/{eurlex_items_count}] Downloading HTML manifestation for {item['title']}")
+                    f"[{index + 1}/{items_count}] Downloading HTML manifestation for {item['title']}")
 
                 html_file = filename + '_html.zip'
                 if download_file(item, html_manifestation, html_file, minio):
@@ -296,7 +458,7 @@ def download_covid19_items():
                 filename = hashlib.sha256(pdf_manifestation.encode('utf-8')).hexdigest()
 
                 logger.info(
-                    f"[{index + 1}/{eurlex_items_count}] Downloading PDF manifestation for {item['title']}")
+                    f"[{index + 1}/{items_count}] Downloading PDF manifestation for {item['title']}")
 
                 pdf_file = filename + '_pdf.zip'
                 if download_file(item, pdf_manifestation, pdf_file, minio):
@@ -304,24 +466,24 @@ def download_covid19_items():
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(config.EURLEX_TIMELINE_JSON, dumps(config.EURLEX_TIMELINE_JSON))
+    minio.put_object_from_string(json_file_name, dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
 
-def extract_document_content_with_tika():
+def extract_content_with_tika(json_file_name):
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    logger.info(f'Loading resource files from {config.EURLEX_TIMELINE_JSON}')
+    logger.info(f'Loading resource files from {json_file_name}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
-    config.EURLEX_TIMELINE_JSON = loads(minio.get_object(config.EURLEX_TIMELINE_JSON))
-    eurlex_items_count = len(config.EURLEX_TIMELINE_JSON)
+    json_content = loads(minio.get_object(json_file_name))
+    eurlex_items_count = len(json_content)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(config.EURLEX_TIMELINE_JSON):
+    for index, item in enumerate(json_content):
         valid_sources = 0
         identifier = item['title']
         logger.info(f'[{index + 1}/{eurlex_items_count}] Processing {identifier}')
@@ -358,11 +520,11 @@ def extract_document_content_with_tika():
             except Exception as e:
                 logger.exception(e)
         if valid_sources:
-            manifestation = item.get('manifs_html', [None])[0] or item.get('manifs_pdf', [None])[0]
+            manifestation = (item.get('manifs_html') or item.get('manifs_pdf'))[0]
             filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.EURLEX_TIMELINE_JSON, dumps(config.EURLEX_TIMELINE_JSON))
+    minio.put_object_from_string(json_file_name, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
@@ -384,12 +546,31 @@ def upload_processed_documents_to_elasticsearch():
         try:
             logger.info(f'Sending to ElasticSearch ( {config.EU_CELLAR_IDX} ) the object {obj.object_name}')
             es_adapter.index(index_name=config.EU_CELLAR_IDX, document_id=obj.object_name.split("/")[1],
-                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+                             document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
 
     logger.info(f'Sent {object_count} file(s) to ElasticSearch.')
+
+
+def get_items():
+    clear_bucket()
+    for key in sources:
+        logger.info(f"Downloading JSON file for {key}:")
+        get_single_item(sources[key]["query"], sources[key]["json"])
+
+
+def download_all_datasets_items():
+    for key in sources:
+        logger.info(f"Downloading items for dataset {key}:")
+        download_dataset_items(sources[key]["json"])
+
+
+def extract_all_content_with_tika():
+    for key in sources:
+        logger.info(f"Downloading items for dataset {key}:")
+        extract_content_with_tika(sources[key]["json"])
 
 
 default_args = {
@@ -413,15 +594,15 @@ dag = DAG(
 
 download_task = PythonOperator(
     task_id=f'Download',
-    python_callable=get_covid19_items, retries=1, dag=dag)
+    python_callable=get_items, retries=1, dag=dag)
 
 download_documents_and_enrich_json_task = PythonOperator(
     task_id=f'Enrich',
-    python_callable=download_covid19_items, retries=1, dag=dag)
+    python_callable=download_all_datasets_items, retries=1, dag=dag)
 
 extract_content_with_tika_task = PythonOperator(
     task_id=f'Tika',
-    python_callable=extract_document_content_with_tika, retries=1, dag=dag)
+    python_callable=extract_all_content_with_tika, retries=1, dag=dag)
 
 upload_to_elastic_task = PythonOperator(
     task_id=f'Elasticsearch',
