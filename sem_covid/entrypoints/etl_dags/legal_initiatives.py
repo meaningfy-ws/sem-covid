@@ -15,42 +15,24 @@ from json import dumps, loads
 from pathlib import Path
 
 import requests
-from jq import compile
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
-from airflow.models import Variable
 from airflow.operators.python import PythonOperator
-from elasticsearch import Elasticsearch
+from jq import compile
 from tika import parser
 
+from sem_covid import config
+from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 
-logger = logging.getLogger(__name__)
+
 VERSION = '0.1.1'
-
-# TODO: rely on the project configs for these variables: both environment or Airflow vars
-
-URL: str = Variable.get('SPARQL_URL')
-APACHE_TIKA_URL = Variable.get('APACHE_TIKA_URL')
-
-ELASTICSEARCH_INDEX_NAME: str = Variable.get('LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME')
-ELASTICSEARCH_PROTOCOL: str = Variable.get('ELASTICSEARCH_PROTOCOL')
-ELASTICSEARCH_HOSTNAME: str = Variable.get('ELASTICSEARCH_URL')
-ELASTICSEARCH_PORT: int = Variable.get('ELASTICSEARCH_PORT')
-ELASTICSEARCH_USER: str = Variable.get('ELASTICSEARCH_USERNAME')
-ELASTICSEARCH_PASSWORD: str = Variable.get('ELASTICSEARCH_PASSWORD')
-
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
-
-LEGAL_INITIATIVES_JSON = Variable.get('LEGAL_INITIATIVES_JSON')
-MINIO_URL = Variable.get("MINIO_URL")
-MINIO_BUCKET = Variable.get('LEGAL_INITIATIVES_BUCKET_NAME')
-MINIO_ACCESS_KEY = Variable.get("MINIO_ACCESS_KEY")
-MINIO_SECRET_KEY = Variable.get("MINIO_SECRET_KEY")
+logger = logging.getLogger(__name__)
 
 transformation = '''{
 work: .work.value,
@@ -96,7 +78,7 @@ def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
 
 
 def make_request(query):
-    wrapper = SPARQLWrapper(URL)
+    wrapper = SPARQLWrapper(config.LEGAL_INITIATIVES_SPARQL_URL)
     wrapper.setQuery(query)
     wrapper.setReturnFormat(JSON)
 
@@ -105,7 +87,8 @@ def make_request(query):
 
 def get_legal_initiatives_items():
     logger.info('Start retrieving EURLex Covid 19 items')
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, MINIO_BUCKET)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.LEGAL_INITIATIVES_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -290,10 +273,11 @@ def get_legal_initiatives_items():
     ORDER BY ?work ?title"""
     response = make_request(query)['results']['bindings']
     transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
-    uploaded_bytes = minio.put_object(LEGAL_INITIATIVES_JSON, dumps(transformed_json).encode('utf-8'))
+    uploaded_bytes = minio.put_object(config.LEGAL_INITIATIVES_JSON, dumps(transformed_json).encode('utf-8'))
 
-    logger.info(f'Save query result to {LEGAL_INITIATIVES_JSON}')
-    logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + MINIO_BUCKET + '] at ' + MINIO_URL)
+    logger.info(f'Save query result to {config.LEGAL_INITIATIVES_JSON}')
+    logger.info('Uploaded ' + str(
+        uploaded_bytes) + ' bytes to bucket [' + config.LEGAL_INITIATIVES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
 def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
@@ -311,12 +295,13 @@ def download_file(source: dict, location_details: str, file_name: str, minio: Mi
 
 
 def download_items():
-    logger.info(f'Enriched fragments will be saved locally to the bucket {MINIO_BUCKET}')
+    logger.info(f'Enriched fragments will be saved locally to the bucket {config.LEGAL_INITIATIVES_BUCKET_NAME}')
 
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, MINIO_BUCKET)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.LEGAL_INITIATIVES_BUCKET_NAME)
 
-    legal_initiatives_json = loads(minio.get_object(LEGAL_INITIATIVES_JSON).decode('utf-8'))
-    legal_initiatives_items_count = len(legal_initiatives_json)
+    config.LEGAL_INITIATIVES_JSON = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
+    legal_initiatives_items_count = len(config.LEGAL_INITIATIVES_JSON)
     logger.info(f'Found {legal_initiatives_items_count} EURLex COVID19 items.')
 
     counter = {
@@ -324,7 +309,7 @@ def download_items():
         'pdf': 0
     }
 
-    for index, item in enumerate(legal_initiatives_json):
+    for index, item in enumerate(config.LEGAL_INITIATIVES_JSON):
         item[CONTENT_PATH_KEY] = list()
         if item.get('manifs_html'):
             for html_manifestation in item.get('htmls_to_download'):
@@ -350,24 +335,25 @@ def download_items():
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(LEGAL_INITIATIVES_JSON, dumps(legal_initiatives_json))
+    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(config.LEGAL_INITIATIVES_JSON))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
 
 def extract_document_content_with_tika():
-    logger.info(f'Using Apache Tika at {APACHE_TIKA_URL}')
-    logger.info(f'Loading resource files from {LEGAL_INITIATIVES_JSON}')
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, MINIO_BUCKET)
-    legal_initiatives_json = loads(minio.get_object(LEGAL_INITIATIVES_JSON).decode('utf-8'))
-    legal_initiatives_items_count = len(legal_initiatives_json)
+    logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
+    logger.info(f'Loading resource files from {config.LEGAL_INITIATIVES_JSON}')
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.LEGAL_INITIATIVES_BUCKET_NAME)
+    config.LEGAL_INITIATIVES_JSON = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
+    legal_initiatives_items_count = len(config.LEGAL_INITIATIVES_JSON)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(legal_initiatives_json):
+    for index, item in enumerate(config.LEGAL_INITIATIVES_JSON):
         valid_sources = 0
         identifier = item['title']
         logger.info(f'[{index + 1}/{legal_initiatives_items_count}] Processing {identifier}')
@@ -391,10 +377,9 @@ def extract_document_content_with_tika():
                         for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.pdf')):
                             logger.info(f'Parsing {Path(content_file).name}')
                             counter['general'] += 1
-                            parse_result = parser.from_file(str(content_file), APACHE_TIKA_URL)
+                            parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
 
                             if 'content' in parse_result:
-                                # logger.info(f'Parse result (first 100 characters): {dumps(parse_result)[:100]}')
                                 item[CONTENT_KEY].append(parse_result['content'])
                                 counter['success'] += 1
 
@@ -409,28 +394,31 @@ def extract_document_content_with_tika():
             filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(LEGAL_INITIATIVES_JSON, dumps(legal_initiatives_json))
+    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(config.LEGAL_INITIATIVES_JSON))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
 def upload_processed_documents_to_elasticsearch():
-    elasticsearch_client = Elasticsearch(
-        [
-            f'{ELASTICSEARCH_PROTOCOL}://{ELASTICSEARCH_USER}:{ELASTICSEARCH_PASSWORD}@{ELASTICSEARCH_HOSTNAME}:{ELASTICSEARCH_PORT}'])
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+                           config.ELASTICSEARCH_PORT,
+                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_PASSWORD)
 
-    logger.info(f'Using ElasticSearch at {ELASTICSEARCH_PROTOCOL}://{ELASTICSEARCH_HOSTNAME}:{ELASTICSEARCH_PORT}')
+    logger.info(
+        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
 
-    logger.info(f'Loading files from {MINIO_URL}')
+    logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, MINIO_BUCKET)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
+                         config.LEGAL_INITIATIVES_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
         try:
-            logger.info(f'Sending to ElasticSearch ( {ELASTICSEARCH_INDEX_NAME} ) the object {obj.object_name}')
-            elasticsearch_client.index(index=ELASTICSEARCH_INDEX_NAME, id=obj.object_name.split("/")[1],
-                                       body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+            logger.info(f'Sending to ElasticSearch ( {config.LEGAL_INITIATIVES_IDX} ) the object {obj.object_name}')
+            es_adapter.index(index_name=config.LEGAL_INITIATIVES_IDX, document_id=obj.object_name.split("/")[1],
+                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
@@ -457,11 +445,11 @@ dag = DAG(
     concurrency=1
 )
 
-get_legal_initiatives_json_task = PythonOperator(
+download_task = PythonOperator(
     task_id=f'Download',
     python_callable=get_legal_initiatives_items, retries=1, dag=dag)
 
-download_documents_and_enrich_legal_initiatives_json_task = PythonOperator(
+download_documents_and_enrich_task = PythonOperator(
     task_id=f'Enrich',
     python_callable=download_items, retries=1, dag=dag)
 
@@ -473,4 +461,4 @@ upload_to_elastic_task = PythonOperator(
     task_id=f'Elasticsearch',
     python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
 
-get_legal_initiatives_json_task >> download_documents_and_enrich_legal_initiatives_json_task >> extract_content_with_tika_task >> upload_to_elastic_task
+download_task >> download_documents_and_enrich_task >> extract_content_with_tika_task >> upload_to_elastic_task

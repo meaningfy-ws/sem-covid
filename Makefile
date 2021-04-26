@@ -29,13 +29,12 @@ stop-splash:
 # TODO refactor
 create-indexes:
 	@ echo "$(BUILD_PRINT)Creating indexes and their respective mappings"
-	@ curl -X PUT "http://localhost:9200/pwdb-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/pwdb_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/eurlex-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/eurlex_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/legal-initiatives-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/legal_initiatives_mapping.json
-	@ curl -X PUT "http://localhost:9200/treaties-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/treaties_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/legal-initiatives-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/legal_initiatives_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/eu-action-timeline-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/eu_action_timeline_index_mapping.json
-	@ curl -X PUT "http://localhost:9200/irish-action-timeline-index" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/irish_action_timeline_index_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_pwdb" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_pwdb_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_eu_cellar" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_eu_cellar_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_legal_initiatives" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_legal_initiatives_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_treaties" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_treaties_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_eu_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_eu_timeline_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_ireland_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_ireland_timeline_mapping.json
 
 all: install
 
@@ -43,29 +42,30 @@ test:
 	@ echo "$(BUILD_PRINT)Running the tests"
 	@ pytest -s --html=report.html --self-contained-html
 
-
 # Getting secrets from Vault
-
 # Testing whether an env variable is set or not
 guard-%:
-	@ if [ "${${*}}" = "" ]; then \
+   @ if [ "${${*}}" = "" ]; then \
         echo "Environment variable $* not set"; \
         exit 1; \
-	fi
-
+   fi
 # Testing that vault is installed
 vault-installed: #; @which vault1 > /dev/null
-	@ if ! hash vault 2>/dev/null; then \
+   @ if ! hash vault 2>/dev/null; then \
         echo "Vault is not installed, refer to https://www.vaultproject.io/downloads"; \
         exit 1; \
-	fi
-
+   fi
 # Get secrets in dotenv format
 vault_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
-	@ echo "Writing the mfy/sem-covid secret from Vault to .env"
-	@ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" > .env
+   @ echo "Writing the mfy/sem-covid secret from Vault to .env"
+   @ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" > .env
 
+# Get secrets in dotenv format
+vault_experiments_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
+   @ echo "Writing the mfy/sem-covid secret from Vault to .env"
+   @ vault kv get -format="json" mfy/sem_covid_experiments | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" > .env
+   
 # Get secrets in json format
 vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
-	@ echo "Writing the mfy/sem-covid secret from Vault to variables.json"
-	@ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data" > variables.json
+   @ echo "Writing the mfy/sem-covid secret from Vault to variables.json"
+   @ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data" > variables.json

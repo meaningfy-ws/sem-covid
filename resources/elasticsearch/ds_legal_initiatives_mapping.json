@@ -1,6 +1,9 @@
 {
   "mappings": {
     "properties": {
+      "work": {
+        "type": "text"
+      },
       "title": {
         "type": "text",
         "analyzer": "english",
@@ -15,11 +18,16 @@
           }
         }
       },
-      "title_national_language": {
+      "cdm_types": {
         "type": "text",
-        "analyzer": "standard"
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
       },
-      "background_info_description": {
+      "cdm_labels": {
         "type": "text",
         "analyzer": "english",
         "fields": {
@@ -33,7 +41,16 @@
           }
         }
       },
-      "content_of_measure_description": {
+      "resource_types": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "resource_type_labels": {
         "type": "text",
         "analyzer": "english",
         "fields": {
@@ -47,7 +64,16 @@
           }
         }
       },
-      "involvement_of_social_partners_description": {
+      "eurovoc_concepts": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "eurovoc_concept_labels": {
         "type": "text",
         "analyzer": "english",
         "fields": {
@@ -61,7 +87,16 @@
           }
         }
       },
-      "use_of_measure_description": {
+      "subject_matters": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "subject_matter_labels": {
         "type": "text",
         "analyzer": "english",
         "fields": {
@@ -75,7 +110,7 @@
           }
         }
       },
-      "category": {
+      "directory_codes": {
         "type": "text",
         "fields": {
           "keyword": {
@@ -84,7 +119,30 @@
           }
         }
       },
-      "subcategory": {
+      "directory_codes_labels": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "celex_numbers": {
+        "type": "text"
+      },
+      "legal_elis": {
+        "type": "text"
+      },
+      "id_documents": {
+        "type": "text"
+      },
+      "same_as_uris": {
         "type": "text",
         "fields": {
           "keyword": {
@@ -93,7 +151,7 @@
           }
         }
       },
-      "country": {
+      "authors": {
         "type": "text",
         "fields": {
           "keyword": {
@@ -102,91 +160,51 @@
           }
         }
       },
-      "creation_date": {
+      "author_labels": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "full_ojs": {
+        "type": "text"
+      },
+      "oj_sectors": {
+        "type": "text"
+      },
+      "internal_comments": {
+        "type": "text"
+      },
+      "is_in_force": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "dates_document": {
         "type": "date",
-        "format": "MM/dd/YYYY"
+        "format": "YYYY-MM-dd"
       },
-      "date_type": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
-        }
-      },
-      "end_date": {
+      "dates_created": {
         "type": "date",
-        "format": "MM/dd/YYYY"
+        "format": "YYYY-MM-dd"
       },
-      "actors": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
-        }
-      },
-      "funding": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
-        }
-      },
-      "identifier": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
-        }
-      },
-      "sectors": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
-        }
-      },
-      "sources": {
-        "properties": {
-          "content": {
-            "type": "text",
-            "analyzer": "english",
-            "fields": {
-              "keyword": {
-                "type": "keyword",
-                "ignore_above": 256
-              },
-              "token_count": {
-                "type": "token_count",
-                "analyzer": "english"
-              }
-            }
-          },
-          "content_path": {
-            "type": "text"
-          },
-          "title": {
-            "type": "text"
-          },
-          "url": {
-            "type": "text"
-          }
-        }
-      },
-      "start_date": {
+      "legal_dates_entry_into_force": {
         "type": "date",
-        "format": "MM/dd/YYYY"
+        "format": "YYYY-MM-dd"
       },
-      "status_of_regulation": {
+      "legal_dates_signature": {
         "type": "text",
         "fields": {
           "keyword": {
@@ -195,7 +213,27 @@
           }
         }
       },
-      "target_groups": {
+      "htmls_to_download": {
+        "type": "text"
+      },
+      "pdfs_to_download": {
+        "type": "text"
+      },
+      "content": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "part_of_dossiers": {
         "type": "text",
         "fields": {
           "keyword": {
@@ -204,34 +242,21 @@
           }
         }
       },
-      "type_of_measure": {
+      "work_sequences": {
         "type": "text",
+        "analyzer": "english",
         "fields": {
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
           }
         }
       },
-      "is_occupation_specific": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
-        }
-      },
-      "is_sector_specific": {
-        "type": "text",
-        "fields": {
-          "keyword": {
-            "type": "keyword",
-            "ignore_above": 256
-          }
-        }
-      },
-      "private_or_public_sector": {
+      "related_to_works": {
         "type": "text",
         "fields": {
           "keyword": {

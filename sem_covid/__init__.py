@@ -53,13 +53,58 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     @property
+    def PWDB_BUCKET_NAME(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def LEGAL_INITIATIVES_BUCKET_NAME(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def TREATIES_BUCKET_NAME(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
     def SC_PWDB_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
         return BaseConfig.find_value()
 
     @property
-    def PWDB_DATASET_URL(self) -> str:
+    def EU_ACTION_TIMELINE_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def IRISH_TIMELINE_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def EURLEX_TIMELINE_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def EURLEX_EXTENDED_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def LEGAL_INITIATIVES_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def TREATIES_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return BaseConfig.find_value()
+
+    @property
+    def PWDB_DATASET_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def PWDB_DATASET_PATH(self) -> str:
         return BaseConfig.find_value()
 
     @property
@@ -71,19 +116,19 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     @property
-    def ELASTIC_HOST(self) -> str:
+    def ELASTICSEARCH_HOST(self) -> str:
         return BaseConfig.find_value()
 
     @property
-    def ELASTIC_PORT(self) -> str:
+    def ELASTICSEARCH_PORT(self) -> str:
         return BaseConfig.find_value()
 
     @property
-    def ELASTIC_USER(self) -> str:
+    def ELASTICSEARCH_USER(self) -> str:
         return BaseConfig.find_value()
 
     @property
-    def ELASTIC_PASSWORD(self) -> str:
+    def ELASTICSEARCH_PASSWORD(self) -> str:
         return BaseConfig.find_value()
 
     @property
@@ -95,11 +140,39 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     @property
+    def TREATIES_IDX(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
     def EU_ACTION_TIMELINE_IDX(self) -> str:
         return BaseConfig.find_value()
 
     @property
     def IRELAND_ACTION_TIMELINE_IDX(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def APACHE_TIKA_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def SPLASH_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def EURLEX_SPARQL_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def LEGAL_INITIATIVES_SPARQL_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def LEGAL_INITIATIVES_IDX(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def TREATIES_SPARQL_URL(self) -> str:
         return BaseConfig.find_value()
 
 
