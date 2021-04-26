@@ -393,12 +393,15 @@ def make_request(query):
     return wrapper.query().convert()
 
 
-def get_single_item(query, json_file_name):
-    logger.info('Start retrieving EURLex Covid 19 items')
+def clear_bucket():
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
+
+
+def get_single_item(query, json_file_name):
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
 
     response = make_request(query)['results']['bindings']
     transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
@@ -552,6 +555,7 @@ def upload_processed_documents_to_elasticsearch():
 
 
 def get_items():
+    clear_bucket()
     for key in sources:
         logger.info(f"Downloading JSON file for {key}:")
         get_single_item(sources[key]["query"], sources[key]["json"])
