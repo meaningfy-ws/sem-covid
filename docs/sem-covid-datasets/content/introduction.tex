@@ -1,0 +1,73 @@
+\chapter{Introduction}
+\label{sec:introduction}
+	
+	This document provides a working definition of the architectural stance and design decisions that are to be adopted for the Legal Analysis Methodology maintenance and dissemination lifecycle and the supporting services. This process is aligned with the semantic asset publication workflow currently employed by the Standardisation Unit (SU) at the Publications Office of the European Union (OP).
+	
+	In this document is proposed a target architecture supported by a motivation structure derived from the project requirements specifications.
+	
+	\section{Context}
+	\label{sec:context}
+	
+	OP manages EU legal data coming from different sources. Based on common standards (IMMC\footnote{see \url{https://op.europa.eu/en/web/eu-vocabularies/immc}}, CDM - Common Data Model \citep{cdm-francesconi2015ontology,cdm-francesconi2015semantic}, Controlled Authority Tables\footnote{see \url{https://op.europa.eu/en/web/eu-vocabularies/authority-tables}}, ELI – European Legislation Identifier \citep{eli-conclussions-2012/c325/02,eli-conclussions-2017/c441/05}, ECLA – European Case-law Identifier\citep{ecli-van2011european,ecli-van2017line}), the legal data can be received from institutions, legal analysis contractor or created directly by OP.
+	
+	Legal Analysis Methodology (LAM) for OP legal data aims to define the semantic aspects of the OP legal data on very specific level. It provides description of the metadata elements meaning, links them to various document types published in Official Journal or on EUR-Lex and describes the rules for attribution of values. It serves as an overarching framework for describing usage of other standards in their working context.
+	
+	LAM plays an important role in the discovery of the EU legal resources (CELLAR, EUR-Lex, OP Portal), which,  at large, is a central objective for the OP. The proper use of LAM leads to a significant decrease in the missing, confusing, incorrect or insufficient data by the stakeholders. In addition, it can increase the data interoperability (by better understanding) and can facilitate automation for legal data at various levels.
+	
+	Originally LAM started as a set of rules and definitions organised in a Word document. This representation is arguably operational for humans, but is non-readable for machines, and will be referred further on as \textit{unstructured LAM data}. 
+	
+	In 2019 a series of discussions started between the LAM maintenance team in OP.C2 unit and metadata and standardisation team from OP.A1 unit leading to a set of modelling experiments aiming to model and organise the descriptions comprised in the LAM Word document\citep{lam-eurlex-spec-2017}. These further evolved into the unofficially called \textit{Initiative for Modelling the Legal Analysis Methodology} (IM-LAM) \citep{lam-preliminary-requirements-2019} aiming (a) to provide a level of formalisation to LAM used at the Publications Office for the legal document metadata and (b) to create an online tool offering an easy access to LAM for different stakeholders (consult, search, download) and enabling exchange of information between them (changes in LAM, proposed changes, consultations, feedback).
+	
+	The first part of the initiative, scoped to modelling and formalisation of LAM, referred here as LAM\#1 project \citep{lam-preliminary-requirements-2019}, was concluded at the end of 2019. The project deliverables, which comprised documents, transformation scripts and formal data and models, are available in the \textit{lam4vb3} GitHub repository\footnote{see \url{https://github.com/eu-vocabularies/lam4vb3}}. As a prerequisite the LAM was transformed into an Excel file \citep{lam-excel-structure-2019}, which we will call in this document a \textit{semi-structured LAM data}. This Excel file was used as the source for creation of the LAM data in LAM-SKOS-AP representation \citep{lam-skos-ap-2019}, further referred to as \textit{structured LAM data}.
+
+	The second part of the initiative, to establish a single point of access for LAM data through a so called \textit{online tool}, began in 2020 and is referred here as LAM\#2 project. Besides the establishment of the dissemination mechanism for the LAM data in the OP Portal (requested in the project requirements specifications \citep{lam-requirements-2020}) the project also aims at establishing architectural and design decisions both at the application and business levels (presented in this document). This implies placements of the LAM dataset, as a semantic asset, into the OP ecosystem where a data governance methodology and a lifecycle model is followed. The metadata and standardisation team from OP.A1 unit plays a central role here and will be further detailed in Section \ref{sec:actors-roles}.
+	
+	\section{Background considerations}
+	
+	Given the increasing importance of data standards for the EU institutions, a number of initiatives driven by the public sector, industry and academia have been kick-started in recent years. Some have grown organically, while others are the result of standardisation work. 
+	
+	Each of these initiatives introduce specific vocabularies, semantics and technologies, resulting in a heterogeneous state of affairs. These differences hamper data interoperability and thus its reuse by the other institutions or by the wider public. This creates the need for a common approach for publishing public reference data and models. Moreover, the data which instantiates these public models, available from different sources, shall be easily accessed, linked, and consequently reused.
+	
+	In order to improve transparency and to boost innovation via the reuse of public data, the PSI directive \cite{directive-2019/1024} across the EU calls for open, unobstructed access to public data. The reference data maintained and published by the OP has been identified as data with a high-reuse potential \cite{d-high-value-assets}. Therefore, making this data available in machine-readable formats, as well as following the data as a service paradigm, are required in order to maximise its reuse.
+	
+	In this context, the Publications Office of the European Union maintains and publishes an ever-increasing number of \textit{reference data} which are vital in the context of inter-institutional information exchange. With regards to reference data, the OP provides an ever-increasing number of services to the main institutional stakeholders and with the aim to extend them to a broader public, enabling active or passive participation in the reference data life cycle, standardisation and harmonisation.
+
+	\section{EU trajectory towards public sector linked open data}
+	
+	European institutions started out to adopt Semantic Web and Linked Data technologies as part of their visions to become data-centred e-government bodies \citep{decission-456/2005/EC,decission-2015/2240}. 
+	
+	The EU institutions also aim for implementation of a single digital gateway to ``facilitate interactions between citizens and businesses, on the one hand, and competent authorities, on the other hand, by providing access to online solutions, facilitating the day-to-day activities of citizens and businesses and minimising the obstacles encountered in the internal market. 
+	
+	The existence of a single digital gateway providing online access to accurate and up-to-date information, to procedures and to assistance and problem-solving services could help raise the users' awareness of the different existing online services and could save them time and expense'' \citep{directive-2018/1724}. This is well in line with earlier established goals for encouraging the open data and the re-use of public sector information \citep{directive-2013/37/EU,directive-2019/1024}.
+
+	Many of the legacy systems used in the EU institutions use XML data format governed by the XSD schemes \citep{xsd1.1-spec}. These formats are used for both: document structure and document exchange. The aim is to evolve technologically so that both existing and new systems are capable to operate with semantic data representations using RDF \citep{rdf11}, OWL \citep{owl2.0,owl2}, SHACL \citep{shacl-spec} and other representations, and serialised in at least the RDF/XML \citep{rdf-xml-Beckett:04:RSS,rdf-xml-Schreiber:14:RXS}, Turtle \citep{turtle-Carothers:14:RT} and JSON-LD \citep{spornyjson,sporny2014json} formats.
+	
+	For this reason, the OP has already been publishing data in RDF format for over a decade using the Cellar repository \citep{cdm-francesconi2015ontology}. Also, the LAM team is committed to publishing and disseminating reference data in semantic formats and also making them available in a human readable representation in OP Portal.
+	
+	\section{Target audience}
+	\label{sec:audience}
+	The present document is intended to be read and understood by the following audience:	
+	\begin{itemize}
+		\item Enterprise architects and data governance specialists
+		\item Business team involved in the data lifecycle
+		\item Technical staff in charge of operating workflow components
+		\item Developers in charge of workflow and component implementation
+		\item Third parties using the services and LAM data
+	\end{itemize}	
+	
+	\section{Document scope}
+	\label{sec:scope}
+	
+	This document aims to describe the baseline architecture for establishment of the business and application services involved in the initiative for modelling (and dissemination) LAM data. 
+	 
+	This architecture covers the maintenance and management of the semi-structured LAM data (see Section \ref{sec:maintenance-of-excel}) and the transition to authoring and publishing of LAM structured data (see Section \ref{sec:lam-maintenance-publication}) following the lifecycle process adopted in the A2 unit for semantic assets (see Section \ref{sec:asset-lifecycle}). 
+	
+	This includes managing the incoming requests, editing the reference assets in VocBench3 system \citep{stellato2017towards,stellatovocbench}, then exporting the RDF data and passing them as input to a set of processes that validate, assess, transform, package and, finally, publish the LAM data in OP Portal, as human-readable content and Cellar \cite{cdm-francesconi2015ontology}, as machine-readable data. 
+		
+	This document provides a motivation, business and application account. Each of these accounts is limited strictly to the success scenario of the above-mentioned use case and does not include possible extensions and variations.
+	
+	There is a series of aspects that were intentionally left out out scope. For example the recommendations related to the data governance both internally within the LAM team and also externally in relation with partners, stakeholders and clients are not covered. Also, no implementation details are specified for the new components. Little or not account is provided about the data structures and static objects used in the business process or exchanged between the application services. No monitoring or performance measurement systems are foreseen by this architecture, which, in future work shall be considered across all architectural levels: starting from motivation level key performance indicators (KPI), continuing with business level process monitoring, down to performance measurement of the applications and the infrastructure indicators. 
+	
+	A high level treatment is provided on how the workflow orchestration shall be organised, what process automation service to use, or what technologies could be chosen for that. Such decisions shall be carried out in subsequent steps in close cooperation with A2 unit at the level of the technical team, business team and the sector management. 
+	
+	With this scope in mind, the next section presents a short introduction into the enterprise architecture language and methodology adopted in this document. The next section can be skipped by the readers familiar with ArchiMate Language \citep{archimate3.1}, who can proceed to Section \ref{sec:motivation-architecture} detailing the structure of motivations behind this project and overall initiative for modelling LAM data.
