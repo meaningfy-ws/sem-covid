@@ -1,4 +1,4 @@
-import json
+
 from typing import List
 
 import jq
@@ -29,7 +29,7 @@ PWDB_REFACTORING_RULES = '''.[] | {
     "Private or public sector": .fieldData.sector_privateOrPublic,
     "Is occupation specific": .fieldData.isOccupation,
     "Sectors": [.portalData.sectors[] | ."sectors::name" ],
-    "Occupations": [.portalData.occupations[] | .],
+    "Occupations": [.portalData.occupations[] | ."occupations::name"],
     "Sources": [.portalData.sources[] | ."sources::url" ],
 }'''
 
