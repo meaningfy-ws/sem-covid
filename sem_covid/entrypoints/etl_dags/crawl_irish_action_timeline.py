@@ -55,15 +55,15 @@ def extract_document_content_with_tika():
     logger.info(f'Loading resource files from {config.IRISH_TIMELINE_JSON}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.IRISH_TIMELINE_BUCKET_NAME)
-    config.IRISH_TIMELINE_JSON = loads(minio.get_object(config.IRISH_TIMELINE_JSON))
-    irish_action_timeline_items_count = len(config.IRISH_TIMELINE_JSON)
+    json_content = loads(minio.get_object(config.IRISH_TIMELINE_JSON))
+    irish_action_timeline_items_count = len(json_content)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(config.IRISH_TIMELINE_JSON):
+    for index, item in enumerate(json_content):
         identifier = item['title']
         logger.info(f'[{index + 1}/{irish_action_timeline_items_count}] Processing {identifier}')
 
@@ -80,7 +80,7 @@ def extract_document_content_with_tika():
         filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
         minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.IRISH_TIMELINE_JSON, dumps(config.IRISH_TIMELINE_JSON))
+    minio.put_object_from_string(config.IRISH_TIMELINE_JSON, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
