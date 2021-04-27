@@ -18,7 +18,7 @@ from tika import parser
 from sem_covid import config
 from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
-from sem_covid.services.sc_wrangling.pwdb_transformer import transform_pwdb
+from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 
 VERSION = '0.10.1'
 CONTENT_PATH_KEY = 'content_path'
