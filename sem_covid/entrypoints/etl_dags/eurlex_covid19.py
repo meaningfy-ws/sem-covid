@@ -193,6 +193,7 @@ WHERE {
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
 
+
 eurlex_extended_query = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
         PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
         PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
