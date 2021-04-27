@@ -18,12 +18,12 @@ import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from jq import compile
 from tika import parser
 
 from sem_covid import config
 from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.services.sc_wrangling import json_transformer
 
 
 VERSION = '0.1.1'
@@ -33,48 +33,6 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 logger = logging.getLogger(__name__)
-
-transformation = '''{
-work: .work.value,
-title: .title.value,
-part_of_dossiers: .part_of_dossiers.value | split("| "),
-work_sequences: .work_sequences.value | split("| "),
-related_to_works: .related_to_works.value | split("| "),
-cdm_types: .cdm_types.value | split("| "),
-cdm_type_labels: .cdm_type_labels.value | split("| "),
-resource_types: .resource_types.value | split("| "),
-resource_type_labels: .resource_type_labels.value | split("| "),
-eurovoc_concepts: .eurovoc_concepts.value | split("| "),
-eurovoc_concept_labels: .eurovoc_concept_labels.value | split("| "),
-subject_matters: .subject_matters.value | split("| "),
-subject_matter_labels: .subject_matter_labels.value | split("| "),
-directory_codes: .directory_codes.value | split("| "),
-directory_codes_labels: .directory_codes_labels.value | split("| "),
-celex_numbers: .celex_numbers.value | split("| "),
-legal_elis: .legal_elis.value | split("| "),
-id_documents: .id_documents.value | split("| "),
-same_as_uris: .same_as_uris.value | split("| "),
-authors: .authors.value | split("| "),
-author_labels: .author_labels.value | split("| "),
-full_ojs: .full_ojs.value | split("| "),
-oj_sectors: .oj_sectors.value | split("| "),
-internal_comments: .internal_comments.value | split("| "),
-is_in_force: .is_in_force.value | split("| "),
-dates_document: .dates_document.value | split("| "),
-dates_created: .dates_created.value | split("| "),
-legal_dates_entry_into_force: .legal_dates_entry_into_force.value | split("| "),
-legal_dates_signature: .legal_dates_signature.value | split("| "),
-manifs_pdf: .manifs_pdf.value | split("| "),
-manifs_html: .manifs_html.value | split("| "),
-pdfs_to_download: .pdfs_to_download.value | split("| "),
-htmls_to_download: .htmls_to_download.value | split("| ")
-}'''
-
-SEARCH_RULE = ".[] | "
-
-
-def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
-    return (search_rule + rules).replace("\n", "")
 
 
 def make_request(query):
@@ -272,8 +230,8 @@ def get_legal_initiatives_items():
     GROUP BY ?work ?title
     ORDER BY ?work ?title"""
     response = make_request(query)['results']['bindings']
-    transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
-    uploaded_bytes = minio.put_object(config.LEGAL_INITIATIVES_JSON, dumps(transformed_json).encode('utf-8'))
+    legal_initiatives_dataset = json_transformer.transform_legal_initiatives(response.content)
+    uploaded_bytes = minio.put_object(config.LEGAL_INITIATIVES_JSON, dumps(legal_initiatives_dataset).encode('utf-8'))
 
     logger.info(f'Save query result to {config.LEGAL_INITIATIVES_JSON}')
     logger.info('Uploaded ' + str(
