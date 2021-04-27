@@ -10,7 +10,7 @@ def test_convert_to_binary_matrix(transformed_pwdb_dataframe):
     assert len(pwdb_binary_matrix) == 2
     assert type(pwdb_binary_matrix) == pd.core.frame.DataFrame
     assert pwdb_binary_matrix.shape[0] == 2
-    assert pwdb_binary_matrix.shape[1] == 56
+    assert pwdb_binary_matrix.shape[1] > 56
     assert "Self-employed" in pwdb_binary_matrix.columns
     assert "Employers' organisations" in pwdb_binary_matrix.columns
     assert "National funds" in pwdb_binary_matrix

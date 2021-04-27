@@ -17,6 +17,7 @@ from tika import parser
 from sem_covid import config
 from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.services.sc_wrangling import json_transformer
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +28,7 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
+<<<<<<< Updated upstream
 transformation = '''{
 work: .work.value,
 title: .title.value,
@@ -184,6 +186,11 @@ WHERE {
     OPTIONAL {
         ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
     }
+=======
+
+# def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
+#    return (search_rule + rules).replace("\n", "")
+>>>>>>> Stashed changes
 
     # metadata - identification properties
     OPTIONAL {
@@ -403,9 +410,16 @@ def clear_bucket():
 def get_single_item(query, json_file_name):
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
 
+<<<<<<< Updated upstream
     response = make_request(query)['results']['bindings']
     transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
     uploaded_bytes = minio.put_object(json_file_name, dumps(transformed_json).encode('utf-8'))
+=======
+    # response = make_request(query)['results']['bindings']
+    # transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
+    eurlex_json_dataet = json_transformer.transform_eurlex()
+    uploaded_bytes = minio.put_object(config.EURLEX_TIMELINE_JSON, dumps(transformed_json).encode('utf-8'))
+>>>>>>> Stashed changes
 
     logger.info(f'Save query result to {json_file_name}')
     logger.info('Uploaded ' + str(
