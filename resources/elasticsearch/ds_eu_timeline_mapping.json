@@ -68,7 +68,7 @@
           }
         }
       },
-      "excerpt": {
+      "abstract": {
         "type": "text",
         "analyzer": "english",
         "fields": {
