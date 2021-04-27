@@ -48,7 +48,7 @@ class EUTimelineSpider(scrapy.Spider):
                     meta['month_name'] = month_name
                     meta['date'] = date
                     meta['title'] = title
-                    meta['excerpt'] = body
+                    meta['abstract'] = body
                     meta['presscorner_links'] = presscorner_links
                     meta['all_links'] = [link.attrib['href'] for link in month.xpath('*//p//a')]
                     if presscorner_links:
@@ -67,7 +67,7 @@ class EUTimelineSpider(scrapy.Spider):
             month_name=meta['month_name'],
             date=meta['date'],
             title=meta['title'],
-            excerpt=meta['excerpt'],
+            abstract=meta['abstract'],
             presscorner_links=meta['presscorner_links'],
             all_links=meta['all_links'],
             detail_link=response.url
