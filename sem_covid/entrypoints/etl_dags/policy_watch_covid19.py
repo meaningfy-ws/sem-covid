@@ -46,8 +46,9 @@ def download_policy_dataset():
 
 def download_single_source(source, minio: MinioAdapter):
     try:
+        logger.info("Now downloading source " + str(source))
         url = source['URL'] if source['URL'].startswith('http') else ('http://' + source['url'])
-        filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['url'].encode('utf-8')).hexdigest())
+        filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['URL'].encode('utf-8')).hexdigest())
 
         with requests.get(url, allow_redirects=True, timeout=30) as response:
             minio.put_object(filename, response.content)
