@@ -46,7 +46,7 @@ def download_policy_dataset():
 
 def download_single_source(source, minio: MinioAdapter):
     try:
-        url = source['url'] if source['url'].startswith('http') else ('http://' + source['url'])
+        url = source['URL'] if source['URL'].startswith('http') else ('http://' + source['url'])
         filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['url'].encode('utf-8')).hexdigest())
 
         with requests.get(url, allow_redirects=True, timeout=30) as response:
@@ -69,12 +69,12 @@ def download_policy_watch_resources():
 
     for field_data in covid19json:
         current_item += 1
-        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'])
+        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['Title'])
 
-        if not field_data['end_date']:
-            field_data['end_date'] = None  # Bozo lives here
+        if not field_data['End Date']:
+            field_data['End Date'] = None  # Bozo lives here
 
-        for source in field_data['sources']:
+        for source in field_data['Sources']:
             download_single_source(source, minio)
 
     minio.put_object_from_string(config.PWDB_DATASET_PATH, json.dumps(covid19json))
@@ -92,13 +92,13 @@ def process_using_tika():
     for field_data in covid19json:
         current_item += 1
         valid_sources = 0
-        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'])
+        logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['Title'])
 
         try:
             for source in field_data['sources']:
                 if 'failure_reason' in source:
                     logger.info('Will not process source <' +
-                                source['title'] +
+                                source['Title'] +
                                 '> because it failed download with reason <' +
                                 source['failure_reason'] + '>')
                 else:
@@ -113,13 +113,13 @@ def process_using_tika():
                         valid_sources += 1
                     else:
                         logger.warning('Apache Tika did NOT return a valid content for the source ' +
-                                       source['title'])
+                                       source['Title'])
 
             if valid_sources > 0:
                 minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
-                    field_data['title'].encode('utf-8')).hexdigest(), json.dumps(field_data))
+                    field_data['Title'].encode('utf-8')).hexdigest(), json.dumps(field_data))
             else:
-                logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
+                logger.warning('Field ' + field_data['Title'] + ' had no valid or processable sources.')
         except Exception as ex:
             logger.exception(ex)
 
