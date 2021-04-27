@@ -4,14 +4,13 @@ import tempfile
 import zipfile
 from datetime import datetime, timedelta
 from itertools import chain
-from json import dumps, loads
+import json
 from pathlib import Path
 
 import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from jq import compile
 from tika import parser
 
 from sem_covid import config
@@ -28,41 +27,6 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
-<<<<<<< Updated upstream
-transformation = '''{
-work: .work.value,
-title: .title.value,
-cdm_types: .cdm_types.value | split("| "),
-cdm_type_labels: .cdm_type_labels.value | split("| "),
-resource_types: .resource_types.value | split("| "),
-resource_type_labels: .resource_type_labels.value | split("| "),
-eurovoc_concepts: .eurovoc_concepts.value | split("| "),
-eurovoc_concept_labels: .eurovoc_concept_labels.value | split("| "),
-subject_matters: .subject_matters.value | split("| "),
-subject_matter_labels: .subject_matter_labels.value | split("| "),
-directory_codes: .directory_codes.value | split("| "),
-directory_codes_labels: .directory_codes_labels.value | split("| "),
-celex_numbers: .celex_numbers.value | split("| "),
-legal_elis: .legal_elis.value | split("| "),
-id_documents: .id_documents.value | split("| "),
-same_as_uris: .same_as_uris.value | split("| "),
-authors: .authors.value | split("| "),
-author_labels: .author_labels.value | split("| "),
-full_ojs: .full_ojs.value | split("| "),
-oj_sectors: .oj_sectors.value | split("| "),
-internal_comments: .internal_comments.value | split("| "),
-is_in_force: .is_in_force.value | split("| "),
-dates_document: .dates_document.value | split("| "),
-dates_created: .dates_created.value | split("| "),
-legal_dates_entry_into_force: .legal_dates_entry_into_force.value | split("| "),
-legal_dates_signature: .legal_dates_signature.value | split("| "),
-manifs_pdf: .manifs_pdf.value | split("| "),
-manifs_html: .manifs_html.value | split("| "),
-pdfs_to_download: .pdfs_to_download.value | split("| "),
-htmls_to_download: .htmls_to_download.value | split("| ")
-}'''
-
-SEARCH_RULE = ".[] | "
 
 eurlex_query = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
@@ -388,10 +352,6 @@ sources = {
 }
 
 
-def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
-    return (search_rule + rules).replace("\n", "")
-
-
 def make_request(query):
     wrapper = SPARQLWrapper(config.EURLEX_SPARQL_URL)
     wrapper.setQuery(query)
@@ -409,18 +369,9 @@ def clear_bucket():
 
 def get_single_item(query, json_file_name):
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
-
-<<<<<<< Updated upstream
     response = make_request(query)['results']['bindings']
-    transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
-    uploaded_bytes = minio.put_object(json_file_name, dumps(transformed_json).encode('utf-8'))
-=======
-    # response = make_request(query)['results']['bindings']
-    # transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
-    eurlex_json_dataet = json_transformer.transform_eurlex()
-    uploaded_bytes = minio.put_object(config.EURLEX_TIMELINE_JSON, dumps(transformed_json).encode('utf-8'))
->>>>>>> Stashed changes
-
+    eurlex_json_dataset = json_transformer.transform_eurlex(response.content)
+    uploaded_bytes = minio.put_object(config.EURLEX_TIMELINE_JSON, json.dumps(eurlex_json_dataset).encode('utf-8'))
     logger.info(f'Save query result to {json_file_name}')
     logger.info('Uploaded ' + str(
         uploaded_bytes) + ' bytes to bucket [' + config.EURLEX_BUCKET_NAME + '] at ' + config.MINIO_URL)
@@ -445,7 +396,7 @@ def download_dataset_items(json_file_name):
 
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
 
-    json_content = loads(minio.get_object(json_file_name).decode('utf-8'))
+    json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
     items_count = len(json_content)
     logger.info(f'Found {items_count} EURLex COVID19 items.')
 
@@ -489,7 +440,7 @@ def extract_content_with_tika(json_file_name):
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {json_file_name}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
-    json_content = loads(minio.get_object(json_file_name))
+    json_content = json.loads(minio.get_object(json_file_name))
     eurlex_items_count = len(json_content)
 
     counter = {
@@ -536,9 +487,9 @@ def extract_content_with_tika(json_file_name):
         if valid_sources:
             manifestation = (item.get('manifs_html') or item.get('manifs_pdf'))[0]
             filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
-            minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
+            minio.put_object_from_string(TIKA_FILE_PREFIX + filename, json.dumps(item))
 
-    minio.put_object_from_string(json_file_name, dumps(json_content))
+    minio.put_object_from_string(json_file_name, json.dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
@@ -560,7 +511,7 @@ def upload_processed_documents_to_elasticsearch():
         try:
             logger.info(f'Sending to ElasticSearch ( {config.EU_CELLAR_IDX} ) the object {obj.object_name}')
             es_adapter.index(index_name=config.EU_CELLAR_IDX, document_id=obj.object_name.split("/")[1],
-                             document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+                             document_body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
