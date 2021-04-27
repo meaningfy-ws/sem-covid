@@ -22,7 +22,7 @@ from sem_covid import config
 from sem_covid.services.base_experiment import BaseExperiment
 from sem_covid.services.sc_wrangling import data_cleaning
 from sem_covid.services.sc_wrangling import feature_selector
-from sem_covid.services.sc_wrangling import pwdb_transformer
+from sem_covid.services.sc_wrangling import json_transformer
 from sem_covid.services.sc_wrangling import value_replacement
 
 logger = logging.getLogger(__name__)
@@ -66,7 +66,7 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         raw_pwdb_dataset = self.requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
         raw_pwdb_dataset.raise_for_status()
         self.minio_adapter.empty_bucket()
-        pwdb_json_dataset = pwdb_transformer.transform_pwdb(json.loads(raw_pwdb_dataset.content))
+        pwdb_json_dataset = json_transformer.transform_pwdb(json.loads(raw_pwdb_dataset.content))
         self.minio_adapter.put_object(config.SC_PWDB_JSON, json.dumps(pwdb_json_dataset).encode('utf-8'))
 
     def data_validation(self, *args, **kwargs):
