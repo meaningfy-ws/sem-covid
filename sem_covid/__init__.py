@@ -70,6 +70,22 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     @property
+    def PWDB_DATASET_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def PWDB_ES_TEST_DATA_DIRECTORY(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def ES_PWDB_INDEX_NAME(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def ES_PWDB_INDEX_MAPPING_FILE(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
     def EU_ACTION_TIMELINE_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
         return BaseConfig.find_value()
@@ -113,6 +129,10 @@ class SemCovidConfig(object):
 
     @property
     def JRC2VEC_MODEL_PATH(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def ELASTICSEARCH_PROTOCOL(self) -> str:
         return BaseConfig.find_value()
 
     @property
