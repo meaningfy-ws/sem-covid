@@ -23,6 +23,8 @@ from sem_covid.services.sc_wrangling.pwdb_transformer import transform_pwdb
 VERSION = '0.10.1'
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
+CONTENT_LANGUAGE = "Tika detected language"
+CONTENT_TITLE = "Content Title"
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
@@ -111,6 +113,8 @@ def process_using_tika():
                     if CONTENT_KEY in parse_result:
                         logger.info(f"content type: {type(parse_result['content'])}")
                         source[CONTENT_KEY] = parse_result['content'].replace('\n', '')
+                        source[CONTENT_LANGUAGE] = parse_result["metadata"]["Content-Language"]
+                        source[CONTENT_TITLE] = parse_result["metadata"]["title"]
                         valid_sources += 1
                     else:
                         logger.warning('Apache Tika did NOT return a valid content for the source ' +
