@@ -71,8 +71,8 @@ def download_policy_watch_resources():
         current_item += 1
         logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['Title'])
 
-        if not field_data['End Date']:
-            field_data['End Date'] = None  # Bozo lives here
+        if not field_data['End date']:
+            field_data['End date'] = None  # Bozo lives here
 
         for source in field_data['Sources']:
             download_single_source(source, minio)
