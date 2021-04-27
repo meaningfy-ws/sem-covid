@@ -141,7 +141,11 @@ def raw_pwdb_data():
                     "modId": "0"
                 }
             ],
-            "occupations": [],
+            "occupations": [{
+                'recordId': '36',
+                'occupations::name': 'Agricultural, forestry and fishery labourers',
+                'modId': '0'
+            }],
             "sectors": [],
             "updates": [
                 {
