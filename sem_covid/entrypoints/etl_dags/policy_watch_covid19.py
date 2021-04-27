@@ -96,7 +96,7 @@ def process_using_tika():
         logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['Title'])
 
         try:
-            for source in field_data['sources']:
+            for source in field_data['Sources']:
                 if 'failure_reason' in source:
                     logger.info('Will not process source <' +
                                 source['Title'] +
