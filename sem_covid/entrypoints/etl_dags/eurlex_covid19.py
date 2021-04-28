@@ -21,6 +21,9 @@ from sem_covid.services.sc_wrangling import json_transformer
 logger = logging.getLogger(__name__)
 
 VERSION = '0.10.0'
+DATASET_NAME = "eu_cellar"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -551,7 +554,7 @@ default_args = {
 }
 
 dag = DAG(
-    'EURLex_COVID19_ver_' + VERSION,
+    DAG_NAME,
     default_args=default_args,
     schedule_interval="@once",
     max_active_runs=1,

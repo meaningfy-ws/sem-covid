@@ -27,6 +27,9 @@ from sem_covid.services.sc_wrangling import json_transformer
 
 
 VERSION = '0.1.1'
+DATASET_NAME = "legal_initiatives"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -396,7 +399,7 @@ default_args = {
 }
 
 dag = DAG(
-    'Legal_Initiatives_ver_' + VERSION,
+    DAG_NAME,
     default_args=default_args,
     schedule_interval="@once",
     max_active_runs=1,

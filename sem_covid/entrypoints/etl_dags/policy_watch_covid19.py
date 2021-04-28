@@ -21,6 +21,9 @@ from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 
 VERSION = '0.10.1'
+DATASET_NAME = "pwdb"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 CONTENT_LANGUAGE = "Tika detected language"
@@ -168,7 +171,7 @@ default_args = {
     "retries": 0,
     "retry_delay": timedelta(minutes=3600)
 }
-dag = DAG('PolicyWatchDB_ver_' + VERSION,
+dag = DAG(DAG_NAME,
           default_args=default_args,
           schedule_interval="@once",
           max_active_runs=1,
