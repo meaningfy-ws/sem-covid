@@ -348,13 +348,13 @@ eurlex_extended_query = """PREFIX cdm: <http://publications.europa.eu/ontology/c
         ORDER BY ?work ?title"""
 
 sources = {
-    "EurLex": {"json": config.EURLEX_TIMELINE_JSON, "query": eurlex_query},
-    "Extended EurLex": {"json": config.EURLEX_EXTENDED_JSON, "query": eurlex_extended_query}
+    "EurLex": {"json": config.EU_CELLAR_JSON, "query": eurlex_query},
+    "Extended EurLex": {"json": config.EU_CELLAR_EXTENDED_JSON, "query": eurlex_extended_query}
 }
 
 
 def make_request(query):
-    wrapper = SPARQLWrapper(config.EURLEX_SPARQL_URL)
+    wrapper = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     wrapper.setQuery(query)
     wrapper.setReturnFormat(JSON)
 
@@ -362,20 +362,20 @@ def make_request(query):
 
 
 def clear_bucket():
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EU_CELLAR_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
 
 
 def get_single_item(query, json_file_name):
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EU_CELLAR_BUCKET_NAME)
     response = make_request(query)['results']['bindings']
     eurlex_json_dataset = json_transformer.transform_eurlex(response.content)
-    uploaded_bytes = minio.put_object(config.EURLEX_TIMELINE_JSON, json.dumps(eurlex_json_dataset).encode('utf-8'))
+    uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, json.dumps(eurlex_json_dataset).encode('utf-8'))
     logger.info(f'Save query result to {json_file_name}')
     logger.info('Uploaded ' + str(
-        uploaded_bytes) + ' bytes to bucket [' + config.EURLEX_BUCKET_NAME + '] at ' + config.MINIO_URL)
+        uploaded_bytes) + ' bytes to bucket [' + config.EU_CELLAR_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
 def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
@@ -393,9 +393,9 @@ def download_file(source: dict, location_details: str, file_name: str, minio: Mi
 
 
 def download_dataset_items(json_file_name):
-    logger.info(f'Enriched fragments will be saved locally to the bucket {config.EURLEX_BUCKET_NAME}')
+    logger.info(f'Enriched fragments will be saved locally to the bucket {config.EU_CELLAR_BUCKET_NAME}')
 
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EU_CELLAR_BUCKET_NAME)
 
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
     items_count = len(json_content)
@@ -440,7 +440,7 @@ def download_dataset_items(json_file_name):
 def extract_content_with_tika(json_file_name):
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {json_file_name}')
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EU_CELLAR_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name))
     eurlex_items_count = len(json_content)
 
@@ -496,22 +496,22 @@ def extract_content_with_tika(json_file_name):
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
                            config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_USERNAME,
                            config.ELASTICSEARCH_PASSWORD)
 
-    logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
+    logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EURLEX_BUCKET_NAME)
+    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EU_CELLAR_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
         try:
-            logger.info(f'Sending to ElasticSearch ( {config.EU_CELLAR_IDX} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.EU_CELLAR_IDX, document_id=obj.object_name.split("/")[1],
+            logger.info(f'Sending to ElasticSearch ( {config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
+            es_adapter.index(index_name=config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME, document_id=obj.object_name.split("/")[1],
                              document_body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:

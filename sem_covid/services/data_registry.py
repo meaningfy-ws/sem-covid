@@ -16,10 +16,10 @@ class Dataset(object):
     """
         Registry of dataset sources
     """
-    PWDB = TabularDatasource(config.PWDB_IDX)
-    EU_CELLAR = TabularDatasource(config.EU_CELLAR_IDX)
-    EU_ACTION_TIMELINE = TabularDatasource(config.EU_ACTION_TIMELINE_IDX)
-    IRELAND_ACTION_TIMELINE = TabularDatasource(config.IRELAND_ACTION_TIMELINE_IDX)
+    PWDB = TabularDatasource(config.PWDB_ELASTIC_SEARCH_INDEX_NAME)
+    EU_CELLAR = TabularDatasource(config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME)
+    EU_ACTION_TIMELINE = TabularDatasource(config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME)
+    IRELAND_ACTION_TIMELINE = TabularDatasource(config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME)
 
 
 class LanguageModel(object):
