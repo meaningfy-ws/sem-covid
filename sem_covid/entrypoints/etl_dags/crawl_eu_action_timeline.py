@@ -15,6 +15,7 @@ from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
 
 VERSION = '0.1.0'
+#TODO add DAG name as constant in this line
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_PATH_KEY = 'detail_content'
 logger = logging.getLogger(__name__)
