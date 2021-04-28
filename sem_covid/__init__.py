@@ -195,6 +195,78 @@ class SemCovidConfig(object):
     def TREATIES_SPARQL_URL(self) -> str:
         return BaseConfig.find_value()
 
+    @property
+    def PWDB_TRAIN_TEST(self):
+        return BaseConfig.find_value()
+
+    @property
+    def PWDB_WORD2VEC_MODEL(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_SVM_CATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_SVM_SUBCATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_SVM_TOM(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_SVM_TG_L1(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_SVM_CATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_SVM_SUBCATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_SVM_TOM(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_SVM_TG_L1(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_KNN_CATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_KNN_SUBCATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_KNN_TOM(self):
+        return BaseConfig.find_value()
+
+    @property
+    def WORD2VEC_KNN_TG_L1(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_KNN_CATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_KNN_SUBCATEGORY(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_KNN_TOM(self):
+        return BaseConfig.find_value()
+
+    @property
+    def LAW2VEC_KNN_TG_L1(self):
+        return BaseConfig.find_value()
+
 
 dotenv.load_dotenv()
 config = SemCovidConfig()
