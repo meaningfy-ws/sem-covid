@@ -24,7 +24,6 @@ VERSION = '0.10.1'
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 CONTENT_LANGUAGE = "Tika detected language"
-CONTENT_TITLE = "Content Title"
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
@@ -116,8 +115,9 @@ def process_using_tika():
                         source[CONTENT_LANGUAGE] = (
                                     parse_result["metadata"].get("Content-Language")
                                     or
-                                    parse_result["metadata"].get("content-language"))
-                        source[CONTENT_TITLE] = parse_result["metadata"]["title"]
+                                    parse_result["metadata"].get("content-language")
+                                    or
+                                    parse_result["metadata"].get("language"))
                         valid_sources += 1
                     else:
                         logger.warning('Apache Tika did NOT return a valid content for the source ' +
