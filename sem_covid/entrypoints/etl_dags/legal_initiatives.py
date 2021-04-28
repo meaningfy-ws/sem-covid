@@ -300,8 +300,8 @@ def download_items():
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.LEGAL_INITIATIVES_BUCKET_NAME)
 
-    config.LEGAL_INITIATIVES_JSON = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
-    legal_initiatives_items_count = len(config.LEGAL_INITIATIVES_JSON)
+    json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
+    legal_initiatives_items_count = len(json_items)
     logger.info(f'Found {legal_initiatives_items_count} EURLex COVID19 items.')
 
     counter = {
@@ -309,7 +309,7 @@ def download_items():
         'pdf': 0
     }
 
-    for index, item in enumerate(config.LEGAL_INITIATIVES_JSON):
+    for index, item in enumerate(json_items):
         item[CONTENT_PATH_KEY] = list()
         if item.get('manifs_html'):
             for html_manifestation in item.get('htmls_to_download'):
@@ -335,7 +335,7 @@ def download_items():
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(config.LEGAL_INITIATIVES_JSON))
+    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -345,15 +345,15 @@ def extract_document_content_with_tika():
     logger.info(f'Loading resource files from {config.LEGAL_INITIATIVES_JSON}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.LEGAL_INITIATIVES_BUCKET_NAME)
-    config.LEGAL_INITIATIVES_JSON = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
-    legal_initiatives_items_count = len(config.LEGAL_INITIATIVES_JSON)
+    json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
+    legal_initiatives_items_count = len(json_items)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(config.LEGAL_INITIATIVES_JSON):
+    for index, item in enumerate(json_items):
         valid_sources = 0
         identifier = item['title']
         logger.info(f'[{index + 1}/{legal_initiatives_items_count}] Processing {identifier}')
@@ -394,7 +394,7 @@ def extract_document_content_with_tika():
             filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(config.LEGAL_INITIATIVES_JSON))
+    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
