@@ -19,7 +19,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC, LinearSVC
 
 from sem_covid import config
-from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
 from sem_covid.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectorizer
