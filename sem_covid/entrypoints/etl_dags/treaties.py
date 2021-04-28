@@ -266,13 +266,13 @@ def extract_document_content_with_tika():
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
                            config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_USERNAME,
                            config.ELASTICSEARCH_PASSWORD)
 
     logger.info(
-        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
+        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
@@ -282,9 +282,9 @@ def upload_processed_documents_to_elasticsearch():
     object_count = 0
     for obj in objects:
         try:
-            logger.info(f'Sending to ElasticSearch ( {config.TREATIES_IDX} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.TREATIES_IDX, document_id=obj.object_name.split("/")[1],
-                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+            logger.info(f'Sending to ElasticSearch ( {config.TREATIES_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
+            es_adapter.index(index_name=config.TREATIES_ELASTIC_SEARCH_INDEX_NAME, document_id=obj.object_name.split("/")[1],
+                             document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)

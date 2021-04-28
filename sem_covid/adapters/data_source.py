@@ -137,8 +137,8 @@ class TabularDatasource(BaseDataSource):
 
     def _fetch(self) -> pd.DataFrame:
         if not self._es_adapter:
-            self._es_adapter = ESAdapter(host_name=config.ELASTICSEARCH_HOST, port=config.ELASTICSEARCH_PORT,
-                                         user=config.ELASTICSEARCH_USER, password=config.ELASTICSEARCH_PASSWORD)
+            self._es_adapter = ESAdapter(host_name=config.ELASTICSEARCH_HOST_NAME, port=config.ELASTICSEARCH_PORT,
+                                         user=config.ELASTICSEARCH_USERNAME, password=config.ELASTICSEARCH_PASSWORD)
         return self._es_adapter.to_dataframe(index=self._object_name)
 
     def _to_local_cache(self, content: pd.DataFrame):
