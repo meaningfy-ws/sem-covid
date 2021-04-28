@@ -26,6 +26,9 @@ from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_
 
 logger = logging.getLogger(__name__)
 
+PWDB_TRAIN_TEST = 'train_test_split.pkl'
+PWDB_WORD2VEC_MODEL = 'word2vec/df.model'
+
 WORD2VEC_KNN_CATEGORY = "word2vec/KNN/knn_cateogry.pkl"
 WORD2VEC_KNN_SUBCATEGORY = "word2vec/KNN/knn_subcateogry.pkl"
 WORD2VEC_KNN_TOM = "word2vec/KNN/knn_type_of_measure.pkl"
@@ -37,6 +40,7 @@ LAW2VEC_KNN_TOM = "law2vec/KNN/knn_type_of_measure.pkl"
 LAW2VEC_KNN_TG_L1 = "law2vec/KNN/knn_target_groups_l1.pkl"
 
 
+
 class KNNPWDBExperiment(PWDBBaseExperiment):
 
     def model_training(self, *args, **kwargs):
@@ -44,8 +48,8 @@ class KNNPWDBExperiment(PWDBBaseExperiment):
                                             config.MINIO_SECRET_KEY, config.ML_EXPERIMENTS_BUCKET_NAME)
         minio_language_model = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY,
                                             config.MINIO_SECRET_KEY, config.LANGUAGE_MODEL_BUCKET_NAME)
-        train_test_dataset = pickle.loads(minio_ml_experiments.get_object(config.PWDB_TRAIN_TEST))
-        load_pwdb_word2vec = pickle.loads(minio_language_model.get_object(config.PWDB_WORD2VEC_MODEL))
+        train_test_dataset = pickle.loads(minio_ml_experiments.get_object(PWDB_TRAIN_TEST))
+        load_pwdb_word2vec = pickle.loads(minio_language_model.get_object(PWDB_WORD2VEC_MODEL))
 
         p = tempfile.NamedTemporaryFile()
         p.write(minio_language_model.get_object(config.LAW2VEC_MODEL_PATH))
