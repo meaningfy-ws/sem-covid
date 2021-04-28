@@ -144,7 +144,6 @@ def get_treaty_items():
                 ORDER BY ?dateDocument"""
 
     uploaded_bytes = minio.put_object_from_string(config.TREATIES_JSON, dumps(make_request(query)))
-    logger.info(f'Save query result to the {config.TREATIES_JSON} bucket')
     logger.info('Uploaded ' + str(
         uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
@@ -166,10 +165,10 @@ def download_file(source: dict, location_details: dict, file_name: str, minio: M
 def download_treaties_items():
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.TREATIES_BUCKET_NAME)
-    config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    logger.info(dumps(config.TREATIES_JSON)[:100])
-    config.TREATIES_JSON = config.TREATIES_JSON['results']['bindings']
-    treaties_items_count = len(config.TREATIES_JSON)
+    treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
+    logger.info(dumps(treaties_json)[:100])
+    treaties_json = treaties_json['results']['bindings']
+    treaties_items_count = len(treaties_json)
     logger.info(f'Found {treaties_items_count} treaties items.')
 
     counter = {
@@ -177,7 +176,7 @@ def download_treaties_items():
         'pdf': 0
     }
 
-    for index, item in enumerate(config.TREATIES_JSON):
+    for index, item in enumerate(treaties_json):
         if item.get('html_to_download') and item['html_to_download']['value'] != '/zip':
             filename = hashlib.sha256(item['html_to_download']['value'].encode('utf-8')).hexdigest()
 
@@ -200,7 +199,7 @@ def download_treaties_items():
             logger.exception(f"No treaties files has been found for {item['title']['value']}")
 
     updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    updated_treaties_json['results']['bindings'] = config.TREATIES_JSON
+    updated_treaties_json['results']['bindings'] = treaties_json
     minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_treaties_json))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
@@ -208,18 +207,17 @@ def download_treaties_items():
 
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    logger.info(f'Loading resource files from {config.TREATIES_JSON}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.TREATIES_BUCKET_NAME)
-    config.TREATIES_JSON = loads(minio.get_object(config.TREATIES_JSON))['results']['bindings']
-    treaties_items_count = len(config.TREATIES_JSON)
+    treaties_json = loads(minio.get_object(config.TREATIES_JSON))['results']['bindings']
+    treaties_items_count = len(treaties_json)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(config.TREATIES_JSON):
+    for index, item in enumerate(treaties_json):
         valid_sources = 0
         identifier = item['title']['value']
         logger.info(f'[{index + 1}/{treaties_items_count}] Processing {identifier}')
@@ -259,7 +257,7 @@ def extract_document_content_with_tika():
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
     updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    updated_treaties_json['results']['bindings'] = config.TREATIES_JSON
+    updated_treaties_json['results']['bindings'] = treaties_json
     minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_treaties_json))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
