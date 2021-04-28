@@ -1,5 +1,6 @@
 
 from datetime import datetime
+from tests.unit.conftest import FakeTabularDataSource
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from airflow import DAG
 
@@ -105,4 +106,8 @@ def test_train_pwdb_data(transformed_pwdb_dataframe):
     assert "Businesses" in resulting_df["y_train"]
     assert "Workers" in resulting_df["y_train"]
     assert "Citizens" in resulting_df["y_train"]
+
+
+def test_data_extraction_with_data_registry(base_experiment):
+    base_experiment.data_preparation()
 
