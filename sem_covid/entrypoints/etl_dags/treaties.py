@@ -199,7 +199,7 @@ def download_treaties_items():
             logger.exception(f"No treaties files has been found for {item['title']['value']}")
 
     updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    updated_treaties_json['results']['bindings'] = config.TREATIES_JSON
+    updated_treaties_json['results']['bindings'] = updated_treaties_json
     minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_treaties_json))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
