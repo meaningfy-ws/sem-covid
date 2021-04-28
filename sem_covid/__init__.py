@@ -9,6 +9,7 @@
 
 """
 import logging
+import pathlib
 import warnings
 
 import dotenv
@@ -118,11 +119,13 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     # TODO Property with undefined usage, ask Eugen about this ?
+    # TODO refactor code : we can delete this
     @property
     def PWDB_ES_TEST_DATA_DIRECTORY(self) -> str:
         return BaseConfig.find_value()
 
     # TODO Property with undefined usage, ask Eugen about this ?
+    # TODO refactor code : we can delete this
     @property
     def ES_PWDB_INDEX_MAPPING_FILE(self) -> str:
         return BaseConfig.find_value()
@@ -207,6 +210,15 @@ class SemCovidConfig(object):
     @property
     def ELASTICSEARCH_PASSWORD(self) -> str:
         return BaseConfig.find_value()
+
+    #Crawler property
+    @property
+    def CRAWLER_EU_TIMELINE_SPOKEPERSONS(self) -> str:
+        return str(pathlib.Path().parent / "resources" / "crawlers" / "eu_timeline_spokepersons_28_04_2021.json")
+
+    @property
+    def CRAWLER_EU_TIMELINE_PRESS_ASSISTANT(self) -> str:
+        return str(pathlib.Path().parent / "resources" / "crawlers" / "eu_timeline_press_assistant_28_04_2021.json")
 
 
 
