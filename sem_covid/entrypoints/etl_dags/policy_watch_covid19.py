@@ -117,7 +117,6 @@ def process_using_tika():
                                     parse_result["metadata"].get("Content-Language")
                                     or
                                     parse_result["metadata"].get("content-language"))
-                        source[CONTENT_LANGUAGE] = parse_result["metadata"]["Content-Language"]
                         source[CONTENT_TITLE] = parse_result["metadata"]["title"]
                         valid_sources += 1
                     else:
