@@ -19,6 +19,7 @@ from gensim.models import Word2Vec
 from sklearn import model_selection
 
 from sem_covid import config
+from sem_covid.services.data_registry import Dataset
 from sem_covid.services.base_experiment import BaseExperiment
 from sem_covid.services.sc_wrangling import data_cleaning
 from sem_covid.services.sc_wrangling import feature_selector
@@ -66,6 +67,7 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         raw_pwdb_dataset = self.requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
         raw_pwdb_dataset.raise_for_status()
         self.minio_adapter.empty_bucket()
+        # TODO: How data is extracted from request in elastic
         pwdb_json_dataset = json_transformer.transform_pwdb(json.loads(raw_pwdb_dataset.content))
         self.minio_adapter.put_object(config.PWDB_DATASET_LOCAL_FILENAME, json.dumps(pwdb_json_dataset).encode('utf-8'))
 
@@ -75,9 +77,8 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         pass
 
     def data_preparation(self, *args, **kwargs):
-        pwdb_json_dataset = json.loads(self.minio_adapter.get_object(config.PWDB_DATASET_LOCAL_FILENAME))
-        pwdb_dataframe = pd.DataFrame.from_records(pwdb_json_dataset)
-        pwdb_dataframe_columns = self.prepare_pwdb_data(pwdb_dataframe)
+        pwdb_dataset = Dataset.PWDB.fetch()
+        pwdb_dataframe_columns = self.prepare_pwdb_data(pwdb_dataset)
         pwdb_target_groups_refactor = self.target_group_refactoring(pwdb_dataframe_columns)
         pwdb_word2vec_model = self.train_pwdb_word2vec_language_model(pwdb_target_groups_refactor)
         pwdb_train_test_data = self.train_pwdb_data(pwdb_target_groups_refactor)
