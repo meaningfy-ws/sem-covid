@@ -74,4 +74,10 @@ COVID_EUROVOC_SEARCH_TERMS = ["EU financing",
                               "hospital infection",
                               "viral disease",
                               "coronavirus disease",
-                              "disease surveillance", ]
+                              "disease surveillance",
+                              "virus",
+                              "covid",
+                              "illness",
+                              "pandemic",
+                              "crisis",
+                              "infectious disease"]
