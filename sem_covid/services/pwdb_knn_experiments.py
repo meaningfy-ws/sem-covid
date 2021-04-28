@@ -18,56 +18,27 @@ from gensim.models import KeyedVectors
 from sklearn.pipeline import Pipeline
 from sklearn.neighbors import KNeighborsClassifier as KNC
 
+from sem_covid import config
 from sem_covid.adapters.minio_adapter import MinioAdapter
-from sem_covid.services.base_experiment import BaseExperiment
+from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectorizer
 from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
 
 logger = logging.getLogger(__name__)
 
-# TODO: get rid of all the constants in this file; use config file for that
 
-ML_EXPERIMENTS_BUCKET_NAME = "ml-experiments"
-LANGUAGE_MODEL_BUCKET_NAME = "language-models"
-
-PWDB_TRAIN_TEST = 'train_test_split.pkl'
-LAW2VEC_MODEL = 'law2vec/Law2Vec.200d.txt'
-PWDB_WORD2VEC_MODEL = 'word2vec/df.model'
-
-MINIO_ACCESS_KEY = '2zVld17bTfKk8iu0Eh9H74MywAeDV3WQ'
-MINIO_SECRET_KEY = 'ddk9fixfI9qXiMaZu1p2a7BsgY2yDopm'
-MINIO_URL = 'srv.meaningfy.ws:9000'
-
-WORD2VEC_SVM_CATEGORY = 'word2vec/SVM/svm_cateogry.pkl'
-WORD2VEC_SVM_SUBCATEGORY = 'word2vec/SVM/svm_subcateogry.pkl'
-WORD2VEC_SVM_TOM = 'word2vec/SVM/svm_type_of_measure.pkl'
-WORD2VEC_SVM_TG_L1 = 'word2vec/SVM/svm_target_groups_l1.pkl'
-
-LAW2VEC_SVM_CATEGORY = 'law2vec/SVM/svm_cateogry.pkl'
-LAW2VEC_SVM_SUBCATEGORY = 'law2vec/SVM/svm_subcateogry.pkl'
-LAW2VEC_SVM_TOM = 'law2vec/SVM/svm_type_of_measure.pkl'
-LAW2VEC_SVM_TG_L1 = 'law2vec/SVM/svm_target_groups_l1.pkl'
-
-
-class KNNPWDBExperiment(BaseExperiment):
-
-    def data_extraction(self, *args, **kwargs):
-        pass
-
-    def data_validation(self, *args, **kwargs):
-        pass
-
-    def data_preparation(self, *args, **kwargs):
-        pass
+class KNNPWDBExperiment(PWDBBaseExperiment):
 
     def model_training(self, *args, **kwargs):
-        minio_ml_experiments = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, ML_EXPERIMENTS_BUCKET_NAME)
-        minio_language_model = MinioAdapter(MINIO_URL, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, LANGUAGE_MODEL_BUCKET_NAME)
-        train_test_dataset = pickle.loads(minio_ml_experiments.get_object(PWDB_TRAIN_TEST))
-        load_pwdb_word2vec = pickle.loads(minio_language_model.get_object(PWDB_WORD2VEC_MODEL))
+        minio_ml_experiments = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                                            config.MINIO_SECRET_KEY, config.ML_EXPERIMENTS_BUCKET_NAME)
+        minio_language_model = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                                            config.MINIO_SECRET_KEY, config.LANGUAGE_MODEL_BUCKET_NAME)
+        train_test_dataset = pickle.loads(minio_ml_experiments.get_object(config.PWDB_TRAIN_TEST))
+        load_pwdb_word2vec = pickle.loads(minio_language_model.get_object(config.PWDB_WORD2VEC_MODEL))
 
         p = tempfile.NamedTemporaryFile()
-        p.write(minio_language_model.get_object(LAW2VEC_MODEL))
+        p.write(minio_language_model.get_object(config.LAW2VEC_MODEL_PATH))
         load_law2vec = KeyedVectors.load_word2vec_format(p.name)
         p.close()
 
