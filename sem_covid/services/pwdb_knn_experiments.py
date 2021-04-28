@@ -26,6 +26,16 @@ from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_
 
 logger = logging.getLogger(__name__)
 
+WORD2VEC_KNN_CATEGORY = "word2vec/KNN/knn_cateogry.pkl"
+WORD2VEC_KNN_SUBCATEGORY = "word2vec/KNN/knn_subcateogry.pkl"
+WORD2VEC_KNN_TOM = "word2vec/KNN/knn_type_of_measure.pkl"
+WORD2VEC_KNN_TG_L1 = "word2vec/KNN/knn_target_groups_l1.pkl"
+
+LAW2VEC_KNN_CATEGORY = "law2vec/KNN/knn_cateogry.pkl"
+LAW2VEC_KNN_SUBCATEGORY = "law2vec/KNN/knn_subcateogry.pkl"
+LAW2VEC_KNN_TOM = "law2vec/KNN/knn_type_of_measure.pkl"
+LAW2VEC_KNN_TG_L1 = "law2vec/KNN/knn_target_groups_l1.pkl"
+
 
 class KNNPWDBExperiment(PWDBBaseExperiment):
 
@@ -75,15 +85,15 @@ class KNNPWDBExperiment(PWDBBaseExperiment):
         pickle_l2v_tom = pickle.dumps(fit_l2v_tom)
         pickle_l2v_target_groups_l1 = pickle.dumps(fit_l2v_target_groups_l1)
 
-        minio_ml_experiments.put_object("word2vec/KNN/knn_cateogry.pkl", pickle_w2v_category)
-        minio_ml_experiments.put_object("word2vec/KNN/knn_subcateogry.pkl", pickle_w2v_subcategory)
-        minio_ml_experiments.put_object("word2vec/KNN/knn_type_of_measure.pkl", pickle_w2v_tom)
-        minio_ml_experiments.put_object("word2vec/KNN/knn_target_groups_l1.pkl", pickle_w2v_target_groups_l1)
+        minio_ml_experiments.put_object(WORD2VEC_KNN_CATEGORY, pickle_w2v_category)
+        minio_ml_experiments.put_object(WORD2VEC_KNN_SUBCATEGORY, pickle_w2v_subcategory)
+        minio_ml_experiments.put_object(WORD2VEC_KNN_TOM, pickle_w2v_tom)
+        minio_ml_experiments.put_object(WORD2VEC_KNN_TG_L1, pickle_w2v_target_groups_l1)
 
-        minio_ml_experiments.put_object("law2vec/KNN/knn_cateogry.pkl", pickle_l2v_category)
-        minio_ml_experiments.put_object("law2vec/KNN/knn_subcateogry.pkl", pickle_l2v_subcategory)
-        minio_ml_experiments.put_object("law2vec/KNN/knn_type_of_measure.pkl", pickle_l2v_tom)
-        minio_ml_experiments.put_object("law2vec/KNN/knn_target_groups_l1.pkl", pickle_l2v_target_groups_l1)
+        minio_ml_experiments.put_object(LAW2VEC_KNN_CATEGORY, pickle_l2v_category)
+        minio_ml_experiments.put_object(LAW2VEC_KNN_SUBCATEGORY, pickle_l2v_subcategory)
+        minio_ml_experiments.put_object(LAW2VEC_KNN_TOM, pickle_l2v_tom)
+        minio_ml_experiments.put_object(LAW2VEC_KNN_TG_L1, pickle_l2v_target_groups_l1)
 
     def model_evaluation(self, *args, **kwargs):
         pass
