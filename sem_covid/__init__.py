@@ -195,15 +195,6 @@ class SemCovidConfig(object):
     def TREATIES_SPARQL_URL(self) -> str:
         return BaseConfig.find_value()
 
-    @property
-    def PWDB_TRAIN_TEST(self):
-        return BaseConfig.find_value()
-
-    @property
-    def PWDB_WORD2VEC_MODEL(self):
-        return BaseConfig.find_value()
-
-
 
 dotenv.load_dotenv()
 config = SemCovidConfig()
