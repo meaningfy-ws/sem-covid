@@ -105,7 +105,7 @@ class SemCovidConfig(object):
         return BaseConfig.find_value()
 
     @property
-    def PWDB_DATASET_LOCAL_FILENAME(self) -> str:
+    def PWDB_DATASET_PATH(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
         return BaseConfig.find_value()
 
@@ -117,19 +117,14 @@ class SemCovidConfig(object):
     def PWDB_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
         return BaseConfig.find_value()
 
-    # TODO Property with undefined usage, ask Eugen about this ?
+    # TODO for Dan: Delete this correctly (safe)
     @property
     def PWDB_ES_TEST_DATA_DIRECTORY(self) -> str:
         return BaseConfig.find_value()
 
-    # TODO Property with undefined usage, ask Eugen about this ?
+    # TODO for Dan: Delete this correctly (safe)
     @property
     def ES_PWDB_INDEX_MAPPING_FILE(self) -> str:
-        return BaseConfig.find_value()
-
-    # TODO Property with undefined usage, ask Eugen about this ?
-    @property
-    def PWDB_DATASET_PATH(self) -> str:
         return BaseConfig.find_value()
 
     #LEGAL_INITIATIVES property
@@ -145,11 +140,6 @@ class SemCovidConfig(object):
 
     @property
     def LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
-        return BaseConfig.find_value()
-
-    # TODO Property with undefined usage, ask Eugen about this ?
-    @property
-    def LEGAL_INITIATIVES_SPARQL_URL(self) -> str:
         return BaseConfig.find_value()
 
     #TREATIES property
