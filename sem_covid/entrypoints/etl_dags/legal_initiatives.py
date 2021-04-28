@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 
 
 def make_request(query):
-    wrapper = SPARQLWrapper(config.LEGAL_INITIATIVES_SPARQL_URL)
+    wrapper = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     wrapper.setQuery(query)
     wrapper.setReturnFormat(JSON)
 
