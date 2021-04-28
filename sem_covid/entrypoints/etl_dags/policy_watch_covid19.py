@@ -23,6 +23,7 @@ from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 VERSION = '0.10.1'
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
+CONTENT_LANGUAGE = "Tika detected language"
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
@@ -46,8 +47,9 @@ def download_policy_dataset():
 
 def download_single_source(source, minio: MinioAdapter):
     try:
+        logger.info("Now downloading source " + str(source))
         url = source['URL'] if source['URL'].startswith('http') else ('http://' + source['url'])
-        filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['url'].encode('utf-8')).hexdigest())
+        filename = str(RESOURCE_FILE_PREFIX + hashlib.sha256(source['URL'].encode('utf-8')).hexdigest())
 
         with requests.get(url, allow_redirects=True, timeout=30) as response:
             minio.put_object(filename, response.content)
@@ -95,7 +97,7 @@ def process_using_tika():
         logger.info('[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['Title'])
 
         try:
-            for source in field_data['sources']:
+            for source in field_data['Sources']:
                 if 'failure_reason' in source:
                     logger.info('Will not process source <' +
                                 source['Title'] +
@@ -107,9 +109,14 @@ def process_using_tika():
                                                       config.APACHE_TIKA_URL)
 
                     logger.info('RESULT IS ' + json.dumps(parse_result))
-                    if CONTENT_KEY in parse_result:
-                        logger.info(f"content type: {type(parse_result['content'])}")
-                        source[CONTENT_KEY] = parse_result['content'].replace('\n', '')
+                    if CONTENT_KEY in parse_result and parse_result[CONTENT_KEY]:
+                        source[CONTENT_KEY] = parse_result[CONTENT_KEY].replace('\n', '')
+                        source[CONTENT_LANGUAGE] = (
+                                    parse_result["metadata"].get("Content-Language")
+                                    or
+                                    parse_result["metadata"].get("content-language")
+                                    or
+                                    parse_result["metadata"].get("language"))
                         valid_sources += 1
                     else:
                         logger.warning('Apache Tika did NOT return a valid content for the source ' +
