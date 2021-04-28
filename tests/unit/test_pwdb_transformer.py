@@ -1,7 +1,7 @@
 
 import logging
 
-from sem_covid.services.sc_wrangling.pwdb_transformer import transform_pwdb
+from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 
 logger = logging.getLogger(__name__)
 
