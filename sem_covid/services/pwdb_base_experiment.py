@@ -67,7 +67,7 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         raw_pwdb_dataset.raise_for_status()
         self.minio_adapter.empty_bucket()
         pwdb_json_dataset = json_transformer.transform_pwdb(json.loads(raw_pwdb_dataset.content))
-        self.minio_adapter.put_object(config.SC_PWDB_JSON, json.dumps(pwdb_json_dataset).encode('utf-8'))
+        self.minio_adapter.put_object(config.PWDB_DATASET_LOCAL_FILENAME, json.dumps(pwdb_json_dataset).encode('utf-8'))
 
     def data_validation(self, *args, **kwargs):
         # TODO: implement me by validating the returned index structure for a start,
@@ -75,7 +75,7 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         pass
 
     def data_preparation(self, *args, **kwargs):
-        pwdb_json_dataset = json.loads(self.minio_adapter.get_object(config.SC_PWDB_JSON))
+        pwdb_json_dataset = json.loads(self.minio_adapter.get_object(config.PWDB_DATASET_LOCAL_FILENAME))
         pwdb_dataframe = pd.DataFrame.from_records(pwdb_json_dataset)
         pwdb_dataframe_columns = self.prepare_pwdb_data(pwdb_dataframe)
         pwdb_target_groups_refactor = self.target_group_refactoring(pwdb_dataframe_columns)

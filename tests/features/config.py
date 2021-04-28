@@ -6,6 +6,6 @@ ES_PORT = os.environ.get('ES_PORT', 9200)
 ES_USERNAME = os.environ.get('ES_USERNAME', 'elastic')
 ES_PASSWORD = os.environ.get('ES_PASSWORD', 'changeme')
 ES_PWDB_INDEX_MAPPING_FILE = os.environ.get('ES_PWDB_INDEX_MAPPING_FILE', './resources/elasticsearch/ds_pwdb_mapping.json')
-ES_PWDB_INDEX_NAME = os.environ.get('ES_PWDB_INDEX_NAME', 'uat-pwdb-index')
+ES_PWDB_INDEX_NAME = os.environ.get('PWDB_ELASTIC_SEARCH_INDEX_NAME', 'uat-pwdb-index')
 PWDB_ES_TEST_DATA_DIRECTORY = os.environ.get('PWDB_ES_TEST_DATA_DIRECTORY', 'tests/test_data/pwdb')
 
