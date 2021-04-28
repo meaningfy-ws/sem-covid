@@ -1,8 +1,7 @@
-from json import dumps
-from pathlib import Path
-
 import re
 from datetime import datetime, date
+from json import dumps
+from pathlib import Path
 from typing import Optional, List
 from urllib.parse import urlparse
 
@@ -10,6 +9,7 @@ import scrapy
 from scrapy.selector import SelectorList
 from scrapy_splash import SplashRequest
 
+from . import COVID_EUROVOC_SEARCH_TERMS
 from ..items import IrishGovItem
 
 
@@ -21,13 +21,10 @@ class IrishGovCrawler(scrapy.Spider):
     date_format = '%d %B %Y'
     date_format_re = r'\d{1,2} \w+ \d{4}'
 
-    def __init__(self, filename, *args, storage_adapter=None, **kwargs):
+    def __init__(self, filename, text_searches: List[str] = COVID_EUROVOC_SEARCH_TERMS, *args, storage_adapter=None,
+                 **kwargs):
         super().__init__(*args, **kwargs)
-        self.text_searches = ["covid", "pandemic", "virus", "crisis", "infectious disease", "epidemiology", "epidemic",
-                              "disease surveillance", "health control", "public hygiene", "hospital infection",
-                              "patient safety", "patient's rights", "illness", "protective equipment",
-                              "crisis management", "freedom of movement", "restriction of liberty", "social impact",
-                              "economic consequence", "working conditions", "distance learning", "state of emergency"]
+        self.text_searches = text_searches
         self.storage_adapter = storage_adapter
         self.filename = filename
         self.data = list()
