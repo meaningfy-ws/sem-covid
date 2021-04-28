@@ -25,6 +25,9 @@ from sem_covid.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectori
 
 logger = logging.getLogger(__name__)
 
+PWDB_TRAIN_TEST = 'train_test_split.pkl'
+PWDB_WORD2VEC_MODEL = 'word2vec/df.model'
+
 WORD2VEC_SVM_CATEGORY = 'word2vec/SVM/svm_cateogry.pkl'
 WORD2VEC_SVM_SUBCATEGORY = 'word2vec/SVM/svm_subcateogry.pkl'
 WORD2VEC_SVM_TOM = 'word2vec/SVM/svm_type_of_measure.pkl'
@@ -46,8 +49,8 @@ class SVMPWDBExperiment(PWDBBaseExperiment):
         self.minio_model_adapter = minio_model_adapter
 
     def model_training(self, *args, **kwargs):
-        train_test_dataset = pickle.loads(self.minio_adapter.get_object(config.PWDB_TRAIN_TEST))
-        load_pwdb_word2vec = pickle.loads(self.minio_model_adapter.get_object(config.PWDB_WORD2VEC_MODEL))
+        train_test_dataset = pickle.loads(self.minio_adapter.get_object(PWDB_TRAIN_TEST))
+        load_pwdb_word2vec = pickle.loads(self.minio_model_adapter.get_object(PWDB_WORD2VEC_MODEL))
         temporary_file = tempfile.NamedTemporaryFile()
         temporary_file.write(self.minio_model_adapter.get_object(config.LAW2VEC_MODEL_PATH))
         load_law2vec = KeyedVectors.load_word2vec_format(temporary_file.name)
@@ -105,7 +108,7 @@ class SVMPWDBExperiment(PWDBBaseExperiment):
         self.minio_adapter.put_object(LAW2VEC_SVM_TG_L1, pickle_l2v_target_groups_l1)
 
     def model_evaluation(self, *args, **kwargs):
-        train_test_dataset = pickle.loads(self.minio_adapter.get_object(config.PWDB_TRAIN_TEST))
+        train_test_dataset = pickle.loads(self.minio_adapter.get_object(PWDB_TRAIN_TEST))
 
         w2v_category = pickle.loads(self.minio_adapter.get_object(WORD2VEC_SVM_CATEGORY))
         w2v_subcategory = pickle.loads(self.minio_adapter.get_object(WORD2VEC_SVM_SUBCATEGORY))
