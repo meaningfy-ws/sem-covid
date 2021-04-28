@@ -109,9 +109,8 @@ def process_using_tika():
                                                       config.APACHE_TIKA_URL)
 
                     logger.info('RESULT IS ' + json.dumps(parse_result))
-                    if CONTENT_KEY in parse_result:
-                        logger.info(f"content type: {type(parse_result['content'])}")
-                        source[CONTENT_KEY] = parse_result['content'].replace('\n', '')
+                    if CONTENT_KEY in parse_result and parse_result[CONTENT_KEY]:
+                        source[CONTENT_KEY] = parse_result[CONTENT_KEY].replace('\n', '')
                         source[CONTENT_LANGUAGE] = (
                                     parse_result["metadata"].get("Content-Language")
                                     or
