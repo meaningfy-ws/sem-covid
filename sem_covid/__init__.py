@@ -203,69 +203,6 @@ class SemCovidConfig(object):
     def PWDB_WORD2VEC_MODEL(self):
         return BaseConfig.find_value()
 
-    @property
-    def WORD2VEC_SVM_CATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def WORD2VEC_SVM_SUBCATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def WORD2VEC_SVM_TOM(self):
-        return BaseConfig.find_value()
-
-    @property
-    def WORD2VEC_SVM_TG_L1(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_SVM_CATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_SVM_SUBCATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_SVM_TOM(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_SVM_TG_L1(self):
-        return BaseConfig.find_value()
-
-    @property
-    def WORD2VEC_KNN_CATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def WORD2VEC_KNN_SUBCATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def WORD2VEC_KNN_TOM(self):
-        return BaseConfig.find_value()
-
-    @property
-    def WORD2VEC_KNN_TG_L1(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_KNN_CATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_KNN_SUBCATEGORY(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_KNN_TOM(self):
-        return BaseConfig.find_value()
-
-    @property
-    def LAW2VEC_KNN_TG_L1(self):
-        return BaseConfig.find_value()
 
 
 dotenv.load_dotenv()
