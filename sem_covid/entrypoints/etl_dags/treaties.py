@@ -26,6 +26,9 @@ from sem_covid.adapters.minio_adapter import MinioAdapter
 
 
 VERSION = '0.9.0'
+DATASET_NAME = "treaties"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -301,7 +304,7 @@ default_args = {
     "retry_delay": timedelta(minutes=500)
 }
 
-dag = DAG('Treaty_Items_DAG_version_' + VERSION, default_args=default_args,
+dag = DAG(DAG_NAME, default_args=default_args,
           schedule_interval="@once",
           max_active_runs=1)
 
