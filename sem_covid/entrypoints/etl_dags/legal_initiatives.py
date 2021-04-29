@@ -18,15 +18,18 @@ import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from jq import compile
 from tika import parser
 
 from sem_covid import config
 from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.services.sc_wrangling import json_transformer
 
 
 VERSION = '0.1.1'
+DATASET_NAME = "legal_initiatives"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -34,51 +37,9 @@ RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 logger = logging.getLogger(__name__)
 
-transformation = '''{
-work: .work.value,
-title: .title.value,
-part_of_dossiers: .part_of_dossiers.value | split("| "),
-work_sequences: .work_sequences.value | split("| "),
-related_to_works: .related_to_works.value | split("| "),
-cdm_types: .cdm_types.value | split("| "),
-cdm_type_labels: .cdm_type_labels.value | split("| "),
-resource_types: .resource_types.value | split("| "),
-resource_type_labels: .resource_type_labels.value | split("| "),
-eurovoc_concepts: .eurovoc_concepts.value | split("| "),
-eurovoc_concept_labels: .eurovoc_concept_labels.value | split("| "),
-subject_matters: .subject_matters.value | split("| "),
-subject_matter_labels: .subject_matter_labels.value | split("| "),
-directory_codes: .directory_codes.value | split("| "),
-directory_codes_labels: .directory_codes_labels.value | split("| "),
-celex_numbers: .celex_numbers.value | split("| "),
-legal_elis: .legal_elis.value | split("| "),
-id_documents: .id_documents.value | split("| "),
-same_as_uris: .same_as_uris.value | split("| "),
-authors: .authors.value | split("| "),
-author_labels: .author_labels.value | split("| "),
-full_ojs: .full_ojs.value | split("| "),
-oj_sectors: .oj_sectors.value | split("| "),
-internal_comments: .internal_comments.value | split("| "),
-is_in_force: .is_in_force.value | split("| "),
-dates_document: .dates_document.value | split("| "),
-dates_created: .dates_created.value | split("| "),
-legal_dates_entry_into_force: .legal_dates_entry_into_force.value | split("| "),
-legal_dates_signature: .legal_dates_signature.value | split("| "),
-manifs_pdf: .manifs_pdf.value | split("| "),
-manifs_html: .manifs_html.value | split("| "),
-pdfs_to_download: .pdfs_to_download.value | split("| "),
-htmls_to_download: .htmls_to_download.value | split("| ")
-}'''
-
-SEARCH_RULE = ".[] | "
-
-
-def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
-    return (search_rule + rules).replace("\n", "")
-
 
 def make_request(query):
-    wrapper = SPARQLWrapper(config.LEGAL_INITIATIVES_SPARQL_URL)
+    wrapper = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     wrapper.setQuery(query)
     wrapper.setReturnFormat(JSON)
 
@@ -272,8 +233,8 @@ def get_legal_initiatives_items():
     GROUP BY ?work ?title
     ORDER BY ?work ?title"""
     response = make_request(query)['results']['bindings']
-    transformed_json = compile(get_transformation_rules(transformation)).input(response).all()
-    uploaded_bytes = minio.put_object(config.LEGAL_INITIATIVES_JSON, dumps(transformed_json).encode('utf-8'))
+    legal_initiatives_dataset = json_transformer.transform_legal_initiatives(response.content)
+    uploaded_bytes = minio.put_object(config.LEGAL_INITIATIVES_JSON, dumps(legal_initiatives_dataset).encode('utf-8'))
 
     logger.info(f'Save query result to {config.LEGAL_INITIATIVES_JSON}')
     logger.info('Uploaded ' + str(
@@ -300,8 +261,8 @@ def download_items():
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.LEGAL_INITIATIVES_BUCKET_NAME)
 
-    config.LEGAL_INITIATIVES_JSON = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
-    legal_initiatives_items_count = len(config.LEGAL_INITIATIVES_JSON)
+    json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
+    legal_initiatives_items_count = len(json_items)
     logger.info(f'Found {legal_initiatives_items_count} EURLex COVID19 items.')
 
     counter = {
@@ -309,7 +270,7 @@ def download_items():
         'pdf': 0
     }
 
-    for index, item in enumerate(config.LEGAL_INITIATIVES_JSON):
+    for index, item in enumerate(json_items):
         item[CONTENT_PATH_KEY] = list()
         if item.get('manifs_html'):
             for html_manifestation in item.get('htmls_to_download'):
@@ -335,7 +296,7 @@ def download_items():
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(config.LEGAL_INITIATIVES_JSON))
+    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -345,15 +306,15 @@ def extract_document_content_with_tika():
     logger.info(f'Loading resource files from {config.LEGAL_INITIATIVES_JSON}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.LEGAL_INITIATIVES_BUCKET_NAME)
-    config.LEGAL_INITIATIVES_JSON = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
-    legal_initiatives_items_count = len(config.LEGAL_INITIATIVES_JSON)
+    json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
+    legal_initiatives_items_count = len(json_items)
 
     counter = {
         'general': 0,
         'success': 0
     }
 
-    for index, item in enumerate(config.LEGAL_INITIATIVES_JSON):
+    for index, item in enumerate(json_items):
         valid_sources = 0
         identifier = item['title']
         logger.info(f'[{index + 1}/{legal_initiatives_items_count}] Processing {identifier}')
@@ -394,19 +355,19 @@ def extract_document_content_with_tika():
             filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
             minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(config.LEGAL_INITIATIVES_JSON))
+    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
                            config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_USERNAME,
                            config.ELASTICSEARCH_PASSWORD)
 
     logger.info(
-        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
+        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
@@ -416,9 +377,9 @@ def upload_processed_documents_to_elasticsearch():
     object_count = 0
     for obj in objects:
         try:
-            logger.info(f'Sending to ElasticSearch ( {config.LEGAL_INITIATIVES_IDX} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.LEGAL_INITIATIVES_IDX, document_id=obj.object_name.split("/")[1],
-                                       document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
+            logger.info(f'Sending to ElasticSearch ( {config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
+            es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME, document_id=obj.object_name.split("/")[1],
+                             document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
             logger.exception(ex)
@@ -438,7 +399,7 @@ default_args = {
 }
 
 dag = DAG(
-    'Legal_Initiatives_ver_' + VERSION,
+    DAG_NAME,
     default_args=default_args,
     schedule_interval="@once",
     max_active_runs=1,

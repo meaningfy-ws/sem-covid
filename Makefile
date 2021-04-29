@@ -67,4 +67,12 @@ vault_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
 # Get secrets in json format
 vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
 	@ echo "Writing the mfy/sem-covid secret from Vault to variables.json"
-	@ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data" > variables.json
+	@ vault kv get -format="json" mfy/sem-covid-infra | jq -r ".data.data" > tmp1.json
+	@ vault kv get -format="json" mfy/jupyter-notebook | jq -r ".data.data" > tmp2.json
+	@ vault kv get -format="json" mfy/ml-flow | jq -r ".data.data" > tmp3.json
+	@ vault kv get -format="json" mfy/air-flow | jq -r ".data.data" > tmp4.json
+	@ vault kv get -format="json" mfy/min-io | jq -r ".data.data" > tmp5.json
+	@ vault kv get -format="json" mfy/elastic-search | jq -r ".data.data" > tmp6.json
+	@ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data" > tmp7.json
+	@ jq -s '.[0] * .[1] * .[2] * .[3] * .[4] * .[5] * .[6]' tmp*.json> variables.json
+	@ rm tmp*.json

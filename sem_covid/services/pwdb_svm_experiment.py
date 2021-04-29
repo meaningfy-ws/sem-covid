@@ -19,12 +19,24 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC, LinearSVC
 
 from sem_covid import config
-from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
 from sem_covid.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectorizer
 
 logger = logging.getLogger(__name__)
+
+PWDB_TRAIN_TEST = 'train_test_split.pkl'
+PWDB_WORD2VEC_MODEL = 'word2vec/df.model'
+
+WORD2VEC_SVM_CATEGORY = 'word2vec/SVM/svm_cateogry.pkl'
+WORD2VEC_SVM_SUBCATEGORY = 'word2vec/SVM/svm_subcateogry.pkl'
+WORD2VEC_SVM_TOM = 'word2vec/SVM/svm_type_of_measure.pkl'
+WORD2VEC_SVM_TG_L1 = 'word2vec/SVM/svm_target_groups_l1.pkl'
+
+LAW2VEC_SVM_CATEGORY = 'law2vec/SVM/svm_cateogry.pkl'
+LAW2VEC_SVM_SUBCATEGORY = 'law2vec/SVM/svm_subcateogry.pkl'
+LAW2VEC_SVM_TOM = 'law2vec/SVM/svm_type_of_measure.pkl'
+LAW2VEC_SVM_TG_L1 = 'law2vec/SVM/svm_target_groups_l1.pkl'
 
 
 class SVMPWDBExperiment(PWDBBaseExperiment):
@@ -37,8 +49,8 @@ class SVMPWDBExperiment(PWDBBaseExperiment):
         self.minio_model_adapter = minio_model_adapter
 
     def model_training(self, *args, **kwargs):
-        train_test_dataset = pickle.loads(self.minio_adapter.get_object(config.PWDB_TRAIN_TEST))
-        load_pwdb_word2vec = pickle.loads(self.minio_model_adapter.get_object(config.PWDB_WORD2VEC_MODEL))
+        train_test_dataset = pickle.loads(self.minio_adapter.get_object(PWDB_TRAIN_TEST))
+        load_pwdb_word2vec = pickle.loads(self.minio_model_adapter.get_object(PWDB_WORD2VEC_MODEL))
         temporary_file = tempfile.NamedTemporaryFile()
         temporary_file.write(self.minio_model_adapter.get_object(config.LAW2VEC_MODEL_PATH))
         load_law2vec = KeyedVectors.load_word2vec_format(temporary_file.name)
@@ -85,28 +97,28 @@ class SVMPWDBExperiment(PWDBBaseExperiment):
         pickle_l2v_target_groups_l1 = pickle.dumps(fit_l2v_target_groups_l1)
 
         # TODO: do you think the hardcoded value is a good idea?
-        self.minio_adapter.put_object("word2vec/SVM/svm_category.pkl", pickle_w2v_category)
-        self.minio_adapter.put_object("word2vec/SVM/svm_subcategory.pkl", pickle_w2v_subcategory)
-        self.minio_adapter.put_object("word2vec/SVM/svm_type_of_measure.pkl", pickle_w2v_tom)
-        self.minio_adapter.put_object("word2vec/SVM/svm_target_groups_l1.pkl", pickle_w2v_target_groups_l1)
+        self.minio_adapter.put_object(WORD2VEC_SVM_CATEGORY, pickle_w2v_category)
+        self.minio_adapter.put_object(WORD2VEC_SVM_SUBCATEGORY, pickle_w2v_subcategory)
+        self.minio_adapter.put_object(WORD2VEC_SVM_TOM, pickle_w2v_tom)
+        self.minio_adapter.put_object(WORD2VEC_SVM_TG_L1, pickle_w2v_target_groups_l1)
 
-        self.minio_adapter.put_object("law2vec/SVM/svm_category.pkl", pickle_l2v_category)
-        self.minio_adapter.put_object("law2vec/SVM/svm_subcategory.pkl", pickle_l2v_subcategory)
-        self.minio_adapter.put_object("law2vec/SVM/svm_type_of_measure.pkl", pickle_l2v_tom)
-        self.minio_adapter.put_object("law2vec/SVM/svm_target_groups_l1.pkl", pickle_l2v_target_groups_l1)
+        self.minio_adapter.put_object(LAW2VEC_SVM_CATEGORY, pickle_l2v_category)
+        self.minio_adapter.put_object(LAW2VEC_SVM_SUBCATEGORY, pickle_l2v_subcategory)
+        self.minio_adapter.put_object(LAW2VEC_SVM_TOM, pickle_l2v_tom)
+        self.minio_adapter.put_object(LAW2VEC_SVM_TG_L1, pickle_l2v_target_groups_l1)
 
     def model_evaluation(self, *args, **kwargs):
-        train_test_dataset = pickle.loads(self.minio_adapter.get_object(config.PWDB_TRAIN_TEST))
+        train_test_dataset = pickle.loads(self.minio_adapter.get_object(PWDB_TRAIN_TEST))
 
-        w2v_category = pickle.loads(self.minio_adapter.get_object(config.WORD2VEC_SVM_CATEGORY))
-        w2v_subcategory = pickle.loads(self.minio_adapter.get_object(config.WORD2VEC_SVM_SUBCATEGORY))
-        w2v_tom = pickle.loads(self.minio_adapter.get_object(config.WORD2VEC_SVM_TOM))
-        w2v_tg_l1 = pickle.loads(self.minio_adapter.get_object(config.WORD2VEC_SVM_TG_L1))
+        w2v_category = pickle.loads(self.minio_adapter.get_object(WORD2VEC_SVM_CATEGORY))
+        w2v_subcategory = pickle.loads(self.minio_adapter.get_object(WORD2VEC_SVM_SUBCATEGORY))
+        w2v_tom = pickle.loads(self.minio_adapter.get_object(WORD2VEC_SVM_TOM))
+        w2v_tg_l1 = pickle.loads(self.minio_adapter.get_object(WORD2VEC_SVM_TG_L1))
 
-        l2v_category = pickle.loads(self.minio_adapter.get_object(config.LAW2VEC_SVM_CATEGORY))
-        l2v_subcategory = pickle.loads(self.minio_adapter.get_object(config.LAW2VEC_SVM_SUBCATEGORY))
-        l2v_tom = pickle.loads(self.minio_adapter.get_object(config.LAW2VEC_SVM_TOM))
-        l2v_tg_l1 = pickle.loads(self.minio_adapter.get_object(config.LAW2VEC_SVM_TG_L1))
+        l2v_category = pickle.loads(self.minio_adapter.get_object(LAW2VEC_SVM_CATEGORY))
+        l2v_subcategory = pickle.loads(self.minio_adapter.get_object(LAW2VEC_SVM_SUBCATEGORY))
+        l2v_tom = pickle.loads(self.minio_adapter.get_object(LAW2VEC_SVM_TOM))
+        l2v_tg_l1 = pickle.loads(self.minio_adapter.get_object(LAW2VEC_SVM_TG_L1))
 
         w2v_category.score(train_test_dataset['X_train'], train_test_dataset['y_train']['Category'])
         w2v_subcategory.score(train_test_dataset['X_train'], train_test_dataset['y_train']['Subcategory'])
