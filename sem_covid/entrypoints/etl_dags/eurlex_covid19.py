@@ -20,7 +20,7 @@ from sem_covid.services.sc_wrangling import json_transformer
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.10.0'
+VERSION = '0.10.1'
 DATASET_NAME = "eu_cellar"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
@@ -153,12 +153,6 @@ WHERE {
     OPTIONAL {
         ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
     }
-=======
-
-# def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
-#    return (search_rule + rules).replace("\n", "")
->>>>>>> Stashed changes
-
     # metadata - identification properties
     OPTIONAL {
         ?work cdm:resource_legal_id_celex ?celex .
@@ -374,8 +368,8 @@ def clear_bucket():
 def get_single_item(query, json_file_name):
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EU_CELLAR_BUCKET_NAME)
     response = make_request(query)['results']['bindings']
-    eurlex_json_dataset = json_transformer.transform_eurlex(response.content)
-    uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, json.dumps(eurlex_json_dataset).encode('utf-8'))
+    eurlex_json_dataset = json_transformer.transform_eurlex(response)
+    uploaded_bytes = minio.put_object(json_file_name, json.dumps(eurlex_json_dataset).encode('utf-8'))
     logger.info(f'Save query result to {json_file_name}')
     logger.info('Uploaded ' + str(
         uploaded_bytes) + ' bytes to bucket [' + config.EU_CELLAR_BUCKET_NAME + '] at ' + config.MINIO_URL)
@@ -435,7 +429,7 @@ def download_dataset_items(json_file_name):
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(json_file_name, dumps(json_content))
+    minio.put_object_from_string(json_file_name, json.dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -486,12 +480,12 @@ def extract_content_with_tika(json_file_name):
                             else:
                                 logger.warning(
                                     f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
+                        item[CONTENT_KEY] = " ".join(item[CONTENT_KEY])
             except Exception as e:
                 logger.exception(e)
-        if valid_sources:
-            manifestation = (item.get('manifs_html') or item.get('manifs_pdf'))[0]
-            filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
-            minio.put_object_from_string(TIKA_FILE_PREFIX + filename, json.dumps(item))
+
+        filename = hashlib.sha256(item.get('work').encode('utf-8')).hexdigest()
+        minio.put_object_from_string(TIKA_FILE_PREFIX + filename, json.dumps(item))
 
     minio.put_object_from_string(json_file_name, json.dumps(json_content))
 
