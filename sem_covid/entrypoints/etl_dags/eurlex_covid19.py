@@ -20,7 +20,7 @@ from sem_covid.services.sc_wrangling import json_transformer
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.10.0'
+VERSION = '0.10.1'
 DATASET_NAME = "eu_cellar"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
@@ -435,7 +435,7 @@ def download_dataset_items(json_file_name):
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(json_file_name, dumps(json_content))
+    minio.put_object_from_string(json_file_name, json.dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -486,12 +486,12 @@ def extract_content_with_tika(json_file_name):
                             else:
                                 logger.warning(
                                     f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
+                        item[CONTENT_KEY] = " ".join(item[CONTENT_KEY])
             except Exception as e:
                 logger.exception(e)
-        if valid_sources:
-            manifestation = (item.get('manifs_html') or item.get('manifs_pdf'))[0]
-            filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
-            minio.put_object_from_string(TIKA_FILE_PREFIX + filename, json.dumps(item))
+
+        filename = hashlib.sha256(item.get('work').encode('utf-8')).hexdigest()
+        minio.put_object_from_string(TIKA_FILE_PREFIX + filename, json.dumps(item))
 
     minio.put_object_from_string(json_file_name, json.dumps(json_content))
 
