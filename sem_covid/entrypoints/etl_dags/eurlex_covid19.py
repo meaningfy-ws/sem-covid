@@ -153,12 +153,6 @@ WHERE {
     OPTIONAL {
         ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
     }
-=======
-
-# def get_transformation_rules(rules: str, search_rule: str = SEARCH_RULE):
-#    return (search_rule + rules).replace("\n", "")
->>>>>>> Stashed changes
-
     # metadata - identification properties
     OPTIONAL {
         ?work cdm:resource_legal_id_celex ?celex .
