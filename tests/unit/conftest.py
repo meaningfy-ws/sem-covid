@@ -9,7 +9,7 @@ import pandas as pd
 from sem_covid.base_config import BaseConfig
 from sem_covid.adapters.data_source import BinaryDataSource, TabularDatasource
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
-from sem_covid.services.sc_wrangling.pwdb_transformer import transform_pwdb
+from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 
 
 def raw_pwdb_data():

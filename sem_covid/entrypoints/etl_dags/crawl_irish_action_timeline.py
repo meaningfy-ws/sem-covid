@@ -25,6 +25,9 @@ from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
 
 VERSION = '0.1.2'
+DATASET_NAME = "ireland_timeline"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_PATH_KEY = 'content'
 logger = logging.getLogger(__name__)
@@ -41,21 +44,21 @@ def extract_settings_from_module(module):
 def start_crawler():
     logger.info('start crawler')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.IRISH_TIMELINE_BUCKET_NAME)
+                         config.IRELAND_TIMELINE_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     settings = extract_settings_from_module(crawler_config)
     settings['config.SPLASH_URL'] = config.SPLASH_URL
     process = CrawlerProcess(settings=settings)
-    process.crawl(IrishGovCrawler, filename=config.IRISH_TIMELINE_JSON, storage_adapter=minio)
+    process.crawl(IrishGovCrawler, filename=config.IRELAND_TIMELINE_JSON, storage_adapter=minio)
     process.start()
 
 
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    logger.info(f'Loading resource files from {config.IRISH_TIMELINE_JSON}')
+    logger.info(f'Loading resource files from {config.IRELAND_TIMELINE_JSON}')
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.IRISH_TIMELINE_BUCKET_NAME)
-    json_content = loads(minio.get_object(config.IRISH_TIMELINE_JSON))
+                         config.IRELAND_TIMELINE_BUCKET_NAME)
+    json_content = loads(minio.get_object(config.IRELAND_TIMELINE_JSON))
     irish_action_timeline_items_count = len(json_content)
 
     counter = {
@@ -80,29 +83,29 @@ def extract_document_content_with_tika():
         filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
         minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.IRISH_TIMELINE_JSON, dumps(json_content))
+    minio.put_object_from_string(config.IRELAND_TIMELINE_JSON, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST,
+    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
                            config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USER,
+                           config.ELASTICSEARCH_USERNAME,
                            config.ELASTICSEARCH_PASSWORD)
 
-    logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST}:{config.ELASTICSEARCH_PORT}')
+    logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
     logger.info(f'Loading files from {config.MINIO_URL}')
 
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.IRISH_TIMELINE_BUCKET_NAME)
+                         config.IRELAND_TIMELINE_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
         try:
             logger.info(
-                f'Sending to ElasticSearch ( {config.IRELAND_ACTION_TIMELINE_IDX} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.IRELAND_ACTION_TIMELINE_IDX, document_id=obj.object_name.split("/")[1],
+                f'Sending to ElasticSearch ( {config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
+            es_adapter.index(index_name=config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME, document_id=obj.object_name.split("/")[1],
                              document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
@@ -123,7 +126,7 @@ default_args = {
 }
 
 dag = DAG(
-    'Crawl_Irish_Action_Timeline_' + VERSION,
+    DAG_NAME,
     default_args=default_args,
     schedule_interval="@once",
     max_active_runs=1,
