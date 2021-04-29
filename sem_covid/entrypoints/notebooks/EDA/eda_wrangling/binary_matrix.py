@@ -12,7 +12,10 @@ def convert_to_binary_matrix(data: pd.DataFrame) -> pd.DataFrame:
         for key in row.index:
             if type(row[key]) == list:
                 for column in row[key]:
-                    new_row[column] = 1
+                    try:
+                        new_row[column] = 1
+                    except Exception as e:
+                        print(column, type(column))
             else:
                 new_row[row[key]] = 1
         binary_matrix = binary_matrix.append(new_row, ignore_index=True)
