@@ -1,0 +1,204 @@
+\chapter{Architecture building blocks}
+\label{sec:building-blocks}
+
+	This chapter provides some foundations about the notations, definitions and the general approach adopted here to model the enterprise architecture.
+
+	\section{Methodology}
+	
+	In this document we take an enterprise architecture perspective and aim to provide several architecture views (see Section \ref{sec:views}) which are necessary and sufficient to describe the asset lifecycle process. 
+	
+	In developing this architecture, we are in part using the TOGAF \citep{togaf9.2} methodology, which is, in fact, a framework for enterprise architecture that provides an approach for designing, planning, implementing and governing an enterprise information technology architecture. Although we do not follow this framework extensively, relevant parts of it were applied to the goals of this architecture.
+		
+	For representing the architecture models, ArchiMate language \citep{archimate3.1} is adopted. It is an open and independent enterprise architecture modelling language to support the description, analysis and visualisation of architecture within and across business domains in a clear and unambiguous way.
+
+	Based on the initial requirements specifications document \citep{lam-requirements-2020} and a series of interviews conducted with the LAM team, the structure of the project stakeholders motivations was established. It is presented in Section \ref{sec:motivation-architecture}.
+		 
+	The business and application layers of this architecture, are a gradual fleshing out of the use cases presented in the project preliminary requirements \citep{lam-preliminary-requirements-2019}, the functional requirements in the requirements specifications document \citep{lam-requirements-2020} and the architecture for managing and publishing semantic assets \citep{costetchi2020d} adopted by the A2 unit.
+	 
+	The ArchiMate diagrams corresponding to each architecture layer were modelled and designed using Enterprise Architect Tool \citep{ea}. Finally this report was written covering the overall architecture. 
+	
+	\section{Architecture views}
+	\label{sec:views}
+	
+% 	The next sections of this document we will organise the architecture diagrams based on specific views. An architecture view is a representation of a system from the perspective of a related set of concerns. 
+	
+	Architecture views are an ideal mechanism to purposefully convey information about architecture areas. In general, a view is defined as a part of an Architecture Description that addresses a set of related concerns and is tailored for specific stakeholders. A view is specified by means of an architecture viewpoint, which prescribes the concepts, models, analysis techniques, and visualisations that are provided by the view. Simply put, a view is what you see, and a viewpoint is where you are looking from \citep{archimate3.1}.
+	
+	An architecture view expresses the architecture of the system of interest in accordance with an architecture viewpoint (or simply ``viewpoint''). There are two aspects to a viewpoint: the concerns it frames for the stakeholders and the conventions it establishes on views \citep{archimate3.1}.
+
+	Viewpoints are designed for the purpose of communicating certain aspects and layers of an architecture. In this document we address \textit{the motivation view} (Section \ref{sec:motivation-architecture}), \textit{the business view} (Section \ref{sec:business-architecture}), and \textit{the application view} (Section \ref{sec:application-architecture}).
+	
+	Instead of describing what each of these views represents in this section, we decided to provide such a description in the beginning of each of the subsequent sections. This way, we aim to ease reading the section by providing the reader a fresh introduction into the structure of a prototypical layer architecture before the actual architecture is described.
+	
+	\section{ArchiMate elements}
+	
+    This section presents the ArchiMate elements, in terms of their definition and the graphical notation, which we employ in each of the architecture views. 
+
+
+\begin{longtable}[c]{@{}lll@{}}
+	\caption{Overview of the relevant motivation elements \citep{archimate3.1}}
+	\label{tab:motivation}\\
+	\toprule
+	\textbf{Element} & \textbf{Definition} & \textbf{Notation} \\* \midrule
+	\endfirsthead
+	%
+	\multicolumn{3}{c}%
+	{{\itshape Table \thetable\ continued from previous page}} \\
+	\endhead
+	%
+	\bottomrule
+	\endfoot
+	%
+	\endlastfoot
+	%
+			Stakeholder & \parbox{.56\linewidth}{Represents the role of an individual, team, or organisation (or classes thereof) that represents their interests in the effects of the architecture.} &     \cincludegraphics[height=2.5\normalbaselineskip]{images/views/elements/stakeholder}   \\
+
+			Driver & \parbox{.56\linewidth}{Represents an external or internal condition that motivates an organisation to define its goals and implement the changes necessary to achieve them.} & \cincludegraphics[height=2.5\normalbaselineskip]{images/views/elements/driver}  \\
+			
+			Assessment & \parbox{.56\linewidth}{Represents the result of an analysis of the state of affairs of the enterprise with respect to some driver.} & \cincludegraphics[height=2.5\normalbaselineskip]{images/views/elements/assesment}   \\
+			
+			Goal & \parbox{.56\linewidth}{Represents a high-level statement of intent, direction, or desired end state for an organisation and its stakeholders.} & \cincludegraphics[height=2.5\normalbaselineskip]{images/views/elements/goal}  \\
+			\bottomrule
+
+	\end{longtable}
+	
+	% Please add the following required packages to your document preamble:
+	% \usepackage{booktabs}
+	% \usepackage{longtable}
+	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+	\begin{longtable}[c]{@{}lll@{}}
+		\caption{Overview of the relevant business layer elements \citep{archimate3.1}}
+		\label{tab:business}\\
+		\toprule
+		\textbf{Element} & \textbf{Definition} & \textbf{Notation} \\* \midrule
+		\endfirsthead
+		%
+		\multicolumn{3}{c}%
+		{{\itshape Table \thetable\ continued from previous page}} \\
+		\endhead
+		%
+		\bottomrule
+		\endfoot
+		%
+		\endlastfoot
+		%
+			Business actor & \parbox{.5\linewidth}{Represents a business entity that is capable of performing behaviour.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/actor} \\
+			Business role & \parbox{.5\linewidth}{Represents the responsibility for performing specific behaviour, to which an actor can be assigned, or the part an actor plays in a particular action or event.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/role} \\
+			\parbox{.1\linewidth}{Business collaboration} & \parbox{.5\linewidth}{Represents an aggregate of two or more business internal active structure elements that work together to perform collective behaviour.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/collaboration} \\
+			Business interface & \parbox{.5\linewidth}{Represents a point of access where a business service is made available to the environment.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/interface} \\
+			Business process & \parbox{.5\linewidth}{Represents a sequence of business behaviours that achieves a specific result such as a defined set of products or business services.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/process} \\
+			Business function & \parbox{.5\linewidth}{Represents a collection of business behaviour based on a chosen set of criteria (typically required business resources and/or competencies), closely aligned to an organisation, but not necessarily explicitly governed by the organisation.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/function} \\
+			Business event & \parbox{.5\linewidth}{Represents an organisational state change.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/event} \\
+			Business service & \parbox{.5\linewidth}{Represents explicitly defined behaviour that a business role, business actor, or business collaboration exposes to its environment.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/service} \\
+			Business object & \parbox{.5\linewidth}{Represents a concept used within a particular business domain.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/object} \\
+			Representation & \parbox{.5\linewidth}{Represents a perceptible form of the information carried by a business object.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/business-elements/representation} \\ \bottomrule
+		
+	\end{longtable}
+
+	% Please add the following required packages to your document preamble:
+	% \usepackage{booktabs}
+	% \usepackage{longtable}
+	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+	\begin{longtable}[c]{@{}lll@{}}
+		\caption{Overview of the relevant application layer elements \citep{archimate3.1}}
+		\label{tab:application}\\
+		\toprule
+		\textbf{Element} & \textbf{Definition} & \textbf{Notation} \\* \midrule
+		\endfirsthead
+		%
+		\multicolumn{3}{c}%
+		{{\itshape Table \thetable\ continued from previous page}} \\
+		\endhead
+		%
+		\bottomrule
+		\endfoot
+		%
+		\endlastfoot
+		%
+			\parbox{.1\linewidth}{Application component} & \parbox{.5\linewidth}{Represents an encapsulation of application functionality aligned to implementation structure, which is modular and replaceable.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/application-elements/component} \\
+			\parbox{.1\linewidth}{Application interface} & \parbox{.5\linewidth}{Represents a point of access where application services are made available to a user, another application component, or a node.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/application-elements/interface} \\
+			\parbox{.1\linewidth}{Application function} & \parbox{.5\linewidth}{Represents automated behaviour that can be performed by an application component.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/application-elements/function} \\
+			\parbox{.1\linewidth}{Application process} & \parbox{.5\linewidth}{Represents a sequence of application behaviours that achieves a specific result.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/application-elements/process} \\
+			\parbox{.1\linewidth}{Application event} & \parbox{.5\linewidth}{Represents an application state change.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/application-elements/event} \\
+			\parbox{.1\linewidth}{Application service} & \parbox{.5\linewidth}{Represents an explicitly defined exposed application behaviour.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/application-elements/service} \\
+			\parbox{.15\linewidth}{Data object} & \parbox{.5\linewidth}{Represents data structured for automated processing.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/application-elements/object} \\ \bottomrule		
+		
+	\end{longtable}
+
+	% Please add the following required packages to your document preamble:
+	% \usepackage{booktabs}
+	% \usepackage{longtable}
+	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+	\begin{longtable}[c]{@{}lll@{}}
+		\caption{Overview of the relevant technology layer elements \citep{archimate3.1}}
+		\label{tab:technology}\\
+		\toprule
+		\textbf{Element} & \textbf{Definition} & \textbf{Notation} \\* \midrule
+		\endfirsthead
+		%
+		\multicolumn{3}{c}%
+		{{\itshape Table \thetable\ continued from previous page}} \\
+		\endhead
+		%
+		\bottomrule
+		\endfoot
+		%
+		\endlastfoot
+		%
+			Node & \parbox{.5\linewidth}{Represents a computational or physical resource that hosts, manipulates, or interacts with other computational or physical resources.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/technology-elements/node} \\
+			Device & \parbox{.5\linewidth}{Represents a physical IT resource upon which system software and artefacts may be stored or deployed for execution.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/technology-elements/device} \\
+			\parbox{.15\linewidth}{System software} & \parbox{.5\linewidth}{Represents software that provides or contributes to an environment for storing, executing, and using software or data deployed within it.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/technology-elements/software} \\
+			\parbox{.15\linewidth}{Technology interface} & \parbox{.5\linewidth}{Represents a point of access where technology services offered by a node can be accessed.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/technology-elements/interface} \\
+			\parbox{.18\linewidth}{Communication network} & \parbox{.5\linewidth}{Represents a set of structures that connects nodes for transmission, routing, and reception of data.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/technology-elements/network} \\
+			\parbox{.15\linewidth}{Technology service} & \parbox{.5\linewidth}{Represents an explicitly defined exposed technology behaviour.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/technology-elements/service} \\
+			Artefact & \parbox{.5\linewidth}{Represents a piece of data that is used or produced in a software development process, or by deployment and operation of an IT system.} & \cincludegraphics[height=1.82\normalbaselineskip]{images/views/technology-elements/artifact} \\ \bottomrule
+		
+	\end{longtable}
+
+
+
+	\begin{longtable}[c]{@{}lll@{}}
+	\caption{Overview of the ArchiMate relationships \cite{archimate3.1}}
+	\label{tab:relations}\\
+	\toprule	
+	\textbf{Element} & \textbf{Definition} & \textbf{Notation} \\* \midrule
+	\endfirsthead
+	%
+	\multicolumn{3}{c}%
+	{{\itshape Table \thetable\ continued from previous page}} \\
+	\endhead
+	%
+	\bottomrule
+	\endfoot
+	%
+	\endlastfoot
+	%
+			\multicolumn{2}{c}{\textbf{Structural Relationships}} & \multicolumn{1}{l}{\textbf{}} \\ 
+			Composition & \parbox{.56\linewidth}{Represents that an element consists of one or more other concepts.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/composition} \\
+			
+			Aggregation & \parbox{.56\linewidth}{Represents that an element combines one or more other concepts.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/aggregation} \\
+			Assignment & \parbox{.56\linewidth}{Represents the allocation of responsibility, performance of behaviour, storage, or execution.} & \cincludegraphics[width=3.5\normalbaselineskip]{images/views/relations/assignment} \\
+			Realisation & \parbox{.56\linewidth}{Represents that an entity plays a critical role in the creation, achievement, sustenance, or operation of a more abstract entity.} & \cincludegraphics[width=3.5\normalbaselineskip]{images/views/relations/realisation} \\
+			\multicolumn{2}{c}{\textbf{Dependency Relationships}} & \multicolumn{1}{l}{\textbf{}} \\ 
+			Serving & \parbox{.56\linewidth}{Represents that an element provides its functionality to another element.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/serving} \\
+			Access & \parbox{.56\linewidth}{Represents the ability of behaviour and active structure elements to observe or act upon passive structure elements.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/access} \\
+			Influence & \parbox{.56\linewidth}{Represents that an element affects the implementation or achievement of some motivation element.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/influence} \\
+			Association & \parbox{.56\linewidth}{Represents an unspecified relationship, or one that is not represented by another ArchiMate relationship.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/association} \\
+			\multicolumn{2}{c}{\textbf{Dynamic Relationships}} & \multicolumn{1}{l}{\textbf{}} \\ \midrule
+			Triggering & \parbox{.56\linewidth}{Represents a temporal or causal relationship between elements.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/triggers} \\
+			Flow & \parbox{.56\linewidth}{Represents transfer from one element to another.} &  \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/flows}\\
+			\multicolumn{2}{c}{\textbf{Other Relationships}} & \multicolumn{1}{l}{\textbf{}} \\ \midrule
+			Specialisation & \parbox{.56\linewidth}{Represents that an element is a particular kind of another element.} & \cincludegraphics[width=3.5\normalbaselineskip]{images/views/relations/specialises} \\			
+			Junction & \parbox{.56\linewidth}{Used to connect relationships of the same type.} & \cincludegraphics[width=4\normalbaselineskip]{images/views/relations/junction} \\ \bottomrule
+	\end{longtable}
+
+	 \section{Service Oriented Architecture (SOA)}
+	 \label{sec:soa}
+	 
+	 This section provides a motivation for adopting the design guidelines and best practices offered by the \textit{Service Oriented Architecture} (SOA) \cite{open2016soa} paradigm. This is especially important for guiding the development and engineering teams away from a monolith tightly coupled software capabilities that are executed on a dedicated server, towards loosely coupled services exposed through REST APIs capable of running as scalable processes in a distributed environment.
+	  
+	 \textit{Service-oriented architecture} is a style of software design where services are provided to the other components by application components, through a communication protocol over a network. A SOA service is a discrete unit of functionality that can be accessed remotely and acted upon and updated independently. SOA is also intended to be independent of vendors, products and technologies.
+	 
+	 SOA is believed to help businesses respond more quickly and more cost-effectively to changing market conditions. This style of architecture promotes high component reuse and facilitates interconnection between components. The SOA systems are known to be resilient in the light of changing technologies because the components are loosely coupled and could easily be replaced by alternative implementations exposing with the same interfaces.	SOA could be regarded as an architectural evolution rather than as a revolution. It captures many of the best practices of previous software architectures and it is a practical approach for cloud computing \citep{velte2019cloud}.
+	 
+	 Service-oriented architecture can be implemented with web services or Micro-services \citep{brandner2004web}. This is done to make the functional building-blocks accessible over standard Internet protocols that are independent of platforms and programming languages. These services can represent either new applications or just wrappers around existing legacy systems to make them network-enabled \citep{channabasavaiah2003migrating}. By following this approach, the application implementation materialises as a suite of micro-services. Where necessary, the micro-services can be implemented as wrappers around existent components and at a later stage the components can be replaced by new implementations. 
