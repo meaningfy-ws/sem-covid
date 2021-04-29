@@ -125,11 +125,11 @@ def process_using_tika():
                         logger.warning('Apache Tika did NOT return a valid content for the source ' +
                                        source['Title'])
 
-            if valid_sources > 0:
-                minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
-                    field_data['Title'].encode('utf-8')).hexdigest(), json.dumps(field_data))
-            else:
-                logger.warning('Field ' + field_data['Title'] + ' had no valid or processable sources.')
+            # if valid_sources > 0:
+            minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
+                field_data['Title'].encode('utf-8')).hexdigest(), json.dumps(field_data))
+            # else:
+            #     logger.warning('Field ' + field_data['Title'] + ' had no valid or processable sources.')
         except Exception as ex:
             logger.exception(ex)
 
