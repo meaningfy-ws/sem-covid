@@ -368,7 +368,7 @@ def clear_bucket():
 def get_single_item(query, json_file_name):
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY, config.EU_CELLAR_BUCKET_NAME)
     response = make_request(query)['results']['bindings']
-    eurlex_json_dataset = json_transformer.transform_eurlex(response.content)
+    eurlex_json_dataset = json_transformer.transform_eurlex(response)
     uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, json.dumps(eurlex_json_dataset).encode('utf-8'))
     logger.info(f'Save query result to {json_file_name}')
     logger.info('Uploaded ' + str(
