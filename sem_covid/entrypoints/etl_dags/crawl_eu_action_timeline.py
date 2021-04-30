@@ -14,7 +14,7 @@ from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
 
-VERSION = '0.2.3'
+VERSION = '0.2.4'
 DATASET_NAME = "eu_timeline"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
