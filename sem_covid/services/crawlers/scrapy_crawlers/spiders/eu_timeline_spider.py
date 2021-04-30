@@ -67,7 +67,7 @@ class EUTimelineSpider(scrapy.Spider):
         self.logger.info(f'Path to spoke persons json file = {config.CRAWLER_EU_TIMELINE_SPOKEPERSONS}')
         spoke_person_name = spoke_person_name.lower()
         df_spoke_person = pd.read_json(config.CRAWLER_EU_TIMELINE_SPOKEPERSONS)
-        df_spoke_person = df_spoke_person.apply(lambda x: x.lower())
+        df_spoke_person['Name'] = df_spoke_person['Name'].apply(lambda x: x.lower())
         if spoke_person_name in df_spoke_person['Name'].values:
             return df_spoke_person[df_spoke_person['Name'] == spoke_person_name]['Topics'][0]
         return []
