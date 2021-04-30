@@ -27,10 +27,12 @@ from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishG
 VERSION = '0.1.2'
 DATASET_NAME = "ireland_timeline"
 DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
+DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_PATH_KEY = 'content'
+
 logger = logging.getLogger(__name__)
+
 
 def extract_settings_from_module(module):
     settings = dict()
@@ -105,7 +107,8 @@ def upload_processed_documents_to_elasticsearch():
         try:
             logger.info(
                 f'Sending to ElasticSearch ( {config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME, document_id=obj.object_name.split("/")[1],
+            es_adapter.index(index_name=config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
+                             document_id=obj.object_name.split("/")[1],
                              document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
