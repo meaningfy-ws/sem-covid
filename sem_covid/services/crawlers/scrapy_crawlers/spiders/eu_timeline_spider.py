@@ -63,6 +63,12 @@ class EUTimelineSpider(scrapy.Spider):
                     else:
                         self.data.append(meta)
 
+    def _get_topics_by_spoke_person_name(self, spoke_person_name: str) -> list:
+        df_spoke_person = pd.read_json(config.CRAWLER_EU_TIMELINE_SPOKEPERSONS)
+        if spoke_person_name in df_spoke_person['Name'].values:
+            return df_spoke_person[df_spoke_person['Name'] == spoke_person_name]['Topics'][0]
+        return []
+
     def parse_presscorner_page(self, response):
         meta = response.meta
         item = EuActionTimelineItem(
@@ -94,13 +100,13 @@ class EUTimelineSpider(scrapy.Spider):
             'href')
 
         item['press_contacts'] = list()
-        df_spoke_person = pd.read_json(config.CRAWLER_EU_TIMELINE_SPOKEPERSONS)
+        item['topics'] = list()
         press_contacts = response.xpath('//ul[@class="ecl-listing"]/li')
         for press_contact in press_contacts:
-            document_spoke_person = press_contact.xpath('*//div/h4/text()').get()
-            item['topics'] = df_spoke_person[df_spoke_person['Name'] == document_spoke_person]['Topics'][0]
+            document_spoke_person_name = press_contact.xpath('*//div/h4/text()').get()
+            item['topics'].append(self.get_topics_by_spoke_person_name(document_spoke_person_name))
             item['press_contacts'].append({
-                'name': document_spoke_person,
+                'name': document_spoke_person_name,
                 'phone': press_contact.xpath('*//div/div[@class="ecl-field__body"]/text()').get(),
                 'email': press_contact.xpath('*//div/div[@class="ecl-field__body"]/a/text()').get()
             })
