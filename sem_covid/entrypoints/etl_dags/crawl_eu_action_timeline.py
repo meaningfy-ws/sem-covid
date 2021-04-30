@@ -90,6 +90,7 @@ def upload_processed_documents_to_elasticsearch():
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.EU_TIMELINE_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
+
     object_count = 0
     for obj in objects:
         try:
