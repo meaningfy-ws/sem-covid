@@ -25,6 +25,9 @@ from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
 
 VERSION = '0.1.2'
+DATASET_NAME = "ireland_timeline"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_PATH_KEY = 'content'
 logger = logging.getLogger(__name__)
@@ -123,7 +126,7 @@ default_args = {
 }
 
 dag = DAG(
-    'Crawl_Irish_Action_Timeline_' + VERSION,
+    DAG_NAME,
     default_args=default_args,
     schedule_interval="@once",
     max_active_runs=1,
