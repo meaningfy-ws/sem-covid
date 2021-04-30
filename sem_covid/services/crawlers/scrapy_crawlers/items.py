@@ -19,6 +19,7 @@ class EuActionTimelineItem(scrapy.Item):
     pdf_links = scrapy.Field()
     detail_for_more_information_links = scrapy.Field()
     press_contacts = scrapy.Field()
+    topics = scrapy.Field()
     all_links = scrapy.Field()
     for_more_information_links = scrapy.Field()
     detail_pdf_link = scrapy.Field()

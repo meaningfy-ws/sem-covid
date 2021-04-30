@@ -160,3 +160,7 @@ junit_report.xml
 *.bbl
 *.blg
 /report.html
+tests/ml_experiments/webserver_config.py
+tests/ml_experiments/unittests.cfg
+tests/ml_experiments/logs/scheduler/latest
+tests/ml_experiments/airflow.cfg
