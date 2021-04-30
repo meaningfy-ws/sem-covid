@@ -14,6 +14,9 @@ from ..items import IrishGovItem
 
 
 class IrishGovCrawler(scrapy.Spider):
+
+    # TODO: check why parse method is not implemented and not needed?
+
     name = 'irish-gov'
     base_url = 'https://www.gov.ie'
     url = 'https://www.gov.ie/en/publications/?q={term}&sort_by=published_date'
@@ -67,6 +70,9 @@ class IrishGovCrawler(scrapy.Spider):
             'link': self._build_link(response.css('div[reboot-header]').css('p').css('a::attr(href)').get()),
             'text': response.css('div[reboot-header]').css('p').css('a::text').get()
         }
+        # TODO: sometimes it is the 2nd or third paragraph. Counter exampel here: https://www.gov.ie/en/speech/790bf-speech-by-minister-donohoe-to-the-european-financial-forum-2021-leading-the-economic-recovery/
+        #  relying on the order only is nor enough
+        # TODO: the element /time@datatime contains already XML standard date format yyyy-mm-dd; no need to parse it.
         item['published_date'] = self._extract_date(
             response.css('div[reboot-header]').css('p')[1].css('time::text').get())
         item['updated_date'] = self._extract_date(
@@ -86,9 +92,10 @@ class IrishGovCrawler(scrapy.Spider):
         self.data.append(dict(item))
 
     def _extract_date(self, text: str) -> Optional[str]:
-        date_match = re.search(self.date_format_re, text)
-        if date_match:
-            return date_match.group()
+        if text:
+            date_match = re.search(self.date_format_re, str(text))
+            if date_match:
+                return date_match.group()
 
     def _is_in_range(self, date_string: str) -> bool:
         return datetime.strptime(date_string, self.date_format).date() >= self.earliest_date
