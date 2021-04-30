@@ -13,14 +13,22 @@ import warnings
 import pathlib
 import dotenv
 
+try:
+    import importlib.resources as pkg_resources
+except ImportError:
+    # Try backported to PY<37 `importlib_resources`.
+    import importlib_resources as pkg_resources
+
 from sem_covid.base_config import BaseConfig
 
 logger = logging.getLogger(__name__)
 
+from resources import crawlers
+
 
 class SemCovidConfig(object):
 
-    #MinIO Service property
+    # MinIO Service property
 
     @property
     def MINIO_ACCESS_KEY(self) -> str:
@@ -33,7 +41,8 @@ class SemCovidConfig(object):
     @property
     def MINIO_URL(self) -> str:
         return BaseConfig.find_value()
-    #Other property
+
+    # Other property
 
     @property
     def ML_EXPERIMENTS_BUCKET_NAME(self) -> str:
@@ -43,7 +52,7 @@ class SemCovidConfig(object):
     def LANGUAGE_MODEL_BUCKET_NAME(self) -> str:
         return BaseConfig.find_value()
 
-    #EU_CELLAR property
+    # EU_CELLAR property
 
     @property
     def EU_CELLAR_BUCKET_NAME(self) -> str:
@@ -67,7 +76,7 @@ class SemCovidConfig(object):
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
         return BaseConfig.find_value()
 
-    #EU_TIMELINE property
+    # EU_TIMELINE property
 
     @property
     def EU_TIMELINE_BUCKET_NAME(self) -> str:
@@ -82,8 +91,7 @@ class SemCovidConfig(object):
     def EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
         return BaseConfig.find_value()
 
-
-    #IRELAND_TIMELINE property
+    # IRELAND_TIMELINE property
 
     @property
     def IRELAND_TIMELINE_BUCKET_NAME(self) -> str:
@@ -98,7 +106,7 @@ class SemCovidConfig(object):
     def IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
         return BaseConfig.find_value()
 
-    #PWDB_COVID19 property
+    # PWDB_COVID19 property
 
     @property
     def PWDB_COVID19_BUCKET_NAME(self) -> str:
@@ -127,7 +135,7 @@ class SemCovidConfig(object):
     def ES_PWDB_INDEX_MAPPING_FILE(self) -> str:
         return BaseConfig.find_value()
 
-    #LEGAL_INITIATIVES property
+    # LEGAL_INITIATIVES property
 
     @property
     def LEGAL_INITIATIVES_BUCKET_NAME(self) -> str:
@@ -142,10 +150,11 @@ class SemCovidConfig(object):
     def LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
         return BaseConfig.find_value()
 
-    #TREATIES property
+    # TREATIES property
     @property
     def TREATIES_BUCKET_NAME(self) -> str:
         return BaseConfig.find_value()
+
     @property
     def TREATIES_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
@@ -159,17 +168,17 @@ class SemCovidConfig(object):
     def TREATIES_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
         return BaseConfig.find_value()
 
-    #TIKA property
+    # TIKA property
     @property
     def APACHE_TIKA_URL(self) -> str:
         return BaseConfig.find_value()
 
-    #SPLASH property
+    # SPLASH property
     @property
     def SPLASH_URL(self) -> str:
         return BaseConfig.find_value()
 
-    #Models property
+    # Models property
     @property
     def LAW2VEC_MODEL_PATH(self) -> str:
         return BaseConfig.find_value()
@@ -177,6 +186,7 @@ class SemCovidConfig(object):
     @property
     def JRC2VEC_MODEL_PATH(self) -> str:
         return BaseConfig.find_value()
+
     # ELASTICSEARCH property
     @property
     def ELASTICSEARCH_PROTOCOL(self) -> str:
@@ -198,19 +208,16 @@ class SemCovidConfig(object):
     def ELASTICSEARCH_PASSWORD(self) -> str:
         return BaseConfig.find_value()
 
-
-    #Crawler property
+    # Crawler property
     @property
     def CRAWLER_EU_TIMELINE_SPOKEPERSONS(self) -> str:
-        return str(pathlib.Path(__file__).resolve().parents[1] / "resources" / "crawlers" / "eu_timeline_spokepersons_28_04_2021.json")
+        with pkg_resources.path(crawlers, 'eu_timeline_spokepersons_28_04_2021.json') as path:
+            return str(path)
 
     @property
     def CRAWLER_EU_TIMELINE_PRESS_ASSISTANT(self) -> str:
-        return str(pathlib.Path(__file__).resolve().parents[1] / "resources" / "crawlers" / "eu_timeline_press_assistant_28_04_2021.json")
-
-
-
-
+        with pkg_resources.path(crawlers, 'eu_timeline_press_assistant_28_04_2021.json') as path:
+            return str(path)
 
 
 dotenv.load_dotenv()

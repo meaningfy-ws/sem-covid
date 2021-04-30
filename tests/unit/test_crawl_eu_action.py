@@ -22,4 +22,3 @@ def test_spoke_person_content():
     assert 'Name' in df_spoke_person.columns
     assert 'Johannes Bahrke' in df_spoke_person['Name'].values
     assert df_spoke_person[df_spoke_person['Name'] == 'Johannes Bahrke']['Topics'][0]
-    #assert df_spoke_person[df_spoke_person['Name'] == None]['Topics'][0]
