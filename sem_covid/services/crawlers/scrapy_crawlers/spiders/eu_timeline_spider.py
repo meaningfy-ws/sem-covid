@@ -1,6 +1,8 @@
 from json import dumps
 
 import scrapy
+import pandas as pd
+from sem_covid import config
 from scrapy_splash import SplashRequest
 
 from ..items import EuActionTimelineItem
@@ -92,10 +94,13 @@ class EUTimelineSpider(scrapy.Spider):
             'href')
 
         item['press_contacts'] = list()
+        df_spoke_person = pd.read_json(config.CRAWLER_EU_TIMELINE_SPOKEPERSONS)
         press_contacts = response.xpath('//ul[@class="ecl-listing"]/li')
         for press_contact in press_contacts:
+            document_spoke_person = press_contact.xpath('*//div/h4/text()').get()
+            item['topics'] = df_spoke_person[df_spoke_person['Name'] == document_spoke_person]['Topics'][0]
             item['press_contacts'].append({
-                'name': press_contact.xpath('*//div/h4/text()').get(),
+                'name': document_spoke_person,
                 'phone': press_contact.xpath('*//div/div[@class="ecl-field__body"]/text()').get(),
                 'email': press_contact.xpath('*//div/div[@class="ecl-field__body"]/a/text()').get()
             })

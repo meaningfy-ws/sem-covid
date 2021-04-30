@@ -15,6 +15,15 @@
           }
         }
       },
+      "topics": {
+        "type" : "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
       "month_name": {
         "type": "date",
         "format": "MMMM YYYY"
