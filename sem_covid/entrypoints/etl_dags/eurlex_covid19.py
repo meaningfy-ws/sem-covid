@@ -30,8 +30,7 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 
-EURLEX_QUERY = """
-PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+EURLEX_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -189,15 +188,14 @@ WHERE {
     BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
 }
 GROUP BY ?work ?title
-ORDER BY ?work ?title
-"""
-
-EURLEX_EXTENDED_QUERY = """
-PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+ORDER BY ?work ?title"""
+EURLEX_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ev: <http://eurovoc.europa.eu/>
 
 SELECT DISTINCT
     ?work ?title
@@ -242,74 +240,74 @@ WHERE {
     VALUES ?expr_lang { lang:ENG}
 
     VALUES ?eurovoc_concept {
-        <http://eurovoc.europa.eu/1005>
-        <http://eurovoc.europa.eu/1439>
-        <http://eurovoc.europa.eu/1633>
-        <http://eurovoc.europa.eu/1754>
-        <http://eurovoc.europa.eu/1756>
-        <http://eurovoc.europa.eu/1759>
-        <http://eurovoc.europa.eu/1802>
-        <http://eurovoc.europa.eu/1854>
-        <http://eurovoc.europa.eu/192>
-        <http://eurovoc.europa.eu/2916>
-        <http://eurovoc.europa.eu/2923>
-        <http://eurovoc.europa.eu/3730>
-        <http://eurovoc.europa.eu/3885>
-        <http://eurovoc.europa.eu/4470>
-        <http://eurovoc.europa.eu/4505>
-        <http://eurovoc.europa.eu/5237>
-        <http://eurovoc.europa.eu/835>
-        <http://eurovoc.europa.eu/1280>
-        <http://eurovoc.europa.eu/1634>
-        <http://eurovoc.europa.eu/2062>
-        <http://eurovoc.europa.eu/2479>
-        <http://eurovoc.europa.eu/5891>
-        <http://eurovoc.europa.eu/82>
-        <http://eurovoc.europa.eu/2473>
-        <http://eurovoc.europa.eu/3086>
-        <http://eurovoc.europa.eu/4636>
-        <http://eurovoc.europa.eu/5992>
-        <http://eurovoc.europa.eu/712>
-        <http://eurovoc.europa.eu/826>
-        <http://eurovoc.europa.eu/1596>
-        <http://eurovoc.europa.eu/2870>
-        <http://eurovoc.europa.eu/3956>
-        <http://eurovoc.europa.eu/899>
-        <http://eurovoc.europa.eu/7983>
-        <http://eurovoc.europa.eu/83>
-        <http://eurovoc.europa.eu/85>
-        <http://eurovoc.europa.eu/5764>
-        <http://eurovoc.europa.eu/3552>
-        <http://eurovoc.europa.eu/1742>
-        <http://eurovoc.europa.eu/886>
-        <http://eurovoc.europa.eu/1926>
-        <http://eurovoc.europa.eu/4116>
-        <http://eurovoc.europa.eu/5612>
-        <http://eurovoc.europa.eu/837>
-        <http://eurovoc.europa.eu/2270>
-        <http://eurovoc.europa.eu/838>
-        <http://eurovoc.europa.eu/2793>
-        <http://eurovoc.europa.eu/3588>
-        <http://eurovoc.europa.eu/6781>
-        <http://eurovoc.europa.eu/3371>
-        <http://eurovoc.europa.eu/2013>
-        <http://eurovoc.europa.eu/7131>
-        <http://eurovoc.europa.eu/3906>
-        <http://eurovoc.europa.eu/3370>
-        <http://eurovoc.europa.eu/4881>
-        <http://eurovoc.europa.eu/86>
-        <http://eurovoc.europa.eu/1758>
-        <http://eurovoc.europa.eu/779>
-        <http://eurovoc.europa.eu/6609>
-        <http://eurovoc.europa.eu/6770>
-        <http://eurovoc.europa.eu/c_324b44f1>
-        <http://eurovoc.europa.eu/c_5b447e3a>
-        <http://eurovoc.europa.eu/c_31da5694>
-        <http://eurovoc.europa.eu/c_60d3928d>
-        <http://eurovoc.europa.eu/c_9b88f778>
-        <http://eurovoc.europa.eu/c_ece0a719>
-        <http://eurovoc.europa.eu/c_814bb9e4>
-        <http://eurovoc.europa.eu/c_abfaf2ea>
+        ev:1005
+        ev:1439
+        ev:1633
+        ev:1754
+        ev:1756
+        ev:1759
+        ev:1802
+        ev:1854
+        ev:192
+        ev:2916
+        ev:2923
+        ev:3730
+        ev:3885
+        ev:4470
+        ev:4505
+        ev:5237
+        ev:835
+        ev:1280
+        ev:1634
+        ev:2062
+        ev:2479
+        ev:5891
+        ev:82
+        ev:2473
+        ev:3086
+        ev:4636
+        ev:5992
+        ev:712
+        ev:826
+        ev:1596
+        ev:2870
+        ev:3956
+        ev:899
+        ev:7983
+        ev:83
+        ev:85
+        ev:5764
+        ev:3552
+        ev:1742
+        ev:886
+        ev:1926
+        ev:4116
+        ev:5612
+        ev:837
+        ev:2270
+        ev:838
+        ev:2793
+        ev:3588
+        ev:6781
+        ev:3371
+        ev:2013
+        ev:7131
+        ev:3906
+        ev:3370
+        ev:4881
+        ev:86
+        ev:1758
+        ev:779
+        ev:6609
+        ev:6770
+        ev:c_324b44f1
+        ev:c_5b447e3a
+        ev:c_31da5694
+        ev:c_60d3928d
+        ev:c_9b88f778
+        ev:c_ece0a719
+        ev:c_814bb9e4
+        ev:c_abfaf2ea
     }
 
     ?work cdm:work_date_document ?date_document .
@@ -379,7 +377,6 @@ WHERE {
     OPTIONAL {
         ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
     }
-
     OPTIONAL {
         ?work cdm:resource_legal_id_celex ?celex .
     }
@@ -392,7 +389,6 @@ WHERE {
     OPTIONAL {
         ?work owl:sameAs ?same_as_uri .
     }
-
     OPTIONAL {
         ?exp cdm:expression_belongs_to_work ?work ;
              cdm:expression_uses_language ?expr_lang ;
@@ -413,12 +409,11 @@ WHERE {
     BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
 }
 GROUP BY ?work ?title
-ORDER BY ?work ?title
-"""
+ORDER BY ?work ?title"""
 
 sources = {
     "EurLex": {"json": config.EU_CELLAR_JSON, "query": EURLEX_QUERY},
-    "Extended EurLex": {"json": config.EU_CELLAR_EXTENDED_JSON, "query": EURLEX_EXTENDED_QUERY}
+    "Extended EurLex part 1": {"json": config.EU_CELLAR_EXTENDED_JSON, "query": EURLEX_EXTENDED_QUERY},
 }
 
 
