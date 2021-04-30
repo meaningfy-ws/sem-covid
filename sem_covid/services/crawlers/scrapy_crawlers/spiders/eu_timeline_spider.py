@@ -104,12 +104,12 @@ class EUTimelineSpider(scrapy.Spider):
         press_contacts = response.xpath('//ul[@class="ecl-listing"]/li')
         for press_contact in press_contacts:
             document_spoke_person_name = press_contact.xpath('*//div/h4/text()').get()
-            item['topics'].append(self.get_topics_by_spoke_person_name(document_spoke_person_name))
+            item['topics'] += self.get_topics_by_spoke_person_name(document_spoke_person_name)
             item['press_contacts'].append({
                 'name': document_spoke_person_name,
                 'phone': press_contact.xpath('*//div/div[@class="ecl-field__body"]/text()').get(),
                 'email': press_contact.xpath('*//div/div[@class="ecl-field__body"]/a/text()').get()
             })
-
+        item['topics'] = list(set(item['topics']))
         self.logger.info(f'Push data from: {response.url}.')
         self.data.append(dict(item))
