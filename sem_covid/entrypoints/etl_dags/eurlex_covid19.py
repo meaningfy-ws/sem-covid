@@ -20,7 +20,7 @@ from sem_covid.services.sc_wrangling import json_transformer
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.11.0'
+VERSION = '0.12'
 DATASET_NAME = "eu_cellar"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
@@ -37,8 +37,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT DISTINCT
-    ?work ?title
-
+    ?work ?title    
     (group_concat(DISTINCT ?cdm_type; separator="| ") as ?cdm_types)
     (group_concat(DISTINCT ?cdm_type_label; separator="| ") as ?cdm_type_labels)
 
@@ -76,9 +75,14 @@ SELECT DISTINCT
     (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
     (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
     (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
+    
+    (group_concat(DISTINCT ?eu_cellar_core_value; separator="| ") as ?eu_cellar_core)
+    
 WHERE {
     # selector criteria
     VALUES ?expr_lang { lang:ENG}
+    VALUES ?eu_cellar_core_value { "true" }
+    
     ?work cdm:resource_legal_comment_internal ?comment .
     FILTER (regex(str(?comment),'COVID19'))
     FILTER NOT EXISTS { ?work cdm:work_embargo [] . }
@@ -189,6 +193,7 @@ WHERE {
 }
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
+
 EURLEX_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
@@ -236,8 +241,12 @@ SELECT DISTINCT
     (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
     (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
     (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
+    
+    (group_concat(DISTINCT ?eu_cellar_extended_value; separator="| ") as ?eu_cellar_extended)
+        
 WHERE {
     VALUES ?expr_lang { lang:ENG}
+    VALUES ?eu_cellar_extended_value { "true" }
 
     VALUES ?eurovoc_concept {
         ev:1005
