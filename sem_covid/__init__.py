@@ -10,7 +10,7 @@
 """
 import logging
 import warnings
-
+import pathlib
 import dotenv
 
 from sem_covid.base_config import BaseConfig
@@ -198,8 +198,7 @@ class SemCovidConfig(object):
     def ELASTICSEARCH_PASSWORD(self) -> str:
         return BaseConfig.find_value()
 
-<<<<<<< Updated upstream
-=======
+
     #Crawler property
     @property
     def CRAWLER_EU_TIMELINE_SPOKEPERSONS(self) -> str:
@@ -209,7 +208,7 @@ class SemCovidConfig(object):
     def CRAWLER_EU_TIMELINE_PRESS_ASSISTANT(self) -> str:
         return str(pathlib.Path(__file__).resolve().parents[1] / "resources" / "crawlers" / "eu_timeline_press_assistant_28_04_2021.json")
 
->>>>>>> Stashed changes
+
 
 
 
