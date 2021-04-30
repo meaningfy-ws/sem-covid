@@ -20,7 +20,7 @@ from sem_covid.services.sc_wrangling import json_transformer
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.10.2'
+VERSION = '0.11.0'
 DATASET_NAME = "eu_cellar"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
