@@ -1,0 +1,77 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+select distinct *
+{
+    values ?evc {
+<http://eurovoc.europa.eu/1005>
+<http://eurovoc.europa.eu/1439>
+<http://eurovoc.europa.eu/1633>
+<http://eurovoc.europa.eu/1754>
+<http://eurovoc.europa.eu/1756>
+<http://eurovoc.europa.eu/1759>
+<http://eurovoc.europa.eu/1802>
+<http://eurovoc.europa.eu/1854>
+<http://eurovoc.europa.eu/192>
+<http://eurovoc.europa.eu/2916>
+<http://eurovoc.europa.eu/2923>
+<http://eurovoc.europa.eu/3730>
+<http://eurovoc.europa.eu/3885>
+<http://eurovoc.europa.eu/4470>
+<http://eurovoc.europa.eu/4505>
+<http://eurovoc.europa.eu/5237>
+<http://eurovoc.europa.eu/835>
+<http://eurovoc.europa.eu/1280>
+<http://eurovoc.europa.eu/1634>
+<http://eurovoc.europa.eu/2062>
+<http://eurovoc.europa.eu/2479>
+<http://eurovoc.europa.eu/5891>
+<http://eurovoc.europa.eu/82>
+<http://eurovoc.europa.eu/2473>
+<http://eurovoc.europa.eu/3086>
+<http://eurovoc.europa.eu/4636>
+<http://eurovoc.europa.eu/5992>
+<http://eurovoc.europa.eu/712>
+<http://eurovoc.europa.eu/826>
+<http://eurovoc.europa.eu/1596>
+<http://eurovoc.europa.eu/2870>
+<http://eurovoc.europa.eu/3956>
+<http://eurovoc.europa.eu/899>
+<http://eurovoc.europa.eu/7983>
+<http://eurovoc.europa.eu/83>
+<http://eurovoc.europa.eu/85>
+<http://eurovoc.europa.eu/5764>
+<http://eurovoc.europa.eu/3552>
+<http://eurovoc.europa.eu/1742>
+<http://eurovoc.europa.eu/886>
+<http://eurovoc.europa.eu/1926>
+<http://eurovoc.europa.eu/4116>
+<http://eurovoc.europa.eu/5612>
+<http://eurovoc.europa.eu/837>
+<http://eurovoc.europa.eu/2270>
+<http://eurovoc.europa.eu/838>
+<http://eurovoc.europa.eu/2793>
+<http://eurovoc.europa.eu/3588>
+<http://eurovoc.europa.eu/6781>
+<http://eurovoc.europa.eu/3371>
+<http://eurovoc.europa.eu/2013>
+<http://eurovoc.europa.eu/7131>
+<http://eurovoc.europa.eu/3906>
+<http://eurovoc.europa.eu/3370>
+<http://eurovoc.europa.eu/4881>
+<http://eurovoc.europa.eu/86>
+<http://eurovoc.europa.eu/1758>
+<http://eurovoc.europa.eu/779>
+<http://eurovoc.europa.eu/6609>
+<http://eurovoc.europa.eu/6770>
+<http://eurovoc.europa.eu/c_324b44f1>
+<http://eurovoc.europa.eu/c_5b447e3a>
+<http://eurovoc.europa.eu/c_31da5694>
+<http://eurovoc.europa.eu/c_60d3928d>
+<http://eurovoc.europa.eu/c_9b88f778>
+<http://eurovoc.europa.eu/c_ece0a719>
+<http://eurovoc.europa.eu/c_814bb9e4>
+<http://eurovoc.europa.eu/c_abfaf2ea>
+    }
+    ?evc skos:prefLabel ?label.
+    filter (lang(?label)="en")
+}

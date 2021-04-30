@@ -14,7 +14,10 @@ from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
 
-VERSION = '0.1.0'
+VERSION = '0.2.2'
+DATASET_NAME = "eu_timeline"
+DAG_TYPE = "etl"
+DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_PATH_KEY = 'detail_content'
 logger = logging.getLogger(__name__)
@@ -87,6 +90,7 @@ def upload_processed_documents_to_elasticsearch():
     minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
                          config.EU_TIMELINE_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
+
     object_count = 0
     for obj in objects:
         try:
@@ -112,7 +116,7 @@ default_args = {
 }
 
 dag = DAG(
-    'Crawl_EU_Action_Timeline_' + VERSION,
+    DAG_NAME,
     default_args=default_args,
     schedule_interval="@once",
     max_active_runs=1,
