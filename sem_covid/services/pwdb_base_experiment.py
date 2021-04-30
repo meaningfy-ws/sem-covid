@@ -9,16 +9,15 @@
     This module deals with the PWDB ML experiment specificities.
 """
 
-import json
 import logging
 import pickle
 from abc import ABC
 
 import pandas as pd
-from gensim.models import Word2Vec
 from sklearn import model_selection
 
 from sem_covid import config
+from sem_covid.services.data_registry import Dataset
 from sem_covid.services.base_experiment import BaseExperiment
 from sem_covid.services.sc_wrangling import data_cleaning
 from sem_covid.services.sc_wrangling import feature_selector
@@ -63,11 +62,8 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         self.requests = requests
 
     def data_extraction(self, *args, **kwargs):
-        raw_pwdb_dataset = self.requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
-        raw_pwdb_dataset.raise_for_status()
-        self.minio_adapter.empty_bucket()
-        pwdb_json_dataset = json_transformer.transform_pwdb(json.loads(raw_pwdb_dataset.content))
-        self.minio_adapter.put_object(config.PWDB_DATASET_PATH, json.dumps(pwdb_json_dataset).encode('utf-8'))
+        pass
+
 
     def data_validation(self, *args, **kwargs):
         # TODO: implement me by validating the returned index structure for a start,
@@ -75,13 +71,10 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         pass
 
     def data_preparation(self, *args, **kwargs):
-        pwdb_json_dataset = json.loads(self.minio_adapter.get_object(config.PWDB_DATASET_PATH))
-        pwdb_dataframe = pd.DataFrame.from_records(pwdb_json_dataset)
-        pwdb_dataframe_columns = self.prepare_pwdb_data(pwdb_dataframe)
+        pwdb_dataset = Dataset.PWDB.fetch()
+        pwdb_dataframe_columns = self.prepare_pwdb_data(pwdb_dataset)
         pwdb_target_groups_refactor = self.target_group_refactoring(pwdb_dataframe_columns)
-        pwdb_word2vec_model = self.train_pwdb_word2vec_language_model(pwdb_target_groups_refactor)
         pwdb_train_test_data = self.train_pwdb_data(pwdb_target_groups_refactor)
-        pwdb_word2vec_pickle = pickle.dumps(pwdb_word2vec_model)
         pwdb_train_test_pickle = pickle.dumps(pwdb_train_test_data)
         self.minio_adapter.put_object("train_test_split.pkl", pwdb_train_test_pickle)
 
@@ -135,16 +128,6 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         refactored_pwdb_df.replace({True: 1, False: 0}, inplace=True)
 
         return refactored_pwdb_df
-
-    @staticmethod
-    def train_pwdb_word2vec_language_model(pwdb_dataframe: pd.DataFrame) -> Word2Vec:
-        """
-            As language model data it will be use "Descriptive Data" column
-            and will be transform into word2vec model.
-        """
-        pwdb_word2vec = Word2Vec(pwdb_dataframe["Descriptive Data"])
-
-        return pwdb_word2vec
 
     @staticmethod
     def train_pwdb_data(pwdb_dataframe: pd.DataFrame) -> dict:
