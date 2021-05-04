@@ -13,13 +13,15 @@ import warnings
 from typing import List, Union
 
 import pandas as pd
+import pathlib
 from es_pandas import es_pandas
-
 
 # Needs:
 # - dump an index, as JSON, so that it can be ingested afterwards exactly as is
 #   stripped, if necessary of internal ES fields e.g. field_name.keywords,
 # - dump (a) in memory, (b) to local folder or (c) to a s3 bucket
+from sem_covid.adapters.minio_adapter import MinioAdapter
+
 
 class ESAdapter:
     def __init__(self, host_name: str, port: str, user: str, password: str):
@@ -57,6 +59,16 @@ class ESAdapter:
         :return: DataFrame
         """
         return self._es_pandas.to_pandas(**kwargs)
+
+    def dump_local(self, index_name: str, file_name: str, local_path: pathlib.Path):
+        df = self.to_dataframe(index=index_name)
+        local_path.mkdir(parents=True, exist_ok=True)
+        file_path = local_path / file_name
+        df.to_json(file_path, orient='records')
+
+    def dump_remote(self, index_name: str, file_name: str, remote_storage: MinioAdapter):
+        df = self.to_dataframe(index=index_name)
+        remote_storage.put_object_from_string(file_name, df.to_json(orient='records'))
 
     def dump(self, index_name, file_path: str = None):
         """

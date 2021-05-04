@@ -46,8 +46,8 @@ def make_request(query):
 
 def get_treaty_items():
     logger.info(f'Start retrieving works of treaties..')
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.TREATIES_BUCKET_NAME)
+    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -166,8 +166,8 @@ def download_file(source: dict, location_details: dict, file_name: str, minio: M
 
 
 def download_treaties_items():
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.TREATIES_BUCKET_NAME)
+    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
     logger.info(dumps(treaties_json)[:100])
     treaties_json = treaties_json['results']['bindings']
@@ -210,8 +210,8 @@ def download_treaties_items():
 
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.TREATIES_BUCKET_NAME)
+    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     treaties_json = loads(minio.get_object(config.TREATIES_JSON))['results']['bindings']
     treaties_items_count = len(treaties_json)
 
@@ -277,8 +277,8 @@ def upload_processed_documents_to_elasticsearch():
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.TREATIES_BUCKET_NAME)
+    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
