@@ -28,7 +28,7 @@ PWDB_REFACTORING_RULES = '''.[] | {
     "private_or_public_sector": .fieldData.sector_privateOrPublic,
     "is_occupation_specific": .fieldData.isOccupation,
     "sectors": [.portalData.sectors[] | ."sectors::name" ],
-    "occupations": [.portalData.occupations[] | .],
+    "occupations": [.portalData.occupations[] | ."occupations::name" ],
     "sources": .portalData | [ .sources[] | {"title" : ."sources::title", "url": ."sources::url" } ],
 }'''
 
