@@ -1,11 +1,15 @@
-# Dataset description
+# EU Cellar COVID19 dataset (ds_eu_cellar)
 
 The Cellar is the semantic repository of the Publications Office. It stores
 important legal documents, general publications and other important EU level
 documents. We query this repository in order to construct the EU level COVID19
 datasets containing the document content and the associated metadata.
 
-## EU Cellar COVID19 dataset (ds_eu_cellar)
+
+You can download the dataset following [this link](http://srv.meaningfy.ws:9000/tmp-elasticsearch-dump/ds_eu_cellar.json?Content-Disposition=attachment%3B%20filename%3D%22ds_eu_cellar.json%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2zVld17bTfKk8iu0Eh9H74MywAeDV3WQ%2F20210505%2F%2Fs3%2Faws4_request&X-Amz-Date=20210505T073841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4b8dfcd11e65adbba616bcd57bdf03eabb2a9e46e810837bcc4ff67df77212fb).
+
+
+## Detailed description
 In the context of the current exercise, we distinguish the core and the
 extended datasets variants which are results of querying Cellar with two
 different SPARQL queries.
@@ -19,8 +23,7 @@ COVID19 pandemic.
 The extended dataset is also the result of querying for documents (called works)
 in Cellar , which are annotated with any of the EuroVoc concepts that have been
 identified as relevant to COVID19 pandemics. The list of selected EuroVoc
-concepts is provided in Table 1 can
-be downloaded [here](http://srv.meaningfy.ws:9000/tmp-elasticsearch-dump/ds_eu_cellar.json?Content-Disposition=attachment%3B%20filename%3D%22ds_eu_cellar.json%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2zVld17bTfKk8iu0Eh9H74MywAeDV3WQ%2F20210505%2F%2Fs3%2Faws4_request&X-Amz-Date=20210505T073841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4b8dfcd11e65adbba616bcd57bdf03eabb2a9e46e810837bcc4ff67df77212fb).
+concepts is provided in Table 1.
 
 | Concept URI | Concept preferred label |
 | ----------- | ----------------------- |
@@ -127,13 +130,12 @@ When contributing to this repository, please first discuss the change you wish
 to make via issue, email, or any other method with the owners of this repository
 before making a change.
 
-Please note we adhere to Apache code of conduct, please follow it in all your
+Please note we adhere to [Apache code of conduct](https://www.apache.org/foundation/policies/conduct), please follow it in all your
 interactions with the project.
 
 # License
 
 The documents, such as reports and specifications, available in the /doc folder,
-are licenced under a CC BY 4.0 licence.
+are licenced under a [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/deed.en).
 
-The scripts (stylesheets) and other executables are licenced under GNU GPLv3
-licence.
+The scripts (stylesheets) and other executables are licenced under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) licence.
