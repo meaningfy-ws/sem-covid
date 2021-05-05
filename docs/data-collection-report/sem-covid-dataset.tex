@@ -1,36 +1,88 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% DOCUMENT PREAMBLE %%%
 \documentclass[12pt, a4paper, twoside]{report}
-\usepackage[english]{babel}
 \usepackage[square,numbers]{natbib}
-\usepackage{url}
-\usepackage[utf8x]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{parskip}
-\usepackage{fancyhdr}
+\usepackage[svgnames, table]{xcolor}
+\usepackage{wallpaper}
 \usepackage{vmargin}
-\usepackage[table]{xcolor}
-\usepackage{setspace}
-\usepackage{array}
-\usepackage{setspace}
-\usepackage[colorlinks]{hyperref}
-\usepackage{calc}
-\usepackage{mwe}
-\usepackage{caption}
-\usepackage{subcaption}
+
+% \usepackage[english]{babel}
+% \usepackage{url}
+% %\usepackage[utf8x]{inputenc}
+% \usepackage[utf8]{inputenc}
+% \usepackage{amsmath}
+% \usepackage{graphicx}
+% \usepackage{wrapfig}
+% \usepackage{parskip}
+% \usepackage{fancyhdr}
+
+% \usepackage[svgnames, table]{xcolor}
+% \usepackage{setspace}
+% \usepackage{array}
+% \usepackage{setspace}
+% \usepackage[colorlinks]{hyperref}
+% \usepackage{calc}
+% \usepackage{mwe}
+% \usepackage{caption}
+% %\usepackage{subcaption}
 \usepackage{enumitem}
 \usepackage{booktabs}
-\usepackage{listings}
+% \usepackage{listings}
 \usepackage[margin=2.8cm]{geometry}
-\usepackage{wallpaper}
-\usepackage{longtable}
+% \usepackage{longtable}
 
+% from doc2latex
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+%\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{graphicx}
+
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}
+% \usepackage[paperheight=11.0in,paperwidth=8.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% \TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,6.5in,}
+
+% \urlstyle{same}
+
+% end from doc2latex
+
+\setlist{nosep}
+\linespread{1.213}
+% \setlist[enumerate]{itemsep=0.5mm}
 
 \usepackage{caption}
-\captionsetup[longtable]{skip=-1.53\baselineskip}
-\captionsetup[figure]{aboveskip=0.2\baselineskip, belowskip=-1.3\baselineskip}
+\captionsetup[longtable]{aboveskip=0\baselineskip, belowskip=-3.3\baselineskip}
+\captionsetup[figure]{aboveskip=0.6\baselineskip, belowskip=-.6\baselineskip}
 \captionsetup[wrapfigure]{aboveskip=0.2\baselineskip, belowskip=-1.3\baselineskip}
 
 \bibliographystyle{abbrvnat}
@@ -38,18 +90,8 @@
 % use it to wrap URI templates 
 %\newcommand*{\ptr}[1]{\footnotesize\ttfamily #1}
 
-\newcommand{\cincludegraphics}[2][]{%
-	\sbox0{\includegraphics[#1]{#2}}%
-	\ht0=\dimexpr\ht0+3pt\relax
-	\dp0=3pt
-	\splitcell{\box0}%
-}
-\newcommand{\splitcell}[1]{%
-	\begin{tabular}{@{}c@{}}#1\end{tabular}%
-}
-
-\let\svparbox\parbox
-\renewcommand\parbox[3][c]{\svparbox[#1]{#2}{\strut#3\strut}}
+% \let\svparbox\parbox
+% \renewcommand\parbox[3][c]{\svparbox[#1]{#2}{\strut#3\strut}}
 
 \DeclareTextFontCommand{\ptr}{\footnotesize\ttfamily}
 \DeclareTextFontCommand{\texttt}{\footnotesize\ttfamily}
@@ -109,13 +151,17 @@ version={4.0},
 \pagebreak
 
 
-%\renewcommand{\thesection}{\arabic{section}} % this provides numbering with sections only, without the chapters
+\renewcommand{\thesection}{\arabic{section}} % this provides numbering with sections only, without the chapters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Content sections follow
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\input{content/draft.tex}
-\input{content/introduction.tex}
+%\input{content/draft.tex}
+%\input{content/introduction.tex}
+%\input{content/monolith.tex}
+
+\input{monolith.tex}
+
 %\input{content/architecture-building-blocks-definitions.tex}
 %\input{content/motivation-architecture.tex}
 %\input{content/business-architecture.tex}
@@ -127,4 +173,5 @@ version={4.0},
  
 \end{document}
 
-%This template was created by Roza Aceska.
+
+
