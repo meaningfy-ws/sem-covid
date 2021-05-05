@@ -94,4 +94,3 @@ are licenced under a [CC BY 4.0 licence](https://creativecommons.org/licenses/by
 
 The scripts (stylesheets) and other executables are licenced under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) licence.
 
-
