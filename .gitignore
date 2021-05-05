@@ -142,7 +142,7 @@ junit_report.xml
 *.toc
 
 # PDF output - usually a bad idea to keep this in Git
-*.pdf
+#*.pdf
 
 # Latexmk
 *.fdb_latexmk
@@ -161,3 +161,7 @@ junit_report.xml
 *.blg
 report.html
 /tests/ml_experiments/
+tests/elasticsearch_dump/ds_eu_cellar.json
+tests/elasticsearch_dump/ds_eu_timeline.json
+tests/elasticsearch_dump/ds_pwdb.json
+tests/elasticsearch_dump/ds_ireland_timeline.json
