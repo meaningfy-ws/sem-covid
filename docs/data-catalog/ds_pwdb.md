@@ -1,12 +1,13 @@
-# Dataset description
-This section describes the datasets in terms of their structure,scope and manner
-in which the data have been collected.
+# Policy watch database (ds_pwdb)
 Policy Watch Database (PWDB) is a suitable set of summarised descriptions of
 what a COVID19 measure looks like. They cover broader context economic and
 social issues and intentionally exclude COVID19 reactions, which focus mostly
 on the public health related issues.
 
-## Policy watch database (ds_pwdb)
+You can download the dataset following [this link](http://srv.meaningfy.ws:9000/tmp-elasticsearch-dump/ds_pwdb.json?Content-Disposition=attachment%3B%20filename%3D%22ds_pwdb.json%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2zVld17bTfKk8iu0Eh9H74MywAeDV3WQ%2F20210505%2F%2Fs3%2Faws4_request&X-Amz-Date=20210505T073757Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb3facfb7658a0fa8e1fb2048c248b6df6e96c32ee80fd88bc39cabc754501f6).
+
+
+## Detailed description
 Eurofound’s COVID-19 EU PolicyWatch (PWDB) collates information on the responses
 of government and social partners to the crisis, as well as gathering examples of
 company practices aimed at mitigating the social and economic impacts. Data has
@@ -24,8 +25,7 @@ The original PWDB contains a rich set of attributes. Only a subset is considered
 relevant from the business perspective to the current project and is listed in
 the table below. The original structure is transformed into a simplified form
 for harmonisation with other datasets and easier usage. The data structure of
-the transformed core PWDB dataset (ds_pwdb_core) is described in Table 1 and can
-be downloaded [here](http://srv.meaningfy.ws:9000/tmp-elasticsearch-dump/ds_pwdb.json?Content-Disposition=attachment%3B%20filename%3D%22ds_pwdb.json%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2zVld17bTfKk8iu0Eh9H74MywAeDV3WQ%2F20210505%2F%2Fs3%2Faws4_request&X-Amz-Date=20210505T073757Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb3facfb7658a0fa8e1fb2048c248b6df6e96c32ee80fd88bc39cabc754501f6).
+the transformed core PWDB dataset (ds_pwdb_core) is described in Table 1 and
 
 
 
@@ -81,13 +81,12 @@ When contributing to this repository, please first discuss the change you wish
 to make via issue, email, or any other method with the owners of this repository
 before making a change.
 
-Please note we adhere to Apache code of conduct, please follow it in all your
+Please note we adhere to [Apache code of conduct](https://www.apache.org/foundation/policies/conduct), please follow it in all your
 interactions with the project.
 
 # License
 
 The documents, such as reports and specifications, available in the /doc folder,
-are licenced under a CC BY 4.0 licence.
+are licenced under a [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/deed.en).
 
-The scripts (stylesheets) and other executables are licenced under GNU GPLv3
-licence.
+The scripts (stylesheets) and other executables are licenced under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) licence.
