@@ -1,9 +1,41 @@
-
 from typing import List
 
 import jq
 
 PWDB_REFACTORING_RULES = '''.[] | {
+    "identifier": .recordId,
+    "title": .fieldData.title,
+    "title_national_language": .fieldData.title_nationalLanguage,
+    "country": .fieldData.calc_country,
+    "start_date": .fieldData.d_startDate,
+    "end_date": .fieldData.d_endDate,
+    "date_type": .fieldData.dateType,
+    "type_of_measure": .fieldData.calc_type,
+    "status_of_regulation": .fieldData.statusOfRegulation,
+    "category": .fieldData.calc_minorCategory,
+    "subcategory": .fieldData.calc_subMinorCategory,
+    "creation_date": .fieldData.calc_creationDay,
+    "background_info_description": .fieldData.descriptionBackgroundInfo,
+    "content_of_measure_description": .fieldData.descriptionContentOfMeasure,
+    "use_of_measure_description": .fieldData.descriptionUseOfMeasure,
+    "actors": [.portalData.actors[] |  ."actors::name" ],
+    "target_groups": [.portalData.targetGroups[] | ."targetGroups::name"],
+    "funding": [.portalData.funding[] | ."funding::name" ],
+    "involvement_of_social_partners_description": .fieldData.descriptionInvolvementOfSocialPartners,
+    "social_partner_involvement_form": .fieldData.socialPartnerform,
+    "social_partner_role: .fieldData.socialPartnerrole,
+    "is_sector_specific": .fieldData.isSector,
+    "private_or_public_sector": .fieldData.sector_privateOrPublic,
+    "is_occupation_specific": .fieldData.isOccupation,
+    "sectors": [.portalData.sectors[] | ."sectors::name" ],
+    "occupations": [.portalData.occupations[] | .],
+    "sources": .portalData | [ .sources[] | {"title" : ."sources::title", "url": ."sources::url" } ],
+}'''
+
+# This PWDB_REFACTORING_RULES is deprecated,
+# because they do not conform to the index in ElasticSearch and are not in the index field name standard.
+
+PWDB_REFACTORING_RULES_DEPRECATED = '''.[] | {
     "Identifier": .recordId,
     "Title": .fieldData.title,
     "Title (national language)": .fieldData.title_nationalLanguage,
