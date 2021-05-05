@@ -20,7 +20,7 @@ from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 
-VERSION = '0.10.4'
+VERSION = '0.10.5'
 DATASET_NAME = "pwdb"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
