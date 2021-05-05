@@ -19,22 +19,13 @@ Features:
 """
 import logging
 from abc import ABC, abstractmethod
-from datetime import datetime
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-logger = logging.getLogger(__name__)
+from sem_covid.services import DEFAULTS_DAG_ARGS
 
-DEFAULTS_DAG_ARGS = {
-    'owner': 'Meaningfy',
-    'schedule_interval': '@once',
-    "start_date": datetime.now(),
-    'max_active_runs': 1,
-    'concurrency': 1,
-    "retries": 0,
-    'depends_on_past': False,
-}
+logger = logging.getLogger(__name__)
 
 
 class BaseExperiment(ABC):
