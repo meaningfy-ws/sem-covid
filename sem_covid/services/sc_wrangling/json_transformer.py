@@ -23,7 +23,7 @@ PWDB_REFACTORING_RULES = '''.[] | {
     "funding": [.portalData.funding[] | ."funding::name" ],
     "involvement_of_social_partners_description": .fieldData.descriptionInvolvementOfSocialPartners,
     "social_partner_involvement_form": .fieldData.socialPartnerform,
-    "social_partner_role: .fieldData.socialPartnerrole,
+    "social_partner_role": .fieldData.socialPartnerrole,
     "is_sector_specific": .fieldData.isSector,
     "private_or_public_sector": .fieldData.sector_privateOrPublic,
     "is_occupation_specific": .fieldData.isOccupation,
