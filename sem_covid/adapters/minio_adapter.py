@@ -10,13 +10,17 @@ import logging
 
 from minio import Minio
 from minio.deleteobjects import DeleteObject
+from sem_covid import config
 
 logger = logging.getLogger(__name__)
 
 
 class MinioAdapter:
 
-    def __init__(self, minio_url: str, minio_access_key: str, minio_secret_key: str, minio_bucket: str):
+    def __init__(self, minio_bucket: str,
+                 minio_url: str = config.MINIO_URL,
+                 minio_access_key: str = config.MINIO_ACCESS_KEY,
+                 minio_secret_key: str = config.MINIO_SECRET_KEY):
         self.minio_url = minio_url
         self.minio_access_key = minio_access_key
         self.minio_secret_key = minio_secret_key

@@ -110,10 +110,8 @@ class BinaryDataSource(BaseDataSource):
 
     def _fetch(self) -> bytes:
         if not self._bucket:
-            self._bucket = MinioAdapter(config.MINIO_URL,
-                                        config.MINIO_ACCESS_KEY,
-                                        config.MINIO_SECRET_KEY,
-                                        self._bucket_name)
+            self._bucket = MinioAdapter(self._bucket_name, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                                        config.MINIO_SECRET_KEY)
         return self._bucket.get_object(self._object_path)
 
     def _to_local_cache(self, content: bytes):
@@ -128,17 +126,15 @@ class TabularDatasource(BaseDataSource):
     """
         A datasource proxy returning Pandas Dataframe from elasticsearch indexes with local caching
     """
-    _es_adapter = ESAdapter
+    _es_adapter: ESAdapter
 
     def __init__(self, index_name: str, enable_caching: bool = True):
         super().__init__(enable_caching)
         self._object_name = index_name
-        self._es_adapter = None
+        self._es_adapter = ESAdapter(host_name=config.ELASTICSEARCH_HOST_NAME, port=config.ELASTICSEARCH_PORT,
+                                     user=config.ELASTICSEARCH_USERNAME, password=config.ELASTICSEARCH_PASSWORD)
 
     def _fetch(self) -> pd.DataFrame:
-        if not self._es_adapter:
-            self._es_adapter = ESAdapter(host_name=config.ELASTICSEARCH_HOST_NAME, port=config.ELASTICSEARCH_PORT,
-                                         user=config.ELASTICSEARCH_USERNAME, password=config.ELASTICSEARCH_PASSWORD)
         return self._es_adapter.to_dataframe(index=self._object_name)
 
     def _to_local_cache(self, content: pd.DataFrame):
@@ -148,6 +144,14 @@ class TabularDatasource(BaseDataSource):
     def _from_local_cache(self) -> pd.DataFrame:
         pkl_bytes = self.path_to_local_cache().read_bytes()
         return pickle.loads(pkl_bytes)
+
+    def dump_local(self, local_path: pathlib.Path):
+        file_name = self._object_name + ".json"
+        self._es_adapter.dump_local(self._object_name, file_name, local_path)
+
+    def dump_remote(self, remote_storage: MinioAdapter):
+        file_name = self._object_name + ".json"
+        self._es_adapter.dump_remote(self._object_name, file_name, remote_storage)
 
 
 class FeatureStore(BaseDataSource):
