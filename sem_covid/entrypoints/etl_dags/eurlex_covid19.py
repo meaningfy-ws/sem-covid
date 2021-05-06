@@ -422,7 +422,7 @@ ORDER BY ?work ?title"""
 
 sources = {
     "EurLex": {"json": config.EU_CELLAR_JSON, "query": EURLEX_QUERY},
-    "Extended EurLex part 1": {"json": "ds_eu_cellar_extended.json", "query": EURLEX_EXTENDED_QUERY},
+    "Extended EurLex part 1": {"json": config.EU_CELLAR_EXTENDED_JSON, "query": EURLEX_EXTENDED_QUERY},
 }
 
 
