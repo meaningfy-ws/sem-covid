@@ -92,24 +92,24 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
             :return: As a result, we prepared pwdb dataset with common text data prepared classifier
                      labels that will be used into train-test part.
         """
-        feature_selector.reduce_array_column(pwdb_dataframe, "Target groups")
+        feature_selector.reduce_array_column(pwdb_dataframe, "target_groups")
         # TODO: train test split with all cols
-        pwdb_descriptive_data = pwdb_dataframe['Title'].map(str) + ' ' + \
-            pwdb_dataframe['Background information'].map(str) + ' ' + \
-            pwdb_dataframe['Content of measure'].map(str) + ' ' + \
-            pwdb_dataframe['Use of measure'] + ' ' + \
-            pwdb_dataframe['Views of social partners']
+        pwdb_descriptive_data = pwdb_dataframe['title'].map(str) + ' ' + \
+            pwdb_dataframe['background_info_description'].map(str) + ' ' + \
+            pwdb_dataframe['content_of_measure_description'].map(str) + ' ' + \
+            pwdb_dataframe['use_of_measure_description'] + ' ' + \
+            pwdb_dataframe['involvement_of_social_partners_description']
 
-        pwdb_dataframe['Descriptive Data'] = pwdb_descriptive_data \
+        pwdb_dataframe['descriptive_data'] = pwdb_descriptive_data \
             .apply(lambda x: data_cleaning.prepare_text_for_cleaning(x))
         pwdb_dataframe_columns = value_replacement.MultiColumnLabelEncoder(
-            columns=['Category', 'Subcategory', 'Type of measure']).fit_transform(pwdb_dataframe)
+            columns=['category', 'subcategory', 'type_of_measure']).fit_transform(pwdb_dataframe)
 
         return pwdb_dataframe_columns
 
     @staticmethod
     def target_group_refactoring(pwdb_dataframe: pd.DataFrame,
-                                 target_group_column_name: str = 'Target groups') -> pd.DataFrame:
+                                 target_group_column_name: str = 'target_groups') -> pd.DataFrame:
         """
             The target group available in the original dataset is very granular. For the purpose of this exercise
             we would benefit from aggregating the target groups into a more generic sets. As a result we will obtain
@@ -138,8 +138,8 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
 
             :return: As a result, we will have a dictionary with split data.
         """
-        pwdb_common_text = pwdb_dataframe['Descriptive Data']
-        pwdb_classifiers = pwdb_dataframe[['Category', 'Subcategory', 'Type of measure',
+        pwdb_common_text = pwdb_dataframe['descriptive_data']
+        pwdb_classifiers = pwdb_dataframe[['category', 'subcategory', 'type_of_measure',
                                            'Businesses', 'Citizens', 'Workers']]
         x_train, x_test, y_train, y_test = model_selection.train_test_split(pwdb_common_text, pwdb_classifiers,
                                                                             random_state=42, test_size=0.3,

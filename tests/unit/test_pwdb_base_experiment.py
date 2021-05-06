@@ -39,40 +39,40 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
 
     assert len(resulting_df) == 2
     assert len(resulting_df) != 3
-    assert "Title" in resulting_df
-    assert "Background information" in resulting_df
-    assert "Content of measure" in resulting_df
-    assert "Use of measure" in resulting_df
-    assert "Views of social partners" in resulting_df
-    assert "|" in resulting_df['Target groups'][0]
-    assert "Descriptive Data" in resulting_df
-    assert "Category" in resulting_df
-    assert "Subcategory" in resulting_df
-    assert "Type of measure" in resulting_df
-    assert "hardship" in resulting_df["Descriptive Data"][0]
-    assert "billion fund to mitigate" in resulting_df["Background information"][0]
-    assert "The support is a one-off payment" in resulting_df["Content of measure"][0]
-    assert "applications for phase" in resulting_df["Use of measure"][0]
-    assert "Federal Economic Chamber" in resulting_df["Views of social partners"][0]
-    assert "self-employedpart" not in resulting_df["Descriptive Data"][0]
-    assert "schemessupport" not in resulting_df["Descriptive Data"][0]
-    assert "januaryinformation" not in resulting_df["Descriptive Data"][0]
-    assert "subsidiesfederal" not in resulting_df["Descriptive Data"][0]
-    assert "\u20ac4" not in resulting_df["Descriptive Data"][0]
-    assert "2020" not in resulting_df["Descriptive Data"][0]
-    assert "\r\r" not in resulting_df["Descriptive Data"][0]
-    assert "100,000" not in resulting_df["Descriptive Data"][0]
-    assert "(mid-July to mid-August)" not in resulting_df["Descriptive Data"][0]
-    assert "(35%)" not in resulting_df["Descriptive Data"][0]
-    assert "Economic" not in resulting_df["Descriptive Data"][0]
-    assert "fund:" not in resulting_df["Descriptive Data"][0]
-    assert 0 in resulting_df['Category']
-    assert 0 in resulting_df['Subcategory']
-    assert 0 in resulting_df['Type of measure']
-    assert "Income protection beyond short-time work" not in resulting_df['Category']
+    assert "title" in resulting_df
+    assert "background_info_description" in resulting_df
+    assert "content_of_measure_description" in resulting_df
+    assert "use_of_measure_description" in resulting_df
+    assert "involvement_of_social_partners_description" in resulting_df
+    assert "|" in resulting_df['target_groups'][0]
+    assert "descriptive_data" in resulting_df
+    assert "category" in resulting_df
+    assert "subcategory" in resulting_df
+    assert "type_of_measure" in resulting_df
+    assert "hardship" in resulting_df["descriptive_data"][0]
+    assert "billion fund to mitigate" in resulting_df["background_info_description"][0]
+    assert "The support is a one-off payment" in resulting_df["content_of_measure_description"][0]
+    assert "applications for phase" in resulting_df["use_of_measure_description"][0]
+    assert "Federal Economic Chamber" in resulting_df["involvement_of_social_partners_description"][0]
+    assert "self-employedpart" not in resulting_df["descriptive_data"][0]
+    assert "schemessupport" not in resulting_df["descriptive_data"][0]
+    assert "januaryinformation" not in resulting_df["descriptive_data"][0]
+    assert "subsidiesfederal" not in resulting_df["descriptive_data"][0]
+    assert "\u20ac4" not in resulting_df["descriptive_data"][0]
+    assert "2020" not in resulting_df["descriptive_data"][0]
+    assert "\r\r" not in resulting_df["descriptive_data"][0]
+    assert "100,000" not in resulting_df["descriptive_data"][0]
+    assert "(mid-July to mid-August)" not in resulting_df["descriptive_data"][0]
+    assert "(35%)" not in resulting_df["descriptive_data"][0]
+    assert "Economic" not in resulting_df["descriptive_data"][0]
+    assert "fund:" not in resulting_df["descriptive_data"][0]
+    assert 0 in resulting_df['category']
+    assert 0 in resulting_df['subcategory']
+    assert 0 in resulting_df['type_of_measure']
+    assert "Income protection beyond short-time work" not in resulting_df['category']
     assert "Extensions of  income support to workers not covered by any kind of protection scheme" \
-           not in resulting_df['Subcategory']
-    assert "Legislations or other statutory regulations" not in resulting_df['Type of measure']
+           not in resulting_df['subcategory']
+    assert "Legislations or other statutory regulations" not in resulting_df['type_of_measure']
 
 
 def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
@@ -80,7 +80,7 @@ def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
     resulting_df = PWDBBaseExperiment.target_group_refactoring(prepare_pwdb_dataframe)
 
     assert len(resulting_df) == 2
-    assert "Descriptive Data" in resulting_df
+    assert "descriptive_data" in resulting_df
     assert "Businesses" in resulting_df
     assert "Citizens" in resulting_df
     assert "Workers" in resulting_df
@@ -100,9 +100,9 @@ def test_train_pwdb_data(transformed_pwdb_dataframe):
     assert "y_test" in resulting_df
     assert "y_train" in resulting_df
     assert "hardship" in resulting_df['X_train'][0]
-    assert "Category" in resulting_df["y_train"]
-    assert "Subcategory" in resulting_df["y_train"]
-    assert "Type of measure" in resulting_df["y_train"]
+    assert "category" in resulting_df["y_train"]
+    assert "subcategory" in resulting_df["y_train"]
+    assert "type_of_measure" in resulting_df["y_train"]
     assert "Businesses" in resulting_df["y_train"]
     assert "Workers" in resulting_df["y_train"]
     assert "Citizens" in resulting_df["y_train"]
