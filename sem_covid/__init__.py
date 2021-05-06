@@ -125,16 +125,6 @@ class SemCovidConfig(object):
     def PWDB_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
         return BaseConfig.find_value()
 
-    # TODO for Dan: Delete this correctly (safe)
-    @property
-    def PWDB_ES_TEST_DATA_DIRECTORY(self) -> str:
-        return BaseConfig.find_value()
-
-    # TODO for Dan: Delete this correctly (safe)
-    @property
-    def ES_PWDB_INDEX_MAPPING_FILE(self) -> str:
-        return BaseConfig.find_value()
-
     # LEGAL_INITIATIVES property
 
     @property
