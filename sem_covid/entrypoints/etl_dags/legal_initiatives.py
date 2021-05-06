@@ -48,8 +48,8 @@ def make_request(query):
 
 def get_legal_initiatives_items():
     logger.info('Start retrieving EURLex Covid 19 items')
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.LEGAL_INITIATIVES_BUCKET_NAME)
+    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -258,8 +258,8 @@ def download_file(source: dict, location_details: str, file_name: str, minio: Mi
 def download_items():
     logger.info(f'Enriched fragments will be saved locally to the bucket {config.LEGAL_INITIATIVES_BUCKET_NAME}')
 
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.LEGAL_INITIATIVES_BUCKET_NAME)
+    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
 
     json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
     legal_initiatives_items_count = len(json_items)
@@ -304,8 +304,8 @@ def download_items():
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.LEGAL_INITIATIVES_JSON}')
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.LEGAL_INITIATIVES_BUCKET_NAME)
+    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
     legal_initiatives_items_count = len(json_items)
 
@@ -371,8 +371,8 @@ def upload_processed_documents_to_elasticsearch():
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.LEGAL_INITIATIVES_BUCKET_NAME)
+    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:

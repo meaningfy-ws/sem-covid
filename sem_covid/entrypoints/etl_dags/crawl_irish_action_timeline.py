@@ -45,8 +45,8 @@ def extract_settings_from_module(module):
 
 def start_crawler():
     logger.info('start crawler')
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.IRELAND_TIMELINE_BUCKET_NAME)
+    minio = MinioAdapter(config.IRELAND_TIMELINE_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     minio.empty_bucket(object_name_prefix=None)
     settings = extract_settings_from_module(crawler_config)
     settings['config.SPLASH_URL'] = config.SPLASH_URL
@@ -58,8 +58,8 @@ def start_crawler():
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.IRELAND_TIMELINE_JSON}')
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.IRELAND_TIMELINE_BUCKET_NAME)
+    minio = MinioAdapter(config.IRELAND_TIMELINE_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     json_content = loads(minio.get_object(config.IRELAND_TIMELINE_JSON))
     irish_action_timeline_items_count = len(json_content)
 
@@ -99,8 +99,8 @@ def upload_processed_documents_to_elasticsearch():
     logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.MINIO_URL, config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY,
-                         config.IRELAND_TIMELINE_BUCKET_NAME)
+    minio = MinioAdapter(config.IRELAND_TIMELINE_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
