@@ -198,6 +198,16 @@ class SemCovidConfig(object):
     def ELASTICSEARCH_PASSWORD(self) -> str:
         return BaseConfig.find_value()
 
+    # Vault property
+
+    @property
+    def VAULT_ADDR(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def VAULT_TOKEN(self) -> str:
+        return BaseConfig.find_value()
+
     # Crawler property
     @property
     def CRAWLER_EU_TIMELINE_SPOKEPERSONS(self) -> str:
