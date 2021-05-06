@@ -1,9 +1,8 @@
 {
   "query": {
-    "match": {
-          "background_info_description": {
-            "query" : "covid"
-          }
-        }
+    "query_string": {
+      "query": "COVID-19",
+      "fields": ["background_info_description"]
+    }
   }
 }
