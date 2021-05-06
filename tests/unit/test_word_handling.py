@@ -6,7 +6,7 @@ from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.word_handling import *
 
 
 def test_get_nlp_docs(transformed_pwdb_dataframe):
-    nlp_docs = get_nlp_docs(transformed_pwdb_dataframe[['Identifier', 'Title']])
+    nlp_docs = get_nlp_docs(transformed_pwdb_dataframe[['identifier', 'title']])
     
     assert type(nlp_docs) == list
     assert type(nlp_docs[0]) == spacy.tokens.doc.Doc
@@ -14,21 +14,21 @@ def test_get_nlp_docs(transformed_pwdb_dataframe):
     
 
 def test_get_entity_words(transformed_pwdb_dataframe):
-    entity_words = get_entity_words(transformed_pwdb_dataframe[['Identifier', 'Title']])
+    entity_words = get_entity_words(transformed_pwdb_dataframe[['identifier', 'title']])
     
     assert type(entity_words) == pd.core.series.Series
     assert entity_words.dtype == object
     
 
 def test_get_named_entities(transformed_pwdb_dataframe):
-    entity_words = get_named_entities(transformed_pwdb_dataframe[['Identifier', 'Title']])
+    entity_words = get_named_entities(transformed_pwdb_dataframe[['identifier', 'title']])
     
     assert type(entity_words) == pd.core.series.Series
     assert entity_words.dtype == object
 
 
 def test_remove_stopwords(transformed_pwdb_dataframe):
-    pwdb_stopwords = remove_stopwords(transformed_pwdb_dataframe['Title'])
+    pwdb_stopwords = remove_stopwords(transformed_pwdb_dataframe['title'])
     
     assert type(pwdb_stopwords) == pd.core.series.Series
     assert type(pwdb_stopwords) != pd.core.frame.DataFrame
@@ -48,7 +48,7 @@ def test_calculate_tf_idf(transformed_pwdb_dataframe):
 
 
 def test_get_ngrams(transformed_pwdb_dataframe):
-    ngrams = get_ngrams(transformed_pwdb_dataframe['Title'], 3)
+    ngrams = get_ngrams(transformed_pwdb_dataframe['title'], 3)
     
     assert type(ngrams) == pd.core.series.Series
     assert type(ngrams) != pd.core.frame.DataFrame
@@ -59,7 +59,7 @@ def test_get_ngrams(transformed_pwdb_dataframe):
 
 
 def test_get_noun_phrases(transformed_pwdb_dataframe):
-    pwdb_noun_phrases = get_noun_phrases(transformed_pwdb_dataframe['Title'])
+    pwdb_noun_phrases = get_noun_phrases(transformed_pwdb_dataframe['title'])
     
     assert type(pwdb_noun_phrases) == pd.core.series.Series
     assert type(pwdb_noun_phrases) != pd.core.frame.DataFrame
@@ -70,7 +70,7 @@ def test_get_noun_phrases(transformed_pwdb_dataframe):
     
 
 def test_get_words(transformed_pwdb_dataframe):
-    pwdb_words = get_words(transformed_pwdb_dataframe['Title'])
+    pwdb_words = get_words(transformed_pwdb_dataframe['title'])
     
     assert type(pwdb_words) == pd.core.series.Series
     assert type(pwdb_words) != pd.core.frame.DataFrame
@@ -96,7 +96,7 @@ def test_delete_punctuation():
     
     
 def test_prepare_text_data(transformed_pwdb_dataframe):
-    prepared_pwdb = prepare_text_data(transformed_pwdb_dataframe['Title'])
+    prepared_pwdb = prepare_text_data(transformed_pwdb_dataframe['title'])
     
     assert type(prepared_pwdb) == pd.core.series.Series
     assert type(prepared_pwdb) != pd.core.frame.DataFrame
