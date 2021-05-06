@@ -248,6 +248,25 @@
             "ignore_above": 256
           }
         }
+      },
+      "social_partner_involvement_form":
+      {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "social_partner_role": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
       }
     }
   }
