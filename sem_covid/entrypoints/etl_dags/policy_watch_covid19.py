@@ -49,7 +49,7 @@ def download_policy_dataset():
         'Uploaded ' + str(
             uploaded_bytes) + ' bytes to bucket [' + config.PWDB_COVID19_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
-
+# TODO: parameters shall not be modified; a function returns teh result of its execution
 def download_single_source(source, minio: MinioAdapter):
     try:
         logger.info("Now downloading source " + str(source))
