@@ -6,7 +6,7 @@ from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.binary_matrix import (
 
 
 def test_convert_to_binary_matrix(transformed_pwdb_dataframe):
-    testing_df = transformed_pwdb_dataframe.drop('Sources', axis=1)
+    testing_df = transformed_pwdb_dataframe.drop('sources', axis=1)
     pwdb_binary_matrix = convert_to_binary_matrix(testing_df)
 
     print(pwdb_binary_matrix)
