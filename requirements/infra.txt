@@ -12,3 +12,5 @@ jq
 rdflib
 python-dotenv
 requests
+hvac
+hvac[parser]

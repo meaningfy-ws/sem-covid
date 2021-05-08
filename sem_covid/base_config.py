@@ -11,6 +11,8 @@ import logging
 import os
 from airflow.models import Variable
 
+from sem_covid.services.secret_manager import get_vault_secret
+
 logger = logging.getLogger(__name__)
 
 
@@ -33,9 +35,8 @@ class BaseConfig(object):
             try:
                 value = Variable.get(caller_function_name)
             except Exception as ex:
-                if not default_value:
+                value = get_vault_secret(caller_function_name, default_value)
+                if value is None:
                     raise ex
-                else:
-                    value = default_value
         logger.debug(value)
         return value
