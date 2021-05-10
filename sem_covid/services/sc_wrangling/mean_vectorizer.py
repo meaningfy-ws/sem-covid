@@ -2,6 +2,7 @@ import numpy as np
 from gensim.models import Word2Vec
 
 
+
 class MeanEmbeddingVectorizer(object):
     """Calculate the mean of each word"""
     def __init__(self, word2vec):
