@@ -1,5 +1,8 @@
 
 from datetime import datetime
+
+import pandas as pd
+
 from tests.unit.conftest import FakeTabularDataSource
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from airflow import DAG
@@ -81,12 +84,12 @@ def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
 
     assert len(resulting_df) == 2
     assert "descriptive_data" in resulting_df
-    assert "Businesses" in resulting_df
-    assert "Citizens" in resulting_df
-    assert "Workers" in resulting_df
-    assert 1 or 0 in resulting_df['Businesses']
-    assert 1 or 0 in resulting_df['Citizens']
-    assert 1 or 0 in resulting_df['Workers']
+    assert "businesses" in resulting_df
+    assert "citizens" in resulting_df
+    assert "workers" in resulting_df
+    assert 1 or 0 in resulting_df['businesses']
+    assert 1 or 0 in resulting_df['citizens']
+    assert 1 or 0 in resulting_df['workers']
 
 
 def test_train_pwdb_data(transformed_pwdb_dataframe):
@@ -99,15 +102,33 @@ def test_train_pwdb_data(transformed_pwdb_dataframe):
     assert "X_train" in resulting_df
     assert "y_test" in resulting_df
     assert "y_train" in resulting_df
-    assert "hardship" in resulting_df['X_train'][0]
+
+    assert "title" in resulting_df['X_train']
+    assert "title_national_language" in resulting_df['X_train']
+    assert "country" in resulting_df['X_train']
+    assert "start_date" in resulting_df['X_train']
+    assert "end_date" in resulting_df['X_train']
+    assert "date_type" in resulting_df['X_train']
+    assert "status_of_regulation" in resulting_df['X_train']
+    assert "creation_date" in resulting_df['X_train']
+    assert "background_info_description" in resulting_df['X_train']
+    assert "content_of_measure_description" in resulting_df['X_train']
+    assert "use_of_measure_description" in resulting_df['X_train']
+    assert "actors" in resulting_df['X_train']
+    assert "target_groups" in resulting_df['X_train']
+    assert "funding" in resulting_df['X_train']
+    assert "involvement_of_social_partners_description" in resulting_df['X_train']
+    assert "social_partner_involvement_form" in resulting_df['X_train']
+    assert "social_partner_role" in resulting_df['X_train']
+    assert "is_sector_specific" in resulting_df['X_train']
+    assert "private_or_public_sector" in resulting_df['X_train']
+    assert "is_occupation_specific" in resulting_df['X_train']
+    assert "sectors" in resulting_df['X_train']
+    assert "occupations" in resulting_df['X_train']
+    assert "sources" in resulting_df['X_train']
     assert "category" in resulting_df["y_train"]
     assert "subcategory" in resulting_df["y_train"]
     assert "type_of_measure" in resulting_df["y_train"]
-    assert "Businesses" in resulting_df["y_train"]
-    assert "Workers" in resulting_df["y_train"]
-    assert "Citizens" in resulting_df["y_train"]
-
-
-def test_data_extraction_with_data_registry(base_experiment):
-    base_experiment.data_preparation()
-
+    assert "businesses" in resulting_df["y_train"]
+    assert "workers" in resulting_df["y_train"]
+    assert "citizens" in resulting_df["y_train"]
