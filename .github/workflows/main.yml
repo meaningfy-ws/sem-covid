@@ -29,7 +29,12 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        make install    
+        make install
+    - name: Make envfile
+      uses: SpicyPizza/create-envfile@v1
+      with:
+        envkey_VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+        envkey_VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
     - name: Run tests
       run: make test
     - name: Upload coverage to Codecov
