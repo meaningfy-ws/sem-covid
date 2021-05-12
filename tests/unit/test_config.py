@@ -8,7 +8,7 @@
 """ """
 import os
 
-from sem_covid.base_config import BaseConfig
+from sem_covid.config_resolver import BaseConfig
 from tests.unit.conftest import FakeBaseConfig
 
 

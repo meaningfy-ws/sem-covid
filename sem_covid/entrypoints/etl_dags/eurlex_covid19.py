@@ -14,8 +14,8 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.adapters.es_index_storage import ESIndexStorage
+from sem_covid.adapters.minio_object_storage import MinioObjectStorage
 from sem_covid.services.sc_wrangling import json_transformer
 
 logger = logging.getLogger(__name__)
@@ -435,16 +435,16 @@ def make_request(query):
 
 
 def clear_bucket():
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
-    minio.empty_bucket(object_name_prefix=None)
-    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
+    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
+    minio.clear_storage(object_name_prefix=None)
+    minio.clear_storage(object_name_prefix=RESOURCE_FILE_PREFIX)
+    minio.clear_storage(object_name_prefix=TIKA_FILE_PREFIX)
 
 
 def get_single_item(query, json_file_name):
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     response = make_request(query)['results']['bindings']
     eurlex_json_dataset = json_transformer.transform_eurlex(response)
     uploaded_bytes = minio.put_object(json_file_name, json.dumps(eurlex_json_dataset).encode('utf-8'))
@@ -453,7 +453,7 @@ def get_single_item(query, json_file_name):
         uploaded_bytes) + ' bytes to bucket [' + config.EU_CELLAR_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
-def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
+def download_file(source: dict, location_details: str, file_name: str, minio: MinioObjectStorage):
     try:
         url = location_details if location_details.startswith('http') \
             else 'http://' + location_details
@@ -470,8 +470,8 @@ def download_file(source: dict, location_details: str, file_name: str, minio: Mi
 def download_dataset_items(json_file_name):
     logger.info(f'Enriched fragments will be saved locally to the bucket {config.EU_CELLAR_BUCKET_NAME}')
 
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
 
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
     items_count = len(json_content)
@@ -508,7 +508,7 @@ def download_dataset_items(json_file_name):
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(json_file_name, json.dumps(json_content))
+    minio.put_object(json_file_name, json.dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -516,8 +516,8 @@ def download_dataset_items(json_file_name):
 def extract_content_with_tika(json_file_name):
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {json_file_name}')
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     json_content = json.loads(minio.get_object(json_file_name))
     eurlex_items_count = len(json_content)
 
@@ -565,25 +565,25 @@ def extract_content_with_tika(json_file_name):
                 logger.exception(e)
 
         filename = hashlib.sha256(item.get('work').encode('utf-8')).hexdigest()
-        minio.put_object_from_string(TIKA_FILE_PREFIX + filename, json.dumps(item))
+        minio.put_object(TIKA_FILE_PREFIX + filename, json.dumps(item))
 
-    minio.put_object_from_string(json_file_name, json.dumps(json_content))
+    minio.put_object(json_file_name, json.dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
+    es_adapter = ESIndexStorage(config.ELASTICSEARCH_HOST_NAME,
+                                config.ELASTICSEARCH_PORT,
+                                config.ELASTICSEARCH_USERNAME,
+                                config.ELASTICSEARCH_PASSWORD)
 
     logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:

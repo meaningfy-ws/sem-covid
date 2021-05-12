@@ -9,22 +9,35 @@
     A registry of the frequently used datasets and language models
 """
 from sem_covid import config
-from sem_covid.adapters.data_source import BinaryDataSource, TabularDatasource
+from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
+from sem_covid.services.storage_registry import StorageRegistry
 
 
 class Dataset(object):
     """
         Registry of dataset sources
     """
-    PWDB = TabularDatasource(config.PWDB_ELASTIC_SEARCH_INDEX_NAME)
-    EU_CELLAR = TabularDatasource(config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME)
-    EU_ACTION_TIMELINE = TabularDatasource(config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME)
-    IRELAND_ACTION_TIMELINE = TabularDatasource(config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME)
+    PWDB = IndexTabularDataSource(config.PWDB_ELASTIC_SEARCH_INDEX_NAME,
+                                  StorageRegistry.es_index_storage()
+                                  )
+    EU_CELLAR = IndexTabularDataSource(config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
+                                       StorageRegistry.es_index_storage()
+                                       )
+    EU_ACTION_TIMELINE = IndexTabularDataSource(config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
+                                                StorageRegistry.es_index_storage()
+                                                )
+    IRELAND_ACTION_TIMELINE = IndexTabularDataSource(config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
+                                                     StorageRegistry.es_index_storage()
+                                                     )
 
 
 class LanguageModel(object):
     """
         Registry of language model data sources
     """
-    LAW2VEC = BinaryDataSource(config.LANGUAGE_MODEL_BUCKET_NAME, config.LAW2VEC_MODEL_PATH)
-    JRC2VEC = BinaryDataSource(config.LANGUAGE_MODEL_BUCKET_NAME, config.JRC2VEC_MODEL_PATH)
+    LAW2VEC = BinaryDataSource(config.LAW2VEC_MODEL_PATH,
+                               StorageRegistry.minio_object_storage(config.LANGUAGE_MODEL_BUCKET_NAME)
+                               )
+    JRC2VEC = BinaryDataSource(config.JRC2VEC_MODEL_PATH,
+                               StorageRegistry.minio_object_storage(config.LANGUAGE_MODEL_BUCKET_NAME)
+                               )

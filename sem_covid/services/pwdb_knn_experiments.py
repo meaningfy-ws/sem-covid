@@ -19,7 +19,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.neighbors import KNeighborsClassifier as KNC
 
 from sem_covid import config
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.adapters.minio_object_storage import MinioObjectStorage
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectorizer
 from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
@@ -44,10 +44,10 @@ LAW2VEC_KNN_TG_L1 = "law2vec/KNN/knn_target_groups_l1.pkl"
 class KNNPWDBExperiment(PWDBBaseExperiment):
 
     def model_training(self, *args, **kwargs):
-        minio_ml_experiments = MinioAdapter(config.ML_EXPERIMENTS_BUCKET_NAME, config.MINIO_URL,
-                                            config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY)
-        minio_language_model = MinioAdapter(config.LANGUAGE_MODEL_BUCKET_NAME, config.MINIO_URL,
-                                            config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY)
+        minio_ml_experiments = MinioObjectStorage(config.ML_EXPERIMENTS_BUCKET_NAME, config.MINIO_URL,
+                                                  config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY)
+        minio_language_model = MinioObjectStorage(config.LANGUAGE_MODEL_BUCKET_NAME, config.MINIO_URL,
+                                                  config.MINIO_ACCESS_KEY, config.MINIO_SECRET_KEY)
         train_test_dataset = pickle.loads(minio_ml_experiments.get_object(PWDB_TRAIN_TEST))
         load_pwdb_word2vec = pickle.loads(minio_language_model.get_object(PWDB_WORD2VEC_MODEL))
 

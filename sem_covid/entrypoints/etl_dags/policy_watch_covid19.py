@@ -16,8 +16,8 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.adapters.es_index_storage import ESIndexStorage
+from sem_covid.adapters.minio_object_storage import MinioObjectStorage
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 
 VERSION = '0.10.6'
@@ -36,11 +36,11 @@ logger = logging.getLogger(__name__)
 def download_policy_dataset():
     response = requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
     response.raise_for_status()
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
-    minio.empty_bucket(object_name_prefix=None)
-    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
+    minio = MinioObjectStorage(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
+    minio.clear_storage(object_name_prefix=None)
+    minio.clear_storage(object_name_prefix=RESOURCE_FILE_PREFIX)
+    minio.clear_storage(object_name_prefix=TIKA_FILE_PREFIX)
 
     transformed_json = transform_pwdb(json.loads(response.content))
 
@@ -50,7 +50,7 @@ def download_policy_dataset():
             uploaded_bytes) + ' bytes to bucket [' + config.PWDB_COVID19_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 # TODO: parameters shall not be modified; a function returns teh result of its execution
-def download_single_source(source, minio: MinioAdapter):
+def download_single_source(source, minio: MinioObjectStorage):
     try:
         logger.info("Now downloading source " + str(source))
         url = source['url'] if source['url'].startswith('http') else ('http://' + source['url'])
@@ -69,8 +69,8 @@ def download_single_source(source, minio: MinioAdapter):
 def download_policy_watch_resources():
     logging.info('Starting the download...')
 
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     covid19json = json.loads(minio.get_object(config.PWDB_DATASET_PATH).decode('utf-8'))
     list_count = len(covid19json)
     current_item = 0
@@ -85,15 +85,15 @@ def download_policy_watch_resources():
         for source in field_data['sources']:
             download_single_source(source, minio)
 
-    minio.put_object_from_string(config.PWDB_DATASET_PATH, json.dumps(covid19json))
+    minio.put_object(config.PWDB_DATASET_PATH, json.dumps(covid19json))
     logger.info("...done downloading.")
 
 
 def process_using_tika():
     logger.info('Using Apache Tika at ' + config.APACHE_TIKA_URL)
 
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     covid19json = json.loads(minio.get_object(config.PWDB_DATASET_PATH).decode('utf-8'))
     list_count = len(covid19json)
     current_item = 0
@@ -134,7 +134,7 @@ def process_using_tika():
             else:
                 logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
 
-            minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
+            minio.put_object(TIKA_FILE_PREFIX + hashlib.sha256(
                 (str(field_data['identifier'] +
                      field_data['title'])).encode('utf-8')).hexdigest(), json.dumps(field_data))
         except Exception as ex:
@@ -142,15 +142,15 @@ def process_using_tika():
 
 
 def put_elasticsearch_documents():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
+    es_adapter = ESIndexStorage(config.ELASTICSEARCH_HOST_NAME,
+                                config.ELASTICSEARCH_PORT,
+                                config.ELASTICSEARCH_USERNAME,
+                                config.ELASTICSEARCH_PASSWORD)
     logger.info('Using ElasticSearch at ' + config.ELASTICSEARCH_HOST_NAME + ':' + str(
         config.ELASTICSEARCH_PORT))
 
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
 

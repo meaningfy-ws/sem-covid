@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# minio_adapter.py
+# minio_object_storage.py
 # Date:  02/03/2021
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
@@ -11,11 +11,12 @@ import logging
 from minio import Minio
 from minio.deleteobjects import DeleteObject
 from sem_covid import config
+from sem_covid.adapters.abstract_storage import ObjectStorageABC
 
 logger = logging.getLogger(__name__)
 
 
-class MinioAdapter:
+class MinioObjectStorage(ObjectStorageABC):
 
     def __init__(self, minio_bucket: str,
                  minio_url: str = config.MINIO_URL,
@@ -38,7 +39,7 @@ class MinioAdapter:
             self.minio_client.make_bucket(self.minio_bucket)
         logger.info('...done.')
 
-    def empty_bucket(self, object_name_prefix=None):
+    def clear_storage(self, object_name_prefix=None):
         logger.info('Clearing the ' + self.minio_bucket + ' bucket...')
         objects = self.minio_client.list_objects(self.minio_bucket, prefix=object_name_prefix)
         objects_to_delete = [DeleteObject(x.object_name) for x in objects]
@@ -50,13 +51,13 @@ class MinioAdapter:
             return response.read()
 
     def put_object(self, object_name: str, content) -> int:
-        raw_content = io.BytesIO(content)
+        if type(content) == str:
+            raw_content = bytes(content, encoding='utf8')
+        else:
+            raw_content = io.BytesIO(content)
         raw_content_size = raw_content.getbuffer().nbytes
         self.minio_client.put_object(self.minio_bucket, object_name, raw_content, raw_content_size)
         return raw_content_size
-
-    def put_object_from_string(self, object_name: str, content_as_string: str):
-        return self.put_object(object_name, bytes(content_as_string, encoding='utf8'))
 
     def list_objects(self, object_prefix: str):
         return self.minio_client.list_objects(self.minio_bucket, prefix=object_prefix)

@@ -13,15 +13,14 @@ import logging
 import pathlib
 import pickle
 import tempfile
-from abc import ABC
+from abc import ABC, abstractmethod
 from builtins import NotImplementedError
 from typing import Any, Union
 
 import pandas as pd
 
-from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.adapters.abstract_storage import IndexStorageABC, ObjectStorageABC
+from sem_covid.adapters.minio_object_storage import MinioObjectStorage
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +53,7 @@ class BaseDataSource(ABC):
             logger.info(f'Fetching {self._object_name} from the remote source')
             return self._fetch()
 
+    @abstractmethod
     def _fetch(self) -> Any:
         """
             Establish the connection and fetch the content from the remote source
@@ -61,6 +61,7 @@ class BaseDataSource(ABC):
         """
         raise NotImplementedError
 
+    @abstractmethod
     def _to_local_cache(self, content):
         """
             Save the content temporarily on the local system
@@ -69,6 +70,7 @@ class BaseDataSource(ABC):
         """
         raise NotImplementedError
 
+    @abstractmethod
     def _from_local_cache(self):
         """
             Return the temporary content from the local system
@@ -97,22 +99,16 @@ class BinaryDataSource(BaseDataSource):
     """
         A binary Minio/S3 datasource proxy with local caching
     """
-    _bucket: MinioAdapter
-    _bucket_name: str
+    _object_storage: ObjectStorageABC
     _object_path: str
 
-    def __init__(self, bucket_name: str, object_path: str, enable_caching: bool = True):
+    def __init__(self, object_path: str, object_storage: ObjectStorageABC, enable_caching: bool = True):
         super().__init__(enable_caching)
-        self._bucket_name = bucket_name
         self._object_path = object_path
-        self._object_name = bucket_name + "::" + object_path
-        self._bucket = None
+        self._object_storage = object_storage
 
     def _fetch(self) -> bytes:
-        if not self._bucket:
-            self._bucket = MinioAdapter(self._bucket_name, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                                        config.MINIO_SECRET_KEY)
-        return self._bucket.get_object(self._object_path)
+        return self._object_storage.get_object(self._object_path)
 
     def _to_local_cache(self, content: bytes):
         logger.info('Caching the content locally at ' + self._temporary_file.name)
@@ -122,20 +118,10 @@ class BinaryDataSource(BaseDataSource):
         self.path_to_local_cache().read_bytes()
 
 
-class TabularDatasource(BaseDataSource):
-    """
-        A datasource proxy returning Pandas Dataframe from elasticsearch indexes with local caching
-    """
-    _es_adapter: ESAdapter
+class TabularDataSource(BaseDataSource):
 
-    def __init__(self, index_name: str, enable_caching: bool = True):
-        super().__init__(enable_caching)
-        self._object_name = index_name
-        self._es_adapter = ESAdapter(host_name=config.ELASTICSEARCH_HOST_NAME, port=config.ELASTICSEARCH_PORT,
-                                     user=config.ELASTICSEARCH_USERNAME, password=config.ELASTICSEARCH_PASSWORD)
-
-    def _fetch(self) -> pd.DataFrame:
-        return self._es_adapter.to_dataframe(index=self._object_name)
+    def _fetch(self) -> Any:
+        raise NotImplementedError
 
     def _to_local_cache(self, content: pd.DataFrame):
         pkl_bytes = pickle.dumps(content)
@@ -145,33 +131,26 @@ class TabularDatasource(BaseDataSource):
         pkl_bytes = self.path_to_local_cache().read_bytes()
         return pickle.loads(pkl_bytes)
 
+
+class IndexTabularDataSource(TabularDataSource):
+    """
+        A datasource proxy returning Pandas Dataframe from elasticsearch indexes with local caching
+    """
+    _index_storage: IndexStorageABC
+
+    def __init__(self, index_name: str, index_storage: IndexStorageABC, enable_caching: bool = True):
+        super().__init__(enable_caching)
+        self._object_name = index_name
+        self._index_storage = index_storage
+
+    def _fetch(self) -> pd.DataFrame:
+        return self._index_storage.get_dataframe(index_name=self._object_name)
+
     def dump_local(self, local_path: pathlib.Path):
         file_name = self._object_name + ".json"
-        self._es_adapter.dump_local(self._object_name, file_name, local_path)
+        self._index_storage.dump(self._object_name, file_name, local_path=local_path)
 
-    def dump_remote(self, remote_storage: MinioAdapter):
+    def dump_remote(self, remote_storage: MinioObjectStorage):
         file_name = self._object_name + ".json"
-        self._es_adapter.dump_remote(self._object_name, file_name, remote_storage)
+        self._index_storage.dump(self._object_name, file_name, remote_storage=remote_storage)
 
-
-class FeatureStore(BaseDataSource):
-    """
-        A simple feature store based on ElasticSearch service
-    """
-
-    def __init__(self):
-        super().__init__(enable_caching=False)
-
-    def fetch(self, object_name: str) -> pd.DataFrame:
-        """
-
-        :param object_name:
-        :return:
-        """
-
-    def dump(self, object_name: str, content: pd.DataFrame) -> Any:
-        """
-
-        :param object_name:
-        :return:
-        """

@@ -20,10 +20,10 @@ from es_pandas import es_pandas
 # - dump an index, as JSON, so that it can be ingested afterwards exactly as is
 #   stripped, if necessary of internal ES fields e.g. field_name.keywords,
 # - dump (a) in memory, (b) to local folder or (c) to a s3 bucket
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.adapters.abstract_storage import IndexStorageABC, ObjectStorageABC
 
 
-class ESAdapter:
+class ESIndexStorage(IndexStorageABC):
     def __init__(self, host_name: str, port: str, user: str, password: str):
 
         self._es_pandas = es_pandas(hosts=[host_name],
@@ -34,15 +34,42 @@ class ESAdapter:
     def index(self, index_name, document_id, document_body):
         self._es.index(index=index_name, id=document_id, body=document_body)
 
-    def get_document(self, index_name: str, id: str):
-        return self._es.get(index=index_name, id=id)
+    def get_document(self, index_name: str, document_id: str):
+        return self._es.get(index=index_name, id=document_id)
 
     def search(self, index_name: str, query: str, exclude_binary_source: bool = True):
         if exclude_binary_source:
-            result = self._es.search(index=index_name, q=query)
-        else:
             result = self._es.search(index=index_name, q=query, _source_excludes=["data"])
+        else:
+            result = self._es.search(index=index_name, q=query)
         return result
+
+    def get_dataframe(self, index_name: str) -> pd.DataFrame:
+        return self._es_pandas.to_pandas(index=index_name)
+
+    def put_dataframe(self, index_name: str, content: pd.DataFrame):
+        return self._es_pandas.to_es(df=content, index=index_name, thread_count=2, chunk_size=10000)
+
+    def dump(self, index_name: str, file_name: str, local_path: pathlib.Path = None,
+             remote_storage: ObjectStorageABC = None):
+        """
+            TODO: reuse any of these methods
+                1. https://gist.github.com/spikeekips/6018427
+                2. https://github.com/neilz/es_dump/blob/master/es_dump.py
+                3. use bulk and scan methods described here: https://elasticsearch-py.readthedocs.io/en/master/helpers.html#bulk-helpers
+        :param index_name:
+        :param file_name:
+        :param local_path:
+        :param remote_storage:
+        :return:
+        """
+        df = self.get_dataframe(index_name)
+        if local_path is not None:
+            local_path.mkdir(parents=True, exist_ok=True)
+            file_path = local_path / file_name
+            df.to_json(file_path, orient='records')
+        if remote_storage is not None:
+            remote_storage.put_object(file_name, df.to_json(orient='records'))
 
     def to_dataframe(self, **kwargs) -> pd.DataFrame:
         """
@@ -59,30 +86,6 @@ class ESAdapter:
         :return: DataFrame
         """
         return self._es_pandas.to_pandas(**kwargs)
-
-    def dump_local(self, index_name: str, file_name: str, local_path: pathlib.Path):
-        df = self.to_dataframe(index=index_name)
-        local_path.mkdir(parents=True, exist_ok=True)
-        file_path = local_path / file_name
-        df.to_json(file_path, orient='records')
-
-    def dump_remote(self, index_name: str, file_name: str, remote_storage: MinioAdapter):
-        df = self.to_dataframe(index=index_name)
-        remote_storage.put_object_from_string(file_name, df.to_json(orient='records'))
-
-    def dump(self, index_name, file_path: str = None):
-        """
-            TODO: reuse any of these methods
-                1. https://gist.github.com/spikeekips/6018427
-                2. https://github.com/neilz/es_dump/blob/master/es_dump.py
-                3. use bulk and scan methods described here: https://elasticsearch-py.readthedocs.io/en/master/helpers.html#bulk-helpers
-        :param index_name:
-        :return:
-        """
-        warnings.warn("Needs implementation", FutureWarning)
-        # for i in elasticsearch.helpers.scan(self._es, query={"query": {"match_all": {}}}):
-        #     print(i)
-        # return self._es.search(index=index_name, q="*", _source_excludes=["data"], size=-1)
 
     # TODO: how is this aggregation compared to the search above?
     def get_aggregation(self, index_name: str, body: dict) -> dict:
@@ -121,7 +124,7 @@ class ESAdapter:
         :param include_index:
         :return:
         """
-        df = ESAdapter.resultset_to_dataframe(query_result_set)
+        df = ESIndexStorage.resultset_to_dataframe(query_result_set)
         if include_index:
             df["_index"] = df.index
         return df.to_json(path_or_buf=file_path, orient='records', indent=4)

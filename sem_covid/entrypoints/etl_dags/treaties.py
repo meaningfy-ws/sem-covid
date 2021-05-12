@@ -21,8 +21,8 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.adapters.es_index_storage import ESIndexStorage
+from sem_covid.adapters.minio_object_storage import MinioObjectStorage
 
 
 VERSION = '0.9.0'
@@ -46,11 +46,11 @@ def make_request(query):
 
 def get_treaty_items():
     logger.info(f'Start retrieving works of treaties..')
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
-    minio.empty_bucket(object_name_prefix=None)
-    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
+    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
+    minio.clear_storage(object_name_prefix=None)
+    minio.clear_storage(object_name_prefix=RESOURCE_FILE_PREFIX)
+    minio.clear_storage(object_name_prefix=TIKA_FILE_PREFIX)
     query = """prefix cdm: <http://publications.europa.eu/ontology/cdm#>
                 prefix lang: <http://publications.europa.eu/resource/authority/language/>
 
@@ -146,12 +146,12 @@ def get_treaty_items():
                 }
                 ORDER BY ?dateDocument"""
 
-    uploaded_bytes = minio.put_object_from_string(config.TREATIES_JSON, dumps(make_request(query)))
+    uploaded_bytes = minio.put_object(config.TREATIES_JSON, dumps(make_request(query)))
     logger.info('Uploaded ' + str(
         uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
-def download_file(source: dict, location_details: dict, file_name: str, minio: MinioAdapter):
+def download_file(source: dict, location_details: dict, file_name: str, minio: MinioObjectStorage):
     try:
         url = location_details['value'] if location_details['value'].startswith('http') \
             else 'http://' + location_details['value']
@@ -166,8 +166,8 @@ def download_file(source: dict, location_details: dict, file_name: str, minio: M
 
 
 def download_treaties_items():
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
     logger.info(dumps(treaties_json)[:100])
     treaties_json = treaties_json['results']['bindings']
@@ -203,15 +203,15 @@ def download_treaties_items():
 
     updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
     updated_treaties_json['results']['bindings'] = treaties_json
-    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_treaties_json))
+    minio.put_object(config.TREATIES_JSON, dumps(updated_treaties_json))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
 
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     treaties_json = loads(minio.get_object(config.TREATIES_JSON))['results']['bindings']
     treaties_items_count = len(treaties_json)
 
@@ -257,28 +257,28 @@ def extract_document_content_with_tika():
                 logger.exception(e)
         if valid_sources:
             filename = hashlib.sha256(item['html_to_download']['value'].encode('utf-8')).hexdigest()
-            minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
+            minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
 
     updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
     updated_treaties_json['results']['bindings'] = treaties_json
-    minio.put_object_from_string(config.TREATIES_JSON, dumps(updated_treaties_json))
+    minio.put_object(config.TREATIES_JSON, dumps(updated_treaties_json))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
+    es_adapter = ESIndexStorage(config.ELASTICSEARCH_HOST_NAME,
+                                config.ELASTICSEARCH_PORT,
+                                config.ELASTICSEARCH_USERNAME,
+                                config.ELASTICSEARCH_PASSWORD)
 
     logger.info(
         f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                               config.MINIO_SECRET_KEY)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
