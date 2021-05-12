@@ -9,9 +9,10 @@ import hashlib
 import json
 import logging
 from datetime import datetime, timedelta
+import random
 
 import requests
-from airflow import DAG
+from airflow import DAG, AirflowException
 from airflow.operators.python import PythonOperator
 from tika import parser
 
@@ -20,7 +21,7 @@ from sem_covid.adapters.es_adapter import ESAdapter
 from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 
-VERSION = '0.10.6'
+VERSION = '0.10.14'
 DATASET_NAME = "pwdb"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
@@ -31,6 +32,7 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 logger = logging.getLogger(__name__)
+exception_list = []
 
 
 def download_policy_dataset():
@@ -44,12 +46,12 @@ def download_policy_dataset():
 
     transformed_json = transform_pwdb(json.loads(response.content))
 
-    uploaded_bytes = minio.put_object(config.PWDB_DATASET_PATH, json.dumps(transformed_json).encode('utf-8'))
+    uploaded_bytes = minio.put_object(config.PWDB_DATASET_LOCAL_FILENAME, json.dumps(transformed_json).encode('utf-8'))
     logger.info(
         'Uploaded ' + str(
             uploaded_bytes) + ' bytes to bucket [' + config.PWDB_COVID19_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
-# TODO: parameters shall not be modified; a function returns teh result of its execution
+
 def download_single_source(source, minio: MinioAdapter):
     try:
         logger.info("Now downloading source " + str(source))
@@ -60,7 +62,11 @@ def download_single_source(source, minio: MinioAdapter):
             minio.put_object(filename, response.content)
 
         source[CONTENT_PATH_KEY] = filename
+
+        raise Exception("Ahahahah")
     except Exception as ex:
+        exception_list.append(ex)
+        logger.info(str(len(exception_list)))
         source['failure_reason'] = str(ex)
 
     return source
@@ -71,7 +77,7 @@ def download_policy_watch_resources():
 
     minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
                          config.MINIO_SECRET_KEY)
-    covid19json = json.loads(minio.get_object(config.PWDB_DATASET_PATH).decode('utf-8'))
+    covid19json = json.loads(minio.get_object(config.PWDB_DATASET_LOCAL_FILENAME).decode('utf-8'))
     list_count = len(covid19json)
     current_item = 0
 
@@ -84,9 +90,13 @@ def download_policy_watch_resources():
 
         for source in field_data['sources']:
             download_single_source(source, minio)
+        if current_item == 10:
+            break
 
-    minio.put_object_from_string(config.PWDB_DATASET_PATH, json.dumps(covid19json))
+    minio.put_object_from_string(config.PWDB_DATASET_LOCAL_FILENAME, json.dumps(covid19json))
     logger.info("...done downloading.")
+    logger.info(str(len(exception_list)))
+    return exception_list
 
 
 def process_using_tika():
@@ -94,7 +104,7 @@ def process_using_tika():
 
     minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
                          config.MINIO_SECRET_KEY)
-    covid19json = json.loads(minio.get_object(config.PWDB_DATASET_PATH).decode('utf-8'))
+    covid19json = json.loads(minio.get_object(config.PWDB_DATASET_LOCAL_FILENAME).decode('utf-8'))
     list_count = len(covid19json)
     current_item = 0
 
@@ -138,6 +148,7 @@ def process_using_tika():
                 (str(field_data['identifier'] +
                      field_data['title'])).encode('utf-8')).hexdigest(), json.dumps(field_data))
         except Exception as ex:
+            exception_list.append(ex)
             logger.exception(ex)
 
 
@@ -165,9 +176,18 @@ def put_elasticsearch_documents():
                              document_body=json.loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
+            exception_list.append(ex)
             logger.exception(ex)
 
     logger.info('Sent ' + str(object_count) + ' object(s) to ElasticSearch.')
+
+
+def summarize_exceptional_conditions():
+    logger.info("There have been " + str(len(exception_list)) + " exceptions recorded.")
+    for ex in exception_list:
+        logger.exception(ex)
+    if len(exception_list) > 0:
+        raise AirflowException("DAG execution failed.")
 
 
 default_args = {
@@ -198,4 +218,7 @@ tika_task = PythonOperator(task_id='Tika',
 elasticsearch_task = PythonOperator(task_id='ElasticSearch',
                                     python_callable=put_elasticsearch_documents, retries=1, dag=dag)
 
-download_task >> enrich_task >> tika_task >> elasticsearch_task
+summary_task = PythonOperator(task_id='Summary',
+                              python_callable=summarize_exceptional_conditions, retries=1, dag=dag)
+
+download_task >> enrich_task >> tika_task >> elasticsearch_task >> summary_task

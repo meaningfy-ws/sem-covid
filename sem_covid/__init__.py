@@ -10,7 +10,7 @@
 """
 import logging
 import warnings
-import pathlib
+
 import dotenv
 
 try:
@@ -119,6 +119,10 @@ class SemCovidConfig(object):
 
     @property
     def PWDB_DATASET_URL(self) -> str:
+        return BaseConfig.find_value()
+
+    @property
+    def PWDB_DATASET_LOCAL_FILENAME(self) -> str:
         return BaseConfig.find_value()
 
     @property
