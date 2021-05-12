@@ -8,12 +8,11 @@
 """
     This DAG module has the purpose of designing some experimental DAG architectures
 """
-import json
 import logging
 from datetime import datetime, timedelta
 
 from airflow import DAG
-from airflow.operators.python import PythonOperator, BranchPythonOperator
+from airflow.operators.python import PythonOperator
 
 logger = logging.getLogger(__name__)
 
@@ -27,8 +26,9 @@ default_args = {
     'retry_delay': timedelta(seconds=5)
 }
 
-with DAG('slave_architecture_test_005', start_date=datetime(2020, 5, 15), schedule_interval='@once',
-         default_args=default_args, ) as dag:
+with DAG('slave_architecture_test_006', start_date=datetime(2020, 5, 15), schedule_interval='@once',
+         default_args=default_args, max_active_runs=4,
+         concurrency=8) as dag:
     def task1_callable():
         pass
 
