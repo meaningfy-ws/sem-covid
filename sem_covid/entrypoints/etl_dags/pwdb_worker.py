@@ -25,7 +25,7 @@ DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
-CONTENT_LANGUAGE = "Tika detected language"
+CONTENT_LANGUAGE = "Language"
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
@@ -171,20 +171,17 @@ default_args = {
     "retries": 0,
     "retry_delay": timedelta(minutes=3600)
 }
-dag = DAG(DAG_NAME,
-          default_args=default_args,
-          schedule_interval=None,
-          max_active_runs=4,
-          concurrency=4)
 
-enrich_task = PythonOperator(task_id='Enrich',
-                             python_callable=download_policy_watch_resources, retries=1, dag=dag, provide_context=True)
 
-tika_task = PythonOperator(task_id='Tika',
-                           python_callable=process_using_tika, retries=1, dag=dag, provide_context=True)
+with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
+    enrich_task = PythonOperator(task_id='Enrich',
+                                 python_callable=download_policy_watch_resources, retries=1, dag=dag, provide_context=True)
 
-elasticsearch_task = PythonOperator(task_id='ElasticSearch',
-                                    python_callable=put_elasticsearch_documents, retries=1, dag=dag,
-                                    provide_context=True)
+    tika_task = PythonOperator(task_id='Tika',
+                               python_callable=process_using_tika, retries=1, dag=dag, provide_context=True)
 
-enrich_task >> tika_task >> elasticsearch_task
+    elasticsearch_task = PythonOperator(task_id='ElasticSearch',
+                                        python_callable=put_elasticsearch_documents, retries=1, dag=dag,
+                                        provide_context=True)
+
+    enrich_task >> tika_task >> elasticsearch_task
