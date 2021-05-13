@@ -30,7 +30,7 @@ default_args = {
     'retry_delay': timedelta(seconds=5)
 }
 
-with DAG('dag_architecture_test_v.0.7', start_date=datetime(2020, 5, 15), schedule_interval='@once',
+with DAG('dag_architecture_test_v.0.10', start_date=datetime(2020, 5, 15), schedule_interval='@once',
          default_args=default_args, ) as dag:
     def exec_task_function(task_id_param: int):
         logger.info(f"This is a task with input {id}")
@@ -44,7 +44,7 @@ with DAG('dag_architecture_test_v.0.7', start_date=datetime(2020, 5, 15), schedu
 
 
     def task_selector(param: int):
-        r = randrange(3, 3 + param)
+        r = randrange(1000, 2000)
         logger.info(f"The range of tasks is {r}")
         for task_id in range(r):
             yield task_id
@@ -57,6 +57,11 @@ with DAG('dag_architecture_test_v.0.7', start_date=datetime(2020, 5, 15), schedu
 
     with TaskGroup("group_of_parallel_tasks") as group1:
         for t in task_selector(10):
-            PythonOperator(python_callable=exec_task_function, op_kwargs={"task_id_param":t}, task_id=f'processing_{t}')
+            task1 = PythonOperator(python_callable=exec_task_function, op_kwargs={"task_id_param":t}, task_id=f'enrich_{t}')
+            task2 = PythonOperator(python_callable=exec_task_function, op_kwargs={"task_id_param": t},
+                           task_id=f'tika_{t}')
+            task3 = PythonOperator(python_callable=exec_task_function, op_kwargs={"task_id_param": t},
+                           task_id=f'elasticsearch{t}')
+            task1 >> task2 >> task3
 
     task_before >> group1 >> task_after
