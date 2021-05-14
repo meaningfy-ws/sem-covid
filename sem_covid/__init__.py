@@ -18,14 +18,14 @@ except ImportError:
     # Try backported to PY<37 `importlib_resources`.
     import importlib_resources as pkg_resources
 
-from sem_covid.config_resolver import VaultConfigResolver, EnvConfigResolver
+from sem_covid.config_resolver import VaultAndEnvConfigResolver, EnvConfigResolver
 
 logger = logging.getLogger(__name__)
 
 from resources import crawlers
 
 
-class MinIOConfig(VaultConfigResolver):
+class MinIOConfig(VaultAndEnvConfigResolver):
     # MinIO Service property
     @property
     def MINIO_ACCESS_KEY(self) -> str:
@@ -40,7 +40,7 @@ class MinIOConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class MlExperimentsConfig(VaultConfigResolver):
+class MlExperimentsConfig(VaultAndEnvConfigResolver):
     # Other property
 
     @property
@@ -52,7 +52,7 @@ class MlExperimentsConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class EuCellarConfig(VaultConfigResolver):
+class EuCellarConfig(VaultAndEnvConfigResolver):
     # EU_CELLAR property
 
     @property
@@ -78,7 +78,7 @@ class EuCellarConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class EuTimeLineConfig(VaultConfigResolver):
+class EuTimeLineConfig(VaultAndEnvConfigResolver):
     # EU_TIMELINE property
 
     @property
@@ -95,7 +95,7 @@ class EuTimeLineConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class IrelandTimelineConfig(VaultConfigResolver):
+class IrelandTimelineConfig(VaultAndEnvConfigResolver):
     # IRELAND_TIMELINE property
 
     @property
@@ -112,7 +112,7 @@ class IrelandTimelineConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class PWDBConfig(VaultConfigResolver):
+class PWDBConfig(VaultAndEnvConfigResolver):
     # PWDB_COVID19 property
 
     @property
@@ -133,7 +133,7 @@ class PWDBConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class LegalInitiativesConfig(VaultConfigResolver):
+class LegalInitiativesConfig(VaultAndEnvConfigResolver):
     # LEGAL_INITIATIVES property
 
     @property
@@ -150,7 +150,7 @@ class LegalInitiativesConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class TreatiesConfig(VaultConfigResolver):
+class TreatiesConfig(VaultAndEnvConfigResolver):
     # TREATIES property
     @property
     def TREATIES_BUCKET_NAME(self) -> str:
@@ -170,21 +170,21 @@ class TreatiesConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class TikaConfig(VaultConfigResolver):
+class TikaConfig(VaultAndEnvConfigResolver):
     # TIKA property
     @property
     def APACHE_TIKA_URL(self) -> str:
         return self.config_resolve()
 
 
-class SplashConfig(VaultConfigResolver):
+class SplashConfig(VaultAndEnvConfigResolver):
     # SPLASH property
     @property
     def SPLASH_URL(self) -> str:
         return self.config_resolve()
 
 
-class ModelsConfig(VaultConfigResolver):
+class ModelsConfig(VaultAndEnvConfigResolver):
     # Models property
     @property
     def LAW2VEC_MODEL_PATH(self) -> str:
@@ -195,7 +195,7 @@ class ModelsConfig(VaultConfigResolver):
         return self.config_resolve()
 
 
-class ElasticSearchConfig(VaultConfigResolver):
+class ElasticSearchConfig(VaultAndEnvConfigResolver):
     # ELASTICSEARCH property
     @property
     def ELASTICSEARCH_PROTOCOL(self) -> str:
