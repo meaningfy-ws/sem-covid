@@ -29,7 +29,6 @@ CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
-CONTENT_LANGUAGE = "Tika detected language"
 
 EURLEX_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
@@ -555,12 +554,6 @@ def extract_content_with_tika(json_file_name):
 
                             if 'content' in parse_result:
                                 item[CONTENT_KEY].append(parse_result['content'])
-                                item[CONTENT_LANGUAGE] = (
-                                        parse_result["metadata"].get("Content-Language")
-                                        or
-                                        parse_result["metadata"].get("content-language")
-                                        or
-                                        parse_result["metadata"].get("language"))
                                 counter['success'] += 1
 
                                 valid_sources += 1
