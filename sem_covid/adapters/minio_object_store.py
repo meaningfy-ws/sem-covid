@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# minio_object_storage.py
+# minio_object_store.py
 # Date:  02/03/2021
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
@@ -10,18 +10,17 @@ import logging
 
 from minio import Minio
 from minio.deleteobjects import DeleteObject
-from sem_covid import config
-from sem_covid.adapters.abstract_storage import ObjectStorageABC
+from sem_covid.adapters.abstract_store import ObjectStoreABC
 
 logger = logging.getLogger(__name__)
 
 
-class MinioObjectStorage(ObjectStorageABC):
+class MinioObjectStore(ObjectStoreABC):
 
     def __init__(self, minio_bucket: str,
-                 minio_url: str = config.MINIO_URL,
-                 minio_access_key: str = config.MINIO_ACCESS_KEY,
-                 minio_secret_key: str = config.MINIO_SECRET_KEY):
+                 minio_url: str,
+                 minio_access_key: str,
+                 minio_secret_key: str):
         self.minio_url = minio_url
         self.minio_access_key = minio_access_key
         self.minio_secret_key = minio_secret_key
@@ -39,7 +38,7 @@ class MinioObjectStorage(ObjectStorageABC):
             self.minio_client.make_bucket(self.minio_bucket)
         logger.info('...done.')
 
-    def clear_storage(self, object_name_prefix=None):
+    def clear_storage(self, object_name_prefix: str = None):
         logger.info('Clearing the ' + self.minio_bucket + ' bucket...')
         objects = self.minio_client.list_objects(self.minio_bucket, prefix=object_name_prefix)
         objects_to_delete = [DeleteObject(x.object_name) for x in objects]

@@ -1,10 +1,10 @@
 import hvac
 import json
 
-from sem_covid.adapters.abstract_storage import SecretsStorageABC
+from sem_covid.adapters.abstract_store import SecretsStoreABC
 
 
-class VaultSecretsStorage(SecretsStorageABC):
+class VaultSecretsStore(SecretsStoreABC):
 
     def __init__(self,
                  vault_addr: str,

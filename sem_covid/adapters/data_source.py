@@ -19,8 +19,7 @@ from typing import Any, Union
 
 import pandas as pd
 
-from sem_covid.adapters.abstract_storage import IndexStorageABC, ObjectStorageABC
-from sem_covid.adapters.minio_object_storage import MinioObjectStorage
+from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC
 
 logger = logging.getLogger(__name__)
 
@@ -99,10 +98,10 @@ class BinaryDataSource(BaseDataSource):
     """
         A binary Minio/S3 datasource proxy with local caching
     """
-    _object_storage: ObjectStorageABC
+    _object_storage: ObjectStoreABC
     _object_path: str
 
-    def __init__(self, object_path: str, object_storage: ObjectStorageABC, enable_caching: bool = True):
+    def __init__(self, object_path: str, object_storage: ObjectStoreABC, enable_caching: bool = True):
         super().__init__(enable_caching)
         self._object_path = object_path
         self._object_storage = object_storage
@@ -136,21 +135,21 @@ class IndexTabularDataSource(TabularDataSource):
     """
         A datasource proxy returning Pandas Dataframe from elasticsearch indexes with local caching
     """
-    _index_storage: IndexStorageABC
+    _index_store: IndexStoreABC
 
-    def __init__(self, index_name: str, index_storage: IndexStorageABC, enable_caching: bool = True):
+    def __init__(self, index_name: str, index_store: IndexStoreABC, enable_caching: bool = True):
         super().__init__(enable_caching)
         self._object_name = index_name
-        self._index_storage = index_storage
+        self._index_store = index_store
 
     def _fetch(self) -> pd.DataFrame:
-        return self._index_storage.get_dataframe(index_name=self._object_name)
+        return self._index_store.get_dataframe(index_name=self._object_name)
 
     def dump_local(self, local_path: pathlib.Path):
         file_name = self._object_name + ".json"
-        self._index_storage.dump(self._object_name, file_name, local_path=local_path)
+        self._index_store.dump(self._object_name, file_name, local_path=local_path)
 
-    def dump_remote(self, remote_storage: MinioObjectStorage):
+    def dump_remote(self, remote_store: ObjectStoreABC):
         file_name = self._object_name + ".json"
-        self._index_storage.dump(self._object_name, file_name, remote_storage=remote_storage)
+        self._index_store.dump(self._object_name, file_name, remote_store=remote_store)
 

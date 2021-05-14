@@ -8,7 +8,7 @@ from py_singleton import singleton
 import pandas as pd
 
 from string import Template
-from sem_covid.adapters.abstract_storage import TripleStorageABC
+from sem_covid.adapters.abstract_store import TripleStoreABC
 
 DEFAULT_ENCODING = 'utf-8'
 
@@ -37,13 +37,13 @@ class SPARQLClientPool(object):
 SPARQLClientPool.instance()
 
 
-class SPARQLTripleStorage(TripleStorageABC):
+class SPARQLTripleStore(TripleStoreABC):
 
     def __init__(self, endpoint_url: str):
         self.endpoint = SPARQLClientPool.create_or_reuse_connection(endpoint_url)
 
     def with_query(self, sparql_query: str, substitution_variables: dict = None,
-                   sparql_prefixes: str = "") -> TripleStorageABC:
+                   sparql_prefixes: str = "") -> TripleStoreABC:
         """
             Set the query text and return the reference to self for chaining.
         :return:
@@ -58,7 +58,7 @@ class SPARQLTripleStorage(TripleStorageABC):
         return self
 
     def with_query_from_file(self, sparql_query_file_path: str, substitution_variables: dict = None,
-                             prefixes: str = "") -> TripleStorageABC:
+                             prefixes: str = "") -> TripleStoreABC:
         """
             Set the query text and return the reference to self for chaining.
         :return:

@@ -10,25 +10,19 @@
 """
 from sem_covid import config
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
-from sem_covid.services.storage_registry import StorageRegistry
+from sem_covid.services.store_registry import StoreRegistry
 
 
 class Dataset(object):
     """
         Registry of dataset sources
     """
-    PWDB = IndexTabularDataSource(config.PWDB_ELASTIC_SEARCH_INDEX_NAME,
-                                  StorageRegistry.es_index_storage()
-                                  )
-    EU_CELLAR = IndexTabularDataSource(config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
-                                       StorageRegistry.es_index_storage()
-                                       )
+    PWDB = IndexTabularDataSource(config.PWDB_ELASTIC_SEARCH_INDEX_NAME, StoreRegistry.es_index_store())
+    EU_CELLAR = IndexTabularDataSource(config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME, StoreRegistry.es_index_store())
     EU_ACTION_TIMELINE = IndexTabularDataSource(config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
-                                                StorageRegistry.es_index_storage()
-                                                )
+                                                StoreRegistry.es_index_store())
     IRELAND_ACTION_TIMELINE = IndexTabularDataSource(config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
-                                                     StorageRegistry.es_index_storage()
-                                                     )
+                                                     StoreRegistry.es_index_store())
 
 
 class LanguageModel(object):
@@ -36,8 +30,8 @@ class LanguageModel(object):
         Registry of language model data sources
     """
     LAW2VEC = BinaryDataSource(config.LAW2VEC_MODEL_PATH,
-                               StorageRegistry.minio_object_storage(config.LANGUAGE_MODEL_BUCKET_NAME)
+                               StoreRegistry.minio_object_store(config.LANGUAGE_MODEL_BUCKET_NAME)
                                )
     JRC2VEC = BinaryDataSource(config.JRC2VEC_MODEL_PATH,
-                               StorageRegistry.minio_object_storage(config.LANGUAGE_MODEL_BUCKET_NAME)
+                               StoreRegistry.minio_object_store(config.LANGUAGE_MODEL_BUCKET_NAME)
                                )

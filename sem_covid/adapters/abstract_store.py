@@ -3,10 +3,10 @@ import pandas as pd
 import pathlib
 
 
-class ObjectStorageABC(ABC):
+class ObjectStoreABC(ABC):
 
     @abstractmethod
-    def clear_storage(self, object_name_prefix=None):
+    def clear_storage(self, object_name_prefix: str = None):
         raise NotImplementedError
 
     @abstractmethod
@@ -22,17 +22,17 @@ class ObjectStorageABC(ABC):
         raise NotImplementedError
 
 
-class SecretsStorageABC(ABC):
+class SecretsStoreABC(ABC):
 
     @abstractmethod
     def get_secrets(self, path: str) -> dict:
         raise NotImplementedError
 
 
-class IndexStorageABC(ABC):
+class IndexStoreABC(ABC):
 
     @abstractmethod
-    def index(self, index_name, document_id, document_body):
+    def index(self, index_name: str, document_id, document_body):
         raise NotImplementedError
 
     @abstractmethod
@@ -53,11 +53,11 @@ class IndexStorageABC(ABC):
 
     @abstractmethod
     def dump(self, index_name: str, file_name: str, local_path: pathlib.Path = None,
-             remote_storage: ObjectStorageABC = None):
+             remote_store: ObjectStoreABC = None):
         raise NotImplementedError
 
 
-class FeatureStorageABC(ABC):
+class FeatureStoreABC(ABC):
 
     @abstractmethod
     def get_features(self, features_name: str) -> pd.DataFrame:
@@ -68,16 +68,16 @@ class FeatureStorageABC(ABC):
         raise NotImplementedError
 
 
-class TripleStorageABC(ABC):
+class TripleStoreABC(ABC):
 
     @abstractmethod
     def with_query(self, sparql_query: str, substitution_variables: dict = None,
-                   sparql_prefixes: str = "") -> 'TripleStorageABC':
+                   sparql_prefixes: str = "") -> 'TripleStoreABC':
         raise NotImplementedError
 
     @abstractmethod
     def with_query_from_file(self, sparql_query_file_path: str, substitution_variables: dict = None,
-                             prefixes: str = "") -> 'TripleStorageABC':
+                             prefixes: str = "") -> 'TripleStoreABC':
         raise NotImplementedError
 
     @abstractmethod

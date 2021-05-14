@@ -14,9 +14,9 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_index_storage import ESIndexStorage
-from sem_covid.adapters.minio_object_storage import MinioObjectStorage
+from sem_covid.adapters.abstract_store import ObjectStoreABC
 from sem_covid.services.sc_wrangling import json_transformer
+from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
@@ -435,16 +435,14 @@ def make_request(query):
 
 
 def clear_bucket():
-    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     minio.clear_storage(object_name_prefix=None)
     minio.clear_storage(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.clear_storage(object_name_prefix=TIKA_FILE_PREFIX)
 
 
 def get_single_item(query, json_file_name):
-    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     response = make_request(query)['results']['bindings']
     eurlex_json_dataset = json_transformer.transform_eurlex(response)
     uploaded_bytes = minio.put_object(json_file_name, json.dumps(eurlex_json_dataset).encode('utf-8'))
@@ -453,12 +451,12 @@ def get_single_item(query, json_file_name):
         uploaded_bytes) + ' bytes to bucket [' + config.EU_CELLAR_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
-def download_file(source: dict, location_details: str, file_name: str, minio: MinioObjectStorage):
+def download_file(source: dict, location_details: str, file_name: str, object_store: ObjectStoreABC):
     try:
         url = location_details if location_details.startswith('http') \
             else 'http://' + location_details
         request = requests.get(url, allow_redirects=True, timeout=30)
-        minio.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
+        object_store.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
         source[CONTENT_PATH_KEY].append(file_name)
         return True
 
@@ -470,9 +468,7 @@ def download_file(source: dict, location_details: str, file_name: str, minio: Mi
 def download_dataset_items(json_file_name):
     logger.info(f'Enriched fragments will be saved locally to the bucket {config.EU_CELLAR_BUCKET_NAME}')
 
-    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
-
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
     items_count = len(json_content)
     logger.info(f'Found {items_count} EURLex COVID19 items.')
@@ -516,8 +512,7 @@ def download_dataset_items(json_file_name):
 def extract_content_with_tika(json_file_name):
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {json_file_name}')
-    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name))
     eurlex_items_count = len(json_content)
 
@@ -573,17 +568,14 @@ def extract_content_with_tika(json_file_name):
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESIndexStorage(config.ELASTICSEARCH_HOST_NAME,
-                                config.ELASTICSEARCH_PORT,
-                                config.ELASTICSEARCH_USERNAME,
-                                config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
 
     logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioObjectStorage(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
+
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:

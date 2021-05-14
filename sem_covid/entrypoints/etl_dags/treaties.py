@@ -21,14 +21,13 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_index_storage import ESIndexStorage
-from sem_covid.adapters.minio_object_storage import MinioObjectStorage
-
+from sem_covid.adapters.abstract_store import ObjectStoreABC
+from sem_covid.services.store_registry import StoreRegistry
 
 VERSION = '0.9.0'
 DATASET_NAME = "treaties"
 DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
+DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -46,8 +45,7 @@ def make_request(query):
 
 def get_treaty_items():
     logger.info(f'Start retrieving works of treaties..')
-    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     minio.clear_storage(object_name_prefix=None)
     minio.clear_storage(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.clear_storage(object_name_prefix=TIKA_FILE_PREFIX)
@@ -151,12 +149,12 @@ def get_treaty_items():
         uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
-def download_file(source: dict, location_details: dict, file_name: str, minio: MinioObjectStorage):
+def download_file(source: dict, location_details: dict, file_name: str, object_store: ObjectStoreABC):
     try:
         url = location_details['value'] if location_details['value'].startswith('http') \
             else 'http://' + location_details['value']
         request = requests.get(url, allow_redirects=True, timeout=30)
-        minio.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
+        object_store.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
         source[CONTENT_PATH_KEY] = file_name
         return True
 
@@ -166,8 +164,7 @@ def download_file(source: dict, location_details: dict, file_name: str, minio: M
 
 
 def download_treaties_items():
-    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
     logger.info(dumps(treaties_json)[:100])
     treaties_json = treaties_json['results']['bindings']
@@ -210,8 +207,7 @@ def download_treaties_items():
 
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     treaties_json = loads(minio.get_object(config.TREATIES_JSON))['results']['bindings']
     treaties_items_count = len(treaties_json)
 
@@ -267,24 +263,22 @@ def extract_document_content_with_tika():
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESIndexStorage(config.ELASTICSEARCH_HOST_NAME,
-                                config.ELASTICSEARCH_PORT,
-                                config.ELASTICSEARCH_USERNAME,
-                                config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
 
     logger.info(
         f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioObjectStorage(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
         try:
-            logger.info(f'Sending to ElasticSearch ( {config.TREATIES_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.TREATIES_ELASTIC_SEARCH_INDEX_NAME, document_id=obj.object_name.split("/")[1],
+            logger.info(
+                f'Sending to ElasticSearch ( {config.TREATIES_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
+            es_adapter.index(index_name=config.TREATIES_ELASTIC_SEARCH_INDEX_NAME,
+                             document_id=obj.object_name.split("/")[1],
                              document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
@@ -309,7 +303,7 @@ dag = DAG(DAG_NAME, default_args=default_args,
           max_active_runs=1)
 
 download_task = PythonOperator(task_id='Treaty_Items_task_version_' + VERSION,
-                                               python_callable=get_treaty_items, retries=1, dag=dag)
+                               python_callable=get_treaty_items, retries=1, dag=dag)
 
 download_documents_task = PythonOperator(
     task_id=f'get_treaties_documents_task_version_{VERSION}',

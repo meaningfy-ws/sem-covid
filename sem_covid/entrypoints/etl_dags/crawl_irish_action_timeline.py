@@ -20,9 +20,8 @@ from tika import parser
 
 import sem_covid.services.crawlers.scrapy_crawlers.settings as crawler_config
 from sem_covid import config
-from sem_covid.adapters.es_index_storage import ESIndexStorage
-from sem_covid.adapters.minio_object_storage import MinioObjectStorage
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
+from sem_covid.services.store_registry import StoreRegistry
 
 VERSION = '0.1.4'
 DATASET_NAME = "ireland_timeline"
@@ -45,8 +44,7 @@ def extract_settings_from_module(module):
 
 def start_crawler():
     logger.info('start crawler')
-    minio = MinioObjectStorage(config.IRELAND_TIMELINE_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.IRELAND_TIMELINE_BUCKET_NAME)
     minio.clear_storage(object_name_prefix=None)
     settings = extract_settings_from_module(crawler_config)
     settings['config.SPLASH_URL'] = config.SPLASH_URL
@@ -58,8 +56,7 @@ def start_crawler():
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.IRELAND_TIMELINE_JSON}')
-    minio = MinioObjectStorage(config.IRELAND_TIMELINE_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.IRELAND_TIMELINE_BUCKET_NAME)
     json_content = loads(minio.get_object(config.IRELAND_TIMELINE_JSON))
     irish_action_timeline_items_count = len(json_content)
 
@@ -91,16 +88,13 @@ def extract_document_content_with_tika():
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESIndexStorage(config.ELASTICSEARCH_HOST_NAME,
-                                config.ELASTICSEARCH_PORT,
-                                config.ELASTICSEARCH_USERNAME,
-                                config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
 
     logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioObjectStorage(config.IRELAND_TIMELINE_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                               config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.IRELAND_TIMELINE_BUCKET_NAME)
+
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:

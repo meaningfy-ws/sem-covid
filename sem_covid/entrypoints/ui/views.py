@@ -14,10 +14,9 @@ from math import ceil
 from flask import render_template, request
 
 from sem_covid import FlaskConfig
-from sem_covid.adapters.es_index_storage import ESIndexStorage
-from law_fetcher.config import config
 from sem_covid.entrypoints.ui import app
 from sem_covid.entrypoints.ui.forms import SearchForm
+from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
@@ -31,8 +30,7 @@ def index():
     topic = request.args.get('topic', None)
     document_category = request.args.get('document_category', None)
 
-    es_adapter = ESIndexStorage(host_name=config.ELASTICSEARCH_HOST_NAME, port=config.ELASTICSEARCH_PORT,
-                                user=config.ELASTICSEARCH_USERNAME, password=config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
     form = SearchForm()
 
     query = {
@@ -88,8 +86,7 @@ def index():
 
 @app.route('/legal-initiatives/<id>', methods=['GET'])
 def legal_initiatives_detail(id):
-    es_adapter = ESIndexStorage(host_name=config.ELASTICSEARCH_HOST_NAME, port=config.ELASTICSEARCH_PORT,
-                                user=config.ELASTICSEARCH_USERNAME, password=config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
     document = es_adapter.get_document('legal-initiatives-index', id)
 
     return render_template('legal_initiatives/detail.html', title='Legal Initiatives Document',

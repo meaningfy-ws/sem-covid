@@ -1,7 +1,7 @@
-from sem_covid.adapters.abstract_storage import *
+from sem_covid.adapters.abstract_store import *
 
 
-class FakeObjectStorage(ObjectStorageABC):
+class FakeObjectStore(ObjectStoreABC):
 
     def clear_storage(self, object_name_prefix=None):
         pass
@@ -16,12 +16,12 @@ class FakeObjectStorage(ObjectStorageABC):
         pass
 
 
-class FakeSecretsStorage(SecretsStorageABC):
+class FakeSecretsStore(SecretsStoreABC):
     def get_secrets(self, path: str) -> dict:
         pass
 
 
-class FakeIndexStorage(IndexStorageABC):
+class FakeIndexStore(IndexStoreABC):
     def index(self, index_name, document_id, document_body):
         pass
 
@@ -38,11 +38,11 @@ class FakeIndexStorage(IndexStorageABC):
         pass
 
     def dump(self, index_name: str, file_name: str, local_path: pathlib.Path = None,
-             remote_storage: ObjectStorageABC = None):
+             remote_store: ObjectStoreABC = None):
         pass
 
 
-class FakeFeatureStorage(FeatureStorageABC):
+class FakeFeatureStore(FeatureStoreABC):
     def get_features(self, features_name: str) -> pd.DataFrame:
         pass
 
@@ -50,13 +50,13 @@ class FakeFeatureStorage(FeatureStorageABC):
         pass
 
 
-class FakeTripleStorage(TripleStorageABC):
+class FakeTripleStore(TripleStoreABC):
     def with_query(self, sparql_query: str, substitution_variables: dict = None,
-                   sparql_prefixes: str = "") -> 'TripleStorageABC':
+                   sparql_prefixes: str = "") -> 'TripleStoreABC':
         pass
 
     def with_query_from_file(self, sparql_query_file_path: str, substitution_variables: dict = None,
-                             prefixes: str = "") -> 'TripleStorageABC':
+                             prefixes: str = "") -> 'TripleStoreABC':
         pass
 
     def get_dataframe(self) -> pd.DataFrame:

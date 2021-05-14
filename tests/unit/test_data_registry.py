@@ -6,7 +6,6 @@
 # Email: costezki.eugen@gmail.com 
 
 """ """
-from sem_covid.adapters.es_index_storage import ESIndexStorage
 from tests.unit.conftest import FakeBinaryDataSource, FakeTabularDataSource
 
 
