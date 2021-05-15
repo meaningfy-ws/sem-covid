@@ -67,6 +67,7 @@ class ESIndexStore(IndexStoreABC):
         if remote_store is not None:
             remote_store.put_object(file_name, df.to_json(orient='records'))
 
+    # TODO : Rephrase this docstring, into a plain English sentence
     def to_dataframe(self, **kwargs) -> pd.DataFrame:
         """
             scroll datas from es, and convert to dataframe, the index of dataframe is from es index,
