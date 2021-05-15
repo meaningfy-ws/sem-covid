@@ -58,5 +58,5 @@ class MinioObjectStore(ObjectStoreABC):
         self.minio_client.put_object(self.minio_bucket, object_name, raw_content, raw_content_size)
         return raw_content_size
 
-    def list_objects(self, object_prefix: str):
-        return self.minio_client.list_objects(self.minio_bucket, prefix=object_prefix)
+    def list_objects(self, object_name_prefix: str):
+        return self.minio_client.list_objects(self.minio_bucket, prefix=object_name_prefix)

@@ -18,7 +18,7 @@ class ObjectStoreABC(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def list_objects(self, object_prefix: str):
+    def list_objects(self, object_name_prefix: str):
         raise NotImplementedError
 
 

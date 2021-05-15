@@ -53,10 +53,6 @@ class ESIndexStore(IndexStoreABC):
     def dump(self, index_name: str, file_name: str, local_path: pathlib.Path = None,
              remote_store: ObjectStoreABC = None):
         """
-            TODO: reuse any of these methods
-                1. https://gist.github.com/spikeekips/6018427
-                2. https://github.com/neilz/es_dump/blob/master/es_dump.py
-                3. use bulk and scan methods described here: https://elasticsearch-py.readthedocs.io/en/master/helpers.html#bulk-helpers
         :param index_name:
         :param file_name:
         :param local_path:
