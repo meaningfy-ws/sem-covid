@@ -64,7 +64,6 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
     def data_extraction(self, *args, **kwargs):
         pass
 
-
     def data_validation(self, *args, **kwargs):
         # TODO: implement me by validating the returned index structure for a start,
         #  and then checking assertions discovered from EDA exercise.
@@ -93,7 +92,6 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
                      labels that will be used into train-test part.
         """
         feature_selector.reduce_array_column(pwdb_dataframe, "target_groups")
-        # TODO: train test split with all cols
         pwdb_descriptive_data = pwdb_dataframe['title'].map(str) + ' ' + \
             pwdb_dataframe['background_info_description'].map(str) + ' ' + \
             pwdb_dataframe['content_of_measure_description'].map(str) + ' ' + \
@@ -121,13 +119,13 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
         """
 
         refactored_pwdb_df = pwdb_dataframe[target_group_column_name]
-        pwdb_dataframe['Businesses'] = refactored_pwdb_df.str.contains('|'.join(BUSINESSES))
-        pwdb_dataframe['Citizens'] = refactored_pwdb_df.str.contains('|'.join(CITIZENS))
-        pwdb_dataframe['Workers'] = refactored_pwdb_df.str.contains('|'.join(WORKERS))
-        refactored_pwdb_df = pd.get_dummies(pwdb_dataframe, columns=[target_group_column_name])
-        refactored_pwdb_df.replace({True: 1, False: 0}, inplace=True)
+        pwdb_dataframe['businesses'] = refactored_pwdb_df.str.contains('|'.join(BUSINESSES))
+        pwdb_dataframe['citizens'] = refactored_pwdb_df.str.contains('|'.join(CITIZENS))
+        pwdb_dataframe['workers'] = refactored_pwdb_df.str.contains('|'.join(WORKERS))
+        # refactored_pwdb_df = pd.get_dummies(pwdb_dataframe, columns=[target_group_column_name])
+        pwdb_dataframe.replace({True: 1, False: 0}, inplace=True)
 
-        return refactored_pwdb_df
+        return pwdb_dataframe
 
     @staticmethod
     def train_pwdb_data(pwdb_dataframe: pd.DataFrame) -> dict:
@@ -138,9 +136,10 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
 
             :return: As a result, we will have a dictionary with split data.
         """
-        pwdb_common_text = pwdb_dataframe['descriptive_data']
+        pwdb_common_text = pwdb_dataframe.drop(['category', 'subcategory', 'type_of_measure',
+                                                'businesses', 'citizens', 'workers'], axis=1)
         pwdb_classifiers = pwdb_dataframe[['category', 'subcategory', 'type_of_measure',
-                                           'Businesses', 'Citizens', 'Workers']]
+                                           'businesses', 'citizens', 'workers']]
         x_train, x_test, y_train, y_test = model_selection.train_test_split(pwdb_common_text, pwdb_classifiers,
                                                                             random_state=42, test_size=0.3,
                                                                             shuffle=True)

@@ -18,13 +18,22 @@ for a new dataset with document mappings, indicating possible correspondence bet
 to COVID-19 crisis.
 
 ## Datasets
-- *EU Cellar COVID-19 dataset (ds_eu_cellar)* - The Cellar is the semantic repository of the Publications Offic
-- *EU action timeline dataset (ds_eu_timeline)* - The European Commission (EC) is coordinating a common 
-  European response  to the coronavirus outbreak.
-- *EU action timeline dataset (ds_eu_timeline)* - Ireland was selected as a tryout member state country for 
-  which a COVID-19 timeline shall be created similar to the EU action timeline.
 - *Policy watch database (ds_pwdb)* - A suitable set of summarised descriptions of 
   what a COVID-19 measure looks like.
+  - [Readme](docs/data-catalog/ds_pwdb.md)
+  - [Download](docs/data-catalog/ds_pwdb.zip)
+- *EU Cellar COVID-19 dataset (ds_eu_cellar)* - The Cellar is the semantic repository of the Publications Offic
+  - [Readme](docs/data-catalog/ds_eu_cellar.md)
+  - [Download](docs/data-catalog/ds_eu_cellar.zip)
+- *EU action timeline dataset (ds_eu_timeline)* - The European Commission (EC) is coordinating a common 
+  European response  to the coronavirus outbreak.
+  - [Readme](docs/data-catalog/ds_eu_timeline.md)
+  - [Download](docs/data-catalog/ds_eu_timeline.zip)  
+- *Ireland action timeline dataset (ds_ireland_timeline)* - Ireland was selected as a tryout member state country for 
+  which a COVID-19 timeline shall be created similar to the EU action timeline.
+  - [Readme](docs/data-catalog/ds_ireland_tinmeline.md)
+  - [Download](docs/data-catalog/ds_ireland_tinmeline.zip)
+
   
 ## Experiment's workflow
 When the dataset reaches a significant extent, it shall be cleaned up and prepared for use in a series of 
