@@ -1,6 +1,5 @@
 from sem_covid import config
 
-
 def test_elastic_search_config():
     assert config.ELASTICSEARCH_PORT is not None
     assert config.ELASTICSEARCH_PASSWORD is not None
@@ -57,5 +56,3 @@ def test_treaties_config():
 def test_vault_config():
     assert config.VAULT_TOKEN is not None
     assert config.VAULT_ADDR is not None
-
-
