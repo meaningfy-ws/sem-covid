@@ -47,7 +47,7 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     assert "content_of_measure_description" in resulting_df
     assert "use_of_measure_description" in resulting_df
     assert "involvement_of_social_partners_description" in resulting_df
-    assert "|" in resulting_df['target_groups'][0]
+    assert ", " in resulting_df['target_groups'][0]
     assert "descriptive_data" in resulting_df
     assert "category" in resulting_df
     assert "subcategory" in resulting_df

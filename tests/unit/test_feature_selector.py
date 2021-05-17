@@ -11,7 +11,7 @@ def test_reduce_array_column_rows_expectation():
 
     # test given with expected result
     actual_rows = reduce_array_column(df, 'col1')
-    expected_rows = pd.DataFrame({'col1': ['hello|world|Ave|Maria']})
+    expected_rows = pd.DataFrame({'col1': ['hello, world, Ave, Maria']})
 
     assert len(actual_rows) == len(expected_rows)
     assert all([a == b for a, b in zip(actual_rows, expected_rows)])
