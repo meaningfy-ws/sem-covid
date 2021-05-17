@@ -29,7 +29,7 @@ CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
-CONTENT_LANGUAGE = "Tika detected language"
+CONTENT_LANGUAGE = "language"
 
 EURLEX_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
