@@ -1,7 +1,10 @@
+from pytest_mock import mocker
+
+from sem_covid.adapters.minio_object_store import MinioObjectStore
 from tests.unit.test_store.fake_storage import FakeObjectStore
 
 
-def test_object_store():
+def test_fake_object_store():
     obj_store = FakeObjectStore()
     assert obj_store is not None
     object_content = "Hello Bob!"
@@ -26,3 +29,7 @@ def test_object_store():
     obj_store.clear_storage(object_name_prefix="B")
     objects = obj_store.list_objects(object_name_prefix="B")
     assert len(objects) == 0
+
+def test_minio_object_store():
+    minio_store = MinioObjectStore()
+    mocker.patch()
