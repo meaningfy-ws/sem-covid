@@ -20,11 +20,6 @@ Features:
 import logging
 from abc import ABC, abstractmethod
 
-from airflow import DAG
-from airflow.operators.python import PythonOperator
-
-from sem_covid.services import DEFAULTS_DAG_ARGS
-
 logger = logging.getLogger(__name__)
 
 
@@ -100,24 +95,3 @@ class BaseExperiment(ABC):
             Outcome: halt the pipeline if the model is not suitable for deployment in production, or not.
         :return:
         """
-
-    def create_dag(self, **dag_args):
-        """
-            Create a standard ML DAG for the current experiment.
-        :return:
-        """
-        updated_default_args_copy = {**DEFAULTS_DAG_ARGS.copy(), **dag_args.get('default_args', {})}
-        dag_args['default_args'] = updated_default_args_copy
-        dag_id = f"mlx_{self.__class__.__name__}_{self.version if self.version else '0.0.1'}"
-        print(dag_id)
-        dag = DAG(dag_id=dag_id, **dag_args)
-        with dag:
-            # instantiate a PythonOperator for each ml stage
-            stage_python_operators = [PythonOperator(task_id=f"{stage.__name__}_step",
-                                                     python_callable=stage,
-                                                     dag=dag)
-                                      for stage in self.ml_stages]
-            # iterate stages in successive pairs and connect them
-            for stage, successor_stage in zip(stage_python_operators, stage_python_operators[1:]):
-                stage >> successor_stage
-        return dag
