@@ -9,7 +9,7 @@ BUILD_PRINT = \e[1;34mSTEP: \e[0m
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
-	@ pip install -r requirements.txt
+	@ pip install -r requirements.txt --use-deprecated legacy-resolver
 	@ python -m spacy download en_core_web_sm
 
 #	TODO refactor
