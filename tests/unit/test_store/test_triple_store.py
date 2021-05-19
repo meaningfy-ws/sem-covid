@@ -1,4 +1,4 @@
-from sem_covid.adapters.abstract_store import TripleStoreABC
+
 from tests.unit.test_store.fake_storage import FakeTripleStore
 
 
