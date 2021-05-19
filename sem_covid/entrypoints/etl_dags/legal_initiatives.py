@@ -21,15 +21,14 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.adapters.abstract_store import ObjectStoreABC
 from sem_covid.services.sc_wrangling import json_transformer
-
+from sem_covid.services.store_registry import StoreRegistry
 
 VERSION = '0.1.1'
 DATASET_NAME = "legal_initiatives"
 DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE+'_'+DATASET_NAME+'_'+VERSION
+DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -48,11 +47,10 @@ def make_request(query):
 
 def get_legal_initiatives_items():
     logger.info('Start retrieving EURLex Covid 19 items')
-    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
-    minio.empty_bucket(object_name_prefix=None)
-    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
+    minio = StoreRegistry.minio_object_store(config.LEGAL_INITIATIVES_BUCKET_NAME)
+    minio.clear_storage(object_name_prefix=None)
+    minio.clear_storage(object_name_prefix=RESOURCE_FILE_PREFIX)
+    minio.clear_storage(object_name_prefix=TIKA_FILE_PREFIX)
 
     query = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
     PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
@@ -241,12 +239,12 @@ def get_legal_initiatives_items():
         uploaded_bytes) + ' bytes to bucket [' + config.LEGAL_INITIATIVES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
 
-def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
+def download_file(source: dict, location_details: str, file_name: str, object_storage: ObjectStoreABC):
     try:
         url = location_details if location_details.startswith('http') \
             else 'http://' + location_details
         request = requests.get(url, allow_redirects=True, timeout=30)
-        minio.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
+        object_storage.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
         source[CONTENT_PATH_KEY].append(file_name)
         return True
 
@@ -258,9 +256,7 @@ def download_file(source: dict, location_details: str, file_name: str, minio: Mi
 def download_items():
     logger.info(f'Enriched fragments will be saved locally to the bucket {config.LEGAL_INITIATIVES_BUCKET_NAME}')
 
-    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
-
+    minio = StoreRegistry.minio_object_store(config.LEGAL_INITIATIVES_BUCKET_NAME)
     json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
     legal_initiatives_items_count = len(json_items)
     logger.info(f'Found {legal_initiatives_items_count} EURLex COVID19 items.')
@@ -296,7 +292,7 @@ def download_items():
         else:
             logger.exception(f"No manifestation has been found for {item['title']}")
 
-    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
+    minio.put_object(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -304,8 +300,7 @@ def download_items():
 def extract_document_content_with_tika():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.LEGAL_INITIATIVES_JSON}')
-    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.LEGAL_INITIATIVES_BUCKET_NAME)
     json_items = loads(minio.get_object(config.LEGAL_INITIATIVES_JSON).decode('utf-8'))
     legal_initiatives_items_count = len(json_items)
 
@@ -353,32 +348,31 @@ def extract_document_content_with_tika():
         if valid_sources:
             manifestation = (item.get('manifs_html') or item.get('manifs_pdf'))[0]
             filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
-            minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
+            minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
+    minio.put_object(config.LEGAL_INITIATIVES_JSON, dumps(json_items))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
 def upload_processed_documents_to_elasticsearch():
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
 
     logger.info(
         f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.LEGAL_INITIATIVES_BUCKET_NAME)
+
     objects = minio.list_objects(TIKA_FILE_PREFIX)
     object_count = 0
     for obj in objects:
         try:
-            logger.info(f'Sending to ElasticSearch ( {config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME, document_id=obj.object_name.split("/")[1],
+            logger.info(
+                f'Sending to ElasticSearch ( {config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
+            es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME,
+                             document_id=obj.object_name.split("/")[1],
                              document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
             object_count += 1
         except Exception as ex:
