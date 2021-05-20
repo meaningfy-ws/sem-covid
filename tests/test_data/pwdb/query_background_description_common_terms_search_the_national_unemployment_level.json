@@ -1,0 +1,10 @@
+{
+  "query": {
+    "common": {
+      "background_info_description": {
+        "query": "the national unemployment level",
+        "cutoff_frequency": 0.001
+      }
+    }
+  }
+}

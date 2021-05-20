@@ -1,0 +1,182 @@
+---------------------------???---------------------------------------------------
+
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+select distinct ?eu_act_cellar_uri ?eu_act_public_uri ?treaty_name ?celex_id
+where 
+{
+  VALUES (?eu_act_type ?celex_id) { (cdm:treaty undef )} #
+  ?eu_act_cellar_uri a ?eu_act_type.
+  ?eu_act_cellar_uri cdm:resource_legal_id_celex ?celex_id .
+  ?eu_act_cellar_uri owl:sameAs ?eu_act_public_uri .
+  ?eu_act_cellar_uri cdm:treaty_name ?treaty_name .
+  ?eu_act_cellar_uri cdm:resource_legal_based_on_concept_treaty ?treaty_concept . 
+  filter (?celex_id = "12016E"^^<http://www.w3.org/2001/XMLSchema#string>)
+}
+order by ?eu_act_public_uri ?eu_act_cellar_uri
+limit 50
+
+--------------------------get treaty names---------------------------------------------
+
+select *
+from <http://publications.europa.eu/resource/authority/treaty>
+{
+  ?c skos:inScheme <http://publications.europa.eu/resource/authority/treaty> .
+  ?c skos:prefLabel ?treaty_name .
+  filter (lang(?treaty_name) = "en")
+} limit 100
+
+---------------------------get properties----------------------------------------------
+
+select distinct ?p
+{
+  ?same_as_cellar owl:sameAs <http://publications.europa.eu/resource/celex/11997E038>  .
+  ?same_as_cellar ?p [].
+} limit 100
+
+
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+select distinct *
+where 
+{
+  VALUES ?celex_id { "11994N"^^<http://www.w3.org/2001/XMLSchema#string> } 
+  ?a ?b ?celex_id.
+} limit 50
+
+139159
+
+--------------------------get all treaties-----------------
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+select *
+where 
+{
+  ?work a cdm:treaty;
+          cdm:work_id_document ?doc_id;
+          cdm:treaty_name ?treaty_name.
+  filter not exists{?work a cdm:fragment_resource_legal}.
+}
+
+
+--------------------------treaties data-----------------
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+select distint ?a
+where 
+{
+  ?work a cdm:treaty.
+  ?work ?a ?b.
+  ?work a ?c.
+          # cdm:work_id_document ?doc_id.
+  #filter not exists{?work a cdm:fragment_resource_legal}.
+}
+
+
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+prefix dct: <http://purl.org/dc/terms/>
+select distinct ?a ?b
+where 
+{
+  # ?work a cdm:treaty.
+  ?a ?b <http://publications.europa.eu/resource/authority/treaty-classification/FOUND>.
+  # ?a dct:type
+# ?work ?x ?a.
+# ?work owl:sameAs ?b.
+  filter not exists{?work a cdm:fragment_resource_legal}.
+} limit 100
+
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+prefix dct: <http://purl.org/dc/terms/>
+select distinct ?a ?b
+where 
+{
+  # ?work a cdm:treaty.
+  ?a <http://purl.org/dc/terms/type> <http://publications.europa.eu/resource/authority/treaty-classification/FOUND>.
+  ?a a ?b.
+  ?a ?c [].
+} limit 100
+
+--------------------------work (treaty) selector-------------
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+prefix lang: <http://publications.europa.eu/resource/authority/language/>
+
+select distinct ?work ?doc_id ?title ?comment ?eurovocConcept ?subjectMatter ?directoryCode ?dateCreated ?dateDocument ?legalDateSignature ?legalDateEntryIntoForce ?legalIdCelex ?legalEli  group_concat(?createdBy; separator=", ") as ?authors 
+{
+  ?work a cdm:treaty;
+          cdm:work_id_document ?doc_id.
+  optional {
+    ?work cdm:work_has_resource-type <http://publications.europa.eu/resource/authority/resource-type/TREATY>
+  }
+  optional {
+    ?work cdm:resource_legal_in-force "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+  }
+  optional {
+      ?expression cdm:expression_belongs_to_work ?work. 
+      ?expression cdm:expression_title ?title.
+      ?expression cdm:expression_uses_language lang:ENG.
+  }
+  optional {
+    ?work cdm:resource_legal_comment_internal ?comment .
+  }
+  optional {
+    ?work cdm:work_is_about_concept_eurovoc ?eurovocConcept 
+  }
+  optional {
+    ?work cdm:resource_legal_is_about_subject-matter ?subjectMatter 
+  }
+  optional {
+    ?work cdm:resource_legal_is_about_concept_directory-code ?directoryCode 
+  }
+  optional {
+    ?work cdm:work_created_by_agent ?createdBy .
+  }
+  optional {
+    ?work cdm:work_date_creation ?dateCreated .
+  }
+  optional {
+    ?work cdm:work_date_document ?dateDocument .
+  }
+  optional {
+    ?work cdm:resource_legal_date_signature ?legalDateSignature .
+  }
+  optional {
+    ?work cdm:resource_legal_date_entry-into-force ?legalDateEntryIntoForce .
+  }
+  optional {
+    ?work cdm:resource_legal_id_celex ?legalIdCelex .
+  }
+  optional {
+    ?work cdm:resource_legal_eli ?legalEli .
+  }
+  filter not exists{?work a cdm:fragment_resource_legal}.
+  filter not exists {?work cdm:work_embargo [].}
+}
+
+http://publications.europa.eu/resource/cellar/9e8d52e1-2c70-11e6-b497-01aa75ed71a1
+http://publications.europa.eu/resource/cellar/d7e8d60b-87e2-4dd4-87fe-f8eed6c170f2
+http://publications.europa.eu/resource/cellar/bf882c81-4319-4800-b90e-a3e82abb0aff
+http://publications.europa.eu/resource/cellar/afe8bda9-0461-41a1-8f1e-bd31da7e234e
+http://publications.europa.eu/resource/cellar/2bf140bf-a3f8-4ab2-b506-fd71826e6da6
+
+
+# add expression_title to the query above 
+
+-------------------------get work document link--------
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+prefix cmr: <http://publications.europa.eu/ontology/cdm/cmr#>
+prefix lang: <http://publications.europa.eu/resource/authority/language/>
+select distinct ?work ?item
+{
+  values ?work { <http://publications.europa.eu/resource/cellar/9e8d52e1-2c70-11e6-b497-01aa75ed71a1> }
+
+  filter not exists{?work a cdm:fragment_resource_legal}.
+  filter not exists {?work cdm:work_embargo [].}
+
+  ?expression cdm:expression_belongs_to_work ?work.
+  ?expression cdm:expression_uses_language lang:ENG.
+  
+  ?manifestation cdm:manifestation_manifests_expression ?expression.
+
+  ?item cdm:item_belongs_to_manifestation ?manifestation.
+  
+  ?item cmr:manifestationMimeType "application/xhtml+xml".
+}
+
+# manifestation types: xhtml, pdfa1a, fmx4
