@@ -1,0 +1,13 @@
+{
+    "query": {
+        "bool": {
+            "filter": [
+                {
+                    "term": {
+                        "target_groups.keyword": "Disabled workers"
+                    }
+                }
+            ]
+        }
+    }
+}

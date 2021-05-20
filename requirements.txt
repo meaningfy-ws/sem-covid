@@ -1,0 +1,6 @@
+-r requirements/infra.txt
+-r requirements/test.txt
+-r requirements/ml.txt
+-r requirements/jupyter.txt
+-r requirements/flask.txt
+-r requirements/doc.txt

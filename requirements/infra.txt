@@ -1,0 +1,18 @@
+# Infra dependecies
+click==7.1.1
+SQLAlchemy<1.4
+elasticsearch
+minio
+mlflow
+sparqlwrapper
+es-pandas
+apache-airflow>=2
+scrapy
+scrapy-splash
+tika
+jq
+rdflib
+python-dotenv
+requests
+hvac
+hvac[parser]
