@@ -1,0 +1,16 @@
+# Infra dependecies
+elasticsearch
+minio
+mlflow
+sparqlwrapper
+es-pandas
+apache-airflow
+scrapy
+scrapy-splash
+tika
+jq
+rdflib
+python-dotenv
+requests
+hvac
+hvac[parser]

@@ -1,0 +1,10 @@
+{
+  "query": {
+    "common": {
+      "title": {
+        "query": "benefits for vulnerable families",
+        "cutoff_frequency": 0.001
+      }
+    }
+  }
+}

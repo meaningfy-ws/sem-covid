@@ -1,0 +1,194 @@
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT
+    ?work ?title
+
+    # properties specific to legal initiatives
+#    (group_concat(DISTINCT ?part_of_legal_event; separator="| ") as ?part_of_legal_events)
+    (group_concat(DISTINCT ?part_of_dossier; separator="| ") as ?part_of_dossiers)
+    (group_concat(DISTINCT ?work_sequence; separator="| ") as ?work_sequences)
+    (group_concat(DISTINCT ?related_to_work; separator="| ") as ?related_to_works)
+#    (group_concat(DISTINCT ?cites_work; separator="| ") as ?cites_works)
+#    (group_concat(DISTINCT ?date_dispatch; separator="| ") as ?dates_dispatch)
+#    (group_concat(DISTINCT ?based_on_concept_treaty; separator="| ") as ?based_on_concept_treatys)
+
+    # properties from the template
+    (group_concat(DISTINCT ?cdm_type; separator="| ") as ?cdm_types)
+    (group_concat(DISTINCT ?cdm_type_label; separator="| ") as ?cdm_type_labels)
+
+    (group_concat(DISTINCT ?resource_type; separator="| ") as ?resource_types)
+    (group_concat(DISTINCT ?resource_type_label; separator="| ") as ?resource_type_labels)
+
+    (group_concat(DISTINCT ?eurovoc_concept; separator="| ") as ?eurovoc_concepts)
+    (group_concat(DISTINCT ?eurovoc_concept_label; separator="| ") as ?eurovoc_concept_labels)
+
+    (group_concat(DISTINCT ?subject_matter; separator="| ") as ?subject_matters)
+    (group_concat(DISTINCT ?subject_matter_label; separator="| ") as ?subject_matter_labels)
+
+    (group_concat(DISTINCT ?directory_code; separator="| ") as ?directory_codes)
+    (group_concat(DISTINCT ?directory_code_label; separator="| ") as ?directory_codes_labels)
+
+    (group_concat(DISTINCT ?celex; separator="| ") as ?celex_numbers)
+    (group_concat(DISTINCT ?legal_eli; separator="| ") as ?legal_elis)
+    (group_concat(DISTINCT ?id_document; separator="| ") as ?id_documents)
+    (group_concat(DISTINCT ?same_as_uri; separator="| ") as ?same_as_uris)
+
+    (group_concat(DISTINCT ?author; separator="| ") as ?authors)
+    (group_concat(DISTINCT ?author_label; separator="| ") as ?author_labels)
+
+    (group_concat(DISTINCT ?full_oj; separator="| ") as ?full_ojs)
+    (group_concat(DISTINCT ?oj_sector; separator="| ") as ?oj_sectors)
+    (group_concat(DISTINCT ?internal_comment; separator="| ") as ?internal_comments)
+    (group_concat(DISTINCT ?in_force; separator="| ") as ?is_in_force)
+
+    (group_concat(DISTINCT ?date_document; separator="| ") as ?dates_document)
+    (group_concat(DISTINCT ?date_created; separator="| ") as ?dates_created)
+    (group_concat(DISTINCT ?legal_date_entry_into_force; separator="| ") as ?legal_dates_entry_into_force)
+    (group_concat(DISTINCT ?legal_date_signature; separator="| ") as ?legal_dates_signature)
+
+    (group_concat(DISTINCT ?manif_pdf; separator="| ") as ?manifs_pdf)
+    (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
+    (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
+    (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
+WHERE {
+    # selector criteria
+    VALUES ?expr_lang { lang:ENG}
+
+    ?work cdm:work_id_document ?idd .
+    FILTER (strStarts(str(?idd),"pi_com" ) )
+
+    # metadata - specific to legal initiatives
+
+#    OPTIONAL {
+#        ?work cdm:work_part_of_event_legal ?part_of_legal_event .
+#    }
+    OPTIONAL {
+        ?work cdm:work_part_of_dossier|^cdm:dossier_contains_work  ?part_of_dossier .
+    }
+    OPTIONAL {
+        ?work cdm:work_sequence ?work_sequence .
+    }
+    OPTIONAL {
+        ?work cdm:cdm:work_related_to_work ?related_to_work .
+    }
+#    OPTIONAL {
+#        ?work cdm:work_cites_work ?cites_work .
+#    }
+#    OPTIONAL {
+#        ?work cdm:resource_legal_date_dispatch ?date_dispatch .
+#    }
+#    OPTIONAL {
+#        ?work cdm:resource_legal_based_on_concept_treaty ?based_on_concept_treaty .
+#    }
+
+    # metadata from the template
+    # metadata - classification criteria
+    OPTIONAL {
+        ?work a ?cdm_type .
+        OPTIONAL {
+            ?cdm_type skos:prefLabel ?cdm_type_label .
+            FILTER (lang(?cdm_type_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:work_has_resource-type ?resource_type .
+        OPTIONAL {
+            ?resource_type skos:prefLabel ?resource_type_label .
+            FILTER (lang(?resource_type_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
+        OPTIONAL {
+            ?subject_matter skos:prefLabel ?subject_matter_label .
+            FILTER (lang(?subject_matter_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_is_about_concept_directory-code ?directory_code .
+        OPTIONAL {
+            ?directory_code skos:prefLabel ?directory_code_label .
+            FILTER (lang(?directory_code_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
+        OPTIONAL {
+            ?eurovoc_concept skos:prefLabel ?eurovoc_concept_label .
+            FILTER (lang(?eurovoc_concept_label)="en")
+        }
+    }
+
+    # metadata - descriptive criteria
+    OPTIONAL {
+        ?work cdm:work_created_by_agent ?author .
+        OPTIONAL {
+            ?author skos:prefLabel ?author_label .
+            FILTER (lang(?author_label)="en")
+        }
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_in-force ?in_force .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_id_sector ?oj_sector .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_published_in_official-journal ?full_oj .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_comment_internal ?internal_comment .
+    }
+    OPTIONAL {
+        ?work cdm:work_date_document ?date_document .
+    }
+    OPTIONAL {
+        ?work cdm:work_date_creation ?date_created .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_date_signature ?legal_date_signature .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_date_entry-into-force ?legal_date_entry_into_force .
+    }
+
+    # metadata - identification properties
+    OPTIONAL {
+        ?work cdm:resource_legal_id_celex ?celex .
+    }
+    OPTIONAL {
+        ?work cdm:resource_legal_eli ?legal_eli .
+    }
+    OPTIONAL {
+        ?work cdm:work_id_document ?id_document .
+    }
+    OPTIONAL {
+        ?work owl:sameAs ?same_as_uri .
+    }
+
+    # diving down FRBR structure for the title and the content
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+             cdm:expression_uses_language ?expr_lang ;
+             cdm:expression_title ?title .
+
+        OPTIONAL {
+            ?manif_pdf cdm:manifestation_manifests_expression ?exp ;
+                       cdm:manifestation_type ?type_pdf .
+            FILTER (str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
+        }
+        OPTIONAL {
+            ?manif_html cdm:manifestation_manifests_expression ?exp ;
+                        cdm:manifestation_type ?type_html .
+            FILTER (str(?type_html) in ('html', 'xhtml'))
+        }
+    }
+    BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
+    BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+}
+GROUP BY ?work ?title
+ORDER BY ?work ?title

@@ -1,0 +1,22 @@
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX subj_mat: <http://publications.europa.eu/resource/authority/subject-matter/>
+
+select ?resource_type (count(DISTINCT ?work) as ?works) (group_concat(DISTINCT ?cdm_type; separator="| ") as ?cdm_types)
+{
+    VALUES ?resource_type_scheme {<http://publications.europa.eu/resource/authority/resource-type>}
+
+    GRAPH ?resource_type_scheme {
+        ?resource_type skos:inScheme ?resource_type_scheme .
+    }
+#    ?resource_type skos:prefLabel?resource_type_label .
+#    FILTER (lang(?resource_type_label)="en")
+
+    ?work cdm:work_has_resource-type|cdm:resource_legal_has_type_act_concept_type_act ?resource_type .
+    ?work a ?cdm_type .
+}
+group by ?resource_type
