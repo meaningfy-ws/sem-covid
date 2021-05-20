@@ -4,6 +4,9 @@ Semantic analysis of COVID-19 measures adopted at the EU and Member State (MS) l
 This project includes functionality for gathering documents from various legal sources, and a series
 of ML experiments.
 
+![test](https://github.com/meaningfy-ws/sem-covid/actions/workflows/main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/meaningfy-ws/sem-covid/branch/main/graph/badge.svg?token=taHJFheCrU)](https://codecov.io/gh/meaningfy-ws/sem-covid)
+
 ## Objective
 Establish a semantic mapping of the European Union and Member States response to the COVID-19 crisis 
 in the area of living and working conditions.
