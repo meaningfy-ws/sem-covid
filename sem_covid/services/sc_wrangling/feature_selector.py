@@ -3,7 +3,7 @@ import pandas as pd
 from pandas import DataFrame
 
 
-def reduce_array_column(data_frame: DataFrame, column: str, new_column=None):
+def reduce_array_column(data_frame: DataFrame, column: str, new_column: str = None):
     """
         assuming that the column contains array objects,
         reduces thse arrays to a string of concatenated values
@@ -13,9 +13,9 @@ def reduce_array_column(data_frame: DataFrame, column: str, new_column=None):
                      If the new_column is None then the original column is replaced
     """
     if new_column:
-        data_frame[new_column] = data_frame[column].apply(lambda x: "|".join(sorted(x)))
+        data_frame[new_column] = data_frame[column].apply(lambda x: ", ".join(x))
     else:
-        data_frame[column] = data_frame[column].apply(lambda x: "|".join(sorted(x)))
+        data_frame[column] = data_frame[column].apply(lambda x: ", ".join(x))
 
     return data_frame
 

@@ -6,7 +6,6 @@ import pytest
 from elasticsearch import Elasticsearch
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
 
 
 @pytest.fixture(scope="session")
@@ -20,7 +19,7 @@ def scenario_context() -> dict:
 # @pytest.fixture(scope="module")
 # def elasticsearch_client():
 #     print("Instantiating Elasticsearch client . . . ")
-#     elasticsearch = ESAdapter(config.ELASTICSEARCH_HOST_NAME, config.ELASTICSEARCH_PORT,
+#     elasticsearch = ESIndexStore(config.ELASTICSEARCH_HOST_NAME, config.ELASTICSEARCH_PORT,
 #                               config.ELASTICSEARCH_USERNAME, config.ELASTICSEARCH_PASSWORD)
 #
 #     return elasticsearch

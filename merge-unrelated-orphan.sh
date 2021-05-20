@@ -18,5 +18,9 @@ git checkout main
 git pull
 git checkout $THIS_BRANCH
 git merge main --allow-unrelated-histories
+
+# THIS is the place where you usually solve manually the conflicts
+# then solve the conflicts
+
 git commit -ma "unrelated branches merged; hopefully without conflicts"
 git push origin $THIS_BRANCH
