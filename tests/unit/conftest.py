@@ -10,6 +10,7 @@ from sem_covid.config_resolver import EnvConfigResolver
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
+from tests.unit.test_store.fake_storage import FakeIndexStore
 
 
 def raw_pwdb_data():
@@ -362,7 +363,7 @@ class FakeBinaryDataSource(BinaryDataSource):
 class FakeTabularDataSource(IndexTabularDataSource):
 
     def __init__(self):
-        super().__init__("bongo")
+        super().__init__("bongo",FakeIndexStore())
 
     def _fetch(self) -> pd.DataFrame:
         d = {'col1': [1, 2, 12], 'col2': [3, 4, 13], 'col3': ['abs', 'qwe', 'bongo']}

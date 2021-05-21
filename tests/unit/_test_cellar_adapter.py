@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# test_cellar_adapter.py
+# _test_cellar_adapter.py
 # Date:  11/02/2021
 # Author: Mihai Coșleț
 # Email: coslet.mihai@gmail.com

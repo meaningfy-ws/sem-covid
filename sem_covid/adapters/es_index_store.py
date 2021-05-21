@@ -5,34 +5,24 @@
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
 #
-# THIS CODE IS PRE-ALPHA !
-# To read:
-# https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html
 
-import warnings
 from typing import List, Union
 
 import pandas as pd
 import pathlib
 from es_pandas import es_pandas
 
-# Needs:
-# - dump an index, as JSON, so that it can be ingested afterwards exactly as is
-#   stripped, if necessary of internal ES fields e.g. field_name.keywords,
-# - dump (a) in memory, (b) to local folder or (c) to a s3 bucket
 from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC
 
 
 class ESIndexStore(IndexStoreABC):
-    def __init__(self, host_name: str, port: str, user: str, password: str):
+    def __init__(self, es_pandas_client: es_pandas):
 
-        self._es_pandas = es_pandas(hosts=[host_name],
-                                    http_auth=(user, password),
-                                    port=port, http_compress=True)
+        self._es_pandas = es_pandas_client
         self._es = self._es_pandas.es
 
     def index(self, index_name: str, document_id, document_body):
-        self._es.index(index=index_name, id=document_id, body=document_body)
+        return self._es.index(index=index_name, id=document_id, body=document_body)
 
     def get_document(self, index_name: str, document_id: str):
         return self._es.get(index=index_name, id=document_id)
