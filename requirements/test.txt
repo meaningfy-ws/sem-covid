@@ -1,0 +1,7 @@
+# Testing dependencies
+pytest
+pytest-bdd
+pytest-cov
+pytest-html
+pytest-mock
+coverage

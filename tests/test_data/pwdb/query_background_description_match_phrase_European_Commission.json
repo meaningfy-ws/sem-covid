@@ -1,0 +1,7 @@
+{
+  "query": {
+    "match_phrase": {
+          "background_info_description": "European Commission"
+        }
+  }
+}

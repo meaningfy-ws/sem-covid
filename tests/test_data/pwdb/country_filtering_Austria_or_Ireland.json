@@ -1,0 +1,25 @@
+{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "term": {
+                        "country.keyword": "Austria"
+                    }
+                },
+                {
+                    "term": {
+                        "country.keyword": "Ireland"
+                    }
+                }
+            ]
+        }
+    },
+    "aggs": {
+        "countries": {
+            "terms": {
+                "field": "country.keyword"
+            }
+        }
+    }
+}
