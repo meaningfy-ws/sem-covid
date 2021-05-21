@@ -5,21 +5,13 @@
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
 #
-# THIS CODE IS PRE-ALPHA !
-# To read:
-# https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html
 
-import warnings
 from typing import List, Union
 
 import pandas as pd
 import pathlib
 from es_pandas import es_pandas
 
-# Needs:
-# - dump an index, as JSON, so that it can be ingested afterwards exactly as is
-#   stripped, if necessary of internal ES fields e.g. field_name.keywords,
-# - dump (a) in memory, (b) to local folder or (c) to a s3 bucket
 from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC
 
 
