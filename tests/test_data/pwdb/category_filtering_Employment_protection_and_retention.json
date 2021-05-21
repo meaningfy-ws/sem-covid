@@ -1,0 +1,13 @@
+{
+    "query": {
+        "bool": {
+            "filter": [
+                {
+                    "term": {
+                        "category.keyword": "Employment protection and retention"
+                    }
+                }
+            ]
+        }
+    }
+}

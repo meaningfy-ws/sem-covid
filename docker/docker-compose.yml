@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  law-fetcher-ui:
+    container_name: law-fetcher-ui
+    build:
+      context: ..
+      dockerfile: ./docker/ui/Dockerfile
+    volumes:
+      - ..:/usr/src/app
+    ports:
+      - ${LAW_FETCHER_UI_PORT}:${LAW_FETCHER_UI_PORT}
+    env_file: .env
+    networks:
+      - mydefault
+
+networks:
+  mydefault:
+    name: globalnet

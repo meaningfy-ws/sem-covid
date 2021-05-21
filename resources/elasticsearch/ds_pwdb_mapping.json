@@ -1,0 +1,273 @@
+{
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "title_national_language": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "background_info_description": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "content_of_measure_description": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "involvement_of_social_partners_description": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "use_of_measure_description": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "token_count": {
+            "type": "token_count",
+            "analyzer": "english"
+          }
+        }
+      },
+      "category": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "subcategory": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "country": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "creation_date": {
+        "type": "date",
+        "format": "MM/dd/YYYY"
+      },
+      "date_type": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "end_date": {
+        "type": "date",
+        "format": "MM/dd/YYYY"
+      },
+      "actors": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "funding": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "identifier": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "sectors": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "occupations": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "sources": {
+        "properties": {
+          "content": {
+            "type": "text",
+            "analyzer": "english",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "token_count": {
+                "type": "token_count",
+                "analyzer": "english"
+              }
+            }
+          },
+          "content_path": {
+            "type": "text"
+          },
+          "title": {
+            "type": "text"
+          },
+          "url": {
+            "type": "text"
+          }
+        }
+      },
+      "start_date": {
+        "type": "date",
+        "format": "MM/dd/YYYY"
+      },
+      "status_of_regulation": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "target_groups": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "type_of_measure": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "is_occupation_specific": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "is_sector_specific": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "private_or_public_sector": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "social_partner_involvement_form":
+      {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "social_partner_role": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}

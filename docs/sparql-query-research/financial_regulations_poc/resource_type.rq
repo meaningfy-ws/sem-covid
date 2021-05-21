@@ -1,0 +1,9 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+select *
+{
+ VALUES ?resource_type_scheme {<http://publications.europa.eu/resource/authority/resource-type>}
+# VALUES ?concept {<http://publications.europa.eu/resource/authority/resource-type/ACT> <http://publications.europa.eu/resource/authority/resource-type/ACT_DEL>}
+
+ ?concept skos:inScheme ?resource_type_scheme .
+ ?another_concept skos:broader ?concept .
+}

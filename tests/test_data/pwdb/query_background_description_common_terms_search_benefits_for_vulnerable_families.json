@@ -1,0 +1,9 @@
+{
+  "query": {
+    "query_string": {
+      "query": "vulnerable families",
+      "fields": ["background_info_description"]
+    }
+  }
+}
+
