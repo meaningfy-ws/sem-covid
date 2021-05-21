@@ -1,4 +1,5 @@
-from sem_covid import config
+from sem_covid import config, FlaskConfig
+
 
 def test_elastic_search_config():
     assert config.ELASTICSEARCH_PORT is not None
@@ -56,3 +57,10 @@ def test_treaties_config():
 def test_vault_config():
     assert config.VAULT_TOKEN is not None
     assert config.VAULT_ADDR is not None
+
+
+def test_flask_config():
+    assert FlaskConfig.FLASK_SECRET_KEY is not None
+
+
+
