@@ -4,6 +4,9 @@ Semantic analysis of COVID-19 measures adopted at the EU and Member State (MS) l
 This project includes functionality for gathering documents from various legal sources, and a series
 of ML experiments.
 
+![test](https://github.com/meaningfy-ws/sem-covid/actions/workflows/main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/meaningfy-ws/sem-covid/branch/main/graph/badge.svg?token=taHJFheCrU)](https://codecov.io/gh/meaningfy-ws/sem-covid)
+
 ## Objective
 Establish a semantic mapping of the European Union and Member States response to the COVID-19 crisis 
 in the area of living and working conditions.
@@ -66,24 +69,17 @@ preparation phase and so entering the next experimentation cycle.
        - `/sem-covid/services/sc_wrangling` - reusable classes for Machine Learning (ML) experiments
   
   
-## User interface (dataset dashboard)
- - Dataset(s) descriptive statistics 
- - Language model dashboard (+descriptive statistics, +semantic network)
- - Topic structure model dashboard(s) (+synchronic, +diachronic)
- - Document similarity mapping (+descriptive statistics)
- - Document similarity time functions (+signal analysis statistics)
- - Paragraph similarity mapping (+descriptive statistics)
-
 ## Technological stack
- - Jupiter notebook + Papermill (to parametrise notebooks)
+
+See the infrastructure setup with explanations available in the [sem-covid-infra repository](https://github.com/meaningfy-ws/sem-covid-infra)
+
+ - Jupyter Notebook & Polotly
+ - scikit-learn \ Gensym \ Spacy \ PyTorch
  - Docker(+compose)
- - PyTorch \ Tensorflow
- - Gensym
- - Spacy
- - Automl
  - Apache Airflow
- - Dash &  Polotly
- - Elasticsearch \ Lucene
+ - MinIO
+ - MLFlow
+ - Elasticsearch
 
 # Contributing
 

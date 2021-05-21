@@ -1,4 +1,6 @@
 # Infra dependecies
+click==7.1.1
+SQLAlchemy<1.4
 elasticsearch
 minio
 mlflow

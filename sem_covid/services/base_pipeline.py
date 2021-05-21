@@ -38,8 +38,8 @@ class BasePipeline(ABC):
         then chain them in a property called
     """
 
-    @abstractmethod
     @property
+    @abstractmethod
     def pipeline_stages(self) -> List[Any]:
         """
             Returns the stages of the pipeline that are methods defined and implemented by __THIS__ class.

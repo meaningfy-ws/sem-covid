@@ -274,8 +274,11 @@ class FlaskConfig:
     """
     DEBUG = False
     TESTING = False
-    SECRET_KEY = "PQqUot9QBc0EtqicZ8qP"
     PAGINATION_SIZE = 30
+
+    @property
+    def FLASK_SECRET_KEY(self):
+        return VaultAndEnvConfigResolver.config_resolve();
 
 
 class ProductionConfig(FlaskConfig):

@@ -18,20 +18,11 @@ logger = logging.getLogger(__name__)
 # TODO : Add documentation for this implementation
 class MinioObjectStore(ObjectStoreABC):
 
-    def __init__(self, minio_bucket: str,
-                 minio_url: str,
-                 minio_access_key: str,
-                 minio_secret_key: str):
-        self.minio_url = minio_url
-        self.minio_access_key = minio_access_key
-        self.minio_secret_key = minio_secret_key
+    def __init__(self, minio_bucket: str, minio_client: Minio):
         self.minio_bucket = minio_bucket
 
-        logger.info('Connecting to Minio instance on ' + self.minio_url)
-        self.minio_client = Minio(self.minio_url,
-                                  access_key=self.minio_access_key,
-                                  secret_key=self.minio_secret_key,
-                                  secure=False)
+        logger.info('Connecting to Minio instance')
+        self.minio_client = minio_client
         if self.minio_client.bucket_exists(self.minio_bucket):
             logger.info('The bucket ' + self.minio_bucket + ' already exists.')
         else:
@@ -53,7 +44,7 @@ class MinioObjectStore(ObjectStoreABC):
 
     def put_object(self, object_name: str, content) -> int:
         if type(content) == str:
-            raw_content = bytes(content, encoding='utf8')
+            raw_content = io.BytesIO(bytes(content, encoding='utf8'))
         else:
             raw_content = io.BytesIO(content)
         raw_content_size = raw_content.getbuffer().nbytes
