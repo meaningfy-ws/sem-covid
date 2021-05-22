@@ -9,9 +9,9 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.entrypoints.etl_dags.eurlex_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling import json_transformer
+from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
@@ -432,8 +432,7 @@ def make_request(query):
 
 
 def get_single_item(query, json_file_name):
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     response = make_request(query)['results']['bindings']
     eurlex_json_dataset = json_transformer.transform_eurlex(response)
     uploaded_bytes = minio.put_object(json_file_name, json.dumps(eurlex_json_dataset).encode('utf-8'))
@@ -444,8 +443,7 @@ def get_single_item(query, json_file_name):
 
 
 def download_and_split_callable():
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -468,8 +466,7 @@ def download_and_split_callable():
 
 
 def execute_worker_dags_callable(**context):
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
     count = 0
 

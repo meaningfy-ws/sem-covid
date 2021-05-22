@@ -21,8 +21,7 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.services.store_registry import StoreRegistry
 
 VERSION = '0.001'
 DATASET_NAME = "legal_initiatives_worker"
@@ -36,7 +35,7 @@ TIKA_FILE_PREFIX = 'tika/'
 logger = logging.getLogger(__name__)
 
 
-def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
+def download_file(source: dict, location_details: str, file_name: str, minio):
     try:
         url = location_details if location_details.startswith('http') \
             else 'http://' + location_details
@@ -59,8 +58,7 @@ def download_documents_and_enrich_json_callable(**context):
     json_file_name = context['dag_run'].conf['filename']
     logger.info(f'Enriched fragments will be saved locally to the bucket {config.LEGAL_INITIATIVES_BUCKET_NAME}')
 
-    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.LEGAL_INITIATIVES_BUCKET_NAME)
 
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
 
@@ -108,8 +106,7 @@ def extract_content_with_tika_callable(**context):
 
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.LEGAL_INITIATIVES_JSON}')
-    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.LEGAL_INITIATIVES_BUCKET_NAME)
     json_content = loads(minio.get_object(json_file_name).decode('utf-8'))
 
     counter = {
@@ -166,18 +163,14 @@ def upload_to_elastic_callable(**context):
 
     json_file_name = context['dag_run'].conf['filename']
 
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
 
     logger.info(
         f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.LEGAL_INITIATIVES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.LEGAL_INITIATIVES_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
 
     try:
