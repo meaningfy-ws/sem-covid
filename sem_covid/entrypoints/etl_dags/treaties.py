@@ -1,30 +1,24 @@
 #!/usr/bin/python3
 
-# main.py
-# Date:  04/03/2021
+# legal_initiatives.py
+# Date:  18/05/2021
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
-
 import hashlib
+import json
 import logging
-import tempfile
-import zipfile
 from datetime import datetime, timedelta
-from itertools import chain
-from json import dumps, loads
-from pathlib import Path
 
-import requests
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from tika import parser
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.adapters.abstract_store import ObjectStoreABC
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.entrypoints.etl_dags.treaties_worker import DAG_NAME as SLAVE_DAG_NAME
 
-VERSION = '0.9.0'
+VERSION = '0.001'
 DATASET_NAME = "treaties"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
@@ -33,6 +27,7 @@ CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
+FIELD_DATA_PREFIX = "field_data/"
 logger = logging.getLogger(__name__)
 
 
@@ -43,12 +38,14 @@ def make_request(query):
     return wrapper.query().convert()
 
 
-def get_treaty_items():
+def download_and_split_callable():
     logger.info(f'Start retrieving works of treaties..')
-    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
-    minio.clear_storage(object_name_prefix=None)
-    minio.clear_storage(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.clear_storage(object_name_prefix=TIKA_FILE_PREFIX)
+    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
+    minio.empty_bucket(object_name_prefix=None)
+    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
+    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
+    minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
     query = """prefix cdm: <http://publications.europa.eu/ontology/cdm#>
                 prefix lang: <http://publications.europa.eu/resource/authority/language/>
 
@@ -144,177 +141,58 @@ def get_treaty_items():
                 }
                 ORDER BY ?dateDocument"""
 
-    uploaded_bytes = minio.put_object(config.TREATIES_JSON, dumps(make_request(query)))
+    treaties_json = make_request(query)['results']['bindings']
+    result = json.dumps(treaties_json)
+
+    uploaded_bytes = minio.put_object_from_string(config.TREATIES_JSON, str(result.encode('utf-8')))
     logger.info('Uploaded ' + str(
         uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
-
-def download_file(source: dict, location_details: dict, file_name: str, object_store: ObjectStoreABC):
-    try:
-        url = location_details['value'] if location_details['value'].startswith('http') \
-            else 'http://' + location_details['value']
-        request = requests.get(url, allow_redirects=True, timeout=30)
-        object_store.put_object(RESOURCE_FILE_PREFIX + file_name, request.content)
-        source[CONTENT_PATH_KEY] = file_name
-        return True
-
-    except Exception as e:
-        source[FAILURE_KEY] = str(e)
-        return False
+    list_count = len(treaties_json)
+    current_item = 0
+    logger.info("Start splitting " + str(list_count) + " items.")
+    for field_data in treaties_json:
+        current_item += 1
+        filename = FIELD_DATA_PREFIX + hashlib.sha256(field_data['work']['value'].encode('utf-8')).hexdigest() + ".json"
+        logger.info(
+            '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['work'][
+                'value'] + " saved to " + filename)
+        minio.put_object_from_string(filename, json.dumps(field_data))
 
 
-def download_treaties_items():
-    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
-    treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    logger.info(dumps(treaties_json)[:100])
-    treaties_json = treaties_json['results']['bindings']
-    treaties_items_count = len(treaties_json)
-    logger.info(f'Found {treaties_items_count} treaties items.')
+def execute_worker_dags_callable(**context):
+    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
+                         config.MINIO_SECRET_KEY)
+    field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
+    count = 0
 
-    counter = {
-        'html': 0,
-        'pdf': 0
-    }
+    for field_data_object in field_data_objects:
+        TriggerDagRunOperator(
+            task_id='trigger_slave_dag____' + field_data_object.object_name.replace("/", "_"),
+            trigger_dag_id=SLAVE_DAG_NAME,
+            conf={"filename": field_data_object.object_name}
+        ).execute(context)
+        count += 1
 
-    for index, item in enumerate(treaties_json):
-        if item.get('html_to_download') and item['html_to_download']['value'] != '/zip':
-            filename = hashlib.sha256(item['html_to_download']['value'].encode('utf-8')).hexdigest()
-
-            logger.info(
-                f"[{index + 1}/{treaties_items_count}] Downloading HTML file for {item['title']['value']}")
-
-            html_file = filename + '_html.zip'
-            if download_file(item, item['html_to_download'], html_file, minio):
-                counter['html'] += 1
-        elif item.get('pdf_to_download') and item['pdf_to_download']['value'] != '/zip':
-            filename = hashlib.sha256(item['pdf_to_download']['value'].encode('utf-8')).hexdigest()
-
-            logger.info(
-                f"[{index + 1}/{treaties_items_count}] Downloading PDF file for {item['title']['value']}")
-
-            pdf_file = filename + '_pdf.zip'
-            if download_file(item, item['pdf_to_download'], pdf_file, minio):
-                counter['pdf'] += 1
-        else:
-            logger.exception(f"No treaties files has been found for {item['title']['value']}")
-
-    updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    updated_treaties_json['results']['bindings'] = treaties_json
-    minio.put_object(config.TREATIES_JSON, dumps(updated_treaties_json))
-
-    logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
-
-
-def extract_document_content_with_tika():
-    logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
-    treaties_json = loads(minio.get_object(config.TREATIES_JSON))['results']['bindings']
-    treaties_items_count = len(treaties_json)
-
-    counter = {
-        'general': 0,
-        'success': 0
-    }
-
-    for index, item in enumerate(treaties_json):
-        valid_sources = 0
-        identifier = item['title']['value']
-        logger.info(f'[{index + 1}/{treaties_items_count}] Processing {identifier}')
-        item['content'] = list()
-
-        if FAILURE_KEY in item:
-            logger.info(
-                f'Will not process source <{identifier}> because it failed download with reason <{item[FAILURE_KEY]}>')
-        else:
-            try:
-                with tempfile.TemporaryDirectory() as temp_dir:
-                    current_zip_location = Path(temp_dir) / Path(item[CONTENT_PATH_KEY])
-                    with open(current_zip_location, 'wb') as current_zip:
-                        content_bytes = bytearray(minio.get_object(RESOURCE_FILE_PREFIX + item[CONTENT_PATH_KEY]))
-                        current_zip.write(content_bytes)
-                    with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
-                        zip_ref.extractall(temp_dir)
-
-                    logger.info(f'Processing each file from {item[CONTENT_PATH_KEY]}:')
-                    for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.pdf')):
-                        logger.info(f'Parsing {Path(content_file).name}')
-                        counter['general'] += 1
-                        parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
-
-                        if 'content' in parse_result:
-                            item['content'].append(parse_result['content'])
-                            counter['success'] += 1
-
-                            valid_sources += 1
-                        else:
-                            logger.warning(
-                                f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
-            except Exception as e:
-                logger.exception(e)
-        if valid_sources:
-            filename = hashlib.sha256(item['html_to_download']['value'].encode('utf-8')).hexdigest()
-            minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
-
-    updated_treaties_json = loads(minio.get_object(config.TREATIES_JSON).decode('utf-8'))
-    updated_treaties_json['results']['bindings'] = treaties_json
-    minio.put_object(config.TREATIES_JSON, dumps(updated_treaties_json))
-
-    logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
-
-
-def upload_processed_documents_to_elasticsearch():
-    es_adapter = StoreRegistry.es_index_store()
-
-    logger.info(
-        f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
-
-    logger.info(f'Loading files from {config.MINIO_URL}')
-
-    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
-    objects = minio.list_objects(TIKA_FILE_PREFIX)
-    object_count = 0
-    for obj in objects:
-        try:
-            logger.info(
-                f'Sending to ElasticSearch ( {config.TREATIES_ELASTIC_SEARCH_INDEX_NAME} ) the object {obj.object_name}')
-            es_adapter.index(index_name=config.TREATIES_ELASTIC_SEARCH_INDEX_NAME,
-                             document_id=obj.object_name.split("/")[1],
-                             document_body=loads(minio.get_object(obj.object_name).decode('utf-8')))
-            object_count += 1
-        except Exception as ex:
-            logger.exception(ex)
-
-    logger.info(f'Sent {object_count} file(s) to ElasticSearch.')
+    logger.info("Created " + str(count) + " DAG runs")
 
 
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
-    "start_date": datetime(2021, 2, 21),
+    "start_date": datetime(2021, 2, 22),
     "email": ["mclaurentiu79@gmail.com"],
     "email_on_failure": False,
     "email_on_retry": False,
-    "retries": 1,
-    "retry_delay": timedelta(minutes=500)
+    "retries": 0,
+    "retry_delay": timedelta(minutes=3600)
 }
+with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=4) as dag:
+    download_task = PythonOperator(task_id='download_and_split',
+                                   python_callable=download_and_split_callable, retries=1, dag=dag)
 
-dag = DAG(DAG_NAME, default_args=default_args,
-          schedule_interval="@once",
-          max_active_runs=1)
+    execute_worker_dags = PythonOperator(task_id='execute_worker_dags',
+                                         python_callable=execute_worker_dags_callable, retries=1, dag=dag,
+                                         provide_context=True)
 
-download_task = PythonOperator(task_id='Treaty_Items_task_version_' + VERSION,
-                               python_callable=get_treaty_items, retries=1, dag=dag)
-
-download_documents_task = PythonOperator(
-    task_id=f'get_treaties_documents_task_version_{VERSION}',
-    python_callable=download_treaties_items, retries=1, dag=dag)
-
-extract_content_with_tika_task = PythonOperator(
-    task_id=f'treaties_extract_content_task_version_{VERSION}',
-    python_callable=extract_document_content_with_tika, retries=1, dag=dag)
-
-upload_to_elastic_task = PythonOperator(
-    task_id=f'treaties_elastic_upload_task_version_{VERSION}',
-    python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
-
-download_task >> download_documents_task >> extract_content_with_tika_task >> upload_to_elastic_task
+    download_task >> execute_worker_dags

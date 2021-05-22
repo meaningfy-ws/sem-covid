@@ -31,7 +31,6 @@ RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 FIELD_DATA_PREFIX = "field_data/"
 logger = logging.getLogger(__name__)
-exception_list = []
 
 
 def download_and_split_callable():

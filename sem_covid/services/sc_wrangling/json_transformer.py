@@ -98,7 +98,7 @@ EURLEX_REFACTORING_RULES = '''.[] | {
     htmls_to_download: .htmls_to_download.value | split("| ")
 }'''
 
-LEGAL_INITIATIVES_REFACTORING_RULES = '''{
+LEGAL_INITIATIVES_REFACTORING_RULES = '''.[] | {
     work: .work.value,
     title: .title.value,
     part_of_dossiers: .part_of_dossiers.value | split("| "),
