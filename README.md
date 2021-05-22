@@ -4,6 +4,9 @@ Semantic analysis of COVID-19 measures adopted at the EU and Member State (MS) l
 This project includes functionality for gathering documents from various legal sources, and a series
 of ML experiments.
 
+![test](https://github.com/meaningfy-ws/sem-covid/actions/workflows/main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/meaningfy-ws/sem-covid/branch/main/graph/badge.svg?token=taHJFheCrU)](https://codecov.io/gh/meaningfy-ws/sem-covid)
+
 ## Objective
 Establish a semantic mapping of the European Union and Member States response to the COVID-19 crisis 
 in the area of living and working conditions.
@@ -18,13 +21,22 @@ for a new dataset with document mappings, indicating possible correspondence bet
 to COVID-19 crisis.
 
 ## Datasets
-- *EU Cellar COVID-19 dataset (ds_eu_cellar)* - The Cellar is the semantic repository of the Publications Offic
-- *EU action timeline dataset (ds_eu_timeline)* - The European Commission (EC) is coordinating a common 
-  European response  to the coronavirus outbreak.
-- *EU action timeline dataset (ds_eu_timeline)* - Ireland was selected as a tryout member state country for 
-  which a COVID-19 timeline shall be created similar to the EU action timeline.
 - *Policy watch database (ds_pwdb)* - A suitable set of summarised descriptions of 
   what a COVID-19 measure looks like.
+  - [Readme](docs/data-catalog/ds_pwdb.md)
+  - [Download](docs/data-catalog/ds_pwdb.zip)
+- *EU Cellar COVID-19 dataset (ds_eu_cellar)* - The Cellar is the semantic repository of the Publications Offic
+  - [Readme](docs/data-catalog/ds_eu_cellar.md)
+  - [Download](docs/data-catalog/ds_eu_cellar.zip)
+- *EU action timeline dataset (ds_eu_timeline)* - The European Commission (EC) is coordinating a common 
+  European response  to the coronavirus outbreak.
+  - [Readme](docs/data-catalog/ds_eu_timeline.md)
+  - [Download](docs/data-catalog/ds_eu_timeline.zip)  
+- *Ireland action timeline dataset (ds_ireland_timeline)* - Ireland was selected as a tryout member state country for 
+  which a COVID-19 timeline shall be created similar to the EU action timeline.
+  - [Readme](docs/data-catalog/ds_ireland_tinmeline.md)
+  - [Download](docs/data-catalog/ds_ireland_tinmeline.zip)
+
   
 ## Experiment's workflow
 When the dataset reaches a significant extent, it shall be cleaned up and prepared for use in a series of 
@@ -57,24 +69,17 @@ preparation phase and so entering the next experimentation cycle.
        - `/sem-covid/services/sc_wrangling` - reusable classes for Machine Learning (ML) experiments
   
   
-## User interface (dataset dashboard)
- - Dataset(s) descriptive statistics 
- - Language model dashboard (+descriptive statistics, +semantic network)
- - Topic structure model dashboard(s) (+synchronic, +diachronic)
- - Document similarity mapping (+descriptive statistics)
- - Document similarity time functions (+signal analysis statistics)
- - Paragraph similarity mapping (+descriptive statistics)
-
 ## Technological stack
- - Jupiter notebook + Papermill (to parametrise notebooks)
+
+See the infrastructure setup with explanations available in the [sem-covid-infra repository](https://github.com/meaningfy-ws/sem-covid-infra)
+
+ - Jupyter Notebook & Polotly
+ - scikit-learn \ Gensym \ Spacy \ PyTorch
  - Docker(+compose)
- - PyTorch \ Tensorflow
- - Gensym
- - Spacy
- - Automl
  - Apache Airflow
- - Dash &  Polotly
- - Elasticsearch \ Lucene
+ - MinIO
+ - MLFlow
+ - Elasticsearch
 
 # Contributing
 

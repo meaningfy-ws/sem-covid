@@ -10,7 +10,6 @@
 """
 import logging
 import warnings
-
 import dotenv
 
 try:
@@ -19,198 +18,219 @@ except ImportError:
     # Try backported to PY<37 `importlib_resources`.
     import importlib_resources as pkg_resources
 
-from sem_covid.base_config import BaseConfig
+from sem_covid.config_resolver import VaultAndEnvConfigResolver, EnvConfigResolver
 
 logger = logging.getLogger(__name__)
 
 from resources import crawlers
 
 
-class SemCovidConfig(object):
-
+class MinIOConfig:
     # MinIO Service property
-
     @property
     def MINIO_ACCESS_KEY(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def MINIO_SECRET_KEY(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def MINIO_URL(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class MlExperimentsConfig:
     # Other property
 
     @property
     def ML_EXPERIMENTS_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def LANGUAGE_MODEL_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class EuCellarConfig:
     # EU_CELLAR property
 
     @property
     def EU_CELLAR_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def EU_CELLAR_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def EU_CELLAR_SPARQL_URL(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def EU_CELLAR_EXTENDED_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class EuTimeLineConfig:
     # EU_TIMELINE property
 
     @property
     def EU_TIMELINE_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def EU_TIMELINE_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class IrelandTimelineConfig:
     # IRELAND_TIMELINE property
 
     @property
     def IRELAND_TIMELINE_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def IRELAND_TIMELINE_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class PWDBConfig:
     # PWDB_COVID19 property
 
     @property
     def PWDB_COVID19_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def PWDB_DATASET_PATH(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def PWDB_DATASET_URL(self) -> str:
-        return BaseConfig.find_value()
-
-    @property
-    def PWDB_DATASET_LOCAL_FILENAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def PWDB_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class LegalInitiativesConfig:
     # LEGAL_INITIATIVES property
 
     @property
     def LEGAL_INITIATIVES_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def LEGAL_INITIATIVES_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class TreatiesConfig:
     # TREATIES property
     @property
     def TREATIES_BUCKET_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def TREATIES_JSON(self) -> str:
         warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def TREATIES_SPARQL_URL(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def TREATIES_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class TikaConfig:
     # TIKA property
     @property
     def APACHE_TIKA_URL(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class SplashConfig:
     # SPLASH property
     @property
     def SPLASH_URL(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class ModelsConfig:
     # Models property
     @property
     def LAW2VEC_MODEL_PATH(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def JRC2VEC_MODEL_PATH(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class ElasticSearchConfig:
     # ELASTICSEARCH property
     @property
     def ELASTICSEARCH_PROTOCOL(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def ELASTICSEARCH_HOST_NAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def ELASTICSEARCH_PORT(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def ELASTICSEARCH_USERNAME(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
     @property
     def ELASTICSEARCH_PASSWORD(self) -> str:
-        return BaseConfig.find_value()
+        return VaultAndEnvConfigResolver.config_resolve()
 
+
+class VaultConfig:
     # Vault property
 
     @property
     def VAULT_ADDR(self) -> str:
-        return BaseConfig.find_value()
+        return EnvConfigResolver.config_resolve()
 
     @property
     def VAULT_TOKEN(self) -> str:
-        return BaseConfig.find_value()
+        return EnvConfigResolver.config_resolve()
+
+
+class CrawlerConfig:
 
     # Crawler property
     @property
@@ -222,6 +242,24 @@ class SemCovidConfig(object):
     def CRAWLER_EU_TIMELINE_PRESS_ASSISTANT(self) -> str:
         with pkg_resources.path(crawlers, 'eu_timeline_press_assistant_28_04_2021.json') as path:
             return str(path)
+
+
+class SemCovidConfig(CrawlerConfig,
+                     VaultConfig,
+                     ElasticSearchConfig,
+                     TikaConfig,
+                     SplashConfig,
+                     ModelsConfig,
+                     TreatiesConfig,
+                     LegalInitiativesConfig,
+                     PWDBConfig,
+                     IrelandTimelineConfig,
+                     EuCellarConfig,
+                     EuTimeLineConfig,
+                     MlExperimentsConfig,
+                     MinIOConfig
+                     ):
+    ...
 
 
 dotenv.load_dotenv()
@@ -236,8 +274,11 @@ class FlaskConfig:
     """
     DEBUG = False
     TESTING = False
-    SECRET_KEY = "PQqUot9QBc0EtqicZ8qP"
     PAGINATION_SIZE = 30
+
+    @property
+    def FLASK_SECRET_KEY(self):
+        return VaultAndEnvConfigResolver.config_resolve();
 
 
 class ProductionConfig(FlaskConfig):

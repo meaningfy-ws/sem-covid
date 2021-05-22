@@ -6,10 +6,11 @@ import json
 import pytest
 import pandas as pd
 
-from sem_covid.base_config import BaseConfig
-from sem_covid.adapters.data_source import BinaryDataSource, TabularDatasource
+from sem_covid.config_resolver import EnvConfigResolver
+from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
+from tests.unit.test_store.fake_storage import FakeIndexStore
 
 
 def raw_pwdb_data():
@@ -359,18 +360,18 @@ class FakeBinaryDataSource(BinaryDataSource):
         return b"Bytes objects are immutable sequences of single bytes"
 
 
-class FakeTabularDataSource(TabularDatasource):
+class FakeTabularDataSource(IndexTabularDataSource):
 
     def __init__(self):
-        super().__init__("bongo")
+        super().__init__("bongo",FakeIndexStore())
 
     def _fetch(self) -> pd.DataFrame:
         d = {'col1': [1, 2, 12], 'col2': [3, 4, 13], 'col3': ['abs', 'qwe', 'bongo']}
         return pd.DataFrame(data=d)
 
 
-class FakeBaseConfig(object):
+class FakeConfigResolver(object):
 
     @property
     def PWDB_XXX(self):
-        return BaseConfig.find_value(default_value="baubau")
+        return EnvConfigResolver.config_resolve(default_value="baubau")

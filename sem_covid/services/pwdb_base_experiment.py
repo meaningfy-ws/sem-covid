@@ -16,12 +16,10 @@ from abc import ABC
 import pandas as pd
 from sklearn import model_selection
 
-from sem_covid import config
+from sem_covid.services.base_pipeline import BaseExperiment
 from sem_covid.services.data_registry import Dataset
-from sem_covid.services.base_experiment import BaseExperiment
 from sem_covid.services.sc_wrangling import data_cleaning
 from sem_covid.services.sc_wrangling import feature_selector
-from sem_covid.services.sc_wrangling import json_transformer
 from sem_covid.services.sc_wrangling import value_replacement
 
 logger = logging.getLogger(__name__)

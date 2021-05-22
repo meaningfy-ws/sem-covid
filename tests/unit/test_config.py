@@ -8,29 +8,17 @@
 """ """
 import os
 
-from sem_covid.base_config import BaseConfig
-from tests.unit.conftest import FakeBaseConfig
-
-
-def test_config():
-    if "test_config" in os.environ:
-        del os.environ["test_config"]
-    assert "test_config" not in os.environ
-    assert BaseConfig.find_value(default_value="bubu") == "bubu"
-    os.environ["test_config"] = "foo"
-    assert BaseConfig.find_value(default_value="bubu") == "foo"
-    del os.environ["test_config"]
-    assert "test_config" not in os.environ
+from tests.unit.conftest import FakeConfigResolver
 
 
 def test_fake_base_config():
     if "PWDB_XXX" in os.environ:
         del os.environ["PWDB_XXX"]
     assert "PWDB_XXX" not in os.environ
-    config = FakeBaseConfig()
+    config = FakeConfigResolver()
     assert config.PWDB_XXX == "baubau"
     os.environ["PWDB_XXX"] = "foo"
-    config1 = FakeBaseConfig()
+    config1 = FakeConfigResolver()
     assert config1.PWDB_XXX == "foo"
     del os.environ["PWDB_XXX"]
     assert "PWDB_XXX" not in os.environ

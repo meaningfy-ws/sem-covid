@@ -1,0 +1,28 @@
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX subj_mat: <http://publications.europa.eu/resource/authority/subject-matter/>
+
+select ?subject_matter (count(distinct ?eurovoc_concept) as ?concepts) (count(distinct ?work) as ?works) (group_concat(DISTINCT ?eurovoc_concept_label; separator="| ") as ?concept_labels)
+{
+#    VALUES ?expr_lang { lang:ENG }
+#    VALUES ?resource_type { res_type:REG  } # res_type:ACTS_ADOPT res_type:AMEND_PROP res_type:ACT_DEL res_type:DIR
+    VALUES ?subject_matter { subj_mat:LCC subj_mat:INV subj_mat:TVA }
+
+    ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
+    ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
+    ?eurovoc_concept skos:prefLabel?eurovoc_concept_label.
+    FILTER (lang(?eurovoc_concept_label)="en")
+
+#    GRAPH ?resource_type_scheme {
+#        ?resource_type skos:inScheme ?resource_type_scheme .
+#    }
+#    ?work cdm:work_has_resource-type|cdm:resource_legal_has_type_act_concept_type_act ?resource_type .
+
+#    ?work ?property ?resource_type .
+
+#    ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
+} GROUP BY ?subject_matter
