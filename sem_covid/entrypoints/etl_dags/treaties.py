@@ -15,10 +15,10 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.entrypoints.etl_dags.treaties_worker import DAG_NAME as SLAVE_DAG_NAME
+from sem_covid.services.store_registry import StoreRegistry
 
-VERSION = '0.001'
+VERSION = '0.0.1'
 DATASET_NAME = "treaties"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
@@ -40,8 +40,7 @@ def make_request(query):
 
 def download_and_split_callable():
     logger.info(f'Start retrieving works of treaties..')
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -144,7 +143,7 @@ def download_and_split_callable():
     treaties_json = make_request(query)['results']['bindings']
     result = json.dumps(treaties_json)
 
-    uploaded_bytes = minio.put_object_from_string(config.TREATIES_JSON, str(result.encode('utf-8')))
+    uploaded_bytes = minio.put_object(config.TREATIES_JSON, str(result.encode('utf-8')))
     logger.info('Uploaded ' + str(
         uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
@@ -157,12 +156,11 @@ def download_and_split_callable():
         logger.info(
             '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['work'][
                 'value'] + " saved to " + filename)
-        minio.put_object_from_string(filename, json.dumps(field_data))
+        minio.put_object(filename, json.dumps(field_data))
 
 
 def execute_worker_dags_callable(**context):
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
     count = 0
 

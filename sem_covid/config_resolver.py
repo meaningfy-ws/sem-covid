@@ -9,7 +9,8 @@
 import inspect
 import logging
 import os
-from abc import ABC, abstractmethod
+from abc import ABC
+
 from sem_covid.services.secret_manager import get_vault_secret
 
 logger = logging.getLogger(__name__)
@@ -40,20 +41,32 @@ class ConfigResolverABC(ABC):
 class EnvConfigResolver(ConfigResolverABC):
 
     def _config_resolve(config_name: str, default_value: str = None):
-        return os.environ.get(config_name, default=default_value)
+        value = os.environ.get(config_name, default=default_value)
+        logger.info("[ENV] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
+            default_value) + "')")
+        return value
 
 
 class VaultConfigResolver(ConfigResolverABC):
 
     def _config_resolve(config_name: str, default_value: str = None):
-        return get_vault_secret(config_name, default_value)
+        value = get_vault_secret(config_name, default_value)
+        logger.info("[VAULT] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
+            default_value) + "')")
+        return value
 
 
 class VaultAndEnvConfigResolver(EnvConfigResolver):
 
     def _config_resolve(config_name: str, default_value: str = None):
         value = get_vault_secret(config_name, default_value)
+        logger.info("[VAULT&ENV] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
+            default_value) + "')")
         if value is not None:
             return value
         else:
-            return super()._config_resolve(config_name, default_value)
+            value = super()._config_resolve(config_name, default_value)
+            logger.info(
+                "[VAULT&ENV] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
+                    default_value) + "')")
+            return value
