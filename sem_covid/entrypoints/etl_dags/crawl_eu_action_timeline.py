@@ -67,9 +67,9 @@ def extract_document_content_with_tika():
 
         manifestation = item.get('detail_link') or item['title']
         filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
-        minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
+        minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.EU_TIMELINE_JSON, dumps(json_content))
+    minio.put_object(config.EU_TIMELINE_JSON, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 

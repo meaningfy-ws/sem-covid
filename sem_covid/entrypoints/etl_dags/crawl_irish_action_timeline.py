@@ -80,9 +80,9 @@ def extract_document_content_with_tika():
         if manifestation is None:
             manifestation = "no title ( " + str(uuid.uuid4()) + " )"
         filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
-        minio.put_object_from_string(TIKA_FILE_PREFIX + filename, dumps(item))
+        minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
 
-    minio.put_object_from_string(config.IRELAND_TIMELINE_JSON, dumps(json_content))
+    minio.put_object(config.IRELAND_TIMELINE_JSON, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 

@@ -18,7 +18,7 @@ from sem_covid import config
 from sem_covid.entrypoints.etl_dags.treaties_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.store_registry import StoreRegistry
 
-VERSION = '0.001'
+VERSION = '0.0.1'
 DATASET_NAME = "treaties"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
@@ -143,7 +143,7 @@ def download_and_split_callable():
     treaties_json = make_request(query)['results']['bindings']
     result = json.dumps(treaties_json)
 
-    uploaded_bytes = minio.put_object_from_string(config.TREATIES_JSON, str(result.encode('utf-8')))
+    uploaded_bytes = minio.put_object(config.TREATIES_JSON, str(result.encode('utf-8')))
     logger.info('Uploaded ' + str(
         uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
 
@@ -156,7 +156,7 @@ def download_and_split_callable():
         logger.info(
             '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['work'][
                 'value'] + " saved to " + filename)
-        minio.put_object_from_string(filename, json.dumps(field_data))
+        minio.put_object(filename, json.dumps(field_data))
 
 
 def execute_worker_dags_callable(**context):

@@ -65,7 +65,7 @@ def download_policy_watch_resources(**context):
     for source in field_data['sources']:
         download_single_source(source, minio)
 
-    minio.put_object_from_string(filename, json.dumps(field_data))
+    minio.put_object(filename, json.dumps(field_data))
 
     logger.info("...done downloading.")
 
@@ -116,7 +116,7 @@ def process_using_tika(**context):
         else:
             logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
 
-        minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
+        minio.put_object(TIKA_FILE_PREFIX + hashlib.sha256(
             (str(field_data['identifier'] +
                  field_data['title'])).encode('utf-8')).hexdigest(), json.dumps(field_data))
     except Exception as ex:

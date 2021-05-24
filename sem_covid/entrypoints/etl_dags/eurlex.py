@@ -462,7 +462,7 @@ def download_and_split_callable():
             logger.info(
                 '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + (
                         field_data['title'] or field_data['work']) + " saved to " + filename)
-            minio.put_object_from_string(filename, json.dumps(field_data))
+            minio.put_object(filename, json.dumps(field_data))
 
 
 def execute_worker_dags_callable(**context):

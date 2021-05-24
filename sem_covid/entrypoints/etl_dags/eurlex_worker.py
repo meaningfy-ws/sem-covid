@@ -89,7 +89,7 @@ def extract_content_with_tika_callable(**context):
         except Exception as e:
             logger.exception(e)
 
-    minio.put_object_from_string(json_file_name, json.dumps(json_content))
+    minio.put_object(json_file_name, json.dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
@@ -149,7 +149,7 @@ def download_documents_and_enrich_json_callable(**context):
     else:
         logger.exception(f"No manifestation has been found for {json_content['title']}")
 
-    minio.put_object_from_string(json_file_name, json.dumps(json_content))
+    minio.put_object(json_file_name, json.dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 

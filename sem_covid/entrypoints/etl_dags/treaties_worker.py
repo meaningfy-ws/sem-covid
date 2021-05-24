@@ -23,7 +23,7 @@ from tika import parser
 from sem_covid import config
 from sem_covid.services.store_registry import StoreRegistry
 
-VERSION = '0.001'
+VERSION = '0.0.1'
 DATASET_NAME = "treaties_worker"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
@@ -87,7 +87,7 @@ def download_documents_and_enrich_json_callable(**context):
     else:
         logger.exception(f"No treaties files has been found for {json_content['title']['value']}")
 
-    minio.put_object_from_string(json_file_name, dumps(json_content))
+    minio.put_object(json_file_name, dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -144,7 +144,7 @@ def extract_content_with_tika_callable(**context):
         except Exception as e:
             logger.exception(e)
 
-    minio.put_object_from_string(json_file_name, dumps(json_content))
+    minio.put_object(json_file_name, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
