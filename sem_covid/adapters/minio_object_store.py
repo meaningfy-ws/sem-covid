@@ -10,6 +10,7 @@ import logging
 
 from minio import Minio
 from minio.deleteobjects import DeleteObject
+
 from sem_covid.adapters.abstract_store import ObjectStoreABC
 
 logger = logging.getLogger(__name__)
@@ -30,8 +31,7 @@ class MinioObjectStore(ObjectStoreABC):
             self.minio_client.make_bucket(self.minio_bucket)
         logger.info('...done.')
 
-    # TODO : Review this method name
-    def clear_storage(self, object_name_prefix: str = None):
+    def empty_bucket(self, object_name_prefix: str = None):
         logger.info('Clearing the ' + self.minio_bucket + ' bucket...')
         objects = self.minio_client.list_objects(self.minio_bucket, prefix=object_name_prefix)
         objects_to_delete = [DeleteObject(x.object_name) for x in objects]

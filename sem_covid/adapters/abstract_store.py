@@ -6,7 +6,7 @@ import pathlib
 class ObjectStoreABC(ABC):
 
     @abstractmethod
-    def clear_storage(self, object_name_prefix: str = None):
+    def empty_bucket(self, object_name_prefix: str = None):
         raise NotImplementedError
 
     @abstractmethod

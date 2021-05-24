@@ -13,10 +13,10 @@ def test_fake_object_store():
     assert tmp_object == object_content
     tmp_object = obj_store.get_object("Alice")
     assert tmp_object is None
-    obj_store.clear_storage(object_name_prefix="b")
+    obj_store.empty_bucket(object_name_prefix="b")
     tmp_object = obj_store.get_object(object_name="Bob")
     assert tmp_object is not None
-    obj_store.clear_storage(object_name_prefix="B")
+    obj_store.empty_bucket(object_name_prefix="B")
     tmp_object = obj_store.get_object(object_name="Bob")
     assert tmp_object is None
     object_content = "Test list of objects"
@@ -26,7 +26,7 @@ def test_fake_object_store():
     objects = obj_store.list_objects(object_name_prefix="B")
     for obj in objects:
         assert obj == object_content
-    obj_store.clear_storage(object_name_prefix="B")
+    obj_store.empty_bucket(object_name_prefix="B")
     objects = obj_store.list_objects(object_name_prefix="B")
     assert len(objects) == 0
 
@@ -45,6 +45,6 @@ def test_minio_object_store():
     content = "Orange"
     minio_store.put_object("b2", content)
     list_objects = minio_store.list_objects("b")
-    minio_store.clear_storage("b")
+    minio_store.empty_bucket("b")
     assert minio_store.get_object("b1") is None
     assert minio_store.get_object("b2") is None

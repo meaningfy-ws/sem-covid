@@ -21,10 +21,9 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.services.store_registry import StoreRegistry
 
-VERSION = '0.001'
+VERSION = '0.0.1'
 DATASET_NAME = "treaties_worker"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
@@ -37,7 +36,7 @@ FIELD_DATA_PREFIX = "field_data/"
 logger = logging.getLogger(__name__)
 
 
-def download_file(source: dict, location_details: dict, file_name: str, minio: MinioAdapter):
+def download_file(source: dict, location_details: dict, file_name: str, minio):
     try:
         url = location_details['value'] if location_details['value'].startswith('http') \
             else 'http://' + location_details['value']
@@ -59,8 +58,7 @@ def download_documents_and_enrich_json_callable(**context):
 
     json_file_name = context['dag_run'].conf['filename']
 
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
 
     counter = {
@@ -89,7 +87,7 @@ def download_documents_and_enrich_json_callable(**context):
     else:
         logger.exception(f"No treaties files has been found for {json_content['title']['value']}")
 
-    minio.put_object_from_string(json_file_name, dumps(json_content))
+    minio.put_object(json_file_name, dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -103,8 +101,7 @@ def extract_content_with_tika_callable(**context):
     json_file_name = context['dag_run'].conf['filename']
 
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name))
 
     counter = {
@@ -147,7 +144,7 @@ def extract_content_with_tika_callable(**context):
         except Exception as e:
             logger.exception(e)
 
-    minio.put_object_from_string(json_file_name, dumps(json_content))
+    minio.put_object(json_file_name, dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
@@ -160,18 +157,14 @@ def upload_to_elastic_callable(**context):
 
     json_file_name = context['dag_run'].conf['filename']
 
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
 
     logger.info(
         f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.TREATIES_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
 
     try:

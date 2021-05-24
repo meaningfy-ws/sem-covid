@@ -79,7 +79,7 @@ class FakeObjectStore(ObjectStoreABC):
     def __init__(self):
         self._objects = dict()
 
-    def clear_storage(self, object_name_prefix=None):
+    def empty_bucket(self, object_name_prefix=None):
         tmp_dict = dict.fromkeys(self._objects.keys(), [])
         for key in tmp_dict.keys():
             str_key = str(key)

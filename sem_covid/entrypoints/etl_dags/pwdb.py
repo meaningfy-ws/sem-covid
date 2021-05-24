@@ -15,9 +15,9 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.adapters.minio_adapter import MinioAdapter
 from sem_covid.entrypoints.etl_dags.pwdb_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
+from sem_covid.services.store_registry import StoreRegistry
 
 VERSION = '0.01'
 DATASET_NAME = "pwdb"
@@ -36,8 +36,7 @@ logger = logging.getLogger(__name__)
 def download_and_split_callable():
     response = requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
     response.raise_for_status()
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -58,12 +57,11 @@ def download_and_split_callable():
         filename = FIELD_DATA_PREFIX + hashlib.sha256(field_data['title'].encode('utf-8')).hexdigest() + ".json"
         logger.info(
             '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'] + " saved to " + filename)
-        minio.put_object_from_string(filename, json.dumps(field_data))
+        minio.put_object(filename, json.dumps(field_data))
 
 
 def execute_worker_dags_callable(**context):
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
     count = 0
 

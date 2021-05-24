@@ -13,8 +13,7 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
@@ -39,8 +38,7 @@ def extract_content_with_tika_callable(**context):
     json_file_name = context['dag_run'].conf['filename']
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {json_file_name}')
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name))
 
     counter = {
@@ -91,12 +89,12 @@ def extract_content_with_tika_callable(**context):
         except Exception as e:
             logger.exception(e)
 
-    minio.put_object_from_string(json_file_name, json.dumps(json_content))
+    minio.put_object(json_file_name, json.dumps(json_content))
 
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
-def download_file(source: dict, location_details: str, file_name: str, minio: MinioAdapter):
+def download_file(source: dict, location_details: str, file_name: str, minio):
     try:
         url = location_details if location_details.startswith('http') \
             else 'http://' + location_details
@@ -119,8 +117,7 @@ def download_documents_and_enrich_json_callable(**context):
     json_file_name = context['dag_run'].conf['filename']
     logger.info(f'Enriched fragments will be saved locally to the bucket {config.EU_CELLAR_BUCKET_NAME}')
 
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
 
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
 
@@ -152,7 +149,7 @@ def download_documents_and_enrich_json_callable(**context):
     else:
         logger.exception(f"No manifestation has been found for {json_content['title']}")
 
-    minio.put_object_from_string(json_file_name, json.dumps(json_content))
+    minio.put_object(json_file_name, json.dumps(json_content))
 
     logger.info(f"Downloaded {counter['html']} HTML manifestations and {counter['pdf']} PDF manifestations.")
 
@@ -164,17 +161,12 @@ def upload_to_elastic_callable(**context):
         return
 
     json_file_name = context['dag_run'].conf['filename']
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
-
+    es_adapter = StoreRegistry.es_index_store()
     logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = MinioAdapter(config.EU_CELLAR_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
     try:
         logger.info(
