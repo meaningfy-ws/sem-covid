@@ -8,7 +8,7 @@
 """
 
 """
-from sem_covid.entrypoints.etl_dags.eurlex_covid19 import make_request, EURLEX_QUERY, EURLEX_EXTENDED_QUERY
+from sem_covid.entrypoints.etl_dags.eurlex import make_request, EURLEX_QUERY, EURLEX_EXTENDED_QUERY
 
 
 def test_sparql_query_make_request_core():

@@ -16,8 +16,7 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.adapters.es_adapter import ESAdapter
-from sem_covid.adapters.minio_adapter import MinioAdapter
+from sem_covid.services.store_registry import StoreRegistry
 
 VERSION = '0.01'
 DATASET_NAME = "pwdb_worker"
@@ -32,7 +31,7 @@ TIKA_FILE_PREFIX = 'tika/'
 logger = logging.getLogger(__name__)
 
 
-def download_single_source(source, minio: MinioAdapter):
+def download_single_source(source, minio):
     try:
         logger.info("Now downloading source " + str(source))
         url = source['url'] if source['url'].startswith('http') else ('http://' + source['url'])
@@ -57,8 +56,7 @@ def download_policy_watch_resources(**context):
     filename = context['dag_run'].conf['filename']
     logging.info('Processing the file ' + filename)
 
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     field_data = json.loads(minio.get_object(filename).decode('utf-8'))
 
     if not field_data['end_date']:
@@ -67,7 +65,7 @@ def download_policy_watch_resources(**context):
     for source in field_data['sources']:
         download_single_source(source, minio)
 
-    minio.put_object_from_string(filename, json.dumps(field_data))
+    minio.put_object(filename, json.dumps(field_data))
 
     logger.info("...done downloading.")
 
@@ -82,8 +80,7 @@ def process_using_tika(**context):
     logging.info('Processing the file ' + filename)
     logger.info('Using Apache Tika at ' + config.APACHE_TIKA_URL)
 
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     field_data = json.loads(minio.get_object(filename).decode('utf-8'))
 
     valid_sources = 0
@@ -119,7 +116,7 @@ def process_using_tika(**context):
         else:
             logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
 
-        minio.put_object_from_string(TIKA_FILE_PREFIX + hashlib.sha256(
+        minio.put_object(TIKA_FILE_PREFIX + hashlib.sha256(
             (str(field_data['identifier'] +
                  field_data['title'])).encode('utf-8')).hexdigest(), json.dumps(field_data))
     except Exception as ex:
@@ -135,15 +132,11 @@ def put_elasticsearch_documents(**context):
     filename = context['dag_run'].conf['filename']
     logging.info('Processing the file ' + filename)
 
-    es_adapter = ESAdapter(config.ELASTICSEARCH_HOST_NAME,
-                           config.ELASTICSEARCH_PORT,
-                           config.ELASTICSEARCH_USERNAME,
-                           config.ELASTICSEARCH_PASSWORD)
+    es_adapter = StoreRegistry.es_index_store()
     logger.info('Using ElasticSearch at ' + config.ELASTICSEARCH_HOST_NAME + ':' + str(
         config.ELASTICSEARCH_PORT))
 
-    minio = MinioAdapter(config.PWDB_COVID19_BUCKET_NAME, config.MINIO_URL, config.MINIO_ACCESS_KEY,
-                         config.MINIO_SECRET_KEY)
+    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     original_field_data = json.loads(minio.get_object(filename).decode('utf-8'))
     tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
         (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()
@@ -172,10 +165,10 @@ default_args = {
     "retry_delay": timedelta(minutes=3600)
 }
 
-
 with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
     enrich_task = PythonOperator(task_id='Enrich',
-                                 python_callable=download_policy_watch_resources, retries=1, dag=dag, provide_context=True)
+                                 python_callable=download_policy_watch_resources, retries=1, dag=dag,
+                                 provide_context=True)
 
     tika_task = PythonOperator(task_id='Tika',
                                python_callable=process_using_tika, retries=1, dag=dag, provide_context=True)
