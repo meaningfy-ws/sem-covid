@@ -2,8 +2,10 @@
 from PIL.Image import Image
 
 import pyLDAvis
-pyLDAvis.enable_notebook()
 import pyLDAvis.gensim_models
+
+import plotly.graph_objs as go
+from plotly.offline import iplot
 
 import pandas as pd
 from gensim.models import LdaMulticore
@@ -19,7 +21,7 @@ class TopicInformation(WordsModeling):
 
     def format_topic_sentences(self) -> pd.DataFrame:
         """
-            ach document is composed of multiple topics. But, typically only one of the topics is dominant.
+            Each document is composed of multiple topics. But, typically only one of the topics is dominant.
             The below code extracts this dominant topic for each sentence and shows the weight of the
             topic and the keywords in a nicely formatted output.
         """
@@ -38,14 +40,12 @@ class TopicInformation(WordsModeling):
                 else:
                     break
 
-        topic_df.columns = ['Dominant_Topic', 'Perc_Contribution', 'Topic_Keywords']
+        topic_df.columns = ['Dominant Topic', 'Percentage Contribution', 'Topic Keywords']
         contents = pd.Series(self.document)
 
-        return pd.concat([topic_df, contents], axis=1)
-
-    def sort_dominant_topic(self) -> pd.DataFrame:
-        df_dominant_topics = self.format_topic_sentences().reset_index()
-        df_dominant_topics.columns = ['Document_No', 'Dominant_Topic', 'Topic_Perc_Contrib', 'Keywords', 'Text']
+        df_dominant_topics = pd.concat([topic_df, contents], axis=1).reset_index()
+        df_dominant_topics.columns = ['Document Number', 'Dominant Topic', 'Topic Percentage Contribution',
+                                      'Keywords', 'Text']
 
         return df_dominant_topics
 
@@ -54,16 +54,30 @@ class TopicInformation(WordsModeling):
             gets the most exemplar sentence for each topic
         """
         sorted_topics = pd.DataFrame()
-        grouped_sorted_topics = self.sort_dominant_topic().groupby('Dominant_Topic')
+        grouped_sorted_topics = self.format_topic_sentences().groupby('Dominant Topic')
 
         for topic_number, groups in grouped_sorted_topics:
             sorted_topics = pd.concat(
-                [sorted_topics, groups.sort_values(['Topic_Perc_Contrib'], ascending=False).head(1)], axis=0)
+                [sorted_topics, groups.sort_values(['Topic Percentage Contribution'], ascending=False).head(1)], axis=0)
 
         sorted_topics.reset_index(drop=True, inplace=True)
-        sorted_topics.columns = ['Document_No', 'Topic_Num', "Topic_Perc_Contrib", "Keywords", "Representative Text"]
+        sorted_topics.columns = ['Document Number', 'Topic Number', "Topic Percentage Contribution", "Keywords",
+                                 "Representative Text"]
 
         return sorted_topics.head(10)
+
+    def topic_per_document(self, start: int = 0, end: int = 1):
+        corpus_sel = self.corpus[start: end]
+        dominant_topics = []
+        topic_percentages = []
+
+        for index, corpus in enumerate(corpus_sel):
+            topic_percentage, wordid_topics, wordid_phivalues = self.lda_model[corpus]
+            dominant_topic = sorted(topic_percentage, key=lambda x: x[1], reverse=True)[0][0]
+            dominant_topics.append((index, dominant_topic))
+            topic_percentages.append(topic_percentage)
+
+        return dominant_topics, topic_percentages
 
     def visualize_lda_model(self) -> pyLDAvis:
         """
@@ -85,3 +99,24 @@ def generate_wordcloud(words: str, max_words: int = 500) -> Image:
 
     return cloud_generator.to_image()
 
+
+def plotly_bar_chart_graphic(chart_title: str, x_axis: pd.DataFrame, y_axis,
+                             x_axis_title: str, y_axis_title: str):
+    """
+    assuming we want to represent in graphic chart specific data
+    :chart_title: graphic title
+    :x_axis: our DataFrame we will use as x axis
+    :y_axis: our DataFrame we will use as y axis
+    :x_axis_title: the title for our x axis
+    :y_axis_title: the title for our y axis
+    :return: bar chart graphic
+    """
+    layout = {"title": chart_title,
+              "xaxis": {"title": x_axis_title},
+              "yaxis": {"title": y_axis_title}}
+
+    trace = go.Bar(x = x_axis,
+                   y = y_axis)
+
+    figure = go.Figure(data=trace, layout=layout)
+    iplot(figure)
