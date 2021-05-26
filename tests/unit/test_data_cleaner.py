@@ -74,3 +74,29 @@ def test_data_cleaner():
 
     assert len(actual) == len(expected_text)
     assert all([a == b for a, b in zip(actual, expected_text)])
+
+
+def test_clean_text_from_specific_characters(transformed_pwdb_dataframe):
+    pwdb_descriptive_data = transformed_pwdb_dataframe['title'].map(str) + ' ' + \
+                            transformed_pwdb_dataframe['background_info_description'].map(str) + ' ' + \
+                            transformed_pwdb_dataframe['content_of_measure_description'].map(str) + ' ' + \
+                            transformed_pwdb_dataframe['use_of_measure_description'] + ' ' + \
+                            transformed_pwdb_dataframe['involvement_of_social_partners_description']
+    unused_characters = ["\\r", ">", "\n", "\\", "<", "''", "%", "...", "\'", '"', "(", "\n", "[", "]"]
+    clean_text = clean_text_from_specific_characters(pwdb_descriptive_data, unused_characters)
+
+    assert "\\r" not in clean_text
+    assert ">" not in clean_text
+    assert "\n" not in clean_text
+    assert "\\" not in clean_text
+    assert "<" not in clean_text
+    assert "''" not in clean_text
+    assert "%" not in clean_text
+    assert "%" not in clean_text
+    assert "..." not in clean_text
+    assert "\'" not in clean_text
+    assert '"' not in clean_text
+    assert "(" not in clean_text
+    assert "\n" not in clean_text
+    assert "[" not in clean_text
+    assert "]" not in clean_text
