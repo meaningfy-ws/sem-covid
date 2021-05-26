@@ -1,4 +1,5 @@
 
+from typing import List
 from PIL.Image import Image
 
 import pyLDAvis
@@ -15,7 +16,7 @@ from sem_covid.entrypoints.notebooks.topic_modeling.topic_modeling_wrangling.lda
 
 
 class TopicInformation(WordsModeling):
-    def __init__(self, lda_model: LdaMulticore, document: pd.Series):
+    def __init__(self, lda_model: LdaMulticore, document: List):
         self.lda_model = lda_model
         super().__init__(document)
 
@@ -66,7 +67,10 @@ class TopicInformation(WordsModeling):
 
         return sorted_topics.head(10)
 
-    def topic_per_document(self, start: int = 0, end: int = 1):
+    def attribute_topic_per_document(self, start: int = 0, end: int = 1) -> tuple:
+        """
+            g
+        """
         corpus_sel = self.corpus[start: end]
         dominant_topics = []
         topic_percentages = []
