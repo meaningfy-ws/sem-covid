@@ -152,4 +152,3 @@ class IndexTabularDataSource(TabularDataSource):
     def dump_remote(self, remote_store: ObjectStoreABC):
         file_name = self._object_name + ".json"
         self._index_store.dump(self._object_name, file_name, remote_store=remote_store)
-
