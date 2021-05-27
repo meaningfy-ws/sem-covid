@@ -1,0 +1,48 @@
+# select work metadata given a work Cellar URI
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX subj_mat: <http://publications.europa.eu/resource/authority/subject-matter/>
+
+PREFIX ev: <http://eurovoc.europa.eu/>
+
+PREFIX fd_030: <http://publications.europa.eu/resource/authority/fd_030/>
+
+SELECT DISTINCT
+    ?work
+    (group_concat(DISTINCT ?_title; separator="| ") as ?title)
+
+    (group_concat(DISTINCT ?manif_pdf; separator="| ") as ?manifs_pdf)
+    (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
+    (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
+    (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
+WHERE {
+    # selector criteria
+    VALUES ?expr_lang { lang:ENG }
+    # inject work URI here
+    VALUES ?work { <http://publications.europa.eu/resource/cellar/8d271d5e-40ea-40a5-a73d-01291d08a925> }
+
+    # diving down FRBR structure for the title and the content
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+            cdm:expression_uses_language ?expr_lang ;
+            cdm:expression_title ?_title .
+
+        OPTIONAL {
+            ?manif_pdf cdm:manifestation_manifests_expression ?exp ;
+                cdm:manifestation_type ?type_pdf .
+            FILTER (str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
+        }
+        OPTIONAL {
+            ?manif_html cdm:manifestation_manifests_expression ?exp ;
+                cdm:manifestation_type ?type_html .
+            FILTER (str(?type_html) in ('html', 'xhtml'))
+        }
+    }
+    BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
+    BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+}
+GROUP BY ?work
