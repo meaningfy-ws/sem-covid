@@ -52,6 +52,10 @@ class MlExperimentsConfig:
     def LANGUAGE_MODEL_BUCKET_NAME(self) -> str:
         return VaultAndEnvConfigResolver.config_resolve()
 
+    @property
+    def MLFLOW_TRACKING_URI(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
 
 class EuCellarConfig:
     # EU_CELLAR property

@@ -1,8 +1,11 @@
+import mlflow
 import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import model_selection
 from sklearn.base import ClassifierMixin
 from sklearn.ensemble import RandomForestClassifier
+
+from sem_covid import config
 from sem_covid.services.base_pipeline import BaseExperiment
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
@@ -66,25 +69,13 @@ class FeatureEngineering:
         self.df["text_data"] = self.df["text_data"].apply(lambda x: text_to_vector(x, self.l2v_dict))
 
     def store_feature_set(self):
-        x_train_list = list()
-        x_test_list = list()
-        y_train_list = list()
-        y_test_list = list()
-        for column in CLASS_COLUMNS:
-            x_train, x_test, y_train, y_test = model_selection.train_test_split(self.df["text_data"].values,
-                                                                                self.df[column].values,
-                                                                                random_state=42, test_size=0.3,
-                                                                                shuffle=True)
-            x_train_list.append(list(x_train))
-            x_test_list.append(list(x_test))
-            y_train_list.append(list(y_train))
-            y_test_list.append(list(y_test))
-        train_test_dataset = {"x_train": x_train_list, "x_test": x_test_list,
-                              "y_train": y_train_list, "y_test": y_test_list,
-                              "class_name": CLASS_COLUMNS}
-        train_features = pd.DataFrame.from_dict(train_test_dataset)
+
+        input_features_name = self.feature_store_name + "_x"
+        output_features_name = self.feature_store_name + "_y"
         feature_store = StoreRegistry.es_feature_store()
-        feature_store.put_features(features_name=self.feature_store_name, content=train_features)
+        matrix_df = pd.DataFrame(list(self.df["text_data"].values))
+        feature_store.put_features(features_name=input_features_name, content=matrix_df)
+        feature_store.put_features(features_name=output_features_name, content=pd.DataFrame(self.df[CLASS_COLUMNS]))
 
     def execute(self):
         self.load_data()
@@ -101,18 +92,39 @@ class ModelTraining:
         self.model = model
         self.feature_store_name = feature_store_name
         self.train_features = pd.DataFrame()
-        self.evaluation_models = pd.DataFrame()
+        self.evaluation_models = []
 
     def load_feature_set(self):
         feature_store = StoreRegistry.es_feature_store()
-        self.train_features = feature_store.get_features(self.feature_store_name)
+        input_features_name = self.feature_store_name + "_x"
+        output_features_name = self.feature_store_name + "_y"
+        input_features = feature_store.get_features(input_features_name)
+        input_features = input_features.values.tolist()
+        output_features = feature_store.get_features(output_features_name)
+        x_train_list = list()
+        x_test_list = list()
+        y_train_list = list()
+        y_test_list = list()
+        for column in output_features.columns:
+            x_train, x_test, y_train, y_test = model_selection.train_test_split(input_features,
+                                                                                output_features[column].values,
+                                                                                random_state=42, test_size=0.3,
+                                                                                shuffle=True)
+            x_train_list.append(list(x_train))
+            x_test_list.append(list(x_test))
+            y_train_list.append(list(y_train))
+            y_test_list.append(list(y_test))
+        train_test_dataset = {"x_train": x_train_list, "x_test": x_test_list,
+                              "y_train": y_train_list, "y_test": y_test_list,
+                              "class_name": output_features.columns}
+        self.train_features = pd.DataFrame.from_dict(train_test_dataset)
 
     def validate_feature_set(self):
         for column in TRAIN_COLUMNS:
             assert column in self.train_features.columns
 
     def train_model(self):
-        for iter, row in self.train_features.iterrows():
+        for it, row in self.train_features.iterrows():
             model = self.model
             model = model.fit(row['x_train'],
                               row['y_train'])
@@ -123,11 +135,15 @@ class ModelTraining:
             prediction = trained_model.predict(row['x_test'])
             evaluation = model_evaluation_metrics(
                 row['y_test'], prediction)
-            self.evaluation_models[row['class_name']] = evaluation
+            self.evaluation_models.append((evaluation, row['class_name']))
 
     def track_ml_run(self):
-        print('Track in ML:')
-        print(self.evaluation_models)
+        mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
+        mlflow.set_experiment(experiment_name="PWDB_target_group_l1(RandomForest, law2vec200d)")
+        for evaluation, class_name in self.evaluation_models:
+            with mlflow.start_run():
+                mlflow.log_param("class_name", class_name)
+                mlflow.log_metrics(evaluation)
 
     def execute(self):
         self.load_feature_set()
@@ -152,4 +168,3 @@ class RandomForestPWDBExperiment:
         classifier = RandomForestClassifier()
         worker = ModelTraining(model=classifier, feature_store_name=PWDB_FEATURE_STORE_NAME)
         worker.execute()
-
