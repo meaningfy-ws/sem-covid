@@ -35,8 +35,16 @@ CLASS_COLUMNS = ['businesses', 'citizens', 'workers']
 
 TRAIN_COLUMNS = ['x_train', 'x_test', 'y_train', 'y_test', 'class_name']
 
+EMBEDDING_COLUMN = "embeddings"
+
 
 class FeatureEngineering:
+    """
+    this class performs
+
+    - the document embedding
+    - class re-organisation
+    """
 
     def __init__(self, feature_store_name: str):
         self.df = pd.DataFrame()
@@ -57,6 +65,7 @@ class FeatureEngineering:
         self.l2v_dict = {w: vec for w, vec in zip(law2vec_format.index_to_key, law2vec_format.vectors)}
 
     def transform_data(self):
+
         pwdb_dataframe = self.df
         new_columns = {'businesses': BUSINESSES, 'citizens': CITIZENS, 'workers': WORKERS}
         refactored_pwdb_df = pwdb_dataframe['target_groups']
@@ -65,15 +74,15 @@ class FeatureEngineering:
             pwdb_dataframe[column].replace({True: 1, False: 0}, inplace=True)
         self.df = pwdb_dataframe
         self.df = self.df.set_index(self.df.columns[0])
-        self.df["text_data"] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
-        self.df["text_data"] = self.df["text_data"].apply(lambda x: text_to_vector(x, self.l2v_dict))
+        self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
+        self.df[EMBEDDING_COLUMN] = self.df[EMBEDDING_COLUMN].apply(lambda x: text_to_vector(x, self.l2v_dict))
 
     def store_feature_set(self):
 
         input_features_name = self.feature_store_name + "_x"
         output_features_name = self.feature_store_name + "_y"
         feature_store = StoreRegistry.es_feature_store()
-        matrix_df = pd.DataFrame(list(self.df["text_data"].values))
+        matrix_df = pd.DataFrame(list(self.df[EMBEDDING_COLUMN].values))
         feature_store.put_features(features_name=input_features_name, content=matrix_df)
         feature_store.put_features(features_name=output_features_name, content=pd.DataFrame(self.df[CLASS_COLUMNS]))
 
@@ -87,12 +96,14 @@ class FeatureEngineering:
 
 class ModelTraining:
 
-    def __init__(self, model: ClassifierMixin, feature_store_name: str):
+    def __init__(self, model: ClassifierMixin, model_name: str, feature_store_name: str, experiment_name: str):
         self.trained_models = []
         self.model = model
         self.feature_store_name = feature_store_name
         self.train_features = pd.DataFrame()
         self.evaluation_models = []
+        self.model_name = model_name
+        self.experiment_name = experiment_name
 
     def load_feature_set(self):
         feature_store = StoreRegistry.es_feature_store()
@@ -135,15 +146,24 @@ class ModelTraining:
             prediction = trained_model.predict(row['x_test'])
             evaluation = model_evaluation_metrics(
                 row['y_test'], prediction)
-            self.evaluation_models.append((evaluation, row['class_name']))
+            self.evaluation_models.append((trained_model, row['class_name'], evaluation))
 
     def track_ml_run(self):
         mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
-        mlflow.set_experiment(experiment_name="PWDB_target_group_l1(RandomForest, law2vec200d)")
-        for evaluation, class_name in self.evaluation_models:
+        mlflow.set_experiment(experiment_name=self.experiment_name)
+        for model, class_name, evaluation in self.evaluation_models:
             with mlflow.start_run():
                 mlflow.log_param("class_name", class_name)
                 mlflow.log_metrics(evaluation)
+                # mlflow.sklearn.save_model(sk_model=model,path="models/"+class_name+"_"+self.model_name)
+                # TODO : log_model don't work, auth error
+                '''
+                mlflow.sklearn.log_model(
+                    sk_model=model,
+                    artifact_path="models",
+                    registered_model_name=class_name+"_"+self.model_name
+                )
+                '''
 
     def execute(self):
         self.load_feature_set()
@@ -166,5 +186,7 @@ class RandomForestPWDBExperiment:
     @classmethod
     def model_training(cls):
         classifier = RandomForestClassifier()
-        worker = ModelTraining(model=classifier, feature_store_name=PWDB_FEATURE_STORE_NAME)
+        worker = ModelTraining(model=classifier, model_name="RandomForest",
+                               feature_store_name=PWDB_FEATURE_STORE_NAME,
+                               experiment_name="PWDB_target_group_l1(RandomForest, law2vec200d)")
         worker.execute()
