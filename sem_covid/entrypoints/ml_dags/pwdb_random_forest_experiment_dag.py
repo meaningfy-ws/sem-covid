@@ -29,9 +29,15 @@ with DAG(DAG_NAME,
          max_active_runs=1,
          concurrency=1) as dag:
     feature_engineering = PythonOperator(task_id=f"feature_engineering",
-                                         python_callable=RandomForestPWDBExperiment.feature_engineering)
+                                         python_callable=RandomForestPWDBExperiment.feature_engineering,
+                                         retries=1,
+                                         dag=dag
+                                         )
 
     model_training = PythonOperator(task_id=f"model_training",
-                                    python_callable=RandomForestPWDBExperiment.model_training)
+                                    python_callable=RandomForestPWDBExperiment.model_training,
+                                    retries=1,
+                                    dag=dag
+                                    )
 
     feature_engineering >> model_training
