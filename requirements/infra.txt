@@ -4,6 +4,7 @@ SQLAlchemy<1.4
 elasticsearch
 minio
 mlflow
+boto3
 sparqlwrapper
 es-pandas
 apache-airflow>=2

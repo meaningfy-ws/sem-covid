@@ -1,0 +1,202 @@
+# selecting the works only ~ 20s - 35s - 5720 items
+# selecting work, distinct group_concat(title and download links) ~ 45s - 52s - 5720 items
+# selecting work, non-distinct group_concat( title and download links) ~ fails for some misterious reason
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX subj_mat: <http://publications.europa.eu/resource/authority/subject-matter/>
+PREFIX ev: <http://eurovoc.europa.eu/>
+PREFIX fd_030: <http://publications.europa.eu/resource/authority/fd_030/>
+
+SELECT DISTINCT ?work
+    (group_concat(DISTINCT ?_title; separator="| ") as ?title)
+    (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
+    (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
+WHERE {
+    # selector criteria
+    VALUES ?expr_lang { lang:ENG }
+    VALUES ?eurovoc_concept {
+        ev:1005
+        ev:1021
+        ev:1129
+        ev:1488
+        ev:1804
+        ev:2002
+        ev:4585
+        ev:616
+        ev:1452
+        ev:3246
+        ev:5868
+        ev:1476
+        ev:1638
+        ev:504
+        ev:5455
+        ev:1281
+        ev:189
+        ev:4195
+        ev:8469
+        ev:1052
+        ev:1132
+        ev:935
+        ev:2098
+        ev:554
+        ev:1310
+        ev:2216
+        ev:365
+        ev:408
+        ev:4392
+        ev:549
+        ev:6029
+        ev:8468
+        ev:248
+        ev:3878
+        ev:4347
+        ev:4646
+        ev:766
+        ev:1095
+        ev:1676
+        ev:2264
+        ev:5157
+        ev:635
+        ev:1234
+        ev:1630
+        ev:2463
+        ev:4763
+        ev:7942
+        ev:1156
+        ev:1164
+        ev:561
+        ev:6342
+        ev:4493
+        ev:2805
+        ev:521
+        ev:3951
+        ev:2150
+        ev:2386
+        ev:1328
+        ev:2220
+        ev:871
+        ev:1497
+        ev:5090
+        ev:57
+        ev:924
+        ev:3240
+        ev:3942
+        ev:1130
+        ev:1326
+        ev:5156
+        ev:5645
+        ev:6343
+        ev:1971
+        ev:2149
+        ev:2831
+        ev:4115
+        ev:1459
+        ev:560
+        ev:1972
+        ev:5964
+        ev:4250
+        ev:5465
+        ev:5598
+        ev:170
+        ev:2839
+        ev:4491
+        ev:6362
+        ev:728
+        ev:1787
+        ev:834
+        ev:3148
+        ev:4855
+        ev:2219
+        ev:5566
+        ev:c_406ad4cc
+        ev:c_dcc650ef
+        ev:c_3e6af2e7
+        ev:c_8f89faac
+        ev:c_96124aaf
+        ev:c_b499ede2
+        ev:c_a18525ab
+        ev:c_e749c083
+        ev:c_dd52c1e9
+        ev:c_dcf3f7c0
+        ev:c_a3b85311
+        ev:1000
+        ev:1460
+        ev:2497
+        ev:2900
+        ev:4838
+        ev:2504
+        ev:1448
+        ev:4190
+        ev:6751
+        ev:165
+        ev:2607
+        ev:1492
+        ev:5389
+        ev:5218
+        ev:3543
+        ev:3233
+        ev:1801
+        ev:1815
+        ev:4703
+        ev:2162
+        ev:55
+        ev:3119
+        ev:1491
+        ev:115
+        ev:524
+        ev:1490
+        ev:822
+        ev:4406
+        ev:3235
+        ev:c_14d71455
+        ev:c_7f2d2214
+        ev:c_d08207d1
+        ev:1313
+        ev:4279
+    }
+    VALUES ?resource_type {
+        res_type:REG
+        fd_030:REGL
+        res_type:DIR
+        res_type:REG_IMPL
+        res_type:REG_DEL
+        fd_030:DIRECTIVE
+        fd_030:REGIMP
+        fd_030:REGDEL
+        res_type:DIR_DEL
+        res_type:DIR_IMPL
+        res_type:REG_FINANC
+        fd_030:DIRDEL
+        fd_030:DIRIMP
+        fd_030:DIR
+        fd_030:REG
+    }
+
+    ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept ;
+        cdm:work_has_resource-type|cdm:resource_legal_has_type_act_concept_type_act ?resource_type .
+    # diving down FRBR structure for the title and the content
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+            cdm:expression_uses_language ?expr_lang ;
+            cdm:expression_title ?_title .
+
+        OPTIONAL {
+            ?manif_pdf cdm:manifestation_manifests_expression ?exp ;
+                cdm:manifestation_type ?type_pdf .
+            FILTER (str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
+        }
+        OPTIONAL {
+            ?manif_html cdm:manifestation_manifests_expression ?exp ;
+                cdm:manifestation_type ?type_html .
+            FILTER (str(?type_html) in ('html', 'xhtml'))
+        }
+    }
+    BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
+    BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+}
+GROUP BY ?work
+

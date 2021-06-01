@@ -2,6 +2,7 @@ import re
 import string
 import warnings
 
+import pandas as pd
 from cleantext import clean
 import spacy
 
@@ -57,6 +58,17 @@ def clean_remove_currency_symbols(text: str, replace_with: str = "<CUR>") -> str
 def clean_remove_stopwords(text: str) -> str:
     stop_words = nlp.Defaults.stop_words
     return " ".join([word for word in text.split() if word not in stop_words])
+
+
+def clean_text_from_specific_characters(document: pd.Series, characters: list) -> str:
+
+    text = clean_remove_stopwords(str(document.values))
+
+    for character in characters:
+        if character in text:
+            text = text.replace(character, "")
+
+    return text
 
 
 def prepare_text_for_cleaning(text: str):
