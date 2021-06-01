@@ -23,4 +23,4 @@ git merge main --allow-unrelated-histories
 # then solve the conflicts
 
 git commit -ma "unrelated branches merged; hopefully without conflicts"
-git push origin $THIS_BRANCH
+git push -f origin $THIS_BRANCH
