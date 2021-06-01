@@ -58,6 +58,22 @@ class MlExperimentsConfig:
     def MLFLOW_TRACKING_URI(self) -> str:
         return VaultAndEnvConfigResolver.config_resolve()
 
+    @property
+    def AWS_ACCESS_KEY_ID(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
+    def AWS_SECRET_ACCESS_KEY(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
+    def MLFLOW_S3_ENDPOINT_URL(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
+    def MLFLOW_S3_BUCKET_NAME(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
 
 class EuCellarConfig:
     # EU_CELLAR property
@@ -283,6 +299,14 @@ class SemCovidConfig(CrawlerConfig,
 
 
 config = SemCovidConfig()
+
+# These configs need to appear also as ENV variables, therefore they are called explicit here
+config.AWS_ACCESS_KEY_ID,
+config.MLFLOW_TRACKING_URI
+config.MLFLOW_S3_BUCKET_NAME
+config.MLFLOW_S3_ENDPOINT_URL
+config.AWS_SECRET_ACCESS_KEY
+
 
 
 # Set of config artefacts used in the Flask UI

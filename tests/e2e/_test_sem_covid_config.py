@@ -1,3 +1,5 @@
+import os
+
 from sem_covid import config, FlaskConfig
 
 
@@ -59,8 +61,14 @@ def test_vault_config():
     assert config.VAULT_ADDR is not None
 
 
+def test_ml_experiments_config():
+    assert config.MLFLOW_TRACKING_URI is not None
+    assert config.ML_EXPERIMENTS_BUCKET_NAME is not None
+    assert config.AWS_ACCESS_KEY_ID is not None
+    assert config.AWS_SECRET_ACCESS_KEY is not None
+    assert os.environ["AWS_ACCESS_KEY_ID"] == config.AWS_ACCESS_KEY_ID
+    assert os.environ["AWS_SECRET_ACCESS_KEY"] == config.AWS_SECRET_ACCESS_KEY
+
+
 def test_flask_config():
     assert FlaskConfig.FLASK_SECRET_KEY is not None
-
-
-
