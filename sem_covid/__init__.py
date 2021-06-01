@@ -25,6 +25,8 @@ logger = logging.getLogger(__name__)
 
 from resources import crawlers
 
+dotenv.load_dotenv()
+
 
 class MinIOConfig:
     # MinIO Service property
@@ -280,7 +282,6 @@ class SemCovidConfig(CrawlerConfig,
     ...
 
 
-dotenv.load_dotenv()
 config = SemCovidConfig()
 
 

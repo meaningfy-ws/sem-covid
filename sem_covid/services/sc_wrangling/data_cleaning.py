@@ -56,6 +56,9 @@ def clean_remove_currency_symbols(text: str, replace_with: str = "<CUR>") -> str
 
 
 def clean_remove_stopwords(text: str) -> str:
+    """
+        This stop word cleaning function applies to English Language only.
+    """
     stop_words = nlp.Defaults.stop_words
     return " ".join([word for word in text.split() if word not in stop_words])
 

@@ -64,13 +64,3 @@ def test_clean_remove_stopwords():
     test = "This is simple text for test!"
     test = clean_remove_stopwords(test)
     assert test == "This simple text test!"
-
-
-def test_data_cleaner():
-    test_string = 'Hello World123 https:// [Dealing]'
-
-    actual = prepare_text_for_cleaning(test_string)
-    expected_text = ['hello', 'https', '']
-
-    assert len(actual) == len(expected_text)
-    assert all([a == b for a, b in zip(actual, expected_text)])
