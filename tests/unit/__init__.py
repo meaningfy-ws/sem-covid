@@ -8,6 +8,6 @@
 """ """
 import os
 import pathlib
-
-TEST_AIRFLOW_DAG_FOLDER = pathlib.Path(__file__).parent.parent / "ml_experiments"
-os.environ["AIRFLOW_HOME"] = str(TEST_AIRFLOW_DAG_FOLDER)
+#
+# TEST_AIRFLOW_DAG_FOLDER = pathlib.Path(__file__).parent.parent / "ml_experiments"
+# os.environ["AIRFLOW_HOME"] = str(TEST_AIRFLOW_DAG_FOLDER)

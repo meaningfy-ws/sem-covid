@@ -61,6 +61,15 @@ class EuCellarConfig:
     # EU_CELLAR property
 
     @property
+    def EU_FINREG_CELLAR_BUCKET_NAME(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
+    def EU_FINREG_CELLAR_JSON(self) -> str:
+        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
     def EU_CELLAR_BUCKET_NAME(self) -> str:
         return VaultAndEnvConfigResolver.config_resolve()
 
@@ -75,6 +84,10 @@ class EuCellarConfig:
 
     @property
     def EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
+    def EU_FINREG_CELLAR_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
         return VaultAndEnvConfigResolver.config_resolve()
 
     @property
