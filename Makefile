@@ -39,11 +39,11 @@ create-indexes:
 
 all: install
 
-testing_airflow_environment:
+make_testing_airflow_environment:
 	@ echo "$(BUILD_PRINT)Running the Airflow testing environment"
+	@ airflow db init
 
-
-test: testing_airflow_environment
+test: make_testing_airflow_environment
 	@ echo "$(BUILD_PRINT)Running the tests"
 	@ pytest -s --html=report.html --self-contained-html
 
