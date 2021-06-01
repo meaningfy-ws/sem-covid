@@ -1,4 +1,6 @@
-from sem_covid.services.pwdb_random_forest_experiment import RandomForestPWDBExperiment, FeatureEngineering
+import os
+from sem_covid import config
+from sem_covid.services.pwdb_random_forest_experiment import RandomForestPWDBExperiment
 
 
 def test_random_forest_pwdb_feature_engineering():
@@ -6,4 +8,6 @@ def test_random_forest_pwdb_feature_engineering():
 
 
 def test_random_forest_pwdb_model_training():
+    assert "AWS_SECRET_ACCESS_KEY" in os.environ.keys()
+    assert "AWS_ACCESS_KEY_ID" in os.environ.keys()
     RandomForestPWDBExperiment.model_training()
