@@ -6,18 +6,14 @@
 # Email: mclaurentiu79@gmail.com
 
 import logging
-import os
 import unittest
-from pathlib import Path
 
 from airflow.models import DagBag
 
 from sem_covid.entrypoints.etl_dags.pwdb import DAG_NAME
+from tests.dags import TEST_AIRFLOW_DAG_FOLDER
 
 logger = logging.getLogger(__name__)
-
-TEST_AIRFLOW_DAG_FOLDER = Path(__file__).parent.parent.parent / "sem_covid/"
-os.environ["AIRFLOW_HOME"] = str(TEST_AIRFLOW_DAG_FOLDER)
 
 
 class Test_PWDB_DAG(unittest.TestCase):
