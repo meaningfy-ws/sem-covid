@@ -35,10 +35,15 @@ create-indexes:
 	@ curl -X PUT "http://localhost:9200/ds_treaties" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_treaties_mapping.json
 	@ curl -X PUT "http://localhost:9200/ds_eu_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_eu_timeline_mapping.json
 	@ curl -X PUT "http://localhost:9200/ds_ireland_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_ireland_timeline_mapping.json
+	@ curl -X PUT "http://localhost:9200/ds_finreg_cellar" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_eu_cellar_mapping.json
 
 all: install
 
-test:
+testing_airflow_environment:
+	@ echo "$(BUILD_PRINT)Running the Airflow testing environment"
+
+
+test: testing_airflow_environment
 	@ echo "$(BUILD_PRINT)Running the tests"
 	@ pytest -s --html=report.html --self-contained-html
 
@@ -76,3 +81,5 @@ vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
 	@ vault kv get -format="json" mfy/sem-covid | jq -r ".data.data" > tmp7.json
 	@ jq -s '.[0] * .[1] * .[2] * .[3] * .[4] * .[5] * .[6]' tmp*.json> variables.json
 	@ rm tmp*.json
+
+
