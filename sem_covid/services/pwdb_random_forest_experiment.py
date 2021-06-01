@@ -164,13 +164,13 @@ class ModelTraining:
                 mlflow.log_metrics(evaluation)
                 # mlflow.sklearn.save_model(sk_model=model,path="models/"+class_name+"_"+self.model_name)
                 # TODO : log_model don't work, auth error
-                '''
+
                 mlflow.sklearn.log_model(
                     sk_model=model,
-                    artifact_path="models",
+                    artifact_path=class_name+"_"+self.model_name,
                     registered_model_name=class_name+"_"+self.model_name
                 )
-                '''
+
 
     def execute(self):
         self.load_feature_set()

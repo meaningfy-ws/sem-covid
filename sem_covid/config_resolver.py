@@ -64,6 +64,7 @@ class VaultAndEnvConfigResolver(EnvConfigResolver):
             "[VAULT&ENV] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
                 default_value) + "')")
         if value is not None:
+            os.environ[config_name] = str(value)
             return value
         else:
             value = super()._config_resolve(config_name, default_value)
