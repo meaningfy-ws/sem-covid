@@ -1,4 +1,4 @@
-from sem_covid.services.pwdb_random_forest_experiment import RandomForestPWDBExperiment, FeatureEngineering
+from sem_covid.services.pwdb_random_forest_experiment import RandomForestPWDBExperiment
 
 
 def test_random_forest_pwdb_feature_engineering():

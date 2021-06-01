@@ -2,9 +2,9 @@ import mlflow
 import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import model_selection
-from sklearn.base import ClassifierMixin
+from sklearn.base import ClassifierMixin, clone
 from sklearn.ensemble import RandomForestClassifier
-
+from sklearn import preprocessing
 from sem_covid import config
 from sem_covid.services.base_pipeline import BaseExperiment
 from sem_covid.services.data_registry import Dataset, LanguageModel
@@ -31,7 +31,9 @@ WORKERS = {'Cross-border commuters', 'Disabled workers', 'Employees in standard 
 TEXTUAL_COLUMNS = ['title', 'background_info_description', 'content_of_measure_description',
                    'use_of_measure_description', 'involvement_of_social_partners_description']
 
-CLASS_COLUMNS = ['businesses', 'citizens', 'workers']
+SIMPLE_CLASS_COLUMNS = ['category', 'subcategory', 'type_of_measure']
+
+CLASS_COLUMNS = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure']
 
 TRAIN_COLUMNS = ['x_train', 'x_test', 'y_train', 'y_test', 'class_name']
 
@@ -65,13 +67,18 @@ class FeatureEngineering:
         self.l2v_dict = {w: vec for w, vec in zip(law2vec_format.index_to_key, law2vec_format.vectors)}
 
     def transform_data(self):
-
         pwdb_dataframe = self.df
         new_columns = {'businesses': BUSINESSES, 'citizens': CITIZENS, 'workers': WORKERS}
         refactored_pwdb_df = pwdb_dataframe['target_groups']
         for column, class_set in new_columns.items():
             pwdb_dataframe[column] = refactored_pwdb_df.apply(lambda x: any(item in class_set for item in x))
             pwdb_dataframe[column].replace({True: 1, False: 0}, inplace=True)
+
+        for column in SIMPLE_CLASS_COLUMNS:
+            le = preprocessing.LabelEncoder()
+            le.fit(pwdb_dataframe[column])
+            pwdb_dataframe[column] = le.transform(pwdb_dataframe[column])
+
         self.df = pwdb_dataframe
         self.df = self.df.set_index(self.df.columns[0])
         self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
@@ -136,7 +143,7 @@ class ModelTraining:
 
     def train_model(self):
         for it, row in self.train_features.iterrows():
-            model = self.model
+            model = clone(self.model)
             model = model.fit(row['x_train'],
                               row['y_train'])
             self.trained_models.append((model, row))
