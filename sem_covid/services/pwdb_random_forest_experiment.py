@@ -31,9 +31,11 @@ WORKERS = {'Cross-border commuters', 'Disabled workers', 'Employees in standard 
 TEXTUAL_COLUMNS = ['title', 'background_info_description', 'content_of_measure_description',
                    'use_of_measure_description', 'involvement_of_social_partners_description']
 
-SIMPLE_CLASS_COLUMNS = ['category', 'subcategory', 'type_of_measure']
+SIMPLE_CLASS_COLUMNS = ['category', 'subcategory', 'type_of_measure', 'target_groups',
+                        'actors']
 
-CLASS_COLUMNS = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure']
+CLASS_COLUMNS = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure', 'target_groups',
+                 'actors']
 
 TRAIN_COLUMNS = ['x_train', 'x_test', 'y_train', 'y_test', 'class_name']
 
@@ -73,7 +75,8 @@ class FeatureEngineering:
         for column, class_set in new_columns.items():
             pwdb_dataframe[column] = refactored_pwdb_df.apply(lambda x: any(item in class_set for item in x))
             pwdb_dataframe[column].replace({True: 1, False: 0}, inplace=True)
-
+        pwdb_dataframe['target_groups'] = pwdb_dataframe['target_groups'].apply(lambda x: " ".join(x))
+        pwdb_dataframe['actors'] = pwdb_dataframe['actors'].apply(lambda x: " ".join(x))
         for column in SIMPLE_CLASS_COLUMNS:
             le = preprocessing.LabelEncoder()
             le.fit(pwdb_dataframe[column])
@@ -162,15 +165,11 @@ class ModelTraining:
             with mlflow.start_run():
                 mlflow.log_param("class_name", class_name)
                 mlflow.log_metrics(evaluation)
-                # mlflow.sklearn.save_model(sk_model=model,path="models/"+class_name+"_"+self.model_name)
-                # TODO : log_model don't work, auth error
-
                 mlflow.sklearn.log_model(
                     sk_model=model,
-                    artifact_path=class_name+"_"+self.model_name,
-                    registered_model_name=class_name+"_"+self.model_name
+                    artifact_path=class_name + "_" + self.model_name,
+                    registered_model_name=class_name + "_" + self.model_name
                 )
-
 
     def execute(self):
         self.load_feature_set()
