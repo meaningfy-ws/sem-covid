@@ -3,7 +3,7 @@ from collections import Counter
 import pandas as pd
 
 
-def calculate_frequency(data: pd.Series, title: str, relative: bool = False):
+def calculate_frequency(data: pd.Series, title: str, relative: bool = False) -> pd.DataFrame:
     """
     Functions to calculate frequency for textual data
     """
@@ -13,4 +13,5 @@ def calculate_frequency(data: pd.Series, title: str, relative: bool = False):
     if relative:
         observation[observation_type_name] /= observation[observation_type_name].sum() / 100
         observation[observation_type_name] = round(observation[observation_type_name], 2)
+
     return observation

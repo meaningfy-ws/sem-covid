@@ -6,7 +6,7 @@ def convert_to_binary_matrix(data: pd.DataFrame) -> pd.DataFrame:
     """
      Function to get binary-matrix from DataFrame
     """
-    binary_matrix = pd.DataFrame([],dtype=object)
+    binary_matrix = pd.DataFrame([], dtype=object)
     for index, row in data.iterrows():
         new_row = {}
         for key in row.index:
@@ -20,6 +20,7 @@ def convert_to_binary_matrix(data: pd.DataFrame) -> pd.DataFrame:
                 new_row[row[key]] = 1
         binary_matrix = binary_matrix.append(new_row, ignore_index=True)
     binary_matrix = binary_matrix.fillna(0)
+
     return binary_matrix
 
 
@@ -39,4 +40,5 @@ def dependency_table(data: pd.DataFrame, dependency_level: float = 0.9) -> pd.Da
             for index in tmp.index:
                 new_row[index] = tmp[index]
             result[column] = new_row
+
     return pd.DataFrame(result).fillna(0)
