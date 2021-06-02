@@ -9,7 +9,8 @@ BUILD_PRINT = \e[1;34mSTEP: \e[0m
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
-	@ pip install -r requirements.txt --use-deprecated legacy-resolver
+	@ pip install "apache-airflow==2.1.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.1.0/constraints-3.8.txt"
+	@ pip install -r requirements.txt --use-deprecated legacy-resolver --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.1.0/constraints-3.8.txt"
 	@ python -m spacy download en_core_web_sm
 
 #	TODO refactor
@@ -42,6 +43,15 @@ all: install
 make_testing_airflow_environment:
 	@ echo "$(BUILD_PRINT)Running the Airflow testing environment"
 	@ airflow db init
+	@ airflow users create \
+		--username admin \
+		--firstname Info \
+		--lastname Meaningfy \
+		--role Admin \
+		--password admin \
+		--email info@meaningfy.ws
+	@ airflow webserver --port 8080 &
+	@ airflow scheduler &
 
 test: make_testing_airflow_environment
 	@ echo "$(BUILD_PRINT)Running the tests"

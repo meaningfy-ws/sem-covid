@@ -8,6 +8,7 @@ from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.binary_matrix import conv
 
 
 def test_confidence_interval_with_mean(transformed_pwdb_dataframe):
+    # TODO: fix it
     pwdb_binary = convert_to_binary_matrix(transformed_pwdb_dataframe)
     confidence_interval_mean = confidence_interval_with_mean(pwdb_binary['Austria'])
 
@@ -17,6 +18,7 @@ def test_confidence_interval_with_mean(transformed_pwdb_dataframe):
 
 
 def test_confidence_interval_for_proportion(transformed_pwdb_dataframe):
+    # TODO: fix it
     pwdb_binary = convert_to_binary_matrix(transformed_pwdb_dataframe)
     confidence_interval_proportion = confidence_interval_for_proportion(pwdb_binary['Austria'])
 
@@ -26,6 +28,7 @@ def test_confidence_interval_for_proportion(transformed_pwdb_dataframe):
 
 
 def test_z_score_for_series(transformed_pwdb_dataframe):
+    # TODO: fix it
     pwdb_binary = convert_to_binary_matrix(transformed_pwdb_dataframe)
     series_z_score = z_score_for_series(pwdb_binary['Austria'])
 

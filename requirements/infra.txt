@@ -7,7 +7,7 @@ mlflow
 boto3
 sparqlwrapper
 es-pandas
-apache-airflow>=2
+apache-airflow>=2.1.0
 scrapy
 scrapy-splash
 tika
