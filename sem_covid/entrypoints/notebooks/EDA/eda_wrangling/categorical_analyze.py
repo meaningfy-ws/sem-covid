@@ -11,7 +11,7 @@ from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.data_observations import 
 logger = logging.getLogger(__name__)
 
 
-def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data_title: str = 'Unknown'):
+def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data_title: str = 'Unknown') -> dict:
     results = {}
     abs_miss_obs = calc_freq_missing_data(data)
     display(abs_miss_obs)
