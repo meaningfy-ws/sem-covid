@@ -8,7 +8,7 @@ from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.data_observations import 
                                                                                  calc_freq_categorical_data)
 
 
-def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data_title: str = 'Unknown'):
+def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data_title: str = 'Unknown') -> dict:
     results = {}
     abs_miss_obs = calc_freq_missing_data(data)
     display(abs_miss_obs)
@@ -25,7 +25,8 @@ def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data
             display(rel_obs)
             plot_bar_chart(rel_obs, column_name).show()
             plot_pie_chart(rel_obs, column_name).show()
-        except:
+        except Exception as e:
             print('Observation on [', column_name, '] fault!')
             print('Check if column [', column_name, '] have compatible type!')
+
     return results
