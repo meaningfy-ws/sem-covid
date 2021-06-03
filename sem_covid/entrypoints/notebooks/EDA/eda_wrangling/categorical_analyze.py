@@ -1,3 +1,4 @@
+import logging
 
 from IPython.display import display
 
@@ -7,6 +8,8 @@ from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.data_observations import 
                                                                                  calc_freq_missing_data,
                                                                                  calc_freq_categorical_data)
 
+logger = logging.getLogger(__name__)
+
 
 def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data_title: str = 'Unknown') -> dict:
     results = {}
@@ -14,7 +17,7 @@ def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data
     display(abs_miss_obs)
 
     if abs_miss_obs.size > 0:
-        plot_pie_chart(abs_miss_obs, data_title+' missing values').show()
+        plot_pie_chart(abs_miss_obs, data_title + ' missing values').show()
     data = data[categorical_columns]
     for column_name in data.columns:
         data_column = data[column_name].explode()
@@ -25,8 +28,7 @@ def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data
             display(rel_obs)
             plot_bar_chart(rel_obs, column_name).show()
             plot_pie_chart(rel_obs, column_name).show()
-        except Exception as e:
-            print('Observation on [', column_name, '] fault!')
-            print('Check if column [', column_name, '] have compatible type!')
-
+        except:
+            logger.error('Observation on [', column_name, '] fault!')
+            logger.error('Check if column [', column_name, '] have compatible type!')
     return results

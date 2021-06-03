@@ -279,7 +279,6 @@ with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_act
                                    python_callable=download_and_split_callable, retries=1, dag=dag)
 
     execute_worker_dags = PythonOperator(task_id='execute_worker_dags',
-                                         python_callable=execute_worker_dags_callable, retries=1, dag=dag,
-                                         provide_context=True)
+                                         python_callable=execute_worker_dags_callable, retries=1, dag=dag, )
 
     download_task >> execute_worker_dags

@@ -193,11 +193,11 @@ default_args = {
 with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
     download_documents_and_enrich_json = PythonOperator(
         task_id=f'Enrich',
-        python_callable=download_documents_and_enrich_json_callable, retries=1, dag=dag, provide_context=True)
+        python_callable=download_documents_and_enrich_json_callable, retries=1, dag=dag, )
 
     extract_content_with_tika = PythonOperator(
         task_id=f'Tika',
-        python_callable=extract_content_with_tika_callable, retries=1, dag=dag, provide_context=True)
+        python_callable=extract_content_with_tika_callable, retries=1, dag=dag,)
 
     upload_to_elastic = PythonOperator(
         task_id=f'Elasticsearch',

@@ -9,7 +9,6 @@ def test_convert_to_binary_matrix(transformed_pwdb_dataframe):
     testing_df = transformed_pwdb_dataframe.drop('sources', axis=1)
     pwdb_binary_matrix = convert_to_binary_matrix(testing_df)
 
-    print(pwdb_binary_matrix)
     assert len(pwdb_binary_matrix) == 2
     assert type(pwdb_binary_matrix) == pd.core.frame.DataFrame
     assert pwdb_binary_matrix.shape[0] == 2
