@@ -8,9 +8,10 @@ BUILD_PRINT = \e[1;34mSTEP: \e[0m
 
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
+	@ echo "$(BUILD_PRINT)Warning: this setup depends on the Airflow 2.1 constraints. If you upgrade the Airflow version, make sure to adjust the constraint file reference."
 	@ pip install --upgrade pip
-	@ pip install "apache-airflow==2.1.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-master/constraints-3.8.txt"
-	@ pip install -r requirements.txt --use-deprecated legacy-resolver --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-master/constraints-3.8.txt"
+	@ pip install "apache-airflow==2.1.0" --constraint "https://github.com/apache/airflow/blob/constraints-2-1/constraints-no-providers-3.8.txt"
+	@ pip install -r requirements.txt --use-deprecated legacy-resolver --constraint "https://github.com/apache/airflow/blob/constraints-2-1/constraints-no-providers-3.8.txt"
 	@ python -m spacy download en_core_web_sm
 
 #	TODO refactor

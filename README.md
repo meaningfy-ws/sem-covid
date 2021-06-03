@@ -64,6 +64,27 @@ Accessing the Airflow interface: on your [`localhost:8978`](http://localhost:897
 
 Accessing the JupiterLab interface: on your [`localhost:8888`](http://localhost:8888).
 
+## Setup development environment
+
+Clone the ``sem-covid`` repository from GitHub:  
+```
+git clone https://github.com/meaningfy-ws/sem-covid
+cd sem-covid
+```
+
+Create a local venv:
+```
+python -m venv venv
+source venv/bin/activate
+```
+
+Set up the environment
+```
+make install
+```
+
+Warning: this setup depends on the Airflow 2.1 constraints. If you upgrade the Airflow version, make sure to adjust the constraint file reference in the `Makefile`. Currently the Airflow wersion is 2.1.0 and the constraint file is [`https://github.com/apache/airflow/blob/constraints-2-1/constraints-no-providers-3.8.txt`](https://github.com/apache/airflow/blob/constraints-2-1/constraints-no-providers-3.8.txt).
+
 ## Experiment's workflow
 When the dataset reaches a significant extent, it shall be cleaned up and prepared for use in a series of 
 Machine Learning (ML), Natural Language Processing (NLP) and Exploratory Data Analysis (EDA) tasks. These 
