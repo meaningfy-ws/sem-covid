@@ -1,6 +1,5 @@
 import json
 import pathlib
-from pathlib import Path
 
 import pytest
 from elasticsearch import Elasticsearch
@@ -14,16 +13,6 @@ def scenario_context() -> dict:
         "test_data_directory": pathlib.Path(__file__).resolve().parents[1] / "test_data/pwdb",
         "index_name": "ds_pwdb"
     }
-
-
-# @pytest.fixture(scope="module")
-# def elasticsearch_client():
-#     print("Instantiating Elasticsearch client . . . ")
-#     elasticsearch = ESIndexStore(config.ELASTICSEARCH_HOST_NAME, config.ELASTICSEARCH_PORT,
-#                               config.ELASTICSEARCH_USERNAME, config.ELASTICSEARCH_PASSWORD)
-#
-#     return elasticsearch
-
 
 @pytest.fixture(scope="module")
 def elasticsearch_client():

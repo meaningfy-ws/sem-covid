@@ -1,5 +1,8 @@
+import logging
 
 import pandas as pd
+
+logger = logging.getLogger(__name__)
 
 
 def convert_to_binary_matrix(data: pd.DataFrame) -> pd.DataFrame:
@@ -15,7 +18,7 @@ def convert_to_binary_matrix(data: pd.DataFrame) -> pd.DataFrame:
                     try:
                         new_row[column] = 1
                     except Exception as e:
-                        print(column, type(column))
+                        logger.error(f"Column type {type(column)}; column content {column} ")
             else:
                 new_row[row[key]] = 1
         binary_matrix = binary_matrix.append(new_row, ignore_index=True)

@@ -37,6 +37,7 @@ class FakeMinioClient(Minio):
 
     def __init__(self):
         self.storage = dict()
+        self._http = dict()
 
     def put_object(self, bucket_name, object_name, data, length, content_type="application/octet-stream", metadata=None,
                    sse=None, progress=None, part_size=0, num_parallel_uploads=3, tags=None, retention=None,
