@@ -21,6 +21,8 @@ for a new dataset with document mappings, indicating possible correspondence bet
 to COVID-19 crisis.
 
 ## Datasets
+This project covers the data extraction and preparation for the machine learning and data analysis exercises. The `docs/data-catalogue` folder hosts the data. The following datasets are currently available.  
+
 - *Policy watch database (ds_pwdb)* - A suitable set of summarised descriptions of 
   what a COVID-19 measure looks like.
   - [Readme](docs/data-catalog/ds_pwdb.md)
@@ -37,15 +39,38 @@ to COVID-19 crisis.
   - [Readme](docs/data-catalog/ds_ireland_tinmeline.md)
   - [Download](docs/data-catalog/ds_ireland_tinmeline.zip)
 
-  
+## Running the code
+
+The source code is organised to be executed as either [Jupiter Notebooks](https://jupyter.org/) or [Airflow DAGs](https://airflow.apache.org/). The notebooks comprises various exploratory exercises and are available in the ``/sem_covid/entrypoints/notebooks`` folder. The Airflow DAGs are production oriented and can be found in the ``sem_covid/entrypoints/etl_dags`` (the data related processes) and in the ``sem_covid/entrypoints/ml_dags`` (the machine learning processes).
+
+The source code is developed with reliance on specific infrastructure services and configurations. The infrastructure code is provided in [``sem-covid-infra``](https://github.com/meaningfy-ws/sem-covid-infra) project. The easiest way to run code in this project (notebooks and DAGs) is to spawn the infrastructure and deploy this project there. To do so follow these instructions on Linux operating system: 
+
+Cloning the ``sem-covid-infra`` repository from GitHub:  
+```
+git clone https://github.com/meaningfy-ws/sem-covid-infra
+```
+
+Starting all services at once:
+```
+make start-services-all
+```
+
+Deploying ``sem-covid`` project in Airflow: 
+```
+make deploy-to-airflow
+```
+
+Accessing the Airflow interface: on your [`localhost:8978`](http://localhost:8978). 
+
+Accessing the JupiterLab interface: on your [`localhost:8888`](http://localhost:8888).
+
 ## Experiment's workflow
 When the dataset reaches a significant extent, it shall be cleaned up and prepared for use in a series of 
 Machine Learning (ML), Natural Language Processing (NLP) and Exploratory Data Analysis (EDA) tasks. These 
 tasks need to be conceived as documented experiments that follow a “cycle of experimentation” comprising 
 (a) the data analysis and preparation phase, (b) feature engineering and model training phase and (c) the 
 maintenance, deployment and improvement phase, which subsequently may lead back to the data analysis and 
-preparation phase and so entering the next experimentation cycle. 
-
+preparation phase and so entering the next experimentation cycle.
 
 ## Project Structure
 - `/docker` - the docker files representing specification and configurations for running the services on a target server
