@@ -7,5 +7,5 @@ def test_pwdb_has_two_tasks_and_order(airflow_dag_bag):
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
-    assert {'dataset_preparation', 'dataset_enrichment'}.issubset(set(task_ids))
+    assert {'feature_engineering', 'model_training'}.issubset(set(task_ids))
 
