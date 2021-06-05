@@ -354,7 +354,7 @@ def transformed_pwdb_dataframe():
 
 
 @pytest.fixture(scope="session")
-def tokenized_textual_pwdb_series():
+def tokenized_textual_pwdb_series(transformed_pwdb_dataframe):
     nlp = spacy.load("en_core_web_sm")
     document_corpus = transformed_pwdb_dataframe['title'].map(str) + '. ' + \
                       transformed_pwdb_dataframe['background_info_description'].map(str) + '. ' + \
