@@ -1,6 +1,7 @@
 import re
 import string
 import warnings
+from typing import List
 
 import pandas as pd
 from cleantext import clean
@@ -63,15 +64,11 @@ def clean_remove_stopwords(text: str) -> str:
     return " ".join([word for word in text.split() if word not in stop_words])
 
 
-def clean_text_from_specific_characters(document: pd.Series, characters: list) -> str:
-
-    text = clean_remove_stopwords(str(document.values))
-
+def clean_text_from_specific_characters(text: str, characters: List[str]) -> str:
+    result = text
     for character in characters:
-        if character in text:
-            text = text.replace(character, "")
-
-    return text
+        result = result.replace(character, "")
+    return result
 
 
 def prepare_text_for_cleaning(text: str):
