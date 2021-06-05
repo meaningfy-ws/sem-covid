@@ -7,7 +7,6 @@ def test_filter_stop_words(tokenized_textual_pwdb_series):
     corpus_without_stopwords = tokenized_textual_pwdb_series.apply(filter_stop_words, spacy_stop_words)
 
     assert pd.Series == type(corpus_without_stopwords)
-    assert Token == type(corpus_without_stopwords[0])
 
 
 def test_filter_pos(tokenized_textual_pwdb_series):
