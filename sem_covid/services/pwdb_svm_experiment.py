@@ -17,7 +17,6 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC, LinearSVC
 
-from sem_covid import config
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
 from sem_covid.services.sc_wrangling.mean_vectorizer import MeanEmbeddingVectorizer
@@ -46,8 +45,8 @@ class SVMPWDBExperiment(PWDBBaseExperiment):
     def model_training(self, *args, **kwargs):
         train_test_dataset = pickle.loads(self.minio_adapter.get_object(PWDB_TRAIN_TEST))
 
-        law2vec = LanguageModel.LAW2VEC.fetch()
-        law2vec_format = KeyedVectors.load_word2vec_format(law2vec, binary=True)
+        law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
+        law2vec_format = KeyedVectors.load_word2vec_format(law2vec_path, binary=True)
 
         l2v_dict = {w: vec for w, vec in zip(law2vec_format.index_to_key, law2vec_format.vectors)}
 
