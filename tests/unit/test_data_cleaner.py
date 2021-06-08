@@ -21,7 +21,9 @@ def test_clean_to_lower():
 
 
 def test_clean_remove_line_breaks():
-    pass
+    test = "PC      Master      Race"
+    test = clean_remove_line_breaks(test)
+    assert "PC Master Race" == test
 
 
 def test_clean_remove_urls():
@@ -44,7 +46,7 @@ def test_clean_remove_numbers():
 
 def test_clean_remove_digits():
     test = "Hello 2020 World!"
-    test = clean_remove_digits(test, replace_with="0")
+    test = clean_remove_digits(test)
     assert test == "Hello 0000 World!"
 
 
@@ -64,3 +66,12 @@ def test_clean_remove_stopwords():
     test = "This is simple text for test!"
     test = clean_remove_stopwords(test)
     assert test == "This simple text test!"
+
+
+def test_clean_text_from_specific_characters():
+    characters = ["<", ">"]
+    text = "there is > in < donezia"
+    test = clean_text_from_specific_characters(text, characters)
+
+    assert "<" and ">" not in test
+    assert "there is in donezia" == test

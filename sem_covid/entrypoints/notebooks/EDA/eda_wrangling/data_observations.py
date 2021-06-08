@@ -29,9 +29,9 @@ def eda_display_result(result: pd.DataFrame, chart_title: str, bar_char: bool = 
         display(Markdown(chart_title))
         display(tuple(result))
         if bar_char:
-            plot_bar_chart(result, chart_title).show()
+            return plot_bar_chart(result, chart_title).show()
         if pie_chart:
-            plot_pie_chart(result, chart_title).show()
+            return plot_pie_chart(result, chart_title).show()
 
 
 def calc_freq_categorical_data(data: pd.Series, title: str, relative: bool = False) -> pd.DataFrame:
