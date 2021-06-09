@@ -24,7 +24,7 @@ def filter_pos(doc: Doc, pos: Union[str, List[str]]) -> List[Token]:
     """
         filter out tokens that have the provided POS
     """
-    if isinstance(pos,str):
+    if isinstance(pos, str):
         poses = [pos]
     else:
         poses = pos
