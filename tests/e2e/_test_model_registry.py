@@ -1,4 +1,4 @@
-from sem_covid.services.model_registry import ClassificationModel
+from sem_covid.services.model_registry import ClassificationModel, get_best_model_from_ml_flow
 
 
 def test_model_registry():
@@ -9,3 +9,5 @@ def test_model_registry():
     assert ClassificationModel.PWDB_SUBCATEGORY is not None
     assert ClassificationModel.PWDB_TARGET_GROUPS is not None
     assert ClassificationModel.PWDB_TYPE_OF_MEASURE is not None
+    assert ClassificationModel.pwdb_by_class_name('workers') is not None
+    assert ClassificationModel.pwdb_by_class_name('Orange') is None
