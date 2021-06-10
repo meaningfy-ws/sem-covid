@@ -1,4 +1,4 @@
-from sem_covid.services.model_registry import ClassificationModel, get_best_model_from_ml_flow
+from sem_covid.services.model_registry import ClassificationModel
 
 
 def test_model_registry():
