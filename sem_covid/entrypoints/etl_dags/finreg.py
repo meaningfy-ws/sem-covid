@@ -214,17 +214,15 @@ WHERE {
 GROUP BY ?work'''
 
 
-def make_request(query):
-    wrapper = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
-    wrapper.setQuery(query)
-    wrapper.setReturnFormat(JSON)
+def make_request(query, wrapperSPARQL):
+    wrapperSPARQL.setQuery(query)
+    wrapperSPARQL.setReturnFormat(JSON)
 
-    return wrapper.query().convert()
+    return wrapperSPARQL.query().convert()
 
 
-def get_single_item(query, json_file_name):
-    minio = StoreRegistry.minio_object_store(config.EU_FINREG_CELLAR_BUCKET_NAME)
-    response = make_request(query)['results']['bindings']
+def get_single_item(query, json_file_name, wrapperSPARQL, minio):
+    response = make_request(query, wrapperSPARQL)['results']['bindings']
     uploaded_bytes = minio.put_object(json_file_name, json.dumps(response).encode('utf-8'))
     logger.info(f'Save query result to {json_file_name}')
     logger.info('Uploaded ' +
@@ -236,13 +234,14 @@ def get_single_item(query, json_file_name):
 
 
 def download_and_split_callable():
+    wrapperSPARQL = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     minio = StoreRegistry.minio_object_store(config.EU_FINREG_CELLAR_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
 
-    get_single_item(QUERY, config.EU_FINREG_CELLAR_JSON)
+    get_single_item(QUERY, config.EU_FINREG_CELLAR_JSON, wrapperSPARQL, minio)
 
 
 def execute_worker_dags_callable(**context):
