@@ -14,6 +14,7 @@ from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 from tests.unit.test_store.fake_storage import FakeIndexStore
 
+nlp = spacy.load("en_core_web_sm")
 
 def raw_pwdb_data():
     raw_sample = [{
@@ -285,6 +286,13 @@ def raw_pwdb_data():
         }]
 
     return raw_sample
+
+
+@pytest.fixture(scope="session")
+def spacy_document():
+    text = "That moment when that happens."
+
+    return nlp(text)
 
 
 @pytest.fixture(scope="session", name="raw_pwdb_data")
