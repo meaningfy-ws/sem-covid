@@ -2,8 +2,8 @@ import pandas as pd
 from gensim.models import KeyedVectors
 
 from sem_covid.services.data_registry import LanguageModel
-from sem_covid.services.ml_flow_models import get_best_model_from_ml_flow
 from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.model_registry import ClassificationModel
 
 EMBEDDING_COLUMN = "embeddings"
 
@@ -78,8 +78,7 @@ class BaseEnrichPipeline:
     def load_ml_flow_models(self):
         self.models = {}
         for class_name in self.class_names:
-            self.models[class_name] = get_best_model_from_ml_flow(experiment_ids=self.experiments_ids,
-                                                                  class_name=class_name)
+            self.models[class_name] = ClassificationModel.pwdb_by_class_name(class_name=class_name)
 
     def enrich_dataset(self):
         for class_name in self.class_names:
