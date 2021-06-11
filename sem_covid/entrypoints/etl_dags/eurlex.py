@@ -423,18 +423,16 @@ sources = {
 }
 
 
-def make_request(query):
-    wrapper = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
-    wrapper.setQuery(query)
-    wrapper.setReturnFormat(JSON)
+def make_request(query, wrapperSPARQL):
+    wrapperSPARQL.setQuery(query)
+    wrapperSPARQL.setReturnFormat(JSON)
 
-    return wrapper.query().convert()
+    return wrapperSPARQL.query().convert()
 
 
-def get_single_item(query, json_file_name):
-    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
-    response = make_request(query)['results']['bindings']
-    eurlex_json_dataset = json_transformer.transform_eurlex(response)
+def get_single_item(query, json_file_name, wrapperSPARQL, minio, transformer):
+    response = make_request(query, wrapperSPARQL)['results']['bindings']
+    eurlex_json_dataset = transformer(response)
     uploaded_bytes = minio.put_object(json_file_name, json.dumps(eurlex_json_dataset).encode('utf-8'))
     logger.info(f'Save query result to {json_file_name}')
     logger.info('Uploaded ' + str(
@@ -443,6 +441,7 @@ def get_single_item(query, json_file_name):
 
 
 def download_and_split_callable():
+    wrapperSPARQL = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
@@ -451,7 +450,8 @@ def download_and_split_callable():
 
     for key in sources:
         logger.info(f"Downloading JSON file for {key}:")
-        transformed_json = get_single_item(sources[key]["query"], sources[key]["json"])
+        transformed_json = get_single_item(sources[key]["query"], sources[key]["json"], wrapperSPARQL, minio,
+                                           transformer=json_transformer.transform_eurlex)
 
         list_count = len(transformed_json)
         current_item = 0
