@@ -37,14 +37,6 @@ with DAG('slave_architecture_test_006', start_date=datetime(2020, 5, 15), schedu
         dag_run_conf = context['dag_run'].conf
         logger.info(str(dag_run_conf))
 
-
-    # def check_xcom_callable():
-    #     logger.info("...done")
-    #
-    #
-    # branching_task = BranchPythonOperator(task_id="check_xcom", python_callable=check_xcom_callable,
-    #                                       provide_context=True, dag=dag)
-
     task1 = PythonOperator(task_id='task1',
                            python_callable=task1_callable, retries=1)
     task2 = PythonOperator(task_id='task2',

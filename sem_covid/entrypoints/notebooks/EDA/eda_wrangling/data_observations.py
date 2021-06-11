@@ -11,6 +11,7 @@ def plot_bar_chart(observations: pd.DataFrame, chart_title: str) -> px:
         Function for plot bar chart on observations
     """
     columns = observations.columns
+
     return px.bar(observations, x=columns[1], y=columns[0], title=chart_title)
 
 
@@ -19,20 +20,21 @@ def plot_pie_chart(observations: pd.DataFrame, chart_title: str) -> px:
     Function for plot pie chart on observations
     """
     columns = observations.columns
+
     return px.pie(observations, values=columns[1], names=columns[0], title=chart_title)
 
 
-def eda_display_result(result : pd.DataFrame,chart_title : str, bar_char : bool = True,pie_chart : bool = True):
-    if result.size > 0 :
+def eda_display_result(result: pd.DataFrame, chart_title: str, bar_char: bool = True, pie_chart: bool = True):
+    if result.size > 0:
         display(Markdown(chart_title))
         display(tuple(result))
         if bar_char:
-            plot_bar_chart(result, chart_title).show()
+            return plot_bar_chart(result, chart_title).show()
         if pie_chart:
-            plot_pie_chart(result, chart_title).show()
+            return plot_pie_chart(result, chart_title).show()
 
 
-def calc_freq_categorical_data(data: pd.Series, title: str, relative: bool = False):
+def calc_freq_categorical_data(data: pd.Series, title: str, relative: bool = False) -> pd.DataFrame:
     """
     Function for making observations on categorical data
     """
@@ -42,10 +44,11 @@ def calc_freq_categorical_data(data: pd.Series, title: str, relative: bool = Fal
     if relative:
         observation[observation_type_name] /= observation[observation_type_name].sum() / 100
         observation[observation_type_name] = round(observation[observation_type_name], 2)
+
     return observation
 
 
-def calc_freq_missing_data(data: pd.DataFrame, relative: bool = False):
+def calc_freq_missing_data(data: pd.DataFrame, relative: bool = False) -> pd.DataFrame:
     """
     Function for making observations on missing data
     """
@@ -60,5 +63,6 @@ def calc_freq_missing_data(data: pd.DataFrame, relative: bool = False):
             tmp[column] = round(tmp[column], 2)
     observation = pd.DataFrame(tmp[tmp > 0], columns=[observation_type_name])
     observation.reset_index(inplace=True)
+
     return observation
 

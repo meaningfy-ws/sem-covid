@@ -30,122 +30,127 @@ TIKA_FILE_PREFIX = 'tika/'
 FIELD_DATA_PREFIX = "field_data/"
 logger = logging.getLogger(__name__)
 
+QUERY = """prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+            prefix lang: <http://publications.europa.eu/resource/authority/language/>
 
-def make_request(query):
-    wrapper = SPARQLWrapper(config.TREATIES_SPARQL_URL)
-    wrapper.setQuery(query)
-    wrapper.setReturnFormat(JSON)
-    return wrapper.query().convert()
+            select
+            distinct ?work
+            ?doc_id
+            ?title
+            ?comment
+            group_concat(distinct ?eurovocConcept; separator=", ") as ?eurovocConcepts
+            group_concat(distinct ?subjectMatter; separator=", ") as ?subjectMatters
+            group_concat(distinct ?directoryCode; separator=", ") as ?directoryCodes
+            ?dateCreated
+            ?dateDocument
+            ?legalDateSignature
+            ?legalDateEntryIntoForce
+            ?legalIdCelex
+            ?oj_sector
+            group_concat(distinct ?legalEli; separator=", ") as ?legalElis
+            group_concat(?createdBy; separator=", ") as ?authors
+            ?pdf_to_download
+            ?html_to_download
+            {
+                ?work a cdm:treaty;
+                        cdm:work_id_document ?doc_id.
+                OPTIONAL
+                {
+                    ?work cdm:resource_legal_id_sector ?oj_sector
+                }
+                optional {
+                ?work cdm:work_has_resource-type <http://publications.europa.eu/resource/authority/resource-type/TREATY>
+                }
+                optional {
+                ?work cdm:resource_legal_in-force "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+                }
+                optional {
+                    ?expression cdm:expression_belongs_to_work ?work. 
+                    ?expression cdm:expression_title ?title.
+                    ?expression cdm:expression_uses_language lang:ENG.
+
+                    OPTIONAL
+                    {
+                        ?manif_pdf cdm:manifestation_manifests_expression ?expression.
+                        ?manif_pdf cdm:manifestation_type ?type_pdf.
+                        FILTER(str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
+                    }
+
+                    OPTIONAL
+                    {
+                        ?manif_html cdm:manifestation_manifests_expression ?expression.
+                        ?manif_html cdm:manifestation_type ?type_html.
+                        FILTER(str(?type_html) in ('html', 'xhtml'))
+                    }
+
+                    BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
+                    BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+                }
+                optional {
+                ?work cdm:resource_legal_comment_internal ?comment .
+                }
+                optional {
+                ?work cdm:work_is_about_concept_eurovoc ?eurovocConcept 
+                }
+                optional {
+                ?work cdm:resource_legal_is_about_subject-matter ?subjectMatter 
+                }
+                optional {
+                ?work cdm:resource_legal_is_about_concept_directory-code ?directoryCode 
+                }
+                optional {
+                ?work cdm:work_created_by_agent ?createdBy .
+                }
+                optional {
+                ?work cdm:work_date_creation ?dateCreated .
+                }
+                optional {
+                ?work cdm:work_date_document ?dateDocument .
+                }
+                optional {
+                ?work cdm:resource_legal_date_signature ?legalDateSignature .
+                }
+                optional {
+                ?work cdm:resource_legal_date_entry-into-force ?legalDateEntryIntoForce .
+                }
+                optional {
+                ?work cdm:resource_legal_id_celex ?legalIdCelex .
+                }
+                optional {
+                ?work cdm:resource_legal_eli ?legalEli .
+                }
+                filter not exists{?work a cdm:fragment_resource_legal}.
+                filter not exists {?work cdm:work_embargo [].}
+                FILTER EXISTS {?manif cdm:manifestation_manifests_expression ?expression}
+            }
+            ORDER BY ?dateDocument"""
+
+
+def make_request(query, wrapperSPARQL):
+    wrapperSPARQL.setQuery(query)
+    wrapperSPARQL.setReturnFormat(JSON)
+
+    return wrapperSPARQL.query().convert()
+
+
+def get_single_item(query, json_file_name, wrapperSPARQL, minio):
+    response = make_request(query, wrapperSPARQL)['results']['bindings']
+    uploaded_bytes = minio.put_object(json_file_name, json.dumps(response).encode('utf-8'))
+    logger.info('Uploaded ' + str(
+        uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
+    return response
 
 
 def download_and_split_callable():
     logger.info(f'Start retrieving works of treaties..')
+    wrapperSPARQL = SPARQLWrapper(config.TREATIES_SPARQL_URL)
     minio = StoreRegistry.minio_object_store(config.TREATIES_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
-    query = """prefix cdm: <http://publications.europa.eu/ontology/cdm#>
-                prefix lang: <http://publications.europa.eu/resource/authority/language/>
 
-                select
-                distinct ?work
-                ?doc_id
-                ?title
-                ?comment
-                group_concat(distinct ?eurovocConcept; separator=", ") as ?eurovocConcepts
-                group_concat(distinct ?subjectMatter; separator=", ") as ?subjectMatters
-                group_concat(distinct ?directoryCode; separator=", ") as ?directoryCodes
-                ?dateCreated
-                ?dateDocument
-                ?legalDateSignature
-                ?legalDateEntryIntoForce
-                ?legalIdCelex
-                ?oj_sector
-                group_concat(distinct ?legalEli; separator=", ") as ?legalElis
-                group_concat(?createdBy; separator=", ") as ?authors
-                ?pdf_to_download
-                ?html_to_download
-                {
-                    ?work a cdm:treaty;
-                            cdm:work_id_document ?doc_id.
-                    OPTIONAL
-                    {
-                        ?work cdm:resource_legal_id_sector ?oj_sector
-                    }
-                    optional {
-                    ?work cdm:work_has_resource-type <http://publications.europa.eu/resource/authority/resource-type/TREATY>
-                    }
-                    optional {
-                    ?work cdm:resource_legal_in-force "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
-                    }
-                    optional {
-                        ?expression cdm:expression_belongs_to_work ?work. 
-                        ?expression cdm:expression_title ?title.
-                        ?expression cdm:expression_uses_language lang:ENG.
-
-                        OPTIONAL
-                        {
-                            ?manif_pdf cdm:manifestation_manifests_expression ?expression.
-                            ?manif_pdf cdm:manifestation_type ?type_pdf.
-                            FILTER(str(?type_pdf) in ('pdf', 'pdfa1a', 'pdfa2a', 'pdfa1b', 'pdfx'))
-                        }
-
-                        OPTIONAL
-                        {
-                            ?manif_html cdm:manifestation_manifests_expression ?expression.
-                            ?manif_html cdm:manifestation_type ?type_html.
-                            FILTER(str(?type_html) in ('html', 'xhtml'))
-                        }
-
-                        BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
-                        BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
-                    }
-                    optional {
-                    ?work cdm:resource_legal_comment_internal ?comment .
-                    }
-                    optional {
-                    ?work cdm:work_is_about_concept_eurovoc ?eurovocConcept 
-                    }
-                    optional {
-                    ?work cdm:resource_legal_is_about_subject-matter ?subjectMatter 
-                    }
-                    optional {
-                    ?work cdm:resource_legal_is_about_concept_directory-code ?directoryCode 
-                    }
-                    optional {
-                    ?work cdm:work_created_by_agent ?createdBy .
-                    }
-                    optional {
-                    ?work cdm:work_date_creation ?dateCreated .
-                    }
-                    optional {
-                    ?work cdm:work_date_document ?dateDocument .
-                    }
-                    optional {
-                    ?work cdm:resource_legal_date_signature ?legalDateSignature .
-                    }
-                    optional {
-                    ?work cdm:resource_legal_date_entry-into-force ?legalDateEntryIntoForce .
-                    }
-                    optional {
-                    ?work cdm:resource_legal_id_celex ?legalIdCelex .
-                    }
-                    optional {
-                    ?work cdm:resource_legal_eli ?legalEli .
-                    }
-                    filter not exists{?work a cdm:fragment_resource_legal}.
-                    filter not exists {?work cdm:work_embargo [].}
-                    FILTER EXISTS {?manif cdm:manifestation_manifests_expression ?expression}
-                }
-                ORDER BY ?dateDocument"""
-
-    treaties_json = make_request(query)['results']['bindings']
-    result = json.dumps(treaties_json)
-
-    uploaded_bytes = minio.put_object(config.TREATIES_JSON, str(result.encode('utf-8')))
-    logger.info('Uploaded ' + str(
-        uploaded_bytes) + ' bytes to bucket [' + config.TREATIES_BUCKET_NAME + '] at ' + config.MINIO_URL)
+    treaties_json = get_single_item(QUERY, config.TREATIES_JSON, wrapperSPARQL, minio)
 
     list_count = len(treaties_json)
     current_item = 0
@@ -190,7 +195,6 @@ with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_act
                                    python_callable=download_and_split_callable, retries=1, dag=dag)
 
     execute_worker_dags = PythonOperator(task_id='execute_worker_dags',
-                                         python_callable=execute_worker_dags_callable, retries=1, dag=dag,
-                                         provide_context=True)
+                                         python_callable=execute_worker_dags_callable, retries=1, dag=dag, )
 
     download_task >> execute_worker_dags

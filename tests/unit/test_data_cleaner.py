@@ -21,7 +21,9 @@ def test_clean_to_lower():
 
 
 def test_clean_remove_line_breaks():
-    pass
+    test = "PC \n Master \r Race"
+    test = clean_remove_line_breaks(test)
+    assert "PC Master Race" == test
 
 
 def test_clean_remove_urls():
@@ -43,9 +45,11 @@ def test_clean_remove_numbers():
 
 
 def test_clean_remove_digits():
-    test = "Hello 2020 World!"
-    test = clean_remove_digits(test, replace_with="0")
-    assert test == "Hello 0000 World!"
+    text = "Hello 2020 World!"
+    test_remove_digits = clean_remove_digits(text, replace_with="")
+    test_replace_digits = clean_remove_digits(text, replace_with="0")
+    assert test_replace_digits == "Hello 0000 World!"
+    assert test_remove_digits == "Hello World!"
 
 
 def test_clean_remove_punct():
@@ -61,16 +65,23 @@ def test_clean_remove_currency_symbols():
 
 
 def test_clean_remove_stopwords():
-    test = "This is simple text for test!"
-    test = clean_remove_stopwords(test)
-    assert test == "This simple text test!"
+    short_test = "This is simple text for test!"
+    medium_text = "i me my myself ... see some stopwords? It can't be"
+    long_text = "This is simple text for test! And basically that is true. This is really a simple test"
+
+    test_short_text = clean_remove_stopwords(short_test)
+    test_medium_text = clean_remove_stopwords(medium_text)
+    test_long_text = clean_remove_stopwords(long_text)
+
+    assert test_short_text == "This simple text test!"
+    assert test_medium_text == "... stopwords? It can't"
+    assert test_long_text == "This simple text test! And basically true. This simple test"
 
 
-def test_data_cleaner():
-    test_string = 'Hello World123 https:// [Dealing]'
+def test_clean_text_from_specific_characters():
+    characters = ["<", ">"]
+    text = "there is > in < donezia"
+    test = clean_text_from_specific_characters(text, characters)
 
-    actual = prepare_text_for_cleaning(test_string)
-    expected_text = ['hello', 'https', '']
-
-    assert len(actual) == len(expected_text)
-    assert all([a == b for a, b in zip(actual, expected_text)])
+    assert "<" and ">" not in test
+    assert "there is in donezia" == test

@@ -96,8 +96,9 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
             pwdb_dataframe['use_of_measure_description'] + ' ' + \
             pwdb_dataframe['involvement_of_social_partners_description']
 
+        # TODO: see that the text cleaning is considered (stop words removed for now)
         pwdb_dataframe['descriptive_data'] = pwdb_descriptive_data \
-            .apply(lambda x: data_cleaning.prepare_text_for_cleaning(x))
+            .apply(lambda x: data_cleaning.clean_remove_stopwords(x))
         pwdb_dataframe_columns = value_replacement.MultiColumnLabelEncoder(
             columns=['category', 'subcategory', 'type_of_measure']).fit_transform(pwdb_dataframe)
 

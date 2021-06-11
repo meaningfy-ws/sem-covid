@@ -38,7 +38,8 @@ class ESIndexStore(IndexStoreABC):
         return self._es_pandas.to_pandas(index=index_name)
 
     def put_dataframe(self, index_name: str, content: pd.DataFrame):
-        return self._es_pandas.to_es(df=content, index=index_name, use_index=True, thread_count=2, chunk_size=10000)
+        return self._es_pandas.to_es(df=content, index=index_name, use_pandas_json=True, use_index=True, thread_count=2,
+                                     chunk_size=10000)
 
     def dump(self, index_name: str, file_name: str, local_path: pathlib.Path = None,
              remote_store: ObjectStoreABC = None):

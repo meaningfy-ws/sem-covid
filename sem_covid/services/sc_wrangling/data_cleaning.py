@@ -1,6 +1,7 @@
 import re
 import string
 import warnings
+from typing import List
 
 import pandas as pd
 from cleantext import clean
@@ -56,46 +57,15 @@ def clean_remove_currency_symbols(text: str, replace_with: str = "<CUR>") -> str
 
 
 def clean_remove_stopwords(text: str) -> str:
+    """
+        This stop word cleaning function applies to English Language only.
+    """
     stop_words = nlp.Defaults.stop_words
     return " ".join([word for word in text.split() if word not in stop_words])
 
 
-def clean_text_from_specific_characters(document: pd.Series, characters: list) -> str:
-
-    text = clean_remove_stopwords(str(document.values))
-
+def clean_text_from_specific_characters(text: str, characters: List[str]) -> str:
+    result = text
     for character in characters:
-        if character in text:
-            text = text.replace(character, "")
-
-    return text
-
-
-def prepare_text_for_cleaning(text: str):
-    """
-        assuming we have text that have to be cleaned
-        to be used in training model. It will go through
-        several stages of cleaning such as removing links,
-        symbols, numbers i.e.
-        :text: messy string, ready for cleaning
-    """
-    warnings.warn("", DeprecationWarning)
-    stopword = nlp.Defaults.stop_words
-    # set text to lowercase
-    text = text.lower()
-    # remove links
-    text = re.sub(r"^https?:\/\/.*[\r\n]*", '', text)
-    # remove "new line" symbol
-    text = re.sub('\n', '', text)
-    # Match every decimal digits and every character marked as letters in Unicode database
-    text = re.sub('\w*\d\w*', '', text)
-    # Delete square brackets
-    text = re.sub('\[.*?\]', '', text)
-    text = re.sub('[‘’“”…]', '', text)
-    # remove punctuation
-    text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
-    text = ''.join(text)
-    text = re.split('\W+', text)
-    text = [word for word in text if word not in stopword]
-
-    return text
+        result = result.replace(character, "")
+    return clean(result, fix_unicode=True)

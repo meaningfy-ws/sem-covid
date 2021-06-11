@@ -167,14 +167,12 @@ default_args = {
 
 with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
     enrich_task = PythonOperator(task_id='Enrich',
-                                 python_callable=download_policy_watch_resources, retries=1, dag=dag,
-                                 provide_context=True)
+                                 python_callable=download_policy_watch_resources, retries=1, dag=dag)
 
     tika_task = PythonOperator(task_id='Tika',
-                               python_callable=process_using_tika, retries=1, dag=dag, provide_context=True)
+                               python_callable=process_using_tika, retries=1, dag=dag)
 
     elasticsearch_task = PythonOperator(task_id='ElasticSearch',
-                                        python_callable=put_elasticsearch_documents, retries=1, dag=dag,
-                                        provide_context=True)
+                                        python_callable=put_elasticsearch_documents, retries=1, dag=dag)
 
     enrich_task >> tika_task >> elasticsearch_task
