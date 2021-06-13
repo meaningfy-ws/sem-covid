@@ -106,7 +106,7 @@ def delete_punctuation(text: str) -> str:
     """
     Function to delete punctuation from text
     """
-    regex_filter = r'[,;:\*`#\'\"^&~@=+_.()?\[\]!\s]\s*'
+    regex_filter = r'[,;:\*`#\"^&~@=+_.()?\[\]!\s]\s*'
     text = " ".join(list(filter(None, re.split(regex_filter, text))))
     text = text.replace("-", "")
 
