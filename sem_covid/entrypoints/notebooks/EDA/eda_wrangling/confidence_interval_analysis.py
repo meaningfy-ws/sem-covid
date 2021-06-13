@@ -10,8 +10,10 @@ def confidence_interval_with_mean(series: pd.Series) -> list:
     se = series.std() / np.sqrt(series.size)
     mean = series.mean()
     z = 1.96
+    left_limit = max(round(100*(mean - z*se), 2), 0)
+    right_limit = min(round(100*(mean + z*se), 2), 100)
 
-    return [round(100*(mean - z*se), 2), round(100*(mean + z*se), 2)]
+    return [left_limit, right_limit]
 
 
 def confidence_interval_for_proportion(series: pd.Series) -> list:
