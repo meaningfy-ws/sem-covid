@@ -36,11 +36,7 @@ class EuTimeLineEnrich:
 
     @classmethod
     def enrich_dataset(cls):
-        class_names = ['businesses', 'citizens', 'workers']
-        experiments_ids = ['1']
         worker = BaseEnrichPipeline(feature_store_name='fs_eu_timeline',
                                     ds_es_index=config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
-                                    class_names=class_names,
-                                    experiment_ids=experiments_ids
                                     )
         worker.execute()
