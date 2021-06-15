@@ -44,6 +44,13 @@ class BaseETL(ABC):
                           self.transform_content, self.load, ]
 
     @abstractmethod
+    def load(self, *args, **kwargs):
+        """
+        load data
+        :return:
+        """
+
+    @abstractmethod
     def extract(self, *args, **kwargs):
         """
             Select and download the relevant data from various data sources.

@@ -36,3 +36,8 @@ def test_calc_freq_missing_data(transformed_pwdb_dataframe):
     assert len(missing_data) == 4
     assert "index" in missing_data
     assert "Absolute freq" in missing_data
+
+    missing_data = calc_freq_missing_data(transformed_pwdb_dataframe, True)
+    assert len(missing_data) == 4
+    assert "index" in missing_data
+    assert "Relative freq" in missing_data
