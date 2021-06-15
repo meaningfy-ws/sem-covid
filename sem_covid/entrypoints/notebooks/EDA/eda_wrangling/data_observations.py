@@ -39,6 +39,7 @@ def calc_freq_categorical_data(data: pd.Series, title: str, relative: bool = Fal
     Function for making observations on categorical data
     """
     observation_type_name = 'Absolute freq' if not relative else 'Relative freq'
+    data = data.apply(lambda x: None if x == '' else x)
     data.dropna(inplace=True)
     observation = pd.DataFrame(Counter(data).most_common(), columns=[title, observation_type_name])
     if relative:
@@ -57,6 +58,7 @@ def calc_freq_missing_data(data: pd.DataFrame, relative: bool = False) -> pd.Dat
     tmp = pd.Series(dtype=object)
     for column in columns:
         series_tmp = data[column].explode()
+        series_tmp = series_tmp.apply(lambda x: None if x == '' else x)
         tmp[column] = series_tmp.isnull().sum()
         if relative:
             tmp[column] /= series_tmp.size / 100

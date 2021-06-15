@@ -119,6 +119,7 @@ def prepare_text_data(data: pd.Series) -> pd.Series:
     :param data:
     :return:
     """
+    data = data.apply(lambda x: None if x == '' else x)
     data = data.dropna().explode()
     result = [delete_punctuation(
         clean(text, no_urls=True, no_emails=True, no_phone_numbers=True))
