@@ -14,15 +14,18 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
+from sem_covid.entrypoints import dag_name
 from sem_covid.services.sc_wrangling import json_transformer
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.001'
-DATASET_NAME = "finreg_cellar_worker"
-DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
+DAG_NAME = dag_name(category="etl",
+                    name="finreg_cellar",
+                    role="worker",
+                    version_major="1",
+                    version_minor="1",
+                    version_patch="0")
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -184,7 +187,6 @@ def make_request(query):
     wrapper = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     wrapper.setQuery(query)
     wrapper.setReturnFormat(JSON)
-
     return wrapper.query().convert()
 
 
@@ -193,10 +195,9 @@ def get_single_item(query, json_file_name):
     response = make_request(query)['results']['bindings']
     content = json_transformer.transform_eurlex(response)
     logger.info(response)
-    logger.info(content)
     content = content[0]
     uploaded_bytes = minio.put_object(json_file_name, json.dumps(content).encode('utf-8'))
-    logger.info(f'Save query result to {json_file_name}')
+    logger.info(f'Saving query result to {json_file_name}')
     logger.info('Uploaded ' +
                 str(uploaded_bytes) +
                 ' bytes to bucket [' +
@@ -362,21 +363,21 @@ default_args = {
     "owner": "airflow",
     "depends_on_past": False,
     "start_date": datetime(2021, 2, 16),
-    "email": ["mclaurentiu79@gmail.com"],
+    "email": ["infro@meaningfy.ws"],
     "email_on_failure": False,
     "email_on_retry": False,
-    "retries": 1,
-    "retry_delay": timedelta(minutes=500)
+    "retries": 2,
+    "retry_delay": timedelta(minutes=2)
 }
 
-with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
+with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=10, concurrency=20) as dag:
     download_documents_and_enrich_json = PythonOperator(
         task_id=f'Enrich',
         python_callable=download_documents_and_enrich_json_callable, retries=1, dag=dag, )
 
     extract_content_with_tika = PythonOperator(
         task_id=f'Tika',
-        python_callable=extract_content_with_tika_callable, retries=1, dag=dag,)
+        python_callable=extract_content_with_tika_callable, retries=1, dag=dag, )
 
     upload_to_elastic = PythonOperator(
         task_id=f'Elasticsearch',
