@@ -66,7 +66,7 @@ def test_get_noun_phrases(transformed_pwdb_dataframe):
     assert 'Hardship case fund' == pwdb_noun_phrases[0]
     assert 'Safety net' == pwdb_noun_phrases[1]
     assert 'State support' == pwdb_noun_phrases[2]
-    assert 'tourism' == pwdb_noun_phrases[3]
+    assert 'tourism - Access' == pwdb_noun_phrases[3]
     
 
 def test_get_words(transformed_pwdb_dataframe):
