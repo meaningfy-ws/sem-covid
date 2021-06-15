@@ -168,6 +168,6 @@ tests/elasticsearch_dump/ds_ireland_timeline.json
 
 airflow.cfg
 airflow.db
-/sem_covid/webserver_config.py
 /sem_covid/logs/scheduler/latest/
 airflow*.*
+webserver_config.py
