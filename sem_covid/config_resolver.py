@@ -16,6 +16,16 @@ from sem_covid.services.secret_manager import get_vault_secret
 logger = logging.getLogger(__name__)
 
 
+class abstractstatic(staticmethod):
+    __slots__ = ()
+
+    def __init__(self, function):
+        super(abstractstatic, self).__init__(function)
+        function.__isabstractmethod__ = True
+
+    __isabstractmethod__ = True
+
+
 class ConfigResolverABC(ABC):
 
     @classmethod
@@ -23,13 +33,13 @@ class ConfigResolverABC(ABC):
         config_name = inspect.stack()[1][3]
         return cls._config_resolve(config_name, default_value)
 
-    @staticmethod
+    @abstractstatic
     def _config_resolve(config_name: str, default_value: str = None):
         raise NotImplementedError
 
 
 class EnvConfigResolver(ConfigResolverABC):
-    @staticmethod
+
     def _config_resolve(config_name: str, default_value: str = None):
         value = os.environ.get(config_name, default=default_value)
         logger.debug("[ENV] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
@@ -38,7 +48,7 @@ class EnvConfigResolver(ConfigResolverABC):
 
 
 class VaultConfigResolver(ConfigResolverABC):
-    @staticmethod
+
     def _config_resolve(config_name: str, default_value: str = None):
         value = get_vault_secret(config_name, default_value)
         logger.debug("[VAULT] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
@@ -47,14 +57,18 @@ class VaultConfigResolver(ConfigResolverABC):
 
 
 class VaultAndEnvConfigResolver(EnvConfigResolver):
-    @staticmethod
+
     def _config_resolve(config_name: str, default_value: str = None):
-        value = EnvConfigResolver._config_resolve(config_name, default_value)
-        if value is not None:
-            value = get_vault_secret(config_name, default_value)
-            if value is not None:
-                os.environ[config_name] = str(value)
+        value = get_vault_secret(config_name, default_value)
         logger.debug(
             "[VAULT&ENV] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
                 default_value) + "')")
-        return value
+        if value is not None:
+            os.environ[config_name] = str(value)
+            return value
+        else:
+            value = super()._config_resolve(config_name, default_value)
+            logger.debug(
+                "[VAULT&ENV] Value of '" + str(config_name) + "' is " + str(value) + "(supplied default is '" + str(
+                    default_value) + "')")
+            return value
