@@ -25,7 +25,8 @@ logger = logging.getLogger(__name__)
 
 from resources import crawlers
 
-dotenv.load_dotenv()
+dotenv.load_dotenv(verbose=True, override=True)
+
 
 
 class MinIOConfig:
@@ -301,12 +302,11 @@ class SemCovidConfig(CrawlerConfig,
 config = SemCovidConfig()
 
 # These configs need to appear also as ENV variables, therefore they are called explicit here
-config.AWS_ACCESS_KEY_ID,
+config.AWS_ACCESS_KEY_ID
 config.MLFLOW_TRACKING_URI
 config.MLFLOW_S3_BUCKET_NAME
 config.MLFLOW_S3_ENDPOINT_URL
 config.AWS_SECRET_ACCESS_KEY
-
 
 
 # Set of config artefacts used in the Flask UI
