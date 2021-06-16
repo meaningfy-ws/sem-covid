@@ -15,7 +15,7 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
 from sem_covid.entrypoints import dag_name
-from sem_covid.entrypoints.etl_dags.finreg_worker import DAG_NAME as SLAVE_DAG_NAME
+from sem_covid.entrypoints.etl_dags.finreg_worker import DAG_NAME as WORKER_DAG_NAME
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
@@ -23,9 +23,7 @@ logger = logging.getLogger(__name__)
 DAG_NAME = dag_name(category="etl",
                     name="finreg_cellar",
                     role="main",
-                    version_major="1",
-                    version_minor="1",
-                    version_patch="0")
+                    version_patch=1)
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -253,10 +251,10 @@ def execute_worker_dags_callable(**context):
     for count, work in enumerate(works):
         TriggerDagRunOperator(
             task_id='trigger_slave_dag_finreg_' + str(count),
-            trigger_dag_id=SLAVE_DAG_NAME,
+            trigger_dag_id=WORKER_DAG_NAME,
             conf={"work": work['work']['value']}
         ).execute(context)
-    logger.info(f"Launched {SLAVE_DAG_NAME} DAG {len(works)} times for each extracted Work URI.")
+    logger.info(f"Launched {WORKER_DAG_NAME} DAG {len(works)} times for each extracted Work URI.")
 
 
 default_args = {
