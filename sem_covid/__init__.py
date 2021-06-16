@@ -21,12 +21,11 @@ except ImportError:
 
 from sem_covid.config_resolver import VaultAndEnvConfigResolver, EnvConfigResolver
 
-logger = logging.getLogger(__name__)
-
 from resources import crawlers
 
-dotenv.load_dotenv(verbose=True, override=True)
+logger = logging.getLogger(__name__)
 
+dotenv.load_dotenv(verbose=True, override=True)
 
 
 class MinIOConfig:
