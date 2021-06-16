@@ -323,7 +323,7 @@ def download_documents_and_enrich_json_callable(**context):
             if download_file(json_content, pdf_manifestation, pdf_file, minio):
                 counter['pdf'] += 1
     else:
-        logger.exception(f"No manifestation has been found for {(json_content['title'] or json_content['work'])}")
+        logger.warning(f"No manifestation has been found for {(json_content['title'] or json_content['work'])}")
 
     minio.put_object(json_filename, json.dumps(json_content))
 
