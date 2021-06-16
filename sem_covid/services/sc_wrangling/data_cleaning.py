@@ -68,34 +68,4 @@ def clean_text_from_specific_characters(text: str, characters: List[str]) -> str
     result = text
     for character in characters:
         result = result.replace(character, "")
-    return result
-
-
-def prepare_text_for_cleaning(text: str):
-    """
-        assuming we have text that have to be cleaned
-        to be used in training model. It will go through
-        several stages of cleaning such as removing links,
-        symbols, numbers i.e.
-        :text: messy string, ready for cleaning
-    """
-    warnings.warn("", DeprecationWarning)
-    stopword = nlp.Defaults.stop_words
-    # set text to lowercase
-    text = text.lower()
-    # remove links
-    text = re.sub(r"^https?:\/\/.*[\r\n]*", '', text)
-    # remove "new line" symbol
-    text = re.sub(r'\n', '', text)
-    # Match every decimal digits and every character marked as letters in Unicode database
-    text = re.sub(r'\w*\d\w*', '', text)
-    # Delete square brackets
-    text = re.sub(r'\[.*?\]', '', text)
-    text = re.sub(r'[‘’“”…]', '', text)
-    # remove punctuation
-    text = re.sub(r'[%s]' % re.escape(string.punctuation), '', text)
-    text = ''.join(text)
-    text = re.split(r'\W+', text)
-    text = [word for word in text if word not in stopword]
-
-    return text
+    return clean(result, fix_unicode=True)

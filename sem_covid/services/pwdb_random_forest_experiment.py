@@ -167,7 +167,7 @@ class ModelTraining:
                 mlflow.log_metrics(evaluation)
                 mlflow.sklearn.log_model(
                     sk_model=model,
-                    artifact_path=class_name + "_" + self.model_name,
+                    artifact_path="model",
                     registered_model_name=class_name + "_" + self.model_name
                 )
 

@@ -1,6 +1,24 @@
 
-from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.data_observations import (calc_freq_categorical_data,
-                                                                                 calc_freq_missing_data)
+from plotly.graph_objs._figure import Figure
+
+from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.data_observations import *
+
+
+def test_plot_bar_chart(transformed_pwdb_dataframe):
+    text_data = transformed_pwdb_dataframe[['title', 'title_national_language']]
+    plot = plot_bar_chart(text_data, "test_title")
+
+    assert Figure == type(plot)
+
+
+def test_plot_pie_chart(transformed_pwdb_dataframe):
+    text_data = transformed_pwdb_dataframe[['title', 'title_national_language']]
+    plot = plot_pie_chart(text_data, "test_title")
+
+    assert Figure == type(plot)
+
+
+
 
 
 def test_calc_freq_categorical_data(transformed_pwdb_dataframe):
@@ -18,3 +36,8 @@ def test_calc_freq_missing_data(transformed_pwdb_dataframe):
     assert len(missing_data) == 4
     assert "index" in missing_data
     assert "Absolute freq" in missing_data
+
+    missing_data = calc_freq_missing_data(transformed_pwdb_dataframe, True)
+    assert len(missing_data) == 4
+    assert "index" in missing_data
+    assert "Relative freq" in missing_data

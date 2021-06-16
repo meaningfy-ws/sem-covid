@@ -6,12 +6,15 @@ import json
 import pytest
 import pandas as pd
 
+import spacy
+
 from sem_covid.config_resolver import EnvConfigResolver
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
 from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 from tests.unit.test_store.fake_storage import FakeIndexStore
 
+nlp = spacy.load("en_core_web_sm")
 
 def raw_pwdb_data():
     raw_sample = [{
@@ -285,6 +288,13 @@ def raw_pwdb_data():
     return raw_sample
 
 
+@pytest.fixture(scope="session")
+def spacy_document():
+    text = "That moment when that happens."
+
+    return nlp(text)
+
+
 @pytest.fixture(scope="session", name="raw_pwdb_data")
 def raw_pwdb_data_fixture():
     return raw_pwdb_data()
@@ -349,6 +359,18 @@ def transformed_pwdb_json_fixture():
 @pytest.fixture(scope="session")
 def transformed_pwdb_dataframe():
     return pd.DataFrame.from_records(transformed_pwdb_json())
+
+
+@pytest.fixture(scope="session")
+def tokenized_textual_pwdb_series(transformed_pwdb_dataframe):
+    nlp = spacy.load("en_core_web_sm")
+    document_corpus = transformed_pwdb_dataframe['title'].map(str) + '. ' + \
+                      transformed_pwdb_dataframe['background_info_description'].map(str) + '. ' + \
+                      transformed_pwdb_dataframe['content_of_measure_description'].map(str) + '. ' + \
+                      transformed_pwdb_dataframe['use_of_measure_description'] + '. ' + \
+                      transformed_pwdb_dataframe['involvement_of_social_partners_description']
+
+    return document_corpus.apply(nlp)
 
 
 class FakeBinaryDataSource(BinaryDataSource):
