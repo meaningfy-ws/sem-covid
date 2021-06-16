@@ -323,7 +323,7 @@ def download_documents_and_enrich_json_callable(**context):
             if download_file(json_content, pdf_manifestation, pdf_file, minio):
                 counter['pdf'] += 1
     else:
-        logger.exception(f"No manifestation has been found for {json_content['title']}")
+        logger.exception(f"No manifestation has been found for {(json_content['title'] or json_content['work'])}")
 
     minio.put_object(json_filename, json.dumps(json_content))
 
@@ -364,11 +364,12 @@ default_args = {
     "email": ["infro@meaningfy.ws"],
     "email_on_failure": False,
     "email_on_retry": False,
-    "retries": 2,
-    "retry_delay": timedelta(minutes=2)
+    "retries": 1,
+    "retry_delay": timedelta(seconds=5)
 }
 
 with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=10, concurrency=20) as dag:
+
     download_documents_and_enrich_json = PythonOperator(
         task_id=f'Enrich',
         python_callable=download_documents_and_enrich_json_callable, retries=1, dag=dag, )
