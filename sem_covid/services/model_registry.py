@@ -1,10 +1,11 @@
 import mlflow
+from mlflow.sklearn import load_model
 
 
 def get_best_model_from_ml_flow(experiment_ids: list, metric_name: str = 'F1'):
     runs_df = mlflow.search_runs(experiment_ids=experiment_ids, filter_string="tags.Source='finalize_model'")
     id_run = runs_df.loc[runs_df[f"metrics.{metric_name}"].idxmax()]['run_id']
-    return mlflow.sklearn.load_model("runs:/" + id_run + "/model")
+    return load_model("runs:/" + id_run + "/model")
 
 
 class ClassificationModel:
