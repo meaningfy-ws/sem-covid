@@ -9,16 +9,15 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.entrypoints.etl_dags.eurlex_worker import DAG_NAME as SLAVE_DAG_NAME
+from sem_covid.entrypoints import dag_name
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling import json_transformer
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.006'
-DATASET_NAME = "eu_cellar"
-DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=7)
+
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'

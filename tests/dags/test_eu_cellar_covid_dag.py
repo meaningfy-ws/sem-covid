@@ -3,9 +3,14 @@
 # Date:  10/06/2021
 # Author: Eugeniu Costetchi
 # Email: costezki.eugen@gmail.com
+import re
+
 from SPARQLWrapper import SPARQLWrapper
 
-from sem_covid.entrypoints.etl_dags.eurlex import DAG_NAME, make_request, get_single_item
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, make_request, get_single_item, EURLEX_QUERY, \
+    EURLEX_EXTENDED_QUERY
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import content_cleanup
+from tests.dags.conftest import FakeSPARQL
 from tests.unit.test_store.fake_storage import FakeObjectStore
 
 
@@ -46,10 +51,6 @@ class FakeSPARQL(SPARQLWrapper):
         return self._query
 
 
-def transformer_eurlex(a):
-    return a
-
-
 def test_get_single_item():
     json_file_name = 'file_name'
     my_response = {
@@ -61,7 +62,7 @@ def test_get_single_item():
             'bindings': my_response
         }
     }
-    response = get_single_item(query, json_file_name, FakeSPARQL(), FakeObjectStore(), transformer_eurlex)
+    response = get_single_item(query, json_file_name, FakeSPARQL(), FakeObjectStore(), lambda x: x)
     assert response == my_response
 
 
@@ -69,3 +70,35 @@ def test_make_request():
     query = 'select'
     response = make_request(query, FakeSPARQL())
     assert response == query
+
+
+def test_sparql_query_make_request_core():
+    result = make_request(EURLEX_QUERY, FakeSPARQL())
+    assert result
+
+
+def test_sparql_query_make_request_ext():
+    result = make_request(EURLEX_EXTENDED_QUERY, FakeSPARQL())
+    assert result
+
+
+def test_access_to_resources(fragment1_eu_cellar_covid,
+                             fragment2_eu_cellar_covid,
+                             fragment3_eu_cellar_covid,
+                             fragment4_eu_cellar_covid):
+    assert fragment1_eu_cellar_covid["work"] and fragment1_eu_cellar_covid["content"]
+    assert fragment2_eu_cellar_covid["work"] and not fragment2_eu_cellar_covid["content"]
+    assert fragment3_eu_cellar_covid["work"] and fragment3_eu_cellar_covid["content"]
+    assert fragment4_eu_cellar_covid["work"] and fragment4_eu_cellar_covid["content"]
+
+
+def test_text_cleanup(fragment3_eu_cellar_covid):
+    content3 = content_cleanup(fragment3_eu_cellar_covid["content"])
+    assert "\n" not in content3
+    assert "á" not in content3
+    assert "—" not in content3
+    assert "\u2014" not in content3
+    assert b"\u2014".decode("utf-8") not in content3
+    assert not re.match(r"\s\s", content3)
+
+

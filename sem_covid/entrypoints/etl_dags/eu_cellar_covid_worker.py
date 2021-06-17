@@ -1,6 +1,7 @@
 import hashlib
 import json
 import logging
+import re
 import tempfile
 import zipfile
 from datetime import datetime, timedelta
@@ -13,14 +14,14 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
+from sem_covid.entrypoints import dag_name
+from sem_covid.services.sc_wrangling.data_cleaning import clean_remove_line_breaks, clean_fix_unicode, clean_to_ascii
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.006'
-DATASET_NAME = "eu_cellar_worker"
-DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", role="worker", version_major=0, version_minor=7)
+
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -180,6 +181,39 @@ def upload_to_elastic_callable(**context):
     logger.info(f'Sent {json_file_name} file(s) to ElasticSearch.')
 
 
+def content_cleanup_callable(**context):
+    """
+
+    """
+    json_file_name = context['dag_run'].conf['filename']
+    logger.info(f'Cleaning up the the fragment {json_file_name}')
+    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
+    json_document = json.loads(minio.get_object(json_file_name).decode('utf-8'))
+
+    if json_document["content"]:
+        json_document["content"] = content_cleanup(json_document["content"])
+
+        minio.put_object(json_file_name, json.dumps(json_document))
+        logger.info(
+            f"Completed cleanup on {json_file_name} titled {json_document['title']} workID {json_document['work']}")
+    else:
+        logger.warning(
+            f"Skipping a fragment without content {json_file_name} titled {json_document['title']} workID {json_document['work']}")
+
+
+def content_cleanup(text: str) -> str:
+    """
+        Perform teh text cleanup and return teh results
+    """
+    result = text
+    result = clean_fix_unicode(result)
+    result = clean_to_ascii(result)
+    result = re.sub(r"\s+", " ", result)
+    result = clean_remove_line_breaks(result)
+
+    return result
+
+
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
@@ -200,8 +234,11 @@ with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active
         task_id=f'Tika',
         python_callable=extract_content_with_tika_callable, retries=1, dag=dag, )
 
+    clean_up_content = PythonOperator(
+        task_id=f'Content_cleanup', python_callable=content_cleanup_callable, retries=0, dag=dag, )
+
     upload_to_elastic = PythonOperator(
         task_id=f'Elasticsearch',
         python_callable=upload_to_elastic_callable, retries=1, dag=dag)
 
-    download_documents_and_enrich_json >> extract_content_with_tika >> upload_to_elastic
+    download_documents_and_enrich_json >> extract_content_with_tika >> clean_up_content >> upload_to_elastic
