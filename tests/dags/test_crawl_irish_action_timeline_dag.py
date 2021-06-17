@@ -10,7 +10,6 @@ from sem_covid.entrypoints.etl_dags.crawl_irish_action_timeline import DAG_NAME
 
 def test_crawl_irish_action_timeline_has_three_tasks_and_order(airflow_dag_bag):
     dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
-    assert airflow_dag_bag.import_errors == {}
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))

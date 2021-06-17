@@ -14,15 +14,16 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.entrypoints.etl_dags.finreg_worker import DAG_NAME as SLAVE_DAG_NAME
+from sem_covid.entrypoints import dag_name
+from sem_covid.entrypoints.etl_dags.finreg_worker import DAG_NAME as WORKER_DAG_NAME
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.001'
-DATASET_NAME = "finreg_cellar"
-DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
+DAG_NAME = dag_name(category="etl",
+                    name="finreg_cellar",
+                    role="main",
+                    version_patch=3)
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -217,7 +218,6 @@ GROUP BY ?work'''
 def make_request(query, wrapperSPARQL):
     wrapperSPARQL.setQuery(query)
     wrapperSPARQL.setReturnFormat(JSON)
-
     return wrapperSPARQL.query().convert()
 
 
@@ -234,6 +234,7 @@ def get_single_item(query, json_file_name, wrapperSPARQL, minio):
 
 
 def download_and_split_callable():
+    # TODO: use triple store adapter
     wrapperSPARQL = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     minio = StoreRegistry.minio_object_store(config.EU_FINREG_CELLAR_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
@@ -247,34 +248,30 @@ def download_and_split_callable():
 def execute_worker_dags_callable(**context):
     minio = StoreRegistry.minio_object_store(config.EU_FINREG_CELLAR_BUCKET_NAME)
     works = json.loads(minio.get_object(config.EU_FINREG_CELLAR_JSON).decode('utf-8'))
-    count = 0
-
-    for work in works:
+    for count, work in enumerate(works):
         TriggerDagRunOperator(
             task_id='trigger_slave_dag_finreg_' + str(count),
-            trigger_dag_id=SLAVE_DAG_NAME,
+            trigger_dag_id=WORKER_DAG_NAME,
             conf={"work": work['work']['value']}
         ).execute(context)
-        count += 1
-
-    logger.info("Created " + str(count) + " DAG runs")
+    logger.info(f"Launched {WORKER_DAG_NAME} DAG {len(works)} times for each extracted Work URI.")
 
 
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
     "start_date": datetime(2021, 2, 22),
-    "email": ["mclaurentiu79@gmail.com"],
+    "email": ["info@meaningfy.ws"],
     "email_on_failure": False,
     "email_on_retry": False,
-    "retries": 0,
-    "retry_delay": timedelta(minutes=3600)
+    "retries": 2,
+    "retry_delay": timedelta(minutes=30)
 }
+
 with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=4) as dag:
     download_task = PythonOperator(task_id='download_and_split',
                                    python_callable=download_and_split_callable, retries=1, dag=dag)
 
     execute_worker_dags = PythonOperator(task_id='execute_worker_dags',
                                          python_callable=execute_worker_dags_callable, retries=1, dag=dag)
-
     download_task >> execute_worker_dags

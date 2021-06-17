@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 from sem_covid.entrypoints.notebooks.EDA.eda_wrangling.binary_matrix import (
@@ -20,5 +19,10 @@ def test_convert_to_binary_matrix(transformed_pwdb_dataframe):
 
 
 # !!! dependency_table issue
-def test_dependency_table(transformed_pwdb_dataframe):
-    pass
+def test_dependency_table():
+    df_data = {'col1': [1, 2, 5], 'col2': [3, 4, 5], 'col3': [3, 4, 'Unknown']}
+    test_data_frame = pd.DataFrame(data=df_data)
+    response = dependency_table(test_data_frame)
+    assert isinstance(response, pd.DataFrame)
+    assert response['col1'].values[0] == 3.0
+    assert response['col1'].values[1] == 3.0
