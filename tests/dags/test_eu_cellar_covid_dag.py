@@ -8,7 +8,7 @@ import re
 from SPARQLWrapper import SPARQLWrapper
 
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, make_request, get_single_item, EURLEX_QUERY, \
-    EURLEX_EXTENDED_QUERY
+    EURLEX_EXTENDED_QUERY, convert_key, add_document_source_key
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import content_cleanup
 from tests.dags.conftest import FakeSPARQL
 from tests.unit.test_store.fake_storage import FakeObjectStore
@@ -102,3 +102,15 @@ def test_text_cleanup(fragment3_eu_cellar_covid):
     assert not re.match(r"\s\s", content3)
 
 
+def test_convert_key():
+    result = convert_key("Extended EurLex part 1")
+    assert result == "eu_cellar_extended"
+
+
+def test_add_document_source_key():
+    test_dict = {"name": "John", "age": 20}
+    add_document_source_key(test_dict, "eu_cellar_extended")
+    assert 'eu_cellar_extended' in test_dict
+    assert 'eu_cellar_core' in test_dict
+    assert test_dict['eu_cellar_extended'] is True
+    assert test_dict['eu_cellar_core'] is False

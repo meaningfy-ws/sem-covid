@@ -143,11 +143,11 @@ def transform_pwdb(pwdb_json_object: List[dict]):
 
 def transform_eurlex(eurlex_json_object: List[dict]):
     jq_programme = jq.compile(EURLEX_REFACTORING_RULES.replace("\n", ""))
-    transformed_pwdb = jq_programme.input(eurlex_json_object).all()
-    return transformed_pwdb
+    transformed_eurlex = jq_programme.input(eurlex_json_object).all()
+    return transformed_eurlex
 
 
 def transform_legal_initiatives(legal_initiatives_json_object: List[dict]):
     jq_programme = jq.compile(LEGAL_INITIATIVES_REFACTORING_RULES.replace("\n", ""))
-    transformed_pwdb = jq_programme.input(legal_initiatives_json_object).all()
-    return transformed_pwdb
+    transformed_legal_initiatives = jq_programme.input(legal_initiatives_json_object).all()
+    return transformed_legal_initiatives

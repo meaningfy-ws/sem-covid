@@ -421,6 +421,25 @@ sources = {
     "Extended EurLex part 1": {"json": config.EU_CELLAR_EXTENDED_JSON, "query": EURLEX_EXTENDED_QUERY},
 }
 
+EU_CELLAR_CORE_KEY = "eu_cellar_core"
+EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
+
+
+def convert_key(key):
+    if key == "EurLex":
+        key = EU_CELLAR_CORE_KEY
+    else:
+        key = EU_CELLAR_EXTENDED_KEY
+    return key
+
+
+def add_document_source_key(content: dict, key):
+    if key == EU_CELLAR_CORE_KEY:
+        content[EU_CELLAR_CORE_KEY] = True
+    else:
+        content[EU_CELLAR_EXTENDED_KEY] = True
+
+
 
 def make_request(query, wrapperSPARQL):
     wrapperSPARQL.setQuery(query)
@@ -456,6 +475,7 @@ def download_and_split_callable():
         current_item = 0
         logger.info("Start splitting " + str(list_count) + " items.")
         for field_data in transformed_json:
+            add_document_source_key(field_data, convert_key(key))
             current_item += 1
             filename = FIELD_DATA_PREFIX + hashlib.sha256(field_data['work'].encode('utf-8')).hexdigest() + ".json"
             logger.info(
