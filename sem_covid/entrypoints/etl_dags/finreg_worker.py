@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 DAG_NAME = dag_name(category="etl",
                     name="finreg_cellar",
                     role="worker",
-                    version_patch=2)
+                    version_patch=3)
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
