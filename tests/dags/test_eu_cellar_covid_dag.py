@@ -5,13 +5,17 @@
 # Email: costezki.eugen@gmail.com
 import re
 
+import pytest
+from tabulate import tabulate
 from SPARQLWrapper import SPARQLWrapper
 
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, make_request, get_single_item, EURLEX_QUERY, \
-    EURLEX_EXTENDED_QUERY, convert_key, add_document_source_key
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, make_request, get_single_item, \
+    EU_CELLAR_CORE_QUERY, \
+    EU_CELLAR_EXTENDED_QUERY, convert_key, add_document_source_key, get_documents_from_triple_store, \
+    download_and_split_callable
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import content_cleanup
 from tests.dags.conftest import FakeSPARQL
-from tests.unit.test_store.fake_storage import FakeObjectStore
+from tests.unit.test_store.fake_storage import FakeObjectStore, FakeTripleStore
 
 
 def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):
@@ -73,12 +77,12 @@ def test_make_request():
 
 
 def test_sparql_query_make_request_core():
-    result = make_request(EURLEX_QUERY, FakeSPARQL())
+    result = make_request(EU_CELLAR_CORE_QUERY, FakeSPARQL())
     assert result
 
 
 def test_sparql_query_make_request_ext():
-    result = make_request(EURLEX_EXTENDED_QUERY, FakeSPARQL())
+    result = make_request(EU_CELLAR_EXTENDED_QUERY, FakeSPARQL())
     assert result
 
 
@@ -114,3 +118,22 @@ def test_add_document_source_key():
     assert 'eu_cellar_core' in test_dict
     assert test_dict['eu_cellar_extended'] is True
     assert test_dict['eu_cellar_core'] is False
+
+
+def test_fetch_documents_from_fake_cellar():
+    triple_store = FakeTripleStore()
+    docs_df = get_documents_from_triple_store(["dummy query 1", "dummy query 2", "dummy query 3"],
+                                              ["flag1", "flag2", "flag3"],
+                                              triple_store_adapter=triple_store, id_column='col1')
+
+    assert "flag1" in docs_df.columns and "flag2" in docs_df.columns
+    assert docs_df['col1'].is_unique
+    assert docs_df.iloc[0]['flag1'] and docs_df.iloc[0]['flag2']
+
+    with pytest.raises(Exception) as e:
+        docs_df = get_documents_from_triple_store(["dummy query 1", ], ["flag1", "flag2", "flag3"],
+                                                  triple_store_adapter=triple_store, id_column='col1')
+
+
+def test_data_frame_transformation():
+    download_and_split_callable()
