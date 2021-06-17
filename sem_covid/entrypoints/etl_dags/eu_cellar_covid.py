@@ -492,6 +492,14 @@ def get_documents_from_triple_store(list_of_queries: List[str],
 
 
 def download_and_split_callable():
+    """
+        this function:
+            (1) queries the triple store with all the queries,
+            (2) unifies the result set,
+            (3) stores the unified resultset and then
+            (4) splits the result set into separate documents/fragments and
+            (5) stores each fragment for further processing
+    """
     triple_store_adapter = SPARQLTripleStore(config.EU_CELLAR_SPARQL_URL)
     unified_df = get_documents_from_triple_store(list_of_queries=[EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY],
                                                  list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
