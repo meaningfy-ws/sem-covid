@@ -5,6 +5,7 @@
 # Email: costezki.eugen@gmail.com
 import re
 
+import pandas as pd
 import pytest
 from tabulate import tabulate
 from SPARQLWrapper import SPARQLWrapper
@@ -137,3 +138,41 @@ def test_fetch_documents_from_fake_cellar():
 
 def test_data_frame_transformation():
     download_and_split_callable()
+
+
+def test_unify_data_frames():
+    d = {'work': ["A", "B", "D"], 'col2': [3, 4, 8], 'col3': [55, 66, 77]}
+    df_test = pd.DataFrame(data=d)
+    d2 = {'work': ["A", "C", "E"], 'col2': [5, 6, 9], "col3": [88, 99, 21]}
+    df2_test = pd.DataFrame(data=d2)
+    list_of_result_data_frames = [df_test, df2_test]
+    list_of_query_flags = ["flag1", "flag2"]
+    for index, df in enumerate(list_of_result_data_frames):
+        # print(index)
+        # print("==============DF===================")
+        # print(df)
+        # print("==================================")
+        df.insert(loc=len(df.columns), column=list_of_query_flags[index], value=True, allow_duplicates=True)
+    #     print(list_of_query_flags[index])
+    #     print("=============after insert====================")
+    #     print(df)
+    #     print("================================")
+    #
+    # print("+++++++++++++++++++++++++++++++++++")
+    # print(df2_test)
+    # print("+++++++++++++++++++++++++++++++++++")
+    # print(df_test)
+    print("+++++++++++++++++++++++++++++++++++")
+    unified_dataframe = pd.merge(df_test, df2_test,how="outer", on="work", suffixes=('_x', '_y'))
+    #unified_dataframe = pd.concat(list_of_result_data_frames)
+    # unified_dataframe = list_of_result_data_frames[0]
+    # print(unified_dataframe)
+    # for next_df in list_of_result_data_frames[1:]:
+    #     unified_dataframe = pd.merge(unified_dataframe, next_df, on="work", suffixes=('', '_y'))
+
+    #unified_dataframe.drop(unified_dataframe.filter(regex='_y$').columns.tolist(), axis=1, inplace=True)
+
+    print(unified_dataframe)
+    return unified_dataframe
+
+
