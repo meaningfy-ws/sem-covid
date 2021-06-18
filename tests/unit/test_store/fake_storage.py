@@ -241,5 +241,5 @@ class FakeTripleStore(TripleStoreABC):
                              prefixes: str = "") -> 'TripleStoreABC':
         return self
 
-    def get_dataframe(self) -> pd.DataFrame:
-        return pd.DataFrame([{"col1": "A", "col2": "B"}])
+    def get_dataframe(self, df_data=[{"col1": "A", "col2": "B"}]) -> pd.DataFrame:
+        return pd.DataFrame(data=df_data)

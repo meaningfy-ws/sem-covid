@@ -465,6 +465,23 @@ def get_single_item(query, json_file_name, wrapperSPARQL, minio, transformer):
     return eurlex_json_dataset
 
 
+def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], list_of_flags: List[str],
+                                     id_column: str) -> pd.DataFrame:
+    """
+        Unify a list of dataframes dropping duplicates and adding
+        a provenance flag (i.e. in which dataframe the record was present)
+    """
+    assert len(list_of_data_frames) == len(
+        list_of_flags), "The number of dataframes shall be the same as the number of flags"
+    unified_dataframe = pd.concat(list_of_data_frames).\
+        sort_values(id_column).drop_duplicates(subset=[id_column], keep="first")
+    for flag, original_df in zip(list_of_flags, list_of_data_frames):
+        unified_dataframe[flag] = unified_dataframe.apply(func=
+                                                          lambda row: True if row[id_column] in original_df[
+                                                              id_column].values else False, axis=1)
+    return unified_dataframe
+
+
 def get_documents_from_triple_store(list_of_queries: List[str],
                                     list_of_query_flags: List[str],
                                     triple_store_adapter: SPARQLTripleStore,
@@ -475,20 +492,10 @@ def get_documents_from_triple_store(list_of_queries: List[str],
         a work is simply flagged multiple times.
         When merging the result sets, the unique identifier will be specified in a result-set column.
     """
-    assert len(list_of_queries) == len(
-        list_of_query_flags), "The number of queries shall be the same as the number of flags"
 
     list_of_result_data_frames = [triple_store_adapter.with_query(query).get_dataframe() for query in list_of_queries]
 
-    for index, df in enumerate(list_of_result_data_frames):
-        df.insert(loc=len(df.columns), column=list_of_query_flags[index], value=1, allow_duplicates=True)
-
-    unified_dataframe = list_of_result_data_frames[0]
-    for next_df in list_of_result_data_frames[1:]:
-        unified_dataframe = pd.merge(unified_dataframe, next_df, on=id_column, suffixes=('', '_y'))
-
-    unified_dataframe.drop(unified_dataframe.filter(regex='_y$').columns.tolist(), axis=1, inplace=True)
-    return unified_dataframe
+    return unify_dataframes_and_mark_source(...)
 
 
 def download_and_split_callable():

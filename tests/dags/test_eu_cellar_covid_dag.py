@@ -13,7 +13,7 @@ from SPARQLWrapper import SPARQLWrapper
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, make_request, get_single_item, \
     EU_CELLAR_CORE_QUERY, \
     EU_CELLAR_EXTENDED_QUERY, convert_key, add_document_source_key, get_documents_from_triple_store, \
-    download_and_split_callable
+    download_and_split_callable, unify_dataframes_and_mark_source
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import content_cleanup
 from tests.dags.conftest import FakeSPARQL
 from tests.unit.test_store.fake_storage import FakeObjectStore, FakeTripleStore
@@ -140,39 +140,16 @@ def test_data_frame_transformation():
     download_and_split_callable()
 
 
-def test_unify_data_frames():
+def test_unify_dataframes_and_mark_source():
     d = {'work': ["A", "B", "D"], 'col2': [3, 4, 8], 'col3': [55, 66, 77]}
     df_test = pd.DataFrame(data=d)
     d2 = {'work': ["A", "C", "E"], 'col2': [5, 6, 9], "col3": [88, 99, 21]}
     df2_test = pd.DataFrame(data=d2)
     list_of_result_data_frames = [df_test, df2_test]
     list_of_query_flags = ["flag1", "flag2"]
-    for index, df in enumerate(list_of_result_data_frames):
-        # print(index)
-        # print("==============DF===================")
-        # print(df)
-        # print("==================================")
-        df.insert(loc=len(df.columns), column=list_of_query_flags[index], value=True, allow_duplicates=True)
-    #     print(list_of_query_flags[index])
-    #     print("=============after insert====================")
-    #     print(df)
-    #     print("================================")
-    #
-    # print("+++++++++++++++++++++++++++++++++++")
-    # print(df2_test)
-    # print("+++++++++++++++++++++++++++++++++++")
-    # print(df_test)
-    print("+++++++++++++++++++++++++++++++++++")
-    unified_dataframe = pd.merge(df_test, df2_test,how="outer", on="work", suffixes=('_x', '_y'))
-    #unified_dataframe = pd.concat(list_of_result_data_frames)
-    # unified_dataframe = list_of_result_data_frames[0]
-    # print(unified_dataframe)
-    # for next_df in list_of_result_data_frames[1:]:
-    #     unified_dataframe = pd.merge(unified_dataframe, next_df, on="work", suffixes=('', '_y'))
-
-    #unified_dataframe.drop(unified_dataframe.filter(regex='_y$').columns.tolist(), axis=1, inplace=True)
-
-    print(unified_dataframe)
-    return unified_dataframe
+    unified_dataframe = unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
+                                                         list_of_flags=list_of_query_flags,
+                                                         id_column="work")
+    print(tabulate(unified_dataframe))
 
 
