@@ -521,8 +521,11 @@ def download_and_split_callable():
     minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
 
     logger.info(unified_df.head())
-
-    uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, json.dumps(unified_df.to_json(indent=4, orient="records")))
+    unified_df = unified_df.to_json(indent=4, orient="records")
+    for field_data in unified_df:
+        file_name = FIELD_DATA_PREFIX + field_data['work'] + ".json"
+        minio.put_object(file_name, json.dumps(field_data))
+    #uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, unified_df.to_json(indent=4, orient="records"))
 
 
 def download_and_split_callable1():
