@@ -150,6 +150,7 @@ def test_unify_dataframes_and_mark_source():
     unified_dataframe = unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
                                                          list_of_flags=list_of_query_flags,
                                                          id_column="work")
-    print(tabulate(unified_dataframe))
-
-
+    assert len(unified_dataframe) == 5
+    assert {"flag1", "flag2"}.issubset(set(unified_dataframe.columns))
+    assert unified_dataframe.iloc[0]["flag1"] and unified_dataframe.iloc[0]["flag2"]
+    assert unified_dataframe.iloc[1]["flag1"] and not unified_dataframe.iloc[1]["flag2"]

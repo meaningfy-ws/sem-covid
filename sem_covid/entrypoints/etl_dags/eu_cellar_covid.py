@@ -492,10 +492,10 @@ def get_documents_from_triple_store(list_of_queries: List[str],
         a work is simply flagged multiple times.
         When merging the result sets, the unique identifier will be specified in a result-set column.
     """
-
     list_of_result_data_frames = [triple_store_adapter.with_query(query).get_dataframe() for query in list_of_queries]
-
-    return unify_dataframes_and_mark_source(...)
+    return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
+                                            list_of_flags=list_of_query_flags,
+                                            id_column=id_column)
 
 
 def download_and_split_callable():
