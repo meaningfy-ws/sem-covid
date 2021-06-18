@@ -479,6 +479,7 @@ def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], li
         unified_dataframe[flag] = unified_dataframe.apply(func=
                                                           lambda row: True if row[id_column] in original_df[
                                                               id_column].values else False, axis=1)
+    unified_dataframe.reset_index(drop=True, inplace=True)
     return unified_dataframe
 
 
@@ -519,7 +520,9 @@ def download_and_split_callable():
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
 
-    uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, json.dumps(unified_df.to_json(indent=4)).encode('utf-8'))
+    logger.info(unified_df.head())
+
+    uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, json.dumps(unified_df.to_json(indent=4, orient="records")))
 
 
 def download_and_split_callable1():
