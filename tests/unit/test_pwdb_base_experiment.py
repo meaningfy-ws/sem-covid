@@ -42,7 +42,7 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     assert "content_of_measure_description" in resulting_df
     assert "use_of_measure_description" in resulting_df
     assert "involvement_of_social_partners_description" in resulting_df
-    assert ", " in resulting_df['target_groups'][0]
+    # assert ", " in resulting_df['target_groups'][0]
     assert "descriptive_data" in resulting_df
     assert "category" in resulting_df
     assert "subcategory" in resulting_df
@@ -71,7 +71,6 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
     assert "Extensions of  income support to workers not covered by any kind of protection scheme" \
            not in resulting_df['subcategory']
     assert "Legislations or other statutory regulations" not in resulting_df['type_of_measure']
-
 
 def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
     prepare_pwdb_dataframe = PWDBBaseExperiment.prepare_pwdb_data(transformed_pwdb_dataframe)
