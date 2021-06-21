@@ -108,7 +108,7 @@ def delete_punctuation(text: str) -> str:
     """
     regex_filter = r'[,;:\*`#\"^&~@=+_.()?\[\]!\s]\s*'
     text = " ".join(list(filter(None, re.split(regex_filter, text))))
-    text = text.replace("-", "")
+    text = text.replace("-", " ")
 
     return text
 
@@ -122,7 +122,7 @@ def prepare_text_data(data: pd.Series) -> pd.Series:
     data = data.apply(lambda x: None if x == '' else x)
     data = data.dropna().explode()
     result = [delete_punctuation(
-        clean(text, no_urls=True, no_emails=True, no_phone_numbers=True))
+        clean(text, no_urls=True, no_emails=True, no_phone_numbers=True, no_numbers=True, replace_with_number=""))
         for text in data]
 
     return pd.Series(result, dtype=str)
