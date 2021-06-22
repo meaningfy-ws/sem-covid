@@ -89,18 +89,18 @@ class PWDBBaseExperiment(BaseExperiment, ABC):
             :return: As a result, we prepared pwdb dataset with common text data prepared classifier
                      labels that will be used into train-test part.
         """
-        feature_selector.reduce_array_column(pwdb_dataframe, "target_groups")
-        pwdb_descriptive_data = pwdb_dataframe['title'].map(str) + ' ' + \
-            pwdb_dataframe['background_info_description'].map(str) + ' ' + \
-            pwdb_dataframe['content_of_measure_description'].map(str) + ' ' + \
-            pwdb_dataframe['use_of_measure_description'] + ' ' + \
-            pwdb_dataframe['involvement_of_social_partners_description']
+        target_featuring = feature_selector.reduce_array_column(pwdb_dataframe, "target_groups")
+        pwdb_descriptive_data = target_featuring['title'].map(str) + ' ' + \
+            target_featuring['background_info_description'].map(str) + ' ' + \
+            target_featuring['content_of_measure_description'].map(str) + ' ' + \
+            target_featuring['use_of_measure_description'] + ' ' + \
+            target_featuring['involvement_of_social_partners_description']
 
         # TODO: see that the text cleaning is considered (stop words removed for now)
-        pwdb_dataframe['descriptive_data'] = pwdb_descriptive_data \
+        target_featuring['descriptive_data'] = pwdb_descriptive_data \
             .apply(lambda x: data_cleaning.clean_remove_stopwords(x))
         pwdb_dataframe_columns = value_replacement.MultiColumnLabelEncoder(
-            columns=['category', 'subcategory', 'type_of_measure']).fit_transform(pwdb_dataframe)
+            columns=['category', 'subcategory', 'type_of_measure']).fit_transform(target_featuring)
 
         return pwdb_dataframe_columns
 

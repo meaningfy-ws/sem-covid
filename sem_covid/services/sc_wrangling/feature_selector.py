@@ -1,26 +1,27 @@
 
 import pandas as pd
-from pandas import DataFrame
 
 
-def reduce_array_column(data_frame: DataFrame, column: str, new_column: str = None):
+def reduce_array_column(data_frame: pd.DataFrame, column: str, new_column: str = None):
     """
         assuming that the column contains array objects,
-        reduces thse arrays to a string of concatenated values
+        reduces these arrays to a string of concatenated values
         :data_frame: the pandas DataFrame
         :column: the column with array values
         :new_column: the new column where the concatenated strings are placed;
                      If the new_column is None then the original column is replaced
     """
+
     if new_column:
         data_frame[new_column] = data_frame[column].apply(lambda x: ", ".join(x))
     else:
-        data_frame[column] = data_frame[column].apply(lambda x: ", ".join(x))
+        new_column_values = data_frame[column].apply(lambda x: ", ".join(x))
+        new_data_frame = data_frame.assign(**{column: new_column_values})
 
-    return data_frame
+    return new_data_frame
 
 
-def multi_label_column_to_binary_columns(data_frame: DataFrame, column: str):
+def multi_label_column_to_binary_columns(data_frame: pd.DataFrame, column: str):
     """
         assuming that the column contains array objects,
         returns a new dataframe with binary columns (True/False)

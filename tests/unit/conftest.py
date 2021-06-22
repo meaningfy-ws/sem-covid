@@ -5,7 +5,7 @@ import json
 
 import pytest
 import pandas as pd
-
+from sklearn import datasets, svm, model_selection
 import spacy
 
 from sem_covid.config_resolver import EnvConfigResolver
@@ -371,6 +371,28 @@ def tokenized_textual_pwdb_series(transformed_pwdb_dataframe):
                       transformed_pwdb_dataframe['involvement_of_social_partners_description']
 
     return document_corpus.apply(nlp)
+
+
+@pytest.fixture(scope="session")
+def sklearn_train_test_data():
+    iris_dataset = datasets.load_iris()
+    iris_dataframe = pd.DataFrame(iris_dataset.data)
+    iris_dataframe['class'] = iris_dataset.target
+    iris_dataframe.columns = ['sepal_len', 'sepal_wid', 'petal_len', 'petal_wid', 'class']
+    iris_dataframe.dropna(how="all", inplace=True)
+
+    X = iris_dataframe.drop('class', axis=1)
+    y = iris_dataframe['class']
+    x_train, x_test, y_train, y_test = model_selection.train_test_split(X, y, random_state=42, shuffle=True)
+    train_dictionary = {'x_train': x_train, 'x_test': x_test, 'y_train': y_train, 'y_test': y_test}
+
+    return train_dictionary
+
+
+@pytest.fixture(scope='session')
+def sklearn_svm_model(sklearn_train_test_data):
+    svm_algorithm = svm.SVC()
+    svm_algorithm.fit(sklearn_train_test_data['x_train'], sklearn_train_test_data['y_train'])
 
 
 class FakeBinaryDataSource(BinaryDataSource):
