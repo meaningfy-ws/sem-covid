@@ -16,9 +16,9 @@ def reduce_array_column(data_frame: pd.DataFrame, column: str, new_column: str =
         data_frame[new_column] = data_frame[column].apply(lambda x: ", ".join(x))
     else:
         new_column_values = data_frame[column].apply(lambda x: ", ".join(x))
-        data_frame = data_frame.assign(column=new_column_values)
+        new_data_frame = data_frame.assign(**{column: new_column_values})
 
-    return data_frame
+    return new_data_frame
 
 
 def multi_label_column_to_binary_columns(data_frame: pd.DataFrame, column: str):
