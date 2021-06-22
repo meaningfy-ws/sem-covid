@@ -4,4 +4,5 @@ pytest-bdd
 pytest-cov
 pytest-html
 pytest-mock
+pytest-dotenv
 coverage

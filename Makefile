@@ -36,19 +36,6 @@ create-indexes:
 
 all: install
 
-#make_testing_airflow_environment:
-#	@ echo "$(BUILD_PRINT)Running the Airflow testing environment"
-#	@ airflow db init
-#	@ airflow users create \
-#		--username admin \
-#		--firstname Info \
-#		--lastname Meaningfy \
-#		--role Admin \
-#		--password admin \
-#		--email info@meaningfy.ws
-#	@ airflow webserver --port 8080 &
-#	@ airflow scheduler &
-
 test:
 	@ echo "$(BUILD_PRINT)Running the tests"
 	@ pytest -s --html=report.html --self-contained-html
@@ -59,20 +46,20 @@ test:
 # Testing whether an env variable is set or not
 guard-%:
 	@ if [ "${${*}}" = "" ]; then \
-        echo "Environment variable $* not set"; \
+        echo "$(BUILD_PRINT)Environment variable $* not set"; \
         exit 1; \
 	fi
 
 # Testing that vault is installed
 vault-installed: #; @which vault1 > /dev/null
 	@ if ! hash vault 2>/dev/null; then \
-        echo "Vault is not installed, refer to https://www.vaultproject.io/downloads"; \
+        echo "$(BUILD_PRINT)Vault is not installed, refer to https://www.vaultproject.io/downloads"; \
         exit 1; \
 	fi
 
 # Get secrets in dotenv format
 vault_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
-	@ echo "Writing the mfy/sem-covid secret from Vault to .env"
+	@ echo "$(BUILD_PRINT)Writing the mfy/sem-covid secret from Vault to .env"
 	@ vault kv get -format="json" mfy/sem-covid-infra | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" > .env
 	@ vault kv get -format="json" mfy/jupyter-notebook | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" >> .env
 	@ vault kv get -format="json" mfy/ml-flow | jq -r ".data.data | keys[] as \$$k | \"\(\$$k)=\(.[\$$k])\"" >> .env
@@ -84,7 +71,7 @@ vault_secret_to_dotenv: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
 
 # Get secrets in json format
 vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
-	@ echo "Writing the mfy/sem-covid secret from Vault to variables.json"
+	@ echo "$(BUILD_PRINT)Writing the mfy/sem-covid secret from Vault to variables.json"
 	@ vault kv get -format="json" mfy/sem-covid-infra | jq -r ".data.data" > tmp1.json
 	@ vault kv get -format="json" mfy/jupyter-notebook | jq -r ".data.data" > tmp2.json
 	@ vault kv get -format="json" mfy/ml-flow | jq -r ".data.data" > tmp3.json
@@ -96,4 +83,23 @@ vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
 	@ jq -s '.[0] * .[1] * .[2] * .[3] * .[4] * .[5] * .[6] * .[7]' tmp*.json> variables.json
 	@ rm tmp*.json
 
+start_airflow:
+	@ echo "$(BUILD_PRINT)Starting the Airflow scheduler and webserver"
+	@ export AIRFLOW_HOME=`pwd` ; \
+	export AIRFLOW__CORE__LOAD_EXAMPLES=false ; \
+	export AIRFLOW__CORE__DAGS_FOLDER=`pwd` ; \
+	yes | airflow db reset ; \
+	airflow db init ; \
+	airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin
+	@ export AIRFLOW_HOME=`pwd` ; \
+	export AIRFLOW__CORE__LOAD_EXAMPLES=false ; \
+	export AIRFLOW__CORE__DAGS_FOLDER=`pwd` ; \
+	airflow webserver -p 8080 -D &
+	@ export AIRFLOW_HOME=`pwd` ; \
+	export AIRFLOW__CORE__LOAD_EXAMPLES=false ; \
+	export AIRFLOW__CORE__DAGS_FOLDER=`pwd` ; \
+	airflow scheduler -D &
 
+stop_airflow:
+	@ echo "$(BUILD_PRINT)Stopping the Airflow scheduler and webserver"
+	@ pkill -f airflow

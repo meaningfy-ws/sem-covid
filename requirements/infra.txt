@@ -1,11 +1,13 @@
 # Infra dependecies
 apache-airflow>=2.1.0
+apache-airflow[celery]
 click
 SQLAlchemy
 elasticsearch
 minio
 mlflow
 boto3
+unicode
 sparqlwrapper
 es-pandas
 scrapy

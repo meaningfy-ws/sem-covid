@@ -14,15 +14,16 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
+from sem_covid.entrypoints import dag_name
 from sem_covid.services.sc_wrangling import json_transformer
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.001'
-DATASET_NAME = "finreg_cellar_worker"
-DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
+DAG_NAME = dag_name(category="etl",
+                    name="finreg_cellar",
+                    role="worker",
+                    version_patch=3)
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -184,7 +185,6 @@ def make_request(query):
     wrapper = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
     wrapper.setQuery(query)
     wrapper.setReturnFormat(JSON)
-
     return wrapper.query().convert()
 
 
@@ -193,10 +193,9 @@ def get_single_item(query, json_file_name):
     response = make_request(query)['results']['bindings']
     content = json_transformer.transform_eurlex(response)
     logger.info(response)
-    logger.info(content)
     content = content[0]
     uploaded_bytes = minio.put_object(json_file_name, json.dumps(content).encode('utf-8'))
-    logger.info(f'Save query result to {json_file_name}')
+    logger.info(f'Saving query result to {json_file_name}')
     logger.info('Uploaded ' +
                 str(uploaded_bytes) +
                 ' bytes to bucket [' +
@@ -324,7 +323,7 @@ def download_documents_and_enrich_json_callable(**context):
             if download_file(json_content, pdf_manifestation, pdf_file, minio):
                 counter['pdf'] += 1
     else:
-        logger.exception(f"No manifestation has been found for {json_content['title']}")
+        logger.warning(f"No manifestation has been found for {(json_content['title'] or json_content['work'])}")
 
     minio.put_object(json_filename, json.dumps(json_content))
 
@@ -358,28 +357,62 @@ def upload_to_elastic_callable(**context):
     logger.info(f'Sent {json_file_name} file(s) to ElasticSearch.')
 
 
+def callback_subdag_clear(context):
+    """Clears a subdag's tasks on retry.
+        Sources:
+            https://gist.github.com/camilomartinez/84c5a8bb41ad687ef0b32369a030cdc0
+            https://stackoverflow.com/questions/49008716/how-can-you-re-run-upstream-task-if-a-downstream-task-fails-in-airflow-using-su
+    """
+    dag_id = "{}.{}".format(
+        context['dag'].dag_id,
+        context['ti'].task_id,
+    )
+    execution_date = context['execution_date']
+
+    task = context['task']
+    sdag = task.subdag
+    if sdag is None:
+        raise Exception("Can't find dag {}".format(dag_id))
+    else:
+        logging.info("Clearing SubDag: {} {}".format(dag_id, execution_date))
+
+    sdag.clear(
+        start_date=execution_date,
+        end_date=execution_date,
+        only_failed=False,
+        only_running=False,
+        confirm_prompt=False,
+        include_subdags=False)
+
+
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
     "start_date": datetime(2021, 2, 16),
-    "email": ["mclaurentiu79@gmail.com"],
+    "email": ["infro@meaningfy.ws"],
     "email_on_failure": False,
     "email_on_retry": False,
-    "retries": 1,
-    "retry_delay": timedelta(minutes=500)
+    "retries": 3,
+    "retry_delay": timedelta(seconds=5)
 }
 
-with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
+with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=10, concurrency=20) as dag:
     download_documents_and_enrich_json = PythonOperator(
         task_id=f'Enrich',
-        python_callable=download_documents_and_enrich_json_callable, retries=1, dag=dag, )
+        python_callable=download_documents_and_enrich_json_callable, retries=1, dag=dag,
+        on_retry_callback=callback_subdag_clear,
+    )
 
     extract_content_with_tika = PythonOperator(
         task_id=f'Tika',
-        python_callable=extract_content_with_tika_callable, retries=1, dag=dag,)
+        python_callable=extract_content_with_tika_callable, retries=1, dag=dag,
+        on_retry_callback=callback_subdag_clear,
+    )
 
     upload_to_elastic = PythonOperator(
         task_id=f'Elasticsearch',
-        python_callable=upload_to_elastic_callable, retries=1, dag=dag)
+        python_callable=upload_to_elastic_callable, retries=1, dag=dag,
+        on_retry_callback=callback_subdag_clear,
+    )
 
     download_documents_and_enrich_json >> extract_content_with_tika >> upload_to_elastic
