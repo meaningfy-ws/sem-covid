@@ -5,6 +5,7 @@ import warnings
 from datetime import datetime, timedelta
 from typing import List
 
+import jq
 import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
@@ -16,6 +17,7 @@ from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
 from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling import json_transformer
+from sem_covid.services.sc_wrangling.json_transformer import EU_CELLAR_REFACTORING_RULES, transform_eu_cellar_item
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
@@ -473,13 +475,14 @@ def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], li
     """
     assert len(list_of_data_frames) == len(
         list_of_flags), "The number of dataframes shall be the same as the number of flags"
-    unified_dataframe = pd.concat(list_of_data_frames).\
+    unified_dataframe = pd.concat(list_of_data_frames). \
         sort_values(id_column).drop_duplicates(subset=[id_column], keep="first")
     for flag, original_df in zip(list_of_flags, list_of_data_frames):
         unified_dataframe[flag] = unified_dataframe.apply(func=
                                                           lambda row: True if row[id_column] in original_df[
                                                               id_column].values else False, axis=1)
     unified_dataframe.reset_index(drop=True, inplace=True)
+    unified_dataframe.fillna("", inplace=True)
     return unified_dataframe
 
 
@@ -520,12 +523,12 @@ def download_and_split_callable():
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
 
-    logger.info(unified_df.head())
-    unified_df = unified_df.to_json(indent=4, orient="records")
-    for field_data in unified_df:
-        file_name = FIELD_DATA_PREFIX + field_data['work'] + ".json"
-        minio.put_object(file_name, json.dumps(field_data))
-    #uploaded_bytes = minio.put_object(config.EU_CELLAR_JSON, unified_df.to_json(indent=4, orient="records"))
+    for index, row in unified_df.iterrows():
+        file_content = transform_eu_cellar_item(dict(row.to_dict()))
+        filename = FIELD_DATA_PREFIX + hashlib.sha256(row['work'].encode('utf-8')).hexdigest() + ".json"
+        minio.put_object(filename, json.dumps(file_content))
+
+
 
 
 def download_and_split_callable1():

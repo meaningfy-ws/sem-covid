@@ -80,3 +80,9 @@ def fragment3_eu_cellar_covid() -> pathlib.Path:
 def fragment4_eu_cellar_covid() -> pathlib.Path:
     path = TEST_DATA_FOLDER / "eu_cellar_covid_fragments" / "f590e79d741fe971418c0fda170c0f17eabc86013a7166641b231896b969a6be.json"
     return json.loads(path.read_bytes())
+
+
+@pytest.fixture(scope="session")
+def get_spaqrl_result_set_fetched_as_tabular():
+    path = TEST_DATA_FOLDER/"eu_cellar_covid_fragments"/"unified_eu_cellar_fragment.json"
+    return json.loads(path.read_bytes())

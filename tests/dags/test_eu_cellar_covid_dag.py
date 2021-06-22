@@ -15,6 +15,7 @@ from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, make_reques
     EU_CELLAR_EXTENDED_QUERY, convert_key, add_document_source_key, get_documents_from_triple_store, \
     download_and_split_callable, unify_dataframes_and_mark_source
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import content_cleanup
+from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
 from tests.dags.conftest import FakeSPARQL
 from tests.unit.test_store.fake_storage import FakeObjectStore, FakeTripleStore
 
@@ -154,3 +155,21 @@ def test_unify_dataframes_and_mark_source():
     assert {"flag1", "flag2"}.issubset(set(unified_dataframe.columns))
     assert unified_dataframe.iloc[0]["flag1"] and unified_dataframe.iloc[0]["flag2"]
     assert unified_dataframe.iloc[1]["flag1"] and not unified_dataframe.iloc[1]["flag2"]
+
+
+def test_row_json():
+    d = {'work': ["A", "B", "D"], 'col2': [3, 4, 8], 'col3': [55, 66, 77]}
+    df_test = pd.DataFrame(data=d)
+    for index, row in df_test.iterrows():
+        json = row.to_json(indent=4)
+        print(json)
+
+
+def test_eu_cellar_transformation_rules(get_spaqrl_result_set_fetched_as_tabular):
+    first_element_transformed = transform_eu_cellar_item(get_spaqrl_result_set_fetched_as_tabular[0])
+
+    assert isinstance(first_element_transformed, dict)
+    assert isinstance(first_element_transformed["cdm_types"], list)
+    assert len(first_element_transformed["cdm_types"]) == 2
+    assert len(first_element_transformed["cdm_type_labels"]) == 0
+
