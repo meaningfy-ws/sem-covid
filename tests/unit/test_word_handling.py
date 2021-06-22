@@ -100,5 +100,5 @@ def test_prepare_text_data(transformed_pwdb_dataframe):
     
     assert type(prepared_pwdb) == pd.core.series.Series
     assert type(prepared_pwdb) != pd.core.frame.DataFrame
-    assert 'hardship case fund safety net for self-employed' == prepared_pwdb[0]
-    assert 'state support for tourism - access to finance' == prepared_pwdb[1]
+    assert 'hardship case fund safety net for self employed' == prepared_pwdb[0]
+    assert 'state support for tourism   access to finance' == prepared_pwdb[1]

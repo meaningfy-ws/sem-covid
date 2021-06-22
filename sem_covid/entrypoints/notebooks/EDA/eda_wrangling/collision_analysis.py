@@ -27,6 +27,6 @@ def class_collision(data: pd.DataFrame) -> display:
     Analysis of categorical data collisions in DataFrame
     """
     b_mat = convert_to_binary_matrix(data)
-    d_table = dependency_table(b_mat,0.7)
+    d_table = dependency_table(b_mat, 0.7)
     display(Markdown("Collision in dataframe"))
     display(px.imshow(d_table))
