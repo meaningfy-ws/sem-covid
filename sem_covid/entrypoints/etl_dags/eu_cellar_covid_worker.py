@@ -67,7 +67,8 @@ def extract_content_with_tika_callable(**context):
                         zip_ref.extractall(temp_dir)
 
                     logger.info(f'Processing each file from {content_path}:')
-                    for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.pdf')):
+                    for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.xml'),
+                                              Path(temp_dir).glob('*.pdf')):
                         logger.info(f'Parsing {Path(content_file).name}')
                         counter['general'] += 1
                         parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
@@ -197,7 +198,7 @@ def content_cleanup_callable(**context):
     minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     json_document = json.loads(minio.get_object(json_file_name).decode('utf-8'))
 
-    if json_document["content"]:
+    if "content" in json_document and json_document["content"]:
         json_document["content"] = content_cleanup(json_document["content"])
 
         minio.put_object(json_file_name, json.dumps(json_document))
