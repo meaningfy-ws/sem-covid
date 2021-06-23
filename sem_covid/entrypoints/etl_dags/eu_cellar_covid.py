@@ -1,24 +1,28 @@
 import hashlib
 import json
 import logging
+import warnings
 from datetime import datetime, timedelta
+from typing import List
 
+import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.entrypoints.etl_dags.eurlex_worker import DAG_NAME as SLAVE_DAG_NAME
+from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
+from sem_covid.entrypoints import dag_name
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling import json_transformer
+from sem_covid.services.sc_wrangling.json_transformer import EU_CELLAR_REFACTORING_RULES, transform_eu_cellar_item
 from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-VERSION = '0.006'
-DATASET_NAME = "eu_cellar"
-DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=8)
+
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
@@ -27,7 +31,7 @@ TIKA_FILE_PREFIX = 'tika/'
 CONTENT_LANGUAGE = "language"
 FIELD_DATA_PREFIX = "field_data/"
 
-EURLEX_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+EU_CELLAR_CORE_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -191,7 +195,7 @@ WHERE {
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
 
-EURLEX_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+EU_CELLAR_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -417,52 +421,70 @@ WHERE {
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
 
-sources = {
-    "EurLex": {"json": config.EU_CELLAR_JSON, "query": EURLEX_QUERY},
-    "Extended EurLex part 1": {"json": config.EU_CELLAR_EXTENDED_JSON, "query": EURLEX_EXTENDED_QUERY},
-}
+EU_CELLAR_CORE_KEY = "eu_cellar_core"
+EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
 
 
-def make_request(query, wrapperSPARQL):
-    wrapperSPARQL.setQuery(query)
-    wrapperSPARQL.setReturnFormat(JSON)
+def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], list_of_flags: List[str],
+                                     id_column: str) -> pd.DataFrame:
+    """
+        Unify a list of dataframes dropping duplicates and adding
+        a provenance flag (i.e. in which dataframe the record was present)
+    """
+    assert len(list_of_data_frames) == len(
+        list_of_flags), "The number of dataframes shall be the same as the number of flags"
+    unified_dataframe = pd.concat(list_of_data_frames). \
+        sort_values(id_column).drop_duplicates(subset=[id_column], keep="first")
+    for flag, original_df in zip(list_of_flags, list_of_data_frames):
+        unified_dataframe[flag] = unified_dataframe.apply(func=
+                                                          lambda row: True if row[id_column] in original_df[
+                                                              id_column].values else False, axis=1)
+    unified_dataframe.reset_index(drop=True, inplace=True)
+    unified_dataframe.fillna("", inplace=True)
+    return unified_dataframe
 
-    return wrapperSPARQL.query().convert()
 
-
-def get_single_item(query, json_file_name, wrapperSPARQL, minio, transformer):
-    response = make_request(query, wrapperSPARQL)['results']['bindings']
-    eurlex_json_dataset = transformer(response)
-    uploaded_bytes = minio.put_object(json_file_name, json.dumps(eurlex_json_dataset).encode('utf-8'))
-    logger.info(f'Save query result to {json_file_name}')
-    logger.info('Uploaded ' + str(
-        uploaded_bytes) + ' bytes to bucket [' + config.EU_CELLAR_BUCKET_NAME + '] at ' + config.MINIO_URL)
-    return eurlex_json_dataset
+def get_documents_from_triple_store(list_of_queries: List[str],
+                                    list_of_query_flags: List[str],
+                                    triple_store_adapter: SPARQLTripleStore,
+                                    id_column: str) -> pd.DataFrame:
+    """
+        Give a list of SPARQL queries, fetch the result set and merge it into a unified result set.
+        Each distinct work is also flagged indicating the query used to fetch it. When fetched multiple times,
+        a work is simply flagged multiple times.
+        When merging the result sets, the unique identifier will be specified in a result-set column.
+    """
+    list_of_result_data_frames = [triple_store_adapter.with_query(query).get_dataframe() for query in list_of_queries]
+    return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
+                                            list_of_flags=list_of_query_flags,
+                                            id_column=id_column)
 
 
 def download_and_split_callable():
-    wrapperSPARQL = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
+    """
+        this function:
+            (1) queries the triple store with all the queries,
+            (2) unifies the result set,
+            (3) stores the unified resultset and then
+            (4) splits the result set into separate documents/fragments and
+            (5) stores each fragment for further processing
+    """
+    triple_store_adapter = SPARQLTripleStore(config.EU_CELLAR_SPARQL_URL)
+    unified_df = get_documents_from_triple_store(list_of_queries=[EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY],
+                                                 list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
+                                                 triple_store_adapter=triple_store_adapter,
+                                                 id_column="work")
+
     minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
 
-    for key in sources:
-        logger.info(f"Downloading JSON file for {key}:")
-        transformed_json = get_single_item(sources[key]["query"], sources[key]["json"], wrapperSPARQL, minio,
-                                           transformer=json_transformer.transform_eurlex)
-
-        list_count = len(transformed_json)
-        current_item = 0
-        logger.info("Start splitting " + str(list_count) + " items.")
-        for field_data in transformed_json:
-            current_item += 1
-            filename = FIELD_DATA_PREFIX + hashlib.sha256(field_data['work'].encode('utf-8')).hexdigest() + ".json"
-            logger.info(
-                '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + (
-                        field_data['title'] or field_data['work']) + " saved to " + filename)
-            minio.put_object(filename, json.dumps(field_data))
+    for index, row in unified_df.iterrows():
+        file_content = transform_eu_cellar_item(dict(row.to_dict()))
+        filename = FIELD_DATA_PREFIX + hashlib.sha256(row['work'].encode('utf-8')).hexdigest() + ".json"
+        minio.put_object(filename, json.dumps(file_content))
 
 
 def execute_worker_dags_callable(**context):

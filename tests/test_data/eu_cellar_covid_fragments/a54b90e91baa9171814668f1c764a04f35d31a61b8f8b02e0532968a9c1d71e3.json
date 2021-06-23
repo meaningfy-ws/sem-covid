@@ -1,0 +1,55 @@
+{
+  "work": "http://publications.europa.eu/resource/cellar/70b3f62d-1740-11eb-b57e-01aa75ed71a1",
+  "title": null,
+  "cdm_types": [
+    "http://publications.europa.eu/ontology/cdm#publication_general",
+    "http://publications.europa.eu/ontology/cdm#work"
+  ],
+  "cdm_type_labels": [],
+  "resource_types": [
+    "http://publications.europa.eu/resource/authority/resource-type/PUB_GEN"
+  ],
+  "resource_type_labels": [
+    "General publications"
+  ],
+  "eurovoc_concepts": [
+    "http://eurovoc.europa.eu/c_5b447e3a"
+  ],
+  "eurovoc_concept_labels": [
+    "crisis management"
+  ],
+  "subject_matters": [],
+  "subject_matter_labels": [],
+  "directory_codes": [],
+  "directory_codes_labels": [],
+  "celex_numbers": [],
+  "legal_elis": [],
+  "id_documents": [
+    "2020.4895"
+  ],
+  "same_as_uris": [
+    "http://publications.europa.eu/resource/genpub/2020.4895"
+  ],
+  "authors": [],
+  "author_labels": [],
+  "full_ojs": [],
+  "oj_sectors": [],
+  "internal_comments": [],
+  "is_in_force": [],
+  "dates_document": [
+    "2020-10-22"
+  ],
+  "dates_created": [],
+  "legal_dates_entry_into_force": [],
+  "legal_dates_signature": [],
+  "manifs_pdf": [],
+  "manifs_html": [],
+  "pdfs_to_download": [
+    "/zip"
+  ],
+  "htmls_to_download": [
+    "/zip"
+  ],
+  "content_path": [],
+  "content": []
+}
