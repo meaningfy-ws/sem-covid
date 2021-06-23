@@ -10,13 +10,11 @@ import pytest
 from tabulate import tabulate
 from SPARQLWrapper import SPARQLWrapper
 
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, make_request, get_single_item, \
-    EU_CELLAR_CORE_QUERY, \
-    EU_CELLAR_EXTENDED_QUERY, convert_key, add_document_source_key, get_documents_from_triple_store, \
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, \
+    EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY, get_documents_from_triple_store, \
     download_and_split_callable, unify_dataframes_and_mark_source
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import content_cleanup
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
-from tests.dags.conftest import FakeSPARQL
 from tests.unit.test_store.fake_storage import FakeObjectStore, FakeTripleStore
 
 
@@ -40,54 +38,6 @@ def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):
     assert not downstream_task_ids
 
 
-class FakeSPARQL(SPARQLWrapper):
-    def __init__(self):
-        self._query = 'No query'
-
-    def setQuery(self, query):
-        self._query = query
-
-    def setReturnFormat(self, text):
-        return True
-
-    def query(self):
-        return self
-
-    def convert(self):
-        return self._query
-
-
-def test_get_single_item():
-    json_file_name = 'file_name'
-    my_response = {
-        'document_one': 'one',
-        'document_two': 'two'
-    }
-    query = {
-        'results': {
-            'bindings': my_response
-        }
-    }
-    response = get_single_item(query, json_file_name, FakeSPARQL(), FakeObjectStore(), lambda x: x)
-    assert response == my_response
-
-
-def test_make_request():
-    query = 'select'
-    response = make_request(query, FakeSPARQL())
-    assert response == query
-
-
-def test_sparql_query_make_request_core():
-    result = make_request(EU_CELLAR_CORE_QUERY, FakeSPARQL())
-    assert result
-
-
-def test_sparql_query_make_request_ext():
-    result = make_request(EU_CELLAR_EXTENDED_QUERY, FakeSPARQL())
-    assert result
-
-
 def test_access_to_resources(fragment1_eu_cellar_covid,
                              fragment2_eu_cellar_covid,
                              fragment3_eu_cellar_covid,
@@ -108,20 +58,6 @@ def test_text_cleanup(fragment3_eu_cellar_covid):
     assert not re.match(r"\s\s", content3)
 
 
-def test_convert_key():
-    result = convert_key("Extended EurLex part 1")
-    assert result == "eu_cellar_extended"
-
-
-def test_add_document_source_key():
-    test_dict = {"name": "John", "age": 20}
-    add_document_source_key(test_dict, "eu_cellar_extended")
-    assert 'eu_cellar_extended' in test_dict
-    assert 'eu_cellar_core' in test_dict
-    assert test_dict['eu_cellar_extended'] is True
-    assert test_dict['eu_cellar_core'] is False
-
-
 def test_fetch_documents_from_fake_cellar():
     triple_store = FakeTripleStore()
     docs_df = get_documents_from_triple_store(["dummy query 1", "dummy query 2", "dummy query 3"],
@@ -137,7 +73,7 @@ def test_fetch_documents_from_fake_cellar():
                                                   triple_store_adapter=triple_store, id_column='col1')
 
 
-def test_data_frame_transformation():
+def test_download_and_split_callable():
     download_and_split_callable()
 
 
@@ -157,14 +93,6 @@ def test_unify_dataframes_and_mark_source():
     assert unified_dataframe.iloc[1]["flag1"] and not unified_dataframe.iloc[1]["flag2"]
 
 
-def test_row_json():
-    d = {'work': ["A", "B", "D"], 'col2': [3, 4, 8], 'col3': [55, 66, 77]}
-    df_test = pd.DataFrame(data=d)
-    for index, row in df_test.iterrows():
-        json = row.to_json(indent=4)
-        print(json)
-
-
 def test_eu_cellar_transformation_rules(get_spaqrl_result_set_fetched_as_tabular):
     first_element_transformed = transform_eu_cellar_item(get_spaqrl_result_set_fetched_as_tabular[0])
 
@@ -172,4 +100,3 @@ def test_eu_cellar_transformation_rules(get_spaqrl_result_set_fetched_as_tabular
     assert isinstance(first_element_transformed["cdm_types"], list)
     assert len(first_element_transformed["cdm_types"]) == 2
     assert len(first_element_transformed["cdm_type_labels"]) == 0
-

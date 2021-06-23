@@ -90,16 +90,16 @@ EU_CELLAR_REFACTORING_RULES = '''.| {
     oj_sectors: .oj_sectors | tostring | split("| "),
     internal_comments: .internal_comments | tostring | split("| "),
     is_in_force: .is_in_force | tostring | split("| "),
-    dates_document: .dates_document | tostring | split("| "),
-    dates_created: .dates_created | tostring | split("| "),
-    legal_dates_entry_into_force: .legal_dates_entry_into_force | tostring | split("| "),
-    legal_dates_signature: .legal_dates_signature | tostring | split("| "),
+    dates_document: .dates_document | tostring | split("| ")[0],
+    dates_created: .dates_created | tostring | split("| ")[0],
+    legal_dates_entry_into_force: .legal_dates_entry_into_force | tostring | split("| ")[0],
+    legal_dates_signature: .legal_dates_signature | tostring | split("| ")[0],
     manifs_pdf: .manifs_pdf | tostring | split("| "),
     manifs_html: .manifs_html | tostring | split("| "),
     pdfs_to_download: .pdfs_to_download | tostring | split("| "),
     htmls_to_download: .htmls_to_download | tostring | split("| "),
-    eu_cellar_core: .eu_cellar_core | tostring | split("| "),
-    eu_cellar_extended: .eu_cellar_extended | tostring | split("| ")
+    eu_cellar_core: .eu_cellar_core | tostring,
+    eu_cellar_extended: .eu_cellar_extended | tostring
 }'''
 
 LEGAL_INITIATIVES_REFACTORING_RULES = '''.[] | {
@@ -155,7 +155,6 @@ def transform_eurlex(eurlex_json_object: List[dict]):
 def transform_eu_cellar_item(item_json_text: dict) -> dict:
     jq_programme = jq.compile(EU_CELLAR_REFACTORING_RULES.replace("\n", ""))
     return jq_programme.input(item_json_text).first()
-
 
 
 def transform_legal_initiatives(legal_initiatives_json_object: List[dict]):

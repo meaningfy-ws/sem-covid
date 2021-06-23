@@ -5,7 +5,6 @@ import warnings
 from datetime import datetime, timedelta
 from typing import List
 
-import jq
 import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 from airflow import DAG
@@ -422,49 +421,8 @@ WHERE {
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
 
-sources = {
-    "EurLex": {"json": config.EU_CELLAR_JSON, "query": EU_CELLAR_CORE_QUERY},
-    "Extended EurLex part 1": {"json": config.EU_CELLAR_EXTENDED_JSON, "query": EU_CELLAR_EXTENDED_QUERY},
-}
-
 EU_CELLAR_CORE_KEY = "eu_cellar_core"
 EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
-
-
-def convert_key(key):
-    warnings.warn("deprecated", DeprecationWarning)
-    if key == "EurLex":
-        key = EU_CELLAR_CORE_KEY
-    else:
-        key = EU_CELLAR_EXTENDED_KEY
-    return key
-
-
-def add_document_source_key(content: dict, key):
-    warnings.warn("deprecated", DeprecationWarning)
-    if key == EU_CELLAR_CORE_KEY:
-        content[EU_CELLAR_CORE_KEY] = True
-    else:
-        content[EU_CELLAR_EXTENDED_KEY] = True
-
-
-def make_request(query, wrapperSPARQL):
-    warnings.warn("deprecated", DeprecationWarning)
-    wrapperSPARQL.setQuery(query)
-    wrapperSPARQL.setReturnFormat(JSON)
-
-    return wrapperSPARQL.query().convert()
-
-
-def get_single_item(query, json_file_name, wrapperSPARQL, minio, transformer):
-    warnings.warn("deprecated", DeprecationWarning)
-    response = make_request(query, wrapperSPARQL)['results']['bindings']
-    eurlex_json_dataset = transformer(response)
-    uploaded_bytes = minio.put_object(json_file_name, json.dumps(eurlex_json_dataset).encode('utf-8'))
-    logger.info(f'Save query result to {json_file_name}')
-    logger.info('Uploaded ' + str(
-        uploaded_bytes) + ' bytes to bucket [' + config.EU_CELLAR_BUCKET_NAME + '] at ' + config.MINIO_URL)
-    return eurlex_json_dataset
 
 
 def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], list_of_flags: List[str],
@@ -527,35 +485,6 @@ def download_and_split_callable():
         file_content = transform_eu_cellar_item(dict(row.to_dict()))
         filename = FIELD_DATA_PREFIX + hashlib.sha256(row['work'].encode('utf-8')).hexdigest() + ".json"
         minio.put_object(filename, json.dumps(file_content))
-
-
-
-
-def download_and_split_callable1():
-    warnings.warn("deprecated", DeprecationWarning)
-    wrapperSPARQL = SPARQLWrapper(config.EU_CELLAR_SPARQL_URL)
-    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
-    minio.empty_bucket(object_name_prefix=None)
-    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
-
-    for key in sources:
-        logger.info(f"Downloading JSON file for {key}:")
-        transformed_json = get_single_item(sources[key]["query"], sources[key]["json"], wrapperSPARQL, minio,
-                                           transformer=json_transformer.transform_eurlex)
-
-        list_count = len(transformed_json)
-        current_item = 0
-        logger.info("Start splitting " + str(list_count) + " items.")
-        for field_data in transformed_json:
-            add_document_source_key(field_data, convert_key(key))
-            current_item += 1
-            filename = FIELD_DATA_PREFIX + hashlib.sha256(field_data['work'].encode('utf-8')).hexdigest() + ".json"
-            logger.info(
-                '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + (
-                        field_data['title'] or field_data['work']) + " saved to " + filename)
-            minio.put_object(filename, json.dumps(field_data))
 
 
 def execute_worker_dags_callable(**context):
