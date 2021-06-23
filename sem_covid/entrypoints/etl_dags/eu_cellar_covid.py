@@ -21,7 +21,7 @@ from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=8)
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=9)
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
@@ -507,17 +507,17 @@ default_args = {
     "owner": "airflow",
     "depends_on_past": False,
     "start_date": datetime(2021, 2, 22),
-    "email": ["mclaurentiu79@gmail.com"],
+    "email": ["info@meaningfy.ws"],
     "email_on_failure": False,
     "email_on_retry": False,
     "retries": 0,
     "retry_delay": timedelta(minutes=3600)
 }
-with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=4) as dag:
+with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=16, concurrency=16) as dag:
     download_task = PythonOperator(task_id='download_and_split',
-                                   python_callable=download_and_split_callable, retries=1, dag=dag)
+                                   python_callable=download_and_split_callable, retries=0, dag=dag)
 
     execute_worker_dags = PythonOperator(task_id='execute_worker_dags',
-                                         python_callable=execute_worker_dags_callable, retries=1, dag=dag)
+                                         python_callable=execute_worker_dags_callable, retries=0, dag=dag)
 
     download_task >> execute_worker_dags
