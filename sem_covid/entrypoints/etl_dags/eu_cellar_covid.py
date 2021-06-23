@@ -21,7 +21,7 @@ from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=7)
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=8)
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
