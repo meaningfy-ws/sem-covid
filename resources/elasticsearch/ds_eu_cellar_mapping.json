@@ -234,10 +234,10 @@
         }
       },
       "eu_cellar_core": {
-        "type": "boolean"
+        "type": "text"
       },
       "eu_cellar_extended": {
-        "type": "boolean"
+        "type": "text"
       }
     }
   }
