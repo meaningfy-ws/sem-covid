@@ -19,3 +19,4 @@ python-dotenv
 requests
 hvac
 hvac[parser]
+py_singleton

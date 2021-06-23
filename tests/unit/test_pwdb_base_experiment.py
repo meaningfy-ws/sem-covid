@@ -72,7 +72,6 @@ def test_base_experiment_prepare_pwdb_data(transformed_pwdb_dataframe):
            not in resulting_df['subcategory']
     assert "Legislations or other statutory regulations" not in resulting_df['type_of_measure']
 
-
 def test_base_experiment_target_group_refactoring(transformed_pwdb_dataframe):
     prepare_pwdb_dataframe = PWDBBaseExperiment.prepare_pwdb_data(transformed_pwdb_dataframe)
     resulting_df = PWDBBaseExperiment.target_group_refactoring(prepare_pwdb_dataframe)
