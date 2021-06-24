@@ -194,7 +194,7 @@ WHERE {
 }
 GROUP BY ?work ?title
 ORDER BY ?work ?title
-LIMIT 25"""
+LIMIT 300"""
 
 EU_CELLAR_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
@@ -421,7 +421,7 @@ WHERE {
 }
 GROUP BY ?work ?title
 ORDER BY ?work ?title
-LIMIT 25"""
+LIMIT 300"""
 
 EU_CELLAR_CORE_KEY = "eu_cellar_core"
 EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
