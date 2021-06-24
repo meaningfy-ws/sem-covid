@@ -193,8 +193,7 @@ WHERE {
     BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
 }
 GROUP BY ?work ?title
-ORDER BY ?work ?title
-LIMIT 300"""
+ORDER BY ?work ?title"""
 
 EU_CELLAR_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
@@ -420,8 +419,7 @@ WHERE {
     BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
 }
 GROUP BY ?work ?title
-ORDER BY ?work ?title
-LIMIT 300"""
+ORDER BY ?work ?title"""
 
 EU_CELLAR_CORE_KEY = "eu_cellar_core"
 EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
