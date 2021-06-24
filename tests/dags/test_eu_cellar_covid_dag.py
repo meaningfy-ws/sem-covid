@@ -7,15 +7,12 @@ import re
 
 import pandas as pd
 import pytest
-from tabulate import tabulate
-from SPARQLWrapper import SPARQLWrapper
 
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, \
-    EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY, get_documents_from_triple_store, \
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME, get_documents_from_triple_store, \
     download_and_split_callable, unify_dataframes_and_mark_source
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import content_cleanup
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
-from tests.unit.test_store.fake_storage import FakeObjectStore, FakeTripleStore
+from tests.unit.test_store.fake_storage import FakeTripleStore
 
 
 def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):

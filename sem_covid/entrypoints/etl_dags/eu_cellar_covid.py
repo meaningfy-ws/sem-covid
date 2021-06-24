@@ -21,7 +21,7 @@ from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=9)
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=10)
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
@@ -31,11 +31,14 @@ TIKA_FILE_PREFIX = 'tika/'
 CONTENT_LANGUAGE = "language"
 FIELD_DATA_PREFIX = "field_data/"
 
-EU_CELLAR_CORE_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+EU_CELLAR_CORE_QUERY = """
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ev: <http://eurovoc.europa.eu/>
 
 SELECT DISTINCT
     ?work ?title    
@@ -195,7 +198,16 @@ WHERE {
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
 
-EU_CELLAR_EXTENDED_QUERY = """SELECT DISTINCT
+EU_CELLAR_EXTENDED_QUERY = """
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ev: <http://eurovoc.europa.eu/>
+
+SELECT DISTINCT
     ?work ?title
     (group_concat(DISTINCT ?cdm_type; separator='| ') as ?cdm_types)
     (group_concat(DISTINCT ?cdm_type_label; separator='| ') as ?cdm_type_labels)
@@ -446,7 +458,7 @@ def get_documents_from_triple_store(list_of_queries: List[str],
         a work is simply flagged multiple times.
         When merging the result sets, the unique identifier will be specified in a result-set column.
     """
-    list_of_result_data_frames = [triple_store_adapter.with_query(query).get_dataframe() for query in list_of_queries]
+    list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in list_of_queries]
     return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
                                             list_of_flags=list_of_query_flags,
                                             id_column=id_column)

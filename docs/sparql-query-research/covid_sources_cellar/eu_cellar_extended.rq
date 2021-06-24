@@ -46,7 +46,7 @@ SELECT DISTINCT
     (group_concat(DISTINCT ?pdf_to_download; separator='| ') as ?pdfs_to_download)
     (group_concat(DISTINCT ?html_to_download; separator='| ') as ?htmls_to_download)
 WHERE {
-    VALUES ?expr_lang { lang:ENG}
+    VALUES ?expr_lang { lang:ENG }
 
     VALUES ?eurovoc_concept {
         ev:1005
