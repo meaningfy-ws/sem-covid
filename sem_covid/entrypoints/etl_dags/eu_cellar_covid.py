@@ -193,7 +193,8 @@ WHERE {
     BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
 }
 GROUP BY ?work ?title
-ORDER BY ?work ?title"""
+ORDER BY ?work ?title
+LIMIT 25"""
 
 EU_CELLAR_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
@@ -419,7 +420,8 @@ WHERE {
     BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
 }
 GROUP BY ?work ?title
-ORDER BY ?work ?title"""
+ORDER BY ?work ?title
+LIMIT 25"""
 
 EU_CELLAR_CORE_KEY = "eu_cellar_core"
 EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
@@ -513,7 +515,7 @@ default_args = {
     "retries": 0,
     "retry_delay": timedelta(minutes=3600)
 }
-with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=16, concurrency=16) as dag:
+with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=2) as dag:
     download_task = PythonOperator(task_id='download_and_split',
                                    python_callable=download_and_split_callable, retries=0, dag=dag)
 
