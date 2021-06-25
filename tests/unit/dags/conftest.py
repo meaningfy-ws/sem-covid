@@ -20,8 +20,8 @@ from SPARQLWrapper import SPARQLWrapper
 from airflow.models import DagBag
 from airflow.utils import db
 
-SRC_AIRFLOW_DAG_FOLDER = Path(__file__).parent.parent.parent / "sem_covid/"
-TEST_DATA_FOLDER = pathlib.Path(__file__).parent.parent / "test_data"
+SRC_AIRFLOW_DAG_FOLDER = Path(__file__).parent.parent.parent.parent / "sem_covid/"
+TEST_DATA_FOLDER = pathlib.Path(__file__).parent.parent.parent / "test_data"
 
 logger = logging.getLogger(__name__)
 
