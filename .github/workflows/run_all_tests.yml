@@ -2,11 +2,10 @@
 
 name: all tests
 
-# Controls when the action will run. Trigger of this is scheduled to run every day at 10pm and it will run
-# the latest commit on master
+# Controls when the action will run. Trigger of this will run on any commit/merge in master
 on:
-  schedule:
-  - cron: "0 22 * * *"
+  push:
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

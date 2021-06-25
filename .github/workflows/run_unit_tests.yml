@@ -2,11 +2,11 @@
 
 name: unit tests
 
-# Controls when the action will run. Triggers of this workflow are on push on master or pull request
-# on feature branches
+# Controls when the action will run. Triggers of this workflow are on push on a feature branches or pull request
+# on feature branches created from master
 on:
   push:
-    branches: [ master, feature/* ]
+    branches: [ feature/* ]
   pull_request:
     branches: [ master ]
 
