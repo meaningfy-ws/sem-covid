@@ -42,4 +42,4 @@ class TestPipeline(DagPipeline):
 dag_factory = DagFactory(DagPipelineManager(TestPipeline(param1="Stefan Architecture", param2=" Yay, all works")),
                          dag_name=DAG_NAME, default_args=default_args)
 
-dag_factory.create()
+dag = dag_factory.create()

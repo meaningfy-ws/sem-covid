@@ -13,16 +13,16 @@ def test_dummy_debug_dag_has_two_tasks_and_order(airflow_dag_bag):
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
-    assert {'feature_engineering', 'model_training'}.issubset(set(task_ids))
+    assert {'check_step_1', 'check_step_2'}.issubset(set(task_ids))
 
-    download_and_split_task = dag.get_task('feature_engineering')
+    download_and_split_task = dag.get_task('check_step_1')
     upstream_task_ids = list(map(lambda task: task.task_id, download_and_split_task.upstream_list))
     assert not upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, download_and_split_task.downstream_list))
-    assert 'model_training' in downstream_task_ids
+    assert 'check_step_2' in downstream_task_ids
 
-    execute_worker_dags_task = dag.get_task('model_training')
+    execute_worker_dags_task = dag.get_task('check_step_2')
     upstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.upstream_list))
-    assert 'feature_engineering' in upstream_task_ids
+    assert 'check_step_1' in upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.downstream_list))
     assert not downstream_task_ids
