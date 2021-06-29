@@ -17,7 +17,7 @@ default_args = {
     "retry_delay": timedelta(minutes=500)
 }
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DATASET_NAME = 'new_dag_abstraction'
 DAG_TYPE = 'debug'
 DAG_NAME = "_".join([DAG_TYPE, DATASET_NAME, VERSION])
@@ -29,10 +29,10 @@ class TestPipeline(DagPipeline):
         self.param1 = param1
         self.param2 = param2
 
-    def check_step_1(self):
+    def check_step_1(self, *args, **kwargs):
         logger.info("Hello from step1" + self.param1 + self.param2)
 
-    def check_step_2(self):
+    def check_step_2(self, *args, **kwargs):
         logger.info("Hello from step2" + self.param1 + self.param2)
 
     def get_steps(self) -> list:
