@@ -50,6 +50,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: Set up Python
+        uses: actions/setup-python@master
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          make install
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+          envkey_VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
       - uses: ricardochaves/python-lint@v1.4.0
         with:
           python-root-list: "tests"
