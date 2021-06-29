@@ -71,7 +71,7 @@ jobs:
           use-black: true
           use-mypy: true
           use-isort: true
-          extra-pylint-options: ""
+          extra-pylint-options: "--max-module-lines=212 --disable=I,R,C,W"
           extra-pycodestyle-options: ""
           extra-flake8-options: ""
           extra-black-options: ""
