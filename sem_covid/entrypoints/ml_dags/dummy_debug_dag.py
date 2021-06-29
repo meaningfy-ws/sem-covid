@@ -17,7 +17,7 @@ default_args = {
     "retry_delay": timedelta(minutes=500)
 }
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DATASET_NAME = 'new_dag_abstraction'
 DAG_TYPE = 'debug'
 DAG_NAME = "_".join([DAG_TYPE, DATASET_NAME, VERSION])
