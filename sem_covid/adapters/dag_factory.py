@@ -64,16 +64,22 @@ class StatelessDagStep(DagStep):
 
 class DagFactory:
 
-    def __init__(self, dag_manager: DagPipelineManager, dag_name: str, default_args: dict):
+    def __init__(self, dag_manager: DagPipelineManager, dag_name: str, default_args: dict,
+                 schedule_interval="@once", max_active_runs=1, concurrency=4
+                 ):
         self.dag_name = dag_name
         self.default_args = default_args
         self.dag_manager = dag_manager
+        self.schedule_interval = schedule_interval
+        self.max_active_runs = max_active_runs
+        self.concurrency = concurrency
 
     def create(self) -> DAG:
         dag_steps = self.dag_manager.dag_pipeline.get_steps()
 
-        dag = DAG(self.dag_name, default_args=self.default_args, schedule_interval="@once", max_active_runs=1,
-                  concurrency=4)
+        dag = DAG(self.dag_name, default_args=self.default_args, schedule_interval=self.schedule_interval,
+                  max_active_runs=self.max_active_runs,
+                  concurrency=self.concurrency)
         current_step = PythonOperator(task_id=dag_steps[0].__name__,
                                       python_callable=self.dag_manager.create_step(dag_steps[0]), retries=1,
                                       dag=dag)

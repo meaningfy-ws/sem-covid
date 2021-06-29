@@ -22,6 +22,7 @@ default_args = {
 
 MASTER_DAG_NAME = dag_name(category="debug", name="new_dag_abs_master", version_major=0, version_minor=1)
 SLAVE_DAG_NAME = dag_name(category="debug", name="new_dag_abs_worker", version_major=0, version_minor=1)
+DAG_NAME = dag_name(category="debug", name="new_dag_abs_architecture", version_major=0, version_minor=1)
 
 
 class DebugMasterDag(DagPipeline):
@@ -56,7 +57,7 @@ class DebugSlaveDag(DagPipeline):
     def start_work(self, *args, **kwargs):
         if "worker_id" not in kwargs['dag_run'].conf:
             logger.error(
-                "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+                "Could not find the worker_id in the provided configuration. This DAG is to be triggered by its parent only.")
             return
         worker_id = kwargs['dag_run'].conf['worker_id']
         logger.info("---------Start work for work_id =" + str(worker_id) + "-------")
@@ -65,7 +66,7 @@ class DebugSlaveDag(DagPipeline):
     def stop_work(self, *args, **kwargs):
         if "worker_id" not in kwargs['dag_run'].conf:
             logger.error(
-                "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+                "Could not find the worker_id in the provided configuration. This DAG is to be triggered by its parent only.")
             return
         worker_id = kwargs['dag_run'].conf['worker_id']
         logger.info("---------Stop work for work_id =" + str(worker_id) + "-------")
@@ -91,12 +92,11 @@ class TestPipeline(DagPipeline):
         return [self.check_step_1, self.check_step_2]
 
 
-"""
 dag_factory = DagFactory(DagPipelineManager(TestPipeline(param1="Stefan Architecture", param2=" Yay, all works")),
                          dag_name=DAG_NAME, default_args=default_args)
 
 dag = dag_factory.create()
-"""
+
 master_dag = DagFactory(DagPipelineManager(DebugMasterDag(param="MasterDag param  -- SATURN")),
                         dag_name=MASTER_DAG_NAME, default_args=default_args
                         ).create()

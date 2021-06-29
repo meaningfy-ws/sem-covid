@@ -1,27 +1,24 @@
+
 import hashlib
 import json
 import logging
-import warnings
 from datetime import datetime, timedelta
 from typing import List
 
 import pandas as pd
-from SPARQLWrapper import SPARQLWrapper, JSON
-from airflow import DAG
-from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
+from sem_covid.adapters.abstract_store import TripleStoreABC
+from sem_covid.adapters.dag_factory import DagPipeline, DagFactory, DagPipelineManager
 from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import DAG_NAME as SLAVE_DAG_NAME
-from sem_covid.services.sc_wrangling import json_transformer
-from sem_covid.services.sc_wrangling.json_transformer import EU_CELLAR_REFACTORING_RULES, transform_eu_cellar_item
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
+from sem_covid.services.store_registry import StoreRegistryManagerABC, StoreRegistryManager
 
 logger = logging.getLogger(__name__)
 
-DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=10)
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=11)
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
@@ -450,7 +447,7 @@ def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], li
 
 def get_documents_from_triple_store(list_of_queries: List[str],
                                     list_of_query_flags: List[str],
-                                    triple_store_adapter: SPARQLTripleStore,
+                                    triple_store_adapter: TripleStoreABC,
                                     id_column: str) -> pd.DataFrame:
     """
         Give a list of SPARQL queries, fetch the result set and merge it into a unified result set.
@@ -458,53 +455,62 @@ def get_documents_from_triple_store(list_of_queries: List[str],
         a work is simply flagged multiple times.
         When merging the result sets, the unique identifier will be specified in a result-set column.
     """
-    list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in list_of_queries]
+    list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in
+                                  list_of_queries]
     return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
                                             list_of_flags=list_of_query_flags,
                                             id_column=id_column)
 
 
-def download_and_split_callable():
-    """
-        this function:
-            (1) queries the triple store with all the queries,
-            (2) unifies the result set,
-            (3) stores the unified resultset and then
-            (4) splits the result set into separate documents/fragments and
-            (5) stores each fragment for further processing
-    """
-    triple_store_adapter = SPARQLTripleStore(config.EU_CELLAR_SPARQL_URL)
-    unified_df = get_documents_from_triple_store(list_of_queries=[EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY],
-                                                 list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
-                                                 triple_store_adapter=triple_store_adapter,
-                                                 id_column="work")
+class EuCellarDagMaster(DagPipeline):
 
-    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
-    minio.empty_bucket(object_name_prefix=None)
-    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
+    def __init__(self, store_registry: StoreRegistryManagerABC):
+        self.store_registry = store_registry
 
-    for index, row in unified_df.iterrows():
-        file_content = transform_eu_cellar_item(dict(row.to_dict()))
-        filename = FIELD_DATA_PREFIX + hashlib.sha256(row['work'].encode('utf-8')).hexdigest() + ".json"
-        minio.put_object(filename, json.dumps(file_content))
+    def get_steps(self) -> list:
+        return [self.download_and_split, self.execute_worker_dags]
 
+    def download_and_split(self, *args, **context):
+        """
+            this function:
+                (1) queries the triple store with all the queries,
+                (2) unifies the result set,
+                (3) stores the unified resultset and then
+                (4) splits the result set into separate documents/fragments and
+                (5) stores each fragment for further processing
+        """
+        triple_store_adapter = self.store_registry.sparql_triple_store(config.EU_CELLAR_SPARQL_URL)
+        unified_df = get_documents_from_triple_store(
+            list_of_queries=[EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY],
+            list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
+            triple_store_adapter=triple_store_adapter,
+            id_column="work")
 
-def execute_worker_dags_callable(**context):
-    minio = StoreRegistry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
-    field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
-    count = 0
+        minio = self.store_registry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
+        minio.empty_bucket(object_name_prefix=None)
+        minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
+        minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
+        minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
 
-    for field_data_object in field_data_objects:
-        TriggerDagRunOperator(
-            task_id='trigger_slave_dag____' + field_data_object.object_name.replace("/", "_"),
-            trigger_dag_id=SLAVE_DAG_NAME,
-            conf={"filename": field_data_object.object_name}
-        ).execute(context)
-        count += 1
+        for index, row in unified_df.iterrows():
+            file_content = transform_eu_cellar_item(dict(row.to_dict()))
+            filename = FIELD_DATA_PREFIX + hashlib.sha256(row['work'].encode('utf-8')).hexdigest() + ".json"
+            minio.put_object(filename, json.dumps(file_content))
 
-    logger.info("Created " + str(count) + " DAG runs")
+    def execute_worker_dags(self, *args, **context):
+        minio = self.store_registry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
+        field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
+        count = 0
+
+        for field_data_object in field_data_objects:
+            TriggerDagRunOperator(
+                task_id='trigger_slave_dag____' + field_data_object.object_name.replace("/", "_"),
+                trigger_dag_id=SLAVE_DAG_NAME,
+                conf={"filename": field_data_object.object_name}
+            ).execute(context)
+            count += 1
+
+        logger.info("Created " + str(count) + " DAG runs")
 
 
 default_args = {
@@ -517,11 +523,7 @@ default_args = {
     "retries": 0,
     "retry_delay": timedelta(minutes=3600)
 }
-with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=2) as dag:
-    download_task = PythonOperator(task_id='download_and_split',
-                                   python_callable=download_and_split_callable, retries=0, dag=dag)
 
-    execute_worker_dags = PythonOperator(task_id='execute_worker_dags',
-                                         python_callable=execute_worker_dags_callable, retries=0, dag=dag)
-
-    download_task >> execute_worker_dags
+dag_master = DagFactory(DagPipelineManager(EuCellarDagMaster(StoreRegistryManager())),
+                        dag_name=DAG_NAME, default_args=default_args
+                        ).create()
