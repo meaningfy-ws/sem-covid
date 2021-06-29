@@ -41,7 +41,7 @@ class BaseETL(ABC):
     def __init__(self, version: str = "0.0.1"):
         self.version = version
         self.ml_stages = [self.extract, self.transform_structure,
-                          self.transform_content, self.load, ]
+                          self.transform_content, self.load]
 
     @abstractmethod
     def load(self, *args, **kwargs):
@@ -80,15 +80,15 @@ class BaseETL(ABC):
         :return:
         """
 
-    @abstractmethod
-    def transform_content(self, *args, **kwargs):
-        """
-            Access the data in the temporary store and load it into a repository where it is indexed and made
-            available for querying and full text search.
-
-            Outcome: transformed data available in the final repository.
-        :return:
-        """
+    # @abstractmethod
+    # def transform_content(self, *args, **kwargs):
+    #     """
+    #         Access the data in the temporary store and load it into a repository where it is indexed and made
+    #         available for querying and full text search.
+    #
+    #         Outcome: transformed data available in the final repository.
+    #     :return:
+    #     """
 
     def create_dag(self, **dag_args):
         """
@@ -104,9 +104,22 @@ class BaseETL(ABC):
             # instantiate a PythonOperator for each ml stage
             stage_python_operators = [PythonOperator(task_id=f"{stage.__name__}_step",
                                                      python_callable=stage,
-                                                     dag=dag)
+                                                     dag=dag,
+                                                     )
                                       for stage in self.ml_stages]
             # iterate stages in successive pairs and connect them
             for stage, successor_stage in zip(stage_python_operators, stage_python_operators[1:]):
                 stage >> successor_stage
         return dag
+
+
+
+class CellarPipiline:
+
+    def __init__(self, ts: TripleStoreAdapter, es: ESAdapter):
+        ...
+
+    def foo(self, **kwargs):
+        bar = kwargs["bar"]
+        query = kwargs["query"]
+        self.ts.with_query(query)
