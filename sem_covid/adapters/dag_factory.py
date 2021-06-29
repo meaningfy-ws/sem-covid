@@ -69,16 +69,18 @@ class DagFactory:
         self.default_args = default_args
         self.dag_manager = dag_manager
 
-    def create(self):
+    def create(self) -> DAG:
         dag_steps = self.dag_manager.dag_pipeline.get_steps()
 
-        with DAG(self.dag_name, default_args=self.default_args, schedule_interval="@once", max_active_runs=1,
-                 concurrency=4) as dag:
-            current_step = PythonOperator(task_id=dag_steps[0].__name__,
-                                          python_callable=self.dag_manager.create_step(dag_steps[0]), retries=1,
-                                          dag=dag)
-            for dag_step in dag_steps[1:]:
-                next_step = PythonOperator(task_id=dag_step.__name__,
-                                           python_callable=self.dag_manager.create_step(dag_step), retries=1, dag=dag)
-                current_step >> next_step
-                current_step = next_step
+        dag = DAG(self.dag_name, default_args=self.default_args, schedule_interval="@once", max_active_runs=1,
+                  concurrency=4)
+        current_step = PythonOperator(task_id=dag_steps[0].__name__,
+                                      python_callable=self.dag_manager.create_step(dag_steps[0]), retries=1,
+                                      dag=dag)
+        for dag_step in dag_steps[1:]:
+            next_step = PythonOperator(task_id=dag_step.__name__,
+                                       python_callable=self.dag_manager.create_step(dag_step), retries=1, dag=dag)
+            current_step >> next_step
+            current_step = next_step
+
+        return dag
