@@ -29,10 +29,10 @@ class TestPipeline(DagPipeline):
         self.param1 = param1
         self.param2 = param2
 
-    def check_step_1(self):
+    def check_step_1(self, *args, **kwargs):
         logger.info("Hello from step1" + self.param1 + self.param2)
 
-    def check_step_2(self):
+    def check_step_2(self, *args, **kwargs):
         logger.info("Hello from step2" + self.param1 + self.param2)
 
     def get_steps(self) -> list:
