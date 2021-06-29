@@ -1,9 +1,10 @@
 from datetime import datetime, timedelta
 
-from airflow import DAG
-from airflow.operators.python import PythonOperator
+import logging
 
-from sem_covid.services.pwdb_random_forest_experiment import RandomForestPWDBExperiment
+from sem_covid.adapters.dag_factory import DagFactory, DagPipelineManager, DagPipeline
+
+logger = logging.getLogger(__name__)
 
 default_args = {
     "owner": "airflow",
@@ -17,27 +18,28 @@ default_args = {
 }
 
 VERSION = '0.0.1'
-CATEGORY = 'all'
-CLASSIFIER = 'config'
-DATASET_NAME = 'vault'
+DATASET_NAME = 'new_dag_abstraction'
 DAG_TYPE = 'debug'
-DAG_NAME = "_".join([DAG_TYPE, DATASET_NAME, CLASSIFIER, CATEGORY, VERSION])
+DAG_NAME = "_".join([DAG_TYPE, DATASET_NAME, VERSION])
 
-with DAG(DAG_NAME,
-         default_args=default_args,
-         schedule_interval="@once",
-         max_active_runs=1,
-         concurrency=1) as dag:
-    feature_engineering = PythonOperator(task_id=f"feature_engineering",
-                                         python_callable=RandomForestPWDBExperiment.feature_engineering,
-                                         retries=1,
-                                         dag=dag
-                                         )
 
-    model_training = PythonOperator(task_id=f"model_training",
-                                    python_callable=RandomForestPWDBExperiment.model_training,
-                                    retries=1,
-                                    dag=dag
-                                    )
+class TestPipeline(DagPipeline):
 
-    feature_engineering >> model_training
+    def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+
+    def check_step_1(self):
+        logger.info("Hello from step1" + self.param1 + self.param2)
+
+    def check_step_2(self):
+        logger.info("Hello from step2" + self.param1 + self.param2)
+
+    def get_steps(self) -> list:
+        return [self.check_step_1, self.check_step_2]
+
+
+dag_factory = DagFactory(DagPipelineManager(TestPipeline(param1="Stefan Architecture", param2=" Yay, all works")),
+                         dag_name=DAG_NAME, default_args=default_args)
+
+dag_factory.create()
