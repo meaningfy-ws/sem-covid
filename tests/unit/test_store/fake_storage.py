@@ -1,5 +1,7 @@
 import copy
 import io
+import json
+import pathlib
 from http.client import HTTPResponse
 from typing import Any, Optional, Union, Collection, MutableMapping
 
@@ -8,6 +10,8 @@ from es_pandas import es_pandas
 
 from sem_covid.adapters.abstract_store import *
 from minio import Minio
+
+TEST_DATA_FOLDER = pathlib.Path(__file__).parent.parent.parent / "test_data"
 
 
 class FakeMinioObject:
@@ -241,5 +245,8 @@ class FakeTripleStore(TripleStoreABC):
                              prefixes: str = "") -> 'TripleStoreABC':
         return self
 
-    def get_dataframe(self, df_data=[{"col1": "A", "col2": "B"}]) -> pd.DataFrame:
-        return pd.DataFrame(data=df_data)
+    def get_dataframe(self) -> pd.DataFrame:
+        path = TEST_DATA_FOLDER / "eu_cellar_covid_fragments" / "unified_eu_cellar_fragment.json"
+        json_eu_cellar_covid = json.loads(path.read_bytes())
+
+        return pd.DataFrame(data=json_eu_cellar_covid)
