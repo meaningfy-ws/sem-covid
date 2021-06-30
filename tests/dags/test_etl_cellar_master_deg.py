@@ -1,0 +1,66 @@
+import pandas as pd
+import pytest
+
+from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster, get_documents_from_triple_store, \
+    unify_dataframes_and_mark_source
+from tests.unit.test_store.fake_storage import FakeTripleStore
+from tests.unit.test_store.fake_store_registry import FakeStoreRegistryManager
+
+FAKE_LIST_OF_QUERIES = ['EU_CELLAR_CORE_QUERY', 'EU_CELLAR_EXTENDED_QUERY']
+FAKE_LIST_OF_FLAGS = ['EU_CELLAR_CORE_KEY', 'EU_CELLAR_EXTENDED_KEY']
+FAKE_EU_CELLAR_SPARQL_URL = "http://fake-url.fake"
+FAKE_EU_CELLAR_BUCKET_NAME = "fake-bucket-name"
+
+
+def test_etl_cellar_master_dag():
+
+    store_registry = FakeStoreRegistryManager()
+
+    master_dag = CellarDagMaster(FAKE_LIST_OF_QUERIES, FAKE_LIST_OF_FLAGS, FAKE_EU_CELLAR_SPARQL_URL,
+                                 FAKE_EU_CELLAR_BUCKET_NAME, store_registry)
+    dag_steps = master_dag.get_steps()
+    master_dag.download_and_split()
+    minio_client = store_registry.minio_object_store('fake')
+
+    for key, value in minio_client._objects.items():
+        assert 'field_data' in key
+        assert '.json' in key
+        assert 'work' in value
+        assert 'title' in value
+
+    assert list == type(dag_steps)
+    assert 2 == len(dag_steps)
+    assert hasattr(dag_steps[0], '__self__')
+    assert hasattr(dag_steps[1], '__self__')
+
+
+def test_fetch_documents_from_fake_cellar():
+    triple_store = FakeTripleStore()
+
+    docs_df = get_documents_from_triple_store(["dummy query 1", "dummy query 2", "dummy query 3"],
+                                              ["flag1", "flag2", "flag3"],
+                                              triple_store_adapter=triple_store, id_column='work')
+
+    assert "flag1" in docs_df.columns and "flag2" in docs_df.columns
+    assert docs_df['work'].is_unique
+    assert docs_df.iloc[0]['flag1'] and docs_df.iloc[0]['flag2']
+
+    with pytest.raises(Exception) as e:
+        docs_df = get_documents_from_triple_store(["dummy query 1", ], ["flag1", "flag2", "flag3"],
+                                                  triple_store_adapter=triple_store, id_column='work')
+
+
+def test_unify_dataframes_and_mark_source():
+    d = {'work': ["A", "B", "D"], 'col2': [3, 4, 8], 'col3': [55, 66, 77]}
+    df_test = pd.DataFrame(data=d)
+    d2 = {'work': ["A", "C", "E"], 'col2': [5, 6, 9], "col3": [88, 99, 21]}
+    df2_test = pd.DataFrame(data=d2)
+    list_of_result_data_frames = [df_test, df2_test]
+    list_of_query_flags = ["flag1", "flag2"]
+    unified_dataframe = unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
+                                                         list_of_flags=list_of_query_flags,
+                                                         id_column="work")
+    assert len(unified_dataframe) == 5
+    assert {"flag1", "flag2"}.issubset(set(unified_dataframe.columns))
+    assert unified_dataframe.iloc[0]["flag1"] and unified_dataframe.iloc[0]["flag2"]
+    assert unified_dataframe.iloc[1]["flag1"] and not unified_dataframe.iloc[1]["flag2"]
