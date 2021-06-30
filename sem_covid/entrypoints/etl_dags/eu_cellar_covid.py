@@ -1,32 +1,17 @@
 
-import hashlib
-import json
 import logging
 from datetime import datetime, timedelta
-from typing import List
-
-import pandas as pd
-from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
-from sem_covid.adapters.abstract_store import TripleStoreABC
-from sem_covid.adapters.dag_factory import DagPipeline, DagFactory, DagPipelineManager
+from sem_covid.adapters.dag_factory import DagFactory, DagPipelineManager
 from sem_covid.entrypoints import dag_name
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import DAG_NAME as SLAVE_DAG_NAME
-from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
-from sem_covid.services.store_registry import StoreRegistryManagerABC, StoreRegistryManager
+from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
+from sem_covid.services.store_registry import StoreRegistryManager
 
 logger = logging.getLogger(__name__)
 
-DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=11)
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=12)
 
-CONTENT_PATH_KEY = 'content_path'
-CONTENT_KEY = 'content'
-FAILURE_KEY = 'failure_reason'
-RESOURCE_FILE_PREFIX = 'res/'
-TIKA_FILE_PREFIX = 'tika/'
-CONTENT_LANGUAGE = "language"
-FIELD_DATA_PREFIX = "field_data/"
 
 EU_CELLAR_CORE_QUERY = """
 PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
@@ -426,93 +411,6 @@ EU_CELLAR_CORE_KEY = "eu_cellar_core"
 EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
 
 
-def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], list_of_flags: List[str],
-                                     id_column: str) -> pd.DataFrame:
-    """
-        Unify a list of dataframes dropping duplicates and adding
-        a provenance flag (i.e. in which dataframe the record was present)
-    """
-    assert len(list_of_data_frames) == len(
-        list_of_flags), "The number of dataframes shall be the same as the number of flags"
-    unified_dataframe = pd.concat(list_of_data_frames). \
-        sort_values(id_column).drop_duplicates(subset=[id_column], keep="first")
-    for flag, original_df in zip(list_of_flags, list_of_data_frames):
-        unified_dataframe[flag] = unified_dataframe.apply(func=
-                                                          lambda row: True if row[id_column] in original_df[
-                                                              id_column].values else False, axis=1)
-    unified_dataframe.reset_index(drop=True, inplace=True)
-    unified_dataframe.fillna("", inplace=True)
-    return unified_dataframe
-
-
-def get_documents_from_triple_store(list_of_queries: List[str],
-                                    list_of_query_flags: List[str],
-                                    triple_store_adapter: TripleStoreABC,
-                                    id_column: str) -> pd.DataFrame:
-    """
-        Give a list of SPARQL queries, fetch the result set and merge it into a unified result set.
-        Each distinct work is also flagged indicating the query used to fetch it. When fetched multiple times,
-        a work is simply flagged multiple times.
-        When merging the result sets, the unique identifier will be specified in a result-set column.
-    """
-    list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in
-                                  list_of_queries]
-    return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
-                                            list_of_flags=list_of_query_flags,
-                                            id_column=id_column)
-
-
-class EuCellarDagMaster(DagPipeline):
-
-    def __init__(self, store_registry: StoreRegistryManagerABC):
-        self.store_registry = store_registry
-
-    def get_steps(self) -> list:
-        return [self.download_and_split, self.execute_worker_dags]
-
-    def download_and_split(self, *args, **context):
-        """
-            this function:
-                (1) queries the triple store with all the queries,
-                (2) unifies the result set,
-                (3) stores the unified resultset and then
-                (4) splits the result set into separate documents/fragments and
-                (5) stores each fragment for further processing
-        """
-        triple_store_adapter = self.store_registry.sparql_triple_store(config.EU_CELLAR_SPARQL_URL)
-        unified_df = get_documents_from_triple_store(
-            list_of_queries=[EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY],
-            list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
-            triple_store_adapter=triple_store_adapter,
-            id_column="work")
-
-        minio = self.store_registry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
-        minio.empty_bucket(object_name_prefix=None)
-        minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-        minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
-        minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
-
-        for index, row in unified_df.iterrows():
-            file_content = transform_eu_cellar_item(dict(row.to_dict()))
-            filename = FIELD_DATA_PREFIX + hashlib.sha256(row['work'].encode('utf-8')).hexdigest() + ".json"
-            minio.put_object(filename, json.dumps(file_content))
-
-    def execute_worker_dags(self, *args, **context):
-        minio = self.store_registry.minio_object_store(config.EU_CELLAR_BUCKET_NAME)
-        field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
-        count = 0
-
-        for field_data_object in field_data_objects:
-            TriggerDagRunOperator(
-                task_id='trigger_slave_dag____' + field_data_object.object_name.replace("/", "_"),
-                trigger_dag_id=SLAVE_DAG_NAME,
-                conf={"filename": field_data_object.object_name}
-            ).execute(context)
-            count += 1
-
-        logger.info("Created " + str(count) + " DAG runs")
-
-
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
@@ -524,6 +422,10 @@ default_args = {
     "retry_delay": timedelta(minutes=3600)
 }
 
-dag_master = DagFactory(DagPipelineManager(EuCellarDagMaster(StoreRegistryManager())),
-                        dag_name=DAG_NAME, default_args=default_args
-                        ).create()
+# TODO: documentation for specific order in parameters lists
+
+dag_master = DagFactory(DagPipelineManager(
+    CellarDagMaster(
+        [EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY], [EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
+        config.EU_CELLAR_SPARQL_URL, config.EU_CELLAR_BUCKET_NAME, StoreRegistryManager())),
+        dag_name=DAG_NAME, default_args=default_args).create()
