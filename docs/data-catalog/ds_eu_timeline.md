@@ -7,25 +7,25 @@ and are providing objective information about the spread of the virus and
 effective efforts to contain it.
 
 
-You can download the dataset following [this link](http://srv.meaningfy.ws:9000/tmp-elasticsearch-dump/ds_eu_timeline.json?Content-Disposition=attachment%3B%20filename%3D%22ds_eu_timeline.json%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2zVld17bTfKk8iu0Eh9H74MywAeDV3WQ%2F20210505%2F%2Fs3%2Faws4_request&X-Amz-Date=20210505T073902Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9f565bcf5cc0790c14ced2ced348864c75cd60a07fcb7f7c3d40792c16990959).
+You can download the dataset following [this link](ds_eu_timeline.zip).
 
 
 ## Detailed description
 The European Commission (EC) is coordinating a common European response  to the
 coronavirus outbreak. EC is taking resolute action to reinforce our public health
 sectors and mitigate the socio-economic impact in the European Union. EC is
-mobilising means to help the Member States coordinate their national responses
+mobilising resources to help the Member States coordinate their national responses
 and are providing objective information about the spread of the virus and
-effective efforts to contain it.
+effective efforts to contain it. The responses listed in the timeline cover different aspects like travel and transportation, vaccines acquisition, research, funding to maintain jobs and support companies and many more.
 
-The timeline of EU actions during the COVID19 pandemics is a website published by
-the EC with the most important COVID19 reponses. From 1104 actions (counted on 19/04/2021)
+The timeline of EU actions during the COVID-19 pandemics is a [website](https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en) published by
+the EC with the most important COVID-19 reponses. From 1104 actions (counted on 19/04/2021)
 published in the press corner only 171 were mentioned on the EU action timeline.
-So teh timeline constitutes a refinement of the noteworthy and an aggregation
+So the timeline constitutes a refinement of the noteworthy and an aggregation
 of the EU actions.
 
 We crawl this website and its content is automatically organised using the
-attributes listed in Table 1. Unfortunately in the crawled content only a very
+attributes listed in Table 1. Unfortunately, in the crawled content only a very
 limited set of metadata can be identified: title, abstract, date of publication
 and the actual content. And we know that the more metadata about a document,
 the better it is for attempting to answer some of the questions mentioned in the
@@ -63,15 +63,13 @@ Table 1: The attribute structure for ds_eu_timeline
 You are more than welcome to help expand and mature this project.
 
 When contributing to this repository, please first discuss the change you wish
-to make via issue, email, or any other method with the owners of this repository
-before making a change.
+to make via GitHub issues with the owners of this repository before making a change.
 
-Please note we adhere to [Apache code of conduct](https://www.apache.org/foundation/policies/conduct), please follow it in all your
-interactions with the project.
+Please note we adhere to [Apache code of conduct](https://www.apache.org/foundation/policies/conduct), please follow it in all your interactions with the project.
 
 # License
 
 The documents, such as reports and specifications, available in the /doc folder,
 are licenced under a [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/deed.en).
 
-The scripts (stylesheets) and other executables are licenced under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) licence.
+The scripts (stylesheets) and other executables are licenced under [EUPL-1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) licence.

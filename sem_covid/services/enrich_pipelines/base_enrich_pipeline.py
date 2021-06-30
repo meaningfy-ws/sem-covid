@@ -1,11 +1,14 @@
 import pandas as pd
 from gensim.models import KeyedVectors
+from pycaret.classification import predict_model
 
 from sem_covid.services.data_registry import LanguageModel
-from sem_covid.services.ml_flow_models import get_best_model_from_ml_flow
+from sem_covid.services.model_registry import ClassificationModel
 from sem_covid.services.store_registry import StoreRegistry
 
 EMBEDDING_COLUMN = "embeddings"
+
+CLASS_NAMES = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure']
 
 
 class BasePrepareDatasetPipeline:
@@ -25,8 +28,7 @@ class BasePrepareDatasetPipeline:
     def load_language_models(self):
         law2vec = LanguageModel.LAW2VEC.fetch()
         law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
-        law2vec_format = KeyedVectors.load_word2vec_format(law2vec_path, encoding="utf-8")
-        self.l2v_dict = {w: vec for w, vec in zip(law2vec_format.index_to_key, law2vec_format.vectors)}
+        self.l2v_dict = KeyedVectors.load_word2vec_format(law2vec_path, encoding="utf-8")
 
     def prepare_textual_columns(self):
         raise NotImplementedError
@@ -51,13 +53,12 @@ class BasePrepareDatasetPipeline:
 
 class BaseEnrichPipeline:
 
-    def __init__(self, feature_store_name: str, ds_es_index: str, class_names: list, experiment_ids: list):
+    def __init__(self, feature_store_name: str, ds_es_index: str, class_names: list = None):
         self.feature_store_name = feature_store_name
         self.ds_es_index = ds_es_index
-        self.class_names = class_names
-        self.experiments_ids = experiment_ids
+        self.class_names = class_names if class_names else CLASS_NAMES
         self.models = {}
-        self.features = []
+        self.features = pd.DataFrame()
         self.dataset = pd.DataFrame()
 
     def load_dataset(self):
@@ -70,21 +71,23 @@ class BaseEnrichPipeline:
     def load_features(self):
         input_features_name = self.feature_store_name + '_x'
         feature_store = StoreRegistry.es_feature_store()
-        input_features_name = feature_store.get_features(features_name=input_features_name)
-        assert input_features_name is not None
-        assert len(input_features_name) > 0
-        self.features = input_features_name.values.tolist()
+        input_features = feature_store.get_features(features_name=input_features_name)
+        assert input_features is not None
+        assert len(input_features) > 0
+        self.features = input_features
 
     def load_ml_flow_models(self):
         self.models = {}
         for class_name in self.class_names:
-            self.models[class_name] = get_best_model_from_ml_flow(experiment_ids=self.experiments_ids,
-                                                                  class_name=class_name)
+            self.models[class_name] = ClassificationModel.pwdb_by_class_name(class_name=class_name)
 
     def enrich_dataset(self):
         for class_name in self.class_names:
             model = self.models[class_name]
-            self.dataset[class_name] = model.predict(list(self.features))
+            dataset = self.features
+            dataset[class_name] = 0
+            enriched_df = predict_model(model, data=dataset)
+            self.dataset[class_name] = enriched_df['Label']
 
     def store_dataset_in_es(self):
         for class_name in self.class_names:
