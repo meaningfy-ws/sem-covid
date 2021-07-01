@@ -125,14 +125,6 @@ class FakeObjectStore(ObjectStoreABC):
             for key in self._objects.keys()
             if str(key).startswith(object_name_prefix)
         ]
-        # TODO: delete this comment
-        # list_result = []
-        # for key in self._objects.keys():
-        #     str_key = str(key)
-        #     if str_key.startswith(object_name_prefix):
-        #         list_result.append(FakeObjectStoreObject(self._objects[key]))
-        # return list_result
-
 
 class FakeSecretsStore(SecretsStoreABC):
     def get_secrets(self, path: str) -> dict:
