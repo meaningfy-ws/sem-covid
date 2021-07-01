@@ -1,3 +1,14 @@
+#!/usr/bin/python3
+
+# pwdb_classifiers_dag.py
+# Date:  01/07/2021
+# Author: Stratulat Ștefan
+
+"""
+    This module aims to initialize a DAG
+    for the process of training classifiers based on the PWDB dataset.
+"""
+
 from datetime import datetime, timedelta
 
 from airflow import DAG
