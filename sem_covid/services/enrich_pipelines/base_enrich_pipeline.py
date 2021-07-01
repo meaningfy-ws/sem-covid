@@ -1,6 +1,7 @@
 import pandas as pd
 from gensim.models import KeyedVectors
 from pycaret.classification import predict_model
+from sklearn import preprocessing
 
 from sem_covid.services.data_registry import LanguageModel
 from sem_covid.services.model_registry import ClassificationModel
@@ -10,6 +11,9 @@ EMBEDDING_COLUMN = "embeddings"
 
 CLASS_NAMES = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure']
 
+CLASS_NAMES_WITH_LABEL = ['category', 'subcategory', 'type_of_measure']
+
+PWDB_FEATURES_Y = 'fs_pwdb_y'
 
 class BasePrepareDatasetPipeline:
 
@@ -53,13 +57,15 @@ class BasePrepareDatasetPipeline:
 
 class BaseEnrichPipeline:
 
-    def __init__(self, feature_store_name: str, ds_es_index: str, class_names: list = None):
+    def __init__(self, feature_store_name: str, ds_es_index: str, class_names: list = None, class_names_with_label: list = None):
         self.feature_store_name = feature_store_name
         self.ds_es_index = ds_es_index
         self.class_names = class_names if class_names else CLASS_NAMES
+        self.class_names_with_label = class_names_with_label if class_names_with_label else CLASS_NAMES_WITH_LABEL
         self.models = {}
         self.features = pd.DataFrame()
         self.dataset = pd.DataFrame()
+        self.label_features = pd.DataFrame()
 
     def load_dataset(self):
         es_store = StoreRegistry.es_index_store()
@@ -70,11 +76,16 @@ class BaseEnrichPipeline:
 
     def load_features(self):
         input_features_name = self.feature_store_name + '_x'
+        output_features_name = PWDB_FEATURES_Y
         feature_store = StoreRegistry.es_feature_store()
         input_features = feature_store.get_features(features_name=input_features_name)
+        output_features = feature_store.get_features(features_name=output_features_name)
         assert input_features is not None
         assert len(input_features) > 0
+        assert output_features is not None
+        assert len(output_features) > 0
         self.features = input_features
+        self.label_features = output_features
 
     def load_ml_flow_models(self):
         self.models = {}
@@ -87,7 +98,12 @@ class BaseEnrichPipeline:
             dataset = self.features
             dataset[class_name] = 0
             enriched_df = predict_model(model, data=dataset)
-            self.dataset[class_name] = enriched_df['Label']
+            self.dataset[class_name] = enriched_df['Label'].values
+        for class_name in self.class_names_with_label:
+            le = preprocessing.LabelEncoder()
+            le.fit(self.label_features[class_name+'_label'])
+            self.dataset[class_name] = le.inverse_transform(self.dataset[class_name])
+
 
     def store_dataset_in_es(self):
         for class_name in self.class_names:
