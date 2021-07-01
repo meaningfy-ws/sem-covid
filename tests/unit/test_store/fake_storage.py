@@ -110,7 +110,7 @@ class FakeObjectStore(ObjectStoreABC):
             if str_key.startswith(object_name_prefix):
                 del self._objects[key]
 
-    def put_object(self, object_name: str, content) -> int:
+    def put_object(self, object_name: str, content):
         self._objects[object_name] = content
 
     def get_object(self, object_name: str):
