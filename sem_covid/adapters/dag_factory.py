@@ -16,7 +16,7 @@ class DagPipeline(abc.ABC):
 
 class DagStep:
     """
-    abstraction for DAG steps
+        abstraction for DAG steps
     """
     def __init__(self, dag_pipeline: DagPipeline, dag_pipeline_step):
         self.dag_pipeline = dag_pipeline

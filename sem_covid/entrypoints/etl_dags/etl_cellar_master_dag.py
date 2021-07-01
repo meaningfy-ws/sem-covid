@@ -1,7 +1,6 @@
 import hashlib
 import json
 import logging
-from datetime import datetime, timedelta
 from typing import List
 
 import pandas as pd
@@ -21,7 +20,9 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_LANGUAGE = "language"
-FIELD_DATA_PREFIX = "field_data/"
+DOCUMENTS_PREFIX = "documents/"
+
+WORK_ID_COLUMN = "work"
 
 
 def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], list_of_flags: List[str],
@@ -63,12 +64,13 @@ def get_documents_from_triple_store(list_of_queries: List[str],
 class CellarDagMaster(DagPipeline):
 
     def __init__(self, list_of_queries: List[str], list_of_query_flags: List[str],
-                 sparql_url: str, minio_bucket_name: str, store_registry: StoreRegistryManagerABC):
+                 sparql_endpoint_url: str, minio_bucket_name: str,
+                 store_registry: StoreRegistryManagerABC):
         self.store_registry = store_registry
         self.list_of_queries = list_of_queries
         self.list_of_query_flags = list_of_query_flags
         self.minio_bucket_name = minio_bucket_name
-        self.sparql_url = sparql_url
+        self.sparql_endpoint_url = sparql_endpoint_url
 
     def get_steps(self) -> list:
         return [self.download_and_split, self.execute_worker_dags]
@@ -81,36 +83,35 @@ class CellarDagMaster(DagPipeline):
                 (3) stores the unified result set and then
                 (4) splits the result set into separate documents/fragments and
                 (5) stores each fragment for further processing
+
+            The SPARQL query shall return at least the list of work URIs.
         """
-        triple_store_adapter = self.store_registry.sparql_triple_store(self.sparql_url)
+        triple_store_adapter = self.store_registry.sparql_triple_store(self.sparql_endpoint_url)
         unified_df = get_documents_from_triple_store(
             list_of_queries=self.list_of_queries,
             list_of_query_flags=self.list_of_query_flags,
             triple_store_adapter=triple_store_adapter,
-            id_column="work")
+            id_column=WORK_ID_COLUMN)
 
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         minio.empty_bucket(object_name_prefix=None)
         minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
         minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
-        minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
+        minio.empty_bucket(object_name_prefix=DOCUMENTS_PREFIX)
 
         for index, row in unified_df.iterrows():
             file_content = transform_eu_cellar_item(dict(row.to_dict()))
-            filename = FIELD_DATA_PREFIX + hashlib.sha256(row['work'].encode('utf-8')).hexdigest() + ".json"
+            filename = DOCUMENTS_PREFIX + hashlib.sha256(row[WORK_ID_COLUMN].encode('utf-8')).hexdigest() + ".json"
             minio.put_object(filename, json.dumps(file_content))
 
     def execute_worker_dags(self, *args, **context):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
-        field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
-        count = 0
-
-        for field_data_object in field_data_objects:
+        documents = minio.list_objects(DOCUMENTS_PREFIX)
+        for index, document in enumerate(documents):
+            file_content = json.loads(minio.get_object(document.object_name))
             TriggerDagRunOperator(
-                task_id='trigger_slave_dag____' + field_data_object.object_name.replace("/", "_"),
+                task_id='trigger_slave_dag____' + document.object_name.replace("/", "_"),
                 trigger_dag_id=SLAVE_DAG_NAME,
-                conf={"filename": field_data_object.object_name}
+                conf={"work": file_content['work']}
             ).execute(context)
-            count += 1
-
-        logger.info("Created " + str(count) + " DAG runs")
+            logger.info(f"Triggered {index} {document.object_name} DAG run")

@@ -3,7 +3,7 @@ import io
 import json
 import pathlib
 from http.client import HTTPResponse
-from typing import Any, Optional, Union, Collection, MutableMapping
+from typing import Any, Optional, Union, Collection, MutableMapping, List
 
 from elasticsearch import Elasticsearch
 from es_pandas import es_pandas
@@ -79,7 +79,26 @@ class FakeMinioClient(Minio):
         return result
 
 
+class FakeObjectStoreObject(object):
+    """
+        This is a fake class to mimic minio.datatypes.Object whic saccounts
+        for object metadata including object_name used in our code
+    """
+
+    def __init__(self, object_name):
+        self.object_name = object_name
+
+    def __str__(self):
+        return self.object_name
+
+    def __repr__(self):
+        return self.__str__()
+
+
 class FakeObjectStore(ObjectStoreABC):
+    """
+
+    """
 
     def __init__(self):
         self._objects = dict()
@@ -100,13 +119,19 @@ class FakeObjectStore(ObjectStoreABC):
         else:
             return None
 
-    def list_objects(self, object_name_prefix: str):
-        list_result = []
-        for key in self._objects.keys():
-            str_key = str(key)
-            if str_key.startswith(object_name_prefix):
-                list_result.append(self._objects[key])
-        return list_result
+    def list_objects(self, object_name_prefix: str) -> List:
+        return [
+            FakeObjectStoreObject(key)
+            for key in self._objects.keys()
+            if str(key).startswith(object_name_prefix)
+        ]
+        # TODO: delete this comment
+        # list_result = []
+        # for key in self._objects.keys():
+        #     str_key = str(key)
+        #     if str_key.startswith(object_name_prefix):
+        #         list_result.append(FakeObjectStoreObject(self._objects[key]))
+        # return list_result
 
 
 class FakeSecretsStore(SecretsStoreABC):

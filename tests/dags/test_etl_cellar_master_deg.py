@@ -1,5 +1,6 @@
 import pandas as pd
 import pytest
+from airflow.exceptions import DagNotFound
 
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster, get_documents_from_triple_store, \
     unify_dataframes_and_mark_source
@@ -12,8 +13,11 @@ FAKE_EU_CELLAR_SPARQL_URL = "http://fake-url.fake"
 FAKE_EU_CELLAR_BUCKET_NAME = "fake-bucket-name"
 
 
-def test_etl_cellar_master_dag():
 
+
+
+def test_etl_cellar_master_dag():
+    # instantiating the class
     store_registry = FakeStoreRegistryManager()
 
     master_dag = CellarDagMaster(FAKE_LIST_OF_QUERIES, FAKE_LIST_OF_FLAGS, FAKE_EU_CELLAR_SPARQL_URL,
@@ -23,15 +27,23 @@ def test_etl_cellar_master_dag():
     minio_client = store_registry.minio_object_store('fake')
 
     for key, value in minio_client._objects.items():
-        assert 'field_data' in key
+        assert 'documents' in key
         assert '.json' in key
         assert 'work' in value
         assert 'title' in value
 
+    # test steps
     assert list == type(dag_steps)
     assert 2 == len(dag_steps)
     assert hasattr(dag_steps[0], '__self__')
     assert hasattr(dag_steps[1], '__self__')
+
+    # testing execute
+    with pytest.raises(DagNotFound):
+        # we test that the work is found and loaded but we don't test triggering in the airflow environment
+        master_dag.execute_worker_dags()
+
+
 
 
 def test_fetch_documents_from_fake_cellar():
