@@ -3,7 +3,7 @@ import logging
 import tempfile
 import hashlib
 import zipfile
-from typing import List
+from typing import List, Tuple
 
 from tika import parser
 from itertools import chain
@@ -15,7 +15,7 @@ import requests
 
 from sem_covid.adapters.abstract_store import ObjectStoreABC
 from sem_covid.adapters.dag_factory import DagPipeline
-from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX
+from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX
 from sem_covid.services.sc_wrangling.data_cleaning import clean_fix_unicode, clean_to_ascii, clean_remove_line_breaks
 
 from sem_covid.services.store_registry import StoreRegistryManagerABC
@@ -25,7 +25,6 @@ logger = logging.getLogger(__name__)
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 FAILURE_KEY = 'failure_reason'
-RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_LANGUAGE = "language"
 DOWNLOAD_TIMEOUT = 30
@@ -36,12 +35,13 @@ def download_manifestation_file(source_location: str, minio: ObjectStoreABC, sou
     """
         Download the source_location to object store and return the file path
     """
+    logger.info(f"Downloading the {source_type} manifestation from {source_location}")
     download_url = source_location if source_location.startswith('http') else 'http://' + source_location
     request = requests.get(download_url, allow_redirects=True, timeout=DOWNLOAD_TIMEOUT)
     download_file_path = prefix + hashlib.sha256(source_location.encode('utf-8')).hexdigest() + \
                          "_" + source_type + ".zip"
     minio.put_object(download_file_path, request.content)
-    logger.info(f"Downloaded successfully the {type} manifestation from {source_location} "
+    logger.info(f"Downloaded successfully the {source_type} manifestation from {source_location} "
                 f"and saved it as {download_file_path}")
     return download_file_path
 
@@ -71,6 +71,43 @@ def content_cleanup_tool(text: str) -> str:
     return result
 
 
+def download_zip_objects_to_temp_folder(object_paths: List[str], minio_client: ObjectStoreABC):
+    """
+        download the zip objects from an object store and
+        extract the zip content into a temporary folder
+    """
+    temp_dir = tempfile.mkdtemp(prefix="cellar_dag_")
+    for content_path in object_paths:
+        current_zip_location = Path(temp_dir) / str(content_path)
+        with open(current_zip_location, 'wb') as current_zip:
+            content_bytes = bytearray(minio_client.get_object(content_path))
+            current_zip.write(content_bytes)
+        with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
+            zip_ref.extractall(temp_dir)
+    return temp_dir
+
+
+def select_relevant_files_from_temp_folder(temp_folder):
+    return list(chain(Path(temp_folder).glob('*.html'),
+                      Path(temp_folder).glob('*.xml'),
+                      Path(temp_folder).glob('*.xhtml'),
+                      Path(temp_folder).glob('*.doc'),
+                      Path(temp_folder).glob('*.docx'),
+                      Path(temp_folder).glob('*.pdf')))
+
+def get_text_from_selected_files(list_of_file_paths: List[str], tika_service_url: str = config.APACHE_TIKA_URL) \
+        -> List[Tuple[str, str]]:
+    """
+        for a given list of file paths,
+        read the files and pass them one by one to Tika
+        collect the results and return the list of content dicts with (file_name, file_content, content_language) provided
+
+        return:  list of content dicts with (file_name, file_content, content_language) provided
+    """
+    # TODO:
+    ...
+
+
 class CellarDagWorker(DagPipeline):
 
     def __init__(self, sparql_query: str, sparql_url: str, minio_bucket_name: str,
@@ -90,6 +127,7 @@ class CellarDagWorker(DagPipeline):
     def download_documents_and_enrich_json(self, **context):
         """
             This function
+            (0) reads the work document from minio if one exist
             (1) queries the Cellar for all the metadata for a given Work URI
             (2) downloads all the manifestations (returned by the query)
             (3) store the paths to the downloaded manifestations in the work document (json in Minio).
@@ -100,20 +138,41 @@ class CellarDagWorker(DagPipeline):
             f'Fetching metadata and manifestations for {work}. The content will be saved to {self.minio_bucket_name} bucket.')
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
 
-        json_filename = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
-        json_content = self.store_registry.sparql_triple_store(self.sparql_url).with_query(
+        work_document_filename = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
+        work_document_content = json.loads(minio.get_object(object_name=work_document_filename).decode('utf-8'))
+
+        assert isinstance(work_document_content, dict), "The work document must be a dictionary"
+
+        work_metadata = self.store_registry.sparql_triple_store(self.sparql_url).with_query(
             sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe().to_dict(orient="records")
 
+        # we expect that there will be work one set of metadata,
+        # otherwise makes no sense to continue
+        if isinstance(work_metadata, list) and len(work_metadata) > 0:
+            work_document_content.update(work_metadata[0])
+        elif isinstance(work_metadata, dict):
+            work_document_content.update(work_metadata)
+        else:
+            raise ValueError(f"No metadata were found for {work} work")
+
         list_of_downloaded_manifestation_object_paths = []
-        if json_content.get('htmls_to_download'):
-            for html_manifestation in json_content.get('htmls_to_download'):
+        if work_document_content.get('htmls_to_download'):
+            # ensuring we always iterate trough a list
+            htmls_to_download = work_document_content.get('htmls_to_download') \
+                if isinstance(work_document_content.get('htmls_to_download'), list) \
+                else [work_document_content.get('htmls_to_download')]
+            for html_manifestation in htmls_to_download:
                 list_of_downloaded_manifestation_object_paths.append(
                     download_manifestation_file(source_location=html_manifestation,
                                                 minio=minio,
                                                 prefix=RESOURCE_FILE_PREFIX,
                                                 source_type="html"))
-        elif json_content.get('pdfs_to_download'):
-            for pdf_manifestation in json_content.get('pdfs_to_download'):
+        elif work_document_content.get('pdfs_to_download'):
+            # ensuring we always iterate trough a list
+            pdfs_to_download = work_document_content.get('pdfs_to_download') \
+                if isinstance(work_document_content.get('pdfs_to_download'), list) \
+                else [work_document_content.get('pdfs_to_download')]
+            for pdf_manifestation in pdfs_to_download:
                 list_of_downloaded_manifestation_object_paths.append(
                     download_manifestation_file(source_location=pdf_manifestation,
                                                 minio=minio,
@@ -123,20 +182,42 @@ class CellarDagWorker(DagPipeline):
             logger.warning(f"No manifestation has been found for {work}")
 
         # enriching the document with a list of paths to downloaded manifestations
-        json_content[CONTENT_PATH_KEY] = list_of_downloaded_manifestation_object_paths
-        minio.put_object(json_filename, json.dumps(json_content))
+        work_document_content[CONTENT_PATH_KEY] = list_of_downloaded_manifestation_object_paths
+        minio.put_object(work_document_filename, json.dumps(work_document_content))
 
     def extract_content_with_tika(self, **context):
+        """
+            This function:
+            - for each work manifestation zip
+               (1) extract all the files from the zip and
+               (2) pass each file through Tika service and
+               (3) the free text output is concatenated and
+               (4) injected into the work document and
+               (5) the updated work document is stored in object store
+        """
         work = get_work_uri_from_context(**context)
         json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
-        logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
-        logger.info(f'Loading resource files from {json_file_name}')
+        # logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
+
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         json_content = json.loads(minio.get_object(json_file_name))
+        logger.info(f'Loaded the work document JSON from {json_file_name}')
 
-        logger.info(f'Processing {work}')
+        # download archives and unzip them
+        list_of_downloaded_manifestation_object_paths = [RESOURCE_FILE_PREFIX + content_path for content_path in
+                                                         json_content[CONTENT_KEY]]
+        temp_folder = download_zip_objects_to_temp_folder(object_paths=list_of_downloaded_manifestation_object_paths,
+                                                          minio_client=minio)
+        # select relevant files and pass them through Tika
+        list_of_selected_files = select_relevant_files_from_temp_folder(temp_folder)
+        file_content_tuples = get_text_from_selected_files(list_of_file_paths=list_of_selected_files, tika_service_url=config.APACHE_TIKA_URL)
+
+        # merge results from Tika into a unified work content
+        # TODO:
+        ...
+
+        # logger.info(f'Processing {work}')
         json_content[CONTENT_KEY] = list()
-
         try:
             with tempfile.TemporaryDirectory() as temp_dir:
                 for content_path in json_content[CONTENT_PATH_KEY]:
