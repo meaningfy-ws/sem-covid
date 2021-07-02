@@ -7,7 +7,7 @@ from airflow.operators.python import PythonOperator
 
 class DagPipeline(abc.ABC):
     """
-        Abstract class offers a method that gets the steps of the DAG
+        This abstract class offers a method that gets the steps of the DAG
     """
     @abstractmethod
     def get_steps(self) -> list:
@@ -29,16 +29,15 @@ class DagStep:
 
 class ObjectStateManager(abc.ABC):
     """
-        Abstract class for saving and loading the object state
+        This abstract class  saving and loading the object state. It needs to be pass against processes
+        (this is the case in between airflow DAG steps) when this 2 functions can be used to pass the self objects
     """
     @abstractmethod
     def save_object_state(self, obj: object):
-        """"""
         pass
 
     @abstractmethod
     def load_object_state(self) -> object:
-        """"""
         pass
 
 
@@ -54,13 +53,10 @@ class DagPipelineManager:
 
     def create_step(self, dag_pipeline_step, stateful: bool = False) -> DagStep:
         """
+            Generates steps for DAG Pipeline
 
-        Args:
-            dag_pipeline_step:
-            stateful:
-
-        Returns:
-
+            :dag_pipeline_step: steps of ETL DAGs
+            :stateful: boolean variable that indicates if the steps saves previous actions or not
         """
         if stateful:
             assert self.object_state_manager is not None
@@ -70,6 +66,10 @@ class DagPipelineManager:
 
 
 class StatefulDagStep(DagStep):
+    """
+        Abstracts steps that saves the states of previous actions
+        By default use stateless pipeline.
+    """
     def __init__(self, dag_pipeline: DagPipeline, dag_pipeline_step, object_state_manager: ObjectStateManager):
         super().__init__(dag_pipeline, dag_pipeline_step)
         self.object_state_manager = object_state_manager
@@ -81,6 +81,9 @@ class StatefulDagStep(DagStep):
 
 
 class StatelessDagStep(DagStep):
+    """
+        Abstracts steps that does not save the previous states
+    """
     def __call__(self, *args, **kwargs):
         getattr(self.dag_pipeline, self.dag_pipeline_step.__name__)(*args, **kwargs)
 
@@ -106,6 +109,9 @@ class DagFactory:
         self.concurrency = concurrency
 
     def create(self) -> DAG:
+        """
+            After finishing creating the steps, it creates the dag and deploys it.
+        """
         dag_steps = self.dag_manager.dag_pipeline.get_steps()
 
         dag = DAG(self.dag_name, default_args=self.default_args, schedule_interval=self.schedule_interval,
