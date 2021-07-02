@@ -5,7 +5,7 @@
 # Author: Stratulat Ștefan
 
 """
-    This module aims to provide easy access to the secrets of the Vault.
+    This module aims to provide easy access to the secrets in Vault.
 """
 
 from sem_covid.adapters.vault_secrets_store import VaultSecretsStore
