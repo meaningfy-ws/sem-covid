@@ -16,7 +16,7 @@ from sem_covid.services.store_registry import StoreRegistry
    These constants represent the name of the index in ElasticSearch,
      which consist of the original index name and the label for enriched datasets.
 """
-INDEX_NAME_ENRICHED_LABEL = '_enriched'
+ENRICHED_INDEX_NAME_SUFFIX = '_enriched'
 EU_CELLAR_ENRICHED_INDEX_NAME = config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME + INDEX_NAME_ENRICHED_LABEL
 EU_TIMELINE_ENRICHED_INDEX_NAME = config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME + INDEX_NAME_ENRICHED_LABEL
 IRELAND_TIMELINE_ENRICHED_INDEX_NAME = config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME + INDEX_NAME_ENRICHED_LABEL
