@@ -12,6 +12,15 @@ from sem_covid import config
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
 from sem_covid.services.store_registry import StoreRegistry
 
+"""
+   These constants represent the name of the index in ElasticSearch,
+     which consist of the original index name and the label for enriched datasets.
+"""
+INDEX_NAME_ENRICHED_LABEL = '_enriched'
+EU_CELLAR_ENRICHED_INDEX_NAME = config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME + INDEX_NAME_ENRICHED_LABEL
+EU_TIMELINE_ENRICHED_INDEX_NAME = config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME + INDEX_NAME_ENRICHED_LABEL
+IRELAND_TIMELINE_ENRICHED_INDEX_NAME = config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME + INDEX_NAME_ENRICHED_LABEL
+
 
 class Dataset(object):
     """
@@ -23,6 +32,12 @@ class Dataset(object):
                                                 StoreRegistry.es_index_store())
     IRELAND_ACTION_TIMELINE = IndexTabularDataSource(config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
                                                      StoreRegistry.es_index_store())
+    EU_CELLAR_ENRICHED = IndexTabularDataSource(EU_CELLAR_ENRICHED_INDEX_NAME,
+                                                StoreRegistry.es_index_store())
+    EU_ACTION_TIMELINE_ENRICHED = IndexTabularDataSource(EU_TIMELINE_ENRICHED_INDEX_NAME,
+                                                         StoreRegistry.es_index_store())
+    IRELAND_ACTION_TIMELINE_ENRICHED = IndexTabularDataSource(IRELAND_TIMELINE_ENRICHED_INDEX_NAME,
+                                                              StoreRegistry.es_index_store())
 
 
 class LanguageModel(object):
