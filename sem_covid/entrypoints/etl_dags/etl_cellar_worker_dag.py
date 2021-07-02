@@ -95,6 +95,7 @@ def select_relevant_files_from_temp_folder(temp_folder):
                       Path(temp_folder).glob('*.docx'),
                       Path(temp_folder).glob('*.pdf')))
 
+
 def get_text_from_selected_files(list_of_file_paths: List[str], tika_service_url: str = config.APACHE_TIKA_URL) \
         -> List[Tuple[str, str]]:
     """
@@ -210,7 +211,8 @@ class CellarDagWorker(DagPipeline):
                                                           minio_client=minio)
         # select relevant files and pass them through Tika
         list_of_selected_files = select_relevant_files_from_temp_folder(temp_folder)
-        file_content_tuples = get_text_from_selected_files(list_of_file_paths=list_of_selected_files, tika_service_url=config.APACHE_TIKA_URL)
+        file_content_tuples = get_text_from_selected_files(list_of_file_paths=list_of_selected_files,
+                                                           tika_service_url=config.APACHE_TIKA_URL)
 
         # merge results from Tika into a unified work content
         # TODO:
