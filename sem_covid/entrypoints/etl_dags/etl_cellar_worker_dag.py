@@ -95,7 +95,7 @@ class CellarDagWorker(DagPipeline):
             (3) store the paths to the downloaded manifestations in the work document (json in Minio).
         """
 
-        work = get_work_uri_from_context(context)
+        work = get_work_uri_from_context(**context)
         logger.info(
             f'Fetching metadata and manifestations for {work}. The content will be saved to {self.minio_bucket_name} bucket.')
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
@@ -127,55 +127,81 @@ class CellarDagWorker(DagPipeline):
         minio.put_object(json_filename, json.dumps(json_content))
 
     def extract_content_with_tika(self, **context):
-        get_work_uri_from_context()
-        work = context['dag_run'].conf['work']
+        work = get_work_uri_from_context(**context)
         json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
         logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
         logger.info(f'Loading resource files from {json_file_name}')
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         json_content = json.loads(minio.get_object(json_file_name))
 
-        valid_sources = 0
-        identifier = json_content['work']
-        logger.info(f'Processing {identifier}')
+        logger.info(f'Processing {work}')
         json_content[CONTENT_KEY] = list()
 
-        if FAILURE_KEY in json_content:
-            logger.info(
-                f'Will not process source <{identifier}> because it failed download with reason <{json_content[FAILURE_KEY]}>')
-        else:
-            try:
-                with tempfile.TemporaryDirectory() as temp_dir:
-                    for content_path in json_content[CONTENT_PATH_KEY]:
-                        current_zip_location = Path(temp_dir) / Path(content_path)
-                        with open(current_zip_location, 'wb') as current_zip:
-                            content_bytes = bytearray(minio.get_object(RESOURCE_FILE_PREFIX + content_path))
-                            current_zip.write(content_bytes)
-                        with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
-                            zip_ref.extractall(temp_dir)
+        try:
+            with tempfile.TemporaryDirectory() as temp_dir:
+                for content_path in json_content[CONTENT_PATH_KEY]:
+                    current_zip_location = Path(temp_dir) / Path(content_path)
+                    with open(current_zip_location, 'wb') as current_zip:
+                        content_bytes = bytearray(minio.get_object(RESOURCE_FILE_PREFIX + content_path))
+                        current_zip.write(content_bytes)
+                    with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
+                        zip_ref.extractall(temp_dir)
 
-                        logger.info(f'Processing each file from {content_path}:')
-                        for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.xml'),
-                                                  Path(temp_dir).glob('*.pdf')):
-                            logger.info(f'Parsing {Path(content_file).name}')
-                            parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
+                    logger.info(f'Processing each file from {content_path}:')
+                    for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.xml'),
+                                              Path(temp_dir).glob('*.pdf')):
+                        logger.info(f'Parsing {Path(content_file).name}')
+                        parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
 
-                            if 'content' in parse_result:
-                                json_content[CONTENT_KEY].append(parse_result['content'])
-                                json_content[CONTENT_LANGUAGE] = (
-                                        parse_result["metadata"].get("Content-Language")
-                                        or
-                                        parse_result["metadata"].get("content-language")
-                                        or
-                                        parse_result["metadata"].get("language"))
+                        if 'content' in parse_result:
+                            json_content[CONTENT_KEY].append(parse_result['content'])
+                            json_content[CONTENT_LANGUAGE] = (
+                                    parse_result["metadata"].get("Content-Language")
+                                    or
+                                    parse_result["metadata"].get("content-language")
+                                    or
+                                    parse_result["metadata"].get("language"))
+                        else:
+                            logger.warning(
+                                f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
+                    json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
+        except Exception as e:
+            logger.exception(e)
 
-                                valid_sources += 1
-                            else:
-                                logger.warning(
-                                    f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
-                        json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
-            except Exception as e:
-                logger.exception(e)
+        # if FAILURE_KEY in json_content:
+        #     logger.info(
+        #         f'Will not process source <{work}> because it failed download with reason <{json_content[FAILURE_KEY]}>')
+        # else:
+        #     try:
+        #         with tempfile.TemporaryDirectory() as temp_dir:
+        #             for content_path in json_content[CONTENT_PATH_KEY]:
+        #                 current_zip_location = Path(temp_dir) / Path(content_path)
+        #                 with open(current_zip_location, 'wb') as current_zip:
+        #                     content_bytes = bytearray(minio.get_object(RESOURCE_FILE_PREFIX + content_path))
+        #                     current_zip.write(content_bytes)
+        #                 with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
+        #                     zip_ref.extractall(temp_dir)
+        #
+        #                 logger.info(f'Processing each file from {content_path}:')
+        #                 for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.xml'),
+        #                                           Path(temp_dir).glob('*.pdf')):
+        #                     logger.info(f'Parsing {Path(content_file).name}')
+        #                     parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
+        #
+        #                     if 'content' in parse_result:
+        #                         json_content[CONTENT_KEY].append(parse_result['content'])
+        #                         json_content[CONTENT_LANGUAGE] = (
+        #                                 parse_result["metadata"].get("Content-Language")
+        #                                 or
+        #                                 parse_result["metadata"].get("content-language")
+        #                                 or
+        #                                 parse_result["metadata"].get("language"))
+        #                     else:
+        #                         logger.warning(
+        #                             f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
+        #                 json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
+        #     except Exception as e:
+        #         logger.exception(e)
 
         minio.put_object(json_file_name, json.dumps(json_content))
 
@@ -183,8 +209,7 @@ class CellarDagWorker(DagPipeline):
         """
             This function will clean the content of the document from minio
         """
-        get_work_uri_from_context()
-        work = context['dag_run'].conf['work']
+        work = get_work_uri_from_context(**context)
         json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
 
         logger.info(f'Cleaning up the the fragment {json_file_name}')
@@ -202,8 +227,7 @@ class CellarDagWorker(DagPipeline):
                 f"Skipping a fragment without content {json_file_name} titled {document['title']} workID {document['work']}")
 
     def upload_to_elastic(self, *args, **context):
-        get_work_uri_from_context()
-        work = context['dag_run'].conf['work']
+        work = get_work_uri_from_context(**context)
         json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
         es_adapter = self.store_registry.es_index_store()
         logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
@@ -221,4 +245,4 @@ class CellarDagWorker(DagPipeline):
         except Exception:
             logger.exception("Could not upload to Elasticsearch")
 
-        logger.info(f'Sent {json_file_name} file(s) to ElasticSearch succesfuly.')
+        logger.info(f'Sent {json_file_name} file(s) to ElasticSearch successfully.')

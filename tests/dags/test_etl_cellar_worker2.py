@@ -20,12 +20,6 @@ store_registry = FakeStoreRegistryManager()
 
 
 def test_download_manifestation_file():
-    """
-        assert that
-        * the content is downloaded (not null)
-        * the return is the filename in minio
-        * the content is saved in minio
-    """
     source_url = 'https://publications.europa.eu/resource/cellar/d03caacf-a568-11ea-bb7a-01aa75ed71a1.0006.03/DOC_1'
     minio_client = store_registry.minio_object_store('fake_bucket')
 
@@ -45,13 +39,7 @@ def test_get_work_uri_from_context():
         get_work_uri_from_context()
 
 
-def test_download_documents_and_enrich_json():
-    """
-        assert that:
-        * metadata exists (was queried from cellar)
-        * manifestation object paths exists in teh work document
-        * manifestations exist in min io (objects exist in minio)
-    """
+def test_etl_cellar_master_dag():
     # instantiating the class
     # context1 = {}
     # context = {"dag_run": {"conf": {"work": "http://publications.europa.eu/resource/cellar/d03caacf-a568-11ea-bb7a-01aa75ed71a1"}}}
@@ -99,4 +87,5 @@ def test_content_cleanup(fragment3_eu_cellar_covid):
     context = {"dag_run": {"conf": {"work": work_uri}}}
 
     worker_dag.content_cleanup(**context)
+
 
