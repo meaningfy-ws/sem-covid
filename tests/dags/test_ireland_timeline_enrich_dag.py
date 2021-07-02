@@ -1,14 +1,8 @@
-#!/usr/bin/python3
 
-# Date:  11/06/2021
-# Author: Eugeniu Costetchi
-# Email: costezki.eugen@gmail.com
+from sem_covid.entrypoints.ml_dags.ireland_timeline_enrich_dag import DAG_NAME
 
 
-from sem_covid.entrypoints.ml_dags.eu_timeline_enrich_dag import DAG_NAME
-
-
-def test_eu_timeline_enrich_dag_has_two_tasks_and_order(airflow_dag_bag):
+def test_eu_ireland_enrich_dag_has_two_tasks_and_order(airflow_dag_bag):
     dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
     assert dag is not None
     tasks = dag.tasks
