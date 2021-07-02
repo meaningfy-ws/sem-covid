@@ -1,3 +1,14 @@
+#!/usr/bin/python3
+
+# eu_cellar_enrich_dag.py
+# Date:  01/07/2021
+# Author: Stratulat Ștefan
+
+"""
+    This module aims to initialize a DAG
+    for the Eu-Cellar dataset enrichment process.
+"""
+
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
