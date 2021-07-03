@@ -1,5 +1,7 @@
 import hashlib
 import io
+import pathlib
+import re
 
 import pytest
 from pathlib import Path
@@ -9,7 +11,7 @@ import zipfile
 from sem_covid import config
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import download_manifestation_file, CellarDagWorker, \
-    get_work_uri_from_context
+    get_work_uri_from_context, content_cleanup_tool, select_relevant_files_from_temp_folder
 from sem_covid.services.store_registry import StoreRegistry
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistryManager
 
@@ -81,6 +83,20 @@ def test_download_zip_objects_to_temp_folder():
     # TODO:
     ...
 
+
+def test_get_text_from_selected_files():
+    """
+        from a list of file paths
+        get back a list of dictionaries with content and language keys
+    """
+    # TODO:
+    ...
+
+def test_select_relevant_files_from_temp_folder():
+    temp_dir = pathlib.Path(__file__).parent.parent / "test_data" / "test_folder"
+    list_of_files_from_folder = select_relevant_files_from_temp_folder(temp_dir)
+    print(list_of_files_from_folder)
+
 # def test_extract_content_with_tika(fragment1_eu_cellar_covid):
 #     CONTENT_PATH_KEY = 'content_path'
 #     json_content = fragment1_eu_cellar_covid
@@ -106,13 +122,11 @@ def test_download_zip_objects_to_temp_folder():
 #     # with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
 #     #     zip_ref.extractall(directory_to_extract_to)
 
-def test_content_cleanup(fragment3_eu_cellar_covid):
-    work_uri = "http://publications.europa.eu/resource/cellar/d03caacf-a568-11ea-bb7a-01aa75ed71a1"
-    # json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work_uri.encode('utf-8')).hexdigest() + ".json"
-
-    store_registry.minio_object_store('fake_bucket').put_object("json_file_name", fragment3_eu_cellar_covid)
-    worker_dag = CellarDagWorker(QUERY, SPARQL_URL, MINIO_BUCKET_NAME, store_registry)
-    context1 = {}
-    context = {"dag_run": {"conf": {"work": work_uri}}}
-
-    worker_dag.content_cleanup(**context)
+def test_content_cleanup_tool(fragment3_eu_cellar_covid):
+    content = content_cleanup_tool(fragment3_eu_cellar_covid["content"])
+    assert "\n" not in content
+    assert "á" not in content
+    assert "—" not in content
+    assert "\u2014" not in content
+    assert b"\u2014".decode("utf-8") not in content
+    assert not re.match(r"\s\s", content)

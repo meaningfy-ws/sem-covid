@@ -96,17 +96,30 @@ def select_relevant_files_from_temp_folder(temp_folder):
                       Path(temp_folder).glob('*.pdf')))
 
 
-def get_text_from_selected_files(list_of_file_paths: List[str], tika_service_url: str = config.APACHE_TIKA_URL) \
-        -> List[Tuple[str, str]]:
+def get_text_from_selected_files(list_of_file_paths: List[Path], tika_service_url: str = config.APACHE_TIKA_URL) \
+        -> List:
     """
         for a given list of file paths,
         read the files and pass them one by one to Tika
-        collect the results and return the list of content dicts with (file_name, file_content, content_language) provided
+        collect the results and return the list of content dicts with (file_content, content_language) provided
 
-        return:  list of content dicts with (file_name, file_content, content_language) provided
+        return:  list of content dicts with (file_content, content_language) provided
     """
-    # TODO:
-    ...
+    list_of_dictionaries = []
+    for file in list_of_file_paths:
+        content_dictionary = {}
+        # Sending file to tika for parsing. The return result will be a dictionary
+        parse_result = parser.from_file(str(file), tika_service_url)
+        # extracting the content and language from the returned dictionary from TIKA
+        content_dictionary[CONTENT_KEY] = parse_result['content']
+        content_dictionary[CONTENT_LANGUAGE] = (
+                parse_result["metadata"].get("Content-Language")
+                or
+                parse_result["metadata"].get("content-language")
+                or
+                parse_result["metadata"].get("language"))
+        list_of_dictionaries.append(content_dictionary)
+    return list_of_dictionaries
 
 
 class CellarDagWorker(DagPipeline):
@@ -211,81 +224,15 @@ class CellarDagWorker(DagPipeline):
                                                           minio_client=minio)
         # select relevant files and pass them through Tika
         list_of_selected_files = select_relevant_files_from_temp_folder(temp_folder)
-        file_content_tuples = get_text_from_selected_files(list_of_file_paths=list_of_selected_files,
-                                                           tika_service_url=config.APACHE_TIKA_URL)
+        file_content_dictionaries = get_text_from_selected_files(list_of_file_paths=list_of_selected_files,
+                                                                 tika_service_url=config.APACHE_TIKA_URL)
 
         # merge results from Tika into a unified work content
-        # TODO:
-        ...
-
-        # logger.info(f'Processing {work}')
-        json_content[CONTENT_KEY] = list()
-        try:
-            with tempfile.TemporaryDirectory() as temp_dir:
-                for content_path in json_content[CONTENT_PATH_KEY]:
-                    current_zip_location = Path(temp_dir) / Path(content_path)
-                    with open(current_zip_location, 'wb') as current_zip:
-                        content_bytes = bytearray(minio.get_object(RESOURCE_FILE_PREFIX + content_path))
-                        current_zip.write(content_bytes)
-                    with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
-                        zip_ref.extractall(temp_dir)
-
-                    logger.info(f'Processing each file from {content_path}:')
-                    for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.xml'),
-                                              Path(temp_dir).glob('*.pdf')):
-                        logger.info(f'Parsing {Path(content_file).name}')
-                        parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
-
-                        if 'content' in parse_result:
-                            json_content[CONTENT_KEY].append(parse_result['content'])
-                            json_content[CONTENT_LANGUAGE] = (
-                                    parse_result["metadata"].get("Content-Language")
-                                    or
-                                    parse_result["metadata"].get("content-language")
-                                    or
-                                    parse_result["metadata"].get("language"))
-                        else:
-                            logger.warning(
-                                f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
-                    json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
-        except Exception as e:
-            logger.exception(e)
-
-        # if FAILURE_KEY in json_content:
-        #     logger.info(
-        #         f'Will not process source <{work}> because it failed download with reason <{json_content[FAILURE_KEY]}>')
-        # else:
-        #     try:
-        #         with tempfile.TemporaryDirectory() as temp_dir:
-        #             for content_path in json_content[CONTENT_PATH_KEY]:
-        #                 current_zip_location = Path(temp_dir) / Path(content_path)
-        #                 with open(current_zip_location, 'wb') as current_zip:
-        #                     content_bytes = bytearray(minio.get_object(RESOURCE_FILE_PREFIX + content_path))
-        #                     current_zip.write(content_bytes)
-        #                 with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
-        #                     zip_ref.extractall(temp_dir)
-        #
-        #                 logger.info(f'Processing each file from {content_path}:')
-        #                 for content_file in chain(Path(temp_dir).glob('*.html'), Path(temp_dir).glob('*.xml'),
-        #                                           Path(temp_dir).glob('*.pdf')):
-        #                     logger.info(f'Parsing {Path(content_file).name}')
-        #                     parse_result = parser.from_file(str(content_file), config.APACHE_TIKA_URL)
-        #
-        #                     if 'content' in parse_result:
-        #                         json_content[CONTENT_KEY].append(parse_result['content'])
-        #                         json_content[CONTENT_LANGUAGE] = (
-        #                                 parse_result["metadata"].get("Content-Language")
-        #                                 or
-        #                                 parse_result["metadata"].get("content-language")
-        #                                 or
-        #                                 parse_result["metadata"].get("language"))
-        #                     else:
-        #                         logger.warning(
-        #                             f'Apache Tika did NOT return a valid content for the source {Path(content_file).name}')
-        #                 json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
-        #     except Exception as e:
-        #         logger.exception(e)
-
+        for dictionary in file_content_dictionaries:
+            json_content[CONTENT_KEY].append(dictionary[CONTENT_KEY])
+            json_content[CONTENT_LANGUAGE].append(dictionary[CONTENT_LANGUAGE])
+        json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
+        # update work document in object store
         minio.put_object(json_file_name, json.dumps(json_content))
 
     def content_cleanup(self, *args, **context):
@@ -313,19 +260,13 @@ class CellarDagWorker(DagPipeline):
         work = get_work_uri_from_context(**context)
         json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
         es_adapter = self.store_registry.es_index_store()
-        logger.info(f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
-
-        logger.info(f'Loading files from {config.MINIO_URL}')
-
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
-        try:
-            logger.info(
-                f'Sending to ElasticSearch ( {config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME} ) the file {json_file_name}')
-            es_adapter.index(index_name=config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
-                             document_id=json_file_name.split("/")[1],
-                             document_body=json_content)
-        except Exception:
-            logger.exception("Could not upload to Elasticsearch")
+
+        logger.info(
+            f'Sending to ElasticSearch ( {config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME} ) the file {json_file_name}')
+        es_adapter.index(index_name=config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
+                         document_id=json_file_name.split("/")[1],
+                         document_body=json_content)
 
         logger.info(f'Sent {json_file_name} file(s) to ElasticSearch successfully.')
