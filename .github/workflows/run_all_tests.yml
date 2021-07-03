@@ -32,7 +32,7 @@ jobs:
           envkey_VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
           envkey_VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
       - name: Run tests
-        run: make test
+        run: make tests
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
@@ -74,28 +74,3 @@ jobs:
           extra-black-options: ""
           extra-mypy-options: ""
           extra-isort-options: ""
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - name: Check out
-      uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@master
-      with:
-        python-version: 3.8
-    - name: Install dependencies
-      run: |
-        make install
-    - name: Make envfile
-      uses: SpicyPizza/create-envfile@v1
-      with:
-        envkey_VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
-        envkey_VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
-    - name: Run tests
-      run: make tests
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: coverage.xml
-        env_vars: OS,PYTHON
-        name: codecov-umbrella
-        fail_ci_if_error: true
