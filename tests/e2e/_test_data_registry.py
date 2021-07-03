@@ -37,3 +37,21 @@ def test_jrc2vec_language_model():
     lm = LanguageModel.JRC2VEC.fetch()
     assert type(lm) == bytes
     assert len(lm) > 0
+
+
+def test_eu_cellar_enriched_dataset():
+    df = Dataset.EU_CELLAR_ENRICHED.fetch()
+    assert type(df) == pd.DataFrame
+    assert len(df) > 0
+
+
+def test_eu_timeline_enriched_dataset():
+    df = Dataset.EU_ACTION_TIMELINE_ENRICHED.fetch()
+    assert type(df) == pd.DataFrame
+    assert len(df) > 0
+
+
+def test_ireland_timeline_enriched_dataset():
+    df = Dataset.IRELAND_ACTION_TIMELINE_ENRICHED.fetch()
+    assert type(df) == pd.DataFrame
+    assert len(df) > 0

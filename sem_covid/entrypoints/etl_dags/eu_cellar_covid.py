@@ -21,7 +21,7 @@ from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
-DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=9)
+DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", version_major=0, version_minor=10)
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
@@ -31,11 +31,14 @@ TIKA_FILE_PREFIX = 'tika/'
 CONTENT_LANGUAGE = "language"
 FIELD_DATA_PREFIX = "field_data/"
 
-EU_CELLAR_CORE_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+EU_CELLAR_CORE_QUERY = """
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ev: <http://eurovoc.europa.eu/>
 
 SELECT DISTINCT
     ?work ?title    
@@ -195,7 +198,8 @@ WHERE {
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
 
-EU_CELLAR_EXTENDED_QUERY = """PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+EU_CELLAR_EXTENDED_QUERY = """
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
 PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -205,49 +209,45 @@ PREFIX ev: <http://eurovoc.europa.eu/>
 
 SELECT DISTINCT
     ?work ?title
-    (group_concat(DISTINCT ?cdm_type; separator="| ") as ?cdm_types)
-    (group_concat(DISTINCT ?cdm_type_label; separator="| ") as ?cdm_type_labels)
+    (group_concat(DISTINCT ?cdm_type; separator='| ') as ?cdm_types)
+    (group_concat(DISTINCT ?cdm_type_label; separator='| ') as ?cdm_type_labels)
 
-    (group_concat(DISTINCT ?resource_type; separator="| ") as ?resource_types)
-    (group_concat(DISTINCT ?resource_type_label; separator="| ") as ?resource_type_labels)
+    (group_concat(DISTINCT ?resource_type; separator='| ') as ?resource_types)
+    (group_concat(DISTINCT ?resource_type_label; separator='| ') as ?resource_type_labels)
 
-    (group_concat(DISTINCT ?eurovoc_concept; separator="| ") as ?eurovoc_concepts)
-    (group_concat(DISTINCT ?eurovoc_concept_label; separator="| ") as ?eurovoc_concept_labels)
+    (group_concat(DISTINCT ?eurovoc_concept; separator='| ') as ?eurovoc_concepts)
+    (group_concat(DISTINCT ?eurovoc_concept_label; separator='| ') as ?eurovoc_concept_labels)
 
-    (group_concat(DISTINCT ?subject_matter; separator="| ") as ?subject_matters)
-    (group_concat(DISTINCT ?subject_matter_label; separator="| ") as ?subject_matter_labels)
+    (group_concat(DISTINCT ?subject_matter; separator='| ') as ?subject_matters)
+    (group_concat(DISTINCT ?subject_matter_label; separator='| ') as ?subject_matter_labels)
 
-    (group_concat(DISTINCT ?directory_code; separator="| ") as ?directory_codes)
-    (group_concat(DISTINCT ?directory_code_label; separator="| ") as ?directory_codes_labels)
+    (group_concat(DISTINCT ?directory_code; separator='| ') as ?directory_codes)
+    (group_concat(DISTINCT ?directory_code_label; separator='| ') as ?directory_codes_labels)
 
-    (group_concat(DISTINCT ?celex; separator="| ") as ?celex_numbers)
-    (group_concat(DISTINCT ?legal_eli; separator="| ") as ?legal_elis)
-    (group_concat(DISTINCT ?id_document; separator="| ") as ?id_documents)
-    (group_concat(DISTINCT ?same_as_uri; separator="| ") as ?same_as_uris)
+    (group_concat(DISTINCT ?celex; separator='| ') as ?celex_numbers)
+    (group_concat(DISTINCT ?legal_eli; separator='| ') as ?legal_elis)
+    (group_concat(DISTINCT ?id_document; separator='| ') as ?id_documents)
+    (group_concat(DISTINCT ?same_as_uri; separator='| ') as ?same_as_uris)
 
-    (group_concat(DISTINCT ?author; separator="| ") as ?authors)
-    (group_concat(DISTINCT ?author_label; separator="| ") as ?author_labels)
+    (group_concat(DISTINCT ?author; separator='| ') as ?authors)
+    (group_concat(DISTINCT ?author_label; separator='| ') as ?author_labels)
 
-    (group_concat(DISTINCT ?full_oj; separator="| ") as ?full_ojs)
-    (group_concat(DISTINCT ?oj_sector; separator="| ") as ?oj_sectors)
-    (group_concat(DISTINCT ?internal_comment; separator="| ") as ?internal_comments)
-    (group_concat(DISTINCT ?in_force; separator="| ") as ?is_in_force)
+    (group_concat(DISTINCT ?full_oj; separator='| ') as ?full_ojs)
+    (group_concat(DISTINCT ?oj_sector; separator='| ') as ?oj_sectors)
+    (group_concat(DISTINCT ?internal_comment; separator='| ') as ?internal_comments)
+    (group_concat(DISTINCT ?in_force; separator='| ') as ?is_in_force)
 
-    (group_concat(DISTINCT ?date_document; separator="| ") as ?dates_document)
-    (group_concat(DISTINCT ?date_created; separator="| ") as ?dates_created)
-    (group_concat(DISTINCT ?legal_date_entry_into_force; separator="| ") as ?legal_dates_entry_into_force)
-    (group_concat(DISTINCT ?legal_date_signature; separator="| ") as ?legal_dates_signature)
+    (group_concat(DISTINCT ?date_document; separator='| ') as ?dates_document)
+    (group_concat(DISTINCT ?date_created; separator='| ') as ?dates_created)
+    (group_concat(DISTINCT ?legal_date_entry_into_force; separator='| ') as ?legal_dates_entry_into_force)
+    (group_concat(DISTINCT ?legal_date_signature; separator='| ') as ?legal_dates_signature)
 
-    (group_concat(DISTINCT ?manif_pdf; separator="| ") as ?manifs_pdf)
-    (group_concat(DISTINCT ?manif_html; separator="| ") as ?manifs_html)
-    (group_concat(DISTINCT ?pdf_to_download; separator="| ") as ?pdfs_to_download)
-    (group_concat(DISTINCT ?html_to_download; separator="| ") as ?htmls_to_download)
-
-    (group_concat(DISTINCT ?eu_cellar_extended_value; separator="| ") as ?eu_cellar_extended)
-
+    (group_concat(DISTINCT ?manif_pdf; separator='| ') as ?manifs_pdf)
+    (group_concat(DISTINCT ?manif_html; separator='| ') as ?manifs_html)
+    (group_concat(DISTINCT ?pdf_to_download; separator='| ') as ?pdfs_to_download)
+    (group_concat(DISTINCT ?html_to_download; separator='| ') as ?htmls_to_download)
 WHERE {
     VALUES ?expr_lang { lang:ENG}
-    VALUES ?eu_cellar_extended_value { "true" }
 
     VALUES ?eurovoc_concept {
         ev:1005
@@ -321,40 +321,44 @@ WHERE {
     }
 
     ?work cdm:work_date_document ?date_document .
-    FILTER (strdt(?date_document, xsd:date) > "2020-01-01"^^xsd:date)
+
+    FILTER NOT EXISTS {
+        ?work a cdm:publication_general .
+    }
+    FILTER (strdt(?date_document, xsd:date) > '2020-01-01'^^xsd:date)
 
     ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
     OPTIONAL {
         ?eurovoc_concept skos:prefLabel ?eurovoc_concept_label .
-        FILTER (lang(?eurovoc_concept_label)="en")
+        FILTER (lang(?eurovoc_concept_label)='en')
     }
 
     OPTIONAL {
         ?work a ?cdm_type .
         OPTIONAL {
             ?cdm_type skos:prefLabel ?cdm_type_label .
-            FILTER (lang(?cdm_type_label)="en")
+            FILTER (lang(?cdm_type_label)='en')
         }
     }
     OPTIONAL {
         ?work cdm:work_has_resource-type ?resource_type .
         OPTIONAL {
             ?resource_type skos:prefLabel ?resource_type_label .
-            FILTER (lang(?resource_type_label)="en")
+            FILTER (lang(?resource_type_label)='en')
         }
     }
     OPTIONAL {
         ?work cdm:resource_legal_is_about_subject-matter ?subject_matter .
         OPTIONAL {
             ?subject_matter skos:prefLabel ?subject_matter_label .
-            FILTER (lang(?subject_matter_label)="en")
+            FILTER (lang(?subject_matter_label)='en')
         }
     }
     OPTIONAL {
         ?work cdm:resource_legal_is_about_concept_directory-code ?directory_code .
         OPTIONAL {
             ?directory_code skos:prefLabel ?directory_code_label .
-            FILTER (lang(?directory_code_label)="en")
+            FILTER (lang(?directory_code_label)='en')
         }
     }
 
@@ -362,7 +366,7 @@ WHERE {
         ?work cdm:work_created_by_agent ?author .
         OPTIONAL {
             ?author skos:prefLabel ?author_label .
-            FILTER (lang(?author_label)="en")
+            FILTER (lang(?author_label)='en')
         }
     }
     OPTIONAL {
@@ -415,8 +419,8 @@ WHERE {
             FILTER (str(?type_html) in ('html', 'xhtml'))
         }
     }
-    BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
-    BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+    BIND(IRI(concat(?manif_pdf,'/zip')) as ?pdf_to_download)
+    BIND(IRI(concat(?manif_html,'/zip')) as ?html_to_download)
 }
 GROUP BY ?work ?title
 ORDER BY ?work ?title"""
@@ -454,7 +458,7 @@ def get_documents_from_triple_store(list_of_queries: List[str],
         a work is simply flagged multiple times.
         When merging the result sets, the unique identifier will be specified in a result-set column.
     """
-    list_of_result_data_frames = [triple_store_adapter.with_query(query).get_dataframe() for query in list_of_queries]
+    list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in list_of_queries]
     return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
                                             list_of_flags=list_of_query_flags,
                                             id_column=id_column)
@@ -513,7 +517,7 @@ default_args = {
     "retries": 0,
     "retry_delay": timedelta(minutes=3600)
 }
-with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=16, concurrency=16) as dag:
+with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=2) as dag:
     download_task = PythonOperator(task_id='download_and_split',
                                    python_callable=download_and_split_callable, retries=0, dag=dag)
 

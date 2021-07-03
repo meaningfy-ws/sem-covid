@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-# eu_timeline_enrich_dag.py
+# ireland_timeline_enrich_dag.py
 # Date:  01/07/2021
 # Author: Stratulat Ștefan
 
 """
     This module aims to initialize a DAG
-    for the Eu-Timeline dataset enrichment process.
+    for the Ireland-Timeline dataset enrichment process.
 """
 
 from airflow import DAG
@@ -14,7 +14,7 @@ from airflow.operators.python import PythonOperator
 
 from datetime import datetime, timedelta
 
-from sem_covid.services.enrich_pipelines.eu_timeline_enrich_pipeline import EuTimeLineEnrich
+from sem_covid.services.enrich_pipelines.ireland_timeline_enrich_pipeline import IrelandTimeLineEnrich
 
 default_args = {
     "owner": "airflow",
@@ -30,7 +30,7 @@ default_args = {
 VERSION = '0.0.1'
 DAG_TYPE = 'ml'
 OPERATION = 'enrichment'
-DATASET_NAME = 'eu_timeline'
+DATASET_NAME = 'ireland_timeline'
 DAG_NAME = "_".join([DAG_TYPE, DATASET_NAME, OPERATION, VERSION])
 
 with DAG(DAG_NAME,
@@ -39,13 +39,13 @@ with DAG(DAG_NAME,
          max_active_runs=1,
          concurrency=1) as dag:
     dataset_preparation = PythonOperator(task_id=f"dataset_preparation",
-                                         python_callable=EuTimeLineEnrich.prepare_dataset,
+                                         python_callable=IrelandTimeLineEnrich.prepare_dataset,
                                          retries=1,
                                          dag=dag
                                          )
 
     dataset_enrichment = PythonOperator(task_id=f"dataset_enrichment",
-                                        python_callable=EuTimeLineEnrich.enrich_dataset,
+                                        python_callable=IrelandTimeLineEnrich.enrich_dataset,
                                         retries=1,
                                         dag=dag
                                         )
