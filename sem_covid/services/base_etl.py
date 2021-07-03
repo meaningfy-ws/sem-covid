@@ -113,13 +113,13 @@ class BaseETL(ABC):
         return dag
 
 
-
-class CellarPipiline:
-
-    def __init__(self, ts: TripleStoreAdapter, es: ESAdapter):
-        ...
-
-    def foo(self, **kwargs):
-        bar = kwargs["bar"]
-        query = kwargs["query"]
-        self.ts.with_query(query)
+# TODO what is this ? do we need this ?
+# class CellarPipiline:
+#
+#     def __init__(self, ts: SPARQLTripleStore, es: ESAdapter):
+#         ...
+#
+#     def foo(self, **kwargs):
+#         bar = kwargs["bar"]
+#         query = kwargs["query"]
+#         self.ts.with_query(query)
