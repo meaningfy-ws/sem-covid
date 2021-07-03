@@ -1,12 +1,12 @@
-# EU Cellar COVID19 dataset (ds_eu_cellar)
+# EU Cellar COVID-19 dataset (ds_eu_cellar)
 
 The Cellar is the semantic repository of the Publications Office. It stores
 important legal documents, general publications and other important EU level
-documents. We query this repository in order to construct the EU level COVID19
+documents. We query this repository in order to construct the EU level COVID-19
 datasets containing the document content and the associated metadata.
 
 
-You can download the dataset following [this link](http://srv.meaningfy.ws:9000/tmp-elasticsearch-dump/ds_eu_cellar.json?Content-Disposition=attachment%3B%20filename%3D%22ds_eu_cellar.json%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2zVld17bTfKk8iu0Eh9H74MywAeDV3WQ%2F20210505%2F%2Fs3%2Faws4_request&X-Amz-Date=20210505T073841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4b8dfcd11e65adbba616bcd57bdf03eabb2a9e46e810837bcc4ff67df77212fb).
+You can download the dataset following [this link](ds_eu_cellar.zip) and [this link](ds_eu_cellar.z01).
 
 
 ## Detailed description
@@ -15,14 +15,14 @@ extended datasets variants which are results of querying Cellar with two
 different SPARQL queries.
 
 The core dataset is the result of querying for documents (called works) in the
-Cellar, which are annotated with a special “COVID19” tag. The tagging is
+Cellar, which are annotated with a special “COVID-19” tag. The tagging is
 performed manually by the EurLex team and its contractors. This tag marks
 documents that have been identified as dealing directly with issues of the
-COVID19 pandemic.
+COVID-19 pandemic.
 
 The extended dataset is also the result of querying for documents (called works)
-in Cellar , which are annotated with any of the EuroVoc concepts that have been
-identified as relevant to COVID19 pandemics. The list of selected EuroVoc
+in Cellar , which are annotated with any of the [EuroVoc](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc) concepts that have been
+identified as relevant to COVID-19 pandemics. The list of selected EuroVoc
 concepts is provided in Table 1.
 
 | Concept URI | Concept preferred label |
@@ -96,7 +96,7 @@ concepts is provided in Table 1.
 | http://eurovoc.europa.eu/c_814bb9e4 | coronavirus disease |
 | http://eurovoc.europa.eu/c_abfaf2ea | disease surveillance |
 
-Table 1: EuroVoc concepts considered highly relevant for COVID19 document search
+Table 1: EuroVoc concepts considered highly relevant for COVID-19 document search
 
 
 The result of querying Cellar in both cases (core and extended datasets) contains
@@ -120,22 +120,20 @@ Table 2: The attribute structure for eu_cellar dataset
 
 
 Finally the core and the extended dataset variants are merged and provided as a
-unified EU Cellar COVID19 dataset.
+unified EU Cellar COVID-19 dataset.
 
 # Contributing
 
 You are more than welcome to help expand and mature this project.
 
 When contributing to this repository, please first discuss the change you wish
-to make via issue, email, or any other method with the owners of this repository
-before making a change.
+to make via GitHub issues with the owners of this repository before making a change.
 
-Please note we adhere to [Apache code of conduct](https://www.apache.org/foundation/policies/conduct), please follow it in all your
-interactions with the project.
+Please note we adhere to [Apache code of conduct](https://www.apache.org/foundation/policies/conduct), please follow it in all your interactions with the project.
 
 # License
 
 The documents, such as reports and specifications, available in the /doc folder,
 are licenced under a [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/deed.en).
 
-The scripts (stylesheets) and other executables are licenced under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) licence.
+The scripts (stylesheets) and other executables are licenced under [EUPL-1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) licence.

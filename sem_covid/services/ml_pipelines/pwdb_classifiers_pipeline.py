@@ -1,14 +1,19 @@
+#!/usr/bin/python3
+
+# pwdb_classifiers_pipeline.py
+# Date:  01/07/2021
+# Author: Stratulat Ștefan
+
+"""
+    This module aims to define a pipeline for driving classifiers based on the PWDB dataset.
+"""
+
 import mlflow
-import pandas as pd
 from gensim.models import KeyedVectors
-from sklearn import model_selection
-from sklearn.base import ClassifierMixin, clone
-from sklearn.ensemble import RandomForestClassifier
 from sklearn import preprocessing
 from sem_covid import config
-from sem_covid.services.base_pipeline import BaseExperiment
+from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
-from sem_covid.services.sc_wrangling.evaluation_metrics import model_evaluation_metrics
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import StoreRegistry
 
@@ -41,37 +46,62 @@ CLASS_COLUMNS = ['businesses', 'citizens', 'workers', 'category', 'subcategory',
                  'actors', 'category_label', 'subcategory_label', 'type_of_measure_label', 'target_groups_label',
                  'actors_label']
 
-TRAIN_COLUMNS = ['x_train', 'x_test', 'y_train', 'y_test', 'class_name']
+TRAIN_CLASSES = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure', 'target_groups',
+                 'actors']
 
 EMBEDDING_COLUMN = "embeddings"
 
 
 class FeatureEngineering:
     """
-    this class performs
+        This class represents the pipeline part for feature engineering.
 
-    - the document embedding
-    - class re-organisation
+        The steps for feature engineering are:
+        - loading the dataset
+        - validation of the dataset
+        - loading the language model
+        - performing the necessary transformations on the dataset
+        - storing the feature set
     """
 
     def __init__(self, feature_store_name: str):
+        """
+            Initialization of parameters for feature engineering pipeline.
+        :param feature_store_name: the name of the feature store
+        """
         self.df = pd.DataFrame()
         self.l2v_dict = {}
         self.feature_store_name = feature_store_name
 
     def load_data(self):
+        """
+            This step loads the dataset.
+        :return:
+        """
         self.df = Dataset.PWDB.fetch()
 
     def validate_data(self):
+        """
+            This step validates the dataset.
+        :return:
+        """
         for column in TEXTUAL_COLUMNS:
             assert column in self.df.columns
 
     def load_language_model(self):
+        """
+            This step loads the language pattern.
+        :return:
+        """
         law2vec = LanguageModel.LAW2VEC.fetch()
         law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
         self.l2v_dict = KeyedVectors.load_word2vec_format(law2vec_path, encoding="utf-8")
 
     def transform_data(self):
+        """
+            This step applies the necessary transformations to the dataset.
+        :return:
+        """
         pwdb_dataframe = self.df
         new_columns = {'businesses': BUSINESSES, 'citizens': CITIZENS, 'workers': WORKERS}
         refactored_pwdb_df = pwdb_dataframe['target_groups']
@@ -83,7 +113,8 @@ class FeatureEngineering:
         for column in SIMPLE_CLASS_COLUMNS:
             le = preprocessing.LabelEncoder()
             le.fit(pwdb_dataframe[column])
-            pwdb_dataframe[column + '_label'] = le.transform(pwdb_dataframe[column])
+            pwdb_dataframe[column + '_label'] = pwdb_dataframe[column]
+            pwdb_dataframe[column] = le.transform(pwdb_dataframe[column])
 
         self.df = pwdb_dataframe
         self.df = self.df.set_index(self.df.columns[0])
@@ -91,7 +122,10 @@ class FeatureEngineering:
         self.df[EMBEDDING_COLUMN] = self.df[EMBEDDING_COLUMN].apply(lambda x: text_to_vector(x, self.l2v_dict))
 
     def store_feature_set(self):
-
+        """
+            This step stores the feature set in the Feature Store.
+        :return:
+        """
         input_features_name = self.feature_store_name + "_x"
         output_features_name = self.feature_store_name + "_y"
         feature_store = StoreRegistry.es_feature_store()
@@ -100,6 +134,10 @@ class FeatureEngineering:
         feature_store.put_features(features_name=output_features_name, content=pd.DataFrame(self.df[CLASS_COLUMNS]))
 
     def execute(self):
+        """
+           This method performs the steps in the defined order.
+        :return:
+        """
         self.load_data()
         self.validate_data()
         self.load_language_model()
@@ -108,94 +146,99 @@ class FeatureEngineering:
 
 
 class ModelTraining:
+    """
+        This class defines the pipeline part for driving classification models.
+    """
 
-    def __init__(self, model: ClassifierMixin, model_name: str, feature_store_name: str, experiment_name: str):
-        self.trained_models = []
-        self.model = model
+    def __init__(self, feature_store_name: str, experiment_name: str, train_classes: list = None):
+        """
+            Initialization of parameters for drive pipelines of classification models.
+        :param feature_store_name: the name of the feature store
+        :param experiment_name: the name of the experiment
+        :param train_classes: the list of names of the classes to be trained
+        """
         self.feature_store_name = feature_store_name
-        self.train_features = pd.DataFrame()
-        self.evaluation_models = []
-        self.model_name = model_name
         self.experiment_name = experiment_name
+        self.dataset_x = pd.DataFrame()
+        self.dataset_y = pd.DataFrame()
+        self.train_classes = train_classes if train_classes else TRAIN_CLASSES
 
     def load_feature_set(self):
+        """
+            This step loads the feature set.
+        :return:
+        """
         feature_store = StoreRegistry.es_feature_store()
         input_features_name = self.feature_store_name + "_x"
         output_features_name = self.feature_store_name + "_y"
-        input_features = feature_store.get_features(input_features_name)
-        input_features = input_features.values.tolist()
-        output_features = feature_store.get_features(output_features_name)
-        x_train_list = list()
-        x_test_list = list()
-        y_train_list = list()
-        y_test_list = list()
-        for column in output_features.columns:
-            x_train, x_test, y_train, y_test = model_selection.train_test_split(input_features,
-                                                                                output_features[column].values,
-                                                                                random_state=42, test_size=0.3,
-                                                                                shuffle=True)
-            x_train_list.append(list(x_train))
-            x_test_list.append(list(x_test))
-            y_train_list.append(list(y_train))
-            y_test_list.append(list(y_test))
-        train_test_dataset = {"x_train": x_train_list, "x_test": x_test_list,
-                              "y_train": y_train_list, "y_test": y_test_list,
-                              "class_name": output_features.columns}
-        self.train_features = pd.DataFrame.from_dict(train_test_dataset)
+        self.dataset_x = feature_store.get_features(input_features_name)
+        self.dataset_y = feature_store.get_features(output_features_name)
 
     def validate_feature_set(self):
-        for column in TRAIN_COLUMNS:
-            assert column in self.train_features.columns
+        """
+            This step validates the feature set.
+        :return:
+        """
+        assert self.dataset_x is not None
+        assert self.dataset_y is not None
+        for column in self.train_classes:
+            assert column in self.dataset_y.columns
 
     def train_model(self):
-        for it, row in self.train_features.iterrows():
-            model = clone(self.model)
-            model = model.fit(row['x_train'],
-                              row['y_train'])
-            self.trained_models.append((model, row))
-
-    def evaluate_model(self):
-        for trained_model, row in self.trained_models:
-            prediction = trained_model.predict(row['x_test'])
-            evaluation = model_evaluation_metrics(
-                row['y_test'], prediction)
-            self.evaluation_models.append((trained_model, row['class_name'], evaluation))
-
-    def track_ml_run(self):
-        mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
-        mlflow.set_experiment(experiment_name=self.experiment_name)
-        for model, class_name, evaluation in self.evaluation_models:
-            with mlflow.start_run():
-                mlflow.log_param("class_name", class_name)
-                mlflow.log_metrics(evaluation)
-                mlflow.sklearn.log_model(
-                    sk_model=model,
-                    artifact_path="model",
-                    registered_model_name=class_name + "_" + self.model_name
-                )
+        """
+            This step trains the classification models.
+        :return:
+        """
+        for class_name in self.train_classes:
+            dataset = self.dataset_x
+            dataset[class_name] = self.dataset_y[class_name].values
+            train_data = dataset
+            train_data.reset_index(inplace=True, drop=True)
+            experiment = setup(data=train_data,
+                               target=class_name,
+                               log_experiment=True,
+                               experiment_name=f"{self.experiment_name}_{class_name}",
+                               silent=True)
+            best_model = compare_models()
+            tuned_model = tune_model(best_model, n_iter=200, choose_better=True, optimize='F1')
+            final_model = finalize_model(tuned_model)
+            del dataset
+            del train_data
 
     def execute(self):
+        """
+            This method performs the steps in the defined order.
+        :return:
+        """
         self.load_feature_set()
         self.validate_feature_set()
+        mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
         self.train_model()
-        self.evaluate_model()
-        self.track_ml_run()
 
 
-PWDB_FEATURE_STORE_NAME = 'fs_pwdb_tg1'
+PWDB_FEATURE_STORE_NAME = 'fs_pwdb'
 
 
-class RandomForestPWDBExperiment:
+class PWDBClassifiers:
+    """
+        This class aims to unify the feature engineering pipeline and the model training pipeline.
+    """
 
     @classmethod
     def feature_engineering(cls):
+        """
+            This method executes feature engineering pipeline with preset parameters.
+        :return:
+        """
         worker = FeatureEngineering(feature_store_name=PWDB_FEATURE_STORE_NAME)
         worker.execute()
 
     @classmethod
     def model_training(cls):
-        classifier = RandomForestClassifier()
-        worker = ModelTraining(model=classifier, model_name="RandomForest",
-                               feature_store_name=PWDB_FEATURE_STORE_NAME,
-                               experiment_name="PWDB_target_group_l1(RandomForest, law2vec200d)")
+        """
+            This method executes training model pipeline with preset parameters.
+        :return:
+        """
+        worker = ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
+                               experiment_name="PyCaret_pwdb")
         worker.execute()

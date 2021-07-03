@@ -12,7 +12,7 @@ A dataset shall fulfil a clearly defined goal. That is why, before diving into t
 \section{Project goals: the whys}
 \label{sec:goals}
 
-The current project goals originate from two stakeholders, whose interests differ in a complementary manner. The EU Open Data Portal team has an investigative novelty-seeking research orientation, while the Eurofound team is pragmatically oriented to satisfy the business needs of the European policymakers. The Eurofound team has set specific topic boundary around the area of working and living conditions for the EU citizens.
+The current project goals originate from two stakeholders, whose interests differ in a complementary manner. The EU Open Data Portal team has an investigative novelty-seeking research orientation, while the Eurofound team is pragmatically oriented to satisfy the business needs of the European policymakers. The Eurofound team is in particular interested in the area of working and living conditions for the citizens of European Union member states.
 
 From a research perspective, this project sets out to \textit{investigate and establish the semantic mapping of the European Union (EU) and Member States (MS) response (defined in Section \ref{sec:domain-delimitation}) to the COVID-19 crisis in the area of living and working conditions.} This goal can be further elaborated in terms of the following research questions:
 
@@ -247,7 +247,7 @@ Now, that the dataset domain is set to the COVID-19 reaction and response measur
 
 \begin{itemize}
 	\item Identify references to sources of data from discussions with the stakeholders and investigate them. From the selected ones collect text and metadata describing and classifying responses and reactions to the COVID-19 crisis. 
-	\item To the extent possible, distinguish between reaction and response measures (as explained in Section \ref{sec:domain-delimitation}) because the latter is of particular importance to the Eurofound stakeholder (and thus in the project scope). 
+	\item To the extent possible, distinguish between reaction and response measures (as explained in Section \ref{sec:domain-delimitation}) because of the current project scope. 
 	\item We assume that the official documents are a reliable source of measure descriptions.
 	\item The primary focus is on collecting official texts of various registers (administrative, journalistic, legal, etc.) to enable further exercises to train machine learning models that can identify and distinguish a COVID-19 measure from other texts and, if possible, differences between the reactions and responses.
 	\item Selecting the texts with these properties leads to a relatively scarce set of available resources. Therefore no (data) sampling was considered or any tests for the (data) balancing. Mainly we aimed at covering selected initial sources given the apparent degree of (data) representativeness to the semantic domain, which remains to be tested and analysed.
@@ -355,7 +355,7 @@ PWDB includes large-scale government measures and wider collective agreements, a
 
 The original PWDB contains a rich set of attributes. Only a subset is considered relevant from the business perspective to the current project and is listed in the table below. The original structure is transformed into a simplified form for harmonisation with other datasets and easier usage. The data structure of the transformed core PWDB dataset (ds\_pwdb\_core) is described in Table \ref{tab:dspwdbcore}.
 
-In column BF are provided references to the business features for each data attribute. However, it is not always possible to establish a reliable one to one mapping. Therefore, in some places, we use: the tilde sign (~) to signify an approximate relation, the plus sign to signify that more than one BF is included or represented by the data attribute.
+In column BF are provided references to the business features for each data attribute. However, it is not always possible to establish a reliable one to one mapping. Therefore, in some places, we use: the tilde sign ($\sim$) to signify an approximate relation, the plus sign to signify that more than one BF is included or represented by the data attribute.
 
 %%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
 {
@@ -1077,7 +1077,7 @@ In the middle of the diagram are depicted five larger blue round-cornered rectan
 In the top part of the diagram is depicted the application layer which contains four workflows, one for each dataset: \textit{EU Cellar workflow}, \textit{EU timeline workflow}, \textit{PWDB workflow}, and \textit{Ireland timeline workflow}. These workflows have a prototypical extract, transform, toad (ETL) structure\footnote{ In computing, extract, transform, load (ETL) is the general procedure of copying data from one or more sources into a destination system which represents the data differently from the source(s) or in a different context than the source(s). The ETL process became a popular concept in the 1970s and is often used in data warehousing. }. The generic ETL process implemented in our workflows is addressed in the next section.
 
 \section{Workflow structure: how it works? }
-\ref{sec:how-it-works}
+\label{sec:how-it-works}
 
 This section addresses the general structure of dataset creation workflow. Because it is a simple sequence of tasks, without any major bifurcations we call them pipelines as well. The prototypical pipeline we implement is depicted in Figure \ref{fig:Generic_ETL_process_for_dataset_creation} and can be conceptualised as a sequence of four steps: 
 
@@ -1092,8 +1092,8 @@ This section addresses the general structure of dataset creation workflow. Becau
 The sources of data we employ in this project are: 
 
 \begin{itemize}
-	\item Cellar SPARQL endpoint\footnote{ Cellar SPARQL endpoint  } where the EU legal documents are stored and disseminated. 
-	\item Eurofound website\footnote{ Eurofound PWDB download page } where the PWDB is published.
+	\item Cellar SPARQL endpoint\footnote{ \href{http://publications.europa.eu/webapi/rdf/sparql}{Cellar SPARQL endpoint} } where the EU legal documents are stored and disseminated. 
+	\item Eurofound website\footnote{ \href{https://www.eurofound.europa.eu/data/covid-19-eu-policywatch}{Eurofound PWDB download page} } where the PWDB is published.
 	\item EU action timeline page
 
 	\item Ireland government press corner page
@@ -1115,15 +1115,15 @@ The sources of data we employ in this project are:
 
 The process starts with \textit{extracting} the necessary data from the source and storing it in temporary object storage at our premises, making it available for further processing. Doing so enables us to process arbitrarily large amounts of data compared to the alternative of keeping the extracted data in memory, which is relatively limited on the traditional systems. 
 
-Besides simple HTTP requests\footnote{ HTTP is an application layer protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. }, the extraction operations important to mention are the \textit{SPARQL querying} and \textit{Website crawling}. 
+Besides simple HTTP requests\footnote{ \href{https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol}{HTTP} is an application layer protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. }, the extraction operations important to mention are the \textit{SPARQL querying} and \textit{Website crawling}. 
 
-SPARQL\footnote{ SPARQL Protocol and RDF Query Language } is a semantic query language able to retrieve and manipulate data stored in \footnote{ Resource Description Framework (RDF) } format. We query Cellar, the European semantic repository, for legal documents annotated with COVID-19 tag or related EuroVoc concepts. 
+SPARQL\footnote{ \href{https://www.w3.org/TR/sparql11-query/}{SPARQL Protocol and RDF Query Language} } is a semantic query language able to retrieve and manipulate data stored in RDF\footnote{ \href{https://www.w3.org/TR/rdf11-concepts/}{Resource Description Framework}  } format. We query Cellar, the European semantic repository, for legal documents annotated with COVID-19 tag or related EuroVoc concepts. 
 
-A \textit{Web crawler\footnote{ Web crawler }} sometimes called a \textit{spider} and often shortened to \textit{crawler}, is an Internet bot that systematically browses the World Wide Web, typically operated by search engines for the purpose of Web indexing. We developed two crawlers, using Scrapy library\footnote{ Scrapy, a fast high-level web crawling $\&$  scraping framework for Python. }, first to fetch information from the EU action timeline website, and the second one from the Ireland government press corner. Scrapy is a free and open-source web-crawling framework written in Python. Originally designed for web scraping, it can also be used to extract data using APIs or as a general-purpose web crawler.
+A \textit{Web crawler\footnote{ \href{https://en.wikipedia.org/wiki/Web_crawler}{Web crawler} }} sometimes called a \textit{spider} and often shortened to \textit{crawler}, is an Internet bot that systematically browses the World Wide Web, typically operated by search engines for the purpose of Web indexing. We developed two crawlers, using Scrapy library\footnote{ \href{https://en.wikipedia.org/wiki/Scrapy}{Scrapy}, a fast high-level web crawling $\&$  scraping framework for Python. }, first to fetch information from the EU action timeline website, and the second one from the Ireland government press corner. Scrapy is a free and open-source web-crawling framework written in Python. Originally designed for web scraping, it can also be used to extract data using APIs or as a general-purpose web crawler.
 
-In the scraping process, often simple HTTP requests are not sufficient for performing full content extraction. Execution of custom JavaScript code is necessary to complete the page loading. For this purpose, headless browser services are typically implemented. They simulate the behaviour of a web browser but without having the interface of one. We employ Splash\footnote{ Splash javascript rendering service } to act as a headless browser. Splash is a javascript rendering service with an HTTP API. It's a lightweight browser with an HTTP API, implemented in Python 3. In combination with Scrapy, Splash allows us to crawl the two web sources successfully. 
+In the scraping process, often simple HTTP requests are not sufficient for performing full content extraction. Execution of custom JavaScript code is necessary to complete the page loading. For this purpose, headless browser services are typically implemented. They simulate the behaviour of a web browser but without having the interface of one. We employ Splash\footnote{ \href{https://splash.readthedocs.io/en/stable/}{Splash} javascript rendering service } to act as a headless browser. Splash is a javascript rendering service with an HTTP API. It's a lightweight browser with an HTTP API, implemented in Python 3. In combination with Scrapy, Splash allows us to crawl the two web sources successfully. 
 
-One other aspect essential to mention here is that we employ an object storage service called Minio\footnote{ MinIO is an open source implementation of the Amazon S3 storage system.  } for the temporary persistence of the extracted data. MinIO is an Amazon S3 compatible server-side software storage stack. It can handle unstructured data such as photos, videos, log files, backups, and container images with the maximum supported object size of 5TB.
+One other aspect essential to mention here is that we employ an object storage service called Minio\footnote{ \href{https://min.io/}{MinIO} is an open source implementation of the Amazon S3 storage system.  } for the temporary persistence of the extracted data. MinIO is an Amazon S3 compatible server-side software storage stack. It can handle unstructured data such as photos, videos, log files, backups, and container images with the maximum supported object size of 5TB.
 
 One may argue that such an object storage system is unnecessary as the created datasets, so far, are relatively small in size and can easily fit into the memory of most systems. However, this infrastructure, we intend to extend and use for the processing of much larger datasets exceeding the memory limits. That situation will inevitably invite the usage of such a persistence system, which we foresee and introduce upfront.
 
