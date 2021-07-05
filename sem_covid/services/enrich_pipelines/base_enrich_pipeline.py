@@ -20,9 +20,9 @@ from sem_covid.services.store_registry import StoreRegistry
 
 EMBEDDING_COLUMN = "embeddings"
 
-CLASS_NAMES = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure']
+CLASS_NAMES = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure', 'funding']
 
-CLASS_NAMES_WITH_LABEL = ['category', 'subcategory', 'type_of_measure']
+CLASS_NAMES_WITH_LABEL = ['category', 'subcategory', 'type_of_measure', 'funding']
 
 PWDB_FEATURES_Y = 'fs_pwdb_y'
 
