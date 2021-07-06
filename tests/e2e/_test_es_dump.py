@@ -29,3 +29,12 @@ def test_ireland_action_timeline_dump():
     local_path = pathlib.Path(__file__).resolve().parents[1] / 'elasticsearch_dump'
     Dataset().IRELAND_ACTION_TIMELINE.dump_local(local_path)
     Dataset().IRELAND_ACTION_TIMELINE.dump_remote(minio)
+
+
+def test_eu_cellar_enriched_dump():
+    minio = StoreRegistry.minio_object_store("tmp-elasticsearch-dump")
+    local_path = pathlib.Path(__file__).resolve().parents[1] / 'elasticsearch_dump'
+    Dataset().EU_CELLAR_ENRICHED.dump_local(local_path)
+    Dataset().EU_CELLAR_ENRICHED.dump_remote(minio)
+
+
