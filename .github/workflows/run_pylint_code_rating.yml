@@ -29,16 +29,16 @@ jobs:
           envkey_VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
       - name: Pylint check
         run: pylint .
-        with:
-          use-pylint: true
-          use-pycodestyle: true
-          use-flake8: true
-          use-black: true
-          use-mypy: true
-          use-isort: true
-          extra-pylint-options: "--max-module-lines=212 --disable=I,R,C,W"
-          extra-pycodestyle-options: ""
-          extra-flake8-options: ""
-          extra-black-options: ""
-          extra-mypy-options: ""
-          extra-isort-options: ""
+#        with:
+#          use-pylint: true
+#          use-pycodestyle: true
+#          use-flake8: true
+#          use-black: true
+#          use-mypy: true
+#          use-isort: true
+#          extra-pylint-options: "--max-module-lines=212 --disable=I,R,C,W"
+#          extra-pycodestyle-options: ""
+#          extra-flake8-options: ""
+#          extra-black-options: ""
+#          extra-mypy-options: ""
+#          extra-isort-options: ""
