@@ -31,8 +31,10 @@ jobs:
           envkey_VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
           envkey_VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
       - uses: ricardochaves/python-lint@v1.4.0
+        run: |
+          export PYTHONPATH=tests
         with:
-          python-root-list: "sem-covid"
+          python-root-list: "tests"
           use-pylint: true
           use-pycodestyle: true
           use-flake8: true
