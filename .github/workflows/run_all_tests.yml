@@ -5,8 +5,6 @@ name: all tests
 # Controls when the action will run. Trigger of this will run on any commit/merge in master
 on:
   push:
-    branches: [ feature/* ]
-  pull_request:
     branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -55,12 +53,7 @@ jobs:
           python-version: 3.8
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
-          pip install "apache-airflow==2.1.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2-1/constraints-no-providers-3.8.txt"
-          pip install -r requirements.txt --use-deprecated legacy-resolver --constraint "https://github.com/apache/airflow/blob/constraints-2-1/constraints-no-providers-3.8.txt"
-          pip install -r requirements.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2-1/constraints-no-providers-3.8.txt"
-          python -m spacy download en_core_web_sm
-          pip install pylint
+          make install && pip install pylint
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1
         with:
