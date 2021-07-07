@@ -21,7 +21,9 @@ jobs:
         with:
           python-version: 3.8
       - name: Install dependencies
-        run: make install
+        run: |
+          make install
+          pip install pylint
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1
         with:
