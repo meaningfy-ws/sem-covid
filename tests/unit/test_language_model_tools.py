@@ -1,7 +1,4 @@
 
-from gensim.models import Word2Vec
-from gensim.test.utils import common_texts
-
 from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.similarity_calculus import *
 
 vector1 = np.array([2, 4, 4, 6])
@@ -29,16 +26,14 @@ def test_manhattan_similarity():
     assert 9 == similarity_coefficient
 
 
-def test_get_similarity_matrix():
-    model = Word2Vec(sentences=common_texts, vector_size=100, window=5, min_count=1, workers=4)
-    similarity_matrix = get_similarity_matrix(model.wv, similarity_function=cosine_similarity)
+def test_get_similarity_matrix(common_word2vec_model):
+    similarity_matrix = get_similarity_matrix(common_word2vec_model.wv.vectors, common_word2vec_model.wv.index_to_key,
+                                              metric=cosine_similarity)
 
     assert pd.DataFrame == type(similarity_matrix)
     assert 12 == len(similarity_matrix)
-    assert [('system',), ('graph',), ('trees',), ('user',),
-            ('minors',), ('eps',), ('time',), ('response',),
-            ('survey',), ('computer',), ('interface',), ('human',)] == list(similarity_matrix.index)
     assert ['system', 'graph', 'trees', 'user', 'minors', 'eps',
-            'time', 'response', 'survey', 'computer', 'interface', 'human'] == list(similarity_matrix.columns)
+            'time', 'response', 'survey', 'computer', 'interface', 'human'] == list(similarity_matrix.index)
+    assert list(similarity_matrix.index) == list(similarity_matrix.columns)
     assert np.float64 == type(similarity_matrix['system'][0])
     assert 1.0 == similarity_matrix['system'][0]
