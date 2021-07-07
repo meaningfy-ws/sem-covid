@@ -4,9 +4,11 @@
 import json
 
 import pytest
+import spacy
 import pandas as pd
 from sklearn import datasets, svm, model_selection
-import spacy
+from gensim.models import Word2Vec
+from gensim.test.utils import common_texts
 
 from sem_covid.config_resolver import EnvConfigResolver
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
@@ -393,6 +395,11 @@ def sklearn_train_test_data():
 def sklearn_svm_model(sklearn_train_test_data):
     svm_algorithm = svm.SVC()
     svm_algorithm.fit(sklearn_train_test_data['x_train'], sklearn_train_test_data['y_train'])
+
+
+@pytest.fixture(scope='session')
+def common_word2vec_model():
+    return Word2Vec(sentences=common_texts, vector_size=100, window=5, min_count=1, workers=4)
 
 
 class FakeBinaryDataSource(BinaryDataSource):
