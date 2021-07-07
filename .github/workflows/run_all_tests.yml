@@ -55,7 +55,12 @@ jobs:
           python-version: 3.8
       - name: Install dependencies
         run: |
-          make install && pip install pylint
+          pip install --upgrade pip
+          pip install "apache-airflow==2.1.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2-1/constraints-no-providers-3.8.txt"
+          pip install -r requirements.txt --use-deprecated legacy-resolver --constraint "https://github.com/apache/airflow/blob/constraints-2-1/constraints-no-providers-3.8.txt"
+          pip install -r requirements.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2-1/constraints-no-providers-3.8.txt"
+          python -m spacy download en_core_web_sm
+          pip install pylint
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1
         with:
