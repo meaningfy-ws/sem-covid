@@ -11,14 +11,17 @@ import zipfile
 from sem_covid import config
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import download_manifestation_file, CellarDagWorker, \
-    get_work_uri_from_context, content_cleanup_tool, select_relevant_files_from_temp_folder
+    get_work_uri_from_context, content_cleanup_tool, select_relevant_files_from_temp_folder, \
+    download_zip_objects_to_temp_folder, get_text_from_selected_files
 from sem_covid.services.store_registry import StoreRegistry
+from tests.unit.test_store.fake_storage import FakeObjectStore
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistryManager
 
 QUERY = "sparql query"
 SPARQL_URL = "www.fake.com"
 MINIO_BUCKET_NAME = "fake_bucket"
 store_registry = FakeStoreRegistryManager()
+object_store = FakeObjectStore()
 
 
 def test_download_manifestation_file():
@@ -80,32 +83,43 @@ def test_download_zip_objects_to_temp_folder():
         pass the path to the test function
         assert that the extracted content is in the returned temp folder
     """
-    # TODO:
-    ...
+    source = ['68f2dd7aa5f687d674472ae705ff96cbb9d90129ee60aedf984dd861d7afd5ef_html.zip']
+    # zip_extractor = download_zip_objects_to_temp_folder(source, object_store)
 
 
-def test_get_text_from_selected_files():
+def test_get_text_from_selected_files(fragment1_eu_cellar_covid):
     """
         from a list of file paths
         get back a list of dictionaries with content and language keys
     """
-    # TODO:
-    ...
+    list_path = [fragment1_eu_cellar_covid]
+    # text_grabber = get_text_from_selected_files(list_path)
+
+
 
 def test_select_relevant_files_from_temp_folder():
     temp_dir = pathlib.Path(__file__).parent.parent / "test_data" / "test_folder"
     list_of_files_from_folder = select_relevant_files_from_temp_folder(temp_dir)
     print(list_of_files_from_folder)
 
-# def test_extract_content_with_tika(fragment1_eu_cellar_covid):
-#     CONTENT_PATH_KEY = 'content_path'
-#     json_content = fragment1_eu_cellar_covid
-#     minio_client = store_registry.minio_object_store('fake_bucket').put_object("one", json_content)
-#     content_bytes = store_registry.minio_object_store('fake_bucket').get_object("one")
-#     # print(content_bytes)
-#     for content_path in json_content[CONTENT_PATH_KEY]:
-#
-#         print(content_path)
+    assert list == type(list_of_files_from_folder)
+    assert pathlib.PosixPath == type(list_of_files_from_folder[0])
+    assert pathlib.PosixPath == type(list_of_files_from_folder[1])
+
+
+def test_extract_content_with_tika(fragment1_eu_cellar_covid):
+    CONTENT_PATH_KEY = 'content_path'
+    json_content = fragment1_eu_cellar_covid
+    minio_client = store_registry.minio_object_store('fake_bucket').put_object("one", json_content)
+    content_bytes = store_registry.minio_object_store('fake_bucket').get_object("one")
+    # print(content_bytes)
+
+    # worker_dag = CellarDagWorker(QUERY, SPARQL_URL, MINIO_BUCKET_NAME, store_registry)
+    # worker_dag.extract_content_with_tika()
+
+    for content_path in json_content[CONTENT_PATH_KEY]:
+
+        print(type(content_path))
 
 # def test_file_from_minio():
 #     RESOURCE_FILE_PREFIX = 'res/'
@@ -121,6 +135,7 @@ def test_select_relevant_files_from_temp_folder():
 #
 #     # with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
 #     #     zip_ref.extractall(directory_to_extract_to)
+
 
 def test_content_cleanup_tool(fragment3_eu_cellar_covid):
     content = content_cleanup_tool(fragment3_eu_cellar_covid["content"])
