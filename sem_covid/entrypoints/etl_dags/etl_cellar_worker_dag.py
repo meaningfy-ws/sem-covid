@@ -106,10 +106,10 @@ def get_text_from_selected_files(list_of_file_paths: List[Path], tika_service_ur
         return:  list of content dicts with (file_content, content_language) provided
     """
     list_of_dictionaries = []
-    for file in list_of_file_paths:
+    for file_path in list_of_file_paths:
         content_dictionary = {}
         # Sending file to tika for parsing. The return result will be a dictionary
-        parse_result = parser.from_file(str(file), tika_service_url)
+        parse_result = parser.from_file(str(file_path), tika_service_url)
         # extracting the content and language from the returned dictionary from TIKA
         content_dictionary[CONTENT_KEY] = parse_result['content']
         content_dictionary[CONTENT_LANGUAGE] = (
