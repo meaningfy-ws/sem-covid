@@ -16,4 +16,4 @@ def document_atomization_noun_phrases(document: Doc):
     for noun_phrase in document.noun_chunks:
         sequence = str([x.lemma_ for x in noun_phrase])
         sentence = sentence.replace(sequence, sequence.replace(' ', '_'))
-    return [x.lemma_ for x in nlp(sentence)]
+    return nlp(sentence)
