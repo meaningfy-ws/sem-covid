@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 from gensim.models import KeyedVectors
@@ -23,7 +22,7 @@ def manhattan_similarity(vector_1: np.array, vector_2: np.array) -> np.float:
     """
         calculate manhattan distance between two vectors
     """
-    return sum(abs(value_1 - value_2) for value_1, value_2 in zip(vector_1, vector_2))
+    return 1 / (1 + np.sum(np.abs(vector_1 - vector_2)))
 
 
 # def get_similarity_matrix(wv: KeyedVectors, similarity_function) -> pd.DataFrame:
@@ -42,7 +41,7 @@ def manhattan_similarity(vector_1: np.array, vector_2: np.array) -> np.float:
 #                         columns=similarity_matrix_columns, index=[similarity_matrix_columns])
 
 
-def get_similarity_matrix(vector: np.ndarray, keys: list, metric=callable) -> pd.DataFrame:
+def get_similarity_matrix(vector: np.ndarray, keys: list, metric: callable) -> pd.DataFrame:
     """
         creates a dataframe based on keys and vectors from pretrained gensim model
         and selected similarity function
