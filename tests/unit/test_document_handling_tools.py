@@ -2,7 +2,8 @@
 import spacy
 from spacy.tokens.doc import Doc
 
-from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.document_handling_tools import document_atomization_noun_phrases
+from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.document_handling_tools import (
+    document_atomization_noun_phrases, lemmatize_document)
 
 nlp = spacy.load('en_core_web_sm')
 
@@ -19,3 +20,10 @@ def test_document_atomization_noun_phrases():
     assert 'the_supreme_law' in atomized_document.text
     assert 'the_United_States' in atomized_document.text
 
+
+def test_lemmatize_document(spacy_document):
+
+    lemmatization = lemmatize_document(spacy_document)
+
+    assert Doc == type(lemmatization)
+    assert "['that', 'moment', 'when', 'that', 'happen', '.']" == str(lemmatization)
