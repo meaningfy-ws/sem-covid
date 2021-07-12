@@ -17,3 +17,11 @@ def document_atomization_noun_phrases(document: Doc):
         sequence = str([x.lemma_ for x in noun_phrase])
         sentence = sentence.replace(sequence, sequence.replace(' ', '_'))
     return nlp(sentence)
+
+
+def lemmatize_document(document: Doc) -> Doc:
+    """
+        Gets from the tokens in inserted document their lemma form
+    """
+    lemmatization = [word.lemma_ for word in document]
+    return nlp(str(lemmatization))
