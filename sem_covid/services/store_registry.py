@@ -45,6 +45,15 @@ class StoreRegistryManagerABC(abc.ABC):
 
 class StoreRegistryManager(StoreRegistryManagerABC):
 
+    def es_index_store(self) -> IndexStoreABC:
+        pass
+
+    def minio_object_store(self, minio_bucket: str) -> ObjectStoreABC:
+        pass
+
+    def es_feature_store(self) -> FeatureStoreABC:
+        pass
+
     def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
         return SPARQLTripleStore(endpoint_url=endpoint_url)
 
