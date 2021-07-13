@@ -4,7 +4,8 @@ import logging
 
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
-from sem_covid.adapters.dag_factory import DagFactory, DagPipelineManager, DagPipeline
+from sem_covid.adapters.dag.dag_factory import DagFactory, DagPipelineManager
+from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
 from sem_covid.entrypoints import dag_name
 
 logger = logging.getLogger(__name__)
@@ -93,13 +94,13 @@ class TestPipeline(DagPipeline):
 
 
 dag_factory = DagFactory(DagPipelineManager(TestPipeline(param1="Stefan Architecture", param2=" Yay, all works")),
-                         dag_name=DAG_NAME, default_args=default_args)
+                         dag_name=DAG_NAME, default_dag_args=default_args)
 
-dag = dag_factory.create()
+dag = dag_factory.create_dag()
 
 master_dag = DagFactory(DagPipelineManager(DebugMasterDag(param="MasterDag param  -- SATURN")),
-                        dag_name=MASTER_DAG_NAME, default_args=default_args
-                        ).create()
+                        dag_name=MASTER_DAG_NAME, default_dag_args=default_args
+                        ).create_dag()
 slave_dag = DagFactory(DagPipelineManager(DebugSlaveDag(param="SlaveDag param  -- PLUTO")),
-                       dag_name=SLAVE_DAG_NAME, default_args=default_args
-                       ).create()
+                       dag_name=SLAVE_DAG_NAME, default_dag_args=default_args
+                       ).create_dag()

@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-from sem_covid.services.pwdb_random_forest_experiment import RandomForestPWDBExperiment
+from sem_covid.services.ml_pipelines.pwdb_random_forest_experiment import RandomForestPWDBExperiment
 
 default_args = {
     "owner": "airflow",

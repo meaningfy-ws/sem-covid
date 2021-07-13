@@ -7,7 +7,7 @@ import pandas as pd
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid.adapters.abstract_store import TripleStoreABC
-from sem_covid.adapters.dag_factory import DagPipeline
+from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
 from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
 from sem_covid.services.store_registry import StoreRegistryManagerABC

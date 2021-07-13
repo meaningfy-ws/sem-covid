@@ -2,7 +2,7 @@
 import logging
 
 from sem_covid import config
-from sem_covid.adapters.dag_factory import DagFactory, DagPipelineManager
+from sem_covid.adapters.dag.dag_factory import DagFactory, DagPipelineManager
 from sem_covid.entrypoints import dag_name, DEFAULT_DAG_ARGUMENTS
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
 from sem_covid.services.store_registry import StoreRegistryManager
@@ -415,4 +415,4 @@ dag_master = DagFactory(DagPipelineManager(
     CellarDagMaster(
         [EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY], [EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
         config.EU_CELLAR_SPARQL_URL, config.EU_CELLAR_BUCKET_NAME, StoreRegistryManager())),
-        dag_name=DAG_NAME, default_args=DEFAULT_DAG_ARGUMENTS).create()
+        dag_name=DAG_NAME, default_dag_args=DEFAULT_DAG_ARGUMENTS).create_dag()

@@ -3,7 +3,7 @@ import logging
 import tempfile
 import hashlib
 import zipfile
-from typing import List, Tuple
+from typing import List
 
 from tika import parser
 from itertools import chain
@@ -14,7 +14,7 @@ import re
 import requests
 
 from sem_covid.adapters.abstract_store import ObjectStoreABC
-from sem_covid.adapters.dag_factory import DagPipeline
+from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX
 from sem_covid.services.sc_wrangling.data_cleaning import clean_fix_unicode, clean_to_ascii, clean_remove_line_breaks
 

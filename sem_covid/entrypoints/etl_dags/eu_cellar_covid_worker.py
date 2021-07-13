@@ -10,7 +10,8 @@ from pathlib import Path
 import requests
 from tika import parser
 from sem_covid import config
-from sem_covid.adapters.dag_factory import DagPipeline, DagFactory, DagPipelineManager
+from sem_covid.adapters.dag.dag_factory import DagFactory, DagPipelineManager
+from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
 from sem_covid.entrypoints import dag_name
 from sem_covid.services.sc_wrangling.data_cleaning import clean_remove_line_breaks, clean_fix_unicode, clean_to_ascii
 from sem_covid.services.store_registry import StoreRegistryManagerABC, StoreRegistryManager
@@ -236,6 +237,6 @@ default_args = {
 }
 
 dag_worker = DagFactory(DagPipelineManager(EuCellarDagWorker(StoreRegistryManager())),
-                        dag_name=DAG_NAME, default_args=default_args,
+                        dag_name=DAG_NAME, default_dag_args=default_args,
                         schedule_interval=None, max_active_runs=128, concurrency=128
-                        ).create()
+                        ).create_dag()

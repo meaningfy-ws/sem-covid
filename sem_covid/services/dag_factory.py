@@ -18,7 +18,7 @@ from sem_covid.services.base_pipeline import BasePipeline
 
 logger = logging.getLogger(__name__)
 
-
+# TODO: move
 def create_dag_pipeline(pipeline: BasePipeline, **dag_args):
     """
         This is an externalised factory method for all subclasses of BaseExperiment class.
