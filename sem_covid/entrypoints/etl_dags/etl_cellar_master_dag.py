@@ -65,9 +65,10 @@ class CellarDagMaster(DagPipeline):
         A pipeline for selecting works to be fetched from Cellar
     """
 
-    def __init__(self, list_of_queries: List[str], list_of_query_flags: List[str],
+    def __init__(self, list_of_queries: List[str],
                  sparql_endpoint_url: str, minio_bucket_name: str, worker_dag_name: str,
-                 store_registry: StoreRegistryManagerABC):
+                 store_registry: StoreRegistryManagerABC,
+                 list_of_query_flags: List[str] = ["core"], ):
         self.store_registry = store_registry
         self.list_of_queries = list_of_queries
         self.list_of_query_flags = list_of_query_flags

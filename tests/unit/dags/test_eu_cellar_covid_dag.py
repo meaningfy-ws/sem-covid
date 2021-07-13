@@ -3,13 +3,8 @@
 # Date:  10/06/2021
 # Author: Eugeniu Costetchi
 # Email: costezki.eugen@gmail.com
-import re
-
-import pandas as pd
-import pytest
 
 from sem_covid.entrypoints.etl_dags.ds_eu_cellar_covid_dags import MASTER_DAG_NAME
-
 
 
 def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):
@@ -30,8 +25,6 @@ def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):
     assert 'download_and_split' in upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.downstream_list))
     assert not downstream_task_ids
-
-
 
 # def test_text_cleanup(fragment3_eu_cellar_covid):
 #     content3 = content_cleanup(fragment3_eu_cellar_covid["content"])

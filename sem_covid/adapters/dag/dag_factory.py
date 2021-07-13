@@ -1,5 +1,5 @@
 import abc
-import warnings
+import logging
 from abc import abstractmethod
 
 from airflow import DAG
@@ -8,6 +8,7 @@ from airflow.operators.python import PythonOperator
 from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline, DagStep
 from sem_covid.entrypoints import DEFAULT_DAG_ARGUMENTS
 
+logger = logging.getLogger(__name__)
 
 class ObjectStateManager(abc.ABC):
     """
@@ -49,36 +50,6 @@ class StatelessDagStep(DagStep):
         getattr(self.dag_pipeline, self.dag_pipeline_step.__name__)(*args, **kwargs)
 
 
-
-
-# TODO delete this
-class DagPipelineManager:
-    """
-        Implies method to define steps of creating DAGs
-        :dag_pipeline: defines the steps of the DAG
-        :object_state_manager: implies the methods of saving and loading the objects
-    """
-
-    def __init__(self, dag_pipeline: DagPipeline, object_state_manager: ObjectStateManager = None):
-        warnings.warn("Do nto use this, it was merged with the Factory class", DeprecationWarning)
-
-        self.dag_pipeline = dag_pipeline
-        self.object_state_manager = object_state_manager
-
-    def create_step(self, dag_pipeline_step) -> DagStep:
-        """
-            Generates steps for DAG Pipeline
-
-            :dag_pipeline_step: steps of ETL DAGs
-            :stateful: boolean variable that indicates if the steps saves previous actions or not
-        """
-        if self.object_state_manager:
-            assert self.object_state_manager is not None
-            return StatefulDagStep(self.dag_pipeline, dag_pipeline_step, self.object_state_manager)
-        else:
-            return StatelessDagStep(self.dag_pipeline, dag_pipeline_step)
-
-
 class DagFactory:
     """
         An automatic way of instantiation Airflow DAGs based on generic DAG pipelines.
@@ -109,6 +80,7 @@ class DagFactory:
         """
             After finishing creating the steps, it creates the dag and deploys it.
         """
+        logger.info(f"Instantiating DAG {self.dag_name}")
         updated_default_args_copy = {**self.default_args.copy(), **dag_args}
 
         with DAG(self.dag_name, default_args=updated_default_args_copy) as dag:

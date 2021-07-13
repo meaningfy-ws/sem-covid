@@ -5,7 +5,7 @@
 # Email: costezki.eugen@gmail.com
 
 
-from sem_covid.entrypoints.etl_dags.dummy_debug_dag import MASTER_DAG_NAME
+from sem_covid.entrypoints.etl_dags.dummy_debug_dag import MASTER_DAG_NAME, SLAVE_DAG_NAME, DAG_NAME
 
 
 def test_dummy_debug_dag_has_two_tasks_and_order(airflow_dag_bag):
@@ -26,3 +26,9 @@ def test_dummy_debug_dag_has_two_tasks_and_order(airflow_dag_bag):
     assert 'prepare_terrain_for_workers' in upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.downstream_list))
     assert not downstream_task_ids
+
+    dag = airflow_dag_bag.get_dag(dag_id=SLAVE_DAG_NAME)
+    assert dag is not None
+
+    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    assert dag is not None

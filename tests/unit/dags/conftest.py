@@ -13,7 +13,6 @@ import logging
 import os
 import pathlib
 from pathlib import Path
-from typing import List
 
 import pytest
 from SPARQLWrapper import SPARQLWrapper
@@ -48,6 +47,7 @@ def airflow_dag_bag():
     logger.info(f"Changing the AIRFLOW_HOME variable to {SRC_AIRFLOW_DAG_FOLDER}")
     # changing the AIRFLOW_HOME environment variable to current code
     os.environ["AIRFLOW_HOME"] = str(SRC_AIRFLOW_DAG_FOLDER)
+    os.environ["AIRFLOW__CORE__LOAD_EXAMPLES"] = "False"
     # Initialising the Airflow DB so that it works properly with the new AIRFLOW_HOME
     logger.info(f"Recreating the Airflow Database")
     db.resetdb()
@@ -84,5 +84,5 @@ def fragment4_eu_cellar_covid() -> pathlib.Path:
 
 @pytest.fixture(scope="session")
 def get_spaqrl_result_set_fetched_as_tabular():
-    path = TEST_DATA_FOLDER/"eu_cellar_covid_fragments"/"unified_eu_cellar_fragment.json"
+    path = TEST_DATA_FOLDER / "eu_cellar_covid_fragments" / "unified_eu_cellar_fragment.json"
     return json.loads(path.read_bytes())

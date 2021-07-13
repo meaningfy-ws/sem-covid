@@ -1,3 +1,14 @@
+#!/usr/bin/python3
+
+# main.py
+# Date:  13/07/2021
+# Author: Eugeniu Costetchi
+# Email: eugen@meaningfy.ws
+
+"""
+
+"""
+
 import logging
 
 from sem_covid import config
@@ -13,37 +24,31 @@ logger = logging.getLogger(__name__)
 MINOR = 1
 MAJOR = 2
 
-MASTER_DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", role="master", version_major=MAJOR,
+MASTER_DAG_NAME = dag_name(category="etl", name="fin_reg", role="master", version_major=MAJOR,
                            version_minor=MINOR)
-WORKER_DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", role="worker", version_major=MAJOR,
+WORKER_DAG_NAME = dag_name(category="etl", name="fin_reg", role="worker", version_major=MAJOR,
                            version_minor=MINOR)
 
-EU_CELLAR_CORE_KEY = "eu_cellar_core"
-EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
+# Creating the master DAG
 
-# Creating teh master DAGs
-
-dag_master_pipeline = CellarDagMaster(
-    list_of_queries=[QueryRegistry().SEM_COVID_CORE_SELECTOR, QueryRegistry().SEM_COVID_EXTENDED_SELECTOR],
-    list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
+master_pipeline = CellarDagMaster(
+    list_of_queries=[QueryRegistry().FINANCIAL_REGULATIONS_SELECTOR],
     worker_dag_name=WORKER_DAG_NAME,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
-    minio_bucket_name=config.EU_CELLAR_BUCKET_NAME,
+    minio_bucket_name=config.EU_FINREG_CELLAR_BUCKET_NAME,
     store_registry=StoreRegistryManager()
 )
 
 master_dag = DagFactory(
-    dag_pipeline=dag_master_pipeline, dag_name=MASTER_DAG_NAME).create_dag(schedule_interval="@once",
-                                                                           max_active_runs=1, concurrency=1)
-
-# globals()[MASTER_DAG_NAME] = ds_eu_cellar_covid_master_dag
+    dag_pipeline=master_pipeline,
+    dag_name=MASTER_DAG_NAME).create_dag(schedule_interval="@once", max_active_runs=1, concurrency=1)
 
 # Creating the worker DAG
 
 worker_pipeline = CellarDagWorker(
     sparql_query=QueryRegistry().METADATA_FETCHER,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
-    minio_bucket_name=config.EU_CELLAR_BUCKET_NAME,
+    minio_bucket_name=config.EU_FINREG_CELLAR_BUCKET_NAME,
     store_registry=StoreRegistryManager())
 
 worker_dag = DagFactory(

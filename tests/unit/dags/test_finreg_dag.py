@@ -3,14 +3,11 @@
 # Date:  10/06/2021
 # Author: Eugeniu Costetchi
 # Email: costezki.eugen@gmail.com
-from SPARQLWrapper import SPARQLWrapper
 
-from sem_covid.entrypoints.etl_dags.finreg import DAG_NAME, make_request, get_single_item
-from tests.unit.test_store.fake_storage import FakeObjectStore
-
+from sem_covid.entrypoints.etl_dags.ds_fin_reg_dags import MASTER_DAG_NAME
 
 def test_finreg_has_two_tasks_and_order(airflow_dag_bag):
-    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
@@ -29,39 +26,39 @@ def test_finreg_has_two_tasks_and_order(airflow_dag_bag):
     assert not downstream_task_ids
 
 
-class FakeSPARQL(SPARQLWrapper):
-    def __init__(self):
-        self._query = 'No query'
-
-    def setQuery(self, query):
-        self._query = query
-
-    def setReturnFormat(self, text):
-        return True
-
-    def query(self):
-        return self
-
-    def convert(self):
-        return self._query
-
-
-def test_get_single_item():
-    json_file_name = 'file_name'
-    my_response = {
-        'document_one': 'one',
-        'document_two': 'two'
-    }
-    query = {
-        'results': {
-            'bindings': my_response
-        }
-    }
-    response = get_single_item(query, json_file_name, FakeSPARQL(), FakeObjectStore())
-    assert response == my_response
-
-
-def test_make_request():
-    query = 'select'
-    response = make_request(query, FakeSPARQL())
-    assert response == query
+# class FakeSPARQL(SPARQLWrapper):
+#     def __init__(self):
+#         self._query = 'No query'
+#
+#     def setQuery(self, query):
+#         self._query = query
+#
+#     def setReturnFormat(self, text):
+#         return True
+#
+#     def query(self):
+#         return self
+#
+#     def convert(self):
+#         return self._query
+#
+#
+# def test_get_single_item():
+#     json_file_name = 'file_name'
+#     my_response = {
+#         'document_one': 'one',
+#         'document_two': 'two'
+#     }
+#     query = {
+#         'results': {
+#             'bindings': my_response
+#         }
+#     }
+#     response = get_single_item(query, json_file_name, FakeSPARQL(), FakeObjectStore())
+#     assert response == my_response
+#
+#
+# def test_make_request():
+#     query = 'select'
+#     response = make_request(query, FakeSPARQL())
+#     assert response == query
