@@ -4,12 +4,16 @@
 # Author: Eugeniu Costetchi
 # Email: costezki.eugen@gmail.com
 
+import logging
 
 from sem_covid.entrypoints.etl_dags.dummy_debug_dag import MASTER_DAG_NAME, SLAVE_DAG_NAME, DAG_NAME
+
+logger = logging.getLogger(__name__)
 
 
 def test_dummy_debug_dag_has_two_tasks_and_order(airflow_dag_bag):
     dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME)
+    logger.info(f"dags in gad bag: {airflow_dag_bag.dag_ids}")
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
