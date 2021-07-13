@@ -9,6 +9,21 @@ from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline, DagStep
 from sem_covid.entrypoints import DEFAULT_DAG_ARGUMENTS
 
 
+class ObjectStateManager(abc.ABC):
+    """
+        This abstract class  saving and loading the object state. It needs to be pass against processes
+        (this is the case in between airflow DAG steps) when this 2 functions can be used to pass the self objects
+    """
+
+    @abstractmethod
+    def save_object_state(self, obj: object):
+        pass
+
+    @abstractmethod
+    def load_object_state(self) -> object:
+        pass
+
+
 class StatefulDagStep(DagStep):
     """
         Abstracts steps that saves the states of previous actions
@@ -34,19 +49,6 @@ class StatelessDagStep(DagStep):
         getattr(self.dag_pipeline, self.dag_pipeline_step.__name__)(*args, **kwargs)
 
 
-class ObjectStateManager(abc.ABC):
-    """
-        This abstract class  saving and loading the object state. It needs to be pass against processes
-        (this is the case in between airflow DAG steps) when this 2 functions can be used to pass the self objects
-    """
-
-    @abstractmethod
-    def save_object_state(self, obj: object):
-        pass
-
-    @abstractmethod
-    def load_object_state(self) -> object:
-        pass
 
 
 # TODO delete this

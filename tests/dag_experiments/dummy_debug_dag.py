@@ -1,29 +1,18 @@
-from datetime import datetime, timedelta
+
 
 import logging
 
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
-from sem_covid.adapters.dag.dag_factory import DagFactory, DagPipelineManager
+from sem_covid.adapters.dag.dag_factory import DagFactory
 from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
 from sem_covid.entrypoints import dag_name
 
 logger = logging.getLogger(__name__)
 
-default_args = {
-    "owner": "airflow",
-    "depends_on_past": False,
-    "start_date": datetime(2021, 2, 16),
-    "email": ["mclaurentiu79@gmail.com"],
-    "email_on_failure": False,
-    "email_on_retry": False,
-    "retries": 1,
-    "retry_delay": timedelta(minutes=500)
-}
-
-MASTER_DAG_NAME = dag_name(category="debug", name="new_dag_abs_master", version_major=0, version_minor=1)
-SLAVE_DAG_NAME = dag_name(category="debug", name="new_dag_abs_worker", version_major=0, version_minor=1)
-DAG_NAME = dag_name(category="debug", name="new_dag_abs_architecture", version_major=0, version_minor=1)
+MASTER_DAG_NAME = dag_name(category="debug", name="new_dag_abs_master", version_major=0, version_minor=2)
+SLAVE_DAG_NAME = dag_name(category="debug", name="new_dag_abs_worker", version_major=0, version_minor=2)
+DAG_NAME = dag_name(category="debug", name="new_dag_abs_architecture", version_major=0, version_minor=2)
 
 
 class DebugMasterDag(DagPipeline):
@@ -93,14 +82,11 @@ class TestPipeline(DagPipeline):
         return [self.check_step_1, self.check_step_2]
 
 
-dag_factory = DagFactory(DagPipelineManager(TestPipeline(param1="Stefan Architecture", param2=" Yay, all works")),
-                         dag_name=DAG_NAME, default_dag_args=default_args)
+dag = DagFactory(dag_pipeline=TestPipeline(param1="Stefan Architecture", param2=" Yay, all works"),
+                 dag_name=DAG_NAME).create_dag()
 
-dag = dag_factory.create_dag()
+master_dag = DagFactory(DebugMasterDag(param="MasterDag param  -- SATURN"),
+                        dag_name=MASTER_DAG_NAME).create_dag()
 
-master_dag = DagFactory(DagPipelineManager(DebugMasterDag(param="MasterDag param  -- SATURN")),
-                        dag_name=MASTER_DAG_NAME, default_dag_args=default_args
-                        ).create_dag()
-slave_dag = DagFactory(DagPipelineManager(DebugSlaveDag(param="SlaveDag param  -- PLUTO")),
-                       dag_name=SLAVE_DAG_NAME, default_dag_args=default_args
-                       ).create_dag()
+slave_dag = DagFactory(DebugSlaveDag(param="SlaveDag param  -- PLUTO"),
+                       dag_name=SLAVE_DAG_NAME, ).create_dag()

@@ -8,12 +8,12 @@ import re
 import pandas as pd
 import pytest
 
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid_master import DAG_NAME
+from sem_covid.entrypoints.etl_dags.ds_eu_cellar_covid_dags import MASTER_DAG_NAME
 
 
 
 def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):
-    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))

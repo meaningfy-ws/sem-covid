@@ -8,7 +8,6 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid.adapters.abstract_store import TripleStoreABC
 from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
 from sem_covid.services.store_registry import StoreRegistryManagerABC
 
@@ -21,8 +20,8 @@ RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 CONTENT_LANGUAGE = "language"
 DOCUMENTS_PREFIX = "documents/"
-
 WORK_ID_COLUMN = "work"
+DOWNLOAD_TIMEOUT = 30
 
 
 def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], list_of_flags: List[str],
@@ -62,15 +61,19 @@ def get_documents_from_triple_store(list_of_queries: List[str],
 
 
 class CellarDagMaster(DagPipeline):
+    """
+        A pipeline for selecting works to be fetched from Cellar
+    """
 
     def __init__(self, list_of_queries: List[str], list_of_query_flags: List[str],
-                 sparql_endpoint_url: str, minio_bucket_name: str,
+                 sparql_endpoint_url: str, minio_bucket_name: str, worker_dag_name: str,
                  store_registry: StoreRegistryManagerABC):
         self.store_registry = store_registry
         self.list_of_queries = list_of_queries
         self.list_of_query_flags = list_of_query_flags
         self.minio_bucket_name = minio_bucket_name
         self.sparql_endpoint_url = sparql_endpoint_url
+        self.worker_dag_name = worker_dag_name
 
     def get_steps(self) -> list:
         return [self.download_and_split, self.execute_worker_dags]
@@ -111,7 +114,7 @@ class CellarDagMaster(DagPipeline):
             file_content = json.loads(minio.get_object(document.object_name))
             TriggerDagRunOperator(
                 task_id='trigger_slave_dag____' + document.object_name.replace("/", "_"),
-                trigger_dag_id=SLAVE_DAG_NAME,
+                trigger_dag_id=self.worker_dag_name,
                 conf={"work": file_content['work']}
             ).execute(context)
             logger.info(f"Triggered {index} {document.object_name} DAG run")

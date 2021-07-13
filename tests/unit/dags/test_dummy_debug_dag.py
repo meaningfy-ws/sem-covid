@@ -5,7 +5,7 @@
 # Email: costezki.eugen@gmail.com
 
 
-from sem_covid.entrypoints.ml_dags.dummy_debug_dag import MASTER_DAG_NAME
+from tests.dag_experiments.dummy_debug_dag import MASTER_DAG_NAME
 
 
 def test_dummy_debug_dag_has_two_tasks_and_order(airflow_dag_bag):
