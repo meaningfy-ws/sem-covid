@@ -1,5 +1,3 @@
-
-
 import logging
 
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
@@ -90,3 +88,7 @@ master_dag = DagFactory(DebugMasterDag(param="MasterDag param  -- SATURN"),
 
 slave_dag = DagFactory(DebugSlaveDag(param="SlaveDag param  -- PLUTO"),
                        dag_name=SLAVE_DAG_NAME, ).create_dag()
+
+# globals()[DAG_NAME] = dag
+# globals()[MASTER_DAG_NAME] = master_dag
+# globals()[SLAVE_DAG_NAME] = slave_dag

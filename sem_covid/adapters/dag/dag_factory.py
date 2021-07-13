@@ -112,7 +112,7 @@ class DagFactory:
         updated_default_args_copy = {**self.default_args.copy(), **dag_args}
 
         with DAG(self.dag_name, default_args=updated_default_args_copy) as dag:
-            step_python_operators = [PythonOperator(task_id=f"{step.__name__}_step",
+            step_python_operators = [PythonOperator(task_id=f"{step.__name__}",
                                                     python_callable=self.create_step(step),
                                                     dag=dag, )
                                      for step in self.dag_pipeline.get_steps()]
