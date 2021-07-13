@@ -19,6 +19,7 @@ CATEGORY_CLASS_EXPERIMENT_ID = '15'
 SUBCATEGORY_CLASS_EXPERIMENT_ID = '20'
 TYPE_OF_MEASURE_EXPERIMENT_ID = '21'
 TARGET_GROUPS_EXPERIMENT_ID = '22'
+FUNDING_EXPERIMENT_ID = '73'
 
 
 def get_best_model_from_ml_flow(experiment_ids: list, metric_name: str = 'F1'):
@@ -57,7 +58,8 @@ class ClassificationModel:
             "category": [CATEGORY_CLASS_EXPERIMENT_ID],
             "subcategory": [SUBCATEGORY_CLASS_EXPERIMENT_ID],
             "type_of_measure": [TYPE_OF_MEASURE_EXPERIMENT_ID],
-            "target_groups": [TARGET_GROUPS_EXPERIMENT_ID]
+            "target_groups": [TARGET_GROUPS_EXPERIMENT_ID],
+            'funding': [FUNDING_EXPERIMENT_ID]
         }
         if class_name in class_name_to_exp_id.keys():
             return get_best_model_from_ml_flow(experiment_ids=class_name_to_exp_id[class_name])
@@ -91,3 +93,7 @@ class ClassificationModel:
     @property
     def PWDB_TARGET_GROUPS(self):
         return get_best_model_from_ml_flow(experiment_ids=[TARGET_GROUPS_EXPERIMENT_ID])
+
+    @property
+    def PWDB_FUNDING(self):
+        return get_best_model_from_ml_flow(experiment_ids=[FUNDING_EXPERIMENT_ID])

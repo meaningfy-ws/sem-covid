@@ -104,7 +104,7 @@
       },
       "creation_date": {
         "type": "date",
-        "format": "MM/dd/YYYY"
+        "format": "MM/DD/YYYY"
       },
       "date_type": {
         "type": "text",
@@ -117,7 +117,7 @@
       },
       "end_date": {
         "type": "date",
-        "format": "MM/dd/YYYY"
+        "format": "MM/DD/YYYY"
       },
       "actors": {
         "type": "text",
@@ -193,7 +193,7 @@
       },
       "start_date": {
         "type": "date",
-        "format": "MM/dd/YYYY"
+        "format": "MM/DD/YYYY"
       },
       "status_of_regulation": {
         "type": "text",

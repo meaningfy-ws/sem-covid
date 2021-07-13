@@ -5,24 +5,24 @@
 # Email: costezki.eugen@gmail.com
 
 
-from sem_covid.entrypoints.ml_dags.dummy_debug_dag import DAG_NAME
+from sem_covid.entrypoints.ml_dags.dummy_debug_dag import MASTER_DAG_NAME
 
 
 def test_dummy_debug_dag_has_two_tasks_and_order(airflow_dag_bag):
-    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
-    assert {'check_step_1', 'check_step_2'}.issubset(set(task_ids))
+    assert {'prepare_terrain_for_workers', 'wakeup_workers'}.issubset(set(task_ids))
 
-    download_and_split_task = dag.get_task('check_step_1')
+    download_and_split_task = dag.get_task('prepare_terrain_for_workers')
     upstream_task_ids = list(map(lambda task: task.task_id, download_and_split_task.upstream_list))
     assert not upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, download_and_split_task.downstream_list))
-    assert 'check_step_2' in downstream_task_ids
+    assert 'wakeup_workers' in downstream_task_ids
 
-    execute_worker_dags_task = dag.get_task('check_step_2')
+    execute_worker_dags_task = dag.get_task('wakeup_workers')
     upstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.upstream_list))
-    assert 'check_step_1' in upstream_task_ids
+    assert 'prepare_terrain_for_workers' in upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.downstream_list))
     assert not downstream_task_ids
