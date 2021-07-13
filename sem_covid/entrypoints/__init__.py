@@ -61,4 +61,4 @@ def get_sparql_query(query_file_name: str) -> str:
         get a predefined SPARQL query by reference to file name
     """
     with pkg_resources.path(sparql_queries, query_file_name) as path:
-        return str(path)
+        return path.read_text()
