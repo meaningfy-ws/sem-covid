@@ -1,0 +1,104 @@
+# Selct Works that are tagged with certain EuroVoc concepts, resource type and subject matters
+# that are specific to Covid pandemics.
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ev: <http://eurovoc.europa.eu/>
+
+SELECT DISTINCT
+    ?work
+    (group_concat(DISTINCT ?_title; separator="| ") as ?title)
+WHERE {
+    VALUES ?expr_lang { lang:ENG}
+
+    VALUES ?eurovoc_concept {
+        ev:1005
+        ev:1439
+        ev:1633
+        ev:1754
+        ev:1756
+        ev:1759
+        ev:1802
+        ev:1854
+        ev:192
+        ev:2916
+        ev:2923
+        ev:3730
+        ev:3885
+        ev:4470
+        ev:4505
+        ev:5237
+        ev:835
+        ev:1280
+        ev:1634
+        ev:2062
+        ev:2479
+        ev:5891
+        ev:82
+        ev:2473
+        ev:3086
+        ev:4636
+        ev:5992
+        ev:712
+        ev:826
+        ev:1596
+        ev:2870
+        ev:3956
+        ev:899
+        ev:7983
+        ev:83
+        ev:85
+        ev:5764
+        ev:3552
+        ev:1742
+        ev:886
+        ev:1926
+        ev:4116
+        ev:5612
+        ev:837
+        ev:2270
+        ev:838
+        ev:2793
+        ev:3588
+        ev:6781
+        ev:3371
+        ev:2013
+        ev:7131
+        ev:3906
+        ev:3370
+        ev:4881
+        ev:86
+        ev:1758
+        ev:779
+        ev:6609
+        ev:6770
+        ev:c_324b44f1
+        ev:c_5b447e3a
+        ev:c_31da5694
+        ev:c_60d3928d
+        ev:c_9b88f778
+        ev:c_ece0a719
+        ev:c_814bb9e4
+        ev:c_abfaf2ea
+    }
+
+    ?work cdm:work_is_about_concept_eurovoc ?eurovoc_concept .
+
+    FILTER NOT EXISTS {
+        ?work a cdm:publication_general .
+    }
+
+    ?work cdm:work_date_document ?date_document .
+    FILTER (strdt(?date_document, xsd:date) > '2020-01-01'^^xsd:date)
+
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+            cdm:expression_uses_language ?expr_lang ;
+            cdm:expression_title ?_title .
+    }
+}
+GROUP BY ?work

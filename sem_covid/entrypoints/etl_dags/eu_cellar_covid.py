@@ -1,10 +1,9 @@
 
 import logging
-from datetime import datetime, timedelta
 
 from sem_covid import config
 from sem_covid.adapters.dag_factory import DagFactory, DagPipelineManager
-from sem_covid.entrypoints import dag_name
+from sem_covid.entrypoints import dag_name, DEFAULT_DAG_ARGUMENTS
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
 from sem_covid.services.store_registry import StoreRegistryManager
 
@@ -410,22 +409,10 @@ ORDER BY ?work ?title"""
 EU_CELLAR_CORE_KEY = "eu_cellar_core"
 EU_CELLAR_EXTENDED_KEY = "eu_cellar_extended"
 
-
-default_args = {
-    "owner": "airflow",
-    "depends_on_past": False,
-    "start_date": datetime(2021, 2, 22),
-    "email": ["info@meaningfy.ws"],
-    "email_on_failure": False,
-    "email_on_retry": False,
-    "retries": 0,
-    "retry_delay": timedelta(minutes=3600)
-}
-
 # TODO: documentation for specific order in parameters lists
 
 dag_master = DagFactory(DagPipelineManager(
     CellarDagMaster(
         [EU_CELLAR_CORE_QUERY, EU_CELLAR_EXTENDED_QUERY], [EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
         config.EU_CELLAR_SPARQL_URL, config.EU_CELLAR_BUCKET_NAME, StoreRegistryManager())),
-        dag_name=DAG_NAME, default_args=default_args).create()
+        dag_name=DAG_NAME, default_args=DEFAULT_DAG_ARGUMENTS).create()
