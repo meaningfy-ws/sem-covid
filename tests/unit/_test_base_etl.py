@@ -22,5 +22,5 @@ def test_base_etl():
     etl.load()
     etl.transform_structure()
     etl.transform_content()
-    dag = etl.create_dag()
-    assert dag is not None
+    # dag = etl.create_dag() # moved away
+    # assert dag is not None

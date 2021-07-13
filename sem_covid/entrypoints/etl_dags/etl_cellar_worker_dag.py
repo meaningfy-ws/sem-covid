@@ -124,12 +124,12 @@ def get_text_from_selected_files(list_of_file_paths: List[Path], tika_service_ur
 
 class CellarDagWorker(DagPipeline):
 
-    def __init__(self, sparql_query: str, sparql_url: str, minio_bucket_name: str,
+    def __init__(self, sparql_query: str, sparql_endpoint_url: str, minio_bucket_name: str,
                  store_registry: StoreRegistryManagerABC):
         self.store_registry = store_registry
         self.minio_bucket_name = minio_bucket_name
         self.sparql_query = sparql_query
-        self.sparql_url = sparql_url
+        self.sparql_url = sparql_endpoint_url
 
     def get_steps(self) -> list:
         return [self.download_documents_and_enrich_json,

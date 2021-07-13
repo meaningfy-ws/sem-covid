@@ -8,7 +8,7 @@ import re
 import pandas as pd
 import pytest
 
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid import DAG_NAME
+from sem_covid.entrypoints.etl_dags.eu_cellar_covid_master import DAG_NAME
 
 
 
