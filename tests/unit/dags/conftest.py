@@ -55,6 +55,7 @@ def airflow_dag_bag():
     logger.info(f"Instantiating the Airflow DagBag for testing prod DAGs")
     dag_bag = DagBag(dag_folder=SRC_AIRFLOW_DAG_FOLDER, include_examples=False,
                      read_dags_from_db=False)
+    logger.info(f"The DAG bag contains teh following ids: {dag_bag.dag_ids}")
     return dag_bag
 
 

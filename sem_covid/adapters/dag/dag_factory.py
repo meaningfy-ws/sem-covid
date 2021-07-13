@@ -80,16 +80,15 @@ class DagFactory:
         """
             After finishing creating the steps, it creates the dag and deploys it.
         """
-        logger.info(f"Instantiating DAG {self.dag_name}")
         updated_default_args_copy = {**self.default_args.copy(), **dag_args}
 
         with DAG(self.dag_name, default_args=updated_default_args_copy) as dag:
             step_python_operators = [PythonOperator(task_id=f"{step.__name__}",
                                                     python_callable=self.create_step(step),
-                                                    dag=dag, )
+                                                    dag=dag)
                                      for step in self.dag_pipeline.get_steps()]
 
             for step, successor_step in zip(step_python_operators, step_python_operators[1:]):
                 step >> successor_step
-
+        logger.info(f"Instantiated DAG {self.dag_name}")
         return dag
