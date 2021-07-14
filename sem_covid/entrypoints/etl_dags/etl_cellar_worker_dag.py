@@ -43,12 +43,12 @@ def get_work_uri_from_context(*args, **context):
     """
      Fail hard if no work URI is provided in the context
     """
-    if ("conf" not in context['dag_run']) or ("work" not in context['dag_run']['conf']):
+    if "work" not in context['dag_run'].conf:
         message = "Could not find the work URI in the provided document. " \
                   "This DAG is to be triggered by its parent only."
         logger.error(message)
         raise ValueError(message)
-    return context['dag_run']["conf"]['work']
+    return context['dag_run'].conf['work']
 
 
 def content_cleanup_tool(text: str) -> str:
