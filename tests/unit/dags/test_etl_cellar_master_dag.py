@@ -21,7 +21,7 @@ def test_etl_cellar_master_dag():
                                  sparql_endpoint_url=FAKE_EU_CELLAR_SPARQL_URL,worker_dag_name="worker",
                                  minio_bucket_name=FAKE_EU_CELLAR_BUCKET_NAME, store_registry=store_registry)
     dag_steps = master_dag.get_steps()
-    master_dag.download_and_split()
+    master_dag.select_assets()
     minio_client = store_registry.minio_object_store('fake')
 
     for key, value in minio_client._objects.items():

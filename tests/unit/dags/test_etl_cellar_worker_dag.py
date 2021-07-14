@@ -68,13 +68,13 @@ def test_download_documents_and_enrich_json():
         "conf": {"work": "http://publications.europa.eu/resource/cellar/d03caacf-a568-11ea-bb7a-01aa75ed71a1"}}}
 
     worker_dag = CellarDagWorker(QUERY, SPARQL_URL, MINIO_BUCKET_NAME, store_registry)
-    worker_dag.download_documents_and_enrich_json(**context)
+    worker_dag.extract(**context)
 
     assert len(minio_client.list_objects(object_name_prefix=RESOURCE_FILE_PREFIX)) > 0
 
     with pytest.raises(KeyError):
         # we test that the work uri is not in the context
-        worker_dag.download_documents_and_enrich_json()
+        worker_dag.extract()
 
 
 # TODO, implement the commented tests
