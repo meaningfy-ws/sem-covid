@@ -39,7 +39,7 @@ def test_etl_cellar_master_dag():
     # testing execute
     with pytest.raises(DagNotFound):
         # we test that the work is found and loaded but we don't test triggering in the airflow environment
-        master_dag.execute_worker_dags()
+        master_dag.trigger_workers()
 
 
 def test_fetch_documents_from_fake_cellar():
