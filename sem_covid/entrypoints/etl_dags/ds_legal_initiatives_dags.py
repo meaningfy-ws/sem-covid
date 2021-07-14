@@ -15,15 +15,19 @@ from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import CellarDagWorker
 from sem_covid.services.sparq_query_registry import QueryRegistry
 from sem_covid.services.store_registry import StoreRegistryManager
+import airflow
 
 logger = logging.getLogger(__name__)
+logger.debug(f"This line is important for DAG discovery because the *airflow module* "
+             f"shall be imported here. Otherwise it does not discover DAGs in this "
+             f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
 MAJOR = 2
 
-MASTER_DAG_NAME = dag_name(category="etl", name="legal_initiatives_master", role="master", version_major=MAJOR,
+MASTER_DAG_NAME = dag_name(category="etl", name="legal_initiatives", role="master", version_major=MAJOR,
                            version_minor=MINOR)
-WORKER_DAG_NAME = dag_name(category="etl", name="legal_initiatives_worker", role="worker", version_major=MAJOR,
+WORKER_DAG_NAME = dag_name(category="etl", name="legal_initiatives", role="worker", version_major=MAJOR,
                            version_minor=MINOR)
 
 # Creating the master DAG

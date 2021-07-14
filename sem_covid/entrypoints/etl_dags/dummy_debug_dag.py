@@ -4,7 +4,7 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid import config
 from sem_covid.adapters.dag.dag_factory import DagFactory
-from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
+from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline
 from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
 from sem_covid.entrypoints.etl_dags.ds_cellar_covid_dags import EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY

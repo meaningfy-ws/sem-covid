@@ -1,7 +1,7 @@
-from sem_covid.services.base_etl import BaseETL
+from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 
 
-class FakeBaseETL(BaseETL):
+class FakeBaseETLPipeline(BaseETLPipeline):
     def load(self, *args, **kwargs):
         pass
 
@@ -16,7 +16,7 @@ class FakeBaseETL(BaseETL):
 
 
 def test_base_etl():
-    etl = FakeBaseETL()
+    etl = FakeBaseETLPipeline()
     assert etl.version == '0.0.1'
     etl.extract()
     etl.load()

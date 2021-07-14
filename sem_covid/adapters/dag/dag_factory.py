@@ -5,7 +5,7 @@ from abc import abstractmethod
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline, DagStep
+from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline, DagStep
 from sem_covid.entrypoints import DEFAULT_DAG_ARGUMENTS
 
 logger = logging.getLogger(__name__)

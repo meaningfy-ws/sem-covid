@@ -39,9 +39,11 @@ all: install
 test-unit:
 	@ echo "$(BUILD_PRINT)Running the unit tests"
 	@ py.test --ignore=tests/tests/e2e -s --html=report.html --self-contained-html
+
 test-e2e:
 	@ echo "$(BUILD_PRINT)Running the end to end tests"
 	@ py.test --ignore=tests/tests/unit -s --html=report.html --self-contained-html
+
 tests:
 	@ echo "$(BUILD_PRINT)Running all tests"
 	@ py.test -s --html=report.html --self-contained-html

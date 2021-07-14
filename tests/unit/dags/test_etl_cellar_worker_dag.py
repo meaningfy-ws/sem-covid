@@ -77,6 +77,7 @@ def test_download_documents_and_enrich_json():
         worker_dag.download_documents_and_enrich_json()
 
 
+# TODO, implement the commented tests
 # def test_download_zip_objects_to_temp_folder():
 #     """
 #         store a zip in the fake object store
@@ -102,13 +103,13 @@ def test_download_documents_and_enrich_json():
 
 
 def test_select_relevant_files_from_temp_folder():
-    temp_dir = pathlib.Path(__file__).parent.parent / "test_data" / "test_folder"
+    temp_dir = pathlib.Path(__file__).parent.parent.parent / "test_data" / "test_folder"
     list_of_files_from_folder = select_relevant_files_from_temp_folder(temp_dir)
-    print(list_of_files_from_folder)
 
     assert list == type(list_of_files_from_folder)
-    assert pathlib.PosixPath == type(list_of_files_from_folder[0])
-    assert pathlib.PosixPath == type(list_of_files_from_folder[1])
+    assert len(list_of_files_from_folder) == 2
+    for file in list_of_files_from_folder:
+        assert file.exists()
 
 
 # def test_extract_content_with_tika(fragment1_eu_cellar_covid):

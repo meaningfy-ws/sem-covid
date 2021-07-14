@@ -7,7 +7,8 @@ import pandas as pd
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid.adapters.abstract_store import TripleStoreABC
-from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
+from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseMasterPipeline
+from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
 from sem_covid.services.store_registry import StoreRegistryManagerABC
 
@@ -60,7 +61,7 @@ def get_documents_from_triple_store(list_of_queries: List[str],
                                             id_column=id_column)
 
 
-class CellarDagMaster(DagPipeline):
+class CellarDagMaster(BaseMasterPipeline):
     """
         A pipeline for selecting works to be fetched from Cellar
     """
@@ -76,10 +77,7 @@ class CellarDagMaster(DagPipeline):
         self.sparql_endpoint_url = sparql_endpoint_url
         self.worker_dag_name = worker_dag_name
 
-    def get_steps(self) -> list:
-        return [self.download_and_split, self.execute_worker_dags]
-
-    def download_and_split(self, *args, **context):
+    def select_assets(self, *args, **context):
         """
             this function:
                 (1) queries the triple store with all the queries,
@@ -108,7 +106,7 @@ class CellarDagMaster(DagPipeline):
             filename = DOCUMENTS_PREFIX + hashlib.sha256(row[WORK_ID_COLUMN].encode('utf-8')).hexdigest() + ".json"
             minio.put_object(filename, json.dumps(file_content))
 
-    def execute_worker_dags(self, *args, **context):
+    def trigger_workers(self, *args, **context):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         documents = minio.list_objects(DOCUMENTS_PREFIX)
         for index, document in enumerate(documents):

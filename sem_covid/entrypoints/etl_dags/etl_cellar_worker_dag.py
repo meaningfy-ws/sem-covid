@@ -13,7 +13,8 @@ from tika import parser
 
 from sem_covid import config
 from sem_covid.adapters.abstract_store import ObjectStoreABC
-from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
+from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline
+from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX, CONTENT_KEY, \
     CONTENT_LANGUAGE, CONTENT_PATH_KEY, DOWNLOAD_TIMEOUT
 from sem_covid.services.sc_wrangling.data_cleaning import clean_fix_unicode, clean_to_ascii, clean_remove_line_breaks
@@ -114,7 +115,7 @@ def get_text_from_selected_files(list_of_file_paths: List[Path], tika_service_ur
     return list_of_dictionaries
 
 
-class CellarDagWorker(DagPipeline):
+class CellarDagWorker(BaseETLPipeline):
     """
         A generic worker pipeline for getting a Work document from cellar (based on Work URI)
     """
@@ -126,14 +127,7 @@ class CellarDagWorker(DagPipeline):
         self.sparql_query = sparql_query
         self.sparql_url = sparql_endpoint_url
 
-    def get_steps(self) -> list:
-        return [self.download_documents_and_enrich_json,
-                self.extract_content_with_tika,
-                self.content_cleanup,
-                self.upload_to_elastic
-                ]
-
-    def download_documents_and_enrich_json(self, **context):
+    def extract(self, **context):
         """
             This function
             (0) reads the work document from minio if one exist
@@ -194,7 +188,7 @@ class CellarDagWorker(DagPipeline):
         work_document_content[CONTENT_PATH_KEY] = list_of_downloaded_manifestation_object_paths
         minio.put_object(work_document_filename, json.dumps(work_document_content))
 
-    def extract_content_with_tika(self, **context):
+    def transform_structure(self, **context):
         """
             This function:
             - for each work manifestation zip
@@ -230,7 +224,7 @@ class CellarDagWorker(DagPipeline):
         # update work document in object store
         minio.put_object(json_file_name, json.dumps(json_content))
 
-    def content_cleanup(self, *args, **context):
+    def transform_content(self, *args, **context):
         """
             This function will clean the content of the document from minio
         """
@@ -251,7 +245,7 @@ class CellarDagWorker(DagPipeline):
             logger.warning(
                 f"Skipping a fragment without content {json_file_name} titled {document['title']} workID {document['work']}")
 
-    def upload_to_elastic(self, *args, **context):
+    def load(self, *args, **context):
         work = get_work_uri_from_context(**context)
         json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
         es_adapter = self.store_registry.es_index_store()
