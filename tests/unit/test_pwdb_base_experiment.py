@@ -1,4 +1,4 @@
-from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
+from sem_covid.services.ml_pipelines.pwdb_base_experiment import PWDBBaseExperiment
 
 # TODO: Review this tests
 """

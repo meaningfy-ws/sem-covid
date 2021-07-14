@@ -1,0 +1,26 @@
+# select the works of legal initiatives
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT
+    ?work
+    (group_concat(DISTINCT ?_title; separator="| ") as ?title)
+WHERE {
+    # selector criteria
+    VALUES ?expr_lang { lang:ENG}
+
+    ?work cdm:work_id_document ?idd .
+    FILTER (strStarts(str(?idd),"pi_com" ) )
+
+    # diving down FRBR structure for the title and the content
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+            cdm:expression_uses_language ?expr_lang ;
+            cdm:expression_title ?_title .
+    }
+}
+GROUP BY ?work

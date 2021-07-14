@@ -1,0 +1,30 @@
+# Select the Works that have been tagged with the cdm:internal_comment="COVID19"
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ev: <http://eurovoc.europa.eu/>
+
+SELECT DISTINCT
+    ?work
+    (group_concat(DISTINCT ?_title; separator="| ") as ?title)
+WHERE {
+    # selector criteria
+    VALUES ?expr_lang { lang:ENG}
+    VALUES ?eu_cellar_core_value { "true" }
+
+    ?work cdm:resource_legal_comment_internal ?comment .
+    FILTER (regex(str(?comment),'COVID19'))
+    # FILTER NOT EXISTS { ?work cdm:work_embargo [] . }
+
+    # diving down FRBR structure for the title and the content
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+             cdm:expression_uses_language ?expr_lang ;
+             cdm:expression_title ?_title .
+    }
+}
+GROUP BY ?work
