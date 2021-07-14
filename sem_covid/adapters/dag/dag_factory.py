@@ -80,7 +80,8 @@ class DagFactory:
         """
             After finishing creating the steps, it creates the dag and deploys it.
         """
-        updated_default_args_copy = {**self.default_args.copy(), **dag_args}
+        updated_default_args_copy = self.default_args.copy()
+        updated_default_args_copy.update(dag_args)
 
         with DAG(self.dag_name, default_args=updated_default_args_copy) as dag:
             step_python_operators = [PythonOperator(task_id=f"{step.__name__}",
