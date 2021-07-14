@@ -2,9 +2,14 @@ import logging
 
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
+from sem_covid import config
 from sem_covid.adapters.dag.dag_factory import DagFactory
 from sem_covid.adapters.dag.dag_pipeline_abc import DagPipeline
 from sem_covid.entrypoints import dag_name
+from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
+from sem_covid.entrypoints.etl_dags.ds_cellar_covid_dags import EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY
+from sem_covid.services.sparq_query_registry import QueryRegistry
+from sem_covid.services.store_registry import StoreRegistryManager
 
 logger = logging.getLogger(__name__)
 
@@ -93,3 +98,33 @@ slave_dag = DagFactory(DebugSlaveDag(param="SlaveDag param  -- PLUTO"),
 # globals()[MASTER_DAG_NAME] = master_dag
 # globals()[SLAVE_DAG_NAME] = slave_dag
 
+# gigi_dag = DagFactory(
+#     CellarDagMaster(
+#         list_of_queries=[QueryRegistry().SEM_COVID_CORE_SELECTOR, QueryRegistry().SEM_COVID_EXTENDED_SELECTOR],
+#         list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
+#         worker_dag_name="WORKER_DAG_NAME",
+#         sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
+#         minio_bucket_name=config.EU_CELLAR_BUCKET_NAME,
+#         store_registry=StoreRegistryManager()
+#     ), dag_name="MASTER_DAG_NAME").create_dag(schedule_interval="@once",
+#                                             max_active_runs=1, concurrency=1)
+
+MINOR = 3
+MAJOR = 3
+
+MASTER_DAG_NAME_2 = dag_name(category="etl", name="eu_cellar_covid_1", role="master", version_major=MAJOR,
+                           version_minor=MINOR)
+WORKER_DAG_NAME_2 = dag_name(category="etl", name="eu_cellar_covid_2", role="worker", version_major=MAJOR,
+                           version_minor=MINOR)
+dag_master_pipeline = CellarDagMaster(
+    list_of_queries=[QueryRegistry().SEM_COVID_CORE_SELECTOR, QueryRegistry().SEM_COVID_EXTENDED_SELECTOR],
+    list_of_query_flags=[EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY],
+    worker_dag_name=WORKER_DAG_NAME_2,
+    sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
+    minio_bucket_name=config.EU_CELLAR_BUCKET_NAME,
+    store_registry=StoreRegistryManager()
+)
+
+test_cellar_covid_dag = DagFactory(
+    dag_pipeline=dag_master_pipeline, dag_name=MASTER_DAG_NAME_2).create_dag(schedule_interval="@once",
+                                                                           max_active_runs=1, concurrency=1)

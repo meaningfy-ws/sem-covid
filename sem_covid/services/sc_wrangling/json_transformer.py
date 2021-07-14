@@ -98,9 +98,14 @@ EU_CELLAR_REFACTORING_RULES = '''.| {
     manifs_html: .manifs_html | tostring | split("| "),
     pdfs_to_download: .pdfs_to_download | tostring | split("| "),
     htmls_to_download: .htmls_to_download | tostring | split("| "),
+    dossiers: .dossiers | tostring | split("| "),
+    related_works: .related_works | tostring | split("| "),
+    work_sequences: .work_sequences | tostring | split("| "),
+    core: .core | tostring | split("| "),
     eu_cellar_core: .eu_cellar_core | tostring,
     eu_cellar_extended: .eu_cellar_extended | tostring
 }'''
+
 
 LEGAL_INITIATIVES_REFACTORING_RULES = '''.[] | {
     work: .work.value,

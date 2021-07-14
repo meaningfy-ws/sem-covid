@@ -13,15 +13,13 @@ FAKE_EU_CELLAR_SPARQL_URL = "http://fake-url.fake"
 FAKE_EU_CELLAR_BUCKET_NAME = "fake-bucket-name"
 
 
-
-
-
 def test_etl_cellar_master_dag():
     # instantiating the class
     store_registry = FakeStoreRegistryManager()
 
-    master_dag = CellarDagMaster(FAKE_LIST_OF_QUERIES, FAKE_LIST_OF_FLAGS, FAKE_EU_CELLAR_SPARQL_URL,
-                                 FAKE_EU_CELLAR_BUCKET_NAME, store_registry)
+    master_dag = CellarDagMaster(list_of_queries=FAKE_LIST_OF_QUERIES, list_of_query_flags=FAKE_LIST_OF_FLAGS,
+                                 sparql_endpoint_url=FAKE_EU_CELLAR_SPARQL_URL,worker_dag_name="worker",
+                                 minio_bucket_name=FAKE_EU_CELLAR_BUCKET_NAME, store_registry=store_registry)
     dag_steps = master_dag.get_steps()
     master_dag.download_and_split()
     minio_client = store_registry.minio_object_store('fake')
@@ -42,8 +40,6 @@ def test_etl_cellar_master_dag():
     with pytest.raises(DagNotFound):
         # we test that the work is found and loaded but we don't test triggering in the airflow environment
         master_dag.execute_worker_dags()
-
-
 
 
 def test_fetch_documents_from_fake_cellar():

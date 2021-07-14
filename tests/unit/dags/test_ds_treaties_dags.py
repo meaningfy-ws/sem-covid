@@ -4,10 +4,11 @@
 # Author: Eugeniu Costetchi
 # Email: costezki.eugen@gmail.com
 
-from sem_covid.entrypoints.etl_dags.ds_fin_reg_dags import MASTER_DAG_NAME, WORKER_DAG_NAME
+
+from sem_covid.entrypoints.etl_dags.ds_treaties_dags import MASTER_DAG_NAME, WORKER_DAG_NAME
 
 
-def test_finreg_has_two_tasks_and_order(airflow_dag_bag):
+def test_treaties_master_has_two_tasks_and_order(airflow_dag_bag):
     dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks
@@ -27,7 +28,7 @@ def test_finreg_has_two_tasks_and_order(airflow_dag_bag):
     assert not downstream_task_ids
 
 
-def test_finreg_worker_has_three_tasks_and_order(airflow_dag_bag):
+def test_treaties_worker_has_three_tasks_and_order(airflow_dag_bag):
     dag = airflow_dag_bag.get_dag(dag_id=WORKER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks

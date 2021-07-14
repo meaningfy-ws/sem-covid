@@ -83,8 +83,13 @@ def test_download_documents_and_enrich_json():
 #         pass the path to the test function
 #         assert that the extracted content is in the returned temp folder
 #     """
-#     source = ['68f2dd7aa5f687d674472ae705ff96cbb9d90129ee60aedf984dd861d7afd5ef_html.zip']
-#     zip_extractor = download_zip_objects_to_temp_folder(source, object_store)
+#     path_to_zip_file = pathlib.Path(__file__).parent.parent / "test_data" / "test_zip" / "test.zip"
+#     zipfile = str(path_to_zip_file.read_bytes())
+#     minio_client = store_registry.minio_object_store('fake_bucket')
+#     minio_client.put_object(object_name="test", content=zipfile)
+#     print(minio_client._objects)
+#     zip_extractor = download_zip_objects_to_temp_folder(["test"], object_store)
+#     print (zip_extractor)
 #
 #
 # def test_get_text_from_selected_files(fragment1_eu_cellar_covid):
@@ -94,7 +99,6 @@ def test_download_documents_and_enrich_json():
 #     """
 #     list_path = [fragment1_eu_cellar_covid]
 #     # text_grabber = get_text_from_selected_files(list_path)
-
 
 
 def test_select_relevant_files_from_temp_folder():

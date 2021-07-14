@@ -13,9 +13,9 @@ logger = logging.getLogger(__name__)
 MINOR = 3
 MAJOR = 3
 
-MASTER_DAG_NAME = dag_name(category="etl", name="eu_cellar_covid_1", role="master", version_major=MAJOR,
+MASTER_DAG_NAME = dag_name(category="etl", name="eu_cellar_covid_master", role="master", version_major=MAJOR,
                            version_minor=MINOR)
-WORKER_DAG_NAME = dag_name(category="etl", name="eu_cellar_covid_2", role="worker", version_major=MAJOR,
+WORKER_DAG_NAME = dag_name(category="etl", name="eu_cellar_covid_worker", role="worker", version_major=MAJOR,
                            version_minor=MINOR)
 
 EU_CELLAR_CORE_KEY = "eu_cellar_core"
@@ -47,5 +47,4 @@ worker_pipeline = CellarDagWorker(
 worker_dag = DagFactory(
     dag_pipeline=worker_pipeline, dag_name=WORKER_DAG_NAME).create_dag(schedule_interval=None, max_active_runs=128,
                                                                        concurrency=128)
-globals()[MASTER_DAG_NAME] = master_dag
-globals()[WORKER_DAG_NAME] = worker_dag
+

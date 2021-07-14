@@ -5,12 +5,12 @@
 # Email: costezki.eugen@gmail.com
 import logging
 
-from sem_covid.entrypoints.etl_dags.eu_cellar_covid import MASTER_DAG_NAME, WORKER_DAG_NAME
+from sem_covid.entrypoints.etl_dags.ds_cellar_covid_dags import MASTER_DAG_NAME, WORKER_DAG_NAME
 
 logger = logging.getLogger(__name__)
 
 
-def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):
+def test_ds_cellar_covid_master_has_two_tasks_and_order(airflow_dag_bag):
     dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME)
     print(f"dags in dag bag: {airflow_dag_bag.dag_ids}")
     assert dag is not None
@@ -31,7 +31,7 @@ def test_eurlex_has_two_tasks_and_order(airflow_dag_bag):
     assert not downstream_task_ids
 
 
-def test_eurlex_worker_has_three_tasks_and_order(airflow_dag_bag):
+def test_ds_cellar_covid_work_has_three_tasks_and_order(airflow_dag_bag):
     dag = airflow_dag_bag.get_dag(dag_id=WORKER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks

@@ -21,9 +21,9 @@ logger = logging.getLogger(__name__)
 MINOR = 1
 MAJOR = 2
 
-MASTER_DAG_NAME = dag_name(category="etl", name="legal_initiatives", role="master", version_major=MAJOR,
+MASTER_DAG_NAME = dag_name(category="etl", name="legal_initiatives_master", role="master", version_major=MAJOR,
                            version_minor=MINOR)
-WORKER_DAG_NAME = dag_name(category="etl", name="legal_initiatives", role="worker", version_major=MAJOR,
+WORKER_DAG_NAME = dag_name(category="etl", name="legal_initiatives_worker", role="worker", version_major=MAJOR,
                            version_minor=MINOR)
 
 # Creating the master DAG
