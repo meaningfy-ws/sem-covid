@@ -10,7 +10,7 @@ from sem_covid.adapters.abstract_store import TripleStoreABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseMasterPipeline
 from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
-from sem_covid.services.store_registry import StoreRegistryManagerABC
+from sem_covid.services.store_registry import StoreRegistryABC
 
 logger = logging.getLogger(__name__)
 
@@ -68,7 +68,7 @@ class CellarDagMaster(BaseMasterPipeline):
 
     def __init__(self, list_of_queries: List[str],
                  sparql_endpoint_url: str, minio_bucket_name: str, worker_dag_name: str,
-                 store_registry: StoreRegistryManagerABC,
+                 store_registry: StoreRegistryABC,
                  list_of_query_flags: List[str] = ["core"]):
         self.store_registry = store_registry
         self.list_of_queries = list_of_queries

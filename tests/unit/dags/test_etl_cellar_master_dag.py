@@ -5,7 +5,7 @@ from airflow.exceptions import DagNotFound
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster, get_documents_from_triple_store, \
     unify_dataframes_and_mark_source
 from tests.unit.test_store.fake_storage import FakeTripleStore
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistryManager
+from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 
 FAKE_LIST_OF_QUERIES = ['EU_CELLAR_CORE_QUERY', 'EU_CELLAR_EXTENDED_QUERY']
 FAKE_LIST_OF_FLAGS = ['EU_CELLAR_CORE_KEY', 'EU_CELLAR_EXTENDED_KEY']
@@ -15,7 +15,7 @@ FAKE_EU_CELLAR_BUCKET_NAME = "fake-bucket-name"
 
 def test_etl_cellar_master_dag():
     # instantiating the class
-    store_registry = FakeStoreRegistryManager()
+    store_registry = FakeStoreRegistry()
 
     master_dag = CellarDagMaster(list_of_queries=FAKE_LIST_OF_QUERIES, list_of_query_flags=FAKE_LIST_OF_FLAGS,
                                  sparql_endpoint_url=FAKE_EU_CELLAR_SPARQL_URL,worker_dag_name="worker",

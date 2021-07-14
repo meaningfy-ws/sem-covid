@@ -18,7 +18,7 @@ from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX, CONTENT_KEY, \
     CONTENT_LANGUAGE, CONTENT_PATH_KEY, DOWNLOAD_TIMEOUT
 from sem_covid.services.sc_wrangling.data_cleaning import clean_fix_unicode, clean_to_ascii, clean_remove_line_breaks
-from sem_covid.services.store_registry import StoreRegistryManagerABC
+from sem_covid.services.store_registry import StoreRegistryABC
 
 logger = logging.getLogger(__name__)
 
@@ -121,7 +121,7 @@ class CellarDagWorker(BaseETLPipeline):
     """
 
     def __init__(self, sparql_query: str, sparql_endpoint_url: str, minio_bucket_name: str,
-                 store_registry: StoreRegistryManagerABC):
+                 store_registry: StoreRegistryABC):
         self.store_registry = store_registry
         self.minio_bucket_name = minio_bucket_name
         self.sparql_query = sparql_query

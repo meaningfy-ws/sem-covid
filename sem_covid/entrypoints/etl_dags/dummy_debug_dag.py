@@ -9,7 +9,7 @@ from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
 from sem_covid.entrypoints.etl_dags.ds_cellar_covid_dags import EU_CELLAR_CORE_KEY, EU_CELLAR_EXTENDED_KEY
 from sem_covid.services.sparq_query_registry import QueryRegistry
-from sem_covid.services.store_registry import StoreRegistryManager
+from sem_covid.services.store_registry import StoreRegistry
 
 logger = logging.getLogger(__name__)
 
@@ -122,7 +122,7 @@ dag_master_pipeline = CellarDagMaster(
     worker_dag_name=WORKER_DAG_NAME_2,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
     minio_bucket_name=config.EU_CELLAR_BUCKET_NAME,
-    store_registry=StoreRegistryManager()
+    store_registry=StoreRegistry()
 )
 
 test_cellar_covid_dag = DagFactory(

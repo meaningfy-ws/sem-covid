@@ -1,10 +1,10 @@
 
 from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC, FeatureStoreABC, TripleStoreABC
-from sem_covid.services.store_registry import StoreRegistryManagerABC
+from sem_covid.services.store_registry import StoreRegistryABC
 from tests.unit.test_store.fake_storage import FakeIndexStore, FakeObjectStore, FakeFeatureStore, FakeTripleStore
 
 
-class FakeStoreRegistryManager(StoreRegistryManagerABC):
+class FakeStoreRegistry(StoreRegistryABC):
 
     def __init__(self):
         self.fake_index_store = None

@@ -15,12 +15,12 @@ from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import download_manife
     download_zip_objects_to_temp_folder, get_text_from_selected_files
 from sem_covid.services.store_registry import StoreRegistry
 from tests.unit.test_store.fake_storage import FakeObjectStore
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistryManager
+from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 
 QUERY = "sparql query"
 SPARQL_URL = "www.fake.com"
 MINIO_BUCKET_NAME = "fake_bucket"
-store_registry = FakeStoreRegistryManager()
+store_registry = FakeStoreRegistry()
 object_store = FakeObjectStore()
 
 
