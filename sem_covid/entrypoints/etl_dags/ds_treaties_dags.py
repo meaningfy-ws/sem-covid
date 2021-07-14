@@ -56,4 +56,4 @@ worker_pipeline = CellarDagWorker(
 
 worker_dag = DagFactory(
     dag_pipeline=worker_pipeline, dag_name=WORKER_DAG_NAME,
-    default_dag_args=DEFAULT_DAG_ARGUMENTS).create_dag(schedule_interval=None, max_active_runs=128, concurrency=128)
+    default_dag_args=DEFAULT_DAG_ARGUMENTS).create_dag(schedule_interval=None, max_active_runs=4, concurrency=4)
