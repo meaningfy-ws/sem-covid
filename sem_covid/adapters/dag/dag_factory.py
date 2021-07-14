@@ -81,11 +81,8 @@ class DagFactory:
         """
             After finishing creating the steps, it creates the dag and deploys it.
         """
-        updated_default_args_copy = self.default_args.copy()
-        # updated_default_args_copy.update(dag_args)
 
-        with DAG(self.dag_name, default_args=updated_default_args_copy, schedule_interval=dag_args["schedule_interval"],
-                 max_active_runs=dag_args["max_active_runs"], concurrency=dag_args["concurrency"]) as dag:
+        with DAG(dag_id=self.dag_name, default_args=self.default_args, **dag_args) as dag:
             step_python_operators = [PythonOperator(task_id=f"{step.__name__}",
                                                     python_callable=self.create_step(step),
                                                     dag=dag)
