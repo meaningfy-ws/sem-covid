@@ -160,7 +160,7 @@ WHERE {
             FILTER (str(?type_html) in ('html', 'xhtml'))
         }
     }
-    BIND(IRI(concat(?manif_pdf,"/zip")) as ?pdf_to_download)
-    BIND(IRI(concat(?manif_html,"/zip")) as ?html_to_download)
+    BIND(IF(BOUND(?manif_pdf), IRI(concat(?manif_pdf,"/zip")),"")  as ?pdf_to_download)
+    BIND(IF(BOUND(?manif_html), IRI(concat(?manif_html,"/zip")),"")  as ?html_to_download)
 }
 GROUP BY ?work
