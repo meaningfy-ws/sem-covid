@@ -150,7 +150,7 @@ class CellarDagWorker(BaseETLPipeline):
 
         work_metadata_df = self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
             sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
-        work_metadata_df.fillna(None, inplace=True)
+        work_metadata_df.where(work_metadata_df.notnull(), None)
         work_metadata = work_metadata_df.to_dict(orient="records")
         # we expect that there will be work one set of metadata,
         # otherwise makes no sense to continue
