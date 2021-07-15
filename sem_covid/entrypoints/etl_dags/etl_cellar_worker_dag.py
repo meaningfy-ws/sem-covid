@@ -8,6 +8,7 @@ from itertools import chain
 from pathlib import Path
 from typing import List
 
+import pandas as pd
 import requests
 from tika import parser
 
@@ -121,12 +122,13 @@ class CellarDagWorker(BaseETLPipeline):
         A generic worker pipeline for getting a Work document from cellar (based on Work URI)
     """
 
-    def __init__(self, sparql_query: str, sparql_endpoint_url: str, minio_bucket_name: str,
+    def __init__(self, sparql_query: str, sparql_endpoint_url: str, minio_bucket_name: str, index_name: str,
                  store_registry: StoreRegistryABC):
         self.store_registry = store_registry
         self.minio_bucket_name = minio_bucket_name
         self.sparql_query = sparql_query
         self.sparql_endpoint_url = sparql_endpoint_url
+        self.index_name = index_name
 
     def extract(self, **context):
         """
@@ -254,17 +256,22 @@ class CellarDagWorker(BaseETLPipeline):
 
     def load(self, *args, **context):
         work = get_work_uri_from_context(**context)
-        json_file_name = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
+        document_id = hashlib.sha256(work.encode('utf-8')).hexdigest()
+        json_file_name = DOCUMENTS_PREFIX + document_id + ".json"
         es_adapter = self.store_registry.es_index_store()
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
+        document_df = pd.DataFrame(data=json_content, index=[document_id])
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
         logger.info(
-            f'Sending to ElasticSearch ( {config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME} ) the file {json_file_name}')
-        es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME,
-                         document_id=json_file_name.split("/")[1],
-                         document_body=json_content)
+            f'Sending to ElasticSearch ( {self.index_name} ) the file {json_file_name}')
+
+        es_adapter.put_dataframe(index_name=self.index_name,
+                                 content=document_df)
+        # es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME,
+        #                  document_id=json_file_name.split("/")[1],
+        #                  document_body=json_content)
 
         logger.info(f'Sent {json_file_name} file(s) to ElasticSearch successfully.')

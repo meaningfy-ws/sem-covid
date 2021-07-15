@@ -212,6 +212,9 @@ class FakeEsPandasClient(es_pandas):
 
 class FakeIndexStore(IndexStoreABC):
 
+    def create_index(self, index_name: str, index_mappings: dict, exist_ok=True):
+        pass
+
     def __init__(self):
         self._store = dict()
 

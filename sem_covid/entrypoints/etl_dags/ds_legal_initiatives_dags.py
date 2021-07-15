@@ -13,6 +13,7 @@ from sem_covid.adapters.dag.dag_factory import DagFactory
 from sem_covid.entrypoints import dag_name, DEFAULT_DAG_ARGUMENTS
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import CellarDagWorker
+from sem_covid.services.index_mapping_registry import IndicesMappingRegistry
 from sem_covid.services.sparq_query_registry import QueryRegistry
 from sem_covid.services.store_registry import StoreRegistry
 import airflow
@@ -22,7 +23,7 @@ logger.debug(f"This line is important for DAG discovery because the *airflow mod
              f"shall be imported here. Otherwise it does not discover DAGs in this "
              f"module. Airflow version {airflow.__version__}")
 
-MINOR = 5
+MINOR = 6
 MAJOR = 1
 
 MASTER_DAG_NAME = dag_name(category="etl", name="legal_initiatives", role="master", version_major=MAJOR,
@@ -37,7 +38,8 @@ master_pipeline = CellarDagMaster(
     worker_dag_name=WORKER_DAG_NAME,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
     minio_bucket_name=config.LEGAL_INITIATIVES_BUCKET_NAME,
-    store_registry=StoreRegistry()
+    store_registry=StoreRegistry(),
+    index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME
 )
 
 master_dag = DagFactory(
@@ -50,7 +52,8 @@ worker_pipeline = CellarDagWorker(
     sparql_query=QueryRegistry().METADATA_FETCHER,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
     minio_bucket_name=config.LEGAL_INITIATIVES_BUCKET_NAME,
-    store_registry=StoreRegistry())
+    store_registry=StoreRegistry(),
+    index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME)
 
 worker_dag = DagFactory(
     dag_pipeline=worker_pipeline, dag_name=WORKER_DAG_NAME,

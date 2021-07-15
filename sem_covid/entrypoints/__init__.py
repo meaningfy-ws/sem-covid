@@ -6,6 +6,7 @@
 # Email: costezki.eugen@gmail.com 
 
 """ """
+import json
 from datetime import datetime, timedelta
 from typing import Union
 
@@ -15,7 +16,7 @@ except ImportError:
     # Try backported to PY<37 `importlib_resources`.
     import importlib_resources as pkg_resources
 
-from resources import sparql_queries
+from resources import sparql_queries, elasticsearch
 
 DEFAULT_DAG_ARGUMENTS = {
     "owner": "airflow",
@@ -64,3 +65,11 @@ def get_sparql_query(query_file_name: str) -> str:
     """
     with pkg_resources.path(sparql_queries, query_file_name) as path:
         return path.read_text()
+
+
+def get_index_mapping(mapping_file_name: str) -> dict:
+    """
+        get a predefined index mapping by reference to file name
+    """
+    with pkg_resources.path(elasticsearch, mapping_file_name) as path:
+        return json.loads(path.read_bytes())
