@@ -149,9 +149,10 @@ class CellarDagWorker(BaseETLPipeline):
 
         assert isinstance(work_document_content, dict), "The work document must be a dictionary"
 
-        work_metadata = self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
-            sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe().to_dict(orient="records")
-
+        work_metadata_df = self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
+            sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
+        work_metadata_df.fillna("", inplace=True)
+        work_metadata = work_metadata_df.to_dict(orient="records")
         # we expect that there will be work one set of metadata,
         # otherwise makes no sense to continue
         if isinstance(work_metadata, list) and len(work_metadata) > 0:
