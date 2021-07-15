@@ -3,6 +3,7 @@ import io
 import pathlib
 import re
 
+import pandas as pd
 import pytest
 from pathlib import Path
 import tempfile
@@ -195,3 +196,23 @@ def test_content_cleanup_tool(fragment3_eu_cellar_covid):
 #     json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
 #     json_content[CONTENT_LANGUAGE] = str(json_content[CONTENT_LANGUAGE][0])
 #     print(json_content)
+
+# def test_df():
+#     json_content = {
+#             "work": "http://publications.europa.eu/resource/cellar/1b0572d2-d1f3-11e8-9424-01aa75ed71a1",
+#             "title": "COMMISSION DELEGATED REGULATION (EU) …/.. and presentation",
+#             "cdm_types": "http://publications.europa.eu/ontology/cdm#work",
+#
+#             "core":
+#                 [
+#                     "true"
+#                 ],
+#             "eu_cellar_core": "null",
+#             "eu_cellar_extended": "null",
+#             "content_path":
+#                 [
+#                     "res/3ebbf43df528d345ba63f0556afd8fb09e4c8b4126bba4d7a7af280c2b81018a_html.zip"
+#                 ]
+#         }
+#     df=pd.DataFrame(data=json_content, index=["3ebbf43df528d345ba63f0556afd8fb09e4c8b4126bba4d7a7af280c2b81018a"])
+#     print(df)

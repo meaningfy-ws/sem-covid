@@ -9,6 +9,7 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from sem_covid.adapters.abstract_store import TripleStoreABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseMasterPipeline
 from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline
+from sem_covid.services.index_mapping_registry import IndicesMappingRegistry
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
 from sem_covid.services.store_registry import StoreRegistryABC
 
@@ -68,7 +69,8 @@ class CellarDagMaster(BaseMasterPipeline):
 
     def __init__(self, list_of_queries: List[str],
                  sparql_endpoint_url: str, minio_bucket_name: str, worker_dag_name: str,
-                 store_registry: StoreRegistryABC,
+                 store_registry: StoreRegistryABC, index_name: str,
+                 index_mappings: dict = IndicesMappingRegistry().CELLAR_INDEX_MAPPING,
                  list_of_query_flags: List[str] = ["core"]):
         self.store_registry = store_registry
         self.list_of_queries = list_of_queries
@@ -76,10 +78,13 @@ class CellarDagMaster(BaseMasterPipeline):
         self.minio_bucket_name = minio_bucket_name
         self.sparql_endpoint_url = sparql_endpoint_url
         self.worker_dag_name = worker_dag_name
+        self.index_name = index_name
+        self.index_mappings = index_mappings
 
     def select_assets(self, *args, **context):
         """
             this function:
+                (0) creates the elastic index for the dataset, if it doesn't exist
                 (1) queries the triple store with all the queries,
                 (2) unifies the result set,
                 (3) stores the unified result set and then
@@ -88,6 +93,8 @@ class CellarDagMaster(BaseMasterPipeline):
 
             The SPARQL query shall return at least the list of work URIs.
         """
+        es_adapter = self.store_registry.es_index_store()
+        es_adapter.create_index(index_name=self.index_name, index_mappings=self.index_mappings)
         triple_store_adapter = self.store_registry.sparql_triple_store(self.sparql_endpoint_url)
         unified_df = get_documents_from_triple_store(
             list_of_queries=self.list_of_queries,

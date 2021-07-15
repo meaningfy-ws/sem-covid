@@ -6,9 +6,10 @@
 # Email: costezki.eugen@gmail.com 
 
 """ """
-from sem_covid.entrypoints import dag_name, get_sparql_query
+from sem_covid.entrypoints import dag_name, get_sparql_query, get_index_mapping
 from datetime import datetime
 
+from sem_covid.services.index_mapping_registry import IndicesMappingRegistry
 from sem_covid.services.sparq_query_registry import QueryRegistry
 
 
@@ -49,3 +50,14 @@ def test_get_sparql_query_registry():
                   QueryRegistry().TREATIES_SELECTOR, QueryRegistry().LEGAL_INITIATIVES_SELECTOR,
                   QueryRegistry().FINANCIAL_REGULATIONS_SELECTOR, QueryRegistry().METADATA_FETCHER]:
         assert "SELECT" in query
+
+
+def test_get_index_mapping():
+    mapping = get_index_mapping("ds_pwdb_mapping.json")
+    assert "mappings" in mapping
+
+
+def test_get_index_mappings():
+    for index in [IndicesMappingRegistry().CELLAR_INDEX_MAPPING, IndicesMappingRegistry().PWDB_INDEX_MAPPING,
+                  IndicesMappingRegistry().EU_TIMELINE_MAPPING, IndicesMappingRegistry().IRELAND_TIMELINE_MAPPING]:
+        assert "mappings" in index
