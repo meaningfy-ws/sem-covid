@@ -72,6 +72,7 @@ def download_zip_objects_to_temp_folder(object_paths: List[str], minio_client: O
     temp_dir = tempfile.mkdtemp(prefix="cellar_dag_")
     for content_path in object_paths:
         current_zip_location = Path(temp_dir) / str(content_path)
+        current_zip_location.parent.mkdir(parents=True, exist_ok=True)
         with open(current_zip_location, 'wb') as current_zip:
             content_bytes = bytearray(minio_client.get_object(content_path))
             current_zip.write(content_bytes)
