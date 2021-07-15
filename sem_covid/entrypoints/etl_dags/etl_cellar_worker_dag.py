@@ -207,7 +207,9 @@ class CellarDagWorker(BaseETLPipeline):
         logger.info(f'Loaded the work document JSON from {json_file_name}')
 
         # download archives and unzip them
-        list_of_downloaded_manifestation_object_paths = [RESOURCE_FILE_PREFIX + content_path for content_path in
+        # list_of_downloaded_manifestation_object_paths = [RESOURCE_FILE_PREFIX + content_path for content_path in
+        #                                                  json_content[CONTENT_PATH_KEY]]
+        list_of_downloaded_manifestation_object_paths = [content_path for content_path in
                                                          json_content[CONTENT_PATH_KEY]]
         temp_folder = download_zip_objects_to_temp_folder(object_paths=list_of_downloaded_manifestation_object_paths,
                                                           minio_client=minio)
