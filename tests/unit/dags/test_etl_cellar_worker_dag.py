@@ -150,3 +150,16 @@ def test_content_cleanup_tool(fragment3_eu_cellar_covid):
     assert "\u2014" not in content
     assert b"\u2014".decode("utf-8") not in content
     assert not re.match(r"\s\s", content)
+
+# def test_zip():
+#     object_paths = ["res/3eb4e21d5ecf9e5ffaf57fc45b9815fab3bdff59a5b650185eb6231513595eb5_html.zip"]
+#
+#     temp_dir = tempfile.mkdtemp(prefix="cellar_dag_")
+#     for content_path in object_paths:
+#         current_zip_location = Path(temp_dir) / str(content_path)
+#         current_zip_location.parent.mkdir(parents=True, exist_ok=True)
+#         with open(current_zip_location, 'wb') as current_zip:
+#             content_bytes = bytearray("hello world".encode())
+#             current_zip.write(content_bytes)
+#         with zipfile.ZipFile(current_zip_location, 'r') as zip_ref:
+#             zip_ref.extractall(temp_dir)
