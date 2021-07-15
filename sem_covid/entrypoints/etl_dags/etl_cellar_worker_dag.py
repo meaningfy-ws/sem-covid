@@ -227,7 +227,7 @@ class CellarDagWorker(BaseETLPipeline):
             json_content[CONTENT_KEY].append(dictionary[CONTENT_KEY])
             json_content[CONTENT_LANGUAGE].append(dictionary[CONTENT_LANGUAGE])
         json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
-        json_content[CONTENT_LANGUAGE] = str(json_content[CONTENT_LANGUAGE][0])
+        # json_content[CONTENT_LANGUAGE] = str(json_content[CONTENT_LANGUAGE][0])
         # update work document in object store
         minio.put_object(json_file_name, json.dumps(json_content))
 
@@ -258,10 +258,12 @@ class CellarDagWorker(BaseETLPipeline):
         es_adapter = self.store_registry.es_index_store()
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
+        logger.info(
+            f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
         logger.info(
-            f'Sending to ElasticSearch ( {config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME} ) the file {json_file_name}')
-        es_adapter.index(index_name=config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
+            f'Sending to ElasticSearch ( {config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME} ) the file {json_file_name}')
+        es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME,
                          document_id=json_file_name.split("/")[1],
                          document_body=json_content)
 
