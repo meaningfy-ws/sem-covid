@@ -220,10 +220,14 @@ class CellarDagWorker(BaseETLPipeline):
                                                                  tika_service_url=config.APACHE_TIKA_URL)
 
         # merge results from Tika into a unified work content
+        logger.info("List of content dictionaries = " + str(file_content_dictionaries))
+        json_content[CONTENT_KEY] = list()
+        json_content[CONTENT_LANGUAGE] = list()
         for dictionary in file_content_dictionaries:
             json_content[CONTENT_KEY].append(dictionary[CONTENT_KEY])
             json_content[CONTENT_LANGUAGE].append(dictionary[CONTENT_LANGUAGE])
         json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
+        json_content[CONTENT_LANGUAGE] = str(json_content[CONTENT_LANGUAGE][0])
         # update work document in object store
         minio.put_object(json_file_name, json.dumps(json_content))
 
