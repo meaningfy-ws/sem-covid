@@ -107,12 +107,11 @@ def get_text_from_selected_files(list_of_file_paths: List[Path], tika_service_ur
         parse_result = parser.from_file(str(file_path), tika_service_url)
         # extracting the content and language from the returned dictionary from TIKA
         content_dictionary[CONTENT_KEY] = parse_result['content']
-        content_dictionary[CONTENT_LANGUAGE] = (
-                parse_result["metadata"].get("Content-Language")
-                or
-                parse_result["metadata"].get("content-language")
-                or
-                parse_result["metadata"].get("language"))
+        languages = {
+            parse_result["metadata"].get("Content-Language"),
+            parse_result["metadata"].get("content-language"),
+            parse_result["metadata"].get("language")}
+        content_dictionary[CONTENT_LANGUAGE] = languages.pop()
         list_of_dictionaries.append(content_dictionary)
     return list_of_dictionaries
 
@@ -151,7 +150,7 @@ class CellarDagWorker(BaseETLPipeline):
 
         work_metadata_df = self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
             sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
-        work_metadata_df.fillna("", inplace=True)
+        work_metadata_df.fillna(None, inplace=True)
         work_metadata = work_metadata_df.to_dict(orient="records")
         # we expect that there will be work one set of metadata,
         # otherwise makes no sense to continue
