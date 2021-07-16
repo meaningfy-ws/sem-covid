@@ -278,8 +278,8 @@ class CellarDagWorker(BaseETLPipeline):
 
         logger.info(f'Processing Work {work} from json_file {json_file_name}')
         json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
-        document_df = pd.DataFrame(data=json_content, index=[document_id])
-
+        json_content = [json_content] if isinstance(json_content, dict) else json_content
+        document_df = pd.DataFrame.from_records(data=json_content, index=[document_id])
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
