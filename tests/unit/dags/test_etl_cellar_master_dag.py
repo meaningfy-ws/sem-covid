@@ -98,7 +98,7 @@ def test_get_and_transform_documents_from_triple_store():
 
     data = {'work': 'http://publications.europa.eu/resource/cellar/fea565f4-e1f9-11ea-ad25-01aa75ed71a1',
             'title': ['Commission proposal for a Council Recommendation on a Child Guarantee'], 'cdm_types': None,
-            'cdm_type_labels': None, 'resource_types': None, 'resource_type_labels': None, 'eurovoc_concepts': None,
+            'cdm_type_labels': "", 'resource_types': None, 'resource_type_labels': None, 'eurovoc_concepts': None,
             'eurovoc_concept_labels': None, 'subject_matters': None, 'subject_matter_labels': None, 'directory_codes': None,
             'directory_codes_labels': None, 'celex_numbers': None, 'legal_elis': None, 'id_documents': None, 'same_as_uris': None,
             'authors': None, 'author_labels': None, 'full_ojs': None, 'oj_sectors': None, 'internal_comments': None,
