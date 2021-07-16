@@ -151,6 +151,8 @@ class CellarDagWorker(BaseETLPipeline):
             sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
         # work_metadata_df.where(cond=work_metadata_df.notnull(), other=None, inplace=True)
         work_metadata = work_metadata_df.to_dict(orient="records")
+        logger.info(
+            f"Enriching work document content ({type(work_document_content)}) with fetched metadata {work_metadata}")
         # we expect that there will be work one set of metadata,
         # otherwise makes no sense to continue
         if isinstance(work_metadata, list) and len(work_metadata) > 0:
@@ -186,6 +188,10 @@ class CellarDagWorker(BaseETLPipeline):
         else:
             logger.warning(f"No manifestation has been found for {work}")
 
+        # Pandas dataframe needs to have
+        logger.info(f"List of downloaded manifestations paths {list_of_downloaded_manifestation_object_paths}")
+        list_of_downloaded_manifestation_object_paths = list_of_downloaded_manifestation_object_paths \
+            if list_of_downloaded_manifestation_object_paths else [None]
         # enriching the document with a list of paths to downloaded manifestations
         work_document_content[CONTENT_PATH_KEY] = list_of_downloaded_manifestation_object_paths
         minio.put_object(work_document_filename, json.dumps(work_document_content))
