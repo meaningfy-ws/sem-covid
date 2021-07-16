@@ -3,6 +3,7 @@ import json
 import logging
 from typing import List
 
+import numpy as np
 import pandas as pd
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
@@ -56,6 +57,11 @@ def get_and_transform_documents_from_triple_store(list_of_queries: List[str],
     """
     list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in
                                   list_of_queries]
+
+    # The NaN cause strange behaviour in the JQ transformer (3 work days have been lost on writing these 2 lines: RIP)
+    # please use teh debugger more often than one every three days
+    for df in list_of_result_data_frames:
+        df.replace({np.nan: None}, inplace=True)
     list_of_result_sets = [df.to_dict(orient="records") for df in list_of_result_data_frames]
     list_of_transformed_result_sets = [[transformation_function(item_dict) for item_dict in result_set_dict_list] for
                                        result_set_dict_list in list_of_result_sets]
@@ -135,7 +141,6 @@ class CellarDagMaster(BaseMasterPipeline):
             logger.info(f"Bootstrapping Work {row[WORK_ID_COLUMN]} with content {row.to_dict()}")
             filename = DOCUMENTS_PREFIX + hashlib.sha256(row[WORK_ID_COLUMN].encode('utf-8')).hexdigest() + ".json"
             minio.put_object(filename, json.dumps(row.to_dict()))
-
 
     def trigger_workers(self, *args, **context):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
