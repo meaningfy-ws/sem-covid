@@ -33,8 +33,8 @@ dag_master_pipeline = CellarDagMaster(
     worker_dag_name=WORKER_DAG_NAME,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
     minio_bucket_name=config.EU_CELLAR_BUCKET_NAME,
-    store_registry=StoreRegistry()
-)
+    store_registry=StoreRegistry(),
+    index_name=config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME)
 
 master_dag = DagFactory(
     dag_pipeline=dag_master_pipeline, dag_name=MASTER_DAG_NAME).create_dag(schedule_interval="@once",
@@ -46,7 +46,8 @@ worker_pipeline = CellarDagWorker(
     sparql_query=QueryRegistry().METADATA_FETCHER,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
     minio_bucket_name=config.EU_CELLAR_BUCKET_NAME,
-    store_registry=StoreRegistry())
+    store_registry=StoreRegistry(),
+    index_name=config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME)
 
 worker_dag = DagFactory(
     dag_pipeline=worker_pipeline, dag_name=WORKER_DAG_NAME).create_dag(schedule_interval=None, max_active_runs=128,

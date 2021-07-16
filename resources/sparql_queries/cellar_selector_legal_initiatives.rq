@@ -24,4 +24,3 @@ WHERE {
     }
 }
 GROUP BY ?work
-LIMIT 15

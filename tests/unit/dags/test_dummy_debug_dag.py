@@ -6,7 +6,7 @@
 
 import logging
 
-from sem_covid.entrypoints.etl_dags.dummy_debug_dag import MASTER_DAG_NAME, SLAVE_DAG_NAME, DAG_NAME, MASTER_DAG_NAME_2
+from sem_covid.entrypoints.etl_dags.dummy_debug_dag import MASTER_DAG_NAME, SLAVE_DAG_NAME, DAG_NAME
 
 logger = logging.getLogger(__name__)
 
@@ -35,7 +35,4 @@ def test_dummy_debug_dag_has_two_tasks_and_order(airflow_dag_bag):
     assert dag is not None
 
     dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
-    assert dag is not None
-
-    dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME_2)
     assert dag is not None
