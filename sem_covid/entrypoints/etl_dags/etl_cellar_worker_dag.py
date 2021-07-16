@@ -150,7 +150,7 @@ class CellarDagWorker(BaseETLPipeline):
 
         work_metadata_df = self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
             sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
-        work_metadata_df.where(cond=work_metadata_df.notnull(), other=None, inplace=True)
+        # work_metadata_df.where(cond=work_metadata_df.notnull(), other=None, inplace=True)
         work_metadata = work_metadata_df.to_dict(orient="records")
         # we expect that there will be work one set of metadata,
         # otherwise makes no sense to continue
@@ -162,7 +162,7 @@ class CellarDagWorker(BaseETLPipeline):
             raise ValueError(f"No metadata were found for {work} work")
 
         list_of_downloaded_manifestation_object_paths = []
-        if work_document_content.get('htmls_to_download'):
+        if pd.notna(work_document_content.get('htmls_to_download')):
             # ensuring we always iterate trough a list
             htmls_to_download = work_document_content.get('htmls_to_download') \
                 if isinstance(work_document_content.get('htmls_to_download'), list) \
@@ -173,7 +173,7 @@ class CellarDagWorker(BaseETLPipeline):
                                                 minio=minio,
                                                 prefix=RESOURCE_FILE_PREFIX,
                                                 source_type="html"))
-        elif work_document_content.get('pdfs_to_download'):
+        elif pd.notna(work_document_content.get('pdfs_to_download')):
             # ensuring we always iterate trough a list
             pdfs_to_download = work_document_content.get('pdfs_to_download') \
                 if isinstance(work_document_content.get('pdfs_to_download'), list) \
