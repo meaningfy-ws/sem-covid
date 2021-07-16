@@ -4,9 +4,12 @@ import pandas as pd
 import pytest
 from airflow.exceptions import DagNotFound
 
+from sem_covid import config
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster, get_documents_from_triple_store, \
     unify_dataframes_and_mark_source, get_and_transform_documents_from_triple_store
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
+from sem_covid.services.sparq_query_registry import QueryRegistry
+from sem_covid.services.store_registry import StoreRegistry
 from tests.unit.test_store.fake_storage import FakeTripleStore
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 
@@ -88,8 +91,6 @@ def test_get_and_transform_documents_from_triple_store():
                                                            triple_store_adapter=triple_store,
                                                            transformation_function=transform_eu_cellar_item)
 
-    print(result[0].iloc[0])
-
     assert isinstance(result, list)
     assert isinstance(result[0], pd.DataFrame)
     assert 1 == len(result[0].iloc[0]["title"])
@@ -117,11 +118,23 @@ def test_get_and_transform_documents_from_triple_store():
                                        result_set_dict_list in list_of_result_sets]
     list_of_transformed_df = [pd.DataFrame.from_records(result_set) for result_set in list_of_transformed_result_sets]
 
-    # print(list_of_transformed_result_sets[0])
-    # print(list_of_result_sets[0])
     print(list_of_transformed_df[0].iloc[0])
     unified_df = unify_dataframes_and_mark_source(list_of_data_frames=list_of_transformed_df,
                                                   list_of_flags=["list_of_query_flags"], id_column=id_column)
     print(unified_df.iloc[0])
     pprint.pprint(unified_df.to_dict(orient="records"))
 
+
+def test_shit_getting_real():
+    sparql_query = QueryRegistry().METADATA_FETCHER
+    store_adapter = StoreRegistry().sparql_triple_store(config.EU_CELLAR_SPARQL_URL)
+    query = sparql_query.replace("%WORK_ID%", "http://publications.europa.eu/resource/cellar/7782aace-1ff2-11ea-95ab-01aa75ed71a1")
+    print(query)
+
+    work_metadata_df = get_documents_from_triple_store(
+        list_of_queries=[sparql_query.replace("%WORK_ID%", "http://publications.europa.eu/resource/cellar/7782aace-1ff2-11ea-95ab-01aa75ed71a1")],
+        list_of_query_flags=["metadata"],
+        triple_store_adapter=store_adapter,
+        id_column="work")
+
+    print(work_metadata_df.iloc[0])
