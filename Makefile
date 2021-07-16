@@ -112,3 +112,8 @@ start_airflow:
 stop_airflow:
 	@ echo "$(BUILD_PRINT)Stopping the Airflow scheduler and webserver"
 	@ pkill -f airflow
+
+
+lint:
+	@ echo "$(BUILD_PRINT)Looking for dragons in your code ...."
+	@ pylint sem_covid
