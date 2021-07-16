@@ -152,7 +152,9 @@ class CellarDagWorker(BaseETLPipeline):
         # work_metadata_df.where(cond=work_metadata_df.notnull(), other=None, inplace=True)
         work_metadata = work_metadata_df.to_dict(orient="records")
         logger.info(
-            f"Enriching work document content ({type(work_document_content)}) with fetched metadata {work_metadata}")
+            f"Found work document ({type(work_document_content)}) {work_document_content}")
+        logger.info(
+            f"Enriching work document content with fetched metadata  ({type(work_metadata)}) {work_metadata}")
         # we expect that there will be work one set of metadata,
         # otherwise makes no sense to continue
         if isinstance(work_metadata, list) and len(work_metadata) > 0:
