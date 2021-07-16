@@ -40,7 +40,6 @@ def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], li
                                                           lambda row: True if row[id_column] in original_df[
                                                               id_column].values else False, axis=1)
     unified_dataframe.reset_index(drop=True, inplace=True)
-    unified_dataframe.fillna("", inplace=True)
     return unified_dataframe
 
 
@@ -133,8 +132,10 @@ class CellarDagMaster(BaseMasterPipeline):
         minio.empty_bucket(object_name_prefix=DOCUMENTS_PREFIX)
 
         for index, row in unified_df.iterrows():
+            logger.info(f"Bootstrapping Work {row[WORK_ID_COLUMN]} with content {row.to_dict()}")
             filename = DOCUMENTS_PREFIX + hashlib.sha256(row[WORK_ID_COLUMN].encode('utf-8')).hexdigest() + ".json"
             minio.put_object(filename, json.dumps(row.to_dict()))
+
 
     def trigger_workers(self, *args, **context):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)

@@ -153,8 +153,7 @@ class CellarDagWorker(BaseETLPipeline):
             triple_store_adapter=self.store_registry.sparql_triple_store(self.sparql_endpoint_url),
             id_column=WORK_ID_COLUMN)
 
-        # self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
-        # sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
+        logger.info(f"Head of teh raw metadata {work_metadata_df.iloc[0]}")
 
         # work_metadata_df.where(cond=work_metadata_df.notnull(), other=None, inplace=True)
         work_metadata = work_metadata_df.to_dict(orient="records")
@@ -171,7 +170,7 @@ class CellarDagWorker(BaseETLPipeline):
         work_document_content.update(work_metadata)
 
         list_of_downloaded_manifestation_object_paths = []
-        if pd.notna(work_document_content.get('htmls_to_download')):
+        if work_document_content.get('htmls_to_download'):
             # ensuring we always iterate trough a list
             htmls_to_download = work_document_content.get('htmls_to_download') \
                 if isinstance(work_document_content.get('htmls_to_download'), list) \
@@ -182,7 +181,7 @@ class CellarDagWorker(BaseETLPipeline):
                                                 minio=minio,
                                                 prefix=RESOURCE_FILE_PREFIX,
                                                 source_type="html"))
-        elif pd.notna(work_document_content.get('pdfs_to_download')):
+        elif work_document_content.get('pdfs_to_download'):
             # ensuring we always iterate trough a list
             pdfs_to_download = work_document_content.get('pdfs_to_download') \
                 if isinstance(work_document_content.get('pdfs_to_download'), list) \
@@ -199,7 +198,7 @@ class CellarDagWorker(BaseETLPipeline):
         # Pandas dataframe needs to have
         logger.info(f"List of downloaded manifestations paths {list_of_downloaded_manifestation_object_paths}")
         list_of_downloaded_manifestation_object_paths = list_of_downloaded_manifestation_object_paths \
-            if list_of_downloaded_manifestation_object_paths else [None]
+            if list_of_downloaded_manifestation_object_paths else None
         # enriching the document with a list of paths to downloaded manifestations
         work_document_content[CONTENT_PATH_KEY] = list_of_downloaded_manifestation_object_paths
         minio.put_object(work_document_filename, json.dumps(work_document_content))
