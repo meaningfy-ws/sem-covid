@@ -1,6 +1,7 @@
 import hashlib
 import json
 import logging
+import warnings
 from typing import List
 
 import pandas as pd
@@ -8,7 +9,6 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 from sem_covid.adapters.abstract_store import TripleStoreABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseMasterPipeline
-from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline
 from sem_covid.services.index_mapping_registry import IndicesMappingRegistry
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
 from sem_covid.services.store_registry import StoreRegistryABC
@@ -45,19 +45,43 @@ def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], li
     return unified_dataframe
 
 
+def get_and_transform_documents_from_triple_store(list_of_queries: List[str],
+                                                  triple_store_adapter: TripleStoreABC,
+                                                  transformation_function=transform_eu_cellar_item,
+                                                  ) -> List[pd.DataFrame]:
+    """
+        Give a list of SPARQL queries,
+        1. fetch the result sets,
+        2. cast them to dicts and
+        3. transform them with JQ based transformation function (item level)
+        4. cast the results back into dataframes and return teh results
+    """
+    list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in
+                                  list_of_queries]
+    list_of_result_sets = [df.to_dict(orient="records") for df in list_of_result_data_frames]
+    list_of_transformed_result_sets = [[transformation_function(item_dict) for item_dict in result_set_dict_list] for
+                                       result_set_dict_list in list_of_result_sets]
+    list_of_transformed_df = [pd.DataFrame.from_records(result_set) for result_set in list_of_transformed_result_sets]
+
+    return list_of_transformed_df
+
+
 def get_documents_from_triple_store(list_of_queries: List[str],
                                     list_of_query_flags: List[str],
                                     triple_store_adapter: TripleStoreABC,
                                     id_column: str) -> pd.DataFrame:
     """
+
         Give a list of SPARQL queries, fetch the result set and merge it into a unified result set.
         Each distinct work is also flagged indicating the query used to fetch it. When fetched multiple times,
         a work is simply flagged multiple times.
         When merging the result sets, the unique identifier will be specified in a result-set column.
     """
-    list_of_result_data_frames = [triple_store_adapter.with_query(sparql_query=query).get_dataframe() for query in
-                                  list_of_queries]
-    return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_data_frames,
+    list_of_result_df = get_and_transform_documents_from_triple_store(list_of_queries=list_of_queries,
+                                                                      triple_store_adapter=triple_store_adapter,
+                                                                      transformation_function=transform_eu_cellar_item)
+
+    return unify_dataframes_and_mark_source(list_of_data_frames=list_of_result_df,
                                             list_of_flags=list_of_query_flags,
                                             id_column=id_column)
 
@@ -96,6 +120,7 @@ class CellarDagMaster(BaseMasterPipeline):
         es_adapter = self.store_registry.es_index_store()
         es_adapter.create_index(index_name=self.index_name, index_mappings=self.index_mappings)
         triple_store_adapter = self.store_registry.sparql_triple_store(self.sparql_endpoint_url)
+
         unified_df = get_documents_from_triple_store(
             list_of_queries=self.list_of_queries,
             list_of_query_flags=self.list_of_query_flags,
@@ -109,9 +134,8 @@ class CellarDagMaster(BaseMasterPipeline):
         minio.empty_bucket(object_name_prefix=DOCUMENTS_PREFIX)
 
         for index, row in unified_df.iterrows():
-            file_content = transform_eu_cellar_item(dict(row.to_dict()))
             filename = DOCUMENTS_PREFIX + hashlib.sha256(row[WORK_ID_COLUMN].encode('utf-8')).hexdigest() + ".json"
-            minio.put_object(filename, json.dumps(file_content))
+            minio.put_object(filename, json.dumps(row.to_dict()))
 
     def trigger_workers(self, *args, **context):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)

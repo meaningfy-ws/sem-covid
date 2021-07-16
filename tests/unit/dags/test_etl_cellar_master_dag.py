@@ -3,7 +3,8 @@ import pytest
 from airflow.exceptions import DagNotFound
 
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster, get_documents_from_triple_store, \
-    unify_dataframes_and_mark_source
+    unify_dataframes_and_mark_source, get_and_transform_documents_from_triple_store
+from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
 from tests.unit.test_store.fake_storage import FakeTripleStore
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 
@@ -18,7 +19,7 @@ def test_etl_cellar_master_dag():
     store_registry = FakeStoreRegistry()
 
     master_dag = CellarDagMaster(list_of_queries=FAKE_LIST_OF_QUERIES, list_of_query_flags=FAKE_LIST_OF_FLAGS,
-                                 sparql_endpoint_url=FAKE_EU_CELLAR_SPARQL_URL,worker_dag_name="worker",
+                                 sparql_endpoint_url=FAKE_EU_CELLAR_SPARQL_URL, worker_dag_name="worker",
                                  minio_bucket_name=FAKE_EU_CELLAR_BUCKET_NAME, store_registry=store_registry)
     dag_steps = master_dag.get_steps()
     master_dag.select_assets()
@@ -72,3 +73,25 @@ def test_unify_dataframes_and_mark_source():
     assert {"flag1", "flag2"}.issubset(set(unified_dataframe.columns))
     assert unified_dataframe.iloc[0]["flag1"] and unified_dataframe.iloc[0]["flag2"]
     assert unified_dataframe.iloc[1]["flag1"] and not unified_dataframe.iloc[1]["flag2"]
+
+
+def test_get_and_transform_documents_from_triple_store():
+    triple_store = FakeTripleStore()
+
+    list_of_queries = ["dummy query 1", "dummy query 2", "dummy query 3"]
+    list_of_query_flags = ["flag1", "flag2", "flag3"]
+    id_column = 'work'
+
+    result = get_and_transform_documents_from_triple_store(list_of_queries=list_of_queries,
+                                                           triple_store_adapter=triple_store,
+                                                           transformation_function=transform_eu_cellar_item)
+
+    print(result[0].iloc[0])
+
+    assert isinstance(result, list)
+    assert isinstance(result[0], pd.DataFrame)
+    assert 1 == len(result[0].iloc[0]["title"])
+    assert "COMMISSION" in result[0].iloc[0]["title"][0]
+
+    assert "dossiers" in result[0].columns
+    assert not result[0].iloc[0]["dossiers"]
