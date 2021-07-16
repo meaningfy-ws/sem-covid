@@ -161,7 +161,7 @@ class CellarDagWorker(BaseETLPipeline):
         else:
             raise ValueError(f"No metadata were found for {work} work")
 
-        list_of_downloaded_manifestation_object_paths = []
+        list_of_downloaded_manifestation_object_paths = None
         if pd.notna(work_document_content.get('htmls_to_download')):
             # ensuring we always iterate trough a list
             htmls_to_download = work_document_content.get('htmls_to_download') \
