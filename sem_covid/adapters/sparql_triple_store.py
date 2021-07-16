@@ -82,7 +82,9 @@ class SPARQLTripleStore(TripleStoreABC):
 
         self.endpoint.setReturnFormat(CSV)
         query_result = self.endpoint.queryAndConvert()
-        return pd.read_csv(io.StringIO(str(query_result, encoding=DEFAULT_ENCODING)))
+        df = pd.read_csv(io.StringIO(str(query_result, encoding=DEFAULT_ENCODING)))
+        df.where(cond=df.notnull(), other=None, inplace=True)
+        return df
 
     def __str__(self):
         return f"from <...{str(self.endpoint.endpoint)[-30:]}> {str(self.endpoint.queryString)[:60]} ..."
