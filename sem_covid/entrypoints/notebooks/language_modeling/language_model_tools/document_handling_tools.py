@@ -12,10 +12,11 @@ def document_atomization_noun_phrases(document: Doc):
         :document: spacy document
         :return: The same document, but with atomized noun phrases
     """
-    sentence = str(document)
+    sentence = str(document).lower()
     for noun_phrase in document.noun_chunks:
-        sequence = str([x.lemma_ for x in noun_phrase])
+        sequence = " ".join([x.lemma_ for x in noun_phrase]).lower()
         sentence = sentence.replace(sequence, sequence.replace(' ', '_'))
+
     return nlp(sentence)
 
 

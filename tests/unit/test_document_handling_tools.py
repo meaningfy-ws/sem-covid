@@ -8,17 +8,17 @@ from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.docu
 nlp = spacy.load('en_core_web_sm')
 
 
-def test_document_atomization_noun_phrases():
+def test_document_atomization_noun_phrases(spacy_document):
     sentence = "The Constitution of the United States is the supreme law of the United States of America."
     doc = nlp(sentence)
 
-    atomized_document = document_atomization_noun_phrases(doc)
-
+    atomized_document = document_atomization_noun_phrases(spacy_document)
+    print(atomized_document)
     assert Doc == type(atomized_document)
-    assert 'The_Constitution' in atomized_document.text
-    assert 'the_United_States' in atomized_document.text
+    assert 'the_constitution' in atomized_document.text
+    assert 'the_united_states' in atomized_document.text
     assert 'the_supreme_law' in atomized_document.text
-    assert 'the_United_States' in atomized_document.text
+    assert 'the_united_states' in atomized_document.text
 
 
 def test_lemmatize_document(spacy_document):
