@@ -224,8 +224,8 @@ class CellarDagWorker(BaseETLPipeline):
         # download archives and unzip them
         # list_of_downloaded_manifestation_object_paths = [RESOURCE_FILE_PREFIX + content_path for content_path in
         #                                                  json_content[CONTENT_PATH_KEY]]
-        list_of_downloaded_manifestation_object_paths = [content_path for content_path in
-                                                         json_content[CONTENT_PATH_KEY]]
+        list_of_downloaded_manifestation_object_paths = json_content[CONTENT_PATH_KEY] if json_content[
+            CONTENT_PATH_KEY] else []
         temp_folder = download_zip_objects_to_temp_folder(object_paths=list_of_downloaded_manifestation_object_paths,
                                                           minio_client=minio)
         # select relevant files and pass them through Tika
