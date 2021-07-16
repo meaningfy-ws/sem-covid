@@ -170,7 +170,7 @@ class CellarDagWorker(BaseETLPipeline):
         work_document_content.update(work_metadata)
 
         list_of_downloaded_manifestation_object_paths = []
-        if pd.notna(work_document_content.get('htmls_to_download')):
+        if work_document_content.get('htmls_to_download'):
             # ensuring we always iterate trough a list
             htmls_to_download = work_document_content.get('htmls_to_download') \
                 if isinstance(work_document_content.get('htmls_to_download'), list) \
@@ -181,7 +181,7 @@ class CellarDagWorker(BaseETLPipeline):
                                                 minio=minio,
                                                 prefix=RESOURCE_FILE_PREFIX,
                                                 source_type="html"))
-        elif pd.notna(work_document_content.get('pdfs_to_download')):
+        elif work_document_content.get('pdfs_to_download'):
             # ensuring we always iterate trough a list
             pdfs_to_download = work_document_content.get('pdfs_to_download') \
                 if isinstance(work_document_content.get('pdfs_to_download'), list) \
