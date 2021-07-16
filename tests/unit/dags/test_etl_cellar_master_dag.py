@@ -1,3 +1,5 @@
+import pprint
+
 import pandas as pd
 import pytest
 from airflow.exceptions import DagNotFound
@@ -99,17 +101,27 @@ def test_get_and_transform_documents_from_triple_store():
     data = {'work': 'http://publications.europa.eu/resource/cellar/fea565f4-e1f9-11ea-ad25-01aa75ed71a1',
             'title': ['Commission proposal for a Council Recommendation on a Child Guarantee'], 'cdm_types': None,
             'cdm_type_labels': "", 'resource_types': None, 'resource_type_labels': None, 'eurovoc_concepts': None,
-            'eurovoc_concept_labels': None, 'subject_matters': None, 'subject_matter_labels': None, 'directory_codes': None,
-            'directory_codes_labels': None, 'celex_numbers': None, 'legal_elis': None, 'id_documents': None, 'same_as_uris': None,
+            'eurovoc_concept_labels': None, 'subject_matters': None, 'subject_matter_labels': None,
+            'directory_codes': None,
+            'directory_codes_labels': None, 'celex_numbers': None, 'legal_elis': None, 'id_documents': None,
+            'same_as_uris': None,
             'authors': None, 'author_labels': None, 'full_ojs': None, 'oj_sectors': None, 'internal_comments': None,
             'is_in_force': None, 'dates_document': None, 'dates_created': None, 'legal_dates_entry_into_force': None,
             'legal_dates_signature': None, 'manifs_pdf': None, 'manifs_html': None, 'pdfs_to_download': None,
             'htmls_to_download': None, 'dossiers': None, 'related_works': None, 'work_sequences': None, 'core': True}
 
-    list_of_result_data_frames = [pd.DataFrame.from_records(data,index=["gfdhfg"])]
+    list_of_result_data_frames = [pd.DataFrame.from_records(data, index=["gfdhfg"])]
     list_of_result_sets = [df.to_dict(orient="records") for df in list_of_result_data_frames]
+
     list_of_transformed_result_sets = [[transform_eu_cellar_item(item_dict) for item_dict in result_set_dict_list] for
                                        result_set_dict_list in list_of_result_sets]
     list_of_transformed_df = [pd.DataFrame.from_records(result_set) for result_set in list_of_transformed_result_sets]
 
-    print(list_of_transformed_df[0])
+    # print(list_of_transformed_result_sets[0])
+    # print(list_of_result_sets[0])
+    print(list_of_transformed_df[0].iloc[0])
+    unified_df = unify_dataframes_and_mark_source(list_of_data_frames=list_of_transformed_df,
+                                                  list_of_flags=["list_of_query_flags"], id_column=id_column)
+    print(unified_df.iloc[0])
+    pprint.pprint(unified_df.to_dict(orient="records"))
+

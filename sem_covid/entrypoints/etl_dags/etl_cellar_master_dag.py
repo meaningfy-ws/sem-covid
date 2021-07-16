@@ -40,7 +40,6 @@ def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], li
                                                           lambda row: True if row[id_column] in original_df[
                                                               id_column].values else False, axis=1)
     unified_dataframe.reset_index(drop=True, inplace=True)
-    unified_dataframe.fillna("", inplace=True)
     return unified_dataframe
 
 
