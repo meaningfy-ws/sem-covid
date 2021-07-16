@@ -105,7 +105,7 @@ def get_text_from_selected_files(list_of_file_paths: List[Path], tika_service_ur
         # Sending file to tika for parsing. The return result will be a dictionary
         parse_result = parser.from_file(str(file_path), tika_service_url)
         # extracting the content and language from the returned dictionary from TIKA
-        content_dictionary[CONTENT_KEY] = parse_result['content']
+        content_dictionary[CONTENT_KEY] = parse_result[CONTENT_KEY]
         languages = {
             parse_result["metadata"].get("Content-Language"),
             parse_result["metadata"].get("content-language"),
@@ -246,15 +246,15 @@ class CellarDagWorker(BaseETLPipeline):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
         document = json.loads(minio.get_object(json_file_name).decode('utf-8'))
 
-        if "content" in document and document["content"]:
-            document["content"] = content_cleanup_tool(document["content"])
+        if CONTENT_KEY in document and document[CONTENT_KEY]:
+            document[CONTENT_KEY] = content_cleanup_tool(document[CONTENT_KEY])
 
             minio.put_object(json_file_name, json.dumps(document))
             logger.info(
-                f"Completed cleanup on {json_file_name} titled {document['title']} workID {document['work']}")
+                f"Completed cleanup on {json_file_name} workID {document['work']}")
         else:
             logger.warning(
-                f"Skipping a fragment without content {json_file_name} titled {document['title']} workID {document['work']}")
+                f"Skipping a fragment without content {json_file_name} workID {document['work']}")
 
     def load(self, *args, **context):
         work = get_work_uri_from_context(**context)
@@ -262,8 +262,11 @@ class CellarDagWorker(BaseETLPipeline):
         json_file_name = DOCUMENTS_PREFIX + document_id + ".json"
         es_adapter = self.store_registry.es_index_store()
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
+
+        logger.info(f'Processing Work {work} from json_file {json_file_name}')
         json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
         document_df = pd.DataFrame(data=json_content, index=[document_id])
+
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
