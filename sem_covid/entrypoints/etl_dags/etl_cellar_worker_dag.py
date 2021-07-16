@@ -14,7 +14,6 @@ from tika import parser
 
 from sem_covid import config
 from sem_covid.adapters.abstract_store import ObjectStoreABC
-from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX, CONTENT_KEY, \
     CONTENT_LANGUAGE, CONTENT_PATH_KEY, DOWNLOAD_TIMEOUT
@@ -161,7 +160,7 @@ class CellarDagWorker(BaseETLPipeline):
         else:
             raise ValueError(f"No metadata were found for {work} work")
 
-        list_of_downloaded_manifestation_object_paths = None
+        list_of_downloaded_manifestation_object_paths = []
         if pd.notna(work_document_content.get('htmls_to_download')):
             # ensuring we always iterate trough a list
             htmls_to_download = work_document_content.get('htmls_to_download') \
