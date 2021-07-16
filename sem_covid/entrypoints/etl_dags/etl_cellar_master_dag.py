@@ -134,9 +134,8 @@ class CellarDagMaster(BaseMasterPipeline):
         minio.empty_bucket(object_name_prefix=DOCUMENTS_PREFIX)
 
         for index, row in unified_df.iterrows():
-            file_content = transform_eu_cellar_item(dict(row.to_dict()))
             filename = DOCUMENTS_PREFIX + hashlib.sha256(row[WORK_ID_COLUMN].encode('utf-8')).hexdigest() + ".json"
-            minio.put_object(filename, json.dumps(file_content))
+            minio.put_object(filename, json.dumps(row.to_dict()))
 
     def trigger_workers(self, *args, **context):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
