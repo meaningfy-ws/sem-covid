@@ -16,7 +16,7 @@ from sem_covid import config
 from sem_covid.adapters.abstract_store import ObjectStoreABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX, CONTENT_KEY, \
-    CONTENT_LANGUAGE, CONTENT_PATH_KEY, DOWNLOAD_TIMEOUT
+    CONTENT_LANGUAGE, CONTENT_PATH_KEY, DOWNLOAD_TIMEOUT, get_documents_from_triple_store, WORK_ID_COLUMN
 from sem_covid.services.sc_wrangling.data_cleaning import clean_fix_unicode, clean_to_ascii, clean_remove_line_breaks
 from sem_covid.services.store_registry import StoreRegistryABC
 
@@ -43,12 +43,12 @@ def get_work_uri_from_context(*args, **context):
     """
      Fail hard if no work URI is provided in the context
     """
-    if "work" not in context['dag_run'].conf:
+    if WORK_ID_COLUMN not in context['dag_run'].conf:
         message = "Could not find the work URI in the provided document. " \
                   "This DAG is to be triggered by its parent only."
         logger.error(message)
         raise ValueError(message)
-    return context['dag_run'].conf['work']
+    return context['dag_run'].conf[WORK_ID_COLUMN]
 
 
 def content_cleanup_tool(text: str) -> str:
@@ -147,22 +147,28 @@ class CellarDagWorker(BaseETLPipeline):
 
         assert isinstance(work_document_content, dict), "The work document must be a dictionary"
 
-        work_metadata_df = self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
-            sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
+        work_metadata_df = get_documents_from_triple_store(
+            list_of_queries=[self.sparql_query.replace("%WORK_ID%", work)],
+            list_of_query_flags=["metadata"],
+            triple_store_adapter=self.store_registry.sparql_triple_store(self.sparql_endpoint_url),
+            id_column=WORK_ID_COLUMN)
+
+        # self.store_registry.sparql_triple_store(self.sparql_endpoint_url).with_query(
+        # sparql_query=self.sparql_query.replace("%WORK_ID%", work)).get_dataframe()
+
         # work_metadata_df.where(cond=work_metadata_df.notnull(), other=None, inplace=True)
         work_metadata = work_metadata_df.to_dict(orient="records")
         logger.info(
             f"Found work document ({type(work_document_content)}) {work_document_content}")
-        logger.info(
-            f"Enriching work document content with fetched metadata  ({type(work_metadata)}) {work_metadata}")
         # we expect that there will be work one set of metadata,
         # otherwise makes no sense to continue
         if isinstance(work_metadata, list) and len(work_metadata) > 0:
-            work_document_content.update(work_metadata[0])
-        elif isinstance(work_metadata, dict):
-            work_document_content.update(work_metadata)
+            work_metadata = work_metadata[0]
         else:
             raise ValueError(f"No metadata were found for {work} work")
+        logger.info(
+            f"Enriching work document content with fetched metadata  ({type(work_metadata)}) {work_metadata}")
+        work_document_content.update(work_metadata)
 
         list_of_downloaded_manifestation_object_paths = []
         if pd.notna(work_document_content.get('htmls_to_download')):
@@ -259,10 +265,10 @@ class CellarDagWorker(BaseETLPipeline):
 
             minio.put_object(json_file_name, json.dumps(document))
             logger.info(
-                f"Completed cleanup on {json_file_name} workID {document['work']}")
+                f"Completed cleanup on {json_file_name} workID {document[WORK_ID_COLUMN]}")
         else:
             logger.warning(
-                f"Skipping a fragment without content {json_file_name} workID {document['work']}")
+                f"Skipping a fragment without content {json_file_name} workID {document[WORK_ID_COLUMN]}")
 
     def load(self, *args, **context):
         work = get_work_uri_from_context(**context)
