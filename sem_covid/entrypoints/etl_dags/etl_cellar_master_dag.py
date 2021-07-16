@@ -49,7 +49,7 @@ def get_and_transform_documents_from_triple_store(list_of_queries: List[str],
                                                   transformation_function=transform_eu_cellar_item,
                                                   ) -> List[pd.DataFrame]:
     """
-        Give a list of SPARQL queries,
+        This is a helper function that given a list of SPARQL queries,
         1. fetch the result sets,
         2. cast them to dicts and
         3. transform them with JQ based transformation function (item level)
@@ -144,6 +144,6 @@ class CellarDagMaster(BaseMasterPipeline):
             TriggerDagRunOperator(
                 task_id='trigger_slave_dag____' + document.object_name.replace("/", "_"),
                 trigger_dag_id=self.worker_dag_name,
-                conf={"work": file_content['work']}
+                conf={WORK_ID_COLUMN: file_content[WORK_ID_COLUMN]}
             ).execute(context)
             logger.info(f"Triggered {index} {document.object_name} DAG run")
