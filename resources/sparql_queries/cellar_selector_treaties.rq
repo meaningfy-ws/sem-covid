@@ -1,0 +1,27 @@
+prefix cdm: <http://publications.europa.eu/ontology/cdm#>
+prefix lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+
+SELECT DISTINCT
+    ?work
+    (group_concat(DISTINCT ?_title; separator="| ") as ?title)
+WHERE {
+    VALUES ?expr_lang { lang:ENG }
+
+    ?work a cdm:treaty ;
+        cdm:work_has_resource-type res_type:TREATY .
+    FILTER NOT EXISTS { ?work a cdm:fragment_resource_legal } .
+
+    ?work cdm:resource_legal_in-force "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+    # we want only works that have content
+    ?exp cdm:expression_belongs_to_work ?work .
+    ?manif_pdf cdm:manifestation_manifests_expression ?exp .
+
+    # optionally getting teh title as well
+    OPTIONAL {
+        ?exp cdm:expression_uses_language ?expr_lang ;
+            cdm:expression_title ?_title .
+    }
+}
+GROUP BY ?work

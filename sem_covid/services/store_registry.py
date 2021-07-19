@@ -9,20 +9,47 @@
     Simplified access is achieved through a preconfigured stores register.
 """
 
+import abc
+
 from es_pandas import es_pandas
 from minio import Minio
 
 from sem_covid import config
-from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC, FeatureStoreABC
+from sem_covid.adapters.abstract_store import IndexStoreABC, FeatureStoreABC, ObjectStoreABC, TripleStoreABC
 from sem_covid.adapters.es_feature_store import ESFeatureStore
 from sem_covid.adapters.es_index_store import ESIndexStore
 from sem_covid.adapters.minio_object_store import MinioObjectStore
+from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
 
 
-class StoreRegistry:
+class StoreRegistryABC(abc.ABC):
+
+    @staticmethod
+    def es_index_store() -> IndexStoreABC:
+        raise NotImplementedError
+
+    @staticmethod
+    def minio_object_store(minio_bucket: str) -> ObjectStoreABC:
+        raise NotImplementedError
+
+    @staticmethod
+    def es_feature_store() -> FeatureStoreABC:
+        raise NotImplementedError
+
+    @staticmethod
+    def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:
+        raise NotImplementedError
+
+
+class StoreRegistry(StoreRegistryABC):
     """
         This class performs the register of preconfigured stores.
     """
+
+    @staticmethod
+    def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:
+        return SPARQLTripleStore(endpoint_url=endpoint_url)
+
     @staticmethod
     def es_index_store() -> IndexStoreABC:
         """
@@ -35,7 +62,7 @@ class StoreRegistry:
         return ESIndexStore(es_pandas_client)
 
     @staticmethod
-    def minio_object_store(minio_bucket: str) ->ObjectStoreABC:
+    def minio_object_store(minio_bucket: str) -> ObjectStoreABC:
         """
             This method returns a preconfigured MinioObjectStore.
         :param minio_bucket: the name of the desired bucket.

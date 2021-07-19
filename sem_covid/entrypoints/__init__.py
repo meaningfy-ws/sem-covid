@@ -6,9 +6,31 @@
 # Email: costezki.eugen@gmail.com 
 
 """ """
-from datetime import datetime
+import json
+from datetime import datetime, timedelta
 from typing import Union
 
+try:
+    import importlib.resources as pkg_resources
+except ImportError:
+    # Try backported to PY<37 `importlib_resources`.
+    import importlib_resources as pkg_resources
+
+from resources import sparql_queries, elasticsearch
+
+DEFAULT_DAG_ARGUMENTS = {
+    "owner": "airflow",
+    "depends_on_past": False,
+    "start_date": datetime(2021, 1, 1),
+    "email": ["info@meaningfy.ws"],
+    "email_on_failure": False,
+    "email_on_retry": False,
+    "retries": 0,
+    "retry_delay": timedelta(minutes=3600),
+    "schedule_interval": "@once",
+    "max_active_runs": 128,
+    "concurrency": 128,
+}
 
 def dag_name(category: str,
              name: str,
@@ -35,3 +57,19 @@ def dag_name(category: str,
         else:
             return f"{base}_{evolutive_version}"
     return base
+
+
+def get_sparql_query(query_file_name: str) -> str:
+    """
+        get a predefined SPARQL query by reference to file name
+    """
+    with pkg_resources.path(sparql_queries, query_file_name) as path:
+        return path.read_text()
+
+
+def get_index_mapping(mapping_file_name: str) -> dict:
+    """
+        get a predefined index mapping by reference to file name
+    """
+    with pkg_resources.path(elasticsearch, mapping_file_name) as path:
+        return json.loads(path.read_bytes())

@@ -51,63 +51,6 @@ class BasePipeline(ABC):
         return "0.0.1"
 
 
-class BaseETL(BasePipeline, ABC):
-    """
-     The base experiment class from which all ETL pipelines shall be derived.
-
-     The data is
-        (1) extracted item by item and stored temporarely in an object store,
-        (2) transformed (structure) - e.g. XSLT/JQ etc
-        (3) transformed (content) - e.g. aggregated, enriched, cleaned, etc.
-        (4) loaded into final repository - e.g. a database, triple store, document management system, etc.
-    """
-
-    @abstractmethod
-    def extract(self, *args, **kwargs):
-        """
-            Select and download the relevant data from various data sources.
-            Outcome: data available for transformation in a temporary object storage.
-        :return:
-        """
-
-    @abstractmethod
-    def transform_structure(self, *args, **kwargs):
-        """
-            Access the data in the temporary store and perform a structure transformation in order to normalise
-            the data representation, generally simplifying it and increasing its usability, yet maintaining
-            the maximally useful structure.
-
-            Outcome: transformed data available in the temporary object storage.
-        :return:
-        """
-
-    @abstractmethod
-    def transform_content(self, *args, **kwargs):
-        """
-            Access the data in the temporary store and perform a content transformation, which generally consists of
-            text extraction, enrichment, restructuring, aggregation and other operations.
-
-            Outcome: transformed data available in the temporary object storage.
-        :return:
-        """
-
-    @abstractmethod
-    def load(self, *args, **kwargs):
-        """
-            Access the data in the temporary store and load it into a repository where it is indexed and made
-            available for querying and full text search.
-
-            Outcome: transformed data available in the final repository.
-        :return:
-        """
-
-    def pipeline_stages(self) -> List[Any]:
-        return [self.extract,
-                self.transform_structure,
-                self.transform_content,
-                self.load]
-
-
 class BaseExperiment(BasePipeline):
     """
      The base experiment class from which all experiments shall be derived.

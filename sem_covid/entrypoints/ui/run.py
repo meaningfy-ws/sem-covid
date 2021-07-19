@@ -10,7 +10,7 @@ UI server through flask definitions.
 """
 import logging
 
-from law_fetcher.config import config
+
 from sem_covid import ProductionConfig, DevelopmentConfig, FlaskConfig
 from sem_covid.entrypoints.ui import app
 

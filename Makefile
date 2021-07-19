@@ -36,9 +36,18 @@ create-indexes:
 
 all: install
 
-test:
-	@ echo "$(BUILD_PRINT)Running the tests"
-	@ pytest -s --html=report.html --self-contained-html
+test-unit:
+	@ echo "$(BUILD_PRINT)Running the unit tests"
+	@ py.test --ignore=tests/tests/e2e -s --html=report.html --self-contained-html
+
+test-e2e:
+	@ echo "$(BUILD_PRINT)Running the end to end tests"
+	@ py.test --ignore=tests/tests/unit -s --html=report.html --self-contained-html
+
+tests:
+	@ echo "$(BUILD_PRINT)Running all tests"
+	@ py.test -s --html=report.html --self-contained-html
+
 
 
 # Getting secrets from Vault
@@ -103,3 +112,8 @@ start_airflow:
 stop_airflow:
 	@ echo "$(BUILD_PRINT)Stopping the Airflow scheduler and webserver"
 	@ pkill -f airflow
+
+
+lint:
+	@ echo "$(BUILD_PRINT)Looking for dragons in your code ...."
+	@ pylint sem_covid
