@@ -1,4 +1,3 @@
-
 import spacy
 from spacy.tokens.doc import Doc
 
@@ -14,7 +13,9 @@ def document_atomization_noun_phrases(document: Doc):
     """
     sentence = str(document).lower()
     for noun_phrase in document.noun_chunks:
-        sequence = " ".join([x.lemma_ for x in noun_phrase]).lower()
+        noun_phrase_lemma = [x.lemma_ for x in noun_phrase]
+        sequence = " ".join(
+            [token for token in noun_phrase_lemma if token != "" and token != " "]).lower()
         sentence = sentence.replace(sequence, sequence.replace(' ', '_'))
 
     return nlp(sentence)
