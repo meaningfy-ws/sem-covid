@@ -9,7 +9,7 @@ class IndicesMappingRegistry:
 
     @property
     def CELLAR_INDEX_MAPPING(self):
-        return get_index_mapping("ds_legal_initiatives_mapping.json")
+        return get_index_mapping("ds_cellar_mapping.json")
 
     @property
     def EU_TIMELINE_MAPPING(self):
