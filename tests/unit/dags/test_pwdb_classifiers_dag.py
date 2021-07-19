@@ -1,8 +1,8 @@
-from sem_covid.entrypoints.ml_dags.pwdb_classifiers_dag import DAG_NAME
+from sem_covid.entrypoints.ml_dags.classifiers_dag import classifier_dag_name
 
 
 def test_pwdb_random_forest_experiment_dag_has_two_tasks_and_order(airflow_dag_bag):
-    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    dag = airflow_dag_bag.get_dag(dag_id=classifier_dag_name)
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
@@ -19,3 +19,7 @@ def test_pwdb_random_forest_experiment_dag_has_two_tasks_and_order(airflow_dag_b
     assert 'feature_engineering' in upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.downstream_list))
     assert not downstream_task_ids
+
+
+def test_sample_dag(airflow_dag_bag):
+    print(airflow_dag_bag.dags)

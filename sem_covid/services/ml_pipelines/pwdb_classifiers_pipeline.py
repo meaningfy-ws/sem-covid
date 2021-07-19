@@ -215,31 +215,3 @@ class ModelTraining:
         self.validate_feature_set()
         mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
         self.train_model()
-
-
-PWDB_FEATURE_STORE_NAME = 'fs_pwdb'
-
-
-class PWDBClassifiers:
-    """
-        This class aims to unify the feature engineering pipeline and the model training pipeline.
-    """
-
-    @classmethod
-    def feature_engineering(cls):
-        """
-            This method executes feature engineering pipeline with preset parameters.
-        :return:
-        """
-        worker = FeatureEngineering(feature_store_name=PWDB_FEATURE_STORE_NAME)
-        worker.execute()
-
-    @classmethod
-    def model_training(cls):
-        """
-            This method executes training model pipeline with preset parameters.
-        :return:
-        """
-        worker = ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
-                               experiment_name="PyCaret_pwdb")
-        worker.execute()
