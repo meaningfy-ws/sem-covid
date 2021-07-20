@@ -143,7 +143,7 @@ class CellarDagWorker(BaseETLPipeline):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
 
         work_document_filename = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
-        work_document_content = json.loads(minio.get_object(object_name=work_document_filename).decode('utf-8'))
+        work_document_content = json.loads(minio.get_object(object_name=work_document_filename))
 
         assert isinstance(work_document_content, dict), "The work document must be a dictionary"
 
@@ -218,12 +218,11 @@ class CellarDagWorker(BaseETLPipeline):
         # logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
 
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
-        json_content = json.loads(minio.get_object(json_file_name))
+        json_content = json.loads(minio.get_object(object_name=json_file_name))
         logger.info(f'Loaded the work document JSON from {json_file_name}')
 
         # download archives and unzip them
-        # list_of_downloaded_manifestation_object_paths = [RESOURCE_FILE_PREFIX + content_path for content_path in
-        #                                                  json_content[CONTENT_PATH_KEY]]
+
         list_of_downloaded_manifestation_object_paths = json_content[CONTENT_PATH_KEY] if json_content[
             CONTENT_PATH_KEY] else []
         temp_folder = download_zip_objects_to_temp_folder(object_paths=list_of_downloaded_manifestation_object_paths,
@@ -240,12 +239,6 @@ class CellarDagWorker(BaseETLPipeline):
         languages = set([dictionary[CONTENT_LANGUAGE] for dictionary in file_content_dictionaries])
         json_content[CONTENT_LANGUAGE] = languages.pop() if languages else None
 
-        # for dictionary in file_content_dictionaries:
-        #     json_content[CONTENT_KEY].append(dictionary[CONTENT_KEY])
-        #     json_content[CONTENT_LANGUAGE].append(dictionary[CONTENT_LANGUAGE])
-        # json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
-        # json_content[CONTENT_LANGUAGE] = str(json_content[CONTENT_LANGUAGE][0])
-        # update work document in object store
         minio.put_object(json_file_name, json.dumps(json_content))
 
     def transform_content(self, *args, **context):
@@ -257,7 +250,7 @@ class CellarDagWorker(BaseETLPipeline):
 
         logger.info(f'Cleaning up the the fragment {json_file_name}')
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
-        document = json.loads(minio.get_object(json_file_name).decode('utf-8'))
+        document = json.loads(minio.get_object(object_name=json_file_name))
 
         if CONTENT_KEY in document and document[CONTENT_KEY]:
             document[CONTENT_KEY] = content_cleanup_tool(document[CONTENT_KEY])
@@ -277,7 +270,7 @@ class CellarDagWorker(BaseETLPipeline):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
 
         logger.info(f'Processing Work {work} from json_file {json_file_name}')
-        json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
+        json_content = json.loads(minio.get_object(object_name=json_file_name))
         json_content = [json_content] if isinstance(json_content, dict) else json_content
         document_df = pd.DataFrame.from_records(data=json_content, index=[document_id])
         logger.info(
