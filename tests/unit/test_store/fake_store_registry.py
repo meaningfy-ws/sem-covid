@@ -1,4 +1,3 @@
-
 from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC, FeatureStoreABC, TripleStoreABC
 from sem_covid.services.store_registry import StoreRegistryABC
 from tests.unit.test_store.fake_storage import FakeIndexStore, FakeObjectStore, FakeFeatureStore, FakeTripleStore
@@ -25,6 +24,12 @@ class FakeStoreRegistry(StoreRegistryABC):
         return self.fake_minio_object_store
 
     def es_feature_store(self) -> FeatureStoreABC:
+        if self.fake_es_feature_store is None:
+            self.fake_es_feature_store = FakeFeatureStore()
+
+        return self.fake_es_feature_store
+
+    def minio_feature_store(self) -> FeatureStoreABC:
         if self.fake_es_feature_store is None:
             self.fake_es_feature_store = FakeFeatureStore()
 

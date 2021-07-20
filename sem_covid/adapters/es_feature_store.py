@@ -11,4 +11,4 @@ class ESFeatureStore(FeatureStoreABC):
         return self._index_store.get_dataframe(index_name=features_name)
 
     def put_features(self, features_name: str, content: pd.DataFrame):
-        return self._index_store.put_dataframe(index_name=features_name, content=content)
+        self._index_store.put_dataframe(index_name=features_name, content=content)
