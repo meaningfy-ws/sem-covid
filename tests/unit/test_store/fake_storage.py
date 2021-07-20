@@ -1,13 +1,17 @@
 import copy
 import io
+import json
+import pathlib
 from http.client import HTTPResponse
-from typing import Any, Optional, Union, Collection, MutableMapping
+from typing import Any, Optional, Union, Collection, MutableMapping, List
 
 from elasticsearch import Elasticsearch
 from es_pandas import es_pandas
 
 from sem_covid.adapters.abstract_store import *
 from minio import Minio
+
+TEST_DATA_FOLDER = pathlib.Path(__file__).parent.parent.parent / "test_data"
 
 
 class FakeMinioObject:
@@ -75,7 +79,26 @@ class FakeMinioClient(Minio):
         return result
 
 
+class FakeObjectStoreObject(object):
+    """
+        This is a fake class to mimic minio.datatypes.Object whic saccounts
+        for object metadata including object_name used in our code
+    """
+
+    def __init__(self, object_name):
+        self.object_name = object_name
+
+    def __str__(self):
+        return self.object_name
+
+    def __repr__(self):
+        return self.__str__()
+
+
 class FakeObjectStore(ObjectStoreABC):
+    """
+
+    """
 
     def __init__(self):
         self._objects = dict()
@@ -87,7 +110,7 @@ class FakeObjectStore(ObjectStoreABC):
             if str_key.startswith(object_name_prefix):
                 del self._objects[key]
 
-    def put_object(self, object_name: str, content) -> int:
+    def put_object(self, object_name: str, content):
         self._objects[object_name] = content
 
     def get_object(self, object_name: str):
@@ -96,14 +119,12 @@ class FakeObjectStore(ObjectStoreABC):
         else:
             return None
 
-    def list_objects(self, object_name_prefix: str):
-        list_result = []
-        for key in self._objects.keys():
-            str_key = str(key)
-            if str_key.startswith(object_name_prefix):
-                list_result.append(self._objects[key])
-        return list_result
-
+    def list_objects(self, object_name_prefix: str) -> List:
+        return [
+            FakeObjectStoreObject(key)
+            for key in self._objects.keys()
+            if str(key).startswith(object_name_prefix)
+        ]
 
 class FakeSecretsStore(SecretsStoreABC):
     def get_secrets(self, path: str) -> dict:
@@ -191,6 +212,9 @@ class FakeEsPandasClient(es_pandas):
 
 class FakeIndexStore(IndexStoreABC):
 
+    def create_index(self, index_name: str, index_mappings: dict, exist_ok=True):
+        pass
+
     def __init__(self):
         self._store = dict()
 
@@ -241,5 +265,8 @@ class FakeTripleStore(TripleStoreABC):
                              prefixes: str = "") -> 'TripleStoreABC':
         return self
 
-    def get_dataframe(self, df_data=[{"col1": "A", "col2": "B"}]) -> pd.DataFrame:
-        return pd.DataFrame(data=df_data)
+    def get_dataframe(self) -> pd.DataFrame:
+        path = TEST_DATA_FOLDER / "eu_cellar_covid_fragments" / "unified_eu_cellar_fragment.json"
+        json_eu_cellar_covid = json.loads(path.read_bytes())
+
+        return pd.DataFrame(data=json_eu_cellar_covid)

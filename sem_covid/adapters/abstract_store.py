@@ -141,6 +141,14 @@ class IndexStoreABC(ABC):
         """
         raise NotImplementedError
 
+    @abstractmethod
+    def create_index(self, index_name: str, index_mappings: dict, exist_ok=True):
+        """
+        Create an index if it doesn't exist already-
+        """
+
+        raise NotImplementedError
+
 
 class FeatureStoreABC(ABC):
     """
@@ -173,6 +181,7 @@ class TripleStoreABC(ABC):
     """
         This class provides an abstraction for a TripleStore.
     """
+
     @abstractmethod
     def with_query(self, sparql_query: str, substitution_variables: dict = None,
                    sparql_prefixes: str = "") -> 'TripleStoreABC':
