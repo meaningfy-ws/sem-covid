@@ -71,7 +71,7 @@ def test_fetch_documents_from_fake_cellar():
 
 
 def test_download_and_split_callable():
-    download_and_split_callable()
+    pass
 
 
 def test_unify_dataframes_and_mark_source():

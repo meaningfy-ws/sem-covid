@@ -1,3 +1,4 @@
+import numpy as np
 
 from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.similarity_calculus import *
 
@@ -22,8 +23,8 @@ def test_cosine_similarity():
 def test_manhattan_similarity():
     similarity_coefficient = manhattan_similarity(vector1, vector2)
 
-    assert np.int64 == type(similarity_coefficient)
-    assert 9 == similarity_coefficient
+    assert np.float64 == type(similarity_coefficient)
+    assert 0.1 == similarity_coefficient
 
 
 def test_get_similarity_matrix(common_word2vec_model):
