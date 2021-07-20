@@ -16,6 +16,7 @@ from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import StoreRegistry
+import tensorflow_hub as hub
 
 BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
               'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
@@ -154,6 +155,21 @@ class FeatureEngineering:
         self.transform_textual_data()
         self.compute_document_embeddings()
         self.store_feature_set()
+
+
+class FeatureEngineeringBERT(FeatureEngineering):
+
+    def __init__(self, feature_store_name: str):
+        super().__init__(feature_store_name)
+        self.model = None
+
+    def load_language_model(self):
+        model_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
+        self.model = hub.load(model_url)
+
+    def compute_document_embeddings(self):
+        assert self.model is not None
+        self.df[EMBEDDING_COLUMN] = pd.Series(self.model(self.df[TEXTUAL_DATA]).numpy().tolist(), index=self.df.index)
 
 
 class ModelTraining:
