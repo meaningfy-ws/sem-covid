@@ -3,33 +3,97 @@
 # Author  : Stratulat Ștefan
 # File    : embedding_models.py
 # Software: PyCharm
+from typing import List
+
+import numpy as np
 from gensim.models import KeyedVectors
 
-from sem_covid.adapters.abstract_model import EmbeddingModelABC
-from sem_covid.services.data_registry import LanguageModel
+from sem_covid.adapters.abstract_model import (WordEmbeddingModelABC, SentenceEmbeddingModelABC,
+                                               TokenizerModelABC)
+import tensorflow_hub as hub
+
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-class Word2VecEmbeddingModel(EmbeddingModelABC):
+class BasicTokenizerModel(TokenizerModelABC):
+
+    def tokenize(self, text: str) -> List[str]:
+        return text.split(' ')
+
+
+class SpacyTokenizerModel(TokenizerModelABC):
+
+    def __init__(self, spacy_nlp):
+        self._spacy_nlp = spacy_nlp
+
+    def tokenize(self, text: str) -> List[str]:
+        return list(map(str, self._spacy_nlp(text)))
+
+
+class Word2VecEmbeddingModel(WordEmbeddingModelABC):
+
+    def __init__(self, word2vec: KeyedVectors):
+        self._word2vec = word2vec
+        self._vector_dimension = word2vec.vector_size
+
+    def encode(self, tokens: List[str]) -> List:
+        return [self._word2vec[word].tolist() if word in self._word2vec else np.zeros(self._vector_dimension).tolist()
+                for word in tokens]
+
+
+class AverageSentenceEmbeddingModel(SentenceEmbeddingModelABC):
+
+    def __init__(self, word_embedding_model: WordEmbeddingModelABC, tokenizer: TokenizerModelABC):
+        self._word_embedding_model = word_embedding_model
+        self._tokenizer = tokenizer
+
+    def encode(self, sentences: List[str]) -> List:
+        results = []
+        for sentence in sentences:
+            embeddings = self._word_embedding_model.encode(self._tokenizer.tokenize(sentence))
+            results += [np.mean([np.zeros(len(embeddings[0])).tolist()] + embeddings, axis=0).tolist()]
+        return results
+
+
+class TfIdfSentenceEmbeddingModel(AverageSentenceEmbeddingModel):
+
+    def encode_one_sentence(self, sentence: str, tf_idf_matrix: pd.DataFrame):
+        tokens = self._tokenizer.tokenize(sentence)
+        embeddings = self._word_embedding_model.encode(tokens)
+        sum_weights = 0
+        results = []
+        for index in range(0, len(tokens)):
+            if tokens[index] in tf_idf_matrix.columns:
+                weight = tf_idf_matrix.loc[sentence][tokens[index]]
+                sum_weights += weight
+                results += [(weight * np.array(embeddings[index])).tolist()]
+
+        return (np.sum(results, axis=0) / sum_weights).tolist()
+
+    def encode(self, sentences: List[str]) -> List:
+        tf_idf_vectors = TfidfVectorizer()
+        tf_idf_matrix = pd.DataFrame(tf_idf_vectors.fit_transform(sentences).todense().tolist(),
+                                     columns=tf_idf_vectors.get_feature_names(),
+                                     index=sentences
+                                     )
+        return [
+            self.encode_one_sentence(sentence, tf_idf_matrix)
+            for sentence in sentences
+        ]
+
+
+class UniversalSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 
     def __init__(self):
-        law2vec = LanguageModel.LAW2VEC.fetch()
-        law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
-        self.word2vec = KeyedVectors.load_word2vec_format(law2vec_path, encoding="utf-8")
+        model_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
+        self.model = hub.load(model_url)
 
-    def encode(self, textual_units: list) -> list:
-        return [self.word2vec[word] for word in textual_units if (word in self.word2vec)]
-
-
-class UniversalSentenceEmbeddingModel(EmbeddingModelABC):
-
-    def __init__(self):
-        self.model
-
-    def encode(self, textual_units: list) -> list:
-        pass
+    def encode(self, sentences: List[str]) -> List:
+        return self.model(sentences).numpy().tolist()
 
 
-class DocumentEmbeddingModel(EmbeddingModelABC):
+class EurLexBertSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 
-    def encode(self, textual_units: list) -> list:
+    def encode(self, sentences: List[str]) -> List:
         pass

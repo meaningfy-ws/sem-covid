@@ -5,9 +5,32 @@
 # Software: PyCharm
 from abc import ABC, abstractmethod
 
+from typing import List
 
-class EmbeddingModelABC(ABC):
+
+class TokenizerModelABC(ABC):
 
     @abstractmethod
-    def encode(self, textual_units: list) -> list:
+    def tokenize(self, text: str) -> List[str]:
+        raise NotImplementedError
+
+
+class WordEmbeddingModelABC(ABC):
+
+    @abstractmethod
+    def encode(self, tokens: List[str]) -> List:
+        raise NotImplementedError
+
+
+class SentenceEmbeddingModelABC(ABC):
+
+    @abstractmethod
+    def encode(self, sentences: List[str]) -> List:
+        raise NotImplementedError
+
+
+class DocumentEmbeddingModelABC(ABC):
+
+    @abstractmethod
+    def encode(self, documents: List[str]) -> List:
         raise NotImplementedError
