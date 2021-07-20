@@ -156,8 +156,7 @@ class PWDBConfig:
         return VaultAndEnvConfigResolver.config_resolve()
 
     @property
-    def PWDB_DATASET_PATH(self) -> str:
-        warnings.warn("only ElasticSearch Data shall be used", DeprecationWarning)
+    def PWDB_DATASET_LOCAL_FILENAME(self) -> str:
         return VaultAndEnvConfigResolver.config_resolve()
 
     @property

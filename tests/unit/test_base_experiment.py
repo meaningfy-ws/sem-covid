@@ -1,4 +1,4 @@
-from sem_covid.services.base_experiment import BaseExperiment
+from sem_covid.services.ml_pipelines.base_experiment import BaseExperiment
 
 
 class FakeBaseExperiment(BaseExperiment):

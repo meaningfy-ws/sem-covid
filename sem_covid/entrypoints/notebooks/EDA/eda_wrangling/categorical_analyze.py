@@ -29,6 +29,6 @@ def fast_categorical_analyze(data: pd.DataFrame, categorical_columns: list, data
             plot_bar_chart(rel_obs, column_name).show()
             plot_pie_chart(rel_obs, column_name).show()
         except:
-            logger.error('Observation on [', column_name, '] fault!')
-            logger.error('Check if column [', column_name, '] have compatible type!')
+            logger.error(f'Observation on {column_name} fault!')
+            logger.error(f'Check if column {column_name} have compatible type!')
     return results

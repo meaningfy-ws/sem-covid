@@ -8,7 +8,7 @@
     This module aims to define a basic pipeline for enriching a dataset
      based on drive classification models and stored in MlFlow.
 """
-
+import numpy as np
 import pandas as pd
 from gensim.models import KeyedVectors
 from pycaret.classification import predict_model
@@ -16,6 +16,7 @@ from sklearn import preprocessing
 
 from sem_covid.services.data_registry import LanguageModel
 from sem_covid.services.model_registry import ClassificationModel
+from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import StoreRegistry
 
 EMBEDDING_COLUMN = "embeddings"
@@ -38,7 +39,7 @@ class BasePrepareDatasetPipeline:
         - storing features in FeatureStore
     """
 
-    def __init__(self, ds_es_index: str, features_store_name: str):
+    def __init__(self, textual_columns: list, ds_es_index: str, features_store_name: str):
         """
             Initialization of parameters for the basic prepare pipeline
         :param ds_es_index: the index of a dataset in ElasticSearch
@@ -49,6 +50,7 @@ class BasePrepareDatasetPipeline:
         self.features_store_name = features_store_name
         self.dataset = pd.DataFrame()
         self.l2v_dict = {}
+        self.textual_columns = textual_columns
 
     def load_dataset(self):
         """
@@ -71,13 +73,18 @@ class BasePrepareDatasetPipeline:
         """
             This step is dedicated to preparing textual data from the dataset
         """
-        raise NotImplementedError
+        text_df = pd.DataFrame(self.dataset[self.textual_columns])
+        text_df.replace(np.nan, '', regex=True, inplace=True)
+        text_df[EMBEDDING_COLUMN] = text_df.agg(' '.join, axis=1)
+        text_df.reset_index(drop=True, inplace=True)
+        self.dataset = text_df
 
     def create_embeddings(self):
         """
             This step is dedicated to calculating word embeddings
         """
-        raise NotImplementedError
+        self.dataset[EMBEDDING_COLUMN] = self.dataset[EMBEDDING_COLUMN].apply(
+            lambda x: text_to_vector(x, self.l2v_dict))
 
     def store_features(self):
         """
