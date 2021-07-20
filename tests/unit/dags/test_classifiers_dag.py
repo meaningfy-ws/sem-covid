@@ -19,7 +19,3 @@ def test_pwdb_random_forest_experiment_dag_has_two_tasks_and_order(airflow_dag_b
     assert 'feature_engineering' in upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.downstream_list))
     assert not downstream_task_ids
-
-
-def test_sample_dag(airflow_dag_bag):
-    print(airflow_dag_bag.dags)
