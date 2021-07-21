@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
-# Date    : 20.07.2021 
-# Author  : Stratulat Ștefan
-# File    : test_word_embedding_model.py
-# Software: PyCharm
-from gensim.models import KeyedVectors
+#!/usr/bin/python3
+
+# test_word_embedding_model.py
+# Date:  21.07.2021
+# Author: Stratulat Ștefan
+# Email: stefan.stratulat1997@gmail.com
 
 from sem_covid.adapters.abstract_model import WordEmbeddingModelABC
 from sem_covid.adapters.embedding_models import Word2VecEmbeddingModel

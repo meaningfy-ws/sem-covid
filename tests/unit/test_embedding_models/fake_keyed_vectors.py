@@ -1,8 +1,10 @@
-# -*- coding: utf-8 -*-
-# Date    : 20.07.2021 
-# Author  : Stratulat Ștefan
-# File    : fake_keyed_vectors.py
-# Software: PyCharm
+#!/usr/bin/python3
+
+# fake_keyed_vectors.py
+# Date:  21.07.2021
+# Author: Stratulat Ștefan
+# Email: stefan.stratulat1997@gmail.com
+
 import numpy as np
 from gensim.models import KeyedVectors
 

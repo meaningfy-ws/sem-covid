@@ -1,8 +1,10 @@
-# -*- coding: utf-8 -*-
-# Date    : 20.07.2021 
-# Author  : Stratulat Ștefan
-# File    : embedding_models.py
-# Software: PyCharm
+#!/usr/bin/python3
+
+# embedding_models.py
+# Date:  21.07.2021
+# Author: Stratulat Ștefan
+# Email: stefan.stratulat1997@gmail.com
+
 from typing import List
 
 import numpy as np

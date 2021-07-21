@@ -1,8 +1,10 @@
-# -*- coding: utf-8 -*-
-# Date    : 20.07.2021 
-# Author  : Stratulat Ștefan
-# File    : abstract_model.py
-# Software: PyCharm
+#!/usr/bin/python3
+
+# abstract_model.py
+# Date:  21.07.2021
+# Author: Stratulat Ștefan
+# Email: stefan.stratulat1997@gmail.com
+
 from abc import ABC, abstractmethod
 
 from typing import List
