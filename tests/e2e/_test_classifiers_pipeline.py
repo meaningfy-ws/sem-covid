@@ -1,6 +1,6 @@
 import os
 
-from sem_covid.entrypoints.ml_dags.classifiers_dag import classifiers_pipeline_dag
+from sem_covid.entrypoints.ml_dags.classifiers_dags import classifiers_pipeline_dag
 
 
 def test_pwdb_classifiers_feature_engineering():

@@ -18,8 +18,11 @@ from sem_covid import config
 from sem_covid.adapters.abstract_store import IndexStoreABC, FeatureStoreABC, ObjectStoreABC, TripleStoreABC
 from sem_covid.adapters.es_feature_store import ESFeatureStore
 from sem_covid.adapters.es_index_store import ESIndexStore
+from sem_covid.adapters.minio_feature_store import MinioFeatureStore
 from sem_covid.adapters.minio_object_store import MinioObjectStore
 from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
+
+MINIO_FEATURE_BUCKET = 'fs-bucket'
 
 
 class StoreRegistryABC(abc.ABC):
@@ -37,6 +40,10 @@ class StoreRegistryABC(abc.ABC):
         raise NotImplementedError
 
     @staticmethod
+    def minio_feature_store() -> FeatureStoreABC:
+        raise NotImplementedError
+
+    @staticmethod
     def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:
         raise NotImplementedError
 
@@ -45,6 +52,14 @@ class StoreRegistry(StoreRegistryABC):
     """
         This class performs the register of preconfigured stores.
     """
+
+    @staticmethod
+    def minio_feature_store() -> FeatureStoreABC:
+        """
+             This method returns a preconfigured MinioFeatureStore.
+         :return:
+         """
+        return MinioFeatureStore(object_store=StoreRegistry.minio_object_store(MINIO_FEATURE_BUCKET))
 
     @staticmethod
     def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:

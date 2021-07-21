@@ -16,6 +16,7 @@ from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import StoreRegistry
+import tensorflow_hub as hub
 
 BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
               'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
@@ -53,6 +54,8 @@ TRAIN_CLASSES = ['businesses', 'citizens', 'workers', 'category', 'subcategory',
 
 EMBEDDING_COLUMN = "embeddings"
 
+TEXTUAL_DATA = "textual_data"
+
 
 class FeatureEngineering:
     """
@@ -63,6 +66,7 @@ class FeatureEngineering:
         - validation of the dataset
         - loading the language model
         - performing the necessary transformations on the dataset
+        - calculating document embeddings
         - storing the feature set
     """
 
@@ -99,7 +103,7 @@ class FeatureEngineering:
         law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
         self.l2v_dict = KeyedVectors.load_word2vec_format(law2vec_path, encoding="utf-8")
 
-    def transform_data(self):
+    def transform_textual_data(self):
         """
             This step applies the necessary transformations to the dataset.
         :return:
@@ -119,8 +123,14 @@ class FeatureEngineering:
             pwdb_dataframe[column] = le.transform(pwdb_dataframe[column])
         self.df = pwdb_dataframe
         self.df = self.df.set_index(self.df.columns[0])
-        self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
-        self.df[EMBEDDING_COLUMN] = self.df[EMBEDDING_COLUMN].apply(lambda x: text_to_vector(x, self.l2v_dict))
+        self.df[TEXTUAL_DATA] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
+
+    def compute_document_embeddings(self):
+        """
+            This step aims to calculate document embeddings based on textual data.
+        :return:
+        """
+        self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_DATA].apply(lambda x: text_to_vector(x, self.l2v_dict))
 
     def store_feature_set(self):
         """
@@ -142,8 +152,24 @@ class FeatureEngineering:
         self.load_data()
         self.validate_data()
         self.load_language_model()
-        self.transform_data()
+        self.transform_textual_data()
+        self.compute_document_embeddings()
         self.store_feature_set()
+
+
+class FeatureEngineeringBERT(FeatureEngineering):
+
+    def __init__(self, feature_store_name: str):
+        super().__init__(feature_store_name)
+        self.model = None
+
+    def load_language_model(self):
+        model_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
+        self.model = hub.load(model_url)
+
+    def compute_document_embeddings(self):
+        assert self.model is not None
+        self.df[EMBEDDING_COLUMN] = pd.Series(self.model(self.df[TEXTUAL_DATA]).numpy().tolist(), index=self.df.index)
 
 
 class ModelTraining:

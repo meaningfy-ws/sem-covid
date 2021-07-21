@@ -1,4 +1,4 @@
-from sem_covid.entrypoints.ml_dags.classifiers_dag import classifier_dag_name
+from sem_covid.entrypoints.ml_dags.classifiers_dags import classifier_dag_name
 
 
 def test_pwdb_random_forest_experiment_dag_has_two_tasks_and_order(airflow_dag_bag):
