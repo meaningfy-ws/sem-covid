@@ -21,7 +21,7 @@ def test_basic_tokenizer_model():
 
 
 def test_spacy_tokenizer_model():
-    tokenizer = SpacyTokenizerModel(spacy_nlp=nlp)
+    tokenizer = SpacyTokenizerModel(spacy_tokenizer=nlp.tokenizer)
     assert isinstance(tokenizer, TokenizerModelABC)
     text = "Don't throw morphemes away"
     tokens = tokenizer.tokenize(text)
