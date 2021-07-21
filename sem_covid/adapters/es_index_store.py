@@ -158,3 +158,12 @@ class ESIndexStore(IndexStoreABC):
             query['_source'] = False
 
         return query
+
+    def create_index(self, index_name: str, index_mappings: dict, exist_ok=True):
+        """
+        Create an index if it doesn't exist already
+        """
+        list_of_exiting_indices = self._es.indices.get_alias("*")
+        if index_name not in list_of_exiting_indices:
+            return self._es.indices.create(index=index_name, body=index_mappings, ignore=400)
+

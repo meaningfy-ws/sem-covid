@@ -12,7 +12,7 @@ from gensim.test.utils import common_texts
 
 from sem_covid.config_resolver import EnvConfigResolver
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
-from sem_covid.services.pwdb_base_experiment import PWDBBaseExperiment
+from sem_covid.services.ml_pipelines.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 from tests.unit.test_store.fake_storage import FakeIndexStore
 

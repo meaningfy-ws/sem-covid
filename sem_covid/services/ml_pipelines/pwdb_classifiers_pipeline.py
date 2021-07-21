@@ -16,6 +16,7 @@ from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import StoreRegistry
+import tensorflow_hub as hub
 
 BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
               'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
@@ -36,20 +37,24 @@ WORKERS = {'Cross-border commuters', 'Disabled workers', 'Employees in standard 
 TEXTUAL_COLUMNS = ['title', 'background_info_description', 'content_of_measure_description',
                    'use_of_measure_description', 'involvement_of_social_partners_description']
 
+LIST_COLUMNS = ['target_groups', 'actors', 'funding']
+
 SIMPLE_CLASS_COLUMNS = ['category', 'subcategory', 'type_of_measure', 'target_groups',
-                        'actors']
+                        'actors', 'funding']
 
 CLASS_TEXTUAL_LABELS = ['category_label', 'subcategory_label', 'type_of_measure_label', 'target_groups_label',
-                        'actors_label']
+                        'actors_label', 'funding_label']
 
 CLASS_COLUMNS = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure', 'target_groups',
-                 'actors', 'category_label', 'subcategory_label', 'type_of_measure_label', 'target_groups_label',
-                 'actors_label']
+                 'actors', 'funding', 'category_label', 'subcategory_label', 'type_of_measure_label',
+                 'target_groups_label', 'actors_label', 'funding_label']
 
 TRAIN_CLASSES = ['businesses', 'citizens', 'workers', 'category', 'subcategory', 'type_of_measure', 'target_groups',
-                 'actors']
+                 'actors', 'funding']
 
 EMBEDDING_COLUMN = "embeddings"
+
+TEXTUAL_DATA = "textual_data"
 
 
 class FeatureEngineering:
@@ -61,6 +66,7 @@ class FeatureEngineering:
         - validation of the dataset
         - loading the language model
         - performing the necessary transformations on the dataset
+        - calculating document embeddings
         - storing the feature set
     """
 
@@ -97,7 +103,7 @@ class FeatureEngineering:
         law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
         self.l2v_dict = KeyedVectors.load_word2vec_format(law2vec_path, encoding="utf-8")
 
-    def transform_data(self):
+    def transform_textual_data(self):
         """
             This step applies the necessary transformations to the dataset.
         :return:
@@ -108,18 +114,23 @@ class FeatureEngineering:
         for column, class_set in new_columns.items():
             pwdb_dataframe[column] = refactored_pwdb_df.apply(lambda x: any(item in class_set for item in x))
             pwdb_dataframe[column].replace({True: 1, False: 0}, inplace=True)
-        pwdb_dataframe['target_groups'] = pwdb_dataframe['target_groups'].apply(lambda x: "|".join(x))
-        pwdb_dataframe['actors'] = pwdb_dataframe['actors'].apply(lambda x: "|".join(x))
+        for list_column in LIST_COLUMNS:
+            pwdb_dataframe[list_column] = pwdb_dataframe[list_column].apply(lambda x: "|".join(x))
         for column in SIMPLE_CLASS_COLUMNS:
             le = preprocessing.LabelEncoder()
             le.fit(pwdb_dataframe[column])
             pwdb_dataframe[column + '_label'] = pwdb_dataframe[column]
             pwdb_dataframe[column] = le.transform(pwdb_dataframe[column])
-
         self.df = pwdb_dataframe
         self.df = self.df.set_index(self.df.columns[0])
-        self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
-        self.df[EMBEDDING_COLUMN] = self.df[EMBEDDING_COLUMN].apply(lambda x: text_to_vector(x, self.l2v_dict))
+        self.df[TEXTUAL_DATA] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
+
+    def compute_document_embeddings(self):
+        """
+            This step aims to calculate document embeddings based on textual data.
+        :return:
+        """
+        self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_DATA].apply(lambda x: text_to_vector(x, self.l2v_dict))
 
     def store_feature_set(self):
         """
@@ -141,8 +152,24 @@ class FeatureEngineering:
         self.load_data()
         self.validate_data()
         self.load_language_model()
-        self.transform_data()
+        self.transform_textual_data()
+        self.compute_document_embeddings()
         self.store_feature_set()
+
+
+class FeatureEngineeringBERT(FeatureEngineering):
+
+    def __init__(self, feature_store_name: str):
+        super().__init__(feature_store_name)
+        self.model = None
+
+    def load_language_model(self):
+        model_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
+        self.model = hub.load(model_url)
+
+    def compute_document_embeddings(self):
+        assert self.model is not None
+        self.df[EMBEDDING_COLUMN] = pd.Series(self.model(self.df[TEXTUAL_DATA]).numpy().tolist(), index=self.df.index)
 
 
 class ModelTraining:
@@ -214,31 +241,3 @@ class ModelTraining:
         self.validate_feature_set()
         mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
         self.train_model()
-
-
-PWDB_FEATURE_STORE_NAME = 'fs_pwdb'
-
-
-class PWDBClassifiers:
-    """
-        This class aims to unify the feature engineering pipeline and the model training pipeline.
-    """
-
-    @classmethod
-    def feature_engineering(cls):
-        """
-            This method executes feature engineering pipeline with preset parameters.
-        :return:
-        """
-        worker = FeatureEngineering(feature_store_name=PWDB_FEATURE_STORE_NAME)
-        worker.execute()
-
-    @classmethod
-    def model_training(cls):
-        """
-            This method executes training model pipeline with preset parameters.
-        :return:
-        """
-        worker = ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
-                               experiment_name="PyCaret_pwdb")
-        worker.execute()

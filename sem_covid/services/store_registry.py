@@ -10,58 +10,61 @@
 """
 
 import abc
-from abc import abstractmethod
 
 from es_pandas import es_pandas
 from minio import Minio
 
 from sem_covid import config
 from sem_covid.adapters.abstract_store import IndexStoreABC, FeatureStoreABC, ObjectStoreABC, TripleStoreABC
-
 from sem_covid.adapters.es_feature_store import ESFeatureStore
 from sem_covid.adapters.es_index_store import ESIndexStore
+from sem_covid.adapters.minio_feature_store import MinioFeatureStore
 from sem_covid.adapters.minio_object_store import MinioObjectStore
 from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
 
-
-class StoreRegistryManagerABC(abc.ABC):
-
-    @abstractmethod
-    def es_index_store(self) -> IndexStoreABC:
-        pass
-
-    @abstractmethod
-    def minio_object_store(self, minio_bucket: str) -> ObjectStoreABC:
-        pass
-
-    @abstractmethod
-    def es_feature_store(self) -> FeatureStoreABC:
-        pass
-
-    @abstractmethod
-    def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
-        pass
+MINIO_FEATURE_BUCKET = 'fs-bucket'
 
 
-class StoreRegistryManager(StoreRegistryManagerABC):
+class StoreRegistryABC(abc.ABC):
 
-    def es_index_store(self) -> IndexStoreABC:
-        pass
+    @staticmethod
+    def es_index_store() -> IndexStoreABC:
+        raise NotImplementedError
 
-    def minio_object_store(self, minio_bucket: str) -> ObjectStoreABC:
-        pass
+    @staticmethod
+    def minio_object_store(minio_bucket: str) -> ObjectStoreABC:
+        raise NotImplementedError
 
-    def es_feature_store(self) -> FeatureStoreABC:
-        pass
+    @staticmethod
+    def es_feature_store() -> FeatureStoreABC:
+        raise NotImplementedError
 
-    def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
-        return SPARQLTripleStore(endpoint_url=endpoint_url)
+    @staticmethod
+    def minio_feature_store() -> FeatureStoreABC:
+        raise NotImplementedError
 
-      
-class StoreRegistry:
+    @staticmethod
+    def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:
+        raise NotImplementedError
+
+
+class StoreRegistry(StoreRegistryABC):
     """
         This class performs the register of preconfigured stores.
     """
+
+    @staticmethod
+    def minio_feature_store() -> FeatureStoreABC:
+        """
+             This method returns a preconfigured MinioFeatureStore.
+         :return:
+         """
+        return MinioFeatureStore(object_store=StoreRegistry.minio_object_store(MINIO_FEATURE_BUCKET))
+
+    @staticmethod
+    def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:
+        return SPARQLTripleStore(endpoint_url=endpoint_url)
+
     @staticmethod
     def es_index_store() -> IndexStoreABC:
         """
@@ -74,7 +77,7 @@ class StoreRegistry:
         return ESIndexStore(es_pandas_client)
 
     @staticmethod
-    def minio_object_store(minio_bucket: str) ->ObjectStoreABC:
+    def minio_object_store(minio_bucket: str) -> ObjectStoreABC:
         """
             This method returns a preconfigured MinioObjectStore.
         :param minio_bucket: the name of the desired bucket.
@@ -93,6 +96,3 @@ class StoreRegistry:
         :return:
         """
         return ESFeatureStore(StoreRegistry.es_index_store())
-
-
-StoreRegistry = StoreRegistryManager()

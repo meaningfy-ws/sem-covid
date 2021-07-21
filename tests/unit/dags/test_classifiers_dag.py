@@ -1,15 +1,8 @@
-#!/usr/bin/python3
-
-# Date:  11/06/2021
-# Author: Eugeniu Costetchi
-# Email: costezki.eugen@gmail.com
-
-
-from sem_covid.entrypoints.ml_dags.pwdb_random_forest_experiment_dag import DAG_NAME
+from sem_covid.entrypoints.ml_dags.classifiers_dags import classifier_dag_name
 
 
 def test_pwdb_random_forest_experiment_dag_has_two_tasks_and_order(airflow_dag_bag):
-    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    dag = airflow_dag_bag.get_dag(dag_id=classifier_dag_name)
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))

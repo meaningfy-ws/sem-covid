@@ -194,15 +194,15 @@
       },
       "dates_document": {
         "type": "date",
-        "format": "YYYY-MM-dd"
+        "format": "YYYY-MM-DD"
       },
       "dates_created": {
         "type": "date",
-        "format": "YYYY-MM-dd"
+        "format": "YYYY-MM-DD"
       },
       "legal_dates_entry_into_force": {
         "type": "date",
-        "format": "YYYY-MM-dd"
+        "format": "YYYY-MM-DD"
       },
       "legal_dates_signature": {
         "type": "text",
@@ -264,6 +264,12 @@
             "ignore_above": 256
           }
         }
+      },
+      "eu_cellar_core": {
+        "type": "boolean"
+      },
+      "eu_cellar_extended": {
+        "type": "boolean"
       }
     }
   }

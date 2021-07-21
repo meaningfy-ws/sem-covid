@@ -3,9 +3,11 @@ scipy
 gensim
 numpy
 pandas
-sklearn
+scikit-learn
 spacy
 statsmodels
 clean-text
 python-Levenshtein
 pycaret
+tensorflow-hub
+tensorflow
