@@ -58,14 +58,14 @@ class AverageSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 
 class TfIdfSentenceEmbeddingModel(AverageSentenceEmbeddingModel):
 
-    def encode_one_sentence(self, sentence: str, tf_idf_matrix: pd.DataFrame):
+    def encode_one_sentence(self, sentence: str, tf_idf_row: pd.Series):
         tokens = self._tokenizer.tokenize(sentence)
         embeddings = self._word_embedding_model.encode(tokens)
         sum_weights = 0
         results = []
         for index in range(0, len(tokens)):
-            if tokens[index] in tf_idf_matrix.columns:
-                weight = tf_idf_matrix.loc[sentence][tokens[index]]
+            if tokens[index] in tf_idf_row.index:
+                weight = tf_idf_row[tokens[index]]
                 sum_weights += weight
                 results += [(weight * np.array(embeddings[index])).tolist()]
 
@@ -74,12 +74,11 @@ class TfIdfSentenceEmbeddingModel(AverageSentenceEmbeddingModel):
     def encode(self, sentences: List[str]) -> List:
         tf_idf_vectors = TfidfVectorizer()
         tf_idf_matrix = pd.DataFrame(tf_idf_vectors.fit_transform(sentences).todense().tolist(),
-                                     columns=tf_idf_vectors.get_feature_names(),
-                                     index=sentences
+                                     columns=tf_idf_vectors.get_feature_names()
                                      )
         return [
-            self.encode_one_sentence(sentence, tf_idf_matrix)
-            for sentence in sentences
+            self.encode_one_sentence(sentences[index], tf_idf_matrix.iloc[index])
+            for index in range(0,len(sentences))
         ]
 
 
@@ -94,6 +93,9 @@ class UniversalSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 
 
 class EurLexBertSentenceEmbeddingModel(SentenceEmbeddingModelABC):
+
+    def __init__(self):
+        pass
 
     def encode(self, sentences: List[str]) -> List:
         pass

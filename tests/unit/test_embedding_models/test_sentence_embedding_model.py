@@ -64,4 +64,5 @@ def test_tf_idf_sentence_embedding_model():
 
 
 def test_universal_sentence_embedding_model():
-    UniversalSentenceEmbeddingModel
+    universal_sentence_embedding_model = UniversalSentenceEmbeddingModel()
+    check_sentence_embedding_model(universal_sentence_embedding_model)
