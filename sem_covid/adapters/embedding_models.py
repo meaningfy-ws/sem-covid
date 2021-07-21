@@ -15,6 +15,8 @@ import tensorflow_hub as hub
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+from transformers import AutoTokenizer, AutoModel, BertModel, BertTokenizerFast
+
 
 class BasicTokenizerModel(TokenizerModelABC):
 
@@ -78,7 +80,7 @@ class TfIdfSentenceEmbeddingModel(AverageSentenceEmbeddingModel):
                                      )
         return [
             self.encode_one_sentence(sentences[index], tf_idf_matrix.iloc[index])
-            for index in range(0,len(sentences))
+            for index in range(0, len(sentences))
         ]
 
 
@@ -95,7 +97,11 @@ class UniversalSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 class EurLexBertSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 
     def __init__(self):
-        pass
+        self.tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-uncased-eurlex")
+        self.model = AutoModel.from_pretrained("nlpaueb/bert-base-uncased-eurlex")
 
     def encode(self, sentences: List[str]) -> List:
-        pass
+        return [
+            self.model(**self.tokenizer(sentence, return_tensors='pt'))['pooler_output'].detach().numpy()[0].tolist()
+            for sentence in sentences
+        ]

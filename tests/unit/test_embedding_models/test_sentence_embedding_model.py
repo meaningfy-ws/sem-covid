@@ -3,9 +3,11 @@
 # Author  : Stratulat Ștefan
 # File    : test_sentence_embedding_model.py
 # Software: PyCharm
-from sem_covid.adapters.abstract_model import SentenceEmbeddingModelABC, WordEmbeddingModelABC, TokenizerModelABC
-from sem_covid.adapters.embedding_models import AverageSentenceEmbeddingModel, Word2VecEmbeddingModel, \
-    BasicTokenizerModel, SpacyTokenizerModel, TfIdfSentenceEmbeddingModel, UniversalSentenceEmbeddingModel
+from sem_covid.adapters.abstract_model import SentenceEmbeddingModelABC, WordEmbeddingModelABC
+from sem_covid.adapters.embedding_models import (AverageSentenceEmbeddingModel, Word2VecEmbeddingModel,
+                                                 BasicTokenizerModel, SpacyTokenizerModel, TfIdfSentenceEmbeddingModel,
+                                                 UniversalSentenceEmbeddingModel,
+                                                 EurLexBertSentenceEmbeddingModel)
 from tests.unit.conftest import nlp
 from tests.unit.test_embedding_models.fake_keyed_vectors import FakeKeyedVectors
 
@@ -66,3 +68,8 @@ def test_tf_idf_sentence_embedding_model():
 def test_universal_sentence_embedding_model():
     universal_sentence_embedding_model = UniversalSentenceEmbeddingModel()
     check_sentence_embedding_model(universal_sentence_embedding_model)
+
+
+def test_eur_lex_bert_sentence_embedding_model():
+    eur_lex_bert_sentence_embedding_model = EurLexBertSentenceEmbeddingModel()
+    check_sentence_embedding_model(eur_lex_bert_sentence_embedding_model)
