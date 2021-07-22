@@ -2,9 +2,8 @@ SHELL=/bin/bash -o pipefail
 BUILD_PRINT = \e[1;34mSTEP: \e[0m
 
 #-----------------------------------------------------------------------------
-# Basic commands
+# Install commands
 #-----------------------------------------------------------------------------
-
 
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
@@ -13,38 +12,26 @@ install:
 	@ python -m spacy download en_core_web_sm
 
 install-dev: install
+	@ echo "$(BUILD_PRINT)Installing the requirements"
+	@ pip install --upgrade pip
 	@ pip install -r requirements-dev.txt
+	@ python -m spacy download en_core_web_sm
 
-poetry-export:
-	@ echo "$(BUILD_PRINT)Exporting the requirements.txt"
-	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
-	@ poetry export --dev -f requirements.txt --output requirements-dev.txt --without-hashes
 
-start-splash:
-	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
+#-----------------------------------------------------------------------------
+# Testing commands
+#-----------------------------------------------------------------------------
 
-stop-splash:
-	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
-
-all: install
-
-test-unit:
+test:
 	@ echo "$(BUILD_PRINT)Running the unit tests"
 	@ py.test --ignore=tests/tests/e2e -s --html=report.html --self-contained-html
 
-test-e2e:
-	@ echo "$(BUILD_PRINT)Running the end to end tests"
-	@ py.test --ignore=tests/tests/unit -s --html=report.html --self-contained-html
-
-tests:
+test-all:
 	@ echo "$(BUILD_PRINT)Running all tests"
 	@ py.test -s --html=report.html --self-contained-html
-
-
-
+#-----------------------------------------------------------------------------
 # Getting secrets from Vault
+#-----------------------------------------------------------------------------
 
 # Testing whether an env variable is set or not
 guard-%:
@@ -85,6 +72,25 @@ vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
 	@ vault kv get -format="json" mfy/vault | jq -r ".data.data" > tmp8.json
 	@ jq -s '.[0] * .[1] * .[2] * .[3] * .[4] * .[5] * .[6] * .[7]' tmp*.json> variables.json
 	@ rm tmp*.json
+
+vault_secret_fetch: vault_secret_to_dotenv vault_secret_to_json
+
+#-----------------------------------------------------------------------------
+# Test/Dev environment make targets
+#-----------------------------------------------------------------------------
+
+poetry-export:
+	@ echo "$(BUILD_PRINT)Exporting the requirements.txt"
+	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
+	@ poetry export --dev -f requirements.txt --output requirements-dev.txt --without-hashes
+
+start-splash:
+	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
+	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
+
+stop-splash:
+	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
+	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
 
 start_airflow:
 	@ echo "$(BUILD_PRINT)Starting the Airflow scheduler and webserver"

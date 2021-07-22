@@ -2,7 +2,7 @@
 name = "sem-covid"
 version = "0.1.0"
 description = ""
-authors = ["costezki <costezki.eugen@gmail.com>"]
+authors = ["Meaningfy <eugen@meaningfy.ws>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
