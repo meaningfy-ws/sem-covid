@@ -2,7 +2,7 @@ SHELL=/bin/bash -o pipefail
 BUILD_PRINT = \e[1;34mSTEP: \e[0m
 
 #-----------------------------------------------------------------------------
-# Install commands
+# PIP Install commands
 #-----------------------------------------------------------------------------
 
 install:
@@ -16,6 +16,21 @@ install-dev: install
 	@ pip install --upgrade pip
 	@ pip install -r requirements-dev.txt
 	@ python -m spacy download en_core_web_sm
+
+#-----------------------------------------------------------------------------
+# Poetry Install commands
+#-----------------------------------------------------------------------------
+
+poetry-install:
+	@ echo "$(BUILD_PRINT)Installing the requirements.txt"
+	@ pip install --upgrade pip
+	@ poetry install
+	@ python -m spacy download en_core_web_sm
+
+poetry-export:
+	@ echo "$(BUILD_PRINT)Exporting the requirements.txt"
+	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
+	@ poetry export --dev -f requirements.txt --output requirements-dev.txt --without-hashes
 
 
 #-----------------------------------------------------------------------------
@@ -78,12 +93,6 @@ vault_secret_fetch: vault_secret_to_dotenv vault_secret_to_json
 #-----------------------------------------------------------------------------
 # Test/Dev environment make targets
 #-----------------------------------------------------------------------------
-
-poetry-export:
-	@ echo "$(BUILD_PRINT)Exporting the requirements.txt"
-	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
-	@ poetry export --dev -f requirements.txt --output requirements-dev.txt --without-hashes
-
 start-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
 	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
