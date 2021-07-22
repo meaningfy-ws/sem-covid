@@ -44,6 +44,10 @@ test:
 test-all:
 	@ echo "$(BUILD_PRINT)Running all tests"
 	@ py.test -s --html=report.html --self-contained-html
+
+lint:
+	@ echo "$(BUILD_PRINT)Looking for dragons in your code ...."
+	@ pylint sem_covid
 #-----------------------------------------------------------------------------
 # Getting secrets from Vault
 #-----------------------------------------------------------------------------
@@ -121,8 +125,3 @@ start_airflow:
 stop_airflow:
 	@ echo "$(BUILD_PRINT)Stopping the Airflow scheduler and webserver"
 	@ pkill -f airflow
-
-
-lint:
-	@ echo "$(BUILD_PRINT)Looking for dragons in your code ...."
-	@ pylint sem_covid
