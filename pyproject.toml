@@ -31,6 +31,7 @@ python-Levenshtein = "^0.12.2"
 clean-text = "^0.4.0"
 statsmodels = "^0.12.2"
 py-singleton = "^1.0.0"
+transformers = "^4.9.0"
 
 
 [tool.poetry.dev-dependencies]
