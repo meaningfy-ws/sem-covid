@@ -1,7 +1,6 @@
-# Jupyter development dependencies
 progressbar2
 tqdm
 jupyterlab
 plotly
 wordcloud
-pyldavis
+pyldavis # issues with tensorflow
