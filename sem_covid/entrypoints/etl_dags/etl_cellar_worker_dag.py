@@ -22,6 +22,8 @@ from sem_covid.services.store_registry import StoreRegistryABC
 
 logger = logging.getLogger(__name__)
 
+CELLAR_TEXTUAL_COLUMNS = ['title']
+
 
 def download_manifestation_file(source_location: str, minio: ObjectStoreABC, source_type: str = "html",
                                 prefix: str = RESOURCE_FILE_PREFIX) -> str:
@@ -273,8 +275,9 @@ class CellarDagWorker(BaseETLPipeline):
         json_content = json.loads(minio.get_object(object_name=json_file_name))
         json_content = [json_content] if isinstance(json_content, dict) else json_content
         document_df = pd.DataFrame.from_records(data=json_content, index=[document_id])
-        for textual_column in TEXTUAL_COLUMNS:
-            document_df[textual_column] = document_df[textual_column].apply(lambda column_item: " ".join(column_item))
+        for textual_column in CELLAR_TEXTUAL_COLUMNS:
+            document_df[textual_column] = document_df[textual_column].apply(
+                lambda column_item: " ".join(column_item) if column_item else None)
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
@@ -283,8 +286,4 @@ class CellarDagWorker(BaseETLPipeline):
 
         es_adapter.put_dataframe(index_name=self.index_name,
                                  content=document_df)
-        # es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME,
-        #                  document_id=json_file_name.split("/")[1],
-        #                  document_body=json_content)
-
         logger.info(f'Sent {json_file_name} file(s) to ElasticSearch successfully.')
