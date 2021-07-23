@@ -273,6 +273,8 @@ class CellarDagWorker(BaseETLPipeline):
         json_content = json.loads(minio.get_object(object_name=json_file_name))
         json_content = [json_content] if isinstance(json_content, dict) else json_content
         document_df = pd.DataFrame.from_records(data=json_content, index=[document_id])
+        for textual_column in TEXTUAL_COLUMNS:
+            document_df[textual_column] = document_df[textual_column].apply(lambda column_item: " ".join(column_item))
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
