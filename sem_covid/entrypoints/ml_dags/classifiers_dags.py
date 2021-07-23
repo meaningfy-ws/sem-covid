@@ -36,10 +36,10 @@ classifiers_pipeline_dag = ClassifiersPipelineDag(
     model_training_pipeline=ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
                                           experiment_name=EXPERIMENT_NAME))
 
-dag = DagFactory(
-    dag_pipeline=classifiers_pipeline_dag, dag_name=classifier_dag_name).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag = DagFactory(
+#     dag_pipeline=classifiers_pipeline_dag, dag_name=classifier_dag_name).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
 
 # Universal-Sentence-Encoding classifiers
 
@@ -56,8 +56,8 @@ classifiers_universal_sentence_encoding_pipeline_dag = ClassifiersPipelineDag(
     model_training_pipeline=ModelTraining(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME,
                                           experiment_name=BERT_EXPERIMENT_NAME))
 
-dag_universal_sentence_encoding = DagFactory(
-    dag_pipeline=classifiers_universal_sentence_encoding_pipeline_dag,
-    dag_name=classifier_universal_sentence_encoding_dag_name).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_universal_sentence_encoding = DagFactory(
+#     dag_pipeline=classifiers_universal_sentence_encoding_pipeline_dag,
+#     dag_name=classifier_universal_sentence_encoding_dag_name).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)

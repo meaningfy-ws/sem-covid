@@ -34,10 +34,10 @@ enrich_eu_cellar_pipeline = EnrichPipelineDag(textual_columns=EU_CELLAR_TEXT_COL
                                               features_store_name='fs_eu_cellar'
                                               )
 
-dag_enrich_eu_cellar = DagFactory(
-    dag_pipeline=enrich_eu_cellar_pipeline, dag_name=EU_CELLAR_ENRICH_DAG_NAME).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_enrich_eu_cellar = DagFactory(
+#     dag_pipeline=enrich_eu_cellar_pipeline, dag_name=EU_CELLAR_ENRICH_DAG_NAME).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
 
 # Eu-timeline enrich DAG
 
@@ -51,10 +51,10 @@ enrich_eu_timeline_pipeline = EnrichPipelineDag(textual_columns=EU_TIMELINE_TEXT
                                                 features_store_name='fs_eu_timeline'
                                                 )
 
-dag_enrich_eu_timeline = DagFactory(
-    dag_pipeline=enrich_eu_timeline_pipeline, dag_name=EU_TIMELINE_ENRICH_DAG_NAME).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_enrich_eu_timeline = DagFactory(
+#     dag_pipeline=enrich_eu_timeline_pipeline, dag_name=EU_TIMELINE_ENRICH_DAG_NAME).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
 
 # Ireland-timeline enrich DAG
 
@@ -68,7 +68,7 @@ enrich_ireland_timeline_pipeline = EnrichPipelineDag(textual_columns=IRELAND_TIM
                                                      features_store_name='fs_ireland_timeline'
                                                      )
 
-dag_enrich_ireland_timeline = DagFactory(
-    dag_pipeline=enrich_ireland_timeline_pipeline, dag_name=IRELAND_TIMELINE_ENRICH_DAG_NAME).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_enrich_ireland_timeline = DagFactory(
+#     dag_pipeline=enrich_ireland_timeline_pipeline, dag_name=IRELAND_TIMELINE_ENRICH_DAG_NAME).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
