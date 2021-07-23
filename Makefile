@@ -8,13 +8,13 @@ BUILD_PRINT = \e[1;34mSTEP: \e[0m
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
-	@ pip install -r requirements-prod.txt
+	@ pip install -r requirements-dev.txt
 	@ python -m spacy download en_core_web_sm
 
-install-dev: install
+install-prod:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
-	@ pip install -r requirements-dev.txt
+	@ pip install -r requirements-prod.txt
 	@ python -m spacy download en_core_web_sm
 
 #-----------------------------------------------------------------------------
