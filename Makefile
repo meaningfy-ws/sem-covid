@@ -2,55 +2,55 @@ SHELL=/bin/bash -o pipefail
 BUILD_PRINT = \e[1;34mSTEP: \e[0m
 
 #-----------------------------------------------------------------------------
-# Basic commands
+# PIP Install commands
 #-----------------------------------------------------------------------------
-
 
 install:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
-	@ echo "$(BUILD_PRINT)Warning: this setup depends on the Airflow 2.1 constraints. If you upgrade the Airflow version, make sure to adjust the constraint file reference."
 	@ pip install --upgrade pip
-	@ pip install "apache-airflow==2.1.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2-1/constraints-no-providers-3.8.txt"
-#	@ pip install -r requirements.txt --use-deprecated legacy-resolver --constraint "https://github.com/apache/airflow/blob/constraints-2-1/constraints-no-providers-3.8.txt"
-	@ pip install -r requirements.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2-1/constraints-no-providers-3.8.txt"
+	@ pip install -r requirements-prod.txt
 	@ python -m spacy download en_core_web_sm
 
-start-splash:
-	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
+install-dev: install
+	@ echo "$(BUILD_PRINT)Installing the requirements"
+	@ pip install --upgrade pip
+	@ pip install -r requirements-dev.txt
+	@ python -m spacy download en_core_web_sm
 
-stop-splash:
-	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
+#-----------------------------------------------------------------------------
+# Poetry Install commands
+#-----------------------------------------------------------------------------
 
-# TODO refactor
-create-indexes:
-	@ echo "$(BUILD_PRINT)Creating indexes and their respective mappings"
-	@ curl -X PUT "http://localhost:9200/ds_pwdb" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_pwdb_mapping.json
-	@ curl -X PUT "http://localhost:9200/ds_eu_cellar" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_eu_cellar_mapping.json
-	@ curl -X PUT "http://localhost:9200/ds_legal_initiatives" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_legal_initiatives_mapping.json
-	@ curl -X PUT "http://localhost:9200/ds_treaties" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_treaties_mapping.json
-	@ curl -X PUT "http://localhost:9200/ds_eu_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_eu_timeline_mapping.json
-	@ curl -X PUT "http://localhost:9200/ds_ireland_timeline" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_ireland_timeline_mapping.json
-	@ curl -X PUT "http://localhost:9200/ds_finreg_cellar" -H 'Content-Type: application/json' -H "Authorization: Basic ZWxhc3RpYzpjaGFuZ2VtZQ==" -d @resources/elasticsearch/ds_eu_cellar_mapping.json
+poetry-install:
+	@ echo "$(BUILD_PRINT)Installing the requirements.txt"
+	@ pip install --upgrade pip
+	@ poetry install
+	@ python -m spacy download en_core_web_sm
 
-all: install
+poetry-export:
+	@ echo "$(BUILD_PRINT)Exporting the requirements.txt"
+	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
+	@ poetry export --dev -f requirements.txt --output requirements-dev.txt --without-hashes
 
-test-unit:
+
+#-----------------------------------------------------------------------------
+# Testing commands
+#-----------------------------------------------------------------------------
+
+test:
 	@ echo "$(BUILD_PRINT)Running the unit tests"
 	@ py.test --ignore=tests/tests/e2e -s --html=report.html --self-contained-html
 
-test-e2e:
-	@ echo "$(BUILD_PRINT)Running the end to end tests"
-	@ py.test --ignore=tests/tests/unit -s --html=report.html --self-contained-html
-
-tests:
+test-all:
 	@ echo "$(BUILD_PRINT)Running all tests"
 	@ py.test -s --html=report.html --self-contained-html
 
-
-
+lint:
+	@ echo "$(BUILD_PRINT)Looking for dragons in your code ...."
+	@ pylint sem_covid
+#-----------------------------------------------------------------------------
 # Getting secrets from Vault
+#-----------------------------------------------------------------------------
 
 # Testing whether an env variable is set or not
 guard-%:
@@ -92,6 +92,19 @@ vault_secret_to_json: guard-VAULT_ADDR guard-VAULT_TOKEN vault-installed
 	@ jq -s '.[0] * .[1] * .[2] * .[3] * .[4] * .[5] * .[6] * .[7]' tmp*.json> variables.json
 	@ rm tmp*.json
 
+vault_secret_fetch: vault_secret_to_dotenv vault_secret_to_json
+
+#-----------------------------------------------------------------------------
+# Test/Dev environment make targets
+#-----------------------------------------------------------------------------
+start-splash:
+	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
+	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
+
+stop-splash:
+	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
+	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
+
 start_airflow:
 	@ echo "$(BUILD_PRINT)Starting the Airflow scheduler and webserver"
 	@ export AIRFLOW_HOME=`pwd` ; \
@@ -112,8 +125,3 @@ start_airflow:
 stop_airflow:
 	@ echo "$(BUILD_PRINT)Stopping the Airflow scheduler and webserver"
 	@ pkill -f airflow
-
-
-lint:
-	@ echo "$(BUILD_PRINT)Looking for dragons in your code ...."
-	@ pylint sem_covid

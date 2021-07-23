@@ -1,5 +1,0 @@
-# User interface with Flask dependencies
-
-gunicorn #==19.10.0 # https://gunicorn.org/
-Flask #==1.1.4  # https://flask.palletsprojects.com/en/1.1.x/e
-Flask-Wtf  # https://flask-wtf.readthedocs.io/en/stable/
