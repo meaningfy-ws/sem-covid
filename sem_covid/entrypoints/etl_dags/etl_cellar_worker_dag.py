@@ -237,7 +237,7 @@ class CellarDagWorker(BaseETLPipeline):
         # merge results from Tika into a unified work content
         logger.info(f"List of content dictionaries = {len(file_content_dictionaries)}")
         # The content is concatenated into a single string and we have a single language
-        json_content[CONTENT_KEY] = ". ".join([dictionary[CONTENT_KEY] for dictionary in file_content_dictionaries])
+        json_content[CONTENT_KEY] = ". ".join([dictionary[CONTENT_KEY] for dictionary in file_content_dictionaries if dictionary[CONTENT_KEY]])
         languages = set([dictionary[CONTENT_LANGUAGE] for dictionary in file_content_dictionaries])
         json_content[CONTENT_LANGUAGE] = languages.pop() if languages else None
 
