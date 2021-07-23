@@ -5,18 +5,18 @@
 # Software: PyCharm
 
 
-import logging
-
 from sem_covid import config
 from sem_covid.adapters.dag.dag_factory import DagFactory
 from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.ml_dags.enrich_pipeline_dag import EnrichPipelineDag
-import airflow
 
-logger = logging.getLogger(__name__)
-logger.debug(f"This line is important for DAG discovery because the *airflow module* "
-             f"shall be imported here. Otherwise it does not discover DAGs in this "
-             f"module. Airflow version {airflow.__version__}")
+# TODO: the dependency to PyCaret breaks the zen harmony
+# import logging
+# import airflow
+# logger = logging.getLogger(__name__)
+# logger.debug(f"This line is important for DAG discovery because the *airflow module* "
+#              f"shall be imported here. Otherwise it does not discover DAGs in this "
+#              f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
 MAJOR = 2
