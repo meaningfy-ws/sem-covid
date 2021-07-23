@@ -9,6 +9,7 @@
 """
 
 import mlflow
+import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import preprocessing
 from sem_covid import config
