@@ -15,7 +15,10 @@ apache-airflow = {extras = ["celery"], version = "^2.1.2"}
 elasticsearch = "^7.13.4"
 minio = "^7.1.0"
 mlflow = "^1.19.0"
-boto3 = "^1.18.5"
+# boto3 = "^1.18.5"
+boto3 = "^1.17.107" # from https://raw.githubusercontent.com/apache/airflow/constraints-2.1.2/constraints-3.8.txt
+boto = "^2.49.0" # from https://raw.githubusercontent.com/apache/airflow/constraints-2.1.2/constraints-3.8.txt
+botocore= "^1.20.107" # from https://raw.githubusercontent.com/apache/airflow/constraints-2.1.2/constraints-3.8.txt
 SPARQLWrapper = "^1.8.5"
 es-pandas = "^0.0.21"
 Scrapy = "^2.5.0"
@@ -32,7 +35,7 @@ clean-text = "^0.4.0"
 statsmodels = "^0.12.2"
 py-singleton = "^1.0.0"
 transformers = "^4.9.0"
-
+progressbar2 = "^3.53.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
@@ -44,10 +47,9 @@ great-expectations = "^0.13.23"
 coverage = "^5.5"
 tabulate = "^0.8.9"
 pylint = "^2.9.5"
-progressbar2 = "^3.53.1"
-tqdm = "^4.61.2"
 jupyterlab = "^3.0.16"
 plotly = "^5.1.0"
+tqdm = "^4.61.2"
 wordcloud = "^1.8.1"
 
 [build-system]
