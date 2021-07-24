@@ -1,0 +1,29 @@
+# This set of requirements is maintained in paralel to that in poetry
+# Thsi si specifically aimed at being installe in teh airflow Docker image and cover as much DAG functionality as possible
+# Currently some ML libraries are conflicting and excluded from this list (into the blacklist.txt), hopefully this will be solevd in the future
+apache-airflow
+apache-airflow[celery]
+great-expectations
+elasticsearch
+minio
+SPARQLWrapper
+es-pandas
+Scrapy
+scrapy-splash
+tika
+jq
+rdflib
+python-dotenv
+requests
+hvac
+py-singleton
+progressbar2
+
+# ml
+spacy
+gensim
+scikit-learn
+python-Levenshtein
+clean-text
+statsmodels
+transformers
