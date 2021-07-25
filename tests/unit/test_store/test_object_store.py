@@ -24,7 +24,6 @@ def test_fake_object_store():
     obj_store.put_object(object_name="B2", content=object_content)
     obj_store.put_object(object_name="B3", content=object_content)
     objects = obj_store.list_objects(object_name_prefix="B")
-    print(objects)
     for key, value in obj_store._objects.items():
         assert 'B' in key
         assert object_content in value

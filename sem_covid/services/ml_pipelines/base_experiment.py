@@ -109,7 +109,6 @@ class BaseExperiment(ABC):
         updated_default_args_copy = {**DEFAULTS_DAG_ARGS.copy(), **dag_args.get('default_args', {})}
         dag_args['default_args'] = updated_default_args_copy
         dag_id = f"mlx_{self.__class__.__name__}_{self.version if self.version else '0.0.1'}"
-        print(dag_id)
         dag = DAG(dag_id=dag_id, **dag_args)
         with dag:
             # instantiate a PythonOperator for each ml stage

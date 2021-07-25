@@ -16,7 +16,6 @@ def scenario_context() -> dict:
 
 @pytest.fixture(scope="module")
 def elasticsearch_client():
-    print("Instantiating ElasticSearch client...")
     elasticsearch = Elasticsearch([config.ELASTICSEARCH_PROTOCOL + '://' +
                                    config.ELASTICSEARCH_USERNAME + ':' +
                                    config.ELASTICSEARCH_PASSWORD + '@' +

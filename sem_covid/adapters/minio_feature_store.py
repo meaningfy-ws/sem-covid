@@ -1,8 +1,10 @@
-# -*- coding: utf-8 -*-
-# Date    : 20.07.2021 
-# Author  : Stratulat Ștefan
-# File    : minio_feature_store.py.py
-# Software: PyCharm
+#!/usr/bin/python3
+
+# minio_feature_store.py
+# Date:  21.07.2021
+# Author: Stratulat Ștefan
+# Email: stefan.stratulat1997@gmail.com
+
 import pandas as pd
 
 from sem_covid.adapters.abstract_store import FeatureStoreABC, ObjectStoreABC

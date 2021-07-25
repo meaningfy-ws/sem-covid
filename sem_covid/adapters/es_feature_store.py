@@ -1,3 +1,4 @@
+
 from sem_covid.adapters.abstract_store import FeatureStoreABC, IndexStoreABC
 import pandas as pd
 
