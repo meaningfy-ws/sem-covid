@@ -1,18 +1,22 @@
-version: "3.7"
+version: "3"
 
 services:
-  law-fetcher-ui:
-    container_name: law-fetcher-ui
-    build:
-      context: ..
-      dockerfile: ./docker/ui/Dockerfile
-    volumes:
-      - ..:/usr/src/app
+#  law-fetcher-ui:
+#    container_name: law-fetcher-ui
+#    build:
+#      context: ..
+#      dockerfile: ./docker/ui/Dockerfile
+#    volumes:
+#      - ..:/usr/src/app
+#    ports:
+#      - ${LAW_FETCHER_UI_PORT}:${LAW_FETCHER_UI_PORT}
+#    env_file: .env
+#    networks:
+#      - mydefault
+  splash:
+    image: scrapinghub/splash
     ports:
-      - ${LAW_FETCHER_UI_PORT}:${LAW_FETCHER_UI_PORT}
-    env_file: .env
-    networks:
-      - mydefault
+      - ${SPLASH_EXTERNAL_PORT}:8050
 
 networks:
   mydefault:
