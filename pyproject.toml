@@ -18,7 +18,7 @@ mlflow = "^1.19.0"
 boto3 = "^1.18.5"
 SPARQLWrapper = "^1.8.5"
 es-pandas = "^0.0.21"
-Scrapy = "^2.5.0"
+Scrapy = "2.5.0"
 scrapy-splash = "^0.7.2"
 tika = "^1.24"
 jq = "^1.1.3"
@@ -33,7 +33,8 @@ statsmodels = "^0.12.2"
 py-singleton = "^1.0.0"
 transformers = "^4.9.0"
 progressbar = "^2.5"
-
+networkx
+d3graph
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"

@@ -1,4 +1,4 @@
-from sem_covid import config
+# from sem_covid import config
 
 BOT_NAME = 'sem_covid_crawlers'
 
@@ -15,7 +15,7 @@ DEFAULT_REQUEST_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
 }
 
-SPLASH_URL = config.SPLASH_URL
+SPLASH_URL = "http://localhost:5080" #config.SPLASH_URL
 
 SPIDER_MIDDLEWARES = {
     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,

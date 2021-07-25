@@ -29,7 +29,7 @@ poetry-install:
 
 poetry-export:
 	@ echo "$(BUILD_PRINT)Exporting the requirements.txt"
-	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
+#	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
 	@ poetry export --dev -f requirements.txt --output requirements-dev.txt --without-hashes
 
 
@@ -99,11 +99,11 @@ vault_secret_fetch: vault_secret_to_dotenv vault_secret_to_json
 #-----------------------------------------------------------------------------
 start-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
+	@ docker-compose --file docker/docker-compose.yml --env-file ../.env up -d splash
 
 stop-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
+	@ docker-compose --file docker/docker-compose.yml --env-file ../.env stop splash
 
 start_airflow:
 	@ echo "$(BUILD_PRINT)Starting the Airflow scheduler and webserver"
@@ -125,3 +125,17 @@ start_airflow:
 stop_airflow:
 	@ echo "$(BUILD_PRINT)Stopping the Airflow scheduler and webserver"
 	@ pkill -f airflow
+
+
+build-airflow-image:
+	@ echo "$(BUILD_PRINT)Building airflow image"
+	@ cp requirements-airflow.txt docker/airflow
+	@ docker build --tag airflow2_meaningfy:latest docker/airflow
+	@ rm docker/airflow/requirements-airflow.txt
+
+
+scrapy-eu-timeline-local:
+	@ echo "$(BUILD_PRINT)Staring the local version of eu-timeline crawler"
+	@ export PYTHONPATH=${CURDIR}; \
+		cd sem_covid/services/crawlers/ ; \
+		scrapy crawl eu-timeline
