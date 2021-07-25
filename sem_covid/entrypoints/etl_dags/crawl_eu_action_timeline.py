@@ -31,7 +31,7 @@ def extract_settings_from_module(module):
     return settings
 
 
-def start_crawler():
+def start_crawler_callable():
     logger.info('start crawler')
     minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
@@ -42,7 +42,7 @@ def start_crawler():
     process.start()
 
 
-def extract_document_content_with_tika():
+def extract_document_content_with_tika_callable():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.EU_TIMELINE_JSON}')
     minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
@@ -74,7 +74,7 @@ def extract_document_content_with_tika():
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
-def upload_processed_documents_to_elasticsearch():
+def upload_processed_documents_to_elasticsearch_callable():
     es_adapter = StoreRegistry.es_index_store()
 
     logger.info(
@@ -111,24 +111,19 @@ default_args = {
     "retry_delay": timedelta(minutes=500)
 }
 
-dag = DAG(
-    DAG_NAME,
-    default_args=default_args,
-    schedule_interval="@once",
-    max_active_runs=1,
-    concurrency=1
-)
+with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=1) as dag:
+    start_crawler = PythonOperator(
+        task_id=f'Crawl',
+        python_callable=start_crawler_callable, retries=1, dag=dag)
 
-start_crawler = PythonOperator(
-    task_id=f'Crawl',
-    python_callable=start_crawler, retries=1, dag=dag)
+    extract_content_with_tika_task = PythonOperator(
+        task_id=f'Tika',
+        python_callable=extract_document_content_with_tika_callable, retries=1, dag=dag)
 
-extract_content_with_tika_task = PythonOperator(
-    task_id=f'Tika',
-    python_callable=extract_document_content_with_tika, retries=1, dag=dag)
+    upload_to_elastic_task = PythonOperator(
+        task_id=f'Elasticsearch',
+        python_callable=upload_processed_documents_to_elasticsearch_callable, retries=1, dag=dag)
 
-upload_to_elastic_task = PythonOperator(
-    task_id=f'Elasticsearch',
-    python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
+    start_crawler >> extract_content_with_tika_task >> upload_to_elastic_task
 
-start_crawler >> extract_content_with_tika_task >> upload_to_elastic_task
+start_crawler_callable()

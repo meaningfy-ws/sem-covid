@@ -2,12 +2,8 @@
 
 BOT_NAME = 'sem_covid_crawlers'
 
-# SPIDER_MODULES = ['sem_covid.services.crawlers.scrapy_crawlers.spiders']
-# NEWSPIDER_MODULE = 'sem_covid.services.crawlers.scrapy_crawlers.spiders'
-
-SPIDER_MODULES = ['scrapy_crawlers.spiders']
-NEWSPIDER_MODULE = 'scrapy_crawlers.spiders'
-
+SPIDER_MODULES = ['sem_covid.services.crawlers.scrapy_crawlers.spiders']
+NEWSPIDER_MODULE = 'sem_covid.services.crawlers.scrapy_crawlers.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'scrapy_crawlers (+http://www.yourdomain.com)'

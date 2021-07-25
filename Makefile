@@ -132,3 +132,10 @@ build-airflow-image:
 	@ cp requirements-airflow.txt docker/airflow
 	@ docker build --tag airflow2_meaningfy:latest docker/airflow
 	@ rm docker/airflow/requirements-airflow.txt
+
+
+scrapy-eu-timeline-local:
+	@ echo "$(BUILD_PRINT)Staring the local version of eu-timeline crawler"
+	@ export PYTHONPATH=${CURDIR}; \
+		cd sem_covid/services/crawlers/ ; \
+		scrapy crawl eu-timeline

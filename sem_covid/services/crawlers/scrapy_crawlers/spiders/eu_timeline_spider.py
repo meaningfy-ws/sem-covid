@@ -5,6 +5,7 @@ import pandas as pd
 from sem_covid import config
 from scrapy_splash import SplashRequest
 
+from sem_covid.services.store_registry import StoreRegistry
 from ..items import EuActionTimelineItem
 
 
@@ -13,7 +14,9 @@ class EUTimelineSpider(scrapy.Spider):
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
     presscorner_base_url = 'https://ec.europa.eu/commission/presscorner/detail'
 
-    def __init__(self, filename, *args, storage_adapter=None, **kwargs):
+    def __init__(self, *args, filename: str = config.EU_TIMELINE_JSON,
+                 storage_adapter=StoreRegistry().minio_object_store(config.EU_TIMELINE_BUCKET_NAME),
+                 **kwargs):
         super().__init__(*args, **kwargs)
         self.storage_adapter = storage_adapter
         self.filename = filename
