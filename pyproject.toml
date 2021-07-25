@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "sem-covid"
+version = "0.1.0"
+description = ""
+authors = ["Meaningfy <eugen@meaningfy.ws>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+gensim = "^4.0.1"
+scikit-learn = "^0.24.2"
+spacy = "^3.1.1"
+tensorflow-hub = "^0.12.0"
+tensorflow = "^2.5.0"
+apache-airflow = {extras = ["celery"], version = "^2.1.2"}
+elasticsearch = "^7.13.4"
+minio = "^7.1.0"
+mlflow = "^1.19.0"
+boto3 = "^1.18.5"
+SPARQLWrapper = "^1.8.5"
+es-pandas = "^0.0.21"
+Scrapy = "2.5.0"
+scrapy-splash = "^0.7.2"
+tika = "^1.24"
+jq = "^1.1.3"
+rdflib = "^6.0.0"
+python-dotenv = "^0.18.0"
+requests = "^2.26.0"
+hvac = "^0.11.0"
+gunicorn = "^20.1.0"
+python-Levenshtein = "^0.12.2"
+clean-text = "^0.4.0"
+statsmodels = "^0.12.2"
+py-singleton = "^1.0.0"
+transformers = "^4.9.0"
+progressbar = "^2.5"
+networkx
+d3graph
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-bdd = "^4.1.0"
+pytest-cov = "^2.12.1"
+pytest-html = "^3.1.1"
+pytest-mock = "^3.6.1"
+great-expectations = "^0.13.23"
+coverage = "^5.5"
+tabulate = "^0.8.9"
+pylint = "^2.9.5"
+progressbar2 = "^3.53.1"
+tqdm = "^4.61.2"
+jupyterlab = "^3.0.16"
+plotly = "^5.1.0"
+wordcloud = "^1.8.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

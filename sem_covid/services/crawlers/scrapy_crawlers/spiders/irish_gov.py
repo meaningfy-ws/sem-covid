@@ -9,22 +9,25 @@ import scrapy
 from scrapy.selector import SelectorList
 from scrapy_splash import SplashRequest
 
+from sem_covid import config
+from sem_covid.services.store_registry import StoreRegistry
 from . import COVID_EUROVOC_SEARCH_TERMS
 from ..items import IrishGovItem
 
 
 class IrishGovCrawler(scrapy.Spider):
-
     # TODO: check why parse method is not implemented and not needed?
 
-    name = 'irish-gov'
+    name = 'ireland-timeline'
     base_url = 'https://www.gov.ie'
     url = 'https://www.gov.ie/en/publications/?q={term}&sort_by=published_date'
     earliest_date = date(2020, 2, 1)
     date_format = '%d %B %Y'
     date_format_re = r'\d{1,2} \w+ \d{4}'
 
-    def __init__(self, filename, text_searches: List[str] = COVID_EUROVOC_SEARCH_TERMS, *args, storage_adapter=None,
+    def __init__(self, *args, filename: str = config.IRELAND_TIMELINE_JSON,
+                 text_searches: List[str] = COVID_EUROVOC_SEARCH_TERMS,
+                 storage_adapter=StoreRegistry().minio_object_store(config.IRELAND_TIMELINE_BUCKET_NAME),
                  **kwargs):
         super().__init__(*args, **kwargs)
         self.text_searches = text_searches
