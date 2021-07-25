@@ -32,6 +32,8 @@ statsmodels = "^0.12.2"
 py-singleton = "^1.0.0"
 transformers = "^4.9.0"
 progressbar2 = "^3.53.1"
+d3graph = "^0.1.12"
+networkx = "^2.6.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
