@@ -11,7 +11,7 @@ from tika import parser
 import sem_covid.services.crawlers.scrapy_crawlers.settings as crawler_config
 from sem_covid import config
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 VERSION = '0.2.5'
 DATASET_NAME = "eu_timeline"
@@ -33,7 +33,7 @@ def extract_settings_from_module(module):
 
 def start_crawler_callable():
     logger.info('start crawler')
-    minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     settings = extract_settings_from_module(crawler_config)
     settings['config.SPLASH_URL'] = config.SPLASH_URL
@@ -45,7 +45,7 @@ def start_crawler_callable():
 def extract_document_content_with_tika_callable():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.EU_TIMELINE_JSON}')
-    minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
     json_content = loads(minio.get_object(config.EU_TIMELINE_JSON))
     eu_action_timeline_items_count = len(json_content)
 
@@ -75,13 +75,13 @@ def extract_document_content_with_tika_callable():
 
 
 def upload_processed_documents_to_elasticsearch_callable():
-    es_adapter = StoreRegistry.es_index_store()
+    es_adapter = store_registry.es_index_store()
 
     logger.info(
         f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
 
     object_count = 0

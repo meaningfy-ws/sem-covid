@@ -9,7 +9,7 @@
     Simplified access is achieved through a preconfigured stores register.
 """
 
-import abc
+from abc import ABC, abstractmethod
 
 from es_pandas import es_pandas
 from minio import Minio
@@ -25,26 +25,26 @@ from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
 MINIO_FEATURE_BUCKET = 'fs-bucket'
 
 
-class StoreRegistryABC(abc.ABC):
+class StoreRegistryABC(ABC):
 
-    @staticmethod
-    def es_index_store() -> IndexStoreABC:
+    @abstractmethod
+    def es_index_store(self) -> IndexStoreABC:
         raise NotImplementedError
 
-    @staticmethod
-    def minio_object_store(minio_bucket: str) -> ObjectStoreABC:
+    @abstractmethod
+    def minio_object_store(self, minio_bucket: str) -> ObjectStoreABC:
         raise NotImplementedError
 
-    @staticmethod
-    def es_feature_store() -> FeatureStoreABC:
+    @abstractmethod
+    def es_feature_store(self) -> FeatureStoreABC:
         raise NotImplementedError
 
-    @staticmethod
-    def minio_feature_store() -> FeatureStoreABC:
+    @abstractmethod
+    def minio_feature_store(self) -> FeatureStoreABC:
         raise NotImplementedError
 
-    @staticmethod
-    def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:
+    @abstractmethod
+    def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
         raise NotImplementedError
 
 
@@ -53,20 +53,17 @@ class StoreRegistry(StoreRegistryABC):
         This class performs the register of preconfigured stores.
     """
 
-    @staticmethod
-    def minio_feature_store() -> FeatureStoreABC:
+    def minio_feature_store(self) -> FeatureStoreABC:
         """
              This method returns a preconfigured MinioFeatureStore.
          :return:
          """
-        return MinioFeatureStore(object_store=StoreRegistry.minio_object_store(MINIO_FEATURE_BUCKET))
+        return MinioFeatureStore(object_store=store_registry.minio_object_store(MINIO_FEATURE_BUCKET))
 
-    @staticmethod
-    def sparql_triple_store(endpoint_url: str) -> TripleStoreABC:
+    def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
         return SPARQLTripleStore(endpoint_url=endpoint_url)
 
-    @staticmethod
-    def es_index_store() -> IndexStoreABC:
+    def es_index_store(self) -> IndexStoreABC:
         """
             This method returns a preconfigured ESIndexStore.
         :return:
@@ -76,8 +73,7 @@ class StoreRegistry(StoreRegistryABC):
                                      port=config.ELASTICSEARCH_PORT, http_compress=True)
         return ESIndexStore(es_pandas_client)
 
-    @staticmethod
-    def minio_object_store(minio_bucket: str) -> ObjectStoreABC:
+    def minio_object_store(self, minio_bucket: str) -> ObjectStoreABC:
         """
             This method returns a preconfigured MinioObjectStore.
         :param minio_bucket: the name of the desired bucket.
@@ -89,10 +85,12 @@ class StoreRegistry(StoreRegistryABC):
                              secure=False)
         return MinioObjectStore(minio_bucket, minio_client)
 
-    @staticmethod
-    def es_feature_store() -> FeatureStoreABC:
+    def es_feature_store(self) -> FeatureStoreABC:
         """
             This method returns a preconfigured ESFeatureStore.
         :return:
         """
-        return ESFeatureStore(StoreRegistry.es_index_store())
+        return ESFeatureStore(store_registry.es_index_store())
+
+
+store_registry = StoreRegistry()
