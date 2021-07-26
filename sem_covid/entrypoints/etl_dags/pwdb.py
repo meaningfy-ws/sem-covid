@@ -44,12 +44,8 @@ def download_and_split_callable():
 
     uploaded_bytes = minio.put_object(config.PWDB_DATASET_LOCAL_FILENAME,
                                       json.dumps(transformed_json).encode('utf-8'))
-    logger.info(
-        'Uploaded ' + str(uploaded_bytes)
-                    + ' bytes to bucket ['
-                    + config.PWDB_COVID19_BUCKET_NAME
-                    + '] at '
-                    + config.MINIO_URL)
+    logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + config.PWDB_COVID19_BUCKET_NAME
+                + '] at ' + config.MINIO_URL)
 
     list_count = len(transformed_json)
     current_item = 0
