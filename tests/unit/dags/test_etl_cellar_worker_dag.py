@@ -15,7 +15,7 @@ from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFI
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import download_manifestation_file, CellarDagWorker, \
     get_work_uri_from_context, content_cleanup_tool, select_relevant_files_from_temp_folder, \
     download_zip_objects_to_temp_folder, get_text_from_selected_files
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 from tests.unit.dags.conftest import AttrDict
 from tests.unit.test_store.fake_storage import FakeObjectStore
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry

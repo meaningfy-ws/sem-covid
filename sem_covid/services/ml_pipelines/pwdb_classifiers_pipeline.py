@@ -16,7 +16,7 @@ from sem_covid import config
 # from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 import tensorflow_hub as hub
 
 BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
@@ -140,7 +140,7 @@ class FeatureEngineering:
         """
         input_features_name = self.feature_store_name + "_x"
         output_features_name = self.feature_store_name + "_y"
-        feature_store = StoreRegistry.es_feature_store()
+        feature_store = store_registry.es_feature_store()
         matrix_df = pd.DataFrame(list(self.df[EMBEDDING_COLUMN].values))
         feature_store.put_features(features_name=input_features_name, content=matrix_df)
         feature_store.put_features(features_name=output_features_name, content=pd.DataFrame(self.df[CLASS_COLUMNS]))
@@ -196,7 +196,7 @@ class ModelTraining:
             This step loads the feature set.
         :return:
         """
-        feature_store = StoreRegistry.es_feature_store()
+        feature_store = store_registry.es_feature_store()
         input_features_name = self.feature_store_name + "_x"
         output_features_name = self.feature_store_name + "_y"
         self.dataset_x = feature_store.get_features(input_features_name)

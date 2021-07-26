@@ -2,11 +2,11 @@ import pathlib
 
 from sem_covid.adapters.data_source import IndexTabularDataSource
 from sem_covid.services.data_registry import Dataset
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 
 def dump_dataset(dataset: IndexTabularDataSource):
-    minio = StoreRegistry.minio_object_store("tmp-elasticsearch-dump")
+    minio = store_registry.minio_object_store("tmp-elasticsearch-dump")
     local_path = pathlib.Path(__file__).resolve().parents[1] / 'elasticsearch_dump'
     dataset.dump_local(local_path)
     dataset.dump_remote(minio)
