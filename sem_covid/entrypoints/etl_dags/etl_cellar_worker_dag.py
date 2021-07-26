@@ -22,6 +22,8 @@ from sem_covid.services.store_registry import StoreRegistryABC
 
 logger = logging.getLogger(__name__)
 
+CELLAR_TEXTUAL_COLUMNS = ['title']
+
 
 def download_manifestation_file(source_location: str, minio: ObjectStoreABC, source_type: str = "html",
                                 prefix: str = RESOURCE_FILE_PREFIX) -> str:
@@ -143,7 +145,7 @@ class CellarDagWorker(BaseETLPipeline):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
 
         work_document_filename = DOCUMENTS_PREFIX + hashlib.sha256(work.encode('utf-8')).hexdigest() + ".json"
-        work_document_content = json.loads(minio.get_object(object_name=work_document_filename).decode('utf-8'))
+        work_document_content = json.loads(minio.get_object(object_name=work_document_filename))
 
         assert isinstance(work_document_content, dict), "The work document must be a dictionary"
 
@@ -218,12 +220,11 @@ class CellarDagWorker(BaseETLPipeline):
         # logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
 
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
-        json_content = json.loads(minio.get_object(json_file_name))
+        json_content = json.loads(minio.get_object(object_name=json_file_name))
         logger.info(f'Loaded the work document JSON from {json_file_name}')
 
         # download archives and unzip them
-        # list_of_downloaded_manifestation_object_paths = [RESOURCE_FILE_PREFIX + content_path for content_path in
-        #                                                  json_content[CONTENT_PATH_KEY]]
+
         list_of_downloaded_manifestation_object_paths = json_content[CONTENT_PATH_KEY] if json_content[
             CONTENT_PATH_KEY] else []
         temp_folder = download_zip_objects_to_temp_folder(object_paths=list_of_downloaded_manifestation_object_paths,
@@ -236,16 +237,10 @@ class CellarDagWorker(BaseETLPipeline):
         # merge results from Tika into a unified work content
         logger.info(f"List of content dictionaries = {len(file_content_dictionaries)}")
         # The content is concatenated into a single string and we have a single language
-        json_content[CONTENT_KEY] = ". ".join([dictionary[CONTENT_KEY] for dictionary in file_content_dictionaries])
+        json_content[CONTENT_KEY] = ". ".join([dictionary[CONTENT_KEY] for dictionary in file_content_dictionaries if dictionary[CONTENT_KEY]])
         languages = set([dictionary[CONTENT_LANGUAGE] for dictionary in file_content_dictionaries])
         json_content[CONTENT_LANGUAGE] = languages.pop() if languages else None
 
-        # for dictionary in file_content_dictionaries:
-        #     json_content[CONTENT_KEY].append(dictionary[CONTENT_KEY])
-        #     json_content[CONTENT_LANGUAGE].append(dictionary[CONTENT_LANGUAGE])
-        # json_content[CONTENT_KEY] = " ".join(json_content[CONTENT_KEY])
-        # json_content[CONTENT_LANGUAGE] = str(json_content[CONTENT_LANGUAGE][0])
-        # update work document in object store
         minio.put_object(json_file_name, json.dumps(json_content))
 
     def transform_content(self, *args, **context):
@@ -257,7 +252,7 @@ class CellarDagWorker(BaseETLPipeline):
 
         logger.info(f'Cleaning up the the fragment {json_file_name}')
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
-        document = json.loads(minio.get_object(json_file_name).decode('utf-8'))
+        document = json.loads(minio.get_object(object_name=json_file_name))
 
         if CONTENT_KEY in document and document[CONTENT_KEY]:
             document[CONTENT_KEY] = content_cleanup_tool(document[CONTENT_KEY])
@@ -277,9 +272,12 @@ class CellarDagWorker(BaseETLPipeline):
         minio = self.store_registry.minio_object_store(self.minio_bucket_name)
 
         logger.info(f'Processing Work {work} from json_file {json_file_name}')
-        json_content = json.loads(minio.get_object(json_file_name).decode('utf-8'))
+        json_content = json.loads(minio.get_object(object_name=json_file_name))
         json_content = [json_content] if isinstance(json_content, dict) else json_content
         document_df = pd.DataFrame.from_records(data=json_content, index=[document_id])
+        for textual_column in CELLAR_TEXTUAL_COLUMNS:
+            document_df[textual_column] = document_df[textual_column].apply(
+                lambda column_item: " ".join(column_item) if column_item else None)
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 
@@ -288,8 +286,4 @@ class CellarDagWorker(BaseETLPipeline):
 
         es_adapter.put_dataframe(index_name=self.index_name,
                                  content=document_df)
-        # es_adapter.index(index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME,
-        #                  document_id=json_file_name.split("/")[1],
-        #                  document_body=json_content)
-
         logger.info(f'Sent {json_file_name} file(s) to ElasticSearch successfully.')

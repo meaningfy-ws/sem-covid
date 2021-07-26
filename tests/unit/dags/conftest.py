@@ -25,6 +25,12 @@ TEST_DATA_FOLDER = pathlib.Path(__file__).parent.parent.parent / "test_data"
 logger = logging.getLogger(__name__)
 
 
+class AttrDict(dict):
+    def __init__(self, *args, **kwargs):
+        super(AttrDict, self).__init__(*args, **kwargs)
+        self.__dict__ = self
+
+
 class FakeSPARQL(SPARQLWrapper):
     def __init__(self):
         self._query = 'No query'

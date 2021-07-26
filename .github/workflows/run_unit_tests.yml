@@ -36,7 +36,7 @@ jobs:
         envkey_VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
         envkey_VAULT_ADDR: ${{ secrets.VAULT_ADDR }}
     - name: Run unit tests
-      run: make test-unit
+      run: make test
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:

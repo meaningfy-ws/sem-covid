@@ -11,7 +11,7 @@ from tika import parser
 import sem_covid.services.crawlers.scrapy_crawlers.settings as crawler_config
 from sem_covid import config
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 VERSION = '0.2.5'
 DATASET_NAME = "eu_timeline"
@@ -31,9 +31,9 @@ def extract_settings_from_module(module):
     return settings
 
 
-def start_crawler():
+def start_crawler_callable():
     logger.info('start crawler')
-    minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     settings = extract_settings_from_module(crawler_config)
     settings['config.SPLASH_URL'] = config.SPLASH_URL
@@ -42,10 +42,10 @@ def start_crawler():
     process.start()
 
 
-def extract_document_content_with_tika():
+def extract_document_content_with_tika_callable():
     logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
     logger.info(f'Loading resource files from {config.EU_TIMELINE_JSON}')
-    minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
     json_content = loads(minio.get_object(config.EU_TIMELINE_JSON))
     eu_action_timeline_items_count = len(json_content)
 
@@ -74,14 +74,14 @@ def extract_document_content_with_tika():
     logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
 
-def upload_processed_documents_to_elasticsearch():
-    es_adapter = StoreRegistry.es_index_store()
+def upload_processed_documents_to_elasticsearch_callable():
+    es_adapter = store_registry.es_index_store()
 
     logger.info(
         f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
     logger.info(f'Loading files from {config.MINIO_URL}')
 
-    minio = StoreRegistry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME)
     objects = minio.list_objects(TIKA_FILE_PREFIX)
 
     object_count = 0
@@ -111,24 +111,19 @@ default_args = {
     "retry_delay": timedelta(minutes=500)
 }
 
-dag = DAG(
-    DAG_NAME,
-    default_args=default_args,
-    schedule_interval="@once",
-    max_active_runs=1,
-    concurrency=1
-)
+with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_active_runs=1, concurrency=1) as dag:
+    start_crawler = PythonOperator(
+        task_id=f'Crawl',
+        python_callable=start_crawler_callable, retries=1, dag=dag)
 
-start_crawler = PythonOperator(
-    task_id=f'Crawl',
-    python_callable=start_crawler, retries=1, dag=dag)
+    extract_content_with_tika_task = PythonOperator(
+        task_id=f'Tika',
+        python_callable=extract_document_content_with_tika_callable, retries=1, dag=dag)
 
-extract_content_with_tika_task = PythonOperator(
-    task_id=f'Tika',
-    python_callable=extract_document_content_with_tika, retries=1, dag=dag)
+    upload_to_elastic_task = PythonOperator(
+        task_id=f'Elasticsearch',
+        python_callable=upload_processed_documents_to_elasticsearch_callable, retries=1, dag=dag)
 
-upload_to_elastic_task = PythonOperator(
-    task_id=f'Elasticsearch',
-    python_callable=upload_processed_documents_to_elasticsearch, retries=1, dag=dag)
+    start_crawler >> extract_content_with_tika_task >> upload_to_elastic_task
 
-start_crawler >> extract_content_with_tika_task >> upload_to_elastic_task
+

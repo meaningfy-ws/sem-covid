@@ -1,10 +1,3 @@
-#!/usr/bin/python3
-
-# esingestadapter.py
-# Date:  20/01/2021
-# Author: Laurentiu Mandru
-# Email: mclaurentiu79@gmail.com
-#
 
 from typing import List, Union
 

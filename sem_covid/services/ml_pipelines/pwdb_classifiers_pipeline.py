@@ -9,13 +9,15 @@
 """
 
 import mlflow
+import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import preprocessing
 from sem_covid import config
-from pycaret.classification import *
+# from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
+import tensorflow_hub as hub
 
 BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
               'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
@@ -53,6 +55,8 @@ TRAIN_CLASSES = ['businesses', 'citizens', 'workers', 'category', 'subcategory',
 
 EMBEDDING_COLUMN = "embeddings"
 
+TEXTUAL_DATA = "textual_data"
+
 
 class FeatureEngineering:
     """
@@ -63,6 +67,7 @@ class FeatureEngineering:
         - validation of the dataset
         - loading the language model
         - performing the necessary transformations on the dataset
+        - calculating document embeddings
         - storing the feature set
     """
 
@@ -99,7 +104,7 @@ class FeatureEngineering:
         law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
         self.l2v_dict = KeyedVectors.load_word2vec_format(law2vec_path, encoding="utf-8")
 
-    def transform_data(self):
+    def transform_textual_data(self):
         """
             This step applies the necessary transformations to the dataset.
         :return:
@@ -119,8 +124,14 @@ class FeatureEngineering:
             pwdb_dataframe[column] = le.transform(pwdb_dataframe[column])
         self.df = pwdb_dataframe
         self.df = self.df.set_index(self.df.columns[0])
-        self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
-        self.df[EMBEDDING_COLUMN] = self.df[EMBEDDING_COLUMN].apply(lambda x: text_to_vector(x, self.l2v_dict))
+        self.df[TEXTUAL_DATA] = self.df[TEXTUAL_COLUMNS].agg(" ".join, axis=1)
+
+    def compute_document_embeddings(self):
+        """
+            This step aims to calculate document embeddings based on textual data.
+        :return:
+        """
+        self.df[EMBEDDING_COLUMN] = self.df[TEXTUAL_DATA].apply(lambda x: text_to_vector(x, self.l2v_dict))
 
     def store_feature_set(self):
         """
@@ -129,7 +140,7 @@ class FeatureEngineering:
         """
         input_features_name = self.feature_store_name + "_x"
         output_features_name = self.feature_store_name + "_y"
-        feature_store = StoreRegistry.es_feature_store()
+        feature_store = store_registry.es_feature_store()
         matrix_df = pd.DataFrame(list(self.df[EMBEDDING_COLUMN].values))
         feature_store.put_features(features_name=input_features_name, content=matrix_df)
         feature_store.put_features(features_name=output_features_name, content=pd.DataFrame(self.df[CLASS_COLUMNS]))
@@ -142,8 +153,24 @@ class FeatureEngineering:
         self.load_data()
         self.validate_data()
         self.load_language_model()
-        self.transform_data()
+        self.transform_textual_data()
+        self.compute_document_embeddings()
         self.store_feature_set()
+
+
+class FeatureEngineeringBERT(FeatureEngineering):
+
+    def __init__(self, feature_store_name: str):
+        super().__init__(feature_store_name)
+        self.model = None
+
+    def load_language_model(self):
+        model_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
+        self.model = hub.load(model_url)
+
+    def compute_document_embeddings(self):
+        assert self.model is not None
+        self.df[EMBEDDING_COLUMN] = pd.Series(self.model(self.df[TEXTUAL_DATA]).numpy().tolist(), index=self.df.index)
 
 
 class ModelTraining:
@@ -169,7 +196,7 @@ class ModelTraining:
             This step loads the feature set.
         :return:
         """
-        feature_store = StoreRegistry.es_feature_store()
+        feature_store = store_registry.es_feature_store()
         input_features_name = self.feature_store_name + "_x"
         output_features_name = self.feature_store_name + "_y"
         self.dataset_x = feature_store.get_features(input_features_name)
@@ -215,31 +242,3 @@ class ModelTraining:
         self.validate_feature_set()
         mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
         self.train_model()
-
-
-PWDB_FEATURE_STORE_NAME = 'fs_pwdb'
-
-
-class PWDBClassifiers:
-    """
-        This class aims to unify the feature engineering pipeline and the model training pipeline.
-    """
-
-    @classmethod
-    def feature_engineering(cls):
-        """
-            This method executes feature engineering pipeline with preset parameters.
-        :return:
-        """
-        worker = FeatureEngineering(feature_store_name=PWDB_FEATURE_STORE_NAME)
-        worker.execute()
-
-    @classmethod
-    def model_training(cls):
-        """
-            This method executes training model pipeline with preset parameters.
-        :return:
-        """
-        worker = ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
-                               experiment_name="PyCaret_pwdb")
-        worker.execute()

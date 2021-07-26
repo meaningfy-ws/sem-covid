@@ -15,7 +15,7 @@ from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import CellarDagWorker
 from sem_covid.services.index_mapping_registry import IndicesMappingRegistry
 from sem_covid.services.sparq_query_registry import QueryRegistry
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 import airflow
 
 logger = logging.getLogger(__name__)
@@ -38,7 +38,7 @@ master_pipeline = CellarDagMaster(
     worker_dag_name=WORKER_DAG_NAME,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
     minio_bucket_name=config.LEGAL_INITIATIVES_BUCKET_NAME,
-    store_registry=StoreRegistry(),
+    store_registry=store_registry,
     index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME
 )
 
@@ -52,7 +52,7 @@ worker_pipeline = CellarDagWorker(
     sparql_query=QueryRegistry().METADATA_FETCHER,
     sparql_endpoint_url=config.EU_CELLAR_SPARQL_URL,
     minio_bucket_name=config.LEGAL_INITIATIVES_BUCKET_NAME,
-    store_registry=StoreRegistry(),
+    store_registry=store_registry,
     index_name=config.LEGAL_INITIATIVES_ELASTIC_SEARCH_INDEX_NAME)
 
 worker_dag = DagFactory(
