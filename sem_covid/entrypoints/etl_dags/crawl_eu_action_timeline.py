@@ -126,4 +126,4 @@ with DAG(DAG_NAME, default_args=default_args, schedule_interval="@once", max_act
 
     start_crawler >> extract_content_with_tika_task >> upload_to_elastic_task
 
-start_crawler_callable()
+
