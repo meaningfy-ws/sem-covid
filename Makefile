@@ -29,7 +29,7 @@ poetry-install:
 
 poetry-export:
 	@ echo "$(BUILD_PRINT)Exporting the requirements.txt"
-	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
+#	@ poetry export -f requirements.txt --output requirements-prod.txt --without-hashes
 	@ poetry export --dev -f requirements.txt --output requirements-dev.txt --without-hashes
 
 
@@ -125,3 +125,10 @@ start_airflow:
 stop_airflow:
 	@ echo "$(BUILD_PRINT)Stopping the Airflow scheduler and webserver"
 	@ pkill -f airflow
+
+
+build-airflow-image:
+	@ echo "$(BUILD_PRINT)Building airflow image"
+	@ cp requirements-airflow.txt docker/airflow
+	@ docker build --tag airflow2_meaningfy:latest docker/airflow
+	@ rm docker/airflow/requirements-airflow.txt
