@@ -58,7 +58,7 @@ class StoreRegistry(StoreRegistryABC):
              This method returns a preconfigured MinioFeatureStore.
          :return:
          """
-        return MinioFeatureStore(object_store=store_registry.minio_object_store(MINIO_FEATURE_BUCKET))
+        return MinioFeatureStore(object_store=self.minio_object_store(MINIO_FEATURE_BUCKET))
 
     def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
         return SPARQLTripleStore(endpoint_url=endpoint_url)
@@ -90,7 +90,7 @@ class StoreRegistry(StoreRegistryABC):
             This method returns a preconfigured ESFeatureStore.
         :return:
         """
-        return ESFeatureStore(store_registry.es_index_store())
+        return ESFeatureStore(self.es_index_store())
 
 
 store_registry = StoreRegistry()
