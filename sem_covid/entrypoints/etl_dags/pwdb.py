@@ -37,17 +37,19 @@ def download_and_split_callable():
     response = requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
     response.raise_for_status()
     minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
-    minio.empty_bucket(object_name_prefix=None)
-    minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
-    minio.empty_bucket(object_name_prefix=FIELD_DATA_PREFIX)
+    for prefix in [None, RESOURCE_FILE_PREFIX, TIKA_FILE_PREFIX, FIELD_DATA_PREFIX]:
+        minio.empty_bucket(object_name_prefix=prefix)
 
     transformed_json = transform_pwdb(json.loads(response.content))
 
-    uploaded_bytes = minio.put_object(config.PWDB_DATASET_LOCAL_FILENAME, json.dumps(transformed_json).encode('utf-8'))
+    uploaded_bytes = minio.put_object(config.PWDB_DATASET_LOCAL_FILENAME,
+                                      json.dumps(transformed_json).encode('utf-8'))
     logger.info(
-        'Uploaded ' + str(
-            uploaded_bytes) + ' bytes to bucket [' + config.PWDB_COVID19_BUCKET_NAME + '] at ' + config.MINIO_URL)
+        'Uploaded ' + str(uploaded_bytes)
+                    + ' bytes to bucket ['
+                    + config.PWDB_COVID19_BUCKET_NAME
+                    + '] at '
+                    + config.MINIO_URL)
 
     list_count = len(transformed_json)
     current_item = 0
@@ -63,7 +65,6 @@ def download_and_split_callable():
 def execute_worker_dags_callable(**context):
     minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
-    count = 0
 
     for field_data_object in field_data_objects:
         TriggerDagRunOperator(
@@ -71,9 +72,6 @@ def execute_worker_dags_callable(**context):
             trigger_dag_id=SLAVE_DAG_NAME,
             conf={"filename": field_data_object.object_name}
         ).execute(context)
-        count += 1
-
-    logger.info("Created " + str(count) + " DAG runs")
 
 
 default_args = {
