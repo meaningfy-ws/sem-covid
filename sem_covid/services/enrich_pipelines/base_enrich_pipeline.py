@@ -11,13 +11,13 @@
 import numpy as np
 import pandas as pd
 from gensim.models import KeyedVectors
-from pycaret.classification import predict_model
+# from pycaret.classification import predict_model
 from sklearn import preprocessing
 
 from sem_covid.services.data_registry import LanguageModel
 from sem_covid.services.model_registry import ClassificationModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 EMBEDDING_COLUMN = "embeddings"
 
@@ -56,7 +56,7 @@ class BasePrepareDatasetPipeline:
         """
             At this stage, the dataset is loaded from Elastic Store
         """
-        es_store = StoreRegistry.es_index_store()
+        es_store = store_registry.es_index_store()
         self.dataset = es_store.get_dataframe(self.ds_es_index)
         assert self.dataset is not None
         assert len(self.dataset) > 0
@@ -91,7 +91,7 @@ class BasePrepareDatasetPipeline:
             This step is used to store calculated features in the Feature Store
         """
         assert EMBEDDING_COLUMN in self.dataset
-        feature_store = StoreRegistry.es_feature_store()
+        feature_store = store_registry.es_feature_store()
         input_features_name = self.features_store_name + '_x'
         matrix_df = pd.DataFrame(list(self.dataset[EMBEDDING_COLUMN].values))
         feature_store.put_features(features_name=input_features_name, content=matrix_df)
@@ -143,7 +143,7 @@ class BaseEnrichPipeline:
         """
             This step loads the desired dataset.
         """
-        es_store = StoreRegistry.es_index_store()
+        es_store = store_registry.es_index_store()
         dataset = es_store.get_dataframe(index_name=self.ds_es_index)
         assert dataset is not None
         assert len(dataset) > 0
@@ -155,7 +155,7 @@ class BaseEnrichPipeline:
         """
         input_features_name = self.feature_store_name + '_x'
         output_features_name = PWDB_FEATURES_Y
-        feature_store = StoreRegistry.es_feature_store()
+        feature_store = store_registry.es_feature_store()
         input_features = feature_store.get_features(features_name=input_features_name)
         output_features = feature_store.get_features(features_name=output_features_name)
         assert input_features is not None
@@ -194,7 +194,7 @@ class BaseEnrichPipeline:
         """
         for class_name in self.class_names:
             assert class_name in self.dataset.columns
-        es_client = StoreRegistry.es_index_store()
+        es_client = store_registry.es_index_store()
         new_index_name = self.ds_es_index + '_enriched'
         self.dataset.reset_index(drop=True, inplace=True)
         es_client.put_dataframe(index_name=new_index_name, content=self.dataset)

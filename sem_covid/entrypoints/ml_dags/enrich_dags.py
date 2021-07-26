@@ -5,18 +5,18 @@
 # Software: PyCharm
 
 
-import logging
-
 from sem_covid import config
 from sem_covid.adapters.dag.dag_factory import DagFactory
 from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.ml_dags.enrich_pipeline_dag import EnrichPipelineDag
-import airflow
 
-logger = logging.getLogger(__name__)
-logger.debug(f"This line is important for DAG discovery because the *airflow module* "
-             f"shall be imported here. Otherwise it does not discover DAGs in this "
-             f"module. Airflow version {airflow.__version__}")
+# TODO: the dependency to PyCaret breaks the zen harmony
+# import logging
+# import airflow
+# logger = logging.getLogger(__name__)
+# logger.debug(f"This line is important for DAG discovery because the *airflow module* "
+#              f"shall be imported here. Otherwise it does not discover DAGs in this "
+#              f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
 MAJOR = 2
@@ -34,10 +34,10 @@ enrich_eu_cellar_pipeline = EnrichPipelineDag(textual_columns=EU_CELLAR_TEXT_COL
                                               features_store_name='fs_eu_cellar'
                                               )
 
-dag_enrich_eu_cellar = DagFactory(
-    dag_pipeline=enrich_eu_cellar_pipeline, dag_name=EU_CELLAR_ENRICH_DAG_NAME).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_enrich_eu_cellar = DagFactory(
+#     dag_pipeline=enrich_eu_cellar_pipeline, dag_name=EU_CELLAR_ENRICH_DAG_NAME).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
 
 # Eu-timeline enrich DAG
 
@@ -51,10 +51,10 @@ enrich_eu_timeline_pipeline = EnrichPipelineDag(textual_columns=EU_TIMELINE_TEXT
                                                 features_store_name='fs_eu_timeline'
                                                 )
 
-dag_enrich_eu_timeline = DagFactory(
-    dag_pipeline=enrich_eu_timeline_pipeline, dag_name=EU_TIMELINE_ENRICH_DAG_NAME).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_enrich_eu_timeline = DagFactory(
+#     dag_pipeline=enrich_eu_timeline_pipeline, dag_name=EU_TIMELINE_ENRICH_DAG_NAME).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
 
 # Ireland-timeline enrich DAG
 
@@ -68,7 +68,7 @@ enrich_ireland_timeline_pipeline = EnrichPipelineDag(textual_columns=IRELAND_TIM
                                                      features_store_name='fs_ireland_timeline'
                                                      )
 
-dag_enrich_ireland_timeline = DagFactory(
-    dag_pipeline=enrich_ireland_timeline_pipeline, dag_name=IRELAND_TIMELINE_ENRICH_DAG_NAME).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_enrich_ireland_timeline = DagFactory(
+#     dag_pipeline=enrich_ireland_timeline_pipeline, dag_name=IRELAND_TIMELINE_ENRICH_DAG_NAME).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)

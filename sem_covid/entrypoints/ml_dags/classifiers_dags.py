@@ -4,21 +4,20 @@
 # File    : classifiers_dags.py
 # Software: PyCharm
 
-import logging
 
 from sem_covid.adapters.dag.dag_factory import DagFactory
 from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.ml_dags.classifiers_pipeline_dag import ClassifiersPipelineDag
 
-import airflow
-
 from sem_covid.services.ml_pipelines.pwdb_classifiers_pipeline import (FeatureEngineering, ModelTraining,
                                                                        FeatureEngineeringBERT)
-
-logger = logging.getLogger(__name__)
-logger.debug(f"This line is important for DAG discovery because the *airflow module* "
-             f"shall be imported here. Otherwise it does not discover DAGs in this "
-             f"module. Airflow version {airflow.__version__}")
+# TODO: the dependency to PyCaret breaks the zen harmony
+# import airflow
+# import logging
+# logger = logging.getLogger(__name__)
+# logger.debug(f"This line is important for DAG discovery because the *airflow module* "
+#              f"shall be imported here. Otherwise it does not discover DAGs in this "
+#              f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
 MAJOR = 2
@@ -37,10 +36,10 @@ classifiers_pipeline_dag = ClassifiersPipelineDag(
     model_training_pipeline=ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
                                           experiment_name=EXPERIMENT_NAME))
 
-dag = DagFactory(
-    dag_pipeline=classifiers_pipeline_dag, dag_name=classifier_dag_name).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag = DagFactory(
+#     dag_pipeline=classifiers_pipeline_dag, dag_name=classifier_dag_name).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
 
 # Universal-Sentence-Encoding classifiers
 
@@ -57,8 +56,8 @@ classifiers_universal_sentence_encoding_pipeline_dag = ClassifiersPipelineDag(
     model_training_pipeline=ModelTraining(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME,
                                           experiment_name=BERT_EXPERIMENT_NAME))
 
-dag_universal_sentence_encoding = DagFactory(
-    dag_pipeline=classifiers_universal_sentence_encoding_pipeline_dag,
-    dag_name=classifier_universal_sentence_encoding_dag_name).create_dag(
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag_universal_sentence_encoding = DagFactory(
+#     dag_pipeline=classifiers_universal_sentence_encoding_pipeline_dag,
+#     dag_name=classifier_universal_sentence_encoding_dag_name).create_dag(
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)

@@ -49,7 +49,7 @@ def test_average_sentence_embedding_model():
     check_sentence_embedding_model(avg_sentence_embedding_model_basic)
     avg_sentence_embedding_model_spacy = AverageSentenceEmbeddingModel(
         word_embedding_model=get_word2vec_emb_model(),
-        tokenizer=SpacyTokenizerModel(spacy_nlp=nlp)
+        tokenizer=SpacyTokenizerModel(spacy_tokenizer=nlp)
     )
     check_sentence_embedding_model(avg_sentence_embedding_model_spacy)
 
@@ -62,7 +62,7 @@ def test_tf_idf_sentence_embedding_model():
     check_sentence_embedding_model(tf_idf_sentence_embedding_model_basic)
     tf_idf_sentence_embedding_model_spacy = TfIdfSentenceEmbeddingModel(
         word_embedding_model=get_word2vec_emb_model(),
-        tokenizer=SpacyTokenizerModel(spacy_nlp=nlp)
+        tokenizer=SpacyTokenizerModel(spacy_tokenizer=nlp)
     )
     check_sentence_embedding_model(tf_idf_sentence_embedding_model_spacy)
 

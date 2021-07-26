@@ -16,7 +16,7 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 VERSION = '0.01'
 DATASET_NAME = "pwdb_worker"
@@ -56,7 +56,7 @@ def download_policy_watch_resources(**context):
     filename = context['dag_run'].conf['filename']
     logging.info('Processing the file ' + filename)
 
-    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     field_data = json.loads(minio.get_object(filename).decode('utf-8'))
 
     if not field_data['end_date']:
@@ -80,7 +80,7 @@ def process_using_tika(**context):
     logging.info('Processing the file ' + filename)
     logger.info('Using Apache Tika at ' + config.APACHE_TIKA_URL)
 
-    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     field_data = json.loads(minio.get_object(filename).decode('utf-8'))
 
     valid_sources = 0
@@ -132,11 +132,11 @@ def put_elasticsearch_documents(**context):
     filename = context['dag_run'].conf['filename']
     logging.info('Processing the file ' + filename)
 
-    es_adapter = StoreRegistry.es_index_store()
+    es_adapter = store_registry.es_index_store()
     logger.info('Using ElasticSearch at ' + config.ELASTICSEARCH_HOST_NAME + ':' + str(
         config.ELASTICSEARCH_PORT))
 
-    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     original_field_data = json.loads(minio.get_object(filename).decode('utf-8'))
     tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
         (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()

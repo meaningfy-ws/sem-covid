@@ -15,7 +15,7 @@ from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFI
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import download_manifestation_file, CellarDagWorker, \
     get_work_uri_from_context, content_cleanup_tool, select_relevant_files_from_temp_folder, \
     download_zip_objects_to_temp_folder, get_text_from_selected_files
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 from tests.unit.dags.conftest import AttrDict
 from tests.unit.test_store.fake_storage import FakeObjectStore
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
@@ -47,7 +47,6 @@ def test_get_work_uri_from_context():
 
     context = {"dag_run": AttrDict({
         "conf": {"work": "http://publications.europa.eu/resource/cellar/d03caacf-a568-11ea-bb7a-01aa75ed71a1"}})}
-    print(context)
     response = get_work_uri_from_context(**context)
     assert response == "http://publications.europa.eu/resource/cellar/d03caacf-a568-11ea-bb7a-01aa75ed71a1"
     with pytest.raises(KeyError):
@@ -77,7 +76,6 @@ def test_download_zip_objects_to_temp_folder():
         zip_file = file.read(path_to_zip_file.stat().st_size)
         minio_client = store_registry.minio_object_store('fake_bucket')
         minio_client.put_object(object_name="test", content=zip_file)
-        print(minio_client._objects)
         zip_extractor = download_zip_objects_to_temp_folder(["test"], minio_client)
         assert "/tmp/cellar_dag_" in str(zip_extractor)
 
@@ -86,7 +84,6 @@ def test_get_text_from_selected_files():
     path_list = [pathlib.Path(__file__).parent.parent.parent / "test_data" / "test_folder" / "two.html"]
     response = get_text_from_selected_files(path_list)
     assert isinstance(response, list)
-    print(response)
     assert len(response[0].keys()) == 2
     assert response[0]["content"]
 

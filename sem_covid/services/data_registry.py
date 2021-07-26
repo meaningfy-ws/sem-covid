@@ -10,7 +10,7 @@
 """
 from sem_covid import config
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 """
    These constants represent the name of the index in ElasticSearch,
@@ -26,18 +26,18 @@ class Dataset(object):
     """
         Registry of dataset sources
     """
-    PWDB = IndexTabularDataSource(config.PWDB_ELASTIC_SEARCH_INDEX_NAME, StoreRegistry.es_index_store())
-    EU_CELLAR = IndexTabularDataSource(config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME, StoreRegistry.es_index_store())
+    PWDB = IndexTabularDataSource(config.PWDB_ELASTIC_SEARCH_INDEX_NAME, store_registry.es_index_store())
+    EU_CELLAR = IndexTabularDataSource(config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME, store_registry.es_index_store())
     EU_ACTION_TIMELINE = IndexTabularDataSource(config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
-                                                StoreRegistry.es_index_store())
+                                                store_registry.es_index_store())
     IRELAND_ACTION_TIMELINE = IndexTabularDataSource(config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
-                                                     StoreRegistry.es_index_store())
+                                                     store_registry.es_index_store())
     EU_CELLAR_ENRICHED = IndexTabularDataSource(EU_CELLAR_ENRICHED_INDEX_NAME,
-                                                StoreRegistry.es_index_store())
+                                                store_registry.es_index_store())
     EU_ACTION_TIMELINE_ENRICHED = IndexTabularDataSource(EU_TIMELINE_ENRICHED_INDEX_NAME,
-                                                         StoreRegistry.es_index_store())
+                                                         store_registry.es_index_store())
     IRELAND_ACTION_TIMELINE_ENRICHED = IndexTabularDataSource(IRELAND_TIMELINE_ENRICHED_INDEX_NAME,
-                                                              StoreRegistry.es_index_store())
+                                                              store_registry.es_index_store())
 
 
 class LanguageModel(object):
@@ -45,7 +45,7 @@ class LanguageModel(object):
         Registry of language model data sources
     """
     LAW2VEC = BinaryDataSource(config.LAW2VEC_MODEL_PATH,
-                               StoreRegistry.minio_object_store(config.LANGUAGE_MODEL_BUCKET_NAME)
+                               store_registry.minio_object_store(config.LANGUAGE_MODEL_BUCKET_NAME)
                                )
 
     # TODO : This language model is not available in MinIO, check changes
@@ -58,5 +58,5 @@ class LanguageModel(object):
      Earlier it was export in txt format to be able see and analyse phrases independently.
     """
     JRC2VEC = BinaryDataSource(config.JRC2VEC_MODEL_PATH,
-                               StoreRegistry.minio_object_store(config.LANGUAGE_MODEL_BUCKET_NAME)
+                               store_registry.minio_object_store(config.LANGUAGE_MODEL_BUCKET_NAME)
                                )
