@@ -16,7 +16,7 @@ from flask import render_template, request
 from sem_covid import FlaskConfig
 from sem_covid.entrypoints.ui import app
 from sem_covid.entrypoints.ui.forms import SearchForm
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 logger = logging.getLogger(__name__)
 
@@ -30,7 +30,7 @@ def index():
     topic = request.args.get('topic', None)
     document_category = request.args.get('document_category', None)
 
-    es_adapter = StoreRegistry.es_index_store()
+    es_adapter = store_registry.es_index_store()
     form = SearchForm()
 
     query = {
@@ -86,7 +86,7 @@ def index():
 
 @app.route('/legal-initiatives/<id>', methods=['GET'])
 def legal_initiatives_detail(id):
-    es_adapter = StoreRegistry.es_index_store()
+    es_adapter = store_registry.es_index_store()
     document = es_adapter.get_document('legal-initiatives-index', id)
 
     return render_template('legal_initiatives/detail.html', title='Legal Initiatives Document',
