@@ -10,12 +10,13 @@ from scrapy.selector import SelectorList
 from scrapy_splash import SplashRequest
 
 from sem_covid import config
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 from . import COVID_EUROVOC_SEARCH_TERMS
 from ..items import IrishGovItem
 
 
 class IrishGovCrawler(scrapy.Spider):
+    # TODO: This class does not implement abstract scrapy.Spider methods
     # TODO: check why parse method is not implemented and not needed?
 
     name = 'ireland-timeline'
@@ -27,7 +28,7 @@ class IrishGovCrawler(scrapy.Spider):
 
     def __init__(self, *args, filename: str = config.IRELAND_TIMELINE_JSON,
                  text_searches: List[str] = COVID_EUROVOC_SEARCH_TERMS,
-                 storage_adapter=StoreRegistry().minio_object_store(config.IRELAND_TIMELINE_BUCKET_NAME),
+                 storage_adapter=store_registry.minio_object_store(config.IRELAND_TIMELINE_BUCKET_NAME),
                  **kwargs):
         super().__init__(*args, **kwargs)
         self.text_searches = text_searches

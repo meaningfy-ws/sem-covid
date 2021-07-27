@@ -304,3 +304,5 @@ wrapt==1.12.1; python_version >= "3.6" and python_version < "4.0"
 wtforms==2.3.3; python_version >= "3.6" and python_version < "4.0"
 zipp==3.5.0; python_version >= "3.6" and python_version < "3.9"
 zope.interface==5.4.0; python_full_version >= "3.5.4" and python_version >= "3.6"
+networkx
+d3graph

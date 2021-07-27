@@ -17,7 +17,7 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from sem_covid import config
 from sem_covid.entrypoints.etl_dags.pwdb_worker import DAG_NAME as SLAVE_DAG_NAME
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.services.store_registry import store_registry
 
 VERSION = '0.01'
 DATASET_NAME = "pwdb"
@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 def download_and_split_callable():
     response = requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
     response.raise_for_status()
-    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     minio.empty_bucket(object_name_prefix=None)
     minio.empty_bucket(object_name_prefix=RESOURCE_FILE_PREFIX)
     minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
@@ -61,7 +61,7 @@ def download_and_split_callable():
 
 
 def execute_worker_dags_callable(**context):
-    minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
     field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
     count = 0
 
