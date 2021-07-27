@@ -49,14 +49,14 @@ def download_single_source(source, minio):
 
 
 class PWDBDagWorker(BaseETLPipeline):
-    def __init__(self, bucket_name: str, apache_tika_url: str, es_host_name: str,
-                 es_port: str, es_index_name: str, store_registry: StoreRegistryABC) -> None:
+    def __init__(self, bucket_name: str, apache_tika_url: str, elasticsearch_host_name: str,
+                 elasticsearch_port: str, elasticsearch_index_name: str, store_registry: StoreRegistryABC) -> None:
         self.store_registry = store_registry
         self.bucket_name = bucket_name
         self.apache_tika_url = apache_tika_url
-        self.es_host_name = es_host_name
-        self.es_port = es_port
-        self.es_index_name = es_index_name
+        self.elasticsearch_host_name = elasticsearch_host_name
+        self.elasticsearch_port = elasticsearch_port
+        self.elasticsearch_index_name = elasticsearch_index_name
 
     def extract(self, **context) -> None:
         if "filename" not in context['dag_run'].conf:
@@ -139,8 +139,8 @@ class PWDBDagWorker(BaseETLPipeline):
         logging.info('Processing the file ' + filename)
 
         es_adapter = self.store_registry.es_index_store()
-        logger.info('Using ElasticSearch at ' + self.es_host_name + ':' + str(
-            self.es_port))
+        logger.info('Using ElasticSearch at ' + self.elasticsearch_host_name + ':' + str(
+            self.elasticsearch_port))
 
         minio = self.store_registry.minio_object_store(self.bucket_name)
         original_field_data = json.loads(minio.get_object(filename).decode('utf-8'))
@@ -150,10 +150,10 @@ class PWDBDagWorker(BaseETLPipeline):
         tika_field_data = json.loads(minio.get_object(tika_filename).decode('utf-8'))
 
         logger.info('Sending to ElasticSearch (  ' +
-                    self.es_index_name +
+                    self.elasticsearch_index_name +
                     ' ) the file ' +
                     tika_filename)
-        es_adapter.index(index_name=self.es_index_name,
+        es_adapter.index(index_name=self.elasticsearch_index_name,
                          document_id=tika_filename.split("/")[1],
                          document_body=tika_field_data)
 
@@ -270,9 +270,9 @@ pwdb_worker = PWDBDagWorker(
     store_registry=store_registry,
     bucket_name=config.PWDB_COVID19_BUCKET_NAME,
     apache_tika_url=config.APACHE_TIKA_URL,
-    es_host_name=config.ELASTICSEARCH_HOST_NAME,
-    es_port=config.ELASTICSEARCH_PORT,
-    es_index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME
+    elasticsearch_host_name=config.ELASTICSEARCH_HOST_NAME,
+    elasticsearch_port=config.ELASTICSEARCH_PORT,
+    elasticsearch_index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME
 )
 
 default_args = {

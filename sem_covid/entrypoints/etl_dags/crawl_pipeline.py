@@ -17,7 +17,8 @@ from tika import parser
 
 import sem_covid.services.crawlers.scrapy_crawlers.settings as crawler_config
 from sem_covid import config
-from sem_covid.services.store_registry import StoreRegistry
+from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
+from sem_covid.services.store_registry import StoreRegistryABC
 
 TIKA_FILE_PREFIX = 'tika/'
 SPLASH_URL_CONFIG = 'config.SPLASH_URL'
@@ -34,24 +35,22 @@ def extract_settings_from_module(module) -> dict:
     return settings
 
 
-class CrawlDagPipeline:
+class CrawlDagPipeline(BaseETLPipeline):
     """
         Pipeline for data crawling
     """
-    def __init__(self, file_name: str, bucket_name: str, elasticsearch_index_name: str,
+    def __init__(self, store_registry: StoreRegistryABC, file_name: str, bucket_name: str, elasticsearch_index_name: str,
                  content_path_key: str, scrapy_crawler) -> None:
+        self.store_registry = store_registry
         self.file_name = file_name
         self.bucket_name = bucket_name
         self.elasticsearch_index_name = elasticsearch_index_name
         self.content_path_key = content_path_key
         self.scrapy_crawler = scrapy_crawler
 
-    def start_crawler(self) -> None:
-        """
-            This step includes data crawling from the sources
-        """
+    def extract(self, *args, **kwargs) -> None:
         logger.info('start crawler')
-        minio = StoreRegistry.minio_object_store(self.bucket_name)
+        minio = self.store_registry.minio_object_store(self.bucket_name)
         minio.empty_bucket(object_name_prefix=None)
         settings = extract_settings_from_module(crawler_config)
         settings[SPLASH_URL_CONFIG] = config.SPLASH_URL
@@ -59,14 +58,13 @@ class CrawlDagPipeline:
         process.crawl(self.scrapy_crawler, filename=self.file_name, storage_adapter=minio)
         process.start()
 
-    def extract_document_content_with_tika(self) -> None:
-        """
-            Using Apache Tika, it loads files from the source and extracts the content.
-            After that, it stores into MinIO bucket.
-        """
+    def transform_content(self, *args, **kwargs) -> None:
+        pass
+
+    def transform_structure(self, *args, **kwargs) -> None:
         logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
         logger.info(f'Loading resource files from {self.file_name}')
-        minio = StoreRegistry.minio_object_store(self.bucket_name)
+        minio = self.store_registry.minio_object_store(self.bucket_name)
         json_content = loads(minio.get_object(self.file_name))
 
         counter = {
@@ -96,16 +94,14 @@ class CrawlDagPipeline:
 
         logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
-    def upload_processed_documents_to_elasticsearch(self) -> None:
-        """
-            Uploads extracted documents into Elasticsearch
-        """
-        es_adapter = StoreRegistry.es_index_store()
+    def load(self, *args, **kwargs) -> None:
+        es_adapter = self.store_registry.es_index_store()
+
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
         logger.info(f'Loading files from {config.MINIO_URL}')
 
-        minio = StoreRegistry.minio_object_store(self.bucket_name)
+        minio = self.store_registry.minio_object_store(self.bucket_name)
         objects = minio.list_objects(TIKA_FILE_PREFIX)
 
         for item in objects:
@@ -118,4 +114,5 @@ class CrawlDagPipeline:
             except Exception as exception:
                 logger.exception(exception)
                 raise exception
+
 
