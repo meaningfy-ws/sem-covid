@@ -47,7 +47,7 @@ class EUTimelineSpider(scrapy.Spider):
                 for month in month_timeline:
                     date = month.xpath('*[@class="timeline__list__item__title"]/text()').get()
                     title = month.xpath('*//h4//text()').get()
-                    body = ' '.join(month.xpath('*//p[string-length(text()) > 0]').extract())
+                    body = ' '.join(month.xpath('*//p[string-length(text()) > 0]/text()').extract())
 
                     presscorner_links = [link.attrib['href'] for link in month.xpath('*//p//a') if
                                          self.presscorner_base_url in link.attrib.get('href', '')]
@@ -95,7 +95,7 @@ class EUTimelineSpider(scrapy.Spider):
             'date': metadata[1].get(),
             'location': metadata[2].get()
         }
-        item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]').get()
+        item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]//text()').get()
         item['detail_title'] = response.xpath(
             '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
 
