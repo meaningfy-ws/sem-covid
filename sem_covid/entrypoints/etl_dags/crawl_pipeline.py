@@ -21,7 +21,6 @@ from sem_covid.services.store_registry import StoreRegistry
 
 TIKA_FILE_PREFIX = 'tika/'
 SPLASH_URL_CONFIG = 'config.SPLASH_URL'
-CONTENT_PATH_KEY = 'content'
 
 logger = logging.getLogger(__name__)
 
@@ -70,14 +69,21 @@ class CrawlDagPipeline:
         minio = StoreRegistry.minio_object_store(self.bucket_name)
         json_content = loads(minio.get_object(self.file_name))
 
+        counter = {
+            'general': 0,
+            'success': 0
+        }
+
         for index, item in enumerate(json_content):
             identifier = item['title']
             logger.info(f'[{index + 1}/{len(json_content)}] Processing {identifier}')
 
             if self.content_path_key in item:
+                counter['general'] += 1
                 parse_result = parser.from_buffer(item[self.content_path_key], config.APACHE_TIKA_URL)
 
                 if 'content' in parse_result:
+                    counter['success'] += 1
                     item[self.content_path_key] = parse_result['content']
 
             manifestation = item.get('detail_link') or item['title']
@@ -87,6 +93,8 @@ class CrawlDagPipeline:
             minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
 
         minio.put_object(self.file_name, dumps(json_content))
+
+        logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
 
     def upload_processed_documents_to_elasticsearch(self) -> None:
         """
