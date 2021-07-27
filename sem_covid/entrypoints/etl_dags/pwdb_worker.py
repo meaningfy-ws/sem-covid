@@ -16,7 +16,8 @@ from airflow.operators.python import PythonOperator
 from tika import parser
 
 from sem_covid import config
-from sem_covid.services.store_registry import store_registry
+from sem_covid.services.store_registry import store_registry, StoreRegistryABC
+from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 
 VERSION = '0.01'
 DATASET_NAME = "pwdb_worker"
@@ -47,112 +48,232 @@ def download_single_source(source, minio):
     return source
 
 
-def download_policy_watch_resources(**context):
-    if "filename" not in context['dag_run'].conf:
-        logger.error(
-            "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
-        return
+class PWDBDagWorker(BaseETLPipeline):
+    def __init__(self, bucket_name: str, apache_tika_url: str, es_host_name: str,
+                 es_port: str, es_index_name: str, store_registry: StoreRegistryABC) -> None:
+        self.store_registry = store_registry
+        self.bucket_name = bucket_name
+        self.apache_tika_url = apache_tika_url
+        self.es_host_name = es_host_name
+        self.es_port = es_port
+        self.es_index_name = es_index_name
 
-    filename = context['dag_run'].conf['filename']
-    logging.info('Processing the file ' + filename)
+    def extract(self, **context) -> None:
+        if "filename" not in context['dag_run'].conf:
+            logger.error(
+                "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+            return
+        filename = context['dag_run'].conf['filename']
+        logging.info('Processing the file ' + filename)
+        minio = self.store_registry.minio_object_store(self.bucket_name)
+        field_data = json.loads(minio.get_object(filename).decode('utf-8'))
 
-    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
-    field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+        if not field_data['end_date']:
+            field_data['end_date'] = None  # Bozo lives here
 
-    if not field_data['end_date']:
-        field_data['end_date'] = None  # Bozo lives here
-
-    for source in field_data['sources']:
-        download_single_source(source, minio)
-
-    minio.put_object(filename, json.dumps(field_data))
-
-    logger.info("...done downloading.")
-
-
-def process_using_tika(**context):
-    if "filename" not in context['dag_run'].conf:
-        logger.error(
-            "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
-        return
-
-    filename = context['dag_run'].conf['filename']
-    logging.info('Processing the file ' + filename)
-    logger.info('Using Apache Tika at ' + config.APACHE_TIKA_URL)
-
-    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
-    field_data = json.loads(minio.get_object(filename).decode('utf-8'))
-
-    valid_sources = 0
-
-    try:
         for source in field_data['sources']:
-            if 'failure_reason' in source:
-                logger.info('Will not process source <' +
-                            source['title'] +
-                            '> because it failed download with reason <' +
-                            source['failure_reason'] + '>')
-            else:
-                logger.info(f'content path is: {source[CONTENT_PATH_KEY]}')
-                parse_result = parser.from_buffer(minio.get_object(source[CONTENT_PATH_KEY]),
-                                                  config.APACHE_TIKA_URL)
+            download_single_source(source, minio)
 
-                logger.info('RESULT IS ' + json.dumps(parse_result))
-                if CONTENT_KEY in parse_result and parse_result[CONTENT_KEY]:
-                    source[CONTENT_KEY] = parse_result[CONTENT_KEY].replace('\n', '')
-                    source[CONTENT_LANGUAGE] = (
-                            parse_result["metadata"].get("Content-Language")
-                            or
-                            parse_result["metadata"].get("content-language")
-                            or
-                            parse_result["metadata"].get("language"))
-                    valid_sources += 1
+        minio.put_object(filename, json.dumps(field_data))
+
+        logger.info("...done downloading.")
+
+    def transform_content(self, **context) -> None:
+        if "filename" not in context['dag_run'].conf:
+            logger.error(
+                "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+            return
+
+        filename = context['dag_run'].conf['filename']
+        logging.info('Processing the file ' + filename)
+        logger.info('Using Apache Tika at ' + self.apache_tika_url)
+
+        minio = self.store_registry.minio_object_store(self.bucket_name)
+        field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+
+        valid_sources = 0
+
+        try:
+            for source in field_data['sources']:
+                if 'failure_reason' in source:
+                    logger.info('Will not process source <' + source['title'] +
+                                '> because it failed download with reason <' + source['failure_reason'] + '>')
                 else:
-                    logger.warning('Apache Tika did NOT return a valid content for the source ' +
-                                   source['title'])
+                    logger.info(f'content path is: {source[CONTENT_PATH_KEY]}')
+                    parse_result = parser.from_buffer(minio.get_object(source[CONTENT_PATH_KEY]), self.apache_tika_url)
 
-        if valid_sources > 0:
-            logger.info('Field ' + field_data['title'] + ' had ' + str(valid_sources) + ' valid sources.')
-        else:
-            logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
+                    logger.info('RESULT IS ' + json.dumps(parse_result))
+                    if CONTENT_KEY in parse_result and parse_result[CONTENT_KEY]:
+                        source[CONTENT_KEY] = parse_result[CONTENT_KEY].replace('\n', '')
+                        source[CONTENT_LANGUAGE] = (
+                                parse_result["metadata"].get("Content-Language")
+                                or
+                                parse_result["metadata"].get("content-language")
+                                or
+                                parse_result["metadata"].get("language"))
+                        valid_sources += 1
+                    else:
+                        logger.warning('Apache Tika did NOT return a valid content for the source ' +
+                                       source['title'])
+                if valid_sources > 0:
+                    logger.info('Field ' + field_data['title'] + ' had ' + str(valid_sources) + ' valid sources.')
+                else:
+                    logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
 
-        minio.put_object(TIKA_FILE_PREFIX + hashlib.sha256(
-            (str(field_data['identifier'] +
-                 field_data['title'])).encode('utf-8')).hexdigest(), json.dumps(field_data))
-    except Exception as ex:
-        logger.exception(ex)
+                minio.put_object(TIKA_FILE_PREFIX + hashlib.sha256(
+                    (str(field_data['identifier'] +
+                         field_data['title'])).encode('utf-8')).hexdigest(), json.dumps(field_data))
+        except Exception as ex:
+            logger.exception(ex)
+
+    def transform_structure(self, *args, **kwargs):
+        pass
+
+    def load(self, **context) -> None:
+        if "filename" not in context['dag_run'].conf:
+            logger.error(
+                "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+            return
+
+        filename = context['dag_run'].conf['filename']
+        logging.info('Processing the file ' + filename)
+
+        es_adapter = self.store_registry.es_index_store()
+        logger.info('Using ElasticSearch at ' + self.es_host_name + ':' + str(
+            self.es_port))
+
+        minio = self.store_registry.minio_object_store(self.bucket_name)
+        original_field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+        tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
+            (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()
+        logger.info("Tika-processed filename is " + tika_filename)
+        tika_field_data = json.loads(minio.get_object(tika_filename).decode('utf-8'))
+
+        logger.info('Sending to ElasticSearch (  ' +
+                    self.es_index_name +
+                    ' ) the file ' +
+                    tika_filename)
+        es_adapter.index(index_name=self.es_index_name,
+                         document_id=tika_filename.split("/")[1],
+                         document_body=tika_field_data)
+
+        logger.info('Sent ' + tika_filename + '  to ElasticSearch.')
 
 
-def put_elasticsearch_documents(**context):
-    if "filename" not in context['dag_run'].conf:
-        logger.error(
-            "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
-        return
+# def download_policy_watch_resources(**context):
+#     if "filename" not in context['dag_run'].conf:
+#         logger.error(
+#             "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+#         return
+#
+#     filename = context['dag_run'].conf['filename']
+#     logging.info('Processing the file ' + filename)
+#
+#     minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+#     field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+#
+#     if not field_data['end_date']:
+#         field_data['end_date'] = None  # Bozo lives here
+#
+#     for source in field_data['sources']:
+#         download_single_source(source, minio)
+#
+#     minio.put_object(filename, json.dumps(field_data))
+#
+#     logger.info("...done downloading.")
 
-    filename = context['dag_run'].conf['filename']
-    logging.info('Processing the file ' + filename)
 
-    es_adapter = store_registry.es_index_store()
-    logger.info('Using ElasticSearch at ' + config.ELASTICSEARCH_HOST_NAME + ':' + str(
-        config.ELASTICSEARCH_PORT))
+# def process_using_tika(**context):
+#     if "filename" not in context['dag_run'].conf:
+#         logger.error(
+#             "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+#         return
+#
+#     filename = context['dag_run'].conf['filename']
+#     logging.info('Processing the file ' + filename)
+#     logger.info('Using Apache Tika at ' + config.APACHE_TIKA_URL)
+#
+#     minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+#     field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+#
+#     valid_sources = 0
+#
+#     try:
+#         for source in field_data['sources']:
+#             if 'failure_reason' in source:
+#                 logger.info('Will not process source <' +
+#                             source['title'] +
+#                             '> because it failed download with reason <' +
+#                             source['failure_reason'] + '>')
+#             else:
+#                 logger.info(f'content path is: {source[CONTENT_PATH_KEY]}')
+#                 parse_result = parser.from_buffer(minio.get_object(source[CONTENT_PATH_KEY]),
+#                                                   config.APACHE_TIKA_URL)
+#
+#                 logger.info('RESULT IS ' + json.dumps(parse_result))
+#                 if CONTENT_KEY in parse_result and parse_result[CONTENT_KEY]:
+#                     source[CONTENT_KEY] = parse_result[CONTENT_KEY].replace('\n', '')
+#                     source[CONTENT_LANGUAGE] = (
+#                             parse_result["metadata"].get("Content-Language")
+#                             or
+#                             parse_result["metadata"].get("content-language")
+#                             or
+#                             parse_result["metadata"].get("language"))
+#                     valid_sources += 1
+#                 else:
+#                     logger.warning('Apache Tika did NOT return a valid content for the source ' +
+#                                    source['title'])
+#
+#         if valid_sources > 0:
+#             logger.info('Field ' + field_data['title'] + ' had ' + str(valid_sources) + ' valid sources.')
+#         else:
+#             logger.warning('Field ' + field_data['title'] + ' had no valid or processable sources.')
+#
+#         minio.put_object(TIKA_FILE_PREFIX + hashlib.sha256(
+#             (str(field_data['identifier'] +
+#                  field_data['title'])).encode('utf-8')).hexdigest(), json.dumps(field_data))
+#     except Exception as ex:
+#         logger.exception(ex)
+#
+#
+# def put_elasticsearch_documents(**context):
+#     if "filename" not in context['dag_run'].conf:
+#         logger.error(
+#             "Could not find the file name in the provided configuration. This DAG is to be triggered by its parent only.")
+#         return
+#
+#     filename = context['dag_run'].conf['filename']
+#     logging.info('Processing the file ' + filename)
+#
+#     es_adapter = store_registry.es_index_store()
+#     logger.info('Using ElasticSearch at ' + config.ELASTICSEARCH_HOST_NAME + ':' + str(
+#         config.ELASTICSEARCH_PORT))
+#
+#     minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
+#     original_field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+#     tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
+#         (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()
+#     logger.info("Tika-processed filename is " + tika_filename)
+#     tika_field_data = json.loads(minio.get_object(tika_filename).decode('utf-8'))
+#
+#     logger.info('Sending to ElasticSearch (  ' +
+#                 config.PWDB_ELASTIC_SEARCH_INDEX_NAME +
+#                 ' ) the file ' +
+#                 tika_filename)
+#     es_adapter.index(index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME,
+#                      document_id=tika_filename.split("/")[1],
+#                      document_body=tika_field_data)
+#
+#     logger.info('Sent ' + tika_filename + '  to ElasticSearch.')
 
-    minio = store_registry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
-    original_field_data = json.loads(minio.get_object(filename).decode('utf-8'))
-    tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
-        (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()
-    logger.info("Tika-processed filename is " + tika_filename)
-    tika_field_data = json.loads(minio.get_object(tika_filename).decode('utf-8'))
-
-    logger.info('Sending to ElasticSearch (  ' +
-                config.PWDB_ELASTIC_SEARCH_INDEX_NAME +
-                ' ) the file ' +
-                tika_filename)
-    es_adapter.index(index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME,
-                     document_id=tika_filename.split("/")[1],
-                     document_body=tika_field_data)
-
-    logger.info('Sent ' + tika_filename + '  to ElasticSearch.')
-
+pwdb_worker = PWDBDagWorker(
+    store_registry=store_registry,
+    bucket_name=config.PWDB_COVID19_BUCKET_NAME,
+    apache_tika_url=config.APACHE_TIKA_URL,
+    es_host_name=config.ELASTICSEARCH_HOST_NAME,
+    es_port=config.ELASTICSEARCH_PORT,
+    es_index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME
+)
 
 default_args = {
     "owner": "airflow",
@@ -167,12 +288,12 @@ default_args = {
 
 with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
     enrich_task = PythonOperator(task_id='Enrich',
-                                 python_callable=download_policy_watch_resources, retries=1, dag=dag)
+                                 python_callable=pwdb_worker.extract, retries=1, dag=dag)
 
     tika_task = PythonOperator(task_id='Tika',
-                               python_callable=process_using_tika, retries=1, dag=dag)
+                               python_callable=pwdb_worker.transform_content, retries=1, dag=dag)
 
     elasticsearch_task = PythonOperator(task_id='ElasticSearch',
-                                        python_callable=put_elasticsearch_documents, retries=1, dag=dag)
+                                        python_callable=pwdb_worker.load, retries=1, dag=dag)
 
     enrich_task >> tika_task >> elasticsearch_task
