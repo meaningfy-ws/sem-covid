@@ -86,15 +86,12 @@ class EUTimelineSpider(scrapy.Spider):
             abstract=meta['abstract'],
             presscorner_links=meta['presscorner_links'],
             all_links=meta['all_links'],
-            detail_link=response.url
+            detail_link=response.url,
         )
-
         metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
-        item['detail_metadata'] = {
-            'type': metadata[0].get(),
-            'date': metadata[1].get(),
-            'location': metadata[2].get()
-        }
+        item['detail_type'] = metadata[0].get()
+        item['detail_date'] = metadata[1].get()
+        item['detail_location'] = metadata[2].get()
         item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]//text()').get()
         item['detail_title'] = response.xpath(
             '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
