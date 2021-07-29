@@ -94,7 +94,7 @@ class DocumentSimilarityPipeline:
             new_row = pd.Series(dataframe.loc[row_index])
             new_row[DOCUMENT_ID] = new_row.name
             new_row.index = list(map(lambda x: x + column_suffix, new_row.index))
-            return new_row
+            return new_row[DOCUMENT_ID]
 
         def combine_two_rows(left_row: pd.Series, right_row: pd.Series, similarity_metric: str,
                              similarity_metric_value: float) -> pd.Series:
