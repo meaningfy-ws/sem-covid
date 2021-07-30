@@ -8,11 +8,14 @@ from urllib.parse import urlparse
 import scrapy
 from scrapy.selector import SelectorList
 from scrapy_splash import SplashRequest
+from scrapy.linkextractors import LinkExtractor
 
 from sem_covid import config
 from sem_covid.services.store_registry import store_registry
 from . import COVID_EUROVOC_SEARCH_TERMS
 from ..items import IrishGovItem
+
+
 
 
 class IrishGovCrawler(scrapy.Spider):
@@ -53,17 +56,19 @@ class IrishGovCrawler(scrapy.Spider):
     def parse_list_page(self, response):
         page_links = response.css('ul[reboot-site-list]').css('li')
         next_page_link = self._build_link(response.css('a[aria-label="next"]::attr(href)').get())
+
         for page_link in page_links:
             date_match = self._extract_date(page_link.css('p::text').get())
             try:
                 if self._is_in_range(date_match):
+                    # self.data.append(date_match)
                     yield SplashRequest(url=self._build_link(page_link.css('a::attr(href)').get()),
                                         callback=self.parse_detail_page, meta=response.meta)
             except ValueError:
                 self.logger.error(f'data {date_match} does not match format {self.date_format}')
 
-            # if next_page_link:
-            #     yield SplashRequest(url=next_page_link, callback=self.parse_list_page, meta=response.meta)
+        if next_page_link:
+            yield SplashRequest(url=next_page_link, callback=self.parse_list_page, meta=response.meta)
 
     def parse_detail_page(self, response):
         item = IrishGovItem()
@@ -78,9 +83,9 @@ class IrishGovCrawler(scrapy.Spider):
         #  relying on the order only is nor enough
         # TODO: the element /time@datatime contains already XML standard date format yyyy-mm-dd; no need to parse it.
         item['published_date'] = self._extract_date(
-            response.css('div[reboot-header]').css('p')[1].css('time::text').get())
+            response.css('div[reboot-header]').css('p').css('time::text').get())
         item['updated_date'] = self._extract_date(
-            response.css('div[reboot-header]').css('p')[2].css('time::text').get())
+            response.css('div[reboot-header]').css('p').css('time::text').get())
         item['title'] = response.css("h1::text").get()
         item['content'] = response.css('div[reboot-content]').get()
         item['content_links'] = self._extract_links(response.css('div[reboot-content]').css('a'))
