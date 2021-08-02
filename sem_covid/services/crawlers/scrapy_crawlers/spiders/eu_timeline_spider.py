@@ -25,6 +25,8 @@ class EUTimelineSpider(scrapy.Spider):
         self.data = list()
         self.logger.debug(self.storage_adapter)
 
+
+
     def start_requests(self):
         yield scrapy.Request(url=self.url, callback=self.parse_main_page)
 
