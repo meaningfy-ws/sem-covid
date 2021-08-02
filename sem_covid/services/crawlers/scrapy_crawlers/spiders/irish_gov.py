@@ -9,13 +9,12 @@ import scrapy
 from scrapy.selector import SelectorList
 from scrapy_splash import SplashRequest
 from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import Rule
 
 from sem_covid import config
 from sem_covid.services.store_registry import store_registry
 from . import COVID_EUROVOC_SEARCH_TERMS
 from ..items import IrishGovItem
-
-
 
 
 class IrishGovCrawler(scrapy.Spider):
@@ -24,7 +23,7 @@ class IrishGovCrawler(scrapy.Spider):
 
     name = 'ireland-timeline'
     base_url = 'https://www.gov.ie'
-    url = 'https://www.gov.ie/en/publications/?q={term}&sort_by=published_date'
+    url = 'https://www.gov.ie/en/publications/?q=term'
     earliest_date = date(2020, 2, 1)
     date_format = '%d %B %Y'
     date_format_re = r'\d{1,2} \w+ \d{4}'
@@ -59,16 +58,13 @@ class IrishGovCrawler(scrapy.Spider):
 
         for page_link in page_links:
             date_match = self._extract_date(page_link.css('p::text').get())
-            try:
-                if self._is_in_range(date_match):
-                    # self.data.append(date_match)
-                    yield SplashRequest(url=self._build_link(page_link.css('a::attr(href)').get()),
-                                        callback=self.parse_detail_page, meta=response.meta)
-            except ValueError:
-                self.logger.error(f'data {date_match} does not match format {self.date_format}')
-
+            if self._is_in_range(date_match):
+                yield SplashRequest(url=self._build_link(page_link.css('a::attr(href)').get()),
+                                    callback=self.parse_list_page, meta=response.meta)
         if next_page_link:
             yield SplashRequest(url=next_page_link, callback=self.parse_list_page, meta=response.meta)
+            print(next_page_link)
+
 
     def parse_detail_page(self, response):
         item = IrishGovItem()
@@ -103,10 +99,16 @@ class IrishGovCrawler(scrapy.Spider):
     def _extract_date(self, text: str) -> Optional[str]:
         if text:
             date_match = re.search(self.date_format_re, str(text))
-            if date_match:
-                return date_match.group()
+            try:
+                if date_match:
+                    return date_match.group()
+            except ValueError:
+                self.logger.error(f'data {date_match} does not match format {self.date_format}')
 
     def _is_in_range(self, date_string: str) -> bool:
+        if not date_string:
+            return False
+
         return datetime.strptime(date_string, self.date_format).date() >= self.earliest_date
 
     def _extract_links(self, link_list_nodes: SelectorList) -> List[dict]:

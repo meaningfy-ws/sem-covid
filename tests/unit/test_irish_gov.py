@@ -94,9 +94,11 @@ def test_irish_gov_crawler_for_each_word_in_covid_search_terms():
     # for page in pages:
     #     url = 'https://www.gov.ie/en/publications/?q={innovation}&sort_by=published_date&page='
     #     numbered_page = url + str(page)
-    parsed_pages = irish_gov_crawler.parse_list_page(create_html_response('https://www.gov.ie/en/publications/?q={innovation}&sort_by=published_date'))
-    for each_page in list(parsed_pages):
-        irish_gov_crawler.parse_detail_page(create_html_response(each_page.url))
+    parsed_pages = irish_gov_crawler.parse_list_page(create_html_response('https://www.gov.ie/en/publications/?q=innovation'))
+    # for each_page in list(parsed_pages):
+    #     irish_gov_crawler.parse_detail_page(create_html_response(each_page.url))
     output = irish_gov_crawler.data
         # print(list(parsed_pages))
-    mock_covid_search_term_page_file.write_text(data=json.dumps(output))
+    # mock_covid_search_term_page_file.write_text(data=json.dumps(output))
+    print(output)
+
