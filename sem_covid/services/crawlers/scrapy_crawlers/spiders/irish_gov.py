@@ -127,3 +127,4 @@ class IrishGovCrawler(scrapy.Spider):
             return text.replace('\n', '').strip()
         else:
             return ''
+
