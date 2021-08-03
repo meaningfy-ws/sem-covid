@@ -10,10 +10,11 @@ from sem_covid.services.crawlers.scrapy_crawlers.spiders import COVID_EUROVOC_SE
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 
-
+# mock html pages
 MOCK_ARTICLE_PAGE = '/home/daycu/Programming/Meaningfy/sem-covid/tests/test_data/crawlers/sample_ireland_gov/innovation_keyword.html'
 MOCK_PUBLICATION = '/home/daycu/Programming/Meaningfy/sem-covid/tests/test_data/crawlers/sample_ireland_gov/mock_publication.html'
 
+# files where the data from the crawling will be store
 mock_article_page_file = pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_article_page.json'
 mock_publication_file = pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_publication.json'
 mock_covid_search_term_page_file = pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_covid_search_term_page.json'
@@ -77,8 +78,7 @@ def test_irish_gov_crawler_innovation_keyword():
         storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME),
         )
     parsed_pages = irish_gov_crawler.parse(fake_response_from_file(MOCK_ARTICLE_PAGE))
-    for page in list(parsed_pages):
-        irish_gov_crawler.parse_detail_page(create_html_response(page.url))
+    irish_gov_crawler.parse_detail_page(create_html_response(list(parsed_pages)[0].url))
 
     output = irish_gov_crawler.data
     mock_article_page_file.write_text(data=json.dumps(output))
@@ -94,8 +94,7 @@ def test_irish_gov_crawler_for_key_word_innovation():
         url = 'https://www.gov.ie/en/publications/?q=innovation&page='
         numbered_page = url + str(page_number)
         parsed_pages = irish_gov_crawler.parse(create_html_response(numbered_page))
-        for each_page in list(parsed_pages):
-            irish_gov_crawler.parse_detail_page(create_html_response(each_page.url))
+        irish_gov_crawler.parse_detail_page(create_html_response(list(parsed_pages)[0].url))
     output = irish_gov_crawler.data
     print(output)
     mock_covid_search_term_page_file.write_text(data=json.dumps(output))
