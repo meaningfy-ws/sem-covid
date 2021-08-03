@@ -96,5 +96,4 @@ def test_irish_gov_crawler_for_key_word_innovation():
         parsed_pages = irish_gov_crawler.parse(create_html_response(numbered_page))
         irish_gov_crawler.parse_detail_page(create_html_response(list(parsed_pages)[0].url))
     output = irish_gov_crawler.data
-    print(output)
     mock_covid_search_term_page_file.write_text(data=json.dumps(output))
