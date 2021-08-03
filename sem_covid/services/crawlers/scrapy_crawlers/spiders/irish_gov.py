@@ -68,10 +68,8 @@ class IrishGovCrawler(scrapy.Spider):
             'link': self._build_link(response.css('div[reboot-header]').css('p').css('a::attr(href)').get()),
             'text': response.css('div[reboot-header]').css('p').css('a::text').get()
         }
-        item['published_date'] = self._extract_date(
-            response.css('div[reboot-header]').css('p').css('time::text')[0].get())
-        item['updated_date'] = self._extract_date(
-            response.css('div[reboot-header]').css('p').css('time::text')[1].get())
+        item['published_date'] = response.css('div[reboot-header]').css('p').css('time::text')[0].get()
+        item['updated_date'] = response.css('div[reboot-header]').css('p').css('time::text')[1].get()
         item['title'] = response.css("h1::text").get()
         item['content'] = response.css('div[reboot-content]').get()
         item['content_links'] = self._extract_links(response.css('div[reboot-content]').css('a'))
