@@ -1,11 +1,9 @@
 import json
 import os
 import pathlib
-import urllib
 
-import numpy as np
 import requests
-from scrapy.http import Response, Request, TextResponse, HtmlResponse
+from scrapy.http import Request, HtmlResponse
 
 from sem_covid.services.crawlers.scrapy_crawlers.spiders import COVID_EUROVOC_SEARCH_TERMS
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
@@ -76,7 +74,7 @@ def test_irish_gov_crawler_search_milk():
         filename=FAKE_FILENAME,
         storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME),
         )
-    parsed_pages = irish_gov_crawler.parse_list_page(fake_response_from_file(MOCK_MILK_SEARCH_PAGE))
+    parsed_pages = irish_gov_crawler.parse(fake_response_from_file(MOCK_MILK_SEARCH_PAGE))
     for page in list(parsed_pages):
         irish_gov_crawler.parse_detail_page(create_html_response(page.url))
 
@@ -84,21 +82,27 @@ def test_irish_gov_crawler_search_milk():
     mock_milk_search_page_file.write_text(data=json.dumps(output))
 
 
-def test_irish_gov_crawler_for_each_word_in_covid_search_terms():
+def test_irish_gov_crawler_for_key_word_innovation():
     irish_gov_crawler = IrishGovCrawler(
         text_searches=COVID_EUROVOC_SEARCH_TERMS,
         filename=FAKE_FILENAME,
-        storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME),
-    )
-    # pages = np.arange(1, 26, 1)
-    # for page in pages:
-    #     url = 'https://www.gov.ie/en/publications/?q={innovation}&sort_by=published_date&page='
-    #     numbered_page = url + str(page)
-    parsed_pages = irish_gov_crawler.parse_list_page(create_html_response('https://www.gov.ie/en/publications/?q=innovation'))
-    # for each_page in list(parsed_pages):
-    #     irish_gov_crawler.parse_detail_page(create_html_response(each_page.url))
+        storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME))
+
+    parsed_pages = irish_gov_crawler.parse(create_html_response('https://www.gov.ie/en/publications/?q=innovation'))
+    for each_page in list(parsed_pages):
+        irish_gov_crawler.parse_detail_page(create_html_response(each_page.url))
     output = irish_gov_crawler.data
-        # print(list(parsed_pages))
-    # mock_covid_search_term_page_file.write_text(data=json.dumps(output))
+    mock_covid_search_term_page_file.write_text(data=json.dumps(output))
+
+
+def test_irish_gov_crawler_innovation_multiple_pages():
+    irish_gov_crawler = IrishGovCrawler(
+        text_searches=COVID_EUROVOC_SEARCH_TERMS,
+        filename=FAKE_FILENAME,
+        storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME))
+
+    parsed_pages = irish_gov_crawler.parse(create_html_response('https://www.gov.ie/en/publications/?q=innovation'))
+
+    output = irish_gov_crawler.data
     print(output)
 

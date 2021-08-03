@@ -8,8 +8,6 @@ from urllib.parse import urlparse
 import scrapy
 from scrapy.selector import SelectorList
 from scrapy_splash import SplashRequest
-from scrapy.linkextractors import LinkExtractor
-from scrapy.spiders import Rule
 
 from sem_covid import config
 from sem_covid.services.store_registry import store_registry
@@ -18,12 +16,9 @@ from ..items import IrishGovItem
 
 
 class IrishGovCrawler(scrapy.Spider):
-    # TODO: This class does not implement abstract scrapy.Spider methods
-    # TODO: check why parse method is not implemented and not needed?
-
     name = 'ireland-timeline'
     base_url = 'https://www.gov.ie'
-    url = 'https://www.gov.ie/en/publications/?q=term'
+    url = 'https://www.gov.ie/en/publications/?q={term}'
     earliest_date = date(2020, 2, 1)
     date_format = '%d %B %Y'
     date_format_re = r'\d{1,2} \w+ \d{4}'
@@ -40,7 +35,7 @@ class IrishGovCrawler(scrapy.Spider):
 
     def start_requests(self):
         for text_search in self.text_searches:
-            yield SplashRequest(url=self.url.format(term=text_search), callback=self.parse_list_page,
+            yield SplashRequest(url=self.url.format(term=text_search), callback=self.parse,
                                 meta={'keyword': text_search})
 
     def closed(self, reason):
@@ -52,7 +47,7 @@ class IrishGovCrawler(scrapy.Spider):
             file = Path.cwd() / self.filename
             file.write_text(dumps(self.data))
 
-    def parse_list_page(self, response):
+    def parse(self, response):
         page_links = response.css('ul[reboot-site-list]').css('li')
         next_page_link = self._build_link(response.css('a[aria-label="next"]::attr(href)').get())
 
@@ -60,11 +55,9 @@ class IrishGovCrawler(scrapy.Spider):
             date_match = self._extract_date(page_link.css('p::text').get())
             if self._is_in_range(date_match):
                 yield SplashRequest(url=self._build_link(page_link.css('a::attr(href)').get()),
-                                    callback=self.parse_list_page, meta=response.meta)
+                                    callback=self.parse_detail_page, meta=response.meta)
         if next_page_link:
-            yield SplashRequest(url=next_page_link, callback=self.parse_list_page, meta=response.meta)
-            print(next_page_link)
-
+            yield SplashRequest(url=next_page_link, callback=self.parse, meta=response.meta)
 
     def parse_detail_page(self, response):
         item = IrishGovItem()
@@ -75,13 +68,10 @@ class IrishGovCrawler(scrapy.Spider):
             'link': self._build_link(response.css('div[reboot-header]').css('p').css('a::attr(href)').get()),
             'text': response.css('div[reboot-header]').css('p').css('a::text').get()
         }
-        # TODO: sometimes it is the 2nd or third paragraph. Counter exampel here: https://www.gov.ie/en/speech/790bf-speech-by-minister-donohoe-to-the-european-financial-forum-2021-leading-the-economic-recovery/
-        #  relying on the order only is nor enough
-        # TODO: the element /time@datatime contains already XML standard date format yyyy-mm-dd; no need to parse it.
         item['published_date'] = self._extract_date(
-            response.css('div[reboot-header]').css('p').css('time::text').get())
+            response.css('div[reboot-header]').css('p').css('time::text')[0].get())
         item['updated_date'] = self._extract_date(
-            response.css('div[reboot-header]').css('p').css('time::text').get())
+            response.css('div[reboot-header]').css('p').css('time::text')[1].get())
         item['title'] = response.css("h1::text").get()
         item['content'] = response.css('div[reboot-content]').get()
         item['content_links'] = self._extract_links(response.css('div[reboot-content]').css('a'))
