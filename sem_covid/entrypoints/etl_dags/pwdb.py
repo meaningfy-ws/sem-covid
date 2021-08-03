@@ -4,6 +4,7 @@
 # Date:  22/02/2021
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
+
 import hashlib
 import json
 import logging
@@ -74,42 +75,6 @@ class PWDBMasterDag(BaseMasterPipeline):
                 trigger_dag_id=SLAVE_DAG_NAME,
                 conf={"filename": field_data_object.object_name}).execute(context)
 
-
-# def download_and_split_callable():
-#     response = requests.get(config.PWDB_DATASET_URL, stream=True, timeout=30)
-#     response.raise_for_status()
-#     minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
-#     for prefix in [None, RESOURCE_FILE_PREFIX, TIKA_FILE_PREFIX, FIELD_DATA_PREFIX]:
-#         minio.empty_bucket(object_name_prefix=prefix)
-#
-#     transformed_json = transform_pwdb(json.loads(response.content))
-#
-#     uploaded_bytes = minio.put_object(config.PWDB_DATASET_LOCAL_FILENAME,
-#                                       json.dumps(transformed_json).encode('utf-8'))
-#     logger.info('Uploaded ' + str(uploaded_bytes) + ' bytes to bucket [' + config.PWDB_COVID19_BUCKET_NAME
-#                 + '] at ' + config.MINIO_URL)
-#
-#     list_count = len(transformed_json)
-#     current_item = 0
-#     logger.info("Start splitting " + str(list_count) + " items.")
-#     for field_data in transformed_json:
-#         current_item += 1
-#         filename = FIELD_DATA_PREFIX + hashlib.sha256(field_data['title'].encode('utf-8')).hexdigest() + ".json"
-#         logger.info(
-#             '[' + str(current_item) + ' / ' + str(list_count) + '] - ' + field_data['title'] + " saved to " + filename)
-#         minio.put_object(filename, json.dumps(field_data))
-#
-#
-# def execute_worker_dags_callable(**context):
-#     minio = StoreRegistry.minio_object_store(config.PWDB_COVID19_BUCKET_NAME)
-#     field_data_objects = minio.list_objects(FIELD_DATA_PREFIX)
-#
-#     for field_data_object in field_data_objects:
-#         TriggerDagRunOperator(
-#             task_id='trigger_slave_dag____' + field_data_object.object_name.replace("/", "_"),
-#             trigger_dag_id=SLAVE_DAG_NAME,
-#             conf={"filename": field_data_object.object_name}
-#         ).execute(context)
 
 pwdb_master = PWDBMasterDag(
     store_registry=store_registry,
