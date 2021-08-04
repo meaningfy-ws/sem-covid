@@ -28,8 +28,8 @@ def test_manhattan_similarity():
 
 
 def test_get_similarity_matrix(common_word2vec_model):
-    similarity_matrix = get_similarity_matrix(common_word2vec_model.wv.vectors, common_word2vec_model.wv.index_to_key,
-                                              metric=cosine_similarity)
+    similarity_matrix = build_similarity_matrix(common_word2vec_model.wv.vectors, common_word2vec_model.wv.index_to_key,
+                                                metric=cosine_similarity)
 
     assert pd.DataFrame == type(similarity_matrix)
     assert 12 == len(similarity_matrix)
