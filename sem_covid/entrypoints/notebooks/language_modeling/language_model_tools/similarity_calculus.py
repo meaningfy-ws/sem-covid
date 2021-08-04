@@ -32,7 +32,7 @@ def build_similarity_matrix(vector: np.ndarray, keys: list, metric: callable) ->
 
         :param vector: the object that contains the mapping between words and embeddings
         :param keys: words indexes keys
-        :metric: metric distance formula
+        :param metric: metric distance formula
         :return: dataframe with similarity of each word
     """
     return pd.DataFrame(pairwise_distances(vector, metric=metric), columns=keys, index=keys)
