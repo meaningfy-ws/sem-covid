@@ -11,8 +11,8 @@ from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishG
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 
 # mock html pages
-MOCK_ARTICLE_PAGE = '/home/daycu/Programming/Meaningfy/sem-covid/tests/test_data/crawlers/sample_ireland_gov/innovation_keyword.html'
-MOCK_PUBLICATION = '/home/daycu/Programming/Meaningfy/sem-covid/tests/test_data/crawlers/sample_ireland_gov/mock_publication.html'
+MOCK_ARTICLE_PAGE = '../test_data/crawlers/sample_ireland_gov/innovation_keyword.html'
+MOCK_PUBLICATION = '../test_data/crawlers/sample_ireland_gov/mock_publication.html'
 
 # files where the data from the crawling will be store
 mock_article_page_file = pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_article_page.json'
