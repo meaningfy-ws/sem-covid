@@ -1,7 +1,10 @@
 """
     Fixtures and Fake adapters necessary for unit testing
 """
+import os
 import json
+import requests
+import pathlib
 
 import pytest
 import spacy
@@ -10,12 +13,21 @@ from sklearn import datasets, svm, model_selection
 from gensim.models import Word2Vec
 from gensim.test.utils import common_texts
 
+from scrapy.http import Request, HtmlResponse
+from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
+from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+
 from sem_covid.config_resolver import EnvConfigResolver
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
 from sem_covid.services.ml_pipelines.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
 from tests.unit.test_store.fake_storage import FakeIndexStore
 
+
+FAKE_FILENAME = 'fake_filename.json'
+FAKE_BUCKET_NAME = 'fake-bucket-name'
+KEY_WORD = ['innovation']
+store_registry = FakeStoreRegistry()
 nlp = spacy.load("en_core_web_sm")
 
 def raw_pwdb_data():
@@ -426,3 +438,65 @@ class FakeConfigResolver(object):
     @property
     def PWDB_XXX(self):
         return EnvConfigResolver.config_resolve(default_value="baubau")
+
+
+def extract_html_content_text(url: str) -> str:
+    """
+        Using requests library, it extracts the html page content and transform it into string type
+    """
+    response = requests.get(url)
+    return response.text
+
+
+def create_html_response(url: str) -> HtmlResponse:
+    """
+        It gets the inserted url and transforms it into response type for scrapy request
+    """
+    return HtmlResponse(url=url, request=Request(url=url), body=extract_html_content_text(url), encoding='utf-8')
+
+
+def fake_response_from_file(file_name: str, url: str = None) -> HtmlResponse:
+    """
+        Create a Scrapy fake HTTP response from a HTML file
+        @param file_name: The relative filename from the responses directory,
+                          but absolute paths are also accepted.
+        @param url: The URL of the response.
+        returns: A scrapy HTTP response which can be used for unit testing.
+    """
+    if not url:
+        url = 'https://www.gov.ie/en/publications/?q=innovation'
+    if not file_name[0] == '/':
+        responses_dir = os.path.dirname(os.path.realpath(__file__))
+        file_path = os.path.join(responses_dir, file_name)
+    else:
+        file_path = file_name
+    file_content = open(file_path, 'r').read()
+
+    return HtmlResponse(url=url, request=Request(url=url), body=file_content, encoding='utf-8')
+
+
+@pytest.fixture(scope="session")
+def call_irish_crawler():
+    return IrishGovCrawler(text_searches=KEY_WORD,
+                           filename=FAKE_FILENAME,
+                           storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME))
+
+
+def call_mock_article_page() -> str:
+    return '../test_data/crawlers/sample_ireland_gov/innovation_keyword.html'
+
+
+def call_mock_publication() -> str:
+    return '../test_data/crawlers/sample_ireland_gov/mock_publication.html'
+
+
+def call_mock_article_page_json() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_article_page.json'
+
+
+def call_mock_publication_json() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_publication.json'
+
+
+def call_mock_covid_search_term_page_json() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_covid_search_term_page.json'
