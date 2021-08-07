@@ -307,3 +307,7 @@ zope.interface==5.4.0; python_full_version >= "3.5.4" and python_version >= "3.6
 networkx
 d3graph
 plsa
+torch
+bertopic
+umap
+langdetect
