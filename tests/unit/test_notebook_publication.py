@@ -1,4 +1,3 @@
-
 import os
 from tests.unit.conftest import call_test_notebook, output_dir_for_converted_notebook
 from sem_covid.services.sc_wrangling.notebook_publication import convert_notebook_to_html
