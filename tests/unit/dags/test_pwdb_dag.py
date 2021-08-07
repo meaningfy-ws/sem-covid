@@ -4,8 +4,27 @@
 # Author: Eugeniu Costetchi
 # Email: costezki.eugen@gmail.com
 
+from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+from sem_covid.entrypoints.etl_dags.pwdb import DAG_NAME, PWDBMasterDag
 
-from sem_covid.entrypoints.etl_dags.pwdb import DAG_NAME
+store_registry = FakeStoreRegistry()
+FAKE_MINIO_URL = 'www.fake-url.com'
+FAKE_BUCKET_NAME = 'fake_bucket'
+FAKE_DATASET_URL = 'http://www.fake-dataset.com'
+FAKE_LOCAL_FILE = 'fake.json'
+
+
+def test_pwdb_master_dag():
+    master_dag = PWDBMasterDag(
+        store_registry=store_registry,
+        minio_url=FAKE_MINIO_URL,
+        bucket_name=FAKE_BUCKET_NAME,
+        dataset_url=FAKE_DATASET_URL,
+        dataset_local_filename=FAKE_LOCAL_FILE
+    )
+    master_dag.get_steps()
+    # master_dag.select_assets()
+
 
 
 def test_pwdb_has_two_tasks_and_order(airflow_dag_bag):
