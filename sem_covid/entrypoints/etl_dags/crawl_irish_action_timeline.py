@@ -21,7 +21,6 @@ VERSION = '0.1.4'
 DATASET_NAME = "ireland_timeline"
 DAG_TYPE = "etl"
 DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
-TIKA_FILE_PREFIX = 'tika/'
 CONTENT_PATH_KEY = 'content'
 
 crawl_dag_pipeline = CrawlDagPipeline(
