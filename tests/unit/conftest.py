@@ -490,6 +490,14 @@ def call_mock_publication() -> str:
     return '../test_data/crawlers/sample_ireland_gov/mock_publication.html'
 
 
+def call_test_notebook() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'test_folder' / 'test_notebook.ipynb'
+
+
+def output_dir_for_converted_notebook() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'test_folder'
+
+
 def call_mock_article_page_json() -> pathlib.Path:
     return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_article_page.json'
 
