@@ -21,6 +21,7 @@ ES_INDEX_NAME = 'fake_index'
 TIKA_FILE_PREFIX = 'tika/'
 RESOURCE_FILE_PREFIX = 'res/'
 
+
 def test_download_single_source():
     source = {'url': 'example.com',
               'failure_reason': 'because'}
@@ -65,7 +66,13 @@ def test_pwdb_worker_dag():
     assert "content" in minio_client.get_object(
         'tika/4c4917157d621114c4d108fb230ad337650d7c07a786ef914bae62c4c9e8ccd7.json')
 
-    # worker_dag.load(**context)
+    worker_dag.transform_structure()
+
+    tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
+        (str(fragment_pwdb()['identifier'] + fragment_pwdb()['title'])).encode('utf-8')).hexdigest()
+    minio_client.put_object(tika_filename, json.dumps(fragment_pwdb()).encode('utf-8'))
+
+    worker_dag.load(**context)
 
 
 def test_pwdb_worker_has_three_tasks_and_order(airflow_dag_bag):
