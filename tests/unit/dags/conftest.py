@@ -101,6 +101,7 @@ def get_spaqrl_result_set_fetched_as_tabular():
     return json.loads(path.read_bytes())
 
 
+@pytest.fixture(scope="session")
 def get_crawl_result():
     path = TEST_DATA_FOLDER / "crawlers" / "fake_file.json"
     return json.loads(path.read_bytes())
