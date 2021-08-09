@@ -89,7 +89,7 @@ class PWDBDagWorker(BaseETLPipeline):
         logger.info('Using Apache Tika at ' + self.apache_tika_url)
 
         minio = self.store_registry.minio_object_store(self.bucket_name)
-        field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+        field_data = json.loads(minio.get_object(filename))
 
         valid_sources = 0
 
@@ -143,7 +143,7 @@ class PWDBDagWorker(BaseETLPipeline):
             self.elasticsearch_port))
 
         minio = self.store_registry.minio_object_store(self.bucket_name)
-        original_field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+        original_field_data = json.loads(minio.get_object(filename))
         tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
             (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()
         logger.info("Tika-processed filename is " + tika_filename)
