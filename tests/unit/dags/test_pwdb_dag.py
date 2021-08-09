@@ -4,13 +4,16 @@
 # Author: Eugeniu Costetchi
 # Email: costezki.eugen@gmail.com
 
+import pytest
+from airflow.exceptions import DagNotFound
+
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 from sem_covid.entrypoints.etl_dags.pwdb import DAG_NAME, PWDBMasterDag
 
 store_registry = FakeStoreRegistry()
 FAKE_MINIO_URL = 'www.fake-url.com'
 FAKE_BUCKET_NAME = 'fake_bucket'
-FAKE_DATASET_URL = 'http://www.fake-dataset.com'
+FAKE_DATASET_URL = 'http://static.eurofound.europa.eu/covid19db/data/covid19db.json'
 FAKE_LOCAL_FILE = 'fake.json'
 
 
@@ -23,8 +26,11 @@ def test_pwdb_master_dag():
         dataset_local_filename=FAKE_LOCAL_FILE
     )
     master_dag.get_steps()
-    # master_dag.select_assets()
+    master_dag.select_assets()
 
+    with pytest.raises(DagNotFound):
+        # we test that the work is found and loaded but we don't test triggering in the airflow environment
+        master_dag.trigger_workers()
 
 
 def test_pwdb_has_two_tasks_and_order(airflow_dag_bag):
