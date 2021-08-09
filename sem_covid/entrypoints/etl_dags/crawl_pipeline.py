@@ -110,7 +110,7 @@ class CrawlDagPipeline(BaseETLPipeline):
                     f'Sending to ElasticSearch ( {self.elasticsearch_index_name} ) the object {item.object_name}')
                 es_adapter.index(index_name=self.elasticsearch_index_name,
                                  document_id=item.object_name.split("/")[1],
-                                 document_body=loads(minio.get_object(item.object_name).decode('utf-8')))
+                                 document_body=loads(minio.get_object(item.object_name)))
             except Exception as exception:
                 logger.exception(exception)
                 raise exception
