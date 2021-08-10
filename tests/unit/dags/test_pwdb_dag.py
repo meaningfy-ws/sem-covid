@@ -8,7 +8,7 @@ import pytest
 from airflow.exceptions import DagNotFound
 
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
-from sem_covid.entrypoints.etl_dags.pwdb import DAG_NAME, PWDBMasterDag
+from sem_covid.entrypoints.etl_dags.pwdb_dags import DAG_NAME, PWDBMasterDag
 
 store_registry = FakeStoreRegistry()
 FAKE_MINIO_URL = 'www.fake-url.com'
