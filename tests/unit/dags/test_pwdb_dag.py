@@ -8,7 +8,8 @@ import pytest
 from airflow.exceptions import DagNotFound
 
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
-from sem_covid.entrypoints.etl_dags.pwdb_dags import DAG_NAME, PWDBMasterDag
+from sem_covid.entrypoints.etl_dags.pwdb_master import PWDBMasterDag
+from sem_covid.entrypoints.etl_dags.pwdb_dags import MASTER_DAG_NAME
 
 store_registry = FakeStoreRegistry()
 FAKE_MINIO_URL = 'www.fake-url.com'
@@ -34,7 +35,7 @@ def test_pwdb_master_dag():
 
 
 def test_pwdb_has_two_tasks_and_order(airflow_dag_bag):
-    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    dag = airflow_dag_bag.get_dag(dag_id=MASTER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))

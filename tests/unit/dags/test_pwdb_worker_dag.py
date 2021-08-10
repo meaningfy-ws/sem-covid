@@ -10,7 +10,8 @@ import pytest
 
 from tests.unit.dags.conftest import AttrDict, fragment_pwdb
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
-from sem_covid.entrypoints.etl_dags.pwdb_worker import DAG_NAME, download_single_source, PWDBDagWorker
+from sem_covid.entrypoints.etl_dags.pwdb_worker import download_single_source, PWDBDagWorker
+from sem_covid.entrypoints.etl_dags.pwdb_dags import WORKER_DAG_NAME
 
 store_registry = FakeStoreRegistry()
 MINIO_BUCKET_NAME = 'fake_bucket'
@@ -76,7 +77,7 @@ def test_pwdb_worker_dag():
 
 
 def test_pwdb_worker_has_three_tasks_and_order(airflow_dag_bag):
-    dag = airflow_dag_bag.get_dag(dag_id=DAG_NAME)
+    dag = airflow_dag_bag.get_dag(dag_id=WORKER_DAG_NAME)
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
