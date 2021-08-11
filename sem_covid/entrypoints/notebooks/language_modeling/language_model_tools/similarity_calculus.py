@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from gensim.models import KeyedVectors
+from scipy.spatial.distance import squareform, pdist
 from sklearn.metrics import pairwise_distances
 
 
@@ -25,7 +26,7 @@ def manhattan_similarity(vector_1: np.array, vector_2: np.array) -> np.float:
     return 1 / (1 + np.sum(np.abs(vector_1 - vector_2)))
 
 
-def build_similarity_matrix(vector: np.ndarray, keys: list, metric: callable) -> pd.DataFrame:
+def build_similarity_matrix(vector: np.ndarray, keys: list, metric: str) -> pd.DataFrame:
     """
         creates a dataframe based on keys and vectors from pretrained gensim model
         and selected similarity function
@@ -35,4 +36,4 @@ def build_similarity_matrix(vector: np.ndarray, keys: list, metric: callable) ->
         :param metric: metric distance formula
         :return: dataframe with similarity of each word
     """
-    return pd.DataFrame(pairwise_distances(vector, metric=metric), columns=keys, index=keys)
+    return pd.DataFrame(squareform(pdist(vector, metric=metric)), columns=keys, index=keys)
