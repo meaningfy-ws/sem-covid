@@ -8,6 +8,7 @@
 import pandas as pd
 
 from sem_covid.adapters.abstract_store import FeatureStoreABC, ObjectStoreABC
+import pickle
 
 
 class MinioFeatureStore(FeatureStoreABC):
@@ -16,7 +17,7 @@ class MinioFeatureStore(FeatureStoreABC):
         self._object_store = object_store
 
     def get_features(self, features_name: str) -> pd.DataFrame:
-        return self._object_store.get_object(object_name=features_name)
+        return pickle.loads(self._object_store.get_object(object_name=features_name))
 
     def put_features(self, features_name: str, content: pd.DataFrame):
-        self._object_store.put_object(object_name=features_name, content=content)
+        self._object_store.put_object(object_name=features_name, content=pickle.dumps(content))
