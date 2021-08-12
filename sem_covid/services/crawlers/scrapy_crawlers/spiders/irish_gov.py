@@ -18,13 +18,15 @@ from ..items import IrishGovItem
 class IrishGovCrawler(scrapy.Spider):
     name = 'ireland-timeline'
     base_url = 'https://www.gov.ie'
-    url = 'https://www.gov.ie/en/publications/?q={term}'
+    url = 'https://www.gov.ie/en/search/?q={term}&sort_by=published_date&type=press_releases'
     earliest_date = date(2020, 2, 1)
     date_format = '%d %B %Y'
     date_format_re = r'\d{1,2} \w+ \d{4}'
 
+    search_terms = [term.replace(" ", "+") for term in COVID_EUROVOC_SEARCH_TERMS]
+
     def __init__(self, *args, filename: str = config.IRELAND_TIMELINE_JSON,
-                 text_searches: List[str] = COVID_EUROVOC_SEARCH_TERMS,
+                 text_searches: List[str] = search_terms,
                  storage_adapter=store_registry.minio_object_store(config.IRELAND_TIMELINE_BUCKET_NAME),
                  **kwargs):
         super().__init__(*args, **kwargs)
