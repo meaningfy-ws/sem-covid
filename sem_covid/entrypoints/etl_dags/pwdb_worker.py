@@ -8,21 +8,11 @@
 import hashlib
 import json
 import logging
-from datetime import datetime, timedelta
-
 import requests
-from airflow import DAG
-from airflow.operators.python import PythonOperator
 from tika import parser
-
-from sem_covid import config
-from sem_covid.services.store_registry import store_registry, StoreRegistryABC
+from sem_covid.services.store_registry import StoreRegistryABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 
-VERSION = '0.01'
-DATASET_NAME = "pwdb_worker"
-DAG_TYPE = "etl"
-DAG_NAME = DAG_TYPE + '_' + DATASET_NAME + '_' + VERSION
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 CONTENT_LANGUAGE = "language"
@@ -58,6 +48,10 @@ class PWDBDagWorker(BaseETLPipeline):
         self.elasticsearch_port = elasticsearch_port
         self.elasticsearch_index_name = elasticsearch_index_name
 
+    def get_steps(self) -> list:
+        return [self.extract,
+                self.transform_content, self.load]
+
     def extract(self, **context) -> None:
         if "filename" not in context['dag_run'].conf:
             logger.error(
@@ -66,7 +60,7 @@ class PWDBDagWorker(BaseETLPipeline):
         filename = context['dag_run'].conf['filename']
         logging.info('Processing the file ' + filename)
         minio = self.store_registry.minio_object_store(self.bucket_name)
-        field_data = json.loads(minio.get_object(filename).decode('utf-8'))
+        field_data = json.loads(minio.get_object(filename))
 
         if not field_data['end_date']:
             field_data['end_date'] = None  # Bozo lives here
@@ -158,36 +152,3 @@ class PWDBDagWorker(BaseETLPipeline):
                          document_body=tika_field_data)
 
         logger.info('Sent ' + tika_filename + '  to ElasticSearch.')
-
-
-pwdb_worker = PWDBDagWorker(
-    store_registry=store_registry,
-    bucket_name=config.PWDB_COVID19_BUCKET_NAME,
-    apache_tika_url=config.APACHE_TIKA_URL,
-    elasticsearch_host_name=config.ELASTICSEARCH_HOST_NAME,
-    elasticsearch_port=config.ELASTICSEARCH_PORT,
-    elasticsearch_index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME
-)
-
-default_args = {
-    "owner": "airflow",
-    "depends_on_past": False,
-    "start_date": datetime(2021, 2, 22),
-    "email": ["mclaurentiu79@gmail.com"],
-    "email_on_failure": False,
-    "email_on_retry": False,
-    "retries": 0,
-    "retry_delay": timedelta(minutes=3600)
-}
-
-with DAG(DAG_NAME, default_args=default_args, schedule_interval=None, max_active_runs=4, concurrency=4) as dag:
-    enrich_task = PythonOperator(task_id='Enrich',
-                                 python_callable=pwdb_worker.extract, retries=1, dag=dag)
-
-    tika_task = PythonOperator(task_id='Tika',
-                               python_callable=pwdb_worker.transform_content, retries=1, dag=dag)
-
-    elasticsearch_task = PythonOperator(task_id='ElasticSearch',
-                                        python_callable=pwdb_worker.load, retries=1, dag=dag)
-
-    enrich_task >> tika_task >> elasticsearch_task

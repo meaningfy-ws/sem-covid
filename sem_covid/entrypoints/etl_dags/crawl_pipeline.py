@@ -39,7 +39,9 @@ class CrawlDagPipeline(BaseETLPipeline):
     """
         Pipeline for data crawling
     """
-    def __init__(self, store_registry: StoreRegistryABC, file_name: str, bucket_name: str, elasticsearch_index_name: str,
+
+    def __init__(self, store_registry: StoreRegistryABC, file_name: str, bucket_name: str,
+                 elasticsearch_index_name: str,
                  content_path_key: str, scrapy_crawler) -> None:
         self.store_registry = store_registry
         self.file_name = file_name
@@ -47,6 +49,10 @@ class CrawlDagPipeline(BaseETLPipeline):
         self.elasticsearch_index_name = elasticsearch_index_name
         self.content_path_key = content_path_key
         self.scrapy_crawler = scrapy_crawler
+
+    def get_steps(self) -> list:
+        return [self.extract, self.transform_structure,
+                self.load]
 
     def extract(self, *args, **kwargs) -> None:
         logger.info('start crawler')
@@ -114,5 +120,3 @@ class CrawlDagPipeline(BaseETLPipeline):
             except Exception as exception:
                 logger.exception(exception)
                 raise exception
-
-
