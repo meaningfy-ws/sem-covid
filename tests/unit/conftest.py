@@ -15,6 +15,7 @@ from gensim.test.utils import common_texts
 
 from scrapy.http import Request, HtmlResponse
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
+from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
 from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
 
 from sem_covid.config_resolver import EnvConfigResolver
@@ -482,6 +483,14 @@ def call_irish_crawler():
                            storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME))
 
 
+@pytest.fixture(scope="session")
+def call_eu_timeline_crawler():
+    return EUTimelineSpider(
+        storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME),
+        filename=FAKE_FILENAME
+    )
+
+
 def call_mock_article_page() -> str:
     return '../test_data/crawlers/sample_ireland_gov/innovation_keyword.html'
 
@@ -500,3 +509,11 @@ def call_mock_publication_json() -> pathlib.Path:
 
 def call_mock_covid_search_term_page_json() -> pathlib.Path:
     return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_ireland_gov' / 'saved_data' / 'mock_covid_search_term_page.json'
+
+
+def call_eu_timeline_main_page() -> str:
+    return '../test_data/crawlers/sample_eu_timeline/eu_timeline_main_page.html'
+
+
+def call_eu_timeline_main_page_json() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_eu_timeline' / 'saved_data' / 'eu_timeline_main_page.json'
