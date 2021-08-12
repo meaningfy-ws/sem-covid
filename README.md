@@ -27,7 +27,7 @@ This project covers the data extraction and preparation for the machine learning
   what a COVID-19 measure looks like.
   - [Readme](docs/data-catalog/ds_pwdb.md)
   - [Download](docs/data-catalog/ds_pwdb.zip)
-- *EU Cellar COVID-19 dataset (ds_eu_cellar)* - The Cellar is the semantic repository of the Publications Offic
+- *EU Cellar COVID-19 dataset (ds_eu_cellar)* - The Cellar is the semantic repository of the Publications Office
   - [Readme](docs/data-catalog/ds_eu_cellar.md)
   - [Download](docs/data-catalog/ds_eu_cellar.zip)
 - *EU action timeline dataset (ds_eu_timeline)* - The European Commission (EC) is coordinating a common 
@@ -36,8 +36,8 @@ This project covers the data extraction and preparation for the machine learning
   - [Download](docs/data-catalog/ds_eu_timeline.zip)  
 - *Ireland action timeline dataset (ds_ireland_timeline)* - Ireland was selected as a tryout member state country for 
   which a COVID-19 timeline shall be created similar to the EU action timeline.
-  - [Readme](docs/data-catalog/ds_ireland_tinmeline.md)
-  - [Download](docs/data-catalog/ds_ireland_tinmeline.zip)
+  - [Readme](docs/data-catalog/ds_ireland_timeline.md)
+  - [Download](docs/data-catalog/ds_ireland_timeline.zip)
 
 ## Running the code
 
