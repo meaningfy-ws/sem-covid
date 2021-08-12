@@ -17,10 +17,10 @@ DATASET_NAME = "pwdb"
 DAG_TYPE = "etl"
 MAJOR = 0
 MINOR = 2
-MASTER_DAG_NAME = dag_name(category="etl", name="pwdb_master", version_major=MAJOR,
+MASTER_DAG_NAME = dag_name(category=DAG_TYPE, name=DATASET_NAME + "_master", version_major=MAJOR,
                            version_minor=MINOR)
 
-WORKER_DAG_NAME = dag_name(category="etl", name="pwdb_worker", version_major=MAJOR,
+WORKER_DAG_NAME = dag_name(category=DAG_TYPE, name=DATASET_NAME + "_worker", version_major=MAJOR,
                            version_minor=MINOR)
 
 pwdb_master = PWDBMasterDag(
