@@ -6,10 +6,11 @@ from sem_covid.entrypoints.etl_dags.crawl_pipeline import CrawlDagPipeline
 from sem_covid.services.store_registry import store_registry
 
 CONTENT_PATH_KEY = 'detail_content'
-
+DAG_TYPE = 'etl'
+DATASET_NAME = "eu_timeline"
 MAJOR = 2
 MINOR = 5
-DAG_NAME = dag_name(category="etl", name="eu_timeline", version_major=MAJOR,
+DAG_NAME = dag_name(category=DAG_TYPE, name=DATASET_NAME, version_major=MAJOR,
                     version_minor=MINOR)
 
 crawl_dag_pipeline = CrawlDagPipeline(
