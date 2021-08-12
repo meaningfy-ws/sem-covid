@@ -16,6 +16,7 @@ FAKE_MINIO_URL = 'www.fake-url.com'
 FAKE_BUCKET_NAME = 'fake_bucket'
 FAKE_DATASET_URL = 'http://static.eurofound.europa.eu/covid19db/data/covid19db.json'
 FAKE_LOCAL_FILE = 'fake.json'
+WORKER_DAG = 'worker_dag'
 
 
 def test_pwdb_master_dag():
@@ -24,7 +25,8 @@ def test_pwdb_master_dag():
         minio_url=FAKE_MINIO_URL,
         bucket_name=FAKE_BUCKET_NAME,
         dataset_url=FAKE_DATASET_URL,
-        dataset_local_filename=FAKE_LOCAL_FILE
+        dataset_local_filename=FAKE_LOCAL_FILE,
+        worker_dag_name=WORKER_DAG
     )
     master_dag.get_steps()
     master_dag.select_assets()
