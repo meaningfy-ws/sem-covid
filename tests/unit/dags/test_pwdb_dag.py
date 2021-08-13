@@ -41,16 +41,16 @@ def test_pwdb_has_two_tasks_and_order(airflow_dag_bag):
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
-    assert {'download_and_split', 'execute_worker_dags'}.issubset(set(task_ids))
+    assert {'select_assets', 'trigger_workers'}.issubset(set(task_ids))
 
-    download_and_split_task = dag.get_task('download_and_split')
+    download_and_split_task = dag.get_task('select_assets')
     upstream_task_ids = list(map(lambda task: task.task_id, download_and_split_task.upstream_list))
     assert not upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, download_and_split_task.downstream_list))
-    assert 'execute_worker_dags' in downstream_task_ids
+    assert 'trigger_workers' in downstream_task_ids
 
-    execute_worker_dags_task = dag.get_task('execute_worker_dags')
+    execute_worker_dags_task = dag.get_task('trigger_workers')
     upstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.upstream_list))
-    assert 'download_and_split' in upstream_task_ids
+    assert 'select_assets' in upstream_task_ids
     downstream_task_ids = list(map(lambda task: task.task_id, execute_worker_dags_task.downstream_list))
     assert not downstream_task_ids

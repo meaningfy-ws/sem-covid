@@ -13,22 +13,22 @@ def test_crawl_irish_action_timeline_has_three_tasks_and_order(airflow_dag_bag):
     assert dag is not None
     tasks = dag.tasks
     task_ids = list(map(lambda task: task.task_id, tasks))
-    assert {'Crawl', 'Tika', 'Elasticsearch'}.issubset(set(task_ids))
+    assert {'extract', 'transform_structure', 'load'}.issubset(set(task_ids))
 
-    crawl_task = dag.get_task('Crawl')
+    crawl_task = dag.get_task('extract')
     upstream_task_id = list(map(lambda task: task.task_id, crawl_task.upstream_list))
     assert not upstream_task_id
     downstream_task_id = list(map(lambda task: task.task_id, crawl_task.downstream_list))
-    assert 'Tika' in downstream_task_id
+    assert 'transform_structure' in downstream_task_id
 
-    tika_task = dag.get_task('Tika')
+    tika_task = dag.get_task('transform_structure')
     upstream_task_id = list(map(lambda task: task.task_id, tika_task.upstream_list))
-    assert 'Crawl' in upstream_task_id
+    assert 'extract' in upstream_task_id
     downstream_task_id = list(map(lambda task: task.task_id, tika_task.downstream_list))
-    assert 'Elasticsearch' in downstream_task_id
+    assert 'load' in downstream_task_id
 
-    elastic_search_task = dag.get_task('Elasticsearch')
+    elastic_search_task = dag.get_task('load')
     upstream_task_id = list(map(lambda task: task.task_id, elastic_search_task.upstream_list))
-    assert 'Tika' in upstream_task_id
+    assert 'transform_structure' in upstream_task_id
     downstream_task_id = list(map(lambda task: task.task_id, elastic_search_task.downstream_list))
     assert not downstream_task_id
