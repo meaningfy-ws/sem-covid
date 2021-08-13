@@ -4,6 +4,9 @@
 # Date:  10.08.2021
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
+import logging
+
+import airflow
 
 from sem_covid import config
 from sem_covid.adapters.dag.dag_factory import DagFactory
@@ -11,6 +14,11 @@ from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.etl_dags.pwdb_master import PWDBMasterDag
 from sem_covid.entrypoints.etl_dags.pwdb_worker import PWDBDagWorker
 from sem_covid.services.store_registry import store_registry
+
+logger = logging.getLogger(__name__)
+logger.debug(f"This line is important for DAG discovery because the *airflow module* "
+             f"shall be imported here. Otherwise it does not discover DAGs in this "
+             f"module. Airflow version {airflow.__version__}")
 
 VERSION = '0.01'
 DATASET_NAME = "pwdb"
