@@ -27,12 +27,28 @@ DOCUMENT_EMBEDDING_METHOD_NOT_FOUND = 'not_found_embedding_method'
 
 
 class DocumentSimilarityPipeline:
+    """
+            This pipeline performs the document similarity calculation based on document embeddings.
+        This pipeline consists of the following steps:
+        1. Download document embeddings.
+        2. Calculation of similarity data.
+        3. Saving similarities.
+        4. [Optional] Drawing histograms based on the similarity distribution between datasets.
 
+    """
     def __init__(self, document_embeddings_index: str, similarity_metric,
                  similarity_metric_name: str,
                  store_registry: StoreRegistryABC,
                  figures_path: Path = None
                  ):
+        """
+           Document similarity pipeline  depends on the following parameters.
+        :param document_embeddings_index: elastic search index name where is stored document embeddings for all datasets
+        :param similarity_metric: function or metric name of similarity
+        :param similarity_metric_name: similarity metric name what will be stored in metadata.
+        :param store_registry: a register of different types of storage
+        :param figures_path: path where histogram figures will be stored
+        """
         self.document_embeddings_index = document_embeddings_index
         self.similarity_metric = similarity_metric
         self.prepared_data = None
@@ -45,6 +61,10 @@ class DocumentSimilarityPipeline:
         self.dataset = pd.DataFrame()
 
     def load_document_embeddings(self):
+        """
+           This method performs the step of loading document embeddings.
+        :return:
+        """
         es_index_store = self.store_registry.es_index_store()
         self.dataset = es_index_store.get_dataframe(index_name=self.document_embeddings_index)
         self.dataset_names = list(set(self.dataset.source.values))
@@ -52,7 +72,17 @@ class DocumentSimilarityPipeline:
                                     for dataset_name in self.dataset_names}
 
     def prepare_similarity_data(self):
+        """
+            This method calculates the similarity between documents based on document embeddings.
+        :return:
+        """
         def prepare_worker(name_x: str, name_y: str) -> dict:
+            """
+                This function is a nested auxiliary function in order to perform a task in parallel.
+            :param name_x: the name of the dataset that will be placed on the X axis in the similarity matrix.
+            :param name_y: the name of the dataset that will be placed on the Y axis in the similarity matrix.
+            :return:
+            """
             similarity_matrix = pd.DataFrame(
                 pairwise_distances(X=self.document_embeddings[name_x][DOCUMENT_EMBEDDING].to_list(),
                                    Y=self.document_embeddings[name_y][DOCUMENT_EMBEDDING].to_list(),
@@ -77,6 +107,10 @@ class DocumentSimilarityPipeline:
             self.prepared_data = [future.result() for future in futures]
 
     def save_similarity_list(self):
+        """
+            This method saves the calculated similarities in a list of tuples, stored in DataFrame formats.
+        :return:
+        """
         es_feature_store = self.store_registry.es_feature_store()
         self.document_embeddings_method = list(self.document_embeddings.values())[0][DOCUMENT_EMBEDDING_METHOD][0]
         for data in self.prepared_data:
@@ -89,8 +123,12 @@ class DocumentSimilarityPipeline:
             es_feature_store.put_features(features_name=similarity_feature_name,
                                           content=data[SIMILARITY_LIST]
                                           )
-            
+
     def plot_histograms(self):
+        """
+            This method generates histograms based on the similarity distribution between the documents of two datasets.
+        :return:
+        """
         if self.figures_path:
             plt.subplots(figsize=(10, 5))
             for data in self.prepared_data:
@@ -100,6 +138,10 @@ class DocumentSimilarityPipeline:
                 plot.figure.clf()
 
     def execute(self):
+        """
+            This method performs the steps of the pipeline in the required order.
+        :return:
+        """
         self.load_document_embeddings()
         self.prepare_similarity_data()
         self.save_similarity_list()
