@@ -10,8 +10,6 @@ from ..items import EuActionTimelineItem
 
 
 class EUTimelineSpider(scrapy.Spider):
-    # TODO: This class does not implement abstract scrapy.Spider methods
-    # TODO: check why parse method is not implemented and not needed?
     name = 'eu-timeline'
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
     presscorner_base_url = 'https://ec.europa.eu/commission/presscorner/detail'
@@ -41,13 +39,12 @@ class EUTimelineSpider(scrapy.Spider):
             if not index % 2:
                 self.logger.info(f'Processing data for {month_name}.')
                 month_name = block.xpath('*/h2/text()').get()
-
             else:
                 month_timeline = block.xpath('*//li[@class="timeline__list__item"]')
                 for month in month_timeline:
                     date = month.xpath('*[@class="timeline__list__item__title"]/text()').get()
                     title = month.xpath('*//h4//text()').get()
-                    body = ' '.join(month.xpath('*//p[string-length(text()) > 0]').extract())
+                    body = ' '.join(month.xpath('*//p[string-length(text()) > 0]/text()').extract())
 
                     presscorner_links = [link.attrib['href'] for link in month.xpath('*//p//a') if
                                          self.presscorner_base_url in link.attrib.get('href', '')]
@@ -86,16 +83,13 @@ class EUTimelineSpider(scrapy.Spider):
             abstract=meta['abstract'],
             presscorner_links=meta['presscorner_links'],
             all_links=meta['all_links'],
-            detail_link=response.url
+            detail_link=response.url,
         )
-
         metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
-        item['detail_metadata'] = {
-            'type': metadata[0].get(),
-            'date': metadata[1].get(),
-            'location': metadata[2].get()
-        }
-        item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]').get()
+        item['detail_type'] = metadata[0].get()
+        item['detail_date'] = metadata[1].get()
+        item['detail_location'] = metadata[2].get()
+        item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]//text()').get()
         item['detail_title'] = response.xpath(
             '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
 

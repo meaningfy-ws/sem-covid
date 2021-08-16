@@ -3,7 +3,7 @@ import pandas as pd
 
 def convert_to_binary_matrix(data: pd.DataFrame) -> pd.DataFrame:
     """
-     Function to get binary-matrix from DataFrame
+    Function to get binary-matrix from DataFrame
     """
     binary_matrix = pd.DataFrame([], dtype=object)
     for index, row in data.iterrows():

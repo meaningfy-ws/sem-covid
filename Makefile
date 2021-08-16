@@ -52,7 +52,7 @@ lint:
 # Getting secrets from Vault
 #-----------------------------------------------------------------------------
 
-# Testing whether an env variable is set or not
+# Testing whether an .env variable is set or not
 guard-%:
 	@ if [ "${${*}}" = "" ]; then \
         echo "$(BUILD_PRINT)Environment variable $* not set"; \
@@ -99,11 +99,11 @@ vault_secret_fetch: vault_secret_to_dotenv vault_secret_to_json
 #-----------------------------------------------------------------------------
 start-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file ../.env up -d splash
+	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
 
 stop-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file ../.env stop splash
+	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
 
 start_airflow:
 	@ echo "$(BUILD_PRINT)Starting the Airflow scheduler and webserver"

@@ -67,5 +67,5 @@ def clean_remove_stopwords(text: str) -> str:
 def clean_text_from_specific_characters(text: str, characters: List[str]) -> str:
     result = text
     for character in characters:
-        result = result.replace(character, "")
+        result = result.replace(character, " ")
     return clean(result, fix_unicode=True)
