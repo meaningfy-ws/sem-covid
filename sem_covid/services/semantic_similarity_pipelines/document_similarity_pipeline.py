@@ -89,38 +89,7 @@ class DocumentSimilarityPipeline:
             es_feature_store.put_features(features_name=similarity_feature_name,
                                           content=data[SIMILARITY_LIST]
                                           )
-
-    # def save_similarity_pairs(self):
-    #
-    #     def generate_new_row(row_index, dataframe, column_suffix):
-    #         new_row = pd.Series(dataframe.loc[row_index])
-    #         new_row[DOCUMENT_ID] = new_row.name
-    #         new_row.index = list(map(lambda x: x + column_suffix, new_row.index))
-    #         return new_row
-    #
-    #     def combine_two_rows(left_row: pd.Series, right_row: pd.Series, similarity_metric: str,
-    #                          similarity_metric_value: float) -> pd.Series:
-    #         new_combined_row = left_row.append(right_row)
-    #         new_combined_row[SIMILARITY_METRIC] = similarity_metric
-    #         new_combined_row[SIMILARITY_METRIC_VALUE] = similarity_metric_value
-    #         new_combined_row.name = hashlib.sha256(
-    #             (str(left_row.name) + str(right_row.name)).encode('utf-8')).hexdigest()
-    #         return new_combined_row
-    #
-    #     es_index_store = self.store_registry.es_index_store()
-    #
-    #     for data in self.prepared_data:
-    #         sim_matrix = data[SIMILARITY_MATRIX]
-    #         sim_pairs_list = [combine_two_rows(generate_new_row(row_index_left, self.dataset, '_left'),
-    #                                            generate_new_row(row_index_right, self.dataset, '_right'),
-    #                                            self.similarity_metric_name,
-    #                                            sim_matrix.loc[row_index_left][row_index_right])
-    #                           for row_index_left in sim_matrix.index
-    #                           for row_index_right in sim_matrix.columns]
-    #         similarity_pairs_df = pd.DataFrame(sim_pairs_list)
-    #         es_index_store.put_dataframe(index_name=f"sm_{data[DOCUMENT_NAME_X]}_X_{data[DOCUMENT_NAME_Y]}",
-    #                                      content=similarity_pairs_df)
-
+            
     def plot_histograms(self):
         if self.figures_path:
             plt.subplots(figsize=(10, 5))
@@ -134,5 +103,4 @@ class DocumentSimilarityPipeline:
         self.load_document_embeddings()
         self.prepare_similarity_data()
         self.save_similarity_list()
-        # self.save_similarity_pairs()
         self.plot_histograms()
