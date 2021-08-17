@@ -29,6 +29,7 @@ class DocumentEmbeddingPipeline:
         3. Transforming documents into embedding vectors.
         4. Storage of calculated embedding vectors.
     """
+
     def __init__(self, es_index_name: str, textual_columns: list,
                  embedding_model: SentenceEmbeddingModelABC, embedding_model_name: str,
                  store_registry: StoreRegistryABC, doc_emb_feature_store_name: str,
@@ -99,9 +100,9 @@ class DocumentEmbeddingPipeline:
         """
         assert self.prepared_dataset is not None
         assert DOCUMENT_EMBEDDING in self.prepared_dataset.columns
-        es_feature_store = self.store_registry.es_feature_store()
-        es_feature_store.put_features(features_name=self.doc_emb_feature_store_name,
-                                      content=self.prepared_dataset)
+        es_index_store = self.store_registry.es_index_store()
+        es_index_store.put_dataframe(index_name=self.doc_emb_feature_store_name,
+                                     content=self.prepared_dataset)
 
     def execute(self):
         """

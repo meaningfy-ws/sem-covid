@@ -5,7 +5,10 @@
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
 import math
-from sem_covid.services.store_registry import store_registry
+
+import pandas as pd
+
+from sem_covid.services.store_registry import StoreRegistryABC
 
 
 class SemanticSimilaritySamplingPipeline:
@@ -16,7 +19,8 @@ class SemanticSimilaritySamplingPipeline:
                  doc_emb_feature_store_name: str,
                  sample_index_name: str,
                  sample_size: int,
-                 metric_column_name: str
+                 metric_column_name: str,
+                 store_registry: StoreRegistryABC
                  ):
         """
             This pipeline depends on the following parameters:
@@ -34,13 +38,14 @@ class SemanticSimilaritySamplingPipeline:
         self.sm_df = None
         self.sm_sample = None
         self.doc_emb_df = None
+        self.store_registry = store_registry
 
     def load_data(self):
         """
             This method loads the required data.
         :return:
         """
-        es_store = store_registry.es_index_store()
+        es_store = self.store_registry.es_index_store()
         self.sm_df = es_store.get_dataframe(index_name=self.semantic_similarity_index_name)
         self.doc_emb_df = es_store.get_dataframe(index_name=self.doc_emb_feature_store_name)
 
@@ -51,7 +56,7 @@ class SemanticSimilaritySamplingPipeline:
         """
         self.sm_df.sort_values(by=self.metric_column_name, inplace=True)
         step = math.floor(len(self.sm_df) / self.sample_size)
-        self.sm_sample = self.sm_df.iloc[:self.sample_size * step:step]
+        self.sm_sample = pd.DataFrame(self.sm_df.iloc[:self.sample_size * step:step])
         self.sm_sample['text_left'] = self.sm_sample.apply(lambda df_row: self.doc_emb_df.loc[df_row[0], 'text'],
                                                            axis=1)
         self.sm_sample['text_right'] = self.sm_sample.apply(lambda df_row: self.doc_emb_df.loc[df_row[1], 'text'],
@@ -62,7 +67,7 @@ class SemanticSimilaritySamplingPipeline:
             This method stores the calculated sample.
         :return:
         """
-        es_store = store_registry.es_index_store()
+        es_store = self.store_registry.es_index_store()
         es_store.put_dataframe(index_name=self.sample_index_name, content=self.sm_sample)
 
     def execute(self):

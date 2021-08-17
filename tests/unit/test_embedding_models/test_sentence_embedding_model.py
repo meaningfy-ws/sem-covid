@@ -11,7 +11,7 @@ from sem_covid.adapters.embedding_models import (AverageSentenceEmbeddingModel, 
                                                  UniversalSentenceEmbeddingModel,
                                                  EurLexBertSentenceEmbeddingModel)
 from tests.unit.conftest import nlp
-from tests.unit.test_embedding_models.fake_keyed_vectors import FakeKeyedVectors
+from tests.fake_keyed_vectors import FakeKeyedVectors
 
 SENTENCES = [
     'Rather than having all of its functionality built into its core.',

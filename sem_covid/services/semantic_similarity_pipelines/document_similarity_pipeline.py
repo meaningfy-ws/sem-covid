@@ -7,6 +7,7 @@
 import concurrent.futures
 import hashlib
 
+import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 from sklearn.metrics import pairwise_distances
@@ -26,6 +27,9 @@ SIMILARITY_METRIC_VALUE = 'similarity_metric_value'
 DOCUMENT_EMBEDDING_METHOD_NOT_FOUND = 'not_found_embedding_method'
 
 
+def cosine_similarity(u, v):
+    return np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v))
+
 class DocumentSimilarityPipeline:
     """
             This pipeline performs the document similarity calculation based on document embeddings.
@@ -36,6 +40,7 @@ class DocumentSimilarityPipeline:
         4. [Optional] Drawing histograms based on the similarity distribution between datasets.
 
     """
+
     def __init__(self, document_embeddings_index: str, similarity_metric,
                  similarity_metric_name: str,
                  store_registry: StoreRegistryABC,
@@ -76,6 +81,7 @@ class DocumentSimilarityPipeline:
             This method calculates the similarity between documents based on document embeddings.
         :return:
         """
+
         def prepare_worker(name_x: str, name_y: str) -> dict:
             """
                 This function is a nested auxiliary function in order to perform a task in parallel.
@@ -111,7 +117,7 @@ class DocumentSimilarityPipeline:
             This method saves the calculated similarities in a list of tuples, stored in DataFrame formats.
         :return:
         """
-        es_feature_store = self.store_registry.es_feature_store()
+        es_index_store = self.store_registry.es_index_store()
         self.document_embeddings_method = list(self.document_embeddings.values())[0][DOCUMENT_EMBEDDING_METHOD][0]
         for data in self.prepared_data:
             similarity_documents_name = f"{data[DOCUMENT_NAME_X]}_x_{data[DOCUMENT_NAME_Y]}"
@@ -120,9 +126,9 @@ class DocumentSimilarityPipeline:
                                                 self.document_embeddings_method,
                                                 self.similarity_metric_name]
                                                ).lower()
-            es_feature_store.put_features(features_name=similarity_feature_name,
-                                          content=data[SIMILARITY_LIST]
-                                          )
+            es_index_store.put_dataframe(index_name=similarity_feature_name,
+                                         content=data[SIMILARITY_LIST]
+                                         )
 
     def plot_histograms(self):
         """

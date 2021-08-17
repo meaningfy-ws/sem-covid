@@ -1,7 +1,5 @@
-from pytest_mock import mocker
-
 from sem_covid.adapters.minio_object_store import MinioObjectStore
-from tests.unit.test_store.fake_storage import FakeObjectStore, FakeMinioClient
+from tests.fake_storage import FakeObjectStore, FakeMinioClient
 
 
 def test_fake_object_store():

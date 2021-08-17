@@ -2,7 +2,7 @@ import pandas as pd
 
 from sem_covid.adapters.es_feature_store import ESFeatureStore
 from sem_covid.adapters.minio_feature_store import MinioFeatureStore
-from tests.unit.test_store.fake_storage import FakeFeatureStore, FakeIndexStore, FakeObjectStore
+from tests.fake_storage import FakeFeatureStore, FakeIndexStore, FakeObjectStore
 
 
 def test_fake_feature_store():
