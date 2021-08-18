@@ -17,6 +17,7 @@ from sem_covid.services.semantic_similarity_pipelines.semantic_similarity_sampli
     SemanticSimilaritySamplingPipeline
 from tests.fake_embedding_model_registry import FakeEmbeddingModelRegistry
 from tests.fake_store_registry import FakeStoreWithDatasetsRegistry
+from tests import TEST_DATA_PATH
 
 TEXTUAL_COLUMNS = ['title', 'background_info_description', 'content_of_measure_description',
                    'use_of_measure_description', 'involvement_of_social_partners_description']
@@ -35,8 +36,7 @@ SAMPLE_INDEX_NAME = 'sm_eu_cellar_x_pwdb_sample_tf_idf_emb_cosine'
 
 
 def test_fake_store_with_datasets_registry():
-    es_store = FakeStoreWithDatasetsRegistry(
-        path_to_datasets=pathlib.Path('../../test_data/datasets_sample')).es_index_store()
+    es_store = FakeStoreWithDatasetsRegistry().es_index_store()
     index_names = [config.PWDB_ELASTIC_SEARCH_INDEX_NAME,
                    config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
                    config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
@@ -50,7 +50,7 @@ def test_fake_store_with_datasets_registry():
 
 
 def test_document_similarity_pipelines():
-    store_registry = FakeStoreWithDatasetsRegistry(path_to_datasets=pathlib.Path('../../test_data/datasets_sample'))
+    store_registry = FakeStoreWithDatasetsRegistry()
     es_store = store_registry.es_index_store()
     embedding_registry = FakeEmbeddingModelRegistry()
     for config_key in DOCUMENTS_CONFIGS.keys():

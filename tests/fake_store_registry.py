@@ -5,7 +5,7 @@ from sem_covid.services.store_registry import StoreRegistryABC
 from tests.fake_storage import FakeIndexStore, FakeObjectStore, FakeFeatureStore, FakeTripleStore
 from sem_covid import config
 import pandas as pd
-
+from tests import TEST_DATA_PATH
 
 class FakeStoreRegistry(StoreRegistryABC):
 
@@ -48,10 +48,6 @@ class FakeStoreRegistry(StoreRegistryABC):
 
 class FakeStoreWithDatasetsRegistry(FakeStoreRegistry):
 
-    def __init__(self, path_to_datasets: pathlib.Path):
-        super().__init__()
-        self.path_to_datasets = path_to_datasets
-
     def es_index_store(self) -> IndexStoreABC:
         if self.fake_index_store is None:
             self.fake_index_store = FakeIndexStore()
@@ -61,7 +57,7 @@ class FakeStoreWithDatasetsRegistry(FakeStoreRegistry):
                            config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME
                            ]
             for index_name in index_names:
-                df = pd.read_json(self.path_to_datasets / f'{index_name}.json')
+                df = pd.read_json(TEST_DATA_PATH / 'datasets_sample' / f'{index_name}.json')
                 self.fake_index_store.put_dataframe(index_name=index_name, content=df)
 
         return self.fake_index_store
