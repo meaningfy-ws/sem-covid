@@ -73,6 +73,7 @@ class DocumentSimilarityPipeline:
         es_index_store = self.store_registry.es_index_store()
         self.dataset = es_index_store.get_dataframe(index_name=self.document_embeddings_index)
         self.dataset_names = list(set(self.dataset.source.values))
+        self.dataset_names.sort()
         self.document_embeddings = {dataset_name: self.dataset[self.dataset.source == dataset_name]
                                     for dataset_name in self.dataset_names}
 
