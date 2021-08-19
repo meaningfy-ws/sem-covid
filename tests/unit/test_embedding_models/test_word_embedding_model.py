@@ -7,7 +7,7 @@
 
 from sem_covid.adapters.abstract_model import WordEmbeddingModelABC
 from sem_covid.adapters.embedding_models import Word2VecEmbeddingModel
-from tests.unit.test_embedding_models.fake_keyed_vectors import FakeKeyedVectors
+from tests.fake_keyed_vectors import FakeKeyedVectors
 
 
 def test_word2vec_embedding_model():

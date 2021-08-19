@@ -1,5 +1,5 @@
 
-from tests.unit.test_store.fake_storage import FakeTripleStore
+from tests.fake_storage import FakeTripleStore
 
 
 def test_triple_store():

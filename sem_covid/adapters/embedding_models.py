@@ -141,14 +141,16 @@ class TfIdfSentenceEmbeddingModel(AverageSentenceEmbeddingModel):
         tokens = self._tokenizer.tokenize(sentence)
         embeddings = self._word_embedding_model.encode(tokens)
         sum_weights = 0
-        results = []
+        results = [np.zeros(len(embeddings[0]))]
         for index in range(0, len(tokens)):
             if tokens[index] in tf_idf_row.index:
                 weight = tf_idf_row[tokens[index]]
                 sum_weights += weight
                 results += [(weight * np.array(embeddings[index])).tolist()]
-
-        return (np.sum(results, axis=0) / sum_weights).tolist()
+        results = np.sum(results, axis=0)
+        if sum_weights > 0:
+            results = (results / sum_weights)
+        return results.tolist()
 
     def encode(self, sentences: List[str]) -> List:
         """
@@ -197,6 +199,7 @@ class EurLexBertSentenceEmbeddingModel(SentenceEmbeddingModelABC):
         This class represents a concrete implementation of sentence embedding calculation
          based on the pre-trained BERT model on EurLex.
     """
+
     def __init__(self):
         """
              Initializing the class parameters,

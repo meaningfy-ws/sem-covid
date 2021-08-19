@@ -1,5 +1,3 @@
-import pprint
-
 import pandas as pd
 import pytest
 from airflow.exceptions import DagNotFound
@@ -8,8 +6,8 @@ from airflow.exceptions import DagNotFound
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster, get_documents_from_triple_store, \
     unify_dataframes_and_mark_source, get_and_transform_documents_from_triple_store
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
-from tests.unit.test_store.fake_storage import FakeTripleStore
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+from tests.fake_storage import FakeTripleStore
+from tests.fake_store_registry import FakeStoreRegistry
 
 FAKE_LIST_OF_QUERIES = ['EU_CELLAR_CORE_QUERY', 'EU_CELLAR_EXTENDED_QUERY']
 FAKE_LIST_OF_FLAGS = ['EU_CELLAR_CORE_KEY', 'EU_CELLAR_EXTENDED_KEY']
