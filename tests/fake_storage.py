@@ -12,7 +12,7 @@ from es_pandas import es_pandas
 from sem_covid.adapters.abstract_store import *
 from minio import Minio
 from tests import TEST_DATA_PATH
-
+import pickle
 
 class FakeMinioObject:
 
@@ -94,6 +94,14 @@ class FakeObjectStoreObject(object):
     def __repr__(self):
         return self.__str__()
 
+
+class FakePickle:
+
+    def loads(self, content):
+        return content
+
+    def dumps(self, content):
+        return content
 
 class FakeObjectStore(ObjectStoreABC):
     """

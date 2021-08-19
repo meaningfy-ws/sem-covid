@@ -13,11 +13,12 @@ import pickle
 
 class MinioFeatureStore(FeatureStoreABC):
 
-    def __init__(self, object_store: ObjectStoreABC):
+    def __init__(self, object_store: ObjectStoreABC, pickle_convertor = pickle):
         self._object_store = object_store
+        self.pickle_convertor = pickle_convertor
 
     def get_features(self, features_name: str) -> pd.DataFrame:
-        return pickle.loads(self._object_store.get_object(object_name=features_name))
+        return self.pickle_convertor.loads(self._object_store.get_object(object_name=features_name))
 
     def put_features(self, features_name: str, content: pd.DataFrame):
-        self._object_store.put_object(object_name=features_name, content=pickle.dumps(content))
+        self._object_store.put_object(object_name=features_name, content=self.pickle_convertor.dumps(content))
