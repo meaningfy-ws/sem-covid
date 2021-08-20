@@ -7,6 +7,9 @@ from d3graph import d3graph
 
 from sem_covid.services.store_registry import store_registry
 
+matrix = pd.read_json(store_registry.minio_object_store('semantic-similarity-matrices').get_object('model2_cosine_matrix.json')
+                      ).applymap(lambda x: 1 - x)
+
 
 def generate_graph(similarity_matrix: pd.DataFrame, graph: nx.Graph, root_word: str,
                    top_words: int, threshold: np.float64 = 0.8, deep_level: int = 0,
@@ -44,35 +47,8 @@ def generate_graph(similarity_matrix: pd.DataFrame, graph: nx.Graph, root_word: 
     return graph
 
 
-def create_graph_for_language_model_key_words(similarity_matrix: pd.DataFrame, language_model_words: list,
-                                            model_name: str, column_name: str,
-                                            metric_threshold: np.float64) -> d3graph:
-    """
-    !!! This is not reusable function. It was made for a single thing !!!
-
-    It generates d3graph based on language model selected words and and the similarity
-    matrix created with those words.
-    """
-    graph_folder_path = f'docs/word-similarity-web/{model_name}_graphs/{column_name}/'
-    color_map = {0: '#a70000',
-                    1: '#f0000',
-                    2: '#ff7b7b',
-                    3: '#ffbaba'}
-    for index in range(0, len(language_model_words)):
-        deep_map = {}
-        graph = generate_graph(similarity_matrix, nx.Graph(), language_model_words[index],
-                                top_words=4, threshold=metric_threshold
-                                , max_deep_level=2, deep_map=deep_map, color_map=color_map)
-        network_adjacency_matrix = pd.DataFrame(data=nx.adjacency_matrix(graph).todense(),
-                                                index=graph.nodes(), columns=graph.nodes())
-        node_color_list = [deep_map[node][0] for node in graph.nodes()]
-        d3graph(network_adjacency_matrix, savepath=graph_folder_path, savename=language_model_words[index],
-                node_color=node_color_list,
-                width=1920, height=1080, edge_width=5,
-                edge_distance=60, directed=True)
-
-
-def create_similarity_graph(similarity_matrix: pd.DataFrame, key_word: str, metric_threshold: np.float64) -> d3graph:
+def create_similarity_graph(similarity_matrix: pd.DataFrame, key_word: str, metric_threshold: np.float64,
+                            max_deep_level: int) -> d3graph:
     color_map = {0: '#a70000',
                  1: '#f0000',
                  2: '#ff7b7b',
@@ -80,30 +56,33 @@ def create_similarity_graph(similarity_matrix: pd.DataFrame, key_word: str, metr
     deep_map = {}
     graph = generate_graph(similarity_matrix, nx.Graph(), key_word,
                            top_words=4, threshold=metric_threshold,
-                           max_deep_level=2, deep_map=deep_map, color_map=color_map)
+                           max_deep_level=max_deep_level, deep_map=deep_map, color_map=color_map)
     network_adjacency_matrix = pd.DataFrame(data=nx.adjacency_matrix(graph).todense(),
                                             index=graph.nodes(), columns=graph.nodes())
     node_color_list = [deep_map[node][0] for node in graph.nodes()]
-    d3graph(network_adjacency_matrix, node_color=node_color_list, width=1920, height=1080, edge_width=5,
-            edge_distance=60, directed=True)
-
+    return d3graph(network_adjacency_matrix, node_color=node_color_list, width=1920, height=1080, edge_width=5,
+                   edge_distance=60, directed=True)
 
 
 st.title('Semantic similarity graph')
 
-st.text_input("Introduce word")
+word = st.text_input("Introduce word")
 
 threshold_slider = st.slider('Threshold', min_value=0.0, max_value=1.0, step=0.1, value=0.4)
 number_of_neighbours_slider = st.slider('Number of Neighbours', min_value=1, max_value=5, step=1, value=2)
 graph_depth_slider = st.slider('Graph Depth', min_value=2, max_value=5, step=1, value=2)
 
-
-
-
 sliders = [threshold_slider, number_of_neighbours_slider, graph_depth_slider]
+
+word
 
 for slider in sliders:
     st.write(slider)
 
+
+if st.button('generate'):
+    create_similarity_graph(similarity_matrix=matrix, key_word=word,
+                            max_deep_level=number_of_neighbours_slider,
+                            metric_threshold=threshold_slider)
 
 
