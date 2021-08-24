@@ -13,6 +13,23 @@ from tika import parser
 from sem_covid.services.store_registry import StoreRegistryABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 
+
+BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
+              'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
+              'Solo-self-employed', 'Start-ups'}
+
+CITIZENS = {'Children (minors)', 'Disabled', 'Migrants', 'Older citizens', 'Other groups of citizens', 'Parents',
+            'People in care facilities', 'Refugees', 'Single parents', 'The COVID-19 risk group', 'Women',
+            'Youth (18-25)'}
+
+WORKERS = {'Cross-border commuters', 'Disabled workers', 'Employees in standard employment', 'Female workers',
+           'Migrants in employment', 'Older people in employment (aged 55+)', 'Other groups of workers',
+           'Parents in employment', 'Particular professions', 'Platform workers', 'Posted workers',
+           'Refugees in employment', 'Seasonal workers', 'Self-employed', 'Single parents in employment',
+           'The COVID-19 risk group at the workplace', 'Undeclared workers', 'Unemployed', 'Workers in care facilities',
+           'Workers in essential services', 'Workers in non-standard forms of employment',
+           'Youth (18-25) in employment'}
+
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
 CONTENT_LANGUAGE = "language"
@@ -142,6 +159,11 @@ class PWDBDagWorker(BaseETLPipeline):
             (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()
         logger.info("Tika-processed filename is " + tika_filename)
         tika_field_data = json.loads(minio.get_object(tika_filename).decode('utf-8'))
+
+        new_columns = {'businesses': BUSINESSES, 'citizens': CITIZENS, 'workers': WORKERS}
+        target_groups_key = tika_field_data['target_groups']
+        for column, class_set in new_columns.items():
+            tika_field_data[column] = int(any(item for item in class_set if item in target_groups_key))
 
         logger.info('Sending to ElasticSearch (  ' +
                     self.elasticsearch_index_name +
