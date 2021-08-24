@@ -16,13 +16,13 @@ from gensim.test.utils import common_texts
 from scrapy.http import Request, HtmlResponse
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+from tests.fake_store_registry import FakeStoreRegistry
 
 from sem_covid.config_resolver import EnvConfigResolver
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
 from sem_covid.services.ml_pipelines.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
-from tests.unit.test_store.fake_storage import FakeIndexStore
+from tests.fake_storage import FakeIndexStore
 
 
 FAKE_FILENAME = 'fake_filename.json'

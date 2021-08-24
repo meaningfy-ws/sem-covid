@@ -9,7 +9,7 @@ import json
 import pytest
 
 from tests.unit.dags.conftest import AttrDict, fragment_pwdb
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+from tests.fake_store_registry import FakeStoreRegistry
 from sem_covid.entrypoints.etl_dags.pwdb_worker import download_single_source, PWDBDagWorker
 from sem_covid.entrypoints.etl_dags.pwdb_dags import WORKER_DAG_NAME
 
