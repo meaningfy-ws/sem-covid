@@ -133,7 +133,9 @@ class CrawlDagPipeline(BaseETLPipeline):
 
         for item in objects:
             document_id = item.object_name.split("/")[1]
-            document_df = pd.DataFrame.from_records(data=loads(minio.get_object(item.object_name)), index=[document_id])
+            document_data = loads(minio.get_object(item.object_name))
+            document_data = [document_data] if isinstance(document_data, dict) else document_data
+            document_df = pd.DataFrame.from_records(data=document_data, index=[document_id])
             document_df.replace({np.nan: None}, inplace=True)
             date_columns = [col for col in document_df.columns if 'date' in col]
             if 'month_name' in document_df.columns:
@@ -147,5 +149,3 @@ class CrawlDagPipeline(BaseETLPipeline):
 
             es_adapter.put_dataframe(index_name=self.elasticsearch_index_name,
                                      content=document_df)
-
-

@@ -184,7 +184,7 @@ class PWDBDagWorker(BaseETLPipeline):
         target_groups_key = tika_field_data['target_groups']
         for column, class_set in new_columns.items():
             tika_field_data[column] = int(any(item for item in class_set if item in target_groups_key))
-
+        tika_field_data = [tika_field_data] if isinstance(tika_field_data, dict) else tika_field_data
         document_df = pd.DataFrame.from_records(data=tika_field_data, index=[tika_filename])
         document_df.replace({np.nan: None}, inplace=True)
         date_columns = [col for col in document_df.columns if 'date' in col]
