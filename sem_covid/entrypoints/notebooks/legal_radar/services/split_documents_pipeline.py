@@ -4,6 +4,7 @@
 # Date:  25.08.2021
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
+
 import concurrent
 from typing import List
 
@@ -74,8 +75,7 @@ class WindowedSplitDocumentsPipeline:
                                        self.split_window_size,
                                        self.split_window_step
                                        )
-                       for index, value in self.dataset[TEXTUAL_DATA][:1].items()
-                       # [WARNING]!!Delete limit of dataset in production!
+                       for index, value in self.dataset[TEXTUAL_DATA].items()
                        ]
             self.result_dataset = pd.DataFrame([result
                                                 for future in futures for result in future.result()],
