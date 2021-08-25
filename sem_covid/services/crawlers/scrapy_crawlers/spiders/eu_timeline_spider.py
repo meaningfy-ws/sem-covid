@@ -10,8 +10,6 @@ from ..items import EuActionTimelineItem
 
 
 class EUTimelineSpider(scrapy.Spider):
-    # TODO: This class does not implement abstract scrapy.Spider methods
-    # TODO: check why parse method is not implemented and not needed?
     name = 'eu-timeline'
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
     presscorner_base_url = 'https://ec.europa.eu/commission/presscorner/detail'
@@ -24,8 +22,6 @@ class EUTimelineSpider(scrapy.Spider):
         self.filename = filename
         self.data = list()
         self.logger.debug(self.storage_adapter)
-
-
 
     def start_requests(self):
         yield scrapy.Request(url=self.url, callback=self.parse_main_page)
@@ -43,7 +39,6 @@ class EUTimelineSpider(scrapy.Spider):
             if not index % 2:
                 self.logger.info(f'Processing data for {month_name}.')
                 month_name = block.xpath('*/h2/text()').get()
-
             else:
                 month_timeline = block.xpath('*//li[@class="timeline__list__item"]')
                 for month in month_timeline:

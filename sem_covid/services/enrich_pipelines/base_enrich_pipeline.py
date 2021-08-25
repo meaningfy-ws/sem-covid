@@ -114,7 +114,7 @@ class BaseEnrichPipeline:
         The enrichment steps are:
        - loading the dataset
        - loading the features
-       - loading the trained classification mode
+       - loading the trained classification model
        - enriching the dataset with the help of the trained model
        - storing the enriched dataset in the ElasticStore
 

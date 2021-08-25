@@ -11,11 +11,10 @@ install:
 	@ pip install -r requirements-dev.txt
 	@ python -m spacy download en_core_web_sm
 
-install-prod:
+install-airflow:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
-	@ pip install -r requirements-prod.txt
-	@ python -m spacy download en_core_web_sm
+	@ pip install -r requirements-airflow.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.1.2/constraints-no-providers-3.8.txt"
 
 #-----------------------------------------------------------------------------
 # Poetry Install commands
@@ -52,7 +51,7 @@ lint:
 # Getting secrets from Vault
 #-----------------------------------------------------------------------------
 
-# Testing whether an env variable is set or not
+# Testing whether an .env variable is set or not
 guard-%:
 	@ if [ "${${*}}" = "" ]; then \
         echo "$(BUILD_PRINT)Environment variable $* not set"; \
@@ -99,11 +98,11 @@ vault_secret_fetch: vault_secret_to_dotenv vault_secret_to_json
 #-----------------------------------------------------------------------------
 start-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file ../.env up -d splash
+	@ docker-compose --file docker/docker-compose.yml --env-file .env up -d splash
 
 stop-splash:
 	@ echo -e '$(BUILD_PRINT)(dev) Starting the splash container'
-	@ docker-compose --file docker/docker-compose.yml --env-file ../.env stop splash
+	@ docker-compose --file docker/docker-compose.yml --env-file .env stop splash
 
 start_airflow:
 	@ echo "$(BUILD_PRINT)Starting the Airflow scheduler and webserver"

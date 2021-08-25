@@ -19,6 +19,7 @@ from SPARQLWrapper import SPARQLWrapper
 from airflow.models import DagBag
 from airflow.utils import db
 
+
 SRC_AIRFLOW_DAG_FOLDER = Path(__file__).parent.parent.parent.parent / "sem_covid/"
 TEST_DATA_FOLDER = pathlib.Path(__file__).parent.parent.parent / "test_data"
 
@@ -65,6 +66,11 @@ def airflow_dag_bag():
     return dag_bag
 
 
+def fragment_pwdb() -> pathlib.Path:
+    path = TEST_DATA_FOLDER / 'pwdb_fragments' / '4c4917157d621114c4d108fb230ad337650d7c07a786ef914bae62c4c9e8ccd7.json'
+    return json.loads(path.read_bytes())
+
+
 @pytest.fixture(scope="session")
 def fragment1_eu_cellar_covid() -> pathlib.Path:
     path = TEST_DATA_FOLDER / "eu_cellar_covid_fragments" / "402fa68a01a26b690c0f098278185c180fe06ea53ed3b3a30f6020482816e1e7.json"
@@ -93,3 +99,10 @@ def fragment4_eu_cellar_covid() -> pathlib.Path:
 def get_spaqrl_result_set_fetched_as_tabular():
     path = TEST_DATA_FOLDER / "eu_cellar_covid_fragments" / "unified_eu_cellar_fragment.json"
     return json.loads(path.read_bytes())
+
+
+@pytest.fixture(scope="session")
+def get_crawl_result():
+    path = TEST_DATA_FOLDER / "crawlers" / "fake_file.json"
+    return json.loads(path.read_bytes())
+
