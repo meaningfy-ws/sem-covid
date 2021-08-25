@@ -50,12 +50,13 @@ def create_graph_for_language_model_key_words(similarity_matrix: pd.DataFrame,
                                               language_model_words: list,
                                               model_name: str,
                                               column_name: str,
+add                                              metrics_name: str,
                                               metric_threshold: np.float64) -> d3graph:
     """
         It generates d3graph based on language model selected words and and the similarity
         matrix created with those words.
     """
-    graph_folder_path = f'docs/word-similarity-web/{model_name}_graphs/{column_name}/'
+    graph_folder_path = f'docs/word-similarity-web/{model_name}_graphs/{metrics_name}/{column_name}/'
     color_map = {0: '#a70000',
                  1: '#f0000',
                  2: '#ff7b7b',
