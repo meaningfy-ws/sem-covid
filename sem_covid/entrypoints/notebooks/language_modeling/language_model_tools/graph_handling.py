@@ -50,7 +50,7 @@ def create_graph_for_language_model_key_words(similarity_matrix: pd.DataFrame,
                                               language_model_words: list,
                                               model_name: str,
                                               column_name: str,
-add                                              metrics_name: str,
+                                              metrics_name: str,
                                               metric_threshold: np.float64) -> d3graph:
     """
         It generates d3graph based on language model selected words and and the similarity
