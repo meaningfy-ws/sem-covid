@@ -18,7 +18,7 @@ class POSExtraction:
         self.word2vec_model = word2vec_model
         self.pos = pos
         self.word2vec_document = None
-        self.word2vec_document = nlp(' '.join(self.word2vec_model.wv.index2word))
+        self.word2vec_document = nlp(' '.join(self.word2vec_model.wv.index_to_key))
         self.word2vec_document = select_pos(self.word2vec_document, self.pos)
         self._extract_pos = list(map(str, self.word2vec_document))
 
@@ -42,8 +42,8 @@ class POSExtraction:
         """
             Detects the part of speech indexes and returns them into a list
         """
-        return [self.word2vec_model.wv.index2word.index(token) for token in self._extract_pos
-                if token in self.word2vec_model.wv.index2word]
+        return [self.word2vec_model.wv.index_to_key.index(token) for token in self._extract_pos
+                if token in self.word2vec_model.wv.index_to_key]
 
     def extract_pos_embeddings(self) -> List[np.ndarray]:
         """
