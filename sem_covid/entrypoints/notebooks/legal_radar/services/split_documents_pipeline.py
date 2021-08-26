@@ -75,7 +75,7 @@ class WindowedSplitDocumentsPipeline:
                                        self.split_window_size,
                                        self.split_window_step
                                        )
-                       for index, value in self.dataset[TEXTUAL_DATA].items()
+                       for index, value in self.dataset[TEXTUAL_DATA][:200].items()
                        ]
             self.result_dataset = pd.DataFrame([result
                                                 for future in futures for result in future.result()],
