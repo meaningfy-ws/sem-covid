@@ -59,7 +59,7 @@ def create_graph_for_language_model_key_words(similarity_matrix: pd.DataFrame,
                  1: '#f0000',
                  2: '#ff7b7b',
                  3: '#ffbaba'}
-    for index in range(0, len(language_model_words[:1])):
+    for index in range(0, len(language_model_words)):
         deep_map = {}
         graph = generate_graph(nx.Graph(), similarity_matrix, language_model_words[index], top_words=4,
                                threshold=metric_threshold, max_deep_level=2, deep_map=deep_map, color_map=color_map)
