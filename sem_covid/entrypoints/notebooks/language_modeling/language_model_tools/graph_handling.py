@@ -1,17 +1,16 @@
-
 import numpy as np
 import pandas as pd
 import networkx as nx
 from d3graph import d3graph
 
 
-def generate_graph(similarity_matrix: pd.DataFrame,
+def generate_graph(graph: nx.Graph,
+                   similarity_matrix: pd.DataFrame,
                    root_word: str,
                    top_words: int,
                    threshold: np.float64 = 0.8,
                    deep_level: int = 0,
                    max_deep_level: int = 2,
-                   graph: nx.Graph = nx.Graph(),
                    deep_map: dict = None,
                    color_map: dict = None) -> nx.Graph:
     """
@@ -31,7 +30,7 @@ def generate_graph(similarity_matrix: pd.DataFrame,
     """
     if root_word not in deep_map.keys():
         deep_map[root_word] = (deep_level, color_map[deep_level])
-    elif deep_map[root_word][0] > deep_level:
+    elif deep_map[root_word][0] >= deep_level:
         deep_map[root_word] = (deep_level, color_map[deep_level])
     if deep_level > max_deep_level:
         return graph
@@ -40,8 +39,8 @@ def generate_graph(similarity_matrix: pd.DataFrame,
     for index in range(0, len(new_nodes)):
         if new_nodes_weight[index] >= threshold:
             graph.add_edge(root_word, new_nodes[index])
-            generate_graph(similarity_matrix, new_nodes[index], top_words, threshold, deep_level + 1,
-                           max_deep_level, deep_map=deep_map, color_map=color_map)
+            graph = generate_graph(graph, similarity_matrix, new_nodes[index], top_words, threshold, deep_level + 1,
+                                   max_deep_level, deep_map=deep_map, color_map=color_map)
 
     return graph
 
@@ -60,13 +59,14 @@ def create_graph_for_language_model_key_words(similarity_matrix: pd.DataFrame,
                  1: '#f0000',
                  2: '#ff7b7b',
                  3: '#ffbaba'}
-    for index in range(0, len(language_model_words)):
+    for index in range(0, len(language_model_words[:1])):
         deep_map = {}
-        graph = generate_graph(similarity_matrix, language_model_words[index], top_words=4,
+        graph = generate_graph(nx.Graph(), similarity_matrix, language_model_words[index], top_words=4,
                                threshold=metric_threshold, max_deep_level=2, deep_map=deep_map, color_map=color_map)
         network_adjacency_matrix = pd.DataFrame(data=nx.adjacency_matrix(graph).todense(),
                                                 index=graph.nodes(), columns=graph.nodes())
         node_color_list = [deep_map[node][0] for node in graph.nodes()]
-
         d3graph(network_adjacency_matrix, savepath=graph_folder_path, savename=language_model_words[index],
-                node_color=node_color_list, width=1920, height=1080, edge_width=5, edge_distance=60, directed=True)
+                node_color=node_color_list,
+                width=1920, height=1080, edge_width=5, edge_distance=60, directed=True)
+        del deep_map
