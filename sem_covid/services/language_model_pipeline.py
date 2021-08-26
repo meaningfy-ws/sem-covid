@@ -116,7 +116,7 @@ class LanguageModelPipeline:
             When the data is prepared it's stored into Word2Vec model.
         """
         self.word2vec = Word2Vec(sentences=self.documents_corpus, window=WINDOW,
-                                 min_count=MIN_COUNT, size=VECTOR_SIZE)
+                                 min_count=MIN_COUNT, vector_size=VECTOR_SIZE)
 
     def save_language_model(self):
         """
