@@ -11,7 +11,7 @@ from sem_covid.services.store_registry import store_registry
 
 
 BUCKET_NAME = 'semantic-similarity-matrices'
-MODEL_NAME = 'model2_cosine_matrix.json'
+MODEL_NAME = 'model3_cosine_matrix.json'
 STREAMLIT_TITLE = 'Semantic similarity graph'
 TEXT_INPUT_WIDGET = "Introduce word"
 BUTTON_NAME = 'Generate graph'
