@@ -476,6 +476,37 @@ def fake_response_from_file(file_name: str, url: str = None) -> HtmlResponse:
     return HtmlResponse(url=url, request=Request(url=url), body=file_content, encoding='utf-8')
 
 
+@pytest.fixture(scope='session')
+def mock_similarity_matrix() -> pd.DataFrame:
+    mock_data = {'c':
+                 {'c': 1.0,
+                       'parliament': -0.0908335092000001,
+                       'decision': 0.1353025819999999,
+                       'committee': -0.010039506300000056,
+                       'case': 0.5740614076999999},
+                 'parliament': {'c': -0.0908335092000001,
+                        'parliament': 1.0,
+                        'decision': 0.5748587366,
+                        'committee': 0.5905859686999999,
+                        'case': -0.309003742},
+                 'decision': {'c': 0.1353025819999999,
+                        'parliament': 0.5748587366,
+                        'decision': 1.0,
+                        'committee': 0.24436130499999997,
+                        'case': -0.06655389959999991},
+                 'committee': {'c': -0.010039506300000056,
+                        'parliament': 0.5905859686999999,
+                        'decision': 0.24436130499999997,
+                        'committee': 1.0,
+                        'case': -0.04770474889999998},
+                 'case': {'c': 0.5740614076999999,
+                        'parliament': -0.309003742,
+                        'decision': -0.06655389959999991,
+                        'committee': -0.04770474889999998,
+                        'case': 1.0}}
+    return pd.DataFrame.from_dict(mock_data)
+
+
 @pytest.fixture(scope="session")
 def call_irish_crawler():
     return IrishGovCrawler(text_searches=KEY_WORD,
