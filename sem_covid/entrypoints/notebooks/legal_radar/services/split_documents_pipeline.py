@@ -59,9 +59,8 @@ class WindowedSplitDocumentsPipeline:
 
     def split_documents_and_store(self):
         emb_model = self.embedding_model_registry.sent2vec_universal_sent_encoding()
-        es_store = self.store_registry.es_index_store()
-
         def split_documents_worker(index, value, window_size, window_step):
+            es_store = self.store_registry.es_index_store()
             sentences = [sent.text for sent in nlp(value).sents]
             windowed_texts = list(
                 windowed(sentences,
