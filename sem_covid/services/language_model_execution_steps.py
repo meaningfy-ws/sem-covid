@@ -58,6 +58,8 @@ class LanguageModelExecutionSteps:
                 metric=similarity_functions[index])
             print('Finish computing similarity matrix.')
             print('Save similarity matrix.')
-            store_registry.minio_object_store('semantic-similarity-matrices').put_object(
-                f'{self.model_name}_{similarity_functions[index]}_matrix.json',
-                model_similarity_matrix.to_json(orient='columns'))
+            store_registry.minio_feature_store('semantic-similarity-matrices').put_features(
+                features_name=f'{self.model_name}_{similarity_functions[index]}_matrix.pkl',
+                content= model_similarity_matrix
+            )
+            del model_similarity_matrix

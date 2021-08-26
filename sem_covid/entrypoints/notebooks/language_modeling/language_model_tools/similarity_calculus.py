@@ -36,4 +36,6 @@ def build_similarity_matrix(vector: np.ndarray, keys: list, metric: str) -> pd.D
         :param metric: metric distance formula
         :return: dataframe with similarity of each word
     """
-    return pd.DataFrame(squareform(pdist(vector, metric=metric)), columns=keys, index=keys)
+    result_df = pd.DataFrame(squareform(pdist(vector.astype('float16'), metric=metric)), columns=keys, index=keys)
+    result_df = result_df.astype('float16')
+    return result_df

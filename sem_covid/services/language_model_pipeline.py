@@ -55,7 +55,7 @@ class LanguageModelPipeline:
         This pipeline executes the steps for word2vec language training.
     """
 
-    def __init__(self, dataset_sources: List[Tuple[IndexTabularDataSource, List[str]]], language_model_name: str):
+    def __init__(self, dataset_sources: List[Tuple[pd.DataFrame, List[str]]], language_model_name: str):
         """
             :param dataset_sources: represents the source of the datasets.
         """
@@ -69,7 +69,7 @@ class LanguageModelPipeline:
             In this step it will download the dataset and detect selected columns.
             It can be downloaded as many datasets as there are in data source.
         """
-        self.dataset_sources = [(dataset_columns, dataset_source.fetch())
+        self.dataset_sources = [(dataset_columns, dataset_source)
                                 for dataset_source, dataset_columns in self.dataset_sources]
 
     def extract_textual_data(self):

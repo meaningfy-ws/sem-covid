@@ -45,9 +45,9 @@ class POSExtraction:
         return [self.word2vec_model.wv.index_to_key.index(token) for token in self._extract_pos
                 if token in self.word2vec_model.wv.index_to_key]
 
-    def extract_pos_embeddings(self) -> List[np.ndarray]:
+    def extract_pos_embeddings(self) -> np.ndarray:
         """
             Detects part of speech embeddings from their indexes
         """
         selected_pos_index = self.extract_pos_index()
-        return [self.word2vec_model.wv.vectors[index] for index in selected_pos_index]
+        return np.array([self.word2vec_model.wv.vectors[index] for index in selected_pos_index])
