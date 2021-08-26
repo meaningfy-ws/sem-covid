@@ -52,11 +52,15 @@ def test_get_work_uri_from_context():
 def test_content_cleanup_tool(fragment3_eu_cellar_covid):
     content = content_cleanup_tool(fragment3_eu_cellar_covid["content"])
     assert "\n" not in content
+    assert "\t" not in content
+    assert "\r" not in content
     assert "á" not in content
     assert "—" not in content
     assert "\u2014" not in content
     assert b"\u2014".decode("utf-8") not in content
     assert not re.match(r"\s\s", content)
+    assert "IMMC.COM%282020%29726%20final.ENG.xhtml.1_EN_ACT_part1_v8.docx" not in content
+    assert "<.>" not in content
 
 
 def test_download_zip_objects_to_temp_folder():

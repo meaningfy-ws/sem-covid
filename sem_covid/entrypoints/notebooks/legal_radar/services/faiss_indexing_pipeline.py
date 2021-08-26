@@ -40,7 +40,7 @@ class FaissIndexingPipeline:
     def embeddings_indexing(self):
         self.faiss_index = faiss.IndexFlatL2(self.embeddings.shape[1])
         self.faiss_index = faiss.IndexIDMap(self.faiss_index)
-        self.faiss_index.add_with_ids(self.embeddings, self.dataset.index.values.astype(int))
+        self.faiss_index.add_with_ids(self.embeddings, np.array(range(0, len(self.dataset.index.values))))
 
     def store_faiss_index(self):
         minio_store = store_registry.minio_object_store(self.result_bucket_name)

@@ -53,12 +53,12 @@ class StoreRegistry(StoreRegistryABC):
         This class performs the register of preconfigured stores.
     """
 
-    def minio_feature_store(self) -> FeatureStoreABC:
+    def minio_feature_store(self, minio_bucket: str = MINIO_FEATURE_BUCKET) -> FeatureStoreABC:
         """
              This method returns a preconfigured MinioFeatureStore.
          :return:
          """
-        return MinioFeatureStore(object_store=self.minio_object_store(MINIO_FEATURE_BUCKET))
+        return MinioFeatureStore(object_store=self.minio_object_store(minio_bucket))
 
     def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
         return SPARQLTripleStore(endpoint_url=endpoint_url)
