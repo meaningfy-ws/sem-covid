@@ -521,6 +521,15 @@ def call_eu_timeline_crawler():
         filename=FAKE_FILENAME
     )
 
+
+def call_test_notebook() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'test_folder' / 'test_notebook.ipynb'
+
+
+def output_dir_for_converted_notebook() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'test_folder'
+
+
 def call_mock_article_page() -> str:
     return '../test_data/crawlers/sample_ireland_gov/innovation_keyword.html'
 
