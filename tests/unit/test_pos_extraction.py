@@ -1,3 +1,4 @@
+import numpy as np
 
 from sem_covid.services.pos_extraction import POSExtraction
 
@@ -18,5 +19,5 @@ def test_pos_extraction(common_word2vec_model):
     assert [0, 1, 2, 3, 4, 6, 9, 10] == pos_index
 
     pos_embeddings = extractor.extract_pos_embeddings()
-    assert list == type(pos_embeddings)
+    assert np.ndarray == type(pos_embeddings)
 

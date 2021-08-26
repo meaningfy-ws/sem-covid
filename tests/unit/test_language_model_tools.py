@@ -35,4 +35,4 @@ def test_get_similarity_matrix(common_word2vec_model):
     assert ['system', 'graph', 'trees', 'user', 'minors', 'eps',
             'time', 'response', 'survey', 'computer', 'interface', 'human'] == list(similarity_matrix.index)
     assert list(similarity_matrix.index) == list(similarity_matrix.columns)
-    assert np.float64 == type(similarity_matrix['system'][0])
+    assert np.float16 == type(similarity_matrix['system'][0])
