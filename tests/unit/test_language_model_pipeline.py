@@ -21,3 +21,9 @@ def test_language_model_pipeline(transformed_pwdb_dataframe):
     textual_data = ['title']
     test_model = [(transformed_pwdb_dataframe, textual_data)]
     language_model_pipeline = LanguageModelPipeline(test_model, test_model_name)
+
+    download = language_model_pipeline.download_datasets()
+    extraction = language_model_pipeline.extract_textual_data()
+    cleaning = language_model_pipeline.clean_textual_data()
+    transformation = language_model_pipeline.transform_to_spacy_doc()
+    featuring = language_model_pipeline.extract_features()
