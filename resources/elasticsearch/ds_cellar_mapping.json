@@ -193,16 +193,16 @@
         }
       },
       "dates_document": {
-        "type": "date"
-
+        "type": "date",
+        "format": "YYYY-MM-DD"
       },
       "dates_created": {
-        "type": "date"
-
+        "type": "date",
+        "format": "YYYY-MM-DD"
       },
       "legal_dates_entry_into_force": {
-        "type": "date"
-
+        "type": "date",
+        "format": "YYYY-MM-DD"
       },
       "legal_dates_signature": {
         "type": "text",
