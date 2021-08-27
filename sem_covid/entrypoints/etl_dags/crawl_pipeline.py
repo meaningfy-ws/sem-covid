@@ -145,7 +145,7 @@ class CrawlDagPipeline(BaseETLPipeline):
             for date_column in date_columns:
                 document_df[date_column] = document_df[date_column].apply(
                     lambda x: pd.to_datetime(x, errors='coerce', yearfirst=True).date() if x else None).replace(
-                    {np.nan: None})
+                    {np.nan: None}).apply(lambda x: str(x) if x else None)
 
             es_adapter.put_dataframe(index_name=self.elasticsearch_index_name,
                                      content=document_df)
