@@ -9,6 +9,8 @@ import faiss
 import pickle
 import pandas as pd
 import streamlit as st
+
+from sem_covid.entrypoints.notebooks.legal_radar.services.split_documents_pipeline import DOCUMENT_ID_SOURCE
 from sem_covid.services.store_registry import store_registry
 from sem_covid.services.model_registry import embedding_registry
 from sem_covid import config
@@ -17,13 +19,17 @@ import numpy as np
 FAISS_BUCKET_NAME = 'faiss-index'
 FAISS_INDEX_FINREG_NAME = 'faiss_index_finreg.pkl'
 FIN_REG_SPLITTED_ES_INDEX = 'ds_finreg_splitted'
+DATES_DOCUMENT = 'dates_document'
 
 
 @st.cache
 def load_documents():
     """Read the data from ES."""
     es_store = store_registry.es_index_store()
-    return es_store.get_dataframe(index_name=config.EU_FINREG_CELLAR_ELASTIC_SEARCH_INDEX_NAME)
+    df = es_store.get_dataframe(index_name=config.EU_FINREG_CELLAR_ELASTIC_SEARCH_INDEX_NAME)
+    df[DATES_DOCUMENT] = df[DATES_DOCUMENT].apply(lambda x: x[0] if x else None)
+    df[DATES_DOCUMENT] = pd.to_datetime(df[DATES_DOCUMENT]).date()
+    return df
 
 
 @st.cache
@@ -44,7 +50,6 @@ def load_faiss_index():
     minio_store = store_registry.minio_object_store(minio_bucket=FAISS_BUCKET_NAME)
     data = pickle.loads(minio_store.get_object(object_name=FAISS_INDEX_FINREG_NAME))
     return faiss.deserialize_index(data)
-
 
 
 def vector_search(query, model, index, num_results=10):
@@ -77,42 +82,56 @@ def main():
     model = load_emb_model()
     faiss_index = load_faiss_index()
 
-    st.title("Vector-based searches with Sentence Transformers and Faiss")
+    st.title("Legal Radar - semantic search")
 
     # User search
     user_input = st.text_area("Search box", "covid-19 misinformation and social media")
 
     # Filters
     st.sidebar.markdown("**Filters**")
-    filter_year = st.sidebar.slider("Publication year", 2010, 2021, (2010, 2021), 1)
-    filter_citations = st.sidebar.slider("Citations", 0, 250, 0)
-    num_results = st.sidebar.slider("Number of search results", 10, 50, 10)
+    filter_year = st.sidebar.slider("Publication year", 1900, 2021, (1900, 2021), 1)
+    content_length = st.sidebar.slider("Content length", 250, 5000, 250, 50)
+    num_results = st.sidebar.slider("Number of search results", 10, 200, 10)
 
     # Fetch results
     if user_input:
         # Get paper IDs
-        D, I = vector_search([user_input], model, faiss_index, num_results)
+        embeddings = model.encode(sentences=[user_input])
+        D, I = faiss_index.search(np.array(embeddings).astype("float32"), k=num_results)
+        documents_id = list(set(
+            splitted_documents.iloc[I.flatten().tolist()][DOCUMENT_ID_SOURCE].values))
         # Slice data on year
-        frame = data[
-            (data.year >= filter_year[0])
-            & (data.year <= filter_year[1])
-            & (data.citations >= filter_citations)
-            ]
+        # frame = data[
+        #     (data.year >= filter_year[0])
+        #     & (data.year <= filter_year[1])
+        #     & (data.citations >= filter_citations)
+        #     ]
+        frame = documents[
+            (documents[DATES_DOCUMENT].apply(lambda x: x.year >= filter_year[0] if x else False))
+            & (documents[DATES_DOCUMENT].apply(lambda x: x.year <= filter_year[1] if x else False))].loc[documents_id]
         # Get individual results
-        for id_ in I.flatten().tolist():
-            if id_ in set(frame.id):
-                f = frame[(frame.id == id_)]
-            else:
-                continue
-
+        for index, row in frame.iterrows():
             st.write(
-                f"""**{f.iloc[0].original_title}**  
-            **Citations**: {f.iloc[0].citations}  
-            **Publication year**: {f.iloc[0].year}  
-            **Abstract**
-            {f.iloc[0].abstract}
-            """
+                f"""**{row['title']}**  
+                **HTML download links**:\n {row['htmls_to_download']}  
+                **Dates document**:\n{row['dates_document']}  
+                **Content:**\n{row['content'][:content_length]}...
+                """
             )
+        # for id_ in I.flatten().tolist():
+        #     if id_ in set(frame.id):
+        #         f = frame[(frame.id == id_)]
+        #     else:
+        #         continue
+        #
+        #     st.write(
+        #         f"""**{f.iloc[0].original_title}**
+        #     **Citations**: {f.iloc[0].citations}
+        #     **Publication year**: {f.iloc[0].year}
+        #     **Abstract**
+        #     {f.iloc[0].abstract}
+        #     """
+        #     )
 
 
 if __name__ == "__main__":
