@@ -86,14 +86,17 @@ class EUTimelineSpider(scrapy.Spider):
             detail_link=response.url,
         )
         metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
+        # issued
         item['detail_type'] = metadata[0].get()
         item['detail_date'] = metadata[1].get()
         item['detail_location'] = metadata[2].get()
+        # -----
         item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]//text()').get()
         item['detail_title'] = response.xpath(
             '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
 
-        detail_links_start = response.xpath('//p[contains(., "For More Information")]')
+        detail_links_start = response.xpath('//div[@class="ecl-paragraph"]//h3[contains(., "For More Information")]')
+
         if detail_links_start:
             item['for_more_information_links'] = [link.attrib.get('href') for link in
                                                   detail_links_start[0].xpath('following-sibling::p/a')]
