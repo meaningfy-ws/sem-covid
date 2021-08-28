@@ -288,7 +288,7 @@ class CellarDagWorker(BaseETLPipeline):
         for date_column in date_columns:
             document_df[date_column] = document_df[date_column].apply(
                 lambda x: pd.to_datetime(x[0], errors='coerce', yearfirst=True).date() if x else None).replace(
-                {np.nan: None})
+                {np.nan: None}).apply(lambda x: str(x) if x else None)
 
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')

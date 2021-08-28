@@ -24,7 +24,7 @@ CONTENT_PATH_KEY = 'content'
 DAG_TYPE = 'etl'
 DATASET_NAME = "ireland_timeline"
 MAJOR = 2
-MINOR = 6
+MINOR = 7
 
 DAG_NAME = dag_name(category=DAG_TYPE, name=DATASET_NAME, version_major=MAJOR,
                     version_minor=MINOR)
