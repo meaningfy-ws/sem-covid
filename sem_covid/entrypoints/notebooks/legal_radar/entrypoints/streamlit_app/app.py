@@ -24,7 +24,7 @@ HTML_LINKS = 'htmls_to_download'
 DEFAULT_SEARCH = """The Semantic Interoperability Community develops solutions to help European public administrations perform seamless and meaningful cross-border and cross-domain data exchanges."""
 
 
-@st.cache
+@st.cache(allow_output_mutation=True)
 def load_documents():
     """Read the data from ES."""
     es_store = store_registry.es_index_store()
@@ -34,7 +34,7 @@ def load_documents():
     return df
 
 
-@st.cache
+@st.cache(allow_output_mutation=True)
 def load_splitted_documents():
     """Read the data from ES."""
     es_store = store_registry.es_index_store()
