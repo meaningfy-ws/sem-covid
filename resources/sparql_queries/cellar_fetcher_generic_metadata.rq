@@ -38,7 +38,7 @@ SELECT DISTINCT
     (group_concat(DISTINCT ?legal_date_entry_into_force; separator="| ") as ?legal_dates_entry_into_force)
     (group_concat(DISTINCT ?legal_date_signature; separator="| ") as ?legal_dates_signature)
 
-    (group_concat(DISTINCT ?part_of_dossier; separator="| ") as ?dossiers)
+#    (group_concat(DISTINCT ?part_of_dossier; separator="| ") as ?dossiers)
     (group_concat(DISTINCT ?related_to_work; separator="| ") as ?related_works)
     (group_concat(DISTINCT ?work_sequence; separator="| ") as ?work_sequences)
 
