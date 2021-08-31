@@ -11,11 +11,10 @@ install:
 	@ pip install -r requirements-dev.txt
 	@ python -m spacy download en_core_web_sm
 
-install-prod:
+install-airflow:
 	@ echo "$(BUILD_PRINT)Installing the requirements"
 	@ pip install --upgrade pip
-	@ pip install -r requirements-prod.txt
-	@ python -m spacy download en_core_web_sm
+	@ pip install -r requirements-airflow.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.1.2/constraints-no-providers-3.8.txt"
 
 #-----------------------------------------------------------------------------
 # Poetry Install commands

@@ -2,8 +2,7 @@ import pandas as pd
 
 from sem_covid.adapters.es_feature_store import ESFeatureStore
 from sem_covid.adapters.minio_feature_store import MinioFeatureStore
-from tests.unit.test_store.fake_storage import FakeFeatureStore, FakeIndexStore, FakeObjectStore
-
+from tests.fake_storage import FakeFeatureStore, FakeIndexStore, FakeObjectStore, FakePickle
 
 def test_fake_feature_store():
     feature_store = FakeFeatureStore()
@@ -32,7 +31,7 @@ def test_es_feature_store():
 
 
 def test_minio_feature_store():
-    feature_store = MinioFeatureStore(FakeObjectStore())
+    feature_store = MinioFeatureStore(FakeObjectStore(),pickle_convertor=FakePickle())
     feature_df = pd.DataFrame([{"f1": "C", "f2": "B"}])
     feature_store.put_features(features_name="test_feature", content=feature_df)
     tmp_df = feature_store.get_features(features_name="test_feature")

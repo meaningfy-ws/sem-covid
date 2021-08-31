@@ -1,24 +1,19 @@
 import hashlib
-import io
 import json
 import pathlib
 import re
 
 import pandas as pd
 import pytest
-from pathlib import Path
-import tempfile
-import zipfile
 
-from sem_covid import config
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import DOCUMENTS_PREFIX, RESOURCE_FILE_PREFIX
 from sem_covid.entrypoints.etl_dags.etl_cellar_worker_dag import download_manifestation_file, CellarDagWorker, \
     get_work_uri_from_context, content_cleanup_tool, select_relevant_files_from_temp_folder, \
     download_zip_objects_to_temp_folder, get_text_from_selected_files
 from sem_covid.services.store_registry import store_registry
 from tests.unit.dags.conftest import AttrDict
-from tests.unit.test_store.fake_storage import FakeObjectStore
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+from tests.fake_storage import FakeObjectStore
+from tests.fake_store_registry import FakeStoreRegistry
 
 QUERY = "sparql query"
 SPARQL_URL = "www.fake.com"
@@ -57,11 +52,15 @@ def test_get_work_uri_from_context():
 def test_content_cleanup_tool(fragment3_eu_cellar_covid):
     content = content_cleanup_tool(fragment3_eu_cellar_covid["content"])
     assert "\n" not in content
+    assert "\t" not in content
+    assert "\r" not in content
     assert "á" not in content
     assert "—" not in content
     assert "\u2014" not in content
     assert b"\u2014".decode("utf-8") not in content
     assert not re.match(r"\s\s", content)
+    assert "IMMC.COM%282020%29726%20final.ENG.xhtml.1_EN_ACT_part1_v8.docx" not in content
+    assert "<.>" not in content
 
 
 def test_download_zip_objects_to_temp_folder():

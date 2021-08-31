@@ -1,3 +1,4 @@
+
 from sem_covid import config
 
 BOT_NAME = 'sem_covid_crawlers'

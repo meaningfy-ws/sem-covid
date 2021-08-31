@@ -8,6 +8,7 @@ from itertools import chain
 from pathlib import Path
 from typing import List
 
+import numpy as np
 import pandas as pd
 import requests
 from tika import parser
@@ -55,13 +56,17 @@ def get_work_uri_from_context(*args, **context):
 
 def content_cleanup_tool(text: str) -> str:
     """
-        Perform teh text cleanup and return teh results
+        Perform the text cleanup and return the results
     """
     result = text
     result = clean_fix_unicode(result)
     result = clean_to_ascii(result)
     result = re.sub(r"\s+", " ", result)
+    result = re.sub(r"[\s\t\r\n]+", " ", result)
+    result = re.sub(r".*\.docx", "", result)
+    result = re.sub("<.>", "", result)
     result = clean_remove_line_breaks(result)
+    result = result.encode("ascii", "ignore").decode()
 
     return result
 
@@ -275,9 +280,16 @@ class CellarDagWorker(BaseETLPipeline):
         json_content = json.loads(minio.get_object(object_name=json_file_name))
         json_content = [json_content] if isinstance(json_content, dict) else json_content
         document_df = pd.DataFrame.from_records(data=json_content, index=[document_id])
+
         for textual_column in CELLAR_TEXTUAL_COLUMNS:
             document_df[textual_column] = document_df[textual_column].apply(
                 lambda column_item: " ".join(column_item) if column_item else None)
+        date_columns = [col for col in document_df.columns if 'date' in col]
+        for date_column in date_columns:
+            document_df[date_column] = document_df[date_column].apply(
+                lambda x: pd.to_datetime(x[0], errors='coerce', yearfirst=True).date() if x else None).replace(
+                {np.nan: None}).apply(lambda x: str(x) if x else None)
+
         logger.info(
             f'Using ElasticSearch at {config.ELASTICSEARCH_HOST_NAME}:{config.ELASTICSEARCH_PORT}')
 

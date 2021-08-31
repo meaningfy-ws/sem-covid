@@ -16,13 +16,13 @@ from gensim.test.utils import common_texts
 from scrapy.http import Request, HtmlResponse
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.irish_gov import IrishGovCrawler
 from sem_covid.services.crawlers.scrapy_crawlers.spiders.eu_timeline_spider import EUTimelineSpider
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+from tests.fake_store_registry import FakeStoreRegistry
 
 from sem_covid.config_resolver import EnvConfigResolver
 from sem_covid.adapters.data_source import BinaryDataSource, IndexTabularDataSource
 from sem_covid.services.ml_pipelines.pwdb_base_experiment import PWDBBaseExperiment
 from sem_covid.services.sc_wrangling.json_transformer import transform_pwdb
-from tests.unit.test_store.fake_storage import FakeIndexStore
+from tests.fake_storage import FakeIndexStore
 
 
 FAKE_FILENAME = 'fake_filename.json'
@@ -476,6 +476,37 @@ def fake_response_from_file(file_name: str, url: str = None) -> HtmlResponse:
     return HtmlResponse(url=url, request=Request(url=url), body=file_content, encoding='utf-8')
 
 
+@pytest.fixture(scope='session')
+def mock_similarity_matrix() -> pd.DataFrame:
+    mock_data = {'c':
+                 {'c': 1.0,
+                       'parliament': -0.0908335092000001,
+                       'decision': 0.1353025819999999,
+                       'committee': -0.010039506300000056,
+                       'case': 0.5740614076999999},
+                 'parliament': {'c': -0.0908335092000001,
+                        'parliament': 1.0,
+                        'decision': 0.5748587366,
+                        'committee': 0.5905859686999999,
+                        'case': -0.309003742},
+                 'decision': {'c': 0.1353025819999999,
+                        'parliament': 0.5748587366,
+                        'decision': 1.0,
+                        'committee': 0.24436130499999997,
+                        'case': -0.06655389959999991},
+                 'committee': {'c': -0.010039506300000056,
+                        'parliament': 0.5905859686999999,
+                        'decision': 0.24436130499999997,
+                        'committee': 1.0,
+                        'case': -0.04770474889999998},
+                 'case': {'c': 0.5740614076999999,
+                        'parliament': -0.309003742,
+                        'decision': -0.06655389959999991,
+                        'committee': -0.04770474889999998,
+                        'case': 1.0}}
+    return pd.DataFrame.from_dict(mock_data)
+
+
 @pytest.fixture(scope="session")
 def call_irish_crawler():
     return IrishGovCrawler(text_searches=KEY_WORD,
@@ -489,6 +520,14 @@ def call_eu_timeline_crawler():
         storage_adapter=store_registry.minio_object_store(FAKE_BUCKET_NAME),
         filename=FAKE_FILENAME
     )
+
+
+def call_test_notebook() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'test_folder' / 'test_notebook.ipynb'
+
+
+def output_dir_for_converted_notebook() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'test_folder'
 
 
 def call_mock_article_page() -> str:

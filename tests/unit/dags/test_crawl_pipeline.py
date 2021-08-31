@@ -6,7 +6,7 @@ import sem_covid.services.crawlers.scrapy_crawlers.settings as crawler_config
 from sem_covid.entrypoints.etl_dags.crawl_pipeline import extract_settings_from_module
 from sem_covid.entrypoints.etl_dags.crawl_pipeline import CrawlDagPipeline
 from tests.unit.test_crawler.test_crawler.spiders.test_spider import TestCrawler
-from tests.unit.test_store.fake_store_registry import FakeStoreRegistry
+from tests.fake_store_registry import FakeStoreRegistry
 
 
 fake_store_registry = FakeStoreRegistry()

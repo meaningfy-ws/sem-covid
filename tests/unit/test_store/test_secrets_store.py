@@ -1,4 +1,4 @@
-from tests.unit.test_store.fake_storage import FakeSecretsStore
+from tests.fake_storage import FakeSecretsStore
 
 
 def test_secrets_store():
