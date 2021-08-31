@@ -14,8 +14,8 @@ logger.debug(f"This line is important for DAG discovery because the *airflow mod
              f"shall be imported here. Otherwise it does not discover DAGs in this "
              f"module. Airflow version {airflow.__version__}")
 
-MINOR = 2
-MAJOR = 7
+MAJOR = 2
+MINOR = 8
 
 MASTER_DAG_NAME = dag_name(category="etl", name="eu_cellar_covid", role="master", version_major=MAJOR,
                            version_minor=MINOR)
