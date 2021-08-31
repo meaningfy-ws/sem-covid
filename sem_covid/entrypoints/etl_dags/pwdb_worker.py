@@ -4,14 +4,34 @@
 # Date:  22/02/2021
 # Author: Laurentiu Mandru
 # Email: mclaurentiu79@gmail.com
-
+import re
 import hashlib
 import json
 import logging
+
+import numpy as np
+import pandas as pd
 import requests
 from tika import parser
 from sem_covid.services.store_registry import StoreRegistryABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
+from sem_covid.services.sc_wrangling.data_cleaning import clean_fix_unicode, clean_to_ascii, clean_remove_line_breaks
+
+BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
+              'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
+              'Solo-self-employed', 'Start-ups'}
+
+CITIZENS = {'Children (minors)', 'Disabled', 'Migrants', 'Older citizens', 'Other groups of citizens', 'Parents',
+            'People in care facilities', 'Refugees', 'Single parents', 'The COVID-19 risk group', 'Women',
+            'Youth (18-25)'}
+
+WORKERS = {'Cross-border commuters', 'Disabled workers', 'Employees in standard employment', 'Female workers',
+           'Migrants in employment', 'Older people in employment (aged 55+)', 'Other groups of workers',
+           'Parents in employment', 'Particular professions', 'Platform workers', 'Posted workers',
+           'Refugees in employment', 'Seasonal workers', 'Self-employed', 'Single parents in employment',
+           'The COVID-19 risk group at the workplace', 'Undeclared workers', 'Unemployed', 'Workers in care facilities',
+           'Workers in essential services', 'Workers in non-standard forms of employment',
+           'Youth (18-25) in employment'}
 
 CONTENT_PATH_KEY = 'content_path'
 CONTENT_KEY = 'content'
@@ -20,6 +40,23 @@ FAILURE_KEY = 'failure_reason'
 RESOURCE_FILE_PREFIX = 'res/'
 TIKA_FILE_PREFIX = 'tika/'
 logger = logging.getLogger(__name__)
+
+
+def content_cleanup_tool(text: str) -> str:
+    """
+        Perform the text cleanup and return the results
+    """
+    result = text
+    result = clean_fix_unicode(result)
+    result = clean_to_ascii(result)
+    result = re.sub(r"\s+", " ", result)
+    result = re.sub(r"[\s\t\r\n]+", " ", result)
+    result = re.sub(r".*\.docx", "", result)
+    result = re.sub("<.>", "", result)
+    result = clean_remove_line_breaks(result)
+    result = result.encode("ascii", "ignore").decode()
+
+    return result
 
 
 def download_single_source(source, minio):
@@ -98,7 +135,7 @@ class PWDBDagWorker(BaseETLPipeline):
 
                     logger.info('RESULT IS ' + json.dumps(parse_result))
                     if CONTENT_KEY in parse_result and parse_result[CONTENT_KEY]:
-                        source[CONTENT_KEY] = parse_result[CONTENT_KEY].replace('\n', '')
+                        source[CONTENT_KEY] = content_cleanup_tool(parse_result[CONTENT_KEY])
                         source[CONTENT_LANGUAGE] = (
                                 parse_result["metadata"].get("Content-Language")
                                 or
@@ -141,14 +178,28 @@ class PWDBDagWorker(BaseETLPipeline):
         tika_filename = TIKA_FILE_PREFIX + hashlib.sha256(
             (str(original_field_data['identifier'] + original_field_data['title'])).encode('utf-8')).hexdigest()
         logger.info("Tika-processed filename is " + tika_filename)
-        tika_field_data = json.loads(minio.get_object(tika_filename).decode('utf-8'))
+        tika_field_data = json.loads(minio.get_object(tika_filename))
+
+        new_columns = {'businesses': BUSINESSES, 'citizens': CITIZENS, 'workers': WORKERS}
+        target_groups_key = tika_field_data['target_groups']
+        for column, class_set in new_columns.items():
+            tika_field_data[column] = int(any(item for item in class_set if item in target_groups_key))
+        tika_field_data = [tika_field_data] if isinstance(tika_field_data, dict) else tika_field_data
+        document_df = pd.DataFrame.from_records(data=tika_field_data, index=[tika_filename])
+        document_df.replace({np.nan: None}, inplace=True)
+        date_columns = [col for col in document_df.columns if 'date' in col]
+        for date_column in date_columns:
+            document_df[date_column] = document_df[date_column].apply(
+                lambda x: pd.to_datetime(x, errors='coerce', yearfirst=True).date() if x else None).replace(
+                {np.nan: None}).apply(lambda x: str(x) if x else None)
+
 
         logger.info('Sending to ElasticSearch (  ' +
                     self.elasticsearch_index_name +
                     ' ) the file ' +
                     tika_filename)
-        es_adapter.index(index_name=self.elasticsearch_index_name,
-                         document_id=tika_filename.split("/")[1],
-                         document_body=tika_field_data)
+
+        es_adapter.put_dataframe(index_name=self.elasticsearch_index_name,
+                                 content=document_df)
 
         logger.info('Sent ' + tika_filename + '  to ElasticSearch.')

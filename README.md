@@ -45,6 +45,10 @@ This project covers the data extraction and preparation for the machine learning
 ## Enrichment pipelines
 - [Readme](docs/enriched_datasets/README.md)
 - [Download](docs/enriched_datasets)
+## Language model pipeline
+- [Readme](docs/language-models/README.md)
+## Discovery WordGraph application
+- [Readme](docs/word-graph-app/README.md)
 ## Running the code
 
 The source code is organised to be executed as either [Jupiter Notebooks](https://jupyter.org/) or [Airflow DAGs](https://airflow.apache.org/). The notebooks comprises various exploratory exercises and are available in the ``/sem_covid/entrypoints/notebooks`` folder. The Airflow DAGs are production oriented and can be found in the ``sem_covid/entrypoints/etl_dags`` (the data related processes) and in the ``sem_covid/entrypoints/ml_dags`` (the machine learning processes).

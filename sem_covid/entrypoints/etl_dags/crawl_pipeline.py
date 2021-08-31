@@ -9,9 +9,12 @@
 
 import hashlib
 import logging
+import re
 import uuid
 from json import loads, dumps
 
+import numpy as np
+import pandas as pd
 from scrapy.crawler import CrawlerProcess
 from tika import parser
 
@@ -19,11 +22,29 @@ import sem_covid.services.crawlers.scrapy_crawlers.settings as crawler_config
 from sem_covid import config
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseETLPipeline
 from sem_covid.services.store_registry import StoreRegistryABC
+from sem_covid.services.sc_wrangling.data_cleaning import clean_fix_unicode, clean_to_ascii, clean_remove_line_breaks
 
 TIKA_FILE_PREFIX = 'tika/'
 SPLASH_URL_CONFIG = 'config.SPLASH_URL'
 
 logger = logging.getLogger(__name__)
+
+
+def content_cleanup_tool(text: str) -> str:
+    """
+        Perform the text cleanup and return the results
+    """
+    result = text
+    result = clean_fix_unicode(result)
+    result = clean_to_ascii(result)
+    result = re.sub(r"\s+", " ", result)
+    result = re.sub(r"[\s\t\r\n]+", " ", result)
+    result = re.sub(r".*\.docx", "", result)
+    result = re.sub("<.>", "", result)
+    result = clean_remove_line_breaks(result)
+    result = result.encode("ascii", "ignore").decode()
+
+    return result
 
 
 def extract_settings_from_module(module) -> dict:
@@ -88,7 +109,7 @@ class CrawlDagPipeline(BaseETLPipeline):
 
                 if 'content' in parse_result:
                     counter['success'] += 1
-                    item[self.content_path_key] = parse_result['content']
+                    item[self.content_path_key] = content_cleanup_tool(parse_result['content'])
 
             manifestation = item.get('detail_link') or item['title']
             if manifestation is None:
@@ -111,12 +132,20 @@ class CrawlDagPipeline(BaseETLPipeline):
         objects = minio.list_objects(TIKA_FILE_PREFIX)
 
         for item in objects:
-            try:
-                logger.info(
-                    f'Sending to ElasticSearch ( {self.elasticsearch_index_name} ) the object {item.object_name}')
-                es_adapter.index(index_name=self.elasticsearch_index_name,
-                                 document_id=item.object_name.split("/")[1],
-                                 document_body=loads(minio.get_object(item.object_name)))
-            except Exception as exception:
-                logger.exception(exception)
-                raise exception
+            document_id = item.object_name.split("/")[1]
+            document_data = loads(minio.get_object(item.object_name))
+            document_data = [document_data] if isinstance(document_data, dict) else document_data
+            document_df = pd.DataFrame.from_records(data=document_data, index=[document_id])
+            document_df.replace({np.nan: None}, inplace=True)
+            date_columns = [col for col in document_df.columns if 'date' in col]
+            if 'month_name' in document_df.columns:
+                document_df['date'] = document_df['date'].astype(str) + " " + document_df['month_name'].map(
+                    lambda x: x.split(" ")[1]).astype(str)
+
+            for date_column in date_columns:
+                document_df[date_column] = document_df[date_column].apply(
+                    lambda x: pd.to_datetime(x, errors='coerce', yearfirst=True).date() if x else None).replace(
+                    {np.nan: None}).apply(lambda x: str(x) if x else None)
+
+            es_adapter.put_dataframe(index_name=self.elasticsearch_index_name,
+                                     content=document_df)
