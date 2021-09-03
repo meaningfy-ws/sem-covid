@@ -38,11 +38,15 @@ poetry-export:
 
 test:
 	@ echo "$(BUILD_PRINT)Running the unit tests"
-	@ py.test --ignore=tests/tests/e2e -s --html=report.html --self-contained-html
+	@ py.test --ignore=tests/e2e --ignore=tests/datasets_validation -s --html=report.html --self-contained-html
 
 test-all:
 	@ echo "$(BUILD_PRINT)Running all tests"
 	@ py.test -s --html=report.html --self-contained-html
+
+data-validation:
+	@ echo "$(BUILD_PRINT)Running the data validation tests"
+	@ py.test tests/datasets_validation
 
 lint:
 	@ echo "$(BUILD_PRINT)Looking for dragons in your code ...."
