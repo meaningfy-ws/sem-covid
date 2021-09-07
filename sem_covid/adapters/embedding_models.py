@@ -11,14 +11,16 @@ import numpy as np
 from gensim.models import KeyedVectors
 
 from sem_covid.adapters.abstract_model import (WordEmbeddingModelABC, SentenceEmbeddingModelABC,
-                                               TokenizerModelABC)
+                                               TokenizerModelABC, DocumentEmbeddingModelABC, SentenceSplitterModelABC)
 import tensorflow_hub as hub
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-
+import re
 from transformers import AutoTokenizer, TFAutoModel
 from tensorflow.python.ops.numpy_ops import np_config
+
+from sem_covid.services.sc_wrangling.sentences_ranker import textual_tfidf_ranker
 
 np_config.enable_numpy_behavior()
 
@@ -41,6 +43,20 @@ class BasicTokenizerModel(TokenizerModelABC):
         :return: a list of tokens, where each token is a string.
         """
         return text.split(' ')
+
+
+class BasicSentenceSplitterModel(SentenceSplitterModelABC):
+    """
+
+    """
+
+    def split(self, text: str) -> List[str]:
+        """
+
+        :param text:
+        :return:
+        """
+        return [sent for sent in re.split("(?<=[\.\!\?;])\s*", text) if sent]
 
 
 class SpacyTokenizerModel(TokenizerModelABC):
@@ -220,3 +236,22 @@ class EurLexBertSentenceEmbeddingModel(SentenceEmbeddingModelABC):
             self.model(**self.tokenizer(sentence, return_tensors='tf'))['pooler_output'].numpy()[0].tolist()
             for sentence in sentences
         ]
+
+
+class TfIdfDocumentEmbeddingModel(DocumentEmbeddingModelABC):
+
+    def __init__(self, sent_emb_model: SentenceEmbeddingModelABC,
+                 sent_splitter: SentenceSplitterModelABC,
+                 top_k: int
+                 ):
+        self.sent_emb_model = sent_emb_model
+        self.sent_splitter = sent_splitter
+        self.top_k = top_k
+
+    def encode(self, documents: List[str]) -> List:
+        return [np.average(self.sent_emb_model.encode(document_sentences),
+                           axis=0,
+                           weights=textual_tfidf_ranker(textual_chunks=document_sentences,
+                                                        top_k=self.top_k)
+                           )
+                for document_sentences in map(self.sent_splitter.split, documents)]

@@ -31,6 +31,20 @@ class TokenizerModelABC(ABC):
         raise NotImplementedError
 
 
+class SentenceSplitterModelABC(ABC):
+    """
+        This abstract class aims to create a uniform interface for different approaches to dividing text into sentences.
+    """
+
+    @abstractmethod
+    def split(self, text: str) -> List[str]:
+        """
+            This method divides the received text into sentences.
+        :param text: the text to be divided into sentences
+        :return: a list of sentences in the order they appear in the input text
+        """
+
+
 class WordEmbeddingModelABC(ABC):
     """
         This abstraction aims to define an interface for ML models that can encode tokens in embeddings.
