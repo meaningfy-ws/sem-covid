@@ -29,9 +29,9 @@ A separate pipeline has been created for language modeling, the pipeline is made
     - saving the model 
 
 
- [Source code](sem_covid/services/language_model_pipeline.py)
+ [Source code](../../sem_covid/services/language_model_pipeline.py)
  - sem_covid/services/language_model_pipeline.py
 
- [Execution in Jupyter Notebook](sem_covid/entrypoints/notebooks/language_modeling/word2vec_model_training.ipynb)
+ [Execution in Jupyter Notebook](../../sem_covid/entrypoints/notebooks/language_modeling/word2vec_model_training.ipynb)
  - sem_covid/entrypoints/notebooks/language_modeling/word2vec_model_training.ipynb
 

@@ -38,7 +38,7 @@ SELECT DISTINCT
     (group_concat(DISTINCT ?legal_date_entry_into_force; separator="| ") as ?legal_dates_entry_into_force)
     (group_concat(DISTINCT ?legal_date_signature; separator="| ") as ?legal_dates_signature)
 
-    (group_concat(DISTINCT ?part_of_dossier; separator="| ") as ?dossiers)
+#    (group_concat(DISTINCT ?part_of_dossier; separator="| ") as ?dossiers)
     (group_concat(DISTINCT ?related_to_work; separator="| ") as ?related_works)
     (group_concat(DISTINCT ?work_sequence; separator="| ") as ?work_sequences)
 
@@ -133,14 +133,14 @@ WHERE {
 
     # dossie, sequence and relatedness relations are useful for tracking the whole
     # adoption process and other purposes as well
-    OPTIONAL {
-        ?work cdm:work_part_of_dossier|^cdm:dossier_contains_work ?part_of_dossier .
-    }
+#    OPTIONAL {
+#        ?work cdm:work_part_of_dossier|^cdm:dossier_contains_work ?part_of_dossier .
+# }
     OPTIONAL {
         ?work cdm:work_sequence ?work_sequence .
     }
     OPTIONAL {
-        ?work cdm:cdm:work_related_to_work ?related_to_work .
+        ?work cdm:work_related_to_work ?related_to_work .
     }
 
     # diving down FRBR structure for the title and the content

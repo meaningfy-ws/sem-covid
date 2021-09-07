@@ -24,10 +24,10 @@ A separate pipeline has been developed for the feature engineering and model tra
  - FeatureEngineeringBERT - class for a BERT-based feature engineering pipeline.
  - ModelTraining - base class for a training model pipeline .
 
- [Source code](sem_covid/services/ml_pipelines/pwdb_classifiers_pipeline.py)
+ [Source code](../../sem_covid/services/ml_pipelines/pwdb_classifiers_pipeline.py)
  - sem_covid/services/ml_pipelines/pwdb_classifiers_pipeline.py
 
- [Execution in Jupyter Notebook](sem_covid/entrypoints/notebooks/classification_pipeline.ipynb)
+ [Execution in Jupyter Notebook](../../sem_covid/entrypoints/notebooks/classification_pipeline.ipynb)
  - sem_covid/entrypoints/notebooks/classification_pipeline.ipynb
 
 ### **The archive structure of a trained model**
