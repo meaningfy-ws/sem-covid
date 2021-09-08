@@ -47,16 +47,35 @@ class BasicTokenizerModel(TokenizerModelABC):
 
 class BasicSentenceSplitterModel(SentenceSplitterModelABC):
     """
-
+        This class is a concrete implementation of SentenceSplitterModelABC,
+         which divides text into sentences using regular expressions.
     """
 
     def split(self, text: str) -> List[str]:
         """
-
-        :param text:
-        :return:
+            This method divides the received text into sentences.
+        :param text: the text to be divided into sentences
+        :return: a list of sentences in the order they appear in the input text
         """
         return [sent for sent in re.split("(?<=[\.\!\?;])\s*", text) if sent]
+
+
+class SpacySentenceSplitterModel(SentenceSplitterModelABC):
+    """
+        This class is a concrete implementation of the SentenceSplitterModelABC interface,
+         which uses Spacy's text-splitting model.
+    """
+
+    def __init__(self, spacy_nlp):
+        self.spacy_nlp = spacy_nlp
+
+    def split(self, text: str) -> List[str]:
+        """
+            This method divides the received text into sentences.
+        :param text: the text to be divided into sentences
+        :return: a list of sentences in the order they appear in the input text
+        """
+        return [sent.text for sent in self.spacy_nlp(text).sents]
 
 
 class SpacyTokenizerModel(TokenizerModelABC):
@@ -239,16 +258,29 @@ class EurLexBertSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 
 
 class TfIdfDocumentEmbeddingModel(DocumentEmbeddingModelABC):
+    """
 
+    """
     def __init__(self, sent_emb_model: SentenceEmbeddingModelABC,
                  sent_splitter: SentenceSplitterModelABC,
                  top_k: int
                  ):
+        """
+
+        :param sent_emb_model:
+        :param sent_splitter:
+        :param top_k:
+        """
         self.sent_emb_model = sent_emb_model
         self.sent_splitter = sent_splitter
         self.top_k = top_k
 
     def encode(self, documents: List[str]) -> List:
+        """
+
+        :param documents:
+        :return:
+        """
         return [np.average(self.sent_emb_model.encode(document_sentences),
                            axis=0,
                            weights=textual_tfidf_ranker(textual_chunks=document_sentences,
