@@ -157,6 +157,9 @@ class TokenizerModelRegistry(TokenizerModelRegistryABC):
 
 class EmbeddingModelRegistry(EmbeddingModelRegistryABC):
 
+    def __init__(self):
+        self.nlp = spacy.load("en_core_web_sm")
+
     def word2vec_law(self) -> WordEmbeddingModelABC:
         LanguageModel.LAW2VEC.fetch()
         law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
@@ -181,7 +184,7 @@ class EmbeddingModelRegistry(EmbeddingModelRegistryABC):
 
     def doc2vec_tfidf_weight_avg(self) -> DocumentEmbeddingModelABC:
         return TfIdfDocumentEmbeddingModel(sent_emb_model=UniversalSentenceEmbeddingModel(),
-                                           sent_splitter=SpacySentenceSplitterModel(),
+                                           sent_splitter=SpacySentenceSplitterModel(spacy_nlp=self.nlp),
                                            top_k=10)
 
 
