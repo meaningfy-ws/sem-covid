@@ -13,9 +13,6 @@ import warnings
 
 import dotenv
 
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-
 try:
     import importlib.resources as pkg_resources
 except ImportError:
