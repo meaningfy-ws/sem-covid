@@ -5,23 +5,24 @@
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
 
-from typing import List
 
+from typing import List
 from more_itertools import windowed
 import numpy as np
 from gensim.models import KeyedVectors
-
 from sem_covid.adapters.abstract_model import (WordEmbeddingModelABC, SentenceEmbeddingModelABC,
                                                TokenizerModelABC, DocumentEmbeddingModelABC, SentenceSplitterModelABC)
-import tensorflow_hub as hub
-
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import re
-from transformers import AutoTokenizer, TFAutoModel
-from tensorflow.python.ops.numpy_ops import np_config
+import os
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 from sem_covid.services.sc_wrangling.sentences_ranker import textual_tfidf_ranker
+import tensorflow_hub as hub
+from transformers import AutoTokenizer, TFAutoModel
+from tensorflow.python.ops.numpy_ops import np_config
 
 np_config.enable_numpy_behavior()
 
