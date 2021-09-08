@@ -14,17 +14,25 @@ from sem_covid.services.store_registry import store_registry
 
 
 BUCKET_NAME = 'semantic-similarity-matrices'
-MODEL_NUMBER = 'model2_'
+
+# model names
+MODEL1 = 'model1'
+MODEL2 = 'model2'
+MODEL3 = 'model3'
+
+DELIMITER = '_'
 FILE_FORMAT = '.pkl'
 COSINE_MATRIX = 'cosine'
 EUCLIDEAN_MATRIX = 'euclidean'
+MATRIX_TYPE_NAME = '_matrix'
 HAMMING_MATRIX = 'hamming'
+
+# streamlit widgets' names
 STREAMLIT_TITLE = 'Semantic similarity graph'
 TEXT_INPUT_WIDGET = "Introduce word"
+MODEL_INPUT_WIDGET = 'Select the model'
 MATRIX_TEXT_INPUT = "Select similarity"
 BUTTON_NAME = 'Generate graph'
-LANGUAGE_MODEL_BUCKET_NAME = 'mdl-language'
-LANGUAGE_MODEL_NAME = 'word2vec/model2_language_model.model'
 
 
 @st.cache(suppress_st_warning=True, show_spinner=False)
@@ -105,16 +113,20 @@ def create_similarity_graph(similarity_matrix: pd.DataFrame, key_word: str, metr
 
 st.title(STREAMLIT_TITLE)
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
-word = col1.multiselect(
-    TEXT_INPUT_WIDGET,
-    read_language_model(LANGUAGE_MODEL_BUCKET_NAME, LANGUAGE_MODEL_NAME).wv.index_to_key)
+model_number = col1.selectbox(
+    MODEL_INPUT_WIDGET,
+    (MODEL1, MODEL2, MODEL3)
+)
 
 matrix = col2.selectbox(
     MATRIX_TEXT_INPUT,
     (COSINE_MATRIX, EUCLIDEAN_MATRIX, HAMMING_MATRIX))
 
+word = col3.selectbox(
+    TEXT_INPUT_WIDGET,
+    read_similarity_matrix((model_number + DELIMITER + matrix + MATRIX_TYPE_NAME + FILE_FORMAT)).columns.to_list())
 
 threshold_slider = st.slider('Threshold', min_value=0.0, max_value=1.0, step=0.05, value=0.4)
 number_of_neighbours_slider = st.slider('Number of Neighbours', min_value=2, max_value=5, step=1, value=1)
@@ -124,8 +136,8 @@ if st.button(BUTTON_NAME):
     try:
         st.write('Generating graph . . .')
         components.html(open(create_similarity_graph(
-            similarity_matrix=read_similarity_matrix(MODEL_NUMBER + matrix + '_matrix' + FILE_FORMAT),
-            key_word=word[0], top_words=number_of_neighbours_slider + 1,
+            similarity_matrix=read_similarity_matrix(model_number + DELIMITER + matrix + MATRIX_TYPE_NAME + FILE_FORMAT),
+            key_word=word, top_words=number_of_neighbours_slider + 1,
             metric_threshold=threshold_slider)['path'], 'r', encoding='utf-8').read(), width=700, height=700)
     except KeyError:
         st.write('There is no such a word.')
