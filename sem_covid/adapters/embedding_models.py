@@ -7,6 +7,7 @@
 
 from typing import List
 
+from more_itertools import windowed
 import numpy as np
 from gensim.models import KeyedVectors
 
@@ -67,6 +68,9 @@ class SpacySentenceSplitterModel(SentenceSplitterModelABC):
     """
 
     def __init__(self, spacy_nlp):
+        """
+        :param spacy_nlp:
+        """
         self.spacy_nlp = spacy_nlp
 
     def split(self, text: str) -> List[str]:
@@ -76,6 +80,44 @@ class SpacySentenceSplitterModel(SentenceSplitterModelABC):
         :return: a list of sentences in the order they appear in the input text
         """
         return [sent.text for sent in self.spacy_nlp(text).sents]
+
+
+class WindowedSentenceSplitterModel(SentenceSplitterModelABC):
+    """
+        This class implements abstraction from SentenceSplitterModelABC,
+         it is dependent on another SentenceSplitter that is not based on the moving window algorithm.
+         The purpose of this class is to provide text sequences larger than a sentence,
+          these text sequences are obtained by combining a set of sentences.
+    """
+
+    def __init__(self, sentence_splitter: SentenceSplitterModelABC,
+                 window_size: int = 10,
+                 window_step: int = 5
+                 ):
+        """
+        :param sentence_splitter: a sentence splitter object
+        :param window_size: the size of the sentence grouping window
+        :param window_step: the step with which the window will be moved to the text
+        """
+        self.sentence_splitter = sentence_splitter
+        self.window_size = window_size
+        self.window_step = window_step
+
+    def split(self, text: str) -> List[str]:
+        """
+            This method aims to divide the text into a list of pieces of text,
+            each piece of text represents a set of sentences
+        :param text: the text to be divided into pieces
+        :return: a list of text sequences
+        """
+        sentences = self.sentence_splitter.split(text=text)
+        windowed_texts = list(
+            windowed(sentences,
+                     n=self.window_size,
+                     fillvalue='',
+                     step=self.window_step)
+        )
+        return [' '.join(window) for window in windowed_texts]
 
 
 class SpacyTokenizerModel(TokenizerModelABC):
@@ -259,17 +301,19 @@ class EurLexBertSentenceEmbeddingModel(SentenceEmbeddingModelABC):
 
 class TfIdfDocumentEmbeddingModel(DocumentEmbeddingModelABC):
     """
-
+        This class is a concrete implementation of the DocumentEmbeddingModelABC interface,
+         the purpose of this class is to calculate document embeddings
+          based on the weighted average of embeddings at the level of text sequences.
     """
+
     def __init__(self, sent_emb_model: SentenceEmbeddingModelABC,
                  sent_splitter: SentenceSplitterModelABC,
                  top_k: int
                  ):
         """
-
-        :param sent_emb_model:
-        :param sent_splitter:
-        :param top_k:
+        :param sent_emb_model: a model for sentence embeddings
+        :param sent_splitter: a model for sentence splitter
+        :param top_k: the number of important tokens
         """
         self.sent_emb_model = sent_emb_model
         self.sent_splitter = sent_splitter
@@ -277,9 +321,9 @@ class TfIdfDocumentEmbeddingModel(DocumentEmbeddingModelABC):
 
     def encode(self, documents: List[str]) -> List:
         """
-
-        :param documents:
-        :return:
+            This method aims to generate an embedding for each document in the input list.
+        :param documents: list of documents on the basis of which document embeddings will be calculated
+        :return: a list of document embeddings
         """
         return [np.average(self.sent_emb_model.encode(document_sentences),
                            axis=0,
