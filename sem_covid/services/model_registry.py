@@ -15,10 +15,11 @@ from gensim.models import KeyedVectors
 from mlflow.sklearn import load_model
 from abc import ABC, abstractmethod
 
-from sem_covid.adapters.abstract_model import WordEmbeddingModelABC, SentenceEmbeddingModelABC, TokenizerModelABC
+from sem_covid.adapters.abstract_model import WordEmbeddingModelABC, SentenceEmbeddingModelABC, TokenizerModelABC, \
+    DocumentEmbeddingModelABC
 from sem_covid.adapters.embedding_models import SpacyTokenizerModel, BasicTokenizerModel, Word2VecEmbeddingModel, \
     AverageSentenceEmbeddingModel, TfIdfSentenceEmbeddingModel, UniversalSentenceEmbeddingModel, \
-    EurLexBertSentenceEmbeddingModel
+    EurLexBertSentenceEmbeddingModel, TfIdfDocumentEmbeddingModel, SpacySentenceSplitterModel
 from sem_covid.services.data_registry import LanguageModel
 
 BUSINESSES_CLASS_EXPERIMENT_ID = '12'
@@ -156,6 +157,9 @@ class TokenizerModelRegistry(TokenizerModelRegistryABC):
 
 class EmbeddingModelRegistry(EmbeddingModelRegistryABC):
 
+    def __init__(self):
+        self.nlp = spacy.load("en_core_web_sm")
+
     def word2vec_law(self) -> WordEmbeddingModelABC:
         LanguageModel.LAW2VEC.fetch()
         law2vec_path = LanguageModel.LAW2VEC.path_to_local_cache()
@@ -177,6 +181,11 @@ class EmbeddingModelRegistry(EmbeddingModelRegistryABC):
 
     def sent2vec_eurlex_bert(self) -> SentenceEmbeddingModelABC:
         return EurLexBertSentenceEmbeddingModel()
+
+    def doc2vec_tfidf_weight_avg(self) -> DocumentEmbeddingModelABC:
+        return TfIdfDocumentEmbeddingModel(sent_emb_model=UniversalSentenceEmbeddingModel(),
+                                           sent_splitter=SpacySentenceSplitterModel(spacy_nlp=self.nlp),
+                                           top_k=10)
 
 
 tokenizer_registry = TokenizerModelRegistry()
