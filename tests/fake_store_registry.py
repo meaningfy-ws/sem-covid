@@ -7,6 +7,7 @@ from sem_covid import config
 import pandas as pd
 from tests import TEST_DATA_PATH
 
+
 class FakeStoreRegistry(StoreRegistryABC):
 
     def __init__(self):

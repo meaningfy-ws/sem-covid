@@ -1,19 +1,18 @@
 
-import re
 import pickle
+import re
 from typing import List, Tuple
 
-import spacy
 import pandas as pd
+import spacy
 from gensim.models import Word2Vec
 
-from sem_covid.services.store_registry import store_registry
-from sem_covid.adapters.data_source import IndexTabularDataSource
 from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.document_handling_tools import (
     document_atomization_noun_phrases, lemmatize_document)
 from sem_covid.services.sc_wrangling.data_cleaning import (clean_text_from_specific_characters, clean_fix_unicode,
                                                            clean_remove_currency_symbols, clean_remove_emails,
                                                            clean_remove_urls, clean_remove_stopwords)
+from sem_covid.services.store_registry import store_registry
 
 nlp = spacy.load('en_core_web_sm')
 nlp.max_length = 1500000
@@ -105,9 +104,9 @@ class LanguageModelPipeline:
         """
             To extract the parts of speech, below it was defined classes for each token is necessary.
         """
-        self.documents_corpus = pd.concat([self.documents_corpus,
-                                           self.documents_corpus.apply(document_atomization_noun_phrases),
-                                           self.documents_corpus.apply(lemmatize_document)], ignore_index=True)
+        self.documents_corpus = pd.concat([self.documents_corpus
+                                          .apply(document_atomization_noun_phrases)
+                                          .apply(lemmatize_document)], ignore_index=True)
 
         self.documents_corpus = self.documents_corpus.apply(lambda x: list(map(str, x)))
 
