@@ -29,4 +29,6 @@ def test_textual_tfidf_ranker():
                       '']
     k = 10
     result = textual_tfidf_ranker(textual_chunks=textual_chunks, top_k=k)
+    assert type(result) == list
     assert len(result) == len(textual_chunks)
+

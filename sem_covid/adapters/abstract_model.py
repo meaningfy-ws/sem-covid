@@ -31,17 +31,17 @@ class TokenizerModelABC(ABC):
         raise NotImplementedError
 
 
-class SentenceSplitterModelABC(ABC):
+class TextSplitterModelABC(ABC):
     """
-        This abstract class aims to create a uniform interface for different approaches to dividing text into sentences.
+        This abstract class aims to create a uniform interface for different approaches to dividing text into sequences.
     """
 
     @abstractmethod
     def split(self, text: str) -> List[str]:
         """
-            This method divides the received text into sentences.
-        :param text: the text to be divided into sentences
-        :return: a list of sentences in the order they appear in the input text
+            This method divides the received text into sequences.
+        :param text: the text to be divided into sequences
+        :return: a list of sequences in the order they appear in the input text
         """
 
 

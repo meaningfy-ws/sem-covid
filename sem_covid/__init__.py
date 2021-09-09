@@ -265,6 +265,15 @@ class VaultConfig:
         return EnvConfigResolver.config_resolve()
 
 
+class TensorFlowConfig:
+
+    # TensorFlow property
+
+    @property
+    def TF_CPP_MIN_LOG_LEVEL(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+
 class CrawlerConfig:
 
     # Crawler property
@@ -292,7 +301,8 @@ class SemCovidConfig(CrawlerConfig,
                      EuCellarConfig,
                      EuTimeLineConfig,
                      MlExperimentsConfig,
-                     MinIOConfig
+                     MinIOConfig,
+                     TensorFlowConfig
                      ):
     ...
 
@@ -305,6 +315,7 @@ config.MLFLOW_TRACKING_URI
 config.MLFLOW_S3_BUCKET_NAME
 config.MLFLOW_S3_ENDPOINT_URL
 config.AWS_SECRET_ACCESS_KEY
+config.TF_CPP_MIN_LOG_LEVEL
 
 
 # Set of config artefacts used in the Flask UI

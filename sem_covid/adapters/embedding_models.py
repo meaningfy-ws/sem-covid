@@ -11,13 +11,10 @@ from more_itertools import windowed
 import numpy as np
 from gensim.models import KeyedVectors
 from sem_covid.adapters.abstract_model import (WordEmbeddingModelABC, SentenceEmbeddingModelABC,
-                                               TokenizerModelABC, DocumentEmbeddingModelABC, SentenceSplitterModelABC)
+                                               TokenizerModelABC, DocumentEmbeddingModelABC, TextSplitterModelABC)
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import re
-import os
-
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 from sem_covid.services.sc_wrangling.sentences_ranker import textual_tfidf_ranker
 import tensorflow_hub as hub
@@ -47,9 +44,9 @@ class BasicTokenizerModel(TokenizerModelABC):
         return text.split(' ')
 
 
-class BasicSentenceSplitterModel(SentenceSplitterModelABC):
+class BasicSentenceSplitterModel(TextSplitterModelABC):
     """
-        This class is a concrete implementation of SentenceSplitterModelABC,
+        This class is a concrete implementation of TextSplitterModelABC,
          which divides text into sentences using regular expressions.
     """
 
@@ -62,9 +59,9 @@ class BasicSentenceSplitterModel(SentenceSplitterModelABC):
         return [sent for sent in re.split("(?<=[\.\!\?;])\s*", text) if sent]
 
 
-class SpacySentenceSplitterModel(SentenceSplitterModelABC):
+class SpacySentenceSplitterModel(TextSplitterModelABC):
     """
-        This class is a concrete implementation of the SentenceSplitterModelABC interface,
+        This class is a concrete implementation of the TextSplitterModelABC interface,
          which uses Spacy's text-splitting model.
     """
 
@@ -83,15 +80,15 @@ class SpacySentenceSplitterModel(SentenceSplitterModelABC):
         return [sent.text for sent in self.spacy_nlp(text).sents]
 
 
-class WindowedSentenceSplitterModel(SentenceSplitterModelABC):
+class WindowedTextSplitterModel(TextSplitterModelABC):
     """
-        This class implements abstraction from SentenceSplitterModelABC,
+        This class implements abstraction from TextSplitterModelABC,
          it is dependent on another SentenceSplitter that is not based on the moving window algorithm.
          The purpose of this class is to provide text sequences larger than a sentence,
           these text sequences are obtained by combining a set of sentences.
     """
 
-    def __init__(self, sentence_splitter: SentenceSplitterModelABC,
+    def __init__(self, sentence_splitter: TextSplitterModelABC,
                  window_size: int = 10,
                  window_step: int = 5
                  ):
@@ -308,7 +305,7 @@ class TfIdfDocumentEmbeddingModel(DocumentEmbeddingModelABC):
     """
 
     def __init__(self, sent_emb_model: SentenceEmbeddingModelABC,
-                 sent_splitter: SentenceSplitterModelABC,
+                 sent_splitter: TextSplitterModelABC,
                  top_k: int
                  ):
         """
