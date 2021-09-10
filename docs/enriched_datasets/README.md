@@ -39,8 +39,8 @@ The enrichment pipeline is divided into two sub-pipelines, namely the enrichment
  - BasePrepareDatasetPipeline - basic class for pipeline preparation of the dataset to be enriched.
  - BaseEnrichPipeline - basic class for pipeline enrichment of a dataset.
 
- [Source code](sem_covid/services/enrich_pipelines/base_enrich_pipeline.py)
+ [Source code](../../sem_covid/services/enrich_pipelines/base_enrich_pipeline.py)
  - sem_covid/services/enrich_pipelines/base_enrich_pipeline.py
 
- [Execution in Jupyter Notebook](sem_covid/entrypoints/notebooks/enrichment_pipeline.ipynb) 
+ [Execution in Jupyter Notebook](../../sem_covid/entrypoints/notebooks/enrichment_pipeline.ipynb) 
  - sem_covid/entrypoints/notebooks/enrichment_pipeline.ipynb

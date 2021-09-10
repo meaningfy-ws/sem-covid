@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
-from gensim.models import KeyedVectors
 from scipy.spatial.distance import squareform, pdist
-from sklearn.metrics import pairwise_distances
 
 
 def euclidean_similarity(vector_1: np.array, vector_2: np.array) -> np.float:
