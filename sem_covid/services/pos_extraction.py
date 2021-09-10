@@ -8,7 +8,7 @@ from gensim.models import Word2Vec
 from sem_covid.entrypoints.notebooks.topic_modeling.topic_modeling_wrangling.token_management import select_pos
 
 nlp = spacy.load('en_core_web_sm')
-
+nlp.max_length = 5000000
 
 class POSExtraction:
     """

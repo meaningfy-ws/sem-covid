@@ -15,7 +15,7 @@ from sem_covid.services.sc_wrangling.data_cleaning import (clean_text_from_speci
 from sem_covid.services.store_registry import store_registry
 
 nlp = spacy.load('en_core_web_sm')
-nlp.max_length = 1500000
+nlp.max_length = 5000000
 WINDOW = 5
 MIN_COUNT = 1
 VECTOR_SIZE = 300
