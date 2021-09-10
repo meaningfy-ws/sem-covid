@@ -35,7 +35,7 @@ def generate_graph(graph: nx.Graph,
     if deep_level > max_deep_level:
         return graph
     new_nodes = similarity_matrix[root_word].nlargest(n=top_words)
-    new_nodes = new_nodes[new_nodes > threshold].index
+    new_nodes = new_nodes[new_nodes >= threshold].index
     for new_node in new_nodes:
         graph.add_edge(root_word, new_node)
         graph = generate_graph(graph, similarity_matrix, new_node, top_words, threshold, deep_level + 1,
