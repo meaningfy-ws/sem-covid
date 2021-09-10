@@ -34,13 +34,12 @@ def generate_graph(graph: nx.Graph,
         deep_map[root_word] = (deep_level, color_map[deep_level])
     if deep_level > max_deep_level:
         return graph
-    new_nodes = similarity_matrix[root_word].sort_values(ascending=False)[:top_words].index.to_list()
-    new_nodes_weight = list(similarity_matrix[root_word].sort_values(ascending=False)[:top_words].values)
-    for index in range(0, len(new_nodes)):
-        if new_nodes_weight[index] >= threshold:
-            graph.add_edge(root_word, new_nodes[index])
-            graph = generate_graph(graph, similarity_matrix, new_nodes[index], top_words, threshold, deep_level + 1,
-                                   max_deep_level, deep_map=deep_map, color_map=color_map)
+    new_nodes = similarity_matrix[root_word].nlargest(n=top_words)
+    new_nodes = new_nodes[new_nodes >= threshold].index
+    for new_node in new_nodes:
+        graph.add_edge(root_word, new_node)
+        graph = generate_graph(graph, similarity_matrix, new_node, top_words, threshold, deep_level + 1,
+                               max_deep_level, deep_map=deep_map, color_map=color_map)
 
     return graph
 
