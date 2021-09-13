@@ -38,6 +38,8 @@ class Dataset(object):
                                                          store_registry.es_index_store())
     IRELAND_ACTION_TIMELINE_ENRICHED = IndexTabularDataSource(IRELAND_TIMELINE_ENRICHED_INDEX_NAME,
                                                               store_registry.es_index_store())
+    UNIFIED_DATASET = IndexTabularDataSource(config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME,
+                                             store_registry.es_index_store())
 
 
 class LanguageModel(object):

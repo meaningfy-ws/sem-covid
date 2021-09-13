@@ -205,6 +205,13 @@ class TreatiesConfig:
         return VaultAndEnvConfigResolver.config_resolve()
 
 
+class UnifiedDatasetConfig:
+    # Unified dataset
+    @property
+    def UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+
 class TikaConfig:
     # TIKA property
     @property
@@ -302,7 +309,8 @@ class SemCovidConfig(CrawlerConfig,
                      EuTimeLineConfig,
                      MlExperimentsConfig,
                      MinIOConfig,
-                     TensorFlowConfig
+                     TensorFlowConfig,
+                     UnifiedDatasetConfig
                      ):
     ...
 
