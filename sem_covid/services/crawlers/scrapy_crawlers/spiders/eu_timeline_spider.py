@@ -1,4 +1,5 @@
 from json import dumps
+from urllib.parse import urlparse
 
 import scrapy
 import pandas as pd
@@ -11,6 +12,7 @@ from ..items import EuActionTimelineItem
 
 class EUTimelineSpider(scrapy.Spider):
     name = 'eu-timeline'
+    base_url = 'https://ec.europa.eu'
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
     presscorner_base_url = 'https://ec.europa.eu/commission/presscorner/detail'
 
@@ -86,12 +88,16 @@ class EUTimelineSpider(scrapy.Spider):
             detail_link=response.url,
         )
         metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
-        # issued
         item['detail_type'] = metadata[0].get()
         item['detail_date'] = metadata[1].get()
         item['detail_location'] = metadata[2].get()
-        # -----
-        item['detail_content'] = response.xpath('//div[@class="ecl-paragraph"]//text()').get()
+
+        content_classes = ['ecl-paragraph', 'col-md-9 council-left-content-basic council-flexify', 'field__items',
+                           'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content']
+
+        item.setdefault('detail_content', [])
+        for content_class in content_classes:
+            item['detail_content'].append(response.xpath('//div[@class="' + content_class + '"]//text()').extract())
         item['detail_title'] = response.xpath(
             '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
 
