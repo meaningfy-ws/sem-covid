@@ -1,4 +1,3 @@
-
 import pickle
 import re
 from typing import List, Tuple
@@ -6,13 +5,20 @@ from typing import List, Tuple
 import pandas as pd
 import spacy
 from gensim.models import Word2Vec
+from gensim.parsing.preprocessing import remove_stopwords
 
 from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.document_handling_tools import (
     document_atomization_noun_phrases, lemmatize_document)
-from sem_covid.services.sc_wrangling.data_cleaning import (clean_text_from_specific_characters, clean_fix_unicode,
-                                                           clean_remove_currency_symbols, clean_remove_emails,
-                                                           clean_remove_urls, clean_remove_stopwords)
+
 from sem_covid.services.store_registry import store_registry
+
+from sem_covid.adapters.embedding_models import BasicSentenceSplitterModel
+
+from nltk.corpus import words
+import enchant
+
+en_words = set(words.words())
+d = enchant.Dict("en_US")
 
 nlp = spacy.load('en_core_web_sm')
 nlp.max_length = 5000000
@@ -23,8 +29,16 @@ LANGUAGE_MODEL_MINIO_FOLDER = 'word2vec/'
 LANGUAGE_MODEL_BUCKET_NAME = 'mdl-language'
 
 
-def add_space_between_dots_and_commas(text: str):
-    return re.sub(r'(?<=[.,])(?=[^\s])', r' ', text)
+def clean_text(text: str) -> str:
+    tmp_text = re.sub(' +', ' ', re.sub(r'[^a-zA-Z]', ' ', text)).lower()
+    tmp_text = remove_stopwords(tmp_text)
+    tmp_words = tmp_text.split(' ')
+    tmp_words = [word for word in tmp_words
+                 if len(word) > 3 and (word in en_words or d.check(word))]
+    if len(tmp_words) > 3:
+        return ' '.join(tmp_words)
+    else:
+        return ''
 
 
 def apply_cleaning_functions(document_corpus: pd.Series) -> pd.Series:
@@ -35,18 +49,12 @@ def apply_cleaning_functions(document_corpus: pd.Series) -> pd.Series:
 
     Returns: clean document corpus
     """
-    unused_characters = ["\\r", ">", "\n", "\\", "<", "''", "%", "...", "\'", '"', "(", "\n", "*", "1)", "2)", "3)",
-                         "[", "]", "-", "_", "\r", '®', '..']
-
-    new_document_corpus = document_corpus.apply(clean_text_from_specific_characters, characters=unused_characters)
-    new_document_corpus = new_document_corpus.apply(clean_fix_unicode)
-    new_document_corpus = new_document_corpus.apply(clean_remove_urls)
-    new_document_corpus = new_document_corpus.apply(clean_remove_emails)
-    new_document_corpus = new_document_corpus.apply(clean_remove_currency_symbols)
-    new_document_corpus = new_document_corpus.apply(clean_remove_stopwords)
-    new_document_corpus = new_document_corpus.apply(add_space_between_dots_and_commas)
-
-    return new_document_corpus
+    splitter = BasicSentenceSplitterModel()
+    textual_data = '. '.join(document_corpus.values)
+    splitted_text = splitter.split(textual_data)
+    splitted_long_text = [sent for sent in splitted_text if len(sent) > 10]
+    cleaned_text = list(set([sent for sent in list(map(clean_text, splitted_long_text)) if sent]))
+    return pd.Series(cleaned_text)
 
 
 class LanguageModelPipeline:

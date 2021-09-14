@@ -49,7 +49,7 @@ class LanguageModelExecutionSteps:
             indexes and their vectors from most similar words of key words.
             The matrices will be stored in MinIO for later use.
         """
-        similarity_functions = ['cosine', 'euclidean', 'hamming']
+        similarity_functions = ['cosine', 'euclidean']
         for index in range(len(similarity_functions)):
             print('Start computing similarity matrix.')
             model_similarity_matrix = build_similarity_matrix(
