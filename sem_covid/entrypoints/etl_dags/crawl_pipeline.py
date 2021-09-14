@@ -40,7 +40,11 @@ def content_cleanup_tool(text: str) -> str:
     result = re.sub(r"\s+", " ", result)
     result = re.sub(r"[\s\t\r\n]+", " ", result)
     result = re.sub(r".*\.docx", "", result)
-    result = re.sub("<.>", "", result)
+    result = re.sub(r".*\.xml", "", result)
+    result = re.sub(r"<.>", "", result)
+    result = re.sub(r"\[]", "", result)
+    result = re.sub(r"\S*@\S*", "", result)
+    result = re.sub(r"http\S+", "", result)
     result = clean_remove_line_breaks(result)
     result = result.encode("ascii", "ignore").decode()
 
