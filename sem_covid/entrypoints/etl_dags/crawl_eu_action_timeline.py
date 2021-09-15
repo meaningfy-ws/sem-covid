@@ -17,8 +17,8 @@ logger.debug(f"This line is important for DAG discovery because the *airflow mod
 CONTENT_PATH_KEY = 'detail_content'
 DAG_TYPE = 'etl'
 DATASET_NAME = "eu_timeline"
-MAJOR = 2
-MINOR = 9
+MAJOR = 3
+MINOR = 0
 DAG_NAME = dag_name(category=DAG_TYPE, name=DATASET_NAME, version_major=MAJOR,
                     version_minor=MINOR)
 
