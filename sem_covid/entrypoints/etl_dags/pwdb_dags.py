@@ -23,8 +23,8 @@ logger.debug(f"This line is important for DAG discovery because the *airflow mod
 VERSION = '0.01'
 DATASET_NAME = "pwdb"
 DAG_TYPE = "etl"
-MAJOR = 2
-MINOR = 9
+MAJOR = 3
+MINOR = 0
 MASTER_DAG_NAME = dag_name(category=DAG_TYPE, name=DATASET_NAME + "_master", version_major=MAJOR,
                            version_minor=MINOR)
 
