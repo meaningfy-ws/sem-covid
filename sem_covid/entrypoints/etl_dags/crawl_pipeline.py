@@ -102,28 +102,30 @@ class CrawlDagPipeline(BaseETLPipeline):
             'general': 0,
             'success': 0
         }
+        try:
+            for index, item in enumerate(json_content):
+                identifier = item['title']
+                logger.info(f'[{index + 1}/{len(json_content)}] Processing {identifier}')
 
-        for index, item in enumerate(json_content):
-            identifier = item['title']
-            logger.info(f'[{index + 1}/{len(json_content)}] Processing {identifier}')
+                if self.content_path_key in item:
+                    counter['general'] += 1
+                    parse_result = parser.from_buffer(item[self.content_path_key], config.APACHE_TIKA_URL)
 
-            if self.content_path_key in item:
-                counter['general'] += 1
-                parse_result = parser.from_buffer(item[self.content_path_key], config.APACHE_TIKA_URL)
+                    if 'content' in parse_result:
+                        counter['success'] += 1
+                        item[self.content_path_key] = content_cleanup_tool(parse_result['content'])
 
-                if 'content' in parse_result:
-                    counter['success'] += 1
-                    item[self.content_path_key] = content_cleanup_tool(parse_result['content'])
+                manifestation = item.get('detail_link') or item['title']
+                if manifestation is None:
+                    manifestation = "no title ( " + str(uuid.uuid4()) + " )"
+                filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
+                minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
 
-            manifestation = item.get('detail_link') or item['title']
-            if manifestation is None:
-                manifestation = "no title ( " + str(uuid.uuid4()) + " )"
-            filename = hashlib.sha256(manifestation.encode('utf-8')).hexdigest()
-            minio.put_object(TIKA_FILE_PREFIX + filename, dumps(item))
+            minio.put_object(self.file_name, dumps(json_content))
 
-        minio.put_object(self.file_name, dumps(json_content))
-
-        logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
+            logger.info(f"Parsed a total of {counter['general']} files, of which successfully {counter['success']} files.")
+        except ValueError:
+            print('Some of the files got too many values to unpack')
 
     def load(self, *args, **kwargs) -> None:
         es_adapter = self.store_registry.es_index_store()
