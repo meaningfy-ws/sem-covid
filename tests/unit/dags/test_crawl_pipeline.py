@@ -40,13 +40,13 @@ def test_crawl_dag_pipeline(get_crawl_result):
                             scrapy_crawler=fake_crawler
     )
 
-    crawler_pipeline.extract()
-    crawler_pipeline.transform_content()
+    # crawler_pipeline.extract()
     minio = fake_store_registry.minio_object_store(fake_bucket_name)
     minio.empty_bucket(object_name_prefix=None)
     minio.put_object(fake_filename, json.dumps(get_crawl_result))
     tika_hashed_file = hashlib.sha256(fake_filename.encode('utf-8')).hexdigest()
     minio.put_object(TIKA_FILE_PREFIX + tika_hashed_file, json.dumps(get_crawl_result))
 
+    crawler_pipeline.transform_content()
     crawler_pipeline.transform_structure()
     crawler_pipeline.load()
