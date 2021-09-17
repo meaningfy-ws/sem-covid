@@ -45,6 +45,9 @@ def load_data_in_cache():
 
 
 app_cache = load_data_in_cache()
+pwdb_df = app_cache['pwdb_df']
+unified_df = app_cache['unified_df']
+countries = list(unique_everseen(pwdb_df.country.values))
 
 
 def prepare_df(unified_df: pd.DataFrame,
@@ -65,7 +68,9 @@ def top_k_mean(data: np.array, top_k: int):
 
 def generate_countries_similarity_matrix(unified_df: pd.DataFrame,
                                          pwdb_df: pd.DataFrame,
-                                         countries: List[str]):
+                                         countries: List[str],
+                                         number_of_docs: int
+                                         ):
     n = len(countries)
     sim_matrix = np.zeros((n, n))
     for i in range(0, len(countries)):
@@ -81,31 +86,39 @@ def generate_countries_similarity_matrix(unified_df: pd.DataFrame,
                               column_filter_name='country',
                               column_filter_value=countries[j]
                               )
-
-            x_values = list(df_x['emb'].values.tolist())
-            tmp_sim_matrix = cosine_similarity(x_values,
+            tmp_sim_matrix = cosine_similarity(df_x['emb'].values.tolist(),
                                                df_y['emb'].values.tolist())
-            sim_mean = top_k_mean(tmp_sim_matrix[np.triu_indices_from(tmp_sim_matrix, k=1)], 50)
+            sim_mean = top_k_mean(tmp_sim_matrix[np.triu_indices_from(tmp_sim_matrix, k=1)], number_of_docs)
             sim_matrix[i][j] = sim_matrix[j][i] = sim_mean
     return sim_matrix
 
 
+def menu_countries_similarity():
+    number_of_docs = st.slider('Number of documents', min_value=1, max_value=50, step=1, value=10)
+
+    if st.button('Plot similarity'):
+        countries_similarity_matrix = generate_countries_similarity_matrix(unified_df=unified_df, pwdb_df=pwdb_df,
+                                                                           countries=countries,
+                                                                           number_of_docs=number_of_docs)
+        fig = px.imshow(countries_similarity_matrix,
+                        labels=dict(color="Semantic similarity"),
+                        x=countries,
+                        y=countries,
+                        width=700,
+                        height=700
+                        )
+        fig.update_xaxes(side="top")
+        st.plotly_chart(fig)
+
+
 def main():
-    pwdb_df = app_cache['pwdb_df']
-    unified_df = app_cache['unified_df']
-    countries = list(unique_everseen(pwdb_df.country.values))
     st.title('Semantic similarity')
-    countries_similarity_matrix = generate_countries_similarity_matrix(unified_df=unified_df, pwdb_df=pwdb_df,
-                                                                       countries=countries)
-    fig = px.imshow(countries_similarity_matrix,
-                    labels=dict(color="Semantic similarity"),
-                    x=countries,
-                    y=countries,
-                    width=700,
-                    height=700
-                    )
-    fig.update_xaxes(side="top")
-    st.plotly_chart(fig)
+    display_countries_similarity = st.checkbox('Countries similarity')
+    if display_countries_similarity:
+        menu_countries_similarity()
+    display_2_countries_similarity = st.checkbox('Time periods similarity between 2 countries')
+    if display_2_countries_similarity:
+        col1, col2 = st.columns(2)
 
 
 if __name__ == "__main__":
