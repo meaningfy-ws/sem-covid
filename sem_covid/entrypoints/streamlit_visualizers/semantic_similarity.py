@@ -1,0 +1,129 @@
+#!/usr/bin/python3
+
+# semantic_similarity.py
+# Date:  17.09.2021
+# Author: Stratulat Ștefan
+# Email: stefan.stratulat1997@gmail.com
+
+import pickle
+from typing import Any
+
+from gensim.models import Word2Vec
+import streamlit as st
+import streamlit.components.v1 as components
+import pandas as pd
+import networkx as nx
+from more_itertools import unique_everseen
+from networkx.exception import NetworkXError
+import numpy as np
+from d3graph import d3graph
+from numpy import mean
+
+from sem_covid import config
+from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.graph_handling import generate_graph
+from sem_covid.services.model_registry import embedding_registry
+from sem_covid.services.store_registry import store_registry
+
+BUCKET_NAME = 'semantic-similarity-matrices'
+
+DELIMITER = '_'
+FILE_FORMAT = '.pkl'
+MATRIX_TYPE_NAME = '_matrix'
+
+# streamlit widgets' names
+STREAMLIT_TITLE = 'Semantic similarity graph'
+TEXT_INPUT_WIDGET = "Introduce word"
+MODEL_INPUT_WIDGET = 'Select the model'
+MATRIX_TEXT_INPUT = "Select similarity"
+BUTTON_NAME = 'Generate graph'
+
+
+def cosine_normalize(x):
+    return 1 - x
+
+
+def std_normalize(x):
+    return 1 / (1 + x)
+
+
+MODELS = ('model1', 'model2', 'model3')
+SIMILARITIES = ('cosine', 'euclidean')
+NORMALIZERS = (cosine_normalize, std_normalize)
+
+UNIFIED_DATASET = 'ds_unified_datasets'
+
+
+def load_data_in_cache():
+    if not hasattr(st, 'easy_cache'):
+        es_store = store_registry.es_index_store()
+        st.easy_cache = dict()
+        st.easy_cache['pwdb_df'] = es_store.get_dataframe(index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME)
+        unified_df = es_store.get_dataframe(index_name=UNIFIED_DATASET)
+        emb_model = embedding_registry.sent2vec_universal_sent_encoding()
+        unified_df = pd.DataFrame(unified_df[unified_df.Document_source == 'pwdb'])
+        unified_df['text'] = unified_df[['Title', 'Content']].agg(' '.join, axis=1)
+        unified_df['emb'] = emb_model.encode(unified_df['text'].values)
+        st.easy_cache['unified_df'] = unified_df
+    return st.easy_cache
+
+
+def prepare_df(unified_df: pd.DataFrame,
+               pwdb_df: pd.DataFrame,
+               column_filter_name: str,
+               column_filter_value: Any
+               ):
+    search_index = pwdb_df[pwdb_df[column_filter_name] == column_filter_value].index.values
+    result_df = pd.DataFrame(unified_df[unified_df.index.isin(search_index)])
+    return result_df
+
+
+def top_k_mean(data: np.array, top_k: int):
+    tmp_data = data.copy().tolist()
+    tmp_data.sort(reverse=True)
+    return mean(tmp_data[:top_k] + [0] * (top_k - len(data)))
+
+
+def main():
+    app_cache = load_data_in_cache()
+    pwdb_df = app_cache['pwdb_df']
+    unified_df = app_cache['unified_df']
+    countries = list(unique_everseen(pwdb_df.country.values))
+    st.title(STREAMLIT_TITLE)
+
+    col1, col2 = st.columns(2)
+
+
+model_number = col1.selectbox(
+    MODEL_INPUT_WIDGET,
+    MODELS
+)
+
+matrix = col2.selectbox(
+    MATRIX_TEXT_INPUT,
+    SIMILARITIES)
+
+selected_key = (model_number + DELIMITER + matrix + MATRIX_TYPE_NAME + FILE_FORMAT)
+
+# word = col3.selectbox(
+#     TEXT_INPUT_WIDGET,
+#     app_cache[selected_key].columns.to_list())
+
+threshold_slider = st.slider('Threshold', min_value=0.0, max_value=1.0, step=0.05, value=0.4)
+number_of_neighbours_slider = st.slider('Number of Neighbours', min_value=2, max_value=5, step=1, value=1)
+#
+# if st.button(BUTTON_NAME):
+#     try:
+#         st.write('Generating graph . . .')
+#         components.html(open(create_similarity_graph(
+#             similarity_matrix=app_cache[selected_key],
+#             key_word=word, top_words=number_of_neighbours_slider + 1,
+#             metric_threshold=threshold_slider)['path'], 'r', encoding='utf-8').read(), width=700, height=700)
+#     except KeyError:
+#         st.write('There is no such a word.')
+#     except ValueError:
+#         st.write('There are no similar words in this threshold range. '
+#                  'Please decrease the number.')
+#     except NetworkXError:
+#         st.write('Graph has no nodes or edges.')
+#     except IndexError:
+#         st.write('Please select an option. ')
