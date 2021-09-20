@@ -31,7 +31,10 @@ BUTTON_NAME = 'Generate graph'
 
 
 def cosine_normalize(x):
-    return 1 - x
+    if x > 0:
+        return 1 - x
+    else:
+        return 0
 
 
 def std_normalize(x):
@@ -50,7 +53,8 @@ def load_data_in_cache():
         for model in MODELS:
             for similarity, normalizer in zip(SIMILARITIES, NORMALIZERS):
                 cache_key = model + DELIMITER + similarity + MATRIX_TYPE_NAME + FILE_FORMAT
-                st.easy_cache[cache_key] = minio_feature_store.get_features(features_name=cache_key).applymap(normalizer)
+                st.easy_cache[cache_key] = minio_feature_store.get_features(features_name=cache_key).applymap(
+                    normalizer)
     return st.easy_cache
 
 
