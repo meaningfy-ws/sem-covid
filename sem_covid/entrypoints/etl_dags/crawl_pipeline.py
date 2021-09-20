@@ -104,8 +104,8 @@ class CrawlDagPipeline(BaseETLPipeline):
         }
         for index, item in enumerate(json_content):
             identifier = item['title']
-            logger.info(f'[{index + 1}/{len(json_content)}] Processing {identifier}, {item[self.content_path_key]}')
-
+            logger.info(f'[{index + 1}/{len(json_content)}] Processing {identifier}')
+            logger.info(f"{self.content_path_key}")
             if self.content_path_key in item:
                 counter['general'] += 1
                 parse_result = parser.from_buffer(string=item[self.content_path_key],
