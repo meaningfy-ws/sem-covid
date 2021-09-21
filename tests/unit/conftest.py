@@ -554,5 +554,13 @@ def call_eu_timeline_main_page() -> str:
     return '../test_data/crawlers/sample_eu_timeline/eu_timeline_main_page.html'
 
 
+def call_eu_timeline_presscorner_page() -> str:
+    return '../test_data/crawlers/sample_eu_timeline/saved_data/eu_timeline_presscorner_page.html'
+
+
 def call_eu_timeline_main_page_json() -> pathlib.Path:
     return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_eu_timeline' / 'saved_data' / 'eu_timeline_main_page.json'
+
+
+def call_eu_timeline_presscorner_page_json() -> pathlib.Path:
+    return pathlib.Path(__file__).parent.parent.parent / 'tests' / 'test_data' / 'crawlers' / 'sample_eu_timeline' / 'saved_data' / 'eu_timeline_presscorner_page.json'
