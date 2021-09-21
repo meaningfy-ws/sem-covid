@@ -13,7 +13,7 @@ fake_store_registry = FakeStoreRegistry()
 fake_filename = 'fake_file.json'
 fake_bucket_name = 'fake-bucket-name'
 fake_es_index_name = 'fake_index_name'
-fake_content_path_key = 'fake_content'
+fake_content_path_key = 'title'
 TIKA_FILE_PREFIX = 'tika/'
 fake_crawler = TestCrawler
 
@@ -41,12 +41,15 @@ def test_crawl_dag_pipeline(get_crawl_result):
     )
 
     crawler_pipeline.extract()
-    # crawler_pipeline.transform_content()
     minio = fake_store_registry.minio_object_store(fake_bucket_name)
     minio.empty_bucket(object_name_prefix=None)
     minio.put_object(fake_filename, json.dumps(get_crawl_result))
     tika_hashed_file = hashlib.sha256(fake_filename.encode('utf-8')).hexdigest()
+    assert '9716b040dd1a7256757a99412a419c5238551c3bf49777c092c40c4e59daa425' == tika_hashed_file
     minio.put_object(TIKA_FILE_PREFIX + tika_hashed_file, json.dumps(get_crawl_result))
+
+    crawler_pipeline.transform_content()
+    assert 'title' == crawler_pipeline.content_path_key
 
     crawler_pipeline.transform_structure()
     crawler_pipeline.load()
