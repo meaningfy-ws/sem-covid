@@ -27,13 +27,6 @@ def test_language_model_pipeline(transformed_pwdb_dataframe):
     test_model = [(transformed_pwdb_dataframe, textual_data)]
     language_model_pipeline = LanguageModelPipeline(test_model, test_model_name)
 
-    assert list == type(language_model_pipeline.dataset_sources)
-    assert tuple == type(language_model_pipeline.dataset_sources[0])
-    assert pd.DataFrame == type(language_model_pipeline.dataset_sources[0][0])
-    assert list == type(language_model_pipeline.dataset_sources[0][1])
-
-    download = language_model_pipeline.download_datasets()
-
     extraction = language_model_pipeline.extract_textual_data()
     assert pd.Series == type(language_model_pipeline.documents_corpus)
     assert 2 == len(language_model_pipeline.documents_corpus)
