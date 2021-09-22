@@ -89,27 +89,27 @@ class CrawlDagPipeline(BaseETLPipeline):
         process.crawl(self.scrapy_crawler, filename=self.file_name, storage_adapter=minio)
         process.start()
 
-    def transform_content(self, *args, **kwargs) -> None:
+    def transform_structure(self, *args, **kwargs) -> None:
         pass
 
-    def transform_structure(self, *args, **kwargs) -> None:
+    def transform_content(self, *args, **kwargs) -> None:
         logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
         logger.info(f'Loading resource files from {self.file_name}')
         minio = self.store_registry.minio_object_store(self.bucket_name)
         json_content = loads(minio.get_object(self.file_name))
-
+        logger.info(f"Content path key: {self.content_path_key}")
         counter = {
             'general': 0,
             'success': 0
         }
-
         for index, item in enumerate(json_content):
             identifier = item['title']
             logger.info(f'[{index + 1}/{len(json_content)}] Processing {identifier}')
-
+            logger.info(f"Content path key items: {item[self.content_path_key]}")
             if self.content_path_key in item:
                 counter['general'] += 1
-                parse_result = parser.from_buffer(item[self.content_path_key], config.APACHE_TIKA_URL)
+                parse_result = parser.from_buffer(string=item[self.content_path_key],
+                                                  serverEndpoint=config.APACHE_TIKA_URL)
 
                 if 'content' in parse_result:
                     counter['success'] += 1
