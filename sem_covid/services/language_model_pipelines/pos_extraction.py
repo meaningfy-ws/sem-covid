@@ -10,6 +10,7 @@ from sem_covid.entrypoints.notebooks.topic_modeling.topic_modeling_wrangling.tok
 nlp = spacy.load('en_core_web_sm')
 nlp.max_length = 5000000
 
+
 class POSExtraction:
     """
         Helps to extract the necessary part of speech from word2vec model and handle them

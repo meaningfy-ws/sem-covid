@@ -1,10 +1,12 @@
 
 from typing import List
 
+import pandas as pd
+
 from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.similarity_calculus import \
     build_similarity_matrix
-from sem_covid.services.language_model_pipeline import LanguageModelPipeline
-from sem_covid.services.pos_extraction import POSExtraction
+from sem_covid.services.language_model_pipelines.language_model_pipeline import LanguageModelPipeline
+from sem_covid.services.language_model_pipelines.pos_extraction import POSExtraction
 from sem_covid.services.store_registry import store_registry
 
 
@@ -23,13 +25,14 @@ class LanguageModelExecutionSteps:
         self.model_name = model_name
         self.word2vec = None
 
-    def train_language_model(self, dataset_sources_config: List[tuple]) -> None:
+    def train_language_model(self, dataset_sources_config: pd.DataFrame, textual_columns: List[str]) -> None:
         """
             Trains word2vec model from dataset config,
             which is a list of tuples of dataset and their textual columns.
             After training the model is stored in MinIO for later use.
         """
-        model_language_model_pipeline = LanguageModelPipeline(dataset_sources=dataset_sources_config,
+        model_language_model_pipeline = LanguageModelPipeline(dataset_source=dataset_sources_config,
+                                                              textual_columns=textual_columns,
                                                               language_model_name=self.language_model_file_name)
         model_language_model_pipeline.execute()
         self.word2vec = model_language_model_pipeline.word2vec
