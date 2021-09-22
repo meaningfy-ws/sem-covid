@@ -1,10 +1,12 @@
 
 import spacy
+import nltk
 from spacy.tokens.doc import Doc
 
 from sem_covid.entrypoints.notebooks.language_modeling.language_model_tools.document_handling_tools import (
     document_atomization_noun_phrases, lemmatize_document)
 
+nltk.download('words')
 nlp = spacy.load('en_core_web_sm')
 
 

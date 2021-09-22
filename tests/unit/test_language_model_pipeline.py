@@ -1,8 +1,8 @@
 
 import pandas as pd
 
-from sem_covid.services.language_model_pipeline import (add_space_between_dots_and_commas, apply_cleaning_functions,
-                                                        LanguageModelPipeline)
+from sem_covid.services.language_model_pipelines.language_model_pipeline import (add_space_between_dots_and_commas, apply_cleaning_functions,
+                                                                                 LanguageModelPipeline)
 
 
 def test_add_space_between_dots_and_commas():

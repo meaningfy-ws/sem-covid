@@ -1,6 +1,6 @@
 import numpy as np
 
-from sem_covid.services.pos_extraction import POSExtraction
+from sem_covid.services.language_model_pipelines.pos_extraction import POSExtraction
 
 
 def test_pos_extraction(common_word2vec_model):
