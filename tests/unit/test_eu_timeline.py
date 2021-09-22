@@ -6,7 +6,8 @@ from tests.unit.conftest import (call_eu_timeline_main_page, call_eu_timeline_ma
 
 def test_eu_timeline_crawler_parse_main_page(call_eu_timeline_crawler):
     result = call_eu_timeline_crawler.parse_main_page(fake_response_from_file(call_eu_timeline_main_page()))
-    call_eu_timeline_main_page_json().write_text(data=json.dumps(result))
+    result = call_eu_timeline_crawler.data
+    call_eu_timeline_main_page_json().write_text(data=json.dumps(list(result)))
     file = open('../test_data/crawlers/sample_eu_timeline/saved_data/eu_timeline_main_page.json')
     content = json.load(file)
 
