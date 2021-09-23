@@ -1,5 +1,6 @@
 from json import dumps
 from urllib.parse import urlparse
+import logging
 
 import scrapy
 import pandas as pd
@@ -9,12 +10,13 @@ from scrapy_splash import SplashRequest
 from sem_covid.services.store_registry import store_registry
 from ..items import EuActionTimelineItem
 
+logger = logging.getLogger(__name__)
+
 
 class EUTimelineSpider(scrapy.Spider):
     name = 'eu-timeline'
     base_url = 'https://ec.europa.eu'
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
-    presscorner_base_url = 'https://ec.europa.eu'
 
     def __init__(self, *args, filename: str = config.EU_TIMELINE_JSON,
                  storage_adapter=store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME),
@@ -49,7 +51,7 @@ class EUTimelineSpider(scrapy.Spider):
                     body = ' '.join(month.xpath('*//p[string-length(text()) > 0]/text()').extract())
 
                     presscorner_links = [link.attrib['href'] for link in month.xpath('*//p//a') if
-                                         self.presscorner_base_url in link.attrib.get('href', '')]
+                                         self.base_url in link.attrib.get('href', '')]
                     meta = dict()
                     meta['month_name'] = month_name
                     meta['date'] = date
@@ -93,7 +95,7 @@ class EUTimelineSpider(scrapy.Spider):
             item['detail_date'] = metadata[1].get()
             item['detail_location'] = metadata[2].get()
         else:
-            print("No detail type, date and/or location found on this page. . .")
+            logger.info("No detail type, date and/or location found on this page. . .")
 
         content_classes = ['ecl-paragraph', 'col-md-9 council-left-content-basic council-flexify', 'field__items',
                            'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content']
