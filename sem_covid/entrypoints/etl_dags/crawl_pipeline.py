@@ -76,8 +76,7 @@ class CrawlDagPipeline(BaseETLPipeline):
         self.scrapy_crawler = scrapy_crawler
 
     def get_steps(self) -> list:
-        return [self.extract, self.transform_content,
-                self.load]
+        return [self.extract, self.transform_structure, self.transform_content, self.load]
 
     def extract(self, *args, **kwargs) -> None:
         logger.info('start crawler')
