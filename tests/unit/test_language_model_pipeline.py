@@ -1,15 +1,8 @@
 
 import pandas as pd
 
-from sem_covid.services.language_model_pipelines.language_model_pipeline import (add_space_between_dots_and_commas, apply_cleaning_functions,
+from sem_covid.services.language_model_pipelines.language_model_pipeline import (apply_cleaning_functions,
                                                                                  LanguageModelPipeline)
-
-
-def test_add_space_between_dots_and_commas():
-    text = 'hibidi.hobiti,you.have.no.property'
-    spacer = add_space_between_dots_and_commas(text)
-    assert str == type(spacer)
-    assert 'hibidi. hobiti, you. have. no. property' == spacer
 
 
 def test_apply_cleaning_functions(transformed_pwdb_dataframe):
