@@ -14,7 +14,7 @@ class EUTimelineSpider(scrapy.Spider):
     name = 'eu-timeline'
     base_url = 'https://ec.europa.eu'
     url = 'https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/timeline-eu-action_en'
-    presscorner_base_url = 'https://ec.europa.eu/commission/presscorner/detail'
+    presscorner_base_url = 'https://ec.europa.eu'
 
     def __init__(self, *args, filename: str = config.EU_TIMELINE_JSON,
                  storage_adapter=store_registry.minio_object_store(config.EU_TIMELINE_BUCKET_NAME),
@@ -88,9 +88,12 @@ class EUTimelineSpider(scrapy.Spider):
             detail_link=response.url,
         )
         metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
-        item['detail_type'] = metadata[0].get()
-        item['detail_date'] = metadata[1].get()
-        item['detail_location'] = metadata[2].get()
+        if metadata:
+            item['detail_type'] = metadata[0].get()
+            item['detail_date'] = metadata[1].get()
+            item['detail_location'] = metadata[2].get()
+        else:
+            print("No detail type, date and/or location found on this page. . .")
 
         content_classes = ['ecl-paragraph', 'col-md-9 council-left-content-basic council-flexify', 'field__items',
                            'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content']
