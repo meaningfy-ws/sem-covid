@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ACT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://formex.publications.europa.eu/schema/formex-05.59-20170418.xd" NNC="YES">
+    <BIB.INSTANCE>
+        <DOCUMENT.REF FILE="L_2020379EN.01004201.doc.xml">
+            <COLL>L</COLL>
+            <NO.OJ>379</NO.OJ>
+            <YEAR>2020</YEAR>
+            <LG.OJ>EN</LG.OJ>
+            <PAGE.FIRST>42</PAGE.FIRST>
+            <PAGE.SEQ>1</PAGE.SEQ>
+            <VOLUME.REF>01</VOLUME.REF>
+        </DOCUMENT.REF>
+        <EEA/>
+        <DATE ISO="20201112">20201112</DATE>
+        <LG.DOC>EN</LG.DOC>
+        <NO.SEQ>0009</NO.SEQ>
+        <PAGE.FIRST>42</PAGE.FIRST>
+        <PAGE.SEQ>1</PAGE.SEQ>
+        <PAGE.LAST>42</PAGE.LAST>
+        <PAGE.TOTAL>1</PAGE.TOTAL>
+        <NO.DOC FORMAT="YN" TYPE="OJ">
+            <NO.CURRENT>1684</NO.CURRENT>
+            <YEAR>2020</YEAR>
+            <COM>EU</COM>
+        </NO.DOC>
+    </BIB.INSTANCE>
+    <TITLE>
+        <TI>
+            <P>
+                <HT TYPE="UC">Commission Regulation</HT>
+                (EU) 2020/1684
+            </P>
+            <P>of
+                <DATE ISO="20201112">12 November 2020</DATE>
+            </P>
+            <P>amending Annex VI to Regulation (EC) No 1223/2009 of the European Parliament and of the Council on
+                cosmetic products
+            </P>
+            <P>(Text with EEA relevance)</P>
+        </TI>
+    </TITLE>
+    <PREAMBLE>
+        <PREAMBLE.INIT>THE EUROPEAN COMMISSION,</PREAMBLE.INIT>
+        <GR.VISA>
+            <VISA>Having regard to the Treaty on the Functioning of the European Union,</VISA>
+            <VISA>Having regard to Regulation (EC) No 1223/2009 of the European Parliament and of the Council of <DATE
+                    ISO="20091130">30 November 2009
+            </DATE> on cosmetic products
+                <NOTE NOTE.ID="E0001" NUMBERING="ARAB" NUMBERING.CONTINUED="YES" TYPE="FOOTNOTE">
+                    <P><REF.DOC.OJ COLL="L" NO.OJ="342" DATE.PUB="20091222" PAGE.FIRST="59">OJ L 342, 22.12.2009, p.
+                        59</REF.DOC.OJ>.
+                    </P>
+                </NOTE>
+                , and in particular Article 31(2) thereof,
+            </VISA>
+        </GR.VISA>
+        <GR.CONSID>
+            <GR.CONSID.INIT>Whereas:</GR.CONSID.INIT>
+            <CONSID>
+                <NP>
+                    <NO.P>(1)</NO.P>
+                    <TXT>The Scientific Committee on Consumer Safety (SCCS) concluded in its opinion of
+                        <DATE ISO="20191213">13 December 2019</DATE>
+                        <NOTE NOTE.ID="E0002" NUMBERING="ARAB" NUMBERING.CONTINUED="YES" TYPE="FOOTNOTE">
+                            <P>SCCS/1605/19.</P>
+                        </NOTE>
+                        (<QUOT.START CODE="2018" ID="QS0001" REF.END="QE0001"/>the SCCS opinion<QUOT.END CODE="2019"
+                                                                                                         ID="QE0001"
+                                                                                                         REF.START="QS0001"/>
+                        ) that the use of Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate as a UV filter in
+                        cosmetic products at a maximum concentration of 3 % is safe. Inhalation toxicity was not
+                        assessed in the SCCS opinion because no data were provided. Hence, the SCCS opinion is not
+                        applicable to any cosmetic product in form of spray that could lead to exposure of the
+                        end-user’s lungs by inhalation.
+                    </TXT>
+                </NP>
+            </CONSID>
+            <CONSID>
+                <NP>
+                    <NO.P>(2)</NO.P>
+                    <TXT>The SCCS also concluded in its opinion that Methoxypropylamino Cyclohexenylidene
+                        Ethoxyethylcyanoacetate is a secondary amine, and thus is prone to nitrosation and formation of
+                        nitrosamine. It should not be used in combination with nitrosating substances. The nitrosamine
+                        content should be less than 50 ppb.
+                    </TXT>
+                </NP>
+            </CONSID>
+            <CONSID>
+                <NP>
+                    <NO.P>(3)</NO.P>
+                    <TXT>In light of the SCCS opinion and in order to take into account technical and scientific
+                        progress, the use of Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate as a UV filter
+                        in cosmetic products should be authorised at a maximum concentration of 3 %, except in
+                        applications that may lead to exposure of the end-user’s lungs by inhalation.
+                    </TXT>
+                </NP>
+            </CONSID>
+            <CONSID>
+                <NP>
+                    <NO.P>(4)</NO.P>
+                    <TXT>Annex VI to Regulation (EC) No 1223/2009 should therefore be amended accordingly.</TXT>
+                </NP>
+            </CONSID>
+            <CONSID>
+                <NP>
+                    <NO.P>(5)</NO.P>
+                    <TXT>The measures provided for in this Regulation are in accordance with the opinion of the Standing
+                        Committee on Cosmetic Products,
+                    </TXT>
+                </NP>
+            </CONSID>
+        </GR.CONSID>
+        <PREAMBLE.FINAL>HAS ADOPTED THIS REGULATION:</PREAMBLE.FINAL>
+    </PREAMBLE>
+    <ENACTING.TERMS>
+        <ARTICLE IDENTIFIER="001">
+            <TI.ART>Article 1</TI.ART>
+            <ALINEA>Annex VI to Regulation (EC) No 1223/2009 is amended in accordance with the Annex to this
+                Regulation.
+            </ALINEA>
+        </ARTICLE>
+        <ARTICLE IDENTIFIER="002">
+            <TI.ART>Article 2</TI.ART>
+            <ALINEA>This Regulation shall enter into force on the twentieth day following that of its publication in the <HT
+                    TYPE="ITALIC">Official Journal of the European Union</HT>.
+            </ALINEA>
+        </ARTICLE>
+    </ENACTING.TERMS>
+    <FINAL>
+        <P>This Regulation shall be binding in its entirety and directly applicable in all Member States.</P>
+        <SIGNATURE>
+            <PL.DATE>
+                <P>Done at Brussels, <DATE ISO="20201112">12 November 2020</DATE>.
+                </P>
+            </PL.DATE>
+            <SIGNATORY>
+                <P>
+                    <HT TYPE="ITALIC">For the Commission</HT>
+                </P>
+                <P>
+                    <HT TYPE="ITALIC">The President</HT>
+                </P>
+                <P>Ursula
+                    <HT TYPE="UC">von der Leyen</HT>
+                </P>
+            </SIGNATORY>
+        </SIGNATURE>
+    </FINAL>
+</ACT>
