@@ -24,7 +24,7 @@ VERSION = '0.01'
 DATASET_NAME = "pwdb"
 DAG_TYPE = "etl"
 MAJOR = 3
-MINOR = 0
+MINOR = 1
 MASTER_DAG_NAME = dag_name(category=DAG_TYPE, name=DATASET_NAME + "_master", version_major=MAJOR,
                            version_minor=MINOR)
 
