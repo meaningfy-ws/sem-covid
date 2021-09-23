@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://formex.publications.europa.eu/schema/formex-05.59-20170418.xd">
+    <BIB.DOC>
+        <PROD.ID>20201105023</PROD.ID>
+        <FIN.ID>328533</FIN.ID>
+        <NO.DOC FORMAT="YN" TYPE="OJ">
+            <NO.CURRENT>1684</NO.CURRENT>
+            <YEAR>2020</YEAR>
+            <COM>EU</COM>
+        </NO.DOC>
+        <DURAB TYPE="DUR"/>
+        <AUTHOR>COM</AUTHOR>
+        <EEA/>
+    </BIB.DOC>
+    <PUBLICATION.REF FILE="L_2020379EN.toc.xml">
+        <COLL>L</COLL>
+        <NO.OJ>379</NO.OJ>
+        <DATE ISO="20201113">20201113</DATE>
+        <LG.OJ>EN</LG.OJ>
+        <VOLUME.REF>01</VOLUME.REF>
+    </PUBLICATION.REF>
+    <FMX>
+        <DOC.MAIN.PUB NO.SEQ="0009" SYNOPTISM="D0009">
+            <LG.DOC>EN</LG.DOC>
+            <LEGAL.VALUE>REG</LEGAL.VALUE>
+            <DATE ISO="20201112">20201112</DATE>
+            <PAGE.FIRST>42</PAGE.FIRST>
+            <PAGE.LAST>42</PAGE.LAST>
+            <PAGE.TOTAL>1</PAGE.TOTAL>
+            <PAGE.SEQ>1</PAGE.SEQ>
+            <REF.PHYS FILE="L_2020379EN.01004201.xml" TYPE="DOC.XML"/>
+        </DOC.MAIN.PUB>
+        <DOC.SUB.PUB NO.SEQ="0009.0001" SYNOPTISM="D0009.0001" TYPE="ANNEX" IN.SUMMARY="NO">
+            <PAGE.FIRST>43</PAGE.FIRST>
+            <PAGE.LAST>43</PAGE.LAST>
+            <PAGE.TOTAL>1</PAGE.TOTAL>
+            <PAGE.SEQ>1</PAGE.SEQ>
+            <REF.PHYS FILE="L_2020379EN.01004301.xml" TYPE="DOC.XML"/>
+        </DOC.SUB.PUB>
+    </FMX>
+    <PAPER>
+        <VOLUME.PAPER>
+            <ITEM.VOLUME REF.NO.SEQ="0009">
+                <TITLE ID.TITLE="T0001">
+                    <TI>
+                        <P>Commission Regulation (EU) 2020/1684 of <DATE ISO="20201112">12 November 2020</DATE> amending
+                            Annex VI to Regulation (EC) No 1223/2009 of the European Parliament and of the Council on
+                            cosmetic products
+                            <NOTE NUMBERING="ARAB" TYPE="FOOTNOTE" NOTE.ID="E0001">
+                                <P>Text with EEA relevance.</P>
+                            </NOTE>
+                        </P>
+                    </TI>
+                </TITLE>
+                <ITEM.REF>42</ITEM.REF>
+            </ITEM.VOLUME>
+        </VOLUME.PAPER>
+    </PAPER>
+    <PDF>
+        <ITEM.VOLUME REF.NO.SEQ="0009">
+            <TITLE REF.TITLE="T0001"/>
+            <ITEM.REF REF.PDF="l_37920201113en00420043.pdf">42</ITEM.REF>
+        </ITEM.VOLUME>
+    </PDF>
+</DOC>

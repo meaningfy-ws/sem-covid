@@ -1,0 +1,33 @@
+# TEMPLATE query to extract documents from Cellar
+# This template needs to be provided the selection criteria for Cellar ?works;
+# and it will bring the most important metadata about those works.
+
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX lang: <http://publications.europa.eu/resource/authority/language/>
+PREFIX res_type: <http://publications.europa.eu/resource/authority/resource-type/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT
+    ?work ?title ?manif_type ?manif
+WHERE {
+    # selector criteria
+    VALUES ?expr_lang { lang:ENG}
+    VALUES ?work {
+        <http://publications.europa.eu/resource/cellar/4cbdfc0e-2581-11eb-9d7e-01aa75ed71a1>
+    } #<http://publications.europa.eu/resource/cellar/905c0450-e056-11ea-ad25-01aa75ed71a1>
+    ?work a ?cdm_type .
+
+    # diving down FRBR structure for the title and the content
+    OPTIONAL {
+        ?exp cdm:expression_belongs_to_work ?work ;
+            cdm:expression_uses_language ?expr_lang ;
+            cdm:expression_title ?title .
+
+
+        ?manif cdm:manifestation_manifests_expression ?exp ;
+            cdm:manifestation_type ?manif_type .
+        FILTER (str(?manif_type) in ('fmx4', 'fmx3', 'fmx2', "akn"))
+    }
+    # add bind to the ZIP
+}
