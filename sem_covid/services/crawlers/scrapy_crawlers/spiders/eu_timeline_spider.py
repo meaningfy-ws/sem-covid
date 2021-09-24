@@ -98,7 +98,8 @@ class EUTimelineSpider(scrapy.Spider):
             logger.info("No detail type, date and/or location found on this page. . .")
 
         content_classes = ['ecl-paragraph', 'col-md-9 council-left-content-basic council-flexify', 'field__items',
-                           'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content']
+                           'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content',
+                           'container-council', 'ecl', 'ecl-field__body', 'ecl-field__body']
 
         item.setdefault('detail_content', "")
         for content_class in content_classes:
