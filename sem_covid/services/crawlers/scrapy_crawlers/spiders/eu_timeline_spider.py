@@ -81,9 +81,9 @@ class EUTimelineSpider(scrapy.Spider):
         return []
 
     def parse_presscorner_page(self, response):
+        item = {}
         meta = response.meta
         self.logger.info(f"abstract processing presscorner links: {meta['title']}")
-        self.logger.info(f"presscorner content: {meta['detail_content']}")
         for dictionary in self.data:
             if dictionary['title'] == meta['title']:
                 item = dictionary
