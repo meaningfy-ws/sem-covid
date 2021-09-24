@@ -52,6 +52,7 @@ class EUTimelineSpider(scrapy.Spider):
 
                     presscorner_links = [link.attrib['href'] for link in month.xpath('*//p//a') if
                                          self.base_url in link.attrib.get('href', '')]
+                    presscorner_links = [link for link in presscorner_links if str(link).endswith(".pdf")]
                     meta = dict()
                     meta['month_name'] = month_name
                     meta['date'] = date
