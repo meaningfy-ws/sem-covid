@@ -83,15 +83,20 @@ class EUTimelineSpider(scrapy.Spider):
     def parse_presscorner_page(self, response):
         meta = response.meta
         self.logger.info(f"abstract processing presscorner links: {meta['title']}")
-        item = EuActionTimelineItem(
-            month_name=meta['month_name'],
-            date=meta['date'],
-            title=meta['title'],
-            abstract=meta['abstract'],
-            presscorner_links=meta['presscorner_links'],
-            all_links=meta['all_links'],
-            detail_link=response.url,
-        )
+        self.logger.info(f"presscorner content: {meta['detail_content']}")
+        for dictionary in self.data:
+            if dictionary['title'] == meta['title']:
+                item = dictionary
+            else:
+                item = EuActionTimelineItem(
+                    month_name=meta['month_name'],
+                    date=meta['date'],
+                    title=meta['title'],
+                    abstract=meta['abstract'],
+                    presscorner_links=meta['presscorner_links'],
+                    all_links=meta['all_links'],
+                    detail_link=response.url,
+                )
         metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
         if metadata:
             item['detail_type'] = metadata[0].get()
@@ -107,15 +112,19 @@ class EUTimelineSpider(scrapy.Spider):
         item.setdefault('detail_content', "")
         for content_class in content_classes:
             item['detail_content'] = item['detail_content'] + " ".join(response.xpath('//div[@class="' + content_class + '"]//text()').extract())
-        item['detail_title'] = response.xpath(
-            '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
+
+        item.setdefault('detail_title', "")
+        item['detail_title'] = item['detail_title'] + response.xpath('//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
 
         detail_links_start = response.xpath('//div[@class="ecl-paragraph"]//h3[contains(., "For More Information")]')
 
         if detail_links_start:
-            item['for_more_information_links'] = [link.attrib.get('href') for link in
-                                                  detail_links_start[0].xpath('following-sibling::p/a')]
-        item['detail_pdf_link'] = response.xpath(
+            item.setdefault('for_more_information_links', [])
+            item['for_more_information_links'] = item['for_more_information_links'] + [link.attrib.get('href') for link in
+                                                                                       detail_links_start[0].xpath('following-sibling::p/a')]
+
+        item.setdefault('detail_pdf_link', [])
+        item['detail_pdf_link'] = item['detail_pdf_link'] + response.xpath(
             '//a[contains(@class, "ecl-button--file ecl-file__download")]').attrib.get(
             'href')
 
