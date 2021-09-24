@@ -120,13 +120,12 @@ class EUTimelineSpider(scrapy.Spider):
 
         if detail_links_start:
             item.setdefault('for_more_information_links', [])
-            item['for_more_information_links'] = item['for_more_information_links'] + [link.attrib.get('href') for link in
+            item['for_more_information_links'] = item['for_more_information_links'] + [link.attrib.get('href', "") for link in
                                                                                        detail_links_start[0].xpath('following-sibling::p/a')]
 
         item.setdefault('detail_pdf_link', [])
         item['detail_pdf_link'] = item['detail_pdf_link'] + list(response.xpath(
-            '//a[contains(@class, "ecl-button--file ecl-file__download")]').attrib.get(
-            'href'))
+            '//a[contains(@class, "ecl-button--file ecl-file__download")]').attrib.get('href', ""))
 
         item.setdefault('press_contacts', [])
         item.setdefault('topics', [])
