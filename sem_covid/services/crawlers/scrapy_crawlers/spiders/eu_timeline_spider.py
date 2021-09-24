@@ -114,7 +114,7 @@ class EUTimelineSpider(scrapy.Spider):
             item['detail_content'] = item['detail_content'] + " ".join(response.xpath('//div[@class="' + content_class + '"]//text()').extract())
 
         item.setdefault('detail_title', "")
-        item['detail_title'] = item['detail_title'] + response.xpath('//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
+        item['detail_title'] = item['detail_title'] + response.xpath('//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()')
 
         detail_links_start = response.xpath('//div[@class="ecl-paragraph"]//h3[contains(., "For More Information")]')
 
