@@ -124,12 +124,14 @@ class EUTimelineSpider(scrapy.Spider):
                                                                                        detail_links_start[0].xpath('following-sibling::p/a')]
 
         item.setdefault('detail_pdf_link', [])
-        item['detail_pdf_link'] = item['detail_pdf_link'] + response.xpath(
+        item['detail_pdf_link'] = item['detail_pdf_link'] + list(response.xpath(
             '//a[contains(@class, "ecl-button--file ecl-file__download")]').attrib.get(
-            'href')
+            'href'))
 
-        item['press_contacts'] = list()
-        item['topics'] = list()
+        item.setdefault('press_contacts', [])
+        item.setdefault('topics', [])
+        # item['press_contacts'] = list()
+        # item['topics'] = list()
         press_contacts = response.xpath('//ul[@class="ecl-listing"]/li')
         for press_contact in press_contacts:
             document_spoke_person_name = press_contact.xpath('*//div/h4/text()').get()
