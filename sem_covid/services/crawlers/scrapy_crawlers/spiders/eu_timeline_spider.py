@@ -60,6 +60,8 @@ class EUTimelineSpider(scrapy.Spider):
                     meta['presscorner_links'] = presscorner_links
                     meta['all_links'] = [link.attrib['href'] for link in month.xpath('*//p//a')]
                     if presscorner_links:
+                        if len(presscorner_links) > 1:
+                            self.logger.info(f"abstract with 2 presscorner links: {title}")
                         for presscorner_link in presscorner_links:
                             self.logger.info(f'Processing data for link: {presscorner_link}.')
                             yield SplashRequest(url=presscorner_link, callback=self.parse_presscorner_page,
@@ -80,6 +82,7 @@ class EUTimelineSpider(scrapy.Spider):
 
     def parse_presscorner_page(self, response):
         meta = response.meta
+        self.logger.info(f"abstract processing presscorner links: {meta['title']}")
         item = EuActionTimelineItem(
             month_name=meta['month_name'],
             date=meta['date'],
@@ -99,7 +102,7 @@ class EUTimelineSpider(scrapy.Spider):
 
         content_classes = ['ecl-paragraph', 'col-md-9 council-left-content-basic council-flexify', 'field__items',
                            'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content',
-                           'container-council', 'ecl', 'ecl-field__body', 'ecl-field__body']
+                           'container-council', 'ecl', 'ecl-field__body']
 
         item.setdefault('detail_content', "")
         for content_class in content_classes:
