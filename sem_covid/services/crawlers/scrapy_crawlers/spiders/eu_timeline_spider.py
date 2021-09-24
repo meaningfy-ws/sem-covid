@@ -100,9 +100,9 @@ class EUTimelineSpider(scrapy.Spider):
         content_classes = ['ecl-paragraph', 'col-md-9 council-left-content-basic council-flexify', 'field__items',
                            'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content']
 
-        item.setdefault('detail_content', [])
+        item.setdefault('detail_content', "")
         for content_class in content_classes:
-            item['detail_content'].append(response.xpath('//div[@class="' + content_class + '"]//text()').extract())
+            item['detail_content'] = item['detail_content'] + " ".join(response.xpath('//div[@class="' + content_class + '"]//text()').extract())
         item['detail_title'] = response.xpath(
             '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
 
