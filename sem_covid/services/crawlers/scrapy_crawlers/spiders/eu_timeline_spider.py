@@ -48,6 +48,8 @@ class EUTimelineSpider(scrapy.Spider):
                 for month in month_timeline:
                     date = month.xpath('*[@class="timeline__list__item__title"]/text()').get()
                     title = month.xpath('*//h4//text()').get()
+                    self.logger.info(f"Date: {date}")
+                    self.logger.info(f"Title: {title}")
                     body = ' '.join(month.xpath('*//p[string-length(text()) > 0]/text()').extract())
 
                     presscorner_links = [link.attrib['href'] for link in month.xpath('*//p//a') if
