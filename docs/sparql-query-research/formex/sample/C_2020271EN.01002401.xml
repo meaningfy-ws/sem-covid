@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CJT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://formex.publications.europa.eu/schema/formex-05.59-20170418.xd">
+    <BIB.INSTANCE>
+        <DOCUMENT.REF FILE="C_2020271EN.01002401.doc.xml">
+            <COLL>C</COLL>
+            <NO.OJ>271</NO.OJ>
+            <YEAR>2020</YEAR>
+            <LG.OJ>EN</LG.OJ>
+            <PAGE.FIRST>24</PAGE.FIRST>
+            <PAGE.SEQ>1</PAGE.SEQ>
+            <VOLUME.REF>01</VOLUME.REF>
+        </DOCUMENT.REF>
+        <DATE ISO="20200506">20200506</DATE>
+        <LG.DOC>EN</LG.DOC>
+        <NO.SEQ>0032</NO.SEQ>
+        <PAGE.FIRST>24</PAGE.FIRST>
+        <PAGE.SEQ>1</PAGE.SEQ>
+        <PAGE.LAST>25</PAGE.LAST>
+        <PAGE.TOTAL>2</PAGE.TOTAL>
+    </BIB.INSTANCE>
+    <TI.CJT>
+        <TITLE>
+            <TI>
+                <P>Request for a preliminary ruling from the Landgericht Düsseldorf (Germany) lodged on <DATE
+                        ISO="20200506">6 May 2020</DATE> — Eurowings GmbH v Flightright GmbH
+                </P>
+                <P>(Case C-196/20)</P>
+            </TI>
+        </TITLE>
+        <NO.DOC.C>2020/C 271/32</NO.DOC.C>
+        <LG.PROC LG="DE">Language of the case: German</LG.PROC>
+        <TRANS.REF>
+            <IE></IE>
+        </TRANS.REF>
+    </TI.CJT>
+    <CONTENTS>
+        <GR.SEQ LEVEL="1">
+            <TITLE>
+                <TI>
+                    <P>
+                        <HT TYPE="BOLD">Referring court</HT>
+                    </P>
+                </TI>
+            </TITLE>
+            <P>Landgericht Düsseldorf</P>
+        </GR.SEQ>
+        <GR.SEQ LEVEL="1">
+            <TITLE>
+                <TI>
+                    <P>
+                        <HT TYPE="BOLD">Parties to the main proceedings</HT>
+                    </P>
+                </TI>
+            </TITLE>
+            <P>
+                <HT TYPE="ITALIC">Appellant:</HT>
+                Eurowings GmbH
+            </P>
+            <P>
+                <HT TYPE="ITALIC">Respondent:</HT>
+                Flightright GmbH
+            </P>
+        </GR.SEQ>
+        <GR.SEQ LEVEL="1">
+            <TITLE>
+                <TI>
+                    <P>
+                        <HT TYPE="BOLD">Questions referred</HT>
+                    </P>
+                </TI>
+            </TITLE>
+            <LIST TYPE="ARAB">
+                <ITEM>
+                    <NP>
+                        <NO.P>1.</NO.P>
+                        <TXT>Does a passenger have a <QUOT.START CODE="2018" ID="QS0001" REF.END="QE0001"></QUOT.START>confirmed
+                            reservation<QUOT.END CODE="2019" ID="QE0001" REF.START="QS0001"></QUOT.END> within the
+                            meaning of Article 3(2)(a) of Regulation (EC) No 261/2004
+                            <NOTE NOTE.ID="E0001" TYPE="ENDNOTE">
+                                <P>Regulation of the European Parliament and of the Council of <DATE ISO="20040211">
+                                    11 February 2004
+                                </DATE> establishing common rules on compensation and assistance to passengers in the
+                                    event of denied boarding and of cancellation or long delay of flights, and repealing
+                                    Regulation (EEC) No 295/91 (<REF.DOC.OJ COLL="L" DATE.PUB="2004" NO.OJ="046"
+                                                                            PAGE.FIRST="1">OJ 2004 L 46,
+                                        p. 1</REF.DOC.OJ>).
+                                </P>
+                            </NOTE>
+                            if he has received, from a tour operator with which he has a contract, <QUOT.START
+                                    CODE="2018" ID="QS0002" REF.END="QE0002"></QUOT.START>other proof<QUOT.END
+                                    CODE="2019" ID="QE0002" REF.START="QS0002"></QUOT.END> within the meaning of
+                            Article 2(g) of this regulation, by which he is assured transport on a particular flight,
+                            individualised by points of departure and destination, times of departure and arrival and
+                            flight number, without the tour operator having made a seat reservation for that flight with
+                            the air carrier concerned and having received confirmation from the latter?
+                        </TXT>
+                    </NP>
+                </ITEM>
+                <ITEM>
+                    <NP>
+                        <NO.P>2.</NO.P>
+                        <TXT>Is an air carrier to be regarded as an operating air carrier within the meaning of
+                            Article 2(b) of Regulation No 261/2004 in relation to a passenger if, despite the fact that
+                            that passenger has a contract with a tour operator which has promised him carriage on a
+                            particular flight, individualised by points of departure and destination, times of departure
+                            and arrival and flight number, the tour operator has not, however, reserved a seat for the
+                            passenger and has therefore not established a contractual relationship with the air carrier
+                            in respect of that flight?
+                        </TXT>
+                    </NP>
+                </ITEM>
+                <?PAGE NO="25"?>
+                <ITEM>
+                    <NP>
+                        <NO.P>3.</NO.P>
+                        <TXT>Can the <QUOT.START CODE="2018" ID="QS0003" REF.END="QE0003"></QUOT.START>scheduled time of
+                            arrival<QUOT.END CODE="2019" ID="QE0003" REF.START="QS0003"></QUOT.END> of a flight within
+                            the meaning of Article 2(h), Article 5(1)(c), the second sentence of Article 7(1) and
+                            Article 7(2) of Regulation No 261/2004 be determined, for the purposes of compensation for
+                            cancellation or long delay in arrival, from <QUOT.START CODE="2018" ID="QS0004"
+                                                                                    REF.END="QE0004"></QUOT.START>other
+                            proof<QUOT.END CODE="2019" ID="QE0004" REF.START="QS0004"></QUOT.END> issued to a passenger
+                            by a tour operator, or must the ticket pursuant to Article 2(f) of this regulation be taken
+                            into account for that purpose?
+                        </TXT>
+                    </NP>
+                </ITEM>
+            </LIST>
+        </GR.SEQ>
+    </CONTENTS>
+</CJT>

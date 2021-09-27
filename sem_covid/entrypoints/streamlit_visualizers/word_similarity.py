@@ -75,7 +75,7 @@ def create_similarity_graph(similarity_matrix: pd.DataFrame, key_word: str, metr
                                             index=graph.nodes(), columns=graph.nodes())
     node_color_list = [deep_map[node][0] for node in graph.nodes()]
     return d3graph(network_adjacency_matrix, node_color=node_color_list, node_color_edge='FFEDDA',
-                   width=650, height=500, edge_width=5, edge_distance=60, directed=True, showfig=False)
+                   width=1200, height=1000, edge_width=5, edge_distance=100, directed=True, showfig=False)
 
 
 st.title(STREAMLIT_TITLE)
@@ -98,15 +98,15 @@ word = col3.selectbox(
     app_cache[selected_key].columns.to_list())
 
 threshold_slider = st.slider('Threshold', min_value=0.0, max_value=1.0, step=0.05, value=0.4)
-number_of_neighbours_slider = st.slider('Number of Neighbours', min_value=2, max_value=5, step=1, value=1)
+number_of_neighbours_slider = st.slider('Number of Neighbours', min_value=2, max_value=5, step=1, value=2)
 
 if st.button(BUTTON_NAME):
     try:
         st.write('Generating graph . . .')
         components.html(open(create_similarity_graph(
             similarity_matrix=app_cache[selected_key],
-            key_word=word, top_words=number_of_neighbours_slider + 1,
-            metric_threshold=threshold_slider)['path'], 'r', encoding='utf-8').read(), width=700, height=700)
+            key_word=word, top_words=number_of_neighbours_slider,
+            metric_threshold=threshold_slider)['path'], 'r', encoding='utf-8').read(), width=1200, height=1000)
     except KeyError:
         st.write('There is no such a word.')
     except ValueError:

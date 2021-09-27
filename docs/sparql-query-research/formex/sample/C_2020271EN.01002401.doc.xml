@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://formex.publications.europa.eu/schema/formex-05.59-20170418.xd">
+    <BIB.DOC>
+        <PROD.ID>20200731039</PROD.ID>
+        <FIN.ID>316773</FIN.ID>
+        <NO.DOC TYPE="OJ">
+            <TXT>2020/C 271/32</TXT>
+        </NO.DOC>
+        <NO.DOC TYPE="INTERNAL" FORMAT="CNY">
+            <NO.CURRENT>196</NO.CURRENT>
+            <YEAR>2020</YEAR>
+        </NO.DOC>
+        <DURAB TYPE="NA"></DURAB>
+        <AUTHOR>CJ</AUTHOR>
+    </BIB.DOC>
+    <PUBLICATION.REF FILE="C_2020271EN.toc.xml">
+        <COLL>C</COLL>
+        <NO.OJ>271</NO.OJ>
+        <DATE ISO="20200817">20200817</DATE>
+        <LG.OJ>EN</LG.OJ>
+        <VOLUME.REF>01</VOLUME.REF>
+    </PUBLICATION.REF>
+    <FMX>
+        <DOC.MAIN.PUB NO.SEQ="0032" SYNOPTISM="D0032">
+            <LG.DOC>EN</LG.DOC>
+            <LEGAL.VALUE>INFO_JUDICIAL</LEGAL.VALUE>
+            <DATE ISO="20200506">20200506</DATE>
+            <PAGE.FIRST>24</PAGE.FIRST>
+            <PAGE.LAST>25</PAGE.LAST>
+            <PAGE.TOTAL>2</PAGE.TOTAL>
+            <PAGE.SEQ>1</PAGE.SEQ>
+            <REF.PHYS TYPE="DOC.XML" FILE="C_2020271EN.01002401.xml"></REF.PHYS>
+        </DOC.MAIN.PUB>
+    </FMX>
+    <PAPER>
+        <VOLUME.PAPER>
+            <ITEM.VOLUME REF.NO.SEQ="0032">
+                <TITLE ID.TITLE="T0001">
+                    <TI>
+                        <P>Case C-196/20: Request for a preliminary ruling from the Landgericht Düsseldorf (Germany)
+                            lodged on <DATE ISO="20200506">6 May 2020</DATE> — Eurowings GmbH v Flightright GmbH
+                        </P>
+                    </TI>
+                </TITLE>
+                <ITEM.REF>24</ITEM.REF>
+            </ITEM.VOLUME>
+        </VOLUME.PAPER>
+    </PAPER>
+    <PDF>
+        <ITEM.VOLUME REF.NO.SEQ="0032">
+            <TITLE REF.TITLE="T0001"></TITLE>
+            <ITEM.REF REF.PDF="c_27120200817en00240025.pdf">24</ITEM.REF>
+        </ITEM.VOLUME>
+    </PDF>
+</DOC>

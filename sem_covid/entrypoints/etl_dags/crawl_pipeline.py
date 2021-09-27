@@ -76,8 +76,7 @@ class CrawlDagPipeline(BaseETLPipeline):
         self.scrapy_crawler = scrapy_crawler
 
     def get_steps(self) -> list:
-        return [self.extract, self.transform_structure,
-                self.load]
+        return [self.extract, self.transform_structure, self.transform_content, self.load]
 
     def extract(self, *args, **kwargs) -> None:
         logger.info('start crawler')
@@ -96,6 +95,7 @@ class CrawlDagPipeline(BaseETLPipeline):
         logger.info(f'Using Apache Tika at {config.APACHE_TIKA_URL}')
         logger.info(f'Loading resource files from {self.file_name}')
         minio = self.store_registry.minio_object_store(self.bucket_name)
+        minio.empty_bucket(object_name_prefix=TIKA_FILE_PREFIX)
         json_content = loads(minio.get_object(self.file_name))
         logger.info(f"Content path key: {self.content_path_key}")
         counter = {
@@ -105,7 +105,6 @@ class CrawlDagPipeline(BaseETLPipeline):
         for index, item in enumerate(json_content):
             identifier = item['title']
             logger.info(f'[{index + 1}/{len(json_content)}] Processing {identifier}')
-            logger.info(f"Content path key items: {item[self.content_path_key]}")
             if self.content_path_key in item:
                 counter['general'] += 1
                 parse_result = parser.from_buffer(string=item[self.content_path_key],

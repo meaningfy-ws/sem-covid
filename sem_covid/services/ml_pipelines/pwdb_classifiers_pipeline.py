@@ -13,7 +13,7 @@ import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import preprocessing
 from sem_covid import config
-# from pycaret.classification import *
+#from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import store_registry
@@ -218,8 +218,8 @@ class ModelTraining:
         :return:
         """
         for class_name in self.train_classes:
-            dataset = self.dataset_x
-            dataset[class_name] = self.dataset_y[class_name].values
+            dataset = pd.DataFrame(self.dataset_x.copy())
+            dataset[class_name] = list(self.dataset_y[class_name].values)
             train_data = dataset
             train_data.reset_index(inplace=True, drop=True)
             experiment = setup(data=train_data,
@@ -228,7 +228,7 @@ class ModelTraining:
                                experiment_name=f"{self.experiment_name}_{class_name}",
                                silent=True)
             best_model = compare_models()
-            tuned_model = tune_model(best_model, n_iter=200, choose_better=True, optimize='F1')
+            tuned_model = tune_model(best_model, n_iter=1, choose_better=True, optimize='F1')
             final_model = finalize_model(tuned_model)
             del dataset
             del train_data
