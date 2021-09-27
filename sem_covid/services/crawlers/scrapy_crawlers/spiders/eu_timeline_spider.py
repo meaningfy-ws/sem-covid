@@ -48,10 +48,13 @@ class EUTimelineSpider(scrapy.Spider):
                 for month in month_timeline:
                     date = month.xpath('*[@class="timeline__list__item__title"]/text()').get()
                     title = month.xpath('*//h4//text()').get()
+                    self.logger.info(f"Date: {date}")
+                    self.logger.info(f"Title: {title}")
                     body = ' '.join(month.xpath('*//p[string-length(text()) > 0]/text()').extract())
 
                     presscorner_links = [link.attrib['href'] for link in month.xpath('*//p//a') if
                                          self.base_url in link.attrib.get('href', '')]
+                    presscorner_links = [link for link in presscorner_links if not str(link).endswith(".pdf")]
                     meta = dict()
                     meta['month_name'] = month_name
                     meta['date'] = date
@@ -60,6 +63,8 @@ class EUTimelineSpider(scrapy.Spider):
                     meta['presscorner_links'] = presscorner_links
                     meta['all_links'] = [link.attrib['href'] for link in month.xpath('*//p//a')]
                     if presscorner_links:
+                        if len(presscorner_links) > 1:
+                            self.logger.info(f"abstract with 2 presscorner links: {title}")
                         for presscorner_link in presscorner_links:
                             self.logger.info(f'Processing data for link: {presscorner_link}.')
                             yield SplashRequest(url=presscorner_link, callback=self.parse_presscorner_page,
@@ -79,16 +84,22 @@ class EUTimelineSpider(scrapy.Spider):
         return []
 
     def parse_presscorner_page(self, response):
+        item = {}
         meta = response.meta
-        item = EuActionTimelineItem(
-            month_name=meta['month_name'],
-            date=meta['date'],
-            title=meta['title'],
-            abstract=meta['abstract'],
-            presscorner_links=meta['presscorner_links'],
-            all_links=meta['all_links'],
-            detail_link=response.url,
-        )
+        self.logger.info(f"abstract processing presscorner links: {meta['title']}")
+        for dictionary in self.data:
+            if dictionary['title'] == meta['title']:
+                item = dictionary
+            else:
+                item = EuActionTimelineItem(
+                    month_name=meta['month_name'],
+                    date=meta['date'],
+                    title=meta['title'],
+                    abstract=meta['abstract'],
+                    presscorner_links=meta['presscorner_links'],
+                    all_links=meta['all_links'],
+                    detail_link=response.url,
+                )
         metadata = response.xpath('//span[contains(@class, "ecl-meta__item")]//text()')
         if metadata:
             item['detail_type'] = metadata[0].get()
@@ -98,25 +109,31 @@ class EUTimelineSpider(scrapy.Spider):
             logger.info("No detail type, date and/or location found on this page. . .")
 
         content_classes = ['ecl-paragraph', 'col-md-9 council-left-content-basic council-flexify', 'field__items',
-                           'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content']
+                           'display:none;', 'page-content', 'ecl-container', 'content clearfix', 'page-content',
+                           'container-council', 'ecl', 'ecl-field__body']
 
-        item.setdefault('detail_content', [])
+        item.setdefault('detail_content', "")
         for content_class in content_classes:
-            item['detail_content'].append(response.xpath('//div[@class="' + content_class + '"]//text()').extract())
-        item['detail_title'] = response.xpath(
-            '//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract()
+            item['detail_content'] = item['detail_content'] + " ".join(response.xpath('//div[@class="' + content_class + '"]//text()').extract())
+
+        item.setdefault('detail_title', "")
+        item['detail_title'] = item['detail_title'] + " ".join(response.xpath('//h1[@class="ecl-heading ecl-heading--h1 ecl-u-color-white"]//text()').extract())
 
         detail_links_start = response.xpath('//div[@class="ecl-paragraph"]//h3[contains(., "For More Information")]')
 
         if detail_links_start:
-            item['for_more_information_links'] = [link.attrib.get('href') for link in
-                                                  detail_links_start[0].xpath('following-sibling::p/a')]
-        item['detail_pdf_link'] = response.xpath(
-            '//a[contains(@class, "ecl-button--file ecl-file__download")]').attrib.get(
-            'href')
+            item.setdefault('for_more_information_links', [])
+            item['for_more_information_links'] = item['for_more_information_links'] + [link.attrib.get('href', "") for link in
+                                                                                       detail_links_start[0].xpath('following-sibling::p/a')]
 
-        item['press_contacts'] = list()
-        item['topics'] = list()
+        item.setdefault('detail_pdf_link', [])
+        item['detail_pdf_link'] = item['detail_pdf_link'] + list(response.xpath(
+            '//a[contains(@class, "ecl-button--file ecl-file__download")]').attrib.get('href', ""))
+
+        item.setdefault('press_contacts', [])
+        item.setdefault('topics', [])
+        # item['press_contacts'] = list()
+        # item['topics'] = list()
         press_contacts = response.xpath('//ul[@class="ecl-listing"]/li')
         for press_contact in press_contacts:
             document_spoke_person_name = press_contact.xpath('*//div/h4/text()').get()
