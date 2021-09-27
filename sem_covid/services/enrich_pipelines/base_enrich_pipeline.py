@@ -11,7 +11,7 @@
 import numpy as np
 import pandas as pd
 from gensim.models import KeyedVectors
-#from pycaret.classification import predict_model
+from pycaret.classification import predict_model
 from sklearn import preprocessing
 
 from sem_covid.services.data_registry import LanguageModel
