@@ -154,7 +154,7 @@ class DefaultDatasetStructureTransformer:
 
     def create_columns(self):
         """
-        This is creating the necessary columns in the dataset
+        This is creating the necessary columns in the dataset with values
         """
         self.dataset[CONTENT_COLUMN_NAME] = self.dataset[self.content_columns].agg(
             lambda x: " ".join(item if item else "" for item in x),
