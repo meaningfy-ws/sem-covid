@@ -17,37 +17,6 @@ from sem_covid.adapters.abstract_model import SentenceEmbeddingModelABC
 
 DetectorFactory.seed = 0
 
-
-
-def make_target_group_l1_column(dataset: pd.DataFrame):
-    for col in TARGET_GROUPS_L1:
-        dataset[col] = dataset[col].apply(lambda x: col if x == 1 else "")
-
-    dataset["pwdb_target_group_l1"] = dataset[TARGET_GROUPS_L1].apply(lambda row: ' '.join(row.values.astype(str)),
-                                                                      axis=1).apply(lambda x: x.split())
-
-
-def make_topic_embeddings_column(dataset: pd.DataFrame):
-    dataset["topic_embeddings"] = [[0] * 50] * len(dataset)
-
-
-def create_new_column_with_defined_value(dataset: pd.DataFrame, column_name: str, value=None, empty_array=False):
-    if empty_array:
-        dataset[column_name] = [np.empty(0, dtype=float)] * len(dataset)
-    else:
-        dataset[column_name] = value
-
-
-def replace_non_english_content(text):
-    if text is not None:
-        language = detect_langs(text)
-        language_details = str(language[0]).split(":")
-        if language_details[0] == "en" and float(language_details[1]) > 0.95:
-            return text
-        else:
-            return None
-
-
 TARGET_GROUPS_L1 = ["businesses", "workers", "citizens"]
 COMMON_DATASET_COLUMNS = ["title", "content", "date", "doc_source", "country", "pwdb_category",
                           "pwdb_target_group_l1", "pwdb_funding", "pwdb_type_of_measure",
@@ -117,7 +86,53 @@ IRELAND_TIMELINE_SPECIFIC_COLUMNS = {"ireland_keyword": "keyword",
                                      "ireland_page_type": "page_type"}
 
 
+def make_target_group_l1_column(dataset: pd.DataFrame):
+    """
+    This function will create the pwdb_target_group_l1 column for a dataset. The value will be the content merged from
+    workers,businesses, citizens column values that are first converted from binary to text.
+    """
+    for col in TARGET_GROUPS_L1:
+        dataset[col] = dataset[col].apply(lambda x: col if x == 1 else "")
+
+    dataset["pwdb_target_group_l1"] = dataset[TARGET_GROUPS_L1].apply(lambda row: ' '.join(row.values.astype(str)),
+                                                                      axis=1).apply(lambda x: x.split())
+
+
+def make_topic_embeddings_column(dataset: pd.DataFrame):
+    """
+    This function created the topic_embeddings column for a dataset
+    """
+    dataset["topic_embeddings"] = [[0] * 50] * len(dataset)
+
+
+def create_new_column_with_defined_value(dataset: pd.DataFrame, column_name: str, value=None, empty_array=False):
+    """
+    This function create a column in the dataset with a defined value or with an empty list as value
+    """
+    if empty_array:
+        dataset[column_name] = [np.empty(0, dtype=float)] * len(dataset)
+    else:
+        dataset[column_name] = value
+
+
+def replace_non_english_content(text):
+    """
+    This function will check the content from a language stand point. If the text is not in english more then 95% then
+    will replace the text with None.
+    """
+    if text is not None:
+        language = detect_langs(text)
+        language_details = str(language[0]).split(":")
+        if language_details[0] == "en" and float(language_details[1]) > 0.95:
+            return text
+        else:
+            return None
+
+
 class DefaultDatasetStructureTransformer:
+    """
+    This class will transform a dataset structure
+    """
 
     def __init__(self, dataset: pd.DataFrame,
                  emb_model: SentenceEmbeddingModelABC,
@@ -138,6 +153,9 @@ class DefaultDatasetStructureTransformer:
         self.emb_model = emb_model
 
     def create_columns(self):
+        """
+        This is creating the necessary columns in the dataset
+        """
         self.dataset[CONTENT_COLUMN_NAME] = self.dataset[self.content_columns].agg(
             lambda x: " ".join(item if item else "" for item in x),
             axis=1)
@@ -154,12 +172,18 @@ class DefaultDatasetStructureTransformer:
             create_new_column_with_defined_value(self.dataset, column_name=specific_column, empty_array=True)
 
     def replace_values(self):
+        """
+        This is copying the values from the existing specific columns in the dataset to the new specific columns created
+        """
         if self.dataset_specific_columns:
             for new_column_name, column_name in self.dataset_specific_columns.items():
                 self.dataset[new_column_name] = self.dataset[column_name]
                 self.dataset[new_column_name] = self.dataset[column_name].apply(lambda x: x if x else [])
 
     def rename_columns(self):
+        """
+        this is renaming existing columns in the dataset
+        """
         self.dataset.rename(columns=self.rename_columns_mapping, inplace=True)
 
     def execute(self) -> pd.DataFrame:
@@ -170,6 +194,9 @@ class DefaultDatasetStructureTransformer:
 
 
 class UnifiedDatasetPipeline:
+    """
+    This class is creating a unified dataset by merging other datasets
+    """
 
     def __init__(self, es_store: IndexStoreABC,
                  emb_model: SentenceEmbeddingModelABC
@@ -186,6 +213,9 @@ class UnifiedDatasetPipeline:
         return [self.extract, self.transform, self.load]
 
     def extract(self):
+        """
+        This is getting the datasets from elastic search
+        """
         self.pwdb_df = self.es_store.get_dataframe(index_name=config.PWDB_ELASTIC_SEARCH_INDEX_NAME)
         self.eu_cellar_df = self.es_store.get_dataframe(
             index_name=config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME + "_enriched")
@@ -195,6 +225,9 @@ class UnifiedDatasetPipeline:
             index_name=config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME + "_enriched")
 
     def transform(self):
+        """
+        This is transforming the datasets to meet the merging requirements and creates the unified dataset
+        """
         self.pwdb_df = DefaultDatasetStructureTransformer(
             dataset=self.pwdb_df,
             emb_model=self.emb_model,
@@ -252,5 +285,8 @@ class UnifiedDatasetPipeline:
         self.unified_dataset.reset_index(inplace=True, drop=True)
 
     def load(self):
+        """
+        this will put the created unified dataset into elastic search
+        """
         self.es_store.put_dataframe(index_name=config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME,
                                     content=self.unified_dataset)
