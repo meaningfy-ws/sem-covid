@@ -5,16 +5,19 @@ from sem_covid.services.store_registry import store_registry
 
 es_store = store_registry.es_index_store()
 
-COMMON_DATASET_COLUMNS = ["title","content","date","doc_source","country","pwdb_category",
-                          "pwdb_target_group_l1","pwdb_funding", "pwdb_type_of_measure",
+COMMON_DATASET_COLUMNS = ["title", "content", "date", "doc_source", "country", "pwdb_category",
+                          "pwdb_target_group_l1", "pwdb_funding", "pwdb_type_of_measure",
                           "pwdb_actors", "document_embeddings", "topic_embeddings"]
 
-SPECIFIC_DATASET_COLUMNS = ["eu_cellar_subject_matter_labels", "eu_cellar_resource_type_labels","eu_cellar_directory_code_labels",
-                            "eu_cellar_author_labels", "pwdb_target_group_l2", "ireland_keyword", "ireland_department_data",
+SPECIFIC_DATASET_COLUMNS = ["eu_cellar_subject_matter_labels", "eu_cellar_resource_type_labels",
+                            "eu_cellar_directory_code_labels",
+                            "eu_cellar_author_labels", "pwdb_target_group_l2", "ireland_keyword",
+                            "ireland_department_data",
                             "ireland_campaign", "ireland_page_type", "eu_timeline_topic"]
 TEXT_COLUMNS = ["title", "content", "doc_source", "country", "pwdb_category",
                 "pwdb_type_of_measure"]
-ARRAY_COLUMNS = ["pwdb_target_group_l1", "pwdb_funding", "pwdb_actors","document_embeddings", "topic_embeddings"] + SPECIFIC_DATASET_COLUMNS
+ARRAY_COLUMNS = ["pwdb_target_group_l1", "pwdb_funding", "pwdb_actors", "document_embeddings",
+                 "topic_embeddings"] + SPECIFIC_DATASET_COLUMNS
 
 UNIFIED_DATASET_COLUMNS = COMMON_DATASET_COLUMNS + SPECIFIC_DATASET_COLUMNS
 
