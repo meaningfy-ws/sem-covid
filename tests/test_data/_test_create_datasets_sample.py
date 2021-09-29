@@ -25,7 +25,8 @@ def test_create_datasets_sample():
     index_names = [config.PWDB_ELASTIC_SEARCH_INDEX_NAME,
                    config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
                    config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
-                   config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME
+                   config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
+                   config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME
                    ]
     es_store = store_registry.es_index_store()
     for index_name in index_names:
