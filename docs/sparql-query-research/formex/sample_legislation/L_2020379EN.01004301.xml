@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNEX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://formex.publications.europa.eu/schema/formex-05.59-20170418.xd" NNC="YES">
+    <BIB.INSTANCE>
+        <DOCUMENT.REF FILE="L_2020379EN.01004201.doc.xml">
+            <COLL>L</COLL>
+            <NO.OJ>379</NO.OJ>
+            <YEAR>2020</YEAR>
+            <LG.OJ>EN</LG.OJ>
+            <PAGE.FIRST>42</PAGE.FIRST>
+            <PAGE.SEQ>1</PAGE.SEQ>
+            <VOLUME.REF>01</VOLUME.REF>
+        </DOCUMENT.REF>
+        <DATE ISO="20201112">20201112</DATE>
+        <LG.DOC>EN</LG.DOC>
+        <NO.SEQ>0009.0001</NO.SEQ>
+        <PAGE.FIRST>43</PAGE.FIRST>
+        <PAGE.SEQ>1</PAGE.SEQ>
+        <PAGE.LAST>43</PAGE.LAST>
+        <PAGE.TOTAL>1</PAGE.TOTAL>
+    </BIB.INSTANCE>
+    <TITLE>
+        <TI>
+            <P>ANNEX</P>
+        </TI>
+    </TITLE>
+    <CONTENTS>
+        <P>In Annex VI to Regulation (EC) No 1223/2009, the following entry is added:</P>
+        <QUOT.S LEVEL="1">
+            <TBL COLS="9" NO.SEQ="0001" PAGE.SIZE="SINGLE.LANDSCAPE">
+                <CORPUS>
+                    <ROW TYPE="HEADER">
+                        <CELL COL="1" ROWSPAN="2" TYPE="HEADER">Reference number</CELL>
+                        <CELL COL="2" COLSPAN="4" TYPE="HEADER">Substance identification</CELL>
+                        <CELL COL="6" COLSPAN="3" TYPE="HEADER">Conditions</CELL>
+                        <CELL COL="9" ROWSPAN="2" TYPE="HEADER">Wording of conditions of use and warnings</CELL>
+                    </ROW>
+                    <ROW TYPE="HEADER">
+                        <CELL COL="2" TYPE="HEADER">Chemical name/INN/XAN</CELL>
+                        <CELL COL="3" TYPE="HEADER">Name of Common Ingredients Glossary</CELL>
+                        <CELL COL="4" TYPE="HEADER">CAS number</CELL>
+                        <CELL COL="5" TYPE="HEADER">EC number</CELL>
+                        <CELL COL="6" TYPE="HEADER">Product type, Body parts</CELL>
+                        <CELL COL="7" TYPE="HEADER">Maximum concentration in ready for use preparation</CELL>
+                        <CELL COL="8" TYPE="HEADER">Other</CELL>
+                    </ROW>
+                    <ROW TYPE="HEADER">
+                        <CELL COL="1" TYPE="HEADER">a</CELL>
+                        <CELL COL="2" TYPE="HEADER">b</CELL>
+                        <CELL COL="3" TYPE="HEADER">c</CELL>
+                        <CELL COL="4" TYPE="HEADER">d</CELL>
+                        <CELL COL="5" TYPE="HEADER">e</CELL>
+                        <CELL COL="6" TYPE="HEADER">f</CELL>
+                        <CELL COL="7" TYPE="HEADER">g</CELL>
+                        <CELL COL="8" TYPE="HEADER">h</CELL>
+                        <CELL COL="9" TYPE="HEADER">i</CELL>
+                    </ROW>
+                    <ROW>
+                        <CELL COL="1"><QUOT.START CODE="2018" ID="QS0001" REF.END="QE0001"/>32
+                        </CELL>
+                        <CELL COL="2">2-ethoxyethyl (2Z)-2-cyano-2-[3-(3-methoxypropylamino)
+                            cyclohex-2-en-1-ylidene]acetate
+                        </CELL>
+                        <CELL COL="3">Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate</CELL>
+                        <CELL COL="4">1419401-88-9</CELL>
+                        <CELL COL="5">700-860-3</CELL>
+                        <CELL COL="6">
+                            <IE/>
+                        </CELL>
+                        <CELL COL="7">3 %</CELL>
+                        <CELL COL="8">
+                            <LIST TYPE="DASH">
+                                <ITEM>
+                                    <P>Not to be used in applications that may lead to exposure of the end-user’s lungs
+                                        by inhalation
+                                    </P>
+                                </ITEM>
+                                <ITEM>
+                                    <P>Do not use with nitrosating agents – Maximum nitrosamine content: 50 μg/kg</P>
+                                </ITEM>
+                                <ITEM>
+                                    <P>Keep in nitrite-free containers
+                                        <QUOT.END CODE="2019" ID="QE0001" REF.START="QS0001"/>
+                                    </P>
+                                </ITEM>
+                            </LIST>
+                        </CELL>
+                        <CELL COL="9">
+                            <IE/>
+                        </CELL>
+                    </ROW>
+                </CORPUS>
+            </TBL>
+        </QUOT.S>
+    </CONTENTS>
+</ANNEX>
