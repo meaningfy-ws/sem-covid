@@ -214,7 +214,7 @@ class ModelTraining:
 
     def train_model(self):
         import pycaret
-        from pycaret.classification import *
+        from pycaret.classification import compare_models, tune_model, finalize_model
         """
             This step trains the classification models.
         :return:
