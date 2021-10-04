@@ -193,7 +193,8 @@ def main():
     # display_2_countries_similarity = st.checkbox('Time periods similarity between 2 countries')
     # if display_2_countries_similarity:
     #     menu_time_period_similarity()
-    st.sidebar.title('')
+    st.sidebar.title('Navigation')
+    
 
 
 if __name__ == "__main__":
