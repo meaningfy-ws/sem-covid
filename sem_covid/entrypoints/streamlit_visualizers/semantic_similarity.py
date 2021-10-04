@@ -16,7 +16,6 @@ from numpy import mean
 from sklearn.metrics.pairwise import cosine_similarity
 
 from sem_covid import config
-from sem_covid.services.model_registry import embedding_registry
 from sem_covid.services.store_registry import store_registry
 import plotly.express as px
 
