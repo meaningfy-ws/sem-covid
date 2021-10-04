@@ -7,8 +7,7 @@
 """
     This module aims to define a pipeline for driving classifiers based on the PWDB dataset.
 """
-
-import mlflow
+# import mlflow
 import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import preprocessing
@@ -235,6 +234,7 @@ class ModelTraining:
             del train_data
 
     def execute(self):
+        import mlflow
         """
             This method performs the steps in the defined order.
         :return:
