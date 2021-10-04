@@ -26,7 +26,7 @@ CATEGORY = "ml"
 EXPERIMENT_NAME = "PyCaret_pwdb"
 PWDB_FEATURE_STORE_NAME = 'fs_pwdb'
 
-REQUIREMENTS = ['pycaret']
+REQUIREMENTS = ['pycaret', 'mlflow']
 
 # Word-Embedding-AVG classifiers
 
