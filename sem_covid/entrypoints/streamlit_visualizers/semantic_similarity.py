@@ -25,7 +25,7 @@ def load_data_in_cache():
     if not hasattr(st, 'easy_cache'):
         es_store = store_registry.es_index_store()
         st.easy_cache = dict()
-        st.easy_cache['unified_df'] = #es_store.get_dataframe(index_name=config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME)
+        st.easy_cache['unified_df'] = es_store.get_dataframe(index_name=config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME)
         st.write('Data cached!')
     return st.easy_cache
 
