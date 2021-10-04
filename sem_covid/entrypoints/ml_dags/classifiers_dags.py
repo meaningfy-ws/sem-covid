@@ -20,7 +20,7 @@ logger.debug(f"This line is important for DAG discovery because the *airflow mod
              f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
-MAJOR = 2
+MAJOR = 3
 CATEGORY = "ml"
 
 EXPERIMENT_NAME = "PyCaret_pwdb"
@@ -46,18 +46,18 @@ dag = DagFactory(
 
 # Universal-Sentence-Encoding classifiers
 
-BERT_EXPERIMENT_NAME = "PyCaret_pwdb_bert"
-PWDB_BERT_FEATURE_STORE_NAME = 'fs_pwdb_bert'
-
-classifier_universal_sentence_encoding_dag_name = dag_name(category=CATEGORY,
-                                                           name="pwdb_classifiers_universal_sentence_encoding",
-                                                           version_major=MAJOR,
-                                                           version_minor=MINOR)
-
-classifiers_universal_sentence_encoding_pipeline_dag = ClassifiersPipelineDag(
-    feature_engineering_pipeline=FeatureEngineeringBERT(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME),
-    model_training_pipeline=ModelTraining(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME,
-                                          experiment_name=BERT_EXPERIMENT_NAME))
+# BERT_EXPERIMENT_NAME = "PyCaret_pwdb_bert"
+# PWDB_BERT_FEATURE_STORE_NAME = 'fs_pwdb_bert'
+#
+# classifier_universal_sentence_encoding_dag_name = dag_name(category=CATEGORY,
+#                                                            name="pwdb_classifiers_universal_sentence_encoding",
+#                                                            version_major=MAJOR,
+#                                                            version_minor=MINOR)
+#
+# classifiers_universal_sentence_encoding_pipeline_dag = ClassifiersPipelineDag(
+#     feature_engineering_pipeline=FeatureEngineeringBERT(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME),
+#     model_training_pipeline=ModelTraining(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME,
+#                                           experiment_name=BERT_EXPERIMENT_NAME))
 
 # dag_universal_sentence_encoding = DagFactory(
 #     dag_pipeline=classifiers_universal_sentence_encoding_pipeline_dag,
