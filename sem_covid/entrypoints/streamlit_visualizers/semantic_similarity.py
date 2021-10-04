@@ -21,18 +21,24 @@ from sem_covid.services.store_registry import store_registry
 import plotly.express as px
 
 
+
+DATE_COLUMN_NAME = 'date'
+EMBEDDING_COLUMN_NAME = 'document_embeddings'
+COUNTRY_COLUMN_NAME = 'country'
+
+
 def load_data_in_cache():
     if not hasattr(st, 'easy_cache'):
         es_store = store_registry.es_index_store()
         st.easy_cache = dict()
-        st.easy_cache['unified_df'] = es_store.get_dataframe(index_name=config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME)
+        st.easy_cache['unified_df'] = es_store.get_dataframe(
+            index_name=config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME)
         st.write('Data cached!')
     return st.easy_cache
 
 
 app_cache = load_data_in_cache()
 unified_df = app_cache['unified_df']
-countries = list(unique_everseen(unified_df.country.values))
 
 
 def prepare_df(unified_df: pd.DataFrame,
@@ -51,29 +57,19 @@ def top_k_mean(data: np.array, top_k: int):
     return mean(tmp_data[:top_k] + [0] * (top_k - len(data)))
 
 
-def generate_countries_similarity_matrix(unified_df: pd.DataFrame,
-                                         pwdb_df: pd.DataFrame,
+def generate_countries_similarity_matrix(pwdb_dataset: pd.DataFrame,
                                          countries: List[str],
-                                         number_of_docs: int
-                                         ):
+                                         number_of_documents: int):
     n = len(countries)
     sim_matrix = np.zeros((n, n))
     for i in range(0, len(countries)):
         sim_matrix[i][i] = 0
-        df_x = prepare_df(unified_df=unified_df,
-                          pwdb_df=pwdb_df,
-                          column_filter_name='country',
-                          column_filter_value=countries[i]
-                          )
+        df_x = pd.DataFrame(pwdb_dataset[pwdb_dataset[COUNTRY_COLUMN_NAME] == countries[i]])
         for j in range(i + 1, len(countries)):
-            df_y = prepare_df(unified_df=unified_df,
-                              pwdb_df=pwdb_df,
-                              column_filter_name='country',
-                              column_filter_value=countries[j]
-                              )
-            tmp_sim_matrix = cosine_similarity(df_x['emb'].values.tolist(),
-                                               df_y['emb'].values.tolist())
-            sim_mean = top_k_mean(tmp_sim_matrix[np.triu_indices_from(tmp_sim_matrix, k=1)], number_of_docs)
+            df_y = pd.DataFrame(pwdb_dataset[pwdb_dataset[COUNTRY_COLUMN_NAME] == countries[j]])
+            tmp_sim_matrix = cosine_similarity(df_x[EMBEDDING_COLUMN_NAME].values.tolist(),
+                                               df_y[EMBEDDING_COLUMN_NAME].values.tolist())
+            sim_mean = top_k_mean(tmp_sim_matrix[np.triu_indices_from(tmp_sim_matrix, k=1)], number_of_documents)
             sim_matrix[i][j] = sim_matrix[j][i] = sim_mean
     return sim_matrix
 
@@ -107,19 +103,23 @@ def generate_2_country_similarity_matrix(data_x: pd.DataFrame, data_y: pd.DataFr
 def menu_countries_similarity():
     number_of_docs = st.slider('Number of documents', min_value=1, max_value=50, step=1, value=10)
 
-    # if st.button('Plot similarity'):
-    #     countries_similarity_matrix = generate_countries_similarity_matrix(unified_df=unified_df, pwdb_df=pwdb_df,
-    #                                                                        countries=countries,
-    #                                                                        number_of_docs=number_of_docs)
-    #     fig = px.imshow(countries_similarity_matrix,
-    #                     labels=dict(color="Semantic similarity"),
-    #                     x=countries,
-    #                     y=countries,
-    #                     width=700,
-    #                     height=700
-    #                     )
-    #     fig.update_xaxes(side="top")
-    #     st.plotly_chart(fig)
+    dataset = unified_df
+    countries = list(unique_everseen(unified_df.country.values))
+
+    if st.button('Generate similarity'):
+        countries_similarity_matrix = generate_countries_similarity_matrix(pwdb_dataset=dataset,
+                                                                           countries=countries,
+                                                                           number_of_documents=number_of_docs
+                                                                           )
+        fig = px.imshow(countries_similarity_matrix,
+                        labels=dict(color="Semantic similarity"),
+                        x=countries,
+                        y=countries,
+                        width=700,
+                        height=700
+                        )
+        fig.update_xaxes(side="top")
+        st.plotly_chart(fig)
 
 
 def menu_time_period_similarity():
@@ -185,6 +185,10 @@ def menu_time_period_similarity():
     #     st.plotly_chart(fig)
 
 
+def menu_sm_histogram():
+    st.write('Semantic similarity histogram')
+
+
 def main():
     # st.title('Semantic similarity')
     # display_countries_similarity = st.checkbox('Countries similarity')
@@ -193,8 +197,17 @@ def main():
     # display_2_countries_similarity = st.checkbox('Time periods similarity between 2 countries')
     # if display_2_countries_similarity:
     #     menu_time_period_similarity()
+
+    navigation_pages = {
+        'Semantic similarity for all countries': menu_countries_similarity,
+        'Semantic similarity in time': menu_time_period_similarity,
+        'Semantic similarity between datasets': menu_sm_histogram,
+    }
+
     st.sidebar.title('Navigation')
-    
+    selected_page = st.sidebar.radio('Go to', list(navigation_pages.keys()))
+    next_page = navigation_pages[selected_page]
+    next_page()
 
 
 if __name__ == "__main__":
