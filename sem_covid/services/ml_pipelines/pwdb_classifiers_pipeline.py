@@ -16,7 +16,7 @@ from sem_covid import config
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import store_registry
-import tensorflow_hub as hub
+# import tensorflow_hub as hub
 
 BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
               'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
@@ -164,6 +164,7 @@ class FeatureEngineeringBERT(FeatureEngineering):
         self.model = None
 
     def load_language_model(self):
+        import tensorflow_hub as hub
         model_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
         self.model = hub.load(model_url)
 
