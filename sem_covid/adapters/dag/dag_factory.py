@@ -1,9 +1,10 @@
 import abc
 import logging
+from typing import List
 from abc import abstractmethod
 
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator, PythonVirtualenvOperator
 
 from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline, DagStep
 from sem_covid.entrypoints import DEFAULT_DAG_ARGUMENTS
@@ -91,4 +92,19 @@ class DagFactory:
             for step, successor_step in zip(step_python_operators, step_python_operators[1:]):
                 step >> successor_step
         logger.info(f"Instantiated DAG {self.dag_name}")
+        return dag
+
+    def create_ml_dag(self, requirements: List[str], **dag_args):
+        """ """
+        with DAG(dag_id=self.dag_name, default_args=self.default_args, **dag_args) as dag:
+            step_python_venv_operator = [PythonVirtualenvOperator(task_id=f"{step.__name__}",
+                                                                  python_callable=self.create_step(step),
+                                                                  requirements=requirements,
+                                                                  dag=dag)
+                                         for step in self.dag_pipeline.get_steps()]
+
+            for step, successor_step in zip(step_python_venv_operator, step_python_venv_operator[1:]):
+                step >> successor_step
+        logger.info(f"Instantiated DAG {self.dag_name}")
+
         return dag
