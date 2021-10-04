@@ -57,3 +57,6 @@ def test_validate_enriched_dataset():
     # categories values should be only the ones in PWDB
     assert gdf.expect_column_values_to_be_in_set(column="pwdb_category",
                                                  value_set=PWDB_CATEGORIES).success
+    # entries to this dataset should be from 2020-01-01 and not older that this date
+    assert gdf.expect_column_values_to_be_between(column="date", min_value="2020-01-01",
+                                                  parse_strings_as_datetimes=True).success

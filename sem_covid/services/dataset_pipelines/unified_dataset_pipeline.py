@@ -31,6 +31,7 @@ SPECIFIC_DATASET_COLUMNS = ["eu_cellar_subject_matter_labels", "eu_cellar_resour
 CONTENT_COLUMN_NAME = 'content'
 TITLE_COLUMN_NAME = 'title'
 DATE_COLUMN_NAME = 'date'
+DATE_FILTER_COLUMN_NAME = 'date_filter_column'
 DOCUMENT_SOURCE_COLUMN_NAME = 'doc_source'
 COUNTRY_COLUMN_NAME = 'country'
 PWDB_ACTORS_COLUMN_NAME = "pwdb_actors"
@@ -283,6 +284,12 @@ class UnifiedDatasetPipeline:
             lambda x: x if type(x) == list else [x])
         # Note:the index is reset because enriched datasets have numeric indexing
         self.unified_dataset.reset_index(inplace=True, drop=True)
+
+        self.unified_dataset[DATE_FILTER_COLUMN_NAME] = pd.to_datetime(self.unified_dataset[DATE_COLUMN_NAME])
+        self.unified_dataset = self.unified_dataset[
+            self.unified_dataset[DATE_FILTER_COLUMN_NAME] > pd.to_datetime("2020-01-01")].copy()
+        self.unified_dataset.drop(DATE_FILTER_COLUMN_NAME, axis=1, inplace=True)
+
 
     def load(self):
         """
