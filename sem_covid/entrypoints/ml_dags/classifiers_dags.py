@@ -39,33 +39,27 @@ classifiers_pipeline_dag = ClassifiersPipelineDag(
                                           experiment_name=EXPERIMENT_NAME))
 
 
-def execute_classifier_pipeline_dag():
-    return ClassifiersPipelineDag(
-        feature_engineering_pipeline=FeatureEngineering(feature_store_name=PWDB_FEATURE_STORE_NAME),
-        model_training_pipeline=ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
-                                              experiment_name=EXPERIMENT_NAME))
 
-
-dag = DagFactory(
-    dag_pipeline=execute_classifier_pipeline_dag, dag_name=classifier_dag_name).create_ml_dag(
-    requirements=REQUIREMENTS,
-    schedule_interval="@once",
-    max_active_runs=1, concurrency=1)
+# dag = DagFactory(
+#     dag_pipeline=classifiers_pipeline_dag, dag_name=classifier_dag_name).create_dag(
+#     requirements=REQUIREMENTS,
+#     schedule_interval="@once",
+#     max_active_runs=1, concurrency=1)
 
 # Universal-Sentence-Encoding classifiers
 
-# BERT_EXPERIMENT_NAME = "PyCaret_pwdb_bert"
-# PWDB_BERT_FEATURE_STORE_NAME = 'fs_pwdb_bert'
-#
-# classifier_universal_sentence_encoding_dag_name = dag_name(category=CATEGORY,
-#                                                            name="pwdb_classifiers_universal_sentence_encoding",
-#                                                            version_major=MAJOR,
-#                                                            version_minor=MINOR)
-#
-# classifiers_universal_sentence_encoding_pipeline_dag = ClassifiersPipelineDag(
-#     feature_engineering_pipeline=FeatureEngineeringBERT(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME),
-#     model_training_pipeline=ModelTraining(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME,
-#                                           experiment_name=BERT_EXPERIMENT_NAME))
+BERT_EXPERIMENT_NAME = "PyCaret_pwdb_bert"
+PWDB_BERT_FEATURE_STORE_NAME = 'fs_pwdb_bert'
+
+classifier_universal_sentence_encoding_dag_name = dag_name(category=CATEGORY,
+                                                           name="pwdb_classifiers_universal_sentence_encoding",
+                                                           version_major=MAJOR,
+                                                           version_minor=MINOR)
+
+classifiers_universal_sentence_encoding_pipeline_dag = ClassifiersPipelineDag(
+    feature_engineering_pipeline=FeatureEngineeringBERT(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME),
+    model_training_pipeline=ModelTraining(feature_store_name=PWDB_BERT_FEATURE_STORE_NAME,
+                                          experiment_name=BERT_EXPERIMENT_NAME))
 
 # dag_universal_sentence_encoding = DagFactory(
 #     dag_pipeline=classifiers_universal_sentence_encoding_pipeline_dag,

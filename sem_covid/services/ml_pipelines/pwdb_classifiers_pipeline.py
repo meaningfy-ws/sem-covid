@@ -7,7 +7,7 @@
 """
     This module aims to define a pipeline for driving classifiers based on the PWDB dataset.
 """
-# import mlflow
+import mlflow
 import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import preprocessing
@@ -16,7 +16,7 @@ from sem_covid import config
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import store_registry
-# import tensorflow_hub as hub
+import tensorflow_hub as hub
 
 BUSINESSES = {'Companies providing essential services', 'Contractors of a company', 'Larger corporations',
               'One person or microenterprises', 'Other businesses', 'SMEs', 'Sector specific set of companies',
@@ -164,7 +164,6 @@ class FeatureEngineeringBERT(FeatureEngineering):
         self.model = None
 
     def load_language_model(self):
-        import tensorflow_hub as hub
         model_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
         self.model = hub.load(model_url)
 
@@ -213,7 +212,6 @@ class ModelTraining:
             assert column in self.dataset_y.columns
 
     def train_model(self):
-        from pycaret.classification import setup, compare_models, tune_model, finalize_model
         """
             This step trains the classification models.
         :return:
@@ -235,7 +233,6 @@ class ModelTraining:
             del train_data
 
     def execute(self):
-        import mlflow
         """
             This method performs the steps in the defined order.
         :return:
