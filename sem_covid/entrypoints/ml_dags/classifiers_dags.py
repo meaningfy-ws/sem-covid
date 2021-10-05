@@ -20,7 +20,7 @@ logger.debug(f"This line is important for DAG discovery because the *airflow mod
              f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
-MAJOR = 4
+MAJOR = 5
 CATEGORY = "ml"
 
 EXPERIMENT_NAME = "PyCaret_pwdb"
