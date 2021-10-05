@@ -38,8 +38,16 @@ classifiers_pipeline_dag = ClassifiersPipelineDag(
     model_training_pipeline=ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
                                           experiment_name=EXPERIMENT_NAME))
 
+
+def execute_classifier_pipeline_dag():
+    return ClassifiersPipelineDag(
+        feature_engineering_pipeline=FeatureEngineering(feature_store_name=PWDB_FEATURE_STORE_NAME),
+        model_training_pipeline=ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
+                                              experiment_name=EXPERIMENT_NAME))
+
+
 dag = DagFactory(
-    dag_pipeline=classifiers_pipeline_dag, dag_name=classifier_dag_name).create_ml_dag(
+    dag_pipeline=execute_classifier_pipeline_dag, dag_name=classifier_dag_name).create_ml_dag(
     requirements=REQUIREMENTS,
     schedule_interval="@once",
     max_active_runs=1, concurrency=1)
