@@ -55,7 +55,8 @@ class FakeStoreWithDatasetsRegistry(FakeStoreRegistry):
             index_names = [config.PWDB_ELASTIC_SEARCH_INDEX_NAME,
                            config.EU_CELLAR_ELASTIC_SEARCH_INDEX_NAME,
                            config.EU_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
-                           config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME
+                           config.IRELAND_TIMELINE_ELASTIC_SEARCH_INDEX_NAME,
+                           config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME
                            ]
             for index_name in index_names:
                 df = pd.read_json(TEST_DATA_PATH / 'datasets_sample' / f'{index_name}.json')
