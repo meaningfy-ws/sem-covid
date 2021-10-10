@@ -20,7 +20,7 @@ from sem_covid.services.store_registry import store_registry
 import plotly.express as px
 
 DATE_COLUMN_NAME = 'date'
-EMBEDDING_COLUMN_NAME = 'document_embeddings'
+EMBEDDING_COLUMN_NAME = 'document_embeddings_use'
 COUNTRY_COLUMN_NAME = 'country'
 PWDB_COLUMN_NAMES = ['pwdb_category', 'pwdb_funding', 'pwdb_type_of_measure',
                      'pwdb_actors', 'pwdb_target_group_l1', 'pwdb_target_group_l2']
