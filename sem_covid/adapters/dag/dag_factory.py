@@ -1,9 +1,10 @@
 import abc
 import logging
+from typing import List
 from abc import abstractmethod
 
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator, PythonVirtualenvOperator
 
 from sem_covid.adapters.dag.abstract_dag_pipeline import DagPipeline, DagStep
 from sem_covid.entrypoints import DEFAULT_DAG_ARGUMENTS

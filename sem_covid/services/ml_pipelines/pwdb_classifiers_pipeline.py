@@ -7,13 +7,12 @@
 """
     This module aims to define a pipeline for driving classifiers based on the PWDB dataset.
 """
-
 import mlflow
 import pandas as pd
 from gensim.models import KeyedVectors
 from sklearn import preprocessing
 from sem_covid import config
-#from pycaret.classification import *
+# from pycaret.classification import *
 from sem_covid.services.data_registry import Dataset, LanguageModel
 from sem_covid.services.sc_wrangling.mean_vectorizer import text_to_vector
 from sem_covid.services.store_registry import store_registry

@@ -12,19 +12,21 @@ from sem_covid.entrypoints.ml_dags.classifiers_pipeline_dag import ClassifiersPi
 from sem_covid.services.ml_pipelines.pwdb_classifiers_pipeline import (FeatureEngineering, ModelTraining,
                                                                        FeatureEngineeringBERT)
 # TODO: the dependency to PyCaret breaks the zen harmony
-# import airflow
-# import logging
-# logger = logging.getLogger(__name__)
-# logger.debug(f"This line is important for DAG discovery because the *airflow module* "
-#              f"shall be imported here. Otherwise it does not discover DAGs in this "
-#              f"module. Airflow version {airflow.__version__}")
+import airflow
+import logging
+logger = logging.getLogger(__name__)
+logger.debug(f"This line is important for DAG discovery because the *airflow module* "
+             f"shall be imported here. Otherwise it does not discover DAGs in this "
+             f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
-MAJOR = 2
+MAJOR = 5
 CATEGORY = "ml"
 
 EXPERIMENT_NAME = "PyCaret_pwdb"
 PWDB_FEATURE_STORE_NAME = 'fs_pwdb'
+
+REQUIREMENTS = ['pycaret', 'mlflow', 'tensorflow_hub']
 
 # Word-Embedding-AVG classifiers
 
@@ -36,8 +38,11 @@ classifiers_pipeline_dag = ClassifiersPipelineDag(
     model_training_pipeline=ModelTraining(feature_store_name=PWDB_FEATURE_STORE_NAME,
                                           experiment_name=EXPERIMENT_NAME))
 
+
+
 # dag = DagFactory(
 #     dag_pipeline=classifiers_pipeline_dag, dag_name=classifier_dag_name).create_dag(
+#     requirements=REQUIREMENTS,
 #     schedule_interval="@once",
 #     max_active_runs=1, concurrency=1)
 
