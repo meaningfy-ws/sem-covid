@@ -8,10 +8,11 @@ from sem_covid.services.store_registry import store_registry
 es_store = store_registry.es_index_store()
 
 
-TEXT_COLUMNS = ["title", "content", "doc_source", "country", "pwdb_category",
+TEXT_COLUMNS = ["title", "content", "content_cleaned_topic_modeling", "doc_source", "country", "pwdb_category",
                 "pwdb_type_of_measure"]
-ARRAY_COLUMNS = ["pwdb_target_group_l1", "pwdb_funding", "pwdb_actors", "document_embeddings",
-                 "topic_embeddings"] + SPECIFIC_DATASET_COLUMNS
+ARRAY_COLUMNS = ["pwdb_target_group_l1", "pwdb_funding", "pwdb_actors",
+                 "document_embeddings_use", "document_embeddings_eurlex_bert",
+                 "topic_embeddings_eurlex_bert"] + SPECIFIC_DATASET_COLUMNS
 
 UNIFIED_DATASET_COLUMNS = COMMON_DATASET_COLUMNS + SPECIFIC_DATASET_COLUMNS
 
