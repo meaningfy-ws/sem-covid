@@ -70,7 +70,7 @@ class StoreRegistry(StoreRegistryABC):
         """
         es_pandas_client = es_pandas(config.ELASTICSEARCH_HOST_NAME,
                                      http_auth=(config.ELASTICSEARCH_USERNAME, config.ELASTICSEARCH_PASSWORD),
-                                     port=config.ELASTICSEARCH_PORT, http_compress=True)
+                                     port=config.ELASTICSEARCH_PORT, http_compress=True, timeout=3600)
         return ESIndexStore(es_pandas_client)
 
     def minio_object_store(self, minio_bucket: str) -> ObjectStoreABC:

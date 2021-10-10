@@ -5,22 +5,26 @@
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
 
+
+import spacy
+nlp = spacy.load('en_core_web_sm')
+
 from sem_covid import config
 import numpy as np
-from langdetect import detect, detect_langs, DetectorFactory
+from langdetect import detect_langs, DetectorFactory
 
 import pandas as pd
 from typing import List
 from sem_covid.adapters.abstract_store import IndexStoreABC
 
-from sem_covid.adapters.abstract_model import SentenceEmbeddingModelABC
+from sem_covid.adapters.abstract_model import SentenceEmbeddingModelABC, DocumentEmbeddingModelABC
 
 DetectorFactory.seed = 0
 
 TARGET_GROUPS_L1 = ["businesses", "workers", "citizens"]
-COMMON_DATASET_COLUMNS = ["title", "content", "date", "doc_source", "country", "pwdb_category",
-                          "pwdb_target_group_l1", "pwdb_funding", "pwdb_type_of_measure",
-                          "pwdb_actors", "document_embeddings", "topic_embeddings"]
+COMMON_DATASET_COLUMNS = ["title", "content", "content_cleaned_topic_modeling", "date", "doc_source", "country",
+                          "pwdb_category", "pwdb_target_group_l1", "pwdb_funding", "pwdb_type_of_measure", "pwdb_actors",
+                          "document_embeddings_use", "document_embeddings_eurlex_bert", "topic_embeddings_eurlex_bert"]
 
 SPECIFIC_DATASET_COLUMNS = ["eu_cellar_subject_matter_labels", "eu_cellar_resource_type_labels",
                             "eu_cellar_directory_code_labels",
@@ -29,12 +33,15 @@ SPECIFIC_DATASET_COLUMNS = ["eu_cellar_subject_matter_labels", "eu_cellar_resour
                             "ireland_campaign", "ireland_page_type", "eu_timeline_topic"]
 
 CONTENT_COLUMN_NAME = 'content'
+CONTENT_CLEANED_TOPIC_MODELING_COLUMN_NAME = 'content_cleaned_topic_modeling'
 TITLE_COLUMN_NAME = 'title'
 DATE_COLUMN_NAME = 'date'
 DOCUMENT_SOURCE_COLUMN_NAME = 'doc_source'
 COUNTRY_COLUMN_NAME = 'country'
 PWDB_ACTORS_COLUMN_NAME = "pwdb_actors"
-DOCUMENT_EMBEDDINGS_COLUMN_NAME = "document_embeddings"
+DOCUMENT_EMBEDDINGS_USE_COLUMN_NAME = "document_embeddings_use"
+DOCUMENT_EMBEDDINGS_EURLEX_BERT_COLUMN_NAME = "document_embeddings_eurlex_bert"
+TOPIC_EMBEDDINGS_EURLEX_BERT_COLUMN_NAME = "topic_embeddings_eurlex_bert"
 
 # PWDB CONSTANTS
 PWDB_CONTENT_COLUMNS = ['title', 'background_info_description', 'content_of_measure_description',
@@ -98,13 +105,6 @@ def make_target_group_l1_column(dataset: pd.DataFrame):
                                                                       axis=1).apply(lambda x: x.split())
 
 
-def make_topic_embeddings_column(dataset: pd.DataFrame):
-    """
-    This function created the topic_embeddings column for a dataset
-    """
-    dataset["topic_embeddings"] = [[0] * 50] * len(dataset)
-
-
 def create_new_column_with_defined_value(dataset: pd.DataFrame, column_name: str, value=None, empty_array=False):
     """
     This function create a column in the dataset with a defined value or with an empty list as value
@@ -129,13 +129,33 @@ def replace_non_english_content(text):
             return None
 
 
+def clean_txt_topic_modeling(raw_txt: str) -> str:
+    """
+    This function prepares the text for the topic modeling exercise.
+    """
+    cleansed_tokens = []
+
+    lowered_txt = raw_txt.lower()
+
+    doc = nlp(lowered_txt)
+
+    for token in doc:
+        if not (token.is_stop or token.is_punct or token.is_currency or
+                token.like_num or token.like_url or token.like_email):
+            cleansed_tokens.append(token.lemma_)
+
+    return ' '.join(cleansed_tokens)
+
+
 class DefaultDatasetStructureTransformer:
     """
     This class will transform a dataset structure
     """
 
     def __init__(self, dataset: pd.DataFrame,
-                 emb_model: SentenceEmbeddingModelABC,
+                 emb_model_1: SentenceEmbeddingModelABC,
+                 emb_model_2: DocumentEmbeddingModelABC,
+                 topic_model,
                  content_columns: List[str],
                  doc_source: str,
                  rename_columns_mapping: dict,
@@ -150,7 +170,9 @@ class DefaultDatasetStructureTransformer:
         self.pwdb_actors = pwdb_actors
         self.dataset_specific_columns = dataset_specific_columns
         self.rename_columns_mapping = rename_columns_mapping
-        self.emb_model = emb_model
+        self.emb_model_1 = emb_model_1
+        self.emb_model_2 = emb_model_2
+        self.topic_model=topic_model
 
     def create_columns(self):
         """
@@ -165,8 +187,19 @@ class DefaultDatasetStructureTransformer:
         if self.pwdb_actors:
             create_new_column_with_defined_value(self.dataset, PWDB_ACTORS_COLUMN_NAME, self.pwdb_actors)
         make_target_group_l1_column(self.dataset)
-        self.dataset[DOCUMENT_EMBEDDINGS_COLUMN_NAME] = self.emb_model.encode(self.dataset.content.values)
-        make_topic_embeddings_column(self.dataset)
+
+        self.dataset[DOCUMENT_EMBEDDINGS_USE_COLUMN_NAME] = self.emb_model_1.encode(
+            self.dataset[CONTENT_COLUMN_NAME].values)
+
+        self.dataset[CONTENT_CLEANED_TOPIC_MODELING_COLUMN_NAME] = self.dataset[CONTENT_COLUMN_NAME].apply(
+            clean_txt_topic_modeling)
+
+        self.dataset[DOCUMENT_EMBEDDINGS_EURLEX_BERT_COLUMN_NAME] = self.emb_model_2.encode(
+            self.dataset[CONTENT_CLEANED_TOPIC_MODELING_COLUMN_NAME].values)
+
+        self.dataset[TOPIC_EMBEDDINGS_EURLEX_BERT_COLUMN_NAME] = self.topic_model.transform(
+            documents=self.dataset[CONTENT_CLEANED_TOPIC_MODELING_COLUMN_NAME],
+            embeddings=np.array(list(self.dataset[DOCUMENT_EMBEDDINGS_EURLEX_BERT_COLUMN_NAME])))[1].tolist()
 
         for specific_column in SPECIFIC_DATASET_COLUMNS:
             create_new_column_with_defined_value(self.dataset, column_name=specific_column, empty_array=True)
@@ -199,11 +232,15 @@ class UnifiedDatasetPipeline:
     """
 
     def __init__(self, es_store: IndexStoreABC,
-                 emb_model: SentenceEmbeddingModelABC
+                 emb_model_1: SentenceEmbeddingModelABC,
+                 emb_model_2: DocumentEmbeddingModelABC,
+                 topic_model,
                  ):
         self.unified_dataset = pd.DataFrame()
         self.es_store = es_store
-        self.emb_model = emb_model
+        self.emb_model_1 = emb_model_1
+        self.emb_model_2 = emb_model_2
+        self.topic_model=topic_model
         self.pwdb_df = pd.DataFrame()
         self.eu_cellar_df = pd.DataFrame()
         self.eu_timeline_df = pd.DataFrame()
@@ -230,7 +267,9 @@ class UnifiedDatasetPipeline:
         """
         self.pwdb_df = DefaultDatasetStructureTransformer(
             dataset=self.pwdb_df,
-            emb_model=self.emb_model,
+            emb_model_1=self.emb_model_1,
+            emb_model_2=self.emb_model_2,
+            topic_model=self.topic_model,
             content_columns=PWDB_CONTENT_COLUMNS,
             doc_source=PWDB_DOC_SOURCE,
             rename_columns_mapping=PWDB_RENAME_COLUMNS_MAPPING,
@@ -238,7 +277,9 @@ class UnifiedDatasetPipeline:
         ).execute()
         self.eu_cellar_df = DefaultDatasetStructureTransformer(
             dataset=self.eu_cellar_df,
-            emb_model=self.emb_model,
+            emb_model_1=self.emb_model_1,
+            emb_model_2=self.emb_model_2,
+            topic_model=self.topic_model,
             content_columns=EU_CELLAR_CONTENT_COLUMNS,
             doc_source=EU_CELLAR_DOC_SOURCE,
             rename_columns_mapping=EU_CELLAR_RENAME_COLUMNS_MAPPING,
@@ -248,7 +289,9 @@ class UnifiedDatasetPipeline:
         ).execute()
         self.eu_timeline_df = DefaultDatasetStructureTransformer(
             dataset=self.eu_timeline_df,
-            emb_model=self.emb_model,
+            emb_model_1=self.emb_model_1,
+            emb_model_2=self.emb_model_2,
+            topic_model=self.topic_model,
             content_columns=EU_TIMELINE_CONTENT_COLUMNS,
             doc_source=EU_TIMELINE_DOC_SOURCE,
             rename_columns_mapping=EU_TIMELINE_RENAME_COLUMNS_MAPPING,
@@ -258,7 +301,9 @@ class UnifiedDatasetPipeline:
         ).execute()
         self.ir_timeline_df = DefaultDatasetStructureTransformer(
             dataset=self.ir_timeline_df,
-            emb_model=self.emb_model,
+            emb_model_1=self.emb_model_1,
+            emb_model_2=self.emb_model_2,
+            topic_model=self.topic_model,
             content_columns=IRELAND_TIMELINE_CONTENT_COLUMNS,
             doc_source=IRELAND_TIMELINE_DOC_SOURCE,
             rename_columns_mapping=IRELAND_TIMELINE_RENAME_COLUMNS_MAPPING,
