@@ -283,7 +283,7 @@ def menu_topics_differ():
         name_y = col2.selectbox('Name Y', analyze_columns)
         analyze_columns = [name_x, name_y]
     pwdb_column = 'top_topics'
-    top_k = st.slider('Top K column value', min_value=1, max_value=15, step=1, value=5)
+    top_k = st.slider('Top K topics', min_value=1, max_value=15, step=1, value=5)
 
     if st.button('Generate plot'):
         plot_df = pd.DataFrame(group_dataframe_rows(dataset, group_by, analyze_columns, pwdb_column, top_k)).T
