@@ -20,7 +20,7 @@ from sem_covid.services.store_registry import store_registry
 import plotly.express as px
 
 DATE_COLUMN_NAME = 'date'
-EMBEDDING_COLUMN_NAME = 'document_embeddings'
+EMBEDDING_COLUMN_NAME = 'document_embeddings_use'
 COUNTRY_COLUMN_NAME = 'country'
 PWDB_COLUMN_NAMES = ['pwdb_category', 'pwdb_funding', 'pwdb_type_of_measure',
                      'pwdb_actors', 'pwdb_target_group_l1', 'pwdb_target_group_l2']
@@ -253,17 +253,59 @@ def menu_sm_histogram():
         plot_sim_histogram(dataset, dataset_name_x, dataset_name_y, bins_step)
 
 
-def foo_calc(dataset: pd.DataFrame,
-             group_by: str,
-             column_values: List[str],
-             filter_field: str,
-             top_k: int
-             ):
+def group_dataframe_rows(dataset: pd.DataFrame,
+                         group_by: str,
+                         column_values: List[str],
+                         filter_field: str,
+                         top_k: int
+                         ):
     tmp_df = {}
     for column_value in column_values:
         df_x = pd.DataFrame(dataset[dataset[group_by] == column_value])
         tmp_df[column_value] = df_x[filter_field].explode().value_counts(normalize=True).nlargest(top_k)
     return tmp_df
+
+
+def menu_topics_differ():
+    top_k_topics = 5
+    dataset = pd.DataFrame(unified_df.copy())
+    dataset['top_topics'] = dataset['topic_embeddings_eurlex_bert'].apply(
+        lambda x: np.array(x).argsort()[-top_k_topics:][::-1])
+
+    radio1, radio2, radio3 = st.columns(3)
+    group_by = radio1.radio('Select group by:', ['country', 'doc_source'])
+    analyze_type = radio2.radio('Analyze:', ['pair', 'all'])
+    differ_type = radio3.radio('Differ type:', ['common', 'uncommon', 'all'])
+    analyze_columns = list(unique_everseen(unified_df[group_by].values))
+    if analyze_type == 'pair':
+        col1, col2 = st.columns(2)
+        name_x = col1.selectbox('Name X', analyze_columns)
+        name_y = col2.selectbox('Name Y', analyze_columns)
+        analyze_columns = [name_x, name_y]
+    pwdb_column = 'top_topics'
+    top_k = st.slider('Top K column value', min_value=1, max_value=15, step=1, value=5)
+
+    if st.button('Generate plot'):
+        plot_df = pd.DataFrame(group_dataframe_rows(dataset, group_by, analyze_columns, pwdb_column, top_k)).T
+        result_columns = plot_df.columns
+        if differ_type != 'all':
+            common_columns = plot_df.dropna(axis=1).columns
+            differ_columns = [column for column in plot_df.columns if column not in common_columns]
+            result_columns = common_columns if differ_type == 'common' else differ_columns
+        if len(result_columns) > 1:
+            fig = px.bar(plot_df, x=plot_df.index, y=result_columns,
+                         barmode='group',
+                         height=800, width=800, )
+            fig.update_layout(legend=dict(
+                orientation="h",
+                yanchor="top",
+                y=-0.15,
+                xanchor="left",
+                x=0
+            ))
+            st.plotly_chart(fig)
+        else:
+            st.write('No data')
 
 
 def menu_pwdb_columns_differ():
@@ -282,7 +324,7 @@ def menu_pwdb_columns_differ():
     top_k = st.slider('Top K column value', min_value=1, max_value=15, step=1, value=5)
 
     if st.button('Generate plot'):
-        plot_df = pd.DataFrame(foo_calc(dataset, group_by, analyze_columns, pwdb_column, top_k)).T
+        plot_df = pd.DataFrame(group_dataframe_rows(dataset, group_by, analyze_columns, pwdb_column, top_k)).T
         result_columns = plot_df.columns
         if differ_type != 'all':
             common_columns = plot_df.dropna(axis=1).columns
@@ -350,6 +392,7 @@ def main():
         'Semantic similarity between datasets': menu_sm_histogram,
         'PWDB columns differ': menu_pwdb_columns_differ,
         'PWDB columns evolution over time': menu_pwdb_columns_evolution,
+        'Topics differ': menu_topics_differ
     }
 
     st.sidebar.title('Navigation')
