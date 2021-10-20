@@ -4,6 +4,7 @@
 # Date:  20.10.2021
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
+
 import logging
 import airflow
 from sem_covid.adapters.dag.dag_factory import DagFactory
