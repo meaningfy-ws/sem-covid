@@ -4,12 +4,19 @@
 # Date:  20.10.2021
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
+import logging
+import airflow
 from sem_covid.adapters.dag.dag_factory import DagFactory
 from sem_covid.entrypoints import dag_name
 from sem_covid.entrypoints.notebooks.legal_radar.entrypoints.etl_dags.faiss_multi_indexing_pipeline import \
     FAISSMultipleIndexingPipeline
 from sem_covid.entrypoints.notebooks.legal_radar.entrypoints.etl_dags.variable_window_split_documents_pipeline import \
     VariableWindowSplitPipeline
+
+logger = logging.getLogger(__name__)
+logger.debug(f"This line is important for DAG discovery because the *airflow module* "
+             f"shall be imported here. Otherwise it does not discover DAGs in this "
+             f"module. Airflow version {airflow.__version__}")
 
 MINOR = 1
 MAJOR = 1
