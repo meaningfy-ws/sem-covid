@@ -16,6 +16,15 @@ To see the differences between the language genres of different data sources, na
 
 These models are based on the Word2Vec method of representation and are saved in files following the convention: `model**X**_ language_model.model` (where X can have the values 1,2 or 3).
 
+To load the models with Gensim library simply execute
+```
+from gensim.models import Word2Vec
+model = Word2Vec.load("word2vec.model")
+
+vector = model.wv['covid']  # get numpy vector of a word
+sims = model.wv.most_similar('covid', topn=10)  # get other similar words
+```
+
 ### **Source code**
 A separate pipeline has been created for language modeling, the pipeline is made through a class:
 - **LanguageModelPipeline** - this class creates a pipeline that trains the language model in a few predefined steps:
