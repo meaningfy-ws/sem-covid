@@ -19,7 +19,8 @@ from sem_covid.adapters.abstract_model import WordEmbeddingModelABC, SentenceEmb
     DocumentEmbeddingModelABC
 from sem_covid.adapters.embedding_models import SpacyTokenizerModel, BasicTokenizerModel, Word2VecEmbeddingModel, \
     AverageSentenceEmbeddingModel, TfIdfSentenceEmbeddingModel, UniversalSentenceEmbeddingModel, \
-    EurLexBertSentenceEmbeddingModel, TfIdfDocumentEmbeddingModel, SpacySentenceSplitterModel
+    EurLexBertSentenceEmbeddingModel, TfIdfDocumentEmbeddingModel, SpacySentenceSplitterModel, \
+    EurLexBertDocumentEmbeddingModel, MovingWindowTextSplitterModel
 from sem_covid.services.data_registry import LanguageModel
 
 BUSINESSES_CLASS_EXPERIMENT_ID = '12'
@@ -186,6 +187,10 @@ class EmbeddingModelRegistry(EmbeddingModelRegistryABC):
         return TfIdfDocumentEmbeddingModel(sent_emb_model=UniversalSentenceEmbeddingModel(),
                                            sent_splitter=SpacySentenceSplitterModel(spacy_nlp=self.nlp),
                                            top_k=10)
+
+    def doc2vec_eurlex_bert(self) -> DocumentEmbeddingModelABC:
+        return EurLexBertDocumentEmbeddingModel(text_splitter=MovingWindowTextSplitterModel(window_size=200,
+                                                                                            window_step=150))
 
 
 tokenizer_registry = TokenizerModelRegistry()

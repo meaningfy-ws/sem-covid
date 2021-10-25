@@ -6,6 +6,9 @@
 # Email: stefan.stratulat1997@gmail.com
 
 
+import torch
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 from typing import List
 from more_itertools import windowed
 import numpy as np
@@ -18,7 +21,7 @@ import re
 
 from sem_covid.services.sc_wrangling.sentences_ranker import textual_tfidf_ranker
 import tensorflow_hub as hub
-from transformers import AutoTokenizer, TFAutoModel
+from transformers import AutoTokenizer, TFAutoModel, AutoModel
 from tensorflow.python.ops.numpy_ops import np_config
 
 np_config.enable_numpy_behavior()
@@ -116,6 +119,50 @@ class WindowedTextSplitterModel(TextSplitterModelABC):
                      step=self.window_step)
         )
         return [' '.join(window) for window in windowed_texts]
+
+
+class MovingWindowTextSplitterModel(TextSplitterModelABC):
+    """
+            This class implements abstraction from TextSplitterModelABC,
+         the purpose of this class is to to divide the input text into smaller chunks.
+    """
+
+    def __init__(self, window_size: int, window_step: int):
+        """
+        :param window_size: number of words in each chunk
+        :param window_step: moving window step size (also expressed in number of words)
+        """
+        self.window_size = window_size
+        self.window_step = window_step
+
+    def split(self, text: str) -> List[str]:
+        """
+            This method aims to divide the input text into smaller chunks.
+        :param text: the text that should be divided
+        :return: a list of text chunks
+        """
+        chunks = []
+
+        splitted_text = text.split()
+        chunk = ' '.join(splitted_text[:self.window_size])
+
+        chunks.append(chunk)
+
+        if len(splitted_text) > self.window_size:
+
+            n = len(splitted_text)
+
+            nr_of_chunks = n // self.window_step
+
+            if n % self.window_step == 0:
+                nr_of_chunks = nr_of_chunks - 1
+
+            # start from the second chunk
+            for i in range(1, nr_of_chunks):
+                chunk = ' '.join(splitted_text[i * self.window_step:i * self.window_step + self.window_size])
+                chunks.append(chunk)
+
+        return chunks
 
 
 class SpacyTokenizerModel(TokenizerModelABC):
@@ -329,3 +376,68 @@ class TfIdfDocumentEmbeddingModel(DocumentEmbeddingModelABC):
                                                         top_k=self.top_k)
                            )
                 for document_sentences in map(self.sent_splitter.split, documents)]
+
+
+class EurLexBertDocumentEmbeddingModel(DocumentEmbeddingModelABC):
+    """
+        This class is a concrete implementation of the DocumentEmbeddingModelABC interface,
+         the purpose of this class is to calculate embeddings based on splitted documents.
+    """
+
+    def __init__(self, text_splitter: TextSplitterModelABC):
+        """
+        :param tokenizer: the tokenizer used by the below model
+        :param model: the model used for computing embeddings
+        :param text_splitter: a model for text splitting
+        """
+        self.tokenizer = AutoTokenizer.from_pretrained('nlpaueb/bert-base-uncased-eurlex')
+        self.model = AutoModel.from_pretrained("nlpaueb/bert-base-uncased-eurlex", output_hidden_states=True)
+        self.model = self.model.to(device)
+        self.text_splitter = text_splitter
+
+    def encode(self, documents: List[str]) -> List:
+        """
+            This method aims to generate an embedding for each document in the input list.
+        :param documents: list of documents on the basis of which document embeddings will be calculated
+        :return: a list of document embeddings
+        """
+        docs_splitted = []
+
+        for doc in documents:
+            docs_splitted.append(self.text_splitter.split(doc))
+
+        embeddings = []
+
+        for doc_splitted in docs_splitted:
+
+            tmp_embeddings = []
+
+            for chunk_of_doc in doc_splitted:
+
+                ids_ = self.tokenizer.encode(chunk_of_doc)
+                ids_ = torch.LongTensor(ids_)
+                ids_ = ids_.unsqueeze(0)
+                ids_ = ids_.to(device)
+
+                try:
+                    with torch.no_grad():
+                        out = self.model(input_ids=ids_)
+                # like this we are able to skip the problematic chunks
+                except:
+                    continue
+
+                hidden_states = out[2]
+
+                last_four_layers = [hidden_states[i] for i in (-1, -2, -3, -4)]
+
+                concat_hidden_states = torch.cat(tuple(last_four_layers), dim=-1)
+
+                tmp_embedding = torch.mean(concat_hidden_states, dim=1).squeeze().cpu().numpy()
+
+                tmp_embeddings.append(tmp_embedding)
+
+            embedding = np.mean(tmp_embeddings, axis=0)
+
+            embeddings.append(embedding)
+
+        return embeddings
