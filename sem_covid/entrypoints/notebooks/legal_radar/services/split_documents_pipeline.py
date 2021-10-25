@@ -5,6 +5,7 @@
 # Author: Stratulat Ștefan
 # Email: stefan.stratulat1997@gmail.com
 
+import sys
 import concurrent.futures
 import hashlib
 from typing import List
@@ -21,7 +22,9 @@ TEXT_PIECE = 'text_piece'
 DOCUMENT_ID_SOURCE = 'document_id_source'
 TEXT_PIECE_EMBEDDING = 'text_piece_embedding'
 
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.blank('en')
+nlp.add_pipe("sentencizer")
+nlp.max_length = sys.maxsize
 
 
 class WindowedSplitDocumentsPipeline:
@@ -59,6 +62,7 @@ class WindowedSplitDocumentsPipeline:
 
     def split_documents_and_store(self):
         emb_model = self.embedding_model_registry.sent2vec_universal_sent_encoding()
+
         def split_documents_worker(index, value, window_size, window_step):
             es_store = self.store_registry.es_index_store()
             sentences = [sent.text for sent in nlp(value).sents]
@@ -83,7 +87,7 @@ class WindowedSplitDocumentsPipeline:
         with concurrent.futures.ThreadPoolExecutor() as executor:
             futures = [executor.submit(split_documents_worker,
                                        index,
-                                       value[:1000000],
+                                       value,
                                        self.split_window_size,
                                        self.split_window_step
                                        )

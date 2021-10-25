@@ -8,14 +8,22 @@
 
 ## **Language models**
 
-To see the differences between different types of data sources, namely between legal data that are stored in ds_eu_cellar and media data that are stored in ds_eu_timeline, ds_pwdb, ds_ireland_timeline, 3 language models were involved, with **gensim** library help: 
+To see the differences between the language genres of different data sources, namely between legal genre in the ds_eu_cellar sub-dataset and journalistic genre in the ds_eu_timeline, ds_pwdb, ds_ireland_timeline sub-datasets, three language models were developed using the **gensim** library: 
 
-- M1 (language model 1) - is a language model driven on textual data from the ds_pwdb, ds_eu_timeline, ds_ireland_timeline datasets.
-- M2 (language model 2) - is a language model driven on textual data from the ds_eu_cellar dataset.
-- M3 (language model 3) - is a language model driven on textual data from the ds_pwdb, ds_eu_timeline, ds_ireland_timeline, ds_eu_cellar datasets.
+- M1 (language model 1) - is a journalistic genre language model driven on textual data from the ds_pwdb, ds_eu_timeline, ds_ireland_timeline datasets.
+- M2 (language model 2) - is a legal genre language model driven on textual data from the ds_eu_cellar dataset.
+- M3 (language model 3) - is a mixed language model driven on textual data from the ds_pwdb, ds_eu_timeline, ds_ireland_timeline, ds_eu_cellar datasets.
 
-Each model is a model driven type Word2Vec and was saved in a separate file named:
-- model**X**_ language_model.model (where X can have the values 1,2 or 3).
+These models are based on the Word2Vec method of representation and are saved in files following the convention: `model**X**_ language_model.model` (where X can have the values 1,2 or 3).
+
+To load the models with Gensim library simply execute
+```
+from gensim.models import Word2Vec
+model = Word2Vec.load("word2vec.model")
+
+vector = model.wv['covid']  # get numpy vector of a word
+sims = model.wv.most_similar('covid', topn=10)  # get other similar words
+```
 
 ### **Source code**
 A separate pipeline has been created for language modeling, the pipeline is made through a class:
