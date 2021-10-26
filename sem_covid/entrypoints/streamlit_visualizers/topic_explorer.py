@@ -35,6 +35,8 @@ COUNTRY_COLUMN_NAME = 'country'
 PWDB_COLUMN_NAMES = ['pwdb_category', 'pwdb_funding', 'pwdb_type_of_measure',
                      'pwdb_actors', 'pwdb_target_group_l1', 'pwdb_target_group_l2']
 
+COLUMN_FILTERS = PWDB_COLUMN_NAMES + [COUNTRY_COLUMN_NAME]
+
 COLORS = ['#001a33', '#cc0000', '#0072B2', '#996666', '#CC79A7', '#ff3333',
           '#00b300', '#ffff00', '#4d004d', '#99ccff', '#0073e6', '#b3b300']
 
@@ -99,9 +101,13 @@ def time_range_selector(selector_1, selector_2):
 
 
 def dataset_source_filter(dataset: pd.DataFrame) -> pd.DataFrame:
-    doc_sources = list(unique_everseen(unified_df.doc_source.values))
+    all_datasets = 'All datasets'
+    doc_sources = list(unique_everseen(unified_df.doc_source.values)) + [all_datasets]
     dataset_name = st.selectbox('Dataset name', doc_sources)
-    dataset = pd.DataFrame(dataset[dataset.doc_source == dataset_name].copy())
+    if dataset_name == all_datasets:
+        dataset = pd.DataFrame(dataset.copy())
+    else:
+        dataset = pd.DataFrame(dataset[dataset.doc_source == dataset_name].copy())
     return dataset
 
 
@@ -111,7 +117,7 @@ def dataset_filter(dataset: pd.DataFrame, time_range_filter: bool = True) -> pd.
     if use_filters:
         column_options = {
             pwdb_column_name: list(unique_everseen(dataset[pwdb_column_name].explode().dropna().values))
-            for pwdb_column_name in PWDB_COLUMN_NAMES
+            for pwdb_column_name in COLUMN_FILTERS
         }
         col1, col2 = st.columns(2)
         selected_column = col1.selectbox('Filter by column', list(column_options.keys()))
@@ -140,7 +146,7 @@ def dataset_multi_filter(dataset: pd.DataFrame, time_range_filter: bool = True,
     if use_filters:
         column_options = {
             pwdb_column_name: list(unique_everseen(dataset[pwdb_column_name].explode().dropna().values))
-            for pwdb_column_name in PWDB_COLUMN_NAMES
+            for pwdb_column_name in COLUMN_FILTERS
         }
         col1, col2 = st.columns(2)
         selected_column = col1.selectbox('Filter by column', list(column_options.keys()))
@@ -158,7 +164,7 @@ def dataset_multi_filter(dataset: pd.DataFrame, time_range_filter: bool = True,
     return result_dataset, selected_column, selected_column_values
 
 
-def visualize_evolution_of_topics(dataset, k):
+def visualize_evolution_of_topics(dataset, k, column_value):
     data_filtered_by_col_val = dataset
 
     top_k_topics = get_top_k_topics(data_filtered_by_col_val['topic'], k)
@@ -181,7 +187,7 @@ def visualize_evolution_of_topics(dataset, k):
         fig.add_trace(go.Scatter(x=trace_data['date'],
                                  y=trace_data['frequency'],
                                  mode='lines+markers',
-                                 marker_color=COLORS[index],
+                                 #marker_color=COLORS[index],
                                  showlegend=True,
                                  name=topic_label,
                                  hoverinfo='text',
@@ -189,7 +195,7 @@ def visualize_evolution_of_topics(dataset, k):
 
     fig.update_layout(
         yaxis_title='Frequency',
-        title={'text': '<b>Topics over Time',
+        title={'text': f'<b>Topics over Time for {column_value}',
                'y': .95,
                'x': 0.40,
                'xanchor': 'center',
@@ -216,177 +222,93 @@ def visualize_evolution_of_topics(dataset, k):
 
 def menu_topics_over_time():
     data = unified_df.copy()
-    number_of_topics = st.slider('Number of topics', min_value=1, max_value=10, step=1, value=1)
-    data_filtered = dataset_filter(data)
+    number_of_topics = st.slider('Number of topics', min_value=1, max_value=20, step=1, value=5)
+    data_filtered, column_filter, column_values = dataset_multi_filter(data)
     if st.button('Generate plot'):
-        fig = visualize_evolution_of_topics(data_filtered, number_of_topics)
-        st.plotly_chart(fig)
+        if column_filter:
+            for column_value in column_values:
+                tmp_df = data_filtered[column_filter].explode()
+                tmp_df = pd.DataFrame(
+                    data_filtered.loc[list(unique_everseen(tmp_df[tmp_df == column_value].index))].copy())
+                fig = visualize_evolution_of_topics(tmp_df, number_of_topics, column_value)
+                st.plotly_chart(fig)
+        else:
+            fig = visualize_evolution_of_topics(data_filtered, number_of_topics, "")
+            st.plotly_chart(fig)
 
 
 def menu_topics_exploration():
-    topic_visualisations = {'Default': lambda: topic_model.visualize_topics(top_n_topics=10, width=800, height=800),
-                            'BarChart': lambda: topic_model.visualize_barchart(top_n_topics=10, n_words=5, width=800,
-                                                                               height=800),
-                            'Hierarchy': lambda: topic_model.visualize_hierarchy(top_n_topics=10, width=800, height=800)
-                            }
+    topic_visualisations = {
+        'BarChart': lambda n_topics, n_words: topic_model.visualize_barchart(top_n_topics=n_topics, n_words=n_words,
+                                                                             width=800,
+                                                                             height=800),
+        '2D Plot representation ': lambda n_topics, n_words: topic_model.visualize_topics(top_n_topics=n_topics,
+                                                                                          width=800,
+                                                                                          height=800),
+        'Hierarchy': lambda n_topics, n_words: topic_model.visualize_hierarchy(top_n_topics=n_topics, width=800,
+                                                                               height=800)
+    }
     selected_type_plot = st.selectbox('Select topic visualisation', topic_visualisations.keys())
+    number_of_topics = st.slider('Number of topics', min_value=1, max_value=30, step=1, value=5)
+    number_of_words = st.slider('Number of words', min_value=1, max_value=30, step=1, value=5)
     if st.button('Generate plot'):
-        fig = topic_visualisations[selected_type_plot]()
+        fig = topic_visualisations[selected_type_plot](number_of_topics, number_of_words)
         st.plotly_chart(fig)
 
 
-def menu_non_temporal_comparison_of_country_pairs():
-    pass
+def group_dataframe_rows(dataset: pd.DataFrame,
+                         group_by: str,
+                         column_values: List[str],
+                         filter_field: str,
+                         top_k: int
+                         ):
+    tmp_df = {}
+    for column_value in column_values:
+        df_x = pd.DataFrame(dataset[dataset[group_by] == column_value])
+        tmp_df[column_value] = df_x[filter_field].explode().value_counts(normalize=True).nlargest(top_k)
+    return tmp_df
 
 
-def visualize_topic_intersection_matrix(dataset, first_country, second_country, k):
-    data = dataset.copy()
+def menu_topics_differ():
+    top_k_topics = 5
+    dataset = pd.DataFrame(unified_df.copy())
+    pwdb_column = 'topic'
 
-    topics_first_country = data[data[COUNTRY_COLUMN_NAME] == first_country]['topic']
-    topics_second_country = data[data[COUNTRY_COLUMN_NAME] == second_country]['topic']
+    radio1, radio2, radio3 = st.columns(3)
+    group_by = radio1.radio('Select group by:', ['country', 'doc_source'])
+    analyze_type = radio2.radio('Analyze:', ['pair', 'all'])
+    differ_type = radio3.radio('Differ type:', ['common', 'uncommon', 'all'])
+    analyze_columns = list(unique_everseen(unified_df[group_by].values))
+    if analyze_type == 'pair':
+        col1, col2 = st.columns(2)
+        name_x = col1.selectbox('Name X', analyze_columns)
+        name_y = col2.selectbox('Name Y', analyze_columns)
+        analyze_columns = [name_x, name_y]
 
-    topics_x = get_top_k_topics(topics_first_country, k)
-    topics_y = get_top_k_topics(topics_second_country, k)
+    top_k = st.slider('Top K topics', min_value=1, max_value=15, step=1, value=5)
 
-    nr_of_rows = len(topics_y)  # rows correspond to y-axis
-    nr_of_cols = len(topics_x)  # columns correspond to x-axis
-
-    intersection_matrix = np.zeros((nr_of_rows, nr_of_cols))
-
-    for i, topic in enumerate(topics_y):
-        if topic in topics_x:
-            j = topics_x.index(topic)
-            intersection_matrix[i, j] = 1
-
-    fig = px.imshow(intersection_matrix,
-                    labels=dict(
-                        x=first_country,
-                        y=second_country,
-                        color='Same topic'
-                    ),
-                    x=[get_topic_label(t) for t in topics_x],
-                    y=[get_topic_label(t) for t in topics_y],
-                    color_continuous_scale=[(0.00, 'rgb(230, 242, 255)'), (0.50, 'rgb(230, 242, 255)'),
-                                            (0.50, 'rgb(0, 0, 102)'), (1, 'rgb(0, 0, 102)')]
-                    )
-
-    fig.update_layout(
-        width=900,
-        height=700,
-        coloraxis_colorbar=dict(
-            title=f'<b>Intersection of topics',
-            tickvals=[0.25, 0.75],
-            ticktext=['No', 'Yes'],
-            len=0.25
-        )
-    )
-
-    fig.update_xaxes(
-        side='top',
-        tickmode='linear'
-    )
-
-    fig.update_yaxes(
-        tickmode='linear'
-    )
-
-    return fig
-
-
-def menu_topic_intersection():
-    dataset = unified_df.copy()
-    col1, col2, col3 = st.columns(3)
-    countries = list(unique_everseen(dataset[COUNTRY_COLUMN_NAME].values))
-    country_x = col1.selectbox('Country X', countries)
-    country_y = col2.selectbox('Country Y', countries)
-    number_of_topics = col3.slider('Number of topics', min_value=1, max_value=10, step=1, value=5)
-    dataset = dataset_filter(dataset)
     if st.button('Generate plot'):
-        fig = visualize_topic_intersection_matrix(dataset,
-                                                  country_x,
-                                                  country_y,
-                                                  k=number_of_topics)
-        st.plotly_chart(fig)
-
-
-def visualize_topic_difference_matrix(dataset, first_country, second_country, k):
-    data = dataset.copy()
-
-    topics_first_country = data[data[COUNTRY_COLUMN_NAME] == first_country]['topic']
-    topics_second_country = data[data[COUNTRY_COLUMN_NAME] == second_country]['topic']
-
-    top_k_topics_first_country = get_top_k_topics(topics_first_country, k)
-    top_k_topics_second_country = get_top_k_topics(topics_second_country, k)
-
-    topics_x = list(set(top_k_topics_first_country) - set(top_k_topics_second_country))
-    topics_y = list(set(top_k_topics_second_country) - set(top_k_topics_first_country))
-
-    nr_of_rows = len(topics_y)  # rows correspond to y-axis
-    nr_of_cols = len(topics_x)  # columns correspond to x-axis
-
-    diff_matrix = np.zeros((nr_of_rows, nr_of_cols))
-
-    indices_upper_triangle = np.triu_indices_from(diff_matrix, 1)
-    indices_lower_triangle = np.tril_indices_from(diff_matrix, -1)
-
-    diff_matrix[indices_upper_triangle] = 1
-    diff_matrix[indices_lower_triangle] = -1
-
-    fig = px.imshow(diff_matrix,
-                    labels=dict(
-                        x=first_country,
-                        y=second_country
-                    ),
-                    x=[get_topic_label(t) for t in topics_x],
-                    y=[get_topic_label(t) for t in topics_y],
-                    color_continuous_scale=[(0.00, 'rgb(255, 255, 30)'), (0.33, 'rgb(255, 255, 30)'),
-                                            (0.33, 'rgb(0, 0, 150)'), (0.66, 'rgb(0, 0, 150)'),
-                                            (0.66, 'rgb(150, 210, 255)'), (1, 'rgb(150, 210, 255)')]
-                    )
-
-    fig.update_layout(
-        width=900,
-        height=700,
-        coloraxis_colorbar=dict(
-            tickvals=[-0.66, 0, 0.66],
-            ticktext=['Topic present in second country',
-                      'Principal diagonal',
-                      'Topic present in first country'],
-            len=0.25
-        )
-    )
-
-    fig.update_xaxes(
-        side='top',
-        tickmode='linear'
-    )
-
-    fig.update_yaxes(
-        tickmode='linear'
-    )
-
-    fig.update_traces(
-        hovertemplate=None,
-        hoverinfo='skip'
-    )
-
-    return fig
-
-
-def menu_topic_difference():
-    dataset = unified_df.copy()
-    col1, col2, col3 = st.columns(3)
-    countries = list(unique_everseen(dataset[COUNTRY_COLUMN_NAME].values))
-    country_x = col1.selectbox('Country X', countries)
-    country_y = col2.selectbox('Country Y', countries)
-    number_of_topics = col3.slider('Number of topics', min_value=1, max_value=10, step=1, value=5)
-    dataset = dataset_filter(dataset)
-    if st.button('Generate plot'):
-        fig = visualize_topic_difference_matrix(dataset,
-                                                country_x,
-                                                country_y,
-                                                number_of_topics)
-        st.plotly_chart(fig)
+        plot_df = pd.DataFrame(group_dataframe_rows(dataset, group_by, analyze_columns, pwdb_column, top_k)).T
+        plot_df.columns = [get_topic_label(t) for t in plot_df.columns]
+        result_columns = plot_df.columns
+        if differ_type != 'all':
+            common_columns = plot_df.dropna(axis=1).columns
+            differ_columns = [column for column in plot_df.columns if column not in common_columns]
+            result_columns = common_columns if differ_type == 'common' else differ_columns
+        if len(result_columns) > 1:
+            fig = px.bar(plot_df, x=plot_df.index, y=result_columns,
+                         barmode='group',
+                         height=800, width=800, )
+            fig.update_layout(legend=dict(
+                orientation="h",
+                yanchor="top",
+                y=-0.15,
+                xanchor="left",
+                x=0
+            ))
+            st.plotly_chart(fig)
+        else:
+            st.write('No data')
 
 
 def visualize_distribution_of_topics(dataset, column_to_filter_by, column_values):
@@ -432,7 +354,7 @@ def visualize_distribution_of_topics(dataset, column_to_filter_by, column_values
 
     fig.update_layout(
         width=1250,
-        height=625,
+        height=800,
         title=dict(
             text='<b>Distribution of topics',
             y=.95,
@@ -461,28 +383,33 @@ def visualize_distribution_of_topics(dataset, column_to_filter_by, column_values
 
 def menu_topics_distribution():
     dataset = unified_df.copy()
-    dataset = dataset_source_filter(dataset)
-    dataset, column_filter, column_values = dataset_multi_filter(dataset, is_optional_filter=False)
-    if st.button('Generate plot'):
-        if column_filter and len(column_values):
-            fig = visualize_distribution_of_topics(dataset=dataset,
-                                                   column_to_filter_by=column_filter,
-                                                   column_values=column_values)
-            st.plotly_chart(fig)
-        else:
-            st.write('Select filter column values!')
+    use_filters = st.checkbox('Use filters')
+    if use_filters:
+        dataset = dataset_source_filter(dataset)
+        dataset, column_filter, column_values = dataset_multi_filter(dataset, is_optional_filter=False)
+        if st.button('Generate plot'):
+            if column_filter and len(column_values):
+                fig = visualize_distribution_of_topics(dataset=dataset,
+                                                       column_to_filter_by=column_filter,
+                                                       column_values=column_values)
+                st.plotly_chart(fig)
+            else:
+                st.write('Select filter column values!')
+    elif st.button('Generate plot'):
+        doc_sources = list(unique_everseen(unified_df.doc_source.values))
+        fig = visualize_distribution_of_topics(dataset=dataset,
+                                               column_to_filter_by=DOC_SOURCE,
+                                               column_values=doc_sources)
+        st.plotly_chart(fig)
 
 
 def main():
     navigation_pages = {
         'Topics over time [BQ9]': menu_topics_over_time,
         'Topics exploration [BQ4]': menu_topics_exploration,
-        #'Non-Temporal comparison of country pairs [BQ8]': menu_non_temporal_comparison_of_country_pairs,
-        'Topic intersection matrix for all countries (symmetric matrix) [BQ8]': menu_topic_intersection,
-        'Topic difference matrix for all countries (asymmetric matrix) [BQ8]': menu_topic_difference,
+        'Topics differ [BQ8]': menu_topics_differ,
         'Topics distribution [BQ1, BQ8]': menu_topics_distribution
     }
-
     st.sidebar.title('Navigation')
     selected_page = st.sidebar.radio('Go to', list(navigation_pages.keys()))
     next_page = navigation_pages[selected_page]
