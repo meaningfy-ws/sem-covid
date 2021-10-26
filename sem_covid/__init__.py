@@ -259,6 +259,10 @@ class ElasticSearchConfig:
     def ELASTICSEARCH_PASSWORD(self) -> str:
         return VaultAndEnvConfigResolver.config_resolve()
 
+    @property
+    def ELASTICSEARCH_TIMEOUT(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
 
 class VaultConfig:
     # Vault property
