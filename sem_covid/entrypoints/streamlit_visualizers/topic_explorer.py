@@ -46,10 +46,12 @@ BUCKET_NAME = 'mlflow'
 
 def load_data_in_cache():
     if not hasattr(st, 'easy_cache'):
+        st.write('Data loading...')
+        my_bar = st.progress(0)
         es_store = store_registry.es_index_store()
-        st.easy_cache = dict()
-        ds_unified = es_store.get_dataframe(
-            index_name=config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME)
+        my_bar.progress(5)
+        ds_unified = es_store.get_dataframe(index_name=config.UNIFIED_DATASET_ELASTIC_SEARCH_INDEX_NAME)
+        my_bar.progress(25)
         all_runs = mlflow.search_runs(
             experiment_ids=EXPERIMENT_ID
         )
@@ -58,13 +60,17 @@ def load_data_in_cache():
         best_run = all_runs.iloc[0]
         topic_model = store_registry.minio_feature_store(BUCKET_NAME).get_features(
             features_name=f'{EXPERIMENT_ID}/{best_run.run_id}/artifacts/model/model.pkl')
+        my_bar.progress(50)
         _, probabilities = topic_model.transform(documents=ds_unified[CONTENT_CLEANED_TOPIC_MODELING_COLUMN_NAME],
                                                  embeddings=np.array(
                                                      list(ds_unified[DOCUMENT_EMBEDDINGS_EURLEX_BERT_COLUMN_NAME])))
+        my_bar.progress(75)
         ds_unified['probabilities'] = list(probabilities)
         ds_unified['topic'] = ds_unified['probabilities'].apply(lambda x: np.argmax(x))
+        st.easy_cache = dict()
         st.easy_cache['topic_model'] = topic_model
         st.easy_cache['unified_df'] = ds_unified
+        my_bar.progress(100)
         st.write('Data cached!')
     return st.easy_cache
 
@@ -187,7 +193,7 @@ def visualize_evolution_of_topics(dataset, k, column_value):
         fig.add_trace(go.Scatter(x=trace_data['date'],
                                  y=trace_data['frequency'],
                                  mode='lines+markers',
-                                 #marker_color=COLORS[index],
+                                 # marker_color=COLORS[index],
                                  showlegend=True,
                                  name=topic_label,
                                  hoverinfo='text',
