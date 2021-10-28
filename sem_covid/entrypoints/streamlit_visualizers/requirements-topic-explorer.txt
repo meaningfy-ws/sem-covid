@@ -1,0 +1,15 @@
+streamlit==1.1.0
+plotly==4.14.2
+scikit-learn==1.0.1
+python-dotenv==0.19.1
+hvac==0.11.2
+es-pandas==0.0.21
+progressbar2==3.55.0
+elasticsearch==7.15.1
+minio==7.1.1
+SPARQLWrapper==1.8.5
+py-singleton==1.0.0
+mlflow==1.21.0
+bertopic==0.9.3
+numpy==1.20
+numba==0.53.1
