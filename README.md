@@ -49,6 +49,12 @@ This project covers the data extraction and preparation for the machine learning
 - [Readme](docs/language-models/README.md)
 ## Discovery WordGraph application
 - [Readme](docs/word-graph-app/README.md)
+## Topic model explorer application
+- [Readme](docs/topic-model-explorer-app/README.md)
+## Semantic similarity explorer application
+- [Readme](docs/semantic-similarity-explorer-app/README.md)
+## Topics explorer application
+- [Readme](docs/topic-explorer-app/README.md)
 ## Running the code
 
 The source code is organised to be executed as either [Jupiter Notebooks](https://jupyter.org/) or [Airflow DAGs](https://airflow.apache.org/). The notebooks comprises various exploratory exercises and are available in the ``/sem_covid/entrypoints/notebooks`` folder. The Airflow DAGs are production oriented and can be found in the ``sem_covid/entrypoints/etl_dags`` (the data related processes) and in the ``sem_covid/entrypoints/ml_dags`` (the machine learning processes).
