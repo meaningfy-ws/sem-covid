@@ -1,0 +1,33 @@
+prefixes:
+  ex: "http://example.com/"
+  sc: "http://srv.meaningfy.ws/"
+
+mappings:
+  text:
+    sources:
+      - ['data.json~jsonpath', '$.*']
+    s: http://example.com/$(index)
+    po:
+      - [a, dct:Text]
+      - [dct:date, $(date)]
+      - [dct:title, $(title)]
+      - [sc:content, $(content)]
+      - [sc:hash, $(index)]
+      - p: sc:belongsTo
+        o:
+            value: $(doc_source)
+            datatype: sc:Dataset
+            
+      - [dct:subject, $(pwdb_category)]
+      - [dct:subject, $(pwdb_category)]
+      - p: dct:spatial
+        o:
+            value: $(country)
+            datatype: at:Country
+  dataset:
+    sources:
+      - ['data.json~jsonpath', '$.*']
+    s: sc:Dataset
+    po:
+        - [a, dct:Dataset]
+        - []
