@@ -3,31 +3,62 @@ prefixes:
   sc: "http://srv.meaningfy.ws/"
 
 mappings:
-  text:
-    sources:
-      - ['data.json~jsonpath', '$.*']
-    s: http://example.com/$(index)
-    po:
-      - [a, dct:Text]
-      - [dct:date, $(date)]
-      - [dct:title, $(title)]
-      - [sc:content, $(content)]
-      - [sc:hash, $(index)]
-      - p: sc:belongsTo
-        o:
-            value: $(doc_source)
-            datatype: sc:Dataset
-            
-      - [dct:subject, $(pwdb_category)]
-      - [dct:subject, $(pwdb_category)]
-      - p: dct:spatial
-        o:
-            value: $(country)
-            datatype: at:Country
-  dataset:
-    sources:
-      - ['data.json~jsonpath', '$.*']
-    s: sc:Dataset
-    po:
-        - [a, dct:Dataset]
-        - []
+    text:
+        sources:
+          - ['data.json~jsonpath', '$.*']
+        s: http://example.com/$(index)
+        po:
+          - [a, dct:Text]
+          - [dct:date, $(date)]
+          - [dct:title, $(title)]
+          - [sc:content, $(content)]
+          - [sc:hash, $(index)]
+          - p: sc:belongsTo
+            o:
+                mapping: dataset
+                condition: 
+                    function: equal
+                    parameters:
+                    - [str1,$(doc_source),s]
+                    - [str2,$(title),o]
+                
+          - p: dct:subject
+            o:
+                mapping: pwdb_category
+                condition:
+                    function: equal
+                    parameters:
+                    - [str1,$(pwdb_category),s]
+                    - [str2,$(title),o]
+                    
+          - p: dct:spatial
+            o:
+                mapping: countries
+                condition:
+                    function: equal
+                    parameters:
+                    - [str1, $(country),s]
+                    - [str2, $(name),o]
+    dataset:
+        sources:
+          - ['dataset.json~jsonpath', '$.datasets[*]']
+        s: sc:$(title)
+        po:
+            - [a, dct:Dataset]
+            - [dct:author, $(author)]
+            - [dct:description, $(description)]
+            - [dct:title, $(title)]
+    pwdb_category:
+        sources:
+          - ['pwdb_category.json~jsonpath', "$.pwdb_category[*]"]
+        s: sc:PWDBCategory_$(id)
+        po:
+            - [a, sc:Category]
+            - [a, sc:PWDBCategory]
+            - [dct:title, $(title)]
+    countries:
+        sources:
+            - ['countries.json~jsonpath', "$.countries[*]"]
+        s: $(uri)
+        po:
+            - [sc:name, $(name)]
