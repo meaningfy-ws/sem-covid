@@ -1,6 +1,7 @@
 prefixes:
   ex: "http://example.com/"
   sc: "http://srv.meaningfy.ws/"
+  fn: http://example.com/idlab/function/
 
 mappings:
     text:
@@ -30,15 +31,71 @@ mappings:
                     parameters:
                     - [str1,$(pwdb_category),s]
                     - [str2,$(title),o]
-                    
+          - p: sc:typeOfMeasure
+            o:
+                mapping: pwdb_type_of_measure
+                condition:
+                    function: equal
+                    parameters:
+                    - [str1,$(pwdb_type_of_measure),s]
+                    - [str2,$(name),o]
+          - p: sc:actors
+            o:
+                mapping: pwdb_actors
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_actors),s]
+                    - [fn:str,$(name),o]
           - p: dct:spatial
             o:
-                mapping: countries
+                mapping: country
                 condition:
                     function: equal
                     parameters:
                     - [str1, $(country),s]
                     - [str2, $(name),o]
+          - p: sc:funding
+            o:
+                mapping: pwdb_funding
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_funding),s]
+                    - [fn:str,$(name),o]
+          - p: sc:targetGroup
+            o:
+                mapping: pwdb_target_group_l1
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_target_group_l1),s]
+                    - [fn:str,$(name),o]
+          - p: sc:targetGroup
+            o:
+                mapping: pwdb_target_group_l2
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_target_group_l2),s]
+                    - [fn:str,$(name),o]
+          - p: dct:subject
+            o:
+                mapping: ireland_keyword
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(ireland_keyword),s]
+                    - [fn:str,$(name),o]
+          - p: dct:subject
+            o:
+                mapping: eu_timeline_topic
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_timeline_topic),s]
+                    - [fn:str,$(name),o]                    
+    
     dataset:
         sources:
           - ['dataset.json~jsonpath', '$.datasets[*]']
@@ -56,9 +113,55 @@ mappings:
             - [a, sc:Category]
             - [a, sc:PWDBCategory]
             - [dct:title, $(title)]
-    countries:
+    pwdb_funding:
         sources:
-            - ['countries.json~jsonpath', "$.countries[*]"]
+          - ['pwdb_funding.json~jsonpath', "$.pwdb_funding[*]"]
+        s: sc:PWDBFunding_$(uri)
+        po:
+            - [a, sc:PWDBFunding]
+            - [dct:title, $(name)]
+    country:
+        sources:
+            - ['country.json~jsonpath', "$.country[*]"]
         s: $(uri)
         po:
             - [sc:name, $(name)]
+    pwdb_type_of_measure:
+        sources:
+            - ['pwdb_type_of_measure.json', "$.pwdb_type_of_measure[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    pwdb_actors:
+        sources:
+            - ['pwdb_actors.json', "$.pwdb_actors[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    pwdb_target_group_l1:
+        sources:
+            - ['pwdb_target_group_l1.json', "$.pwdb_target_group_l1[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    pwdb_target_group_l2:
+        sources:
+            - ['pwdb_target_group_l2.json', "$.pwdb_target_group_l2[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    eu_timeline_topic:
+        sources:
+            - ['eu_timeline_topic.json', "$.eu_timeline_topic[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    ireland_keyword:
+        sources:
+            - ['ireland_keyword.json', "$.ireland_keyword[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+          
+
+    

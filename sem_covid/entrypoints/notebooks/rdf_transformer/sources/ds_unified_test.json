@@ -1,0 +1,239 @@
+{
+    "0": {
+        "title": "COMMI",
+        "content": "COMMI",
+        "content_cleaned_topic_modeling": "commi",
+        "date": "2021-01-12",
+        "doc_source": "ds_eu_cellar",
+        "country": "European Union",
+        "pwdb_category": "Protection of workers, adaptation of workplace",
+        "pwdb_target_group_l1": [
+            "businesses"
+        ],
+        "pwdb_funding": [
+            "European Funds",
+            "National funds",
+            "Regional funds"
+        ],
+        "pwdb_type_of_measure": "Other initiatives or policies",
+        "pwdb_actors": [
+            "EU (Council, EC, EP)"
+        ],
+        "document_embeddings_use": [
+            -0.0453499891,
+            -0.0464983955,
+            0.0459674373,
+            -0.0079928488,
+            -0.0447068289
+        ],
+        "document_embeddings_eurlex_bert": [
+            -0.151635021,
+            0.1485943347,
+            0.4740561545,
+            -0.0600686297,
+            0.4258078635
+        ],
+        "topic_embeddings_eurlex_bert": [
+            0.008678869,
+            0.0058465321,
+            0.0039080849,
+            0.0024686646,
+            0.001512011
+        ],
+        "eu_cellar_subject_matter_labels": [
+            "External relations",
+            "Information and verification",
+            "Transport"
+        ],
+        "eu_cellar_resource_type_labels": [
+            "Staff working document"
+        ],
+        "eu_cellar_directory_code_labels": [],
+        "eu_cellar_author_labels": [
+            "Directorate-General for Migration and Home Affairs",
+            "European Commission"
+        ],
+        "pwdb_target_group_l2": [],
+        "ireland_keyword": [],
+        "ireland_department_data": [],
+        "ireland_campaign": [],
+        "ireland_page_type": [],
+        "eu_timeline_topic": [],
+        "index": 0
+    },
+    "1": {
+        "title": "Regul",
+        "content": "Regul",
+        "content_cleaned_topic_modeling": "regul",
+        "date": "2021-02-16",
+        "doc_source": "ds_eu_cellar",
+        "country": "European Union",
+        "pwdb_category": "Ensuring business continuity and support for essential services",
+        "pwdb_target_group_l1": [
+            "workers"
+        ],
+        "pwdb_funding": [
+            "No special funding required"
+        ],
+        "pwdb_type_of_measure": "Legislations or other statutory regulations",
+        "pwdb_actors": [
+            "EU (Council, EC, EP)"
+        ],
+        "document_embeddings_use": [
+            0.0474108867,
+            -0.0474107862,
+            -0.0471795574,
+            0.0068122754,
+            -0.0474108867
+        ],
+        "document_embeddings_eurlex_bert": [
+            -0.1007091999,
+            0.1460110992,
+            0.603488028,
+            -0.119177483,
+            0.3878799379
+        ],
+        "topic_embeddings_eurlex_bert": [
+            0.0200584631,
+            0.0188428586,
+            0.0083545988,
+            0.0051069981,
+            0.0030908172
+        ],
+        "eu_cellar_subject_matter_labels": [
+            "Approximation of laws",
+            "Technical barriers",
+            "Transport"
+        ],
+        "eu_cellar_resource_type_labels": [
+            "Regulation"
+        ],
+        "eu_cellar_directory_code_labels": [],
+        "eu_cellar_author_labels": [
+            "Council of the European Union",
+            "European Parliament"
+        ],
+        "pwdb_target_group_l2": [],
+        "ireland_keyword": [],
+        "ireland_department_data": [],
+        "ireland_campaign": [],
+        "ireland_page_type": [],
+        "eu_timeline_topic": [],
+        "index": 1
+    },
+    "2": {
+        "title": "COMMU",
+        "content": "COMMU",
+        "content_cleaned_topic_modeling": "commu",
+        "date": "2021-02-03",
+        "doc_source": "ds_eu_cellar",
+        "country": "European Union",
+        "pwdb_category": "Reorientation of business activities",
+        "pwdb_target_group_l1": [],
+        "pwdb_funding": [
+            "European Funds",
+            "Regional funds"
+        ],
+        "pwdb_type_of_measure": "Company practices",
+        "pwdb_actors": [
+            "EU (Council, EC, EP)"
+        ],
+        "document_embeddings_use": [
+            -0.0497896485,
+            -0.0494676903,
+            0.0494333059,
+            -0.0483971015,
+            -0.0499703884
+        ],
+        "document_embeddings_eurlex_bert": [
+            -0.1843583733,
+            0.1037103906,
+            0.325429529,
+            -0.193794176,
+            0.425210923
+        ],
+        "topic_embeddings_eurlex_bert": [
+            0.0107628492,
+            0.0072449873,
+            0.0048215112,
+            0.0030382936,
+            0.0018591905
+        ],
+        "eu_cellar_subject_matter_labels": [
+            "Public health"
+        ],
+        "eu_cellar_resource_type_labels": [
+            "Communication"
+        ],
+        "eu_cellar_directory_code_labels": [],
+        "eu_cellar_author_labels": [
+            "Directorate-General for Health and Food Safety",
+            "European Commission"
+        ],
+        "pwdb_target_group_l2": [],
+        "ireland_keyword": [],
+        "ireland_department_data": [],
+        "ireland_campaign": [],
+        "ireland_page_type": [],
+        "eu_timeline_topic": [],
+        "index": 2
+    },
+    "3": {
+        "title": "Europ",
+        "content": "Europ",
+        "content_cleaned_topic_modeling": "europ",
+        "date": "2020-05-15",
+        "doc_source": "ds_eu_cellar",
+        "country": "European Union",
+        "pwdb_category": "Promoting the economic, labour market and social recovery",
+        "pwdb_target_group_l1": [],
+        "pwdb_funding": [
+            "European Funds",
+            "National funds",
+            "Regional funds"
+        ],
+        "pwdb_type_of_measure": "Legislations or other statutory regulations",
+        "pwdb_actors": [
+            "EU (Council, EC, EP)"
+        ],
+        "document_embeddings_use": [
+            -0.0503380559,
+            -0.0517129488,
+            0.0115160365,
+            -0.0058885422,
+            -0.0472465754
+        ],
+        "document_embeddings_eurlex_bert": [
+            -0.1732776463,
+            -0.0359608233,
+            0.5692273974,
+            -0.0389803834,
+            0.245136708
+        ],
+        "topic_embeddings_eurlex_bert": [
+            0.0321475214,
+            0.046970879,
+            0.0127758874,
+            0.0076823966,
+            0.0046235945
+        ],
+        "eu_cellar_subject_matter_labels": [
+            "Budget",
+            "Financial provisions"
+        ],
+        "eu_cellar_resource_type_labels": [
+            "Resolution"
+        ],
+        "eu_cellar_directory_code_labels": [],
+        "eu_cellar_author_labels": [
+            "European Parliament"
+        ],
+        "pwdb_target_group_l2": [],
+        "ireland_keyword": [],
+        "ireland_department_data": [],
+        "ireland_campaign": [],
+        "ireland_page_type": [],
+        "eu_timeline_topic": [],
+        "index": 3
+    }
+}

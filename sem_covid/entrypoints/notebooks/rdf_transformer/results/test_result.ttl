@@ -1,0 +1,9 @@
+<http://example.com/John> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Person>.
+<http://example.com/John> <http://example.com/firstname> "John".
+<http://example.com/John> <http://example.com/lastname> "Doe".
+<http://example.com/Jane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Person>.
+<http://example.com/Jane> <http://example.com/firstname> "Jane".
+<http://example.com/Jane> <http://example.com/lastname> "Smith".
+<http://example.com/Sarah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Person>.
+<http://example.com/Sarah> <http://example.com/firstname> "Sarah".
+<http://example.com/Sarah> <http://example.com/lastname> "Bladinck".
