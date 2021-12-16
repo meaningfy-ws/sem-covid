@@ -112,7 +112,7 @@ mappings:
         po:
             - [a, sc:Category]
             - [a, sc:PWDBCategory]
-            - [dct:title, $(title)]
+            - [dct:title, $(name)]
     pwdb_funding:
         sources:
           - ['pwdb_funding.json~jsonpath', "$.pwdb_funding[*]"]
