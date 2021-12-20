@@ -1,1 +1,268 @@
-{"eu_cellar_resource_type_labels": [{"uri": "http://publications.europa.eu/resource/authority/resource-type/BUDGET_DRAFT_SUPPL_AMEND", "name": "Draft supplementary and amending budget"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_REG", "name": "Proposal for a regulation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/REG_DEL", "name": "Delegated regulation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/CONCL", "name": "Council conclusions"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_DEC_IMPL", "name": "Proposal for an implementing decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/BUDGET_SUPPL_AMEND", "name": "Supplementary and amending budget"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/COMMUNIC_POSIT", "name": "Communication concerning the position of the Council"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_DIR", "name": "Proposal for a directive"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_RECO", "name": "Proposal for a recommendation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/AMEND_PROP_DEC", "name": "Amended proposal for a decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/OPIN_ADDIT", "name": "Additional opinion"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS_SUM", "name": "Summary of impact assessment"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/FC_SUM_EXE", "name": "Executive summary of the fitness check"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/CORRIGENDUM", "name": "Corrigendum"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/RECRUIT", "name": "Recruitment"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_ADOPT_INTERNATION", "name": "Decision adopted by bodies created by international agreements"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_IMPL", "name": "Implementing decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/OWNINI_RES", "name": "Own-initiative resolution"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/REPORT_ANNUAL", "name": "Annual report"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DIR_DEL", "name": "Delegated directive"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/OPIN", "name": "Opinion"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_DEC", "name": "Proposal for a decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PAPER_GREEN", "name": "Green Paper"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/SWD", "name": "Staff working document"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/OWNINI_OPIN", "name": "Own-initiative opinion"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/REG_IMPL", "name": "Implementing regulation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DECLAR", "name": "Declaration"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS", "name": "Impact assessment"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/AGREE_INTERNATION", "name": "International agreement"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/JOINT_COMMUNIC", "name": "Joint communication"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/ANNOUNC", "name": "Announcements"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DIR", "name": "Directive"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/EVL", "name": "Evaluation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/REPORT", "name": "Report"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/COMMUNIC", "name": "Communication"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/ADOPT_TEXT", "name": "Texts adopted"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/ROADMAP", "name": "Roadmap"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/EVL_SUM_EXE", "name": "Executive summary of the evaluation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/AMEND_PROP_REG", "name": "Amended proposal for a regulation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/OPIN_EXPLOR", "name": "Exploratory opinion"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/REG_IMPL_DRAFT", "name": "Draft implementing regulation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/RES", "name": "Resolution"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS_INCEP", "name": "Inception impact assessment"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_DEL", "name": "Delegated decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/ROADMAP_EFC", "name": "Evaluation roadmap"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PAPER_WHITE", "name": "White Paper"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/NOTICE", "name": "Notice"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/GUIDELINE", "name": "Guideline"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/RECO_DEC", "name": "Recommendation for a decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/INFO_JUDICIAL", "name": "Judicial information"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_REG_IMPL", "name": "Proposal for an implementing regulation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/NOTIF", "name": "Notification"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/POSIT", "name": "Position"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/FC", "name": "Fitness check"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/STAT_REASON", "name": "Statement of reasons"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_IMPL_DRAFT", "name": "Draft implementing decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/DEC", "name": "Decision"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/ADD", "name": "Addendum"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/JOINT_REPORT", "name": "Joint report"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/SYNOPSIS_REPORT_CONSULT", "name": "Synopsis report of the public consultation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/STAT", "name": "Statement"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/RECO_RECO", "name": "Recommendation for a recommendation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/REG", "name": "Regulation"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/SUM", "name": "Summary"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/RES_LEGIS", "name": "Legislative resolution"}, {"uri": "http://publications.europa.eu/resource/authority/resource-type/RECO", "name": "Recommendation"}]}
+{
+    "eu_cellar_resource_type_labels": [
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/BUDGET_DRAFT_SUPPL_AMEND",
+            "name": "Draft supplementary and amending budget"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_REG",
+            "name": "Proposal for a regulation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/REG_DEL",
+            "name": "Delegated regulation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/CONCL",
+            "name": "Council conclusions"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_DEC_IMPL",
+            "name": "Proposal for an implementing decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/BUDGET_SUPPL_AMEND",
+            "name": "Supplementary and amending budget"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/COMMUNIC_POSIT",
+            "name": "Communication concerning the position of the Council"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_DIR",
+            "name": "Proposal for a directive"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_RECO",
+            "name": "Proposal for a recommendation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/AMEND_PROP_DEC",
+            "name": "Amended proposal for a decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/OPIN_ADDIT",
+            "name": "Additional opinion"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS_SUM",
+            "name": "Summary of impact assessment"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/FC_SUM_EXE",
+            "name": "Executive summary of the fitness check"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/CORRIGENDUM",
+            "name": "Corrigendum"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/RECRUIT",
+            "name": "Recruitment"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_ADOPT_INTERNATION",
+            "name": "Decision adopted by bodies created by international agreements"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_IMPL",
+            "name": "Implementing decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/OWNINI_RES",
+            "name": "Own-initiative resolution"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/REPORT_ANNUAL",
+            "name": "Annual report"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DIR_DEL",
+            "name": "Delegated directive"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/OPIN",
+            "name": "Opinion"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_DEC",
+            "name": "Proposal for a decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PAPER_GREEN",
+            "name": "Green Paper"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/SWD",
+            "name": "Staff working document"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/OWNINI_OPIN",
+            "name": "Own-initiative opinion"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/REG_IMPL",
+            "name": "Implementing regulation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DECLAR",
+            "name": "Declaration"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS",
+            "name": "Impact assessment"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/AGREE_INTERNATION",
+            "name": "International agreement"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/JOINT_COMMUNIC",
+            "name": "Joint communication"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/ANNOUNC",
+            "name": "Announcements"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DIR",
+            "name": "Directive"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/EVL",
+            "name": "Evaluation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/REPORT",
+            "name": "Report"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/COMMUNIC",
+            "name": "Communication"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/ADOPT_TEXT",
+            "name": "Texts adopted"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/ROADMAP",
+            "name": "Roadmap"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/EVL_SUM_EXE",
+            "name": "Executive summary of the evaluation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/AMEND_PROP_REG",
+            "name": "Amended proposal for a regulation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/OPIN_EXPLOR",
+            "name": "Exploratory opinion"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/REG_IMPL_DRAFT",
+            "name": "Draft implementing regulation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/RES",
+            "name": "Resolution"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS_INCEP",
+            "name": "Inception impact assessment"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_DEL",
+            "name": "Delegated decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/ROADMAP_EFC",
+            "name": "Evaluation roadmap"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PAPER_WHITE",
+            "name": "White Paper"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/NOTICE",
+            "name": "Notice"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/GUIDELINE",
+            "name": "Guideline"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/RECO_DEC",
+            "name": "Recommendation for a decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/INFO_JUDICIAL",
+            "name": "Judicial information"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/PROP_REG_IMPL",
+            "name": "Proposal for an implementing regulation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/NOTIF",
+            "name": "Notification"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/POSIT",
+            "name": "Position"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/FC",
+            "name": "Fitness check"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/STAT_REASON",
+            "name": "Statement of reasons"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DEC_IMPL_DRAFT",
+            "name": "Draft implementing decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/DEC",
+            "name": "Decision"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/ADD",
+            "name": "Addendum"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/JOINT_REPORT",
+            "name": "Joint report"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/SYNOPSIS_REPORT_CONSULT",
+            "name": "Synopsis report of the public consultation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/STAT",
+            "name": "Statement"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/RECO_RECO",
+            "name": "Recommendation for a recommendation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/REG",
+            "name": "Regulation"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/SUM",
+            "name": "Summary"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/RES_LEGIS",
+            "name": "Legislative resolution"
+        },
+        {
+            "uri": "http://publications.europa.eu/resource/authority/resource-type/RECO",
+            "name": "Recommendation"
+        }
+    ]
+}

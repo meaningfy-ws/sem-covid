@@ -1,1 +1,52 @@
-{"pwdb_funding": [{"uri": "pwdb_funding:category_0", "name": "Local funds"}, {"uri": "pwdb_funding:category_1", "name": "Employers organisation"}, {"uri": "pwdb_funding:category_2", "name": "Other"}, {"uri": "pwdb_funding:category_3", "name": "Companies"}, {"uri": "pwdb_funding:category_4", "name": "Employees"}, {"uri": "pwdb_funding:category_5", "name": "Social partners jointly"}, {"uri": "pwdb_funding:category_6", "name": "National funds"}, {"uri": "pwdb_funding:category_7", "name": "Trade union"}, {"uri": "pwdb_funding:category_8", "name": "European Funds"}, {"uri": "pwdb_funding:category_9", "name": "Employer"}, {"uri": "pwdb_funding:category_10", "name": "Regional funds"}, {"uri": "pwdb_funding:category_11", "name": "No special funding required"}]}
+{
+    "pwdb_funding": [
+        {
+            "uri": "pwdb_funding:category_0",
+            "name": "Local funds"
+        },
+        {
+            "uri": "pwdb_funding:category_1",
+            "name": "Employers organisation"
+        },
+        {
+            "uri": "pwdb_funding:category_2",
+            "name": "Other"
+        },
+        {
+            "uri": "pwdb_funding:category_3",
+            "name": "Companies"
+        },
+        {
+            "uri": "pwdb_funding:category_4",
+            "name": "Employees"
+        },
+        {
+            "uri": "pwdb_funding:category_5",
+            "name": "Social partners jointly"
+        },
+        {
+            "uri": "pwdb_funding:category_6",
+            "name": "National funds"
+        },
+        {
+            "uri": "pwdb_funding:category_7",
+            "name": "Trade union"
+        },
+        {
+            "uri": "pwdb_funding:category_8",
+            "name": "European Funds"
+        },
+        {
+            "uri": "pwdb_funding:category_9",
+            "name": "Employer"
+        },
+        {
+            "uri": "pwdb_funding:category_10",
+            "name": "Regional funds"
+        },
+        {
+            "uri": "pwdb_funding:category_11",
+            "name": "No special funding required"
+        }
+    ]
+}
