@@ -1,9 +1,676 @@
-<http://example.com/John> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Person>.
-<http://example.com/John> <http://example.com/firstname> "John".
-<http://example.com/John> <http://example.com/lastname> "Doe".
-<http://example.com/Jane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Person>.
-<http://example.com/Jane> <http://example.com/firstname> "Jane".
-<http://example.com/Jane> <http://example.com/lastname> "Smith".
-<http://example.com/Sarah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Person>.
-<http://example.com/Sarah> <http://example.com/firstname> "Sarah".
-<http://example.com/Sarah> <http://example.com/lastname> "Bladinck".
+<http://srv.meaningfy.ws/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Text>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/date> "2021-01-12".
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "COMMI".
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/content> "COMMI".
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/hash> "0".
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/belongsTo> <http://srv.meaningfy.ws/ds_eu_cellar>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://srv.meaningfy.ws/pwdb_category/category_3>.
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/typeOfMeasure> <http://srv.meaningfy.ws/pwdb_type_of_measure/category_5>.
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/actors> <http://srv.meaningfy.ws/pwdb_actors/category_8>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/spatial> <http://publications.europa.eu/resource/authority/country/EUR>.
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_3>.
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_4>.
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_7>.
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/targetGroup> <http://srv.meaningfy.ws/pwdb_target_group_l1/category_2>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> <http://publications.europa.eu/resource/authority/corporate-body/HOME>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> <http://publications.europa.eu/resource/authority/corporate-body/COM>.
+<http://srv.meaningfy.ws/0> <http://srv.meaningfy.ws/resourceType> <http://publications.europa.eu/resource/authority/resource-type/SWD>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/EXT>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/TRAN>.
+<http://srv.meaningfy.ws/0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/INFO>.
+<http://srv.meaningfy.ws/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Text>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/date> "2021-02-16".
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Regul".
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/content> "Regul".
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/hash> "1".
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/belongsTo> <http://srv.meaningfy.ws/ds_eu_cellar>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://srv.meaningfy.ws/pwdb_category/category_4>.
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/typeOfMeasure> <http://srv.meaningfy.ws/pwdb_type_of_measure/category_0>.
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/actors> <http://srv.meaningfy.ws/pwdb_actors/category_8>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/spatial> <http://publications.europa.eu/resource/authority/country/EUR>.
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_6>.
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/targetGroup> <http://srv.meaningfy.ws/pwdb_target_group_l1/category_1>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> <http://publications.europa.eu/resource/authority/corporate-body/EP>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> <http://publications.europa.eu/resource/authority/corporate-body/CONSIL>.
+<http://srv.meaningfy.ws/1> <http://srv.meaningfy.ws/resourceType> <http://publications.europa.eu/resource/authority/resource-type/REG>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/ETEC>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/RAPL>.
+<http://srv.meaningfy.ws/1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/TRAN>.
+<http://srv.meaningfy.ws/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Text>.
+<http://srv.meaningfy.ws/2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/date> "2021-02-03".
+<http://srv.meaningfy.ws/2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "COMMU".
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/content> "COMMU".
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/hash> "2".
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/belongsTo> <http://srv.meaningfy.ws/ds_eu_cellar>.
+<http://srv.meaningfy.ws/2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://srv.meaningfy.ws/pwdb_category/category_5>.
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/typeOfMeasure> <http://srv.meaningfy.ws/pwdb_type_of_measure/category_2>.
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/actors> <http://srv.meaningfy.ws/pwdb_actors/category_8>.
+<http://srv.meaningfy.ws/2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/spatial> <http://publications.europa.eu/resource/authority/country/EUR>.
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_3>.
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_4>.
+<http://srv.meaningfy.ws/2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> <http://publications.europa.eu/resource/authority/corporate-body/COM>.
+<http://srv.meaningfy.ws/2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> <http://publications.europa.eu/resource/authority/corporate-body/SANTE>.
+<http://srv.meaningfy.ws/2> <http://srv.meaningfy.ws/resourceType> <http://publications.europa.eu/resource/authority/resource-type/COMMUNIC>.
+<http://srv.meaningfy.ws/2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/SANT>.
+<http://srv.meaningfy.ws/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Text>.
+<http://srv.meaningfy.ws/3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/date> "2020-05-15".
+<http://srv.meaningfy.ws/3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Europ".
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/content> "Europ".
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/hash> "3".
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/belongsTo> <http://srv.meaningfy.ws/ds_eu_cellar>.
+<http://srv.meaningfy.ws/3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://srv.meaningfy.ws/pwdb_category/category_7>.
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/typeOfMeasure> <http://srv.meaningfy.ws/pwdb_type_of_measure/category_0>.
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/actors> <http://srv.meaningfy.ws/pwdb_actors/category_8>.
+<http://srv.meaningfy.ws/3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/spatial> <http://publications.europa.eu/resource/authority/country/EUR>.
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_3>.
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_4>.
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/funding> <http://srv.meaningfy.ws/pwdb_funding/category_7>.
+<http://srv.meaningfy.ws/3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> <http://publications.europa.eu/resource/authority/corporate-body/EP>.
+<http://srv.meaningfy.ws/3> <http://srv.meaningfy.ws/resourceType> <http://publications.europa.eu/resource/authority/resource-type/RES>.
+<http://srv.meaningfy.ws/3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/FIN>.
+<http://srv.meaningfy.ws/3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject> <http://publications.europa.eu/resource/authority/subject-matter/BUDG>.
+<http://srv.meaningfy.ws/ds_pwdb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Dataset>.
+<http://srv.meaningfy.ws/ds_pwdb> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> "op".
+<http://srv.meaningfy.ws/ds_pwdb> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "pwdb description".
+<http://srv.meaningfy.ws/ds_pwdb> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "ds_pwdb".
+<http://srv.meaningfy.ws/ds_eu_cellar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Dataset>.
+<http://srv.meaningfy.ws/ds_eu_cellar> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> "cellar".
+<http://srv.meaningfy.ws/ds_eu_cellar> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "eu_cellar description".
+<http://srv.meaningfy.ws/ds_eu_cellar> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "ds_eu_cellar".
+<http://srv.meaningfy.ws/ds_ireland_timeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Dataset>.
+<http://srv.meaningfy.ws/ds_ireland_timeline> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> "irish_gov".
+<http://srv.meaningfy.ws/ds_ireland_timeline> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "ireland_timeline description".
+<http://srv.meaningfy.ws/ds_ireland_timeline> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "ds_ireland_timeline".
+<http://srv.meaningfy.ws/ds_eu_timeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Dataset>.
+<http://srv.meaningfy.ws/ds_eu_timeline> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/author> "eu_pub".
+<http://srv.meaningfy.ws/ds_eu_timeline> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "eu_timeline description".
+<http://srv.meaningfy.ws/ds_eu_timeline> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "ds_eu_timeline".
+<http://srv.meaningfy.ws/pwdb_category/category_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Measures to prevent social hardship".
+<http://srv.meaningfy.ws/pwdb_category/category_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Supporting businesses to get back to normal".
+<http://srv.meaningfy.ws/pwdb_category/category_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Employment protection and retention".
+<http://srv.meaningfy.ws/pwdb_category/category_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Protection of workers, adaptation of workplace".
+<http://srv.meaningfy.ws/pwdb_category/category_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_4> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Ensuring business continuity and support for essential services".
+<http://srv.meaningfy.ws/pwdb_category/category_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_5> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Reorientation of business activities".
+<http://srv.meaningfy.ws/pwdb_category/category_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_6> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Supporting businesses to stay afloat".
+<http://srv.meaningfy.ws/pwdb_category/category_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_7> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Promoting the economic, labour market and social recovery".
+<http://srv.meaningfy.ws/pwdb_category/category_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/Category>.
+<http://srv.meaningfy.ws/pwdb_category/category_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBCategory>.
+<http://srv.meaningfy.ws/pwdb_category/category_8> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Income protection beyond short-time work".
+<http://srv.meaningfy.ws/pwdb_funding/category_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_0> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Social partners jointly".
+<http://srv.meaningfy.ws/pwdb_funding/category_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_1> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Local funds".
+<http://srv.meaningfy.ws/pwdb_funding/category_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_2> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Trade union".
+<http://srv.meaningfy.ws/pwdb_funding/category_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_3> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "European Funds".
+<http://srv.meaningfy.ws/pwdb_funding/category_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_4> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Regional funds".
+<http://srv.meaningfy.ws/pwdb_funding/category_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_5> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Employer".
+<http://srv.meaningfy.ws/pwdb_funding/category_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_6> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "No special funding required".
+<http://srv.meaningfy.ws/pwdb_funding/category_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_7> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "National funds".
+<http://srv.meaningfy.ws/pwdb_funding/category_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_8> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Companies".
+<http://srv.meaningfy.ws/pwdb_funding/category_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_9> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Other".
+<http://srv.meaningfy.ws/pwdb_funding/category_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_10> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Employees".
+<http://srv.meaningfy.ws/pwdb_funding/category_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://srv.meaningfy.ws/PWDBFunding>.
+<http://srv.meaningfy.ws/pwdb_funding/category_11> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title> "Employers organisation".
+<http://publications.europa.eu/resource/authority/country/EUR> <http://srv.meaningfy.ws/name> "European Union".
+<http://publications.europa.eu/resource/authority/country/HRV> <http://srv.meaningfy.ws/name> "Croatia".
+<http://publications.europa.eu/resource/authority/country/BGR> <http://srv.meaningfy.ws/name> "Bulgaria".
+<http://publications.europa.eu/resource/authority/country/CZE> <http://srv.meaningfy.ws/name> "Czechia".
+<http://publications.europa.eu/resource/authority/country/SWE> <http://srv.meaningfy.ws/name> "Sweden".
+<http://publications.europa.eu/resource/authority/country/HUN> <http://srv.meaningfy.ws/name> "Hungary".
+<http://publications.europa.eu/resource/authority/country/SVN> <http://srv.meaningfy.ws/name> "Slovenia".
+<http://publications.europa.eu/resource/authority/country/IRL> <http://srv.meaningfy.ws/name> "Ireland".
+<http://publications.europa.eu/resource/authority/country/GRC> <http://srv.meaningfy.ws/name> "Greece".
+<http://publications.europa.eu/resource/authority/country/POL> <http://srv.meaningfy.ws/name> "Poland".
+<http://publications.europa.eu/resource/authority/country/FRA> <http://srv.meaningfy.ws/name> "France".
+<http://publications.europa.eu/resource/authority/country/CYP> <http://srv.meaningfy.ws/name> "Cyprus".
+<http://publications.europa.eu/resource/authority/country/AUT> <http://srv.meaningfy.ws/name> "Austria".
+<http://publications.europa.eu/resource/authority/country/FIN> <http://srv.meaningfy.ws/name> "Finland".
+<http://publications.europa.eu/resource/authority/country/DNK> <http://srv.meaningfy.ws/name> "Denmark".
+<http://publications.europa.eu/resource/authority/country/LTU> <http://srv.meaningfy.ws/name> "Lithuania".
+<http://publications.europa.eu/resource/authority/country/ROU> <http://srv.meaningfy.ws/name> "Romania".
+<http://publications.europa.eu/resource/authority/country/ESP> <http://srv.meaningfy.ws/name> "Spain".
+<http://publications.europa.eu/resource/authority/country/GBR> <http://srv.meaningfy.ws/name> "United Kingdom".
+<http://publications.europa.eu/resource/authority/country/BEL> <http://srv.meaningfy.ws/name> "Belgium".
+<http://publications.europa.eu/resource/authority/country/DEU> <http://srv.meaningfy.ws/name> "Germany".
+<http://publications.europa.eu/resource/authority/country/LUX> <http://srv.meaningfy.ws/name> "Luxembourg".
+<http://publications.europa.eu/resource/authority/country/NLD> <http://srv.meaningfy.ws/name> "Netherlands".
+<http://publications.europa.eu/resource/authority/country/MLT> <http://srv.meaningfy.ws/name> "Malta".
+<http://publications.europa.eu/resource/authority/country/SVK> <http://srv.meaningfy.ws/name> "Slovakia".
+<http://publications.europa.eu/resource/authority/country/PRT> <http://srv.meaningfy.ws/name> "Portugal".
+<http://publications.europa.eu/resource/authority/country/LVA> <http://srv.meaningfy.ws/name> "Latvia".
+<http://publications.europa.eu/resource/authority/country/EST> <http://srv.meaningfy.ws/name> "Estonia".
+<http://publications.europa.eu/resource/authority/country/NOR> <http://srv.meaningfy.ws/name> "Norway".
+<http://publications.europa.eu/resource/authority/country/ITA> <http://srv.meaningfy.ws/name> "Italy".
+<http://srv.meaningfy.ws/pwdb_type_of_measure/category_0> <http://srv.meaningfy.ws/name> "Legislations or other statutory regulations".
+<http://srv.meaningfy.ws/pwdb_type_of_measure/category_1> <http://srv.meaningfy.ws/name> "Bipartite collective agreements".
+<http://srv.meaningfy.ws/pwdb_type_of_measure/category_2> <http://srv.meaningfy.ws/name> "Company practices".
+<http://srv.meaningfy.ws/pwdb_type_of_measure/category_3> <http://srv.meaningfy.ws/name> "Tripartite agreements".
+<http://srv.meaningfy.ws/pwdb_type_of_measure/category_4> <http://srv.meaningfy.ws/name> "Non-binding recommendations or other texts".
+<http://srv.meaningfy.ws/pwdb_type_of_measure/category_5> <http://srv.meaningfy.ws/name> "Other initiatives or policies".
+<http://srv.meaningfy.ws/pwdb_actors/category_0> <http://srv.meaningfy.ws/name> "Social partners jointly".
+<http://srv.meaningfy.ws/pwdb_actors/category_1> <http://srv.meaningfy.ws/name> "Other social actors (e.g. NGOs)".
+<http://srv.meaningfy.ws/pwdb_actors/category_2> <http://srv.meaningfy.ws/name> "Local / regional government".
+<http://srv.meaningfy.ws/pwdb_actors/category_3> <http://srv.meaningfy.ws/name> "Social insurance".
+<http://srv.meaningfy.ws/pwdb_actors/category_4> <http://srv.meaningfy.ws/name> "EU level social partners".
+<http://srv.meaningfy.ws/pwdb_actors/category_5> <http://srv.meaningfy.ws/name> "National government".
+<http://srv.meaningfy.ws/pwdb_actors/category_6> <http://srv.meaningfy.ws/name> "Trade unions".
+<http://srv.meaningfy.ws/pwdb_actors/category_7> <http://srv.meaningfy.ws/name> "Public employment service".
+<http://srv.meaningfy.ws/pwdb_actors/category_8> <http://srv.meaningfy.ws/name> "EU (Council, EC, EP)".
+<http://srv.meaningfy.ws/pwdb_actors/category_9> <http://srv.meaningfy.ws/name> "Employers' organisations".
+<http://srv.meaningfy.ws/pwdb_actors/category_10> <http://srv.meaningfy.ws/name> "Company / Companies".
+<http://srv.meaningfy.ws/pwdb_actors/category_11> <http://srv.meaningfy.ws/name> "Public support service providers".
+<http://srv.meaningfy.ws/pwdb_target_group_l1/category_0> <http://srv.meaningfy.ws/name> "nan".
+<http://srv.meaningfy.ws/pwdb_target_group_l1/category_1> <http://srv.meaningfy.ws/name> "workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l1/category_2> <http://srv.meaningfy.ws/name> "businesses".
+<http://srv.meaningfy.ws/pwdb_target_group_l1/category_3> <http://srv.meaningfy.ws/name> "citizens".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_0> <http://srv.meaningfy.ws/name> "nan".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_1> <http://srv.meaningfy.ws/name> "Start-ups".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_2> <http://srv.meaningfy.ws/name> "Parents".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_3> <http://srv.meaningfy.ws/name> "Youth (18-25) in employment".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_4> <http://srv.meaningfy.ws/name> "Solo-self-employed".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_5> <http://srv.meaningfy.ws/name> "The COVID-19 risk group".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_6> <http://srv.meaningfy.ws/name> "Workers in non-standard forms of employment".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_7> <http://srv.meaningfy.ws/name> "One person or microenterprises".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_8> <http://srv.meaningfy.ws/name> "Single parents".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_9> <http://srv.meaningfy.ws/name> "Single parents in employment".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_10> <http://srv.meaningfy.ws/name> "Older citizens".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_11> <http://srv.meaningfy.ws/name> "Children (minors)".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_12> <http://srv.meaningfy.ws/name> "Women".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_13> <http://srv.meaningfy.ws/name> "SMEs".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_14> <http://srv.meaningfy.ws/name> "Disabled".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_15> <http://srv.meaningfy.ws/name> "Female workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_16> <http://srv.meaningfy.ws/name> "Other groups of workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_17> <http://srv.meaningfy.ws/name> "Undeclared workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_18> <http://srv.meaningfy.ws/name> "Larger corporations".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_19> <http://srv.meaningfy.ws/name> "Unemployed".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_20> <http://srv.meaningfy.ws/name> "Cross-border commuters".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_21> <http://srv.meaningfy.ws/name> "Employees in standard employment".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_22> <http://srv.meaningfy.ws/name> "Sector specific set of companies".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_23> <http://srv.meaningfy.ws/name> "Youth (18-25)".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_24> <http://srv.meaningfy.ws/name> "Companies providing essential services".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_25> <http://srv.meaningfy.ws/name> "Particular professions".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_26> <http://srv.meaningfy.ws/name> "Workers in care facilities".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_27> <http://srv.meaningfy.ws/name> "Other businesses".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_28> <http://srv.meaningfy.ws/name> "Migrants in employment".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_29> <http://srv.meaningfy.ws/name> "Parents in employment".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_30> <http://srv.meaningfy.ws/name> "Disabled workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_31> <http://srv.meaningfy.ws/name> "Refugees".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_32> <http://srv.meaningfy.ws/name> "Self-employed".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_33> <http://srv.meaningfy.ws/name> "Migrants".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_34> <http://srv.meaningfy.ws/name> "Older people in employment (aged 55+)".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_35> <http://srv.meaningfy.ws/name> "People in care facilities".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_36> <http://srv.meaningfy.ws/name> "Posted workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_37> <http://srv.meaningfy.ws/name> "Other groups of citizens".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_38> <http://srv.meaningfy.ws/name> "Seasonal workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_39> <http://srv.meaningfy.ws/name> "Workers in essential services".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_40> <http://srv.meaningfy.ws/name> "Platform workers".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_41> <http://srv.meaningfy.ws/name> "The COVID-19 risk group at the workplace".
+<http://srv.meaningfy.ws/pwdb_target_group_l2/category_42> <http://srv.meaningfy.ws/name> "Contractors of a company".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_0> <http://srv.meaningfy.ws/name> "nan".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_1> <http://srv.meaningfy.ws/name> "employment, social affairs, skills and labour mobility".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_2> <http://srv.meaningfy.ws/name> "budget and human resources".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_3> <http://srv.meaningfy.ws/name> "education, youth, sport and culture".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_4> <http://srv.meaningfy.ws/name> "migration, home affairs and citizenship".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_5> <http://srv.meaningfy.ws/name> "transport".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_6> <http://srv.meaningfy.ws/name> "budget and human resources, humanitarian aid and crisis management".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_7> <http://srv.meaningfy.ws/name> "Democracy and Demography".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_8> <http://srv.meaningfy.ws/name> "responsible for questions regarding Eurostat".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_9> <http://srv.meaningfy.ws/name> "justice, equality and rule of law".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_10> <http://srv.meaningfy.ws/name> "economic and financial affairs, jobs and social rights".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_11> <http://srv.meaningfy.ws/name> "mobility and transport".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_12> <http://srv.meaningfy.ws/name> "environment".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_13> <http://srv.meaningfy.ws/name> "structural reforms".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_14> <http://srv.meaningfy.ws/name> "Justice and Consumers".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_15> <http://srv.meaningfy.ws/name> "foreign affairs and security policy".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_16> <http://srv.meaningfy.ws/name> "maritime affairs and fisheries".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_17> <http://srv.meaningfy.ws/name> "international cooperation and development".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_18> <http://srv.meaningfy.ws/name> "public health".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_19> <http://srv.meaningfy.ws/name> "research and innovation".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_20> <http://srv.meaningfy.ws/name> "economic affairs".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_21> <http://srv.meaningfy.ws/name> "security union".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_22> <http://srv.meaningfy.ws/name> "food safety".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_23> <http://srv.meaningfy.ws/name> "public health and food safety".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_24> <http://srv.meaningfy.ws/name> "Neighbourhood and Enlargement".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_25> <http://srv.meaningfy.ws/name> "coordinating spokesperson for the European Green Deal".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_26> <http://srv.meaningfy.ws/name> "Rule of Law".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_27> <http://srv.meaningfy.ws/name> "climate action and energy".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_28> <http://srv.meaningfy.ws/name> "European statistics (ESTAT)".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_29> <http://srv.meaningfy.ws/name> "internal market and industry".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_30> <http://srv.meaningfy.ws/name> "digital economy".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_31> <http://srv.meaningfy.ws/name> "Equality".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_32> <http://srv.meaningfy.ws/name> "defence industry and space".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_33> <http://srv.meaningfy.ws/name> "trade, agriculture".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_34> <http://srv.meaningfy.ws/name> "competition".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_35> <http://srv.meaningfy.ws/name> "Internal Market, defence industry and space".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_36> <http://srv.meaningfy.ws/name> "regional and urban policy".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_37> <http://srv.meaningfy.ws/name> "regional policy".
+<http://srv.meaningfy.ws/eu_timeline_topic/category_38> <http://srv.meaningfy.ws/name> "financial stability, financial services and capital markets union".
+<http://srv.meaningfy.ws/ireland_keyword/category_0> <http://srv.meaningfy.ws/name> "nan".
+<http://srv.meaningfy.ws/ireland_keyword/category_1> <http://srv.meaningfy.ws/name> "innovation".
+<http://srv.meaningfy.ws/ireland_keyword/category_2> <http://srv.meaningfy.ws/name> "occupational+health".
+<http://srv.meaningfy.ws/ireland_keyword/category_3> <http://srv.meaningfy.ws/name> "occupational health".
+<http://srv.meaningfy.ws/ireland_keyword/category_4> <http://srv.meaningfy.ws/name> "social media".
+<http://srv.meaningfy.ws/ireland_keyword/category_5> <http://srv.meaningfy.ws/name> "virus".
+<http://srv.meaningfy.ws/ireland_keyword/category_6> <http://srv.meaningfy.ws/name> "economic support".
+<http://srv.meaningfy.ws/ireland_keyword/category_7> <http://srv.meaningfy.ws/name> "health+policy".
+<http://srv.meaningfy.ws/ireland_keyword/category_8> <http://srv.meaningfy.ws/name> "health+legislation".
+<http://srv.meaningfy.ws/ireland_keyword/category_9> <http://srv.meaningfy.ws/name> "health control".
+<http://srv.meaningfy.ws/ireland_keyword/category_10> <http://srv.meaningfy.ws/name> "respiratory+disease".
+<http://srv.meaningfy.ws/ireland_keyword/category_11> <http://srv.meaningfy.ws/name> "self-regulation".
+<http://srv.meaningfy.ws/ireland_keyword/category_12> <http://srv.meaningfy.ws/name> "crisis management".
+<http://srv.meaningfy.ws/ireland_keyword/category_13> <http://srv.meaningfy.ws/name> "patient rights".
+<http://srv.meaningfy.ws/ireland_keyword/category_14> <http://srv.meaningfy.ws/name> "epidemiology".
+<http://srv.meaningfy.ws/ireland_keyword/category_15> <http://srv.meaningfy.ws/name> "disease prevention".
+<http://srv.meaningfy.ws/ireland_keyword/category_16> <http://srv.meaningfy.ws/name> "living+conditions".
+<http://srv.meaningfy.ws/ireland_keyword/category_17> <http://srv.meaningfy.ws/name> "social+media".
+<http://srv.meaningfy.ws/ireland_keyword/category_18> <http://srv.meaningfy.ws/name> "European Centre for Disease Prevention and Control".
+<http://srv.meaningfy.ws/ireland_keyword/category_19> <http://srv.meaningfy.ws/name> "European+Centre+for+Disease+Prevention+and+Control".
+<http://srv.meaningfy.ws/ireland_keyword/category_20> <http://srv.meaningfy.ws/name> "health policy".
+<http://srv.meaningfy.ws/ireland_keyword/category_21> <http://srv.meaningfy.ws/name> "social+well-being".
+<http://srv.meaningfy.ws/ireland_keyword/category_22> <http://srv.meaningfy.ws/name> "aid+to+disadvantaged+groups".
+<http://srv.meaningfy.ws/ireland_keyword/category_23> <http://srv.meaningfy.ws/name> "standard of living".
+<http://srv.meaningfy.ws/ireland_keyword/category_24> <http://srv.meaningfy.ws/name> "communications+policy".
+<http://srv.meaningfy.ws/ireland_keyword/category_25> <http://srv.meaningfy.ws/name> "health service".
+<http://srv.meaningfy.ws/ireland_keyword/category_26> <http://srv.meaningfy.ws/name> "endemic+disease".
+<http://srv.meaningfy.ws/ireland_keyword/category_27> <http://srv.meaningfy.ws/name> "medical research".
+<http://srv.meaningfy.ws/ireland_keyword/category_28> <http://srv.meaningfy.ws/name> "health legislation".
+<http://srv.meaningfy.ws/ireland_keyword/category_29> <http://srv.meaningfy.ws/name> "free+movement+of+persons".
+<http://srv.meaningfy.ws/ireland_keyword/category_30> <http://srv.meaningfy.ws/name> "aid to undertakings".
+<http://srv.meaningfy.ws/ireland_keyword/category_31> <http://srv.meaningfy.ws/name> "health+service".
+<http://srv.meaningfy.ws/ireland_keyword/category_32> <http://srv.meaningfy.ws/name> "social+participation".
+<http://srv.meaningfy.ws/ireland_keyword/category_33> <http://srv.meaningfy.ws/name> "working+conditions".
+<http://srv.meaningfy.ws/ireland_keyword/category_34> <http://srv.meaningfy.ws/name> "infectious+disease".
+<http://srv.meaningfy.ws/ireland_keyword/category_35> <http://srv.meaningfy.ws/name> "covid".
+<http://srv.meaningfy.ws/ireland_keyword/category_36> <http://srv.meaningfy.ws/name> "crisis+management".
+<http://srv.meaningfy.ws/ireland_keyword/category_37> <http://srv.meaningfy.ws/name> "working+environment".
+<http://srv.meaningfy.ws/ireland_keyword/category_38> <http://srv.meaningfy.ws/name> "disease surveillance".
+<http://srv.meaningfy.ws/ireland_keyword/category_39> <http://srv.meaningfy.ws/name> "living conditions".
+<http://srv.meaningfy.ws/ireland_keyword/category_40> <http://srv.meaningfy.ws/name> "protective+equipment".
+<http://srv.meaningfy.ws/ireland_keyword/category_41> <http://srv.meaningfy.ws/name> "e-Health".
+<http://srv.meaningfy.ws/ireland_keyword/category_42> <http://srv.meaningfy.ws/name> "health+control".
+<http://srv.meaningfy.ws/ireland_keyword/category_43> <http://srv.meaningfy.ws/name> "social sciences".
+<http://srv.meaningfy.ws/ireland_keyword/category_44> <http://srv.meaningfy.ws/name> "tourism".
+<http://srv.meaningfy.ws/ireland_keyword/category_45> <http://srv.meaningfy.ws/name> "social+sciences".
+<http://srv.meaningfy.ws/ireland_keyword/category_46> <http://srv.meaningfy.ws/name> "economic activity".
+<http://srv.meaningfy.ws/ireland_keyword/category_47> <http://srv.meaningfy.ws/name> "hospital infection".
+<http://srv.meaningfy.ws/ireland_keyword/category_48> <http://srv.meaningfy.ws/name> "organisation+of+health+care".
+<http://srv.meaningfy.ws/ireland_keyword/category_49> <http://srv.meaningfy.ws/name> "coronavirus+disease".
+<http://srv.meaningfy.ws/ireland_keyword/category_50> <http://srv.meaningfy.ws/name> "restriction of liberty".
+<http://srv.meaningfy.ws/ireland_keyword/category_51> <http://srv.meaningfy.ws/name> "public+health".
+<http://srv.meaningfy.ws/ireland_keyword/category_52> <http://srv.meaningfy.ws/name> "free movement of workers".
+<http://srv.meaningfy.ws/ireland_keyword/category_53> <http://srv.meaningfy.ws/name> "applied research".
+<http://srv.meaningfy.ws/ireland_keyword/category_54> <http://srv.meaningfy.ws/name> "EU financing".
+<http://srv.meaningfy.ws/ireland_keyword/category_55> <http://srv.meaningfy.ws/name> "illness".
+<http://srv.meaningfy.ws/ireland_keyword/category_56> <http://srv.meaningfy.ws/name> "air+transport".
+<http://srv.meaningfy.ws/ireland_keyword/category_57> <http://srv.meaningfy.ws/name> "research+and+development".
+<http://srv.meaningfy.ws/ireland_keyword/category_58> <http://srv.meaningfy.ws/name> "infectious disease".
+<http://srv.meaningfy.ws/ireland_keyword/category_59> <http://srv.meaningfy.ws/name> "free movement of persons".
+<http://srv.meaningfy.ws/ireland_keyword/category_60> <http://srv.meaningfy.ws/name> "communications policy".
+<http://srv.meaningfy.ws/ireland_keyword/category_61> <http://srv.meaningfy.ws/name> "public+hygiene".
+<http://srv.meaningfy.ws/ireland_keyword/category_62> <http://srv.meaningfy.ws/name> "health risk".
+<http://srv.meaningfy.ws/ireland_keyword/category_63> <http://srv.meaningfy.ws/name> "patient+safety".
+<http://srv.meaningfy.ws/ireland_keyword/category_64> <http://srv.meaningfy.ws/name> "patient safety".
+<http://srv.meaningfy.ws/ireland_keyword/category_65> <http://srv.meaningfy.ws/name> "social+situation".
+<http://srv.meaningfy.ws/ireland_keyword/category_66> <http://srv.meaningfy.ws/name> "standard+of+living".
+<http://srv.meaningfy.ws/ireland_keyword/category_67> <http://srv.meaningfy.ws/name> "protective equipment".
+<http://srv.meaningfy.ws/ireland_keyword/category_68> <http://srv.meaningfy.ws/name> "crisis".
+<http://srv.meaningfy.ws/ireland_keyword/category_69> <http://srv.meaningfy.ws/name> "respiratory disease".
+<http://srv.meaningfy.ws/ireland_keyword/category_70> <http://srv.meaningfy.ws/name> "vaccination".
+<http://srv.meaningfy.ws/ireland_keyword/category_71> <http://srv.meaningfy.ws/name> "disease+surveillance".
+<http://srv.meaningfy.ws/ireland_keyword/category_72> <http://srv.meaningfy.ws/name> "public+awareness+campaign".
+<http://srv.meaningfy.ws/ireland_keyword/category_73> <http://srv.meaningfy.ws/name> "economic+consequence".
+<http://srv.meaningfy.ws/ireland_keyword/category_74> <http://srv.meaningfy.ws/name> "social well-being".
+<http://srv.meaningfy.ws/ireland_keyword/category_75> <http://srv.meaningfy.ws/name> "economic consequence".
+<http://srv.meaningfy.ws/ireland_keyword/category_76> <http://srv.meaningfy.ws/name> "social+impact".
+<http://srv.meaningfy.ws/ireland_keyword/category_77> <http://srv.meaningfy.ws/name> "viral disease".
+<http://srv.meaningfy.ws/ireland_keyword/category_78> <http://srv.meaningfy.ws/name> "economic+aid".
+<http://srv.meaningfy.ws/ireland_keyword/category_79> <http://srv.meaningfy.ws/name> "pandemic".
+<http://srv.meaningfy.ws/ireland_keyword/category_80> <http://srv.meaningfy.ws/name> "aid programme".
+<http://srv.meaningfy.ws/ireland_keyword/category_81> <http://srv.meaningfy.ws/name> "working environment".
+<http://srv.meaningfy.ws/ireland_keyword/category_82> <http://srv.meaningfy.ws/name> "economic+activity".
+<http://srv.meaningfy.ws/ireland_keyword/category_83> <http://srv.meaningfy.ws/name> "social participation".
+<http://srv.meaningfy.ws/ireland_keyword/category_84> <http://srv.meaningfy.ws/name> "distance+learning".
+<http://srv.meaningfy.ws/ireland_keyword/category_85> <http://srv.meaningfy.ws/name> "applied+research".
+<http://srv.meaningfy.ws/ireland_keyword/category_86> <http://srv.meaningfy.ws/name> "quality+of+life".
+<http://srv.meaningfy.ws/ireland_keyword/category_87> <http://srv.meaningfy.ws/name> "social impact".
+<http://srv.meaningfy.ws/ireland_keyword/category_88> <http://srv.meaningfy.ws/name> "public awareness campaign".
+<http://srv.meaningfy.ws/ireland_keyword/category_89> <http://srv.meaningfy.ws/name> "free+movement+of+workers".
+<http://srv.meaningfy.ws/ireland_keyword/category_90> <http://srv.meaningfy.ws/name> "EU+financing".
+<http://srv.meaningfy.ws/ireland_keyword/category_91> <http://srv.meaningfy.ws/name> "quality of life".
+<http://srv.meaningfy.ws/ireland_keyword/category_92> <http://srv.meaningfy.ws/name> "economic+support".
+<http://srv.meaningfy.ws/ireland_keyword/category_93> <http://srv.meaningfy.ws/name> "distance learning".
+<http://srv.meaningfy.ws/ireland_keyword/category_94> <http://srv.meaningfy.ws/name> "aid+programme".
+<http://srv.meaningfy.ws/ireland_keyword/category_95> <http://srv.meaningfy.ws/name> "state+of+emergency".
+<http://srv.meaningfy.ws/ireland_keyword/category_96> <http://srv.meaningfy.ws/name> "organisation of health care".
+<http://srv.meaningfy.ws/ireland_keyword/category_97> <http://srv.meaningfy.ws/name> "air transport".
+<http://srv.meaningfy.ws/ireland_keyword/category_98> <http://srv.meaningfy.ws/name> "state of emergency".
+<http://srv.meaningfy.ws/ireland_keyword/category_99> <http://srv.meaningfy.ws/name> "health+risk".
+<http://srv.meaningfy.ws/ireland_keyword/category_100> <http://srv.meaningfy.ws/name> "basic+needs".
+<http://srv.meaningfy.ws/ireland_keyword/category_101> <http://srv.meaningfy.ws/name> "freedom of movement".
+<http://srv.meaningfy.ws/ireland_keyword/category_102> <http://srv.meaningfy.ws/name> "basic needs".
+<http://srv.meaningfy.ws/ireland_keyword/category_103> <http://srv.meaningfy.ws/name> "labour+market".
+<http://srv.meaningfy.ws/ireland_keyword/category_104> <http://srv.meaningfy.ws/name> "working conditions".
+<http://srv.meaningfy.ws/ireland_keyword/category_105> <http://srv.meaningfy.ws/name> "public hygiene".
+<http://srv.meaningfy.ws/ireland_page_type/category_0> <http://srv.meaningfy.ws/name> "nan".
+<http://srv.meaningfy.ws/ireland_page_type/category_1> <http://srv.meaningfy.ws/name> "News".
+<http://srv.meaningfy.ws/ireland_page_type/category_2> <http://srv.meaningfy.ws/name> "Form".
+<http://srv.meaningfy.ws/ireland_page_type/category_3> <http://srv.meaningfy.ws/name> "Speech".
+<http://srv.meaningfy.ws/ireland_page_type/category_4> <http://srv.meaningfy.ws/name> "Press release".
+<http://srv.meaningfy.ws/ireland_page_type/category_5> <http://srv.meaningfy.ws/name> "Publication".
+<http://srv.meaningfy.ws/ireland_page_type/category_6> <http://srv.meaningfy.ws/name> "Collection".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_ITRE> <http://srv.meaningfy.ws/name> "Committee on Industry, Research and Energy".
+<http://publications.europa.eu/resource/authority/corporate-body/COR_ENVE> <http://srv.meaningfy.ws/name> "Commission for the Environment, Climate Change and Energy".
+<http://publications.europa.eu/resource/authority/corporate-body/CLIMA> <http://srv.meaningfy.ws/name> "Directorate-General for Climate Action".
+<http://publications.europa.eu/resource/authority/corporate-body/BUDG> <http://srv.meaningfy.ws/name> "Directorate-General for Budget".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_IMCO> <http://srv.meaningfy.ws/name> "Committee on the Internal Market and Consumer Protection".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_EMPL> <http://srv.meaningfy.ws/name> "Committee on Employment and Social Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/COR_NAT> <http://srv.meaningfy.ws/name> "Commission for Natural Resources".
+<http://publications.europa.eu/resource/authority/corporate-body/EAEC> <http://srv.meaningfy.ws/name> "European Atomic Energy Community".
+<http://publications.europa.eu/resource/authority/corporate-body/ESMA> <http://srv.meaningfy.ws/name> "European Securities and Markets Authority".
+<http://publications.europa.eu/resource/authority/corporate-body/ECA> <http://srv.meaningfy.ws/name> "European Court of Auditors".
+<http://publications.europa.eu/resource/authority/corporate-body/HOME> <http://srv.meaningfy.ws/name> "Directorate-General for Migration and Home Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/SRB> <http://srv.meaningfy.ws/name> "Single Resolution Board".
+<http://publications.europa.eu/resource/authority/corporate-body/EESC> <http://srv.meaningfy.ws/name> "European Economic and Social Committee".
+<http://publications.europa.eu/resource/authority/corporate-body/GOVREP> <http://srv.meaningfy.ws/name> "Representatives of the Governments of the Member States".
+<http://publications.europa.eu/resource/authority/corporate-body/AGRI> <http://srv.meaningfy.ws/name> "Directorate-General for Agriculture and Rural Development".
+<http://publications.europa.eu/resource/authority/corporate-body/TAXUD> <http://srv.meaningfy.ws/name> "Directorate-General for Taxation and Customs Union".
+<http://publications.europa.eu/resource/authority/corporate-body/COR> <http://srv.meaningfy.ws/name> "European Committee of the Regions".
+<http://publications.europa.eu/resource/authority/corporate-body/ESTAT> <http://srv.meaningfy.ws/name> "Eurostat".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_JURI> <http://srv.meaningfy.ws/name> "Committee on Legal Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_DEVE> <http://srv.meaningfy.ws/name> "Committee on Development".
+<http://publications.europa.eu/resource/authority/corporate-body/EURUN> <http://srv.meaningfy.ws/name> "European Union".
+<http://publications.europa.eu/resource/authority/corporate-body/DG17> <http://srv.meaningfy.ws/name> "Directorate-General for Energy".
+<http://publications.europa.eu/resource/authority/corporate-body/FISMA> <http://srv.meaningfy.ws/name> "Directorate-General for Financial Stability, Financial Services and Capital Markets Union".
+<http://publications.europa.eu/resource/authority/corporate-body/EMPL> <http://srv.meaningfy.ws/name> "Directorate-General for Employment, Social Affairs and Inclusion".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_REGI> <http://srv.meaningfy.ws/name> "Committee on Regional Development".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_BUDG> <http://srv.meaningfy.ws/name> "Committee on Budgets".
+<http://publications.europa.eu/resource/authority/corporate-body/DEVCO> <http://srv.meaningfy.ws/name> "Directorate-General for International Cooperation and Development".
+<http://publications.europa.eu/resource/authority/corporate-body/OLAF> <http://srv.meaningfy.ws/name> "European Anti-Fraud Office".
+<http://publications.europa.eu/resource/authority/corporate-body/EIB> <http://srv.meaningfy.ws/name> "European Investment Bank".
+<http://publications.europa.eu/resource/authority/corporate-body/GCEU> <http://srv.meaningfy.ws/name> "General Court".
+<http://publications.europa.eu/resource/authority/corporate-body/S2R> <http://srv.meaningfy.ws/name> "Shift2Rail Joint Undertaking".
+<http://publications.europa.eu/resource/authority/corporate-body/EEAS> <http://srv.meaningfy.ws/name> "European External Action Service".
+<http://publications.europa.eu/resource/authority/corporate-body/EFTA_SUC> <http://srv.meaningfy.ws/name> "EFTA Surveillance Authority".
+<http://publications.europa.eu/resource/authority/corporate-body/COM> <http://srv.meaningfy.ws/name> "European Commission".
+<http://publications.europa.eu/resource/authority/corporate-body/CNECT> <http://srv.meaningfy.ws/name> "Directorate-General for Communications Networks, Content and Technology".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_PETI> <http://srv.meaningfy.ws/name> "Committee on Petitions".
+<http://publications.europa.eu/resource/authority/corporate-body/CMT_MIX_EU_CHE> <http://srv.meaningfy.ws/name> "EU–Switzerland Joint Committee".
+<http://publications.europa.eu/resource/authority/corporate-body/COR_SEDEC> <http://srv.meaningfy.ws/name> "Commission for Social Policy, Education, Employment, Research and Culture".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_LIBE> <http://srv.meaningfy.ws/name> "Committee on Civil Liberties, Justice and Home Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/SANTE> <http://srv.meaningfy.ws/name> "Directorate-General for Health and Food Safety".
+<http://publications.europa.eu/resource/authority/corporate-body/EFTA_COURT> <http://srv.meaningfy.ws/name> "EFTA Court".
+<http://publications.europa.eu/resource/authority/corporate-body/EPSO> <http://srv.meaningfy.ws/name> "European Personnel Selection Office".
+<http://publications.europa.eu/resource/authority/corporate-body/CCSS> <http://srv.meaningfy.ws/name> "Administrative Commission for the Coordination of Social Security Systems".
+<http://publications.europa.eu/resource/authority/corporate-body/NEAR> <http://srv.meaningfy.ws/name> "Directorate-General for Neighbourhood and Enlargement Negotiations".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_AGRI> <http://srv.meaningfy.ws/name> "Committee on Agriculture and Rural Development".
+<http://publications.europa.eu/resource/authority/corporate-body/EP> <http://srv.meaningfy.ws/name> "European Parliament".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_AFET> <http://srv.meaningfy.ws/name> "Committee on Foreign Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/MOVE> <http://srv.meaningfy.ws/name> "Directorate-General for Mobility and Transport".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_ECON> <http://srv.meaningfy.ws/name> "Committee on Economic and Monetary Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/COR_CIVEX> <http://srv.meaningfy.ws/name> "Commission for Citizenship, Governance, Institutional and External Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/ESRB> <http://srv.meaningfy.ws/name> "European Systemic Risk Board".
+<http://publications.europa.eu/resource/authority/corporate-body/MARE> <http://srv.meaningfy.ws/name> "Directorate-General for Maritime Affairs and Fisheries".
+<http://publications.europa.eu/resource/authority/corporate-body/COR_ECON> <http://srv.meaningfy.ws/name> "Commission for Economic Policy".
+<http://publications.europa.eu/resource/authority/corporate-body/ENV> <http://srv.meaningfy.ws/name> "Directorate-General for Environment".
+<http://publications.europa.eu/resource/authority/corporate-body/RTD> <http://srv.meaningfy.ws/name> "Directorate-General for Research and Innovation".
+<http://publications.europa.eu/resource/authority/corporate-body/SG> <http://srv.meaningfy.ws/name> "Secretariat-General".
+<http://publications.europa.eu/resource/authority/corporate-body/CONSIL> <http://srv.meaningfy.ws/name> "Council of the European Union".
+<http://publications.europa.eu/resource/authority/corporate-body/JUSTI> <http://srv.meaningfy.ws/name> "Directorate-General for Justice".
+<http://publications.europa.eu/resource/authority/corporate-body/DGT> <http://srv.meaningfy.ws/name> "Directorate-General for Translation".
+<http://publications.europa.eu/resource/authority/corporate-body/EURONEST> <http://srv.meaningfy.ws/name> "Euronest Parliamentary Assembly".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_AFCO> <http://srv.meaningfy.ws/name> "Committee on Constitutional Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/JUST> <http://srv.meaningfy.ws/name> "Directorate-General for Justice and Consumers".
+<http://publications.europa.eu/resource/authority/corporate-body/COMP> <http://srv.meaningfy.ws/name> "Directorate-General for Competition".
+<http://publications.europa.eu/resource/authority/corporate-body/ECFIN> <http://srv.meaningfy.ws/name> "Directorate-General for Economic and Financial Affairs".
+<http://publications.europa.eu/resource/authority/corporate-body/EFTA_STC> <http://srv.meaningfy.ws/name> "Standing Committee of the EFTA States".
+<http://publications.europa.eu/resource/authority/corporate-body/UKTF> <http://srv.meaningfy.ws/name> "UK Task Force".
+<http://publications.europa.eu/resource/authority/corporate-body/REGIO> <http://srv.meaningfy.ws/name> "Directorate-General for Regional and Urban Policy".
+<http://publications.europa.eu/resource/authority/corporate-body/REFORM> <http://srv.meaningfy.ws/name> "Directorate-General for Structural Reform Support".
+<http://publications.europa.eu/resource/authority/corporate-body/DEFIS> <http://srv.meaningfy.ws/name> "Directorate-General for Defence Industry and Space".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_CULT> <http://srv.meaningfy.ws/name> "Committee on Culture and Education".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_INTA> <http://srv.meaningfy.ws/name> "Committee on International Trade".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_TRAN> <http://srv.meaningfy.ws/name> "Committee on Transport and Tourism".
+<http://publications.europa.eu/resource/authority/corporate-body/HR> <http://srv.meaningfy.ws/name> "Directorate-General for Human Resources and Security".
+<http://publications.europa.eu/resource/authority/corporate-body/OAMI> <http://srv.meaningfy.ws/name> "European Union Intellectual Property Office".
+<http://publications.europa.eu/resource/authority/corporate-body/EDPS> <http://srv.meaningfy.ws/name> "European Data Protection Supervisor".
+<http://publications.europa.eu/resource/authority/corporate-body/ECB> <http://srv.meaningfy.ws/name> "European Central Bank".
+<http://publications.europa.eu/resource/authority/corporate-body/GROW> <http://srv.meaningfy.ws/name> "Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs".
+<http://publications.europa.eu/resource/authority/corporate-body/CJ> <http://srv.meaningfy.ws/name> "Court of Justice".
+<http://publications.europa.eu/resource/authority/corporate-body/TRADE> <http://srv.meaningfy.ws/name> "Directorate-General for Trade".
+<http://publications.europa.eu/resource/authority/corporate-body/INTPA> <http://srv.meaningfy.ws/name> "Directorate-General for International Partnerships".
+<http://publications.europa.eu/resource/authority/corporate-body/COR_COTER> <http://srv.meaningfy.ws/name> "Commission for Territorial Cohesion Policy and EU Budget".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_ENVI> <http://srv.meaningfy.ws/name> "Committee on the Environment, Public Health and Food Safety".
+<http://publications.europa.eu/resource/authority/corporate-body/ECHO> <http://srv.meaningfy.ws/name> "Directorate-General for European Civil Protection and Humanitarian Aid Operations (ECHO)".
+<http://publications.europa.eu/resource/authority/corporate-body/EAC> <http://srv.meaningfy.ws/name> "Directorate-General for Education, Youth, Sport and Culture".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_PECH> <http://srv.meaningfy.ws/name> "Committee on Fisheries".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_CONT> <http://srv.meaningfy.ws/name> "Committee on Budgetary Control".
+<http://publications.europa.eu/resource/authority/corporate-body/CMT_JOIN> <http://srv.meaningfy.ws/name> "Joint Committee".
+<http://publications.europa.eu/resource/authority/corporate-body/EP_FEMM> <http://srv.meaningfy.ws/name> "Committee on Women’s Rights and Gender Equality".
+<http://publications.europa.eu/resource/authority/resource-type/BUDGET_SUPPL_AMEND> <http://srv.meaningfy.ws/name> "Supplementary and amending budget".
+<http://publications.europa.eu/resource/authority/resource-type/CORRIGENDUM> <http://srv.meaningfy.ws/name> "Corrigendum".
+<http://publications.europa.eu/resource/authority/resource-type/ANNOUNC> <http://srv.meaningfy.ws/name> "Announcements".
+<http://publications.europa.eu/resource/authority/resource-type/REG_IMPL> <http://srv.meaningfy.ws/name> "Implementing regulation".
+<http://publications.europa.eu/resource/authority/resource-type/AGREE_INTERNATION> <http://srv.meaningfy.ws/name> "International agreement".
+<http://publications.europa.eu/resource/authority/resource-type/CONCL> <http://srv.meaningfy.ws/name> "Council conclusions".
+<http://publications.europa.eu/resource/authority/resource-type/NOTIF> <http://srv.meaningfy.ws/name> "Notification".
+<http://publications.europa.eu/resource/authority/resource-type/DECLAR> <http://srv.meaningfy.ws/name> "Declaration".
+<http://publications.europa.eu/resource/authority/resource-type/PROP_RECO> <http://srv.meaningfy.ws/name> "Proposal for a recommendation".
+<http://publications.europa.eu/resource/authority/resource-type/SUM> <http://srv.meaningfy.ws/name> "Summary".
+<http://publications.europa.eu/resource/authority/resource-type/PROP_DEC_IMPL> <http://srv.meaningfy.ws/name> "Proposal for an implementing decision".
+<http://publications.europa.eu/resource/authority/resource-type/DEC> <http://srv.meaningfy.ws/name> "Decision".
+<http://publications.europa.eu/resource/authority/resource-type/RECO_DEC> <http://srv.meaningfy.ws/name> "Recommendation for a decision".
+<http://publications.europa.eu/resource/authority/resource-type/SWD> <http://srv.meaningfy.ws/name> "Staff working document".
+<http://publications.europa.eu/resource/authority/resource-type/EVL> <http://srv.meaningfy.ws/name> "Evaluation".
+<http://publications.europa.eu/resource/authority/resource-type/DEC_ADOPT_INTERNATION> <http://srv.meaningfy.ws/name> "Decision adopted by bodies created by international agreements".
+<http://publications.europa.eu/resource/authority/resource-type/REG_DEL> <http://srv.meaningfy.ws/name> "Delegated regulation".
+<http://publications.europa.eu/resource/authority/resource-type/FC_SUM_EXE> <http://srv.meaningfy.ws/name> "Executive summary of the fitness check".
+<http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS> <http://srv.meaningfy.ws/name> "Impact assessment".
+<http://publications.europa.eu/resource/authority/resource-type/RES> <http://srv.meaningfy.ws/name> "Resolution".
+<http://publications.europa.eu/resource/authority/resource-type/OPIN_EXPLOR> <http://srv.meaningfy.ws/name> "Exploratory opinion".
+<http://publications.europa.eu/resource/authority/resource-type/REPORT> <http://srv.meaningfy.ws/name> "Report".
+<http://publications.europa.eu/resource/authority/resource-type/AMEND_PROP_DEC> <http://srv.meaningfy.ws/name> "Amended proposal for a decision".
+<http://publications.europa.eu/resource/authority/resource-type/GUIDELINE> <http://srv.meaningfy.ws/name> "Guideline".
+<http://publications.europa.eu/resource/authority/resource-type/AMEND_PROP_REG> <http://srv.meaningfy.ws/name> "Amended proposal for a regulation".
+<http://publications.europa.eu/resource/authority/resource-type/JOINT_REPORT> <http://srv.meaningfy.ws/name> "Joint report".
+<http://publications.europa.eu/resource/authority/resource-type/OWNINI_RES> <http://srv.meaningfy.ws/name> "Own-initiative resolution".
+<http://publications.europa.eu/resource/authority/resource-type/REG> <http://srv.meaningfy.ws/name> "Regulation".
+<http://publications.europa.eu/resource/authority/resource-type/COMMUNIC> <http://srv.meaningfy.ws/name> "Communication".
+<http://publications.europa.eu/resource/authority/resource-type/PAPER_WHITE> <http://srv.meaningfy.ws/name> "White Paper".
+<http://publications.europa.eu/resource/authority/resource-type/JOINT_COMMUNIC> <http://srv.meaningfy.ws/name> "Joint communication".
+<http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS_SUM> <http://srv.meaningfy.ws/name> "Summary of impact assessment".
+<http://publications.europa.eu/resource/authority/resource-type/EVL_SUM_EXE> <http://srv.meaningfy.ws/name> "Executive summary of the evaluation".
+<http://publications.europa.eu/resource/authority/resource-type/DEC_DEL> <http://srv.meaningfy.ws/name> "Delegated decision".
+<http://publications.europa.eu/resource/authority/resource-type/PROP_REG> <http://srv.meaningfy.ws/name> "Proposal for a regulation".
+<http://publications.europa.eu/resource/authority/resource-type/PROP_DIR> <http://srv.meaningfy.ws/name> "Proposal for a directive".
+<http://publications.europa.eu/resource/authority/resource-type/RECRUIT> <http://srv.meaningfy.ws/name> "Recruitment".
+<http://publications.europa.eu/resource/authority/resource-type/OPIN> <http://srv.meaningfy.ws/name> "Opinion".
+<http://publications.europa.eu/resource/authority/resource-type/ROADMAP> <http://srv.meaningfy.ws/name> "Roadmap".
+<http://publications.europa.eu/resource/authority/resource-type/BUDGET_DRAFT_SUPPL_AMEND> <http://srv.meaningfy.ws/name> "Draft supplementary and amending budget".
+<http://publications.europa.eu/resource/authority/resource-type/PROP_REG_IMPL> <http://srv.meaningfy.ws/name> "Proposal for an implementing regulation".
+<http://publications.europa.eu/resource/authority/resource-type/STAT> <http://srv.meaningfy.ws/name> "Statement".
+<http://publications.europa.eu/resource/authority/resource-type/ADD> <http://srv.meaningfy.ws/name> "Addendum".
+<http://publications.europa.eu/resource/authority/resource-type/REG_IMPL_DRAFT> <http://srv.meaningfy.ws/name> "Draft implementing regulation".
+<http://publications.europa.eu/resource/authority/resource-type/DEC_IMPL> <http://srv.meaningfy.ws/name> "Implementing decision".
+<http://publications.europa.eu/resource/authority/resource-type/INFO_JUDICIAL> <http://srv.meaningfy.ws/name> "Judicial information".
+<http://publications.europa.eu/resource/authority/resource-type/STAT_REASON> <http://srv.meaningfy.ws/name> "Statement of reasons".
+<http://publications.europa.eu/resource/authority/resource-type/PAPER_GREEN> <http://srv.meaningfy.ws/name> "Green Paper".
+<http://publications.europa.eu/resource/authority/resource-type/FC> <http://srv.meaningfy.ws/name> "Fitness check".
+<http://publications.europa.eu/resource/authority/resource-type/NOTICE> <http://srv.meaningfy.ws/name> "Notice".
+<http://publications.europa.eu/resource/authority/resource-type/OPIN_ADDIT> <http://srv.meaningfy.ws/name> "Additional opinion".
+<http://publications.europa.eu/resource/authority/resource-type/SYNOPSIS_REPORT_CONSULT> <http://srv.meaningfy.ws/name> "Synopsis report of the public consultation".
+<http://publications.europa.eu/resource/authority/resource-type/ADOPT_TEXT> <http://srv.meaningfy.ws/name> "Texts adopted".
+<http://publications.europa.eu/resource/authority/resource-type/COMMUNIC_POSIT> <http://srv.meaningfy.ws/name> "Communication concerning the position of the Council".
+<http://publications.europa.eu/resource/authority/resource-type/DIR> <http://srv.meaningfy.ws/name> "Directive".
+<http://publications.europa.eu/resource/authority/resource-type/ROADMAP_EFC> <http://srv.meaningfy.ws/name> "Evaluation roadmap".
+<http://publications.europa.eu/resource/authority/resource-type/PROP_DEC> <http://srv.meaningfy.ws/name> "Proposal for a decision".
+<http://publications.europa.eu/resource/authority/resource-type/REPORT_ANNUAL> <http://srv.meaningfy.ws/name> "Annual report".
+<http://publications.europa.eu/resource/authority/resource-type/OWNINI_OPIN> <http://srv.meaningfy.ws/name> "Own-initiative opinion".
+<http://publications.europa.eu/resource/authority/resource-type/RES_LEGIS> <http://srv.meaningfy.ws/name> "Legislative resolution".
+<http://publications.europa.eu/resource/authority/resource-type/IMPACT_ASSESS_INCEP> <http://srv.meaningfy.ws/name> "Inception impact assessment".
+<http://publications.europa.eu/resource/authority/resource-type/RECO_RECO> <http://srv.meaningfy.ws/name> "Recommendation for a recommendation".
+<http://publications.europa.eu/resource/authority/resource-type/DEC_IMPL_DRAFT> <http://srv.meaningfy.ws/name> "Draft implementing decision".
+<http://publications.europa.eu/resource/authority/resource-type/RECO> <http://srv.meaningfy.ws/name> "Recommendation".
+<http://publications.europa.eu/resource/authority/resource-type/DIR_DEL> <http://srv.meaningfy.ws/name> "Delegated directive".
+<http://publications.europa.eu/resource/authority/resource-type/POSIT> <http://srv.meaningfy.ws/name> "Position".
+<http://publications.europa.eu/resource/authority/subject-matter/COAD> <http://srv.meaningfy.ws/name> "Administrative cooperation".
+<http://publications.europa.eu/resource/authority/subject-matter/TECN> <http://srv.meaningfy.ws/name> "Technology".
+<http://publications.europa.eu/resource/authority/subject-matter/SPOR> <http://srv.meaningfy.ws/name> "Sport".
+<http://publications.europa.eu/resource/authority/subject-matter/F-L> <http://srv.meaningfy.ws/name> "Fruit and vegetables".
+<http://publications.europa.eu/resource/authority/subject-matter/BOV> <http://srv.meaningfy.ws/name> "Beef and veal".
+<http://publications.europa.eu/resource/authority/subject-matter/J-AI> <http://srv.meaningfy.ws/name> "Justice and home affairs".
+<http://publications.europa.eu/resource/authority/subject-matter/CONC> <http://srv.meaningfy.ws/name> "Competition".
+<http://publications.europa.eu/resource/authority/subject-matter/PECH> <http://srv.meaningfy.ws/name> "Fisheries policy".
+<http://publications.europa.eu/resource/authority/subject-matter/c_b1a922fd> <http://srv.meaningfy.ws/name> "Financial market stability".
+<http://publications.europa.eu/resource/authority/subject-matter/PHYT> <http://srv.meaningfy.ws/name> "Plant health legislation".
+<http://publications.europa.eu/resource/authority/subject-matter/AGRI> <http://srv.meaningfy.ws/name> "Agriculture and Fisheries".
+<http://publications.europa.eu/resource/authority/subject-matter/ETEC> <http://srv.meaningfy.ws/name> "Technical barriers".
+<http://publications.europa.eu/resource/authority/subject-matter/FSE> <http://srv.meaningfy.ws/name> "European Social Fund (ESF)".
+<http://publications.europa.eu/resource/authority/subject-matter/DIFF> <http://srv.meaningfy.ws/name> "Dissemination of information".
+<http://publications.europa.eu/resource/authority/subject-matter/CIT> <http://srv.meaningfy.ws/name> "Citizenship of the Union".
+<http://publications.europa.eu/resource/authority/subject-matter/EMPL> <http://srv.meaningfy.ws/name> "Employment".
+<http://publications.europa.eu/resource/authority/subject-matter/EXT> <http://srv.meaningfy.ws/name> "External relations".
+<http://publications.europa.eu/resource/authority/subject-matter/c_3e1e305a> <http://srv.meaningfy.ws/name> "Financial assistance".
+<http://publications.europa.eu/resource/authority/subject-matter/COPT> <http://srv.meaningfy.ws/name> "Economic, financial and technical cooperation with third countries".
+<http://publications.europa.eu/resource/authority/subject-matter/c_38e22180> <http://srv.meaningfy.ws/name> "Monetary income".
+<http://publications.europa.eu/resource/authority/subject-matter/SAUV> <http://srv.meaningfy.ws/name> "Protective measures".
+<http://publications.europa.eu/resource/authority/subject-matter/DECH> <http://srv.meaningfy.ws/name> "Waste".
+<http://publications.europa.eu/resource/authority/subject-matter/ENV> <http://srv.meaningfy.ws/name> "Environment".
+<http://publications.europa.eu/resource/authority/subject-matter/CHDF> <http://srv.meaningfy.ws/name> "Charter of Fundamental Rights".
+<http://publications.europa.eu/resource/authority/subject-matter/c_d7a89aa3> <http://srv.meaningfy.ws/name> "Microprudential tasks".
+<http://publications.europa.eu/resource/authority/subject-matter/ALIM> <http://srv.meaningfy.ws/name> "Food aid".
+<http://publications.europa.eu/resource/authority/subject-matter/PROT> <http://srv.meaningfy.ws/name> "Consumer protection".
+<http://publications.europa.eu/resource/authority/subject-matter/RDT> <http://srv.meaningfy.ws/name> "Research and technological development".
+<http://publications.europa.eu/resource/authority/subject-matter/VIN> <http://srv.meaningfy.ws/name> "Wine".
+<http://publications.europa.eu/resource/authority/subject-matter/PREG> <http://srv.meaningfy.ws/name> "Regional policy".
+<http://publications.europa.eu/resource/authority/subject-matter/RAPL> <http://srv.meaningfy.ws/name> "Approximation of laws".
+<http://publications.europa.eu/resource/authority/subject-matter/CULT> <http://srv.meaningfy.ws/name> "Culture".
+<http://publications.europa.eu/resource/authority/subject-matter/PME> <http://srv.meaningfy.ws/name> "Small and medium-sized enterprises".
+<http://publications.europa.eu/resource/authority/subject-matter/MERG> <http://srv.meaningfy.ws/name> "Concentrations between undertakings".
+<http://publications.europa.eu/resource/authority/subject-matter/ENER> <http://srv.meaningfy.ws/name> "Energy".
+<http://publications.europa.eu/resource/authority/subject-matter/PROP> <http://srv.meaningfy.ws/name> "Intellectual, industrial and commercial property".
+<http://publications.europa.eu/resource/authority/subject-matter/ASSI> <http://srv.meaningfy.ws/name> "Assistance".
+<http://publications.europa.eu/resource/authority/subject-matter/c_12480e7d> <http://srv.meaningfy.ws/name> "Monetary policy instruments".
+<http://publications.europa.eu/resource/authority/subject-matter/RECH> <http://srv.meaningfy.ws/name> "Research and training".
+<http://publications.europa.eu/resource/authority/subject-matter/FIN> <http://srv.meaningfy.ws/name> "Financial provisions".
+<http://publications.europa.eu/resource/authority/subject-matter/PCOM> <http://srv.meaningfy.ws/name> "Commercial policy".
+<http://publications.europa.eu/resource/authority/subject-matter/NUCL> <http://srv.meaningfy.ws/name> "Nuclear common market".
+<http://publications.europa.eu/resource/authority/subject-matter/SOPO> <http://srv.meaningfy.ws/name> "Social Policy".
+<http://publications.europa.eu/resource/authority/subject-matter/IMMI> <http://srv.meaningfy.ws/name> "Immigration and asylum policy".
+<http://publications.europa.eu/resource/authority/subject-matter/INFQ> <http://srv.meaningfy.ws/name> "Electronic data processing".
+<http://publications.europa.eu/resource/authority/subject-matter/LCC> <http://srv.meaningfy.ws/name> "Free movement of capital".
+<http://publications.europa.eu/resource/authority/subject-matter/PTOM> <http://srv.meaningfy.ws/name> "Overseas countries and territories".
+<http://publications.europa.eu/resource/authority/subject-matter/RTR> <http://srv.meaningfy.ws/name> "Trans-European networks".
+<http://publications.europa.eu/resource/authority/subject-matter/PDON> <http://srv.meaningfy.ws/name> "Data protection".
+<http://publications.europa.eu/resource/authority/subject-matter/LAIT> <http://srv.meaningfy.ws/name> "Milk products".
+<http://publications.europa.eu/resource/authority/subject-matter/FRON> <http://srv.meaningfy.ws/name> "Border checks".
+<http://publications.europa.eu/resource/authority/subject-matter/COPE> <http://srv.meaningfy.ws/name> "European political cooperation".
+<http://publications.europa.eu/resource/authority/subject-matter/ACTE> <http://srv.meaningfy.ws/name> "Acts of the institutions".
+<http://publications.europa.eu/resource/authority/subject-matter/SANT> <http://srv.meaningfy.ws/name> "Public health".
+<http://publications.europa.eu/resource/authority/subject-matter/COOP> <http://srv.meaningfy.ws/name> "Cooperation".
+<http://publications.europa.eu/resource/authority/subject-matter/COMB> <http://srv.meaningfy.ws/name> "Fuels".
+<http://publications.europa.eu/resource/authority/subject-matter/c_05d7dbed> <http://srv.meaningfy.ws/name> "Supervisory powers and tasks".
+<http://publications.europa.eu/resource/authority/subject-matter/AIDE> <http://srv.meaningfy.ws/name> "State aids".
+<http://publications.europa.eu/resource/authority/subject-matter/UEM> <http://srv.meaningfy.ws/name> "Economic and Monetary Union".
+<http://publications.europa.eu/resource/authority/subject-matter/ESPA> <http://srv.meaningfy.ws/name> "Space".
+<http://publications.europa.eu/resource/authority/subject-matter/INST> <http://srv.meaningfy.ws/name> "Provisions governing the Institutions".
+<http://publications.europa.eu/resource/authority/subject-matter/DOUA> <http://srv.meaningfy.ws/name> "Customs Cooperation".
+<http://publications.europa.eu/resource/authority/subject-matter/UD> <http://srv.meaningfy.ws/name> "Customs Union".
+<http://publications.europa.eu/resource/authority/subject-matter/FEDE> <http://srv.meaningfy.ws/name> "European Regional Development Fund (ERDF)".
+<http://publications.europa.eu/resource/authority/subject-matter/FINC> <http://srv.meaningfy.ws/name> "Financial provisions ECSC".
+<http://publications.europa.eu/resource/authority/subject-matter/BUDG> <http://srv.meaningfy.ws/name> "Budget".
+<http://publications.europa.eu/resource/authority/subject-matter/OCM> <http://srv.meaningfy.ws/name> "Common organisation of agricultural markets".
+<http://publications.europa.eu/resource/authority/subject-matter/SECU> <http://srv.meaningfy.ws/name> "Safety at work and elsewhere".
+<http://publications.europa.eu/resource/authority/subject-matter/LCT> <http://srv.meaningfy.ws/name> "Free movement of workers".
+<http://publications.europa.eu/resource/authority/subject-matter/PESC> <http://srv.meaningfy.ws/name> "Common foreign and security policy".
+<http://publications.europa.eu/resource/authority/subject-matter/TDC> <http://srv.meaningfy.ws/name> "Common customs tariff".
+<http://publications.europa.eu/resource/authority/subject-matter/DFON> <http://srv.meaningfy.ws/name> "Fundamental rights".
+<http://publications.europa.eu/resource/authority/subject-matter/ADH> <http://srv.meaningfy.ws/name> "Accession".
+<http://publications.europa.eu/resource/authority/subject-matter/TOUR> <http://srv.meaningfy.ws/name> "Tourism".
+<http://publications.europa.eu/resource/authority/subject-matter/CDEV> <http://srv.meaningfy.ws/name> "Development cooperation".
+<http://publications.europa.eu/resource/authority/subject-matter/DUMP> <http://srv.meaningfy.ws/name> "Dumping".
+<http://publications.europa.eu/resource/authority/subject-matter/COOR> <http://srv.meaningfy.ws/name> "Coordination of structural instruments".
+<http://publications.europa.eu/resource/authority/subject-matter/SANI> <http://srv.meaningfy.ws/name> "Health and safety".
+<http://publications.europa.eu/resource/authority/subject-matter/PEM> <http://srv.meaningfy.ws/name> "Economic and monetary policy".
+<http://publications.europa.eu/resource/authority/subject-matter/IDST> <http://srv.meaningfy.ws/name> "Scientific and technical information and documentation".
+<http://publications.europa.eu/resource/authority/subject-matter/c_962003de> <http://srv.meaningfy.ws/name> "Legal framework of the ESCB".
+<http://publications.europa.eu/resource/authority/subject-matter/DOM> <http://srv.meaningfy.ws/name> "French overseas departments".
+<http://publications.europa.eu/resource/authority/subject-matter/DIPL> <http://srv.meaningfy.ws/name> "External action by the Union".
+<http://publications.europa.eu/resource/authority/subject-matter/D-AL> <http://srv.meaningfy.ws/name> "Foodstuffs".
+<http://publications.europa.eu/resource/authority/subject-matter/MARC> <http://srv.meaningfy.ws/name> "Public procurement in the European Union".
+<http://publications.europa.eu/resource/authority/subject-matter/DGEN> <http://srv.meaningfy.ws/name> "General provisions".
+<http://publications.europa.eu/resource/authority/subject-matter/ACP> <http://srv.meaningfy.ws/name> "African, Caribbean and Pacific States (ACP)".
+<http://publications.europa.eu/resource/authority/subject-matter/INDU> <http://srv.meaningfy.ws/name> "Industry".
+<http://publications.europa.eu/resource/authority/subject-matter/TRAN> <http://srv.meaningfy.ws/name> "Transport".
+<http://publications.europa.eu/resource/authority/subject-matter/AELE> <http://srv.meaningfy.ws/name> "European Free Trade Association (EFTA)".
+<http://publications.europa.eu/resource/authority/subject-matter/PRIN> <http://srv.meaningfy.ws/name> "Principles, objectives and tasks of the Treaties".
+<http://publications.europa.eu/resource/authority/subject-matter/DROIT> <http://srv.meaningfy.ws/name> "General principles of Community law".
+<http://publications.europa.eu/resource/authority/subject-matter/INFO> <http://srv.meaningfy.ws/name> "Information and verification".
+<http://publications.europa.eu/resource/authority/subject-matter/DDLH> <http://srv.meaningfy.ws/name> "Human rights".
+<http://publications.europa.eu/resource/authority/subject-matter/VETE> <http://srv.meaningfy.ws/name> "Veterinary legislation".
+<http://publications.europa.eu/resource/authority/subject-matter/c_594e5232> <http://srv.meaningfy.ws/name> "Temporary framework".
+<http://publications.europa.eu/resource/authority/subject-matter/LES> <http://srv.meaningfy.ws/name> "Freedom of establishment".
+<http://publications.europa.eu/resource/authority/subject-matter/c_76b44336> <http://srv.meaningfy.ws/name> "Banking supervision".
+<http://publications.europa.eu/resource/authority/subject-matter/EFPJ> <http://srv.meaningfy.ws/name> "Education, vocational training and youth".
+<http://publications.europa.eu/resource/authority/subject-matter/MARI> <http://srv.meaningfy.ws/name> "Internal market - Principles".
+<http://publications.europa.eu/resource/authority/subject-matter/FEADER> <http://srv.meaningfy.ws/name> "Agricultural structural funds".
+<http://publications.europa.eu/resource/authority/subject-matter/c_02507fc0> <http://srv.meaningfy.ws/name> "Monetary, financial institutions and markets statistics".
+<http://publications.europa.eu/resource/authority/subject-matter/CRBM> <http://srv.meaningfy.ws/name> "Conservation of marine biological resources".
+<http://publications.europa.eu/resource/authority/subject-matter/PIND> <http://srv.meaningfy.ws/name> "Industrial policy".
+<http://publications.europa.eu/resource/authority/subject-matter/HUMA> <http://srv.meaningfy.ws/name> "Humanitarian aid".
+<http://publications.europa.eu/resource/authority/subject-matter/RPRO> <http://srv.meaningfy.ws/name> "Own resources".
+<http://publications.europa.eu/resource/authority/subject-matter/c_d82c4c81> <http://srv.meaningfy.ws/name> "ECB institutional provisions".
+<http://publications.europa.eu/resource/authority/subject-matter/BEI> <http://srv.meaningfy.ws/name> "European Investment Bank (EIB)".
+<http://publications.europa.eu/resource/authority/subject-matter/COJP> <http://srv.meaningfy.ws/name> "Judicial cooperation in criminal matters".
+<http://publications.europa.eu/resource/authority/subject-matter/STRA> <http://srv.meaningfy.ws/name> "Agricultural structures".
+<http://publications.europa.eu/resource/authority/subject-matter/COHE> <http://srv.meaningfy.ws/name> "Cohesion Fund".
+<http://publications.europa.eu/resource/authority/subject-matter/COES> <http://srv.meaningfy.ws/name> "Economic, social and territorial cohesion".
+<http://publications.europa.eu/resource/authority/subject-matter/c_726ab1b3> <http://srv.meaningfy.ws/name> "General framework".
+<http://publications.europa.eu/resource/authority/subject-matter/RIZ> <http://srv.meaningfy.ws/name> "Rice".
+<http://publications.europa.eu/resource/authority/subject-matter/ASSO> <http://srv.meaningfy.ws/name> "Association Agreement".
+<http://publications.europa.eu/resource/authority/subject-matter/TELE> <http://srv.meaningfy.ws/name> "Telecommunications".
+<http://publications.europa.eu/resource/authority/subject-matter/PRET> <http://srv.meaningfy.ws/name> "Loans and subsidies".
+<http://publications.europa.eu/resource/authority/subject-matter/BCE> <http://srv.meaningfy.ws/name> "European Central Bank (ECB)".
+<http://publications.europa.eu/resource/authority/subject-matter/ASIL> <http://srv.meaningfy.ws/name> "Asylum policy".
+<http://publications.europa.eu/resource/authority/subject-matter/LCP> <http://srv.meaningfy.ws/name> "Free movement of persons".
+<http://publications.europa.eu/resource/authority/subject-matter/DISC> <http://srv.meaningfy.ws/name> "Anti-discrimination".
+<http://publications.europa.eu/resource/authority/subject-matter/ELSJ> <http://srv.meaningfy.ws/name> "Area of freedom, security and justice".
+<http://publications.europa.eu/resource/authority/subject-matter/POLL> <http://srv.meaningfy.ws/name> "Pollution".
+<http://publications.europa.eu/resource/authority/subject-matter/ETAB> <http://srv.meaningfy.ws/name> "Right of establishment".
+<http://publications.europa.eu/resource/authority/subject-matter/PECO> <http://srv.meaningfy.ws/name> "Economic policy".
+<http://publications.europa.eu/resource/authority/subject-matter/c_adb3ab0f> <http://srv.meaningfy.ws/name> "Capital requirements".
+<http://publications.europa.eu/resource/authority/subject-matter/SOCI> <http://srv.meaningfy.ws/name> "Social provisions".
+<http://publications.europa.eu/resource/authority/subject-matter/PRIX> <http://srv.meaningfy.ws/name> "Prices".
+<http://publications.europa.eu/resource/authority/subject-matter/TVA> <http://srv.meaningfy.ws/name> "Value added tax".
+<http://publications.europa.eu/resource/authority/subject-matter/AL-A> <http://srv.meaningfy.ws/name> "Animal feedingstuffs".
+<http://publications.europa.eu/resource/authority/subject-matter/SERV> <http://srv.meaningfy.ws/name> "Freedom to provide services".
+<http://publications.europa.eu/resource/authority/subject-matter/INV> <http://srv.meaningfy.ws/name> "Investments".
+<http://publications.europa.eu/resource/authority/subject-matter/FISC> <http://srv.meaningfy.ws/name> "Taxation".
+<http://publications.europa.eu/resource/authority/subject-matter/OVIN> <http://srv.meaningfy.ws/name> "Sheepmeat and goatmeat".
+<http://publications.europa.eu/resource/authority/subject-matter/ENTC> <http://srv.meaningfy.ws/name> "Joint undertakings".
+<http://publications.europa.eu/resource/authority/subject-matter/STAT> <http://srv.meaningfy.ws/name> "Staff regulations and employment conditions - EC".
+<http://publications.europa.eu/resource/authority/subject-matter/LCM> <http://srv.meaningfy.ws/name> "Free movement of goods".

@@ -1,0 +1,20 @@
+{
+    "pwdb_target_group_l1": [
+        {
+            "uri": "http://srv.meaningfy.ws/pwdb_target_group_l1/category_0",
+            "name": "nan"
+        },
+        {
+            "uri": "http://srv.meaningfy.ws/pwdb_target_group_l1/category_1",
+            "name": "workers"
+        },
+        {
+            "uri": "http://srv.meaningfy.ws/pwdb_target_group_l1/category_2",
+            "name": "businesses"
+        },
+        {
+            "uri": "http://srv.meaningfy.ws/pwdb_target_group_l1/category_3",
+            "name": "citizens"
+        }
+    ]
+}

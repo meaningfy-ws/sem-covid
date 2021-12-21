@@ -1,13 +1,14 @@
 prefixes:
   ex: "http://example.com/"
   sc: "http://srv.meaningfy.ws/"
-  fn: http://example.com/idlab/function/
+  fn: "http://example.com/idlab/function/"
+  dct: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
 
 mappings:
     text:
         sources:
           - ['data.json~jsonpath', '$.*']
-        s: http://example.com/$(index)
+        s: sc:$(index)
         po:
           - [a, dct:Text]
           - [dct:date, $(date)]
@@ -30,7 +31,7 @@ mappings:
                     function: equal
                     parameters:
                     - [str1,$(pwdb_category),s]
-                    - [str2,$(title),o]
+                    - [str2,$(name),o]
           - p: sc:typeOfMeasure
             o:
                 mapping: pwdb_type_of_measure
@@ -87,6 +88,14 @@ mappings:
                     parameters:
                     - [fn:list,$(ireland_keyword),s]
                     - [fn:str,$(name),o]
+          - p: sc:resourceType
+            o:
+                mapping: ireland_page_type
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(ireland_page_type),s]
+                    - [fn:str,$(name),o]
           - p: dct:subject
             o:
                 mapping: eu_timeline_topic
@@ -94,11 +103,34 @@ mappings:
                     function: fn:listContainsElement
                     parameters:
                     - [fn:list,$(eu_timeline_topic),s]
-                    - [fn:str,$(name),o]                    
-    
+                    - [fn:str,$(name),o]
+          - p: dct:author
+            o:
+                mapping: eu_cellar_author_labels
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_cellar_author_labels),s]
+                    - [fn:str,$(name),o]                      
+          - p: sc:resourceType
+            o:
+                mapping: eu_cellar_resource_type_labels
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_cellar_resource_type_labels),s]
+                    - [fn:str,$(name),o]
+          - p: dct:subject
+            o:
+                mapping: eu_cellar_subject_matter_labels
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_cellar_subject_matter_labels),s]
+                    - [fn:str,$(name),o]
     dataset:
         sources:
-          - ['dataset.json~jsonpath', '$.datasets[*]']
+          - ['datasets.json~jsonpath', '$.datasets[*]']
         s: sc:$(title)
         po:
             - [a, dct:Dataset]
@@ -108,7 +140,7 @@ mappings:
     pwdb_category:
         sources:
           - ['pwdb_category.json~jsonpath', "$.pwdb_category[*]"]
-        s: sc:PWDBCategory_$(id)
+        s: $(uri)
         po:
             - [a, sc:Category]
             - [a, sc:PWDBCategory]
@@ -116,7 +148,7 @@ mappings:
     pwdb_funding:
         sources:
           - ['pwdb_funding.json~jsonpath', "$.pwdb_funding[*]"]
-        s: sc:PWDBFunding_$(uri)
+        s: $(uri)
         po:
             - [a, sc:PWDBFunding]
             - [dct:title, $(name)]
@@ -128,40 +160,64 @@ mappings:
             - [sc:name, $(name)]
     pwdb_type_of_measure:
         sources:
-            - ['pwdb_type_of_measure.json', "$.pwdb_type_of_measure[*]"]
+            - ['pwdb_type_of_measure.json~jsonpath', "$.pwdb_type_of_measure[*]"]
         s: $(uri)
         po:
             - [sc:name,$(name)]
     pwdb_actors:
         sources:
-            - ['pwdb_actors.json', "$.pwdb_actors[*]"]
+            - ['pwdb_actors.json~jsonpath', "$.pwdb_actors[*]"]
         s: $(uri)
         po:
             - [sc:name,$(name)]
     pwdb_target_group_l1:
         sources:
-            - ['pwdb_target_group_l1.json', "$.pwdb_target_group_l1[*]"]
+            - ['pwdb_target_group_l1.json~jsonpath', "$.pwdb_target_group_l1[*]"]
         s: $(uri)
         po:
             - [sc:name,$(name)]
     pwdb_target_group_l2:
         sources:
-            - ['pwdb_target_group_l2.json', "$.pwdb_target_group_l2[*]"]
+            - ['pwdb_target_group_l2.json~jsonpath', "$.pwdb_target_group_l2[*]"]
         s: $(uri)
         po:
             - [sc:name,$(name)]
     eu_timeline_topic:
         sources:
-            - ['eu_timeline_topic.json', "$.eu_timeline_topic[*]"]
+            - ['eu_timeline_topic.json~jsonpath', "$.eu_timeline_topic[*]"]
         s: $(uri)
         po:
             - [sc:name,$(name)]
     ireland_keyword:
         sources:
-            - ['ireland_keyword.json', "$.ireland_keyword[*]"]
+            - ['ireland_keyword.json~jsonpath', "$.ireland_keyword[*]"]
         s: $(uri)
         po:
             - [sc:name,$(name)]
-          
+    ireland_page_type:
+        sources:
+            - ['ireland_page_type.json~jsonpath', "$.ireland_page_type[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    eu_cellar_author_labels:
+        sources:
+            - ['eu_cellar_author_labels.json~jsonpath', "$.eu_cellar_author_labels[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    eu_cellar_resource_type_labels:
+        sources:
+            - ['eu_cellar_resource_type_labels.json~jsonpath', "$.eu_cellar_resource_type_labels[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+    eu_cellar_subject_matter_labels:
+        sources:
+            - ['eu_cellar_subject_matter_labels.json~jsonpath', "$.eu_cellar_subject_matter_labels[*]"]
+        s: $(uri)
+        po:
+            - [sc:name,$(name)]
+
 
     
