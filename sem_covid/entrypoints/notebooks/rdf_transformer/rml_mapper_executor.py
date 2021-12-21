@@ -45,10 +45,6 @@ rml_rule = (Path(__file__).resolve().parent/Path(f"./rml_rules/{RML_RULE_FILE_NA
 sources = pack_data_sources(DATA_SOURCES_PATH)
 
 print(sources.keys())
-#print(sources.keys())
-# for key in sources.keys():
-#     print(key)
-#     print(sources[key])
 
 rdf_result = rml_mapper.transform(rml_rule=rml_rule, sources = pack_data_sources(DATA_SOURCES_PATH))
 
