@@ -87,3 +87,33 @@ class SPARQLTripleStore(TripleStoreABC):
 
     def __str__(self):
         return f"from <...{str(self.endpoint.endpoint)[-30:]}> {str(self.endpoint.queryString)[:60]} ..."
+
+from sem_covid import config
+from rdflib import Graph, Literal, URIRef
+from rdflib.plugins.stores import sparqlstore
+from sem_covid.adapters.minio_object_store import MinioObjectStore
+from minio import Minio
+
+query_endpoint = 'http://localhost:8595/test/query'
+update_endpoint = 'http://localhost:8595/test/update'
+RDF_DATA_BUCKET = 'rdf-transformer'
+store = sparqlstore.SPARQLUpdateStore(auth=('admin','1234'))
+store.open((query_endpoint, update_endpoint))
+
+g = Graph(identifier = URIRef('http://www.example.com/sc-data1'))
+
+minio_client = Minio(config.MINIO_URL,
+                             access_key=config.MINIO_ACCESS_KEY,
+                             secret_key=config.MINIO_SECRET_KEY,
+                             secure=False)
+
+minio_client = MinioObjectStore(minio_bucket=RDF_DATA_BUCKET,minio_client= minio_client)
+raw_data = minio_client.get_object(object_name='/results/test_result.ttl').decode('utf-8')
+print(raw_data)
+g.parse(data=raw_data, format='nt11')
+print(list(g.triples(triple=(None,None,None))))
+print(g.all_nodes())
+#store.add_graph(g)
+for spo in g.triples(triple=(None,None,None)):
+    store.add(spo=spo)
+store.commit()
