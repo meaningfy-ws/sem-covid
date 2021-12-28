@@ -1,6 +1,5 @@
 prefixes:
-  ex: "http://example.com/"
-  sc: "http://srv.meaningfy.ws/"
+  sc: "http://publications.europa.eu/resource/ontology/sc#"
   fn: "http://example.com/idlab/function/"
   dct: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
 
@@ -10,7 +9,7 @@ mappings:
           - ['data.json~jsonpath', '$.*']
         s: sc:$(index)
         po:
-          - [a, dct:Text]
+          - [a, sc:Measure]
           - [dct:date, $(date)]
           - [dct:title, $(title)]
           - [sc:content, $(content)]
@@ -40,7 +39,7 @@ mappings:
                     parameters:
                     - [str1,$(pwdb_type_of_measure),s]
                     - [str2,$(name),o]
-          - p: sc:actors
+          - p: sc:actor
             o:
                 mapping: pwdb_actors
                 condition:
@@ -142,82 +141,105 @@ mappings:
           - ['pwdb_category.json~jsonpath', "$.pwdb_category[*]"]
         s: $(uri)
         po:
-            - [a, sc:Category]
-            - [a, sc:PWDBCategory]
-            - [dct:title, $(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:PWDBCategory]
     pwdb_funding:
         sources:
           - ['pwdb_funding.json~jsonpath', "$.pwdb_funding[*]"]
         s: $(uri)
         po:
-            - [a, sc:PWDBFunding]
-            - [dct:title, $(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:PWDBFunding]
     country:
         sources:
             - ['country.json~jsonpath', "$.country[*]"]
         s: $(uri)
         po:
-            - [sc:name, $(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:Country]
     pwdb_type_of_measure:
         sources:
             - ['pwdb_type_of_measure.json~jsonpath', "$.pwdb_type_of_measure[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:PWDBTypeOfMeasure]
     pwdb_actors:
         sources:
             - ['pwdb_actors.json~jsonpath', "$.pwdb_actors[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:Actor]
     pwdb_target_group_l1:
         sources:
             - ['pwdb_target_group_l1.json~jsonpath', "$.pwdb_target_group_l1[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:PWDBTargetGroupL1]
     pwdb_target_group_l2:
         sources:
             - ['pwdb_target_group_l2.json~jsonpath', "$.pwdb_target_group_l2[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:PWDBTargetGroupL2]
     eu_timeline_topic:
         sources:
             - ['eu_timeline_topic.json~jsonpath', "$.eu_timeline_topic[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:EUTimelineTopic]
     ireland_keyword:
         sources:
             - ['ireland_keyword.json~jsonpath', "$.ireland_keyword[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:IrelandKeyword]
     ireland_page_type:
         sources:
             - ['ireland_page_type.json~jsonpath', "$.ireland_page_type[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:IrelandPageType]
     eu_cellar_author_labels:
         sources:
             - ['eu_cellar_author_labels.json~jsonpath', "$.eu_cellar_author_labels[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:EUCellarAuthorLabels]
     eu_cellar_resource_type_labels:
         sources:
             - ['eu_cellar_resource_type_labels.json~jsonpath', "$.eu_cellar_resource_type_labels[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:EUCellarResourceTypeLabels]
     eu_cellar_subject_matter_labels:
         sources:
             - ['eu_cellar_subject_matter_labels.json~jsonpath', "$.eu_cellar_subject_matter_labels[*]"]
         s: $(uri)
         po:
-            - [sc:name,$(name)]
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept]
+            - [skos:inScheme, sc:EUCellarSubjectMatterLabels]
 
 
     

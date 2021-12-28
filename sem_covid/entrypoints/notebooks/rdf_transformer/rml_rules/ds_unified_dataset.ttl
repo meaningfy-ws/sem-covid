@@ -10,8 +10,7 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix : <http://mapping.example.com/>.
-@prefix ex: <http://example.com/>.
-@prefix sc: <http://srv.meaningfy.ws/>.
+@prefix sc: <http://publications.europa.eu/resource/ontology/sc#>.
 @prefix fn: <http://example.com/idlab/function/>.
 @prefix dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>.
 
@@ -26,7 +25,7 @@
     rdfs:label "text".
 :s_000 a rr:SubjectMap.
 :map_text_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://srv.meaningfy.ws/{index}".
+:s_000 rr:template "http://publications.europa.eu/resource/ontology/sc#{index}".
 :pom_000 a rr:PredicateObjectMap.
 :map_text_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
@@ -34,7 +33,7 @@
 :pm_000 rr:constant rdf:type.
 :pom_000 rr:objectMap :om_000.
 :om_000 a rr:ObjectMap;
-    rr:constant "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Text";
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#Measure";
     rr:termType rr:IRI.
 :pom_001 a rr:PredicateObjectMap.
 :map_text_000 rr:predicateObjectMap :pom_001.
@@ -94,7 +93,7 @@
 :map_text_000 rr:predicateObjectMap :pom_008.
 :pm_008 a rr:PredicateMap.
 :pom_008 rr:predicateMap :pm_008.
-:pm_008 rr:constant sc:actors.
+:pm_008 rr:constant sc:actor.
 :pom_008 rr:objectMap :om_008.
 :pom_009 a rr:PredicateObjectMap.
 :map_text_000 rr:predicateObjectMap :pom_009.
@@ -166,7 +165,7 @@
     rdfs:label "dataset".
 :s_001 a rr:SubjectMap.
 :map_dataset_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://srv.meaningfy.ws/{title}".
+:s_001 rr:template "http://publications.europa.eu/resource/ontology/sc#{title}".
 :pom_019 a rr:PredicateObjectMap.
 :map_dataset_000 rr:predicateObjectMap :pom_019.
 :pm_019 a rr:PredicateMap.
@@ -218,11 +217,11 @@
 :map_pwdb_category_000 rr:predicateObjectMap :pom_023.
 :pm_023 a rr:PredicateMap.
 :pom_023 rr:predicateMap :pm_023.
-:pm_023 rr:constant rdf:type.
+:pm_023 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
 :pom_023 rr:objectMap :om_023.
 :om_023 a rr:ObjectMap;
-    rr:constant "http://srv.meaningfy.ws/Category";
-    rr:termType rr:IRI.
+    rml:reference "name";
+    rr:termType rr:Literal.
 :pom_024 a rr:PredicateObjectMap.
 :map_pwdb_category_000 rr:predicateObjectMap :pom_024.
 :pm_024 a rr:PredicateMap.
@@ -230,16 +229,16 @@
 :pm_024 rr:constant rdf:type.
 :pom_024 rr:objectMap :om_024.
 :om_024 a rr:ObjectMap;
-    rr:constant "http://srv.meaningfy.ws/PWDBCategory";
-    rr:termType rr:IRI.
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
 :pom_025 a rr:PredicateObjectMap.
 :map_pwdb_category_000 rr:predicateObjectMap :pom_025.
 :pm_025 a rr:PredicateMap.
 :pom_025 rr:predicateMap :pm_025.
-:pm_025 rr:constant dct:title.
+:pm_025 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
 :pom_025 rr:objectMap :om_025.
 :om_025 a rr:ObjectMap;
-    rml:reference "name";
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBCategory";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_pwdb_funding_000.
 :map_pwdb_funding_000 rml:logicalSource :source_003.
@@ -256,19 +255,28 @@
 :map_pwdb_funding_000 rr:predicateObjectMap :pom_026.
 :pm_026 a rr:PredicateMap.
 :pom_026 rr:predicateMap :pm_026.
-:pm_026 rr:constant rdf:type.
+:pm_026 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
 :pom_026 rr:objectMap :om_026.
 :om_026 a rr:ObjectMap;
-    rr:constant "http://srv.meaningfy.ws/PWDBFunding";
-    rr:termType rr:IRI.
+    rml:reference "name";
+    rr:termType rr:Literal.
 :pom_027 a rr:PredicateObjectMap.
 :map_pwdb_funding_000 rr:predicateObjectMap :pom_027.
 :pm_027 a rr:PredicateMap.
 :pom_027 rr:predicateMap :pm_027.
-:pm_027 rr:constant dct:title.
+:pm_027 rr:constant rdf:type.
 :pom_027 rr:objectMap :om_027.
 :om_027 a rr:ObjectMap;
-    rml:reference "name";
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_028 a rr:PredicateObjectMap.
+:map_pwdb_funding_000 rr:predicateObjectMap :pom_028.
+:pm_028 a rr:PredicateMap.
+:pom_028 rr:predicateMap :pm_028.
+:pm_028 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_028 rr:objectMap :om_028.
+:om_028 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBFunding";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_country_000.
 :map_country_000 rml:logicalSource :source_004.
@@ -281,14 +289,32 @@
 :s_004 a rr:SubjectMap.
 :map_country_000 rr:subjectMap :s_004.
 :s_004 rml:reference "uri".
-:pom_028 a rr:PredicateObjectMap.
-:map_country_000 rr:predicateObjectMap :pom_028.
-:pm_028 a rr:PredicateMap.
-:pom_028 rr:predicateMap :pm_028.
-:pm_028 rr:constant sc:name.
-:pom_028 rr:objectMap :om_028.
-:om_028 a rr:ObjectMap;
+:pom_029 a rr:PredicateObjectMap.
+:map_country_000 rr:predicateObjectMap :pom_029.
+:pm_029 a rr:PredicateMap.
+:pom_029 rr:predicateMap :pm_029.
+:pm_029 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_029 rr:objectMap :om_029.
+:om_029 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_030 a rr:PredicateObjectMap.
+:map_country_000 rr:predicateObjectMap :pom_030.
+:pm_030 a rr:PredicateMap.
+:pom_030 rr:predicateMap :pm_030.
+:pm_030 rr:constant rdf:type.
+:pom_030 rr:objectMap :om_030.
+:om_030 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_031 a rr:PredicateObjectMap.
+:map_country_000 rr:predicateObjectMap :pom_031.
+:pm_031 a rr:PredicateMap.
+:pom_031 rr:predicateMap :pm_031.
+:pm_031 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_031 rr:objectMap :om_031.
+:om_031 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#Country";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_pwdb_type_of_measure_000.
 :map_pwdb_type_of_measure_000 rml:logicalSource :source_005.
@@ -301,14 +327,32 @@
 :s_005 a rr:SubjectMap.
 :map_pwdb_type_of_measure_000 rr:subjectMap :s_005.
 :s_005 rml:reference "uri".
-:pom_029 a rr:PredicateObjectMap.
-:map_pwdb_type_of_measure_000 rr:predicateObjectMap :pom_029.
-:pm_029 a rr:PredicateMap.
-:pom_029 rr:predicateMap :pm_029.
-:pm_029 rr:constant sc:name.
-:pom_029 rr:objectMap :om_029.
-:om_029 a rr:ObjectMap;
+:pom_032 a rr:PredicateObjectMap.
+:map_pwdb_type_of_measure_000 rr:predicateObjectMap :pom_032.
+:pm_032 a rr:PredicateMap.
+:pom_032 rr:predicateMap :pm_032.
+:pm_032 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_032 rr:objectMap :om_032.
+:om_032 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_033 a rr:PredicateObjectMap.
+:map_pwdb_type_of_measure_000 rr:predicateObjectMap :pom_033.
+:pm_033 a rr:PredicateMap.
+:pom_033 rr:predicateMap :pm_033.
+:pm_033 rr:constant rdf:type.
+:pom_033 rr:objectMap :om_033.
+:om_033 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_034 a rr:PredicateObjectMap.
+:map_pwdb_type_of_measure_000 rr:predicateObjectMap :pom_034.
+:pm_034 a rr:PredicateMap.
+:pom_034 rr:predicateMap :pm_034.
+:pm_034 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_034 rr:objectMap :om_034.
+:om_034 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBTypeOfMeasure";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_pwdb_actors_000.
 :map_pwdb_actors_000 rml:logicalSource :source_006.
@@ -321,14 +365,32 @@
 :s_006 a rr:SubjectMap.
 :map_pwdb_actors_000 rr:subjectMap :s_006.
 :s_006 rml:reference "uri".
-:pom_030 a rr:PredicateObjectMap.
-:map_pwdb_actors_000 rr:predicateObjectMap :pom_030.
-:pm_030 a rr:PredicateMap.
-:pom_030 rr:predicateMap :pm_030.
-:pm_030 rr:constant sc:name.
-:pom_030 rr:objectMap :om_030.
-:om_030 a rr:ObjectMap;
+:pom_035 a rr:PredicateObjectMap.
+:map_pwdb_actors_000 rr:predicateObjectMap :pom_035.
+:pm_035 a rr:PredicateMap.
+:pom_035 rr:predicateMap :pm_035.
+:pm_035 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_035 rr:objectMap :om_035.
+:om_035 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_036 a rr:PredicateObjectMap.
+:map_pwdb_actors_000 rr:predicateObjectMap :pom_036.
+:pm_036 a rr:PredicateMap.
+:pom_036 rr:predicateMap :pm_036.
+:pm_036 rr:constant rdf:type.
+:pom_036 rr:objectMap :om_036.
+:om_036 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_037 a rr:PredicateObjectMap.
+:map_pwdb_actors_000 rr:predicateObjectMap :pom_037.
+:pm_037 a rr:PredicateMap.
+:pom_037 rr:predicateMap :pm_037.
+:pm_037 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_037 rr:objectMap :om_037.
+:om_037 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#Actor";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_pwdb_target_group_l1_000.
 :map_pwdb_target_group_l1_000 rml:logicalSource :source_007.
@@ -341,14 +403,32 @@
 :s_007 a rr:SubjectMap.
 :map_pwdb_target_group_l1_000 rr:subjectMap :s_007.
 :s_007 rml:reference "uri".
-:pom_031 a rr:PredicateObjectMap.
-:map_pwdb_target_group_l1_000 rr:predicateObjectMap :pom_031.
-:pm_031 a rr:PredicateMap.
-:pom_031 rr:predicateMap :pm_031.
-:pm_031 rr:constant sc:name.
-:pom_031 rr:objectMap :om_031.
-:om_031 a rr:ObjectMap;
+:pom_038 a rr:PredicateObjectMap.
+:map_pwdb_target_group_l1_000 rr:predicateObjectMap :pom_038.
+:pm_038 a rr:PredicateMap.
+:pom_038 rr:predicateMap :pm_038.
+:pm_038 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_038 rr:objectMap :om_038.
+:om_038 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_039 a rr:PredicateObjectMap.
+:map_pwdb_target_group_l1_000 rr:predicateObjectMap :pom_039.
+:pm_039 a rr:PredicateMap.
+:pom_039 rr:predicateMap :pm_039.
+:pm_039 rr:constant rdf:type.
+:pom_039 rr:objectMap :om_039.
+:om_039 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_040 a rr:PredicateObjectMap.
+:map_pwdb_target_group_l1_000 rr:predicateObjectMap :pom_040.
+:pm_040 a rr:PredicateMap.
+:pom_040 rr:predicateMap :pm_040.
+:pm_040 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_040 rr:objectMap :om_040.
+:om_040 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBTargetGroupL1";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_pwdb_target_group_l2_000.
 :map_pwdb_target_group_l2_000 rml:logicalSource :source_008.
@@ -361,14 +441,32 @@
 :s_008 a rr:SubjectMap.
 :map_pwdb_target_group_l2_000 rr:subjectMap :s_008.
 :s_008 rml:reference "uri".
-:pom_032 a rr:PredicateObjectMap.
-:map_pwdb_target_group_l2_000 rr:predicateObjectMap :pom_032.
-:pm_032 a rr:PredicateMap.
-:pom_032 rr:predicateMap :pm_032.
-:pm_032 rr:constant sc:name.
-:pom_032 rr:objectMap :om_032.
-:om_032 a rr:ObjectMap;
+:pom_041 a rr:PredicateObjectMap.
+:map_pwdb_target_group_l2_000 rr:predicateObjectMap :pom_041.
+:pm_041 a rr:PredicateMap.
+:pom_041 rr:predicateMap :pm_041.
+:pm_041 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_041 rr:objectMap :om_041.
+:om_041 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_042 a rr:PredicateObjectMap.
+:map_pwdb_target_group_l2_000 rr:predicateObjectMap :pom_042.
+:pm_042 a rr:PredicateMap.
+:pom_042 rr:predicateMap :pm_042.
+:pm_042 rr:constant rdf:type.
+:pom_042 rr:objectMap :om_042.
+:om_042 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_043 a rr:PredicateObjectMap.
+:map_pwdb_target_group_l2_000 rr:predicateObjectMap :pom_043.
+:pm_043 a rr:PredicateMap.
+:pom_043 rr:predicateMap :pm_043.
+:pm_043 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_043 rr:objectMap :om_043.
+:om_043 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBTargetGroupL2";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_eu_timeline_topic_000.
 :map_eu_timeline_topic_000 rml:logicalSource :source_009.
@@ -381,14 +479,32 @@
 :s_009 a rr:SubjectMap.
 :map_eu_timeline_topic_000 rr:subjectMap :s_009.
 :s_009 rml:reference "uri".
-:pom_033 a rr:PredicateObjectMap.
-:map_eu_timeline_topic_000 rr:predicateObjectMap :pom_033.
-:pm_033 a rr:PredicateMap.
-:pom_033 rr:predicateMap :pm_033.
-:pm_033 rr:constant sc:name.
-:pom_033 rr:objectMap :om_033.
-:om_033 a rr:ObjectMap;
+:pom_044 a rr:PredicateObjectMap.
+:map_eu_timeline_topic_000 rr:predicateObjectMap :pom_044.
+:pm_044 a rr:PredicateMap.
+:pom_044 rr:predicateMap :pm_044.
+:pm_044 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_044 rr:objectMap :om_044.
+:om_044 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_045 a rr:PredicateObjectMap.
+:map_eu_timeline_topic_000 rr:predicateObjectMap :pom_045.
+:pm_045 a rr:PredicateMap.
+:pom_045 rr:predicateMap :pm_045.
+:pm_045 rr:constant rdf:type.
+:pom_045 rr:objectMap :om_045.
+:om_045 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_046 a rr:PredicateObjectMap.
+:map_eu_timeline_topic_000 rr:predicateObjectMap :pom_046.
+:pm_046 a rr:PredicateMap.
+:pom_046 rr:predicateMap :pm_046.
+:pm_046 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_046 rr:objectMap :om_046.
+:om_046 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#EUTimelineTopic";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_ireland_keyword_000.
 :map_ireland_keyword_000 rml:logicalSource :source_010.
@@ -401,14 +517,32 @@
 :s_010 a rr:SubjectMap.
 :map_ireland_keyword_000 rr:subjectMap :s_010.
 :s_010 rml:reference "uri".
-:pom_034 a rr:PredicateObjectMap.
-:map_ireland_keyword_000 rr:predicateObjectMap :pom_034.
-:pm_034 a rr:PredicateMap.
-:pom_034 rr:predicateMap :pm_034.
-:pm_034 rr:constant sc:name.
-:pom_034 rr:objectMap :om_034.
-:om_034 a rr:ObjectMap;
+:pom_047 a rr:PredicateObjectMap.
+:map_ireland_keyword_000 rr:predicateObjectMap :pom_047.
+:pm_047 a rr:PredicateMap.
+:pom_047 rr:predicateMap :pm_047.
+:pm_047 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_047 rr:objectMap :om_047.
+:om_047 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_048 a rr:PredicateObjectMap.
+:map_ireland_keyword_000 rr:predicateObjectMap :pom_048.
+:pm_048 a rr:PredicateMap.
+:pom_048 rr:predicateMap :pm_048.
+:pm_048 rr:constant rdf:type.
+:pom_048 rr:objectMap :om_048.
+:om_048 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_049 a rr:PredicateObjectMap.
+:map_ireland_keyword_000 rr:predicateObjectMap :pom_049.
+:pm_049 a rr:PredicateMap.
+:pom_049 rr:predicateMap :pm_049.
+:pm_049 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_049 rr:objectMap :om_049.
+:om_049 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#IrelandKeyword";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_ireland_page_type_000.
 :map_ireland_page_type_000 rml:logicalSource :source_011.
@@ -421,14 +555,32 @@
 :s_011 a rr:SubjectMap.
 :map_ireland_page_type_000 rr:subjectMap :s_011.
 :s_011 rml:reference "uri".
-:pom_035 a rr:PredicateObjectMap.
-:map_ireland_page_type_000 rr:predicateObjectMap :pom_035.
-:pm_035 a rr:PredicateMap.
-:pom_035 rr:predicateMap :pm_035.
-:pm_035 rr:constant sc:name.
-:pom_035 rr:objectMap :om_035.
-:om_035 a rr:ObjectMap;
+:pom_050 a rr:PredicateObjectMap.
+:map_ireland_page_type_000 rr:predicateObjectMap :pom_050.
+:pm_050 a rr:PredicateMap.
+:pom_050 rr:predicateMap :pm_050.
+:pm_050 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_050 rr:objectMap :om_050.
+:om_050 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_051 a rr:PredicateObjectMap.
+:map_ireland_page_type_000 rr:predicateObjectMap :pom_051.
+:pm_051 a rr:PredicateMap.
+:pom_051 rr:predicateMap :pm_051.
+:pm_051 rr:constant rdf:type.
+:pom_051 rr:objectMap :om_051.
+:om_051 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_052 a rr:PredicateObjectMap.
+:map_ireland_page_type_000 rr:predicateObjectMap :pom_052.
+:pm_052 a rr:PredicateMap.
+:pom_052 rr:predicateMap :pm_052.
+:pm_052 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_052 rr:objectMap :om_052.
+:om_052 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#IrelandPageType";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_eu_cellar_author_labels_000.
 :map_eu_cellar_author_labels_000 rml:logicalSource :source_012.
@@ -441,14 +593,32 @@
 :s_012 a rr:SubjectMap.
 :map_eu_cellar_author_labels_000 rr:subjectMap :s_012.
 :s_012 rml:reference "uri".
-:pom_036 a rr:PredicateObjectMap.
-:map_eu_cellar_author_labels_000 rr:predicateObjectMap :pom_036.
-:pm_036 a rr:PredicateMap.
-:pom_036 rr:predicateMap :pm_036.
-:pm_036 rr:constant sc:name.
-:pom_036 rr:objectMap :om_036.
-:om_036 a rr:ObjectMap;
+:pom_053 a rr:PredicateObjectMap.
+:map_eu_cellar_author_labels_000 rr:predicateObjectMap :pom_053.
+:pm_053 a rr:PredicateMap.
+:pom_053 rr:predicateMap :pm_053.
+:pm_053 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_053 rr:objectMap :om_053.
+:om_053 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_054 a rr:PredicateObjectMap.
+:map_eu_cellar_author_labels_000 rr:predicateObjectMap :pom_054.
+:pm_054 a rr:PredicateMap.
+:pom_054 rr:predicateMap :pm_054.
+:pm_054 rr:constant rdf:type.
+:pom_054 rr:objectMap :om_054.
+:om_054 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_055 a rr:PredicateObjectMap.
+:map_eu_cellar_author_labels_000 rr:predicateObjectMap :pom_055.
+:pm_055 a rr:PredicateMap.
+:pom_055 rr:predicateMap :pm_055.
+:pm_055 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_055 rr:objectMap :om_055.
+:om_055 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#EUCellarAuthorLabels";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_eu_cellar_resource_type_labels_000.
 :map_eu_cellar_resource_type_labels_000 rml:logicalSource :source_013.
@@ -461,14 +631,32 @@
 :s_013 a rr:SubjectMap.
 :map_eu_cellar_resource_type_labels_000 rr:subjectMap :s_013.
 :s_013 rml:reference "uri".
-:pom_037 a rr:PredicateObjectMap.
-:map_eu_cellar_resource_type_labels_000 rr:predicateObjectMap :pom_037.
-:pm_037 a rr:PredicateMap.
-:pom_037 rr:predicateMap :pm_037.
-:pm_037 rr:constant sc:name.
-:pom_037 rr:objectMap :om_037.
-:om_037 a rr:ObjectMap;
+:pom_056 a rr:PredicateObjectMap.
+:map_eu_cellar_resource_type_labels_000 rr:predicateObjectMap :pom_056.
+:pm_056 a rr:PredicateMap.
+:pom_056 rr:predicateMap :pm_056.
+:pm_056 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_056 rr:objectMap :om_056.
+:om_056 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_057 a rr:PredicateObjectMap.
+:map_eu_cellar_resource_type_labels_000 rr:predicateObjectMap :pom_057.
+:pm_057 a rr:PredicateMap.
+:pom_057 rr:predicateMap :pm_057.
+:pm_057 rr:constant rdf:type.
+:pom_057 rr:objectMap :om_057.
+:om_057 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_058 a rr:PredicateObjectMap.
+:map_eu_cellar_resource_type_labels_000 rr:predicateObjectMap :pom_058.
+:pm_058 a rr:PredicateMap.
+:pom_058 rr:predicateMap :pm_058.
+:pm_058 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_058 rr:objectMap :om_058.
+:om_058 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#EUCellarResourceTypeLabels";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_eu_cellar_subject_matter_labels_000.
 :map_eu_cellar_subject_matter_labels_000 rml:logicalSource :source_014.
@@ -481,14 +669,32 @@
 :s_014 a rr:SubjectMap.
 :map_eu_cellar_subject_matter_labels_000 rr:subjectMap :s_014.
 :s_014 rml:reference "uri".
-:pom_038 a rr:PredicateObjectMap.
-:map_eu_cellar_subject_matter_labels_000 rr:predicateObjectMap :pom_038.
-:pm_038 a rr:PredicateMap.
-:pom_038 rr:predicateMap :pm_038.
-:pm_038 rr:constant sc:name.
-:pom_038 rr:objectMap :om_038.
-:om_038 a rr:ObjectMap;
+:pom_059 a rr:PredicateObjectMap.
+:map_eu_cellar_subject_matter_labels_000 rr:predicateObjectMap :pom_059.
+:pm_059 a rr:PredicateMap.
+:pom_059 rr:predicateMap :pm_059.
+:pm_059 rr:constant <http://www.w3.org/2004/02/skos/core#prefLabel>.
+:pom_059 rr:objectMap :om_059.
+:om_059 a rr:ObjectMap;
     rml:reference "name";
+    rr:termType rr:Literal.
+:pom_060 a rr:PredicateObjectMap.
+:map_eu_cellar_subject_matter_labels_000 rr:predicateObjectMap :pom_060.
+:pm_060 a rr:PredicateMap.
+:pom_060 rr:predicateMap :pm_060.
+:pm_060 rr:constant rdf:type.
+:pom_060 rr:objectMap :om_060.
+:om_060 a rr:ObjectMap;
+    rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
+    rr:termType rr:Literal.
+:pom_061 a rr:PredicateObjectMap.
+:map_eu_cellar_subject_matter_labels_000 rr:predicateObjectMap :pom_061.
+:pm_061 a rr:PredicateMap.
+:pom_061 rr:predicateMap :pm_061.
+:pm_061 rr:constant <http://www.w3.org/2004/02/skos/core#inScheme>.
+:pom_061 rr:objectMap :om_061.
+:om_061 a rr:ObjectMap;
+    rr:constant "http://publications.europa.eu/resource/ontology/sc#EUCellarSubjectMatterLabels";
     rr:termType rr:Literal.
 :om_005 a rr:ObjectMap;
     rr:parentTriplesMap :map_dataset_000;
@@ -516,22 +722,22 @@
 :pomexec_000 rr:objectMap :omexec_000.
 :omexec_000 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_000 rr:predicateObjectMap :pom_039.
-:pom_039 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_039.
-:pm_039 a rr:PredicateMap;
+:fn_000 rr:predicateObjectMap :pom_062.
+:pom_062 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_062.
+:pm_062 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_039 rr:objectMap :om_039.
-:om_039 a rr:ObjectMap;
+:pom_062 rr:objectMap :om_062.
+:om_062 a rr:ObjectMap;
     rml:reference "pwdb_actors";
     rr:termType rr:Literal.
-:fn_000 rr:predicateObjectMap :pom_040.
-:pom_040 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_040.
-:pm_040 a rr:PredicateMap;
+:fn_000 rr:predicateObjectMap :pom_063.
+:pom_063 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_063.
+:pm_063 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_040 rr:objectMap :om_040.
-:om_040 a rr:ObjectMap;
+:pom_063 rr:objectMap :om_063.
+:om_063 a rr:ObjectMap;
     rml:parentTermMap :ptm_000.
 :ptm_000 rml:reference "name".
 :om_009 a rr:ObjectMap;
@@ -550,22 +756,22 @@
 :pomexec_001 rr:objectMap :omexec_001.
 :omexec_001 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_001 rr:predicateObjectMap :pom_041.
-:pom_041 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_041.
-:pm_041 a rr:PredicateMap;
+:fn_001 rr:predicateObjectMap :pom_064.
+:pom_064 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_064.
+:pm_064 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_041 rr:objectMap :om_041.
-:om_041 a rr:ObjectMap;
+:pom_064 rr:objectMap :om_064.
+:om_064 a rr:ObjectMap;
     rml:reference "pwdb_funding";
     rr:termType rr:Literal.
-:fn_001 rr:predicateObjectMap :pom_042.
-:pom_042 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_042.
-:pm_042 a rr:PredicateMap;
+:fn_001 rr:predicateObjectMap :pom_065.
+:pom_065 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_065.
+:pm_065 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_042 rr:objectMap :om_042.
-:om_042 a rr:ObjectMap;
+:pom_065 rr:objectMap :om_065.
+:om_065 a rr:ObjectMap;
     rml:parentTermMap :ptm_001.
 :ptm_001 rml:reference "name".
 :om_011 a rr:ObjectMap;
@@ -579,22 +785,22 @@
 :pomexec_002 rr:objectMap :omexec_002.
 :omexec_002 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_002 rr:predicateObjectMap :pom_043.
-:pom_043 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_043.
-:pm_043 a rr:PredicateMap;
+:fn_002 rr:predicateObjectMap :pom_066.
+:pom_066 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_066.
+:pm_066 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_043 rr:objectMap :om_043.
-:om_043 a rr:ObjectMap;
+:pom_066 rr:objectMap :om_066.
+:om_066 a rr:ObjectMap;
     rml:reference "pwdb_target_group_l1";
     rr:termType rr:Literal.
-:fn_002 rr:predicateObjectMap :pom_044.
-:pom_044 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_044.
-:pm_044 a rr:PredicateMap;
+:fn_002 rr:predicateObjectMap :pom_067.
+:pom_067 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_067.
+:pm_067 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_044 rr:objectMap :om_044.
-:om_044 a rr:ObjectMap;
+:pom_067 rr:objectMap :om_067.
+:om_067 a rr:ObjectMap;
     rml:parentTermMap :ptm_002.
 :ptm_002 rml:reference "name".
 :om_012 a rr:ObjectMap;
@@ -608,22 +814,22 @@
 :pomexec_003 rr:objectMap :omexec_003.
 :omexec_003 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_003 rr:predicateObjectMap :pom_045.
-:pom_045 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_045.
-:pm_045 a rr:PredicateMap;
+:fn_003 rr:predicateObjectMap :pom_068.
+:pom_068 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_068.
+:pm_068 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_045 rr:objectMap :om_045.
-:om_045 a rr:ObjectMap;
+:pom_068 rr:objectMap :om_068.
+:om_068 a rr:ObjectMap;
     rml:reference "pwdb_target_group_l2";
     rr:termType rr:Literal.
-:fn_003 rr:predicateObjectMap :pom_046.
-:pom_046 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_046.
-:pm_046 a rr:PredicateMap;
+:fn_003 rr:predicateObjectMap :pom_069.
+:pom_069 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_069.
+:pm_069 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_046 rr:objectMap :om_046.
-:om_046 a rr:ObjectMap;
+:pom_069 rr:objectMap :om_069.
+:om_069 a rr:ObjectMap;
     rml:parentTermMap :ptm_003.
 :ptm_003 rml:reference "name".
 :om_013 a rr:ObjectMap;
@@ -637,22 +843,22 @@
 :pomexec_004 rr:objectMap :omexec_004.
 :omexec_004 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_004 rr:predicateObjectMap :pom_047.
-:pom_047 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_047.
-:pm_047 a rr:PredicateMap;
+:fn_004 rr:predicateObjectMap :pom_070.
+:pom_070 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_070.
+:pm_070 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_047 rr:objectMap :om_047.
-:om_047 a rr:ObjectMap;
+:pom_070 rr:objectMap :om_070.
+:om_070 a rr:ObjectMap;
     rml:reference "ireland_keyword";
     rr:termType rr:Literal.
-:fn_004 rr:predicateObjectMap :pom_048.
-:pom_048 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_048.
-:pm_048 a rr:PredicateMap;
+:fn_004 rr:predicateObjectMap :pom_071.
+:pom_071 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_071.
+:pm_071 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_048 rr:objectMap :om_048.
-:om_048 a rr:ObjectMap;
+:pom_071 rr:objectMap :om_071.
+:om_071 a rr:ObjectMap;
     rml:parentTermMap :ptm_004.
 :ptm_004 rml:reference "name".
 :om_014 a rr:ObjectMap;
@@ -666,22 +872,22 @@
 :pomexec_005 rr:objectMap :omexec_005.
 :omexec_005 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_005 rr:predicateObjectMap :pom_049.
-:pom_049 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_049.
-:pm_049 a rr:PredicateMap;
+:fn_005 rr:predicateObjectMap :pom_072.
+:pom_072 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_072.
+:pm_072 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_049 rr:objectMap :om_049.
-:om_049 a rr:ObjectMap;
+:pom_072 rr:objectMap :om_072.
+:om_072 a rr:ObjectMap;
     rml:reference "ireland_page_type";
     rr:termType rr:Literal.
-:fn_005 rr:predicateObjectMap :pom_050.
-:pom_050 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_050.
-:pm_050 a rr:PredicateMap;
+:fn_005 rr:predicateObjectMap :pom_073.
+:pom_073 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_073.
+:pm_073 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_050 rr:objectMap :om_050.
-:om_050 a rr:ObjectMap;
+:pom_073 rr:objectMap :om_073.
+:om_073 a rr:ObjectMap;
     rml:parentTermMap :ptm_005.
 :ptm_005 rml:reference "name".
 :om_015 a rr:ObjectMap;
@@ -695,22 +901,22 @@
 :pomexec_006 rr:objectMap :omexec_006.
 :omexec_006 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_006 rr:predicateObjectMap :pom_051.
-:pom_051 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_051.
-:pm_051 a rr:PredicateMap;
+:fn_006 rr:predicateObjectMap :pom_074.
+:pom_074 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_074.
+:pm_074 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_051 rr:objectMap :om_051.
-:om_051 a rr:ObjectMap;
+:pom_074 rr:objectMap :om_074.
+:om_074 a rr:ObjectMap;
     rml:reference "eu_timeline_topic";
     rr:termType rr:Literal.
-:fn_006 rr:predicateObjectMap :pom_052.
-:pom_052 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_052.
-:pm_052 a rr:PredicateMap;
+:fn_006 rr:predicateObjectMap :pom_075.
+:pom_075 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_075.
+:pm_075 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_052 rr:objectMap :om_052.
-:om_052 a rr:ObjectMap;
+:pom_075 rr:objectMap :om_075.
+:om_075 a rr:ObjectMap;
     rml:parentTermMap :ptm_006.
 :ptm_006 rml:reference "name".
 :om_016 a rr:ObjectMap;
@@ -724,22 +930,22 @@
 :pomexec_007 rr:objectMap :omexec_007.
 :omexec_007 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_007 rr:predicateObjectMap :pom_053.
-:pom_053 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_053.
-:pm_053 a rr:PredicateMap;
+:fn_007 rr:predicateObjectMap :pom_076.
+:pom_076 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_076.
+:pm_076 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_053 rr:objectMap :om_053.
-:om_053 a rr:ObjectMap;
+:pom_076 rr:objectMap :om_076.
+:om_076 a rr:ObjectMap;
     rml:reference "eu_cellar_author_labels";
     rr:termType rr:Literal.
-:fn_007 rr:predicateObjectMap :pom_054.
-:pom_054 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_054.
-:pm_054 a rr:PredicateMap;
+:fn_007 rr:predicateObjectMap :pom_077.
+:pom_077 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_077.
+:pm_077 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_054 rr:objectMap :om_054.
-:om_054 a rr:ObjectMap;
+:pom_077 rr:objectMap :om_077.
+:om_077 a rr:ObjectMap;
     rml:parentTermMap :ptm_007.
 :ptm_007 rml:reference "name".
 :om_017 a rr:ObjectMap;
@@ -753,22 +959,22 @@
 :pomexec_008 rr:objectMap :omexec_008.
 :omexec_008 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_008 rr:predicateObjectMap :pom_055.
-:pom_055 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_055.
-:pm_055 a rr:PredicateMap;
+:fn_008 rr:predicateObjectMap :pom_078.
+:pom_078 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_078.
+:pm_078 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_055 rr:objectMap :om_055.
-:om_055 a rr:ObjectMap;
+:pom_078 rr:objectMap :om_078.
+:om_078 a rr:ObjectMap;
     rml:reference "eu_cellar_resource_type_labels";
     rr:termType rr:Literal.
-:fn_008 rr:predicateObjectMap :pom_056.
-:pom_056 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_056.
-:pm_056 a rr:PredicateMap;
+:fn_008 rr:predicateObjectMap :pom_079.
+:pom_079 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_079.
+:pm_079 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_056 rr:objectMap :om_056.
-:om_056 a rr:ObjectMap;
+:pom_079 rr:objectMap :om_079.
+:om_079 a rr:ObjectMap;
     rml:parentTermMap :ptm_008.
 :ptm_008 rml:reference "name".
 :om_018 a rr:ObjectMap;
@@ -782,22 +988,22 @@
 :pomexec_009 rr:objectMap :omexec_009.
 :omexec_009 rr:constant "http://example.com/idlab/function/listContainsElement";
     rr:termType rr:IRI.
-:fn_009 rr:predicateObjectMap :pom_057.
-:pom_057 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_057.
-:pm_057 a rr:PredicateMap;
+:fn_009 rr:predicateObjectMap :pom_080.
+:pom_080 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_080.
+:pm_080 a rr:PredicateMap;
     rr:constant fn:list.
-:pom_057 rr:objectMap :om_057.
-:om_057 a rr:ObjectMap;
+:pom_080 rr:objectMap :om_080.
+:om_080 a rr:ObjectMap;
     rml:reference "eu_cellar_subject_matter_labels";
     rr:termType rr:Literal.
-:fn_009 rr:predicateObjectMap :pom_058.
-:pom_058 a rr:PredicateObjectMap;
-    rr:predicateMap :pm_058.
-:pm_058 a rr:PredicateMap;
+:fn_009 rr:predicateObjectMap :pom_081.
+:pom_081 a rr:PredicateObjectMap;
+    rr:predicateMap :pm_081.
+:pm_081 a rr:PredicateMap;
     rr:constant fn:str.
-:pom_058 rr:objectMap :om_058.
-:om_058 a rr:ObjectMap;
+:pom_081 rr:objectMap :om_081.
+:om_081 a rr:ObjectMap;
     rml:parentTermMap :ptm_009.
 :ptm_009 rml:reference "name".
 
