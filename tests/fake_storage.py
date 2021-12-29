@@ -302,8 +302,8 @@ class FakeTripleStore(TripleStoreABC):
     def sparql_update_query(self, dataset_id: str, query: str):
         pass
 
-    def upload_graph(self, dataset_id: str, graph: rdflib.Graph):
+    def upload_graph(self, dataset_id: str, graph: rdflib.Graph, use_context: bool = True):
         pass
 
-    def upload_triples(self, dataset_id: str, quoted_triples: str, rdf_fmt: str, graph_id: str):
+    def upload_triples(self, dataset_id: str, quoted_triples: str, rdf_fmt: str, graph_id: str = None):
         pass
