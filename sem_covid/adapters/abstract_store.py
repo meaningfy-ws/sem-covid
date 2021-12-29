@@ -243,49 +243,54 @@ class TripleStoreABC(ABC):
     @abstractmethod
     def list_datasets(self)->List[str]:
         """
-
-        :return:
+            This method implementation shall be based on SPARQL HTTP Protocol for triple-store management
+        :return: A list of dataset names
         """
         raise NotImplementedError
 
     @abstractmethod
     def sparql_query(self, dataset_id: str, query: str)->pd.DataFrame:
         """
-
-        :param dataset_id:
-        :param query:
-        :return:
+            This method performs a SPARQL query on a specific dataset.
+        :param dataset_id: The dataset identifier. This should be short alphanumeric string uniquely
+        identifying the dataset
+        :param query: SPARQL query
+        :return: the results of the SPARQL query will be returned as a pd.DataFrame.
         """
         raise NotImplementedError
 
     @abstractmethod
     def sparql_update_query(self, dataset_id: str, query: str):
         """
-
-        :param dataset_id:
-        :param query:
+            This method performs a SPARQL update query on a specific dataset.
+        :param dataset_id: The dataset identifier. This should be short alphanumeric string uniquely
+        identifying the dataset
+        :param query: SPARQL query
         :return:
         """
         raise NotImplementedError
 
     @abstractmethod
-    def upload_graph(self, dataset_id: str, graph: rdflib.Graph):
+    def upload_graph(self, dataset_id: str, graph: rdflib.Graph, use_context: bool = True):
         """
-
-        :param dataset_id:
+           This method loads a graph into the fuseki triple store.
+        :param dataset_id: The dataset identifier. This should be short alphanumeric string uniquely
+        identifying the dataset
         :param graph:
+        :param use_context:
         :return:
         """
         raise NotImplementedError
 
     @abstractmethod
-    def upload_triples(self, dataset_id: str, quoted_triples: str, rdf_fmt: str, graph_id: str):
+    def upload_triples(self, dataset_id: str, quoted_triples: str, rdf_fmt: str, graph_id: str = None):
         """
-
-        :param dataset_id:
-        :param quoted_triples:
-        :param rdf_fmt:
-        :param graph_id:
+            This method loads triplets into the fuseki triple store.
+        :param dataset_id: The dataset identifier. This should be short alphanumeric string uniquely
+        identifying the dataset
+        :param quoted_triples: triples in textual format.
+        :param rdf_fmt: rdf format (ex: turtle, ttl or turtle2, xml or pretty-xml, json-ld, ntriples, nt or nt11, n3, trig, trix )
+        :param graph_id: The graph identifier.
         :return:
         """
         raise NotImplementedError
