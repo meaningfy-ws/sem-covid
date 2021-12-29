@@ -161,7 +161,7 @@ class CellarDagWorker(BaseETLPipeline):
         work_metadata_df = get_documents_from_triple_store(
             list_of_queries=[self.sparql_query.replace("%WORK_ID%", work)],
             list_of_query_flags=["metadata"],
-            triple_store_adapter=self.store_registry.sparql_triple_store(self.sparql_endpoint_url),
+            triple_store_adapter=self.store_registry.sparql_endpoint(self.sparql_endpoint_url),
             id_column=WORK_ID_COLUMN)
 
         logger.info(f"Head of teh raw metadata {work_metadata_df.iloc[0]}")
