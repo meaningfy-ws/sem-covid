@@ -269,13 +269,13 @@ class FakeFeatureStore(FeatureStoreABC):
         self._store[features_name] = content
 
 
-class FakeTripleStore(TripleStoreABC):
+class FakeSPARQLEndpoint(SPARQLEndpointABC):
     def with_query(self, sparql_query: str, substitution_variables: dict = None,
-                   sparql_prefixes: str = "") -> 'TripleStoreABC':
+                   sparql_prefixes: str = "") -> 'SPARQLEndpointABC':
         return self
 
     def with_query_from_file(self, sparql_query_file_path: str, substitution_variables: dict = None,
-                             prefixes: str = "") -> 'TripleStoreABC':
+                             prefixes: str = "") -> 'SPARQLEndpointABC':
         return self
 
     def get_dataframe(self) -> pd.DataFrame:
@@ -283,3 +283,27 @@ class FakeTripleStore(TripleStoreABC):
         json_eu_cellar_covid = json.loads(path.read_bytes())
 
         return pd.DataFrame(data=json_eu_cellar_covid)
+
+
+class FakeTripleStore(TripleStoreABC):
+
+    def create_dataset(self, dataset_id: str) -> requests.Response:
+        return requests.Response()
+
+    def delete_dataset(self, dataset_id: str) -> requests.Response:
+        return requests.Response()
+
+    def list_datasets(self) -> List[str]:
+        return ['dataset1', 'dataset2']
+
+    def sparql_query(self, dataset_id: str, query: str) -> pd.DataFrame:
+        return pd.DataFrame()
+
+    def sparql_update_query(self, dataset_id: str, query: str):
+        pass
+
+    def upload_graph(self, dataset_id: str, graph: rdflib.Graph):
+        pass
+
+    def upload_triples(self, dataset_id: str, quoted_triples: str, rdf_fmt: str, graph_id: str):
+        pass
