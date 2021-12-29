@@ -9,8 +9,13 @@
 """
 
 from abc import ABC, abstractmethod
+from typing import List
+
 import pandas as pd
 import pathlib
+
+import rdflib
+import requests
 
 
 class ObjectStoreABC(ABC):
@@ -177,14 +182,14 @@ class FeatureStoreABC(ABC):
         raise NotImplementedError
 
 
-class TripleStoreABC(ABC):
+class SPARQLEndpointABC(ABC):
     """
-        This class provides an abstraction for a TripleStore.
+        This class provides an abstraction for a SPARQLEndpoint.
     """
 
     @abstractmethod
     def with_query(self, sparql_query: str, substitution_variables: dict = None,
-                   sparql_prefixes: str = "") -> 'TripleStoreABC':
+                   sparql_prefixes: str = "") -> 'SPARQLEndpointABC':
         """
             TODO: to document this method.
         :param sparql_query:
@@ -196,7 +201,7 @@ class TripleStoreABC(ABC):
 
     @abstractmethod
     def with_query_from_file(self, sparql_query_file_path: str, substitution_variables: dict = None,
-                             prefixes: str = "") -> 'TripleStoreABC':
+                             prefixes: str = "") -> 'SPARQLEndpointABC':
         """
             TODO: to document this method.
         :param sparql_query_file_path:
@@ -213,3 +218,76 @@ class TripleStoreABC(ABC):
         :return:
         """
         raise NotImplementedError
+
+
+class TripleStoreABC(ABC):
+    """
+        This class provide abstraction for managing triple-store with multiple datasets and endpoints.
+    """
+    @abstractmethod
+    def create_dataset(self, dataset_id: str)->requests.Response:
+        """
+            This method implementation shall be based on SPARQL HTTP Protocol for triple-store management
+        :param dataset_id:
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def delete_dataset(self, dataset_id: str)->requests.Response:
+        """
+            This method implementation shall be based on SPARQL HTTP Protocol for triple-store management
+        :param dataset_id:
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def list_datasets(self)->List[str]:
+        """
+
+        :return:
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def sparql_query(self, dataset_id: str, query: str)->pd.DataFrame:
+        """
+
+        :param dataset_id:
+        :param query:
+        :return:
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def sparql_update_query(self, dataset_id: str, query: str):
+        """
+
+        :param dataset_id:
+        :param query:
+        :return:
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def upload_graph(self, dataset_id: str, graph: rdflib.Graph):
+        """
+
+        :param dataset_id:
+        :param graph:
+        :return:
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def upload_triples(self, dataset_id: str, quoted_triples: str, rdf_fmt: str, graph_id: str):
+        """
+
+        :param dataset_id:
+        :param quoted_triples:
+        :param rdf_fmt:
+        :param graph_id:
+        :return:
+        """
+        raise NotImplementedError
+
+
