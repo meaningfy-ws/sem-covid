@@ -329,7 +329,8 @@ class SemCovidConfig(CrawlerConfig,
                      MlExperimentsConfig,
                      MinIOConfig,
                      TensorFlowConfig,
-                     UnifiedDatasetConfig
+                     UnifiedDatasetConfig,
+                     FusekiConfig
                      ):
     ...
 

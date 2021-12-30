@@ -1,7 +1,7 @@
 prefixes:
   sc: "http://publications.europa.eu/resource/ontology/sc#"
   fn: "http://example.com/idlab/function/"
-  dct: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
+  dct: "http://purl.org/dc/terms/"
 
 mappings:
     text:
