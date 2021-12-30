@@ -6,7 +6,7 @@ from airflow.exceptions import DagNotFound
 from sem_covid.entrypoints.etl_dags.etl_cellar_master_dag import CellarDagMaster, get_documents_from_triple_store, \
     unify_dataframes_and_mark_source, get_and_transform_documents_from_triple_store
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
-from tests.fake_storage import FakeTripleStore
+from tests.fake_storage import FakeSPARQLEndpoint
 from tests.fake_store_registry import FakeStoreRegistry
 
 FAKE_LIST_OF_QUERIES = ['EU_CELLAR_CORE_QUERY', 'EU_CELLAR_EXTENDED_QUERY']
@@ -46,7 +46,7 @@ def test_etl_cellar_master_dag():
 
 
 def test_fetch_documents_from_fake_cellar():
-    triple_store = FakeTripleStore()
+    triple_store = FakeSPARQLEndpoint()
 
     docs_df = get_documents_from_triple_store(["dummy query 1", "dummy query 2", "dummy query 3"],
                                               ["flag1", "flag2", "flag3"],
@@ -78,7 +78,7 @@ def test_unify_dataframes_and_mark_source():
 
 
 def test_get_and_transform_documents_from_triple_store():
-    triple_store = FakeTripleStore()
+    triple_store = FakeSPARQLEndpoint()
 
     list_of_queries = ["dummy query 1", "dummy query 2", "dummy query 3"]
     list_of_query_flags = ["flag1", "flag2", "flag3"]

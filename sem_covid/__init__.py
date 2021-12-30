@@ -299,6 +299,21 @@ class CrawlerConfig:
             return str(path)
 
 
+class FusekiConfig:
+
+    @property
+    def FUSEKI_URL(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
+    def FUSEKI_USER_NAME(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+    @property
+    def FUSEKI_PASSWORD(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+
 class SemCovidConfig(CrawlerConfig,
                      VaultConfig,
                      ElasticSearchConfig,

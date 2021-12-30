@@ -1,8 +1,8 @@
 import pathlib
 
-from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC, FeatureStoreABC, TripleStoreABC
+from sem_covid.adapters.abstract_store import IndexStoreABC, ObjectStoreABC, FeatureStoreABC, SPARQLEndpointABC
 from sem_covid.services.store_registry import StoreRegistryABC
-from tests.fake_storage import FakeIndexStore, FakeObjectStore, FakeFeatureStore, FakeTripleStore
+from tests.fake_storage import FakeIndexStore, FakeObjectStore, FakeFeatureStore, FakeSPARQLEndpoint
 from sem_covid import config
 import pandas as pd
 from tests import TEST_DATA_PATH
@@ -40,9 +40,9 @@ class FakeStoreRegistry(StoreRegistryABC):
 
         return self.fake_es_feature_store
 
-    def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
+    def sparql_endpoint(self, endpoint_url: str) -> SPARQLEndpointABC:
         if self.fake_sparql_triple_store is None:
-            self.fake_sparql_triple_store = FakeTripleStore()
+            self.fake_sparql_triple_store = FakeSPARQLEndpoint()
 
         return self.fake_sparql_triple_store
 
