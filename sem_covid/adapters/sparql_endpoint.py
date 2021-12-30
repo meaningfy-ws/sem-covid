@@ -1,6 +1,5 @@
 import io
 from pathlib import Path
-from typing import Optional
 
 from SPARQLWrapper import SPARQLWrapper, CSV
 from py_singleton import singleton
@@ -8,7 +7,7 @@ from py_singleton import singleton
 import pandas as pd
 
 from string import Template
-from sem_covid.adapters.abstract_store import TripleStoreABC
+from sem_covid.adapters.abstract_store import SPARQLEndpointABC
 
 DEFAULT_ENCODING = 'utf-8'
 
@@ -37,13 +36,13 @@ class SPARQLClientPool(object):
 SPARQLClientPool.instance()
 
 
-class SPARQLTripleStore(TripleStoreABC):
+class SPARQLEndpoint(SPARQLEndpointABC):
 
     def __init__(self, endpoint_url: str):
         self.endpoint = SPARQLClientPool.create_or_reuse_connection(endpoint_url)
 
     def with_query(self, sparql_query: str, substitution_variables: dict = None,
-                   sparql_prefixes: str = "") -> TripleStoreABC:
+                   sparql_prefixes: str = "") -> SPARQLEndpointABC:
         """
             Set the query text and return the reference to self for chaining.
         :return:
@@ -58,7 +57,7 @@ class SPARQLTripleStore(TripleStoreABC):
         return self
 
     def with_query_from_file(self, sparql_query_file_path: str, substitution_variables: dict = None,
-                             prefixes: str = "") -> TripleStoreABC:
+                             prefixes: str = "") -> SPARQLEndpointABC:
         """
             Set the query text and return the reference to self for chaining.
         :return:
@@ -84,6 +83,6 @@ class SPARQLTripleStore(TripleStoreABC):
         query_result = self.endpoint.queryAndConvert()
         return pd.read_csv(io.StringIO(str(query_result, encoding=DEFAULT_ENCODING)))
 
-
     def __str__(self):
         return f"from <...{str(self.endpoint.endpoint)[-30:]}> {str(self.endpoint.queryString)[:60]} ..."
+

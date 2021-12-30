@@ -15,12 +15,14 @@ from es_pandas import es_pandas
 from minio import Minio
 
 from sem_covid import config
-from sem_covid.adapters.abstract_store import IndexStoreABC, FeatureStoreABC, ObjectStoreABC, TripleStoreABC
+from sem_covid.adapters.abstract_store import IndexStoreABC, FeatureStoreABC, ObjectStoreABC, SPARQLEndpointABC, \
+    TripleStoreABC
 from sem_covid.adapters.es_feature_store import ESFeatureStore
 from sem_covid.adapters.es_index_store import ESIndexStore
+from sem_covid.adapters.fuseki_triple_store import FusekiTripleStore
 from sem_covid.adapters.minio_feature_store import MinioFeatureStore
 from sem_covid.adapters.minio_object_store import MinioObjectStore
-from sem_covid.adapters.sparql_triple_store import SPARQLTripleStore
+from sem_covid.adapters.sparql_endpoint import SPARQLEndpoint
 
 MINIO_FEATURE_BUCKET = 'fs-bucket'
 
@@ -44,7 +46,7 @@ class StoreRegistryABC(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
+    def sparql_endpoint(self, endpoint_url: str) -> SPARQLEndpointABC:
         raise NotImplementedError
 
 
@@ -60,8 +62,8 @@ class StoreRegistry(StoreRegistryABC):
          """
         return MinioFeatureStore(object_store=self.minio_object_store(minio_bucket))
 
-    def sparql_triple_store(self, endpoint_url: str) -> TripleStoreABC:
-        return SPARQLTripleStore(endpoint_url=endpoint_url)
+    def sparql_endpoint(self, endpoint_url: str) -> SPARQLEndpointABC:
+        return SPARQLEndpoint(endpoint_url=endpoint_url)
 
     def es_index_store(self) -> IndexStoreABC:
         """
@@ -92,6 +94,15 @@ class StoreRegistry(StoreRegistryABC):
         :return:
         """
         return ESFeatureStore(self.es_index_store())
+
+    def fuseki_triple_store(self) -> TripleStoreABC:
+        """
+            This method returns a preconfigured FusekiTripleStore.
+        :return:
+        """
+        return FusekiTripleStore(fuseki_url=config.FUSEKI_URL,
+                                 user_name=config.FUSEKI_USER_NAME,
+                                 password=config.FUSEKI_PASSWORD)
 
 
 store_registry = StoreRegistry()

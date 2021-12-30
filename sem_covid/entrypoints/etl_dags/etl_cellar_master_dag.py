@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
-from sem_covid.adapters.abstract_store import TripleStoreABC
+from sem_covid.adapters.abstract_store import SPARQLEndpointABC
 from sem_covid.adapters.dag.base_etl_dag_pipeline import BaseMasterPipeline
 from sem_covid.services.index_mapping_registry import IndicesMappingRegistry
 from sem_covid.services.sc_wrangling.json_transformer import transform_eu_cellar_item
@@ -45,7 +45,7 @@ def unify_dataframes_and_mark_source(list_of_data_frames: List[pd.DataFrame], li
 
 
 def get_and_transform_documents_from_triple_store(list_of_queries: List[str],
-                                                  triple_store_adapter: TripleStoreABC,
+                                                  triple_store_adapter: SPARQLEndpointABC,
                                                   transformation_function=transform_eu_cellar_item,
                                                   ) -> List[pd.DataFrame]:
     """
@@ -72,7 +72,7 @@ def get_and_transform_documents_from_triple_store(list_of_queries: List[str],
 
 def get_documents_from_triple_store(list_of_queries: List[str],
                                     list_of_query_flags: List[str],
-                                    triple_store_adapter: TripleStoreABC,
+                                    triple_store_adapter: SPARQLEndpointABC,
                                     id_column: str) -> pd.DataFrame:
     """
 
@@ -123,7 +123,7 @@ class CellarDagMaster(BaseMasterPipeline):
         """
         es_adapter = self.store_registry.es_index_store()
         es_adapter.create_index(index_name=self.index_name, index_mappings=self.index_mappings)
-        triple_store_adapter = self.store_registry.sparql_triple_store(self.sparql_endpoint_url)
+        triple_store_adapter = self.store_registry.sparql_endpoint(self.sparql_endpoint_url)
 
         unified_df = get_documents_from_triple_store(
             list_of_queries=self.list_of_queries,

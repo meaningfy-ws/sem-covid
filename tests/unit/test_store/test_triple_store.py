@@ -1,13 +1,16 @@
+import pandas as pd
+import requests
 
 from tests.fake_storage import FakeTripleStore
 
-
 def test_triple_store():
     triple_store = FakeTripleStore()
-    tmp_store = triple_store.with_query(sparql_query="Use SPARQL query")
-    assert type(tmp_store) == FakeTripleStore
-    assert tmp_store == triple_store
-    tmp_df = tmp_store.get_dataframe()
-    assert "title" in tmp_df.columns
-    assert "work" in tmp_df.columns
-    assert tmp_df["work"][0] == 'http://publications.europa.eu/resource/cellar/0009c137-0348-11eb-a511-01aa75ed71a1'
+    datasets  = triple_store.list_datasets()
+    assert datasets is not None
+    assert len(datasets) == 2
+    response = triple_store.create_dataset(dataset_id="Hey")
+    assert type(response) ==  requests.Response
+    response = triple_store.delete_dataset(dataset_id="Hey")
+    assert type(response) == requests.Response
+    df = triple_store.sparql_query(dataset_id="hey", query="test query")
+    assert type(df) == pd.DataFrame
