@@ -12,7 +12,7 @@
 @prefix : <http://mapping.example.com/>.
 @prefix sc: <http://publications.europa.eu/resource/ontology/sc#>.
 @prefix fn: <http://example.com/idlab/function/>.
-@prefix dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>.
+@prefix dct: <http://purl.org/dc/terms/>.
 
 :rules_000 a void:Dataset;
     void:exampleResource :map_text_000.
@@ -173,7 +173,7 @@
 :pm_019 rr:constant rdf:type.
 :pom_019 rr:objectMap :om_019.
 :om_019 a rr:ObjectMap;
-    rr:constant "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/Dataset";
+    rr:constant "http://purl.org/dc/terms/Dataset";
     rr:termType rr:IRI.
 :pom_020 a rr:PredicateObjectMap.
 :map_dataset_000 rr:predicateObjectMap :pom_020.
