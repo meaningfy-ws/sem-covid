@@ -52,23 +52,10 @@ def rml_transform_dag():
                                                   triple_storage=store_registry.fuseki_triple_store()
                                                   )
     @task
-    def extract(rml_pipeline: RMLTransformPipeline):
-        rml_pipeline.extract()
-        return rml_pipeline
+    def execute(rml_pipeline: RMLTransformPipeline):
+        rml_pipeline.execute()
 
-    @task
-    def transform(rml_pipeline: RMLTransformPipeline):
-        rml_pipeline.transform()
-        return rml_pipeline
-    @task
-    def load(rml_pipeline: RMLTransformPipeline):
-        rml_pipeline.load()
-        return rml_pipeline
-
-    pipeline_state = rml_transform_pipeline
-    pipeline_state = extract(pipeline_state)
-    pipeline_state = transform(pipeline_state)
-    pipeline_state = load(pipeline_state)
+    execute(rml_transform_pipeline)
 
 
 etl_dag = rml_transform_dag()
