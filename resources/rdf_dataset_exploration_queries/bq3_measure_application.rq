@@ -1,0 +1,15 @@
+#Where is the measure applicable?
+
+PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
+PREFIX dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?measure ?country ?country_label ?title ?type_of_measure_title
+WHERE {
+  ?measure a sc:Measure .
+  ?measure dct:spatial ?country .
+  ?country skos:prefLabel ?country_label .
+  ?measure sc:typeOfMeasure ?type_of_measure .
+  ?measure dct:title ?title .
+  ?type_of_measure skos:prefLabel ?type_of_measure_title
+}
