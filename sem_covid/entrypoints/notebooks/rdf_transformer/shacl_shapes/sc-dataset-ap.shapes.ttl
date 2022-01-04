@@ -1,0 +1,377 @@
+# baseURI: http://publications.europa.eu/resource/ontology/sc
+# imports: http://datashapes.org/dash
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: sc
+
+@prefix : <http://publications.europa.eu/resource/ontology/sc#> .
+@prefix actor: <http://publications.europa.eu/resource/authority/actor#> .
+@prefix at: <http://publications.europa.eu/resource/authority/> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <http://publications.europa.eu/resource/ontology/sc#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://publications.europa.eu/resource/ontology/sc>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports dct: ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+sc:Actor
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "Actor" ;
+.
+sc:Country
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "Country" ;
+.
+sc:EUCellarAuthorLabels
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "EUCellarAuthorLabels" ;
+.
+sc:EUCellarResourceTypeLabels
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "EUCellarResourceTypeLabels" ;
+.
+sc:EUCellarSubjectMatterLabels
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "EUCellarSubjectMatterLabels" ;
+.
+sc:EUTimelineTopic
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "EUTimelineTopic" ;
+.
+sc:InSchemeActor
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme actor" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:Actor ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemeAnyCategorial
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme any categorial" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sc:in (
+          sc:PWDBCategory
+          sc:EUTimelineTopic
+          sc:IrelandKeyword
+          sc:EUCellarSubjectMatterLabels
+        ) ;
+      sh:class skos:ConceptScheme ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+sc:InSchemeCountry
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme country" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:Country ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemeEUCellarAuthorLabels
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme eu_cellar_author_labels" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:EUCellarAuthorLabels ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemeEUCellarResourceTypeLabels
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme eu_cellar_resource_type_labels" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:EUCellarResourceTypeLabels ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemeEUCellarSubjectMatterLabels
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme eu_cellar_subject_matter_labels" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:EUCellarSubjectMatterLabels ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemeEUTimelineTopic
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme eu_timeline_topic" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:EUTimelineTopic ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemeIrelandKeyword
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme ireland_keyword" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:IrelandKeyword ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemeIrelandPageType
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme ireland_page_type" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:IrelandPageType ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemePWDBCategory
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme pwdb_category" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:PWDBCategory ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemePWDBFunding
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme pwdb_funding" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:PWDBFunding ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemePWDBTargetGroupL1
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme pwdb_target_group_l1" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:PWDBTargetGroupL1 ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemePWDBTargetGroupL2
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme pwdb_target_group_l2" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:PWDBTargetGroupL2 ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:InSchemePWDBTypeOfMeasure
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "In scheme pwdb_type_of_measure" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path skos:inScheme ;
+      sh:hasValue sc:PWDBTypeOfMeasure ;
+      sh:name "in scheme" ;
+    ] ;
+.
+sc:IrelandKeyword
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "IrelandKeyword" ;
+.
+sc:IrelandPageType
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "IrelandPageType" ;
+.
+sc:Measure
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  skos:prefLabel "Measure" ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path sc:actor ;
+      a skos:Concept ;
+      sh:minCount 1 ;
+      sh:name "actor" ;
+      skos:inScheme sc:InSchemeActor ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path sc:funding ;
+      a skos:Concept ;
+      sh:minCount 1 ;
+      sh:name "funding" ;
+      skos:inScheme sc:InSchemePWDBFunding ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path sc:resourceType ;
+      a skos:Concept ;
+      sh:minCount 0 ;
+      sh:name "resource type" ;
+      skos:inScheme sc:InSchemeEUCellarResourceTypeLabels ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path sc:targetGroupL1 ;
+      a skos:Concept ;
+      sh:minCount 0 ;
+      sh:name "target group l1" ;
+      skos:inScheme sc:InSchemePWDBTargetGroupL1 ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path sc:targetGroupL2 ;
+      a skos:Concept ;
+      sh:minCount 0 ;
+      sh:name "target group l2" ;
+      skos:inScheme sc:InSchemePWDBTargetGroupL2 ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path sc:typeOfMeasure ;
+      a skos:Concept ;
+      sh:minCount 1 ;
+      sh:name "type of measure" ;
+      skos:inScheme sc:InSchemePWDBTypeOfMeasure ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path dct:author ;
+      a skos:Concept ;
+      sh:minCount 1 ;
+      sh:name "corporate body" ;
+      skos:inScheme sc:InSchemeEUCellarAuthorLabels ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path dct:date ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "date" ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path dct:spatial ;
+      a skos:Concept ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "spatial" ;
+      skos:inScheme sc:InSchemeCountry ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path dct:subject ;
+      a skos:Concept ;
+      sh:minCount 0 ;
+      sh:name "eu timeline topic" ;
+      skos:inScheme sc:InSchemeAnyCategorial ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type sh:PropertyShape ;
+      sh:path dct:title ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "title" ;
+    ] ;
+.
+sc:NonPWDBMeasure
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf sc:Measure ;
+  skos:prefLabel "Non PWDB Measure" ;
+.
+sc:PWDBCategory
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "PWDBCategory" ;
+.
+sc:PWDBFunding
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "PWDBFunding" ;
+.
+sc:PWDBMeasure
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf sc:Measure ;
+  skos:prefLabel "PWDB Measure" ;
+.
+sc:PWDBTargetGroupL1
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "PWDBTargetGroupL1" ;
+.
+sc:PWDBTargetGroupL2
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "PWDBTargetGroupL2" ;
+.
+sc:PWDBTypeOfMeasure
+  rdf:type skos:ConceptScheme ;
+  skos:prefLabel "PWDBTypeOfMeasure" ;
+.
+sc:actor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain sc:Measure ;
+  rdfs:range skos:Concept ;
+  skos:prefLabel "actor" ;
+.
+sc:funding
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain sc:Measure ;
+  rdfs:range skos:Concept ;
+  skos:prefLabel "funding" ;
+.
+sc:resourceType
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain sc:Measure ;
+  rdfs:range skos:Concept ;
+  skos:prefLabel "resource type" ;
+.
+sc:targetGroupL1
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain sc:Measure ;
+  rdfs:range skos:Concept ;
+  skos:prefLabel "target group l1" ;
+.
+sc:targetGroupL2
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain sc:Measure ;
+  rdfs:range skos:Concept ;
+  skos:prefLabel "target group l2" ;
+.
+sc:typeOfMeasure
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain sc:Measure ;
+  rdfs:range skos:Concept ;
+  skos:prefLabel "type of measure" ;
+.
