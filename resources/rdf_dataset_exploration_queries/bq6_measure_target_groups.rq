@@ -11,5 +11,5 @@ WHERE {
   ?measure sc:targetGroup ?target_l1 .
   ?target_l1 skos:prefLabel ?target_l1_label .
   ?target_l1 skos:inScheme ?scheme_l1 .
-  FILTER(regex(str(?scheme_l1), "PWDBTargetGroupL1" )) .
+  FILTER(?scheme_l1=str(sc:PWDBTargetGroupL1)) .
 }
