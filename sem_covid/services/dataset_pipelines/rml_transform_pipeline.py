@@ -30,7 +30,8 @@ class RMLTransformPipeline:
                  rml_mapper: RMLMapperABC,
                  object_storage: ObjectStoreABC,
                  index_storage: IndexStoreABC,
-                 triple_storage: TripleStoreABC
+                 triple_storage: TripleStoreABC,
+                 use_sample_data: bool = False
                  ):
         """
 
@@ -53,6 +54,7 @@ class RMLTransformPipeline:
         self.sources = None
         self.rdf_results = None
         self.dataset_parts = None
+        self.use_sample_data = use_sample_data
 
     def extract(self):
         """
@@ -66,7 +68,10 @@ class RMLTransformPipeline:
             for file_name in self.source_file_names}
         dataset = self.index_storage.get_dataframe(index_name=DATASET_INDEX_NAME)
         dataset['index'] = dataset.index
-        self.dataset = dataset
+        if self.use_sample_data:
+            self.dataset = dataset.head(100)
+        else:
+            self.dataset = dataset
         df_size = len(self.dataset)
         part_size = DATASET_PART_SIZE
         number_of_parts = int(round(df_size / part_size, 0)) + 1
