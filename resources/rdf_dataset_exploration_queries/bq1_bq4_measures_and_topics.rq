@@ -4,14 +4,35 @@
 PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
 PREFIX dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
-SELECT DISTINCT ?measure ?title ?author ?author_label (GROUP_CONCAT (?topic_label; separator="; ") as ?topic_labels)
+SELECT * WHERE {
+{
+SELECT DISTINCT
+?measure ?title ?author ?author_label ?topic_scheme
+(GROUP_CONCAT (?topic_label; separator="; ") as ?topic_labels)
 WHERE {
   ?measure a sc:Measure .
   ?measure dct:author ?author .
   ?author skos:prefLabel ?author_label .
   ?measure dct:subject ?topic .
+  ?topic skos:inScheme ?topic_scheme .
   ?topic skos:prefLabel ?topic_label .
   ?measure dct:title ?title .
 }
-GROUPBY  ?measure ?title ?author ?author_label
+GROUPBY  ?measure ?title ?author ?author_label ?topic_scheme
+} UNION
+{
+ SELECT DISTINCT
+?measure ?title ?author ?author_label ?topic_scheme
+(GROUP_CONCAT (?topic_label; separator="; ") as ?topic_labels)
+WHERE {
+  ?measure a sc:Measure .
+  ?measure dct:author ?author .
+  ?author skos:prefLabel ?author_label .
+  ?measure dct:subject ?topic .
+  ?topic skos:inScheme ?topic_scheme .
+  ?topic skos:prefLabel ?topic_label .
+  ?measure dct:title ?title .
+}
+GROUPBY  ?measure ?title ?author ?author_label ?topic_scheme
+}
+}
