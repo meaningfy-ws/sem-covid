@@ -10,6 +10,5 @@ WHERE {
   ?measure dct:title ?title .
   ?measure sc:targetGroup ?target_l1 .
   ?target_l1 skos:prefLabel ?target_l1_label .
-  ?target_l1 skos:inScheme ?scheme_l1 .
-  FILTER(?scheme_l1=str(sc:PWDBTargetGroupL1)) .
+  ?target_l1 skos:inScheme sc:PWDBTargetGroupL1 .
 }
