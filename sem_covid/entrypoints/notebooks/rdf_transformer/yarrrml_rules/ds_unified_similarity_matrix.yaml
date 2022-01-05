@@ -1,0 +1,10 @@
+prefixes:
+  sc: "http://publications.europa.eu/resource/ontology/sc#"
+mappings:
+  person:
+    sources:
+      - ['ds_unified_sem_similarity_matrix.json~jsonpath', '$.similarity_matrix[*]']
+    s: sc:$(measure_src)
+    po:
+      - [sc:measure,sc:$(measure_dest)~iri]
+      - [sc:semanticSimilarity, $(similarity), xsd:float]
