@@ -43,7 +43,8 @@
 :pom_001 rr:objectMap :om_001.
 :om_001 a rr:ObjectMap;
     rml:reference "date";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#date>.
 :pom_002 a rr:PredicateObjectMap.
 :map_text_000 rr:predicateObjectMap :pom_002.
 :pm_002 a rr:PredicateMap.
@@ -230,7 +231,7 @@
 :pom_024 rr:objectMap :om_024.
 :om_024 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_025 a rr:PredicateObjectMap.
 :map_pwdb_category_000 rr:predicateObjectMap :pom_025.
 :pm_025 a rr:PredicateMap.
@@ -239,7 +240,7 @@
 :pom_025 rr:objectMap :om_025.
 :om_025 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBCategory";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_pwdb_funding_000.
 :map_pwdb_funding_000 rml:logicalSource :source_003.
 :source_003 a rml:LogicalSource;
@@ -268,7 +269,7 @@
 :pom_027 rr:objectMap :om_027.
 :om_027 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_028 a rr:PredicateObjectMap.
 :map_pwdb_funding_000 rr:predicateObjectMap :pom_028.
 :pm_028 a rr:PredicateMap.
@@ -277,7 +278,7 @@
 :pom_028 rr:objectMap :om_028.
 :om_028 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBFunding";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_country_000.
 :map_country_000 rml:logicalSource :source_004.
 :source_004 a rml:LogicalSource;
@@ -306,7 +307,7 @@
 :pom_030 rr:objectMap :om_030.
 :om_030 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_031 a rr:PredicateObjectMap.
 :map_country_000 rr:predicateObjectMap :pom_031.
 :pm_031 a rr:PredicateMap.
@@ -315,7 +316,7 @@
 :pom_031 rr:objectMap :om_031.
 :om_031 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#Country";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_pwdb_type_of_measure_000.
 :map_pwdb_type_of_measure_000 rml:logicalSource :source_005.
 :source_005 a rml:LogicalSource;
@@ -344,7 +345,7 @@
 :pom_033 rr:objectMap :om_033.
 :om_033 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_034 a rr:PredicateObjectMap.
 :map_pwdb_type_of_measure_000 rr:predicateObjectMap :pom_034.
 :pm_034 a rr:PredicateMap.
@@ -353,7 +354,7 @@
 :pom_034 rr:objectMap :om_034.
 :om_034 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBTypeOfMeasure";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_pwdb_actors_000.
 :map_pwdb_actors_000 rml:logicalSource :source_006.
 :source_006 a rml:LogicalSource;
@@ -382,7 +383,7 @@
 :pom_036 rr:objectMap :om_036.
 :om_036 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_037 a rr:PredicateObjectMap.
 :map_pwdb_actors_000 rr:predicateObjectMap :pom_037.
 :pm_037 a rr:PredicateMap.
@@ -391,7 +392,7 @@
 :pom_037 rr:objectMap :om_037.
 :om_037 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#Actor";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_pwdb_target_group_l1_000.
 :map_pwdb_target_group_l1_000 rml:logicalSource :source_007.
 :source_007 a rml:LogicalSource;
@@ -420,7 +421,7 @@
 :pom_039 rr:objectMap :om_039.
 :om_039 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_040 a rr:PredicateObjectMap.
 :map_pwdb_target_group_l1_000 rr:predicateObjectMap :pom_040.
 :pm_040 a rr:PredicateMap.
@@ -429,7 +430,7 @@
 :pom_040 rr:objectMap :om_040.
 :om_040 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBTargetGroupL1";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_pwdb_target_group_l2_000.
 :map_pwdb_target_group_l2_000 rml:logicalSource :source_008.
 :source_008 a rml:LogicalSource;
@@ -458,7 +459,7 @@
 :pom_042 rr:objectMap :om_042.
 :om_042 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_043 a rr:PredicateObjectMap.
 :map_pwdb_target_group_l2_000 rr:predicateObjectMap :pom_043.
 :pm_043 a rr:PredicateMap.
@@ -467,7 +468,7 @@
 :pom_043 rr:objectMap :om_043.
 :om_043 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#PWDBTargetGroupL2";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_eu_timeline_topic_000.
 :map_eu_timeline_topic_000 rml:logicalSource :source_009.
 :source_009 a rml:LogicalSource;
@@ -496,7 +497,7 @@
 :pom_045 rr:objectMap :om_045.
 :om_045 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_046 a rr:PredicateObjectMap.
 :map_eu_timeline_topic_000 rr:predicateObjectMap :pom_046.
 :pm_046 a rr:PredicateMap.
@@ -505,7 +506,7 @@
 :pom_046 rr:objectMap :om_046.
 :om_046 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#EUTimelineTopic";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_ireland_keyword_000.
 :map_ireland_keyword_000 rml:logicalSource :source_010.
 :source_010 a rml:LogicalSource;
@@ -534,7 +535,7 @@
 :pom_048 rr:objectMap :om_048.
 :om_048 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_049 a rr:PredicateObjectMap.
 :map_ireland_keyword_000 rr:predicateObjectMap :pom_049.
 :pm_049 a rr:PredicateMap.
@@ -543,7 +544,7 @@
 :pom_049 rr:objectMap :om_049.
 :om_049 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#IrelandKeyword";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_ireland_page_type_000.
 :map_ireland_page_type_000 rml:logicalSource :source_011.
 :source_011 a rml:LogicalSource;
@@ -572,7 +573,7 @@
 :pom_051 rr:objectMap :om_051.
 :om_051 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_052 a rr:PredicateObjectMap.
 :map_ireland_page_type_000 rr:predicateObjectMap :pom_052.
 :pm_052 a rr:PredicateMap.
@@ -581,7 +582,7 @@
 :pom_052 rr:objectMap :om_052.
 :om_052 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#IrelandPageType";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_eu_cellar_author_labels_000.
 :map_eu_cellar_author_labels_000 rml:logicalSource :source_012.
 :source_012 a rml:LogicalSource;
@@ -610,7 +611,7 @@
 :pom_054 rr:objectMap :om_054.
 :om_054 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_055 a rr:PredicateObjectMap.
 :map_eu_cellar_author_labels_000 rr:predicateObjectMap :pom_055.
 :pm_055 a rr:PredicateMap.
@@ -619,7 +620,7 @@
 :pom_055 rr:objectMap :om_055.
 :om_055 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#EUCellarAuthorLabels";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_eu_cellar_resource_type_labels_000.
 :map_eu_cellar_resource_type_labels_000 rml:logicalSource :source_013.
 :source_013 a rml:LogicalSource;
@@ -648,7 +649,7 @@
 :pom_057 rr:objectMap :om_057.
 :om_057 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_058 a rr:PredicateObjectMap.
 :map_eu_cellar_resource_type_labels_000 rr:predicateObjectMap :pom_058.
 :pm_058 a rr:PredicateMap.
@@ -657,7 +658,7 @@
 :pom_058 rr:objectMap :om_058.
 :om_058 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#EUCellarResourceTypeLabels";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_eu_cellar_subject_matter_labels_000.
 :map_eu_cellar_subject_matter_labels_000 rml:logicalSource :source_014.
 :source_014 a rml:LogicalSource;
@@ -686,7 +687,7 @@
 :pom_060 rr:objectMap :om_060.
 :om_060 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2004/02/skos/core#Concept";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_061 a rr:PredicateObjectMap.
 :map_eu_cellar_subject_matter_labels_000 rr:predicateObjectMap :pom_061.
 :pm_061 a rr:PredicateMap.
@@ -695,7 +696,7 @@
 :pom_061 rr:objectMap :om_061.
 :om_061 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#EUCellarSubjectMatterLabels";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :om_005 a rr:ObjectMap;
     rr:parentTriplesMap :map_dataset_000;
     rr:joinCondition :jc_000.
