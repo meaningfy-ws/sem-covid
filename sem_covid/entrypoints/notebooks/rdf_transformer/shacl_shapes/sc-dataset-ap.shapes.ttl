@@ -209,94 +209,93 @@ sc:Measure
   rdf:type sh:NodeShape ;
   skos:prefLabel "Measure" ;
   sh:property [
+      sh:class skos:Concept ;
       rdf:type sh:PropertyShape ;
       sh:path sc:actor ;
-      a skos:Concept ;
+      sh:node sc:InSchemeActor ;
       sh:minCount 1 ;
       sh:name "actor" ;
-      skos:inScheme sc:InSchemeActor ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
+      sh:class skos:Concept ;
       rdf:type sh:PropertyShape ;
       sh:path sc:funding ;
-      a skos:Concept ;
+      sh:node sc:InSchemePWDBFunding ;
       sh:minCount 1 ;
       sh:name "funding" ;
-      skos:inScheme sc:InSchemePWDBFunding ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:class skos:Concept ;
+      rdf:type sh:PropertyShape ;
+      sh:path sc:targetGroupL2 ;
+      sh:node sc:InSchemePWDBTargetGroupL2 ;
+      sh:minCount 0 ;
+      sh:name "target group l2" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:class skos:Concept ;
+      rdf:type sh:PropertyShape ;
+      sh:path sc:typeOfMeasure ;
+      sh:node sc:InSchemePWDBTypeOfMeasure ;
+      sh:minCount 1 ;
+      sh:name "type of measure" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:class skos:Concept ;
+      rdf:type sh:PropertyShape ;
+      sh:path dct:author ;
+      sh:node sc:InSchemeEUCellarAuthorLabels ;
+      sh:minCount 1 ;
+      sh:name "corporate body" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:class skos:Concept ;
+      rdf:type sh:PropertyShape ;
+      sh:path dct:spatial ;
+      sh:node sc:InSchemeCountry ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "spatial" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      rdf:type skos:Concept ;
+      rdf:type sh:PropertyShape ;
+      sh:path dct:subject ;
+      sh:node sc:InSchemeAnyCategorial ;
+      sh:minCount 0 ;
+      sh:name "eu timeline topic" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path sc:resourceType ;
-      a skos:Concept ;
+      sh:node sc:InSchemeEUCellarResourceTypeLabels ;
       sh:minCount 0 ;
       sh:name "resource type" ;
-      skos:inScheme sc:InSchemeEUCellarResourceTypeLabels ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path sc:targetGroupL1 ;
-      a skos:Concept ;
+      sh:class skos:Concept ;
       sh:minCount 0 ;
       sh:name "target group l1" ;
-      skos:inScheme sc:InSchemePWDBTargetGroupL1 ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      rdf:type sh:PropertyShape ;
-      sh:path sc:targetGroupL2 ;
-      a skos:Concept ;
-      sh:minCount 0 ;
-      sh:name "target group l2" ;
-      skos:inScheme sc:InSchemePWDBTargetGroupL2 ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      rdf:type sh:PropertyShape ;
-      sh:path sc:typeOfMeasure ;
-      a skos:Concept ;
-      sh:minCount 1 ;
-      sh:name "type of measure" ;
-      skos:inScheme sc:InSchemePWDBTypeOfMeasure ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      rdf:type sh:PropertyShape ;
-      sh:path dct:author ;
-      a skos:Concept ;
-      sh:minCount 1 ;
-      sh:name "corporate body" ;
-      skos:inScheme sc:InSchemeEUCellarAuthorLabels ;
+      sh:node sc:InSchemePWDBTargetGroupL1 ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       rdf:type sh:PropertyShape ;
       sh:path dct:date ;
-      sh:datatype xsd:string ;
+      sh:datatype xsd:date ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
       sh:name "date" ;
-    ] ;
-  sh:property [
-      rdf:type sh:PropertyShape ;
-      sh:path dct:spatial ;
-      a skos:Concept ;
-      sh:maxCount 1 ;
-      sh:minCount 1 ;
-      sh:name "spatial" ;
-      skos:inScheme sc:InSchemeCountry ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      rdf:type sh:PropertyShape ;
-      sh:path dct:subject ;
-      a skos:Concept ;
-      sh:minCount 0 ;
-      sh:name "eu timeline topic" ;
-      skos:inScheme sc:InSchemeAnyCategorial ;
-      sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       rdf:type sh:PropertyShape ;
