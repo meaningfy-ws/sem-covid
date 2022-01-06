@@ -4,11 +4,10 @@
 PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT * WHERE {
-{
 SELECT DISTINCT
-?measure ?title ?author ?author_label ?topic_scheme
-(GROUP_CONCAT (?topic_label; separator="; ") as ?topic_labels)
+?measure ?title ?topic_scheme
+(GROUP_CONCAT (DISTINCT ?author_label; separator="; ") as ?author_labels)
+(GROUP_CONCAT (DISTINCT ?topic_label; separator="; ") as ?topic_labels)
 WHERE {
   ?measure a sc:Measure .
   ?measure dct:author ?author .
@@ -18,21 +17,5 @@ WHERE {
   ?topic skos:prefLabel ?topic_label .
   ?measure dct:title ?title .
 }
-GROUPBY  ?measure ?title ?author ?author_label ?topic_scheme
-} UNION
-{
- SELECT DISTINCT
-?measure ?title ?author ?author_label ?topic_scheme
-(GROUP_CONCAT (?topic_label; separator="; ") as ?topic_labels)
-WHERE {
-  ?measure a sc:Measure .
-  ?measure dct:author ?author .
-  ?author skos:prefLabel ?author_label .
-  ?measure dct:subject ?topic .
-  ?topic skos:inScheme ?topic_scheme .
-  ?topic skos:prefLabel ?topic_label .
-  ?measure dct:title ?title .
-}
-GROUPBY  ?measure ?title ?author ?author_label ?topic_scheme
-}
-}
+GROUPBY  ?measure ?title ?topic_scheme
+ORDERBY ?measure ?topic_scheme
