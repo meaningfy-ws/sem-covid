@@ -1,7 +1,7 @@
 #Where is the measure applicable?
 
 PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
-PREFIX dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>
+PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?measure ?country ?country_label ?title ?type_of_measure_title

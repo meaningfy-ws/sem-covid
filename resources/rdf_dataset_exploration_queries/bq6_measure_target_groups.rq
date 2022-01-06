@@ -1,7 +1,7 @@
 # What are the target groups of the measure?
 
 PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
-PREFIX dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>
+PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?measure ?title ?target_l1 ?target_l1_label

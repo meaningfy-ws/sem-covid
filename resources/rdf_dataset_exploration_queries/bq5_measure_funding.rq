@@ -1,7 +1,7 @@
 # Who pays and how much for each measure and where do the money come from?
 
 PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
-PREFIX dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>
+PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?funding_label ?measure ?title
