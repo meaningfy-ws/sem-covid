@@ -1,0 +1,56 @@
+# baseURI: http://publications.europa.eu/resource/dataset/sc-data
+# imports: http://data.europa.eu/r5r
+# imports: http://datashapes.org/dash
+# imports: http://purl.org/dc/terms/
+# imports: http://topbraid.org/tosh
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/ns/dcat
+# imports: http://www.w3.org/ns/shacl#
+
+@prefix : <http://publications.europa.eu/resource/dataset/sc-data#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix r5r: <http://data.europa.eu/r5r#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://publications.europa.eu/resource/dataset/sc-data>
+  rdf:type owl:Ontology ;
+  owl:imports <http://data.europa.eu/r5r> ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports dct: ;
+  owl:imports <http://topbraid.org/tosh> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/ns/dcat> ;
+  owl:imports <http://www.w3.org/ns/shacl#> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:ds_unified
+  rdf:type dcat:Dataset ;
+  dct:accessRights <https://creativecommons.org/licenses/by/4.0/deed.en> ;
+  dct:description """Objective:
+
+	Establish a semantic mapping of the European Union and Member States response to the COVID-19 crisis in the area of living and working conditions.
+
+Description:
+
+	In order to perform mapping and interlinking between the EU COVID-19 response to the key policies of the Member States in the area of working and living conditions, the appropriate data sources need to be identified and crawled into a unified dataset. Next, the data needs to be prepared then for machine learning (ML) methods, which in this case are notably the data classification, topic modelling, data clustering and document similarity calculation. The results from ML tasks shall serve as the basis for a new dataset with document mappings, indicating possible correspondence between EU and MS responses to COVID-19 crisis.
+""" ;
+  dct:issued "2022-01-06"^^xsd:date ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/deed.en> ;
+  dct:title "Euro-Sem-Covid-19 dataset of Covid19 measures" ;
+  skos:prefLabel "Euro-Sem-Covid-19 dataset of Covid19 measures" ;
+  dcat:distribution :ds_unified_json ;
+  dcat:distribution :ds_unified_rdf ;
+.
+:ds_unified_json
+  rdf:type dcat:Distribution ;
+  skos:prefLabel "ds unified json" ;
+.
+:ds_unified_rdf
+  rdf:type dcat:Distribution ;
+  skos:prefLabel "ds unified rdf" ;
+.
