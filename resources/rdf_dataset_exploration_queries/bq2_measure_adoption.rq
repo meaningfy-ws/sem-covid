@@ -1,0 +1,17 @@
+#When is the measure adopted and how long it shall last?
+
+PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?date ?measure ?title
+( GROUP_CONCAT (?_author ; separator="; ") as ?author )
+( GROUP_CONCAT (?_author_label; separator="; ") as ?author_label)
+WHERE {
+  ?measure a sc:Measure .
+  ?measure dct:author ?_author .
+  ?_author skos:prefLabel ?_author_label .
+  ?measure dct:title ?title .
+  ?measure dct:date ?date .
+}
+GROUPBY ?date ?measure ?title ?author ?author_label

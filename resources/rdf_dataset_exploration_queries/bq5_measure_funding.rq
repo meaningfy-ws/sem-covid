@@ -1,0 +1,18 @@
+# Who pays and how much for each measure and where do the money come from?
+
+PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?funding_label ?measure ?title
+( GROUP_CONCAT (?_author ; separator="; ") as ?author )
+( GROUP_CONCAT (?_author_label; separator="; ") as ?author_label)
+WHERE {
+  ?measure a sc:Measure .
+  ?measure dct:author ?_author .
+  ?_author skos:prefLabel ?_author_label .
+  ?measure dct:title ?title .
+  ?measure sc:funding ?funding .
+  ?funding skos:prefLabel ?funding_label .
+}
+GROUPBY ?funding_label ?measure ?title ?author ?author_label
