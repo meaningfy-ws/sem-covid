@@ -1,0 +1,7 @@
+
+SELECT ?measure_1 ?measure_2 ?cosine_similarity
+WHERE {
+  ?subject sc:semanticSimilarity ?cosine_similarity .
+  ?subject sc:from ?measure_1 .
+  ?subject sc:to ?measure_2 .
+}
