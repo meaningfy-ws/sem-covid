@@ -58,9 +58,7 @@ class SemanticSimilarityMapRMLTransformPipeline:
             self.dataset = dataset.head(100)
         else:
             self.dataset = dataset
-        df_size = len(self.dataset)
-        part_size = DATASET_PART_SIZE
-        number_of_parts = int(round(df_size / part_size, 0)) + 1
+        number_of_parts = len(self.dataset)//DATASET_PART_SIZE + 1
         self.dataset_parts = np.array_split(self.dataset, number_of_parts)
 
     def transform(self):
