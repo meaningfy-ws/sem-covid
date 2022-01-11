@@ -314,6 +314,13 @@ class FusekiConfig:
         return VaultAndEnvConfigResolver.config_resolve()
 
 
+class RMLMapperConfig:
+
+    @property
+    def RML_MAPPER_URL(self) -> str:
+        return VaultAndEnvConfigResolver.config_resolve()
+
+
 class SemCovidConfig(CrawlerConfig,
                      VaultConfig,
                      ElasticSearchConfig,
@@ -329,7 +336,9 @@ class SemCovidConfig(CrawlerConfig,
                      MlExperimentsConfig,
                      MinIOConfig,
                      TensorFlowConfig,
-                     UnifiedDatasetConfig
+                     UnifiedDatasetConfig,
+                     FusekiConfig,
+                     RMLMapperConfig
                      ):
     ...
 

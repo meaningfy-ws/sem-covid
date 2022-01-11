@@ -1,0 +1,245 @@
+prefixes:
+  sc: "http://publications.europa.eu/resource/ontology/sc#"
+  fn: "http://example.com/idlab/function/"
+  dct: "http://purl.org/dc/terms/"
+
+mappings:
+    text:
+        sources:
+          - ['data.json~jsonpath', '$.*']
+        s: sc:$(index)
+        po:
+          - [a, sc:Measure]
+          - [dct:date, $(date), xsd:date]
+          - [dct:title, $(title)]
+          - [sc:content, $(content)]
+          - [sc:hash, $(index)]
+          - p: sc:belongsTo
+            o:
+                mapping: dataset
+                condition:
+                    function: equal
+                    parameters:
+                    - [str1,$(doc_source),s]
+                    - [str2,$(title),o]
+
+          - p: dct:subject
+            o:
+                mapping: pwdb_category
+                condition:
+                    function: equal
+                    parameters:
+                    - [str1,$(pwdb_category),s]
+                    - [str2,$(name),o]
+          - p: sc:typeOfMeasure
+            o:
+                mapping: pwdb_type_of_measure
+                condition:
+                    function: equal
+                    parameters:
+                    - [str1,$(pwdb_type_of_measure),s]
+                    - [str2,$(name),o]
+          - p: sc:actor
+            o:
+                mapping: pwdb_actors
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_actors),s]
+                    - [fn:str,$(name),o]
+          - p: dct:spatial
+            o:
+                mapping: country
+                condition:
+                    function: equal
+                    parameters:
+                    - [str1, $(country),s]
+                    - [str2, $(name),o]
+          - p: sc:funding
+            o:
+                mapping: pwdb_funding
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_funding),s]
+                    - [fn:str,$(name),o]
+          - p: sc:targetGroup
+            o:
+                mapping: pwdb_target_group_l1
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_target_group_l1),s]
+                    - [fn:str,$(name),o]
+          - p: sc:targetGroup
+            o:
+                mapping: pwdb_target_group_l2
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(pwdb_target_group_l2),s]
+                    - [fn:str,$(name),o]
+          - p: dct:subject
+            o:
+                mapping: ireland_keyword
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(ireland_keyword),s]
+                    - [fn:str,$(name),o]
+          - p: sc:resourceType
+            o:
+                mapping: ireland_page_type
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(ireland_page_type),s]
+                    - [fn:str,$(name),o]
+          - p: dct:subject
+            o:
+                mapping: eu_timeline_topic
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_timeline_topic),s]
+                    - [fn:str,$(name),o]
+          - p: dct:author
+            o:
+                mapping: eu_cellar_author_labels
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_cellar_author_labels),s]
+                    - [fn:str,$(name),o]
+          - p: sc:resourceType
+            o:
+                mapping: eu_cellar_resource_type_labels
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_cellar_resource_type_labels),s]
+                    - [fn:str,$(name),o]
+          - p: dct:subject
+            o:
+                mapping: eu_cellar_subject_matter_labels
+                condition:
+                    function: fn:listContainsElement
+                    parameters:
+                    - [fn:list,$(eu_cellar_subject_matter_labels),s]
+                    - [fn:str,$(name),o]
+    dataset:
+        sources:
+          - ['datasets.json~jsonpath', '$.datasets[*]']
+        s: sc:$(title)
+        po:
+            - [a, dct:Dataset]
+            - [dct:author, $(author)]
+            - [dct:description, $(description)]
+            - [dct:title, $(title)]
+    pwdb_category:
+        sources:
+          - ['pwdb_category.json~jsonpath', "$.pwdb_category[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:PWDBCategory~iri]
+    pwdb_funding:
+        sources:
+          - ['pwdb_funding.json~jsonpath', "$.pwdb_funding[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:PWDBFunding~iri]
+    country:
+        sources:
+            - ['country.json~jsonpath', "$.country[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:Country~iri]
+    pwdb_type_of_measure:
+        sources:
+            - ['pwdb_type_of_measure.json~jsonpath', "$.pwdb_type_of_measure[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:PWDBTypeOfMeasure~iri]
+    pwdb_actors:
+        sources:
+            - ['pwdb_actors.json~jsonpath', "$.pwdb_actors[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:Actor~iri]
+    pwdb_target_group_l1:
+        sources:
+            - ['pwdb_target_group_l1.json~jsonpath', "$.pwdb_target_group_l1[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:PWDBTargetGroupL1~iri]
+    pwdb_target_group_l2:
+        sources:
+            - ['pwdb_target_group_l2.json~jsonpath', "$.pwdb_target_group_l2[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:PWDBTargetGroupL2~iri]
+    eu_timeline_topic:
+        sources:
+            - ['eu_timeline_topic.json~jsonpath', "$.eu_timeline_topic[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:EUTimelineTopic~iri]
+    ireland_keyword:
+        sources:
+            - ['ireland_keyword.json~jsonpath', "$.ireland_keyword[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:IrelandKeyword~iri]
+    ireland_page_type:
+        sources:
+            - ['ireland_page_type.json~jsonpath', "$.ireland_page_type[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:IrelandPageType~iri]
+    eu_cellar_author_labels:
+        sources:
+            - ['eu_cellar_author_labels.json~jsonpath', "$.eu_cellar_author_labels[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:EUCellarAuthorLabels~iri]
+    eu_cellar_resource_type_labels:
+        sources:
+            - ['eu_cellar_resource_type_labels.json~jsonpath', "$.eu_cellar_resource_type_labels[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:EUCellarResourceTypeLabels~iri]
+    eu_cellar_subject_matter_labels:
+        sources:
+            - ['eu_cellar_subject_matter_labels.json~jsonpath', "$.eu_cellar_subject_matter_labels[*]"]
+        s: $(uri)
+        po:
+            - [skos:prefLabel,$(name)]
+            - [rdf:type, skos:Concept~iri]
+            - [skos:inScheme, sc:EUCellarSubjectMatterLabels~iri]
+
+
+    

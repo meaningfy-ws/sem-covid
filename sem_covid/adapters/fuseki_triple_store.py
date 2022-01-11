@@ -44,8 +44,8 @@ class FusekiTripleStore(TripleStoreABC):
         identifying the dataset
         :return:
         """
-        query_endpoint = f'{self.fuseki_url}/{dataset_id}/query'
-        update_endpoint = f'{self.fuseki_url}/{dataset_id}/update'
+        query_endpoint = f'{self.fuseki_url}{dataset_id}/query'
+        update_endpoint = f'{self.fuseki_url}{dataset_id}/update'
         store = sparqlstore.SPARQLUpdateStore(auth=(self.user_name, self.password), returnFormat=return_format)
         store.open((query_endpoint, update_endpoint))
         return store
@@ -130,6 +130,8 @@ class FusekiTripleStore(TripleStoreABC):
         store = self._get_fuseki_client(dataset_id=dataset_id)
         store.add_graph(graph=graph)
         context = graph if use_context else None
+        if context:
+            store.add_graph(graph=graph)
         for spo in graph.triples(triple=(None, None, None)):
             store.add(spo=spo, context=context)
         store.commit()
