@@ -22,7 +22,7 @@ class TopicsTransformPipeline:
                  triple_storage: TripleStoreABC,
                  ):
         """
-        
+
         :param rml_rules_file_name:
         :param source_file_name:
         :param rdf_result_file_name:
@@ -58,7 +58,7 @@ class TopicsTransformPipeline:
         assert self.rml_rule is not None
         assert self.data is not None
         self.rdf_result = []
-        sources = {'ds_unified_sem_similarity_matrix.json': self.data}
+        sources = {'topics_data.json': self.data}
         self.rdf_result = self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources)
 
     def load(self):
