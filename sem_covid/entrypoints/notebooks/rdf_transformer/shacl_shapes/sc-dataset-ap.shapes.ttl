@@ -247,7 +247,7 @@ sc:Measure
   sh:property [
       sh:class skos:Concept ;
       rdf:type sh:PropertyShape ;
-      sh:path dct:author ;
+      sh:path dct:creator ;
       sh:node sc:InSchemeEUCellarAuthorLabels ;
       sh:minCount 1 ;
       sh:name "corporate body" ;
