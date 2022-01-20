@@ -6,7 +6,7 @@ mappings:
       - ['ds_unified_sem_similarity_matrix.json~jsonpath', '$.similarity_matrix[*]']
     s: sc:$(measure_src)_$(measure_dest)
     po:
-      - [rdf:type, sc:Mapping]
+      - [rdf:type, sc:Mapping~iri]
       - [sc:from,sc:$(measure_src)~iri]
       - [sc:to,sc:$(measure_dest)~iri]
       - [sc:semanticSimilarity, $(similarity), xsd:float]
