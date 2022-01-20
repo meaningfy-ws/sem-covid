@@ -32,7 +32,7 @@
 :pom_000 rr:objectMap :om_000.
 :om_000 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#TopicAssignation";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_001 a rr:PredicateObjectMap.
 :map_topic_assignation_000 rr:predicateObjectMap :pom_001.
 :pm_001 a rr:PredicateMap.
@@ -80,7 +80,7 @@
 :pom_004 rr:objectMap :om_004.
 :om_004 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#Topic";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_005 a rr:PredicateObjectMap.
 :map_topics_data_000 rr:predicateObjectMap :pom_005.
 :pm_005 a rr:PredicateMap.
@@ -119,7 +119,7 @@
 :pom_007 rr:objectMap :om_007.
 :om_007 a rr:ObjectMap;
     rr:constant "http://publications.europa.eu/resource/ontology/sc#TopicToken";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_008 a rr:PredicateObjectMap.
 :map_topic_tokens_data_000 rr:predicateObjectMap :pom_008.
 :pm_008 a rr:PredicateMap.
