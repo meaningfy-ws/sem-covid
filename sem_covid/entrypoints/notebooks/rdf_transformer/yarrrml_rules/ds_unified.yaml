@@ -103,7 +103,7 @@ mappings:
                     parameters:
                     - [fn:list,$(eu_timeline_topic),s]
                     - [fn:str,$(name),o]
-          - p: dct:author
+          - p: dct:creator
             o:
                 mapping: eu_cellar_author_labels
                 condition:
@@ -133,7 +133,7 @@ mappings:
         s: sc:$(title)
         po:
             - [a, dct:Dataset]
-            - [dct:author, $(author)]
+            - [dct:creator, $(author)]
             - [dct:description, $(description)]
             - [dct:title, $(title)]
     pwdb_category:
