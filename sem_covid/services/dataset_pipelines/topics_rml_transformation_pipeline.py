@@ -1,3 +1,5 @@
+import json
+import logging
 from sem_covid.adapters.abstract_store import ObjectStoreABC, TripleStoreABC
 from sem_covid.adapters.rml_mapper import RMLMapperABC
 
@@ -6,6 +8,15 @@ MINIO_RML_RESULTS_DIR = 'results'
 MINIO_RML_FIELDS_DIR = 'fields'
 DATASET_INDEX_NAME = 'ds_unified_topics'
 RDF_RESULT_FORMAT = 'nt11'
+CHUNK_SIZE = 100
+
+logger = logging.getLogger(__name__)
+
+
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
 
 
 class TopicsTransformPipeline:
@@ -37,8 +48,10 @@ class TopicsTransformPipeline:
         self.object_storage = object_storage
         self.triple_storage = triple_storage
         self.rml_rule = None
-        self.data = None
-        self.rdf_result = None
+        self.rdf_results = None
+        self.topic_assignments_data = None
+        self.topics_data = None
+        self.topic_tokens_data = None
 
     def extract(self):
         """
@@ -47,8 +60,13 @@ class TopicsTransformPipeline:
         """
         self.rml_rule = self.object_storage.get_object(
             object_name=f'{MINIO_RML_RULES_DIR}/{self.rml_rules_file_name}').decode('utf8')
-        self.data = self.object_storage.get_object(
-            object_name=f'{MINIO_RML_FIELDS_DIR}/{self.source_file_name}').decode('utf8')
+        self.topic_assignments_data = json.loads(self.object_storage.get_object(
+            object_name=f'{MINIO_RML_FIELDS_DIR}/topic_assignments_data.json').decode('utf8'))
+        self.topics_data = json.loads(self.object_storage.get_object(
+            object_name=f'{MINIO_RML_FIELDS_DIR}/topics_data.json').decode('utf8'))
+        self.topic_tokens_data = json.loads(self.object_storage.get_object(
+            object_name=f'{MINIO_RML_FIELDS_DIR}/topic_tokens_data.json').decode('utf8'))
+        logger.info("Load data with success!")
 
     def transform(self):
         """
@@ -56,22 +74,41 @@ class TopicsTransformPipeline:
         :return:
         """
         assert self.rml_rule is not None
-        assert self.data is not None
-        self.rdf_result = []
-        sources = {'topics_data.json': self.data}
-        self.rdf_result = self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources)
+        assert self.topic_assignments_data is not None
+        assert self.topics_data is not None
+        assert self.topic_tokens_data is not None
+
+        self.rdf_results = []
+
+        process_order = [
+            ('topic_assignments_data', self.topic_assignments_data),
+            ('topics_data', self.topics_data),
+            ('topic_tokens_data', self.topic_tokens_data),
+        ]
+        for process_name, process_data in process_order:
+            logger.info(f"Start processing : {process_name}")
+            for chunk in chunks(process_data, CHUNK_SIZE):
+                topic_data_mapping = {process_name: process_data}
+                sources = {'topics_data.json': json.dumps(topic_data_mapping)}
+                self.rdf_results.append(self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources))
+        logger.info("End transformation step!")
 
     def load(self):
         """
 
         :return:
         """
-        assert self.rdf_result is not None
-        self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/{self.rdf_result_file_name}',
-                                       content=self.rdf_result.encode('utf8'))
+        assert self.rdf_results is not None
+        logger.info("Load data in Fuseki.")
         self.triple_storage.create_dataset(dataset_id=DATASET_INDEX_NAME)
-        self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=self.rdf_result,
-                                           rdf_fmt=RDF_RESULT_FORMAT)
+        for rdf_result in self.rdf_results:
+            self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
+                                               rdf_fmt=RDF_RESULT_FORMAT)
+        logger.info("Load data in MinIO.")
+        rdf_full_result = '\n'.join(self.rdf_results)
+        self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/{self.rdf_result_file_name}',
+                                       content=rdf_full_result.encode('utf8'))
+        logger.info("End load step!")
 
     def execute(self):
         """

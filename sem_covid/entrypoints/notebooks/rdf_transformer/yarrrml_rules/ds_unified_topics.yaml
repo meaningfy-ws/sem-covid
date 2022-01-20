@@ -6,7 +6,7 @@ mappings:
             - ['topics_data.json~jsonpath', '$.topic_assignments_data[*]']
         s: sc:ta_$(measure_index)_$(topic_index)
         po:
-            - [rdf:type, sc:TopicAssignation]
+            - [rdf:type, sc:TopicAssignation~iri]
             - [sc:subjectDocument,sc:$(measure_index)~iri]
             - [sc:classificationTopic,sc:$(topic_index)~iri]
             - [sc:relevance, $(topic_relevance), xsd:float]
@@ -16,7 +16,7 @@ mappings:
             - ['topics_data.json~jsonpath', '$.topics_data[*]']
         s: sc:$(topic_id)
         po:
-            - [rdf:type, sc:Topic]
+            - [rdf:type, sc:Topic~iri]
             - [skos:prefLabel, $(topic_name), xsd:string]
             - [sc:formedBy, sc:$(formed_by)~iri]
 
@@ -25,6 +25,6 @@ mappings:
             - ['topics_data.json~jsonpath', '$.topic_tokens_data[*]']
         s: sc:$(topic_token_id)
         po:
-            - [rdf:type, sc:TopicToken]
+            - [rdf:type, sc:TopicToken~iri]
             - [skos:prefLabel, $(token), xsd:string]
             - [sc:relevance, $(relevance), xsd:float]

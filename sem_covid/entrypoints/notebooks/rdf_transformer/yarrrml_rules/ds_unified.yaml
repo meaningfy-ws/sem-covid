@@ -9,7 +9,7 @@ mappings:
           - ['data.json~jsonpath', '$.*']
         s: sc:$(index)
         po:
-          - [a, sc:Measure]
+          - [a, sc:Measure~iri]
           - [dct:date, $(date), xsd:date]
           - [dct:title, $(title)]
           - [sc:content, $(content)]
@@ -132,7 +132,7 @@ mappings:
           - ['datasets.json~jsonpath', '$.datasets[*]']
         s: sc:$(title)
         po:
-            - [a, dct:Dataset]
+            - [a, dct:Dataset~iri]
             - [dct:creator, $(author)]
             - [dct:description, $(description)]
             - [dct:title, $(title)]
