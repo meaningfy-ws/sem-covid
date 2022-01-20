@@ -142,7 +142,7 @@
 :map_text_000 rr:predicateObjectMap :pom_016.
 :pm_016 a rr:PredicateMap.
 :pom_016 rr:predicateMap :pm_016.
-:pm_016 rr:constant dct:author.
+:pm_016 rr:constant dct:creator.
 :pom_016 rr:objectMap :om_016.
 :pom_017 a rr:PredicateObjectMap.
 :map_text_000 rr:predicateObjectMap :pom_017.
@@ -180,7 +180,7 @@
 :map_dataset_000 rr:predicateObjectMap :pom_020.
 :pm_020 a rr:PredicateMap.
 :pom_020 rr:predicateMap :pm_020.
-:pm_020 rr:constant dct:author.
+:pm_020 rr:constant dct:creator.
 :pom_020 rr:objectMap :om_020.
 :om_020 a rr:ObjectMap;
     rml:reference "author";
