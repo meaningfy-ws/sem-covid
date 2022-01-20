@@ -76,7 +76,6 @@ class SemanticSimilarityMapRMLTransformPipeline:
             json_result = json.dumps({'similarity_matrix':result})
             sources = {'ds_unified_sem_similarity_matrix.json': json_result}
             self.rdf_results.append(self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources))
-        self.rdf_results = '\n'.join(self.rdf_results)  # this is the source of potential resource issues
 
     def load(self):
         """
@@ -84,11 +83,13 @@ class SemanticSimilarityMapRMLTransformPipeline:
         :return:
         """
         assert self.rdf_results is not None
-        self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/{self.rdf_result_file_name}',
-                                       content=self.rdf_results.encode('utf8'))
         self.triple_storage.create_dataset(dataset_id=DATASET_INDEX_NAME)
-        self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=self.rdf_results,
-                                           rdf_fmt=RDF_RESULT_FORMAT)
+        for rdf_result  in self.rdf_results:
+            self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
+                                               rdf_fmt=RDF_RESULT_FORMAT)
+        rdf_full_result = '\n'.join(self.rdf_results)
+        self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/{self.rdf_result_file_name}',
+                                       content=rdf_full_result.encode('utf8'))
 
     def execute(self):
         """
