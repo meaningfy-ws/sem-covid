@@ -8,7 +8,7 @@ MINIO_RML_RESULTS_DIR = 'results'
 MINIO_RML_FIELDS_DIR = 'fields'
 DATASET_INDEX_NAME = 'ds_unified_topics'
 RDF_RESULT_FORMAT = 'nt11'
-CHUNK_SIZE = 10000
+CHUNK_SIZE = 100
 
 logger = logging.getLogger(__name__)
 
