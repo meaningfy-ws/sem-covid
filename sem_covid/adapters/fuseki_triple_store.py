@@ -59,7 +59,7 @@ class FusekiTripleStore(TripleStoreABC):
         """
 
         data = {
-            'dbType': 'tdb',  # assuming that all databases are created persistent across restart
+            'dbType': 'tdb2',  # assuming that all databases are created persistent across restart
             'dbName': dataset_id
         }
 

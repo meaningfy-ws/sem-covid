@@ -85,12 +85,22 @@ class TopicsTransformPipeline:
             ('topics_data', self.topics_data),
             ('topic_tokens_data', self.topic_tokens_data),
         ]
+        self.triple_storage.create_dataset(dataset_id=DATASET_INDEX_NAME)
         for process_name, process_data in process_order:
             logger.info(f"Start processing : {process_name}")
+            print(f"Start processing : {process_name}")
             for chunk in chunks(process_data, CHUNK_SIZE):
-                topic_data_mapping = {process_name: process_data}
+                topic_data_mapping = {process_name: chunk}
                 sources = {'topics_data.json': json.dumps(topic_data_mapping)}
-                self.rdf_results.append(self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources))
+                logger.info("Start transform")
+                rdf_result = self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources)
+                logger.info("End transform")
+                logger.info("Start load in fuseki")
+                self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
+                                                   rdf_fmt=RDF_RESULT_FORMAT)
+                logger.info("End load in fuseki")
+                del rdf_result
+
         logger.info("End transformation step!")
 
     def load(self):
@@ -98,17 +108,6 @@ class TopicsTransformPipeline:
 
         :return:
         """
-        assert self.rdf_results is not None
-        logger.info("Load data in Fuseki.")
-        self.triple_storage.create_dataset(dataset_id=DATASET_INDEX_NAME)
-        for rdf_result in self.rdf_results:
-            self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
-                                               rdf_fmt=RDF_RESULT_FORMAT)
-        logger.info("Load data in MinIO.")
-        rdf_full_result = '\n'.join(self.rdf_results)
-        self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/{self.rdf_result_file_name}',
-                                       content=rdf_full_result.encode('utf8'))
-        logger.info("End load step!")
 
     def execute(self):
         """
