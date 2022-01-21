@@ -92,13 +92,13 @@ class TopicsTransformPipeline:
             for chunk in chunks(process_data, CHUNK_SIZE):
                 topic_data_mapping = {process_name: chunk}
                 sources = {'topics_data.json': json.dumps(topic_data_mapping)}
-                print("Start transform")
+                logger.info("Start transform")
                 rdf_result = self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources)
-                print("End transform")
-                print("Start load in fuseki")
+                logger.info("End transform")
+                logger.info("Start load in fuseki")
                 self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
                                                    rdf_fmt=RDF_RESULT_FORMAT)
-                print("End load in fuseki")
+                logger.info("End load in fuseki")
                 del rdf_result
 
         logger.info("End transformation step!")
@@ -108,17 +108,6 @@ class TopicsTransformPipeline:
 
         :return:
         """
-        # assert self.rdf_results is not None
-        # logger.info("Load data in Fuseki.")
-        # self.triple_storage.create_dataset(dataset_id=DATASET_INDEX_NAME)
-        # for rdf_result in self.rdf_results:
-        #     self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
-        #                                        rdf_fmt=RDF_RESULT_FORMAT)
-        # logger.info("Load data in MinIO.")
-        # rdf_full_result = '\n'.join(self.rdf_results)
-        # self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/{self.rdf_result_file_name}',
-        #                                content=rdf_full_result.encode('utf8'))
-        # logger.info("End load step!")
 
     def execute(self):
         """
