@@ -92,10 +92,13 @@ class TopicsTransformPipeline:
             for chunk in chunks(process_data, CHUNK_SIZE):
                 topic_data_mapping = {process_name: chunk}
                 sources = {'topics_data.json': json.dumps(topic_data_mapping)}
+                print("Start transform")
                 rdf_result = self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources)
+                print("End transform")
+                print("Start load in fuseki")
                 self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
                                                    rdf_fmt=RDF_RESULT_FORMAT)
-
+                print("End load in fuseki")
                 del rdf_result
 
         logger.info("End transformation step!")
