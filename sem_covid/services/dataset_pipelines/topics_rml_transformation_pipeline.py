@@ -8,7 +8,7 @@ MINIO_RML_RESULTS_DIR = 'results'
 MINIO_RML_FIELDS_DIR = 'fields'
 DATASET_INDEX_NAME = 'ds_unified_topics'
 RDF_RESULT_FORMAT = 'nt11'
-CHUNK_SIZE = 1000
+CHUNK_SIZE = 10000
 
 logger = logging.getLogger(__name__)
 
@@ -88,6 +88,7 @@ class TopicsTransformPipeline:
         self.triple_storage.create_dataset(dataset_id=DATASET_INDEX_NAME)
         for process_name, process_data in process_order:
             logger.info(f"Start processing : {process_name}")
+            print(f"Start processing : {process_name}")
             for chunk in chunks(process_data, CHUNK_SIZE):
                 topic_data_mapping = {process_name: chunk}
                 sources = {'topics_data.json': json.dumps(topic_data_mapping)}
