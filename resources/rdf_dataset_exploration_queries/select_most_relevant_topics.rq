@@ -1,0 +1,11 @@
+
+PREFIX sc: <http://publications.europa.eu/resource/ontology/sc#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?document ?topic ?relevance
+WHERE {
+  ?topic_assignation a sc:TopicAssignation .
+  ?topic_assignation sc:classificationTopic ?topic .
+  ?topic_assignation sc:subjectDocument ?document .
+  ?topic_assignation sc:relevance ?relevance
+  FILTER(?relevance>0.75)
+}
