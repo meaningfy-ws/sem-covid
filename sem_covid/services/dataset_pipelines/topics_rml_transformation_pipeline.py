@@ -8,7 +8,7 @@ MINIO_RML_RESULTS_DIR = 'results'
 MINIO_RML_FIELDS_DIR = 'fields'
 DATASET_INDEX_NAME = 'ds_unified_topics'
 RDF_RESULT_FORMAT = 'nt11'
-CHUNK_SIZE = 100
+CHUNK_SIZE = 10000
 
 logger = logging.getLogger(__name__)
 
@@ -86,6 +86,7 @@ class TopicsTransformPipeline:
             ('topic_tokens_data', self.topic_tokens_data),
         ]
         self.triple_storage.create_dataset(dataset_id=DATASET_INDEX_NAME)
+        part_count = 0
         for process_name, process_data in process_order:
             logger.info(f"Start processing : {process_name}")
             print(f"Start processing : {process_name}")
@@ -95,10 +96,15 @@ class TopicsTransformPipeline:
                 logger.info("Start transform")
                 rdf_result = self.rml_mapper.transform(rml_rule=self.rml_rule, sources=sources)
                 logger.info("End transform")
-                logger.info("Start load in fuseki")
-                self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
-                                                   rdf_fmt=RDF_RESULT_FORMAT)
-                logger.info("End load in fuseki")
+                #logger.info("Start load in fuseki")
+                #TODO : change method for upload triples ( current method is very slow )
+                #self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
+                #                                   rdf_fmt=RDF_RESULT_FORMAT)
+                #logger.info("End load in fuseki")
+                file_name = f"{self.rdf_result_file_name}_{part_count}"
+                part_count+=1
+                self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/topics/{file_name}',
+                                               content=rdf_result.encode('utf8'))
                 del rdf_result
 
         logger.info("End transformation step!")
