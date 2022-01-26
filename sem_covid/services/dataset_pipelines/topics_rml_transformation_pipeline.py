@@ -8,7 +8,7 @@ MINIO_RML_RESULTS_DIR = 'results'
 MINIO_RML_FIELDS_DIR = 'fields'
 DATASET_INDEX_NAME = 'ds_unified_topics'
 RDF_RESULT_FORMAT = 'nt11'
-CHUNK_SIZE = 10000
+CHUNK_SIZE = 20000
 
 logger = logging.getLogger(__name__)
 
@@ -101,10 +101,12 @@ class TopicsTransformPipeline:
                 #self.triple_storage.upload_triples(dataset_id=DATASET_INDEX_NAME, quoted_triples=rdf_result,
                 #                                   rdf_fmt=RDF_RESULT_FORMAT)
                 #logger.info("End load in fuseki")
-                file_name = f"{self.rdf_result_file_name}_{part_count}"
+                file_name = f"part_{part_count}_{self.rdf_result_file_name}"
                 part_count+=1
+                logger.info("Store in MinIO")
                 self.object_storage.put_object(object_name=f'{MINIO_RML_RESULTS_DIR}/topics/{file_name}',
                                                content=rdf_result.encode('utf8'))
+                logger.info("End store in MinIO")
                 del rdf_result
 
         logger.info("End transformation step!")
